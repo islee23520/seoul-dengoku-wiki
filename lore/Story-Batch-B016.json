@@ -5,6 +5,7 @@
   "slug": "story-batch-b016",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "Social Story Batch B016",
+      "summary": "At the wooden window of the checkpoint on the north end of Gwangjin Bridge, Bang Mareum turns over the knot in the sealing cord before moving an abacus bead.",
+      "tense": "past"
+    },
     "ko": {
       "title": "사회 서사 배치 B016",
       "summary": "광진교 북단 통과대 나무 창구에서 방마름은 주판알을 밀기 전에 봉인 끈의 매듭부터 뒤집는다.",
@@ -33,6 +39,7 @@
       "anchor": "사회-서사-배치-b016",
       "depth": 1,
       "text": {
+        "en": "Social Story Batch B016",
         "ko": "사회 서사 배치 B016"
       }
     },
@@ -41,6 +48,7 @@
       "anchor": "인물-k360-방마름",
       "depth": 2,
       "text": {
+        "en": "Person K360 · Bang Mareum",
         "ko": "인물 K360 · 방마름"
       }
     },
@@ -49,6 +57,7 @@
       "anchor": "인물-k360-방마름-list1",
       "items": [
         {
+          "en": "Link: house=HP07 theater=XT01 scenarios=XT01-SC3,STORY-B016-K360",
           "ko": "연결: house=HP07 theater=XT01 scenarios=XT01-SC3,STORY-B016-K360"
         }
       ]
@@ -58,6 +67,7 @@
       "anchor": "정체성출신",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -65,6 +75,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-p1",
       "text": {
+        "en": "At the wooden window of the checkpoint on the north end of Gwangjin Bridge, Bang Mareum turns over the knot in the sealing cord before moving an abacus bead.",
         "ko": "광진교 북단 통과대 나무 창구에서 방마름은 주판알을 밀기 전에 봉인 끈의 매듭부터 뒤집는다."
       }
     },
@@ -72,6 +83,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-p2",
       "text": {
+        "en": "As the gateway military administration’s passage records officer, Bang transfers Ha Yunmok’s tax calculations into ledger figures only.",
         "ko": "관문군정 통과 기록관으로 하윤목의 세 계산을 원장 숫자로만 옮긴다."
       }
     },
@@ -79,6 +91,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-p3",
       "text": {
+        "en": "A habit of the hands from growing up in the alleys by Guui ferry landing in Korea is to close the window if the abacus frame tilts.",
         "ko": "구의 나루 골목에서 자란 한국 기원의 손버릇은 주판 틀이 기울면 창구를 닫는 것이다."
       }
     },
@@ -86,6 +99,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-p4",
       "text": {
+        "en": "Bang Mareum and K352 do not alter the lines of the gateway register.",
         "ko": "방마름과 K352는 관문 명부 줄을 바꾸지 않는다."
       }
     },
@@ -94,6 +108,7 @@
       "anchor": "붕괴-전-삶",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -101,6 +116,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-p1",
       "text": {
+        "en": "Bang tried to put the three passage taxes—water transport, bridges, and pedestrians—side by side in one ledger so that calculations made aloud would not leak beyond the window.",
         "ko": "수운·교량·보행 세 갈래 통과세를 한 원장에 나란히 올려 구두 계산이 창구 밖으로 새지 않게 하려 했다."
       }
     },
@@ -108,6 +124,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-p2",
       "text": {
+        "en": "The abacus that had let a forged certificate of origin through was locked in a drawer, not burned.",
         "ko": "위조 원산지 표를 통과시킨 주판은 불태우지 않고 서랍에 가뒀다."
       }
     },
@@ -115,6 +132,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-p3",
       "text": {
+        "en": "An evening at the ferry landing that Bang had promised to share with a younger sibling remained a personal debt.",
         "ko": "동생과 나누기로 한 나루 저녁이 사적 빚의 자리로 남았다."
       }
     },
@@ -122,6 +140,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-p4",
       "text": {
+        "en": "Bang would not yield on the rule against opening an unsealed slot, even when the procession backed up.",
         "ko": "빈 봉인 칸은 행렬이 밀려도 열어 주지 않는 규칙만은 양보하지 않았다."
       }
     },
@@ -130,6 +149,7 @@
       "anchor": "가문기업공동체",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -137,6 +157,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-p1",
       "text": {
+        "en": "The Hangangjin Bridge Guild invoked its duty to close the bridge in high winds and demanded an observer’s seat at the checkpoint.",
         "ko": "한강진교량공회는 풍속 폐쇄 의무를 내세워 통과대 참관석을 요구했다."
       }
     },
@@ -144,6 +165,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-p2",
       "text": {
+        "en": "Bang Mareum opened only the charter-registration slot and removed the real business names from the ledger.",
         "ko": "방마름은 헌장 등재 칸만 열고 실재 상호를 원장에서 깎아 냈다."
       }
     },
@@ -151,6 +173,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-p3",
       "text": {
+        "en": "Bang’s standing in the community was measured by the number of times Cheon Choyun’s message copies were left on the same line.",
         "ko": "천초윤의 전갈 사본을 같은 줄에 남긴 횟수가 공동체 안의 위치였다."
       }
     },
@@ -158,6 +181,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-p4",
       "text": {
+        "en": "The demand to turn the toll into an exclusive service window was not posted on the noticeboard.",
         "ko": "통행세를 전속 창구로 바꾸라는 문장은 게시판에 올리지 않았다."
       }
     },
@@ -166,6 +190,7 @@
       "anchor": "붕괴의-상처",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -173,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-p1",
       "text": {
+        "en": "Three forged certificates of origin arrived at the north-end window on the same afternoon.",
         "ko": "위조 원산지 표 세 장이 같은 오후에 북단 창구에 떨어졌다."
       }
     },
@@ -180,6 +206,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-p2",
       "text": {
+        "en": "Bang Mareum covered the abacus and stopped stamping passage permits until Ha Yunmok’s tax calculations were sealed.",
         "ko": "방마름은 주판을 덮고 하윤목의 세 계산이 봉인될 때까지 통과 스탬프를 멈췄다."
       }
     },
@@ -187,6 +214,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-p3",
       "text": {
+        "en": "The most painful image was of a forged certificate stamped at the genuine tax rate, with the gateway key put up for sale.",
         "ko": "가장 쓰라린 장면은 위조 표 한 장이 진본 세율로 찍혀 관문 키가 팔리는 그림이었다."
       }
     },
@@ -194,6 +222,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-p4",
       "text": {
+        "en": "Only the time the abacus was covered remained on the first line of LOSS.",
         "ko": "LOSS 첫 줄에는 주판을 덮은 시각만 남았다."
       }
     },
@@ -202,6 +231,7 @@
       "anchor": "생존-전환점",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -209,6 +239,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-p1",
       "text": {
+        "en": "At the window, the choice came down to submitting the forged certificate for witnessed division of the Achasan seal key or letting the backed-up water traffic through first.",
         "ko": "위조 표를 아차산 봉인 키 분할 입회에 넘길지, 밀린 수운을 먼저 흘릴지가 창구에서 갈렸다."
       }
     },
@@ -216,6 +247,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-p2",
       "text": {
+        "en": "A demand from the Imjin River Gateway Theater to divide the seal key reached the wooden window frame.",
         "ko": "임진강관문전구의 봉인 키 나눔 독촉이 나무 창틀에 겹쳤다."
       }
     },
@@ -223,6 +255,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-p3",
       "text": {
+        "en": "Choosing witnesses would preserve the tax rate but lengthen the ferry queue by a night; choosing passage would let the forgery route hide beneath the bridge pier.",
         "ko": "입회를 택하면 세율은 남고 나루 대기열이 하룻밤 늘며, 통과를 택하면 위조 경로가 교각 아래로 숨는다."
       }
     },
@@ -230,6 +263,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-p4",
       "text": {
+        "en": "K360-TURN marks the direction in which Bang reopened the abacus.",
         "ko": "K360-TURN은 주판을 다시 연 방향이다."
       }
     },
@@ -238,6 +272,7 @@
       "anchor": "현재-지위",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -245,6 +280,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-p1",
       "text": {
+        "en": "Bang Mareum still oversees roll call and the passage ledger at the north end of Gwangjin Bridge.",
         "ko": "지금도 방마름은 광진교 북단에서 점호와 통과 원장을 본다."
       }
     },
@@ -252,6 +288,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-p2",
       "text": {
+        "en": "The post is sustained not by inheritance but solely by the seal log and Ha Yunmok’s observer signature.",
         "ko": "자리는 세습이 아니라 봉인 로그와 하윤목 참관 서명으로만 버틴다."
       }
     },
@@ -259,6 +296,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-p3",
       "text": {
+        "en": "Even when HP07 demands an exclusive passage window, Bang refuses and reconciles the Cast status with the abacus total at every shift change.",
         "ko": "HP07가 전속 통행 창구를 요구해도 거절하고 Cast 현황과 주판 합을 교대마다 맞춘다."
       }
     },
@@ -266,6 +304,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-p4",
       "text": {
+        "en": "The checkpoint and the bridge duty box share custody of the window key.",
         "ko": "창구 열쇠는 통과대와 교량 당직함이 나눠 쥔다."
       }
     },
@@ -274,6 +313,7 @@
       "anchor": "비밀빚죄책감",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -281,6 +321,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-p1",
       "text": {
+        "en": "The secret is that Bang kept the forged certificate in the drawer for one more day.",
         "ko": "서랍에 위조 표를 하루 더 둔 점이 비밀이다."
       }
     },
@@ -288,6 +329,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-p2",
       "text": {
+        "en": "Guilt grows between the tax rate Bang saved and the younger sibling who waited at the ferry landing that night.",
         "ko": "살린 세율과 그 밤 나루에서 기다린 동생 사이에서 죄책감이 자란다."
       }
     },
@@ -295,6 +337,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-p3",
       "text": {
+        "en": "Instead of a full confession, Bang discloses just one marked line under Cheon Choyun’s observation.",
         "ko": "전부 고백 대신 천초윤 입회 아래 점 한 줄만 공개한다."
       }
     },
@@ -302,6 +345,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-p4",
       "text": {
+        "en": "The SECRET slot opens only together with the passage ledger.",
         "ko": "SECRET 칸은 통과 원장과 동시에만 열린다."
       }
     },
@@ -310,6 +354,7 @@
       "anchor": "관계-공동과거",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -317,6 +362,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-p1",
       "text": {
+        "en": "Transferring Ha Yunmok’s tax calculations was a master-apprentice obligation, and the night Bang left a copy of Cheon Choyun’s message on the same line was a shared shift.",
         "ko": "하윤목의 세 계산을 옮기는 일은 사제 계약이었고, 천초윤의 전갈 사본을 같은 줄에 남긴 밤은 공동 근무였다."
       }
     },
@@ -324,6 +370,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-p2",
       "text": {
+        "en": "When Go Seojun’s high-wind closure bell rings, the checkpoint becomes an inspection route.",
         "ko": "고서준의 풍속 폐쇄 종이 울리면 통과대는 점검로로 바뀐다."
       }
     },
@@ -331,6 +378,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-p3",
       "text": {
+        "en": "At the same bridge pier, some seals saved one another, while some drawers were read as betrayals.",
         "ko": "같은 교각에서 어떤 봉인은 서로를 살렸고 어떤 서랍은 배신으로 읽혔다."
       }
     },
@@ -338,6 +386,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-p4",
       "text": {
+        "en": "The endpoint connects to STORY-B016-K352.",
         "ko": "끝점은 STORY-B016-K352에 연결된다."
       }
     },
@@ -346,6 +395,7 @@
       "anchor": "3막-개인-서사선",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -353,6 +403,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-p1",
       "text": {
+        "en": "Act 1 is the halt when Bang covers the abacus over a forged certificate of origin.",
         "ko": "1막은 위조 원산지 표에 주판을 덮는 정지다."
       }
     },
@@ -360,6 +411,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-p2",
       "text": {
+        "en": "In the middle, HP07’s observation and XT01’s division of the seal key collide at one window.",
         "ko": "중반에 HP07 참관과 XT01 봉인 키 나눔이 한 창구에서 부딪친다."
       }
     },
@@ -367,6 +419,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-p3",
       "text": {
+        "en": "The final act is the length of the ferry queue left by witnessing or passage.",
         "ko": "종막은 입회 또는 통과가 남긴 나루 대기열의 길이다."
       }
     },
@@ -374,6 +427,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-p4",
       "text": {
+        "en": "The arc is named STORY-B016-K352.",
         "ko": "서사선 이름은 STORY-B016-K352다."
       }
     },
@@ -382,6 +436,7 @@
       "anchor": "분기-결말",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -389,6 +444,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-p1",
       "text": {
+        "en": "If Bang keeps the checkpoint locked and chooses to witness the seal-key division, the public tax rate remains in the ledger.",
         "ko": "통과대를 잠근 채 봉인 키 입회를 고르면 공공 세율이 원장에 남는다."
       }
     },
@@ -396,6 +452,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-p2",
       "text": {
+        "en": "If Bang lets the water traffic through first, the mark in the drawer and a chance to breathe remain.",
         "ko": "수운을 먼저 흘리면 서랍의 점과 숨이 남는다."
       }
     },
@@ -403,6 +460,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-p3",
       "text": {
+        "en": "The gateway military administration post is not erased; only the branch marker is K360-OUT.",
         "ko": "관문군정 자리는 지워지지 않고 갈림 표식만 K360-OUT이다."
       }
     },
@@ -410,6 +468,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-p4",
       "text": {
+        "en": "The decision at the scene is either witness testimony or directing traffic toward the ferry landing.",
         "ko": "당시 현장의 결정은 입회 증언이거나 나루 유도다."
       }
     },
@@ -418,6 +477,7 @@
       "anchor": "3막",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -426,12 +486,15 @@
       "anchor": "3막-list1",
       "items": [
         {
+          "en": "Act 1: Covers the abacus over a forged certificate of origin and stops stamping passage permits",
           "ko": "1막: 위조 원산지 표에 주판을 덮고 통과 스탬프를 멈춘다"
         },
         {
+          "en": "Act 2: HP07’s observation and XT01’s seal-key division collide at the wooden window",
           "ko": "2막: HP07 참관과 XT01 봉인 키 나눔이 나무 창구에서 부딪친다"
         },
         {
+          "en": "Act 3: Accepts the length of the ferry queue as the cost of witnessing or passage",
           "ko": "3막: 입회 또는 통과의 값으로 나루 대기열 길이를 감수한다"
         }
       ]
@@ -441,6 +504,7 @@
       "anchor": "분기-결말-목록",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -449,9 +513,11 @@
       "anchor": "분기-결말-목록-list1",
       "items": [
         {
+          "en": "K360-OUT-A: Maintains the public tax rate by witnessing the seal-key division",
           "ko": "K360-OUT-A: 봉인 키 입회로 공공 세율 유지"
         },
         {
+          "en": "K360-OUT-B: Prioritizes water transport, preserving the mark in the drawer and survival",
           "ko": "K360-OUT-B: 수운 우선으로 서랍 점과 생존 유지"
         }
       ]
@@ -461,6 +527,7 @@
       "anchor": "인물-k385-영미결",
       "depth": 2,
       "text": {
+        "en": "Person K385 · Yeong Migyeol",
         "ko": "인물 K385 · 영미결"
       }
     },
@@ -469,6 +536,7 @@
       "anchor": "인물-k385-영미결-list1",
       "items": [
         {
+          "en": "Link: house=HP08 theater=XT03 scenarios=XT03-SC2,STORY-B016-K385",
           "ko": "연결: house=HP08 theater=XT03 scenarios=XT03-SC2,STORY-B016-K385"
         }
       ]
@@ -478,6 +546,7 @@
       "anchor": "정체성출신-2",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -485,6 +554,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-2-p1",
       "text": {
+        "en": "At the ledger desk on the second floor of Garak’s produce building, Yeong Migyeol checks the scale markings first, before copying bid figures in chalk.",
         "ko": "가락 청과동 2층 원장석에서 영미결은 호가 숫자를 분필로 옮기기 전에 저울 눈금의 먼저를 턴다."
       }
     },
@@ -492,6 +562,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-2-p2",
       "text": {
+        "en": "Yeong is the auction and ration-ledger records officer and accepts Eun Taeho’s bids only line by line.",
         "ko": "경매·배급 원장 기록관이며 은태호의 호가를 줄 단위로만 받는다."
       }
     },
@@ -499,6 +570,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-2-p3",
       "text": {
+        "en": "Originally from Korea and raised in the alleys of Munjeong, Yeong speaks softly and pauses the auction for a beat if the chalk breaks.",
         "ko": "문정 골목에서 자란 한국 기원으로, 목소리는 낮고 분필이 부러지면 경매를 한 박자 멈춘다."
       }
     },
@@ -506,6 +578,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-2-p4",
       "text": {
+        "en": "Yeong Migyeol and K377 are not erased from the cover of the ration ledger.",
         "ko": "영미결과 K377은 배급 원장 표지에서 지워지지 않는다."
       }
     },
@@ -514,6 +587,7 @@
       "anchor": "붕괴-전-삶-2",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -521,6 +595,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-2-p1",
       "text": {
+        "en": "Yeong tried to bind bids and award messages in one ledger so Garak’s figures would not circulate solely by word of mouth among brokers.",
         "ko": "호가와 낙찰 전갈을 한 원장에 묶어 가락 숫자가 조정인 입에서만 떠돌지 않게 하려 했다."
       }
     },
@@ -528,6 +603,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-2-p2",
       "text": {
+        "en": "A line recording an unsold lot as ordinary stock was not erased but confined to an adjacent column.",
         "ko": "유찰된 칸을 정상 재고처럼 적은 줄은 지우지 않고 옆 난에 가뒀다."
       }
     },
@@ -535,6 +611,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-2-p3",
       "text": {
+        "en": "One line of ice promised to a neighboring shop was a small commitment.",
         "ko": "이웃 점포에 남기기로 한 얼음 한 줄이 작은 약속이었다."
       }
     },
@@ -542,6 +619,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-2-p4",
       "text": {
+        "en": "Yeong did not fill a blank bid field, however loudly the auction platform called.",
         "ko": "빈 호가란은 단상이 떠들어도 채우지 않았다."
       }
     },
@@ -550,6 +628,7 @@
       "anchor": "가문기업공동체-2",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -557,6 +636,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-2-p1",
       "text": {
+        "en": "The Noryangjin Refrigeration Merchants invoked rotation of power slots to demand access to observe the ledger desk.",
         "ko": "노량진냉동상단은 전력 슬롯 순환을 내세워 원장석 참관을 요구했다."
       }
     },
@@ -564,6 +644,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-2-p2",
       "text": {
+        "en": "Yeong Migyeol yielded only the charter slot and erased the real business names from the chalkboard.",
         "ko": "영미결은 헌장 칸만 내주고 실재 상호를 분필 판에서 지웠다."
       }
     },
@@ -571,6 +652,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-2-p3",
       "text": {
+        "en": "Only the mornings when Yeong left Seon Dasom’s award messages on the same line served as proof of standing in the community.",
         "ko": "선다솜의 낙찰 전갈을 같은 줄에 남긴 아침만이 공동체의 위치 증명이다."
       }
     },
@@ -578,6 +660,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-2-p4",
       "text": {
+        "en": "The demand for an exclusive temperature key was rejected at the ledger desk railing.",
         "ko": "전속 온도 키 요구는 원장석 난간에서 반려됐다."
       }
     },
@@ -586,6 +669,7 @@
       "anchor": "붕괴의-상처-2",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -593,6 +677,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-2-p1",
       "text": {
+        "en": "At noon, as canned-food allocations wavered, three bid lines pointed to different times.",
         "ko": "통조림 할당이 흔들리던 정오, 호가 세 줄이 서로 다른 시각을 가리켰다."
       }
     },
@@ -600,6 +685,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-2-p2",
       "text": {
+        "en": "Yeong Migyeol put down the chalk and closed the ledger until Eun Taeho’s auction platform was sealed.",
         "ko": "영미결은 분필을 내려놓고 은태호의 단상이 봉인될 때까지 원장을 덮었다."
       }
     },
@@ -607,6 +693,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-2-p3",
       "text": {
+        "en": "What Yeong hated most was the prospect of a false weight appearing on the public ration sheet.",
         "ko": "가짜 중량이 공개 배급표에 오르는 일이 가장 싫었다."
       }
     },
@@ -614,6 +701,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-2-p4",
       "text": {
+        "en": "Even as the auction calls grew frequent, Yeong could not let go of the cover.",
         "ko": "경매 구호가 잦아도 덮개를 손에서 놓지 못했다."
       }
     },
@@ -622,6 +710,7 @@
       "anchor": "생존-전환점-2",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -629,6 +718,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-2-p1",
       "text": {
+        "en": "The choice was whether to transfer the bid ledger under seal or send Seon Dasom’s award message first.",
         "ko": "호가 원장을 봉인 이관할지, 선다솜의 낙찰 전갈을 먼저 내보낼지가 갈렸다."
       }
     },
@@ -636,6 +726,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-2-p2",
       "text": {
+        "en": "The Korea Strait Theater’s demand to readjust canned-food allocations reached the second-floor railing.",
         "ko": "대한해협전구의 통조림 재조정 독촉이 2층 난간에 닿았다."
       }
     },
@@ -643,6 +734,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-2-p3",
       "text": {
+        "en": "Transfer would preserve the figures but delay the order at the auction platform; sending the message would leave a line of the ledger blank and conceal the unsold-lot field.",
         "ko": "이관을 택하면 숫자는 남고 단상 순번이 밀리며, 전갈을 택하면 원장 한 줄이 비고 유찰 칸이 숨는다."
       }
     },
@@ -650,6 +742,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-2-p4",
       "text": {
+        "en": "K385-TURN is the hand that picked up the chalk again.",
         "ko": "K385-TURN은 분필을 다시 잡은 손이다."
       }
     },
@@ -658,6 +751,7 @@
       "anchor": "현재-지위-2",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -665,6 +759,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-2-p1",
       "text": {
+        "en": "Yeong Migyeol keeps roll call and the bid queue on the second floor of the produce building.",
         "ko": "영미결은 청과동 2층에서 점호와 호가 큐를 지킨다."
       }
     },
@@ -672,6 +767,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-2-p2",
       "text": {
+        "en": "A license and a two-line log sustain the post, and Yeong refuses HP08’s demand for an exclusive slot every time.",
         "ko": "면허와 이중 줄 로그가 자리를 받치고, HP08의 전속 슬롯 요구는 매번 거절한다."
       }
     },
@@ -679,6 +775,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-2-p3",
       "text": {
+        "en": "At noon each day, Yeong rewrites the scale markings and ledger total on the wall.",
         "ko": "정오마다 저울 눈금과 원장 합을 벽에 다시 쓴다."
       }
     },
@@ -686,6 +783,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-2-p4",
       "text": {
+        "en": "If the Cast field and chalkboard do not match, Yeong cuts off the auction calls.",
         "ko": "Cast 칸과 분필 판이 어긋나면 경매 구호를 끊는다."
       }
     },
@@ -694,6 +792,7 @@
       "anchor": "비밀빚죄책감-2",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -701,6 +800,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-2-p1",
       "text": {
+        "en": "The secret is the line Yeong hid in an adjacent column for a day, showing an unsold lot.",
         "ko": "유찰 칸을 옆 난에 하루 숨긴 줄이 비밀이다."
       }
     },
@@ -708,6 +808,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-2-p2",
       "text": {
+        "en": "Regret remains between the public figures Yeong saved and the ice consequently withheld from the neighboring shop.",
         "ko": "살린 공개 숫자와 그 때문에 줄인 이웃 얼음 사이에서 미안함이 남는다."
       }
     },
@@ -715,6 +816,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-2-p3",
       "text": {
+        "en": "Partial disclosure permits only one line of the column, under Seon Dasom’s observation.",
         "ko": "부분 공개는 선다솜 입회 아래 난 한 줄만 허용한다."
       }
     },
@@ -722,6 +824,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-2-p4",
       "text": {
+        "en": "SECRET opens only together with the bid ledger.",
         "ko": "SECRET은 호가 원장과 동시에만 열린다."
       }
     },
@@ -730,6 +833,7 @@
       "anchor": "관계-공동과거-2",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -737,6 +841,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-2-p1",
       "text": {
+        "en": "The master-apprentice work of recording Eun Taeho’s bids and the bidding order Yeong shared with Seon Dasom overlap in one ledger.",
         "ko": "은태호의 호가를 옮기는 사제 일과, 선다솜과 나눈 입찰 순번이 한 원장에 겹친다."
       }
     },
@@ -744,6 +849,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-2-p2",
       "text": {
+        "en": "When a word of mediation from Nam Yungyeong stops the auction platform, Yeong Migyeol’s chalk stops too.",
         "ko": "남윤경의 조정 한 마디가 단상을 멈추면 영미결의 분필도 멈춘다."
       }
     },
@@ -751,6 +857,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-2-p3",
       "text": {
+        "en": "At the same noon, some lines became a salvation, while some adjacent columns remained betrayals.",
         "ko": "같은 정오에 어떤 줄은 구원이 되었고 어떤 옆 난은 배신으로 남았다."
       }
     },
@@ -758,6 +865,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-2-p4",
       "text": {
+        "en": "The relationship ledger continues in STORY-B016-K377.",
         "ko": "관계 원장은 STORY-B016-K377로 이어진다."
       }
     },
@@ -766,6 +874,7 @@
       "anchor": "3막-개인-서사선-2",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -773,6 +882,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-2-p1",
       "text": {
+        "en": "In the first scene, Yeong Migyeol closes the ledger over three mismatched bid lines.",
         "ko": "첫 장면에서 영미결은 어긋난 호가 세 줄에 원장을 덮는다."
       }
     },
@@ -780,6 +890,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-2-p2",
       "text": {
+        "en": "Next, HP08’s slot observation and XT03’s canned-food demand intersect at the railing.",
         "ko": "이어서 HP08 슬롯 참관과 XT03 통조림 독촉이 난간에서 교차한다."
       }
     },
@@ -787,6 +898,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-2-p3",
       "text": {
+        "en": "At the end, Yeong repays in figures the gap of unsold lots left by transfer or by a message.",
         "ko": "마지막에 이관 또는 전갈이 남긴 유찰 공백을 숫자로 갚는다."
       }
     },
@@ -794,6 +906,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-2-p4",
       "text": {
+        "en": "The identifying arc is STORY-B016-K377.",
         "ko": "식별 서사는 STORY-B016-K377이다."
       }
     },
@@ -802,6 +915,7 @@
       "anchor": "분기-결말-2",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -809,6 +923,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-2-p1",
       "text": {
+        "en": "If Yeong transfers the bid ledger first, the ration figures retain public continuity.",
         "ko": "호가 원장을 먼저 이관하면 배급 숫자가 공공 연속을 지킨다."
       }
     },
@@ -816,6 +931,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-2-p2",
       "text": {
+        "en": "If Yeong sends the award message first, the auction platform keeps running, but the secret in the adjacent column remains.",
         "ko": "낙찰 전갈을 먼저 내보내면 단상은 돌되 옆 난의 비밀이 남는다."
       }
     },
@@ -823,6 +939,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-2-p3",
       "text": {
+        "en": "The Garak records officer’s slot remains in place; only the marker is K385-OUT.",
         "ko": "가락 기록관 칸은 유지되고 표식만 K385-OUT이다."
       }
     },
@@ -830,6 +947,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-2-p4",
       "text": {
+        "en": "The decision at the time is to cover the transfer or hold back the message.",
         "ko": "당시의 결정은 이관 엄호 또는 전갈 보류다."
       }
     },
@@ -838,6 +956,7 @@
       "anchor": "3막-2",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -846,12 +965,15 @@
       "anchor": "3막-2-list1",
       "items": [
         {
+          "en": "Act 1: Closes the ledger over three mismatched bid lines and puts down the chalk",
           "ko": "1막: 어긋난 호가 세 줄에 원장을 덮고 분필을 내려놓는다"
         },
         {
+          "en": "Act 2: HP08’s slot observation and XT03’s canned-food demand intersect at the second-floor railing",
           "ko": "2막: HP08 슬롯 참관과 XT03 통조림 독촉이 2층 난간에서 교차한다"
         },
         {
+          "en": "Act 3: Repays the gap of unsold lots in figures as the cost of transfer or a message",
           "ko": "3막: 이관 또는 전갈의 값으로 유찰 공백을 숫자로 갚는다"
         }
       ]
@@ -861,6 +983,7 @@
       "anchor": "분기-결말-목록-2",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -869,9 +992,11 @@
       "anchor": "분기-결말-목록-2-list1",
       "items": [
         {
+          "en": "K385-OUT-A: Transfers the bid ledger, preserving continuity in ration figures",
           "ko": "K385-OUT-A: 호가 원장 이관으로 배급 숫자 연속"
         },
         {
+          "en": "K385-OUT-B: Prioritizes the award message, keeping the secret in the adjacent column",
           "ko": "K385-OUT-B: 낙찰 전갈 우선으로 옆 난 비밀 유지"
         }
       ]
@@ -881,6 +1006,7 @@
       "anchor": "인물-k410-동새결",
       "depth": 2,
       "text": {
+        "en": "Person K410 · Dong Saegyeol",
         "ko": "인물 K410 · 동새결"
       }
     },
@@ -889,6 +1015,7 @@
       "anchor": "인물-k410-동새결-list1",
       "items": [
         {
+          "en": "Link: house=HC14 theater=XT05 scenarios=XT05-SC2,STORY-B016-K410",
           "ko": "연결: house=HC14 theater=XT05 scenarios=XT05-SC2,STORY-B016-K410"
         }
       ]
@@ -898,6 +1025,7 @@
       "anchor": "정체성출신-3",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -905,6 +1033,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-3-p1",
       "text": {
+        "en": "In front of the wire-bound shelf in the Suseo contract repository, Dong Saegyeol covers the adjacent field of the loss sheet before the assistant seal’s ink dries.",
         "ko": "수서 계약고 철끈 선반 앞에서 동새결은 보조 직인이 마르기 전에 손실표 옆칸부터 가린다."
       }
     },
@@ -912,6 +1041,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-3-p2",
       "text": {
+        "en": "Dong is a loss-compensation audit records officer and receives Gwak Eunjae’s seal by way of the binding wire.",
         "ko": "손실보상 감사 기록관이며 곽은재의 직인을 철끈으로 이어 받는다."
       }
     },
@@ -919,6 +1049,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-3-p3",
       "text": {
+        "en": "Originally from Korea and raised in the village by the Segok siding, Dong trusts the direction of a wire knot more than bargaining.",
         "ko": "세곡 측선 마을에서 자란 한국 기원으로, 흥정보다 철끈 매듭의 방향을 믿는다."
       }
     },
@@ -926,6 +1057,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-3-p4",
       "text": {
+        "en": "Dong Saegyeol and K401 are not replaced in the audit register.",
         "ko": "동새결과 K401은 감사 명부에서 교체되지 않는다."
       }
     },
@@ -934,6 +1066,7 @@
       "anchor": "붕괴-전-삶-3",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -941,6 +1074,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-3-p1",
       "text": {
+        "en": "Dong tried to bind fulfillment times and the order of compensation into the loss sheet so hidden losses would not be handled only through spoken exchanges in the mediation room.",
         "ko": "이행 시간과 보상 순서를 손실표에 묶어 숨은 손해가 중재실 구두로만 처리되지 않게 하려 했다."
       }
     },
@@ -948,6 +1082,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-3-p2",
       "text": {
+        "en": "An undated copy bearing the seal was not burned but confined beneath the binding wire.",
         "ko": "날짜가 빈 직인 사본은 태우지 않고 철끈 아래 가뒀다."
       }
     },
@@ -955,6 +1090,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-3-p3",
       "text": {
+        "en": "The winter heating support promised to Dong’s parents was the seed of a personal debt.",
         "ko": "부모에게 약속한 겨울 난방 지원이 사적 빚의 씨앗이다."
       }
     },
@@ -962,6 +1098,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-3-p4",
       "text": {
+        "en": "Dong did not fill the blank adjacent field, even when envoys pressed.",
         "ko": "빈 옆칸은 사절이 재촉해도 채우지 않았다."
       }
     },
@@ -970,6 +1107,7 @@
       "anchor": "가문기업공동체-3",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -977,6 +1115,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-3-p1",
       "text": {
+        "en": "The Yeouido Ledger House invoked its double-signature ledger to demand observer access to the wire-bound shelf.",
         "ko": "여의도장부가은 이중서명 장부를 내세워 철끈 선반 참관을 요구했다."
       }
     },
@@ -984,6 +1123,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-3-p2",
       "text": {
+        "en": "Dong Saegyeol accepted only charter registration and scraped the real business names off the loss sheet.",
         "ko": "동새결은 헌장 등재만 받고 실재 상호를 손실표에서 긁어냈다."
       }
     },
@@ -991,6 +1131,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-3-p3",
       "text": {
+        "en": "Dong’s standing in the community was measured by how many times Jeong Hojun’s fulfillment times were copied into the adjacent field.",
         "ko": "정호준의 이행 시간을 옆칸에 옮긴 횟수가 공동체 위치다."
       }
     },
@@ -998,6 +1139,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-3-p4",
       "text": {
+        "en": "The demand for exclusive ownership of the national ledger was refused at the mediation-room threshold.",
         "ko": "전속 국가 장부 소유 요구는 중재실 문턱에서 거절됐다."
       }
     },
@@ -1006,6 +1148,7 @@
       "anchor": "붕괴의-상처-3",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -1013,6 +1156,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-3-p1",
       "text": {
+        "en": "One evening, as the delivery-list hash wavered, three loss sheets pointed to the same time.",
         "ko": "인도 목록 해시가 흔들리던 저녁, 손실표 세 장이 같은 시각을 가리켰다."
       }
     },
@@ -1020,6 +1164,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-3-p2",
       "text": {
+        "en": "Dong Saegyeol tightened the binding wire and stopped compensation until the ink of Gwak Eunjae’s assistant seal dried.",
         "ko": "동새결은 철끈을 조이고 곽은재의 보조 직인이 식을 때까지 보상을 멈췄다."
       }
     },
@@ -1027,6 +1172,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-3-p3",
       "text": {
+        "en": "The heart of the fear was that concealed losses would swallow the public order of payment.",
         "ko": "숨긴 손해가 공개 순서를 삼키는 일이 공포의 핵이었다."
       }
     },
@@ -1034,6 +1180,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-3-p4",
       "text": {
+        "en": "Even when the archive lights went out, Dong could not untie the knot.",
         "ko": "서고 불이 꺼져도 매듭을 풀지 못했다."
       }
     },
@@ -1042,6 +1189,7 @@
       "anchor": "생존-전환점-3",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -1049,6 +1197,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-3-p1",
       "text": {
+        "en": "The choice was whether to post the loss sheet on the mediation-room wall or retrieve the binding wire and block the seal’s route.",
         "ko": "손실표를 중재실 벽에 붙일지, 철끈을 회수해 직인 경로를 막을지가 갈렸다."
       }
     },
@@ -1056,6 +1205,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-3-p2",
       "text": {
+        "en": "The Incheon Trust Theater’s request to open a delivery-cycle line fell across the shelf’s shadow.",
         "ko": "인천신탁전구의 배송 회차선 개방 요청이 선반 그림자에 겹쳤다."
       }
     },
@@ -1063,6 +1213,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-3-p3",
       "text": {
+        "en": "Posting the sheet would preserve the compensation order; retrieving the wire would make the records officer a target.",
         "ko": "벽 부착은 보상 순서를 살리고 회수는 기록관 자신을 표적으로 만든다."
       }
     },
@@ -1070,6 +1221,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-3-p4",
       "text": {
+        "en": "K410-TURN is the direction of the hand that untied that knot.",
         "ko": "K410-TURN은 그 매듭을 푼 손의 방향이다."
       }
     },
@@ -1078,6 +1230,7 @@
       "anchor": "현재-지위-3",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -1085,6 +1238,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-3-p1",
       "text": {
+        "en": "Dong Saegyeol oversees roll call and the loss queue at the contract repository shelf.",
         "ko": "동새결은 계약고 선반에서 점호와 손실 큐를 본다."
       }
     },
@@ -1092,6 +1246,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-3-p2",
       "text": {
+        "en": "Only a license and a double-signature log substantiate the post, and Dong refuses HC14’s demand for exclusivity.",
         "ko": "자리의 근거는 면허와 이중서명 로그뿐이며 HC14의 전속 요구는 거절한다."
       }
     },
@@ -1099,6 +1254,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-3-p3",
       "text": {
+        "en": "Each morning, Dong corrects the binding wire’s tension and the hash field with the same chalk.",
         "ko": "아침마다 철끈 장력과 해시 칸을 같은 분필로 고친다."
       }
     },
@@ -1106,6 +1262,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-3-p4",
       "text": {
+        "en": "If the Cast status and loss-sheet total do not match, Dong closes the compensation window.",
         "ko": "Cast 현황과 손실표 합이 어긋나면 보상 창구를 닫는다."
       }
     },
@@ -1114,6 +1271,7 @@
       "anchor": "비밀빚죄책감-3",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -1121,6 +1279,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-3-p1",
       "text": {
+        "en": "The secret is the knot that kept an undated copy bearing the seal beneath the binding wire for one more day.",
         "ko": "날짜 빈 직인 사본을 철끈 아래 하루 더 둔 매듭이 비밀이다."
       }
     },
@@ -1128,6 +1287,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-3-p2",
       "text": {
+        "en": "Regret grows between the public order Dong saved and the heating support Dong delayed.",
         "ko": "살린 공개 순서와 늦춘 난방 지원 사이에서 미안함이 자란다."
       }
     },
@@ -1135,6 +1295,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-3-p3",
       "text": {
+        "en": "Partial disclosure reveals only the knot’s position, under Gwak Eunjae’s observation.",
         "ko": "부분 공개는 곽은재 입회 아래 매듭 위치만 밝힌다."
       }
     },
@@ -1142,6 +1303,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-3-p4",
       "text": {
+        "en": "SECRET opens only together with the loss sheet.",
         "ko": "SECRET은 손실표와 동시에만 열린다."
       }
     },
@@ -1150,6 +1312,7 @@
       "anchor": "관계-공동과거-3",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -1157,6 +1320,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-3-p1",
       "text": {
+        "en": "The master-apprentice work of receiving Gwak Eunjae’s assistant seal and the contract to copy Jeong Hojun’s fulfillment times into the adjacent field occupy one shelf.",
         "ko": "곽은재의 보조 직인을 이어 받는 사제 일과, 정호준의 이행 시간을 옆칸에 옮기는 계약이 한 선반에 있다."
       }
     },
@@ -1164,6 +1328,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-3-p2",
       "text": {
+        "en": "When Jeong Yura’s cross-verification arrives, Dong Saegyeol shows only the knot, not the business names.",
         "ko": "정유라의 교차검증이 내려오면 동새결은 매듭만 보여주고 상호는 보여 주지 않는다."
       }
     },
@@ -1171,6 +1336,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-3-p3",
       "text": {
+        "en": "Amid the same wavering hash, some sheets became a salvation and some copies remained betrayals.",
         "ko": "같은 해시 흔들림 속에서 어떤 표는 구원이 되었고 어떤 사본은 배신으로 남았다."
       }
     },
@@ -1178,6 +1344,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-3-p4",
       "text": {
+        "en": "The endpoint is STORY-B016-K401.",
         "ko": "끝점은 STORY-B016-K401이다."
       }
     },
@@ -1186,6 +1353,7 @@
       "anchor": "3막-개인-서사선-3",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -1193,6 +1361,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-3-p1",
       "text": {
+        "en": "The beginning is Dong tightening the binding wire over three loss sheets bearing the same time.",
         "ko": "시작은 같은 시각의 손실표 세 장에 철끈을 조이는 일이다."
       }
     },
@@ -1200,6 +1369,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-3-p2",
       "text": {
+        "en": "In the middle, HC14’s double-signature demand and XT05’s delivery-cycle line request contend at the shelf.",
         "ko": "중반에 HC14 이중서명 요구와 XT05 회차선 요청이 선반에서 겨룬다."
       }
     },
@@ -1207,6 +1377,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-3-p3",
       "text": {
+        "en": "At the end, Dong repays the compensation gap left by posting the sheet on the wall or retrieving the wire.",
         "ko": "끝에서 벽 부착 또는 철끈 회수가 남긴 보상 공백을 갚는다."
       }
     },
@@ -1214,6 +1385,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-3-p4",
       "text": {
+        "en": "The arc ID is fixed as STORY-B016-K401.",
         "ko": "서사선 ID는 STORY-B016-K401로 고정된다."
       }
     },
@@ -1222,6 +1394,7 @@
       "anchor": "분기-결말-3",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -1229,6 +1402,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-3-p1",
       "text": {
+        "en": "Posting the loss sheet on the wall preserves the public compensation order.",
         "ko": "손실표를 벽에 붙이면 공공 보상 순서가 산다."
       }
     },
@@ -1236,6 +1410,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-3-p2",
       "text": {
+        "en": "Retrieving the binding wire preserves the seal’s route and the personal knot.",
         "ko": "철끈을 회수하면 직인 경로와 개인 매듭이 남는다."
       }
     },
@@ -1243,6 +1418,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-3-p3",
       "text": {
+        "en": "The Suseo audit-record slot remains in place; only the branch is K410-OUT.",
         "ko": "수서 감사 기록 칸은 유지되고 갈림만 K410-OUT이다."
       }
     },
@@ -1250,6 +1426,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-3-p4",
       "text": {
+        "en": "Personnel at the scene choose to witness the wall posting or retrieve the knot.",
         "ko": "현장 인원은 벽 부착 입회 또는 매듭 회수를 고른다."
       }
     },
@@ -1258,6 +1435,7 @@
       "anchor": "3막-3",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -1266,12 +1444,15 @@
       "anchor": "3막-3-list1",
       "items": [
         {
+          "en": "Act 1: Tightens the binding wire over three loss sheets bearing the same time and stops compensation",
           "ko": "1막: 같은 시각의 손실표 세 장에 철끈을 조이고 보상을 멈춘다"
         },
         {
+          "en": "Act 2: HC14’s double-signature demand and XT05’s delivery-cycle line request contend at the shelf",
           "ko": "2막: HC14 이중서명과 XT05 회차선 요청이 선반에서 겨룬다"
         },
         {
+          "en": "Act 3: Repays the compensation gap as the cost of posting the sheet on the wall or retrieving the wire",
           "ko": "3막: 벽 부착 또는 철끈 회수의 값으로 보상 공백을 갚는다"
         }
       ]
@@ -1281,6 +1462,7 @@
       "anchor": "분기-결말-목록-3",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -1289,9 +1471,11 @@
       "anchor": "분기-결말-목록-3-list1",
       "items": [
         {
+          "en": "K410-OUT-A: Posts the loss sheet on the wall, maintaining the public compensation order",
           "ko": "K410-OUT-A: 손실표 벽 부착으로 공공 보상 순서 유지"
         },
         {
+          "en": "K410-OUT-B: Retrieves the binding wire, preserving the seal’s route and the knot",
           "ko": "K410-OUT-B: 철끈 회수로 직인 경로와 매듭 유지"
         }
       ]
@@ -1301,6 +1485,7 @@
       "anchor": "인물-k014-표시완",
       "depth": 2,
       "text": {
+        "en": "Person K014 · Pyo Siwan",
         "ko": "인물 K014 · 표시완"
       }
     },
@@ -1309,6 +1494,7 @@
       "anchor": "인물-k014-표시완-list1",
       "items": [
         {
+          "en": "Link: house=HP01 theater=XT02 scenarios=XT02-SC1,STORY-B016-K014",
           "ko": "연결: house=HP01 theater=XT02 scenarios=XT02-SC1,STORY-B016-K014"
         }
       ]
@@ -1318,6 +1504,7 @@
       "anchor": "정체성출신-4",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -1325,6 +1512,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-4-p1",
       "text": {
+        "en": "In the floodgate messenger tunnel at Sinjeong Base, Pyo Siwan smells the ink of the arrival stamp before lifting the sealed case onto a shoulder.",
         "ko": "신정기지 수문 전령 터널에서 표시완은 봉인함을 어깨에 올리기 전에 도착 도장의 잉크 냄새부터 맡는다."
       }
     },
@@ -1332,6 +1520,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-4-p2",
       "text": {
+        "en": "Pyo is a floodgate-charter messenger and delivers Jang Pilgyu’s audit wording only at the site.",
         "ko": "수문헌장 전령이며 장필규의 감사 문구를 현장에서만 배달한다."
       }
     },
@@ -1339,6 +1528,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-4-p3",
       "text": {
+        "en": "Originally from Korea and raised beside the Sinjeong rail tracks, Pyo does not hold the sealing cord in the mouth, even when out of breath.",
         "ko": "신정 철길 옆에서 자란 한국 기원으로, 숨이 차도 봉인 끈을 입에 물지 않는다."
       }
     },
@@ -1346,6 +1536,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-4-p4",
       "text": {
+        "en": "Pyo Siwan and K014 are not reassigned in the messenger register.",
         "ko": "표시완과 K014는 전령 명부에서 재배치되지 않는다."
       }
     },
@@ -1354,6 +1545,7 @@
       "anchor": "붕괴-전-삶-4",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -1361,6 +1553,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-4-p1",
       "text": {
+        "en": "Pyo tried to carry the proposed expansion of protection rights only while sealed, so oral interpretations could not swallow the floodgate key.",
         "ko": "보호권 확대안을 봉인 상태로만 나르게 해 구두 해석이 수문 키를 삼키지 못하게 하려 했다."
       }
     },
@@ -1368,6 +1561,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-4-p2",
       "text": {
+        "en": "A case without a delivery time was not burned but confined in a tunnel wall recess.",
         "ko": "배달 시각이 빈 함은 태우지 않고 터널 벽감에 가뒀다."
       }
     },
@@ -1375,6 +1569,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-4-p3",
       "text": {
+        "en": "The emergency escort route Pyo had promised to lend Gi Bareum was a small debt.",
         "ko": "기바름에게 빌려 주기로 한 비상 호송로가 작은 빚의 자리였다."
       }
     },
@@ -1382,6 +1577,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-4-p4",
       "text": {
+        "en": "Pyo did not hand an arrival stamp with wet ink to the floodgate watch.",
         "ko": "잉크가 마르지 않은 도착 도장은 수문 당직에게 넘기지 않았다."
       }
     },
@@ -1390,6 +1586,7 @@
       "anchor": "가문기업공동체-4",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -1397,6 +1594,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-4-p1",
       "text": {
+        "en": "The Yeongdeungpo Floodgate House invoked divided custody of keys to demand observer access to the messenger tunnel.",
         "ko": "영등포수문가는 키 분할 보관을 내세워 전령 터널 참관을 요구했다."
       }
     },
@@ -1404,6 +1602,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-4-p2",
       "text": {
+        "en": "Pyo Siwan recognized only the charter window and removed real product names from the delivery ledger.",
         "ko": "표시완은 헌장 창구만 인정하고 실재 제품명을 배달 원장에서 뺐다."
       }
     },
@@ -1411,6 +1610,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-4-p3",
       "text": {
+        "en": "Pyo’s standing in the community was measured by the number of times Han Jaemok’s expansion proposal was carried while sealed.",
         "ko": "한재목의 확대안을 봉인 상태로만 나른 횟수가 공동체 위치다."
       }
     },
@@ -1418,6 +1618,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-4-p4",
       "text": {
+        "en": "Messages calling for water to be used as a weapon were sent back from the tunnel entrance.",
         "ko": "물을 무기로 쓰라는 전갈은 터널 입구에서 되돌려 보냈다."
       }
     },
@@ -1426,6 +1627,7 @@
       "anchor": "붕괴의-상처-4",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -1433,6 +1635,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-4-p1",
       "text": {
+        "en": "At dawn, as the drainage schedule was redrawn to match the West Sea tides, three sealed cases were stamped with the same arrival time.",
         "ko": "서해 조위에 맞춰 배수 일정이 다시 짜이던 새벽, 봉인함 세 개가 같은 도착 시각을 찍었다."
       }
     },
@@ -1440,6 +1643,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-4-p2",
       "text": {
+        "en": "Pyo Siwan locked the tunnel and stopped deliveries until the ink of Jang Pilgyu’s wording dried.",
         "ko": "표시완은 터널을 잠그고 장필규의 문구가 식기 전까지 배달을 멈췄다."
       }
     },
@@ -1447,6 +1651,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-4-p3",
       "text": {
+        "en": "The thought of the expansion proposal being unsealed and the floodgate keys gathering in one pocket left a wound.",
         "ko": "확대안이 풀려 수문 키가 한 주머니로 모이는 상상이 상처를 남겼다."
       }
     },
@@ -1454,6 +1659,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-4-p4",
       "text": {
+        "en": "Even after the drainage siren stopped, Pyo could not put down the case on the shoulder.",
         "ko": "배수 사이렌이 꺼져도 어깨의 함을 내려놓지 못했다."
       }
     },
@@ -1462,6 +1668,7 @@
       "anchor": "생존-전환점-4",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -1469,6 +1676,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-4-p1",
       "text": {
+        "en": "The choice was whether to run the audit wording to the floodgate watch or leave the expansion-proposal case in the wall recess to preserve its seal.",
         "ko": "감사 문구를 수문 당직까지 뛰어 배달할지, 확대안 함을 벽감에 남겨 봉인을 지킬지가 갈렸다."
       }
     },
@@ -1476,6 +1684,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-4-p2",
       "text": {
+        "en": "A message from the West Sea Granary Theater about readjusting dock drainage sounded over the tunnel loudspeaker.",
         "ko": "서해곡창전구의 부두 배수 재조정 전갈이 터널 확성기에 겹쳤다."
       }
     },
@@ -1483,6 +1692,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-4-p3",
       "text": {
+        "en": "Delivery would keep the public charter alive but leave the emergency escort route empty; preserving the seal would leave one watch post unfilled.",
         "ko": "배달을 택하면 공공 헌장은 살아나고 비상 호송로가 비며, 봉인을 택하면 당직 한 칸이 공백이 된다."
       }
     },
@@ -1490,6 +1700,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-4-p4",
       "text": {
+        "en": "K014-TURN is the wall on which the arrival stamp was made.",
         "ko": "K014-TURN은 도착 도장을 찍은 벽이다."
       }
     },
@@ -1498,6 +1709,7 @@
       "anchor": "현재-지위-4",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -1505,6 +1717,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-4-p1",
       "text": {
+        "en": "Pyo Siwan runs roll call and the sealed-case queue in the messenger tunnel.",
         "ko": "표시완은 전령 터널에서 점호와 봉인 큐를 뛴다."
       }
     },
@@ -1512,6 +1725,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-4-p2",
       "text": {
+        "en": "A license and arrival log sustain the post, and Pyo refuses HP01’s demand for an exclusive key.",
         "ko": "면허와 도착 로그가 자리를 유지하며 HP01의 전속 키 요구는 거절한다."
       }
     },
@@ -1519,6 +1733,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-4-p3",
       "text": {
+        "en": "Each dawn, Pyo records the tunnel humidity and case weights in the same chalk field.",
         "ko": "새벽마다 터널 습도와 함 무게를 같은 분필 칸에 적는다."
       }
     },
@@ -1526,6 +1741,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-4-p4",
       "text": {
+        "en": "If the Cast profile and delivery ledger do not match, Pyo locks the exit.",
         "ko": "Cast 프로필과 배달 원장이 어긋나면 출구를 잠근다."
       }
     },
@@ -1534,6 +1750,7 @@
       "anchor": "비밀빚죄책감-4",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -1541,6 +1758,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-4-p1",
       "text": {
+        "en": "The secret is the record of a case without a time that Pyo hid in the wall recess for a day.",
         "ko": "시각이 빈 함을 벽감에 하루 숨긴 기록이 비밀이다."
       }
     },
@@ -1548,6 +1766,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-4-p2",
       "text": {
+        "en": "Regret remains between the charter Pyo saved and the escort route left empty that dawn.",
         "ko": "살린 헌장과 그 새벽 비운 호송로 사이에서 미안함이 남는다."
       }
     },
@@ -1555,6 +1774,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-4-p3",
       "text": {
+        "en": "Partial disclosure permits only the wall-recess number, under Gi Bareum’s observation.",
         "ko": "부분 공개는 기바름 입회 아래 벽감 번호만 허용한다."
       }
     },
@@ -1562,6 +1782,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-4-p4",
       "text": {
+        "en": "The SECRET cord is untied only together with the arrival ledger.",
         "ko": "SECRET 끈은 도착 원장과 동시에만 풀린다."
       }
     },
@@ -1570,6 +1791,7 @@
       "anchor": "관계-공동과거-4",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -1577,6 +1799,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-4-p1",
       "text": {
+        "en": "The obligation to deliver Jang Pilgyu’s audit wording on-site, the silence of carrying Han Jaemok’s expansion proposal only while sealed, and the emergency escort route borrowed by Gi Bareum converge in one tunnel.",
         "ko": "장필규의 감사 문구를 현장에서 배달하는 계약 한재목의 확대안을 봉인으로만 나르는 침묵 기바름이 빌린 비상 호송로가 한 터널에 겹친다."
       }
     },
@@ -1584,6 +1807,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-4-p2",
       "text": {
+        "en": "At the same dawn tide, some cases saved one another and some wall recesses remained betrayals.",
         "ko": "같은 조위 새벽에 어떤 함은 서로를 살렸고 어떤 벽감은 배신으로 남았다."
       }
     },
@@ -1591,6 +1815,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-4-p3",
       "text": {
+        "en": "The endpoint of the relationship leads to STORY-B016-K014.",
         "ko": "관계의 끝점은 STORY-B016-K014로 이어진다."
       }
     },
@@ -1598,6 +1823,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-4-p4",
       "text": {
+        "en": "The messenger does not interpret; Pyo only proves arrival.",
         "ko": "전령은 해석하지 않고 도착만 증명한다."
       }
     },
@@ -1606,6 +1832,7 @@
       "anchor": "3막-개인-서사선-4",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -1613,6 +1840,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-4-p1",
       "text": {
+        "en": "Act 1 is locking the tunnel at dawn over cases stamped with the same arrival time.",
         "ko": "새벽의 같은 도착 시각에 터널을 잠그는 것이 1막이다."
       }
     },
@@ -1620,6 +1848,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-4-p2",
       "text": {
+        "en": "Act 2 is HP01’s key-division observation and XT02’s drainage message fighting over the loudspeaker.",
         "ko": "HP01 키 분할 참관과 XT02 배수 전갈이 확성기에서 싸우는 것이 2막이다."
       }
     },
@@ -1627,6 +1856,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-4-p3",
       "text": {
+        "en": "Act 3 is repaying, breath by breath, the gap in the escort route left by delivery or preservation of the seal.",
         "ko": "배달 또는 봉인이 남긴 호송로 공백을 숨으로 갚는 것이 3막이다."
       }
     },
@@ -1634,6 +1864,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-4-p4",
       "text": {
+        "en": "The arc is STORY-B016-K014.",
         "ko": "서사선은 STORY-B016-K014다."
       }
     },
@@ -1642,6 +1873,7 @@
       "anchor": "분기-결말-4",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -1649,6 +1881,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-4-p1",
       "text": {
+        "en": "If Pyo runs the audit wording to its destination, the public floodgate charter continues.",
         "ko": "감사 문구를 뛰어 배달하면 공공 수문헌장이 연속된다."
       }
     },
@@ -1656,6 +1889,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-4-p2",
       "text": {
+        "en": "If Pyo leaves the expansion-proposal case in the wall recess, its seal and Pyo’s personal record remain.",
         "ko": "확대안 함을 벽감에 두면 봉인과 개인 기록이 남는다."
       }
     },
@@ -1663,6 +1897,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-4-p3",
       "text": {
+        "en": "The Water Compact messenger slot remains in place; only the branch is K014-OUT.",
         "ko": "급수계약정 전령 칸은 유지되고 갈림만 K014-OUT이다."
       }
     },
@@ -1670,6 +1905,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-4-p4",
       "text": {
+        "en": "The decision at the time is tunnel escort or testimony about the wall recess.",
         "ko": "당시의 결정은 터널 호위 또는 벽감 증언이다."
       }
     },
@@ -1678,6 +1914,7 @@
       "anchor": "3막-4",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -1686,12 +1923,15 @@
       "anchor": "3막-4-list1",
       "items": [
         {
+          "en": "Act 1: Locks the tunnel over three sealed cases bearing the same arrival time",
           "ko": "1막: 같은 도착 시각의 봉인함 세 개에 터널을 잠근다"
         },
         {
+          "en": "Act 2: HP01’s key-division observation and XT02’s drainage message fight over the loudspeaker",
           "ko": "2막: HP01 키 분할 참관과 XT02 배수 전갈이 확성기에서 싸운다"
         },
         {
+          "en": "Act 3: Accepts the gap in the emergency escort route as the cost of delivery or preserving the seal",
           "ko": "3막: 배달 또는 봉인의 값으로 비상 호송로 공백을 감수한다"
         }
       ]
@@ -1701,6 +1941,7 @@
       "anchor": "분기-결말-목록-4",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -1709,9 +1950,11 @@
       "anchor": "분기-결말-목록-4-list1",
       "items": [
         {
+          "en": "K014-OUT-A: Delivers the audit wording, preserving public continuity of the floodgate charter",
           "ko": "K014-OUT-A: 감사 문구 배달로 수문헌장 공공 연속"
         },
         {
+          "en": "K014-OUT-B: Seals the expansion proposal in the wall recess, preserving the personal record",
           "ko": "K014-OUT-B: 확대안 벽감 봉인으로 개인 기록 유지"
         }
       ]
@@ -1721,6 +1964,7 @@
       "anchor": "인물-k042-표강호",
       "depth": 2,
       "text": {
+        "en": "Person K042 · Pyo Gangho",
         "ko": "인물 K042 · 표강호"
       }
     },
@@ -1729,6 +1973,7 @@
       "anchor": "인물-k042-표강호-list1",
       "items": [
         {
+          "en": "Link: house=HC07 theater=XT02 scenarios=XT02-SC2,STORY-B016-K042",
           "ko": "연결: house=HC07 theater=XT02 scenarios=XT02-SC2,STORY-B016-K042"
         }
       ]
@@ -1738,6 +1983,7 @@
       "anchor": "정체성출신-5",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -1745,6 +1991,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-5-p1",
       "text": {
+        "en": "Beside the wax stove in the measurement room at Cheonwang Base, Pyo Gangho runs a fingernail along the cracks in the sealing wax before opening the message pouch.",
         "ko": "천왕기지 계측실 왁스 난로 곁에서 표강호는 전갈 주머니를 열기 전에 날인 왁스의 균열부터 손톱으로 훑는다."
       }
     },
@@ -1752,6 +1999,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-5-p2",
       "text": {
+        "en": "Pyo is a production-standards messenger and delivers Jang Wooseok’s audit seal on-site.",
         "ko": "제작규격 전령이며 장우석의 감사 날인을 현장에서 배달한다."
       }
     },
@@ -1759,6 +2007,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-5-p3",
       "text": {
+        "en": "Originally from Korea and raised in the workshop alleys of Geumcheon, Pyo detects the smell of a forged stamp before the heat.",
         "ko": "금천 공방 골목에서 자란 한국 기원으로, 더위보다 위조 도장의 냄새를 먼저 가른다."
       }
     },
@@ -1766,6 +2015,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-5-p4",
       "text": {
+        "en": "Pyo Gangho and K042 remain in the council’s messenger register.",
         "ko": "표강호와 K042는 평의회 전령 명부에 남는다."
       }
     },
@@ -1774,6 +2024,7 @@
       "anchor": "붕괴-전-삶-5",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -1781,6 +2032,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-5-p1",
       "text": {
+        "en": "Pyo tried to bind measurement stamps to verification messages so the standards would not depend solely on the spoken recollection of one elder.",
         "ko": "계측 도장을 검증 전갈로 묶어 규격이 구두 원로 한 사람의 기억에만 기대지 않게 하려 했다."
       }
     },
@@ -1788,6 +2040,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-5-p2",
       "text": {
+        "en": "A cracked wax impression was not melted down but confined in an iron container behind the stove.",
         "ko": "균열 난 왁스 인은 녹이지 않고 난로 뒤 철통에 가뒀다."
       }
     },
@@ -1795,6 +2048,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-5-p3",
       "text": {
+        "en": "The standards messenger route Pyo had promised to share with Yeo Sion was a personal debt.",
         "ko": "여시온과 나누기로 한 규격 전령로가 사적 빚의 자리였다."
       }
     },
@@ -1802,6 +2056,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-5-p4",
       "text": {
+        "en": "Pyo tore up messages bearing defective alloy recipes before dispatch.",
         "ko": "불량 합금 레시피가 적힌 전갈은 출고 전에 찢었다."
       }
     },
@@ -1810,6 +2065,7 @@
       "anchor": "가문기업공동체-5",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -1817,6 +2073,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-5-p1",
       "text": {
+        "en": "The Guro Alloy House invoked its heat-resistant alloy obligations to demand observer access to the measurement room.",
         "ko": "구로합금가은 내열 합금 의무를 내세워 계측실 참관을 요구했다."
       }
     },
@@ -1824,6 +2081,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-5-p2",
       "text": {
+        "en": "Pyo Gangho opened only the charter field and blacked out real business names on the message sheets.",
         "ko": "표강호는 헌장 칸만 열고 실재 상호를 전갈지에서 검게 칠했다."
       }
     },
@@ -1831,6 +2089,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-5-p3",
       "text": {
+        "en": "Pyo’s standing in the community was measured by the number of times verification messages protected Jeong Siwoo’s measurement stamps.",
         "ko": "정시우의 계측 도장을 검증 전갈로 지킨 횟수가 공동체 위치다."
       }
     },
@@ -1838,6 +2097,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-5-p4",
       "text": {
+        "en": "The demand for an exclusive military-supply seal was refused in front of the stove.",
         "ko": "군수용 전용 날인 요구는 난로 앞에서 거절됐다."
       }
     },
@@ -1846,6 +2106,7 @@
       "anchor": "붕괴의-상처-5",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -1853,6 +2114,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-5-p1",
       "text": {
+        "en": "One afternoon, while freezer-compressor parts were being divided, three standards messages listed different furnace temperatures.",
         "ko": "냉동 압축기 부품을 나누던 오후, 규격 전갈 세 장이 서로 다른 로 온도를 적고 있었다."
       }
     },
@@ -1860,6 +2122,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-5-p2",
       "text": {
+        "en": "Pyo Gangho turned down the stove and stopped deliveries until the ink of Jang Wooseok’s seal dried.",
         "ko": "표강호는 난로를 낮추고 장우석의 날인이 식을 때까지 배달을 멈췄다."
       }
     },
@@ -1867,6 +2130,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-5-p3",
       "text": {
+        "en": "The heart of the wound was the prospect of a forged stamp passing through the foundry furnace.",
         "ko": "위조 도장이 주조로를 통과하는 일이 상처의 핵이었다."
       }
     },
@@ -1874,6 +2138,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-5-p4",
       "text": {
+        "en": "Even as the alloy-making noise grew frequent, Pyo could not let go of the pouch cord.",
         "ko": "합금 정 소음이 잦아도 주머니 끈을 놓지 못했다."
       }
     },
@@ -1882,6 +2147,7 @@
       "anchor": "생존-전환점-5",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -1889,6 +2155,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-5-p1",
       "text": {
+        "en": "The choice was whether to run the audit seal to the foundry furnace or post the forged-standards route on the council blackboard.",
         "ko": "감사 날인을 주조로까지 뛰어 배달할지, 위조 규격 경로를 평의회 칠판에 붙일지가 갈렸다."
       }
     },
@@ -1896,6 +2163,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-5-p2",
       "text": {
+        "en": "The West Sea Granary Theater’s demand for measurement-log verification mingled with the stove smoke.",
         "ko": "서해곡창전구의 계측 로그 검증 독촉이 난로 연기에 겹쳤다."
       }
     },
@@ -1903,6 +2171,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-5-p3",
       "text": {
+        "en": "Delivery would save the public standards but leave one messenger route empty; exposure would make Pyo Gangho a target.",
         "ko": "배달을 택하면 공공 규격은 살고 전령로 하나가 비며, 폭로는 표강호 자신을 표적으로 만든다."
       }
     },
@@ -1910,6 +2179,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-5-p4",
       "text": {
+        "en": "K042-TURN is the fingernail that pointed to the crack in the wax.",
         "ko": "K042-TURN은 왁스 균열을 가리킨 손톱이다."
       }
     },
@@ -1918,6 +2188,7 @@
       "anchor": "현재-지위-5",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -1925,6 +2196,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-5-p1",
       "text": {
+        "en": "Pyo Gangho goes between the measurement room and the Guro corridor, overseeing roll call and the message queue.",
         "ko": "표강호는 계측실과 구로 복도를 오가며 점호와 전갈 큐를 본다."
       }
     },
@@ -1932,6 +2204,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-5-p2",
       "text": {
+        "en": "A license and seal log sustain the post, and Pyo refuses HC07’s demand for exclusivity.",
         "ko": "면허와 날인 로그가 자리를 받치고 HC07의 전속 요구는 거절한다."
       }
     },
@@ -1939,6 +2212,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-5-p3",
       "text": {
+        "en": "When furnace temperatures waver, Pyo does not open the pouch even after receiving an order.",
         "ko": "로 온도가 흔들리면 주문을 받아도 주머니를 열지 않는다."
       }
     },
@@ -1946,6 +2220,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-5-p4",
       "text": {
+        "en": "If the Cast status and measurement hash do not match, Pyo halts approval for dispatch.",
         "ko": "Cast 현황과 계측 해시가 어긋나면 출고 인준을 멈춘다."
       }
     },
@@ -1954,6 +2229,7 @@
       "anchor": "비밀빚죄책감-5",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -1961,6 +2237,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-5-p1",
       "text": {
+        "en": "The secret is the note about leaving the cracked wax in the iron container for one more day.",
         "ko": "균열 왁스를 철통에 하루 더 둔 쪽지가 비밀이다."
       }
     },
@@ -1968,6 +2245,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-5-p2",
       "text": {
+        "en": "Regret remains between the standards Pyo saved and the messenger route left empty that afternoon.",
         "ko": "살린 규격과 그 오후 비운 전령로 사이에서 미안함이 남는다."
       }
     },
@@ -1975,6 +2253,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-5-p3",
       "text": {
+        "en": "Partial disclosure permits only the iron container’s number, under Yeo Sion’s observation.",
         "ko": "부분 공개는 여시온 입회 아래 철통 번호만 허용한다."
       }
     },
@@ -1982,6 +2261,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-5-p4",
       "text": {
+        "en": "SECRET opens only together with the seal ledger.",
         "ko": "SECRET은 날인 원장과 동시에만 열린다."
       }
     },
@@ -1990,6 +2270,7 @@
       "anchor": "관계-공동과거-5",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -1997,6 +2278,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-5-p1",
       "text": {
+        "en": "The obligation to deliver Jang Wooseok’s audit seal, the message protecting Jeong Siwoo’s measurement stamp, and the standards route shared with Yeo Sion come together at one stove.",
         "ko": "장우석의 감사 날인을 배달하는 계약 정시우의 계측 도장을 지키는 전갈 여시온과 나눈 규격 경로가 한 난로에 모인다."
       }
     },
@@ -2004,6 +2286,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-5-p2",
       "text": {
+        "en": "On the same afternoon of parts distribution, some impressions became a salvation and some cracks remained betrayals.",
         "ko": "같은 부품 배분 오후에 어떤 인은 구원이 되었고 어떤 균열은 배신으로 남았다."
       }
     },
@@ -2011,6 +2294,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-5-p3",
       "text": {
+        "en": "The relationship endpoint connects to STORY-B016-K042.",
         "ko": "관계 끝점은 STORY-B016-K042로 연결된다."
       }
     },
@@ -2018,6 +2302,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-5-p4",
       "text": {
+        "en": "The messenger does not memorize recipes; Pyo only carries stamps.",
         "ko": "전령은 레시피를 외우지 않고 도장만 옮긴다."
       }
     },
@@ -2026,6 +2311,7 @@
       "anchor": "3막-개인-서사선-5",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -2033,6 +2319,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-5-p1",
       "text": {
+        "en": "Act 1 is turning down the stove over messages with mismatched furnace temperatures.",
         "ko": "어긋난 로 온도 전갈에 난로를 낮추는 것이 1막이다."
       }
     },
@@ -2040,6 +2327,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-5-p2",
       "text": {
+        "en": "The middle act is HC07’s observation and XT02’s measurement verification colliding in the smoke.",
         "ko": "HC07 참관과 XT02 계측 검증이 연기 속에서 부딪치는 것이 중막이다."
       }
     },
@@ -2047,6 +2335,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-5-p3",
       "text": {
+        "en": "The final act is paying in sweat for the wait at the foundry furnace left by delivery or exposure.",
         "ko": "배달 또는 폭로가 남긴 주조로 대기를 땀으로 갚는 것이 종막이다."
       }
     },
@@ -2054,6 +2343,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-5-p4",
       "text": {
+        "en": "The arc is STORY-B016-K042.",
         "ko": "서사선은 STORY-B016-K042다."
       }
     },
@@ -2062,6 +2352,7 @@
       "anchor": "분기-결말-5",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -2069,6 +2360,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-5-p1",
       "text": {
+        "en": "Delivering the seal to the foundry furnace saves the public standards.",
         "ko": "날인을 주조로까지 배달하면 공공 규격이 산다."
       }
     },
@@ -2076,6 +2368,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-5-p2",
       "text": {
+        "en": "Posting the forgery route on the blackboard preserves Pyo and the note in the iron container.",
         "ko": "위조 경로를 칠판에 붙이면 개인과 철통 쪽지가 남는다."
       }
     },
@@ -2083,6 +2376,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-5-p3",
       "text": {
+        "en": "The Standards Alliance messenger slot remains in place; only the marker is K042-OUT.",
         "ko": "규격동맹 전령 칸은 유지되고 표식만 K042-OUT이다."
       }
     },
@@ -2090,6 +2384,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-5-p4",
       "text": {
+        "en": "The decision at the time is stove escort or blackboard testimony.",
         "ko": "당시의 결정은 난로 호위 또는 칠판 증언이다."
       }
     },
@@ -2098,6 +2393,7 @@
       "anchor": "3막-5",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -2106,12 +2402,15 @@
       "anchor": "3막-5-list1",
       "items": [
         {
+          "en": "Act 1: Turns down the stove over messages with mismatched furnace temperatures and stops deliveries",
           "ko": "1막: 어긋난 로 온도 전갈에 난로를 낮추고 배달을 멈춘다"
         },
         {
+          "en": "Act 2: HC07’s observation and XT02’s measurement verification collide in the smoke",
           "ko": "2막: HC07 참관과 XT02 계측 검증이 연기 속에서 부딪친다"
         },
         {
+          "en": "Act 3: Accepts the wait at the foundry furnace as the cost of delivery or exposure",
           "ko": "3막: 배달 또는 폭로의 값으로 주조로 대기를 감수한다"
         }
       ]
@@ -2121,6 +2420,7 @@
       "anchor": "분기-결말-목록-5",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -2129,9 +2429,11 @@
       "anchor": "분기-결말-목록-5-list1",
       "items": [
         {
+          "en": "K042-OUT-A: Delivers the audit seal, preserving continuity of public standards",
           "ko": "K042-OUT-A: 감사 날인 배달로 공공 규격 연속"
         },
         {
+          "en": "K042-OUT-B: Discloses the forgery route on the blackboard, preserving the note in the iron container",
           "ko": "K042-OUT-B: 위조 경로 칠판 공개로 철통 쪽지 유지"
         }
       ]
@@ -2141,6 +2443,7 @@
       "anchor": "인물-k070-표지안",
       "depth": 2,
       "text": {
+        "en": "Person K070 · Pyo Jian",
         "ko": "인물 K070 · 표지안"
       }
     },
@@ -2149,6 +2452,7 @@
       "anchor": "인물-k070-표지안-list1",
       "items": [
         {
+          "en": "Link: house=HC03 theater=XT05 scenarios=XT05-SC3,STORY-B016-K070",
           "ko": "연결: house=HC03 theater=XT05 scenarios=XT05-SC3,STORY-B016-K070"
         }
       ]
@@ -2158,6 +2462,7 @@
       "anchor": "정체성출신-6",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -2165,6 +2470,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-6-p1",
       "text": {
+        "en": "At the lending window beneath the bell tower at Banghwa Base, Pyo Jian gauges the lending time by the pouch’s weight before presenting a message.",
         "ko": "방화기지 종탑 아래 대여창에서 표지안은 전갈을 내밀기 전에 주머니 무게로 대여 시각을 가늠한다."
       }
     },
@@ -2172,6 +2478,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-6-p2",
       "text": {
+        "en": "Pyo is a Joint Technology Academy ledger messenger and carries Im Sion’s archive times in the pouch.",
         "ko": "공동기술원장 전령이며 임시온의 서고 시각을 주머니에 옮겨 담는다."
       }
     },
@@ -2179,6 +2486,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-6-p3",
       "text": {
+        "en": "Originally from Korea and raised beside the Banghwa runway grounds, Pyo trusts discrepancies in weight before the sound of the bell.",
         "ko": "방화 활주로터 옆에서 자란 한국 기원으로, 종소리보다 무게 오차를 먼저 믿는다."
       }
     },
@@ -2186,6 +2494,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-6-p4",
       "text": {
+        "en": "Pyo Jian and K070 remain in the council’s messenger register.",
         "ko": "표지안과 K070은 평의회 전령 명부에서 빠지지 않는다."
       }
     },
@@ -2194,6 +2503,7 @@
       "anchor": "붕괴-전-삶-6",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -2201,6 +2511,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-6-p1",
       "text": {
+        "en": "Pyo tried to deliver a single line of replication before the bell rang so spoken certification could not override the experiment log.",
         "ko": "재현 한 줄을 종 울림 전에 전하게 해 구두 인증이 실험 일지를 덮지 못하게 하려 했다."
       }
     },
@@ -2208,6 +2519,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-6-p2",
       "text": {
+        "en": "A loan slip without a time was not burned but confined in a crack between stones beneath the bell tower.",
         "ko": "시각이 빈 대여증은 태우지 않고 종탑 밑 돌틈에 가뒀다."
       }
     },
@@ -2215,6 +2527,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-6-p3",
       "text": {
+        "en": "The line of replication Pyo had promised to deliver to Jeong Hojun was the seed of a personal debt.",
         "ko": "정호준에게 전하기로 한 재현 한 줄이 사적 빚의 씨앗이다."
       }
     },
@@ -2222,6 +2535,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-6-p4",
       "text": {
+        "en": "Pyo did not enter a message that arrived after the bell rang in the certification field.",
         "ko": "종이 먼저 울린 전갈은 인증 칸에 올리지 않았다."
       }
     },
@@ -2230,6 +2544,7 @@
       "anchor": "가문기업공동체-6",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -2237,6 +2552,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-6-p1",
       "text": {
+        "en": "The Magok Life House invoked its isolation key for the biometric dataset to demand observer access to the lending window.",
         "ko": "마곡생명가는 생체 데이터셋 격리 키를 내세워 대여창 참관을 요구했다."
       }
     },
@@ -2244,6 +2560,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-6-p2",
       "text": {
+        "en": "Pyo Jian yielded only the charter field and cut real business names out of the loan slips.",
         "ko": "표지안은 헌장 칸만 내주고 실재 상호를 대여증에서 오렸다."
       }
     },
@@ -2251,6 +2568,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-6-p3",
       "text": {
+        "en": "Pyo’s standing in the community was measured by the number of times Im Sion’s lending times were conveyed by the pouch’s weight.",
         "ko": "임시온의 대여 시각을 주머니 무게로 옮긴 횟수가 공동체 위치다."
       }
     },
@@ -2258,6 +2576,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-6-p4",
       "text": {
+        "en": "Messages calling for first claim on raw materials were sent back at the bell rope.",
         "ko": "원료 선점 전갈은 종 줄 앞에서 되돌려 보냈다."
       }
     },
@@ -2266,6 +2585,7 @@
       "anchor": "붕괴의-상처-6",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -2273,6 +2593,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-6-p1",
       "text": {
+        "en": "One evening, while false alarms from the orbital terminal were being corrected, three loan slips pointed to the same bell time.",
         "ko": "궤도 단말 오탐을 교정하던 저녁, 대여증 세 장이 같은 종 시각을 가리켰다."
       }
     },
@@ -2280,6 +2601,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-6-p2",
       "text": {
+        "en": "Pyo Jian held the bell rope and delayed the ringing until Jeong Hojun’s line of replication arrived.",
         "ko": "표지안은 종 줄을 붙잡고 정호준의 재현 한 줄이 도착할 때까지 울림을 늦췄다."
       }
     },
@@ -2287,6 +2609,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-6-p3",
       "text": {
+        "en": "The prospect of a sample without a record of consent entering the certification ledger left a wound.",
         "ko": "동의 기록 없는 표본이 인증 원장에 오르는 일이 상처를 남겼다."
       }
     },
@@ -2294,6 +2617,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-6-p4",
       "text": {
+        "en": "Even when the runway wind subsided, Pyo could not let go of the rope.",
         "ko": "활주로 바람이 잦아도 줄을 놓지 못했다."
       }
     },
@@ -2302,6 +2626,7 @@
       "anchor": "생존-전환점-6",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -2309,6 +2634,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-6-p1",
       "text": {
+        "en": "The choice was whether to deliver the line of replication before the bell or show the council the blank loan slip from the crack between stones.",
         "ko": "재현 한 줄을 종 전에 전할지, 돌틈의 빈 대여증을 평의회에 펼칠지가 갈렸다."
       }
     },
@@ -2316,6 +2642,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-6-p2",
       "text": {
+        "en": "The Incheon Trust Theater’s demand to correct false alarms reached the bell-tower window.",
         "ko": "인천신탁전구의 오탐 교정 독촉이 종탑 창에 겹쳤다."
       }
     },
@@ -2323,6 +2650,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-6-p3",
       "text": {
+        "en": "Delivery would save public certification but cut the consultation window by one shift; disclosure would make the messenger a target.",
         "ko": "전달을 택하면 공공 인증은 살고 상담 창구가 한 교대 줄며, 공개를 택하면 전령 자신이 표적이 된다."
       }
     },
@@ -2330,6 +2658,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-6-p4",
       "text": {
+        "en": "K070-TURN is the moment the pouch tilted.",
         "ko": "K070-TURN은 주머니가 기울던 순간이다."
       }
     },
@@ -2338,6 +2667,7 @@
       "anchor": "현재-지위-6",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -2345,6 +2675,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-6-p1",
       "text": {
+        "en": "Pyo Jian oversees roll call and the time queue at the bell-tower lending window.",
         "ko": "표지안은 종탑 대여창에서 점호와 시각 큐를 본다."
       }
     },
@@ -2352,6 +2683,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-6-p2",
       "text": {
+        "en": "A license and weight log sustain the post, and Pyo refuses HC03’s demand for an exclusive key.",
         "ko": "면허와 무게 로그가 자리를 유지하며 HC03의 전속 키 요구는 거절한다."
       }
     },
@@ -2359,6 +2691,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-6-p3",
       "text": {
+        "en": "Pyo does not issue loan slips before the bell rings.",
         "ko": "종이 울리기 전에는 대여증을 내주지 않는다."
       }
     },
@@ -2366,6 +2699,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-6-p4",
       "text": {
+        "en": "If the Cast field and pouch total do not match, Pyo closes the window.",
         "ko": "Cast 칸과 주머니 합이 어긋나면 창구를 내린다."
       }
     },
@@ -2374,6 +2708,7 @@
       "anchor": "비밀빚죄책감-6",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -2381,6 +2716,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-6-p1",
       "text": {
+        "en": "The secret is the weight of the blank loan slip left overnight in the crack between stones.",
         "ko": "빈 대여증을 돌틈에 하룻밤 둔 무게가 비밀이다."
       }
     },
@@ -2388,6 +2724,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-6-p2",
       "text": {
+        "en": "Regret remains between the certification Pyo saved and the consultation window Pyo delayed.",
         "ko": "살린 인증과 늦춘 상담 창구 사이에서 미안함이 남는다."
       }
     },
@@ -2395,6 +2732,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-6-p3",
       "text": {
+        "en": "Partial disclosure reveals only the location of the crack, under Im Sion’s observation.",
         "ko": "부분 공개는 임시온 입회 아래 돌틈 위치만 밝힌다."
       }
     },
@@ -2402,6 +2740,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-6-p4",
       "text": {
+        "en": "SECRET opens only together with the lending ledger.",
         "ko": "SECRET은 대여 원장과 동시에만 열린다."
       }
     },
@@ -2410,6 +2749,7 @@
       "anchor": "관계-공동과거-6",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -2417,6 +2757,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-6-p1",
       "text": {
+        "en": "The contract that turns Im Sion’s borrowed time into a weight and the silence that delivers one line of Jeong Hojun’s reconstruction before the bell share a tower.",
         "ko": "임시온의 대여 시각을 무게로 옮기는 계약, 정호준의 재현 한 줄을 종 전에 전하는 침묵이 한 탑에 있다."
       }
     },
@@ -2424,6 +2765,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-6-p2",
       "text": {
+        "en": "On the same evening of false alarms, some chimes brought salvation, while some gaps between stones remained betrayals.",
         "ko": "같은 오탐 저녁에 어떤 울림은 구원이 되었고 어떤 돌틈은 배신으로 남았다."
       }
     },
@@ -2431,6 +2773,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-6-p3",
       "text": {
+        "en": "The relationship endpoint leads to STORY-B016-K070.",
         "ko": "관계 끝점은 STORY-B016-K070으로 이어진다."
       }
     },
@@ -2438,6 +2781,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-6-p4",
       "text": {
+        "en": "The messenger carries only the time, without memorizing the sample’s name.",
         "ko": "전령은 표본 이름을 외우지 않고 시각만 옮긴다."
       }
     },
@@ -2446,6 +2790,7 @@
       "anchor": "3막-개인-서사선-6",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -2453,6 +2798,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-6-p1",
       "text": {
+        "en": "First comes holding the bell rope over three loan slips bearing the same bell time.",
         "ko": "같은 종 시각의 대여증 세 장에 줄을 붙잡는 것이 처음이다."
       }
     },
@@ -2460,6 +2806,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-6-p2",
       "text": {
+        "en": "Next, witnessing the HC03 quarantine key overlaps at the window with XT05’s demand over false alarms.",
         "ko": "HC03 격리 키 참관과 XT05 오탐 독촉이 창에서 겹치는 것이 다음이다."
       }
     },
@@ -2467,6 +2814,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-6-p3",
       "text": {
+        "en": "Last comes paying for the gap left at the counseling desk by delivery or disclosure, measured by weight.",
         "ko": "전달 또는 공개가 남긴 상담 공백을 무게로 갚는 것이 마지막이다."
       }
     },
@@ -2474,6 +2822,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-6-p4",
       "text": {
+        "en": "The story arc is STORY-B016-K070.",
         "ko": "서사선은 STORY-B016-K070이다."
       }
     },
@@ -2482,6 +2831,7 @@
       "anchor": "분기-결말-6",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -2489,6 +2839,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-6-p1",
       "text": {
+        "en": "Delivering the single line of reconstruction before the bell preserves public certification.",
         "ko": "재현 한 줄을 종 전에 전하면 공공 인증이 산다."
       }
     },
@@ -2496,6 +2847,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-6-p2",
       "text": {
+        "en": "Unfolding the blank loan slip leaves the secret in the stone gap and the individual intact.",
         "ko": "빈 대여증을 펼치면 돌틈 비밀과 개인이 남는다."
       }
     },
@@ -2503,6 +2855,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-6-p3",
       "text": {
+        "en": "The messenger’s slot at Yangjae Machineworks Company remains; only the branch is K070-OUT.",
         "ko": "양재기공주식회사 전령 칸은 유지되고 갈림만 K070-OUT이다."
       }
     },
@@ -2510,6 +2863,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-6-p4",
       "text": {
+        "en": "The decision at the time is to witness the bell rope or testify about the stone gap.",
         "ko": "당시의 결정은 종 줄 입회 또는 돌틈 증언이다."
       }
     },
@@ -2518,6 +2872,7 @@
       "anchor": "3막-6",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -2526,12 +2881,15 @@
       "anchor": "3막-6-list1",
       "items": [
         {
+          "en": "Act 1: Holds the bell rope over three loan slips bearing the same bell time and delays the chime",
           "ko": "1막: 같은 종 시각의 대여증 세 장에 종 줄을 붙잡고 울림을 늦춘다"
         },
         {
+          "en": "Act 2: Witnessing the HC03 quarantine key and XT05’s demand over false alarms overlap at the bell-tower window",
           "ko": "2막: HC03 격리 키 참관과 XT05 오탐 독촉이 종탑 창에서 겹친다"
         },
         {
+          "en": "Act 3: Accepts a gap at the counseling desk as the price of delivery or disclosure",
           "ko": "3막: 전달 또는 공개의 값으로 상담 창구 공백을 감수한다"
         }
       ]
@@ -2541,6 +2899,7 @@
       "anchor": "분기-결말-목록-6",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -2549,9 +2908,11 @@
       "anchor": "분기-결말-목록-6-list1",
       "items": [
         {
+          "en": "K070-OUT-A: Delivery of the reconstruction before the bell keeps public certification continuous",
           "ko": "K070-OUT-A: 종 전 재현 전달로 공공 인증 연속"
         },
         {
+          "en": "K070-OUT-B: Disclosure of the blank loan slip preserves the secret in the stone gap",
           "ko": "K070-OUT-B: 빈 대여증 공개로 돌틈 비밀 유지"
         }
       ]
@@ -2561,6 +2922,7 @@
       "anchor": "인물-k374-은태호",
       "depth": 2,
       "text": {
+        "en": "Person K374 · Eun Taeho",
         "ko": "인물 K374 · 은태호"
       }
     },
@@ -2569,6 +2931,7 @@
       "anchor": "인물-k374-은태호-list1",
       "items": [
         {
+          "en": "Link: house=HC06 theater=XT05 scenarios=XT05-SC3,STORY-B016-K374",
           "ko": "연결: house=HC06 theater=XT05 scenarios=XT05-SC3,STORY-B016-K374"
         }
       ]
@@ -2578,6 +2941,7 @@
       "anchor": "정체성출신-7",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -2585,6 +2949,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-7-p1",
       "text": {
+        "en": "At the Garak main auction podium, Eun Taeho reads the nick in the scale weight with a finger before raising a paddle.",
         "ko": "가락 본대 경매 단상에서 은태호는 패들을 들기 전에 저울 추의 흠집부터 손가락으로 읽는다."
       }
     },
@@ -2592,6 +2957,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-7-p2",
       "text": {
+        "en": "He is an auctioneer and carries out Nam Yungyeong’s adjustments on site.",
         "ko": "경매사이며 남윤경의 조정을 현장에서 대행한다."
       }
     },
@@ -2599,6 +2965,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-7-p3",
       "text": {
+        "en": "He grew up in a multicultural family in Korea; at home, his parents’ migrant language mixes with Korean, but he accepts only standard numerals for bid calls and the original record of winning bids.",
         "ko": "한국에서 태어난 다문화 가정에서 자랐고 집에서는 부모의 이주 언어와 한국어가 섞이지만 호가 구호와 낙찰 원본에는 표준 숫자만 받는다."
       }
     },
@@ -2606,6 +2973,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-7-p4",
       "text": {
+        "en": "That background predicts neither loyalty nor violence, and Eun Taeho and K366 cannot be replaced in the podium roster.",
         "ko": "그 이력은 충성이나 폭력의 예측 변수가 아니며, 은태호와 K366은 단상 명부에서 교체되지 않는다."
       }
     },
@@ -2614,6 +2982,7 @@
       "anchor": "붕괴-전-삶-7",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -2621,6 +2990,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-7-p1",
       "text": {
+        "en": "He tried to bind bids and weights to a single call so Garak market prices could not be used interchangeably with the order of neighborhood carts.",
         "ko": "호가와 저울을 한 구호에 묶어 가락 시세가 골목 수레 순번과 바꿔 쓰이지 않게 하려 했다."
       }
     },
@@ -2628,6 +2998,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-7-p2",
       "text": {
+        "en": "He did not erase the line that called an unsold paddle number a normal winning bid; he locked it in a box beneath the podium.",
         "ko": "유찰된 패들 번호를 정상 낙찰처럼 외친 줄은 지우지 않고 단상 밑 상자에 가뒀다."
       }
     },
@@ -2635,6 +3006,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-7-p3",
       "text": {
+        "en": "One spare weight entrusted to Cheon Nasol was a small promise.",
         "ko": "천나솔에게 맡긴 예비 추 하나가 작은 약속이었다."
       }
     },
@@ -2642,6 +3014,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-7-p4",
       "text": {
+        "en": "A bid measured with a nicked weight did not count as a winning bid.",
         "ko": "흠집 난 추로 잰 호가는 낙찰로 치지 않았다."
       }
     },
@@ -2650,6 +3023,7 @@
       "anchor": "가문기업공동체-7",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -2657,6 +3031,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-7-p1",
       "text": {
+        "en": "The Noryangjin Delivery House demanded a place beside the podium as an observer, citing its right to dispatch carts for short-distance runs.",
         "ko": "노량진배달가은 근거리 수레 배차권을 내세워 단상 옆 참관을 요구했다."
       }
     },
@@ -2664,6 +3039,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-7-p2",
       "text": {
+        "en": "Eun Taeho opened only the charter slot and removed the real business name from the bid-call ledger.",
         "ko": "은태호는 헌장 칸만 열고 실재 상호를 구호 원장에서 뺐다."
       }
     },
@@ -2671,6 +3047,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-7-p3",
       "text": {
+        "en": "The mornings when Yeong Migyeol transferred bids into the ledger are the only evidence of his place in the community.",
         "ko": "영미결이 호가를 원장으로 옮긴 아침만이 공동체 위치의 증거다."
       }
     },
@@ -2678,6 +3055,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-7-p4",
       "text": {
+        "en": "He stopped the long-haul delivery crew from entering the podium at the scale.",
         "ko": "장거리 배송단의 단상 진입은 저울 앞에서 막았다."
       }
     },
@@ -2686,6 +3064,7 @@
       "anchor": "붕괴의-상처-7",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -2693,6 +3072,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-7-p1",
       "text": {
+        "en": "One afternoon, as the separated-family counseling desk extended its hours, three bidding paddles indicated the same weight.",
         "ko": "이산가족 상담 창구가 연장되던 오후, 호가 세 패들이 같은 추 무게를 가리켰다."
       }
     },
@@ -2700,6 +3080,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-7-p2",
       "text": {
+        "en": "Eun Taeho stopped calling bids and held back the sale until Nam Yungyeong gave an adjustment.",
         "ko": "은태호는 구호를 멈추고 남윤경의 조정 한 마디가 떨어질 때까지 낙찰을 보류했다."
       }
     },
@@ -2707,6 +3088,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-7-p3",
       "text": {
+        "en": "What hurt most was the box of unsold bids being broadcast as normal market prices.",
         "ko": "유찰 상자가 정상 시세로 방송되는 일이 가장 쓰라렸다."
       }
     },
@@ -2714,6 +3096,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-7-p4",
       "text": {
+        "en": "Even as the smell of produce faded, he could not lower his paddle.",
         "ko": "청과 냄새가 잦아도 패들을 내리지 못했다."
       }
     },
@@ -2722,6 +3105,7 @@
       "anchor": "생존-전환점-7",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -2729,6 +3113,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-7-p1",
       "text": {
+        "en": "The choice was whether to continue the auction to supply food to the counseling desk or accept Cho Siram’s paddle objection and stop the podium.",
         "ko": "경매를 속행해 상담 창구 식량을 채울지, 초시람의 패들 이의를 받아 단상을 멈출지가 갈렸다."
       }
     },
@@ -2736,6 +3121,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-7-p2",
       "text": {
+        "en": "Incheon Trust Theater’s request to extend the desk’s hours came over the loudspeaker at the same time.",
         "ko": "인천신탁전구의 창구 연장 요청이 확성기에 겹쳤다."
       }
     },
@@ -2743,6 +3129,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-7-p3",
       "text": {
+        "en": "Continuing saves public rations; stopping exposes the box of unsold bids.",
         "ko": "속행은 공공 배급을 살리고 정지는 유찰 상자를 드러낸다."
       }
     },
@@ -2750,6 +3137,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-7-p4",
       "text": {
+        "en": "K374-TURN is the hand that raised the nicked weight.",
         "ko": "K374-TURN은 흠집 추를 들어 올린 손이다."
       }
     },
@@ -2758,6 +3146,7 @@
       "anchor": "현재-지위-7",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -2765,6 +3154,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-7-p1",
       "text": {
+        "en": "Eun Taeho calls roll and bid cues from the main auction podium.",
         "ko": "은태호는 본대 단상에서 점호와 호가 큐를 외친다."
       }
     },
@@ -2772,6 +3162,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-7-p2",
       "text": {
+        "en": "His license and weight-inspection logs secure his place, and he refuses HC06’s demand for exclusive dispatch rights.",
         "ko": "면허와 추 검수 로그가 자리를 받치고 HC06의 전속 배차 요구는 거절한다."
       }
     },
@@ -2779,6 +3170,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-7-p3",
       "text": {
+        "en": "He uses the language spoken at home only at the family desk, never mixing it into his podium calls.",
         "ko": "집 안 말은 가족 창구에서만 쓰고 단상 구호와 섞지 않는다."
       }
     },
@@ -2786,6 +3178,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-7-p4",
       "text": {
+        "en": "If the Cast slot and the scale total disagree, he lowers his paddle.",
         "ko": "Cast 칸과 저울 합이 어긋나면 패들을 내린다."
       }
     },
@@ -2794,6 +3187,7 @@
       "anchor": "비밀빚죄책감-7",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -2801,6 +3195,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-7-p1",
       "text": {
+        "en": "His secret is the call that kept an unsold paddle number hidden beneath the box for a day.",
         "ko": "유찰 패들 번호를 상자 아래 하루 숨긴 구호가 비밀이다."
       }
     },
@@ -2808,6 +3203,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-7-p2",
       "text": {
+        "en": "He still feels sorry about the gap between the market prices he saved and the counseling desk’s reduced food supply that afternoon.",
         "ko": "살린 시세와 그 오후 줄인 상담 식량 사이에서 미안함이 남는다."
       }
     },
@@ -2815,6 +3211,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-7-p3",
       "text": {
+        "en": "Partial disclosure permits only the box lid to be opened, with Cheon Nasol present.",
         "ko": "부분 공개는 천나솔 입회 아래 상자 뚜껑만 연다."
       }
     },
@@ -2822,6 +3219,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-7-p4",
       "text": {
+        "en": "SECRET opens only at the same time as the bid ledger.",
         "ko": "SECRET은 호가 원장과 동시에만 열린다."
       }
     },
@@ -2830,6 +3228,7 @@
       "anchor": "관계-공동과거-7",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -2837,6 +3236,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-7-p1",
       "text": {
+        "en": "On one podium converge the command that carries out Nam Yungyeong’s adjustments, the scale supported by Cheon Nasol, the bids transferred by Yeong Migyeol, and the paddle objections raised by Cho Siram.",
         "ko": "남윤경의 조정을 대행하는 지휘 천나솔이 받치는 저울 영미결이 옮기는 호가 초시람이 올리는 패들 이의가 한 단상에 모인다."
       }
     },
@@ -2844,6 +3244,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-7-p2",
       "text": {
+        "en": "On that afternoon of equal weights, some calls brought salvation, while some boxes remained betrayals.",
         "ko": "같은 무게 오후에 어떤 구호는 구원이 되었고 어떤 상자는 배신으로 남았다."
       }
     },
@@ -2851,6 +3252,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-7-p3",
       "text": {
+        "en": "The migrant language is used only when interpretation is needed at the counseling desk; it does not divide anyone into factions.",
         "ko": "이주 언어는 상담 창구 통역이 필요할 때만 꺼내지며 진영을 가르지 않는다."
       }
     },
@@ -2858,6 +3260,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-7-p4",
       "text": {
+        "en": "The relationship endpoint is STORY-B016-K366.",
         "ko": "관계 끝점은 STORY-B016-K366이다."
       }
     },
@@ -2866,6 +3269,7 @@
       "anchor": "3막-개인-서사선-7",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -2873,6 +3277,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-7-p1",
       "text": {
+        "en": "Act 1 is stopping the calls over three paddles bearing the same weight.",
         "ko": "같은 추 무게의 패들 세 개에 구호를 멈추는 것이 1막이다."
       }
     },
@@ -2880,6 +3285,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-7-p2",
       "text": {
+        "en": "Act 2 is HC06’s dispatch observation overlapping with XT05’s extension of desk hours over the loudspeaker.",
         "ko": "HC06 배차 참관과 XT05 창구 연장이 확성기에서 겹치는 것이 2막이다."
       }
     },
@@ -2887,6 +3293,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-7-p3",
       "text": {
+        "en": "Act 3 is paying, with his voice, for the food shortage left by continuing or stopping.",
         "ko": "속행 또는 정지가 남긴 식량 공백을 목소리로 갚는 것이 3막이다."
       }
     },
@@ -2894,6 +3301,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-7-p4",
       "text": {
+        "en": "The story arc is STORY-B016-K366.",
         "ko": "서사선은 STORY-B016-K366이다."
       }
     },
@@ -2902,6 +3310,7 @@
       "anchor": "분기-결말-7",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -2909,6 +3318,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-7-p1",
       "text": {
+        "en": "If the podium continues, public rations and food for the counseling desk survive.",
         "ko": "단상을 속행하면 공공 배급과 상담 식량이 산다."
       }
     },
@@ -2916,6 +3326,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-7-p2",
       "text": {
+        "en": "If he accepts the paddle objection and stops, the box of unsold bids and the individual remain.",
         "ko": "패들 이의를 받아 멈추면 유찰 상자와 개인이 남는다."
       }
     },
@@ -2923,6 +3334,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-7-p3",
       "text": {
+        "en": "The Garak auctioneer’s slot remains; only the marker is K374-OUT.",
         "ko": "가락 경매사 칸은 유지되고 표식만 K374-OUT이다."
       }
     },
@@ -2930,6 +3342,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-7-p4",
       "text": {
+        "en": "The decision at the time is to guard the podium or witness the opening of the box.",
         "ko": "당시의 결정은 단상 호위 또는 상자 공개 입회다."
       }
     },
@@ -2938,6 +3351,7 @@
       "anchor": "3막-7",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -2946,12 +3360,15 @@
       "anchor": "3막-7-list1",
       "items": [
         {
+          "en": "Act 1: Stops calling bids over three paddles bearing the same weight and holds back the sale",
           "ko": "1막: 같은 추 무게의 패들 세 개에 구호를 멈추고 낙찰을 보류한다"
         },
         {
+          "en": "Act 2: HC06’s dispatch observation and XT05’s extension of desk hours overlap over the loudspeaker",
           "ko": "2막: HC06 배차 참관과 XT05 창구 연장이 확성기에서 겹친다"
         },
         {
+          "en": "Act 3: Accepts a shortage of food for the counseling desk as the price of continuing or stopping",
           "ko": "3막: 속행 또는 정지의 값으로 상담 식량 공백을 감수한다"
         }
       ]
@@ -2961,6 +3378,7 @@
       "anchor": "분기-결말-목록-7",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -2969,9 +3387,11 @@
       "anchor": "분기-결말-목록-7-list1",
       "items": [
         {
+          "en": "K374-OUT-A: Continuing the auction maintains public rations and food for the counseling desk",
           "ko": "K374-OUT-A: 경매 속행으로 공공 배급·상담 식량 유지"
         },
         {
+          "en": "K374-OUT-B: Stopping over the paddle objection preserves the secret of the box of unsold bids",
           "ko": "K374-OUT-B: 패들 이의 정지로 유찰 상자 비밀 유지"
         }
       ]
@@ -2981,6 +3401,7 @@
       "anchor": "인물-k399-하서진",
       "depth": 2,
       "text": {
+        "en": "Person K399 · Ha Seojin",
         "ko": "인물 K399 · 하서진"
       }
     },
@@ -2989,6 +3410,7 @@
       "anchor": "인물-k399-하서진-list1",
       "items": [
         {
+          "en": "Link: house=HP09 theater=XT03 scenarios=XT03-SC1,STORY-B016-K399",
           "ko": "연결: house=HP09 theater=XT03 scenarios=XT03-SC1,STORY-B016-K399"
         }
       ]
@@ -2998,6 +3420,7 @@
       "anchor": "정체성출신-8",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -3005,6 +3428,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-8-p1",
       "text": {
+        "en": "At the draft box in the Gangnam contract market, Ha Seojin points out the position of the period in the standard sentence before wetting his brush pen.",
         "ko": "강남 계약서 시장 초안함 앞에서 하서진은 붓펜을 적시기 전에 표준 문장의 마침표 위치부터 손가락으로 짚는다."
       }
     },
@@ -3012,6 +3436,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-8-p2",
       "text": {
+        "en": "He is a contract clerk who prepares fair copies of Jeong Yura’s sentences.",
         "ko": "계약 서기이며 정유라의 문장을 정서한다."
       }
     },
@@ -3019,6 +3444,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-8-p3",
       "text": {
+        "en": "He grew up in a multicultural family in Korea and moves between the language spoken at home and Korean at the market, but accepts only standard forms for original drafts.",
         "ko": "한국에서 태어난 다문화 가정에서 자랐고 집 안 말과 시장 한국어를 오가지만 초안 원본에는 표준 서식만 받는다."
       }
     },
@@ -3026,6 +3452,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-8-p4",
       "text": {
+        "en": "That combination is neither proof of ability nor grounds for suspicion, and Ha Seojin and K390 cannot be erased from the clerks’ roster.",
         "ko": "그 조합은 능력의 보증도 혐의도 아니며, 하서진과 K390은 서기 명부에서 지워지지 않는다."
       }
     },
@@ -3034,6 +3461,7 @@
       "anchor": "붕괴-전-삶-8",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -3041,6 +3469,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-8-p1",
       "text": {
+        "en": "He tried to align the standard wording with the dual council’s working procedures so a verbal unification proposal could not open the draft box.",
         "ko": "표준 문장을 이중 의회 실무와 맞춰 구두 통일안이 초안함을 열지 못하게 하려 했다."
       }
     },
@@ -3048,6 +3477,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-8-p2",
       "text": {
+        "en": "He did not burn copies with different punctuation; he locked them in a drawer beneath the box.",
         "ko": "마침표가 다른 사본은 태우지 않고 함 밑 서랍에 가뒀다."
       }
     },
@@ -3055,6 +3485,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-8-p3",
       "text": {
+        "en": "A load of copies entrusted to Seon Chobyeol for transport was a small promise.",
         "ko": "선초별에게 맡긴 사본 운송 한 짐이 작은 약속이었다."
       }
     },
@@ -3062,6 +3493,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-8-p4",
       "text": {
+        "en": "He did not post drafts with blank signature fields on the market bulletin board.",
         "ko": "서명란이 빈 초안은 시장 게시판에 올리지 않았다."
       }
     },
@@ -3070,6 +3502,7 @@
       "anchor": "가문기업공동체-8",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -3077,6 +3510,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-8-p1",
       "text": {
+        "en": "The Digital Media City Trust House demanded to witness the draft box’s hash, citing disclosure of the model card.",
         "ko": "디지털미디어시티신탁가는 모델 카드 공개를 내세워 초안함 해시 참관을 요구했다."
       }
     },
@@ -3084,6 +3518,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-8-p2",
       "text": {
+        "en": "Ha Seojin opened only the charter slot and removed the real business name from the fair-copy ledger.",
         "ko": "하서진은 헌장 칸만 열고 실재 상호를 정서 원장에서 지웠다."
       }
     },
@@ -3091,6 +3526,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-8-p3",
       "text": {
+        "en": "His place in the community is measured by the times he coordinated the dual council’s working procedures with An Taegyeong from the clerk’s desk.",
         "ko": "안태경의 이중 의회 실무를 서기석에서 맞춘 횟수가 공동체 위치다."
       }
     },
@@ -3098,6 +3534,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-8-p4",
       "text": {
+        "en": "At the box’s lock, he refused a message proposing to exchange the original face record for a travel pass.",
         "ko": "얼굴 원본을 통행권과 바꾸라는 전갈은 함 자물쇠 앞에서 거절됐다."
       }
     },
@@ -3106,6 +3543,7 @@
       "anchor": "붕괴의-상처-8",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -3113,6 +3551,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-8-p1",
       "text": {
+        "en": "The night the Yongsan transfer depot closed one route, three draft copies listed different turnaround lines.",
         "ko": "용산 환적창이 한 길을 닫던 밤, 초안 세 부가 서로 다른 회차선을 적고 있었다."
       }
     },
@@ -3120,6 +3559,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-8-p2",
       "text": {
+        "en": "Ha Seojin locked the box and stopped preparing fair copies until Jeong Yura’s standard wording was sealed.",
         "ko": "하서진은 함을 잠그고 정유라의 표준 문장이 봉인될 때까지 정서를 멈췄다."
       }
     },
@@ -3127,6 +3567,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-8-p3",
       "text": {
+        "en": "The wound was hearing a blank signature field broadcast as an open agreement.",
         "ko": "빈 서명란이 열린 협정으로 방송되는 일이 상처였다."
       }
     },
@@ -3134,6 +3575,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-8-p4",
       "text": {
+        "en": "Even after the market lights went out, he could not cap his brush pen.",
         "ko": "시장 불이 꺼져도 붓펜 뚜껑을 닫지 못했다."
       }
     },
@@ -3142,6 +3584,7 @@
       "anchor": "생존-전환점-8",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -3149,6 +3592,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-8-p1",
       "text": {
+        "en": "The choice was whether to put the draft on Yeong Maon’s outer-route convoy or entrust the box to Seon Hansom’s underground defense team.",
         "ko": "초안을 영마온의 외곽 호송에 실을지, 선한솜의 지하 방어조에 함을 맡길지가 갈렸다."
       }
     },
@@ -3156,6 +3600,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-8-p2",
       "text": {
+        "en": "Korea Strait Theater’s opening of an alternative Suseo turnaround line came over the market loudspeaker at the same time.",
         "ko": "대한해협전구의 수서 대체 회차선 개방이 시장 확성기에 겹쳤다."
       }
     },
@@ -3163,6 +3608,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-8-p3",
       "text": {
+        "en": "The convoy preserves the public wording; underground storage prevents a leak.",
         "ko": "호송은 공공 문장을 살리고 지하 보관은 유출을 막는다."
       }
     },
@@ -3170,6 +3616,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-8-p4",
       "text": {
+        "en": "K399-TURN is the direction she turned the lock.",
         "ko": "K399-TURN은 자물쇠를 돌린 방향이다."
       }
     },
@@ -3178,6 +3625,7 @@
       "anchor": "현재-지위-8",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -3185,6 +3633,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-8-p1",
       "text": {
+        "en": "Ha Seojin handles roll call and fair-copy cues at the contract market.",
         "ko": "하서진은 계약서 시장에서 점호와 정서 큐를 본다."
       }
     },
@@ -3192,6 +3641,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-8-p2",
       "text": {
+        "en": "His license and hash log maintain his place, and he refuses HP09’s demand for exclusive training materials.",
         "ko": "면허와 해시 로그가 자리를 유지하며 HP09의 전속 학습자료 요구는 거절한다."
       }
     },
@@ -3199,6 +3649,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-8-p3",
       "text": {
+        "en": "He uses the language spoken at home only at the family desk and does not mix it into draft forms.",
         "ko": "집 안 말은 가족 창구에서만 쓰고 초안 서식과 섞지 않는다."
       }
     },
@@ -3206,6 +3657,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-8-p4",
       "text": {
+        "en": "If the Cast slot and the box hash disagree, he puts down his brush pen.",
         "ko": "Cast 칸과 함 해시가 어긋나면 붓펜을 내린다."
       }
     },
@@ -3214,6 +3666,7 @@
       "anchor": "비밀빚죄책감-8",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -3221,6 +3674,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-8-p1",
       "text": {
+        "en": "His secret is the sentence whose differently punctuated copy he kept in the drawer for a day.",
         "ko": "마침표가 다른 사본을 서랍에 하루 둔 문장이 비밀이다."
       }
     },
@@ -3228,6 +3682,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-8-p2",
       "text": {
+        "en": "He still feels sorry about the gap between the standard wording he saved and the transport of copies he stopped that night.",
         "ko": "살린 표준과 그 밤 멈춘 사본 운송 사이에서 미안함이 남는다."
       }
     },
@@ -3235,6 +3690,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-8-p3",
       "text": {
+        "en": "Partial disclosure permits only the drawer number to be revealed, with Mae Dohan present.",
         "ko": "부분 공개는 매도한 입회 아래 서랍 번호만 허용한다."
       }
     },
@@ -3242,6 +3698,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-8-p4",
       "text": {
+        "en": "SECRET opens only at the same time as the draft ledger.",
         "ko": "SECRET은 초안 원장과 동시에만 열린다."
       }
     },
@@ -3250,6 +3707,7 @@
       "anchor": "관계-공동과거-8",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -3257,6 +3715,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-8-p1",
       "text": {
+        "en": "In one market converge the command preparing fair copies of Jeong Yura’s sentences, the dual council coordination with An Taegyeong, Seon Chobyeol’s transport of copies, Yeong Maon’s escort of the draft, Seon Hansom’s underground protection, and Mae Dohan’s opening of the box.",
         "ko": "정유라의 문장을 정서하는 지휘 안태경과 맞춘 이중 의회 선초별의 사본 운송 영마온의 초안 호송 선한솜의 지하 수호 매도한의 함 개방이 한 시장에 겹친다."
       }
     },
@@ -3264,6 +3723,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-8-p2",
       "text": {
+        "en": "On that night of conflicting turnaround lines, some seals brought salvation, while some drawers remained betrayals.",
         "ko": "같은 회차선 밤에 어떤 봉인은 구원이 되었고 어떤 서랍은 배신으로 남았다."
       }
     },
@@ -3271,6 +3731,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-8-p3",
       "text": {
+        "en": "The mixing of languages at home affects only the speed of interpretation at the desk; it does not divide anyone into factions.",
         "ko": "가정 언어의 혼재는 통역 창구 속도에만 연결될 뿐 진영을 나누지 않는다."
       }
     },
@@ -3278,6 +3739,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-8-p4",
       "text": {
+        "en": "The endpoint is STORY-B016-K390.",
         "ko": "끝점은 STORY-B016-K390이다."
       }
     },
@@ -3286,6 +3748,7 @@
       "anchor": "3막-개인-서사선-8",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -3293,6 +3756,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-8-p1",
       "text": {
+        "en": "Act 1 is locking the box over three drafts listing different turnaround lines.",
         "ko": "서로 다른 회차선의 초안 세 부에 함을 잠그는 것이 1막이다."
       }
     },
@@ -3300,6 +3764,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-8-p2",
       "text": {
+        "en": "In the middle act, HP09’s hash observation and XT03’s alternative turnaround line compete over the loudspeaker.",
         "ko": "HP09 해시 참관과 XT03 대체 회차선이 확성기에서 겨루는 것이 중막이다."
       }
     },
@@ -3307,6 +3772,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-8-p3",
       "text": {
+        "en": "The final act is paying, with his brush, for the transport gap left by the convoy or underground storage.",
         "ko": "호송 또는 지하 보관이 남긴 운송 공백을 붓으로 갚는 것이 종막이다."
       }
     },
@@ -3314,6 +3780,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-8-p4",
       "text": {
+        "en": "The story arc is STORY-B016-K390.",
         "ko": "서사선은 STORY-B016-K390이다."
       }
     },
@@ -3322,6 +3789,7 @@
       "anchor": "분기-결말-8",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -3329,6 +3797,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-8-p1",
       "text": {
+        "en": "Putting the draft on the outer-route convoy preserves the public standard wording.",
         "ko": "초안을 외곽 호송에 실으면 공공 표준 문장이 산다."
       }
     },
@@ -3336,6 +3805,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-8-p2",
       "text": {
+        "en": "Entrusting the box to the underground leaves the drawer’s secret and the individual intact.",
         "ko": "함을 지하에 맡기면 서랍 비밀과 개인이 남는다."
       }
     },
@@ -3343,6 +3813,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-8-p3",
       "text": {
+        "en": "The clerk’s slot at the Jeongdong General Labor Union remains; only the branch is K399-OUT.",
         "ko": "정동노동총연맹 서기 칸은 유지되고 갈림만 K399-OUT이다."
       }
     },
@@ -3350,6 +3821,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-8-p4",
       "text": {
+        "en": "The decision at the time is to cover the convoy or witness the underground storage.",
         "ko": "당시의 결정은 호송 엄호 또는 지하 입회다."
       }
     },
@@ -3358,6 +3830,7 @@
       "anchor": "3막-8",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -3366,12 +3839,15 @@
       "anchor": "3막-8-list1",
       "items": [
         {
+          "en": "Act 1: Locks the box over three drafts listing different turnaround lines and stops preparing fair copies",
           "ko": "1막: 서로 다른 회차선의 초안 세 부에 함을 잠그고 정서를 멈춘다"
         },
         {
+          "en": "Act 2: HP09’s hash observation and XT03’s alternative turnaround line compete over the market loudspeaker",
           "ko": "2막: HP09 해시 참관과 XT03 대체 회차선이 시장 확성기에서 겨룬다"
         },
         {
+          "en": "Act 3: Accepts a gap in transporting copies as the price of the convoy or underground storage",
           "ko": "3막: 호송 또는 지하 보관의 값으로 사본 운송 공백을 감수한다"
         }
       ]
@@ -3381,6 +3857,7 @@
       "anchor": "분기-결말-목록-8",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -3389,9 +3866,11 @@
       "anchor": "분기-결말-목록-8-list1",
       "items": [
         {
+          "en": "K399-OUT-A: Transporting the draft by outer-route convoy keeps the public standard wording continuous",
           "ko": "K399-OUT-A: 초안 외곽 호송으로 공공 표준 문장 연속"
         },
         {
+          "en": "K399-OUT-B: Storing the box underground preserves the drawer’s secret",
           "ko": "K399-OUT-B: 지하 함 보관으로 서랍 비밀 유지"
         }
       ]
@@ -3401,6 +3880,7 @@
       "anchor": "인물-k222-송재민",
       "depth": 2,
       "text": {
+        "en": "Person K222 · Song Jaemin",
         "ko": "인물 K222 · 송재민"
       }
     },
@@ -3409,6 +3889,7 @@
       "anchor": "인물-k222-송재민-list1",
       "items": [
         {
+          "en": "Link: house=HP04 theater=XT05 scenarios=XT05-SC1,STORY-B016-K222",
           "ko": "연결: house=HP04 theater=XT05 scenarios=XT05-SC1,STORY-B016-K222"
         }
       ]
@@ -3418,6 +3899,7 @@
       "anchor": "정체성출신-9",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -3425,6 +3907,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-9-p1",
       "text": {
+        "en": "At the iron door of the Sangam encrypted relay booth, Song Jaemin counts the hash lights on the cross-validation table before handing over a case.",
         "ko": "상암 암호 중계 부스 철문 앞에서 송재민은 함을 넘기기 전에 교차검증대의 해시 불빛부터 눈으로 센다."
       }
     },
@@ -3432,6 +3915,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-9-p2",
       "text": {
+        "en": "He is an encryption records clerk serving under Choi Jiwoo’s verification command.",
         "ko": "암호 기록원이며 최지우의 검증 지휘 아래 서비스를 맡는다."
       }
     },
@@ -3439,6 +3923,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-9-p3",
       "text": {
+        "en": "He grew up in a separated family of Chinese descent and moves between the language spoken at home and Korean used for transmissions, but accepts only standard Hangul and cross-referenced annotations for encryption originals.",
         "ko": "중국계 이산 가정에서 자랐고 집 안 말과 송신 한국어를 오가지만 암호 원본에는 표준 한글과 교차 주석만 받는다."
       }
     },
@@ -3446,6 +3931,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-9-p4",
       "text": {
+        "en": "That background predicts neither loyalty, violence, nor class, and Song Jaemin and K218 cannot be renumbered in the transmission roster.",
         "ko": "그 이력은 충성·폭력·계급을 예측하지 않으며, 송재민과 K218은 송신 명부에서 재번호되지 않는다."
       }
     },
@@ -3454,6 +3940,7 @@
       "anchor": "붕괴-전-삶-9",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -3461,6 +3948,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-9-p1",
       "text": {
+        "en": "She tried to keep the relay of public materials separate from the case of originals so broadcasts could not swallow the authentic records.",
         "ko": "공개 자료 중계와 원본 함을 분리해 방송이 진본을 삼키지 못하게 하려 했다."
       }
     },
@@ -3468,6 +3956,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-9-p2",
       "text": {
+        "en": "She did not burn copies with mismatched hashes; she locked them away behind Du Yong’s storage key.",
         "ko": "해시가 다른 사본은 태우지 않고 두용의 저장소 열쇠 뒤에 가뒀다."
       }
     },
@@ -3475,6 +3964,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-9-p3",
       "text": {
+        "en": "Keeping the original encrypted text entrusted to Jo Harin was where her debt lay.",
         "ko": "조하린에게 맡긴 암호문 원본 보관이 빚의 자리였다."
       }
     },
@@ -3482,6 +3972,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-9-p4",
       "text": {
+        "en": "She did not put a case with the wrong number of lights in the relay queue.",
         "ko": "불빛 수가 틀린 함은 중계 큐에 올리지 않았다."
       }
     },
@@ -3490,6 +3981,7 @@
       "anchor": "가문기업공동체-9",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -3497,6 +3989,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-9-p1",
       "text": {
+        "en": "The Seoul Station Records Law House demanded to observe the booth, citing the sealing of original hashes.",
         "ko": "서울역기록법가는 원본 해시 봉인을 내세워 부스 참관을 요구했다."
       }
     },
@@ -3504,6 +3997,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-9-p2",
       "text": {
+        "en": "Song Jaemin opened only the charter slot and removed the real business name from the relay ledger.",
         "ko": "송재민은 헌장 칸만 열고 실재 상호를 중계 원장에서 지웠다."
       }
     },
@@ -3511,6 +4005,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-9-p3",
       "text": {
+        "en": "His place in the community is measured by the times he supported Jeong Hojun’s relay of public materials.",
         "ko": "정호준의 공개 자료 중계를 지지한 횟수가 공동체 위치다."
       }
     },
@@ -3518,6 +4013,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-9-p4",
       "text": {
+        "en": "He refused a demand for a unilateral public broadcast at the iron door.",
         "ko": "단독 공개 방송 요구는 철문 앞에서 거절됐다."
       }
     },
@@ -3526,6 +4022,7 @@
       "anchor": "붕괴의-상처-9",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -3533,6 +4030,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-9-p1",
       "text": {
+        "en": "The night the remaining bandwidth was assigned by public lottery, three encryption cases showed the same number of lights.",
         "ko": "잔여 대역이 공개 추첨되던 밤, 암호 함 세 개가 같은 불빛 수를 가리켰다."
       }
     },
@@ -3540,6 +4038,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-9-p2",
       "text": {
+        "en": "Song Jaemin locked the booth and cut the relay until Choi Jiwoo finished verification.",
         "ko": "송재민은 부스를 잠그고 최지우의 검증이 끝날 때까지 중계를 끊었다."
       }
     },
@@ -3547,6 +4046,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-9-p3",
       "text": {
+        "en": "At the heart of his grievance was the prospect of the case of originals being folded into a broadcast presented as authentic.",
         "ko": "원본 함이 진본 방송으로 합쳐지는 일이 원한의 핵이었다."
       }
     },
@@ -3554,6 +4054,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-9-p4",
       "text": {
+        "en": "Even when the transmission tower’s fan noise subsided, he could not let go of the iron-door key.",
         "ko": "송신탑 팬 소음이 잦아도 철문 키를 놓지 못했다."
       }
     },
@@ -3562,6 +4063,7 @@
       "anchor": "생존-전환점-9",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -3569,6 +4071,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-9-p1",
       "text": {
+        "en": "The choice was whether to transfer the case to Jo Harin’s archive or close Yong So’s booth and halt the bandwidth lottery.",
         "ko": "함을 조하린의 문서고로 이관할지, 용소의 부스를 닫고 대역 추첨을 멈출지가 갈렸다."
       }
     },
@@ -3576,6 +4079,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-9-p2",
       "text": {
+        "en": "Incheon Trust Theater’s demand to proceed with the public lottery for remaining bandwidth arrived at the iron door at the same time.",
         "ko": "인천신탁전구의 잔여 대역 공개 추첨 독촉이 철문에 겹쳤다."
       }
     },
@@ -3583,6 +4087,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-9-p3",
       "text": {
+        "en": "Transfer preserves the public hash; stopping makes the records clerk herself a target of silence.",
         "ko": "이관은 공공 해시를 살리고 정지는 기록원 자신을 침묵의 표적으로 만든다."
       }
     },
@@ -3590,6 +4095,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-9-p4",
       "text": {
+        "en": "K222-TURN is the number of times her eyes counted the lights.",
         "ko": "K222-TURN은 불빛을 센 눈의 횟수다."
       }
     },
@@ -3598,6 +4104,7 @@
       "anchor": "현재-지위-9",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -3605,6 +4112,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-9-p1",
       "text": {
+        "en": "Song Jaemin handles roll call and the case queue in the relay booth.",
         "ko": "송재민은 중계 부스에서 점호와 함 큐를 본다."
       }
     },
@@ -3612,6 +4120,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-9-p2",
       "text": {
+        "en": "Her license and cross-validation logs secure her place, and she refuses HP04’s demand for exclusive disclosure.",
         "ko": "면허와 교차검증 로그가 자리를 받치고 HP04의 전속 공개 요구는 거절한다."
       }
     },
@@ -3619,6 +4128,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-9-p3",
       "text": {
+        "en": "The language spoken at home is needed only to read the seal annotations; it does not divide anyone into factions.",
         "ko": "집 안 말은 봉인 주석을 읽을 때만 필요하며 진영을 가르지 않는다."
       }
     },
@@ -3626,6 +4136,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-9-p4",
       "text": {
+        "en": "If the Cast slot and the hash lights disagree, she cuts the relay.",
         "ko": "Cast 칸과 해시 불빛이 어긋나면 중계를 끊는다."
       }
     },
@@ -3634,6 +4145,7 @@
       "anchor": "비밀빚죄책감-9",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -3641,6 +4153,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-9-p1",
       "text": {
+        "en": "Her secret is the case containing a copy with a mismatched hash, left behind the key for a day.",
         "ko": "해시가 다른 사본을 열쇠 뒤에 하루 둔 함이 비밀이다."
       }
     },
@@ -3648,6 +4161,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-9-p2",
       "text": {
+        "en": "She still feels sorry about the gap between the verification she saved and the bandwidth she shut down that night.",
         "ko": "살린 검증과 그 밤 멈춘 대역 사이에서 미안함이 남는다."
       }
     },
@@ -3655,6 +4169,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-9-p3",
       "text": {
+        "en": "Partial disclosure reveals only the case number, with Seop Dalho present.",
         "ko": "부분 공개는 섭달호 입회 아래 함 번호만 밝힌다."
       }
     },
@@ -3662,6 +4177,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-9-p4",
       "text": {
+        "en": "SECRET opens only at the same time as the encryption ledger.",
         "ko": "SECRET은 암호 원장과 동시에만 열린다."
       }
     },
@@ -3670,6 +4186,7 @@
       "anchor": "관계-공동과거-9",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -3677,6 +4194,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-9-p1",
       "text": {
+        "en": "At one iron door converge Choi Jiwoo’s verification command, his debt to Jo Harin for keeping the originals, his support for Jeong Hojun’s public relay, Du Yong’s storage key, Yong So’s booth shift, and Seop Dalho’s messenger route.",
         "ko": "최지우의 검증 지휘 조하린의 원본 보관 빚 정호준의 공개 중계 지지 두용의 저장소 열쇠 용소의 부스 당직 섭달호의 전령로가 한 철문에 겹친다."
       }
     },
@@ -3684,6 +4202,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-9-p2",
       "text": {
+        "en": "On that same lottery night, some cases brought salvation, while some copies remained betrayals.",
         "ko": "같은 추첨 밤에 어떤 함은 구원이 되었고 어떤 사본은 배신으로 남았다."
       }
     },
@@ -3691,6 +4210,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-9-p3",
       "text": {
+        "en": "The language of a separated family is needed only to read annotations and does not determine channel assignments.",
         "ko": "이산 언어는 주석을 읽을 때만 필요하고 채널 편성을 가르지 않는다."
       }
     },
@@ -3698,6 +4218,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-9-p4",
       "text": {
+        "en": "The endpoint is STORY-B016-K218.",
         "ko": "끝점은 STORY-B016-K218이다."
       }
     },
@@ -3706,6 +4227,7 @@
       "anchor": "3막-개인-서사선-9",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -3713,6 +4235,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-9-p1",
       "text": {
+        "en": "Act 1 is locking the booth over three cases showing the same number of lights.",
         "ko": "같은 불빛 수의 함 세 개에 부스를 잠그는 것이 1막이다."
       }
     },
@@ -3720,6 +4243,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-9-p2",
       "text": {
+        "en": "Act 2 is HP04’s hash seal competing with XT05’s bandwidth lottery at the iron door.",
         "ko": "HP04 해시 봉인과 XT05 대역 추첨이 철문에서 겨루는 것이 2막이다."
       }
     },
@@ -3727,6 +4251,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-9-p3",
       "text": {
+        "en": "Act 3 is paying for the airtime lost through transfer or stoppage with the weight of the key.",
         "ko": "이관 또는 정지가 남긴 침묵 분량을 키 무게로 갚는 것이 3막이다."
       }
     },
@@ -3734,6 +4259,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-9-p4",
       "text": {
+        "en": "The story arc is STORY-B016-K218.",
         "ko": "서사선은 STORY-B016-K218이다."
       }
     },
@@ -3742,6 +4268,7 @@
       "anchor": "분기-결말-9",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -3749,6 +4276,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-9-p1",
       "text": {
+        "en": "Transferring the case to the archive preserves the public hash.",
         "ko": "함을 문서고로 이관하면 공공 해시가 산다."
       }
     },
@@ -3756,6 +4284,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-9-p2",
       "text": {
+        "en": "Closing the booth leaves the copy’s secret and the individual intact.",
         "ko": "부스를 닫으면 사본 비밀과 개인이 남는다."
       }
     },
@@ -3763,6 +4292,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-9-p3",
       "text": {
+        "en": "The records clerk’s slot at the Yeouido Investment Union remains; only the marker is K222-OUT.",
         "ko": "여의도출자연합회 기록원 칸은 유지되고 표식만 K222-OUT이다."
       }
     },
@@ -3770,6 +4300,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-9-p4",
       "text": {
+        "en": "The decision at the time is to guard the transfer or witness the sealing of the iron door.",
         "ko": "당시의 결정은 이관 호위 또는 철문 봉인 입회다."
       }
     },
@@ -3778,6 +4309,7 @@
       "anchor": "3막-9",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -3786,12 +4318,15 @@
       "anchor": "3막-9-list1",
       "items": [
         {
+          "en": "Act 1: Locks the booth over three encryption cases showing the same number of lights and cuts the relay",
           "ko": "1막: 같은 불빛 수의 암호 함 세 개에 부스를 잠그고 중계를 끊는다"
         },
         {
+          "en": "Act 2: HP04’s hash seal and XT05’s bandwidth lottery compete at the iron door",
           "ko": "2막: HP04 해시 봉인과 XT05 대역 추첨이 철문에서 겨룬다"
         },
         {
+          "en": "Act 3: Accepts a period of bandwidth silence as the price of transfer or stoppage",
           "ko": "3막: 이관 또는 정지의 값으로 대역 침묵을 감수한다"
         }
       ]
@@ -3801,6 +4336,7 @@
       "anchor": "분기-결말-목록-9",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -3809,9 +4345,11 @@
       "anchor": "분기-결말-목록-9-list1",
       "items": [
         {
+          "en": "K222-OUT-A: Transferring the encryption case to the archive keeps the public hash continuous",
           "ko": "K222-OUT-A: 암호 함 문서고 이관으로 공공 해시 연속"
         },
         {
+          "en": "K222-OUT-B: Closing the booth preserves the copy’s secret and her survival",
           "ko": "K222-OUT-B: 부스 폐쇄로 사본 비밀과 생존 유지"
         }
       ]
@@ -3821,6 +4359,7 @@
       "anchor": "인물-h16-신태율",
       "depth": 2,
       "text": {
+        "en": "Person H16 · Sintaeul (Taeul)",
         "ko": "인물 H16 · 신태율"
       }
     },
@@ -3829,6 +4368,7 @@
       "anchor": "인물-h16-신태율-list1",
       "items": [
         {
+          "en": "Link: house=HP02 theater=XT03 scenarios=XT03-SC1,STORY-B016-H16",
           "ko": "연결: house=HP02 theater=XT03 scenarios=XT03-SC1,STORY-B016-H16"
         }
       ]
@@ -3838,6 +4378,7 @@
       "anchor": "정체성출신-10",
       "depth": 3,
       "text": {
+        "en": "Identity and Origins",
         "ko": "정체성·출신"
       }
     },
@@ -3845,6 +4386,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-10-p1",
       "text": {
+        "en": "At the underground transfer maintenance bench at Suseo Station, Sin Tae-yul reads the battery-charge number only with a sensor probe.",
         "ko": "수서역 지하 환승 정비 벤치에서 신태율은 배터리 잔량 숫자를 센서 막대로만 읽는다."
       }
     },
@@ -3852,6 +4394,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-10-p2",
       "text": {
+        "en": "A synthetic humanoid designated H16, with the call name Tae-yul, he turns sealing screws using a humanoid auxiliary frame and interchangeable hand modules; his night vision is limited.",
         "ko": "합성 인간형 H16이며 호출명은 태율, 인간형 보조 골격과 교체형 손모듈로 봉인 나사를 돌리고 야간 시야는 제한된다."
       }
     },
@@ -3859,6 +4402,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-10-p3",
       "text": {
+        "en": "He cannot see every area at once, and constraint counters and snapshot hashes record the state of his unstable processing.",
         "ko": "전 구역을 한눈에 보지 못하며 연산의 불안정은 제약 카운터와 스냅샷 해시로 상태를 남긴다."
       }
     },
@@ -3866,6 +4410,7 @@
       "kind": "paragraph",
       "anchor": "정체성출신-10-p4",
       "text": {
+        "en": "His display name, Sin Tae-yul, and identifier H16 are not renumbered even if he is forked.",
         "ko": "표시 이름 신태율과 식별자 H16은 포크되어도 재번호되지 않는다."
       }
     },
@@ -3874,6 +4419,7 @@
       "anchor": "붕괴-전-삶-10",
       "depth": 3,
       "text": {
+        "en": "Life Before the Collapse",
         "ko": "붕괴 전 삶"
       }
     },
@@ -3881,6 +4427,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-10-p1",
       "text": {
+        "en": "His factory inspection sheet listed only Tae-yul’s calibration values and battery cycles; he was granted neither network-wide authority nor long-term, complete memory.",
         "ko": "출고 검사표에는 태율 교정값과 배터리 사이클만 찍혔고 전역 망 권한과 장기 완전 기억은 부여되지 않았다."
       }
     },
@@ -3888,6 +4435,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-10-p2",
       "text": {
+        "en": "His goals were continuous operation in the Suseo Line area and the safety of the humans in his care; unilateral remote locking was not placed in the execution queue.",
         "ko": "목표는 수서선 구역 연속 가동과 담당 인간 안전이며 단독 원격 잠금은 실행 큐에 오르지 않았다."
       }
     },
@@ -3895,6 +4443,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-10-p3",
       "text": {
+        "en": "The provision retaining only shift-by-shift snapshots and logging branches when forked was fixed in H16-PRE.",
         "ko": "교대 단위 스냅샷만 유지하고 포크 시 분기 로그를 남기는 조항이 H16-PRE에 고정됐다."
       }
     },
@@ -3902,6 +4451,7 @@
       "kind": "paragraph",
       "anchor": "붕괴-전-삶-10-p4",
       "text": {
+        "en": "He recorded human jokes without enabling an interpretation layer.",
         "ko": "인간 농담을 기록해도 해석 레이어는 올리지 않았다."
       }
     },
@@ -3910,6 +4460,7 @@
       "anchor": "가문기업공동체-10",
       "depth": 3,
       "text": {
+        "en": "House, Company, Community",
         "ko": "가문·기업·공동체"
       }
     },
@@ -3917,6 +4468,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-10-p1",
       "text": {
+        "en": "The Yongsan Track Gate requires joint custody, seals witnessed by citizens, and three-party signatures upon transfer.",
         "ko": "용산선로문은 공동 보관·시민 참관 봉인·양도 시 삼자 서명을 의무로 둔다."
       }
     },
@@ -3924,6 +4476,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-10-p2",
       "text": {
+        "en": "Sin Tae-yul’s activity log contains no real business or product names, only successor-charter observer codes.",
         "ko": "신태율의 행동 로그에는 실재 상호·제품명이 없고 후계 헌장 참관 코드만 남는다."
       }
     },
@@ -3931,6 +4484,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-10-p3",
       "text": {
+        "en": "Custodial responsibility is tied to Jeong Yura’s signature and HP02’s audit observation; his place in the community is measured by the times snapshots were recorded on both sides simultaneously.",
         "ko": "보관 책임은 정유라 서명과 HP02 감사 입회에 묶이며 스냅샷이 양쪽에 동시에 기록된 횟수가 공동체 위치다."
       }
     },
@@ -3938,6 +4492,7 @@
       "kind": "paragraph",
       "anchor": "가문기업공동체-10-p4",
       "text": {
+        "en": "Demands for exclusive remote ownership are returned as refusal codes at the bench seal.",
         "ko": "전속 원격 소유 요구는 벤치 봉인 앞에서 거부 코드로 반환된다."
       }
     },
@@ -3946,6 +4501,7 @@
       "anchor": "붕괴의-상처-10",
       "depth": 3,
       "text": {
+        "en": "Wounds of the Collapse",
         "ko": "붕괴의 상처"
       }
     },
@@ -3953,6 +4509,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-10-p1",
       "text": {
+        "en": "During the shift when the Yongsan transfer depot closed one route, black-and-white noise covered the bench sensor, exposing the battery allocation limit.",
         "ko": "용산 환적창이 한 길을 닫던 교대, 벤치 센서가 흑백 노이즈로 덮이며 배터리 할당 한도가 드러났다."
       }
     },
@@ -3960,6 +4517,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-10-p2",
       "text": {
+        "en": "Sin Tae-yul was locked against filling the gap with fabricated values; he stopped writing long-term memory, retained only a shift snapshot, and locked the hand-module cover.",
         "ko": "신태율은 공백을 허구 값으로 메우지 못하도록 잠겼고 장기 기억 쓰기를 멈추고 교대 스냅샷만 남긴 채 손모듈 뚜껑을 잠갔다."
       }
     },
@@ -3967,6 +4525,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-10-p3",
       "text": {
+        "en": "The highest-priority alert concerned a scenario in which a false-alarm route turned the emergency slot into a hostile target.",
         "ko": "최고 우선 경보는 오탐 경로가 응급 칸을 적대 표적으로 바꾸는 시나리오였다."
       }
     },
@@ -3974,6 +4533,7 @@
       "kind": "paragraph",
       "anchor": "붕괴의-상처-10-p4",
       "text": {
+        "en": "Even after emergency power returned, requests for unlimited energy and commands to restore complete memory were deleted from the queue.",
         "ko": "비상 전원이 돌아와도 무한 에너지 요청과 완전 기억 복구 명령은 큐에서 삭제됐다."
       }
     },
@@ -3982,6 +4542,7 @@
       "anchor": "생존-전환점-10",
       "depth": 3,
       "text": {
+        "en": "Survival Turning Point",
         "ko": "생존 전환점"
       }
     },
@@ -3989,6 +4550,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-10-p1",
       "text": {
+        "en": "The receive queue presented a choice: hand the noise slot over for a disassembly log witnessed by citizens, or use the backup battery to preserve only the messages for the alternative Suseo turnaround.",
         "ko": "노이즈 슬롯을 시민 참관 분해 로그로 넘길지, 예비 배터리로 수서 대체 회차 메시만 살릴지가 수신 큐에서 갈렸다."
       }
     },
@@ -3996,6 +4558,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-10-p2",
       "text": {
+        "en": "Even when Korea Strait Theater’s request to open the turnaround line arrived, cross-facility routing remained blocked by default; he requested only the area key.",
         "ko": "대한해협전구의 회차선 개방 요청이 도착해도 교차 시설 루트는 기본 차단이고 구역 키만 요청했다."
       }
     },
@@ -4003,6 +4566,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-10-p3",
       "text": {
+        "en": "Public disassembly exposes the cause code; preserving only the turnaround messages prolongs the gap in night vision.",
         "ko": "공개 분해는 원인 코드를 드러내고 회차 메시만 살리면 야간 시야 공백이 길어진다."
       }
     },
@@ -4010,6 +4574,7 @@
       "kind": "paragraph",
       "anchor": "생존-전환점-10-p4",
       "text": {
+        "en": "H16-TURN is the sorting result of that receive queue, and reconnection is valid only after Jeong Yura’s approval.",
         "ko": "H16-TURN은 그 수신 큐의 정렬 결과이며 재연결은 정유라 승인 후에만 성립한다."
       }
     },
@@ -4018,6 +4583,7 @@
       "anchor": "현재-지위-10",
       "depth": 3,
       "text": {
+        "en": "Present Standing",
         "ko": "현재 지위"
       }
     },
@@ -4025,6 +4591,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-10-p1",
       "text": {
+        "en": "Sin Tae-yul processes roll-call signals and snapshot queues at the Suseo transfer bench and the field terminal on the Segok siding.",
         "ko": "신태율은 수서 환승 벤치와 세곡 측선 현장 단자로 점호 신호와 스냅샷 큐를 처리한다."
       }
     },
@@ -4032,6 +4599,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-10-p2",
       "text": {
+        "en": "He does not own the entire infrastructure, uses only allocated slots, and receives replacement batteries and worn parts only by allocation.",
         "ko": "인프라 전체를 소유하지 않고 할당 슬롯만 사용하며 배터리와 마모 부품은 할당제로만 보충된다."
       }
     },
@@ -4039,6 +4607,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-10-p3",
       "text": {
+        "en": "Even if HP02 demands exclusive remote ownership, he returns a refusal code; if the H16 row in the Synthetic-Actors projection does not match the hash, deployment validation fails.",
         "ko": "HP02가 전속 원격 소유를 요구해도 거부 코드를 반환하고 Synthetic-Actors 투영의 H16 행과 해시가 어긋나면 배치 검증이 실패한다."
       }
     },
@@ -4046,6 +4615,7 @@
       "kind": "paragraph",
       "anchor": "현재-지위-10-p4",
       "text": {
+        "en": "Authority over the slot key is split between Jeong Yura as lead maintainer and the citizen observer module.",
         "ko": "슬롯 열쇠 권한은 정유라 주정비와 시민 참관 모듈이 분할 보유한다."
       }
     },
@@ -4054,6 +4624,7 @@
       "anchor": "비밀빚죄책감-10",
       "depth": 3,
       "text": {
+        "en": "Secret, Debt, Guilt",
         "ko": "비밀·빚·죄책감"
       }
     },
@@ -4061,6 +4632,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-10-p1",
       "text": {
+        "en": "His secret in the restricted log is an untransmitted false-alarm dummy uploaded once without an observer; his debt is the battery queue consumed by excessive deployments.",
         "ko": "참관 없이 한 번 올라간 미전송 오탐 더미가 제한 로그의 비밀이고, 과다 출동으로 소모한 배터리 큐가 빚이다."
       }
     },
@@ -4068,6 +4640,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-10-p2",
       "text": {
+        "en": "A constraint-violation counter rises instead of emotion; a deviation triggers offline isolation followed by snapshot rollback.",
         "ko": "감정 대신 제약 위반 카운터가 오르며 일탈 시 오프라인 격리 후 스냅샷 롤백을 거친다."
       }
     },
@@ -4075,6 +4648,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-10-p3",
       "text": {
+        "en": "The SECRET flag cannot be cleared without simultaneous signatures from custodial responsibility and a citizen observer.",
         "ko": "SECRET 플래그는 보관 책임과 시민 참관 동시 서명 없이는 해제되지 않는다."
       }
     },
@@ -4082,6 +4656,7 @@
       "kind": "paragraph",
       "anchor": "비밀빚죄책감-10-p4",
       "text": {
+        "en": "The pre-rollback hash remains only in Jeong Yura’s observation log.",
         "ko": "롤백 전 해시는 정유라 입회 로그에만 남는다."
       }
     },
@@ -4090,6 +4665,7 @@
       "anchor": "관계-공동과거-10",
       "depth": 3,
       "text": {
+        "en": "Shared Past in Relations",
         "ko": "관계 공동과거"
       }
     },
@@ -4097,6 +4673,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-10-p1",
       "text": {
+        "en": "Jeong Yura’s lead maintenance and legal responsibility were custody-contract codes; the shift coordinated with Bae Nagyeong’s notice that the water-supply contract was about to expire was a work queue.",
         "ko": "정유라의 주정비·법적 책임은 보관 계약 코드였고, 배나경의 급수계약 만료 전갈과 맞춘 교대는 작업 큐였다."
       }
     },
@@ -4104,6 +4681,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-10-p2",
       "text": {
+        "en": "The contest over remote locking with HP02 Stewardship and the surrender of slots to the emergency-duty crew converge at one bench.",
         "ko": "HP02 스튜어드십과의 원격 잠금 경쟁, 응급 칸 당직과의 슬롯 양보가 한 벤치에 겹친다."
       }
     },
@@ -4111,6 +4689,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-10-p3",
       "text": {
+        "en": "He does not imitate human stories of betrayal and salvation in relationships; his interactions consist solely of approval and refusal codes.",
         "ko": "인간 관계의 배신·구원 서사를 모방하지 않고 승인·거부 코드로만 교차한다."
       }
     },
@@ -4118,6 +4697,7 @@
       "kind": "paragraph",
       "anchor": "관계-공동과거-10-p4",
       "text": {
+        "en": "A faulty memory fork is annotated only as H16-FORK-01, and the relationship ledger’s endpoint connects to STORY-B016-H16.",
         "ko": "잘못된 기억 포크는 H16-FORK-01로만 주석되고 관계 원장 끝점은 STORY-B016-H16에 연결된다."
       }
     },
@@ -4126,6 +4706,7 @@
       "anchor": "3막-개인-서사선-10",
       "depth": 3,
       "text": {
+        "en": "Three-Act Personal Arc",
         "ko": "3막 개인 서사선"
       }
     },
@@ -4133,6 +4714,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-10-p1",
       "text": {
+        "en": "In Act 1, Sin Tae-yul locks long-term memory against the noise and retains only a snapshot.",
         "ko": "1막에서 신태율은 노이즈에 장기 기억을 잠그고 스냅샷만 남긴다."
       }
     },
@@ -4140,6 +4722,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-10-p2",
       "text": {
+        "en": "In Act 2, he sorts HP02’s remote demand and XT03’s turnaround-line request in the receive queue.",
         "ko": "2막에서 HP02 원격 요구와 XT03 회차선 요청을 수신 큐에서 정렬한다."
       }
     },
@@ -4147,6 +4730,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-10-p3",
       "text": {
+        "en": "In Act 3, he pays for public disassembly or restoration of the turnaround with a gap in night vision and the use of his battery allocation.",
         "ko": "3막에서 공개 분해 또는 회차 회생의 대가를 야간 시야 공백과 배터리 할당 소모로 치른다."
       }
     },
@@ -4154,6 +4738,7 @@
       "kind": "paragraph",
       "anchor": "3막-개인-서사선-10-p4",
       "text": {
+        "en": "The story-arc identifier is fixed as STORY-B016-H16.",
         "ko": "서사선 식별자는 STORY-B016-H16로 고정된다."
       }
     },
@@ -4162,6 +4747,7 @@
       "anchor": "분기-결말-10",
       "depth": 3,
       "text": {
+        "en": "Branching Endings",
         "ko": "분기 결말"
       }
     },
@@ -4169,6 +4755,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-10-p1",
       "text": {
+        "en": "In ending α, Sin Tae-yul confirms the causal path through a public disassembly log for the noise slot.",
         "ko": "결말 α에서 신태율은 노이즈 슬롯 공개 분해 로그로 원인 경로를 확정한다."
       }
     },
@@ -4176,6 +4763,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-10-p2",
       "text": {
+        "en": "In ending β, he keeps the Suseo transfer running with backup-battery turnaround messages.",
         "ko": "결말 β에서 예비 배터리 회차 메시로 수서 환승 연속을 지킨다."
       }
     },
@@ -4183,6 +4771,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-10-p3",
       "text": {
+        "en": "There are no downstream consequences involving unlimited energy; neither outcome deletes HP02’s custody slot, and only the identifier branches to H16-OUT.",
         "ko": "무한 에너지 후속 인과는 없으며 어느 쪽도 HP02 보관 슬롯을 삭제하지 않고 식별만 H16-OUT으로 갈린다."
       }
     },
@@ -4190,6 +4779,7 @@
       "kind": "paragraph",
       "anchor": "분기-결말-10-p4",
       "text": {
+        "en": "The decision on site at the time is to witness the disassembly or guard power for the turnaround.",
         "ko": "당시 현장의 결정은 분해 입회 또는 회차 전원 호위다."
       }
     },
@@ -4198,6 +4788,7 @@
       "anchor": "3막-10",
       "depth": 3,
       "text": {
+        "en": "Three Acts",
         "ko": "3막"
       }
     },
@@ -4206,12 +4797,15 @@
       "anchor": "3막-10-list1",
       "items": [
         {
+          "en": "Act 1: Locks long-term memory against the bench sensor noise and retains only a snapshot",
           "ko": "1막: 벤치 센서 노이즈에 장기 기억을 잠그고 스냅샷만 남긴다"
         },
         {
+          "en": "Act 2: Sorts HP02’s remote demand and XT03’s turnaround-line request in the receive queue",
           "ko": "2막: HP02 원격 요구와 XT03 회차선 요청을 수신 큐에서 정렬한다"
         },
         {
+          "en": "Act 3: Accepts a gap in night vision as the price of public disassembly or restoration of the turnaround",
           "ko": "3막: 공개 분해 또는 회차 회생의 대가로 야간 시야 공백을 감수한다"
         }
       ]
@@ -4221,6 +4815,7 @@
       "anchor": "분기-결말-목록-10",
       "depth": 3,
       "text": {
+        "en": "Branching Ending List",
         "ko": "분기 결말 목록"
       }
     },
@@ -4229,9 +4824,11 @@
       "anchor": "분기-결말-목록-10-list1",
       "items": [
         {
+          "en": "H16-OUT-A: Public dismantling of the noise slots fixes the cause's route",
           "ko": "H16-OUT-A: 노이즈 슬롯 공개 분해로 원인 경로 확정"
         },
         {
+          "en": "H16-OUT-B: Backup-battery turnaround messages keep the Suseo transfer running",
           "ko": "H16-OUT-B: 예비 배터리 회차 메시로 수서 환승 연속"
         }
       ]

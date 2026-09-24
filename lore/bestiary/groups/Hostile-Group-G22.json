@@ -5,6 +5,7 @@
   "slug": "hostile-group-g22",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G22 · Dead-Battery Metal Colony",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G22 · 폐전지금속군락",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g22-폐전지금속군락",
       "depth": 1,
       "text": {
+        "en": "G22 · Dead-Battery Metal Colony",
         "ko": "G22 · 폐전지금속군락"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g22-폐전지금속군락-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "In facilities the Dead-Battery Metal Colony settled, the zones where metal dissolved away and the zones where metal returned as crystal fell clearly apart. Around spent-battery pouches and solder dross the surface pitted gray-white, while on ceramic edges a few meters away copper resin and nickel shells layered thick. This separation was made by invisible potential difference and capillary moisture.",
         "ko": "폐전지금속군락이 자리 잡은 시설에서는 금속이 녹아 사라지는 구역과 금속이 결정으로 되돌아오는 구역이 분명히 나뉜다. 폐전지 파우치와 땜납 찌꺼기 주변은 회백색으로 패이고, 몇 미터 떨어진 세라믹 모서리에는 구리 수지와 니켈 껍질이 겹겹이 붙는다. 이 분리는 눈에 보이지 않는 전위차와 모세관 수분이 만든다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The Dead-Battery Metal Colony's common ecology responded passively to facility surfaces and the local environment. The G22E identifiers marked biomechanical variants whose movement and work functions had differentiated within that environment; they were not treated as one individual with the common film or the whole installation.",
         "ko": "폐전지금속군락의 공통 생태는 시설 표면과 국소 환경에 수동적으로 반응한다. G22E 식별자는 그 환경에서 이동·작업 기능이 분화된 생체기계 변이를 가리키며, 공통 막이나 설비 전체와 같은 개체로 취급하지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "A failed-dehumidifying stretch under the Republic of Korea Government and the temporary spent-battery yard of the Changdong Wheel Chamber shared one rainy season, and a Seoul-fiction origin opened in which electrolyte-crystal metal dendrites hardened into a colony skeleton. / It does not name any particular battery or chemical corporation.",
             "ko": "대한민국정부 지하 제습 실패 구간과 창동 차륜방의 폐전지 임시 야적이 한 우기를 공유하며, 전해질 결정 금속 수지가 군락 골격으로 굳는 서울 창작 기원이 열렸다. / 특정 전지·화학 법인을 지목하지 않는다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The outer wall of the underground preservation vault of the Republic of Korea Government at Seoul Station Central was the core habitat. / In weeks when yard inspection was slack the dendrite branches moved to the siding yard of the Gangnam Line Seocho Computing Group, and condensate from the damp grain trains coming from XT02 the West Sea Granary Theater sped the precipitation.",
             "ko": "서울역 중앙 대한민국정부 지하 보존고 외벽이 핵심 서식이다. / 야적 검사가 느슨한 주에는 강남선 서초전산그룹 측선 야적으로 수지 가지가 이동하고, XT02 서해곡창전구에서 오는 습기 많은 곡물 열차의 응결수가 석출을 가속한다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "Residual electrolyte, copper and nickel flakes, water from failed dehumidifying, and waste heat from the archive backup power were the conditions that kept precipitation going. / The closer the colony came to the power bus, the more archive-preservation power shook, and it competed with the spent-battery metal that HP08 the Noryangjin Cold-Storage Guild meant to recover. / The backup circuit of F06 the Elevator Shaft (Seungchuk) could also become a damp conduction path.",
             "ko": "잔류 전해질 구리·니켈 박편 제습 실패로 생긴 물 기록고 백업 전원 폐열이 석출을 유지하는 조건이다. / 군락이 전원 버스에 닿을수록 기록 보존 전력이 흔들리고, HP08 노량진냉동상단이 회수하려는 폐전지 금속과 경합한다. / F06 승강기축 백업 회로도 습윤 전도 경로가 될 수 있다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "1 electrolyte salt crystal nuclei → 2 dendritic growth along the pores → 3 the wet film touching the power bus and shielding mesh → 4 the precipitation path guided into the ceramic recovery tank → 5 neutralization to carbonate then powdering. Growth was bound to potential difference and capillary moisture.",
             "ko": "1 전해질 염 결정핵 → 2 기공을 따른 수지상 성장 → 3 습윤막이 전원 버스·차폐망에 닿음 → 4 세라믹 회수조로 석출 경로가 유도됨 → 5 탄산염 중성화 후 분말화. 성장은 전위차와 모세관 습기에 묶인다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "Growth speed shifted with local potential difference, electrolyte concentration, and dehumidifier-fan vibration. It recognized no document contents and was no agent tracking power stability.",
             "ko": "국소 전위차, 전해질 농도, 제습 팬 진동에 따라 성장 속도가 달라진다. 문서 내용을 인식하지 못하며 전원 안정도를 추적하는 주체도 아니다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "Leaching zones and precipitation zones split only by potential and humidity terrain; there was no higher command nucleus. / The records keeper put manual insulation and recovery-bath placement first, and if the F06 log missed a nucleus location, insulation was carried out first.",
             "ko": "용출 구역과 석출 구역이 전위·습도 지형에 따라 나뉠 뿐 상위 지휘 핵은 없다. / 기록 관리인이 수동 절연과 회수조 배치를 우선하고, F06 로그가 핵 위치를 놓치면 절연을 먼저 시행한다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The common facility ecology had no command core. Even the coordinating individuals of the mobile variants reacted only within their assigned conduit or work section, and stood in for neither human facility authority nor unit command.",
         "ko": "공통 시설 생태에는 지휘 핵이 없다. 이동 변이의 조정 개체도 맡은 관로·작업 구간 안에서만 반응하며, 사람의 시설 운영권과 부대 지휘권을 대신하지 않는다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G22E01 · Bipolar Salt-Precipitating Matrix",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E01 · 양극염 석출모",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E02 · Electrolyte-Filtering Antler",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E02 · 전해액 여과각",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E03 · Terminal-Resin Crimping Bug",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E03 · 단자수지 압착충",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E04 · Metalflower Capacitor Tree",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E04 · 금속꽃 축전목",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E05 · Electrode-Thread Weaver",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E05 · 전극실잣이",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E06 · Cooling Bell Medusa",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E06 · 냉각종수리",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E07 · Scrap-Jawed Sorting Wraith",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E07 · 고철턱선별귀",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E08 · Electrolyte-Breath Jar",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E08 · 전해숨항아리",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E09 · Vibration-Charging Walker",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E09 · 진동축전보행자",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E10 · Stitch-Plate Patcher",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E10 · 봉합판누비개",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E11 · Noise-Beacon Segment",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E11 · 잡음등대마디",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E12 · Oxide-Rake Gardener",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E12 · 산화갈퀴정원사",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E13 · Residual-Heat Scute Carrier",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E13 · 잔열딱지운반꾼",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E14 · Corridor-Door Bolt Mother",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E14 · 회랑문빗장어미",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M035",
             "ko": "M035"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E15 · Spent-Electrode Weaver",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E15 · 폐극직조충",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G22E16 · Electrolyte Pulley Wraith",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G22",
+                  "anchor": "g22e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G22E16 · 전해도르래귀",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g22e01\"></a>",
         "ko": "<a id=\"g22e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g22e01-양극염-석출모",
       "depth": 3,
       "text": {
+        "en": "G22E01 · Bipolar Salt-Precipitating Matrix",
         "ko": "G22E01 · 양극염 석출모"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g22e01-양극염-석출모-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g22e01-양극염-석출모-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Anode-Salt Precipitation Comb was a mobile biomechanical variant differentiated from the G22 common ecology. The command · coordination role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "양극염 석출모은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 지휘·조정 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -736,6 +1034,15 @@
       "anchor": "g22e01-양극염-석출모-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical gatherer that precipitates metal salts leaking from spent batteries onto a porous matrix on its back, making structural material for the colony. Its pincer legs sense heat and vibration needles near its mouth detect vibrations through the floor, but it cannot locate resources behind an insulating wall."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -747,6 +1054,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, spent batteries, leaked electrolyte, and microbial films accumulated in the S06 and Gangnam Line corridors and combined to form the spent-battery metal colony. This is a fictional Seoul origin reflecting contemporary anxieties about colonies that precipitate metals from spent batteries; the setting is not intended to criticize any specific real company or current system."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -758,6 +1074,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It uses cracks in the floor and drainage grooves at the spent-battery sorting yard in central Seoul Station as its core habitat. In the rainy season it migrates to lower Gangnam Line warehouses where metal salts flow. When strong heat and vibration pressure comes from the XT02 outskirts, it moves its matrix farther inside the sorting yard."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -769,6 +1094,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs residual energy from spent batteries, cooling water, and scrap metal for the matrix’s frame. It competes directly with HP08’s safe recovery work, but if fully discharged batteries and contaminated cooling water are supplied separately, it confines its activity to the resource limit."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -780,6 +1114,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through five stages: emergence, expansion, stagnation, negotiation-possible, and disintegration. If the matrix’s drainage holes clog, metal salts collect on one side, forming a “polarization lump.” With low-temperature washing and neutralized cooling water, it detaches the hazardous precipitate itself."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -791,6 +1134,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One controller adjusts the voltage difference across the matrix, and gathering groups carry metal salts only in designated grooves. Even if F06 raises a runaway-reaction alarm for every precipitation reaction, the measurements of temperature and leakage taken by an HP08 mediator take precedence."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -802,6 +1154,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it leaves a warning line of white metal salt in a drainage groove. If HP08 removes batteries without following the agreed discharge procedure, at stage 2 metal crystals block sensors and drains. If the controller’s matrix is broken, at stage 3 it seals the sorting-yard entrance with a thick wall of precipitate."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -813,6 +1174,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Slow precipitation with a cooling mist, then place fully discharged batteries as bait in a safe area. Use vibration noise to make its pincer legs withdraw and seal drainage grooves section by section; pouring in large amounts of water could spread metal salts into the civilian drainage network."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -824,6 +1194,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can assign it cooling water and safe precipitation plates in exchange for the right to process contaminated batteries and passage time. Indiscriminately destroying the colony clears the sorting yard quickly, but also eliminates its ability to immobilize leaking metal salts and slow the spread of contamination."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -835,6 +1214,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it acts as a guide, marking the locations of leaking batteries with lines of precipitate. In G22-SC2, HP08’s recovery quantity is balanced against the colony’s share of discharged batteries. In G22-SC3, the entrance wall forming under XT02 pressure must be cooled and separated to keep a window for negotiation open."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -851,6 +1239,7 @@
       "kind": "paragraph",
       "anchor": "g22e01-양극염-석출모-p4",
       "text": {
+        "en": "<a id=\"g22e02\"></a>",
         "ko": "<a id=\"g22e02\"></a>"
       }
     },
@@ -859,6 +1248,7 @@
       "anchor": "g22e02-전해액-여과각",
       "depth": 3,
       "text": {
+        "en": "G22E02 · Electrolyte-Filtering Antler",
         "ko": "G22E02 · 전해액 여과각"
       }
     },
@@ -867,12 +1257,15 @@
       "anchor": "g22e02-전해액-여과각-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -882,42 +1275,52 @@
       "anchor": "g22e02-전해액-여과각-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Electrolyte Filter Antler was a mobile biomechanical variant differentiated from the G22 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "전해액 여과각은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -928,6 +1331,15 @@
       "anchor": "g22e02-전해액-여과각-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A mobile refining organism that filters metal particles from spent-battery electrolyte through branching filter tubes shaped like deer antlers. A chemical film on its antlers senses odors and heat, while vibration plates in its hooves determine only the approximate direction of an approach."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -939,6 +1351,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " Accumulated electrolyte and discarded filter media in central Seoul Station’s drainage-treatment area self-organized, and it took on a refining role in the spent-battery metal colony. It is a fictional post-collapse Seoul ecology whose form was shaped by seasonal water flows in the Gangnam Line corridor."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -950,6 +1371,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It gathers in groups along the edges of the neutralization tank and low drainage embankments in central Seoul Station. During the dry season, it moves to sumps in Gangnam Line underground parking garages where liquid remains. As heat pressure from the XT02 outskirts increases, it retreats along cold conduits."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -961,6 +1391,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs contaminated electrolyte, organic matter to make filter membranes, and cooling water for its joints. It competes with HP08, which recovers treated water from the same neutralization tank, but dividing the inflow times can secure both treated water and food for the colony. When resources are scarce, the number of active individuals naturally falls."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -972,6 +1411,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence stage, it sprouts only short antlers. Its filtering branches multiply during expansion, after which it passes through the stagnation, negotiation-possible, and disintegration stages. Excess neutralizing agent causes “lime lock,” hardening the chemical film. Alternating gentle vibrations with a flow of cold contaminated water restores it without damaging its antlers."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -983,6 +1431,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One controller determines the direction of water flow, and different groups of filtering antlers are assigned different sumps. Even if F06 water-quality logs indicate that the water is safe, inflow is stopped according to the human on-site assessment if HP08 personnel detect an irritating odor."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -994,6 +1451,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it leaves foam with a metallic smell around a sump. If a neutralization-tank sluice closes without warning, at stage 2 it wraps drainage sensors in a metallic film. If its antlers are forcibly cut off, at stage 3 it interweaves its filter tubes to seal the treatment-plant passage."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1005,6 +1471,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Redirect a cold water flow into an empty neutralization tank to move the group, and use steady floor noise to constrain its walking direction. Food diversion must be combined with sealing individual sluices; adding strong acid or strong alkali causes damage that is difficult to repair to both the civilian water system and the filtering antlers."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1016,6 +1491,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can grant it nighttime use of a sump in exchange for daytime passage for treated water and the right to recover metal particles. Eliminating the colony simplifies sluice operation, but also removes the buffer that captured harmful particles from the electrolyte first."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1027,6 +1511,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it follows contaminated water flows to help locate a missing recovery tank. In G22-SC2, sump usage times are negotiated with HP08. In G22-SC3, groups crowded into the Gangnam Line by XT02 heat pressure are guided to an empty neutralization tank to prevent a drainage blockade."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1043,6 +1536,7 @@
       "kind": "paragraph",
       "anchor": "g22e02-전해액-여과각-p4",
       "text": {
+        "en": "<a id=\"g22e03\"></a>",
         "ko": "<a id=\"g22e03\"></a>"
       }
     },
@@ -1051,6 +1545,7 @@
       "anchor": "g22e03-단자수지-압착충",
       "depth": 3,
       "text": {
+        "en": "G22E03 · Terminal-Resin Crimping Bug",
         "ko": "G22E03 · 단자수지 압착충"
       }
     },
@@ -1059,12 +1554,15 @@
       "anchor": "g22e03-단자수지-압착충-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"]}"
         }
       ]
@@ -1074,42 +1572,52 @@
       "anchor": "g22e03-단자수지-압착충-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Terminal-Resin Press Bug was a mobile biomechanical variant differentiated from the G22 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "단자수지 압착충은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1120,6 +1628,15 @@
       "anchor": "g22e03-단자수지-압착충-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A flat biomechanical organism that presses spent-battery terminals and scrap-metal pieces together with resinous jaws to make conductive walkways for the colony. It selects materials with heat-sensing plates on its jaws and electromagnetic-noise-sensitive whiskers on its back, but confuses stationary insulating objects with both food and obstacles."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1131,6 +1648,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It appeared after the collapse when terminal fragments and an adhesive organic film combined in the recovery workshop at central Seoul Station. This fictional Seoul organism uses the remains of crimping equipment in the Gangnam Line transport corridor and has established itself as a builder in the spent-battery metal colony."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1142,6 +1668,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It prefers narrow gaps beneath conveyors and around compressors in central Seoul Station. In cold seasons it moves to areas of residual heat near the Gangnam Line freight elevator. When vibration pressure from the XT02 outskirts increases, it relocates its floor panels to an inner base."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1153,6 +1688,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs terminal metal, organic resin, and reclaimed water to cool its jaws. Its resource needs overlap with HP08’s scrap-metal sorting, but it will not crimp intact recoverable items if bent terminals and out-of-spec fragments are supplied through a separate feed opening."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1164,6 +1708,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Its emergence, expansion, stagnation, negotiation-possible, and disintegration stages progress according to the area of its walkways and the amount of material available. If the jaw-cooling tube clogs, “endless biting” makes it repeatedly crimp every object. Maintenance requires opening its jaws with low-frequency noise, then backflushing the tube with cooling water."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1175,6 +1728,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One controller leaves electrical marks on the floor to designate crimping locations, and each group completes only one walkway panel. Even if F06 identifies a mark as a current leak, a human assessment takes precedence if an HP08 mediator measures the voltage and confirms it is within a safe range."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1186,6 +1748,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it places a row of flattened terminals in front of a conveyor. If the promised supply of fragments stops, at stage 2 it covers workshop rails with crimped panels. If the controller’s marks are ground away, at stage 3 it seals doors and elevator gaps with resin panels."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1197,6 +1768,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Lead it into an empty compression room with a feeding trail of metal fragments, and stop its jaws with cooling water and steady mechanical noise. Seal and cut resin panels section by section, starting at their edges; blasting the center could drive terminal fragments into civilian equipment."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1208,6 +1788,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can provide defective terminals in exchange for safe temporary walkways and time to move freight. Indiscriminate removal speeds up scrap-metal sorting, but also destroys structures that reinforced collapsed floors and allowed residents to pass."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1219,6 +1808,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it appears as an option for making a temporary passage across a broken workshop floor. In G22-SC2, HP08’s promise to supply defective terminals is the central negotiating condition. In G22-SC3, the controller’s marks must be moved to an empty compression room before it responds to XT02 vibrations by sealing off the elevator."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1235,6 +1833,7 @@
       "kind": "paragraph",
       "anchor": "g22e03-단자수지-압착충-p4",
       "text": {
+        "en": "<a id=\"g22e04\"></a>",
         "ko": "<a id=\"g22e04\"></a>"
       }
     },
@@ -1243,6 +1842,7 @@
       "anchor": "g22e04-금속꽃-축전목",
       "depth": 3,
       "text": {
+        "en": "G22E04 · Metalflower Capacitor Tree",
         "ko": "G22E04 · 금속꽃 축전목"
       }
     },
@@ -1251,12 +1851,15 @@
       "anchor": "g22e04-금속꽃-축전목-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -1266,42 +1869,52 @@
       "anchor": "g22e04-금속꽃-축전목-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Metal-Flower Capacitor Tree was a mobile biomechanical variant differentiated from the G22 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "금속꽃 축전목은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1312,6 +1925,15 @@
       "anchor": "g22e04-금속꽃-축전목-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A stationary biomechanical organism that divides residual charge from spent batteries among layered metal flowers inside its stem, storing it and releasing it slowly to the colony. It reads nearby conditions through heat-sensitive points in its roots and electromagnetic-noise sensing in its petals, but cannot detect distant power flows or shielded targets."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1323,6 +1945,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It first formed in the spent-battery stockyard at central Seoul Station when long-abandoned electrode foil and uniform organic matter produced a layered stem. It belongs to a fictional Seoul lineage of the spent-battery metal colony that gained seasonal mobility as seed-like metal fragments were carried into the Gangnam Line corridor."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1334,6 +1965,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It roots itself in shaded concrete cracks in the stockyard at central Seoul Station. During summer overheating, it carries metal fragments to the outer wall of a Gangnam Line refrigerated warehouse to establish a new colony. When pressure from the XT02 outskirts rises, it folds its petals and contracts its root network inward."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1345,6 +1985,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs spent batteries with a low residual charge, scrap metal to reinforce its stem, and cooling water to lower the temperature of its roots. It competes with HP08’s discharge and recovery process, but can accept hazardous batteries for a set time and return them at a fully reduced voltage. It stops absorbing more once it reaches its storage limit."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1356,6 +2005,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence stage, it begins as a single metal flower. It expands its root network during the expansion stage, then passes through stagnation, negotiation-possible, and disintegration. If its layered petals stick together, “closed-flower heat” traps heat inside. Placing a cooling plate against them and opening the petals in sequence is safer than forced discharge."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1367,6 +2025,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The oldest capacitor tree becomes the controller, and groups of smaller flowers pass charge along in sequence. If F06 logs underestimate or overestimate the residual charge, contact measurements by an HP08 technician and human mediation take precedence."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1378,6 +2045,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it closes its metal flowers and leaves a faint heat pattern on the floor. If high-charge batteries are introduced without a cooling-water supply, at stage 2 it disrupts stockyard lighting and instruments. If the controller’s roots are cut, at stage 3 its root network covers access routes and seals off the base."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1389,6 +2065,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Arrange low-charge batteries around the perimeter to redirect absorption, and use cooling plates and shielding to slow the petals’ discharge. Steady noise can make groups of small flowers close, after which root sections can be sealed in sequence. Short-circuiting everything at once risks fire and damage to the civilian power grid."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1400,6 +2085,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can entrust it with temporary storage and gradual discharge of hazardous batteries in exchange for cooling water, scrap-metal supports, and nighttime use of the stockyard. Destroying the colony makes the site immediately available, but also eliminates a buffer for safely reducing unstable batteries to a low voltage and the limited emergency power supply at central Seoul Station."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1411,6 +2105,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, a decision must be made between using it to supply low-level power for rescue equipment and using it to stabilize hazardous batteries. In G22-SC2, HP08 handles negotiations over the allocation of cooling water and stockyard time. In G22-SC3, the overheated controller’s petals must be opened in sequence to prevent XT02 pressure from sealing off the Gangnam Line base."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1427,6 +2130,7 @@
       "kind": "paragraph",
       "anchor": "g22e04-금속꽃-축전목-p4",
       "text": {
+        "en": "<a id=\"g22e05\"></a>",
         "ko": "<a id=\"g22e05\"></a>"
       }
     },
@@ -1435,6 +2139,7 @@
       "anchor": "g22e05-전극실잣이",
       "depth": 3,
       "text": {
+        "en": "G22E05 · Electrode-Thread Weaver",
         "ko": "G22E05 · 전극실잣이"
       }
     },
@@ -1443,12 +2148,15 @@
       "anchor": "g22e05-전극실잣이-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -1458,42 +2166,52 @@
       "anchor": "g22e05-전극실잣이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Electrode-Thread Spinner was a mobile biomechanical variant differentiated from the G22 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "전극실잣이은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1504,6 +2222,15 @@
       "anchor": "g22e05-전극실잣이-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Electrode-Thread Weaver is a repair organism that draws fine copper and zinc threads from its coin-sized insulating body to reconnect broken conductive paths in the colony. Its six legs spread and grip cable sheathing without cutting it, while the capacitor sac on its back converts faint currents it has collected into brief flashing signals. It cannot see through walls and locates obstacles only by floor vibrations and electromagnetic noise."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1515,6 +2242,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed when electrolyte and metal deposits leaking from the spent-battery collection site at Seoul Station Central adhered to communication-cable sheathing after the collapse. Repeated power outages in the underground corridor leading to the Gangnam Line acted as a selective pressure, causing a simple layer of deposits to develop into a mobile repair swarm."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1526,6 +2262,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The cable racks in the Seoul Station Central substation passage are its core habitat; during the monsoon season, it moves to the humid Gangnam Line utility tunnel. When strong transmission interference comes from the XT02 perimeter, it retreats into deeper conduits or weaves a new bypass line."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1537,6 +2282,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " Its main resources are residual charge from discarded batteries and thin pieces of copper. The amount of usable charge sets the upper limit on swarm growth. If it takes even the emergency storage batteries that HP08 is due to recover, it competes directly with the restoration of lighting for civilians."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1548,6 +2302,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, it leaves behind only one or two electrode threads; in the expansion phase, it spreads its network along the cable racks. In the dormant phase, it discharges its capacitor sac and stops moving; in the negotiable phase, it permits approach with steady flashes. If its threads overheat and weld together, it enters the breakdown phase; unless cooled, its body also hardens and shatters."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1559,6 +2322,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A controller bearing three insulating rings sets the intervals between flashes, and each swarm repairs one section at a time in step with that signal. Even if the F06 sensor classifies the electrode threads as illegal wiring, a human mediator rechecks passage safety when that finding conflicts with field records."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1570,6 +2342,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it leaves warning flashes near work lights. At stage 2, it disrupts infrastructure by altering the grounding of charging equipment; at stage 3, it seals the entrance to the Seoul Station Central substation with an electrode network. Because stage 3 comes just before the negotiation signal ceases, responders must not rush to cut the network by force."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1581,6 +2362,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Low-frequency noise can disrupt the synchronization of its flashes; responders can then lower the temperature of its capacitor sac with a nonconductive cooling cloth and use an empty battery as bait to divert it. Sealing only part of a cable duct to restrict its route is effective; applying high voltage throughout the entire section also damages civilian facilities."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1592,6 +2382,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can offer a bundle of spent storage batteries in exchange for two hours of safe passage at night and an agreement not to touch a specified cable. Indiscriminately removing the colony increases short-term recovery yields, but also cuts off the emergency lighting network it has been maintaining temporarily."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1603,6 +2402,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it is the key subject of the decision whether to preserve or dismantle a temporary conductive network in the blackout zone. In G22-SC2, it leaves evidence for checking F06's false detection against HP08's field records; in G22-SC3, it offers a bypass route opened to avoid XT02 interference as a reward for negotiation."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1619,6 +2427,7 @@
       "kind": "paragraph",
       "anchor": "g22e05-전극실잣이-p4",
       "text": {
+        "en": "<a id=\"g22e06\"></a>",
         "ko": "<a id=\"g22e06\"></a>"
       }
     },
@@ -1627,6 +2436,7 @@
       "anchor": "g22e06-냉각종수리",
       "depth": 3,
       "text": {
+        "en": "G22E06 · Cooling Bell Medusa",
         "ko": "G22E06 · 냉각종수리"
       }
     },
@@ -1635,12 +2445,15 @@
       "anchor": "g22e06-냉각종수리-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -1650,42 +2463,52 @@
       "anchor": "g22e06-냉각종수리-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cooling-Bell Water Purifier was a mobile biomechanical variant differentiated from the G22 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉각종수리은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1696,6 +2519,15 @@
       "anchor": "g22e06-냉각종수리-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Cooling Bell Medusa has a translucent body shaped like an inverted bell. It draws in contaminated coolant and filters out sediment through an internal metal membrane. Four articulated plates around its rim push against the floor to move it, and an internal float senses temperature differences and odor concentrations. It cannot perceive the inside of a sealed tank, so it relies on pipe markings."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1707,6 +2539,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It began with the long-term mixing of water from the damaged cooling system of Seoul Station Central's data facilities and spent-battery powder. When maintenance ceased after the collapse, filtration membranes and pump parts bonded with an organic membrane and became colonial cleaning organisms."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1718,6 +2559,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It stays mainly in the sump pits and shallow drainage tanks of Seoul Station Central's underground equipment rooms. In the dry season, it moves into Gangnam Line air-conditioning conduits in search of remaining water; when pressure from the XT02 perimeter rises, it anchors itself to the bottom of a reservoir where vibrations are weaker."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1729,6 +2579,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " Coolant and pieces of aluminum for filters are essential. It prefers cold water containing fine metal particles to clean water, but supplying too much depletes the reserves of public cooling facilities. The total amount of coolant available limits the swarm's size."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1740,6 +2599,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, thin filtration membranes form around drains; in the expansion phase, several Bell Medusas divide the waterways among themselves. In the dormant phase, they sink their internal floats and stop moving. In the negotiable phase, they tap their rim plates rhythmically; when limescale clogs their filtration membranes, they enter the breakdown phase and lose pressure balance."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1751,6 +2619,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A controller occupying the deepest sump assigns water-intake times to each swarm through ripples on the water's surface. Even if F06 classifies a leak as a colony attack, an HP08 technician and a human mediator first check whether a valve has broken."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1762,6 +2639,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, they tap pipes to warn of rising water temperature. At stage 2, they divert pump flow, destabilizing cooling infrastructure; at stage 3, they seal the equipment room with water barriers and sediment plates. Rapid drainage triggers entry into stage 3."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1773,6 +2659,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Spraying cold mist slows their movement, and a small amount of contaminated coolant placed in an empty reservoir can lure the swarm there. Selectively sealing only intake ports can secure a passage for people; a loud explosion is mistaken for a change in water pressure and provokes a mass rush."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1784,6 +2679,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can offer one closed cooling circuit on the condition that the Bell Medusas stay away from the hospital's auxiliary cooling line. Removing them makes recovery work easier, but risks sending the heavy metals they had been filtering toward the Gangnam Line's domestic water supply."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1795,6 +2699,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, they serve as temporary filters that lower the water in a flooded equipment room to a safe level. In G22-SC2, they provide actual marks left on the water's surface that reveal errors in F06's flow logs; in G22-SC3, an agreement on coolant allocation must be reached before the XT02 pressure wave arrives."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1811,6 +2724,7 @@
       "kind": "paragraph",
       "anchor": "g22e06-냉각종수리-p4",
       "text": {
+        "en": "<a id=\"g22e07\"></a>",
         "ko": "<a id=\"g22e07\"></a>"
       }
     },
@@ -1819,6 +2733,7 @@
       "anchor": "g22e07-고철턱선별귀",
       "depth": 3,
       "text": {
+        "en": "G22E07 · Scrap-Jawed Sorting Wraith",
         "ko": "G22E07 · 고철턱선별귀"
       }
     },
@@ -1827,12 +2742,15 @@
       "anchor": "g22e07-고철턱선별귀-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"]}"
         }
       ]
@@ -1842,42 +2760,52 @@
       "anchor": "g22e07-고철턱선별귀-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Scrap-Jaw Sorting Hare was a mobile biomechanical variant differentiated from the G22 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "고철턱선별귀은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1888,6 +2816,15 @@
       "anchor": "g22e07-고철턱선별귀-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Scrap-Jawed Sorting Wraith is a sorting organism that grips scrap metal with two magnetic frames resembling the jaws of a grapple truck and makes piles by material. Ceramic teeth inside its jaws detect differences in vibration between ferrous and nonferrous metals, while a weighted tail identifies the direction of electromagnetic noise. Unable to sense directly behind an object, it turns piles over one by one to inspect them."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1899,6 +2836,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose after the collapse when a metallic fungal membrane trapped spent-battery casings and fragments of automated sorters piled up in the Seoul Station Central vehicle maintenance area. Through repeated recovery operations, only mobile sorting organs survived, taking their present form."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1910,6 +2856,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It circulates between the magnetic rail beneath the Seoul Station Central scrapyard ramp and the scrap stockpile. In winter, it moves to the Gangnam Line railway side ditch, where the sounds of contracting metal are distinct; when heavy-machinery vibrations grow stronger from the direction of XT02, it builds a barricade within the scrap piles."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1921,6 +2876,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs rusty sheet metal, battery casings, and a small amount of lubricating organic matter. If scrap types become unbalanced, the magnetism in its jaws shifts to one side, and the swarm cannot grow beyond the amount of recoverable metal left in the area. This brings it into frequent conflict with HP08's work securing structural materials."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1932,6 +2896,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, only a pair of jaws moves in a scrap pile; in the expansion phase, it creates separate routes for different materials. In the dormant phase, it attaches its jaws to the rail to reduce their magnetism. In the negotiable phase, it deposits nonferrous metal on the outside; when fine iron particles clump in its joints, it enters the breakdown phase and cannot move with its jaws stuck shut."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1943,6 +2916,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The controller with the largest weighing weight sets priorities for scrap, and individual swarms handle the iron, copper, and aluminum piles. If F06's metal-quantity estimate does not match the piles on site, a human mediator weighs samples directly to establish the allocation standard."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1954,6 +2936,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " Stage 1 is a warning in which it lines up empty casings in front of recovery vehicles. At stage 2, it removes steel doors and rails and drags them to the sorting yard, disrupting infrastructure. At stage 3, it blocks the Seoul Station Central ramp with a scrap barricade; a red-hot controller weight is a sign that negotiations are about to end."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1965,6 +2956,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Nonmagnetic ceramic shields can prevent its jaws from getting a grip, while rhythmic noises from different directions disperse the sorting procession. Placing scrap bait on a bypass route or sealing part of the magnetic rail also works. Swinging metal weapons indiscriminately only allows them to be seized and used as barricade material."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1976,6 +2976,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can provide battery casings that are not needed for construction and receive sorted steel beams for reinforcement in return. Destroying the colony briefly speeds up scrap collection, but also eliminates its sorting of hazardous swollen batteries and sharp debris, increasing injuries among civilian salvagers."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1987,6 +2996,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it is a conditional collaborator that sorts reinforcement materials for a collapsed building. In G22-SC2, it reveals that a missing steel door was taken as part of its sorting behavior, not looting; in G22-SC3, the central task is negotiating an allocation that allows passage through the barricade it built in response to XT02 heavy-machinery signals."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2003,6 +3021,7 @@
       "kind": "paragraph",
       "anchor": "g22e07-고철턱선별귀-p4",
       "text": {
+        "en": "<a id=\"g22e08\"></a>",
         "ko": "<a id=\"g22e08\"></a>"
       }
     },
@@ -2011,6 +3030,7 @@
       "anchor": "g22e08-전해숨항아리",
       "depth": 3,
       "text": {
+        "en": "G22E08 · Electrolyte-Breath Jar",
         "ko": "G22E08 · 전해숨항아리"
       }
     },
@@ -2019,12 +3039,15 @@
       "anchor": "g22e08-전해숨항아리-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -2034,42 +3057,52 @@
       "anchor": "g22e08-전해숨항아리-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Electrolytic-Breath Jar was a mobile biomechanical variant differentiated from the G22 common ecology. The elite breakthrough role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "전해숨항아리은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 정예 돌파 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2080,6 +3113,15 @@
       "anchor": "g22e08-전해숨항아리-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Electrolyte-Breath Jar is a jar-shaped organism formed from a broken battery container and a fermenting membrane. It breaks down food scraps to produce a weak electrolyte solution. Overlapping plates at its neck distinguish odors, and an expandable sac at its base senses temperature changes and enables short hops. It has no visual organs and cannot tell what is happening beyond a sealed door."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2091,6 +3133,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It originated when discarded food and leaked electrolyte reacted inside a drainage container at Seoul Station Central's temporary kitchen. After the collapse made the supply of organic matter irregular, the storage vessels themselves began moving in search of food, becoming a biomechanical colony."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2102,6 +3153,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It nests in abandoned food storerooms and beneath vents in Seoul Station Central's underground market. In summer, it follows the smell of organic matter to the Gangnam Line temporary market; if a burning smell comes in from XT02, it interprets it as a sign of toxicity and hides where ventilation is weak."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2113,6 +3173,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs spoiled food, paper packaging, and small amounts of zinc sheet. Even when food is plentiful, exceeding the capacity of its fermentation chamber causes acidic gas to accumulate, placing a natural upper limit on the number in the swarm. It is a type of organism that involves both HP08's sanitation collection and its efforts to secure resources."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2124,6 +3193,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, only electrolyte foam and small overlapping plates are visible; in the expansion phase, the jars line up along scent trails. In the dormant phase, they plug their openings with paper pulp. In the negotiable phase, they release low-acidity liquid one drop at a time; if an outlet plate becomes blocked and gas builds up inside, they enter the breakdown phase, developing cracks and leaking acid."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2135,6 +3213,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The oldest fermentation jar acts as controller, making scent markers, and the swarm divides collection, fermentation, and guard duties according to marker concentration. If F06 overestimates the explosion risk based on gas concentration alone, a human mediator checks ventilation conditions and the actual acidity."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2146,6 +3233,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it releases strongly sour-smelling foam into passageways. At stage 2, it covers ventilation fans with organic membrane, disrupting nearby facilities; at stage 3, its swollen bodies block market entrances. Suddenly incinerating a pile of food waste sends it immediately toward a higher stage."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2157,6 +3253,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Cold air slows fermentation, and strongly scented, safe food placed in an empty storeroom can lure the jars there. Sealing membranes installed at individual vents can isolate acidic gas; flames or high-heat attacks dangerously raise internal pressure."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2168,6 +3273,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can supply organic matter that must be discarded for hygiene reasons at set times, receiving access to market passageways and some low-concentration electrolyte solution in return. Removing all the jars reduces the stench, but stops food-waste decomposition, potentially allowing pests and contaminated water to spread toward the Gangnam Line."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2179,6 +3293,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it demands passage times in return for processing contaminants in a food warehouse. In G22-SC2, it is the subject of an investigation into whether an F06 gas alarm indicates an impending explosion or a fermentation cycle; in G22-SC3, it must be persuaded to reopen a market exit closed because of smoke coming in from XT02."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2195,6 +3318,7 @@
       "kind": "paragraph",
       "anchor": "g22e08-전해숨항아리-p4",
       "text": {
+        "en": "<a id=\"g22e09\"></a>",
         "ko": "<a id=\"g22e09\"></a>"
       }
     },
@@ -2203,6 +3327,7 @@
       "anchor": "g22e09-진동축전보행자",
       "depth": 3,
       "text": {
+        "en": "G22E09 · Vibration-Charging Walker",
         "ko": "G22E09 · 진동축전보행자"
       }
     },
@@ -2211,12 +3336,15 @@
       "anchor": "g22e09-진동축전보행자-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S06\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -2226,42 +3354,52 @@
       "anchor": "g22e09-진동축전보행자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Vibration-Capacitance Walker was a mobile biomechanical variant differentiated from the G22 common ecology. The elite blocking role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "진동축전보행자은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 정예 차단 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2272,6 +3410,15 @@
       "anchor": "g22e09-진동축전보행자-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Vibration-Charging Walker is a carrier organism with four legs like bridge bearings and a cylindrical energy-storage spine. Its footpads absorb ground vibrations and store them as a faint electric charge, while a heat band on the side of its spine signals overload. Because it senses only vibration and heat, it easily misses people who are standing still and insulated obstacles."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2283,6 +3430,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose when cushioning material, spent-battery modules, and pedestrian power-generation panels abandoned beneath the Seoul Station Central overpass became bound together by a layer of metal deposits. When vehicle traffic stopped after the collapse, a form capable of moving on its own to seek out the remaining vibrations became established."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2294,6 +3450,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its main activity areas are the expansion joints and pier inspection paths of the Seoul Station Central overpass. When seasonal construction begins on the Gangnam Line, it follows rhythmic impacts to the northern corridor; when pressure from the XT02 perimeter intensifies, the walkers crowd into narrow inspection rooms inside the piers."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2305,6 +3470,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs repeated vibrations, discarded energy-storage plates, and water to cool its joints. It stops moving in prolonged quiet, while traffic volume and the number of energy-storage plates limit swarm size. When HP08 tries to recover emergency power components, competition arises over the spine modules."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2316,6 +3490,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, footprint-like metal marks appear at expansion joints. In the expansion phase, the walkers form a procession at regular intervals; in the dormant phase, they spread their four legs to absorb pier vibrations. In the negotiable phase, they lower the heat band to blue; when the energy-storage spine begins to leak, they enter the breakdown phase and repeatedly leap erratically."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2327,6 +3510,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The controller with the longest energy-storage spine uses foot-stamping signals to specify speed and stopping points. If F06's vibration logs overcount the colony, a human mediator separates residual traffic vibrations from actual walking signals before making a judgment."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2338,6 +3530,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns approaching people by stamping three times on the access-route floor. At stage 2, it absorbs power from bridge sensors and pedestrian power-generation panels, disrupting infrastructure. At stage 3, it lies across the inspection path to block it; sustained impacts from heavy machinery trigger this stage."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2349,6 +3550,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Providing steady, low-intensity vibrations on a bypass route is safer than scattering the procession with irregular noise. Spraying coolant on the joints and blocking the inspection-path entrance with an elastic sealant can slow its movement. Explosive shocks overcharge the energy-storage spine."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2360,6 +3570,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can assign nighttime bridge vibrations to a particular section in exchange for guaranteed daytime passage for rescue teams. Forcibly recovering the spine modules yields power components, but allows the residual vibrations the walkers had been absorbing to pass directly into damaged piers, increasing the risk of collapse."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2371,6 +3590,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it appears as a temporary shock-absorbing group that reduces vibrations in a damaged pier. In G22-SC2, it prompts an investigation showing that the large procession reported by F06 was mixed with residual traffic vibrations; in G22-SC3, vibration times are traded to get the inspection-path blockade lifted before XT02's shock wave arrives."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2387,6 +3615,7 @@
       "kind": "paragraph",
       "anchor": "g22e09-진동축전보행자-p4",
       "text": {
+        "en": "<a id=\"g22e10\"></a>",
         "ko": "<a id=\"g22e10\"></a>"
       }
     },
@@ -2395,6 +3624,7 @@
       "anchor": "g22e10-봉합판누비개",
       "depth": 3,
       "text": {
+        "en": "G22E10 · Stitch-Plate Patcher",
         "ko": "G22E10 · 봉합판누비개"
       }
     },
@@ -2403,12 +3633,15 @@
       "anchor": "g22e10-봉합판누비개-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -2418,42 +3651,52 @@
       "anchor": "g22e10-봉합판누비개-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Sealing-Plate Quilter was a mobile biomechanical variant differentiated from the G22 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "봉합판누비개은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2464,6 +3707,15 @@
       "anchor": "g22e10-봉합판누비개-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Stitch-Plate Patcher is a flat organism made of thin battery separator membranes joined with steel rivets. It covers cracked walls and gaps in pipes. Its front needle-jaw senses surface vibrations, while a resin sac at the rear adjusts adhesive viscosity in response to heat. Unable to sense the other side of a wall, it sometimes seals doors that need to remain open."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2475,6 +3727,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It was born when sealing tape, battery separator membranes, and automatic riveting tools scattered in the Seoul Station Central disaster-prevention warehouse bonded with leaked metal. Repeated leaks and dust storms after the collapse reinforced its gap-sealing behavior."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2486,6 +3747,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It lives attached to cracked walls and the edges of fire doors in Seoul Station Central's ventilation room. During the yellow-dust season, it moves to gaps in the Gangnam Line underground concourse; when a pressure change comes from XT02, its tendency to seal every opening in an exterior wall grows stronger."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2497,6 +3767,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs adhesive organic matter, thin scrap-metal sheets, and a small amount of coolant. The area its resin sac can handle is limited, so the swarm cannot grow beyond the available wall area and materials. It competes directly for the sealing tape HP08 uses."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2508,6 +3787,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, one or two rivets appear around a gap; in the expansion phase, strips of separator membrane stretch across walls. In the dormant phase, it hardens its resin and stops moving. In the negotiable phase, it rolls up one side of an entrance; if dust hardens its resin sac, it enters the breakdown phase, loses adhesion, and its plates peel away with sharp edges."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2519,6 +3807,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The controller in the central ventilation room sets sealing priorities by the number of rivet strikes, while individual swarms handle leaks, dust, or pressure cracks. If F06's airtightness figures conflict with rescue teams' need for an actual route, a human mediator specifies which gap to open."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2530,6 +3827,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it attaches a single strip of separator membrane to a doorframe as a warning. At stage 2, it seals vents and sensor boxes, disrupting infrastructure; at stage 3, it blocks an entire fire door with overlapping plates. Pressure waves from XT02 and excessive recovery of tape are major triggers."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2541,6 +3847,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Responders can harden the resin with a cold spray, then cut only the sections they need; installing a model of an empty crack can lure the swarm elsewhere. Sealing both sides of a passage with nonadhesive membrane also reduces its spread. Flames melt the resin, producing toxic fumes and provoking resealing."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2552,6 +3867,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can offer some sealing tape and an abandoned wall surface in exchange for an agreement to keep one fire door open for a set period. Tearing out the entire colony makes movement easier, but lets the toxic dust and leaks it had been holding back enter civilian shelters."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2563,6 +3887,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it presents a choice between maintaining temporary airtightness in a cracked area and securing a rescue passage. In G22-SC2, it provides a clue for comparing F06's airtightness alarm with the actual sealing locations; in G22-SC3, it prompts negotiations over which vent to leave open in preparation for an XT02 pressure wave."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2579,6 +3912,7 @@
       "kind": "paragraph",
       "anchor": "g22e10-봉합판누비개-p4",
       "text": {
+        "en": "<a id=\"g22e11\"></a>",
         "ko": "<a id=\"g22e11\"></a>"
       }
     },
@@ -2587,6 +3921,7 @@
       "anchor": "g22e11-잡음등대마디",
       "depth": 3,
       "text": {
+        "en": "G22E11 · Noise-Beacon Segment",
         "ko": "G22E11 · 잡음등대마디"
       }
     },
@@ -2595,12 +3930,15 @@
       "anchor": "g22e11-잡음등대마디-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -2610,42 +3948,52 @@
       "anchor": "g22e11-잡음등대마디-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Noise-Lighthouse Segments was a mobile biomechanical variant differentiated from the G22 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "잡음등대마디은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2656,6 +4004,15 @@
       "anchor": "g22e11-잡음등대마디-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Static Beacon Segment is a signal-relaying organism with spent battery terminals and antenna fragments joined like a spine. Each segment receives electronic noise and converts it into a directional flash, while suction pads on its underside distinguish approaching entities by their minute vibrations. It cannot know anything about areas from which it receives no signal, and most of its records are lost during the next discharge."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2667,6 +4024,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed when backup power terminals and broken antennas piled up in Seoul Station Central's communications room were absorbed into a column of metal deposits. After the collapse, its segments began moving in pursuit of irregular distress signals and became guides for the colony."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2678,6 +4044,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It occupies junctions in Seoul Station Central's communications conduits and the upper part of the elevator machine room. In winter, it moves to the entrance of the Gangnam Line tunnel, where signal reflections are stable. When strong noise arrives from the outskirts of XT02, it folds its antennas inward and descends to a lower level."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2689,6 +4064,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs a weak power supply, scrap metal for antennas, and an insulating organic film. The limited range of noise frequencies it can receive and the limited number of terminals also keep the colony below a certain size. When HP08 salvages parts for rescue communications, competition arises between maintaining the relay function and securing the parts."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2700,6 +4084,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, a single terminal glows intermittently; in the expansion phase, segments branch off at each intersection. In the dormant phase, it extinguishes every flash and listens only to noise. In the negotiable phase, it responds with three short flashes. When antenna oxidation becomes severe, it scatters false directional signals in the disintegration phase before breaking into segments."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2711,6 +4104,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The controller at the highest position selects a reference noise signal, and subordinate groups relay its waveform. If the synthetic organism F06 mistakes its own signal for a colony command, or conversely classifies a colony signal as a distress call, a human mediator checks it against analog markers."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2722,6 +4124,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it inserts a brief burst of static into communicators to warn off approaching people. At stage 2, it overrides rescue frequencies and disrupts infrastructure communications; at stage 3, it links segments across the elevator and communications-room entrances to seal them off. Repeated high-power transmissions nearby cause rapid escalation."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2733,6 +4144,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Rather than using broadband noise, it is effective to send a narrowband guiding signal down an empty passage to redirect its movement. Its antennas can be cooled to reduce the heat of oxidation, and part of the communications room can be sealed with electromagnetic shielding. Blocking every frequency also cuts off contact between rescue teams and civilians."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2744,6 +4164,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can offer an unused calling frequency and a small storage battery in exchange for leaving the rescue communications band clear at specified times. Dismantling the colony reduces noise, but it also eliminates the informal relay network that carried weak distress signals between Seoul Station Central and the Gangnam Line."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2755,6 +4184,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it serves as an imperfect relay for interrupted rescue signals. In G22-SC2, it is key evidence in an investigation of discrepancies between F06's logs and analog flashes; in G22-SC3, it trades a new frequency for avoiding XT02 noise as though it were a resource."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2771,6 +4209,7 @@
       "kind": "paragraph",
       "anchor": "g22e11-잡음등대마디-p4",
       "text": {
+        "en": "<a id=\"g22e12\"></a>",
         "ko": "<a id=\"g22e12\"></a>"
       }
     },
@@ -2779,6 +4218,7 @@
       "anchor": "g22e12-산화갈퀴정원사",
       "depth": 3,
       "text": {
+        "en": "G22E12 · Oxide-Rake Gardener",
         "ko": "G22E12 · 산화갈퀴정원사"
       }
     },
@@ -2787,12 +4227,15 @@
       "anchor": "g22e12-산화갈퀴정원사-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"]}"
         }
       ]
@@ -2802,42 +4245,52 @@
       "anchor": "g22e12-산화갈퀴정원사-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Oxide-Rake Gardener was a mobile biomechanical variant differentiated from the G22 common ecology. The growth variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "산화갈퀴정원사은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 성장 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2848,6 +4301,15 @@
       "anchor": "g22e12-산화갈퀴정원사-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Oxide-Rake Gardener uses rake-shaped forelegs to mix metal powder and organic debris in rows, cultivating a layer of oxidation. A humidity plate on its back reads both odors and heat, while a neutralizing sac beneath its belly moderates overly acidic soil. It cannot inspect the inside of solid walls or sealed containers."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2859,6 +4321,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It began when compost, spent battery powder, and automatic cultivator blades from the Seoul Station Central rooftop farm collected in a drainage layer after heavy rain. As soil grew scarce after the collapse, it established itself as a colony that cultivates metallic sediment layers."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2870,6 +4341,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The Seoul Station Central rooftop flower beds and drainage gravel layer are its primary habitat. In spring, it follows the smell of compost to the planters on the Gangnam Line elevated walkway; when dry dust from XT02 reaches it, it retreats to a humid underground greenhouse."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2881,6 +4361,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs organic matter, rusty metal powder, and coolant for neutralization. The area of cultivable soil and the inflow of organic matter limit the colony's growth. If HP08 takes compost for urban farming and salvaged metal, the colony's neutralization work also weakens."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2892,6 +4381,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, it leaves parallel rake marks; in the expansion phase, it divides the oxidation layer into small field-like plots. In the dormant phase, it buries its neutralizing sac in the soil and remains still. In the negotiable phase, it leaves safe plots of soil vacant; if its neutralizing sac dries out, its rakes corrode as it stirs up acidic dust in the disintegration phase."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2903,6 +4401,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The controller with the broadest humidity plate sets the cultivation plots and the order in which they lie fallow, and the colony divides into soil-turning, neutralizing, and perimeter-guarding groups. If F06's assessment of soil toxicity differs from how crops actually respond, a human mediator decides the permitted access area after testing samples."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2914,6 +4421,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it marks boundaries across passages with red lines of oxidation. At stage 2, it redirects drains with soil and metal powder, disrupting infrastructure; at stage 3, it blocks rooftop entrances with its rakes and planting boxes. Taking all the compost at once or drying the soil with intense heat raises the escalation stage."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2925,6 +4441,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Damp cooling cloths can settle the dust, and an alternate flower bed that smells of compost can be created to redirect its movement. Selectively sealing drains can prevent the oxidation layer from spreading. Burning a large area disperses heavy-metal dust into civilian residential areas."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2936,6 +4461,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can offer compost unsuitable for food crops and an area of discarded planters, negotiating in return for the colony to stabilize the acidity of food-growing plots. Eliminating the colony makes the rooftop immediately usable, but it halts the neutralization of acidic soil and reduces food production in the next growing season."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2947,6 +4481,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it forces a decision on whether to restore or seal off the contaminated rooftop farm. In G22-SC2, it provides a field test comparing F06's toxicity map with the plots actually neutralized; in G22-SC3, it negotiates which shelter receives safe soil before the XT02 dust storm."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2963,6 +4506,7 @@
       "kind": "paragraph",
       "anchor": "g22e12-산화갈퀴정원사-p4",
       "text": {
+        "en": "<a id=\"g22e13\"></a>",
         "ko": "<a id=\"g22e13\"></a>"
       }
     },
@@ -2971,6 +4515,7 @@
       "anchor": "g22e13-잔열딱지운반꾼",
       "depth": 3,
       "text": {
+        "en": "G22E13 · Residual-Heat Scute Carrier",
         "ko": "G22E13 · 잔열딱지운반꾼"
       }
     },
@@ -2979,12 +4524,15 @@
       "anchor": "g22e13-잔열딱지운반꾼-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -2994,42 +4542,52 @@
       "anchor": "g22e13-잔열딱지운반꾼-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Residual-Heat Scale Carrier was a mobile biomechanical variant differentiated from the G22 common ecology. The aged variant role applied only at the swarm-consist scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "잔열딱지운반꾼은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 노화 변이 역할은 무리 편성 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3040,6 +4598,15 @@
       "anchor": "g22e13-잔열딱지운반꾼-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Residual-Heat Scute Carrier holds small heat pouches beneath layered metal scutes and transports cold battery fragments attached to its underside. Vibrating probes on its forelegs measure loads on the floor, and an odor-sensitive membrane on its feelers detects coolant leaks. It cannot sense conditions on the ceiling or inside shielded rooms."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3051,6 +4618,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed in the Seoul Station Central logistics warehouse when fused battery transport racks and insulating packaging underwent repeated thermal cycles. After the collapse, carrying parts around weak sections of flooring became the colony's established means of survival."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3062,6 +4638,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It operates between the cold-storage racks and loading ramp of the Seoul Station Central warehouse. In summer, it moves to the relatively cool Gangnam Line freight tunnel; when hot winds intensify on the outskirts of XT02, it clusters around the remains of a freezer room."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3073,6 +4658,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs cold battery fragments, insulating organic matter, and a small amount of coolant. The temperatures its heat pouches can withstand and the limited number of storage racks impose an upper limit on colony size. It may clash with HP08 over insulation when HP08 salvages materials for refrigerated medicine."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3084,6 +4678,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, it leaves only round residual-heat marks on the floor; in the expansion phase, processions of carriers move between warehouses. In the dormant phase, it closes its scutes to retain heat. In the negotiable phase, it puts down its cargo and backs away; if a heat pouch tears, it overheats and loses its sense of direction in the disintegration phase."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3095,6 +4698,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A controller with a vertical groove in its carapace uses load signals to determine transport order and safe routes. If F06's thermal imaging counts residual-heat marks as additional organisms, a human mediator checks them against pressure traces on the floor."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3106,6 +4718,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it places warm scute fragments on the ramp as a warning. At stage 2, it takes over the cold-storage warehouse's power supply and insulated doors, disrupting infrastructure. At stage 3, it topples storage racks to block the loading route; abruptly cutting off the coolant supply quickly closes the window for negotiation."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3117,6 +4738,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " A thin cooling strip laid along its route can indicate a safe detour, and regular sounds transmitted through the floor can stop a procession. It is also possible to seal some insulated doors to limit its range. High-heat weapons can rupture its heat pouches and start fires at the same time."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3128,6 +4758,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can offer damaged insulation and scheduled coolant rations in exchange for daytime passage through the medicine warehouse and transport of battery fragments. Driving out the colony makes the warehouse easier to access, but medicines and power components that it had been carrying across gaps in refrigeration infrastructure are left stranded."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3139,6 +4778,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it is a transport convoy that will carry refrigerated medicines beyond a collapsed section under certain conditions. In G22-SC2, it provides pressure traces that correct duplicate targets in F06's thermal imaging; in G22-SC3, it exchanges coolant rations for transport of evacuation supplies before XT02's hot winds arrive."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3155,6 +4803,7 @@
       "kind": "paragraph",
       "anchor": "g22e13-잔열딱지운반꾼-p4",
       "text": {
+        "en": "<a id=\"g22e14\"></a>",
         "ko": "<a id=\"g22e14\"></a>"
       }
     },
@@ -3163,6 +4812,7 @@
       "anchor": "g22e14-회랑문빗장어미",
       "depth": 3,
       "text": {
+        "en": "G22E14 · Corridor-Door Bolt Mother",
         "ko": "G22E14 · 회랑문빗장어미"
       }
     },
@@ -3171,12 +4821,15 @@
       "anchor": "g22e14-회랑문빗장어미-list1",
       "items": [
         {
+          "en": "Source batch: M035",
           "ko": "출처 배치: M035"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"states\":[\"S06\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -3186,42 +4839,52 @@
       "anchor": "g22e14-회랑문빗장어미-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Corridor-Door Bar Mother was a mobile biomechanical variant differentiated from the G22 common ecology. The cooperation · coexistence role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "회랑문빗장어미은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 협력·공존 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3232,6 +4895,15 @@
       "anchor": "g22e14-회랑문빗장어미-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Corridor-Door Bolt Mother is a large controller-type organism that braces its long alloy spine between doorframes to guard the colony's resting place. A group of palm-sized bolt young cling beneath its spine, while sensory plates at either end check vibrations and body heat. It has difficulty distinguishing odor-blocking protective suits from completely motionless objects."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3243,6 +4915,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It originated when locking bars dislodged from the blast doors linking Seoul Station Central and the Gangnam Line, spent battery modules, and organic coatings from emergency exit signs became buried together in a layer of metal deposits. After the collapse, it grew into a form that controlled the passage itself as it withstood outside pressure and looting."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3254,6 +4935,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It establishes territory around the blast doors and stair landings of Seoul Station Central's main corridors. In cold seasons, it moves to the relatively warm Gangnam Line transfer passages; when it detects pressure from the outskirts of XT02, it locks the outer doors in sequence, starting with the outermost."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3265,6 +4955,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs scrap metal for doorframes, coolant for its bolt joints, and organic matter from sign coatings. The number of doorframes it has secured and the amount of resources it has stored determine the limit on forming new groups. Because HP08 needs the same doors and locking bars to restore evacuation routes, negotiation is essential."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3276,6 +4975,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In the emergence phase, small groups of latches gather on doorframes; in the expansion phase, it extends its patrol range to adjacent entrances. In the dormant phase, the mother braces its spine against a door and remains still. In the negotiable phase, it folds one sensory plate to signal willingness to allow passage; if its joint coolant dries up, its spine bends in the disintegration phase, leaving it jammed together with the door."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3287,6 +4995,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " Each corridor has one controller, and the bolt young are divided into reconnaissance, locking, and resource-transport groups. When commands from multiple corridors conflict, or F06's sensor logs suggest a different order of closure priorities, human mediators, including HP08, make the final decision based on the number of people needing evacuation."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3298,6 +5015,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it half-closes a door and taps its spine as a warning. At stage 2, it changes lighting, locks, and ventilation controls at will, disrupting infrastructure. At stage 3, it completely seals the main corridor leading to the Seoul Station Central hub; a pressure wave from XT02's direction or forced entry by armed personnel can trigger this directly."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3309,6 +5035,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Low, steady noise from the other side of a door can distract it, and supplying coolant to its joints can slow its locking. It is also possible to lure it toward an unused entrance with food and scrap metal, then block its route by sealing only the main doorframes. Blasting its spine could bring down both the corridor ceiling and the blast door."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3320,6 +5055,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can cede two outer doors and a regular coolant supply in exchange for daytime evacuation passage, nighttime salvage passage, and an agreed order for opening doors during an XT02 alert. Forcibly removing every bolt restores control, but it also eliminates the defensive line that held back pressure waves and looters, exposing the Seoul Station Central civilian hub."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3331,6 +5075,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it is the final obstacle in negotiating passage when rescue teams and the colony need the same blast door. In G22-SC2, it tests whether on-site evacuation judgments should take priority over F06's automatic closure recommendation; in G22-SC3, it appears as the key controller deciding which corridors to close and which to open just before the XT02 pressure wave."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3347,6 +5100,7 @@
       "kind": "paragraph",
       "anchor": "g22e14-회랑문빗장어미-p4",
       "text": {
+        "en": "<a id=\"g22e15\"></a>",
         "ko": "<a id=\"g22e15\"></a>"
       }
     },
@@ -3355,6 +5109,7 @@
       "anchor": "g22e15-폐극직조충",
       "depth": 3,
       "text": {
+        "en": "G22E15 · Spent-Electrode Weaver",
         "ko": "G22E15 · 폐극직조충"
       }
     },
@@ -3363,12 +5118,15 @@
       "anchor": "g22e15-폐극직조충-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -3378,42 +5136,52 @@
       "anchor": "g22e15-폐극직조충-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Dead-Electrode Weaving Worm was a mobile biomechanical variant differentiated from the G22 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "폐극직조충은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3424,6 +5192,15 @@
       "anchor": "g22e15-폐극직조충-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Spent-Electrode Weaver is a biomechanical worker that pulls thin electrode foil from spent batteries into ribbons and weaves them together. It weaves metal fibers between its ceramic jaws and insulating abdominal plates, turning cracks in the central passage of Seoul Station into temporary conductors or fences. It senses vibrations and electronic noise but cannot detect stationary objects beyond a wall."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3435,6 +5212,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " The colony arose after the collapse, when metal precipitated in branching formations from piles of spent batteries abandoned in the S06–Gangnam Line corridor. This is a fictional disaster phenomenon in Seoul involving colonies formed by metal precipitation from spent batteries; it is not attributed conclusively to the deliberate actions of any past institution or current regime."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3446,6 +5232,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its main nest lies between the shelves and cable ducts of Seoul Station’s central sorting yard. When seasonal humidity rises, it moves to the Gangnam Line drainage corridor; when vibration pressure from the XT02 outskirts increases, it retreats into inner alleys, leaving conductor markers behind."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3457,6 +5252,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " Its primary resources are conductive scrap metal and a small amount of coolant. It competes with HP08 for spent batteries to recover, but if already discharged batteries are set aside in a marked area, it does not approach civilian power equipment."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3468,6 +5272,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through five stages: emergence, spread, stagnation, negotiability, and disintegration. Its population cannot grow beyond what the metal it has secured can support. If a coolant shortage causes its electrode whiskers to overgrow, they short-circuit its own body, so the group buries damaged members in a pile of insulating material to induce their disintegration."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3479,6 +5292,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called the Polarity Mother coordinates the direction and current intervals of several weaving groups. Even if F06 logs identify a dangerous passage, the group stops work and follows the outcome of human mediation if HP08 personnel find different traces on site."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3490,6 +5312,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " Stage 1 is an appearance accompanied by a warning sound made by shaking electrode foil; stage 2 is infrastructure disruption caused by induced noise around communication lines and distribution boxes; stage 3 is the sealing off of a site with woven metal mesh. The stage rises when HP08 removes spent batteries bearing the colony’s marks without advance notice."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3501,6 +5332,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Opposite-phase noise can disrupt its vibration-based directions; mist cooling can then slow precipitation, and ceramic sealing panels can cut off its routes. Placing discharged-battery decoys on a detour can move the colony without a fight. Indiscriminate gunfire makes the situation worse by turning metal fragments into new conductors."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3512,6 +5352,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can negotiate a daily spent-battery allotment in exchange for passage times. Removing the entire colony would also eliminate the temporary grounding network in central Seoul Station, increasing the risk of electrical leakage in civilian facilities. A choice must therefore be made between recovery proceeds and infrastructure safety."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3523,6 +5372,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it provides clues for tracking a scavenger who forged spent-battery markings. In G22-SC2, passage times must be negotiated with the Polarity Mother before a stage 3 blockade. In G22-SC3, it becomes the subject of mediation over whether to prioritize F06’s noise assessment or HP08’s on-site investigation."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3539,6 +5397,7 @@
       "kind": "paragraph",
       "anchor": "g22e15-폐극직조충-p4",
       "text": {
+        "en": "<a id=\"g22e16\"></a>",
         "ko": "<a id=\"g22e16\"></a>"
       }
     },
@@ -3547,6 +5406,7 @@
       "anchor": "g22e16-전해도르래귀",
       "depth": 3,
       "text": {
+        "en": "G22E16 · Electrolyte Pulley Wraith",
         "ko": "G22E16 · 전해도르래귀"
       }
     },
@@ -3555,12 +5415,15 @@
       "anchor": "g22e16-전해도르래귀-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}",
           "ko": "연결: {\"states\":[\"S06\",\"S11\"],\"houses\":[\"HP08\"],\"theaters\":[\"XT02\"],\"synthetics\":[\"F06\"]}"
         }
       ]
@@ -3570,42 +5433,52 @@
       "anchor": "g22e16-전해도르래귀-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Electrolytic-Pulley Gnome was a mobile biomechanical variant differentiated from the G22 common ecology. The local adaptation role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "전해도르래귀은 G22 공통 생태에서 분화한 이동 생체기계 변이다. 지역 적응 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3616,6 +5489,15 @@
       "anchor": "g22e16-전해도르래귀-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Electrolyte Pulley Wraith is a transport colony organism that uses its ring-shaped spine and cable tendons to hoist containers of coolant. Porous sacs inside its body filter electrolyte residue, turning metal sediment into a feeding surface, and it follows both heat and smell."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3627,6 +5509,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It is one branch of the spent-battery metal colony formed when leaked electrolyte from spent batteries accumulated in the S06–Gangnam Line corridor and combined with scrap metal from lifting equipment. It is a fictional ecosystem that arose in Seoul after the collapse; pressure from XT02 merely prompts its movement and does not imply responsibility for its origin."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3638,6 +5529,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its main habitat is the pulley room in Seoul Station’s central freight shaft, and in summer it moves to the comparatively cool underground Gangnam Line connector. When repeated impacts come from the XT02 side, it abandons vertical passages and disperses into low maintenance openings."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3649,6 +5549,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " Coolant and uncorroded scrap-metal rings are essential. It competes directly with HP08’s coolant recovery work, but if low-grade coolant collected from leaks is provided in a separate tank, it leaves medical and drinking-water systems alone."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3660,6 +5569,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It progresses through emergence, spread, stagnation, negotiability, and disintegration, with its reproduction limited by available pulleys and coolant. If salt crystals block its joint grooves, its lines twist and the carriers collide with one another, so the group repeatedly rotates damaged members to shake off the crystal powder."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3671,6 +5589,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called the Liquid-Level Weight communicates the transport order through the height of a suspended weight. Subordinate groups search for food independently, but if F06 water-level logs conflict with people’s visual measurements, they stop until an HP08 mediator marks a new reference line."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3682,6 +5609,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it drums on empty containers to warn of an approach; at stage 2, it occupies elevators and cooling pipes; at stage 3, it binds entrances with bundles of cables. Emptying a designated leak-collection tank or damaging a liquid-level marker immediately raises it one stage."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3693,6 +5629,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Interrupting a steady low-frequency sound breaks the pulleys’ synchronization; the joints can then be cooled in stages and the leak area sealed. Hanging scrap-metal rings in another vertical shaft also redirects its feeding route. Cutting all the cables at once could send suspended loads crashing into civilian areas."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3704,6 +5649,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP08 can exchange a supply of low-grade coolant for nighttime access to the freight shaft. Cutting off the supply and causing the colony to disintegrate increases the amount available for recovery, but the leaked electrolyte it had been removing will contaminate the floor of central Seoul Station and the Gangnam Line drains."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3715,6 +5669,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G22-SC1, it serves as a carrier whose route reveals where the missing coolant container went. In G22-SC2, a choice must be made between forcibly cutting through the blocked freight shaft and bargaining with the Liquid-Level Weight for nighttime passage. In G22-SC3, it provides crucial evidence for correcting a false F06 water-level reading through on-site measurements."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3732,6 +5695,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -3739,6 +5703,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "In facilities the Dead-Battery Metal Colony settled, the zones where metal dissolved away and the zones where metal returned as crystal fell clearly apart.",
         "ko": "폐전지금속군락이 자리 잡은 시설에서는 금속이 녹아 사라지는 구역과 금속이 결정으로 되돌아오는 구역이 분명히 나뉜다."
       }
     },
@@ -3746,6 +5711,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "Around spent-battery pouches and solder dross the surface pitted gray-white, while on ceramic edges a few meters away copper resin and nickel shells layered thick.",
         "ko": "폐전지 파우치와 땜납 찌꺼기 주변은 회백색으로 패이고, 몇 미터 떨어진 세라믹 모서리에는 구리 수지와 니켈 껍질이 겹겹이 붙는다."
       }
     },
@@ -3753,6 +5719,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "This separation was made by invisible potential difference and capillary moisture.",
         "ko": "이 분리는 눈에 보이지 않는 전위차와 모세관 수분이 만든다."
       }
     },
@@ -3760,6 +5727,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "The colony's base film was thin like damp dust.",
         "ko": "군락의 바탕막은 축축한 먼지처럼 얇다."
       }
     },
@@ -3767,6 +5735,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "The micro-pores inside held electrolyte, and the insulating organic film slowed water draining away all at once.",
         "ko": "그 안의 미세공극은 전해질을 붙들고, 절연성 유기막은 물이 한꺼번에 빠지는 것을 늦춘다."
       }
     },
@@ -3774,6 +5743,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "Metal ions moved along this film, but the colony as a whole set no direction.",
         "ko": "금속 이온은 이 막을 따라 이동하지만 군락 전체가 방향을 정하는 것은 아니다."
       }
     },
@@ -3781,6 +5751,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "Only the crystal growth rate differed by the potential, humidity, ion concentration, and temperature measured at each point.",
         "ko": "각 지점에서 측정되는 전위, 습도 이온 농도 온도에 따라 결정 성장 속도가 달라질 뿐이다."
       }
     },
@@ -3788,6 +5759,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "Recovery facilities usually consisted of porous alumina bricks, exchangeable graphite plates, and tin-plated collection mesh.",
         "ko": "회수 시설은 보통 다공성 알루미나 벽돌과 교환식 흑연판, 주석 도금 포집망으로 구성된다."
       }
     },
@@ -3795,6 +5767,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "Setting the bricks' pore sizes differently by zone made a moisture gradient, and holding the mesh's potential slightly lower than the surrounding structure made copper and nickel precipitate there first.",
         "ko": "벽돌의 기공 크기를 구역마다 다르게 두면 수분 경사가 생기고, 포집망의 전위를 주변 구조재보다 약간 낮게 유지하면 구리와 니켈이 그쪽에 먼저 석출된다."
       }
     },
@@ -3802,6 +5775,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "Raising voltage gave fast yield but also steeply raised the chance of dendrites crossing insulation gaps.",
         "ko": "전압을 높이는 방식은 수율이 빠르지만 수지상이 절연 간격을 건널 가능성도 급격히 커진다."
       }
     },
@@ -3809,6 +5783,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "So skilled teams adjusted humidity before voltage.",
         "ko": "그래서 숙련된 작업팀은 전압보다 습도를 먼저 조정한다."
       }
     },
@@ -3816,6 +5791,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "Lowering the condensation plates' temperature and changing the ceramic wicks' length folded the ion paths slowly into the recovery tank.",
         "ko": "응축판의 온도를 낮추고 세라믹 심지의 길이를 바꿔 이온 통로를 천천히 회수조 안으로 접는다."
       }
     },
@@ -3823,6 +5799,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "In work that used no building distribution net, movement was induced only by separated sacrificial metal plates and concentration difference, and the residual charge of capacitors and uninterruptible power supplies was penned in separate discharge boxes.",
         "ko": "건물 배전망을 쓰지 않는 작업에서는 분리된 희생 금속판과 농도차만으로 이동을 유도하며, 축전기와 무정전 전원장치의 잔류 전하도 별도 방전함에 가둔다."
       }
     },
@@ -3830,6 +5807,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "An arc chain could start from a single fine dendrite.",
         "ko": "아크 체인은 가느다란 수지상 결정 하나에서 시작할 수 있다."
       }
     },
@@ -3837,6 +5815,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "When the first short evaporated the crystal, metal vapor and carbonized traces became the path of the next discharge, and adjacent terminals connected in turn.",
         "ko": "첫 단락이 결정을 증발시키면 금속 증기와 탄화 흔적이 다음 방전의 통로가 되고, 인접 단자들이 차례로 연결된다."
       }
     },
@@ -3844,6 +5823,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "Even with breakers working, charge left in the grounding net or shielding layers could carry short chains on, so stopping was never guaranteed without physical sectioning.",
         "ko": "차단기가 작동하더라도 접지망이나 차폐층에 남은 전하가 짧은 연쇄를 이어 갈 수 있어, 구간별 물리 절단 없이는 정지가 보장되지 않는다."
       }
     },
@@ -3851,6 +5831,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "Structural corrosion was far quieter.",
         "ko": "구조 부식은 훨씬 조용하다."
       }
     },
@@ -3858,6 +5839,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "When copper collection mesh and iron anchors touched the same wet film, iron dissolved first and copper thickened.",
         "ko": "구리 포집망과 철제 앵커가 같은 습윤막에 닿으면 철이 먼저 용출되고 구리는 두꺼워진다."
       }
     },
@@ -3865,6 +5847,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "Seen from the surface recovery looked good, but the cross-sections of rack fasteners and cable trays shrank from inside.",
         "ko": "표면만 보면 회수 성과가 좋아 보이지만, 랙 고정부와 케이블 트레이의 단면은 내부에서 줄어든다."
       }
     },
@@ -3872,6 +5855,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "Load tests had to run separately from metal recovery volume, and the rebar potential under the ceramic recovery tanks kept being measured.",
         "ko": "하중 검사는 금속 회수량과 별도로 시행해야 하며, 세라믹 회수조 아래의 철근 전위도 계속 측정해야 한다."
       }
     },
@@ -3879,6 +5863,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "In record-keeping zones the electrical reference point itself was the object of preservation.",
         "ko": "기록 보관 구역에서는 전기적 기준점 자체가 보존 대상이다."
       }
     },
@@ -3886,6 +5871,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "As metal piled on the shielding mesh the connectors' reference potential shifted, and readers could not tell normal signals from corrosion noise.",
         "ko": "차폐망에 금속이 쌓이면 커넥터의 기준 전위가 변하고, 판독기는 정상적인 신호와 부식 잡음을 구분하지 못한다."
       }
     },
@@ -3893,6 +5879,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "Even with files remaining, once the links of index keys, identity correspondence tables, and access histories broke, whose record it was could not be confirmed, so physical media and the attribution structure had to be protected together.",
         "ko": "파일이 남아 있어도 색인 키, 신원 대응표 접근 이력의 연결이 끊기면 누구의 기록인지 확인할 수 없으므로 물리 매체와 귀속 구조를 함께 보호해야 한다."
       }
     },
@@ -3900,6 +5887,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "The field manager limited the colony's passive reactions with human measures — replacing sacrificial electrodes, installing ceramic drainage insulating partitions.",
         "ko": "현장 관리자는 희생 전극 교체, 세라믹 배수 절연 격벽 설치와 같은 사람의 조치로 군락의 수동 반응을 제한한다."
       }
     },
@@ -3907,6 +5895,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "When the recovery tank saturated, the collection mesh was mechanically stripped off, and before new surfaces went in, the potential of the surrounding grounding and structure was matched again.",
         "ko": "회수조가 포화되면 포집망을 기계적으로 떼어 내고, 새 표면을 투입하기 전에 주변 접지와 구조재의 전위를 다시 맞춘다."
       }
     },
@@ -3914,6 +5903,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "Late action had the clogged drains pushing moisture into the walls, making new galvanic pairs outside the recovery zone.",
         "ko": "조치가 늦으면 막힌 배수공이 습기를 벽체로 밀어내 회수 구역 밖에서 새로운 갈바닉 쌍을 만든다."
       }
     },
@@ -3921,6 +5911,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "The final judgment usually took the form of abandoning one of two infrastructures first.",
         "ko": "최종 판단은 흔히 두 기반시설 가운데 하나를 먼저 포기하는 형태가 된다."
       }
     },
@@ -3928,6 +5919,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p28",
       "text": {
+        "en": "Permanently discharging the power modules kept the record environment but lost backup power; cutting the archive's pipes and shielding saved the power equipment but broke the records' long-term preservation conditions.",
         "ko": "전력 모듈을 영구 방전하면 기록 환경을 유지할 수 있지만 예비 전원을 잃고, 아카이브의 배관과 차폐망을 절단하면 전력 장치를 건질 수 있지만 기록의 장기 보존 조건이 무너진다."
       }
     },
@@ -3935,6 +5927,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p29",
       "text": {
+        "en": "Either way, the cut faces had to be sealed with ceramic and non-conductive resin, removing detours for potential and moisture, before the next precipitation path could be controlled.",
         "ko": "어느 쪽이든 절단면을 세라믹과 비전도성 수지로 봉합해 전위와 수분의 우회로를 없애야 다음 석출 경로를 통제할 수 있다."
       }
     }

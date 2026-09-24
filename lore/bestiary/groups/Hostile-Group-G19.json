@@ -5,6 +5,7 @@
   "slug": "hostile-group-g19",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G19 · Coolant-Index Fungal Body",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G19 · 냉각수색인균체",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g19-냉각수색인균체",
       "depth": 1,
       "text": {
+        "en": "G19 · Coolant-Index Fungal Body",
         "ko": "G19 · 냉각수색인균체"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g19-냉각수색인균체-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "The Coolant-Index Fungal Body held most stably on metal surfaces where flow was gentle — heat-exchanger fronts, valve pockets, the protective sleeves of gauges. Its thickness usually stayed thin, but where stagnation ran long, carbonates and corrosion products piled into a mucoid matrix and made a hard layer. The surface's color was no biological signal but the result of the bound metal and its oxidation state.",
         "ko": "냉각수색인균체는 열교환기 전단, 밸브 포켓 계측기 보호관처럼 흐름이 완만한 금속 표면에서 가장 안정적으로 유지된다. 두께는 보통 얇지만 정체 시간이 길어지면 점액질 기질에 탄산염과 부식 생성물이 쌓여 단단한 층을 만든다. 표면의 색은 생물학적 신호가 아니라 결합된 금속과 산화 상태의 결과다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The common ecology of the Coolant-Index Fungal Body responded passively to facility surfaces and the local environment. The G19E identifiers marked biomechanical variants whose movement and work functions had differentiated within that environment; they were not treated as one individual with the common film or the whole installation.",
         "ko": "냉각수색인균체의 공통 생태는 시설 표면과 국소 환경에 수동적으로 반응한다. G19E 식별자는 그 환경에서 이동·작업 기능이 분화된 생체기계 변이를 가리키며, 공통 막이나 설비 전체와 같은 개체로 취급하지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "Just after the collapse, where the abandoned pipes of the Magok research-block underground heat exchangers met the Noryangjin south-side supply detour, iron and copper ions and corrosion-inhibitor byproducts hardened in stripes into a mucoid matrix — the Coolant-Index Fungal Body took its Seoul creative origin there. / A fictional ecology unrelated to real corporate accidents; only the research-log format is borrowed as a fact anchor. / It is a closed-loop phenomenon distinct from freezer polymer insulation sheets and low-temperature logistics hosts.",
             "ko": "붕괴 직후 마곡 연구동 지하 열교환기와 노량진 남측 급수 우회의 방치 배관이 맞닿은 구간에서, 철·구리 이온과 부식 억제제 부산물이 점액질 기질에 줄무늬로 굳는 냉각수색인균체가 서울 창작 기원으로 자리 잡았다. / 실재 기업 사고와 무관한 허구 생태이며, 연구 일지 양식만 사실 앵커로 빌린다. / 냉동 설비의 고분자 단열 시트나 저온 물류 숙주와는 별개의 밀폐 루프 현상이다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The Yongsan Line's Yangjae Machineworks underground cooling corridor was its core habitat. / As summer load grew, thin films were pushed out into the stagnant stretches of the Charter Transcription State-side detour supply pipes along the Noryangjin Line, and it reacted to outside pressure along the condensate drains of the refrigerated freight cars arriving through the XT04 Duman River Far East Theater. / It preferred the gentle flows of closed loops over surface streams.",
             "ko": "용산선 양재기공주식회사 지하 냉각 회랑이 핵심 서식이다. / 여름 부하가 커지면 노량진선 교헌필사정 쪽 우회 급수관 정체 구간으로 얇은 막이 밀려 나가고, XT04 두만강극동전구에서 들어오는 저온 화물 열차의 응축수 배수로를 따라 외곽 압력에 반응한다. / 지표 하천보다 밀폐 루프의 완만 흐름을 선호한다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "It caught waste-heat gradients, copper and zinc ions, glycol residues, and scale fragments into its matrix. / The thicker the film grew, the higher the thermal resistance rose and the more pump power was consumed, and it competed with the clean coolant the HP05 Bukhansan Bogukmun Return Society wanted to recover for refuge shells. / The sludge the F03 Water Filtration unit scraped off became the film's sediment feed again.",
             "ko": "폐열 경사 구리·아연 이온 글리콜 잔류 스케일 조각을 기질에 붙잡는다. / 막이 두꺼워질수록 열 저항이 올라 펌프 전력 소비가 늘고, HP05 북한산보국문귀환회가 피난 쉘터용으로 회수하려는 청정 냉각수와 경합한다. / F03 정수여과 유닛이 걷어 낸 슬러지는 다시 막의 침전 원료가 된다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "1 mucoid adhesion at the seam → 2 layered ion and carbonate color bands → 3 stagnation-pocket agglutination and gauge-sleeve buffering → 4 capture by sacrificial bypass → 5 drying, backwash, and exfoliation. Growth was bound to dissolved metals and to stagnation weak in shear. / The greater the waste heat, the thicker the film grew, deepening flow loss and heat chaining; it thinned only after people changed flow or water quality.",
             "ko": "1 이음새 점액 부착 → 2 이온·탄산염 색띠 적층 → 3 정체 구간 교착과 센서 보호관 완충 → 4 희생 바이패스 포획 → 5 건조·역세 후 박리. 확장은 용존 금속과 전단이 약한 정체에 묶인다. / 폐열이 커질수록 막이 두꺼워져 유량 저하와 열 연쇄를 키우며, 얇아지는 것은 사람이 유량·수질을 바꾼 뒤에만 일어난다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "Viscosity and sediment bonding shifted with the contact surface's temperature, acidity, dissolved oxygen, metal ions, chlorine oxidants, and shear changes. / It could not know the state of a distant branch, predict operating cycles, or classify meaning.",
             "ko": "접촉면의 온도 산도 용존 산소 금속 이온 염소계 산화제 전단력 변화에 따라 점도와 침전 결합이 달라진다. / 먼 분기의 상태를 알지 못하며 운전 주기를 예상하거나 의미를 분류하지 않는다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "There was no command structure. / Stagnation pockets, gauge sleeves, and bypass inner walls each only reacted to their local water quality. / The valve work crew and managers decided bypass selection, isolation order, and drinking-water shutoff, while F03 provided cross-section and pressure-differential data.",
             "ko": "지휘 구조가 없다. / 정체 포켓 센서 보호관 바이패스 내벽이 각기 국소 수질에 반응할 뿐이다. / 밸브 작업조와 관리자가 바이패스 선택 격리 순서 음용수 차단을 결정하고 F03는 단면·압력차 자료를 제공한다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The common facility ecology had no command core. Even the coordinating individuals of the mobile variants reacted only within their assigned conduit or work section, and stood in for neither human facility authority nor unit command.",
         "ko": "공통 시설 생태에는 지휘 핵이 없다. 이동 변이의 조정 개체도 맡은 관로·작업 구간 안에서만 반응하며, 사람의 시설 운영권과 부대 지휘권을 대신하지 않는다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G19E01 · Index-Film Resident Colony",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E01 · 색인막주재균",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E02 · Blue Pipe-Wall Licker",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E02 · 푸른관벽핥이",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E03 · Iron-Tasting Spore Band",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E03 · 철맛포자띠",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E04 · Frost-Pulsing Sac",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E04 · 서리맥동낭",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E05 · Corrosion-Scale Collector",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E05 · 부식눈금채집체",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E06 · Filter-Room Debris Shepherd",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E06 · 필터실찌꺼기목동",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E07 · Valve-Gap Sealing Fungus",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E07 · 밸브틈봉합균",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E08 · Chiller-Rib Gatekeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E08 · 칠러갈비수문장",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E09 · Magnetite-Spore Lancer",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E09 · 자철포자창기병",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E10 · Pump-Room Index Garden",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E10 · 펌프실색인정원",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E11 · Seasonally Migrating Cooling Film",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E11 · 계절이동냉각막",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E12 · Dry-Cracked Withered Membrane",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E12 · 건조갈라진쇠약막",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M030",
             "ko": "M030"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E13 · Pipe-Vein Marking Worm",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E13 · 관맥필경충",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E14 · Condensation Bellkeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E14 · 응결종지기",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E15 · Pressure-Knot Navigator",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E15 · 압력매듭항해체",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G19E16 · Corrosion-Membrane Stitcher",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G19",
+                  "anchor": "g19e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G19E16 · 부식막봉합모",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g19e01\"></a>",
         "ko": "<a id=\"g19e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g19e01-색인막주재균",
       "depth": 3,
       "text": {
+        "en": "G19E01 · Index-Film Resident Colony",
         "ko": "G19E01 · 색인막주재균"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g19e01-색인막주재균-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"states\":[\"S03\",\"S08\"],\"synthetics\":[\"F03\"],\"scenarios\":[\"G19-SC1\",\"G19-SC2\",\"G19-SC3\"]}",
           "ko": "연결: {\"states\":[\"S03\",\"S08\"],\"synthetics\":[\"F03\"],\"scenarios\":[\"G19-SC1\",\"G19-SC2\",\"G19-SC3\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g19e01-색인막주재균-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Index-Film Master Fungus was a mobile biomechanical variant differentiated from the G19 common ecology. The command · coordination role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "색인막주재균은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 지휘·조정 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -736,30 +1034,39 @@
       "anchor": "g19e01-색인막주재균-list3",
       "items": [
         {
+          "en": "Role and body: The controller of the coolant-indexing colony: a colony of biofilm from inside the pipes and metallic indexing protrusions gathered in a circular valve room.",
           "ko": "역할·신체: 냉각수색인균체의 통제자로, 배관 안쪽의 생물막과 금속성 색인 돌기가 원형 밸브실에 모인 군체다."
         },
         {
+          "en": "Origin: Biofilm in the Yongsan Line coolant pipes combined with metal corrosion particles from the Noryangjin Line and began to remember traces of flow.",
           "ko": "기원: 용산선 냉각수 배관의 생물막이 노량진선 금속 부식 입자와 결합해 유량 흔적을 기억하기 시작했다."
         },
         {
+          "en": "Habitat and needs: It is fixed in the cooling valve room and needs temperature differences, metal ions, organic debris, and a steady flow rate.",
           "ko": "서식·필요: 냉각 밸브실에 고정되며 온도차, 금속 이온, 유기 찌꺼기, 일정 유량이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: It passes through the stages of spore attachment, film expansion, metallic protrusion growth, negotiable flow stabilization, and desiccation and disintegration.",
           "ko": "생애·정비: 포자 부착, 막 확장, 금속 돌기 성장, 협상가능 유량 안정, 건조 와해의 단계를 거친다."
         },
         {
+          "en": "Behavior and hierarchy: Its controller film sends flow signals to subordinate spores and corrosion bodies; when these conflict with F03 logs, it waits for human mediation.",
           "ko": "행동·위계: 컨트롤러 막이 하위 포자와 부식체에 유량 신호를 보내며 F03 로그와 충돌하면 인간 중재를 기다린다."
         },
         {
+          "en": "Escalation: Stage 1 leaves indexing traces; stage 2 disrupts cooling; stage 3 seals off the valve room.",
           "ko": "상승: 1단계 색인 흔적, 2단계 냉각 교란, 3단계 밸브실 봉쇄다."
         },
         {
+          "en": "Engagement and response: Separating flows, moderating temperature, diverting food, and sealing sections are effective; toxic sterilization would also ruin civilian coolant.",
           "ko": "교전·대응: 유량 분리, 온도 완화, 먹이 우회, 구간 봉인이 유효하며 독성 살균은 시민 냉각수도 망친다."
         },
         {
+          "en": "Negotiation and moral choice: Coexistence is possible by allocating metal ions and passage times, but some cooling efficiency must be sacrificed.",
           "ko": "교섭·도덕 선택: 금속 이온과 통행 시간을 배정해 공존할 수 있지만 냉각 효율 일부를 포기해야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC1, G19-SC2, G19-SC3.",
           "ko": "시나리오 연결: G19-SC1, G19-SC2, G19-SC3."
         }
       ]
@@ -768,6 +1075,7 @@
       "kind": "paragraph",
       "anchor": "g19e01-색인막주재균-p4",
       "text": {
+        "en": "<a id=\"g19e02\"></a>",
         "ko": "<a id=\"g19e02\"></a>"
       }
     },
@@ -776,6 +1084,7 @@
       "anchor": "g19e02-푸른관벽핥이",
       "depth": 3,
       "text": {
+        "en": "G19E02 · Blue Pipe-Wall Licker",
         "ko": "G19E02 · 푸른관벽핥이"
       }
     },
@@ -784,12 +1093,15 @@
       "anchor": "g19e02-푸른관벽핥이-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S03\"],\"scenarios\":[\"G19-SC1\",\"G19-SC2\"]}",
           "ko": "연결: {\"states\":[\"S03\"],\"scenarios\":[\"G19-SC1\",\"G19-SC2\"]}"
         }
       ]
@@ -799,42 +1111,52 @@
       "anchor": "g19e02-푸른관벽핥이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Blue-Pipe-Wall Licker was a mobile biomechanical variant differentiated from the G19 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "푸른관벽핥이은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -845,30 +1167,39 @@
       "anchor": "g19e02-푸른관벽핥이-list3",
       "items": [
         {
+          "en": "Role and body: A common ecological type: a flat blue film with fine metallic teeth that slowly scrapes pipe walls.",
           "ko": "역할·신체: 일반 생태형으로, 납작한 푸른 막과 미세 금속 이빨이 배관 벽을 천천히 긁는다."
         },
         {
+          "en": "Origin: A biofilm that fed on corrosion deposits differentiated into mobile bands that follow the coolant flow.",
           "ko": "기원: 부식 침전물을 먹던 생물막이 냉각수 흐름을 따라 이동 가능한 띠 형태로 분화했다."
         },
         {
+          "en": "Habitat and needs: It clings to narrow coolant pipes on the Yongsan Line and needs metal oxides, trace organic matter, and a cool flow.",
           "ko": "서식·필요: 용산선 좁은 냉각관에 붙어 금속 산화물, 미량 유기물, 서늘한 유량이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: It starts as a thin film, grows into a band, and dries into a spore shell when flow ceases.",
           "ko": "생애·정비: 얇은 막에서 시작해 띠로 자라고 유량이 끊기면 포자 껍질로 마른다."
         },
         {
+          "en": "Behavior and hierarchy: Following the resident colony's chemical signals, it scrapes the oldest pipe walls first and narrows the flow by piling up with others of its kind.",
           "ko": "행동·위계: 주재균의 화학 신호를 따라 오래된 관벽부터 긁고 무리를 겹쳐 흐름을 좁힌다."
         },
         {
+          "en": "Escalation: Stage 1 leaves blue traces; stage 2 lowers pressure; stage 3 progresses to pipe blockage.",
           "ko": "상승: 1단계 푸른 흔적, 2단계 압력 저하, 3단계 관로 폐색으로 진행한다."
         },
         {
+          "en": "Engagement and response: Lower the flow to send it into a food-supply bypass pipe, then remove it with a nontoxic brush.",
           "ko": "교전·대응: 유량을 낮춰 먹이 우회관으로 보내고 비독성 브러시로 떼어낼 수 있다."
         },
         {
+          "en": "Negotiation and moral choice: It can clean away corrosion debris, but some coolant must keep flowing through a feeding corridor.",
           "ko": "교섭·도덕 선택: 부식 찌꺼기 청소에 활용할 수 있지만 냉각수 일부를 먹이 회랑에 계속 흘려야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC1, G19-SC2.",
           "ko": "시나리오 연결: G19-SC1, G19-SC2."
         }
       ]
@@ -877,6 +1208,7 @@
       "kind": "paragraph",
       "anchor": "g19e02-푸른관벽핥이-p4",
       "text": {
+        "en": "<a id=\"g19e03\"></a>",
         "ko": "<a id=\"g19e03\"></a>"
       }
     },
@@ -885,6 +1217,7 @@
       "anchor": "g19e03-철맛포자띠",
       "depth": 3,
       "text": {
+        "en": "G19E03 · Iron-Tasting Spore Band",
         "ko": "G19E03 · 철맛포자띠"
       }
     },
@@ -893,12 +1226,15 @@
       "anchor": "g19e03-철맛포자띠-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\"],\"scenarios\":[\"G19-SC1\"]}",
           "ko": "연결: {\"states\":[\"S08\"],\"scenarios\":[\"G19-SC1\"]}"
         }
       ]
@@ -908,42 +1244,52 @@
       "anchor": "g19e03-철맛포자띠-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Iron-Taste Spore Band was a mobile biomechanical variant differentiated from the G19 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "철맛포자띠은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -954,30 +1300,39 @@
       "anchor": "g19e03-철맛포자띠-list3",
       "items": [
         {
+          "en": "Role and body: A common ecological type: red spore sacs and thin magnetic fibers wrap around pipe joints.",
           "ko": "역할·신체: 일반 생태형으로, 붉은 포자 주머니와 얇은 자성 섬유가 관 이음부를 감싼다."
         },
         {
+          "en": "Origin: Spores that absorbed rust settled at heavily vibrating joints and formed band colonies.",
           "ko": "기원: 녹 성분을 흡수한 포자가 진동 많은 이음부에 정착하며 띠 군락이 되었다."
         },
         {
+          "en": "Habitat and needs: It lives on old pump pipes and joints of the Noryangjin Line and needs iron ions, moisture, and low heat.",
           "ko": "서식·필요: 노량진선 오래된 펌프관과 이음부에 살며 철 이온, 습기, 낮은 열이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: It grows through spore, fiber, band, and fruiting-body stages, then disperses as light powder when dry.",
           "ko": "생애·정비: 포자-섬유-띠-자실체 순으로 자라고 건조하면 가벼운 가루로 흩어진다."
         },
         {
+          "en": "Behavior and hierarchy: It follows the resident colony's flow scent and fills cracks, but overgrowth seals inspection openings as well.",
           "ko": "행동·위계: 주재균의 유량 냄새를 따라 균열을 메우지만 과성장하면 점검구까지 봉한다."
         },
         {
+          "en": "Escalation: Stage 1 leaves red stains; stage 2 contaminates sensors; stage 3 closes inspection openings.",
           "ko": "상승: 1단계 붉은 얼룩, 2단계 센서 오염, 3단계 점검구 폐쇄다."
         },
         {
+          "en": "Engagement and response: It can be collected with dry air and magnetic filters; flames spread its spores through the ventilation system.",
           "ko": "교전·대응: 건조 공기와 자석 필터로 회수할 수 있고 화염은 포자를 환기에 퍼뜨린다."
         },
         {
+          "en": "Negotiation and moral choice: It can seal small leaks, but inspection access and the risk of spore spread must be accepted.",
           "ko": "교섭·도덕 선택: 미세 누수 봉합에 쓸 수 있지만 점검 접근성과 포자 확산 위험을 감수해야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC1.",
           "ko": "시나리오 연결: G19-SC1."
         }
       ]
@@ -986,6 +1341,7 @@
       "kind": "paragraph",
       "anchor": "g19e03-철맛포자띠-p4",
       "text": {
+        "en": "<a id=\"g19e04\"></a>",
         "ko": "<a id=\"g19e04\"></a>"
       }
     },
@@ -994,6 +1350,7 @@
       "anchor": "g19e04-서리맥동낭",
       "depth": 3,
       "text": {
+        "en": "G19E04 · Frost-Pulsing Sac",
         "ko": "G19E04 · 서리맥동낭"
       }
     },
@@ -1002,12 +1359,15 @@
       "anchor": "g19e04-서리맥동낭-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G19-SC1\",\"G19-SC2\"]}",
           "ko": "연결: {\"scenarios\":[\"G19-SC1\",\"G19-SC2\"]}"
         }
       ]
@@ -1017,42 +1377,52 @@
       "anchor": "g19e04-서리맥동낭-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Frost-Pulse Bladder was a mobile biomechanical variant differentiated from the G19 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "서리맥동낭은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1063,30 +1433,39 @@
       "anchor": "g19e04-서리맥동낭-list3",
       "items": [
         {
+          "en": "Role and body: A common ecological type: a transparent coolant sac that contracts in time with pump vibrations as it crawls along the outside of pipes.",
           "ko": "역할·신체: 일반 생태형으로, 투명한 냉각수 낭이 펌프 진동에 맞춰 수축하며 관 외벽을 기어간다."
         },
         {
+          "en": "Origin: Condensate and microbial gel differentiated into mobile sacs that exploit pump pulsations.",
           "ko": "기원: 응축수와 미생물 젤이 펌프 맥동을 이용하는 이동 낭으로 분화했다."
         },
         {
+          "en": "Habitat and needs: It prefers cold pump rooms and shaded pipes, and needs condensate, organic debris, and regular vibrations.",
           "ko": "서식·필요: 차가운 펌프실과 그늘진 관로를 선호하며 응축수, 유기 찌꺼기, 규칙 진동이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: Small droplets merge into a sac; when overheated, it bursts and leaves behind a dormant spore film.",
           "ko": "생애·정비: 작은 방울이 합쳐져 낭이 되고 과열되면 터져 휴면 포막을 남긴다."
         },
         {
+          "en": "Behavior and hierarchy: Following its group's vibration signals, it gathers around valves to maintain cooling.",
           "ko": "행동·위계: 무리의 진동 신호를 따라 밸브 주변에 모여 냉각을 유지하려 한다."
         },
         {
+          "en": "Escalation: Stage 1 increases condensation; stage 2 makes valves slippery; stage 3 seals the pump-room floor with gel.",
           "ko": "상승: 1단계 결로 증가, 2단계 밸브 미끄럼, 3단계 펌프실 바닥을 젤로 봉쇄한다."
         },
         {
+          "en": "Engagement and response: Cut off vibrations and lure it into a warm bypass pipe to disperse it; sharp attacks spray slippery coolant.",
           "ko": "교전·대응: 진동을 끊고 따뜻한 우회관으로 유도하면 흩어지며 날카로운 공격은 미끄러운 냉각수를 뿌린다."
         },
         {
+          "en": "Negotiation and moral choice: It can serve as an emergency cooling buffer, but some safety of movement through the pump room must be sacrificed.",
           "ko": "교섭·도덕 선택: 비상 냉각 완충재로 쓸 수 있지만 펌프실 이동 안전을 일부 포기해야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC1, G19-SC2.",
           "ko": "시나리오 연결: G19-SC1, G19-SC2."
         }
       ]
@@ -1095,6 +1474,7 @@
       "kind": "paragraph",
       "anchor": "g19e04-서리맥동낭-p4",
       "text": {
+        "en": "<a id=\"g19e05\"></a>",
         "ko": "<a id=\"g19e05\"></a>"
       }
     },
@@ -1103,6 +1483,7 @@
       "anchor": "g19e05-부식눈금채집체",
       "depth": 3,
       "text": {
+        "en": "G19E05 · Corrosion-Scale Collector",
         "ko": "G19E05 · 부식눈금채집체"
       }
     },
@@ -1111,12 +1492,15 @@
       "anchor": "g19e05-부식눈금채집체-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"synthetics\":[\"F03\"],\"scenarios\":[\"G19-SC1\",\"G19-SC2\"]}",
           "ko": "연결: {\"synthetics\":[\"F03\"],\"scenarios\":[\"G19-SC1\",\"G19-SC2\"]}"
         }
       ]
@@ -1126,42 +1510,52 @@
       "anchor": "g19e05-부식눈금채집체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Corrosion-Scale Collector was a mobile biomechanical variant differentiated from the G19 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "부식눈금채집체은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1172,30 +1566,39 @@
       "anchor": "g19e05-부식눈금채집체-list3",
       "items": [
         {
+          "en": "Role and body: A specialized functional type: a palm-sized colony whose metallic protrusions accumulate colored bands marking flow rate and degree of corrosion.",
           "ko": "역할·신체: 직능 특수형으로, 금속 돌기마다 유량과 부식 정도가 색 띠로 쌓이는 손바닥 크기 군체다."
         },
         {
+          "en": "Origin: Inspection reagents combined with biofilm, allowing it to record pipe conditions in the colors of its body.",
           "ko": "기원: 검사 시약과 생물막이 결합해 관 상태를 몸의 색으로 기록하게 되었다."
         },
         {
+          "en": "Habitat and needs: It clings to inspection windows and the fronts of filters, and needs iron ions, dim light, and a steady coolant flow.",
           "ko": "서식·필요: 점검창과 필터 앞에 붙어 철 이온, 약한 빛, 일정 냉각수가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: It grows heavier as its colored bands increase; when humans harvest part of it, it starts again as a thin film.",
           "ko": "생애·정비: 색 띠가 늘어날수록 무거워지고 인간이 일부를 채취하면 다시 얇은 막에서 시작한다."
         },
         {
+          "en": "Behavior and hierarchy: It serves as the resident colony's index and leaves corrosion records that differ from F03 sensor readings.",
           "ko": "행동·위계: 주재균의 색인 역할을 하며 F03 센서와 다른 부식 기록을 남긴다."
         },
         {
+          "en": "Escalation: Stage 1 creates scale markings; stage 2 obscures sensors; stage 3 covers the entire inspection window with metallic protrusions.",
           "ko": "상승: 1단계 눈금 생성, 2단계 센서 가림, 3단계 점검창 전체를 금속 돌기로 덮는다."
         },
         {
+          "en": "Engagement and response: Provide a sample plate for it to transfer onto; lowering the flow makes it easy to remove.",
           "ko": "교전·대응: 표본판을 제공해 옮겨 붙게 하고 유량을 낮추면 쉽게 떼어낼 수 있다."
         },
         {
+          "en": "Negotiation and moral choice: It can serve as an inexpensive corrosion detector, but standards for trusting biological records and limits on harvesting must be set.",
           "ko": "교섭·도덕 선택: 값싼 부식 감지기로 활용할 수 있지만 생물 기록을 신뢰할 기준과 채취 한계를 정해야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC1, G19-SC2.",
           "ko": "시나리오 연결: G19-SC1, G19-SC2."
         }
       ]
@@ -1204,6 +1607,7 @@
       "kind": "paragraph",
       "anchor": "g19e05-부식눈금채집체-p4",
       "text": {
+        "en": "<a id=\"g19e06\"></a>",
         "ko": "<a id=\"g19e06\"></a>"
       }
     },
@@ -1212,6 +1616,7 @@
       "anchor": "g19e06-필터실찌꺼기목동",
       "depth": 3,
       "text": {
+        "en": "G19E06 · Filter-Room Debris Shepherd",
         "ko": "G19E06 · 필터실찌꺼기목동"
       }
     },
@@ -1220,12 +1625,15 @@
       "anchor": "g19e06-필터실찌꺼기목동-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G19-SC1\",\"G19-SC2\"]}",
           "ko": "연결: {\"scenarios\":[\"G19-SC1\",\"G19-SC2\"]}"
         }
       ]
@@ -1235,42 +1643,52 @@
       "anchor": "g19e06-필터실찌꺼기목동-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Filter-Room Waste Herder was a mobile biomechanical variant differentiated from the G19 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "필터실찌꺼기목동은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1281,30 +1699,39 @@
       "anchor": "g19e06-필터실찌꺼기목동-list3",
       "items": [
         {
+          "en": "Role and body: A specialized functional type: bundles of black fibers herd filter debris into small, round balls of food.",
           "ko": "역할·신체: 직능 특수형으로, 검은 섬유 다발이 필터 찌꺼기를 둥글게 몰아 작은 먹이 공을 만든다."
         },
         {
+          "en": "Origin: Backwash residue became entangled with biofilm and differentiated into a colony that gathers organic debris in one place.",
           "ko": "기원: 역세척 잔사가 생물막과 엉켜 유기 찌꺼기를 한곳에 모으는 군체로 분화했다."
         },
         {
+          "en": "Habitat and needs: It lives on filter-room floors and in drainage grooves, and needs organic matter, moisture, and low vibration.",
           "ko": "서식·필요: 필터실 바닥과 배수 홈에 살며 유기물, 습기, 낮은 진동이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: It starts as a small thread, becomes a shepherd bundle, and disperses as spores when its food ball dries out.",
           "ko": "생애·정비: 작은 실에서 시작해 목동 다발이 되고 먹이 공이 마르면 포자로 흩어진다."
         },
         {
+          "en": "Behavior and hierarchy: It gathers debris in response to the resident colony's scent signals, but also blocks human cleaning openings.",
           "ko": "행동·위계: 주재균의 냄새 신호를 따라 찌꺼기를 모으지만 인간 청소구까지 막아 버린다."
         },
         {
+          "en": "Escalation: Stage 1 moves debris; stage 2 delays drainage; stage 3 seals off the filter-room drain.",
           "ko": "상승: 1단계 찌꺼기 이동, 2단계 배수 지연, 3단계 필터실 배수구 봉쇄다."
         },
         {
+          "en": "Engagement and response: Lure it into a separate feeding groove with low-pressure washing; strong chemicals disrupt the balance of filter microorganisms.",
           "ko": "교전·대응: 별도 먹이 홈과 저압 세척으로 유도하며 강한 약품은 필터 미생물 균형을 무너뜨린다."
         },
         {
+          "en": "Negotiation and moral choice: It can help manage waste, but part of the filter room must remain a feeding ground for the colony.",
           "ko": "교섭·도덕 선택: 폐기물 정리에 쓸 수 있지만 일부 필터실을 군체 먹이터로 남겨야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC1, G19-SC2.",
           "ko": "시나리오 연결: G19-SC1, G19-SC2."
         }
       ]
@@ -1313,6 +1740,7 @@
       "kind": "paragraph",
       "anchor": "g19e06-필터실찌꺼기목동-p4",
       "text": {
+        "en": "<a id=\"g19e07\"></a>",
         "ko": "<a id=\"g19e07\"></a>"
       }
     },
@@ -1321,6 +1749,7 @@
       "anchor": "g19e07-밸브틈봉합균",
       "depth": 3,
       "text": {
+        "en": "G19E07 · Valve-Gap Sealing Fungus",
         "ko": "G19E07 · 밸브틈봉합균"
       }
     },
@@ -1329,12 +1758,15 @@
       "anchor": "g19e07-밸브틈봉합균-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G19-SC2\",\"G19-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G19-SC2\",\"G19-SC3\"]}"
         }
       ]
@@ -1344,42 +1776,52 @@
       "anchor": "g19e07-밸브틈봉합균-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Valve-Seam Sealing Fungus was a mobile biomechanical variant differentiated from the G19 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "밸브틈봉합균은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1390,30 +1832,39 @@
       "anchor": "g19e07-밸브틈봉합균-list3",
       "items": [
         {
+          "en": "Role and body: A specialized functional type: silvery-gray gel and fine metallic fibers fill gaps in valve packing.",
           "ko": "역할·신체: 직능 특수형으로, 은회색 젤과 가는 금속 섬유가 밸브 패킹 틈을 메운다."
         },
         {
+          "en": "Origin: Metal ions and spores at leak sites combined into a pressure-responsive sealant.",
           "ko": "기원: 누수 지점의 금속 이온과 포자가 결합해 압력에 반응하는 봉합체가 되었다."
         },
         {
+          "en": "Habitat and needs: It clings to old valves and flanges and needs small leaks, iron, and cool temperatures.",
           "ko": "서식·필요: 오래된 밸브와 플랜지에 붙어 미세 누수, 철분, 서늘한 온도가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: It grows in gaps, hardens once pressure stabilizes, then cracks when dry and releases new spores.",
           "ko": "생애·정비: 틈에서 자라 압력이 안정되면 굳고 건조하면 갈라져 새 포자를 낸다."
         },
         {
+          "en": "Behavior and hierarchy: It seals leaks first according to the resident colony's flow signals, but also blocks gaps meant to stay open.",
           "ko": "행동·위계: 주재균의 유량 신호에 따라 누수부터 메우지만 정상 개방 틈도 막는다."
         },
         {
+          "en": "Escalation: Stage 1 reduces leaks; stage 2 resists valve operation; stage 3 completely seizes an emergency valve.",
           "ko": "상승: 1단계 누수 감소, 2단계 밸브 조작 저항, 3단계 비상 밸브 완전 고착이다."
         },
         {
+          "en": "Engagement and response: Lower the pressure and separate it with a nontoxic solvent; forcing the valve to turn could tear the pipe.",
           "ko": "교전·대응: 압력을 낮추고 비독성 용제로 분리하며 강제 회전은 관을 찢을 수 있다."
         },
         {
+          "en": "Negotiation and moral choice: It is useful for temporary leak repairs, but an agreement is needed on when to remove it and who may operate the valves.",
           "ko": "교섭·도덕 선택: 임시 누수 보수에 유용하지만 언제 제거할지와 밸브 조작권을 합의해야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC2, G19-SC3.",
           "ko": "시나리오 연결: G19-SC2, G19-SC3."
         }
       ]
@@ -1422,6 +1873,7 @@
       "kind": "paragraph",
       "anchor": "g19e07-밸브틈봉합균-p4",
       "text": {
+        "en": "<a id=\"g19e08\"></a>",
         "ko": "<a id=\"g19e08\"></a>"
       }
     },
@@ -1430,6 +1882,7 @@
       "anchor": "g19e08-칠러갈비수문장",
       "depth": 3,
       "text": {
+        "en": "G19E08 · Chiller-Rib Gatekeeper",
         "ko": "G19E08 · 칠러갈비수문장"
       }
     },
@@ -1438,12 +1891,15 @@
       "anchor": "g19e08-칠러갈비수문장-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S03\"],\"scenarios\":[\"G19-SC2\",\"G19-SC3\"]}",
           "ko": "연결: {\"states\":[\"S03\"],\"scenarios\":[\"G19-SC2\",\"G19-SC3\"]}"
         }
       ]
@@ -1453,42 +1909,52 @@
       "anchor": "g19e08-칠러갈비수문장-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Chiller-Rib Gatekeeper was a mobile biomechanical variant differentiated from the G19 common ecology. The elite breakthrough role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "칠러갈비수문장은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 정예 돌파 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1499,30 +1965,39 @@
       "anchor": "g19e08-칠러갈비수문장-list3",
       "items": [
         {
+          "en": "Role and body: The first elite, a large pipe colony clad in cooling-fin-like ribs and a thick metallic film.",
           "ko": "역할·신체: 첫 번째 정예로, 냉각 핀 같은 갈비와 두꺼운 금속막을 두른 큰 관로 군체다."
         },
         {
+          "en": "Origin: Biofilm at a chiller intake used metal fragments as a skeleton and became a gatekeeper guarding the flow.",
           "ko": "기원: 칠러 흡입구의 생물막이 금속 조각을 골격으로 삼아 유량을 지키는 수문장이 되었다."
         },
         {
+          "en": "Habitat and needs: It is fixed at the entrance to a key Yongsan Line chiller and needs a cold flow, iron fragments, and organic food.",
           "ko": "서식·필요: 용산선 핵심 칠러 입구에 고정되며 차가운 유량, 철 조각, 유기 먹이가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: As its ribs grow, intake resistance increases; removing some lets it recover as a thin film.",
           "ko": "생애·정비: 갈비가 자랄수록 흡입 저항이 커지고 일부를 떼면 얇은 막으로 회복한다."
         },
         {
+          "en": "Behavior and hierarchy: It guards the resident colony's essential flow and hides other organisms behind its ribs.",
           "ko": "행동·위계: 주재균의 핵심 유량을 지키며 다른 개체를 갈비 뒤에 숨긴다."
         },
         {
+          "en": "Escalation: Stage 1 gives a vibration warning; stage 2 partly closes the intake; stage 3 encases the entire chiller like armor.",
           "ko": "상승: 1단계 진동 경고, 2단계 흡입구 부분 폐쇄, 3단계 칠러 전체를 갑옷처럼 봉한다."
         },
         {
+          "en": "Engagement and response: Open its ribs with bypass flow and gradual easing of cooling; an explosion would destroy the chiller.",
           "ko": "교전·대응: 우회 유량과 단계적 냉각 완화로 갈비를 열어야 하며 폭발은 칠러를 파괴한다."
         },
         {
+          "en": "Negotiation and moral choice: It can be entrusted with keeping foreign matter out, but cooling efficiency must be exchanged for a protected area for the colony.",
           "ko": "교섭·도덕 선택: 이물질 방어를 맡길 수 있지만 냉각 효율과 군체 보호 구역을 교환해야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC2, G19-SC3.",
           "ko": "시나리오 연결: G19-SC2, G19-SC3."
         }
       ]
@@ -1531,6 +2006,7 @@
       "kind": "paragraph",
       "anchor": "g19e08-칠러갈비수문장-p4",
       "text": {
+        "en": "<a id=\"g19e09\"></a>",
         "ko": "<a id=\"g19e09\"></a>"
       }
     },
@@ -1539,6 +2015,7 @@
       "anchor": "g19e09-자철포자창기병",
       "depth": 3,
       "text": {
+        "en": "G19E09 · Magnetite-Spore Lancer",
         "ko": "G19E09 · 자철포자창기병"
       }
     },
@@ -1547,12 +2024,15 @@
       "anchor": "g19e09-자철포자창기병-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G19-SC2\",\"G19-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G19-SC2\",\"G19-SC3\"]}"
         }
       ]
@@ -1562,42 +2042,52 @@
       "anchor": "g19e09-자철포자창기병-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Magnetite-Spore Spear Rider was a mobile biomechanical variant differentiated from the G19 common ecology. The elite blocking role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "자철포자창기병은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 정예 차단 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1608,30 +2098,39 @@
       "anchor": "g19e09-자철포자창기병-list3",
       "items": [
         {
+          "en": "Role and body: The second elite, an elongated colony on the outside of pipes with magnetic metal spikes and pressure-spraying spore sacs.",
           "ko": "역할·신체: 두 번째 정예로, 자성 금속 가시와 압력 분사 포자낭을 가진 길쭉한 관외 군체다."
         },
         {
+          "en": "Origin: High-pressure leaks and magnetite deposits combined and differentiated into a defensive form that charges along pipes.",
           "ko": "기원: 고압 누수와 자철 침전이 결합해 관로를 따라 돌진하는 방어형으로 분화했다."
         },
         {
+          "en": "Habitat and needs: It clings to long, straight pipes and pump outlets, and needs a pressure differential, metal ions, and coolant.",
           "ko": "서식·필요: 긴 직선 배관과 펌프 출구에 붙어 압력차, 금속 이온, 냉각수가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: At low pressure, it folds its spikes and fills its spore sacs; it moves when high pressure returns.",
           "ko": "생애·정비: 압력이 낮으면 가시를 접고 포자낭을 채우며 고압이 오면 이동한다."
         },
         {
+          "en": "Behavior and hierarchy: It patrols around the gatekeeper and, on detecting intrusive vibrations, drives intruders back with its spikes foremost.",
           "ko": "행동·위계: 수문장 주변을 순찰하고 진동 침입을 감지하면 가시를 앞세워 밀어낸다."
         },
         {
+          "en": "Escalation: Stage 1 taps on pipe walls; stage 2 pursues inspectors; stage 3 seals off the corridor with a spore spray.",
           "ko": "상승: 1단계 관벽 두드림, 2단계 점검자 추격, 3단계 포자 분사로 회랑을 봉쇄한다."
         },
         {
+          "en": "Engagement and response: Redirect its path with a pressure bypass and a nonmagnetic shield; piercing attacks worsen coolant leaks.",
           "ko": "교전·대응: 압력 바이패스와 비자성 방패로 경로를 틀며 관통 공격은 냉각수 누출을 키운다."
         },
         {
+          "en": "Negotiation and moral choice: It can defend against intruders, but safe passage times for inspection personnel must be guaranteed.",
           "ko": "교섭·도덕 선택: 침입 방어에 쓸 수 있지만 점검 인력의 안전 통행 시간을 보장해야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC2, G19-SC3.",
           "ko": "시나리오 연결: G19-SC2, G19-SC3."
         }
       ]
@@ -1640,6 +2139,7 @@
       "kind": "paragraph",
       "anchor": "g19e09-자철포자창기병-p4",
       "text": {
+        "en": "<a id=\"g19e10\"></a>",
         "ko": "<a id=\"g19e10\"></a>"
       }
     },
@@ -1648,6 +2148,7 @@
       "anchor": "g19e10-펌프실색인정원",
       "depth": 3,
       "text": {
+        "en": "G19E10 · Pump-Room Index Garden",
         "ko": "G19E10 · 펌프실색인정원"
       }
     },
@@ -1656,12 +2157,15 @@
       "anchor": "g19e10-펌프실색인정원-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S03\"],\"scenarios\":[\"G19-SC2\",\"G19-SC3\"]}",
           "ko": "연결: {\"states\":[\"S03\"],\"scenarios\":[\"G19-SC2\",\"G19-SC3\"]}"
         }
       ]
@@ -1671,42 +2175,52 @@
       "anchor": "g19e10-펌프실색인정원-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Pump-Room Index Garden was a mobile biomechanical variant differentiated from the G19 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "펌프실색인정원은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1717,30 +2231,39 @@
       "anchor": "g19e10-펌프실색인정원-list3",
       "items": [
         {
+          "en": "Role and body: An environmental stronghold: layers of multicolored biofilm and metallic protrusions cover the pump-room walls like a garden.",
           "ko": "역할·신체: 환경 거점형으로, 여러 색의 생물막 층과 금속 돌기가 펌프실 벽을 정원처럼 덮는다."
         },
         {
+          "en": "Origin: Repeated leaks and maintenance reagents accumulated in one room, creating a colony stronghold that stores information on pipe conditions.",
           "ko": "기원: 반복 누수와 정비 시약이 한 방에 모여 관 상태를 축적하는 군체 거점이 되었다."
         },
         {
+          "en": "Habitat and needs: It is fixed in a Yongsan Line pump room and needs condensate, metal ions, organic debris, and mild heat.",
           "ko": "서식·필요: 용산선 펌프실에 고정되며 응축수, 금속 이온, 유기 찌꺼기, 약한 열이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: It adds film layers each season and shrinks its range in the dry season, leaving only inner spores.",
           "ko": "생애·정비: 계절마다 막 층을 더하고 건조기에는 안쪽 포자만 남겨 범위를 줄인다."
         },
         {
+          "en": "Behavior and hierarchy: It is the resident colony's index repository, where subordinate organisms gather for food and signals.",
           "ko": "행동·위계: 주재균의 색인 저장소로 하위 개체가 먹이와 신호를 받으러 모인다."
         },
         {
+          "en": "Escalation: Stage 1 spreads across the walls; stage 2 narrows inspection passages; stage 3 binds the pumps and entrance door together with one film.",
           "ko": "상승: 1단계 벽면 확장, 2단계 점검 통로 축소, 3단계 펌프와 출입문을 한 막으로 묶는다."
         },
         {
+          "en": "Engagement and response: Separate its feeding area and dry and remove it section by section; wholesale sterilization would worsen pump corrosion.",
           "ko": "교전·대응: 먹이 구역을 분리하고 구간별로 말려 떼어야 하며 전면 살균은 펌프 부식을 악화시킨다."
         },
         {
+          "en": "Negotiation and moral choice: In exchange for long-term corrosion records, part of the pump room must remain a coexistence garden.",
           "ko": "교섭·도덕 선택: 장기 부식 기록을 얻는 대신 펌프실 일부를 공존 정원으로 남겨야 한다."
         },
         {
+          "en": "Scenario connections: G19-SC2, G19-SC3.",
           "ko": "시나리오 연결: G19-SC2, G19-SC3."
         }
       ]
@@ -1749,6 +2272,7 @@
       "kind": "paragraph",
       "anchor": "g19e10-펌프실색인정원-p4",
       "text": {
+        "en": "<a id=\"g19e11\"></a>",
         "ko": "<a id=\"g19e11\"></a>"
       }
     },
@@ -1757,6 +2281,7 @@
       "anchor": "g19e11-계절이동냉각막",
       "depth": 3,
       "text": {
+        "en": "G19E11 · Seasonally Migrating Cooling Film",
         "ko": "G19E11 · 계절이동냉각막"
       }
     },
@@ -1765,12 +2290,15 @@
       "anchor": "g19e11-계절이동냉각막-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\"],\"scenarios\":[\"G19-SC1\",\"G19-SC3\"]}",
           "ko": "연결: {\"states\":[\"S08\"],\"scenarios\":[\"G19-SC1\",\"G19-SC3\"]}"
         }
       ]
@@ -1780,42 +2308,52 @@
       "anchor": "g19e11-계절이동냉각막-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Seasonal Migrating Cooling Film was a mobile biomechanical variant differentiated from the G19 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "계절이동냉각막은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1826,30 +2364,39 @@
       "anchor": "g19e11-계절이동냉각막-list3",
       "items": [
         {
+          "en": "Role · body: An environmental stronghold, its broad translucent membrane bridges the pipes and contracts with temperature.",
           "ko": "역할·신체: 환경 거점형으로, 넓은 반투명 막이 관로 사이를 다리처럼 잇고 온도에 따라 수축한다."
         },
         {
+          "en": "Origin: A spore membrane that traveled with seasonal flows between the Yongsan Line and the Noryangjin Line settled on a transfer valve.",
           "ko": "기원: 용산선과 노량진선 사이 계절 유량을 따라 이동하던 포자막이 환승 밸브에 정착했다."
         },
         {
+          "en": "Habitat · needs: It stays in the seasonal bypass pipe and beneath the cooling tower, and needs cool air, condensate, and trace metals.",
           "ko": "서식·필요: 계절 우회관과 냉각탑 하부에 머물며 서늘한 공기, 응축수, 미량 금속이 필요하다."
         },
         {
+          "en": "Life · maintenance: It spreads wide in summer and shrinks into a thick spore sac in winter.",
           "ko": "생애·정비: 여름에는 넓게 펴지고 겨울에는 두꺼운 포자 주머니로 줄어든다."
         },
         {
+          "en": "Behavior · hierarchy: It serves as a resting place and signal bridge for the traveling group, linking flow information between the colonies of two districts.",
           "ko": "행동·위계: 이동 무리의 쉼터이자 신호 다리로 작동해 두 구역 군체의 유량 정보를 잇는다."
         },
         {
+          "en": "Escalation: Stage 1 is a trembling membrane, stage 2 resistance in the bypass pipe, and stage 3 a seal over both the transfer valve and the passage.",
           "ko": "상승: 1단계 막 흔들림, 2단계 우회관 저항, 3단계 환승 밸브와 통로를 함께 봉한다."
         },
         {
+          "en": "Combat · response: The temperature must be raised gradually and the membrane moved onto a separate wet plate; rapid drying spreads its spores.",
           "ko": "교전·대응: 온도를 서서히 높이고 별도 습윤판으로 옮겨야 하며 급격한 건조는 포자를 퍼뜨린다."
         },
         {
+          "en": "Negotiation · moral choice: It is useful for cooling buffers and spore capture, but part of the seasonal passage must be yielded to the colony.",
           "ko": "교섭·도덕 선택: 냉각 완충과 포자 포집에 유용하지만 계절 통로 일부를 군체에 양보해야 한다."
         },
         {
+          "en": "Scenario links: G19-SC1, G19-SC3.",
           "ko": "시나리오 연결: G19-SC1, G19-SC3."
         }
       ]
@@ -1858,6 +2405,7 @@
       "kind": "paragraph",
       "anchor": "g19e11-계절이동냉각막-p4",
       "text": {
+        "en": "<a id=\"g19e12\"></a>",
         "ko": "<a id=\"g19e12\"></a>"
       }
     },
@@ -1866,6 +2414,7 @@
       "anchor": "g19e12-건조갈라진쇠약막",
       "depth": 3,
       "text": {
+        "en": "G19E12 · Dry-Cracked Withered Membrane",
         "ko": "G19E12 · 건조갈라진쇠약막"
       }
     },
@@ -1874,12 +2423,15 @@
       "anchor": "g19e12-건조갈라진쇠약막-list1",
       "items": [
         {
+          "en": "Source batch: M030",
           "ko": "출처 배치: M030"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G19-SC1\"]}",
           "ko": "연결: {\"scenarios\":[\"G19-SC1\"]}"
         }
       ]
@@ -1889,42 +2441,52 @@
       "anchor": "g19e12-건조갈라진쇠약막-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Drought-Cracked Wasting Film was a mobile biomechanical variant differentiated from the G19 common ecology. The growth variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "건조갈라진쇠약막은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 성장 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1935,30 +2497,39 @@
       "anchor": "g19e12-건조갈라진쇠약막-list3",
       "items": [
         {
+          "en": "Role · body: A damaged-stage form, this thin colony retains only a cracked gray biofilm and crumbling metal protrusions.",
           "ko": "역할·신체: 손상 단계형으로, 갈라진 회색 생물막과 부서지는 금속 돌기만 남은 얇은 군체다."
         },
         {
+          "en": "Origin: It is a remnant that separated from the resident fungus in a pipe whose flow stopped and entered dry dormancy.",
           "ko": "기원: 유량이 끊긴 관에서 주재균과 분리되어 건조 휴면에 들어간 잔존체다."
         },
         {
+          "en": "Habitat · needs: It clings to closed valves and dry filter rooms and needs a little moisture, iron, and low temperatures.",
           "ko": "서식·필요: 폐쇄 밸브와 마른 필터실에 붙어 소량 수분, 철분, 낮은 온도가 필요하다."
         },
         {
+          "en": "Life · maintenance: Water restores it to a small spore band, but excessive moisture makes it swell all at once and block the pipe.",
           "ko": "생애·정비: 물을 만나면 작은 포자띠로 회복하지만 과습하면 한꺼번에 부풀어 관을 막는다."
         },
         {
+          "en": "Behavior · hierarchy: At the bottom of the hierarchy, it sheds powder when vibrations come and slowly spreads toward the smell of the resident fungus.",
           "ko": "행동·위계: 위계 최하단으로 진동이 오면 가루를 떨구고 주재균 냄새 쪽으로 천천히 번진다."
         },
         {
+          "en": "Escalation: Stage 1 is a powder trace, stage 2 sensor contamination, and stage 3 a rapid swelling blockage when water is supplied.",
           "ko": "상승: 1단계 가루 흔적, 2단계 센서 오염, 3단계 급수 시 급팽창 폐색이다."
         },
         {
+          "en": "Combat · response: Remove it slowly with a sealed collection cloth and drip-fed water; high-pressure washing spreads spores throughout the district.",
           "ko": "교전·대응: 밀폐 회수포와 점적 수분으로 천천히 떼며 고압 세척은 포자를 전 구역에 퍼뜨린다."
         },
         {
+          "en": "Negotiation · moral choice: It can be reused as a metal adsorbent, but someone must decide whether to treat an ecology capable of recovery as waste.",
           "ko": "교섭·도덕 선택: 금속 흡착재로 재사용할 수 있지만 회복 가능 생태를 폐기물로 볼지 결정해야 한다."
         },
         {
+          "en": "Scenario links: G19-SC1.",
           "ko": "시나리오 연결: G19-SC1."
         }
       ]
@@ -1967,6 +2538,7 @@
       "kind": "paragraph",
       "anchor": "g19e12-건조갈라진쇠약막-p4",
       "text": {
+        "en": "<a id=\"g19e13\"></a>",
         "ko": "<a id=\"g19e13\"></a>"
       }
     },
@@ -1975,6 +2547,7 @@
       "anchor": "g19e13-관맥필경충",
       "depth": 3,
       "text": {
+        "en": "G19E13 · Pipe-Vein Marking Worm",
         "ko": "G19E13 · 관맥필경충"
       }
     },
@@ -1983,12 +2556,15 @@
       "anchor": "g19e13-관맥필경충-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"houses\":[\"HP05\"],\"theaters\":[\"XT04\"]}",
           "ko": "연결: {\"houses\":[\"HP05\"],\"theaters\":[\"XT04\"]}"
         }
       ]
@@ -1998,42 +2574,52 @@
       "anchor": "g19e13-관맥필경충-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Pipe-Vein Scrubbing Worm was a mobile biomechanical variant differentiated from the G19 common ecology. The aged variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "관맥필경충은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 노화 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2044,6 +2630,15 @@
       "anchor": "g19e13-관맥필경충-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role·Body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical cleaning species that crawls over cooling pipes, marking corrosion sites with linear patterns. Siliceous brushes beneath its flat body scrape off and consume biofilm, while thin metal plates on its back fold in response to changes in temperature and pressure, leaving a record of its movements."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2055,6 +2650,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose after the Collapse in the coolant corridor that linked the Yongsan Line and the Noryangjin Line, when microbial films, rusty inspection tags, and the remains of automated customs equipment combined. It is an ecological product unique to Seoul, unrelated to who was responsible for the former facility, and uses the remaining pipes as its habitat."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2066,6 +2670,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its primary habitat is inside the heat-exchanger bypass pipes and inspection ports of the Yongsan Line. In summer, it moves to the underground cooling pipes of the Noryangjin Line, where pressure drops; when a pressure wave arrives from the XT04 perimeter, it retreats behind the nearest closed valve."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2077,6 +2690,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It must consume lukewarm coolant, iron ions, and a thin film of organic matter together to remain active. It sometimes occupies abandoned pipes and coolant before HP05 can recover them, but placing rusty wire mesh in a diversion feeding container can draw it away from the work area."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2088,6 +2710,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle·Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through five stages—emergence, spread, stasis, negotiability, and disintegration—and its population cannot exceed what the iron and biofilm inside the pipes can support. If the recording plates on its back stick together, it mistakenly marks sound pipes as corroded sections; they must be softened with cold water and removed with a nonmetallic brush."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2099,6 +2730,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior·Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called the tablet core sets the scraping rhythm, while several work groups take responsibility for different pipelines. It senses vibration and heat but cannot directly perceive what lies beyond a wall. If its patterns conflict with F03’s corrosion assessment, it gives priority to an on-site check by an HP05 human mediator."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2110,6 +2750,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns intruders by leaving linear scratches around inspection ports; at stage 2, it disrupts infrastructure by disturbing the flow rate of circulation pumps. Erasing its markings or abruptly moving the tablet core pushes it to stage 3, when it seals off the valve room; this is the point just before the window for negotiation closes."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2121,6 +2770,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement·Response:",
+              "strong": true
+            },
+            {
+              "text": " A steady low-frequency noise can lure the group into an empty bypass pipe, where it can be cooled; sealing the inspection port with a resin sealing strip is effective. Redirecting its route with a feeding container and barrier plates, rather than cutting the main pipe, can prevent losses to the civilian cooling network."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2132,6 +2790,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation·Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " In exchange for a bundle of scrap wire mesh and 18 minutes without passage through its area, HP05 can obtain a map of the actual leaks the group has marked. Indiscriminate eradication would also eliminate its corrosion-monitoring and biofilm-decomposition functions, worsening the Yongsan Line’s cooling efficiency over the long term."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2143,6 +2810,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connections:",
+              "strong": true
+            },
+            {
+              "text": " In G19-SC1, it provides an on-site clue for determining whether a false corrosion mark is genuine. In G19-SC2, HP05 negotiates passage times for its recovery team with it; in G19-SC3, it moves ahead of the XT04 pressure wave and serves as a living alarm for anomalies on the perimeter."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2159,6 +2835,7 @@
       "kind": "paragraph",
       "anchor": "g19e13-관맥필경충-p4",
       "text": {
+        "en": "<a id=\"g19e14\"></a>",
         "ko": "<a id=\"g19e14\"></a>"
       }
     },
@@ -2167,6 +2844,7 @@
       "anchor": "g19e14-응결종지기",
       "depth": 3,
       "text": {
+        "en": "G19E14 · Condensation Bellkeeper",
         "ko": "G19E14 · 응결종지기"
       }
     },
@@ -2175,12 +2853,15 @@
       "anchor": "g19e14-응결종지기-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"states\":[\"S03\",\"S08\"],\"houses\":[\"HP05\"]}",
           "ko": "연결: {\"states\":[\"S03\",\"S08\"],\"houses\":[\"HP05\"]}"
         }
       ]
@@ -2190,42 +2871,52 @@
       "anchor": "g19e14-응결종지기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Condensation-Bell Keeper was a mobile biomechanical variant differentiated from the G19 common ecology. The cooperation · coexistence role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "응결종지기은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 협력·공존 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2236,6 +2927,15 @@
       "anchor": "g19e14-응결종지기-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role·Body:",
+              "strong": true
+            },
+            {
+              "text": " A bell-shaped biomechanical colony that hangs from expansion-tank ceilings, collecting condensate inside a metallic membrane and releasing drops at regular intervals. The sound of falling water serves both as a distance signal for the group and as a sign of temperature differences in the pipes, while a ring of cilia underneath filters and consumes corrosion debris."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2247,6 +2947,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed through prolonged contact between damaged dehumidifiers and coolant biofilm in the S03·Noryangjin Line corridor. The mechanical habit of recovering condensate merged with microbial colony behavior, but no intent or control from any former organization remains."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2258,6 +2967,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It forms colonies primarily in the Yongsan Line’s expansion tanks and high-ceilinged valve rooms. During dry periods, it moves to transfer passages on the Noryangjin Line where condensation is plentiful; when dry compressed air pushes in from XT04, it takes refuge at pipe joints that retain moisture."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2269,6 +2987,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs a temperature difference between cold metal surfaces and warm air, a small amount of coolant, and organic dust in the air. Its food source overlaps with the dehumidifier water and metal filter screens that HP05 recovers, so installing a separate condensation plate can reduce conflict."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2280,6 +3007,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle·Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " After emerging, it spreads across the ceiling; once it has enough moisture, it expands, and when the intervals between drops stabilize, it enters stasis. It then passes through a negotiable stage and disintegrates if moisture is exhausted, never growing beyond its resource limit. If its membrane becomes too dry, it releases acidic condensate all at once, so it must be cooled gradually to restore its flexibility."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2291,6 +3027,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior·Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The single large bell core that produces the lowest note becomes the controller, and groups of smaller bells move in time with the dripping intervals. It senses heat and the vibrations of falling water. If F03’s humidity logs conflict with the actual sound of the drops, a human mediator measures again with a portable instrument."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2302,6 +3047,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " Its stage 1 warning takes the form of dropping water in front of a person’s head. If heating rises sharply or forced dehumidification continues, it wets sensors and electrical distribution boxes at stage 2; removing even the large bell core’s condensation plate escalates it to stage 3, when it blocks the entrance to the tank room."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2313,6 +3067,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement·Response:",
+              "strong": true
+            },
+            {
+              "text": " Instead of making a loud bang, use steady strikes on metal to lure the group into an empty tank, then seal the entrance after it moves. Offering a cold ceramic plate as an alternative feeding point draws it away from electrical equipment, while lowering the temperature of each passage in stages also suppresses acidic drips."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2324,6 +3087,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation·Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP05 yields the condensation plate for two hours at night, the colony allows daytime inspection passage and leaves clean water for collection. But this arrangement may reduce dehumidification time for nearby residents; eliminating the entire colony would remove both an early leak warning system and an emergency water source."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2335,6 +3107,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connections:",
+              "strong": true
+            },
+            {
+              "text": " In G19-SC1, decoding the intervals between drops reveals the location of a sealed-off valve room. In G19-SC2, it creates a negotiation over the allocation of dehumidification for residents and water recovery for HP05; in G19-SC3, the order in which dripping stops reveals the direction of the dry pressure entering from XT04."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2351,6 +3132,7 @@
       "kind": "paragraph",
       "anchor": "g19e14-응결종지기-p4",
       "text": {
+        "en": "<a id=\"g19e15\"></a>",
         "ko": "<a id=\"g19e15\"></a>"
       }
     },
@@ -2359,6 +3141,7 @@
       "anchor": "g19e15-압력매듭항해체",
       "depth": 3,
       "text": {
+        "en": "G19E15 · Pressure-Knot Navigator",
         "ko": "G19E15 · 압력매듭항해체"
       }
     },
@@ -2367,12 +3150,15 @@
       "anchor": "g19e15-압력매듭항해체-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"states\":[\"S03\",\"S08\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F03\"]}",
           "ko": "연결: {\"states\":[\"S03\",\"S08\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F03\"]}"
         }
       ]
@@ -2382,42 +3168,52 @@
       "anchor": "g19e15-압력매듭항해체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Pressure-Knot Navigator was a mobile biomechanical variant differentiated from the G19 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "압력매듭항해체은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2428,6 +3224,15 @@
       "anchor": "g19e15-압력매듭항해체-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role·Body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical exploratory species that knots several flexible jointed tubes together and rides pressure waves to travel. Air-bladder chambers inside its body store pump pulses and release them in narrow pipes, while rubbery tentacles at its ends cut away old gaskets for nesting material."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2439,6 +3244,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It appeared after the Collapse when abandoned pressure dampers and thick biofilm combined in the S03·Noryangjin Line cooling corridor. As it came to interpret repeated pump shutdowns and restarts as movement signals, it developed independent colony behavior."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2450,6 +3264,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core territory consists of the floor grooves and backflow-prevention pipes in the Yongsan Line’s pump room. When seasonal maintenance begins, it moves to low-pressure branch lines on the Noryangjin Line; when pressure rises on the XT04 perimeter, it gathers in blocked branch pipes opposite the direction of flow."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2461,6 +3284,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs regular pump pulses, worn gaskets, and organic debris in the coolant. Recovering pressure-damping components reduces its ability to move, so HP05 can manage the competition by supplying unusable rubber rings in a designated area."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2472,6 +3304,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle·Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Its state changes in the order emergence, spread, stasis, negotiability, and disintegration; the number of new knots is limited by available gaskets and pump energy. If an air-bladder chamber’s outlet becomes blocked, it causes water hammer, so the pump must be stopped before its pressure is slowly released with cold cleaning water."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2483,6 +3324,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior·Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single route core acts as controller, indicating the safest pressure intervals, and each group passes one knot along to the next. It senses vibration and electronic noise but cannot determine their cause; if its judgment differs from F03’s pump diagnosis, a human mediator installs a manual pressure gauge."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2494,6 +3344,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns against approaching by placing loosened knots in the floor grooves. Restarting a pump without warning triggers stage 2 infrastructure disruption; if the route core is pressured while the colony mistakes an F03 inspection signal for an attack signal, it rises to stage 3 and seals off the pump room."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2505,6 +3364,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement·Response:",
+              "strong": true
+            },
+            {
+              "text": " Send false pressure pulses through an empty abandoned pipe to divert the group, then block its return route with a cooled barrier plate. Rather than bursting its air-bladder chambers, open a low-pressure outlet to drain its strength; it can then be captured or sealed away without water-hammer damage."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2516,6 +3384,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation·Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP05 provides discarded gaskets and three periods of stable pump operation per day, and the colony creates a low-pressure route for the recovery team. Refusing the deal and forcibly clearing the pipes increases short-term recovery, but removes the Yongsan Line’s pressure-damping function and could send shocks through the civilian water-supply system."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2527,6 +3404,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connections:",
+              "strong": true
+            },
+            {
+              "text": " In G19-SC1, the knot arrangement allows the order in which pumps failed to be traced. In G19-SC2, HP05 negotiates a pump schedule it can use; in G19-SC3, the colony signals rising pressure at XT04 by moving against the flow, allowing evacuation to begin sooner."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2543,6 +3429,7 @@
       "kind": "paragraph",
       "anchor": "g19e15-압력매듭항해체-p4",
       "text": {
+        "en": "<a id=\"g19e16\"></a>",
         "ko": "<a id=\"g19e16\"></a>"
       }
     },
@@ -2551,6 +3438,7 @@
       "anchor": "g19e16-부식막봉합모",
       "depth": 3,
       "text": {
+        "en": "G19E16 · Corrosion-Membrane Stitcher",
         "ko": "G19E16 · 부식막봉합모"
       }
     },
@@ -2559,12 +3447,15 @@
       "anchor": "g19e16-부식막봉합모-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"states\":[\"S03\",\"S08\"],\"theaters\":[\"XT04\"]}",
           "ko": "연결: {\"states\":[\"S03\",\"S08\"],\"theaters\":[\"XT04\"]}"
         }
       ]
@@ -2574,42 +3465,52 @@
       "anchor": "g19e16-부식막봉합모-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Corrosion-Film Sewing Cap was a mobile biomechanical variant differentiated from the G19 common ecology. The local adaptation role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "부식막봉합모은 G19 공통 생태에서 분화한 이동 생체기계 변이다. 지역 적응 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2620,6 +3521,15 @@
       "anchor": "g19e16-부식막봉합모-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role·Body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical repair species that weaves translucent biofilm into gaps in torn cooling pipes and stitches the exterior with metal fibers. Beneath its broad body plate are channels that dissipate heat, while needle-like legs along its edges scrape away rust and compress it into a temporary sealant."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2631,6 +3541,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed after the Collapse, when leak-response materials, corroded metal, and coolant microorganisms in the S03·Noryangjin Line corridor mixed over a long period. Its original repair function remains, but its repair priorities change according to the heat and vibration the colony senses."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2642,6 +3561,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It settles at heat-exchanger joints and on vertical pipes with many signs of leakage along the Yongsan Line. In winter, it moves to cracked pipes shared by heating and cooling systems on the Noryangjin Line; when repeated pressure arrives from the XT04 perimeter, it layers sealing material onto the thickest walls."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2653,6 +3581,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs coolant biofilm, copper and iron corrosion powder, and low levels of waste heat. Because it takes metal joint pieces that HP05 intends to recover for use as sealant, it must be supplied instead with low-value perforated plates and organic filter debris."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2664,6 +3601,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle·Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " An emerging sealing membrane spreads along cracks and enters stasis when pressure stabilizes. After a negotiable stage in which it responds to contact signals, it disintegrates when coolant and metal powder run out; its growth is bound by resources around the crack. If its channels become blocked, the membrane overheats and grips even sound valves, so it must be cooled and peeled away starting at the edges."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2675,6 +3621,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior·Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The oldest stitcher becomes the controller and sets the repair order, while groups allocate their needle-like legs according to the width of each crack. It senses both heat and smell; if the colony keeps sealing a pipe that F03 has judged sound, a human mediator compares samples with pressure records."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2686,6 +3641,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns approaching people by spreading a thin membrane in front of their boots. Tearing off a sealing layer suddenly causes it to wrap valve handles and sensors at stage 2; sharply increasing waste heat raises it to stage 3, when it blocks the entire heat-exchanger area."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2697,6 +3661,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement·Response:",
+              "strong": true
+            },
+            {
+              "text": " Place a cold perforated plate and a feeding film on the far side of the passage to lure its needle-like legs away, then seal the entrance once it has moved into an emptied branch pipe. Cooling and cutting section by section, rather than burning a broad area at once, can preserve seals over actual leaks."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2708,6 +3681,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation·Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP05 provides inexpensive metal plates, the colony seals only three designated sites and withdraws from joint pieces marked for recovery. But a choice must be made about whether to allocate the limited sealant to the market’s cooling pipes or a medical storeroom; indiscriminate eradication increases the risk of leaks at both facilities."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2719,6 +3701,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connections:",
+              "strong": true
+            },
+            {
+              "text": " In G19-SC1, it is the key to finding a crack hidden beneath a sealing layer. In G19-SC2, it creates a choice over how to allocate the perforated plates HP05 has secured; in G19-SC3, it builds a temporary barrier capable of withstanding the XT04 pressure shock."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2736,6 +3727,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -2743,6 +3735,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "The Coolant-Index Fungal Body held most stably on metal surfaces where flow was gentle — heat-exchanger fronts, valve pockets, the protective sleeves of gauges.",
         "ko": "냉각수색인균체는 열교환기 전단, 밸브 포켓 계측기 보호관처럼 흐름이 완만한 금속 표면에서 가장 안정적으로 유지된다."
       }
     },
@@ -2750,6 +3743,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "Its thickness usually stayed thin, but where stagnation ran long, carbonates and corrosion products piled into a mucoid matrix and made a hard layer.",
         "ko": "두께는 보통 얇지만 정체 시간이 길어지면 점액질 기질에 탄산염과 부식 생성물이 쌓여 단단한 층을 만든다."
       }
     },
@@ -2757,6 +3751,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "The surface's color was no biological signal but the result of the bound metal and its oxidation state.",
         "ko": "표면의 색은 생물학적 신호가 아니라 결합된 금속과 산화 상태의 결과다."
       }
     },
@@ -2764,6 +3759,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "The chemical memory this fungal body left was no continuous record.",
         "ko": "이 균체가 남기는 화학적 기억은 연속적인 기록이 아니다."
       }
     },
@@ -2771,6 +3767,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "Under high-flow washing or oxidant dosing some layers stripped away, and the sediment formed after covered the vacancy.",
         "ko": "고유량 세척이나 산화제 투입 때 일부 층이 벗겨지고, 뒤이어 형성된 침전물이 빈자리를 덮는다."
       }
     },
@@ -2778,6 +3775,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "F03 had to use cross-section analysis, pipe position, and flow direction together; color alone could not fix an event's hour.",
         "ko": "F03는 단면 분석과 배관 위치, 유체 흐름 방향을 함께 사용해야 하며 색 하나만으로 사건 시각을 확정할 수 없다."
       }
     },
@@ -2785,6 +3783,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "Its sensing range was limited to the contact surface.",
         "ko": "감지 범위는 접촉면에 한정된다."
       }
     },
@@ -2792,6 +3791,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "The body's viscosity and sediment bonding shifted with temperature, acidity, dissolved oxygen, metal ions, chlorine oxidants, and shear.",
         "ko": "균체는 온도, 산도 용존 산소 금속 이온 염소계 산화제 전단력 변화에 따라 기질의 점도와 침전물 결합 상태가 달라진다."
       }
     },
@@ -2799,6 +3799,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "It could not know a distant branch's state or predict the next operating cycle, and it classified no meaning.",
         "ko": "먼 분기의 상태를 알거나 다음 운전 주기를 예상하지 못하며, 변화의 의미를 분류하지도 않는다."
       }
     },
@@ -2806,6 +3807,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "In normal operation the subtlest problem was sensor fouling.",
         "ko": "정상 운전 중 가장 교묘한 문제는 센서 오염이다."
       }
     },
@@ -2813,6 +3815,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "When a thin film inside a protective sleeve changed acidity and redox potential more slowly than the surrounding coolant, the sensor put out steady numbers.",
         "ko": "보호관 안쪽의 얇은 막이 산도와 산화환원 전위를 주변 냉각수보다 느리게 바꾸면 센서는 안정된 숫자를 내보낸다."
       }
     },
@@ -2820,6 +3823,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "Meanwhile in a narrow far branch corrosion products could grow and flow fall, splitting the on-screen normal values from the true thermal state.",
         "ko": "반면 멀리 떨어진 협소 분기에서는 부식 생성물이 늘고 유량이 떨어질 수 있어, 화면상의 정상값과 실제 열 상태가 갈라진다."
       }
     },
@@ -2827,6 +3831,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "As film thickened in a low-flow branch the pressure loss grew and the flow fell further.",
         "ko": "저유량 분기에 막이 두꺼워지면 압력 손실이 커지고 유량은 더 줄어든다."
       }
     },
@@ -2834,6 +3839,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "Flakes shed in the process caught on downstream orifices and strainers, changing even other branches' flows.",
         "ko": "이 과정에서 생긴 박리편은 하류 오리피스와 스트레이너에 걸려 다른 분기의 흐름까지 바꾼다."
       }
     },
@@ -2841,6 +3847,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "In high heat load, a small distribution error reached outlet temperature rise, and neighboring branches could lose cooling in sequence.",
         "ko": "열부하가 높은 때에는 작은 분배 오차도 출구 온도 상승으로 이어지며, 인접 분기들이 순차적으로 냉각 기능을 잃을 수 있다."
       }
     },
@@ -2848,6 +3855,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "In the field a sacrificial bypass meant to take the fouling was designed broader and lower than the main circuit.",
         "ko": "현장에서는 오염을 받을 희생 바이패스를 본 회로보다 넓고 낮게 설계한다."
       }
     },
@@ -2855,6 +3863,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "When the valve crew steered the shock water there by pressure difference, the fungal layers and the rough metal surface caught metal ions, mineral grains, and flakes.",
         "ko": "밸브 작업조가 압력차를 조절해 충격수를 그쪽으로 보내면 균체층과 거친 금속 표면이 금속 이온, 광물 입자 박리편을 붙잡는다."
       }
     },
@@ -2862,6 +3871,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "This was not the body accepting terms but the result of people adjusting the fluid path and contact area.",
         "ko": "이것은 균체가 조건을 수락하는 행위가 아니라 유체 경로와 접촉 면적을 사람이 조정한 결과다."
       }
     },
@@ -2869,6 +3879,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "Bypass operation had clear limits.",
         "ko": "바이패스 운용에는 분명한 한계가 있다."
       }
     },
@@ -2876,6 +3887,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "The more it trapped, the narrower the pipe's effective cross-section; isolated too late, the piled matter dropped back into the main circuit at once.",
         "ko": "포획량이 늘수록 관의 유효 단면이 줄고, 너무 늦게 격리하면 쌓인 물질이 한꺼번에 떨어져 주 회로로 돌아간다."
       }
     },
@@ -2883,6 +3895,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "The crew timed replacement on F03's pressure-difference estimates and sample analysis, but the actual valve order and cooling-capacity split followed the field heat load first.",
         "ko": "작업조는 F03의 압력차 추정과 시료 분석을 참고해 교체 시점을 잡지만, 실제 밸브 순서와 냉각 용량 배분은 현장 열부하를 보. 결정한다."
       }
     },
@@ -2890,6 +3903,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "When a heat-exchanger wall cracked, the problem changed character.",
         "ko": "열교환기 관벽에 균열이 생기면 문제의 성격이 달라진다."
       }
     },
@@ -2897,6 +3911,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "With pressure higher on the coolant side, chemicals and fungal fragments moved into the drinking water and could consume residual disinfectant.",
         "ko": "냉각수 측 압력이 높으면 약품과 균체 조각이 음용수 쪽으로 이동하고 잔류 소독제를 소모할 수 있다."
       }
     },
@@ -2904,6 +3919,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "With pressure higher on the drinking side, the cooling circuit diluted and the corrosion-inhibition balance broke — either way demanded immediate pressure separation and point-of-use shutoff.",
         "ko": "반대로 음용수 측 압력이 높으면 냉각회로가 희석되어 부식 억제 균형이 깨지므로, 어느 방향이든 즉각적인 압력 분리와 사용 지점 차단이 필요하다."
       }
     },
@@ -2911,6 +3927,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "After an accident, whether to preserve the index spool or return it to cooling service became the weighty choice.",
         "ko": "사고 뒤에는 색인 스풀을 보존할지 냉각 경로로 되돌릴지가 중요한 선택이 된다."
       }
     },
@@ -2918,6 +3935,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "A preserved pipe gave data narrowing the order of water-quality shocks and pressure reversals, but the cooling area usable while sealed shrank.",
         "ko": "보존된 관은 수질 충격과 압력 역전의 순서를 좁히는 자료를 제공하지만, 봉인한 동안 사용할 수 있는 냉각 면적이 감소한다."
       }
     },
@@ -2925,6 +3943,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "Emergency opening restored heat removal but washed the layered traces away and could shake the contamination boundary again, so the crew first computed lives, drinking-water safety, and the immediately needed thermal capacity, then weighed them against F03's diagnostic value.",
         "ko": "비상 개방은 열제거 능력을 회복시키는 대신 층상 흔적을 씻어내. 오염 경계를 다시 흔들 수 있으므로, 작업조는 인명·음용수 안전과 즉시 필요한 열용량을 먼저 계산한 뒤 F03 진단 가치와 비교한다."
       }
     }

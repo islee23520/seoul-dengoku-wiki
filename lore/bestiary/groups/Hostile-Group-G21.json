@@ -5,6 +5,7 @@
   "slug": "hostile-group-g21",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G21 · Communication-Root Fungal Bodies",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G21 · 통신근균체",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g21-통신근균체",
       "depth": 1,
       "text": {
+        "en": "G21 · Communication-Root Fungal Bodies",
         "ko": "G21 · 통신근균체"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g21-통신근균체-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "In the field the Communication-Root Fungal Bodies showed as a gray-white film and slender bundles of teal fiber. Rather than boring through the optical fiber itself, it grew along the scratches of the sheath, the borders of the splice gel, and the condensation faces of the metal fixtures. Under work lamps its color barely changed, but when a steady pulse train flowed, a weak potential difference could be measured.",
         "ko": "현장에서 통신근균체는 회백색 막과 가느다란 청록색 섬유 다발로 보인다. 광섬유 자체를 뚫기보다는 외피의 흠집, 접속 젤의 경계 금속 고정부의 응결면을 따라 자란다. 작업등 아래에서는 색 변화가 거의 없지만 일정한 펄스열이 흐를 때 약한 전위차가 측정된다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The Communication-Root Fungal Bodies' common ecology responded passively to facility surfaces and the local environment. The G21E identifiers marked biomechanical variants whose movement and work functions had differentiated within that environment; they were not treated as one individual with the common film or the whole installation.",
         "ko": "통신근균체의 공통 생태는 시설 표면과 국소 환경에 수동적으로 반응한다. G21E 식별자는 그 환경에서 이동·작업 기능이 분화된 생체기계 변이를 가리키며, 공통 막이나 설비 전체와 같은 개체로 취급하지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "The conduit-repair remnants of the Amsa–Godeok merchant band and the temporary relay hub of the Bukhansan Bogukmun Refugee League overlapped in the same damp stretch, and the Communication-Root Fungal Bodies, which misread optical pulses as a nutrient rhythm, arose as a Seoul fiction. / It does not name any real portal or telecom corporation.",
             "ko": "암사·고덕 상수단의 관로 보수 잔재와 북한산보국문 피난 연맹의 임시 중계 허브가 같은 습기 구간에 겹치며, 광 펄스를 영양 리듬으로 오독하는 통신근균체가 서울 창작으로 발생했다. / 실재 포털·통신 법인을 지목하지 않는다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The underground conduits of the Gwangjin Line Escort Protection State were the core habitat. / When refugee traffic rose the hyphae reached toward the temporary relay boxes of the Yeouido Line Sangha Relief State, and they thinned toward the outskirts in answer to vibration on the quarantine communications detour from XT01 the Imjin River Gate Theater.",
             "ko": "광진선 호위보호정 지하 관로가 핵심 서식이다. / 피난 트래픽이 늘면 여의도선 승가구휼정 임시 중계함으로 균사가 뻗고, XT01 임진강관문전구 쪽 검역 통신 우회선 진동에 반응해 외곽으로 가늘어진다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "Leaked optical pulses, conduit condensation, jacket-polymer crumbs, and relay-box waste heat were the conditions that held the film's ion array. / As delay grew, the merchant band's inventory-sync cost rose, and it competed with the spare cores that HP07 the Hangangjin Bridge Council had meant for the bridge sensor net. / Retransmission power from F05 the Transmission Relay (Junggye) increased the waste heat and thickened the film.",
             "ko": "광 펄스 누설 관로 결로 피복 고분자 부스러기 중계함 폐열이 막의 이온 배열을 유지하는 조건이다. / 지연이 커질수록 상단의 재고 동기화 비용이 오르고, HP07 한강진교량공회가 교량 센서망에 쓰려던 예비 심선과 경합한다. / F05 송신중계의 재전송 전력은 폐열을 늘려 막을 두껍게 한다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "1 dust adhesion at splice gel and sheath scratches → 2 hyphal layer forming under moisture and waste heat → 3 ionic alignment matched to repeated pulse intervals buffering jitter → 4 the correction vanishing at once when the environment changed → 5 severance after drying and heat blocking. Spread was bound to condensation and waste-heat sections; the decision to empty or bypass core wire belonged to the operators.",
             "ko": "1 접속 젤·외피 흠집에 먼지 부착 → 2 습기·폐열 아래 균사층 형성 → 3 반복 펄스 간격에 맞춘 이온 배열로 지터 완충 → 4 환경이 바뀌면 보정이 한꺼번에 사라짐 → 5 건조·열차단 후 단절. 확장은 결로와 폐열 구간에 묶이며, 심선을 비우거나 우회하는 결정은 운영자가 한다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "It reacted only to changes in the time interval between optical pulses, in ambient temperature, and in water activity. / It could not tell packet contents from addresses, line owners, or communications purpose, and it understood neither names nor commands.",
             "ko": "광펄스 사이의 시간 간격 주변 온도 수분 활성도의 변화에만 반응한다. / 패킷의 내용과 주소 회선 소유자 통신 목적은 구별하지 못하며 이름이나 명령을 이해하지도 않는다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "At each joint box a local film answered pulse interval and humidity on its own, and there was no higher command nucleus. / Human exchange operators fixed the priority queues and dark-fiber assignments by hand, and the F05 log reported only the delay count.",
             "ko": "접속함마다 국소 막이 제각기 펄스 간격과 습도에 반응하며 상위 지휘 핵은 없다. / 인간 교환원이 우선순위 큐와 암선로 배정을 손으로 고정하고, F05 로그는 지연 횟수만 보고한다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The common facility ecology had no command core. Even the coordinating individuals of the mobile variants reacted only within their assigned conduit or work section, and stood in for neither human facility authority nor unit command.",
         "ko": "공통 시설 생태에는 지휘 핵이 없다. 이동 변이의 조정 개체도 맡은 관로·작업 구간 안에서만 반응하며, 사람의 시설 운영권과 부대 지휘권을 대신하지 않는다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G21E01 · Pulse-Weaving Tapeworm",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E01 · 맥로직조충",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E02 · Frostpulse Bell",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E02 · 서리맥박종",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E03 · Noise Spore Sac",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E03 · 잡음포자낭",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E04 · Optic-Vein Lamplighter",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E04 · 광맥등지기",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E05 · Organic Junction Tree",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E05 · 유기접속목",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E06 · Scrap-Jointed Carrier",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E06 · 철편관절사",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E07 · Condensation Drummer",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E07 · 결로북장이",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E08 · Scent-Circuit Guide",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E08 · 향회선유도자",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E09 · Suture Exchanger",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E09 · 봉합교환체",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E10 · Severance Gatekeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E10 · 단절문지기",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M033",
             "ko": "M033"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E11 · Beat-Sac Delay Store",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E11 · 박자낭 지연고",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E12 · Pulse-Relay Weaver",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E12 · 맥동중계 편직수",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E13 · Cooling-Pipe Listening Sac",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E13 · 냉각관 청음낭",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E14 · Packet-Spore Guide",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E14 · 패킷포자 길잡이",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E15 · Insulation-Film Knot King",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E15 · 절연피막 매듭왕",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G21E16 · Echo-Line Burrower",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G21",
+                  "anchor": "g21e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G21E16 · 잔향회선 굴착지",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M034",
             "ko": "M034"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g21e01\"></a>",
         "ko": "<a id=\"g21e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g21e01-맥로직조충",
       "depth": 3,
       "text": {
+        "en": "G21E01 · Pulse-Weaving Tapeworm",
         "ko": "G21E01 · 맥로직조충"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g21e01-맥로직조충-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g21e01-맥로직조충-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Pulse-Logic Weaving Worm was a mobile biomechanical variant differentiated from the G21 common ecology. The command · coordination role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "맥로직조충은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 지휘·조정 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -736,6 +1034,15 @@
       "anchor": "g21e01-맥로직조충-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A six-segmented weaver that travels along fiber-optic cable sheathing. It uses ceramic combs on its forelegs to tie broken fungal threads together, and piezoelectric sacs on its back to detect vibrations and electronic noise as it repairs the colony’s communication routes."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -747,6 +1054,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It follows the fictional Seoul setting in which a lineage of communications myco-organisms emerged after the Collapse, when damaged communication lines and mycorrhizal tissue became entangled in the S05–Yeouido Line corridor. Irregular signals left in abandoned lines determined its direction of growth, but it cannot understand their contents or identify their senders."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -758,6 +1074,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Cable racks in the Gwangjin Line’s underground utility tunnels are its primary habitat. During the monsoon, it follows humidity into the Yeouido Line’s drainage corridors. When it detects strong pressure on the outskirts of XT01, it retreats into the inner conduits and weaves the passages more densely."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -769,6 +1094,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It feeds on the faint warmth beneath cable sheathing and small amounts of organic adhesive, using its remaining energy to charge its piezoelectric sacs. Its population stops growing when resources reach their upper limit, so its feeding grounds readily overlap with HP07’s abandoned-cable recovery work."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -780,6 +1114,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through five stages: emergence, spread, stagnation, negotiation, and disintegration. If metal dust clogs its ceramic combs, it tightens knots excessively and compresses even working lines. Washing the combs with a mist of coolant can stabilize its activity before it disintegrates."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -791,6 +1134,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The thickest weaver becomes the controller and directs the colony through vibrations in its knots. When F05’s composite sensor logs conflict with traces at the site, it waits for a test signal from an HP07 human mediator; it cannot perceive circumstances beyond vibrations and electronic noise."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -802,6 +1154,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it hangs loose fiber loops as a warning; at stage 2, it causes communication delays and intermittent line breaks. If HP07 removes a designated feeding area without warning, it advances to stage 3 and seals the utility-tunnel entrance. At that point, the window for negotiation is about to close."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -813,6 +1174,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Steady low-frequency noise can guide the colony toward empty cables. Its piezoelectric output can then be lowered with localized cooling, and its route sealed with insulating tape. Laying an alternative feeding line and separating only the key knots causes less communication damage than indiscriminate cutting."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -824,6 +1194,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can trade discarded sheathing and organic adhesive for two hours of nighttime passage through the utility tunnels. Eliminating every individual increases the immediate amount recovered, but also destroys the ecological repair function that tied together fine cracks in communication lines, along with the citizens’ contact network."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -835,6 +1214,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1, it appears both as the key to temporarily reconnecting a severed rescue signal and as an obstacle to passage. If personnel at the site preserve the designated feeding line, a nonlethal bypass opens through the Gwangjin Line’s sealed section in G21-SC3."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -851,6 +1239,7 @@
       "kind": "paragraph",
       "anchor": "g21e01-맥로직조충-p4",
       "text": {
+        "en": "<a id=\"g21e02\"></a>",
         "ko": "<a id=\"g21e02\"></a>"
       }
     },
@@ -859,6 +1248,7 @@
       "anchor": "g21e02-서리맥박종",
       "depth": 3,
       "text": {
+        "en": "G21E02 · Frostpulse Bell",
         "ko": "G21E02 · 서리맥박종"
       }
     },
@@ -867,12 +1257,15 @@
       "anchor": "g21e02-서리맥박종-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -882,42 +1275,52 @@
       "anchor": "g21e02-서리맥박종-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Frost-Pulse Bell was a mobile biomechanical variant differentiated from the G21 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "서리맥박종은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -928,6 +1331,15 @@
       "anchor": "g21e02-서리맥박종-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " Coolant capillaries and fiber-optic tendrils coil inside its bell-shaped body, which hangs from the ceiling. It sends signals by striking a membrane that contracts with temperature changes, and reads both heat and pipe vibrations to locate overheated areas."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -939,6 +1351,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It is a branch of communications myco-organisms formed after the Collapse, when mycorrhizal membranes and residual communication signals attached to leaking coolant pipes in the S05–Yeouido Line corridor. This is a fictional origin within Seoul: Nationwide, not a history of real-world technology."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -950,6 +1371,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Condensation-covered ceilings above the Gwangjin Line switching room are its main habitat. When the dry season arrives, it migrates seasonally to the Yeouido Line’s cold-storage passage. When pressure on the outskirts of XT01 rises, several layers of them gather around cold valve rooms."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -961,6 +1391,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It circulates leaking coolant and a small amount of electricity to maintain the temperature of its body membrane. If HP07 recovers all the coolant, the bell membrane dries out; conversely, an excessive supply causes pipe corrosion before it increases the population."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -972,6 +1411,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " A small droplet membrane emerges, spreads, and takes on a bell shape. After stagnation, negotiation becomes possible on the condition of a regular coolant supply. If limescale blocks its capillaries, it sounds false overheating alarms before disintegrating, so gentle vibrational cleaning is necessary."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -983,6 +1431,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One large bell with the lowest tone is the controller, while smaller bells move as a colony along temperature gradients. If F05 marks a heat source incorrectly, they do not immediately follow its indication; they first check a reference temperature panel installed by a human mediator."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -994,6 +1451,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it drops cold droplets onto passersby’s heads. At stage 2, it repeatedly opens and closes cooling valves, disrupting servers and the lighting network. If hot equipment is brought into its habitat, it advances to stage 3 and blocks the site with a frost membrane."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1005,6 +1471,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Sudden heating is prohibited because it can rupture pipes. Ventilation noise and gradual cooling should instead guide the colony into an empty storage room. Sealing individual valves while installing a bypass cooling tank can open a route without harming the bell membranes."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1016,6 +1491,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can supply some purified coolant in exchange for daytime access to the valve room. Eliminating the Frostpulse Bells reduces competition for coolant, but removes the warning network that provided early notice of overheating on the Gwangjin Line, increasing the fire risk to civilian facilities."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1027,6 +1511,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC2, they are the party with whom coolant allocations must be negotiated, and the choice of which valves to keep operating changes the route to the Yeouido Line. In G21-SC3, the intervals between their chimes provide an on-site clue that pressure is rising on the outskirts of XT01."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1043,6 +1536,7 @@
       "kind": "paragraph",
       "anchor": "g21e02-서리맥박종-p4",
       "text": {
+        "en": "<a id=\"g21e03\"></a>",
         "ko": "<a id=\"g21e03\"></a>"
       }
     },
@@ -1051,6 +1545,7 @@
       "anchor": "g21e03-잡음포자낭",
       "depth": 3,
       "text": {
+        "en": "G21E03 · Noise Spore Sac",
         "ko": "G21E03 · 잡음포자낭"
       }
     },
@@ -1059,12 +1554,15 @@
       "anchor": "g21e03-잡음포자낭-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"synthetics\":[\"F05\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"synthetics\":[\"F05\"]}"
         }
       ]
@@ -1074,42 +1572,52 @@
       "anchor": "g21e03-잡음포자낭-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Noise Spore Pouch was a mobile biomechanical variant differentiated from the G21 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "잡음포자낭은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1120,6 +1628,15 @@
       "anchor": "g21e03-잡음포자낭-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A pouch-shaped biomechanical organism that attaches to cable junction boxes. It vibrates metallic spore plates inside its body to absorb nearby radio noise and release it on another frequency band. The whisker-like membrane on its side detects smells and electronic noise, but cannot directly identify something beyond a wall."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1131,6 +1648,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A communications myco-organism formed when mycorrhizal membranes combined with signal-shielding material inside junction boxes left in the S05–Yeouido Line corridor. Its ecology is wholly fictional, based on Seoul’s fragmented communications environment after the Collapse."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1142,6 +1668,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It prefers closed junction boxes in the Gwangjin Line transfer communications room. When spring ventilation begins, it follows the smell of dust to the wiring of signs on the Yeouido Line. When a pressure wave arrives from XT01, it descends into enclosures closer to the ground."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1153,6 +1688,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs oxidized scrap-metal dust and a weak electric current. If HP07’s scrap recovery crew completely empties the junction boxes, its food supply drops sharply. Leaving designated disused boxes in place, however, keeps its population stable within the resource limit."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1164,6 +1708,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " The thin membrane that emerges gathers noise as it spreads, then enters stagnation when its spore plates are full. If dust blocks its outlet, it may broadcast all the noise it has absorbed at once, risking a jump past the stage at which negotiation is possible. Applying a grounding mesh can safely induce disintegration."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1175,6 +1728,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A large sac in the oldest junction box acts as controller and determines the order of noise emissions. The colony treats five to nine boxes as a unit. If F05 logs differ from the actual scent markers, it postpones movement until a human investigator takes samples."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1186,6 +1748,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " Its stage 1 warning appears as a short burst of white noise on the radio. At stage 2, it pushes a rescue channel onto another band. If HP07 forcibly removes the box containing the controller, it advances to stage 3 and seals off the entire junction room with a barrier of noise."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1197,6 +1768,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Strong wideband transmissions should be avoided, as they effectively increase its food supply. An effective approach is to seal the boxes with grounding cloth, place a metal-dust feeder beside an unused line, and restrict its route with short, steady noise signals."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1208,6 +1788,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can ask it to leave one emergency rescue channel clear in exchange for preserving three disused junction boxes. Burning them all briefly reduces noise, but also removes the buffer layer that absorbed dangerous radio interference, leaving people with limited access to communications to suffer first."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1219,6 +1808,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1, restoring a distorted rescue call to its original band is an optional objective involving it. If the promise to preserve junction boxes is kept in G21-SC2, the first formal resource agreement between HP07 and the colony takes effect."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1235,6 +1833,7 @@
       "kind": "paragraph",
       "anchor": "g21e03-잡음포자낭-p4",
       "text": {
+        "en": "<a id=\"g21e04\"></a>",
         "ko": "<a id=\"g21e04\"></a>"
       }
     },
@@ -1243,6 +1842,7 @@
       "anchor": "g21e04-광맥등지기",
       "depth": 3,
       "text": {
+        "en": "G21E04 · Optic-Vein Lamplighter",
         "ko": "G21E04 · 광맥등지기"
       }
     },
@@ -1251,12 +1851,15 @@
       "anchor": "g21e04-광맥등지기-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}"
         }
       ]
@@ -1266,42 +1869,52 @@
       "anchor": "g21e04-광맥등지기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Light-Pulse Lampkeeper was a mobile biomechanical variant differentiated from the G21 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "광맥등지기은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1312,6 +1925,15 @@
       "anchor": "g21e04-광맥등지기-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A lighthouse-like individual that stands on a fiber-optic distribution box on three legs. It sends pulses of light through a transparent spinal tube to mark the colony’s direction of travel, and detects changes in floor vibration and heat to choose safe conduits."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1323,6 +1945,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A communications myco-organism variant formed after the Collapse when test light from an optical circuit linking the Gwangjin and Yeouido Lines became trapped in mycorrhizal tubular tissue. It uses light as a signal but cannot fully preserve or interpret the records carried within it."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1334,6 +1965,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The Gwangjin Line’s closed fiber-optic distribution room is its core territory. In winter, it moves to a warm Yeouido Line platform equipment room. As pressure on the outskirts of XT01 grows, it stands at passage intersections and flashes only toward the interior."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1345,6 +1985,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It consumes residual electricity and the minute heat at fiber-optic ends. Although it needs almost none of the scrap metal HP07 recovers, attaching itself to an active circuit by mistake can deprive civilian communications of optical power."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1356,6 +2005,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It begins as a faint point of light at emergence, spreads into a network of route markers, and stagnates once a travel route has been established. Air bubbles in its spinal tube cause a malfunction that makes it point in the opposite direction. Standing the tube upright at a low temperature to release the bubbles returns it to a state in which negotiation is possible."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1367,6 +2025,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The highest-positioned lamplighter is the controller; the others act as a colony that relays its light. If a route F05’s sensors deem safe differs from the actual heat flow, they follow physical markers placed by a human mediator first."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1378,6 +2045,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns of an approach with red flashes. At stage 2, it creates false optical routes that disrupt automatic doors and the signage network. If the controller’s line of sight is blocked, it advances to stage 3 and barricades the distribution-room entrance with legs and fiber membranes."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1389,6 +2065,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Low-brightness guide lights should be used instead of irregular flashes, and its spinal tube should be cooled to slow its movement. The colony can be moved without damage by connecting an unused optical fiber as a decoy route, then shielding and sealing the active circuit."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1400,6 +2085,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can trade power for nighttime guide lights for a schedule requiring the lamplighters to vacate the fiber-optic distribution room during the day. Destroying them indiscriminately resolves the circuit-occupancy problem, but also eliminates the living signage network that marked evacuation directions during blackouts."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1411,6 +2105,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC3, it uses light to indicate one of three routes that can lift the blockade of the Gwangjin Line base. Repairing its spinal-tube malfunction in G21-SC1 can prevent a rescue team from entering the wrong Yeouido Line passage."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1427,6 +2130,7 @@
       "kind": "paragraph",
       "anchor": "g21e04-광맥등지기-p4",
       "text": {
+        "en": "<a id=\"g21e05\"></a>",
         "ko": "<a id=\"g21e05\"></a>"
       }
     },
@@ -1435,6 +2139,7 @@
       "anchor": "g21e05-유기접속목",
       "depth": 3,
       "text": {
+        "en": "G21E05 · Organic Junction Tree",
         "ko": "G21E05 · 유기접속목"
       }
     },
@@ -1443,12 +2148,15 @@
       "anchor": "g21e05-유기접속목-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -1458,42 +2166,52 @@
       "anchor": "g21e05-유기접속목-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Organic Junction Tree was a mobile biomechanical variant differentiated from the G21 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "유기접속목은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1504,6 +2222,15 @@
       "anchor": "g21e05-유기접속목-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A small, tree-shaped stationary organism that grows from a wall, with root terminals that alternately wrap around cables and drainage pipes. Porous panels in place of leaves detect smells and heat, while fruit-shaped relay sacs store the colony’s simple passage signals."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1515,6 +2242,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A communications myco-organism formed after long contact between organic waste and communications terminal materials accumulated in the S05–Yeouido Line corridor following the Collapse. Recent signals overwrite older ones in its relay sacs, so they cannot serve as complete memory devices."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1526,6 +2262,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It takes root in damp wall crevices behind the Gwangjin Line food distribution center. During seasons when organic matter is scarce, it extends branches into the basement of the Yeouido Line market. When pressure from XT01 grows stronger, it concentrates its roots in the inner drainage pipes."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1537,6 +2282,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It maintains its body by breaking down food scraps and fibrous organic matter. This puts it in direct competition with HP07’s sanitation recovery work. Supplying only separately collected inedible remnants, however, keeps it within its resource limit without affecting citizens’ food."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1548,6 +2302,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " An emerging root nodule spreads along organic matter and stagnates once it covers a wall. High salinity in drainage water causes a malfunction in which its relay sacs swell and repeat old warnings. After a freshwater rinse, it enters the negotiable stage; if nutrients then run out, it disintegrates."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1559,6 +2322,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A thick central trunk is the controller, with a small colony under each branch. If F05 mistakes a waste pile for a survivor, it gives priority to a human mediator’s scent sample and heat-check results and stops extending its roots."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1570,6 +2342,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it emits a bitter smell to deter approach. At stage 2, it seizes drains and distribution-center terminals at the same time, disrupting operations. If the promised organic-matter delivery dates are missed repeatedly, it advances to stage 3 and closes the entrance to the market basement with a wall of roots."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1581,6 +2362,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Place strongly scented organic bait in an empty compost room, use a freshwater mist to make the roots contract, then seal only the entrances with an insulating membrane. Fire would damage the drainage pipes and food storage as well, so blocking routes and transplanting it in stages is safer."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1592,6 +2382,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can allocate an area for discarded organic matter that meets sanitation standards in exchange for access to two drains and the distribution terminals. Hasty removal reduces the source of foul odors, but also eliminates its waste-decomposition function, increasing disease risk on the Gwangjin Line and the sanitation burden on vulnerable residents."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1603,6 +2402,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC2, it presents a resource-allocation problem between sanitation at the distribution center and ecological preservation. In G21-SC3, recent passage signals left in its relay sacs can be read to estimate the timing of seasonal migration to the Yeouido Line."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1619,6 +2427,7 @@
       "kind": "paragraph",
       "anchor": "g21e05-유기접속목-p4",
       "text": {
+        "en": "<a id=\"g21e06\"></a>",
         "ko": "<a id=\"g21e06\"></a>"
       }
     },
@@ -1627,6 +2436,7 @@
       "anchor": "g21e06-철편관절사",
       "depth": 3,
       "text": {
+        "en": "G21E06 · Scrap-Jointed Carrier",
         "ko": "G21E06 · 철편관절사"
       }
     },
@@ -1635,12 +2445,15 @@
       "anchor": "g21e06-철편관절사-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -1650,42 +2463,52 @@
       "anchor": "g21e06-철편관절사-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Iron-Piece Jointsmith was a mobile biomechanical variant differentiated from the G21 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "철편관절사은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1696,6 +2519,15 @@
       "anchor": "g21e06-철편관절사-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A four-legged carrier that weaves discarded metal fragments into joint plates. A mycorrhizal belt under its belly sorts scrap metal, and sensory needles at its feet read vibrations and metallic smells to find supply routes for the colony."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1707,6 +2539,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A communications myco-organism formed after the Collapse when broken parts on the Gwangjin Line maintenance track combined with mycorrhizal membranes from the Yeouido Line corridor. It uses the arrangement of metal like a signal but cannot determine a part’s original purpose or ownership on its own."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1718,6 +2559,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Rail grooves in the Gwangjin Line vehicle maintenance bay are its main habitat. During the thaw, it transports scrap metal to the Yeouido Line warehouse area. When vibrational pressure on the outskirts of XT01 increases, it gathers heavy steel plates at the Gwangjin Line entrance."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1729,6 +2579,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs rusty scrap metal and a little organic oil to lubricate its joints. Because it competes most directly with HP07’s recovery crew, usable parts and discarded parts must be strictly distinguished with physical markers."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1740,6 +2599,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It emerges as a small bundle of joints, spreads along scrap piles, and stagnates once its transport route is complete. If its lubricating membrane hardens, it mistakes equipment still in use for scrap and tears it away. Providing low-temperature lubricant calms it into a negotiable state, after which it disintegrates naturally if resources run short."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1751,6 +2619,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The carrier with the heaviest chest plate is the controller and sets the sequence of footfalls. If F05’s asset-classification logs differ from on-site markers, the colony stops transporting material until a human mediator distinguishes it again using chalk and scent markers."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1762,6 +2639,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it stands metal fragments on the rails as a warning. At stage 2, it removes doors and generator covers, disrupting infrastructure. If the marked scrap-metal stockpile is emptied, it advances to stage 3 and barricades the maintenance bay with a wall of steel plates."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1773,6 +2659,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " A magnetic noise source installed at an empty stockpile can lure the colony. Cooling its joints and sealing both ends of a passage can then restrict its movement. Establishing an insulated route between scrap provided as food and essential equipment is more effective than destroying the carriers directly."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1784,6 +2679,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can hand over a set proportion of scrap metal in exchange for guaranteed access to generator parts and daytime use of the rails. Eliminating the carriers increases the amount recovered, but also removes the transport labor that clears collapsed debris and opens passages, slowing rescue efforts."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1795,6 +2699,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1, it acts as a movement variable, either opening or blocking the route for a cart loaded with rescue equipment. In G21-SC2, a scrap-sorting agreement makes it a neutral force that reduces HP07’s later recovery costs."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1811,6 +2724,7 @@
       "kind": "paragraph",
       "anchor": "g21e06-철편관절사-p4",
       "text": {
+        "en": "<a id=\"g21e07\"></a>",
         "ko": "<a id=\"g21e07\"></a>"
       }
     },
@@ -1819,6 +2733,7 @@
       "anchor": "g21e07-결로북장이",
       "depth": 3,
       "text": {
+        "en": "G21E07 · Condensation Drummer",
         "ko": "G21E07 · 결로북장이"
       }
     },
@@ -1827,12 +2742,15 @@
       "anchor": "g21e07-결로북장이-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -1842,42 +2760,52 @@
       "anchor": "g21e07-결로북장이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Condensation Drummer was a mobile biomechanical variant differentiated from the G21 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "결로북장이은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1888,6 +2816,15 @@
       "anchor": "g21e07-결로북장이-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A corridor signaler that stretches moisture membranes across both sides of its round, drumlike body. It beats out pressure waves with the membranes’ tension to summon its colony, and gauges the size of approaching groups by detecting air vibrations and changes in scent concentration."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1899,6 +2836,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A communications myco-organism formed when condensation membranes in a Gwangjin Line ventilation shaft reacted to mycorrhizal fibers and communication vibrations drifting in from the Yeouido Line. Air currents strongly affect its readings, so it cannot accurately identify hidden targets."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1910,6 +2856,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It occupies resonant spaces between the Gwangjin Line ventilation room and stair landings. In summer, it moves to humid Yeouido Line platform passages. When pressure arrives from the outskirts of XT01, several individuals coordinate a defensive rhythm deeper inside the Gwangjin Line."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1921,6 +2876,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs condensation water and thin metal bands to reinforce the rim of its drum body. If HP07 dries the ventilation room too thoroughly, the colony may move into citizens’ residential levels in search of water, so residual coolant must be circulated in limited amounts."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1932,6 +2896,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It emerges as a small vibrating membrane and spreads among resonant locations, stagnating when its rhythmic network is complete. A tear on one side of the membrane causes a malfunction that swaps its warning and attack signals. Repairing it with sealing tape and coolant restores a rhythm that permits negotiation."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1943,6 +2916,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The drummer with the deepest tone is the controller, and colonies in each corridor confirm orders with response rhythms. If F05’s vibration analysis conflicts with a human guard’s visual report, the colony gives priority to the on-site mediator’s three-beat stop signal."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1954,6 +2936,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it sounds three slow beats in the distance. At stage 2, it makes ventilation fans and automatic doors resonate, disrupting their operation. If gunfire or an explosion answers its warning rhythm, it advances to stage 3 and barricades the stair landing with moisture membranes and debris."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1965,6 +2956,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Instead of making loud impact sounds, cover its rhythm with a steady low tone, cool the membrane to reduce its tension, then seal entrances with sound-absorbing material. Placing a small container of condensation water in an empty corridor can draw the colony away from residential levels."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1976,6 +2976,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can supply condensation water at set times and share its nighttime warning rhythms as disaster signals. Destroying the drummer colony outright removes the noise hazard, but also loses the early warning it gives of pressure changes from XT01 and signs of impending collapse."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1987,6 +2996,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC3, the difference between three beats and five is a crucial clue for distinguishing an actual attack from an outer pressure wave. In G21-SC1, repairing a torn membrane shortens the rescue team’s entry time."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2003,6 +3021,7 @@
       "kind": "paragraph",
       "anchor": "g21e07-결로북장이-p4",
       "text": {
+        "en": "<a id=\"g21e08\"></a>",
         "ko": "<a id=\"g21e08\"></a>"
       }
     },
@@ -2011,6 +3030,7 @@
       "anchor": "g21e08-향회선유도자",
       "depth": 3,
       "text": {
+        "en": "G21E08 · Scent-Circuit Guide",
         "ko": "G21E08 · 향회선유도자"
       }
     },
@@ -2019,12 +3039,15 @@
       "anchor": "g21e08-향회선유도자-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -2034,42 +3057,52 @@
       "anchor": "g21e08-향회선유도자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Scent-Line Guide was a mobile biomechanical variant differentiated from the G21 common ecology. The elite breakthrough role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "향회선유도자은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 정예 돌파 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2080,6 +3113,15 @@
       "anchor": "g21e08-향회선유도자-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A guide individual that crawls low like a cart and draws fragrant resin films over cables. Conductive feelers at the front sense electronic noise, and a chemical plate on the underside senses scent trails, so it separates the swarm's travel routes."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2091,6 +3133,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A comm mycelium formed after the Collapse, when mycorrhizal tissue grew in insulating resin leaked between the Gwangjin Line and the Yeouido Line and fused with lingering communication echoes. Scent marks fade over time, so they are neither a permanent map nor a perfect record of movement."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2102,6 +3153,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core habitat is the narrow maintenance gaps under the Gwangjin Line cable trays. In the turn of the seasons it moves to the warm cable ducts of the Yeouido Line, and when the XT01 pressure signal grows strong it turns its scent paths toward bypasses inside the Gwangjin Line."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2113,6 +3173,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs organic insulating resin and a weak current. It competes with the resin HP07 uses for sealing work, so old stock must be set aside as feed and new stock coated with a repellent scent."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2124,6 +3193,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It appears as dotted resin films, spreads scent paths, and stagnates once the routes harden. If its chemical plate sits in coolant too long it swaps evacuation routes with feeding routes, and maintenance in a dry sealed room restores it to the negotiable stage."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2135,6 +3213,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single guide that keeps the longest scent line is the controller, and the following swarm sets its pace by the spacing of the marks. When a route recommended by F05 differs from the civilian evacuation signs, it blocks both paths until a human mediator lays a new scent sample."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2146,6 +3233,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1 it warns with a pungent resin smell. At stage 2 it lures automated carriers and patrols into the wrong ducts, and if feeding resin is stored on an evacuation route, at stage 3 it seals that path with a thick insulating film."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2157,6 +3253,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and Countermeasures:",
+              "strong": true
+            },
+            {
+              "text": " Push the scent to one side with ventilation noise, slow the curing of the resin film with cold air, then draw a boundary with repellent scent marks. A bypass of leaving feeding resin in an empty duct exists, and fire should be avoided because of toxic smoke."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2168,6 +3273,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can trade waste-resin supply for a passage timetable and train the guide to leave neutral scent on civilian evacuation routes. Removing the whole swarm ends the competition for materials, but gives up the low-tech evacuation network that marked the way by smell even during blackouts."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2179,6 +3293,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Links:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1 it marks rescue routes through the smoke-filled Gwangjin Line corridor. In G21-SC2 a wrong choice of resin storage triggers the stage-3 seal, and keeping the agreement safely diverts the seasonal movement on the Yeouido Line."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2195,6 +3318,7 @@
       "kind": "paragraph",
       "anchor": "g21e08-향회선유도자-p4",
       "text": {
+        "en": "<a id=\"g21e09\"></a>",
         "ko": "<a id=\"g21e09\"></a>"
       }
     },
@@ -2203,6 +3327,7 @@
       "anchor": "g21e09-봉합교환체",
       "depth": 3,
       "text": {
+        "en": "G21E09 · Suture Exchanger",
         "ko": "G21E09 · 봉합교환체"
       }
     },
@@ -2211,12 +3336,15 @@
       "anchor": "g21e09-봉합교환체-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"],\"scenarios\":[\"G21-SC3\"]}",
           "ko": "연결: {\"states\":[\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"],\"scenarios\":[\"G21-SC3\"]}"
         }
       ]
@@ -2226,42 +3354,52 @@
       "anchor": "g21e09-봉합교환체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Sealing Exchanger was a mobile biomechanical variant differentiated from the G21 common ecology. The elite blocking role applied only at the swarm-consist scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "봉합교환체은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 정예 차단 역할은 무리 편성 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2272,6 +3410,15 @@
       "anchor": "g21e09-봉합교환체-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A maintenance-type individual that threads cables and hyphal bundles between two flat body plates to splice damaged sections temporarily. A heat sensor in its jaw plate and a vibration sac on its flank distinguish line load from physical cracks."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2283,6 +3430,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A comm mycelium born as mycorrhizal tissue that migrated from the Yeouido Line repeatedly meshed with broken junctions on the Gwangjin Line. It is a biological maintenance phenomenon that exists only in the fictional setting of post-Collapse Seoul."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2294,6 +3450,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core territory is the flooded cable crossings of the Gwangjin Line. In the dry season it moves under the elevated Yeouido Line walkways that need repair, and when XT01 pressure rises it folds and sutures the lines linked to the outskirts first."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2305,6 +3470,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs scraps of cable sheathing, small amounts of scrap-metal clips, and coolant. It competes with HP07's repair materials, but supplying bundles of scrap regularly lowers how often it touches working lines."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2316,6 +3490,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It appears as a thin film over damage, spreads along adjacent lines, and stagnates when repair targets run short. If its jaw plate bends it judges even sound lines to be damaged and folds them, and correcting the jaw with a standard frame lets it pass through the negotiable state and be dissolved stably."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2327,6 +3510,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One exchanger bearing the most splice marks is the controller and sets repair priorities. When F05 logs disagree with an actual current test it gives priority to a human technician's manual mark, and the swarm handles only one line group at a time."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2338,6 +3530,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1 it leaves loose suture loops on the lines. At stage 2 it arbitrarily swaps emergency communications onto other lines, and if HP07 strips working lines instead of the promised scrap, at stage 3 it locks the whole crossing with its body plates."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2349,6 +3550,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and Countermeasures:",
+              "strong": true
+            },
+            {
+              "text": " Send a steady test vibration through the cables so it can tell live lines from dead ones, and cool the jaw plate locally to weaken its grip. Offering bundles of dead lines as a feeding detour and sealing only the work zone avoids forced dismantling."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2360,6 +3570,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can designate three priority repair lines in exchange for scrap and manual inspection. Removing the exchangers simplifies control, but the function that kept temporary connections alive in flooded sections beyond human reach disappears, and rescue communications may be the first to fail."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2371,6 +3590,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Links:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1 it forces a choice of which line to keep alive for rescue signals, and unchosen zones hear back later for a set time. Success in the G21-SC2 negotiation gives HP07 technicians manual mediation rights before the G21-SC3 lockdown."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2387,6 +3615,7 @@
       "kind": "paragraph",
       "anchor": "g21e09-봉합교환체-p4",
       "text": {
+        "en": "<a id=\"g21e10\"></a>",
         "ko": "<a id=\"g21e10\"></a>"
       }
     },
@@ -2395,6 +3624,7 @@
       "anchor": "g21e10-단절문지기",
       "depth": 3,
       "text": {
+        "en": "G21E10 · Severance Gatekeeper",
         "ko": "G21E10 · 단절문지기"
       }
     },
@@ -2403,12 +3633,15 @@
       "anchor": "g21e10-단절문지기-list1",
       "items": [
         {
+          "en": "Source batch: M033",
           "ko": "출처 배치: M033"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}"
         }
       ]
@@ -2418,42 +3651,52 @@
       "anchor": "g21e10-단절문지기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Severance Gatekeeper was a mobile biomechanical variant differentiated from the G21 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "단절문지기은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2464,6 +3707,15 @@
       "anchor": "g21e10-단절문지기-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A gate-type individual that splits its body across the two walls of a corridor entrance and stretches an elastic signal membrane across the middle. The conductive pattern of the membrane shows passage permission, and it senses an approacher's body heat and footstep vibration to open or narrow the gate."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2475,6 +3727,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A comm mycelium formed after the Collapse as the security lines of the S05–Yeouido Line connecting doors fused with mycorrhizal membranes over a long period. Permission depends on simple marks currently entered, and it can never absolutely judge a person's intent or identity."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2486,6 +3747,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It sits at boundary doors and utility-tunnel barrier walls in the core Gwangjin Line habitat. In the cold season it moves to the relatively warm fire doors of the Yeouido Line, and when outer XT01 pressure rises it occupies the inner Gwangjin Line gates one after another."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2497,6 +3767,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs residual power in door frames, organic matter for lubrication, and a little coolant. If HP07 cuts all power it seeks energy from other infrastructure, so allocating limited power and one disused door is safer."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2508,6 +3787,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It appears as a thin door-gap film, spreads to adjacent gates, and stagnates once traffic becomes steady. When the conductive pattern of the signal membrane tears it fails by mistaking every approach for XT01 pressure, and insulating sutures plus a reference vibration can bring it back to the negotiable stage."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2519,6 +3807,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One gatekeeper at the innermost gate is the controller, and the outer-gate swarm relays its orders through the intervals of opening and closing. When F05 access logs clash with the on-site roster, it gives priority to a one-time vibration mark stamped directly by a human mediator."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2530,6 +3827,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1 it warns by lowering its membrane halfway. At stage 2 it cuts automatic doors, lighting, and ventilation in turn to hinder entry, and if an unmarked group pushes several gates at once it enters the stage-3 stronghold lockdown and begins closing the window for negotiation."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2541,6 +3847,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and Countermeasures:",
+              "strong": true
+            },
+            {
+              "text": " Keep footstep noise steady to lower its alert response, cool the signal membrane, then insulate and seal only its contact points with the door frame. Supplying limited power to a disused door can move the gate role there, or organic feeding lubricant can be placed on a bypass."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2552,6 +3867,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can provide one disused door and power by time slot, and agree a passage table that citizens, salvage crews, and comm mycelia take in turn. Destroying the gatekeepers wholesale opens the way at once, but also removes the buffer gates that slowed pressure from the XT01 direction and the defensive time of Gwangjin Line citizens."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2563,6 +3887,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Links:",
+              "strong": true
+            },
+            {
+              "text": " It appears as the final lockdown gate in G21-SC3, and depending on earlier negotiation records the options differ among approving a passage table, a limited bypass, and forced opening. If HP07 secured mediation rights in G21-SC2, the negotiation window can be kept open through human confirmation even when F05 log errors occur."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2579,6 +3912,7 @@
       "kind": "paragraph",
       "anchor": "g21e10-단절문지기-p4",
       "text": {
+        "en": "<a id=\"g21e11\"></a>",
         "ko": "<a id=\"g21e11\"></a>"
       }
     },
@@ -2587,6 +3921,7 @@
       "anchor": "g21e11-박자낭-지연고",
       "depth": 3,
       "text": {
+        "en": "G21E11 · Beat-Sac Delay Store",
         "ko": "G21E11 · 박자낭 지연고"
       }
     },
@@ -2595,12 +3930,15 @@
       "anchor": "g21e11-박자낭-지연고-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}"
         }
       ]
@@ -2610,42 +3948,52 @@
       "anchor": "g21e11-박자낭-지연고-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Beat-Bladder Delay Drum was a mobile biomechanical variant differentiated from the G21 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "박자낭 지연고은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2656,6 +4004,15 @@
       "anchor": "g21e11-박자낭-지연고-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical individual of the G21 comm mycelium that maintains the S05–Yeouido Line corridor, HP07 brokerage, outer XT01 pressure, and cooperation with F05 sensors. Several translucent elastic sacs swell at different times and store the gaps between signals as pressure."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2667,6 +4024,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It was raised to absorb momentary delays in a congested network, but once it came to treat the accumulated gaps as an independent resource it began releasing bundled pulses at arbitrary moments."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2678,6 +4044,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It clings to shaded walls of control-room ceilings, elevator control rooms, and signal relay rooms. It prefers places with more regular blinking and repeated machine motion than power lines."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2689,6 +4064,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs a steady reference beat, pressure headroom in its elastic sacs, and a simple counter board to record the order of release. When the reference wavers it mixes short and long gaps."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2700,6 +4084,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " The number of sacs rises and falls in the order of emergence, spread, stagnation, negotiable, and dissolution. In stagnation, pressure must be bled slowly before over-inflation and cracked spots stabilized with resin; if maintenance is late, the faint contraction sounds of old individuals vanish and bundled pulses burst all at once."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2711,6 +4104,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The central sac that keeps the steadiest beat sets the order of release, and the surrounding sacs divide the delay among themselves. Rank disputes are settled not by signal strength but by beat error."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2722,6 +4124,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " The stage-1 warning is a gap sound that taps the control-room floor one beat late. When the stored pulses release all at once, at stage 2 door locks, alarms, and guide lights point to different times and throw the control equipment into confusion. Hastily puncturing the central sac raises it to stage 3, sealing the elevator control room with swollen sacs, and the window for negotiating to take the leftover beats with a metronome-type absorber closes just before the lockdown."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2733,6 +4144,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and Countermeasures:",
+              "strong": true
+            },
+            {
+              "text": " Take up the leftover beats with a metronome-type pulse absorber, vent the sac pressure in stages, and isolate the core control units optically. Sudden puncturing invites disordered release."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2744,6 +4164,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " If enough pressure headroom is guaranteed, it offers a quiet time window of set length and a delay record for each incident. But it must be agreed whose alarms will be held back during that window."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2755,6 +4184,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Links:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1 it helps trace the cause of mismatched access records, and in G21-SC2 HP07 decides whether to assign the quiet window to medical transport or a security search. In G21-SC3 its delay records from just before the XT01 pressure are compared with F05 logs."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2771,6 +4209,7 @@
       "kind": "paragraph",
       "anchor": "g21e11-박자낭-지연고-p4",
       "text": {
+        "en": "<a id=\"g21e12\"></a>",
         "ko": "<a id=\"g21e12\"></a>"
       }
     },
@@ -2779,6 +4218,7 @@
       "anchor": "g21e12-맥동중계-편직수",
       "depth": 3,
       "text": {
+        "en": "G21E12 · Pulse-Relay Weaver",
         "ko": "G21E12 · 맥동중계 편직수"
       }
     },
@@ -2787,12 +4227,15 @@
       "anchor": "g21e12-맥동중계-편직수-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}"
         }
       ]
@@ -2802,42 +4245,52 @@
       "anchor": "g21e12-맥동중계-편직수-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Pulse-Relay Knitting Hand was a mobile biomechanical variant differentiated from the G21 common ecology. The growth variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "맥동중계 편직수은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 성장 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2848,6 +4301,15 @@
       "anchor": "g21e12-맥동중계-편직수-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A mobile relay that weaves several strands of dead line and elastic hyphae like a shuttle to amplify low-frequency signals. Six jointed arms pull and release cables to make pulse codes, and it tells approachers apart by heat and floor vibration."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2859,6 +4321,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose as a branch of the comm mycelium when automatic test signals repeating in a disused relay station of the S05–Yeouido Line corridor were imprinted on a damp hyphal network. It is a fictional ecology possible only in post-Collapse Seoul, reflecting a signal-parasitism phenomenon that uses fiber-optic cable as both host and instrument."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2870,6 +4341,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It hangs where cable tension is constant, such as the ceilings of Gwangjin Line transfer passages. In the dry season it moves to the drainage pump rooms of the Yeouido Line to secure humidity, and when repeated pulses from outer XT01 grow strong it extends its relay chain in that direction."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2881,6 +4361,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs coolant to cool its joints and scrap-metal springs to reinforce tension. If HP07 recovers the pump-room coolant and hardware at the same time, the weaver overheats and starts tearing at surrounding cables as substitute material, and when resources run short it also stops forming new individuals."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2892,6 +4381,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In emergence it makes only short knots, extends its relay chain during spread, then passes through stagnation and the negotiable stage and dissolves when the tension slackens. When one joint stiffens a \"pulse limp\" occurs that throws the beat off, and supplying cold reclaimed water and standard springs lets it bind the damaged arm and switch to rest."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2903,6 +4401,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " It shows an ensemble hierarchy in which one controller sets the reference beat and each swarm carries on the finer rhythms. Even when the controller's beat breaks, no single swarm takes over the whole zone on its own judgment, and when F05 logs differ from human listening results a human mediator sets a new reference tone."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2914,6 +4421,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " The stage-1 warning appears as a beat of three knocks on the pipes. If the coolant supply stops without notice it covers emergency broadcast frequencies at stage 2, and cutting the controller's reference cable pushes it into stage 3, sealing the whole passage with taut lines."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2925,6 +4441,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and Countermeasures:",
+              "strong": true
+            },
+            {
+              "text": " Playing a steady counter-beat rather than irregular noise moves the swarm to an empty relay room. After a cooling spray, release cable tension one section at a time and seal the entrances; cutting the lines all at once can damage civilian equipment through elastic recoil."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2936,6 +4461,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can trade coolant rations for night relay duty and keep the low-power alarm network of the Gwangjin Line running. Removing the colony makes scrap recovery easier, but carries the moral cost of longer alarm delivery times in Yeouido Line evacuation zones that have no regular relays."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2947,6 +4481,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Links:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1 it carries the rescue team's code beat to distant zones. In G21-SC2 limited coolant must be divided between the HP07 workshop and the weaver, and in G21-SC3 it cancels incoming XT01 pulses with a counter-beat to delay the stronghold lockdown."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2963,6 +4506,7 @@
       "kind": "paragraph",
       "anchor": "g21e12-맥동중계-편직수-p4",
       "text": {
+        "en": "<a id=\"g21e13\"></a>",
         "ko": "<a id=\"g21e13\"></a>"
       }
     },
@@ -2971,6 +4515,7 @@
       "anchor": "g21e13-냉각관-청음낭",
       "depth": 3,
       "text": {
+        "en": "G21E13 · Cooling-Pipe Listening Sac",
         "ko": "G21E13 · 냉각관 청음낭"
       }
     },
@@ -2979,12 +4524,15 @@
       "anchor": "g21e13-냉각관-청음낭-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -2994,42 +4542,52 @@
       "anchor": "g21e13-냉각관-청음낭-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cooling-Pipe Listening Bladder was a mobile biomechanical variant differentiated from the G21 common ecology. The aged variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉각관 청음낭은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 노화 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3040,6 +4598,15 @@
       "anchor": "g21e13-냉각관-청음낭-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A translucent resonance sac wrapped around disused cooling pipes that listens to both the water flow inside and electronic noise, and tells the swarm when it is safe to move. The liquid layer of its body reads heat and amplifies faint floor vibrations, but it can hardly distinguish stationary targets or shielded spaces."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3051,6 +4618,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the Collapse, hyphal conductors settled in the cooling pipes of a Gwangjin Line server room and, joined with residual diagnostic signals, differentiated into the listening organ of the comm mycelium. It is a fictional Seoul origin that spread along the pipe network leading to S10, and it assigns no blame to any particular manufacturer."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3062,6 +4638,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It prefers the stretch between flooded Gwangjin Line server rooms and coolant recovery tanks. In winter it moves to the hot-water pipes of the Yeouido Line underground arcade to avoid freezing, and when vibration pressure grows from the XT01 side it folds itself behind pipe valves to hide."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3073,6 +4658,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs low-turbidity coolant and a little organic matter to repair its resonance membrane. It competes directly with HP07's reclaimed-water recovery, but if dirty and clean water are supplied separately it leaves civilian water alone and shrinks the colony to fit the resource cap."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3084,6 +4678,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " The stages of emergence, spread, stagnation, negotiable, and dissolution follow changes in water temperature. When metal dust clogs its resonance membrane a \"white listening\" occurs in which it mistakes every flow for a danger signal, and a slow stream of cold wash water peels off the film and restores it."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3095,6 +4698,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One controller clings to the largest reservoir and distributes water-pressure signals, while swarms of small listening sacs watch each pipe line. When the sacs read a vibration F05 judged a leak as a permission-to-move tone, a human mediator checks the actual valve and decides which signal takes priority."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3106,6 +4718,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1 it leaves warning rings of cold droplets on pipe surfaces. If HP07 empties a reservoir without agreement it shuts cooling valves at stage 2 and disrupts the surviving server network, and drying its resonance membrane with fire makes it swell the pipes at stage 3 and block entry to the server room."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3117,6 +4738,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and Countermeasures:",
+              "strong": true
+            },
+            {
+              "text": " Lure it to an empty recovery tank with a low, steady pump sound rather than high-frequency shocks. Lowering the coolant temperature in stages and sealing valve sections reduces its activity, and sudden draining or fire must be avoided because of the risk of burst pipes."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3128,6 +4758,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " Through HP07 a fixed amount of filtered water can be traded for a leak-watch service. Removing the sacs indiscriminately eases competition over water, but also loses the ecological function that gave early warning of tiny leaks people could not find, raising the risk of failures in Gwangjin Line civilian facilities."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3139,6 +4778,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Links:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1 it signals by sound the safe valve order in flooded zones. In G21-SC2 it forces a decision on how much of HP07's filtered water to assign, and in G21-SC3 it serves as an on-site mediation subject for telling XT01 vibrations from real signs of collapse."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3155,6 +4803,7 @@
       "kind": "paragraph",
       "anchor": "g21e13-냉각관-청음낭-p4",
       "text": {
+        "en": "<a id=\"g21e14\"></a>",
         "ko": "<a id=\"g21e14\"></a>"
       }
     },
@@ -3163,6 +4812,7 @@
       "anchor": "g21e14-패킷포자-길잡이",
       "depth": 3,
       "text": {
+        "en": "G21E14 · Packet-Spore Guide",
         "ko": "G21E14 · 패킷포자 길잡이"
       }
     },
@@ -3171,12 +4821,15 @@
       "anchor": "g21e14-패킷포자-길잡이-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"],\"synthetics\":[\"F05\"]}"
         }
       ]
@@ -3186,42 +4839,52 @@
       "anchor": "g21e14-패킷포자-길잡이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Packet-Spore Pathfinder was a mobile biomechanical variant differentiated from the G21 common ecology. The cooperation · coexistence role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "패킷포자 길잡이은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 협력·공존 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3232,6 +4895,15 @@
       "anchor": "g21e14-패킷포자-길잡이-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A comm mycelium that scatters conductive spores into the air to mark short signal routes between cut-off terminals. The filter comb on its back analyzes scent and electronic noise together, and it cannot perceive sealed zones the spore cloud does not reach."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3243,6 +4915,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It appeared when fungal dust piled in the Gwangjin Line air-conditioning ducts combined with intermittent signals from dead terminals, and later began seasonal migration through the underground ventilation network of the Yeouido Line. It is a fictional post-Collapse Seoul organism in which fiber-optic and mycorrhiza-like signal parasitism changed into a nearly wireless form."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3254,6 +4935,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It nests in the filter rooms of Gwangjin Line data archives and at cable-duct crossings. In summer, when ventilation drops, it moves to the station ventilation towers of the Yeouido Line, and when electronic noise thickens on the outskirts of XT01 it bends its spore path the other way."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3265,6 +4955,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs organic matter to make spore shells and fine scrap metal to maintain its filter comb. It competes with HP07's filter-replacement work for materials, but if used filters are left in a designated zone it stays away from air-conditioning equipment in use."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3276,6 +4975,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In emergence it leaves only dotted spore markers, links the ducts during spread, then declines in the order of stagnation, negotiable, and dissolution. When oil clogs its filter comb a \"route smear\" occurs in which it sprays spores indiscriminately, and supplying cooled dry air and clean used filters lets it replace the comb itself."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3287,6 +4995,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One controller sets the reference scent of the spores, and several guide swarms each take only one branch of passage. When F05 sensors mistake the spore concentration for fire smoke, a human mediator checks a sample and then decides whether to ventilate."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3298,6 +5015,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1 it makes a bitter-smelling warning band around doorways. If the used-filter supply site is suddenly closed it contaminates air-conditioning sensors at stage 2 and disrupts ventilation, and blasting the controller's nest directly with strong wind makes it seal the ventilation tower with a stage-3 spore membrane."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3309,6 +5035,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and Countermeasures:",
+              "strong": true
+            },
+            {
+              "text": " Divert the spore path to non-commercial zones with strongly scented organic bait, combining low-temperature drying with compartment sealing. Blowing air indiscriminately spreads spores into civilian areas, so per-duct baffles and staged filtration are safer."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3320,6 +5055,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can trade a used-filter supply for duct passage rights at certain hours. Burning them all eases the immediate load on air conditioning, but also removes the temporary route markers that rescue signals could follow through collapsed passages and the watch on contamination odors."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3331,6 +5075,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Links:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1 isolated terminals and survivors are found by following the spore trails. In G21-SC2 HP07's filter stock is divided between civilian air conditioning and negotiation, and in G21-SC3 guides pushed by XT01 noise are turned toward an empty Yeouido Line ventilation tower to prevent the lockdown."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3347,6 +5100,7 @@
       "kind": "paragraph",
       "anchor": "g21e14-패킷포자-길잡이-p4",
       "text": {
+        "en": "<a id=\"g21e15\"></a>",
         "ko": "<a id=\"g21e15\"></a>"
       }
     },
@@ -3355,6 +5109,7 @@
       "anchor": "g21e15-절연피막-매듭왕",
       "depth": 3,
       "text": {
+        "en": "G21E15 · Insulation-Film Knot King",
         "ko": "G21E15 · 절연피막 매듭왕"
       }
     },
@@ -3363,12 +5118,15 @@
       "anchor": "g21e15-절연피막-매듭왕-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -3378,42 +5136,52 @@
       "anchor": "g21e15-절연피막-매듭왕-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Insulation-Film Knot King was a mobile biomechanical variant differentiated from the G21 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "절연피막 매듭왕은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3424,6 +5192,15 @@
       "anchor": "g21e15-절연피막-매듭왕-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A large maintenance organism that wraps bundles of damaged fiber-optic cables in a resinous coating to protect the colony’s connection points. A rotating ring at the center of its body ties the cables into knots, while heat plates and vibration-sensitive whiskers on either side detect overheating and approaching movement."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3435,6 +5212,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It was born after the collapse in a Gwangjin Line cable warehouse, where melted insulation became entangled with a mycelial signal network. It is a communications myco-organism whose form stabilized as it absorbed traces of repairs in the Yeouido Line corridor; its origin is limited to a fictional creation of Seoul’s abandoned communications infrastructure."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3446,6 +5232,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It occupies places where tension concentrates, such as cable bends in the Gwangjin Line utility tunnel and the areas behind fire doors. In cold periods it moves along residual heat in the Yeouido Line transformer passage. When XT01 pressure increases, it abandons outer circuits and retreats to the core knots inside."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3457,6 +5252,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs organic resin to harden its coating, power to run its heat plates, and scrap-metal rings for reinforcement. It competes with HP07’s recovery of insulation and scrap metal, but will leave active circuits alone if defective materials are supplied to a designated pile."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3468,6 +5272,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It begins in the emergence stage as a small protective ring, adds knots during the expansion stage, passes through the stagnation and negotiation-possible stages, and disintegrates when its resin crumbles. If heat-plate temperature control fails, “hardening contraction” causes it to tighten cables excessively; rather than cutting the power, an external cooling band must be wrapped around it so it can be loosened slowly."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3479,6 +5292,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The Knot King itself is the controller of a group, and small coating creatures follow its instructions to fill cracks. Even if F05 classifies every knot as an illegal connection, the Knot King will leave only the marked circuits in place and undo the rest once a human mediator checks the actual communications load."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3490,6 +5312,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it leaves one thick warning knot on a cable. If HP07 recovers more reinforcing rings than agreed, at stage 2 it seals a maintenance door with its coating. If its controller’s heat plate is destroyed, at stage 3 it hardens and seals off the entire core utility tunnel."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3501,6 +5332,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Soften the resin with a cooling band, then lay out unloaded cables like a feeding route to move it. Low-frequency noise can stop its rotating ring; explosions and intense heat should be avoided almost entirely because they can fuse insulation to civilian communications lines."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3512,6 +5352,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP07 can provide defective insulation in exchange for having it reinforce cables in collapsed sections. Removing it increases the amount of recoverable scrap metal, but means accepting more frequent outages in shelter communications when the Gwangjin Line’s aging circuits can no longer withstand vibration and moisture."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3523,6 +5372,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1, it temporarily reinforces a circuit just before collapse to maintain a rescue signal. In G21-SC2, the discrepancy between HP07’s materials ledger and the amount actually supplied causes escalation. In G21-SC3, the core knot hardening under XT01 pressure must be cooled to reclaim the Yeouido Line passage."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3539,6 +5397,7 @@
       "kind": "paragraph",
       "anchor": "g21e15-절연피막-매듭왕-p4",
       "text": {
+        "en": "<a id=\"g21e16\"></a>",
         "ko": "<a id=\"g21e16\"></a>"
       }
     },
@@ -3547,6 +5406,7 @@
       "anchor": "g21e16-잔향회선-굴착지",
       "depth": 3,
       "text": {
+        "en": "G21E16 · Echo-Line Burrower",
         "ko": "G21E16 · 잔향회선 굴착지"
       }
     },
@@ -3555,12 +5415,15 @@
       "anchor": "g21e16-잔향회선-굴착지-list1",
       "items": [
         {
+          "en": "Source batch: M034",
           "ko": "출처 배치: M034"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"]}",
           "ko": "연결: {\"states\":[\"S05\",\"S10\"],\"houses\":[\"HP07\"],\"theaters\":[\"XT01\"]}"
         }
       ]
@@ -3570,42 +5433,52 @@
       "anchor": "g21e16-잔향회선-굴착지-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Echo-Circuit Excavator was a mobile biomechanical variant differentiated from the G21 common ecology. The local adaptation role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "잔향회선 굴착지은 G21 공통 생태에서 분화한 이동 생체기계 변이다. 지역 적응 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3616,6 +5489,15 @@
       "anchor": "g21e16-잔향회선-굴착지-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A low-slung communications myco-organism that digs along abandoned underground cables, collecting signal echoes. Magnetic shovel blades on its forelegs push scrap metal aside, while a scent pouch and vibration plates on its abdomen distinguish human footsteps from cable vibrations."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3627,6 +5509,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It was first observed around buried circuits beneath a Gwangjin Line underpass, where mycelium formed a metal shovel-blade structure. It belongs to a fictional post-collapse Seoul lineage that later reached the Yeouido Line’s construction-spoil layer and lives off signals from buried fiber-optic cables."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3638,6 +5529,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The soil layers beneath Gwangjin Line roads and the spaces between disconnected manholes are its core territory. During the thaw, it moves to softened soil beside the Yeouido Line tracks; when pressure from XT01’s outskirts reaches it as vibrations, it chooses deeper abandoned conduits."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3649,6 +5549,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs scrap metal to repair its shovel blades, organic matter to firm up tunnel walls, and cooling water to reduce the heat of its work. Its activities overlap with HP07’s recovery of buried materials, but conflict can be reduced by assigning it small, unrecoverable iron fragments in exchange for marking the locations of abandoned lines."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3660,6 +5569,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Its emergence–expansion–stagnation–negotiation-possible–disintegration cycle depends on tunnel stability and available resources. If the magnetic alignment of its shovel blades is disrupted, “reverse excavation” makes it mistake an active power line for an abandoned one. Reducing electromagnetic noise and presenting a cold iron-plate lure realigns it toward a safe direction."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3671,6 +5589,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One controller sends vibration codes from the center of the burrow, and each group digs only one branch tunnel. If F05’s underground imaging conflicts with HP07 workers’ interpretation of tapping sounds, a human mediator sends a test vibration to determine the final route."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3682,6 +5609,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it leaves shallow scratches around a manhole’s edge as a warning. If heavy machinery moves above its burrow without warning, at stage 2 it shakes the ground around communications conduits, disrupting infrastructure. If its central burrow is filled with concrete, at stage 3 it digs bypass tunnels en masse and seals off the base."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3693,6 +5629,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Regular ground noise can indicate a route toward an abandoned spoil yard, and a cooled iron plate can serve as food bait to change its digging direction. Do not fill burrow entrances all at once; seal empty conduits in sequence to avoid ground subsidence."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3704,6 +5649,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP07 provides iron fragments and work time, the burrower indicates the locations of buried scrap metal and severed lines through vibrations. Indiscriminate removal and wholesale backfilling simplify recovery work, but also destroy the ecological monitoring network that detected hidden voids and warning signs of collapse."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3715,6 +5669,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G21-SC1, it guides rescuers to a buried rescue circuit. In G21-SC2, HP07’s heavy-machinery operating hours must be divided from the colony’s digging hours. In G21-SC3, groups driven toward S10 by XT01 vibrations must be guided into abandoned conduits to prevent a road blockade."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3732,6 +5695,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -3739,6 +5703,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "In the field the Communication-Root Fungal Bodies showed as a gray-white film and slender bundles of teal fiber.",
         "ko": "현장에서 통신근균체는 회백색 막과 가느다란 청록색 섬유 다발로 보인다."
       }
     },
@@ -3746,6 +5711,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "Rather than boring through the optical fiber itself, it grew along the scratches of the sheath, the borders of the splice gel, and the condensation faces of the metal fixtures.",
         "ko": "광섬유 자체를 뚫기보다는 외피의 흠집, 접속 젤의 경계 금속 고정부의 응결면을 따라 자란다."
       }
     },
@@ -3753,6 +5719,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "Under work lamps its color barely changed, but when a steady pulse train flowed, a weak potential difference could be measured.",
         "ko": "작업등 아래에서는 색 변화가 거의 없지만 일정한 펄스열이 흐를 때 약한 전위차가 측정된다."
       }
     },
@@ -3760,6 +5727,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "Its sensing range was sharply limited.",
         "ko": "감각 범위는 매우 제한적이다."
       }
     },
@@ -3767,6 +5735,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "The colony responded only to the time interval between optical pulses and to changes in surrounding temperature and moisture activity.",
         "ko": "군락은 광펄스 사이의 시간 간격, 주변 온도 수분 활성도의 변화에만 반응한다."
       }
     },
@@ -3774,6 +5743,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "It could not distinguish packets' contents or addresses, line owners, or communication purposes, and it understood neither names nor commands.",
         "ko": "패킷의 내용과 주소, 회선 소유자 통신 목적은 구별하지 못하며 이름이나 명령을 이해하지도 않는다."
       }
     },
@@ -3781,6 +5751,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "The stabilizing action began with ionic movement in the living tissue.",
         "ko": "안정화 작용은 생체 조직의 이온 이동에서 시작된다."
       }
     },
@@ -3788,6 +5759,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "When repeated pulse intervals entered the permitted range, the film's internal charge distribution slowly aligned, easing the micro electrochemical swings and hot spots around the splice.",
         "ko": "반복되는 펄스 간격이 허용 범위에 들어오면 막 내부의 전하 분포가 천천히 정렬되고, 접속부 주변의 미세한 전기화학적 변동과 열점이 완화된다."
       }
     },
@@ -3795,6 +5767,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "As a result, even a damaged splice could show steady signal-arrival intervals.",
         "ko": "그 결과 이미 손상된 접속부에서도 신호 도착 간격이 일정해 보일 수 있다."
       }
     },
@@ -3802,6 +5775,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "Because of that effect, an inspector had to measure actual cable state and the colony's laid-on stability separately.",
         "ko": "이 효과 때문에 점검자는 실제 케이블 상태와 군락이 덧씌운 안정성을 분리해서 측정해야 한다."
       }
     },
@@ -3809,6 +5783,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "Watching only normal traffic made compensated cracks hard to find.",
         "ko": "정상 트래픽만 관찰하면 보상 중인 균열을 찾기 어렵다."
       }
     },
@@ -3816,6 +5791,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "One had to secure a short test section, shake the pulse interval in stages, heat or dehumidify only one side of the junction box, and record where the jitter revived.",
         "ko": "짧은 시험 구간을 확보해 펄스 간격을 단계적으로 흔들고, 접속함 한쪽만 가열하거나 제습하면서 지터가 되살아나는 지점을 기록해야 한다."
       }
     },
@@ -3823,6 +5799,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "Colonies grown in different places did not respond alike to the same conditions.",
         "ko": "서로 다른 장소에서 자란 군락은 같은 조건에 반응하지 않는다."
       }
     },
@@ -3830,6 +5807,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "When a film seated in a low-temperature conduit and a film in a high-temperature relay room met at one patch panel, their passive reactions to hold different heat gradients overlapped.",
         "ko": "저온 관로에 자리 잡은 막과 고온 중계실의 막이 하나의 패치 패널에서 이어지면 각기 다른 열구배를 유지하려는 수동 반응이 겹친다."
       }
     },
@@ -3837,6 +5815,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "Then, rather than the signal vanishing, intermittent crosstalk, irregularly ordered delay, and errors at particular intervals appeared.",
         "ko": "이때 신호가 사라지기보다는 간헐적인 누화, 순서가 불규칙한 지연 특정 간격에서만 나타나는 오류가 발생한다."
       }
     },
@@ -3844,6 +5823,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "Separation work needed physical design, not biological instruction.",
         "ko": "분리 작업에는 생물학적 지시가 아니라 물리적 설계가 필요하다."
       }
     },
@@ -3851,6 +5831,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "Technicians inserted dry ceramic sleeves between splice trays and set thin heat baffles and independent dehumidification lines.",
         "ko": "기술자는 접속 트레이 사이에 건조 세라믹 슬리브를 끼우고, 얇은 열차단판과 독립 제습선을 설치한다."
       }
     },
@@ -3858,6 +5839,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "The control team reassigned lines so the interval bands each colony stabilized never overlapped on one dark route.",
         "ko": "관제팀은 각 군락이 안정시키는 간격대가 같은 암선로에 겹치지 않도록 회선을 다시 배정한다."
       }
     },
@@ -3865,6 +5847,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "Operating agreements ran between people too.",
         "ko": "운영 협의도 사람 사이에서 진행된다."
       }
     },
@@ -3872,6 +5855,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "Facility managers set the hours and temperature limits for opening junction boxes; communication operators presented the dark routes available for detour and the permitted delay.",
         "ko": "시설 관리자는 접속함을 열 수 있는 시간과 온도 제한을 정하고, 통신 운영자는 우회 가능한 암선로와 허용 지연을 제시한다."
       }
     },
@@ -3879,6 +5863,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "Record keepers left measurements before and after tests, cable-cut positions, and data-transfer moments, assigning the colony no schedule or record-keeping role.",
         "ko": "기록 담당자는 시험 전후의 계측값, 케이블 절단 위치 자료 이전 시점을 남기며 군락에는 일정 관리나 기록 보존 역할을 부여하지 않는다."
       }
     },
@@ -3886,6 +5871,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "Contaminated cable raised its own difficulty.",
         "ko": "오염 케이블은 별도의 난점을 만든다."
       }
     },
@@ -3893,6 +5879,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "Even where the colony worked stably on a salt- and metal-dust-fouled sheath, tensile-wire corrosion and splice-gel breakdown could continue beneath.",
         "ko": "염분과 금속 분진이 밴 외피에서 군락이 안정적으로 작동하더라도 그 아래에서는 인장선 부식과 접속 젤 분해가 계속될 수 있다."
       }
     },
@@ -3900,6 +5887,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "Removing the cable at once could cut signal continuity; leaving it grew the chance of sudden shorting.",
         "ko": "케이블을 즉시 제거하면 신호 연속성이 끊길 수 있고, 그대로 두면 갑작스러운 단락 가능성이 커진다."
       }
     },
@@ -3907,6 +5895,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "Long-term, laying new cable in parallel, verifying section by section, and handing over the data flow was the most predictable course.",
         "ko": "장기 관리에서는 새 케이블을 병렬로 설치한 뒤 구간별 검증을 거쳐 자료 흐름을 넘기는 방식이 가장 예측 가능하다."
       }
     },
@@ -3914,6 +5903,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "But independent measurement before and after the switch was needed, so the old colony's corrections were never mistaken for the new line's performance.",
         "ko": "다만 기존 군락의 보정값을 새 선로의 성능으로 착각하지 않도록 전환 전후에 독립 계측이 필요하다."
       }
     },
@@ -3921,6 +5911,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "The final removal time was decided by human managers from corrosion rate, detour capacity, and record-continuity verification — not by the colony's state.",
         "ko": "최종 철거 시점은 군락의 상태가 아니라 부식률, 우회 용량 기록 연속성 검증 결과를 근거로 인간 관리자가 결정한다."
       }
     }

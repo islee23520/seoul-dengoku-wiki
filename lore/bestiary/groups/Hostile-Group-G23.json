@@ -5,6 +5,7 @@
   "slug": "hostile-group-g23",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G23 · Cryo-Spore Film",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G23 · 저온포자막",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g23-저온포자막",
       "depth": 1,
       "text": {
+        "en": "G23 · Cryo-Spore Film",
         "ko": "G23 · 저온포자막"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g23-저온포자막-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "The Cryo-Spore Film was a gray-white composite membrane clinging thinly to freezer panels and the seams of transport boxes and low-temperature piping. Its surface looked like matte vinyl, but its cross-section repeated hydrophilic polymer lattices, silica hollow fiber, and dormant spore layers. Its normal thickness was only a few millimeters, and its moisture-laden edges could swell to nearly three times that.",
         "ko": "저온포자막은 냉동 패널, 운송 상자 저온 배관의 이음매에 얇게 붙는 회백색 복합막이다. 표면은 무광택 비닐처럼 보이지만 단면에는 친수성 고분자 격자, 실리카 중공섬유 휴면 포자층이 반복된다. 정상 상태의 두께는 수 밀리미터에 불과하고, 물을 머금은 가장자리는 원래 두께의 세 배 가까이 부풀 수 있다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The Cryo-Spore Film's common ecology responded passively to facility surfaces and the local environment. The G23E identifiers marked biomechanical variants whose movement and work functions had differentiated within that environment; they were not treated as one individual with the common film or the whole installation.",
         "ko": "저온포자막의 공통 생태는 시설 표면과 국소 환경에 수동적으로 반응한다. G23E 식별자는 그 환경에서 이동·작업 기능이 분화된 생체기계 변이를 가리키며, 공통 막이나 설비 전체와 같은 개체로 취급하지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "The Cryo-Spore Film was a fictional biological insulation made for this setting. / It was developed as a sheet that fixed dormant spores and hollow silica fibers in a hydrophilic polymer lattice to patch cracks in cold stores for a time, and through repeated condensation, defrost, and vibration it became a stable composite film whose heat and moisture paths were passively rearranged. / It was a plant-surface phenomenon unrelated to a low-temperature logistics symbiotic mutation that settles in the human body, and it did not assume individual proliferation.",
             "ko": "저온포자막은 이 설정을 위해 만든 허구의 생물성 단열재다. / 냉동 창고의 균열을 임시 봉합하도록 친수성 고분자 격자에 휴면 포자와 실리카 중공섬유를 고정한 시트로 개발되었으며, 반복된 결로·제상·진동을 거치며 열과 수분의 이동 경로가 수동적으로 재편되는 안정된 복합막이 되었다. / 인체에 정착하는 저온 물류 공생 변이와는 무관한 설비 표면 현상이며, 개체 증식을 전제로 하지 않는다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "Swelling of the wet edge ran on into adjacent gaps and joints, and spores knocked loose by defrost shock or vibration settled along the airflow onto nearby cold surfaces and condensation points. / The range of spread depended only on moisture continuity, temperature gradient, airflow, and physical contact.",
             "ko": "젖은 가장자리의 팽윤이 인접한 틈과 이음매까지 이어지고, 제상 충격이나 진동으로 떨어진 포자가 공기 흐름을 따라 가까운 차가운 표면과 응축 지점에 침강한다. / 확산 범위는 수분의 연속성 온도 구배 기류와 물리적 접촉에만 좌우된다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "Operation needed condensate and a temperature difference, and the polymer lattice, hollow silica fibers, and adhesive layer were consumed as structural resources. / Heat bypassed through in-plane channels and fasteners, and moisture was bound in swelling and ice-lens formation. / Repeated defrost and shear vibration irreversibly reduced adhesion and interlayer uniformity.",
             "ko": "작동에는 응축수와 온도차가 필요하며, 고분자 격자·실리카 중공섬유·접착층이 구조적 자원으로 소모된다. / 열은 면 방향 통로와 체결부로 우회하고, 수분은 팽윤과 얼음 렌즈 형성에 묶인다. / 반복 제상과 전단 진동은 접착력과 층간 균일성을 비가역적으로 감소시킨다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "In the dry dormant period it remained a thin, stable sheet, and when condensation began the edges absorbed moisture, swelled, and sealed the gaps. / Under a standing temperature gradient the heat-flow directionality of the capillaries and hollow fibers was rearranged. / When sharp defrost or vibration accumulated, microcracks, spore drop, and edge peel proceeded. / If it was refrozen after a partial thaw, ice lenses pushed the layers apart and it passed into splitting and a permanent state of uneven insulation.",
             "ko": "건조 휴면 시기에는 얇고 안정된 시트로 남는고 결로가 시작되면 가장자리가 수분을 흡수해 팽윤하고 틈을 봉합한다. / 지속적인 온도 구배에서는 모세관과 중공섬유의 열류 방향성이 재편된다. / 급격한 제상이나 진동이 누적되면 미세 균열, 포자 낙하 가장자리 박리가 진행된다. / 부분 해동 뒤 재동결되면 얼음 렌즈가 층을 밀어내며 갈라짐과 영구적인 단열 불균일 상태로 넘어간다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "It reacted only to the temperature difference across the film, the relative-humidity and vapor-pressure difference at the contact face, compression and shear vibration transmitted into the polymer layer, and local volume change from freeze and thaw. / It could not detect a distant heat or moisture source, and it did not recognize language, timetables, plans, ledgers, a person's intent, or the state of a whole facility.",
             "ko": "막 양면의 온도차 접촉면의 상대습도와 수증기압 차이 고분자층에 전달되는 압축·전단 진동 동결과 해동에 따른 국소 체적 변화에만 반응한다. / 원거리 열원이나 수분원을 탐지하지 못하며 언어 시간표 계획 장부 사람의 의도나 시설 전체 상태를 인식하지 못한다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "The inner organization was a passive laminate of polymer capillary layers of differing direction, a hollow-silica-fiber layer, and a dormant-spore layer. / The wet edge, the inner layer that bypassed heat flow, and the cracked surface each answered local conditions; there was no command or agreement. / The facility manager and the recovery officer set sensor placement, defrost output, humidity, vibration isolation, exhaust, and the criteria for stopping a cut.",
             "ko": "내부 조직은 방향이 다른 고분자 모세관층 실리카 중공섬유층 휴면 포자층의 수동적 적층 구조다. / 젖은 가장자리 열류를 우회시키는 내부층 균열된 표면이 각기 국소 조건에 반응할 뿐 지휘나 합의는 없다. / 시설 관리자와 회수 책임자가 센서 배치 제상 출력 습도 진동 차단 배기와 절개 중지 기준을 정한다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The common facility ecology had no command core. Even the coordinating individuals of the mobile variants reacted only within their assigned conduit or work section, and stood in for neither human facility authority nor unit command.",
         "ko": "공통 시설 생태에는 지휘 핵이 없다. 이동 변이의 조정 개체도 맡은 관로·작업 구간 안에서만 반응하며, 사람의 시설 운영권과 부대 지휘권을 대신하지 않는다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G23E01 · Frost-Breath Filter Sac",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E01 · 서리숨여과낭",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E02 · Frozen Door-Grid Weaver",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E02 · 결빙문살엮이",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E03 · Cold-Condensate Harvester Walker",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E03 · 냉응수확보행체",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E04 · Cold-Folding Clock",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E04 · 한랭접힘시계",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E05 · Cold-Scent Guide Membrane",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E05 · 냉향길잡이막",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E06 · Frost-Stitcher",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E06 · 성에봉합구",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E07 · Refrigerated Rail Conveyor Membrane",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E07 · 냉장궤도운반막",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E08 · Thaw-Warning Bell",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E08 · 해동경계종",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M036",
             "ko": "M036"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E09 · Dew-Token Auction Membrane",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E09 · 이슬패 경매막",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E10 · Cooling-Pipe Organ",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E10 · 냉각관풍금",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E11 · Frost Gatekeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E11 · 성에문지기",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E12 · Frost-Weight Weighing Colony",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E12 · 서리추계군",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E13 · Condensation Shepherd",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E13 · 응결목동",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E14 · Freezing-Point Knitter",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E14 · 빙점편직기",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E15 · Coolant Diving Sacs",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E15 · 냉매잠수낭",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G23E16 · Frozen-Route Editors",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G23",
+                  "anchor": "g23e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G23E16 · 동결노선편집체",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g23e01\"></a>",
         "ko": "<a id=\"g23e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g23e01-서리숨여과낭",
       "depth": 3,
       "text": {
+        "en": "G23E01 · Frost-Breath Filter Sac",
         "ko": "G23E01 · 서리숨여과낭"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g23e01-서리숨여과낭-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g23e01-서리숨여과낭-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Frost-Breath Filter Pouch was a mobile biomechanical variant differentiated from the G23 common ecology. The command · coordination role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "서리숨여과낭은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 지휘·조정 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -736,6 +1034,15 @@
       "anchor": "g23e01-서리숨여과낭-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Frost-Breath Filter Sac is a biomechanical filter organism that contracts its wrinkled lung sac to draw in air from cold storage and trap spores in a layer of frost. It senses faint vibrations and the smell of organic matter but cannot detect what is behind a closed door or inside a completely sealed container."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -747,6 +1054,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, spores and filter fibers combined in the S07–Jamsil Line refrigerated corridor to form a cold spore membrane. This is a fictional Seoul origin involving spore-membrane formation in cold storage; pressure arriving from the XT03 outskirts is recorded only as a factor in the colony’s movement."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -758,6 +1074,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The ventilation intake of the Wangsimni Union cold-storage facility is its main habitat. In dry seasons it moves to the Jamsil Line food-storage corridor, and when hot winds or pressure waves from the XT03 direction intensify, it flattens itself against floor ducts."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -769,6 +1094,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs organic matter beginning to rot and a flow of chilled air. It competes with HP09’s recovery of food scraps, but if highly spoiled waste is provided in a sealed bin, it does not approach food that can still be preserved."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -780,6 +1114,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It follows five stages—emergence, spread, stagnation, negotiability, and disintegration—and the area of its spore membrane cannot exceed the limits imposed by available organic matter and cooling capacity. If the lung sac’s condensation outlet becomes blocked, ice inside tears the sac apart; it loses its filtering function and disintegrates into a thin membrane."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -791,6 +1134,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called the Breath-Rhythm Core synchronizes the breathing of several filter sacs through pressure pulses. Even if F07 reports high contamination levels, the sacs slow their breathing and wait for a human ruling if that report conflicts with HP09’s specimen tests."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -802,6 +1154,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " Stage 1 warns with cold breath and the smell of spores; stage 2 reduces ventilation and disrupts warehouse operations; stage 3 inflates the filter sacs to block entrances. Escalation occurs if a sealed waste bin is opened or rotting food is left near the main nest."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -813,6 +1174,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Irregular noise can break its breathing rhythm, after which additional but moderate cooling can slow spore activity and the vents can be sealed off in sections. Organic bait can also be sent down a separate duct to change its route. Using fire would destroy both the refrigeration equipment and the stored food."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -824,6 +1194,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 can trade a regular supply of discarded food for scheduled use of the vents. Removing the colony would immediately restore airflow, but it would also risk spreading the mold spores it had trapped into civilian storerooms."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -835,6 +1214,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, it serves as a biological indicator distinguishing contaminated food from preserved food. In G23-SC2, a waste-supply agreement must be reached with the Breath-Rhythm Core before the blocked vent is opened. In G23-SC3, it features in a scene where specimen testing verifies F07’s excessive alarm."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -851,6 +1239,7 @@
       "kind": "paragraph",
       "anchor": "g23e01-서리숨여과낭-p4",
       "text": {
+        "en": "<a id=\"g23e02\"></a>",
         "ko": "<a id=\"g23e02\"></a>"
       }
     },
@@ -859,6 +1248,7 @@
       "anchor": "g23e02-결빙문살엮이",
       "depth": 3,
       "text": {
+        "en": "G23E02 · Frozen Door-Grid Weaver",
         "ko": "G23E02 · 결빙문살엮이"
       }
     },
@@ -867,12 +1257,15 @@
       "anchor": "g23e02-결빙문살엮이-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"]}"
         }
       ]
@@ -882,42 +1275,52 @@
       "anchor": "g23e02-결빙문살엮이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Freeze-Louver Weaver was a mobile biomechanical variant differentiated from the G23 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "결빙문살엮이은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -928,6 +1331,15 @@
       "anchor": "g23e02-결빙문살엮이-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Frozen Door-Grid Weaver is a lattice-shaped biomechanical organism that stretches spore membrane between thin metal ribs to reduce the loss of cold air. It reads heat gradients and floor vibrations to find gaps around doors, but easily misses stationary targets at a constant temperature."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -939,6 +1351,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose after the collapse when damaged refrigerated doors, insulation, and dormant spores on the S07–Jamsil Line became woven into a single colony structure. As a fictional lineage of the cold spore membrane, it does not assign responsibility to any real-world manufacturer."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -950,6 +1371,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It concentrates along shutter rails and in gaps around refrigerated doors in the Wangsimni Union, moving to the door grilles of the Jamsil Line loading area in winter. When pressure from the XT03 outskirts warps doorframes, it moves inward along the damaged gaps and builds temporary lattices."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -961,6 +1391,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs thin pieces of scrap metal and coolant, and competes with HP09 for door components being recovered. If given sheets too badly rusted for structural use, it does not harvest hinges from functioning refrigerated doors."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -972,6 +1411,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It progresses through emergence, spread, stagnation, negotiability, and disintegration, and the number of lattices is limited by the area of sheet metal it has secured. If repeated thawing loosens the connections between the door bars, the membrane folds and falls into the passage; the group attaches damaged lattices to the coldest wall to harden them again."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -983,6 +1431,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The Threshold Weight is its sole controller, measuring pressure on the doorframe and setting how far the door may open and close. If F07’s heat-leak map differs from an HP09 technician’s assessment by touch, it keeps the door bars fixed and postpones expansion until human mediation is complete."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -994,6 +1451,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it shakes its door bars as a warning; at stage 2, it disrupts automatic doors and cold-air circulation; at stage 3, it closes the lattice completely and seals off the warehouse. The stage rises if a recovery worker mistakes active door bars for scrap and cuts them, or leaves a refrigerated door open for a long time."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1005,6 +1471,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Impact sounds made outside the rails can draw its attention away; its connections can then be cooled to slow its movement before the area is sealed off with an insulating tarp. Propping rusty sheet metal in an empty doorframe can change its destination. Blasting the door open would damage both stored food and compressed refrigerant."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1016,6 +1491,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 can exchange discarded sheet metal for agreed opening times. Removing the lattice would speed up logistics, but the increased loss of cold air would shorten the storage life of the Wangsimni Union’s civilian food reserves."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1027,6 +1511,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, it appears as a thermal barrier that helps determine which refrigerated door is the actual source of contamination. In G23-SC2, an opening schedule must be agreed with the Threshold Weight before rescuers can enter. In G23-SC3, it becomes a temporary framework for repairing a doorframe warped by XT03 pressure."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1043,6 +1536,7 @@
       "kind": "paragraph",
       "anchor": "g23e02-결빙문살엮이-p4",
       "text": {
+        "en": "<a id=\"g23e03\"></a>",
         "ko": "<a id=\"g23e03\"></a>"
       }
     },
@@ -1051,6 +1545,7 @@
       "anchor": "g23e03-냉응수확보행체",
       "depth": 3,
       "text": {
+        "en": "G23E03 · Cold-Condensate Harvester Walker",
         "ko": "G23E03 · 냉응수확보행체"
       }
     },
@@ -1059,12 +1554,15 @@
       "anchor": "g23e03-냉응수확보행체-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -1074,42 +1572,52 @@
       "anchor": "g23e03-냉응수확보행체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cold-Condensate Harvester Walker was a mobile biomechanical variant differentiated from the G23 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉응수확보행체은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1120,6 +1628,15 @@
       "anchor": "g23e03-냉응수확보행체-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Cold-Condensate Harvester Walker draws up frost and condensation through six capillary legs and collects the water in a translucent reservoir sac on its back. It senses temperature differences and electronic noise to find active cooling pipes, but cannot discern the entire structure of a shielded pipe network."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1131,6 +1648,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, condensation, pipe fibers, and spore membrane on the S07–Jamsil Line combined into a mobile harvester. It is a fictional Seoul ecosystem derived from spore-membrane formation in cold storage; no particular operator’s malice is established as its cause."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1142,6 +1668,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its main area is the drainage channel beneath the Wangsimni Union evaporator. When humidity drops, it moves to the Jamsil Line ice-making room. If heat pressure pushes in from XT03, it follows the remaining condensation deeper into cold areas."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1153,6 +1688,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs coolant and a low-power electric field. It competes with HP09’s recovery of condensate for maintenance, but if contaminated condensation is collected in a designated channel, it leaves clean emergency coolant tanks untouched."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1164,6 +1708,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through emergence, spread, stagnation, negotiability, and disintegration, with the size of its group limited by the amount of condensation produced each day. If the pressure plate in a reservoir sac slips out of alignment, the walker takes on too much water and its legs break; its companions tilt its body to return the water to a drainage channel."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1175,6 +1728,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called the Water-Level Spine signals the collection order with light from its back plates. If F07 conductivity logs conflict with HP09’s on-site water-quality tests, the group stops harvesting and waits until a person marks a safe water level."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1186,6 +1748,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it taps pipes with the tips of its legs; at stage 2, it occupies drains and pumps; at stage 3, it raises its reservoir sacs like a wall to seal off a maintenance site. Drying out a condensation channel or suddenly taking away water it is harvesting triggers escalation."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1197,6 +1768,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Dispersing pump noise can split up the group; local cooling can then slow its leg joints before an empty drain is sealed. Redirecting contaminated condensation into a bypass channel causes it to move on its own. Cutting all power would also endanger civilian refrigerators and medical storage cabinets."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1208,6 +1788,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 can exchange contaminated-condensation purification work for maintenance time slots. Driving out the harvesters would make water easier to access, but their ice and leak monitoring would disappear, increasing falls and pipe damage."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1219,6 +1808,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, its movements provide a record for tracing which warehouse the contaminated water came from. In G23-SC2, the collection areas are redistributed in an agreement with the Water-Level Spine to open the blocked pump room. In G23-SC3, on-site samples reveal an error in F07’s water-quality logs."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1235,6 +1833,7 @@
       "kind": "paragraph",
       "anchor": "g23e03-냉응수확보행체-p4",
       "text": {
+        "en": "<a id=\"g23e04\"></a>",
         "ko": "<a id=\"g23e04\"></a>"
       }
     },
@@ -1243,6 +1842,7 @@
       "anchor": "g23e04-한랭접힘시계",
       "depth": 3,
       "text": {
+        "en": "G23E04 · Cold-Folding Clock",
         "ko": "G23E04 · 한랭접힘시계"
       }
     },
@@ -1251,12 +1851,15 @@
       "anchor": "g23e04-한랭접힘시계-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -1266,42 +1869,52 @@
       "anchor": "g23e04-한랭접힘시계-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cold-Fold Clock was a mobile biomechanical variant differentiated from the G23 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "한랭접힘시계은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1312,6 +1925,15 @@
       "anchor": "g23e04-한랭접힘시계-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Cold-Folding Clock is a biomechanical organism that folds and unfolds a fan-shaped spore membrane in time with temperature cycles, marking time in refrigerated areas. It senses heat changes and recurring vibrations to learn shift cycles, but cannot predict sudden schedule changes."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1323,6 +1945,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose after the collapse when mechanical timers, insulating fibers, and cold-temperature spores left in the S07–Jamsil Line corridor combined. It belongs to the fictional Seoul origin of the cold spore membrane and is not treated as evidence against past facility managers."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1334,6 +1965,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It settles around the shift alarm lights in the Wangsimni Union freezer and moves to the Jamsil Line’s wall of manual timers when seasonal power rationing changes. If pressure from XT03 disrupts the power cycle, it folds inward in search of a stable cooling rhythm."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1345,6 +1985,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs a small amount of electrical energy and chilled lubricant. It competes with HP09 for emergency power, but if it receives power for a set period from an unused storage device, it avoids the wiring of life-support equipment."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1356,6 +2005,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It progresses through emergence, spread, stagnation, negotiability, and disintegration; its population is limited by its allotted power and the space available to spread its membranes. If the lubricant in its folding axle freezes, its time signal runs late, and the whole group repeats the wrong shift cycle until it disintegrates into small membrane fragments."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1367,6 +2025,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Second-Hand Core acts as the controller, setting the membrane’s opening and closing cycle, while subordinate groups relay its rhythm. If F07’s time records differ from HP09’s handwritten logbook, the Second-Hand Core stops the alarm and allows a human mediator to reset the reference time."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1378,6 +2045,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it folds its membrane three times as a warning; at stage 2, it throws refrigeration-unit shift signals out of sync; at stage 3, it layers its membranes to seal off the control room. It escalates if agreed power-supply times are repeatedly missed or the controller’s reference light is removed."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1389,6 +2065,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Irregular striking sounds can interrupt the relayed rhythm; cooling the folding axle can then slow the membrane’s opening before the control panel is sealed with insulation. Installing a portable alarm light in an empty warehouse can change its route. A blackout across the entire area would threaten civilians’ food and medicine at the same time."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1400,6 +2085,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 trades a short period of power supply for accurate refrigeration-unit shift signals. Causing the colony to disintegrate would free up power allocation, but in the Wangsimni Union, where manual clocks are scarce, managing worker shifts and thaw cycles would become more dangerous."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1411,6 +2105,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, it serves as a reference for estimating the exact time food spoiled. In G23-SC2, a choice must be made between honoring the Second-Hand Core’s power-supply agreement and forcing open the control room. In G23-SC3, it becomes central to resolving the discrepancy between the times recorded in F07’s and HP09’s logs."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1427,6 +2130,7 @@
       "kind": "paragraph",
       "anchor": "g23e04-한랭접힘시계-p4",
       "text": {
+        "en": "<a id=\"g23e05\"></a>",
         "ko": "<a id=\"g23e05\"></a>"
       }
     },
@@ -1435,6 +2139,7 @@
       "anchor": "g23e05-냉향길잡이막",
       "depth": 3,
       "text": {
+        "en": "G23E05 · Cold-Scent Guide Membrane",
         "ko": "G23E05 · 냉향길잡이막"
       }
     },
@@ -1443,12 +2148,15 @@
       "anchor": "g23e05-냉향길잡이막-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -1458,42 +2166,52 @@
       "anchor": "g23e05-냉향길잡이막-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cold-Scent Pathfinder Membrane was a mobile biomechanical variant differentiated from the G23 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉향길잡이막은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1504,6 +2222,15 @@
       "anchor": "g23e05-냉향길잡이막-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Cold-Scent Guide Membrane releases cold scent particles from pouch-shaped spore organs to mark separate routes for its group and for people. It senses smells and floor vibrations but loses its bearings amid strong disinfectants or turbulent airflow."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1515,6 +2242,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, remnants from a fragrance warehouse, packaging fibers, and a cold spore layer on the S07–Jamsil Line combined into a wayfinding colony. It is part of the fictional phenomenon of spore-membrane formation in cold storage; no real producer or distribution network is identified as its cause."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1526,6 +2262,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its main habitat is a passage with little airflow between shelves in the Wangsimni Union. In winter it moves along the Jamsil Line’s underground loading route; when strong air pressure arrives from XT03, it breaks its scent markers into short segments and retreats inward."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1537,6 +2282,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs organic matter that retains a scent and cold air. It competes with HP09 for discarded packaging, but if provided with spice residue deemed inedible, it merely marks intact food boxes and passes them by."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1548,6 +2302,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It follows the stages of emergence, spread, stagnation, negotiability, and disintegration, and the number of scent pouches is limited by the amount of organic residue. If too much frost builds up inside the pouches, different route markers mingle and the group travels in circles until the membrane thins and disintegrates."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1559,6 +2322,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called the Incense-Burner Core determines the combinations of scents for safe routes and feeding routes. If F07’s smell sensors and an HP09 tracker disagree, it releases no new scent and waits until a person sets out marker cloths."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1570,6 +2342,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns with a bitter scent; at stage 2, it lures workers and carriers into the wrong passages; at stage 3, it blocks access to the site with an irritating spore membrane. Widespread spraying of disinfectant or cutting off the agreed supply route for spice residue triggers escalation."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1581,6 +2362,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " A white-noise vibrator can scatter its group calls, and chilled absorbent cloth can be placed over the scent pouches to seal them. Placing discarded fragrance along a bypass changes its route. Strong chemical cleaning also harms civilians’ food and respiratory safety."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1592,6 +2382,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 can exchange a supply of discarded fragrance for safe-route markers. Eliminating the colony would remove the irritating smell, but it would also remove the scent markers that guide people through the blacked-out Wangsimni Union and Jamsil Line, increasing the risk of people going missing."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1603,6 +2402,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, scent layers reveal the passage taken by a contaminated box. In G23-SC2, HP09 gives up discarded fragrance in exchange for asking the Incense-Burner Core to mark a route exclusively for rescuers. In G23-SC3, mixed-up markers caused by XT03 turbulence are reconstructed to find an evacuation route."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1619,6 +2427,7 @@
       "kind": "paragraph",
       "anchor": "g23e05-냉향길잡이막-p4",
       "text": {
+        "en": "<a id=\"g23e06\"></a>",
         "ko": "<a id=\"g23e06\"></a>"
       }
     },
@@ -1627,6 +2436,7 @@
       "anchor": "g23e06-성에봉합구",
       "depth": 3,
       "text": {
+        "en": "G23E06 · Frost-Stitcher",
         "ko": "G23E06 · 성에봉합구"
       }
     },
@@ -1635,12 +2445,15 @@
       "anchor": "g23e06-성에봉합구-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -1650,42 +2463,52 @@
       "anchor": "g23e06-성에봉합구-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Frost Sealing Jaw was a mobile biomechanical variant differentiated from the G23 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "성에봉합구은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1696,6 +2519,15 @@
       "anchor": "g23e06-성에봉합구-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Frost Seam-Mender is a repair biomechanical organism that grips torn insulation membrane with rounded compression jaws and stitches gaps with a mixture of spore threads and ice crystals. It detects heat leaks and metal vibrations, but cannot directly determine their cause on the other side of an insulated wall."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1707,6 +2539,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, insulation, repair wire, and cold-temperature spores scattered across S07 and the Jamsil Line combined to form an autonomous mending colony. It is a cold-temperature spore membrane from the fictional Seoul setting, and it does not interpret the facility’s collapse as a deliberate act by any particular group."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1718,6 +2559,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " They gather at cracks and pipe penetrations in the Wangsimni Union’s refrigerated walls. When seasonal contraction intensifies, they move to the Jamsil Line’s old insulated tunnels; when pressure from the XT03 outskirts creates new cracks, they build temporary nests in that direction."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1729,6 +2579,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " They need insulation fibers, thin scrap metal, and coolant. They compete with HP09 for repair materials, but will not tear apart insulation membranes in use if removed insulation is cleaned and supplied to them."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1740,6 +2599,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " They progress through emergence, spread, stagnation, negotiability, and disintegration, and the number of menders is limited by the number of repairable cracks and the amount of material available. If ice powder lodges in their compression jaws, the stitches become so tight that they tear wall panels, so the group rubs its jaws against drainpipes to remove the powder."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1751,6 +2619,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called Knot-Jaw sets crack priorities and thread tension. If F07 thermal-imaging logs differ from an HP09 technician’s structural assessment, they stop stitching and begin with the sections a human has marked as hazardous."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1762,6 +2639,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, they knock their compression jaws together as a warning; at stage 2, they stitch maintenance openings and pipe covers shut without authorization; and at stage 3, they block the work site with a thick layer of spore stitching. They escalate if a newly mended wall is torn open without warning or salt remains on supplied cleaning materials."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1773,6 +2659,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Disrupt their work sequence with irregular impact sounds, cool their jaw joints to reduce compression force, then seal hazardous cracks separately. Cleaned insulation placed in a safe area can draw the group there, while shotgun fire creates more gaps in the wall and causes the colony to spread."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1784,6 +2679,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 provides discarded insulation and a list of cracks, and the colony mends the designated sections first. Removing them restores control over materials, but people must then bear the full burden of cold-air leaks in the Wangsimni Union and condensation damage on the Jamsil Line."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1795,6 +2699,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, their stitching traces reveal the first crack infiltrated by contaminated spores. In G23-SC2, negotiations are needed to loosen part of the sealing layer and create a rescue passage; in G23-SC3, they prompt an HP09 technician to reinspect a wall F07 considers safe."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1811,6 +2724,7 @@
       "kind": "paragraph",
       "anchor": "g23e06-성에봉합구-p4",
       "text": {
+        "en": "<a id=\"g23e07\"></a>",
         "ko": "<a id=\"g23e07\"></a>"
       }
     },
@@ -1819,6 +2733,7 @@
       "anchor": "g23e07-냉장궤도운반막",
       "depth": 3,
       "text": {
+        "en": "G23E07 · Refrigerated Rail Conveyor Membrane",
         "ko": "G23E07 · 냉장궤도운반막"
       }
     },
@@ -1827,12 +2742,15 @@
       "anchor": "g23e07-냉장궤도운반막-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"]}"
         }
       ]
@@ -1842,42 +2760,52 @@
       "anchor": "g23e07-냉장궤도운반막-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cold-Rack Track-Carrier Membrane was a mobile biomechanical variant differentiated from the G23 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉장궤도운반막은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1888,6 +2816,15 @@
       "anchor": "g23e07-냉장궤도운반막-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Refrigerated Rail Conveyor Membrane is a biomechanical colony that transports boxes and organic remains by contracting a spore-bearing belt spread across the floor. It classifies objects by load vibrations and heat, but cannot identify the contents of sealed boxes."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1899,6 +2836,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, the stopped conveyors of S07 and the Jamsil Line, packing straps, and cold-temperature spore membranes joined to form a moving transport layer. This is part of Seoul’s fictional cold-storage ecology and does not assign blame to past logistics organizations or present-day factions."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1910,6 +2856,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Floor rails between the Wangsimni Union’s loading dock and freezer shelves are its core territory. When seasonal freight volume declines, it moves to the abandoned Jamsil Line station’s loading platform; when XT03 pressure increases, it places heavy boxes like a defensive wall and retreats inward."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1921,6 +2876,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs organic packing fibers, scrap rail metal, and a small amount of coolant. It competes with HP09’s recovery of transport equipment, but will not attach itself to carts carrying relief supplies if it is allotted broken boxes and rusted rails."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1932,6 +2896,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It follows the progression of emergence, spread, stagnation, negotiability, and disintegration, and its belt length is limited by fiber and rail stocks. If its load-sensing knots stretch, boxes pile up on one side and bend the rails, so the colony unloads the cargo and detaches the damaged section itself."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1943,6 +2916,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called Load Core assigns weight classes and destinations. If F07’s loading list differs from HP09’s on-site ledger, it stops transporting goods and waits until a human puts a new destination marker on each box."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1954,6 +2936,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " Stage 1 is a warning made by shaking empty boxes; at stage 2, it disrupts logistics rails and access routes to the freezers; at stage 3, it stacks boxes to blockade the loading site. It escalates if destination markers are changed repeatedly or the promised discarded packaging is taken away."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1965,6 +2956,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Make noise outside the rails to scatter Load Core’s calls, cool the belt joints, then seal off the rail section with boards. Empty boxes placed on a bypass rail can move the colony to another warehouse, while blowing up a stack of boxes also destroys the food and medicine inside."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1976,6 +2976,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 supplies discarded packaging and nighttime rail-use rights, and the colony transports designated cargo while keeping it cold. Driving the colony out makes control easier for the recovery team, but greatly reduces food transport to areas short of personnel."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1987,6 +2996,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, its transport records allow the actual sequence of a contaminated box’s movements to be reconstructed. In G23-SC2, the loading manifest is renegotiated to open the blockaded loading dock; in G23-SC3, it places relief boxes as a temporary defensive wall against XT03 pressure."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2003,6 +3021,7 @@
       "kind": "paragraph",
       "anchor": "g23e07-냉장궤도운반막-p4",
       "text": {
+        "en": "<a id=\"g23e08\"></a>",
         "ko": "<a id=\"g23e08\"></a>"
       }
     },
@@ -2011,6 +3030,7 @@
       "anchor": "g23e08-해동경계종",
       "depth": 3,
       "text": {
+        "en": "G23E08 · Thaw-Warning Bell",
         "ko": "G23E08 · 해동경계종"
       }
     },
@@ -2019,12 +3039,15 @@
       "anchor": "g23e08-해동경계종-list1",
       "items": [
         {
+          "en": "Source batch: M036",
           "ko": "출처 배치: M036"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -2034,42 +3057,52 @@
       "anchor": "g23e08-해동경계종-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Thaw-Watch Bell was a mobile biomechanical variant differentiated from the G23 common ecology. The elite breakthrough role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "해동경계종은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 정예 돌파 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2080,6 +3113,15 @@
       "anchor": "g23e08-해동경계종-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " The Thaw-Warning Bell is a surveillance biocybernetic organism that stretches a spore membrane taut inside nested metal rings and produces a low bell tone when the temperature rises. It senses heat and electronic noise to signal cooling-system faults, but cannot always tell whether a sound comes from a person or a machine."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2091,6 +3133,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, alarm devices, refrigerant pipe rings, and cold-temperature spores on S07 and the Jamsil Line combined into a colony that monitors thawing. It has a fictional Seoul origin in cold-temperature spore membranes, and XT03 signals are data on external pressure, not proof of who is attacking."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2102,6 +3153,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core habitat is the Wangsimni Union’s refrigerant distribution room and thermometer wall. In warm seasons, it moves to the Jamsil Line’s underground storeroom; when a heat wave approaches from XT03, multiple bells move in succession toward the inner zones."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2113,6 +3173,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs coolant, thin scrap-metal rings, and a stable low-power signal. It competes with HP09’s recovery of alarm parts, but will not disturb functioning civilian alarms if given broken thermometers and discarded rings."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2124,6 +3193,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through emergence, spread, stagnation, negotiability, and disintegration, and the number of bells is constrained by cooling capacity and ring stocks. If membrane tension slackens, the alarm sounds later than the actual thaw; if it is too taut, even small vibrations trigger false alarms, so the colony adjusts it by hanging ice weights."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2135,6 +3213,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single controller called the Great Bell Weight sets alarm thresholds and the sequence of relays. If F07 temperature logs conflict with HP09’s manual thermometers, it lowers the bell tone briefly and postpones blockade actions until a human mediator designates a new reference point."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2146,6 +3233,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns with a single bell tone; at stage 2, cascading vibrations interfere with cooling-control signals; at stage 3, it spreads its rings and spore membranes to blockade the distribution room. Forcibly silencing the alarm or reducing the coolant allotment without notice raises its stage."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2157,6 +3253,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Use sound-absorbing panels to interrupt transmission between bells, cool the ring connectors, then insulate and seal the area around the control lines. Installing discarded thermometers in a safe area can redirect its patrol route, while destroying all alarm devices means civilians notice real thawing and refrigerant leaks too late."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2168,6 +3273,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 supplies coolant allotments and discarded maintenance rings, and the colony shares thaw-alarm times for S07 and the Jamsil Line. Disintegrating the colony reduces false alarms but also removes a way to catch localized leaks missed by F07 sensors."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2179,6 +3293,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, investigators examine the order in which bells rang before a spoilage incident to find the first thaw point. In G23-SC2, they renegotiate coolant allotments with the Great Bell Weight just before a stage 3 blockade; in G23-SC3, they use discrepancies between F07 logs and manual thermometers to establish the actual approach route of the XT03 heat wave."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2195,6 +3318,7 @@
       "kind": "paragraph",
       "anchor": "g23e08-해동경계종-p4",
       "text": {
+        "en": "<a id=\"g23e09\"></a>",
         "ko": "<a id=\"g23e09\"></a>"
       }
     },
@@ -2203,6 +3327,7 @@
       "anchor": "g23e09-이슬패-경매막",
       "depth": 3,
       "text": {
+        "en": "G23E09 · Dew-Token Auction Membrane",
         "ko": "G23E09 · 이슬패 경매막"
       }
     },
@@ -2211,12 +3336,15 @@
       "anchor": "g23e09-이슬패-경매막-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -2226,42 +3354,52 @@
       "anchor": "g23e09-이슬패-경매막-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Dewpoint-Token Auction Membrane was a mobile biomechanical variant differentiated from the G23 common ecology. The elite blocking role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "이슬패 경매막은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 정예 차단 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2272,6 +3410,15 @@
       "anchor": "g23e09-이슬패-경매막-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical organism of the G23 cold-temperature spore-membrane lineage, it operates within the S07 and Jamsil Line corridor, with HP09 mediation, pressure from the XT03 outskirts, and cooperation with F07 sensors. Between its thin membrane folds, it makes frost tokens inscribed with each shipment’s dew point and uses them to assign priority for passage."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2283,6 +3430,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It was designed to give refrigerated cargo fair passage through a limited cold zone, but gradually made the scarcity and exchange order of frost tokens rules of its own and began holding auctions."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2294,6 +3450,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It spreads through freezer anterooms, food loading docks, and underground passages where temperature zones meet. There is a bidding slot on each edge of the membrane where carriers insert cargo information and a token."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2305,6 +3470,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs a reliable dew-point reference, a dry reading area, and the cargo’s expected dwell time. When information is missing, it estimates spoilage risk from frost on the exterior alone."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2316,6 +3490,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Its membrane area changes through emergence, spread, stagnation, negotiability, and disintegration, in that order. During stagnation, accumulated moisture must be shaken off and reference plates stored separately from frost tokens; if the dulled edges of old tokens are not isolated, dew points read too high and spoiled cargo passes first."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2327,6 +3510,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " Cargo with both a low dew point and a short permissible time is assigned passage first. When multiple membranes compete, the one that most accurately discloses actual loss reports gains authority to judge."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2338,6 +3530,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns against approaching the bidding slots with thin lines of frost. If counterfeit frost tokens enter the system, at stage 2 it pushes fresh food onto a warm detour, disrupting cooling assignments and unloading order. If a reference plate is forcibly warmed, it rises to stage 3 and freezes the freezer-anteroom shutters shut; negotiations to reappraise the tokens using a calibrated warm reference plate remain possible until just before then."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2349,6 +3550,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Compare token reactions against a calibrated warm reference plate, reclassify cargo in a dry-air passage, and isolate suspect tokens by source. Wiping away the frost by hand also erases the evidence."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2360,6 +3570,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " Given accurate cargo information, it prepares a refrigerated-distribution priority list and discloses expected spoilage quantities. The community must choose what to send first among scarce medicines, seeds, and food needed immediately."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2371,6 +3590,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, the transport cooperative that profited from counterfeit tokens is traced; in G23-SC2, HP09 decides whether to revise the ration list even if disclosing spoilage causes panic. In G23-SC3, F07 readings are compared with the dew-point reference plate before XT03 pressure arrives."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2387,6 +3615,7 @@
       "kind": "paragraph",
       "anchor": "g23e09-이슬패-경매막-p4",
       "text": {
+        "en": "<a id=\"g23e10\"></a>",
         "ko": "<a id=\"g23e10\"></a>"
       }
     },
@@ -2395,6 +3624,7 @@
       "anchor": "g23e10-냉각관풍금",
       "depth": 3,
       "text": {
+        "en": "G23E10 · Cooling-Pipe Organ",
         "ko": "G23E10 · 냉각관풍금"
       }
     },
@@ -2403,12 +3633,15 @@
       "anchor": "g23e10-냉각관풍금-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -2418,42 +3651,52 @@
       "anchor": "g23e10-냉각관풍금-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cooling-Pipe Organ was a mobile biomechanical variant differentiated from the G23 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉각관풍금은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2464,6 +3707,15 @@
       "anchor": "g23e10-냉각관풍금-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A mobile biomechanical cluster with several discarded cooling pipes standing like a rib cage, it creates directional signals when spores inside the pipes resonate. It hears electronic noise and air vibrations, but cannot reliably distinguish even nearby obstacles in sealed, silent areas."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2475,6 +3727,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed after the collapse when cold-temperature spore membranes adhered to warehouse pipes in the S07 and Jamsil Line corridor and control valves rearranged themselves like living tissue. A correlation with signals from XT03 has been observed, but it is not taken as evidence of deliberate action by any government or institution."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2486,6 +3747,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its home is the forest of vertical pipes in the Wangsimni Union’s central cooling room; in winter, it moves to the long ducts of the Jamsil Line transfer warehouse. When pressure from the XT03 outskirts increases, it raises pipes at tunnel entrances where sound carries well."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2497,6 +3767,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It requires both residual battery power and coolant, and uses small amounts of organic matter to repair pipe membranes. Competition for food arises when HP09 recovers emergency power, and growth of new joints stops if available power falls below a certain level."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2508,6 +3787,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It changes through emergence, spread, stagnation, negotiability, and disintegration, in that order. If maintenance fails and condensate fills the overtone pipes, warning calls and gathering calls are reversed, causing the cluster to surround the wrong door."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2519,6 +3807,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One lead control pipe, which produces the lowest note, commands the cluster; the others move in harmony groups of three pipes. If F07 electronic logs conflict with the actual direction of resonance, they follow readings from a manual tuning fork installed by a human mediator."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2530,6 +3827,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " Stage 1 is an appearance at an entrance accompanied by a short, low-pitched warning. At stage 2, pipe resonance disrupts communications and cooling pumps; at stage 3, a sustained tone lowers fire shutters to blockade the site, and negotiation soon becomes difficult."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2541,6 +3847,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Irregular noise can scatter the harmony groups, and localized cooling of inactive pipes alone can break the resonance. Combining duct sealing, diversion of its power supply to external batteries, and intersection blockades can move the lead control pipe without destroying it."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2552,6 +3867,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP09 supplies power for a set period, the cluster stops resonating in a designated passage during that time. Breaking every pipe also eliminates the civilian warning network and natural ventilation, weakening the response to later fires."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2563,6 +3887,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, different pipe tones help locate a safe passage. In G23-SC2, passage times are traded against HP09’s power allocation schedule; in G23-SC3, correcting a wrongly sounded gathering call changes the direction of movement along the Jamsil Line."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2579,6 +3912,7 @@
       "kind": "paragraph",
       "anchor": "g23e10-냉각관풍금-p4",
       "text": {
+        "en": "<a id=\"g23e11\"></a>",
         "ko": "<a id=\"g23e11\"></a>"
       }
     },
@@ -2587,6 +3921,7 @@
       "anchor": "g23e11-성에문지기",
       "depth": 3,
       "text": {
+        "en": "G23E11 · Frost Gatekeeper",
         "ko": "G23E11 · 성에문지기"
       }
     },
@@ -2595,12 +3930,15 @@
       "anchor": "g23e11-성에문지기-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"]}"
         }
       ]
@@ -2610,42 +3948,52 @@
       "anchor": "g23e11-성에문지기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Frost Gatekeeper was a mobile biomechanical variant differentiated from the G23 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "성에문지기은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2656,6 +4004,15 @@
       "anchor": "g23e11-성에문지기-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A doorframe-shaped biomechanical organism formed from a closed shutter and spore-bearing muscle bands. It screens those seeking passage by sensing floor vibrations and human scents, but easily misses washed objects or objects hanging above the floor."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2667,6 +4024,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed after the cold-storage warehouses in the S07 and Jamsil Line corridor collapsed and layers of spore membrane accumulated inside security shutters. Access records from that time are fragmentary, so it treats only incoming pressure from XT03 as a present condition governing movement."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2678,6 +4044,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core habitat is the Wangsimni Union’s double-door anterooms; in dry seasons, it moves to doorframes at Jamsil Line loading docks where moisture remains. When cold air pushes in from the XT03 direction, it occupies the inner door before the outer one."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2689,6 +4064,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It consumes organic matter for lubrication and scrap metal from shutter rails, and gathers a small amount of coolant to reduce operating heat. Competition arises when HP09 removes the rails, and new gatekeeper buds do not grow if too few parts remain."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2700,6 +4084,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " The stages of emergence, spread, stagnation, negotiability, and disintegration show in how much of the doorframe it occupies. If a rail tooth slips out of alignment by one notch, it squeezes even authorized subjects, making maintenance with a manual wedge necessary."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2711,6 +4104,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Bolt Core connecting the two doors serves as controller, with a small scent-screening group stationed at each threshold. If F07 access sensors disagree with the screening group, it gives priority to a wax tag left by a human mediator on site."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2722,6 +4124,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it draws a line of frost across the threshold as a warning. At stage 2, it holds unauthorized carts and delays logistics; at stage 3, if it detects repeated forced openings, it locks the shutter and blockades the site, sharply reducing the chance of negotiation."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2733,6 +4144,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Vibrating noise sent through the floor on the other side can lure the screening group away, while briefly cooling the rail slows contraction of the muscle bands. Sealing door gaps, diverting organic lubricant to it, and blocking side passages together are safer than a frontal breakthrough."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2744,6 +4164,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " In exchange for scent tags and a passage timetable, HP09 can cede a particular doorway as nighttime storage. Tearing out every gatekeeper also removes the smoke-control compartments, exposing civilian evacuation routes to both smoke and spores."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2755,6 +4184,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, a lost wax tag is recreated to let rescuers through. In G23-SC2, HP09’s unloading hours are coordinated with the gatekeeper’s rest periods; in G23-SC3, a choice must be made about which of the double doors leading to the Jamsil Line to keep."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2771,6 +4209,7 @@
       "kind": "paragraph",
       "anchor": "g23e11-성에문지기-p4",
       "text": {
+        "en": "<a id=\"g23e12\"></a>",
         "ko": "<a id=\"g23e12\"></a>"
       }
     },
@@ -2779,6 +4218,7 @@
       "anchor": "g23e12-서리추계군",
       "depth": 3,
       "text": {
+        "en": "G23E12 · Frost-Weight Weighing Colony",
         "ko": "G23E12 · 서리추계군"
       }
     },
@@ -2787,12 +4227,15 @@
       "anchor": "g23e12-서리추계군-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -2802,42 +4245,52 @@
       "anchor": "g23e12-서리추계군-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Frost-Weight Counting Swarm was a mobile biomechanical variant differentiated from the G23 common ecology. The growth variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "서리추계군은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 성장 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2848,6 +4301,15 @@
       "anchor": "g23e12-서리추계군-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A group of weighing-type biomechanical organisms whose bodies combine scale weights, conveyor rollers, and spore sacs. They sense load vibrations and the smell of metal to measure the quantity of supplies on a passage, but cannot know the contents’ value or the carrier’s intentions."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2859,6 +4321,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, cold-temperature spore membranes spread through the automated weighbridges on S07 and the Jamsil Line, and the weights and rollers reassembled themselves autonomously. This is an origin within the fictional Seoul setting; pressure from the XT03 outskirts is an environmental factor that triggers changes in scale calibration and movement."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2870,6 +4341,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core habitat is beneath the floor scales at the Wangsimni Union loading dock; when winter freight volumes decline, it moves to the Jamsil Line railway loading tracks. The stronger the vibrations from XT03, the more it hides behind heavy debris."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2881,6 +4361,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It consumes scrap metal and organic packing material in balanced amounts and uses a little stored power to move. It competes directly with HP09’s metal recovery efforts; if the mass it has secured has not reached the upper limit, it repairs existing weights rather than forming offspring groups."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2892,6 +4381,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Changes through emergence, spread, stagnation, negotiability, and disintegration are indicated by the number of weighing zones. A typical maintenance failure occurs when a zero-point spring freezes, causing it to judge even an empty carrier overloaded and block the passage."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2903,6 +4401,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The oldest reference weight acts as a controller and sets permitted loads, while weighing teams of four organisms handle individual lanes. If F07 load logs conflict with the reference weight’s readings, a human mediator reweighs the load on a manual scale."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2914,6 +4421,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it strikes the floor twice to warn of excessive weight. At stage 2, it reverses its rollers to disrupt supply lines; at stage 3, continued overloading causes it to pile all its weights in front of a door and blockade it, after which the window for negotiation soon closes."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2925,6 +4441,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Combat and response:",
+              "strong": true
+            },
+            {
+              "text": " Uneven noise can break its weighing rhythm, and cooling only the reference weight can slow its decisions. Placing a box of scrap metal in another lane diverts its food source; adding roller seals and blocking its entry route reduces conflict."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2936,6 +4461,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " In return for HP09 limiting its daily recovery quantity, it can allow rescue supplies below a set weight to pass. Clearing out the cluster also removes a real overload-monitoring function that warned of collapse risk, potentially allowing a weak floor to give way beneath civilians."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2947,6 +4481,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, manual weighing is used to adjust the quantity of medicines transported. In G23-SC2, a scrap-metal allotment line is negotiated with HP09; in G23-SC3, it provides an indicator for deciding which loading area to empty and use as a buffer zone before XT03 vibrations arrive."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2963,6 +4506,7 @@
       "kind": "paragraph",
       "anchor": "g23e12-서리추계군-p4",
       "text": {
+        "en": "<a id=\"g23e13\"></a>",
         "ko": "<a id=\"g23e13\"></a>"
       }
     },
@@ -2971,6 +4515,7 @@
       "anchor": "g23e13-응결목동",
       "depth": 3,
       "text": {
+        "en": "G23E13 · Condensation Shepherd",
         "ko": "G23E13 · 응결목동"
       }
     },
@@ -2979,12 +4524,15 @@
       "anchor": "g23e13-응결목동-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -2994,42 +4542,52 @@
       "anchor": "g23e13-응결목동-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Condensation Herder was a mobile biomechanical variant differentiated from the G23 common ecology. The aged variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "응결목동은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 노화 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3040,6 +4598,15 @@
       "anchor": "g23e13-응결목동-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical guide species with tentacles like coolant hoses and a porous bladder. It follows heat and scent together, herding small spore clumps, but can only guess where a target is behind a shield and cannot locate it precisely."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3051,6 +4618,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A spore membrane grew on a ruptured coolant hose in the S07·Jamsil Line corridor, transforming it into a mobile collector of leaked fluid. It is an independent colony that arose in Seoul after the collapse, and pressure on the XT03 perimeter changes its bladder inflation and seasonal movements."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3062,6 +4638,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core habitat is around the Wangsimni Union coolant sump. During the rainy season, it moves up to the Jamsil Line underground ramp, where condensate is plentiful. When XT03 pressure falls, it retreats deep into the drains."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3073,6 +4658,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It prioritizes coolant and sugary organic matter, and uses wire to secure its hoses. It competes with HP09 for leaked-water recovery. Once its storage bladder is full, it stops producing additional individuals and directs resources toward the spore swarm’s survival."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3084,6 +4678,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through emergence, spread, stagnation, negotiability, and disintegration; each stage can be identified by the number of spore clumps it leads. If the bladder’s pressure plate tears, a malfunction causes it to spray excess coolant and freeze the floor."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3095,6 +4698,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single shepherd core acts as controller, setting direction through scent secretion, while the spore swarm follows in groups of around six clumps. If F07 thermal-imaging logs conflict with the shepherd core’s judgment, it treats scent stakes installed by a human mediator as the priority signal."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3106,6 +4718,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it strikes the floor with its tentacles to warn against approaching. At stage 2, it sprays coolant to freeze stairs and pumps. At stage 3, after losing the spore swarm, it freezes the sump shut, and the opportunity for negotiation is nearly over."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3117,6 +4738,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Make noise from the side to turn the shepherd core’s tentacles away, and cool its overheated bladder gradually to prevent rupture. Nonlethal separation is possible by sealing drains, placing sugary scraps along an alternate route, and blocking the path between the spore swarm and the main body."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3128,6 +4758,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 can bargain to have the ice cleared from major stairways in exchange for a set amount of condensate and safe grazing time. Eliminating the shepherd causes the spore clumps to scatter uncontrolled through the ventilation network, increasing mold damage in civilian residential areas."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3139,6 +4778,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, scent stakes guide the spore swarm into an empty warehouse. In G23-SC2, HP09 divides up access times to the sump. In G23-SC3, its role is to secure the Jamsil Line ramp as an evacuation route before it freezes."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3155,6 +4803,7 @@
       "kind": "paragraph",
       "anchor": "g23e13-응결목동-p4",
       "text": {
+        "en": "<a id=\"g23e14\"></a>",
         "ko": "<a id=\"g23e14\"></a>"
       }
     },
@@ -3163,6 +4812,7 @@
       "anchor": "g23e14-빙점편직기",
       "depth": 3,
       "text": {
+        "en": "G23E14 · Freezing-Point Knitter",
         "ko": "G23E14 · 빙점편직기"
       }
     },
@@ -3171,12 +4821,15 @@
       "anchor": "g23e14-빙점편직기-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"]}"
         }
       ]
@@ -3186,42 +4839,52 @@
       "anchor": "g23e14-빙점편직기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Ice-Point Loom was a mobile biomechanical variant differentiated from the G23 common ecology. The cooperation · coexistence role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "빙점편직기은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 협력·공존 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3232,6 +4895,15 @@
       "anchor": "g23e14-빙점편직기-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical weaver species that travels along ceiling rails, weaving metal fibers and spore thread. It detects movement below through electronic noise and ceiling vibrations, but has difficulty detecting stationary targets on the floor."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3243,6 +4915,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, an insulation cutter and spore membrane in the S07·Jamsil Line refrigeration facility combined and began weaving a ceiling insulation layer on their own. XT03 signals affect the direction of weaving but are not used as evidence assigning responsibility for the disaster to any particular faction."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3254,6 +4935,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Cable trays in the Wangsimni Union’s high-ceilinged storage building are its main nesting site. In seasons when heating is cut off, it moves to the Jamsil Line platform ceiling. When pressure on the XT03 perimeter rises, it wraps the beams nearest the outer wall more thickly first."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3265,6 +4955,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It consumes scrap metal from insulated wires and residual power, and also seeks organic adhesive matter to keep its spore thread flexible. It competes with HP09’s wire recovery, and does not form a new work crew when its fiber reserves fall below the threshold."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3276,6 +4975,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It follows a progression of emergence, spread, stagnation, negotiability, and disintegration. During stagnation, it repeatedly reinforces just one area. If its tension sensor freezes, a maintenance failure causes it to cover even the vents with fabric, blocking airflow."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3287,6 +4995,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single spindle core acts as controller and sets the overall tension, while knitting crews paired in threes move back and forth between beams. If F07’s ventilation sensors conflict with the spindle core’s tension readings, it follows cut lines marked by a human mediator."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3298,6 +5015,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it hangs loose threads to signal an approach. At stage 2, it wraps cables and ventilation ducts together, disrupting infrastructure. At stage 3, if its threads are repeatedly cut, it weaves across entire entrances to seal them, reaching the point just before the negotiation window closes."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3309,6 +5035,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Direct noise to the far side of the ceiling to draw the knitting crews away, and cool the spindle shaft to slow weaving. Finished fabric can be sealed section by section; discarded wire can be supplied as food along an alternate route, and rail junctions can be blocked to limit its spread."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3320,6 +5055,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 negotiates to keep the areas around vents clear in exchange for bundles of discarded wire and work time. Burning or tearing out all the fabric also removes the makeshift insulation layer, worsening both civilian heating-energy needs and medicine-storage capacity."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3331,6 +5075,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, loosening the fabric’s tension frees trapped people. In G23-SC2, the amount of wire HP09 recovers is balanced against the amount of insulation retained. In G23-SC3, a choice must be made about which outer wall to reinforce first against XT03 pressure."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3347,6 +5100,7 @@
       "kind": "paragraph",
       "anchor": "g23e14-빙점편직기-p4",
       "text": {
+        "en": "<a id=\"g23e15\"></a>",
         "ko": "<a id=\"g23e15\"></a>"
       }
     },
@@ -3355,6 +5109,7 @@
       "anchor": "g23e15-냉매잠수낭",
       "depth": 3,
       "text": {
+        "en": "G23E15 · Coolant Diving Sacs",
         "ko": "G23E15 · 냉매잠수낭"
       }
     },
@@ -3363,12 +5118,15 @@
       "anchor": "g23e15-냉매잠수낭-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -3378,42 +5136,52 @@
       "anchor": "g23e15-냉매잠수낭-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Refrigerant Diving Pouch was a mobile biomechanical variant differentiated from the G23 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉매잠수낭은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3424,6 +5192,15 @@
       "anchor": "g23e15-냉매잠수낭-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical colony made up of translucent sacs that float through drainage pipes and have folding metal fins. It senses vibrations in liquids and dissolved odors, but cannot detect what is in dry areas or sealed containers."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3435,6 +5212,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " When a cold-adapted spore membrane formed in a collection pipe carrying mixed coolant and sewage in the S07·Jamsil Line corridor, sacs developed that filter and hold the outflow. Changes in pressure on the XT03 perimeter alter water levels in the pipes and spur their movement."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3446,6 +5232,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The Wangsimni Union’s underground coolant recovery tank is its core habitat. During the thaw, it moves to the abandoned Jamsil Line washing station through connected waterways. If it detects backflow from XT03, it hangs from high points in the pipe network."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3457,6 +5252,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It feeds on coolant and organic debris in the water, and uses thin pieces of scrap metal to repair its fins. It competes with HP09’s recovery of liquid resources. When the volume available for filtration falls, it chooses dormancy instead of dividing into more sacs."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3468,6 +5272,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " The stages of emergence, spread, stagnation, negotiability, and disintegration are distinguished by the proportion of sacs floating at the surface. If oil clogs its filtration membrane, a backwashing malfunction causes it to discharge even clean coolant as contaminated fluid."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3479,6 +5292,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The largest buoyancy sac serves as controller, while the smaller diving sacs split into filtration groups by waterway. If F07 water-quality logs differ from the buoyancy sac’s assessment by smell, the results of a manual sample taken by a human mediator take priority."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3490,6 +5312,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it sends up bubbles three times from a drain as a warning. At stage 2, it clings to pump intakes, disrupting water treatment. At stage 3, after detecting toxic backflow, it blocks the pipe network with its bodies and seals off the base; the end of negotiations is imminent."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3501,6 +5332,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Transmit irregular noise through the pipe walls to scatter the diving sacs, and use low temperatures to slow the buoyancy sac’s activity. Sealing contaminated sections, diverting its food supply to clean condensate, and blocking routes with valves are more effective than rupturing the sacs directly."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3512,6 +5352,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 can designate a tank for purification and a time for movement while leaving part of the coolant to the colony. Bursting every sac releases the contaminants concentrated inside all at once, harming civilian drinking water and underground soil."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3523,6 +5372,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, manual samples identify safe valves. In G23-SC2, the order in which HP09 and the colony use the purification tank is negotiated. In G23-SC3, the diving sacs must be guided into a Jamsil Line bypass pipe before backflow from XT03."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3539,6 +5397,7 @@
       "kind": "paragraph",
       "anchor": "g23e15-냉매잠수낭-p4",
       "text": {
+        "en": "<a id=\"g23e16\"></a>",
         "ko": "<a id=\"g23e16\"></a>"
       }
     },
@@ -3547,6 +5406,7 @@
       "anchor": "g23e16-동결노선편집체",
       "depth": 3,
       "text": {
+        "en": "G23E16 · Frozen-Route Editors",
         "ko": "G23E16 · 동결노선편집체"
       }
     },
@@ -3555,12 +5415,15 @@
       "anchor": "g23e16-동결노선편집체-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}",
           "ko": "연결: {\"states\":[\"S07\",\"S12\"],\"houses\":[\"HP09\"],\"theaters\":[\"XT03\"],\"synthetics\":[\"F07\"]}"
         }
       ]
@@ -3570,42 +5433,52 @@
       "anchor": "g23e16-동결노선편집체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Frozen-Route Editing Body was a mobile biomechanical variant differentiated from the G23 common ecology. The local adaptation role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "동결노선편집체은 G23 공통 생태에서 분화한 이동 생체기계 변이다. 지역 적응 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3616,6 +5489,15 @@
       "anchor": "g23e16-동결노선편집체-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A flat biomechanical colony that scratches the guide lines and transport-cart tracks on warehouse floors to create new routes. It reads wheel vibrations and electronic noise from motors to estimate traffic volume, but cannot know destinations or passengers’ thoughts."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3627,6 +5509,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, it arose in the S07·Jamsil Line logistics corridor as a spore membrane absorbed paint from automated guide lines and track components. Long exposure to evacuation flows driven by pressure on the XT03 perimeter entrenched its route-changing behavior."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3638,6 +5529,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The Wangsimni Union’s branching transport-cart depot is its core habitat. During the loading season, it moves near the Jamsil Line freight elevator. When XT03 signals intensify, it erases lines leading outward and adds more inward detours."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3649,6 +5549,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It mainly uses residual power and iron track dust, and also needs scraps of organic paint to harden its lines. Its activity overlaps with HP09’s recovery of vehicle parts. If the power it has secured falls below the limit, it does not produce new route offshoot plates."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3660,6 +5569,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through five phases—emergence, spread, stagnation, negotiability, and disintegration—and stubbornly maintains just one route during stagnation. If its direction plate freezes, a maintenance failure causes it to swap the markings for evacuation routes and closed areas."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3671,6 +5589,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A central junction plate serves as controller, while line-drawing and line-erasing crews move in separate groups. If F07 traffic logs conflict with the junction plate’s calculations, it gives highest priority to physical signs installed by a human mediator."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3682,6 +5609,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it draws a short white line in front of wheels as a warning. At stage 2, it changes guide lines, delaying transport carts and power carts. At stage 3, if incorrect lines keep being painted over, it freezes the entire junction shut as negotiation time runs out."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3693,6 +5629,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Make noise from several directions to confuse its assessment of traffic volume, and cool the junction plate locally to slow its line-drawing. Incorrect lines can be covered with sealing film, parts can be placed along an alternate route toward disused tracks, and key intersections can be physically blocked."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3704,6 +5649,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP09 can bargain to have civilian evacuation lines maintained during the day in exchange for dedicated time for recovery vehicles and an allotment of scrap metal. Indiscriminately eliminating the colony would also eliminate automated transport functions and the empirically established detours that avoid spore spread."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3715,6 +5669,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G23-SC1, swapped evacuation lines are corrected with signs on site. In G23-SC2, separate time slots are assigned to HP09 recovery vehicles and civilian traffic. In G23-SC3, a new safe route to S12 is finalized before XT03 pressure reaches it."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3732,6 +5695,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -3739,6 +5703,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "The Cryo-Spore Film was a gray-white composite membrane clinging thinly to freezer panels and the seams of transport boxes and low-temperature piping.",
         "ko": "저온포자막은 냉동 패널, 운송 상자 저온 배관의 이음매에 얇게 붙는 회백색 복합막이다."
       }
     },
@@ -3746,6 +5711,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "Its surface looked like matte vinyl, but its cross-section repeated hydrophilic polymer lattices, silica hollow fiber, and dormant spore layers.",
         "ko": "표면은 무광택 비닐처럼 보이지만 단면에는 친수성 고분자 격자, 실리카 중공섬유 휴면 포자층이 반복된다."
       }
     },
@@ -3753,6 +5719,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "Its normal thickness was only a few millimeters, and its moisture-laden edges could swell to nearly three times that.",
         "ko": "정상 상태의 두께는 수 밀리미터에 불과하고, 물을 머금은 가장자리는 원래 두께의 세 배 가까이 부풀 수 있다."
       }
     },
@@ -3760,6 +5727,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "The film's core action lay not in producing or absorbing heat but in changing its paths of movement.",
         "ko": "막의 핵심 작용은 열을 생산하거나 흡수하는 것이 아니라 이동 경로를 바꾸는 데 있다."
       }
     },
@@ -3767,6 +5735,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "As the temperature difference across its faces grew, some capillaries contracted and the share of in-plane paths through connected hollow fibers rose.",
         "ko": "양면의 온도차가 커지면 일부 모세관이 수축하고 중공섬유가 연결된 면 방향 통로의 비중이 높아진다."
       }
     },
@@ -3774,6 +5743,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "The result was less frontal heat leakage, but heat crowded into frames and bolt-adhesive boundaries, making unforeseen cold points and hot layers.",
         "ko": "그 결과 정면의 열 누설은 줄어들지만 열이 프레임, 볼트 접착 경계로 몰려 예상하지 못한 냉점과 고온층을 만든다."
       }
     },
@@ -3781,6 +5751,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "Where moisture was present a different reaction occurred.",
         "ko": "수분이 있는 곳에서는 다른 반응이 일어난다."
       }
     },
@@ -3788,6 +5759,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "The hydrophilic edges drew in condensate and swelled, quickly sealing small gaps.",
         "ko": "친수성 가장자리가 응축수를 빨아들여 팽윤하면서 작은 틈을 빠르게 봉합한다."
       }
     },
@@ -3795,6 +5767,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "Seen as airtightness alone it was useful, but when water behind the seal could not escape, thin ice pouches grew and pushed panel surfaces and packaging from inside.",
         "ko": "밀폐 성능만 보면 유용하지만, 봉합 뒤쪽의 물이 빠져나오지 못하면 얇은 얼음 주머니가 자라며 패널 표면과 포장재를 안쪽에서 밀어낸다."
       }
     },
@@ -3802,6 +5775,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "Sensor divergence was the first sign to check when handling this film.",
         "ko": "센서 발산은 이 막을 다룰 때 가장 먼저 확인해야 할 징후다."
       }
     },
@@ -3809,6 +5783,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "An infrared camera showed only the cold flat surface, while contact thermocouples read the heat riding the frames, and fiber optics inside the wall caught delayed changes behind the ice layer.",
         "ko": "적외선 카메라는 차갑고 평평한 표면만 보여 주는 반면, 접촉식 열전대는 프레임을 타. 온 열을 읽고 벽체 내부 광섬유는 얼음층 뒤의 지연된 변화를 잡는다."
       }
     },
@@ -3816,6 +5791,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "The three values differing did not at once mean one was broken; a map including sensor depth and heat-pulse arrival time had to be redrawn.",
         "ko": "세 값이 다르다고 해서 어느 하나가 즉시 고장 난 것은 아니며, 센서 깊이와 열 펄스 도달 시간을 포함한 지도를 다시 만들어야 한다."
       }
     },
@@ -3823,6 +5799,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "Defrosting ran in zones at low output.",
         "ko": "제상은 낮은 출력으로 구역을 나눠 시행한다."
       }
     },
@@ -3830,6 +5807,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "Heating the surface all at once made the polymer skin and inner fiber layers expand at different speeds, making fine cracks.",
         "ko": "표면을 한꺼번에 데우면 고분자 표피와 내부 섬유층의 팽창 속도가 달라져 가는 균열이 생긴다."
       }
     },
@@ -3837,6 +5815,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "When cracks opened, dormant spores fell as dry powder, so local exhaust, sealed particle collectors, and respiratory protection were needed.",
         "ko": "균열이 열릴 때 휴면 포자가 건조 분말로 떨어지므로 국소 배기, 밀폐형 입자 포집기 호흡 보호구가 필요하다."
       }
     },
@@ -3844,6 +5823,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "Vibration made a damage path separate from thermal shock.",
         "ko": "진동은 열충격과 별개의 손상 경로를 만든다."
       }
     },
@@ -3851,6 +5831,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "Repeated shear transmitted from compressors, portable freezers, stage lifts, and transport carts fatigued the viscoelastic adhesive layer from its edges.",
         "ko": "압축기, 이동식 냉동기 무대 리프트 운송 카트에서 전달된 반복 전단은 점탄성 접착층을 가장자리부터 피로하게 한다."
       }
     },
@@ -3858,6 +5839,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "Each vibration turned the lifted parts into air paths opening and closing, swinging sensor values and inviting the automatic controllers' excess cooling and needless defrosting.",
         "ko": "들뜬 부분은 진동할 때마다 열리. 닫히는 공기 통로가 되어 센서 값을 출렁이게 하고, 자동 제어기의 과잉 냉각과 불필요한 제상을 유발한다."
       }
     },
@@ -3865,6 +5847,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "In the field an aluminum decoy cooling plate, colder than the actual preserved goods, was set on the far side of the work.",
         "ko": "현장에서는 실제 보존물보다 온도가 낮은 알루미늄 미끼 냉각판을 작업 반대편에 설치한다."
       }
     },
@@ -3872,6 +5855,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "Condensate and fallen spores were guided to gather on that plate first, then a dry anhydrous break of fixed width was made with molecular-sieve desiccant and dry nitrogen.",
         "ko": "응축수와 떨어진 포자가 이 판에 먼저 모이도록 유도한 뒤, 분자체 흡습재와 건조 질소로 폭이 일정한 무수 단절부를 만든다."
       }
     },
@@ -3879,6 +5863,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "The cooling plate was replaced into a sealed vessel before saturating, and when the break's dewpoint rose, incision stopped.",
         "ko": "냉각판은 포화되기 전에 밀폐 용기에 교체하고, 단절부의 노점이 상승하면 절개를 중지한다."
       }
     },
@@ -3886,6 +5871,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "When opening sealed packaging, the contents were not warmed to peel the film off.",
         "ko": "밀봉 포장을 열 때는 내용물을 녹여 막을 떼어내지 않는다."
       }
     },
@@ -3893,6 +5879,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "The whole package went into a low-temperature glove tent; holding the inner preservation temperature, a thin fluororesist barrier plate was slid between outer skin and film to limit cutting depth.",
         "ko": "포장 전체를 저온 글러브 텐트에 넣. 내부 보존 온도를 유지한 채, 외피와 막 사이에 얇은 불소수지 차단판을 밀어 넣어 절단 깊이를 제한한다."
       }
     },
@@ -3900,6 +5887,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "Partially thawed moisture refreezing could press specimen vessels and tissue with ice lenses, so temperature history, more than the cut line, became the stopping criterion.",
         "ko": "부분 해동된 수분이 다시 얼면 얼음 렌즈가 표본 용기와 조직을 누를 수 있으므로, 절단선보다 온도 이력이 더 중요한 중지 기준이 된다."
       }
     },
@@ -3907,6 +5895,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "Management procedures presupposed no intent or promise of the film.",
         "ko": "관리 절차는 막의 의사나 약속을 전제로 하지 않는다."
       }
     },
@@ -3914,6 +5903,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "When the work leader adjusted heat-source placement, humidity, vibration transmission, exhaust volume, and sensor position, the film reacted passively to those physical conditions.",
         "ko": "작업 책임자가 열원 배치, 습도 진동 전달 배기량과 센서 위치를 조절하면 막은 그 물리 조건에 따라 수동적으로 반응한다."
       }
     },
@@ -3921,6 +5911,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "Safe recovery depended not on the surface looking quiet but on whether hidden heat layers had been checked, the anhydrous break held, and spore collection and freezing temperatures kept to the end.",
         "ko": "안전한 회수는 표면이 조용해 보이는지보다 숨은 열층을 확인했는지, 무수 단절부를 유지했는지 포자 포집과 동결 온도를 끝까지 지켰는지에 달려 있다."
       }
     }

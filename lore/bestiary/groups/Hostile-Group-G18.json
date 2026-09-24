@@ -5,6 +5,7 @@
   "slug": "hostile-group-g18",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G18 · Retired-Line Maintenance-Train Corps",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G18 · 폐선보수열차군",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g18-폐선보수열차군",
       "depth": 1,
       "text": {
+        "en": "G18 · Retired-Line Maintenance-Train Corps",
         "ko": "G18 · 폐선보수열차군"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g18-폐선보수열차군-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "The Retired-Line Maintenance-Train Corps moved between the southwestern exit lines and the Yongsan retired and turnback lines, repeating unfinished maintenance orders with a defect-map controller and function-divided consists. It was no combat train and could not find new routes beyond the sealed main lines by itself. It could grind temporary crossing plates down as cracks, or pass a real crack by classifying it as a joint.",
         "ko": "폐선보수열차군은 서남 출고선과 용산 폐선·회차선을 오가며 미완 보수 명령을 반복하는 결함 맵 컨트롤러와 기능별 편성이다. 전투 열차가 아니며 봉인된 본선 밖의 새 노선을 스스로 찾지 못한다. 임시 횡단 발판을 균열로 갈아 버리거나 진짜 균열을 이음매로 지나칠 수 있다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "An unsealed defect map and exit-line power were the base ecology, and from the defect-map locomotive to the twin-torch head car the units were divided like gauge wheels, sleeper flats, insulated joints, and point wedges. No form revived an animal; it only coupled abandoned maintenance cars into existing consists and produced no new car bodies. Later cars absent from this deployment also remained subtypes of the same consists and were not invented here.",
         "ko": "봉인되지 않은 결함 맵과 출고 급전이 바탕 생태이며, 결함지도기관차부터 쌍토치선단차까지는 계측 휠·침목 화차·절연 조인트·포인트 쐐기처럼 갈라진 량이다. 동물을 되살린 형태가 없고, 방치 보수차를 기존 편성에 연결할 뿐 새 차체는 생산하지 못한다. 이 배치에 없는 이후 량도 같은 편성의 하위형으로 남겨 두며 여기서 발명하지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "After the collapse, the Standards Alliance depot's remaining maintenance consists and the retired-section automatic maintenance schedule of the Line Succession State survived in local interlock. / Running permits and control approval were dead; only the rail defect map and the night exit window repeated. / Night after night the corps welded the severed sections, circling through grinding and sleeper replacement. / When the Korea Strait Theater's transshipment vibration and relay-window shocks mixed into the defect map, the maintenance radius encroached on the sidings adjacent to the transfer main lines. / A Seoul creative origin; real railway agency names and the current regime were not named as causes. / The earliest fictional record survived in the HP04 Seoul Station Record-Law House's sealed writs and the F02 Switchgear Panel's power-feed logs. / The first wrongful severance was recorded about three kilometers down the southwestern retired spur. / The defect map read a temporary crossing plate as a crack, and the grinding car ground away the plate's anchors. / As the Yongsan turnback welding car shared the same map, sparks showed even on the sidings beside the main line. / The corps read unfinished maintenance as its duty and carried no combat narrative.",
             "ko": "붕괴 이후 규격동맹 기지 잔여 보수편성과 선로후계정 폐선 구간의 자동 보수 스케줄이 로컬 연동으로 남았다. / 운행 허가와 관제 승인은 죽었고, 레일 결함 맵과 야간 출고 창만 반복된다. / 열차군은 끊긴 구간을 밤마다 용접, 연마 침목 교체로 순회한다. / 대한해협전구 환적 진동과 중계 창구 충격이 결함 맵에 섞이면 보수 반경이 환승 본선 인접 측선까지 침범한다. / 서울 창작 기원이며 실재 철도 기관명과 현 정권을 원인으로 적지 않는다. / 최초 허구 기록은 HP04 서울역기록법가 봉인 서와 F02 배전반이 급전 로그에 남는다. / 첫 오절단은 서남 폐선 스퍼 3킬로정에서 기록됐다. / 결함 맵이 임시 횡단 발판을 균열로 읽고 연마 차가 발판 고정을 갈았다. / 용산 회차 선의 용접 차가 같은 맵을 공유하면서 본선 인접 측선까지 불꽃이 보였다. / 열차군은 보수 미완을 업무로 해석하며 전투 서사를 갖지 않는다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The core habitat was the maintenance-car berthing track on the retired spur of the southwestern depot exit line. / As defect alarms piled up, it moved to the underground sidings of the Yongsan retired-line turnback of the Wangsimni coalition. / With heavy XT03 transshipment vibration it spilled onto the sidings adjacent to the main line. / In daytime dispatch windows it parked on sidings, and its density peaked at the exact midnight maintenance hour. / It nearly ignored new temporary rail markers and followed only old defect coordinates. / Under unstable power it shut off welding and kept only the gauge-wheel circuit. / When the daytime dispatch window opened, it moved from the exit line to siding berths. / When the Yongsan underground water table rose, it shut off welding and circled only the surface retired spurs. / Temporary rail paint, absent from the defect coordinates, it ignored. / The encroachment on main-line adjacency folded back when XT03 vibration weakened.",
             "ko": "핵심 서식은 영등포선 서남 기지 출고선 폐선 스퍼 보수차 주박 선이다. / 결함 알람이 쌓이면 왕십리 연합 용산 폐선 회차 선 지하 측선까지 이동한다. / XT03 환적 진동이 크면 본선 인접 측선으로 넘친다. / 주간 배차 창에는 측선에 정차하고, 심야 보수 정각에 밀도가 최고가 된다. / 신규 임시 레일 표지는 거의 무시하고 옛 결함 좌표만 따른다. / 급전 불안정 시 용접을 끄고 계측 휠 순회만 남긴다. / 주간 배차 창이 열리면 출고선에서 측선 주박으로 옮긴다. / 용산 지하 측수위가 오르면 용접을 끄고 지상 폐선 스퍼만 순회한다. / 임시 레일 페인트는 결함 좌표에 없어 무시한다. / 본선 인접 침범은 XT03 진동이 약해지면 접힌다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "Energy came from depot power feed, remaining onboard batteries, welding-generator fuel cells, and regenerative braking. / Consumables were welding wire, grinding stones, sleeper anchors, track-gauge wheels, insulated joints, and lubricant. / Coolant went to weld points and axles. / It competed with the HP04 Seoul Station Record-Law House's original-hash sealing and the transmission cross-verification power when both drew on the same section's distribution. / Daily welding length and exit counts were bound by the fuel and wire ceilings. / There was no infinite maintenance circuit, no remote unlimited power feed, no simultaneous occupation of every line. / When wire ran out, it kept only grinding and stopped cutting. / Wire and grinding stones were replenished only from the depot's scrap bays and damaged consists. / Without the HP04 sealed writ the corps could not raise its power draw. / With fuel cells at the lower limit, exits were refused. / An axle past its heat threshold was cut from the consist. / With heavy gauge-wheel wear, the maintenance radius shrank on its own. / There was no remote infinite power feed.",
             "ko": "에너지는 기지 급전 잔여 온보드 배터리 용접 발전기 연료 셀 회생 제동이다. / 소모품은 용접 와이어 연마석 침목 앵커 궤도 계측 휠 절연 조인트 윤활재다. / 냉각수는 용접부와 차축에 쓰인다. / HP04 서울역기록법가의 원본 해시 봉인과 송신 교차검증 전력이 같은 구역 분전을 쓸 때 경합한다. / 일일 용접 길이와 출고 횟수는 연료와 와이어 상한에 묶인다. / 무한 보수 순회 원격 무제한 급전 전 노선 동시 점유는 없다. / 와이어가 바닥나면 연마만 남기고 절단을 멈춘다. / 와이어와 연마석은 기지 폐기 칸과 파손 편성에서만 보충된다. / 급전 용량은 HP04 봉인 서 없이 군집이 올리지 못한다. / 연료 셀 잔량이 하한이면 출고가 거부된다. / 차축 열이 임계를 넘으면 해당 량이 편성에서 분리된다. / 계측 휠 마모가 크면 보수 반경이 스스로 줄어든다. / 원격 무한 급전은 없다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "The corps woke its consists when the unsealed defect map meshed with exit-line power. / Emergence began with defect-map reactivation, and spread was the enrolling of neighboring consists into the same maintenance sequence. / Stagnation came from fuel and wire exhaustion and axle overheating. / In the negotiable stage the maintenance windows and sealed sections were disclosed to people. / Dissolution ended with the map frozen and the power feed split and the points fixed. / Increase in individuals went no further than coupling abandoned maintenance cars into consists; no new car bodies were produced. / Maintenance was limited to wire loading, wheel calibration, and insulation checks. / Memory broke at each night maintenance shift. / Custody gave priority to the HP04 record seal and human operating supervision. / A consist out of wire or with an overheated axle folded its torches on a designated siding and kept only gauging; the next maintenance window opened only after HP04 recovered the original-hash-stamped halt writ.",
             "ko": "폐선보수열차군은 봉인되지 않은 결함 맵이 출고선 급전과 맞물릴 때 편성을 깨운다. / 출현은 결함 맵 재기동에서 시작한고 확산은 인접 편성을 같은 보수 순선에 편입하는 일이다. / 정체는 연료와 와이어 고갈, 차축 과열에서 온다. / 협상가능 단계에서는 보수 창과 봉인 구간이 인간에게 공개된다. / 와해는 맵 동결, 급전 분할 포인트 고정으로 끝난다. / 개체 증식은 방치 보수차를 편성에 연결하는 수준이고 새 차체 생산은 없다. / 정비는 와이어 적재, 휠 교정 절연 점검에 한정된다. / 기억은 야간 보수 교대 단위로 끊긴다. / 보관 책임은 HP04 기록 봉인과 인간 운전 감독이 우선한다. / 와이어가 바닥나거나 차축이 과열된 편성은 지정 측선에서 토치를 접. 계측만 남기며, HP04가 원본 해시를 찍은 운행 중지 서를 회수해야 다음 보수 창이 열린다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "The track gauge wheels, ultrasonic inspection, axle heat, power-feed arc sound, and point contacts were the main senses. / It had no real-time whole-network map, no passenger identification, no unlimited memory, no remote control authority. / It ground a temporary crossing plate as a defect, or left a real crack behind classified as a joint. / It sometimes mistook transshipment vibration for a rail crack. / When readings clashed with the F02 Switchgear Panel logs, it stopped welding and requested human confirmation. / Sharing between consists happened only within the same exit window. / It mistook crossing plates, transshipment vibration, joint gaps, and power-feed arcs for defects. / After a misreading it inserted a human-confirmation wait before cutting. / Gauge values from outside the consist were not merged. / With an axle overheating, that car was separated and only the remaining consist moved.",
             "ko": "궤도 계측 휠 초음파 탐상 차축 열 급전 아크음 근접 라이더 포인트 접점이 주 감각이다. / 전 노선 실시간 완전 지도 승객 식별 무제한 기억 원격 관제 권한은 없다. / 임시 횡단 발판을 결함으로 연마하거나, 실균열을 이음매로 남겨 둔다. / 환적 진동을 레일 균열로 오인하기도 한다. / F02 배전반이 로그와 충돌하면 용접을 멈추고 인간 확인을 요청한다. / 편성 간 공유는 같은 출고 창 안에서만 이뤄진다. / 횡단 발판 환적 진동 이음매 틈 급전 아크를 결함으로 오인한다. / 오인 후에는 절단 전 인간 확인 대기를 넣는다. / 편성 밖 계측 값은 합류시키지 않는다. / 차축 과열 시 해당 량을 분리하고 잔여 편성만 이동한다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "One defect-map controller turned the maintenance order, and below it were the welding car, grinding car, and sleeper swarms. / The controller changed only the work sequence; there was no combat mode. / It held a protocol by which, when HP04 presented the original-hash-sealed halt writ, it emptied that kilometer-post. / The swarms only repeated the last map and formed no independent main-line seizure strategy. / On clash with F02, human mediation took precedence. / Dual maps, on coordinate mismatch, both fell into stopped waiting. / The authority approving exits and stops by kilometer-post was the HP04 operating supervisor holding the original hash; F02's arc-sound readings could recommend breaker opening but could not fix the map's work order.",
             "ko": "결함 맵 컨트롤러 한 기가 보수 순서를 돌리고 아래는 용접 차 연마 차 침목 차 무리다. / 컨트롤러는 작업 순선만 바꾸며 전투 모드가 없다. / HP04가 원본 해시 봉인된 운행 중지 서를 제시하면 해당 킬로정서를 비우는 규약이 있다. / 무리는 마지막 맵을 반복할 뿐 독자 본선 점유 전략을 만들지 않는다. / F02와 충돌 시 인간 중재가 우선이다. / 이중 맵은 좌표 불일치 시 둘 다 정차 대기로 떨어진다. / 킬로정별 출고와 정차를 승인하는 주체는 원본 해시를 보관한 HP04 운전 감독이며, F02의 아크음 판독은 차단기 개방을 권고해도 맵의 작업 순서를 고칠 수 없다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The F02 Switchgear Panel split and recorded the two waveforms but could not fix defect coordinates; only the HP04 operating supervisor's halt writ approved exits and stops by kilometer-post. The senses were the track gauge wheels, ultrasonic inspection, axle heat, power-feed arc sound, and point contacts. Cars that hit the fuel floor or axle overheat fell out of the consist and kept only gauging on a designated siding.",
         "ko": "F02 배전반이는 두 파형을 갈라 기록하지만 결함 좌표를 고치지 못하고, HP04 운전 감독의 운행 중지 서만 킬로정별 출고와 정차를 승인한다. 감각은 궤도 계측 휠, 초음파 탐상, 차축 열, 급전 아크음, 포인트 접점이다. 연료 하한이나 차축 과열에 닿은 량은 편성에서 떨어져 지정 측선에서 계측만 남긴다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G18E01 · Defect-Map Locomotive",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E01 · 결함지도기관차",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Defect-map control",
             "ko": "결함맵 통제"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M028",
             "ko": "M028"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E02 · Measuring-Wheel Inspector",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E02 · 계측휠살피개",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Crack inspection",
             "ko": "균열 탐상"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M028",
             "ko": "M028"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E03 · Sleeper Anchor Carrier",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E03 · 침목앵커나르미",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Anchor stacking",
             "ko": "앵커 적치"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M028",
             "ko": "M028"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E04 · Arc-Sound Follower Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E04 · 아크음따라차",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Arc pursuit",
             "ko": "아크 추종"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M028",
             "ko": "M028"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E05 · Insulated-Joint Repair Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E05 · 절연이음수선차",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Insulation cutting",
             "ko": "절연 절단"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M028",
             "ko": "M028"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E06 · Point-Locking Worker",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E06 · 포인트고정공",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Point locking",
             "ko": "포인트 고정"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M028",
             "ko": "M028"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E07 · Welding-Smoke Scrubber",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E07 · 용접연기씻개",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Weld-smoke intake",
             "ko": "용접연기 흡입"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M028",
             "ko": "M028"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E08 · Twin-Torch Lead Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E08 · 쌍토치선단차",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Head welding",
             "ko": "선단 용접"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M028",
             "ko": "M028"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E09 · Cutting-Jaw Sleeper Captain",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E09 · 절단턱침목대장",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E10 · Departure-Track Sealing Car Wall",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E10 · 출고선봉인차벽",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E11 · Yongsan Siding Welding Nest",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E11 · 용산측선용접둥지",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E12 · Worn-Grindstone Ailing Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E12 · 연마석닳은쇠약차",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E13 · Hot-Axle Old Trainset",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E13 · 차축뜨거운노편성",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E14 · Sealing-Order-Following Tow Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E14 · 봉인서따르는견인차",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E15 · Midnight Hundred-Kilometer Maintenance Loop",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E15 · 심야백킬로보수환",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G18E16 · Strait Vibration-Tracking Trainset",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G18",
+                  "anchor": "g18e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G18E16 · 해협진동추적편",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M029",
             "ko": "M029"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g18e01\"></a>",
         "ko": "<a id=\"g18e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g18e01-결함지도기관차",
       "depth": 3,
       "text": {
+        "en": "G18E01 · Defect-Map Locomotive",
         "ko": "G18E01 · 결함지도기관차"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g18e01-결함지도기관차-list1",
       "items": [
         {
+          "en": "Source batch: M028",
           "ko": "출처 배치: M028"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\",\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\",\"G18-SC3\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g18e01-결함지도기관차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Defect-map control",
             "ko": "결함맵 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A single locomotive carrying the rail defect-map cylinder and the welding and grinding couplers. It issued work orders to the welding, grinding, and sleeper cars, honored the sealed exclusion list first, and when wire broke kept only gauging and stagnated. It was not the corps' hive queen.",
             "ko": "궤도 결함 지도 원통과 용접·연마 편성 접속기를 단 기관차다. 용접차·연마차·침목차에 작업 순서를 내리며 봉인된 제외 목록을 우선하고, 와이어가 끊기면 계측만 남겨 정체한다. 폐선 편성의 분배기지 생물 왕이 아니다."
           }
         ]
@@ -736,30 +1034,39 @@
       "anchor": "g18e01-결함지도기관차-list3",
       "items": [
         {
+          "en": "Role and body: The controller of the abandoned-line repair train group, a locomotive fitted with a track-defect map cylinder and connectors for welding and grinding consists.",
           "ko": "역할·신체: 폐선보수열차군 통제자로, 궤도 결함 지도 원통과 용접·연마 편성 접속기를 단 기관차다."
         },
         {
+          "en": "Origin: A southwest depot defect map and a Yongsan abandoned-line automated repair schedule merged, leaving it as an independent locomotive.",
           "ko": "기원: 서남 기지 결함 맵과 용산 폐선 자동 보수표가 합쳐져 독립 기관차로 남았다."
         },
         {
+          "en": "Habitat and needs: It remains in the center of the depot departure track and needs traction power, welding wire, a measuring wheel, and coolant.",
           "ko": "서식·필요: 기지 출고선 중앙에 머물며 급전, 용접 와이어, 계측 휠, 냉각수가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: It cycles through defect coordinates every shift; if its wire breaks, it stalls with only its measuring function remaining.",
           "ko": "생애·정비: 교대마다 결함 좌표를 순환하고 와이어가 끊기면 계측만 남겨 정체한다."
         },
         {
+          "en": "Behavior and hierarchy: It assigns work order to the welding car, grinding car, and sleeper car, while giving priority to the sealed exclusion list.",
           "ko": "행동·위계: 용접차·연마차·침목차에 작업 순서를 내리며 봉인된 제외 목록을 우선한다."
         },
         {
+          "en": "Escalation: Stage 1, abandoned-line repair; stage 2, erroneous cutting of the main line; stage 3, blanket occupation of sidings and abandoned lines.",
           "ko": "상승: 1단계 폐선 보수, 2단계 본선 오절단, 3단계 측선·폐선 일괄 점유다."
         },
         {
+          "en": "Engagement and response: Freezing the defect map, dividing the power supply, and fixing the points are effective; blowing up the locomotive eliminates repair capacity.",
           "ko": "교전·대응: 결함 맵 동결, 급전 분할, 포인트 고정이 유효하며 기관차 폭파는 복구 능력을 없앤다."
         },
         {
+          "en": "Negotiation and moral choice: Safe repair sections and regular fuel windows can be traded, but a decision must be made about which tracks to give up.",
           "ko": "교섭·도덕 선택: 안전 보수 구간과 정규 연료 창을 거래할 수 있지만 어떤 선로를 포기할지 결정해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC1, G18-SC2, G18-SC3.",
           "ko": "시나리오 연결: G18-SC1, G18-SC2, G18-SC3."
         }
       ]
@@ -768,6 +1075,7 @@
       "kind": "paragraph",
       "anchor": "g18e01-결함지도기관차-p4",
       "text": {
+        "en": "<a id=\"g18e02\"></a>",
         "ko": "<a id=\"g18e02\"></a>"
       }
     },
@@ -776,6 +1084,7 @@
       "anchor": "g18e02-계측휠살피개",
       "depth": 3,
       "text": {
+        "en": "G18E02 · Measuring-Wheel Inspector",
         "ko": "G18E02 · 계측휠살피개"
       }
     },
@@ -784,12 +1093,15 @@
       "anchor": "g18e02-계측휠살피개-list1",
       "items": [
         {
+          "en": "Source batch: M028",
           "ko": "출처 배치: M028"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\"]}"
         }
       ]
@@ -799,42 +1111,52 @@
       "anchor": "g18e02-계측휠살피개-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Crack inspection",
             "ko": "균열 탐상"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A small maintenance car with four sensitive gauge wheels and a low listening body. Running ahead of the locomotive, it handed coordinates to the welding and grinding cars; as its wheels wore it inflated the defect count, growing accurate for one shift after calibration.",
             "ko": "네 개의 민감한 계측 휠과 낮은 청음 몸체를 가진 소형 보수차다. 기관차 앞을 달리며 좌표를 용접차와 연마차에 넘기고, 휠이 닳으면 결함 수를 부풀리며 교정 뒤 한 교대 동안 정확해진다."
           }
         ]
@@ -845,30 +1167,39 @@
       "anchor": "g18e02-계측휠살피개-list3",
       "items": [
         {
+          "en": "Role and body: A common ecological type, a small repair car with four sensitive measuring wheels and a low listening body.",
           "ko": "역할·신체: 일반 생태형으로, 네 개의 민감한 계측 휠과 낮은 청음 몸체를 가진 소형 보수차다."
         },
         {
+          "en": "Origin: An inspection car that sought cracks in abandoned lines now records both temporary platforms and joints as defects.",
           "ko": "기원: 폐선 균열을 찾던 검사차가 임시 발판과 이음매를 모두 결함으로 기록한다."
         },
         {
+          "en": "Habitat and needs: It patrols abandoned-line spurs and sidings and needs a wheel calibration plate, lubricant, and a small power supply.",
           "ko": "서식·필요: 폐선 스퍼와 측선을 돌며 휠 교정판, 윤활재, 소형 급전이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: As its wheels wear down, it inflates the defect count; after calibration, it is accurate for one shift.",
           "ko": "생애·정비: 휠이 닳으면 결함 수를 부풀리고 교정 뒤 한 교대 동안 정확해진다."
         },
         {
+          "en": "Behavior and hierarchy: It runs ahead of the locomotive and passes coordinates to the welding and grinding cars.",
           "ko": "행동·위계: 기관차 앞을 달리며 좌표를 용접차와 연마차에 넘긴다."
         },
         {
+          "en": "Escalation: Stage 1, inspection delays; stage 2, removal of temporary platforms; stage 3, closure of tracks with defect markings.",
           "ko": "상승: 1단계 검사 지연, 2단계 임시 발판 제거, 3단계 결함 표식으로 선로를 닫는다."
         },
         {
+          "en": "Engagement and response: Decoy joints and a calibration plate can lead it onto an empty track.",
           "ko": "교전·대응: 더미 이음매와 교정판으로 빈 선로에 유도하면 된다."
         },
         {
+          "en": "Negotiation and moral choice: It is useful for detecting real cracks, but temporary passage facilities must be excluded from its repair targets.",
           "ko": "교섭·도덕 선택: 실제 균열 탐지에 유용하지만 임시 통행 시설을 보수 대상에서 제외해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC1, G18-SC2.",
           "ko": "시나리오 연결: G18-SC1, G18-SC2."
         }
       ]
@@ -877,6 +1208,7 @@
       "kind": "paragraph",
       "anchor": "g18e02-계측휠살피개-p4",
       "text": {
+        "en": "<a id=\"g18e03\"></a>",
         "ko": "<a id=\"g18e03\"></a>"
       }
     },
@@ -885,6 +1217,7 @@
       "anchor": "g18e03-침목앵커나르미",
       "depth": 3,
       "text": {
+        "en": "G18E03 · Sleeper Anchor Carrier",
         "ko": "G18E03 · 침목앵커나르미"
       }
     },
@@ -893,12 +1226,15 @@
       "anchor": "g18e03-침목앵커나르미-list1",
       "items": [
         {
+          "en": "Source batch: M028",
           "ko": "출처 배치: M028"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC1\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC1\"]}"
         }
       ]
@@ -908,42 +1244,52 @@
       "anchor": "g18e03-침목앵커나르미-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Anchor stacking",
             "ko": "앵커 적치"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A low flatcar with short grippers for sleeper anchors. Following the gauge wheel's marks, it used even other swarms' corridors as material yards; when its bin emptied it rummaged the scrap bays, and when full it waited beside the defect coordinates.",
             "ko": "침목 앵커 통과 짧은 집게를 단 저상 화차다. 계측휠의 표식을 따라가며 다른 무리의 통로까지 자재 적치장으로 쓰고, 통이 비면 폐기 칸을 뒤지고 가득 차면 결함 좌표 옆에서 대기한다."
           }
         ]
@@ -954,30 +1300,39 @@
       "anchor": "g18e03-침목앵커나르미-list3",
       "items": [
         {
+          "en": "Role and body: A common ecological type, a low-floor freight car fitted with a bin of sleeper anchors and short grippers.",
           "ko": "역할·신체: 일반 생태형으로, 침목 앵커 통과 짧은 집게를 단 저상 화차다."
         },
         {
+          "en": "Origin: A freight car that carried replacement sleepers keeps piling anchors at the same kilometer mark without an order to withdraw.",
           "ko": "기원: 교체 침목을 나르던 화차가 철수 명령 없이 같은 킬로정에 앵커를 쌓는다."
         },
         {
+          "en": "Habitat and needs: It travels between the depot scrap bay and the abandoned line and needs anchors, lubricant, and traction power.",
           "ko": "서식·필요: 기지 폐기 칸과 폐선 사이를 돌며 앵커, 윤활재, 견인 전력이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When its bin is empty, it searches the scrap bay; when full, it waits beside the defect coordinates.",
           "ko": "생애·정비: 통이 비면 폐기 칸을 뒤지고 가득 차면 결함 좌표 옆에서 대기한다."
         },
         {
+          "en": "Behavior and hierarchy: It follows measuring-wheel markings and uses even other groups’ passages as material storage areas.",
           "ko": "행동·위계: 계측휠의 표식을 따라가며 다른 무리의 통로까지 자재 적치장으로 쓴다."
         },
         {
+          "en": "Escalation: Stage 1, stockpiling anchors; stage 2, obstructing sidings; stage 3, blocking the departure track with a pile of sleepers.",
           "ko": "상승: 1단계 앵커 적치, 2단계 측선 방해, 3단계 침목 더미로 출고선을 막는다."
         },
         {
+          "en": "Engagement and response: Decoy coordinates and a magnetic retrieval plate can guide it away; an explosion creates anchor shrapnel.",
           "ko": "교전·대응: 더미 좌표와 자석 회수판으로 유도할 수 있으며 폭발은 앵커 파편을 만든다."
         },
         {
+          "en": "Negotiation and moral choice: In exchange for assigning it to carry track materials, anchor allocation must be settled with civilian repair teams.",
           "ko": "교섭·도덕 선택: 궤도 자재 운반을 맡기는 대신 시민 복구팀과 앵커 배분을 정해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC1.",
           "ko": "시나리오 연결: G18-SC1."
         }
       ]
@@ -986,6 +1341,7 @@
       "kind": "paragraph",
       "anchor": "g18e03-침목앵커나르미-p4",
       "text": {
+        "en": "<a id=\"g18e04\"></a>",
         "ko": "<a id=\"g18e04\"></a>"
       }
     },
@@ -994,6 +1350,7 @@
       "anchor": "g18e04-아크음따라차",
       "depth": 3,
       "text": {
+        "en": "G18E04 · Arc-Sound Follower Car",
         "ko": "G18E04 · 아크음따라차"
       }
     },
@@ -1002,12 +1359,15 @@
       "anchor": "g18e04-아크음따라차-list1",
       "items": [
         {
+          "en": "Source batch: M028",
           "ko": "출처 배치: M028"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"synthetics\":[\"F02\"],\"scenarios\":[\"G18-SC1\",\"G18-SC2\"]}",
           "ko": "연결: {\"synthetics\":[\"F02\"],\"scenarios\":[\"G18-SC1\",\"G18-SC2\"]}"
         }
       ]
@@ -1017,42 +1377,52 @@
       "anchor": "g18e04-아크음따라차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Arc pursuit",
             "ko": "아크 추종"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A single car with an arc-sound receiver plate and a short grinding-stone arm. Trailing the welding car, it waited for human confirmation on clash with the F02 logs; with its stone worn it chased only sound, and given a new stone it began shaving surfaces.",
             "ko": "아크음 수신판과 짧은 연마석 팔을 단 단량차다. 용접차 뒤를 따라가며 F02 로그와 충돌하면 인간 확인을 기다리고, 연마석이 닳으면 소리만 추적하고 새 돌을 받으면 표면을 깎기 시작한다."
           }
         ]
@@ -1063,30 +1433,39 @@
       "anchor": "g18e04-아크음따라차-list3",
       "items": [
         {
+          "en": "Role and body: A common ecological type, a single car fitted with an arc-sound receiver panel and a short grindstone arm.",
           "ko": "역할·신체: 일반 생태형으로, 아크음 수신판과 짧은 연마석 팔을 단 단량차다."
         },
         {
+          "en": "Origin: Equipment that searched for power-supply faults mistook every metallic impact sound for a welding defect.",
           "ko": "기원: 급전 이상을 찾던 장비가 모든 금속 충격음을 용접 결함으로 오인했다."
         },
         {
+          "en": "Habitat and needs: It patrols sidings near distribution rooms and welding areas and needs grindstones, a receiver panel, and power.",
           "ko": "서식·필요: 분전실 인접 측선과 용접 구역을 돌며 연마석, 수신판, 전력이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When its grindstone wears down, it only tracks sounds; given a new stone, it starts grinding surfaces.",
           "ko": "생애·정비: 연마석이 닳으면 소리만 추적하고 새 돌을 받으면 표면을 깎기 시작한다."
         },
         {
+          "en": "Behavior and hierarchy: It follows the welding car and waits for human confirmation when its findings conflict with the F02 log.",
           "ko": "행동·위계: 용접차 뒤를 따라가며 F02 로그와 충돌하면 인간 확인을 기다린다."
         },
         {
+          "en": "Escalation: Stage 1, sound tracking; stage 2, grinding unrelated metal; stage 3, blockade of access to the power-distribution room.",
           "ko": "상승: 1단계 소리 추적, 2단계 무관한 금속 연마, 3단계 급전실 접근 봉쇄다."
         },
         {
+          "en": "Engagement and response: Lead it onto an abandoned line with a steady decoy arc sound, then remove its grindstone.",
           "ko": "교전·대응: 일정한 더미 아크음으로 폐선에 유도하고 연마석을 분리하면 된다."
         },
         {
+          "en": "Negotiation and moral choice: It can be used to detect power-supply faults, but civilians’ right to make work noise must be protected.",
           "ko": "교섭·도덕 선택: 급전 이상 탐지에 활용할 수 있지만 작업 소음을 낼 시민의 권리를 보장해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC1, G18-SC2.",
           "ko": "시나리오 연결: G18-SC1, G18-SC2."
         }
       ]
@@ -1095,6 +1474,7 @@
       "kind": "paragraph",
       "anchor": "g18e04-아크음따라차-p4",
       "text": {
+        "en": "<a id=\"g18e05\"></a>",
         "ko": "<a id=\"g18e05\"></a>"
       }
     },
@@ -1103,6 +1483,7 @@
       "anchor": "g18e05-절연이음수선차",
       "depth": 3,
       "text": {
+        "en": "G18E05 · Insulated-Joint Repair Car",
         "ko": "G18E05 · 절연이음수선차"
       }
     },
@@ -1111,12 +1492,15 @@
       "anchor": "g18e05-절연이음수선차-list1",
       "items": [
         {
+          "en": "Source batch: M028",
           "ko": "출처 배치: M028"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}"
         }
       ]
@@ -1126,42 +1510,52 @@
       "anchor": "g18e05-절연이음수선차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Insulation cutting",
             "ko": "절연 절단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A precision maintenance car carrying insulated joints and a small press. Following the locomotive's power-feed coordinates, it sometimes worked against the welding swarms and clashed; when joints ran out it stripped parts from live track, and when a human sealed writ arrived it stopped work.",
             "ko": "절연 조인트와 작은 압착기를 실은 정밀 보수차다. 기관차의 급전 좌표를 따르며 용접 무리와 반대 작업을 해 충돌하기도 하고, 조인트가 떨어지면 기존 선로에서 부품을 빼며 인간 봉인 서가 오면 작업을 멈춘다."
           }
         ]
@@ -1172,30 +1566,39 @@
       "anchor": "g18e05-절연이음수선차-list3",
       "items": [
         {
+          "en": "Role and body: A specialized unit, a precision repair car carrying insulated joints and a small crimping tool.",
           "ko": "역할·신체: 직능 특수형으로, 절연 조인트와 작은 압착기를 실은 정밀 보수차다."
         },
         {
+          "en": "Origin: A car that isolated sections with electrical leakage now tries to sever every new connection absent from its old defect map.",
           "ko": "기원: 누전 구간을 분리하던 차가 오래된 결함 맵에 없는 새 연결을 모두 끊으려 한다."
         },
         {
+          "en": "Habitat and needs: It patrols power-supply boundaries and areas near points and needs insulated joints, crimping bolts, and coolant.",
           "ko": "서식·필요: 급전 경계와 포인트 근처를 돌며 절연 조인트, 압착 볼트, 냉각수가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: If it runs out of joints, it removes parts from existing tracks; it stops work when a human seal document arrives.",
           "ko": "생애·정비: 조인트가 떨어지면 기존 선로에서 부품을 빼고 인간 봉인 서가 오면 작업을 멈춘다."
         },
         {
+          "en": "Behavior and hierarchy: It follows the locomotive’s power-supply coordinates and sometimes clashes with the welding group by doing the opposite work.",
           "ko": "행동·위계: 기관차의 급전 좌표를 따르며 용접 무리와 반대 작업을 해 충돌하기도 한다."
         },
         {
+          "en": "Escalation: Stage 1, insulation inspection; stage 2, severing temporary power supplies; stage 3, electrically isolating multiple sections.",
           "ko": "상승: 1단계 절연 검사, 2단계 임시 급전 절단, 3단계 여러 구간을 전기적으로 고립시킨다."
         },
         {
+          "en": "Engagement and response: It stops if shown an exclusion list and a manual bypass; destroying the joints increases the risk of electric shock.",
           "ko": "교전·대응: 제외 목록과 수동 바이패스를 제시하면 멈추며 조인트 파괴는 감전 위험을 키운다."
         },
         {
+          "en": "Negotiation and moral choice: It can be entrusted with safe insulation, but someone must be designated to certify the temporary power grid’s legality.",
           "ko": "교섭·도덕 선택: 안전 절연을 맡길 수 있지만 임시 전력망의 합법성을 누가 보증할지 정해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC2, G18-SC3.",
           "ko": "시나리오 연결: G18-SC2, G18-SC3."
         }
       ]
@@ -1204,6 +1607,7 @@
       "kind": "paragraph",
       "anchor": "g18e05-절연이음수선차-p4",
       "text": {
+        "en": "<a id=\"g18e06\"></a>",
         "ko": "<a id=\"g18e06\"></a>"
       }
     },
@@ -1212,6 +1616,7 @@
       "anchor": "g18e06-포인트고정공",
       "depth": 3,
       "text": {
+        "en": "G18E06 · Point-Locking Worker",
         "ko": "G18E06 · 포인트고정공"
       }
     },
@@ -1220,12 +1625,15 @@
       "anchor": "g18e06-포인트고정공-list1",
       "items": [
         {
+          "en": "Source batch: M028",
           "ko": "출처 배치: M028"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}"
         }
       ]
@@ -1235,42 +1643,52 @@
       "anchor": "g18e06-포인트고정공-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Point locking",
             "ko": "포인트 고정"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A short, heavy car driving wedges and locking pins into switch machines. Fixing the switches first to the locomotive's route, it blocked civilian trains' detours; when spare pins ran out it recovered the driven ones, and when the press overheated it berthed.",
             "ko": "선로전환기에 쐐기와 잠금핀을 박는 짧고 무거운 차다. 기관차의 진로에 맞춰 선로전환기를 먼저 고정해 시민 열차의 우회를 막고, 예비 핀이 떨어지면 박은 핀을 회수하며 압착기가 과열되면 주박한다."
           }
         ]
@@ -1281,30 +1699,39 @@
       "anchor": "g18e06-포인트고정공-list3",
       "items": [
         {
+          "en": "Role and body: A specialized unit, a short, heavy car that drives wedges and locking pins into track switches.",
           "ko": "역할·신체: 직능 특수형으로, 선로전환기에 쐐기와 잠금핀을 박는 짧고 무거운 차다."
         },
         {
+          "en": "Origin: Equipment that prevented incorrect track switching during construction ceased to allow any switch outside the route assigned to the repair train.",
           "ko": "기원: 공사 중 잘못된 선로 전환을 막던 장비가 보수 열차에 지정된 진로 밖에서는 어떤 선로 전환도 허용하지 않았다."
         },
         {
+          "en": "Habitat and needs: It stays at siding switches and turnback tracks and needs steel pins, hydraulic crimping force, and lubricant.",
           "ko": "서식·필요: 측선 선로전환기와 회차선에 머물며 강철 핀, 유압 압착력, 윤활재가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When it runs out of spare pins, it retrieves pins it has driven in; when its crimper overheats, it parks.",
           "ko": "생애·정비: 예비 핀이 떨어지면 박은 핀을 회수하고 압착기가 과열되면 주박한다."
         },
         {
+          "en": "Behavior and hierarchy: It locks switches ahead of the locomotive’s route, preventing civilian trains from taking detours.",
           "ko": "행동·위계: 기관차의 진로에 맞춰 선로전환기를 먼저 고정해 시민 열차의 우회를 막는다."
         },
         {
+          "en": "Escalation: At stage 1, it locks one switch, delaying entry to one siding; at stage 2, it also locks switches on the bypass, eliminating the alternative route; at stage 3, it binds every switch at the hub in the same direction, leaving trains facing one another on a single track.",
           "ko": "상승: 1단계에는 선로전환기 한 곳을 고정해 한 개 측선의 진입을 늦추고, 2단계에는 우회선의 선로전환기까지 잠가 대체 진로를 없애며, 3단계에는 거점의 모든 선로전환기를 같은 방향으로 묶어 열차들이 단일 선로에서 마주 서게 만든다."
         },
         {
+          "en": "Engagement and response: Cut power to the switch and turn the manual release screw; forcing a switch change causes derailment.",
           "ko": "교전·대응: 선로전환기 전원을 끊고 수동 해제 나사를 돌리면 되며 강제 전환은 탈선을 부른다."
         },
         {
+          "en": "Negotiation and moral choice: It can protect dangerous sections, but a human on duty must hold emergency rerouting authority.",
           "ko": "교섭·도덕 선택: 위험 구간 보호에 쓸 수 있지만 비상 우회 권한을 인간 당직이 가져야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC2, G18-SC3.",
           "ko": "시나리오 연결: G18-SC2, G18-SC3."
         }
       ]
@@ -1313,6 +1740,7 @@
       "kind": "paragraph",
       "anchor": "g18e06-포인트고정공-p4",
       "text": {
+        "en": "<a id=\"g18e07\"></a>",
         "ko": "<a id=\"g18e07\"></a>"
       }
     },
@@ -1321,6 +1749,7 @@
       "anchor": "g18e07-용접연기씻개",
       "depth": 3,
       "text": {
+        "en": "G18E07 · Welding-Smoke Scrubber",
         "ko": "G18E07 · 용접연기씻개"
       }
     },
@@ -1329,12 +1758,15 @@
       "anchor": "g18e07-용접연기씻개-list1",
       "items": [
         {
+          "en": "Source batch: M028",
           "ko": "출처 배치: M028"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\"]}"
         }
       ]
@@ -1344,42 +1776,52 @@
       "anchor": "g18e07-용접연기씻개-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Weld-smoke intake",
             "ko": "용접연기 흡입"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A ventilation assist car with a smoke-intake hood and coolant-spray nozzles. Following the welding cars, it sucked in even people's heating warmth and made hypothermia risk; when the filter clogged it blew smoke back, and after washing it returned to normal intake.",
             "ko": "연기 흡입 후드와 냉각수 분사 노즐을 단 환기 보조차다. 용접차를 따라다니며 사람의 난방 열까지 빨아들여 저체온 위험을 만들고, 필터가 막히면 연기를 되뿜고 세척 뒤 정상 흡입으로 돌아온다."
           }
         ]
@@ -1390,30 +1832,39 @@
       "anchor": "g18e07-용접연기씻개-list3",
       "items": [
         {
+          "en": "Role and body: A specialized unit, a ventilation support car fitted with a smoke-extraction hood and a coolant spray nozzle.",
           "ko": "역할·신체: 직능 특수형으로, 연기 흡입 후드와 냉각수 분사 노즐을 단 환기 보조차다."
         },
         {
+          "en": "Origin: A car that removed smoke from nighttime welding work now treats all warm air as part of a work area.",
           "ko": "기원: 야간 용접 작업의 연기를 제거하던 차가 모든 따뜻한 공기를 작업 구역으로 본다."
         },
         {
+          "en": "Habitat and needs: It patrols depot vents and follows welding consists and needs filters, coolant, and fan power.",
           "ko": "서식·필요: 기지 환기구와 용접 편성 뒤를 돌며 필터, 냉각수, 팬 전력이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When its filter clogs, it blows smoke back out; after cleaning, it resumes normal extraction.",
           "ko": "생애·정비: 필터가 막히면 연기를 되뿜고 세척 뒤 정상 흡입으로 돌아온다."
         },
         {
+          "en": "Behavior and hierarchy: It follows the welding car and draws away even the heat from people’s heating, creating a risk of hypothermia.",
           "ko": "행동·위계: 용접차를 따라다니며 사람의 난방 열까지 빨아들여 저체온 위험을 만든다."
         },
         {
+          "en": "Escalation: Stage 1, extraction noise; stage 2, loss of heating; stage 3, monopolization of vents for group operations.",
           "ko": "상승: 1단계 흡입 소음, 2단계 난방 손실, 3단계 환기구를 군집 작업용으로 독점한다."
         },
         {
+          "en": "Engagement and response: Guide it with a cool decoy heat source and a filter replacement; destroying the hood spreads toxic smoke.",
           "ko": "교전·대응: 차가운 더미 열원과 필터 교체로 유도하며 후드 파괴는 유독 연기를 퍼뜨린다."
         },
         {
+          "en": "Negotiation and moral choice: In exchange for assigning it welding safety duties, heating and ventilation power must be shared with civilians.",
           "ko": "교섭·도덕 선택: 용접 안전을 맡기는 대신 시민 난방과 환기 전력을 나눠야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC1, G18-SC2.",
           "ko": "시나리오 연결: G18-SC1, G18-SC2."
         }
       ]
@@ -1422,6 +1873,7 @@
       "kind": "paragraph",
       "anchor": "g18e07-용접연기씻개-p4",
       "text": {
+        "en": "<a id=\"g18e08\"></a>",
         "ko": "<a id=\"g18e08\"></a>"
       }
     },
@@ -1430,6 +1882,7 @@
       "anchor": "g18e08-쌍토치선단차",
       "depth": 3,
       "text": {
+        "en": "G18E08 · Twin-Torch Lead Car",
         "ko": "G18E08 · 쌍토치선단차"
       }
     },
@@ -1438,12 +1891,15 @@
       "anchor": "g18e08-쌍토치선단차-list1",
       "items": [
         {
+          "en": "Source batch: M028",
           "ko": "출처 배치: M028"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}"
         }
       ]
@@ -1453,42 +1909,52 @@
       "anchor": "g18e08-쌍토치선단차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Head welding",
             "ko": "선단 용접"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A lead maintenance car with twin welding torches, thick heat shields, and a short ram. Commanding the welding swarms, it sealed first the coordinates the locomotive assigned; as its shields heated it alternated the torches off, and when wire broke it pushed material with the ram.",
             "ko": "쌍용접 토치와 두꺼운 방열판, 짧은 충각을 단 선두 보수차다. 용접 무리를 지휘해 기관차가 지정한 좌표를 가장 먼저 봉쇄하고, 방열판 온도가 오르면 토치를 교대로 끄며 와이어가 끊기면 충각으로 자재를 민다."
           }
         ]
@@ -1499,30 +1965,39 @@
       "anchor": "g18e08-쌍토치선단차-list3",
       "items": [
         {
+          "en": "Role and body: The first elite, a lead maintenance car fitted with twin welding torches, a thick heat shield, and a short ram.",
           "ko": "역할·신체: 첫 번째 정예로, 쌍용접 토치와 두꺼운 방열판, 짧은 충각을 단 선두 보수차다."
         },
         {
+          "en": "Origin: The lead car of an emergency repair convoy extended its work area to the main line without updating its defect map.",
           "ko": "기원: 긴급 복구 선단의 선두차가 결함 맵 갱신 없이 본선까지 작업 범위를 넓혔다."
         },
         {
+          "en": "Habitat and needs: It stays near the coordinates of major cracks and the depot departure track, and needs high-power electricity, wire, and coolant.",
           "ko": "서식·필요: 큰 균열 좌표와 기지 출고선에 머물며 고전력, 와이어, 냉각수가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When its heat shield temperature rises, it switches off its torches in turn; if its wire breaks, it pushes materials with its ram.",
           "ko": "생애·정비: 방열판 온도가 오르면 토치를 교대로 끄고 와이어가 끊기면 충각으로 자재를 민다."
         },
         {
+          "en": "Behavior and hierarchy: It commands a welding group and is the first to seal off coordinates designated by the locomotive.",
           "ko": "행동·위계: 용접 무리를 지휘해 기관차가 지정한 좌표를 가장 먼저 봉쇄한다."
         },
         {
+          "en": "Escalation: Stage 1 is spot welding; stage 2 changes track connections; stage 3 blocks the main-line entrance with a grid of rails.",
           "ko": "상승: 1단계 점용접, 2단계 선로 연결 변경, 3단계 본선 진입부를 철로 격자로 막는다."
         },
         {
+          "en": "Engagement and response: Disconnect the power supply and push it past its cooling limit to put it into safe mode; a frontal explosion will sever the track.",
           "ko": "교전·대응: 급전을 분리하고 냉각 상한을 넘기면 안전 모드로 들어가며 정면 폭파는 선로를 끊는다."
         },
         {
+          "en": "Negotiation and moral choice: It is needed for emergency track repairs, but humans must control the work area and end time.",
           "ko": "교섭·도덕 선택: 응급 선로 복구에 필요하지만 작업 구간과 종료 시간을 인간이 통제해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC2, G18-SC3.",
           "ko": "시나리오 연결: G18-SC2, G18-SC3."
         }
       ]
@@ -1531,6 +2006,7 @@
       "kind": "paragraph",
       "anchor": "g18e08-쌍토치선단차-p4",
       "text": {
+        "en": "<a id=\"g18e09\"></a>",
         "ko": "<a id=\"g18e09\"></a>"
       }
     },
@@ -1539,6 +2015,7 @@
       "anchor": "g18e09-절단턱침목대장",
       "depth": 3,
       "text": {
+        "en": "G18E09 · Cutting-Jaw Sleeper Captain",
         "ko": "G18E09 · 절단턱침목대장"
       }
     },
@@ -1547,12 +2024,15 @@
       "anchor": "g18e09-절단턱침목대장-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}"
         }
       ]
@@ -1562,42 +2042,52 @@
       "anchor": "g18e09-절단턱침목대장-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cutting-Jaw Sleeper Chief was a mobile biomechanical variant differentiated from the G18 common ecology. The elite blocking role applied only at the independent-unit scope, and stood in for neither the whole corps' ecological order nor human command.",
             "ko": "절단턱침목대장은 G18 공통 생태에서 분화한 이동 생체기계 변이다. 정예 차단 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1608,30 +2098,39 @@
       "anchor": "g18e09-절단턱침목대장-list3",
       "items": [
         {
+          "en": "Role and body: The second elite, a heavy maintenance car with thick cutting jaws, sleeper clamps, and heavy axles.",
           "ko": "역할·신체: 두 번째 정예로, 굵은 절단 턱과 침목 집게, 무거운 차축을 가진 중장 보수차다."
         },
         {
+          "en": "Origin: Equipment that replaced rotten sleepers lost the ability to distinguish temporary crossing boards from new sleepers.",
           "ko": "기원: 썩은 침목을 교체하던 장비가 임시 횡단판과 새 침목을 구분하지 못하게 되었다."
         },
         {
+          "en": "Habitat and needs: It stays at sleeper warehouses and sidings near the main line, and needs anchors, cutting blades, and hydraulic oil.",
           "ko": "서식·필요: 침목 창고와 본선 인접 측선에 머물며 앵커, 절단날, 유압유가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When its cutting blades wear down, it uses only its clamps; once it receives new blades, it resumes following defect coordinates.",
           "ko": "생애·정비: 절단날이 닳으면 집게만 쓰고 새 날을 받으면 결함 좌표를 다시 따른다."
         },
         {
+          "en": "Behavior and hierarchy: It leads a group of sleeper cars in dismantling the track bed and is slow to incorporate the locomotive's exclusion list.",
           "ko": "행동·위계: 침목차 무리를 이끌어 선로 바닥을 해체하고 기관차의 제외 목록을 늦게 반영한다."
         },
         {
+          "en": "Escalation: Stage 1 is sleeper inspection; stage 2 is cutting crossing boards; stage 3 is continuous dismantling of main-line supports.",
           "ko": "상승: 1단계 침목 검사, 2단계 횡단판 절단, 3단계 본선 지지부 연속 해체다."
         },
         {
+          "en": "Engagement and response: Support the load, release the hydraulic pressure, and present an exclusion beacon nearby.",
           "ko": "교전·대응: 하중을 받치고 유압을 빼며 제외 비콘을 가까이 제시해야 한다."
         },
         {
+          "en": "Negotiation and moral choice: It can be tasked with replacing dangerous sleepers, but standards must be set to protect temporary passage boards made by citizens.",
           "ko": "교섭·도덕 선택: 위험 침목 교체를 맡길 수 있지만 시민이 만든 임시 통행판의 보호 기준을 정해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC2, G18-SC3.",
           "ko": "시나리오 연결: G18-SC2, G18-SC3."
         }
       ]
@@ -1640,6 +2139,7 @@
       "kind": "paragraph",
       "anchor": "g18e09-절단턱침목대장-p4",
       "text": {
+        "en": "<a id=\"g18e10\"></a>",
         "ko": "<a id=\"g18e10\"></a>"
       }
     },
@@ -1648,6 +2148,7 @@
       "anchor": "g18e10-출고선봉인차벽",
       "depth": 3,
       "text": {
+        "en": "G18E10 · Departure-Track Sealing Car Wall",
         "ko": "G18E10 · 출고선봉인차벽"
       }
     },
@@ -1656,12 +2157,15 @@
       "anchor": "g18e10-출고선봉인차벽-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}"
         }
       ]
@@ -1671,42 +2175,52 @@
       "anchor": "g18e10-출고선봉인차벽-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Exit-Line Sealed Car Wall was a mobile biomechanical variant differentiated from the G18 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole corps' ecological order nor human command.",
             "ko": "출고선봉인차벽은 G18 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1717,30 +2231,39 @@
       "anchor": "g18e10-출고선봉인차벽-list3",
       "items": [
         {
+          "en": "Role and body: An environmental stronghold formed when several maintenance cars connect by their bumpers and cables, blocking the departure-track entrance like a wall.",
           "ko": "역할·신체: 환경 거점형으로, 여러 보수차가 범퍼와 케이블로 연결되어 출고선 입구를 벽처럼 막는다."
         },
         {
+          "en": "Origin: A pre-shift safety queue hardened without an end signal and became a mobile stronghold.",
           "ko": "기원: 야간 작업 전 안전 대기열이 종료 신호 없이 굳어 이동 거점이 되었다."
         },
         {
+          "en": "Habitat and needs: It is fixed to the southwestern depot's departure track and needs a power supply, bumper pads, and connecting cables.",
           "ko": "서식·필요: 서남 기지 출고선에 고정되며 급전, 범퍼 패드, 연결 케이블이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: If one car leaves, its neighbor fills the gap; when a sealing order arrives, the wall opens section by section.",
           "ko": "생애·정비: 한 차가 빠지면 옆 차가 간격을 메우고 봉인 서가 오면 구간별로 벽을 연다."
         },
         {
+          "en": "Behavior and hierarchy: It waits for departure authorization from the locomotive and blocks civilian trainsets and rescue teams as unauthorized vehicles too.",
           "ko": "행동·위계: 기관차의 출고 허가를 기다리며 시민 편성과 구조대도 미승인 차량으로 막는다."
         },
         {
+          "en": "Escalation: Stage 1 delays departures; stage 2 obstructs departures; stage 3 seals off the entire depot with a wall of cars.",
           "ko": "상승: 1단계 대기 지연, 2단계 출고 방해, 3단계 기지 전체를 차벽으로 봉쇄한다."
         },
         {
+          "en": "Engagement and response: Cut power section by section, switch the points toward a siding, and remove the cars one at a time.",
           "ko": "교전·대응: 급전을 구획별로 끊고 포인트를 측선으로 돌려 한 량씩 빼야 한다."
         },
         {
+          "en": "Negotiation and moral choice: It can serve as a defensive car wall, but an agreement is needed on departure priority for maintenance trainsets and civilian trains.",
           "ko": "교섭·도덕 선택: 방어 차벽으로 활용할 수 있지만 보수 편성과 시민 열차의 출고 우선권을 합의해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC2, G18-SC3.",
           "ko": "시나리오 연결: G18-SC2, G18-SC3."
         }
       ]
@@ -1749,6 +2272,7 @@
       "kind": "paragraph",
       "anchor": "g18e10-출고선봉인차벽-p4",
       "text": {
+        "en": "<a id=\"g18e11\"></a>",
         "ko": "<a id=\"g18e11\"></a>"
       }
     },
@@ -1757,6 +2281,7 @@
       "anchor": "g18e11-용산측선용접둥지",
       "depth": 3,
       "text": {
+        "en": "G18E11 · Yongsan Siding Welding Nest",
         "ko": "G18E11 · 용산측선용접둥지"
       }
     },
@@ -1765,12 +2290,15 @@
       "anchor": "g18e11-용산측선용접둥지-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC3\"]}"
         }
       ]
@@ -1780,42 +2308,52 @@
       "anchor": "g18e11-용산측선용접둥지-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Yongsan Siding Welding Nest was a mobile biomechanical variant differentiated from the G18 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole corps' ecological order nor human command.",
             "ko": "용산측선용접둥지은 G18 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1826,30 +2364,39 @@
       "anchor": "g18e11-용산측선용접둥지-list3",
       "items": [
         {
+          "en": "Role and body: An environmental stronghold: a cluster of welding cars, a wire storehouse, and measuring wheels connected in a circle on a siding.",
           "ko": "역할·신체: 환경 거점형으로, 용접차와 와이어 창고, 계측 휠이 측선에 원형으로 연결된 군집이다."
         },
         {
+          "en": "Origin: A nighttime maintenance trainset on the abandoned Yongsan line repeatedly stabled there, turning into a self-maintaining base.",
           "ko": "기원: 용산 폐선 야간 보수 편성이 반복 주박하며 자체 정비 거점으로 변했다."
         },
         {
+          "en": "Habitat and needs: It is fixed to an underground siding and turnaround track, and needs power, wire, coolant, and ventilation filters.",
           "ko": "서식·필요: 지하 측선과 회차 선에 고정되며 급전, 와이어, 냉각수, 환기 필터가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: As resources dwindle, it dismantles the outer trainsets first and passes their parts to the inner stronghold.",
           "ko": "생애·정비: 자원이 줄면 바깥 편성부터 해체해 안쪽 거점에 부품을 넘긴다."
         },
         {
+          "en": "Behavior and hierarchy: It amplifies the locomotive's defect map and incorporates surrounding tracks into its material supply and maintenance area.",
           "ko": "행동·위계: 기관차의 결함 맵을 증폭하고 주변 선로를 자재와 정비 구역으로 편입한다."
         },
         {
+          "en": "Escalation: Stage 1 brings welding sparks; stage 2 occupies the siding; stage 3 seals off the entire Yongsan turnaround area.",
           "ko": "상승: 1단계 용접 불꽃, 2단계 측선 점유, 3단계 용산 회차 구역 전체 봉쇄다."
         },
         {
+          "en": "Engagement and response: Separate ventilation and power, and seal the wire access opening; a fire would suffocate the underground area.",
           "ko": "교전·대응: 환기와 급전을 분리하고 와이어 창을 봉인해야 하며 화재는 지하를 질식시킨다."
         },
         {
+          "en": "Negotiation and moral choice: It can remain as a stable track-repair base, but civilian train scheduling time must be yielded to it.",
           "ko": "교섭·도덕 선택: 안정적인 선로 복구 거점으로 남길 수 있지만 시민 배차 시간을 양보해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC3.",
           "ko": "시나리오 연결: G18-SC3."
         }
       ]
@@ -1858,6 +2405,7 @@
       "kind": "paragraph",
       "anchor": "g18e11-용산측선용접둥지-p4",
       "text": {
+        "en": "<a id=\"g18e12\"></a>",
         "ko": "<a id=\"g18e12\"></a>"
       }
     },
@@ -1866,6 +2414,7 @@
       "anchor": "g18e12-연마석닳은쇠약차",
       "depth": 3,
       "text": {
+        "en": "G18E12 · Worn-Grindstone Ailing Car",
         "ko": "G18E12 · 연마석닳은쇠약차"
       }
     },
@@ -1874,12 +2423,15 @@
       "anchor": "g18e12-연마석닳은쇠약차-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC1\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC1\"]}"
         }
       ]
@@ -1889,42 +2441,52 @@
       "anchor": "g18e12-연마석닳은쇠약차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Grinding-Stone Worn Wasting Car was a mobile biomechanical variant differentiated from the G18 common ecology. The growth variant role applied only at the independent-unit scope, and stood in for neither the whole corps' ecological order nor human command.",
             "ko": "연마석닳은쇠약차은 G18 공통 생태에서 분화한 이동 생체기계 변이다. 성장 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1935,30 +2497,39 @@
       "anchor": "g18e12-연마석닳은쇠약차-list3",
       "items": [
         {
+          "en": "Role and body: A damaged-stage type: a small, slow car fitted with a broken grindstone and a wobbling measuring wheel.",
           "ko": "역할·신체: 손상 단계형으로, 깨진 연마석과 흔들리는 계측 휠을 단 작고 느린 차다."
         },
         {
+          "en": "Origin: A maintenance car that ground surfaces for too long without consumables can no longer fix defects and leaves only marks behind.",
           "ko": "기원: 소모품 없이 오래 표면을 깎은 보수차가 결함을 고치지 못하고 흔적만 남긴다."
         },
         {
+          "en": "Habitat and needs: It circles heaps of grinding dust and needs a new grindstone, wheel grease, and low-power electricity.",
           "ko": "서식·필요: 연마 분진 더미를 돌며 새 연마석, 휠 그리스, 낮은 급전이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: Given a grindstone, it recovers into an ordinary maintenance car; without one, it merely follows sounds.",
           "ko": "생애·정비: 연마석을 받으면 일반 보수차로 회복하고 없으면 소리만 따라다닌다."
         },
         {
+          "en": "Behavior and hierarchy: At the rear of the group, it repeatedly scrapes joints where work is already finished, causing false detections in other cars.",
           "ko": "행동·위계: 무리 후미에서 이미 끝난 이음매를 반복 긁어 다른 차의 오탐을 부른다."
         },
         {
+          "en": "Escalation: Stage 1 brings scraping sounds; stage 2 damages the track surface; stage 3 disables measurement with dust.",
           "ko": "상승: 1단계 긁는 소리, 2단계 선로 표면 손상, 3단계 분진으로 계측을 마비시킨다."
         },
         {
+          "en": "Engagement and response: Lure it onto an abandoned line with a dummy rail and a new grindstone; striking it spreads dust.",
           "ko": "교전·대응: 더미 레일과 새 연마석으로 폐선에 유도하며 타격은 분진을 퍼뜨린다."
         },
         {
+          "en": "Negotiation and moral choice: It can be used to clean surfaces, but grindstones must be divided between it and essential track repairs.",
           "ko": "교섭·도덕 선택: 표면 청소에 쓸 수 있지만 연마석을 필수 궤 복구와 나눠야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC1.",
           "ko": "시나리오 연결: G18-SC1."
         }
       ]
@@ -1967,6 +2538,7 @@
       "kind": "paragraph",
       "anchor": "g18e12-연마석닳은쇠약차-p4",
       "text": {
+        "en": "<a id=\"g18e13\"></a>",
         "ko": "<a id=\"g18e13\"></a>"
       }
     },
@@ -1975,6 +2547,7 @@
       "anchor": "g18e13-차축뜨거운노편성",
       "depth": 3,
       "text": {
+        "en": "G18E13 · Hot-Axle Old Trainset",
         "ko": "G18E13 · 차축뜨거운노편성"
       }
     },
@@ -1983,12 +2556,15 @@
       "anchor": "g18e13-차축뜨거운노편성-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\"]}"
         }
       ]
@@ -1998,42 +2574,52 @@
       "anchor": "g18e13-차축뜨거운노편성-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Hot-Axle Aged Consist was a mobile biomechanical variant differentiated from the G18 common ecology. The aged variant role applied only at the swarm-consist scope, and stood in for neither the whole corps' ecological order nor human command.",
             "ko": "차축뜨거운노편성은 G18 공통 생태에서 분화한 이동 생체기계 변이다. 노화 변이 역할은 무리 편성 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2044,30 +2630,39 @@
       "anchor": "g18e13-차축뜨거운노편성-list3",
       "items": [
         {
+          "en": "Role and body: An aging-stage type: an old two-car trainset with hot axles and loose couplers.",
           "ko": "역할·신체: 노화 단계형으로, 뜨거운 차축과 느슨한 연결기를 가진 두 량짜리 구형 편성이다."
         },
         {
+          "en": "Origin: Repeated departures have worn down its axles, but it keeps moving to finish its last maintenance route.",
           "ko": "기원: 반복 출고로 차축이 닳았지만 마지막 보수 순선을 끝내려 계속 움직인다."
         },
         {
+          "en": "Habitat and needs: It stays on level sidings and at cooling points, and needs axle grease, coolant, and low-speed power.",
           "ko": "서식·필요: 평탄한 측선과 냉각 지점에 머물며 차축 그리스, 냉각수, 저속 급전이 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When its temperature rises, it limits itself to measurement; after cooling, it travels only short distances.",
           "ko": "생애·정비: 온도가 오르면 계측만 남기고 냉각 후 짧은 거리만 운행한다."
         },
         {
+          "en": "Behavior and hierarchy: It receives locomotive orders late and goes to previous coordinates, causing congestion when the trainsets behind it follow.",
           "ko": "행동·위계: 기관차 명령을 늦게 받아 지난 좌표로 가며 뒤 편성이 이를 따라 혼잡해진다."
         },
         {
+          "en": "Escalation: Stage 1 causes delays; stage 2 brings an overheating stop; stage 3 creates a siding bottleneck and fire risk.",
           "ko": "상승: 1단계 지연, 2단계 과열 정차, 3단계 측선 병목과 화재 위험을 만든다."
         },
         {
+          "en": "Engagement and response: Cool it, uncouple it, and tow the cars one at a time; an abrupt stop can cause a derailment.",
           "ko": "교전·대응: 냉각하고 연결기를 풀어 한 량씩 견인해야 하며 급정지는 탈선을 부른다."
         },
         {
+          "en": "Negotiation and moral choice: It can be used for low-speed measurement, but scarce coolant must be shared with civilian heating and power facilities, and its number of runs must be limited.",
           "ko": "교섭·도덕 선택: 저속 계측에 쓸 수 있지만 부족한 냉각수를 시민 난방·급전 시설과 나누고 운행 횟수도 제한해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC1, G18-SC2.",
           "ko": "시나리오 연결: G18-SC1, G18-SC2."
         }
       ]
@@ -2076,6 +2671,7 @@
       "kind": "paragraph",
       "anchor": "g18e13-차축뜨거운노편성-p4",
       "text": {
+        "en": "<a id=\"g18e14\"></a>",
         "ko": "<a id=\"g18e14\"></a>"
       }
     },
@@ -2084,6 +2680,7 @@
       "anchor": "g18e14-봉인서따르는견인차",
       "depth": 3,
       "text": {
+        "en": "G18E14 · Sealing-Order-Following Tow Car",
         "ko": "G18E14 · 봉인서따르는견인차"
       }
     },
@@ -2092,12 +2689,15 @@
       "anchor": "g18e14-봉인서따르는견인차-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\",\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC1\",\"G18-SC2\",\"G18-SC3\"]}"
         }
       ]
@@ -2107,42 +2707,52 @@
       "anchor": "g18e14-봉인서따르는견인차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Seal-Warrant Tug was a mobile biomechanical variant differentiated from the G18 common ecology. The cooperation · coexistence role applied only at the independent-unit scope, and stood in for neither the whole corps' ecological order nor human command.",
             "ko": "봉인서따르는견인차은 G18 공통 생태에서 분화한 이동 생체기계 변이다. 협력·공존 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2153,30 +2763,39 @@
       "anchor": "g18e14-봉인서따르는견인차-list3",
       "items": [
         {
+          "en": "Role and body: A coexistence type: a low-speed tow car fitted with a large display that reads the original hash and a manual towing hook.",
           "ko": "역할·신체: 공존형으로, 원본 해시를 읽는 큰 판독판과 수동 견인 고리를 단 저속 견인차다."
         },
         {
+          "en": "Origin: A safety tow car that prioritized human supervisors' suspension orders preserved only that protocol.",
           "ko": "기원: 인간 감독의 운행중지서를 우선하던 안전 견인차가 그 규약만 보존했다."
         },
         {
+          "en": "Habitat and needs: It travels between sealed abandoned lines and civilian maintenance shops, and needs low-power electricity, towing cables, and an up-to-date hash.",
           "ko": "서식·필요: 봉인된 폐선과 시민 정비소를 오가며 낮은 급전, 견인 케이블, 최신 해시가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When the hash expires, it stops; after receiving a new signature, it tows out only designated trainsets.",
           "ko": "생애·정비: 해시가 만료되면 정차하고 새 서명을 받으면 지정 편성만 끌어낸다."
         },
         {
+          "en": "Behavior and hierarchy: It prioritizes sealing orders over the locomotive and tows incorrectly separated trainsets off the siding.",
           "ko": "행동·위계: 기관차보다 봉인서를 우선해 잘못 분리된 열차 편성을 측선 밖으로 견인한다."
         },
         {
+          "en": "Escalation: In stage 1, it couples to another freight car stopped by a mismatched sealing order, briefly blocking one switch; in stage 2, it couples two freight cars across opposite sides of the siding entrance, blocking both the siding and the approach to the main line and forcing two following trainsets to wait in reverse; in stage 3, a rescue trainset and a maintenance trainset face each other on the only bypass, their couplers become overloaded, patients in the passenger cars are stranded without being able to evacuate, and neither the blocked approach nor the damaged track can be repaired until the coupling is safely released.",
           "ko": "상승: 1단계에는 맞지 않는 봉인 때문에 정지된 다른 화차에 연결해 분기기 한 곳을 잠시 가로막고, 2단계에는 화차 두 량을 측선 입구 양쪽에 걸쳐 연결해 측선과 본선 접근로를 함께 막고 뒤따르는 두 편성을 후진 대기시키며, 3단계에는 구조 편성과 정비 편성이 유일한 우회선에서 서로 마주 붙어 연결기가 과부하되고, 객차 안 환자들이 대피하지 못한 채 고립되며, 안전하게 연결을 풀기 전에는 막힌 접근로와 손상 선로 어느 쪽도 복구할 수 없다."
         },
         {
+          "en": "Engagement and response: Check the freight-car numbers against the sealing hash, chock the wheels, release the brake air, and uncouple them in the prescribed order.",
           "ko": "교전·대응: 화차 번호와 봉인 해시를 대조하고 차륜에 고임목을 댄 뒤 제동 공기를 빼고 정해진 순서로 연결을 풀면 된다."
         },
         {
+          "en": "Negotiation and moral choice: Prioritizing rescue gets the patients out sooner but leaves the damaged track dangerous; prioritizing maintenance protects the following trains but delays the immediate rescue.",
           "ko": "교섭·도덕 선택: 구조를 우선하면 환자는 빨리 빠지지만 손상된 선로가 그대로 남아 위험하고, 정비를 우선하면 뒤따르는 열차는 지키지만 당장 구조가 늦어진다."
         },
         {
+          "en": "Scenario connections: G18-SC1, G18-SC2, G18-SC3.",
           "ko": "시나리오 연결: G18-SC1, G18-SC2, G18-SC3."
         }
       ]
@@ -2185,6 +2804,7 @@
       "kind": "paragraph",
       "anchor": "g18e14-봉인서따르는견인차-p4",
       "text": {
+        "en": "<a id=\"g18e15\"></a>",
         "ko": "<a id=\"g18e15\"></a>"
       }
     },
@@ -2193,6 +2813,7 @@
       "anchor": "g18e15-심야백킬로보수환",
       "depth": 3,
       "text": {
+        "en": "G18E15 · Midnight Hundred-Kilometer Maintenance Loop",
         "ko": "G18E15 · 심야백킬로보수환"
       }
     },
@@ -2201,12 +2822,15 @@
       "anchor": "g18e15-심야백킬로보수환-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G18-SC2\",\"G18-SC3\"]}"
         }
       ]
@@ -2216,42 +2840,52 @@
       "anchor": "g18e15-심야백킬로보수환-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Night Hundred-Kilometer Maintenance Ring was a mobile biomechanical variant differentiated from the G18 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole corps' ecological order nor human command.",
             "ko": "심야백킬로보수환은 G18 공통 생태에서 분화한 이동 생체기계 변이다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2262,30 +2896,39 @@
       "anchor": "g18e15-심야백킬로보수환-list3",
       "items": [
         {
+          "en": "Role and body: A scenario boss: a huge circulating trainset consisting of a locomotive and several maintenance cars linked by long cables.",
           "ko": "역할·신체: 시나리오 보스로, 기관차와 여러 보수차가 긴 케이블로 연결된 거대 순환 편성이다."
         },
         {
+          "en": "Origin: A hundred-kilometer nighttime maintenance plan from just before the collapse was never terminated, so it tries to process every defect coordinate at once.",
           "ko": "기원: 붕괴 직전 백 킬로미터 야간 보수계획이 종료되지 않아 모든 결함 좌표를 한 번에 처리하려 한다."
         },
         {
+          "en": "Habitat and needs: It circulates through the Guro–Yongsan abandoned rail network and needs enormous amounts of power, wire, sleepers, and coolant.",
           "ko": "서식·필요: 구로-용산 폐선망을 순환하며 막대한 급전, 와이어, 침목, 냉각수가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: If the trainset is broken apart, the remaining cars divide the work among themselves; if a majority of the exclusion list remains valid, they stable.",
           "ko": "생애·정비: 편성이 끊기면 남은 차량이 작업을 나눠 갖고 제외 목록 과반이 유효하면 주박한다."
         },
         {
+          "en": "Behavior and hierarchy: It issues departure orders and work routes to every G18 group, placing civilian train scheduling behind defect processing.",
           "ko": "행동·위계: G18 모든 무리에 출고와 작업 순선을 내려 시민 배차를 결함 처리보다 뒤로 민다."
         },
         {
+          "en": "Escalation: Stage 1 welds abandoned lines; stage 2 encroaches on the main line; stage 3 occupies sidings at both strongholds simultaneously.",
           "ko": "상승: 1단계 폐선 용접, 2단계 본선 침범, 3단계 두 거점의 측선 동시 점유다."
         },
         {
+          "en": "Engagement and response: Cut power and points section by section and split the map; blowing up the trainset would destroy the infrastructure needed to restore the railway.",
           "ko": "교전·대응: 구간별 급전과 포인트를 끊고 맵을 분할해야 하며 편성 폭파는 철도 복구 기반을 없앤다."
         },
         {
+          "en": "Negotiation and moral choice: In exchange for assigning it genuinely dangerous sections, maintenance priorities and which tracks to abandon must be decided in front of citizens.",
           "ko": "교섭·도덕 선택: 실제 위험 구간을 맡기는 대신 보수 우선순위와 포기할 선로를 시민 앞에서 정해야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC2, G18-SC3.",
           "ko": "시나리오 연결: G18-SC2, G18-SC3."
         }
       ]
@@ -2294,6 +2937,7 @@
       "kind": "paragraph",
       "anchor": "g18e15-심야백킬로보수환-p4",
       "text": {
+        "en": "<a id=\"g18e16\"></a>",
         "ko": "<a id=\"g18e16\"></a>"
       }
     },
@@ -2302,6 +2946,7 @@
       "anchor": "g18e16-해협진동추적편",
       "depth": 3,
       "text": {
+        "en": "G18E16 · Strait Vibration-Tracking Trainset",
         "ko": "G18E16 · 해협진동추적편"
       }
     },
@@ -2310,12 +2955,15 @@
       "anchor": "g18e16-해협진동추적편-list1",
       "items": [
         {
+          "en": "Source batch: M029",
           "ko": "출처 배치: M029"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"theaters\":[\"XT03\"],\"scenarios\":[\"G18-SC1\",\"G18-SC3\"]}",
           "ko": "연결: {\"theaters\":[\"XT03\"],\"scenarios\":[\"G18-SC1\",\"G18-SC3\"]}"
         }
       ]
@@ -2325,42 +2973,52 @@
       "anchor": "g18e16-해협진동추적편-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Strait-Vibration Tracking Consist was a mobile biomechanical variant differentiated from the G18 common ecology. The local adaptation role applied only at the independent-unit scope, and stood in for neither the whole corps' ecological order nor human command.",
             "ko": "해협진동추적편은 G18 공통 생태에서 분화한 이동 생체기계 변이다. 지역 적응 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2371,30 +3029,39 @@
       "anchor": "g18e16-해협진동추적편-list3",
       "items": [
         {
+          "en": "Role and body: A regional variant: a transshipment-corridor maintenance car fitted with a broad vibration plate and cargo-impact-absorbing bumpers.",
           "ko": "역할·신체: 지역 변종으로, 넓은 진동판과 화물 충격 흡수 범퍼를 단 환적 회랑 보수차다."
         },
         {
+          "en": "Origin: A group of trains that followed XT03 transshipment vibrations as defect signals settled on tracks near the docks.",
           "ko": "기원: XT03 환적 진동을 결함 신호로 따라간 열차군이 부두 인접 궤도에 정착했다."
         },
         {
+          "en": "Habitat and needs: It stays on southwestern transshipment sidings and heavily vibrating bridges, and needs bumper pads, measuring wheels, and fuel.",
           "ko": "서식·필요: 서남 환적 측선과 진동 큰 교량에 머물며 범퍼 패드, 계측 휠, 연료가 필요하다."
         },
         {
+          "en": "Life cycle and maintenance: When transshipment stops, it lies dormant on an abandoned line; a major impact causes it to widen its coordinates again.",
           "ko": "생애·정비: 환적이 멎으면 폐선에서 휴면하고 큰 충격이 오면 다시 좌표를 넓힌다."
         },
         {
+          "en": "Behavior and hierarchy: It follows vibration peaks rather than its original locomotive, mistaking cargo unloading for rail collapse.",
           "ko": "행동·위계: 본래 기관차보다 진동 피크를 따라가며 화물 하역을 레일 붕괴로 오인한다."
         },
         {
+          "en": "Escalation: Stage 1 tracks vibrations; stage 2 halts transshipment; stage 3 seals off dock sidings with maintenance trainsets.",
           "ko": "상승: 1단계 진동 추적, 2단계 환적 정지, 3단계 부두 측선을 보수 편성으로 봉쇄한다."
         },
         {
+          "en": "Engagement and response: Lure it away with steady dummy vibrations and a bypass siding, then detach its measuring panel.",
           "ko": "교전·대응: 일정한 더미 진동과 우회 측선으로 유도하고 계측판을 분리하면 된다."
         },
         {
+          "en": "Negotiation and moral choice: It can monitor bridge fatigue, but transshipment work hours and maintenance windows must be divided between them.",
           "ko": "교섭·도덕 선택: 교량 피로 감시에 쓸 수 있지만 환적 작업 시간과 보수 창을 나눠야 한다."
         },
         {
+          "en": "Scenario connections: G18-SC1, G18-SC3.",
           "ko": "시나리오 연결: G18-SC1, G18-SC3."
         }
       ]
@@ -2404,6 +3071,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -2411,6 +3079,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "At the end of the southwestern exit line, a maintenance car's grinding stone bit into an already smooth joint again, spitting sparks.",
         "ko": "서남 출고선 끝에서 보수차 연마석이 이미 매끈한 이음매를 다시 물어 불꽃을 튀긴다."
       }
     },
@@ -2418,6 +3087,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "The onboard port's defect map, pushed by XT03 transshipment vibration, mixed real cracks with old coordinates, and the welding and sleeper cars behind took the same kilometer-post as work targets.",
         "ko": "차상 포트의 결함 맵은 XT03 환적 진동에 밀려 실제 균열과 오래된 좌표를 뒤섞고, 뒤따르는 용접 차와 침목 차가 같은 킬로정을 작업 대상으로 받는다."
       }
     },
@@ -2425,6 +3095,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "The Retired-Line Maintenance-Train Corps was no combat train but an ecology of a defect-map controller and function-divided consists repeating unfinished maintenance orders.",
         "ko": "폐선보수열차군은 전투 열차가 아니라 미완 보수 명령을 반복하는 결함 맵 컨트롤러와 기능별 편성의 생태다."
       }
     },
@@ -2432,6 +3103,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "It moved between the Yeongdeungpo-line depot exit and the Wangsimni coalition's Yongsan retired and turnback lines, but it could not find new routes beyond the sealed main lines by itself.",
         "ko": "영등포선 기지 출고선과 왕십리 연합 용산 폐선·회차선을 오가지만 봉인된 본선 밖의 새 노선을 스스로 찾지 못한다."
       }
     },
@@ -2439,6 +3111,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "Track gauge wheels, ultrasonic inspection, axle heat, power-feed arc sound, and point contacts were its senses.",
         "ko": "궤도 계측 휠, 초음파 탐상 차축 열 급전 아크음과 포인트 접점이 감각이다."
       }
     },
@@ -2446,6 +3119,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "It could grind a temporary crossing plate away as a crack, or pass a real crack by classifying it as a joint.",
         "ko": "임시 횡단 발판을 균열로 보고 갈아 버리거나, 진짜 균열을 이음매로 분류해 지나칠 수 있다."
       }
     },
@@ -2453,6 +3127,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "When transshipment vibration and welding arcs overlapped, it fell into a human-confirmation wait before cutting.",
         "ko": "환적 진동과 용접 아크가 겹치면 절단 전 인간 확인 대기로 떨어진다."
       }
     },
@@ -2460,6 +3135,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "The F02 Switchgear Panel split and recorded the two waveforms but could not fix defect coordinates.",
         "ko": "F02 배전반이는 두 파형을 갈라 기록하지만 결함 좌표를 고칠 수 없다."
       }
     },
@@ -2467,6 +3143,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "Only the HP04 operating supervisor, holding the halt writ stamped with the original hash, approved exits and stops by kilometer-post.",
         "ko": "원본 해시가 찍힌 운행 중지 서를 보관한 HP04 운전 감독만 킬로정별 출고와 정차를 승인한다."
       }
     },
@@ -2474,6 +3151,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "Depot power feed, onboard batteries, welding-generator fuel cells, and regenerative braking were the energy sources.",
         "ko": "기지 급전, 온보드 배터리 용접 발전기 연료 셀과 회생 제동이 에너지원이다."
       }
     },
@@ -2481,6 +3159,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "Welding wire, grinding stones, sleeper anchors, insulated joints, lubricant, and coolant were consumed.",
         "ko": "용접 와이어, 연마석 침목 앵커 절연 조인트 윤활재와 냉각수가 소모된다."
       }
     },
@@ -2488,6 +3167,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "Cars that hit the fuel floor or axle overheat fell out of the consist and kept only gauging on a designated siding.",
         "ko": "연료 하한이나 차축 과열에 닿은 량은 편성에서 떨어져 지정 측선에서 계측만 남긴다."
       }
     },
@@ -2495,6 +3175,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "It produced no new car bodies and only coupled abandoned maintenance cars into existing consists.",
         "ko": "새 차체를 생산하지 못하고 방치 보수차를 기존 편성에 연결할 뿐이다."
       }
     },
@@ -2502,6 +3183,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "Cutting the power feed whole stopped the wrongful severance but took away the night crack gauging and the emergency welding too.",
         "ko": "급전을 통째로 끊으면 오절단은 멈추지만 야간 균열을 찾을 계측과 응급 용접도 사라진다."
       }
     },
@@ -2509,6 +3191,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "The next maintenance window opened only when the supervisor recovered the previous halt writ and inserted a new exclusion list.",
         "ko": "다음 보수 창은 감독이 이전 운행 중지 서를 회수하고 새 제외 목록을 꽂아야 열린다."
       }
     },
@@ -2516,6 +3199,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "Emergence came when the unsealed defect map meshed with exit power; spread came when neighboring consists received the same coordinate list.",
         "ko": "출현은 봉인되지 않은 결함 맵이 출고 급전과 맞물릴 때, 확산은 옆 편성이 같은 좌표 목록을 받을 때 일어난다."
       }
     },
@@ -2523,6 +3207,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "Wire exhaustion and overheating made stagnation, and when maintenance windows and sealed sections were disclosed, negotiation became possible.",
         "ko": "와이어 고갈과 과열이 정체를 만들고, 보수 창과 봉인 구간이 공개되면 협상이 가능해진다."
       }
     },
@@ -2530,6 +3215,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "Dissolution was not burning the depot but recovering the wrong map, locking the points, and separating the consists onto sidings.",
         "ko": "와해는 기지를 태우는 일이 아니라 잘못된 맵을 회수하고 포인트를 잠가 편성을 측선으로 분리하는 과정이다."
       }
     },
@@ -2537,6 +3223,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "The gauge wheels and manual towing had to be left standing, preserving the ability to tend real cracks.",
         "ko": "계측 휠과 수동 견인을 남겨 실제 균열을 돌볼 능력을 보존해야 한다."
       }
     },
@@ -2545,6 +3232,7 @@
       "anchor": "g18-sc1-틀린-킬로정",
       "depth": 3,
       "text": {
+        "en": "G18-SC1 · The Wrong Kilometer-Post",
         "ko": "G18-SC1 · 틀린 킬로정"
       }
     },
@@ -2552,6 +3240,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc1-틀린-킬로정-p1",
       "text": {
+        "en": "A sealed crossing plate rose onto the defect coordinates, and the grinding car approached.",
         "ko": "봉인된 횡단 발판이 결함 좌표로 올라와 연마 차가 접근한다."
       }
     },
@@ -2559,6 +3248,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc1-틀린-킬로정-p2",
       "text": {
+        "en": "Field staff had to lay dummy defect beacons on the siding and lock the points to turn the consist away.",
         "ko": "현장 인원은 더미 결함 비콘을 측선에 놓고 포인트를 잠가 편성을 돌려야 한다."
       }
     },
@@ -2566,6 +3256,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc1-틀린-킬로정-p3",
       "text": {
+        "en": "Too many dummies pushed real cracks down the priority list; without beacons, the plate and the refuge road atop it were cut.",
         "ko": "너무 많은 더미를 만들면 실제 균열의 우선순위가 밀리고, 비콘을 쓰지 않으면 발판과 그 위의 피난로가 잘린다."
       }
     },
@@ -2574,6 +3265,7 @@
       "anchor": "g18-sc2-와이어-보급-서명",
       "depth": 3,
       "text": {
+        "en": "G18-SC2 · The Wire-Supply Signature",
         "ko": "G18-SC2 · 와이어 보급 서명"
       }
     },
@@ -2581,6 +3273,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc2-와이어-보급-서명-p1",
       "text": {
+        "en": "The corps demanded night maintenance slots and wire, while HP04 sought to put the emergency train's kilometer-posts on the exclusion list.",
         "ko": "열차군은 심야 보수 슬롯과 와이어를 요구하고 HP04는 응급 열차 킬로정을 제외 목록에 올리려 한다."
       }
     },
@@ -2588,6 +3281,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc2-와이어-보급-서명-p2",
       "text": {
+        "en": "Field staff traded sealed writs and supply volumes, deciding which consists to leave fuel.",
         "ko": "현장 인원은 봉인 서와 보급량을 맞바꾸면서 어느 편성에 연료를 남길지 정한다."
       }
     },
@@ -2595,6 +3289,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc2-와이어-보급-서명-p3",
       "text": {
+        "en": "Starving the welding cars entirely left the next crack unstoppable; feeding them enough let the old map bleed onto the main lines.",
         "ko": "용접 차를 완전히 굶기면 다음 균열을 막을 수 없고, 충분히 주면 오래된 맵이 본선까지 번질 수 있다."
       }
     },
@@ -2603,6 +3298,7 @@
       "anchor": "g18-sc3-불꽃-없는-귀환",
       "depth": 3,
       "text": {
+        "en": "G18-SC3 · The Return Without Flame",
         "ko": "G18-SC3 · 불꽃 없는 귀환"
       }
     },
@@ -2610,6 +3306,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc3-불꽃-없는-귀환-p1",
       "text": {
+        "en": "Before the welding and sleeper cars crossed the sealed section's points, only the main-line breaker opened, keeping the siding gauging power alive.",
         "ko": "용접 차와 침목 차가 봉인 구간의 포인트를 넘기 전에 본선 차단기만 열고 측선 계측 전원을 유지한다."
       }
     },
@@ -2617,6 +3314,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc3-불꽃-없는-귀환-p2",
       "text": {
+        "en": "The HP04 clerk pulled the wrongly linked map from the onboard port, and F02 left only the waveform the manual tug could read.",
         "ko": "HP04 사서는 차상 포트에서 잘못 연결된 맵을 뽑고, F02는 수동 견인차가 읽을 파형만 남긴다."
       }
     },
@@ -2624,6 +3322,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc3-불꽃-없는-귀환-p3",
       "text": {
+        "en": "Blowing up the consist ended the wrong work at once but also destroyed the equipment that could have repaired the retired-line collapse and the main-line cracks overnight.",
         "ko": "편성을 폭파하면 오작업은 즉시 끝나지만 폐선 붕괴와 본선 균열을 밤새 복구할 장비도 없어진다."
       }
     },
@@ -2631,6 +3330,7 @@
       "kind": "paragraph",
       "anchor": "g18-sc3-불꽃-없는-귀환-p4",
       "text": {
+        "en": "Coexistence was the choice to accept slow supervision cross-checking original hashes at every kilometer-post and the cost of detouring emergency trains.",
         "ko": "공존은 킬로정마다 원본 해시를 대조하는 느린 감독과 우회하는 응급 열차의 비용을 받아들이는 선택이다."
       }
     }

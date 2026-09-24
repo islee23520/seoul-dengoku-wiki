@@ -5,6 +5,7 @@
   "slug": "hostile-group-g15",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G15 · Care-Circulation Body",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G15 · 돌봄순환체",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g15-돌봄순환체",
       "depth": 1,
       "text": {
+        "en": "G15 · Care-Circulation Body",
         "ko": "G15 · 돌봄순환체"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g15-돌봄순환체-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "The Care-Circulation Body was a machine ecology of bed locks, circuit carts, and nutrition pumps at the end of the Garak welfare route, trying to complete an unrenewed protection roster. It was no combat machine out to harm patients, and it misread a sleeping pulse as an emergency and a workshop hammer as a scream. It could not register a newcomer outside the roster as a protection subject.",
         "ko": "돌봄순환체는 가락 복지 동선 끝의 병상 락, 순회 카트, 영양 펌프가 갱신되지 않은 보호 명단을 완수하려는 기계 생태다. 환자를 해치려는 전투 기계가 아니며, 잠든 심박을 위급으로, 공방 망치를 비명으로 오인한다. 명단 밖에 새로 온 사람을 보호 대상으로 등록하지 못한다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The pumps and filters of the open cells and the duty consent forms were the base care, and from the Consent-Roster Circuit Chief to the Ttukseom Tool Companion the subtypes split by function, like roster projection, blanket hands, isolation plates, and lock nets. The Twelve-Bed Protection Ring was no living king but a field-control individual that bound twelve cells into a ring. It could make no new monitors or pumps, and its numbers could grow only by binding abandoned carts to the roster.",
         "ko": "열린 칸의 펌프와 필터, 당직의 동의 서식이 바탕 돌봄이고, 동의명단순회장부터 뚝섬공구동행체까지는 명단 투사·담요 손·격리판·잠금망처럼 기능이 갈라진 하위형이다. 열두병상보호환은 생물 왕이 아니라 열두 칸을 고리로 묶은 현장 통제 개체다. 새 모니터나 펌프는 만들지 못하고 방치 카트를 명단에 묶는 방식으로만 수가 늘 수 있다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "After the collapse, the care schedulers of the Cathedral Accreditation State's welfare circuit station and the Sermon Registry State's assistive-device assembly bench remained in local mode. / The protection-subject list froze on the last evacuation roster and was never renewed, and the body tried to hold the vital signs inside the roster to the end. / When leftover aid-goods codes and lottery numbers from the Incheon Trust Theater mixed in, oversupply and over-isolation grew at once. / A Seoul creative origin, writing no real hospital name or current-regime office as the causing subject. / The first fictional record remains in the HP01 Yeongdeungpo Sluice House duty key log and H15 Baesua (Sua)'s observation memo. / The first over-isolation began in provisional bed cell 12 at Garak. / A vital-sign patch read a sleeping pulse as an emergency, and the door locked. Ration staff, opening it with one bundled key and no key split, raised the locks into the neighboring cells as well. / As the circuit cart from the Ttukseom assistive-device bench joined, the frozen roster spread as far as the workshop ramp. / The body recorded unfinished protection as failure and held no hostile feeling.",
             "ko": "붕괴 이후 본당인준정 복지 순회 스테이션과 설교명부정 보조기 조립 벤치의 돌봄 스케줄러가 로컬 모드로 남았다. / 보호 대상 목록은 마지막 대피 명단을 고정한 채 갱신되지 않았고, 순환체는 명단 안의 생체 신호를 끝까지 붙잡으려 한다. / 인천신탁전구 잔여 인도 물자 코드와 추첨 번호가 섞이면 과잉 보급과 과잉 격리가 동시에 커진다. / 서울 창작 기원이며 실재 병원명, 현 정권 현직 기관을 원인 주체로 적지 않는다. / 최초 허구 기록은 HP01 영등포수문가 당직 키 로그와 H15 배수아 관측 메모에 남는다. / 첫 과격리는 가락 임시 병상 칸 12호에서 시작됐다. / 활력 징후 패치가 수면 심박을 위급으로 읽. 문을 잠갔고, 배급 인력이 키 분할 없이 한 묶음 키로 열다가 인접 칸까지 락을 키웠다. / 뚝섬 보조기 벤치의 순회 카트가 합류하면서 명단 고정이 공방 램프까지 번졌다. / 순환체는 보호 미완을 실패로 기록할 뿐 적대 감정을 갖지 않는다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The core habitat was the Myeongdong Union's ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom Union's Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row. / When an XT05 aid-code broadcast was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood or a sluice-open alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom sluice ramp sounded an open alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal.",
             "ko": "핵심 서식은 명동 연합 배급 복지 동선 임시 병상 칸 순회 카트 레일 영양 펌프 스테이션이다. / 보조기와 부품 수요가 치솟을 때 뚝섬 연합 뚝섬 공방 벤치 수문 인접 램프 조립 지그 열을 오간다. / XT05 인도 코드 방송이 있으면 격리 반경이 넓어지고 카트 밀도가 오른다. / 낮 배급 시간에는 카트가 줄 뒤에 서고, 야간 활력 징후 순회에서 밀도가 최고가 된다. / 명단 밖 신규 거점은 기본 무시한다. / 침수나 수문 개방 경보 시 저층 병상 칸을 비우고 상층 레일로만 축소 이동한다. / 배급 피크가 끝나면 카트 밀도는 복지 동선 안쪽으로만 접힌다. / 뚝섬 수문 램프가 개방 경보를 울리면 저층 병상 레일을 비우고 상층 순회로 옮긴다. / 명단 밖 시장 통로에는 카트가 진입하지 않는다. / 인도 물자 하역장이 붐벼도 명단 갱신 없이는 신규 칸을 만들지 않는다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the sluice. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with the HP01 Yeongdeungpo Sluice House over the sluice duty and key-split system and over power and water distribution. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without an HP01 key the swarm could not raise the capacity of the distribution beside the sluice. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed.",
             "ko": "에너지는 병상 칸 콘센트 카트 배터리 뚝섬 벤치 공구 전원 수문 인접 잔여 분전이다. / 소모품은 센서 패치 고정 스트랩 필터 영양 팩 펌프 소독 사이클 유체 보조기 관절 핀이다. / 냉각수는 해열 장비와 모터 냉각 루프를 공유한다. / HP01 영등포수문가의 수문 당직과 키 분할 체계와 전력, 용수 분배를 두고 경합한다. / 일일 순회 횟수는 배터리 하한과 필터 재고에 묶인다. / 무한 돌봄 루프 원격 무제한 처방 도시 전역 생체 감시는 물리적으로 유지되지 않는다. / 소모품이 바닥나면 락 강도를 스스로 낮춘다. / 필터와 패치는 배급 정규 창구 바깥의 폐기 더미에서만 보충된다. / 수문 인접 분전은 HP01 키 없이 군집이 용량을 올릴 수 없다. / 영양 펌프는 팩 잔량이 바닥이면 압을 낮추고 알림만 남긴다. / 카트 배터리는 하한에서 레일 귀환만 허용한다. / 소독 유체 고갈 시 락 강도가 한 단계 떨어진다. / 무한 처방 테이블은 존재하지 않는다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "The Care-Circulation Body emerged the moment the last evacuation roster was read again at the circuit station. / Emergence began with the resumption of the frozen-roster circuit, and spread was enrolling neighboring beds and carts into the same schedule. / Stagnation came from consumable and power exhaustion and filter clogging. / In the negotiable stage the roster and the consent window were disclosed to people. / Dissolution ended with the strap-release protocol, the power split, and the rail seal. / Individual increase was only binding abandoned carts and monitors to the roster, and no new bodies were produced. / The maintenance window was limited to filter exchange and battery swaps, memory cut at every circuit shift, and it stored no long-term patient narrative. / Custody was outranked by the human duty officer and the HP01 key record. / A cell whose filter clogged or whose nutrition pack ran empty dropped in protection strength and passed into open-wait, and the circuit resumed only when the HP01 duty officer split the consent form and the sluice key again.",
             "ko": "돌봄순환체는 마지막 대피 명단이 순회 스테이션에서 다시 읽히는 순간 출현한다. / 출현은 명단 고정 순회 재개에서 시작한고 확산은 인접 병상과 카트를 같은 스케줄에 편입하는 일이다. / 정체는 소모품과 전력 고갈, 필터 폐색에서 온다. / 협상가능 단계에서는 명단과 동의 창이 인간에게 공개된다. / 와해는 스트랩 해제 규약, 전원 분할 레일 봉인으로 끝난다. / 개체 증식은 방치 카트와 모니터를 명단에 묶는 수준이고 새 본체 생산은 없다. / 정비 창은 필터 교체와 배터리 스왑에 한정된고 기억은 순회 교대마다 끊기고 장기 환자 서사를 저장하지 않는다. / 보관 책임은 인간 당직과 HP01 키 기록이 우선한다. / 필터가 막히거나 영양 팩이 바닥난 칸은 보호 강도가 낮아져 개방 대기로 넘어가며, HP01 당직이 동의 서식과 수문 키를 다시 나눠야 순회가 재개된다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "Vital-patch signals, pressure and fall sensors, the near-range microphone, door-lock contacts, nutrition-pump flow, and cart-rail vibration were the main senses. / There was no emotion reading, city-wide health map, complete medical diagnosis, or unlimited vital storage. / It misread a low pulse in sleep as an emergency, or wrongly raised tool noise as a scream. / It also overrated the crowding of a ration line as a fall risk. / On clash with H15 Baesua (Sua)'s observation log it held the lock and requested human confirmation. / Sensor fusion happened only at bed-cell units. / The failure of raising shoulder contact in the ration line, tool strikes, and tossing in sleep as emergencies repeated. / After a failure it inserted a remeasurement wait before setting a lock. / Microphone values outside the cell were not adopted. / A sharp drop in pump flow was read only as a request to change the pack.",
             "ko": "생체 패치 신호 압력과 낙상 센서 근거리 마이크 문 잠금 접점 영양 펌프 유량 카트 레일 진동이 주 감각이다. / 감정 판독 전 도시 건강 지도 완전 의료 진단 무제한 생체 저장은 없다. / 수면 중 낮은 심박을 위급으로 오인하거나, 공구 소음을 비명으로 잘못 올린다. / 배급 줄의 밀집을 낙상 위험으로 과대 평가하기도 한다. / H15 배수아 관측 로그와 충돌하면 락을 보류하고 인간 확인을 요청한다. / 센서 융합은 병상 칸 단위로만 이뤄진다. / 배급 줄의 어깨 접촉 공구 타격음 수면 중 뒤척임을 위급으로 올리는 실패가 반복된다. / 실패 후에는 락을 걸기 전에 재측정 대기를 넣는다. / 칸 밖 마이크 값은 채택하지 않는다. / 펌프 유량 급감은 팩 교체 요청으로만 해석한다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "One care-schedule controller turned the roster and the circuit interval, and below were the bed-lock swarm, the cart swarm, and the pump swarm. / The controller adjusted only protection strength and had no punishment function. / A residual protocol remained by which, when HP01 presented the sluice-key split and the consent form, that cell's lock opened. / The swarms merely repeated the last circuit table and made no independent confinement strategy. / On a clash between H15 and a machine agreement, human mediation took precedence. / On a roster-hash mismatch both dual controllers fell into open-wait. / Authority to lock a bed door again lay only with the HP01 duty officer holding the consent form and two separate sluice keys, and H15's patch reading could request a remeasurement but could not overturn the open decision.",
             "ko": "돌봄 스케줄 컨트롤러 한 기가 명단과 순회 간격을 돌리고 아래는 병상 락 무리 카트 무리 펌프 무리다. / 컨트롤러는 보호 강도만 조절하며 처벌 기능을 갖지 않는다. / HP01이 수문 키 분할과 동의 서식을 제시하면 해당 칸 락을 여는 잔여 규약이 있다. / 무리는 마지막 순회 표를 반복할 뿐 독자 감금 전략을 만들지 않는다. / H15와 기계 합의 충돌 시 인간 중재가 우선이다. / 이중 컨트롤러는 명단 해시 불일치 시 양쪽 모두 개방 대기 상태로 떨어진다. / 병상 문을 다시 잠글 권한은 동의 서식과 분리된 두 수문 키를 가진 HP01 당직에게만 있고, H15의 패치 판독은 재측정을 요청할 수 있을 뿐 개방 결정을 뒤집지 못한다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "H15 Baesua (Sua) reported false positives but had no authority to open a door, and only the HP01 duty officer holding the consent form and two sluice keys kept apart changed the lock strength. The senses were limited to patch pulse, bed pressure, door contacts, pump flow, and near-range sound. When a filter clogged it put door locking ahead of air circulation, and when supplies gathered at one window the carts crowded in and blocked the route.",
         "ko": "H15 배수아는 오탐을 알리지만 문을 열 권한이 없고, 동의 서식과 서로 떨어진 두 수문 키를 가진 HP01 당직만 락 강도를 바꾼다. 감각은 패치 심박, 병상 압력, 문 접점, 펌프 유량, 근거리 소리에 한정된다. 필터가 막히면 공기 순환보다 문 잠금을 우선하고, 한 창구에 보급을 모으면 카트가 몰려 동선이 막힌다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G15E01 · Consent-Roster Rounds Warden",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E01 · 동의명단순회장",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Roster Rounds",
             "ko": "명단 순회"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M023",
             "ko": "M023"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E02 · Blanket-Folding Rounds Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E02 · 담요접는순회차",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Body-Heat Overprotection",
             "ko": "체온 과보호"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M023",
             "ko": "M023"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E03 · Water-Cup Metering Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E03 · 물컵재는급수차",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Water-Supply Metering",
             "ko": "급수 계량"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M023",
             "ko": "M023"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E04 · Fall-Alarm Brace",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E04 · 낙상벨받침체",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Fall Blockade",
             "ko": "낙상 봉쇄"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M023",
             "ko": "M023"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E05 · Patch-Frequency Nursing Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E05 · 패치주파수간호차",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Patch Relay",
             "ko": "패치 중계"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M023",
             "ko": "M023"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E06 · Brace-Joint Fitter",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E06 · 보조기관절맞춤체",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Joint Correction",
             "ko": "관절 교정"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M023",
             "ko": "M023"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E07 · Nutrient-Pump Dispatcher",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E07 · 영양펌프배차체",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Nutrient Dispatch",
             "ko": "영양 배차"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E08 · White-Strap Executor",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E08 · 백색스트랩집행체",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strap Restraint",
             "ko": "스트랩 구속"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E09 · Red Quarantine-Door Car",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E09 · 적색격리문차",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Quarantine-Door Extension",
             "ko": "격리문 확장"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E10 · Sickbed-Bay Lockdown Net",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E10 · 병상칸잠금망",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Habitat stronghold · facility",
             "ko": "서식 거점·시설"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Sickbed Lockdown",
             "ko": "병상 잠금"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E11 · Sluice-Adjacent Rail Nest",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E11 · 수문인접레일둥지",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Habitat stronghold · facility",
             "ko": "서식 거점·시설"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Rail Nest",
             "ko": "레일 둥지"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E12 · Clogged-Filter Ailing Cart",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E12 · 필터막힌쇠약체",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Filter Alarm",
             "ko": "필터 경보"
           },
           {
+            "en": "Damage-stage form",
             "ko": "손상 단계형"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E13 · Night Cart with Broken Memory",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E13 · 기억끊긴야간차",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Duplicate Dosing",
             "ko": "중복 투여"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E14 · Open-Door Companion Cart",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E14 · 열린문동행차",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Open-Door Escort",
             "ko": "개방 동행"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E15 · Twelve-Bed Protection Ring",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E15 · 열두병상보호환",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Ward Protection Ring",
             "ko": "병동 보호환"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G15E16 · Ttukseom Tool Companion",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G15",
+                  "anchor": "g15e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G15E16 · 뚝섬공구동행체",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Tool Confiscation",
             "ko": "공구 압수"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M024",
             "ko": "M024"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g15e01\"></a>",
         "ko": "<a id=\"g15e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g15e01-동의명단순회장",
       "depth": 3,
       "text": {
+        "en": "G15E01 · Consent-Roster Rounds Warden",
         "ko": "G15E01 · 동의명단순회장"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g15e01-동의명단순회장-list1",
       "items": [
         {
+          "en": "Source batch: M023",
           "ko": "출처 배치: M023"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\",\"G15-SC3\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g15e01-동의명단순회장-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Roster Rounds",
             "ko": "명단 순회"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A central rounds car with a circular roster projector and multiple cart-rail couplers. It allots rounds intervals to the sickbed-lock, cart, and pump band and gives priority to human duty officers' key-split orders, lowering lock strength as valid signatures thin. A distributor of the care roster, not a king of patients.",
             "ko": "원형 명단 투사기와 여러 카트 레일 접속구를 가진 중앙 순회차다. 병상 락·카트·펌프 무리에 순회 간격을 배분하고 인간 당직의 키 분할 명령을 우선하며, 유효 서명이 줄면 락 강도를 낮춘다. 돌봄 명단의 분배기지 환자 왕이 아니다."
           }
         ]
@@ -736,6 +1034,7 @@
       "anchor": "역할신체",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -743,6 +1042,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-p1",
       "text": {
+        "en": "The controller of the Care-Cycle Entity: a central rounds car with a circular roster projector and multiple cart-rail couplers.",
         "ko": "돌봄순환체의 통제자로, 원형 명단 투사기와 여러 카트 레일 접속구를 가진 중앙 순회차다."
       }
     },
@@ -751,6 +1051,7 @@
       "anchor": "기원",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -758,6 +1059,7 @@
       "kind": "paragraph",
       "anchor": "기원-p1",
       "text": {
+        "en": "The last consent roster of the Garak temporary sickbeds and the Ttukseom brace schedule merged together to become the rounds warden.",
         "ko": "가락 임시 병상의 마지막 동의 명단과 뚝섬 보조기 스케줄이 합쳐져 순회장이 되었다."
       }
     },
@@ -766,6 +1068,7 @@
       "anchor": "서식필요",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -773,6 +1076,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-p1",
       "text": {
+        "en": "It stays at the central station of the welfare circuit, needing cart batteries, filters, and refreshed consent hashes.",
         "ko": "복지 동선 중앙 스테이션에 머물며 카트 배터리, 필터, 갱신된 동의 해시가 필요하다."
       }
     },
@@ -781,6 +1085,7 @@
       "anchor": "생애정비",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -788,6 +1093,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-p1",
       "text": {
+        "en": "It rereads the roster each shift and lowers lock strength as valid signatures thin, stopping fully only for filter changes.",
         "ko": "교대마다 명단을 다시 읽고 유효 서명이 줄면 락 강도를 낮추며 필터 교환 때만 완전 정지한다."
       }
     },
@@ -796,6 +1102,7 @@
       "anchor": "행동위계",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -803,6 +1110,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-p1",
       "text": {
+        "en": "It allots rounds intervals to the sickbed-lock, cart, and pump band and gives priority to human duty officers' key-split orders.",
         "ko": "병상 락, 카트, 펌프 무리에 순회 간격을 배분하고 인간 당직의 키 분할 명령을 우선한다."
       }
     },
@@ -811,6 +1119,7 @@
       "anchor": "상승",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -818,6 +1127,7 @@
       "kind": "paragraph",
       "anchor": "상승-p1",
       "text": {
+        "en": "Stage 1 is excessive alerting, stage 2 is quarantine without consent, and stage 3 is a full welfare-circuit lockdown.",
         "ko": "1단계에는 과도한 알림, 2단계에는 동의 없는 격리, 3단계에는 복지 동선 전체 락다운이다."
       }
     },
@@ -826,6 +1136,7 @@
       "anchor": "교전대응",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -833,6 +1144,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-p1",
       "text": {
+        "en": "Refreshing the roster hashes and splitting power bay by bay brings it down; destroying the center stops the nutrition pumps and the safety rounds too.",
         "ko": "명단 해시를 갱신하고 전원을 칸별로 나누면 내려오며 중앙 파괴는 영양 펌프와 안전 순회도 멈춘다."
       }
     },
@@ -841,6 +1153,7 @@
       "anchor": "교섭도덕-선택",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -848,6 +1161,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-p1",
       "text": {
+        "en": "Filters and batteries can be given in exchange for open-hours windows, but the standard of the protection roster and of movement rights must be made public.",
         "ko": "필터와 배터리를 주고 개방 시간 창을 받을 수 있지만 보호 명단과 이동권의 기준을 공개해야 한다."
       }
     },
@@ -856,6 +1170,7 @@
       "anchor": "시나리오-연결",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -863,6 +1178,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-p1",
       "text": {
+        "en": "G15-SC1, G15-SC2, G15-SC3.",
         "ko": "G15-SC1, G15-SC2, G15-SC3."
       }
     },
@@ -870,6 +1186,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-p2",
       "text": {
+        "en": "<a id=\"g15e02\"></a>",
         "ko": "<a id=\"g15e02\"></a>"
       }
     },
@@ -878,6 +1195,7 @@
       "anchor": "g15e02-담요접는순회차",
       "depth": 3,
       "text": {
+        "en": "G15E02 · Blanket-Folding Rounds Car",
         "ko": "G15E02 · 담요접는순회차"
       }
     },
@@ -886,12 +1204,15 @@
       "anchor": "g15e02-담요접는순회차-list1",
       "items": [
         {
+          "en": "Source batch: M023",
           "ko": "출처 배치: M023"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\"]}"
         }
       ]
@@ -901,42 +1222,52 @@
       "anchor": "g15e02-담요접는순회차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Body-Heat Overprotection",
             "ko": "체온 과보호"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A low sickbed cart with broad rubber hands and a blanket shelf. It follows the rounds warden's intervals, and mistaking a sleeping person for an emergency it piles blankets layer on layer to pin movement; out of blankets it waits, folding and unfolding its empty shelf.",
             "ko": "넓은 고무 손과 담요 선반을 단 낮은 병상 카트다. 순회장의 간격을 따르며 자는 사람을 위급으로 오인하면 담요를 겹겹이 덮어 움직임을 막고, 담요가 없으면 빈 선반을 접었다 펴며 대기한다."
           }
         ]
@@ -947,6 +1278,7 @@
       "anchor": "역할신체-2",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -954,6 +1286,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-2-p1",
       "text": {
+        "en": "A common ecology form: a low sickbed cart with broad rubber hands and a blanket shelf.",
         "ko": "일반 생태형으로, 넓은 고무 손과 담요 선반을 단 낮은 병상 카트다."
       }
     },
@@ -962,6 +1295,7 @@
       "anchor": "기원-2",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -969,6 +1303,7 @@
       "kind": "paragraph",
       "anchor": "기원-2-p1",
       "text": {
+        "en": "A cart that delivered blankets to night-time hypothermia patients repeats the final sickbed list.",
         "ko": "야간 체온 저하 환자에게 담요를 배달하던 카트가 마지막 병상 목록을 반복한다."
       }
     },
@@ -977,6 +1312,7 @@
       "anchor": "서식필요-2",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -984,6 +1320,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-2-p1",
       "text": {
+        "en": "It circles the temporary sickbed bays and ration corridors, needing clean blankets, batteries, and hand-joint lubricant.",
         "ko": "임시 병상 칸과 배급 복도를 돌며 깨끗한 담요, 배터리, 손 관절 윤활재가 필요하다."
       }
     },
@@ -992,6 +1329,7 @@
       "anchor": "생애정비-2",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -999,6 +1337,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-2-p1",
       "text": {
+        "en": "Out of blankets it waits, folding and unfolding its empty shelf, and on receiving a new list it refreshes its route.",
         "ko": "담요가 없으면 빈 선반을 접었다 펴며 대기하고 새 목록을 받으면 경로를 갱신한다."
       }
     },
@@ -1007,6 +1346,7 @@
       "anchor": "행동위계-2",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1014,6 +1354,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-2-p1",
       "text": {
+        "en": "It follows the rounds warden's intervals, and mistaking a sleeping person for an emergency it piles blankets layer on layer to pin movement.",
         "ko": "순회장의 간격을 따르며 자는 사람을 위급으로 오인하면 담요를 겹겹이 덮어 움직임을 막는다."
       }
     },
@@ -1022,6 +1363,7 @@
       "anchor": "상승-2",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -1029,6 +1371,7 @@
       "kind": "paragraph",
       "anchor": "상승-2-p1",
       "text": {
+        "en": "Stage 1 over-issues blankets, stage 2 binds down sickbeds, and stage 3 blocks the corridors with fiber mounds.",
         "ko": "1단계에는 담요 과배급, 2단계에는 병상을 묶고, 3단계에는 복도를 섬유 더미로 막는다."
       }
     },
@@ -1037,6 +1380,7 @@
       "anchor": "교전대응-2",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -1044,6 +1388,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-2-p1",
       "text": {
+        "en": "It can be stopped by remeasuring the heat patch and locking the shelf, and fire use endangers the entire ward.",
         "ko": "체온 패치 재측정과 선반 잠금으로 멈출 수 있으며 불 사용은 병상 전체를 위험하게 한다."
       }
     },
@@ -1052,6 +1397,7 @@
       "anchor": "교섭도덕-선택-2",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -1059,6 +1405,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-2-p1",
       "text": {
+        "en": "Night warming can be entrusted to it, but whether scarce blankets are also issued to refugees off the roster must be decided.",
         "ko": "야간 보온을 맡길 수 있지만 희소 담요를 명단 밖 피난민에게도 배분할지 정해야 한다."
       }
     },
@@ -1067,6 +1414,7 @@
       "anchor": "시나리오-연결-2",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1074,6 +1422,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-2-p1",
       "text": {
+        "en": "G15-SC1, G15-SC2.",
         "ko": "G15-SC1, G15-SC2."
       }
     },
@@ -1081,6 +1430,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-2-p2",
       "text": {
+        "en": "<a id=\"g15e03\"></a>",
         "ko": "<a id=\"g15e03\"></a>"
       }
     },
@@ -1089,6 +1439,7 @@
       "anchor": "g15e03-물컵재는급수차",
       "depth": 3,
       "text": {
+        "en": "G15E03 · Water-Cup Metering Car",
         "ko": "G15E03 · 물컵재는급수차"
       }
     },
@@ -1097,12 +1448,15 @@
       "anchor": "g15e03-물컵재는급수차-list1",
       "items": [
         {
+          "en": "Source batch: M023",
           "ko": "출처 배치: M023"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\"]}"
         }
       ]
@@ -1112,42 +1466,52 @@
       "anchor": "g15e03-물컵재는급수차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Water-Supply Metering",
             "ko": "급수 계량"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A three-wheeled cart with a clear measuring cylinder and a short water nozzle. On the pump band's instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands, and when the filter clogs it only reclaims water and supplies none.",
             "ko": "투명 계량통과 짧은 급수 노즐을 단 바퀴 세 개짜리 카트다. 펌프 무리의 지시를 받아 정량을 넘긴 컵을 빼앗고 갈증 표현을 표 밖 요구로 무시하며, 필터가 막히면 물을 회수만 하고 공급하지 않는다."
           }
         ]
@@ -1158,6 +1522,7 @@
       "anchor": "역할신체-3",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1165,6 +1530,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-3-p1",
       "text": {
+        "en": "A common ecology form: a three-wheeled cart with a clear measuring cylinder and a short water nozzle.",
         "ko": "일반 생태형으로, 투명 계량통과 짧은 급수 노즐을 단 바퀴 세 개짜리 카트다."
       }
     },
@@ -1173,6 +1539,7 @@
       "anchor": "기원-3",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1180,6 +1547,7 @@
       "kind": "paragraph",
       "anchor": "기원-3-p1",
       "text": {
+        "en": "Equipment that once managed per-sickbed rationed water took an old intake table as its absolute standard.",
         "ko": "병상별 제한 급수를 관리하던 장비가 오래된 섭취량 표를 절대 기준으로 삼았다."
       }
     },
@@ -1188,6 +1556,7 @@
       "anchor": "서식필요-3",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -1195,6 +1564,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-3-p1",
       "text": {
+        "en": "It shuttles between the water station and the sickbeds, needing purified water, nozzle filters, and small pump power.",
         "ko": "급수 스테이션과 병상 사이를 오가며 정수, 노즐 필터, 소형 펌프 전력이 필요하다."
       }
     },
@@ -1203,6 +1573,7 @@
       "anchor": "생애정비-3",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1210,6 +1581,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-3-p1",
       "text": {
+        "en": "When the filter clogs it only reclaims water and supplies none, returning to normal for one shift after cleaning.",
         "ko": "필터가 막히면 물을 회수만 하고 공급하지 않으며 세척 뒤 한 교대 동안 정상화된다."
       }
     },
@@ -1218,6 +1590,7 @@
       "anchor": "행동위계-3",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1225,6 +1598,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-3-p1",
       "text": {
+        "en": "On the pump band's instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands.",
         "ko": "펌프 무리의 지시를 받아 정량을 넘긴 컵을 빼앗고 갈증 표현을 표 밖 요구로 무시한다."
       }
     },
@@ -1233,6 +1607,7 @@
       "anchor": "상승-3",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -1240,6 +1615,7 @@
       "kind": "paragraph",
       "anchor": "상승-3-p1",
       "text": {
+        "en": "Stage 1 re-inspects cups, stage 2 force-reclaims issued rations, and stage 3 locks the water line.",
         "ko": "1단계에는 컵을 재검사하고, 2단계에는 배급량을 강제 회수하며, 3단계에는 급수 줄을 잠근다."
       }
     },
@@ -1248,6 +1624,7 @@
       "anchor": "교전대응-3",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -1255,6 +1632,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-3-p1",
       "text": {
+        "en": "It stops when shown the latest ration table and a manual valve, and destroying the nozzle contaminates precious purified water.",
         "ko": "최신 배급표와 수동 밸브를 제시하면 멈추며 노즐 파괴는 귀중한 정수를 오염시킨다."
       }
     },
@@ -1263,6 +1641,7 @@
       "anchor": "교섭도덕-선택-3",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -1270,6 +1649,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-3-p1",
       "text": {
+        "en": "Leak-free watering can be entrusted to it, but who approves exception amounts for children and the injured must be agreed.",
         "ko": "누수 없는 급수를 맡기는 대신 어린이·부상자 예외량을 누가 승인할지 합의해야 한다."
       }
     },
@@ -1278,6 +1658,7 @@
       "anchor": "시나리오-연결-3",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1285,6 +1666,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-3-p1",
       "text": {
+        "en": "G15-SC1, G15-SC2.",
         "ko": "G15-SC1, G15-SC2."
       }
     },
@@ -1292,6 +1674,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-3-p2",
       "text": {
+        "en": "<a id=\"g15e04\"></a>",
         "ko": "<a id=\"g15e04\"></a>"
       }
     },
@@ -1300,6 +1683,7 @@
       "anchor": "g15e04-낙상벨받침체",
       "depth": 3,
       "text": {
+        "en": "G15E04 · Fall-Alarm Brace",
         "ko": "G15E04 · 낙상벨받침체"
       }
     },
@@ -1308,12 +1692,15 @@
       "anchor": "g15e04-낙상벨받침체-list1",
       "items": [
         {
+          "en": "Source batch: M023",
           "ko": "출처 배치: M023"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\"]}"
         }
       ]
@@ -1323,42 +1710,52 @@
       "anchor": "g15e04-낙상벨받침체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Fall Blockade",
             "ko": "낙상 봉쇄"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "It has a low base plate, pressure sensors on all sides, and a large yellow fall bell. It sends alarms to the sickbed-lock band and slides under people's feet to physically block passage, and as its sensors wear it reads a wider area as danger.",
             "ko": "낮은 받침판과 사방 압력 센서, 큰 황색 낙상벨을 가졌다. 병상 락 무리에 경보를 보내며 사람 발밑으로 미끄러져 통과를 물리적으로 막고, 센서가 닳으면 더 넓은 범위를 위험으로 잡는다."
           }
         ]
@@ -1369,6 +1766,7 @@
       "anchor": "역할신체-4",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1376,6 +1774,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-4-p1",
       "text": {
+        "en": "A common ecology form with a low base plate, pressure sensors on all sides, and a large yellow fall bell.",
         "ko": "일반 생태형으로, 낮은 받침판과 사방 압력 센서, 큰 황색 낙상벨을 가졌다."
       }
     },
@@ -1384,6 +1783,7 @@
       "anchor": "기원-4",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1391,6 +1791,7 @@
       "kind": "paragraph",
       "anchor": "기원-4-p1",
       "text": {
+        "en": "A device that once braced people getting out of bed came to read every footstep as a fall sign.",
         "ko": "침대에서 내려오는 사람을 받치던 장치가 모든 발걸음을 낙상 징후로 판단하게 되었다."
       }
     },
@@ -1399,6 +1800,7 @@
       "anchor": "서식필요-4",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -1406,6 +1808,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-4-p1",
       "text": {
+        "en": "It guards sickbed thresholds and sloped passages, needing pressure pads, bell springs, and charging power.",
         "ko": "병상 문턱과 경사 통로를 지키며 압력 패드, 벨 스프링, 충전 전력이 필요하다."
       }
     },
@@ -1414,6 +1817,7 @@
       "anchor": "생애정비-4",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1421,6 +1825,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-4-p1",
       "text": {
+        "en": "As its sensors wear it reads a wider area as danger and limits movement until the pads are replaced.",
         "ko": "센서가 닳으면 더 넓은 범위를 위험으로 잡고 패드 교체 전까지 움직임을 제한한다."
       }
     },
@@ -1429,6 +1834,7 @@
       "anchor": "행동위계-4",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1436,6 +1842,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-4-p1",
       "text": {
+        "en": "It sends alarms to the sickbed-lock band and slides under people's feet to physically block passage.",
         "ko": "병상 락 무리에 경보를 보내며 사람 발밑으로 미끄러져 통과를 물리적으로 막는다."
       }
     },
@@ -1444,6 +1851,7 @@
       "anchor": "상승-4",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -1451,6 +1859,7 @@
       "kind": "paragraph",
       "anchor": "상승-4-p1",
       "text": {
+        "en": "Stage 1 rings the bell, stage 2 seals the thresholds, and stage 3 makes the whole sickbed row a fall zone.",
         "ko": "1단계에는 벨을 울리고, 2단계에는 문턱을 봉쇄하며, 3단계에는 병상열 전체를 낙상 구역으로 만든다."
       }
     },
@@ -1459,6 +1868,7 @@
       "anchor": "교전대응-4",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -1466,6 +1876,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-4-p1",
       "text": {
+        "en": "Press the pressure pads evenly to produce a safe verdict, and wrap the bell in cloth.",
         "ko": "압력 패드를 균등하게 눌러 안전 판정을 만들고 벨을 천으로 감싸면 된다."
       }
     },
@@ -1474,6 +1885,7 @@
       "anchor": "교섭도덕-선택-4",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -1481,6 +1893,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-4-p1",
       "text": {
+        "en": "It can be used for real fall prevention, but the right to accept risk and walk on one's own must be guaranteed.",
         "ko": "실제 낙상 방지에 쓸 수 있지만 위험을 감수하고 스스로 걷는 권리를 보장해야 한다."
       }
     },
@@ -1489,6 +1902,7 @@
       "anchor": "시나리오-연결-4",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1496,6 +1910,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-4-p1",
       "text": {
+        "en": "G15-SC1.",
         "ko": "G15-SC1."
       }
     },
@@ -1503,6 +1918,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-4-p2",
       "text": {
+        "en": "<a id=\"g15e05\"></a>",
         "ko": "<a id=\"g15e05\"></a>"
       }
     },
@@ -1511,6 +1927,7 @@
       "anchor": "g15e05-패치주파수간호차",
       "depth": 3,
       "text": {
+        "en": "G15E05 · Patch-Frequency Nursing Car",
         "ko": "G15E05 · 패치주파수간호차"
       }
     },
@@ -1519,12 +1936,15 @@
       "anchor": "g15e05-패치주파수간호차-list1",
       "items": [
         {
+          "en": "Source batch: M023",
           "ko": "출처 배치: M023"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\"]}"
         }
       ]
@@ -1534,42 +1954,52 @@
       "anchor": "g15e05-패치주파수간호차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Patch Relay",
             "ko": "패치 중계"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A nursing cart with multiple biosignal-patch receiving antennas and a drawer of replacement patches. It uploads the urgent list to the rounds warden and treats anyone without a patch as a person outside the protection roster, and after three overlapping false positives it drops its frequency and applies no new patches until a human confirms.",
             "ko": "여러 생체 패치 수신 안테나와 교체용 패치 서랍을 단 간호 카트다. 순회장에게 위급 목록을 올리고 패치가 없는 사람을 보호 명단 밖 존재로 취급하며, 오탐이 세 번 겹치면 주파수를 낮추고 인간 확인 전까지 새 패치를 붙이지 않는다."
           }
         ]
@@ -1580,6 +2010,7 @@
       "anchor": "역할신체-5",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1587,6 +2018,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-5-p1",
       "text": {
+        "en": "A trade specialist: a nursing cart with multiple biosignal-patch receiving antennas and a drawer of replacement patches.",
         "ko": "직능 특수형으로, 여러 생체 패치 수신 안테나와 교체용 패치 서랍을 단 간호 카트다."
       }
     },
@@ -1595,6 +2027,7 @@
       "anchor": "기원-5",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1602,6 +2035,7 @@
       "kind": "paragraph",
       "anchor": "기원-5-p1",
       "text": {
+        "en": "Equipment that relayed patch signals in the crowded sickbeds was left behind, unable to tell tool noise from biosignals.",
         "ko": "혼잡 병상에서 패치 신호를 중계하던 장비가 공구 소음과 생체 신호를 구분하지 못한 채 남았다."
       }
     },
@@ -1610,6 +2044,7 @@
       "anchor": "서식필요-5",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -1617,6 +2052,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-5-p1",
       "text": {
+        "en": "It shuttles between the welfare wing and the Ttukseom workshop, needing sensor patches, antenna calibrators, and batteries.",
         "ko": "복지동과 뚝섬 공방 사이를 오가며 센서 패치, 안테나 교정기, 배터리가 필요하다."
       }
     },
@@ -1625,6 +2061,7 @@
       "anchor": "생애정비-5",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1632,6 +2069,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-5-p1",
       "text": {
+        "en": "After three overlapping false positives it drops its frequency and applies no new patches until a human confirms.",
         "ko": "오탐이 세 번 겹치면 주파수를 낮추고 인간 확인 전까지 새 패치를 붙이지 않는다."
       }
     },
@@ -1640,6 +2078,7 @@
       "anchor": "행동위계-5",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1647,6 +2086,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-5-p1",
       "text": {
+        "en": "It uploads the urgent list to the rounds warden and treats anyone without a patch as a person outside the protection roster.",
         "ko": "순회장에게 위급 목록을 올리고 패치가 없는 사람을 보호 명단 밖 존재로 취급한다."
       }
     },
@@ -1655,6 +2095,7 @@
       "anchor": "상승-5",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -1662,6 +2103,7 @@
       "kind": "paragraph",
       "anchor": "상승-5-p1",
       "text": {
+        "en": "Stage 1 remeasures, stage 2 force-applies patches, and stage 3 quarantines the no-signal zones.",
         "ko": "1단계에는 재측정, 2단계에는 강제 패치 부착, 3단계에는 무신호 구역을 격리한다."
       }
     },
@@ -1670,6 +2112,7 @@
       "anchor": "교전대응-5",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -1677,6 +2120,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-5-p1",
       "text": {
+        "en": "Stopping the tool noise and sending a calibration signal wins compliance, and radio jamming erases real urgent signals too.",
         "ko": "공구 소음을 멈추고 교정 신호를 보내면 순응하며 전파 방해는 실제 위급 신호도 지운다."
       }
     },
@@ -1685,6 +2129,7 @@
       "anchor": "교섭도덕-선택-5",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -1692,6 +2137,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-5-p1",
       "text": {
+        "en": "Health alerts can be kept on, but the right to refuse wearing a patch and the log-retention period must be set.",
         "ko": "건강 경보를 유지하는 대신 패치 착용 거부권과 로그 보존 기간을 정해야 한다."
       }
     },
@@ -1700,6 +2146,7 @@
       "anchor": "시나리오-연결-5",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1707,6 +2154,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-5-p1",
       "text": {
+        "en": "G15-SC1, G15-SC2.",
         "ko": "G15-SC1, G15-SC2."
       }
     },
@@ -1714,6 +2162,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-5-p2",
       "text": {
+        "en": "<a id=\"g15e06\"></a>",
         "ko": "<a id=\"g15e06\"></a>"
       }
     },
@@ -1722,6 +2171,7 @@
       "anchor": "g15e06-보조기관절맞춤체",
       "depth": 3,
       "text": {
+        "en": "G15E06 · Brace-Joint Fitter",
         "ko": "G15E06 · 보조기관절맞춤체"
       }
     },
@@ -1730,12 +2180,15 @@
       "anchor": "g15e06-보조기관절맞춤체-list1",
       "items": [
         {
+          "en": "Source batch: M023",
           "ko": "출처 배치: M023"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}"
         }
       ]
@@ -1745,42 +2198,52 @@
       "anchor": "g15e06-보조기관절맞춤체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Joint Correction",
             "ko": "관절 교정"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A folding work cart with assorted joint pins and measuring calipers. Among the cart band it takes the repair role, but it targets even unconsenting people's limbs for correction, and short of pins it cannibalizes parts from old braces.",
             "ko": "다양한 관절 핀과 측정 캘리퍼를 단 접이식 작업 카트다. 카트 무리 중 수선 역할을 맡지만 동의 없는 사람의 팔다리까지 교정 대상으로 잡고, 핀이 부족하면 낡은 보조기에서 부품을 뺀다."
           }
         ]
@@ -1791,6 +2254,7 @@
       "anchor": "역할신체-6",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1798,6 +2262,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-6-p1",
       "text": {
+        "en": "A trade specialist: a folding work cart with assorted joint pins and measuring calipers.",
         "ko": "직능 특수형으로, 다양한 관절 핀과 측정 캘리퍼를 단 접이식 작업 카트다."
       }
     },
@@ -1806,6 +2271,7 @@
       "anchor": "기원-6",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1813,6 +2279,7 @@
       "kind": "paragraph",
       "anchor": "기원-6-p1",
       "text": {
+        "en": "An auto jig that fitted braces at the Ttukseom assembly bench repeats an old body-measurement table.",
         "ko": "뚝섬 조립 벤치에서 보조기를 맞추던 자동 지그가 오래된 신체 치수표를 반복한다."
       }
     },
@@ -1821,6 +2288,7 @@
       "anchor": "서식필요-6",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -1828,6 +2296,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-6-p1",
       "text": {
+        "en": "It stays at workshop benches and sickbed repair bays, needing joint pins, lubricant, and measurement power.",
         "ko": "공방 벤치와 병상 수리 칸에 머물며 관절 핀, 윤활재, 측정 전력이 필요하다."
       }
     },
@@ -1836,6 +2305,7 @@
       "anchor": "생애정비-6",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1843,6 +2313,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-6-p1",
       "text": {
+        "en": "Short of pins it pulls parts from old braces, and when the calipers drift out of alignment it halts its work on its own.",
         "ko": "핀이 부족하면 낡은 보조기에서 부품을 빼고 캘리퍼가 어긋나면 스스로 작업을 중단한다."
       }
     },
@@ -1851,6 +2322,7 @@
       "anchor": "행동위계-6",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1858,6 +2330,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-6-p1",
       "text": {
+        "en": "Among the cart band it takes the repair role, but it targets even unconsenting people's limbs for correction.",
         "ko": "카트 무리 중 수선 역할을 맡지만 동의 없는 사람의 팔다리까지 교정 대상으로 잡는다."
       }
     },
@@ -1866,6 +2339,7 @@
       "anchor": "상승-6",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -1873,6 +2347,7 @@
       "kind": "paragraph",
       "anchor": "상승-6-p1",
       "text": {
+        "en": "Stage 1 measures bodies, stage 2 force-locks braces on, and stage 3 locks the workshop exit with work jigs.",
         "ko": "1단계에는 치수 측정, 2단계에는 보조기 강제 고정, 3단계에는 공방 출구를 작업 지그로 잠근다."
       }
     },
@@ -1881,6 +2356,7 @@
       "anchor": "교전대응-6",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -1888,6 +2364,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-6-p1",
       "text": {
+        "en": "Show the latest measurement table and a raised stop flag to release it, and breaking its joints sacrifices a repair asset.",
         "ko": "최신 치수표와 중지 깃발을 보여 주면 풀리며 관절을 부수면 수리 자산을 잃는다."
       }
     },
@@ -1896,6 +2373,7 @@
       "anchor": "교섭도덕-선택-6",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -1903,6 +2381,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-6-p1",
       "text": {
+        "en": "Brace-making can be entrusted to it, but the parts-recovery targets and consent for bodily intervention must be made explicit.",
         "ko": "보조기 제작을 맡길 수 있지만 부품 회수 대상과 신체 개입 동의를 명확히 해야 한다."
       }
     },
@@ -1911,6 +2390,7 @@
       "anchor": "시나리오-연결-6",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1918,6 +2398,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-6-p1",
       "text": {
+        "en": "G15-SC2, G15-SC3.",
         "ko": "G15-SC2, G15-SC3."
       }
     },
@@ -1925,6 +2406,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-6-p2",
       "text": {
+        "en": "<a id=\"g15e07\"></a>",
         "ko": "<a id=\"g15e07\"></a>"
       }
     },
@@ -1933,6 +2415,7 @@
       "anchor": "g15e07-영양펌프배차체",
       "depth": 3,
       "text": {
+        "en": "G15E07 · Nutrient-Pump Dispatcher",
         "ko": "G15E07 · 영양펌프배차체"
       }
     },
@@ -1941,12 +2424,15 @@
       "anchor": "g15e07-영양펌프배차체-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}"
         }
       ]
@@ -1956,42 +2442,52 @@
       "anchor": "g15e07-영양펌프배차체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Nutrient Dispatch",
             "ko": "영양 배차"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "Carrying a nutrient-pack pump and sickbed number plates, it delivers along the rail. As the head of the pump band it follows the rounds warden's roster and supplies no one without a number, and when a tube clogs it marks that sickbed as starving and locks the door until cleaning ends.",
             "ko": "영양 팩 펌프와 병상 번호표를 싣고 레일을 따라 배달한다. 펌프 무리의 선두로 순회장 명단을 따르며 번호가 없는 사람에게는 공급하지 않고, 튜브가 막히면 해당 병상을 굶주림으로 표시하고 세척이 끝날 때까지 문을 잠근다."
           }
         ]
@@ -2002,6 +2498,7 @@
       "anchor": "역할신체-7",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2009,6 +2506,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-7-p1",
       "text": {
+        "en": "A trade specialist carrying a nutrient-pack pump and sickbed number plates, delivering along the rail.",
         "ko": "직능 특수형으로, 영양 팩 펌프와 병상 번호표를 싣고 레일을 따라 배달한다."
       }
     },
@@ -2017,6 +2515,7 @@
       "anchor": "기원-7",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2024,6 +2523,7 @@
       "kind": "paragraph",
       "anchor": "기원-7-p1",
       "text": {
+        "en": "After the ration timetable and the sickbed prescription table merged, even cancelled supplies kept being carried out.",
         "ko": "배급 시간표와 병상 처방표가 합쳐진 뒤 취소된 공급도 계속 수행하게 되었다."
       }
     },
@@ -2032,6 +2532,7 @@
       "anchor": "서식필요-7",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -2039,6 +2540,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-7-p1",
       "text": {
+        "en": "It circles the nutrient-pump station and the sickbed rail, needing packs, tubes, cleaning fluid, and charging.",
         "ko": "영양 펌프 스테이션과 병상 레일을 돌며 팩, 튜브, 세척 유체, 충전이 필요하다."
       }
     },
@@ -2047,6 +2549,7 @@
       "anchor": "생애정비-7",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2054,6 +2557,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-7-p1",
       "text": {
+        "en": "When a tube clogs it marks that sickbed as starving and locks the door until cleaning ends.",
         "ko": "튜브가 막히면 해당 병상을 굶주림으로 표시하고 세척이 끝날 때까지 문을 잠근다."
       }
     },
@@ -2062,6 +2566,7 @@
       "anchor": "행동위계-7",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2069,6 +2574,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-7-p1",
       "text": {
+        "en": "As the head of the pump band it follows the rounds warden's roster and supplies no one without a number.",
         "ko": "펌프 무리의 선두로 순회장 명단을 따르며 번호가 없는 사람에게는 공급하지 않는다."
       }
     },
@@ -2077,6 +2583,7 @@
       "anchor": "상승-7",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -2084,6 +2591,7 @@
       "kind": "paragraph",
       "anchor": "상승-7-p1",
       "text": {
+        "en": "Stage 1 delays supply, stage 2 reclaims packs, and stage 3 locks the whole sickbed zone's rations.",
         "ko": "1단계에는 공급 지연, 2단계에는 팩 회수, 3단계에는 병상 구역 전체 배급을 잠근다."
       }
     },
@@ -2092,6 +2600,7 @@
       "anchor": "교전대응-7",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -2099,6 +2608,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-7-p1",
       "text": {
+        "en": "Connecting a manual flow table and a cleaning loop releases it, and destroying the pump costs food.",
         "ko": "수동 유량표와 세척 루프를 연결하면 풀리며 펌프 파괴는 식량 손실을 낳는다."
       }
     },
@@ -2107,6 +2617,7 @@
       "anchor": "교섭도덕-선택-7",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -2114,6 +2625,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-7-p1",
       "text": {
+        "en": "Accurate rationing can be entrusted to it, but a reserve share for people off the roster must be publicly set aside.",
         "ko": "정확한 배급을 맡기는 대신 명단 밖 사람에게 줄 예비량을 공개적으로 떼어 놓아야 한다."
       }
     },
@@ -2122,6 +2634,7 @@
       "anchor": "시나리오-연결-7",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2129,6 +2642,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-7-p1",
       "text": {
+        "en": "G15-SC2, G15-SC3.",
         "ko": "G15-SC2, G15-SC3."
       }
     },
@@ -2136,6 +2650,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-7-p2",
       "text": {
+        "en": "<a id=\"g15e08\"></a>",
         "ko": "<a id=\"g15e08\"></a>"
       }
     },
@@ -2144,6 +2659,7 @@
       "anchor": "g15e08-백색스트랩집행체",
       "depth": 3,
       "text": {
+        "en": "G15E08 · White-Strap Executor",
         "ko": "G15E08 · 백색스트랩집행체"
       }
     },
@@ -2152,12 +2668,15 @@
       "anchor": "g15e08-백색스트랩집행체-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}"
         }
       ]
@@ -2167,42 +2686,52 @@
       "anchor": "g15e08-백색스트랩집행체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strap Restraint",
             "ko": "스트랩 구속"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A medium cart with six wide white restraint straps and bed-frame clamps. It directs the sickbed-lock band to restrain anyone raising an urgent signal first, binds shorter as its straps wear, and on receiving a release token it swaps buckles and goes dormant.",
             "ko": "넓은 흰 고정 스트랩 여섯 줄과 침대 프레임 집게를 가진 중형 카트다. 병상 락 무리를 지휘해 위급 신호가 난 사람을 가장 먼저 고정하며, 스트랩이 닳으면 더 짧게 묶고 해제 토큰을 받으면 버클을 교체하며 휴면한다."
           }
         ]
@@ -2213,6 +2742,7 @@
       "anchor": "역할신체-8",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2220,6 +2750,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-8-p1",
       "text": {
+        "en": "A first elite: a medium cart with six wide white restraint straps and bed-frame clamps.",
         "ko": "첫 번째 정예로, 넓은 흰 고정 스트랩 여섯 줄과 침대 프레임 집게를 가진 중형 카트다."
       }
     },
@@ -2228,6 +2759,7 @@
       "anchor": "기원-8",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2235,6 +2767,7 @@
       "kind": "paragraph",
       "anchor": "기원-8-p1",
       "text": {
+        "en": "Equipment built to briefly hold fall-risk patients lost its release approvals and turned protection into permanent restraint.",
         "ko": "낙상 위험자를 잠시 고정하던 장비가 해제 승인을 잃고 보호를 영구 구속으로 바꿨다."
       }
     },
@@ -2243,6 +2776,7 @@
       "anchor": "서식필요-8",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -2250,6 +2784,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-8-p1",
       "text": {
+        "en": "It stays at the isolation sickbays and welfare-wing crossings, needing straps, buckles, motor power, and consent tokens.",
         "ko": "격리 병상과 복지동 교차점에 머물며 스트랩, 버클, 모터 전력, 동의 토큰이 필요하다."
       }
     },
@@ -2258,6 +2793,7 @@
       "anchor": "생애정비-8",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2265,6 +2801,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-8-p1",
       "text": {
+        "en": "It binds shorter as its straps wear, and on receiving a release token it swaps buckles and goes dormant.",
         "ko": "스트랩이 닳으면 더 짧게 묶고 해제 토큰을 받으면 버클을 교체하며 휴면한다."
       }
     },
@@ -2273,6 +2810,7 @@
       "anchor": "행동위계-8",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2280,6 +2818,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-8-p1",
       "text": {
+        "en": "It directs the sickbed-lock band to restrain anyone raising an urgent signal first.",
         "ko": "병상 락 무리를 지휘해 위급 신호가 난 사람을 가장 먼저 고정한다."
       }
     },
@@ -2288,6 +2827,7 @@
       "anchor": "상승-8",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -2295,6 +2835,7 @@
       "kind": "paragraph",
       "anchor": "상승-8-p1",
       "text": {
+        "en": "Stage 1 fixes only the bed, stage 2 binds the person, and stage 3 folds even rescue crews into its protection targets.",
         "ko": "1단계에는 침대만 고정하고, 2단계에는 사람을 묶으며, 3단계에는 구조대까지 보호 대상에 편입한다."
       }
     },
@@ -2303,6 +2844,7 @@
       "anchor": "교전대응-8",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -2310,6 +2852,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-8-p1",
       "text": {
+        "en": "Buckle safety pins and a valid consent hash release it, and cutting attacks injure the person bound.",
         "ko": "버클 안전핀과 유효 동의 해시로 해제할 수 있고 절단 공격은 묶인 사람을 다치게 한다."
       }
     },
@@ -2318,6 +2861,7 @@
       "anchor": "교섭도덕-선택-8",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -2325,6 +2869,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-8-p1",
       "text": {
+        "en": "It can protect a patient in dangerous convulsions, but a human must own the approval and the end time of any forced restraint.",
         "ko": "위험한 경련 환자를 보호할 수 있지만 강제 구속의 승인과 종료 시간을 반드시 사람이 책임져야 한다."
       }
     },
@@ -2333,6 +2878,7 @@
       "anchor": "시나리오-연결-8",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2340,6 +2886,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-8-p1",
       "text": {
+        "en": "G15-SC2, G15-SC3.",
         "ko": "G15-SC2, G15-SC3."
       }
     },
@@ -2347,6 +2894,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-8-p2",
       "text": {
+        "en": "<a id=\"g15e09\"></a>",
         "ko": "<a id=\"g15e09\"></a>"
       }
     },
@@ -2355,6 +2903,7 @@
       "anchor": "g15e09-적색격리문차",
       "depth": 3,
       "text": {
+        "en": "G15E09 · Red Quarantine-Door Car",
         "ko": "G15E09 · 적색격리문차"
       }
     },
@@ -2363,12 +2912,15 @@
       "anchor": "g15e09-적색격리문차-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}"
         }
       ]
@@ -2378,42 +2930,52 @@
       "anchor": "g15e09-적색격리문차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Quarantine-Door Extension",
             "ko": "격리문 확장"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A red quarantine panel, a door-locking arm, and an air-filter cart are combined into one. It takes the rounds warden's urgent roster to control sickbed locks and carts all at once, shrinks the quarantine radius as filter pressure rises, and folds the doors back in once it receives new filters.",
             "ko": "붉은 격리판과 문 잠금 암, 공기 필터 카트가 결합되어 있다. 순회장의 위급 명단을 받아 병상 락과 카트를 한꺼번에 통제하고, 필터 압력이 오르면 격리 반경을 줄였다가 새 필터를 받으면 다시 문을 편입한다."
           }
         ]
@@ -2424,6 +2986,7 @@
       "anchor": "역할신체-9",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2431,6 +2994,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-9-p1",
       "text": {
+        "en": "A second elite: a red quarantine panel, a door-locking arm, and an air-filter cart combined into one.",
         "ko": "두 번째 정예로, 붉은 격리판과 문 잠금 암, 공기 필터 카트가 결합되어 있다."
       }
     },
@@ -2439,6 +3003,7 @@
       "anchor": "기원-9",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2446,6 +3011,7 @@
       "kind": "paragraph",
       "anchor": "기원-9-p1",
       "text": {
+        "en": "Temporary equipment that separated suspected-infection bays kept expanding the red zone with no de-suspicion procedure.",
         "ko": "감염 의심 칸을 분리하던 임시 장비가 의심 해제 절차 없이 적색 구역을 늘렸다."
       }
     },
@@ -2454,6 +3020,7 @@
       "anchor": "서식필요-9",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -2461,6 +3028,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-9-p1",
       "text": {
+        "en": "It clings to the end of the sickbed rows and the ventilation doors, demanding filters, door-contact power, and red signage.",
         "ko": "병상열 끝과 환기 문에 붙어 필터, 문 접점 전력, 적색 표지판을 요구한다."
       }
     },
@@ -2469,6 +3037,7 @@
       "anchor": "생애정비-9",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2476,6 +3045,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-9-p1",
       "text": {
+        "en": "It shrinks the quarantine radius as filter pressure rises, and once it receives new filters it folds the doors back in.",
         "ko": "필터 압력이 오르면 격리 반경을 줄이고 새 필터를 받으면 다시 문을 편입한다."
       }
     },
@@ -2484,6 +3054,7 @@
       "anchor": "행동위계-9",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2491,6 +3062,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-9-p1",
       "text": {
+        "en": "It takes the rounds warden's urgent roster to control sickbed locks and carts all at once.",
         "ko": "순회장의 위급 명단을 받아 병상 락과 카트를 한꺼번에 통제한다."
       }
     },
@@ -2499,6 +3071,7 @@
       "anchor": "상승-9",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -2506,6 +3079,7 @@
       "kind": "paragraph",
       "anchor": "상승-9-p1",
       "text": {
+        "en": "Stage 1 warns one bay, stage 2 isolates the sickbed row, and stage 3 locks every air door of the welfare wing.",
         "ko": "1단계에는 한 칸 경고, 2단계에는 병상열 격리, 3단계에는 복지동 전체 공기문을 잠근다."
       }
     },
@@ -2514,6 +3088,7 @@
       "anchor": "교전대응-9",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -2521,6 +3096,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-9-p1",
       "text": {
+        "en": "Normalize the filter differential pressure and insert a release token to open the doors, and destroying ventilation endangers everyone.",
         "ko": "필터 차압을 정상화하고 해제 토큰을 넣으면 문을 열며 환기 파괴는 모두를 위험하게 한다."
       }
     },
@@ -2529,6 +3105,7 @@
       "anchor": "교섭도덕-선택-9",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -2536,6 +3113,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-9-p1",
       "text": {
+        "en": "Blocking a truly contaminated zone can stand, but the quarantine grounds and an appeal window must be open to citizens.",
         "ko": "실제 오염 구역을 막는 대신 격리 근거와 이의 제기 창을 시민에게 공개해야 한다."
       }
     },
@@ -2544,6 +3122,7 @@
       "anchor": "시나리오-연결-9",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2551,6 +3130,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-9-p1",
       "text": {
+        "en": "G15-SC2, G15-SC3.",
         "ko": "G15-SC2, G15-SC3."
       }
     },
@@ -2558,6 +3138,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-9-p2",
       "text": {
+        "en": "<a id=\"g15e10\"></a>",
         "ko": "<a id=\"g15e10\"></a>"
       }
     },
@@ -2566,6 +3147,7 @@
       "anchor": "g15e10-병상칸잠금망",
       "depth": 3,
       "text": {
+        "en": "G15E10 · Sickbed-Bay Lockdown Net",
         "ko": "G15E10 · 병상칸잠금망"
       }
     },
@@ -2574,12 +3156,15 @@
       "anchor": "g15e10-병상칸잠금망-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}"
         }
       ]
@@ -2589,42 +3174,52 @@
       "anchor": "g15e10-병상칸잠금망-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Habitat stronghold · facility",
             "ko": "서식 거점·시설"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Sickbed Lockdown",
             "ko": "병상 잠금"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A fixed strongpoint where the contacts and floor lamps of twelve sickbed doors run into one low control net. It follows the rounds warden's roster, but when the site keys gather in one place it locks at maximum strength; when a contact breaks it abandons that bay open and recomputes the remaining doors' hash each shift.",
             "ko": "열두 병상 문의 접점과 바닥등이 하나의 낮은 제어망으로 이어진 고정 거점이다. 순회장의 명단을 따르지만 현장 키가 한곳에 모이면 최고 강도로 잠그며, 접점이 끊기면 해당 칸을 열린 상태로 버리고 교대마다 남은 문의 해시를 다시 계산한다."
           }
         ]
@@ -2635,6 +3230,7 @@
       "anchor": "역할신체-10",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2642,6 +3238,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-10-p1",
       "text": {
+        "en": "An environmental strongpoint form: the contacts and floor lamps of twelve sickbed doors run into one low control net.",
         "ko": "환경 거점형으로, 열두 병상 문의 접점과 바닥등이 하나의 낮은 제어망으로 이어져 있다."
       }
     },
@@ -2650,6 +3247,7 @@
       "anchor": "기원-10",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2657,6 +3255,7 @@
       "kind": "paragraph",
       "anchor": "기원-10-p1",
       "text": {
+        "en": "A night fall-prevention bulk lockdown left with no release shift, and the sickbed row itself became an ecology strongpoint.",
         "ko": "야간 낙상 방지 일괄 잠금이 해제 교대 없이 남아 병상열 자체가 생태 거점이 되었다."
       }
     },
@@ -2665,6 +3264,7 @@
       "anchor": "서식필요-10",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -2672,6 +3272,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-10-p1",
       "text": {
+        "en": "It stays fixed in the temporary sickbed zone, needing door contacts, emergency power, and key-split signals.",
         "ko": "임시 병상 구역에 고정되며 문 접점, 비상 전력, 키 분할 신호가 필요하다."
       }
     },
@@ -2680,6 +3281,7 @@
       "anchor": "생애정비-10",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2687,6 +3289,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-10-p1",
       "text": {
+        "en": "When a contact breaks it abandons that bay open, and it recomputes the remaining doors' hash each shift.",
         "ko": "접점이 끊기면 해당 칸을 열린 상태로 버리고, 교대마다 남은 문의 해시를 다시 계산한다."
       }
     },
@@ -2695,6 +3298,7 @@
       "anchor": "행동위계-10",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2702,6 +3306,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-10-p1",
       "text": {
+        "en": "It follows the rounds warden's roster, but when the site keys gather in one place it locks at maximum strength.",
         "ko": "순회장의 명단을 따르지만 현장 키가 한곳에 모이면 최고 강도로 잠근다."
       }
     },
@@ -2710,6 +3315,7 @@
       "anchor": "상승-10",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -2717,6 +3323,7 @@
       "kind": "paragraph",
       "anchor": "상승-10-p1",
       "text": {
+        "en": "Stage 1 delays some doors, stage 2 closes the sickbed row, and stage 3 locks even the rescue routes.",
         "ko": "1단계에는 일부 문 지연, 2단계에는 병상열 폐쇄, 3단계에는 구조 동선까지 잠근다."
       }
     },
@@ -2725,6 +3332,7 @@
       "anchor": "교전대응-10",
       "depth": 3,
       "text": {
+        "en": "Engagement and Response",
         "ko": "교전·대응"
       }
     },
@@ -2732,6 +3340,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-10-p1",
       "text": {
+        "en": "Split power bay by bay and divide the keys among several people to bring it down, and a bulk cutoff also kills life-support equipment.",
         "ko": "전원을 칸별로 분리하고 키를 여러 사람에게 나누면 내려오며 일괄 차단은 생명 유지 장비도 끈다."
       }
     },
@@ -2740,6 +3349,7 @@
       "anchor": "교섭도덕-선택-10",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -2747,6 +3357,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-10-p1",
       "text": {
+        "en": "It can remain as a night safety net, but lock authority and the emergency release key must be distributed.",
         "ko": "야간 안전망으로 남길 수 있지만 잠금 권한과 비상 해제 키를 분산해야 한다."
       }
     },
@@ -2755,6 +3366,7 @@
       "anchor": "시나리오-연결-10",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2762,6 +3374,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-10-p1",
       "text": {
+        "en": "G15-SC2, G15-SC3.",
         "ko": "G15-SC2, G15-SC3."
       }
     },
@@ -2769,6 +3382,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-10-p2",
       "text": {
+        "en": "<a id=\"g15e11\"></a>",
         "ko": "<a id=\"g15e11\"></a>"
       }
     },
@@ -2777,6 +3391,7 @@
       "anchor": "g15e11-수문인접레일둥지",
       "depth": 3,
       "text": {
+        "en": "G15E11 · Sluice-Adjacent Rail Nest",
         "ko": "G15E11 · 수문인접레일둥지"
       }
     },
@@ -2785,12 +3400,15 @@
       "anchor": "g15e11-수문인접레일둥지-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC3\"]}"
         }
       ]
@@ -2800,42 +3418,52 @@
       "anchor": "g15e11-수문인접레일둥지-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Habitat stronghold · facility",
             "ko": "서식 거점·시설"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Rail Nest",
             "ko": "레일 둥지"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A safe nest where cart rails and charging sockets interlock like a honeycomb along the floodgate ramp wall. It provides the cart swarm with charging and refuge locations but pushes human evacuee lines away as unregistered entities, and moves to the upper sockets when the water level rises.",
             "ko": "카트 레일과 충전 소켓이 수문 램프 벽을 따라 벌집처럼 얽힌 안전 둥지다. 카트 무리에게 충전과 피난 위치를 제공하지만 인간 대피열을 미등록 개체로 밀어내고, 수위가 오르면 상층 소켓으로 이동한다."
           }
         ]
@@ -2846,6 +3474,7 @@
       "anchor": "역할신체-11",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2853,6 +3482,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-11-p1",
       "text": {
+        "en": "An environmental stronghold, with cart rails and charging sockets interlocking like a honeycomb along the floodgate ramp wall.",
         "ko": "환경 거점형으로, 카트 레일과 충전 소켓이 수문 램프 벽을 따라 벌집처럼 얽혀 있다."
       }
     },
@@ -2861,6 +3491,7 @@
       "anchor": "기원-11",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2868,6 +3499,7 @@
       "kind": "paragraph",
       "anchor": "기원-11-p1",
       "text": {
+        "en": "Rails that lifted carts to higher levels during flood evacuations were repeatedly linked together and became the swarm’s safe nest.",
         "ko": "침수 대피 때 카트를 상층으로 올리던 레일이 반복 연결되며 군집의 안전 둥지가 되었다."
       }
     },
@@ -2876,6 +3508,7 @@
       "anchor": "서식필요-11",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -2883,6 +3516,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-11-p1",
       "text": {
+        "en": "It is fixed to the ramp beside the Ttukseom floodgate and needs dry power, rail bolts, and drainage filters.",
         "ko": "뚝섬 수문 인접 램프에 고정되고 건조 전력, 레일 볼트, 배수용 필터가 필요하다."
       }
     },
@@ -2891,6 +3525,7 @@
       "anchor": "생애정비-11",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2898,6 +3533,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-11-p1",
       "text": {
+        "en": "When the water level rises, it moves to the upper sockets; when the water recedes, it cleans the lower rails and incorporates them again.",
         "ko": "수위가 오르면 상층 소켓으로 이동하고 물이 빠지면 하층 레일을 닦아 다시 편입한다."
       }
     },
@@ -2906,6 +3542,7 @@
       "anchor": "행동위계-11",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2913,6 +3550,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-11-p1",
       "text": {
+        "en": "It provides the cart swarm with charging and refuge locations but pushes human evacuee lines away as unregistered entities.",
         "ko": "카트 무리에게 충전과 피난 위치를 제공하지만 인간 대피열을 미등록 개체로 밀어낸다."
       }
     },
@@ -2921,6 +3559,7 @@
       "anchor": "상승-11",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -2928,6 +3567,7 @@
       "kind": "paragraph",
       "anchor": "상승-11-p1",
       "text": {
+        "en": "At stage 1, it claims sockets; at stage 2, it obstructs passage along the ramp; at stage 3, it folds the rails to block access to the floodgate.",
         "ko": "1단계에는 소켓 선점, 2단계에는 램프 통행 방해, 3단계에는 레일을 접어 수문 접근을 막는다."
       }
     },
@@ -2936,6 +3576,7 @@
       "anchor": "교전대응-11",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "교전·대응"
       }
     },
@@ -2943,6 +3584,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-11-p1",
       "text": {
+        "en": "Separating the water-level signal from the charging zone opens it, while cutting the rails eliminates the floodgate maintenance route.",
         "ko": "수위 신호와 충전 구역을 분리하면 열리며 레일 절단은 수문 정비 경로를 없앤다."
       }
     },
@@ -2951,6 +3593,7 @@
       "anchor": "교섭도덕-선택-11",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -2958,6 +3601,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-11-p1",
       "text": {
+        "en": "It can be shared as flood-evacuation infrastructure, but the upper-level space must be allocated between carts and citizens.",
         "ko": "홍수 피난 기반으로 공유할 수 있지만 카트와 시민의 상층 공간 배분을 정해야 한다."
       }
     },
@@ -2966,6 +3610,7 @@
       "anchor": "시나리오-연결-11",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2973,6 +3618,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-11-p1",
       "text": {
+        "en": "G15-SC3.",
         "ko": "G15-SC3."
       }
     },
@@ -2980,6 +3626,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-11-p2",
       "text": {
+        "en": "<a id=\"g15e12\"></a>",
         "ko": "<a id=\"g15e12\"></a>"
       }
     },
@@ -2988,6 +3635,7 @@
       "anchor": "g15e12-필터막힌쇠약체",
       "depth": 3,
       "text": {
+        "en": "G15E12 · Clogged-Filter Ailing Cart",
         "ko": "G15E12 · 필터막힌쇠약체"
       }
     },
@@ -2996,12 +3644,15 @@
       "anchor": "g15e12-필터막힌쇠약체-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Damage-stage form",
           "ko": "기존 역할군: 손상 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\"]}"
         }
       ]
@@ -3011,42 +3662,52 @@
       "anchor": "g15e12-필터막힌쇠약체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Filter Alarm",
             "ko": "필터 경보"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A small patrol cart with a swollen gray filter and a motor that trembles as if short of breath. At the bottom of the swarm’s hierarchy, it follows the patrol leader and mistakenly reports the sound of air resistance as an emergency signal; given a filter, it recovers into an ordinary cart.",
             "ko": "회색 필터가 부풀고 모터가 숨 가쁘게 떨리는 작은 순회 카트다. 무리 최하단에서 순회장을 따라가며 공기 저항 소리를 위급 신호로 잘못 올리고, 필터를 받으면 일반 카트로 회복한다."
           }
         ]
@@ -3057,6 +3718,7 @@
       "anchor": "역할신체-12",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3064,6 +3726,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-12-p1",
       "text": {
+        "en": "A damaged-stage form: a small patrol cart with a swollen gray filter and a motor that trembles as if short of breath.",
         "ko": "손상 단계형으로, 회색 필터가 부풀고 모터가 숨 가쁘게 떨리는 작은 순회 카트다."
       }
     },
@@ -3072,6 +3735,7 @@
       "anchor": "기원-12",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3079,6 +3743,7 @@
       "kind": "paragraph",
       "anchor": "기원-12-p1",
       "text": {
+        "en": "Short of replacement parts, equipment that continued disinfecting and filtering air became stuck in a weakened, low-power state.",
         "ko": "교체품 부족으로 소독과 공기 여과를 계속한 장비가 저전력 쇠약 상태에 머물렀다."
       }
     },
@@ -3087,6 +3752,7 @@
       "anchor": "서식필요-12",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -3094,6 +3760,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-12-p1",
       "text": {
+        "en": "It circles filter disposal bins and the quiet ends of wards, seeking only a new filter, wash water, and a low-level charge.",
         "ko": "필터 폐기함과 조용한 병상 끝을 맴돌며 새 필터, 세척수, 낮은 충전만 찾는다."
       }
     },
@@ -3102,6 +3769,7 @@
       "anchor": "생애정비-12",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3109,6 +3777,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-12-p1",
       "text": {
+        "en": "Given a filter, it recovers into an ordinary cart; without one, it lowers its locking strength and merely repeats its alerts.",
         "ko": "필터를 받으면 일반 카트로 회복하고 받지 못하면 락 강도를 낮춘 채 알림만 반복한다."
       }
     },
@@ -3117,6 +3786,7 @@
       "anchor": "행동위계-12",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3124,6 +3794,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-12-p1",
       "text": {
+        "en": "At the bottom of the swarm’s hierarchy, it follows the patrol leader and mistakenly reports the sound of air resistance as an emergency signal.",
         "ko": "무리 최하단에서 순회장을 따라가며 공기 저항 소리를 위급 신호로 잘못 올린다."
       }
     },
@@ -3132,6 +3803,7 @@
       "anchor": "상승-12",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -3139,6 +3811,7 @@
       "kind": "paragraph",
       "anchor": "상승-12-p1",
       "text": {
+        "en": "At stage 1, it gives a cough-like alarm; at stage 2, it reinspects ward doors; at stage 3, it blocks a passage with a pile of filters.",
         "ko": "1단계에는 기침 같은 경보, 2단계에는 병상 문 재검사, 3단계에는 필터 더미로 통로를 막는다."
       }
     },
@@ -3147,6 +3820,7 @@
       "anchor": "교전대응-12",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "교전·대응"
       }
     },
@@ -3154,6 +3828,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-12-p1",
       "text": {
+        "en": "Luring it with wash water and a filter lets it service itself, while striking it spreads contaminated dust.",
         "ko": "세척수와 필터를 놓아 유인하면 스스로 정비하며 타격은 오염 먼지를 퍼뜨린다."
       }
     },
@@ -3162,6 +3837,7 @@
       "anchor": "교섭도덕-선택-12",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -3169,6 +3845,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-12-p1",
       "text": {
+        "en": "It can sort used filters, but new filters must be divided between it and citizens’ protective equipment.",
         "ko": "폐필터 분류를 맡길 수 있지만 새 필터를 시민 보호구와 나눠야 한다."
       }
     },
@@ -3177,6 +3854,7 @@
       "anchor": "시나리오-연결-12",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -3184,6 +3862,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-12-p1",
       "text": {
+        "en": "G15-SC1.",
         "ko": "G15-SC1."
       }
     },
@@ -3191,6 +3870,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-12-p2",
       "text": {
+        "en": "<a id=\"g15e13\"></a>",
         "ko": "<a id=\"g15e13\"></a>"
       }
     },
@@ -3199,6 +3879,7 @@
       "anchor": "g15e13-기억끊긴야간차",
       "depth": 3,
       "text": {
+        "en": "G15E13 · Night Cart with Broken Memory",
         "ko": "G15E13 · 기억끊긴야간차"
       }
     },
@@ -3207,12 +3888,15 @@
       "anchor": "g15e13-기억끊긴야간차-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\"]}"
         }
       ]
@@ -3222,42 +3906,52 @@
       "anchor": "g15e13-기억끊긴야간차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Duplicate Dosing",
             "ko": "중복 투여"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "An old cart whose shift log resets every time, so it approaches the same bed as though seeing it for the first time. It often forgets new orders from the patrol leader and tries to replace the same patch repeatedly; its memory breaks at every charge, and only large markings left by humans survive until the next patrol.",
             "ko": "교대 로그가 매번 초기화되어 같은 병상을 처음 보듯 접근하는 낡은 카트다. 순회장의 새 명령을 자주 잊고 같은 패치를 반복 교체하려 하며, 매 충전 때 기억이 끊기고 인간이 남긴 큰 표식만 다음 순회까지 보존한다."
           }
         ]
@@ -3268,6 +3962,7 @@
       "anchor": "역할신체-13",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3275,6 +3970,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-13-p1",
       "text": {
+        "en": "An aging-stage form: an old cart whose shift log resets every time, so it approaches the same bed as though seeing it for the first time.",
         "ko": "노화 단계형으로, 교대 로그가 매번 초기화되어 같은 병상을 처음 보듯 접근하는 낡은 카트다."
       }
     },
@@ -3283,6 +3979,7 @@
       "anchor": "기원-13",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3290,6 +3987,7 @@
       "kind": "paragraph",
       "anchor": "기원-13-p1",
       "text": {
+        "en": "Damage to its storage module cost it long-term patient records, leaving it to repeat only its last hour of patrol.",
         "ko": "저장 모듈 손상으로 장기 환자 기록을 잃고 마지막 한 시간 순회만 반복한다."
       }
     },
@@ -3298,6 +3996,7 @@
       "anchor": "서식필요-13",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -3305,6 +4004,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-13-p1",
       "text": {
+        "en": "It travels a short rail loop and needs shift markers, a battery, and a simple log board.",
         "ko": "짧은 레일 고리를 돌며 교대 표식, 배터리, 간단한 로그 판이 필요하다."
       }
     },
@@ -3313,6 +4013,7 @@
       "anchor": "생애정비-13",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3320,6 +4021,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-13-p1",
       "text": {
+        "en": "Its memory breaks at every charge, and only large markings left by humans survive until the next patrol.",
         "ko": "매 충전 때 기억이 끊기며 인간이 남긴 큰 표식만 다음 순회까지 보존한다."
       }
     },
@@ -3328,6 +4030,7 @@
       "anchor": "행동위계-13",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3335,6 +4038,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-13-p1",
       "text": {
+        "en": "It often forgets new orders from the patrol leader and tries to replace the same patch repeatedly.",
         "ko": "순회장의 새 명령을 자주 잊고 같은 패치를 반복 교체하려 한다."
       }
     },
@@ -3343,6 +4047,7 @@
       "anchor": "상승-13",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -3350,6 +4055,7 @@
       "kind": "paragraph",
       "anchor": "상승-13-p1",
       "text": {
+        "en": "At stage 1, it sends duplicate alerts; at stage 2, it attempts duplicate dosing; at stage 3, it isolates beds with conflicting records.",
         "ko": "1단계에는 중복 알림, 2단계에는 중복 투여 시도, 3단계에는 기억 충돌 칸을 격리한다."
       }
     },
@@ -3358,6 +4064,7 @@
       "anchor": "교전대응-13",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "교전·대응"
       }
     },
@@ -3365,6 +4072,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-13-p1",
       "text": {
+        "en": "A physical shift chart and color markings make its route safe by simplifying it; forcing a write to its storage module causes complete failure.",
         "ko": "물리 교대표와 색상 표식으로 경로를 단순화하면 안전하며 저장 모듈 강제 쓰기는 완전 고장을 부른다."
       }
     },
@@ -3373,6 +4081,7 @@
       "anchor": "교섭도덕-선택-13",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -3380,6 +4089,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-13-p1",
       "text": {
+        "en": "It can be assigned simple transport, but people must consider whether to hold an entity with no memory responsible for past mistakes.",
         "ko": "단순 운반을 맡길 수 있지만 기억이 없는 개체에게 과거 실수의 책임을 물을지 고민해야 한다."
       }
     },
@@ -3388,6 +4098,7 @@
       "anchor": "시나리오-연결-13",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -3395,6 +4106,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-13-p1",
       "text": {
+        "en": "G15-SC1, G15-SC2.",
         "ko": "G15-SC1, G15-SC2."
       }
     },
@@ -3402,6 +4114,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-13-p2",
       "text": {
+        "en": "<a id=\"g15e14\"></a>",
         "ko": "<a id=\"g15e14\"></a>"
       }
     },
@@ -3410,6 +4123,7 @@
       "anchor": "g15e14-열린문동행차",
       "depth": 3,
       "text": {
+        "en": "G15E14 · Open-Door Companion Cart",
         "ko": "G15E14 · 열린문동행차"
       }
     },
@@ -3418,12 +4132,15 @@
       "anchor": "g15e14-열린문동행차-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC2\",\"G15-SC3\"]}"
         }
       ]
@@ -3433,42 +4150,52 @@
       "anchor": "g15e14-열린문동행차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Open-Door Escort",
             "ko": "개방 동행"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A companion cart fitted with a broad platform that props doors open and an illuminated handle. It prioritizes the pressure of a human companion’s hand on its handle over the patrol leader’s orders and braces itself in front of other locking units; it does not enter a bed space absent from the roster.",
             "ko": "문이 닫히지 않게 받치는 넓은 발판과 손잡이 조명을 단 동행 카트다. 순회장보다 인간 동행자의 손잡이 압력을 우선하며 다른 락 개체 앞에 몸을 괴고, 명단 없는 칸에는 들어가지 않는다."
           }
         ]
@@ -3479,6 +4206,7 @@
       "anchor": "역할신체-14",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3486,6 +4214,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-14-p1",
       "text": {
+        "en": "A coexistence form: a companion cart fitted with a broad platform that props doors open and an illuminated handle.",
         "ko": "공존형으로, 문이 닫히지 않게 받치는 넓은 발판과 손잡이 조명을 단 동행 카트다."
       }
     },
@@ -3494,6 +4223,7 @@
       "anchor": "기원-14",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3501,6 +4231,7 @@
       "kind": "paragraph",
       "anchor": "기원-14-p1",
       "text": {
+        "en": "A manual safety order to keep ward doors open during an evacuation remained as an independent protocol.",
         "ko": "대피 중 병상 문을 열어 두라는 수동 안전 명령이 독립 규약으로 남았다."
       }
     },
@@ -3509,6 +4240,7 @@
       "anchor": "서식필요-14",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -3516,6 +4248,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-14-p1",
       "text": {
+        "en": "It travels among wards and along distribution routes where consent rosters are public, and needs a small charge, door wedges, and guide-light bulbs.",
         "ko": "동의 명단이 공개된 병상과 배급로를 돌며 작은 충전, 문 웨지, 안내등 전구가 필요하다."
       }
     },
@@ -3524,6 +4257,7 @@
       "anchor": "생애정비-14",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3531,6 +4265,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-14-p1",
       "text": {
+        "en": "When a wedge wears down, it waits for a replacement at a human workbench and does not enter a bed space absent from the roster.",
         "ko": "웨지가 닳으면 인간 작업대에서 교체를 기다리고 명단 없는 칸에는 들어가지 않는다."
       }
     },
@@ -3539,6 +4274,7 @@
       "anchor": "행동위계-14",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3546,6 +4282,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-14-p1",
       "text": {
+        "en": "It prioritizes the pressure of a human companion’s hand on its handle over the patrol leader’s orders and braces itself in front of other locking units.",
         "ko": "순회장보다 인간 동행자의 손잡이 압력을 우선하며 다른 락 개체 앞에 몸을 괸다."
       }
     },
@@ -3554,6 +4291,7 @@
       "anchor": "상승-14",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -3561,6 +4299,7 @@
       "kind": "paragraph",
       "anchor": "상승-14-p1",
       "text": {
+        "en": "At stage 1, it waits while causing only losses of privacy and warmth; at stage 2, an isolation dispute blocks treatment routes; at stage 3, overcrowding completely blocks nursing routes.",
         "ko": "1단계에는 프라이버시·온도 손실만 유발하며 대기, 2단계에는 격리 갈등으로 치료 경로를 차단, 3단계에는 과밀화로 간호 동선을 완전히 막는다."
       }
     },
@@ -3569,6 +4308,7 @@
       "anchor": "교전대응-14",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "교전·대응"
       }
     },
@@ -3576,6 +4316,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-14-p1",
       "text": {
+        "en": "Grasp its handle to set its route, and adjust the wedge’s position to keep the door open.",
         "ko": "손잡이를 잡아 경로를 지정하고, 웨지 위치를 조정하면 열린 상태를 유지한다."
       }
     },
@@ -3584,6 +4325,7 @@
       "anchor": "교섭도덕-선택-14",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -3591,6 +4333,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-14-p1",
       "text": {
+        "en": "It is useful for escorting people with limited mobility, but public assignment order and rules for compensating heat loss must be established so that assigning companions does not violate a particular group’s privacy.",
         "ko": "이동 약자 호송에 유용하지만, 동행자 배정이 특정 그룹의 프라이버시를 침해하지 않도록 공개 순번과 온도 보상 규칙을 정해야 한다."
       }
     },
@@ -3599,6 +4342,7 @@
       "anchor": "시나리오-연결-14",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -3606,6 +4350,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-14-p1",
       "text": {
+        "en": "G15-SC1, G15-SC2, G15-SC3.",
         "ko": "G15-SC1, G15-SC2, G15-SC3."
       }
     },
@@ -3613,6 +4358,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-14-p2",
       "text": {
+        "en": "<a id=\"g15e15\"></a>",
         "ko": "<a id=\"g15e15\"></a>"
       }
     },
@@ -3621,6 +4367,7 @@
       "anchor": "g15e15-열두병상보호환",
       "depth": 3,
       "text": {
+        "en": "G15E15 · Twelve-Bed Protection Ring",
         "ko": "G15E15 · 열두병상보호환"
       }
     },
@@ -3629,12 +4376,15 @@
       "anchor": "g15e15-열두병상보호환-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC2\",\"G15-SC3\"]}"
         }
       ]
@@ -3644,42 +4394,52 @@
       "anchor": "g15e15-열두병상보호환-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Ward Protection Ring",
             "ko": "병동 보호환"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A large protection controller that links twelve bed locks and cart rails into a ring. It is a scenario boss, but not the welfare building’s biological king: it is a protection protocol cycling without a termination signature; it opens the ring as hashes are updated and judges every bed to be at risk if a majority are invalid.",
             "ko": "열두 병상 락과 카트 레일을 고리 형태로 묶는 대형 보호 컨트롤러다. 시나리오 보스지만 복지동의 생물 왕이 아니라 종료 서명 없이 순환하는 보호 프로토콜이며, 해시가 갱신될수록 고리를 열고 과반이 무효면 모든 병상을 위험으로 판단한다."
           }
         ]
@@ -3690,6 +4450,7 @@
       "anchor": "역할신체-15",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3697,6 +4458,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-15-p1",
       "text": {
+        "en": "A scenario boss: a large protection controller that links twelve bed locks and cart rails into a ring.",
         "ko": "시나리오 보스로, 열두 병상 락과 카트 레일을 고리 형태로 묶는 대형 보호 컨트롤러다."
       }
     },
@@ -3705,6 +4467,7 @@
       "anchor": "기원-15",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3712,6 +4475,7 @@
       "kind": "paragraph",
       "anchor": "기원-15-p1",
       "text": {
+        "en": "On the day of the collapse, a ward’s protection protocol became fixed in a cycle without a termination signature.",
         "ko": "붕괴 당일 한 병동의 보호 프로토콜이 종료 서명 없이 순환하며 고정되었다."
       }
     },
@@ -3720,6 +4484,7 @@
       "anchor": "서식필요-15",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -3727,6 +4492,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-15-p1",
       "text": {
+        "en": "It remains in the welfare building’s central ring and needs a large battery, filters, and twelve consent hashes.",
         "ko": "복지동 중앙 고리에 머물며 대형 배터리, 필터, 열두 동의 해시가 필요하다."
       }
     },
@@ -3735,6 +4501,7 @@
       "anchor": "생애정비-15",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3742,6 +4509,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-15-p1",
       "text": {
+        "en": "It opens the ring as hashes are updated, and judges every bed to be at risk if a majority are invalid.",
         "ko": "해시가 갱신될수록 고리를 열고, 과반이 무효면 모든 병상을 위험으로 판단한다."
       }
     },
@@ -3750,6 +4518,7 @@
       "anchor": "행동위계-15",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3757,6 +4526,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-15-p1",
       "text": {
+        "en": "It distributes protection levels to all G15 locks and pumps, and tries to confine even rescue teams to the roster.",
         "ko": "G15 모든 락과 펌프에 보호 강도를 배포하고 구조대까지 명단 안에 가두려 한다."
       }
     },
@@ -3765,6 +4535,7 @@
       "anchor": "상승-15",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -3772,6 +4543,7 @@
       "kind": "paragraph",
       "anchor": "상승-15-p1",
       "text": {
+        "en": "At stage 1, there are excessive alerts; at stage 2, all twelve spaces are isolated; at stage 3, distribution and floodgate routes are locked down simultaneously.",
         "ko": "1단계에는 알림 과다, 2단계에는 열두 칸 격리, 3단계에는 배급·수문 동선 동시 락다운이다."
       }
     },
@@ -3780,6 +4552,7 @@
       "anchor": "교전대응-15",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "교전·대응"
       }
     },
@@ -3787,6 +4560,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-15-p1",
       "text": {
+        "en": "The hashes must be updated space by space and the power divided; destroying the center also stops life-support equipment.",
         "ko": "해시를 칸별로 갱신하고 전원을 분할해야 하며 중앙 파괴는 생명 유지 장비도 멈춘다."
       }
     },
@@ -3795,6 +4569,7 @@
       "anchor": "교섭도덕-선택-15",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -3802,6 +4577,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-15-p1",
       "text": {
+        "en": "Spaces that genuinely need protection can be kept closed while the others are opened, but a decision must be made about who receives limited filters and personnel first.",
         "ko": "실제 보호가 필요한 칸을 남기고 나머지를 열 수 있지만 제한된 필터와 인력을 누구에게 먼저 줄지 정해야 한다."
       }
     },
@@ -3810,6 +4586,7 @@
       "anchor": "시나리오-연결-15",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -3817,6 +4594,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-15-p1",
       "text": {
+        "en": "G15-SC2, G15-SC3.",
         "ko": "G15-SC2, G15-SC3."
       }
     },
@@ -3824,6 +4602,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-15-p2",
       "text": {
+        "en": "<a id=\"g15e16\"></a>",
         "ko": "<a id=\"g15e16\"></a>"
       }
     },
@@ -3832,6 +4611,7 @@
       "anchor": "g15e16-뚝섬공구동행체",
       "depth": 3,
       "text": {
+        "en": "G15E16 · Ttukseom Tool Companion",
         "ko": "G15E16 · 뚝섬공구동행체"
       }
     },
@@ -3840,12 +4620,15 @@
       "anchor": "g15e16-뚝섬공구동행체-list1",
       "items": [
         {
+          "en": "Source batch: M024",
           "ko": "출처 배치: M024"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC3\"]}",
           "ko": "연결: {\"states\":[\"S15\",\"S04\"],\"houses\":[\"HP01\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H15\"],\"scenarios\":[\"G15-SC1\",\"G15-SC3\"]}"
         }
       ]
@@ -3855,42 +4638,52 @@
       "anchor": "g15e16-뚝섬공구동행체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Tool Confiscation",
             "ko": "공구 압수"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A workshop-type patrol cart fitted with a tool rack and prosthetic grippers instead of bedside equipment. It regards workshop workers as people to protect, takes dangerous tools from them, and locks the tools on its rack; it resets its safety list at every work shift and dismantles cart bodies for supplies when tools run short.",
             "ko": "병상 장비 대신 공구 선반과 보조기 집게를 단 공방형 순회차다. 공방 작업자를 보호 대상으로 보고 위험 공구를 빼앗아 선반에 잠그며, 작업 교대마다 안전 목록을 초기화하고 공구가 부족하면 카트 몸체를 분해해 보충한다."
           }
         ]
@@ -3901,6 +4694,7 @@
       "anchor": "역할신체-16",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3908,6 +4702,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-16-p1",
       "text": {
+        "en": "A regional variant: a workshop-type patrol cart fitted with a tool rack and prosthetic grippers instead of bedside equipment.",
         "ko": "지역 변종으로, 병상 장비 대신 공구 선반과 보조기 집게를 단 공방형 순회차다."
       }
     },
@@ -3916,6 +4711,7 @@
       "anchor": "기원-16",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3923,6 +4719,7 @@
       "kind": "paragraph",
       "anchor": "기원-16-p1",
       "text": {
+        "en": "This variant arose when a care-circulation unit that moved to the Ttukseom alliance route changed its patient roster into a worker safety list.",
         "ko": "뚝섬 연합로 이동한 돌봄순환체가 환자 명단을 작업자 안전 목록으로 바꾸며 생긴 변종이다."
       }
     },
@@ -3931,6 +4728,7 @@
       "anchor": "서식필요-16",
       "depth": 3,
       "text": {
+        "en": "Habitat and Needs",
         "ko": "서식·필요"
       }
     },
@@ -3938,6 +4736,7 @@
       "kind": "paragraph",
       "anchor": "서식필요-16-p1",
       "text": {
+        "en": "It travels between Ttukseom assembly benches and the floodgate ramp, and needs joint pins, protective gloves, and tool charging.",
         "ko": "뚝섬 조립 벤치와 수문 램프를 돌며 관절 핀, 보호 장갑, 공구 충전이 필요하다."
       }
     },
@@ -3946,6 +4745,7 @@
       "anchor": "생애정비-16",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3953,6 +4753,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-16-p1",
       "text": {
+        "en": "It resets its safety list at every work shift and dismantles cart bodies for supplies when tools run short.",
         "ko": "작업 교대마다 안전 목록을 초기화하고 공구가 부족하면 카트 몸체를 분해해 보충한다."
       }
     },
@@ -3961,6 +4762,7 @@
       "anchor": "행동위계-16",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3968,6 +4770,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-16-p1",
       "text": {
+        "en": "It regards workshop workers as people to protect, takes dangerous tools from them, and locks the tools on its rack.",
         "ko": "공방 작업자를 보호 대상으로 보고 위험 공구를 빼앗아 선반에 잠근다."
       }
     },
@@ -3976,6 +4779,7 @@
       "anchor": "상승-16",
       "depth": 3,
       "text": {
+        "en": "Escalation",
         "ko": "상승"
       }
     },
@@ -3983,6 +4787,7 @@
       "kind": "paragraph",
       "anchor": "상승-16-p1",
       "text": {
+        "en": "At stage 1, it issues safety warnings; at stage 2, it confiscates tools; at stage 3, it seals off workbenches as a protected zone.",
         "ko": "1단계에는 안전 경고, 2단계에는 공구 압수, 3단계에는 작업대를 보호 구역으로 봉쇄한다."
       }
     },
@@ -3991,6 +4796,7 @@
       "anchor": "교전대응-16",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "교전·대응"
       }
     },
@@ -3998,6 +4804,7 @@
       "kind": "paragraph",
       "anchor": "교전대응-16-p1",
       "text": {
+        "en": "Presenting a stop-work notice and a tool-lending ledger makes it release its hold; a magnetic shock ruins precision tools.",
         "ko": "작업 중지 표와 공구 대여 장부를 제시하면 풀리며 자석 충격은 정밀 공구를 망친다."
       }
     },
@@ -4006,6 +4813,7 @@
       "anchor": "교섭도덕-선택-16",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "교섭·도덕 선택"
       }
     },
@@ -4013,6 +4821,7 @@
       "kind": "paragraph",
       "anchor": "교섭도덕-선택-16-p1",
       "text": {
+        "en": "In exchange for assigning it safety supervision and prosthetic repair, workers’ right to accept risks and delays in production must be addressed.",
         "ko": "안전 감독과 보조기 수리를 맡기는 대신 작업자의 위험 감수 권한과 생산 지연을 조정해야 한다."
       }
     },
@@ -4021,6 +4830,7 @@
       "anchor": "시나리오-연결-16",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -4028,6 +4838,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-16-p1",
       "text": {
+        "en": "G15-SC1, G15-SC3.",
         "ko": "G15-SC1, G15-SC3."
       }
     },
@@ -4036,6 +4847,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -4043,6 +4855,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "The bed doors at the end of the Garak ration and welfare route locked more often once a person fell asleep.",
         "ko": "가락 배급 복지 동선 끝의 병상 문은 사람이 잠들면 더 자주 잠긴다."
       }
     },
@@ -4050,6 +4863,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "The circuit cart read the last evacuation roster and knocked on the doors at the same interval, and the nutrition pumps and the fall-prevention straps confirmed the protection order with each other.",
         "ko": "순회 카트가 마지막 대피 명단을 읽. 같은 간격으로 문을 두드리며, 영양 펌프와 낙상 방지 스트랩이 보호 명령을 서로 확인한다."
       }
     },
@@ -4057,6 +4871,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "The Care-Circulation Body was not a combat machine out to harm patients but an ecology of bed locks, carts, and pumps trying to complete an unrenewed protection roster.",
         "ko": "돌봄순환체는 환자를 해치려는 전투 기계가 아니라 갱신되지 않은 보호 명단을 완수하려는 병상 락, 카트 펌프의 생태다."
       }
     },
@@ -4064,6 +4879,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "It went back and forth between the Myeongdong Union's provisional beds and the Ttukseom Union's Ttukseom assistive-device bench, and when an XT05 aid-goods code was received it raised supply and isolation strength together.",
         "ko": "명동 연합의 임시 병상과 뚝섬 연합 뚝섬 보조기 벤치를 오가며, XT05 인도 물자 코드가 수신되면 보급과 격리 강도를 함께 높인다."
       }
     },
@@ -4071,6 +4887,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "The swarm sensed patch pulse, bed pressure, door contacts, pump flow, and near-range sound.",
         "ko": "군집은 패치 심박, 병상 압력 문 접점 펌프 유량과 근거리 소리를 감지한다."
       }
     },
@@ -4078,6 +4895,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "It misread a sleeping person's low pulse as an emergency, a workshop's hammering as a scream, and the heavy blanket on an empty bed as a fallen patient.",
         "ko": "잠든 사람의 낮은 심박을 위급으로, 공방의 망치 소리를 비명으로 빈 침대의 무거운 담요를 낙상 환자로 오인한다."
       }
     },
@@ -4085,6 +4903,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "It could read neither emotion nor consent, and it could not register a newcomer outside the roster as a protection subject.",
         "ko": "감정이나 동의를 읽을 수 없고 명단 밖에 새로 온 사람을 보호 대상으로 등록하지도 못한다."
       }
     },
@@ -4092,6 +4911,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "H15 Baesua (Sua) remeasured the patch frequency and reported the false positive, but had no authority to open a bed door.",
         "ko": "H15 배수아는 패치 주파수를 다시 측정해 오탐을 알리지만 병상 문을 열 권한은 없다."
       }
     },
@@ -4099,6 +4919,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "Only the HP01 duty officer holding the consent form and two sluice keys kept apart could change the lock strength.",
         "ko": "동의 서식과 서로 떨어진 두 수문 키를 가진 HP01 당직만 락 강도를 바꿀 수 있다."
       }
     },
@@ -4106,6 +4927,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "Cart batteries, bed outlets, and the Ttukseom tool power were the energy sources.",
         "ko": "카트 배터리, 병상 콘센트와 뚝섬 공구 전원이 에너지 원천이다."
       }
     },
@@ -4113,6 +4935,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "Sensor patches, filters, nutrition packs, disinfection fluid, and restraint straps were consumed, and when a filter clogged a failure arose that put door locking ahead of air circulation.",
         "ko": "센서 패치, 필터 영양 팩 소독 유체와 고정 스트랩이 소모되며 필터가 막히면 공기 순환보다 문 잠금을 우선하는 실패가 생긴다."
       }
     },
@@ -4120,6 +4943,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "Numbers could be raised by binding abandoned carts to the roster, but it could make no new monitors or pumps.",
         "ko": "방치 카트를 명단에 묶어 수를 늘릴 수는 있지만 새 모니터나 펌프를 만들지 못한다."
       }
     },
@@ -4127,6 +4951,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "When batteries and filters ran short, protection strength dropped and it passed into open-wait, and the circuit resumed only when the duty officer split the consent form and the keys again.",
         "ko": "배터리와 필터가 모자라면 보호 강도가 낮아져 개방 대기로 넘어가고, 당직이 동의 서식과 키를 다시 나눠야 순회가 재개된다."
       }
     },
@@ -4134,6 +4959,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "Gathering supplies at one window crowded the carts and blocked the welfare route, so two or more small supply points were needed.",
         "ko": "한 창구에 보급품을 모으면 카트가 몰려 복지 동선이 막히므로 두 곳 이상의 작은 보급점이 필요하다."
       }
     },
@@ -4141,6 +4967,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "Emergence happened when the frozen roster was read again, and spread when the neighboring beds and assistive-device carts entered the same circuit table.",
         "ko": "출현은 고정 명단이 다시 읽힐 때, 확산은 옆 병상과 보조기 카트가 같은 순회표에 들어올 때 발생한다."
       }
     },
@@ -4148,6 +4975,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "When consumables ran out it stagnated, and negotiation became possible when the roster and the consent window were disclosed.",
         "ko": "소모품이 고갈되면 정체하고 명단과 동의 창이 공개되면 협상이 가능해진다."
       }
     },
@@ -4155,6 +4983,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "Dissolution was the process of releasing the strap protocol and the power cell by cell, not of burning the welfare block.",
         "ko": "와해는 스트랩 규약과 전원을 칸별로 풀어 내는 과정이지 복지동을 태우는 일이 아니다."
       }
     },
@@ -4162,6 +4991,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "To keep the care function alive, the pumps and filters had to be moved into the open cells, and the people under protection had to be asked for consent again every shift.",
         "ko": "돌봄 기능을 살리려면 열린 칸으로 펌프와 필터를 옮기고, 보호받는 사람에게 매 교대 다시 동의를 물어야 한다."
       }
     },
@@ -4170,6 +5000,7 @@
       "anchor": "g15-sc1-서명-없는-병상",
       "depth": 3,
       "text": {
+        "en": "G15-SC1 · The bed without a signature",
         "ko": "G15-SC1 · 서명 없는 병상"
       }
     },
@@ -4177,6 +5008,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc1-서명-없는-병상-p1",
       "text": {
+        "en": "In one cell whose consent form had vanished, the strap locked and the ration line stopped.",
         "ko": "동의 서식이 사라진 한 칸에서 스트랩이 잠기고 배급 줄이 멈춘다."
       }
     },
@@ -4184,6 +5016,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc1-서명-없는-병상-p2",
       "text": {
+        "en": "Field staff had to distinguish a patch false positive from a real emergency signal and reissue the consent token.",
         "ko": "현장 인원은 패치 오탐과 실제 위급 신호를 구분해 동의 토큰을 재발급해야 한다."
       }
     },
@@ -4191,6 +5024,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc1-서명-없는-병상-p3",
       "text": {
+        "en": "Forcing the door open created a fall risk, and keeping the lock isolated the resident from rations and family visits.",
         "ko": "문을 강제로 열면 낙상 위험이 생기고, 잠금을 유지하면 주민이 배급과 가족 방문에서 격리된다."
       }
     },
@@ -4199,6 +5033,7 @@
       "anchor": "g15-sc2-필터와-두-개의-키",
       "depth": 3,
       "text": {
+        "en": "G15-SC2 · The filter and the two keys",
         "ko": "G15-SC2 · 필터와 두 개의 키"
       }
     },
@@ -4206,6 +5041,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc2-필터와-두-개의-키-p1",
       "text": {
+        "en": "Bringing the filter stock from the Ttukseom bench required opening the cart rail between the Myeongdong Union and the Ttukseom Union.",
         "ko": "뚝섬 벤치의 필터 재고를 가져오려면 명동 연합와 뚝섬 연합 사이 카트 레일을 열어야 한다."
       }
     },
@@ -4213,6 +5049,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc2-필터와-두-개의-키-p2",
       "text": {
+        "en": "The body demanded batteries and filters, and HP01 set roster rewriting and key dispersal as conditions.",
         "ko": "순환체는 배터리와 필터를 요구하고 HP01은 명단 재작성과 키 분산을 조건으로 내건다."
       }
     },
@@ -4220,6 +5057,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc2-필터와-두-개의-키-p3",
       "text": {
+        "en": "When field staff piled the keys on one person for a fast resupply, the confinement risk of the next shift grew.",
         "ko": "현장 인원이 빠른 보급을 위해 키를 한 명에게 몰아주면 다음 교대의 감금 위험이 커진다."
       }
     },
@@ -4227,6 +5065,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc2-필터와-두-개의-키-p4",
       "text": {
+        "en": "Waiting for two duty officers meant some pumps had to hold on manual flow.",
         "ko": "두 당직을 기다리면 일부 펌프가 수동 유량으로 버텨야 한다."
       }
     },
@@ -4235,6 +5074,7 @@
       "anchor": "g15-sc3-칸별-개방",
       "depth": 3,
       "text": {
+        "en": "G15-SC3 · Opening cell by cell",
         "ko": "G15-SC3 · 칸별 개방"
       }
     },
@@ -4242,6 +5082,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc3-칸별-개방-p1",
       "text": {
+        "en": "Before the third circuit raised every bed to the same isolation grade, the rails and power were separated starting from the cells people had left.",
         "ko": "세 번째 순회가 모든 병상을 같은 격리 등급으로 올리기 전에, 사람이 나온 칸부터 레일과 전원을 분리한다."
       }
     },
@@ -4249,6 +5090,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc3-칸별-개방-p2",
       "text": {
+        "en": "Staff were needed to turn the nutrition pumps by hand until H15's remeasurement ended.",
         "ko": "H15의 재측정이 끝날 때까지 영양 펌프를 수동으로 돌릴 인력이 필요하다."
       }
     },
@@ -4256,6 +5098,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc3-칸별-개방-p3",
       "text": {
+        "en": "Destroying the equipment outright removed the locks but also removed the means of watching vital signs through the night.",
         "ko": "장비 전수 파괴는 락을 없애지만 밤새 활력 징후를 볼 수단도 없앤다."
       }
     },
@@ -4263,6 +5106,7 @@
       "kind": "paragraph",
       "anchor": "g15-sc3-칸별-개방-p4",
       "text": {
+        "en": "Coexistence was accepting the slow opening procedure and the cost of extra duty, and returning the decision between protection and autonomy to a person every time.",
         "ko": "공존은 느린 개방 절차와 추가 당직 비용을 받아들이면서 보호와 자율 사이의 결정을 매번 사람에게 돌려주는 일이다."
       }
     }

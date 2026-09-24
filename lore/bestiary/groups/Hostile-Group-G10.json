@@ -5,6 +5,7 @@
   "slug": "hostile-group-g10",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G10 · Flood-Mold Breath Cluster",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G10 · 침수곰팡이호흡단",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g10-침수곰팡이호흡단",
       "depth": 1,
       "text": {
+        "en": "G10 · Flood-Mold Breath Cluster",
         "ko": "G10 · 침수곰팡이호흡단"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g10-침수곰팡이호흡단-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "The Flood-Mold Breath Cluster was not one species' name but an environment formed as the wet concrete of the Bukhansan Bogukmun corridor, the grain heat of the Garak and Jamsil lower ration stores, and drainage workers' breath meshed over long years. Water gathered first in the low grids, and people saw the ceiling damp only after their soles slipped. The grid circle recorded water level and floor friction, the ventilation circle air and filter resistance, the ration-store circle grain heat and fermentation smell, each in its own ledger.",
         "ko": "침수곰팡이호흡단은 한 종 이름이 아니라 북한산보국문 회랑의 젖은 콘크리트, 가락·잠실 하층 배급고의 곡물 열, 배수 노동자의 호흡이 오래 맞물리며 생긴 환경이다. 물은 낮은 격자에 먼저 모이고, 사람들은 발바닥 미끄럼 뒤에야 천장 습기를 본다. 격자 원은 수위와 바닥 마찰을, 환기 원은 공기와 필터 저항을, 배급고 원은 곡물 열과 발효 냄새를 따로 적는다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The corridor's ordinary residents and pump watches were affected people sharing wet bedding and drainage shifts, not names on a monster list. From G10E01 to E16 were specialized variants in whom respiratory-disease residue had hardened into swim bladders, thoracic ducts, and fungal plates — inherited organs growing oxygen moss or piercing pipes with coughs. Sharing the humidity ledger, ordinary workers and variants were never bundled into one king's swarm.",
         "ko": "회랑의 보통 주민과 펌프 당직은 젖은 침상과 배수 순번을 나누는 영향받은 사람들이지, 괴물 명단에 오르지 않는다. G10E01부터 E16은 호흡기 질환 잔재가 부레폐·흉관·균판으로 굳은 특화 변이체로, 산소 이끼밭을 기르거나 기침으로 관을 뚫는 상속 기관을 가진다. 습도 원장은 같아도 보통 노동자와 변이체는 한 왕의 무리로 묶이지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "After the evacuation corridors of the Sangha Relief State and the lower ration stores of the Cathedral Accreditation State were flooded repeatedly, breath units adapted to humidity exchange formed. / They are called the Flood-Mold Breath Cluster, but their identity is an environmental ecology that moves between wet concrete and the damp of ration grain, and they are not the target of a stigma under any particular disease name. / The record of the early disinfection uproar was settled into the ecology ledger as the trade in drainage slots arose. / Adaptation to damp is not described as a moral failure.",
             "ko": "승가구휼정 대피 회랑과 본당인준정 하층 배급고가 반복 침수된 뒤 습도 교환에 적응한 호흡 단위가 형성되었다. / 그들은 침수곰팡이호흡단이라 불리지만 정체는 젖은 콘크리트와 배급 곡물 습기를 오가는 환경 생태이며 특정 병명의 낙인 대상이 아니다. / 초기 소독 소동 기록은 배수 슬롯 거래가 생기며 생태 원장으로 정리되었다. / 습기 적응을 도덕 실패로 서술하지 않는다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The core habitat is the poorly drained stretch of the Bukhansan Bogukmun evacuation corridor. / In the rainy season and the ration cycle it moves to the lower ration stores and vents of Garak and Jamsil. / When the sea wind of the Incheon Trust Theater flows in, it reacts to the outer pressure. / In a fully dry zone breath exchange grows difficult and it withdraws on its own. / The connected states are the Sangha Relief State and the Cathedral Accreditation State.",
             "ko": "핵심 서식은 북한산보국문 대피 회랑의 배수 불량 구간이다. / 장마와 배급 주기 때 가락과 잠실 하층 배급고와 환기구로 이동한다. / 인천신탁전구의 해풍 유입이 있으면 외곽 압력에 반응한다. / 완전 건조 지대에서는 호흡 교환이 어려워 스스로 물러난다. / 연결 국가는 승가구휼정과 본당인준정이다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "The main resources are water as humidity, limited fermentation and grain-residue organic matter, drain-pump power, and breath-filter cloth. / They compete at the points that overlap the ferment-seed strongroom and the humidity management of the Magok Seed House. / Scrap is used to repair the drain grates, and coolant is put in only on the stretches where the pumps overheat. / The upper limit of humidity is the upper limit of spread. / When pump running time falls, expansion stops and the consumption of filter cloth is reduced with it. / The seed-strongroom ledger and the damp ledger are not mixed. / Filter cloth has its number of reuses after washing written in the ledger, and once it passes the reuse cap it is sent only to the scrap bay. / Pump power is metered separately from the lighting power of the ration window.",
             "ko": "주 자원은 습도로서의 물 제한된 발효와 곡물 잔여 유기물 배수 펌프 전력 호흡 필터 천이다. / 마곡종자가의 발효 종자 금고와 습도 관리와 겹치는 지점에서 경합한다. / 고철은 배수 격자 보수에 쓰고 냉각수는 펌프 과열 구간에만 투입한다. / 습도 상한이 확산 상한이다. / 펌프 가동 시간이 줄면 확장이 멈추고 필터 천 소모도 같이 줄인다. / 종자 금고 원장과 습기 원장은 섞지 않는다. / 필터 천은 세척 후 재사용 횟수를 원장에 적고 횟수 상한을 넘기면 폐기 칸으로만 보낸다. / 펌프 전력은 배급 창 조명 전력과 분리 계측한다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "The Flood-Mold Breath Cluster is not a simple colony that spreads when the water rises and vanishes when it dries. / At the low grates of the Bukhansan Bogukmun corridor it first gathers the damp and matches its breathing, and when the pumps run it follows the water that drains and shifts its place to the vents of the Garak ration store. / When the grain heat rises, some chase the smell of fermentation, but others guard the condensation on the drinking-water pipes, and the two flows split. / When the filter cloth soaks and will not pass air, they lift the grates and make a water path rather than advance into a new zone. / If the residents take on the drainage labor and the seed-strongroom humidity record together, the breath cluster enters the vent-cleaning order and gets through the rainy season. / When the pumps stop for a long time, the swarm does not collapse. It moves up to the high stairs, and the mold film left below continues as the cost of the next ration.",
             "ko": "침수곰팡이호흡단은 물이 차오를 때 퍼지고 마르면 사라지는 단순 군락이 아니다. / 북한산보국문 회랑의 낮은 격자에서 먼저 습기를 모아 호흡을 맞추고, 펌프가 돌아가면 빠지는 물을 따라 가락 배급고의 환기구로 자리를 옮긴다. / 곡물 열이 올라가면 일부는 발효 냄새를 쫓지만 다른 일부는 식수관 결로를 지켜 두 흐름이 갈라진다. / 필터 천이 젖어 공기를 통과시키지 못하면 새 구역으로 나아가기보다 격자를 들어 올려 물길을 만든다. / 주민이 배수 노동과 종자 금고 습도 기록을 함께 맡으면 호흡단은 환기구 청소 순번에 들어가 장마를 넘긴다. / 펌프가 장기간 멈추면 무리는 붕괴하는 대신 높은 계단으로 옮겨가며, 그 아래 남은 곰팡이 막이 다음 배급의 비용으로 이어진다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "The primary senses are humidity and the smell of volatile organics. / As auxiliaries they read drain-pipe vibration and the local heat of the pumps. / Electronic noise is treated only at the level of pump-control false readings, and there is no complete vision. / They cross-check against the humidity log of the synthetic Yunsaeron. / In a stretch of sudden dehumidifying the senses waver and movement stops. / When rainwater inflow suddenly increases, the smell signal runs ahead and the vibration signal is pushed back, so the two senses are not entered in the ledger at the same weight.",
             "ko": "주 감각은 습도와 휘발성 유기 냄새다. / 보조로 배수 파이프 진동과 펌프 국소 열을 읽는다. / 전자 잡음은 펌프 제어 오탐 수준만 취급하고 완전 투시는 없다. / 합성 윤새론의 습도 로그와 교차 확인한다. / 급격한 제습 구간에서는 감각이 흔들려 이동을 멈춘다. / 빗물 유입이 갑자기 늘면 냄새 신호가 앞서고 진동 신호는 뒤로 밀리므로 두 감각을 같은 비중으로 원장에 적지 않는다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "They move as several circles that match the beat of the breath. / The grate circle watches the water level, the vent circle the airflow, and the ration-store circle the grain heat, and no circle can give orders to another. / When the breathing of the three circles does not match, movement stops, and the on-site cough interval and the pump vibration are checked before Yunsaeron's humidity record. / The person whose breath is shortest is not excluded. That person gains the authority to raise the stop signal for that stretch. / The human on duty cannot ignore this signal, but cannot monopolize the rations either, and work starts again only after the residents' delegate confirms the households harmed by a change in the water path. / Power lies less in who leads than in who can stop everyone's breathing.",
             "ko": "이들은 숨의 박자를 맞추는 여러 원으로 움직인다. / 격자 원은 물높이를 환기 원은 공기 흐름을 배급고 원은 곡물 열을 감시하며 어느 원도 다른 원에 명령할 수 없다. / 세 원의 호흡이 맞지 않으면 이동을 멈추고 윤새론의 습도 기록보다 현장 기침 간격과 펌프 진동을 먼저 확인한다. / 가장 숨이 가쁜 사람은 배제되는 대신 그 구간의 중지 신호를 낼 권한을 얻는다. / 인간 당직은 이 신호를 무시할 수 없지만 배급을 독점할 수도 없고, 주민 대표가 물길 변경의 피해 가구를 확인해야 다시 작업이 시작된다. / 권력은 누가 앞장서는가보다 누가 모두의 호흡을 멈출 수 있는가에 놓인다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "No circle could command another, and when the three rhythms slipped, movement and pump tests stopped together. The main senses were humidity and volatile smell, and pipe vibration arrived late, so writing both as same-moment evidence misjudged the backflow point. The most breathless person held the stop signal, and synthetic Yunsaeron's humidity logs could not guess beyond walls.",
         "ko": "어느 원도 다른 원에 명령하지 못하며, 세 박자가 어긋나면 이동과 펌프 시험을 함께 멈춘다. 주 감각은 습도와 휘발성 냄새이고 파이프 진동은 늦게 도착하므로, 둘을 같은 시각의 증거처럼 적으면 역류 지점을 잘못 짚는다. 가장 숨이 가쁜 사람에게 중지 신호가 있고, 합성 윤새론의 습도 로그는 벽 너머를 알아맞히지 못한다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G10E01 · Flooded-Lung Bubble Farmer",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E01 · 침수폐 기포농부",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Oxygen rationing",
             "ko": "산소 배급"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M015",
             "ko": "M015"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E02 · Surface-Film Lurker",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E02 · 수면막 잠복자",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Surface blockade",
             "ko": "수면 봉쇄"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M015",
             "ko": "M015"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E03 · Drainpipe Cougher",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E03 · 배수관 기침꾼",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Pipe breakthrough",
             "ko": "관로 돌파"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M015",
             "ko": "M015"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E04 · Mold-Lamp Mediator",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E04 · 곰팡이등 중재자",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Truce mediation",
             "ko": "휴전 중재"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M015",
             "ko": "M015"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E05 · Pressure-Thorax Watcher",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E05 · 압력흉곽 파수인",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Sluice blockade",
             "ko": "수문 봉쇄"
           },
           {
+            "en": "Trade type",
             "ko": "직능형"
           },
           {
+            "en": "M015",
             "ko": "M015"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E06 · Recovered-Breath Archivist",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E06 · 회수숨 기록자",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Testimony recording",
             "ko": "증언 기록"
           },
           {
+            "en": "Trade type",
             "ko": "직능형"
           },
           {
+            "en": "M015",
             "ko": "M015"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E07 · Wastewater Filtration Monk",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E07 · 폐수 여과승",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Water filtration",
             "ko": "수질 여과"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E08 · Hydraulic-Pressure Gatekeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E08 · 수압 길잡이",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Gate opening",
             "ko": "관문 개폐"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E09 · Mycelial-Seam Stitcher",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E09 · 균맥 봉합사",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Crack sealing",
             "ko": "균열 봉합"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E10 · Residual-Heat Tracker",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E10 · 온흔 추적병",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Heat-trace pursuit",
             "ko": "온흔 추적"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E11 · Resonance Bellkeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E11 · 공명 종지기",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Alarm transmission",
             "ko": "경보 송출"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E12 · Scent-Sorting Rationing Officer",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E12 · 취적 배급관",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Goods inspection",
             "ko": "물자 검수"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E13 · Noise Diver",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E13 · 잡음 잠수자",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Leakage feeding",
             "ko": "누전 섭식"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E14 · Spore Midwife",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E14 · 포자 산파모",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Larval nursing",
             "ko": "유생 보육"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E15 · Lime Residual-Marking Recordkeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E15 · 석회 잔향록",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Moisture sealing",
             "ko": "방습 봉쇄"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G10E16 · Flood Pack Carrier",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G10",
+                  "anchor": "g10e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G10E16 · 범람 등짐역",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Water carriage",
             "ko": "수상 운반"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M016",
             "ko": "M016"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g10e01\"></a>",
         "ko": "<a id=\"g10e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g10e01-침수폐-기포농부",
       "depth": 3,
       "text": {
+        "en": "G10E01 · Flooded-Lung Bubble Farmer",
         "ko": "G10E01 · 침수폐 기포농부"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g10e01-침수폐-기포농부-list1",
       "items": [
         {
+          "en": "Source batch: M015",
           "ko": "출처 배치: M015"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g10e01-침수폐-기포농부-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Oxygen rationing",
             "ko": "산소 배급"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A variant growing oxygen moss beds by blowing air into shallow tanks with swim-bladder lungs. Its tongue tip judged only dissolved oxygen within one meter, knew nothing of passage safety or distant air pockets, and the widest moss bed merely gave the oxygen-rationing right — it commanded none of the grid, ventilation, or ration-store circles.",
             "ko": "부레폐로 얕은 수조에 공기를 불어 산소 이끼밭을 기르는 변이체다. 혀끝은 1미터 안의 용존산소만 판별하고 통로 안전이나 먼 공기주머니는 모르며, 가장 넓은 이끼밭이 산소 배급권을 줄 뿐 격자·환기·배급고 원을 지휘하지 않는다."
           }
         ]
@@ -736,6 +1034,7 @@
       "anchor": "역할신체",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -743,6 +1042,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-p1",
       "text": {
+        "en": "A humanoid specimen that grows oxygen-moss beds by blowing air into shallow tanks through swim-bladder lungs between its ribs; with the tip of its tongue, it can determine only dissolved oxygen levels within 1 meter.",
         "ko": "갈비뼈 사이의 부레폐로 얕은 수조에 공기를 불어넣어 산소 이끼밭을 기르는 인간형 개체이며, 혀끝으로 1미터 안의 용존산소 농도만 판별한다."
       }
     },
@@ -751,6 +1051,7 @@
       "anchor": "기원",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -758,6 +1059,7 @@
       "kind": "paragraph",
       "anchor": "기원-p1",
       "text": {
+        "en": "Fungal respiratory residues accumulated on the Yeouido Line joined with the alveoli of long-term survivors, while antibacterial moss from the flooded levels settled in their bronchi, producing the ability to farm underwater.",
         "ko": "여의도선에 축적된 곰팡이성 호흡 잔류물이 장기 생존자의 폐포와 결합하고, 침수층의 항균 이끼가 기관지에 정착하면서 수중 재배 능력이 생겼다."
       }
     },
@@ -766,6 +1068,7 @@
       "anchor": "서식처",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식처"
       }
     },
@@ -773,6 +1076,7 @@
       "kind": "paragraph",
       "anchor": "서식처-p1",
       "text": {
+        "en": "It farms in flooded classrooms and bathtub-shaped reservoirs on the Yeouido Line, moving only its crop plates to Myeongdong Union reservoir zones during flood season; it cannot judge passage safety or locate distant air pockets.",
         "ko": "여의도선의 잠긴 교실과 욕조형 저수조를 농장으로 삼고 홍수기에는 작물판만 명동 연합 저수 구역으로 옮기며, 통로의 안전성이나 먼 공기주머니 위치는 판단하지 못한다."
       }
     },
@@ -781,6 +1085,7 @@
       "anchor": "필요욕구",
       "depth": 3,
       "text": {
+        "en": "Needs and Wants",
         "ko": "필요·욕구"
       }
     },
@@ -788,6 +1093,7 @@
       "kind": "paragraph",
       "anchor": "필요욕구-p1",
       "text": {
+        "en": "Filling its swim-bladder lungs once requires a 200-liter oxygen cylinder and 1 kilogram of antibacterial moss. Blowing air more than four times a day tears the lung membrane, requiring two days of rest.",
         "ko": "부레폐 한 번을 채우는 데 산소통 200리터와 항균 이끼 1킬로그램이 들고, 하루 네 차례 이상 공기를 불면 폐막이 찢어져 이틀 동안 쉬어야 한다."
       }
     },
@@ -796,6 +1102,7 @@
       "anchor": "생명주기유지",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생명주기·유지"
       }
     },
@@ -803,6 +1110,7 @@
       "kind": "paragraph",
       "anchor": "생명주기유지-p1",
       "text": {
+        "en": "An adult pair raises one larva only in a season when they have secured 30 kilograms of moss and 12 kilograms of dried feed. Maturation takes 45 days, and lung-membrane infection means only one in three becomes a farmer.",
         "ko": "성체 한 쌍은 이끼 30킬로그램과 건조 먹이 12킬로그램을 확보한 계절에만 유생 한 명을 키우며 성숙에는 45일이 걸리고, 폐막 감염 때문에 세 명 중 한 명만 농부가 된다."
       }
     },
@@ -811,6 +1119,7 @@
       "anchor": "행동계급",
       "depth": 3,
       "text": {
+        "en": "Behavior and Rank",
         "ko": "행동·계급"
       }
     },
@@ -818,6 +1127,7 @@
       "kind": "paragraph",
       "anchor": "행동계급-p1",
       "text": {
+        "en": "The specimen with the largest moss bed controls oxygen rationing, but sees shapes in darkness only up to 2 meters away and may mistake an empty diving suit for a thief.",
         "ko": "가장 넓은 이끼밭을 가진 개체가 산소 배급권을 맡지만 어둠 속 형체는 2미터까지만 보아, 빈 잠수복을 절도범으로 오인할 수 있다."
       }
     },
@@ -826,6 +1136,7 @@
       "anchor": "단계별-위협",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계별 위협"
       }
     },
@@ -833,6 +1144,7 @@
       "kind": "paragraph",
       "anchor": "단계별-위협-p1",
       "text": {
+        "en": "In ordinary times it pushes back the farm's edges; during oxygen shortages it pulls valves from breathing equipment. If crops rot, it gathers flammable bubbles at the ceiling to block access.",
         "ko": "평상시에는 농장 가장자리를 밀어내고 산소 부족기에는 호흡 장비의 밸브를 뽑으며, 작물이 썩으면 가연성 기포를 천장에 모아 접근을 막는다."
       }
     },
@@ -841,6 +1153,7 @@
       "anchor": "대항전투",
       "depth": 3,
       "text": {
+        "en": "Countermeasures and Combat",
         "ko": "대항·전투"
       }
     },
@@ -848,6 +1161,7 @@
       "kind": "paragraph",
       "anchor": "대항전투-p1",
       "text": {
+        "en": "Avoid flames and use a long tube to drain bubbles into an external storage pouch, reducing both explosion risk and the farmer's fixation. Antibacterial lighting can isolate only the rotted moss.",
         "ko": "불꽃을 피하고 긴 관으로 기포를 외부 저장주머니에 빼내면 폭발 위험과 농부의 집착이 함께 줄며, 항균 조명을 비추면 썩은 이끼만 분리할 수 있다."
       }
     },
@@ -856,6 +1170,7 @@
       "anchor": "협상도덕-선택",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -863,6 +1178,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-p1",
       "text": {
+        "en": "Using HC10's blue buoy and three-knot marker, offer two oxygen cylinders and antibacterial medicine, then carve the exchange quantity into a shell plate. The farmer preserves the terms for a month and supplies clean bubbles and medicinal moss, but if the payment quantity is falsified it reclaims the Myeongdong Union's crop plates.",
         "ko": "HC10의 청색 부표와 세 매듭 표식으로 산소통 두 개와 항균제를 제시하고 조개판에 교환량을 새기면 농부는 한 달간 조건을 보존해 깨끗한 기포와 약용 이끼를 내주지만, 지급량을 속이면 명동 연합 몫의 작물판을 회수한다."
       }
     },
@@ -871,6 +1187,7 @@
       "anchor": "시나리오-연결",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -878,6 +1195,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-p1",
       "text": {
+        "en": "In G10-SC1, compare the Yeouido Line status ID's oxygen production with the H10 world-link water-level record to decide whether to keep the farm. External pressure from XT05 affects only the timing of the Myeongdong Union's relocation and oxygen consumption.",
         "ko": "G10-SC1에서 여의도선 상태 ID의 산소 생산량과 H10 세계 연결 수위 기록을 비교해 농장 존치 여부를 정하며, XT05 외부 압력은 명동 연합 이전 시기와 산소 소모량에만 영향을 준다."
       }
     },
@@ -885,6 +1203,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-p2",
       "text": {
+        "en": "<a id=\"g10e02\"></a>",
         "ko": "<a id=\"g10e02\"></a>"
       }
     },
@@ -893,6 +1212,7 @@
       "anchor": "g10e02-수면막-잠복자",
       "depth": 3,
       "text": {
+        "en": "G10E02 · Surface-Film Lurker",
         "ko": "G10E02 · 수면막 잠복자"
       }
     },
@@ -901,12 +1221,15 @@
       "anchor": "g10e02-수면막-잠복자-list1",
       "items": [
         {
+          "en": "Source batch: M015",
           "ko": "출처 배치: M015"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}"
         }
       ]
@@ -916,42 +1239,52 @@
       "anchor": "g10e02-수면막-잠복자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Surface blockade",
             "ko": "수면 봉쇄"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A variant spreading hydrophobic fungal film from its skin to cut evaporation. It sensed surface shadows only within five meters, could not count more than three approachers because of refraction, and judged intruders by ripple size, classing slow heavy targets as small creatures.",
             "ko": "피부에서 소수성 균막을 펼쳐 증발을 줄이는 변이체다. 수면 그림자는 5미터 안에서만 감지하고 굴절 때문에 접근자를 셋 이상 세지 못하며, 물결 크기로 침입자를 판단하므로 천천히 움직이는 무거운 대상은 작은 생물로 분류한다."
           }
         ]
@@ -962,6 +1295,7 @@
       "anchor": "역할신체-2",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -969,6 +1303,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-2-p1",
       "text": {
+        "en": "A humanoid mutant that spreads a hydrophobic fungal film from its skin, covering shallow water to reduce evaporation and maintain humidity for spore colonies; it senses shadows on the water's surface only within 5 meters.",
         "ko": "피부에서 소수성 균막을 펼치는 인간형 변이체로, 얕은 물을 덮어 증발을 줄이고 포자 군락의 습도를 지키며 수면 그림자는 5미터 안에서만 감지한다."
       }
     },
@@ -977,6 +1312,7 @@
       "anchor": "기원-2",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -984,6 +1320,7 @@
       "kind": "paragraph",
       "anchor": "기원-2-p1",
       "text": {
+        "en": "Respiratory disease residues and waterproof coating left in flooded buildings reconfigured the sweat glands of Yeouido Line survivors into film-secreting organs.",
         "ko": "범람한 건물에 남은 호흡기 질환 잔류물과 방수 피막이 여의도선 생존자의 땀샘을 재구성해 막 분비 기관을 만들었다."
       }
     },
@@ -992,6 +1329,7 @@
       "anchor": "서식처-2",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식처"
       }
     },
@@ -999,6 +1337,7 @@
       "kind": "paragraph",
       "anchor": "서식처-2-p1",
       "text": {
+        "en": "It tends shallow pools on the sunlit upper levels of the Yeouido Line and rolls up the film and moves it to Myeongdong Union reservoirs in the dry season. Refracted shadows keep it from counting more than three approaching people.",
         "ko": "햇빛이 드는 여의도선 상층의 얕은 웅덩이를 관리하고 건기에는 막을 말아 명동 연합 저수조로 옮기지만, 굴절된 그림자 때문에 접근자 수를 셋 이상 세지 못한다."
       }
     },
@@ -1007,6 +1346,7 @@
       "anchor": "필요욕구-2",
       "depth": 3,
       "text": {
+        "en": "Needs and Wants",
         "ko": "필요·욕구"
       }
     },
@@ -1014,6 +1354,7 @@
       "kind": "paragraph",
       "anchor": "필요욕구-2-p1",
       "text": {
+        "en": "Making 10 square meters of surface film consumes 2 kilograms of body fat and 5 liters of purified water. If it does not wash its oil glands every three days, the film sticks to its own face.",
         "ko": "수면막 10제곱미터를 만드는 데 체지방 2킬로그램과 정수 5리터가 소모되며, 사흘마다 기름샘을 씻지 않으면 막이 자기 얼굴에 들러붙는다."
       }
     },
@@ -1022,6 +1363,7 @@
       "anchor": "생명주기유지-2",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생명주기·유지"
       }
     },
@@ -1029,6 +1371,7 @@
       "kind": "paragraph",
       "anchor": "생명주기유지-2-p1",
       "text": {
+        "en": "After storing 8 kilograms of fat, an adult sheds only three film seeds a year. They take 16 days to settle, and in contaminated water 50 percent die from bronchial obstruction.",
         "ko": "성체는 지방 8킬로그램을 비축한 뒤 한 해에 막씨 세 개만 떼어 내고 정착에는 16일이 필요하며, 오염된 물에서는 50퍼센트가 기관지 폐색으로 죽는다."
       }
     },
@@ -1037,6 +1380,7 @@
       "anchor": "행동계급-2",
       "depth": 3,
       "text": {
+        "en": "Behavior and Rank",
         "ko": "행동·계급"
       }
     },
@@ -1044,6 +1388,7 @@
       "kind": "paragraph",
       "anchor": "행동계급-2-p1",
       "text": {
+        "en": "The specimen maintaining the largest film controls water distribution. It judges intruders by the size of ripples, classifying a heavy object moving slowly as a small organism.",
         "ko": "넓은 막을 유지하는 개체가 물 배분권을 갖고, 물결의 크기로 침입자를 판단하므로 천천히 움직이는 무거운 대상은 작은 생물로 분류한다."
       }
     },
@@ -1052,6 +1397,7 @@
       "anchor": "단계별-위협-2",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계별 위협"
       }
     },
@@ -1059,6 +1405,7 @@
       "kind": "paragraph",
       "anchor": "단계별-위협-2-p1",
       "text": {
+        "en": "A thin film can hold a foot in place; when its layers thicken it blocks the view below the surface, and a sudden wave makes it contract to face level and obstruct breathing.",
         "ko": "얇은 막은 발을 붙잡는 수준이지만 겹이 두꺼워지면 수면 아래 시야를 막고, 급격한 파동을 받으면 얼굴 높이로 수축해 호흡을 방해한다."
       }
     },
@@ -1067,6 +1414,7 @@
       "anchor": "대항전투-2",
       "depth": 3,
       "text": {
+        "en": "Countermeasures and Combat",
         "ko": "대항·전투"
       }
     },
@@ -1074,6 +1422,7 @@
       "kind": "paragraph",
       "anchor": "대항전투-2-p1",
       "text": {
+        "en": "Divide the film into small sections with coarse fiber rope and roll it up starting from the edges to prevent a full contraction. Strong lighting increases errors in judging shadows, so use diffused lights.",
         "ko": "거친 섬유 로프로 막을 작은 구획으로 나눈 다음 가장자리부터 감아 올리면 전체 수축이 일어나지 않으며, 강한 조명은 그림자 오판을 키우므로 확산등을 써야 한다."
       }
     },
@@ -1082,6 +1431,7 @@
       "anchor": "협상도덕-선택-2",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1089,6 +1439,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-2-p1",
       "text": {
+        "en": "If HC10 places 10 liters of purified water and 1 kilogram of fat three times inside a square rope marker, the lurker conditions itself to that section as a trading ground for 9 days, opening the passage and maintaining humidity. If the promise is broken, it covers the next passerby's face with film.",
         "ko": "HC10이 사각 로프 표식 안에 정수 10리터와 지방 1킬로그램을 세 번 놓으면 잠복자는 그 구획을 9일간 교환장으로 조건화해 통로를 열고 습도도 유지하지만, 약속이 끊기면 다음 통행자의 얼굴에 막을 씌운다."
       }
     },
@@ -1097,6 +1448,7 @@
       "anchor": "시나리오-연결-2",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1104,6 +1456,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-2-p1",
       "text": {
+        "en": "In G10-SC2, review the Yeouido Line status ID's remaining drinking water and the H10 world-link ration table to enable Myeongdong Union migration talks. XT05 conditions change evaporative loss, not the film's production rate.",
         "ko": "G10-SC2에서 여의도선 상태 ID의 음용수 잔량과 H10 세계 연결 배급표를 검토해야 명동 연합 이주 협상이 가능하며, XT05 조건은 막의 생산 속도가 아니라 증발 손실을 변화시킨다."
       }
     },
@@ -1111,6 +1464,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-2-p2",
       "text": {
+        "en": "<a id=\"g10e03\"></a>",
         "ko": "<a id=\"g10e03\"></a>"
       }
     },
@@ -1119,6 +1473,7 @@
       "anchor": "g10e03-배수관-기침꾼",
       "depth": 3,
       "text": {
+        "en": "G10E03 · Drainpipe Cougher",
         "ko": "G10E03 · 배수관 기침꾼"
       }
     },
@@ -1127,12 +1482,15 @@
       "anchor": "g10e03-배수관-기침꾼-list1",
       "items": [
         {
+          "en": "Source batch: M015",
           "ko": "출처 배치: M015"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}"
         }
       ]
@@ -1142,42 +1500,52 @@
       "anchor": "g10e03-배수관-기침꾼-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Pipe breakthrough",
             "ko": "관로 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A variant blasting compressed coughs through elongated thoracic ducts to push blocked drainage residue out. It read pipe-wall vibration to eight meters, heard airborne speech almost not at all beyond one meter, and chose only the nearer pipe when two shook at once.",
             "ko": "늘어난 흉관으로 압축 기침을 내뿜어 막힌 배수 찌꺼기를 밀어내는 변이체다. 관벽 진동은 8미터까지 읽지만 공기 중 말소리는 1미터 밖에서 거의 들리지 않고, 두 관이 동시에 흔들리면 더 가까운 쪽만 고른다."
           }
         ]
@@ -1188,6 +1556,7 @@
       "anchor": "역할신체-3",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1195,6 +1564,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-3-p1",
       "text": {
+        "en": "A humanoid mutant that emits compressed coughs through an elongated chest tube, pushing debris from clogged drains to lower water levels; it reads vibrations in pipe walls up to 8 meters away.",
         "ko": "길게 늘어난 흉관으로 압축 기침을 내뿜는 인간형 변이체이며, 막힌 배수관의 찌꺼기를 밀어내 수위를 낮추고 관벽 진동은 8미터까지 읽는다."
       }
     },
@@ -1203,6 +1573,7 @@
       "anchor": "기원-3",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1210,6 +1581,7 @@
       "kind": "paragraph",
       "anchor": "기원-3-p1",
       "text": {
+        "en": "Chronic respiratory disease residues on the Yeouido Line repeatedly interacted with pipe pressure, enlarging bronchial cartilage into a one-way pump structure.",
         "ko": "여의도선의 만성 호흡 질환 잔재가 배관 압력과 반복적으로 맞물리면서 기관지 연골이 단방향 펌프 구조로 비대해졌다."
       }
     },
@@ -1218,6 +1590,7 @@
       "anchor": "서식처-3",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식처"
       }
     },
@@ -1225,6 +1598,7 @@
       "kind": "paragraph",
       "anchor": "서식처-3-p1",
       "text": {
+        "en": "It moves between underground drainage rooms and vertical pipe runs, working as far as the Myeongdong Union's outer discharge outlet during seasonal backflow, but can barely hear speech through air beyond 1 meter.",
         "ko": "지하 배수실과 수직 관로 사이를 오가며 계절성 역류 때 명동 연합 외곽 방류구까지 작업하지만, 공기를 통한 말소리는 1미터 밖에서 거의 듣지 못한다."
       }
     },
@@ -1233,6 +1607,7 @@
       "anchor": "필요욕구-3",
       "depth": 3,
       "text": {
+        "en": "Needs and Wants",
         "ko": "필요·욕구"
       }
     },
@@ -1240,6 +1615,7 @@
       "kind": "paragraph",
       "anchor": "필요욕구-3-p1",
       "text": {
+        "en": "One forceful cough takes 500 milliliters of saltwater and requires 20 minutes of breathing rest. The chance of chest-tube rupture rises sharply if it coughs more than six times a day.",
         "ko": "강한 기침 한 번에 염수 500밀리리터가 들고 이후 20분의 호흡 휴식이 필요하며, 하루 여섯 번을 넘기면 흉관 파열 확률이 급증한다."
       }
     },
@@ -1248,6 +1624,7 @@
       "anchor": "생명주기유지-3",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생명주기·유지"
       }
     },
@@ -1255,6 +1632,7 @@
       "kind": "paragraph",
       "anchor": "생명주기유지-3-p1",
       "text": {
+        "en": "An adult grows only one cartilage sac each rainy season and attaches it to a juvenile. Maturation takes 35 days and 5 kilograms of salt; only one in four sacs functions due to failed pressure adaptation.",
         "ko": "성체는 우기마다 연골낭 하나만 키워 어린 개체에게 붙이고 성숙에는 35일과 염분 5킬로그램이 들며, 압력 적응 실패로 네 낭 중 하나만 기능한다."
       }
     },
@@ -1263,6 +1641,7 @@
       "anchor": "행동계급-3",
       "depth": 3,
       "text": {
+        "en": "Behavior and Rank",
         "ko": "행동·계급"
       }
     },
@@ -1270,6 +1649,7 @@
       "kind": "paragraph",
       "anchor": "행동계급-3-p1",
       "text": {
+        "en": "It sets work order by the weight of blockages removed and assigns failed specimens to contaminated pipes, but when two pipes shake at once it chooses only the nearer one.",
         "ko": "제거한 막힘의 무게로 작업 서열을 정하고 실패한 개체를 오염 관로에 배치하지만, 두 관이 동시에 흔들리면 더 가까운 쪽만 선택한다."
       }
     },
@@ -1278,6 +1658,7 @@
       "anchor": "단계별-위협-3",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계별 위협"
       }
     },
@@ -1285,6 +1666,7 @@
       "kind": "paragraph",
       "anchor": "단계별-위협-3-p1",
       "text": {
+        "en": "A weak spray unbalances a target; in the compression phase it fires pipe debris like bullets. After repeated drainage failures, it coughs under pressure at a wall and breaks a new discharge outlet.",
         "ko": "약한 분사는 자세를 무너뜨리고 압축 단계에서는 관 속 파편을 탄환처럼 쏘며, 배수 실패가 이어지면 벽체를 향해 전압 기침을 가해 방류구를 새로 만든다."
       }
     },
@@ -1293,6 +1675,7 @@
       "anchor": "대항전투-3",
       "depth": 3,
       "text": {
+        "en": "Countermeasures and Combat",
         "ko": "대항·전투"
       }
     },
@@ -1300,6 +1683,7 @@
       "kind": "paragraph",
       "anchor": "대항전투-3-p1",
       "text": {
+        "en": "Attach green vibration lamps to the pipe wall to distinguish stop signals from work signals, then open the bypass valve first so accumulated pressure releases into drainage rather than as an attack.",
         "ko": "관벽에 녹색 진동등을 붙여 정지와 작업 신호를 분리하고 우회 밸브를 먼저 열면, 축적된 압력이 공격이 아니라 배수 쪽으로 빠진다."
       }
     },
@@ -1308,6 +1692,7 @@
       "anchor": "협상도덕-선택-3",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1315,6 +1700,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-3-p1",
       "text": {
+        "en": "Use HC10's long-short-long light code and an engraved work plate to offer 4 liters of saltwater and a two-hour rest. The cougher records completed pipes on the plate so both sides can confirm the benefit, but if it is not paid it redirects the next discharge to Myeongdong Union's residential level.",
         "ko": "HC10의 긴 빛·짧은 빛·긴 빛 부호와 새긴 작업판으로 염수 4리터와 두 시간 휴식을 제안하면 기침꾼은 완료 관 수를 판에 남겨 서로 이익을 확인하지만, 대가를 주지 않으면 다음 방류를 명동 연합 거주층으로 돌린다."
       }
     },
@@ -1323,6 +1709,7 @@
       "anchor": "시나리오-연결-3",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1330,6 +1717,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-3-p1",
       "text": {
+        "en": "In G10-SC3, combine the Yeouido Line status ID's flooding rate with the H10 world-link pipe network map to choose which valve to open. XT05 pressure data represents external backflow strength, not a sacrificial zone.",
         "ko": "G10-SC3에서 여의도선 상태 ID의 침수 속도와 H10 세계 연결 관망도를 조합해 개방 밸브를 고르며, XT05 압력 자료는 희생 구역이 아니라 외부 역류 강도를 나타낸다."
       }
     },
@@ -1337,6 +1725,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-3-p2",
       "text": {
+        "en": "<a id=\"g10e04\"></a>",
         "ko": "<a id=\"g10e04\"></a>"
       }
     },
@@ -1345,6 +1734,7 @@
       "anchor": "g10e04-곰팡이등-중재자",
       "depth": 3,
       "text": {
+        "en": "G10E04 · Mold-Lamp Mediator",
         "ko": "G10E04 · 곰팡이등 중재자"
       }
     },
@@ -1353,12 +1743,15 @@
       "anchor": "g10e04-곰팡이등-중재자-list1",
       "items": [
         {
+          "en": "Source batch: M015",
           "ko": "출처 배치: M015"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}"
         }
       ]
@@ -1368,42 +1761,52 @@
       "anchor": "g10e04-곰팡이등-중재자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Truce mediation",
             "ko": "휴전 중재"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A variant mediating cluster disputes with the color and pulse of spinal light-fungal plates. It was no formal ruler, spent sugar every ten minutes of talks, and lighting more than three times a day stiffened the plates dark for two days; warnings beyond four meters required hand-signal confirmation.",
             "ko": "척추 발광 균판의 색과 맥동으로 호흡단 분쟁을 조정한다. 공식 지배자는 아니고 회담 10분마다 당분을 쓰며 하루 세 번 이상 밝히면 균판이 이틀 암색으로 굳고, 4미터 밖 경고는 손동작 확인을 요구한다."
           }
         ]
@@ -1414,6 +1817,7 @@
       "anchor": "역할신체-4",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1421,6 +1825,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-4-p1",
       "text": {
+        "en": "A humanoid mutant with luminous fungal plates growing along its spine, arranging colors and pulse intervals like sentences to mediate disputes within the Flood-Mold Breath Cluster.",
         "ko": "척추를 따라 발광 균판이 돋은 인간형 변이체로, 색과 맥동 간격을 문장처럼 배열해 침수곰팡이호흡단의 분쟁을 조정한다."
       }
     },
@@ -1429,6 +1834,7 @@
       "anchor": "기원-4",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1436,6 +1842,7 @@
       "kind": "paragraph",
       "anchor": "기원-4-p1",
       "text": {
+        "en": "Respiratory disease residues on the Yeouido Line became symbiotic with the nervous system, converting emotion-driven changes in body temperature into luminous signals on the fungal plates.",
         "ko": "여의도선의 호흡 질환 잔재가 신경계와 공생하면서 감정에 따른 체온 변화를 균판의 발광 신호로 바꾸게 되었다."
       }
     },
@@ -1444,6 +1851,7 @@
       "anchor": "서식처-4",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식처"
       }
     },
@@ -1451,6 +1859,7 @@
       "kind": "paragraph",
       "anchor": "서식처-4-p1",
       "text": {
+        "en": "It meets several groups on the relatively dry middle levels of the Yeouido Line and stays at the center of Myeongdong Union processions during seasonal migration. Beyond 6 meters it perceives reflected light by brightness rather than color.",
         "ko": "여의도선의 비교적 마른 중간층에서 여러 무리를 만나고 계절 이동기에는 명동 연합 행렬 중앙에 머물며, 반사광은 6미터 너머에서 색보다 밝기로만 인식한다."
       }
     },
@@ -1459,6 +1868,7 @@
       "anchor": "필요욕구-4",
       "depth": 3,
       "text": {
+        "en": "Needs and Wants",
         "ko": "필요·욕구"
       }
     },
@@ -1466,6 +1876,7 @@
       "kind": "paragraph",
       "anchor": "필요욕구-4-p1",
       "text": {
+        "en": "It consumes 150 grams of sugar for every 10 minutes of talks. If it illuminates its plates more than three times a day, they harden dark for two days, so it handles only important disputes.",
         "ko": "회담 10분마다 당분 150그램을 소비하고 하루 세 차례 이상 밝히면 균판이 이틀간 암색으로 굳어, 중요한 분쟁만 골라 다룬다."
       }
     },
@@ -1474,6 +1885,7 @@
       "anchor": "생명주기유지-4",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생명주기·유지"
       }
     },
@@ -1481,6 +1893,7 @@
       "kind": "paragraph",
       "anchor": "생명주기유지-4-p1",
       "text": {
+        "en": "A mediator can graft only one fungal-plate fragment to a successor once every two years. Learning the signals takes 60 days, and immune rejection disqualifies half the candidates.",
         "ko": "중재자는 2년에 한 번만 균판 조각 하나를 후계자에게 이식할 수 있고 신호 습득에는 60일이 걸리며, 면역 거부로 절반의 후보가 자격을 잃는다."
       }
     },
@@ -1489,6 +1902,7 @@
       "anchor": "행동계급-4",
       "depth": 3,
       "text": {
+        "en": "Behavior and Rank",
         "ko": "행동·계급"
       }
     },
@@ -1496,6 +1910,7 @@
       "kind": "paragraph",
       "anchor": "행동계급-4-p1",
       "text": {
+        "en": "It is not an official ruler, but maintains luminous grammar and trade records. It can distinguish red from brown only at close range and requires a confirming hand gesture for warnings beyond 4 meters.",
         "ko": "공식 지배자는 아니지만 발광 문법과 거래 기록을 관리하고, 붉은색과 갈색을 가까이에서만 구별해 거리 4미터 밖의 경고에는 손동작 확인을 요구한다."
       }
     },
@@ -1504,6 +1919,7 @@
       "anchor": "단계별-위협-4",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계별 위협"
       }
     },
@@ -1511,6 +1927,7 @@
       "kind": "paragraph",
       "anchor": "단계별-위협-4-p1",
       "text": {
+        "en": "When sugar is sufficient, it suppresses conflict; in a shortage it omits parts of sentences. If its fungal plates are attacked, nearby groups take it as a breach of truce and respond together.",
         "ko": "당이 충분하면 충돌을 억제하고 결핍 상태에서는 문장 일부를 생략하며, 균판이 공격받으면 주변 무리가 휴전 파기로 받아들여 공동 대응한다."
       }
     },
@@ -1519,6 +1936,7 @@
       "anchor": "대항전투-4",
       "depth": 3,
       "text": {
+        "en": "Countermeasures and Combat",
         "ko": "대항·전투"
       }
     },
@@ -1526,6 +1944,7 @@
       "kind": "paragraph",
       "anchor": "대항전투-4-p1",
       "text": {
+        "en": "Pair color signals with consistent hand gestures and floor vibrations to reduce misinterpretation. Instead of the fungal plates, spread a light-blocking cloth beneath its feet to stop it speaking without injury.",
         "ko": "색 신호 옆에 일정한 손동작과 바닥 진동을 병행하면 오역을 줄일 수 있고, 균판 대신 발밑의 차광포를 펼치면 부상 없이 발언을 중단시킬 수 있다."
       }
     },
@@ -1534,6 +1953,7 @@
       "anchor": "협상도덕-선택-4",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1541,6 +1961,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-4-p1",
       "text": {
+        "en": "Request talks with HC10's three white flashes and offer 600 grams of sugar and safe passage, then record both sides' terms on a knot board. The mediator approves water exchange for both the Yeouido Line and Myeongdong Union, but any violation invalidates that group's luminous markers for 30 days.",
         "ko": "HC10의 흰빛 세 번으로 회담을 청하고 당분 600그램과 안전 통행을 제시한 뒤 매듭판에 쌍방 조건을 남기면 중재자는 여의도선과 명동 연합 모두의 물 교환을 승인하지만, 어느 쪽이 위반해도 해당 집단의 발광 표식을 30일간 무효화한다."
       }
     },
@@ -1549,6 +1970,7 @@
       "anchor": "시나리오-연결-4",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1556,6 +1978,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-4-p1",
       "text": {
+        "en": "In G10-SC1 and G10-SC2, interpret the Yeouido Line status ID's truce phase and H10 world-link testimony to finalize the Myeongdong Union migration agreement. XT05 conditions shorten the time available for negotiations but do not change the meaning of the luminous signals.",
         "ko": "G10-SC1과 G10-SC2에서 여의도선 상태 ID의 휴전 단계와 H10 세계 연결 증언을 해석해 명동 연합 이동 합의를 확정하며, XT05 상황은 협상 가능 시간을 줄일 뿐 발광 의미를 바꾸지 않는다."
       }
     },
@@ -1563,6 +1986,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-4-p2",
       "text": {
+        "en": "<a id=\"g10e05\"></a>",
         "ko": "<a id=\"g10e05\"></a>"
       }
     },
@@ -1571,6 +1995,7 @@
       "anchor": "g10e05-압력흉곽-파수인",
       "depth": 3,
       "text": {
+        "en": "G10E05 · Pressure-Thorax Watcher",
         "ko": "G10E05 · 압력흉곽 파수인"
       }
     },
@@ -1579,12 +2004,15 @@
       "anchor": "g10e05-압력흉곽-파수인-list1",
       "items": [
         {
+          "en": "Source batch: M015",
           "ko": "출처 배치: M015"
         },
         {
+          "en": "Legacy role group: Trade type",
           "ko": "기존 역할군: 직능형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}"
         }
       ]
@@ -1594,42 +2022,52 @@
       "anchor": "g10e05-압력흉곽-파수인-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Sluice blockade",
             "ko": "수문 봉쇄"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A giant finding sudden load-wall change with sternal hydraulic-sensing sacs and blocking the way with its body. It read pressure size within ten meters but not vibration direction beyond six, and putting structural safety above standing, it stood in for none of the three circles' politics.",
             "ko": "흉골 수압 감지낭으로 하중벽의 급변을 찾아 몸으로 길을 막는 거체다. 10미터 안의 압력 크기는 읽어도 6미터 밖 진동 방향은 구별하지 못하고, 구조 안전을 지위보다 앞세우므로 세 원의 정치를 대신하지 않는다."
           }
         ]
@@ -1640,6 +2078,7 @@
       "anchor": "역할신체-5",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1647,6 +2086,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-5-p1",
       "text": {
+        "en": "A giant humanoid mutant with a hydraulic-pressure sensing sac inside its sternum, it detects sudden pressure changes in load-bearing walls and physically seals off dangerous areas.",
         "ko": "흉골 안쪽에 수압 감지낭을 지닌 거대한 인간형 변이체로, 하중벽의 급격한 압력 변화를 찾아 위험 구역을 물리적으로 봉쇄한다."
       }
     },
@@ -1655,6 +2095,7 @@
       "anchor": "기원-5",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1662,6 +2103,7 @@
       "kind": "paragraph",
       "anchor": "기원-5-p1",
       "text": {
+        "en": "While security personnel exposed to remnants of a respiratory disease on the Yeouido Line endured repeated hydraulic-pressure injuries, their chest tissue transformed into a fluid-based sensory organ.",
         "ko": "여의도선에서 호흡 질환 잔재에 노출된 경비 인력이 반복된 수압 손상을 견디는 동안 가슴 조직을 액체식 감지기관으로 바꾸었다."
       }
     },
@@ -1670,6 +2112,7 @@
       "anchor": "서식처-5",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식처"
       }
     },
@@ -1677,6 +2120,7 @@
       "kind": "paragraph",
       "anchor": "서식처-5-p1",
       "text": {
+        "en": "It guards the floodgates and load-bearing walls of the Yeouido Line and claims the Myeongdong Union junction during flood season. It can read pressure magnitude within 10 meters but cannot distinguish the direction of vibrations beyond 6 meters.",
         "ko": "여의도선의 수문과 하중벽 주변을 지키고 홍수기에는 명동 연합 연결부를 선점하며, 10미터 안의 압력 크기는 읽어도 6미터 밖 진동의 방향은 구별하지 못한다."
       }
     },
@@ -1685,6 +2129,7 @@
       "anchor": "필요욕구-5",
       "depth": 3,
       "text": {
+        "en": "Needs and Desires",
         "ko": "필요·욕구"
       }
     },
@@ -1692,6 +2137,7 @@
       "kind": "paragraph",
       "anchor": "필요욕구-5-p1",
       "text": {
+        "en": "Each sensing sac requires 12 liters of purified fluid, of which 1 liter becomes contaminated every month. If the entire supply cannot be replaced, it judges even small tremors to be signs of collapse.",
         "ko": "감지낭마다 정제액 12리터가 필요하고 한 달에 1리터씩 오염되며, 전량을 교환하지 못하면 작은 흔들림까지 붕괴 징후로 판정한다."
       }
     },
@@ -1700,6 +2146,7 @@
       "anchor": "생명주기유지-5",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Upkeep",
         "ko": "생명주기·유지"
       }
     },
@@ -1707,6 +2154,7 @@
       "kind": "paragraph",
       "anchor": "생명주기유지-5-p1",
       "text": {
+        "en": "Once every 3 years, an adult passes one piece of sensing-sac seed tissue to an apprentice. Adaptation takes 90 days and 30 liters of purified fluid, and the tissue hardens in roughly one of every two candidates.",
         "ko": "성체는 3년에 한 번 감지낭 씨조직 하나를 견습 개체에게 넘기고 적응에는 90일과 정제액 30리터가 들며, 두 후보 중 한 명꼴로 조직이 굳는다."
       }
     },
@@ -1715,6 +2163,7 @@
       "anchor": "행동계급-5",
       "depth": 3,
       "text": {
+        "en": "Behavior and Rank",
         "ko": "행동·계급"
       }
     },
@@ -1722,6 +2171,7 @@
       "kind": "paragraph",
       "anchor": "행동계급-5-p1",
       "text": {
+        "en": "It treats structural safety as its highest rule, disregarding status and personal ties. Successors record the sternum-strike standards left by elders as numbers on stone tablets.",
         "ko": "구조 안전을 최우선 규율로 삼아 지위와 친분을 무시하고, 노령 개체가 남긴 흉골 타격 기준을 후계자가 돌판에 숫자로 기록한다."
       }
     },
@@ -1730,6 +2180,7 @@
       "anchor": "단계별-위협-5",
       "depth": 3,
       "text": {
+        "en": "Threat by Stage",
         "ko": "단계별 위협"
       }
     },
@@ -1737,6 +2188,7 @@
       "kind": "paragraph",
       "anchor": "단계별-위협-5-p1",
       "text": {
+        "en": "At low alert, it blocks the way with its body; at the intermediate stage, it pushes approaching people back with a pressure wave from its chest. Once the collapse threshold is exceeded, it closes the floodgate and floods the area.",
         "ko": "낮은 경계에서는 몸으로 길을 막고 중간 단계에는 가슴 압력파로 접근자를 밀치며, 붕괴 임계치를 넘으면 수문을 닫아 해당 구역을 침수시킨다."
       }
     },
@@ -1745,6 +2197,7 @@
       "anchor": "대항전투-5",
       "depth": 3,
       "text": {
+        "en": "Countermeasures and Combat",
         "ko": "대항·전투"
       }
     },
@@ -1752,6 +2205,7 @@
       "kind": "paragraph",
       "anchor": "대항전투-5-p1",
       "text": {
+        "en": "Rather than stimulating it from several directions, slowly moving the pressure source with a single water bag can draw its attention. Draining the sensing sac briefly incapacitates it but leaves it prone to permanent misjudgment.",
         "ko": "여러 방향에서 자극하지 말고 한 개의 물주머니로 압력원을 천천히 이동시키면 시선을 유도할 수 있으며, 감지낭 배액은 잠깐 무력화하지만 영구적인 오판을 남긴다."
       }
     },
@@ -1760,6 +2214,7 @@
       "anchor": "협상도덕-선택-5",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1767,6 +2222,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-5-p1",
       "text": {
+        "en": "If HC10 gives a single hammer signal, then presents a scale model and 200 kilograms of reinforcement material and carves the permitted load into the sentinel's sternum plate, they gain both a safe detour and monitoring. But anyone who exceeds the limit must accept that the floodgate may close without another warning.",
         "ko": "HC10이 단일 망치 신호 뒤 축소 모형과 보강재 200킬로그램을 제시하고 파수인의 흉골판에 허용 하중을 새기면 안전한 우회로와 감시를 함께 얻지만, 기준을 넘긴 쪽은 다음 경고 없이 수문 폐쇄를 감수한다."
       }
     },
@@ -1775,6 +2231,7 @@
       "anchor": "시나리오-연결-5",
       "depth": 3,
       "text": {
+        "en": "Scenario Connection",
         "ko": "시나리오 연결"
       }
     },
@@ -1782,6 +2239,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-5-p1",
       "text": {
+        "en": "In G10-SC3, the sentinel compares wall cracks in the Yeouido Line status ID against H10's world-connection structural records to decide whether to lift the blockade. The XT05 figure represents an increase in external hydraulic pressure, not a physical destination.",
         "ko": "G10-SC3에서 여의도선 상태 ID의 벽체 균열과 H10 세계 연결 구조 기록을 대조해 봉쇄 해제를 판단하며, XT05 수치는 물리적 목적지가 아니라 외부 수압 증가분이다."
       }
     },
@@ -1789,6 +2247,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-5-p2",
       "text": {
+        "en": "<a id=\"g10e06\"></a>",
         "ko": "<a id=\"g10e06\"></a>"
       }
     },
@@ -1797,6 +2256,7 @@
       "anchor": "g10e06-회수숨-기록자",
       "depth": 3,
       "text": {
+        "en": "G10E06 · Recovered-Breath Archivist",
         "ko": "G10E06 · 회수숨 기록자"
       }
     },
@@ -1805,12 +2265,15 @@
       "anchor": "g10e06-회수숨-기록자-list1",
       "items": [
         {
+          "en": "Source batch: M015",
           "ko": "출처 배치: M015"
         },
         {
+          "en": "Legacy role group: Trade type",
           "ko": "기존 역할군: 직능형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"houses\":[\"HC10\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"H10\"],\"scenarios\":[\"G10-SC1\",\"G10-SC2\",\"G10-SC3\"]}"
         }
       ]
@@ -1820,42 +2283,52 @@
       "anchor": "g10e06-회수숨-기록자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Testimony recording",
             "ko": "증언 기록"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A variant storing coughs and last words in multilayer vocal sacs to match infection routes. Speech beyond seven meters lost over half its consonants, faces showed only outlines even within two meters, and it judged people using the same voice and rhythm as one person.",
             "ko": "다층 성대낭에 기침과 마지막 말을 저장해 감염 경로를 대조한다. 7미터 밖 말은 자음 절반 이상을 잃고 얼굴은 2미터 안에서도 윤곽만 보아, 같은 목소리와 박자를 쓰는 사람을 동일 인물로 판단한다."
           }
         ]
@@ -1866,6 +2339,7 @@
       "anchor": "역할신체-6",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1873,6 +2347,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-6-p1",
       "text": {
+        "en": "A humanoid mutant that stores other people's coughs and last words in a multilayered vocal sac inside its throat, it compares voice samples to record infection routes and times of death.",
         "ko": "목 안쪽의 다층 성대낭에 타인의 기침과 마지막 말을 저장하는 인간형 변이체로, 음성 표본을 대조해 감염 경로와 사망 시점을 기록한다."
       }
     },
@@ -1881,6 +2356,7 @@
       "anchor": "기원-6",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1888,6 +2364,7 @@
       "kind": "paragraph",
       "anchor": "기원-6-p1",
       "text": {
+        "en": "Remnants of a respiratory disease in a flooded building took hold in the damaged vocal cords of a Yeouido Line records manager, granting the ability to mimic voices and preserve spore samples.",
         "ko": "침수 건물의 호흡기 질환 잔재가 여의도선 기록 관리자의 손상된 성대에 자리 잡아 음성 모사와 포자 표본 보존 능력을 부여했다."
       }
     },
@@ -1896,6 +2373,7 @@
       "anchor": "서식처-6",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식처"
       }
     },
@@ -1903,6 +2381,7 @@
       "kind": "paragraph",
       "anchor": "서식처-6-p1",
       "text": {
+        "en": "It sorts samples on the Yeouido Line's document-storage level and, during seasonal migrations, carries testimony related to H10 as far as S15. Speech from beyond 7 meters loses more than half its consonants.",
         "ko": "여의도선 문서 보관층에서 표본을 분류하고 계절 이동 때 H10 관련 증언을 품고 S15까지 동행하며, 7미터 밖의 말은 자음 절반 이상을 잃는다."
       }
     },
@@ -1911,6 +2390,7 @@
       "anchor": "필요욕구-6",
       "depth": 3,
       "text": {
+        "en": "Needs and Desires",
         "ko": "필요·욕구"
       }
     },
@@ -1918,6 +2398,7 @@
       "kind": "paragraph",
       "anchor": "필요욕구-6-p1",
       "text": {
+        "en": "Preserving one vocal sac requires 2 liters of water for moistening each day and 6 hours of silence. It can hold at most 24 voices, so each new recording requires erasing an existing sample.",
         "ko": "성대낭 하나를 보존하는 데 하루 습수 2리터와 6시간의 침묵이 필요하고 최대 24개 음성만 담을 수 있어 새 기록마다 기존 표본 하나를 지워야 한다."
       }
     },
@@ -1926,6 +2407,7 @@
       "anchor": "생명주기유지-6",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Upkeep",
         "ko": "생명주기·유지"
       }
     },
@@ -1933,6 +2415,7 @@
       "kind": "paragraph",
       "anchor": "생명주기유지-6-p1",
       "text": {
+        "en": "An archivist passes a fragment of its vocal sac to only one successor in its lifetime. The transfer takes 40 days and 10 liters of medicinal syrup, and errors in sentence order leave about 30 percent of the recordings incomplete.",
         "ko": "기록자는 생애에 후계자 한 명에게만 성대낭 조각을 넘기며 전승에는 40일과 약용 당액 10리터가 들고, 문장 순서 오류로 약 30퍼센트의 기록이 불완전해진다."
       }
     },
@@ -1941,6 +2424,7 @@
       "anchor": "행동계급-6",
       "depth": 3,
       "text": {
+        "en": "Behavior and Rank",
         "ko": "행동·계급"
       }
     },
@@ -1948,6 +2432,7 @@
       "kind": "paragraph",
       "anchor": "행동계급-6-p1",
       "text": {
+        "en": "It prioritizes rare sounds of infection and statements whose speakers have been identified. But even within 2 meters it sees only the outline of a face, so it judges people using the same voice and rhythm to be the same person.",
         "ko": "희귀한 감염음과 신원 확인이 끝난 발언에 우선순위를 주지만 얼굴은 2미터 안에서도 윤곽만 보아, 같은 목소리와 박자를 쓰는 사람을 동일 인물로 판단한다."
       }
     },
@@ -1956,6 +2441,7 @@
       "anchor": "단계별-위협-6",
       "depth": 3,
       "text": {
+        "en": "Threat by Stage",
         "ko": "단계별 위협"
       }
     },
@@ -1963,6 +2449,7 @@
       "kind": "paragraph",
       "anchor": "단계별-위협-6-p1",
       "text": {
+        "en": "Under normal circumstances, it vocalizes only requested samples. Under coercion, it coughs out infectious droplets; when captured, it overlaps several voices to draw in nearby guards.",
         "ko": "평상시에는 요청받은 표본만 발성하고 강압을 받으면 감염성 비말이 섞인 기침을 내며, 포획될 때에는 여러 목소리를 겹쳐 주변 경비를 끌어들인다."
       }
     },
@@ -1971,6 +2458,7 @@
       "anchor": "대항전투-6",
       "depth": 3,
       "text": {
+        "en": "Countermeasures and Combat",
         "ko": "대항·전투"
       }
     },
@@ -1978,6 +2466,7 @@
       "kind": "paragraph",
       "anchor": "대항전투-6-p1",
       "text": {
+        "en": "Anyone approaching should first identify themselves with a distinctive hand-drum rhythm and wrap sound-absorbing cloth around the vocal sac. Avoiding pressure on its throat can stop it from vocalizing without damaging its stored inventory.",
         "ko": "접근자는 고유한 손북 박자로 신원을 먼저 밝히고 흡음 천을 성대낭 둘레에 감아야 하며, 목을 압박하지 않으면 저장 목록을 훼손하지 않고 발성을 막을 수 있다."
       }
     },
@@ -1986,6 +2475,7 @@
       "anchor": "협상도덕-선택-6",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1993,6 +2483,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-6-p1",
       "text": {
+        "en": "If HC10 offers a personal rhythm and a proposal for a one-to-one exchange of memories, then marks the items to erase and preserve on a knotted cord, the archivist accepts medicine in return for replaying specified testimony to help both sides establish the truth. If asked for a recording outside the agreement, it registers the negotiator's voice as a sample of a dangerous person.",
         "ko": "HC10의 개인 박자와 일대일 기억 교환안을 제시하고 삭제·보존 항목을 매듭끈에 남기면 기록자는 의약품을 받는 대신 지정 증언을 재생해 양측의 진상 확인을 돕지만, 합의 밖의 녹음을 요구하면 협상자의 목소리를 위험 인물 표본으로 등록한다."
       }
     },
@@ -2001,6 +2492,7 @@
       "anchor": "시나리오-연결-6",
       "depth": 3,
       "text": {
+        "en": "Scenario Connection",
         "ko": "시나리오 연결"
       }
     },
@@ -2008,6 +2500,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-6-p1",
       "text": {
+        "en": "In G10-SC2 and G10-SC3, it fills gaps in the infection timeline in the Yeouido Line status ID and H10's world-connection records, and verifies Myeongdong Union movement records. XT05 pressure is a time constraint determining which testimony must be expended first, not a limit on storage capacity.",
         "ko": "G10-SC2와 G10-SC3에서 여의도선 상태 ID의 감염 연표와 H10 세계 연결 공백을 보완하고 명동 연합 이동 기록을 검증하며, XT05 압박은 저장 용량이 아니라 어느 증언을 먼저 소모할지 결정하는 시간 제약이다."
       }
     },
@@ -2015,6 +2508,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-6-p2",
       "text": {
+        "en": "<a id=\"g10e07\"></a>",
         "ko": "<a id=\"g10e07\"></a>"
       }
     },
@@ -2023,6 +2517,7 @@
       "anchor": "g10e07-폐수-여과승",
       "depth": 3,
       "text": {
+        "en": "G10E07 · Wastewater Filtration Monk",
         "ko": "G10E07 · 폐수 여과승"
       }
     },
@@ -2031,12 +2526,15 @@
       "anchor": "g10e07-폐수-여과승-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"]}"
         }
       ]
@@ -2046,42 +2544,52 @@
       "anchor": "g10e07-폐수-여과승-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Water filtration",
             "ko": "수질 여과"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A working class purifying the shared waterway with fungal-film filters inside its ribs. Its intake whiskers distinguished only particles touching flowing water, found no turbidity source in still pools or currents changing direction over twice a second, and saw whoever damaged the filter medium as a greater enemy than the clear-water monopolist.",
             "ko": "갈비 안쪽 균사막으로 공동 수로를 정화하는 실무 계급이다. 입수염은 흐르는 물에 닿은 입자만 구별하고 정지 웅덩이나 초당 두 번 이상 방향이 바뀌는 물살에서는 탁도 근원을 찾지 못하며, 여과재를 훼손하는 자를 맑은 물 독점자보다 큰 적으로 본다."
           }
         ]
@@ -2092,33 +2600,43 @@
       "anchor": "g10e07-폐수-여과승-list3",
       "items": [
         {
+          "en": "Role and Body: A humanoid that purifies the shared waterways of the Flood-Mold Breathing Order, with a charcoal-colored mycelial membrane and sediment sacs layered inside its splayed ribs. Its mouth barbels distinguish only particles that have touched flowing water; in a still pool or a current that changes direction more than twice per second, it cannot locate the source of turbidity.",
           "ko": "역할·신체: 침수곰팡이호흡단의 공동 수로를 정화하는 인간형 개체로, 벌어진 갈비뼈 안쪽에 숯빛 균사막과 침전물 주머니가 겹쳐 있다. 입수염은 흐르는 물에 닿은 입자만 구별하며, 정지한 웅덩이나 초당 두 번 이상 방향이 바뀌는 물살에서는 탁도의 근원을 찾지 못한다."
         },
         {
+          "en": "Origin: The first individual arose when respiratory-disease sediment accumulated in a Yeouido Line drainage tank, activated carbon from spent filters, and survivors' damaged alveoli fermented together over a long period.",
           "ko": "기원: 여의도선 배수조에 쌓인 호흡기 질환 침전물, 폐필터의 활성탄, 생존자의 손상된 폐포가 장기간 한 덩어리로 발효되면서 최초 개체가 생겼다."
         },
         {
+          "en": "Habitat: It braces itself across each inlet of an underground reservoir to form a movable filtration wall. In the rainy season, it occupies backflow openings to keep contaminants drifting in from the Myeongdong Union from spreading deeper into the Yeouido Line.",
           "ko": "서식처: 지하 저수조의 유입구마다 몸을 걸어 이동식 여과벽을 만들고, 우기에는 명동 연합에서 떠내려오는 오염물이 여의도선 안쪽으로 퍼지지 않도록 역류구를 점유한다."
         },
         {
+          "en": "Needs and Desires: Washing one mycelial membrane takes four containers of purified water, while regeneration requires a handful of iron salt and a fresh sheet of charcoal cloth. If reserves fall below two days' worth, it demands that spawning tanks be cleaned before drinking water is supplied, though it understands that giving some treated water to other survivors also reduces the contamination burden on the colony as a whole.",
           "ko": "필요·욕구: 균사막 한 벌을 씻는 데 정수 네 통이 들고, 재생에는 철염 한 줌과 새 숯천 한 장이 필요하다. 비축분이 이틀치 아래로 내려가면 식수보다 산란조 세척을 먼저 요구하지만, 처리한 물의 일부를 다른 생존자에게 돌려야 군락 전체의 오염 부하도 줄어든다는 사실은 이해한다."
         },
         {
+          "en": "Life Cycle and Upkeep: A fluid-form emerging from a filtration sac becomes an adult after three membrane changes over twenty days, and an adult can produce only two filtration sacs in its lifetime. If backwashing is neglected for more than twelve hours, its sacs begin to harden and blacken; on the third day, it collapses from calcareous blockage.",
           "ko": "생명주기·유지: 여과낭에서 나온 유체는 스무 날 동안 세 차례 막갈이를 거쳐 성체가 되며 한 성체가 남길 수 있는 여과낭은 평생 둘뿐이다. 역세척을 열두 시간 넘겨 거르면 주머니가 검게 굳기 시작하고, 사흘째에는 석회성 폐색으로 쓰러진다."
         },
         {
+          "en": "Behavior and Rank: It belongs to a working rank that marks purification quantities on knotted cords to determine the order of water distribution, and suspends even a superior's orders when a leak or toxic inflow is confirmed. It considers someone who damages filter media a greater enemy than someone who monopolizes clean water.",
           "ko": "행동·계급: 정화량을 매듭끈으로 표시해 급수 순서를 정하는 실무 계급이며, 누수나 독성 유입이 확인되면 상위 개체의 명령도 보류한다. 맑은 물을 독점하는 자보다 여과재를 훼손하는 자를 더 큰 적으로 간주한다."
         },
         {
+          "en": "Threat by Stage: Young filtration sacs cling to skin and draw out moisture, while membrane-changing fluid-forms consume the oxygen in a passage. Adults wrap their rib membranes around arms and faces to restrain people, and an individual on the verge of blockage vomits concentrated sludge, rendering an entire waterway unusable.",
           "ko": "단계별 위협: 어린 여과낭은 피부에 달라붙어 수분을 빼앗고, 막갈이 유체는 통로의 산소를 소비한다. 성체는 갈비막으로 팔과 얼굴을 감싸 구속하며, 폐색 직전 개체는 농축 오니를 토해 수로 하나를 통째로 사용할 수 없게 만든다."
         },
         {
+          "en": "Countermeasures and Combat: Exploiting the limits of its mouth barbels, alternately running clean water through several shallow grooves makes it lose track of the direction of the material it needs to purify. Even if an attack is necessary, it is better to close the inlet valve and slowly pour in neutral water to loosen the sediment than to tear the membrane; this prevents a sludge spray while reducing its ability to act.",
           "ko": "대항·전투: 입수염의 한계를 이용해 얕은 홈 여러 곳에 깨끗한 물을 번갈아 흘리면 정화 대상의 방향을 잃는다. 공격해야 할 때도 막을 찢기보다 유입 밸브를 닫고 중성수를 천천히 부어 침전물을 풀면 오니 분사를 막으면서 행동력을 낮출 수 있다."
         },
         {
+          "en": "Negotiation and Moral Choice: Setting a white bottle of purified water beside a black bottle of contaminated water is a proposal signal they recognize. If given charcoal cloth and iron salt, and if the proportion of treated water is agreed upon using colored knots, they remember the terms for three days and both sides obtain clean water. But if the promised share is diverted, they hang a black knot on the water outlet and cut off that group's supply first. HC10 can balance the share for treating residents against the share for maintaining spawning tanks, while H10 presents a precedent involving a white knot that gave water to refugees first.",
           "ko": "협상·도덕 선택: 흰 병에는 정수, 검은 병에는 오염수를 담아 나란히 놓는 것이 이들이 인정하는 제안 신호다. 숯천과 철염을 제공하고 처리수의 비율을 색 매듭으로 합의하면 조건을 사흘간 기억해 양쪽이 깨끗한 물을 얻지만, 약속한 몫을 빼돌리면 검은 매듭을 급수구에 걸고 해당 집단의 물부터 차단한다. HC10은 주민 치료분과 산란조 유지분을 조정할 수 있고, H10은 과거 피난민에게 먼저 물을 내준 흰 매듭 사례를 제시한다."
         },
         {
+          "en": "Scenario Connection: In G10-SC1, the decision is whether to operate the Yeouido Line's last filtration tank jointly or seal the Myeongdong Union inlet and save only one side. HC10's distribution plan and H10's knot records provide grounds for negotiation, while XT05 acts as an external pressure figure that hastens the decision, not as purified water itself.",
           "ko": "시나리오 연결: G10-SC1에서는 여의도선의 마지막 여과조를 공동 운영할지, 명동 연합 유입구를 봉쇄해 한쪽만 살릴지 결정한다. HC10의 배분안과 H10의 매듭 기록이 협상 근거가 되며, XT05는 정수 자체가 아니라 결정을 재촉하는 외부 압박 수치로 작용한다."
         }
       ]
@@ -2127,6 +2645,7 @@
       "kind": "paragraph",
       "anchor": "g10e07-폐수-여과승-p4",
       "text": {
+        "en": "<a id=\"g10e08\"></a>",
         "ko": "<a id=\"g10e08\"></a>"
       }
     },
@@ -2135,6 +2654,7 @@
       "anchor": "g10e08-수압-길잡이",
       "depth": 3,
       "text": {
+        "en": "G10E08 · Hydraulic-Pressure Gatekeeper",
         "ko": "G10E08 · 수압 길잡이"
       }
     },
@@ -2143,12 +2663,15 @@
       "anchor": "g10e08-수압-길잡이-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"]}"
         }
       ]
@@ -2158,42 +2681,52 @@
       "anchor": "g10e08-수압-길잡이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Gate opening",
             "ko": "관문 개폐"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A gatekeeper measuring both sides' pressure difference with a collarbone capillary comb. Measurement stayed within two steps of its body; despite the guide name it found no travel routes and led no Yeouido Line or Myeongdong coalition columns, learning only one door's open-close rule.",
             "ko": "쇄골 모세관 빗으로 문 양쪽 압력차를 재는 관문지기다. 측정은 몸에서 두 걸음 이내이고 이름은 길잡이지만 이동 경로를 찾거나 여의도선과 명동 연합 대열을 인도하지 않으며, 특정 문짝의 개폐 규칙만 익힌다."
           }
         ]
@@ -2204,33 +2737,43 @@
       "anchor": "g10e08-수압-길잡이-list3",
       "items": [
         {
+          "en": "Role and Body: A humanoid gatekeeper that uses a comb of glassy capillaries extending from its collarbone to measure the pressure difference across a door and manage when the floodgate opens. Its measuring range is within two steps of its body, and its scale saturates if the capillaries are exposed to pressure from one side for more than thirty seconds. It therefore does not find travel routes or guide columns between the Yeouido Line and the Myeongdong Union.",
           "ko": "역할·신체: 쇄골에서 뻗은 유리질 모세관 빗으로 문 양쪽의 압력차를 재고 수문 개방 시점을 관리하는 인간형 관문지기다. 측정 범위는 몸에서 두 걸음 이내이고 모세관이 한쪽 압력에 삼십 초 이상 노출되면 눈금이 포화되므로, 이동 경로를 찾거나 여의도선과 명동 연합 사이의 대열을 인도하지 않는다."
         },
         {
+          "en": "Origin: It appeared after a fire-door manager in a flooded office building was exposed for a long time to shattered pressure-gauge glass and building mold, transforming the neck bones and collarbones into instrument-like sensory organs.",
           "ko": "기원: 침수 사무동의 방화문 관리자가 깨진 압력계 유리와 건물 곰팡이에 장기간 노출된 뒤, 목뼈와 쇄골이 계기판 같은 감각 기관으로 변하면서 나타났다."
         },
         {
+          "en": "Habitat: One individual lives attached to each elevator vestibule, pump compartment, or double watertight door on the Yeouido Line. Even at facilities connected to the Myeongdong Union, it is responsible only for a particular door; if the colony moves, it learns the opening and closing rules of a new gate rather than choosing the route itself.",
           "ko": "서식처: 여의도선의 승강기 전실, 펌프 격실, 이중 방수문에 한 개체씩 붙어 산다. 명동 연합와 연결된 시설에서도 특정 문짝만 담당하며, 군락이 옮겨 가더라도 자신이 길을 정하는 대신 새 관문의 개폐 규칙을 익힌다."
         },
         {
+          "en": "Needs and Desires: Cleaning its capillaries consumes distilled water, lubricating its joints consumes beeswax oil, and calibrating its scale consumes one intact ceramic weight. With only three spare weights, frequent forced openings diminish both its measuring ability and its chances of reproduction.",
           "ko": "필요·욕구: 모세관 세척에는 증류수, 축 윤활에는 밀랍기름, 눈금 교정에는 온전한 도자 추 하나가 소모된다. 예비 추가 세 개뿐이어서 잦은 강제 개방은 계측 능력과 번식 가능성을 동시에 깎는다."
         },
         {
+          "en": "Life Cycle and Upkeep: A pressure scab attached to a doorframe feeds on forty safe openings and closings before dropping off as a walking juvenile. A pair of adults produces only one scab per season. An adult's capillaries bend after seven uses without calibration, and after the fortieth opening and closing, its collarbone joint locks permanently in place.",
           "ko": "생명주기·유지: 문틀에 붙은 압력딱지는 마흔 번의 안전 개폐를 먹고 보행아체로 떨어지며, 성체 한 쌍은 한 계절에 딱지 하나만 남긴다. 성체의 모세관은 교정 없이 일곱 번 작동하면 휘고, 마흔 번째 개폐 뒤에는 쇄골 관절이 잠겨 영구 고착된다."
         },
         {
+          "en": "Behavior and Rank: It classifies travelers by the mass passing through and the order in which doors open, not by destination. Raising a red rod means closure; raising a blue rod means wait for depressurization. If the pressure difference exceeds the standard limit, it stops even the colony's leader at the door. But because its scab grows when supplies and air pass through safely opened gates, it favors orderly traffic.",
           "ko": "행동·계급: 통행자를 목적지가 아니라 통과 질량과 개문 순서로 분류하며, 적색 막대를 들면 폐쇄, 청색 막대를 들면 감압 대기를 뜻한다. 압력차가 기준치를 넘으면 군락의 지도자도 문 앞에서 세우지만, 안전하게 열린 관문을 통해 물자와 공기가 오가면 자신의 딱지가 성장하므로 질서 있는 왕래를 선호한다."
         },
         {
+          "en": "Threat by Stage: Pressure scabs block door gaps, trapping people in compartments, while walking juveniles close exhaust vents, causing pain in ears and lungs. A fully developed gatekeeper can open a door in an instant to create a column of water, and even after death, a permanently locked individual blocks an emergency exit with glass shards and rigid joints.",
           "ko": "단계별 위협: 압력딱지는 문틈을 막아 사람을 격실에 가두고, 보행아체는 배기구를 닫아 귀와 폐에 통증을 일으킨다. 완성된 관문지기는 문을 순간 개방해 물기둥을 만들 수 있으며, 고착 개체는 죽은 뒤에도 유리 파편과 굳은 관절로 비상구를 봉쇄한다."
         },
         {
+          "en": "Countermeasures and Combat: Opening the drains on both sides to the same level slowly eliminates the pressure difference, removing the basis for its attack. Breaking the capillary comb could cause the door to open at random, so it is safer to apply warm beeswax to the tips to fix the scale in place, then isolate it with a manual latch.",
           "ko": "대항·전투: 양쪽 배수구를 같은 높이로 열어 압력차를 천천히 없애면 공격 동작의 근거가 사라진다. 모세관 빗을 부수면 문이 무작위로 열릴 수 있으므로, 따뜻한 밀랍을 끝부분에 발라 눈금을 고정한 다음 수동 걸쇠로 격리하는 편이 안전하다."
         },
         {
+          "en": "Negotiation and Moral Choice: It understands a ceramic weight placed on the floor, followed by two short knocks and one long knock on the door, as an invitation to negotiate opening and closing. If given beeswax oil and time for depressurization, with the number of people passing through written on a notched tag, it keeps the terms for twenty door openings, benefiting both sides through safe passage and gate maintenance. If people push through beyond the agreed limit, it breaks the tag and seals the next compartment completely. HC10 must therefore choose whether emergency patients or colony supplies go first, while H10 identifies who was responsible for a previous overloading accident.",
           "ko": "협상·도덕 선택: 도자 추를 바닥에 놓고 짧게 두 번, 길게 한 번 문을 두드리면 개폐 협상으로 알아듣는다. 밀랍기름과 감압 시간을 제공하고 통과 인원수를 홈 낸 패찰에 적으면 스무 번의 개문 동안 조건을 지키며, 양쪽은 안전한 통행과 관문 유지라는 이익을 얻는다. 제한 인원을 넘겨 밀어붙이면 패찰을 깨고 다음 격실을 완전 폐쇄하므로, HC10은 응급 환자와 군락 물자 중 누구를 먼저 보낼지 선택해야 하고 H10은 이전 과적 사고의 책임자를 가리킨다."
         },
         {
+          "en": "Scenario Connection: G10-SC2 concerns negotiations over the opening order of a Yeouido Line gate and a compartment on the Myeongdong Union side; it does not involve assigning route selection or movement command to the gatekeeper. HC10's passage list must be checked against H10's door-operation table, and as XT05 rises, the external threat shortens the time available to wait for depressurization.",
           "ko": "시나리오 연결: G10-SC2는 여의도선 관문과 명동 연합 측 격실의 개방 순서를 둘러싼 교섭을 다루되, 길 선택이나 이동 지휘를 맡기는 내용은 아니다. HC10의 통과 명단과 H10의 개폐표를 대조해야 하며, XT05가 높아지면 외부 위협이 감압 대기 시간을 줄인다."
         }
       ]
@@ -2239,6 +2782,7 @@
       "kind": "paragraph",
       "anchor": "g10e08-수압-길잡이-p4",
       "text": {
+        "en": "<a id=\"g10e09\"></a>",
         "ko": "<a id=\"g10e09\"></a>"
       }
     },
@@ -2247,6 +2791,7 @@
       "anchor": "g10e09-균맥-봉합사",
       "depth": 3,
       "text": {
+        "en": "G10E09 · Mycelial-Seam Stitcher",
         "ko": "G10E09 · 균맥 봉합사"
       }
     },
@@ -2255,12 +2800,15 @@
       "anchor": "g10e09-균맥-봉합사-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S10\"],\"synthetics\":[\"H10\"]}",
           "ko": "연결: {\"states\":[\"S10\"],\"synthetics\":[\"H10\"]}"
         }
       ]
@@ -2270,42 +2818,52 @@
       "anchor": "g10e09-균맥-봉합사-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Crack sealing",
             "ko": "균열 봉합"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A repair individual sewing load-wall cracks with waterproof fungal thread and copper bone needles. It read internal vibration only with its palm pressed directly to a dry wall, could not tell false echo from real crack on wet surfaces or hanging metal plates, and lost direction sense away from finished knots.",
             "ko": "방수 균사실과 구리 골침으로 하중벽 균열을 꿰매는 보수 개체다. 손바닥을 마른 벽에 직접 댔을 때만 내부 진동을 읽고 젖은 표면이나 매달린 금속판에서는 헛울림과 실제 균열을 구별하지 못하며, 완성한 매듭에서 멀어지면 방향 감각을 잃는다."
           }
         ]
@@ -2316,33 +2874,43 @@
       "anchor": "g10e09-균맥-봉합사-list3",
       "items": [
         {
+          "en": "Role and Body: A humanoid repairer that spins waterproof mycelial thread from spinnerets in its four fingers and stitches cracks with the copper bone needle in its wrist. It reads internal vibrations only when it places its palm directly against a dry load-bearing wall; on a wet surface or a hanging metal plate, it cannot distinguish a real crack from a false resonance.",
           "ko": "역할·신체: 네 손가락의 방적구에서 방수 균사실을 뽑고 손목의 구리 골침으로 균열을 꿰매는 인간형 보수 개체다. 손바닥을 마른 하중벽에 직접 댔을 때만 내부 진동을 읽으며, 젖은 표면이나 매달린 금속판에서는 실제 균열과 헛울림을 구별하지 못한다."
         },
         {
+          "en": "Origin: When a suture-supply storehouse in a Yeouido Line ward collapsed, surgical thread, copper tools, and wall mold penetrated the tissue of patients with damaged lungs, transforming their hands and chests into architectural spinning organs.",
           "ko": "기원: 여의도선 병동의 봉합재 창고가 무너질 때 수술용 실, 구리 도구, 벽곰팡이가 폐 손상 환자들의 조직에 파고들어 손과 흉곽을 건축용 방적 기관으로 바꾸었다."
         },
         {
+          "en": "Habitat: It builds thread nests between cracked pillars and pipe supports. When freeze cracks grow in the Myeongdong Union, it dispatches work crews only to structures for which it has received commissions. Because it loses its sense of direction far from completed knots, its way of life differs from that of wandering repair crews.",
           "ko": "서식처: 갈라진 기둥과 배관 지지대 사이에 실집을 세우며, 명동 연합의 동결 균열이 커지는 시기에는 주문받은 구조물에만 작업조를 파견한다. 완성한 매듭에서 멀리 떨어지면 방향 감각을 잃기 때문에 정착지를 떠도는 수리대와는 생태가 다르다."
         },
         {
+          "en": "Needs and Desires: Every hundred meters of mycelial thread costs one lump of protein and one bottle of copper salt. Reusing the dry cloth needed to wipe its bone needle increases the risk of infection each time. An individual's fingers can spin only two hundred meters of thread in a lifetime, so it firmly refuses to use thread on unimportant cracks.",
           "ko": "필요·욕구: 균사실 백 미터마다 단백질 덩이 하나와 구리염 한 병이 들고, 골침을 닦을 마른 천은 재사용할수록 감염 위험이 커진다. 한 개체의 손가락은 평생 이백 미터분만 방적할 수 있어 중요하지 않은 균열에 실을 쓰는 일을 완강히 거부한다."
         },
         {
+          "en": "Life Cycle and Upkeep: Of the knots it cuts away, only those fed copper powder grow into thread-spinning juveniles. The knot-eggs an adult permits are limited to three over its lifetime. Unless residue is cut from its fingers within six hours of work, one spinneret rots; if all four become blocked, it becomes an unraveling corpse-form.",
           "ko": "생명주기·유지: 잘라 낸 매듭 가운데 구리 가루를 먹은 것만 실뽑이아체로 자라며, 성체가 허용하는 매듭알은 생애 세 개로 제한된다. 작업 후 여섯 시간 안에 손가락 찌꺼기를 도려내지 않으면 방적구 하나가 썩고, 네 곳이 모두 막히면 풀림사체가 된다."
         },
         {
+          "en": "Behavior and Rank: Before work, it marks the order of collapse on a wall with vertical lines, and during construction it allows no one to pass inside the markings. It puts structural safety first, but rates spawning walls bearing its knot-eggs one level higher than residents' quarters at the same risk level.",
           "ko": "행동·계급: 작업 전에는 벽에 세로선으로 붕괴 순서를 표시하고, 공사 중에는 표시 안쪽의 통행을 누구에게도 허락하지 않는다. 구조 안전을 최우선으로 삼지만 자신들의 매듭알이 붙은 산란벽은 같은 위험도의 주민 숙소보다 한 단계 높게 평가한다."
         },
         {
+          "en": "Threat by Stage: Knot-eggs stick shoes and wheels to the floor, while thread-spinning juveniles wrap around moving joints and immobilize them. A frame-stitching form sews an entire entrance shut, and an unraveling corpse-form with rotting spinnerets flicks infected thread between wounds and pipes, joining them together.",
           "ko": "단계별 위협: 매듭알은 신발과 바퀴를 바닥에 붙이며, 실뽑이아체는 움직이는 관절을 감아 멈춘다. 골조봉합체는 출입구를 통째로 꿰매고, 방적구가 썩은 풀림사체는 감염된 실을 튕겨 상처와 배관 사이를 이어 버린다."
         },
         {
+          "en": "Countermeasures and Combat: Alternately tapping a wet wall and a dry false panel draws its palm's senses toward the false resonance, causing it to lose its work target. Fire makes mycelial thread emit toxic smoke, so the knot's outer layer should instead be softened with a carbonate solution, then the thread pulled out in the reverse order of the bone needle's passes.",
           "ko": "대항·전투: 젖은 벽과 마른 가짜 패널을 교대로 두드리면 손바닥 감각이 헛울림을 따라가 작업 표적을 놓친다. 불은 균사실에서 독성 연기를 내므로 탄산염 용액으로 매듭 외피를 불린 뒤 골침이 통과한 순서의 역방향으로 실을 뽑아야 한다."
         },
         {
+          "en": "Negotiation and Moral Choice: Driving three copper nails into a wall needing repair in a triangle and placing protein material at its center is accepted as a formal commission. If the stitching area and access times are agreed upon using the number of knots in a piece of cloth, it preserves the terms until its next molt; residents avoid collapse, and the stitcher gains a safe spawning wall. Unauthorized entry across the work line causes it to sew the client's equipment to the wall and terminate the contract. HC10 must therefore publicly set priorities between the residential area and the spawning chamber, and also decide whether to damage H10's quarantine traces.",
           "ko": "협상·도덕 선택: 수리가 필요한 벽에 구리 못 세 개를 삼각형으로 박고 단백질 재료를 중앙에 두면 정식 의뢰로 받아들인다. 봉합 구간과 출입 시간을 천 조각의 매듭 수로 합의하면 다음 탈피까지 조건을 보존하고, 주민은 붕괴를 피하며 봉합사는 안전한 산란벽을 얻는다. 공사선 안으로 무단 진입하면 의뢰인의 장비를 벽에 꿰매 계약을 종료하므로, HC10은 주민 구역과 산란실의 우선순위를 공개적으로 정해야 하며 H10의 격리 흔적을 훼손할지 여부도 함께 판단해야 한다."
         },
         {
+          "en": "Scenario Connection: In G10-SC1, a contract is underway to save the supports of a Yeouido Line residential building. In G10-SC3, the issue is how much of the wall of H10's archive, which is to be moved to the Myeongdong Union, should be dismantled. HC10 can guarantee the work line, but as external XT05 pressure grows, the time allowed for repairs shrinks.",
           "ko": "시나리오 연결: G10-SC1에서는 여의도선 거주동의 지지대를 살리는 계약이 진행되고, G10-SC3에서는 명동 연합로 옮길 H10 자료실의 벽을 어느 범위까지 뜯을지가 쟁점이 된다. HC10이 작업선을 보증할 수 있지만 XT05의 외부 압박이 커질수록 허용되는 수리 시간은 짧아진다."
         }
       ]
@@ -2351,6 +2919,7 @@
       "kind": "paragraph",
       "anchor": "g10e09-균맥-봉합사-p4",
       "text": {
+        "en": "<a id=\"g10e10\"></a>",
         "ko": "<a id=\"g10e10\"></a>"
       }
     },
@@ -2359,6 +2928,7 @@
       "anchor": "g10e10-온흔-추적병",
       "depth": 3,
       "text": {
+        "en": "G10E10 · Residual-Heat Tracker",
         "ko": "G10E10 · 온흔 추적병"
       }
     },
@@ -2367,12 +2937,15 @@
       "anchor": "g10e10-온흔-추적병-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\"]}",
           "ko": "연결: {\"states\":[\"S10\"]}"
         }
       ]
@@ -2382,42 +2955,52 @@
       "anchor": "g10e10-온흔-추적병-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Heat-trace pursuit",
             "ko": "온흔 추적"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A search individual reading body-heat differences on surfaces with temple thermo-chromatic plates. It saw nothing beyond eight steps, heat traces lost direction after ninety seconds, and overly low body temperature could be misjudged not as a rescue target but as a sense-calibration heat source.",
             "ko": "관자놀이 열변색판으로 표면에 남은 체온 차이를 읽는 수색 개체다. 여덟 걸음 밖은 보지 못하고 온흔은 구십 초면 방향성이 사라지며, 체온이 지나치게 낮으면 구조 대상이 아니라 감각 보정용 열원으로 오판할 수 있다."
           }
         ]
@@ -2428,33 +3011,43 @@
       "anchor": "g10e10-온흔-추적병-list3",
       "items": [
         {
+          "en": "Role and Body: A humanoid searcher that reads differences in body heat left on nearby surfaces using thin thermochromic plates at its temples instead of eyes. It cannot see beyond eight steps, heat traces lose their directional information after ninety seconds, and on wet metal the traces of several people spread into one broad smear.",
           "ko": "역할·신체: 눈 대신 관자놀이의 얇은 열변색판으로 주변 표면에 남은 체온 차이를 읽는 인간형 수색 개체다. 여덟 걸음 밖은 보지 못하고, 온흔은 구십 초가 지나면 방향성이 사라지며, 젖은 금속에서는 여러 사람의 흔적이 하나의 넓은 얼룩으로 번진다."
         },
         {
+          "en": "Origin: Respiratory mold penetrated emergency heating material in a flooded residential building and the damaged blood vessels of hypothermia patients, combining circulation and heat detection into a single hunting organ.",
           "ko": "기원: 침수 주거동의 비상 난방재와 저체온 환자의 손상 혈관에 호흡기성 곰팡이가 침투해 혈액 순환과 열 감지를 하나의 사냥 기관으로 묶었다."
         },
         {
+          "en": "Habitat: It claims the warm pipes around the Yeouido Line boiler room as a place to rest, and in the Myeongdong Union it requests temporary search rights only while someone is missing. Living near a fixed heat source for too long bleaches its sensory plates, so it cannot remain in one place indefinitely.",
           "ko": "서식처: 여의도선 보일러실 주변의 따뜻한 관로를 휴식권으로 삼고, 명동 연합에서는 실종자가 발생한 기간에만 임시 수색권을 요구한다. 고정된 열원에서 오래 살면 감각판이 탈색되므로 한 장소에 계속 머물 수 없다."
         },
         {
+          "en": "Needs and Desires: Its thermochromic plates need pieces of phase-change wax, its bodily fluids need coarse salt, and its dormancy requires a cold cooling cloth. The wax must be replaced after every three tracking attempts. When its reserves run out, it ties a captured creature near a heated plate to serve as a reference temperature.",
           "ko": "필요·욕구: 열변색판에는 상변화 밀랍 조각, 체액에는 굵은 소금, 휴면에는 차가운 냉각포가 필요하다. 밀랍은 추적 세 번마다 갈아야 하며 비축량이 끝나면 붙잡은 생물을 열판 가까이에 묶어 기준 온도로 삼는다."
         },
         {
+          "en": "Life Cycle and Upkeep: A lukewarm fluid-form emerging from a cooling spore becomes a red-hot adult after six successful searches, and an adult can leave only two heat-eggs in melted wax. If its sensory plates do not cool for seventy-two hours, their pigment burns away and it enters the ashen-exhaustion stage.",
           "ko": "생명주기·유지: 냉각포자에서 나온 미온유체는 여섯 번의 성공적인 수색 뒤 적열성체가 되고, 한 성체는 녹인 밀랍 속에 열알 두 개만 남길 수 있다. 감각판이 칠십두 시간 동안 식지 않으면 색소가 타서 회백소진 단계로 넘어간다."
         },
         {
+          "en": "Behavior and Rank: It pursues missing people who may still return before hunting prey, and performs three free searches for a settlement that supplied heat-eggs. If the person sought has an excessively low body temperature, however, it risks treating them as a heat source for calibrating its senses rather than someone to rescue.",
           "ko": "행동·계급: 사냥보다 귀환 가능성이 있는 실종자를 먼저 좇으며, 열알을 제공한 거주지에는 세 차례의 무상 수색을 수행한다. 다만 수색 대상의 체온이 지나치게 낮으면 구조 대상이 아니라 감각 보정용 열원으로 판단할 위험이 있다."
         },
         {
+          "en": "Threat by Stage: Cooling spores draw heat from localized areas of skin, while lukewarm fluid-forms hide in bedding and steal body heat. A red-hot adult marks a fleeing target with heated wax to prevent concealment, and an ashen-exhausted form rapidly absorbs heat from its surroundings in its final moments.",
           "ko": "단계별 위협: 냉각포자는 피부의 열을 국소적으로 빼앗고, 미온유체는 침구 속에 숨어 체온을 훔친다. 적열성체는 달아나는 표적에게 가열된 밀랍을 묻혀 은신을 막으며, 회백소진체는 마지막 순간 주변의 열을 급격히 흡수한다."
         },
         {
+          "en": "Countermeasures and Combat: Placing warmed bricks at a fork every ninety seconds leaves it unable to distinguish old heat traces from a person on the move, trapping it in repeated checks. Rather than attacking its sensory plates, cooling both temples to the same temperature with cooling cloths can stop its pursuit and prompt it to release a captive.",
           "ko": "대항·전투: 구십 초 간격으로 데운 벽돌을 갈림길에 놓으면 오래된 온흔과 이동 중인 사람을 분리하지 못해 반복 확인에 빠진다. 감각판을 공격하는 대신 냉각포로 양쪽 관자놀이를 같은 온도까지 식히면 추적을 중단시키고 포획자도 풀어 줄 수 있다."
         },
         {
+          "en": "Negotiation and Moral Choice: It understands a warmed palm print on a copper plate, topped with a salt-stained cloth belonging to the person sought, as a search request. If promised pieces of wax and time to cool, with a return point agreed upon using a heat marker, it remembers the terms for six cooling cycles; humans find the missing person, and the tracker preserves its sensory plates. If given a false target, it coats the client's dwelling in heat-wax that cannot be removed and thereafter treats every heat trace there as a hostile signal. HC10 mediates the diversion of heating fuel, while H10 provides clues for distinguishing past rescues from cases of confinement.",
           "ko": "협상·도덕 선택: 구리판에 손바닥을 데워 찍은 뒤 찾을 사람의 소금 묻은 천을 올리면 수색 요청으로 이해한다. 밀랍 조각과 냉각 시간을 보장하고 귀환 지점을 열표식으로 합의하면 여섯 번의 냉각 주기 동안 조건을 기억하며, 인간은 실종자를 찾고 추적병은 감각판을 보전한다. 가짜 표적을 제공하면 의뢰인의 거처에 지워지지 않는 열밀랍을 칠하고 이후 그곳의 모든 온흔을 적대 신호로 취급한다. HC10은 난방 연료 전용 문제를 중재하고 H10은 과거의 구조와 감금 사례를 구분할 단서를 준다."
         },
         {
+          "en": "Scenario Connection: In G10-SC2, it searches for the last heat traces of a column that left the Yeouido Line and scattered through the Myeongdong Union, while HC10's fuel allocation and H10's missing-person list must both be checked. XT05 is an external threat variable that reduces the time available for rescue, not a destination.",
           "ko": "시나리오 연결: G10-SC2에서 여의도선을 떠나 명동 연합에 흩어진 대열의 마지막 온흔을 찾되, HC10의 연료 배정과 H10의 실종 명단을 함께 확인해야 한다. XT05는 목적지가 아니라 구조 가능 시간을 줄이는 외부 위협 변수다."
         }
       ]
@@ -2463,6 +3056,7 @@
       "kind": "paragraph",
       "anchor": "g10e10-온흔-추적병-p4",
       "text": {
+        "en": "<a id=\"g10e11\"></a>",
         "ko": "<a id=\"g10e11\"></a>"
       }
     },
@@ -2471,6 +3065,7 @@
       "anchor": "g10e11-공명-종지기",
       "depth": 3,
       "text": {
+        "en": "G10E11 · Resonance Bellkeeper",
         "ko": "G10E11 · 공명 종지기"
       }
     },
@@ -2479,12 +3074,15 @@
       "anchor": "g10e11-공명-종지기-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"]}"
         }
       ]
@@ -2494,42 +3092,52 @@
       "anchor": "g10e11-공명-종지기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Alarm transmission",
             "ko": "경보 송출"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A communication individual transmitting only three bands — low, middle, high — through a hollow sternum and three bronchial branches. With two sounds arriving at once or from behind absorbent material it could not judge direction, and an adult could sound the great alarm only eighteen times before repair.",
             "ko": "속이 빈 흉골과 세 갈래 기관지로 낮음·중간·높음 세 대역만 송출한다. 두 소리가 동시에 들어오거나 흡음재 뒤에서 들리면 발신 방향을 판정하지 못하고, 성체는 보수 전까지 큰 경보를 열여덟 번만 낼 수 있다."
           }
         ]
@@ -2540,33 +3148,43 @@
       "anchor": "g10e11-공명-종지기-list3",
       "items": [
         {
+          "en": "Role and body: A humanoid communications organism that broadcasts prescribed alarm tones through a hollow sternum and a three-branched airway. It distinguishes only three bands—low, middle, and high—and cannot determine a sound’s direction of origin when two sounds arrive at once or when a sound comes from behind sound-absorbing material.",
           "ko": "역할·신체: 속이 빈 흉골과 세 갈래 기관지로 정해진 경보음을 송출하는 인간형 통신 개체다. 낮은 울림, 중간 울림, 높은 울림의 세 대역만 구별하며 두 소리가 동시에 들어오거나 흡음재 뒤에서 들리면 발신 방향을 판정하지 못한다."
         },
         {
+          "en": "Origin: When the corroded bell alloy of a flooded chapel and the lung tissue of choir survivors were overtaken by fermenting mold, their breathing became a signaling organ that shook the entire building.",
           "ko": "기원: 물에 잠긴 예배실의 부식된 종 합금과 합창단 생존자의 폐조직이 발효성 곰팡이에 잠식되면서, 호흡이 건물 전체를 흔드는 신호 기관으로 변했다."
         },
         {
+          "en": "Habitat: It marks resonance points on every landing of the Yeouido Line’s central stair tower and sets up a temporary signal room in the Myeongdong Union’s empty framework during storms. It cannot survive long in a broad open space or a low-ceilinged room because the sound does not reverberate back.",
           "ko": "서식처: 여의도선 중앙 계단탑의 층계참마다 공명점을 표시하고, 폭풍기에는 명동 연합의 빈 골조에 임시 신호실을 설치한다. 넓은 평면이나 천장이 낮은 방에서는 울림이 돌아오지 않아 오래 생존하지 못한다."
         },
         {
+          "en": "Needs and desires: It needs tin wire to bind cracks in its sternum, molasses for vocalization, and hemp wicks to draw water from its airway. An adult can sound a major alarm only eighteen times before repair, and if molasses runs short, it deliberately leaves one danger zone silent.",
           "ko": "필요·욕구: 흉골 금을 묶을 주석선, 발성에 쓸 당밀, 기관지 물을 빨아낼 삼실 심지가 필요하다. 성체는 보수 전까지 큰 경보를 열여덟 번만 낼 수 있고, 당밀이 모자라면 위험 구역 가운데 하나를 의도적으로 침묵시킨다."
         },
         {
+          "en": "Life cycle and upkeep: A silent fungal core must receive a third answering tone from another bellkeeper to awaken as a trembling juvenile, limiting its opportunity to reproduce to once each storm season. Unless its hemp wick is replaced within an hour after every alarm, water fills its resonating chamber; after this happens three times, its sternum splits and it becomes a shattered-tone remnant.",
           "ko": "생명주기·유지: 무음균핵은 다른 종지기의 세 번째 응답음을 받아야 떨림아체로 깨어나므로 번식 기회가 폭풍철 한 번으로 제한된다. 매 경보 뒤 한 시간 안에 삼실 심지를 갈지 않으면 공명실에 물이 차며, 세 번 누적되면 흉골이 갈라져 파성잔해가 된다."
         },
         {
+          "en": "Behavior and rank: It returns an unfamiliar rhythm three times at the same pitch and sounds an intruder alarm only if it receives no prescribed reply. It is respected for its communications rank, but an individual that falsely reports its number of alarms has its tin wire confiscated and is exiled to a silent zone.",
           "ko": "행동·계급: 낯선 박자에는 같은 높이의 음을 세 번 돌려보내고, 정해진 회신이 없을 때만 침입 경보를 울린다. 통신 계급으로 존중받지만 경보 횟수를 허위로 신고한 개체는 주석선을 회수당해 무음 구역으로 추방된다."
         },
         {
+          "en": "Threats by stage: A silent fungal core consumes nearby sounds, cutting off communication, while a trembling juvenile vibrates the floor and throws people off balance. When the three bands of a polyphonic bell adult overlap in a narrow room, they cause chest injuries; a shattered-tone remnant collapses weak ceilings and stairs with its final reverberation.",
           "ko": "단계별 위협: 무음균핵은 가까운 소리를 먹어 의사소통을 끊고, 떨림아체는 바닥을 떨게 해 균형을 무너뜨린다. 다성종체의 세 대역이 좁은 방에서 겹치면 흉곽 손상을 주며, 파성잔해는 마지막 울림으로 약한 천장과 계단을 무너뜨린다."
         },
         {
+          "en": "Countermeasures and combat: Hanging sound-absorbing cloths of different thicknesses along each passage interrupts the three bands at different points, preventing it from pinpointing a target. Rather than striking its sternum, inserting hemp into its lower drain hole to draw off pooled water reduces its vocal pressure and avoids a lethal resonance wave.",
           "ko": "대항·전투: 두께가 다른 흡음 천을 통로마다 걸면 세 대역이 서로 다른 위치에서 끊겨 목표를 확정하지 못한다. 흉골을 때리지 말고 하부 배수공에 삼실을 꽂아 고인 물을 빼면 발성 압력이 낮아져 치명적 공명파를 피할 수 있다."
         },
         {
+          "en": "Negotiation and moral choice: If someone hangs up a tin ring and strikes it in a low–high–low sequence, it takes this as a request for an alarm contract. If the alarm targets and number of alarms are tied into three colored cords, it preserves the sequence for twelve vocalizations: residents receive early warnings, while the bellkeeper receives molasses and repair materials. If a false danger signal wastes its vocalizations, it cuts the corresponding colored cord and does not respond even to the next real disaster. HC10 mediates alarm priority, while H10 reveals both past privileged evacuations and evidence of forced vocalization.",
           "ko": "협상·도덕 선택: 주석 고리 하나를 걸고 낮음·높음·낮음 순서로 두드리면 경보 계약을 요청한 것으로 받아들인다. 경보 대상과 횟수를 세 색 끈으로 묶어 주면 열두 번의 발성 동안 순서를 보존하고, 주민은 조기 경보를 받으며 종지기는 당밀과 보수재를 얻는다. 거짓 위험 신호로 발성을 낭비시키면 해당 색 끈을 끊고 다음 실제 재난에도 응답하지 않는다. HC10은 경보 우선권을 중재하고 H10은 과거 특권 대피와 강제 발성 정황을 함께 드러낸다."
         },
         {
+          "en": "Scenario connection: In G10-SC3, a decision is made about whether to allocate the remaining alarms to the Yeouido Line or the Myeongdong Union, comparing HC10’s agreement with H10’s signal chart from the time. As XT05 rises, an external disaster approaches and the time available for a verifiable reply decreases.",
           "ko": "시나리오 연결: G10-SC3에서는 여의도선과 명동 연합 중 어느 쪽에 남은 경보 횟수를 배정할지 정하고, HC10의 합의문과 H10의 당시 신호표를 대조한다. XT05가 상승하면 외부 재난이 접근해 검증 가능한 회신 시간이 감소한다."
         }
       ]
@@ -2575,6 +3193,7 @@
       "kind": "paragraph",
       "anchor": "g10e11-공명-종지기-p4",
       "text": {
+        "en": "<a id=\"g10e12\"></a>",
         "ko": "<a id=\"g10e12\"></a>"
       }
     },
@@ -2583,6 +3202,7 @@
       "anchor": "g10e12-취적-배급관",
       "depth": 3,
       "text": {
+        "en": "G10E12 · Scent-Sorting Rationing Officer",
         "ko": "G10E12 · 취적 배급관"
       }
     },
@@ -2591,12 +3211,15 @@
       "anchor": "g10e12-취적-배급관-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"synthetics\":[\"H10\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"synthetics\":[\"H10\"]}"
         }
       ]
@@ -2606,42 +3229,52 @@
       "anchor": "g10e12-취적-배급관-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Goods inspection",
             "ko": "물자 검수"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A warehouse individual classing food, medicine, and toxicity with seven scent pouches under its jaw and attaching resin tags. An eighth scent made it forget the oldest standard, and goods mixed with oil smell could not be judged in quantity or composition.",
             "ko": "턱 아래 일곱 냄새주머니로 식량·약품·독성을 분류하고 수지 표찰을 붙인다. 여덟 번째 냄새가 들어오면 가장 오래된 기준을 잊고, 기름 냄새가 섞인 물품은 양과 성분을 판별하지 못한다."
           }
         ]
@@ -2652,33 +3285,43 @@
       "anchor": "g10e12-취적-배급관-list3",
       "items": [
         {
+          "en": "Role and body: A humanoid warehouse manager that uses seven scent pouches beneath its jaw to classify food, medicines, and toxic substances, then attaches resin labels. It can maintain only seven reference scents at once; an eighth makes it forget the oldest reference, and it cannot determine the quantity or composition of items mixed with the smell of oil.",
           "ko": "역할·신체: 턱 아래 일곱 개의 냄새주머니로 식량, 약품, 독성 물질을 분류하고 수지 표찰을 붙이는 인간형 창고 관리 개체다. 동시에 일곱 향만 유지할 수 있으며 여덟 번째 냄새가 들어오면 가장 오래된 기준을 잊고, 기름 냄새가 섞인 물품은 양과 성분을 판별하지 못한다."
         },
         {
+          "en": "Origin: Preserving resin from a flooded dining hall, decay-suppressing mold, and a ration officer’s nasal passages and salivary glands hardened into a single chemical classification organ.",
           "ko": "기원: 침수 식당의 보존용 수지, 부패 억제 곰팡이, 배급 담당자의 비강과 침샘이 하나의 화학 분류 기관으로 굳어지며 형성되었다."
         },
         {
+          "en": "Habitat: In the Yeouido Line’s upper storeroom, it makes its rounds between ventilation windows in a fixed order; during hot periods, it rents only some shelves in the Myeongdong Union’s cold store. Outdoors, where there are no standard scents, it treats even edible items as requiring quarantine.",
           "ko": "서식처: 여의도선 상층 저장실에서는 환기창 사이를 정해진 순서로 돌고, 고온기에는 명동 연합 저온고의 일부 선반만 임대해 사용한다. 표준 향이 없는 야외에서는 먹을 수 있는 물건도 모두 격리 대상으로 본다."
         },
         {
+          "en": "Needs and desires: It needs measured quantities of alcohol to clean its scent pouches, resin labels, and reference-scent ampoules. The reference in a pouch deteriorates after nine days, and without a new ampoule, it may group larval feed and patients’ medicines in the same category.",
           "ko": "필요·욕구: 냄새주머니 세척용 알코올, 수지 표찰, 기준 향 앰풀이 각각 정량으로 필요하다. 한 주머니의 기준은 아홉 날 뒤 변질되며, 새 앰풀이 없으면 유충 먹이와 환자 약품을 같은 등급으로 묶을 수 있다."
         },
         {
+          "en": "Life cycle and upkeep: A scent fungal granule must consume five of the seven reference scents to become a scent-tracking juvenile, and an adult sheds only one such granule every forty days. Skipping two cleanings causes its jaw pouches to fester, turning it into a foul-odor dissolution form, so unlimited reproduction and long-term survival without supplies are impossible.",
           "ko": "생명주기·유지: 향균립은 일곱 종류의 기준 향 가운데 다섯을 먹어야 탐취아체가 되고, 성체 한 마리는 마흔 날마다 향균립 하나만 떼어 낸다. 세척을 두 차례 건너뛰면 턱주머니가 곪아 악취용해체가 되므로 무제한 증식이나 장기 무보급은 불가능하다."
         },
         {
+          "en": "Behavior and rank: It has broad authority over the issuance and receipt of goods but cannot allot itself more shares than the number of labels attached to the goods. When it detects the scent of decay, it seals the entire shelf without asking who owns it and removes the seal only when the shared ledger matches the label count.",
           "ko": "행동·계급: 출납 권한은 크지만 물품에 붙은 표찰 수보다 많은 몫을 자신에게 배정하지 못한다. 부패 향을 감지하면 소유자를 묻지 않고 선반째 봉인하며, 공동 장부와 표찰 수가 일치할 때에만 봉인을 푼다."
         },
         {
+          "en": "Threats by stage: A scent fungal granule swaps food’s taste and smell, while a scent-tracking juvenile follows a hidden backpack and reveals its location. The rationing officer sprays tear-inducing resin at faces, leaving quarantine marks, while a foul-odor dissolution form produces a damp spore cloud that rots nearby food as well.",
           "ko": "단계별 위협: 향균립은 음식의 맛과 냄새를 뒤바꾸고, 탐취아체는 숨긴 배낭을 따라붙어 위치를 드러낸다. 배급관은 최루성 수지를 얼굴에 분사해 격리 표식을 남기며, 악취용해체는 주변 식량까지 썩게 하는 습한 포자구름을 만든다."
         },
         {
+          "en": "Countermeasures and combat: Using all eight reference scents at once displaces one memory, but mixing smells indiscriminately may also cause medicines to be discarded permanently. The safest method is to scent an empty box like the label on the item to be recovered, move the quarantine station, and then clean only the relevant pouch with alcohol.",
           "ko": "대항·전투: 기준 향 여덟 종류를 한꺼번에 쓰면 기억 하나가 밀려나지만, 무작정 냄새를 섞으면 약품도 영구 폐기될 수 있다. 회수하려는 물품의 표찰과 같은 향을 빈 상자에 묻혀 격리대를 옮긴 뒤 알코올로 해당 주머니만 씻는 방식이 가장 안전하다."
         },
         {
+          "en": "Negotiation and moral choice: It recognizes a rationing proposal when a shared-ledger number is engraved on a blank resin label and a drop of the corresponding reference scent is placed on it. If shares for the seven categories are engraved in the shelf grooves, it maintains the terms for nine days: residents receive contamination checks, while the rationing officer secures larval feed and cleaning agents. If a group is caught hiding items outside the ledger, it places toxic labels on the entire client group and stops trading with them. HC10 adjusts the amounts reserved for treatment and colony upkeep, while H10 shows how medicines quarantined in the past were actually used.",
           "ko": "협상·도덕 선택: 빈 수지 표찰에 공동 장부 번호를 새기고 대응하는 기준 향 한 방울을 떨어뜨리면 배급 제안으로 인식한다. 일곱 범주별 몫을 선반 홈에 새기면 아홉 날 동안 조건을 유지하며, 주민은 오염 검사를 받고 배급관은 유충 먹이와 세척제를 확보한다. 장부 밖의 물품을 숨기다 적발되면 의뢰 집단 전체에 독성 표찰을 붙여 거래를 중단한다. HC10은 치료량과 군락 유지분을 조절하고 H10은 과거 격리된 약품의 실제 사용 결과를 보여 준다."
         },
         {
+          "en": "Scenario connection: G10-SC1 is a scene in which the seven categories of goods stored by the Yeouido Line are renegotiated, and in G10-SC3 it checks whether the H10 supply list for transfer to the Myeongdong Union is genuine. HC10 can guarantee the shared ledger, but if external pressure from XT05 rises, the nine-day grace period for correcting misclassifications disappears.",
           "ko": "시나리오 연결: G10-SC1은 여의도선 저장품의 일곱 범주를 다시 합의하는 장면이며, G10-SC3에서는 명동 연합로 옮길 H10 물자 명단의 진위를 검사한다. HC10이 공동 장부를 보증할 수 있고, XT05의 외부 압박이 높아지면 오분류를 고칠 아홉 날의 유예가 사라진다."
         }
       ]
@@ -2687,6 +3330,7 @@
       "kind": "paragraph",
       "anchor": "g10e12-취적-배급관-p4",
       "text": {
+        "en": "<a id=\"g10e13\"></a>",
         "ko": "<a id=\"g10e13\"></a>"
       }
     },
@@ -2695,6 +3339,7 @@
       "anchor": "g10e13-잡음-잠수자",
       "depth": 3,
       "text": {
+        "en": "G10E13 · Noise Diver",
         "ko": "G10E13 · 잡음 잠수자"
       }
     },
@@ -2703,12 +3348,15 @@
       "anchor": "g10e13-잡음-잠수자-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"synthetics\":[\"H10\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"synthetics\":[\"H10\"]}"
         }
       ]
@@ -2718,42 +3366,52 @@
       "anchor": "g10e13-잡음-잠수자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Leakage feeding",
             "ko": "누전 섭식"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A facility parasite eating electronic noise of working circuits and leakage current with spinal conductive fungal plates. Sensing reached six steps in air, and with salt water or iron mesh between, it could not distinguish life-support devices from empty induction circuits.",
             "ko": "척추 전도성 균사판으로 작동 회로의 전자 잡음을 먹고 누전 전류를  Mil 한다. 감지 거리는 공기 중 여섯 걸음이며 소금물이나 철망을 사이에 두면 생명 유지 장치와 빈 유도 회로를 구별하지 못한다."
           }
         ]
@@ -2764,33 +3422,43 @@
       "anchor": "g10e13-잡음-잠수자-list3",
       "items": [
         {
+          "en": "Role and body: A humanoid infrastructure parasite that senses electronic noise in active circuits through conductive mycelial plates on either side of its spine and feeds on leakage current. Its detection range is six paces through air; salt water or wire mesh disperses the signal, leaving it unable to distinguish life-support equipment from an empty induction circuit.",
           "ko": "역할·신체: 척추 양옆의 전도성 균사판으로 작동 중인 회로의 전자 잡음을 감지하고 누전 전류를 먹는 인간형 설비 기생자다. 감지 거리는 공기 중 여섯 걸음이며, 소금물이나 철망을 사이에 두면 신호가 퍼져 생명 유지 장치와 빈 유도 회로를 구별하지 못한다."
         },
         {
+          "en": "Origin: A respiratory fungal film attached itself to leaking wiring in the Yeouido Line’s computer room and to a rescue worker’s nervous system, giving rise to spinal tissue that converted electrical stimulation into nourishment.",
           "ko": "기원: 여의도선 전산실의 누전 배선과 구조 작업자의 신경계에 호흡기성 균막이 붙어, 전기 자극을 영양으로 바꾸는 척추 조직이 자리 잡으면서 탄생했다."
         },
         {
+          "en": "Habitat: It rests near grounding points in power rooms and cable shafts and, during lightning season, sends a small work crew to feed on residual current in lightning-protection equipment on the Myeongdong Union’s outskirts. It cannot move for more than a day where there is no current at all, but it cannot live beside a powerful generator either, because it overloads.",
           "ko": "서식처: 전력실과 케이블 샤프트의 접지점 가까이에서 쉬고, 낙뢰기에는 명동 연합 외곽 피뢰 설비의 잔류 전류를 먹기 위해 짧은 작업대를 보낸다. 전류가 전혀 없는 장소에서는 하루 이상 움직일 수 없지만 강한 발전기 옆에서도 과부하 때문에 살지 못한다."
         },
         {
+          "en": "Needs and desires: It needs braided copper wire to join the edges of its mycelial plates, fat to insulate its joints, and a low-voltage rechargeable battery. One full charge supports six hours of activity; after thirty ungrounded charges, part of its spinal cord burns and it becomes a short-circuit remnant.",
           "ko": "필요·욕구: 균사판 가장자리를 잇는 구리 편조선, 관절을 절연하는 지방, 낮은 전압의 충전 전지가 필요하다. 한 번의 완전 충전으로 여섯 시간 활동하며, 접지하지 않은 충전을 서른 번 누적하면 척수 일부가 타서 단락잔체가 된다."
         },
         {
+          "en": "Life cycle and upkeep: Conductive foam becomes a circuit-walking juvenile after feeding on a stable microcurrent for ten days, and an adult leaves behind only one piece of foam upon its thirtieth safe discharge. If its insulating fat runs out for three days, its mycelial plates stick together, stopping both movement and reproduction.",
           "ko": "생명주기·유지: 전도포말은 안정된 미세 전류를 열흘간 먹은 뒤 회로보행체가 되며, 성체는 서른 번째 안전 방전 때 포말 하나만 남긴다. 절연 지방이 사흘 끊기면 균사판끼리 붙어 움직임과 번식이 함께 정지한다."
         },
         {
+          "en": "Behavior and rank: It suspects sudden radio transmissions are traps and learns to regard a steady weak current as safe food. In exchange for locating shorts in the colony’s equipment, it demands the agreed charging time and disconnects itself from the circuit when that time expires.",
           "ko": "행동·계급: 갑작스러운 무전을 함정으로 의심하고, 일정하게 유지되는 약전류를 안전 먹이로 학습한다. 군락 설비의 합선 위치를 찾아 주는 대신 약속된 충전 시간을 요구하며, 정해진 시간이 지나면 스스로 회로에서 떨어진다."
         },
         {
+          "en": "Threats by stage: Conductive foam bridges terminals and causes malfunctions, while a circuit-walking juvenile follows the communications signals of portable equipment. A noise-devouring adult bypasses protective circuit breakers to draw power, while a short-circuit remnant spreads a brief, powerful discharge through all nearby metal the moment it touches water.",
           "ko": "단계별 위협: 전도포말은 단자를 이어 오작동을 만들고, 회로보행체는 휴대 장비의 통신 신호를 따라온다. 잡음포식체는 보호 차단기를 우회해 전력을 빨아들이며, 단락잔체는 물에 닿는 순간 주변 금속 전체로 짧고 강한 방전을 퍼뜨린다."
         },
         {
+          "en": "Countermeasures and combat: Sending faint noise through an empty circuit behind wire mesh makes it mistake the dispersed signal for a large piece of equipment and approach. An insulated hook can connect its braided copper wire to a grounding rod to drain only its accumulated charge, but attempting this over salt water widens the discharge area, so the water must be drained first.",
           "ko": "대항·전투: 철망 뒤의 빈 회로에 약한 잡음을 흘리면 퍼진 신호를 큰 설비로 오인해 접근한다. 절연 갈고리로 구리 편조선을 접지봉에 연결하면 축적 전하만 빼낼 수 있지만, 소금물 위에서 시도하면 방전 범위가 넓어지므로 먼저 배수해야 한다."
         },
         {
+          "en": "Negotiation and moral choice: It accepts three short flashes of a portable light followed by a rechargeable battery being set down as a signal to trade power. If the permitted voltage and connection time are indicated by the number of turns in a copper loop, it remembers the terms for thirty discharge cycles: residents receive short-circuit inspections, while the diver gets safe food. If the current is cut at the promised time or high voltage is supplied, it melts the loop, designates the contracted equipment a hostile circuit, and paralyzes it first at the next contact. HC10 mediates between the needs of ventilators and charging, while H10 provides material for determining the cause of the first electrical leak.",
           "ko": "협상·도덕 선택: 휴대등을 짧게 세 번 깜박인 뒤 충전 전지를 내려놓으면 전력 거래 신호로 받아들인다. 허용 전압과 접속 시간을 구리 고리의 감은 수로 표시하면 서른 번의 방전 주기 동안 조건을 기억하고, 주민은 합선 점검을 받으며 잠수자는 안전한 먹이를 얻는다. 약속 시간에 전류를 끊거나 고전압을 흘리면 고리를 녹여 계약 설비를 적대 회로로 지정하고 다음 접촉 때 우선 마비시킨다. HC10은 인공호흡 장치와 충전 몫을 중재하며 H10은 최초 누전의 원인을 판정할 자료를 제공한다."
         },
         {
+          "en": "Scenario connection: In G10-SC3, the Yeouido Line’s power grid and the Myeongdong Union’s H10 access device must be activated in sequence, and HC10 must guarantee the charging schedule to secure the diver’s cooperation. XT05 represents not a location, but how quickly an external danger grows during a blackout.",
           "ko": "시나리오 연결: G10-SC3에서는 여의도선 전력망과 명동 연합의 H10 접근 장치를 순차적으로 가동해야 하며, HC10이 충전표를 보증해야 잠수자의 협력을 얻는다. XT05는 장소가 아니라 정전 중 외부 위험이 얼마나 빠르게 커지는지를 나타낸다."
         }
       ]
@@ -2799,6 +3467,7 @@
       "kind": "paragraph",
       "anchor": "g10e13-잡음-잠수자-p4",
       "text": {
+        "en": "<a id=\"g10e14\"></a>",
         "ko": "<a id=\"g10e14\"></a>"
       }
     },
@@ -2807,6 +3476,7 @@
       "anchor": "g10e14-포자-산파모",
       "depth": 3,
       "text": {
+        "en": "G10E14 · Spore Midwife",
         "ko": "G10E14 · 포자 산파모"
       }
     },
@@ -2815,12 +3485,15 @@
       "anchor": "g10e14-포자-산파모-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"]}"
         }
       ]
@@ -2830,42 +3503,52 @@
       "anchor": "g10e14-포자-산파모-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Larval nursing",
             "ko": "유생 보육"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A guardian growing young individuals' respiratory flora in three back nursery pouches. It sensed only four-beat pulses touching the pouch directly and carbon dioxide within one step, mistaking wall-transmitted shock or a sedated patient's breathing for starving-larva signals.",
             "ko": "등 보육낭 세 개에서 어린 개체의 호흡 균총을 기르는 보호자다. 낭에 직접 닿은 네 박자 맥동과 한 걸음 안의 이산화탄소만 감지하며, 벽을 통한 충격이나 진정된 환자 호흡을 굶주린 유생 신호로 오인한다."
           }
         ]
@@ -2876,33 +3559,43 @@
       "anchor": "g10e14-포자-산파모-list3",
       "items": [
         {
+          "en": "Role and body: A humanoid guardian that cultivates young organisms’ respiratory microbiota in three translucent nursery sacs on its back. It senses only a four-beat pulse in direct contact with a sac and carbon dioxide levels within one pace; it mistakes impacts transmitted through walls or a sedated patient’s breathing for signals from a starving larva.",
           "ko": "역할·신체: 등에 달린 반투명 보육낭 세 개에서 어린 개체의 호흡 균총을 기르는 인간형 보호자다. 낭에 직접 닿은 네 박자 맥동과 한 걸음 안의 이산화탄소 농도만 감지하며, 벽을 통한 충격이나 진정된 환자의 호흡은 굶주린 유생 신호로 잘못 받아들인다."
         },
         {
+          "en": "Origin: Cultured mold and deposits from respiratory disease in the Yeouido Line’s postpartum treatment room entered a caregiver’s alveoli and reproductive tissue, forming a nursery organ that cares for offspring according to the state of their microbiota rather than blood relation.",
           "ko": "기원: 여의도선 산후 치료실의 배양 곰팡이와 호흡기 질환 침전물이 보호자의 폐포 및 생식 조직에 들어가, 혈연보다 균총 상태를 기준으로 새끼를 돌보는 보육 기관을 만들었다."
         },
         {
+          "en": "Habitat: It claims a warm treatment room with little airflow as its nursery territory and, during the dry season, carries its sacs to a Myeongdong Union basement with the same conditions. The nursery sacs are vulnerable to jostling and cannot be moved from place to place more than twice a day during long-distance travel.",
           "ko": "서식처: 따뜻하고 기류가 약한 치료실 한 칸을 보육권으로 삼으며, 건기에는 같은 조건을 갖춘 명동 연합 지하실로 낭을 운반한다. 보육낭은 흔들림에 약해 장거리 이동 중 하루에 두 번 이상 자리를 바꿀 수 없다."
         },
         {
+          "en": "Needs and desires: Each sac requires one bottle of purified water, one lump of maltose, and one pinch of antibacterial silver salt every day. It cannot maintain more than three sacs; if supplies are insufficient for two days, it absorbs the larva least likely to survive to protect the microbiota of the other two.",
           "ko": "필요·욕구: 낭 하나당 매일 정제수 한 병, 맥아당 한 덩이, 항균 은염 한 꼬집이 든다. 세 낭을 넘겨 유지할 수 없고 재료가 이틀 부족하면 생존 가능성이 가장 낮은 유생을 흡수해 나머지 둘의 균총을 지킨다."
         },
         {
+          "en": "Life cycle and upkeep: A sac-dwelling juvenile must receive a steady four-beat pulse for eighteen days to become an attached larva, and a spore midwife can fill its sacs only four times in its lifetime. If salinity remains outside the standard range for more than six hours, larvae attach prematurely to the sac walls; after a day, they weaken along with the midwife.",
           "ko": "생명주기·유지: 낭내아체는 열여드레 동안 네 박자 맥동을 안정적으로 받아야 부착유생이 되며, 산파모 한 개체는 평생 네 차례만 낭을 채울 수 있다. 염도가 여섯 시간 이상 기준에서 벗어나면 유생이 낭벽에 조기 부착하고, 하루가 지나면 산파모와 함께 쇠약해진다."
         },
         {
+          "en": "Behavior and rank: It does not understand complex language, but a blue cloth, four-beat drumming, and the provision of purified water in succession condition it to recognize a safe caregiving procedure. It does not spread a spore film over patients belonging to a group that provides a stable nursery site, and it accepts their discarded warm water to maintain the sacs’ temperature.",
           "ko": "행동·계급: 복잡한 언어는 이해하지 못하지만 파란 천, 네 박자 북소리, 정제수 제공이 연속되면 안전한 돌봄 절차로 조건화된다. 안정된 보육지를 제공한 집단의 환자에게는 포자막을 펼치지 않고, 그들이 버린 따뜻한 물을 받아 낭 온도를 유지한다."
         },
         {
+          "en": "Threats by stage: A sac-dwelling juvenile draws bodily fluids from anyone who touches it, while a prematurely attached larva clings to moist tissue in the nose and throat. A threatened spore midwife summons adults to form a defensive wall in a narrow room, while a reproduction-spent form covers the entire nursery with a suffocating spore film when it dies.",
           "ko": "단계별 위협: 낭내아체는 접촉자의 체액을 빨아들이고, 조기 부착유생은 코와 목의 습한 조직에 달라붙는다. 위협받은 산파모는 성체들을 불러 좁은 방에 방어벽을 만들며, 산란소진체는 죽을 때 질식성 포자막으로 보육실 전체를 덮는다."
         },
         {
+          "en": "Countermeasures and combat: Showing a blue cloth and transmitting a four-beat vibration directly to the nursery stand teaches it to recognize a caregiving signal for six feeding cycles. Rather than piercing a sac, gradually lowering its salinity with lukewarm purified water puts the larvae into dormancy so they can be moved without triggering a group defense.",
           "ko": "대항·전투: 파란 천을 보이고 네 박자 진동을 보육대에 직접 전달하면 여섯 번의 급여 주기 동안 돌봄 신호로 학습한다. 낭을 찌르는 대신 미지근한 정제수로 염도를 서서히 낮춰 유생을 휴면시키면 집단 방어를 일으키지 않고 이동시킬 수 있다."
         },
         {
+          "en": "Negotiation and moral choice: Negotiations with them take the form of mutually conditioned caregiving: if purified water and silver salt are supplied after the signal, the spore midwife does not spread spores in the patient area and consumes contaminating mold. The terms last for six feedings, giving both sides a clean treatment room and a safe nursery site; but if someone displays the blue cloth and then touches a sac or takes its food, it relearns that pattern as an attack signal. HC10 sets the boundaries of shared use, while H10 raises the possibility that some larvae are connected to former patients, making a decision to eradicate them more difficult.",
           "ko": "협상·도덕 선택: 이들과의 교섭은 상호 조건화된 보육으로 성립하며, 신호 뒤 정제수와 은염을 제공하면 산파모는 환자 구역에 포자를 퍼뜨리지 않고 오염 곰팡이를 먹어 치운다. 조건은 여섯 차례 급여 동안 유지되고 양쪽이 깨끗한 치료실과 안전한 보육지를 얻지만, 파란 천을 보인 뒤 낭을 건드리거나 먹이를 빼앗으면 그 무늬를 공격 신호로 다시 학습한다. HC10은 공동 사용 범위를 정하고 H10은 일부 유생과 과거 환자의 연관 가능성을 제시해 박멸 판단을 어렵게 만든다."
         },
         {
+          "en": "Scenario connection: In G10-SC1, the nursery section of the Yeouido Line’s treatment room is agreed upon, and in G10-SC2, priorities are set for the sacs and patients’ purified water to be moved to the Myeongdong Union. HC10’s terms sheet and H10’s patient lineage provide grounds for the decision, while XT05 is an external pressure variable that interferes with feeding and transport.",
           "ko": "시나리오 연결: G10-SC1에서는 여의도선 치료실의 보육 구획을 합의하고, G10-SC2에서는 명동 연합로 옮길 낭과 환자용 정제수의 우선순위를 정한다. HC10의 조건표와 H10의 환자 계보가 판단 근거가 되며, XT05는 급여와 이송을 방해하는 외부 압박 변수다."
         }
       ]
@@ -2911,6 +3604,7 @@
       "kind": "paragraph",
       "anchor": "g10e14-포자-산파모-p4",
       "text": {
+        "en": "<a id=\"g10e15\"></a>",
         "ko": "<a id=\"g10e15\"></a>"
       }
     },
@@ -2919,6 +3613,7 @@
       "anchor": "g10e15-석회-잔향록",
       "depth": 3,
       "text": {
+        "en": "G10E15 · Lime Residual-Marking Recordkeeper",
         "ko": "G10E15 · 석회 잔향록"
       }
     },
@@ -2927,12 +3622,15 @@
       "anchor": "g10e15-석회-잔향록-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"states\":[\"S10\"],\"synthetics\":[\"H10\"]}",
           "ko": "연결: {\"states\":[\"S10\"],\"synthetics\":[\"H10\"]}"
         }
       ]
@@ -2942,42 +3640,52 @@
       "anchor": "g10e15-석회-잔향록-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Moisture sealing",
             "ko": "방습 봉쇄"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A moisture-proofing individual coating wet walls with wrist-gland lime paste and engraving work conditions on outer lime plates. A scenario boss, but it stored no events or sounds in its body, and its polarizing plates read only moisture marks under six hours old to three steps in slanted blue light.",
             "ko": "손목샘 석회 반죽으로 젖은 벽을 코팅하고 외부 석회패에 작업 조건을 새기는 방습 개체다. 시나리오 보스지만 몸에 사건이나 소리를 저장하지 않으며, 편광판은 비스듬한 청색광 아래 여섯 시간 이내 습기 자국만 세 걸음까지 읽는다."
           }
         ]
@@ -2988,33 +3696,43 @@
       "anchor": "g10e15-석회-잔향록-list3",
       "items": [
         {
+          "en": "Role and body: A humanoid moisture-proofing organism that squeezes lime paste from glands in its wrists to coat wet walls and carves grooves into external lime plaques to indicate repair areas and terms of exchange. It stores neither events nor sounds in its body and reproduces no audio; under oblique blue light, the polarizing plates in its eyes can read moisture marks no more than six hours old from up to three paces away.",
           "ko": "역할·신체: 손목샘에서 석회 반죽을 짜내 젖은 벽을 코팅하고, 외부 석회패에 홈을 새겨 수리 구역과 교환 조건을 표시하는 인간형 방습 개체다. 몸에는 사건이나 소리를 저장하지 않고 어떤 음향도 재현하지 않으며, 눈의 편광판은 비스듬한 청색광 아래에서 여섯 시간 이내의 습기 자국만 세 걸음 거리까지 읽는다."
         },
         {
+          "en": "Origin: Mineral mold from a flooded archive, lime used for dehumidification, and a records worker’s hardened lung tissue combined to produce a population that lowers humidity and makes surface markings.",
           "ko": "기원: 침수 기록보관실의 광물성 곰팡이, 제습용 석회, 기록 담당자의 굳은 폐조직이 결합하면서 습도를 낮추고 표면 표식을 만드는 개체군이 생겼다."
         },
         {
+          "en": "Habitat: It applies thin coats to condensation-covered walls in the Yeouido Line’s archive and at conduit junctions; during the rainy season, it first sets up moisture barriers around shelves holding H10 materials. In the Myeongdong Union, it attaches external labels to cracks in dry storerooms, but it does not serve as a witness to past events.",
           "ko": "서식처: 여의도선 자료실과 관로 접합부의 결로 벽을 얇게 바르고, 우기에는 H10 보관물이 놓인 선반 주변부터 방습대를 친다. 명동 연합에서는 건조 창고의 균열에 외부 표찰을 부착하지만 자신이 과거 사건의 증언자로 기능하지는 않는다."
         },
         {
+          "en": "Needs and desires: Each square pace of coating consumes one shovel of quicklime, two pieces of mica, and one cup of casein for adhesion. Carrying more than a day’s materials inside its body causes burns, so it cannot stockpile them for long; if supplies stop, it scrapes material back off walls it has already coated.",
           "ko": "필요·욕구: 코팅 한 제곱걸음마다 생석회 한 삽, 운모 조각 두 개, 점착용 카세인 한 컵이 소모된다. 재료를 몸 안에 하루치 이상 품으면 화상을 입으므로 장기 비축이 불가능하고, 공급이 끊기면 이미 바른 벽을 긁어 재료를 회수한다."
         },
         {
+          "en": "Life cycle and upkeep: Of the lime young it leaves on a wall, only two that withstand fourteen cycles of wetting and drying fall away as walking juveniles, and one adult can produce two lime young per season. If it cannot wash its wrist glands for twenty-one days, paste hardens inside its joints and it becomes a peeling, forgetful form.",
           "ko": "생명주기·유지: 벽에 남긴 석회치 가운데 열네 번의 습윤과 건조를 버틴 둘만 보행아체로 떨어지며, 성체 한 마리가 한 계절에 만들 수 있는 석회치는 둘이다. 손목샘을 스물한 날 동안 씻지 못하면 반죽이 관절 안에서 굳어 박리망각체가 된다."
         },
         {
+          "en": "Behavior and rank: It carves a diagonal line on a leaking wall, a circle on a safe shelf, and a square at an agreed entrance so anyone can tell them apart. It arranges external labels to preserve current working terms, but does not invent an interpretation for a damaged label; instead, it returns the area to an unagreed state.",
           "ko": "행동·계급: 새는 벽에는 사선, 안전한 선반에는 원, 합의된 출입구에는 네모를 새겨 누구나 구별할 수 있게 한다. 외부 표찰을 배열해 현재의 작업 조건을 보존하지만, 손상된 표찰의 내용을 임의로 추정하지 않고 해당 구역을 미합의 상태로 되돌린다."
         },
         {
+          "en": "Threats by stage: Lime young harden under shoes and slow movement, while walking juveniles coat wet equipment with lime film and jam its joints. An adult can rapidly plaster an entrance shut and trap people, while a peeling, forgetful form scatters dust that generates heat on contact with water.",
           "ko": "단계별 위협: 석회치는 신발 밑에서 굳어 이동을 늦추고, 보행아체는 젖은 장비에 석회막을 입혀 관절을 막는다. 성체는 출입구를 빠르게 미장해 사람을 가둘 수 있으며, 박리망각체는 물과 닿을 때 발열하는 분진을 흩뿌린다."
         },
         {
+          "en": "Countermeasures and combat: Making thin bands of water on several walls that are visible only through polarized vision prevents it from pinpointing a new leak. Slowing the paste’s setting with a phosphate mist, then removing the newest external labels first, can open a sealed area without harming the organism.",
           "ko": "대항·전투: 편광 시야에만 보이는 얇은 물띠를 여러 벽에 만들면 새 누수의 위치를 확정하지 못한다. 인산염 안개로 반죽의 응고를 늦춘 뒤 가장 최근의 외부 표찰부터 떼어 내면 개체를 다치게 하지 않고 봉쇄 구역을 열 수 있다."
         },
         {
+          "en": "Negotiation and moral choice: It recognizes a blank square lime plaque offered together with quicklime as a work-contract signal. If the moisture-proofing area, passage hours, and payment amounts are carved as grooves of different depths, the terms remain for fourteen wetting-and-drying cycles: residents protect records and food from damp, while the recordkeeper gains a wall for reproduction and materials. If an agreed label is secretly ground down, it draws a black mineral line across the entrance and stops coating that group’s stored goods. HC10 mediates priorities between preserving H10 and moisture-proofing living areas, but external labels cannot be treated as audio evidence of past events.",
           "ko": "협상·도덕 선택: 네모난 빈 석회패와 생석회를 함께 내밀면 작업 계약 신호로 알아본다. 방습 범위, 통행 시간, 지급량을 서로 다른 깊이의 홈으로 새기면 열네 번의 습윤·건조 주기 동안 조건이 남고, 주민은 자료와 식량을 습기로부터 지키며 잔향록은 번식용 벽과 재료를 얻는다. 합의 표찰을 몰래 갈아내면 출입구에 검은 광물선을 긋고 해당 집단의 보관물을 더 이상 코팅하지 않는다. HC10은 H10 보존과 생활 구역 방습 가운데 우선순위를 중재하되, 외부 표찰을 과거 음향 증거처럼 취급할 수는 없다."
         },
         {
+          "en": "Scenario connection: In G10-SC3, a decision is made about which shelves to seal first before moving the Yeouido Line’s H10 records to the Myeongdong Union, and HC10 rules only on the contractual force of existing lime plaques. As XT05 grows, the risk of external flooding rises, leaving less time to wait through fourteen maintenance cycles.",
           "ko": "시나리오 연결: G10-SC3에서는 여의도선의 H10 자료를 명동 연합로 옮기기 전에 어느 선반을 먼저 밀봉할지 결정하고, HC10은 현존하는 석회패의 계약 효력만 판정한다. XT05가 커지면 외부 침수 위험이 증가해 열네 번의 유지 주기를 기다릴 여유가 줄어든다."
         }
       ]
@@ -3023,6 +3741,7 @@
       "kind": "paragraph",
       "anchor": "g10e15-석회-잔향록-p4",
       "text": {
+        "en": "<a id=\"g10e16\"></a>",
         "ko": "<a id=\"g10e16\"></a>"
       }
     },
@@ -3031,6 +3750,7 @@
       "anchor": "g10e16-범람-등짐역",
       "depth": 3,
       "text": {
+        "en": "G10E16 · Flood Pack Carrier",
         "ko": "G10E16 · 범람 등짐역"
       }
     },
@@ -3039,12 +3759,15 @@
       "anchor": "g10e16-범람-등짐역-list1",
       "items": [
         {
+          "en": "Source batch: M016",
           "ko": "출처 배치: M016"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"states\":[\"S10\",\"S15\"],\"synthetics\":[\"H10\"]}",
           "ko": "연결: {\"states\":[\"S10\",\"S15\"],\"synthetics\":[\"H10\"]}"
         }
       ]
@@ -3054,42 +3777,52 @@
       "anchor": "g10e16-범람-등짐역-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Water carriage",
             "ko": "수상 운반"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "A carrying individual moving goods, larvae, and casualties on floating bone-plates and binding straps. The plates felt only total load and left-right tilt, knowing neither cargo identity nor life and death, and in strong cross-currents changes under twenty kilograms vanished from its senses.",
             "ko": "부유 골판과 결박끈으로 물자·유생·부상자를 나르는 운반 개체다. 골판은 총하중과 좌우 기울기만 느끼며 짐의 정체나 생사는 모르고, 거센 횡류에서는 이십 킬로그램 이하 변화가 감각에서 사라진다."
           }
         ]
@@ -3100,33 +3833,43 @@
       "anchor": "g10e16-범람-등짐역-list3",
       "items": [
         {
+          "en": "Role and body: A humanoid carrier that transports supplies, larvae, and injured people using buoyant bone plates on its broadened backbone and binding straps along its sides. The bone plates sense only total load and left–right tilt, not what the cargo is or whether it is alive; in a strong crosscurrent, changes of twenty kilograms or less go unnoticed.",
           "ko": "역할·신체: 넓어진 등뼈의 부유 골판과 옆구리 결박끈으로 물자, 유생, 부상자를 나르는 인간형 운반 개체다. 골판은 총하중과 좌우 기울기만 느끼며 짐의 정체나 생사 상태는 알 수 없고, 거센 횡류에서는 이십 킬로그램 이하의 변화가 감각에서 사라진다."
         },
         {
+          "en": "Origin: Buoyant packaging from a flooded logistics building, a transport worker’s skeleton, and respiratory mold combined to create a carrier that regulates both the air in its lungs and the flotation structure of its backbone.",
           "ko": "기원: 침수 물류동의 부력 포장재, 운반 노동자의 골격, 호흡기성 곰팡이가 결합해 폐의 공기와 등뼈의 뜸 구조를 함께 조절하는 운송체를 만들었다."
         },
         {
+          "en": "Habitat: It distributes loads along the Yeouido Line’s wide loading corridors and, during floods, shuttles between designated docking stretches to unload at the Myeongdong Union’s cargo platform. Rather than choosing destinations or passengers itself, it travels one stretch at a time according to scale tags and binding contracts.",
           "ko": "서식처: 여의도선의 넓은 적재 복도에서 짐을 분산 운반하고, 범람기에는 정해진 선착 구간을 왕복해 명동 연합 측 하역대에 내려놓는다. 목적지나 승선 대상을 스스로 정하기보다 저울표와 결박 계약에 따라 한 구간씩 움직인다."
         },
         {
+          "en": "Needs and desires: It needs a lump of seal fat to waterproof its bone plates, six pieces of cork to repair its buoyancy chambers, and magnesium brine to restore its muscles. After twelve fully loaded runs, the bone-plate joints must be replaced; without spare cork, it refuses the next run.",
           "ko": "필요·욕구: 골판 방수에는 물개지방 한 덩이, 부력칸 보수에는 코르크 여섯 개, 근육 회복에는 마그네슘 염수가 필요하다. 완전 적재 운행을 열두 번 마치면 골판 이음새를 교체해야 하며, 예비 코르크가 없으면 다음 운행을 거부한다."
         },
         {
+          "en": "Life cycle and upkeep: A buoyant sac must spend sixty days beneath an empty bone plate to become a load-bearing juvenile, and an adult leaves only one buoyant sac during its final repair. If water is not drained from the gaps in its bone plates within four hours after a run, putrefaction gas builds up; after three such instances, it hardens into a sinking-bone form.",
           "ko": "생명주기·유지: 부유낭은 빈 골판 아래에서 육십 일을 보내야 적재아체가 되고, 성체는 생애 마지막 보수 때 부유낭 하나만 남긴다. 운행 후 네 시간 안에 골판 틈의 물을 빼지 않으면 부패 가스가 차며, 세 차례 누적되면 침강골체로 굳는다."
         },
         {
+          "en": "Behavior and rank: Before unloading, it places every load on a scale plate and checks whether the total for each colored cord matches the contracted figure. If it becomes overloaded in transit, it sets cargo down on the nearest raised ledge according to a premarked jettison order, not its value.",
           "ko": "행동·계급: 하역 전 모든 짐을 저울판에 올리고 색 끈별 총량이 계약 수치와 맞는지 확인한다. 이동 중 과하중이 생기면 가치가 아니라 사전에 표시된 투하 순번에 따라 짐을 가까운 높은 턱에 내려놓는다."
         },
         {
+          "en": "Threats by stage: A buoyant sac blocks drains and raises the water level, while a load-bearing juvenile sticks light equipment to its back and carries it away. A flood carrier can drag a bound passenger into deep water, while a sinking-bone form sends cargo and fragments flying in every direction when its internal gas bursts.",
           "ko": "단계별 위협: 부유낭은 배수구를 막아 수위를 높이고, 적재아체는 가벼운 장비를 등에 붙여 가져간다. 범람운반체는 결박된 대상을 깊은 물로 끌고 갈 수 있으며, 침강골체는 내부 가스가 터질 때 화물과 파편을 사방으로 날린다."
         },
         {
+          "en": "Countermeasures and combat: Hanging cork bundles of equal weight from the left and right bone plates steadies its sense of load and stops it from charging or turning sharply. Replacing cargo with buoyant material that matches the scale tag, rather than cutting the cargo free by force, can reduce its load without dropping people even in a crosscurrent.",
           "ko": "대항·전투: 같은 무게의 코르크 묶음을 좌우 골판에 걸면 하중 감각이 안정되어 돌진과 급선회를 멈춘다. 짐을 강제로 잘라 내기보다 저울표에 맞춘 부력재로 교환하면 횡류 속에서도 사람을 떨어뜨리지 않고 적재량을 낮출 수 있다."
         },
         {
+          "en": "Negotiation and moral choice: Placing cargo on the scale plate and tying destination-colored cords directly to the binding rack constitutes a transport proposal. If total weight, jettison order, and unloading points are agreed through the spacing of knots, it preserves the terms for twelve runs: clients receive safe transport, while the carrier secures fat and cork. If concealed cargo falsifies the weight, it unloads all marked cargo on the nearest safe raised ledge and subsequently refuses contracts bearing the same colored cord. HC10 adjusts loading priority among patients, food, and larvae, while H10 prompts a review of whether past jettisoning followed a contract or was coerced.",
           "ko": "협상·도덕 선택: 저울판 위에 화물을 올리고 목적별 색 끈을 결박대에 직접 매는 것이 운송 제안이다. 총중량, 투하 순번, 하역 지점을 매듭 간격으로 합의하면 열두 번의 운행 동안 조건을 보존하고, 의뢰인은 안전한 운송을 받으며 등짐역은 지방과 코르크를 확보한다. 숨긴 짐으로 중량을 속이면 표시된 화물 전부를 가장 가까운 안전 턱에 내리고 이후 같은 색 끈의 계약을 거절한다. HC10은 환자, 식량, 유생 사이의 적재 순위를 조정하고 H10은 과거 투하가 계약에 따른 것인지 강요였는지 검토하게 한다."
         },
         {
+          "en": "Scenario connection: In G10-SC2, the final transport manifest is set for the route between the Yeouido Line’s cargo platform and the Myeongdong Union’s docking stretch; the resource agreement from G10-SC1 and the interpretation of H10 in G10-SC3 change the knot order. HC10 must guarantee the weight chart for the contract to take effect, while XT05 applies not as a docking location but as external pressure that reduces the number of runs.",
           "ko": "시나리오 연결: G10-SC2에서는 여의도선 하역대와 명동 연합 선착 구간 사이의 마지막 운송 명단을 정하며, G10-SC1의 자원 합의와 G10-SC3의 H10 해석이 매듭 순번을 바꾼다. HC10이 중량표를 보증해야 계약이 성립하고, XT05는 선착지가 아니라 운행 횟수를 줄이는 외부 압박으로 적용된다."
         }
       ]
@@ -3136,6 +3879,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -3143,6 +3887,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "The Flood-Mold Breath Cluster was not the name of one species or a single resident group.",
         "ko": "침수곰팡이호흡단은 생물 한 종이나 단일한 주민 집단의 이름이 아니다."
       }
     },
@@ -3150,6 +3895,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "It named an environmental ecology formed in the Sangha Relief State's underground refuge corridor as wet concrete, ration grain heat, ventilation shifts, and drainage workers' breath meshed over long years.",
         "ko": "승가구휼정의 지하 대피 회랑에서 젖은 콘크리트, 배급 곡물의 열 환기 순번 배수 노동자의 호흡이 오랫동안 맞물리며 생긴 환경 생태를 가리킨다."
       }
     },
@@ -3157,6 +3903,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "The corridor running along Seoul's northern hills was an old air-defense passage and underground link, with hastily added dormitories layered floor on floor.",
         "ko": "서울 북쪽 구릉을 따라 이어진 회랑은 오래된 방공 통로와 지하 연결로, 급히 덧댄 숙영실이 층층이 겹쳐 있다."
       }
     },
@@ -3164,6 +3911,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "Water gathered first in the low grids, and people felt the slip underfoot before seeing the damp spreading on the ceiling.",
         "ko": "물은 낮은 격자에 먼저 모이고, 사람들은 발바닥으로 미끄럼을 느낀 뒤에야 천장에서 번지는 습기를 본다."
       }
     },
@@ -3171,6 +3919,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "When the monsoon lengthened, the wet walls' smell stayed in clothes and filter cloth, but that smell or a cough was neither a member's identity nor their morality.",
         "ko": "장마가 길어지면 젖은 벽의 냄새가 옷과 필터 천에 남지만, 그 냄새나 기침은 구성원의 신분도 도덕성도 아니다."
       }
     },
@@ -3178,6 +3927,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "The name Breath Cluster arose not to classify anyone but to record where the exchange of water and air stopped.",
         "ko": "호흡단이라는 명칭은 누군가를 분류하기 위한 것이 아니라, 어느 구간에서 물과 공기의 교환이 멈추는지를 기록하기 위해 생겼다."
       }
     },
@@ -3185,6 +3935,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "The forming trigger was the continuous flooding of the Bukhansan Bogukmun corridor and the Garak and Jamsil lower ration stores.",
         "ko": "형성의 계기는 북한산보국문 회랑과 가락·잠실 하층 배급고의 연속 침수였다."
       }
     },
@@ -3192,6 +3943,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "Early on, managers tried to remove wall film and grain smell at once, and disinfectant flowed into drainage slots and mixed with drinking-pipe condensation in riots.",
         "ko": "초기에는 관리 인력이 벽면의 막과 곡물 냄새를 한꺼번에 제거하려 했고, 소독제가 배수 슬롯으로 흘러들어 식수관 결로와 섞이는 소동도 있었다."
       }
     },
@@ -3199,6 +3951,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "Afterwards residents chose separation over removal.",
         "ko": "이후 주민들은 제거보다 분리를 택했다."
       }
     },
@@ -3206,6 +3959,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "They began recording in different ledgers the positions of wet film, pump running times, filter-cloth wash counts, and the grain piles' internal heat.",
         "ko": "젖은 막이 생긴 위치, 펌프 가동 시각 필터 천의 세척 횟수 곡물 포대의 내부 열을 서로 다른 원장에 적기 시작했다."
       }
     },
@@ -3213,6 +3967,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "The principle of never merging the seed vault's records with the corridor humidity records was also born then.",
         "ko": "종자 금고의 기록과 회랑 습기 기록을 합치지 않는 원칙도 이때 생겼다."
       }
     },
@@ -3220,6 +3975,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "Bound into one number, it would vanish whether seeds had been saved at the dormitories' expense or planting stock wet to move people.",
         "ko": "하나의 숫자로 묶으면 종자를 살리기 위해 숙영지를 희생했는지, 사람을 옮기기 위해 파종분을 젖게 했는지가 사라지기 때문이다."
       }
     },
@@ -3227,6 +3983,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "The cluster first made its rhythm at Bukhansan Bogukmun's lowest drain grid.",
         "ko": "호흡단은 북한산보국문의 가장 낮은 배수 격자에서 먼저 박자를 만든다."
       }
     },
@@ -3234,6 +3991,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "Before the water seeping between grids reached ankle height, workers breathed in short and out long, listening to pipe vibration.",
         "ko": "격자 사이로 스며든 물이 발목 높이에 닿기 전, 작업자들은 짧게 들이쉬고 길게 내쉬며 파이프 진동을 듣는다."
       }
     },
@@ -3241,6 +3999,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "When the pumps ran, the colony's center did not chase the falling water but moved with the direction humid air was pushed, toward the connection pipes under Songpa-daero and the Garak ration-store vents.",
         "ko": "펌프가 작동하면 군집의 중심은 빠지는 물을 쫓지 않고, 습한 공기가 밀려가는 방향을 따라 송파대로 아래 연결관과 가락 배급. 환기구 쪽으로 옮겨간다."
       }
     },
@@ -3248,6 +4007,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "When the grain piles' heat rose, the flow sensing fermentation smell split toward the seed vault, and the rest guarded the condensation on the Jamsil lowland drinking pipes.",
         "ko": "곡물 더미의 열이 오르면 발효 냄새를 감지하는 흐름이 종자 창고로 갈라지고, 나머지는 잠실 저지대 식수관에 맺히는 결로를 지킨다."
       }
     },
@@ -3255,6 +4015,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "Before abrupt dehumidification the smell sense collapsed and it stopped moving.",
         "ko": "급격한 제습 앞에서는 냄새 감각이 무너져 이동을 멈춘다."
       }
     },
@@ -3262,6 +4023,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "When a downpour struck suddenly, volatile smells changed first and pipe vibration arrived late, so writing both as same-moment evidence misjudged the backflow point.",
         "ko": "폭우가 갑자기 들이칠 때는 휘발성 냄새가 먼저 변하. 파이프 진동은 늦게 도착하므로, 둘을 같은 시각의 증거처럼 적으면 역류 지점을 잘못 짚게 된다."
       }
     },
@@ -3269,6 +4031,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "Synthetic Yunsaeron H10's humidity logs supplemented this sense but were no device guessing beyond walls.",
         "ko": "합성 윤새론 H10의 습도 로그는 이 감각을 보완하지만 벽 너머를 알아맞히는 장치는 아니다."
       }
     },
@@ -3276,6 +4039,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "When they clashed with field records, the machine figures were measured again.",
         "ko": "현장 기록과 어긋나면 기계 수치도 다시 측정한다."
       }
     },
@@ -3283,6 +4047,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "This resource economy depended not on how much water one held but on holding humidity under which ceiling.",
         "ko": "이들의 자원 경제는 물을 얼마나 갖느냐보다 습도를 어느 상한 아래에 붙들어 두느냐에 달려 있다."
       }
     },
@@ -3290,6 +4055,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "Drainage-pump power was metered separately from ration-window lighting, and as fuel fell, expansion sections closed first.",
         "ko": "배수 펌프 전력은 배급 창의 조명 전력과 별도 계량되며, 연료가 줄면 확장 구간부터 닫는다."
       }
     },
@@ -3297,6 +4063,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "Scrap went to grid hinges and pump mounts, and coolant was poured only where motor overheat was confirmed.",
         "ko": "고철은 격자 경첩과 펌프 받침을 고치는 데 쓰고, 냉각수는 모터 과열이 확인된 곳에만 붓는다."
       }
     },
@@ -3304,6 +4071,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "Filter cloth was removed wet, sealed, and washed, and past the reuse ceiling it went to the discard bin, not to other uses.",
         "ko": "필터 천은 젖은 채 떼어 밀봉한 뒤 세척하며, 재사용 횟수가 상한을 넘으면 다른 용도로 돌리지 않고 폐기 칸으로 보낸다."
       }
     },
@@ -3311,6 +4079,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "Its humidity-management range overlapped the Magok Seed House HC10's fermenting-seed vault.",
         "ko": "마곡종자가 HC10의 발효 종자 금고와는 습도 관리 범위가 겹친다."
       }
     },
@@ -3318,6 +4087,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "But it never traded one filter cloth directly for one seed sack or one passage slot.",
         "ko": "그러나 필터 천 한 장을 종자 포대 하나나 통행 슬롯 하나와 곧바로 맞바꾸지는 않는다."
       }
     },
@@ -3325,6 +4095,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "The moment waterway safety and food's future were converted into a single price, the lowest dormitory's loss was pushed off the ledger.",
         "ko": "물길의 안전과 식량의 미래를 단일 가격으로 환산하는 순간, 가장 낮은 숙영지의 손실이 장부 밖으로 밀려나기 때문이다."
       }
     },
@@ -3332,6 +4103,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p28",
       "text": {
+        "en": "Authority was divided among three circles.",
         "ko": "권한은 세 개의 원에 나뉜다."
       }
     },
@@ -3339,6 +4111,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p29",
       "text": {
+        "en": "The grid circle watched water level and floor friction, the ventilation circle air passage and filter resistance, the ration-store circle grain heat and fermentation smell.",
         "ko": "격자 원은 수위와 바닥 마찰을, 환기 원은 공기의 통과와 필터 저항을 배급고 원은 곡물 열과 발효 냄새를 감시한다."
       }
     },
@@ -3346,6 +4119,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p30",
       "text": {
+        "en": "No circle could command another, and when the three rhythms slipped, movement and pump tests stopped together.",
         "ko": "어느 원도 다른 원에 명령할 수 없으며 세 박자가 어긋나면 이동과 펌프 시험을 함께 멈춘다."
       }
     },
@@ -3353,6 +4127,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p31",
       "text": {
+        "en": "Especially the most breathless person held the right to call that section's stop signal.",
         "ko": "특히 가장 숨이 가빠진 사람에게는 해당 구간의 중지 신호를 낼 권리가 있다."
       }
     },
@@ -3360,6 +4135,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p32",
       "text": {
+        "en": "This was no mere symbol of protecting the weak.",
         "ko": "이는 약한 이를 보호한다는 상징에 그치지 않는다."
       }
     },
@@ -3367,6 +4143,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p33",
       "text": {
+        "en": "It was the procedure of admitting the body where air blocked first as one of the measuring instruments.",
         "ko": "공기가 가장 먼저 막히는 몸을 계측기의 하나로 인정하는 절차다."
       }
     },
@@ -3374,6 +4151,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p34",
       "text": {
+        "en": "The human duty could not ignore that signal, and the signaler could not monopolize rations either.",
         "ko": "인간 당직자는 그 신호를 무시할 수 없고, 신호를 낸 사람도 배급을 독점할 수 없다."
       }
     },
@@ -3381,6 +4159,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p35",
       "text": {
+        "en": "Resuming work required the residents' delegate to confirm by name the households that would flood and the beds to move under the waterway change.",
         "ko": "작업 재개에는 주민 대표가 물길 변경으로 잠길 가구와 옮겨야 할 침상을 이름별로 확인해야 한다."
       }
     },
@@ -3388,6 +4167,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p36",
       "text": {
+        "en": "In this system, power lay not in the ability to stand at the front but in the ability to stop everyone and record its cost.",
         "ko": "이 체계에서 권력은 선두에 서는 능력보다 모두를 멈추게 하고 그 비용을 기록하게 하는 능력에 있다."
       }
     },
@@ -3395,6 +4175,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p37",
       "text": {
+        "en": "G10-SC1 'The Slick Stone Steps' began as monsoon rain covered Bukhansan Bogukmun's last drain grid and a refugee column carrying medicine to the high dormitories stopped before the slick stairs.",
         "ko": "G10-SC1 ‘미끄러운 돌계단’은 장맛비가 북한산보국문의 마지막 배수 격자를 덮고, 높은 숙영지로 약품을 나르는 피난 행렬이 젖은 계단 앞에서 멈추며 시작된다."
       }
     },
@@ -3402,6 +4183,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p38",
       "text": {
+        "en": "Turning the column back reduced falls but cut the upper clinic's medicine.",
         "ko": "현장 인원이 행렬을 돌려보내면 낙상은 줄지만 위쪽 치료소의 약품이 끊긴다."
       }
     },
@@ -3409,6 +4191,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p39",
       "text": {
+        "en": "Opening the stairs and attaching a guide per family continued transport while casualties accumulated and guide labor left the ration staff.",
         "ko": "계단을 열고 가족마다 안내인을 붙이면 운송은 이어지되 부상자가 누적되고 안내 노동까지 배급 인력에서 빠진다."
       }
     },
@@ -3416,6 +4199,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p40",
       "text": {
+        "en": "Lifting only the grid to change the waterway and detouring people looked most technical, but the changed water flooded the lower tent section.",
         "ko": "격자만 들어 물길을 바꾸고 사람을 우회시키는 선택은 가장 기술적으로 보이지만, 바뀐 물은 아래쪽 천막 구역을 잠기게 한다."
       }
     },
@@ -3423,6 +4207,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p41",
       "text": {
+        "en": "A once-wet bedding box and document chest never returned to the original dormitory, and the relocated families' passage distance remained in every later ration cost.",
         "ko": "한번 젖은 침상과 문서함은 말려도 원래 숙영지로 돌아오지 못하며, 이주 가족의 통행 거리는 이후 모든 배급 비용에 남는다."
       }
     },
@@ -3430,6 +4215,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p42",
       "text": {
+        "en": "The situation passed to the second stage when drinking-water smell rose from the drain.",
         "ko": "상황은 배수구에서 식수 냄새가 날 때 두 번째 단계로 넘어간다."
       }
     },
@@ -3437,6 +4223,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p43",
       "text": {
+        "en": "In G10-SC2 'Two Waters in One Pool,' Bukhansan Bogukmun drinking-pipe condensation and corridor flood met in one pool of the Garak lower level.",
         "ko": "G10-SC2 ‘한 웅덩이의 두 물’에서는 북한산보국문 식수관 결로와 회랑 침수수가 가락 하층의 한 웅덩이에서 만난다."
       }
     },
@@ -3444,6 +4231,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p44",
       "text": {
+        "en": "Draining Bukhansan Bogukmun first lowered the stair water but pushed humid air into the seed vault, cutting next season's planting sacks.",
         "ko": "북한산보국문 배수를 먼저 돌리면 계단 수위는 내려가지만 습한 공기가 종자 금고로 밀려들어 다음 철 파종 포대가 줄어든다."
       }
     },
@@ -3451,6 +4239,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p45",
       "text": {
+        "en": "Prioritizing vault desiccation saved the seeds but forced three rows of refugee tents up through the night.",
         "ko": "금고 제습을 우선하면 종자는 지킬 수 있으나 피난 천막 세 줄을 밤새 높은 곳으로 옮겨야 한다."
       }
     },
@@ -3458,6 +4247,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p46",
       "text": {
+        "en": "Stopping the pumps and separating the two waters manually with different-colored buoys and buckets bought time, but labor fatigue and partial contamination made both discard a set volume.",
         "ko": "현장 인원이 펌프를 멈추. 색이 다른 부표와 양동이를 이용해 두 물을 수동으로 가르면 시간을 벌 수 있지만, 인력 피로와 부분 오염 때문에 양쪽 모두 일정량을 폐기한다."
       }
     },
@@ -3465,6 +4255,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p47",
       "text": {
+        "en": "The loss here was not only wet sacks.",
         "ko": "여기서 손실은 젖은 포대 수만이 아니다."
       }
     },
@@ -3472,6 +4263,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p48",
       "text": {
+        "en": "Shrinking planting area and families scattered to other dormitories, unable to return, long remained in different ledgers.",
         "ko": "파종 면적의 축소와 다른 숙영지로 흩어진 가족의 귀환 불능이 서로 다른 원장에 오래 남는다."
       }
     },
@@ -3479,6 +4271,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p49",
       "text": {
+        "en": "The greatest danger came not when water grew but when whichever pump ran first harmed the other system.",
         "ko": "최고 위험은 물이 많아졌을 때가 아니라 어느 펌프를 먼저 돌려도 다른 체계를 해치게 되었을 때 온다."
       }
     },
@@ -3486,6 +4279,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p50",
       "text": {
+        "en": "In G10-SC3 'The Stop Declaration,' the most breathless circle declared a work stop until the residents' delegate confirmed the relocation families.",
         "ko": "G10-SC3 ‘중지 선언’에서 가장 숨이 가쁜 원은 주민 대표가 이주 대상 가족을 확인할 때까지 작업 중지를 선포한다."
       }
     },
@@ -3493,6 +4287,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p51",
       "text": {
+        "en": "Recognizing it delayed rations and cut planting volume, but backflow testing and waterway knowledge were maintained.",
         "ko": "이를 인정하면 배급이 늦고 파종량도 감소하지만, 역류 시험과 물길 지식은 유지된다."
       }
     },
@@ -3500,6 +4295,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p52",
       "text": {
+        "en": "If field staff force-connected military pumps, the water level fell short-term but both Bukhansan Bogukmun's and Garak's ledgers became void at once, and the cluster joined no later pump test.",
         "ko": "현장 인원이 군사 펌프를 강제로 연결하면 단기적으로 수위는 낮아져도 북한산보국문과 가락의 원장이 동시에 무효가 되고, 호흡단은 이후 펌프 시험에 참여하지 않는다."
       }
     },
@@ -3507,6 +4303,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p53",
       "text": {
+        "en": "Draining water toward the sea-wind direction of the Incheon Trust Theater XT05 and passing it outward was also possible, but that water left a season's contamination burden on the Tancheon downstream and coastal stores.",
         "ko": "인천신탁전구 XT05에서 들어오는 해풍 방향으로 물을 빼 외곽에 넘기는 선택도 가능하지만, 그 물은 탄천 하류와 해안 저장지에 한 철 동안 오염 부담을 남긴다."
       }
     },
@@ -3514,6 +4311,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p54",
       "text": {
+        "en": "It was a hard-to-reverse decision saving the central corridor while erasing the outer water intake and livelihood.",
         "ko": "지도 중앙의 회랑을 구하는 대신 외곽의 취수와 생업을 지우는 되돌리기 어려운 결정이다."
       }
     },
@@ -3521,6 +4319,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p55",
       "text": {
+        "en": "The heart of response lay not in driving out but in distinguishing waterways again.",
         "ko": "대응의 핵심은 몰아내기가 아니라 물길을 다시 구별하는 데 있다."
       }
     },
@@ -3528,6 +4327,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p56",
       "text": {
+        "en": "Hanging different-colored buoys under the grids and running pumps one at a time briefly located backflow points.",
         "ko": "격자 아래에 색이 다른 부표를 달고 펌프를 한 대씩 짧게 돌려 역류 위치를 찾는다."
       }
     },
@@ -3535,6 +4335,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p57",
       "text": {
+        "en": "Filter cloth was not shaken dry; it was folded wet and sealed, and dehumidifiers went to the seed vault first without blowing cold wind directly on people.",
         "ko": "필터 천은 마른 상태로 털지 않. 젖은 채 접어 밀봉하며, 제습기는 종자 금고에 우선 배치하되 회랑의 사람에게 직접 찬 바람을 쏘지 않는다."
       }
     },
@@ -3542,6 +4343,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p58",
       "text": {
+        "en": "Toxic spraying ruined not only the wet film but both drainage and drinking water, the most expensive choice.",
         "ko": "독성 살포는 젖은 막뿐 아니라 배수와 식수 양쪽을 못 쓰게 하므로 가장 비싼 선택이다."
       }
     },
@@ -3549,6 +4351,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p59",
       "text": {
+        "en": "Response costs included not only fuel and cloth but closed-stair counts, abandoned seed sacks, relocated families, and interrupted medicine transport time.",
         "ko": "대응 비용에는 연료와 천만이 아니라 닫힌 계단 수, 버린 종자 포대 옮겨진 가족 중단된 약품 운송 시간이 모두 포함된다."
       }
     },
@@ -3556,6 +4359,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p60",
       "text": {
+        "en": "Coexistence was not maintained by promising clean zones.",
         "ko": "공존은 깨끗한 구역을 약속하는 방식으로 유지되지 않는다."
       }
     },
@@ -3563,6 +4367,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p61",
       "text": {
+        "en": "Bukhansan Bogukmun residents testified to the flooded stairs, Garak managers disclosed per-sack humidity and discard limits, and the three circles separately stated which signal — water height, air flow, or grain heat — touched the danger line first.",
         "ko": "북한산보국문 주민이 잠긴 계단을 증언하고, 가락 관리자가 포대별 습도와 폐기 한계를 공개하며 세 원이 물높이·공기 흐름·곡물 열 가운데 어떤 신호가 먼저 위험선에 닿았는지 따로 말해야 한다."
       }
     },
@@ -3570,6 +4375,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p62",
       "text": {
+        "en": "Draining Bukhansan Bogukmun first, Garak documented the reduced planting volume; guarding the vault first, the coalition compensated relocation cost and lost dormitories.",
         "ko": "북한산보국문을 먼저 빼면 가락은 감소한 파종량을 문서로 인정하고, 금고를 먼저 지키면 연맹은 이주 비용과 잃은 숙영지를 보상한다."
       }
     },
@@ -3577,6 +4383,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p63",
       "text": {
+        "en": "Even when the accord broke, the cluster did not attack.",
         "ko": "합의가 깨져도 호흡단은 공격하지 않는다."
       }
     },
@@ -3584,6 +4391,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p64",
       "text": {
+        "en": "It only withdrew from pump tests, and both sides bore greater loss without backflow knowledge.",
         "ko": "다만 펌프 시험에서 물러나고, 양쪽은 역류 지식을 잃은 채 더 큰 손실을 떠안는다."
       }
     },
@@ -3591,6 +4399,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p65",
       "text": {
+        "en": "So the corridor's order stood not on odorless air but on records that hid neither who got wet, what was discarded, nor at which breath work stopped.",
         "ko": "그래서 회랑의 질서는 냄새 없는 공기가 아니라, 누가 젖었. 무엇을 버렸으며 어느 호흡에서 작업을 멈췄는지를 숨기지 않는 기록 위에 세워진다."
       }
     },
@@ -3599,6 +4408,7 @@
       "anchor": "연결-시나리오",
       "depth": 2,
       "text": {
+        "en": "Linked Scenarios",
         "ko": "연결 시나리오"
       }
     },
@@ -3607,6 +4417,7 @@
       "anchor": "g10-sc1-미끄러운-돌계단",
       "depth": 3,
       "text": {
+        "en": "G10-SC1 · The Slippery Stone Stairs",
         "ko": "G10-SC1 · 미끄러운 돌계단"
       }
     },
@@ -3615,27 +4426,35 @@
       "anchor": "g10-sc1-미끄러운-돌계단-list1",
       "items": [
         {
+          "en": "Stage: 1",
           "ko": "단계: 1"
         },
         {
+          "en": "Trigger: Monsoon rain covers Bukhansan Bogukmun's last drain grid, and a refugee column stands before slick stone steps.",
           "ko": "촉발: 장맛비가 북한산보국문 마지막 배수 격자를 덮고 피난 행렬이 미끄러운 돌계단 앞에 선다."
         },
         {
+          "en": "Related powers: S10, HC10, H10",
           "ko": "관련 세력: S10, HC10, H10"
         },
         {
+          "en": "Ecological mechanism: While the grid circle drums the water height, opening the stairs grows casualties and closing them stops the high dormitories' medicine.",
           "ko": "생태 기제: 격자 원이 물높이를 두드리는 동안 계단을 열면 부상자가 늘고 닫으면 높은 숙영지의 약품이 멈춘다."
         },
         {
+          "en": "Choices: Turn the evacuation column back / Leave the stairs open and attach a guide to each family / Lift only the grates, change only the water path, and detour the people",
           "ko": "선택지: 피난 행렬을 돌려보낸다 / 계단을 연 채 가족별 안내인을 붙인다 / 격자만 들어 올려 물길만 바꾸고 사람은 우회시킨다"
         },
         {
+          "en": "Outcome: Turning back cuts the medicine. Keeping open grows casualties. Changing only the waterway floods the lower tents.",
           "ko": "결과: 돌려보내면 약품이 끊긴다. 열어 두면 부상자가 는다. 물길만 바꾸면 아래 천막이 잠긴다."
         },
         {
+          "en": "Moral cost: Places who steps on the wet stairs and who goes without medicine in the same rain.",
           "ko": "도덕 비용: 누가 젖은 계단을 밟을지와 누가 약을 받지 못할지를 같은 빗속에 둔다."
         },
         {
+          "en": "Source item: G10",
           "ko": "원본 항목: G10"
         }
       ]
@@ -3645,6 +4464,7 @@
       "anchor": "g10-sc2-한-웅덩이의-두-물",
       "depth": 3,
       "text": {
+        "en": "G10-SC2 · Two Waters in One Pool",
         "ko": "G10-SC2 · 한 웅덩이의 두 물"
       }
     },
@@ -3653,27 +4473,35 @@
       "anchor": "g10-sc2-한-웅덩이의-두-물-list1",
       "items": [
         {
+          "en": "Stage: 2",
           "ko": "단계: 2"
         },
         {
+          "en": "Trigger: Drinking-pipe condensation and floodwater meet in one pool, and whichever pump runs contaminates the other.",
           "ko": "촉발: 식수관 결로와 침수수가 한 웅덩이에서 만나 펌프를 어느 쪽으로 돌려도 다른 쪽이 오염된다."
         },
         {
+          "en": "Related powers: S10, S15, HC10",
           "ko": "관련 세력: S10, S15, HC10"
         },
         {
+          "en": "Ecological mechanism: Filter cloth cannot be traded for passage slots, and Bukhansan Bogokmun drainage and the Garak seed vault's humidity hang on the same pump.",
           "ko": "생태 기제: 필터 천과 통행 슬롯을 맞바꿀 수 없고, 북한산보국문 배수와 가락 종자 금고 습도가 같은 펌프에 묶여 있다."
         },
         {
+          "en": "Choices: Drain the Bukhansan Bogukmun water first / Dry the seed strongroom first / Stop the pumps and bail both waters by hand",
           "ko": "선택지: 북한산보국문 물을 먼저 뺀다 / 종자 금고를 먼저 말린다 / 펌프를 멈추고 두 물을 수동으로 퍼낸다"
         },
         {
+          "en": "Outcome: Bukhansan Bogukmun priority wets the seed sacks. Vault priority moves three tent rows overnight. Manual drainage trades time for partial loss on both.",
           "ko": "결과: 북한산보국문 우선은 종자 포대를 적신다. 금고 우선은 피난 천막 세 줄을 밤새 옮긴다. 수동 배수는 시간을 팔아 둘 다 부분 손실한다."
         },
         {
+          "en": "Moral cost: Chooses which ledger to wet first — planting volume or dormitory places.",
           "ko": "도덕 비용: 파종량과 숙영지 자리 중 어느 원장을 먼저 젖게 할지 고른다."
         },
         {
+          "en": "Source item: G10",
           "ko": "원본 항목: G10"
         }
       ]
@@ -3683,6 +4511,7 @@
       "anchor": "g10-sc3-중지-선언",
       "depth": 3,
       "text": {
+        "en": "G10-SC3 · A Declaration of Stoppage",
         "ko": "G10-SC3 · 중지 선언"
       }
     },
@@ -3691,27 +4520,35 @@
       "anchor": "g10-sc3-중지-선언-list1",
       "items": [
         {
+          "en": "Stage: 3",
           "ko": "단계: 3"
         },
         {
+          "en": "Trigger: The most breathless circle declares a work stop, and the pumps do not run until the residents' delegate confirms the relocation families' names.",
           "ko": "촉발: 가장 숨이 가쁜 원이 작업 중지를 선언하고 주민 대표가 이주 가족 이름을 확인하기 전에는 펌프가 돌지 않는다."
         },
         {
+          "en": "Related powers: S10, S15, XT05, HC10, H10",
           "ko": "관련 세력: S10, S15, XT05, HC10, H10"
         },
         {
+          "en": "Ecological mechanism: Not dehumidification collapsing the film but the breathing-stop right halting the waterway, so forced pumps break both communities' water ledgers.",
           "ko": "생태 기제: 제습으로 막이 무너지는 것이 아니라 호흡 중지권이 물길을 멈추므로 강제 펌프는 두 공동체의 물 원장을 깨뜨린다."
         },
         {
+          "en": "Choices: Recognize the right to stop and accept the ration delay / Connect the military pumps by force / Drain the water toward the ocean-going sea wind and push it off onto the outskirts",
           "ko": "선택지: 중지권을 인정하고 배급 지연을 감수한다 / 군사 펌프를 강제로 연결한다 / 원양 해풍 쪽으로 물을 빼 외곽에 떠넘긴다"
         },
         {
+          "en": "Outcome: Recognition delays rations and cuts planting. Forcing breaks both ledgers and severs cooperation. Outer discharge leaves a season's coastal contamination.",
           "ko": "결과: 인정은 배급을 늦추고 파종량을 줄인다. 강제는 두 원장을 깨고 협력을 끊는다. 외곽 방류는 한 철의 해안 오염을 남긴다."
         },
         {
+          "en": "Moral cost: The remaining cost is not an open ration window but dormitories erased from the map.",
           "ko": "도덕 비용: 열린 식수 창이 아니라 지도에서 지워진 숙영지가 남는 비용이다."
         },
         {
+          "en": "Source item: G10",
           "ko": "원본 항목: G10"
         }
       ]

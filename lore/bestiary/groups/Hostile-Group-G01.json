@@ -5,6 +5,7 @@
   "slug": "hostile-group-g01",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G01 · Flood-Boar Swarm",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G01 · 범람멧돼지군",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g01-범람멧돼지군",
       "depth": 1,
       "text": {
+        "en": "G01 · Flood-Boar Swarm",
         "ko": "G01 · 범람멧돼지군"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g01-범람멧돼지군-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "Outside the Water Compact of the western Han River, family groups split by sow live scattered across the wetlands and the waste slopes. Their food is organic scraps, salt, and shallow-rooted crops, and they have learned to approach in the gaps when the sealing hours and the sluice vibration stop. An adult female opens the move and a subadult checks the front, and a lone male does not follow that decision even when he uses the same feeding ground.",
         "ko": "한강 서부 급수계약정 급수계약정 바깥 습지와 폐기물 경사지에는 모돈별 가족군이 흩어져 산다. 먹이는 유기 음식물과 염분, 얕은 뿌리 작물이며 봉인 시각과 수문 진동이 멎는 틈을 학습해 접근한다. 성체 암컷이 이동을 열고 아성체가 앞쪽을 살피며, 단독 수컷은 같은 먹이터를 쓰더라도 그 결정을 따르지 않는다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "An ordinary flood boar does not leave the family-group ecology even when it wraps its back in a mud bath and a salt crust. The iron-plate, fused-plate, and venom-tusk lines are mutants split off by deep sewer contamination, and a low-frequency call binds only that bloodline. The Mud Iron Wall and the Steel Wetland are places where family labor has piled up, not the body of the great boar itself.",
         "ko": "보통의 범람멧돼지는 진흙 목욕과 염분 껍질로 등판을 두르더라도 가족군 생태를 벗어나지 않는다. 철갑·융합갑·맹독엄니 쪽은 하수 심층 오염에서 갈라진 돌연변이로, 낮은 주파수 울음이 그 혈통만 묶는다. 진흙철벽과 강철습지는 가족 노동이 쌓인 장소이지 대왕의 몸 자체가 아니다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,66 +106,82 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "Right after the collapse, a flood on the western Han River cut the green axis outside the Yeouido and Yeongdeungpo sluices, and wild-boar bands that came down the Bukhansan and Anyangcheon corridors settled at the scrap-recovery yards on the edge of the Water Compact. / The real-world sources support only the basic ecology of urban appearances, food sources, and blocked movement. The behavior of learning the sealing hours, and the relation with HC01, are fiction. / When the pile of cooling waste sealed by the Yeouido Computing House (HC01) came to be used as a winter salt source, the local name Flood-Boar Swarm stuck.",
             "ko": "붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 급수계약정 급수계약정 가장자리 음식물 회수장에 정착했다. / 현실 자료는 도심 출몰·먹이원·이동 차단의 기본 생태만 뒷받침하며, 봉인 시각을 학습하는 행동과 HC01과의 관계는 허구다. / HC01 여의도전산가이 봉인한 냉각 폐기물 더미가 겨울 염분원으로 쓰이면서 ‘범람멧돼지군’이라는 현지 호칭이 붙었다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The core habitat is the wetland and the waste slope outside the Water Compact sluice. / In the dry season and in winter they move along the fragments of green space toward the Republic of Korea Government at the center of Seoul Station, and along the axis of leftovers from the night markets. They react to the scrap traces of the refugee columns pushed down from the Imjin River Gate Theater (XT01), and the northwestern edge stirs. / When the flood level crosses the sluice warning line, the band is pushed up the high ground in steps and crosses the passage.",
             "ko": "핵심 서식은 급수계약정 수문 바깥 습지·폐기물 경사지다. / 건기·동절기에는 서울역 중앙 대한민국정부 쪽 녹지 파편과 야간 시장 잔여물 축을 따라 이동하고, XT01 임진강관문전구에서 밀려 내려오는 피난 행렬의 음식물 흔적에 반응해 북서 가장자리가 들썩인다. / 홍수위가 수문 경고선을 넘으면 무리는 고지대 계단식으로 밀려 오르며 통행로를 가로지른다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "The main resources are organic scraps, salt, and shallow-rooted crops, and as secondary resources they use the soft plastic of flood debris and the pools of cooling water. / When the HC01 recovery trough delays the scrap-sealing cycle, the band's density rises, and when the seal is drawn too tight the band diverts to household-alley scraps. / The energy cycle runs from feeding to dung to the wetland microbial film, and unsanctioned hunting for meat and hide, instead of a short-term gain, makes the remaining band more aggressive.",
             "ko": "주 자원은 유기 음식물·염분·얕은 뿌리 작물이고, 부자원으로 침수 잔해의 연질 플라스틱과 냉각수 웅덩이를 쓴다. / HC01 회수조가 음식물 봉인 주기를 늦추면 무리 밀도가 올라가고, 봉인을 과도히 조이면 무리는 가정 골목 음식물로 우회한다. / 에너지 순환은 섭식-배설-습지 미생물막으로 이어지며, 고기·가죽을 노리는 비공인 수렵은 단기 이득 대신 잔여 무리를 더 공격적으로 만든다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "Before the monsoon rains, family groups split by sow scatter and scout the feeding grounds, and right after a flood they join the high-ground scrap axis for a time. / A family group splits only when the survival rate of the young stays high for two seasons in a row, and when the winter salt sources and the mud baths shrink they choose long-distance movement over breeding.",
             "ko": "장마 전에는 모돈별 가족군이 흩어져 먹이터를 정찰하고, 범람 직후에는 고지대 음식물 축에 일시 합류한다. / 새끼 생존률이 두 계절 연속 높을 때만 가족군이 갈라지며, 겨울 염분원과 진흙 목욕터가 줄면 번식보다 장거리 이동을 택한다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "They read together the low-frequency vibration of sluice opening and closing and of vehicles, carried through the hooves, and the smells of scraps, people, and disinfectant, and at close range they react to warmth carried on the wind and to the flow of air. / They cannot distinguish a distant heat source or decipher electronic noise. / Only Hannuri's (H01) infrared observation compares the heat sources of people, generators, and wild boars, and on days of heavy rain, wind, and cooling fog a person reads the family groups and the lone individuals again.",
             "ko": "발굽으로 전해지는 수문 개폐·차량의 저주파 진동과 음식물·사람·소독약 냄새를 함께 읽고, 가까운 거리에서는 바람에 실린 온기와 공기 흐름에 반응한다. / 원거리 열원을 구분하거나 전자 잡음을 해독하지 못한다. / H01 한누리의 적외선 관측만 사람·발전기·멧돼지 열원을 비교하며, 비바람과 냉각 안개가 심한 날에는 사람이 가족군과 단독 개체를 다시 판독한다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "One adult female with young starts the move first, and the subadults scout the feeding ground and the escape route ahead. / Lone males overlap the band only loosely and do not follow the decision to move. / H01 marks the central individual of a family group and the lone males as separate heat-source clusters, and when the central female disappears the group tracks the young's scent for 48 hours and then disperses by family.",
             "ko": "새끼를 둔 성체 암컷 한 마리가 이동을 먼저 시작하고 아성체가 앞쪽 먹이터와 퇴로를 탐색한다. / 수컷 단독 개체는 무리와 느슨하게 겹칠 뿐 이동 결정을 따르지 않는다. / H01은 가족군 중심 개체와 단독 수컷을 별도 열원 군집으로 표시하고, 중심 암컷이 사라지면 48시간 동안 새끼 냄새를 추적한 뒤 가족별로 분산한다."
           }
         ],
         [
           {
+            "en": "Long-term adaptation",
             "ko": "장기 적응"
           },
           {
+            "en": "Over a short span they learn the positions of fences and the sealing hours, but that memory is not treated as a genetic change. / Across many generations nocturnal activity and avoidance of people can be selected, but heavy capture removes the bold individuals first and causes a reverse selection in which the more secretive individuals remain. / The more secretive they become, the longer the search for a feeding ground takes, and the growth rate of the young falls.",
             "ko": "짧은 기간에는 울타리 위치와 봉인 시각을 학습하지만 그 기억을 유전 변화로 취급하지 않는다. / 여러 세대에 걸쳐 야간 활동성과 사람 회피성이 선택될 수 있으나, 강한 포획은 대담한 개체만 먼저 제거해 더 은밀한 개체가 남는 역선택을 일으킨다. / 은밀성이 높아질수록 먹이터 탐색 시간이 늘어 새끼 성장률이 낮아진다."
           }
         ]
@@ -156,6 +192,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -163,6 +200,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The iron-plate line's absolute command holds only inside the resonance range of the metal and venom variant bloodlines, and does not direct the whole of the sow family groups. With its hooves it reads the sluice's low frequency layered over the smells of scraps and disinfectant, and it cannot decipher a distant heat source or electronic noise. When the central female disappears, the group sniffs the young's scent for about 48 hours and then scatters by family, and the great boar's call does not fill that gap.",
         "ko": "철갑의 절대 명령은 금속·독 변이 혈통의 공명 거리 안에서만 통하고 모돈 가족군 전체를 지휘하지 않는다. 발굽으로 수문 저주파와 음식물·소독약 냄새를 겹쳐 읽을 뿐 먼 열원이나 전자 잡음은 해독하지 못한다. 중심 암컷이 사라지면 약 48시간 새끼 냄새를 훑은 뒤 가족별로 흩어지고, 대왕 울음이 그 공백을 메우지는 않는다."
       }
     },
@@ -170,6 +208,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -178,27 +217,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G01E01 · Flood-Boar Great King 'Ironclad'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E01 · 범람멧돼지 대왕 '철갑'",
@@ -211,23 +266,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Control of mutant lineages",
             "ko": "변이 혈통 통제"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E02 · Flood-Boar Scout 'Mudnose'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E02 · 범람멧돼지 정찰꾼 '흙코'",
@@ -240,23 +310,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Scouting",
             "ko": "정찰"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E03 · Flood-Boar Scavenger 'Rustiron'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E03 · 범람멧돼지 청소부 '녹철이'",
@@ -269,23 +354,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Corrosion support",
             "ko": "부식 지원"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E04 · Flood-Boar Guard 'Steel Tusk'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E04 · 범람멧돼지 경비병 '강철엄니'",
@@ -298,23 +398,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Charging escort",
             "ko": "돌진 호위"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E05 · Flood-Boar Venom Secreter 'Rotmouth'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E05 · 범람멧돼지 독분비자 '썩은입'",
@@ -327,23 +442,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Poison spray",
             "ko": "독 살포"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E06 · Flood-Boar Mud Architect 'Bricknose'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E06 · 범람멧돼지 진흙건축가 '벽돌코'",
@@ -356,23 +486,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Trap construction",
             "ko": "함정 구축"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E07 · Flood-Boar Herd Guide 'Cry-King'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E07 · 범람멧돼지 무리인도자 '울음왕'",
@@ -385,23 +530,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Call relay",
             "ko": "울음 중계"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E08 · Flood-Boar Metal-Fusion Mutant 'Fusion Armor'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E08 · 범람멧돼지 금속융합체 '융합갑'",
@@ -414,23 +574,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Armored charge",
             "ko": "장갑 돌진"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E09 · Flood-Boar Venom King 'Deadly Tusk'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E09 · 범람멧돼지 독왕 '맹독엄니'",
@@ -443,23 +618,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Venom charge",
             "ko": "독 돌진"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E10 · Flood-Boar Ironclad Nest 'Steel Wetland'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E10 · 범람멧돼지 철갑둥지 '강철습지'",
@@ -472,23 +662,38 @@
             ]
           },
           {
+            "en": "Habitat stronghold · facility",
             "ko": "서식 거점·시설"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Colony fortress",
             "ko": "군락 요새"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M001",
             "ko": "M001"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E11 · Flood Boar Fortress 'Mud-Iron Wall'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E11 · 범람멧돼지 요새 '진흙철벽'",
@@ -501,23 +706,38 @@
             ]
           },
           {
+            "en": "Habitat stronghold · facility",
             "ko": "서식 거점·시설"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Sluice Closure",
             "ko": "수문 폐쇄"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M002",
             "ko": "M002"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E12 · Flood Boar Larva 'Tender Ironhide'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E12 · 범람멧돼지 유생 '연약철피'",
@@ -530,23 +750,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Growth Pressure",
             "ko": "성장 압박"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M002",
             "ko": "M002"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E13 · Adult Flood Boar 'Rusty Ironplate'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E13 · 범람멧돼지 성체 '녹슨철갑'",
@@ -559,23 +794,38 @@
             ]
           },
           {
+            "en": "Common species",
             "ko": "공통종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Transport Charge",
             "ko": "운반 돌진"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M002",
             "ko": "M002"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E14 · Coexisting Flood Boar 'Peaceful Ironhide'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E14 · 범람멧돼지 공존형 '평화철피'",
@@ -588,23 +838,38 @@
             ]
           },
           {
+            "en": "Common species",
             "ko": "공통종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Coexisting Collection",
             "ko": "공존 수거"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M002",
             "ko": "M002"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E15 · Flood Boar Boss 'Great King's Heir'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E15 · 범람멧돼지 보스 '대왕후계'",
@@ -617,23 +882,38 @@
             ]
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Mustering Control",
             "ko": "소집 통제"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M002",
             "ko": "M002"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G01E16 · Flood Boar Variant 'Bukhansan Ironplate'",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G01",
+                  "anchor": "g01e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G01E16 · 범람멧돼지 변종 '북한산철갑'",
@@ -646,18 +926,23 @@
             ]
           },
           {
+            "en": "Common species",
             "ko": "공통종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Camouflaged Blockade",
             "ko": "위장 차단"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M002",
             "ko": "M002"
           }
         ]
@@ -667,6 +952,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g01e01\"></a>",
         "ko": "<a id=\"g01e01\"></a>"
       }
     },
@@ -675,6 +961,7 @@
       "anchor": "g01e01-범람멧돼지-대왕-철갑",
       "depth": 3,
       "text": {
+        "en": "G01E01 · Flood-Boar Great King 'Ironclad'",
         "ko": "G01E01 · 범람멧돼지 대왕 '철갑'"
       }
     },
@@ -683,12 +970,15 @@
       "anchor": "g01e01-범람멧돼지-대왕-철갑-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC1\",\"G01-SC2\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC1\",\"G01-SC2\"]}"
         }
       ]
@@ -698,42 +988,52 @@
       "anchor": "g01e01-범람멧돼지-대왕-철갑-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Control of mutant lineages",
             "ko": "변이 혈통 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The low call of the Flood-Boar Great King 'Ironclad' immediately commands only the metal-and-poison mutant lineages. The adult sows retain the movement rights of their family groups; this individual controls the deep-mutant battlefield, not the entire kingdom.",
             "ko": "범람멧돼지 대왕 '철갑'의 낮은 울음은 금속·독 변이 혈통만 즉시 복종시킨다. 모돈 가족군의 이동권은 성체 암컷에게 남아 있고, 이 개체는 그 왕국 전체가 아니라 심층 변이 전장의 통제자다."
           }
         ]
@@ -744,6 +1044,7 @@
       "anchor": "역할신체",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -751,6 +1052,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-p1",
       "text": {
+        "en": "The alpha controller of the Flood-Boar Swarm ruled over a heap of refuse in the lower Han River. Its massive body, four meters long, carried metal wreckage on its back and shook the surrounding sewers.",
         "ko": "범람멧돼지군의 알파 컨트롤러가 한강 하류 폐기물 더미 위에 군림한다. 4미터에 달하는 거구가 금속 잔해를 등에 두르고 다니면서 주변 하수관을 뒤흔든다."
       }
     },
@@ -759,6 +1061,7 @@
       "anchor": "기원",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -766,6 +1069,7 @@
       "kind": "paragraph",
       "anchor": "기원-p1",
       "text": {
+        "en": "A mutant born in the polluted wetlands swept by the G01-SC1 Great Flood took command of the early group. It later led the entire colony's breeding and territorial expansion, reshaping the southern Han River ecosystem.",
         "ko": "G01-SC1 대홍수가 휩쓴 오염 습지에서 태어난 변이종이 초기 무리를 장악했다. 이후 군락 전체의 번식과 영토 확장을 주도하면서 한강 남부 생태계를 재편했다."
       }
     },
@@ -774,6 +1078,7 @@
       "anchor": "서식",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -781,6 +1086,7 @@
       "kind": "paragraph",
       "anchor": "서식-p1",
       "text": {
+        "en": "It settled deep in the sewer tunnels connected to the flooded zone south of Seoul Station. Only during the monsoon rains, when the waters rose, did it surface to scout the surroundings.",
         "ko": "서울역 남부 범람 구역과 연결된 하수 터널 깊숙이 자리를 잡았다. 물이 차오르는 장마철에만 지표로 올라와 주변을 정찰한다."
       }
     },
@@ -789,6 +1095,7 @@
       "anchor": "필요경제",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -796,6 +1103,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-p1",
       "text": {
+        "en": "It relied on decaying organic matter and rusted metal ions as its main energy sources. By consuming exclusively the resources collected by the entire group, it sustained the colony's survival. G01-SC2 confirmed that when energy ran out, the whole colony entered prolonged hibernation.",
         "ko": "부패한 유기물과 녹슨 금속 이온을 주 에너지원으로 삼는다. 무리 전체가 수집한 자원을 독점적으로 소비하면서 군락의 생존을 유지한다. G01-SC2에서 에너지 고갈 시 전체 군락이 장기 동면에 들어가는 사실이 확인됐다."
       }
     },
@@ -804,6 +1112,7 @@
       "anchor": "생애정비",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -811,6 +1120,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-p1",
       "text": {
+        "en": "After a single breeding season in its lifetime, it continually renewed the iron armor on its back. It welded metal fragments brought by its subordinates into place with its own bodily fluids, strengthening its defenses.",
         "ko": "평생 단 한 번의 번식기를 거친 뒤 등에 붙은 철갑을 지속적으로 갱신한다. 부하들이 가져온 금속 조각을 자신의 체액으로 용접하듯 붙여서 방어력을 높인다."
       }
     },
@@ -819,6 +1129,7 @@
       "anchor": "행동위계",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -826,6 +1137,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-p1",
       "text": {
+        "en": "It issued absolute commands through low-frequency calls. All boars obeyed at once, while E02 through E04 interpreted the signal and relayed it to subordinate individuals. This structure kept the colony's hierarchy stable.",
         "ko": "낮은 주파수 울음으로 절대 명령을 내린다. 모든 멧돼지가 즉시 복종하면서 E02부터 E04까지가 그 신호를 해석해 하위 개체에게 전달한다. 이 구조가 군락의 계층을 안정적으로 유지한다."
       }
     },
@@ -834,6 +1146,7 @@
       "anchor": "단계적-위협",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -841,6 +1154,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-p1",
       "text": {
+        "en": "First it unleashed a territorial warning call to threaten intruders. Then it charged with its massive body, scattering the metal fragments on its back in every direction. Finally, it summoned the entire colony to surround its targets with overwhelming numbers.",
         "ko": "먼저 영역 경고 울음을 터뜨려 침입자를 위협한다. 이어서 육중한 몸으로 돌진하면서 등에 붙은 금속 파편을 사방으로 살포한다. 마지막으로 군락 전체를 소집해 압도적인 수로 포위한다."
       }
     },
@@ -849,6 +1163,7 @@
       "anchor": "전투대응",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -856,6 +1171,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-p1",
       "text": {
+        "en": "If field personnel installed a high-frequency sound generator, it could induce resonance in Ironclad and create cracks. On failure, the Great King's charge would collapse the sewer walls, flood the surrounding area, and sharply raise the cost of evacuating citizens. The success signal was the sound of cracks appearing across Ironclad's surface.",
         "ko": "현장 인원이 고주파 음향 발생기를 설치하면 철갑의 공진을 유발해 균열을 만든다. 실패하면 대왕의 돌진이 하수벽을 무너뜨려 주변 구역을 침수시키고 시민 대피 비용이 급증한다. 성공 신호는 철갑 표면에 나타나는 균열음이다."
       }
     },
@@ -864,6 +1180,7 @@
       "anchor": "협상도덕-선택",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -871,6 +1188,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-p1",
       "text": {
+        "en": "It was a being that maintained the colony's ecological balance. Excessive hunting would cripple the entire sewer system and contaminate drinking water for residents of southern Seoul. Limited negotiation was possible in G01-SC3, but refusal led the colony to actively invade human settlements.",
         "ko": "군락의 생태 균형을 유지하는 존재이다. 과도한 사냥은 하수 시스템 전체를 마비시켜 서울 남부 주민의 식수 오염을 초래한다. G01-SC3에서 제한적 협상이 가능하지만 거부 시 군락이 적극적으로 인간 거주지를 침범한다."
       }
     },
@@ -879,6 +1197,7 @@
       "anchor": "시나리오-연결",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -886,6 +1205,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-p1",
       "text": {
+        "en": "It played a key role in G01-SC1, G01-SC2, and G01-SC3.",
         "ko": "G01-SC1, G01-SC2, G01-SC3에서 핵심 역할을 한다."
       }
     },
@@ -893,6 +1213,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-p2",
       "text": {
+        "en": "<a id=\"g01e02\"></a>",
         "ko": "<a id=\"g01e02\"></a>"
       }
     },
@@ -901,6 +1222,7 @@
       "anchor": "g01e02-범람멧돼지-정찰꾼-흙코",
       "depth": 3,
       "text": {
+        "en": "G01E02 · Flood-Boar Scout 'Mudnose'",
         "ko": "G01E02 · 범람멧돼지 정찰꾼 '흙코'"
       }
     },
@@ -909,12 +1231,15 @@
       "anchor": "g01e02-범람멧돼지-정찰꾼-흙코-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC1\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC1\"]}"
         }
       ]
@@ -924,42 +1249,52 @@
       "anchor": "g01e02-범람멧돼지-정찰꾼-흙코-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Scouting",
             "ko": "정찰"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The scout 'Mudnose' was a mutant scouting network raised in the Great King's first litter. It brought the Great King scents from the wetland mud, relaying to a different recipient than ordinary juveniles scouting for feeding grounds.",
             "ko": "정찰꾼 '흙코'는 대왕 첫 배에서 자란 변이 정찰망이다. 습지 진흙의 냄새를 대왕에게 바치며, 보통 아성체의 먹이터 탐색과는 중계 대상이 다르다."
           }
         ]
@@ -970,6 +1305,7 @@
       "anchor": "역할신체-2",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -977,6 +1313,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-2-p1",
       "text": {
+        "en": "Its long snout read the surrounding scents while buried in wetland mud. Its thin, flexible legs moved quickly through the current.",
         "ko": "긴 코가 습지 진흙 속에 파묻힌 채 주변 냄새를 읽는다. 얇고 유연한 다리가 물살을 헤치며 빠르게 이동한다."
       }
     },
@@ -985,6 +1322,7 @@
       "anchor": "기원-2",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -992,6 +1330,7 @@
       "kind": "paragraph",
       "anchor": "기원-2-p1",
       "text": {
+        "en": "The flood-survivor lineage of G01-SC1 grew out of the Great King's first litter. It later formed a scouting network responsible for the colony's outer perimeter.",
         "ko": "G01-SC1 홍수 생존자 혈통이 대왕의 첫 번째 새끼 무리에서 자라났다. 이후 군락의 외곽 경계를 담당하는 정찰 네트워크를 형성했다."
       }
     },
@@ -1000,6 +1339,7 @@
       "anchor": "서식-2",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -1007,6 +1347,7 @@
       "kind": "paragraph",
       "anchor": "서식-2-p1",
       "text": {
+        "en": "It moved between shallow pools on the edge of the flooded zone and underground drains. By day it hid in the mud and was active only at night.",
         "ko": "범람 구역 외곽의 얕은 물웅덩이와 지하 배수로를 오간다. 낮에는 진흙 속에 몸을 숨기고 밤에만 활동한다."
       }
     },
@@ -1015,6 +1356,7 @@
       "anchor": "필요경제-2",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -1022,6 +1364,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-2-p1",
       "text": {
+        "en": "It fed by catching decaying aquatic plants and small fish. By bringing the freshest portions to the Great King, it circulated both information and resources through the colony.",
         "ko": "부패한 수초와 작은 물고기를 포획해 영양을 섭취한다. 가장 신선한 부위를 대왕에게 바치면서 군락의 정보와 자원을 동시에 순환시킨다."
       }
     },
@@ -1030,6 +1373,7 @@
       "anchor": "생애정비-2",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1037,6 +1381,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-2-p1",
       "text": {
+        "en": "It shed its coat every two years, covering its broken snout tip with mud and saliva to form new sensory receptors. In the process, it updated information about the surrounding terrain.",
         "ko": "2년마다 털을 갈면서 부서진 코끝을 진흙과 타액으로 덮어 새로운 감각 수용체를 만든다. 이 과정에서 주변 지형 정보를 업데이트한다."
       }
     },
@@ -1045,6 +1390,7 @@
       "anchor": "행동위계-2",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1052,6 +1398,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-2-p1",
       "text": {
+        "en": "It sensed the smell of danger before the Great King's low call reached it. Its distinctive snout-call signaled E03 and E04, putting the whole group on alert.",
         "ko": "대왕의 낮은 울음이 전달되기 전에 먼저 위험 냄새를 감지한다. 특유의 코 울음으로 E03과 E04에게 신호를 보내 무리 전체를 경계 태세로 만든다."
       }
     },
@@ -1060,6 +1407,7 @@
       "anchor": "단계적-위협-2",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -1067,6 +1415,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-2-p1",
       "text": {
+        "en": "First it revealed its position with a low snout-call. Then it gathered nearby individuals to encircle targets as a group. Finally, it lured in the Great King to deliver the decisive blow.",
         "ko": "먼저 낮은 코 울음으로 위치를 알린다. 이어서 주변 개체를 불러 모아 집단으로 포위한다. 마지막으로 대왕을 유인해 결정타를 가한다."
       }
     },
@@ -1075,6 +1424,7 @@
       "anchor": "전투대응-2",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -1082,6 +1432,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-2-p1",
       "text": {
+        "en": "If field personnel lured it into a trap set in the mud, its snout caught in the trap and slowed its movement. On failure, the scout summoned the group to block sewer pipes and cut off civilian routes. The success signal was muddy foam flowing from its snout.",
         "ko": "현장 인원이 진흙 속에 설치한 함정에 유인하면 코가 함정에 걸려 움직임이 둔해진다. 실패하면 정찰꾼이 무리를 불러들여 하수관을 막아 시민 이동 경로를 차단한다. 성공 신호는 코에서 흘러나오는 진흙 거품이다."
       }
     },
@@ -1090,6 +1441,7 @@
       "anchor": "협상도덕-선택-2",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1097,6 +1449,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-2-p1",
       "text": {
+        "en": "Leaving fresh organic refuse at a designated spot temporarily pushed its boundary back. But if the entire colony faced food shortages, it expanded its scouting range into human settlements and contaminated water sources.",
         "ko": "신선한 유기 폐기물을 특정 지점에 놓아두면 일시적으로 경계선을 뒤로 물린다. 그러나 군락 전체가 식량 부족에 처하면 정찰 범위를 인간 거주지까지 확장해 식수원을 오염시킨다."
       }
     },
@@ -1105,6 +1458,7 @@
       "anchor": "시나리오-연결-2",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1112,6 +1466,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-2-p1",
       "text": {
+        "en": "It served as a scout in G01-SC1.",
         "ko": "G01-SC1에서 정찰 역할을 한다."
       }
     },
@@ -1119,6 +1474,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-2-p2",
       "text": {
+        "en": "<a id=\"g01e03\"></a>",
         "ko": "<a id=\"g01e03\"></a>"
       }
     },
@@ -1127,6 +1483,7 @@
       "anchor": "g01e03-범람멧돼지-청소부-녹철이",
       "depth": 3,
       "text": {
+        "en": "G01E03 · Flood-Boar Scavenger 'Rustiron'",
         "ko": "G01E03 · 범람멧돼지 청소부 '녹철이'"
       }
     },
@@ -1135,12 +1492,15 @@
       "anchor": "g01e03-범람멧돼지-청소부-녹철이-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {}",
           "ko": "연결: {}"
         }
       ]
@@ -1150,42 +1510,52 @@
       "anchor": "g01e03-범람멧돼지-청소부-녹철이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Corrosion support",
             "ko": "부식 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The scavenger 'Rustiron' was a deep mutant whose acidic saliva dissolved both rust and equipment. It searched through refuse even without the Great King's call, but stopped scavenging and joined the encirclement when it heard the signal.",
             "ko": "청소부 '녹철이'는 산성 침으로 녹과 장비를 함께 녹이는 심층 변이다. 대왕 울음이 없어도 폐기물을 훑지만, 신호가 들리면 청소를 접고 포위망으로 붙는다."
           }
         ]
@@ -1196,6 +1566,7 @@
       "anchor": "역할신체-3",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1203,6 +1574,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-3-p1",
       "text": {
+        "en": "Its powerful jaws broke rusted metal pipes, and its acidic saliva dissolved corrosion. Rust flakes attached to its torso blended into the surrounding environment.",
         "ko": "강한 턱이 녹슨 금속 파이프를 부수고 산성 침이 부식물을 녹인다. 몸통에 붙은 녹 조각이 주변 환경과 동화된다."
       }
     },
@@ -1211,6 +1583,7 @@
       "anchor": "기원-3",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1218,6 +1591,7 @@
       "kind": "paragraph",
       "anchor": "기원-3-p1",
       "text": {
+        "en": "An individual raised in a heap of sewage-treatment refuse came to manage the colony's resource cycle. Records from G01-SC2 show that these individuals improved the colony's waste-processing efficiency.",
         "ko": "하수 처리장 폐기물 더미에서 자란 개체가 군락의 자원 순환을 담당하게 되었다. G01-SC2에서 이 개체들이 군락의 폐기물 처리 효율을 높인 기록이 남았다."
       }
     },
@@ -1226,6 +1600,7 @@
       "anchor": "서식-3",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -1233,6 +1608,7 @@
       "kind": "paragraph",
       "anchor": "서식-3-p1",
       "text": {
+        "en": "It roamed mainly along the floors of sewer tunnels piled with metal refuse. It was most active around pools of stagnant acidic water.",
         "ko": "금속 폐기물이 쌓인 하수 터널 바닥을 주로 돌아다닌다. 산성 물이 고인 웅덩이 주변에서 가장 활발하다."
       }
     },
@@ -1241,6 +1617,7 @@
       "anchor": "필요경제-3",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -1248,6 +1625,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-3-p1",
       "text": {
+        "en": "It fed on rusted metal and corroded organic matter. By breaking them down, it supplied reusable ions to the whole colony. When supplies ran short, the colony's scavenging activity stopped.",
         "ko": "녹슨 금속과 부식된 유기물을 주식으로 삼는다. 이를 분해하면서 군락 전체에 재활용 가능한 이온을 공급한다. 부족 시 군락 청소 활동이 중단된다."
       }
     },
@@ -1256,6 +1634,7 @@
       "anchor": "생애정비-3",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1263,6 +1642,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-3-p1",
       "text": {
+        "en": "To survive in acidic environments, it periodically renewed its skin. It washed the rust from around its jaws and grew new acid-secreting glands.",
         "ko": "산성 환경에서 살아남기 위해 피부 표면을 주기적으로 갱신한다. 턱 주변에 쌓인 녹을 씻어내고 새로운 산성 분비선을 만든다."
       }
     },
@@ -1271,6 +1651,7 @@
       "anchor": "행동위계-3",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1278,6 +1659,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-3-p1",
       "text": {
+        "en": "It cleaned refuse independently, even without the Great King's orders. But when it heard the call, it immediately stopped scavenging and moved into combat formation.",
         "ko": "대왕의 명령이 없어도 자율적으로 폐기물을 청소한다. 그러나 울음 신호가 들리면 즉시 청소 활동을 중단하고 전투 대형으로 이동한다."
       }
     },
@@ -1286,6 +1668,7 @@
       "anchor": "단계적-위협-3",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -1293,6 +1676,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-3-p1",
       "text": {
+        "en": "It sprayed acidic saliva to corrode enemy equipment. Then it narrowed the encirclement with nearby individuals, trapping its targets in place.",
         "ko": "산성 침을 뿜어 적의 장비를 부식시킨다. 이어서 주변 개체와 함께 포위망을 좁혀 움직임을 봉쇄한다."
       }
     },
@@ -1301,6 +1685,7 @@
       "anchor": "전투대응-3",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -1308,6 +1693,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-3-p1",
       "text": {
+        "en": "If field personnel sprayed neutralizer, the acid was neutralized and the scavenger's attack power fell sharply. On failure, the acid dissolved field equipment and reduced movement speed by 70%. The success signal was white smoke rising as the neutralizer reacted with the saliva.",
         "ko": "현장 인원이 중화제를 뿌리면 산성 침이 중화되어 청소부의 공격력이 급감한다. 실패하면 산성액이 현장 인원 장비를 녹여 이동 속도를 70% 저하시킨다. 성공 신호는 중화제와 침이 반응하며 피어오르는 하얀 연기이다."
       }
     },
@@ -1316,6 +1702,7 @@
       "anchor": "협상도덕-선택-3",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1323,6 +1710,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-3-p1",
       "text": {
+        "en": "Leaving a large quantity of metal refuse in a designated tunnel concentrated its scavenging there, clearing the surrounding area for a while. But over-supplying refuse sharply increased the colony's size and led to frequent sewer blockages.",
         "ko": "대량의 금속 폐기물을 특정 터널에 버려두면 청소 활동을 집중시켜 주변 구역을 한동안 비워준다. 그러나 폐기물을 과다 공급하면 군락 규모가 급증해 하수관 막힘 사고가 빈발한다."
       }
     },
@@ -1331,6 +1719,7 @@
       "anchor": "시나리오-연결-3",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1338,6 +1727,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-3-p1",
       "text": {
+        "en": "It left testimony about the resource cycle in G01-SC2.",
         "ko": "G01-SC2에서 자원 순환 증언을 남긴다."
       }
     },
@@ -1345,6 +1735,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-3-p2",
       "text": {
+        "en": "<a id=\"g01e04\"></a>",
         "ko": "<a id=\"g01e04\"></a>"
       }
     },
@@ -1353,6 +1744,7 @@
       "anchor": "g01e04-범람멧돼지-경비병-강철엄니",
       "depth": 3,
       "text": {
+        "en": "G01E04 · Flood-Boar Guard 'Steel Tusk'",
         "ko": "G01E04 · 범람멧돼지 경비병 '강철엄니'"
       }
     },
@@ -1361,12 +1753,15 @@
       "anchor": "g01e04-범람멧돼지-경비병-강철엄니-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC3\"]}"
         }
       ]
@@ -1376,42 +1771,52 @@
       "anchor": "g01e04-범람멧돼지-경비병-강철엄니-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Charging escort",
             "ko": "돌진 호위"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The guard 'Steel Tusk' was an escort mutant that blocked the Great King's ten-meter perimeter with its tusks. Unlike the adult sows of the family groups, which carried salt, it put the Great King's safety first.",
             "ko": "경비병 '강철엄니'는 대왕 10미터를 엄니로 막는 호위 변이다. 가족군 성체의 염분 운반 줄과 달리 대왕 안전을 최우선으로 지킨다."
           }
         ]
@@ -1422,6 +1827,7 @@
       "anchor": "역할신체-4",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1429,6 +1835,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-4-p1",
       "text": {
+        "en": "Its enormous tusks, growing through thick hide, pierced metal pipes. Its large, heavy body was adapted to pushing upstream against currents.",
         "ko": "두꺼운 가죽 위로 돋아난 거대한 엄니가 금속 파이프를 꿰뚫는다. 몸집이 크고 무거워 물살을 거슬러 올라가는 데 특화됐다."
       }
     },
@@ -1437,6 +1844,7 @@
       "anchor": "기원-4",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1444,6 +1852,7 @@
       "kind": "paragraph",
       "anchor": "기원-4-p1",
       "text": {
+        "en": "An escort lineage raised near the Great King formed the colony's core defensive line. G01-SC3 records confirmed that this lineage put the Great King's safety first.",
         "ko": "대왕 근처에서 자란 호위 혈통이 군락의 핵심 방어선을 형성했다. G01-SC3 기록에서 이 혈통이 대왕의 안전을 최우선으로 지킨 사실이 확인됐다."
       }
     },
@@ -1452,6 +1861,7 @@
       "anchor": "서식-4",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -1459,6 +1869,7 @@
       "kind": "paragraph",
       "anchor": "서식-4-p1",
       "text": {
+        "en": "It patrolled narrow passages and iron doors in the center of the flooded zone. Even after the water receded, it preferred places where mud pooled deeply.",
         "ko": "범람 구역 중심부의 좁은 통로와 철문 근처를 순찰한다. 물이 빠진 후에도 진흙이 깊게 고인 곳을 선호한다."
       }
     },
@@ -1467,6 +1878,7 @@
       "anchor": "필요경제-4",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -1474,6 +1886,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-4-p1",
       "text": {
+        "en": "In return for protecting the Great King, it received first share of the most nutritious decaying matter. This supply of nutrients kept its tusks strong.",
         "ko": "대왕의 보호 임무를 수행하는 대가로 가장 영양가 높은 부패물을 우선 배분받는다. 이 영양 공급이 엄니의 강도를 유지한다."
       }
     },
@@ -1482,6 +1895,7 @@
       "anchor": "생애정비-4",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1489,6 +1903,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-4-p1",
       "text": {
+        "en": "It regularly ground and polished tusks broken in combat. It filled fractures with metal fragments brought by nearby individuals.",
         "ko": "전투로 부서진 엄니를 정기적으로 갈고 다듬는다. 주변 개체가 가져온 금속 조각으로 깨진 부분을 메운다."
       }
     },
@@ -1497,6 +1912,7 @@
       "anchor": "행동위계-4",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1504,6 +1920,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-4-p1",
       "text": {
+        "en": "It kept the Great King's location under constant priority watch. If another individual came within ten meters, it emitted a low warning sound to block the approach.",
         "ko": "대왕의 위치를 항상 최우선으로 감시한다. 다른 개체가 10미터 이내로 접근하면 낮은 경고음을 내서 접근을 차단한다."
       }
     },
@@ -1512,6 +1929,7 @@
       "anchor": "단계적-위협-4",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -1519,6 +1937,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-4-p1",
       "text": {
+        "en": "It drove back intruders with a powerful charge, then gored them with its tusks. If the threat continued, it called nearby guards for a coordinated attack.",
         "ko": "강력한 돌진으로 침입자를 밀어내고 이어서 엄니로 찌른다. 위협이 지속되면 주변 경비병을 불러 합동 공격을 펼친다."
       }
     },
@@ -1527,6 +1946,7 @@
       "anchor": "전투대응-4",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -1534,6 +1954,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-4-p1",
       "text": {
+        "en": "If field personnel dug a trap to guide its charge, its tusks became lodged in the trap floor and it was immobilized for 30 seconds. On failure, the guard collapsed sewer walls and flooded nearby subway stations. The success signal was the metallic impact of its tusks catching on the trap's rebar.",
         "ko": "현장 인원이 함정을 파서 돌진 경로를 유도하면 엄니가 함정 바닥에 박혀 움직임이 30초간 봉쇄된다. 실패하면 경비병이 하수벽을 무너뜨려 주변 지하철역을 침수시킨다. 성공 신호는 엄니가 함정 철근에 걸리는 금속 충돌음이다."
       }
     },
@@ -1542,6 +1963,7 @@
       "anchor": "협상도덕-선택-4",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1549,6 +1971,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-4-p1",
       "text": {
+        "en": "It temporarily opened a particular passage in exchange for assurances of the Great King's safety. But if the agreement was broken, the whole colony fortified that passage and permanently blocked a civilian evacuation route.",
         "ko": "대왕의 안전을 보장하는 조건으로 특정 통로를 일시 개방한다. 그러나 협상을 어기면 군락 전체가 해당 통로를 요새화해 시민 대피 경로를 영구 차단한다."
       }
     },
@@ -1557,6 +1980,7 @@
       "anchor": "시나리오-연결-4",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1564,6 +1988,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-4-p1",
       "text": {
+        "en": "It served as an escort in G01-SC3.",
         "ko": "G01-SC3에서 호위 역할을 한다."
       }
     },
@@ -1571,6 +1996,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-4-p2",
       "text": {
+        "en": "<a id=\"g01e05\"></a>",
         "ko": "<a id=\"g01e05\"></a>"
       }
     },
@@ -1579,6 +2005,7 @@
       "anchor": "g01e05-범람멧돼지-독분비자-썩은입",
       "depth": 3,
       "text": {
+        "en": "G01E05 · Flood-Boar Venom Secreter 'Rotmouth'",
         "ko": "G01E05 · 범람멧돼지 독분비자 '썩은입'"
       }
     },
@@ -1587,12 +2014,15 @@
       "anchor": "g01e05-범람멧돼지-독분비자-썩은입-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {}",
           "ko": "연결: {}"
         }
       ]
@@ -1602,42 +2032,52 @@
       "anchor": "g01e05-범람멧돼지-독분비자-썩은입-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Poison spray",
             "ko": "독 살포"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The venom secreter 'Rotmouth' was a specialized attack mutant that survived in chemical pools. Its green venom marked the boundary of the mutant lineage; it was not the basic weapon of wetland sows.",
             "ko": "독분비자 '썩은입'은 화학 웅덩이에서 살아남은 특수 공격 변이다. 녹색 독액은 변이 혈통의 경계선이지 습지 모돈의 기본 무기가 아니다."
           }
         ]
@@ -1648,6 +2088,7 @@
       "anchor": "역할신체-5",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1655,6 +2096,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-5-p1",
       "text": {
+        "en": "Glands developed around its mouth sprayed dark green venom. Poison stains spreading across its torso slowly corroded nearby metal.",
         "ko": "입 주변에 발달한 분비선이 진한 녹색 독액을 뿜어낸다. 몸통에 번진 독 자국이 주변 금속을 서서히 부식시킨다."
       }
     },
@@ -1663,6 +2105,7 @@
       "anchor": "기원-5",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1670,6 +2113,7 @@
       "kind": "paragraph",
       "anchor": "기원-5-p1",
       "text": {
+        "en": "An individual that survived a pool of polluted chemical waste became the colony's specialized attack unit. G01-SC2 recorded many cases in which these individuals disabled enemy equipment.",
         "ko": "오염된 화학 폐기물 웅덩이에서 생존한 개체가 군락의 특수 공격 수단이 되었다. G01-SC2에서 이 개체들이 적의 장비를 무력화한 사례가 다수 기록됐다."
       }
     },
@@ -1678,6 +2122,7 @@
       "anchor": "서식-5",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -1685,6 +2130,7 @@
       "kind": "paragraph",
       "anchor": "서식-5-p1",
       "text": {
+        "en": "It stayed deep in sewer areas where toxic chemicals had pooled. Other individuals detoured around the area to avoid the smell of poison.",
         "ko": "독성 화학 물질이 고인 하수 구역 깊숙이 머무른다. 다른 개체들은 독 냄새를 피해 이 구역을 우회한다."
       }
     },
@@ -1693,6 +2139,7 @@
       "anchor": "필요경제-5",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -1700,6 +2147,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-5-p1",
       "text": {
+        "en": "It strengthened its glands by consuming highly concentrated toxic substances. Through this individual, the colony maintained a boundary against hostile ecologies.",
         "ko": "고농도 독성 물질을 섭취하면서 분비선을 강화한다. 군락은 이 개체를 통해 적대 생태와의 경계선을 유지한다."
       }
     },
@@ -1708,6 +2156,7 @@
       "anchor": "생애정비-5",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1715,6 +2164,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-5-p1",
       "text": {
+        "en": "If tissue around its mouth was damaged after secreting venom, it ate nearby mud to regenerate new glands. In the process, it increased its resistance to poison.",
         "ko": "독 분비 후 입 주변 조직이 손상되면 주변 진흙을 먹어 새로운 분비선을 재생한다. 이 과정에서 독성 내성을 높인다."
       }
     },
@@ -1723,6 +2173,7 @@
       "anchor": "행동위계-5",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1730,6 +2181,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-5-p1",
       "text": {
+        "en": "When it received the Great King's call, it immediately prepared venom. It worked with nearby individuals to encircle the enemy and then spray a concentrated dose.",
         "ko": "대왕의 울음 신호를 받으면 즉시 독액을 준비한다. 주변 개체와 협력해 적을 포위한 뒤 독을 집중 살포한다."
       }
     },
@@ -1738,6 +2190,7 @@
       "anchor": "단계적-위협-5",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -1745,6 +2198,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-5-p1",
       "text": {
+        "en": "First it sprayed venom to paralyze the enemy's movement. Then the entire colony surrounded the paralyzed target and finished it off.",
         "ko": "먼저 독액을 살포해 적의 움직임을 마비시킨다. 이어서 군락 전체가 마비된 목표를 포위해 마무리한다."
       }
     },
@@ -1753,6 +2207,7 @@
       "anchor": "전투대응-5",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -1760,6 +2215,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-5-p1",
       "text": {
+        "en": "If field personnel used gas masks and neutralizing spray together, they blocked 80% of the venom's effects. On failure, the poison corroded equipment, leaving personnel unable to move within five minutes. The success signal was green smoke rising as the venom was neutralized.",
         "ko": "현장 인원이 방독면과 중화 스프레이를 동시에 사용하면 독액 효과를 80% 차단한다. 실패하면 독이 장비를 부식시켜 5분 내 이동 불능 상태에 빠진다. 성공 신호는 독액이 중화되며 피어오르는 녹색 연기이다."
       }
     },
@@ -1768,6 +2224,7 @@
       "anchor": "협상도덕-선택-5",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -1775,6 +2232,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-5-p1",
       "text": {
+        "en": "It left a designated area empty for a while if toxic waste was dumped there. But excessive amounts increased the number of venom-secreting individuals and permanently contaminated nearby drinking-water sources.",
         "ko": "독성 폐기물을 지정된 구역에 버려주면 그 구역을 한동안 비워준다. 그러나 폐기물 양이 과다하면 독분비자 개체 수가 증가해 주변 식수원이 영구 오염된다."
       }
     },
@@ -1783,6 +2241,7 @@
       "anchor": "시나리오-연결-5",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -1790,6 +2249,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-5-p1",
       "text": {
+        "en": "It left toxic testimony in G01-SC2.",
         "ko": "G01-SC2에서 독성 증언을 남긴다."
       }
     },
@@ -1797,6 +2257,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-5-p2",
       "text": {
+        "en": "<a id=\"g01e06\"></a>",
         "ko": "<a id=\"g01e06\"></a>"
       }
     },
@@ -1805,6 +2266,7 @@
       "anchor": "g01e06-범람멧돼지-진흙건축가-벽돌코",
       "depth": 3,
       "text": {
+        "en": "G01E06 · Flood-Boar Mud Architect 'Bricknose'",
         "ko": "G01E06 · 범람멧돼지 진흙건축가 '벽돌코'"
       }
     },
@@ -1813,12 +2275,15 @@
       "anchor": "g01e06-범람멧돼지-진흙건축가-벽돌코-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC1\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC1\"]}"
         }
       ]
@@ -1828,42 +2293,52 @@
       "anchor": "g01e06-범람멧돼지-진흙건축가-벽돌코-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Trap construction",
             "ko": "함정 구축"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The mud architect 'Bricknose' was a mobile construction mutant that mixed mud and metal to close passages. Unlike the place called Mud-Iron Wall, this individual set traps and brought down ceilings.",
             "ko": "진흙건축가 '벽돌코'는 진흙과 금속을 섞어 통로를 닫는 움직이는 시공 변이다. 진흙철벽이라는 장소와 달리 함정을 설치하고 천장을 무너뜨리는 개체다."
           }
         ]
@@ -1874,6 +2349,7 @@
       "anchor": "역할신체-6",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -1881,6 +2357,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-6-p1",
       "text": {
+        "en": "Its snout and forelegs mixed mud and metal into sturdy structures. Clumps of mud attached to its back blended completely into the surrounding environment.",
         "ko": "코와 앞발이 진흙과 금속을 섞어 단단한 구조물을 만든다. 등에 붙은 진흙 덩어리가 주변 환경과 완전히 동화된다."
       }
     },
@@ -1889,6 +2366,7 @@
       "anchor": "기원-6",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -1896,6 +2374,7 @@
       "kind": "paragraph",
       "anchor": "기원-6-p1",
       "text": {
+        "en": "A mutant with an extremely developed wetland-building instinct designed the colony's network of nests. G01-SC1 records confirmed that this individual improved the colony's survival rate after the flood.",
         "ko": "습지 건축 본능이 극도로 발달한 변이체가 군락의 둥지망을 설계했다. G01-SC1 기록에서 이 개체가 범람 후 군락 생존율을 높인 사실이 확인됐다."
       }
     },
@@ -1904,6 +2383,7 @@
       "anchor": "서식-6",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -1911,6 +2391,7 @@
       "kind": "paragraph",
       "anchor": "서식-6-p1",
       "text": {
+        "en": "It moved between muddy ground left by the flood and collapsed concrete debris. There it continually built new passages and nests.",
         "ko": "범람 후 남은 진흙 지대와 무너진 콘크리트 잔해 사이를 오간다. 이곳에서 새로운 통로와 둥지를 지속적으로 건설한다."
       }
     },
@@ -1919,6 +2400,7 @@
       "anchor": "필요경제-6",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -1926,6 +2408,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-6-p1",
       "text": {
+        "en": "It used mud and broken metal debris as its main materials. Through construction, it secured concealment and movement routes for the entire colony.",
         "ko": "진흙과 부서진 금속 잔해를 주요 자원으로 사용한다. 건축 활동을 통해 군락 전체의 은폐와 이동 경로를 확보한다."
       }
     },
@@ -1934,6 +2417,7 @@
       "anchor": "생애정비-6",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -1941,6 +2425,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-6-p1",
       "text": {
+        "en": "When a structure it had built collapsed, it immediately gathered nearby mud to repair it. As it added new passages, it expanded the colony's territory.",
         "ko": "건축한 구조물이 무너지면 즉시 주변 진흙을 모아 보수한다. 이 과정에서 새로운 통로를 추가하면서 군락 영역을 확대한다."
       }
     },
@@ -1949,6 +2434,7 @@
       "anchor": "행동위계-6",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -1956,6 +2442,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-6-p1",
       "text": {
+        "en": "It designed the Great King's dwelling as its top priority. It took materials brought by other individuals and immediately reinforced walls and passages.",
         "ko": "대왕의 거처를 최우선으로 설계한다. 다른 개체들이 가져온 자재를 받아 즉시 벽과 통로를 보강한다."
       }
     },
@@ -1964,6 +2451,7 @@
       "anchor": "단계적-위협-6",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -1971,6 +2459,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-6-p1",
       "text": {
+        "en": "It set mud traps to catch intruders, then collapsed ceilings to bury them. When the threat level rose, it closed every nearby passage.",
         "ko": "진흙 함정을 설치해 침입자를 가두고 이어서 천장을 붕괴시켜 매몰시킨다. 위협 수준이 높아지면 주변 통로를 모두 폐쇄한다."
       }
     },
@@ -1979,6 +2468,7 @@
       "anchor": "전투대응-6",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -1986,6 +2476,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-6-p1",
       "text": {
+        "en": "If field personnel sprayed ground hardener, the mud structures hardened and lost their trapping effect. On failure, a collapse left field personnel unable to move for 3 turns and doubled the cost of rescuing citizens. The success signal was hardened mud cracking with a sharp sound.",
         "ko": "현장 인원이 지반 강화제를 뿌리면 진흙 구조물이 경화되어 함정 효과를 상실한다. 실패하면 붕괴로 인해 현장 인원이 3턴 동안 이동 불능에 빠지고 시민 구조 비용이 2배 증가한다. 성공 신호는 경화된 진흙이 딱딱한 소리를 내며 갈라지는 것이다."
       }
     },
@@ -1994,6 +2485,7 @@
       "anchor": "협상도덕-선택-6",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -2001,6 +2493,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-6-p1",
       "text": {
+        "en": "It showed curiosity and opened a particular passage when shown human construction techniques. But if the techniques were not shared, the colony actively occupied human underground facilities and crippled subway service.",
         "ko": "인간 건축 기술을 보여주면 호기심을 보이며 특정 통로를 개방한다. 그러나 기술을 공유하지 않으면 군락이 인간 지하 시설을 적극적으로 점령해 지하철 운행을 마비시킨다."
       }
     },
@@ -2009,6 +2502,7 @@
       "anchor": "시나리오-연결-6",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2016,6 +2510,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-6-p1",
       "text": {
+        "en": "It left testimony about the nest in G01-SC1.",
         "ko": "G01-SC1에서 둥지 관련 증언을 남긴다."
       }
     },
@@ -2023,6 +2518,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-6-p2",
       "text": {
+        "en": "<a id=\"g01e07\"></a>",
         "ko": "<a id=\"g01e07\"></a>"
       }
     },
@@ -2031,6 +2527,7 @@
       "anchor": "g01e07-범람멧돼지-무리인도자-울음왕",
       "depth": 3,
       "text": {
+        "en": "G01E07 · Flood-Boar Herd Guide 'Cry-King'",
         "ko": "G01E07 · 범람멧돼지 무리인도자 '울음왕'"
       }
     },
@@ -2039,12 +2536,15 @@
       "anchor": "g01e07-범람멧돼지-무리인도자-울음왕-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {}",
           "ko": "연결: {}"
         }
       ]
@@ -2054,42 +2554,52 @@
       "anchor": "g01e07-범람멧돼지-무리인도자-울음왕-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Call relay",
             "ko": "울음 중계"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The herd guide 'Cry-King' was a relay mutant among the Great King's direct descendants, amplifying low frequencies. It relayed first to E02 through E04, using a different frequency from the departure signal given by the sows.",
             "ko": "무리인도자 '울음왕'은 대왕 직계 중 저주파를 증폭하는 중계 변이다. E02부터 E04에 먼저 전달하며, 모돈이 여는 출발 신호와는 주파수가 다르다."
           }
         ]
@@ -2100,6 +2610,7 @@
       "anchor": "역할신체-7",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2107,6 +2618,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-7-p1",
       "text": {
+        "en": "Resonance organs developed around its neck greatly amplified its low-frequency calls. Its torso vibrated with each call, stirring the nearby current.",
         "ko": "목 주변에 발달한 공명 기관이 저주파 울음을 크게 증폭한다. 몸통이 울음에 따라 진동하면서 주변 물살을 흔든다."
       }
     },
@@ -2115,6 +2627,7 @@
       "anchor": "기원-7",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2122,6 +2635,7 @@
       "kind": "paragraph",
       "anchor": "기원-7-p1",
       "text": {
+        "en": "An individual among the Great King's direct descendants specialized in transmitting calls and took on the colony's relay duty. Records from G01-SC3 show that it maintained the unity of the entire colony.",
         "ko": "대왕의 직계 혈통 중에서 울음 전달 능력이 특화된 개체가 군락의 중계 임무를 맡았다. G01-SC3에서 이 개체가 군락 전체의 통합을 유지한 기록이 남았다."
       }
     },
@@ -2130,6 +2644,7 @@
       "anchor": "서식-7",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -2137,6 +2652,7 @@
       "kind": "paragraph",
       "anchor": "서식-7-p1",
       "text": {
+        "en": "It stayed in a wide chamber at the colony's center. It preferred tunnel junctions where its calls carried well.",
         "ko": "군락 중심부의 넓은 공동에 머무른다. 울음이 잘 퍼지는 터널 교차로를 선호한다."
       }
     },
@@ -2145,6 +2661,7 @@
       "anchor": "필요경제-7",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -2152,6 +2669,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-7-p1",
       "text": {
+        "en": "Producing calls consumed a great deal of energy. It maintained its resonance organs by taking first share of nutrients brought by nearby individuals.",
         "ko": "울음 발생에 많은 에너지를 소비한다. 주변 개체들이 가져온 영양분을 우선적으로 섭취하면서 공명 기관을 유지한다."
       }
     },
@@ -2160,6 +2678,7 @@
       "anchor": "생애정비-7",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2167,6 +2686,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-7-p1",
       "text": {
+        "en": "It regularly inspected its vocal cords and resonance organs. It adjusted its call frequency by filling damaged areas with mud and saliva.",
         "ko": "성대와 공명 기관을 정기적으로 점검한다. 손상된 부위를 진흙과 타액으로 메우면서 울음 주파수를 조정한다."
       }
     },
@@ -2175,6 +2695,7 @@
       "anchor": "행동위계-7",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2182,6 +2703,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-7-p1",
       "text": {
+        "en": "It relayed the Great King's orders to E02-E04 first. It amplified the low frequency and broadcast it to the whole colony at once, maintaining coordinated behavior.",
         "ko": "대왕의 명령을 E02-E04에게 먼저 전달한다. 저주파를 증폭시켜 군락 전체에 동시에 퍼뜨리면서 행동 통일성을 유지한다."
       }
     },
@@ -2190,6 +2712,7 @@
       "anchor": "단계적-위협-7",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -2197,6 +2720,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-7-p1",
       "text": {
+        "en": "It summoned nearby individuals all at once with a powerful call. The assembled group pressed the intruders together.",
         "ko": "강력한 울음으로 주변 개체를 한꺼번에 소집한다. 소집된 무리가 합동으로 침입자를 압박한다."
       }
     },
@@ -2205,6 +2729,7 @@
       "anchor": "전투대응-7",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -2212,6 +2737,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-7-p1",
       "text": {
+        "en": "If field personnel wore specialized noise-canceling headsets and fired a high-frequency disruptor toward the call's source, its resonance organs overloaded. On failure, the entire colony assembled and completely blocked the field personnel's retreat. The success signal was the discordant sound from Cry-King's throat.",
         "ko": "현장 인원이 특수 소음 차단 헤드셋을 착용하고 울음 발생 지점을 향해 고주파 교란기를 발사하면 공명 기관이 과부하에 빠진다. 실패하면 군락 전체가 소집되어 현장 인원 퇴로를 완전히 차단한다. 성공 신호는 울음왕의 목에서 나는 불협화음이다."
       }
     },
@@ -2220,6 +2746,7 @@
       "anchor": "협상도덕-선택-7",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -2227,6 +2754,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-7-p1",
       "text": {
+        "en": "If responders analyzed its call patterns and answered in a particular rhythm, it attempted limited communication. But when the colony lacked food, Cry-King led an incursion into human settlements and raided food stores.",
         "ko": "울음 패턴을 분석해 특정 리듬으로 응답하면 제한적 대화를 시도한다. 그러나 군락의 식량이 부족하면 울음왕이 주도적으로 인간 거주지로 침투해 식량 창고를 약탈한다."
       }
     },
@@ -2235,6 +2763,7 @@
       "anchor": "시나리오-연결-7",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2242,6 +2771,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-7-p1",
       "text": {
+        "en": "It left testimony about command in G01-SC3.",
         "ko": "G01-SC3에서 통솔 증언을 남긴다."
       }
     },
@@ -2249,6 +2779,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-7-p2",
       "text": {
+        "en": "<a id=\"g01e08\"></a>",
         "ko": "<a id=\"g01e08\"></a>"
       }
     },
@@ -2257,6 +2788,7 @@
       "anchor": "g01e08-범람멧돼지-금속융합체-융합갑",
       "depth": 3,
       "text": {
+        "en": "G01E08 · Flood-Boar Metal-Fusion Mutant 'Fusion Armor'",
         "ko": "G01E08 · 범람멧돼지 금속융합체 '융합갑'"
       }
     },
@@ -2265,12 +2797,15 @@
       "anchor": "g01e08-범람멧돼지-금속융합체-융합갑-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {}",
           "ko": "연결: {}"
         }
       ]
@@ -2280,42 +2815,52 @@
       "anchor": "g01e08-범람멧돼지-금속융합체-융합갑-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Armored charge",
             "ko": "장갑 돌진"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The metal-fusion mutant 'Fusion Armor' was a royal-guard mutant whose skin and scrap metal had become one body. It took no orders from other individuals, only from the Great King directly.",
             "ko": "금속융합체 '융합갑'은 피부와 고철이 한 몸이 된 친위 변이다. 다른 개체의 명령을 받지 않고 대왕 직속만 남는다."
           }
         ]
@@ -2326,6 +2871,7 @@
       "anchor": "역할신체-8",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2333,6 +2879,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-8-p1",
       "text": {
+        "en": "Metal fragments fused with its skin across its whole body, forming thick armor. Whenever it moved, the metal scraped together with a sharp sound.",
         "ko": "전신에 금속 조각이 피부와 융합되어 두꺼운 갑옷을 형성한다. 움직일 때마다 금속이 서로 마찰하며 날카로운 소리를 낸다."
       }
     },
@@ -2341,6 +2888,7 @@
       "anchor": "기원-8",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2348,6 +2896,7 @@
       "kind": "paragraph",
       "anchor": "기원-8-p1",
       "text": {
+        "en": "A rare mutant that survived extreme pollution became the colony's elite royal guard. G01-SC2 confirmed multiple cases of this individual directly escorting the Great King.",
         "ko": "극심한 오염 환경에서 생존한 희귀 변이체가 군락의 최정예 친위대로 자리 잡았다. G01-SC2에서 이 개체가 대왕을 직접 호위한 사례가 다수 확인됐다."
       }
     },
@@ -2356,6 +2905,7 @@
       "anchor": "서식-8",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -2363,6 +2913,7 @@
       "kind": "paragraph",
       "anchor": "서식-8-p1",
       "text": {
+        "en": "It stayed among heaps of metal waste in the deepest, most polluted sewers. Other individuals avoided the area to escape the scraping metal sound.",
         "ko": "가장 오염된 하수 심층부의 금속 폐기물 더미 속에 머무른다. 다른 개체들은 금속 마찰음을 피해 이 구역을 피한다."
       }
     },
@@ -2371,6 +2922,7 @@
       "anchor": "필요경제-8",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -2378,6 +2930,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-8-p1",
       "text": {
+        "en": "It maintained the fused areas by continually consuming highly concentrated metal ions. The colony built a powerful defensive line through this individual.",
         "ko": "고농도 금속 이온을 지속적으로 섭취하면서 융합 부위를 유지한다. 군락은 이 개체를 통해 강력한 방어선을 구축한다."
       }
     },
@@ -2386,6 +2939,7 @@
       "anchor": "생애정비-8",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2393,6 +2947,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-8-p1",
       "text": {
+        "en": "When fused metal came loose, it ate nearby refuse to form a new metal layer. Its body weight gradually increased in the process.",
         "ko": "융합된 금속 부위가 느슨해지면 주변 폐기물을 먹어 새로운 금속층을 형성한다. 이 과정에서 몸무게가 점차 증가한다."
       }
     },
@@ -2401,6 +2956,7 @@
       "anchor": "행동위계-8",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2408,6 +2964,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-8-p1",
       "text": {
+        "en": "It served as a royal guard directly under the Great King. It wielded the colony's greatest combat power and took no orders from other individuals.",
         "ko": "대왕의 직속 친위대로 활동한다. 군락 내에서 가장 강력한 전투력을 발휘하며 다른 개체의 명령을 받지 않는다."
       }
     },
@@ -2416,6 +2973,7 @@
       "anchor": "단계적-위협-8",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -2423,6 +2981,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-8-p1",
       "text": {
+        "en": "It blocked every attack with thick metal armor while charging with its massive body. After the charge, it shook its body to scatter nearby metal fragments.",
         "ko": "두꺼운 금속 갑옷으로 모든 공격을 막아내면서 육중한 몸으로 돌진한다. 돌진 후 주변 금속 파편을 몸을 흔들어 살포한다."
       }
     },
@@ -2431,6 +2990,7 @@
       "anchor": "전투대응-8",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -2438,6 +2998,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-8-p1",
       "text": {
+        "en": "If field personnel installed a high-power electromagnetic pulse generator, the fused metal overheated and its movement slowed by 40%. On failure, its charge struck the field personnel's position, rupturing nearby sewers and releasing contaminated water. The success signal was superheated vapor rising from its metal armor.",
         "ko": "현장 인원이 고출력 전자기 펄스 발생기를 설치하면 융합 금속이 과열되어 움직임이 40% 저하된다. 실패하면 돌진이 현장 인원 위치를 강타해 주변 하수관을 파열시키고 오염수가 분출된다. 성공 신호는 금속 갑옷에서 피어오르는 과열 증기이다."
       }
     },
@@ -2446,6 +3007,7 @@
       "anchor": "협상도덕-선택-8",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -2453,6 +3015,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-8-p1",
       "text": {
+        "en": "It temporarily retreated if its continual pain from the fusion process was acknowledged and particular metal waste was provided. But if refused, the entire royal guard attacked human facilities and cut off the power supply.",
         "ko": "융합 과정에서 겪는 지속적인 고통을 인정하고 특정 금속 폐기물을 제공하면 일시적으로 물러선다. 그러나 거부하면 친위대 전체가 인간 시설을 공격해 전력 공급을 차단한다."
       }
     },
@@ -2461,6 +3024,7 @@
       "anchor": "시나리오-연결-8",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2468,6 +3032,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-8-p1",
       "text": {
+        "en": "It performed its role as an elite in G01-SC2.",
         "ko": "G01-SC2에서 엘리트로서의 역할을 수행한다."
       }
     },
@@ -2475,6 +3040,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-8-p2",
       "text": {
+        "en": "<a id=\"g01e09\"></a>",
         "ko": "<a id=\"g01e09\"></a>"
       }
     },
@@ -2483,6 +3049,7 @@
       "anchor": "g01e09-범람멧돼지-독왕-맹독엄니",
       "depth": 3,
       "text": {
+        "en": "G01E09 · Flood-Boar Venom King 'Deadly Tusk'",
         "ko": "G01E09 · 범람멧돼지 독왕 '맹독엄니'"
       }
     },
@@ -2491,12 +3058,15 @@
       "anchor": "g01e09-범람멧돼지-독왕-맹독엄니-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {}",
           "ko": "연결: {}"
         }
       ]
@@ -2506,42 +3076,52 @@
       "anchor": "g01e09-범람멧돼지-독왕-맹독엄니-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Venom charge",
             "ko": "독 돌진"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Venom King 'Deadly Tusk' was an elite battlefield mutant born of venom secretion and metal fusion. It was a famed boss, not the biological king of all Flood-Boars.",
             "ko": "독왕 '맹독엄니'는 독분비와 금속융합의 교배에서 나온 전장 정예다. 이름난 보스이지 모든 범람멧돼지의 생물학적 왕은 아니다."
           }
         ]
@@ -2552,6 +3132,7 @@
       "anchor": "역할신체-9",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2559,6 +3140,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-9-p1",
       "text": {
+        "en": "Powerful venom saturated its enormous tusks. Glands around its mouth continually coated the tusk surfaces with venom.",
         "ko": "거대한 엄니에 강력한 독이 스며들어 있다. 입 주변의 분비선이 독액을 엄니 표면에 지속적으로 코팅한다."
       }
     },
@@ -2567,6 +3149,7 @@
       "anchor": "기원-9",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2574,6 +3157,7 @@
       "kind": "paragraph",
       "anchor": "기원-9-p1",
       "text": {
+        "en": "It was a top-tier combatant born from the crossbreeding of a venom secreter and a metal-fusion mutant. Records from G01-SC3 show that it served as the colony's final line of defense.",
         "ko": "독분비자와 금속융합체의 교배 결과로 태어난 최상위 전투체이다. G01-SC3에서 이 개체가 군락의 최종 방어선을 담당한 기록이 남았다."
       }
     },
@@ -2582,6 +3166,7 @@
       "anchor": "서식-9",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -2589,6 +3174,7 @@
       "kind": "paragraph",
       "anchor": "서식-9-p1",
       "text": {
+        "en": "It established its own territory in the deepest sewers where poison and metal coexisted. Other individuals detected the poisonous smell and kept their distance.",
         "ko": "독성과 금속이 공존하는 하수 최심부에 독자 영역을 구축했다. 다른 개체들은 독 냄새를 감지하고 접근을 자제한다."
       }
     },
@@ -2597,6 +3183,7 @@
       "anchor": "필요경제-9",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -2604,6 +3191,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-9-p1",
       "text": {
+        "en": "It maintained the venom on its tusks by consuming toxic substances and metal ions together. Through this individual, the colony secured its strongest combat power.",
         "ko": "독성 물질과 금속 이온을 동시에 섭취하면서 엄니의 독성을 유지한다. 군락은 이 개체를 통해 최강의 전투력을 확보한다."
       }
     },
@@ -2612,6 +3200,7 @@
       "anchor": "생애정비-9",
       "depth": 3,
       "text": {
+        "en": "Life and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2619,6 +3208,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-9-p1",
       "text": {
+        "en": "When the balance of poison and metal broke down, it ate nearby refuse to find a new balance. In the process, the venom coating on its tusks grew thicker.",
         "ko": "독과 금속의 균형이 깨지면 주변 폐기물을 먹어 새로운 균형을 찾는다. 이 과정에서 엄니 표면의 독 코팅이 두꺼워진다."
       }
     },
@@ -2627,6 +3217,7 @@
       "anchor": "행동위계-9",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2634,6 +3225,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-9-p1",
       "text": {
+        "en": "It served as the Great King's closest aide. It judged independently and led the colony's final defense and attacks.",
         "ko": "대왕의 최측근으로 활동한다. 독립적으로 판단해 군락의 최종 방어와 공격을 주도한다."
       }
     },
@@ -2642,6 +3234,7 @@
       "anchor": "단계적-위협-9",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -2649,6 +3242,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-9-p1",
       "text": {
+        "en": "It stabbed enemies with venom-soaked tusks while spraying venom. Then it summoned the nearby colony for a coordinated attack.",
         "ko": "독이 스며든 엄니로 적을 찌르고 동시에 독액을 살포한다. 이어서 주변 군락을 불러 합동 공격을 펼친다."
       }
     },
@@ -2657,6 +3251,7 @@
       "anchor": "전투대응-9",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -2664,6 +3259,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-9-p1",
       "text": {
+        "en": "If field personnel used top-grade protective suits and powerful antidote injectors together, they completely neutralized the venom. On failure, venom entered the bloodstream, incapacitating personnel within 2 turns and poisoning nearby citizens en masse. The success signal was a drop of neutralized venom falling from its tusk.",
         "ko": "현장 인원이 최고급 방호복과 강력한 해독 주사기를 동시에 사용하면 독 효과를 완전히 중화한다. 실패하면 독이 혈관으로 침투해 2턴 내 행동 불능에 빠지고 주변 시민이 집단 중독된다. 성공 신호는 엄니에서 떨어지는 중화된 독액 방울이다."
       }
     },
@@ -2672,6 +3268,7 @@
       "anchor": "협상도덕-선택-9",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -2679,6 +3276,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-9-p1",
       "text": {
+        "en": "It was a being living in extreme pain. If responders established empathy and provided particular chemical waste, it cooperated. But refusing negotiation put all of southern Seoul at risk of contamination from a full colony assault led by the Venom King.",
         "ko": "극심한 고통을 안고 살아가는 존재이다. 공감대를 형성하고 특정 화학 폐기물을 제공하면 협력한다. 그러나 협상을 거부하면 독왕이 주도하는 군락 총공격으로 서울 남부 전체가 오염 위기에 처한다."
       }
     },
@@ -2687,6 +3285,7 @@
       "anchor": "시나리오-연결-9",
       "depth": 3,
       "text": {
+        "en": "Scenario Links",
         "ko": "시나리오 연결"
       }
     },
@@ -2694,6 +3293,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-9-p1",
       "text": {
+        "en": "It appeared as a boss-level threat in G01-SC3.",
         "ko": "G01-SC3에서 보스급 위협으로 등장한다."
       }
     },
@@ -2701,6 +3301,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-9-p2",
       "text": {
+        "en": "<a id=\"g01e10\"></a>",
         "ko": "<a id=\"g01e10\"></a>"
       }
     },
@@ -2709,6 +3310,7 @@
       "anchor": "g01e10-범람멧돼지-철갑둥지-강철습지",
       "depth": 3,
       "text": {
+        "en": "G01E10 · Flood-Boar Ironclad Nest 'Steel Wetland'",
         "ko": "G01E10 · 범람멧돼지 철갑둥지 '강철습지'"
       }
     },
@@ -2717,12 +3319,15 @@
       "anchor": "g01e10-범람멧돼지-철갑둥지-강철습지-list1",
       "items": [
         {
+          "en": "Source batch: M001",
           "ko": "출처 배치: M001"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC1\",\"G01-SC2\",\"G01-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC1\",\"G01-SC2\",\"G01-SC3\"]}"
         }
       ]
@@ -2732,42 +3337,52 @@
       "anchor": "g01e10-범람멧돼지-철갑둥지-강철습지-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Habitat stronghold · facility",
             "ko": "서식 거점·시설"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Colony fortress",
             "ko": "군락 요새"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The ironclad nest 'Steel Wetland' was a living place where the Great King's bodily fluids fused with accumulated mud and metal. It was not an individual but a fixed stronghold in the deep sewers.",
             "ko": "철갑둥지 '강철습지'는 대왕 체액과 축적된 진흙-금속이 융합된 살아 있는 장소다. 개체가 아니라 하수 심층의 고정 거점이다."
           }
         ]
@@ -2778,6 +3393,7 @@
       "anchor": "역할신체-10",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -2785,6 +3401,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-10-p1",
       "text": {
+        "en": "It is the Great King's dwelling and the center of the entire colony. A living metal-and-mud composite structure slowly expands along the surrounding sewer pipes.",
         "ko": "대왕의 거처이자 군락 전체의 중심지이다. 살아있는 금속-진흙 복합 구조물이 주변 하수관을 따라 천천히 확장된다."
       }
     },
@@ -2793,6 +3410,7 @@
       "anchor": "기원-10",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -2800,6 +3418,7 @@
       "kind": "paragraph",
       "anchor": "기원-10-p1",
       "text": {
+        "en": "Colony structures accumulated over decades fused with the Great King's bodily fluids to become a living fortress. From G01-SC1 onward, this structure became the foundation of the colony's survival.",
         "ko": "수십 년간 축적된 군락 건축물과 대왕의 체액이 서로 융합되어 살아있는 요새가 되었다. G01-SC1부터 이 구조물이 군락의 생존 기반이 되었다."
       }
     },
@@ -2808,6 +3427,7 @@
       "anchor": "서식-10",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -2815,6 +3435,7 @@
       "kind": "paragraph",
       "anchor": "서식-10-p1",
       "text": {
+        "en": "It stands at the center of the largest flood zone in the lower Han River. It continually absorbs the surrounding mud and metal debris, expanding its territory.",
         "ko": "한강 하류 최대 범람 구역 중심에 자리 잡았다. 주변 진흙과 금속 잔해를 지속적으로 흡수하면서 영역을 넓힌다."
       }
     },
@@ -2823,6 +3444,7 @@
       "anchor": "필요경제-10",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -2830,6 +3452,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-10-p1",
       "text": {
+        "en": "It receives the resources gathered by the entire colony. The structure itself absorbs metal to grow, providing the colony with a stable home.",
         "ko": "군락 전체가 수집한 자원을 공급받는다. 구조물 자체가 금속을 흡수해 성장하면서 군락의 안정된 보금자리를 제공한다."
       }
     },
@@ -2838,6 +3461,7 @@
       "anchor": "생애정비-10",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -2845,6 +3469,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-10-p1",
       "text": {
+        "en": "When part of it is damaged, every nearby member of the colony is mobilized to repair it. A supply of the Great King's bodily fluids speeds the structure's regeneration.",
         "ko": "손상된 부분이 생기면 주변 개체 전체가 복구 작업에 동원된다. 대왕의 체액이 공급되면서 구조물의 재생 속도가 빨라진다."
       }
     },
@@ -2853,6 +3478,7 @@
       "anchor": "행동위계-10",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -2860,6 +3486,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-10-p1",
       "text": {
+        "en": "As the colony's heart, it is instinctively protected by every member. Vibrations arising inside the structure coordinate the behavior of the entire colony.",
         "ko": "군락의 심장으로서 모든 개체가 본능적으로 보호한다. 구조물 내부에서 발생하는 진동이 군락 전체의 행동을 조율한다."
       }
     },
@@ -2868,6 +3495,7 @@
       "anchor": "단계적-위협-10",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -2875,6 +3503,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-10-p1",
       "text": {
+        "en": "The fortress itself activates traps and deploys self-defense organs. As the threat level rises, it mobilizes the entire colony to surround intruders.",
         "ko": "요새 자체가 함정을 작동시키고 자가 방어 기관을 발동한다. 위협 수준이 높아지면 군락 전체를 총동원해 침입자를 포위한다."
       }
     },
@@ -2883,6 +3512,7 @@
       "anchor": "전투대응-10",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -2890,6 +3520,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-10-p1",
       "text": {
+        "en": "If personnel on site inject an acidic solvent into the structure's core, its internal metal-and-mud bonds weaken, reducing the fortress's functionality by 50%. If they fail, the fortress seals every surrounding sewer pipe, flooding all of underground southern Seoul. The sign of success is rusty foam rising from the structure's surface.",
         "ko": "현장 인원이 구조물 핵심부에 산성 용매를 주입하면 내부 금속-진흙 결합이 약화되어 요새 기능이 50% 저하된다. 실패하면 요새가 주변 하수관을 모두 폐쇄해 서울 남부 지하 전체를 침수시킨다. 성공 신호는 구조물 표면에서 피어오르는 녹슨 거품이다."
       }
     },
@@ -2898,6 +3529,7 @@
       "anchor": "협상도덕-선택-10",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -2905,6 +3537,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-10-p1",
       "text": {
+        "en": "It is the ecological center of the colony. Destroying it would collapse the entire sewer system of southern Seoul. In G01-SC1 through SC3, it becomes the site of crucial negotiations and moral choices. If negotiations are refused, the fortress mobilizes the entire colony to occupy human settlements permanently.",
         "ko": "군락의 생태 중심지이다. 파괴 시 서울 남부 하수 시스템 전체가 붕괴한다. G01-SC1~SC3에서 핵심 협상과 도덕적 선택의 지점이 된다. 협상을 거부하면 요새가 군락을 총동원해 인간 거주지를 영구적으로 점령한다."
       }
     },
@@ -2913,6 +3546,7 @@
       "anchor": "시나리오-연결-10",
       "depth": 3,
       "text": {
+        "en": "Scenario Connections",
         "ko": "시나리오 연결"
       }
     },
@@ -2920,6 +3554,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-10-p1",
       "text": {
+        "en": "It serves as the final setting in all of G01-SC1, G01-SC2, and G01-SC3.",
         "ko": "G01-SC1, G01-SC2, G01-SC3 전부에서 최종 무대가 된다."
       }
     },
@@ -2927,6 +3562,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-10-p2",
       "text": {
+        "en": "<a id=\"g01e11\"></a>",
         "ko": "<a id=\"g01e11\"></a>"
       }
     },
@@ -2935,6 +3571,7 @@
       "anchor": "g01e11-범람멧돼지-요새-진흙철벽",
       "depth": 3,
       "text": {
+        "en": "G01E11 · Flood Boar Fortress 'Mud-Iron Wall'",
         "ko": "G01E11 · 범람멧돼지 요새 '진흙철벽'"
       }
     },
@@ -2943,12 +3580,15 @@
       "anchor": "g01e11-범람멧돼지-요새-진흙철벽-list1",
       "items": [
         {
+          "en": "Source batch: M002",
           "ko": "출처 배치: M002"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S01\"]}",
           "ko": "연결: {\"states\":[\"S01\"]}"
         }
       ]
@@ -2958,42 +3598,52 @@
       "anchor": "g01e11-범람멧돼지-요새-진흙철벽-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Habitat stronghold · facility",
             "ko": "서식 거점·시설"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Sluice Closure",
             "ko": "수문 폐쇄"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The fortress 'Mud-Iron Wall' is a wall of hardened mud and rebar on the slope outside the Water Compact Well sluice. Sows read its dull vibrations as the time of sealing; solitary males ignore them.",
             "ko": "요새 '진흙철벽'은 급수계약정 수문 바깥 경사지에 굳은 진흙-철근 벽이다. 모돈은 그 둔탁한 떨림을 봉인 시각으로 읽고, 단독 수컷은 무시한다."
           }
         ]
@@ -3004,6 +3654,7 @@
       "anchor": "역할신체-11",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3011,6 +3662,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-11-p1",
       "text": {
+        "en": "On the waste slope outside the Water Compact Well, Water Compact Well, stands a wall in which mud and rebar have hardened into one. Each time the sluice opens, the wall drinks water and accumulates decaying organic matter and a crust of salt inside. It catches approaching footsteps in mud, serving as both a storehouse and a capture trap.",
         "ko": "급수계약정 급수계약정 바깥 폐기물 경사지에 진흙과 철근이 한 몸으로 굳은 벽이 선다. 수문이 열릴 때마다 벽이 물을 마셔 내부에 부패 유기물과 염분 껍질을 쌓고, 접근하는 발자국을 진흙으로 붙잡아 저장고이자 포획 함정이 된다."
       }
     },
@@ -3019,6 +3671,7 @@
       "anchor": "기원-11",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3026,6 +3679,7 @@
       "kind": "paragraph",
       "anchor": "기원-11-p1",
       "text": {
+        "en": "After the first hoofprint of G01-SC1 appeared at the collection yard, sow families repeatedly packed mud onto the sluice apron, growing the wall's framework. Rebar left by the flood and salt from the Yeouido Computer District's cooling waste seeped into the mud, turning the wall into a storage organ that would not collapse.",
         "ko": "G01-SC1의 첫 발굽이 집하장에 찍힌 뒤, 모돈 가족들이 수문 에이프런에 진흙을 반복해 붙이면서 벽의 뼈대가 자랐다. 홍수가 남긴 철근과 여의도전산가 냉각 폐기물의 소금기가 진흙에 스며 벽은 무너지지 않는 저장 기관이 되었다."
       }
     },
@@ -3034,6 +3688,7 @@
       "anchor": "서식-11",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -3041,6 +3696,7 @@
       "kind": "paragraph",
       "anchor": "서식-11-p1",
       "text": {
+        "en": "It is rooted in the lowest slope of the flood zone and draws in water in rhythm with the sluice's opening and closing. In the dry season, it survives by licking the salt layer inside; during monsoon weeks, its face pushes outward a handspan at a time, narrowing the drainage channel.",
         "ko": "범람 구역의 가장 낮은 경사지에 뿌리를 박고 개폐 주기와 같은 호흡으로 물을 들이마신다. 건기에는 내부 염분 층을 핥아 버티고, 장마 주간에는 벽면이 한 뼘씩 바깥으로 밀려 배수로를 좁힌다."
       }
     },
@@ -3049,6 +3705,7 @@
       "anchor": "필요경제-11",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -3056,6 +3713,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-11-p1",
       "text": {
+        "en": "It concentrates food brought in by family groups and salt flowing from the recovery tank inside the wall. If this concentration stops, the wall can no longer hold water, and the downstream pumps overheat that same night. Excessive concentration increases pressure to forage in the alleys.",
         "ko": "가족군이 모아 온 음식물과 회수조에서 흘러나온 염분을 벽 안에 농축한다. 이 농축이 끊기면 벽은 물을 담지 못해 하류 펌프가 같은 밤에 과열되고, 과잉 농축은 골목 쪽 먹이 압박을 키운다."
       }
     },
@@ -3064,6 +3722,7 @@
       "anchor": "생애정비-11",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3071,6 +3730,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-11-p1",
       "text": {
+        "en": "Adults fill cracked sections with saliva and mud, adding only one new layer per monsoon. The labor devoted to adding that layer reduces scouting and bathing that day, drawing the center of the hierarchy toward the wall.",
         "ko": "갈라진 칸은 성체들이 타액과 진흙으로 메우며, 한 장마에 한 겹의 새 층만 덧붙인다. 덧붙임에 동원된 노동만큼 그날의 정찰과 목욕이 줄어 위계의 중심이 벽으로 모인다."
       }
     },
@@ -3079,6 +3739,7 @@
       "anchor": "행동위계-11",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3086,6 +3747,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-11-p1",
       "text": {
+        "en": "The wall's dull vibrations tell the family groups when sealing will occur. The sows do not begin moving until the vibrations subside; solitary males ignore them and pass along the same slope.",
         "ko": "벽이 내는 둔탁한 떨림이 봉인 시각을 가족군에게 알린다. 모돈은 그 떨림이 잦아든 뒤에야 이동을 시작하고, 단독 수컷은 떨림을 무시하고 같은 경사지를 스쳐 지나간다."
       }
     },
@@ -3094,6 +3756,7 @@
       "anchor": "단계적-위협-11",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -3101,6 +3764,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-11-p1",
       "text": {
+        "en": "When a drain is blocked with mud, the pump noise changes first. By day, as the water recedes, part of the wall sheds iron fragments as though collapsing, closing the inspection passage. At night, when the water level crosses the warning line, the wall's vibrations draw the family groups up toward the stairs.",
         "ko": "배수구 하나가 진흙으로 막히면 펌프 소음이 먼저 바뀐다. 물이 빠지는 낮에는 벽 일부가 무너지듯 철편을 흘려 점검 통로를 닫고, 수위가 경고선을 넘긴 밤에는 벽의 떨림이 가족군을 계단 쪽으로 끌어 올린다."
       }
     },
@@ -3109,6 +3773,7 @@
       "anchor": "전투대응-11",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -3116,6 +3781,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-11-p1",
       "text": {
+        "en": "A drain outside the sluice remains blocked with mud while four pumps overheat within the same opening-and-closing cycle. If the duty crew cannot push solvent into a hairline crack in the wall during the interval when the water level drops a handspan, the wall grows another layer and seals off the downstream worksite that same night. If the crack opens, rusty-smelling steam leaks from the gap and the dull vibrations subside.",
         "ko": "수문 바깥 배수구가 진흙으로 막힌 채 펌프 네 대가 같은 개폐 주기 안에 과열된다. 수위가 한 뼘 내려간 틈에 당직이 벽체 미세 균열로 용매를 밀어 넣지 못하면 벽은 한 층을 더 키워 하류 작업장을 같은 밤에 잠근다. 균열이 열리면 틈에서 녹슨 냄새의 김이 새고 둔탁한 떨림이 잦아든다."
       }
     },
@@ -3124,6 +3790,7 @@
       "anchor": "협상도덕-선택-11",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -3131,6 +3798,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-11-p1",
       "text": {
+        "en": "Only one person on duty has the authority to cut through one section of the wall during the night shift to let water through. In a week when recovery of the G01-SC2 salt pool is brought forward, cutting that section bursts the storehouse and drives the family groups into semi-basement alleys. Leaving it intact lets the pump station hold, but the wall drinks water at every sealing time, prolonging the ration convoy. Mud cut apart cannot be rejoined in the same monsoon.",
         "ko": "당직 한 명이 밤 근무 중에 벽체 한 칸을 잘라 통수를 열 권한만 갖는다. G01-SC2의 염분 웅덩이 회수가 앞당겨진 주에는 그 한 칸이 저장고를 터뜨려 가족군을 반지하 골목으로 밀어 낸다. 칸을 그대로 두면 펌프장은 버티지만 봉인 시각마다 벽이 물을 마셔 배급 호송이 길어진다. 한번 가른 진흙은 같은 장마에 붙이지 못한다."
       }
     },
@@ -3139,6 +3807,7 @@
       "anchor": "시나리오-연결-11",
       "depth": 3,
       "text": {
+        "en": "Scenario Connections",
         "ko": "시나리오 연결"
       }
     },
@@ -3146,6 +3815,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-11-p1",
       "text": {
+        "en": "G01-SC1 records that the wall's first layer of mud was attached on the same night hoofprints appeared at the collection yard. In G01-SC2 and G01-SC3, salt storage and occupation of the sluice stairs overlap, with this wall as their setting.",
         "ko": "G01-SC1은 벽의 첫 진흙 층이 집하장 발굽과 같은 밤에 붙었음을 기록한다. G01-SC2와 G01-SC3에서는 염분 저장과 수문 계단 점유가 이 벽을 무대로 겹친다."
       }
     },
@@ -3153,6 +3823,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-11-p2",
       "text": {
+        "en": "<a id=\"g01e12\"></a>",
         "ko": "<a id=\"g01e12\"></a>"
       }
     },
@@ -3161,6 +3832,7 @@
       "anchor": "g01e12-범람멧돼지-유생-연약철피",
       "depth": 3,
       "text": {
+        "en": "G01E12 · Flood Boar Larva 'Tender Ironhide'",
         "ko": "G01E12 · 범람멧돼지 유생 '연약철피'"
       }
     },
@@ -3169,12 +3841,15 @@
       "anchor": "g01e12-범람멧돼지-유생-연약철피-list1",
       "items": [
         {
+          "en": "Source batch: M002",
           "ko": "출처 배치: M002"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC1\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC1\"]}"
         }
       ]
@@ -3184,42 +3859,52 @@
       "anchor": "g01e12-범람멧돼지-유생-연약철피-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Growth Pressure",
             "ko": "성장 압박"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The larva 'Tender Ironhide' is a soft-bodied offspring of the Great King's bloodline that fills the pipes through sheer numbers. Its nursery inside the wall overlaps with the sow families' territory, but once its shell closes, it moves into the mutant transport line.",
             "ko": "유생 '연약철피'는 대왕 혈통의 물렁한 새끼로 관을 숫자로 채운다. 벽 안 보육실은 모돈 가족과 겹치되, 껍질이 닫히면 변이 운반 줄로 넘어간다."
           }
         ]
@@ -3230,6 +3915,7 @@
       "anchor": "역할신체-12",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3237,6 +3923,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-12-p1",
       "text": {
+        "en": "The Great King's newest offspring still have soft backs, leaving the pink skin of their 1.5-meter bodies exposed. At the edge of the bathing ground, they absorb metal ions through their skin and form a thin shell in a fortnight. Their soft bodies catch the ankles of anyone passing through the drainage channel.",
         "ko": "대왕 혈통의 최근 새끼는 아직 등판이 물렁해 1.5미터 몸길이에 분홍빛 피부가 그대로 드러난다. 목욕터 가장자리에서 금속 이온을 피부로 빨아들여 보름 만에 얇은 껍질을 만들고, 배수로를 지나는 발목은 그 물렁한 몸으로 붙잡힌다."
       }
     },
@@ -3245,6 +3932,7 @@
       "anchor": "기원-12",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3252,6 +3940,7 @@
       "kind": "paragraph",
       "anchor": "기원-12-p1",
       "text": {
+        "en": "They emerged all at once from one sow's litter just after the G01-SC1 flood receded. A warm, humid section inside the storage wall became the litter's nursery, and those that grow up disperse into scouting and transport.",
         "ko": "G01-SC1 홍수가 빠진 직후 모돈의 한 배에서 한꺼번에 나왔다. 저장벽 안 온습한 칸이 그 배의 보육실이 되어, 성장한 개체는 정찰과 운반 쪽으로 흩어진다."
       }
     },
@@ -3260,6 +3949,7 @@
       "anchor": "서식-12",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -3267,6 +3957,7 @@
       "kind": "paragraph",
       "anchor": "서식-12-p1",
       "text": {
+        "en": "They spend the day in a warm mud chamber inside the wall, emerging only on nights of rapid growth to seek metal fragments on the slope. In the dry season, the chamber depends on its salt layer; during the monsoon, the chamber entrance opens into a waterway that pushes the larvae as far as the pipe entrance.",
         "ko": "벽 내부의 따뜻한 진흙 방에서 낮을 보내고 성장이 급한 밤에만 경사지 금속 조각을 찾으러 나온다. 건기의 방은 염분 층에 기대고, 장마에는 방 입구가 물길로 열려 유생이 관 입구까지 밀려 나온다."
       }
     },
@@ -3275,6 +3966,7 @@
       "anchor": "필요경제-12",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -3282,6 +3974,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-12-p1",
       "text": {
+        "en": "Covering their soft skin requires both highly concentrated decaying matter and salt. They contribute some of the ions they absorb to enlarge the wall's storehouse. If ions become scarce, the nursery temperature falls and the next litter stops growing.",
         "ko": "물렁한 피부를 덮으려면 고농도 부패물과 소금기가 동시에 필요하다. 흡수한 이온의 일부는 벽에 바쳐 저장고를 키우고, 이온이 줄면 보육실 온도가 떨어져 다음 배의 성장이 멈춘다."
       }
     },
@@ -3290,6 +3983,7 @@
       "anchor": "생애정비-12",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3297,6 +3991,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-12-p1",
       "text": {
+        "en": "Their skin changes sheen and gains another layer of shell every fortnight. Torn areas are filled with bodily fluid flowing from the wall. Once a shell is complete, its owner moves into the adult transport line.",
         "ko": "보름 단위로 피부가 빛을 바꾸며 껍질을 덧입는다. 찢긴 자리는 벽에서 흘러나온 체액으로 메워지고, 껍질이 완성되면 그 개체는 성체 운반 줄로 옮겨 간다."
       }
     },
@@ -3305,6 +4000,7 @@
       "anchor": "행동위계-12",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3312,6 +4008,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-12-p1",
       "text": {
+        "en": "The larvae respond only to the sows and the wall's vibrations. Once their shells close, they rise to positions as subadults responsible for the forward feeding ground; until then, they merely fill the slope with their numbers.",
         "ko": "유생은 모돈과 벽의 떨림에만 따른다. 껍질이 닫히면 앞쪽 먹이터를 맡는 아성체 자리로 오르고, 그 전까지는 숫자로만 경사지를 채운다."
       }
     },
@@ -3320,6 +4017,7 @@
       "anchor": "단계적-위협-12",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -3327,6 +4025,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-12-p1",
       "text": {
+        "en": "At first, young bodies gather on the pipe floor and soak the feet of those passing through. Once their shells begin to open thinly, they test short charges with iron fragments stuck to their bodies. When they return to the nursery, empty spaces in the wall are filled in proportion to their numbers, eliminating the detour.",
         "ko": "처음에는 어린 몸이 관 바닥에 모여 발걸음을 적신다. 껍질이 얇게 열린 뒤에는 몸에 철편을 붙인 채 짧은 돌진을 시험하고, 보육실로 돌아가면 그 숫자만큼 벽의 빈칸이 메워져 우회 길이 사라진다."
       }
     },
@@ -3335,6 +4034,7 @@
       "anchor": "전투대응-12",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -3342,6 +4042,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-12-p1",
       "text": {
+        "en": "If the metallic sheen of the larvae's skin stops developing for two days, the cluster cannot widen the pipe. A brief burst of high frequency at the edge of the bathing ground disrupts only their growth rhythm. If the rhythm remains unchanged, the same drainage channel fills with young in a fortnight, lengthening the detour through the alleys.",
         "ko": "유생 피부의 금속 광택이 이틀째 멈추면 그 군집은 관을 넓히지 못한다. 목욕터 가장자리에 고주파를 짧게 흘려 성장 리듬만 흐트러뜨린다. 리듬이 그대로면 보름 뒤 같은 배수로가 어린 개체로 채워져 골목 우회 시간이 길어진다."
       }
     },
@@ -3350,6 +4051,7 @@
       "anchor": "협상도덕-선택-12",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -3357,6 +4059,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-12-p1",
       "text": {
+        "en": "When the hoofprints at the G01-SC1 collection yard become visible, the recovery tank and a sow face each other over the same scented bait. Moving the bait toward the wetland keeps the larvae inside the wall for another fortnight but delays the nighttime ration by one meal. Removing the sow on the spot sends the scent of her young through the alleys for 48 hours, and the window for action opens and closes within a day.",
         "ko": "G01-SC1의 집하장 발굽이 보이면 회수조와 모돈이 같은 냄새 미끼를 두고 마주 선다. 미끼를 습지 쪽으로 물리면 유생은 벽 안에서 보름을 더 보내지만 야간 배급은 한 끼 늦어진다. 모돈을 그 자리에서 거두면 48시간 동안 새끼 냄새가 골목을 돌고, 그 창은 하루 만에 열리고 닫힌다."
       }
     },
@@ -3365,6 +4068,7 @@
       "anchor": "시나리오-연결-12",
       "depth": 3,
       "text": {
+        "en": "Scenario Connections",
         "ko": "시나리오 연결"
       }
     },
@@ -3372,6 +4076,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-12-p1",
       "text": {
+        "en": "G01-SC1 marks the point when larval hoofprints begin appearing among those at the collection yard. The salt shortage of G01-SC2 slows shell formation, while the crowded stairs of G01-SC3 lead to young bodies getting caught between people's feet.",
         "ko": "G01-SC1은 유생 발굽이 집하장에 섞여 찍히는 시점을 연다. G01-SC2의 염분 고갈은 껍질 형성을 늦추고, G01-SC3의 계단 혼잡은 어린 몸이 사람 발 사이에 끼는 장면으로 이어진다."
       }
     },
@@ -3379,6 +4084,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-12-p2",
       "text": {
+        "en": "<a id=\"g01e13\"></a>",
         "ko": "<a id=\"g01e13\"></a>"
       }
     },
@@ -3387,6 +4093,7 @@
       "anchor": "g01e13-범람멧돼지-성체-녹슨철갑",
       "depth": 3,
       "text": {
+        "en": "G01E13 · Adult Flood Boar 'Rusty Ironplate'",
         "ko": "G01E13 · 범람멧돼지 성체 '녹슨철갑'"
       }
     },
@@ -3395,12 +4102,15 @@
       "anchor": "g01e13-범람멧돼지-성체-녹슨철갑-list1",
       "items": [
         {
+          "en": "Source batch: M002",
           "ko": "출처 배치: M002"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC1\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC1\"]}"
         }
       ]
@@ -3410,42 +4120,52 @@
       "anchor": "g01e13-범람멧돼지-성체-녹슨철갑-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Common species",
             "ko": "공통종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Transport Charge",
             "ko": "운반 돌진"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The adult 'Rusty Ironplate' is the transport workhorse of an ordinary family group, clad in rusty iron plates across its 3-meter body. Despite the aging label, it is a working adult and enters the same tunnel only after the sow sets out.",
             "ko": "성체 '녹슨철갑'은 3미터 녹슨 철판을 두른 보통 가족군의 운반 몸이다. 노화 꼬리표와 달리 노동하는 성체이며 모돈 출발 뒤에야 같은 터널로 든다."
           }
         ]
@@ -3456,6 +4176,7 @@
       "anchor": "역할신체-13",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3463,6 +4184,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-13-p1",
       "text": {
+        "en": "Rusty iron plates encircle its fully grown, 3-meter body. The plates scrape the sewer tunnel walls as it carries salt crust and organic matter. In the middle of the transport line, its tusks push sidewalk rebar, briefly closing off the human path.",
         "ko": "완전히 자란 3미터 몸통을 녹슨 철판이 둘러싸고, 그 철판이 하수 터널 벽을 긁으며 염분 껍질과 유기물을 나른다. 운반 줄의 중간에서 엄니가 보도 철근을 밀어 사람 길을 잠시 접게 만든다."
       }
     },
@@ -3471,6 +4193,7 @@
       "anchor": "기원-13",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3478,6 +4201,7 @@
       "kind": "paragraph",
       "anchor": "기원-13-p1",
       "text": {
+        "en": "Adults that survived the early wetlands of G01-SC1 accumulated metal on their backs and took this form. The same body handles both labor and brief clashes, entering the tunnel only after the sow begins moving.",
         "ko": "G01-SC1 초기 습지를 버틴 성체들이 금속을 등판에 쌓아 이 형태가 되었다. 노동과 짧은 충돌을 한 몸이 겸해, 모돈의 이동이 시작된 뒤에야 같은 터널로 들어간다."
       }
     },
@@ -3486,6 +4210,7 @@
       "anchor": "서식-13",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -3493,6 +4218,7 @@
       "kind": "paragraph",
       "anchor": "서식-13-p1",
       "text": {
+        "en": "It sleeps in the tunnels of the middle flood zone and, during dry-season weeks, travels almost exclusively along the walls. On monsoon nights, a transport route opens between the salt pool and the slope, overlapping with alley drainage.",
         "ko": "범람 중층의 터널을 잠자리로 삼고 건기 주간에는 거의 벽 쪽으로만 오간다. 장마 밤에는 염분 웅덩이와 경사지를 잇는 운반 길이 열리고, 그 길이 골목 배수와 겹친다."
       }
     },
@@ -3501,6 +4227,7 @@
       "anchor": "필요경제-13",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -3508,6 +4235,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-13-p1",
       "text": {
+        "en": "It eats metal and decaying matter together to maintain its iron plates, passing surplus salt to the wall and the larvae. If the Cheongram recovery tank collects the pool early, the plates crumble and a week's transport volume falls by half.",
         "ko": "철판을 유지하려고 금속과 부패물을 함께 먹으며 남는 염분을 벽과 유생에게 넘긴다. 청람 회수조가 웅덩이를 일찍 거두면 철판이 바스라져 한 주의 운반량이 반으로 줄어든다."
       }
     },
@@ -3516,6 +4244,7 @@
       "anchor": "생애정비-13",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3523,6 +4252,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-13-p1",
       "text": {
+        "en": "It returns to the wall to reattach scraped plates with bodily fluid. Scouting lapses on nights spent making repairs, so the family groups do not use that time as a movement window.",
         "ko": "긁힌 철판은 벽으로 돌아와 체액으로 붙인다. 붙이는 밤에 정찰이 비므로 가족군은 그 시간을 이동 창으로 쓰지 않는다."
       }
     },
@@ -3531,6 +4261,7 @@
       "anchor": "행동위계-13",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3538,6 +4269,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-13-p1",
       "text": {
+        "en": "Taking its cue from the sow's departure and the wall's vibrations, it tells the subadults the order of passage through the tunnel. Solitary males do not follow this order and cross paths with the adult line at the same feeding ground.",
         "ko": "모돈의 출발과 벽의 떨림을 받아 아성체에게 터널 순서를 알린다. 단독 수컷은 이 순서를 따르지 않아, 같은 먹이터에서 성체 줄과 엇갈린다."
       }
     },
@@ -3546,6 +4278,7 @@
       "anchor": "단계적-위협-13",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -3553,6 +4286,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-13-p1",
       "text": {
+        "en": "The sound of metal at the tunnel entrance signals that the day's transport has begun. When the sound reaches the sidewalk, iron fragments fly up and block the water-supply inspection cover. If several adults gather at the same bend, the water pressure for morning rations falls.",
         "ko": "터널 입구에서 쇳소리가 나면 그날의 운반이 시작된다. 쇳소리가 보도까지 올라오면 철편이 튀어 급수 점검 뚜껑을 막고, 여러 성체가 같은 굴곡에 모이면 아침 배급 수압이 떨어진다."
       }
     },
@@ -3561,6 +4295,7 @@
       "anchor": "전투대응-13",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -3568,6 +4303,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-13-p1",
       "text": {
+        "en": "As an adult emerges from the tunnel carrying salt crust on its back, an electromagnetic pulse from a recovery-tank cart reaches the same bend. If the pulse grazes its body, flakes of rust fall away in a seagull pattern. If the cart is a beat late, its tusks push the sidewalk rebar and the water-supply hose is pulled out overnight.",
         "ko": "성체가 염분 껍질을 등에 싣고 터널을 나오는 시각에 회수조 수레의 전자기 펄스가 같은 굴곡에서 만난다. 펄스가 몸을 스치면 녹 조각이 갈매기 무늬로 떨어진다. 수레가 한 박자 늦으면 엄니가 보도 철근을 밀어 급수 호스가 밤 사이 뽑힌다."
       }
     },
@@ -3576,6 +4312,7 @@
       "anchor": "협상도덕-선택-13",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -3583,6 +4320,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-13-p1",
       "text": {
+        "en": "The sluice government, the Cheongram recovery tank, and alley representatives sit together to allocate the adults' transport nights. Leaving the salt pool in the wetland ties monitors to that site for a season; removing only the alley food waste first prompts the adults to make a route into another semi-basement. The cost left by G01-SC2 is not carcasses, but which door the monitoring work shifts to.",
         "ko": "수문 정부와 청람 회수조와 골목 대표가 한자리에 앉아 성체의 운반 밤을 나눈다. 염분 웅덩이를 습지에 남기면 감시 인원이 한 계절을 그 자리에 묶이고, 골목 음식물만 먼저 치우면 성체가 다른 반지하로 길을 낸다. G01-SC2가 남기는 값은 사체가 아니라 감시 노동이 어느 문으로 옮겨 가는지다."
       }
     },
@@ -3591,6 +4329,7 @@
       "anchor": "시나리오-연결-13",
       "depth": 3,
       "text": {
+        "en": "Scenario Connections",
         "ko": "시나리오 연결"
       }
     },
@@ -3598,6 +4337,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-13-p1",
       "text": {
+        "en": "The cost of the G01-SC2 pool shows in the thickness of the adults' iron plates. The hoofprint record of G01-SC1 and the occupation of the stairs in G01-SC3 mark where this transport line overlaps with human routes.",
         "ko": "G01-SC2의 웅덩이 값이 성체 철판의 두께로 드러난다. G01-SC1의 발굽 기록과 G01-SC3의 계단 점유는 이 운반 줄이 사람 동선과 겹치는 지점을 남긴다."
       }
     },
@@ -3605,6 +4345,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-13-p2",
       "text": {
+        "en": "<a id=\"g01e14\"></a>",
         "ko": "<a id=\"g01e14\"></a>"
       }
     },
@@ -3613,6 +4354,7 @@
       "anchor": "g01e14-범람멧돼지-공존형-평화철피",
       "depth": 3,
       "text": {
+        "en": "G01E14 · Coexisting Flood Boar 'Peaceful Ironhide'",
         "ko": "G01E14 · 범람멧돼지 공존형 '평화철피'"
       }
     },
@@ -3621,12 +4363,15 @@
       "anchor": "g01e14-범람멧돼지-공존형-평화철피-list1",
       "items": [
         {
+          "en": "Source batch: M002",
           "ko": "출처 배치: M002"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {}",
           "ko": "연결: {}"
         }
       ]
@@ -3636,42 +4381,52 @@
       "anchor": "g01e14-범람멧돼지-공존형-평화철피-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Common species",
             "ko": "공통종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Coexisting Collection",
             "ko": "공존 수거"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The coexisting form 'Peaceful Ironhide' occupies the edge of the family group. Its flexible ironhide selects only the scents from the waste shelf. If collections are missed for two weeks, its back hardens and it opens covers like a wild adult.",
             "ko": "공존형 '평화철피'는 폐기물 선반의 냄새만 고르는 유연한 철피의 가족 가장자리다. 회차가 두 주 비면 등판이 굳어 야생 성체처럼 뚜껑을 연다."
           }
         ]
@@ -3682,6 +4437,7 @@
       "anchor": "역할신체-14",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3689,6 +4445,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-14-p1",
       "text": {
+        "en": "Individuals that move only around the outskirts of human areas have thin, flexible ironhide and can distinguish the scents on waste shelves. With the wall's and sow's permission, they pass near drainage-channel covers; patrol records show them selecting metal fragments from the shelves.",
         "ko": "인간 구역 외곽에서만 움직이는 개체는 철피가 얇고 잘 구부러져 폐기물 선반의 냄새를 가려낸다. 벽과 모돈의 허락 아래 배수로 뚜껑 근처를 오가며, 선반 위의 금속 조각을 고르는 모습이 순찰 기록에 남는다."
       }
     },
@@ -3697,6 +4454,7 @@
       "anchor": "기원-14",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3704,6 +4462,7 @@
       "kind": "paragraph",
       "anchor": "기원-14-p1",
       "text": {
+        "en": "This form appeared after leftover-food convoys were diverted through a bait corridor in G01-SC3. Once it began receiving waste selected by people reliably, its body adapted to collection instead of attack.",
         "ko": "G01-SC3에서 잔반 호송을 미끼 회랑으로 돌린 뒤에 나타난 형태다. 사람이 고른 폐기물을 안정적으로 받자 공격 대신 수거에 몸이 맞춰졌다."
       }
     },
@@ -3712,6 +4471,7 @@
       "anchor": "서식-14",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -3719,6 +4479,7 @@
       "kind": "paragraph",
       "anchor": "서식-14-p1",
       "text": {
+        "en": "It stays by drainage channels with shelves between the wetland and the alleys. It checks the shelves at sealing time and retreats deep toward the wall on days when they are empty.",
         "ko": "습지와 골목 사이의 선반 있는 배수로에 머문다. 봉인 시각에 맞춰 선반을 확인하고, 비는 날에는 벽 쪽으로 깊숙이 물러난다."
       }
     },
@@ -3727,6 +4488,7 @@
       "anchor": "필요경제-14",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -3734,6 +4496,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-14-p1",
       "text": {
+        "en": "Sorted metal and a small amount of salt are its staple diet. As long as supplies continue, the colony puts less pressure on the alleys; if supplies stop, the same body opens covers like a wild adult.",
         "ko": "선별된 금속과 소량의 염분이 이 개체의 주식이다. 공급이 이어지면 군락의 골목 압박이 줄고, 끊기면 같은 몸이 야생 성체처럼 뚜껑을 연다."
       }
     },
@@ -3742,6 +4505,7 @@
       "anchor": "생애정비-14",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3749,6 +4513,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-14-p1",
       "text": {
+        "en": "Rather than breeding, it lives by ingraining the shelf schedule into its body. If the schedule is kept, its ironhide stays flexible; if two weeks are missed, its back hardens, becoming suited to charging rather than concealment.",
         "ko": "번식보다 선반 주기를 몸에 새기는 쪽으로 산다. 주기가 지켜지면 철피가 유연하고, 두 주가 비면 등판이 굳어 위장 대신 돌진에 맞춰진다."
       }
     },
@@ -3757,6 +4522,7 @@
       "anchor": "행동위계-14",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3764,6 +4530,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-14-p1",
       "text": {
+        "en": "It responds only to the sow's direct signals and does not share a route with other adults. On nights when the shelf is stocked, it remains in the peaceful tier and takes a peripheral role in resource distribution.",
         "ko": "모돈의 직접 신호만 받고 다른 성체와 길을 겹치지 않는다. 선반이 채워진 밤에는 평화 쪽 계층으로 남아 자원 분배의 가장자리를 맡는다."
       }
     },
@@ -3772,6 +4539,7 @@
       "anchor": "단계적-위협-14",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -3779,6 +4547,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-14-p1",
       "text": {
+        "en": "While the shelf schedule is kept, even warning calls are rare. Three days after a collection is missed, its back hardens and it occupies the drainage channel. At the next sealing time, the family group leaves muddy hoofprints through that cover all the way to the alley kitchens.",
         "ko": "선반이 지켜지는 동안에는 경고 울음조차 드물다. 회차가 끊긴 뒤 사흘이 지나면 등판이 굳고 배수로를 차지하며, 그 다음 봉인 시각에는 가족군이 그 뚜껑을 통해 골목 부엌까지 흙 발자국을 찍는다."
       }
     },
@@ -3787,6 +4556,7 @@
       "anchor": "전투대응-14",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -3794,6 +4564,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-14-p1",
       "text": {
+        "en": "Stocking the waste shelf to the same weight at the same time each week keeps the thin ironhide from hardening. A low rumble then continues without a break from the wetland. If the shelf is empty for two weeks, its skin thickens, and the same body opens the cover and pushes muddy water as far as the drinking-water valve.",
         "ko": "폐기물 선반의 무게를 매주 같은 시각에 맞춰 올리면 얇은 철피가 굳지 않는다. 그때 습지 쪽에서 낮은 울림이 끊기지 않고 이어진다. 선반이 두 주 비면 피부가 두꺼워지고 같은 몸이 뚜껑을 열어 식수 밸브까지 흙물을 민다."
       }
     },
@@ -3802,6 +4573,7 @@
       "anchor": "협상도덕-선택-14",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -3809,6 +4581,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-14-p1",
       "text": {
+        "en": "For households on the outskirts, placing sorted metal fragments on the shelf is an obligation without a signature. If the shelf is stocked before the G01-SC3 evacuation leftovers pile up on the stairs, the coexisting form retreats toward the wall. If even one household skips a collection, the window for reversing the change shrinks to the next sealing time, and that household's water-supply hose takes in mud first.",
         "ko": "외곽 가구가 선별한 금속 조각을 선반에 올리는 일은 서명이 없는 의무다. G01-SC3의 피난 잔반이 계단에 쌓이기 전에 그 선반이 채워져 있으면 공존형은 벽 쪽으로 물러난다. 한 집이라도 회차를 건너뛰면 되돌릴 창은 다음 봉인 시각까지로 줄어들고, 그 집의 급수 호스가 먼저 흙을 먹는다."
       }
     },
@@ -3817,6 +4590,7 @@
       "anchor": "시나리오-연결-14",
       "depth": 3,
       "text": {
+        "en": "Scenario Connections",
         "ko": "시나리오 연결"
       }
     },
@@ -3824,6 +4598,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-14-p1",
       "text": {
+        "en": "The weight on this shelf determines whether the passage-rights agreement of G01-SC3 is upheld or broken. G01-SC1 and G01-SC2 can be read as the history of feeding-ground movements, before the shelf existed, left in this individual's flexible ironhide.",
         "ko": "G01-SC3의 통행권 합의가 이 선반의 무게로 지켜지거나 깨진다. G01-SC1과 G01-SC2는 선반이 생기기 전 먹이터 이동을 이 개체의 유연한 철피에 남긴 이력으로 읽힌다."
       }
     },
@@ -3831,6 +4606,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-14-p2",
       "text": {
+        "en": "<a id=\"g01e15\"></a>",
         "ko": "<a id=\"g01e15\"></a>"
       }
     },
@@ -3839,6 +4615,7 @@
       "anchor": "g01e15-범람멧돼지-보스-대왕후계",
       "depth": 3,
       "text": {
+        "en": "G01E15 · Flood Boar Boss 'Great King's Heir'",
         "ko": "G01E15 · 범람멧돼지 보스 '대왕후계'"
       }
     },
@@ -3847,12 +4624,15 @@
       "anchor": "g01e15-범람멧돼지-보스-대왕후계-list1",
       "items": [
         {
+          "en": "Source batch: M002",
           "ko": "출처 배치: M002"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC2\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC2\"]}"
         }
       ]
@@ -3862,42 +4642,52 @@
       "anchor": "g01e15-범람멧돼지-보스-대왕후계-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Variant species",
             "ko": "변이종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Mustering Control",
             "ko": "소집 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The boss 'Great King's Heir' is a large female of the bloodline that will succeed to the armored king's place. She holds several family groups in one column. She is a distinct mustering individual on the battlefield; solitary males remain outside her column.",
             "ko": "보스 '대왕후계'는 철갑의 자리를 이을 큰 암컷 혈통으로 여러 가족군을 한 열에 붙든다. 전장의 별개 소집 개체이며 단독 수컷은 그 열 밖에 남는다."
           }
         ]
@@ -3908,6 +4698,7 @@
       "anchor": "역할신체-15",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -3915,6 +4706,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-15-p1",
       "text": {
+        "en": "The heir to E01's Great King has a 5-meter back nearly as thick as the storage wall and holds several family groups in a single column with a low call. On nights when the floodwater rises, she emerges from the deepest storage section and makes the sluice stairs her arena.",
         "ko": "E01 대왕의 자리를 이을 후계자는 5미터 등판이 저장벽 두께에 가깝고, 낮은 울음으로 여러 가족군을 한 열에 붙든다. 홍수위가 차오르는 밤 최심부 저장칸에서 나와 수문 계단을 자신의 무대로 삼는다."
       }
     },
@@ -3923,6 +4715,7 @@
       "anchor": "기원-15",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -3930,6 +4723,7 @@
       "kind": "paragraph",
       "anchor": "기원-15-p1",
       "text": {
+        "en": "The largest surviving female bloodline from the G01-SC2 salt crisis grew into the heir. Her body became a means of rearranging the order of movement in seasons of scarce energy, setting the rhythm of the western Han River wetlands to her call.",
         "ko": "G01-SC2 염분 위기 때 살아남은 가장 큰 암컷 혈통이 후계로 자랐다. 에너지가 부족한 계절에 이동 순서를 다시 짜는 몸이 되어, 한강 서부 습지의 시간을 제 울음에 맞춘다."
       }
     },
@@ -3938,6 +4732,7 @@
       "anchor": "서식-15",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -3945,6 +4740,7 @@
       "kind": "paragraph",
       "anchor": "서식-15-p1",
       "text": {
+        "en": "She stays in the deepest salt section of the wall, then crosses the entire tunnel at once when a water-level warning appears. In ordinary times she barely moves, registering as only a single mass on Hannuri's heat-source display.",
         "ko": "벽 최심부 염분 칸에 머물다 수위 경고가 뜨면 터널 전체를 한 번에 가로지른다. 평시에는 거의 움직이지 않아 한누리의 열원 화면에도 한 덩어리로만 잡힌다."
       }
     },
@@ -3953,6 +4749,7 @@
       "anchor": "필요경제-15",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -3960,6 +4757,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-15-p1",
       "text": {
+        "en": "She consumes a great deal of resources but redistributes surplus salt and decaying matter to the family groups. If that redistribution stops, the heir's call rings hollow, the groups scatter into the alleys, and the area of harm to civilians expands.",
         "ko": "자원을 많이 먹되 남는 염분과 부패물을 가족군에 다시 나눈다. 나눔이 멈추면 후계자의 울음이 공허해져 무리가 골목으로 흩어지고, 시민 쪽 피해 면적이 넓어진다."
       }
     },
@@ -3968,6 +4766,7 @@
       "anchor": "생애정비-15",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -3975,6 +4774,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-15-p1",
       "text": {
+        "en": "She rubs the Great King's memories of movement into grooves on her back and fills the grooves with her subordinates' iron fragments. Too much filling leaves gaps in subadult scouting and delays the escape route in the next flood.",
         "ko": "대왕의 이동 기억을 등판 홈에 문질러 남기고 부하의 철편으로 홈을 메운다. 메움이 과하면 아성체의 정찰이 비어 다음 홍수에 퇴로가 늦다."
       }
     },
@@ -3983,6 +4783,7 @@
       "anchor": "행동위계-15",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -3990,6 +4791,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-15-p1",
       "text": {
+        "en": "She gives the departure signal after the Great King falls asleep. The sows align their columns to that signal; as it overlaps with the wall's vibrations, the gaps between families narrow. Only solitary males remain outside the column.",
         "ko": "대왕이 잠든 뒤 출발 신호를 낸다. 모돈들이 그 신호에 열을 맞추고 벽의 떨림과 겹쳐 가족 사이 간격이 좁아지며, 단독 수컷만 열 밖에 남는다."
       }
     },
@@ -3998,6 +4800,7 @@
       "anchor": "단계적-위협-15",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -4005,6 +4808,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-15-p1",
       "text": {
+        "en": "On some nights, her low call alone drives scouts back. When the call coincides with the wall's trap sections, iron fragments pour down all at once. When rising water and evacuation leftovers coincide, the heir fills the southern stairs with a single column.",
         "ko": "낮은 울음만으로 정찰조를 물리는 밤이 있다. 울음이 벽의 함정 칸과 맞물리면 철편이 한꺼번에 쏟아지고, 수위와 피난 잔반이 겹친 시각에는 후계자가 남부 계단을 한 줄로 메운다."
       }
     },
@@ -4013,6 +4817,7 @@
       "anchor": "전투대응-15",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -4020,6 +4825,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-15-p1",
       "text": {
+        "en": "Even as floodwater begins to engulf the sluice stairs, the heir's low call keeps the family groups in one column. Scouts set a frequency shield at the seam where the storage wall meets her back armor. If the shield covers the seam, the mass of heat signatures splits into family groups; if it misses, the evacuation line encounters hooves on the same stairs.",
         "ko": "홍수위가 수문 계단을 삼키기 시작하는데도 후계자의 낮은 울음이 가족군을 한 열로 붙든다. 정찰조가 저장벽과 등갑이 맞닿는 이음에 주파수 가림판을 세운다. 가림판이 이음을 덮으면 열원 덩어리가 가족 단위로 갈라지고, 빗나가면 피난 행렬이 같은 계단에서 발굽과 겹친다."
       }
     },
@@ -4028,6 +4834,7 @@
       "anchor": "협상도덕-선택-15",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -4035,6 +4842,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-15-p1",
       "text": {
+        "en": "Even after Hannuri marks a single large heat source, human scouts can move that marker to distinguish the family groups from solitary males. On a night when G01-SC3's evacuation window overlaps, moving the marker delays the heir's muster and briefly clears the stairs. Trusting the marker as it stands lets the groups take their places first, following the smell of leftovers. The last row of the line heading toward Imjin bears the burden of the postponed evacuation order.",
         "ko": "한누리가 큰 열원 하나로 표시한 뒤에도 사람 정찰조가 그 표시를 밀어 가족군과 단독 수컷을 나눌 수 있다. G01-SC3의 피난 시간이 겹치는 밤에는 표시를 밀면 후계자의 소집이 늦어져 계단이 잠시 비고, 표시를 그대로 믿으면 잔반 냄새를 따라 무리가 먼저 자리를 잡는다. 미룬 대피 순번은 임진 쪽 행렬의 맨 뒷줄이 떠안는다."
       }
     },
@@ -4043,6 +4851,7 @@
       "anchor": "시나리오-연결-15",
       "depth": 3,
       "text": {
+        "en": "Scenario Connections",
         "ko": "시나리오 연결"
       }
     },
@@ -4050,6 +4859,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-15-p1",
       "text": {
+        "en": "The G01-SC3 flood line follows the same timetable as the heir's mustering call. The first hoofprints of G01-SC1 and the cost of salt in G01-SC2 form the earlier part of the departure rules this body inherited.",
         "ko": "G01-SC3의 범람선이 후계자의 소집 울음과 같은 시각표를 쓴다. G01-SC1의 첫 발굽과 G01-SC2의 염분 값은 이 몸이 물려받은 출발 규칙의 앞부분이다."
       }
     },
@@ -4057,6 +4867,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-15-p2",
       "text": {
+        "en": "<a id=\"g01e16\"></a>",
         "ko": "<a id=\"g01e16\"></a>"
       }
     },
@@ -4065,6 +4876,7 @@
       "anchor": "g01e16-범람멧돼지-변종-북한산철갑",
       "depth": 3,
       "text": {
+        "en": "G01E16 · Flood Boar Variant 'Bukhansan Ironplate'",
         "ko": "G01E16 · 범람멧돼지 변종 '북한산철갑'"
       }
     },
@@ -4073,12 +4885,15 @@
       "anchor": "g01e16-범람멧돼지-변종-북한산철갑-list1",
       "items": [
         {
+          "en": "Source batch: M002",
           "ko": "출처 배치: M002"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G01-SC1\"]}",
           "ko": "연결: {\"scenarios\":[\"G01-SC1\"]}"
         }
       ]
@@ -4088,42 +4903,52 @@
       "anchor": "g01e16-범람멧돼지-변종-북한산철갑-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Common species",
             "ko": "공통종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Camouflaged Blockade",
             "ko": "위장 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The variant 'Bukhansan Ironplate' belongs to an upstream family with ridge moss growing on its back. It responds only faintly to the Great King's call, and its own sow initiates movement along the hiking trail.",
             "ko": "변종 '북한산철갑'은 능선 이끼를 등판에 심은 상류 가족이다. 대왕 울음에는 약하게만 답하고 자체 모돈이 탐방로 이동을 연다."
           }
         ]
@@ -4134,6 +4959,7 @@
       "anchor": "역할신체-16",
       "depth": 3,
       "text": {
+        "en": "Role and Body",
         "ko": "역할·신체"
       }
     },
@@ -4141,6 +4967,7 @@
       "kind": "paragraph",
       "anchor": "역할신체-16-p1",
       "text": {
+        "en": "Adapted to the foot of Bukhansan and the Anyangcheon corridor, this body's armor has moss and grass growing in its gaps, matching the color of the slope. It moves between an abandoned rail embankment and the wetland, rising from the grassy shade to cut off the hiking trail.",
         "ko": "북한산 기슭과 안양천 회랑에 적응한 몸은 철갑 틈에 이끼와 풀이 붙어 경사지 색과 같다. 폐선 둑과 습지 사이를 오가며 풀 그늘에서 일어나 탐방로를 끊는다."
       }
     },
@@ -4149,6 +4976,7 @@
       "anchor": "기원-16",
       "depth": 3,
       "text": {
+        "en": "Origin",
         "ko": "기원"
       }
     },
@@ -4156,6 +4984,7 @@
       "kind": "paragraph",
       "anchor": "기원-16-p1",
       "text": {
+        "en": "During the G01-SC1 flood, some families were pushed upstream and rooted plant fibers in their backs. They lived to a different rhythm from the downstream storage wall, but in drought they descend toward the sluice again, swelling the main group.",
         "ko": "G01-SC1 홍수 때 일부 가족이 상류로 밀려 식물 섬유를 등판에 심었다. 하류 저장벽과 다른 리듬으로 살다가, 가뭄이 오면 다시 수문 쪽으로 내려가 본대를 두껍게 만든다."
       }
     },
@@ -4164,6 +4993,7 @@
       "anchor": "서식-16",
       "depth": 3,
       "text": {
+        "en": "Habitat",
         "ko": "서식"
       }
     },
@@ -4171,6 +5001,7 @@
       "kind": "paragraph",
       "anchor": "서식-16-p1",
       "text": {
+        "en": "By day, they cling to ridge wetlands and areas around abandoned railroad ties, sustaining daytime activity through photosynthesis. By the end of the dry season, they must move along Anyangcheon in search of downstream salt.",
         "ko": "능선 습지와 폐침목 주변에 낮에는 붙어 있고 광합성으로 낮 활동을 버틴다. 건기 말에는 안양천을 따라 하류 염분을 찾아 이동이 필수가 된다."
       }
     },
@@ -4179,6 +5010,7 @@
       "anchor": "필요경제-16",
       "depth": 3,
       "text": {
+        "en": "Needs and Economy",
         "ko": "필요·경제"
       }
     },
@@ -4186,6 +5018,7 @@
       "kind": "paragraph",
       "anchor": "필요경제-16-p1",
       "text": {
+        "en": "Sugars produced by the moss supplement their diet of decaying matter. When drought scorches the moss, the variant families stop transporting supplies and the downstream storehouse thins out as well.",
         "ko": "부패물 외에 이끼가 만드는 당분이 보조 식량이 된다. 가뭄에 이끼가 타면 변종 가족의 운반이 멈추고 하류 저장고도 얇아진다."
       }
     },
@@ -4194,6 +5027,7 @@
       "anchor": "생애정비-16",
       "depth": 3,
       "text": {
+        "en": "Life Cycle and Maintenance",
         "ko": "생애·정비"
       }
     },
@@ -4201,6 +5035,7 @@
       "kind": "paragraph",
       "anchor": "생애정비-16-p1",
       "text": {
+        "en": "Symbiotic plants cover scraped armor and aid its regeneration. If polluted water reaches the ridge, the moss dies, exposing their backs and breaking their camouflage.",
         "ko": "공생 식물이 긁힌 철갑을 덮어 재생을 돕는다. 오염수가 능선에 오르면 이끼가 죽어 등판이 드러나고 위장이 깨진다."
       }
     },
@@ -4209,6 +5044,7 @@
       "anchor": "행동위계-16",
       "depth": 3,
       "text": {
+        "en": "Behavior and Hierarchy",
         "ko": "행동·위계"
       }
     },
@@ -4216,6 +5052,7 @@
       "kind": "paragraph",
       "anchor": "행동위계-16-p1",
       "text": {
+        "en": "On the ridge, their own sow initiates movement, and they respond only faintly to the Great King's call. Only on nights when they descend downstream do they exchange information through the wall's vibrations.",
         "ko": "능선 안에서는 자체 모돈이 이동을 열고 대왕의 울음에는 약하게만 답한다. 하류로 내려간 밤에만 벽의 떨림과 정보를 섞는다."
       }
     },
@@ -4224,6 +5061,7 @@
       "anchor": "단계적-위협-16",
       "depth": 3,
       "text": {
+        "en": "Escalating Threat",
         "ko": "단계적 위협"
       }
     },
@@ -4231,6 +5069,7 @@
       "kind": "paragraph",
       "anchor": "단계적-위협-16-p1",
       "text": {
+        "en": "A body rising from the mossy shade blocks the hiking trail in one movement. Within the same week, plant sap mixes with valley water and changes the smell at the water intake. If the family joins the downstream group, nighttime hoofprints on the sluice stairs contain bits of ridge moss as well.",
         "ko": "이끼 그늘에서 일어난 몸이 탐방로를 한 번에 가로막는다. 같은 주 안에 식물 즙이 계곡물에 섞여 취수 냄새를 바꾸고, 가족이 하류로 합류하면 수문 계단의 야간 발굽이 능선 이끼 조각까지 섞여 찍힌다."
       }
     },
@@ -4239,6 +5078,7 @@
       "anchor": "전투대응-16",
       "depth": 3,
       "text": {
+        "en": "Combat and Response",
         "ko": "전투·대응"
       }
     },
@@ -4246,6 +5086,7 @@
       "kind": "paragraph",
       "anchor": "전투대응-16-p1",
       "text": {
+        "en": "A back with scorched moss is already exposed like a mass of iron before its owner descends downstream. A hiking-trail ranger applies solvent only to the symbiotic seams. If the treated area extends beyond the ridge, the variant family descends along Anyangcheon and adds a layer to the storage wall outside the sluice.",
         "ko": "이끼가 타 버린 등판은 하류로 내려가기 전에 이미 쇳덩이처럼 드러난다. 등산로 관리원이 공생 이음에만 용매를 적신다. 적시는 폭이 능선을 넘으면 변종 가족이 안양천을 따라 내려와 수문 밖 저장벽을 한 겹 덧댄다."
       }
     },
@@ -4254,6 +5095,7 @@
       "anchor": "협상도덕-선택-16",
       "depth": 3,
       "text": {
+        "en": "Negotiation and Moral Choice",
         "ko": "협상·도덕 선택"
       }
     },
@@ -4261,6 +5103,7 @@
       "kind": "paragraph",
       "anchor": "협상도덕-선택-16-p1",
       "text": {
+        "en": "A quarantine strip marked once in spring remains in place into the following year unless one side breaks it. Keeping the strip leaves the Bukhansan hiking trail empty during the day; pushing it aside to allow the groups to join downstream adds the variant's camouflaged charge to the G01-SC3 flood line. The costs fall separately on weekend hikers on the ridge and the downstream pump's duty crew.",
         "ko": "봄에 한 번 적는 격리 띠는 어느 한쪽이 끊기 전까지 다음 해에 그대로 이어진다. 띠를 지키면 북한산 쪽 탐방로는 낮 동안 비고, 띠를 밀어 하류와 합류를 열면 G01-SC3의 범람선에서 변종의 위장 돌진이 더해진다. 비용을 지는 쪽은 능선 주말 탐방객과 하류 펌프 당직으로 갈린다."
       }
     },
@@ -4269,6 +5112,7 @@
       "anchor": "시나리오-연결-16",
       "depth": 3,
       "text": {
+        "en": "Scenario Connections",
         "ko": "시나리오 연결"
       }
     },
@@ -4276,6 +5120,7 @@
       "kind": "paragraph",
       "anchor": "시나리오-연결-16-p1",
       "text": {
+        "en": "The upstream evacuation of G01-SC1 is why this variant settled on the ridge. The salt drought of G01-SC2 and the converging flood of G01-SC3 hinge on whether the quarantine strip is maintained or broken.",
         "ko": "G01-SC1의 상류 대피는 이 변종이 능선에 자리 잡은 이유다. G01-SC2의 염분 가뭄과 G01-SC3의 합류 범람은 격리 띠의 유지와 파손으로 갈린다."
       }
     },
@@ -4284,6 +5129,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -4291,6 +5137,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "After the water of the western Han River split the embankment from the green axis, a different order of night settled on the wetland outside the Water Compact.",
         "ko": "한강 서부의 물이 제방과 녹지축을 갈라놓은 뒤, 급수계약정 급수계약정 바깥 습지에는 이전과 다른 밤의 질서가 자리 잡았다."
       }
     },
@@ -4298,6 +5145,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "Wild-boar family groups that came down the Bukhansan and Anyangcheon corridors crossed the broken green space of Yeouido and Yeongdeungpo and stayed at the scrap-recovery yards and the waste slopes, and they took the salt to last the winter from the pile of cooling waste sealed by the Yeouido Computing House (HC01).",
         "ko": "북한산과 안양천 회랑에서 내려온 멧돼지 가족군은 여의도와 영등포의 끊어진 녹지를 건너 음식물 회수장과 폐기물 경사지에 머물렀고, HC01 여의도전산가이 봉인한 냉각 폐기물 더미에서 겨울을 버틸 염분을 얻었다."
       }
     },
@@ -4305,6 +5153,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "Residents call them the Flood-Boar Swarm: the ones that come down after a flood as far as the semi-basement alleys and root through trash bags and shallow-rooted crops.",
         "ko": "주민들은 홍수 뒤 반지하 골목까지 내려와 쓰레기봉투와 얕은 뿌리 작물을 뒤지는 이들을 범람멧돼지군이라 부른다."
       }
     },
@@ -4312,6 +5161,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "Urban appearances, changes in food sources, and severed movement routes can be explained by real observation of wild animals, but the behavior of remembering the sealing hours and the sluice operating cycle and timing an approach to them, and the management relation with HC01, are a fictional order that holds only in this region after the collapse.",
         "ko": "도심 출몰과 먹이원 변화, 이동로 단절은 현실의 야생동물 관찰로 설명할 수 있지만 봉인 시각과 수문 운용 주기를 기억해 접근 시간을 맞추는 행동 HC01과의 관리 관계는 붕괴 이후 이 지역에서만 성립한 허구적 질서다."
       }
     },
@@ -4319,6 +5169,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "The territory of the Flood-Boar Swarm is set by a continuity of water level and smell rather than by a line drawn on a map.",
         "ko": "범람멧돼지군의 영토는 지도에 그은 선보다 물높이와 냄새의 연속으로 정해진다."
       }
     },
@@ -4326,6 +5177,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "The core habitat is the wetland and the waste slope outside the Water Compact sluice, and in the dry season and in winter they move along the cut green space toward the Republic of Korea Government at the center of Seoul Station, and along the axis of leftovers from the night markets.",
         "ko": "핵심 서식지는 급수계약정 수문 바깥 습지와 폐기물 경사지이며, 건기와 동절기에는 서울역 중앙 대한민국정부 방향의 잘린 녹지와 야간 시장 잔여물 축을 따라 움직인다."
       }
     },
@@ -4333,6 +5185,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "When a refugee column is pushed in from the Imjin River Gate Theater (XT01), the scrap traces left on the northwestern roads become a new corridor.",
         "ko": "XT01 임진강관문전구에서 피난 행렬이 밀려오면 북서쪽 도로에 남은 음식물 흔적이 새로운 회랑이 된다."
       }
     },
@@ -4340,6 +5193,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "When the flood level crosses the warning line, the lowland family groups climb the high-ground stairs all at once and overlap the human passage.",
         "ko": "홍수위가 경고선을 넘을 때는 저지대 가족군이 한꺼번에 고지대 계단으로 올라와 사람의 통행로와 겹친다."
       }
     },
@@ -4347,6 +5201,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "This movement is a choice that looks for food and dry ground together, not an advance meant to attack the city, but for semi-basement residents and sluice workers that difference is not easily felt.",
         "ko": "이 이동은 도시를 공격하려는 진군이 아니라 먹이와 마른 땅을 함께 찾는 선택이지만, 반지하 주민과 수문 노동자에게 그 차이는 쉽게 체감되지 않는다."
       }
     },
@@ -4354,6 +5209,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "The economy they depend on is made of organic scraps, salt, and shallow-rooted crops.",
         "ko": "이들이 기대는 경제는 유기 음식물, 염분 얕은 뿌리 작물로 구성된다."
       }
     },
@@ -4361,6 +5217,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "Soft plastic and pools of cooling water also become auxiliary resources, and the dung left after feeding feeds the wetland microbial film and the downstream vegetation and makes a feeding ground again.",
         "ko": "연질 플라스틱과 냉각수 웅덩이도 보조 자원이 되며, 섭식 뒤 남은 배설물은 습지 미생물막과 하류 식생을 먹여 다시 먹이터를 만든다."
       }
     },
@@ -4368,6 +5225,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "When HC01 delays the sealing of the recovery trough, family groups crowd one point, and when the seal is strengthened too far the band turns toward the household alleys.",
         "ko": "HC01이 회수조 봉인을 늦추면 한 지점에 가족군이 몰리고, 봉인을 지나치게 강화하면 무리는 가정 골목으로 돌아선다."
       }
     },
@@ -4375,6 +5233,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "Unsanctioned hunting for meat and hide leaves immediate food and trade goods, but it scatters the surviving individuals and distorts even the passage-safety record.",
         "ko": "고기와 가죽을 노리는 비공인 수렵은 즉각적인 식량과 거래품을 남기지만, 살아남은 개체를 흩뜨리고 통행 안전 기록까지 왜곡한다."
       }
     },
@@ -4382,6 +5241,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "In that a measure meant to protect the citizen ration can increase scrap raiding in the vulnerable alleys, the cost of this ecology always moves to someone else's door.",
         "ko": "시민 배급을 지키겠다는 조치가 취약한 골목의 음식물 약탈을 늘릴 수 있다는 점에서, 이 생태의 비용은 언제나 다른 사람의 문 앞으로 이동한다."
       }
     },
@@ -4389,6 +5249,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "Before the monsoon rains, each sow with young has a family group that scatters and checks the feeding grounds and the escape routes.",
         "ko": "장마 전에는 새끼를 둔 모돈마다 가족군이 흩어져 먹이터와 퇴로를 살핀다."
       }
     },
@@ -4396,6 +5257,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "Right after a flood they join the high-ground scrap axis for a while, but they do not become one giant band.",
         "ko": "범람 직후에는 고지대 음식물 축에 잠시 합류하지만 하나의 거대한 무리가 되는 것은 아니다."
       }
     },
@@ -4403,6 +5265,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "When an adult female starts the move, the subadults scout ahead, and a lone male does not follow that decision even when he uses the same feeding ground.",
         "ko": "성체 암컷이 이동을 시작하면 아성체가 앞쪽을 정찰하고, 단독 수컷은 같은 먹이터를 쓰더라도 그 결정을 따르지 않는다."
       }
     },
@@ -4410,6 +5273,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "When the central female disappears, the family group spends about 48 hours sweeping the same zone over and over along the scent of the young and the sow, and then scatters.",
         "ko": "중심 암컷이 사라지면 가족군은 약 48시간 동안 새끼와 모돈의 냄새를 따라 같은 구역을 반복해서 훑은 뒤 흩어진다."
       }
     },
@@ -4417,6 +5281,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "A family group splits only when the survival rate of the young is high for two seasons in a row, and when the winter salt sources and the mud baths run short they choose long-distance movement over breeding.",
         "ko": "새끼 생존률이 두 계절 연속 높아야 가족군이 갈라지고, 겨울 염분원과 진흙 목욕터가 부족하면 번식보다 장거리 이동을 택한다."
       }
     },
@@ -4424,6 +5289,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "The positions of fences and the sealing hours of the moment can be learned, but that is not at once a long-term change of the body.",
         "ko": "당장의 울타리 위치와 봉인 시각은 학습할 수 있지만 그것이 곧 몸의 장기적 변화는 아니다."
       }
     },
@@ -4431,6 +5297,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "Across many generations nocturnal activity and avoidance of people can remain, and heavy capture removes the bold individuals first and produces the reverse effect of leaving only the more secretive line.",
         "ko": "여러 세대 동안 야간 활동성과 사람 회피성이 남을 수 있으며, 강한 포획은 대담한 개체부터 없애 더 은밀한 계통만 남기는 역효과를 낳는다."
       }
     },
@@ -4438,6 +5305,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "But the more secretive they become, the longer the time spent finding food grows, and the growth of the young slows as well.",
         "ko": "다만 은밀해질수록 먹이를 찾는 시간이 길어져 새끼의 성장도 느려진다."
       }
     },
@@ -4445,6 +5313,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "The Flood-Boar Swarm reads, through hooves and ground, the low-frequency vibration of sluice opening and closing and of vehicle generators, and judges by layering the smells of scraps, people, and disinfectant.",
         "ko": "범람멧돼지군은 발굽과 땅을 통해 수문 개폐, 차량 발전기의 저주파 진동을 읽고 음식물과 사람 소독약 냄새를 겹쳐 판단한다."
       }
     },
@@ -4452,6 +5321,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "At close range they also react to warmth carried on the wind and to the flow of air, but they cannot divide a distant heat source accurately or make out the meaning of electronic noise.",
         "ko": "가까운 거리에서는 바람에 실린 온기와 공기 흐름에도 반응하지만 먼 열원을 정확히 나누거나 전자 잡음의 뜻을 알아내지는 못한다."
       }
     },
@@ -4459,6 +5329,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "Hannuri (H01) only compares and marks the infrared masses that look like people, generators, and family groups, and is not the final judge.",
         "ko": "H01 한누리는 사람과 발전기, 가족군으로 보이는 적외선 덩어리를 비교해 표시할 뿐 최종 판정자가 아니다."
       }
     },
@@ -4466,6 +5337,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "When rain, wind, and cooling fog are heavy, the thermal image smears and a lone male and a subadult look like one cluster, so a human scout party has to confirm the escape route and the traces of the young first.",
         "ko": "비바람과 냉각 안개가 심하면 열상이 번지. 단독 수컷과 아성체가 하나의 군집처럼 보이므로, 사람 정찰조가 먼저 퇴로와 새끼 흔적을 확인해야 한다."
       }
     },
@@ -4473,6 +5345,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "If the family group is mistaken for a single hostile body and the central female is removed, two days of searching behavior that is hard to predict remain in the place of the order that vanished.",
         "ko": "가족군을 하나의 적대 집단으로 오인해 중심 암컷을 제거하면 사라진 질서의 자리에 이틀 동안 예측하기 어려운 탐색 행동이 남는다."
       }
     },
@@ -4480,6 +5353,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p28",
       "text": {
+        "en": "The crisis grows in three stages.",
         "ko": "위기는 세 단계로 커진다."
       }
     },
@@ -4487,6 +5361,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p29",
       "text": {
+        "en": "At first only the night tracks increase at the collection yard outside the sluice and on the unsanctioned fields, and contact with people is rare.",
         "ko": "처음에는 수문 바깥 집하장과 무단 경작지에 야간 발자국만 늘고 사람과의 접촉은 드물다."
       }
     },
@@ -4494,6 +5369,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p30",
       "text": {
+        "en": "Next the drains, the sealing tape, and the water-supply inspection passages are damaged, and scrap convoys and sluice maintenance are delayed.",
         "ko": "다음에는 배수로, 봉인 테이프 급수 점검 통로가 파손되어 음식물 호송과 수문 정비가 지연된다."
       }
     },
@@ -4501,6 +5377,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p31",
       "text": {
+        "en": "At the last, the flood level and the refugees' leftovers overlap and the family groups take the sluice stairs.",
         "ko": "마지막에는 홍수위와 피난민 잔반이 겹쳐 가족군이 수문 계단을 차지한다."
       }
     },
@@ -4508,6 +5385,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p32",
       "text": {
+        "en": "Noise screens and flares can turn back the leading scout individuals for a while, but against the main body a feeding detour, a relocated salt pool, and path fencing are more effective.",
         "ko": "소음 차단막과 섬광은 앞선 정찰 개체를 잠시 물릴 수 있으나 본대에는 먹이 우회로, 옮겨 놓은 염분 웅덩이 경로 펜스가 더 효과적이다."
       }
     },
@@ -4515,6 +5393,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p33",
       "text": {
+        "en": "Removal led by firearms scatters the family groups into every alley and increases harm to citizens, so it remains only as a last resort.",
         "ko": "총기를 앞세운 제거는 가족군을 골목마다 흩어 시민 피해를 키우므로 최후 수단으로만 남는다."
       }
     },
@@ -4522,6 +5401,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p34",
       "text": {
+        "en": "The result of a response is judged not by the number of carcasses but by the number of intrusions into the collection yard, the time until passage resumes, and the decrease in alley damage.",
         "ko": "대응의 성과는 사체 수가 아니라 집하장 침입 횟수, 통행 재개 시간 골목 피해의 감소로 판단한다."
       }
     },
@@ -4529,6 +5409,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p35",
       "text": {
+        "en": "G01-SC1, \"The First Hoof Outside the Sluice,\" begins the day before the monsoon forecast, when sow and young tracks appear at the Water Compact collection yard.",
         "ko": "G01-SC1 ‘수문 밖 첫 발굽’은 장마 예보 전날 급수계약정 집하장에 모돈과 새끼 발자국이 나타나면서 시작된다."
       }
     },
@@ -4536,6 +5417,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p36",
       "text": {
+        "en": "The family group remembers the sealing hours and approaches in the gap when the sluice vibration stops.",
         "ko": "가족군은 봉인 시각을 기억하고 수문 진동이 멎는 틈에 접근한다."
       }
     },
@@ -4543,6 +5425,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p37",
       "text": {
+        "en": "The Water Compact and HC01 can delay night operation and avoid contact, but the citizen ration is delayed along with it.",
         "ko": "급수계약정과 HC01은 야간 운영을 늦춰 접촉을 피할 수 있지만 시민 배급도 함께 늦어진다."
       }
     },
@@ -4550,6 +5433,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p38",
       "text": {
+        "en": "Opening a wetland detour with a scent lure costs labor and resources at once, but it can build a long-term movement axis.",
         "ko": "냄새 미끼로 습지 우회로를 열면 당장의 노동과 자원이 들더라도 장기 이동축을 만들 수 있다."
       }
     },
@@ -4557,6 +5441,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p39",
       "text": {
+        "en": "The choice of capturing only the sow looks the fastest, but it makes H01 record, for the 48 hours after, a heat source that approaches again and again looking for the young.",
         "ko": "모돈만 포획하는 선택은 가장 빠르게 보이지만 H01이 이후 48시간 동안 새끼를 찾아 반복 접근하는 열원을 기록하게 된다."
       }
     },
@@ -4564,6 +5449,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p40",
       "text": {
+        "en": "The judgment at that point is the work of putting people's mealtimes and the survival time of a family group with young on the same table.",
         "ko": "이때의 판단은 사람의 식사 시간과 새끼가 딸린 가족군의 생존 시간을 같은 표 위에 올리는 일이다."
       }
     },
@@ -4571,6 +5457,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p41",
       "text": {
+        "en": "In G01-SC2, \"The Price of the Salt Pool,\" after HC01 brings the cooling-waste recovery forward, the band shifts its feeding ground to the semi-basement alleys toward the center of Seoul Station.",
         "ko": "G01-SC2 ‘염분 웅덩이의 값’에서는 HC01이 냉각 폐기물 회수를 앞당긴 뒤 무리가 서울역 중앙 방향 반지하 골목으로 먹이터를 바꾼다."
       }
     },
@@ -4578,6 +5465,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p42",
       "text": {
+        "en": "It comes out that removing the salt source does not make the family groups disappear; it pushes them into a more dangerous lived-in quarter.",
         "ko": "염분원을 없앤다고 가족군이 사라지는 것이 아니라 더 위험한 생활권으로 밀려난다는 사실이 드러난다."
       }
     },
@@ -4585,6 +5473,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p43",
       "text": {
+        "en": "Leaving a managed pool in the wetland means accepting a continuing cost of watch in exchange for holding the danger in one place.",
         "ko": "관리된 웅덩이를 습지에 남기면 위험을 한곳에 붙들어 두는 대신 지속적인 감시 비용을 받아들여야 한다."
       }
     },
@@ -4592,6 +5481,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p44",
       "text": {
+        "en": "Prioritizing alley scrap recovery reduces harm to residents, but other ration and maintenance labor is emptied.",
         "ko": "골목 음식물 회수를 우선하면 주민 피해는 줄지만 다른 배급과 정비 노동이 비게 된다."
       }
     },
@@ -4599,6 +5489,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p45",
       "text": {
+        "en": "Lowering the density with a hunting permit makes the short-term result clear, but it strengthens the surviving individuals' learned avoidance of people and their night intrusions.",
         "ko": "수렵 허가로 밀도를 낮추면 단기 성과는 선명해도 살아남은 개체의 사람 회피 학습과 야간 침입이 강화된다."
       }
     },
@@ -4606,6 +5497,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p46",
       "text": {
+        "en": "Whatever the choice, there is no avoiding the responsibility for whether to leave a controlled danger in a safe zone or to pass the burden on to a vulnerable zone that is less visible.",
         "ko": "어느 선택이든 안전한 구역에 통제된 위험을 남길지, 눈에 덜 띄는 취약 구역으로 부담을 넘길지에 대한 책임을 피할 수 없다."
       }
     },
@@ -4613,6 +5505,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p47",
       "text": {
+        "en": "G01-SC3, \"Right of Passage on the Flood Line,\" opens when the leftovers of the XT01 refugee column and the risen flood level gather people and family groups on the same sluice stairs.",
         "ko": "G01-SC3 ‘범람선의 통행권’은 XT01 피난 행렬의 잔반과 상승한 홍수위가 같은 수문 계단에 사람과 가족군을 모으면서 벌어진다."
       }
     },
@@ -4620,6 +5513,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p48",
       "text": {
+        "en": "Splitting the evacuation times reduces direct collision, but the people in the later turns have to endure water and darkness longer.",
         "ko": "피난 시간을 나누면 직접 충돌은 줄지만 늦은 차례의 사람들이 물과 어둠을 더 오래 견뎌야 한다."
       }
     },
@@ -4627,6 +5521,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p49",
       "text": {
+        "en": "Turning the leftover convoy into a lure corridor can draw the band toward the wetland, but it consumes HC01's transport resources and sealed containers.",
         "ko": "잔반 호송을 미끼 회랑으로 돌리면 무리를 습지 쪽으로 유도할 수 있으나 HC01의 운송 자원과 봉인 용기를 소모한다."
       }
     },
@@ -4634,6 +5529,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p50",
       "text": {
+        "en": "Opening the sluice first to make a short high water may induce the move quickly, but it can flood the downstream works preemptively.",
         "ko": "수문을 먼저 열어 짧은 고수위를 만들면 이동을 빠르게 유도할 가능성이 있지만 하류 작업장을 선제적으로 침수시킬 수 있다."
       }
     },
@@ -4641,6 +5537,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p51",
       "text": {
+        "en": "So the agreement that HC01 mediates binds together the scrap sealing hours, the night passage window, the cultivation buffer strip, and a separate recovery of the XT01 leftovers.",
         "ko": "그래서 HC01이 중개하는 합의는 음식물 봉인 시각, 야간 통행 창 경작 완충 띠 XT01 잔반의 별도 회수를 함께 묶는다."
       }
     },
@@ -4648,6 +5545,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p52",
       "text": {
+        "en": "Extermination is not the goal, and choosing coexistence does not make the threat reports disappear completely.",
         "ko": "전멸은 목표가 아니며 공존을 택하면 위협 신고가 완전히 사라지지 않는다."
       }
     },
@@ -4655,6 +5553,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p53",
       "text": {
+        "en": "In their place, wetland purification, downstream vegetation, and the sluice workers' movement lines can be kept.",
         "ko": "그 대신 습지 정화와 하류 식생, 수문 노동 동선을 유지할 수 있다."
       }
     },
@@ -4662,6 +5561,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p54",
       "text": {
+        "en": "Negotiation with the Flood-Boar Swarm is close to a contract that limits human desire and convenience so the two timetables do not overlap, not a promise that tames the wild.",
         "ko": "범람멧돼지군과의 협상은 야생을 길들이는 약속이 아니라 서로의 시간표가 겹치지 않도록 인간 쪽의 욕망과 편의를 제한하는 계약에 가깝다."
       }
     },
@@ -4669,6 +5569,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p55",
       "text": {
+        "en": "Long-term management depends on a joint patrol in which S01, HC01, and the semi-basement residents reset the boundary between food and passage every season.",
         "ko": "장기 관리는 S01, HC01 반지하 주민이 계절마다 먹이와 통행의 경계를 다시 정하는 공동 순찰에 달려 있다."
       }
     },
@@ -4676,6 +5577,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p56",
       "text": {
+        "en": "Before the monsoon rains they record the tracks by sow and the mud baths without markers, and after a flood they adjust the hours of night scrap discharge and the position of the managed salt pools so the family groups do not lose the escape route they know.",
         "ko": "장마 전에는 모돈별 발자국과 진흙 목욕터를 표식 없이 기록하고, 범람 뒤에는 야간 음식물 배출 시각과 관리된 염분 웅덩이의 위치를 조정해 가족군이 익숙한 퇴로를 잃지 않게 한다."
       }
     },
@@ -4683,6 +5585,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p57",
       "text": {
+        "en": "The core indicators are the number of alley intrusions per hundred nights, the time taken to clear the sluice stairs, the share of traces accompanied by young, the area of rooted-up ground, and the human encounter distance by corridor, and the number of carcasses is kept only as an auxiliary record.",
         "ko": "핵심 지표는 백 야간당 골목 침입 횟수, 수문 계단을 비우는 데 걸린 시간 새끼 동반 흔적의 비율 뿌리 파헤침 면적 회랑별 사람 조우 거리이며 사체 수는 보조 기록에만 둔다."
       }
     },
@@ -4690,6 +5593,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p58",
       "text": {
+        "en": "Even if intrusions fall, when the traces of the young drop sharply or the encounter distance shortens, it is judged not as stability but as capture pressure and a shortage of food.",
         "ko": "침입이 줄어도 새끼 흔적이 급감하거나 조우 거리가 짧아지면 안정이 아니라 포획 압력과 먹이 부족으로 판단한다."
       }
     },
@@ -4697,6 +5601,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p59",
       "text": {
+        "en": "When a collapsed fence or a mistaken capture has scattered the family groups, pursuit and night collection stop for 48 hours, water and salt are placed in a dispersed pattern in the direction where the old dung and tracks remain, and then the passage window is restored in stages.",
         "ko": "울타리 붕괴나 잘못된 포획으로 가족군이 흩어졌을 때는 48시간 동안 추격과 야간 수거를 멈추고, 기존 배설물과 발자국이 남은 방향에 물과 염분을 분산 배치한 뒤 통행 창을 단계적으로 복원한다."
       }
     },
@@ -4704,6 +5609,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p60",
       "text": {
+        "en": "Whether recovery has happened is confirmed not by the return of the central female but by whether the young pass the same corridor two times in a row and the alley re-intrusions decrease.",
         "ko": "회복 여부는 중심 암컷의 귀환보다 새끼가 같은 회랑을 두 차례 연속 통과하고 골목 재침입이 감소하는지로 확인한다."
       }
     },
@@ -4711,6 +5617,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p61",
       "text": {
+        "en": "If this procedure is kept for a long time, residents too come to put scraps out at the set hour, which can reduce the rats' food source and the damage to underground wiring.",
         "ko": "이 절차가 오래 유지되면 주민도 음식물을 정해진 시간에 내놓게 되어 쥐의 먹이원이 줄고 지하 배선 훼손이 감소할 수 있다."
       }
     },
@@ -4718,6 +5625,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p62",
       "text": {
+        "en": "But if hoof disturbance concentrates on a predictable corridor, the reed belt thins and the floating trash of the next flood is driven faster into the sluice intake, a second cost, so even a safe coexistence zone has to be rested every few years and the detour wetlands opened in turn.",
         "ko": "다만 예측 가능한 회랑에 발굽 교란이 집중되면 갈대 띠가 얇아져 다음 홍수의 부유 쓰레기가 수문 취수구로 더 빨리 몰리는 이차 비용이 생기므로, 안전한 공존 구역도 몇 해마다 쉬게 하. 우회 습지를 번갈아 열어야 한다."
       }
     },
@@ -4726,6 +5634,7 @@
       "anchor": "연결-시나리오",
       "depth": 2,
       "text": {
+        "en": "Linked Scenarios",
         "ko": "연결 시나리오"
       }
     },
@@ -4734,6 +5643,7 @@
       "anchor": "g01-sc1-수문-밖-첫-발굽",
       "depth": 3,
       "text": {
+        "en": "G01-SC1 · The First Hoof Outside the Sluice",
         "ko": "G01-SC1 · 수문 밖 첫 발굽"
       }
     },
@@ -4742,27 +5652,35 @@
       "anchor": "g01-sc1-수문-밖-첫-발굽-list1",
       "items": [
         {
+          "en": "Stage: 1",
           "ko": "단계: 1"
         },
         {
+          "en": "Trigger: The day before the monsoon forecast, sow and young tracks appear at the Water Compact collection yard.",
           "ko": "촉발: 장마 예보 전날 급수계약정 집하장에 모돈과 새끼 발자국이 나타난다."
         },
         {
+          "en": "Related powers: S01, HC01, H01",
           "ko": "관련 세력: S01, HC01, H01"
         },
         {
+          "en": "Ecological mechanism: A family group that has remembered the sealing hours approaches in the gap when the sluice vibration stops.",
           "ko": "생태 기제: 봉인 시각을 기억한 가족군이 수문 진동이 멎는 틈에 접근한다."
         },
         {
+          "en": "Choices: Delay the collection yard's night operation / Open a wetland detour with a scent lure / Capture only the sow",
           "ko": "선택지: 집하장 야간 운영을 늦춘다 / 냄새 미끼로 습지 우회로를 연다 / 모돈만 포획한다"
         },
         {
+          "en": "Outcome: The operating delay slows the ration, and the detour builds a long-term movement axis. Capturing the sow triggers 48 hours of searching behavior.",
           "ko": "결과: 운영 지연은 배급을 늦추고, 우회로는 장기 이동축을 만든다. 모돈 포획은 48시간 탐색 행동을 촉발한다."
         },
         {
+          "en": "Moral cost: The citizen ration and the survival of a family group with young are weighed on the same timetable.",
           "ko": "도덕 비용: 시민 배급과 새끼가 있는 가족군의 생존을 같은 시간표에서 저울질한다."
         },
         {
+          "en": "Source item: G01",
           "ko": "원본 항목: G01"
         }
       ]
@@ -4772,6 +5690,7 @@
       "anchor": "g01-sc2-염분-웅덩이의-값",
       "depth": 3,
       "text": {
+        "en": "G01-SC2 · The Price of the Salt Pool",
         "ko": "G01-SC2 · 염분 웅덩이의 값"
       }
     },
@@ -4780,27 +5699,35 @@
       "anchor": "g01-sc2-염분-웅덩이의-값-list1",
       "items": [
         {
+          "en": "Stage: 2",
           "ko": "단계: 2"
         },
         {
+          "en": "Trigger: When HC01 brings the cooling-waste recovery forward, the band shifts its feeding ground to the semi-basement alleys.",
           "ko": "촉발: HC01이 냉각 폐기물 회수를 앞당기자 무리가 반지하 골목으로 먹이터를 바꾼다."
         },
         {
+          "en": "Related powers: S01, S06, HC01",
           "ko": "관련 세력: S01, S06, HC01"
         },
         {
+          "en": "Ecological mechanism: Removing the salt source does not disperse the family groups; it pushes them into the more dangerous feeding grounds of the lived-in quarter.",
           "ko": "생태 기제: 염분원 제거가 가족군을 분산시키지 않고 더 위험한 생활권 먹이터로 밀어낸다."
         },
         {
+          "en": "Choices: Leave a managed salt pool / Prioritize alley scrap recovery / Lower the density with a hunting permit",
           "ko": "선택지: 관리된 염분 웅덩이를 남긴다 / 골목 음식물 회수를 우선한다 / 수렵 허가로 밀도를 낮춘다"
         },
         {
+          "en": "Outcome: The pool fixes the cost of coexistence, and prioritizing recovery takes labor away from other rations. Hunting strengthens the remaining individuals' learned avoidance of people.",
           "ko": "결과: 웅덩이는 공존 비용을 고정하고, 회수 우선은 다른 배급 노동을 빼앗는다. 수렵은 잔여 개체의 사람 회피 학습을 강화한다."
         },
         {
+          "en": "Moral cost: Decide whether to keep the danger inside a safe zone and manage it, or to pass the danger on to a vulnerable alley.",
           "ko": "도덕 비용: 안전한 구역에 위험을 남겨 관리할지, 취약 골목으로 위험을 전가할지 결정한다."
         },
         {
+          "en": "Source item: G01",
           "ko": "원본 항목: G01"
         }
       ]
@@ -4810,6 +5737,7 @@
       "anchor": "g01-sc3-범람선의-통행권",
       "depth": 3,
       "text": {
+        "en": "G01-SC3 · Right of Passage on the Flood Line",
         "ko": "G01-SC3 · 범람선의 통행권"
       }
     },
@@ -4818,27 +5746,35 @@
       "anchor": "g01-sc3-범람선의-통행권-list1",
       "items": [
         {
+          "en": "Stage: 3",
           "ko": "단계: 3"
         },
         {
+          "en": "Trigger: The leftovers of the XT01 refugee column overlap the rising flood level, and the band occupies the sluice stairs.",
           "ko": "촉발: XT01 피난 행렬의 잔반과 홍수위 상승이 겹쳐 무리가 수문 계단을 점거한다."
         },
         {
+          "en": "Related powers: S01, S06, XT01, HC01, H01",
           "ko": "관련 세력: S01, S06, XT01, HC01, H01"
         },
         {
+          "en": "Ecological mechanism: The instinct to move to high ground and the scrap traces of the refugees concentrate the band on the same passage.",
           "ko": "생태 기제: 고지대 이동 본능과 피난민 음식물 흔적이 같은 통로에 무리를 집중시킨다."
         },
         {
+          "en": "Choices: Split the evacuation times / Turn the leftover convoy into a lure corridor / Open the sluice first and use a short high water to induce the band to move",
           "ko": "선택지: 피난 시간을 분할한다 / 잔반 호송을 미끼 회랑으로 돌린다 / 수문을 먼저 열어 짧은 고수위로 무리 이동을 유도한다"
         },
         {
+          "en": "Outcome: Splitting the times slows the evacuation, and the lure corridor consumes HC01 resources. Opening the sluice early is fast, but it can flood the downstream works first.",
           "ko": "결과: 시간 분할은 대피를 늦추고, 미끼 회랑은 HC01 자원을 소모한다. 조기 수문 개방은 빠르지만 하류 작업장을 먼저 침수시킬 수 있다."
         },
         {
+          "en": "Moral cost: The fastest human evacuation and the long-term ecological stability of the sluice collide with each other.",
           "ko": "도덕 비용: 가장 빠른 인간 대피와 장기적인 수문 생태 안정이 서로 충돌한다."
         },
         {
+          "en": "Source item: G01",
           "ko": "원본 항목: G01"
         }
       ]

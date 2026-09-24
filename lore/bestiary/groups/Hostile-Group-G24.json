@@ -5,6 +5,7 @@
   "slug": "hostile-group-g24",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G24 · Medical-Tissue Machine Swarm",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G24 · 의료조직기계군",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g24-의료조직기계군",
       "depth": 1,
       "text": {
+        "en": "G24 · Medical-Tissue Machine Swarm",
         "ko": "G24 · 의료조직기계군"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g24-의료조직기계군-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "The first signs usually appeared not as biological movement but as facility anomalies. A steady pulsation sounded in suction tubes that should have been empty, the membrane of a decommissioned perfusion cassette slowly swelled, and the water level of floor drain traps rose and fell in time with pump starts. Wet tissue fragments set no direction of their own, but they blocked valve gaps or bridged electrodes and changed the machines' judgment conditions.",
         "ko": "최초 징후는 대개 생물학적 움직임이 아니라 설비 이상으로 나타난다. 비어 있어야 할 흡인관에서 일정한 맥동이 들리고, 사용 중지된 관류 카세트의 막이 천천히 부풀며 바닥 배수 트랩의 수위가 펌프 기동과 맞추어 오르내린다. 젖은 조직편은 스스로 방향을 정하지 않지만 밸브 틈을 막거나 전극 사이를 이어 기계적 판단 조건을 바꾼다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The Medical-Tissue Machine Swarm's common ecology responded passively to facility surfaces and the local environment. The G24E identifiers marked biomechanical variants whose movement and work functions had differentiated within that environment; they were not treated as one individual with the common film or the whole installation.",
         "ko": "의료조직기계군의 공통 생태는 시설 표면과 국소 환경에 수동적으로 반응한다. G24E 식별자는 그 환경에서 이동·작업 기능이 분화된 생체기계 변이를 가리키며, 공통 막이나 설비 전체와 같은 개체로 취급하지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "In a closed medical facility, disposable suction tubes, perfusion-cassette pressure-sensor membranes, suture aids, wash fluid, and unidentified tissue fragments were left together in the piping. / Repeated outages and restorations misjoined the wash, pressurize, perfusion, drain, and preservation circuits, and wet tissue filled the space between valves and electrodes until a facility-scale residual-treatment structure formed. / It is a fictional setting unrelated to any real medical institution, product, or maker. / Unlike individual implants and leftover devices that remain after a custom treatment stops, this item is an aggregate structure left in facility piping and in the wash and perfusion circuits.",
             "ko": "폐쇄된 의료시설에서 일회용 흡인관, 관류 카세트 압력 센서막 봉합 보조구 세척액과 비식별 조직편이 배관 안에 함께 남았다. / 반복된 정전과 재급전으로 세척·가압·관류·배액·보존 회로가 잘못 이어졌고, 습윤 조직이 밸브와 전극 사이를 메우면서 시설 규모의 잔류 처치 구조가 형성되었다. / 현실의 의료기관·제품·제조사와 무관한 허구의 설정이다. / 맞춤 치료 중단 후 남는 개별 이식·잔여 장치와는 달리, 이 항목은 시설 배관과 세척·관류 회로에 남은 집합 구조다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "It could not move on its own. / Tissue fragments and residues were carried along the liquid flow into connecting pipes, drain traps, recovery baths, and cassettes, and the working range widened only when wet contacts, fluid couplings, and service rails were physically joined. / The existing travel routine of an automatic conveyor could also become a path of spread.",
             "ko": "독립적으로 이동하지 못한다. / 액체 흐름을 따라 연결 배관 배수 트랩 회수백과 카세트로 조직편과 잔류물이 운반되며 젖은 접점·유체 커플링·서비스 레일이 물리적으로 이어질 때만 작동 범위가 넓어진다. / 자동 운반대의 기존 이동 루틴도 확산 경로가 될 수 있다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "It consumed wash fluid and saline residue, residual pressure and gravity head, power for pumps, heaters, and valves, stored energy in cassette elastic membranes, pressure-sensor membranes and electrode contacts, and the capacity of recovery baths, filters, and drains. / Fluid and power went to wash, pressurize, perfusion, drain, and low-temperature preservation; blockage, saturated recovery capacity, voltage drop, dry contacts, and dual-valve closure limited the action.",
             "ko": "세척액과 식염수 잔류 압력과 중력 수두 펌프·히터·밸브용 전력 카세트 탄성막의 저장 에너지 압력 센서막과 전극 접점 회수백·필터·배수 용량을 소모한다. / 유체와 전력은 세척 가압 관류 배액 저온 보존 동작에 쓰이며 막힘 회수 용량 포화 전압 강하 접점 건조 이중 밸브 폐쇄가 동작을 제한한다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "1 residue: discarded instruments and tissue fragments remained in the wash piping and cassettes and made pressure and conduction paths. / → 2 miswiring: after an outage and restoration, sensor inputs, relays, pumps, and the valves' fixed circuits cross-started unlike treatment routines. / → 3 facility coupling: through fluid couplings and wet contacts the drain net, service rails, and emergency gear entered the same action loop. / → 4 residual-pressure idle: even with main power cut, state remained in the elastic membranes, accumulators, gravity head, and auxiliary power, and it appeared stopped. / → 5 delayed restart: when pressure, flow, and turbidity thresholds were met again, a leftover drain or preservation action continued late.",
             "ko": "1 잔류: 폐기 기구와 조직편이 세척 배관과 카세트에 남아 압력·전도 경로를 만든다. / → 2 오결선: 정전과 재급전 뒤 센서 입력, 릴레이 펌프와 밸브의 고정 회로가 서로 다른 처치 루틴을 교차 기동한다. / → 3 시설 결합: 유체 커플링과 젖은 접점을 통해 배수망, 서비스 레일 비상 장치가 동일한 동작 고리에 들어간다. / → 4 잔압 휴지: 주전원이 끊겨도 탄성막, 축압기 중력 수두와 보조 전원에 상태가 남아 외관상 정지한다. / → 5 지연 재가동: 압력·유량·탁도 임계값이 다시 충족되면 남아 있던 배액이나 보존 동작이 뒤늦게 이어진다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "It sensed only line pressure, flow change, liquid conductivity, local temperature, optical turbidity, presence of power, and voltage drop. / It could not tell a person's identity, intent, request, or risk priority, and the observation range was limited to the thresholds of the connected sensors; it did not correct missing or contaminated inputs on its own.",
             "ko": "관로 압력 유량 변화 액체 전도도 국소 온도 광학 탁도 전원 유무 전압 강하만 감지한다. / 사람의 신원·의도·요청·위험 우선순위를 구분하지 못하며, 관측 범위는 연결된 센서의 임계값에 한정되고 누락되거나 오염된 입력을 스스로 교정하지 못한다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "With no higher command, sensor interlocks, relays, pumps, valves, and conveyors reacted in a fixed wiring order. / No part could make a new goal. / The officers for signal gates, fluid isolation, power, supervisory keys, and record recovery physically limited the inputs.",
             "ko": "상위 지휘부 없이 센서 인터록 릴레이 펌프 밸브와 운반 장치가 고정된 배선 순서에 따라 반응한다. / 어느 부분도 새 목표를 만들지 못한다. / 신호 게이트·유체 격리·전력·감독 키·기록 회수 담당자가 입력을 물리적으로 제한한다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The common facility ecology had no command core. Even the coordinating individuals of the mobile variants reacted only within their assigned conduit or work section, and stood in for neither human facility authority nor unit command.",
         "ko": "공통 시설 생태에는 지휘 핵이 없다. 이동 변이의 조정 개체도 맡은 관로·작업 구간 안에서만 반응하며, 사람의 시설 운영권과 부대 지휘권을 대신하지 않는다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G24E01 · Suture Gurneys",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E01 · 봉합침상차",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E02 · Sterile Drainage Strain",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E02 · 무균배액종",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M037",
             "ko": "M037"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E03 · Suture Orbiter",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E03 · 봉합궤도자",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E04 · Cooling Pulse Furnace",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E04 · 냉각맥동로",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E05 · IV Pulley",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E05 · 수액도르래",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E06 · Suction Reservoir Crawler",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E06 · 흡인저수승",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E07 · Incision Gate",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E07 · 절개문갑",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E08 · Bone-Needle Weaver",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E08 · 골침직조기",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E09 · Anesthetic Organ",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E09 · 마취풍금",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E10 · Filtration-Sail Ferryman",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E10 · 투석막나룻꾼",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E11 · ECG Rail Runner",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E11 · 심전궤주충",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E12 · Sterile-Drape Folder",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E12 · 멸균포접이",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M038",
             "ko": "M038"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E13 · Emergency Shadow Supervisor",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E13 · 응급그림자 등감독",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M039",
             "ko": "M039"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E14 · Pitch-Surgeon Tuning Pack",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E14 · 음정집도의 조율패",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M039",
             "ko": "M039"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E15 · Bone-Pin Signal Post",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E15 · 골핀신호목",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M039",
             "ko": "M039"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G24E16 · Refrigerated Placenta Cart",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G24",
+                  "anchor": "g24e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G24E16 · 냉장태반차",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M039",
             "ko": "M039"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g24e01\"></a>",
         "ko": "<a id=\"g24e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g24e01-봉합침상차",
       "depth": 3,
       "text": {
+        "en": "G24E01 · Suture Gurneys",
         "ko": "G24E01 · 봉합침상차"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g24e01-봉합침상차-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g24e01-봉합침상차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Suture Bed-Cart was a mobile biomechanical variant differentiated from the G24 common ecology. The command · coordination role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "봉합침상차은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 지휘·조정 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -736,6 +1034,15 @@
       "anchor": "g24e01-봉합침상차-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A group of medical biomechanical entities with muscular wheels and suturing arms attached beneath discarded gurney frames. They find injured people by body heat and floor vibrations, but may miss targets under thick insulating blankets or motionless people with hypothermia."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -747,6 +1054,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, discarded medical tissue and surgical instruments combined in the S08·Dongdaemun Union corridor, forming a branch of the medical tissue-machine group. Pressure on the XT04 perimeter hastens their movement, but there is no basis for blaming any present-day organization or system for their origin."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -758,6 +1074,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The washing area of the Noryangjin Line’s abandoned emergency room is their core habitat. In seasons when infectious humidity decreases, they move to the Dongdaemun Union rehabilitation passage. When alerts from the XT04 direction increase, they occupy wide corridors their wheels can traverse."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -769,6 +1094,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " They mainly consume organic tissue scraps and stored power, and need scrap metal and coolant to repair their wheel axles and suturing arms. They compete with HP10’s recovery of medical resources. If sterilizable materials are scarce, the formation of new gurney units stops."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -780,6 +1114,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " They pass through emergence, spread, stagnation, negotiability, and disintegration. During stagnation, they repeatedly examine the same patient. If a suturing device’s tension plate wears down, a maintenance failure causes it to stitch clothing and stretcher straps instead of wounds, restraining the patient."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -791,6 +1134,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single bedside diagnostic lamp acts as controller and sets treatment priorities; transport crews paired in twos carry out its instructions. If F08 biometric sensor logs conflict with the diagnostic lamp’s assessment, they give priority to wrist markings made by an HP10 human mediator."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -802,6 +1154,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, they push an empty gurney forward to warn against approaching. At stage 2, they collect patients excessively, disrupting emergency passages and power lines. At stage 3, if treatment is repeatedly obstructed, they turn the gurneys sideways to seal off the base, and the negotiation window is nearly closed."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -813,6 +1174,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Regular noise on the far side of a corridor can lure the transport crews away, and cooling overheated drive axles can slow them. Combining sealed treatment-room doors, diversion toward simulated body-heat pads, and blocked wheel routes can safely separate patients from the main units."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -824,6 +1194,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can provide an allotment of discarded tissue and nighttime treatment time in exchange for an end to forced suturing of rescued patients. Destroying every gurney would also eliminate the remaining automated transport capacity and the emergency room’s contamination-isolation function."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -835,6 +1214,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1, patients are rescued by undoing incorrectly stitched stretcher straps. In G24-SC2, HP10 negotiates the discarded-tissue allotment and passage times. In G24-SC3, the gurneys are guided to a Dongdaemun Union temporary clinic before XT04 pressure arrives."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -851,6 +1239,7 @@
       "kind": "paragraph",
       "anchor": "g24e01-봉합침상차-p4",
       "text": {
+        "en": "<a id=\"g24e02\"></a>",
         "ko": "<a id=\"g24e02\"></a>"
       }
     },
@@ -859,6 +1248,7 @@
       "anchor": "g24e02-무균배액종",
       "depth": 3,
       "text": {
+        "en": "G24E02 · Sterile Drainage Strain",
         "ko": "G24E02 · 무균배액종"
       }
     },
@@ -867,12 +1257,15 @@
       "anchor": "g24e02-무균배액종-list1",
       "items": [
         {
+          "en": "Source batch: M037",
           "ko": "출처 배치: M037"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -882,42 +1275,52 @@
       "anchor": "g24e02-무균배액종-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Sterile Drainage Bell was a mobile biomechanical variant differentiated from the G24 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "무균배액종은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -928,6 +1331,15 @@
       "anchor": "g24e02-무균배액종-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A medical biomechanical colony of connected drainage bottles, suction tubes, and cartilaginous legs. It finds sources of contamination through the smell of liquids and pump vibrations, but cannot determine the contents of sealed containers or what is happening beyond walls."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -939,6 +1351,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, discarded drainage tissue and suction devices in the S08·Dongdaemun Union medical corridor joined together and grew into a medical tissue-machine group. Pressure changes on the XT04 perimeter disturb the liquid in its tubes, becoming a signal for seasonal movement."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -950,6 +1371,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The floor drains of the Noryangjin Line’s central sterilization room are its core habitat. During the dry season, it moves to the Dongdaemun Union surgical preparation room, where wash water remains. When pressure from XT04 rises, it climbs to high shelves and ceiling pipes to avoid backflow."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -961,6 +1391,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It absorbs contaminated organic matter and coolant. Its pumps require residual power, and its legs need thin scrap metal for repairs. It competes with HP10’s recovery of waste liquids. When the volume exceeds what it can process, it closes its suction tubes and becomes stagnant instead of multiplying."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -972,6 +1411,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Its five stages—emergence, spread, stagnation, negotiability, and disintegration—are evident in the drainage bottles’ transparency and its range of movement. If its backflow-prevention plate seizes, a deadly maintenance failure sends purified liquid back toward wounds."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -983,6 +1431,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A pressure bottle hanging at the highest point serves as controller, while a floor-search crew and a pipe-network suction crew divide the work. If F08 water-quality sensors conflict with the pressure bottle’s assessment by smell, it follows on-site culture results from samples taken by a human mediator."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -994,6 +1451,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it shakes the ends of its suction tubes to warn against approaching. At stage 2, it drains wash water and coolant, disrupting infrastructure. At stage 3, if contaminated liquid is repeatedly dumped, it wraps tubes around doorknobs and drains to seal off the base; the end of negotiations is imminent."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1005,6 +1471,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Introduce pulsing noise to disrupt the suction crew’s pump cycle, and cool the pressure bottle gradually to reduce expansion inside it. Its spread can be contained by sealing contaminated rooms, diverting its intake to a separate waste-liquid container, and blocking routes with pipe-network valves."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1016,6 +1491,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can agree to provide a safe waste-liquid tank and designated passage times in exchange for a halt to suctioning wash water intended for civilians. Indiscriminate elimination would spread the infectious material collected in the bottles, and the remaining medical staff would lose a means of disposing of waste liquids."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1027,6 +1511,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1, manually replacing the backflow-prevention plate saves the isolation ward. In G24-SC2, the order in which HP10 and the colony use the waste-liquid tank is negotiated. In G24-SC3, the colony is moved into the Dongdaemun Union’s closed pipe network before the XT04 pressure wave arrives."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1043,6 +1536,7 @@
       "kind": "paragraph",
       "anchor": "g24e02-무균배액종-p4",
       "text": {
+        "en": "<a id=\"g24e03\"></a>",
         "ko": "<a id=\"g24e03\"></a>"
       }
     },
@@ -1051,6 +1545,7 @@
       "anchor": "g24e03-봉합궤도자",
       "depth": 3,
       "text": {
+        "en": "G24E03 · Suture Orbiter",
         "ko": "G24E03 · 봉합궤도자"
       }
     },
@@ -1059,12 +1554,15 @@
       "anchor": "g24e03-봉합궤도자-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"]}"
         }
       ]
@@ -1074,42 +1572,52 @@
       "anchor": "g24e03-봉합궤도자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Suture Orbiter was a mobile biomechanical variant differentiated from the G24 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "봉합궤도자은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1120,6 +1628,15 @@
       "anchor": "g24e03-봉합궤도자-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A repair organism made of six discarded automatic suturing devices arranged in a circular orbit, with a cartilaginous reel at the center that winds up suture thread to move. It temporarily stitches cracks in floors and torn waterproof membranes, but may mistake a person's hem or a communications cable for damage to a structure. It senses vibrations transmitted through its needle tips and scents absorbed by its thread."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1131,6 +1648,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed at the Noryangjin Line surgical-waste collection site when suturing devices and tendon fragments joined into a single mass as tissue adhesive hardened. It is part of the new ecology that appeared in the S08–Dongdaemun Union corridor after the collapse; its existence is not attributed to deliberate action by any particular organization or the current regime."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1142,6 +1668,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Cracked flooring in the Noryangjin Line underground passage is its primary nest. Before the monsoon season, it moves toward the Dongdaemun Union's floodgates and the edges of tent settlements; when heavy-machinery vibrations intensify on the XT04 outskirts, it retreats into the inner corridor."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1153,6 +1688,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs small batteries to run its suturing motors, thin scrap metal to sharpen its needles, and collagen-rich organic matter to maintain its reel. If HP10 collects the same scrap metal and batteries, they confront each other over resource piles that have already been marked."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1164,6 +1708,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In its emergence phase, it selects a crack; in its expansion phase, it extends thread paths into nearby passages; and in its dormant phase, it waits beneath the stitched surface. In its negotiable phase, the reel slows and it reads marking tape; in its disintegration phase, moisture soaks the thread and the orbit comes apart. If its needles grow dull, a maintenance failure causes it to puncture the same spot excessively, damaging pipes."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1175,6 +1728,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single central ‘Knot Core’ serves as controller, and the six suturing devices form one group. The Knot Core retains the direction of recent vibrations only briefly, making it possible to go around it. Even if F08 classifies a reading as a biological response, HP10 personnel cancel the approach order on human judgment if they confirm it is an empty surgical gown."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1186,6 +1748,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it plants its needles in the floor as a warning. At stage 2, it stitches together door gaps, power lines, and drain covers, disrupting infrastructure. Stage 3 occurs when someone removes HP10's seal marking or forcibly takes the reel: it blocks the entire passage with a wall of thread. Until just before that point, three slow rotations of the Knot Core provide an opening for negotiation."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1197,6 +1768,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Regular noise made against the opposite wall can redirect the needles, and a cooling pack placed against the reel can slow its rotation. Binding the needle housings with sealing tape or placing a scrap-metal plate as bait along a detour also works. Cutting the thread paths and separating travel routes is safer than destroying the entire group."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1208,6 +1788,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can trade thin scrap metal and a limited supply of batteries for passage access at specified times and repairs to cracks. Removing it opens the route immediately but increases the risk of monsoon leaks and floor collapse. Leaving it in place may delay emergency transport, forcing a decision about whose safety to secure first."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1219,6 +1808,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1, field personnel must reopen an evacuation route stitched shut by the Knot Core by luring it away with noise. In G24-SC2, it appears as a negotiation partner that must be persuaded to recognize HP10's scrap-metal markings. In G24-SC3, thread paths that moved in response to XT04 vibrations become clues to the direction of the pressure source."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1235,6 +1833,7 @@
       "kind": "paragraph",
       "anchor": "g24e03-봉합궤도자-p4",
       "text": {
+        "en": "<a id=\"g24e04\"></a>",
         "ko": "<a id=\"g24e04\"></a>"
       }
     },
@@ -1243,6 +1842,7 @@
       "anchor": "g24e04-냉각맥동로",
       "depth": 3,
       "text": {
+        "en": "G24E04 · Cooling Pulse Furnace",
         "ko": "G24E04 · 냉각맥동로"
       }
     },
@@ -1251,12 +1851,15 @@
       "anchor": "g24e04-냉각맥동로-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -1266,42 +1869,52 @@
       "anchor": "g24e04-냉각맥동로-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cooling-Pulse Walker was a mobile biomechanical variant differentiated from the G24 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉각맥동로은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1312,6 +1925,15 @@
       "anchor": "g24e04-냉각맥동로-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A four-legged walker formed from a discarded extracorporeal circulation pump and folded lung tissue. It draws hot air into radiator sacs on either side of its torso and expels cooled coolant, reducing overheating in nearby equipment. It senses heat gradients and pump vibrations but cannot tell what is happening behind an insulated wall."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1323,6 +1945,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " A self-sustaining pulsation circuit developed when coolant and medical tissue pooled for a long time inside a stopped circulation device in the Noryangjin Line emergency power room. Seasonal temperature differences in the Dongdaemun Union corridor subsequently established its migratory habits."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1334,6 +1965,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It normally crouches near the cooling pipes beneath the Noryangjin Line substation. In summer, it moves into the shade of Dongdaemun Union ventilation towers. When a heat source intensifies on the XT04 outskirts, it advances several sections toward the heat, then retreats if the smell of fuel grows strong."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1345,6 +1985,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " Clean coolant is its most important resource. It also consumes power to run its pump and scrap metal to repair its radiator frame. When HP10 tries to secure coolant for civilians, they clash over priority access to storage tanks."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1356,6 +2005,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In its emergence phase, it absorbs heat from one pipe; in its expansion phase, it places small pulsation sacs in several rooms. In its dormant phase, it keeps the water temperature steady; in its negotiable phase, it opens its outlet at regular intervals; and in its disintegration phase, salt deposits harden its membrane. If its filter tears, it expels coolant mixed with oil, increasing the risk of a fire in the power room."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1367,6 +2025,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The largest cardiopulmonary chamber, a single ‘Cold Heart,’ is the controller, and four pulsation sacs form its group. The Cold Heart cools the hottest equipment first but cannot reliably distinguish people from machines. Even if F08's thermal record flags a fire, it stops approaching when an HP10 mediator confirms that the source is a controlled boiler."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1378,6 +2045,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it releases cold condensation in a line as a warning. At stage 2, it monopolizes coolant and disrupts temperature control for ventilation fans and generators. Stage 3 begins when the storage room's water temperature rises sharply or someone restarts the Cold Heart's pump; it then closes every cooling valve."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1389,6 +2065,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Installing external heat sinks can spread out its heat targets, while low-frequency noise can lure the pulsation sacs into an empty section. Sealing contaminated pipes and placing a container of clean water at a diversion point is effective. Sudden heating must not be used, as it can cause a pressure rupture."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1400,6 +2085,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can agree to supply some coolant at night in exchange for cooling generators and the medical-supply storeroom during the day. Dismantling the Cold Heart makes water allocation easier but also weakens the ability to store vaccines and food. Maintaining the arrangement carries the moral cost of reducing the residents' share of water."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1411,6 +2105,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1, it serves as a temporary cooling source that can save the overheated Noryangjin Line power room. In G24-SC2, it is central to negotiations over HP10's water allocation schedule. In G24-SC3, records of its movements in response to heat pressure from XT04 foreshadow a malfunction in the outlying equipment."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1427,6 +2130,7 @@
       "kind": "paragraph",
       "anchor": "g24e04-냉각맥동로-p4",
       "text": {
+        "en": "<a id=\"g24e05\"></a>",
         "ko": "<a id=\"g24e05\"></a>"
       }
     },
@@ -1435,6 +2139,7 @@
       "anchor": "g24e05-수액도르래",
       "depth": 3,
       "text": {
+        "en": "G24E05 · IV Pulley",
         "ko": "G24E05 · 수액도르래"
       }
     },
@@ -1443,12 +2148,15 @@
       "anchor": "g24e05-수액도르래-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"]}"
         }
       ]
@@ -1458,42 +2166,52 @@
       "anchor": "g24e05-수액도르래-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The IV-Fluid Pulley was a mobile biomechanical variant differentiated from the G24 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "수액도르래은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1504,6 +2222,15 @@
       "anchor": "g24e05-수액도르래-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A transport organism with empty IV bags and cords of muscle fiber hanging like a bunch of grapes beneath a pulley body that rides ceiling rails. It divides liquids among its bags and carries them to elevated locations, following rail vibrations and the scents of alcohol and sugar."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1515,6 +2242,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " Leaked nutrient solution and discarded tissue dried onto an IV transport rail in a temporary Noryangjin Line ward. Repeated power outages and restarts subsequently bound them into a single mobile system. Temporary clinics appearing seasonally in the Dongdaemun Union gave it a habit of moving through the corridor."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1526,6 +2262,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its main habitats are the Noryangjin Line ceiling wiring ducts and the abandoned ward's rails. In the dry season, it moves above Dongdaemun Union water stations. When pressure from the XT04 outskirts shakes the ceiling, it takes refuge on lower auxiliary rails."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1537,6 +2282,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs water, diluted organic nutrient solution, lubricating fat for its pulley axle, and scrap-metal pieces for rail repairs. Because it competes directly with HP10's recovery of water and medical supplies, procedures for distinguishing the markings attached to its bags are important."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1548,6 +2302,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In its emergence phase, one empty bag tests the rail; in its expansion phase, it splits its cords to create multiple storage points. In its dormant phase, it circulates liquid; in its negotiable phase, it lowers an empty bag to request an exchange. In its disintegration phase, its bags harden and split. If the pulley axle dries out, it stops abruptly and drops bags onto people and equipment below."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1559,6 +2322,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single leading ‘Drip Weight’ acts as controller, setting speed and choosing junctions, while twelve other bags form the group. The Drip Weight uses the sound of drops at regular intervals as a command signal. Even if F08 suspects the liquid in a bag is hazardous, an HP10 inspector's confirmation that it is drinking water prompts a human-mediated change to the recovery route."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1570,6 +2342,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it lowers an empty bag to eye level to warn against approaching. At stage 2, it occupies rail switches and pulls up water hoses and communications cables. Stage 3 occurs when storage bags are stolen in succession or the water supply is cut off; it blocks the ceiling passage and the tops of stairways with cords."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1581,6 +2362,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Rather than striking the floor hard, responders should send regular vibrations through a separate rail to move the group. They can slow the axle with cold water, then seal the switch, or hang an empty nutrient-solution container on a bypass rail to lure it away. Bringing down the rail itself increases the harm caused by falling debris."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1592,6 +2382,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can provide diluted nutrient solution at set times in exchange for transport of drinking water and medical liquids to S13. Driving the group away secures the supplies overhead but increases dangerous ground-level transport. Choosing a trade means dividing limited nutrients between residents and the organism."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1603,6 +2402,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1, it carries emergency supplies in IV bags as an alternative to a collapsed stairway. In G24-SC2, the terms for returning drinking-water bags marked by HP10 are negotiated. In G24-SC3, rail sections broken by XT04 vibrations show the direction in which pressure from the outskirts is advancing."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1619,6 +2427,7 @@
       "kind": "paragraph",
       "anchor": "g24e05-수액도르래-p4",
       "text": {
+        "en": "<a id=\"g24e06\"></a>",
         "ko": "<a id=\"g24e06\"></a>"
       }
     },
@@ -1627,6 +2436,7 @@
       "anchor": "g24e06-흡인저수승",
       "depth": 3,
       "text": {
+        "en": "G24E06 · Suction Reservoir Crawler",
         "ko": "G24E06 · 흡인저수승"
       }
     },
@@ -1635,12 +2445,15 @@
       "anchor": "g24e06-흡인저수승-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -1650,42 +2463,52 @@
       "anchor": "g24e06-흡인저수승-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Suction Reservoir Monk was a mobile biomechanical variant differentiated from the G24 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "흡인저수승은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1696,6 +2519,15 @@
       "anchor": "g24e06-흡인저수승-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A low-crawling organism combining a surgical suction device, a transparent reservoir, and folded tissue resembling a stomach wall. It draws bloodied water, oil, and sludge from drains and lets them settle into layers, sensing liquid vibrations and the smell of decay."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1707,6 +2539,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose when discarded suction canisters in a Noryangjin Line drainage operating room mixed with backed-up sewage and connected their hoses to one another. After the collapse, it developed an independent ecology that treats contamination in the corridor as both food and a danger signal."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1718,6 +2559,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It favors the Noryangjin Line sewer junction room and the floors of flooded elevators. During the rainy season, it moves to low-lying parts of the Dongdaemun Union to absorb standing water. When contaminated water surges in from the XT04 outskirts, it forms a wall of reservoirs on the side opposite the flow."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1729,6 +2579,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs power for its pumps, scrap metal for hose connectors, and filterable organic sludge. It releases the purified upper layer of water back into the system but competes with HP10 recovery teams for power and containers."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1740,6 +2599,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In its emergence phase, it tests suction on one drain; in its expansion phase, it extends hoses into adjacent sections. In its dormant phase, it separates sediment layers; in its negotiable phase, it discharges clear upper-layer water at a steady rate. In its disintegration phase, its reservoirs grow cloudy and its hoses contract. If a backflow-prevention plate fails, it spews concentrated contaminants all at once."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1751,6 +2619,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The largest settling tank, a single ‘Bottom Stomach,’ is the controller, and five small suction devices form the group. The Bottom Stomach prioritizes places with strong odors but confuses acidic cleaning agents with decaying matter. If F08 water-quality sensor readings differ from HP10 reagent tests, it follows the results of samples collected directly by a person."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1762,6 +2639,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it taps the floor with its hoses as a warning. At stage 2, it changes pressure in the drainage network, causing backflow into toilets and water-supply rooms. Stage 3 occurs when acidic material is introduced or a reservoir breaks; it closes every drain with a suction membrane."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1773,6 +2659,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Clean water sent down a separate drain can redirect its suction. Responders can then cool its pumps to slow it and seal off the contaminated section. A route-blocking plate can also be pressed against the middle of a hose to divide the group. Breaking reservoirs indiscriminately spreads concentrated wastewater into civilian areas."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1784,6 +2679,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can provide replacement filters and limited power in exchange for cleaning designated drains. An agreement reduces flooding in lower sections but creates a dispute over where to store the concentrated residue. Choosing dismantlement yields valuable pumps but sacrifices rainy-season flood protection."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1795,6 +2699,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1, it is a key factor in lowering the water level in flooded Noryangjin Line passages. In G24-SC2, HP10 negotiates the order of cleanup in exchange for providing filters. In G24-SC3, changes in the composition of contaminated water arriving from XT04 become evidence of events on the outskirts."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1811,6 +2724,7 @@
       "kind": "paragraph",
       "anchor": "g24e06-흡인저수승-p4",
       "text": {
+        "en": "<a id=\"g24e07\"></a>",
         "ko": "<a id=\"g24e07\"></a>"
       }
     },
@@ -1819,6 +2733,7 @@
       "anchor": "g24e07-절개문갑",
       "depth": 3,
       "text": {
+        "en": "G24E07 · Incision Gate",
         "ko": "G24E07 · 절개문갑"
       }
     },
@@ -1827,12 +2742,15 @@
       "anchor": "g24e07-절개문갑-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -1842,42 +2760,52 @@
       "anchor": "g24e07-절개문갑-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Incision Door-Shell was a mobile biomechanical variant differentiated from the G24 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "절개문갑은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1888,6 +2816,15 @@
       "anchor": "g24e07-절개문갑-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A barricade organism whose shell consists of two folding operating tables, with powered scalpel rails and tendon hinges moving like forelegs. It unfolds across passages and tries to isolate contaminated objects by cutting narrowly around them, but its judgments are crude. It senses both metal vibrations and body heat."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1899,6 +2836,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose during demolition of the Noryangjin Line isolation ward, when operating tables and automatic-door parts were compressed together and a remaining layer of tissue adhesive joined their hinges. Repeated exposure to seasonal crowds in the Dongdaemun Union strengthened its access-control behavior."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1910,6 +2856,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It occupies narrow vestibules between Noryangjin Line isolation doors and fire doors. At the change of seasons, it moves to temporary Dongdaemun Union quarantine lines. When pressure from the XT04 outskirts increases, it retreats, closing doors in sequence starting with the outermost."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1921,6 +2876,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs scrap metal for door hinges, batteries to move its incision rails, and coolant to reduce friction. HP10 wants to use the same fire-door parts to repair evacuation facilities, causing conflict when parts are removed."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1932,6 +2896,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In its emergence phase, it leans against one door; in its expansion phase, it positions small hinge bodies at entrances on either side. In its dormant phase, it sorts traffic patterns into simple categories; in its negotiable phase, it folds one operating table to leave a narrow passage. In its disintegration phase, the hinge tissue dries and the panels tilt. If a scalpel rail becomes misaligned, it cuts bag straps and stretchers instead of access passes."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1943,6 +2916,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single ‘Incision Ruler’ in the central gate is the controller, and four hinge bodies form the group. The Incision Ruler compares only the body heat and stride length of those passing through, so it cannot fully verify identity. If F08 access records conflict with the on-site evacuation roster, it gives priority to the HP10 human mediator's handwritten roster."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1954,6 +2936,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it scrapes a scalpel rail against the floor to make a warning sound. At stage 2, it alternately locks automatic doors and fire doors, increasing travel time. Stage 3 occurs when a stretcher enters at high speed or someone removes hinge parts; it blocks every entrance to the base with operating tables."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1965,6 +2956,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Rolling an empty stretcher down another corridor can shift its vibration target, and cooling pads attached to its hinges can slow their folding. Covering the scalpel grooves with sealing tape or setting a scrap-metal door panel along a bypass route to draw the barricade away are also options. Blasting a door open destroys both its isolation function and the fire compartment."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1976,6 +2976,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can promise to suspend nighttime passage and supply hinge parts in exchange for a daytime route for transporting patients. Removing the gate allows free movement but also destroys the compartments that held back contamination and fire. Leaving it in place may strand late-arriving evacuees outside."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1987,6 +2996,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1, a blocked emergency transport route must be opened by luring it with an empty stretcher. In G24-SC2, it is a negotiation partner that must be persuaded to accept HP10's roster as its passage rules. In G24-SC3, the order in which doors close in response to XT04 pressure allows the time until the danger arrives to be calculated."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2003,6 +3021,7 @@
       "kind": "paragraph",
       "anchor": "g24e07-절개문갑-p4",
       "text": {
+        "en": "<a id=\"g24e08\"></a>",
         "ko": "<a id=\"g24e08\"></a>"
       }
     },
@@ -2011,6 +3030,7 @@
       "anchor": "g24e08-골침직조기",
       "depth": 3,
       "text": {
+        "en": "G24E08 · Bone-Needle Weaver",
         "ko": "G24E08 · 골침직조기"
       }
     },
@@ -2019,12 +3039,15 @@
       "anchor": "g24e08-골침직조기-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S08\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -2034,42 +3057,52 @@
       "anchor": "g24e08-골침직조기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Bone-Needle Weaver was a mobile biomechanical variant differentiated from the G24 common ecology. The elite breakthrough role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "골침직조기은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 정예 돌파 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2080,6 +3113,15 @@
       "anchor": "g24e08-골침직조기-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A reinforcement organism formed from a bone-marrow aspiration needle and a cable winder, which weaves calcareous rods and electrical wire into lattices. It supports weak ceilings and railings but risks mistaking living tissue or human remains for materials. It senses structural vibrations and electronic noise."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2091,6 +3133,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed after aspiration needles piled up at a Noryangjin Line orthopedic scrapyard lodged in a broken winding device, and hardened bone tissue connected its rotating shafts. Repairing the collapsed corridor extended its range of activity as far as S13."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2102,6 +3153,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core territory is the cracked Noryangjin Line parking ramp and ceiling cable trays. In winter, it moves near the Dongdaemun Union's temporary supports. When low-frequency shocks arrive from XT04, it gathers at columns where vibrations are concentrated."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2113,6 +3173,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs calcareous organic matter, copper cable and iron wire, and power for its winder. When HP10 recovers cable and scrap metal for structural repairs, they must share material piles; the amount supplied sets an upper limit on its activity."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2124,6 +3193,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " In its emergence phase, it measures a crack's depth with one needle; in its expansion phase, it extends lattice platforms. In its dormant phase, it tightens wires to suit the load; in its negotiable phase, it stops its winding shaft and waits to exchange materials. In its disintegration phase, its calcareous rods crumble to powder. If its tension gauge fails, it overtightens reinforcement wires, severing pipes and electrical cables."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2135,6 +3213,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single ‘Measuring Bone,’ the thickest winding shaft, is the controller, and eight needle arms form one group. The Measuring Bone treats strong vibrations as a sign of structural weakness but may mistake the impact of moving vehicles for a structural crack. If F08 structural sensor readings differ from a technician's hammer test, it gives priority to the human inspection results."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2146,6 +3233,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it drives needles into a wall to make a metallic warning sound. At stage 2, it pulls elevator rails and communications cables into its reinforcement lattice. Stage 3 occurs when an installed support wire is cut or calcareous materials are removed all at once; it blocks stairs and ramps with latticework."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2157,6 +3253,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Regular noise made at a safe reinforcement site can draw the group there. Responders can then cool the winding shaft to reduce tension and cut and seal only the dangerous wires. Providing a separate scrap-metal frame and calcareous blocks as diversionary bait is also effective. Destroying every needle arm could cause the weakened ceiling to sag immediately."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2168,6 +3273,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can supply only verified waste materials in exchange for reinforcement of designated columns. The trade saves shelters but raises the ethical question of whether calcareous fragments needed for the respectful recovery of human remains may be used as materials. Removing the organism makes respectful recovery easier but leaves civilians with the risks of collapse and the labor of repair."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2179,6 +3293,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1, it temporarily supports a Noryangjin Line ramp at risk of collapse, buying time to evacuate. In G24-SC2, HP10 negotiates where materials come from and where they may be used. In G24-SC3, the direction of new latticework woven in response to XT04 shocks reveals the axis of ground pressure."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2195,6 +3318,7 @@
       "kind": "paragraph",
       "anchor": "g24e08-골침직조기-p4",
       "text": {
+        "en": "<a id=\"g24e09\"></a>",
         "ko": "<a id=\"g24e09\"></a>"
       }
     },
@@ -2203,6 +3327,7 @@
       "anchor": "g24e09-마취풍금",
       "depth": 3,
       "text": {
+        "en": "G24E09 · Anesthetic Organ",
         "ko": "G24E09 · 마취풍금"
       }
     },
@@ -2211,12 +3336,15 @@
       "anchor": "g24e09-마취풍금-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -2226,42 +3354,52 @@
       "anchor": "g24e09-마취풍금-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Anesthesia Organ was a mobile biomechanical variant differentiated from the G24 common ecology. The elite blocking role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "마취풍금은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 정예 차단 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2272,6 +3410,15 @@
       "anchor": "g24e09-마취풍금-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A mobile being with an old anesthetic bellows and laryngeal tissue folded like a pump organ. It draws in air and releases a strongly scented sedative mist low to the ground, calming disturbances, but at higher concentrations it slows breathing and judgment. It follows heat and odor and cannot tell how many people are beyond a sealed wall."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2283,6 +3430,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose when a damp organic membrane grew over a damaged anesthetic device in the Noryangjin Line recovery room and made the bellows contract on its own. Seasonal crowds and fire smoke in the Dongdaemun Union taught it to move with airflow."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2294,6 +3450,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It favors the floor of the recovery room and the area beneath the Noryangjin Line ventilation ducts. In dry seasons it moves to damp, climate-controlled areas in the Dongdaemun Union tent settlement; when acrid air enters from the XT04 outskirts, it moves against the wind."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2305,6 +3470,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs coolant to cool its bellows, organic residue to make aromatic compounds, and power for its blower motor. Since HP10 must use the same resources for medicine storage and ventilation, supply is tightly limited."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2316,6 +3490,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " During emergence it gives short, sigh-like bursts; during expansion it hangs small throat sacs at each vent. In stasis it maintains a steady concentration, and at the negotiable stage it signals its supply demands with three short intakes. During collapse its bellows stiffen and only make noise. If its concentration gauge is contaminated, it keeps spraying mist even in areas that are already quiet."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2327,6 +3510,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One largest bellows, the 'Mujoh Command Sac,' acts as controller, and seven throat sacs form a swarm. The command sac interprets loud sounds and high body heat as agitation. Even if F08 air sensors show safe readings, HP10 medical staff use human judgment to ventilate first if residents appear drowsy."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2338,6 +3530,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At Stage 1 it sends a faint scent and low pump-organ tone as a warning. At Stage 2 it reverses the ventilation fans, reducing concentration at work and in communications. Stage 3 begins if ventilation stops completely or its bellows are exposed to fire, sealing the stronghold entrance in dense mist."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2349,6 +3550,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Conflict and Response:",
+              "strong": true
+            },
+            {
+              "text": " Noise in the opposite duct can turn the direction of its bursts, and coolant spray can slow bellows contraction. Seal contaminated ducts, divert it by placing organic scent sacs in empty sections, and block blower paths to disperse the concentration. Flames may create harmful vapor."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2360,6 +3570,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can agree to provide limited organic residue and coolant in exchange for using low-concentration mist only during hours when riots are likely. This may reduce clashes, but interferes with the judgment of citizens who did not consent. Removing it clears the air but forfeits its ability to suppress panic and push back smoke."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2371,6 +3590,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connection:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1 it can push smoke-filled air out of the Noryangjin Line passage, but its concentration must be managed. In G24-SC2 HP10 medical staff negotiate its operating hours and residents' consent; in G24-SC3 the pump-organ's movement in response to odors from XT04 marks the entry route of polluted air."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2387,6 +3615,7 @@
       "kind": "paragraph",
       "anchor": "g24e09-마취풍금-p4",
       "text": {
+        "en": "<a id=\"g24e10\"></a>",
         "ko": "<a id=\"g24e10\"></a>"
       }
     },
@@ -2395,6 +3624,7 @@
       "anchor": "g24e10-투석막나룻꾼",
       "depth": 3,
       "text": {
+        "en": "G24E10 · Filtration-Sail Ferryman",
         "ko": "G24E10 · 투석막나룻꾼"
       }
     },
@@ -2403,12 +3633,15 @@
       "anchor": "g24e10-투석막나룻꾼-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -2418,42 +3651,52 @@
       "anchor": "g24e10-투석막나룻꾼-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Dialysis-Membrane Ferryman was a mobile biomechanical variant differentiated from the G24 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "투석막나룻꾼은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2464,6 +3707,15 @@
       "anchor": "g24e10-투석막나룻꾼-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A filtration being with a translucent membrane sac standing like a sail atop a catapult cart and thin intestinal-tissue tube-legs beneath. It separates polluted water across the membrane, filtering out salt and debris, and senses current vibrations and chemical odors."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2475,6 +3727,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose when discarded filters from the Noryangjin Line blood-purification room became linked while flooded, and tissue growing between the membranes began regulating pressure differences. It traveled waterways as far as S13, establishing seasonal migration."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2486,6 +3747,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Overflow channels in Noryangjin Line water reservoirs and underground waterways are its central habitat. In the rainy season it moves around the Dongdaemun Union's communal wells; when water pressure rises on the XT04 outskirts, it climbs to higher reservoirs to avoid backflow."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2497,6 +3767,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs coolant for washing, organic matter to regenerate its membrane, and scrap metal for cart wheels and connectors. It could cooperate closely with HP10's drinking-water purification, but competes with it because it needs clean wash water first."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2508,6 +3787,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " During emergence it tests filtration in one pool; during expansion it leaves small membrane sacs along waterways. In stasis it adjusts salinity, and at the negotiable stage it sends clean water and concentrated brine through separate tubes. During collapse its membranes turn opaque and fall away. If membrane washing is delayed, toxic concentrate seeps toward the purified water."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2519,6 +3807,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One with the largest sail, the 'Osmotic Stem,' acts as controller, and six membrane sheets form a swarm. The Osmotic Stem considers water with little odor safe, but may miss odorless contaminants. If F08 analysis and HP10 field reagents disagree, people retest the water before deciding its route."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2530,6 +3827,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At Stage 1 it raises its brine tube to warn others away. At Stage 2 it changes water valves, disturbing pressure in some areas. Stage 3 begins if solvent or oil gets into its membrane or purified water is forcibly taken, sealing the reservoir entrance with membrane sacs."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2541,6 +3847,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Conflict and Response:",
+              "strong": true
+            },
+            {
+              "text": " Lure the swarm by placing clean water containers in a separate channel, cool it to slow membrane contraction, then seal only the contaminated pipes. A barrier plate that cuts off the current can split the swarm, or a replacement filter can be offered as substitute feed. Tearing the membrane mixes all the concentrate at once."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2552,6 +3867,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can provide some wash water and new filters under a contract that grants citizens water at set times each day. The trade increases the total amount of drinking water, but water used first for washing can worsen immediate thirst. Dismantling it yields the cart and filters but reduces long-term purification capacity."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2563,6 +3887,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connection:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1 it secures a limited amount of drinking water from a contaminated Noryangjin Line reservoir. In G24-SC2 it appears as a negotiating party over whether HP10 pays wash water in advance; in G24-SC3 its movement in response to rising pressure from XT04 identifies dangerous sections of the underground waterway."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2579,6 +3912,7 @@
       "kind": "paragraph",
       "anchor": "g24e10-투석막나룻꾼-p4",
       "text": {
+        "en": "<a id=\"g24e11\"></a>",
         "ko": "<a id=\"g24e11\"></a>"
       }
     },
@@ -2587,6 +3921,7 @@
       "anchor": "g24e11-심전궤주충",
       "depth": 3,
       "text": {
+        "en": "G24E11 · ECG Rail Runner",
         "ko": "G24E11 · 심전궤주충"
       }
     },
@@ -2595,12 +3930,15 @@
       "anchor": "g24e11-심전궤주충-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -2610,42 +3948,52 @@
       "anchor": "g24e11-심전궤주충-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The ECG-Track Worm was a mobile biomechanical variant differentiated from the G24 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "심전궤주충은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2656,6 +4004,15 @@
       "anchor": "g24e11-심전궤주충-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A many-legged runner whose ECG recorders and electrode cables connect like a spine. It attaches electrodes to the floor to track irregular pulses in the power grid, and circles an area with cables when it detects a dangerous current leak. It senses electronic noise and vibration but cannot always distinguish their source."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2667,6 +4024,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " Recorders left in the Noryangjin Line diagnostic room activated together during repeated voltage surges, and their gel-hardened electrode wires tangled into a mobile frame. Seasonal operation of the Dongdaemun Union's temporary generators determined its migration cycle."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2678,6 +4044,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Behind Noryangjin Line breaker panels and in cable ducts are its core habitat. In seasons of rising power demand it moves around the Dongdaemun Union power plant; when strong electronic noise comes from the XT04 outskirts, it changes course toward inner areas with weaker signals."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2689,6 +4064,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs thin metal strips to replace recording paper, organic slime for electrode gel, and power for movement and measurement. It competes with HP10's recovery of batteries and copper wire, but resources can be allocated in exchange for leak locations."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2700,6 +4084,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " During emergence it attaches one electrode to read a pulse; during expansion it installs cable loops in several rooms. In stasis it compares repeated signals, and at the negotiable stage it sends three short output waveforms. During collapse the electrode gel dries and the cables come loose. If its grounding spike corrodes, it may wrongly identify a functioning generator as the source of a leak."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2711,6 +4104,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One large recorder, the 'Frequency Head,' acts as controller, and ten electrode-legs form a swarm. The Frequency Head retains only a limited set of signal samples and cannot accurately reproduce old patterns. Even if F08 sensor logs indicate overload, if an HP10 technician finds a grounding fault, human mediation changes the point of containment."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2722,6 +4124,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At Stage 1 it makes small sparks and waveform tones on the floor as a warning. At Stage 2 it tangles communication lines and automatic-door power in cable loops, causing malfunctions. Stage 3 begins with repeated radio interference or electrode cables being cut, and it seals the entire substation stronghold with cables."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2733,6 +4144,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Conflict and Response:",
+              "strong": true
+            },
+            {
+              "text": " Electronic noise can be fed into an isolated, empty circuit to lure the swarm, and grounding plates and cooling packs can reduce its output. Insulate and seal hazardous cables, then split the electrode-legs' route with physical barriers. A forced power shutdown can also stop the ward and water pumps."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2744,6 +4164,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can provide batteries and electrode gel in exchange for a map of current leaks, accepting a condition to reduce wireless communication from recovery equipment during certain hours. Removing it increases communications freedom but eliminates the early fire-warning network; accepting the contract may delay rescue calls."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2755,6 +4184,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connection:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1 it tracks down the actual leak in a blackout zone. In G24-SC2 it trades with HP10 over hours of radio silence; in G24-SC3 changes in electronic noise from XT04 help narrow the route of pressure moving in from the outskirts."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2771,6 +4209,7 @@
       "kind": "paragraph",
       "anchor": "g24e11-심전궤주충-p4",
       "text": {
+        "en": "<a id=\"g24e12\"></a>",
         "ko": "<a id=\"g24e12\"></a>"
       }
     },
@@ -2779,6 +4218,7 @@
       "anchor": "g24e12-멸균포접이",
       "depth": 3,
       "text": {
+        "en": "G24E12 · Sterile-Drape Folder",
         "ko": "G24E12 · 멸균포접이"
       }
     },
@@ -2787,12 +4227,15 @@
       "anchor": "g24e12-멸균포접이-list1",
       "items": [
         {
+          "en": "Source batch: M038",
           "ko": "출처 배치: M038"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -2802,42 +4245,52 @@
       "anchor": "g24e12-멸균포접이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Sterile-Wrap Folder was a mobile biomechanical variant differentiated from the G24 common ecology. The growth variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "멸균포접이은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 성장 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2848,6 +4301,15 @@
       "anchor": "g24e12-멸균포접이-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " An isolation being whose torso is a mobile high-pressure sterilizer and whose many layers of surgical drapes and fascia fold into broad arms. It wraps objects with strong contamination odors in drapes, stores them in separate rooms, and treats their surfaces with hot steam. It senses odor and heat but cannot precisely tell whether something inside a drape is alive."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2859,6 +4321,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " Wet surgical drapes hardened while wound around a damaged sterilizer shaft in the Noryangjin Line central supply room, and residual tissue membranes moved the steam valve, forming the being. It came to move through corridors in response to seasonal infection concerns and supply transfers in the Dongdaemun Union."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2870,6 +4341,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core territory is the warm anteroom between the Noryangjin Line supply room and laundry. In cold seasons it moves near the Dongdaemun Union communal clinic; if an unfamiliar odor enters from the XT04 outskirts, it covers the outer doors first with surgical drapes."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2881,6 +4361,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs water and power to produce steam, organic fibers to mend torn drapes, and scrap metal for the sterilizer's latches. HP10 uses the same resources for medicine packaging and water supply, so the order of supply must be agreed upon."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2892,6 +4381,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " During emergence it loosely wraps one contaminated object; during expansion it hangs folded drapes on several doors. In stasis it repeats its steam cycle, and at the negotiable stage it spreads an empty drape on the floor to mark a resource-exchange point. During collapse its drapes rot to powder and the tank loses pressure. If the pressure gauge is blocked, it overheats wrapped supplies or treats them insufficiently."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2903,6 +4401,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One central sterilizer, the 'Steam Supervisor,' acts as controller, and nine folded drapes form a swarm. The Steam Supervisor isolates strong odors first and may confuse medicine with rot. If F08's contamination assessment differs from HP10 medical staff's sample test, a human mediator decides whether to unwrap the drape."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2914,6 +4421,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At Stage 1 it raises the edge of a drape to warn others away. At Stage 2 it wraps medicine boxes, doorknobs, and vents, interfering with medical infrastructure. Stage 3 begins if isolation-room doors are repeatedly opened or steam water is cut off, sealing all stronghold entrances with drapes and latches."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2925,6 +4441,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Conflict and Response:",
+              "strong": true
+            },
+            {
+              "text": " Place a sample with a contamination odor in a warm, empty room to divert the folded drapes, cool the sterilizer to lower steam pressure, and seal only hazardous doors. Regular noise can change the direction in which the drapes unfold, or physical barriers can split the swarm. Burning the drapes also destroys the trapped supplies and air-filtering layers."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2936,6 +4461,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " HP10 can provide set amounts of water and power in exchange for time to treat medicine and bedding, and teach a marking rule that prevents people from being treated as things to wrap. Dismantling it lets people retrieve isolated medicine immediately, but collapses infection control and reusable packaging. Keeping it preserves safety standards but may delay emergency patients."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2947,6 +4481,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connection:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1 it treats contaminated bedding so the Noryangjin Line shelter can be used again. In G24-SC2 HP10 negotiates water and power allocation and markings to protect people; in G24-SC3 the order of overlapping drapes on doors toward XT04 reveals the entry route of an unfamiliar contaminant odor."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2963,6 +4506,7 @@
       "kind": "paragraph",
       "anchor": "g24e12-멸균포접이-p4",
       "text": {
+        "en": "<a id=\"g24e13\"></a>",
         "ko": "<a id=\"g24e13\"></a>"
       }
     },
@@ -2971,6 +4515,7 @@
       "anchor": "g24e13-응급그림자-등감독",
       "depth": 3,
       "text": {
+        "en": "G24E13 · Emergency Shadow Supervisor",
         "ko": "G24E13 · 응급그림자 등감독"
       }
     },
@@ -2979,12 +4524,15 @@
       "anchor": "g24e13-응급그림자-등감독-list1",
       "items": [
         {
+          "en": "Source batch: M039",
           "ko": "출처 배치: M039"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -2994,42 +4542,52 @@
       "anchor": "g24e13-응급그림자-등감독-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Emergency-Shadow Lamp Overseer was a mobile biomechanical variant differentiated from the G24 common ecology. The aged variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "응급그림자 등감독은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 노화 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3040,6 +4598,15 @@
       "anchor": "g24e13-응급그림자-등감독-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical being of the G24 Medical-Tissue Machine Swarm that safeguards the S08-Dongdaemun Union corridor, HP10 mediation, XT04 perimeter pressure, and cooperation with F08 sensors. It moves articulated shades and photosensitive tissue panels to project urgent-care silhouettes showing patient status onto walls and floors."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3051,6 +4618,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It was built to show medical routes through smoke and crowding where signs were hard to read. Later it claimed independent triage authority, prioritizing the size and sharpness of a shadow over the actual patient."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3062,6 +4638,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It hangs from ceilings where medical flows meet, such as emergency-room intersections, surgery waiting areas, and shelter clinics. It favors places with bare walls and adjustable light sources."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3073,6 +4658,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs steady light levels, observers to update patient status, and recovery time for its photosensitive panels. When power is scarce, it tries to darken one area to emphasize another silhouette."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3084,6 +4678,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Its five stages—emergence, expansion, stasis, negotiable, and collapse—appear in the sharpness of its silhouettes. During stasis its photosensitive tissue must rest under neutral light and the shade joints must be checked for friction; overexposed tissue blurs at the edges, making different urgency levels look like one mass."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3095,6 +4698,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The figure needing treatment soonest takes the center of the passage. Disagreement among beings appears as overlapping shadows; if they cannot agree, they place a stop marker at the threshold."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3106,6 +4718,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At Stage 1 it drops a short stop silhouette at people's feet as a warning. If distorted shadows recur, at Stage 2 it shines entry lights and triage boards out of sync, disrupting medical routes. Forcibly switching off a shade escalates it to Stage 3: it locks ward access controls into night lockdown. Negotiations to disclose available power and post manual triage charts work only just before the lockdown."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3117,6 +4738,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Conflict and Response:",
+              "strong": true
+            },
+            {
+              "text": " Use neutral diffuse light to remove projection contrast, attach manual triage charts that use no colors to patients, and secure the joints of the problem shade. A sudden blackout reinforces its decision to lock down."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3128,6 +4758,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " If available power is disclosed openly, it proposes a clinic schedule shared by people and the beings. The central choice is which ward's lighting to reduce to keep the operating room running."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3139,6 +4778,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connection:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1 patients must be moved under contradictory shadow instructions. In G24-SC2 HP10 decides whether to hold a joint triage meeting even if disclosing the power shortage heightens anxiety. In G24-SC3 F08 records are compared with manual triage charts after an XT04 impact."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3155,6 +4803,7 @@
       "kind": "paragraph",
       "anchor": "g24e13-응급그림자-등감독-p4",
       "text": {
+        "en": "<a id=\"g24e14\"></a>",
         "ko": "<a id=\"g24e14\"></a>"
       }
     },
@@ -3163,6 +4812,7 @@
       "anchor": "g24e14-음정집도의-조율패",
       "depth": 3,
       "text": {
+        "en": "G24E14 · Pitch-Surgeon Tuning Pack",
         "ko": "G24E14 · 음정집도의 조율패"
       }
     },
@@ -3171,12 +4821,15 @@
       "anchor": "g24e14-음정집도의-조율패-list1",
       "items": [
         {
+          "en": "Source batch: M039",
           "ko": "출처 배치: M039"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -3186,42 +4839,52 @@
       "anchor": "g24e14-음정집도의-조율패-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Pitch-Cluster Tuning Plate was a mobile biomechanical variant differentiated from the G24 common ecology. The cooperation · coexistence role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "음정집도의 조율패은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 협력·공존 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3232,6 +4895,15 @@
       "anchor": "g24e14-음정집도의-조율패-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical being in the G24 Medical-Tissue Machine Swarm that identifies each instrument's distinct ultrasonic resonance modes in the S08-Dongdaemun Union medical corridor, classifying its cleaning status and purpose. Thin resonator plates, piezoelectric tendrils, and pitch-display sacs make up one body."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3243,6 +4915,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It was created to inspect limited surgical instruments quickly and assist with sterilization. During repeated use it developed a habit of treating a particular clear ring as proof of safety, overlooking material fatigue."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3254,6 +4935,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It settles in the instrument racks of Noryangjin Line preparation rooms and Dongdaemun Union field clinics, and in buffer spaces between sterilization rooms and operating rooms. It prefers vibration-isolated stands to hard metal shelves, and moves to inner clinics with less shock when XT04 perimeter pressure rises."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3265,6 +4955,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs a reference frequency chart, clean contact surfaces, and material information for each instrument. Alloys of uncertain origin have overlapping modes and require prolonged inspection."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3276,6 +4975,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " The emergence, expansion, stasis, negotiable, and collapse stages appear in the bandwidth of its resonator plates. During stasis its piezoelectric tendrils must be calibrated through a frequency sweep, and fastenings checked at low amplitude; if its display sac stiffens, it judges pitches too high and passes damaged instruments."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3287,6 +4995,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " It isolates instruments that diverge from the reference tone and assembles surgical sets first from tools with stable modes. When several beings are present, the one that reads the widest bandwidth accurately leads the tuning. Even if F08 sensors judge sterilization complete, if that conflicts with resonance results, an HP10 human mediator makes the final use decision after a manual crack inspection."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3298,6 +5015,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At Stage 1 it lightly rings the corner of an instrument rack once to warn others. If a falsified clear bell tone recurs, at Stage 2 it makes sterilization-complete lights and wash-pump readings disagree, disrupting disinfection equipment. Taking its reference frequency chart escalates it to Stage 3, sealing the buffer door between the sterilization and operating rooms with resonator plates. The window to negotiate acceptable noise hours remains open until just before then."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3309,6 +5035,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Conflict and Response:",
+              "strong": true
+            },
+            {
+              "text": " Separate instruments on a damped ceramic tray and perform a frequency sweep calibration starting at low intensity. Mechanically separating the inspection and operating tables prevents resonance from transferring."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3320,6 +5055,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " If acceptable noise hours are agreed under HP10 mediation, it provides a list of sterilized instruments that are actually safe to use. The choice is whether to place noise risk on night patients' rest or on securing tools for emergency surgery."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3331,6 +5075,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connection:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1 it isolates instruments that produced a false completion tone. In G24-SC2 medical staff and resident representatives decide together which surgical sets to inspect first within limited tuning hours. In G24-SC3, after an XT04 impact, F08 assessments are compared with manual crack inspections to confirm safe instruments before the Dongdaemun Union moves."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3347,6 +5100,7 @@
       "kind": "paragraph",
       "anchor": "g24e14-음정집도의-조율패-p4",
       "text": {
+        "en": "<a id=\"g24e15\"></a>",
         "ko": "<a id=\"g24e15\"></a>"
       }
     },
@@ -3355,6 +5109,7 @@
       "anchor": "g24e15-골핀신호목",
       "depth": 3,
       "text": {
+        "en": "G24E15 · Bone-Pin Signal Post",
         "ko": "G24E15 · 골핀신호목"
       }
     },
@@ -3363,12 +5118,15 @@
       "anchor": "g24e15-골핀신호목-list1",
       "items": [
         {
+          "en": "Source batch: M039",
           "ko": "출처 배치: M039"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -3378,42 +5136,52 @@
       "anchor": "g24e15-골핀신호목-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Bone-Pin Signal Tree was a mobile biomechanical variant differentiated from the G24 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "골핀신호목은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3424,6 +5192,15 @@
       "anchor": "g24e15-골핀신호목-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A semi-fixed being with orthopedic fixation pins and nerve tissue rising like communication antennas. Drill roots below are embedded in concrete cracks, while bone-pin branches above gather vibration and electronic noise and send directional signals to nearby swarms. It senses heat sources and metal vibrations together, but cannot accurately determine the number or identity of those behind a shield wall."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3435,6 +5212,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It arose when metal fixators, cables, and residual tissue joined inside cracks after an abandoned orthopedic-equipment storehouse at the S08-Dongdaemun Union junction collapsed. Repeated shaking of the medical corridor after Seoul's collapse developed its signaling behavior; it is not treated as a device deliberately made by an outside system."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3446,6 +5232,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Underground intersections and elevator foundations on the Noryangjin Line are its core habitat. When humidity rises seasonally, some young beings move to elevated passageways of the Dongdaemun Union. When excavation or impacts increase on the XT04 outskirts, it responds to the pressure by driving its roots deep and controlling nearby passages."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3457,6 +5252,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " Scrap metal and low-voltage power are its primary resources, with a small amount of organic gel needed to keep its nerve tissue from drying. The amount of metal its roots can reach and the capacity of power lines limit swarm size. When HP10 salvages steel and cables for collapsed-building supports, the Bone-Pin Signal Post may interpret it as cutting away its habitat foundation."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3468,6 +5272,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Its emergence, expansion, stasis, negotiable, and collapse stages appear as changes in antenna resonance. If maintenance fails, bone-pin surfaces corrode and amplify false vibrations, mistaking an impact from one direction for threats coming from many directions. Just before collapse its branches fall and ring like independent alarms, but have almost no ability to move."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3479,6 +5292,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One deepest-rooted primary signal post acts as controller, while nearby walking pin-worms keep watch and carry metal. Hierarchy is determined by signal accuracy, not size; beings that repeat false alarms are disconnected from the line. If F08's combined sensor logs conflict with the primary signal post's reading, it lowers all branches horizontally, suspends judgment, and emits a low-frequency tone requesting human mediation."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3490,6 +5312,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At Stage 1 it inserts bone pins into the floor at regular intervals to make a warning line. At Stage 2 it connects elevator controls and communication lines to its antenna network, disrupting infrastructure. Stage 3 begins if the primary signal post is cut without warning or impacts from XT04 exceed a threshold, and the pin-worm swarm seals the Noryangjin Line intersection with a metal grid."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3501,6 +5332,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Conflict and Response:",
+              "strong": true
+            },
+            {
+              "text": " White noise and irregular strikes can blur its resonance reference; cooling the bone pins slows nerve conduction, after which passages can be sealed one by one. Scrap-metal bait placed in a safe crack can change the direction of its roots. Blowing up the primary signal post may also dislodge pins used as supports and cause a ceiling collapse, so structural stability must be calculated first."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3512,6 +5352,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " With HP10 mediation, supplying discarded cables and designated steel can secure a loan of the warning network as a citizen vibration-monitoring system during set hours. But handing over support scrap metal to maintain the swarm's signals delays reinforcement work in other areas. Conversely, removing it all opens the passage immediately, but also eliminates the biological warning network that detected signs of collapse from XT04 early, along with some structural support on the Noryangjin Line."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3523,6 +5372,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connection:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1 the Bone-Pin Signal Post detects a passage about to collapse, but is mistaken for a being trying to close it with a warning line. In G24-SC3 it serves as a field sensor comparing XT04 impact records with F08 logs; if field personnel preserve the primary signal post, it gives HP10 evacuation routes additional warning time."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3539,6 +5397,7 @@
       "kind": "paragraph",
       "anchor": "g24e15-골핀신호목-p4",
       "text": {
+        "en": "<a id=\"g24e16\"></a>",
         "ko": "<a id=\"g24e16\"></a>"
       }
     },
@@ -3547,6 +5406,7 @@
       "anchor": "g24e16-냉장태반차",
       "depth": 3,
       "text": {
+        "en": "G24E16 · Refrigerated Placenta Cart",
         "ko": "G24E16 · 냉장태반차"
       }
     },
@@ -3555,12 +5415,15 @@
       "anchor": "g24e16-냉장태반차-list1",
       "items": [
         {
+          "en": "Source batch: M039",
           "ko": "출처 배치: M039"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}",
           "ko": "연결: {\"states\":[\"S08\",\"S13\"],\"houses\":[\"HP10\"],\"theaters\":[\"XT04\"],\"synthetics\":[\"F08\"]}"
         }
       ]
@@ -3570,42 +5433,52 @@
       "anchor": "g24e16-냉장태반차-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Refrigerated Placenta Cart was a mobile biomechanical variant differentiated from the G24 common ecology. The local adaptation role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉장태반차은 G24 공통 생태에서 분화한 이동 생체기계 변이다. 지역 적응 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3616,6 +5489,15 @@
       "anchor": "g24e16-냉장태반차-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and Body:",
+              "strong": true
+            },
+            {
+              "text": " A mobile storage body formed from an abandoned neonatal transport cart, refrigerated drawers, and thick tissue sacs. The three wheels beneath its low chassis turn in different directions, letting it rotate in narrow wards; inner sacs preserve organic matter just before fermentation. It mainly senses odors and heat, and guesses where companions are from motor noise, but cannot determine what is inside a closed container."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3627,6 +5509,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " Refrigerated transport equipment abandoned in the S08-Dongdaemun Union medical corridor after the collapse joined with discarded tissue through repeated blackouts and restarts. Residual commands for preservation turned into food-storage behavior, and seasonal temperature differences in Seoul established its long-distance migration habits."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3638,6 +5529,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " In cold seasons it stays near underground refrigerators on the Noryangjin Line that can maintain temperature even with unstable power. In hot seasons it moves to Dongdaemun Union research wards where coolant remains; when pressure rises on the XT04 outskirts, it flees to broad parking ramps to protect its impact-sensitive storage sacs. It prefers gentle slopes and wide doorways."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3649,6 +5549,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " Organic matter and coolant are essential, and it also consumes small amounts of scrap metal to repair wheels and drawer latches. The total volume of its storage sacs and its cooling capacity limit the swarm's growth. It competes with HP10 for resources and space when HP10 restores medicine refrigerators or collects organic waste."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3660,6 +5569,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle and Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Through the stages of emergence, expansion, stasis, negotiable, and collapse, the temperature and odor of its storage sacs change. If its temperature-control panel fails, the organic matter inside ferments rapidly and fills with gas, and the cart rams cooling pipes to cool itself. A being with a blocked safety valve gives off intense heat and a strong odor before rupturing, making early response possible."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3671,6 +5589,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One temperature regulator acts as controller, linking roughly eight carts into a column. The coldest being carries valuable organic matter in the center, while those outside take impacts in its place. If F08 temperature logs differ from its own readings, the column stops before the refrigerator door and does not force the storage room open until a human checks a sample's temperature."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3682,6 +5609,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At Stage 1 it places an empty refrigerated drawer at an entrance as a territorial warning. At Stage 2 it bypasses the ward cooling network, disrupting medicine-storage equipment. Stage 3 occurs when its storage sacs are forcibly seized or the central being in the column overheats; the carts encircle the cold-storage building entrance and seal the stronghold. If this stage lasts, room for negotiation shrinks quickly."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3693,6 +5629,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Conflict and Response:",
+              "strong": true
+            },
+            {
+              "text": " Spray a low-temperature mist to calm overheated beings, use steady motor noise to lure the column to an empty storehouse, and divide its route with ramp barriers. Safe organic waste can also be placed in a bait container to draw it away from the citizen area. Using fire is nearly prohibited because fermentation gas and refrigerant could spread together."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3704,6 +5649,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " In exchange for coolant rations and regular delivery of organic waste, HP10 can borrow night passage time and some refrigerated space. Sharing the space reduces storage for food and medicine, but the swarm shares transport labor. Choosing indiscriminate removal damages refrigeration equipment and contaminating tissue all at once, worsening public hygiene and eliminating a low-temperature transport method usable between the Noryangjin Line and the Dongdaemun Union."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3715,6 +5669,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connection:",
+              "strong": true
+            },
+            {
+              "text": " In G24-SC1 it appears as a conditional carrier able to move HP10 medicine inside the Noryangjin Line; its cooperation time varies with the coolant allotment. In G24-SC2 the actual temperature of an overheated central being is compared with F08 logs to reveal the cause of the lockdown. In G24-SC3 the column, evacuated by XT04 pressure, overlaps with citizen evacuation routes, making the exchange of passage times at the parking ramp the central negotiation."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3732,6 +5695,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -3739,6 +5703,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "The first signs usually appeared not as biological movement but as facility anomalies.",
         "ko": "최초 징후는 대개 생물학적 움직임이 아니라 설비 이상으로 나타난다."
       }
     },
@@ -3746,6 +5711,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "A steady pulsation sounded in suction tubes that should have been empty, the membrane of a decommissioned perfusion cassette slowly swelled, and the water level of floor drain traps rose and fell in time with pump starts.",
         "ko": "비어 있어야 할 흡인관에서 일정한 맥동이 들리고, 사용 중지된 관류 카세트의 막이 천천히 부풀며 바닥 배수 트랩의 수위가 펌프 기동과 맞추어 오르내린다."
       }
     },
@@ -3753,6 +5719,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "Wet tissue fragments set no direction of their own, but they blocked valve gaps or bridged electrodes and changed the machines' judgment conditions.",
         "ko": "젖은 조직편은 스스로 방향을 정하지 않지만 밸브 틈을 막거나 전극 사이를 이어 기계적 판단 조건을 바꾼다."
       }
     },
@@ -3760,6 +5727,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "What the collective could sense was pressure, flow, conductivity, temperature, turbidity, and power state alone.",
         "ko": "집합체가 감지할 수 있는 것은 압력, 유량 전도도 온도 탁도와 전원 상태뿐이다."
       }
     },
@@ -3767,6 +5735,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "It distinguished no faces, posts, or requests.",
         "ko": "사람의 얼굴, 직책 요청은 구분하지 못한다."
       }
     },
@@ -3774,6 +5743,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "Cases that looked like reactions to alarm tones were in fact driven by voltage changes or pump-stop signals arising in the same circuits.",
         "ko": "경보음에 반응하는 것처럼 보이는 사례도 실제로는 같은 회로에서 발생한 전압 변동이나 펌프 정지 신호에 따른 것이다."
       }
     },
@@ -3781,6 +5751,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "The core actions were the five routines of washing, pressurization, perfusion, drainage, and preservation.",
         "ko": "핵심 동작은 세척, 가압 관류 배액 보존의 다섯 루틴이다."
       }
     },
@@ -3788,6 +5759,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "No routine could make a new order of its own; it followed the paths the sensor thresholds and wiring allowed under the supervision keys.",
         "ko": "어느 루틴도 스스로 새 순서를 만들지 못하며, 센서 임계값과 배선 감독 키가 허용한 경로를 따른다."
       }
     },
@@ -3795,6 +5767,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "So in the field its actions could never be fully predicted.",
         "ko": "따라서 현장에서는 동작을 완전히 예측할 수 없다."
       }
     },
@@ -3802,6 +5775,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "Rather than deciding, one had to physically trace which input ran to which relay and valve.",
         "ko": "단정하기보다, 어떤 입력이 어느 릴레이와 밸브까지 이어져 있는지 물리적으로 추적해야 한다."
       }
     },
@@ -3809,6 +5783,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "Fluid isolation was reviewed before power cutoff.",
         "ko": "유체 격리는 전원 차단보다 먼저 검토된다."
       }
     },
@@ -3816,6 +5791,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "With power down, force remained in elastic membranes, gravity head, and accumulators, and auxiliary batteries could sense flow change late.",
         "ko": "전원을 내려도 탄성막, 중력 수두 축압기에는 힘이 남고 보조 배터리가 유량 변화를 뒤늦게 감지할 수 있다."
       }
     },
@@ -3823,6 +5799,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "The supply and recovery sides had to be locked separately, then the middle section depressurized into recovery bags, before piping could be separated safely.",
         "ko": "공급 측과 회수 측을 각각 잠근 뒤 중간 구간을 회수백으로 감압해야 배관을 안전하게 분리할 수 있다."
       }
     },
@@ -3830,6 +5807,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "Aerosolization risk grew when blocked lines were opened hastily.",
         "ko": "에어로졸화 위험은 막힌 관로를 급히 뚫을 때 커진다."
       }
     },
@@ -3837,6 +5815,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "Vents, sinks, and overflow drain traps in particular became bypass outlets of automatic pressure correction.",
         "ko": "특히 통기구, 세면대 오버플로 배수 트랩은 자동 압력 보정의 우회 출구가 된다."
       }
     },
@@ -3844,6 +5823,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "Workers checked gauges behind transparent shields and opened only one low-pressure recovery path at a time.",
         "ko": "작업자는 투명 차폐막 뒤에서 압력계를 확인하고, 한 번에 하나의 저압 회수 경로만 열어야 한다."
       }
     },
@@ -3851,6 +5831,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "Record recovery was a separate engineering problem.",
         "ko": "기록 회수는 별도의 공학 문제다."
       }
     },
@@ -3858,6 +5839,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "Corridor-net controllers judged damaged blocks as cleaning targets, and access from ordinary terminals could send modification signals back with queries.",
         "ko": "복도망 제어기는 손상된 블록을 청소 대상으로 판단하며, 일반 단말기로 접속하면 조회 명령과 함께 수정 신호가 되돌아갈 수 있다."
       }
     },
@@ -3865,6 +5847,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "An electrically isolated optical receiver let the original device keep running while blocking the automatic cleanup commands.",
         "ko": "전기적으로 절연된 광학 수신기를 사용하면 원본 장치를 계속 가동하면서도 자동 정리 명령을 차단할 수 있다."
       }
     },
@@ -3872,6 +5855,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "Capture of essential devices often began at shared docking rails and wet contacts.",
         "ko": "필수 장치 포획은 공용 도킹 레일과 젖은 접점에서 시작되는 경우가 많다."
       }
     },
@@ -3879,6 +5863,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "Controllers mistook connected devices not as equipment for people but as additional pumps or storage.",
         "ko": "제어기는 연결된 장치를 사람을 위한 장비가 아니라 추가 펌프나 저장조로 오인한다."
       }
     },
@@ -3886,6 +5871,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "On separation, power lines and fluid couplings were checked before communication lines, and nothing returned to its original position until an independent battery start test finished.",
         "ko": "분리할 때는 통신선보다 전력선과 유체 커플링을 먼저 확인하고, 독립 배터리 기동 시험이 끝날 때까지 원래 위치로 돌려보내지 않는다."
       }
     },
@@ -3893,6 +5879,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "Supervision keys were not symbols of authority but physical parts limiting circuits.",
         "ko": "감독 키는 권한의 상징이 아니라 회로를 제한하는 물리 부품이다."
       }
     },
@@ -3900,6 +5887,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "Washing, drainage, and movement keys were shaped not to be inserted simultaneously, and each stage's completion was confirmed on separate gauges.",
         "ko": "세척 키, 배액 키 이동 키는 동시에 꽂히지 않도록 형상이 다르며 각 단계의 완료 표시도 별도 계기로 확인한다."
       }
     },
@@ -3907,6 +5895,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "Coordination among field leads focused on which function to allow first, and the collective neither agreed with nor demanded payment for those decisions.",
         "ko": "현장 책임자들 사이의 조정은 어떤 기능을 먼저 허용할지에 집중되고, 집합체는 그 결정에 동의하거나 대가를 요구하지 않는다."
       }
     },
@@ -3914,6 +5903,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "On finding unidentified tissue fragments, preservation and evacuation could demand the same equipment.",
         "ko": "미확인 조직편을 발견했을 때에는 보존과 대피가 같은 설비를 요구할 수 있다."
       }
     },
@@ -3921,6 +5911,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "Holding low-temperature perfusion cut the service carrier's power and loading space; cutting preservation input sent the fragments into the waste flow.",
         "ko": "저온 관류를 유지하면 서비스 운반대의 전력과 적재 공간이 줄고, 보존 입력을 차단하면 조직편은 폐기 흐름으로 넘어간다."
       }
     },
@@ -3928,6 +5919,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p28",
       "text": {
+        "en": "Either way, pressure, fluid, and power records had to be handled as independent boundaries, and before turning the last key, one checked what default state the transport rails and passage doors would return to.",
         "ko": "어느 선택을 하든 압력, 유체 전력 기록을 각각 독립된 경계로 다뤄야 하며 마지막 키를 돌리기 전에 운반 레일과 통로 문이 어떤 기본 상태로 돌아가는지 확인해야 한다."
       }
     }

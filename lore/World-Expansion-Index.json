@@ -5,6 +5,7 @@
   "slug": "world-expansion-index",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "World Expansion Index",
+      "summary": "World Expansion Index",
+      "tense": "past"
+    },
     "ko": {
       "title": "세계 확장 색인",
       "summary": "세계 확장 색인",
@@ -33,6 +39,7 @@
       "anchor": "세계-확장-색인",
       "depth": 1,
       "text": {
+        "en": "World Expansion Index",
         "ko": "세계 확장 색인"
       }
     },
@@ -41,9 +48,11 @@
       "anchor": "세계-확장-색인-list1",
       "items": [
         {
+          "en": "House 32 / Theater 5 / Synthetics 48",
           "ko": "가문 32 / 전구 5 / 합성 48"
         },
         {
+          "en": "Story batches 47 / Ecology 27 / Monster batches 42",
           "ko": "사회배치 47 / 생태 27 / 몬스터배치 42"
         }
       ]

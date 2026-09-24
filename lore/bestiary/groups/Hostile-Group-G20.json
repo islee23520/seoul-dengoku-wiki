@@ -5,6 +5,7 @@
   "slug": "hostile-group-g20",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G20 · Iron-Scale Colony",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G20 · 철비늘군체",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g20-철비늘군체",
       "depth": 1,
       "text": {
+        "en": "G20 · Iron-Scale Colony",
         "ko": "G20 · 철비늘군체"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g20-철비늘군체-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "The Iron-Scale Colony was no stain spread over steel surfaces but a thin laminate moving inside joints. Each lamella looked like a black-gray metal foil, its edges set with fine magnetic studs that interlocked with other pieces. It held most stably in the narrow spaces where compression and shear acted together — around bolt holes, between the toe laps of fillet welds.",
         "ko": "철비늘군체는 강재 표면을 덮는 얼룩이 아니라 접합부 안에서 움직이는 얇은 적층체다. 개별 라멜라는 검은 회색의 금속박처럼 보이고, 가장자리에는 다른 조각과 맞물리는 미세 자성 돌기가 있다. 볼트 구멍 둘레, 필릿 용접의 토우 겹판 사이처럼 압축과 전단이 함께 작용하는 좁은 공간에서 가장 안정적으로 유지된다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The Iron-Scale Colony's common ecology responded passively to facility surfaces and the local environment. The G20E identifiers marked biomechanical variants whose movement and work functions had differentiated within that environment; they were not treated as one individual with the common film or the whole installation.",
         "ko": "철비늘군체의 공통 생태는 시설 표면과 국소 환경에 수동적으로 반응한다. G20E 식별자는 그 환경에서 이동·작업 기능이 분화된 생체기계 변이를 가리키며, 공통 막이나 설비 전체와 같은 개체로 취급하지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "The Iron-Scale Colony was a fictional structural colony first confirmed at steel joints under repeated load. / Thin iron lamellae, like rolled scales, took hold in bolt holes and in the gaps of weld-toe laminates. They moved with stress change, vibration, and the galvanic potential between unlike metals. / The look resembled rust flakes or peeled coating, but the core phenomenon was not the chemical eating of metal; it was the changing of load paths and local stiffness through the lamellar array.",
             "ko": "철비늘군체는 반복 하중을 받는 강재 접합부에서 처음 확인된 가상의 구조성 군체다. / 압연 비늘처럼 얇은 철질 라멜라가 볼트 구멍, 용접 토우 적층판 틈에 자리 잡. 응력 변화와 진동 서로 다른 금속 사이의 갈바닉 전위차에 따라 이동한다. / 외형은 녹 조각이나 박리된 도막과 비슷하지만, 핵심 현상은 금속을 화학적으로 먹어 치우는 것이 아니라 라멜라 배열을 통해 하중 경로와 국부 강성을 바꾸는 데 있다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The bolt holes and fillet-weld toes at the lower dock edge of the shelves in the Ttukseom Union of the Sermon Registry State were the core habitat. / In weeks of heavy sea fog a damp path ran on to the grounding joints of the tower bases in the Mapo Union of the Yeouido Investment Union, and saline freight-packing fragments arriving from XT05 the Incheon Trust Theater widened the lodgment gaps.",
             "ko": "뚝섬 연합 설교명부정 선반 하부 도크 가장자리 볼트 구멍과 필릿 용접 토우가 핵심 서식이다. / 해무가 짙은 주에는 마포 연합 여의도출자연합회 철탑 기단의 접지 이음으로 습윤 경로가 이어지고, XT05 인천신탁전구에서 들어오는 염분 화물 포장 파편이 기착 틈을 넓힌다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "Moisture, salt, weakly acidic wash residue, and unlike-metal contact were the conditions that held the lamellar bond. / As the colony thickened, tools and bolts seized and inspection-walk friction changed, and it competed with the refined iron-powder recovery that HP06 the Jegi-dong Healing Gate had meant to use as an ointment base. / Condensate from F04 the Cold Storage (Naengchang) increased the damp and sped the stacking.",
             "ko": "습기 염분 약산성 세척 잔류 이종 금속 접촉이 라멜라 결속을 유지하는 조건이다. / 군체가 두꺼워질수록 공구와 볼트가 고착되고 점검로 마찰이 바뀌며, HP06 제기동치유문이 연고 기제로 쓰려던 정제 철분 회수와 경합한다. / F04 냉동창고 응축수는 습윤을 늘려 적층을 가속한다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "1 flake adhesion in a joint gap → 2 lamellar lamination under repeated shear → 3 rising contact stiffness and load bypass → 4 relaxation and rearrangement with grounding and vibration change → 5 brittle fragmentation or fixation in resin and separation. The alignment change was a passive response to stress, vibration, and galvanic potential.",
             "ko": "1 접합부 틈 박편 부착 → 2 반복 전단 아래 라멜라 적층 → 3 접촉 강성 상승과 하중 우회 → 4 접지·진동 변화로 이완·재배열 → 5 취성 파편화 또는 레진 고정 후 분리. 배열 변화는 응력·진동·갈바닉 전위차에 대한 수동 반응이다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "Contact-surface compression ratio and shear strain, solid-borne vibration in the roughly 8–420 hertz range, galvanic potential between adjacent metals, presence of electrical grounding through a continuous metal path, magnetic-field gradient. No detection of light, voice, letters, or human intent. No plans, timetables, or ledgers.",
             "ko": "접촉면의 압축률과 전단 변형, 약 8~420헤르츠 범위의 고체 전달 진동, 인접 금속 사이의 갈바닉 전위차, 연속된 금속 경로를 통한 전기적 접지 유무, 자기장 기울기. 빛, 음성, 문자, 인간 의도 감지 불가. 계획·시간표·장부 없음."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "Human structural engineers, operators, and safety officers decided load handover and grounding. The colony responded only passively to stress, vibration, and potential, with no command core.",
             "ko": "인간 구조기술자, 운영자, 안전관리자가 하중 인계와 접지를 결정한다. 군체는 응력·진동·전위에 수동적으로만 반응하며 지휘 핵이 없다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The common facility ecology had no command core. Even the coordinating individuals of the mobile variants reacted only within their assigned conduit or work section, and stood in for neither human facility authority nor unit command.",
         "ko": "공통 시설 생태에는 지휘 핵이 없다. 이동 변이의 조정 개체도 맡은 관로·작업 구간 안에서만 반응하며, 사람의 시설 운영권과 부대 지휘권을 대신하지 않는다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G20E01 · Rail-Scale Bridgeworker",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E01 · 레일각질접공",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           },
           {
+            "en": "Controller",
             "ko": "통제자"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E02 · Vent Seedkeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E02 · 풍구종자수",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E03 · Magnetic-Scale Shepherd",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E03 · 자력비늘목동",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E04 · Drain-Scale Weaver",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E04 · 배수갑편직조체",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E05 · Bridge-Pier Molt Tailor",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E05 · 교각탈피재단사",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E06 · Iron-Dust Gatekeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E06 · 철분진문지기",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M031",
             "ko": "M031"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E07 · Wandering Rust-Herald Chronicler",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E07 · 녹문장 유랑사관",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E08 · Track-Jawed Hauler",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E08 · 궤도턱 운반수",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E09 · Heat-Scraping Wind Organ",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E09 · 열삭풍금",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E10 · Cooling-Sac Sentinel",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E10 · 냉각낭 파수꾼",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E11 · Magnetic-Powder Needle Stitcher",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E11 · 자분침 봉합사",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E12 · Severed-Cable Tuner",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E12 · 폐선율 조율자",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           },
           {
+            "en": "Growth-stage form",
             "ko": "성장 단계형"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E13 · Slag Shepherd",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E13 · 슬래그목동",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           },
           {
+            "en": "Aged-stage form",
             "ko": "노화 단계형"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E14 · Threshold Rake",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E14 · 문턱갈퀴",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           },
           {
+            "en": "Symbiotic form",
             "ko": "공존형"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E15 · Ironwell Diver",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E15 · 철우물 잠항자",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G20E16 · Corridor Bellkeeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G20",
+                  "anchor": "g20e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G20E16 · 회랑종지기",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M032",
             "ko": "M032"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g20e01\"></a>",
         "ko": "<a id=\"g20e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g20e01-레일각질접공",
       "depth": 3,
       "text": {
+        "en": "G20E01 · Rail-Scale Bridgeworker",
         "ko": "G20E01 · 레일각질접공"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g20e01-레일각질접공-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Controller",
           "ko": "기존 역할군: 통제자"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g20e01-레일각질접공-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Command · coordination",
             "ko": "지휘·조정"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Rail-Keratin Splicer was a mobile biomechanical variant differentiated from the G20 common ecology. The command · coordination role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "레일각질접공은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 지휘·조정 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -736,6 +1034,15 @@
       "anchor": "g20e01-레일각질접공-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role·Body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical colony that makes temporary bridges by joining rusty rails and steel frames with scale-shaped metal pieces. Its six pincer legs stack the metal pieces, while an induction coil beneath its abdomen produces fine vibrations that interlock the edges of the scales."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -747,6 +1054,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed after the Collapse when transport rails, rust powder, and biological adhesive film left in the S04·Mapo Union corridor combined. Its habit of reconnecting severed routes became an ingrained survival behavior; it inherited no chain of command from any particular former organization."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -758,6 +1074,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its primary habitat is the abandoned freight platform and cracked rail junctions of the Ttukseom Union. During the rainy season, it moves beneath the Mapo Union’s elevated structures; when ground vibrations increase on the XT05 perimeter, it adds scale bridges in low gaps between steel frames."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -769,6 +1094,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It uses thin scrap metal, rust powder, and repeated floor vibrations as resources. It competes with HP06 recovery teams for sheet metal, but placing bent wire mesh and low-recovery-value bolts in designated piles can separate their work areas."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -780,6 +1114,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle·Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It has five stages—emergence, spread, stasis, negotiability, and disintegration—and the number of new bridgeworkers cannot exceed the available scrap metal nearby. If the polarity of its induction coil becomes distorted, the scale bridge rises and injures passersby; electronic noise must be cut off, then a cold steel plate used to realign it."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -791,6 +1134,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior·Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single bridge core becomes the controller and designates gaps to connect, while groups divide into transport and compression teams. It senses vibration and electronic noise; if the colony rejects a rail that F04 marks as safe, a human mediator conducts a load test."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -802,6 +1154,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it raises scales along the rails as a warning. Moving piled scrap metal without warning causes it to lock rail switches at stage 2; pressing down on a bridge under construction with heavy machinery escalates it to stage 3, when it seals off access to the platform."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -813,6 +1174,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement·Response:",
+              "strong": true
+            },
+            {
+              "text": " Rhythmic noise through the floor lures the transport team onto an empty track, while cooled steel plates and blocking timbers cut off its return route. Providing an alternative scrap pile as a diversion feeding point, rather than burning the adhesive film, can reduce damage to infrastructure."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -824,6 +1194,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation·Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP06 gives up some low-value scrap and grants passage at dawn, the colony reinforces the recovery route during the day. Dismantling all the bridges yields more scrap, but also removes the temporary footpaths used by Ttukseom Union residents, lengthening rescue and distribution times."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -835,6 +1214,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connections:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC1, it offers the option of connecting a severed platform to open a rescue route. In G20-SC2, HP06 negotiates its scrap allocation with the colony; in G20-SC3, the colony changes the direction of its reinforcement ahead of XT05 vibrations, indicating where a collapse is expected."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -851,6 +1239,7 @@
       "kind": "paragraph",
       "anchor": "g20e01-레일각질접공-p4",
       "text": {
+        "en": "<a id=\"g20e02\"></a>",
         "ko": "<a id=\"g20e02\"></a>"
       }
     },
@@ -859,6 +1248,7 @@
       "anchor": "g20e02-풍구종자수",
       "depth": 3,
       "text": {
+        "en": "G20E02 · Vent Seedkeeper",
         "ko": "G20E02 · 풍구종자수"
       }
     },
@@ -867,12 +1257,15 @@
       "anchor": "g20e02-풍구종자수-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\"],\"theaters\":[\"XT05\"]}",
           "ko": "연결: {\"states\":[\"S04\"],\"theaters\":[\"XT05\"]}"
         }
       ]
@@ -882,42 +1275,52 @@
       "anchor": "g20e02-풍구종자수-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Airshaft Seed Sower was a mobile biomechanical variant differentiated from the G20 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "풍구종자수은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -928,6 +1331,15 @@
       "anchor": "g20e02-풍구종자수-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role·Body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical dispersal species that rolls metal scales into seed-like shapes inside vents and sends them into the airflow. Its bellows-shaped thorax draws in dust and rust powder, and pincers on its tail compress them into hollow metal pieces."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -939,6 +1351,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed as organic dust accumulated on damaged blowers and rusty filters in the S04·Mapo Union. It came to interpret ventilation cycles as seasonal signals and developed a colony ecology independent of the facility’s purpose before the Collapse."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -950,6 +1371,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It inhabits underground ventilation rooms and bends in vertical ducts in the Ttukseom Union. During the monsoon season, it moves to dry upper ventilation routes in the Mapo Union; when metallic dust enters from XT05, it clusters around outer air intakes."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -961,6 +1391,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs airflow, rust powder, and organic dust caught on filters. It uses blower blades and filter screens recovered by HP06 as nesting material, so placing discarded filters in a separate vent can spread out the competition."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -972,6 +1411,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life Cycle·Maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Emerging individuals spread along duct bends and enter stasis when the ventilation cycle becomes steady. They pass through a negotiable stage and disintegrate when filter dust is depleted; colony size is limited by total airflow and metal powder. If a thoracic valve sticks, it sends dust flowing backward, so slow, cold airflow must be combined with vibrational cleaning."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -983,6 +1431,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior·Hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The largest bellows core acts as controller and sets the ventilation rhythm, while groups operate as intake and seed-transport teams. It senses smells and vibrations in the air; if its response differs from F04’s air-quality logs, a human mediator takes samples from each duct."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -994,6 +1451,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it drops an empty metal piece in front of an entrance as a warning. Suddenly turning a blower up to maximum output causes it to scatter dust across the sensor network at stage 2; blocking the bellows core’s intake escalates it to stage 3, when it seals off the ventilation room with a membrane of scales."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1005,6 +1471,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement·Response:",
+              "strong": true
+            },
+            {
+              "text": " Regular noise in a duct on the opposite side, accompanied by the smell of discarded filters, can lure the colony away. Settling metallic dust with a cold mist and then sealing one section at a time can restrict its movement while avoiding fire and respiratory harm."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1016,6 +1491,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation·Moral Choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP06 provides discarded filters and one period of low-speed ventilation per day, the colony withdraws from residential-area ducts. But handing over filters with recovery value could delay maintenance of water-purification equipment, while indiscriminate eradication would also eliminate the colony’s function of cleaning blocked ducts."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1027,6 +1511,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario Connections:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC1, the direction from which metal pieces fly helps locate a hidden ventilation passage. In G20-SC2, the colony is party to negotiations over HP06’s allocation of discarded filters; in G20-SC3, it is the first to detect metallic dust entering from XT05."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1043,6 +1536,7 @@
       "kind": "paragraph",
       "anchor": "g20e02-풍구종자수-p4",
       "text": {
+        "en": "<a id=\"g20e03\"></a>",
         "ko": "<a id=\"g20e03\"></a>"
       }
     },
@@ -1051,6 +1545,7 @@
       "anchor": "g20e03-자력비늘목동",
       "depth": 3,
       "text": {
+        "en": "G20E03 · Magnetic-Scale Shepherd",
         "ko": "G20E03 · 자력비늘목동"
       }
     },
@@ -1059,12 +1554,15 @@
       "anchor": "g20e03-자력비늘목동-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"]}"
         }
       ]
@@ -1074,42 +1572,52 @@
       "anchor": "g20e03-자력비늘목동-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Magnetic-Scale Herder was a mobile biomechanical variant differentiated from the G20 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "자력비늘목동은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1120,6 +1628,15 @@
       "anchor": "g20e03-자력비늘목동-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical command species that uses a weak magnetic field to herd scattered iron-scale individuals and organize the route taken by scrap heaps. A rotating magnet sits inside its horseshoe-shaped torso, and its jointed tail weighs the iron fragments it has caught and adjusts the swarm’s speed."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1131,6 +1648,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It emerged after the Collapse when sorting magnets, rusted carriers, and metallic biofilm combined in the S04–Mapo Union corridor. The sorting equipment’s repetitive motion became a behavior for gathering the swarm, which is not under the sustained control of any outside power."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1142,6 +1668,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core territory lies between the nonmagnetic floor and shielding walls of the Ttukseom Union scrap-sorting yard. In winter it moves to the remains of the Mapo Union tram depot; when strong electromagnetic interference comes from XT05, it folds away its magnet and hides beneath the underground rebar network."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1153,6 +1688,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs low-power current, rusted iron fragments, and leftover water to cool its coils. It competes directly with HP06 when HP06 recovers scrap and electrical storage components, but a feed pile with ferrous and nonferrous metals separated can instead improve recovery efficiency."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1164,6 +1708,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It progresses through emergence, spread, stasis, negotiability, and disintegration. Swarm growth is limited by available current and iron mass. When the rotating magnet’s axle wears down, it flings nearby iron fragments at random, so its power must be cut, the axle cooled, and then secured with a ceramic wedge."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1175,6 +1728,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single north-pole core serves as controller, and several herding groups move in a fan formation. It reads electronic noise and floor vibrations but can only infer what is happening beyond the shielding wall. If its judgment conflicts with F04’s metal-sorting results, a human mediator conducts a manual magnet test."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1186,6 +1748,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns by attaching small iron fragments to equipment surfaces. Repeated strong electromagnetic pulses cause it to lock the joints of recovery equipment at stage 2. Separating the north-pole core from the scrap heap raises it to stage 3, when it blocks the sorting-yard entrance with a wall of iron scales."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1197,6 +1768,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Rather than raising its aggression with irregular noise, it should be guided to an empty shielded room with steady vibrations. Cooling its coils, erecting nonmagnetic barriers, and placing an iron-dust feed pile along a detour can split the swarm without weapons."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1208,6 +1788,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP06 supplies limited power and low-cost iron fragments, the colony separates recoverable nonferrous metals to one side. This arrangement cuts into some residents’ charging time, but if forced removal destroys its sorting function, hazardous electrical storage components may become mixed with ordinary scrap."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1219,6 +1808,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC1, it uses an arrangement of iron fragments to reveal the rebar structure of a buried passage. In G20-SC2, it is the key party to a power-allocation agreement with HP06; in G20-SC3, it responds to XT05 electromagnetic interference by indicating a safe shielded area."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1235,6 +1833,7 @@
       "kind": "paragraph",
       "anchor": "g20e03-자력비늘목동-p4",
       "text": {
+        "en": "<a id=\"g20e04\"></a>",
         "ko": "<a id=\"g20e04\"></a>"
       }
     },
@@ -1243,6 +1842,7 @@
       "anchor": "g20e04-배수갑편직조체",
       "depth": 3,
       "text": {
+        "en": "G20E04 · Drain-Scale Weaver",
         "ko": "G20E04 · 배수갑편직조체"
       }
     },
@@ -1251,12 +1851,15 @@
       "anchor": "g20e04-배수갑편직조체-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"]}"
         }
       ]
@@ -1266,42 +1869,52 @@
       "anchor": "g20e04-배수갑편직조체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Drain-Scale Weaver was a mobile biomechanical variant differentiated from the G20 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "배수갑편직조체은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1312,6 +1925,15 @@
       "anchor": "g20e04-배수갑편직조체-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical filter species that weaves lattice-shaped iron scales over drains to catch large debris. It fits metal fragments between its long ribs to make a mesh, while an organic pouch in its abdomen breaks down the filtered waste."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1323,6 +1945,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It appeared after the Collapse when rainwater inlets, rusted wire mesh, and drainage biofilm combined in the S04–Mapo Union corridor. It adapted to catch only coarse debris rather than block the waterway, though that distinction blurs when its maintenance is neglected."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1334,6 +1965,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its main habitats are the underground drainage junctions and the bottoms of ramps in the Ttukseom Union. During the rainy season, it moves to the Mapo Union drainage gates where water disperses; when water pressure rises on the XT05 outskirts, it layers mesh across the widest overflow opening."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1345,6 +1985,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs flowing water, pieces of rusted mesh, and organic drainage waste. Its resources overlap with those HP06 recovers from drains as scrap and sediment, so a sacrificial filter frame installed upstream can be used to adjust where the colony works."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1356,6 +2005,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " After emerging, it makes small lattices, spreads during the monsoon, and enters stasis once water levels stabilize. At the negotiable stage, it opens part of its mesh; in the dry season, it disintegrates. Neither the individuals nor their mesh can grow beyond the supply of incoming metal fragments and waste. If the organic pouches rot, the entire mesh clogs and causes backflow, so it must be chilled until firm and then replaced section by section."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1367,6 +2025,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single central weaving core serves as controller and sets the lattice spacing, while the groups divide into upstream collection teams and downstream reinforcement teams. They detect water vibrations and the smell of waste. If F04’s water-level forecast and the colony’s judgment about opening the mesh differ, a human mediator checks a manual water-level gauge."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1378,6 +2045,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it lays a single line of wet scales across a passage. Contaminating the drainage water or taking away a sacrificial filter frame causes it to block small drains at stage 2. Cutting the mesh directly in front of the weaving core raises it to stage 3, when it seals off the entire junction."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1389,6 +2065,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Make steady tapping sounds upstream and place a sack of organic waste in an empty drain to divert the group. Once cold water has reduced the pouches’ activity, barriers and sealing mesh can be installed without increasing flood risk."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1400,6 +2085,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP06 supplies sacrificial filter frames, the colony opens the central sluice at set times and hands over sedimented scrap. Choosing which drain to open first places either the low-lying residential area or the recovery warehouse at greater risk of flooding; removing the colony also eliminates its long-term ability to filter debris."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1411,6 +2105,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC1, it opens a blocked drainage mesh to secure a rescue route through a flooded structure. In G20-SC2, the priority of sluice access for the HP06 warehouse and the residential area is negotiated; in G20-SC3, deformation of its lattice warns of incoming water pressure from XT05."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1427,6 +2130,7 @@
       "kind": "paragraph",
       "anchor": "g20e04-배수갑편직조체-p4",
       "text": {
+        "en": "<a id=\"g20e05\"></a>",
         "ko": "<a id=\"g20e05\"></a>"
       }
     },
@@ -1435,6 +2139,7 @@
       "anchor": "g20e05-교각탈피재단사",
       "depth": 3,
       "text": {
+        "en": "G20E05 · Bridge-Pier Molt Tailor",
         "ko": "G20E05 · 교각탈피재단사"
       }
     },
@@ -1443,12 +2148,15 @@
       "anchor": "g20e05-교각탈피재단사-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"]}"
         }
       ]
@@ -1458,42 +2166,52 @@
       "anchor": "g20e05-교각탈피재단사-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Pier-Molting Tailor was a mobile biomechanical variant differentiated from the G20 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "교각탈피재단사은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1504,6 +2222,15 @@
       "anchor": "g20e05-교각탈피재단사-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical reinforcement species that peels rusted layers from bridge piers and steel stairways in square scales and weaves them into new support bands. Its scissor jaws cut weakened metal layers, while compression rollers along its spine press scale bands tightly against sound iron surfaces."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1515,6 +2242,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the Collapse, it formed from a mixture of bridge-repair tools, flaking rust layers, and organic adhesive films in the S04–Mapo Union corridor. It retains the habit of reinforcing structures, but works from differences in vibration and heat instead of human blueprints."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1526,6 +2262,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It mainly clings to bridge-pier joints and steel emergency stairs beneath the Ttukseom Union elevated road. When temperatures fall, it moves to sunlit bridge sides in the Mapo Union; when impact vibrations increase on the XT05 outskirts, it concentrates on heavily loaded columns."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1537,6 +2282,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs flaking rust layers, thin sheet iron, organic matter for adhesion, and compression heat. Because it may try to cut up even stair railings that HP06 could recover, scrapped vehicle panels and resin waste must be supplied as substitute materials."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1548,6 +2302,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " Newly emerged work sites spread along structural lines and enter stasis when their support bands close. At the negotiable stage, it can change cutting areas; when materials run out, it disintegrates. The number of workers is limited by the supply of sheet iron. If a compression roller overheats, it tears away even sound iron plate, so a cooling cloth must be applied and a noise signal used to make the roller spin without engaging the surface."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1559,6 +2322,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single cutting core acts as controller and marks cutting lines, while the groups divide the work among stripping, transport, and compression teams. They sense structural vibrations and surface heat. When a cutting line conflicts with F04’s safety rating, a human mediator performs a direct hammer test."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1570,6 +2342,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it lays square rust plates in front of the stairs. Putting a heavy vehicle on a support band under construction causes it to bind the stairs and elevator at stage 2. An attempt to destroy the cutting core’s compression roller raises it to stage 3, when it seals off the bridge-pier access route."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1581,6 +2362,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Produce rhythmic load sounds on an empty steel frame to move the stripping team, and lay down cold scrapped vehicle panels as diversionary feed. Leaving the existing support bands in place while blocking only travel routes and sealing workers into sections avoids weakening the structure."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1592,6 +2382,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP06 hands over scrapped vehicle panels, the colony leaves railings slated for recovery untouched and reinforces designated bridge piers. The same sheet iron must, however, be allocated either to repairing evacuation stairs or to reinforcing bridge piers. Eliminating the entire colony also reduces the means of finding previously invisible areas of flaking."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1603,6 +2402,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC1, it reveals the actual cutting lines on a dangerous bridge pier, allowing the section at risk of collapse to be identified. In G20-SC2, it creates a choice over HP06’s allocation of scrapped vehicle panels; in G20-SC3, it installs temporary support bands in preparation for impacts from XT05."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1619,6 +2427,7 @@
       "kind": "paragraph",
       "anchor": "g20e05-교각탈피재단사-p4",
       "text": {
+        "en": "<a id=\"g20e06\"></a>",
         "ko": "<a id=\"g20e06\"></a>"
       }
     },
@@ -1627,6 +2436,7 @@
       "anchor": "g20e06-철분진문지기",
       "depth": 3,
       "text": {
+        "en": "G20E06 · Iron-Dust Gatekeeper",
         "ko": "G20E06 · 철분진문지기"
       }
     },
@@ -1635,12 +2445,15 @@
       "anchor": "g20e06-철분진문지기-list1",
       "items": [
         {
+          "en": "Source batch: M031",
           "ko": "출처 배치: M031"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"]}"
         }
       ]
@@ -1650,42 +2463,52 @@
       "anchor": "g20e06-철분진문지기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Iron-Dust Gatekeeper was a mobile biomechanical variant differentiated from the G20 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "철분진문지기은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1696,6 +2519,15 @@
       "anchor": "g20e06-철분진문지기-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical sentinel species that hardens iron dust into a circular scale gate at the entrances to substations and metal warehouses, screening passage. An electrostatic comb at the center of its disc-shaped body gathers dust, while jointed arms around its edge open the gate in response to entrants’ vibration patterns."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1707,6 +2539,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It formed after the Collapse when dustproof shutters, electrostatic precipitator plates, and rust-bearing biofilm remaining in the S04–Mapo Union corridor combined. Its function of restricting entry remains, but it distinguishes familiar combinations of noise, heat, and smell rather than identity or affiliation."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1718,6 +2559,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core territory is the abandoned substations and scrap-storage anterooms of the Ttukseom Union. In dry seasons it moves to underground warehouses in the Mapo Union; when electronic noise grows stronger on the XT05 outskirts, it erects scale gates at thick concrete entrances."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1729,6 +2579,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs iron dust, a small amount of stored electrical power, and organic matter for lubrication. When HP06 recovers precipitator plates and stored scrap, it reduces the colony’s gate materials, so low-recovery-value dust bricks can be used in trade."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1740,6 +2599,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It follows a cycle of emergence, spread, stasis, negotiability, and disintegration. The number of gatekeepers is limited by stored charge and iron-dust reserves. If the electrostatic comb becomes contaminated, it cannot distinguish people from equipment and repeatedly closes the gate, so its power must be lowered before it is cooled, cleaned, and lubricated with organic matter."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1751,6 +2619,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " A single threshold core serves as controller and sets the passage rhythm, while each gate group divides responsibility for entry, inspection, and closure. It detects vibrations, smells, and electronic noise but cannot know the intentions of those in concealed spaces. If F04’s access records differ from the colony’s judgment, an HP06 human mediator oversees an on-site passage test."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1762,6 +2639,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns by attaching a thin ring of iron dust to equipment. A vehicle entering without following the passage rhythm causes it to bind shutters and power lines at stage 2. Sending excess current through the threshold core raises it to stage 3, when it seals every entrance to the base with multilayer scale gates."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1773,6 +2659,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Reproduce the approved passage rhythm over a speaker to guide the group into an empty anteroom, and offer cold dust bricks at a diversionary feeding point. Lowering power in stages before installing nonmagnetic barriers and sealing cloth can isolate it without destroying equipment inside the warehouse."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1784,6 +2679,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP06 supplies dust bricks and two charging periods a day, the colony opens separate passage windows for rescue teams and recovery crews. Giving rescue teams more time delays recovery work, while the opposite choice delays the transport of injured people. Indiscriminate removal also eliminates dust control and the deterrent against unauthorized entry."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1795,6 +2699,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC1, discovering the passage rhythm opens a rescue route through an abandoned substation. In G20-SC2, the allocation of time between HP06 recovery crews and rescue teams is mediated; in G20-SC3, its reaction to XT05 electronic noise makes it a warning system just before the base is sealed off."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -1811,6 +2724,7 @@
       "kind": "paragraph",
       "anchor": "g20e06-철분진문지기-p4",
       "text": {
+        "en": "<a id=\"g20e07\"></a>",
         "ko": "<a id=\"g20e07\"></a>"
       }
     },
@@ -1819,6 +2733,7 @@
       "anchor": "g20e07-녹문장-유랑사관",
       "depth": 3,
       "text": {
+        "en": "G20E07 · Wandering Rust-Herald Chronicler",
         "ko": "G20E07 · 녹문장 유랑사관"
       }
     },
@@ -1827,12 +2742,15 @@
       "anchor": "g20e07-녹문장-유랑사관-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}"
         }
       ]
@@ -1842,42 +2760,52 @@
       "anchor": "g20e07-녹문장-유랑사관-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Rust-Document Itinerant Archivist was a mobile biomechanical variant differentiated from the G20 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "녹문장 유랑사관은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1888,6 +2816,15 @@
       "anchor": "g20e07-녹문장-유랑사관-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A biomechanical record-keeping individual of the G20 iron-scale colony, operating in connection with the S04–Mapo Union corridor, HP06 mediation, pressure on the XT05 outskirts, and F04 sensor cooperation. It travels dragging a cloak of thin iron scales and a reagent pouch, causing the oxide layers on metal surfaces to develop color in stages."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -1899,6 +2836,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " It was created after the Collapse to identify the use histories and traces of loads on mixed-up materials. The more it read old surfaces, however, the more it came to treat rust patterns themselves as authoritative evidence."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -1910,6 +2856,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It travels among places where metals from different generations overlap, such as abandoned shipyards, the undersides of bridges, and factory dismantling sites. It sets up a reading stand beneath a movable canopy that shelters it from rain."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -1921,6 +2876,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs a solution for adjusting acidity, clean cotton cloth, and metal reference samples of certain provenance. When samples are scarce, it tries to adopt even accidental stains as official history."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -1932,6 +2896,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " When its iron scales grow dull, residual reagent is washed off with a mild alkaline solution and humidity is kept constant. If maintenance is delayed, traces from different periods bleed into a single color."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -1943,6 +2916,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " The lead reader develops color on the surface, and the scribe scales following it record locations and concentrations. Cross-verified traces take precedence over merely old ones."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -1954,6 +2936,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it develops a single warning rust pattern on the metal beneath someone’s feet. If a forged provenance mark is planted on the sample stand, at stage 2 it classifies dangerous materials as valuables and safe materials as waste, disrupting recovery routes and unloading machines. If the reading stand is forcibly removed, it rises to stage 3 and blocks the yard entrance with a barricade of color-developed iron scales. Negotiation by presenting a reference piece and retrieving the forged mark works only until just before that point."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -1965,6 +2956,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Reagent should first be applied to a sacrificial test piece. Suspect surfaces must be read again under controlled humidity after alkaline cleaning. Separating reading areas also reduces the spread of false marks."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -1976,6 +2976,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " In exchange for a verified recovery map, the colony demands that the legible past of some metal be washed away to provide a reference surface. A choice remains between safe allocation and preserving history."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -1987,6 +2996,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " G20-SC1 addresses where the forged mark first entered, G20-SC2 addresses conflicting ownership histories, and G20-SC3 addresses settlements that would suffer if the map were made public."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2003,6 +3021,7 @@
       "kind": "paragraph",
       "anchor": "g20e07-녹문장-유랑사관-p4",
       "text": {
+        "en": "<a id=\"g20e08\"></a>",
         "ko": "<a id=\"g20e08\"></a>"
       }
     },
@@ -2011,6 +3030,7 @@
       "anchor": "g20e08-궤도턱-운반수",
       "depth": 3,
       "text": {
+        "en": "G20E08 · Track-Jawed Hauler",
         "ko": "G20E08 · 궤도턱 운반수"
       }
     },
@@ -2019,12 +3039,15 @@
       "anchor": "g20e08-궤도턱-운반수-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"]}"
         }
       ]
@@ -2034,42 +3057,52 @@
       "anchor": "g20e08-궤도턱-운반수-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Track-Jaw Carrier was a mobile biomechanical variant differentiated from the G20 common ecology. The elite breakthrough role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "궤도턱 운반수은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 정예 돌파 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2080,6 +3113,15 @@
       "anchor": "g20e08-궤도턱-운반수-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A transport individual whose lower jaw rotates like a continuous track, sorting metal pieces by size. A magnetic pouch in its abdomen holds scrap, while piezoelectric plates in its jawbone read ground vibrations and temperature differences together."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2091,6 +3133,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the Collapse, transport equipment and an organic lubricating film left in the S04–Mapo Union freight corridor became tangled together and formed the iron-scale colony. A group that moved resources along blocked tracks differentiated into track-jawed haulers."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2102,6 +3153,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It uses the track grooves of the Ttukseom Union’s abandoned transfer station as a gathering place. In dry seasons it travels as far as the Mapo Union vehicle depot; when pressure on the XT05 outskirts increases, it stacks scrap into a barricade and retreats behind it."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2113,6 +3173,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " Heavy scrap and energy to drive its jaw are essential; cooling water is used to reduce friction heat. New individuals stop forming when total carrying capacity is reached. Conflicts are frequent when HP06 seeks to use the same scrap to repair bridges."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2124,6 +3193,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It proceeds through emergence–spread–stasis–negotiability–disintegration. During stasis, the jaw track’s eccentricity must be corrected. If maintenance is delayed, it can no longer sort metal pieces and tears up even rails and safety doors as cargo."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2135,6 +3213,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One load-king controller leads the transport line, and the rest move in single file by weight. If the leader stops abruptly, those at the rear set down their loads to reduce the impact. If F04’s load estimate differs from HP06’s on-site measurements, a human mediator designates the actual removal route."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2146,6 +3233,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns by placing a pile of metal on an empty rail. At stage 2, it tears out elevator doors and power-supply equipment, disrupting the transport network. At stage 3, it stacks its load to seal off the transfer hub; if further approaches continue, negotiation soon becomes impossible."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2157,6 +3253,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Metallic noise on the opposite side and a feeding line of low-value scrap can guide the transport line. Cooling pads can reduce jaw friction, after which sealing a track switch can redirect it without damage. Blasting it scatters its load and blocks a wider area."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2168,6 +3273,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " Scrap grades and passage times can be traded under HP06 mediation. Giving the colony only low-value remnants secures repair-grade steel for now, but leaves a risk that haulers seeking scarce alloy components will dismantle civilian facilities."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2179,6 +3293,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC2, it appears as a resource convoy blocking the track a medical train must use. Personnel on site can divert the transport line to a designated yard or concede some of HP06’s emergency repair supplies to buy passage time."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2195,6 +3318,7 @@
       "kind": "paragraph",
       "anchor": "g20e08-궤도턱-운반수-p4",
       "text": {
+        "en": "<a id=\"g20e09\"></a>",
         "ko": "<a id=\"g20e09\"></a>"
       }
     },
@@ -2203,6 +3327,7 @@
       "anchor": "g20e09-열삭풍금",
       "depth": 3,
       "text": {
+        "en": "G20E09 · Heat-Scraping Wind Organ",
         "ko": "G20E09 · 열삭풍금"
       }
     },
@@ -2211,12 +3336,15 @@
       "anchor": "g20e09-열삭풍금-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"synthetics\":[\"F04\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"synthetics\":[\"F04\"]}"
         }
       ]
@@ -2226,42 +3354,52 @@
       "anchor": "g20e09-열삭풍금-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Heat-Shear Pipe Organ was a mobile biomechanical variant differentiated from the G20 common ecology. The elite blocking role applied only at the swarm-consist scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "열삭풍금은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 정예 차단 역할은 무리 편성 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2272,6 +3410,15 @@
       "anchor": "g20e09-열삭풍금-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A ventilation individual that erects rib-shaped metal pipes to expel hot air. Each pipe produces a different resonant sound, and it uses those sounds and its heat sense to identify blocked ventilation shafts and approaching organisms."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2283,6 +3430,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " Iron deposits, filter fibers, and biological membranes combined in the collapsed HVAC corridor of the Ttukseom Union and Mapo Union to form the iron-scale colony. The surviving function of expelling heat became independent within the colony and developed into the heat-scraping wind organ."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2294,6 +3450,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It lives around a closed HVAC room in the Ttukseom Union underground shopping arcade. In winter it migrates seasonally along warm exhaust flows to Mapo Union tunnels; when pressure from heat sources comes in from XT05, it moves its cluster of vents inward."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2305,6 +3470,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It consumes organic filters and cooling water to remove soot from inside its pipes. The amount of available cooling water limits the size of the cluster, and its demand overlaps with HP06’s firefighting reserves."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2316,6 +3490,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through a cycle of emergence–spread–stasis–negotiability–disintegration. During stasis, carbon residue must be shaken from the resonant pipes. If this is not done, their pitch falls, causing it to misread friendly signals as intruder vibrations and send hot air flowing backward."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2327,6 +3510,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " When one main-pipe controller sounds a reference note, groups of smaller pipes exhaust air in sequence. If the reference note stops, the nearest individual merely keeps a temporary beat; it does not assume command. If F04’s acoustic logs do not match the on-site heat distribution, a human mediator sets the ventilation order."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2338,6 +3530,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it emits dissonance and a brief burst of heat as a warning. At stage 2, it overheats ventilators and fire detectors. At stage 3, it seals off the HVAC hub with a curtain of hot air, and the time available for negotiation shrinks rapidly."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2349,6 +3550,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Steady white noise can blur the reference note, and short sprays of cooling water can contract the pipes to create a safe passage. The exhaust should be diverted through an empty shaft rather than blocked completely. Hasty sealing could send toxic smoke back into civilian areas."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2360,6 +3570,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP06 trades organic cleaning filters and a limited amount of cooling water for reduced ventilation output at specified times. Allocating all cooling water solely to civilian areas could rupture the colony’s pipes and cost the entire underground shopping arcade its natural exhaust ventilation as well."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2371,6 +3590,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connections:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC3, it serves as the only exhaust cluster capable of clearing fire smoke. Personnel on site must decide whether to suppress the colony or restore its resonance sequence to manage both dangerous hot air and necessary ventilation."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2387,6 +3615,7 @@
       "kind": "paragraph",
       "anchor": "g20e09-열삭풍금-p4",
       "text": {
+        "en": "<a id=\"g20e10\"></a>",
         "ko": "<a id=\"g20e10\"></a>"
       }
     },
@@ -2395,6 +3624,7 @@
       "anchor": "g20e10-냉각낭-파수꾼",
       "depth": 3,
       "text": {
+        "en": "G20E10 · Cooling-Sac Sentinel",
         "ko": "G20E10 · 냉각낭 파수꾼"
       }
     },
@@ -2403,12 +3633,15 @@
       "anchor": "g20e10-냉각낭-파수꾼-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"]}"
         }
       ]
@@ -2418,42 +3651,52 @@
       "anchor": "g20e10-냉각낭-파수꾼-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Cooling-Bladder Warden was a mobile biomechanical variant differentiated from the G20 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "냉각낭 파수꾼은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2464,6 +3707,15 @@
       "anchor": "g20e10-냉각낭-파수꾼-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A sentry-type creature that carries coolant in a transparent metallic-membrane sac and guards gateways. Its four broad feet detect ground vibrations, while a thermal ring around its neck distinguishes body heat from heat generated by machinery."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2475,6 +3727,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, leaking water and corroded scales in the S04–Mapo Union cooling-pipe corridor acquired a biological sealing membrane, giving rise to the Iron-Scale Colony. A line that had maintained storage pressure became mobile sentries."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2486,6 +3747,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The low-temperature drainage rooms around the Ttukseom Union data archive are its core territory. In summer, it moves to the Mapo Union’s shaded underground reservoirs. When high-heat equipment from the XT05 outskirts approaches, it occupies interior doors first to protect its coolant sac."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2497,6 +3767,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs clean coolant and a small amount of organic matter to repair its sealing membrane. Total storage-sac capacity limits the number of creatures. It competes directly with HP06 when HP06 recovers coolant for generators and medicine storage."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2508,6 +3787,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through emergence-expansion-stasis-negotiable-breakdown stages. During stasis, the sac’s pressure valve must be cleaned. If maintenance fails, even a small temperature change can burst the sac, freezing the floor and leaving the creature unable to use its own route of travel."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2519,6 +3807,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Floodgate Core controller marks boundaries through the spacing of its footfalls. The sentry group forms a wall between coolant sacs rather than pursuing intruders. If F04’s heat-source identification conflicts with residents’ testimony, a human mediator determines the order of approach and safe distance."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2530,6 +3827,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it draws a thin line of frost across the floor as a warning. At stage 2, it freezes valves and electronic locks, bringing infrastructure to a halt. At stage 3, it seals off the storage site with a wall of coolant sacs, increasing pressure until just before the window for negotiation closes."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2541,6 +3847,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Place a warm noise generator in an empty passage to disperse the sentries, conceal heat stimuli with an insulating membrane, then seal the drain. Sudden heating or gunfire should be avoided because it can rupture the sacs and cause widespread freezing."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2552,6 +3867,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " If HP06 supplies purified water and valve parts, it permits passage through the storage facility for a set period. Taking the coolant by force can protect the medicines immediately, but it eliminates the buffer reserve that the Ttukseom Union community and the colony would share during a later heat wave."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2563,6 +3887,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC1, it appears as a moving cooling wall in front of the vaccine storage facility. If negotiations succeed, the sentry itself becomes a device for keeping supplies cold during transport; if they fail, securing a detour becomes the primary objective."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2579,6 +3912,7 @@
       "kind": "paragraph",
       "anchor": "g20e10-냉각낭-파수꾼-p4",
       "text": {
+        "en": "<a id=\"g20e11\"></a>",
         "ko": "<a id=\"g20e11\"></a>"
       }
     },
@@ -2587,6 +3921,7 @@
       "anchor": "g20e11-자분침-봉합사",
       "depth": 3,
       "text": {
+        "en": "G20E11 · Magnetic-Powder Needle Stitcher",
         "ko": "G20E11 · 자분침 봉합사"
       }
     },
@@ -2595,12 +3930,15 @@
       "anchor": "g20e11-자분침-봉합사-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}"
         }
       ]
@@ -2610,42 +3948,52 @@
       "anchor": "g20e11-자분침-봉합사-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Magnetic-Powder Needle Suturer was a mobile biomechanical variant differentiated from the G20 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "자분침 봉합사은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2656,6 +4004,15 @@
       "anchor": "g20e11-자분침-봉합사-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A stitching-type creature that injects magnetic powder into metal cracks with needle-like forelegs. Twin feelers on its head detect electromagnetic noise, while fine hairs on its abdomen detect odors and air vibrations, allowing it to locate leaks and corrosion."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2667,6 +4024,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse of the S04–Mapo Union corridor, scattered iron powder and medical suture fibers became entangled in a biological membrane, giving rise to the Iron-Scale Colony. The group whose gap-filling response grew stronger remained as the Magnetic-Powder Needle Stitchers."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2678,6 +4044,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It lives in the narrow spaces between the outer walls of Ttukseom Union water mains and the surrounding walls. In seasons when water pressure falls, it moves to Mapo Union reservoirs. As excavation vibrations from XT05 intensify, the colony gathers wherever cracks are most numerous."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2689,6 +4064,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs iron-rich scrap powder and organic matter for its stitching membrane. The amount of usable powder limits how far it can multiply, and it competes with HP06 for materials used to repair water-purification equipment."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2700,6 +4084,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It follows an emergence-expansion-stasis-negotiable-breakdown cycle. During stasis, the needles’ polarity must be realigned. If this fails, it stitches up gaps in functioning valves as well as cracks, driving water pressure abnormally high."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2711,6 +4104,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Polarity Matrix controller divides work zones with pulses of its magnetic field. Stitching groups gather first at the largest leaks but do not intrude on lines already assigned to another group. If F04’s leak map disagrees with actual pressure-gauge readings, a human mediator marks the points to stitch first."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2722,6 +4124,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it leaves a red line of magnetic powder to warn against approaching. At stage 2, it magnetizes meter readers and valve sensors, causing malfunctions. At stage 3, it stitches shut every door gap and gateway, blocking the water-purification site as the time available for negotiation nearly runs out."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2733,6 +4144,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Use a panel of opposite polarity to draw the magnetic powder toward empty pipes, then seal work areas in sequence while keeping vibrations low. A strong electromagnetic shock would also damage nearby medical devices and water-pressure sensors, so a localized response is needed."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2744,6 +4164,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP06 can purify contaminated iron powder and supply it in exchange for jointly setting stitching priorities. Scraping away the entire colony would open blocked inspection hatches, but the tiny leaks it has sealed could all burst at once, collapsing the civilian water-supply network."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2755,6 +4184,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC2, it serves as an on-site technician for saving a water-purification pipe before time runs out. If the field team works with residents to find the actual leak line instead of relying solely on F04 logs, they can redirect the Stitcher’s work."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2771,6 +4209,7 @@
       "kind": "paragraph",
       "anchor": "g20e11-자분침-봉합사-p4",
       "text": {
+        "en": "<a id=\"g20e12\"></a>",
         "ko": "<a id=\"g20e12\"></a>"
       }
     },
@@ -2779,6 +4218,7 @@
       "anchor": "g20e12-폐선율-조율자",
       "depth": 3,
       "text": {
+        "en": "G20E12 · Severed-Cable Tuner",
         "ko": "G20E12 · 폐선율 조율자"
       }
     },
@@ -2787,12 +4227,15 @@
       "anchor": "g20e12-폐선율-조율자-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Growth-stage form",
           "ko": "기존 역할군: 성장 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}"
         }
       ]
@@ -2802,42 +4245,52 @@
       "anchor": "g20e12-폐선율-조율자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Growth variant",
             "ko": "성장 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Dead-Line-Rate Tuner was a mobile biomechanical variant differentiated from the G20 common ecology. The growth variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "폐선율 조율자은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 성장 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2848,6 +4301,15 @@
       "anchor": "g20e12-폐선율-조율자-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A tuning-type creature that hooks severed cables onto a rotating ring on its chest to synchronize pulses of current. Its antenna plate detects electromagnetic noise, and resonating plates at the tips of its feet sense transformer vibrations. A well-tuned section functions as a temporary power grid."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -2859,6 +4321,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, cables, oxidized metal, and biological insulation left in the Ttukseom Union and Mapo Union power corridors combined to form the Iron-Scale Colony. Creatures that stabilized irregular residual currents became Severed-Cable Tuners."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -2870,6 +4341,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " It moves through cable ducts centered on the Ttukseom Union’s abandoned substation. In seasons of low power demand, it moves to the Mapo Union’s solar-storage building. When strong electromagnetic noise from the XT05 outskirts reaches it, it retreats behind shielding walls."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -2881,6 +4361,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs low-voltage residual energy and an organic insulating membrane. The total load its rotating rings can bear limits the colony’s size. Allocation disputes arise when HP06 tries to recover emergency power."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -2892,6 +4381,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through emergence-expansion-stasis-negotiable-breakdown stages. During stasis, the rotating ring’s phase must be reset. If this fails, it sends power to a ground wire instead of its intended users, blacking out the entire district."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -2903,6 +4401,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Reference Beat controller sets the current cycle, and the tuning group connects one section at a time, as though playing in an ensemble. No creature independently takes hold of a high-voltage line. If F04’s power forecast conflicts with on-site relay readings, a human mediator chooses the order of loads."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -2914,6 +4421,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it warns through flickering lights. At stage 2, it disrupts the frequencies of elevators and communications relays. At stage 3, it hooks cable loops across doors and stairs to seal off the substation site, with the window for negotiation nearly closed."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -2925,6 +4441,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Feed regular electromagnetic noise into a decoy circuit to change what it tunes, slow the rings with low-temperature shielding fabric, then seal off unnecessary lines. Cutting all power at once could stop stabilization devices used by both the hospital and the colony."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -2936,6 +4461,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP06 can offer a power-allocation schedule by time of day in exchange for passage and temporary transmission. Diverting all power to civilian areas reduces immediate harm, but the old grounding network maintained by the colony could collapse, causing a larger fire during the next overload."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -2947,6 +4481,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC3, it appears at a power junction where the team must decide whether to restore the evacuation broadcast circuit or the operating room circuit first. Depending on the outcome of negotiations, the Tuner becomes either a hazard or a temporary power relay."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -2963,6 +4506,7 @@
       "kind": "paragraph",
       "anchor": "g20e12-폐선율-조율자-p4",
       "text": {
+        "en": "<a id=\"g20e13\"></a>",
         "ko": "<a id=\"g20e13\"></a>"
       }
     },
@@ -2971,6 +4515,7 @@
       "anchor": "g20e13-슬래그목동",
       "depth": 3,
       "text": {
+        "en": "G20E13 · Slag Shepherd",
         "ko": "G20E13 · 슬래그목동"
       }
     },
@@ -2979,12 +4524,15 @@
       "anchor": "g20e13-슬래그목동-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Aged-stage form",
           "ko": "기존 역할군: 노화 단계형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}"
         }
       ]
@@ -2994,42 +4542,52 @@
       "anchor": "g20e13-슬래그목동-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Aged variant",
             "ko": "노화 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Slag Herder was a mobile biomechanical variant differentiated from the G20 common ecology. The aged variant role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "슬래그목동은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 노화 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3040,6 +4598,15 @@
       "anchor": "g20e13-슬래그목동-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A herding-type creature that drives small masses of iron scales formed from solidified molten waste. Its broad tail disperses scent particles, while horn-shaped thermocouples distinguish hot waste from the body heat of living things."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3051,6 +4618,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse of the S04–Mapo Union industrial corridor, slag, food waste, and a corrosive biological membrane combined to form the Iron-Scale Colony. A line that gathered scattered masses of resources in one place became the Slag Shepherd."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3062,6 +4638,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core grazing ground is the ash transport route beneath the Ttukseom Union incinerator. In cold seasons, it moves to the Mapo Union workshop district, where residual heat remains. When a large heat source approaches from the XT05 outskirts, it evacuates its herd of masses first."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3073,6 +4658,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It feeds the slag masses both heat-retaining scrap metal and low-grade organic matter to sustain them. The total food supply limits the size of the herd and affects HP06’s fuel-recovery and waste-processing plans."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3084,6 +4678,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It progresses through five stages: emergence-expansion-stasis-negotiable-breakdown. During stasis, the scent gland in its tail must be cleaned. If this fails, the herd loses its guiding scent marks and scatters toward the warmth and food smells of residential areas."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3095,6 +4698,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Scent-Guide Core controller positions the Shepherds with scent marks, and each Shepherd tends only a set number of masses. When dispersed, they prioritize regrouping over pursuit. If F04 thermal-imaging records differ from residents’ reports of scent trails, a human mediator establishes a safe route for guiding the herd."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3106,6 +4718,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it scatters warm metal granules along the boundary. At stage 2, it occupies waste conveyors and heating ducts. At stage 3, it seals off the incinerator site with a herd of solidified slag, intensifying its food signal until just before the window for negotiation closes."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3117,6 +4738,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Lay an organic-scent lure leading to an empty ash-processing yard, reduce the slag’s mobility with cooling plates, then seal the entrances. Spraying large quantities of water could send contaminated runoff into residential areas, so drainage routes must be blocked first."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3128,6 +4758,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP06 can gain passage through the incinerator by supplying sorted food waste and a safe area with residual heat. Driving out the Shepherds would free up space for waste, but scattered slag masses would turn residential heating pipes into a food source."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3139,6 +4778,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC1 and G20-SC2, it serves respectively as a mobile herd of waste blocking an evacuation route and a heat-storage source that can ease fuel shortages. The field team’s design of the guiding route changes the resources available in both scenarios."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3155,6 +4803,7 @@
       "kind": "paragraph",
       "anchor": "g20e13-슬래그목동-p4",
       "text": {
+        "en": "<a id=\"g20e14\"></a>",
         "ko": "<a id=\"g20e14\"></a>"
       }
     },
@@ -3163,6 +4812,7 @@
       "anchor": "g20e14-문턱갈퀴",
       "depth": 3,
       "text": {
+        "en": "G20E14 · Threshold Rake",
         "ko": "G20E14 · 문턱갈퀴"
       }
     },
@@ -3171,12 +4821,15 @@
       "anchor": "g20e14-문턱갈퀴-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Symbiotic form",
           "ko": "기존 역할군: 공존형"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}"
         }
       ]
@@ -3186,42 +4839,52 @@
       "anchor": "g20e14-문턱갈퀴-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Cooperation · coexistence",
             "ko": "협력·공존"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Threshold Rake was a mobile biomechanical variant differentiated from the G20 common ecology. The cooperation · coexistence role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "문턱갈퀴은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 협력·공존 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3232,6 +4895,15 @@
       "anchor": "g20e14-문턱갈퀴-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A gateway-type creature that scratches doorframes and tunnel entrances to measure passage width. Pressure-sensitive whiskers on its rake arms read vibrations and the force of contact. A scent plate beneath its jaw distinguishes familiar groups of travelers, but cannot tell what lies inside an obscured space."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3243,6 +4915,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, shutter fragments and biological sensing membranes in the S04–Mapo Union disaster-prevention corridor combined to form the Iron-Scale Colony. A response that tested the load and width of passages persisted as the Threshold Rake line."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3254,6 +4935,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Its core territory is the doorframes of connecting doors at the Ttukseom Union air-raid shelter. In seasons when population movement decreases, it moves to Mapo Union logistics gates. When pressure from the XT05 outskirts increases, it occupies narrow gateways one by one, starting with the narrowest."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3265,6 +4955,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs thin scrap metal to replenish its rake tips and coolant to moisten its sensing plates. The number of doorframes it controls and the resources available limit population growth. It comes into conflict with HP06 when HP06 tries to dismantle shelter doors for reuse."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3276,6 +4975,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It follows emergence-expansion-stasis-negotiable-breakdown stages. During stasis, the left and right rakes must be made equal in length. If one side wears down, it judges even a safe width to be an asymmetric hazard and blocks people and equipment alike."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3287,6 +4995,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Gate Emblem Core controller sets the permitted width and rhythm of passage, while the gateway group stands in two facing lines. It pushes back only those who ignore its warnings and does not pursue them far. If F04 entry records differ from the on-site personnel roster, a human mediator updates the actual list of people permitted through."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3298,6 +5015,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it leaves three scratches on the doorframe. At stage 2, it disconnects automatic doors and evacuation guide lights, disrupting infrastructure. At stage 3, it interlocks its rakes to seal off the air-raid shelter site, reaching the point just before the window for negotiation closes."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3309,6 +5035,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Send a steady sound of footsteps toward an empty doorway to shift its guard rhythm, cool the rake joints to slow them, then seal gateways not in use. A frontal rush could collapse the doorframe and crush the crowd, so staggering passage times is safer."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3320,6 +5055,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP06 can borrow the passage by displaying equipment widths, headcount, and passage times on a marked board and supplying spare doorframes. Destroying the gateway creatures to speed an urgent evacuation would also eliminate their ability to detect collapse loads, endangering civilians who follow."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3331,6 +5075,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC2, it appears as a gateway enforcing a restricted order of entry into the air-raid shelter. The field team must negotiate the order of medical equipment, residents, and the HP06 recovery team, and correct errors in F04’s roster on site."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3347,6 +5100,7 @@
       "kind": "paragraph",
       "anchor": "g20e14-문턱갈퀴-p4",
       "text": {
+        "en": "<a id=\"g20e15\"></a>",
         "ko": "<a id=\"g20e15\"></a>"
       }
     },
@@ -3355,6 +5109,7 @@
       "anchor": "g20e15-철우물-잠항자",
       "depth": 3,
       "text": {
+        "en": "G20E15 · Ironwell Diver",
         "ko": "G20E15 · 철우물 잠항자"
       }
     },
@@ -3363,12 +5118,15 @@
       "anchor": "g20e15-철우물-잠항자-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"]}"
         }
       ]
@@ -3378,42 +5136,52 @@
       "anchor": "g20e15-철우물-잠항자-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Iron-Well Diver was a mobile biomechanical variant differentiated from the G20 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "철우물 잠항자은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3424,6 +5192,15 @@
       "anchor": "g20e15-철우물-잠항자-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " A diving-type creature that travels between drainage shafts and flooded tunnels, sucking up sediment from the bottom. The lateral line of its cylindrical body detects underwater vibrations, while a heat-sensitive spot on its back detects heat from pump motors. An internal sieve sorts the metal debris it takes in."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3435,6 +5212,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the S04–Mapo Union waterway corridor collapsed, pump parts, rust sediment, and microbial films combined to form the Iron-Scale Colony. A line that gathered resources underwater became the Ironwell Diver."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3446,6 +5232,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " The middle depths of the Ttukseom Union’s large drainage shaft are its main habitat. In seasons when water levels fall, it moves to Mapo Union stormwater tunnels. If excavation pressure from the XT05 outskirts disturbs groundwater channels, it retreats to a more stable underground reservoir."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3457,6 +5252,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It consumes scrap-metal particles in the water and energy leaking from pump drives, and needs clean coolant to wash its sieve. Sediment levels in each drainage shaft limit group size, and it competes with HP06 for recovered pump parts."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3468,6 +5272,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It proceeds through emergence-expansion-stasis-negotiable-breakdown stages. During stasis, its internal filter plate must be backwashed. If this fails, its intake becomes blocked and it pushes surrounding water away indiscriminately, suddenly flooding low-lying areas."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3479,6 +5292,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Depth Core controller assigns diving depths through water-pressure waves, and the divers sweep different layers. They do not pursue targets above the surface for long. If F04’s water-level forecast differs from on-site staff-gauge readings, a human mediator decides when to start the pumps."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3490,6 +5312,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it leaves concentric rings and rusty foam on the water’s surface. At stage 2, it blocks drainage sensors and pump intake screens. At stage 3, the divers link their bodies to seal the drainage-shaft entrance, while water levels at which negotiation remains possible disappear rapidly."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3501,6 +5332,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Install an underwater vibrator in an empty reservoir to draw the group away, flow cool, clean water along a line like bait, then seal the floodgates in stages. Electrical attacks would also endanger underwater equipment and rescue personnel, so they are best avoided."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3512,6 +5352,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " HP06 can negotiate drainage times on the condition that it washes the filter plates and lets the divers keep some of the sedimented scrap metal. Removing all the divers would make pump access easier, but the metal debris they had been clearing would accumulate and block the drainage network in the next heavy rain."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3523,6 +5372,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " In G20-SC3, this is a key colony that affects both the time remaining before flooding and the time available for negotiation. The field team must choose whether to start the pumps immediately or guide the colony away first to preserve long-term drainage capacity."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3539,6 +5397,7 @@
       "kind": "paragraph",
       "anchor": "g20e15-철우물-잠항자-p4",
       "text": {
+        "en": "<a id=\"g20e16\"></a>",
         "ko": "<a id=\"g20e16\"></a>"
       }
     },
@@ -3547,6 +5406,7 @@
       "anchor": "g20e16-회랑종지기",
       "depth": 3,
       "text": {
+        "en": "G20E16 · Corridor Bellkeeper",
         "ko": "G20E16 · 회랑종지기"
       }
     },
@@ -3555,12 +5415,15 @@
       "anchor": "g20e16-회랑종지기-list1",
       "items": [
         {
+          "en": "Source batch: M032",
           "ko": "출처 배치: M032"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"],\"scenarios\":[\"G20-SC1\",\"G20-SC2\"]}",
           "ko": "연결: {\"states\":[\"S04\",\"S09\"],\"houses\":[\"HP06\"],\"theaters\":[\"XT05\"],\"synthetics\":[\"F04\"],\"scenarios\":[\"G20-SC1\",\"G20-SC2\"]}"
         }
       ]
@@ -3570,42 +5433,52 @@
       "anchor": "g20e16-회랑종지기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Biomechanical variant",
             "ko": "생체기계 변이"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Corridor Bell Keeper was a mobile biomechanical variant differentiated from the G20 common ecology. The local adaptation role applied only at the independent-unit scope, and stood in for neither the whole colony's ecological order nor human command.",
             "ko": "회랑종지기은 G20 공통 생태에서 분화한 이동 생체기계 변이다. 지역 적응 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -3616,6 +5489,15 @@
       "anchor": "g20e16-회랑종지기-list3",
       "items": [
         {
+          "en": [
+            {
+              "text": "Role and body:",
+              "strong": true
+            },
+            {
+              "text": " An alarm-type creature that presses its bell-shaped thorax against the floor to relay vibrations throughout the corridor. An internal clapper distinguishes footsteps from the sounds of collapse, while thermal bands on its outer shell read changes in the heat emitted by approaching objects. It does not know everything happening at a distance; if the relay is interrupted, its detection range shrinks."
+            }
+          ],
           "ko": [
             {
               "text": "역할·신체:",
@@ -3627,6 +5509,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Origin:",
+              "strong": true
+            },
+            {
+              "text": " After the collapse, alarm equipment, iron scales, and a biological vibration membrane in the S04–Mapo Union connecting corridor combined to form the Iron-Scale Colony. A relay line that coordinated the movements of several groups remained as the Corridor Bellkeeper."
+            }
+          ],
           "ko": [
             {
               "text": "기원:",
@@ -3638,6 +5529,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Habitat:",
+              "strong": true
+            },
+            {
+              "text": " Junctions in the Ttukseom Union transfer corridor are its core habitat. During seasonal migrations, it sets up temporary rows of bells in Mapo Union border tunnels. When it detects pressure from the XT05 outskirts, it signals the colony inside to retreat and moves last itself."
+            }
+          ],
           "ko": [
             {
               "text": "서식:",
@@ -3649,6 +5549,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Needs:",
+              "strong": true
+            },
+            {
+              "text": " It needs a small amount of energy to move its clapper, scrap metal to repair its resonating plate, and organic matter for its vibration membrane. The total resources recoverable from the corridor limit the number of bell rows, bringing it into competition with HP06’s communications-equipment recovery team."
+            }
+          ],
           "ko": [
             {
               "text": "필요:",
@@ -3660,6 +5569,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Life cycle and maintenance:",
+              "strong": true
+            },
+            {
+              "text": " It passes through five stages: emergence-expansion-stasis-negotiable-breakdown. During stasis, the cushioning ring around its internal clapper must be replaced. If this fails, it amplifies even a small falling sound into a signal of massive collapse, calling several groups to the gateway at once."
+            }
+          ],
           "ko": [
             {
               "text": "생애·정비:",
@@ -3671,6 +5589,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Behavior and hierarchy:",
+              "strong": true
+            },
+            {
+              "text": " One Great Bell controller directs the entire row of bells, while groups of Small Bells relay only signals for their assigned sections. If the Great Bell falls silent, each group stops where it is rather than advancing on its own. If F04’s synthesized alarm conflicts with HP06 reconnaissance reports, a human mediator takes charge of interpreting the signal and issuing evacuation orders."
+            }
+          ],
           "ko": [
             {
               "text": "행동·위계:",
@@ -3682,6 +5609,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Escalation:",
+              "strong": true
+            },
+            {
+              "text": " At stage 1, it announces a warning appearance with a single low note. At stage 2, it produces continuous tones that interfere with communications devices and railway signals. At stage 3, it summons several groups to the junction to seal off the site; this is the final warning before the window for negotiation closes."
+            }
+          ],
           "ko": [
             {
               "text": "상승:",
@@ -3693,6 +5629,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Engagement and response:",
+              "strong": true
+            },
+            {
+              "text": " Use sound-absorbing membranes to quiet a particular corridor and play regular guiding tones on the opposite side to turn the bell row in that direction. Rather than destroying the Great Bell, stop its clapper with a cooled clamp and seal the side passage to prevent the groups from converging in panic."
+            }
+          ],
           "ko": [
             {
               "text": "교전·대응:",
@@ -3704,6 +5649,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Negotiation and moral choice:",
+              "strong": true
+            },
+            {
+              "text": " An HP06 intermediary can bundle safe passage times, cushioning rings, and shared alarms into a deal. Silencing the Bellkeeper would avoid a blockade for now, but both civilians and the colony would learn of collapse vibrations coming from the XT05 direction later than they otherwise would."
+            }
+          ],
           "ko": [
             {
               "text": "교섭·도덕 선택:",
@@ -3715,6 +5669,15 @@
           ]
         },
         {
+          "en": [
+            {
+              "text": "Scenario connection:",
+              "strong": true
+            },
+            {
+              "text": " It functions as an alarm variable linking G20-SC1, G20-SC2, and G20-SC3. Whether its bell signal was preserved or distorted in one scenario changes the colony’s placement in the next corridor, HP06’s recovery time, and the reliability of F04’s alarms."
+            }
+          ],
           "ko": [
             {
               "text": "시나리오 연결:",
@@ -3732,6 +5695,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -3739,6 +5703,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "The Iron-Scale Colony was no stain spread over steel surfaces but a thin laminate moving inside joints.",
         "ko": "철비늘군체는 강재 표면을 덮는 얼룩이 아니라 접합부 안에서 움직이는 얇은 적층체다."
       }
     },
@@ -3746,6 +5711,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "Each lamella looked like a black-gray metal foil, its edges set with fine magnetic studs that interlocked with other pieces.",
         "ko": "개별 라멜라는 검은 회색의 금속박처럼 보이고, 가장자리에는 다른 조각과 맞물리는 미세 자성 돌기가 있다."
       }
     },
@@ -3753,6 +5719,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "It held most stably in the narrow spaces where compression and shear acted together — around bolt holes, between the toe laps of fillet welds.",
         "ko": "볼트 구멍 둘레, 필릿 용접의 토우 겹판 사이처럼 압축과 전단이 함께 작용하는 좁은 공간에서 가장 안정적으로 유지된다."
       }
     },
@@ -3760,6 +5727,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "Under repeated load the lamellae lay down in the shear direction and stacked upon one another.",
         "ko": "반복 하중이 걸리면 라멜라는 전단 방향으로 눕고 서로 포개진다."
       }
     },
@@ -3767,6 +5735,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "The lamination filled gaps of tens of micrometers and raised the contact surface's friction and stiffness.",
         "ko": "이 적층은 수십 마이크로미터의 간극을 메우면서 접촉면의 마찰과 강성을 높인다."
       }
     },
@@ -3774,6 +5743,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "As a result a joint's deformation might fall, but the force once passing through it was pushed to the neighboring bolt rows or the ends of the reinforcing plates.",
         "ko": "그 결과 한 접합부의 변형은 줄어들 수 있지만, 원래 그곳을 통과하던 힘은 옆 볼트열이나 보강판 끝으로 밀려난다."
       }
     },
@@ -3781,6 +5751,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "An inspector reading only the reduced sag and judging the state improved could easily miss a fatigue crack already growing.",
         "ko": "점검자가 처짐 감소만 보고 상태가 좋아졌다고 판단하면 이미 성장 중인 피로균열을 놓치기 쉽다."
       }
     },
@@ -3788,6 +5759,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "The fatigue memory the colony left was a material state with direction.",
         "ko": "군체가 남기는 피로 기억은 방향성을 가진 물질 상태다."
       }
     },
@@ -3795,6 +5767,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "Along long-repeated load axes the lamellar overlaps and magnetic-domain micro-cracks aligned, and the array remained after the load stopped.",
         "ko": "오래 반복된 하중축을 따라 라멜라의 겹침, 자구 미세 균열이 정렬되며 하중이 멈춘 뒤에도 그 배열이 남는다."
       }
     },
@@ -3802,6 +5775,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "Fixing a specimen in resin and cutting its section let one infer past shear direction and the order of load transfer.",
         "ko": "표본을 레진으로 고정해 단면을 절단하면 과거 전단 방향과 하중 전이 순서를 추정할 수 있다."
       }
     },
@@ -3809,6 +5783,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "Conversely, mixing it away with a wire brush or grinder made this record unrecoverable.",
         "ko": "반대로 와이어 브러시나 연마기로 섞어 버리면 이 기록은 복원할 수 없다."
       }
     },
@@ -3816,6 +5791,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "Vibration promoted movement but did not produce the same response at every frequency.",
         "ko": "진동은 이동을 촉진하지만 모든 주파수에 같은 반응을 만들지는 않는다."
       }
     },
@@ -3823,6 +5799,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "Lamellar movement stood out mostly in solid-borne vibration of roughly 8–420 hertz, accumulating at pressure nodes and dense gaps rather than on large-amplitude free faces.",
         "ko": "대체로 8~420헤르츠의 고체 전달 진동에서 라멜라 이동이 뚜렷하며, 진폭이 큰 자유면보다 압력 마디와 조밀한 틈에 축적된다."
       }
     },
@@ -3830,6 +5807,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "Stopping the pumps or cranes might look safe, yet as the natural frequencies changed, the lamellar positions the colony maintained could shift too.",
         "ko": "펌프나 크레인을 정지하면 안전해 보일 수 있으나, 고유진동수가 변하면서 군체가 유지하던 적층 위치도 달라질 수 있다."
       }
     },
@@ -3837,6 +5815,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "That was why the modal shapes before and after a shutdown had to be compared.",
         "ko": "설비 정지 전후의 모달 형상을 비교해야 하는 이유다."
       }
     },
@@ -3844,6 +5823,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "Galvanic potential influenced the lamellae's alignment and bond.",
         "ko": "갈바닉 전위차는 라멜라의 정렬과 결속에 영향을 준다."
       }
     },
@@ -3851,6 +5831,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "Where galvanized members, carbon steel, and copper grounding tabs joined, conductive fibers lay along the potential gradient.",
         "ko": "아연도금 부재와 탄소강, 구리 접지편이 이어진 곳에서는 전도성 섬유가 전위 기울기를 따라 놓인다."
       }
     },
@@ -3858,6 +5839,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "Grounding, beyond a mere electrical safety facility, became a condition of the colony's distribution, so separating the braid without notice could relax a wide range of lamination at once.",
         "ko": "접지는 단순한 전기 안전 설비를 넘어 군체의 분포 조건이 되므로, 브레이드를 예. 없이 분리하면 넓은 범위의 적층이 동시에 이완될 수 있다."
       }
     },
@@ -3865,6 +5847,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "Then even the structural sensors' reference potential shook, and real deformation overlapped measurement error.",
         "ko": "이때 구조 센서의 기준 전위까지 흔들려 실제 변형과 계측 오류가 겹친다."
       }
     },
@@ -3872,6 +5855,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "Field management began with visualizing the load path.",
         "ko": "현장 관리는 우선 하중 경로를 가시화하는 데서 시작한다."
       }
     },
@@ -3879,6 +5863,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "Strain gauges were not stuck to one member alone but arrayed across the neighboring bolt rows and bracing, and acoustic-emission sensors cross-checked new cracks' positions.",
         "ko": "스트레인 게이지를 한 부재에만 붙이지 않. 인접 볼트열과 브레이싱까지 배열하며, 음향방출 센서로 새 균열의 위치를 교차 확인한다."
       }
     },
@@ -3886,6 +5871,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "With hydraulic jacks the target load was split into stages, waiting at each until deflection and bolt axial force steadied.",
         "ko": "유압 잭을 사용할 때는 목표 하중을 여러 단계로 나누고 각 단계에서 처짐과 볼트 축력이 안정될 때까지 기다린다."
       }
     },
@@ -3893,6 +5879,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "Making a fully unloaded state in haste pulled the lamellar wedges out and caused shock transfer.",
         "ko": "급하게 완전 무하중 상태를 만들면 라멜라 쐐기가 빠지며 충격성 전이가 발생한다."
       }
     },
@@ -3900,6 +5887,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "The sacrificial steel coupon was a replaceable receptor for drawing the colony out of the parent structure.",
         "ko": "희생 강재 쿠폰은 군체를 본 구조에서 떼어 내기 위한 교체식 수용체다."
       }
     },
@@ -3907,6 +5895,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "Thin low-carbon plates were machined with micro slots of differing width, and potential was controlled with insulating bushings and a limited grounding braid.",
         "ko": "얇은 저탄소강 판에 폭이 다른 미세 슬롯을 가공하고 절연 부싱과 제한된 접지 브레이드로 전위차를 조절한다."
       }
     },
@@ -3914,6 +5903,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "When enough lamellae had gathered, both sides were first pressed with rigid clamps to fix the lamination, then the braid cut and the plate separated.",
         "ko": "쿠폰에 라멜라가 충분히 모이면 먼저 양쪽을 강체 클램프로 눌러 적층을 고정한 다음 브레이드를 차단하고 판을 분리한다."
       }
     },
@@ -3921,6 +5911,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "Reverse the order and the captured lamellae scattered back into the joint.",
         "ko": "순서를 바꾸면 포획된 라멜라가 접합부 안으로 다시 흩어진다."
       }
     },
@@ -3928,6 +5919,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p28",
       "text": {
+        "en": "Magnetic and vibratory capture was used around closed sections and cable ducts hard to approach.",
         "ko": "자기·진동 포획은 접근하기 어려운 폐단면이나 케이블 덕트 주변에서 사용한다."
       }
     },
@@ -3935,6 +5927,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p29",
       "text": {
+        "en": "A magnetic yoke laid a gentle gradient toward the steel cassette, and a piezo shaker applied narrow-band vibration not overlapping the structure's natural frequencies.",
         "ko": "자기 요크가 강재 카세트 쪽으로 완만한 기울기를 만들고 압전 셰이커가 구조 고유진동수와 겹치지 않는 협대역 진동을 가한다."
       }
     },
@@ -3942,6 +5935,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p30",
       "text": {
+        "en": "Stronger excitation raised no efficiency — the lamellae could shatter into brittle fragments.",
         "ko": "가진을 세게 하면 효율이 높아지는 것이 아니라 라멜라가 취성 파편으로 깨질 수 있다."
       }
     },
@@ -3949,6 +5943,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p31",
       "text": {
+        "en": "The cassette mass and nearby bearing vibration were monitored together and a ceiling set.",
         "ko": "카세트 질량, 주변 가속도 베어링 진동을 함께 감시하며 상한을 정해야 한다."
       }
     },
@@ -3956,6 +5951,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p32",
       "text": {
+        "en": "In demolition judgment, immediate stability collided with preserving deformation history.",
         "ko": "철거 판단에서는 즉각적인 안정과 변형 이력 보존이 충돌한다."
       }
     },
@@ -3963,6 +5959,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p33",
       "text": {
+        "en": "A bay at risk of collapse was separated with remote jacks and cutting gear, but the lamellar array and residual deformation beyond the cut line were first photographed, measured, and fixable as specimens.",
         "ko": "붕괴 가능성이 있는 베이는 원격 잭과 절단 장비로 분리하되, 절단선 밖의 라멜라 배열과 잔류변형은 먼저 촬영·계측하. 표본으로 고정할 수 있다."
       }
     },
@@ -3970,6 +5967,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p34",
       "text": {
+        "en": "Full demolition quickly lowered approach risk but erased the cause of load redistribution, leaving the same weakness in the redesign.",
         "ko": "전면 철거는 접근 위험을 빠르게 낮추지만 하중 재분배의 원인을 지워 재시공 설계에 같은 취약점을 남길 수 있다."
       }
     },
@@ -3977,6 +5975,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p35",
       "text": {
+        "en": "Conversely, keeping unstable members long for the record could let grounding loss or a small vibration change cause sudden load transfer, so the scope of preservation was limited to structurally isolatable sections.",
         "ko": "반대로 기록 보존을 이유로 불안정 부재를 오래 유지하면 접지 상실이나 작은 진동 변화가 갑작스러운 하중 전이를 일으킬 수 있으므로, 보존 범위는 구조적으로 격리 가능한 구간으로 제한한다."
       }
     }

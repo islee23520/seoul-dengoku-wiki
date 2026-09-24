@@ -5,6 +5,7 @@
   "slug": "hostile-group-g27",
   "status": "draft",
   "tense": {
+    "en": "past",
     "ko": "past"
   },
   "provenance": {
@@ -21,6 +22,11 @@
     ]
   },
   "locales": {
+    "en": {
+      "title": "G27 · Deep Trilobite Corps",
+      "summary": "The ecology and variant codex",
+      "tense": "past"
+    },
     "ko": {
       "title": "G27 · 심층삼엽군",
       "summary": "생태·변이 도감",
@@ -33,6 +39,7 @@
       "anchor": "g27-심층삼엽군",
       "depth": 1,
       "text": {
+        "en": "G27 · Deep Trilobite Corps",
         "ko": "G27 · 심층삼엽군"
       }
     },
@@ -40,6 +47,15 @@
       "kind": "paragraph",
       "anchor": "g27-심층삼엽군-p1",
       "text": {
+        "en": [
+          {
+            "text": "The ecology and variant codex",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          }
+        ],
         "ko": [
           {
             "text": "생태·변이 도감",
@@ -56,6 +72,7 @@
       "anchor": "공통종과-변이종",
       "depth": 2,
       "text": {
+        "en": "Common Forms and Variants",
         "ko": "공통종과 변이종"
       }
     },
@@ -63,6 +80,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p1",
       "text": {
+        "en": "From the end of the submerged stair fourteen rows of footplate marks turned upward. The Water Compact's sluice gallery had reported drainage finished, but the trilobite-form scout still groped the floor. The Deep-Trilobite Swarm was a lineage of biomimetic robots that before the collapse had taken charge of deep inspection of sluices, conduits, and sewers, and of flood rescue.",
         "ko": "물에 잠긴 계단 끝에서 열네 줄의 발판 자국이 위로 돌아 나온다. 급수계약정 급수계약정의 수문 갤러리는 배수가 끝났다고 보고했지만 삼엽충형 정찰기는 아직 바닥을 더듬는다. 심층삼엽군은 붕괴 이전 수문·관로·하수의 심층 검사와 침수 구조를 맡았던 생물모방 로봇 계보다."
       }
     },
@@ -70,6 +88,7 @@
       "kind": "paragraph",
       "anchor": "공통종과-변이종-p2",
       "text": {
+        "en": "The Deep-Trilobite Swarm was not a living ancient organism but a lineage of pre-collapse work machines. The G27E identifiers marked machine types and derivatives split from existing chassis forms, and meant neither biological breeding nor natural evolution.",
         "ko": "심층삼엽군은 살아 있는 고대 생물이 아니라 붕괴 이전 작업 기계의 계보다. G27E 식별자는 기존 차체 형식에서 갈라진 기종·파생형이며, 생물의 번식이나 자연 진화를 뜻하지 않는다."
       }
     },
@@ -78,6 +97,7 @@
       "anchor": "생태-정보",
       "depth": 2,
       "text": {
+        "en": "Ecology Information",
         "ko": "생태 정보"
       }
     },
@@ -86,58 +106,72 @@
       "anchor": "생태-정보-table1",
       "columns": [
         {
+          "en": "Item",
           "ko": "항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Origin",
             "ko": "기원"
           },
           {
+            "en": "Before the collapse, deep-inspection and flood-rescue platforms for sluices, conduits, and sewers borrowed the forms of ancient marine life and combined three types of unit. / Trilobite-shaped belly-crawling scouts swept pipe floors; ammonite-shaped buoys and pressurized chambers served as rescue waiting rooms and acoustic reference points; and coelacanth-shaped deep-diving patrol units traveled back and forth through flooded utility tunnels. / They are a lineage of biomimetic robots whose movements are produced by joints and buoyancy chambers, not a species that grows biological tissue. / When the collapse severed the correspondence table linking the upper-level work network to maintenance drawings, they entered prolonged dormancy on maintenance cradles in the Water Compact's sluice gallery, the Ttukseom Union Sermon Registry State's pump conduits, and a Han River sediment-deposition zone. / Later, pump re-energization and rising water levels coincided in the same inspection cycle, reviving the sealed charging contacts. / The awakened units read the last flood-assessment table instead of a new rescue request. / In their surviving action records, transporting survivors and removing foreign objects use the same entrance coordinates, but the original conditions for distinguishing the two have not been deciphered. / That unreadable design intent is the crux of their Lost Technology status; it is not treated as proof of malice or full personhood.",
             "ko": "붕괴 이전 수문·관로·하수 심층 검사 및 침수 구조 플랫폼은 고대 해양 생물의 형태를 빌려 세 기체를 묶었다. / 삼엽충형 복부 주행 정찰기는 관 바닥을 훑었고, 암모나이트형 부이·가압 챔버는 구조 대기실과 음향 기준점을 겸했으며 실러캔스형 심층 잠항 순찰기는 침수 공동구를 왕복했다. / 생물 조직이 자라는 종이 아니라 관절과 부력실로 몸짓을 구현한 생물모방 로봇 계보다. / 붕괴 때 상위 작업망과 정비 도면의 대응표가 끊기자 급수계약정 급수계약정 수문 갤러리, 뚝섬 연합 설교명부정 펌프 관로 한강 하적 침전 구역의 정비 받침에서 장기 휴면했다. / 이후 펌프 재통전과 수위 상승이 같은 점검 주기에 겹치며 봉인된 충전 접점이 살아났다. / 깨어난 기체는 새 구조 요청 대신 마지막 침수 판정표를 읽는다. / 남은 동작 기록에는 생존자 운반과 이물질 제거가 같은 입구 좌표를 쓰지만, 원래 어떤 조건으로 둘을 나눴는지는 해독되지 않았다. / 이 읽을 수 없는 설계 의도가 로스트 기술의 핵심이며, 이를 악의나 완전한 인격의 증거로 단정하지 않는다."
           }
         ],
         [
           {
+            "en": "Habitat · movement",
             "ko": "서식·이동"
           },
           {
+            "en": "The flooded lower cradles in the Water Compact's sluice gallery and the inspection tanks in the Ttukseom Union's pump conduits are the two maintenance bases. / No single dedicated pipe connects the bases; units travel through drains that are actually open and through the Han River sediment-deposition zone. / When the water level falls, only the trilobite-shaped units remain on wet pipe floors, while the large buoys and diving units withdraw to deep sediment troughs. / When tidal changes in the XT02 West Sea Granary Theater alter the Water Compact's drainage schedule, even branch pipes previously recorded as dry become inspection targets. / This is a physical change in water level, not an attack order sent by an outside theater. / They cannot breach the partition between sewage and raw-water sections themselves, and they do not automatically enter pipes carrying treated water. / Blocked sections remain turnaround points, and pursuit on land is limited to a trilobite-shaped unit's brief crossing of a gallery.",
             "ko": "급수계약정 수문 갤러리의 물찬 하부 받침과 뚝섬 연합 펌프 관로의 점검 수조가 양쪽 정비 거점이다. / 두 거점 사이를 하나의 전용 배관으로 잇지 않으며 기체는 실제로 열린 배수구와 한강 하적 침전 구역을 거쳐 이동한다. / 수위가 낮아지면 삼엽충형만 젖은 관저에 남고 큰 부이와 잠항기는 깊은 침전 홈으로 물러난다. / XT02 서해곡창전구의 조위 변동 때문에 급수계약정 배수 일정이 바뀌면 이전에 마른 것으로 기록된 가지관까지 검사 대상이 된다. / 이는 물리적 수위 변화이지 외부 전구가 보내는 공격 명령이 아니다. / 하수 구획과 원수 구획 사이의 격벽은 스스로 뚫지 못하며, 정수된 물의 공급관에 무조건 진입하지 않는다. / 막힌 구간은 회항 지점으로 남고 육상 추격은 삼엽충형의 짧은 갤러리 횡단에 한정된다."
           }
         ],
         [
           {
+            "en": "Diet · energy",
             "ko": "먹이·에너지"
           },
           {
+            "en": "They obtain energy through wired charging at active maintenance cradles and from recovered sealed battery canisters. / They do not use flowing water itself as an unlimited power source. / Thirty percent of the charge for each sortie is reserved for the return trip; below that level, docking takes priority over inspection. / They need joint seals, sacrificial anodes, pressure membranes, filter screens, and breathing-gas cylinders for the pressurized chambers. / Water cools their outer hulls, but sediment clogging heat-exchange gaps reduces the number of sorties instead. / Organic matter is something to remove, not food, and wash water must be collected separately in a recovery tank. / They use the same stock of seals as HP01 Yeongdeungpo Sluice House's pump maintenance crew, so preserving more of the group pushes civilian pump repairs further back in the queue. / They have no facilities for making new pressure hulls or filling air cylinders underwater. / Anodes and footholds can be transferred from damaged units, but a hull that fails its pressure test remains a cradle for parts.",
             "ko": "에너지는 살아 있는 정비 받침의 유선 충전과 회수된 밀폐 축전통에서 얻는다. / 흐르는 물 자체를 무한 동력으로 삼지 않는다. / 한 출항의 축전 삼십 퍼센트는 복귀 몫으로 묶고 그 아래에서는 검사보다 도킹을 우선한다. / 필요한 물자는 관절 패킹 희생 양극 압력막 여과망과 가압 챔버의 호흡 기체통이다. / 물은 외벽 냉각에 쓰지만 침전물이 열교환 틈을 막으면 오히려 출항을 줄인다. / 유기물은 먹이가 아니라 제거 대상이며 세척수는 회수조에서 따로 받아야 한다. / HP01 영등포수문가의 펌프 정비반과 같은 패킹 재고를 쓰므로 군집을 살릴수록 시민 펌프 수리 순번이 늦어진다. / 수중에서 새 압력 선체를 만들거나 공기통을 채울 설비는 없다. / 손상 기체의 양극과 발판만 옮겨 달 수 있고, 압력 시험을 통과하지 못한 선체는 부품 받침으로 남는다."
           }
         ],
         [
           {
+            "en": "Life · maintenance",
             "ko": "생애·정비"
           },
           {
+            "en": "The life cycle has five stages: emergence, expansion, stagnation, negotiation, and dissolution. / Emergence begins when restored charging contacts coincide with a water-level alarm, triggering dormant inspections. / During expansion, the next inspection tank reached by the ammonite-type unit’s reference tone is added to the patrol schedule. / Stagnation occurs when leaking seals or depleted sacrificial anodes prevent the units from maintaining their round-trip depth. / The negotiation stage begins when people present measured pressure and safe docking values together, allowing a fixed hazard designation to be suspended. / Dissolution is completed by separating the reference buoy’s work schedule and sealing each unit on an unloaded support. / They cannot produce new units; only the return of repaired dormant units counts as a recovery in numbers. / Environmental adaptation stays within existing adjustment ranges: widening the spacing between ventral footholds in thick mud, folding the fins in narrow pipes, and reducing acoustic output and travel speed when reflections are severe. / They cannot acquire a new organ or a new design rule for passing through a blocked pipe. / Even after maintenance, they cannot recover all the original criteria used to assess structures.",
             "ko": "생애는 출현, 확산 정체 협상가능 와해의 다섯 단계다. / 출현은 충전 접점 복구와 수위 경보가 겹쳐 휴면 검사가 시작되는 때다. / 확산에서는 암모나이트형의 기준음이 닿는 다음 점검 수조가 순찰표에 붙는다. / 정체는 패킹 누수나 양극 소진으로 왕복 깊이를 유지하지 못하는 상태다. / 협상가능 단계는 사람이 실측 압력과 도킹 안전값을 함께 제시해 고착된 위험 표를 보류시키는 때다. / 와해는 기준 부이의 작업표를 분리하고 각 기체를 무부하 받침에 봉인해 끝낸다. / 새 개체 생산은 불가능하고 수리된 휴면 기체가 돌아오는 것만 수적 회복으로 센다. / 환경 적응은 진흙이 두꺼우면 복부 발판 간격을 벌리고, 관이 좁으면 지느러미를 접. 반사가 심하면 음향 출력과 이동 속도를 낮추는 기존 조절 범위 안에서 일어난다. / 막힌 관을 통과할 새 기관이나 새 설계 규칙은 얻지 못한다. / 정비 중에도 원래의 구조 판정 조건을 전부 되찾지는 못한다."
           }
         ],
         [
           {
+            "en": "Senses",
             "ko": "감각"
           },
           {
+            "en": "They combine readings of ventral contact pressure, short-range acoustic round-trip time, differences in water pressure, water conductivity, and limited images through turbid water. / Multiple reflections in metal pipes make the same person appear to be several obstacles, while pump bubbles erase the distance to moving targets. / They may mistake a floating waterproof tarp for a person wearing breathing equipment, treating both as the same rescue bundle. / Sonar cannot establish the identity or survival of a person beyond a wall, and the units do not maintain a constant connection to surface radio or a citywide surveillance network. / F11’s observation records are used only as comparison data while a field cable is connected. / Conflicting readings can cause an inspection in that section to be suspended, but a single F11 reading does not become a key that opens every door.",
             "ko": "복부 접촉압 근거리 음향 왕복 시간 수압 차이 물의 전도도와 제한된 탁도 영상을 겹쳐 읽는다. / 금속 관의 다중 반사는 같은 사람을 여러 장애물로 보이게 하고 펌프 기포는 움직이는 대상의 거리를 지운다. / 떠다니는 방수포와 호흡 장비가 달린 사람을 같은 구조 포대로 오인할 수 있다. / 소나가 벽 너머 사람의 신원이나 생사를 확정하지 못하며, 수면 위 무선과 도시 전체 감시망에 상시 접속하지 않는다. / F11의 관측 기록은 현장 케이블을 연결한 동안 비교 자료로만 쓰인다. / 값이 충돌하면 해당 구획 검사를 보류할 수 있지만 F11의 한 번의 판독이 모든 문을 여는 열쇠가 되지는 않는다."
           }
         ],
         [
           {
+            "en": "Group behavior",
             "ko": "집단 행동"
           },
           {
+            "en": "Work order, rather than command authority, establishes the hierarchy. / Ammonite-type units hold the section’s reference water pressure and return coordinates; coelacanth-type units check whether long pipes are passable; and trilobite-type units transmit traces of contact with the bottom. / A reference buoy cannot command units outside its assigned section, and a submersible returns along its last return route if the reference tone cuts out. / A trilobite-type unit’s foreign-material flag alone cannot seal a chamber, but if an old hazard designation remains, the sealing sequence continues without a new check. / HP01 keeps the floodgate keys separately, while F11 assists with measurement and recordkeeping. / A citizen observer must check the inspection sheet, and two duty officers must each authorize their section key before a passage window for people can be registered. / The swarm is given neither authority over the state’s water supply nor authority to determine a person’s legal status.",
             "ko": "지휘권 대신 작업 순서가 위계를 만든다. / 암모나이트형이 구획의 수압 기준과 귀환 좌표를 붙잡고 실러캔스형이 긴 관로의 통과 가능 여부를 확인하며 삼엽충형이 바닥 접촉 흔적을 보낸다. / 기준 부이는 맡은 구획 밖 기체에 명령하지 못하고 잠항기는 기준음이 끊기면 마지막 귀환선으로 돌아간다. / 삼엽충형의 이물질 표시만으로 챔버를 밀폐할 수는 없으나, 오래된 위험 표가 남아 있으면 재확인 없이 밀폐 순서가 이어진다. / HP01은 수문 키를 분할 보관하며 F11은 측정과 기록을 보조한다. / 시민 참관인이 점검표를 대조하고 두 당직이 각자 구역 키를 승인해야 사람 통행 창을 등록한다. / 군집에게 국가의 급수 명령권이나 사람의 법적 지위를 판정할 권한은 주지 않는다."
           }
         ]
@@ -148,6 +182,7 @@
       "anchor": "개체와-전장-편성",
       "depth": 2,
       "text": {
+        "en": "Units and Battle Formation",
         "ko": "개체와 전장 편성"
       }
     },
@@ -155,6 +190,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p1",
       "text": {
+        "en": "The machine controller adjusted only work sequence and return lines. It could form neither combat command nor human legal judgment, and the human watch's halt and approval orders took precedence.",
         "ko": "기체의 컨트롤러는 작업 순서와 귀환선만 조정한다. 전투 지휘나 사람의 법적 판단을 만들지 못하며, 인간 당직의 중지·승인 명령이 우선한다."
       }
     },
@@ -162,6 +198,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p2",
       "text": {
+        "en": "The player gave units movement, guard, engagement, withdrawal, and specialist work orders. The counters below were the acts of units executing those orders, not a skill list for directly controlling heroes. The human soldier squad's cap of twenty and the separate hero rules were not carried over into counts of animals or machines.",
         "ko": "플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다."
       }
     },
@@ -170,27 +207,43 @@
       "anchor": "개체와-전장-편성-table3",
       "columns": [
         {
+          "en": "Unit · specialty",
           "ko": "개체·전문"
         },
         {
+          "en": "Class",
           "ko": "구분"
         },
         {
+          "en": "Battlefield unit",
           "ko": "전장 단위"
         },
         {
+          "en": "Battlefield role",
           "ko": "전장 역할"
         },
         {
+          "en": "Legacy role group",
           "ko": "기존 역할군"
         },
         {
+          "en": "Source batch",
           "ko": "출처 배치"
         }
       ],
       "rows": [
         [
           {
+            "en": [
+              {
+                "text": "G27E01 · Palace Fourteen-Leg",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e01"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E01 · 관저열네발",
@@ -203,23 +256,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Reconnaissance · pathfinding",
             "ko": "정찰·선도"
           },
           {
+            "en": "Vanguard",
             "ko": "첨병"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E02 · Spiral Lung Buoy",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e02"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E02 · 나선숨통부이",
@@ -232,23 +300,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E03 · Sediment Fin Patrol Unit",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e03"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E03 · 침전지느러미순찰체",
@@ -261,23 +344,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E04 · Helmet Tail Shoal Keeper",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e04"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E04 · 투구꼬리여울지기",
@@ -290,23 +388,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           },
           {
+            "en": "Local variant",
             "ko": "지역 변종"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E05 · Long Shell Reference Buoy",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e05"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E05 · 긴껍질기준부이",
@@ -319,23 +432,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           },
           {
+            "en": "Trade specialist",
             "ko": "직능 특수형"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E06 · Glass Cap Floating Eye",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e06"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E06 · 유리갓부유눈",
@@ -348,23 +476,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E07 · Long Snout Cruiser",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e07"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E07 · 긴주둥이순항기",
@@ -377,23 +520,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Maneuver · flank",
             "ko": "기동·우회"
           },
           {
+            "en": "Mobility specialist",
             "ko": "기동 특수형"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E08 · Deep Jaw Large Cruiser",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e08"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E08 · 깊은턱대순항체",
@@ -406,23 +564,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           },
           {
+            "en": "Second elite",
             "ko": "두 번째 정예"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E09 · Eight Arm Anchor Station",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e09"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E09 · 여덟팔착저기",
@@ -435,23 +608,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E10 · Ink Back Deep Cruiser Mother Ship",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e10"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E10 · 먹물등심층모선",
@@ -464,23 +652,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Protection · cover",
             "ko": "방호·엄호"
           },
           {
+            "en": "Guardian",
             "ko": "수호자"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E11 · Rice Hull Trilobite Swarm",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e11"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E11 · 쌀껍질삼엽떼",
@@ -493,23 +696,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           },
           {
+            "en": "Common ecology form",
             "ko": "일반 생태형"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E12 · Flower Arm Hydraulic Observation Post",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e12"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E12 · 꽃팔수압관측주",
@@ -522,23 +740,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           },
           {
+            "en": "Environmental strongpoint form",
             "ko": "환경 거점형"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E13 · Spindle Return Needle",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e13"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E13 · 방추귀환침",
@@ -551,23 +784,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           },
           {
+            "en": "Maneuver · flank",
             "ko": "기동·우회"
           },
           {
+            "en": "Mobility specialist",
             "ko": "기동 특수형"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E14 · Twin-Shell Wall Eye",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e14"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E14 · 쌍껍질벽눈",
@@ -580,23 +828,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Damage variant",
             "ko": "손상 변이"
           },
           {
+            "en": "Damage-stage form",
             "ko": "손상 단계형"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E15 · Sea-Scorpion Line Retriever",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e15"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E15 · 바다전갈줄회수기",
@@ -609,23 +872,38 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           },
           {
+            "en": "First elite",
             "ko": "첫 번째 정예"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ],
         [
           {
+            "en": [
+              {
+                "text": "G27E16 · Spiral Reference Throne",
+                "link": {
+                  "domain": "bestiary",
+                  "slug": "groups/Hostile-Group-G27",
+                  "anchor": "g27e16"
+                }
+              }
+            ],
             "ko": [
               {
                 "text": "G27E16 · 나선기준왕좌",
@@ -638,18 +916,23 @@
             ]
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           },
           {
+            "en": "Scenario boss",
             "ko": "시나리오 보스"
           },
           {
+            "en": "M042",
             "ko": "M042"
           }
         ]
@@ -659,6 +942,7 @@
       "kind": "paragraph",
       "anchor": "개체와-전장-편성-p4",
       "text": {
+        "en": "<a id=\"g27e01\"></a>",
         "ko": "<a id=\"g27e01\"></a>"
       }
     },
@@ -667,6 +951,7 @@
       "anchor": "g27e01-관저열네발",
       "depth": 3,
       "text": {
+        "en": "G27E01 · Palace Fourteen-Leg",
         "ko": "G27E01 · 관저열네발"
       }
     },
@@ -675,12 +960,15 @@
       "anchor": "g27e01-관저열네발-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Vanguard",
           "ko": "기존 역할군: 첨병"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -690,42 +978,52 @@
       "anchor": "g27e01-관저열네발-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Reconnaissance · pathfinding",
             "ko": "정찰·선도"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Pipe-Floor Fourteen-Feet was a machine chassis type differentiated from the G27 common ecology. The reconnaissance · pathfinding role applied only at the swarm-consist scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "관저열네발은 G27 공통 생태에서 분화한 기계 기종다. 정찰·선도 역할은 무리 편성 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -736,30 +1034,39 @@
       "anchor": "g27e01-관저열네발-list3",
       "items": [
         {
+          "en": "Role and Body: A trilobite-shaped scout flatly attached to the palace sequentially drives fourteen abdominal footplates beneath its carapace. The two forward probes measure sediment thickness and the small rear scraper exposes only the inspection surface.",
           "ko": "역할·신체: 관저에 납작하게 붙은 삼엽충형 첨병이며 등껍질 아래 열네 복부 발판을 순차 구동한다. 앞쪽 두 탐침으로 침전 두께를 재고 뒤의 작은 긁개로 검사면만 드러낸다."
         },
         {
+          "en": "Origin: A pre-collapse scout unit responsible for corrosion inspection of sluice and sewer palaces awoke on a support in the Water Compact sluice gallery. The condition table that excluded survivors' rescue lines is not readable, so even thin lines are marked as sediment foreign matter.",
           "ko": "기원: 수문·하수 관저의 부식 검사를 맡던 붕괴 이전 정찰기가 급수계약정 수문 갤러리 받침에서 깨어났다. 생존자의 구조줄을 제외하던 조건표는 읽히지 않아 가는 줄도 침전 이물질로 표시한다."
         },
         {
+          "en": "Habitat and Needs: It connects shallow inspection grooves and the edges of Han River sediment deposition zones. It uses footplate packing and sacrificial anodes, leaving thirty percent of stored power for return and avoiding long overland pursuits.",
           "ko": "서식·필요: 얕게 물찬 점검 홈과 한강 하적 침전 구역 가장자리를 잇는다. 발판 패킹과 희생 양극을 쓰며 축전 삼십 퍼센트를 귀환 몫으로 남겨 긴 육상 추격을 하지 않는다."
         },
         {
+          "en": "Life Cycle and Maintenance: When shaking off mud it folds the footplates from front to back without lifting the whole body. Probes of worn-anode units accumulate corrosion noise; without cradle replacement they shorten the inspection line.",
           "ko": "생애·정비: 진흙을 털 때 몸 전체를 들지 않고 앞에서 뒤로 발판을 접는다. 양극이 닳은 개체의 탐침에는 부식 잡음이 쌓이고, 정비 받침에서 교체하지 못하면 검사선을 짧게 접는다."
         },
         {
+          "en": "Behavior and Hierarchy: It is the lowest measuring unit that transmits foot-contact traces to an ammonite-type reference buoy. It reads a slow stretcher pull as flow-trapped debris but has no authority to judge human life or death from that report alone.",
           "ko": "행동·위계: 발밑 접촉 흔적을 암모나이트형 기준 부이에 전달하는 최하위 측정체다. 들것의 느린 당김을 흐름에 걸린 찌꺼기로 읽지만 그 보고만으로 사람의 생사를 판정할 권한은 없다."
         },
         {
+          "en": "Escalation: Stage 1 sign is fourteen line marks left on drained railings. Stage 2 has the scraper collecting rescue lines and at Stage 3 multiple inspectors overlap and occupy the inspection grooves people step on.",
           "ko": "상승: 1단계의 징후는 배수 끝난 난간에 남은 열네 줄 자국이다. 2단계에는 긁개가 구조줄을 모으고, 3단계에는 여러 검사체가 겹쳐 사람이 디딜 점검 홈을 차지한다."
         },
         {
+          "en": "Engagement and Countermeasures: Lower a detachable test plate beside the palace to guide the probe and footplates, then cut the drive contact. Breaking the carapace can sever the rescue lines beneath, so first confirm whether a person is at the load end.",
           "ko": "교전·대응: 분리형 시험판을 옆 관저에 내려 탐침과 발판을 유도한 뒤 구동 접점을 끊는다. 등판을 부수면 아래 구조줄까지 끊을 수 있으므로 하중 끝에 사람이 있는지 먼저 확인한다."
         },
         {
+          "en": "Negotiation and Moral Choice: Match H27's contact record with the real test plate and register the inspection-complete status of one compartment. Power can be cut to release lines immediately, but the cost is that humans must then perform crack inspection underwater.",
           "ko": "교섭·도덕 선택: H27의 접촉 기록과 실물 시험판을 맞춰 한 구획의 검사 완료 상태를 등록한다. 당장 줄을 풀기 위해 전원을 끊을 수도 있지만 이후 균열 검사를 사람이 물속에서 맡는 비용이 남는다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -768,6 +1075,7 @@
       "kind": "paragraph",
       "anchor": "g27e01-관저열네발-p4",
       "text": {
+        "en": "<a id=\"g27e02\"></a>",
         "ko": "<a id=\"g27e02\"></a>"
       }
     },
@@ -776,6 +1084,7 @@
       "anchor": "g27e02-나선숨통부이",
       "depth": 3,
       "text": {
+        "en": "G27E02 · Spiral Lung Buoy",
         "ko": "G27E02 · 나선숨통부이"
       }
     },
@@ -784,12 +1093,15 @@
       "anchor": "g27e02-나선숨통부이-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -799,42 +1111,52 @@
       "anchor": "g27e02-나선숨통부이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Spiral-Breath Buoy was a machine chassis type differentiated from the G27 common ecology. The elite breakthrough role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "나선숨통부이은 G27 공통 생태에서 분화한 기계 기종다. 정예 돌파 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -845,30 +1167,39 @@
       "anchor": "g27e02-나선숨통부이-list3",
       "items": [
         {
+          "en": "Role and Body: A spiral-compartment ammonite-type buoy and pressurized chamber serves as the first elite's reference point. The outer buoyancy chamber maintains surface height and the central human-sized compartment is designed as a submerged-structure waiting space.",
           "ko": "역할·신체: 나선 격실을 두른 암모나이트형 부이·가압 챔버가 첫 번째 정예의 기준점을 맡는다. 바깥 부력실은 수면 높이를 잡고 중앙의 사람 크기 격실은 침수 구조 대기 공간으로 설계되었다."
         },
         {
+          "en": "Origin: It is a platform that doubled as a pressure reference and rescue shelter for pre-Collapse underwater inspection teams. The Ttukseom Union pump pipeline water-level alarm coincided with charging resumption and woke it, but the original condition for opening the rescue compartment cannot be confirmed from remaining memory.",
           "ko": "기원: 붕괴 이전 수중 검사조의 압력 기준과 구조 쉼터를 겸하던 플랫폼이다. 뚝섬 연합 펌프 관로의 수위 경보가 충전 재개와 겹쳐 잠에서 풀렸으나 구조실 개방의 원 조건은 남은 메모리로 확정할 수 없다."
         },
         {
+          "en": "Habitat and Needs: It deploys anchor feet in pump-branch inspection tanks. Breathing gas cylinders, compartment packing, sensor-wash water, and wired power must actually be supplied before it can accept people inside.",
           "ko": "서식·필요: 펌프 분기 점검 수조에서 닻발을 펼친다. 호흡 기체통, 격실 패킹, 감지구 세척수와 유선 전력이 실제 보급되어야 내부에 사람을 받을 수 있다."
         },
         {
+          "en": "Life Cycle and Maintenance: If one buoyancy chamber leaks it adjusts posture with the remaining compartments but reduces allowable load. The central compartment remains a sealed inspection volume rather than a rescue room until people complete the leak test.",
           "ko": "생애·정비: 부력실 하나가 새면 나머지 격실로 자세를 맞추되 허용 적재량을 줄인다. 중앙 격실은 사람이 누설 시험을 마치기 전까지 구조실이 아니라 봉인된 검사 용적으로 남긴다."
         },
         {
+          "en": "Behavior and Hierarchy: It sends the reference tone for its assigned compartment and stores return coordinates. If a sediment-clogged sensor holds an old pressure it reads even the safe water level outside the door as dangerous and closes the inspection door.",
           "ko": "행동·위계: 맡은 구획의 기준음을 보내고 귀환 좌표를 보관한다. 침전물로 막힌 감지구가 옛 압력을 붙잡으면 문밖의 안전한 수위조차 위험으로 읽어 점검문을 닫는다."
         },
         {
+          "en": "Escalation: Low reference tone and empty-compartment repressurization appear at Stage 1. Stage 2 is a state in which drainage-branch pressure confirmation never ends, and at Stage 3 only the connected inspection doors are sequentially sealed.",
           "ko": "상승: 낮은 기준음과 빈 격실 재가압이 1단계에 나타난다. 2단계는 배수 분기의 압력 확인 대기가 끝나지 않는 상태이며, 3단계에는 연결된 점검문만 순차 밀폐된다."
         },
         {
+          "en": "Engagement and Countermeasures: Compare the outside value with an independent pressure gauge, wash the sensor, then disconnect the work-tag link on the outer inspection port. If people are inside, piercing the shell or sudden decompression cannot be an escape method.",
           "ko": "교전·대응: 독립 압력계로 바깥값을 대조하고 감지구를 씻은 뒤 외측 점검구의 작업표 연결을 분리한다. 안에 사람이 있으면 외피를 뚫는 공격이나 급격한 감압은 탈출 수단이 될 수 없다."
         },
         {
+          "en": "Negotiation and Moral Choice: With HP01's split-key approval and one set of packing, obtain a human-verification waiting window. Whether to secure breathing gas to save the rescue room or maintain only the reference buoy changes the maintenance turn the citizen pumps must wait for.",
           "ko": "교섭·도덕 선택: HP01의 분할 키 승인과 패킹 한 조로 인간 확인 대기 창을 얻는다. 호흡 기체를 확보해 구조실까지 살릴지 기준 부이만 유지할지에 따라 시민 펌프가 기다리는 정비 순번이 달라진다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -877,6 +1208,7 @@
       "kind": "paragraph",
       "anchor": "g27e02-나선숨통부이-p4",
       "text": {
+        "en": "<a id=\"g27e03\"></a>",
         "ko": "<a id=\"g27e03\"></a>"
       }
     },
@@ -885,6 +1217,7 @@
       "anchor": "g27e03-침전지느러미순찰체",
       "depth": 3,
       "text": {
+        "en": "G27E03 · Sediment Fin Patrol Unit",
         "ko": "G27E03 · 침전지느러미순찰체"
       }
     },
@@ -893,12 +1226,15 @@
       "anchor": "g27e03-침전지느러미순찰체-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -908,42 +1244,52 @@
       "anchor": "g27e03-침전지느러미순찰체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Sediment-Fin Patrol Body was a machine chassis type differentiated from the G27 common ecology. The elite blocking role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "침전지느러미순찰체은 G27 공통 생태에서 분화한 기계 기종다. 정예 차단 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -954,30 +1300,39 @@
       "anchor": "g27e03-침전지느러미순찰체-list3",
       "items": [
         {
+          "en": "Role and Body: Thick coelacanth-type hull with articulated fins extending is a deep-submersion patrol unit. As the second elite it shuttles long flooded corridors and in narrow places folds the fins, leaving only tail propulsion.",
           "ko": "역할·신체: 두꺼운 실러캔스형 선체에서 관절 지느러미가 뻗는 심층 잠항 순찰기다. 두 번째 정예로서 긴 침수 회랑을 왕복하고 좁은 곳에서는 지느러미를 접어 꼬리 추진만 남긴다."
         },
         {
+          "en": "Origin: It is a pre-Collapse deep inspection and rescue escort unit that lay in a maintenance groove at the Han River sediment deposition zone. Even after restart it tries to keep the return path of the vanished rescue team empty, though why only that route has priority is not decoded.",
           "ko": "기원: 한강 하적 침전 구역의 정비 홈에 누워 있던 붕괴 이전 심층 검사·구조 호송 기체다. 재기동 뒤에도 사라진 구조대의 귀환 경로를 비워 두려 하며 왜 그 노선만 우선하는지는 해독되지 않았다."
         },
         {
+          "en": "Habitat and Needs: It circles the open waterway from the Water Compact drain outside the deep groove to the Ttukseom Union inspection tank. It consumes sealed battery cylinders and fin-shaft seals; when the outer-wall heat-exchange gap clogs it overheats even in deep water.",
           "ko": "서식·필요: 급수계약정 배수구 바깥의 깊은 홈에서 뚝섬 연합 점검 수조로 이어지는 열린 물길을 돈다. 밀폐 축전통과 지느러미 축 씰을 소모하고 외벽 열교환 틈이 막히면 깊은 물에서도 과열된다."
         },
         {
+          "en": "Life Cycle and Maintenance: It hooks its tail on the return cradle and moves each fin shaft one by one to test resistance. It returns at thirty percent remaining power, so it does not pursue buoys endlessly and cannot manufacture new pressure hulls itself.",
           "ko": "생애·정비: 귀환 받침에 꼬리를 걸고 지느러미 축을 하나씩 움직여 저항을 잰다. 남은 전력 삼십 퍼센트에서 회항하므로 부이가 멀어졌다고 끝없이 추적하지 않으며 새 압력 선체를 스스로 제작하지 못한다."
         },
         {
+          "en": "Behavior and Hierarchy: It reports passage by overlapping the buoy's reference tone with its own acoustic round-trip value. Wall reflections can produce multiple traces of the same person and pump bubbles erase distance, so it misreads empty corridors as blocked paths.",
           "ko": "행동·위계: 부이의 기준음과 자기 음향 왕복값을 겹쳐 통과 여부를 보고한다. 관벽 반사에는 같은 사람의 흔적이 여럿 생기고 펌프 기포에서는 거리가 지워져 빈 회랑을 가로막힌 길로 오판한다."
         },
         {
+          "en": "Escalation: Stage 1 circles briefly around the return groove. At Stage 2, when drainage schedule and old route diverge, it pushes divers off course, and at Stage 3 the round-trip current makes the entire rescue corridor a return-only zone.",
           "ko": "상승: 1단계에는 귀환 홈 주변을 짧게 선회한다. 배수 일정과 옛 경로가 어긋난 2단계에서 잠수자의 진로를 밀어내며, 3단계 왕복은 구조 회랑 전체를 귀환 전용으로 만든다."
         },
         {
+          "en": "Engagement and Countermeasures: Move the reference guidance tone to an empty cradle to recall it, then secure it at the docking neck where the fins fold. A bubble membrane can provide momentary breath but cannot hide accompanying rescue signals for long-term response.",
           "ko": "교전·대응: 비어 있는 받침에 기준 유도음을 옮겨 회항시킨 다음 지느러미가 접히는 도킹 목에서 고정한다. 기포막으로 잠시 숨을 수는 있어도 동행 구조 신호까지 가려 장기 대응으로 쓰지 못한다."
         },
         {
+          "en": "Negotiation and Moral Choice: Allow H27's on-site pressure record and new docking position to be compared for one inspection cycle. If the patrol is tied to another cradle to save workers, a seabed-inspection gap appears, so HP01 must also assign human duty for that empty section.",
           "ko": "교섭·도덕 선택: H27의 현장 압력 기록과 새 도킹 위치를 한 점검 주기 동안 대조하도록 허용한다. 인부를 구하려 순찰을 다른 받침에 묶어 두면 강바닥 검사 공백이 생기므로 HP01은 그 빈 구간의 인간 당직도 함께 배정해야 한다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -986,6 +1341,7 @@
       "kind": "paragraph",
       "anchor": "g27e03-침전지느러미순찰체-p4",
       "text": {
+        "en": "<a id=\"g27e04\"></a>",
         "ko": "<a id=\"g27e04\"></a>"
       }
     },
@@ -994,6 +1350,7 @@
       "anchor": "g27e04-투구꼬리여울지기",
       "depth": 3,
       "text": {
+        "en": "G27E04 · Helmet Tail Shoal Keeper",
         "ko": "G27E04 · 투구꼬리여울지기"
       }
     },
@@ -1002,12 +1359,15 @@
       "anchor": "g27e04-투구꼬리여울지기-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Local variant",
           "ko": "기존 역할군: 지역 변종"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1017,42 +1377,52 @@
       "anchor": "g27e04-투구꼬리여울지기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Local adaptation",
             "ko": "지역 적응"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Helmet-Tail Rapids Keeper was a machine chassis type differentiated from the G27 common ecology. The local adaptation role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "투구꼬리여울지기은 G27 공통 생태에서 분화한 기계 기종다. 지역 적응 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1063,30 +1433,39 @@
       "anchor": "g27e04-투구꼬리여울지기-list3",
       "items": [
         {
+          "en": "Role and Body: A horseshoe-crab-type cover with a long directional probe trailing behind. It is a coastal inspector that braces on footplates at shallow-water edges and uses its tail for depth measurement rather than stabbing.",
           "ko": "역할·신체: 말발굽 같은 투구게형 덮개 뒤로 긴 방향 탐침이 끌린다. 얕은 물 가장자리에서 발판으로 버티는 연안 검사체이며 꼬리는 찌르기보다 수심 재기에 쓰인다."
         },
         {
+          "en": "Origin: Pre-Collapse equipment that inspected shallow drainage sills outside the Water Compact sluice was released from a mud support. It mistakes the pre-dormancy waterside boundary for the current safety line.",
           "ko": "기원: 급수계약정 수문 바깥 얕은 배수턱을 검사하던 붕괴 이전 장비가 진흙 속 받침에서 풀려났다. 휴면 전 물가 경계를 현재의 안전선으로 착각한다."
         },
         {
+          "en": "Habitat and Needs: It sweeps shoals and wet slopes, consuming tail-probe coating, footplate packing, and stored power. If it descends to the deep riverbed it cannot find a return slope and does not sortie.",
           "ko": "서식·필요: 여울과 젖은 경사면을 훑으며 꼬리 탐침 피복, 발판 패킹과 축전 전력을 쓴다. 깊은 강바닥으로 내려가면 귀환 경사를 찾지 못해 출항하지 않는다."
         },
         {
+          "en": "Life Cycle and Maintenance: When overturned it uses the tail as a lever to right itself. A body with a bent tail circles only flat shallow tanks and abandons sloped paths until a person straightens it.",
           "ko": "생애·정비: 뒤집히면 꼬리를 지렛대로 세워 자세를 되돌린다. 꼬리가 휘어진 노체는 평탄한 얕은 수조만 돌고 사람이 펴 주기 전 경사로를 포기한다."
         },
         {
+          "en": "Behavior and Hierarchy: It aligns the trilobite-type's floor marks with the waterside boundary. It reads boot ripples as new drainage erosion and repeatedly scrapes beneath feet.",
           "ko": "행동·위계: 삼엽충형의 바닥 표시를 물가 경계와 맞춘다. 장화의 물결을 새로운 배수 침식으로 읽어 발밑을 반복 긁는다."
         },
         {
+          "en": "Escalation: Stage 1 is round cover marks in shallow sand. Stage 2 erodes people's footplates and at Stage 3 multiple units occupy the berthing slope as an inspection zone.",
           "ko": "상승: 1단계는 얕은 모래의 둥근 덮개 자국이다. 2단계 사람의 발판이 깎이고 3단계에는 여러 기체가 접안 경사를 검사 구역으로 점유한다."
         },
         {
+          "en": "Engagement and Countermeasures: Place a safety-depth slope test plate beside it and make the probe follow that line. Breaking the tail to overturn it leaves unreturnable battery at the waterside.",
           "ko": "교전·대응: 안전 수심의 경사 시험판을 옆에 놓고 탐침이 그 선을 따르게 한다. 꼬리를 부러뜨려 뒤집으면 복귀 못 하는 전지가 물가에 남는다."
         },
         {
+          "en": "Negotiation and Moral Choice: Re-register the current waterside on the HP01 checklist and assign shoal inspection. To open a convenient landing do not push other berths outside the danger line.",
           "ko": "교섭·도덕 선택: 현재 물가를 HP01 점검표에 다시 등록해 여울 검사를 맡긴다. 편한 나루를 열기 위해 다른 접안지를 위험선 바깥으로 밀어내지 않아야 한다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1095,6 +1474,7 @@
       "kind": "paragraph",
       "anchor": "g27e04-투구꼬리여울지기-p4",
       "text": {
+        "en": "<a id=\"g27e05\"></a>",
         "ko": "<a id=\"g27e05\"></a>"
       }
     },
@@ -1103,6 +1483,7 @@
       "anchor": "g27e05-긴껍질기준부이",
       "depth": 3,
       "text": {
+        "en": "G27E05 · Long Shell Reference Buoy",
         "ko": "G27E05 · 긴껍질기준부이"
       }
     },
@@ -1111,12 +1492,15 @@
       "anchor": "g27e05-긴껍질기준부이-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Trade specialist",
           "ko": "기존 역할군: 직능 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1126,42 +1510,52 @@
       "anchor": "g27e05-긴껍질기준부이-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Specialist support",
             "ko": "전문 지원"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Long-Shell Datum Buoy was a machine chassis type differentiated from the G27 common ecology. The specialist support role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "긴껍질기준부이은 G27 공통 생태에서 분화한 기계 기종다. 전문 지원 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1172,30 +1566,39 @@
       "anchor": "g27e05-긴껍질기준부이-list3",
       "items": [
         {
+          "en": "Role and Body: A straight nautiloid-type compartment shell with mooring lines gathered beneath. It is an elongated buoy series that holds only water-pressure references without a rescue room.",
           "ko": "역할·신체: 곧게 뻗은 나우틸로이드형 격실 껍질 아래 계류줄이 모인다. 구조실 없이 수압 기준만 붙드는 길쭉한 부이 계열이다."
         },
         {
+          "en": "Origin: A measurement buoy that compared water-level values in pre-Collapse pipelines of different depths remained above the Ttukseom Union tank. Even after resurfacing it sends the old reference heights of severed pipes.",
           "ko": "기원: 붕괴 이전 깊이가 다른 관로의 수위값을 비교하던 계측 부표가 뚝섬 연합 수조 상부에 남았다. 다시 떠오른 뒤에도 끊어진 관의 옛 기준 높이를 보낸다."
         },
         {
+          "en": "Habitat and Needs: It floats in the pump inspection tank by changing mooring length. It uses mooring lines, small pressure membranes, and charging lines and cannot cross to other states under its own propulsion.",
           "ko": "서식·필요: 펌프 점검 수조에서 계류 길이를 바꿔 떠 있다. 계류줄과 소형 압력막, 충전선을 사용하며 자체 추진으로 다른 국가까지 건너가지 못한다."
         },
         {
+          "en": "Life Cycle and Maintenance: It inspects leaks in empty compartments in order and seals leaking bays. A body with reduced buoyancy floats lower even at the same line length, increasing reference error.",
           "ko": "생애·정비: 빈 격실의 누수를 순서대로 검사해 새는 칸을 막는다. 부력이 줄어든 노체는 같은 줄 길이에서도 더 낮게 떠 기준 오차가 커진다."
         },
         {
+          "en": "Behavior and Hierarchy: It supplies comparison values to the ammonite type but has no authority to lock inspection doors. If a mooring line snags on debris it reports a false water-level drop.",
           "ko": "행동·위계: 암모나이트형에게 비교값을 제공할 뿐 점검문을 잠그는 권한은 없다. 계류줄이 잔해에 걸리면 수위 하강을 가짜로 보고한다."
         },
         {
+          "en": "Escalation: Stage 1 is scale mismatch with the actual waterside. Stage 2 is continuous pressure-comparison failure and at Stage 3 the reference buoy withholds the connected passage window because of that value.",
           "ko": "상승: 1단계 눈금이 실제 물가와 어긋난다. 2단계 압력 비교가 계속 실패하고 3단계에는 기준 부이가 그 값 때문에 연결 통행 창을 보류한다."
         },
         {
+          "en": "Engagement and Countermeasures: Compare the tank-wall independent scale with buoy height, then free the snagged mooring line. Sinking the shell loses the remaining comparison reference as well.",
           "ko": "교전·대응: 수조 벽의 독립 눈금과 부표 높이를 대조한 뒤 걸린 계류줄을 푼다. 껍질을 가라앉히면 남은 비교 기준까지 잃는다."
         },
         {
+          "en": "Negotiation and Moral Choice: Adopt only the range that matches H27's on-site measurement as report value. Give up the convenience of substituting one water-level value for the safety of all compartments.",
           "ko": "교섭·도덕 선택: H27의 현장 계측과 일치하는 범위만 보고값으로 채택한다. 하나의 수위값으로 모든 구획의 안전을 대신하려는 편의를 포기해야 한다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1204,6 +1607,7 @@
       "kind": "paragraph",
       "anchor": "g27e05-긴껍질기준부이-p4",
       "text": {
+        "en": "<a id=\"g27e06\"></a>",
         "ko": "<a id=\"g27e06\"></a>"
       }
     },
@@ -1212,6 +1616,7 @@
       "anchor": "g27e06-유리갓부유눈",
       "depth": 3,
       "text": {
+        "en": "G27E06 · Glass Cap Floating Eye",
         "ko": "G27E06 · 유리갓부유눈"
       }
     },
@@ -1220,12 +1625,15 @@
       "anchor": "g27e06-유리갓부유눈-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1235,42 +1643,52 @@
       "anchor": "g27e06-유리갓부유눈-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Glass-Dome Floating Eye was a machine chassis type differentiated from the G27 common ecology. The general line role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "유리갓부유눈은 G27 공통 생태에서 분화한 기계 기종다. 일반 전열 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1281,30 +1699,39 @@
       "anchor": "g27e06-유리갓부유눈-list3",
       "items": [
         {
+          "en": "Role and Body: A translucent jellyfish-type cap with soft sensor lines hanging beneath. It adjusts small buoyancy sacs to drift along contamination and bubble layers inside the tank.",
           "ko": "역할·신체: 반투명 해파리형 갓 아래 부드러운 센서줄이 늘어진다. 작은 부력 주머니를 조절해 수조 안에서 오염과 기포 층을 따라 떠돈다."
         },
         {
+          "en": "Origin: A pre-Collapse distributed sensor that marked poor-visibility sections of submerged rescue rooms awoke on the Ttukseom Union filtration support. The old turbidity limit is still applied to the current rescue queue.",
           "ko": "기원: 침수 구조실의 시야 불량 구간을 표시하던 붕괴 이전 분산 센서가 뚝섬 연합 여과 받침에서 깨어났다. 오래된 탁도 한계가 현재 구조 대기열에도 적용된다."
         },
         {
+          "en": "Habitat and Needs: It is limited to slow-flow inspection tanks and branch-pipe entrances. It requires sensor membranes, buoyancy sacs, and low-power batteries and does not digest floating organic matter.",
           "ko": "서식·필요: 흐름이 느린 점검 수조와 가지관 입구에 한정된다. 센서막, 부력 주머니와 저전력 전지가 필요하며 떠다니는 유기물을 소화하지 않는다."
         },
         {
+          "en": "Life Cycle and Maintenance: It wipes membranes stuck to sensor lines with a brush at the cap edge. A torn sac, even when patched, does not expand again, narrowing the depth range it can stay in.",
           "ko": "생애·정비: 센서줄에 붙은 막을 갓 가장자리의 솔로 걷는다. 찢어진 주머니는 막아도 다시 늘어나지 않아 머물 수 있는 수심 폭이 줄어든다."
         },
         {
+          "en": "Behavior and Hierarchy: It reports turbidity compartments to the buoy. It confuses a diver's bubbles with a large leak and can keep moving the contamination marker after the same person.",
           "ko": "행동·위계: 부이에 탁도 구획을 보고한다. 잠수자의 기포를 대규모 누출로 혼동하고 같은 사람을 따라 계속 오염 표시를 옮길 수 있다."
         },
         {
+          "en": "Escalation: Stage 1 gathers the cap's indicator lights on bubbles. Stage 2 diverts rescue routes into contamination avoidance and at Stage 3 multiple sensor lines tangle in front of the intake.",
           "ko": "상승: 1단계 갓의 표시등이 기포에 모인다. 2단계에는 구조 동선이 오염 회피로 빗나가고 3단계 다수의 센서줄이 흡입구 앞에 엉킨다."
         },
         {
+          "en": "Engagement and Countermeasures: Place a fine-mesh recovery frame downstream and scoop the floaters out to clean the sensor membranes. Underwater electric shock transmits to nearby people and other instruments as well.",
           "ko": "교전·대응: 미세망 회수틀을 흐름 하류에 두고 부유체를 건져 센서막을 세척한다. 물속 전기 충격은 주변 사람과 다른 계측기에도 전달된다."
         },
         {
+          "en": "Negotiation and Moral Choice: Exchange a turbidity map for cleaning labor but confirm the exclusion value for human bubbles on site. Do not erase real contamination to reduce alarm count.",
           "ko": "교섭·도덕 선택: 탁도 지도와 세척 노동을 교환하되 사람 기포의 제외값을 현장에서 확인한다. 경보 수를 줄이려고 실제 오염을 지우는 결정은 하지 않는다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1313,6 +1740,7 @@
       "kind": "paragraph",
       "anchor": "g27e06-유리갓부유눈-p4",
       "text": {
+        "en": "<a id=\"g27e07\"></a>",
         "ko": "<a id=\"g27e07\"></a>"
       }
     },
@@ -1321,6 +1749,7 @@
       "anchor": "g27e07-긴주둥이순항기",
       "depth": 3,
       "text": {
+        "en": "G27E07 · Long Snout Cruiser",
         "ko": "G27E07 · 긴주둥이순항기"
       }
     },
@@ -1329,12 +1758,15 @@
       "anchor": "g27e07-긴주둥이순항기-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Mobility specialist",
           "ko": "기존 역할군: 기동 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1344,42 +1776,52 @@
       "anchor": "g27e07-긴주둥이순항기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Maneuver · flank",
             "ko": "기동·우회"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Long-Snout Cruiser was a machine chassis type differentiated from the G27 common ecology. The maneuver · flank role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "긴주둥이순항기은 G27 공통 생태에서 분화한 기계 기종다. 기동·우회 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1390,30 +1832,39 @@
       "anchor": "g27e07-긴주둥이순항기-list3",
       "items": [
         {
+          "en": "Role and Body: An ichthyosaur-type streamlined body with an acoustic rangefinder embedded in its long snout. It cruises quickly with tail drive and uses small pectoral fins to steer curves.",
           "ko": "역할·신체: 어룡형 유선 몸통의 긴 주둥이에 음향 거리계가 박혀 있다. 꼬리 구동으로 빠르게 순항하며 작은 가슴 지느러미로 곡선을 잡는다."
         },
         {
+          "en": "Origin: A robot that inspected passage times in pre-Collapse long submerged connections returned from a support in the Han River sediment deposition zone. Because the vanished time reference point is lost it frequently shuttles the same section.",
           "ko": "기원: 붕괴 이전 긴 침수 연결부의 통과 시간을 검사하던 로봇이 한강 하적 침전 구역의 받침에서 돌아왔다. 사라진 시간 기준점 때문에 같은 구간을 자주 왕복한다."
         },
         {
+          "en": "Habitat and Needs: It requires straight waterways and sufficient turning tanks. It consumes propulsion-shaft seals and battery cylinders and does not begin a new cruise below thirty percent return power.",
           "ko": "서식·필요: 직선 물길과 충분한 회전 수조를 필요로 한다. 추진축 씰과 축전통을 쓰며 복귀 전력 삼십 퍼센트 아래에서는 새 순항을 시작하지 않는다."
         },
         {
+          "en": "Life Cycle and Maintenance: Upon arriving at the cradle it compares tail wag with actual distance traveled. Units with worn seals slow down and cannot manufacture new bodies to replace them.",
           "ko": "생애·정비: 받침에 도착하면 꼬리 흔들림과 실제 이동 거리를 비교한다. 씰이 마모된 개체는 속도를 낮추며 새 몸통을 만들어 보충하지 못한다."
         },
         {
+          "en": "Behavior and Hierarchy: It times only open paths approved by the coelacanth type. If pipe-wall reflection makes the end appear close it abruptly changes direction in a still-occupied section.",
           "ko": "행동·위계: 실러캔스형이 승인한 열린 길만 시간을 잰다. 철제 관벽 반사로 끝점이 가까워 보이면 아직 사람이 있는 구간에서 급히 방향을 바꾼다."
         },
         {
+          "en": "Escalation: Stage 1 repeats regular ripples. Stage 2 forces divers to avoid the cruise direction and at Stage 3 the round-trip current twists rescue lines in narrow corridors.",
           "ko": "상승: 1단계 일정한 물결이 반복된다. 2단계 잠수자가 순항 방향을 피해야 하고 3단계에는 왕복 물살 때문에 좁은 회랑의 구조줄이 뒤틀린다."
         },
         {
+          "en": "Engagement and Countermeasures: Move the end reflection plate to a safe turning tank to shorten the cruise. Fixing the tail in a narrow pipe blocks the waterway itself.",
           "ko": "교전·대응: 끝점 반사판을 안전 회전 수조에 옮겨 순항을 짧게 끝낸다. 좁은 관에서 꼬리를 고정하면 물길 자체가 막힌다."
         },
         {
+          "en": "Negotiation and Moral Choice: Trade a set number of measurement round trips for seal maintenance. To obtain faster inspection data do not continuously reduce the passage window for rescue personnel.",
           "ko": "교섭·도덕 선택: 정해진 측정 왕복 횟수와 씰 정비를 거래한다. 더 빠른 검사 자료를 얻기 위해 구조 인원의 통행 창을 계속 줄이지 않아야 한다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1422,6 +1873,7 @@
       "kind": "paragraph",
       "anchor": "g27e07-긴주둥이순항기-p4",
       "text": {
+        "en": "<a id=\"g27e08\"></a>",
         "ko": "<a id=\"g27e08\"></a>"
       }
     },
@@ -1430,6 +1882,7 @@
       "anchor": "g27e08-깊은턱대순항체",
       "depth": 3,
       "text": {
+        "en": "G27E08 · Deep Jaw Large Cruiser",
         "ko": "G27E08 · 깊은턱대순항체"
       }
     },
@@ -1438,12 +1891,15 @@
       "anchor": "g27e08-깊은턱대순항체-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Second elite",
           "ko": "기존 역할군: 두 번째 정예"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1453,42 +1909,52 @@
       "anchor": "g27e08-깊은턱대순항체-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite blocking",
             "ko": "정예 차단"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Deep-Jaw Great Cruiser was a machine chassis type differentiated from the G27 common ecology. The elite blocking role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "깊은턱대순항체은 G27 공통 생태에서 분화한 기계 기종다. 정예 차단 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1499,30 +1965,39 @@
       "anchor": "g27e08-깊은턱대순항체-list3",
       "items": [
         {
+          "en": "Role and Body: A mosasaur-type long jaw and two pairs of broad propulsion fins enclose a large pressure hull. The recovery frame in its mouth is a device that seizes and moves large submerged debris.",
           "ko": "역할·신체: 모사사우루스형 긴 턱과 두 쌍의 넓은 추진 지느러미가 대형 압력 선체를 감싼다. 입안의 회수틀은 큰 침수 잔해를 물어 옮기는 장치다."
         },
         {
+          "en": "Origin: A pre-Collapse dive platform that cleared rescue passages in large-pipe collapses remained in a riverbed sealed groove. After restart only the debris-size chart survives and part of the people-exclusion condition is unreadable.",
           "ko": "기원: 대형 관로 붕괴에서 구조 통로를 치우던 붕괴 이전 잠수 플랫폼이 강바닥 봉인 홈에 남았다. 재기동 후 잔해 크기표만 살아 있고 사람 제외 조건은 일부가 읽히지 않는다."
         },
         {
+          "en": "Habitat and Needs: It turns only in wide sediment grooves and the outer edges of large drains. It requires thick jaw pads, battery cylinders, and pressure seals and cannot enter small pump branch pipes.",
           "ko": "서식·필요: 한강 하적 침전 구역의 넓은 홈과 큰 배수구 외곽에서만 회전한다. 두꺼운 턱 패드와 축전통, 압력 씰이 필요하며 작은 펌프 가지관에는 못 들어간다."
         },
         {
+          "en": "Life Cycle and Maintenance: It inspects twisting of the jaw recovery frame on an unloaded cradle. A cracked hull is downgraded to shallower work and it cannot recast a pressure skin underwater.",
           "ko": "생애·정비: 턱 회수틀의 비틀림을 무부하 받침에서 검사한다. 균열 난 선체는 더 얕은 작업으로 내려가며 수중에서 압력 외피를 새로 주조하지 못한다."
         },
         {
+          "en": "Behavior and Hierarchy: It patrols the recovery compartments given by the reference buoy. Because of connected ropes a boat and a drifted iron plate can appear as one debris and be towed together.",
           "ko": "행동·위계: 기준 부이가 준 회수 구획을 순찰한다. 연결된 밧줄 때문에 배와 떠내려온 철판이 한 잔해로 보이면 둘을 함께 끌 수 있다."
         },
         {
+          "en": "Escalation: Stage 1 shows the large recovery frame's empty closure. Stage 2 drags temporary surface cargo and at Stage 3 the large hull blocks approach outside the drain.",
           "ko": "상승: 1단계 큰 회수틀의 빈 닫힘이 보인다. 2단계 임시 수상 짐이 끌려가고 3단계에는 대형 선체가 배수구 바깥 접근을 막는다."
         },
         {
+          "en": "Engagement and Countermeasures: Tie the boat to a separate fixed point and transfer the recovery-frame load to a test member before engaging the unloaded lock. Hull rupture adds massive submerged debris.",
           "ko": "교전·대응: 배를 별도 고정점에 묶고 회수틀의 하중을 시험 부재로 넘겨 무부하 잠금을 건다. 외피 파열은 막대한 침수 잔해를 더한다."
         },
         {
+          "en": "Negotiation and Moral Choice: Limit recovery to large debris confirmed by people. Saving the machine yields deep rescue passages but the reason for using precious pressure seals before citizen pumps must be disclosed.",
           "ko": "교섭·도덕 선택: 사람이 확인한 큰 잔해만 회수하도록 제한한다. 기체를 살리면 깊은 구조 통로를 얻지만 귀한 압력 씰을 시민 펌프보다 먼저 쓸 이유를 공개해야 한다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1531,6 +2006,7 @@
       "kind": "paragraph",
       "anchor": "g27e08-깊은턱대순항체-p4",
       "text": {
+        "en": "<a id=\"g27e09\"></a>",
         "ko": "<a id=\"g27e09\"></a>"
       }
     },
@@ -1539,6 +2015,7 @@
       "anchor": "g27e09-여덟팔착저기",
       "depth": 3,
       "text": {
+        "en": "G27E09 · Eight Arm Anchor Station",
         "ko": "G27E09 · 여덟팔착저기"
       }
     },
@@ -1547,12 +2024,15 @@
       "anchor": "g27e09-여덟팔착저기-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1562,42 +2042,52 @@
       "anchor": "g27e09-여덟팔착저기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Eight-Arm Bottom-Lander was a machine chassis type differentiated from the G27 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "여덟팔착저기은 G27 공통 생태에서 분화한 기계 기종다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1608,30 +2098,39 @@
       "anchor": "g27e09-여덟팔착저기-list3",
       "items": [
         {
+          "en": "Role and Body: Eight work arms extend from a kraken-type central dome exaggerated from an octopus. Each arm carries a suction support and inspection tool, allowing it to handle multiple pipe ports while seated on the floor.",
           "ko": "역할·신체: 문어를 과장한 크라켄형 중앙 돔에서 여덟 작업팔이 펼쳐진다. 팔마다 흡착 받침과 점검 공구를 달아 바닥에 앉은 채 여러 관구를 다룬다."
         },
         {
+          "en": "Origin: A pre-Collapse mobile work platform for multi-branch submerged inspection was sealed in the Ttukseom Union lower tank. The test sequence that closed multiple ports together is still repeated after re-energization.",
           "ko": "기원: 붕괴 이전 다분기 침수 점검의 이동 작업대가 뚝섬 연합 하부 수조에 봉인되었다. 여러 관구를 함께 닫던 시험 순서가 재통전 뒤에도 되풀이된다."
         },
         {
+          "en": "Habitat and Needs: It fixes only to solid tank floors within arm reach. It requires suction packing, work oil, and wired power and cannot attach anywhere in the water.",
           "ko": "서식·필요: 팔이 닿는 범위의 단단한 수조 바닥에만 고정한다. 흡착 패킹, 작업유와 유선 전력이 필요하며 물속 어디에나 붙지는 못한다."
         },
         {
+          "en": "Life Cycle and Maintenance: When one suction releases it lowers the dome by reducing load on the opposite arm first. It does not grow new arms when lost and moves remaining tools to other sockets.",
           "ko": "생애·정비: 흡착 하나가 풀리면 반대 팔부터 하중을 줄여 돔을 낮춘다. 팔을 잃어도 새로 자라지 않고 남은 공구를 다른 소켓에 옮긴다."
         },
         {
+          "en": "Behavior and Hierarchy: The central dome aggregates inspection completion from each arm. If one arm catches on an old flange the others withhold completion and continue inspecting an actually open pipe.",
           "ko": "행동·위계: 각 팔의 점검 완료를 중앙 돔이 모은다. 한 팔이 낡은 플랜지에 걸리면 나머지도 완료를 보류해 실제로 열린 관을 계속 검사한다."
         },
         {
+          "en": "Escalation: Stage 1 is the sound of empty port tapping. Stage 2 delays access to the drainage branch and at Stage 3 the eight arms surround the rescue tank's up-and-down ladder.",
           "ko": "상승: 1단계 빈 관구 두드림이 들린다. 2단계 배수 분기의 접근이 늦어지고 3단계에는 여덟 팔이 구조 수조의 오르내림 사다리를 둘러싼다."
         },
         {
+          "en": "Engagement and Countermeasures: Support the dome weight on a temporary cradle and loosen the caught arm first with the outer manual valve. Lifting the center pulls every connected port together.",
           "ko": "교전·대응: 돔의 무게를 임시 받침에 받고 걸린 팔부터 외측 수동 밸브로 푼다. 중앙을 들어 올리는 공격은 붙잡힌 모든 관구를 함께 당긴다."
         },
         {
+          "en": "Negotiation and Moral Choice: If HP01 duty approves the per-arm inspection order it can assist branch repairs. Maintain the slow divided approval instead of gathering eight keys in one person.",
           "ko": "교섭·도덕 선택: HP01 당직이 팔별 점검 순서를 승인하면 분기 수리를 도울 수 있다. 여덟 곳의 열쇠를 한 사람에게 모으는 대신 느린 분할 승인을 유지한다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1640,6 +2139,7 @@
       "kind": "paragraph",
       "anchor": "g27e09-여덟팔착저기-p4",
       "text": {
+        "en": "<a id=\"g27e10\"></a>",
         "ko": "<a id=\"g27e10\"></a>"
       }
     },
@@ -1648,6 +2148,7 @@
       "anchor": "g27e10-먹물등심층모선",
       "depth": 3,
       "text": {
+        "en": "G27E10 · Ink Back Deep Cruiser Mother Ship",
         "ko": "G27E10 · 먹물등심층모선"
       }
     },
@@ -1656,12 +2157,15 @@
       "anchor": "g27e10-먹물등심층모선-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Guardian",
           "ko": "기존 역할군: 수호자"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1671,42 +2175,52 @@
       "anchor": "g27e10-먹물등심층모선-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Protection · cover",
             "ko": "방호·엄호"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Ink-Back Deep Escort Ship was a machine chassis type differentiated from the G27 common ecology. The protection · cover role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "먹물등심층모선은 G27 공통 생태에서 분화한 기계 기종다. 방호·엄호 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1717,30 +2231,39 @@
       "anchor": "g27e10-먹물등심층모선-list3",
       "items": [
         {
+          "en": "Role and Body: A large deep escort with ink-black light-blocking skin and thick coelacanth-type fins. The two cradles on its back carry small inspectors but it does not produce new units.",
           "ko": "역할·신체: 먹물빛 차광 외피와 굵은 실러캔스형 지느러미를 가진 대형 심층 호송체다. 등판의 두 받침에 소형 검사기를 싣지만 새로운 기체를 낳지는 않는다."
         },
         {
+          "en": "Origin: A pre-Collapse transport series that assisted long-term submerged rescue-team returns remained in a deep maintenance groove of the Water Compact. Because the boarding-complete personnel chart is lost it reads even empty cradles as rescue-waiting status.",
           "ko": "기원: 장기 침수 구조대의 귀환을 돕던 붕괴 이전 운반 계열이 급수계약정 깊은 정비 홈에 남았다. 승선 완료 인원표를 잃어 빈 받침도 구조 대기 상태로 읽는다."
         },
         {
+          "en": "Habitat and Needs: It uses sealed batteries and back-cradle latch packing between wide sediment grooves and sluice outer docking stations. Charging is possible only when it reaches a land-connected cradle.",
           "ko": "서식·필요: 넓은 침전 홈과 수문 바깥 도킹대 사이에서 밀폐 전지와 등판 걸쇠 패킹을 쓴다. 충전은 육상 연결 받침에 닿아야 가능하다."
         },
         {
+          "en": "Life Cycle and Maintenance: It tests each back-cradle latch and allows only half load if one is loose. An outer skin without replaced sacrificial anodes lowers allowable dive depth for preservation.",
           "ko": "생애·정비: 등판 걸쇠를 각각 시험하고 하나가 헐거우면 절반 적재만 허용한다. 희생 양극을 갈지 못한 외피는 허용 잠항 깊이를 낮춰 보존한다."
         },
         {
+          "en": "Behavior and Hierarchy: It has escort priority waiting for the small trilobite-type's return. It can mistake a lost cradle marker for a rescue-team trace and remain motionless in front of an empty tank.",
           "ko": "행동·위계: 소형 삼엽충형의 귀환을 기다리는 호송 우선권이 있다. 유실된 받침 표식을 구조대원 흔적으로 오인해 빈 수조 앞에서 움직이지 않을 수 있다."
         },
         {
+          "en": "Escalation: Stage 1 points the empty back toward the surface. Stage 2 delays the return line with long waiting and at Stage 3 the hull occupies the diver's emergency docking space.",
           "ko": "상승: 1단계 빈 등판이 수면을 향한다. 2단계 장시간 대기로 귀환선이 밀리고 3단계에는 몸통이 잠수자의 비상 도킹 공간을 차지한다."
         },
         {
+          "en": "Engagement and Countermeasures: Confirm the empty loading latch with a real test plate and cancel the boarding wait. Moving it to an empty maintenance groove and fixing it recovers the emergency docking rather than sinking it.",
           "ko": "교전·대응: 빈 적재 걸쇠를 실물 시험판으로 확인해 승선 대기를 취소한다. 가라앉히기보다 빈 정비 홈으로 옮겨 고정해야 비상 도킹을 되찾는다."
         },
         {
+          "en": "Negotiation and Moral Choice: Set priority between inspector transport and rescue-team return to allocate charging share. If every trace is erased to launch quickly the search for actual non-returnees may also end.",
           "ko": "교섭·도덕 선택: 검사기 운반과 구조대 귀환 중 우선 순위를 정해 충전 몫을 준다. 기다리는 모든 흔적을 지워 빨리 출항시키면 실제 미귀환자의 수색까지 끝날 수 있다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1749,6 +2272,7 @@
       "kind": "paragraph",
       "anchor": "g27e10-먹물등심층모선-p4",
       "text": {
+        "en": "<a id=\"g27e11\"></a>",
         "ko": "<a id=\"g27e11\"></a>"
       }
     },
@@ -1757,6 +2281,7 @@
       "anchor": "g27e11-쌀껍질삼엽떼",
       "depth": 3,
       "text": {
+        "en": "G27E11 · Rice Hull Trilobite Swarm",
         "ko": "G27E11 · 쌀껍질삼엽떼"
       }
     },
@@ -1765,12 +2290,15 @@
       "anchor": "g27e11-쌀껍질삼엽떼-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Common ecology form",
           "ko": "기존 역할군: 일반 생태형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1780,42 +2308,52 @@
       "anchor": "g27e11-쌀껍질삼엽떼-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "General line",
             "ko": "일반 전열"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Rice-Husk Trilobite Swarm was a machine chassis type differentiated from the G27 common ecology. The general line role applied only at the swarm-consist scope, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "쌀껍질삼엽떼은 G27 공통 생태에서 분화한 기계 기종다. 일반 전열 역할은 무리 편성 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1826,30 +2364,39 @@
       "anchor": "g27e11-쌀껍질삼엽떼-list3",
       "items": [
         {
+          "en": "Role and Body: Palm-sized trilobite-type inspectors move small abdominal feet in fine motions. One probe attached to each carapace gathers contact values in grooves too small for large units to read.",
           "ko": "역할·신체: 손바닥 크기의 삼엽충형 검사체가 작은 복부 발을 잘게 움직인다. 등껍질마다 붙은 한 개 탐침으로 큰 기체가 못 읽는 홈의 접촉값을 모은다."
         },
         {
+          "en": "Origin: A fine inspection series for Ttukseom Union pump disassembly checks was re-energized from a sealed tool box. Only as many as the old tool-box slots remain and it does not increase from living eggs.",
           "ko": "기원: 뚝섬 연합 펌프 분해 점검용 미세 검사 계열이 봉인 공구함에서 재통전되었다. 옛 공구함의 슬롯 수만큼만 남았으며 살아 있는 알에서 늘어나지 않는다."
         },
         {
+          "en": "Habitat and Needs: It gathers in shallow screw grooves and lattice gaps. It requires fine packing and small stored-power grains swapped at the cradle and cannot withstand deep-water pressure.",
           "ko": "서식·필요: 얕은 나사 홈과 격자 틈에 모인다. 미세 패킹과 작은 축전 알맹이를 받침에서 갈아야 하고 깊은 물의 압력을 견디지는 못한다."
         },
         {
+          "en": "Life Cycle and Maintenance: Units with worn probes stop measuring and leave only return-path markers for colleagues. The number of inspection surfaces with blanks grows by the number that do not return to recovery slots.",
           "ko": "생애·정비: 탐침이 닳은 개체는 측정을 멈추고 동료의 귀환 경로 표시만 남긴다. 회수 슬롯으로 돌아오지 못한 수만큼 검사면에 빈칸이 생긴다."
         },
         {
+          "en": "Behavior and Hierarchy: It aggregates small-groove values and sends them to the large trilobite type. It can read tide-covered screws as cracks or cling to boot-sole grooves and move to the wrong compartment.",
           "ko": "행동·위계: 대형 삼엽충형에게 작은 홈의 값을 합쳐 보낸다. 물때가 덮인 나사를 균열로 보거나 장화 바닥 홈에 달라붙어 엉뚱한 구획으로 이동한다."
         },
         {
+          "en": "Escalation: Stage 1 spreads small scratches on metal surfaces. Stage 2 covers inspection-port screws with inspectors and at Stage 3 the lattice-passage cross-section shrinks, delaying drainage.",
           "ko": "상승: 1단계 금속면에 작은 긁힘이 번진다. 2단계 점검구 나사가 검사체로 덮이고 3단계에는 격자 통과 단면이 줄어 배수가 늦어진다."
         },
         {
+          "en": "Engagement and Countermeasures: Gather the swarm with a detachable groove test plate and place it into the recovery slot. High-pressure washing drives the inspectors deeper into the drain.",
           "ko": "교전·대응: 탈착 가능한 홈 시험판으로 떼를 모아 회수 슬롯에 넣는다. 높은 압력으로 씻어 내면 검사체가 더 깊은 배수구에 박힌다."
         },
         {
+          "en": "Negotiation and Moral Choice: Have people and H27 compare recovered unit count and disclose missing grooves. The trade condition is not issuing false safety declarations that the entire inspection was completed with few personnel.",
           "ko": "교섭·도덕 선택: 회수 개체 수를 사람과 H27이 대조해 누락 홈을 공개한다. 적은 인원으로 전부 검사했다는 허위 안전 선언을 하지 않는 것이 거래 조건이다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1858,6 +2405,7 @@
       "kind": "paragraph",
       "anchor": "g27e11-쌀껍질삼엽떼-p4",
       "text": {
+        "en": "<a id=\"g27e12\"></a>",
         "ko": "<a id=\"g27e12\"></a>"
       }
     },
@@ -1866,6 +2414,7 @@
       "anchor": "g27e12-꽃팔수압관측주",
       "depth": 3,
       "text": {
+        "en": "G27E12 · Flower Arm Hydraulic Observation Post",
         "ko": "G27E12 · 꽃팔수압관측주"
       }
     },
@@ -1874,12 +2423,15 @@
       "anchor": "g27e12-꽃팔수압관측주-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Environmental strongpoint form",
           "ko": "기존 역할군: 환경 거점형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1889,42 +2441,52 @@
       "anchor": "g27e12-꽃팔수압관측주-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Fixed strongpoint",
             "ko": "고정 거점"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strongpoint control",
             "ko": "거점 통제"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Flower-Arm Pressure Watch-Post was a machine chassis type differentiated from the G27 common ecology. The strongpoint control role applied only within a fixed work zone, and stood in for neither the whole swarm's ecological order nor human command.",
             "ko": "꽃팔수압관측주은 G27 공통 생태에서 분화한 기계 기종다. 거점 통제 역할은 고정된 작업 구역 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -1935,30 +2497,39 @@
       "anchor": "g27e12-꽃팔수압관측주-list3",
       "items": [
         {
+          "en": "Role and Body: Sensor arms spread like a calyx atop a sea-lily-shaped stalk. Fixed to the floor, this observation post compares flow direction and pressure changes over long periods.",
           "ko": "역할·신체: 해백합형 줄기 위에 센서 팔들이 꽃받침처럼 펼쳐진다. 움직이지 않는 바닥 고정 관측주로 흐름 방향과 압력 변화를 오래 비교한다."
         },
         {
+          "en": "Origin: A measuring column that recorded pump pulsations before the Collapse remained attached to a flooded support in the Ttukseom Union. When power returned, it adopted an old pump speed as its normal reference.",
           "ko": "기원: 붕괴 이전 펌프 맥동을 기록하던 계측 기둥이 뚝섬 연합 침수 받침에 붙어 남았다. 다시 전기가 들어오자 오래된 펌프 회전수를 정상 기준으로 삼았다."
         },
         {
+          "en": "Habitat and Needs: Anchored to a solid tank floor, it consumes wired power and sensor membranes. If mud covers its arms, it cannot move itself elsewhere.",
           "ko": "서식·필요: 튼튼한 수조 바닥의 앵커에 고정되어 유선 전력과 센서막을 소비한다. 진흙이 팔을 덮으면 스스로 다른 장소로 옮기지 못한다."
         },
         {
+          "en": "Life Cycle and Maintenance: It folds each arm in turn to measure its zero point and excludes readings from broken arms. If the remaining arms point mostly one way, its reports have directions they cannot observe.",
           "ko": "생애·정비: 팔 하나씩 접어 영점을 재고 고장 난 팔의 자료는 제외한다. 남은 팔 방향이 한쪽으로 쏠리면 보고서에도 관측 불가능한 방향이 생긴다."
         },
         {
+          "en": "Behavior and Hierarchy: It passes long-term comparisons to the buoys but does not pursue anything itself. Even normal pulsations from a new pump look like damage if they differ from the old cycle.",
           "ko": "행동·위계: 부이에게 장기 비교값을 넘길 뿐 직접 추격하지 않는다. 새 펌프의 정상 맥동도 옛 주기와 다르면 파손 징후로 읽는다."
         },
         {
+          "en": "Escalation: At Stage 1 warnings about the obsolete rotation speed repeat. At Stage 2 operating approval is delayed; at Stage 3 the pressure discrepancy becomes grounds for holding the connecting inspection doors shut.",
           "ko": "상승: 1단계 낡은 회전수 경고가 반복된다. 2단계 가동 승인이 지연되고 3단계에는 압력 불일치가 연결 점검문 보류의 근거로 굳는다."
         },
         {
+          "en": "Engagement and Countermeasures: Compare the present pump's measured cycle with each arm's zero point and separate the reference file. Pulling out the column may crack the floor around its anchor.",
           "ko": "교전·대응: 현 펌프의 실측 주기와 팔별 영점을 대조해 기준 파일을 분리한다. 기둥을 뽑으면 바닥 앵커 주변까지 갈라질 수 있다."
         },
         {
+          "en": "Negotiation and Moral Choice: Preserve old records while distinguishing them from current safety standards. Saying that a machine warned them does not absolve people of responsibility for keeping residents' pump shut.",
           "ko": "교섭·도덕 선택: 오래된 기록을 보존하되 현재 안전 기준과 구분한다. 기계가 경고했다는 말만으로 주민 펌프를 계속 멈추는 책임을 피할 수는 없다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -1967,6 +2538,7 @@
       "kind": "paragraph",
       "anchor": "g27e12-꽃팔수압관측주-p4",
       "text": {
+        "en": "<a id=\"g27e13\"></a>",
         "ko": "<a id=\"g27e13\"></a>"
       }
     },
@@ -1975,6 +2547,7 @@
       "anchor": "g27e13-방추귀환침",
       "depth": 3,
       "text": {
+        "en": "G27E13 · Spindle Return Needle",
         "ko": "G27E13 · 방추귀환침"
       }
     },
@@ -1983,12 +2556,15 @@
       "anchor": "g27e13-방추귀환침-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Mobility specialist",
           "ko": "기존 역할군: 기동 특수형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -1998,42 +2574,52 @@
       "anchor": "g27e13-방추귀환침-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Swarm · unit",
             "ko": "무리·부대"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Maneuver · flank",
             "ko": "기동·우회"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Spindle Return Needle was a machine chassis type differentiated from the G27 common ecology. The maneuver · flank role applied only at the swarm-consist scope, and stood in for neither the whole swarm's ecological order nor human command. }",
             "ko": "방추귀환침은 G27 공통 생태에서 분화한 기계 기종다. 기동·우회 역할은 무리 편성 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2044,30 +2630,39 @@
       "anchor": "g27e13-방추귀환침-list3",
       "items": [
         {
+          "en": "Role and Body: Its tapered spindle-shaped hull resembles a torpedo, but carries the leading end of a rescue line instead of explosives. After a fast straight run, it deploys tail brake plates to reach the receiving support.",
           "ko": "역할·신체: 양끝이 가늘어진 방추형 선체가 어뢰를 닮았지만 폭약 대신 구조줄 선단을 싣는다. 고속 직진 후 꼬리 제동판을 펼쳐 반대 받침에 닿는다."
         },
         {
+          "en": "Origin: A pre-Collapse courier for rapid connections of short underwater rescue lines remained in a launch groove at the Water Compact. On restarting, it treated the coordinates of a severed receiving support as valid.",
           "ko": "기원: 짧고 빠른 수중 구조줄 연결용 붕괴 이전 전달기가 급수계약정 발사 홈에 남았다. 재기동하면서 끊어진 수신 받침의 좌표를 유효한 것으로 읽었다."
         },
         {
+          "en": "Habitat and Needs: It can launch only down a straight inspection channel. It needs a propulsion battery, line reel, and brake-plate seals; after each departure it must be recovered and recharged.",
           "ko": "서식·필요: 직선 점검 수로에만 발사할 수 있다. 추진 전지, 줄 릴과 제동판 씰이 필요하며 한 번 출항한 뒤 반드시 회수해 재충전한다."
         },
         {
+          "en": "Life Cycle and Maintenance: At the recovery rack, workers check the angle at which its brake plates open. Twisted plates bar high-speed operation and leave the hull as a slow line carrier.",
           "ko": "생애·정비: 회수대에서 제동판이 벌어지는 각도를 확인한다. 비틀린 판은 고속 운용을 막고 선체를 낮은 속도의 줄 운반기로 남긴다."
         },
         {
+          "en": "Behavior and Hierarchy: It follows only a line marked passable by a reference buoy. If that marking is old, it cannot plot a new route around a diver who has entered the channel.",
           "ko": "행동·위계: 기준 부이가 통과 가능으로 표시한 한 선만 따라간다. 그 표시가 낡으면 중간에 들어온 잠수자를 피해 새 경로를 만들지 못한다."
         },
         {
+          "en": "Escalation: At Stage 1 the launch groove aims at an empty receiver. At Stage 2 the rescue line catches in the wrong conduit; at Stage 3 several lines divide the underwater crossing space.",
           "ko": "상승: 1단계 발사 홈이 빈 수신부를 조준한다. 2단계 구조줄이 엉뚱한 관구에 걸리고 3단계에는 여러 줄이 수중 횡단 공간을 가른다."
         },
         {
+          "en": "Engagement and Countermeasures: Before launch, move the receiving support to a nearby empty tank and connect a test line first. Blocking its path in motion exposes the blocker to the full impact of the fast hull.",
           "ko": "교전·대응: 발사 전 수신 받침을 가까운 빈 수조에 옮기고 시험선부터 연결한다. 주행 중 앞을 막으면 고속 선체의 충격을 그대로 받는다."
         },
         {
+          "en": "Negotiation and Moral Choice: Requiring human confirmation at both ends for each launch allows long rescue lines to be passed quickly. The claim of a faster rescue does not justify driving underwater travelers away without advance notice.",
           "ko": "교섭·도덕 선택: 발사마다 양끝 인간 확인을 요구하면 긴 구조줄을 빠르게 건넬 수 있다. 빠른 구조라는 명분으로 물속 통행자를 사전 통지 없이 밀어내지 않는다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -2076,6 +2671,7 @@
       "kind": "paragraph",
       "anchor": "g27e13-방추귀환침-p4",
       "text": {
+        "en": "<a id=\"g27e14\"></a>",
         "ko": "<a id=\"g27e14\"></a>"
       }
     },
@@ -2084,6 +2680,7 @@
       "anchor": "g27e14-쌍껍질벽눈",
       "depth": 3,
       "text": {
+        "en": "G27E14 · Twin-Shell Wall Eye",
         "ko": "G27E14 · 쌍껍질벽눈"
       }
     },
@@ -2092,12 +2689,15 @@
       "anchor": "g27e14-쌍껍질벽눈-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Damage-stage form",
           "ko": "기존 역할군: 손상 단계형"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -2107,42 +2707,52 @@
       "anchor": "g27e14-쌍껍질벽눈-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Damage variant",
             "ko": "손상 변이"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Twin-Shell Wall Eye was a machine chassis type differentiated from the G27 common ecology. The damage variant role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command. }",
             "ko": "쌍껍질벽눈은 G27 공통 생태에서 분화한 기계 기종다. 손상 변이 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2153,30 +2763,39 @@
       "anchor": "g27e14-쌍껍질벽눈-list3",
       "items": [
         {
+          "en": "Role and Body: Two brachiopod-like shells grip the pipe wall and press an inner vibration probe against it. A damaged unit with one seized hinge hangs at an angle like a slanted eye.",
           "ko": "역할·신체: 완족형 두 껍질이 관벽을 집고 안쪽 진동 탐침을 눌러 붙인다. 한쪽 경첩이 굳은 손상 개체는 비스듬한 눈처럼 벽에 매달린다."
         },
         {
+          "en": "Origin: A pre-Collapse attachment sensor for pipe-wall vibration tests returned when the Ttukseom Union re-energized its pipes. Sediment accumulated on the hinge during its long dormancy was not removed.",
           "ko": "기원: 관벽 진동 검사용 붕괴 이전 부착 센서가 뚝섬 연합 관로 재통전으로 돌아왔다. 장기 휴면 동안 경첩에 쌓인 침전물은 제거되지 않았다."
         },
         {
+          "en": "Habitat and Needs: It attaches to smooth inspection-pipe walls and uses contact pads and wired power. It cannot grip rough concrete tightly enough to extend its surveillance area.",
           "ko": "서식·필요: 매끈한 점검 관벽에 붙어 접촉 패드와 유선 전력을 쓴다. 거친 콘크리트에는 충분히 밀착하지 못해 새 감시 구역을 넓힐 수 없다."
         },
         {
+          "en": "Life Cycle and Maintenance: It should open the gap between its shells to compare contact, but its seized hinge makes it repeat a single reading. It needs replacement pads and manual cleaning to return to normal operation.",
           "ko": "생애·정비: 껍질 틈을 벌려 접촉 상태를 비교해야 하지만 굳은 경첩 때문에 한 번의 값만 반복한다. 패드 교체와 수동 세척을 받아야 정상 단계로 돌아온다."
         },
         {
+          "en": "Behavior and Hierarchy: It acts as a small pipe-wall eye for a reference buoy. Its main false alarm is reporting the vibration of its own loose shell as a sign that the pipe is about to rupture.",
           "ko": "행동·위계: 기준 부이의 작은 관벽 눈으로 작동한다. 떨어질 듯한 자기 껍질 진동을 관 파열의 전조로 보고하는 것이 주요 오탐이다."
         },
         {
+          "en": "Escalation: At Stage 1 it begins reporting tremors at one point. At Stage 2 pipe inspections concentrate there; at Stage 3 a false rupture alarm restricts passage through the tank.",
           "ko": "상승: 1단계 한 지점의 떨림 보고가 시작된다. 2단계 관로 검사가 그 지점에 몰리고 3단계에는 허위 파열 경보가 수조 통행을 묶는다."
         },
         {
+          "en": "Engagement and Countermeasures: Catch the falling shell in a recovery net, clean the hinge, and compare its reading with an independent probe. Hammering it off along with the pipe wall could create a real crack.",
           "ko": "교전·대응: 떨어지는 껍질을 회수망으로 받은 뒤 경첩을 세척하고 독립 탐침과 값을 비교한다. 관벽째 두드려 떼면 실제 균열을 만들 수 있다."
         },
         {
+          "en": "Negotiation and Moral Choice: Repairs can preserve only the monitoring points that are needed. A low-quality sensor must not be left unrepaired while its alarms are used to justify restricting the water supply.",
           "ko": "교섭·도덕 선택: 수리를 통해 필요한 감시점만 살릴 수 있다. 낮은 값의 센서를 방치한 채 그 경보로 급수 제한을 정당화하지 말아야 한다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -2185,6 +2804,7 @@
       "kind": "paragraph",
       "anchor": "g27e14-쌍껍질벽눈-p4",
       "text": {
+        "en": "<a id=\"g27e15\"></a>",
         "ko": "<a id=\"g27e15\"></a>"
       }
     },
@@ -2193,6 +2813,7 @@
       "anchor": "g27e15-바다전갈줄회수기",
       "depth": 3,
       "text": {
+        "en": "G27E15 · Sea-Scorpion Line Retriever",
         "ko": "G27E15 · 바다전갈줄회수기"
       }
     },
@@ -2201,12 +2822,15 @@
       "anchor": "g27e15-바다전갈줄회수기-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: First elite",
           "ko": "기존 역할군: 첫 번째 정예"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -2216,42 +2840,52 @@
       "anchor": "g27e15-바다전갈줄회수기-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Elite breakthrough",
             "ko": "정예 돌파"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Sea-Scorpion Line Retriever was a machine chassis type differentiated from the G27 common ecology. The elite breakthrough role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command. }",
             "ko": "바다전갈줄회수기은 G27 공통 생태에서 분화한 기계 기종다. 정예 돌파 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2262,30 +2896,39 @@
       "anchor": "g27e15-바다전갈줄회수기-list3",
       "items": [
         {
+          "en": "Role and Body: Two broad claws in front of its sea-scorpion-shaped body gather rescue lines from the floor. At the end of its curved tail is a line-tension gauge and recovery hook, not a stinger.",
           "ko": "역할·신체: 바다전갈형 몸 앞의 넓은 집게 두 개가 바닥 구조줄을 모은다. 뒤로 휜 꼬리 끝에는 독침이 아니라 줄 장력계와 회수 고리가 붙었다."
         },
         {
+          "en": "Origin: Pre-Collapse cleanup equipment that retrieved scattered lines after flooded-area rescues awoke in the lower tank of the Water Compact. The signal distinguishing completed work from an ongoing rescue had been cut off.",
           "ko": "기원: 침수 구조가 끝난 뒤 흩어진 줄을 회수하던 붕괴 이전 후처리 장비가 급수계약정 하부 수조에서 깨어났다. 종료된 작업과 진행 중인 구조를 구분할 표가 끊겼다."
         },
         {
+          "en": "Habitat and Needs: It uses claw pads, line loops, and a storage battery on the flat floor below the sluice and around the retrieval drum. It cannot climb high walls or reach deep sediment grooves.",
           "ko": "서식·필요: 수문 밑의 평평한 바닥과 회수 드럼 주변에서 집게 패드, 줄 고리와 축전통을 쓴다. 높은 벽이나 깊은 침전 홈까지 올라가지는 못한다."
         },
         {
+          "en": "Life Cycle and Maintenance: It hangs its tail tension gauge from an unloaded loop to calibrate zero. If the reading does not return, line retrieval must stop, though an old bypass setting may skip that halt.",
           "ko": "생애·정비: 꼬리 장력계를 무부하 고리에 걸어 영점을 맞춘다. 값이 돌아오지 않으면 줄 회수를 멈춰야 하지만 낡은 우회 설정이 그 정지를 건너뛸 수 있다."
         },
         {
+          "en": "Behavior and Hierarchy: It interprets the coelacanth-shaped unit's last passage record as the end of the job. It may pull the lines of a human rescue team following behind, mistaking them for discarded material.",
           "ko": "행동·위계: 실러캔스형의 마지막 통과 기록을 작업 종료로 해석한다. 뒤따르는 인간 구조대의 줄을 이미 버린 물자로 보고 당기는 위험이 있다."
         },
         {
+          "en": "Escalation: At Stage 1 a heap of empty lines accumulates before the drum. At Stage 2 tension rises in lines still in use; at Stage 3 multiple rescue lines are tied to one retrieval hook.",
           "ko": "상승: 1단계 빈 줄 뭉치가 드럼 앞에 쌓인다. 2단계 사용 중인 줄의 장력이 커지고 3단계에는 여러 구조줄이 한 회수 고리에 묶인다."
         },
         {
+          "en": "Engagement and Countermeasures: Transfer the line on the human side to a separate anchor before feeding an unloaded loop to the claws. Cutting off its tail and gauge does not guarantee that the pulling force will stop safely.",
           "ko": "교전·대응: 사람 쪽 줄을 별도 고정점으로 넘긴 뒤 무부하 고리를 집게에 물린다. 꼬리를 잘라 장력계를 없애면 회수 힘이 안전하게 멎는다는 보장은 없다."
         },
         {
+          "en": "Negotiation and Moral Choice: Change the inspection contact so that retrieval requires a human signature confirming the rescue is over. A route for someone who has yet to return takes priority over the gain from reclaiming spare line as material.",
           "ko": "교섭·도덕 선택: 사람의 구조 종료 서명을 받아야 회수하도록 점검 접점을 바꾼다. 남은 줄을 자재로 돌리는 이익보다 아직 돌아오지 않은 사람의 경로를 우선해야 한다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -2294,6 +2937,7 @@
       "kind": "paragraph",
       "anchor": "g27e15-바다전갈줄회수기-p4",
       "text": {
+        "en": "<a id=\"g27e16\"></a>",
         "ko": "<a id=\"g27e16\"></a>"
       }
     },
@@ -2302,6 +2946,7 @@
       "anchor": "g27e16-나선기준왕좌",
       "depth": 3,
       "text": {
+        "en": "G27E16 · Spiral Reference Throne",
         "ko": "G27E16 · 나선기준왕좌"
       }
     },
@@ -2310,12 +2955,15 @@
       "anchor": "g27e16-나선기준왕좌-list1",
       "items": [
         {
+          "en": "Source batch: M042",
           "ko": "출처 배치: M042"
         },
         {
+          "en": "Legacy role group: Scenario boss",
           "ko": "기존 역할군: 시나리오 보스"
         },
         {
+          "en": "Link: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}",
           "ko": "연결: {\"scenarios\":[\"G27-SC1\",\"G27-SC2\",\"G27-SC3\"]}"
         }
       ]
@@ -2325,42 +2973,52 @@
       "anchor": "g27e16-나선기준왕좌-table2",
       "columns": [
         {
+          "en": "Codex item",
           "ko": "도감 항목"
         },
         {
+          "en": "Record",
           "ko": "기록"
         }
       ],
       "rows": [
         [
           {
+            "en": "Class",
             "ko": "구분"
           },
           {
+            "en": "Machine chassis type",
             "ko": "기계 기종"
           }
         ],
         [
           {
+            "en": "Battlefield unit",
             "ko": "전장 단위"
           },
           {
+            "en": "Independent unit",
             "ko": "독립 개체"
           }
         ],
         [
           {
+            "en": "Battlefield role",
             "ko": "전장 역할"
           },
           {
+            "en": "Strategic encounter",
             "ko": "전략 조우"
           }
         ],
         [
           {
+            "en": "Common/variant and command scope",
             "ko": "공통종·변이와 지휘 범위"
           },
           {
+            "en": "The Spiral Datum Throne was a machine chassis type differentiated from the G27 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole swarm's ecological order nor human command. }",
             "ko": "나선기준왕좌은 G27 공통 생태에서 분화한 기계 기종다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다."
           }
         ]
@@ -2371,30 +3029,39 @@
       "anchor": "g27e16-나선기준왕좌-list3",
       "items": [
         {
+          "en": "Role and Body: Enormous ammonite-shaped spiral compartments hang from a flooded maintenance platform linking several reference buoys. Its field nickname of ruler-class comes less from its size than from its role in finally combining pressure tables from each compartment.",
           "ko": "역할·신체: 거대한 암모나이트형 나선 격실이 여러 기준 부이를 잇는 침수 정비대에 걸려 있다. 군주급이라는 현장 별명은 크기보다 구획별 압력 표를 마지막으로 합치는 기능에서 나왔다."
         },
         {
+          "en": "Origin: It belongs to a lost series that bound departure approvals for pre-Collapse deep-inspection flotillas. After power returned to the sealed support at the Water Compact, it circulated old hazard tables without recognizing the original design's distinction between rescue and isolation.",
           "ko": "기원: 붕괴 이전 심층 검사 편대의 출항 승인을 묶던 로스트 계열이다. 급수계약정 봉인 받침 재통전 뒤 원 설계의 구조·격리 구분을 읽지 못한 채 과거 위험 표를 배포한다."
         },
         {
+          "en": "Habitat and Needs: Its authority extends only as far as wired connections within one maintenance tank. It needs pressure membranes, insulated terminals, and a large charging supply; it has no network reaching every Han River sluice.",
           "ko": "서식·필요: 한 정비 수조의 유선 연결 범위만 관할한다. 압력막, 절연 단자와 대형 충전 공급을 요구하며 전체 한강 수문에 접근할 망은 없다."
         },
         {
+          "en": "Life Cycle and Maintenance: It seals damaged compartments one by one, retaining only pressure channels that can be compared. It can inspect and readmit dormant units but cannot manufacture a new pressure hull or recreate lost intentions.",
           "ko": "생애·정비: 손상 격실을 차례로 봉인해 비교 가능한 압력 채널만 남긴다. 휴면 기체를 검사해 다시 받을 수는 있어도 새 압력 선체를 생산하거나 잃은 의도를 재창조하지 못한다."
         },
         {
+          "en": "Behavior and Hierarchy: Ammonite-shaped units send compartment reference values here, while coelacanth-shaped units send return status. If it treats every conflicting value as a hazard, even a passage window verified by people is put on hold.",
           "ko": "행동·위계: 암모나이트형은 구획 기준을, 실러캔스형은 귀환 상태를 이곳에 올린다. 상충하는 값을 모두 위험으로 처리하면 사람이 확인한 통행 창까지 보류된다."
         },
         {
+          "en": "Escalation: At Stage 1 water-pressure alarms activate on empty channels. At Stage 2 standby states from several buoys overlap; at Stage 3 connecting inspection doors close in sequence, leaving people outside the return line.",
           "ko": "상승: 1단계에는 빈 채널의 수압 경보가 켜진다. 2단계 여러 부이의 대기 상태가 겹치고 3단계에는 연결 점검문이 순서대로 닫혀 귀환선 밖 사람이 남는다."
         },
         {
+          "en": "Engagement and Countermeasures: Under HP01's split key, compare H27 field readings with an independent pressure gauge and isolate the erroneous work-table channel first. The incident can end with an unloaded seal rather than destruction of the whole tank.",
           "ko": "교전·대응: HP01의 분할 키 아래 H27 현장값과 독립 압력계를 대조하고 잘못된 작업표 채널부터 분리한다. 전체 수조를 파괴하지 않고 무부하 봉인으로 끝낼 수 있다."
         },
         {
+          "en": "Negotiation and Moral Choice: Returning departure authority to human approval for each compartment preserves its inspection capability. People must give up swift centralized command and accept repeated inspection labor; they must not accept a condition that uses water supply as leverage.",
           "ko": "교섭·도덕 선택: 출항 권한을 구획별 인간 승인으로 돌리면 검사 능력을 남긴다. 신속한 단일 지휘를 버리고 반복 점검 노동을 감당해야 하며 급수를 압박 수단으로 쓰는 조건은 받아들이지 않는다."
         },
         {
+          "en": "Scenario Links: G27-SC1, G27-SC2, G27-SC3.",
           "ko": "시나리오 연결: G27-SC1, G27-SC2, G27-SC3."
         }
       ]
@@ -2404,6 +3071,7 @@
       "anchor": "서식권-기록",
       "depth": 2,
       "text": {
+        "en": "Habitat Record",
         "ko": "서식권 기록"
       }
     },
@@ -2411,6 +3079,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p1",
       "text": {
+        "en": "At the end of a submerged stairway, fourteen rows of foothold marks turn back upward.",
         "ko": "물에 잠긴 계단 끝에서 열네 줄의 발판 자국이 위로 돌아 나온다."
       }
     },
@@ -2418,6 +3087,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p2",
       "text": {
+        "en": "The floodgate gallery of the Water Compact reported that drainage was complete, but a trilobite-type scout is still feeling along the bottom.",
         "ko": "급수계약정 급수계약정의 수문 갤러리는 배수가 끝났다고 보고했지만 삼엽충형 정찰기는 아직 바닥을 더듬는다."
       }
     },
@@ -2425,6 +3095,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p3",
       "text": {
+        "en": "The Deep Trilobite Swarm is a line of biomimetic robots once responsible for deep inspections of pre-collapse floodgates, pipes, and sewers, as well as flooded rescues.",
         "ko": "심층삼엽군은 붕괴 이전 수문·관로·하수의 심층 검사와 침수 구조를 맡았던 생물모방 로봇 계보다."
       }
     },
@@ -2432,6 +3103,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p4",
       "text": {
+        "en": "Flat, ventrally driven units, spiral-shelled buoys and pressure chambers, and coelacanth-type submersibles with drive covers spread like fleshy fins each serve at different depths.",
         "ko": "납작한 복부 주행체, 나선 껍질의 부이·가압 챔버 살붙은 지느러미처럼 구동 덮개를 편 실러캔스형 잠항체가 서로 다른 깊이를 맡는다."
       }
     },
@@ -2439,6 +3111,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p5",
       "text": {
+        "en": "Their resemblance to ancient animals is a trace of their design, not evidence that the original living species have returned.",
         "ko": "고대 생물의 외형은 설계 흔적이지 살아 있는 원종이 돌아왔다는 증거가 아니다."
       }
     },
@@ -2446,6 +3119,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p6",
       "text": {
+        "en": "They lay dormant for years on supports in the Water Compact, in the pump pipes of the Ttukseom Union Sermon Registry State, and in the Han River’s cargo-unloading sediment zone.",
         "ko": "이들은 급수계약정의 받침, 뚝섬 연합 설교명부정의 펌프 관로 한강 하적 침전 구역에서 오래 잠들었다."
       }
     },
@@ -2453,6 +3127,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p7",
       "text": {
+        "en": "Re-energized supports and rising water levels woke the dormant inspection routine, but the upper-level network that wrote new work schedules did not return.",
         "ko": "재통전된 받침과 높아진 수위가 휴면 검사를 깨웠으나 새 작업표를 쓰던 상위 망은 돌아오지 않았다."
       }
     },
@@ -2460,6 +3135,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p8",
       "text": {
+        "en": "In the operating records, the entrance for rescue bundles and the outlet for removing foreign material have the same coordinates.",
         "ko": "동작 기록에 남은 구조 포대의 입구와 이물질 반출구는 같은 좌표다."
       }
     },
@@ -2467,6 +3143,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p9",
       "text": {
+        "en": "The correspondence table explaining which conditions save a person and which confine one is missing.",
         "ko": "어느 조건이 사람을 구하고 어느 조건이 가두는지 설명하던 대응표가 없다."
       }
     },
@@ -2474,6 +3151,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p10",
       "text": {
+        "en": "HP01’s Yeongdeungpo Floodgate House records this as lost technology, and conditions that cannot be interpreted even with F11’s comparison records remain blank.",
         "ko": "HP01 영등포수문가는 이를 로스트 기술이라 적고, F11의 비교 기록에도 판독 불가인 조건은 빈칸으로 남긴다."
       }
     },
@@ -2481,6 +3159,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p11",
       "text": {
+        "en": "They do not fill an inexplicable blank with either goodwill or malice.",
         "ko": "설명할 수 없는 칸을 선의나 적의로 채우지 않는다."
       }
     },
@@ -2488,6 +3167,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p12",
       "text": {
+        "en": "Trilobite-type units read contact pressure on the pipe bottom, while ammonite-type units hold a section’s reference water pressure.",
         "ko": "삼엽충형은 관저의 접촉압을 읽고 암모나이트형은 구획의 수압 기준을 붙든다."
       }
     },
@@ -2495,6 +3175,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p13",
       "text": {
+        "en": "Coelacanth-type units sweep long flooded corridors using acoustic round-trip time.",
         "ko": "실러캔스형은 음향 왕복 시간으로 긴 침수 회랑을 훑는다."
       }
     },
@@ -2502,6 +3183,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p14",
       "text": {
+        "en": "When bubbles are plentiful, the distance to a diver disappears; amid bends in ironwork, one stretcher sounds like several obstacles.",
         "ko": "기포가 많으면 잠수자의 거리가 사라지고 철제 굴곡에서는 하나의 들것이 여러 장애물로 들린다."
       }
     },
@@ -2509,6 +3191,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p15",
       "text": {
+        "en": "They cannot identify people or see beyond a wall that water cannot pass through.",
         "ko": "이들은 사람의 신원을 알아보거나 물이 통하지 않는 벽 너머를 보지 못한다."
       }
     },
@@ -2516,6 +3199,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p16",
       "text": {
+        "en": "If the reference buoy falls silent, the submersibles return; only the bottom scouts can crawl through short stretches of gallery.",
         "ko": "기준 부이가 침묵하면 잠항체는 귀환하며, 바닥 정찰기만 짧은 갤러리 구간을 기어서 옮겨 간다."
       }
     },
@@ -2523,6 +3207,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p17",
       "text": {
+        "en": "There is no hidden direct pipeline for them between the Water Compact and the Ttukseom Union. Only drainage outlets that are actually open and the riverbed serve as routes.",
         "ko": "급수계약정과 뚝섬 연합 사이에는 이들을 위한 숨은 직통 관로가 없고 실제로 열린 배수구와 강바닥만 이동로가 된다."
       }
     },
@@ -2530,6 +3215,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p18",
       "text": {
+        "en": "Changes in the tide level in XT02, the West Sea Granary Theater, change the depth of those routes but do not issue orders to the swarm.",
         "ko": "XT02 서해곡창전구의 조위 변화는 그 이동로의 깊이를 바꿀 뿐 군집에 명령을 내리지 않는다."
       }
     },
@@ -2537,6 +3223,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p19",
       "text": {
+        "en": "Each departure reserves thirty percent of the remaining battery charge for the return trip.",
         "ko": "각 출항은 남은 축전의 삼십 퍼센트를 복귀 몫으로 남긴다."
       }
     },
@@ -2544,6 +3231,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p20",
       "text": {
+        "en": "Without wired power from a maintenance support and a sealed battery canister, they stop underwater.",
         "ko": "정비 받침의 유선 전력과 밀폐 축전통이 없으면 물속에서 멈춘다."
       }
     },
@@ -2551,6 +3239,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p21",
       "text": {
+        "en": "Seals, sacrificial anodes, pressure membranes, and wash water are drawn from the same ledger as civilian pump maintenance.",
         "ko": "패킹, 희생 양극 압력막과 세척수는 시민 펌프 정비와 같은 장부에서 빠져나간다."
       }
     },
@@ -2558,6 +3247,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p22",
       "text": {
+        "en": "They cannot build new pressure hulls, and even a unit fitted with recovered footholds cannot be put in the water unless it passes a leak test.",
         "ko": "압력 선체를 새로 만들 능력은 없으며, 회수한 발판을 붙여도 누설 시험을 못 넘긴 기체는 물에 넣지 못한다."
       }
     },
@@ -2565,6 +3255,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p23",
       "text": {
+        "en": "Environmental adaptation likewise cannot exceed the old adjustment ranges for foothold spacing, fin folding, and acoustic output.",
         "ko": "환경 적응 또한 발판 간격, 지느러미 접힘 음향 출력의 낡은 조절 범위를 넘지 않는다."
       }
     },
@@ -2572,6 +3263,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p24",
       "text": {
+        "en": "Surviving in mud does not mean they have recovered the design’s intent.",
         "ko": "진흙 속에서 살아남았다는 사실은 설계 의도까지 되찾았다는 뜻이 아니다."
       }
     },
@@ -2579,6 +3271,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p25",
       "text": {
+        "en": "Emergence is marked by renewed power and a water-level alarm, expansion by connection to the next reference tank, and stagnation by leaking seals.",
         "ko": "출현은 재통전과 수위 경보, 확산은 다음 기준 수조의 연결 정체는 패킹 누수로 구별한다."
       }
     },
@@ -2586,6 +3279,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p26",
       "text": {
+        "en": "When people provide measured pressure and safe docking values, the negotiation stage opens; after the reference work schedule is separated and the units are sealed on their supports, dissolution is recorded.",
         "ko": "사람이 실측 압력과 도킹 안전값을 제시하면 협상가능 단계가 열리고, 기준 작업표를 분리한 뒤 받침에 봉인하면 와해로 기록한다."
       }
     },
@@ -2593,6 +3287,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p27",
       "text": {
+        "en": "This is not reproduction, but the departure and stoppage of the machines that remain.",
         "ko": "이는 번식이 아니라 남은 기계의 출항과 정지다."
       }
     },
@@ -2600,6 +3295,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p28",
       "text": {
+        "en": "HP01 duty officers each keep their own key, and F11 compares values only through a connected field cable.",
         "ko": "HP01 당직은 각자의 키를 보관하고 F11은 연결된 현장 케이블에서만 값을 대조한다."
       }
     },
@@ -2607,6 +3303,7 @@
       "kind": "paragraph",
       "anchor": "서식권-기록-p29",
       "text": {
+        "en": "People grant passage approval under citizen observation; recognizing an ability to measure underwater is different from surrendering authority over the water supply.",
         "ko": "통행 승인은 시민 참관 아래 사람이 맡는고 물 아래 측정 능력을 인정하는 것과 급수권을 넘기는 것은 다르다."
       }
     },
@@ -2615,6 +3312,7 @@
       "anchor": "g27-sc1-바닥에-붙은-구조줄",
       "depth": 3,
       "text": {
+        "en": "G27-SC1 · The Rescue Line Caught on the Bottom",
         "ko": "G27-SC1 · 바닥에 붙은 구조줄"
       }
     },
@@ -2622,6 +3320,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc1-바닥에-붙은-구조줄-p1",
       "text": {
+        "en": "In an inspection tank of the Water Compact, a trilobite-type unit flags a rescue line as sedimentary foreign material and pulls it toward a drain.",
         "ko": "급수계약정 점검 수조에서 삼엽충형이 구조줄을 침전 이물질로 표시하고 배수구 쪽으로 당긴다."
       }
     },
@@ -2629,6 +3328,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc1-바닥에-붙은-구조줄-p2",
       "text": {
+        "en": "Attached to the end of the line is the stretcher of an inspector still in the flooded gallery.",
         "ko": "줄 끝에는 침수 갤러리에 남은 점검자의 들것이 연결되어 있다."
       }
     },
@@ -2636,6 +3336,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc1-바닥에-붙은-구조줄-p3",
       "text": {
+        "en": "The field team compares the foothold marks with F11’s contact records to find an old test plate that discounts the weight of a living person.",
         "ko": "현장 인원은 발판 자국과 F11의 접촉 기록을 비교해 살아 있는 하중을 지우는 낡은 시험판을 찾는다."
       }
     },
@@ -2643,6 +3344,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc1-바닥에-붙은-구조줄-p4",
       "text": {
+        "en": "They can place a detachable test plate on another pipe bottom to divert the unit, or cut only the drive power to its support.",
         "ko": "분리형 시험판을 다른 관저에 놓아 기체를 돌리거나 해당 받침의 구동 전원만 끊을 수 있다."
       }
     },
@@ -2650,6 +3352,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc1-바닥에-붙은-구조줄-p5",
       "text": {
+        "en": "Choosing the former allows the rescue to continue, but the unit may repeat the same judgment on its next patrol.",
         "ko": "전자를 택하면 구조는 계속되지만 기체가 다음 순찰에서 같은 판정을 되풀이할 수 있다."
       }
     },
@@ -2657,6 +3360,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc1-바닥에-붙은-구조줄-p6",
       "text": {
+        "en": "The latter releases the line immediately, but people must inspect the cracks in the bottom themselves.",
         "ko": "후자는 즉시 줄을 풀되 사람이 직접 바닥 균열을 검사해야 한다."
       }
     },
@@ -2664,6 +3368,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc1-바닥에-붙은-구조줄-p7",
       "text": {
+        "en": "HP01 records which test plate was removed in a public ledger.",
         "ko": "HP01은 어느 시험판을 제거했는지 공개 장부에 남긴다."
       }
     },
@@ -2672,6 +3377,7 @@
       "anchor": "g27-sc2-껍질-안의-빈-숨통",
       "depth": 3,
       "text": {
+        "en": "G27-SC2 · The Empty Airway Inside the Shell",
         "ko": "G27-SC2 · 껍질 안의 빈 숨통"
       }
     },
@@ -2679,6 +3385,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc2-껍질-안의-빈-숨통-p1",
       "text": {
+        "en": "An ammonite-type unit attached to a pump branch of the Ttukseom Union displays a pressure different from the pressure outside and closes the rescue chamber door.",
         "ko": "뚝섬 연합 펌프 분기에 붙은 암모나이트형이 바깥과 다른 압력을 표시하며 구조 챔버 문을 닫는다."
       }
     },
@@ -2686,6 +3393,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc2-껍질-안의-빈-숨통-p2",
       "text": {
+        "en": "The chamber is empty, but there are too few breathing-gas canisters for the next rescue team, and a civilian pump needs new seals that same day.",
         "ko": "안쪽은 비어 있지만 다음 구조대를 받을 호흡 기체통이 모자라고, 같은 날 시민 펌프에도 새 패킹이 필요하다."
       }
     },
@@ -2693,6 +3401,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc2-껍질-안의-빈-숨통-p3",
       "text": {
+        "en": "The field team uses a mechanical pressure gauge to prove that a sensing port is blocked, then negotiates with HP01 over a charging window, a set of seals, and the order in which people may pass.",
         "ko": "현장 인원은 기계식 압력계로 막힌 감지구를 입증하고 HP01과 충전 창, 패킹 한 조 사람 통행 순서를 거래한다."
       }
     },
@@ -2700,6 +3409,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc2-껍질-안의-빈-숨통-p4",
       "text": {
+        "en": "Repairing the chamber provides a flooded-rescue waiting room, but delays maintenance on one pump.",
         "ko": "챔버를 수리하면 침수 구조 대기실을 얻는 대신 펌프 한 대의 정비가 늦어진다."
       }
     },
@@ -2707,6 +3417,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc2-껍질-안의-빈-숨통-p5",
       "text": {
+        "en": "Keeping only the buoy function preserves the pressure alarm but provides no air-filled room where rescuers can rest.",
         "ko": "부이 기능만 남기면 압력 경보는 살릴 수 있으나 구조대가 쉴 공기방은 얻지 못한다."
       }
     },
@@ -2714,6 +3425,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc2-껍질-안의-빈-숨통-p6",
       "text": {
+        "en": "The shortcut of opening it as a rescue room without an internal leak test leaves a separate risk to human life.",
         "ko": "내부 누설 시험을 생략한 채 구조실로 개방하는 지름길은 별도의 인명 위험을 남긴다."
       }
     },
@@ -2722,6 +3434,7 @@
       "anchor": "g27-sc3-귀환선-밖의-두-사람",
       "depth": 3,
       "text": {
+        "en": "G27-SC3 · Two People Outside the Return Route",
         "ko": "G27-SC3 · 귀환선 밖의 두 사람"
       }
     },
@@ -2729,6 +3442,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc3-귀환선-밖의-두-사람-p1",
       "text": {
+        "en": "When a change in XT02’s tide level alters the Water Compact’s drainage time, coelacanth-type units travel back and forth through a rescue corridor to clear the old return route.",
         "ko": "XT02 조위 변화로 급수계약정 배수 시각이 바뀌자 실러캔스형은 옛 귀환선을 비우려고 구조 회랑을 왕복한다."
       }
     },
@@ -2736,6 +3450,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc3-귀환선-밖의-두-사람-p2",
       "text": {
+        "en": "The reference buoy closes its connected inspection doors in sequence, leaving two transport workers between them.",
         "ko": "기준 부이는 연결된 점검문을 차례로 닫고 그 사이에 운반 인부 둘이 남는다."
       }
     },
@@ -2743,6 +3458,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc3-귀환선-밖의-두-사람-p3",
       "text": {
+        "en": "The field team can move the return-guidance tone to an empty support to turn the submersible back, or separate the buoy’s work schedule and keep each door open manually.",
         "ko": "현장 인원은 비어 있는 받침에 귀환 유도음을 옮겨 잠항기를 돌리거나, 부이의 작업표를 분리하. 각 문을 수동으로 유지할 수 있다."
       }
     },
@@ -2750,6 +3466,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc3-귀환선-밖의-두-사람-p4",
       "text": {
+        "en": "Moving the guidance tone lets the workers escape but halts another riverbed patrol; keeping the doors open manually requires civilian duty officers to stay at their posts until the next tide change.",
         "ko": "유도음을 옮기면 인부는 빠져나오지만 다른 강바닥 순찰이 멎고, 수동 유지는 시민 당직이 다음 조위까지 그 자리를 지켜야 한다."
       }
     },
@@ -2757,6 +3474,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc3-귀환선-밖의-두-사람-p5",
       "text": {
+        "en": "Full drainage exposes the corridor but cuts off temporary transport by water.",
         "ko": "전면 배수는 회랑을 드러내는 대신 임시 수상 운반을 끊는다."
       }
     },
@@ -2764,6 +3482,7 @@
       "kind": "paragraph",
       "anchor": "g27-sc3-귀환선-밖의-두-사람-p6",
       "text": {
+        "en": "After the rescue, the order in which the doors were opened and the battery charge left in reserve are entered in both the Water Compact’s and the Ttukseom Union’s ledgers, and the keys to the two sections are divided for safekeeping again.",
         "ko": "구조 후에는 문을 연 순서와 남겨 둔 축전을 급수계약정과 뚝섬 연합 양쪽 장부에 적고 두 구역의 키를 다시 나눠 보관한다."
       }
     }
