@@ -5250,8 +5250,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           <text data-detail="context" x="764" y="131" class="t-muted" font-size="8" text-anchor="middle">생사·부상·구금</text>
         </g>
 
-        <g id="node-successor" data-node-id="successor" data-node-label="후계가 본체" tabindex="0" role="button" aria-label="Focus 후계가 본체, 지정 후계 → 계승 순서, CK3 인물·왕조 › 다음 턴" aria-pressed="false" data-node-kind="security" data-node-sublabel="지정 후계 → 계승 순서" data-node-context="CK3 인물·왕조 › 다음 턴">
-          <title>후계가 본체 · 지정 후계 → 계승 순서 · CK3 인물·왕조 › 다음 턴</title>
+        <g id="node-successor" data-node-id="successor" data-node-label="후계가 본체" tabindex="0" role="button" aria-label="Focus 후계가 본체, 시점 이동 · 분대는 임시 분대장, CK3 인물·왕조 › 다음 턴" aria-pressed="false" data-node-kind="security" data-node-sublabel="시점 이동 · 분대는 임시 분대장" data-node-context="CK3 인물·왕조 › 다음 턴">
+          <title>후계가 본체 · 시점 이동 · 분대는 임시 분대장 · CK3 인물·왕조 › 다음 턴</title>
           <rect x="913.2" y="93" width="128" height="52" rx="6" class="c-mask"/>
           <rect x="913.2" y="93" width="128" height="52" rx="6" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(919.2 99) scale(0.6875)">
@@ -5259,7 +5259,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             <path d="m5.8 8 1.5 1.5 3-3"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="977.2" y="114" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">후계가 본체</text>
-          <text data-detail="context" x="977.2" y="131" class="t-muted" font-size="8" text-anchor="middle">지정 후계 → 계승 순서</text>
+          <text data-detail="context" x="977.2" y="131" class="t-muted" font-size="6.6" text-anchor="middle">시점 이동 · 분대는 임시 분대장</text>
         </g>
 
         <g id="node-clock" data-node-id="clock" data-node-label="세계 시간 한 칸" tabindex="0" role="button" aria-label="Focus 세계 시간 한 칸, 턴 해결이 시간을 민다, 세계 시간 › 일괄 해결" aria-pressed="false" data-node-kind="database" data-node-sublabel="턴 해결이 시간을 민다" data-node-context="세계 시간 › 일괄 해결">
@@ -5327,15 +5327,15 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           <text data-detail="context" x="977.2" y="379" class="t-muted" font-size="8" text-anchor="middle">다음 계획 단계</text>
         </g>
 
-        <g id="node-battle" data-node-id="battle" data-node-label="닫힌 전투" tabindex="0" role="button" aria-label="Focus 닫힌 전투, 부대 지휘 · 따로 진행, TW 전투 › 교전" aria-pressed="false" data-node-kind="backend" data-node-sublabel="부대 지휘 · 따로 진행" data-node-context="TW 전투 › 교전">
-          <title>닫힌 전투 · 부대 지휘 · 따로 진행 · TW 전투 › 교전</title>
+        <g id="node-battle" data-node-id="battle" data-node-label="닫힌 전투" tabindex="0" role="button" aria-label="Focus 닫힌 전투, 그 분대만 명령 잠김, TW 전투 › 교전" aria-pressed="false" data-node-kind="backend" data-node-sublabel="그 분대만 명령 잠김" data-node-context="TW 전투 › 교전">
+          <title>닫힌 전투 · 그 분대만 명령 잠김 · TW 전투 › 교전</title>
           <rect x="580" y="465" width="128" height="52" rx="6" class="c-mask"/>
           <rect x="580" y="465" width="128" height="52" rx="6" class="c-backend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(586 471) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="644" y="486" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">닫힌 전투</text>
-          <text data-detail="context" x="644" y="503" class="t-muted" font-size="8" text-anchor="middle">부대 지휘 · 따로 진행</text>
+          <text data-detail="context" x="644" y="503" class="t-muted" font-size="8" text-anchor="middle">그 분대만 명령 잠김</text>
         </g>
 
         <g id="node-settle" data-node-id="settle" data-node-label="한 번 정산" tabindex="0" role="button" aria-label="Focus 한 번 정산, ResultId 1회, 정산 › 정산" aria-pressed="false" data-node-kind="database" data-node-sublabel="ResultId 1회" data-node-context="정산 › 정산">
@@ -5647,8 +5647,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           <h3>소유자 결정 2026-09-24</h3>
         </div>
         <ul>
-          <li>&bull; 본체가 죽거나 영구 구금되면 지정 후계, 없으면 계승 순서의 인물이 본체가 된다</li>
-          <li>&bull; 열린 전투는 다음 턴과 따로 진행되고, 결과는 ResultId로 한 번만 정산된다</li>
+          <li>&bull; 본체가 죽거나 영구 구금되면 후계자가 본체가 되고 시점은 후계자 위치로 옮긴다. 남은 분대는 임시 분대장을 뽑는다</li>
+          <li>&bull; 열린 전투는 따로 진행되고, 그 분대만 결과 정산 때까지 새 전략 명령이 잠긴다</li>
+          <li>&bull; 카메라는 3D 자유 지휘로 확정, 전투 일시정지 규칙은 미정이다</li>
         </ul>
       </div>
 
