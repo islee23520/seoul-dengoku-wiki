@@ -544,22 +544,30 @@ const relatedTimelineDocuments = (text) => {
   if (peopleSource.some((person) => text.includes(person.name))) add('등장인물 전체', '/people')
   return related
 }
-const sourceParagraphs = (centuryAnnalsDocument?.content ?? [])
-  .filter((block) => block.kind === 'paragraph')
-  .map((block) => typeof block.text.ko === 'string' ? block.text.ko : block.text.ko.map((run) => run.text).join(''))
+const koText = (leaf) => typeof leaf === 'string' ? leaf : leaf.map((run) => run.text).join('')
+const firstSentence = (text) => text.match(/^.*?[.!?](?:\s|$)/u)?.[0]?.trim() ?? text.trim()
+// A year is a `### YYYY년` heading in the annals; its paragraphs run until the next year or era heading,
+// so every entry links to an anchor that exists on the Century-Annals page.
 const byYear = new Map()
-for (const paragraph of sourceParagraphs) {
-  const year = Number(paragraph.match(/(?:^|\s)((?:20|21)\d{2})년/u)?.[1])
-  if (!Number.isInteger(year)) continue
-  if (!byYear.has(year)) byYear.set(year, [])
-  byYear.get(year).push(paragraph)
+let currentYear = null
+for (const block of centuryAnnalsDocument?.content ?? []) {
+  if (block.kind === 'heading' && block.depth <= 3) {
+    const year = block.depth === 3 ? Number(koText(block.text.ko).match(/^((?:20|21)\d{2})년$/u)?.[1]) : NaN
+    currentYear = Number.isInteger(year) ? year : null
+    if (currentYear !== null) {
+      if (byYear.has(currentYear)) throw new Error(`E_TIMELINE_DUPLICATE_YEAR:${currentYear}`)
+      byYear.set(currentYear, [])
+    }
+    continue
+  }
+  if (currentYear !== null && block.kind === 'paragraph') byYear.get(currentYear).push(koText(block.text.ko))
 }
 const timelineYears = [...byYear.entries()].sort(([left], [right]) => left - right).map(([year, prose]) => {
   const summary = prose.slice(0, 2).join(' ')
-  const pressure = ''
-  const decision = ''
-  const immediate = ''
-  const aftermath = ''
+  const pressure = firstSentence(prose[0] ?? '')
+  const decision = firstSentence(prose[1] ?? prose[0] ?? '')
+  const immediate = firstSentence(prose.at(-1) ?? '')
+  const aftermath = immediate
   return {
     year,
     summary,
@@ -571,9 +579,9 @@ const timelineYears = [...byYear.entries()].sort(([left], [right]) => left - rig
     relatedDocuments: relatedTimelineDocuments(prose.join('\n')),
   }
 })
-const duplicateYears = timelineYears.map((entry) => entry.year).filter((year, index, years) => years.indexOf(year) !== index)
-if (timelineYears.length === 0 || timelineYears[0]?.year !== 2026 || timelineYears.at(-1)?.year < timelineYears[0].year || duplicateYears.length > 0) {
-  throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${duplicateYears.join(',')}`)
+const emptyYears = timelineYears.filter((entry) => entry.summary.length === 0).map((entry) => entry.year)
+if (timelineYears.length === 0 || timelineYears[0]?.year !== 2026 || timelineYears.at(-1)?.year > 2126 || emptyYears.length > 0) {
+  throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${emptyYears.join(',')}`)
 }
 await writeFile(resolve(publicRoot, 'timeline-overview.json'), `${JSON.stringify({ schema: 'seoul-timeline-overview.v1', years: timelineYears, states: territoryStates }, null, 2)}\n`)
 

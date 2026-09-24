@@ -6,7 +6,7 @@ type TimelineYear = { year: number; summary: string; pressure: string; decision:
 type TimelineOverviewData = { schema: string; years: TimelineYear[] }
 
 const periods = [
-  { id: 'all', label: '전체 101개 연도', start: 2026, end: 2126 },
+  { id: 'all', label: '전체 연도', start: 2026, end: 2126 },
   { id: 'survival', label: '생존 당직 2026–2039', start: 2026, end: 2039 },
   { id: 'water', label: '생활권 장부 2040–2054', start: 2040, end: 2054 },
   { id: 'flags', label: '열여섯 깃발 2055–2069', start: 2055, end: 2069 },
@@ -37,13 +37,13 @@ export default function TimelineOverview() {
   const years = useMemo(() => data?.years.filter((entry) => entry.year >= period.start && entry.year <= period.end) ?? [], [data, period])
 
   if (failed) return <p className="wiki-domain-label">백년실록 연도별 줄거리 데이터를 불러오지 못했습니다.</p>
-  if (!data) return <div className="wiki-loading">백년실록 101개 연도의 전체 줄거리를 정리하고 있습니다.</div>
+  if (!data) return <div className="wiki-loading">백년실록 연도별 전체 줄거리를 정리하고 있습니다.</div>
 
   return (
     <section className="timeline-overview" aria-labelledby="timeline-overview-title">
       <header>
         <p className="wiki-domain-label">2026–2126 · 백년실록 구조 색인</p>
-        <h2 id="timeline-overview-title">전체 101개 연도 줄거리</h2>
+        <h2 id="timeline-overview-title">전체 {data.years.length}개 연도 줄거리</h2>
         <p>각 연도의 사건 전문을 한 문단으로 압축하고, 그해의 압력·결정·즉시 결과·다음 해에 남은 인과를 같은 줄에서 확인합니다. 요약은 <Link to="/world/Century-Annals">서울전국 백년실록</Link>에서 자동 생성됩니다.</p>
       </header>
       <div className="timeline-periods" aria-label="연표 시대 필터">
