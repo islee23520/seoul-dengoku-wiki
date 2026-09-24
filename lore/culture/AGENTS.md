@@ -18,7 +18,7 @@ The value/policy scale system behind cast and org numbers, the faith schism, the
 - Scales span −100..100 (− is U+2212, matching cast cards); 0 means not yet tipped on that axis. New persons/orgs never go up with axis cells empty.
 - Leader change ⇒ charter numbers re-reviewed; fixed national personalities are banned (same rule as `../characters/Ambitions-and-Relations.md` — note `Values-and-Policy-Scales.md`'s link to that file is stale, missing `../characters/`).
 - Faith grows from events (blackout nights, opened sluices, deaths at the platform edge), never from a 총재 decree; occupying a gu does not change temperament.
-- The four locked theocratic state names remain real institution successors. Do not add living clergy, denomination logos, local 노회 names or extra religious states; wreckage rites and splinter names remain fiction.
+- The three locked theocratic state names remain real institution successors. S08 is the technocratic office of the Central Technology Preservation Institute, not a fourth theocracy. Do not add living clergy, denomination logos, local 노회 names or extra religious states; wreckage rites and splinter names remain fiction.
 - Design borrowings (Stellaris ethics pairs, EU4 policy slots) import mechanics only — never proper nouns, iconography, or event text.
 - Food canon keeps the water-first-then-rice habit; the ration chain 영등포 정수 당직 → 신정 기지 밥솔 → 암사 호위 hands off to `../economy/` docs.
 
