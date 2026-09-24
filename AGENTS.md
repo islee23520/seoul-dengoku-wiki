@@ -1,7 +1,7 @@
 # GDD KNOWLEDGE BASE
 
 ## OVERVIEW
-Single game-design canon: product pages, rules, references, architecture, art direction, ADRs, proposals and system-design. All design and architecture text is normalized JSON under `canon/`; the only Markdown files are ones named `AGENTS.md`, `LICENSE.md` or `README.md`. WEB owns publication; GDD owns meaning.
+Single game-design canon: product pages, rules, references, architecture, art direction, ADRs, proposals and system-design. All design and architecture text is normalized JSON under `canon/`; the only Markdown files are ones named `AGENTS.md`, `LICENSE.md` or `README.md`. GDD owns meaning and its own `/gdd/` viewer (`viewer/`); the wiki (WIKI) publishes only the world.
 
 ## WHERE TO LOOK
 | Task | Location | Notes |
@@ -22,14 +22,14 @@ Single game-design canon: product pages, rules, references, architecture, art di
 | Korean terminology and display names | `canon/locales/ko-KR/root/korean-terminology-and-naming.json` | Native/Sino-Korean/loanword layers, formal martial names, GDD data display rules |
 | Root domain structure | `canon/locales/ko-KR/adr-004.json` | Seven top-level domains, owner-locked 2026-09-18 |
 | Proposals | `canon/locales/ko-KR/proposals/` | `scenario-hold-the-gate.json`, `narrative-direction.json` |
-| Region data and official map | `../LORE/regions/`, `../WEB/wiki/src/components/OpeningTerritoryMap.tsx` | 427-dong canon stays in LORE; the official wiki owns the public map |
+| Region data and official map | `../LORE/regions/`, `../WIKI/wiki/src/components/OpeningTerritoryMap.tsx` | 427-dong canon stays in LORE; the official wiki owns the public map |
 | Generated design-store | `design-store/AGENTS.md` | Never hand-edit; regenerate |
 | Canon schema, collections, render lock | `canon/schema/`, `canon/collections/`, `canon/rendered.lock.json` | `gdd-doc.schema.json` for documents, `adr.schema.json` for ADRs; the lock pins each rendered page's SHA-256 |
 
 ## CONVENTIONS
 - ADR canon files are `canon/locales/ko-KR/adr-00N.json`; their rendered page names stay English kebab-case (`ADR-00N-kebab-title.md`, outside GDD). Bodies mix English and Korean. Every ADR carries a status line (`Status: Accepted` / `상태: 승인` / `수용됨`) — check it and any supersession link before citing.
 - Edit design text only in `canon/**` JSON. After an edit, run the TOOL materializer with `--update-lock` and commit the changed `canon/rendered.lock.json` entries together with the JSON; `source.sha256` is frozen migration provenance and is never edited.
-- Publication renders Markdown pages OUTSIDE GDD (TOOL `canon/materialize-gdd.mjs`) and WEB reads them through `GDD_PAGES_ROOT`. Rendered top-level and `art/` pages stage to `/design/`; `rules/`, `references/`, and `architecture/` stage to `/rules/`. `proposals/` and `system-design/` remain studio artifacts unless separately published.
+- Publication renders Markdown pages OUTSIDE GDD (TOOL `canon/materialize-gdd.mjs`), and `/gdd/` is built from `viewer/` (Vite + React + TS), which reads them through `GDD_PAGES_ROOT`. `viewer/scripts/generate-catalog.mjs` writes `viewer/src/content/**` and `viewer/src/generated/**` at build time; both are gitignored build outputs, so the committed-Markdown rule above still holds. Viewer routes: top-level pages `/gdd/design/`, `rules/` `/gdd/rules/`, `architecture/` `/gdd/architecture/`, `references/` `/gdd/references/`, ADRs `/gdd/decisions/`, `art/` `/gdd/art/`. Dataset summaries read the hosting parent repo (`WIKI/lore` or sibling `LORE/`, plus `GAME/`; override with `SEOUL_KENSHI_ROOT` / `LORE_ROOT`). `proposals/` and `system-design/` remain studio artifacts unless separately published.
 - 게임 UI 레퍼런스 조사는 `https://interfaceingame.com/`을 항상 1차 기준으로 삼는다. 정확한 작품이 없으면 같은 시리즈의 가장 가까운 항목을 먼저 분석하고, 부족한 화면만 공식 자료와 실제 게임 영상으로 보완한다. 레퍼런스의 아트·문양·아이콘을 복제하지 않고 정보 위계와 레이아웃 구조만 추출한다.
 - 한국어 용어는 `canon/locales/ko-KR/root/korean-terminology-and-naming.json`를 따른다. 한자어를 회피하거나 남용하지 않고, 외래어는 한글 표기와 프로젝트 잠금을 지킨다. 내부 영어 ID는 사용자 표면에 표시하지 않는다.
 - `korean-terminology-and-naming.json` is project-wide: state/org/house/office/person/martial/technology/equipment/place/event/rule/UI/data-field names all carry an owner and rights status. Absence of a search result is not proof of legal clearance.
@@ -45,5 +45,7 @@ Single game-design canon: product pages, rules, references, architecture, art di
 # from the parent repository root
 node TOOL/tools/canon/materialize-gdd.mjs --gdd GDD --out <dir outside GDD>                  # render JSON canon to Markdown pages
 node TOOL/tools/canon/materialize-gdd.mjs --gdd GDD --out <dir outside GDD> --update-lock    # after a canon edit
-GDD_PAGES_ROOT=<dir> node WEB/wiki-source/scripts/mount.mjs                                  # restage pages into WEB
+npm ci --prefix GDD/viewer                                                                   # viewer dependencies
+GDD_PAGES_ROOT=<dir> npm --prefix GDD/viewer run build                                       # build /gdd/ into GDD/viewer/dist
+GDD_PAGES_ROOT=<dir> npm --prefix GDD/viewer test                                            # catalog contract
 ```

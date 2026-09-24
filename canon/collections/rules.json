@@ -52,6 +52,90 @@
       }
     },
     {
+      "id": "doc.Rules-Battle",
+      "path": "locales/ko-KR/rules/rules-battle-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-Battle.md",
+        "lineStart": 1,
+        "lineEnd": 252,
+        "sha256": "4f6e6bafbf418edc502de22ae9c65352823331e9b4aae0635b2c73d72e8bd122"
+      }
+    },
+    {
+      "id": "doc.Rules-CampaignLoop",
+      "path": "locales/ko-KR/rules/rules-campaign-loop-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-CampaignLoop.md",
+        "lineStart": 1,
+        "lineEnd": 227,
+        "sha256": "201e152d9e934a651bac3c4a9de50fae8b19f98aee7247620b3fc5d2d04843ee"
+      }
+    },
+    {
+      "id": "doc.Rules-EconomyLogistics",
+      "path": "locales/ko-KR/rules/rules-economy-logistics-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-EconomyLogistics.md",
+        "lineStart": 1,
+        "lineEnd": 291,
+        "sha256": "4029e2684ff2e177b85c04d9658370ba13087562eb6a92306d3d257bdd98f2d9"
+      }
+    },
+    {
+      "id": "doc.Rules-FactionsWarfare",
+      "path": "locales/ko-KR/rules/rules-factions-warfare-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-FactionsWarfare.md",
+        "lineStart": 1,
+        "lineEnd": 293,
+        "sha256": "040f1ee5874ed9334884ea1870b1794d3504d41e4e8988ae7f1c622594dd520a"
+      }
+    },
+    {
+      "id": "doc.Rules-SaveDeterminism",
+      "path": "locales/ko-KR/rules/rules-save-determinism-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-SaveDeterminism.md",
+        "lineStart": 1,
+        "lineEnd": 160,
+        "sha256": "263de8a63d8c8ce577dac1feaf38d55f3f7cc7532f500b275e281c59b1fc7e9b"
+      }
+    },
+    {
+      "id": "doc.Rules-Strongholds",
+      "path": "locales/ko-KR/rules/rules-strongholds-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-Strongholds.md",
+        "lineStart": 1,
+        "lineEnd": 192,
+        "sha256": "d5d149bebf36f815e15130d692f1c8862ce2d7164eb0d44a54376ac8794fa58e"
+      }
+    },
+    {
+      "id": "doc.Rules-TravelEncounters",
+      "path": "locales/ko-KR/rules/rules-travel-encounters-clauses.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Rules-TravelEncounters.md",
+        "lineStart": 1,
+        "lineEnd": 141,
+        "sha256": "033dfa699eab1994cab49e0520141e2c31fa92cf1b212f1f1559d92bd59aefa9"
+      }
+    },
+    {
       "id": "doc.Save-and-Determinism",
       "path": "locales/ko-KR/rules/save-and-determinism.json",
       "locale": "ko-KR",
