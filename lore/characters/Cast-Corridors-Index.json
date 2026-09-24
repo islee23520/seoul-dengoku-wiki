@@ -49,56 +49,8 @@
       "kind": "paragraph",
       "anchor": "회랑-인물-총람-p1",
       "text": {
-        "en": [
-          {
-            "text": "These are the named people outside the Sixteen States registers, listed in the "
-          },
-          {
-            "text": "Diaspora Corridors",
-            "link": {
-              "domain": "factions",
-              "slug": "Diaspora-Corridors"
-            }
-          },
-          {
-            "text": " and the "
-          },
-          {
-            "text": "Conscription Remnants",
-            "link": {
-              "domain": "factions",
-              "slug": "Conscription-Remnants"
-            }
-          },
-          {
-            "text": ". The body of the text is on the corridor pages."
-          }
-        ],
-        "ko": [
-          {
-            "text": "16국 명부 바깥, "
-          },
-          {
-            "text": "이주민 회랑",
-            "link": {
-              "domain": "factions",
-              "slug": "Diaspora-Corridors"
-            }
-          },
-          {
-            "text": "과 "
-          },
-          {
-            "text": "징집 잔존",
-            "link": {
-              "domain": "factions",
-              "slug": "Conscription-Remnants"
-            }
-          },
-          {
-            "text": "에 이름이 있는 인물이다. 본문은 회랑 페이지다."
-          }
-        ]
+        "en": "Migrant and service workers outside the sixteen state ledgers lived in Daerim and Garibong, Itaewon, Dongdaemun, Guro and Gasan, and Yongsan.",
+        "ko": "대림·가리봉, 이태원, 동대문, 구로·가산, 용산 생활권에는 십육국 명부 바깥의 이주민과 용역 인물이 있다."
       }
     },
     {
@@ -155,8 +107,8 @@
             "ko": "팜반득 (범반득)"
           },
           {
-            "en": "Guro Industrial Complex dormitory remnant",
-            "ko": "구로공단 기숙 잔존"
+            "en": "Guro and Gasan corridor",
+            "ko": "구로·가산 조선족 생활권"
           },
           {
             "en": "night maintenance crew chief",
@@ -199,8 +151,8 @@
             "ko": "조엘 박"
           },
           {
-            "en": "Yongsan fence contract labor",
-            "ko": "용산 울타리 용역"
+            "en": "Junction internal service",
+            "ko": "환적국 내부 용역"
           },
           {
             "en": "warehouse-inspection interpreter",
@@ -221,8 +173,8 @@
             "ko": "나르기즈 유수포바"
           },
           {
-            "en": "Jayang-Konkuk Koryo-in boarding house",
-            "ko": "자양·건대 고려인 하숙"
+            "en": "Jayang and Konkuk lodging outside the five corridors",
+            "ko": "다섯 호 밖의 자양·건대 하숙"
           },
           {
             "en": "two-language refuge courier",
@@ -244,7 +196,7 @@
           },
           {
             "en": "Sinjeong-Bupyeong mobilization remnant",
-            "ko": "신정·부평 동원잔존"
+            "ko": "구로·금천 동원잔존"
           },
           {
             "en": "mobilization-register clerk",
@@ -259,6 +211,61 @@
             "ko": "부키, 제식 봉"
           }
         ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "출처",
+      "depth": 2,
+      "text": {
+        "en": "Sources",
+        "ko": "출처"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "출처-list1",
+      "items": [
+        {
+          "ko": [
+            {
+              "text": "징집 잔존",
+              "link": {
+                "domain": "factions",
+                "slug": "Conscription-Remnants"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Conscription Remnants",
+              "link": {
+                "domain": "factions",
+                "slug": "Conscription-Remnants"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "이주민 회랑",
+              "link": {
+                "domain": "factions",
+                "slug": "Diaspora-Corridors"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Diaspora Corridors",
+              "link": {
+                "domain": "factions",
+                "slug": "Diaspora-Corridors"
+              }
+            }
+          ]
+        }
       ]
     }
   ],

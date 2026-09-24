@@ -46,14 +46,6 @@
       }
     },
     {
-      "kind": "paragraph",
-      "anchor": "인물세력생업-p1",
-      "text": {
-        "en": "A wiki diagram from 2026-09-07. The grid, direction, and sight drawings explain the grammar of that time and are not individual control in the target combat. They are documentation plans, not actual game screens.",
-        "ko": "2026-09-07 위키 도표. 칸·방향·시야 그림은 당시 문법 설명이며 목표 전투의 개인 조작이 아니다. 문서용 평면도이며 실제 게임 화면이 아니다."
-      }
-    },
-    {
       "kind": "heading",
       "anchor": "인물",
       "depth": 2,
@@ -67,32 +59,7 @@
       "anchor": "인물-p1",
       "text": {
         "en": "A named character has abilities, a trade, injuries, an affiliation, a post, beliefs, and memories of major events. The game does not store the relationship of every pair of characters; it keeps only the relationships that change decisions, such as kinship, master and disciple, command, contract, cooperation, and grudge.",
-        "ko": "이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가진다. 모든 인물 쌍의 관계를 저장하지 않고, 친족, 사제, 지휘, 계약, 협력과 원한처럼 결정을 바꾸는 관계만 남긴다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "파티",
-      "depth": 2,
-      "text": {
-        "en": "Party",
-        "ko": "파티"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "파티-p1",
-      "text": {
-        "en": "A party is the unit that binds companions, supplies, the wounded, and command in the campaign. It has a leader, roles, supplies, the wounded, a current mission, and a lawful location. On the battlefield, the participating characters and troops are organized into units, and the player gives orders to those units. The player does not control heroes directly, and party size does not mean battlefield troop capacity. Orders while paused are allowed only in this party's closed battle. Time in the campaign world and for other parties does not stop. When the leader dies or is captured, a new leader is chosen by the set succession rules, and if none can be chosen, the party disbands or becomes a group of prisoners.",
-        "ko": "파티는 캠페인에서 동행·물자·부상자·지휘를 묶는 단위다. 리더, 역할, 물자, 부상자, 현재 임무와 합법적인 위치를 가진다. 전장에서는 참가한 인물과 병력이 부대로 편성되고, 플레이어는 그 부대에 명령을 내린다. 영웅을 직접 조작하지 않으며, 파티 인원이 전장 병력 정원을 뜻하지는 않는다. 이 파티의 닫힌 전투에서만 일시정지 중 명령을 허용한다. 캠페인 세계나 다른 파티의 시간은 멈추지 않는다. 리더가 죽거나 포획되면 정해진 승계 규칙으로 새 리더를 고르고, 고를 수 없으면 파티를 해산하거나 포로 집단으로 바꾼다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "파티-p2",
-      "text": {
-        "en": "A named hero character is a battlefield actor separate from the soldier squads. Heroes are not counted in the number of soldiers, and one soldier squad has at most 20 members. This cap protects the small line communities of the world, but it does not set the total number of squads or heroes.",
-        "ko": "이름 있는 영웅 인물은 병졸 분대와 별도 전장 행위자다. 영웅은 병졸 수에 포함하지 않으며, 병졸 한 분대는 최대 20명이다. 이 상한은 세계관의 소규모 노선 공동체를 지키지만 전체 분대 수나 영웅 수를 정하지는 않는다."
+        "ko": "2126년 십육국에는 대통령·군주·역장·사령관·회장·방장·의장·위원장 등의 직위가 있다. 수장은 각국의 장부와 시설을 관리한다."
       }
     },
     {
@@ -109,159 +76,7 @@
       "anchor": "생업-p1",
       "text": {
         "en": "A trade is the work a character does in the world. Before combat is joined, it decides what the character adds to a unit's orders and state. The table supports those seven hands.",
-        "ko": "생업은 세계에서 하는 일이다. 전투에 붙기 전에 부대의 명령과 상태에 무엇을 보탤지를 가른다. 표는 그 일곱 손의 보조다."
-      }
-    },
-    {
-      "kind": "table",
-      "anchor": "생업-table2",
-      "columns": [
-        {
-          "en": "Trade",
-          "ko": "생업"
-        },
-        {
-          "en": "Work in the world",
-          "ko": "세계에서 하는 일"
-        },
-        {
-          "en": "Tactical contribution",
-          "ko": "전술 기여"
-        }
-      ],
-      "rows": [
-        [
-          {
-            "en": "Mechanic",
-            "ko": "정비사"
-          },
-          {
-            "en": "Power, shutter, elevator, and vehicle repair",
-            "ko": "전력, 셔터, 승강기, 차량 수리"
-          },
-          {
-            "en": "Disarming devices, repairing cover",
-            "ko": "장치 해제, 엄폐물 수리"
-          }
-        ],
-        [
-          {
-            "en": "Trader",
-            "ko": "물류상"
-          },
-          {
-            "en": "Goods transport, market links, passage contracts",
-            "ko": "물자 운송, 시장 연결, 통행 계약"
-          },
-          {
-            "en": "Supply placement, equipment exchange",
-            "ko": "보급 배치, 장비 교환"
-          }
-        ],
-        [
-          {
-            "en": "Medic",
-            "ko": "의무원"
-          },
-          {
-            "en": "Treatment, disease control, medicine production",
-            "ko": "치료, 방역, 의약품 생산"
-          },
-          {
-            "en": "Stabilizing wounds, recovering status",
-            "ko": "부상 안정화, 상태 회복"
-          }
-        ],
-        [
-          {
-            "en": "Patrol",
-            "ko": "순찰대"
-          },
-          {
-            "en": "Route safety, escort, keeping order",
-            "ko": "경로 안전, 호위, 질서 유지"
-          },
-          {
-            "en": "Holding formation, suppression",
-            "ko": "진형 유지, 제압"
-          }
-        ],
-        [
-          {
-            "en": "Courier",
-            "ko": "전령"
-          },
-          {
-            "en": "Delivering information, diplomatic documents, gathering rumors",
-            "ko": "정보 전달, 외교 문서, 소문 수집"
-          },
-          {
-            "en": "Calling reinforcements, command range",
-            "ko": "증원 요청, 지휘 범위"
-          }
-        ],
-        [
-          {
-            "en": "Scout",
-            "ko": "탐사원"
-          },
-          {
-            "en": "Surveying closed sections, updating maps",
-            "ko": "폐쇄 구간 조사, 지도 갱신"
-          },
-          {
-            "en": "Detecting traps, securing detours",
-            "ko": "함정 탐지, 우회로 확보"
-          }
-        ],
-        [
-          {
-            "en": "Archivist",
-            "ko": "기록관"
-          },
-          {
-            "en": "Managing legitimacy, contracts, and event ledgers",
-            "ko": "법통, 계약, 사건 원장 관리"
-          },
-          {
-            "en": "Objective analysis, morale support",
-            "ko": "목표 분석, 사기 지원"
-          }
-        ]
-      ]
-    },
-    {
-      "kind": "heading",
-      "anchor": "세력과-정통성",
-      "depth": 2,
-      "text": {
-        "en": "Factions and Legitimacy",
-        "ko": "세력과 정통성"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "세력과-정통성-p1",
-      "text": {
-        "en": "Factions draw on different sources of legitimacy, such as food, power, safety, lawful succession, technology, medicine, and trade. They are not judged by a single good-and-evil value. The same policy is judged differently depending on whose survival and rights it infringes.",
-        "ko": "세력은 식량, 전력, 안전, 법통, 기술, 의료, 교역처럼 서로 다른 정통성 원천을 가진다. 하나의 선악 수치로 판단하지 않는다. 같은 정책도 어느 집단의 생존과 권리를 침해하는지에 따라 평가가 갈린다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "계승",
-      "depth": 2,
-      "text": {
-        "en": "Succession",
-        "ko": "계승"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계승-p1",
-      "text": {
-        "en": "Not only bloodline but adoption, master and disciple, trade guilds, elections, and appointment are paths of leadership succession. A leader's death does not delete the faction at once; it opens a vacant post, rival candidates, and policy branches.",
-        "ko": "혈통뿐 아니라 양자, 사제, 직능 길드, 선거와 임명이 지도부 계승 경로가 된다. 지도자의 죽음은 곧바로 세력 삭제가 아니라 직위 공백, 경쟁 후보와 정책 분기를 연다."
+        "ko": "정수장·차량기지·병원·공방·교구에서는 서로 다른 직능의 사람이 당직을 맡았다."
       }
     },
     {
@@ -274,200 +89,19 @@
       }
     },
     {
+      "kind": "heading",
+      "anchor": "출처",
+      "depth": 2,
+      "text": {
+        "en": "Sources",
+        "ko": "출처"
+      }
+    },
+    {
       "kind": "list",
-      "anchor": "십육국과-핵심-인물-list1",
+      "anchor": "출처-list1",
       "items": [
         {
-          "en": [
-            {
-              "text": "The Sixteen States of Seoul",
-              "link": {
-                "domain": "factions",
-                "slug": "Sixteen-States"
-              }
-            },
-            {
-              "text": ": the territory and infrastructure of all sixteen states, five great powers and eleven lesser states"
-            }
-          ],
-          "ko": [
-            {
-              "text": "서울 십육국",
-              "link": {
-                "domain": "factions",
-                "slug": "Sixteen-States"
-              }
-            },
-            {
-              "text": ": 총16국, 강국5·약소국11의 영토와 기반시설"
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "Characters",
-              "link": {
-                "domain": "characters",
-                "slug": "Core-Characters"
-              }
-            },
-            {
-              "text": ": the temperament, ambitions, fears, and trigger events of each state's leaders and heirs"
-            }
-          ],
-          "ko": [
-            {
-              "text": "등장인물",
-              "link": {
-                "domain": "characters",
-                "slug": "Core-Characters"
-              }
-            },
-            {
-              "text": ": 국가별 지도자와 후계자의 성격, 야망, 공포와 촉발 사건"
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "Cast Compendium",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Index"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "Relation Ledger",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Relations"
-              }
-            },
-            {
-              "text": ": the 412 characters of the sixteen states and the ledger of relations between them"
-            }
-          ],
-          "ko": [
-            {
-              "text": "인물 총람",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Index"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "관계 원장",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Relations"
-              }
-            },
-            {
-              "text": ": 16국 인물 412명과 인물 사이 관계 원장"
-            }
-          ]
-        },
-        {
-          "en": "Character card contract: the required cells for a new character. Home community, language, conscription history, access to arms",
-          "ko": "인물 카드 계약: 새 인물의 필수 칸. 출신 공동체, 언어, 징집 이력, 무장 접근"
-        },
-        {
-          "en": "Character registration template: the blank cells attached to the prose. No portrait",
-          "ko": "인물 등록 템플릿: 산문에 붙이는 빈 칸. 초상 없음"
-        },
-        {
-          "en": [
-            {
-              "text": "Conscription Remnants and the Military Registers",
-              "link": {
-                "domain": "factions",
-                "slug": "Conscription-Remnants"
-              }
-            },
-            {
-              "text": ": how the conscription registers survive as mobilization remnants"
-            }
-          ],
-          "ko": [
-            {
-              "text": "징집 잔존과 군 장부",
-              "link": {
-                "domain": "factions",
-                "slug": "Conscription-Remnants"
-              }
-            },
-            {
-              "text": ": 징병제 명부가 동원잔존으로 남는 방식"
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "Diaspora Corridors",
-              "link": {
-                "domain": "factions",
-                "slug": "Diaspora-Corridors"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "Corridor Characters",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Corridors-Index"
-              }
-            },
-            {
-              "text": ": the corridors and seed characters for which Korean nationality alone is not the default"
-            }
-          ],
-          "ko": [
-            {
-              "text": "이주민 회랑",
-              "link": {
-                "domain": "factions",
-                "slug": "Diaspora-Corridors"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "회랑 인물",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Corridors-Index"
-              }
-            },
-            {
-              "text": ": 한국 국적만 기본값이 아닌 회랑과 시드 인물"
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "Ambitions",
-              "link": {
-                "domain": "characters",
-                "slug": "Ambitions-and-Relations"
-              }
-            },
-            {
-              "text": ": the rules by which characters decide war, alliance, betrayal, and succession"
-            }
-          ],
           "ko": [
             {
               "text": "야망",
@@ -475,25 +109,99 @@
                 "domain": "characters",
                 "slug": "Ambitions-and-Relations"
               }
-            },
+            }
+          ],
+          "en": [
             {
-              "text": ": 인물이 전쟁, 동맹, 배신과 계승을 결정하는 규칙"
+              "text": "Ambitions",
+              "link": {
+                "domain": "characters",
+                "slug": "Ambitions-and-Relations"
+              }
             }
           ]
         },
         {
-          "en": [
+          "ko": [
             {
-              "text": "Scenario Timeline",
+              "text": "회랑 인물",
               "link": {
-                "domain": "chronology",
-                "slug": "Scenario-Timeline"
+                "domain": "characters",
+                "slug": "Cast-Corridors-Index"
               }
-            },
-            {
-              "text": ": the chronicle from before the collapse to the hegemony war, branching on character conditions"
             }
           ],
+          "en": [
+            {
+              "text": "Corridor Characters",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Corridors-Index"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "인물 총람",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Index"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Cast Compendium",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Index"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "관계 원장",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Relations"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Relation Ledger",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Relations"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "등장인물",
+              "link": {
+                "domain": "characters",
+                "slug": "Core-Characters"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Characters",
+              "link": {
+                "domain": "characters",
+                "slug": "Core-Characters"
+              }
+            }
+          ]
+        },
+        {
           "ko": [
             {
               "text": "연표",
@@ -501,25 +209,19 @@
                 "domain": "chronology",
                 "slug": "Scenario-Timeline"
               }
-            },
+            }
+          ],
+          "en": [
             {
-              "text": ": 붕괴 이전부터 패권전까지 인물 조건으로 분기하는 연대기"
+              "text": "Scenario Timeline",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
             }
           ]
         },
         {
-          "en": [
-            {
-              "text": "Values and Policy Scales",
-              "link": {
-                "domain": "culture",
-                "slug": "Values-and-Policy-Scales"
-              }
-            },
-            {
-              "text": ": the ten character cells, organization values and policies, and the path for generating 1,000 people"
-            }
-          ],
           "ko": [
             {
               "text": "가치관과 정책 척도",
@@ -527,25 +229,19 @@
                 "domain": "culture",
                 "slug": "Values-and-Policy-Scales"
               }
-            },
+            }
+          ],
+          "en": [
             {
-              "text": ": 인물 10칸, 조직 가치관·정책, 1000명 생성 경로"
+              "text": "Values and Policy Scales",
+              "link": {
+                "domain": "culture",
+                "slug": "Values-and-Policy-Scales"
+              }
             }
           ]
         },
         {
-          "en": [
-            {
-              "text": "Houses",
-              "link": {
-                "domain": "factions",
-                "slug": "Chaebol-Houses-and-Century-Factions"
-              }
-            },
-            {
-              "text": ": the chaebol families, the old government, outside forces, and the trade houses born in the century of the vacuum"
-            }
-          ],
           "ko": [
             {
               "text": "가문",
@@ -553,9 +249,75 @@
                 "domain": "factions",
                 "slug": "Chaebol-Houses-and-Century-Factions"
               }
-            },
+            }
+          ],
+          "en": [
             {
-              "text": ": 총수 일가, 구 정부, 외부 세력, 공백의 세기에 생긴 직능 가문"
+              "text": "Houses",
+              "link": {
+                "domain": "factions",
+                "slug": "Chaebol-Houses-and-Century-Factions"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "징집 잔존과 군 장부",
+              "link": {
+                "domain": "factions",
+                "slug": "Conscription-Remnants"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Conscription Remnants and the Military Registers",
+              "link": {
+                "domain": "factions",
+                "slug": "Conscription-Remnants"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "이주민 회랑",
+              "link": {
+                "domain": "factions",
+                "slug": "Diaspora-Corridors"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Diaspora Corridors",
+              "link": {
+                "domain": "factions",
+                "slug": "Diaspora-Corridors"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "서울 십육국",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "The Sixteen States of Seoul",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
             }
           ]
         }
