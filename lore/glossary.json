@@ -2,11 +2,13 @@
   {
     "term_id": "state-01",
     "display_name_ko": "수문국",
-    "reader_definition_ko": "수자원 정수와 공급을 독점하여 권력을 유지하는 도시 국가.",
+    "reader_definition_ko": "양평역을 수도로 삼고 서부 급수를 맡는 강국.",
     "category": "state",
-    "owner_path": "LORE/places",
-    "allowed_context": ["all"],
-    "aliases": ["수문국"],
+    "owner_path": "lore/factions/Sixteen-States.json",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [],
     "status": "fact-public"
   },
   {
@@ -14,19 +16,25 @@
     "display_name_ko": "대한민국정부",
     "reader_definition_ko": "광화문을 중심으로 종로·중구의 명부와 배급, 도장·인지세, 청사 경비대를 직접 관리하는 십육국 제일의 강국.",
     "category": "state",
-    "owner_path": "LORE/places",
-    "allowed_context": ["all"],
-    "aliases": ["정부"],
+    "owner_path": "lore/factions/Sixteen-States.json",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "정부"
+    ],
     "status": "fact-public"
   },
   {
     "term_id": "state-16",
     "display_name_ko": "정동노총",
-    "reader_definition_ko": "정동 일대의 지하 노동자들이 결성한 무장 자치 연맹.",
+    "reader_definition_ko": "시청역 앞 파업 명부를 지키는 소국.",
     "category": "state",
-    "owner_path": "LORE/places",
-    "allowed_context": ["all"],
-    "aliases": ["정동연맹"],
+    "owner_path": "lore/factions/Sixteen-States.json",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [],
     "status": "fact-public"
   },
   {
@@ -34,9 +42,13 @@
     "display_name_ko": "영등포수문가",
     "reader_definition_ko": "영등포 일대의 지하 수로와 제어 밸브를 장악한 기술자 가문.",
     "category": "organization",
-    "owner_path": "LORE/factions",
-    "allowed_context": ["all"],
-    "aliases": ["수문가"],
+    "owner_path": "lore/World-Narrative-Atlas.md",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "수문가"
+    ],
     "status": "fiction-original"
   },
   {
@@ -44,9 +56,13 @@
     "display_name_ko": "여의도전산가",
     "reader_definition_ko": "구 여의도의 금융 전산망과 데이터 센터를 통제하는 기업 가문.",
     "category": "organization",
-    "owner_path": "LORE/factions",
-    "allowed_context": ["all"],
-    "aliases": ["전산가"],
+    "owner_path": "lore/World-Narrative-Atlas.md",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "전산가"
+    ],
     "status": "fiction-original"
   },
   {
@@ -54,9 +70,13 @@
     "display_name_ko": "피지컬 에이아이",
     "reader_definition_ko": "물리적 신체를 가지고 전술 작전을 수행하는 기계 지능.",
     "category": "technology",
-    "owner_path": "LORE/technology",
-    "allowed_context": ["all"],
-    "aliases": ["PAI"],
+    "owner_path": "lore/technology",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "PAI"
+    ],
     "status": "fiction-original"
   },
   {
@@ -64,9 +84,13 @@
     "display_name_ko": "렌즈",
     "reader_definition_ko": "착용자의 시야에 전장 정보와 기계 상태를 겹쳐 보여주는 증강 장비.",
     "category": "equipment",
-    "owner_path": "LORE/technology",
-    "allowed_context": ["all"],
-    "aliases": ["전술렌즈"],
+    "owner_path": "lore/technology",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "전술렌즈"
+    ],
     "status": "generic-unregistered"
   },
   {
@@ -74,9 +98,14 @@
     "display_name_ko": "수문손",
     "reader_definition_ko": "수로 밸브를 조작하거나 관련 기술을 가진 지하 수리공.",
     "category": "person_category",
-    "owner_path": "LORE/people-and-machines",
-    "allowed_context": ["dialogue", "informal"],
-    "aliases": ["수리공"],
+    "owner_path": "lore/people-and-machines",
+    "allowed_context": [
+      "dialogue",
+      "informal"
+    ],
+    "aliases": [
+      "수리공"
+    ],
     "status": "fiction-original"
   },
   {
@@ -84,8 +113,11 @@
     "display_name_ko": "렌즈숨",
     "reader_definition_ko": "항상 렌즈를 착용하고 기계와 동기화된 채 살아가는 자.",
     "category": "person_category",
-    "owner_path": "LORE/people-and-machines",
-    "allowed_context": ["dialogue", "informal"],
+    "owner_path": "lore/people-and-machines",
+    "allowed_context": [
+      "dialogue",
+      "informal"
+    ],
     "aliases": [],
     "status": "fiction-original"
   },
@@ -94,9 +126,13 @@
     "display_name_ko": "감응조준법",
     "reader_definition_ko": "피지컬 에이아이 렌즈의 센서 정보와 자신의 시각을 동기화하여 사격하는 사격술.",
     "category": "martial_school",
-    "owner_path": "GDD/rules",
-    "allowed_context": ["all"],
-    "aliases": ["감응조준"],
+    "owner_path": "lore/culture/Martial-Paths.json",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "감응조준"
+    ],
     "status": "fiction-original"
   },
   {
@@ -104,8 +140,10 @@
     "display_name_ko": "수문호흡법",
     "reader_definition_ko": "유독 가스가 섞인 하층 공기에서 효율적으로 산소를 확보하는 호흡 기술.",
     "category": "martial_school",
-    "owner_path": "GDD/rules",
-    "allowed_context": ["all"],
+    "owner_path": "lore/culture/Martial-Paths.json",
+    "allowed_context": [
+      "all"
+    ],
     "aliases": [],
     "status": "fiction-original"
   },
@@ -114,29 +152,39 @@
     "display_name_ko": "심층 터널",
     "reader_definition_ko": "환승 통로 밑바닥에 위치한 가장 깊은 구역으로, 빛이 들지 않고 환기가 되지 않는다.",
     "category": "geography",
-    "owner_path": "LORE/places",
-    "allowed_context": ["all"],
-    "aliases": ["심층"],
+    "owner_path": "lore/places",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "심층"
+    ],
     "status": "generic-unregistered"
   },
   {
     "term_id": "event-collapse",
-    "display_name_ko": "대붕괴",
-    "reader_definition_ko": "지상 문명이 파괴되고 생존자들이 서울 지하철망으로 피신하게 된 거대한 재난.",
+    "display_name_ko": "대단선",
+    "reader_definition_ko": "2026년부터 서울의 호출망과 전력·급수망이 끊어진 사건.",
     "category": "event",
-    "owner_path": "LORE/chronology",
-    "allowed_context": ["all"],
-    "aliases": ["붕괴"],
+    "owner_path": "lore/chronology/Century-Annals.json",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [],
     "status": "generic-unregistered"
   },
   {
     "term_id": "event-present",
     "display_name_ko": "2126년",
-    "reader_definition_ko": "대붕괴 이후 지하 생태계가 안정화되고 16개 국가가 세력 균형을 이룬 현재 시점.",
+    "reader_definition_ko": "서울 열여섯 나라의 개막 시점.",
     "category": "event",
-    "owner_path": "LORE/chronology",
-    "allowed_context": ["all"],
-    "aliases": ["현재"],
+    "owner_path": "lore/chronology/Century-Annals.json",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "현재"
+    ],
     "status": "generic-unregistered"
   },
   {
@@ -144,19 +192,13 @@
     "display_name_ko": "포자감염",
     "reader_definition_ko": "저온 환경의 지하 균류 포자가 폐에 자리 잡아 호흡기를 굳게 만드는 치명적 증상.",
     "category": "ailment",
-    "owner_path": "LORE/ailments",
-    "allowed_context": ["all"],
-    "aliases": ["포자병"],
+    "owner_path": "lore/ailments",
+    "allowed_context": [
+      "all"
+    ],
+    "aliases": [
+      "포자병"
+    ],
     "status": "fiction-original"
-  },
-  {
-    "term_id": "office-commander",
-    "display_name_ko": "통제권자",
-    "reader_definition_ko": "전술 작전과 자원 분배를 지휘하는 조직 내 상위 책임자.",
-    "category": "office",
-    "owner_path": "LORE/offices",
-    "allowed_context": ["all"],
-    "aliases": ["통제관"],
-    "status": "generic-unregistered"
   }
 ]

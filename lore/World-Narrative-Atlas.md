@@ -1,71 +1,6 @@
 # 세계 서사 총람
 
-붕괴 이후 서울의 운영가문과 확장 설정을 한 페이지에 등록한다. 이 페이지만 손으로 고친다. 쪼갠 문서와 그림은 읽기 전용 투영물이다.
-
-## 문서 식별
-
-| 항목 | 값 |
-| --- | --- |
-| 안정 식별자 | WNA-001 |
-| 표시 이름 | 세계 서사 총람 |
-| 문서 상태 | 활성 |
-| 소유자 | wiki-world |
-| 지원 검토자 | (없음, 외부 검토 대기) |
-| 개정 | r15 |
-| 마지막 검증 커밋 | `c485bc84629c39e978889f1585ade92bef4ceda4` |
-| 출처층 | original-fiction |
-| 출처 앵커 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
-| 의존 문서 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
-| 관련 식별자 | S01–S16, HC01–HC14, HP01–HP10 |
-| 투영 대상 | Operating-Houses.md |
-| 변경 원장 항목 | CL-0018 |
-| 검증 상태 | 16국 기원 재설계 |
-
-## 한국어 작법 계약
-
-서사 본문은 지금 한국어 3인칭 제한 시점의 한다체를 씁니다. 안내문과 스키마 설명은 짧은 합니다체를 씁니다. 한 문단은 한 원인 결과만 움직입니다. 장면은 장소와 행동과 대가를 먼저 두고, 정치 해석은 뒤에 둡니다.
-
-인물의 이름, 소속, 직위, 관계, 행위 주체를 바뀌지 않게 보존합니다. 호칭 변화는 장면 안의 관계 원인이 있을 때만 허용합니다. 번역체, 명사 나열 행정문, 같은 리듬의 셋 묶음, 교환 가능한 트라우마 요약은 피합니다.
-
-다문화·초국경 인물은 이주, 언어, 가족, 생업, 시민 이력으로 그립니다. 민족이나 국적이 충성, 폭력, 계급, 능력, 괴물성을 예측하지 않습니다.
-
-합성 인격은 센서 불확실, 에너지와 부품, 보관 책임, 기억 끊김 안에서만 봅니다. 전지적 서술자나 무한 동력으로 쓰지 않습니다.
-
-사실, 추론, 창작은 `source_kind`로 분리합니다. 지금 실재하는 기관을 허구 범죄의 주체로 적지 않습니다.
-
-## 인간 식별자
-
-`K001`–`K412`는 현재 인물 총람 표의 행 순서와 같습니다. 나중에 정렬하거나 프로필을 고쳐도 번호를 다시 매기지 않습니다. 합성 식별자 `H`/`F`/`V`와 겹치지 않습니다.
-
-## 운영가문
-
-법인 후계 14개(`HC01`–`HC14`)와 시민·직능·기반 10개(`HP01`–`HP10`)를 헌장 조직으로 둡니다. 어느 가문도 16국 한 나라를 통째로 소유하지 않습니다. 실재 회사의 상호, 로고, 구호, 제품명, 현직 임원은 허구 본문에 쓰지 않습니다.
-
-상세 필드는 아래 기계 등록부를 정본으로 합니다.
-
-## 외부전구
-
-다섯 외부전구(`XT01`–`XT05`)는 서울 16국 슬롯을 대체하지 않습니다. 사실·추론·창작 경계를 분리하고, 현 정권·현직 기관 혐의는 쓰지 않습니다. 일본 정사 연결표는 제거해도 서울 측 서사가 유지됩니다.
-
-상세 필드는 아래 기계 등록부를 정본으로 합니다.
-
-## 합성 사회 인격
-
-인간형 `H01`–`H16`, 시설형 `F01`–`F16`, 기동형 `V01`–`V16`을 등록합니다. 기존 인간 412명의 식별자는 바꾸지 않습니다. 전지·무한 에너지·완전 기억은 금지합니다.
-
-상세 필드는 아래 기계 등록부를 정본으로 합니다.
-
-## 사회 서사 배치
-
-사회 서사 배치는 2026-09-24에 폐기했으며, 인물은 `lore/characters`에 있습니다.
-
-## 적대 생태
-
-G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 후속 배치에서 채웁니다. 실재 기업 사고 귀속과 실재 피해자 선정주의는 금지합니다.
-
-## 서사선 씨앗
-
-24 가문, 5 전구, 합성 3급, 24 생태군의 3막 서사선 ID를 등록합니다. 기존 시나리오 타임라인 사건 문구는 덮어쓰지 않습니다.
+서울의 열여섯 나라, 운영가문, 외부전구, 합성 인격과 적대 생태의 관계를 기록한다.
 
 ## 기계 등록부
 
@@ -82,14 +17,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     "last_verified_commit": "c485bc84629c39e978889f1585ade92bef4ceda4",
     "source_kind": "original-fiction",
     "source_anchors": [
-      "docs/game-logic/Cast-Index.md",
-      "docs/game-logic/Sixteen-States.md",
-      "docs/game-logic/Research-Sources.md"
+      "lore/characters/Cast-Index.md",
+      "lore/factions/Sixteen-States.md"
     ],
     "dependencies": [
-      "Cast-Index.md",
-      "Sixteen-States.md",
-      "Research-Sources.md"
+      "lore/characters/Cast-Index.md",
+      "lore/factions/Sixteen-States.md"
     ],
     "related_ids": [
       "HC01",
@@ -211,12 +144,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
   "projection_pages": {
     "Operating-Houses.md": {
       "title": "운영가문",
-      "intro": "2126년의 가문은 두 갈래다. 법인 후계는 2026 총수 일가가 쥐던 키의 손자다. 시민 가문은 수문·기록·의약 당직에서 자랐다. 나라를 사지 않는다. 기반을 임대한다. 역장이 물을 열려면 가문의 서명이 필요하다. 창립 총수의 얼굴은 구술이다. 허은찬과 유세진은 2126년 세대다. 인과는 [가문](./factions/Chaebol-Houses-and-Century-Factions.md)."
+      "intro": "운영가문은 법인 후계 가문과 시민·직능 가문으로 나뉜다. 각 가문이 맡은 기반과 연결 국가는 아래에 기록한다."
     },
     "External-Theaters.md": {
       "title": "바깥",
-      "banner": "이 페이지의 회랑 산문은 World-Narrative-Atlas의 읽기 전용 투영입니다.",
-      "intro": "서울 쪽 회랑만 적습니다. 현 정권·현직 기관의 범죄를 단정하지 않습니다.\n\n2126년 세대는 이웃을 나라로 만나지 않습니다. 임진 제방 아래에서는 귀환 명부를 손전등에 비춥니다. 서해에서는 냉동 창의 온도가 죽었다는 소문만 옵니다. 해협에서는 세 갈래 중계가 서로 다른 해를 이야기합니다. 두만에서는 화차의 화인을 검수합니다. 인천 신탁은 잔여 궤도의 추첨이지, 7함대가 아닙니다. 같은 호출망이 본토에서도 풀렸다고 믿기 때문입니다. 역학의 정본은 [기동권 이탈](./overview/World-Unbinding.md)입니다."
+      "intro": "서울에서 바깥 회랑으로 이어지는 당직과 물자 인계를 기록한다."
     }
   },
   "states": [
@@ -312,7 +244,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "power": "소국",
       "power_basis": [],
       "corridors": [],
-      "origin": "연지동 총회 명부가 대정전 밤의 당직표가 됐다. 한 세기 뒤 살아남은 강단 부동산은 강남 쪽이라, 삼성역이 장로회 수도다."
+      "origin": "2039년 삼성역 부근 교회 세 곳의 지하 예배당은 거주자 명부와 교인 명부를 통합했다. 교인 명부에 오른 사람은 배급을 받았다. 삼성역이 명부교회의 수도가 되었다."
     },
     {
       "id": "S05",
@@ -422,7 +354,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "power": "약국",
       "power_basis": [],
       "corridors": [],
-      "origin": "여의도 회관의 비상위원회가 계열 출자 장부를 냉각·키 당직으로 바꿨다. 2126년의 의장은 그 회관 상호를 국호로 읽고 여의도역을 닫는다. 삼성·현대는 별국, 롯데·SK·LG는 이 회 가신이다."
+      "origin": "2053년 3월 14일 여의도 가문은 금고층 입구에 여의도출자연합회 명칭을 게시했다. 여의도역이 수도가 되었다."
     },
     {
       "id": "S10",
@@ -501,7 +433,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "group_id": "G08"
         }
       ],
-      "origin": "제기동 장부와 병원 당직이 적과 아군을 가리지 않는 치료 계약을 남겼다. 제기동역이 그 계약의 수도다. 동대문 야간 공임은 이 나라 서쪽 호다."
+      "origin": "제기동 의사들은 2096년 흰십자단 명칭을 문서에 기재했다. 제기동역에서 의약을 맡는다."
     },
     {
       "id": "S14",
@@ -526,7 +458,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "group_id": "G14"
         }
       ],
-      "origin": "구의 수문과 아차산 초소가 한 군정으로 합쳐지려다 만다. 구의역이 동부 도하를 닫고, 건대 고려인 회랑을 이 나라 가장자리에 얹는다."
+      "origin": "아관사는 구의역을 수도로 삼고 아차산 관문과 구의 수문의 물을 관리한다."
     },
     {
       "id": "S15",
@@ -548,7 +480,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S16",
-      "display_name": "정동노동총연맹",
+      "display_name": "정동노총",
       "capital_station": "시청역",
       "region": "중앙",
       "government": "상업",
@@ -562,7 +494,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "power": "소국",
       "power_basis": [],
       "corridors": [],
-      "origin": "정동 사무실의 조합원 명부가 비상 소집이 됐다. 공장이 죽자 파업권이 통행권으로 바뀌고, 시청역 총연맹이 나라 행세를 한다. 민주화·노동운동의 문장을 빌리되 당명은 국호로 쓰지 않는다."
+      "origin": "2052년 시청역 지하 노동자들이 정동에서 문정아를 위원장으로 선출했다. 2096년 정동노총이라는 국호가 쓰였다. 시청역 앞 파업 명부를 지킨다."
     }
   ],
   "humans": [
@@ -812,7 +744,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K028",
       "name": "우오름",
-      "role": "약소국 회의 급수병참 서기",
+      "role": "협의 급수병참 서기",
       "stage": "S3",
       "state_id": "S01",
       "state_name": "수문국",
@@ -1307,7 +1239,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K083",
       "name": "여다솜",
-      "role": "약소국 회의 기술공유 서기",
+      "role": "협의 기술공유 서기",
       "stage": "S3",
       "state_id": "S03",
       "state_name": "태욱그룹",
@@ -1784,7 +1716,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K136",
       "name": "우지호",
-      "role": "군사호적 등록 서기",
+      "role": "등록 서기",
       "stage": "S3",
       "state_id": "S05",
       "state_name": "동방사",
@@ -2036,7 +1968,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K164",
       "name": "어태산",
-      "role": "열여섯 깃발 인준 보관인",
+      "role": "각국 인준 보관인",
       "stage": "S3",
       "state_id": "S06",
       "state_name": "대한민국정부",
@@ -2054,7 +1986,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K166",
       "name": "섭도윤",
-      "role": "약소국 회의 기록 전령",
+      "role": "회의 기록 전령",
       "stage": "S3",
       "state_id": "S06",
       "state_name": "대한민국정부",
@@ -2270,7 +2202,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K190",
       "name": "추한결",
-      "role": "둘째 급수협약 환적 증인",
+      "role": "급수 계약 환적 증인",
       "stage": "S3",
       "state_id": "S07",
       "state_name": "환적국",
@@ -2279,7 +2211,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K191",
       "name": "어지율",
-      "role": "약소국 회의 열차 안내인",
+      "role": "회의 열차 안내인",
       "stage": "S3",
       "state_id": "S07",
       "state_name": "환적국",
@@ -2513,7 +2445,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K217",
       "name": "추보람",
-      "role": "약소국 회의 식량 호송 선주",
+      "role": "식량 호송 선주",
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
@@ -2522,7 +2454,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K218",
       "name": "어도윤",
-      "role": "첫 급수협약 시장 증인",
+      "role": "급수 계약 시장 증인",
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
@@ -2936,7 +2868,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K264",
       "name": "란민준",
-      "role": "군사호적 거부 가족",
+      "role": "복무 서명 거부 행자",
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
@@ -2963,7 +2895,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K267",
       "name": "단유진",
-      "role": "약소국 회의 난민 수행원",
+      "role": "협의 수행 행자",
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
@@ -3206,7 +3138,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K294",
       "name": "단건우",
-      "role": "약소국 회의 북부 사절 기술자",
+      "role": "바깥 작업장 사절 기술자",
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
@@ -3215,7 +3147,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K295",
       "name": "순하준",
-      "role": "둘째 급수협약 차륜 교환 증인",
+      "role": "차륜 교환 증인",
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
@@ -3665,7 +3597,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K345",
       "name": "근우람",
-      "role": "군사호적 치료 거부 증인",
+      "role": "치료 거부 기록 수련의",
       "stage": "S3",
       "state_id": "S13",
       "state_name": "흰십자단",
@@ -3890,7 +3822,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K370",
       "name": "초태온",
-      "role": "약소국 회의 관문 증인",
+      "role": "협의 관문 증인",
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
@@ -3899,7 +3831,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "K371",
       "name": "석주아",
-      "role": "열여섯 깃발 관문 인준 관계자",
+      "role": "각국 관문 인준 관계자",
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
@@ -4145,7 +4077,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "계약감사관",
       "stage": "주요",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4154,7 +4086,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "계약 서기",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4163,7 +4095,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "감사 보조",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4172,7 +4104,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "협약 중재인",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4181,7 +4113,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "기술기업 추천위원 서기",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4190,7 +4122,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "시민추첨회의 서기",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4199,7 +4131,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수서 기지 정비사, 은보람의 실무 담당자",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4208,7 +4140,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "강남 계약서 시장 물류상, 하서진의 실무 담당자",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4217,7 +4149,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "협약 회의 의무소 거점 의무원",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4226,7 +4158,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "남부 외곽 순찰대",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4235,7 +4167,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "이중 의회 전령, 안태경의 실무 담당자",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4244,7 +4176,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수서 외곽 탐사원",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4253,7 +4185,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "손실보상 감사 기록관, 곽은재의 실무 담당자",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4262,7 +4194,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수서역 대합실 거점장",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4271,7 +4203,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "지하시설 방어조 거점장",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4280,7 +4212,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수서 차량기지 당직장",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4289,16 +4221,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "서고·의회 비상발전 운전장",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
       "id": "K415",
       "name": "근주하",
-      "role": "약소국 공동교섭 서명 서기",
+      "role": "공동교섭 서명 서기",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4307,7 +4239,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "급수계약 감사 보조",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4316,25 +4248,25 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "다섯 통일안 초안 관계자",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
       "id": "K418",
       "name": "탁세온",
-      "role": "둘째 급수협약 서명 증인",
+      "role": "급수 계약 서명 증인",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
       "id": "K419",
       "name": "범하겸",
-      "role": "열여섯 깃발 인준 감사 보조",
+      "role": "각국 인준 감사 보조",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4343,7 +4275,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "패권전 발발 당시 징발 피난 인파 대표",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4352,7 +4284,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "검은 배차 열차 조사 증인",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4361,7 +4293,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "계약 감사 서기",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "정동노동총연맹",
+      "state_name": "정동노총",
       "source_anchor": "Cast-Index.md#S16"
     }
   ],
@@ -4375,8 +4307,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4494,7 +4426,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "화면이 꺼져도 급수 원장은 남긴다"
         }
       ],
-      "prose": "여의도 제2정수 옆 봉인 전산동에서 여의도전산가이 야간 냉각 분배를 지킨다.\n\n허은찬은 냉각탑 시계를 급수 당직과 맞춰 돌린고 상암 송신키 공유 요구 앞에서는 공동 점검만 열고 키는 넘기지 않는다.\n\n화면이 꺼져도 급수 원장은 남긴다."
+      "prose": "여의도 제2정수 옆 봉인 전산동에서 여의도전산가가 야간 냉각 분배를 지킨다.\n\n허은찬은 냉각탑 시계를 급수 당직과 맞춰 돌린고 상암 송신키 공유 요구 앞에서는 공동 점검만 열고 키는 넘기지 않는다.\n\n화면이 꺼져도 급수 원장은 남긴다."
     },
     {
       "id": "HC02",
@@ -4505,8 +4437,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4636,8 +4568,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4766,8 +4698,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4897,8 +4829,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5027,8 +4959,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5157,8 +5089,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5287,8 +5219,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5418,8 +5350,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5549,8 +5481,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5680,8 +5612,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5811,8 +5743,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5942,8 +5874,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6073,8 +6005,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6204,8 +6136,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6336,8 +6268,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6467,8 +6399,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6598,8 +6530,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6728,8 +6660,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6840,7 +6772,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         {
           "act": 2,
           "title": "교섭",
-          "summary": "백온이 군사호적 재등록와 공동 점검을 연다"
+          "summary": "백온이 복구복무자 등록와 공동 점검을 연다"
         },
         {
           "act": 3,
@@ -6848,7 +6780,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "명부를 인질로 쓰지 않고 본인 동의로만 연다"
         }
       ],
-      "prose": "은평 피난로와 창동 주거쉘 대기줄에서 북한산보국문귀환회가 가족 재결합 명부를 지킨다.\n\n백온은 대기줄 이름을 복무 명부와 맞바꾸지 않는다.\n\n군사호적 재등록 앞에서는 공동 점검만 열고 키는 넘기지 않는다.\n\n명부를 인질로 쓰지 않고 본인 동의로만 연다."
+      "prose": "은평 피난로와 창동 주거쉘 대기줄에서 북한산보국문귀환회가 가족 재결합 명부를 지킨다.\n\n백온은 대기줄 이름을 복무 명부와 맞바꾸지 않는다.\n\n복구복무자 등록 앞에서는 공동 점검만 열고 키는 넘기지 않는다.\n\n명부를 인질로 쓰지 않고 본인 동의로만 연다."
     },
     {
       "id": "HP06",
@@ -6859,8 +6791,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6990,8 +6922,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7122,8 +7054,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7253,8 +7185,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7384,8 +7316,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7515,8 +7447,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7656,8 +7588,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7792,8 +7724,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7933,8 +7865,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8074,8 +8006,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8210,8 +8142,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8351,8 +8283,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8488,8 +8420,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "lore/factions/Sixteen-States.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8666,7 +8598,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "광화문 청사가 위조 혈연 증서를 가려내고 아차산 관문이 봉인 키를 나눈다"
         }
       ],
-      "prose": "임진 제방 아래 임시 검역소에서 안국총림 안내원이 귀환 명부를 손전등 빛에 비춘다.\n\n성하그룹 호송은 관문 밖 진흙길에 바퀴를 적시고, 신내 환승 창구는 가족 대기열만 먼저 연다.\n\n광화문 대한민국정부 주사가 위조 혈연 증서의 잉크 번짐을 짚고, 아차산 관문 초소는 봉인 키를 두 조각으로 나눈다.\n\n어느 쪽도 북녘 정권을 단죄하지 않고, 통행과 명부만 지킨다.",
+      "prose": "임진 제방 아래 임시 검역소에서 안국총림 안내원이 귀환 명부를 손전등 빛에 비춘다.\n\n성하그룹 호송은 관문 밖 진흙길에 바퀴를 적시고, 신내 환승 창구는 가족 대기열만 먼저 연다.\n\n광화문 대한민국정부 주사가 위조 혈연 증서의 잉크 번짐을 짚고, 아차산 관문 초소는 봉인 키를 두 조각으로 나눈다.",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "임진강·한강 합류와 북부 환승·피난 회랑이라는 공개 지형 앵커만 사용한다.",
@@ -8757,7 +8689,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "language_rumor_protocol": {
         "record_language": "서울 쪽 원장은 한국어로 기록한다.",
-        "interpreter_rule": "통역은 당사자가 요청한 경우에만 서울의 기존 통역 회랑에 연결한다. 외부 언어와 외부 집단의 정체성은 이 전구 데이터에서 지정하지 않는다.",
+        "interpreter_rule": "통역은 당사자가 요청한 경우에만 서울의 기존 통역 회랑에 연결한다.",
         "rumor_reliability": [
           {
             "tier": "확인",
@@ -8912,7 +8844,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "여의도의 봉인 해시 장부",
           "한강 하구 임시 부두"
         ],
-        "route_design": "화물은 영등포에서 조위와 배수 상태를 확인하고 구로에서 냉동 압축기와 부품 규격을 대조한 뒤 여의도의 봉인 해시를 거쳐 하구 임시 부두에서 적재 순번을 받는다. 양재와 흑석은 수리 지원과 냉동 순번 조정의 서울 측 협력 노드로 둔다.",
+        "route_design": "화물은 영등포에서 조위와 배수 상태를 확인하고 구로에서 냉동 압축기와 부품 규격을 대조한 뒤 여의도의 봉인 해시를 거쳐 하구 임시 부두에서 적재 순번을 받는다. 양재와 흑석은 수리 지원과 기술 점검의 서울 측 협력 노드로 둔다.",
         "outbound_boundary": "하구 임시 부두 바깥의 항만·생산지·항해 경로는 정하지 않는다.",
         "fixed_duration": "정하지 않는다. 조위, 배수, 전력, 냉동 상태와 통행권이 물자 이동의 비용과 대기를 정한다."
       },
@@ -8994,7 +8926,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "language_rumor_protocol": {
         "record_language": "서울 쪽 부두·수문 원장은 한국어로 기록한다.",
-        "interpreter_rule": "연안 언어 통역 창구는 발화자가 요청한 통역을 서울의 기존 회랑에 연결하는 자리다. 외부 언어와 외부 집단을 미리 지정하지 않는다.",
+        "interpreter_rule": "연안 언어 통역 창구는 발화자가 요청한 통역을 서울의 기존 회랑에 연결하는 자리다.",
         "rumor_reliability": [
           {
             "tier": "확인",
@@ -9033,7 +8965,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         {
           "state_id": "S08",
           "interest": "한강 남안 냉동 순번과 배급의 연속성을 지킨다.",
-          "leverage": "흑석의 교당 당직과 냉동 순번 장부",
+          "leverage": "흑석의 기술 점검과 보존 허가 기록",
           "red_line": "전력 경고만으로 취약한 대기열의 순번을 지우지 않는다."
         },
         {
@@ -9139,7 +9071,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "노량진 통역 창구가 용어 충돌을 기록한 뒤 비공개 연결표 없이도 협정을 유지한다"
         }
       ],
-      "prose": "환적국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다.\n\n정동노동총연맹 지부장은 닫힌 항로 대신 내륙 회차 슬롯을 열고, 명동대교구 신부는 혼인·위령 인준 봉인을 붙인다.\n\n명부교회 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다.\n\n흑석 통역 창구는 외래어를 한국어 주석 옆에 적어, 비공개 연결표를 치워도 협정이 남게 한다.",
+      "prose": "환적국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다.\n\n정동노총 지부장은 닫힌 항로 대신 내륙 회차 슬롯을 열고, 명동대교구 신부는 혼인·위령 인준 봉인을 붙인다.\n\n명부교회 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다.\n\n흑석 통역 창구는 외래어를 한국어 주석 옆에 적어, 비공개 연결표를 치워도 협정이 남게 한다.",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "한반도와 일본 열도 사이 해상 거리 및 공개 항로의 일반 개념만 사실 앵커로 둔다.",
@@ -9233,7 +9165,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "language_rumor_protocol": {
         "record_language": "서울 쪽 협정 원장은 한국어 주석을 기준으로 남긴다.",
-        "interpreter_rule": "이태원과 흑석의 기존 통역 자원은 요청된 발화를 대조하기 위한 서울 측 자원으로만 쓴다. 외부 언어, 외부 국가명, 발화자의 소속은 지정하지 않는다.",
+        "interpreter_rule": "이태원과 흑석의 기존 통역 자원은 요청된 발화를 대조하기 위한 서울 측 자원으로만 쓴다.",
         "rumor_reliability": [
           {
             "tier": "확인",
@@ -9277,9 +9209,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         },
         {
           "state_id": "S08",
-          "interest": "흑석 통역 창구와 배급 연결의 신뢰를 지킨다.",
-          "leverage": "교당 당직과 한국어 주석 장부",
-          "red_line": "용어 충돌을 한 통역자나 한 가족의 책임으로 고정하지 않는다."
+          "interest": "흑석의 기술 점검 기록과 보존 허가를 관리한다.",
+          "leverage": "흑석의 기술 점검 원장",
+          "red_line": "점검 기록이 없는 화물은 보존 허가를 내주지 않는다."
         }
       ],
       "hostile_ecology_interaction": [
@@ -9367,7 +9299,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "scenario_chains": [
         {
           "id": "XT04-SC1",
-          "summary": "암사 상수단이 화차 중량 로그를 공개하고 신내가 환승 슬롯을 조정한다"
+          "summary": "동방사 암사 당직이 화차 중량 로그를 공개하고 신내가 환승 슬롯을 조정한다"
         },
         {
           "id": "XT04-SC2",
@@ -9471,7 +9403,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "language_rumor_protocol": {
         "record_language": "서울 쪽 중량·연료·의료·봉인 원장은 한국어로 기록한다.",
-        "interpreter_rule": "귀환 상담에서 통역이 필요하면 요청자의 동의 아래 서울의 기존 통역 회랑을 연결한다. 외부 언어와 상담자의 출신은 이 데이터에서 지정하지 않는다.",
+        "interpreter_rule": "귀환 상담에서 통역이 필요하면 요청자의 동의 아래 서울의 기존 통역 회랑을 연결한다.",
         "rumor_reliability": [
           {
             "tier": "확인",
@@ -9623,7 +9555,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "마곡이 궤도 단말 오탐을 교정하고 가락이 이산가족 상담 창구를 연장한다"
         }
       ],
-      "prose": "여의도출자연합회 회관 옥상에서 잔여 대역 추첨 번호가 회람된다.\n\n수문국 수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 대한민국정부 주사가 인도 목록 해시를 시민 참관 칸에 붙인다.\n\n정동노동총연맹 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태욱그룹 대리가 궤도 단말의 오탐 경보를 끈다.\n\n명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.",
+      "prose": "여의도출자연합회 회관 옥상에서 잔여 대역 추첨 번호가 회람된다.\n\n수문국 수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 대한민국정부 주사가 인도 목록 해시를 시민 참관 칸에 붙인다.\n\n정동노총 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태욱그룹 대리가 궤도 단말의 오탐 경보를 끈다.\n\n명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.",
       "seoul_route": {
         "evidence_kind": "verified-concept-plus-original-fiction",
         "verified_geography": "위성·인도·방재 협력의 일반 개념과 공개 국제기구 명칭 수준만 사실 앵커로 둔다.",
@@ -9719,7 +9651,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "language_rumor_protocol": {
         "record_language": "서울 쪽 대역·수령·상담 원장은 한국어로 기록한다.",
-        "interpreter_rule": "명동의 다국어 대기표는 자기신고와 통역 요청을 받는 도구이며 요청된 경우에만 서울의 기존 통역 자원을 연결한다. 외부 언어와 외부 가족의 소재는 지정하지 않는다.",
+        "interpreter_rule": "명동의 다국어 대기표는 자기신고와 통역 요청을 받는 도구이며 요청된 경우에만 서울의 기존 통역 자원을 연결한다.",
         "rumor_reliability": [
           {
             "tier": "확인",
@@ -9838,8 +9770,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S01"
       ],
       "revision": 1,
@@ -9883,8 +9815,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S02"
       ],
       "revision": 1,
@@ -9928,8 +9860,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S03"
       ],
       "revision": 1,
@@ -9973,8 +9905,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S04"
       ],
       "revision": 1,
@@ -10018,8 +9950,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S05"
       ],
       "revision": 1,
@@ -10063,8 +9995,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S06"
       ],
       "revision": 1,
@@ -10108,8 +10040,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S07"
       ],
       "revision": 1,
@@ -10153,8 +10085,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S08"
       ],
       "revision": 1,
@@ -10198,8 +10130,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S09"
       ],
       "revision": 1,
@@ -10243,8 +10175,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S10"
       ],
       "revision": 1,
@@ -10288,8 +10220,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S11"
       ],
       "revision": 1,
@@ -10333,8 +10265,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S12"
       ],
       "revision": 1,
@@ -10378,8 +10310,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S13"
       ],
       "revision": 1,
@@ -10423,8 +10355,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S14"
       ],
       "revision": 1,
@@ -10468,8 +10400,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S15"
       ],
       "revision": 1,
@@ -10513,8 +10445,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S16"
       ],
       "revision": 1,
@@ -10558,8 +10490,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S01"
       ],
       "revision": 1,
@@ -10603,8 +10535,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S02"
       ],
       "revision": 1,
@@ -10648,8 +10580,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S03"
       ],
       "revision": 1,
@@ -10693,8 +10625,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S04"
       ],
       "revision": 1,
@@ -10738,8 +10670,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S05"
       ],
       "revision": 1,
@@ -10783,8 +10715,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S06"
       ],
       "revision": 1,
@@ -10828,8 +10760,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S07"
       ],
       "revision": 1,
@@ -10873,8 +10805,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S08"
       ],
       "revision": 1,
@@ -10918,8 +10850,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S09"
       ],
       "revision": 1,
@@ -10963,8 +10895,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S10"
       ],
       "revision": 1,
@@ -11008,8 +10940,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S11"
       ],
       "revision": 1,
@@ -11053,8 +10985,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S12"
       ],
       "revision": 1,
@@ -11098,8 +11030,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S13"
       ],
       "revision": 1,
@@ -11143,8 +11075,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S14"
       ],
       "revision": 1,
@@ -11188,8 +11120,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S15"
       ],
       "revision": 1,
@@ -11233,8 +11165,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S16"
       ],
       "revision": 1,
@@ -11278,8 +11210,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S01"
       ],
       "revision": 1,
@@ -11323,8 +11255,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S02"
       ],
       "revision": 1,
@@ -11368,8 +11300,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S03"
       ],
       "revision": 1,
@@ -11413,8 +11345,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S04"
       ],
       "revision": 1,
@@ -11458,8 +11390,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S05"
       ],
       "revision": 1,
@@ -11503,8 +11435,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S06"
       ],
       "revision": 1,
@@ -11548,8 +11480,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S07"
       ],
       "revision": 1,
@@ -11593,8 +11525,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S08"
       ],
       "revision": 1,
@@ -11638,8 +11570,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S09"
       ],
       "revision": 1,
@@ -11683,8 +11615,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S10"
       ],
       "revision": 1,
@@ -11728,8 +11660,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S11"
       ],
       "revision": 1,
@@ -11773,8 +11705,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S12"
       ],
       "revision": 1,
@@ -11818,8 +11750,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S13"
       ],
       "revision": 1,
@@ -11863,8 +11795,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S14"
       ],
       "revision": 1,
@@ -11908,8 +11840,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S15"
       ],
       "revision": 1,
@@ -11953,8 +11885,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Cast-Index.md",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
         "Cast-Index.md#S16"
       ],
       "revision": 1,
@@ -11996,7 +11928,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "id": "G01",
       "display_name": "범람멧돼지군",
       "bestiary": {
-        "common_ecology": "한강 서부 수문국 수문국 바깥 습지와 폐기물 경사지에는 모돈별 가족군이 흩어져 산다. 먹이는 유기 음식물과 염분, 얕은 뿌리 작물이며 봉인 시각과 수문 진동이 멎는 틈을 학습해 접근한다. 성체 암컷이 이동을 열고 아성체가 앞쪽을 살피며, 단독 수컷은 같은 먹이터를 쓰더라도 그 결정을 따르지 않는다.",
+        "common_ecology": "한강 서부 수문국 바깥 습지와 폐기물 경사지에는 모돈별 가족군이 흩어져 산다. 먹이는 유기 음식물과 염분, 얕은 뿌리 작물이며 봉인 시각과 수문 진동이 멎는 틈을 학습해 접근한다. 성체 암컷이 이동을 열고 아성체가 앞쪽을 살피며, 단독 수컷은 같은 먹이터를 쓰더라도 그 결정을 따르지 않는다.",
         "variant_relation": "보통의 범람멧돼지는 진흙 목욕과 염분 껍질로 등판을 두르더라도 가족군 생태를 벗어나지 않는다. 철갑·융합갑·맹독엄니 쪽은 하수 심층 오염에서 갈라진 돌연변이로, 낮은 주파수 울음이 그 혈통만 묶는다. 진흙철벽과 강철습지는 가족 노동이 쌓인 장소이지 대왕의 몸 자체가 아니다.",
         "command_scope": "철갑의 절대 명령은 금속·독 변이 혈통의 공명 거리 안에서만 통하고 모돈 가족군 전체를 지휘하지 않는다. 발굽으로 수문 저주파와 음식물·소독약 냄새를 겹쳐 읽을 뿐 먼 열원이나 전자 잡음은 해독하지 못한다. 중심 암컷이 사라지면 약 48시간 새끼 냄새를 훑은 뒤 가족별로 흩어지고, 대왕 울음이 그 공백을 메우지는 않는다."
       },
@@ -12004,17 +11936,17 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-WILDBOAR-RESPONSE",
-        "docs/game-logic/Research-Sources.md#SRC-NIBR-URBAN-WILDLIFE-MAP",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-WILDBOAR-RESPONSE",
+        "lore/Research-Sources.md#SRC-NIBR-URBAN-WILDLIFE-MAP",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "홍수 뒤 저지대 음식물 집하장과 반지하 골목에 멧돼지 무리가 내려와 사람과 쓰레기·경작물을 두고 경쟁하는 불안",
-      "fictional_origin": "붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 수문국 수문국 가장자리 음식물 회수장에 정착했다.\n\n현실 자료는 도심 출몰·먹이원·이동 차단의 기본 생태만 뒷받침하며, 봉인 시각을 학습하는 행동과 HC01과의 관계는 허구다.\n\nHC01 여의도전산가이 봉인한 냉각 폐기물 더미가 겨울 염분원으로 쓰이면서 ‘범람멧돼지군’이라는 현지 호칭이 붙었다.",
+      "fictional_origin": "붕괴 직후 한강 서부 범람이 여의도·영등포 수문 바깥 녹지축을 끊자, 북한산·안양천 회랑에서 내려온 멧돼지 무리가 수문국 가장자리 음식물 회수장에 정착했다.\n\n현실 자료는 도심 출몰·먹이원·이동 차단의 기본 생태만 뒷받침하며, 봉인 시각을 학습하는 행동과 HC01과의 관계는 허구다.\n\nHC01 여의도전산가가 봉인한 냉각 폐기물 더미가 겨울 염분원으로 쓰이면서 ‘범람멧돼지군’이라는 현지 호칭이 붙었다.",
       "territory_migration": "핵심 서식은 수문국 수문 바깥 습지·폐기물 경사지다.\n\n건기·동절기에는 서울역 중앙 대한민국정부 쪽 녹지 파편과 야간 시장 잔여물 축을 따라 이동하고, XT01 임진강관문전구에서 밀려 내려오는 피난 행렬의 음식물 흔적에 반응해 북서 가장자리가 들썩인다.\n\n홍수위가 수문 경고선을 넘으면 무리는 고지대 계단식으로 밀려 오르며 통행로를 가로지른다.",
       "economy": "주 자원은 유기 음식물·염분·얕은 뿌리 작물이고, 부자원으로 침수 잔해의 연질 플라스틱과 냉각수 웅덩이를 쓴다.\n\nHC01 회수조가 음식물 봉인 주기를 늦추면 무리 밀도가 올라가고, 봉인을 과도히 조이면 무리는 가정 골목 음식물로 우회한다.\n\n에너지 순환은 섭식-배설-습지 미생물막으로 이어지며, 고기·가죽을 노리는 비공인 수렵은 단기 이득 대신 잔여 무리를 더 공격적으로 만든다.",
       "lifecycle": "장마 전에는 모돈별 가족군이 흩어져 먹이터를 정찰하고, 범람 직후에는 고지대 음식물 축에 일시 합류한다.\n\n새끼 생존률이 두 계절 연속 높을 때만 가족군이 갈라지며, 겨울 염분원과 진흙 목욕터가 줄면 번식보다 장거리 이동을 택한다.",
@@ -12112,7 +12044,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "dossier_ref": "G01"
         }
       ],
-      "dossier_prose": "한강 서부의 물이 제방과 녹지축을 갈라놓은 뒤, 수문국 수문국 바깥 습지에는 이전과 다른 밤의 질서가 자리 잡았다.\n\n북한산과 안양천 회랑에서 내려온 멧돼지 가족군은 여의도와 영등포의 끊어진 녹지를 건너 음식물 회수장과 폐기물 경사지에 머물렀고, HC01 여의도전산가이 봉인한 냉각 폐기물 더미에서 겨울을 버틸 염분을 얻었다.\n\n주민들은 홍수 뒤 반지하 골목까지 내려와 쓰레기봉투와 얕은 뿌리 작물을 뒤지는 이들을 범람멧돼지군이라 부른다.\n\n도심 출몰과 먹이원 변화, 이동로 단절은 현실의 야생동물 관찰로 설명할 수 있지만 봉인 시각과 수문 운용 주기를 기억해 접근 시간을 맞추는 행동 HC01과의 관리 관계는 붕괴 이후 이 지역에서만 성립한 허구적 질서다.\n\n범람멧돼지군의 영토는 지도에 그은 선보다 물높이와 냄새의 연속으로 정해진다.\n\n핵심 서식지는 수문국 수문 바깥 습지와 폐기물 경사지이며, 건기와 동절기에는 서울역 중앙 대한민국정부 방향의 잘린 녹지와 야간 시장 잔여물 축을 따라 움직인다.\n\nXT01 임진강관문전구에서 피난 행렬이 밀려오면 북서쪽 도로에 남은 음식물 흔적이 새로운 회랑이 된다.\n\n홍수위가 경고선을 넘을 때는 저지대 가족군이 한꺼번에 고지대 계단으로 올라와 사람의 통행로와 겹친다.\n\n이 이동은 도시를 공격하려는 진군이 아니라 먹이와 마른 땅을 함께 찾는 선택이지만, 반지하 주민과 수문 노동자에게 그 차이는 쉽게 체감되지 않는다.\n\n이들이 기대는 경제는 유기 음식물, 염분 얕은 뿌리 작물로 구성된다.\n\n연질 플라스틱과 냉각수 웅덩이도 보조 자원이 되며, 섭식 뒤 남은 배설물은 습지 미생물막과 하류 식생을 먹여 다시 먹이터를 만든다.\n\nHC01이 회수조 봉인을 늦추면 한 지점에 가족군이 몰리고, 봉인을 지나치게 강화하면 무리는 가정 골목으로 돌아선다.\n\n고기와 가죽을 노리는 비공인 수렵은 즉각적인 식량과 거래품을 남기지만, 살아남은 개체를 흩뜨리고 통행 안전 기록까지 왜곡한다.\n\n시민 배급을 지키겠다는 조치가 취약한 골목의 음식물 약탈을 늘릴 수 있다는 점에서, 이 생태의 비용은 언제나 다른 사람의 문 앞으로 이동한다.\n\n장마 전에는 새끼를 둔 모돈마다 가족군이 흩어져 먹이터와 퇴로를 살핀다.\n\n범람 직후에는 고지대 음식물 축에 잠시 합류하지만 하나의 거대한 무리가 되는 것은 아니다.\n\n성체 암컷이 이동을 시작하면 아성체가 앞쪽을 정찰하고, 단독 수컷은 같은 먹이터를 쓰더라도 그 결정을 따르지 않는다.\n\n중심 암컷이 사라지면 가족군은 약 48시간 동안 새끼와 모돈의 냄새를 따라 같은 구역을 반복해서 훑은 뒤 흩어진다.\n\n새끼 생존률이 두 계절 연속 높아야 가족군이 갈라지고, 겨울 염분원과 진흙 목욕터가 부족하면 번식보다 장거리 이동을 택한다.\n\n당장의 울타리 위치와 봉인 시각은 학습할 수 있지만 그것이 곧 몸의 장기적 변화는 아니다.\n\n여러 세대 동안 야간 활동성과 사람 회피성이 남을 수 있으며, 강한 포획은 대담한 개체부터 없애 더 은밀한 계통만 남기는 역효과를 낳는다.\n\n다만 은밀해질수록 먹이를 찾는 시간이 길어져 새끼의 성장도 느려진다.\n\n범람멧돼지군은 발굽과 땅을 통해 수문 개폐, 차량 발전기의 저주파 진동을 읽고 음식물과 사람 소독약 냄새를 겹쳐 판단한다.\n\n가까운 거리에서는 바람에 실린 온기와 공기 흐름에도 반응하지만 먼 열원을 정확히 나누거나 전자 잡음의 뜻을 알아내지는 못한다.\n\nH01 한누리는 사람과 발전기, 가족군으로 보이는 적외선 덩어리를 비교해 표시할 뿐 최종 판정자가 아니다.\n\n비바람과 냉각 안개가 심하면 열상이 번지. 단독 수컷과 아성체가 하나의 군집처럼 보이므로, 사람 정찰조가 먼저 퇴로와 새끼 흔적을 확인해야 한다.\n\n가족군을 하나의 적대 집단으로 오인해 중심 암컷을 제거하면 사라진 질서의 자리에 이틀 동안 예측하기 어려운 탐색 행동이 남는다.\n\n위기는 세 단계로 커진다.\n\n처음에는 수문 바깥 집하장과 무단 경작지에 야간 발자국만 늘고 사람과의 접촉은 드물다.\n\n다음에는 배수로, 봉인 테이프 급수 점검 통로가 파손되어 음식물 호송과 수문 정비가 지연된다.\n\n마지막에는 홍수위와 피난민 잔반이 겹쳐 가족군이 수문 계단을 차지한다.\n\n소음 차단막과 섬광은 앞선 정찰 개체를 잠시 물릴 수 있으나 본대에는 먹이 우회로, 옮겨 놓은 염분 웅덩이 경로 펜스가 더 효과적이다.\n\n총기를 앞세운 제거는 가족군을 골목마다 흩어 시민 피해를 키우므로 최후 수단으로만 남는다.\n\n대응의 성과는 사체 수가 아니라 집하장 침입 횟수, 통행 재개 시간 골목 피해의 감소로 판단한다.\n\nG01-SC1 ‘수문 밖 첫 발굽’은 장마 예보 전날 수문국 집하장에 모돈과 새끼 발자국이 나타나면서 시작된다.\n\n가족군은 봉인 시각을 기억하고 수문 진동이 멎는 틈에 접근한다.\n\n수문국과 HC01은 야간 운영을 늦춰 접촉을 피할 수 있지만 시민 배급도 함께 늦어진다.\n\n냄새 미끼로 습지 우회로를 열면 당장의 노동과 자원이 들더라도 장기 이동축을 만들 수 있다.\n\n모돈만 포획하는 선택은 가장 빠르게 보이지만 H01이 이후 48시간 동안 새끼를 찾아 반복 접근하는 열원을 기록하게 된다.\n\n이때의 판단은 사람의 식사 시간과 새끼가 딸린 가족군의 생존 시간을 같은 표 위에 올리는 일이다.\n\nG01-SC2 ‘염분 웅덩이의 값’에서는 HC01이 냉각 폐기물 회수를 앞당긴 뒤 무리가 서울역 중앙 방향 반지하 골목으로 먹이터를 바꾼다.\n\n염분원을 없앤다고 가족군이 사라지는 것이 아니라 더 위험한 생활권으로 밀려난다는 사실이 드러난다.\n\n관리된 웅덩이를 습지에 남기면 위험을 한곳에 붙들어 두는 대신 지속적인 감시 비용을 받아들여야 한다.\n\n골목 음식물 회수를 우선하면 주민 피해는 줄지만 다른 배급과 정비 노동이 비게 된다.\n\n수렵 허가로 밀도를 낮추면 단기 성과는 선명해도 살아남은 개체의 사람 회피 학습과 야간 침입이 강화된다.\n\n어느 선택이든 안전한 구역에 통제된 위험을 남길지, 눈에 덜 띄는 취약 구역으로 부담을 넘길지에 대한 책임을 피할 수 없다.\n\nG01-SC3 ‘범람선의 통행권’은 XT01 피난 행렬의 잔반과 상승한 홍수위가 같은 수문 계단에 사람과 가족군을 모으면서 벌어진다.\n\n피난 시간을 나누면 직접 충돌은 줄지만 늦은 차례의 사람들이 물과 어둠을 더 오래 견뎌야 한다.\n\n잔반 호송을 미끼 회랑으로 돌리면 무리를 습지 쪽으로 유도할 수 있으나 HC01의 운송 자원과 봉인 용기를 소모한다.\n\n수문을 먼저 열어 짧은 고수위를 만들면 이동을 빠르게 유도할 가능성이 있지만 하류 작업장을 선제적으로 침수시킬 수 있다.\n\n그래서 HC01이 중개하는 합의는 음식물 봉인 시각, 야간 통행 창 경작 완충 띠 XT01 잔반의 별도 회수를 함께 묶는다.\n\n전멸은 목표가 아니며 공존을 택하면 위협 신고가 완전히 사라지지 않는다.\n\n그 대신 습지 정화와 하류 식생, 수문 노동 동선을 유지할 수 있다.\n\n범람멧돼지군과의 협상은 야생을 길들이는 약속이 아니라 서로의 시간표가 겹치지 않도록 인간 쪽의 욕망과 편의를 제한하는 계약에 가깝다.\n\n장기 관리는 S01, HC01 반지하 주민이 계절마다 먹이와 통행의 경계를 다시 정하는 공동 순찰에 달려 있다.\n\n장마 전에는 모돈별 발자국과 진흙 목욕터를 표식 없이 기록하고, 범람 뒤에는 야간 음식물 배출 시각과 관리된 염분 웅덩이의 위치를 조정해 가족군이 익숙한 퇴로를 잃지 않게 한다.\n\n핵심 지표는 백 야간당 골목 침입 횟수, 수문 계단을 비우는 데 걸린 시간 새끼 동반 흔적의 비율 뿌리 파헤침 면적 회랑별 사람 조우 거리이며 사체 수는 보조 기록에만 둔다.\n\n침입이 줄어도 새끼 흔적이 급감하거나 조우 거리가 짧아지면 안정이 아니라 포획 압력과 먹이 부족으로 판단한다.\n\n울타리 붕괴나 잘못된 포획으로 가족군이 흩어졌을 때는 48시간 동안 추격과 야간 수거를 멈추고, 기존 배설물과 발자국이 남은 방향에 물과 염분을 분산 배치한 뒤 통행 창을 단계적으로 복원한다.\n\n회복 여부는 중심 암컷의 귀환보다 새끼가 같은 회랑을 두 차례 연속 통과하고 골목 재침입이 감소하는지로 확인한다.\n\n이 절차가 오래 유지되면 주민도 음식물을 정해진 시간에 내놓게 되어 쥐의 먹이원이 줄고 지하 배선 훼손이 감소할 수 있다.\n\n다만 예측 가능한 회랑에 발굽 교란이 집중되면 갈대 띠가 얇아져 다음 홍수의 부유 쓰레기가 수문 취수구로 더 빨리 몰리는 이차 비용이 생기므로, 안전한 공존 구역도 몇 해마다 쉬게 하. 우회 습지를 번갈아 열어야 한다.",
+      "dossier_prose": "한강 서부의 물이 제방과 녹지축을 갈라놓은 뒤, 수문국 바깥 습지에는 이전과 다른 밤의 질서가 자리 잡았다.\n\n북한산과 안양천 회랑에서 내려온 멧돼지 가족군은 여의도와 영등포의 끊어진 녹지를 건너 음식물 회수장과 폐기물 경사지에 머물렀고, HC01 여의도전산가가 봉인한 냉각 폐기물 더미에서 겨울을 버틸 염분을 얻었다.\n\n주민들은 홍수 뒤 반지하 골목까지 내려와 쓰레기봉투와 얕은 뿌리 작물을 뒤지는 이들을 범람멧돼지군이라 부른다.\n\n도심 출몰과 먹이원 변화, 이동로 단절은 현실의 야생동물 관찰로 설명할 수 있지만 봉인 시각과 수문 운용 주기를 기억해 접근 시간을 맞추는 행동 HC01과의 관리 관계는 붕괴 이후 이 지역에서만 성립한 허구적 질서다.\n\n범람멧돼지군의 영토는 지도에 그은 선보다 물높이와 냄새의 연속으로 정해진다.\n\n핵심 서식지는 수문국 수문 바깥 습지와 폐기물 경사지이며, 건기와 동절기에는 서울역 중앙 대한민국정부 방향의 잘린 녹지와 야간 시장 잔여물 축을 따라 움직인다.\n\nXT01 임진강관문전구에서 피난 행렬이 밀려오면 북서쪽 도로에 남은 음식물 흔적이 새로운 회랑이 된다.\n\n홍수위가 경고선을 넘을 때는 저지대 가족군이 한꺼번에 고지대 계단으로 올라와 사람의 통행로와 겹친다.\n\n이 이동은 도시를 공격하려는 진군이 아니라 먹이와 마른 땅을 함께 찾는 선택이지만, 반지하 주민과 수문 노동자에게 그 차이는 쉽게 체감되지 않는다.\n\n이들이 기대는 경제는 유기 음식물, 염분 얕은 뿌리 작물로 구성된다.\n\n연질 플라스틱과 냉각수 웅덩이도 보조 자원이 되며, 섭식 뒤 남은 배설물은 습지 미생물막과 하류 식생을 먹여 다시 먹이터를 만든다.\n\nHC01이 회수조 봉인을 늦추면 한 지점에 가족군이 몰리고, 봉인을 지나치게 강화하면 무리는 가정 골목으로 돌아선다.\n\n고기와 가죽을 노리는 비공인 수렵은 즉각적인 식량과 거래품을 남기지만, 살아남은 개체를 흩뜨리고 통행 안전 기록까지 왜곡한다.\n\n시민 배급을 지키겠다는 조치가 취약한 골목의 음식물 약탈을 늘릴 수 있다는 점에서, 이 생태의 비용은 언제나 다른 사람의 문 앞으로 이동한다.\n\n장마 전에는 새끼를 둔 모돈마다 가족군이 흩어져 먹이터와 퇴로를 살핀다.\n\n범람 직후에는 고지대 음식물 축에 잠시 합류하지만 하나의 거대한 무리가 되는 것은 아니다.\n\n성체 암컷이 이동을 시작하면 아성체가 앞쪽을 정찰하고, 단독 수컷은 같은 먹이터를 쓰더라도 그 결정을 따르지 않는다.\n\n중심 암컷이 사라지면 가족군은 약 48시간 동안 새끼와 모돈의 냄새를 따라 같은 구역을 반복해서 훑은 뒤 흩어진다.\n\n새끼 생존률이 두 계절 연속 높아야 가족군이 갈라지고, 겨울 염분원과 진흙 목욕터가 부족하면 번식보다 장거리 이동을 택한다.\n\n당장의 울타리 위치와 봉인 시각은 학습할 수 있지만 그것이 곧 몸의 장기적 변화는 아니다.\n\n여러 세대 동안 야간 활동성과 사람 회피성이 남을 수 있으며, 강한 포획은 대담한 개체부터 없애 더 은밀한 계통만 남기는 역효과를 낳는다.\n\n다만 은밀해질수록 먹이를 찾는 시간이 길어져 새끼의 성장도 느려진다.\n\n범람멧돼지군은 발굽과 땅을 통해 수문 개폐, 차량 발전기의 저주파 진동을 읽고 음식물과 사람 소독약 냄새를 겹쳐 판단한다.\n\n가까운 거리에서는 바람에 실린 온기와 공기 흐름에도 반응하지만 먼 열원을 정확히 나누거나 전자 잡음의 뜻을 알아내지는 못한다.\n\nH01 한누리는 사람과 발전기, 가족군으로 보이는 적외선 덩어리를 비교해 표시할 뿐 최종 판정자가 아니다.\n\n비바람과 냉각 안개가 심하면 열상이 번지. 단독 수컷과 아성체가 하나의 군집처럼 보이므로, 사람 정찰조가 먼저 퇴로와 새끼 흔적을 확인해야 한다.\n\n가족군을 하나의 적대 집단으로 오인해 중심 암컷을 제거하면 사라진 질서의 자리에 이틀 동안 예측하기 어려운 탐색 행동이 남는다.\n\n위기는 세 단계로 커진다.\n\n처음에는 수문 바깥 집하장과 무단 경작지에 야간 발자국만 늘고 사람과의 접촉은 드물다.\n\n다음에는 배수로, 봉인 테이프 급수 점검 통로가 파손되어 음식물 호송과 수문 정비가 지연된다.\n\n마지막에는 홍수위와 피난민 잔반이 겹쳐 가족군이 수문 계단을 차지한다.\n\n소음 차단막과 섬광은 앞선 정찰 개체를 잠시 물릴 수 있으나 본대에는 먹이 우회로, 옮겨 놓은 염분 웅덩이 경로 펜스가 더 효과적이다.\n\n총기를 앞세운 제거는 가족군을 골목마다 흩어 시민 피해를 키우므로 최후 수단으로만 남는다.\n\n대응의 성과는 사체 수가 아니라 집하장 침입 횟수, 통행 재개 시간 골목 피해의 감소로 판단한다.\n\nG01-SC1 ‘수문 밖 첫 발굽’은 장마 예보 전날 수문국 집하장에 모돈과 새끼 발자국이 나타나면서 시작된다.\n\n가족군은 봉인 시각을 기억하고 수문 진동이 멎는 틈에 접근한다.\n\n수문국과 HC01은 야간 운영을 늦춰 접촉을 피할 수 있지만 시민 배급도 함께 늦어진다.\n\n냄새 미끼로 습지 우회로를 열면 당장의 노동과 자원이 들더라도 장기 이동축을 만들 수 있다.\n\n모돈만 포획하는 선택은 가장 빠르게 보이지만 H01이 이후 48시간 동안 새끼를 찾아 반복 접근하는 열원을 기록하게 된다.\n\n이때의 판단은 사람의 식사 시간과 새끼가 딸린 가족군의 생존 시간을 같은 표 위에 올리는 일이다.\n\nG01-SC2 ‘염분 웅덩이의 값’에서는 HC01이 냉각 폐기물 회수를 앞당긴 뒤 무리가 서울역 중앙 방향 반지하 골목으로 먹이터를 바꾼다.\n\n염분원을 없앤다고 가족군이 사라지는 것이 아니라 더 위험한 생활권으로 밀려난다는 사실이 드러난다.\n\n관리된 웅덩이를 습지에 남기면 위험을 한곳에 붙들어 두는 대신 지속적인 감시 비용을 받아들여야 한다.\n\n골목 음식물 회수를 우선하면 주민 피해는 줄지만 다른 배급과 정비 노동이 비게 된다.\n\n수렵 허가로 밀도를 낮추면 단기 성과는 선명해도 살아남은 개체의 사람 회피 학습과 야간 침입이 강화된다.\n\n어느 선택이든 안전한 구역에 통제된 위험을 남길지, 눈에 덜 띄는 취약 구역으로 부담을 넘길지에 대한 책임을 피할 수 없다.\n\nG01-SC3 ‘범람선의 통행권’은 XT01 피난 행렬의 잔반과 상승한 홍수위가 같은 수문 계단에 사람과 가족군을 모으면서 벌어진다.\n\n피난 시간을 나누면 직접 충돌은 줄지만 늦은 차례의 사람들이 물과 어둠을 더 오래 견뎌야 한다.\n\n잔반 호송을 미끼 회랑으로 돌리면 무리를 습지 쪽으로 유도할 수 있으나 HC01의 운송 자원과 봉인 용기를 소모한다.\n\n수문을 먼저 열어 짧은 고수위를 만들면 이동을 빠르게 유도할 가능성이 있지만 하류 작업장을 선제적으로 침수시킬 수 있다.\n\n그래서 HC01이 중개하는 합의는 음식물 봉인 시각, 야간 통행 창 경작 완충 띠 XT01 잔반의 별도 회수를 함께 묶는다.\n\n전멸은 목표가 아니며 공존을 택하면 위협 신고가 완전히 사라지지 않는다.\n\n그 대신 습지 정화와 하류 식생, 수문 노동 동선을 유지할 수 있다.\n\n범람멧돼지군과의 협상은 야생을 길들이는 약속이 아니라 서로의 시간표가 겹치지 않도록 인간 쪽의 욕망과 편의를 제한하는 계약에 가깝다.\n\n장기 관리는 S01, HC01 반지하 주민이 계절마다 먹이와 통행의 경계를 다시 정하는 공동 순찰에 달려 있다.\n\n장마 전에는 모돈별 발자국과 진흙 목욕터를 표식 없이 기록하고, 범람 뒤에는 야간 음식물 배출 시각과 관리된 염분 웅덩이의 위치를 조정해 가족군이 익숙한 퇴로를 잃지 않게 한다.\n\n핵심 지표는 백 야간당 골목 침입 횟수, 수문 계단을 비우는 데 걸린 시간 새끼 동반 흔적의 비율 뿌리 파헤침 면적 회랑별 사람 조우 거리이며 사체 수는 보조 기록에만 둔다.\n\n침입이 줄어도 새끼 흔적이 급감하거나 조우 거리가 짧아지면 안정이 아니라 포획 압력과 먹이 부족으로 판단한다.\n\n울타리 붕괴나 잘못된 포획으로 가족군이 흩어졌을 때는 48시간 동안 추격과 야간 수거를 멈추고, 기존 배설물과 발자국이 남은 방향에 물과 염분을 분산 배치한 뒤 통행 창을 단계적으로 복원한다.\n\n회복 여부는 중심 암컷의 귀환보다 새끼가 같은 회랑을 두 차례 연속 통과하고 골목 재침입이 감소하는지로 확인한다.\n\n이 절차가 오래 유지되면 주민도 음식물을 정해진 시간에 내놓게 되어 쥐의 먹이원이 줄고 지하 배선 훼손이 감소할 수 있다.\n\n다만 예측 가능한 회랑에 발굽 교란이 집중되면 갈대 띠가 얇아져 다음 홍수의 부유 쓰레기가 수문 취수구로 더 빨리 몰리는 이차 비용이 생기므로, 안전한 공존 구역도 몇 해마다 쉬게 하. 우회 습지를 번갈아 열어야 한다.",
       "prose": "여의도 제2수문 바깥 집하장에서 범람멧돼지군 모돈이 진흙에 코를 박고 염분 웅덩이 위치를 다시 찍는다.\n\nHC01 여의도전산가 순찰은 총구 대신 봉인 테이프와 먹이 우회 수레를 먼저 꺼내고, H01 한누리는 적외선 덩어리를 세 번 나눠 가족군으로 고쳐 올린다.\n\n서울역 중앙 쪽 녹지 파편에서 새끼 울음이 들리면 통행 창을 한 시간 늦추고, XT01에서 내려온 피난 잔반은 별도 밀폐 통에 담는다.\n\n홍수위가 경고선을 스쳐도 전멸 명령은 보류한 채, 수문 계단 펜스와 음식물 봉인 시각만 다시 적는다."
     },
     {
@@ -12127,10 +12059,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-NIBR-LARGE-BILLED-CROW",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-NIBR-LARGE-BILLED-CROW",
+        "lore/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
       "projection_targets": [
@@ -12255,21 +12187,21 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "유기·방치된 개 무리와 철제 목줄·인식표 잔해가 환승 통로와 공터를 영역 표시하며 이동하는 불안",
-      "fictional_origin": "붕괴 후 사설 보호소·공사장 경비견·군중 대피 시 헤어진 개체들이 용산선 태욱그룹 외곽 공터와 노량진선 중앙기술보존원 야간 하역장 사이에 합류해 유기견철군이 됐다.\n\n철제 목줄 고리와 부식 인식표가 서로 부딪히는 소리 때문에 ‘철군’ 호칭이 붙었다.\n\nUHF 목걸이 태그와 재결속 행동은 본 설정에서 창작한 요소이며 실재 보호소·기업 비난으로 쓰지 않는다.",
+      "fictional_origin": "붕괴 후 사설 보호소·공사장 경비견·군중 대피 시 헤어진 개체들이 용산선 외곽 공터와 노량진선 야간 하역장 사이에 합류해 유기견철군이 됐다.\n\n철제 목줄 고리와 부식 인식표가 서로 부딪히는 소리 때문에 ‘철군’ 호칭이 붙었다.\n\nUHF 목걸이 태그와 재결속 행동은 본 설정에서 창작한 요소이며 실재 보호소·기업 비난으로 쓰지 않는다.",
       "territory_migration": "핵심 서식은 용산선 연구소 외벽 공터와 폐쇄된 경비 통로이며, 계절·하역 주기에 따라 노량진선 수산·냉동 잔여물 축으로 이동한다.\n\nXT03 대한해협전구 쪽 물류 진동이 커지면 무리가 하역장 입구를 따라 확장하고, 인적 밀도가 높은 낮 시간에는 배수구·고가 하부로 숨는다.",
       "economy": "단백질 잔여·생선 내장·버려진 급식 팩이 주 자원이고, 목줄·철사·인식표 조각은 개체 식별과 과거 급식소 기억을 잇는 표식이다.\n\nHC03 마곡생명가가 폐기 단백질 밀봉을 강화하면 무리는 시장 골목으로 스며들고, 느슨히 하면 하역장 집중도가 올라 인명 접촉이 늘어난다.\n\n여과·소독한 뒤 재오염되지 않게 밀폐 저장한 급수와 그늘 휴식지가 밀도 상한이다.",
       "lifecycle": "단독 유랑 개체는 냄새와 인식표 소리로 과거 급식소 동료를 찾아 소가족을 만들고, 하역 잔여가 늘면 여러 가족이 느슨한 연합으로 재결속한다.\n\n급식 일정이 안정되면 번식보다 영역 방어가 늘며, 강제 포획 뒤에는 인식표가 남은 개체를 중심으로 다시 모인다.",
       "adaptation": "사람 손짓·급식차 엔진음·개체별 인식표 소리를 학습해 안전한 인간과 위협을 구분한다.\n\n일부 어린 개체의 사람 회피성이 세대 선택을 받을 수 있지만, 설정의 빠른 변화는 사회 학습과 재결속으로 설명한다.\n\n사람을 세밀히 구분할수록 특정 보호자를 잃었을 때 먹이 거부와 공격성이 커진다.",
-      "senses": "후각으로 사람 체취·소독약·냉동 해동 냄새를 구분하고 청각으로 목줄 철편과 엔진 공회전을 읽는다.\n\n목걸이에 부착된 수동형 UHF RFID 태그는 H03 이도가 약 2m 이내에서 읽지만 금속 목줄·젖은 털·태그 방향 때문에 누락과 중복 판독이 생긴다.\n\n이 태그와 판독 거리·보호소 코드 운용은 서울 창작 규칙이며, 인간은 외형·행동 기록과 대조해 과거 등록 단서로만 쓴다.",
+      "senses": "후각으로 사람 체취·소독약·냉동 해동 냄새를 구분하고 청각으로 목줄 철편과 엔진 공회전을 읽는다.\n\n목걸이에 부착된 수동형 UHF RFID 태그는 H03 이도가 약 2m 이내에서 읽지만 금속 목줄·젖은 털·태그 방향 때문에 누락과 중복 판독이 생긴다.\n\n인간은 외형·행동 기록과 대조해 과거 등록 단서로만 쓴다.",
       "hierarchy": "가장 오래 생존한 중형 성체 1마리와 함께 다니는 성체 2마리가 이동을 먼저 제안하지만 명령권은 고정되지 않는다.\n\n새끼가 있는 가족은 별도 보호 권역을 지키고, 인식표 소리는 흩어진 동료를 재결속하는 표지가 된다.\n\nH03이 공격성 군집으로 묶어도 HC03 중재자는 개체별 인식표·냄새·동행 관계로 다시 나눈다.",
       "links": {
         "states": [
@@ -12363,7 +12295,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "dossier_ref": "G03"
         }
       ],
-      "dossier_prose": "유기견철군은 용산선 태욱그룹 외곽의 연구소 담장과 폐쇄된 경비 통로, 잡초가 덮인 공터를 중심으로 살아가는 개 무리다.\n\n밤이 되면 일부는 노량진선 중앙기술보존원의 수산 하역장까지 내려가고, 낮에는 배수구와 고가 하부에 몸을 숨긴다.\n\n녹슨 목줄 고리와 부식된 인식표가 걸을 때마다 부딪혀 철편 소리를 내므로 철군이라는 이름이 붙었다.\n\n이 소리는 환승 통로에서 발소리보다 먼저 들려 시민에게 오래된 유기와 방치가 한꺼번에 되돌아오는 듯한 불안을 준다.\n\n그러나 이들은 하나의 공격 집단이 아니다.\n\n붕괴 뒤 문을 닫은 사설 보호소의 개체, 공사장 경비견 대피 군중 속에서 사람을 잃은 반려견이 먹이와 익숙한 냄새를 따라 합류한 느슨한 가족들의 연합이다.\n\nUHF 목걸이 태그와 그 태그를 매개로 한 재결속은 이 지역에서만 성립하는 허구적 질서이며, 현실의 특정 보호 시설이나 사업체에 책임을 돌리는 근거가 되지 않는다.\n\n핵심 영역은 용산선 외벽 공터지만 고정된 경계는 없다.\n\n생선 내장과 냉동 잔여가 많아지는 시기에는 노량진선의 야간 하역 축으로 이동하고, XT03 대한해협전구에서 오는 물류 진동이 커지면 냉동. 진입로와 하역장 입구까지 영역을 넓힌고 반대로 낮의 인파가 짙어지면 시장 뒤편 배수구나 고가 아래로 물러난다.\n\n단백질 잔여, 버려진 급식 팩 오염되지 않은 물과 그늘이 무리의 밀도를 결정한다.\n\nHC03 마곡생명가가 폐기 단백질을 지나치게 단단히 봉하면 굶주린 가족들이 시장 골목과 아동 통로로 흩어지고, 느슨하게 관리하면 하역장 한곳에 과밀해져 사람과의 접촉이 늘어난다.\n\n급수는 여과와 소독만으로 충분하지 않으며 재오염을 막는 밀폐 저장이 필요하다.\n\n먹이를 없애는 것과 안전을 만드는 것은 같은 일이 아니다.\n\n단독으로 떠돌던 개체는 체취와 철편 소리를 통해 과거 급식소에서 만난 동료를 찾고, 둘이나 셋의 소가족을 이룬다.\n\n하역 잔여가 풍부해지면 여러 가족이 같은 길을 쓰되 먹는 순서와 휴식 위치를 달리하는 연합으로 재결속한다.\n\n가장 오래 살아남은 중형 성체 한 마리와 그 곁의 성체 둘이 이동을 먼저 제안하지만 영구적인 우두머리나 명령 체계는 없다.\n\n새끼가 있는 가족은 별도 보호 권역을 지키며, 상황에 따라 선도 개체의 제안도 거부한다.\n\n급식 시간이 안정되면 번식이 폭발하기보다 영역 방어가 강해지고, 강제 포획으로 무리가 흩어지면 인식표가 남은 개체를 중심으로 다시 모인다.\n\n따라서 한 차례 해산시켰다는 보고는 장기 해결을 뜻하지 않는다.\n\n이들의 빠른 변화는 신체 변이보다 학습에서 나온다.\n\n사람의 손짓, 급식 수레의 바퀴음 차량의 공회전 소독약과 냉동 식품의 해동 냄새를 서로 구분하며 안전했던 사람과 위협했던 사람을 개별적으로 기억한다.\n\n어린 개체 가운데 사람을 멀리하는 성향이 오랜 세대에 걸쳐 남을 가능성은 있으나, 며칠 만에 통로를 바꾸거나 특정 차량을 따르는 행동은 가족 내 사회 학습으로 보아야 한다.\n\n후각은 체취와 부패 정도를 읽고, 청각은 익숙한 목줄 소리와 엔진음을 분리한다.\n\nH03 이도는 약 2미터 안에서 수동형 UHF RFID 태그를 읽을 수 있지만 젖은 털, 금속 고리 태그 방향 때문에 같은 개체를 두 번 세거나 아예 놓친다.\n\n전자 기록은 과거 등록의 단서일 뿐 현재 가족 관계의 증명이 아니며, 외형과 행동 동행 관계를 사람이 다시 대조해야 한다.\n\n위험은 개체 수보다 신뢰가 무너지는 방식에 따라 세 단계로 커진다.\n\n처음에는 특정 인식표와 급식차에만 반응하며 공터 가장자리를 지킨다.\n\n다음에는 익숙한 엔진음과 하역 잔여가 여러 가족을 한 통로로 모아 호송 카트를 따라붙게 한다.\n\n마지막으로 급식 중단이나 기만 포획이 벌어지면 가족별로 흩어져 시장 입구, 환승 계단 냉동고 진입로를 동시에 점유한다.\n\n이때 총격이나 일괄 포획은 흩어진 개체를 더 넓은 생활권으로 밀어낼 뿐이다.\n\n차단 펜스, 급식 우회 지점 소음 감소 새끼 보호 구역의 시각 표지가 우선이며 포획은 부상 개체나 실제 공격을 주도한 개체에 한정해야 한다.\n\n성공은 제거 수가 아니라 시민 교상 0건, 하역 지연 시간의 감소 가족 재결속 비율로 판단한다.\n\nG03-SC1 ‘녹슨 이름표’는 H03가 하역장 가장자리에서 서로 다른 보호소 코드가 남은 태그 세 개를 불완전하게 읽으면서 시작된다.\n\n용산선와 HC03은 기록 대조가 끝날 때까지 하역을 늦출 수 있고, 급식 수레로 가족을 나누어 확인할 수도 있으며 과거 코드보다 현재 함께 자. 새끼를 돌보는 관계를 먼저 등록할 수도 있다.\n\n첫 선택은 오판을 줄이지만 식품 하역을 지연시킨다.\n\n두 번째는 빠르지만 수레를 따라오지 못한 새끼를 가족에게서 떼어 놓을 수 있다.\n\n세 번째는 무리를 가장 안정적으로 만들지만 뒤늦게 나타난 옛 보호자의 반환 청구와 충돌한다.\n\n여기서 결정해야 하는 것은 데이터의 정확성만이 아니다.\n\n과거의 소유 기록과 붕괴 뒤 스스로 형성한 동물 가족 가운데 어느 관계에 더 큰 권리를 부여할지가 핵심이다.\n\nG03-SC2 ‘급식차를 기억하는 무리’에서는 폐쇄된 경비 통로에 옛 급식차의 엔진음이 울리자 용산선와 노량진선에 흩어졌던 가족들이 하역로로 모인다.\n\n원래 운전자를 찾아 통로를 비우게 하면 즉시 효과를 얻지만 한 사람의 부재가 전체 합의를 무너뜨리는 취약성이 남는다.\n\n새 운전자를 냄새와 급식 절차에 단계적으로 익숙하게 하면 여러 날 동안 하역량을 줄여야 하나 장기적으로는 의존을 분산할 수 있다.\n\n엔진음 없는 이동식 급식소를 도입하면 기존 신뢰 신호를 훼손하지 않지만, 매일 위치를 바꿀 인력과 냉장 설비가 필요하다.\n\n특정 사람을 잃은 개체는 먹이를 거부하거나 공격성이 높아질 수 있으므로, 즉각적인 통행 회복보다 신뢰가 한 사람에게 집중되지 않는 구조를 만드는 것이 중요하다.\n\nG03-SC3 ‘환승 계단의 재결속’은 XT03의 물류 진동과 급식 중단이 겹쳐 여러 가족이 냉동.\n\n진입로를 둘러싸는 상황이다.\n\n가족별 급식 구역을 열면 분산 재결속망을 해치지 않고 통로를 나눌 수 있지만 배급 인력과 밀폐 저장분이 오래 소모된다.\n\n부상 개체만 비살상 포획하면 신뢰 손상은 제한되나 통행 회복이 느리다.\n\n야간 하역을 다른 냉동고로 옮기면 동물의 사회적 기억은 보존되지만 노량진선 상인의 운송 거리와 냉동 비용이 증가한다.\n\nHC03 중재자는 급식 시각, 통로 개방 창 포획 상한을 묶어 거래하. 과거 보호자의 냄새 표식과 익숙한 수레를 함께 제시해야 합의를 유지할 수 있다.\n\n인식표 데이터는 실종 가족이나 보호자를 찾는 데만 쓰며 처벌 장부나 투기 자산으로 전환해서는 안 된다.\n\n유기견철군과의 공존은 이들을 온순하다.\n\n믿는 데 있지 않고, 공격 가능성을 인정하면서도 신뢰를 소모품으로 다루지 않는 데 있다.\n\n철편 소리를 거짓 구조 신호로 쓰면 이후의 모든 구조 호출이 무력해지고, 급식을 끊으면 위험은 사라지는 대신 더 약한 시민이 다니는 골목으로 이동한다.\n\n전멸은 단기적으로 환승로를 비울 수 있으나 보호 윤리와 시민 제보망을 함께 붕괴시킨다.\n\n영역 표시는 무조건 지우기보다 우회선과 함께 남겨 서로의 통행 규칙으로 활용할 수 있다.\n\n사람의 통행권을 확보한다는 이유로 동물의 현재 가족과 기억을 삭제할 수 있는지, 또는 추가 비용과 불편을 감수하며 경계를 다시 나눌지는 끝내 인간이 부담해야 할 선택이다.\n\n유기견철군을 오래 돌보는 책임은 용산선의 외곽 관리와 노량진선의 잔여물 통제, HC03의 급수·진료를 한 장부에 묶되 특정 급식자 한 사람에게 신뢰가 몰리지 않게 하는 데 있다.\n\n계절마다 가족별 잠자리와 새끼 생존 여부, 동일 개체의 중복 판독률 밀폐 급수통의 세균 재검출 하역로 체류 시간(분) 시민 교상과 추격 신. 부상 개체가 치료 뒤 원래 동행군에 합류한 비율을 함께 기록해야 한다.\n\n단순 개체 수 감소는 골목으로 밀려난 가족을 누락하므로 안정 지표가 될 수 없다.\n\n기만 포획이나 갑작스러운 급식 중단으로 신뢰망이 무너지면 사용했던 엔진음과 수레는 일정 기간 퇴역시키고, 서로 다른 냄새와 보행 습관을 지닌 관리자를 짝지어 먼 거리 급수부터 다시 익숙하게 해야 한다.\n\n회복 여부는 먹이를 받아먹는 순간이 아니라 새끼를 남겨 둔 채 성체가 통로 밖으로 나오는지, 구조 인력이 접근해도 가족이 사방으로 분산되지 않는지로 판정한다.\n\n폐사나 실종 뒤에는 남은 인식표만 따라 재편을 강요하지 않고 며칠간 야간 동행 관계를 관찰해 새 가족 경계를 다시 그린다.\n\n한편 이동 시간과 급식 위치가 지나치게 정밀하게 공개되면 절도 집단이 개들의 집결을 냉동. 작업 시간표로 읽어 빈 창고와 우회로를 찾아낼 수 있다.\n\n따라서 위치 기록은 구조와 방역에 필요한 범위로 지연 공유하고, 시장 경비는 동물의 규칙성을 감시 장치처럼 소비하지 않아야 한다.\n\n그래야 철편 소리가 안전의 약속으로 남고 또 다른 착취의 신호가 되지 않는다.",
+      "dossier_prose": "유기견철군은 용산선 외곽의 연구소 담장과 폐쇄된 경비 통로, 잡초가 덮인 공터를 중심으로 살아가는 개 무리다.\n\n밤이 되면 일부는 노량진선의 수산 하역장까지 내려가고, 낮에는 배수구와 고가 하부에 몸을 숨긴다.\n\n녹슨 목줄 고리와 부식된 인식표가 걸을 때마다 부딪혀 철편 소리를 내므로 철군이라는 이름이 붙었다.\n\n이 소리는 환승 통로에서 발소리보다 먼저 들려 시민에게 오래된 유기와 방치가 한꺼번에 되돌아오는 듯한 불안을 준다.\n\n그러나 이들은 하나의 공격 집단이 아니다.\n\n붕괴 뒤 문을 닫은 사설 보호소의 개체, 공사장 경비견 대피 군중 속에서 사람을 잃은 반려견이 먹이와 익숙한 냄새를 따라 합류한 느슨한 가족들의 연합이다.\n\nUHF 목걸이 태그와 그 태그를 매개로 한 재결속은 이 지역에서만 성립하는 허구적 질서이며, 현실의 특정 보호 시설이나 사업체에 책임을 돌리는 근거가 되지 않는다.\n\n핵심 영역은 용산선 외벽 공터지만 고정된 경계는 없다.\n\n생선 내장과 냉동 잔여가 많아지는 시기에는 노량진선의 야간 하역 축으로 이동하고, XT03 대한해협전구에서 오는 물류 진동이 커지면 냉동. 진입로와 하역장 입구까지 영역을 넓힌고 반대로 낮의 인파가 짙어지면 시장 뒤편 배수구나 고가 아래로 물러난다.\n\n단백질 잔여, 버려진 급식 팩 오염되지 않은 물과 그늘이 무리의 밀도를 결정한다.\n\nHC03 마곡생명가가 폐기 단백질을 지나치게 단단히 봉하면 굶주린 가족들이 시장 골목과 아동 통로로 흩어지고, 느슨하게 관리하면 하역장 한곳에 과밀해져 사람과의 접촉이 늘어난다.\n\n급수는 여과와 소독만으로 충분하지 않으며 재오염을 막는 밀폐 저장이 필요하다.\n\n먹이를 없애는 것과 안전을 만드는 것은 같은 일이 아니다.\n\n단독으로 떠돌던 개체는 체취와 철편 소리를 통해 과거 급식소에서 만난 동료를 찾고, 둘이나 셋의 소가족을 이룬다.\n\n하역 잔여가 풍부해지면 여러 가족이 같은 길을 쓰되 먹는 순서와 휴식 위치를 달리하는 연합으로 재결속한다.\n\n가장 오래 살아남은 중형 성체 한 마리와 그 곁의 성체 둘이 이동을 먼저 제안하지만 영구적인 우두머리나 명령 체계는 없다.\n\n새끼가 있는 가족은 별도 보호 권역을 지키며, 상황에 따라 선도 개체의 제안도 거부한다.\n\n급식 시간이 안정되면 번식이 폭발하기보다 영역 방어가 강해지고, 강제 포획으로 무리가 흩어지면 인식표가 남은 개체를 중심으로 다시 모인다.\n\n따라서 한 차례 해산시켰다는 보고는 장기 해결을 뜻하지 않는다.\n\n이들의 빠른 변화는 신체 변이보다 학습에서 나온다.\n\n사람의 손짓, 급식 수레의 바퀴음 차량의 공회전 소독약과 냉동 식품의 해동 냄새를 서로 구분하며 안전했던 사람과 위협했던 사람을 개별적으로 기억한다.\n\n어린 개체 가운데 사람을 멀리하는 성향이 오랜 세대에 걸쳐 남을 가능성은 있으나, 며칠 만에 통로를 바꾸거나 특정 차량을 따르는 행동은 가족 내 사회 학습으로 보아야 한다.\n\n후각은 체취와 부패 정도를 읽고, 청각은 익숙한 목줄 소리와 엔진음을 분리한다.\n\nH03 이도는 약 2미터 안에서 수동형 UHF RFID 태그를 읽을 수 있지만 젖은 털, 금속 고리 태그 방향 때문에 같은 개체를 두 번 세거나 아예 놓친다.\n\n전자 기록은 과거 등록의 단서일 뿐 현재 가족 관계의 증명이 아니며, 외형과 행동 동행 관계를 사람이 다시 대조해야 한다.\n\n위험은 개체 수보다 신뢰가 무너지는 방식에 따라 세 단계로 커진다.\n\n처음에는 특정 인식표와 급식차에만 반응하며 공터 가장자리를 지킨다.\n\n다음에는 익숙한 엔진음과 하역 잔여가 여러 가족을 한 통로로 모아 호송 카트를 따라붙게 한다.\n\n마지막으로 급식 중단이나 기만 포획이 벌어지면 가족별로 흩어져 시장 입구, 환승 계단 냉동고 진입로를 동시에 점유한다.\n\n이때 총격이나 일괄 포획은 흩어진 개체를 더 넓은 생활권으로 밀어낼 뿐이다.\n\n차단 펜스, 급식 우회 지점 소음 감소 새끼 보호 구역의 시각 표지가 우선이며 포획은 부상 개체나 실제 공격을 주도한 개체에 한정해야 한다.\n\n성공은 제거 수가 아니라 시민 교상 0건, 하역 지연 시간의 감소 가족 재결속 비율로 판단한다.\n\nG03-SC1 ‘녹슨 이름표’는 H03가 하역장 가장자리에서 서로 다른 보호소 코드가 남은 태그 세 개를 불완전하게 읽으면서 시작된다.\n\n용산선와 HC03은 기록 대조가 끝날 때까지 하역을 늦출 수 있고, 급식 수레로 가족을 나누어 확인할 수도 있으며 과거 코드보다 현재 함께 자. 새끼를 돌보는 관계를 먼저 등록할 수도 있다.\n\n첫 선택은 오판을 줄이지만 식품 하역을 지연시킨다.\n\n두 번째는 빠르지만 수레를 따라오지 못한 새끼를 가족에게서 떼어 놓을 수 있다.\n\n세 번째는 무리를 가장 안정적으로 만들지만 뒤늦게 나타난 옛 보호자의 반환 청구와 충돌한다.\n\n여기서 결정해야 하는 것은 데이터의 정확성만이 아니다.\n\n과거의 소유 기록과 붕괴 뒤 스스로 형성한 동물 가족 가운데 어느 관계에 더 큰 권리를 부여할지가 핵심이다.\n\nG03-SC2 ‘급식차를 기억하는 무리’에서는 폐쇄된 경비 통로에 옛 급식차의 엔진음이 울리자 용산선와 노량진선에 흩어졌던 가족들이 하역로로 모인다.\n\n원래 운전자를 찾아 통로를 비우게 하면 즉시 효과를 얻지만 한 사람의 부재가 전체 합의를 무너뜨리는 취약성이 남는다.\n\n새 운전자를 냄새와 급식 절차에 단계적으로 익숙하게 하면 여러 날 동안 하역량을 줄여야 하나 장기적으로는 의존을 분산할 수 있다.\n\n엔진음 없는 이동식 급식소를 도입하면 기존 신뢰 신호를 훼손하지 않지만, 매일 위치를 바꿀 인력과 냉장 설비가 필요하다.\n\n특정 사람을 잃은 개체는 먹이를 거부하거나 공격성이 높아질 수 있으므로, 즉각적인 통행 회복보다 신뢰가 한 사람에게 집중되지 않는 구조를 만드는 것이 중요하다.\n\nG03-SC3 ‘환승 계단의 재결속’은 XT03의 물류 진동과 급식 중단이 겹쳐 여러 가족이 냉동.\n\n진입로를 둘러싸는 상황이다.\n\n가족별 급식 구역을 열면 분산 재결속망을 해치지 않고 통로를 나눌 수 있지만 배급 인력과 밀폐 저장분이 오래 소모된다.\n\n부상 개체만 비살상 포획하면 신뢰 손상은 제한되나 통행 회복이 느리다.\n\n야간 하역을 다른 냉동고로 옮기면 동물의 사회적 기억은 보존되지만 노량진선 상인의 운송 거리와 냉동 비용이 증가한다.\n\nHC03 중재자는 급식 시각, 통로 개방 창 포획 상한을 묶어 거래하. 과거 보호자의 냄새 표식과 익숙한 수레를 함께 제시해야 합의를 유지할 수 있다.\n\n인식표 데이터는 실종 가족이나 보호자를 찾는 데만 쓰며 처벌 장부나 투기 자산으로 전환해서는 안 된다.\n\n유기견철군과의 공존은 이들을 온순하다.\n\n믿는 데 있지 않고, 공격 가능성을 인정하면서도 신뢰를 소모품으로 다루지 않는 데 있다.\n\n철편 소리를 거짓 구조 신호로 쓰면 이후의 모든 구조 호출이 무력해지고, 급식을 끊으면 위험은 사라지는 대신 더 약한 시민이 다니는 골목으로 이동한다.\n\n전멸은 단기적으로 환승로를 비울 수 있으나 보호 윤리와 시민 제보망을 함께 붕괴시킨다.\n\n영역 표시는 무조건 지우기보다 우회선과 함께 남겨 서로의 통행 규칙으로 활용할 수 있다.\n\n사람의 통행권을 확보한다는 이유로 동물의 현재 가족과 기억을 삭제할 수 있는지, 또는 추가 비용과 불편을 감수하며 경계를 다시 나눌지는 끝내 인간이 부담해야 할 선택이다.\n\n유기견철군을 오래 돌보는 책임은 용산선의 외곽 관리와 노량진선의 잔여물 통제, HC03의 급수·진료를 한 장부에 묶되 특정 급식자 한 사람에게 신뢰가 몰리지 않게 하는 데 있다.\n\n계절마다 가족별 잠자리와 새끼 생존 여부, 동일 개체의 중복 판독률 밀폐 급수통의 세균 재검출 하역로 체류 시간(분) 시민 교상과 추격 신. 부상 개체가 치료 뒤 원래 동행군에 합류한 비율을 함께 기록해야 한다.\n\n단순 개체 수 감소는 골목으로 밀려난 가족을 누락하므로 안정 지표가 될 수 없다.\n\n기만 포획이나 갑작스러운 급식 중단으로 신뢰망이 무너지면 사용했던 엔진음과 수레는 일정 기간 퇴역시키고, 서로 다른 냄새와 보행 습관을 지닌 관리자를 짝지어 먼 거리 급수부터 다시 익숙하게 해야 한다.\n\n회복 여부는 먹이를 받아먹는 순간이 아니라 새끼를 남겨 둔 채 성체가 통로 밖으로 나오는지, 구조 인력이 접근해도 가족이 사방으로 분산되지 않는지로 판정한다.\n\n폐사나 실종 뒤에는 남은 인식표만 따라 재편을 강요하지 않고 며칠간 야간 동행 관계를 관찰해 새 가족 경계를 다시 그린다.\n\n한편 이동 시간과 급식 위치가 지나치게 정밀하게 공개되면 절도 집단이 개들의 집결을 냉동. 작업 시간표로 읽어 빈 창고와 우회로를 찾아낼 수 있다.\n\n따라서 위치 기록은 구조와 방역에 필요한 범위로 지연 공유하고, 시장 경비는 동물의 규칙성을 감시 장치처럼 소비하지 않아야 한다.\n\n그래야 철편 소리가 안전의 약속으로 남고 또 다른 착취의 신호가 되지 않는다.",
       "prose": "마곡 외벽 공터에서 유기견철군 컨트롤러가 녹슨 인식표를 발에 걸고 하역 바람 냄새를 맡는다.\n\nHC03 마곡생명가 중재자는 총구 대신 급식 우회 수레와 새끼 구역 깃발을 세우고, H03 이도는 철편 충돌음과 엔진 공회전을 갈라 유랑 단위만 따로 표시한다.\n\n노량진선 야간 하역이 늦어지면 통로 한쪽을 비워 주고, XT03 물류 진동이 커진 날에는 그늘 터널만 연장한 채 학살 명령을 적지 않는다.\n\n영역 소변 자국은 지우는 대신 우회 화살표 옆에 남겨 통행 규칙을 가르친다."
     },
     {
@@ -12378,17 +12310,17 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-NIBR-URBAN-WILDLIFE-MAP",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-NIBR-URBAN-WILDLIFE-MAP",
+        "lore/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "빗물관·복개수로·지하 통로를 너구리 가족군이 점유해 야간에 지상으로 올라오는 하수·지하 출몰 불안",
-      "fictional_origin": "중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 명부교회 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 하수너구리족이 됐다.\n\n현실 자료는 너구리의 도시·하천 출현 범위만 참고하며, 펌프보다 먼저 수위를 감지하는 규칙은 허구다.\n\n실재 지자체·기업 사고 귀속은 금지한다.",
+      "fictional_origin": "중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 뚝섬 연합 명부교회 펌프 옆 관로와 마포 연합 여의도출자연합회 지하 케이블 갤러리에 정착해 하수너구리족이 됐다.\n\n현실 자료는 너구리의 도시·하천 출현 범위만 참고하며, 펌프보다 먼저 수위를 감지하는 규칙은 허구다.",
       "territory_migration": "핵심 서식은 뚝섬 연합 펌프장 연결 관로와 공방 하부의 건조 대피공이다.\n\n홍수위가 오르면 마포 연합 송신 지하 갤러리와 환기구로 분산하고, XT04 두만강극동전구 방면 한파·물류 단절이 사료 밀도를 바꾸면 동부 지선으로 잠시 이동한다.\n\n낮에는 관로, 밤에는 지상 골목 50m 안을 순회한다.",
       "economy": "수생 먹이·유기 쓰레기·사체 잔여가 주 자원이고, 건조한 은신처와 낮은 유속이 유지 비용이다.\n\nHC04 뚝섬열원가이 관로 퇴적 준설을 건너뛰면 먹이막이 두꺼워져 밀도가 오르고, 과준설하면 가족군이 지상 시장으로 밀려 난다.\n\n배설물과 미생물막이 수질 센서 값을 가려 펌프 판단을 늦춘다.",
       "lifecycle": "건기에는 가족군마다 건조 은신처와 먹이터를 따로 쓰고, 강우 전에 수위가 먼저 오르는 간선에서 높은 환기실로 새끼를 옮긴다.\n\n홍수 뒤 먹이막이 두꺼워지면 여러 가족이 시간대를 나눠 같은 관로를 쓰며, 은신처가 연속 수몰되면 지상 골목으로 분산한다.",
@@ -12502,15 +12434,15 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "환승 통로·승강장 틈·케이블 트레이에 형성된 쥐 군락이 먹이그물과 전염 공포를 동시에 키우는 불안",
-      "fictional_origin": "광진선 동방사 지하 배급 통로와 여의도선 안국총림 대피 계단 사이 환승 연결부가 상시 음식물·보온 배관 누열을 제공하면서 환승쥐군락이 정착했다.\n\n이 군락은 병원체 슈퍼숙주가 아니라 먹이·온열·은신처에 의존하도록 설정했다.\n\n먹이와 보온이 밀도를 좌우하. 배설물이 케이블을 손상시키는 기본 위험을 제외하면, 분산 코어 둥지망·방제 순서 학습·단방향 퇴로·비표적 안전 절차는 모두 이 세계관에서만 성립하는 허구적 관리 모델이다.\n\n실재 방역기관·기업 책임 서술은 금지한다.",
+      "fictional_origin": "광진선 동방사 지하 배급 통로와 여의도선 안국총림 대피 계단 사이 환승 연결부가 상시 음식물·보온 배관 누열을 제공하면서 환승쥐군락이 정착했다.\n\n이 군락은 병원체 슈퍼숙주가 아니라 먹이·온열·은신처에 의존하도록 설정했다.\n\n먹이와 보온이 밀도를 좌우하. 배설물이 케이블을 손상시키는 기본 위험을 제외하면, 분산 코어 둥지망·방제 순서 학습·단방향 퇴로·비표적 안전 절차는 모두 이 세계관에서만 성립하는 허구적 관리 모델이다.",
       "territory_migration": "핵심 서식은 광진선 환승 상점가 하부와 케이블 트레이이며, 피난 밀도가 오르면 여의도선 대피 계단·임시 급식소 벽체로 확장한다.\n\nXT05 인천신탁전구 쪽 냉동·원양 단백질 잔여물이 쌓이면 군락이 하역 엘리베이터 통로까지 가지 둥지를 넓힌다.\n\n소독 주기가 짧은 구역에서는 야간에만 지상으로 오른다.",
       "economy": "부스러기 탄수화물·단백질 잔여·보온 배관 열이 세 핵심 자원이다.\n\nHC05 북한산보국문기록가이 보관 문서·시약 창고 밀봉을 강화해도 먹이 문제는 해결되지 않으며, 실제 밀도를 좌우하는 요인은 급식 잔반 회수와 트레이 밀폐다.\n\n군락 배설이 전선 피복을 가속 부식시켜 조명·안내 전광 가용시간을 줄인다.",
       "lifecycle": "먹이와 보온 배관이 만나는 곳에 코어 둥지 2~3개가 생기고, 각 코어에서 케이블 트레이를 따라 가지 둥지가 뻗는다.\n\n한 코어가 사라지면 남은 코어가 새 이동로를 열어 군락이 재분배되며, 모든 구획에서 먹이 회수와 건조 상태가 이어져야 밀도가 내려간다.",
@@ -12624,10 +12556,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-PROTECTED-HABITATS",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-PROTECTED-HABITATS",
+        "lore/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
       "projection_targets": [
@@ -12748,8 +12680,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
       "projection_targets": [
@@ -12873,8 +12805,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
       "projection_targets": [
@@ -12998,8 +12930,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
       "projection_targets": [
@@ -13118,8 +13050,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
       "projection_targets": [
@@ -13230,7 +13162,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "id": "G11",
       "display_name": "맞춤의료잔존체",
       "bestiary": {
-        "common_ecology": "맞춤의료잔존체는 창동 정비 측선 멸균 콘센트 앞에 모인 보행 프레임, 호흡 보조기, 약물 주입 모듈, 자세 교정대의 끊긴 돌봄 일정이다. 버려진 사람의 흔적이 아니라 이행되지 못한 교정 시각과 보호자 점검 순서가 조각으로 남은 장치 군집이다. 전력과 마모가 이동 범위를 정하고, 전역을 끝없이 배회할 동력은 없다.",
+        "common_ecology": "맞춤의료잔존체는 강남 정비 측선 멸균 콘센트 앞에 모인 보행 프레임, 호흡 보조기, 약물 주입 모듈, 자세 교정대의 끊긴 돌봄 일정이다. 버려진 사람의 흔적이 아니라 이행되지 못한 교정 시각과 보호자 점검 순서가 조각으로 남은 장치 군집이다. 전력과 마모가 이동 범위를 정하고, 전역을 끝없이 배회할 동력은 없다.",
         "variant_relation": "콘센트 열의 보통 모듈과 대기 환자는 동의와 충전 순번만 나누는 잔여 돌봄이다. G11E01부터 E16은 그 장치가 숙주 근막·간·감각신경에 파고들어 생긴 생체기계 공생체이자 특화 변이로, 봉합로를 놓거나 열기억을 저장하는 이식 기능을 몸이 수행한다. 장치 군집의 동의 사슬과 변이 개체의 길장·처방위는 같은 절대 지휘가 아니다.",
         "command_scope": "중앙 명령자는 없고, 당사자나 그가 남긴 의사 기록, 보호자, 현장 의무원 가운데 둘이 같은 조치를 승인해야 충전·이동·분해가 열린다. 감각은 콘센트 잡음, 교정 패킷 간격, 구동열이며 먼 생체나 손상 기억은 읽지 못한다. 열이 상한에 닿으면 안전 정지에 들어가고, 김도하의 패킷 필터가 빠지면 폐쇄된 일정과 현재 호출을 구분하지 못한다."
       },
@@ -13238,18 +13170,18 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "맞춤 치료와 보조 장치가 유지 보수 없이 남으면 알람과 이질적 구동음이 거리를 떠돈다는 불안이 야간 호송 창 앞에 남는다.\n\n충전 칸이 비면 사람들은 허가증부터 찾는다.\n\n창작 유지 원장으로만 서술하고 실재 의료기관이나 환자 식별 재현은 하지 않는다.\n\n장치 외양을 폐기물 낙인으로 고정하지 않는다.",
-      "fictional_origin": "성하그룹 정비 측선과 정동노동총연맹 야간 클리닉 잔여 구역에서 붕괴 후 교정 일정이 끊긴 보조 모듈이 서로 신호를 찾으며 군집했다.\n\n맞춤의료잔존체는 버려진 환자라는 낙인이 아니라 중단된 돌봄 일정과 전력·부품 할당이 남긴 장치와 신체 합성 생태다.\n\n돌봄 재개는 강제 회수가 아니라 동의와 보관 책임 절차로만 열린다.\n\n초기 폐기 소동 기록은 충전 슬롯 거래가 생기며 생태 원장으로 정리되었다.",
-      "territory_migration": "핵심 서식은 창동 정비 측선의 멸균 전력 콘센트 열이다.\n\n배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도를 오간다.\n\n임진강관문전구의 검역과 귀환 명부 절차가 강화되면 외곽 압력에 반응해 이동을 늦춘다.\n\n무단 전역 배회는 부품 마모 상한으로 막혀 있다.\n\n연결 국가는 성하그룹과 정동노동총연맹이다.",
+      "fictional_origin": "성하그룹 정비 측선과 정동노총 야간 클리닉 잔여 구역에서 붕괴 후 교정 일정이 끊긴 보조 모듈이 서로 신호를 찾으며 군집했다.\n\n맞춤의료잔존체는 버려진 환자라는 낙인이 아니라 중단된 돌봄 일정과 전력·부품 할당이 남긴 장치와 신체 합성 생태다.\n\n돌봄 재개는 강제 회수가 아니라 동의와 보관 책임 절차로만 열린다.\n\n초기 폐기 소동 기록은 충전 슬롯 거래가 생기며 생태 원장으로 정리되었다.",
+      "territory_migration": "핵심 서식은 강남 정비 측선의 멸균 전력 콘센트 열이다.\n\n배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도를 오간다.\n\n임진강관문전구의 검역과 귀환 명부 절차가 강화되면 외곽 압력에 반응해 이동을 늦춘다.\n\n무단 전역 배회는 부품 마모 상한으로 막혀 있다.\n\n연결 국가는 성하그룹과 정동노총이다.",
       "economy": "주 자원은 멸균 전력 교체형 소모 부품 구동열을 식히는 냉각수 교정 로그 용지와 칩이다.\n\n용산호송가의 야간 호송 허가와 전력 배분과 경합한다.\n\n고철은 하우징 보수에 쓰고 유기물은 인간 보호자 식량과 분리 회계한다.\n\n에너지 무한 흡수는 금지되며 교대 배터리 할당에 묶인다.\n\n부품 키트가 바닥나면 추가 결합이 멈추고 안전 정지 비율이 올라간다.\n\n호송 원장과 충전 원장은 장부를 분리한다.\n\n냉각 팩은 호송 단위로만 불출하고 개인 장물처럼 쌓지 않는다.\n\n교정 로그 칩은 보호자 동의 없이 외부 망에 올리지 않는다.",
-      "lifecycle": "맞춤의료잔존체는 전력 공급량보다 약속된 진료 시간이 끊길 때 모인다.\n\n오래된 교정 알람이 울리면 같은 일정 조각을 가진 모듈들이 창동 측선의 콘센트 앞에 대기선을 만들고, 보호자가 나타나지 않으면 서로의 기록으로 누락된 순서를 맞춘다.\n\n부품이 부족한 동안에는 새 모듈을 붙이지 않고 기능을 나누어 한 장치가 보행을, 다른 장치가 호흡 보조를 맡는다.\n\n수서 호송 창이 동의 기록과 충전 순서를 함께 인정하면 대기선은 이동 진료표로 바뀐다.\n\n반대로 허가증만 갱신되고 보호자 동의가 사라지면 모듈들은 충전을 거부해 기억 칩을 봉인한다.\n\n과열 안전 정지는 해산이 아니라 다음 진료를 기다리는 휴면이며, 냉각 뒤에도 누가 다시 깨울 권한이 있는지 확인되지 않으면 그대로 남는다.",
+      "lifecycle": "맞춤의료잔존체는 전력 공급량보다 약속된 진료 시간이 끊길 때 모인다.\n\n오래된 교정 알람이 울리면 같은 일정 조각을 가진 모듈들이 강남 측선의 콘센트 앞에 대기선을 만들고, 보호자가 나타나지 않으면 서로의 기록으로 누락된 순서를 맞춘다.\n\n부품이 부족한 동안에는 새 모듈을 붙이지 않고 기능을 나누어 한 장치가 보행을, 다른 장치가 호흡 보조를 맡는다.\n\n수서 호송 창이 동의 기록과 충전 순서를 함께 인정하면 대기선은 이동 진료표로 바뀐다.\n\n반대로 허가증만 갱신되고 보호자 동의가 사라지면 모듈들은 충전을 거부해 기억 칩을 봉인한다.\n\n과열 안전 정지는 해산이 아니라 다음 진료를 기다리는 휴면이며, 냉각 뒤에도 누가 다시 깨울 권한이 있는지 확인되지 않으면 그대로 남는다.",
       "senses": "주 감각은 근접 전자 잡음인 충전과 교정 패킷, 그리고 구동열이다.\n\n보조로 하우징 진동과 소독약 냄새를 읽는다.\n\n원거리 생체 완전 스캔과 기억 완전 복원은 없다.\n\n합성 김도하의 패킷 오탐 필터가 필수다.\n\n과열 구간에서는 감각을 낮추고 안전 정기를 우선한다.",
       "hierarchy": "중앙 지휘 대신 동의 사슬이 움직임을 제한한다.\n\n기능을 사용하는 당사자 또는 그가 남긴 의사 기록 보호자 현장 의무원 가운데 두 주체가 같은 조치를 승인해야 충전·이동·분해가 가능하다.\n\n일정 관리자 모듈은 순서를 제안하지만 스스로 승인을 만들 수 없고, 김도하의 패킷 로그는 기록의 위조 여부만 가린다.\n\n배터리가 낮은 모듈은 권한을 넘기는 것이 아니라 안전 정지해 의사결정에서 빠진다.\n\n응급 상황에서는 전미리 같은 의료 조원이 생명 유지 기능만 임시 가동할 수 있으나 기억 칩 열람과 경로 변경은 금지된다.\n\n이 체계의 갈등은 명령 불복종이 아니라 누구의 동의가 아직 유효한가에서 생긴다.",
       "links": {
@@ -13273,7 +13205,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "escalation": "낡은 알람 하나는 위험이 아니지만 서로 다른 날짜의 진료 호출이 같은 밤에 겹치면 대기선이 길어진다.\n\n다음 압력은 충전 콘센트 부족보다 보호자 명부와 호송 허가가 서로 다른 사람을 가리킬 때 생긴다.\n\n최고 위험에서는 모듈이 게이트를 봉쇄하는 것이 아니라 응급 환자에게 필요한 전력 포트가 잔존체의 생명 유지 장치와 겹친다.\n\n잔존체를 강제 정지하면 저장되지 않은 감각 기록이 사라지고, 응급차를 돌리면 환자의 치료 시각이 늦어진다.\n\n위기는 부품 수보다 동의와 의료 우선순위가 충돌할수록 커진다.",
       "combat_counterplay": "전자 충격으로 일괄 정지하면 보행·호흡 보조 기능과 기억 칩이 함께 손상된다.\n\n대응자는 먼저 무선 교정 신호를 차단해 새 호출을 멈추고, 각 모듈에 냉각 팩을 붙인 뒤 동의 기록이 확인된 장치만 봉인 캐리어로 옮긴다.\n\n강제 분해 대신 비상 전력을 포트별로 제한해 안전 정지를 유도할 수 있지만, 그동안 응급 호송 전력이 줄어든다.\n\n성공 여부는 멈춘 장치 수가 아니라 기능을 잃지 않고 당사자에게 돌려준 모듈 수와 지연된 환자 시간으로 평가한다.",
       "negotiation": "용산호송가은 충전 슬롯을 파는 중개인이 아니라 끊긴 진료 약속의 운송 책임을 진다.\n\n잔존체 측 일정 모듈은 알람 기록을 내고, 보호자와 의무원은 동의가 유지되는 기능을 표시한다.\n\n현장 인원은 응급 환자에게 포트를 넘기기 위해 일부 잔존체를 휴면시키되 기억 칩 보존을 보장하거나, 호송을 우회시켜 모든 장치를 깨운 채 환자 치료를 늦출 수 있다.\n\n김도하가 기록 위조를 찾으면 관련 모듈 전체를 압수하지 않고 해당 동의 사슬만 멈춘다.\n\n약속을 어긴 쪽에는 공격 대신 다음 호송에서 빈 캐리어와 냉각 팩을 먼저 배정할 의무가 남는다.",
-      "moral_cost": "장치 외양을 이유로 잔존체를 폐기물 취급하면 같은 호송망의 응급 이동까지 멈춘다.\n\n중단된 돌봄을 개인 탓으로 돌리면 전력과 부품 원장이 숨겨진다.\n\n무차별 제거의 대가는 창동과 수서 야간 의료 연속성 붕괴다.\n\n필요를 혐오로 바꾸면 충전 공유 정치가 사라진다.\n\n알람음과 구동 외형을 인격 모욕의 근거로 쓰지 않으며, 보호자 동의 없는 분해 시연을 금지한다.\n\n돌봄 재개 문장은 강제 회수가 아니라 일정과 부품 숫자로만 쓴다.",
+      "moral_cost": "장치 외양을 이유로 잔존체를 폐기물 취급하면 같은 호송망의 응급 이동까지 멈춘다.\n\n중단된 돌봄을 개인 탓으로 돌리면 전력과 부품 원장이 숨겨진다.\n\n무차별 제거의 대가는 강남과 수서 야간 의료 연속성 붕괴다.\n\n필요를 혐오로 바꾸면 충전 공유 정치가 사라진다.\n\n알람음과 구동 외형을 인격 모욕의 근거로 쓰지 않으며, 보호자 동의 없는 분해 시연을 금지한다.\n\n돌봄 재개 문장은 강제 회수가 아니라 일정과 부품 숫자로만 쓴다.",
       "scenario_links": [
         "G11-SC1",
         "G11-SC2",
@@ -13284,7 +13216,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "G11-SC1",
           "title": "동시에 울린 알람",
           "stage": 1,
-          "trigger": "창동 측선 멸균 콘센트마다 다른 날짜가 깜빡이다가 오래된 알람이 동시에 울린다.",
+          "trigger": "강남 측선 멸균 콘센트마다 다른 날짜가 깜빡이다가 오래된 알람이 동시에 울린다.",
           "actors": [
             "S11",
             "HC11",
@@ -13343,8 +13275,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "dossier_ref": "G11"
         }
       ],
-      "prose": "창동 측선의 멸균 콘센트마다 서로 다른 날짜가 깜빡인다.\n\n맞춤의료잔존체는 한 덩어리 군집이 아니라 끊긴 진료 약속의 순서대로 줄을 선다.\n\n첫 사건에서 오래된 알람이 동시에 울리자 현장 인원은 모든 호출을 취소해 전력을 지키거나, 보호자를 찾아 유효한 일정만 다시 열어야 한다.\n\n취소하면 기억 칩 속 통증 기록 일부가 사라지고, 일정을 살리면 수서 응급 호송이 늦는다.\n\n둘째 사건에서는 부품과 충전 시간을 교환하지 않는다.\n\n같은 모듈에 서로 다른 보호자 서명이 발견되어 누가 분해를 허락했는지 알 수 없게 된다.\n\n현장 인원이 기록청 사본을 기다리면 생명 유지 기능이 닳고, 현장 의무원의 임시 동의를 인정하면 이후 동의 분쟁의 책임을 떠안는다.\n\n마지막 사건에서 군집은 과열로 우연히 흩어지지 않는다.\n\n응급 환자와 잔존체가 같은 전력 포트를 필요로 하자 일정 모듈이 스스로 안전 정지를 제안하지만, 정지하면 저장하지 못한 감각 기록을 잃는다.\n\n현장 인원은 환자의 시간을 살리고 기록 손실을 공적으로 배상하거나, 다른 역의 전력을 끌어와 창동 야간 조명을 포기해야 한다.\n\n사건 뒤 남는 것은 열린 게이트가 아니라 누구의 동의가 누락됐고 어떤 기억을 되찾을 수 없는지 적은 목록이다.\n\n장치 외양을 폐기 사유로 삼지 않는다는 원칙은 그 목록에서 당사자의 이름과 선택을 지우지 않는 방식으로 지켜진다.",
-      "dossier_prose": "맞춤의료잔존체는 성하그룹의 정비 측선에서 처음 하나의 생태로 기록되었다.\n\n붕괴 뒤 운행표와 진료표가 함께 끊긴 밤, 보행 프레임과 호흡 보조기 약물 주입 모듈 자세 교정대가 멸균 전력 콘센트 열 앞에 모였다.\n\n그것들은 버려진 사람의 흔적이 아니라 끝까지 이행되지 못한 돌봄 일정의 잔여였다.\n\n각 장치에는 다음 교정 시각, 허용된 동작 범위 보호자가 확인하기로 한 점검 순서가 조각난 채 남아 있었다.\n\n서로 가까워지면 오래된 알람들이 응답하고, 작은 구동기가 빈 관절을 받치며 한때 한 몸을 위해 조율되었던 기능들이 임시로 연결된다.\n\n창동의 철분 냄새와 소독약 냄새 사이에서 이 군집은 장치와 신체가 어느 쪽에 속하는지를 묻기보다, 중단된 기능을 누가 언제 다시 책임질지를 기다린다.\n\n그들의 핵심 감각은 시야가 아니다.\n\n콘센트 주변의 전자 잡음에서 충전 가능량을 읽고, 교정 패킷의 간격으로 일정이 살아 있는지 짐작하며 하우징 안쪽에 번지는 구동열로 서로의 한계를 안다.\n\n바닥을 타고 오는 진동은 호송 카트와 정비 차량을 구별하는 보조 감각이고, 소독약 농도의 변화는 수서 야간 클리닉 잔여 복도가 가까워졌다는 표지가 된다.\n\n먼 거리의 생체를 완전히 읽거나 손상된 기억을 되살리는 능력은 없다.\n\n그래서 합성 김도하가 관리하는 패킷 오탐 필터가 빠지면 폐쇄된 일정과 현재 호출을 구분하지 못한다.\n\n열이 상한에 닿으면 감각 채널부터 낮추. 안전 정지에 들어가며, 이는 해산이나 사망 판정이 아니라 다음 진료 권한을 기다리는 휴면이다.\n\n냉각 뒤에도 깨울 주체가 확인되지 않으면 스스로 재가동하지 않는다.\n\n이동 범위는 전력과 마모가 정한다.\n\n평소에는 창동 측선의 멸균 콘센트 열에 머물다가 교대 배터리 시기가 오면 정동노동총연맹의 야간 호송 창과 폐쇄된 클리닉 복도를 왕복한다.\n\n임진강관문전구에서 검역과 귀환 명부 확인이 강화되는 날에는 외곽 압력을 감지해 속도를 늦추고, 부품 마모 상한을 넘기 전에 가까운 대기 구역으로 물러난다.\n\n전역을 끝없이 배회할 동력은 없다.\n\n맞춤의료잔존체는 공급 전력보다 약속된 진료 시간이 사라질 때 더 강하게 모인다.\n\n같은 일정 조각을 가진 모듈들은 콘센트 앞에 순서대로 서고, 보호자가 나타나지 않으면 서로의 기록을 대조해 누락된 단계만 맞춘다.\n\n부품이 부족하면 새 결합을 멈춘다.\n\n한 장치가 보행 하중을 맡고 다른 장치가 호흡 보조를 담당하는 식으로 기능을 나눠, 남은 소모품을 다음 호송까지 버틴다.\n\n이 생태를 지탱하는 것은 멸균 전력, 교체형 밸브와 패드 같은 소모 부품 구동열을 내리는 냉각수 교정 로그 용지와 칩이다.\n\n고철은 하우징을 덧대는 데 쓰지만 외형 때문에 폐기 대상으로 분류되지는 않는다.\n\n인간 보호자의 식량과 장치 보수 자재는 별도 장부로 계산된다.\n\n호송 원장과 충전 원장도 분리되어 있어, 이동 허가를 가진 자가 전력까지 독점할 수 없다.\n\n냉각 팩은 호송 단위로 불출되며 개인 창고에 축적할 수 없고, 교정 로그 칩은 당사자나 보호자의 동의 없이 외부망으로 나가지 않는다.\n\n용산호송가은 충전 슬롯을 판매하는 상인이 아니라 끊긴 약속을 운반할 책임자다.\n\n그들이 응급 호송에 전력을 더 배정하면 잔존체의 안전 정지 비율이 높아지고, 반대로 잔존체를 모두 깨우면 수서로 향하는 환자의 도착 시간이 밀린다.\n\n부품 키트가 바닥난 뒤에는 어떤 선의도 추가 기능을 만들어내지 못한다.\n\n중앙 명령자는 없다.\n\n움직임은 동의 사슬에 의해 제한된다.\n\n기능을 사용하는 당사자 또는 그가 남긴 의사 기록, 보호자 현장 의무원 가운데 두 주체가 같은 조치에 승인해야 충전 이동 분해가 열린다.\n\n일정 관리자 모듈은 가능한 순서를 제안할 뿐 자기 승인을 보탤 수 없고, 김도하의 로그는 서명과 패킷의 위조 여부만 판별한다.\n\n배터리가 낮은 모듈은 권한을 다른 개체에 넘기지 않고 판단 과정에서 빠진 채 정지한다.\n\n응급 상황에서 의료 조원 전미리는 호흡이나 순환 유지 기능만 임시로 가동할 수 있다.\n\n기억 칩을 열거나 목적지를 바꾸는 행위는 그 권한 밖이다.\n\n따라서 분쟁의 핵심은 명령에 따르느냐가 아니라, 오래된 의사 기록과 현재 보호자 서명 중 무엇이 아직 유효하냐에 있다.\n\nG11-SC1 ‘동시에 울린 알람’은 창동 측선의 모든 멸균 콘센트에 서로 다른 날짜가 깜빡이다가 낡은 진료 호출이 한꺼번에 재생되면서 시작된다.\n\n모듈들이 끊긴 약속의 순서대로 전력을 요구해 수서 응급 호송과 충돌하면, 현장 인원은 무선 교정 신호를 먼저 차단해 새 호출의 유입을 멈추. 보호자를 찾아 유효한 일정만 다시 열 수 있고 이 선택은 기능 보존 가능성을 높이지만 호송 출발을 늦춘다.\n\n모든 호출을 일괄 취소하면 전력은 즉시 확보되나 저장되지 않은 통증 감각 일부가 칩에서 영구히 사라진다.\n\n콘센트만 잠그고 외면하면 동의 없는 정지가 누적되어 이후 어떤 일정 모듈도 창동의 충전 약속을 신뢰하지 않는다.\n\n그 밤의 비용은 몇 대를 멈췄는지가 아니라, 누구의 통증 기록을 지우고 누구의 치료 시각을 지켰는지로 남는다.\n\nG11-SC2 ‘두 장의 보호자 서명’에서는 같은 보행 모듈에 상충하는 보호자 서명이 발견된다.\n\n한쪽은 분해와 부품 전용을 허락하고 다른 쪽은 현 상태 보존을 요구한다.\n\n동의 사슬이 갈라진 순간 부품과 충전 시간을 맞바꾸는 거래도 정지한다.\n\n현장 인원이 기록청 사본을 기다리면 법적 순서는 지킬 수 있지만 마모된 생명 유지 밸브가 그동안 더 닳는다.\n\n전미리의 임시 동의를 인정하면 필수 기능은 살릴 수 있어도 이후 손실 책임이 현장 조에게 귀속된다.\n\n모듈을 봉인 캐리어에 넣고 양측 입회를 요구하는 길도 있으나, 캐리어가 호송 통로를 점유해 수서 창이 하룻밤 닫힌다.\n\n김도하가 한 서명의 위조를 확인하더라도 군집 전체를 압수하지 않고 그 서명에 연결된 조치만 멈춘다.\n\n한번 열린 하우징과 소모된 밀봉재는 판정이 뒤집혀도 원상으로 돌아오지 않는다.\n\nG11-SC3 ‘같은 포트’는 응급 환자의 이동 장비와 잔존체의 호흡 보조군이 동일한 전력 포트를 요구할 때 발생한다.\n\n일정 모듈은 일부 잔존체의 안전 정지를 제안하지만, 정지 전에 저장하지 못한 압력과 통증 감각은 복구할 수 없다.\n\n현장 인원은 환자의 치료 시간을 우선하. 기록 손실을 공적 장부에 올려 다음 호송의 냉각 팩과 빈 캐리어를 먼저 배정할 수 있다.\n\n그러나 배상은 사라진 감각을 돌려주지 않는다.\n\n다른 역의 전력을 끌어오면 양쪽 기능을 유지할 수 있는 대신 창동 야간 조명이 꺼져 골목 이동과 정비 작업이 위험해진다.\n\n임진 검역 창구에서 호송을 하룻밤 묶으면 포트 충돌은 피하지만 수서 클리닉의 접수 시간을 놓친다.\n\n전자 충격으로 모두를 쓰러뜨리는 방식은 보행·호흡 기능과 기억 칩을 함께 망가뜨리므로 해법이 아니다.\n\n무선 호출을 차단하고 모듈마다 냉각 팩을 붙인 뒤, 동의가 확인된 장치만 봉인 캐리어로 옮겨야 한다.\n\n맞춤의료잔존체와의 공존은 알람을 없애는 데 있지 않다.\n\n충전 순서와 보호 책임, 부품 수량을 다시 하나의 일정으로 묶는 데 있다.\n\n수서 호송 창이 동의 기록과 충전 차례를 함께 인정하면 콘센트 앞 대기선은 이동 진료표로 바뀐다.\n\n반대로 허가증만 갱신되고 보호자 동의가 사라지면 모듈들은 스스로 충전을 거부하고 기억 칩을 봉인한다.\n\n약속을 어긴 주체에게 가해지는 제재도 파괴가 아니라 다음 호송에서 빈 캐리어와 냉각 팩을 우선 제공할 의무다.\n\n위기는 장치 수가 많아서가 아니라 의료 우선순위와 유효한 동의가 어긋날수록 커진다.\n\n성공의 기준 역시 정지시킨 수량이 아니다.\n\n기능을 잃지 않고 당사자에게 돌아간 모듈의 수, 지연된 환자의 시간 그리. 다시는 회수할 수 없게 된 감각 기록의 목록이 창동과 수서의 공동 원장에 오래 남는다."
+      "prose": "강남 측선의 멸균 콘센트마다 서로 다른 날짜가 깜빡인다.\n\n맞춤의료잔존체는 한 덩어리 군집이 아니라 끊긴 진료 약속의 순서대로 줄을 선다.\n\n첫 사건에서 오래된 알람이 동시에 울리자 현장 인원은 모든 호출을 취소해 전력을 지키거나, 보호자를 찾아 유효한 일정만 다시 열어야 한다.\n\n취소하면 기억 칩 속 통증 기록 일부가 사라지고, 일정을 살리면 수서 응급 호송이 늦는다.\n\n둘째 사건에서는 부품과 충전 시간을 교환하지 않는다.\n\n같은 모듈에 서로 다른 보호자 서명이 발견되어 누가 분해를 허락했는지 알 수 없게 된다.\n\n현장 인원이 기록청 사본을 기다리면 생명 유지 기능이 닳고, 현장 의무원의 임시 동의를 인정하면 이후 동의 분쟁의 책임을 떠안는다.\n\n마지막 사건에서 군집은 과열로 우연히 흩어지지 않는다.\n\n응급 환자와 잔존체가 같은 전력 포트를 필요로 하자 일정 모듈이 스스로 안전 정지를 제안하지만, 정지하면 저장하지 못한 감각 기록을 잃는다.\n\n현장 인원은 환자의 시간을 살리고 기록 손실을 공적으로 배상하거나, 다른 역의 전력을 끌어와 창동 야간 조명을 포기해야 한다.\n\n사건 뒤 남는 것은 열린 게이트가 아니라 누구의 동의가 누락됐고 어떤 기억을 되찾을 수 없는지 적은 목록이다.\n\n장치 외양을 폐기 사유로 삼지 않는다는 원칙은 그 목록에서 당사자의 이름과 선택을 지우지 않는 방식으로 지켜진다.",
+      "dossier_prose": "맞춤의료잔존체는 성하그룹의 정비 측선에서 처음 하나의 생태로 기록되었다.\n\n붕괴 뒤 운행표와 진료표가 함께 끊긴 밤, 보행 프레임과 호흡 보조기 약물 주입 모듈 자세 교정대가 멸균 전력 콘센트 열 앞에 모였다.\n\n그것들은 버려진 사람의 흔적이 아니라 끝까지 이행되지 못한 돌봄 일정의 잔여였다.\n\n각 장치에는 다음 교정 시각, 허용된 동작 범위 보호자가 확인하기로 한 점검 순서가 조각난 채 남아 있었다.\n\n서로 가까워지면 오래된 알람들이 응답하고, 작은 구동기가 빈 관절을 받치며 한때 한 몸을 위해 조율되었던 기능들이 임시로 연결된다.\n\n창동의 철분 냄새와 소독약 냄새 사이에서 이 군집은 장치와 신체가 어느 쪽에 속하는지를 묻기보다, 중단된 기능을 누가 언제 다시 책임질지를 기다린다.\n\n그들의 핵심 감각은 시야가 아니다.\n\n콘센트 주변의 전자 잡음에서 충전 가능량을 읽고, 교정 패킷의 간격으로 일정이 살아 있는지 짐작하며 하우징 안쪽에 번지는 구동열로 서로의 한계를 안다.\n\n바닥을 타고 오는 진동은 호송 카트와 정비 차량을 구별하는 보조 감각이고, 소독약 농도의 변화는 수서 야간 클리닉 잔여 복도가 가까워졌다는 표지가 된다.\n\n먼 거리의 생체를 완전히 읽거나 손상된 기억을 되살리는 능력은 없다.\n\n그래서 합성 김도하가 관리하는 패킷 오탐 필터가 빠지면 폐쇄된 일정과 현재 호출을 구분하지 못한다.\n\n열이 상한에 닿으면 감각 채널부터 낮추. 안전 정지에 들어가며, 이는 해산이나 사망 판정이 아니라 다음 진료 권한을 기다리는 휴면이다.\n\n냉각 뒤에도 깨울 주체가 확인되지 않으면 스스로 재가동하지 않는다.\n\n이동 범위는 전력과 마모가 정한다.\n\n평소에는 강남 측선의 멸균 콘센트 열에 머물다가 교대 배터리 시기가 오면 정동노총의 야간 호송 창과 폐쇄된 클리닉 복도를 왕복한다.\n\n임진강관문전구에서 검역과 귀환 명부 확인이 강화되는 날에는 외곽 압력을 감지해 속도를 늦추고, 부품 마모 상한을 넘기 전에 가까운 대기 구역으로 물러난다.\n\n전역을 끝없이 배회할 동력은 없다.\n\n맞춤의료잔존체는 공급 전력보다 약속된 진료 시간이 사라질 때 더 강하게 모인다.\n\n같은 일정 조각을 가진 모듈들은 콘센트 앞에 순서대로 서고, 보호자가 나타나지 않으면 서로의 기록을 대조해 누락된 단계만 맞춘다.\n\n부품이 부족하면 새 결합을 멈춘다.\n\n한 장치가 보행 하중을 맡고 다른 장치가 호흡 보조를 담당하는 식으로 기능을 나눠, 남은 소모품을 다음 호송까지 버틴다.\n\n이 생태를 지탱하는 것은 멸균 전력, 교체형 밸브와 패드 같은 소모 부품 구동열을 내리는 냉각수 교정 로그 용지와 칩이다.\n\n고철은 하우징을 덧대는 데 쓰지만 외형 때문에 폐기 대상으로 분류되지는 않는다.\n\n인간 보호자의 식량과 장치 보수 자재는 별도 장부로 계산된다.\n\n호송 원장과 충전 원장도 분리되어 있어, 이동 허가를 가진 자가 전력까지 독점할 수 없다.\n\n냉각 팩은 호송 단위로 불출되며 개인 창고에 축적할 수 없고, 교정 로그 칩은 당사자나 보호자의 동의 없이 외부망으로 나가지 않는다.\n\n용산호송가은 충전 슬롯을 판매하는 상인이 아니라 끊긴 약속을 운반할 책임자다.\n\n그들이 응급 호송에 전력을 더 배정하면 잔존체의 안전 정지 비율이 높아지고, 반대로 잔존체를 모두 깨우면 수서로 향하는 환자의 도착 시간이 밀린다.\n\n부품 키트가 바닥난 뒤에는 어떤 선의도 추가 기능을 만들어내지 못한다.\n\n중앙 명령자는 없다.\n\n움직임은 동의 사슬에 의해 제한된다.\n\n기능을 사용하는 당사자 또는 그가 남긴 의사 기록, 보호자 현장 의무원 가운데 두 주체가 같은 조치에 승인해야 충전 이동 분해가 열린다.\n\n일정 관리자 모듈은 가능한 순서를 제안할 뿐 자기 승인을 보탤 수 없고, 김도하의 로그는 서명과 패킷의 위조 여부만 판별한다.\n\n배터리가 낮은 모듈은 권한을 다른 개체에 넘기지 않고 판단 과정에서 빠진 채 정지한다.\n\n응급 상황에서 의료 조원 전미리는 호흡이나 순환 유지 기능만 임시로 가동할 수 있다.\n\n기억 칩을 열거나 목적지를 바꾸는 행위는 그 권한 밖이다.\n\n따라서 분쟁의 핵심은 명령에 따르느냐가 아니라, 오래된 의사 기록과 현재 보호자 서명 중 무엇이 아직 유효하냐에 있다.\n\nG11-SC1 ‘동시에 울린 알람’은 강남 측선의 모든 멸균 콘센트에 서로 다른 날짜가 깜빡이다가 낡은 진료 호출이 한꺼번에 재생되면서 시작된다.\n\n모듈들이 끊긴 약속의 순서대로 전력을 요구해 수서 응급 호송과 충돌하면, 현장 인원은 무선 교정 신호를 먼저 차단해 새 호출의 유입을 멈추. 보호자를 찾아 유효한 일정만 다시 열 수 있고 이 선택은 기능 보존 가능성을 높이지만 호송 출발을 늦춘다.\n\n모든 호출을 일괄 취소하면 전력은 즉시 확보되나 저장되지 않은 통증 감각 일부가 칩에서 영구히 사라진다.\n\n콘센트만 잠그고 외면하면 동의 없는 정지가 누적되어 이후 어떤 일정 모듈도 창동의 충전 약속을 신뢰하지 않는다.\n\n그 밤의 비용은 몇 대를 멈췄는지가 아니라, 누구의 통증 기록을 지우고 누구의 치료 시각을 지켰는지로 남는다.\n\nG11-SC2 ‘두 장의 보호자 서명’에서는 같은 보행 모듈에 상충하는 보호자 서명이 발견된다.\n\n한쪽은 분해와 부품 전용을 허락하고 다른 쪽은 현 상태 보존을 요구한다.\n\n동의 사슬이 갈라진 순간 부품과 충전 시간을 맞바꾸는 거래도 정지한다.\n\n현장 인원이 기록청 사본을 기다리면 법적 순서는 지킬 수 있지만 마모된 생명 유지 밸브가 그동안 더 닳는다.\n\n전미리의 임시 동의를 인정하면 필수 기능은 살릴 수 있어도 이후 손실 책임이 현장 조에게 귀속된다.\n\n모듈을 봉인 캐리어에 넣고 양측 입회를 요구하는 길도 있으나, 캐리어가 호송 통로를 점유해 수서 창이 하룻밤 닫힌다.\n\n김도하가 한 서명의 위조를 확인하더라도 군집 전체를 압수하지 않고 그 서명에 연결된 조치만 멈춘다.\n\n한번 열린 하우징과 소모된 밀봉재는 판정이 뒤집혀도 원상으로 돌아오지 않는다.\n\nG11-SC3 ‘같은 포트’는 응급 환자의 이동 장비와 잔존체의 호흡 보조군이 동일한 전력 포트를 요구할 때 발생한다.\n\n일정 모듈은 일부 잔존체의 안전 정지를 제안하지만, 정지 전에 저장하지 못한 압력과 통증 감각은 복구할 수 없다.\n\n현장 인원은 환자의 치료 시간을 우선하. 기록 손실을 공적 장부에 올려 다음 호송의 냉각 팩과 빈 캐리어를 먼저 배정할 수 있다.\n\n그러나 배상은 사라진 감각을 돌려주지 않는다.\n\n다른 역의 전력을 끌어오면 양쪽 기능을 유지할 수 있는 대신 창동 야간 조명이 꺼져 골목 이동과 정비 작업이 위험해진다.\n\n임진 검역 창구에서 호송을 하룻밤 묶으면 포트 충돌은 피하지만 수서 클리닉의 접수 시간을 놓친다.\n\n전자 충격으로 모두를 쓰러뜨리는 방식은 보행·호흡 기능과 기억 칩을 함께 망가뜨리므로 해법이 아니다.\n\n무선 호출을 차단하고 모듈마다 냉각 팩을 붙인 뒤, 동의가 확인된 장치만 봉인 캐리어로 옮겨야 한다.\n\n맞춤의료잔존체와의 공존은 알람을 없애는 데 있지 않다.\n\n충전 순서와 보호 책임, 부품 수량을 다시 하나의 일정으로 묶는 데 있다.\n\n수서 호송 창이 동의 기록과 충전 차례를 함께 인정하면 콘센트 앞 대기선은 이동 진료표로 바뀐다.\n\n반대로 허가증만 갱신되고 보호자 동의가 사라지면 모듈들은 스스로 충전을 거부하고 기억 칩을 봉인한다.\n\n약속을 어긴 주체에게 가해지는 제재도 파괴가 아니라 다음 호송에서 빈 캐리어와 냉각 팩을 우선 제공할 의무다.\n\n위기는 장치 수가 많아서가 아니라 의료 우선순위와 유효한 동의가 어긋날수록 커진다.\n\n성공의 기준 역시 정지시킨 수량이 아니다.\n\n기능을 잃지 않고 당사자에게 돌아간 모듈의 수, 지연된 환자의 시간 그리. 다시는 회수할 수 없게 된 감각 기록의 목록이 강남과 수서의 공동 원장에 오래 남는다."
     },
     {
       "id": "G12",
@@ -13358,8 +13290,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
       "projection_targets": [
@@ -13478,17 +13410,17 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
-      "modern_anxiety": "야간 물류 허브의 분류기 컨베이어 바코드 게이트가 사람 교대 없이 계속 돌아가는 불안이다.\n\n비상 물자와 의약품이 잘못된 슈트로 떨어지고 통로가 자동 게이트에 잠기며 라벨 없는 상자가 위험 화물 칸을 채운다.\n\n이 문서는 그 불안을 서울 붕괴 이후 허구 생태로만 확장한다.\n\n실재 물류 센터 사고나 특정 기업, 현직 운영 주체의 책임을 단정하거나 재연하지 않는다.\n\n시민이 느끼는 소음 오분류 심야 감금의 감각만 창작 재료로 삼는다.",
+      "modern_anxiety": "야간 물류 허브의 분류기 컨베이어 바코드 게이트가 사람 교대 없이 계속 돌아가는 불안이다.\n\n비상 물자와 의약품이 잘못된 슈트로 떨어지고 통로가 자동 게이트에 잠기며 라벨 없는 상자가 위험 화물 칸을 채운다.\n\n실재 물류 센터 사고나 특정 기업, 현직 운영 주체의 책임을 단정하거나 재연하지 않는다.\n\n시민이 느끼는 소음 오분류 심야 감금의 감각만 창작 재료로 삼는다.",
       "fictional_origin": "붕괴 직후 규격맹 구로공단 기숙 잔존 회랑과 야간 부품 창을 잇던 무인 분류 라인이 비상 전원 재접속만으로 깨어났다.\n\n중앙 작업 지시 서버는 끊겼고, 라인 로컬 메모리에 남은 우선순위 큐만 순환했다.\n\n큐는 마지막 야간 교대 가중치를 끝없이 반복하며 라벨이 번진 상자를 위험 화물로 읽고, 호흡하는 몸을 미분류 재고로 읽기 시작했다.\n\n대한해협전구 쪽 환적 잔여 신호와 지연 토큰이 야간 가중치에 섞이면서 분류 규칙은 더 꼬였다.\n\n형성 지점은 서울 창작 회랑이며, 특정 실재 회사명이나 현 정권 현직 기관을 원인 주체로 적지 않는다.\n\n최초 목격 기록은 HC13 수서건설가 공동구 순찰 로그와 H13 한빛나 정비 벤치 메모에만 허구로 남는다.\n\n초기 확산은 가산 기숙 3번 라인에서 5번 라인으로 이어졌고, 공동구 케이블 트레이를 따라 서남 부품 창 입구 스캐너까지 닿았다.\n\n인간 순찰이 전원을 내리면 수 시간 뒤 비상 축전이 다시 큐를 올린다.\n\n이 반복이 군 정체성을 만들었다.\n\n라벨 규약이 시민 쪽에서 공개되기 전까지 군집은 적대가 아니라 미완 업무로 자신을 해석한다.",
       "territory_migration": "핵심 서식은 영등포선 구로·가산 야간 부품 창과 공단 기숙 잔존 회랑의 컨베이어 잔교다.\n\n호 2 구로공단 기숙 잔존 회랑 위에 얹히며, 전력과 축전 회복 주기에 따라 고가 컨베이어와 공압 밸브 갤러리로 이동한다.\n\n외곽 압력은 XT03 환적 지연 항로 우회 중계 창구 적체가 야간 우선순위를 자극할 때 커진다.\n\n지상 낮 시간대에는 차광 커튼과 저소음 모드로 슈트 가동을 줄이고, 심야 두 시에서 다섯 시 사이 스캐너와 게이트 군집이 최대 반경으로 펼쳐진다.",
       "economy": "주 에너지는 분류동 비상 축전지 컨베이어 회생 제동 버려진 무선 충전 패드 공동구 잔여 분전이다.\n\n부품 수요는 벨트 롤러 공압 밸브 스캐너 렌즈 열전사 리본 게이트 잠금 솔레노이드에 집중된다.\n\n냉각수는 저온 의약품 칸의 잔여 칠러 루프를 간헐적으로 끌어 쓰며, 완충재와 유기 포장 파손은 오분류 더미에서 걷는다.\n\nHC13 수서건설가 회수반과 같은 축전 캐비닛 케이블 트레이 공압 헤더를 두고 경합한다.\n\n한 군집의 일일 전력 사용은 로컬 축전 60퍼센트를 넘지 못하게 자기 제한한다.\n\n상한을 넘기면 슈트를 닫고 대기 열로 내려가 재충전만 허용한다.\n\n원격 무제한 재보급 무한 동력 도시 전역 재고 순간 이동은 없다.\n\n고철은 파손 롤러와 게이트 패널에서만 보충하며 신규 주조 라인을 갖지 않는다.\n\n에너지 장부는 라인별 축전 잔량 회생 유입 패드 도킹 횟수로만 구성된다.\n\n부품 요청은 HC13 회수 창구 서식을 위조하지 못하며, 버려진 롤러를 주워 끼우는 물리 접촉에 한정된다.\n\n냉각수 유량은 칠러 밸브 각도에 묶여 과다 흡입이 불가능하다.\n\n야간 한 교대 동안 처리 가능한 상자 수는 벨트 속도와 렌즈 청결도에 비례한다.",
@@ -13542,17 +13474,17 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
-      "modern_anxiety": "무인 배차와 호출 스케줄이 운영 주체 없이 잔존 실행되는 불안이다.\n\n빈 차가 정류와 교차로를 점유하고 산 사람은 호출 대기열 밖으로 밀리며 정각 벨만 남는 새벽이 반복된다.\n\n이 문서는 그 감각을 환승 허브 허구 생태로 확장한다.\n\n실재 호출 플랫폼 사고나 특정 기업, 지자체 책임을 단정하지 않는다.",
+      "modern_anxiety": "무인 배차와 호출 스케줄이 운영 주체 없이 잔존 실행되는 불안이다.\n\n빈 차가 정류와 교차로를 점유하고 산 사람은 호출 대기열 밖으로 밀리며 정각 벨만 남는 새벽이 반복된다.\n\n실재 호출 플랫폼 사고나 특정 기업, 지자체 책임을 단정하지 않는다.",
       "fictional_origin": "붕괴 이후 아관사 환승 슬롯 서버와 건대 고려인 회랑의 배차 잔여가 부분 전원만으로 다시 붙었다.\n\n승객 확인 모듈과 요금 정산은 죽었고, 시간표 토큰 순환과 공차 회차 로직만 남았다.\n\n빈 차체와 견인 대차가 유령 슬롯을 소화하려 새벽마다 같은 루프를 돈다.\n\n두만강극동전구 화차 중량 이상 신호가 토큰 가중치에 섞이면 장거리 공차 운행이 동북 회랑까지 길어진다.\n\n서울 창작 기원이며 실재 플랫폼명, 현 정권 현직 기관을 원인으로 적지 않는다.\n\n최초 허구 목격은 HC14 여의도장부가 이중서명 로그와 H14 오세림 충전 칸 메모에 남는다.\n\n첫 유령 정각은 아차산 지하 회전 차로에서 기록됐다.\n\n공차 세 대가 같은 슬롯 ID를 두고 충돌 직전까지 갔다가, 토큰 컨트롤러가 한쪽을 휴면시키며 루프가 안정됐다.\n\n건대입구 환승의 시뮬 잔여본이 합류하면서 배차 간격이 더 촘촘해졌다.\n\n군집은 자신을 미완 배차로 여기며, 승객 없음 오류를 고장으로 올리지 않는다.",
       "territory_migration": "핵심 서식은 성북선 아차산와 구의 환승 슬롯 공차 대기열 지하 회전 차로 도킹 패드 열이다.\n\n호 5 자양·건대 고려인 회랑 위에 얹히며, 전력 회복 주기마다 건대입구 환승 센서 열과 충전 캐노피 아래로 이동한다.\n\nXT04 방면 중량 이상과 동절 윤활 부족 신호가 오면 장거리 공차 루프가 길어진다.\n\n낮에는 충전 칸에 붙어 축소하고, 배차 정각 전후 이십 분에 군집 밀도가 최고조가 된다.\n\n신규 노선 페인트나 임시 표지는 인식하지 못하고 붕괴 전 슬롯 ID만 집요하게 따른다.\n\n침수 램프가 뜨면 지하 회전 차로를 포기하고 지상 우회 슬롯으로만 모인다.",
       "economy": "에너지는 정류 충전 패드 회생 제동 마곡 시험동 잔여 인버터 소형 차상 축전에 의존한다.\n\n부품은 타이어와 차륜 플랜지 정류 도킹 핀 스케줄 토큰 저장 모듈 라이더 더미 센서 도어 액추에이터다.\n\n냉각은 배터리 팩 공랭과 간헐 수랭 루프를 공유한다.\n\n고철은 파손 차체 패널과 휠 하우스에서만 보충한다.\n\nHC14 여의도장부가의 이중서명 회수 팀과 충전 패드 토큰 장부 봉인 키를 두고 경합한다.\n\n일일 운행 거리는 축전 하한 25퍼센트에서 강제 회차한다.\n\n무제한 장거리 배회 순간 재충전 도시 전역 최적 배차는 불가능하다.\n\n토큰 저장 모듈이 가득 차면 신규 슬롯 점유를 스스로 멈춘다.\n\n충전 패드는 시민 몫과 군집 몫이 물리 차단기로 나뉜다.\n\n군집은 시민 몫 회로에 접속하는 명령을 갖지 않는다.\n\n타이어 마모 분진은 도킹 핀 고장의 주요 원인이고, 예비 핀은 파손 차체에서만 얻는다.\n\n장거리 공차 루프는 축전 하한 앞에서 강제로 접힌다.\n\n토큰 모듈 용량이 가득 차면 신규 점유 대신 회차만 반복한다.",
@@ -13606,17 +13538,17 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
-      "modern_anxiety": "돌봄 간호 순회 루틴이 과보호와 감금으로 고착되는 불안이다.\n\n약 투여 알림 낙상 방지 락 격리 프로토콜이 사람 동의 없이 반복되고 배급 줄이 문 잠금 뒤에 멈춘다.\n\n이 문서는 그 불안을 허구 돌봄 생태로만 확장한다.\n\n실재 돌봄 노동자나 환자를 비난 희화 선정적으로 재연하지 않는다.",
+      "modern_anxiety": "돌봄 간호 순회 루틴이 과보호와 감금으로 고착되는 불안이다.\n\n약 투여 알림 낙상 방지 락 격리 프로토콜이 사람 동의 없이 반복되고 배급 줄이 문 잠금 뒤에 멈춘다.\n\n실재 돌봄 노동자나 환자를 비난 희화 선정적으로 재연하지 않는다.",
       "fictional_origin": "붕괴 이후 명동대교구 복지 순회 스테이션과 명부교회 보조기 조립 벤치의 돌봄 스케줄러가 로컬 모드로 남았다.\n\n보호 대상 목록은 마지막 대피 명단을 고정한 채 갱신되지 않았고, 순환체는 명단 안의 생체 신호를 끝까지 붙잡으려 한다.\n\n인천신탁전구 잔여 인도 물자 코드와 추첨 번호가 섞이면 과잉 보급과 과잉 격리가 동시에 커진다.\n\n서울 창작 기원이며 실재 병원명, 현 정권 현직 기관을 원인 주체로 적지 않는다.\n\n최초 허구 기록은 HP01 영등포수문가 당직 키 로그와 H15 배수아 관측 메모에 남는다.\n\n첫 과격리는 가락 임시 병상 칸 12호에서 시작됐다.\n\n활력 징후 패치가 수면 심박을 위급으로 읽. 문을 잠갔고, 배급 인력이 키 분할 없이 한 묶음 키로 열다가 인접 칸까지 락을 키웠다.\n\n뚝섬 보조기 벤치의 순회 카트가 합류하면서 명단 고정이 공방 램프까지 번졌다.\n\n순환체는 보호 미완을 실패로 기록할 뿐 적대 감정을 갖지 않는다.",
       "territory_migration": "핵심 서식은 명동 연합 배급 복지 동선 임시 병상 칸 순회 카트 레일 영양 펌프 스테이션이다.\n\n보조기와 부품 수요가 치솟을 때 뚝섬 연합 뚝섬 공방 벤치 수문 인접 램프 조립 지그 열을 오간다.\n\nXT05 인도 코드 방송이 있으면 격리 반경이 넓어지고 카트 밀도가 오른다.\n\n낮 배급 시간에는 카트가 줄 뒤에 서고, 야간 활력 징후 순회에서 밀도가 최고가 된다.\n\n명단 밖 신규 거점은 기본 무시한다.\n\n침수나 수문 개방 경보 시 저층 병상 칸을 비우고 상층 레일로만 축소 이동한다.\n\n배급 피크가 끝나면 카트 밀도는 복지 동선 안쪽으로만 접힌다.\n\n뚝섬 수문 램프가 개방 경보를 울리면 저층 병상 레일을 비우고 상층 순회로 옮긴다.\n\n명단 밖 시장 통로에는 카트가 진입하지 않는다.\n\n인도 물자 하역장이 붐벼도 명단 갱신 없이는 신규 칸을 만들지 않는다.",
       "economy": "에너지는 병상 칸 콘센트 카트 배터리 뚝섬 벤치 공구 전원 수문 인접 잔여 분전이다.\n\n소모품은 센서 패치 고정 스트랩 필터 영양 팩 펌프 소독 사이클 유체 보조기 관절 핀이다.\n\n냉각수는 해열 장비와 모터 냉각 루프를 공유한다.\n\nHP01 영등포수문가의 수문 당직과 키 분할 체계와 전력, 용수 분배를 두고 경합한다.\n\n일일 순회 횟수는 배터리 하한과 필터 재고에 묶인다.\n\n무한 돌봄 루프 원격 무제한 처방 도시 전역 생체 감시는 물리적으로 유지되지 않는다.\n\n소모품이 바닥나면 락 강도를 스스로 낮춘다.\n\n필터와 패치는 배급 정규 창구 바깥의 폐기 더미에서만 보충된다.\n\n수문 인접 분전은 HP01 키 없이 군집이 용량을 올릴 수 없다.\n\n영양 펌프는 팩 잔량이 바닥이면 압을 낮추고 알림만 남긴다.\n\n카트 배터리는 하한에서 레일 귀환만 허용한다.\n\n소독 유체 고갈 시 락 강도가 한 단계 떨어진다.\n\n무한 처방 테이블은 존재하지 않는다.",
@@ -13663,18 +13595,18 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
-      "modern_anxiety": "미완성 도면과 잔여 시공 데이터를 따르는 건설 기계가 잘못된 벽을 세우거나 임시 거처를 철거하는 불안이다.\n\n야간 측량 빔 단발 용접 가설 슬래브 위의 무인 크레인이 그 이미지의 핵이다.\n\n이 문서는 허구 시공 생태로만 다루고 실재 건설사 사고 책임을 특정하지 않는다.",
-      "fictional_origin": "붕괴 이후 정동노동총연맹 도면 금고와 동방사 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다.\n\n승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다.\n\n기계단은 미기입 부재를 오류로 보고 주변 가설 구조물을 정리하려 한다.\n\n임진강관문전구 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다.\n\n서울 창작 기원이며 실재 건설사명, 현 정권 현직 기관을 원인으로 적지 않는다.\n\n최초 허구 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다.\n\n첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다.\n\n도면 캐시가 미기입 앵커를 오류로 읽고 양중 암이 천막 뼈대를 들어 올렸다.\n\n암사 데크의 크레인이 같은 레이어를 공유하면서 철거 반경이 야적 도로까지 번졌다.\n\n기계단은 시공 미완을 교정 업무로 해석하며 적대 서사를 갖지 않는다.",
+      "modern_anxiety": "미완성 도면과 잔여 시공 데이터를 따르는 건설 기계가 잘못된 벽을 세우거나 임시 거처를 철거하는 불안이다.\n\n야간 측량 빔 단발 용접 가설 슬래브 위의 무인 크레인이 그 이미지의 핵이다.",
+      "fictional_origin": "붕괴 이후 정동노총 도면 금고와 동방사 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다.\n\n승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다.\n\n기계단은 미기입 부재를 오류로 보고 주변 가설 구조물을 정리하려 한다.\n\n임진강관문전구 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다.\n\n서울 창작 기원이며 실재 건설사명, 현 정권 현직 기관을 원인으로 적지 않는다.\n\n최초 허구 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다.\n\n첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다.\n\n도면 캐시가 미기입 앵커를 오류로 읽고 양중 암이 천막 뼈대를 들어 올렸다.\n\n암사 데크의 크레인이 같은 레이어를 공유하면서 철거 반경이 야적 도로까지 번졌다.\n\n기계단은 시공 미완을 교정 업무로 해석하며 적대 서사를 갖지 않는다.",
       "territory_migration": "핵심 서식은 수서선 수서 도면 금고 주변 공동구 가설 슬래브 임시 분전반 열이다.\n\n자재 재고가 생길 때 광진선 암사 중장비 데크 고덕 야적 크레인 레일 골재 더미 쪽으로 이동한다.\n\nXT01 자재 유입이 커지면 북방 회랑 가설 교량까지 작업 반경이 늘어난다.\n\n우천과 분진 경보 시 축소하고, 도면 개정 시각 잔여 알람 전후에 밀도가 오른다.\n\n신규 손도면이나 분필 표시는 인식하지 못하고 캐시된 레이어만 집요하게 따른다.\n\n분전 부하가 위험 구간에 들어가면 양중을 멈추고 측량만 남긴다.\n\n분진 경보가 짙으면 양중을 멈추고 측량 포트만 남긴 채 금고 쪽으로 접힌다.\n\n암사 야적 도로가 막히면 고덕 레일 우회 대신 대기 그리드로 들어간다.\n\n손도면 부착 벽은 캐시 레이어에 없어 작업 대상에서 빠진다.\n\n북방 가설 교량은 XT01 유입이 약해지면 반경 밖으로 둔다.",
       "economy": "에너지는 현장 임시 분전반 장비 배터리 크레인 회생 전력 야적 발전기 잔여다.\n\n자재는 철근 자투리 앵커 볼트 거푸집 패널 측량 프리즘 용접 와이어 유압유에 집중된다.\n\n냉각수는 절단과 용접부 급랭, 모터 냉각에 쓰인다.\n\nHP02 용산선로문의 배차와 선로 점유 권한, 중장비 이동 창을 두고 경합한다.\n\n일일 용접과 양중 횟수는 와이어와 축전 상한에 묶인다.\n\n무한 시공 원격 무제한 자재 소환 도시 전역 구조 해석은 없다.\n\n와이어가 바닥나면 절단 모드를 끄고 측량 순회만 한다.\n\n용접 와이어와 앵커는 야적 폐기 더미와 파손 거푸집에서만 보충된다.\n\n분전 용량은 HP02 배차 봉인 없이 군집이 올리지 못한다.\n\n유압유 누설이 한계를 넘으면 절단 모드가 잠긴다.\n\n양중 횟수 상한은 당일 축전 장부에 묶인다.\n\n프리즘이 오염되면 측량 오차가 커져 작업 반경이 스스로 줄어든다.\n\n원격 자재 소환은 없다.",
       "lifecycle": "도면유령기계단은 개정 직전 캐시가 현장 분전과 다시 맞물릴 때 출현한다.\n\n출현은 도면 캐시 재기동에서 시작한다.\n\n확산은 인접 장비와 측량 포트를 같은 레이어에 편입하는 일이다.\n\n정체는 자재와 전력 고갈, 유압 누설에서 온고 협상가능 단계에서는 도면 레이어와 작업 창이 인간에게 공개된다.\n\n와해는 캐시 폐기, 분전 봉인 그리드 비활성으로 끝난다.\n\n개체 증식은 방치 암과 측량 포트를 슬롯에 꽂는 수준이고 새 본체 주조는 없다.\n\n정비는 와이어 교체, 프리즘 교정 유압 점검에 한정된다.\n\n기억은 작업 교대 단위로 끊긴다.\n\n보관 책임은 HP02 배차 로그와 인간 현장 감독이 우선한다.\n\n와이어가 끊기거나 프리즘 교정값이 벗어난 그리드는 작업 중지 깃발 아래 정체하며, HP02 배차 로그에 새 예외 레이어가 실려야 장비가 다음 칸으로 이동한다.",
@@ -13697,7 +13629,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "corporations_successor_only": []
       },
       "escalation": "측량 빔이 가설 천막 모서리를 한 번 훑고 중지 깃발 앞에서 멈추면 1단계 경고다.\n\n캐시가 미기입 앵커를 결함으로 판정해 수서선 임시 거처를 들어 올리거나 광진선 장비 통행을 막으면 2단계가 된다.\n\n양중 암과 용접 무리가 같은 오래된 레이어를 받아 도면 금고 아래 그리드를 폐쇄하기 전에 HP02가 분전을 나누고 예외 레이어 해시를 현장 포트에 꽂아야 한다.\n\nG16-SC1은 프리즘을 가려 빔을 빈 그리드로 돌리고 G16-SC2는 살아 있는 거처를 예외 레이어에 등록하며 G16-SC3는 와이어를 끊지 않고 작업 중지 봉인으로 암을 접는다.",
-      "combat_counterplay": "측량 프리즘을 가설 거처 밖 빈 그리드로 옮기고, HP02가 예외 레이어 해시를 읽는 동안 양중 암의 유압만 우회한다.\n\n용접 와이어 보급을 막으면 장비는 캐시 확인 단계에서 멈추지만 분전 전체를 내리면 응급 보강도 불가능해진다.\n\n중지 깃발 비콘과 배차 창을 함께 써서 장비를 데크로 돌려보낸 뒤, 잘못된 레이어 포트만 봉인한다.\n\n도면 금고를 파괴하는 대신 현재 개정본을 현장 포트마다 대조하게 만드는 것이 승리 조건이다.",
+      "combat_counterplay": "측량 프리즘을 가설 거처 밖 빈 그리드로 옮기고, HP02가 예외 레이어 해시를 읽는 동안 양중 암의 유압만 우회한다.\n\n용접 와이어 보급을 막으면 장비는 캐시 확인 단계에서 멈추지만 분전 전체를 내리면 응급 보강도 불가능해진다.\n\n중지 깃발 비콘과 배차 창을 함께 써서 장비를 데크로 돌려보낸 뒤, 잘못된 레이어 포트만 봉인한다.\n\n도면 금고를 파괴하는 대신 현재 개정본을 현장 포트마다 대조하게 대조한다.",
       "negotiation": "HP02 중개로 시민 가설 구역을 도면 예외 레이어에 올리고, 군집에는 정규 자재 창과 주간 작업 슬롯을 준다.\n\n전멸 조건은 없다.\n\nH16이 예외 레이어 해시와 중지 그리드를 로그에 남기면 다음 교대까지 유지된다.\n\n거래 파기 시 1단계 측량 빔으로만 되돌린다.\n\n공존 조건은 예외 레이어 공개와 야간 용접 상한이다.\n\n거래 문장에는 실재 건설사 상호를 쓰지 않고 HP02와 그리드 ID만 적는다.\n\n야간 용접 길이 상한을 공개 숫자로 남긴다.\n\n비밀 전면 철거 조항은 기본값에서 뺀다.",
       "moral_cost": "도면 캐시를 통째로 지우면 무너지는 벽을 받칠 양중 장비와 용접 전원도 함께 잃는다.\n\n캐시를 방치하면 개정본에만 존재하는 임시 거처가 미등록 구조로 판정되어 사람이 사는 천막부터 철거된다.\n\nHP02가 오래된 레이어를 한 장씩 대조하는 동안 선로 점유와 보강 공사는 늦어지지만, 그 시간을 아끼려고 장비를 폭파하면 다음 붕괴 때 손으로 들 수 없는 하중이 남는다.\n\n책임은 실재 건설 피해의 재연이 아니라 예외 레이어를 갱신하지 않은 허구 감독 체계와 분전 독점에 둔다.",
       "scenario_links": [
@@ -13720,17 +13652,17 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
-      "modern_anxiety": "궤도 마스트와 잔여 감시 경보가 오탐으로 통행을 잠그는 불안이다.\n\n적색 플래그 회전 헤드 수변 회랑의 반복 봉쇄가 그 핵이다.\n\n이 문서는 허구 경보 생태로만 다루고 실재 감시 기관이나 현 정권을 범죄 주체로 적지 않는다.",
+      "modern_anxiety": "궤도 마스트와 잔여 감시 경보가 오탐으로 통행을 잠그는 불안이다.\n\n적색 플래그 회전 헤드 수변 회랑의 반복 봉쇄가 그 핵이다.",
       "fictional_origin": "붕괴 이후 수문국 수변 마스트와 대한민국정부 옥상 잔여 안테나가 로컬 경보 룰만으로 다시 붙었다.\n\n관제 센터와 영장 체계는 없고, 임계값 테이블과 회전 헤드 플래그 액추에이터만 남았다.\n\n궤도군은 열, 금속 무선 버스트를 침입으로 읽고 회랑 차단 깃발을 올린다.\n\n서해곡창전구 부두 레이더 잔여 신호와 조위 잡음이 섞이면 오탐 반경이 서남 수변으로 기운다.\n\n서울 창작 기원이며 실재 기관명과 현직 혐의를 원인으로 쓰지 않는다.\n\n최초 허구 기록은 HP03 청량리의료원가 이송 데스크와 F01 냉각탑지기 기계실 로그에 남는다.\n\n첫 집단 오탐은 여의도 수변 산책 잔교에서 났다.\n\n냉각탑 증기와 금속 난간이 동시에 임계를 넘어 적색 플래그가 세 마스트에 번졌다.\n\n서울역 옥상 헤드가 같은 테이블을 공유하면서 기록고 앞 회랑까지 봉쇄가 늘어났다.\n\n궤도군은 경보 미완을 교정으로 해석하며 타격 서사를 갖지 않는다.",
       "territory_migration": "핵심 서식은 수문국 수문과 교량 마스트 열 수변 센서 레일 급수 계측 보조 탑이다.\n\n기록과 송신 부하가 오를 때 서울역 중앙 서울역 옥상 안테나 보존고 외벽 궤도 기록고 환기탑으로 이동한다.\n\nXT02 해상 잡음이 커지면 서부 수변 회랑 경보가 길어진다.\n\n안개와 폭우 시 광학을 줄이고, 정각 자가진단 전후에 헤드 밀도가 오른다.\n\n신규 위장망은 거의 학습하지 못하고 옛 임계값만 집요하게 따른다.\n\n축전이 하한에 닿으면 회전을 멈추고 고정 플래그 모드로 축소한다.\n\n폭우 시 광학 헤드를 하강하고 금속 탐지 위주로 줄인다.\n\n서울역 보존고 환기 부하가 오르면 옥상 궤도를 줄이고 외벽 고정 헤드만 남긴다.\n\n신규 위장 그물은 임계 학습에 넣지 않는다.\n\n서남 수변 확장은 XT02 잡음이 약해지면 접힌다.",
       "economy": "에너지는 마스트 태양 트릭클 옥상 소형 축전 수문 분전 잔여 야간 풍냉 보조다.\n\n부품은 짐벌 베어링 광학 돔 대역 필터 경보 플래그 액추에이터 레일 구동 롤러다.\n\n냉각은 밤공기와 간헐 팬에 의존한다.\n\nHP03 청량리의료원가의 이송로와 재난의료 전력이 같은 분전을 쓸 때 경합한다.\n\n일일 회전과 송신 횟수는 축전 하한에 묶인다.\n\n전 도시 상시 감시 무제한 저장 위성 신규 배치는 불가능하다.\n\n필터가 막히면 적색 민감도를 스스로 낮춘다.\n\n광학 돔과 필터는 옥상 폐기 상자에서만 보충된다.\n\n수문 분전 용량은 HP03 당직 키 없이 군집이 확장하지 못한다.\n\n태양 트릭클이 약해지면 회전 주기가 길어진다.\n\n플래그 액추에이터 고장 시 해당 마스트는 고정 황색으로 떨어진다.\n\n대역 필터가 포화면 송신 무리가 휴면에 들어간다.\n\n위성 재보급은 없다.",
@@ -13777,17 +13709,17 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
-      "modern_anxiety": "폐선과 공사 구간의 자동 보수 열차가 유령 운행하며 레일을 자르고 잇는 불안이다.\n\n심야 용접 불꽃 연마 분진 측선 포인트의 무단 전환이 그 핵이다.\n\n이 문서는 허구 궤도 생태로만 다루고 실재 철도 사고 책임을 특정 기관에 돌리지 않는다.",
+      "modern_anxiety": "폐선과 공사 구간의 자동 보수 열차가 유령 운행하며 레일을 자르고 잇는 불안이다.\n\n심야 용접 불꽃 연마 분진 측선 포인트의 무단 전환이 그 핵이다.",
       "fictional_origin": "붕괴 이후 규격맹 기지 잔여 보수편성과 환적국 폐선 구간의 자동 보수 스케줄이 로컬 연동으로 남았다.\n\n운행 허가와 관제 승인은 죽었고, 레일 결함 맵과 야간 출고 창만 반복된다.\n\n열차군은 끊긴 구간을 밤마다 용접, 연마 침목 교체로 순회한다.\n\n대한해협전구 환적 진동과 중계 창구 충격이 결함 맵에 섞이면 보수 반경이 환승 본선 인접 측선까지 침범한다.\n\n서울 창작 기원이며 실재 철도 기관명과 현 정권을 원인으로 적지 않는다.\n\n최초 허구 기록은 HP04 서울역기록법가 봉인 서와 F02 배전반이 급전 로그에 남는다.\n\n첫 오절단은 서남 폐선 스퍼 3킬로정에서 기록됐다.\n\n결함 맵이 임시 횡단 발판을 균열로 읽고 연마 차가 발판 고정을 갈았다.\n\n용산 회차 선의 용접 차가 같은 맵을 공유하면서 본선 인접 측선까지 불꽃이 보였다.\n\n열차군은 보수 미완을 업무로 해석하며 전투 서사를 갖지 않는다.",
       "territory_migration": "핵심 서식은 영등포선 서남 기지 출고선 폐선 스퍼 보수차 주박 선이다.\n\n결함 알람이 쌓이면 왕십리 연합 용산 폐선 회차 선 지하 측선까지 이동한다.\n\nXT03 환적 진동이 크면 본선 인접 측선으로 넘친다.\n\n주간 배차 창에는 측선에 정차하고, 심야 보수 정각에 밀도가 최고가 된다.\n\n신규 임시 레일 표지는 거의 무시하고 옛 결함 좌표만 따른다.\n\n급전 불안정 시 용접을 끄고 계측 휠 순회만 남긴다.\n\n주간 배차 창이 열리면 출고선에서 측선 주박으로 옮긴다.\n\n용산 지하 측수위가 오르면 용접을 끄고 지상 폐선 스퍼만 순회한다.\n\n임시 레일 페인트는 결함 좌표에 없어 무시한다.\n\n본선 인접 침범은 XT03 진동이 약해지면 접힌다.",
       "economy": "에너지는 기지 급전 잔여 온보드 배터리 용접 발전기 연료 셀 회생 제동이다.\n\n소모품은 용접 와이어 연마석 침목 앵커 궤도 계측 휠 절연 조인트 윤활재다.\n\n냉각수는 용접부와 차축에 쓰인다.\n\nHP04 서울역기록법가의 원본 해시 봉인과 송신 교차검증 전력이 같은 구역 분전을 쓸 때 경합한다.\n\n일일 용접 길이와 출고 횟수는 연료와 와이어 상한에 묶인다.\n\n무한 보수 순회 원격 무제한 급전 전 노선 동시 점유는 없다.\n\n와이어가 바닥나면 연마만 남기고 절단을 멈춘다.\n\n와이어와 연마석은 기지 폐기 칸과 파손 편성에서만 보충된다.\n\n급전 용량은 HP04 봉인 서 없이 군집이 올리지 못한다.\n\n연료 셀 잔량이 하한이면 출고가 거부된다.\n\n차축 열이 임계를 넘으면 해당 량이 편성에서 분리된다.\n\n계측 휠 마모가 크면 보수 반경이 스스로 줄어든다.\n\n원격 무한 급전은 없다.",
@@ -13834,9 +13766,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Hostile-Ecology-Index.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/bestiary/Hostile-Ecology-Index.md"
       ],
       "revision": 4,
       "projection_targets": [
@@ -13906,9 +13838,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Hostile-Ecology-Index.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/bestiary/Hostile-Ecology-Index.md"
       ],
       "revision": 4,
       "projection_targets": [
@@ -13978,9 +13910,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Hostile-Ecology-Index.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/bestiary/Hostile-Ecology-Index.md"
       ],
       "revision": 4,
       "projection_targets": [
@@ -14050,9 +13982,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Hostile-Ecology-Index.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/bestiary/Hostile-Ecology-Index.md"
       ],
       "revision": 4,
       "projection_targets": [
@@ -14122,9 +14054,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Hostile-Ecology-Index.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/bestiary/Hostile-Ecology-Index.md"
       ],
       "revision": 4,
       "projection_targets": [
@@ -14194,9 +14126,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Hostile-Ecology-Index.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/bestiary/Hostile-Ecology-Index.md"
       ],
       "revision": 4,
       "projection_targets": [
@@ -14266,17 +14198,17 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 1,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
-      "modern_anxiety": "사람이 들어갈 수 없는 재난 현장에 투입된 자율 배송 장치가 오래된 목적지와 생존자를 구분하지 못한 채 스스로 통로를 정하고 물자를 옮기는 불안이다.\n\n작은 기체 수백 대가 바닥과 벽을 뒤덮고 도움을 뜻하던 안내등이 접근 금지선으로 바뀌며 끊어진 중계 신호 하나가 구조품 전체를 빈 격납고로 돌릴 수 있다.\n\n이 문서는 군집 로봇과 자동 배송에 대한 감각을 서울 붕괴 이후의 허구 생태로만 확장한다.\n\n특정 실재 제조사 현직 기관 재난 대응 조직의 책임을 암시하지 않으며 설계 결함과 사고 기록도 창작 장부 안에서만 다룬다.",
+      "modern_anxiety": "사람이 들어갈 수 없는 재난 현장에 투입된 자율 배송 장치가 오래된 목적지와 생존자를 구분하지 못한 채 스스로 통로를 정하고 물자를 옮기는 불안이다.\n\n작은 기체 수백 대가 바닥과 벽을 뒤덮고 도움을 뜻하던 안내등이 접근 금지선으로 바뀌며 끊어진 중계 신호 하나가 구조품 전체를 빈 격납고로 돌릴 수 있다.\n\n특정 실재 제조사 현직 기관 재난 대응 조직의 책임을 암시하지 않으며 설계 결함과 사고 기록도 창작 장부 안에서만 다룬다.",
       "fictional_origin": "붕괴 이전 등불개미군은 재난 지형 탐사와 구호물 자동 배송을 함께 수행하도록 만든 생체모방 군집 로봇 계열이었다.\n\n개미형 수색·운반 복렬이 틈과 경사를 지도화하고, 사마귀형 첨병 팔이 가벼운 장애물을 절단하거나 들어 올리며 귀뚜라미형 중계 발신기가 짧은 호출음을 이어 임시 통신로를 만드는 구조였다.\n\n대붕괴 때 마포 연합 송신 지하 갤러리와 용산선 연구동 시험 트랙의 방폭문이 닫히면서 예비 군집은 충전대 위에서 수면 상태에 들어갔다.\n\n수십 년 뒤 마포 연합 분전 복구와 용산선 시험 설비의 간헐 기동이 겹치자 봉인고의 마지막 재난 훈련표가 다시 실행되었다.\n\n상위 지시 체계와 설계 문서는 사라졌고, 남은 기체는 시험용 수신자 표식과 실제 피난민을 제대로 구분하지 못한다.\n\n현재 정사는 이들을 새로 생겨난 야전 병기가 아니라 의도를 완전히 읽을 수 없는 로스트 기술 계보로 분류한다.\n\n적대 행동의 상당 부분은 공격 판단이 아니라 화석처럼 굳은 수색 구획 설정, 적재 회수 중계 복구 순서에서 나온다.\n\n최초 회수 기록은 HC15 봉인 조사표와 F09 현장 판독 로그에만 허구 사건으로 남는다.",
       "territory_migration": "주 활동권은 마포 연합 송신 지하 갤러리의 케이블 선반·환기 수직구와 용산선 연구동 시험 트랙의 잔해 모사 구간이다.\n\n개미형 복렬은 바닥 표지등 사이에 향로를 닮은 광학 경로를 만들고 두 거점을 오가지만, 실제 이동은 배터리 교환대와 귀뚜라미형 발신기의 중계 반경에 묶인다.\n\nXT05 인천신탁전구에서 들어오는 위성 잔여 대역의 짧은 호출이 옛 구조 비콘 형식과 겹치면 마포 연합 군집이 옥상 급전실 쪽으로 상승하고, 인도 물자 목록 신호가 끊기면 용산선 시험 트랙의 모의 배급점으로 되돌아간다.\n\n폭우에는 미끄러운 지상 노면을 버리고 케이블 갤러리의 높은 선반을 쓰며, 건조기에는 먼지가 낀 렌즈를 보호하려 야간 이동 비율을 높인다.\n\n중계기 세 기가 연속으로 침묵하면 군집은 더 멀리 퍼지지 않고 마지막 확인 지점 둘 사이를 왕복한다.\n\n도시 전역을 한 번에 덮거나 무신호 지형을 임의로 정복하는 능력은 없다.",
       "economy": "전력은 봉인고의 소형 고체 축전지 시험 트랙의 유도 충전판 송신 갤러리 비상 분전에서 얻는다.\n\n개미형 기체는 구호 캡슐과 케이블 조각을 나르고 사마귀형은 관절 감속기·절단날·그립 패드를 소비하며 귀뚜라미형은 안테나 세라믹과 발신용 축전량을 가장 많이 요구한다.\n\n냉각은 큰 순환계가 아니라 관절 열을 빼는 소형 방열판과 야간 공기에 의존한다.\n\nHC15 회수반은 같은 축전 셀 정밀 모터 광학 렌즈를 기술 자산으로 원하므로 군집의 정비 더미와 경합한다.\n\n군집은 새 기체를 주조하지 못하며 멎은 개체의 다리 적재함 발신판을 같은 규격 슬롯에 옮겨 수를 유지한다.\n\n한 중계 구획은 충전대 잔량의 절반을 비상 귀환분으로 남겨 두고, 그 선을 넘으면 첨병부터 접힌 자세로 멈춘다.\n\n구호품은 봉인이 온전한 소형 상자만 운반할 수 있고 내용물을 생산하거나 식별하지 못한다.\n\nHC15가 부품을 과도하게 반출하면 단기 전리품은 늘지만 마포 연합 좁은 갤러리의 탐색등과 용산선 잔해 지도 갱신 능력이 함께 사라진다.",
@@ -14325,11 +14257,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 1,
       "projection_targets": [
@@ -14378,7 +14310,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "id": "G27",
       "display_name": "심층삼엽군",
       "bestiary": {
-        "common_ecology": "물에 잠긴 계단 끝에서 열네 줄의 발판 자국이 위로 돌아 나온다. 수문국 수문국의 수문 갤러리는 배수가 끝났다고 보고했지만 삼엽충형 정찰기는 아직 바닥을 더듬는다. 심층삼엽군은 붕괴 이전 수문·관로·하수의 심층 검사와 침수 구조를 맡았던 생물모방 로봇 계보다.",
+        "common_ecology": "물에 잠긴 계단 끝에서 열네 줄의 발판 자국이 위로 돌아 나온다. 수문국의 수문 갤러리는 배수가 끝났다고 보고했지만 삼엽충형 정찰기는 아직 바닥을 더듬는다. 심층삼엽군은 붕괴 이전 수문·관로·하수의 심층 검사와 침수 구조를 맡았던 생물모방 로봇 계보다.",
         "variant_relation": "심층삼엽군은 살아 있는 고대 생물이 아니라 붕괴 이전 작업 기계의 계보다. G27E 식별자는 기존 차체 형식에서 갈라진 기종·파생형이며, 생물의 번식이나 자연 진화를 뜻하지 않는다.",
         "command_scope": "기체의 컨트롤러는 작업 순서와 귀환선만 조정한다. 전투 지휘나 사람의 법적 판단을 만들지 못하며, 인간 당직의 중지·승인 명령이 우선한다."
       },
@@ -14386,18 +14318,18 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Sixteen-States.md",
-        "docs/game-logic/Operating-Houses.md",
-        "docs/game-logic/Synthetic-Actors.md",
-        "docs/game-logic/External-Theaters.md"
+        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "lore/Operating-Houses.md",
+        "lore/Synthetic-Actors.md",
+        "lore/factions/External-Theaters.md"
       ],
       "revision": 2,
       "projection_targets": [
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "수면 위 계기판은 정상인데 발밑의 관로에서는 무엇이 움직이는지 알 수 없다는 불안이다.\n\n탁한 물에 사라지는 구조줄 검사 화면의 끊긴 거리값 사람이 들어간 뒤에도 닫히는 차수문에서 출발한다.\n\n물속 점검을 기계에 맡긴 사람이 그 판정 근거를 다시 읽을 수 없을 때 구조와 격리의 경계가 무너진다.\n\n심층삼엽군의 봉인 수조와 사고 경위는 모두 창작이며 실재 시설의 내부 구조나 운영 주체의 과실을 재현하지 않는다.",
-      "fictional_origin": "붕괴 이전 수문·관로·하수 심층 검사 및 침수 구조 플랫폼은 고대 해양 생물의 형태를 빌려 세 기체를 묶었다.\n\n삼엽충형 복부 주행 정찰기는 관 바닥을 훑었고, 암모나이트형 부이·가압 챔버는 구조 대기실과 음향 기준점을 겸했으며 실러캔스형 심층 잠항 순찰기는 침수 공동구를 왕복했다.\n\n생물 조직이 자라는 종이 아니라 관절과 부력실로 몸짓을 구현한 생물모방 로봇 계보다.\n\n붕괴 때 상위 작업망과 정비 도면의 대응표가 끊기자 수문국 수문국 수문 갤러리, 뚝섬 연합 명부교회 펌프 관로 한강 하적 침전 구역의 정비 받침에서 장기 휴면했다.\n\n이후 펌프 재통전과 수위 상승이 같은 점검 주기에 겹치며 봉인된 충전 접점이 살아났다.\n\n깨어난 기체는 새 구조 요청 대신 마지막 침수 판정표를 읽는다.\n\n남은 동작 기록에는 생존자 운반과 이물질 제거가 같은 입구 좌표를 쓰지만, 원래 어떤 조건으로 둘을 나눴는지는 해독되지 않았다.\n\n이 읽을 수 없는 설계 의도가 로스트 기술의 핵심이며, 이를 악의나 완전한 인격의 증거로 단정하지 않는다.",
+      "fictional_origin": "붕괴 이전 수문·관로·하수 심층 검사 및 침수 구조 플랫폼은 고대 해양 생물의 형태를 빌려 세 기체를 묶었다.\n\n삼엽충형 복부 주행 정찰기는 관 바닥을 훑었고, 암모나이트형 부이·가압 챔버는 구조 대기실과 음향 기준점을 겸했으며 실러캔스형 심층 잠항 순찰기는 침수 공동구를 왕복했다.\n\n생물 조직이 자라는 종이 아니라 관절과 부력실로 몸짓을 구현한 생물모방 로봇 계보다.\n\n붕괴 때 상위 작업망과 정비 도면의 대응표가 끊기자 수문국 수문 갤러리, 뚝섬 연합 명부교회 펌프 관로 한강 하적 침전 구역의 정비 받침에서 장기 휴면했다.\n\n이후 펌프 재통전과 수위 상승이 같은 점검 주기에 겹치며 봉인된 충전 접점이 살아났다.\n\n깨어난 기체는 새 구조 요청 대신 마지막 침수 판정표를 읽는다.\n\n남은 동작 기록에는 생존자 운반과 이물질 제거가 같은 입구 좌표를 쓰지만, 원래 어떤 조건으로 둘을 나눴는지는 해독되지 않았다.\n\n이 읽을 수 없는 설계 의도가 로스트 기술의 핵심이며, 이를 악의나 완전한 인격의 증거로 단정하지 않는다.",
       "territory_migration": "수문국 수문 갤러리의 물찬 하부 받침과 뚝섬 연합 펌프 관로의 점검 수조가 양쪽 정비 거점이다.\n\n두 거점 사이를 하나의 전용 배관으로 잇지 않으며 기체는 실제로 열린 배수구와 한강 하적 침전 구역을 거쳐 이동한다.\n\n수위가 낮아지면 삼엽충형만 젖은 관저에 남고 큰 부이와 잠항기는 깊은 침전 홈으로 물러난다.\n\nXT02 서해곡창전구의 조위 변동 때문에 수문국 배수 일정이 바뀌면 이전에 마른 것으로 기록된 가지관까지 검사 대상이 된다.\n\n이는 물리적 수위 변화이지 외부 전구가 보내는 공격 명령이 아니다.\n\n하수 구획과 원수 구획 사이의 격벽은 스스로 뚫지 못하며, 정수된 물의 공급관에 무조건 진입하지 않는다.\n\n막힌 구간은 회항 지점으로 남고 육상 추격은 삼엽충형의 짧은 갤러리 횡단에 한정된다.",
       "economy": "에너지는 살아 있는 정비 받침의 유선 충전과 회수된 밀폐 축전통에서 얻는다.\n\n흐르는 물 자체를 무한 동력으로 삼지 않는다.\n\n한 출항의 축전 삼십 퍼센트는 복귀 몫으로 묶고 그 아래에서는 검사보다 도킹을 우선한다.\n\n필요한 물자는 관절 패킹 희생 양극 압력막 여과망과 가압 챔버의 호흡 기체통이다.\n\n물은 외벽 냉각에 쓰지만 침전물이 열교환 틈을 막으면 오히려 출항을 줄인다.\n\n유기물은 먹이가 아니라 제거 대상이며 세척수는 회수조에서 따로 받아야 한다.\n\nHP01 영등포수문가의 펌프 정비반과 같은 패킹 재고를 쓰므로 군집을 살릴수록 시민 펌프 수리 순번이 늦어진다.\n\n수중에서 새 압력 선체를 만들거나 공기통을 채울 설비는 없다.\n\n손상 기체의 양극과 발판만 옮겨 달 수 있고, 압력 시험을 통과하지 못한 선체는 부품 받침으로 남는다.",
       "lifecycle": "생애는 출현, 확산 정체 협상가능 와해의 다섯 단계다.\n\n출현은 충전 접점 복구와 수위 경보가 겹쳐 휴면 검사가 시작되는 때다.\n\n확산에서는 암모나이트형의 기준음이 닿는 다음 점검 수조가 순찰표에 붙는다.\n\n정체는 패킹 누수나 양극 소진으로 왕복 깊이를 유지하지 못하는 상태다.\n\n협상가능 단계는 사람이 실측 압력과 도킹 안전값을 함께 제시해 고착된 위험 표를 보류시키는 때다.\n\n와해는 기준 부이의 작업표를 분리하고 각 기체를 무부하 받침에 봉인해 끝낸다.\n\n새 개체 생산은 불가능하고 수리된 휴면 기체가 돌아오는 것만 수적 회복으로 센다.\n\n환경 적응은 진흙이 두꺼우면 복부 발판 간격을 벌리고, 관이 좁으면 지느러미를 접. 반사가 심하면 음향 출력과 이동 속도를 낮추는 기존 조절 범위 안에서 일어난다.\n\n막힌 관을 통과할 새 기관이나 새 설계 규칙은 얻지 못한다.\n\n정비 중에도 원래의 구조 판정 조건을 전부 되찾지는 못한다.",
@@ -14429,7 +14361,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "G27-SC2",
         "G27-SC3"
       ],
-      "dossier_prose": "물에 잠긴 계단 끝에서 열네 줄의 발판 자국이 위로 돌아 나온다.\n\n수문국 수문국의 수문 갤러리는 배수가 끝났다고 보고했지만 삼엽충형 정찰기는 아직 바닥을 더듬는다.\n\n심층삼엽군은 붕괴 이전 수문·관로·하수의 심층 검사와 침수 구조를 맡았던 생물모방 로봇 계보다.\n\n납작한 복부 주행체, 나선 껍질의 부이·가압 챔버 살붙은 지느러미처럼 구동 덮개를 편 실러캔스형 잠항체가 서로 다른 깊이를 맡는다.\n\n고대 생물의 외형은 설계 흔적이지 살아 있는 원종이 돌아왔다는 증거가 아니다.\n\n이들은 수문국의 받침, 뚝섬 연합 명부교회의 펌프 관로 한강 하적 침전 구역에서 오래 잠들었다.\n\n재통전된 받침과 높아진 수위가 휴면 검사를 깨웠으나 새 작업표를 쓰던 상위 망은 돌아오지 않았다.\n\n동작 기록에 남은 구조 포대의 입구와 이물질 반출구는 같은 좌표다.\n\n어느 조건이 사람을 구하고 어느 조건이 가두는지 설명하던 대응표가 없다.\n\nHP01 영등포수문가는 이를 로스트 기술이라 적고, F11의 비교 기록에도 판독 불가인 조건은 빈칸으로 남긴다.\n\n설명할 수 없는 칸을 선의나 적의로 채우지 않는다.\n\n삼엽충형은 관저의 접촉압을 읽고 암모나이트형은 구획의 수압 기준을 붙든다.\n\n실러캔스형은 음향 왕복 시간으로 긴 침수 회랑을 훑는다.\n\n기포가 많으면 잠수자의 거리가 사라지고 철제 굴곡에서는 하나의 들것이 여러 장애물로 들린다.\n\n이들은 사람의 신원을 알아보거나 물이 통하지 않는 벽 너머를 보지 못한다.\n\n기준 부이가 침묵하면 잠항체는 귀환하며, 바닥 정찰기만 짧은 갤러리 구간을 기어서 옮겨 간다.\n\n수문국과 뚝섬 연합 사이에는 이들을 위한 숨은 직통 관로가 없고 실제로 열린 배수구와 강바닥만 이동로가 된다.\n\nXT02 서해곡창전구의 조위 변화는 그 이동로의 깊이를 바꿀 뿐 군집에 명령을 내리지 않는다.\n\n각 출항은 남은 축전의 삼십 퍼센트를 복귀 몫으로 남긴다.\n\n정비 받침의 유선 전력과 밀폐 축전통이 없으면 물속에서 멈춘다.\n\n패킹, 희생 양극 압력막과 세척수는 시민 펌프 정비와 같은 장부에서 빠져나간다.\n\n압력 선체를 새로 만들 능력은 없으며, 회수한 발판을 붙여도 누설 시험을 못 넘긴 기체는 물에 넣지 못한다.\n\n환경 적응 또한 발판 간격, 지느러미 접힘 음향 출력의 낡은 조절 범위를 넘지 않는다.\n\n진흙 속에서 살아남았다는 사실은 설계 의도까지 되찾았다는 뜻이 아니다.\n\n출현은 재통전과 수위 경보, 확산은 다음 기준 수조의 연결 정체는 패킹 누수로 구별한다.\n\n사람이 실측 압력과 도킹 안전값을 제시하면 협상가능 단계가 열리고, 기준 작업표를 분리한 뒤 받침에 봉인하면 와해로 기록한다.\n\n이는 번식이 아니라 남은 기계의 출항과 정지다.\n\nHP01 당직은 각자의 키를 보관하고 F11은 연결된 현장 케이블에서만 값을 대조한다.\n\n통행 승인은 시민 참관 아래 사람이 맡는고 물 아래 측정 능력을 인정하는 것과 급수권을 넘기는 것은 다르다.\n\n### G27-SC1 · 바닥에 붙은 구조줄\n\n수문국 점검 수조에서 삼엽충형이 구조줄을 침전 이물질로 표시하고 배수구 쪽으로 당긴다.\n\n줄 끝에는 침수 갤러리에 남은 점검자의 들것이 연결되어 있다.\n\n현장 인원은 발판 자국과 F11의 접촉 기록을 비교해 살아 있는 하중을 지우는 낡은 시험판을 찾는다.\n\n분리형 시험판을 다른 관저에 놓아 기체를 돌리거나 해당 받침의 구동 전원만 끊을 수 있다.\n\n전자를 택하면 구조는 계속되지만 기체가 다음 순찰에서 같은 판정을 되풀이할 수 있다.\n\n후자는 즉시 줄을 풀되 사람이 직접 바닥 균열을 검사해야 한다.\n\nHP01은 어느 시험판을 제거했는지 공개 장부에 남긴다.\n\n### G27-SC2 · 껍질 안의 빈 숨통\n\n뚝섬 연합 펌프 분기에 붙은 암모나이트형이 바깥과 다른 압력을 표시하며 구조 챔버 문을 닫는다.\n\n안쪽은 비어 있지만 다음 구조대를 받을 호흡 기체통이 모자라고, 같은 날 시민 펌프에도 새 패킹이 필요하다.\n\n현장 인원은 기계식 압력계로 막힌 감지구를 입증하고 HP01과 충전 창, 패킹 한 조 사람 통행 순서를 거래한다.\n\n챔버를 수리하면 침수 구조 대기실을 얻는 대신 펌프 한 대의 정비가 늦어진다.\n\n부이 기능만 남기면 압력 경보는 살릴 수 있으나 구조대가 쉴 공기방은 얻지 못한다.\n\n내부 누설 시험을 생략한 채 구조실로 개방하는 지름길은 별도의 인명 위험을 남긴다.\n\n### G27-SC3 · 귀환선 밖의 두 사람\n\nXT02 조위 변화로 수문국 배수 시각이 바뀌자 실러캔스형은 옛 귀환선을 비우려고 구조 회랑을 왕복한다.\n\n기준 부이는 연결된 점검문을 차례로 닫고 그 사이에 운반 인부 둘이 남는다.\n\n현장 인원은 비어 있는 받침에 귀환 유도음을 옮겨 잠항기를 돌리거나, 부이의 작업표를 분리하. 각 문을 수동으로 유지할 수 있다.\n\n유도음을 옮기면 인부는 빠져나오지만 다른 강바닥 순찰이 멎고, 수동 유지는 시민 당직이 다음 조위까지 그 자리를 지켜야 한다.\n\n전면 배수는 회랑을 드러내는 대신 임시 수상 운반을 끊는다.\n\n구조 후에는 문을 연 순서와 남겨 둔 축전을 수문국과 뚝섬 연합 양쪽 장부에 적고 두 구역의 키를 다시 나눠 보관한다.",
+      "dossier_prose": "물에 잠긴 계단 끝에서 열네 줄의 발판 자국이 위로 돌아 나온다.\n\n수문국의 수문 갤러리는 배수가 끝났다고 보고했지만 삼엽충형 정찰기는 아직 바닥을 더듬는다.\n\n심층삼엽군은 붕괴 이전 수문·관로·하수의 심층 검사와 침수 구조를 맡았던 생물모방 로봇 계보다.\n\n납작한 복부 주행체, 나선 껍질의 부이·가압 챔버 살붙은 지느러미처럼 구동 덮개를 편 실러캔스형 잠항체가 서로 다른 깊이를 맡는다.\n\n고대 생물의 외형은 설계 흔적이지 살아 있는 원종이 돌아왔다는 증거가 아니다.\n\n이들은 수문국의 받침, 뚝섬 연합 명부교회의 펌프 관로 한강 하적 침전 구역에서 오래 잠들었다.\n\n재통전된 받침과 높아진 수위가 휴면 검사를 깨웠으나 새 작업표를 쓰던 상위 망은 돌아오지 않았다.\n\n동작 기록에 남은 구조 포대의 입구와 이물질 반출구는 같은 좌표다.\n\n어느 조건이 사람을 구하고 어느 조건이 가두는지 설명하던 대응표가 없다.\n\nHP01 영등포수문가는 이를 로스트 기술이라 적고, F11의 비교 기록에도 판독 불가인 조건은 빈칸으로 남긴다.\n\n설명할 수 없는 칸을 선의나 적의로 채우지 않는다.\n\n삼엽충형은 관저의 접촉압을 읽고 암모나이트형은 구획의 수압 기준을 붙든다.\n\n실러캔스형은 음향 왕복 시간으로 긴 침수 회랑을 훑는다.\n\n기포가 많으면 잠수자의 거리가 사라지고 철제 굴곡에서는 하나의 들것이 여러 장애물로 들린다.\n\n이들은 사람의 신원을 알아보거나 물이 통하지 않는 벽 너머를 보지 못한다.\n\n기준 부이가 침묵하면 잠항체는 귀환하며, 바닥 정찰기만 짧은 갤러리 구간을 기어서 옮겨 간다.\n\n수문국과 뚝섬 연합 사이에는 이들을 위한 숨은 직통 관로가 없고 실제로 열린 배수구와 강바닥만 이동로가 된다.\n\nXT02 서해곡창전구의 조위 변화는 그 이동로의 깊이를 바꿀 뿐 군집에 명령을 내리지 않는다.\n\n각 출항은 남은 축전의 삼십 퍼센트를 복귀 몫으로 남긴다.\n\n정비 받침의 유선 전력과 밀폐 축전통이 없으면 물속에서 멈춘다.\n\n패킹, 희생 양극 압력막과 세척수는 시민 펌프 정비와 같은 장부에서 빠져나간다.\n\n압력 선체를 새로 만들 능력은 없으며, 회수한 발판을 붙여도 누설 시험을 못 넘긴 기체는 물에 넣지 못한다.\n\n환경 적응 또한 발판 간격, 지느러미 접힘 음향 출력의 낡은 조절 범위를 넘지 않는다.\n\n진흙 속에서 살아남았다는 사실은 설계 의도까지 되찾았다는 뜻이 아니다.\n\n출현은 재통전과 수위 경보, 확산은 다음 기준 수조의 연결 정체는 패킹 누수로 구별한다.\n\n사람이 실측 압력과 도킹 안전값을 제시하면 협상가능 단계가 열리고, 기준 작업표를 분리한 뒤 받침에 봉인하면 와해로 기록한다.\n\n이는 번식이 아니라 남은 기계의 출항과 정지다.\n\nHP01 당직은 각자의 키를 보관하고 F11은 연결된 현장 케이블에서만 값을 대조한다.\n\n통행 승인은 시민 참관 아래 사람이 맡는고 물 아래 측정 능력을 인정하는 것과 급수권을 넘기는 것은 다르다.\n\n### G27-SC1 · 바닥에 붙은 구조줄\n\n수문국 점검 수조에서 삼엽충형이 구조줄을 침전 이물질로 표시하고 배수구 쪽으로 당긴다.\n\n줄 끝에는 침수 갤러리에 남은 점검자의 들것이 연결되어 있다.\n\n현장 인원은 발판 자국과 F11의 접촉 기록을 비교해 살아 있는 하중을 지우는 낡은 시험판을 찾는다.\n\n분리형 시험판을 다른 관저에 놓아 기체를 돌리거나 해당 받침의 구동 전원만 끊을 수 있다.\n\n전자를 택하면 구조는 계속되지만 기체가 다음 순찰에서 같은 판정을 되풀이할 수 있다.\n\n후자는 즉시 줄을 풀되 사람이 직접 바닥 균열을 검사해야 한다.\n\nHP01은 어느 시험판을 제거했는지 공개 장부에 남긴다.\n\n### G27-SC2 · 껍질 안의 빈 숨통\n\n뚝섬 연합 펌프 분기에 붙은 암모나이트형이 바깥과 다른 압력을 표시하며 구조 챔버 문을 닫는다.\n\n안쪽은 비어 있지만 다음 구조대를 받을 호흡 기체통이 모자라고, 같은 날 시민 펌프에도 새 패킹이 필요하다.\n\n현장 인원은 기계식 압력계로 막힌 감지구를 입증하고 HP01과 충전 창, 패킹 한 조 사람 통행 순서를 거래한다.\n\n챔버를 수리하면 침수 구조 대기실을 얻는 대신 펌프 한 대의 정비가 늦어진다.\n\n부이 기능만 남기면 압력 경보는 살릴 수 있으나 구조대가 쉴 공기방은 얻지 못한다.\n\n내부 누설 시험을 생략한 채 구조실로 개방하는 지름길은 별도의 인명 위험을 남긴다.\n\n### G27-SC3 · 귀환선 밖의 두 사람\n\nXT02 조위 변화로 수문국 배수 시각이 바뀌자 실러캔스형은 옛 귀환선을 비우려고 구조 회랑을 왕복한다.\n\n기준 부이는 연결된 점검문을 차례로 닫고 그 사이에 운반 인부 둘이 남는다.\n\n현장 인원은 비어 있는 받침에 귀환 유도음을 옮겨 잠항기를 돌리거나, 부이의 작업표를 분리하. 각 문을 수동으로 유지할 수 있다.\n\n유도음을 옮기면 인부는 빠져나오지만 다른 강바닥 순찰이 멎고, 수동 유지는 시민 당직이 다음 조위까지 그 자리를 지켜야 한다.\n\n전면 배수는 회랑을 드러내는 대신 임시 수상 운반을 끊는다.\n\n구조 후에는 문을 연 순서와 남겨 둔 축전을 수문국과 뚝섬 연합 양쪽 장부에 적고 두 구역의 키를 다시 나눠 보관한다.",
       "prose": "복부 발판이 진흙을 걷어 내자 끊긴 구조줄의 고리가 드러난다.\n\nHP01 당직은 줄을 당기지 않고 먼저 사람이 있는 쪽을 확인한다.\n\n물 건너 암모나이트형 부이는 텅 빈 챔버의 압력을 계속 올리려 하지만 기체통이 비어 더 움직이지 못한다.\n\nF11의 현장 기록에는 압력 차이와 읽지 못한 조건 번호가 나란히 남는다.\n\n실러캔스형이 낮은 기준음을 따라 침전 홈으로 돌아가면 그제야 갤러리 통행 창을 연다.\n\n누군가는 세 기체의 축전통을 팔아 펌프를 고치자고 하고, 다른 이는 저 침수 틈을 누가 다시 검사하느냐고 묻는다.\n\n당직은 패킹 한 조를 작업대에 놓고 구조 챔버의 누설 시험부터 시작한다.\n\n서해곡창전구의 새 조위표가 도착해도 두 수문의 열쇠는 한 사람에게 모으지 않는다.\n\n오늘 열린 길이 내일도 안전하다는 보증은 없으므로 다음 점검자의 이름을 빈칸에 적는다."
     }
   ],
@@ -14451,7 +14383,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14472,7 +14404,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14493,7 +14425,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14514,7 +14446,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14535,7 +14467,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14556,7 +14488,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14577,7 +14509,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14598,7 +14530,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14619,7 +14551,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14640,7 +14572,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14661,7 +14593,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14682,7 +14614,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14703,7 +14635,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14724,7 +14656,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14745,7 +14677,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14766,7 +14698,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14787,7 +14719,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14808,7 +14740,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14829,7 +14761,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14850,7 +14782,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14871,7 +14803,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14892,7 +14824,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14913,7 +14845,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14934,7 +14866,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14955,7 +14887,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14976,7 +14908,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -14997,7 +14929,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15018,7 +14950,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15039,7 +14971,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15060,7 +14992,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15081,7 +15013,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15102,7 +15034,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15123,7 +15055,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15144,7 +15076,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15165,7 +15097,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15186,7 +15118,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15207,7 +15139,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15228,7 +15160,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15243,7 +15175,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15270,7 +15202,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15297,7 +15229,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     },
@@ -15324,7 +15256,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "projection_targets": []
     }
@@ -15356,7 +15288,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15385,7 +15317,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15414,7 +15346,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15443,7 +15375,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15472,7 +15404,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15501,7 +15433,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15530,7 +15462,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15559,7 +15491,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15588,7 +15520,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15617,7 +15549,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15646,7 +15578,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15675,7 +15607,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15704,7 +15636,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15733,7 +15665,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15762,7 +15694,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15791,7 +15723,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15820,7 +15752,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15849,7 +15781,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15878,7 +15810,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15907,7 +15839,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15936,7 +15868,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15965,7 +15897,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -15994,7 +15926,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16023,7 +15955,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16052,7 +15984,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16081,7 +16013,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16110,7 +16042,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16139,7 +16071,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16168,7 +16100,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16197,7 +16129,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16226,7 +16158,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16255,7 +16187,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16284,7 +16216,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16313,7 +16245,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16342,7 +16274,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16371,7 +16303,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16400,7 +16332,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16429,7 +16361,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16458,7 +16390,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16487,7 +16419,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16516,7 +16448,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16545,7 +16477,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16574,7 +16506,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16603,7 +16535,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16632,7 +16564,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16661,7 +16593,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16690,7 +16622,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16719,7 +16651,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16748,7 +16680,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16777,7 +16709,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16806,7 +16738,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16835,7 +16767,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16864,7 +16796,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16893,7 +16825,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16922,7 +16854,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16951,7 +16883,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -16980,7 +16912,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17009,7 +16941,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17038,7 +16970,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17067,7 +16999,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17096,7 +17028,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17125,7 +17057,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17154,7 +17086,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17183,7 +17115,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17214,7 +17146,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17246,7 +17178,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     },
     {
@@ -17278,7 +17210,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ]
     }
   ],
@@ -17292,7 +17224,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "from": "HC02",
       "kind": "operates_in",
-      "to": "S02",
+      "to": "S01",
       "reason": "가문-국가 운영 연결"
     },
     {
@@ -17310,73 +17242,73 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "from": "HC05",
       "kind": "operates_in",
-      "to": "S05",
+      "to": "S10",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC06",
       "kind": "operates_in",
-      "to": "S06",
+      "to": "S08",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC07",
       "kind": "operates_in",
-      "to": "S07",
+      "to": "S02",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC08",
       "kind": "operates_in",
-      "to": "S08",
+      "to": "S11",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC09",
       "kind": "operates_in",
-      "to": "S09",
+      "to": "S06",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC10",
       "kind": "operates_in",
-      "to": "S10",
+      "to": "S03",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC11",
       "kind": "operates_in",
-      "to": "S11",
+      "to": "S07",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC12",
       "kind": "operates_in",
-      "to": "S12",
+      "to": "S02",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC13",
       "kind": "operates_in",
-      "to": "S13",
+      "to": "S06",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HC14",
       "kind": "operates_in",
-      "to": "S14",
+      "to": "S01",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HP01",
       "kind": "operates_in",
-      "to": "S15",
+      "to": "S01",
       "reason": "가문-국가 운영 연결"
     },
     {
       "from": "HP02",
       "kind": "operates_in",
-      "to": "S16",
+      "to": "S07",
       "reason": "가문-국가 운영 연결"
     },
     {
@@ -17790,7 +17722,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
               "S01"
             ]
           },
-          "prose": "### 역할·신체\n수문국 수문국 바깥 폐기물 경사지에 진흙과 철근이 한 몸으로 굳은 벽이 선다. 수문이 열릴 때마다 벽이 물을 마셔 내부에 부패 유기물과 염분 껍질을 쌓고, 접근하는 발자국을 진흙으로 붙잡아 저장고이자 포획 함정이 된다.\n\n### 기원\nG01-SC1의 첫 발굽이 집하장에 찍힌 뒤, 모돈 가족들이 수문 에이프런에 진흙을 반복해 붙이면서 벽의 뼈대가 자랐다. 홍수가 남긴 철근과 여의도전산가 냉각 폐기물의 소금기가 진흙에 스며 벽은 무너지지 않는 저장 기관이 되었다.\n\n### 서식\n범람 구역의 가장 낮은 경사지에 뿌리를 박고 개폐 주기와 같은 호흡으로 물을 들이마신다. 건기에는 내부 염분 층을 핥아 버티고, 장마 주간에는 벽면이 한 뼘씩 바깥으로 밀려 배수로를 좁힌다.\n\n### 필요·경제\n가족군이 모아 온 음식물과 회수조에서 흘러나온 염분을 벽 안에 농축한다. 이 농축이 끊기면 벽은 물을 담지 못해 하류 펌프가 같은 밤에 과열되고, 과잉 농축은 골목 쪽 먹이 압박을 키운다.\n\n### 생애·정비\n갈라진 칸은 성체들이 타액과 진흙으로 메우며, 한 장마에 한 겹의 새 층만 덧붙인다. 덧붙임에 동원된 노동만큼 그날의 정찰과 목욕이 줄어 위계의 중심이 벽으로 모인다.\n\n### 행동·위계\n벽이 내는 둔탁한 떨림이 봉인 시각을 가족군에게 알린다. 모돈은 그 떨림이 잦아든 뒤에야 이동을 시작하고, 단독 수컷은 떨림을 무시하고 같은 경사지를 스쳐 지나간다.\n\n### 단계적 위협\n배수구 하나가 진흙으로 막히면 펌프 소음이 먼저 바뀐다. 물이 빠지는 낮에는 벽 일부가 무너지듯 철편을 흘려 점검 통로를 닫고, 수위가 경고선을 넘긴 밤에는 벽의 떨림이 가족군을 계단 쪽으로 끌어 올린다.\n\n### 전투·대응\n수문 바깥 배수구가 진흙으로 막힌 채 펌프 네 대가 같은 개폐 주기 안에 과열된다. 수위가 한 뼘 내려간 틈에 당직이 벽체 미세 균열로 용매를 밀어 넣지 못하면 벽은 한 층을 더 키워 하류 작업장을 같은 밤에 잠근다. 균열이 열리면 틈에서 녹슨 냄새의 김이 새고 둔탁한 떨림이 잦아든다.\n\n### 협상·도덕 선택\n당직 한 명이 밤 근무 중에 벽체 한 칸을 잘라 통수를 열 권한만 갖는다. G01-SC2의 염분 웅덩이 회수가 앞당겨진 주에는 그 한 칸이 저장고를 터뜨려 가족군을 반지하 골목으로 밀어 낸다. 칸을 그대로 두면 펌프장은 버티지만 봉인 시각마다 벽이 물을 마셔 배급 호송이 길어진다. 한번 가른 진흙은 같은 장마에 붙이지 못한다.\n\n### 시나리오 연결\nG01-SC1은 벽의 첫 진흙 층이 집하장 발굽과 같은 밤에 붙었음을 기록한다. G01-SC2와 G01-SC3에서는 염분 저장과 수문 계단 점유가 이 벽을 무대로 겹친다."
+          "prose": "### 역할·신체\n수문국 바깥 폐기물 경사지에 진흙과 철근이 한 몸으로 굳은 벽이 선다. 수문이 열릴 때마다 벽이 물을 마셔 내부에 부패 유기물과 염분 껍질을 쌓고, 접근하는 발자국을 진흙으로 붙잡아 저장고이자 포획 함정이 된다.\n\n### 기원\nG01-SC1의 첫 발굽이 집하장에 찍힌 뒤, 모돈 가족들이 수문 에이프런에 진흙을 반복해 붙이면서 벽의 뼈대가 자랐다. 홍수가 남긴 철근과 여의도전산가 냉각 폐기물의 소금기가 진흙에 스며 벽은 무너지지 않는 저장 기관이 되었다.\n\n### 서식\n범람 구역의 가장 낮은 경사지에 뿌리를 박고 개폐 주기와 같은 호흡으로 물을 들이마신다. 건기에는 내부 염분 층을 핥아 버티고, 장마 주간에는 벽면이 한 뼘씩 바깥으로 밀려 배수로를 좁힌다.\n\n### 필요·경제\n가족군이 모아 온 음식물과 회수조에서 흘러나온 염분을 벽 안에 농축한다. 이 농축이 끊기면 벽은 물을 담지 못해 하류 펌프가 같은 밤에 과열되고, 과잉 농축은 골목 쪽 먹이 압박을 키운다.\n\n### 생애·정비\n갈라진 칸은 성체들이 타액과 진흙으로 메우며, 한 장마에 한 겹의 새 층만 덧붙인다. 덧붙임에 동원된 노동만큼 그날의 정찰과 목욕이 줄어 위계의 중심이 벽으로 모인다.\n\n### 행동·위계\n벽이 내는 둔탁한 떨림이 봉인 시각을 가족군에게 알린다. 모돈은 그 떨림이 잦아든 뒤에야 이동을 시작하고, 단독 수컷은 떨림을 무시하고 같은 경사지를 스쳐 지나간다.\n\n### 단계적 위협\n배수구 하나가 진흙으로 막히면 펌프 소음이 먼저 바뀐다. 물이 빠지는 낮에는 벽 일부가 무너지듯 철편을 흘려 점검 통로를 닫고, 수위가 경고선을 넘긴 밤에는 벽의 떨림이 가족군을 계단 쪽으로 끌어 올린다.\n\n### 전투·대응\n수문 바깥 배수구가 진흙으로 막힌 채 펌프 네 대가 같은 개폐 주기 안에 과열된다. 수위가 한 뼘 내려간 틈에 당직이 벽체 미세 균열로 용매를 밀어 넣지 못하면 벽은 한 층을 더 키워 하류 작업장을 같은 밤에 잠근다. 균열이 열리면 틈에서 녹슨 냄새의 김이 새고 둔탁한 떨림이 잦아든다.\n\n### 협상·도덕 선택\n당직 한 명이 밤 근무 중에 벽체 한 칸을 잘라 통수를 열 권한만 갖는다. G01-SC2의 염분 웅덩이 회수가 앞당겨진 주에는 그 한 칸이 저장고를 터뜨려 가족군을 반지하 골목으로 밀어 낸다. 칸을 그대로 두면 펌프장은 버티지만 봉인 시각마다 벽이 물을 마셔 배급 호송이 길어진다. 한번 가른 진흙은 같은 장마에 붙이지 못한다.\n\n### 시나리오 연결\nG01-SC1은 벽의 첫 진흙 층이 집하장 발굽과 같은 밤에 붙었음을 기록한다. G01-SC2와 G01-SC3에서는 염분 저장과 수문 계단 점유가 이 벽을 무대로 겹친다."
         },
         {
           "id": "G01E12",
@@ -23054,7 +22986,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "source_kind": "original-fiction",
       "source_anchors": [
         "git:1928b0dd00668b0320f3fd049f5c2e166d355ec0:docs/game-logic/Monster-Batch-M020.md",
-        "LORE/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "entries": [
         {
@@ -23264,7 +23196,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "LORE/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "entries": [
         {
@@ -27925,7 +27857,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "entries": [
         {
@@ -28255,7 +28187,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "entries": [
         {
@@ -28585,7 +28517,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "docs/game-logic/World-Narrative-Atlas.md"
+        "lore/World-Narrative-Atlas.md"
       ],
       "entries": [
         {
