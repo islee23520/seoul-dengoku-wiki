@@ -10,9 +10,9 @@ function linkTarget(run, fromDir, targetFile) {
   const { domain, slug, anchor } = run.link
   if (domain === 'gdd') {
     const [section, name] = slug.split('/')
-    const route = ['rules', 'references', 'architecture'].includes(section) ? `/rules/${name}`
-      : section === 'art' ? `/design/${name}`
-      : !name ? `/design/${section}` : null
+    // GDD pages are published by GDD/viewer under /gdd/<category>/<slug>.
+    const route = ['rules', 'references', 'architecture', 'art'].includes(section) ? `/gdd/${section}/${name}`
+      : !name ? `/gdd/design/${section}` : null
     return `${route ?? `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/${section}/${name.toLowerCase()}.json`}${anchor ? `#${anchor}` : ''}`
   }
   const path = posix.relative(fromDir, targetFile(domain, slug))

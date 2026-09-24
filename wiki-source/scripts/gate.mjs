@@ -11,7 +11,9 @@ const referenceDir = join(repoRoot, 'RESEARCH', 'canon-reference')
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
 export const EXPECTED_REFERENCE_EXCLUSIONS = 20
 const EXCLUDED_NAMES = ['_Sidebar.md', '_TEMPLATE.md']
-const SECTIONS = ['design', 'world', 'rules']
+const SECTIONS = ['world']
+// Sibling hub pages served outside this VitePress dist (GDD/viewer publishes /gdd/).
+const HUB_PREFIXES = ['/gdd/']
 
 function listFiles(dir) {
   if (!existsSync(dir)) return []
@@ -153,6 +155,7 @@ function main() {
     }
     for (const href of collectAHrefs(html)) {
       if (!href.startsWith('/') || href.startsWith('//')) continue
+      if (HUB_PREFIXES.some((prefix) => href.startsWith(prefix))) continue
       if (resolveInternalHref(href) === null) {
         failures.push(`FAIL broken-link: ${rel} -> ${href}`)
       }

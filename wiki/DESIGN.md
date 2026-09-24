@@ -51,7 +51,7 @@
 ### `ArticlePage`
 - 구조: breadcrumbs → 문서 헤더/정본 배지 → Markdown 본문 + sticky 목차.
 - 상태: loading, loaded, missing redirect.
-- 콘텐츠: `world/rules/design` 정본 232개를 같은 React 셸에서 렌더한다.
+- 콘텐츠: `world` 정본을 같은 React 셸에서 렌더한다. 게임설계·규칙 문서는 GDD 저장소의 `viewer/`가 `/gdd/`로 게시한다.
 
 ### `SortableTable`
 - 구조: 가로 스크롤 래퍼 + 정렬 가능한 표.
@@ -69,7 +69,7 @@
 
 - 전환은 색·배경 150ms ease-out만 사용한다. 레이아웃 속성 애니메이션은 쓰지 않는다.
 - `prefers-reduced-motion`에서는 모든 전환을 제거한다.
-- 링크는 URL을 바꾸되 `world/rules/design` 내부에서는 React 셸을 유지한다.
+- 링크는 URL을 바꾸되 `world` 내부에서는 React 셸을 유지한다. `/gdd/` 링크는 GDD 뷰어로 이동한다.
 
 ## 7. 깊이와 면
 

@@ -1,5 +1,0 @@
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": { "baseUrl": ".", "paths": { "@gdd/*": ["src-gdd/*"] }, "types": ["node", "vite/client"] },
-  "include": ["src-gdd"]
-}
