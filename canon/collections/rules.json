@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "domain": "rules",
+  "locale": "ko-KR",
+  "documents": [
+    {
+      "id": "doc.Campaign-Loop",
+      "path": "locales/ko-KR/rules/campaign-loop.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Campaign-Loop.md",
+        "lineStart": 1,
+        "lineEnd": 25,
+        "sha256": "9bcc3495f08d8ace424321323d8c157821da6ada5cb5ee3311811a09147bb765"
+      }
+    },
+    {
+      "id": "doc.Campaign-Progression",
+      "path": "locales/ko-KR/rules/campaign-progression.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Campaign-Progression.md",
+        "lineStart": 1,
+        "lineEnd": 77,
+        "sha256": "0c8f367a3f7bc0b0fab11bda30325811e680ec89731c7db035ef1d9cd4fe3e8c"
+      }
+    },
+    {
+      "id": "doc.Hero-Squads-and-Simultaneous-Turns",
+      "path": "locales/ko-KR/rules/hero-squads-and-simultaneous-turns.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Hero-Squads-and-Simultaneous-Turns.md",
+        "lineStart": 1,
+        "lineEnd": 105,
+        "sha256": "3bd57c0dbaee7da56e8bdbdf43889033a292d4874bbd9a747a771174c7d2d988"
+      }
+    },
+    {
+      "id": "doc.Realtime-Formation-Card-Battle",
+      "path": "locales/ko-KR/rules/realtime-formation-card-battle.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Realtime-Formation-Card-Battle.md",
+        "lineStart": 1,
+        "lineEnd": 70,
+        "sha256": "2c0404868aed070288ffbf83fe43f15ee069a52ada31d619cc89c178ca405733"
+      }
+    },
+    {
+      "id": "doc.Save-and-Determinism",
+      "path": "locales/ko-KR/rules/save-and-determinism.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Save-and-Determinism.md",
+        "lineStart": 1,
+        "lineEnd": 68,
+        "sha256": "937a3870f588439881d4fb1dfb49224383d193ab5f65e65d2c5a36e95a5dedb2"
+      }
+    },
+    {
+      "id": "doc.Strategy-Battle-Roundtrip",
+      "path": "locales/ko-KR/rules/strategy-battle-roundtrip.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Strategy-Battle-Roundtrip.md",
+        "lineStart": 1,
+        "lineEnd": 56,
+        "sha256": "17d868c23e78fbbb5cee4d7a7bc64ba7918f0e232b2352708ddd2596abf1d54b"
+      }
+    },
+    {
+      "id": "doc.Travel-and-Encounters",
+      "path": "locales/ko-KR/rules/travel-and-encounters.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Travel-and-Encounters.md",
+        "lineStart": 1,
+        "lineEnd": 33,
+        "sha256": "dff69b45ec5a37f916765f3b6fcbba1df4ea29a4cb674ec16473175ecc1a4640"
+      }
+    },
+    {
+      "id": "doc.Warfare-and-Sieges",
+      "path": "locales/ko-KR/rules/warfare-and-sieges.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "rules/Warfare-and-Sieges.md",
+        "lineStart": 1,
+        "lineEnd": 67,
+        "sha256": "0fc9a80a060eac1cd14f6f2f9c905a05b458becafec9154e62b9d40db8ef98d7"
+      }
+    }
+  ]
+}

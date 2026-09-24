@@ -49,8 +49,6 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
     selectedUnit: null,
     commandMode: null,
     preview: null,
-    paused: false,
-    pendingOrders: [],
     acceptedSequence: 0,
     routeBlocked: false,
     routeBeforeDialog: false,
@@ -372,19 +370,6 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
     one("#command-history").append(item);
   }
 
-  function renderPauseState() {
-    one("#battle-pause").setAttribute("aria-pressed", String(state.paused));
-    one("#battle-pause-label").textContent = state.paused ? "재개" : "일시정지";
-    one("#battlefield").classList.toggle("is-paused", state.paused);
-    one("#simulation-state").textContent = state.paused
-      ? `이 파티 전투 정지 · 재개 대기 ${state.pendingOrders.length}건`
-      : "시뮬레이션 진행 중";
-    const latest = state.pendingOrders.at(-1);
-    one("#pending-orders").textContent = latest
-      ? `재개 대기 ${state.pendingOrders.length}건 · 마지막 입력: ${unitData[latest.unitId].name} / ${latest.order}`
-      : "재개 대기 명령 없음";
-  }
-
   function acceptOrder(unitId, order) {
     const unit = unitData[unitId];
     unit.order = order;
@@ -395,37 +380,9 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
   function submitOrder(order) {
     if (!state.selectedUnit) return;
-    if (state.paused) {
-      state.pendingOrders.push({ unitId: state.selectedUnit, order });
-      resetPreview("일시정지 중 입력을 확정했다. 재개 뒤 다음 시뮬레이션 단계에서 입력 순서대로 현재 지시를 교체한다.");
-      renderSelection();
-      renderPauseState();
-      return;
-    }
     acceptOrder(state.selectedUnit, order);
     resetPreview("명령이 수락되어 현재 지시를 교체했다.");
     renderSelection();
-  }
-
-  function resumeBattle() {
-    state.paused = false;
-    const pending = state.pendingOrders.splice(0);
-    pending.forEach(({ unitId, order }) => acceptOrder(unitId, order));
-    renderPauseState();
-    renderSelection();
-    if (pending.length > 0) {
-      one("#preview-copy").textContent = `재개 · 다음 시뮬레이션 단계에서 ${pending.length}건을 입력 순서대로 수락했다. 같은 부대의 뒤 명령이 앞 지시를 교체한다.`;
-    }
-  }
-
-  function togglePause() {
-    if (state.paused) {
-      resumeBattle();
-      return;
-    }
-    state.paused = true;
-    renderPauseState();
-    one("#preview-copy").textContent = "이 파티의 닫힌 전투만 일시정지했다. 캠페인 세계와 다른 파티는 멈추지 않으며 부대 명령은 계속 입력할 수 있다.";
   }
 
   function acceptDirectOrder(order) {
@@ -479,10 +436,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
     if (!state.receipt) {
       state.outcome = selected.value === "surrender" ? "surrender" : "withdrawal";
       state.resultId = "BTW-SW03-EXAMPLE-01";
-      state.pendingOrders.length = 0;
-      state.paused = false;
       resetPreview();
-      renderPauseState();
     }
     closeWithdrawal(!state.receipt);
     renderResult();
@@ -604,7 +558,6 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
   }));
 
   one("#selection-clear").addEventListener("click", clearSelection);
-  one("#battle-pause").addEventListener("click", togglePause);
   one("#order-confirm").addEventListener("click", confirmPreview);
   one("#order-cancel").addEventListener("click", cancelPreview);
   one("#withdraw-open").addEventListener("click", openWithdrawal);
@@ -629,7 +582,6 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
   });
 
   renderSelection();
-  renderPauseState();
   renderResult();
   bootStrategyMap();
   showScreen("campaign");

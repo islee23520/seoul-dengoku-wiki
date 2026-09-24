@@ -97,19 +97,18 @@
       </section>
 
       <section class="screen" id="screen-deployment" data-screen-panel="deployment" aria-labelledby="deployment-title" hidden>
-        <div class="screen-heading"><div><span class="kicker">CLOSED BATTLE SESSION / DEPLOYMENT</span><h1 id="deployment-title">전투 조건을 잠그고 부대를 배치한다</h1></div><p>질문 시간 만료 뒤 채택한 설계 기본값은 팬·오빗·줌이 가능한 3D 자유 지휘 카메라다. 탑다운 배치는 공간 문서용 도식이며 실제 3D 렌더가 아니다.</p></div>
+        <div class="screen-heading"><div><span class="kicker">CLOSED BATTLE SESSION / DEPLOYMENT</span><h1 id="deployment-title">전투 조건을 잠그고 부대를 배치한다</h1></div><p>전투 카메라는 소유자가 확정한 3D 자유 지휘 시점(팬·오빗·줌)이다. 탑다운 배치는 공간 문서용 도식이며 실제 3D 렌더가 아니다.</p></div>
         <div class="deployment-layout">
           <aside class="panel session-facts"><div class="panel-head"><div><span class="kicker">SESSION CONTEXT</span><h2>구로 연결로 차단전</h2></div></div><dl><div><dt>목표</dt><dd>차단막 뒤 통행로 확보</dd></div><div><dt>퇴로</dt><dd>남측 측선 · 현재 개방</dd></div><div><dt>보급</dt><dd>식량 3일 · 의약품 보통</dd></div><div><dt>증원</dt><dd>확정 없음</dd></div></dl><p class="boundary-note"><b>닫힌 세션</b> 전투 중 캠페인 세계를 다시 읽지 않는다. 결과는 종료 뒤 ResultId로 한 번만 반영한다.</p></aside>
-          <section class="battlefield deployment-field" aria-label="전투 배치 도식"><div class="field-note">탑다운 DOCUMENTATION SCHEMATIC · 목표 기본값: 3D 자유 지휘(팬·오빗·줌)</div><div class="terrain track-a"></div><div class="terrain track-b"></div><div class="terrain cover-a"></div><div class="terrain cover-b"></div><div class="zone enemy-zone">적 배치 예상</div><div class="zone ally-zone">아군 배치 가능</div><button type="button" class="unit-token ally hero u4" aria-label="영웅 지휘 인물 배치"><i>H</i><span>영웅</span></button><button type="button" class="unit-token ally u1" aria-label="선로 경비조 배치"><i>I</i><span>경비조</span></button><button type="button" class="unit-token ally u2" aria-label="측선 정찰조 배치"><i>II</i><span>정찰조</span></button><button type="button" class="unit-token ally u3" aria-label="구호 작업조 배치"><i>III</i><span>구호조</span></button><span class="unit-token foe e1" aria-hidden="true"><i>A</i></span><span class="unit-token foe e2" aria-hidden="true"><i>B</i></span><div class="north" aria-hidden="true">N ↑</div></section>
+          <section class="battlefield deployment-field" aria-label="전투 배치 도식"><div class="field-note">탑다운 DOCUMENTATION SCHEMATIC · 확정: 3D 자유 지휘(팬·오빗·줌)</div><div class="terrain track-a"></div><div class="terrain track-b"></div><div class="terrain cover-a"></div><div class="terrain cover-b"></div><div class="zone enemy-zone">적 배치 예상</div><div class="zone ally-zone">아군 배치 가능</div><button type="button" class="unit-token ally hero u4" aria-label="영웅 지휘 인물 배치"><i>H</i><span>영웅</span></button><button type="button" class="unit-token ally u1" aria-label="선로 경비조 배치"><i>I</i><span>경비조</span></button><button type="button" class="unit-token ally u2" aria-label="측선 정찰조 배치"><i>II</i><span>정찰조</span></button><button type="button" class="unit-token ally u3" aria-label="구호 작업조 배치"><i>III</i><span>구호조</span></button><span class="unit-token foe e1" aria-hidden="true"><i>A</i></span><span class="unit-token foe e2" aria-hidden="true"><i>B</i></span><div class="north" aria-hidden="true">N ↑</div></section>
           <aside class="panel deploy-inspector"><div class="panel-head"><div><span class="kicker">FORMATION</span><h2>배치 검토</h2></div><span class="status-chip live">준비됨</span></div><div class="formation-list"><div><i>I</i><span><b>선로 경비조</b><small>전열 · 북향</small></span></div><div><i>II</i><span><b>측선 정찰조</b><small>좌익 · 북동향</small></span></div><div><i>III</i><span><b>구호 작업조</b><small>후열 · 북향</small></span></div></div><button class="primary wide" type="button" data-nav="battle">배치 확정 · 지휘 시작 <span>→</span></button></aside>
         </div>
       </section>
 
       <section class="screen" id="screen-battle" data-screen-panel="battle" aria-labelledby="battle-title" hidden>
-        <div class="battle-header"><div><span class="kicker">LIVE UNIT COMMAND / SCHEMATIC</span><h1 id="battle-title">구로 연결로 차단전</h1></div><div class="objective"><span>목표</span><b>통행로 확보</b></div><div class="battle-state"><span>퇴로 <b id="route-state">남측 개방</b></span><span>전황 <b>교착 · 예시</b></span></div><button type="button" id="battle-pause" aria-pressed="false"><span>이 파티 전투만</span><b id="battle-pause-label">일시정지</b></button></div>
-        <div class="adopted-default"><b>질문 무응답 뒤 채택한 설계 기본값</b><span>3D 자유 지휘 카메라: 팬 · 오빗 · 줌 (각도/FOV 수치 미정)</span><span>일시정지는 이 파티의 닫힌 전투만 멈추며 캠페인 세계와 다른 파티는 계속된다.</span></div>
+        <div class="battle-header"><div><span class="kicker">LIVE UNIT COMMAND / SCHEMATIC</span><h1 id="battle-title">구로 연결로 차단전</h1></div><div class="objective"><span>목표</span><b>통행로 확보</b></div><div class="battle-state"><span>퇴로 <b id="route-state">남측 개방</b></span><span>전황 <b>교착 · 예시</b></span></div></div>
+        <div class="adopted-default"><b>소유자 결정 2026-09-24</b><span>3D 자유 지휘 카메라: 팬 · 오빗 · 줌 (각도/FOV 수치 미정)</span><span>전투에는 일시정지와 감속·배속이 없다. 명령은 시간이 흐르는 동안 미리보고 확정한다.</span></div>
         <div class="battle-balance" aria-label="전투 전력 균형"><span>서남선 조사대</span><div><i></i></div><span>구로 공방대</span><small>전력 균형 · 예시</small></div>
-        <div class="battle-time-controls" aria-label="전투 시간 제어"><button type="button">Ⅰ</button><button type="button" class="is-active">▶</button><button type="button">Ⅱ</button><button type="button">Ⅲ</button></div>
         <div class="battle-layout">
           <aside class="unit-rail" aria-label="아군 부대 목록"><div class="rail-title"><span>부대</span><button type="button" id="selection-clear">선택 해제</button></div>
              <button type="button" data-unit="leader"><i>H</i><span><b>영웅 지휘 인물</b><small data-unit-order="leader">현재: 중앙 지휘</small></span><em>병졸 수 제외</em></button>
@@ -131,7 +130,7 @@
           <aside class="command-panel">
             <section class="selection-summary"><span class="kicker">SELECTED UNIT</span><h2 id="selected-unit-name">선택된 부대 없음</h2><p id="selected-unit-order">부대를 선택하면 현재 지시와 교체할 명령을 검토할 수 있다.</p></section>
             <section class="command-grid" aria-label="부대 명령"><button type="button" data-command="move" disabled><span>M</span><b>이동</b><small>목적지 선택</small></button><button type="button" data-command="attack" disabled><span>A</span><b>공격</b><small>대상 선택</small></button><button type="button" data-command="face" disabled><span>F</span><b>방향 조절</b><small>전열 정렬 예시</small></button><button type="button" data-command="hold" disabled><span>H</span><b>정지</b><small>즉시 교체</small></button></section>
-            <section class="order-preview" id="order-preview" aria-live="polite"><span class="kicker">ORDER STATE</span><h3 id="preview-title">명령 대기</h3><p id="preview-copy">이동 또는 공격을 고른 뒤 유효한 도식 대상에서 미리보기를 만든다.</p><p class="pending-state" id="pending-orders">재개 대기 명령 없음</p><div class="preview-actions"><button type="button" id="order-cancel" disabled>취소 · 기존 지시 유지</button><button class="primary" type="button" id="order-confirm" disabled>명령 교체 확인</button></div></section>
+            <section class="order-preview" id="order-preview" aria-live="polite"><span class="kicker">ORDER STATE</span><h3 id="preview-title">명령 대기</h3><p id="preview-copy">이동 또는 공격을 고른 뒤 유효한 도식 대상에서 미리보기를 만든다.</p><div class="preview-actions"><button type="button" id="order-cancel" disabled>취소 · 기존 지시 유지</button><button class="primary" type="button" id="order-confirm" disabled>명령 교체 확인</button></div></section>
             <button type="button" class="withdraw-button" id="withdraw-open">철수 · 항복 검토</button>
           </aside>
         </div>
@@ -161,7 +160,7 @@
       </section>
     </main>
 
-    <footer><span>UI/UX 목표 설계 문서 · 질문 무응답 뒤 채택한 카메라/일시정지 기본값 · POC 구현 사실이나 소유자 명시 결정이 아님</span><b>total-war-ui-20260919-v2</b></footer>
+    <footer><span>UI/UX 목표 설계 문서 · 카메라 확정 · 전투 일시정지 없음(2026-09-24 소유자 결정) · 런타임 구현 완료가 아님</span><b>total-war-ui-20260919-v2</b></footer>
   </div>
 </body>
 </html>
