@@ -2,6 +2,9 @@ import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { spawnSync } from 'node:child_process'
 import { basename, dirname, extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { fromMarkdown } from 'mdast-util-from-markdown'
+import { gfmFromMarkdown } from 'mdast-util-gfm'
+import { gfm } from 'micromark-extension-gfm'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, '../lore'))
@@ -62,7 +65,16 @@ for (const domain of domains) {
   const names = (await readdir(contentDir)).filter((name) => extname(name) === '.json')
   for (const name of names) {
     const page = JSON.parse(await readFile(resolve(contentDir, name), 'utf8'))
-    if ('body' in page || !Array.isArray(page.blocks) || page.blocks.length === 0) failures.push(`unstructured-content:${domain}/${name}`)
+    if ('body' in page || !Array.isArray(page.blocks) || page.blocks.length === 0 || typeof page.reviewText !== 'string') failures.push(`unstructured-content:${domain}/${name}`)
+    else {
+      const parsed = fromMarkdown(page.reviewText, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
+      const withoutPosition = (node) => {
+        delete node.position
+        for (const child of node.children ?? []) withoutPosition(child)
+      }
+      for (const block of parsed) withoutPosition(block)
+      if (JSON.stringify(parsed) !== JSON.stringify(page.blocks)) failures.push(`review-text-drift:${domain}/${name}`)
+    }
     const links = []
     const visit = (node) => {
       if (node.url && node.type === 'link') links.push(node.url)

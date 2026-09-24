@@ -101,7 +101,7 @@ function main() {
       failures.push(`FAIL exclusion: ${rel} matches excluded source "${stem}"`)
     }
     const document = JSON.parse(readFileSync(page, 'utf8'))
-    if ('body' in document || !Array.isArray(document.blocks) || document.blocks.length === 0) {
+    if ('body' in document || !Array.isArray(document.blocks) || document.blocks.length === 0 || typeof document.reviewText !== 'string') {
       failures.push(`FAIL unstructured-content: ${rel}`)
       continue
     }

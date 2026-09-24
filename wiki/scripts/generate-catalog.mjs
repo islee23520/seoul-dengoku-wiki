@@ -223,7 +223,7 @@ for (const document of documents) {
     for (const child of node.children ?? []) removePositions(child)
   }
   for (const block of blocks) removePositions(block)
-  await writeFile(resolve(worldJsonRoot, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, blocks })}
+  await writeFile(resolve(worldJsonRoot, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
 `)
 }
 
