@@ -18,6 +18,21 @@ test('document index links every generated canon document', async () => {
   assert.match(page, /to=\{document\.route\}/)
 })
 
+test('editorial writing rules stay outside generated world and all 92 routes', async () => {
+  const rules = await readFile(new URL('../../lore/editorial/Writing-Rules.md', import.meta.url), 'utf8')
+  assert.match(rules, /공개 본문과 집필 규칙의 경계/)
+  const contract = JSON.parse(await readFile(new URL('../public/wiki-contract.json', import.meta.url), 'utf8'))
+  const generated = (await readdir(new URL('../src/generated/world/', import.meta.url))).filter((name) => name.endsWith('.json'))
+  assert.equal(contract.documents.length, 92)
+  assert.equal(generated.length, 92)
+  assert.ok(contract.documents.every(({ route }) => !route.includes('Writing-Rules')))
+  assert.ok(!generated.includes('Writing-Rules.json'))
+  for (const name of generated) {
+    const document = await readFile(new URL(name, new URL('../src/generated/world/', import.meta.url)), 'utf8')
+    assert.ok(!document.includes('공개 본문과 집필 규칙의 경계'), name)
+  }
+})
+
 test('home and sidebar expose document and people indexes', async () => {
   const home = await readFile(new URL('../src/pages/HomePage.tsx', import.meta.url), 'utf8')
   const sidebar = await readFile(new URL('../src/components/Sidebar.tsx', import.meta.url), 'utf8')
