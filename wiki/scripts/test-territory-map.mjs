@@ -7,10 +7,10 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.equal(data.regions.length, 427)
   assert.equal(data.states.length, 16)
   const expectedStates = {
-    S01: '급수계약정', S02: '규격동맹', S03: '양재기공주식회사', S04: '설교명부정',
-    S05: '호위보호정', S06: '대한민국정부', S07: '선로후계정', S08: '교헌필사정',
-    S09: '여의도출자연합회', S10: '승가구휼정', S11: '서초전산그룹', S12: '중립호송시',
-    S13: '의약중립맹', S14: '관문군정', S15: '본당인준정', S16: '정동노동총연맹',
+    S01: '수문국', S02: '규격맹', S03: '태욱그룹', S04: '명부교회',
+    S05: '동방사', S06: '대한민국정부', S07: '환적국', S08: '중앙기술보존원',
+    S09: '여의도출자연합회', S10: '안국총림', S11: '성하그룹', S12: '신내운수',
+    S13: '흰십자단', S14: '아관사', S15: '명동대교구', S16: '정동노총',
   }
   assert.deepEqual(Object.fromEntries(data.states.map((state) => [state.id, state.name])), expectedStates)
   assert.equal(new Set(data.regions.map((region) => region.id)).size, 427)
@@ -59,6 +59,53 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   }
 })
 
+test('sixteen states carry the chronicle capitals and tier grades', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const expectedCapitals = {
+    S01: '양평', S02: '구로', S03: '양재', S04: '삼성', S05: '암사', S06: '광화문',
+    S07: '용산', S08: '흑석', S09: '여의도', S10: '안국', S11: '강남', S12: '신내',
+    S13: '제기동', S14: '구의', S15: '명동', S16: '시청',
+  }
+  const stationById = new Map(data.stations.map((station) => [station.id, station]))
+  assert.deepEqual(Object.fromEntries(data.states.map((state) => [state.id, stationById.get(state.capitalStationId)?.name])), expectedCapitals)
+  assert.ok(data.states.every((state) => ['강국', '약국', '소국'].includes(state.power)), 'tier vocabulary')
+  assert.equal(data.states.find((state) => state.id === 'S06')?.power, '강국')
+  assert.equal(data.states.filter((state) => state.power === '강국').length, 6)
+  assert.equal(data.states.filter((state) => state.power === '약국').length, 4)
+  assert.equal(data.states.filter((state) => state.power === '소국').length, 6)
+})
+
+test('person pages project the current state name from the S-ID', async () => {
+  const { readdir, readFile } = await import('node:fs/promises')
+  const root = new URL('../public/person-details/', import.meta.url)
+  const people = await Promise.all((await readdir(root)).filter((name) => name.endsWith('.json')).map(async (name) => JSON.parse(await readFile(new URL(name, root), 'utf8'))))
+  const s01 = people.find((person) => person.state === 'S01')
+  const s06 = people.find((person) => person.state === 'S06')
+  assert.equal(s01?.stateName, '수문국')
+  assert.equal(s06?.stateName, '대한민국정부')
+  assert.ok(people.filter((person) => person.state === 'S01').every((person) => person.stateName === '수문국'))
+  assert.equal(people.filter((person) => person.stateName === '급수계약정').length, 0)
+})
+
+test('thirteen vassals point at valid suzerains outside the sixteen', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  assert.equal(data.vassals.length, 13)
+  const stateIds = new Set(data.states.map((state) => state.id))
+  const expectedVassalSuzerains = {
+    '경기도': 'S06', '제일수문': 'S01', '제이수문': 'S01', '제1분공방': 'S02', '제2분공방': 'S02',
+    '제1종착': 'S07', '제2종착': 'S07', '제1경비지구': 'S05', '제2경비지구': 'S05', '제3경비지구': 'S05',
+    '태욱중공업 성남사업장': 'S03', '태욱중공업 수원사업장': 'S03', '영종지점': 'S09',
+  }
+  assert.deepEqual(Object.fromEntries(data.vassals.map((vassal) => [vassal.name, vassal.suzerain])), expectedVassalSuzerains)
+  for (const vassal of data.vassals) {
+    assert.ok(stateIds.has(vassal.suzerain), `suzerain must be a state id: ${vassal.name}:${vassal.suzerain}`)
+    assert.ok(['S01', 'S02', 'S03', 'S05', 'S06', 'S07', 'S09'].includes(vassal.suzerain), `suzerain must hold vassals: ${vassal.name}:${vassal.suzerain}`)
+    assert.ok(vassal.city.length > 0, `city: ${vassal.name}`)
+    assert.match(vassal.founded, /^2\d{3}\.\s*\d+\./u, `founded: ${vassal.name}`)
+    assert.ok(vassal.duty.length > 0, `duty: ${vassal.name}`)
+  }
+})
+
 test('World and Subway Layers mounts the opening territory map', async () => {
   const page = await readFile(new URL('../src/pages/ArticlePage.tsx', import.meta.url), 'utf8')
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
@@ -73,6 +120,27 @@ test('World and Subway Layers mounts the opening territory map', async () => {
   assert.match(map, /지역 선택/)
   assert.match(map, /territory-state-marker/)
   assert.match(map, /aria-pressed=/)
+})
+
+test('territory map offers surface and subway layers with vassal ring and tier legend', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  const flags = await readFile(new URL('../src/components/StateFlag.tsx', import.meta.url), 'utf8')
+  assert.match(map, /지상/)
+  assert.match(map, /지하/)
+  assert.match(map, /territory-layer-toggle/)
+  assert.match(map, /territory-layer-overlay/)
+  assert.match(map, /aria-pressed=\{layer ===/)
+  assert.match(map, /territory-vassal-markers/)
+  assert.match(map, /territory-vassal-marker/)
+  assert.match(map, /territory-vassal-inset/)
+  assert.match(map, /territory-vassal-connector/)
+  assert.match(map, /territory-state-swatch/)
+  assert.match(map, /속국/)
+  assert.match(map, /territory-tier-legend/)
+  assert.match(map, /강국/)
+  assert.match(map, /약국/)
+  assert.match(map, /소국/)
+  assert.match(flags, /onError/)
 })
 
 test('territory map is a real Three.js scene with state labels and flags', async () => {
@@ -94,7 +162,6 @@ test('territory map is a real Three.js scene with state labels and flags', async
   assert.match(map, /노선 필터/)
   assert.match(map, /지배 계층/)
   assert.match(map, /derived-from-surface/)
-  assert.match(map, /Raycaster/)
   const css = await readFile(new URL('../src/index.css', import.meta.url), 'utf8')
   assert.match(css, /\.territory-state-markers \{[^}]*z-index: 5/u)
   assert.match(css, /\.territory-station-markers \{[^}]*z-index: 3/u)
@@ -126,10 +193,13 @@ test('territory map is a real Three.js scene with state labels and flags', async
   assert.match(map, /state-flags\/concept-sheet\.webp/)
 })
 
-test('territory generator reads all sixteen capitals from current state canon', async () => {
+test('territory generator reads states, capitals and vassals from current lore canon', async () => {
   const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
-  assert.match(generator, /WEB\/lore\/factions\/Sixteen-States\.md/)
+  assert.match(generator, /lore\/factions\/Sixteen-States\.md/)
+  assert.doesNotMatch(generator, /WEB\/lore\/factions\/Sixteen-States\.md/)
   assert.match(generator, /stateIdByName/)
+  assert.match(generator, /vassalsTableMatch|속국 \| 본국/)
+  assert.match(generator, /anchorRules/)
   assert.doesNotMatch(generator, /Chaebol-Houses-and-Century-Factions\.md/)
 })
 

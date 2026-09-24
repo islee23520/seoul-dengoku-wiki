@@ -10,28 +10,29 @@
   },
   "provenance": {
     "original_anchor": "lore/chronology/Scenario-Timeline.md",
-    "original_hash": "9151f1616ff75b35b2a13bb17a6939801aa023a158fa95cb3c09e1497cee5446",
+    "original_hash": "798e29640d3b4ae5e724d1334d38eb7e48cb377428038efc249118a14147d7f4",
     "history": [
       "Korean lore/chronology/Scenario-Timeline.md SHA-256 9151f1616ff75b35b2a13bb17a6939801aa023a158fa95cb3c09e1497cee5446.",
-      "English lore/chronology/Scenario-Timeline.en.md SHA-256 12862b1ca3cf2612bc5ce1e0aea7de173330777af4ba09e1d0ed0fb5cd3b4acd; copied verbatim, no translation written."
+      "English lore/chronology/Scenario-Timeline.en.md SHA-256 12862b1ca3cf2612bc5ce1e0aea7de173330777af4ba09e1d0ed0fb5cd3b4acd; copied verbatim, no translation written.",
+      "2026-09-24 opening-day section rewritten from ch31-ko.md through ch47-ko.md: the sixteen rulers, the 2125 strength ledger, and 임초원·한소미·정호준 as opening people. Post-opening branch headings kept; branch prose renamed to the new states and rulers. The Sindorim gate card kept verbatim.",
+      "2026-09-24 opening-day section rewritten from ch31-ko.md through ch47-ko.md: the sixteen rulers, the 2125 strength ledger, and 임초원·한소미·정호준 as opening people. Post-opening branch headings kept; branch prose renamed to the new states and rulers. The Sindorim gate card kept verbatim."
     ]
   },
   "source": {
     "kind": "original-fiction",
     "refs": [
-      "lore/chronology/Scenario-Timeline.md",
-      "lore/chronology/Scenario-Timeline.en.md"
+      "lore/chronology/Scenario-Timeline.md"
     ]
   },
   "locales": {
     "en": {
       "title": "Scenario Timeline",
-      "summary": "This timeline was not to be read as a script replaying fixed history.",
+      "summary": "The opening day and the conditional events after it. Not a script of fixed history.",
       "tense": "past"
     },
     "ko": {
       "title": "시나리오 타임라인",
-      "summary": "이 타임라인은 정해진 역사를 재생하는 각본으로 읽히지 않는다.",
+      "summary": "개막일과 개막 이후의 조건부 사건. 정해진 역사를 재생하는 각본이 아니다.",
       "tense": "past"
     }
   },
@@ -50,7 +51,7 @@
       "anchor": "연대기의-원칙",
       "depth": 2,
       "text": {
-        "en": "Principles of the Chronicle",
+        "en": "Principles of the chronicle",
         "ko": "연대기의 원칙"
       }
     },
@@ -68,32 +69,22 @@
       "text": {
         "en": [
           {
-            "text": "The common-era anchors were locked at the motive-power revocation of 2026 and the story opening of 2126. The events, goods, and institutional changes of the 101 years between were canon in "
+            "text": "The year anchors run from the 2026 severance to the 2126 opening. The dated events of the years between are the canon of "
           },
           {
-            "text": "the Hundred-Year Annals of Seoul Dengoku",
+            "text": "the Century Annals",
             "link": {
               "domain": "chronology",
               "slug": "Century-Annals"
             }
           },
           {
-            "text": ". This document owned the conditional events after the opening, the seasonal chronicle, and the prototype cards. The name of the cause lived in "
-          },
-          {
-            "text": "motive-power revocation",
-            "link": {
-              "domain": "overview",
-              "slug": "World-Unbinding"
-            }
-          },
-          {
-            "text": "."
+            "text": ". This document owns the opening day and the conditional events after it."
           }
         ],
         "ko": [
           {
-            "text": "서기 앵커는 2026 기동권 이탈과 2126 이야기 개막으로 잠근다. 그 사이 101개 연도의 사건·물자·제도 변화는 "
+            "text": "서기 앵커는 2026년 대단선과 2126년 개막으로 잠근다. 그 사이 해의 날짜가 붙은 사건은 "
           },
           {
             "text": "서울전국 백년실록",
@@ -103,27 +94,9 @@
             }
           },
           {
-            "text": "이 정본이다. 이 문서는 개막 이후 조건부 사건, 계절 연대기와 프로토타입 카드를 소유한다. 원인 이름은 "
-          },
-          {
-            "text": "기동권 이탈",
-            "link": {
-              "domain": "overview",
-              "slug": "World-Unbinding"
-            }
-          },
-          {
-            "text": "에 있다."
+            "text": "이 정본이다. 이 문서는 개막일과 개막 이후의 조건부 사건을 소유한다."
           }
         ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "연대기의-원칙-p3",
-      "text": {
-        "en": "The generation of 2126 had not lived the revocation. The First Water Compact, the military-household register, the Sixteen Banners, the Merit Subjects' Winter, and the Second Water Compact were the creation oral record. A founder entered in the ledgers and a person seated at the opening were not read as one body.",
-        "ko": "2126년 세대는 이탈을 살지 않았다. 첫 급수협약, 군사호적, 열여섯 깃발, 공신의 겨울, 둘째 급수협약은 창세 구술이다. 장부에 적힌 창건자와 개막에 앉아 있는 사람을 같은 몸으로 읽지 않는다."
       }
     },
     {
@@ -187,7 +160,7 @@
       "anchor": "백년실록-시대별-총람",
       "depth": 2,
       "text": {
-        "en": "Era Summary of the Hundred-Year Annals",
+        "en": "Century Annals era index",
         "ko": "백년실록 시대별 총람"
       }
     },
@@ -197,14 +170,14 @@
       "text": {
         "en": [
           {
-            "text": "The Hundred-Year Annals of Seoul Dengoku",
+            "text": "The Century Annals",
             "link": {
               "domain": "chronology",
               "slug": "Century-Annals"
             }
           },
           {
-            "text": " recorded, for every year from the motive-power revocation of 2026 to the story opening of 2126, the places, actors, material pressures, decisions, and outcomes. The era divisions below were an index for finding events in compression, not a substitute for each year's causes and responsibilities."
+            "text": " records the dated events from the 2026 severance to the 2126 opening. The eras below are an index for finding events."
           }
         ],
         "ko": [
@@ -216,7 +189,7 @@
             }
           },
           {
-            "text": "은 2026년 기동권 이탈부터 2126년 이야기 개막까지 해마다 장소·행위자·물자 압력·결정·결과를 기록한다. 아래 시대 구분은 사건을 압축해 찾기 위한 색인이지, 각 해의 원인과 책임을 대신하지 않는다."
+            "text": "은 2026년 대단선부터 2126년 개막까지 날짜가 붙은 사건을 기록한다. 아래 시대 구분은 사건을 찾기 위한 색인이다."
           }
         ]
       }
@@ -226,7 +199,7 @@
       "anchor": "백년실록-시대별-총람-table2",
       "columns": [
         {
-          "en": "Period",
+          "en": "Years",
           "ko": "시기"
         },
         {
@@ -234,139 +207,93 @@
           "ko": "시대"
         },
         {
-          "en": "Center of causality",
-          "ko": "인과의 중심"
-        },
-        {
-          "en": "What remained in 2126",
-          "ko": "2126년에 남은 것"
+          "en": "What the record keeps",
+          "ko": "기록에 남은 것"
         }
       ],
       "rows": [
         [
           {
-            "en": "2026–2039",
-            "ko": "2026–2039"
+            "en": "2026–2030",
+            "ko": "2026–2030"
           },
           {
-            "en": "Motive-power revocation and the survival watches",
-            "ko": "기동권 이탈과 생존 당직"
+            "en": "The years of the severance",
+            "ko": "대단선의 해들"
           },
           {
-            "en": "When the call mesh, satellites, and licensing servers stopped together, the field watches of the plants, depots, government complex, hospitals, and pulpits saved their own sections.",
-            "ko": "호출망·위성·인가 서버가 함께 멎자 정수·차량기지·청사·병원·강단의 현장 당직이 자기 구획을 살린다."
-          },
-          {
-            "en": "The first unresolved records around the return of emergency powers, and the paper registers, remained.",
-            "ko": "비상권한 반환 시점을 둘러싼 첫 미결 기록과 종이 명부가 남는다."
+            "en": "The emergency decree, the manual watches, the first casualty, the underground rolls.",
+            "ko": "긴급명령, 수동 당직, 첫 사상자, 지하 명부."
           }
         ],
         [
           {
-            "en": "2040–2054",
-            "ko": "2040–2054"
+            "en": "2031–2050",
+            "ko": "2031–2050"
           },
           {
-            "en": "The First Water Compact and the living-sphere ledgers",
-            "ko": "첫 급수협약과 생활권 장부"
+            "en": "The age of the tap",
+            "ko": "수도꼭지의 시대"
           },
           {
-            "en": "No single commander could monopolize water, power, medicine, and rail parts, so the sluice keys and the cooling watches were divided.",
-            "ko": "물·전력·의약·철도 부품을 한 지휘자가 독점할 수 없어 수문 키와 냉각 당직을 분할한다."
-          },
-          {
-            "en": "The Water Compact's contractual custom and the grammar of operating houses that leased facility keys were born.",
-            "ko": "급수계약정의 계약 관습과 시설 키를 빌리는 운영가문 문법이 생긴다."
+            "en": "Plant recovery, the gauge sheet, the track families, the church, temple and cathedral rolls, the debt.",
+            "ko": "정수센터 복구, 규격서, 선로 가문, 교회·절·성당의 명부, 차용증."
           }
         ],
         [
           {
-            "en": "2055–2069",
-            "ko": "2055–2069"
+            "en": "2051–2070",
+            "ko": "2051–2070"
           },
           {
-            "en": "The military-household register and the Sixteen Banners",
-            "ko": "군사호적과 열여섯 깃발"
+            "en": "Debt and collateral",
+            "ko": "빚과 담보"
           },
           {
-            "en": "Conscription-remnant registers, convoy rights, and refugee lists collided with citizenship, and living-sphere delegates raised different banners.",
-            "ko": "징집 잔존 명부, 호송권, 피난 명부와 시민권이 충돌하며 생활권 대표들이 서로 다른 깃발을 세운다."
-          },
-          {
-            "en": "The authority tiers of military, theocratic, commercial, and feudal states remained the same while the titles differed.",
-            "ko": "군정·신정·상업·봉건의 권한 티어는 같되 직함은 달라진다."
+            "en": "The Yeouido deed, the certificate, the contract council, Yangjae and Gangnam, Jeong-dong and the government complex.",
+            "ko": "여의도 협약, 증서, 계약 회의, 양재와 강남, 정동과 청사."
           }
         ],
         [
           {
-            "en": "2070–2084",
-            "ko": "2070–2084"
+            "en": "2071–2090",
+            "ko": "2071–2090"
           },
           {
-            "en": "The Merit Subjects' Winter and hereditary accreditation",
-            "ko": "공신의 겨울과 세습 인준"
+            "en": "Three ways",
+            "ko": "세 갈래"
           },
           {
-            "en": "Limiting the founding merit subjects' demands for rations, titles, and inheritance, the succession of watches and keys was recognized conditionally.",
-            "ko": "창건 공신의 배급권·작위·세습 요구를 제한하는 대신 당직과 키의 승계를 조건부로 인정한다."
-          },
-          {
-            "en": "The principle of never reading founders and the 2126 generation as the same persons, and the fixing of clan seats, generational names, and successor accreditation.",
-            "ko": "창건자와 2126년 세대를 같은 사람으로 읽지 않는 원칙, 본관·항렬·후계 인준이 굳어진다."
+            "en": "The Holy Assembly, the Orthodox Council, the Janggyeong order, the Preservation Office, the gut and the rolls.",
+            "ko": "성전총회, 정통회, 장경종, 중앙기술보존원, 굿과 명부."
           }
         ],
         [
           {
-            "en": "2085–2099",
-            "ko": "2085–2099"
+            "en": "2091–2110",
+            "ko": "2091–2110"
           },
           {
-            "en": "The Second Water Compact and the institutional successors",
-            "ko": "둘째 급수협약과 기관 후신"
+            "en": "The age of the line ends",
+            "ko": "노선 끝의 시대"
           },
           {
-            "en": "As provisional pumps and train parts reached end of life, the registers and real estate of actual institutions, companies, and orders became the grounds of state succession.",
-            "ko": "임시 펌프와 열차 부품의 수명이 끝나며 실제 기관·기업·종단의 명부와 부동산이 국가 후신의 근거가 된다."
-          },
-          {
-            "en": "The state names of Samsung, Hyundai, the FKI, and the four theocracies, and the sixteen-state origins used by the GDD and LORE, split apart.",
-            "ko": "삼성·현대·전경련과 네 신정의 국호, GDD·LORE에서 쓰는 16국 기원이 갈라진다."
+            "en": "State names, the vassal posts, the Guui clash, the records-office ledger.",
+            "ko": "국호, 속국 거점, 구의 충돌, 기록청 장부."
           }
         ],
         [
           {
-            "en": "2100–2114",
-            "ko": "2100–2114"
+            "en": "2111–2126",
+            "ko": "2111–2126"
           },
           {
-            "en": "The fixing of the sixteen state names and station capitals",
-            "ko": "16국 국호와 역 수도의 확정"
+            "en": "The eve of the opening",
+            "ko": "개막 전야"
           },
           {
-            "en": "Old slots like Magok, Garak, Suseo, and Changdong were emptied, and institutional head offices and subway stations were re-linked as capitals.",
-            "ko": "마곡·가락·수서·창동 같은 옛 슬롯을 비우고 기관 본사와 전철역을 수도로 다시 연결한다."
-          },
-          {
-            "en": "The present sixteen station capitals — Yeongdeungpo, Guro, Yangjae, Samsung, Gwanghwamun, and the rest — were fixed.",
-            "ko": "영등포·구로·양재·삼성·광화문 등 현재 16개 역 수도가 확정된다."
-          }
-        ],
-        [
-          {
-            "en": "2115–2126",
-            "ko": "2115–2126"
-          },
-          {
-            "en": "The eve of the third water contract and the opening",
-            "ko": "세 번째 급수계약 전야와 개막"
-          },
-          {
-            "en": "Chiefs vanishing, cooling, food, and medicine debts, and the conflicting records of the five external theaters pressed on the water-contract renewal at once.",
-            "ko": "수장 실종, 냉각·식량·의약 부채, 다섯 외부전구의 상충 기록이 동시에 급수계약 갱신을 압박한다."
-          },
-          {
-            "en": "The player did not replay the spring of 2126 but changed history from the choices of opening day.",
-            "ko": "플레이어는 2126년 봄을 재생하지 않고 개막일의 선택부터 역사를 바꾼다."
+            "en": "The successions, the opening rulers, the strength ledger of 2125.",
+            "ko": "승계, 개막의 수장, 2125년 강약 장부."
           }
         ]
       ]
@@ -376,7 +303,7 @@
       "anchor": "20262126-연도별-진입",
       "depth": 2,
       "text": {
-        "en": "Year-by-Year Entry, 2026–2126",
+        "en": "Year entries, 2026–2126",
         "ko": "2026–2126 연도별 진입"
       }
     },
@@ -391,7 +318,7 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2026"
+                "anchor": "2026년"
               }
             },
             {
@@ -402,95 +329,7 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2027"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2028",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2028"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2029",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2029"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2030",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2030"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2031",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2031"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2032",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2032"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2033",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2033"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2034",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2034"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2035",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2035"
+                "anchor": "2027년"
               }
             }
           ],
@@ -513,43 +352,54 @@
                 "slug": "Century-Annals",
                 "anchor": "2027년"
               }
-            },
+            }
+          ]
+        },
+        {
+          "en": [
             {
-              "text": " · "
-            },
-            {
-              "text": "2028년",
+              "text": "2031",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2028년"
+                "anchor": "2031년"
               }
             },
             {
               "text": " · "
             },
             {
-              "text": "2029년",
+              "text": "2032",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2029년"
+                "anchor": "2032년"
               }
             },
             {
               "text": " · "
             },
             {
-              "text": "2030년",
+              "text": "2035",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2030년"
+                "anchor": "2035년"
               }
             },
             {
               "text": " · "
             },
+            {
+              "text": "2039",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2039년"
+              }
+            }
+          ],
+          "ko": [
             {
               "text": "2031년",
               "link": {
@@ -573,176 +423,11 @@
               "text": " · "
             },
             {
-              "text": "2033년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2033년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2034년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2034년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
               "text": "2035년",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
                 "anchor": "2035년"
-              }
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "2036",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2036"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2037",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2037"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2038",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2038"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2039",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2039"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2040",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2040"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2041",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2041"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2042",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2042"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2043",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2043"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2044",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2044"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2045",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2045"
-              }
-            }
-          ],
-          "ko": [
-            {
-              "text": "2036년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2036년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2037년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2037년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2038년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2038년"
               }
             },
             {
@@ -755,72 +440,6 @@
                 "slug": "Century-Annals",
                 "anchor": "2039년"
               }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2040년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2040년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2041년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2041년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2042년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2042년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2043년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2043년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2044년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2044년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2045년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2045년"
-              }
             }
           ]
         },
@@ -831,29 +450,7 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2046"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2047",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2047"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2048",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2048"
+                "anchor": "2046년"
               }
             },
             {
@@ -864,73 +461,7 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2049"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2050",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2050"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2051",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2051"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2052",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2052"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2053",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2053"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2054",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2054"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2055",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2055"
+                "anchor": "2049년"
               }
             }
           ],
@@ -947,49 +478,71 @@
               "text": " · "
             },
             {
-              "text": "2047년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2047년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2048년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2048년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
               "text": "2049년",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
                 "anchor": "2049년"
               }
-            },
+            }
+          ]
+        },
+        {
+          "en": [
             {
-              "text": " · "
-            },
-            {
-              "text": "2050년",
+              "text": "2051",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2050년"
+                "anchor": "2051년"
               }
             },
             {
               "text": " · "
             },
+            {
+              "text": "2052",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2052년"
+              }
+            },
+            {
+              "text": " · "
+            },
+            {
+              "text": "2053",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2053년"
+              }
+            },
+            {
+              "text": " · "
+            },
+            {
+              "text": "2054",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2054년"
+              }
+            },
+            {
+              "text": " · "
+            },
+            {
+              "text": "2055",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2055년"
+              }
+            }
+          ],
+          "ko": [
             {
               "text": "2051년",
               "link": {
@@ -1047,202 +600,15 @@
         {
           "en": [
             {
-              "text": "2056",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2056"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2057",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2057"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2058",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2058"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2059",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2059"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2060",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2060"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2061",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2061"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2062",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2062"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2063",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2063"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
               "text": "2064",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2064"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2065",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2065"
+                "anchor": "2064년"
               }
             }
           ],
           "ko": [
-            {
-              "text": "2056년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2056년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2057년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2057년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2058년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2058년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2059년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2059년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2060년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2060년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2061년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2061년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2062년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2062년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2063년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2063년"
-              }
-            },
-            {
-              "text": " · "
-            },
             {
               "text": "2064년",
               "link": {
@@ -1250,83 +616,17 @@
                 "slug": "Century-Annals",
                 "anchor": "2064년"
               }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2065년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2065년"
-              }
             }
           ]
         },
         {
           "en": [
             {
-              "text": "2066",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2066"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2067",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2067"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2068",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2068"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2069",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2069"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2070",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2070"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
               "text": "2071",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2071"
+                "anchor": "2071년"
               }
             },
             {
@@ -1337,7 +637,7 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2072"
+                "anchor": "2072년"
               }
             },
             {
@@ -1348,88 +648,22 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2073"
+                "anchor": "2073년"
               }
             },
             {
               "text": " · "
             },
             {
-              "text": "2074",
+              "text": "2079",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2074"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2075",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2075"
+                "anchor": "2079년"
               }
             }
           ],
           "ko": [
-            {
-              "text": "2066년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2066년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2067년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2067년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2068년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2068년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2069년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2069년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2070년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2070년"
-              }
-            },
-            {
-              "text": " · "
-            },
             {
               "text": "2071년",
               "link": {
@@ -1464,22 +698,11 @@
               "text": " · "
             },
             {
-              "text": "2074년",
+              "text": "2079년",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2074년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2075년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2075년"
+                "anchor": "2079년"
               }
             }
           ]
@@ -1487,213 +710,15 @@
         {
           "en": [
             {
-              "text": "2076",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2076"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2077",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2077"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2078",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2078"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2079",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2079"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2080",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2080"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2081",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2081"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2082",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2082"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2083",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2083"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2084",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2084"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
               "text": "2085",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2085"
+                "anchor": "2085년"
               }
             }
           ],
           "ko": [
-            {
-              "text": "2076년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2076년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2077년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2077년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2078년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2078년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2079년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2079년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2080년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2080년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2081년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2081년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2082년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2082년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2083년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2083년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2084년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2084년"
-              }
-            },
-            {
-              "text": " · "
-            },
             {
               "text": "2085년",
               "link": {
@@ -1707,171 +732,7 @@
         {
           "en": [
             {
-              "text": "2086",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2086"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2087",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2087"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2088",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2088"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2089",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2089"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2090",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2090"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
               "text": "2091",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2091"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2092",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2092"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2093",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2093"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2094",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2094"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2095",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2095"
-              }
-            }
-          ],
-          "ko": [
-            {
-              "text": "2086년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2086년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2087년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2087년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2088년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2088년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2089년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2089년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2090년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2090년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2091년",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
@@ -1882,67 +743,11 @@
               "text": " · "
             },
             {
-              "text": "2092년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2092년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2093년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2093년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2094년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2094년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2095년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2095년"
-              }
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "2096",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2096"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
               "text": "2097",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2097"
+                "anchor": "2097년"
               }
             },
             {
@@ -1953,94 +758,17 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2098"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2099",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2099"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2100",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2100"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2101",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2101"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2102",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2102"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2103",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2103"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2104",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2104"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2105",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2105"
+                "anchor": "2098년"
               }
             }
           ],
           "ko": [
             {
-              "text": "2096년",
+              "text": "2091년",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2096년"
+                "anchor": "2091년"
               }
             },
             {
@@ -2064,21 +792,32 @@
                 "slug": "Century-Annals",
                 "anchor": "2098년"
               }
-            },
+            }
+          ]
+        },
+        {
+          "en": [
             {
-              "text": " · "
-            },
-            {
-              "text": "2099년",
+              "text": "2100",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2099년"
+                "anchor": "2100년"
               }
             },
             {
               "text": " · "
             },
+            {
+              "text": "2107",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2107년"
+              }
+            }
+          ],
+          "ko": [
             {
               "text": "2100년",
               "link": {
@@ -2091,55 +830,11 @@
               "text": " · "
             },
             {
-              "text": "2101년",
+              "text": "2107년",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2101년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2102년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2102년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2103년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2103년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2104년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2104년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2105년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2105년"
+                "anchor": "2107년"
               }
             }
           ]
@@ -2147,77 +842,11 @@
         {
           "en": [
             {
-              "text": "2106",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2106"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2107",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2107"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2108",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2108"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2109",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2109"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2110",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2110"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2111",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2111"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
               "text": "2112",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2112"
+                "anchor": "2112년"
               }
             },
             {
@@ -2228,7 +857,7 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2113"
+                "anchor": "2113년"
               }
             },
             {
@@ -2239,7 +868,7 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2114"
+                "anchor": "2114년"
               }
             },
             {
@@ -2250,77 +879,44 @@
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals",
-                "anchor": "2115"
+                "anchor": "2115년"
+              }
+            },
+            {
+              "text": " · "
+            },
+            {
+              "text": "2117",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2117년"
+              }
+            },
+            {
+              "text": " · "
+            },
+            {
+              "text": "2118",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2118년"
+              }
+            },
+            {
+              "text": " · "
+            },
+            {
+              "text": "2119",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2119년"
               }
             }
           ],
           "ko": [
-            {
-              "text": "2106년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2106년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2107년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2107년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2108년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2108년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2109년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2109년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2110년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2110년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2111년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2111년"
-              }
-            },
-            {
-              "text": " · "
-            },
             {
               "text": "2112년",
               "link": {
@@ -2361,127 +957,6 @@
                 "slug": "Century-Annals",
                 "anchor": "2115년"
               }
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "2116",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2116"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2117",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2117"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2118",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2118"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2119",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2119"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2120",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2120"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2121",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2121"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2122",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2122"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2123",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2123"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2124",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2124"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2125",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2125"
-              }
-            }
-          ],
-          "ko": [
-            {
-              "text": "2116년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2116년"
-              }
             },
             {
               "text": " · "
@@ -2515,10 +990,43 @@
                 "slug": "Century-Annals",
                 "anchor": "2119년"
               }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "2120",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2120년"
+              }
             },
             {
               "text": " · "
             },
+            {
+              "text": "2121",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2121년"
+              }
+            },
+            {
+              "text": " · "
+            },
+            {
+              "text": "2122",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals",
+                "anchor": "2122년"
+              }
+            }
+          ],
+          "ko": [
             {
               "text": "2120년",
               "link": {
@@ -2548,341 +1056,502 @@
                 "slug": "Century-Annals",
                 "anchor": "2122년"
               }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2123년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2123년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2124년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2124년"
-              }
-            },
-            {
-              "text": " · "
-            },
-            {
-              "text": "2125년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2125년"
-              }
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "2126",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2126"
-              }
-            }
-          ],
-          "ko": [
-            {
-              "text": "2126년",
-              "link": {
-                "domain": "chronology",
-                "slug": "Century-Annals",
-                "anchor": "2126년"
-              }
             }
           ]
         }
       ]
-    },
-    {
-      "kind": "heading",
-      "anchor": "개막일-동시-사건",
-      "depth": 2,
-      "text": {
-        "en": "Simultaneous Events of Opening Day",
-        "ko": "개막일 동시 사건"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "개막일-동시-사건-p1",
-      "text": {
-        "en": "On the opening day of 2126, when the third water contract opened, the contracts inside Seoul were not the only things moving. The external theaters' first events also pressed on that same day's ledgers of water, registers, convoys, and interpretation. The event IDs fixed no outcomes; they designated only the conflicts the player entered and the accreditations required.",
-        "ko": "세 번째 급수계약이 열리는 2126년 개막일에는 서울 안의 계약만 움직이지 않는다. 외부전구의 첫 사건도 같은 날의 물·명부·호송·통역 장부를 압박한다. 사건 ID는 결과를 고정하지 않고 플레이어가 진입할 갈등과 필요한 인준만 지정한다."
-      }
-    },
-    {
-      "kind": "table",
-      "anchor": "개막일-동시-사건-table2",
-      "columns": [
-        {
-          "en": "Event",
-          "ko": "사건"
-        },
-        {
-          "en": "Seoul-side trigger",
-          "ko": "서울 쪽 촉발"
-        },
-        {
-          "en": "First judgment",
-          "ko": "첫 판단"
-        }
-      ],
-      "rows": [
-        [
-          {
-            "en": "XT01-SC1 · Imjin River Gate Theater",
-            "ko": "XT01-SC1 · 임진강관문전구"
-          },
-          {
-            "en": "A damaged repatriation register splits the Anguk reissue from the Gwanghwamun authenticity review.",
-            "ko": "훼손된 귀환 명부가 안국 재발급과 광화문 진위 심사를 갈라놓는다."
-          },
-          {
-            "en": "Decide which handover to verify first — the family waiting list or the medicine boxes.",
-            "ko": "가족 대기열과 의약 상자 가운데 어느 인계를 먼저 확인할지 정한다."
-          }
-        ],
-        [
-          {
-            "en": "XT02-SC1 · West Sea Granary Theater",
-            "ko": "XT02-SC1 · 서해곡창전구"
-          },
-          {
-            "en": "The estuary tides shift, and the Yeongdeungpo sluices collide with the frozen-freight loading shed.",
-            "ko": "하구 조위가 바뀌어 영등포 수문과 냉동 화물 적재창이 충돌한다."
-          },
-          {
-            "en": "Decide whether to open the drainage first, or isolate the damaged freight and delay loading.",
-            "ko": "배수를 먼저 열지, 손상 화물을 격리하고 적재를 늦출지 정한다."
-          }
-        ],
-        [
-          {
-            "en": "XT03-SC1 · Korea Strait Theater",
-            "ko": "XT03-SC1 · 대한해협전구"
-          },
-          {
-            "en": "One of the three relay legs closes, and the Yongsan substitute turntable does not match the Myeongdong accreditation seals.",
-            "ko": "세 갈래 중계 가운데 한곳이 닫히고 용산 대체 회차표와 명동 인준 봉인이 맞지 않는다."
-          },
-          {
-            "en": "Decide whether to quarantine the interpretation-mismatched freight or turn it onto a limited rotation.",
-            "ko": "통역 불일치 화물을 격리할지 제한 회차로 돌릴지 정한다."
-          }
-        ],
-        [
-          {
-            "en": "XT04-SC1 · Duman River Far East Theater",
-            "ko": "XT04-SC1 · 두만강극동전구"
-          },
-          {
-            "en": "An anomaly in the Amsa weight logs and a re-slotting of the Sinnae transfer windows crowd fuel and medical convoys into one shed.",
-            "ko": "암사 중량 로그의 이상과 신내 환승 슬롯 재배정이 연료·의료 호송을 한 창에 몰아넣는다."
-          },
-          {
-            "en": "Decide which shed to open first — patient convoys or fuel cars.",
-            "ko": "환자 호송과 연료 화차 가운데 어느 창을 먼저 열지 정한다."
-          }
-        ],
-        [
-          {
-            "en": "XT05-SC1 · Incheon Trust Theater",
-            "ko": "XT05-SC1 · 인천신탁전구"
-          },
-          {
-            "en": "The residual-band lottery overlaps the water-pump timetable, and the India-bound manifests lack an witnessed hash.",
-            "ko": "잔여 대역 추첨과 급수 펌프 시간표가 겹치고 인도 목록은 참관 해시를 갖추지 못한다."
-          },
-          {
-            "en": "Decide whether to enter the medicine capsules that have only receive logs onto the ration ledgers.",
-            "ko": "수신 로그만 있는 의약 캡슐을 배급 장부에 올릴지 정한다."
-          }
-        ]
-      ]
-    },
-    {
-      "kind": "heading",
-      "anchor": "연결된-도시-2026-직전",
-      "depth": 2,
-      "text": {
-        "en": "The Connected City, Just Before 2026",
-        "ko": "연결된 도시, 2026 직전"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "연결된-도시-2026-직전-p1",
-      "text": {
-        "en": "Seoul was still the capital of one country. The conglomerate families controlled the affiliates with small stakes; the Military Manpower Administration took volunteer intake selection; the pulpits and altars held real estate and registers. Factory density was first in the world, and humanoids were under field test at Hyundai Motor. Water and rail, markets and medicine, communications and cooling and heat ran on one call mesh of institutional and family ledgers. The connections that later became states grew from that year's watch rosters. Whose mistake had been covered up became, a century later, the secret of the license chest.",
-        "ko": "서울은 아직 한 나라의 수도였다. 총수 일가는 적은 지분으로 계열을 지배했고, 병무청은 입영 본인선택을 받았으며, 강단과 제대는 부동산과 명부를 쥐고 있었다. 공장 밀도는 세계 1위였고, 휴머노이드는 현대차 현장에서 시험 중이었다. 물과 철도, 시장과 의료, 통신과 냉각과 열원은 기관과 일가 장부가 같은 호출망으로 돌렸다. 훗날 나라가 되는 인맥은 이 해의 당직표에서 자란다. 누구의 실수를 덮었는지가, 한 세기 뒤 면허함의 비밀이 된다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "이탈의-밤-2026",
-      "depth": 2,
-      "text": {
-        "en": "The Night of the Revocation, 2026",
-        "ko": "이탈의 밤, 2026"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "이탈의-밤-2026-p1",
-      "text": {
-        "en": "The oral record called it the Great Blackout. The canon name was motive-power revocation. The fleet calls, GNSS, the mobile networks, and the licensing servers stopped waiting for one another, and the grid SCADA, belonging to the same mesh, folded the lights. The emergency officers of the Yeouido plant, the Ttukseom workshops, the Amsa guard, and the records wire exercised emergency powers to save their own jurisdictions. The joint command mesh broke that night. Living-sphere emergency committees arose in every sphere, and when those powers were returned stayed the seed of a century of legitimacy disputes.",
-        "ko": "구술은 대정전이라 부른다. 정본의 이름은 기동권 이탈이다. 편대 호출과 지엔에스에스와 이동망과 인가 서버가 서로를 기다리다 멈췄고, 변전 스카다가 같은 그물이라 불이 접혔다. 여의도 정수, 뚝섬 공방, 암사 경비, 기록 전신의 비상 책임자들은 자기 관할만 살리려 비상권한을 행사했다. 공동 지휘망은 그 밤에 끊겼다. 생활권마다 비상위원회가 생겼고, 그 권한이 언제 반환됐는지는 한 세기 동안 법통 다툼의 씨앗이 된다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "창세-구술-햇수를-매기지-않는다",
-      "depth": 2,
-      "text": {
-        "en": "The Creation Oral Record — No Year Counts",
-        "ko": "창세 구술 — 햇수를 매기지 않는다"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "창세-구술-햇수를-매기지-않는다-p1",
-      "text": {
-        "en": "Han Jaemok, Im Hajun, Bae Ujin, Yun Seorin, Gang Minseo, and Baek On were the generation of 2126. The acts of creation were done by the offices and the prior organizations. The names the house ledgers entered as founders and the people alive at the opening were not read as one body. The titles remained; no common-era year attached.",
-        "ko": "한재목, 임하준, 배우진, 윤서린, 강민서, 백온은 2126년 세대다. 창세의 행위는 직위와 전신 조직이 했다. 가문 장부가 창건자로 적는 이름과 개막에 살아 있는 사람을 같은 몸으로 읽지 않는다. 제목은 남기고, 서기는 붙이지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "창세-구술-햇수를-매기지-않는다-p2",
-      "text": {
-        "en": "In the First Water Compact, the surviving plants and pump parts lay scattered through different spheres. The Yeouido treatment officer and the Ttukseom pump overseer struck a provisional compact trading water for parts. The hands that read it as public rights and the hands that read it as a protection contract divided on the spot, and the seed was planted from which the Water Compact, the Sermon Registry State, and the Escort Protection State grew into water great powers.",
-        "ko": "첫 급수협약에서 남은 정수와 펌프 부품이 서로 다른 권역에 흩어졌다. 여의도 정수 책임자와 뚝섬 펌프 총괄이 물과 부품을 바꾸는 임시 협약을 맺었다. 공공권리로 읽은 손과 보호계약으로 읽은 손이 그 자리에서 갈라졌고, 급수계약정·설교명부정·호위보호정가 급수 강국으로 자라는 씨앗이 됐다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "창세-구술-햇수를-매기지-않는다-p3",
-      "text": {
-        "en": "The military-household register dispute opened before the outer raids and the shortage of restoration hands. The Amsa military faction demanded household-unit service registration; the Bukhansan Bogukmun refugee delegates refused. Where voluntary service and citizenship bound together, the league of the Jegi-dong and Bogukmun elders remained; where forced registration remained, the Amsa officer network grew. The register citizens and escort protection of that time were copies of this dispute.",
-        "ko": "군사호적 논쟁은 외곽 약탈과 복구 인력 부족 앞에서 열렸다. 암사 군사파는 가족 단위 복무등록을 요구했고, 북한산보국문 난민대표는 거부했다. 자발 복무와 시민권이 묶이면 제기동·보국문 선대의 연대가 남고, 강제등록이 남으면 암사 장교망이 커진다. 당시의 명부 시민과 호위 보호는 이 다툼의 사본이다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "창세-구술-햇수를-매기지-않는다-p4",
-      "text": {
-        "en": "The Sixteen Banners rose when the central emergency committee dissolved for the last time. The sixteen spheres declared their own charters and offices — five great powers, eleven lesser states. The states that received accreditation gained legitimacy but owed the Records Bureau. The sixteen-state disposition of that time was read as the descendant of those banners, never as a photograph of that year.",
-        "ko": "열여섯 깃발은 중앙 비상위원회가 마지막으로 해산되자 올랐다. 열여섯 권역이 독자 헌장과 직위를 선언했고, 강국 다섯, 약소국 열하나였다. 인준을 받은 나라는 법통을 얻되 기록청에 빚을 진다. 당시의 십육국 배치는 이 깃발의 후손으로 읽히고, 그해의 사진으로 읽히지는 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "창세-구술-햇수를-매기지-않는다-p5",
-      "text": {
-        "en": "In the Merit Subjects' Winter the founding merit subjects demanded office, ration rights, and hereditary rights all at once. Shaving the rewards grew coups; lavishing them scattered the titles. Some states became condominiums and some became court-guard states. The empty cells and hereditary cells the 2126 generation inherited were that winter's transcription.",
-        "ko": "공신의 겨울에 창건 공신들이 관직과 배급권과 세습권을 한꺼번에 요구했다. 보상을 깎으면 쿠데타가, 퍼주면 관작이 흩어진다. 어떤 나라는 공동통치가 되고 어떤 나라는 친위국이 됐다. 2126년 세대가 물려받은 빈 칸과 세습 칸은 이 겨울의 필사다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "창세-구술-햇수를-매기지-않는다-p6",
-      "text": {
-        "en": "The Second Water Compact reopened when the provisional pumps and train parts ran out their lives. The officers of Yeouido, Ttukseom, Amsa, and Jegi-dong of the time wrote the minimum line, the standards, the emergency convoys, and the termination conditions again. The Ttukseom overseer stood surety for central water and parts, and that wording remained in the ledgers up to the third contract of the time. The minimum water right was the lesser states' support, and the protection clause was the grounds of the Amsa elders' intervention.",
-        "ko": "둘째 급수협약은 임시 펌프와 열차 부품이 수명을 다하자 다시 열렸다. 여의도·뚝섬·암사·제기동의 당시 책임자들이 최저선, 규격, 비상 호송, 종료 조건을 다시 적었다. 뚝섬 총괄이 중앙 급수·부품의 보증인이 됐고, 그 문구가 당시의 세 번째 계약까지 장부에 남는다. 최소 급수권은 약소국의 지지이고, 보호조항은 암사 선대의 개입 근거다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "공백의-세기",
-      "depth": 2,
-      "text": {
-        "en": "The Empty Century",
-        "ko": "공백의 세기"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "공백의-세기-p1",
-      "text": {
-        "en": "Between the revocation and the opening lay one century. The event titles of this period were not canon. No missing year was written anew. The living-sphere banners and the water ledgers ran on, but the faces of the founding merit subjects and the everyday life of 2026 became oral record, copies, and myth.",
-        "ko": "이탈과 개막 사이에는 한 세기가 있다. 이 기간의 사건 제목은 정본이 아니다. 빠진 해를 새로 쓰지 않는다. 생활권 깃발과 급수 장부는 이어지지만, 창건 공신의 얼굴과 2026의 일상은 구술과 사본과 신화가 된다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "공백의-세기-p2",
-      "text": {
-        "en": [
-          {
-            "text": "The corporate heirs who inherited the conglomerate ledgers, the record guilds transcribing seals, the external watch officers of the gates, granaries, and strait, and the trade houses that raised the sluices, dispatch, and medicine lived through that century. Trade names remained as signboards or hardened into charter names. The generation of 2126 received the sixteen states, the water contracts, the HC·HP houses, and the XT theaters as a world taken for granted. The powers that held the original ledgers dunned the debts of creation; the powers with only copies made their present charter the sole law. The layer-by-layer mapping was in "
-          },
-          {
-            "text": "the Houses",
-            "link": {
-              "domain": "factions",
-              "slug": "Chaebol-Houses-and-Century-Factions"
-            }
-          },
-          {
-            "text": "."
-          }
-        ],
-        "ko": [
-          {
-            "text": "총수 일가의 장부를 물려받은 법인 후계, 도장을 필사하는 기록 길드, 관문·곡창·해협의 외부 당직, 수문·배차·의료를 세운 직능 가문이 그 세기를 살았다. 상호는 간판으로 남거나 헌장 이름으로 굳었다. 2126년 세대는 십육국과 급수 계약과 HC·HP 가문과 XT 전구를 당연한 세계로 받는다. 원본 장부를 열 세력은 창세의 빚을 캐내고, 사본만 가진 세력은 지금 헌장을 유일한 법으로 삼는다. 층별 매핑은 "
-          },
-          {
-            "text": "가문",
-            "link": {
-              "domain": "factions",
-              "slug": "Chaebol-Houses-and-Century-Factions"
-            }
-          },
-          {
-            "text": "."
-          }
-        ]
-      }
     },
     {
       "kind": "heading",
       "anchor": "이야기-개막",
       "depth": 2,
       "text": {
-        "en": "The Story Opening",
+        "en": "The opening",
         "ko": "이야기 개막"
       }
     },
     {
       "kind": "heading",
-      "anchor": "개막일-세-번째-급수계약",
+      "anchor": "개막일",
       "depth": 3,
       "text": {
-        "en": "Opening Day: The Third Water Contract",
-        "ko": "개막일: 세 번째 급수계약"
+        "en": "Opening day",
+        "ko": "개막일"
       }
     },
     {
       "kind": "paragraph",
-      "anchor": "개막일-세-번째-급수계약-p1",
+      "anchor": "개막일-p1",
       "text": {
-        "en": "Im Hajun, Im Chowon, Han Jaemok, Jeong Hojun, Bae Ujin, Yun Seorin, Gang Minseo, Baek On, and Nam Yungyeong stood in that place. They were the generation of 2126 and had not lived the motive-power revocation. Im Hajun, steward of the Sermon Registry State, vanished, and the central water-and-parts contract handed down from the creation oral record expired at the same moment. As the great powers intervened over the Ttukseom succession and the new contract, the price of water rose, medical convoys ran late, and the lesser states' overlapping contracts and the officers' movements began. It could fork into confirmation of Im Hajun's survival, Im Chowon's enthronement, joint rule of the workshops, an Amsa protection government, or a Ttukseom split, and the three wills of spring received what followed.",
-        "ko": "임하준, 임초원, 한재목, 정호준, 배우진, 윤서린, 강민서, 백온, 남윤경이 그 자리에 선다. 이들은 2126년 세대이며 기동권 이탈을 살지 않았다. 설교명부정 총관 임하준이 실종되고, 창세 구술로 내려온 중앙 급수·부품 계약이 동시에 만료된다. 강국들이 뚝섬의 후계와 새 계약에 개입하면서 물 가격이 오르고 의료호송이 늦어지며, 약소국 중복계약과 장교 이동이 시작된다. 임하준 생존 확인, 임초원 즉위, 공방 공동통치, 암사 보호정부, 뚝섬 분열 가운데 하나로 갈릴 수 있고, 봄의 세 유언이 그 뒤를 받는다."
+        "en": "2126년 명부교회는 오경재가 장로 인준을 거쳐 당회장에 취임하였다. 오경재는 임하준의 유언 3장을 총회 회의실에 공개하였다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 대신 펌프 정비 공정의 원본 함을 수문국과 공동 봉인하는 데 합의하였다.",
+        "ko": "2126년 명부교회는 오경재가 장로 인준을 거쳐 당회장에 취임하였다. 오경재는 임하준의 유언 3장을 총회 회의실에 공개하였다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 대신 펌프 정비 공정의 원본 함을 수문국과 공동 봉인하는 데 합의하였다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막일-p2",
+      "text": {
+        "en": "임하준은 2125년 겨울에 실종되었다. 실종 전날 밤 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 다음 교대 때 임하준의 양자 임초원이 원본 함의 봉인을 확인하였으며 그 사실은 유언 3장의 증인 칸에 기재되었다. 대한민국정부 대통령 윤서린은 유언의 인준을 보류하고 함의 봉인만 확인하였다.",
+        "ko": "임하준은 2125년 겨울에 실종되었다. 실종 전날 밤 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 다음 교대 때 임하준의 양자 임초원이 원본 함의 봉인을 확인하였으며 그 사실은 유언 3장의 증인 칸에 기재되었다. 대한민국정부 대통령 윤서린은 유언의 인준을 보류하고 함의 봉인만 확인하였다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막일-p3",
+      "text": {
+        "en": "2124년 가짜 약 상자가 서울역 경매에 올랐다. 흰십자단 단장 류은비는 흰십자단의 해당 경매 거래를 모두 끊었다. 같은 날 태욱그룹 생명안전 연구책임자 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다.",
+        "ko": "2124년 가짜 약 상자가 서울역 경매에 올랐다. 흰십자단 단장 류은비는 흰십자단의 해당 경매 거래를 모두 끊었다. 같은 날 태욱그룹 생명안전 연구책임자 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막일-p4",
+      "text": {
+        "en": "2125년 봄 정동노총 위원장 직선 투표에서 정유라가 재선되었다. 같은 해 가을 성남사업장과 제2분공방이 10일간 작업을 중단하였다. 태욱그룹 회장 정서온은 파업 9일째에 성남사업장을 방문하였다. 2124년 흉작 소문이 돌자 명동대교구 대주교 남윤경은 비상배급 칸을 열었고 공개 경매는 하루 미루어졌다.",
+        "ko": "2125년 봄 정동노총 위원장 직선 투표에서 정유라가 재선되었다. 같은 해 가을 성남사업장과 제2분공방이 10일간 작업을 중단하였다. 태욱그룹 회장 정서온은 파업 9일째에 성남사업장을 방문하였다. 2124년 흉작 소문이 돌자 명동대교구 대주교 남윤경은 비상배급 칸을 열었고 공개 경매는 하루 미루어졌다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막일-p5",
+      "text": {
+        "en": "2125년 가을 서부 관로의 탁도가 기준을 넘었다. 정수 감독 박누리는 서부 관로 밸브를 잠갔고 수문국 책임자 한재목은 공급 재개 문서의 서명을 보류하였다. 양천 구역장 이서담은 이 보류를 근거로 양천의 거부권을 계약 회의에 청구하였다.",
+        "ko": "2125년 가을 서부 관로의 탁도가 기준을 넘었다. 정수 감독 박누리는 서부 관로 밸브를 잠갔고 수문국 책임자 한재목은 공급 재개 문서의 서명을 보류하였다. 양천 구역장 이서담은 이 보류를 근거로 양천의 거부권을 계약 회의에 청구하였다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막일-p6",
+      "text": {
+        "en": "2125년 겨울 세 나라가 같은 통행로의 호위를 조재표 일행에 동시에 요청하였다. 이연은 2123년부터 그 일행의 수행 전령으로 정찰·호위 결과 보고서에 자기 이름으로 서명하였다. 2124년 귀환망은 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었고 신종목이 그 명단을 기록하였다. 2125년 용산 환적 계약은 서하진의 보증을 받은 상단 1곳에 돌아갔으며 환적국 역장 박태겸이 계약서에 서명하였다.",
+        "ko": "2125년 겨울 세 나라가 같은 통행로의 호위를 조재표 일행에 동시에 요청하였다. 이연은 2123년부터 그 일행의 수행 전령으로 정찰·호위 결과 보고서에 자기 이름으로 서명하였다. 2124년 귀환망은 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었고 신종목이 그 명단을 기록하였다. 2125년 용산 환적 계약은 서하진의 보증을 받은 상단 1곳에 돌아갔으며 환적국 역장 박태겸이 계약서에 서명하였다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "개막의-수장",
+      "depth": 3,
+      "text": {
+        "en": "Rulers at the opening",
+        "ko": "개막의 수장"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "개막의-수장-table1",
+      "columns": [
+        {
+          "en": "State",
+          "ko": "국가"
+        },
+        {
+          "en": "Tier",
+          "ko": "강약"
+        },
+        {
+          "en": "Ruler",
+          "ko": "수장"
+        },
+        {
+          "en": "Recorded",
+          "ko": "기재"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "대한민국정부",
+            "ko": "대한민국정부"
+          },
+          {
+            "en": "강국",
+            "ko": "강국"
+          },
+          {
+            "en": "대통령 윤서린",
+            "ko": "대통령 윤서린"
+          },
+          {
+            "en": "2121년 당직 가문 선거에서 당선. 취임일에 긴급명령 원본을 열람.",
+            "ko": "2121년 당직 가문 선거에서 당선. 취임일에 긴급명령 원본을 열람."
+          }
+        ],
+        [
+          {
+            "en": "수문국",
+            "ko": "수문국"
+          },
+          {
+            "en": "강국",
+            "ko": "강국"
+          },
+          {
+            "en": "책임자 한재목",
+            "ko": "책임자 한재목"
+          },
+          {
+            "en": "2119년 계약 회의에서 선출. 같은 해 이서담을 양천 구역장에 임명.",
+            "ko": "2119년 계약 회의에서 선출. 같은 해 이서담을 양천 구역장에 임명."
+          }
+        ],
+        [
+          {
+            "en": "규격맹",
+            "ko": "규격맹"
+          },
+          {
+            "en": "강국",
+            "ko": "강국"
+          },
+          {
+            "en": "위원장 강민서",
+            "ko": "위원장 강민서"
+          },
+          {
+            "en": "2121년 평의회에서 선출. 2120년 등록을 거부한 기술자를 시민권 명부에 올림.",
+            "ko": "2121년 평의회에서 선출. 2120년 등록을 거부한 기술자를 시민권 명부에 올림."
+          }
+        ],
+        [
+          {
+            "en": "환적국",
+            "ko": "환적국"
+          },
+          {
+            "en": "강국",
+            "ko": "강국"
+          },
+          {
+            "en": "역장 박태겸",
+            "ko": "역장 박태겸"
+          },
+          {
+            "en": "2122년 선로 가문 가장의 사망 뒤 장자로서 역장직을 이음.",
+            "ko": "2122년 선로 가문 가장의 사망 뒤 장자로서 역장직을 이음."
+          }
+        ],
+        [
+          {
+            "en": "동방사",
+            "ko": "동방사"
+          },
+          {
+            "en": "강국",
+            "ko": "강국"
+          },
+          {
+            "en": "사령관 배우진",
+            "ko": "사령관 배우진"
+          },
+          {
+            "en": "2118년 사령관에 취임. 2123년 복구복무자 명부를 병조의 함에 넣음.",
+            "ko": "2118년 사령관에 취임. 2123년 복구복무자 명부를 병조의 함에 넣음."
+          }
+        ],
+        [
+          {
+            "en": "태욱그룹",
+            "ko": "태욱그룹"
+          },
+          {
+            "en": "강국",
+            "ko": "강국"
+          },
+          {
+            "en": "회장 정서온",
+            "ko": "회장 정서온"
+          },
+          {
+            "en": "2112년 주주총회 승인. 분가 대표 2명 미서명. 족보에 항렬자 없이 등재.",
+            "ko": "2112년 주주총회 승인. 분가 대표 2명 미서명. 족보에 항렬자 없이 등재."
+          }
+        ],
+        [
+          {
+            "en": "여의도출자연합회",
+            "ko": "여의도출자연합회"
+          },
+          {
+            "en": "약국",
+            "ko": "약국"
+          },
+          {
+            "en": "의장 최지우",
+            "ko": "의장 최지우"
+          },
+          {
+            "en": "2120년 출자 가문들이 선출. 2123년 연합회 채널의 속보 송출을 중단.",
+            "ko": "2120년 출자 가문들이 선출. 2123년 연합회 채널의 속보 송출을 중단."
+          }
+        ],
+        [
+          {
+            "en": "흰십자단",
+            "ko": "흰십자단"
+          },
+          {
+            "en": "약국",
+            "ko": "약국"
+          },
+          {
+            "en": "단장 류은비",
+            "ko": "단장 류은비"
+          },
+          {
+            "en": "2116년 전임 단장이 후계자로 지명. 2124년 서울역 경매 거래를 끊음.",
+            "ko": "2116년 전임 단장이 후계자로 지명. 2124년 서울역 경매 거래를 끊음."
+          }
+        ],
+        [
+          {
+            "en": "아관사",
+            "ko": "아관사"
+          },
+          {
+            "en": "약국",
+            "ko": "약국"
+          },
+          {
+            "en": "관문사령관 고서준",
+            "ko": "관문사령관 고서준"
+          },
+          {
+            "en": "2115년 선출. 2121년 구의수비대장 탁서윤과 첫 공동 명령서에 서명.",
+            "ko": "2115년 선출. 2121년 구의수비대장 탁서윤과 첫 공동 명령서에 서명."
+          }
+        ],
+        [
+          {
+            "en": "신내운수",
+            "ko": "신내운수"
+          },
+          {
+            "en": "약국",
+            "ko": "약국"
+          },
+          {
+            "en": "사장 장세화",
+            "ko": "사장 장세화"
+          },
+          {
+            "en": "2118년 사장직을 이음. 2125년 배차표의 의무 칸을 계절 교대로 나눔.",
+            "ko": "2118년 사장직을 이음. 2125년 배차표의 의무 칸을 계절 교대로 나눔."
+          }
+        ],
+        [
+          {
+            "en": "명부교회",
+            "ko": "명부교회"
+          },
+          {
+            "en": "소국",
+            "ko": "소국"
+          },
+          {
+            "en": "당회장 오경재",
+            "ko": "당회장 오경재"
+          },
+          {
+            "en": "2126년 장로 인준으로 취임. 유언 3장을 총회 회의실에 공개.",
+            "ko": "2126년 장로 인준으로 취임. 유언 3장을 총회 회의실에 공개."
+          }
+        ],
+        [
+          {
+            "en": "명동대교구",
+            "ko": "명동대교구"
+          },
+          {
+            "en": "소국",
+            "ko": "소국"
+          },
+          {
+            "en": "대주교 남윤경",
+            "ko": "대주교 남윤경"
+          },
+          {
+            "en": "2113년 사제단 비공개 선출. 2124년 비상배급 칸을 염.",
+            "ko": "2113년 사제단 비공개 선출. 2124년 비상배급 칸을 염."
+          }
+        ],
+        [
+          {
+            "en": "안국총림",
+            "ko": "안국총림"
+          },
+          {
+            "en": "소국",
+            "ko": "소국"
+          },
+          {
+            "en": "방장 백온",
+            "ko": "방장 백온"
+          },
+          {
+            "en": "2122년 산중총회가 추대. 2123년 피난민 명부의 빈칸을 시민권 줄로 옮김.",
+            "ko": "2122년 산중총회가 추대. 2123년 피난민 명부의 빈칸을 시민권 줄로 옮김."
+          }
+        ],
+        [
+          {
+            "en": "성하그룹",
+            "ko": "성하그룹"
+          },
+          {
+            "en": "소국",
+            "ko": "소국"
+          },
+          {
+            "en": "회장 이홍원",
+            "ko": "회장 이홍원"
+          },
+          {
+            "en": "2114년 승계 시험 뒤 회장직을 이음.",
+            "ko": "2114년 승계 시험 뒤 회장직을 이음."
+          }
+        ],
+        [
+          {
+            "en": "중앙기술보존원",
+            "ko": "중앙기술보존원"
+          },
+          {
+            "en": "소국",
+            "ko": "소국"
+          },
+          {
+            "en": "원장 오해린",
+            "ko": "원장 오해린"
+          },
+          {
+            "en": "2119년 원장 시험 수석. 같은 해 3월 1일 취임.",
+            "ko": "2119년 원장 시험 수석. 같은 해 3월 1일 취임."
+          }
+        ],
+        [
+          {
+            "en": "정동노총",
+            "ko": "정동노총"
+          },
+          {
+            "en": "소국",
+            "ko": "소국"
+          },
+          {
+            "en": "위원장 정유라",
+            "ko": "위원장 정유라"
+          },
+          {
+            "en": "2120년 직선 당선, 2125년 봄 재선. 파업 9일째에 정서온이 성남을 방문.",
+            "ko": "2120년 직선 당선, 2125년 봄 재선. 파업 9일째에 정서온이 성남을 방문."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "개막의-인물",
+      "depth": 3,
+      "text": {
+        "en": "People at the opening",
+        "ko": "개막의 인물"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막의-인물-p1",
+      "text": {
+        "en": "임초원은 임하준의 양자이다. 2125년 겨울 임하준이 실종된 뒤 다음 교대 때 원본 함의 봉인을 확인하였으며 확인 사실은 유언 3장의 증인 칸에 기재되었다.",
+        "ko": "임초원은 임하준의 양자이다. 2125년 겨울 임하준이 실종된 뒤 다음 교대 때 원본 함의 봉인을 확인하였으며 확인 사실은 유언 3장의 증인 칸에 기재되었다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막의-인물-p2",
+      "text": {
+        "en": "한소미는 개막 시점의 공방 대표이다. 2125년 봄 윤서린과 최지우, 임초원과 함께 임하준의 유언을 읽는 자리에 선다.",
+        "ko": "한소미는 개막 시점의 공방 대표이다. 2125년 봄 윤서린과 최지우, 임초원과 함께 임하준의 유언을 읽는 자리에 선다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막의-인물-p3",
+      "text": {
+        "en": "정호준은 태욱그룹 생명안전 연구책임자이다. 2124년 가짜 약 상자가 서울역 경매에 오른 날 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다.",
+        "ko": "정호준은 태욱그룹 생명안전 연구책임자이다. 2124년 가짜 약 상자가 서울역 경매에 오른 날 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "강약",
+      "depth": 3,
+      "text": {
+        "en": "Strength tiers",
+        "ko": "강약"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강약-p1",
+      "text": {
+        "en": "2125년 11월 기록청은 16개 국가의 강약 장부를 작성하였다. 강국은 둘 이상의 속국 또는 구역 지배와 핵심 기능 독점과 상비 무력을 함께 가진 나라이다. 강국란에는 대한민국정부, 수문국, 규격맹, 환적국, 동방사, 태욱그룹을 이 순서로 기재하였다.",
+        "ko": "2125년 11월 기록청은 16개 국가의 강약 장부를 작성하였다. 강국은 둘 이상의 속국 또는 구역 지배와 핵심 기능 독점과 상비 무력을 함께 가진 나라이다. 강국란에는 대한민국정부, 수문국, 규격맹, 환적국, 동방사, 태욱그룹을 이 순서로 기재하였다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강약-p2",
+      "text": {
+        "en": "약국은 속국이 하나 이하이지만 대체할 수 없는 지렛대를 가진 나라이다. 약국란에는 여의도출자연합회, 흰십자단, 아관사, 신내운수를 기재하였다. 여의도출자연합회는 증서, 흰십자단은 치료, 아관사는 아차산 관문과 구의 물, 신내운수는 어느 쪽의 화물도 가리지 않는 호송을 맡는다.",
+        "ko": "약국은 속국이 하나 이하이지만 대체할 수 없는 지렛대를 가진 나라이다. 약국란에는 여의도출자연합회, 흰십자단, 아관사, 신내운수를 기재하였다. 여의도출자연합회는 증서, 흰십자단은 치료, 아관사는 아차산 관문과 구의 물, 신내운수는 어느 쪽의 화물도 가리지 않는 호송을 맡는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강약-p3",
+      "text": {
+        "en": "소국은 속국이나 독립 무력 없이 역 한 곳의 제도를 지키는 나라이다. 소국란에는 명부교회, 명동대교구, 안국총림, 성하그룹, 중앙기술보존원, 정동노총을 기재하였다.",
+        "ko": "소국은 속국이나 독립 무력 없이 역 한 곳의 제도를 지키는 나라이다. 소국란에는 명부교회, 명동대교구, 안국총림, 성하그룹, 중앙기술보존원, 정동노총을 기재하였다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강약-p4",
+      "text": {
+        "en": "대한민국정부는 광화문을 중심으로 종로·중구를 직접 다스린다. 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단은 2111년 3월부터 수장의 승계와 조약의 원본을 기록청에 제출하였으며 기록청은 도장을 찍은 등본을 돌려주었다. 2069년 대한민국정부는 종로·중구 거주자 명부를 작성하였고 정부서울청사 배급 창구는 그 명부로 식량을 지급하였다. 2106년 종로·중구의 통행증에는 정부서울청사 도장을 찍도록 정하였으며 상거래 계약서는 도장이 있어야 기록청에 등재되고 통행증과 계약서에는 인지세가 붙었다. 2070년 청사 상비 경비대는 광화문·종로3가·을지로입구역의 소집부를 작성하고 세 역의 교대 경비를 맡았다.",
+        "ko": "대한민국정부는 광화문을 중심으로 종로·중구를 직접 다스린다. 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단은 2111년 3월부터 수장의 승계와 조약의 원본을 기록청에 제출하였으며 기록청은 도장을 찍은 등본을 돌려주었다. 2069년 대한민국정부는 종로·중구 거주자 명부를 작성하였고 정부서울청사 배급 창구는 그 명부로 식량을 지급하였다. 2106년 종로·중구의 통행증에는 정부서울청사 도장을 찍도록 정하였으며 상거래 계약서는 도장이 있어야 기록청에 등재되고 통행증과 계약서에는 인지세가 붙었다. 2070년 청사 상비 경비대는 광화문·종로3가·을지로입구역의 소집부를 작성하고 세 역의 교대 경비를 맡았다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강약-p5",
+      "text": {
+        "en": "2121년 6월 명동대교구·안국총림·정동노총은 종로·중구 통행증의 청사 도장을 갱신하고 도심 배급 창구에 제출할 명부를 기록청 양식으로 작성하였다.",
+        "ko": "2121년 6월 명동대교구·안국총림·정동노총은 종로·중구 통행증의 청사 도장을 갱신하고 도심 배급 창구에 제출할 명부를 기록청 양식으로 작성하였다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강약-p6",
+      "text": {
+        "en": "2123년 6월 온민의는 수문국에 긴급명령 재복종서를 내도록 요구하였다. 수문국은 동의서에 서명하지 않았다. 동방사·아관사·환적국·신내운수·규격맹·흰십자단은 기록청의 승계와 조약 기재를 보류하였다. 대통령 윤서린은 재복종 요구문을 철회하였다. 비계보 8국은 기록청 기재 의무가 없다.",
+        "ko": "2123년 6월 온민의는 수문국에 긴급명령 재복종서를 내도록 요구하였다. 수문국은 동의서에 서명하지 않았다. 동방사·아관사·환적국·신내운수·규격맹·흰십자단은 기록청의 승계와 조약 기재를 보류하였다. 대통령 윤서린은 재복종 요구문을 철회하였다. 비계보 8국은 기록청 기재 의무가 없다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강약-p7",
+      "text": {
+        "en": "2125년 12월 수문국·규격맹·환적국·동방사·태욱그룹은 각국 병력과 봉신 병력의 소집 문서를 기록청에 제출하였다. 청사 경비대는 광화문·종로3가·을지로입구역의 교대 경비를 유지하였다. 기록청은 청사 경비대의 원정 소집 문서를 작성하지 않았다.",
+        "ko": "2125년 12월 수문국·규격맹·환적국·동방사·태욱그룹은 각국 병력과 봉신 병력의 소집 문서를 기록청에 제출하였다. 청사 경비대는 광화문·종로3가·을지로입구역의 교대 경비를 유지하였다. 기록청은 청사 경비대의 원정 소집 문서를 작성하지 않았다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강약-p8",
+      "text": {
+        "en": "당직 가문들은 대통령 선거, 기록청장 인준, 청사 경비대의 배치, 인지세 수입을 두고 다툰다. 2122년 5월 김연규가 기록 당직자 19명을 모아 온민의(穩民議)를 결성하였다. 2122년 8월 온민의는 청사 경비대를 수문국 경계로 보내자는 안을 대통령 윤서린에게 제출하였고 윤서린은 경비대 이동안에 서명하지 않았다. 2123년 1월 당직 가문 두 무리는 서로 다른 기록청장 후보를 냈고 윤서린은 3개월 동안 인준서에 도장을 찍지 않았다. 2123년 4월 당직 가문 세 무리는 인지세 배분안을 각각 제출하였고 윤서린은 인지세 장부를 경비대·기록청·배급 창구로 나누어 보관하도록 정하였다.",
+        "ko": "당직 가문들은 대통령 선거, 기록청장 인준, 청사 경비대의 배치, 인지세 수입을 두고 다툰다. 2122년 5월 김연규가 기록 당직자 19명을 모아 온민의(穩民議)를 결성하였다. 2122년 8월 온민의는 청사 경비대를 수문국 경계로 보내자는 안을 대통령 윤서린에게 제출하였고 윤서린은 경비대 이동안에 서명하지 않았다. 2123년 1월 당직 가문 두 무리는 서로 다른 기록청장 후보를 냈고 윤서린은 3개월 동안 인준서에 도장을 찍지 않았다. 2123년 4월 당직 가문 세 무리는 인지세 배분안을 각각 제출하였고 윤서린은 인지세 장부를 경비대·기록청·배급 창구로 나누어 보관하도록 정하였다."
       }
     },
     {
@@ -2890,7 +1559,7 @@
       "anchor": "첫해-사계절",
       "depth": 2,
       "text": {
-        "en": "The Four Seasons of the First Year",
+        "en": "Four seasons of the first year",
         "ko": "첫해 사계절"
       }
     },
@@ -2899,7 +1568,7 @@
       "anchor": "봄-세-유언",
       "depth": 3,
       "text": {
-        "en": "Spring: Three Wills",
+        "en": "Spring: three wills",
         "ko": "봄: 세 유언"
       }
     },
@@ -2907,8 +1576,8 @@
       "kind": "paragraph",
       "anchor": "봄-세-유언-p1",
       "text": {
-        "en": "Yun Seorin and Choi Jiwoo, Im Chowon and the workshop delegate Han Somi read the wills. When three differing wills of Im Hajun and an edited voice record were found, the Records Bureau opened an accreditation review and the transmission company searched for original evidence. Support coalitions formed around each successor candidate. If Yun Seorin fixed the true copy, the Records Bureau's accreditation power strengthened; if Choi Jiwoo broadcast the fabrication first, riots and an open re-election broke out. If the player hid evidence, secret deals with the great powers became possible, but the risk of exposure remained. The turbid waters of summer followed.",
-        "ko": "윤서린과 최지우, 임초원과 공방대표 한소미가 그 유언을 읽는다. 서로 다른 세 개의 임하준 유언장과 편집된 음성기록이 발견되면, 기록청이 인준 심사를 열고 송신공사가 원본 증거를 찾는다. 후계 후보별 지지 연합이 생긴다. 윤서린이 진본을 확정하면 기록청의 인준권이 강화되고, 최지우이 조작을 먼저 방송하면 폭동과 공개 재선거가 일어난다. 플레이어가 증거를 숨기면 강국과 비밀 거래를 할 수 있지만 이후 폭로 위험이 남는다. 여름의 탁수가 이어서 열린다."
+        "en": "윤서린과 최지우, 임초원과 공방 대표 한소미가 유언을 읽는다. 서로 다른 임하준의 유언 3장과 편집된 음성기록이 발견되면 기록청이 인준 심사를 열고 원본 증거를 찾는다. 윤서린이 진본을 확정하면 기록청의 인준이 남고, 최지우가 조작을 먼저 알리면 공개 재선거가 열린다. 증거를 숨기면 강국과 비밀 거래가 가능하지만 이후 폭로가 남는다.",
+        "ko": "윤서린과 최지우, 임초원과 공방 대표 한소미가 유언을 읽는다. 서로 다른 임하준의 유언 3장과 편집된 음성기록이 발견되면 기록청이 인준 심사를 열고 원본 증거를 찾는다. 윤서린이 진본을 확정하면 기록청의 인준이 남고, 최지우가 조작을 먼저 알리면 공개 재선거가 열린다. 증거를 숨기면 강국과 비밀 거래가 가능하지만 이후 폭로가 남는다."
       }
     },
     {
@@ -2916,7 +1585,7 @@
       "anchor": "여름-탁수와-가짜-약",
       "depth": 3,
       "text": {
-        "en": "Summer: Turbid Water and Counterfeit Medicine",
+        "en": "Summer: turbid water and false medicine",
         "ko": "여름: 탁수와 가짜 약"
       }
     },
@@ -2924,8 +1593,8 @@
       "kind": "paragraph",
       "anchor": "여름-탁수와-가짜-약-p1",
       "text": {
-        "en": "Jeong Hojun, Ryu Eunbi, Han Jaemok, and O Haerin took charge of the turbid water and the counterfeit medicine. When some water tests failed after the storms and counterfeit drugs circulated, the research council demanded open testing and the Water Director-General demanded delay to prevent panic. Trust in water and medicine shook, and the Noryangjin frozen stock fell into crisis. Immediate disclosure brought short riots and long-term recovery of trust; concealment kept supply but opened Choi Jiwoo's exposure event. A successful joint investigation formed the non-military league of Jegi-dong, Magok, and Sangam. Next came the autumn columns of Bukhansan Bogukmun.",
-        "ko": "정호준·류은비·한재목·오해린이 탁수와 가짜 약을 맡는다. 폭우 뒤 일부 수질 검사가 실패하고 가짜 약품이 돌면, 연구평의회는 검사 공개를, 급수총재는 혼란 방지를 위한 지연을 주장한다. 물·의료 신뢰가 흔들리고 노량진 냉동재고가 위기에 빠진다. 즉시 공개하면 단기 폭동과 장기 신뢰 회복이 오고, 은폐하면 공급은 유지되지만 최지우의 폭로 사건이 열린다. 공동 조사에 성공하면 제기동·마곡·상암의 비군사 동맹이 생긴다. 가을의 북한산보국문 행렬이 그 다음이다."
+        "en": "정호준·류은비·한재목·오해린이 탁수와 가짜 약을 맡는다. 폭우 뒤 일부 수질 검사가 실패하고 가짜 약이 돌면 검사 공개와 지연이 맞선다. 즉시 공개하면 단기 소란과 장기 신뢰가 오고, 은폐하면 공급은 유지되지만 최지우의 공개가 열린다. 공동 조사가 성사되면 제기동·마곡·상암의 비군사 연대가 생긴다.",
+        "ko": "정호준·류은비·한재목·오해린이 탁수와 가짜 약을 맡는다. 폭우 뒤 일부 수질 검사가 실패하고 가짜 약이 돌면 검사 공개와 지연이 맞선다. 즉시 공개하면 단기 소란과 장기 신뢰가 오고, 은폐하면 공급은 유지되지만 최지우의 공개가 열린다. 공동 조사가 성사되면 제기동·마곡·상암의 비군사 연대가 생긴다."
       }
     },
     {
@@ -2933,16 +1602,16 @@
       "anchor": "가을-북한산보국문-행렬",
       "depth": 3,
       "text": {
-        "en": "Autumn: The Bukhansan Bogukmun Columns",
-        "ko": "가을: 북한산보국문 행렬"
+        "en": "Autumn: the Bukhansan Bogukmun column",
+        "ko": "가을: 북한산 보국문 행렬"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "가을-북한산보국문-행렬-p1",
       "text": {
-        "en": "Baek On and Gang Minseo, Bae Ujin and Jang Sehwa opened the columns. When the north ran short of food and the service contracts expired, refugee families moved south, and Amsa bound water rights to service re-registration. The Neutral Convoy City and the Fabrication Alliance came under pressure over the refugee question. A citizenship-and-voluntary-service accord strengthened the lesser-state league; forced registration swelled Amsa's ranks but opened desertion, mutiny, and family-rescue events. Closing the borders brought mountain fighting at Bukhansan Bogukmun and a winter famine. The black dispatch board of winter followed.",
-        "ko": "백온과 강민서, 배우진과 장세화가 행렬을 연다. 북부 식량이 부족하고 복무계약이 만료되면 난민 가족들이 남하하고, 암사는 급수권과 복무 재등록을 묶는다. 환승시와 제작동맹이 난민 수용 문제로 압박받는다. 시민권과 자발복무 협약은 약소국 연대를 강화하고, 강제등록은 암사의 병력을 늘리지만 탈주·반란·가족구출 사건을 연다. 국경 폐쇄는 북한산보국문의 산악 공격과 겨울 기근을 부른다. 겨울의 검은 배차표가 그 뒤를 잇는다."
+        "en": "백온과 강민서, 배우진과 장세화가 행렬을 맡는다. 북부 식량이 줄고 복무 계약이 끝나면 피난 가족들이 남하하고 동방사는 급수와 복무 재등록을 묶는다. 시민권과 자발 복무의 협약은 소국 연대를 남기고, 강제 등록은 동방사의 병력을 늘리되 탈주와 가족 구출을 연다. 통행 폐쇄는 북한산 보국문의 공격과 겨울 기근을 부른다.",
+        "ko": "백온과 강민서, 배우진과 장세화가 행렬을 맡는다. 북부 식량이 줄고 복무 계약이 끝나면 피난 가족들이 남하하고 동방사는 급수와 복무 재등록을 묶는다. 시민권과 자발 복무의 협약은 소국 연대를 남기고, 강제 등록은 동방사의 병력을 늘리되 탈주와 가족 구출을 연다. 통행 폐쇄는 북한산 보국문의 공격과 겨울 기근을 부른다."
       }
     },
     {
@@ -2950,7 +1619,7 @@
       "anchor": "겨울-검은-배차표",
       "depth": 3,
       "text": {
-        "en": "Winter: The Black Dispatch Board",
+        "en": "Winter: the black dispatch sheet",
         "ko": "겨울: 검은 배차표"
       }
     },
@@ -2958,8 +1627,8 @@
       "kind": "paragraph",
       "anchor": "겨울-검은-배차표-p1",
       "text": {
-        "en": "Park Taegyeom, I Hongwon, Jang Sehwa, and Bae Ujin traced the dispatch board. When Amsa-made weapons were found on a medical train and the northern successor-examination parts were tampered with, the lesser states investigated whether the official command net or the secret officer network had moved the train. Suspicions of Bae Ujin's coup preparations and Park Taegyeom's adoptive-succession plan surfaced together. If Bae Ujin punished the officers, a limited joint defense was possible; if he approved after the fact, an eastern protection war began. When evidence of tampered weapons emerged, it revealed that a third person had steered toward war. The lesser-states council of the second year followed.",
-        "ko": "박태겸, 이홍원, 장세화, 배우진이 배차표를 추적한다. 의료열차에서 암사제 무기가 발견되고 북부 후계시험 부품이 조작되면, 약소국들은 공식 명령망과 비밀 장교망 중 누가 열차를 움직였는지 조사한다. 배우진의 쿠데타 준비 의혹과 박태겸의 양자 승계안이 동시에 떠오른다. 배우진이 장교를 처벌하면 제한적 공동방위가 가능하고, 사후 승인하면 동부 보호전쟁이 시작된다. 무기가 조작된 증거가 나오면 제3의 인물이 전쟁을 유도한 사실이 드러난다. 둘째 해 약소국 회의가 이어서 열린다."
+        "en": "박태겸, 이홍원, 장세화, 배우진이 배차표를 추적한다. 의료 열차에서 동방사 무기가 발견되고 북부 후계 시험 부품이 바뀌면 공식 명령과 비밀 장교망 가운데 누가 열차를 움직였는지가 조사가 된다. 배우진이 장교를 처벌하면 제한된 공동 방위가 가능하고, 사후 승인이 나면 동부 보호 전쟁이 시작된다.",
+        "ko": "박태겸, 이홍원, 장세화, 배우진이 배차표를 추적한다. 의료 열차에서 동방사 무기가 발견되고 북부 후계 시험 부품이 바뀌면 공식 명령과 비밀 장교망 가운데 누가 열차를 움직였는지가 조사가 된다. 배우진이 장교를 처벌하면 제한된 공동 방위가 가능하고, 사후 승인이 나면 동부 보호 전쟁이 시작된다."
       }
     },
     {
@@ -2967,7 +1636,7 @@
       "anchor": "둘째-해-패권전",
       "depth": 2,
       "text": {
-        "en": "The Hegemony War of the Second Year",
+        "en": "Hegemony contest of the second year",
         "ko": "둘째 해 패권전"
       }
     },
@@ -2976,7 +1645,7 @@
       "anchor": "봄-열한-자리-회의",
       "depth": 3,
       "text": {
-        "en": "Spring: The Council of Eleven Seats",
+        "en": "Spring: the eleven-seat council",
         "ko": "봄: 열한 자리 회의"
       }
     },
@@ -2984,8 +1653,8 @@
       "kind": "paragraph",
       "anchor": "봄-열한-자리-회의-p1",
       "text": {
-        "en": "Jeong Yura called Jang Sehwa, Ryu Eunbi, Baek On, and the delegates of the eleven lesser states to one table. Where the water and protection contracts of three great powers crossed, they discussed joint negotiation rights for the lesser states and a mutual convoy treaty. The possibility arose that the structure of five great powers versus eleven lesser states would turn into five great powers versus one league of lesser states. It could fork into a joint charter, partitioned submission by great power, internal bribery and assassination, or a collapse of the council, and the next cell was the Sluice War or the Seoul Compact.",
-        "ko": "정유라가 장세화·류은비·백온과 11개 약소국 대표를 한자리에 부른다. 세 강국의 급수·보호계약이 서로 어긋난 자리에서 약소국 공동교섭권과 상호호송조약을 논의한다. 강국5 대 약소국11의 구도가 강국5 대 약소국연합1로 바뀔 가능성이 생긴다. 공동헌장, 강국별 분할 복속, 내부 매수와 암살, 회의 결렬 가운데 하나로 갈릴 수 있고, 수문전쟁 또는 서울 협약이 그 다음 칸이다."
+        "en": "정유라가 장세화·류은비·백온과 소국 대표들을 한자리에 부른다. 강국들의 급수·보호 계약이 서로 어긋난 자리에서 소국 공동 교섭과 상호 호송을 논의한다. 공동 문서, 강국별 분할, 내부 매수, 회의 결렬 가운데 하나로 갈린다.",
+        "ko": "정유라가 장세화·류은비·백온과 소국 대표들을 한자리에 부른다. 강국들의 급수·보호 계약이 서로 어긋난 자리에서 소국 공동 교섭과 상호 호송을 논의한다. 공동 문서, 강국별 분할, 내부 매수, 회의 결렬 가운데 하나로 갈린다."
       }
     },
     {
@@ -2993,7 +1662,7 @@
       "anchor": "여름-이후-다섯-통일안",
       "depth": 3,
       "text": {
-        "en": "After Summer: Five Unification Plans",
+        "en": "After summer: five settlements",
         "ko": "여름 이후: 다섯 통일안"
       }
     },
@@ -3001,24 +1670,24 @@
       "kind": "paragraph",
       "anchor": "여름-이후-다섯-통일안-p1",
       "text": {
-        "en": "The game forced no single conquest ending. According to the living persons and the treaties concluded, the following orders competed.",
-        "ko": "게임은 하나의 정복 결말을 강제하지 않는다. 살아 있는 인물과 체결된 조약에 따라 다음 질서가 경쟁한다."
+        "en": "하나의 정복 결말을 강제하지 않는다. 살아 있는 인물과 체결된 조약에 따라 다음 질서가 경쟁한다.",
+        "ko": "하나의 정복 결말을 강제하지 않는다. 살아 있는 인물과 체결된 조약에 따라 다음 질서가 경쟁한다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "여름-이후-다섯-통일안-p2",
       "text": {
-        "en": "Yun Seorin's Records Federation united around legitimacy and the open ledgers; Han Jaemok's Sluice Alliance bound with the minimum water right and ration contracts. Gang Minseo's Fabrication Alliance bound through repair standards and labor citizenship; Jeong Hojun's Joint Technology Institute through a league of knowledge, medicine, and verification organs; Bae Ujin's Waterworks Protection Sphere through military command and a record of development; Jeong Yura's Multistate Compact through the joint negotiation of the lesser states and limited central power.",
-        "ko": "윤서린의 기록연방은 법통과 공개 원장을 중심으로 통합하고, 한재목의 수문동맹은 최소 급수권과 배급계약으로 묶는다. 강민서의 제작동맹은 수리규격과 노동 시민권으로, 정호준의 공동기술원은 지식·의료·검증기관의 연합으로, 배우진의 상수보호권은 군사 지휘와 개발 실적으로, 정유라의 다국가협약은 약소국 공동교섭과 제한된 중앙권력으로 통합한다."
+        "en": "윤서린의 기록 연방은 기록청 등본과 공개 장부로 묶는다. 한재목의 수문 동맹은 최소 급수와 배급 계약으로 묶는다. 강민서의 규격 동맹은 규격서와 노동 시민권으로 묶는다. 정호준의 공동 기술원은 문서·치료·검증의 연합으로 묶는다. 배우진의 보호권은 군사 지휘와 복구 실적으로 묶는다. 정유라의 다국 협약은 소국 공동 교섭과 제한된 중앙 권한으로 묶는다.",
+        "ko": "윤서린의 기록 연방은 기록청 등본과 공개 장부로 묶는다. 한재목의 수문 동맹은 최소 급수와 배급 계약으로 묶는다. 강민서의 규격 동맹은 규격서와 노동 시민권으로 묶는다. 정호준의 공동 기술원은 문서·치료·검증의 연합으로 묶는다. 배우진의 보호권은 군사 지휘와 복구 실적으로 묶는다. 정유라의 다국 협약은 소국 공동 교섭과 제한된 중앙 권한으로 묶는다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "여름-이후-다섯-통일안-p3",
       "text": {
-        "en": "Each unification plan could deform into a peaceful federation, a loose alliance, a hegemonic protectorate, or a military conquest.",
-        "ko": "각 통일안은 평화적 연방, 느슨한 동맹, 패권적 보호국, 군사 정복으로 변형될 수 있다."
+        "en": "각 안은 연방, 동맹, 보호, 정복으로 변형될 수 있다.",
+        "ko": "각 안은 연방, 동맹, 보호, 정복으로 변형될 수 있다."
       }
     },
     {

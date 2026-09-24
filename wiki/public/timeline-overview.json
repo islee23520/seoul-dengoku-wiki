@@ -82,10 +82,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -280,10 +276,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -518,10 +510,6 @@
           "route": "/world/Century-Annals"
         },
         {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
-        },
-        {
           "title": "가문",
           "route": "/world/Chaebol-Houses-and-Century-Factions"
         },
@@ -577,10 +565,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         },
         {
           "title": "이 시대의 기술과 무구",
@@ -663,10 +647,6 @@
           "route": "/world/Century-Annals"
         },
         {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
-        },
-        {
           "title": "신앙과 문화의 분열",
           "route": "/world/Faith-Culture-Schism"
         },
@@ -688,10 +668,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         },
         {
           "title": "신앙과 문화의 분열",
@@ -736,10 +712,6 @@
           "route": "/world/Century-Annals"
         },
         {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
-        },
-        {
           "title": "가문",
           "route": "/world/Chaebol-Houses-and-Century-Factions"
         },
@@ -761,10 +733,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -780,10 +748,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         },
         {
           "title": "가문",
@@ -803,10 +767,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -864,10 +824,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         },
         {
           "title": "가문",
@@ -1024,10 +980,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -1096,10 +1048,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -1145,10 +1093,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -1270,10 +1214,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -1904,10 +1844,6 @@
           "route": "/world/Century-Annals"
         },
         {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
-        },
-        {
           "title": "가문",
           "route": "/world/Chaebol-Houses-and-Century-Factions"
         },
@@ -1944,10 +1880,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         }
       ]
     },
@@ -1980,10 +1912,6 @@
           "route": "/world/Century-Annals"
         },
         {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
-        },
-        {
           "title": "가문",
           "route": "/world/Chaebol-Houses-and-Century-Factions"
         },
@@ -2009,10 +1937,6 @@
         {
           "title": "서울전국 백년실록",
           "route": "/world/Century-Annals"
-        },
-        {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
         },
         {
           "title": "신앙과 문화의 분열",
@@ -2144,29 +2068,29 @@
   "states": [
     {
       "id": "S01",
-      "name": "급수계약정",
-      "slug": "s10",
-      "origin": "서울아리수본부 영등포아리수정수센터 + 신정차량기지. 중심 영등포역(여의도는 전경련에 넘김)",
-      "government": "봉건(운영가문) · 수문가",
-      "power": "강국. 물(영등포 정수) + 철도(신정 기지) + 한강 교량",
+      "name": "수문국",
+      "slug": "s01",
+      "origin": "급수계약정",
+      "government": "물 계약 가문 계약 회의의 선출 군주, 수문가 최다 당선",
+      "power": "강국",
       "ruler": "한재목",
-      "cause": "정수 당직이 급수 계약을 헌장으로 읽었다. 여의도 금융 회관은 옆나라로 갈라지고, 영등포역 수문가가 서부 물을 판다.",
+      "cause": "장경종 블록, 여의도 되찾기 원한",
       "labelX": 469.16,
       "labelY": 619.22,
-      "capitalStationId": "Yeongdeungpo",
-      "capitalRegionId": "region:1156051500",
-      "capitalX": 406.65,
-      "capitalY": 666.68
+      "capitalStationId": "양평",
+      "capitalRegionId": "region:1156061000",
+      "capitalX": 347.21,
+      "capitalY": 629.33
     },
     {
       "id": "S02",
-      "name": "규격동맹",
-      "slug": "s11",
-      "origin": "구로·금천 공단 + 천왕차량기지. 중심 구로역",
-      "government": "상업(조합)",
-      "power": "강국. 수리(공단·기지) + 외부연결(서남 외곽)",
+      "name": "규격맹",
+      "slug": "s02",
+      "origin": "규격동맹",
+      "government": "공방 장인 길드 평의회, 스승에서 제자로 잇는 도제 계승",
+      "power": "강국",
       "ruler": "강민서",
-      "cause": "공단 규격이 시민권보다 먼저 남았다. 구로역 제작 조합이 볼트 제사를 국가로 유지한다. 대림 기숙은 이 나라 안의 호다.",
+      "cause": "장경종 블록, 태욱그룹에 규격을 넘김",
       "labelX": 209.36,
       "labelY": 773.7,
       "capitalStationId": "Guro",
@@ -2176,13 +2100,13 @@
     },
     {
       "id": "S03",
-      "name": "양재기공주식회사",
-      "slug": "s04",
-      "origin": "양재기공주식회사. 서초구 헌릉로 12 양재동. 중심 양재역",
-      "government": "상업(주식회사) · 정호준(정씨 운영가문)",
-      "power": "강국. 수리(차체·리깅·현장 휴머노이드 잔존) + 외부연결(남부 시계·양재 외곽)",
+      "name": "태욱그룹",
+      "slug": "s03",
+      "origin": "양재기공주식회사",
+      "government": "정씨 회장가 세습, 회장 정서온",
+      "power": "강국",
       "ruler": "정호준",
-      "cause": "2026년 양재 본사와 현장 시험 라인이 이미 휴머노이드를 굴렸다. 이탈 주간에 구름 학습이 죽고 정비 가문이 상호를 남겼다. 당시의 주식회사는 차를 만들지 못해도 차체를 고치고 남쪽 길을 연다.",
+      "cause": "정통회 블록, 규격맹의 규격을 받음",
       "labelX": 86.43,
       "labelY": 518.51,
       "capitalStationId": "양재",
@@ -2192,13 +2116,13 @@
     },
     {
       "id": "S04",
-      "name": "설교명부정",
-      "slug": "s05",
-      "origin": "설교명부정 총회. 총회회관 종로구 대학로3길 29 연지동. 개막 중심 삼성역(강남 대형교회 밀집)",
-      "government": "신정 · 당회장 · 오경재",
-      "power": "약소. 명부·구휼·예배당 부동산은 세고, 물·철도는 없다",
+      "name": "명부교회",
+      "slug": "s04",
+      "origin": "설교명부정",
+      "government": "당회장 목사직 부자 세습, 오씨",
+      "power": "소국",
       "ruler": "오경재",
-      "cause": "연지동 총회 명부가 대정전 밤의 당직표가 됐다. 임하준 실종 뒤 총회 인준을 받은 오경재가 당회장에 앉았고, 한 세기 뒤 살아남은 강단 부동산은 강남 쪽이라 삼성역이 장로회 수도다.",
+      "cause": "성전총회 블록, 성하그룹의 후원",
       "labelX": 800.03,
       "labelY": 547.55,
       "capitalStationId": "삼성",
@@ -2208,13 +2132,13 @@
     },
     {
       "id": "S05",
-      "name": "호위보호정",
-      "slug": "s13",
-      "origin": "암사아리수정수센터 + 고덕차량기지. 중심 암사역",
-      "government": "군정 · 사령관",
-      "power": "강국. 물(암사 정수) + 철도(고덕 기지) + 외부연결(동부 시계)",
+      "name": "동방사",
+      "slug": "s05",
+      "origin": "호위보호정",
+      "government": "군벌 가문 배씨 세습 사령관",
+      "power": "강국",
       "ruler": "배우진",
-      "cause": "상수 당직과 잔존 군 명부가 한 비상감독으로 묶였다. 암사역이 동부 급수 보호를 선포한다.",
+      "cause": "성전총회 블록, 무속 박해",
       "labelX": 1141,
       "labelY": 491.02,
       "capitalStationId": "암사",
@@ -2225,12 +2149,12 @@
     {
       "id": "S06",
       "name": "대한민국정부",
-      "slug": "s01",
-      "origin": "대한민국 정부. 정부서울청사 본관 종로구 세종대로 209. 중심 광화문역",
-      "government": "봉건(운영가문) · 관료 문법(주사·당직 세습). T1은 대통령",
-      "power": "약소. 명목 정통성만 있고 물·수리·철도는 빌린다",
+      "slug": "s06",
+      "origin": "대한민국정부",
+      "government": "정부서울청사 당직 가문들의 선거 의례로 뽑는 대통령",
+      "power": "강국",
       "ruler": "윤서린",
-      "cause": "2026년 청사 당직이 도장과 징집 명부를 쥐고 있었다. 호출망이 죽자 전산 민원은 멈췄고 필사 인준만 남았다. 손자의 손자가 광화문역에서 「대한민국」을 주장한다.",
+      "cause": "질서 계열 일곱이 승계와 조약을 기록소에 등록",
       "labelX": 590.05,
       "labelY": 418.32,
       "capitalStationId": "광화문",
@@ -2240,13 +2164,13 @@
     },
     {
       "id": "S07",
-      "name": "선로후계정",
-      "slug": "s12",
-      "origin": "용산 철도 환적 + 주둔지 울타리 용역 기억. 중심 용산역",
-      "government": "봉건(선로 가문)",
-      "power": "강국. 철도(중앙 환적) + 외부연결(해협·울타리)",
+      "name": "환적국",
+      "slug": "s07",
+      "origin": "선로후계정",
+      "government": "선로 가문 박씨 장자 세습 봉건국",
+      "power": "강국",
       "ruler": "박태겸",
-      "cause": "배차표와 울타리 열쇠가 호출망 대신 섰다. 용산역 선로가가 어느 진영 열차든 중계하고, 이태원 통역은 이 나라 안의 호다.",
+      "cause": "정통회 블록, 정서온 인준",
       "labelX": 690.49,
       "labelY": 590.07,
       "capitalStationId": "용산",
@@ -2256,13 +2180,13 @@
     },
     {
       "id": "S08",
-      "name": "교헌필사정",
+      "name": "중앙기술보존원",
       "slug": "s08",
-      "origin": "원불교. 서울교당·소태산기념관 동작구 흑석동. 중심 흑석역",
-      "government": "신정",
-      "power": "약소. 교헌·교당 당직은 남고, 한강 남안 물·철도는 이웃에 있다",
+      "origin": "교헌필사정",
+      "government": "시험 선발 원장, 채점자는 공개하지 않음",
+      "power": "소국",
       "ruler": "오해린",
-      "cause": "흑석 교당의 교무 당직이 교헌을 필사했다. 익산 총부는 시외라 서울 슬롯에 들어오지 못하고, 흑석역이 원불교의 서울 수도다.",
+      "cause": "장경종에 겉으로만 기대며 국교를 두지 않음",
       "labelX": 524.21,
       "labelY": 891.15,
       "capitalStationId": "흑석",
@@ -2273,12 +2197,12 @@
     {
       "id": "S09",
       "name": "여의도출자연합회",
-      "slug": "s02",
-      "origin": "여의도출자연합회(2026 상호 한국경제인협회, 전신 전경련). 여의대로 24 여의도동. 중심 여의도역",
-      "government": "상업(기업형) · 회장",
-      "power": "약소. 외부연결(서해·금융 기억)은 있으나 물·수리는 영등포에 의존",
+      "slug": "s09",
+      "origin": "여의도출자연합회",
+      "government": "출자 가문 평의회, 의장 선출, 공용 화폐 발행",
+      "power": "약국",
       "ruler": "최지우",
-      "cause": "여의도 회관의 비상위원회가 계열 출자 장부를 냉각·키 당직으로 바꿨다. 당시의 회장은 그 회관 상호를 국호로 읽고 여의도역을 닫는다. 삼성·현대는 별국, 롯데·SK·LG는 이 회 가신이다.",
+      "cause": "세속 중립, 공용 화폐",
       "labelX": 331.34,
       "labelY": 467.06,
       "capitalStationId": "여의도",
@@ -2288,13 +2212,13 @@
     },
     {
       "id": "S10",
-      "name": "승가구휼정",
-      "slug": "s07",
-      "origin": "승가구휼정. 조계사·총무원 종로구 우정국로 55. 중심 안국역",
-      "government": "신정",
-      "power": "약소. 사찰 재산·제사 달력·구휼은 세고, 북부 정수(강북아리수)는 시외라 물이 없다",
+      "name": "안국총림",
+      "slug": "s10",
+      "origin": "승가구휼정",
+      "government": "산중총회 추대 방장",
+      "power": "소국",
       "ruler": "백온",
-      "cause": "총무원이 이탈 뒤에 위패와 사원 대장을 지켰다. 안국역 조계사가 종단의 수도가 되고, 나라 이름은 종단 이름 그대로다.",
+      "cause": "장경종 블록, 도심 도장에 의존",
       "labelX": 505.58,
       "labelY": 221.21,
       "capitalStationId": "안국",
@@ -2304,13 +2228,13 @@
     },
     {
       "id": "S11",
-      "name": "서초전산그룹",
-      "slug": "s03",
-      "origin": "서초전산그룹. 삼성타운 서초구 서초대로74길(서초동). 중심 강남역",
-      "government": "상업(주식회사) · 이홍원(이씨 운영가문)이 키를 임대",
-      "power": "약소. 남부 외곽 기억은 있으나 수서 기지·암사 물은 남의 것",
+      "name": "성하그룹",
+      "slug": "s11",
+      "origin": "서초전산그룹",
+      "government": "이씨 가문 세습 회장",
+      "power": "소국",
       "ruler": "이홍원",
-      "cause": "서초 타운의 냉각·전산 키가 일가 당직함이 됐다. 강남역 사거리 상호가 지워지지 않아, 이야기의 현재에는 그룹 이름이 나라 이름이다.",
+      "cause": "성전총회 블록, 명부교회 후원",
       "labelX": 945.37,
       "labelY": 251.08,
       "capitalStationId": "강남",
@@ -2320,13 +2244,13 @@
     },
     {
       "id": "S12",
-      "name": "중립호송시",
-      "slug": "s15",
-      "origin": "신내차량기지 + 동북 말단 환승. 중심 신내역",
-      "government": "상업(운송 계약)",
-      "power": "약소. 환승·응급 호송만 있고 생산·대량 급수가 없다",
+      "name": "신내운수",
+      "slug": "s12",
+      "origin": "중립호송시",
+      "government": "사장 가문 세습, 중립 가훈",
+      "power": "약국",
       "ruler": "장세화",
-      "cause": "말단 배차와 의료열차가 중립 조약이 됐다. 신내역이 누구든 환승시키는 시장으로 남는다.",
+      "cause": "세속 중립, 중립 호송",
       "labelX": 983,
       "labelY": 357.89,
       "capitalStationId": "신내",
@@ -2336,13 +2260,13 @@
     },
     {
       "id": "S13",
-      "name": "의약중립맹",
-      "slug": "s16",
-      "origin": "제기동 약재시장(경동) + 동부 의료망. 중심 제기동역",
-      "government": "상업(조합)",
-      "power": "약소. 약품·방역 계약은 있으나 원료·전력은 빌린다",
+      "name": "흰십자단",
+      "slug": "s13",
+      "origin": "의약중립맹",
+      "government": "의사 서열 도제, 스승이 후계 지명",
+      "power": "약국",
       "ruler": "류은비",
-      "cause": "제기동 약령 장부와 병원 당직이 적과 아군을 가리지 않는 치료 계약을 남겼다. 제기동역이 그 계약의 수도다. 동대문 야간 공임은 이 나라 서쪽 호다.",
+      "cause": "세속 중립, 의약",
       "labelX": 781.44,
       "labelY": 422.88,
       "capitalStationId": "제기동",
@@ -2352,13 +2276,13 @@
     },
     {
       "id": "S14",
-      "name": "관문군정",
+      "name": "아관사",
       "slug": "s14",
-      "origin": "구의아리수정수센터 + 아차산 능선. 중심 구의역",
-      "government": "군정",
-      "power": "약소. 물+관문은 있으나 두 직능이 갈라져 강국 문턱을 못 넘는다",
+      "origin": "관문군정",
+      "government": "관문사령관과 구의수비대장 이원 체제",
+      "power": "약국",
       "ruler": "고서준",
-      "cause": "구의 수문과 아차산 초소가 한 군정으로 합쳐지려다 만다. 구의역이 동부 도하를 닫고, 건대 고려인 회랑을 이 나라 가장자리에 얹는다.",
+      "cause": "성전총회 블록, 구의 수문",
       "labelX": 974.58,
       "labelY": 551.18,
       "capitalStationId": "구의",
@@ -2368,13 +2292,13 @@
     },
     {
       "id": "S15",
-      "name": "본당인준정",
-      "slug": "s06",
-      "origin": "본당인준정. 명동성당 중구 명동길 74(교구청·제대). 중심 명동역",
-      "government": "신정 · 대주교",
-      "power": "약소. 혼인·양자·위령 인준은 세고, 급수는 빌린다",
+      "name": "명동대교구",
+      "slug": "s15",
+      "origin": "본당인준정",
+      "government": "사제단 비밀 선출 대주교",
+      "power": "소국",
       "ruler": "남윤경",
-      "cause": "명동 제대와 교구 명부가 종이로 옮겨졌다. 당시의 교구는 명동역에서 혼인과 위령을 인준하는 나라다. 주교회의 청사(광진 면목로)는 교구의 바깥 창고로만 남긴다.",
+      "cause": "정통회 블록, 도심 도장에 의존",
       "labelX": 1041.86,
       "labelY": 661.63,
       "capitalStationId": "명동",
@@ -2384,13 +2308,13 @@
     },
     {
       "id": "S16",
-      "name": "정동노동총연맹",
-      "slug": "s09",
-      "origin": "정동노동총연맹. 중구 정동길 3 경향신문사. 중심 시청역",
-      "government": "상업(총연맹)",
-      "power": "약소. 파업 명부와 시청 앞 집결은 있으나 생산·급수 주권은 없다",
+      "name": "정동노총",
+      "slug": "s16",
+      "origin": "정동노동총연맹",
+      "government": "조합원 직선 위원장",
+      "power": "소국",
       "ruler": "정유라",
-      "cause": "정동 사무실의 조합원 명부가 비상 소집이 됐다. 공장이 죽자 파업권이 통행권으로 바뀌고, 시청역 총연맹이 나라 행세를 한다. 민주화·노동운동의 문장을 빌리되 당명(더불어민주당 등)은 국호로 쓰지 않는다.",
+      "cause": "세속 중립, 도심 도장에 의존",
       "labelX": 874.71,
       "labelY": 881.03,
       "capitalStationId": "시청",

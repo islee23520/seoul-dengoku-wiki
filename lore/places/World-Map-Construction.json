@@ -47,10 +47,26 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "월드맵의-구조-p1-ko-label-1",
+      "text": {
+        "en": "가. Geographic skeleton",
+        "ko": "가. 지리의 뼈대"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "월드맵의-구조-p1",
       "text": {
         "en": "Seoul's geographic truth was not the simple administrative map drawn flat from Jongno-gu to Gangdong-gu. The real map tied to survival was a complex three-dimensional web in which 334 stations, numberless floors, and the tunnels joining them were intertwined. Seoul Station, Sindorim, and Yeongdeungpo served as the key strongpoints holding up that great web.",
-        "ko": "서울의 지리적 진실은 종로구에서 강동구까지 평면에 그려진 단순한 행정 지도가 아니다. 생존과 직결된 진짜 지도는 334개의 역과 수많은 층, 그리고 그 사이를 잇는 터널이 얽힌 복잡한 입체망이다. 서울역, 신도림, 영등포 등은 이 거대한 망을 지탱하는 핵심 거점 역할을 한다."
+        "ko": "행정 지도는 서울을 종로구부터 강동구까지 평면에 그린다. 서울의 지리적 진실은 334개 역과 수많은 층과 그 사이를 잇는 터널의 입체망이다. 서울역, 신도림, 영등포 등은 이 망을 지탱하는 핵심 거점이다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "월드맵의-구조-p2-ko-label-2",
+      "text": {
+        "en": "나. Post-collapse geography",
+        "ko": "나. 붕괴 이후의 지리"
       }
     },
     {
@@ -58,7 +74,15 @@
       "anchor": "월드맵의-구조-p2",
       "text": {
         "en": "The geography that grounded the new age consisted of the 25 autonomous districts, the principal stations within them, the key facilities at their sides, and the spheres of the sixteen states. How buildings and facilities found new uses after the collapse was an important key to understanding the survivors' lives.",
-        "ko": "새로운 시대의 기반이 되는 지리는 25개 자치구와 그 안에 자리 잡은 주요 역, 주변의 핵심 시설, 그리고 십육국의 권역으로 이루어진다. 붕괴 이후 건물과 시설들이 어떻게 새로운 용도를 찾았는지는 생존자들의 삶을 이해하는 중요한 열쇠다."
+        "ko": "새로운 시대의 지리는 25개 자치구와 그 안의 주요 역, 주변의 핵심 시설, 십육국의 권역으로 이루어진다. 건물과 시설은 붕괴 이후 새로운 용도를 찾았다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "월드맵의-구조-p3-ko-label-3",
+      "text": {
+        "en": "다. Related documents",
+        "ko": "다. 관련 문서"
       }
     },
     {
@@ -208,10 +232,18 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "자치구-25-p1-ko-label-4",
+      "text": {
+        "en": "가. District-name sources",
+        "ko": "가. 구 이름의 출처"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "자치구-25-p1",
       "text": {
         "en": "The district names used the KOSTAT GeoJSON `properties.name` as they stood, and all twenty-five were present without omission.",
-        "ko": "구 이름은 KOSTAT GeoJSON `properties.name`을 그대로 쓰고, 스물다섯이 빠짐없이 올라 있다."
+        "ko": "구 이름은 KOSTAT GeoJSON `properties.name`을 그대로 쓴다. 스물다섯 구가 모두 월드맵에 있다."
       }
     },
     {
@@ -224,10 +256,18 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "자치구-25-p3-ko-label-5",
+      "text": {
+        "en": "나. Districts and spheres",
+        "ko": "나. 구역과 권역"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "자치구-25-p3",
       "text": {
         "en": "These twenty-five remained the world map's core sectors, and the sixteen states laid their spheres over these districts. Yeongdeungpo-gu was not renamed the Water Compact, nor Jongno-gu the Republic of Korea Government.",
-        "ko": "이 25개가 월드맵의 핵심 구역으로 남고, 십육국은 이 구 위에 권역을 얹는다. 영등포구를 급수계약정으로, 종로구를 대한민국정부로 바꿔 부르지는 않는다."
+        "ko": "이 25개가 월드맵의 핵심 구역으로 남는다. 십육국은 이 구 위에 권역을 얹는다. 영등포구를 수문국으로, 종로구를 대한민국정부로 바꿔 부르지 않는다."
       }
     },
     {
@@ -241,10 +281,26 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "역-목록-p1-ko-label-6",
+      "text": {
+        "en": "가. Station names and counts",
+        "ko": "가. 역명과 수"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "역-목록-p1",
       "text": {
         "en": "The principal stations keeping their names within Seoul numbered 334, and counting the outer metropolitan network there were more. The old station names — Seoul Station, City Hall, Gangnam, Jamsil, Yeouido — still served as the proper names by which each stronghold was called.",
-        "ko": "서울 안에 이름이 남은 주요 역은 334곳이며, 외곽 광역망까지 합치면 그보다 많다. 서울역, 시청, 강남, 잠실, 여의도 등 과거의 역명은 지금도 각 거점을 부르는 고유한 이름으로 쓰인다."
+        "ko": "서울 안에 이름이 남은 주요 역은 334곳이다. 외곽 광역망까지 합치면 그보다 많다. 서울역, 시청, 강남, 잠실, 여의도 등 과거의 역명이 지금도 각 거점을 부르는 고유한 이름으로 쓰인다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "역-목록-p2-ko-label-7",
+      "text": {
+        "en": "나. Density by district",
+        "ko": "나. 자치구별 밀도"
       }
     },
     {
@@ -252,7 +308,7 @@
       "anchor": "역-목록-p2",
       "text": {
         "en": "The 334 strongholds within Seoul differed in density by district. Gangnam-gu and Songpa-gu were the densest with 24 each, followed by Seocho-gu with 21 and Jung-gu with 19. Geumcheon-gu had the fewest at 4. The Yeongdeungpo, Sindorim, and Guro belt was a core sphere, a crossroads where the principal routes of movement met.",
-        "ko": "서울 내 334개 거점은 자치구별로 밀도가 다르다. 강남구와 송파구가 각각 24곳으로 가장 조밀하고, 서초구 21곳, 중구 19곳이 그 뒤를 잇는다. 금천구는 4곳으로 가장 적다. 영등포와 신도림, 구로 일대는 핵심적인 권역으로, 주요 이동로가 교차하는 길목이다."
+        "ko": "서울 내 334개 거점은 자치구별로 밀도가 다르다. 강남구와 송파구가 각각 24곳으로 가장 조밀하다. 서초구는 21곳이다. 중구는 19곳이다. 금천구는 4곳으로 가장 적다. 영등포와 신도림, 구로 일대는 핵심 권역이다. 주요 이동로가 교차하는 길목이다."
       }
     },
     {
@@ -266,10 +322,26 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "주변-시설-p1-ko-label-8",
+      "text": {
+        "en": "가. Infrastructure locations",
+        "ko": "가. 인프라의 소재"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "주변-시설-p1",
       "text": {
         "en": "The vast infrastructures essential to the survivors' maintenance of their spheres sat beside the stations.",
-        "ko": "생존자들의 권역 유지에 필수적인 거대 인프라들은 역 주변에 위치한다."
+        "ko": "생존자가 권역을 유지하는 데 필요한 거대 인프라는 역 주변에 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "주변-시설-p2-ko-label-9",
+      "text": {
+        "en": "나. Treatment plants and depots",
+        "ko": "나. 정수 시설과 차량기지"
       }
     },
     {
@@ -277,7 +349,7 @@
       "anchor": "주변-시설-p2",
       "text": {
         "en": "The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also worked as principal water-pressure sources.",
-        "ko": "정수 시설은 영등포, 뚝섬, 구의, 암사에 위치하며, 강북(남양주)과 광암(하남)도 주요 급수 압력원으로 작용한다."
+        "ko": "정수 시설은 영등포, 뚝섬, 구의, 암사에 있다. 강북(남양주)과 광암(하남)도 주요 급수 압력원이다."
       }
     },
     {
@@ -285,7 +357,15 @@
       "anchor": "주변-시설-p3",
       "text": {
         "en": "The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.",
-        "ko": "차량기지는 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서에 자리 잡고 있으며, 외곽의 지축, 도봉, 모란, 김포 기지도 중요한 거점이다."
+        "ko": "차량기지는 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서에 있다. 외곽의 지축, 도봉, 모란, 김포 기지도 중요한 거점이다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "주변-시설-p4-ko-label-10",
+      "text": {
+        "en": "다. Markets and support facilities",
+        "ko": "다. 시장과 지원 시설"
       }
     },
     {
@@ -293,7 +373,7 @@
       "anchor": "주변-시설-p4",
       "text": {
         "en": "The principal markets where bulk goods moved — Garak Market, Gangseo Market, Yanggok Market, and the Noryangjin Fisheries Market — formed the skeleton. Beyond them, hospitals, fire stations, police stations, substations, and rail marshaling yards remained beside the stations, backing each stronghold's role.",
-        "ko": "대규모 물자가 오가는 주요 시장은 가락시장, 강서시장, 양곡시장, 노량진 수산시장 등 4곳이 뼈대를 이룬다. 이 밖에도 병원, 소방서, 경찰서, 변전소, 철도 조차장 등이 역 주변에 남아 각 거점의 역할을 뒷받침한다."
+        "ko": "대규모 물자가 오가는 주요 시장은 가락시장, 강서시장, 양곡시장, 노량진 수산시장 등 4곳이 뼈대를 이룬다. 병원, 소방서, 경찰서, 변전소, 철도 조차장 등이 역 주변에 남아 각 거점의 역할을 뒷받침한다."
       }
     },
     {
@@ -307,12 +387,20 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "십육국을-구-위에-얹기-p1-ko-label-11",
+      "text": {
+        "en": "가. Basis of the spheres",
+        "ko": "가. 권역의 기준"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "십육국을-구-위에-얹기-p1",
       "text": {
         "en": "The states did not replace the districts. `Sixteen-States.md` was the standard for the spheres' arms and key infrastructure. The Yeouido waterfront and the Ttukseom workshops, the Amsa treatment plant, and the Seoul Station records were read as the skeleton of the spheres.",
         "ko": [
           {
-            "text": "국가는 구를 대체하지 않는다. 권역 문장과 핵심 인프라는 "
+            "text": "권역 문장과 핵심 인프라는 "
           },
           {
             "text": "Sixteen-States.md",
@@ -322,7 +410,7 @@
             }
           },
           {
-            "text": "가 기준이다. 여의도 수변과 뚝섬 공방, 암사 정수, 서울역 기록이 권역의 뼈대로 읽힌다."
+            "text": "가 기준이다. 국가는 구를 대체하지 않는다. 여의도 수변과 뚝섬 공방, 암사 정수, 서울역 기록이 권역의 뼈대로 읽힌다."
           }
         ]
       }
@@ -352,7 +440,7 @@
         [
           {
             "en": "Water Compact",
-            "ko": "급수계약정"
+            "ko": "수문국"
           },
           {
             "en": "Great power",
@@ -370,7 +458,7 @@
         [
           {
             "en": "Standards Alliance",
-            "ko": "규격동맹"
+            "ko": "규격맹"
           },
           {
             "en": "Great power",
@@ -388,7 +476,7 @@
         [
           {
             "en": "Yangjae Machineworks Company",
-            "ko": "양재기공주식회사"
+            "ko": "태욱그룹"
           },
           {
             "en": "Great power",
@@ -406,11 +494,11 @@
         [
           {
             "en": "Sermon Registry State",
-            "ko": "설교명부정"
+            "ko": "명부교회"
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "소국"
           },
           {
             "en": "Samsung Station megachurch southern pulpit axis",
@@ -424,7 +512,7 @@
         [
           {
             "en": "Escort Protection State",
-            "ko": "호위보호정"
+            "ko": "동방사"
           },
           {
             "en": "Great power",
@@ -446,7 +534,7 @@
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "강국"
           },
           {
             "en": "Jongno–Jung-gu–Seoul Station axis",
@@ -454,13 +542,13 @@
           },
           {
             "en": "Administrative records, the Seoul Station emblem, central disaster medicine",
-            "ko": "행정기록, 서울역 상징, 중앙 재난의료"
+            "ko": "긴급명령 기록, 도심 명부·배급, 도장·인지세, 청사 경비대"
           }
         ],
         [
           {
             "en": "Line Succession State",
-            "ko": "선로후계정"
+            "ko": "환적국"
           },
           {
             "en": "Great power",
@@ -478,11 +566,11 @@
         [
           {
             "en": "Charter Transcription State",
-            "ko": "교헌필사정"
+            "ko": "중앙기술보존원"
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "소국"
           },
           {
             "en": "Dongjak–northern Gwanak–Noryangjin market axis",
@@ -500,7 +588,7 @@
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "약국"
           },
           {
             "en": "Western Yeouido waterfront axis",
@@ -514,11 +602,11 @@
         [
           {
             "en": "Sangha Relief State",
-            "ko": "승가구휼정"
+            "ko": "안국총림"
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "소국"
           },
           {
             "en": "Anguk Station Jogyesa central tablet axis",
@@ -532,11 +620,11 @@
         [
           {
             "en": "Seocho Computing Group",
-            "ko": "서초전산그룹"
+            "ko": "성하그룹"
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "소국"
           },
           {
             "en": "Gangnam Station intersection southern commercial axis",
@@ -550,11 +638,11 @@
         [
           {
             "en": "Neutral Convoy City",
-            "ko": "중립호송시"
+            "ko": "신내운수"
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "약국"
           },
           {
             "en": "Jungnang–Sinnae–Mangu northeastern transfer axis",
@@ -568,11 +656,11 @@
         [
           {
             "en": "Medical Neutrality League",
-            "ko": "의약중립맹"
+            "ko": "흰십자단"
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "약국"
           },
           {
             "en": "Dongdaemun–Cheongnyangni Jegi-dong market axis",
@@ -586,11 +674,11 @@
         [
           {
             "en": "Gate Military Government",
-            "ko": "관문군정"
+            "ko": "아관사"
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "약국"
           },
           {
             "en": "Gwangjin–Guui–Achasan eastern Han River gate",
@@ -604,11 +692,11 @@
         [
           {
             "en": "Cathedral Accreditation State",
-            "ko": "본당인준정"
+            "ko": "명동대교구"
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "소국"
           },
           {
             "en": "Myeongdong Station central altar axis",
@@ -626,7 +714,7 @@
           },
           {
             "en": "Lesser state",
-            "ko": "약소국"
+            "ko": "소국"
           },
           {
             "en": "City Hall Station Jeongdong central register axis",
@@ -638,6 +726,14 @@
           }
         ]
       ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "십육국을-구-위에-얹기-p3-ko-label-12",
+      "text": {
+        "en": "나. Ownership and occupation",
+        "ko": "나. 소유와 점령"
+      }
     },
     {
       "kind": "paragraph",
@@ -660,7 +756,7 @@
         ],
         "ko": [
           {
-            "text": "어느 OSM 역이 어느 국 소유인지는 아직 확인하지 않았다. 점령 규칙은 "
+            "text": "어느 OSM 역이 어느 국의 소유인지는 아직 확인하지 않았다. 점령 규칙은 "
           },
           {
             "text": "거점과 영토",
@@ -670,7 +766,7 @@
             }
           },
           {
-            "text": "가 정하고, 이 표는 권역만 고정한다."
+            "text": "가 정한다. 이 표는 권역만 고정한다."
           }
         ]
       }
@@ -686,10 +782,18 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "노드와-층-p1-ko-label-13",
+      "text": {
+        "en": "가. Stronghold layers",
+        "ko": "가. 거점의 층"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "노드와-층-p1",
       "text": {
         "en": "The single stronghold called a station divided into several vertical layers. Concourse, transfer corridors, deep tunnels — each layer carried its own role and its own lurking dangers.",
-        "ko": "역이라는 하나의 거점은 여러 개의 수직적인 층으로 나뉜다. 대합실, 환승 통로, 심층 터널 등 각 층은 맡은 역할과 도사리는 위험이 서로 다르다."
+        "ko": "역 거점은 여러 개의 수직 층으로 나뉜다. 대합실, 환승 통로, 심층 터널 등 각 층은 맡은 역할과 위험이 서로 다르다."
       }
     },
     {
@@ -798,10 +902,18 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "노드와-층-p3-ko-label-14",
+      "text": {
+        "en": "나. Passage states",
+        "ko": "나. 통로의 상태"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "노드와-층-p3",
       "text": {
         "en": "The passages joining layer to layer and station to station changed state without pause as events — collapse, flooding, control, blockade — passed over them, and this bore directly on logistics and on the survivors' movement.",
-        "ko": "층과 층, 역과 역을 잇는 통로는 붕괴나 침수, 통제와 봉쇄 등 사건에 따라 상태가 끊임없이 변하며, 이는 물류와 생존자들의 이동에 직접적인 영향을 미친다."
+        "ko": "층과 층, 역과 역을 잇는 통로는 붕괴·침수·통제·봉쇄 등 사건에 따라 상태가 변한다. 물류와 생존자의 이동은 통로의 상태를 따라간다."
       }
     }
   ],
