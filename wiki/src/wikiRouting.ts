@@ -2,8 +2,12 @@ const wikiDomains = new Set(['world'])
 
 export const wikiBase = '/wiki'
 
+// Other hub sites share the origin; their paths are not wiki routes.
+export const hubPrefixes = ['/gdd/', '/play/', '/ui-layout-moodboard/', '/ui-ux-refs/']
+
 export const toWikiPath = (path: string): string => {
   if (path === '/') return `${wikiBase}/`
+  if (hubPrefixes.some((prefix) => path.startsWith(prefix))) return path
   return `${wikiBase}${path.startsWith('/') ? path : `/${path}`}`
 }
 
