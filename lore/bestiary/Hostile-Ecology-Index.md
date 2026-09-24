@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `9711fa13d0e4289cff8b6e0a6f08b05afdf22aeee2aa760aeea5a968612aa367`
+- 원본 해시: `bcfc3ee11e095926c59f3e962be07dcae18750c70c760ebd4ac9b6339ee09f7c`
 
 같은 서식권에 사는 공통종과 특수 변이를 구분해 읽습니다. 기계 기종, 고정 시설과 군집 현상은 생물 종과 따로 표시합니다.
 
