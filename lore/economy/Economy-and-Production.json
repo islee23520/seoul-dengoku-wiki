@@ -47,10 +47,28 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "경제와-생산-p1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Status of Charts",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 도표의 지위",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "경제와-생산-p1",
       "text": {
         "en": "A wiki diagram dated 2026-09-07. The direction-by-direction cell placement was the grammar of that day's drawing — a flat diagram for documentation, not an actual game screen.",
-        "ko": "2026-09-07 위키 도표. 방향별 칸 배치는 당시 그림의 문법이다. 문서용 평면도이며 실제 게임 화면이 아니다."
+        "ko": "2026-09-07 위키 도표의 방향별 칸 배치는 당시 그림의 문법이었다. 도표는 문서용 평면도이며 실제 게임 화면이 아니다."
       }
     },
     {
@@ -58,7 +76,7 @@
       "anchor": "경제와-생산-p2",
       "text": {
         "en": "Labor was placed around production facilities and line capacity matched to stock flows.",
-        "ko": "생산 시설 주변에 노동을 배치하고 노선 용량과 재고 흐름을 맞춘다."
+        "ko": "생산 시설 주변에 노동을 배치한다. 노선 용량에 맞춰 재고를 운송한다."
       }
     },
     {
@@ -66,7 +84,7 @@
       "anchor": "경제와-생산-p3",
       "text": {
         "en": "The economy was not one money but a combination of survival resources, production resources, labor, power, and actual transport capacity. All numbers were design assumptions for the first prototype.",
-        "ko": "경제는 돈 하나가 아니라 생존 자원, 제작 자원, 노동, 전력과 실제 운송 능력의 결합이다. 모든 수치는 첫 프로토타입용 설계 가정으로 둔다."
+        "ko": "경제는 생존 자원, 제작 자원, 노동, 전력과 실제 운송 능력으로 구성된다. 문서의 모든 수치는 첫 프로토타입용 설계 가정이다."
       }
     },
     {
@@ -76,6 +94,24 @@
       "text": {
         "en": "Inputs and Outputs",
         "ko": "입력과 출력"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "입력과-출력-table1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Resources and Output",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 자원과 산출",
+            "strong": true
+          }
+        ]
       }
     },
     {
@@ -193,10 +229,28 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "계산-규칙-p1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Essential Consumption and Production",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 필수 소비와 생산",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "계산-규칙-p1",
       "text": {
         "en": "At the start of a day, water, food, and emergency medicine for the residents were reserved first, and facility inputs and market orders were assigned after. Production was limited by the lowest fulfillment rate among labor, inputs, power, and facility state. When a demand was 0 or the required-input set was empty, that fulfillment rate was 1, and in no case was there division by zero.",
-        "ko": "하루 시작에 주민용 물·식량·응급 의료를 먼저 예약하고, 그 뒤 시설 입력과 시장 주문을 배정한다. 생산량은 노동, 입력, 전력, 시설 상태 중 가장 낮은 충족률로 제한된다. 요구량이 0이거나 필요 입력 집합이 비어 있으면 해당 충족률은 1이며, 어떤 경우에도 0으로 나누지 않는다."
+        "ko": "하루 시작에 주민용 물·식량·응급 의료를 먼저 예약한다. 그 뒤 시설 입력과 시장 주문을 배정한다. 생산량에는 노동·입력·전력 충족률 중 최솟값과 시설 상태를 적용한다. 요구량이 0이거나 필요 입력 집합이 비어 있으면 해당 충족률은 1이다. 0으로 나누는 계산은 하지 않는다."
       }
     },
     {
@@ -204,7 +258,7 @@
       "anchor": "계산-규칙-p2",
       "text": {
         "en": "The daily settlement order was part of the determinism and followed the numbering below.",
-        "ko": "일일 정산 순서는 결정론의 일부이며 아래 번호를 따른다."
+        "ko": "일일 정산 순서는 결정론의 일부이다. 정산은 아래 번호를 따른다."
       }
     },
     {
@@ -269,10 +323,28 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "계산-규칙-p5-label",
+      "text": {
+        "en": [
+          {
+            "text": "B. Prices and Isolation",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "나. 가격과 격리",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "계산-규칙-p5",
       "text": {
         "en": "Price made no stock. A trade stood only with actual goods, purchasing power, access rights, and transport capacity. The price multiplier moved, added onto the scarce item, by the product of isolation sensitivity (design assumption 0.35), the import-dependence term `I = 0 if essential demand is 0, else 1 - clamp(inbound capacity / essential demand, 0, 1)`, and the per-resource import dependence. Isolation erased no production directly; it limited transport, widened the price half-band, and raised the prices only of resources with import dependence above 0.",
-        "ko": "가격은 재고를 만들지 않는다. 실제 물건, 구매력, 접근권과 운송 용량이 있어야 거래가 성립한다. 가격 승수는 희소 항에 더해 격리 민감도(설계 가정 0.35)와 수입 의존 항 `I = 필수 수요가 0이면 0, 아니면 1 - clamp(반입 용량 / 필수 수요, 0, 1)`, 자원별 수입 의존도의 곱으로 움직인다. 격리는 생산을 직접 지우지 않고, 수송을 제한하고 가격 반폭을 넓히며, 수입 의존도가 0보다 큰 자원의 가격만 올린다."
+        "ko": "가격만으로 재고가 생기지는 않는다. 거래에는 실제 물건, 구매력, 접근권과 운송 용량이 필요하다. 가격 승수에는 희소 항과 격리 민감도(설계 가정 0.35), 수입 의존 항 `I = 필수 수요가 0이면 0, 아니면 1 - clamp(반입 용량 / 필수 수요, 0, 1)`, 자원별 수입 의존도의 곱을 더한다. 격리는 수송을 제한하고 가격 반폭을 넓힌다. 격리로 인한 가격 상승은 수입 의존도가 0보다 큰 자원에만 적용한다. 격리만으로 생산량을 직접 줄이지 않는다."
       }
     },
     {
@@ -282,6 +354,24 @@
       "text": {
         "en": "Base Numbers",
         "ko": "기본 수치"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "기본-수치-table1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Default Design Settings",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 설계 기본값",
+            "strong": true
+          }
+        ]
       }
     },
     {
@@ -471,6 +561,24 @@
       }
     },
     {
+      "kind": "paragraph",
+      "anchor": "경계-상황-list1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Denominators and Supply Limits",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 분모와 공급 제한",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
       "kind": "list",
       "anchor": "경계-상황-list1",
       "items": [
@@ -555,10 +663,28 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "계산-예시-p1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Shortage Rates and Production Volumes",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 부족률과 생산량",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "계산-예시-p1",
       "text": {
         "en": "With only 50 of water demand 100 met and food and power fully met, labor endurance was `clamp(1 - 0.70*0.5, 0.2, 1)=0.65`. With 8 of 10 required shifts, inputs 70%, power 90%, and facility state 80%, production was `100 * min(0.8,0.7,0.9) * 0.8 = 56` of base output 100. With required labor, power, and inputs all 0 and the required-input set empty, production at the same facility state was `100 * min(1,1,1) * 0.8 = 80`.",
-        "ko": "물 수요 100 중 50만 충족되고 식량·전력은 모두 충족되면 노동 지속성은 `clamp(1 - 0.70*0.5, 0.2, 1)=0.65`다. 필요 노동 10교대 중 8교대, 입력 70%, 전력 90%, 시설 상태 80%라면 생산량은 기본산출 100의 `100 * min(0.8,0.7,0.9) * 0.8 = 56`이다. 필요 노동·전력·입력이 모두 0이고 필요 입력 집합이 비어 있으면 같은 시설 상태에서 생산량은 `100 * min(1,1,1) * 0.8 = 80`이다."
+        "ko": "물 수요 100 중 50을 충족하고 식량·전력을 모두 충족하면 노동 지속성은 `clamp(1 - 0.70*0.5, 0.2, 1)=0.65`이다. 필요 노동 10교대 중 8교대, 입력 70%, 전력 90%, 시설 상태 80%이면 기본산출 100의 생산량은 `100 * min(0.8,0.7,0.9) * 0.8 = 56`이다. 필요 노동·전력·입력이 모두 0이고 필요 입력 집합이 비어 있으면 같은 시설 상태에서 생산량은 `100 * min(1,1,1) * 0.8 = 80`이다."
       }
     },
     {
