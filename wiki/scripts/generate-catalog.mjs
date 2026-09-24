@@ -260,7 +260,7 @@ const coreCharacters = renderedBySlug.get('Core-Characters')
 const stateIdByName = new Map(stateRows.flatMap((row) => [[row.name, row.id], [row.origin, row.id]]))
 const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .filter((match) => match[1].trim() !== '국가')
-  .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((rank) => rank.trim())]))
+  .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((cell) => cell.split('·').map((rank) => rank.trim()))]))
 if (tiersByState.size !== 16) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByState.size}`)
 const stateCatalog = stateRows.map((row) => ({
   slug: row.id.toLowerCase(),
@@ -637,7 +637,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const occupation = fields['생업'] ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const stateTiers = tiersByState.get(person.state)
-  const tierIndex = stateTiers?.indexOf(rank) ?? -1
+  const tierIndex = stateTiers?.findIndex((ranks) => ranks.includes(rank)) ?? -1
   const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
   return {
     id: `person-${String(index + 1).padStart(4, '0')}`,
