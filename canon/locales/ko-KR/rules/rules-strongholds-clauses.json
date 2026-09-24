@@ -66,6 +66,8 @@
       "source.b53",
       "source.b54",
       "source.b55",
+      "r2.rstrongholds-25",
+      "r2.rstrongholds-25.body",
       "source.b56",
       "source.b57",
       "source.b58",
@@ -1019,6 +1021,53 @@
           {
             "kind": "text",
             "text": "세 조건이 겹친 역은 통합 조건을 만족할 수 없다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rstrongholds-25",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RSTRONGHOLDS-25 영토 단위"
+        }
+      ]
+    },
+    {
+      "id": "r2.rstrongholds-25.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "행정동은 면적 단위이고, 세력이 점유하는 최소 단위는 건물이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "점령은 건물 단위의 지배력으로 판정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동에 지하철역이 있으면 그 역이 동의 핵심 시설이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "플레이 중 표시하는 동의 세력 이름과 영향력은 그 동의 `territory` 칸을 따르며, 영향력은 지배력과 같은 값이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "건물·강·구 경계는 강·구·동 건물 재사용 규칙을 따른다."
           }
         ]
       ]

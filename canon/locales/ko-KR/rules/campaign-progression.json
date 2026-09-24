@@ -31,7 +31,14 @@
       "source.b18",
       "source.b19",
       "source.b20",
-      "source.b21"
+      "source.b21",
+      "r2.event-conditions",
+      "r2.faith-axes",
+      "r2.faith-axes-change",
+      "r2.opening-policy-legacy-heading",
+      "r2.opening-policy-legacy-note",
+      "opening-policy-legacy-table",
+      "opening-policy-legacy-table-en"
     ],
     "terminalLineFeeds": 2
   },
@@ -363,6 +370,465 @@
           "kind": "text",
           "text": "유물이 약탈되거나 의례가 끊기면 정통성 `L_i`를 다시 셉니다. 연결 `K_i`는 통행 변이 끊긴 뒤 경로 신뢰도 최댓값을 다시 자릅니다. 긴장도 `E'`와 위기확률 공식은 그대로입니다. 점령 다음의 안정화와 전문화와 노선 투사와 질서 헌장 경로도 그대로입니다. 여섯 단계 루프에 단계를 더하지 않습니다."
         }
+      ]
+    },
+    {
+      "id": "r2.event-conditions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "연표의 사건은 정해진 결과를 재생하지 않습니다. 사건은 조건을 열고, 결과는 살아 있는 인물의 야망·공포·관계·기억·직위가 정합니다. 핵심 인물이 죽거나 포획되거나 설득되면 같은 사건을 다른 인물이 이끌어 다른 결과를 낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "r2.faith-axes",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "신앙 축 `Salv`(잔해 제사권)·`Sym`(상징 좌대)·`Mech`(기계 경건)의 범위는 0~100입니다. 개막 시점 기본값은 현지 당집이 있으면 40, 없으면 15이며 **설계 가정**입니다."
+        }
+      ]
+    },
+    {
+      "id": "r2.faith-axes-change",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "회수가 약탈로 기록되면 `Salv`가 줄고 평판이 떨어집니다. `Sym`은 좌대를 공개로 지키면 오르고 철거하면 내립니다. 좌대를 철거한 역에서는 다른 계열이 자기 상징을 세우려는 쟁점이 열립니다. `Mech`는 수리 성공, 재기동, 부품 봉헌으로 오릅니다."
+        }
+      ]
+    },
+    {
+      "id": "r2.opening-policy-legacy-heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개막 정책 표 (이전 자료)"
+        }
+      ]
+    },
+    {
+      "id": "r2.opening-policy-legacy-note",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+        "text": "아래 두 표는 위키의 개막 정책 표를 한국어·영어 칸의 값과 행 순서 그대로, 새 국가 배정 없이 보존한 이전 자료입니다."
+        }
+      ]
+    },
+    {
+      "id": "opening-policy-legacy-table",
+      "kind": "table",
+      "header": [
+        "국",
+        "전쟁",
+        "이주민",
+        "급수",
+        "노동",
+        "기록",
+        "기술",
+        "교역",
+        "후계"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---",
+        "---",
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "01 여의도",
+          "제한전",
+          "검역수용",
+          "계약",
+          "계약",
+          "교차검증",
+          "면허공유",
+          "허가",
+          "양자도제"
+        ],
+        [
+          "02 서남",
+          "방어",
+          "시민권",
+          "최저선",
+          "시민복무",
+          "교차검증",
+          "공동원장",
+          "허가",
+          "공개시험"
+        ],
+        [
+          "03 마곡",
+          "방어",
+          "검역수용",
+          "최저선",
+          "계약",
+          "전면공개",
+          "공동원장",
+          "허가",
+          "공개시험"
+        ],
+        [
+          "04 뚝섬",
+          "방어",
+          "검역수용",
+          "계약",
+          "계약",
+          "비공개",
+          "가문비밀",
+          "허가",
+          "양자도제"
+        ],
+        [
+          "05 암사",
+          "선제",
+          "추방",
+          "볼모",
+          "강제복무",
+          "비공개",
+          "면허공유",
+          "봉쇄",
+          "혈통"
+        ],
+        [
+          "06 서울역",
+          "방어",
+          "검역수용",
+          "계약",
+          "계약",
+          "교차검증",
+          "면허공유",
+          "허가",
+          "양자도제"
+        ],
+        [
+          "07 용산",
+          "제한전",
+          "검역수용",
+          "계약",
+          "계약",
+          "비공개",
+          "면허공유",
+          "허가",
+          "양자도제"
+        ],
+        [
+          "08 노량진",
+          "방어",
+          "시민권",
+          "계약",
+          "계약",
+          "교차검증",
+          "면허공유",
+          "개방시장",
+          "양자도제"
+        ],
+        [
+          "09 상암",
+          "방어",
+          "검역수용",
+          "계약",
+          "계약",
+          "전면공개",
+          "면허공유",
+          "허가",
+          "공개시험"
+        ],
+        [
+          "10 북한산보국문",
+          "방어",
+          "시민권",
+          "최저선",
+          "시민복무",
+          "교차검증",
+          "면허공유",
+          "허가",
+          "공개시험"
+        ],
+        [
+          "11 창동",
+          "방어",
+          "검역수용",
+          "계약",
+          "계약",
+          "교차검증",
+          "가문비밀",
+          "허가",
+          "공개시험"
+        ],
+        [
+          "12 신내",
+          "방어",
+          "시민권",
+          "최저선",
+          "계약",
+          "교차검증",
+          "면허공유",
+          "허가",
+          "양자도제"
+        ],
+        [
+          "13 제기동",
+          "방어",
+          "시민권",
+          "최저선",
+          "계약",
+          "교차검증",
+          "공동원장",
+          "허가",
+          "공개시험"
+        ],
+        [
+          "14 아차산",
+          "제한전",
+          "추방",
+          "계약",
+          "강제복무",
+          "비공개",
+          "면허공유",
+          "봉쇄",
+          "혈통"
+        ],
+        [
+          "15 가락",
+          "방어",
+          "검역수용",
+          "계약",
+          "계약",
+          "비공개",
+          "면허공유",
+          "개방시장",
+          "양자도제"
+        ],
+        [
+          "16 수서",
+          "방어",
+          "시민권",
+          "최저선",
+          "계약",
+          "교차검증",
+          "공동원장",
+          "허가",
+          "공개시험"
+        ]
+      ]
+    },
+    {
+      "id": "opening-policy-legacy-table-en",
+      "kind": "table",
+      "header": [
+        "State",
+        "War",
+        "Migrants",
+        "Water",
+        "Labor",
+        "Records",
+        "Technology",
+        "Trade",
+        "Succession"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---",
+        "---",
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "01 Yeouido",
+          "Limited war",
+          "Quarantine admission",
+          "Contract",
+          "Contract",
+          "Cross-verified",
+          "Licensed sharing",
+          "Licensed",
+          "Adoptive apprenticeship"
+        ],
+        [
+          "02 Southwest",
+          "Defense",
+          "Citizenship",
+          "Minimum line",
+          "Civic service",
+          "Cross-verified",
+          "Joint ledger",
+          "Licensed",
+          "Open examination"
+        ],
+        [
+          "03 Magok",
+          "Defense",
+          "Quarantine admission",
+          "Minimum line",
+          "Contract",
+          "Fully public",
+          "Joint ledger",
+          "Licensed",
+          "Open examination"
+        ],
+        [
+          "04 Ttukseom",
+          "Defense",
+          "Quarantine admission",
+          "Contract",
+          "Contract",
+          "Closed",
+          "House secret",
+          "Licensed",
+          "Adoptive apprenticeship"
+        ],
+        [
+          "05 Amsa",
+          "Preemption",
+          "Expulsion",
+          "Hostage",
+          "Forced service",
+          "Closed",
+          "Licensed sharing",
+          "Blockade",
+          "Bloodline"
+        ],
+        [
+          "06 Seoul Station",
+          "Defense",
+          "Quarantine admission",
+          "Contract",
+          "Contract",
+          "Cross-verified",
+          "Licensed sharing",
+          "Licensed",
+          "Adoptive apprenticeship"
+        ],
+        [
+          "07 Yongsan",
+          "Limited war",
+          "Quarantine admission",
+          "Contract",
+          "Contract",
+          "Closed",
+          "Licensed sharing",
+          "Licensed",
+          "Adoptive apprenticeship"
+        ],
+        [
+          "08 Noryangjin",
+          "Defense",
+          "Citizenship",
+          "Contract",
+          "Contract",
+          "Cross-verified",
+          "Licensed sharing",
+          "Open market",
+          "Adoptive apprenticeship"
+        ],
+        [
+          "09 Sangam",
+          "Defense",
+          "Quarantine admission",
+          "Contract",
+          "Contract",
+          "Fully public",
+          "Licensed sharing",
+          "Licensed",
+          "Open examination"
+        ],
+        [
+          "10 Bukhansan Bogukmun",
+          "Defense",
+          "Citizenship",
+          "Minimum line",
+          "Civic service",
+          "Cross-verified",
+          "Licensed sharing",
+          "Licensed",
+          "Open examination"
+        ],
+        [
+          "11 Changdong",
+          "Defense",
+          "Quarantine admission",
+          "Contract",
+          "Contract",
+          "Cross-verified",
+          "House secret",
+          "Licensed",
+          "Open examination"
+        ],
+        [
+          "12 Sinnae",
+          "Defense",
+          "Citizenship",
+          "Minimum line",
+          "Contract",
+          "Cross-verified",
+          "Licensed sharing",
+          "Licensed",
+          "Adoptive apprenticeship"
+        ],
+        [
+          "13 Jegi-dong",
+          "Defense",
+          "Citizenship",
+          "Minimum line",
+          "Contract",
+          "Cross-verified",
+          "Joint ledger",
+          "Licensed",
+          "Open examination"
+        ],
+        [
+          "14 Achasan",
+          "Limited war",
+          "Expulsion",
+          "Contract",
+          "Forced service",
+          "Closed",
+          "Licensed sharing",
+          "Blockade",
+          "Bloodline"
+        ],
+        [
+          "15 Garak",
+          "Defense",
+          "Quarantine admission",
+          "Contract",
+          "Contract",
+          "Closed",
+          "Licensed sharing",
+          "Open market",
+          "Adoptive apprenticeship"
+        ],
+        [
+          "16 Suseo",
+          "Defense",
+          "Citizenship",
+          "Minimum line",
+          "Contract",
+          "Cross-verified",
+          "Joint ledger",
+          "Licensed",
+          "Open examination"
+        ]
       ]
     }
   ]

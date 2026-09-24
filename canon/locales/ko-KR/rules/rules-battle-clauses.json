@@ -60,6 +60,8 @@
       "source.b47",
       "source.b48",
       "source.b49",
+      "r2.rbattle-23",
+      "r2.rbattle-23.body",
       "source.b50",
       "source.b51",
       "source.b52",
@@ -871,6 +873,47 @@
           {
             "kind": "text",
             "text": "그 수치들은 아래 2026-09-07 카드 전투 POC 기록에만 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rbattle-23",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RBATTLE-23 유파 기법"
+        }
+      ]
+    },
+    {
+      "id": "r2.rbattle-23.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "인물의 유파 전수는 그 부대가 확정된 부대 명령을 수행하는 방식으로만 전투에 드러난다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "유파가 있는 영웅도 같은 여섯 명령을 받으며, 유파 기법은 새 명령 종류, 명령 큐, 카드나 능력 자원을 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "병사 분대의 20명 상한은 유파 전수 인원의 상한이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기법은 일반 승리·패배, 명령 철수, 사기 패주, 수락된 항복의 종료 판정을 덮어쓰지 않는다."
           }
         ]
       ]

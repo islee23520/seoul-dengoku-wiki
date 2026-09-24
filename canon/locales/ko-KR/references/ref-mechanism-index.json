@@ -193,7 +193,13 @@
       "source.b180",
       "source.b181",
       "source.b182",
-      "source.b183"
+      "source.b183",
+      "r2.ref-15.break",
+      "r2.ref-15",
+      "r2.ref-15-1",
+      "r2.ref-15-1.list",
+      "r2.ref-15-2",
+      "r2.ref-15-2.list"
     ]
   },
   "blocks": [
@@ -3524,6 +3530,82 @@
           "kind": "text",
           "text": "심층 15종 외 참고 후보(공개 오픈소스 게임 카탈로그 전수 조인, 2026-09-17): Jagged Alliance 2 Stracciatella(용병 로스터·충성), OpenApoc(실시간+일시정지 X-COM — 실시간 계약 직결), KeeperFX(크리처 기분·급여·배신), Fallout CE(종말후 동료·AP), UFO: Alien Invasion(전략+전술 이층 오리지널 설계), Cortex Command(실시간 분대+자원층), Tanks of Freedom II·Commander Wars(간접 지휘 턴제 비교), GLSMAC(파벌 성격 4X), Stone Kingdoms(거점 경영·공성), Wyrmsun(RTS 속 영웅 성장), OpenTTD(노선·신호 — Route 보조)."
         }
+      ]
+    },
+    {
+      "id": "r2.ref-15.break",
+      "kind": "thematicBreak",
+      "marker": "---"
+    },
+    {
+      "id": "r2.ref-15",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "15. 가치관 척도와 회수 부품 비교군"
+        }
+      ]
+    },
+    {
+      "id": "r2.ref-15-1",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "15.1 스텔라리스·유로파 유니버설리스 4 — 윤리 축과 정책 슬롯 [REF:VP-SLOTS]"
+        }
+      ]
+    },
+    {
+      "id": "r2.ref-15-1.list",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "**[비교군]** 인물 가치관 10칸과 조직 정책 슬롯은 스텔라리스의 윤리 쌍(권위·평등, 배타·개방, 무력·평화, 물질·의례)과 정책 슬롯, 유로파 유니버설리스 4의 중앙·혁신·외교 슬롯을 비교군으로 삼았다. 두 작품의 원문 근거는 아직 수집하지 않았다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "**잔선**: 축과 슬롯의 구조만 비교한다. 원작의 은하 종족명, 이념 그룹명, 고유 이벤트 문장은 옮기지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.ref-15-2",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "15.2 Horizon Forbidden West — 회수 부품 경제 [REF:HFW-SALVAGE]"
+        }
+      ]
+    },
+    {
+      "id": "r2.ref-15-2.list",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "**[문서: 공식 소개]** PlayStation 공식 소개(열람 2026-09-12)는 기계에서 떼어낸 부품으로 무기와 장비, 덫을 만든다고 설명한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "**잔선**: 이 경제적 긴장만 빌린다. 서울 지하에서 회수한 모듈은 조건부로 장비와 함정, 무기에 덧붙는다. 기본 병과를 활로 바꾸지 않으며 원작의 고유명사와 제작 레시피는 가져오지 않는다."
+          }
+        ]
       ]
     }
   ]

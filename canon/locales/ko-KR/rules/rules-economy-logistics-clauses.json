@@ -27,6 +27,7 @@
       "source.b14",
       "source.b15",
       "source.b16",
+      "r2.recon-02.formulas",
       "source.b17",
       "source.b18",
       "source.b19",
@@ -48,6 +49,8 @@
       "source.b35",
       "source.b36",
       "source.b37",
+      "r2.recon-07.multiplier",
+      "r2.recon-07.import",
       "source.b38",
       "source.b39",
       "source.b40",
@@ -87,6 +90,8 @@
       "source.b74",
       "source.b75",
       "source.b76",
+      "r2.recon-17.supply",
+      "r2.recon-17.shortfall",
       "source.b77",
       "source.b78",
       "source.b79",
@@ -189,7 +194,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "수치는 설계 가정이므로 구현 상수가 있으면 그 값을 우선한다."
+          "text": "수치는 첫 프로토타입용 설계 가정이므로 구현 상수가 있으면 그 값을 우선한다."
         }
       ]
     },
@@ -510,6 +515,13 @@
       ]
     },
     {
+      "id": "r2.recon-02.formulas",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "text",
+      "text": "노동률 = 필요인력이 0이면 1, 아니면 clamp(가용직능인력 / 필요인력, 0, 1)\n입력률 = 필요 입력 집합이 비어 있으면 1, 아니면 min_r(필요량_r이 0이면 1, 아니면 clamp(배정량_r / 필요량_r, 0, 1))\n전력률 = 필요전력이 0이면 1, 아니면 clamp(배정전력 / 필요전력, 0, 1)\n생산량 = 기본산출 * min(노동률, 입력률, 전력률) * 시설상태\n부족률_r = 총수요_r이 0이면 0, 아니면 clamp(1 - 충족수요_r / 총수요_r, 0, 1)\n노동지속성 = clamp(1 - sum_r(감점계수_r * 부족률_r), 0.2, 1)\n"
+    },
+    {
       "id": "source.b17",
       "kind": "paragraph",
       "inlines": [
@@ -721,6 +733,26 @@
         {
           "kind": "text",
           "text": "격리 민감도는 0.35다."
+        }
+      ]
+    },
+    {
+      "id": "r2.recon-07.multiplier",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "가격 승수에는 희소 항과, 격리 민감도·수입 의존 항 `I`·자원별 수입 의존도의 곱을 더한다."
+        }
+      ]
+    },
+    {
+      "id": "r2.recon-07.import",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "`I = 필수 수요가 0이면 0, 아니면 1 - clamp(반입 용량 / 필수 수요, 0, 1)`이다."
         }
       ]
     },
@@ -1121,6 +1153,26 @@
         {
           "kind": "text",
           "text": "부하 A는 기존 값에 부하Δ를 더한 뒤 0 이상 100 이하로 자른다."
+        }
+      ]
+    },
+    {
+      "id": "r2.recon-17.supply",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보급률은 `clamp(도착량 / max(감시기간수요, 1), 0, 1)`이다."
+        }
+      ]
+    },
+    {
+      "id": "r2.recon-17.shortfall",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "물류 부족률은 `clamp(미충족량 / max(필요량, 1), 0, 1)`이다."
         }
       ]
     },

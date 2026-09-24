@@ -67,7 +67,10 @@
       "source.b55",
       "source.b56",
       "source.b57",
-      "source.b58"
+      "source.b58",
+      "r2.poc-history",
+      "r2.poc-history.poc",
+      "r2.poc-history.camera"
     ]
   },
   "blocks": [
@@ -1041,6 +1044,37 @@
         {
           "kind": "text",
           "text": "Bootstrap과 Foundation의 책임이 분리되고, FSM만 전환을 승인하며, ready 이전에는 안정 상태가 바뀌지 않아야 합니다. App/child scope 경계, 불법·중복·실패·재시도, static Singleton 금지와 Unity-free Repository 경계가 자동 테스트와 품질 게이트에서 확인돼야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "r2.poc-history",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "POC 표현 이력"
+        }
+      ]
+    },
+    {
+      "id": "r2.poc-history.poc",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 Unity POC는 오드랜드 원본 에셋과 좌우 사이드스크롤 전투 화면을 씁니다. 이 표현은 역사 기록이며 목표 런타임 계약이 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "r2.poc-history.camera",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "목표 전투 카메라인 3D 자유 지휘 시점과 닫힌 전투 한정 일시정지는 2026-09-19 카메라·일시정지 질문이 시간 초과된 뒤 채택한 설계 기본안이며, 소유자가 직접 답한 결정이 아닙니다. 규칙은 전투 규칙 RBATTLE-02·03을 따르고, 이 절은 구현 완료를 뜻하지 않습니다."
         }
       ]
     }
