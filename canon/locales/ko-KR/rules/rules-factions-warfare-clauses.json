@@ -84,6 +84,26 @@
       "source.b71",
       "source.b72",
       "source.b73",
+      "r2.rwarfare-34",
+      "r2.rwarfare-34.body",
+      "r2.rwarfare-35",
+      "r2.rwarfare-35.body",
+      "r2.rwarfare-36",
+      "r2.rwarfare-36.body",
+      "r2.rwarfare-36.kinds",
+      "r2.rwarfare-36.rules",
+      "r2.rwarfare-37",
+      "r2.rwarfare-37.body",
+      "r2.rwarfare-38",
+      "r2.rwarfare-38.body",
+      "r2.rwarfare-39",
+      "r2.rwarfare-39.body",
+      "r2.rwarfare-40",
+      "r2.rwarfare-40.body",
+      "r2.rwarfare-40.order",
+      "r2.rwarfare-41",
+      "r2.rwarfare-41.body",
+      "r2.rwarfare-41.kits",
       "source.b74",
       "source.b75",
       "source.b76",
@@ -539,6 +559,12 @@
           {
             "kind": "text",
             "text": "식량·전력·안전 같은 근거별 승인이 이 값에 묶인다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신앙은 근거 칸 `k`를 잠그거나 연다."
           }
         ]
       ]
@@ -1517,6 +1543,465 @@
       ]
     },
     {
+      "id": "r2.rwarfare-34",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-34 배신의 세 조건"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-34.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "배신은 위반할 조약이나 개인 맹세가 있고, 이름 있는 인물이 그 위반을 명령하거나 독단으로 실행하고, 그 인물이 알고 있던 촉발 사건과 동기가 있을 때만 성립한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "세 조건 가운데 하나라도 빠지면 배신이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-35",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-35 독단 공격과 국가 전쟁"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-35.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "군령관이 수장의 명령 없이 벌인 공격은 그 자체로 국가 사이의 전쟁을 열지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수장은 공격자를 처벌하고 배상할지, 공격을 사후 승인해 공식 전쟁으로 삼을지 결정한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-36",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-36 플레이어 정치 개입과 미시 기록"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-36.body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+        "text": "플레이어 인물이 다른 인물에게 하는 아래 정치 행위는 국가 관계 수치를 직접 바꾸지 않고 여섯 종류의 미시 기록으로 남는다."
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-36.kinds",
+      "kind": "table",
+      "header": [
+        "행위",
+        "기록 종류",
+        "대상"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "면담",
+          "`talk`",
+          "인물"
+        ],
+        [
+          "물자·통행·포로·기록 거래",
+          "`trade`",
+          "인물 또는 직위"
+        ],
+        [
+          "후계 공개 지지·실격",
+          "`heir-stance`",
+          "후보"
+        ],
+        [
+          "조약 호송",
+          "`escort`",
+          "서명자"
+        ],
+        [
+          "소문 반증·폭로",
+          "`rumour`",
+          "인물 또는 직위"
+        ],
+        [
+          "쿠데타 지원·경고",
+          "`plot`",
+          "주도자"
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-36.rules",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "면담은 상대의 공개·비공개 동기를 알아내는 행위다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "한 줄에는 원인 ID, 세계 시간, 주체, 대상, 크기, 규칙 판본을 적으며 크기는 정수다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "플레이어가 직위를 얻으면 그 직위의 제안자·승인자·거부권자로 행동한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신뢰·정통성을 직접 올리거나 전쟁 사건을 강제로 여는 명령은 없다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개입 결과로 관계가 바뀌어도 관계 원장의 지휘 간선은 자동으로 사라지지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-37",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-37 국가와 인물"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-37.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "국가는 인물과 계약을 담는 그릇이며 스스로 행동하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "제안·승인·거부는 이름 있는 인물이 자기 야망에 따라 한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "국가에 고정 성격이나 배신 확률을 두지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "작위·봉신·왕조 규칙은 인물의 야망·공포·관계·기억 칸을 바꾸지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-38",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-38 봉신 계약"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-38.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "봉신은 국가 관계 수치가 아니라 서명자와 조항을 가진 계약으로 성립한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "계약 한 줄에는 상급·하급 작위, 양측 제안자·서명자·비준자, 직위 귀속과 인물 귀속의 구분, 급수·통행·배급·호송·기록 인준·소집 가운데 실제로 이행할 조항을 적는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공개 신앙을 적고, 숨은 신앙은 비공개 원장에만 둔다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "양측 `CultureKey`, 헌납·소각·가동·기름·순례 가운데 실제로 출석할 의례 조항, 혼합 계약과 개종 압력의 구분, 서명자가 죽거나 직위를 잃을 때의 자동 유지·재비준·종료 가운데 하나를 함께 적는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공개 신앙·문화 키·의례 달력이 빠진 계약은 재비준 쟁점을 연다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "같은 물자를 두 계약에 동시에 묶거나 같은 유물을 두 사당에 동시에 둘 수 없다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "소집 조항은 전투 병력을 불러내지 않고 동원 명부·무기고 열쇠·탈영 장부를 누구에게 열지만 정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "상인 생업자에게 소집을 거는 계약은 거부된다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보호국은 권역사와 권역사 사이의 봉신 계약이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수장이 직접 쥔 역은 직할, 이름 있는 봉신에게 준 역은 위임이다. 위임을 거두지 않은 채 유물만 빼면 배신 쟁점이 열린다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신앙 가족이 다른 봉신 계약은 혼합 계약이 기본이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-39",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-39 혼합 계약"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-39.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "혼합 계약은 두 제례를 한 줄에 함께 기록한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "한쪽 제례를 지우면 계약 위반이며 RWARFARE-34의 배신 판정 대상이 된다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "이주민 회랑의 제례 키를 다섯 권역 문화 키로 덮어쓰지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-40",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-40 계승 순서"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-40.body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계승은 혈통 하나로 정하지 않는다. 후보는 아래 순서로 본다."
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-40.order",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "지정 후계자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "부수장 또는 대행자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선거와 평의회 추대"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "친족과 양자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사제와 도제"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "직능 길드 추천"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "군사적 거점 통제"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-41",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-41 문화 정체 키트"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-41.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "문화 정체 키트의 가산 수치는 설계 가정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "가산은 제안 평가의 가중치로만 쓰며 제안을 자동 승인하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "키트별 정치 효과는 아래 표를 따른다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-41.kits",
+      "kind": "table",
+      "header": [
+        "키",
+        "정치 효과"
+      ],
+      "dividers": [
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "`west-sluice`",
+          "봉신에게 물 할당과 헌납례를 조항으로 요구하고 지정 유언에 이행 기록을 붙임"
+        ],
+        [
+          "`center-record`",
+          "작위 수여에 기록 인준과 유물 열람이 없으면 권역 전체에 무효"
+        ],
+        [
+          "`north-refuge`",
+          "강제복무 조항이 있는 봉신을 거부하고 양자·사제가 혈족보다 앞설 수 있음"
+        ],
+        [
+          "`east-caravan`",
+          "보호 명분으로 하위 작위 회수가 열리기 쉽고 `plot` 임계가 낮아짐"
+        ],
+        [
+          "`southeast-ration`",
+          "작위보다 조정권이 후계를 가름하고 소집 조항을 거의 안 받음"
+        ]
+      ]
+    },
+    {
       "id": "source.b74",
       "kind": "heading",
       "level": 2,
@@ -1722,6 +2207,78 @@
           {
             "kind": "text",
             "text": "고립 단계 0~2와 과확장 0~2를 다른 범위로 바꾸지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "국가에 고정 성격, 영원한 동맹, 배신 확률을 두지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "충성·경건 슬라이더나 정통성을 직접 올리는 명령을 두지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "혈통만의 왕조나 무명 지도자 자동 생성을 두지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "영토만으로 작위를 인준하거나 유물 없는 통합을 완성으로 보지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신앙 칸과 의례 달력 없는 봉신 계약을 성립시키지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "옛 국가 제도의 부활을 승리 결말로 두지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "서울 밖 고유 신앙명과 작위명을 그대로 옮기지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "문화 키를 국가 ID로 바꿔 쓰지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "병과 관습으로 전투 규칙을 고치지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "상인 생업자에게 소집을 강제하지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기록청을 병영으로 만들어 `법통`을 유지하지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "분열 행렬의 교차 칸을 플레이어가 직접 고치는 명령을 두지 말 것"
           }
         ]
       ]

@@ -42,6 +42,9 @@
       "source.b29",
       "source.b30",
       "source.b31",
+      "r2.preset-long-rule",
+      "r2.preset-companions",
+      "r2.preset-party-size",
       "source.b32",
       "source.b33",
       "source.b34",
@@ -568,6 +571,36 @@
         {
           "kind": "text",
           "text": "이름·성별·외형만 만드는 지금 문장은 이 단계의 일부가 된다."
+        }
+      ]
+    },
+    {
+      "id": "r2.preset-long-rule",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시작 프리셋은 캠페인 동안 유지되는 장기 규칙이며, 시작 직후 사라지는 보너스가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "r2.preset-companions",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시작 동료는 세계 인물 총람에서 프리셋별 조건으로 무작위 배치한다."
+        }
+      ]
+    },
+    {
+      "id": "r2.preset-party-size",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "프리셋의 시작 인원 3~6명은 캠페인 파티의 크기이며, 병사 분대 정원이나 군단 규모가 아니다."
         }
       ]
     },
