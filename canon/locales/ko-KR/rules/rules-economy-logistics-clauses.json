@@ -1,0 +1,1699 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Rules-EconomyLogistics.md",
+    "lineStart": 1,
+    "lineEnd": 291,
+    "sha256": "4029e2684ff2e177b85c04d9658370ba13087562eb6a92306d3d257bdd98f2d9"
+  },
+  "document": {
+    "id": "doc.Rules-EconomyLogistics",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39",
+      "source.b40",
+      "source.b41",
+      "source.b42",
+      "source.b43",
+      "source.b44",
+      "source.b45",
+      "source.b46",
+      "source.b47",
+      "source.b48",
+      "source.b49",
+      "source.b50",
+      "source.b51",
+      "source.b52",
+      "source.b53",
+      "source.b54",
+      "source.b55",
+      "source.b56",
+      "source.b57",
+      "source.b58",
+      "source.b59",
+      "source.b60",
+      "source.b61",
+      "source.b62",
+      "source.b63",
+      "source.b64",
+      "source.b65",
+      "source.b66",
+      "source.b67",
+      "source.b68",
+      "source.b69",
+      "source.b70",
+      "source.b71",
+      "source.b72",
+      "source.b73",
+      "source.b74",
+      "source.b75",
+      "source.b76",
+      "source.b77",
+      "source.b78",
+      "source.b79",
+      "source.b80",
+      "source.b81",
+      "source.b82",
+      "source.b83",
+      "source.b84",
+      "source.b85",
+      "source.b86",
+      "source.b87",
+      "source.b88",
+      "source.b89",
+      "source.b90",
+      "source.b91",
+      "source.b92",
+      "source.b93",
+      "source.b94",
+      "source.b95",
+      "source.b96",
+      "source.b97",
+      "source.b98",
+      "source.b99",
+      "source.b100",
+      "source.b101",
+      "source.b102",
+      "source.b103",
+      "source.b104",
+      "source.b105",
+      "source.b106",
+      "source.b107",
+      "source.b108",
+      "source.b109",
+      "source.b110",
+      "source.b111",
+      "source.b112",
+      "source.b113",
+      "source.b114",
+      "source.b115"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "경제와 생산, 물류 규칙"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "blockQuote",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "출처: docs/game-logic/Economy-and-Production.md, docs/game-logic/Logistics-and-Infrastructure.md — 계약 수치는 구현 상수를 우선한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개요"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "경제는 생존 자원과 제작 자원과 노동과 전력과 실제 운송 능력을 한 장부로 묶는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "물류는 창고의 존재 사실이 아니라 필요한 종류의 물자가 허가된 경로로 제때 도착하는 능력이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "수치는 설계 가정이므로 구현 상수가 있으면 그 값을 우선한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "핵심 수치"
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "table",
+      "header": [
+        "항목",
+        "값",
+        "최소",
+        "최대"
+      ],
+      "dividers": [
+        "---",
+        "---:",
+        "---:",
+        "---:"
+      ],
+      "rawRows": [
+        [
+          " 정상 매수·매도 반폭 ",
+          " 10% ",
+          " 5% ",
+          " 35% "
+        ],
+        [
+          " 고립 추가 반폭 ",
+          " 0~10% ",
+          " 0% ",
+          " 10% "
+        ],
+        [
+          " 가격 격리 민감도 ",
+          " 0.35 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 물 부족 노동 감점 계수 ",
+          " 0.70 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 식량 부족 노동 감점 계수 ",
+          " 0.50 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 전력 부족 노동 감점 계수 ",
+          " 0.30 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 최저 노동 지속성 ",
+          " 20% ",
+          " 0% ",
+          " 100% "
+        ],
+        [
+          " 노동 지속성 공식 하한 ",
+          " 0.2 ",
+          " 0.2 ",
+          " 1 "
+        ],
+        [
+          " 역당 행정 수요 ",
+          " 1점 ",
+          " 0.5 ",
+          " 3 "
+        ],
+        [
+          " 운영 노선당 조율 수요 ",
+          " 0.5점 ",
+          " ",
+          " "
+        ],
+        [
+          " 배정 물류 조율 공급 ",
+          " 2점 ",
+          " ",
+          " "
+        ],
+        [
+          " 연락 조율 공급 ",
+          " 1.5점 ",
+          " ",
+          " "
+        ],
+        [
+          " 기록 조율 공급 ",
+          " 1.5점 ",
+          " ",
+          " "
+        ],
+        [
+          " 과확장 시 노선 산출 감소 상한 ",
+          " 50% ",
+          " ",
+          " 50% "
+        ],
+        [
+          " 과확장 시 현지 산출 감소 상한 ",
+          " 25% ",
+          " ",
+          " 25% "
+        ],
+        [
+          " 연결 처리량 ",
+          " 0~1 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 시설 상태 I ",
+          " 1 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 전력 P ",
+          " 0~1 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 접근권 X ",
+          " 0~1 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 위험 H ",
+          " 0~1 ",
+          " 0 ",
+          " 1 "
+        ],
+        [
+          " 일반 허브 유지비 ",
+          " 5 보급점/일 ",
+          " 0 ",
+          " 20 "
+        ],
+        [
+          " 허브 노동 ",
+          " 1교대/일 ",
+          " 0 ",
+          " 4 "
+        ],
+        [
+          " 원정대 피로 ",
+          " 0 ",
+          " 0 ",
+          " 100 "
+        ],
+        [
+          " 원정대 준비도 ",
+          " 100 ",
+          " 0 ",
+          " 100 "
+        ],
+        [
+          " 과확장 ",
+          " 지속 0 / 노출 0~1 / 심각 1~2 ",
+          " 0 ",
+          " 2 "
+        ],
+        [
+          " 고립 단계 ",
+          " 정상 0 / 부분 봉쇄 1 / 완전 차단 2 ",
+          " 0 ",
+          " 2 "
+        ],
+        [
+          " 부하 ",
+          " 준비 0~24 / 긴장 25~49 / 임계 50~74 / 실패 75~99 / 붕괴 100 ",
+          " 0 ",
+          " 100 "
+        ],
+        [
+          " 부족 부하 계수 ",
+          " 20 ",
+          " ",
+          " "
+        ],
+        [
+          " 완전고립 부하 계수 ",
+          " 8 ",
+          " ",
+          " "
+        ],
+        [
+          " 과확장 부하 계수 ",
+          " 6 ",
+          " ",
+          " "
+        ],
+        [
+          " 부하Δ ",
+          " 0~35 ",
+          " 0 ",
+          " 35 "
+        ],
+        [
+          " 감시기간 부하 회복 ",
+          " 15 ",
+          " ",
+          " "
+        ],
+        [
+          " 부담비율 분모 0·분자 양수 ",
+          " 3 ",
+          " ",
+          " "
+        ],
+        [
+          " 구간 최소 이동시간 ",
+          " 0.25시간 ",
+          " 0.25 ",
+          " 24 "
+        ]
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조항"
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-01 필수 소비 선예약"
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "하루가 열리면 주민용 물과 식량과 응급 의료를 먼저 예약한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시설 입력은 이 예약을 소비하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시장 주문은 그 다음 순위에 둔다."
+        }
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-02 생산 병목"
+        }
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "생산량은 기본산출에 노동률과 입력률과 전력률의 최솟값과 시설상태를 곱한 값이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "요구량이 0이거나 필요 입력 집합이 비어 있으면 그 충족률은 1이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "필요 노동 10교대 중 8교대 입력 70% 전력 90% 시설 상태 80% 기본산출 100이면 생산량은 56이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-03 영 분모 금지"
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "어떤 경우에도 0으로 나누지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "수요가 0이면 부족률은 0이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "필요 노동이나 필요 전력이 0이면 해당 률은 1이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-04 일일 정산 고정"
+        }
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "일일 정산 순서는 결정론의 일부다."
+        }
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "당일 노선 상태와 통과권과 부대 위치와 가용 인력과 정책과 수요와 지정 우선순위를 먼저 고정한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "주간 시스템은 하루를 다시 계산하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-05 동점 절단"
+        }
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "남은 인력은 지정 우선순위로 시설에 배정한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "동순위는 안정 시설 ID 다음 안정 인력 ID로 끊는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미예약 전력과 재고 입력도 같은 규칙을 쓴다."
+        }
+      ]
+    },
+    {
+      "id": "source.b30",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-06 화물 발송과 도착"
+        }
+      ]
+    },
+    {
+      "id": "source.b31",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미예약 출발 재고에서 인가 화물을 발송한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b32",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한도는 도착지 여유 저장과 화물 노동과 노선 용량과 통과권이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b33",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "도착 재고는 도착지의 당일 필수 소비에 쓸 수 있다."
+        }
+      ]
+    },
+    {
+      "id": "source.b34",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-07 가격과 격리 민감도"
+        }
+      ]
+    },
+    {
+      "id": "source.b35",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "가격은 재고를 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b36",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "실제 물건과 구매력과 접근권과 운송 용량이 있어야 거래가 성립한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b37",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "격리 민감도는 0.35다."
+        }
+      ]
+    },
+    {
+      "id": "source.b38",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-08 격리의 범위"
+        }
+      ]
+    },
+    {
+      "id": "source.b39",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "격리는 생산을 직접 지우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b40",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "수송을 제한하고 가격 반폭을 넓히며 수입 의존도가 0보다 큰 자원의 가격만 올린다."
+        }
+      ]
+    },
+    {
+      "id": "source.b41",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "고립된 자급 역은 해당 자원의 가격에 임의의 고립 감점을 받지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b42",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-09 노동 지속성"
+        }
+      ]
+    },
+    {
+      "id": "source.b43",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "노동 지속성은 1에서 자원별 감점계수와 부족률의 곱의 합을 뺀 값을 0.2 이상 1 이하로 자른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b44",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "물 감점 계수는 0.70이고 식량 0.50이고 전력 0.30이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b45",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "물 수요 100 중 50만 충족되고 식량과 전력이 충족되면 노동 지속성은 0.65다."
+        }
+      ]
+    },
+    {
+      "id": "source.b46",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-10 부족의 대상"
+        }
+      ]
+    },
+    {
+      "id": "source.b47",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "물과 식량과 전력 부족은 다음 날 노동을 낮춘다."
+        }
+      ]
+    },
+    {
+      "id": "source.b48",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "의약품 부족은 치료 행동 자체를 제한한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b49",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "탄약 부족은 전술 장비와 출격 가능 수량만 제한한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b50",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-11 직능 대체 금지"
+        }
+      ]
+    },
+    {
+      "id": "source.b51",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "인력 부족 시 자격 없는 인물을 자동 대체하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b52",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "생산 주문은 부분 완료된다."
+        }
+      ]
+    },
+    {
+      "id": "source.b53",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-12 과확장 산출 감점"
+        }
+      ]
+    },
+    {
+      "id": "source.b54",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "과확장 시 노선 산출은 최대 50%까지 감소한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b55",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현지 산출은 최대 25%까지 감소한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b56",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "감소량은 과확장을 0 이상 1 이하로 자른 값에 비례하고 그 상한을 넘지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b57",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-13 조율 수요와 공급"
+        }
+      ]
+    },
+    {
+      "id": "source.b58",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조율 수요는 역당 행정 수요 1점에 운영 노선당 0.5점을 더한 값이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b59",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조율 공급은 배정 물류 2점과 연락 1.5점과 기록 1.5점과 저작 업그레이드다."
+        }
+      ]
+    },
+    {
+      "id": "source.b60",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 둘은 과확장 공식의 통치부담과 행정역량 입력이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b61",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-14 구간 처리량"
+        }
+      ]
+    },
+    {
+      "id": "source.b62",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "실제 처리량 C_e는 B_e와 시설상태 I_e와 전력 P_e와 접근권 X_e와 (1-H_e)를 곱한 뒤 0 이상 B_e 이하로 자른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b63",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "I와 P와 X와 H의 범위는 0부터 1이고 I의 기본값은 1이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b64",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기본 처리량 100에 시설 0.8 전력 0.5 접근권 1 위험 0.1이면 C는 36이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b65",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-15 과확장 척도"
+        }
+      ]
+    },
+    {
+      "id": "source.b66",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "과확장은 0 이상 2 이하 공유 척도이며 물류 문서의 정의가 기준이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b67",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "세 부담비율의 최댓값에서 1을 뺀 값을 0 이상 2 이하로 자른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b68",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분모가 0인데 분자가 남으면 그 비율은 3이라 과확장이 즉시 2로 포화한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b69",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-16 고립 단계"
+        }
+      ]
+    },
+    {
+      "id": "source.b70",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "고립 단계는 0 이상 2 이하 연속 척도다."
+        }
+      ]
+    },
+    {
+      "id": "source.b71",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "모든 합법 주 경로가 정상이면 0이고 우회와 경화물만 가능하면 1이고 모든 합법 경로가 차단되면 2다."
+        }
+      ]
+    },
+    {
+      "id": "source.b72",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "중간값은 봉쇄된 합법 경로 처리량의 비율로 보간한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b73",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-17 부하 누적"
+        }
+      ]
+    },
+    {
+      "id": "source.b74",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "부하Δ는 20배 부족률과 8배 완전고립과 6배 과확장을 더한 값을 0 이상 35 이하로 자른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b75",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "완전고립은 고립 단계가 2이면 1 아니면 0이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b76",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "부하 A는 기존 값에 부하Δ를 더한 뒤 0 이상 100 이하로 자른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b77",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-18 부하 회복과 구간"
+        }
+      ]
+    },
+    {
+      "id": "source.b78",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보급률이 1이고 허가된 안전 거점에서 필요 능력 태그가 있으면 감시기간당 15만큼 회복한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b79",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "0~24는 준비 25~49는 긴장 50~74는 임계 75~99는 실패 100은 붕괴다."
+        }
+      ]
+    },
+    {
+      "id": "source.b80",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "자동 비율 사망은 적용하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b81",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-19 부하 구간 효과"
+        }
+      ]
+    },
+    {
+      "id": "source.b82",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "25~49 긴장은 준비도 감소와 여유 용량이 필요한 임의 행동 제한을 적용한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b83",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "50~74 임계는 구간 진입 시 미치료 부상 하나 악화 또는 최하위 상태 장비 하나 손상을 확정한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b84",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "둘 다 없으면 지정 화물을 잃고 대상은 심각도 다음 영속 ID 순이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b85",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-20 실패와 붕괴"
+        }
+      ]
+    },
+    {
+      "id": "source.b86",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "75~99 실패는 후퇴와 화물 유기와 현지 조달과 분할과 명시적 고위험 속행 중 결정을 강제한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b87",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "100 붕괴는 전진 개시를 막고 좌초와 항복과 해산 또는 구조와 최후 조우로 넘긴다."
+        }
+      ]
+    },
+    {
+      "id": "source.b88",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-21 보급 태그"
+        }
+      ]
+    },
+    {
+      "id": "source.b89",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보급 배분은 정책 우선순위와 영속 ID 순서로 결정한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b90",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "물자는 능력 태그가 맞는 수요에만 충족한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b91",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "의료와 배터리와 수리 태그는 일반 보급점이 남아 있어도 상호 비대체다."
+        }
+      ]
+    },
+    {
+      "id": "source.b92",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-22 허브와 봉쇄"
+        }
+      ]
+    },
+    {
+      "id": "source.b93",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "일반 허브 유지비는 5 보급점/일이고 허브 노동은 1교대/일이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b94",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "불필요한 중복 허브도 유지비를 내며 최대 흐름과 비축과 단일고장 생존성을 늘리지 않으면 효용 0으로 표시한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b95",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "봉쇄 연결은 삭제하지 않고 원인과 수리 자원과 예상 시간을 표시한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b96",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-23 전력 차단과 임시 복구"
+        }
+      ]
+    },
+    {
+      "id": "source.b97",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "전력 차단 환승역은 양쪽 터널이 멀쩡해도 전동 화물 흐름이 0일 수 있다."
+        }
+      ]
+    },
+    {
+      "id": "source.b98",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "임시 복구는 기본적으로 도보와 경화물만 통과시킨다."
+        }
+      ]
+    },
+    {
+      "id": "source.b99",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "중화물과 무장 통과는 별도 승인이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b100",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RECON-24 영 요구 생산과 영수증"
+        }
+      ]
+    },
+    {
+      "id": "source.b101",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "필요 노동과 전력과 입력이 모두 0이고 필요 입력 집합이 비어 있으면 시설 상태 80%에서 기본산출 100의 생산량은 80이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b102",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "원인별 영수증을 남기고 일일 집계를 갱신한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b103",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "주간 시스템은 이 영수증만 읽는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b104",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "판정 순서"
+        }
+      ]
+    },
+    {
+      "id": "source.b105",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "당일 노선 상태와 통과권과 부대 위치와 가용 인력과 정책과 수요와 지정 우선순위를 고정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "네트워크 과확장과 가용 노선 용량을 계산한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "방어와 원정과 치료와 운송 명령에 인력을 예약한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개시 재고와 전력을 당일 필수 소비에 예약한다. 시설 입력은 이 예약을 소비하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "남은 인력을 지정 우선순위로 시설에 배정한다. 동순위는 안정 시설 ID 다음 안정 인력 ID로 끊는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미예약 전력과 재고 입력을 같은 우선순위와 동점 규칙으로 시설에 배정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "배정에 따라 생산을 실행하고 입력을 소비하며 산출을 더한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미예약 출발 재고에서 인가 화물을 발송한다. 도착지 여유 저장과 화물 노동과 노선 용량과 통과권으로 제한한다. 도착 재고는 도착지의 당일 필수 소비에 쓸 수 있다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "예약분과 도착 화물과 당일 산출로 필수 소비를 같은 소비자 우선순위로 정산한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "부족과 다음 날 노동 지속성과 현지 매수·매도 가격과 넘침과 노출된 호송·비축 사실을 계산한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "원인별 영수증을 남기고 일일 집계를 갱신한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "감시기간 말에 부하Δ를 더하고 0 이상 100 이하로 자른다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보급률이 1이고 허가된 안전 거점과 필요 능력 태그가 있으면 증가 대신 15만큼 회복한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "부하 구간 효과를 적용한다. 실패는 결정을 강제하고 붕괴는 전진 개시를 막는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b106",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "금지 사항"
+        }
+      ]
+    },
+    {
+      "id": "source.b107",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "0으로 나누는 계산"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "가격만으로 재고를 만드는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격 없는 인물의 자동 대체"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "의료·배터리·수리 태그를 일반 보급점으로 대체하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "봉쇄 연결을 삭제하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자동 비율 사망"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "격리가 생산을 직접 지우는 처리"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "주간 시스템이 하루를 다시 계산하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "시설 입력이 필수 예약을 소비하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "임시 복구 구간에서 승인 없이 중화물과 무장을 통과시키는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "고립 자급 역에 임의의 고립 가격 감점을 매기는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수요 0을 부족 양수로 처리하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "경로가 없어도 비축이 있는데 즉시 굶기는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "효용 없는 중복 허브의 유지비를 면제하는 일"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b108",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "출처"
+        }
+      ]
+    },
+    {
+      "id": "source.b109",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`docs/game-logic/Economy-and-Production.md`"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`docs/game-logic/Logistics-and-Infrastructure.md`"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b110",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "표와 공식의 모든 수치는 두 문서의 설계 가정이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b111",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계약 또는 잠긴 표기는 원문에 없다."
+        }
+      ]
+    },
+    {
+      "id": "source.b112",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "노동 지속성 하한 20%와 공식 0.2는 동일 값이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b113",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "과확장 0~2 정의는 물류 문서가 기준이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b114",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "경제 문서의 노선 50%·현지 25% 감소는 과확장을 0 이상 1 이하로 자른 값에 비례한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b115",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현 상수가 있으면 그 값을 우선한다."
+        }
+      ]
+    }
+  ]
+}

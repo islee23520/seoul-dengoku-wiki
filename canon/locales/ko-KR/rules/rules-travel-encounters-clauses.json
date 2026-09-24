@@ -1,0 +1,891 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Rules-TravelEncounters.md",
+    "lineStart": 1,
+    "lineEnd": 141,
+    "sha256": "033dfa699eab1994cab49e0520141e2c31fa92cf1b212f1f1559d92bd59aefa9"
+  },
+  "document": {
+    "id": "doc.Rules-TravelEncounters",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39",
+      "source.b40",
+      "source.b41",
+      "source.b42",
+      "source.b43",
+      "source.b44",
+      "source.b45",
+      "source.b46"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이동과 조우 규칙"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "blockQuote",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "출처: [이동·조우](Travel-and-Encounters.md), [원정](Campaign-Loop.md) — 계약 수치는 구현 상수를 우선한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개요"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "원정은 전략맵에서 노선 구간을 골라 진행한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "조우의 확률과 유형은 캠페인 시드, 위치, 시간, 소음, 세력 통제, 최근 사건과 파티 상태로 가른다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "조우 결과는 한 번만 반영하며, 결과 반영 뒤 원정을 계속하거나 다음 행선지와 원정 결말을 고를 수 있다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "핵심 수치"
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "table",
+      "header": [
+        "항목",
+        "값",
+        "비고"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "기본 이동 단위",
+          "노선 구간",
+          "조건 비용을 더한다"
+        ],
+        [
+          "조우 재현",
+          "동일 상태와 동일 명령",
+          "같은 조우가 나와야 한다"
+        ],
+        [
+          "결과 반영",
+          "원인 ID 또는 ResultId당 1회",
+          "귀환 명령이 아님"
+        ]
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "원문은 구간당 숫자 비용과 조우 확률표를 적지 않았다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "구현 상수가 있으면 그 값을 따르며 새 전술 이동 공식을 만들지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조항"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-01 전략맵 구간 선택"
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "원정은 전략맵에서 노선 구간을 골라 진행한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전술 전투의 카드·격자·방향 규칙을 캠페인 이동 입력으로 가져오지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-02 유효 경로"
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "현재 위치에서 이어지지 않거나 통과 조건을 만족하지 못한 구간은 이동으로 확정하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "거부된 입력은 세계 상태를 바꾸지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-03 전략맵 거리 감각"
+        }
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "이동 감각과 거리 판단은 전략맵의 지형과 구간 상태에서 나온다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "탐색과 전투가 같은 격자를 쓴다는 폐기된 전제를 요구하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-04 조우 판정 축"
+        }
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "조우 확률과 유형은 캠페인 시드, 위치, 시간, 소음, 세력 통제, 최근 사건과 파티 상태로 가른다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력을 빼 먹은 조우는 무효다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-05 기본 구간 비용"
+        }
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "기본 구간 비용이 먼저 붙는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "그다음 이동 조건 비용을 더한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-06 층 전환"
+        }
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "계단과 사다리와 승강기는 층 전환 비용을 더한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "층 전환은 공짜 이동이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-07 몸 상태와 과적"
+        }
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "부상과 통증과 피로와 과적은 비용을 불린다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "빠진 항목 없이 모두 반영한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-08 지형 위험"
+        }
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "어둠과 침수와 잔해와 화재는 구간 비용을 불린다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "위험 지형은 공짜로 지나가지 못한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-09 세력 통과"
+        }
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "적대 세력의 통제와 통행권도 비용에 넣는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "통행권이 없으면 통과 비용이나 가능 여부에 반영한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-10 편성 부담"
+        }
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "파티 규모와 은밀 이동과 호위 대상은 비용을 더한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "은밀 이동은 무료가 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-11 세계 지도 비교"
+        }
+      ]
+    },
+    {
+      "id": "source.b30",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "세계 지도에서는 노선과 환승과 봉쇄를 견준다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "짧은 선이 곧 안전한 선은 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b31",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-12 역과 인접 구간"
+        }
+      ]
+    },
+    {
+      "id": "source.b32",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "역을 고르면 전략맵에서 해당 노드로 시점이 옮겨가고 역 상태와 인접 구간을 볼 수 있다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "세계 지도와 전략맵이 서로 다른 노선·역 상태를 가리키면 안 된다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b33",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-13 봉쇄 보존"
+        }
+      ]
+    },
+    {
+      "id": "source.b34",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "막힌 연결은 지우지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "원인과 위험도와 복구 조건을 보여 준다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b35",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-14 조우 입력"
+        }
+      ]
+    },
+    {
+      "id": "source.b36",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "조우는 캠페인 시드와 위치와 시간과 소음과 세력 통제와 최근 사건과 파티 상태에서 결정된다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력을 빼 먹은 조우는 무효다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b37",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-15 동일 입력 동일 조우"
+        }
+      ]
+    },
+    {
+      "id": "source.b38",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "세계 상태와 명령이 같으면 같은 조우가 나와야 한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력이 같은데 결과가 갈리면 규칙 위반이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b39",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RTRAVEL-16 비전투 해결과 원정 계속"
+        }
+      ]
+    },
+    {
+      "id": "source.b40",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "모든 조우가 전투로 이어지지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "통행료 지불과 교섭과 수리와 의료와 정보 제공과 은신과 우회가 정식 해결이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "조우 중 물건을 주고받는 현장 거래는 원정 결말인 교역과 구분한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "해결 결과는 한 번만 원장에 반영하고, 파티는 같은 경로를 계속 가거나 다음 행선지와 귀환·정착·정복·방랑·교역 가운데 다음 결말을 고를 수 있다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b41",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "판정 순서"
+        }
+      ]
+    },
+    {
+      "id": "source.b42",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "선택한 전략맵 노선 구간이 현재 위치와 이어지고 통과 조건을 만족하는지 확인한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "유효하지 않으면 세계 상태를 바꾸지 않고 거부한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기본 구간 비용에 층 전환을 더한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "부상과 통증과 피로와 과적을 더한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "어둠과 침수와 잔해와 화재를 더한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "적대 통제와 통행권을 더한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "파티 규모와 은밀 이동과 호위 대상을 더한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "세계 지도의 노선과 환승과 봉쇄를 대조한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "막힌 연결이면 원인과 위험도와 복구 조건을 유지한 채 보여 준다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "조우 입력을 캠페인 시드부터 파티 상태까지 모은다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일 입력이면 동일 조우를 생성한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투가 아니면 통행료와 교섭과 수리와 의료와 정보 제공과 은신과 우회로 해결한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "해결 결과를 한 번 반영한 뒤 원정을 계속하거나 다음 행선지와 원정 결말을 고른다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b43",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "금지 사항"
+        }
+      ]
+    },
+    {
+      "id": "source.b44",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "전술 카드·격자·4방향 입력을 전략맵 원정 규칙으로 되살리는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "탐색과 전투가 같은 격자를 써야 한다고 요구하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "막힌 연결을 삭제하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "조우를 모두 전투로 처리하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "시드와 세계 상태가 같은데 다른 조우를 내는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "원문에 없는 확률 숫자나 구간 비용을 규칙서에 적어 고정하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "통행료와 교섭과 수리와 의료와 정보 제공과 은신과 우회를 비공식 처리로 내리는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "세계 지도와 전략맵의 노선·역 상태를 서로 다른 그래프로 쪼개는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결과 반영을 강제 귀환으로 처리하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현장 거래와 원정 결말인 교역을 같은 것으로 처리하는 일"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투의 실시간 이동 공식을 캠페인 물류·여행 비용으로 발명하는 일"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b45",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "출처"
+        }
+      ]
+    },
+    {
+      "id": "source.b46",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "[이동·조우](Travel-and-Encounters.md) — 전략맵 구간 이동, 비용 요인, 결정론적 조우와 원정 계속."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[원정](Campaign-Loop.md) — 결과 반영은 귀환 명령이 아니며 귀환·정착·정복·방랑·교역은 서로 다른 결말."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "원문은 구간당 고정 숫자 비용과 조우 확률을 적지 않았다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "구현 상수가 있으면 그 값을 우선한다."
+          }
+        ]
+      ]
+    }
+  ]
+}
