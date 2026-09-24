@@ -1,6 +1,6 @@
 # 새 시리즈/설정 개요 (TOC)
 
-이 문서는 《서울:전국》 세계관의 설정과 데이터 구조를 정리한 종합 목차입니다. 링크는 이 문서(LORE/README.md) 기준 상대 경로입니다.
+이 문서는 《서울:전국》 세계관의 설정과 데이터 구조를 정리한 종합 목차입니다. 링크는 이 문서(WIKI/lore/README.md) 기준 상대 경로입니다.
 
 ## 1. 개요
 - [용어 사전 (Glossary)](Glossary.md)
@@ -11,7 +11,7 @@
 - [사람과 기체](people-and-machines/People-and-Machines.md)
 
 ## 3. 연표
-- [서울전국 백년실록 — 2026~2126](chronology/Century-Annals.md)
+- [서울전국 연표 2026–2126](chronology/Century-Annals.md)
 - [시나리오 타임라인](chronology/Scenario-Timeline.md)
 
 ## 4. 지명
@@ -77,7 +77,7 @@
 - [세계 확장 관계 원장](World-Relation-Ledger.md)
 - [세계 확장 색인](World-Expansion-Index.md)
 
-투영물 안내: `LORE/bestiary/`의 색인과 27개 집단 도감, `LORE/` 루트의 `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md`는 World-Narrative-Atlas의 읽기 전용 투영물입니다. 몬스터 배치 본문 페이지는 폐기했고, M번호는 집단 도감 안 개체의 출처 정보로만 남습니다. 수정은 원본 총람에만 반영합니다.
+투영물 안내: `lore/bestiary/`의 색인과 27개 집단 도감, `lore/` 루트의 `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md`는 World-Narrative-Atlas의 읽기 전용 투영물입니다. 몬스터 배치 본문 페이지는 폐기했고, M번호는 집단 도감 안 개체의 출처 정보로만 남습니다. 수정은 원본 총람에만 반영합니다.
 
 ---
 

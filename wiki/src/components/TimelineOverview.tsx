@@ -36,15 +36,14 @@ export default function TimelineOverview() {
   const period = periods.find((candidate) => candidate.id === periodId) ?? periods[0]
   const years = useMemo(() => data?.years.filter((entry) => entry.year >= period.start && entry.year <= period.end) ?? [], [data, period])
 
-  if (failed) return <p className="wiki-domain-label">백년실록 연도별 줄거리 데이터를 불러오지 못했습니다.</p>
-  if (!data) return <div className="wiki-loading">백년실록 연도별 전체 줄거리를 정리하고 있습니다.</div>
+  if (failed) return <p className="wiki-domain-label">연표 연도별 줄거리 데이터를 불러오지 못했습니다.</p>
+  if (!data) return <div className="wiki-loading">연표 연도별 전체 줄거리를 정리하고 있습니다.</div>
 
   return (
     <section className="timeline-overview" aria-labelledby="timeline-overview-title">
       <header>
-        <p className="wiki-domain-label">2026–2126 · 백년실록 구조 색인</p>
+        <p className="wiki-domain-label"><Link to="/world/Century-Annals">서울전국 연표 2026–2126</Link></p>
         <h2 id="timeline-overview-title">전체 {data.years.length}개 연도 줄거리</h2>
-        <p>각 연도의 사건 전문을 한 문단으로 압축하고, 그해의 압력·결정·즉시 결과·다음 해에 남은 인과를 같은 줄에서 확인합니다. 요약은 <Link to="/world/Century-Annals">서울전국 백년실록</Link>에서 자동 생성됩니다.</p>
       </header>
       <div className="timeline-periods" aria-label="연표 시대 필터">
         {periods.map((candidate) => <button key={candidate.id} type="button" aria-pressed={periodId === candidate.id} onClick={() => setPeriodId(candidate.id)}>{candidate.label}</button>)}
