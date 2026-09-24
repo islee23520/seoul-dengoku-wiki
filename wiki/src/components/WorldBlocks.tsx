@@ -42,7 +42,10 @@ export function WorldBlocks({ blocks }: { blocks: WorldBlock[] }) {
       case 'blockquote': return <blockquote key={key}>{children}</blockquote>
       case 'list': return node.ordered ? <ol key={key} start={node.start}>{children}</ol> : <ul key={key}>{children}</ul>
       case 'listItem': return <li key={key}>{children}</li>
-      case 'table': return <div className="wiki-table-wrap" key={key}><table><tbody>{children}</tbody></table></div>
+      case 'table': return <div className="wiki-table-wrap" key={key}><table>
+        {node.children?.[0] && <thead><tr>{node.children[0].children?.map((cell, index) => <th key={index} scope="col">{cell.children?.map((child, childIndex) => render(child, childIndex))}</th>)}</tr></thead>}
+        <tbody>{node.children?.slice(1).map((row, index) => render(row, index))}</tbody>
+      </table></div>
       case 'tableRow': return <tr key={key}>{children}</tr>
       case 'tableCell': return <td key={key}>{children}</td>
       case 'link': {
