@@ -10,10 +10,11 @@
   },
   "provenance": {
     "original_anchor": "lore/ailments/Ailments.md",
-    "original_hash": "a37fe7437cae9716051ae5b3530e45cb7ac27fe0ea0a99e4d5162df6b82a9387",
+    "original_hash": "2ad5b59ec5897a7996716f2ea2b3053afb63314b4025f2b60c58d4fe73db1675",
     "history": [
       "Korean lore/ailments/Ailments.md SHA-256 a37fe7437cae9716051ae5b3530e45cb7ac27fe0ea0a99e4d5162df6b82a9387.",
-      "English lore/ailments/Ailments.en.md SHA-256 ee5f77cd81c4cae286eb38cc8a67d3f79cf69c226d9c9b9a98519f7a2b33475c; copied verbatim, no translation written."
+      "English lore/ailments/Ailments.en.md SHA-256 ee5f77cd81c4cae286eb38cc8a67d3f79cf69c226d9c9b9a98519f7a2b33475c; copied verbatim, no translation written.",
+      "2026-09-24 Korean lore/ailments/Ailments.md rewritten in findings style (setting-style guide), facts kept; SHA-256 2ad5b59ec5897a7996716f2ea2b3053afb63314b4025f2b60c58d4fe73db1675. English revised to match paragraph by paragraph."
     ]
   },
   "source": {
@@ -26,12 +27,12 @@
   "locales": {
     "en": {
       "title": "Ailments and Symptoms",
-      "summary": "Disease was not a new plague fallen from the sky.",
+      "summary": "The water, medicine and contamination of 2026 were the three starting points of disease in 2126.",
       "tense": "past"
     },
     "ko": {
       "title": "질병과 증상",
-      "summary": "질병은 하늘에서 떨어진 새로운 역병이 아니다.",
+      "summary": "2026년의 물, 약, 오염이 2126년 질병의 세 출발점이다.",
       "tense": "past"
     }
   },
@@ -51,32 +52,14 @@
       "text": {
         "en": [
           {
-            "text": "Disease was not a new plague fallen from the sky. Even in 2026, Seoul's tap water had flowed through treatment centers and pipes. Hospitals and clinics had counted stock by the essential-medicines list, and asbestos, mold, and machine coolant had already been in the subways, the schools, and the apartments. On the night of the "
-          },
-          {
-            "text": "motive-power revocation",
-            "link": {
-              "domain": "overview",
-              "slug": "World-Unbinding"
-            }
-          },
-          {
-            "text": ", when remote control and grid power went, those three layers remained in human hands alone."
+            "text": "A. Where disease starts",
+            "strong": true
           }
         ],
         "ko": [
           {
-            "text": "질병은 하늘에서 떨어진 새로운 역병이 아니다. 2026년에도 서울의 수돗물은 정수센터를 거쳐 관으로 흘렀다. 병원과 보건소는 필수의약품 목록으로 재고를 셌고, 지하철과 학교와 아파트에는 석면과 곰팡이와 기계 냉각수가 이미 있었다. "
-          },
-          {
-            "text": "기동권 이탈",
-            "link": {
-              "domain": "overview",
-              "slug": "World-Unbinding"
-            }
-          },
-          {
-            "text": "의 밤에 원격 관제와 상용 전력이 끊어지자 그 세 층이 사람 손으로만 남았다."
+            "text": "가. 질병의 출발점",
+            "strong": true
           }
         ]
       }
@@ -87,23 +70,71 @@
       "text": {
         "en": [
           {
-            "text": "A century later, when a cough went round the concourse, the medical officer opened the tanks, the medicine chests, and the damp walls before looking for a curse of creation. Nuclear war, climate collapse, and plague were not left as first causes in "
+            "text": "In 2026, Seoul's tap water was supplied through treatment centers and pipes. Hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of the "
           },
           {
-            "text": "the Scenario Timeline",
+            "text": "motive-power revocation",
+            "link": {
+              "domain": "overview",
+              "slug": "World-Unbinding"
+            }
+          },
+          {
+            "text": ", remote control and grid power were cut. After that, human watches took over water supply, medicine and contamination control."
+          }
+        ],
+        "ko": [
+          {
+            "text": "2026년 서울의 수돗물은 정수센터를 거쳐 관으로 공급되었다. 병원과 보건소는 필수의약품 목록으로 재고를 관리하였다. 지하철과 학교와 아파트에는 석면과 곰팡이와 기계 냉각수가 있었다. "
+          },
+          {
+            "text": "기동권 이탈",
+            "link": {
+              "domain": "overview",
+              "slug": "World-Unbinding"
+            }
+          },
+          {
+            "text": "의 밤에 원격 관제와 상용 전력이 끊겼다. 이후 급수, 약품, 오염 관리는 사람 당직이 맡았다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "질병과-증상-p3",
+      "text": {
+        "en": [
+          {
+            "text": "B. Causes in the timeline",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "나. 연표상 원인",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "질병과-증상-p4",
+      "text": {
+        "en": [
+          {
+            "text": "The Scenario Timeline",
             "link": {
               "domain": "chronology",
               "slug": "Scenario-Timeline"
             }
           },
           {
-            "text": ". The turbid water and counterfeit medicine of summer spread first. When water shook, medical convoys ran late, and when medicine shook, the ration windows' trust shook with it."
+            "text": " did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell."
           }
         ],
         "ko": [
-          {
-            "text": "한 세기 뒤 대합실에서 기침이 돌 때 의무원은 창세의 저주를 찾기보다 수조와 약장과 젖은 벽부터 연다. 핵전쟁과 기후붕괴와 역병은 "
-          },
           {
             "text": "연표",
             "link": {
@@ -112,7 +143,7 @@
             }
           },
           {
-            "text": "의 1차 원인으로 남지 않는다. 여름의 탁수와 가짜 약이 가장 먼저 번진다. 물이 흔들리면 의료 호송이 늦고 약이 흔들리면 배급 창구의 신뢰가 같이 흔들린다."
+            "text": "는 핵전쟁, 기후붕괴, 역병을 질병의 1차 원인으로 두지 않는다. 2126년 현재 대합실에서 기침 환자가 나오면 의무원은 수조와 약장과 젖은 벽을 먼저 점검한다. 여름에는 탁수와 가짜 약으로 인한 환자가 먼저 늘어난다. 급수가 부족하면 의료 호송이 늦어진다. 약품이 부족하면 배급 창구에 대한 신뢰가 떨어진다."
           }
         ]
       }
@@ -132,7 +163,25 @@
       "text": {
         "en": [
           {
-            "text": "Seoul's drinking water had been a system that treated raw Han water and sent it through pipes. The Yeongdeungpo Arisu treatment center pushed water toward Gangseo, Guro, Geumcheon, and Yangcheon. Ttukseom took Seongdong, Jung-gu, and Yongsan; Guui took Gwangjin, Jungnang, and Dongdaemun; Amsa took Gangnam and Gangdong and the southern districts. The Gangbuk treatment center sat in Namyangju and Gwangam in Hanam, outside Seoul, not easy for "
+            "text": "A. The water treatment system",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 정수 체계",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "수인병-p2",
+      "text": {
+        "en": [
+          {
+            "text": "In 2026, Seoul's drinking water came from a system that treated raw Han water and sent it through pipes. The Yeongdeungpo Arisu treatment center supplied Gangseo, Guro, Geumcheon and Yangcheon; Ttukseom supplied Seongdong, Jung-gu and Yongsan; Guui supplied Gwangjin, Jungnang and Dongdaemun; Amsa supplied Gangnam, Gangdong and the southern districts. The Gangbuk center was in Namyangju and the Gwangam center in Hanam. Both lay outside Seoul, beyond the easy control of "
           },
           {
             "text": "the Sixteen States of Seoul",
@@ -142,12 +191,12 @@
             }
           },
           {
-            "text": " to control."
+            "text": "."
           }
         ],
         "ko": [
           {
-            "text": "서울의 식수는 한강 원수를 정수해 보내는 체계였다. 영등포아리수정수센터는 강서·구로·금천·양천 쪽으로 물을 밀었다. 뚝섬은 성동·중구·용산 쪽을, 구의는 광진·중랑·동대문 쪽을, 암사는 강남·강동과 남부 여러 구 쪽을 맡았다. 강북 정수는 남양주에 있고 광암은 하남에 있어 서울 밖에 위치하며, "
+            "text": "2026년 서울의 식수는 한강 원수를 정수하여 관으로 보내는 체계였다. 영등포아리수정수센터는 강서·구로·금천·양천에, 뚝섬은 성동·중구·용산에, 구의는 광진·중랑·동대문에, 암사는 강남·강동과 남부 여러 구에 물을 공급하였다. 강북정수센터는 남양주에, 광암정수센터는 하남에 있다. 두 곳은 서울 밖에 있어 "
           },
           {
             "text": "서울 십육국",
@@ -157,34 +206,88 @@
             }
           },
           {
-            "text": "에서 통제하기 쉽지 않다."
+            "text": "의 통제가 미치기 어렵다."
           }
         ]
       }
     },
     {
       "kind": "paragraph",
-      "anchor": "수인병-p2",
-      "text": {
-        "en": "After the revocation, when the grid SCADA died, the pumps, the chlorine injection, and the turbidity tests came down to human watches. The stations with tanks held out. Remote safety control was dead. When the Yeouido sluices and the Ttukseom pumps could not share parts, the water in the pipes clouded first, and the standing water of flooded deep tunnels and transfer corridors mixed into that cloud.",
-        "ko": "이탈 뒤에 변전 스카다가 죽자 펌프와 염소 주입과 탁도 검사가 사람 당직으로 내려왔다. 수조가 있는 역은 버틴다. 원격 안전 관제는 죽었다. 여의도 수문과 뚝섬 펌프가 부품을 나누지 못하면 관 안의 물이 먼저 탁해지고, 침수된 심층 터널과 환승 통로의 고인 물이 그 탁함에 섞인다."
-      }
-    },
-    {
-      "kind": "paragraph",
       "anchor": "수인병-p3",
       "text": {
-        "en": "The waterborne symptoms were the result of that mixing. Diarrhea, fever, and dehydration stopped the ration lines. Labor endurance broke together with the water shortage.",
-        "ko": "수인병 증상은 이 섞임의 결과다. 설사와 열과 탈수가 배급 줄을 멈추게 한다. 노동 지속성은 물 부족과 함께 꺾인다."
+        "en": [
+          {
+            "text": "B. Operation after the revocation",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "나. 이탈 이후의 운전",
+            "strong": true
+          }
+        ]
       }
     },
     {
       "kind": "paragraph",
       "anchor": "수인병-p4",
       "text": {
+        "en": "After the revocation, the grid SCADA stopped. Human watches took over pump operation, chlorine injection and turbidity tests. The stations with tanks kept their water supply. When the exchange of parts between the Yeouido sluices and the Ttukseom pumps broke off, the water in the pipes clouded first. Standing water from flooded deep tunnels and transfer corridors also seeped into the pipes.",
+        "ko": "이탈 뒤 변전 스카다가 멈추었다. 펌프 가동, 염소 주입, 탁도 검사는 사람 당직이 맡게 되었다. 수조가 있는 역은 급수를 유지하고 있다. 여의도 수문과 뚝섬 펌프 사이의 부품 융통이 끊기면 관 안의 물이 먼저 탁해진다. 침수된 심층 터널과 환승 통로의 고인 물도 관으로 섞여 든다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "수인병-p5",
+      "text": {
         "en": [
           {
-            "text": "Eating the tank fish and drawing drinking water used the same surface. When the waste of the cells raising carp, crucian carp, and catfish mixed with the drinking-water ledger, that day's turbid water became the evening soup. "
+            "text": "C. Symptoms",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "다. 증상",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "수인병-p6",
+      "text": {
+        "en": "The main symptoms of waterborne disease were diarrhea, fever and dehydration. As patients increased, the ration lines stopped and the work crews shrank.",
+        "ko": "수인병의 주된 증상은 설사, 발열, 탈수이다. 환자가 늘면 배급 줄이 멈추고 작업 인원이 줄어든다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "수인병-p7",
+      "text": {
+        "en": [
+          {
+            "text": "D. Tanks and drinking water",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "라. 수조와 식수",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "수인병-p8",
+      "text": {
+        "en": [
+          {
+            "text": "Station tanks raised carp, crucian carp and catfish (hereafter \"tank fish\"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening's soup. Tank operation is recorded in "
           },
           {
             "text": "Food Culture",
@@ -194,22 +297,22 @@
             }
           },
           {
-            "text": ", which shared the tank water, and the "
+            "text": ", and the sluices and treatment plants in "
           },
           {
-            "text": "structures",
+            "text": "Structures",
             "link": {
               "domain": "structures",
               "slug": "Structures"
             }
           },
           {
-            "text": " of sluices and treatment plants tangled with each other."
+            "text": "."
           }
         ],
         "ko": [
           {
-            "text": "수조의 농어를 먹는 일과 식수를 뜨는 일은 같은 수면을 쓴다. 잉어와 붕어와 메기를 기르는 칸의 배설이 식수 원장과 섞이면 그날의 탁한 물이 저녁 국물이 된다. 수조 물을 공유하는 "
+            "text": "역 수조에서는 잉어, 붕어, 메기(이하 '수조 농어'라 한다)를 기른다. 수조 농어를 기르는 물과 식수는 같은 수조에서 뜬다. 사육 칸의 배설물이 식수에 섞이면 탁한 물이 그날 저녁 국물에 쓰인다. 수조 운영은 "
           },
           {
             "text": "식문화",
@@ -219,7 +322,7 @@
             }
           },
           {
-            "text": "와 수문 및 정수장의 "
+            "text": " 문서에, 수문과 정수장은 "
           },
           {
             "text": "구조물",
@@ -229,22 +332,58 @@
             }
           },
           {
-            "text": "이 서로 얽힌다."
+            "text": " 문서에 기재되어 있다."
           }
         ]
       }
     },
     {
       "kind": "paragraph",
-      "anchor": "수인병-p5",
+      "anchor": "수인병-p9",
       "text": {
-        "en": "In the first summer, when storms passed, some water tests failed and counterfeit medicine began to circulate. The research council demanded disclosure; the Water Director-General demanded delay. That conflict bore directly on the Noryangjin frozen stock. When turbid water went round, the medicine ration was cut with it.",
-        "ko": "첫해 여름에 폭우가 지나가면 일부 수질 검사가 실패하고 가짜 약이 돌기 시작한다. 연구평의회는 공개를 주장하고 급수총재는 지연을 주장한다. 이 갈등은 노량진 냉동재고에 즉각적인 영향을 미친다. 탁수가 돌면 약품 배급도 함께 끊긴다."
+        "en": [
+          {
+            "text": "E. The first summer",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "마. 첫해 여름",
+            "strong": true
+          }
+        ]
       }
     },
     {
       "kind": "paragraph",
-      "anchor": "수인병-p6",
+      "anchor": "수인병-p10",
+      "text": {
+        "en": "In the first summer after the revocation, some water tests failed after the storms passed. Counterfeit medicine began to circulate around the same time. The research council demanded that the test results be disclosed. The Water Director-General demanded that disclosure be delayed. The dispute spread at once to the allocation of the Noryangjin frozen stock. When turbid water went round, the medicine ration was cut as well.",
+        "ko": "이탈 첫해 여름 폭우가 지나간 뒤 일부 수질 검사가 실패하였다. 같은 무렵 가짜 약이 유통되기 시작하였다. 연구평의회는 검사 결과의 공개를 주장하였다. 급수총재는 공개 지연을 주장하였다. 이 다툼은 곧바로 노량진 냉동재고의 배분 문제로 번졌다. 탁수가 돌면 약품 배급도 함께 끊긴다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "수인병-p11",
+      "text": {
+        "en": [
+          {
+            "text": "F. The Flood-Mold Breath Cluster",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "바. 침수곰팡이호흡단",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "수인병-p12",
       "text": {
         "en": [
           {
@@ -258,7 +397,7 @@
             }
           },
           {
-            "text": " grew out of the repeated flooding of the Bukhansan Bogukmun corridor and the lower logistics warehouses of Garak and Jamsil. That name described an environmental ecology and never meant a social class. Wet concrete, the heat of grain, and delayed ventilation raised the coughs. A cough was not a moral defect."
+            "text": " (hereafter \"the Cluster\") arose from repeated flooding in the Bukhansan Bogukmun corridor and the lower logistics warehouses of Garak and Jamsil. The name referred to an ecology and did not denote a social class. Wet concrete, the heat of grain and late ventilation increased the number of cough patients."
           }
         ],
         "ko": [
@@ -270,7 +409,7 @@
             }
           },
           {
-            "text": "은 북한산보국문 회랑과 가락 및 잠실의 하층 물류 창고에서 반복된 침수로부터 자라났다. 이 이름은 환경적 생태를 설명하며 결코 사회적 계급을 의미하지 않는다. 젖은 콘크리트, 곡물의 열기, 지연된 환기는 기침을 증가시킨다. 기침은 도덕적 결함이 아니다."
+            "text": "(이하 '호흡단'이라 한다)은 북한산보국문 회랑과 가락·잠실의 하층 물류 창고에서 침수가 반복되며 생겨났다. 호흡단은 생태를 가리키는 이름이며 사회 계급을 뜻하지 않는다. 젖은 콘크리트, 곡물의 열기, 늦은 환기가 기침 환자를 늘린다."
           }
         ]
       }
@@ -288,32 +427,52 @@
       "kind": "paragraph",
       "anchor": "비축약의-부작용-p1",
       "text": {
-        "en": "The Korea of 2026 had managed state stock by the essential-medicines list. Antibiotics, antipyretics, and fluids had been divided among hospitals, clinics, and military medical stores, and preparations needing refrigerated cells like insulin had stood on the same list. The Jegi-dong medicinal-herb market had turned herbal medicines and general pharmaceuticals together.",
-        "ko": "2026년 한국은 필수의약품 목록으로 국가 재고를 관리했다. 항생제와 해열제와 수액이 병원과 보건소와 군 의무 창고에 나뉘어 있었고, 인슐린처럼 냉장 칸이 필요한 제제도 그 목록에 올랐다. 제기동 약재시장은 한약재와 일반의약품을 함께 돌렸다."
+        "en": [
+          {
+            "text": "A. Stockpiles in 2026",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 2026년의 비축 현황",
+            "strong": true
+          }
+        ]
       }
     },
     {
       "kind": "paragraph",
       "anchor": "비축약의-부작용-p2",
       "text": {
-        "en": "Only that year's packaging remained. The expiry dates had crossed a century. The Medical Neutrality League's underground sorting block woke before the people at midnight, repeating its routine of pushing unlabeled boxes into the wrong cryo cells, and the Standards Alliance side's parts racks and rollers clung to that line.",
-        "ko": "그해의 포장만 남는다. 유효기한은 한 세기를 넘겼다. 의약중립맹의 지하 분류동은 심야에 사람보다 먼저 깨어나 라벨 없는 상자를 잘못된 저온칸으로 밀어 넣던 루틴을 반복하고, 규격동맹 쪽 부품 창과 롤러가 그 라인에 붙어 있다."
+        "en": "In 2026, Korea managed state stock by the essential-medicines list. Antibiotics, antipyretics and fluids were stored separately in hospitals, clinics and military medical stores. Preparations that needed refrigeration, such as insulin, were also on the list. The Jegi-dong medicinal-herb market traded herbal medicines and general pharmaceuticals together.",
+        "ko": "2026년 한국은 필수의약품 목록으로 국가 재고를 관리하였다. 항생제, 해열제, 수액은 병원, 보건소, 군 의무 창고에 나뉘어 보관되었다. 인슐린처럼 냉장 보관이 필요한 제제도 목록에 있었다. 제기동 약재시장에서는 한약재와 일반의약품이 함께 거래되었다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "비축약의-부작용-p3",
       "text": {
-        "en": "The medical officer read the sealing tape. Tablets that had changed color and syrups whose layers had separated went to the disposal cells. Still, at stations where the ration ran late, hands remained that swallowed the 2026 stockpile medicine as it was.",
-        "ko": "의무원은 봉인 테이프를 읽는다. 색깔이 변한 알약과 층이 분리된 시럽은 폐기 칸으로 보낸다. 그래도 배급이 늦은 역에서는 2026 비축약을 그대로 삼키는 손이 남는다."
+        "en": [
+          {
+            "text": "B. Remaining packages and the sorting block",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "나. 잔존 포장과 분류동",
+            "strong": true
+          }
+        ]
       }
     },
     {
       "kind": "paragraph",
       "anchor": "비축약의-부작용-p4",
       "text": {
-        "en": "The side effects made no new pathogen. Taking efficacy-dead antibiotics a few days longer swelled the diarrhea and left the fever undropped. An antipyretic past its date only churned the stomach, and insulin cut from refrigeration deceived the body even when the numbers looked right. When counterfeit boxes filled that blank, the Jegi-dong treatment guild and Noryangjin's frozen credit were tested at once.",
-        "ko": "부작용은 새 병원체를 만들지 않는다. 효력이 죽은 항생제를 며칠 더 먹으면 설사가 늘고 열이 떨어지지 않는다. 유효기한을 넘긴 해열제는 위장만 뒤흔들고, 냉장 끊긴 인슐린은 숫자가 맞아 보여도 몸을 속인다. 가짜 약 상자가 그 빈칸을 메우면 제기동의 치료 길드와 노량진의 냉동 신용이 한꺼번에 시험받는다."
+        "en": "In 2126, the remaining medicine was still in its 2026 packaging. Every expiry date had passed. The Medical Neutrality League's underground sorting block (hereafter \"the sorting block\") started up at midnight before the people did. The sorting block kept repeating the motion of moving unlabeled boxes into the wrong cryo cells. The Standards Alliance's parts racks and rollers were connected to the sorting block's line.",
+        "ko": "2126년 현재 남은 약품은 2026년 포장 그대로이다. 유효기한은 모두 지났다. 의약중립맹의 지하 분류동(이하 '분류동'이라 한다)은 심야에 사람보다 먼저 가동된다. 분류동은 라벨 없는 상자를 잘못된 저온칸으로 옮기는 동작을 반복하고 있다. 규격동맹의 부품 창과 롤러가 분류동 라인에 연결되어 있다."
       }
     },
     {
@@ -322,7 +481,77 @@
       "text": {
         "en": [
           {
-            "text": "The medicine shortage stopped treatment acts and laid a great burden on "
+            "text": "C. Checks before dosing",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "다. 투약 전 확인",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "비축약의-부작용-p6",
+      "text": {
+        "en": "The medical officer checked the sealing tape before dosing. Discolored tablets and syrups whose layers had separated went to the disposal cells. At stations where the ration ran late, some people took the 2026 stockpile without any check.",
+        "ko": "의무원은 투약 전에 봉인 테이프를 확인한다. 색이 변한 알약과 층이 갈라진 시럽은 폐기 칸으로 보낸다. 배급이 늦은 역에서는 2026년 비축약을 확인 없이 복용하는 사례가 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "비축약의-부작용-p7",
+      "text": {
+        "en": [
+          {
+            "text": "D. Symptoms by case",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "라. 복용 사례별 증상",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "비축약의-부작용-p8",
+      "text": {
+        "en": "Taking weakened antibiotics a few days longer increased the diarrhea and kept the fever up. An antipyretic past its date caused stomach trouble. Insulin cut from refrigeration had no effect even at the right dose. When counterfeit medicine filled the shortfall, the Jegi-dong treatment guild and Noryangjin's frozen credit lost trust together.",
+        "ko": "효력이 떨어진 항생제를 며칠 더 복용하면 설사가 늘고 열이 내리지 않는다. 유효기한을 넘긴 해열제는 위장 장애를 일으킨다. 냉장이 끊긴 인슐린은 정량을 투여해도 효과가 없다. 가짜 약이 이 부족분을 대신하면 제기동 치료 길드와 노량진 냉동 신용이 함께 신뢰를 잃는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "비축약의-부작용-p9",
+      "text": {
+        "en": [
+          {
+            "text": "E. The draft medical charter",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "마. 의료헌장 초안",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "비축약의-부작용-p10",
+      "text": {
+        "en": [
+          {
+            "text": "When medicine ran out, treatment stopped. The burden passed to "
           },
           {
             "text": "Economy and Production",
@@ -332,12 +561,12 @@
             }
           },
           {
-            "text": " and the distribution network. The draft medical charter that medicine chests must not be taken as spoils remained, but so did the fear that if one great power monopolized the purchase of antibiotics, the guild's legitimacy would fall in a single season. Swallowing the remaining packaging took over the stations' medical role."
+            "text": " and the distribution network. The draft medical charter provided that medicine chests must not be taken as spoils. There was concern that if one great power monopolized antibiotic purchases, the guild's legitimacy would collapse within a season."
           }
         ],
         "ko": [
           {
-            "text": "의약품 부족은 치료 행동을 멈추게 하고 "
+            "text": "약품이 떨어지면 치료가 멈춘다. 그 부담은 "
           },
           {
             "text": "경제와 생산",
@@ -347,7 +576,7 @@
             }
           },
           {
-            "text": " 및 분배망에 큰 부담을 준다. 약장을 전리품으로 삼지 말라는 의료헌장 초안이 남아 있으나, 강국 하나가 항생제 구매를 독점하면 길드의 정통성이 한 계절 만에 무너진다는 공포 역시 존재한다. 남은 포장을 삼키는 일은 역의 의무 역할을 차지한다."
+            "text": "과 분배망으로 넘어간다. 의료헌장 초안은 약장을 전리품으로 삼지 못하도록 정하고 있다. 강국 하나가 항생제 구매를 독점하면 길드의 정통성이 한 계절 안에 무너진다는 우려가 있다."
           }
         ]
       }
@@ -365,32 +594,52 @@
       "kind": "paragraph",
       "anchor": "정전-뒤의-유해환경-p1",
       "text": {
-        "en": "Asbestos had been used as insulation and fireproofing in subway concourses and platforms, in school special-purpose rooms, and in the ceilings of 1970s and 1980s apartments. While grid power ran, sealing paint and ventilation had held down the dust. After the night of the revocation, when the pumps stopped, flooding soaked the ceiling materials. Once they dried and people passed through, the fibers rose.",
-        "ko": "지하철 대합실과 승강장, 학교 특별실, 1970년대와 1980년대 아파트 천장에는 석면이 단열과 내화재로 쓰였다. 상용 전력이 돌 때는 봉인 페인트와 환기가 그 가루를 막았다. 이탈의 밤 이후 펌프가 멈추면 침수가 천장재를 불린다. 마른 뒤에 사람이 드나들면 섬유가 뜬다."
+        "en": [
+          {
+            "text": "A. Asbestos",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 석면",
+            "strong": true
+          }
+        ]
       }
     },
     {
       "kind": "paragraph",
       "anchor": "정전-뒤의-유해환경-p2",
       "text": {
-        "en": "That was why the breathing protection and lamps an explorer used to open a deep tunnel were the starting point of the trade zone. Mold bloomed on the same walls as asbestos. When quarters behind on the ventilation roster, the heat of ration grain, and condensation-beaded drinking pipes met in one lattice, the coughs and eye sting came first.",
-        "ko": "탐사원이 심층 터널을 열 때 쓰는 호흡보호구와 램프가 생업 구역의 출발점인 까닭이 여기 있다. 곰팡이는 석면과 같은 벽에 핀다. 환기 순번이 밀린 숙영실과 배급 곡물의 열기, 결로가 맺힌 식수관이 한 격자에서 만나면 기침과 눈 쓰림이 먼저 온다."
+        "en": "Asbestos was used as insulation and fireproofing in subway concourses and platforms, school special rooms and the ceilings of 1970s and 1980s apartments. While grid power ran, sealing paint and ventilation kept the dust from spreading. After the revocation the pumps stopped, and flooding soaked the ceiling materials. Once the materials dried and people passed through, the fibers rose.",
+        "ko": "석면은 지하철 대합실과 승강장, 학교 특별실, 1970~80년대 아파트 천장에 단열재와 내화재로 쓰였다. 상용 전력이 있을 때는 봉인 페인트와 환기가 석면 가루의 비산을 막았다. 이탈 이후 펌프가 멈추자 침수로 천장재가 불었다. 천장재가 마른 뒤 사람이 드나들면 섬유가 날린다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "정전-뒤의-유해환경-p3",
       "text": {
-        "en": "After the Yeouido Investment Union's frozen stacks stopped, unable to bear the transmitters' waste heat, condensation ran down the low-temperature inspection window that had led to the Gate Military Government. Calling the mold panic the curse of one sect settled only after the order of cooler use and the responsibility for ventilation were divided.",
-        "ko": "여의도출자연합회 쪽 냉동 스택이 송신기 폐열을 못 이기고 멈춘 뒤, 관문군정으로 이어지던 저온 검수 창에 결로가 흘렀다. 곰팡 소동을 한 종파의 저주로 부르던 일은 냉각기 사용 순번과 환기 책임을 나눈 뒤에야 가라앉았다."
+        "en": [
+          {
+            "text": "B. Mold and condensation",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "나. 곰팡이와 결로",
+            "strong": true
+          }
+        ]
       }
     },
     {
       "kind": "paragraph",
       "anchor": "정전-뒤의-유해환경-p4",
       "text": {
-        "en": "Coolant went onto no drinking ledger. When the liquids left in depot heat exchangers, substation cooling loops, and medical refrigerators stagnated, a film grew on the metal surfaces. The sensors put out steady numbers and the far branch pipes clogged. The field called that film the Coolant-Index Fungal Body.",
-        "ko": "냉각수는 식수 장부에 올리지 않는다. 차량기지 열교환기와 변전 냉각 루프, 의료 냉장고에 남은 액체가 정체되면 금속 표면에 막이 생긴다. 센서는 안정된 숫자를 내보내고 먼 분기 관은 막힌다. 현장은 그 막을 냉각수색인균체라 부른다."
+        "en": "An explorer put on breathing protection and a lamp before opening a deep tunnel. The trade zone's equipment list began with those two items. Mold grew on the same walls as asbestos. When quarters behind on the ventilation roster, the heat of ration grain and condensation-beaded drinking pipes came together in one block, coughs and stinging eyes appeared first.",
+        "ko": "탐사원은 심층 터널을 열기 전에 호흡보호구와 램프를 갖춘다. 생업 구역의 장비 목록은 이 두 가지로 시작한다. 곰팡이는 석면과 같은 벽에서 자란다. 환기 순번이 밀린 숙영실, 배급 곡물의 열기, 결로가 맺힌 식수관이 한 구역에 모이면 기침과 눈 따가움이 먼저 나타난다."
       }
     },
     {
@@ -399,7 +648,77 @@
       "text": {
         "en": [
           {
-            "text": "The warning to separate the drinking and coolant ledgers held also before the "
+            "text": "C. The Yeouido frozen stacks stop",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "다. 여의도 냉동 스택 정지",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정전-뒤의-유해환경-p6",
+      "text": {
+        "en": "The Yeouido Investment Union's frozen stacks stopped, unable to bear the transmitters' waste heat. After that, condensation ran down the low-temperature inspection window that led to the Gate Military Government. The rumor that called the mold outbreak one sect's curse died down after the order of cooler use and the responsibility for ventilation were divided.",
+        "ko": "여의도출자연합회의 냉동 스택은 송신기 폐열을 견디지 못하고 멈추었다. 이후 관문군정으로 이어지던 저온 검수 창에 결로가 흘렀다. 곰팡이 발생을 한 종파의 저주로 부르던 소문은 냉각기 사용 순번과 환기 책임이 나뉜 뒤 가라앉았다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정전-뒤의-유해환경-p7",
+      "text": {
+        "en": [
+          {
+            "text": "D. Coolant",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "라. 냉각수",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정전-뒤의-유해환경-p8",
+      "text": {
+        "en": "Coolant was kept off the drinking-water ledger. When the liquid left in depot heat exchangers, substation cooling loops and medical refrigerators stagnated, a film formed on the metal. The sensors then showed normal readings while the far branch pipes clogged. The field called that film the Coolant-Index Fungal Body.",
+        "ko": "냉각수는 식수 장부에 올리지 않는다. 차량기지 열교환기, 변전 냉각 루프, 의료 냉장고에 남은 액체가 고이면 금속 표면에 막이 생긴다. 이 경우 센서는 정상 수치를 표시하지만 먼 분기관은 막힌다. 현장에서는 이 막을 냉각수색인균체라고 부른다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정전-뒤의-유해환경-p9",
+      "text": {
+        "en": [
+          {
+            "text": "E. Separate ledgers",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "마. 장부 분리",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정전-뒤의-유해환경-p10",
+      "text": {
+        "en": [
+          {
+            "text": "The drinking-water and coolant ledgers were kept apart even before the "
           },
           {
             "text": "G19",
@@ -409,7 +728,7 @@
             }
           },
           {
-            "text": " swarms and the equipment of "
+            "text": " swarms or the equipment of "
           },
           {
             "text": "the old technology",
@@ -424,7 +743,7 @@
         ],
         "ko": [
           {
-            "text": "식수와 냉각수 장부를 분리하라는 경고는 "
+            "text": "식수 장부와 냉각수 장부는 "
           },
           {
             "text": "G19",
@@ -444,18 +763,36 @@
             }
           },
           {
-            "text": " 설비 앞에서도 지켜진다. 당직자가 냉각수를 수조에 부으면 수인병이 번진다."
+            "text": " 설비 앞에서도 따로 관리한다. 당직자가 냉각수를 수조에 부으면 수인병이 번진다."
           }
         ]
       }
     },
     {
       "kind": "paragraph",
-      "anchor": "정전-뒤의-유해환경-p6",
+      "anchor": "정전-뒤의-유해환경-p11",
       "text": {
         "en": [
           {
-            "text": "The first floors south of the Han and the tributary banks were monsoon storage or abandoned space. The dwelling zones were pushed above the third floor, and the ration windows fell back to the "
+            "text": "F. Limits on low-floor living",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "바. 저층 거주 제한",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정전-뒤의-유해환경-p12",
+      "text": {
+        "en": [
+          {
+            "text": "First floors south of the Han and along the tributaries were used as monsoon storage or left empty. Living quarters were on the third floor and above. The ration windows were moved into "
           },
           {
             "text": "buildings inside the embankment",
@@ -465,12 +802,12 @@
             }
           },
           {
-            "text": ". A person who slept in a wet first floor, used a special room of rising asbestos dust as quarters, and mistook a coolant puddle for a washbasin became the medical officer's patient."
+            "text": ". The medical officers' patients were mostly people who had slept on a wet first floor, used a special room full of asbestos dust as quarters, or washed in a coolant puddle."
           }
         ],
         "ko": [
           {
-            "text": "한강 이남 1층과 지천 변은 우기 창고이거나 버려진 공간이다. 거주 구역은 3층 이상으로 밀리고 배급 창구는 "
+            "text": "한강 이남의 1층과 지천 변은 우기 창고로 쓰이거나 비어 있다. 거주 구역은 3층 이상에 있다. 배급 창구는 "
           },
           {
             "text": "제방 안쪽 건물",
@@ -480,14 +817,32 @@
             }
           },
           {
-            "text": "로 물러난다. 젖은 1층에서 자고 석면 먼지가 뜨는 특별실을 숙영지로 쓰며 냉각수 웅덩이를 세수 칸으로 착각하는 사람은 의무원 환자가 된다."
+            "text": "로 옮겨졌다. 의무원의 환자는 주로 젖은 1층에서 잔 사람, 석면 먼지가 날리는 특별실을 숙영지로 쓴 사람, 냉각수 웅덩이에서 세수한 사람이다."
           }
         ]
       }
     },
     {
       "kind": "paragraph",
-      "anchor": "정전-뒤의-유해환경-p7",
+      "anchor": "정전-뒤의-유해환경-p13",
+      "text": {
+        "en": [
+          {
+            "text": "G. Entering station interiors",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "사. 역 내부 출입",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정전-뒤의-유해환경-p14",
       "text": {
         "en": [
           {
@@ -498,7 +853,7 @@
             }
           },
           {
-            "text": " and people shared the same air. Stepping into a "
+            "text": " and people worked in the same air. Anyone who entered a "
           },
           {
             "text": "station interior",
@@ -508,7 +863,7 @@
             }
           },
           {
-            "text": " without guaranteed ventilation and water supply exposed a person to contaminated air and water."
+            "text": " whose ventilation and water supply had not been checked breathed contaminated air and touched contaminated water."
           }
         ],
         "ko": [
@@ -520,7 +875,7 @@
             }
           },
           {
-            "text": "와 사람은 같은 공기를 나눈다. 환기와 급수가 보장되지 않는 "
+            "text": "와 사람은 같은 공기 속에서 작업한다. 환기와 급수가 확인되지 않은 "
           },
           {
             "text": "역 내부",
@@ -530,14 +885,14 @@
             }
           },
           {
-            "text": "로 들어서는 일은 오염된 공기와 물에 사람을 노출시킨다."
+            "text": "에 들어간 사람은 오염된 공기를 마시고 오염된 물에 닿는다."
           }
         ]
       }
     },
     {
       "kind": "table",
-      "anchor": "정전-뒤의-유해환경-table8",
+      "anchor": "정전-뒤의-유해환경-table15",
       "columns": [
         {
           "en": "Layer",
