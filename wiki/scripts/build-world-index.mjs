@@ -104,7 +104,7 @@ export function buildWorldIndex({ loreRoot }) {
     ['세력과 집단', 'factions/Sixteen-States.html'], ['직책', 'offices/Offices-and-Ranks.html'],
     ['물건과 물질', 'goods/Era-Arms-and-Tech-Level.html'], ['건축물', 'structures/Structures.html'],
     ['기술', 'technology/Lost-Technology-Lineage.html'], ['질병과 증상', 'ailments/Ailments.html'],
-    ['문화', 'culture/Faith-Culture-Schism.html'], ['경제와 보급', 'economy/Economy-and-Production.html'],
+    ['문화', 'culture/Faith-Culture-Schism.html'],
     ['등장인물', 'characters/Core-Characters.html'],
   ]
 

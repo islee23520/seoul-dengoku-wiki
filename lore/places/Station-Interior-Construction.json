@@ -245,19 +245,19 @@
         {
           "ko": [
             {
-              "text": "경제와 생산",
+              "text": "경제와 생산, 물류 규칙",
               "link": {
-                "domain": "economy",
-                "slug": "Economy-and-Production"
+                "domain": "gdd",
+                "slug": "rules/Rules-EconomyLogistics"
               }
             }
           ],
           "en": [
             {
-              "text": "Economy and Production",
+              "text": "Economy, Production and Logistics Rules",
               "link": {
-                "domain": "economy",
-                "slug": "Economy-and-Production"
+                "domain": "gdd",
+                "slug": "rules/Rules-EconomyLogistics"
               }
             }
           ]
@@ -265,19 +265,19 @@
         {
           "ko": [
             {
-              "text": "거점과 영토",
+              "text": "거점과 영토 규칙",
               "link": {
-                "domain": "economy",
-                "slug": "Strongholds-and-Territory"
+                "domain": "gdd",
+                "slug": "rules/Rules-Strongholds"
               }
             }
           ],
           "en": [
             {
-              "text": "Strongholds and Territory",
+              "text": "Strongholds and Territory Rules",
               "link": {
-                "domain": "economy",
-                "slug": "Strongholds-and-Territory"
+                "domain": "gdd",
+                "slug": "rules/Rules-Strongholds"
               }
             }
           ]
@@ -285,7 +285,7 @@
         {
           "ko": [
             {
-              "text": "월드맵을 어떻게 구성하나",
+              "text": "월드맵의 구조",
               "link": {
                 "domain": "places",
                 "slug": "World-Map-Construction"
@@ -294,7 +294,7 @@
           ],
           "en": [
             {
-              "text": "How the World Map Is Built",
+              "text": "The Structure of the World Map",
               "link": {
                 "domain": "places",
                 "slug": "World-Map-Construction"

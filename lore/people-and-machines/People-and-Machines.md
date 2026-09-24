@@ -62,7 +62,7 @@
 ## 출처
 
 - [인물·세력·생업](../characters/Characters-Factions-and-Professions.md)
-- [연표](../chronology/Scenario-Timeline.md)
+- [시나리오 타임라인](../chronology/Scenario-Timeline.md)
 - [서울 십육국](../factions/Sixteen-States.md)
 - [이 시대의 기술과 무구](../goods/Era-Arms-and-Tech-Level.md)
 - [기동권 이탈](../overview/World-Unbinding.md)

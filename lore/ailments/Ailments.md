@@ -94,4 +94,4 @@
 
 ## 출처
 
-- [경제와 생산](../economy/Economy-and-Production.md)
+- [경제와 생산, 물류 규칙](/gdd/rules/Rules-EconomyLogistics)

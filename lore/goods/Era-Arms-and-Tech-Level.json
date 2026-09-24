@@ -996,8 +996,8 @@
               {
                 "text": "Conscription Remnants",
                 "link": {
-                  "domain": "factions",
-                  "slug": "Conscription-Remnants"
+                  "domain": "gdd",
+                  "slug": "rules/Rules-FactionsWarfare"
                 }
               }
             ],
@@ -1008,8 +1008,8 @@
               {
                 "text": "징집 잔존",
                 "link": {
-                  "domain": "factions",
-                  "slug": "Conscription-Remnants"
+                  "domain": "gdd",
+                  "slug": "rules/Rules-FactionsWarfare"
                 }
               }
             ]
@@ -1235,7 +1235,7 @@
           ],
           "en": [
             {
-              "text": "persons, powers, and professions",
+              "text": "Characters, Factions, and Trades",
               "link": {
                 "domain": "characters",
                 "slug": "Characters-Factions-and-Professions"
@@ -1246,39 +1246,19 @@
         {
           "ko": [
             {
-              "text": "시작 프리셋",
+              "text": "경제와 생산, 물류 규칙",
               "link": {
-                "domain": "characters",
-                "slug": "Starting-Presets"
+                "domain": "gdd",
+                "slug": "rules/Rules-EconomyLogistics"
               }
             }
           ],
           "en": [
             {
-              "text": "Starting Presets",
+              "text": "Economy, Production and Logistics Rules",
               "link": {
-                "domain": "characters",
-                "slug": "Starting-Presets"
-              }
-            }
-          ]
-        },
-        {
-          "ko": [
-            {
-              "text": "경제와 생산",
-              "link": {
-                "domain": "economy",
-                "slug": "Economy-and-Production"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Economy and Production",
-              "link": {
-                "domain": "economy",
-                "slug": "Economy-and-Production"
+                "domain": "gdd",
+                "slug": "rules/Rules-EconomyLogistics"
               }
             }
           ]
@@ -1295,7 +1275,7 @@
           ],
           "en": [
             {
-              "text": "the Sixteen States of Seoul",
+              "text": "The Sixteen States of Seoul",
               "link": {
                 "domain": "factions",
                 "slug": "Sixteen-States"

@@ -175,5 +175,4 @@
 
 ## 출처
 
-- [야망](../characters/Ambitions-and-Relations.md)
-- [후계, 이름 로스터, 세계 원장](../characters/Heirs-Names-and-World-Ledger.md)
+- [세력과 외교, 전쟁과 공성 규칙](/gdd/rules/Rules-FactionsWarfare)

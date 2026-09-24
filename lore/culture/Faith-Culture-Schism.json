@@ -2810,8 +2810,8 @@
           {
             "text": "conscription remnants and the military registers",
             "link": {
-              "domain": "factions",
-              "slug": "Conscription-Remnants"
+              "domain": "gdd",
+              "slug": "rules/Rules-FactionsWarfare"
             }
           },
           {
@@ -2825,8 +2825,8 @@
           {
             "text": "징집 잔존과 군 장부",
             "link": {
-              "domain": "factions",
-              "slug": "Conscription-Remnants"
+              "domain": "gdd",
+              "slug": "rules/Rules-FactionsWarfare"
             }
           },
           {
@@ -3203,8 +3203,8 @@
           {
             "text": "Heirs, Names and World Ledger",
             "link": {
-              "domain": "characters",
-              "slug": "Heirs-Names-and-World-Ledger"
+              "domain": "gdd",
+              "slug": "rules/Rules-FactionsWarfare"
             }
           },
           {
@@ -3228,8 +3228,8 @@
           {
             "text": "후계, 이름 로스터, 세계 원장",
             "link": {
-              "domain": "characters",
-              "slug": "Heirs-Names-and-World-Ledger"
+              "domain": "gdd",
+              "slug": "rules/Rules-FactionsWarfare"
             }
           },
           {
@@ -3788,8 +3788,8 @@
           {
             "text": "Ambitions",
             "link": {
-              "domain": "characters",
-              "slug": "Ambitions-and-Relations"
+              "domain": "gdd",
+              "slug": "rules/Rules-FactionsWarfare"
             }
           },
           {
@@ -3906,8 +3906,8 @@
               {
                 "text": "Powers and Diplomacy",
                 "link": {
-                  "domain": "factions",
-                  "slug": "Factions-and-Diplomacy"
+                  "domain": "gdd",
+                  "slug": "rules/Rules-FactionsWarfare"
                 }
               }
             ],
@@ -3918,8 +3918,8 @@
               {
                 "text": "세력과 외교",
                 "link": {
-                  "domain": "factions",
-                  "slug": "Factions-and-Diplomacy"
+                  "domain": "gdd",
+                  "slug": "rules/Rules-FactionsWarfare"
                 }
               },
               {
@@ -4721,7 +4721,7 @@
         {
           "en": [
             {
-              "text": "Motive-power revocation",
+              "text": "Motive-Power Revocation",
               "link": {
                 "domain": "overview",
                 "slug": "World-Unbinding"
@@ -4761,7 +4761,7 @@
         {
           "ko": [
             {
-              "text": "구술 이야기",
+              "text": "이야기",
               "link": {
                 "domain": "culture",
                 "slug": "Oral-Stories"
@@ -4770,7 +4770,7 @@
           ],
           "en": [
             {
-              "text": "Oral Stories",
+              "text": "The Stories",
               "link": {
                 "domain": "culture",
                 "slug": "Oral-Stories"
@@ -4821,7 +4821,7 @@
         {
           "en": [
             {
-              "text": "The Characters",
+              "text": "Characters",
               "link": {
                 "domain": "characters",
                 "slug": "Core-Characters"
@@ -4841,19 +4841,19 @@
         {
           "en": [
             {
-              "text": "Powers and Diplomacy",
+              "text": "Factions, Diplomacy, War and Siege Rules",
               "link": {
-                "domain": "factions",
-                "slug": "Factions-and-Diplomacy"
+                "domain": "gdd",
+                "slug": "rules/Rules-FactionsWarfare"
               }
             }
           ],
           "ko": [
             {
-              "text": "세력과 외교",
+              "text": "세력과 외교, 전쟁과 공성 규칙",
               "link": {
-                "domain": "factions",
-                "slug": "Factions-and-Diplomacy"
+                "domain": "gdd",
+                "slug": "rules/Rules-FactionsWarfare"
               }
             }
           ]
@@ -4881,66 +4881,6 @@
         {
           "en": [
             {
-              "text": "Conscription Remnants and the Military Registers",
-              "link": {
-                "domain": "factions",
-                "slug": "Conscription-Remnants"
-              }
-            }
-          ],
-          "ko": [
-            {
-              "text": "징집 잔존과 군 장부",
-              "link": {
-                "domain": "factions",
-                "slug": "Conscription-Remnants"
-              }
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "The heir, name-roster, and world ledger",
-              "link": {
-                "domain": "characters",
-                "slug": "Heirs-Names-and-World-Ledger"
-              }
-            }
-          ],
-          "ko": [
-            {
-              "text": "후계, 이름 로스터, 세계 원장",
-              "link": {
-                "domain": "characters",
-                "slug": "Heirs-Names-and-World-Ledger"
-              }
-            }
-          ]
-        },
-        {
-          "en": [
-            {
-              "text": "Ambitions",
-              "link": {
-                "domain": "characters",
-                "slug": "Ambitions-and-Relations"
-              }
-            }
-          ],
-          "ko": [
-            {
-              "text": "야망",
-              "link": {
-                "domain": "characters",
-                "slug": "Ambitions-and-Relations"
-              }
-            }
-          ]
-        },
-        {
-          "en": [
-            {
               "text": "Diaspora Corridors",
               "link": {
                 "domain": "factions",
@@ -4961,7 +4901,7 @@
         {
           "en": [
             {
-              "text": "Persons, powers, trades",
+              "text": "Characters, Factions, and Trades",
               "link": {
                 "domain": "characters",
                 "slug": "Characters-Factions-and-Professions"
@@ -4981,7 +4921,7 @@
         {
           "en": [
             {
-              "text": "Clan seats and generational names",
+              "text": "Bon-gwan and Hangnyeol",
               "link": {
                 "domain": "characters",
                 "slug": "Hangnyeol-and-Bon-gwan"
@@ -5001,7 +4941,7 @@
         {
           "en": [
             {
-              "text": "The arms and technology of this era",
+              "text": "The Arms and Technology of This Era",
               "link": {
                 "domain": "goods",
                 "slug": "Era-Arms-and-Tech-Level"

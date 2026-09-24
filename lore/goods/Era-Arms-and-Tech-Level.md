@@ -39,7 +39,7 @@
 | 석궁 (조건부) | 기계식 투사 | 총포화약법상 허가 대상 | 드묾. 허가 잔존·밀반입이 서사 조건 | 볼트·줄. 총포 장부와 별 장부일 수 있음 | 떠돌이 시작 없음. 기본 병과 아님 | [총포화약법](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) 석궁 포함. 열람 2026-09-12 |
 | 센서·검사봇·액추에이터·전원 회수 | 탐지, 개폐, 단기 동력. 조건부로 장비·함정·무기 | 방재·시설 검사 (실측 범주). G25/26/27 배치 자체는 허구 | 봉인 갤러리 해체·정지 후 모듈 | 충전·노화·공급원. 영구 전지 아님. 프로토콜 카드는 만능 제어가 아님 | 탐사원·기록관·운영가문 회수 반 | 개념은 [잃어버린 기술](../technology/Lost-Technology-Lineage.md). 실회사 2026 배치 검증 아님 |
 | 차량·발전기 (세력 규모) | 이동, 거점 전력 | 철도·시내버스·시설 비상발전기·군 차량 | 생활권이 굴릴 때만. 개인 프리셋 기본 아님 | 연료·윤활·타이어·배터리. 발전기 ≠ 축전 모듈 | 역장·십육국 군사(공병·궤도). 떠돌이 없음 | 차량 잔존 규모 **추가 조사 필요**. 수량 미잠금 |
-| 중화기 (세력 규모) | 차단문·거점 방어 | 국군 지원화기·차량 탑재 | 분대 이상 잔존, 시설 방어. 개인 휴대 시작 없음 | 탄약·무거움·정비. 보급이 지휘권 분쟁의 대상 | 4 잔존 그룹·십육국 시설 군사. [징집 잔존](../factions/Conscription-Remnants.md) | 2026 제식 목록·수량 **추가 조사 필요** |
+| 중화기 (세력 규모) | 차단문·거점 방어 | 국군 지원화기·차량 탑재 | 분대 이상 잔존, 시설 방어. 개인 휴대 시작 없음 | 탄약·무거움·정비. 보급이 지휘권 분쟁의 대상 | 4 잔존 그룹·십육국 시설 군사. [징집 잔존](/gdd/rules/Rules-FactionsWarfare) | 2026 제식 목록·수량 **추가 조사 필요** |
 
 ## 2026년에 실제로 있는 것
 
@@ -58,6 +58,5 @@
 - [PlayStation](https://www.playstation.com/en-us/games/horizon-forbidden-west/)
 - [적대 생태 색인](../bestiary/Hostile-Ecology-Index.md)
 - [인물·세력·생업](../characters/Characters-Factions-and-Professions.md)
-- [시작 프리셋](../characters/Starting-Presets.md)
-- [경제와 생산](../economy/Economy-and-Production.md)
+- [경제와 생산, 물류 규칙](/gdd/rules/Rules-EconomyLogistics)
 - [서울 십육국](../factions/Sixteen-States.md)
