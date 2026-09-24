@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import { wikiCatalog, type WikiDomain } from '../generated/wikiCatalog'
 import { WorldBlocks, headingId, plainText, type WorldBlock } from '../components/WorldBlocks'
 
@@ -15,6 +15,7 @@ const isWikiDomain = (value: string | undefined): value is WikiDomain =>
 
 export default function ArticlePage() {
   const { domain, slug } = useParams()
+  const { pathname, hash } = useLocation()
   if (!isWikiDomain(domain)) return <Navigate to="/" replace />
 
   const normalizedSlug = slug?.replace(/\.html$/, '') || 'index'
@@ -44,6 +45,18 @@ export default function ArticlePage() {
     })
     return () => { active = false }
   }, [domain, normalizedSlug])
+
+  useEffect(() => {
+    if (!blocks || !hash) return
+    let targetId: string
+    try {
+      targetId = decodeURIComponent(hash.slice(1))
+    } catch (error: unknown) {
+      if (error instanceof URIError) return
+      throw error
+    }
+    document.getElementById(targetId)?.scrollIntoView()
+  }, [blocks, pathname, hash])
 
   useEffect(() => {
     if (!wikiDocument) return
