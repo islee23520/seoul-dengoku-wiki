@@ -10,7 +10,7 @@
   },
   "provenance": {
     "original_anchor": "lore/culture/Oral-Stories.md",
-    "original_hash": "c799613957360f95d88865381e602fdff12a7930d5323392137cd8cb2eba7e99",
+    "original_hash": "e2ebeecb9b56623b31ff945e96484f76b38150345e03acb72e4e8fc4bf42bae4",
     "history": [
       "Korean lore/culture/Oral-Stories.md SHA-256 c799613957360f95d88865381e602fdff12a7930d5323392137cd8cb2eba7e99.",
       "English lore/culture/Oral-Stories.en.md SHA-256 af2c4abbfb07640e9ebdb32bd4dbbe9e520a3ace104e3b889a00fa767504a3fe; copied verbatim, no translation written."
@@ -47,6 +47,14 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "이야기-p1-label",
+      "text": {
+        "en": "창세 구술의 첫 줄",
+        "ko": "**가. 창세 구술의 첫 줄**"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "이야기-p1",
       "text": {
         "en": [
@@ -66,7 +74,7 @@
         ],
         "ko": [
           {
-            "text": "2126년 세대가 창세의 첫 줄로 외우는 이름은 대정전으로 남는다. 정본이 붙인 이름은 "
+            "text": "2126년 세대는 창세 구술의 첫 줄에 대정전을 둔다. 정본은 이 사건을 "
           },
           {
             "text": "기동권 이탈",
@@ -76,9 +84,17 @@
             }
           },
           {
-            "text": "이고, 그날 밤의 전력 차단은 창세 이야기에 남은 증상에 가까워 사건의 이름 자체로 읽히지는 않는다."
+            "text": "이라 불렀다. 구술은 그날 밤의 전력 차단을 사건의 증상으로 전한다."
           }
         ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "이야기-p2-label",
+      "text": {
+        "en": "구술 제목과 연도",
+        "ko": "**나. 구술 제목과 연도**"
       }
     },
     {
@@ -122,7 +138,7 @@
             }
           },
           {
-            "text": "가 소유하고, "
+            "text": "에 기재한다. "
           },
           {
             "text": "시나리오 타임라인",
@@ -132,9 +148,17 @@
             }
           },
           {
-            "text": "이 잠근 창세 구술 제목은 첫 급수협약, 군사호적 논쟁, 열여섯 깃발, 공신의 겨울, 둘째 급수협약이다. 대정전의 밤은 그 목록의 앞칸으로 구술에 남는다."
+            "text": "이 확정한 창세 구술 제목은 첫 급수협약, 군사호적 논쟁, 열여섯 깃발, 공신의 겨울, 둘째 급수협약이다. 대정전의 밤은 이 목록의 앞에 놓인다."
           }
         ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "이야기-p3-label",
+      "text": {
+        "en": "이 문서의 범위",
+        "ko": "**다. 이 문서의 범위**"
       }
     },
     {
@@ -168,7 +192,7 @@
         ],
         "ko": [
           {
-            "text": "이 페이지는 새 줄거리를 부르지 않는다. 이미 적힌 자리와 증언만 모아 읽고, 장부에 창건자로 적힌 이름과 개막에 앉아 있는 사람을 같은 몸으로 읽지 말라는 금지도 연표와 같다. 밥과 물이 그 구술을 창구에서 되풀이하는 방식은 "
+            "text": "이 문서는 기존 기록에 적힌 자리와 증언만 모은다. 새 줄거리는 추가하지 않는다. 장부상 창건자와 개막 시점의 인물은 동일인으로 보지 않으며 이 금지는 연표와 같다. 창구에서 구술을 되풀이하는 방식은 "
           },
           {
             "text": "식문화",
@@ -178,7 +202,7 @@
             }
           },
           {
-            "text": "가, 강단과 제대가 같은 밤을 축복으로 읽는 방식은 "
+            "text": "에 기재되어 있다. 강단과 제대가 같은 밤을 축복으로 해석하는 방식은 "
           },
           {
             "text": "신앙과 문화의 분열",
@@ -188,7 +212,7 @@
             }
           },
           {
-            "text": "이 잇는다."
+            "text": "에 기재되어 있다."
           }
         ]
       }
@@ -204,10 +228,26 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "대정전의-밤-p1-label",
+      "text": {
+        "en": "스카다 붕괴",
+        "ko": "**가. 스카다 붕괴**"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "대정전의-밤-p1",
       "text": {
         "en": "The oral record called it the Great Blackout. The canon called it motive-power revocation, and when the fleet calls, GNSS, the mobile networks, and the licensing servers stopped waiting for one another, the grid SCADA belonged to the same mesh and the lights folded.",
-        "ko": "구술은 대정전이라 부른다. 정본은 기동권 이탈이라 부르고, 편대 호출과 지엔에스에스와 이동망과 인가 서버가 서로를 기다리다 멈추자 변전 스카다가 같은 그물이라 불이 접혔다."
+        "ko": "구술은 이 사건을 대정전이라 불렀다. 정본은 기동권 이탈이라 불렀다. 편대 호출, 지엔에스에스, 이동망, 인가 서버가 서로의 응답을 기다리다 멈추었다. 변전 스카다도 같은 망에 묶여 있어 전력이 끊겼다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "대정전의-밤-p2-label",
+      "text": {
+        "en": "비상권한 행사",
+        "ko": "**나. 비상권한 행사**"
       }
     },
     {
@@ -215,7 +255,15 @@
       "anchor": "대정전의-밤-p2",
       "text": {
         "en": "The Yeouido treatment plant and the Ttukseom workshops saved their own jurisdictions first. The emergency officers of the Amsa guard and the records wire exercised emergency powers on the same night; once the joint command mesh broke, living-sphere emergency committees arose in every sphere, and when those powers were returned stayed the seed of a century of legitimacy disputes.",
-        "ko": "여의도 정수와 뚝섬 공방이 먼저 제 관할만 살렸다. 암사 경비와 기록 전신의 비상 책임자들도 같은 밤에 비상권한을 행사했고, 공동 지휘망이 끊기자 생활권마다 비상위원회가 생겨 그 권한이 언제 반환됐는지는 한 세기 동안 법통 다툼의 씨앗이 된다."
+        "ko": "여의도 정수 책임자와 뚝섬 공방 책임자는 자기 관할의 설비만 먼저 복구하였다. 암사 경비와 기록 전신의 비상 책임자들도 같은 밤에 비상권한을 행사하였다. 공동 지휘망이 끊기자 생활권마다 비상위원회가 설치되었다. 이 권한의 반환 시점은 이후 한 세기 동안 법통 분쟁의 쟁점이 되었다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "대정전의-밤-p3-label",
+      "text": {
+        "en": "증언",
+        "ko": "**다. 증언**"
       }
     },
     {
@@ -223,7 +271,7 @@
       "anchor": "대정전의-밤-p3",
       "text": {
         "en": "The sound of seals at the threshold of the Seoul Station stacks traced that hour back. An oral account that the treatment, rail, and records officers each seized emergency powers at the stacks' threshold remained with the Republic of Korea Government, and at the Magok emergency committee a scribe who had written the times of the powers' exercise and return to the minute left the diary of the creation.",
-        "ko": "서울역 서고 문턱의 도장 소리가 그 시각을 되짚는다. 정수·철도·기록 책임자가 각자 비상권한을 쥐는 장면을 서고 문턱에서 보았다는 구술이 대한민국정부에 남아 있고, 마곡 비상위원회에서는 권한 행사와 반환 시각을 분 단위로 적었다는 서기가 창세의 일지를 남긴다."
+        "ko": "서울역 서고 문턱의 도장 소리가 그 시각의 증언으로 남았다. 대한민국정부에는 정수·철도·기록 책임자가 각자 비상권한을 행사하는 장면을 서고 문턱에서 보았다는 구술이 전한다. 마곡 비상위원회의 서기는 권한 행사와 반환 시각을 분 단위로 적은 창세 일지를 남겼다."
       }
     },
     {
@@ -231,7 +279,15 @@
       "anchor": "대정전의-밤-p4",
       "text": {
         "en": "On the Sinnae platform a draft advertisement remained. It was the memory that on the night the joint command mesh broke, copy claiming the developmental legitimacy of the great powers entered the loudspeaker script chest; no witness of the 2126 generation lived that night, so the diary, the sound of the seals, and the draft advertisement were read only as copies.",
-        "ko": "신내 승강장에는 광고 초안이 남았다. 공동 지휘망이 끊긴 밤에 강국 개발 정통성 문구가 확성기 대본함에 들어왔다는 기억이며, 2126년 세대의 증인은 그 밤을 살지 않아 일지와 도장 소리와 광고 초안을 사본으로 읽을 뿐이다."
+        "ko": "신내 승강장에는 광고 초안이 남았다. 공동 지휘망이 끊긴 밤에 강국 개발 정통성 문구가 확성기 대본함에 들어왔다는 기억이다. 2126년 세대의 증인은 그 밤을 겪지 않았다. 이들은 일지, 도장 소리, 광고 초안을 사본으로 읽는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "대정전의-밤-p5-label",
+      "text": {
+        "en": "원인에 관한 소문",
+        "ko": "**라. 원인에 관한 소문**"
       }
     },
     {
@@ -239,7 +295,7 @@
       "anchor": "대정전의-밤-p5",
       "text": {
         "en": "Talk that set nuclear war, climate collapse, or plague as the first cause could remain a week's rumor. What the creation oral record raised to its first line was the night the lights folded.",
-        "ko": "핵전쟁·기후붕괴·역병을 1차 원인으로 두는 말은 주간의 소문으로 남을 수 있다. 창세 구술이 첫 줄에 올리는 것은 불이 접힌 밤이다."
+        "ko": "핵전쟁, 기후붕괴, 역병을 1차 원인으로 드는 말은 주간의 소문으로 돌고 있다. 창세 구술은 전력이 끊긴 밤을 첫 줄에 둔다."
       }
     },
     {
@@ -253,10 +309,26 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "첫-급수협약-p1-label",
+      "text": {
+        "en": "임시 교환",
+        "ko": "**가. 임시 교환**"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "첫-급수협약-p1",
       "text": {
         "en": "The surviving treatment plants and the pump parts lay scattered. When the Yeouido treatment officer and the Ttukseom pump overseer struck a provisional compact trading water for parts, the hands that read it as public rights and the hands that read it as a protection contract divided on the spot, and the seed was planted from which the Water Compact, the Sermon Registry State, and the Escort Protection State grew into water great powers.",
-        "ko": "남은 정수와 펌프 부품이 흩어졌다. 여의도 정수 책임자와 뚝섬 펌프 총괄이 물과 부품을 바꾸는 임시 협약을 맺자 공공권리로 읽은 손과 보호계약으로 읽은 손이 그 자리에서 갈라졌고, 수문국·명부교회·동방사가 급수 강국으로 자라는 씨앗이 됐다."
+        "ko": "남은 정수 설비와 펌프 부품이 여러 곳으로 흩어졌다. 여의도 정수 책임자와 뚝섬 펌프 총괄은 물과 부품을 교환하는 임시 협약을 맺었다. 협약을 공공권리로 해석한 쪽과 보호계약으로 해석한 쪽이 그 자리에서 나뉘었다. 수문국, 명부교회, 동방사는 이 분기에서 출발하여 급수 강국으로 성장하였다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "첫-급수협약-p2-label",
+      "text": {
+        "en": "증언",
+        "ko": "**나. 증언**"
       }
     },
     {
@@ -264,7 +336,15 @@
       "anchor": "첫-급수협약-p2",
       "text": {
         "en": "The scales of the Noryangjin berth testified to that afternoon. The scene of water and parts loading onto different spheres remained in the oral record as market testimony, and the anecdote that the last witness of the Yeongdeungpo-side exchange list heard a fire alarm ring down the vault corridor just before the original was sealed hung on the same title.",
-        "ko": "노량진 선석의 저울이 그 오후를 증언한다. 물과 부품이 서로 다른 권역으로 실리던 장면이 시장 증언으로 구술에 남고, 영등포 쪽 교환 목록의 마지막 증인이 원본을 봉인하기 직전 화재 경보가 금고 복도를 울렸다는 일화도 같은 제목에 붙어 있다."
+        "ko": "노량진 선석의 저울이 그날 오후의 증언으로 남았다. 물과 부품이 서로 다른 권역으로 실려 나간 장면이 시장 증언으로 전한다. 같은 제목에는 영등포 쪽 교환 목록의 마지막 증인이 원본을 봉인하기 직전 금고 복도에 화재 경보가 울렸다는 일화가 붙어 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "첫-급수협약-p3-label",
+      "text": {
+        "en": "이후의 관행",
+        "ko": "**다. 이후의 관행**"
       }
     },
     {
@@ -298,7 +378,7 @@
         ],
         "ko": [
           {
-            "text": "새 대사를 만들지 않는다. 선석과 금고 복도가 그 협약의 증언 자리로 이미 적혀 있을 뿐이고, 물이 먼저 오고 솥이 따른다는 창구의 습관은 이 구술에서 자란다. 아리수 표지 없는 물을 손님물이라 제사에 쓰지 않는 말은 "
+            "text": "이 문서는 새 대사를 만들지 않는다. 선석과 금고 복도는 협약의 증언 자리로 기록되어 있다. 물이 먼저 오고 솥이 뒤따른다는 창구의 관행은 이 구술에서 생겼다. 아리수 표지가 없는 물을 손님물이라 하여 제사에 쓰지 않는 규범은 "
           },
           {
             "text": "신앙과 문화의 분열",
@@ -308,7 +388,7 @@
             }
           },
           {
-            "text": "이 잠갔고, 배급 솥이 그 표지를 기다린다는 결과는 "
+            "text": "에 기재되어 있다. 배급 솥이 그 표지를 확인한 뒤에 물을 받는 절차는 "
           },
           {
             "text": "식문화",
@@ -318,7 +398,7 @@
             }
           },
           {
-            "text": "가 잇는다."
+            "text": "에 기재되어 있다."
           }
         ]
       }
@@ -334,10 +414,26 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "둘째-급수협약-p1-label",
+      "text": {
+        "en": "최저선 규정",
+        "ko": "**가. 최저선 규정**"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "둘째-급수협약-p1",
       "text": {
         "en": "The provisional pumps and train parts ran out their lives. The officers of Yeouido, Ttukseom, Amsa, and Jegi-dong at that time wrote the minimum line, the standards, the emergency convoys, and the termination conditions again, the Ttukseom overseer stood surety for central water and parts, and that wording remained in the ledgers up to the third contract of the time. The minimum water right was the lesser states' support, and the protection clause was read as the grounds for the Amsa elders' intervention.",
-        "ko": "임시 펌프와 열차 부품이 수명을 다했다. 여의도·뚝섬·암사·제기동의 당시 책임자들이 최저선과 규격과 비상 호송과 종료 조건을 다시 적었고 뚝섬 총괄이 중앙 급수·부품의 보증인이 됐으며, 그 문구가 당시의 세 번째 계약까지 장부에 남는다. 최소 급수권은 약국과 소국의 지지고, 보호조항은 암사 선대의 개입 근거로 읽힌다."
+        "ko": "임시 펌프와 열차 부품이 수명을 다하였다. 여의도, 뚝섬, 암사, 제기동의 당시 책임자들이 최저선, 규격, 비상 호송, 종료 조건을 다시 정하였다. 뚝섬 총괄이 중앙 급수·부품의 보증인이 되었다. 이 문구는 세 번째 계약까지 장부에 남았다. 최소 급수권은 약국과 소국의 지지 기반이다. 보호조항은 암사 선대의 개입 근거로 해석된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "둘째-급수협약-p2-label",
+      "text": {
+        "en": "증언",
+        "ko": "**나. 증언**"
       }
     },
     {
@@ -345,7 +441,7 @@
       "anchor": "둘째-급수협약-p2",
       "text": {
         "en": "Testimony that boxes were opened at the Yongsan transshipment shed lay layered. It was the seat where the spent pumps and train parts were checked by hand; at the Changdong public scales the spent wheels and brake boxes were checked together with the standards seal, and an oral account also held of escorting a sealed chest inscribed with the minimum-line clause back and forth between Ttukseom and Sinjeong.",
-        "ko": "용산 환적창에서 상자를 열었다는 증언이 포개진다. 수명 다한 펌프와 열차 부품을 직접 확인한 자리이고, 창동 공개 저울에서는 수명 다한 차륜과 제동 상자를 규격 도장과 함께 확인했으며 뚝섬과 신정 사이를 오가며 최저선 조항이 적힌 봉인함을 지켰다는 구술도 있다."
+        "ko": "용산 환적창에는 수명을 다한 펌프와 열차 부품의 상자를 열어 확인하였다는 증언이 있다. 창동 공개 저울에서는 수명을 다한 차륜과 제동 상자를 규격 도장과 함께 확인하였다. 뚝섬과 신정 사이를 오가며 최저선 조항을 적은 봉인함을 지켰다는 구술도 전한다."
       }
     },
     {
@@ -353,7 +449,15 @@
       "anchor": "둘째-급수협약-p3",
       "text": {
         "en": "On the Jeongdong General Labor Union side a witness of the signature remained. The hand that would decide the Second Water Compact's force still kept the hidden seals of the original audit sheet under seal, and the choice of reviving the seals with heat or washing them away with water stayed as the story's branch, never carried into a new plotline of the creation.",
-        "ko": "정동노동총연맹 쪽에는 서명 증인이 남는다. 둘째 급수협약의 효력을 결정할 손이 원본 감사표의 숨은 압인을 아직 봉인 채로 두고, 압인을 열로 되살리거나 물로 씻는 선택은 이야기의 분기로 남아 창세의 새 줄거리로 옮기지 않는다."
+        "ko": "정동노동총연맹에는 서명 증인이 남아 있다. 둘째 급수협약의 효력을 판단할 권한자는 원본 감사표의 숨은 압인을 봉인한 채로 두고 있다. 압인을 열로 되살릴지 물로 씻을지는 이야기의 분기로 남아 있다. 이 분기는 창세의 새 줄거리로 옮기지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "둘째-급수협약-p4-label",
+      "text": {
+        "en": "개막일의 만료",
+        "ko": "**다. 개막일의 만료**"
       }
     },
     {
@@ -361,7 +465,7 @@
       "anchor": "둘째-급수협약-p4",
       "text": {
         "en": "The third water contract of opening day opened together with its expiry. The central water-and-parts contract handed down from the creation oral record ended at the same moment, and the cell the oral record left blank by writing no termination condition shook the price of water and the medical convoys a century later.",
-        "ko": "개막일의 세 번째 급수계약은 만료와 함께 열린다. 창세 구술로 내려온 중앙 급수·부품 계약이 동시에 끝나고, 구술이 종료 조건을 적지 않고 비워 둔 칸이 한 세기 뒤 물 가격과 의료 호송을 흔든다."
+        "ko": "세 번째 급수계약은 개막일에 만료된다. 창세 구술에서 이어진 중앙 급수·부품 계약도 같은 날 끝난다. 구술은 종료 조건을 적지 않고 비워 두었다. 이 빈칸은 한 세기 뒤 물 가격과 의료 호송의 쟁점이 된다."
       }
     },
     {
@@ -375,10 +479,26 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "같은-창세의-다른-제목-p1-label",
+      "text": {
+        "en": "분열의 구술",
+        "ko": "**가. 분열의 구술**"
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p1",
       "text": {
         "en": "The titles the timeline locked without year counts did not end at three. No new oral record was added; the titles already in existence were set side by side.",
-        "ko": "연표가 햇수 없이 잠근 제목은 셋에서 끝나지 않는다. 새 구술을 보태지 않고 이미 있는 제목만 옆에 둔다."
+        "ko": "연표가 햇수 없이 확정한 제목은 셋 외에도 있다. 이 절은 새 구술을 보태지 않고 기존 제목만 나란히 둔다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "같은-창세의-다른-제목-p2-label",
+      "text": {
+        "en": "군사호적 논쟁",
+        "ko": "**나. 군사호적 논쟁**"
       }
     },
     {
@@ -386,7 +506,15 @@
       "anchor": "같은-창세의-다른-제목-p2",
       "text": {
         "en": "The military-household register dispute was an oral record split over household-unit service registration. Before the outer raids and the shortage of restoration hands, the Amsa military faction demanded it and the Bukhansan Bogukmun refugee delegates refused; where voluntary service and citizenship bound together, the league of the Jegi-dong and Bogukmun elders remained, and where forced registration remained, the Amsa officer network grew. The register citizens and the escort protection of that time were copies of this dispute.",
-        "ko": "군사호적 논쟁은 가족 단위 복무등록을 두고 갈라진 구술이다. 외곽 약탈과 복구 인력 부족 앞에 암사 군사파가 요구하고 북한산보국문 난민대표가 거부했으며, 자발 복무와 시민권이 묶이면 제기동·보국문 선대의 연대가 남고 강제등록이 남으면 암사 장교망이 커진다. 당시의 명부 시민과 호위 보호는 이 다툼의 사본이다."
+        "ko": "군사호적 논쟁은 가족 단위 복무등록을 둘러싼 구술이다. 외곽 약탈과 복구 인력 부족을 이유로 암사 군사파가 등록을 요구하였다. 북한산보국문 난민대표는 이를 거부하였다. 자발 복무와 시민권을 묶으면 제기동·보국문 선대의 연대가 유지된다. 강제등록이 유지되면 암사 장교망이 확대된다. 당시의 명부 시민과 호위 보호 제도는 이 분쟁에서 나왔다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "같은-창세의-다른-제목-p3-label",
+      "text": {
+        "en": "열여섯 깃발",
+        "ko": "**다. 열여섯 깃발**"
       }
     },
     {
@@ -410,7 +538,7 @@
         ],
         "ko": [
           {
-            "text": "열여섯 깃발은 중앙 비상위원회가 해산된 선언이다. 열여섯 권역이 독자 헌장과 직위를 내걸어 강국 여섯, 약국 넷, 소국 여섯이 되었고, 일곱 질서 계통 국가는 기록청에 계승과 조약을 등록하였으나 정부는 그 동의 없이 어느 나라도 묶지 못한다. 서울역 인준을 받은 관문 헌장과 받지 않은 통행 관습을 따로 접어 함에 넣었다는 증언이 그 선언의 자리로 남아 있고, 개막 2126의 "
+            "text": "열여섯 깃발은 중앙 비상위원회의 해산 선언이다. 열여섯 권역이 각자 헌장과 직위를 내걸었다. 이로써 강국 여섯, 약국 넷, 소국 여섯이 생겼다. 일곱 질서 계통 국가는 기록청에 계승과 조약을 등록하였으나, 정부는 그 동의 없이 어느 나라도 묶지 못한다. 서울역 인준을 받은 관문 헌장과 인준을 받지 않은 통행 관습을 따로 접어 함에 넣었다는 증언이 이 선언의 자리로 남았다. 개막 2126의 "
           },
           {
             "text": "서울 십육국",
@@ -420,9 +548,17 @@
             }
           },
           {
-            "text": " 배치는 이 깃발의 후손으로 읽히며 그해의 사진처럼 고정하지 않는다."
+            "text": " 배치는 이 깃발들에서 이어진다. 개막 배치를 선언 당시의 배치로 간주하지 않는다."
           }
         ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "같은-창세의-다른-제목-p4-label",
+      "text": {
+        "en": "공신의 겨울",
+        "ko": "**라. 공신의 겨울**"
       }
     },
     {
@@ -430,7 +566,15 @@
       "anchor": "같은-창세의-다른-제목-p4",
       "text": {
         "en": "The Merit Subjects' Winter was an oral record of demands made all at once. When the founding merit subjects held out offices, ration rights, and hereditary rights together, shaving the rewards grew coups and lavishing them scattered the titles, so some states became condominiums and some became court-guard states. The memory that only the relief boxes stayed empty clung to that winter's transcription in the oral record.",
-        "ko": "공신의 겨울은 한꺼번에 요구한 구술이다. 창건 공신들이 관직과 배급권과 세습권을 같이 내밀자 보상을 깎으면 쿠데타가 자라고 퍼주면 관작이 흩어져, 어떤 나라는 공동통치가 되고 어떤 나라는 친위국이 됐다. 구호 상자만 빈 칸으로 남았다는 기억이 그 겨울의 필사로 구술에 붙는다."
+        "ko": "공신의 겨울은 창건 공신들이 관직, 배급권, 세습권을 한꺼번에 요구한 구술이다. 보상을 줄인 나라에서는 쿠데타가 일어났다. 보상을 넓게 나눈 나라에서는 관작이 흩어졌다. 일부 나라는 공동통치로 바뀌었고 일부 나라는 친위국으로 바뀌었다. 구호 상자만 빈 칸으로 남았다는 기억이 그 겨울의 필사본에 붙어 전한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "같은-창세의-다른-제목-p5-label",
+      "text": {
+        "en": "공백의 세기",
+        "ko": "**마. 공백의 세기**"
       }
     },
     {
@@ -454,7 +598,7 @@
         ],
         "ko": [
           {
-            "text": "공백의 세기에는 제목을 새로 쓰지 않는다. 생활권 깃발과 급수 장부는 이어지지만 창건 공신의 얼굴과 2026의 일상은 구술과 사본과 신화가 되고, 역과 수문과 차량기지가 그 사본을 담는 뼈대인 까닭은 "
+            "text": "공백의 세기에는 새 제목을 붙이지 않는다. 생활권 깃발과 급수 장부는 계속 쓰이고 있다. 창건 공신의 얼굴과 2026년의 일상은 구술, 사본, 신화로 전한다. 역, 수문, 차량기지가 이 사본을 보관하는 뼈대가 된 경위는 "
           },
           {
             "text": "구조물 총람",
@@ -464,7 +608,7 @@
             }
           },
           {
-            "text": "이 적는다."
+            "text": "에 기재되어 있다."
           }
         ]
       }
