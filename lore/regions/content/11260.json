@@ -11,7 +11,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "88병원 마당의 물지게",
-        "summary": "개막일 면목2동의 생업은 승강장 당직이 아니라 골목 지기다. 면목2동 주민센터 마당과 88병원 담장 사이가 들것 대기줄이고, 풍림아이원아파트 옥상 물독은 구의에서 빌려 온 제한 급수의 마지막 몫이다. 중랑전화국으로 찍힌 모퉁이에서 야간 호각이 울리고, 임하준 실종과 중앙 급수·부품 계약 만료 전갈이 주민센터 칠판에 붙는다. 중랑천 둔치에서는 제방 당번이 모래주머니를 쌓는다.",
+        "summary": "개막일 면목2동의 생업은 승강장 당직이 아니라 골목 지기다. 면목2동 주민센터 마당과 88병원 담장 사이가 들것 대기줄이고, 풍림아이원아파트 옥상 물독은 구의에서 빌려 온 제한 급수의 마지막 몫이다. 중랑천 둔치에서는 제방 당번이 모래주머니를 쌓는다.",
         "anchor_refs": [
           "osm:node:10126972443",
           "osm:node:7806083029",
@@ -19,14 +19,11 @@
           "osm:node:414683375"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "88병원 마당 들것 대기",
           "풍림아이원 옥상통 당번",
@@ -54,7 +51,7 @@
           "kind": "water",
           "description": "구의 탁수 소문이 돌면 풍림아이원 옥상통이 먼저 잠기고, 88병원 마당 세척을 열면 주거 음용이 하루 빈다."
         },
-        "opening_state": "면목2동 주민센터 칠판에는 임하준 실종과 급수계약 만료만 적혀 있다. 환승시 배차조는 골목 물을 유치선 세정 후보로 적어 두었고, 주민센터는 아직 내주지 않은 협의 상태다. 세 유언장·북산 행렬·무기열차는 개막 사실이 아니다.",
+        "opening_state": "환승시 배차조는 골목 물을 유치선 세정 후보로 적어 두었고, 주민센터는 아직 내주지 않은 협의 상태다.",
         "connections": "면목5동·면목본동·상봉2동과 맞닿은 골목 제방으로는 모래 당번이 오가고, 동대문 쪽 공유 경계에서는 이웃 세대가 호각만 맞춘다.",
         "action": {
           "id": "1126052000-88hospital-yard-water",
@@ -212,7 +209,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "면목2동 주민센터 1층. 면목2동 배급 창구. 보유 S12, S14.",
+                "contents": "면목2동 주민센터 1층. 면목2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -226,17 +223,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S14",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -248,7 +236,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "용마산로 경사와 면목교",
-        "summary": "동 전체 지형의 기복이 관측되지만 특정 계단·경로의 높이 차는 별도 현장 확인이 필요하다. 용마산로 야간 조명이 꺼지면 면목교 쪽 보행이 심사 없는 우회가 된다. 용마중학교와 서울중곡초등학교 운동장은 경사에서 내려온 사람들의 대기석이다. 개막일 칠판에는 계약 만료와 임하준 실종만 있고, 외곽 무장의 흔적은 아직 봉인 장부에 없다.",
+        "summary": "동 전체 지형의 기복이 관측되지만 특정 계단·경로의 높이 차는 별도 현장 확인이 필요하다. 용마산로 야간 조명이 꺼지면 면목교 쪽 보행이 심사 없는 우회가 된다. 용마중학교와 서울중곡초등학교 운동장은 경사에서 내려온 사람들의 대기석이다. 외곽 무장의 흔적은 아직 봉인 장부에 없다.",
         "anchor_refs": [
           "osm:node:6046633863",
           "osm:node:2493496155",
@@ -256,14 +244,12 @@
           "osm:node:436840976"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "용마산역 출구 심사 당직",
           "용마산로 경사 횃불 인부",
@@ -291,7 +277,7 @@
           "kind": "slope",
           "description": "면목4동의 지형 자료에는 동 전체의 기복이 관측된다. 이 수치를 특정 계단이나 운반 경로의 높이·경사로 단정하지 않으며, 용마산로 야간 조명을 용마산역 출구에서 면목교까지 켠다에 필요한 실제 접근 상태는 현장에서 따로 확인한다."
         },
-        "opening_state": "용마산역 칠판은 계절 교대 집정 직전이다. 배차조와 의료조가 출구 조명 전력의 우선만 다투고, 강국 검색 영장은 아직 도착하지 않았다. 북산 행렬은 가을 조건으로만 적혀 있다.",
+        "opening_state": "용마산역 칠판은 계절 교대 집정 직전이다.",
         "connections": "광진 중곡·능동 쪽 사람들은 면목교를 걸어 오고, 면목5동·면목7동과는 용마산로 경사를 나눠 쓴다.",
         "action": {
           "id": "1126054000-yongmasan-road-night-light",
@@ -332,7 +318,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "용마산 선로. 면목4동 통행세 구간. 보유 S12.",
+                "contents": "용마산 선로. 면목4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -498,13 +484,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -524,14 +505,11 @@
           "osm:way:1085029637"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "면목유수지 수문 당번",
           "세차장 통헹굼 인부",
@@ -559,7 +537,7 @@
           "kind": "water",
           "description": "면목천이 불면 유수지가 골목으로 역류하고, 세차장 헹굼을 열면 신우아파트 옥상통이 오염 후보가 된다."
         },
-        "opening_state": "면목5동주민센터는 계약 만료 뒤 유수지 수문을 닫아 둔 협의 상태다. 환승시는 세정 물을 가져가려 하고, 주민센터는 수문 열쇠를 아직 내주지 않는다. 탁수 사건은 여름 조건이지 개막 사실이 아니다.",
+        "opening_state": "유수지 수문을 닫아 둔 협의 상태다. 환승시는 세정 물을 가져가려 하고, 주민센터는 수문 열쇠를 아직 내주지 않는다.",
         "connections": "면목2·4·본·7동과 맞닿은 면목천으로는 제방 당번이 오가고, 동대문 장안 쪽 경계에서도 같은 제방을 본다.",
         "action": {
           "id": "1126055000-myeonmok-retention-settle",
@@ -600,7 +578,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "면목5동주민센터 1층. 면목5동 배급 창구. 보유 S12, S14.",
+                "contents": "면목5동주민센터 1층. 면목5동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -670,17 +648,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S14",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -700,14 +669,12 @@
           "osm:node:368899817"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "면목역 출구 안내",
           "혜원사거리 통과증 서기",
@@ -735,7 +702,7 @@
           "kind": "access",
           "description": "혜원사거리를 화물 손수레에 열면 면목역 출구가 막히고, 닫으면 용신암 골목이 무증 우회가 된다."
         },
-        "opening_state": "면목본동 주민센터는 임하준 실종 전갈만 공람한다. 파출소 당직 명단이 한 줄 비어 통과증이 밀리고, 무기함 수색은 겨울 조건이지 오늘 사건이 아니다.",
+        "opening_state": "파출소 당직 명단이 한 줄 비어 통과증이 밀린다.",
         "connections": "면목2·5동, 면목3·8동, 망우3동과 맞닿은 혜원사거리에서는 통과증을 맞춘 사람들만 골목으로 흩어진다.",
         "action": {
           "id": "1126056500-hyewon-pass-desk",
@@ -776,7 +743,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "면목 선로. 면목본동 통행세 구간. 보유 S12.",
+                "contents": "면목 선로. 면목본동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -815,7 +782,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "면목본동 주민센터 1층. 면목본동 배급 창구. 보유 S12.",
+                "contents": "면목본동 주민센터 1층. 면목본동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -921,13 +888,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -947,15 +909,12 @@
           "osm:way:1111655661"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "약수터 지게 당번",
           "사가정 대합실 세정 인부",
@@ -983,7 +942,7 @@
           "kind": "water",
           "description": "약수터가 어는 날 한양수자인 옥상이 먼저 마르고, 사가정 대합실 세정에 물을 주면 주거 음용이 끊긴다."
         },
-        "opening_state": "사가정역 칠판에는 급수계약 만료와 임하준 실종만 있다. 약수터는 아직 검사 전 협의 수원이고, 가짜 약·탁수는 여름 조건이다.",
+        "opening_state": "약수터는 아직 검사 전 협의 수원이다.",
         "connections": "면목4·5동, 면목3·8동과는 약수 지게가 오가고, 광진 능동 쪽 경사는 땔감 길과 물길이 겹친다.",
         "action": {
           "id": "1126057000-sagajeong-spring-ration",
@@ -1024,7 +983,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "사가정 선로. 면목7동 통행세 구간. 보유 S12, S14.",
+                "contents": "사가정 선로. 면목7동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1183,17 +1142,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S14",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1213,14 +1163,11 @@
           "osm:node:414686057"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S13"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "원진 마당 분류 당번",
           "면목고 운동장 경증 대기",
@@ -1248,7 +1195,7 @@
           "kind": "supply",
           "description": "원진 마당을 분류장으로 열면 면목고 급식 창고가 비고, 닫으면 겸재삼거리에 들것이 쌓여 주거 골목을 막는다."
         },
-        "opening_state": "주민센터 칠판은 급수·부품 계약 만료와 임하준 실종뿐이다. 의료조 당직 연장은 제안이고, 약령 병상 합의는 아직 날인되지 않았다.",
+        "opening_state": "의료조 당직 연장은 제안이고, 약령 병상 합의는 아직 날인되지 않았다.",
         "connections": "면목본·5·7동, 망우3동과 맞닿은 겸재삼거리로 들것이 오가고, 진로아파트앞 종점에서는 버스 자리만 남는다.",
         "action": {
           "id": "1126057500-wonjin-triage-yard",
@@ -1360,7 +1307,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "면목제3·8동 주민센터 1층. 면목3·8동 배급 창구. 보유 S12, S13.",
+                "contents": "면목제3·8동 주민센터 1층. 면목3·8동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1420,17 +1367,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S13",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1442,7 +1380,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "망우 들것과 봉수대",
-        "summary": "상봉1동은 망우역과 상봉역이 한 언덕에 붙는 환승 마루다. 서울선병원 마당이 들것 하차 후보지이고, 봉수대에서는 호송 시각을 알리는 시계만 켠다. 광천으로 찍힌 샘은 세정 보조로 쓰고, 음용 정수는 아차 쪽 제한 급수에 기댄다. 배차의무관 장세화의 공동호송 시각표와 배차조 단독안이 같은 칠판을 다투고, 의료열차 무기 소문은 겨울 조건으로만 적혀 있다.",
+        "summary": "상봉1동은 망우역과 상봉역이 한 언덕에 붙는 환승 마루다. 서울선병원 마당이 들것 하차 후보지이고, 봉수대에서는 호송 시각을 알리는 시계만 켠다. 광천으로 찍힌 샘은 세정 보조로 쓰고, 음용 정수는 아차 쪽 제한 급수에 기댄다.",
         "anchor_refs": [
           "osm:node:1789755424",
           "osm:node:8233698788",
@@ -1450,15 +1388,12 @@
           "osm:node:2471012411"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S13"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "망우 승강장 들것 순서",
           "상봉 환승 안내",
@@ -1486,7 +1421,7 @@
           "kind": "access",
           "description": "망우 들것을 앞에 두면 상봉 환승 처리량이 죽고, 여객을 앞에 두면 선병원 마당에 중증이 쌓인다."
         },
-        "opening_state": "개막일 환승시는 계절 교대 집정 직전이다. 중앙 계약 만료로 호송 슬롯이 비고, 임하준 실종 전갈만 망우 칠판에 있다. 북산 남하는 가을, 무기함은 겨울의 조건부 사건이다.",
+        "opening_state": "개막일 환승시는 계절 교대 집정 직전이다.",
         "connections": "상봉2동·중화1·2동·망우본·신내1·2동과 맞닿은 언덕으로는 환승 여객과 들것이 오간다.",
         "action": {
           "id": "1126058000-mangu-stretcher-slot",
@@ -1527,7 +1462,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "망우 선로. 상봉1동 통행세 구간. 보유 S12, S13.",
+                "contents": "망우 선로. 상봉1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1566,7 +1501,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "상봉 선로. 상봉1동 통행세 구간. 보유 S12, S13.",
+                "contents": "상봉 선로. 상봉1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1686,17 +1621,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S13",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1708,7 +1634,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "동부시장 저울과 우유 냉각고",
-        "summary": "상봉2동 지하철 상봉역 서쪽은 동부시장 골목과 서울우유협동조합으로 찍힌 상업 마당이다. 상봉장여관 방은 환승 대기 잠자리 대신 하루치 재고 창고로 쓰고, 한일써너스빌 주거는 시장 부스러기를 기다린다. 가락 식량은 여기를 스칠 뿐 나지 않는다. 개막일 냉각 전력이 계약 만료로 흔들리고, 여관을 남하 대기소로 여는 안은 가을 조건이다.",
+        "summary": "상봉2동 지하철 상봉역 서쪽은 동부시장 골목과 서울우유협동조합으로 찍힌 상업 마당이다. 상봉장여관 방은 환승 대기 잠자리 대신 하루치 재고 창고로 쓰고, 한일써너스빌 주거는 시장 부스러기를 기다린다. 가락 식량은 여기를 스칠 뿐 나지 않는다.",
         "anchor_refs": [
           "osm:node:6046633868",
           "osm:way:1081840487",
@@ -1716,15 +1642,12 @@
           "osm:node:4704739437"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "동부시장 저울 상인",
           "우유조합 냉각 당번",
@@ -1752,7 +1675,7 @@
           "kind": "supply",
           "description": "냉각고 전력을 시장 저울 조명에 돌리면 우유통이 상하고, 여관을 대기 잠자리로 열면 재고 창고가 없어진다."
         },
-        "opening_state": "상봉역 서쪽 칠판에는 계약 만료와 임하준 실종만 있다. 시장 상인과 냉각 당번이 전력을 놓고 협의 중이고, 북산 남하 대기는 아직 열리지 않았다.",
+        "opening_state": "시장 상인과 냉각 당번이 전력을 놓고 협의 중이다.",
         "connections": "면목2·본동, 상봉1동, 중화2동, 망우본동과 맞닿은 동부시장으로는 소량 식량이 오가고, 중랑천 둔치에서는 제방 당번만 다닌다.",
         "action": {
           "id": "1126059000-dongbu-market-cool-share",
@@ -1793,7 +1716,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "상봉 선로. 상봉2동 통행세 구간. 보유 S12, S15.",
+                "contents": "상봉 선로. 상봉2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1924,17 +1847,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S15",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1954,15 +1868,12 @@
           "osm:way:371643417"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S11"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "마을금고 장부 서기",
           "중화고 운동장 대기 반장",
@@ -1990,7 +1901,7 @@
           "kind": "governance",
           "description": "금고를 배차 담보로 열면 학교 급식이 담보에서 빠지고, 급식에 묶으면 창동 차륜 교환 시각이 하루 빈다."
         },
-        "opening_state": "주민센터는 임하준 실종과 부품 계약 만료만 공람한다. 계절 교대 집정 전이라 배차조가 금고 열쇠를 요구해도 날인은 없다. 베어링 조작은 겨울 조건이다.",
+        "opening_state": "계절 교대 집정 전이라 배차조가 금고 열쇠를 요구해도 날인은 없다.",
         "connections": "상봉1동·중화2동·묵1동·신내2동과 맞닿은 골목으로는 보증 전령과 대기 줄이 오간다.",
         "action": {
           "id": "1126060000-credit-union-wheel-bond",
@@ -2031,7 +1942,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "중화 선로. 중화1동 통행세 구간. 보유 S12, S11.",
+                "contents": "중화 선로. 중화1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2197,17 +2108,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S11",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2227,14 +2129,12 @@
           "osm:way:1044625322"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "장미제일시장 새벽 상인",
           "중랑역 환적 인부",
@@ -2262,7 +2162,7 @@
           "kind": "supply",
           "description": "중랑역 환적을 새벽에 열면 장미시장 주거 몫이 사라지고, 닫으면 손수레가 중랑천 제방을 밟아 수문이 흔들린다."
         },
-        "opening_state": "복합청사 칠판에는 급수계약 만료와 임하준 실종만 있다. 환승시 중립시장 선언은 제안이고, 남하 대기열은 아직 시장 바닥에 앉지 않았다.",
+        "opening_state": "환승시 중립시장 선언은 제안이고, 남하 대기열은 아직 시장 바닥에 앉지 않았다.",
         "connections": "이문2동·상봉2동·중화1동·묵2동과 공유하는 경계를 기록하되, 중랑천 제방이나 지상 도로의 실제 통행은 별도 점검과 협약을 거쳐 운영한다.",
         "action": {
           "id": "1126061000-jangmi-dawn-scale",
@@ -2303,7 +2203,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "중랑 선로. 중화2동 통행세 구간. 보유 S12.",
+                "contents": "중랑 선로. 중화2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2349,7 +2249,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "장미제일시장 1층 허가 장터. 보유 S12.",
+                "contents": "장미제일시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2367,7 +2267,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중화2동 주민센터 1층. 중화2동 배급 창구. 보유 S12.",
+                "contents": "중화2동 주민센터 1층. 중화2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2392,7 +2292,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중화2동 복합청사 1층. 중화2동 배급 창구. 보유 S12.",
+                "contents": "중화2동 복합청사 1층. 중화2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2406,13 +2306,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2432,15 +2327,12 @@
           "osm:node:368899929"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "먹골 약수 지게",
           "태릉고 운동장 대피 서기",
@@ -2468,7 +2360,7 @@
           "kind": "water",
           "description": "약수를 운동장 대피에 주면 먹골 출구가 진흙으로 막히고, 출구 세정에 주면 504동 옥상통이 빈다."
         },
-        "opening_state": "묵1동주민센터는 계약 만료와 임하준 실종만 공고한다. 운동장을 남하 대피로 여는 안은 가을 조건이고, 오늘은 물 몫 협의만 있다.",
+        "opening_state": "오늘은 물 몫 협의만 있다.",
         "connections": "중화1동·묵2동·신내1·2동, 노원 공릉 쪽과 맞닿은 골목으로는 약수 지게와 대피 줄이 오간다.",
         "action": {
           "id": "1126062000-mukgol-spring-schoolyard",
@@ -2509,7 +2401,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "먹골 선로. 묵1동 통행세 구간. 보유 S12, S14.",
+                "contents": "먹골 선로. 묵1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2548,7 +2440,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "묵1동주민센터 1층. 묵1동 배급 창구. 보유 S12, S14.",
+                "contents": "묵1동주민센터 1층. 묵1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2654,17 +2546,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S14",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2684,13 +2567,11 @@
           "osm:node:414683402"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [
-          "S12"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "월릉교 조명 가설 인부",
           "세원아파트 전력 당번",
@@ -2718,7 +2599,7 @@
           "kind": "power",
           "description": "월릉교 조명을 켜면 세원아파트 승강이 멈추고, 끄면 제방 순찰이 중랑천으로 떨어진다."
         },
-        "opening_state": "묵2동 주민센터 칠판은 부품·급수 계약 만료와 임하준 실종뿐이다. 전력 배분은 협의 중이고, 경찰서 건물은 순찰 교대 자리로만 쓴다.",
+        "opening_state": "전력 배분은 협의 중이고, 경찰서 건물은 순찰 교대 자리로만 쓴다.",
         "connections": "중화2동·묵1동, 동대문 이문, 성북 석관, 노원 공릉과 맞닿은 월릉교로는 야간 보행과 제방 순찰이 오간다.",
         "action": {
           "id": "1126063000-wollung-bridge-light",
@@ -2759,7 +2640,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "묵2동 주민센터 1층. 묵2동 배급 창구. 보유 S12.",
+                "contents": "묵2동 주민센터 1층. 묵2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2876,7 +2757,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "주마빌딩 1층. 묵2동 잔존 골조. 보유 S12.",
+                "contents": "주마빌딩 1층. 묵2동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -2890,13 +2771,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2908,7 +2784,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "신내지하차도와 양원 보행",
-        "summary": "망우본동은 신내 지하철·신내 철도와 양원역이 한 구릉에 모이는 말단이다. 신내지하차도는 호송 전용으로 봉인할지 양원 보행에 열지의 갈림이고, 망우산·망우역사문화공원에서는 시계를 보고 대기를 앉힌다. 장여성병원으로 찍힌 마당은 분만·중증 하차 후보지로 쓴다. 유치선 봉쇄 소문은 겨울 조건이다.",
+        "summary": "망우본동은 신내 지하철·신내 철도와 양원역이 한 구릉에 모이는 말단이다. 신내지하차도는 호송 전용으로 봉인할지 양원 보행에 열지의 갈림이고, 망우산·망우역사문화공원에서는 시계를 보고 대기를 앉힌다. 장여성병원으로 찍힌 마당은 분만·중증 하차 후보지로 쓴다.",
         "anchor_refs": [
           "osm:node:7186344001",
           "osm:node:355173626",
@@ -2916,10 +2792,10 @@
           "osm:node:11331445817"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
         "polity_contexts": [
           "S12"
@@ -2951,7 +2827,7 @@
           "kind": "access",
           "description": "지하차도를 호송만 열면 양원 보행이 망우산 경사로 밀리고, 보행에 열면 의료 호송이 상봉 시각표를 놓친다."
         },
-        "opening_state": "신내 출구 칠판은 계절 교대 직전이다. 공동호송 시각표는 제안, 단독 승인안도 날인 전이다. 임하준 실종과 계약 만료만 사실이고, 무기열차·북산 행렬은 아직이다.",
+        "opening_state": "신내 출구 칠판은 계절 교대 직전이다. 공동호송 시각표는 제안, 단독 승인안도 날인 전이다.",
         "connections": "상봉1·2동, 망우3동, 신내1동과 맞닿은 구릉으로는 호송과 보행이 오가고, 양원 쪽 외곽에서는 하차한 사람들이 공원으로 몰린다.",
         "action": {
           "id": "1126065500-sinnae-underpass-escort",
@@ -2992,7 +2868,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신내 선로. 망우본동 통행세 구간. 보유 S12.",
+                "contents": "신내 선로. 망우본동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3031,7 +2907,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "양원 선로. 망우본동 통행세 구간. 보유 S12.",
+                "contents": "양원 선로. 망우본동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3070,7 +2946,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신내 선로. 망우본동 통행세 구간. 보유 S12.",
+                "contents": "신내 선로. 망우본동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3170,14 +3046,11 @@
           "osm:node:7806083031"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S13"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "늘찬병원 마당 들것",
           "동원사거리 경사 끌꾼",
@@ -3205,7 +3078,7 @@
           "kind": "slope",
           "description": "동원사거리 경사가 얼면 들것이 혜원여중고 담장으로 밀리고, 세차장 물을 병원에 주면 통 헹굼이 멈춰 골목 오물이 남는다."
         },
-        "opening_state": "망우3동 주민센터는 계약 만료와 임하준 실종만 적는다. 늘찬 마당 분류는 원진·선병원과 같은 호송 줄을 놓고 협의 중이다. 무장 우회는 개막 사실이 아니다.",
+        "opening_state": "늘찬 마당 분류는 원진·선병원과 같은 호송 줄을 놓고 협의 중이다.",
         "connections": "면목본동·면목3·8동·망우본동과 맞닿은 동원사거리로 들것과 손수레가 오간다. 유령의집으로 찍힌 건물은 위치 이름일 뿐이다.",
         "action": {
           "id": "1126066000-dongwon-slope-stretcher",
@@ -3338,7 +3211,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "망우3동 주민센터 1층. 망우3동 배급 창구. 보유 S12, S13.",
+                "contents": "망우3동 주민센터 1층. 망우3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3377,17 +3250,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S13",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3407,15 +3271,12 @@
           "osm:relation:12080316"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md",
-          "docs/game-logic/Seoul-Station-Catalog.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md",
+          "WIKI/lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S13"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "서울의료원 마당 호송 분류",
           "신내IC 진입 안내",
@@ -3443,7 +3304,7 @@
           "kind": "access",
           "description": "신내IC를 구급만 열면 화물 우회가 구능산 경사로 오르고, 화물에 열면 의료원 마당이 손수레에 막힌다."
         },
-        "opening_state": "의료원 마당 칠판에는 임하준 실종과 급수·부품 계약 만료만 있다. 약령 수용 합의는 날인 전이고, 암사 검색 영장은 도착하지 않았다. 무기함 발견은 겨울 조건이다.",
+        "opening_state": "약령 수용 합의는 날인 전이다.",
         "connections": "신내1동은 상봉1동·망우본동·묵1동·신내2동 및 노원구 공릉2동과 경계를 공유한다. 신내IC와 중랑경찰서후문 주변의 구급·화물 인계는 실제 접근 조건을 확인한 창작 운영 상태로 관리한다.",
         "action": {
           "id": "1126068000-medical-center-ic-filter",
@@ -3484,7 +3345,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "봉화산 선로. 신내1동 통행세 구간. 보유 S12, S13.",
+                "contents": "봉화산 선로. 신내1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3569,7 +3430,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "오위장공파 1층. 신내1동 배급 창구. 보유 S12, S13.",
+                "contents": "오위장공파 1층. 신내1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3608,17 +3469,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S13",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3629,7 +3481,7 @@
       "content": {
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
-        "title": "구청 로비의 만료 공고",
+        "title": "2126년 오경재 당회장 취임",
         "summary": "개막일 신내2동의 생업은 중랑구청 로비의 공청이다. 환승시 계절 교대 직전, 봉화산 숲은 닫아 둔 땔감 유혹이다. 신내7단지아파트홈플러스로 찍힌 자리는 단지 배급 창고로 쓰고, 봉화초 운동장은 공청 대기석이다. 구청 건물은 공고를 붙이는 지붕이며, 급수는 아차 쪽 제한 몫을 나눠 받는다.",
         "anchor_refs": [
           "osm:relation:7226925",
@@ -3638,20 +3490,17 @@
           "osm:way:371643426"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-12.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [
-          "S12",
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "중랑구청 로비 공청 서기",
           "7단지 배급창고 반장",
           "봉화초 운동장 대기"
         ],
-        "livelihood": "구청 로비에 만료 공고와 새 급수 협의 순서를 붙이고, 7단지 배급 창고가 하루치를 나눈다. 봉화산 숲길은 닫아 둔다.",
+        "livelihood": "봉화산 숲길은 닫아 둔다.",
         "production": {
           "outputs": [
             "공청의사록",
@@ -3673,11 +3522,11 @@
           "kind": "governance",
           "description": "로비를 공청으로 열면 7단지 배급 창고 인력이 빠지고, 닫으면 봉화산 쪽 세대가 구의 물 협의를 듣지 못해 무단 물독을 연다."
         },
-        "opening_state": "구청 로비 칠판에는 임하준 실종과 중앙 급수·부품 계약 만료만 붙는다. 배차조·의료조 교대 집정은 내일의 표결이고, 세 유언장은 봄 조건이다.",
+        "opening_state": "구청 로비 칠판에는 붙는다.",
         "connections": "상봉1동·중화1동·묵1동·신내1동과 맞닿은 신내로7가길로는 단지 보행이 오가고, 공청 전령이 구청 로비로 모인다.",
         "action": {
           "id": "1126069000-guoffice-expiry-hearing",
-          "label": "중랑구청 로비를 급수계약 만료 공청으로 하루 연다",
+          "label": "중랑구청 로비를 급수계약 공청으로 하루 연다",
           "target_ref": "osm:relation:7226925",
           "costs": [
             {
@@ -3857,7 +3706,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중랑구청 1층. 신내2동 배급 창구. 보유 S12, S14.",
+                "contents": "중랑구청 1층. 신내2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3871,17 +3720,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S12",
-              "control": 57
-            },
-            {
-              "polity": "S14",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }

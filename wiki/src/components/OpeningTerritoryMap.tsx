@@ -6,9 +6,9 @@ import { StateFlag } from './StateFlag'
 import './OpeningTerritoryMap.css'
 
 type State = { id: string; name: string; slug: string; origin: string; government: string; power: string; ruler: string; cause: string; labelX: number; labelY: number; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
-type Region = { id: string; name: string; district: string; path: string; polities: string[]; status: 'held' | 'contested'; openingState: string; summary: string; stationCount: number }
+type Region = { id: string; name: string; district: string; path: string; polities: string[]; status: 'held' | 'contested' | 'vacant'; openingState: string; summary: string; stationCount: number }
 type LineDefinition = { name: string; color: string }
-type StationControl = { source: 'derived-from-surface' | 'outside-surface-atlas' | 'control-delta'; deltaId: string | null; status: 'held' | 'contested' | 'unknown'; polityIds: string[]; polityNames: string[]; surfaceRegionId: string | null; surfaceRegionName: string | null; hierarchy: { state: string; regionalAuthority: string; stationManager: string } }
+type StationControl = { source: 'derived-from-surface' | 'outside-surface-atlas' | 'control-delta'; deltaId: string | null; status: 'held' | 'contested' | 'vacant' | 'unknown'; polityIds: string[]; polityNames: string[]; surfaceRegionId: string | null; surfaceRegionName: string | null; hierarchy: { state: string; regionalAuthority: string; stationManager: string } }
 type Station = { id: string; name: string; district: string; x: number; y: number; degree: number; lineIds: string[]; control: StationControl }
 type SubwayEdge = { a: string; b: string; lineIds: string[] }
 type Vassal = { name: string; city: string; suzerain: string; founded: string; duty: string; anchor: string }
@@ -38,6 +38,7 @@ const colors = ['#b54b4b', '#9b6a34', '#7360a7', '#347b74', '#735377', '#426f99'
 const tierColors: Record<string, string> = { 강국: '#b54b4b', 약국: '#956f28', 소국: '#64708a' }
 const contestedStationColor = '#9aa7ad'
 const unknownStationColor = '#5d6f78'
+const vacantColor = '#6f7a7f'
 const surfaceStationColor = '#f8f1cf'
 const undergroundRockColor = '#132732'
 
@@ -220,11 +221,11 @@ export default function OpeningTerritoryMap() {
         else shape.lineTo(x, y)
       })
       shape.closePath()
-      const depth = (region.status === 'held' ? 0.82 : 0.46) + Math.min(region.stationCount * 0.035, 0.28)
+      const depth = (region.status === 'held' ? 0.82 : region.status === 'vacant' ? 0.3 : 0.46) + Math.min(region.stationCount * 0.035, 0.28)
       const geometry = new THREE.ExtrudeGeometry(shape, { depth, steps: 1, bevelEnabled: false })
       geometry.rotateX(-Math.PI / 2)
       geometry.computeVertexNormals()
-      const baseColor = region.status === 'contested' ? '#9f9276' : states.get(region.polities[0])?.color ?? '#777777'
+      const baseColor = region.status === 'vacant' ? vacantColor : region.status === 'contested' ? '#9f9276' : states.get(region.polities[0])?.color ?? '#777777'
       const material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.68, metalness: 0.08, emissive: 0x061016, emissiveIntensity: 0.18 })
       const mesh = new THREE.Mesh(geometry, material) as RegionMesh
       mesh.userData = { regionId: region.id, baseColor }
@@ -392,7 +393,7 @@ export default function OpeningTerritoryMap() {
       const stationColors = data.stations.map((station) => {
         if (activeLayer === 'surface') return surfaceColor
         if (station.control.polityIds.length === 1) return new THREE.Color(states.get(station.control.polityIds[0])?.color ?? contestedStationColor)
-        return new THREE.Color(station.control.status === 'unknown' ? unknownStationColor : contestedStationColor)
+        return new THREE.Color(station.control.status === 'unknown' ? unknownStationColor : station.control.status === 'vacant' ? vacantColor : contestedStationColor)
       })
       stationColors.forEach((color, index) => stationColorAttribute.setXYZ(index, color.r, color.g, color.b))
       stationColorAttribute.needsUpdate = true
@@ -643,7 +644,7 @@ export default function OpeningTerritoryMap() {
             <strong>{hoveredStation.station.name}</strong>
             <div className="territory-tooltip-lines">{hoveredStation.station.lineIds.length > 0 ? hoveredStation.station.lineIds.map((lineId) => <span key={lineId} style={{ borderColor: data.lines[lineId]?.color, color: data.lines[lineId]?.color }}>{data.lines[lineId]?.name ?? lineId}</span>) : <span>노선 미확인</span>}</div>
             <dl>
-              <div><dt>점령 상태</dt><dd>{hoveredStation.station.control.status === 'held' ? '단독 지배' : hoveredStation.station.control.status === 'contested' ? '경합' : '미확인'}</dd></div>
+              <div><dt>점령 상태</dt><dd>{hoveredStation.station.control.status === 'held' ? '단독 지배' : hoveredStation.station.control.status === 'contested' ? '경합' : hoveredStation.station.control.status === 'vacant' ? '무주지' : '미확인'}</dd></div>
               <div><dt>지배 국가</dt><dd>{hoveredStation.station.control.hierarchy.state}</dd></div>
               <div><dt>지배 계층</dt><dd>{hoveredStation.station.control.hierarchy.state} → {hoveredStation.station.control.hierarchy.regionalAuthority} → {hoveredStation.station.control.hierarchy.stationManager}</dd></div>
               <div><dt>점령 원장</dt><dd>{hoveredStation.station.control.source === 'derived-from-surface' ? '지표 영토 기반 초안' : hoveredStation.station.control.source === 'control-delta' ? `역 점령 변경 기록${hoveredStation.station.control.deltaId ? ` · ${hoveredStation.station.control.deltaId}` : ''}` : '서울 영토 원장 밖 · 미확인'}</dd></div>
@@ -670,11 +671,11 @@ export default function OpeningTerritoryMap() {
           </ul>
         </div>
         <aside className="territory-detail" aria-live="polite">
-          {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ')}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126 시점 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p></section>}
+          {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : selected.status === 'vacant' ? '무주지' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ') || '없음'}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126 시점 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p></section>}
           {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr></tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
         </aside>
       </div>
-      <div className="territory-legend">{data.states.map((state) => <button key={state.id} type="button" data-tier={state.power} onClick={() => selectState(state)} aria-pressed={stateFilter === state.id}><span className="territory-legend-swatch" style={{ backgroundColor: states.get(state.id)?.color }} /><StateFlag stateId={state.id} /><span>{state.id} {state.name}</span></button>)}<span className="territory-contested-key">낮은 돌출: 경합지</span></div>
+      <div className="territory-legend">{data.states.map((state) => <button key={state.id} type="button" data-tier={state.power} onClick={() => selectState(state)} aria-pressed={stateFilter === state.id}><span className="territory-legend-swatch" style={{ backgroundColor: states.get(state.id)?.color }} /><StateFlag stateId={state.id} /><span>{state.id} {state.name}</span></button>)}<span className="territory-contested-key">낮은 돌출: 경합지 · 가장 낮은 회색: 무주지</span></div>
       <div className="territory-line-legend" aria-label="서울 지하철 노선 색상"><button type="button" aria-pressed={selectedLine === 'all'} onClick={() => setSelectedLine('all')}>전체 노선</button>{Object.entries(data.lines).map(([lineId, line]) => <button key={lineId} type="button" aria-pressed={selectedLine === lineId} onClick={() => setSelectedLine(lineId)}><span style={{ backgroundColor: line.color }} />{line.name}</button>)}</div>
       <details className="territory-flag-provenance"><summary>16국 깃발 콘셉트 시트와 채택 자산</summary><p>CLIProxy Gemini로 생성한 4×4 콘셉트 시트를 Artkit으로 16개 셀에 분리해 지도·범례의 실제 깃발 자산으로 사용합니다.</p><img src={`${import.meta.env.BASE_URL}state-flags/concept-sheet.webp`} alt="16국 깃발 4×4 콘셉트 시트" loading="lazy" /></details>
       <p className="wiki-domain-label">{data.epoch.label} · 국기 도안은 국가 기원에서 만든 공식 위키 식별기 · 3D 높이는 가독성용 과장 · {data.attribution}</p>

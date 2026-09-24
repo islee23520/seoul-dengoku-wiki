@@ -16,12 +16,10 @@
           "osm:relation:3769500"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "풍납1동 주민 작업반",
           "배급 재고 보전 담당자"
@@ -42,8 +40,8 @@
           "kind": "water",
           "description": "낮은 곳의 비축이 젖으면 여러 가구의 당일 식량을 잃는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 풍납1동 주민들은 다음 선택의 비용을 협의한다: 필수 재고 이전을 먼저 한다.",
-        "connections": "풍납2동과 경계를 맞대지만 풍납1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "풍납1동 주민들은 다음 선택의 비용을 협의한다: 필수 재고 이전을 먼저 한다.",
+        "connections": "풍납2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171051000-local-choice",
           "label": "필수 재고 이전을 먼저 한다",
@@ -78,7 +76,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "풍납1동 주민센터 1층. 풍납1동 배급 창구. 보유 S15.",
+                "contents": "풍납1동 주민센터 1층. 풍납1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -223,13 +221,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -246,12 +239,10 @@
           "osm:way:418851260"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "풍납2동 주민 작업반",
           "대피 인계 담당자"
@@ -272,8 +263,8 @@
           "kind": "access",
           "description": "짐부터 옮기면 늦게 온 가구의 인원이 기록에서 빠진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 풍납2동 주민들은 다음 선택의 비용을 협의한다: 사람 인계를 먼저 확인한다.",
-        "connections": "풍납1동·오륜동·잠실4동과 경계를 맞대지만 풍납2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "풍납2동 주민들은 다음 선택의 비용을 협의한다: 사람 인계를 먼저 확인한다.",
+        "connections": "풍납1동·오륜동·잠실4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171052000-local-choice",
           "label": "사람 인계를 먼저 확인한다",
@@ -308,7 +299,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "풍납2동 주민센터 1층. 풍납2동 배급 창구. 보유 S15.",
+                "contents": "풍납2동 주민센터 1층. 풍납2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -462,13 +453,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -485,12 +471,10 @@
           "osm:way:418649440"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "거여1동 주민 작업반",
           "연락 도구 수리 담당자"
@@ -511,8 +495,8 @@
           "kind": "power",
           "description": "검사하지 않은 충전 장비를 함께 쓰면 다른 도구도 손상될 수 있다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 거여1동 주민들은 다음 선택의 비용을 협의한다: 공용 충전 장비를 먼저 검사한다.",
-        "connections": "거여2동·마천2동·오금동·가락2동·장지동·위례동과 경계를 맞대지만 거여1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "거여1동 주민들은 다음 선택의 비용을 협의한다: 공용 충전 장비를 먼저 검사한다.",
+        "connections": "거여2동·마천2동·오금동·가락2동·장지동·위례동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171053100-local-choice",
           "label": "공용 충전 장비를 먼저 검사한다",
@@ -547,7 +531,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "거여 선로. 거여1동 통행세 구간. 보유 S15.",
+                "contents": "거여 선로. 거여1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -586,7 +570,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "거여1동 주민센터 1층. 거여1동 배급 창구. 보유 S15.",
+                "contents": "거여1동 주민센터 1층. 거여1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -692,13 +676,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -715,12 +694,10 @@
           "osm:way:693284516"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "거여2동 주민 작업반",
           "공동 취사 담당자"
@@ -741,8 +718,8 @@
           "kind": "supply",
           "description": "정해진 시각에 오지 못한 가구의 몫이 일반 배분에 섞일 수 있다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 거여2동 주민들은 다음 선택의 비용을 협의한다: 귀환이 늦은 교대의 식사를 따로 남긴다.",
-        "connections": "거여1동·마천1동·마천2동·위례동과 경계를 맞대지만 거여2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "거여2동 주민들은 다음 선택의 비용을 협의한다: 귀환이 늦은 교대의 식사를 따로 남긴다.",
+        "connections": "거여1동·마천1동·마천2동·위례동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171053200-local-choice",
           "label": "귀환이 늦은 교대의 식사를 따로 남긴다",
@@ -777,7 +754,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "거여2동주민센터 1층. 거여2동 배급 창구. 보유 S15.",
+                "contents": "거여2동주민센터 1층. 거여2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -922,13 +899,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -945,12 +917,10 @@
           "osm:node:6039313042"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "마천1동 주민 작업반",
           "생활 운반 장비 수선 담당자"
@@ -971,8 +941,8 @@
           "kind": "supply",
           "description": "고장 수레를 계속 쓰면 배급 인계가 중간에서 멈춘다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 마천1동 주민들은 다음 선택의 비용을 협의한다: 공용 배급 수레부터 수리한다.",
-        "connections": "거여2동·마천2동·위례동과 경계를 맞대지만 마천1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "마천1동 주민들은 다음 선택의 비용을 협의한다: 공용 배급 수레부터 수리한다.",
+        "connections": "거여2동·마천2동·위례동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171054000-local-choice",
           "label": "공용 배급 수레부터 수리한다",
@@ -1007,7 +977,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "마천 선로. 마천1동 통행세 구간. 보유 S15.",
+                "contents": "마천 선로. 마천1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1046,7 +1016,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "마천1동 주민센터 1층. 마천1동 배급 창구. 보유 S15.",
+                "contents": "마천1동 주민센터 1층. 마천1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1117,7 +1087,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "마천청소년센터 1층. 마천1동 잔존 골조. 보유 S15.",
+                "contents": "마천청소년센터 1층. 마천1동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -1131,13 +1101,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1154,12 +1119,10 @@
           "osm:way:695573540"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "마천2동 주민 작업반",
           "포장재 회수 담당자"
@@ -1180,8 +1143,8 @@
           "kind": "governance",
           "description": "반환 책임이 없으면 다음 출하에 쓸 상자가 사라진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 마천2동 주민들은 다음 선택의 비용을 협의한다: 공동 상자 반환대를 연다.",
-        "connections": "거여1동·거여2동·마천1동·오금동과 경계를 맞대지만 마천2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "마천2동 주민들은 다음 선택의 비용을 협의한다: 공동 상자 반환대를 연다.",
+        "connections": "거여1동·거여2동·마천1동·오금동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171055000-local-choice",
           "label": "공동 상자 반환대를 연다",
@@ -1216,7 +1179,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "마천2동 주민센터 1층. 마천2동 배급 창구. 보유 S15.",
+                "contents": "마천2동 주민센터 1층. 마천2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1294,7 +1257,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "마천시장 1층 허가 장터. 보유 S15.",
+                "contents": "마천시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -1347,13 +1310,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1370,12 +1328,10 @@
           "osm:way:169800632"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "방이1동 주민 작업반",
           "생활 수리 교육 담당자"
@@ -1396,8 +1352,8 @@
           "kind": "supply",
           "description": "교육을 미루면 숙련자에게 주문이 계속 몰린다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방이1동 주민들은 다음 선택의 비용을 협의한다: 도제 실습 시간을 작업표에 남긴다.",
-        "connections": "방이2동·오륜동·오금동·송파2동·가락본동과 경계를 맞대지만 방이1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "방이1동 주민들은 다음 선택의 비용을 협의한다: 도제 실습 시간을 작업표에 남긴다.",
+        "connections": "방이2동·오륜동·오금동·송파2동·가락본동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171056100-local-choice",
           "label": "도제 실습 시간을 작업표에 남긴다",
@@ -1432,7 +1388,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "방이1동 주민센터 1층. 방이1동 배급 창구. 보유 S15.",
+                "contents": "방이1동 주민센터 1층. 방이1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1584,13 +1540,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1607,12 +1558,10 @@
           "osm:node:6102706785"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "방이2동 주민 작업반",
           "생활 일정 안내 담당자"
@@ -1633,8 +1582,8 @@
           "kind": "access",
           "description": "오래된 게시를 믿은 주민이 닫힌 배급처로 향한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방이2동 주민들은 다음 선택의 비용을 협의한다: 배급 시간표를 같은 교대에 갱신한다.",
-        "connections": "방이1동·오륜동·송파1동·잠실4동·잠실6동과 경계를 맞대지만 방이2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "방이2동 주민들은 다음 선택의 비용을 협의한다: 배급 시간표를 같은 교대에 갱신한다.",
+        "connections": "방이1동·오륜동·송파1동·잠실4동·잠실6동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171056200-local-choice",
           "label": "배급 시간표를 같은 교대에 갱신한다",
@@ -1669,7 +1618,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "송파나루 선로. 방이2동 통행세 구간. 보유 S15.",
+                "contents": "송파나루 선로. 방이2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1708,7 +1657,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "방이2동 주민센터 1층. 방이2동 배급 창구. 보유 S15.",
+                "contents": "방이2동 주민센터 1층. 방이2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1786,13 +1735,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1809,12 +1753,10 @@
           "osm:node:6039313054"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "오륜동 주민 작업반",
           "집결지 운영 담당자"
@@ -1835,8 +1777,8 @@
           "kind": "water",
           "description": "넓은 장소라고 수용 인원을 무제한 늘리면 필수 물이 먼저 부족하다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 오륜동 주민들은 다음 선택의 비용을 협의한다: 확보한 물량에 맞춰 집결 시간을 나눈다.",
-        "connections": "풍납2동·방이1동·방이2동·오금동·잠실4동과 경계를 맞대지만 오륜동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "오륜동 주민들은 다음 선택의 비용을 협의한다: 확보한 물량에 맞춰 집결 시간을 나눈다.",
+        "connections": "풍납2동·방이1동·방이2동·오금동·잠실4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171056600-local-choice",
           "label": "확보한 물량에 맞춰 집결 시간을 나눈다",
@@ -1871,7 +1813,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "올림픽공원 선로. 오륜동 통행세 구간. 보유 S15.",
+                "contents": "올림픽공원 선로. 오륜동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1910,7 +1852,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "몽촌토성 선로. 오륜동 통행세 구간. 보유 S15.",
+                "contents": "몽촌토성 선로. 오륜동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1949,7 +1891,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "한성백제 선로. 오륜동 통행세 구간. 보유 S15.",
+                "contents": "한성백제 선로. 오륜동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1988,7 +1930,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "오륜동 주민센터 1층. 오륜동 배급 창구. 보유 S15.",
+                "contents": "오륜동 주민센터 1층. 오륜동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2002,13 +1944,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2025,12 +1962,10 @@
           "osm:node:6039313048"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "오금동 주민 작업반",
           "배급 수령 관리 담당자"
@@ -2051,8 +1986,8 @@
           "kind": "governance",
           "description": "중복 수령을 막겠다며 확인되지 않은 가구를 모두 제외하면 필수 소비를 놓친다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 오금동 주민들은 다음 선택의 비용을 협의한다: 임시 수령과 사후 확인을 분리한다.",
-        "connections": "거여1동·마천2동·방이1동·오륜동·가락본동·가락2동과 경계를 맞대지만 오금동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "오금동 주민들은 다음 선택의 비용을 협의한다: 임시 수령과 사후 확인을 분리한다.",
+        "connections": "거여1동·마천2동·방이1동·오륜동·가락본동·가락2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171057000-local-choice",
           "label": "임시 수령과 사후 확인을 분리한다",
@@ -2087,7 +2022,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "개롱 선로. 오금동 통행세 구간. 보유 S15.",
+                "contents": "개롱 선로. 오금동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2126,7 +2061,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "방이 선로. 오금동 통행세 구간. 보유 S15.",
+                "contents": "방이 선로. 오금동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2246,13 +2181,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2269,12 +2199,10 @@
           "osm:node:4658416351"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "송파1동 주민 작업반",
           "가구 돌봄 담당자"
@@ -2295,8 +2223,8 @@
           "kind": "supply",
           "description": "같은 담당자가 긴 교대를 맡으면 야간 보호가 비는 시간이 생긴다. 보호자 인계 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 송파1동 주민들은 다음 선택의 비용을 협의한다: 보호자 순환 돌봄을 편성한다.",
-        "connections": "방이2동·송파2동·석촌동·잠실6동과 경계를 맞대지만 송파1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "송파1동 주민들은 다음 선택의 비용을 협의한다: 보호자 순환 돌봄을 편성한다.",
+        "connections": "방이2동·송파2동·석촌동·잠실6동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171058000-local-choice",
           "label": "송파1동 보호자 인계 시간을 이웃 배급 시간과 맞춘다",
@@ -2331,7 +2259,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "석촌 선로. 송파1동 통행세 구간. 보유 S15.",
+                "contents": "석촌 선로. 송파1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2370,7 +2298,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "송파1동 주민센터 1층. 송파1동 배급 창구. 보유 S15.",
+                "contents": "송파1동 주민센터 1층. 송파1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2420,7 +2348,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "송파여성문화회관 1층. 송파1동 배급 창구. 보유 S15.",
+                "contents": "송파여성문화회관 1층. 송파1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2434,13 +2362,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2457,12 +2380,10 @@
           "osm:way:169803364"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "송파2동 주민 작업반",
           "생활 보수 부재 담당자"
@@ -2483,8 +2404,8 @@
           "kind": "supply",
           "description": "약한 목재를 구조 보수에 쓰면 수리 뒤에도 사고 위험이 남는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 송파2동 주민들은 다음 선택의 비용을 협의한다: 지붕 받침용 부재부터 검사한다.",
-        "connections": "방이1동·송파1동·석촌동·가락본동·가락1동과 경계를 맞대지만 송파2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "송파2동 주민들은 다음 선택의 비용을 협의한다: 지붕 받침용 부재부터 검사한다.",
+        "connections": "방이1동·송파1동·석촌동·가락본동·가락1동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171059000-local-choice",
           "label": "지붕 받침용 부재부터 검사한다",
@@ -2519,7 +2440,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "송파2동 주민센터 1층. 송파2동 배급 창구. 보유 S15.",
+                "contents": "송파2동 주민센터 1층. 송파2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2671,13 +2592,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2694,12 +2610,10 @@
           "osm:way:471124448"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "석촌동 주민 작업반",
           "수레 보수 담당자"
@@ -2720,8 +2634,8 @@
           "kind": "supply",
           "description": "크기만 비슷한 부품을 끼우면 운반 중 고장이 반복된다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 석촌동 주민들은 다음 선택의 비용을 협의한다: 공용 수레 부품의 규격을 확인한다.",
-        "connections": "송파1동·송파2동·삼전동·가락1동·잠실3동과 경계를 맞대지만 석촌동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "석촌동 주민들은 다음 선택의 비용을 협의한다: 공용 수레 부품의 규격을 확인한다.",
+        "connections": "송파1동·송파2동·삼전동·가락1동·잠실3동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171060000-local-choice",
           "label": "공용 수레 부품의 규격을 확인한다",
@@ -2756,7 +2670,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "석촌동 주민센터 1층. 석촌동 배급 창구. 보유 S15.",
+                "contents": "석촌동 주민센터 1층. 석촌동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2852,13 +2766,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2875,12 +2784,10 @@
           "osm:node:368741527"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "삼전동 주민 작업반",
           "가구 의무 지원 담당자"
@@ -2901,8 +2808,8 @@
           "kind": "access",
           "description": "거점에 올 수 없는 주민은 방문 요청이 기록되지 않으면 대기에서 빠진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 삼전동 주민들은 다음 선택의 비용을 협의한다: 방문 요청을 배급 인계 때 함께 받는다.",
-        "connections": "석촌동·가락1동·잠실본동·잠실3동과 경계를 맞대지만 삼전동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "삼전동 주민들은 다음 선택의 비용을 협의한다: 방문 요청을 배급 인계 때 함께 받는다.",
+        "connections": "석촌동·가락1동·잠실본동·잠실3동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171061000-local-choice",
           "label": "방문 요청을 배급 인계 때 함께 받는다",
@@ -2937,7 +2844,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "석촌고분 선로. 삼전동 통행세 구간. 보유 S15.",
+                "contents": "석촌고분 선로. 삼전동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3082,13 +2989,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3105,12 +3007,10 @@
           "osm:node:1810749002"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "가락본동 주민 작업반",
           "중립 처치 지원 담당자"
@@ -3131,8 +3031,8 @@
           "kind": "governance",
           "description": "물자를 제공한 집단만 우선하면 다른 주민이 처치를 받지 못한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 가락본동 주민들은 다음 선택의 비용을 협의한다: 긴급도 기준으로 물자를 배정한다.",
-        "connections": "방이1동·오금동·송파2동·가락1동·가락2동·문정1동·문정2동과 경계를 맞대지만 가락본동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "가락본동 주민들은 다음 선택의 비용을 협의한다: 긴급도 기준으로 물자를 배정한다.",
+        "connections": "방이1동·오금동·송파2동·가락1동·가락2동·문정1동·문정2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171062000-local-choice",
           "label": "긴급도 기준으로 물자를 배정한다",
@@ -3167,7 +3067,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "가락시장 선로. 가락본동 통행세 구간. 보유 S15.",
+                "contents": "가락시장 선로. 가락본동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3256,7 +3156,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "가락본동 주민센터 1층. 가락본동 배급 창구. 보유 S15.",
+                "contents": "가락본동 주민센터 1층. 가락본동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3270,13 +3170,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3293,12 +3188,10 @@
           "osm:way:169915116"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "가락1동 주민 작업반",
           "저온 보관과 배급 중계 담당자"
@@ -3319,8 +3212,8 @@
           "kind": "power",
           "description": "전력 부족을 숨기면 물건을 저장한 가구가 손실을 늦게 안다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 가락1동 주민들은 다음 선택의 비용을 협의한다: 냉장 가능한 시간과 재고를 공개한다.",
-        "connections": "송파2동·석촌동·삼전동·가락본동·문정2동과 경계를 맞대지만 가락1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "가락1동 주민들은 다음 선택의 비용을 협의한다: 냉장 가능한 시간과 재고를 공개한다.",
+        "connections": "송파2동·석촌동·삼전동·가락본동·문정2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171063100-local-choice",
           "label": "냉장 가능한 시간과 재고를 공개한다",
@@ -3355,7 +3248,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "송파 선로. 가락1동 통행세 구간. 보유 S15.",
+                "contents": "송파 선로. 가락1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3394,7 +3287,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "가락1동주민센터 1층. 가락1동 배급 창구. 보유 S15.",
+                "contents": "가락1동주민센터 1층. 가락1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3500,13 +3393,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3523,12 +3411,10 @@
           "osm:node:6033544227"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "가락2동 주민 작업반",
           "역 인계 확인 담당자"
@@ -3549,8 +3435,8 @@
           "kind": "access",
           "description": "같은 이름의 기록을 잘못 합치면 짐이 다른 구획으로 간다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 가락2동 주민들은 다음 선택의 비용을 협의한다: 현장 구획을 인계표에 표시한다.",
-        "connections": "거여1동·오금동·가락본동·문정1동·장지동과 경계를 맞대지만 가락2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "가락2동 주민들은 다음 선택의 비용을 협의한다: 현장 구획을 인계표에 표시한다.",
+        "connections": "거여1동·오금동·가락본동·문정1동·장지동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171063200-local-choice",
           "label": "현장 구획을 인계표에 표시한다",
@@ -3585,7 +3471,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "오금 선로. 가락2동 통행세 구간. 보유 S15.",
+                "contents": "오금 선로. 가락2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3624,7 +3510,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "경찰병원 선로. 가락2동 통행세 구간. 보유 S15.",
+                "contents": "경찰병원 선로. 가락2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3663,7 +3549,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "경찰병원 선로. 가락2동 통행세 구간. 보유 S15.",
+                "contents": "경찰병원 선로. 가락2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3702,7 +3588,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "경찰병원 선로. 가락2동 통행세 구간. 보유 S15.",
+                "contents": "경찰병원 선로. 가락2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3730,13 +3616,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3753,12 +3634,10 @@
           "osm:node:2111844405"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "문정1동 주민 작업반",
           "생활 천 제품 수선 담당자"
@@ -3779,8 +3658,8 @@
           "kind": "supply",
           "description": "개인 주문을 모두 먼저 받으면 공동 숙영 물품이 계속 손상된 채 남는다. 보관 분류 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 문정1동 주민들은 다음 선택의 비용을 협의한다: 공동 침구 수리 시간을 예약한다.",
-        "connections": "가락본동·가락2동·문정2동·장지동과 경계를 맞대지만 문정1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "문정1동 주민들은 다음 선택의 비용을 협의한다: 공동 침구 수리 시간을 예약한다.",
+        "connections": "가락본동·가락2동·문정2동·장지동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171064100-local-choice",
           "label": "문정2동의 보관 물품을 화재 취약도별로 나눈다",
@@ -3886,7 +3765,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "문정1동 주민센터 1층. 문정1동 배급 창구. 보유 S15.",
+                "contents": "문정1동 주민센터 1층. 문정1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3946,13 +3825,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3969,12 +3843,10 @@
           "osm:way:170052586"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "문정2동 주민 작업반",
           "생활품 보관 담당자"
@@ -3995,8 +3867,8 @@
           "kind": "fire",
           "description": "복도에 물자가 쌓이면 실내 대피와 긴급 인계가 어려워진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 문정2동 주민들은 다음 선택의 비용을 협의한다: 통행 복도를 비우고 보관 구획을 정한다.",
-        "connections": "가락본동·가락1동·문정1동·장지동·위례동과 경계를 맞대지만 문정2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "문정2동 주민들은 다음 선택의 비용을 협의한다: 통행 복도를 비우고 보관 구획을 정한다.",
+        "connections": "가락본동·가락1동·문정1동·장지동·위례동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171064200-local-choice",
           "label": "통행 복도를 비우고 보관 구획을 정한다",
@@ -4031,7 +3903,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "문정 선로. 문정2동 통행세 구간. 보유 S15.",
+                "contents": "문정 선로. 문정2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -4070,7 +3942,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "문정2동 주민센터 1층. 문정2동 배급 창구. 보유 S15.",
+                "contents": "문정2동 주민센터 1층. 문정2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -4141,7 +4013,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "송파나눔발전소 1층. 문정2동 잔존 골조. 보유 S15.",
+                "contents": "송파나눔발전소 1층. 문정2동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -4155,13 +4027,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -4178,12 +4045,10 @@
           "osm:node:6094326927"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "장지동 주민 작업반",
           "신규 가구 인계 담당자"
@@ -4204,8 +4069,8 @@
           "kind": "governance",
           "description": "도착 가구의 기록을 미루면 임시 배급에서 빠지는 사람이 생긴다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 장지동 주민들은 다음 선택의 비용을 협의한다: 임시 도착 기록을 먼저 발급한다.",
-        "connections": "거여1동·가락2동·문정1동·문정2동·위례동과 경계를 맞대지만 장지동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "장지동 주민들은 다음 선택의 비용을 협의한다: 임시 도착 기록을 먼저 발급한다.",
+        "connections": "거여1동·가락2동·문정1동·문정2동·위례동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171064600-local-choice",
           "label": "임시 도착 기록을 먼저 발급한다",
@@ -4240,7 +4105,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "장지 선로. 장지동 통행세 구간. 보유 S15.",
+                "contents": "장지 선로. 장지동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -4406,13 +4271,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -4429,12 +4289,10 @@
           "osm:node:5408273777"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "위례동 주민 작업반",
           "경계 물자 인계 담당자"
@@ -4455,8 +4313,8 @@
           "kind": "governance",
           "description": "역 이름만 보고 외부 주문을 내부 배급으로 합치면 책임과 재고가 섞인다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 위례동 주민들은 다음 선택의 비용을 협의한다: 출발지와 수령 지역을 함께 확인한다.",
-        "connections": "거여1동·거여2동·마천1동·문정2동·장지동과 경계를 맞대지만 위례동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "위례동 주민들은 다음 선택의 비용을 협의한다: 출발지와 수령 지역을 함께 확인한다.",
+        "connections": "거여1동·거여2동·마천1동·문정2동·장지동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171064700-local-choice",
           "label": "출발지와 수령 지역을 함께 확인한다",
@@ -4491,7 +4349,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "복정 선로. 위례동 통행세 구간. 보유 S15.",
+                "contents": "복정 선로. 위례동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -4530,7 +4388,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "복정 선로. 위례동 통행세 구간. 보유 S15.",
+                "contents": "복정 선로. 위례동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -4569,7 +4427,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "위례동 주민센터 1층. 위례동 배급 창구. 보유 S15.",
+                "contents": "위례동 주민센터 1층. 위례동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -4610,13 +4468,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -4633,12 +4486,10 @@
           "osm:node:7518281760"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "잠실본동 주민 작업반",
           "시장 장비 대여 담당자"
@@ -4659,8 +4510,8 @@
           "kind": "governance",
           "description": "공용 장비 손상을 기록하지 않으면 다음 상인이 비용을 떠안는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실본동 주민들은 다음 선택의 비용을 협의한다: 사용 전후 상태를 공동 확인한다.",
-        "connections": "삼전동·잠실2동·잠실3동·잠실7동과 경계를 맞대지만 잠실본동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "잠실본동 주민들은 다음 선택의 비용을 협의한다: 사용 전후 상태를 공동 확인한다.",
+        "connections": "삼전동·잠실2동·잠실3동·잠실7동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171065000-local-choice",
           "label": "사용 전후 상태를 공동 확인한다",
@@ -4695,7 +4546,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "잠실새내 선로. 잠실본동 통행세 구간. 보유 S15.",
+                "contents": "잠실새내 선로. 잠실본동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -4734,7 +4585,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "삼전 선로. 잠실본동 통행세 구간. 보유 S15.",
+                "contents": "삼전 선로. 잠실본동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -4805,20 +4656,15 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "새마을시장 1층 허가 장터. 보유 S15.",
+                "contents": "새마을시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -4835,12 +4681,10 @@
           "osm:way:129600528"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "잠실2동 주민 작업반",
           "가구 배급 예약 담당자"
@@ -4861,8 +4705,8 @@
           "kind": "access",
           "description": "모든 가구가 같은 시각에 오면 취약 주민이 뒤로 밀린다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실2동 주민들은 다음 선택의 비용을 협의한다: 인계 시각을 가구별로 나눈다.",
-        "connections": "잠실본동·잠실3동·잠실7동과 경계를 맞대지만 잠실2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "잠실2동 주민들은 다음 선택의 비용을 협의한다: 인계 시각을 가구별로 나눈다.",
+        "connections": "잠실본동·잠실3동·잠실7동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171067000-local-choice",
           "label": "인계 시각을 가구별로 나눈다",
@@ -5070,13 +4914,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -5093,12 +4932,10 @@
           "osm:relation:3769500"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "잠실3동 주민 작업반",
           "비축 물자 관리 담당자"
@@ -5119,8 +4956,8 @@
           "kind": "water",
           "description": "물가의 큰 재고를 방치하면 수위 변화 때 손실을 옮길 시간이 없다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실3동 주민들은 다음 선택의 비용을 협의한다: 필수 물자를 작은 단위로 분산 보관한다.",
-        "connections": "석촌동·삼전동·잠실본동·잠실2동·잠실6동과 경계를 맞대지만 잠실3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "잠실3동 주민들은 다음 선택의 비용을 협의한다: 필수 물자를 작은 단위로 분산 보관한다.",
+        "connections": "석촌동·삼전동·잠실본동·잠실2동·잠실6동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171068000-local-choice",
           "label": "필수 물자를 작은 단위로 분산 보관한다",
@@ -5293,7 +5130,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "잠실3동 주민센터 1층. 잠실3동 배급 창구. 보유 S15.",
+                "contents": "잠실3동 주민센터 1층. 잠실3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -5307,13 +5144,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -5330,12 +5162,10 @@
           "osm:way:222074695"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "잠실4동 주민 작업반",
           "생활 배수 안내 담당자"
@@ -5356,8 +5186,8 @@
           "kind": "water",
           "description": "물길이 보인다는 이유로 통과를 허용하면 막힌 구간에서 주민이 돌아서야 한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실4동 주민들은 다음 선택의 비용을 협의한다: 점검한 배수·보행 정보를 분리 게시한다.",
-        "connections": "풍납2동·방이2동·오륜동·잠실6동과 경계를 맞대지만 잠실4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "잠실4동 주민들은 다음 선택의 비용을 협의한다: 점검한 배수·보행 정보를 분리 게시한다.",
+        "connections": "풍납2동·방이2동·오륜동·잠실6동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171069000-local-choice",
           "label": "점검한 배수·보행 정보를 분리 게시한다",
@@ -5392,7 +5222,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "잠실나루 선로. 잠실4동 통행세 구간. 보유 S15.",
+                "contents": "잠실나루 선로. 잠실4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -5523,7 +5353,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "잠실4동 주민센터 1층. 잠실4동 배급 창구. 보유 S15.",
+                "contents": "잠실4동 주민센터 1층. 잠실4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -5537,13 +5367,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -5560,12 +5385,10 @@
           "osm:relation:11845098"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "잠실6동 주민 작업반",
           "생활 물 배정 담당자"
@@ -5586,8 +5409,8 @@
           "kind": "supply",
           "description": "지원 물량을 기록하지 않으면 단지 가구의 당일 소비가 부족해진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실6동 주민들은 다음 선택의 비용을 협의한다: 가구 소비와 지원 물량을 따로 예약한다.",
-        "connections": "방이2동·송파1동·잠실3동·잠실4동과 경계를 맞대지만 잠실6동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "잠실6동 주민들은 다음 선택의 비용을 협의한다: 가구 소비와 지원 물량을 따로 예약한다.",
+        "connections": "방이2동·송파1동·잠실3동·잠실4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171071000-local-choice",
           "label": "가구 소비와 지원 물량을 따로 예약한다",
@@ -5622,7 +5445,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "잠실 선로. 잠실6동 통행세 구간. 보유 S15.",
+                "contents": "잠실 선로. 잠실6동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -5661,7 +5484,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "잠실6동 주민센터 1층. 잠실6동 배급 창구. 보유 S15.",
+                "contents": "잠실6동 주민센터 1층. 잠실6동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -5767,13 +5590,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -5790,12 +5608,10 @@
           "osm:node:13051385207"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S15"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "잠실7동 주민 작업반",
           "대규모 집결 인계 담당자"
@@ -5816,8 +5632,8 @@
           "kind": "access",
           "description": "넓은 구획에 책임자가 없으면 가족 인계와 물자 반환을 확인하기 어렵다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실7동 주민들은 다음 선택의 비용을 협의한다: 구획별 인계 책임자를 정한다.",
-        "connections": "잠실본동·잠실2동과 경계를 맞대지만 잠실7동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "잠실7동 주민들은 다음 선택의 비용을 협의한다: 구획별 인계 책임자를 정한다.",
+        "connections": "잠실본동·잠실2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1171072000-local-choice",
           "label": "구획별 인계 책임자를 정한다",
@@ -5852,7 +5668,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "종합운동장 선로. 잠실7동 통행세 구간. 보유 S15.",
+                "contents": "종합운동장 선로. 잠실7동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -5891,7 +5707,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "종합운동장 선로. 잠실7동 통행세 구간. 보유 S15.",
+                "contents": "종합운동장 선로. 잠실7동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -5930,7 +5746,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "잠실7동 주민센터 1층. 잠실7동 배급 창구. 보유 S15.",
+                "contents": "잠실7동 주민센터 1층. 잠실7동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -5990,13 +5806,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S15",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }

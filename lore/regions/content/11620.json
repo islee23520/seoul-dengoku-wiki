@@ -16,12 +16,10 @@
           "osm:node:8401534571"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "보라매동 주민 작업반",
           "돌봄 이동 지원 담당자"
@@ -42,8 +40,8 @@
           "kind": "access",
           "description": "화물을 통로에 세워 두면 이동이 느린 주민이 출입구에 갇힌다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 보라매동 주민들은 다음 선택의 비용을 협의한다: 돌봄 인계 시간대를 분리한다.",
-        "connections": "은천동·신림동과 경계를 맞대지만 보라매동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "보라매동 주민들은 다음 선택의 비용을 협의한다: 돌봄 인계 시간대를 분리한다.",
+        "connections": "은천동·신림동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162052500-local-choice",
           "label": "돌봄 인계 시간대를 분리한다",
@@ -78,7 +76,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "당곡 선로. 보라매동 통행세 구간. 보유 S08.",
+                "contents": "당곡 선로. 보라매동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -117,7 +115,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "보라매동주민센터 1층. 보라매동 배급 창구. 보유 S08.",
+                "contents": "보라매동주민센터 1층. 보라매동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -223,13 +221,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -246,12 +239,10 @@
           "osm:node:8305516084"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "청림동 주민 작업반",
           "고개 운반 담당자"
@@ -272,8 +263,8 @@
           "kind": "slope",
           "description": "무거운 짐을 무리하게 옮기면 넘어지는 사람과 뒤의 보행이 함께 멈춘다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 청림동 주민들은 다음 선택의 비용을 협의한다: 고개 통과 전에 짐을 분산한다.",
-        "connections": "성현동·행운동과 경계를 맞대지만 청림동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "청림동 주민들은 다음 선택의 비용을 협의한다: 고개 통과 전에 짐을 분산한다.",
+        "connections": "성현동·행운동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162054500-local-choice",
           "label": "고개 통과 전에 짐을 분산한다",
@@ -308,7 +299,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "청림동주민센터 1층. 청림동 배급 창구. 보유 S08.",
+                "contents": "청림동주민센터 1층. 청림동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -457,13 +448,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -480,12 +466,10 @@
           "osm:way:239952169"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "성현동 주민 작업반",
           "부품 교환 담당자"
@@ -506,8 +490,8 @@
           "kind": "governance",
           "description": "공용 부품을 개인 주문에 쓰면 긴급 생활 수리에 남는 재고가 없다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 성현동 주민들은 다음 선택의 비용을 협의한다: 공용 재고와 개인 주문을 분리한다.",
-        "connections": "청림동·행운동·은천동·중앙동과 경계를 맞대지만 성현동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "성현동 주민들은 다음 선택의 비용을 협의한다: 공용 재고와 개인 주문을 분리한다.",
+        "connections": "청림동·행운동·은천동·중앙동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162056500-local-choice",
           "label": "공용 재고와 개인 주문을 분리한다",
@@ -542,7 +526,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "성현동 주민센터 1층. 성현동 배급 창구. 보유 S08.",
+                "contents": "성현동 주민센터 1층. 성현동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -574,7 +558,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "동아아파트상가 1층 허가 장터. 보유 S08.",
+                "contents": "동아아파트상가 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -599,7 +583,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "상가 1층 허가 장터. 보유 S08.",
+                "contents": "상가 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -652,13 +636,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -675,12 +654,10 @@
           "osm:node:5133017723"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "행운동 주민 작업반",
           "생활 안내 표지 담당자"
@@ -701,8 +678,8 @@
           "kind": "access",
           "description": "낯선 약어만 적힌 표지는 주민을 잘못된 집결지로 보낸다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 행운동 주민들은 다음 선택의 비용을 협의한다: 주민이 이해하는 표지를 현장에서 시험한다.",
-        "connections": "청림동·성현동·낙성대동·중앙동·인헌동과 경계를 맞대지만 행운동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "행운동 주민들은 다음 선택의 비용을 협의한다: 주민이 이해하는 표지를 현장에서 시험한다.",
+        "connections": "청림동·성현동·낙성대동·중앙동·인헌동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162057500-local-choice",
           "label": "주민이 이해하는 표지를 현장에서 시험한다",
@@ -737,7 +714,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "낙성대 선로. 행운동 통행세 구간. 보유 S08.",
+                "contents": "낙성대 선로. 행운동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -776,7 +753,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "행운동주민센터 1층. 행운동 배급 창구. 보유 S08.",
+                "contents": "행운동주민센터 1층. 행운동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -882,13 +859,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -905,12 +877,10 @@
           "osm:relation:11917142"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "낙성대동 주민 작업반",
           "생활 장비 수리 담당자"
@@ -931,8 +901,8 @@
           "kind": "power",
           "description": "한 작업이 전원을 독점하면 다른 설비가 예고 없이 멈춘다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 낙성대동 주민들은 다음 선택의 비용을 협의한다: 필수 장비 수리 시간을 먼저 예약한다.",
-        "connections": "행운동·청룡동·중앙동·인헌동·남현동·대학동과 경계를 맞대지만 낙성대동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "낙성대동 주민들은 다음 선택의 비용을 협의한다: 필수 장비 수리 시간을 먼저 예약한다.",
+        "connections": "행운동·청룡동·중앙동·인헌동·남현동·대학동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162058500-local-choice",
           "label": "필수 장비 수리 시간을 먼저 예약한다",
@@ -967,7 +937,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "서울대입구 선로. 낙성대동 통행세 구간. 보유 S08.",
+                "contents": "서울대입구 선로. 낙성대동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1070,13 +1040,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1093,12 +1058,10 @@
           "osm:node:5752867000"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "청룡동 주민 작업반",
           "의무 보조 교육 담당자"
@@ -1119,8 +1082,8 @@
           "kind": "supply",
           "description": "교육을 계속 미루면 소수 보조 인력이 모든 처치 준비를 맡는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 청룡동 주민들은 다음 선택의 비용을 협의한다: 실습용 교대와 물자를 예약한다.",
-        "connections": "낙성대동·은천동·중앙동·서원동·서림동·대학동과 경계를 맞대지만 청룡동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "청룡동 주민들은 다음 선택의 비용을 협의한다: 실습용 교대와 물자를 예약한다.",
+        "connections": "낙성대동·은천동·중앙동·서원동·서림동·대학동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162059500-local-choice",
           "label": "실습용 교대와 물자를 예약한다",
@@ -1155,7 +1118,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "봉천 선로. 청룡동 통행세 구간. 보유 S08.",
+                "contents": "봉천 선로. 청룡동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1321,13 +1284,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1344,12 +1302,10 @@
           "osm:relation:11520864"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "은천동 주민 작업반",
           "공동 침구 관리 담당자"
@@ -1370,8 +1326,8 @@
           "kind": "water",
           "description": "젖은 침구를 그대로 보관하면 다음 숙영 교대에 사용할 수 없다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 은천동 주민들은 다음 선택의 비용을 협의한다: 반환 전에 건조와 상태 검사를 한다.",
-        "connections": "보라매동·성현동·청룡동·중앙동·서원동·신림동과 경계를 맞대지만 은천동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "은천동 주민들은 다음 선택의 비용을 협의한다: 반환 전에 건조와 상태 검사를 한다.",
+        "connections": "보라매동·성현동·청룡동·중앙동·서원동·신림동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162060500-local-choice",
           "label": "반환 전에 건조와 상태 검사를 한다",
@@ -1498,7 +1454,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "occupied",
-                "contents": "구립선봉어린이집 1층. 은천동 잔존 골조. 보유 S08.",
+                "contents": "구립선봉어린이집 1층. 은천동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -1530,13 +1486,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1553,12 +1504,10 @@
           "osm:node:5752905460"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "중앙동 주민 작업반",
           "식량 계량 담당자"
@@ -1579,8 +1528,8 @@
           "kind": "governance",
           "description": "상인별로 다른 단위를 쓰면 같은 물건의 양을 두고 분쟁이 생긴다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 중앙동 주민들은 다음 선택의 비용을 협의한다: 공동 단위표와 저울 당번을 둔다.",
-        "connections": "성현동·행운동·낙성대동·청룡동·은천동과 경계를 맞대지만 중앙동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "중앙동 주민들은 다음 선택의 비용을 협의한다: 공동 단위표와 저울 당번을 둔다.",
+        "connections": "성현동·행운동·낙성대동·청룡동·은천동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162061500-local-choice",
           "label": "공동 단위표와 저울 당번을 둔다",
@@ -1622,7 +1571,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "중앙시장 1층 허가 장터. 보유 S08.",
+                "contents": "중앙시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -1686,7 +1635,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중앙동주민센터 1층. 중앙동 배급 창구. 보유 S08.",
+                "contents": "중앙동주민센터 1층. 중앙동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1711,7 +1660,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "occupied",
-                "contents": "봉천변전소 1층. 중앙동 잔존 골조. 보유 S08.",
+                "contents": "봉천변전소 1층. 중앙동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -1725,13 +1674,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1748,12 +1692,10 @@
           "osm:node:4660093740"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "인헌동 주민 작업반",
           "포장재 재사용 담당자"
@@ -1774,8 +1716,8 @@
           "kind": "supply",
           "description": "회수되지 않은 상자가 늘면 물건이 있어도 운반할 수 없다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 인헌동 주민들은 다음 선택의 비용을 협의한다: 빈 상자 반환 구획을 마련한다.",
-        "connections": "행운동·낙성대동·남현동과 경계를 맞대지만 인헌동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "인헌동 주민들은 다음 선택의 비용을 협의한다: 빈 상자 반환 구획을 마련한다.",
+        "connections": "행운동·낙성대동·남현동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162062500-local-choice",
           "label": "빈 상자 반환 구획을 마련한다",
@@ -1817,7 +1759,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "인헌시장 1층 허가 장터. 보유 S08.",
+                "contents": "인헌시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -1934,20 +1876,15 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "인헌시장 1층 허가 장터. 보유 S08.",
+                "contents": "인헌시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1964,12 +1901,10 @@
           "osm:node:13778314138"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "남현동 주민 작업반",
           "산지 보행 안내 담당자"
@@ -1990,8 +1925,8 @@
           "kind": "slope",
           "description": "기복만 보고 이동 시간을 짧게 잡으면 조명이 떨어진 뒤 사면에 남는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 남현동 주민들은 다음 선택의 비용을 협의한다: 현장 확인이 끝난 구간만 출발 안내에 넣는다.",
-        "connections": "낙성대동·인헌동·대학동과 경계를 맞대지만 남현동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "남현동 주민들은 다음 선택의 비용을 협의한다: 현장 확인이 끝난 구간만 출발 안내에 넣는다.",
+        "connections": "낙성대동·인헌동·대학동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162063000-local-choice",
           "label": "현장 확인이 끝난 구간만 출발 안내에 넣는다",
@@ -2026,7 +1961,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "남현동 행정복지센터 1층. 남현동 배급 창구. 보유 S08.",
+                "contents": "남현동 행정복지센터 1층. 남현동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2143,13 +2078,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2166,12 +2096,10 @@
           "osm:relation:18787392"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "서원동 주민 작업반",
           "의무 대기 지원 담당자"
@@ -2192,8 +2120,8 @@
           "kind": "access",
           "description": "대기열이 길어지면 처치가 급한 주민의 접근도 막힌다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 서원동 주민들은 다음 선택의 비용을 협의한다: 응급 인계 구획을 비운다.",
-        "connections": "청룡동·은천동·신원동·서림동·신림동과 경계를 맞대지만 서원동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "서원동 주민들은 다음 선택의 비용을 협의한다: 응급 인계 구획을 비운다.",
+        "connections": "청룡동·은천동·신원동·서림동·신림동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162064500-local-choice",
           "label": "응급 인계 구획을 비운다",
@@ -2228,7 +2156,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신림 선로. 서원동 통행세 구간. 보유 S08.",
+                "contents": "신림 선로. 서원동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2267,7 +2195,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "서원 선로. 서원동 통행세 구간. 보유 S08.",
+                "contents": "서원 선로. 서원동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2306,7 +2234,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "서원동주민센터 1층. 서원동 배급 창구. 보유 S08.",
+                "contents": "서원동주민센터 1층. 서원동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2345,13 +2273,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2368,12 +2291,10 @@
           "osm:way:1043703849"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신원동 주민 작업반",
           "공동 취사 담당자"
@@ -2394,8 +2315,8 @@
           "kind": "supply",
           "description": "예약 없이 식사를 여러 번 만들면 늦게 온 작업자 몫이 부족하다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신원동 주민들은 다음 선택의 비용을 협의한다: 교대별 식사를 미리 예약한다.",
-        "connections": "서원동·서림동·신사동·신림동·삼성동·미성동·난곡동과 경계를 맞대지만 신원동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신원동 주민들은 다음 선택의 비용을 협의한다: 교대별 식사를 미리 예약한다.",
+        "connections": "서원동·서림동·신사동·신림동·삼성동·미성동·난곡동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162065500-local-choice",
           "label": "교대별 식사를 미리 예약한다",
@@ -2430,7 +2351,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신원동주민센터 1층. 신원동 배급 창구. 보유 S08.",
+                "contents": "신원동주민센터 1층. 신원동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2489,7 +2410,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "신원시장 1층 허가 장터. 보유 S08.",
+                "contents": "신원시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2542,13 +2463,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2565,12 +2481,10 @@
           "osm:node:5634783065"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "서림동 주민 작업반",
           "보행로 점검 담당자"
@@ -2591,8 +2505,8 @@
           "kind": "slope",
           "description": "미확인 사면으로 짐을 옮기면 구조 인력이 생활 운반에서 빠진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 서림동 주민들은 다음 선택의 비용을 협의한다: 주민이 쓰는 보행 구간을 우선 점검한다.",
-        "connections": "청룡동·서원동·신원동·대학동·삼성동과 경계를 맞대지만 서림동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "서림동 주민들은 다음 선택의 비용을 협의한다: 주민이 쓰는 보행 구간을 우선 점검한다.",
+        "connections": "청룡동·서원동·신원동·대학동·삼성동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162066500-local-choice",
           "label": "주민이 쓰는 보행 구간을 우선 점검한다",
@@ -2765,7 +2679,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "서림동 주민센터 1층. 서림동 배급 창구. 보유 S08.",
+                "contents": "서림동 주민센터 1층. 서림동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2779,13 +2693,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2802,12 +2711,10 @@
           "osm:way:468609671"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신사동 주민 작업반",
           "생활품 교환 조정 담당자"
@@ -2828,8 +2735,8 @@
           "kind": "governance",
           "description": "급한 출하를 이유로 기록을 생략하면 분실 비용이 다른 주민에게 전가된다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신사동 주민들은 다음 선택의 비용을 협의한다: 인계 당사자 확인을 먼저 받는다.",
-        "connections": "신원동·신림동·조원동·미성동과 경계를 맞대지만 신사동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신사동 주민들은 다음 선택의 비용을 협의한다: 인계 당사자 확인을 먼저 받는다.",
+        "connections": "신원동·신림동·조원동·미성동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162068500-local-choice",
           "label": "인계 당사자 확인을 먼저 받는다",
@@ -2864,7 +2771,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신사동 주민센터 1층. 신사동 배급 창구. 보유 S08.",
+                "contents": "신사동 주민센터 1층. 신사동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2942,7 +2849,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "신사시장 1층 허가 장터. 보유 S08.",
+                "contents": "신사시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2967,13 +2874,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2990,12 +2892,10 @@
           "osm:node:8401534570"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신림동 주민 작업반",
           "통행 정보 중계 담당자"
@@ -3016,8 +2916,8 @@
           "kind": "access",
           "description": "오래된 시간표가 남아 있으면 귀환자가 닫힌 인계처로 향한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신림동 주민들은 다음 선택의 비용을 협의한다: 교대마다 안내를 함께 갱신한다.",
-        "connections": "보라매동·은천동·서원동·신원동·신사동과 경계를 맞대지만 신림동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신림동 주민들은 다음 선택의 비용을 협의한다: 교대마다 안내를 함께 갱신한다.",
+        "connections": "보라매동·은천동·서원동·신원동·신사동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162069500-local-choice",
           "label": "교대마다 안내를 함께 갱신한다",
@@ -3052,7 +2952,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신림 선로. 신림동 통행세 구간. 보유 S08.",
+                "contents": "신림 선로. 신림동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3091,7 +2991,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신림동 주민센터 1층. 신림동 배급 창구. 보유 S08.",
+                "contents": "신림동 주민센터 1층. 신림동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3118,7 +3018,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "occupied",
-                "contents": "신림성모성당 1층. 신림동 잔존 골조. 보유 S08.",
+                "contents": "신림성모성당 1층. 신림동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -3152,13 +3052,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3175,12 +3070,10 @@
           "osm:node:10252984956"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "난향동 주민 작업반",
           "가구 대피 지원 담당자"
@@ -3201,8 +3094,8 @@
           "kind": "slope",
           "description": "가구별 이동 능력을 모르면 급한 대피 때 안내가 늦어진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 난향동 주민들은 다음 선택의 비용을 협의한다: 거동이 어려운 가구를 사전 방문한다.",
-        "connections": "삼성동·미성동·난곡동과 경계를 맞대지만 난향동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "난향동 주민들은 다음 선택의 비용을 협의한다: 거동이 어려운 가구를 사전 방문한다.",
+        "connections": "삼성동·미성동·난곡동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162071500-local-choice",
           "label": "거동이 어려운 가구를 사전 방문한다",
@@ -3237,7 +3130,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "난향동주민센터 1층. 난향동 배급 창구. 보유 S08.",
+                "contents": "난향동주민센터 1층. 난향동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3382,13 +3275,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3405,12 +3293,10 @@
           "osm:way:1111667882"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "조원동 주민 작업반",
           "연락 장비 수리 담당자"
@@ -3431,8 +3317,8 @@
           "kind": "supply",
           "description": "기능을 확인하지 않은 부품을 출고하면 받은 지역도 수리를 끝내지 못한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 조원동 주민들은 다음 선택의 비용을 협의한다: 연락 장비용 부품을 먼저 검사한다.",
-        "connections": "신사동·미성동과 경계를 맞대지만 조원동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "조원동 주민들은 다음 선택의 비용을 협의한다: 연락 장비용 부품을 먼저 검사한다.",
+        "connections": "신사동·미성동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162072500-local-choice",
           "label": "연락 장비용 부품을 먼저 검사한다",
@@ -3467,7 +3353,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "조원동주민센터 1층. 조원동 배급 창구. 보유 S08.",
+                "contents": "조원동주민센터 1층. 조원동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3570,13 +3456,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3593,12 +3474,10 @@
           "osm:way:167663455"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "대학동 주민 작업반",
           "기술 문서 복제 담당자"
@@ -3619,8 +3498,8 @@
           "kind": "governance",
           "description": "원본을 무제한 반출하면 다음 작업자가 참고할 자료가 사라진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 대학동 주민들은 다음 선택의 비용을 협의한다: 현장용 사본과 원본 보관을 분리한다.",
-        "connections": "낙성대동·청룡동·남현동·서림동·삼성동과 경계를 맞대지만 대학동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "대학동 주민들은 다음 선택의 비용을 협의한다: 현장용 사본과 원본 보관을 분리한다.",
+        "connections": "낙성대동·청룡동·남현동·서림동·삼성동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162073500-local-choice",
           "label": "현장용 사본과 원본 보관을 분리한다",
@@ -3655,7 +3534,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "관악산 선로. 대학동 통행세 구간. 보유 S08.",
+                "contents": "관악산 선로. 대학동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3694,7 +3573,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "대학동주민센터 1층. 대학동 배급 창구. 보유 S08.",
+                "contents": "대학동주민센터 1층. 대학동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3758,13 +3637,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3781,12 +3655,10 @@
           "osm:node:8401534568"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "삼성동 주민 작업반",
           "전기 도구 수리 담당자"
@@ -3807,8 +3679,8 @@
           "kind": "power",
           "description": "절연 상태가 나쁜 도구를 돌려 쓰면 충전 공간의 안전까지 나빠진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 삼성동 주민들은 다음 선택의 비용을 협의한다: 대여 전에 절연 점검을 한다.",
-        "connections": "신원동·서림동·난향동·대학동·난곡동과 경계를 맞대지만 삼성동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "삼성동 주민들은 다음 선택의 비용을 협의한다: 대여 전에 절연 점검을 한다.",
+        "connections": "신원동·서림동·난향동·대학동·난곡동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162074500-local-choice",
           "label": "대여 전에 절연 점검을 한다",
@@ -3843,7 +3715,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "서울대벤처타운 선로. 삼성동 통행세 구간. 보유 S08.",
+                "contents": "서울대벤처타운 선로. 삼성동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3882,7 +3754,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "삼성동주민센터 1층. 삼성동 배급 창구. 보유 S08.",
+                "contents": "삼성동주민센터 1층. 삼성동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3988,13 +3860,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -4011,12 +3878,10 @@
           "osm:relation:6909705"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "미성동 주민 작업반",
           "생활 물품 수선 담당자"
@@ -4037,8 +3902,8 @@
           "kind": "supply",
           "description": "개인 주문만 우선하면 공동 숙영 물품이 고장 난 채 남는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 미성동 주민들은 다음 선택의 비용을 협의한다: 공동 숙영 물품 수리를 예약한다.",
-        "connections": "신원동·신사동·난향동·조원동·난곡동과 경계를 맞대지만 미성동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "미성동 주민들은 다음 선택의 비용을 협의한다: 공동 숙영 물품 수리를 예약한다.",
+        "connections": "신원동·신사동·난향동·조원동·난곡동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162076500-local-choice",
           "label": "공동 숙영 물품 수리를 예약한다",
@@ -4073,7 +3938,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "미성동 자치회관 1층. 미성동 배급 창구. 보유 S08.",
+                "contents": "미성동 자치회관 1층. 미성동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -4098,7 +3963,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "미성동주민센터 1층. 미성동 배급 창구. 보유 S08.",
+                "contents": "미성동주민센터 1층. 미성동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -4204,13 +4069,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -4227,12 +4087,10 @@
           "osm:way:410556000"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S08"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "난곡동 주민 작업반",
           "공용 장비 대여 담당자"
@@ -4253,8 +4111,8 @@
           "kind": "governance",
           "description": "큰 주문이 장비를 오래 점유하면 다른 가구의 긴급 수리가 멈춘다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 난곡동 주민들은 다음 선택의 비용을 협의한다: 긴급 작업용 대여 시간을 확보한다.",
-        "connections": "신원동·난향동·삼성동·미성동과 경계를 맞대지만 난곡동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "난곡동 주민들은 다음 선택의 비용을 협의한다: 긴급 작업용 대여 시간을 확보한다.",
+        "connections": "신원동·난향동·삼성동·미성동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1162077500-local-choice",
           "label": "긴급 작업용 대여 시간을 확보한다",
@@ -4289,7 +4147,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "난곡동주민센터 1층. 난곡동 배급 창구. 보유 S08.",
+                "contents": "난곡동주민센터 1층. 난곡동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -4441,13 +4299,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S08",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }

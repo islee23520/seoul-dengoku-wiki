@@ -345,11 +345,12 @@ for (const edge of seoulGraph.edges) {
   stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
   stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
 }
-const capitalStationIds = new Set([...capitalNameByState.entries()].map(([stateId, name]) => {
+const capitalStateByStationId = new Map([...capitalNameByState.entries()].map(([stateId, name]) => {
   const stationId = stationIdByName.get(name)
   if (!stationId) throw new Error(`E_CAPITAL_STATION_NOT_FOUND:${stateId}:${name}`)
-  return stationId
+  return [stationId, stateId]
 }))
+const capitalStationIds = new Set(capitalStateByStationId.keys())
 const mapStations = seoulGraph.stations.map((station) => {
   const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [station.lon, station.lat])
   const [x, y] = mapPoint([east, north])
@@ -359,7 +360,8 @@ const mapStations = seoulGraph.stations.map((station) => {
   const content = region ? regionContentById.get(region.id) : null
   const baselinePolityIds = content?.polity_contexts ?? []
   const delta = stationControlOverrides.get(station.id) ?? null
-  const polityIds = delta?.polityIds ?? baselinePolityIds
+  const capitalStateId = capitalStateByStationId.get(station.id)
+  const polityIds = delta?.polityIds ?? (capitalStateId ? [capitalStateId] : baselinePolityIds)
   return {
     id: station.id,
     name: station.nameKo,
@@ -371,13 +373,13 @@ const mapStations = seoulGraph.stations.map((station) => {
     control: {
       source: delta ? 'control-delta' : region ? 'derived-from-surface' : 'outside-surface-atlas',
       deltaId: delta?.id ?? null,
-      status: delta?.status ?? (!region ? 'unknown' : polityIds.length === 1 ? 'held' : 'contested'),
+      status: delta?.status ?? (!region ? 'unknown' : polityIds.length === 0 ? 'vacant' : polityIds.length === 1 ? 'held' : 'contested'),
       polityIds,
       polityNames: polityIds.map((id) => stateNameById.get(id) ?? id),
       surfaceRegionId: region?.id ?? null,
       surfaceRegionName: region?.name ?? null,
       hierarchy: {
-        state: polityIds.map((id) => stateNameById.get(id) ?? id).join(' · ') || '미확인',
+        state: polityIds.map((id) => stateNameById.get(id) ?? id).join(' · ') || (region ? '무주지' : '미확인'),
         regionalAuthority: delta?.regionalAuthority ?? (region ? `${region.district_name} 권역 책임자` : '서울 영토 원장 밖 · 미확인'),
         stationManager: delta?.stationManager ?? `${station.nameKo.replace(/역$/u, '')}역장`,
       },
@@ -521,7 +523,7 @@ const openingTerritories = {
       district: region.district_name,
       path: geometryPath(region.map_geometry),
       polities,
-      status: polities.length === 1 ? 'held' : 'contested',
+      status: content.territory?.status ?? (polities.length === 0 ? 'vacant' : polities.length === 1 ? 'held' : 'contested'),
       openingState: normalizePublicNames(content.opening_state),
       summary: normalizePublicNames(content.summary),
       stationCount: region.station_ids.length,

@@ -16,8 +16,9 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.equal(new Set(data.regions.map((region) => region.id)).size, 427)
   assert.ok(data.regions.every((region) => region.path.length > 0))
   assert.ok(data.regions.every((region) => region.openingState.length > 0))
-  assert.ok(data.regions.every((region) => region.polities.length >= 1))
-  assert.ok(data.regions.some((region) => region.status === 'contested'))
+  assert.ok(data.regions.every((region) => region.polities.length >= 1 || region.status === 'vacant'))
+  assert.ok(data.regions.some((region) => region.status === 'vacant'))
+  assert.ok(data.regions.every((region) => ['held', 'contested', 'vacant'].includes(region.status)))
   assert.ok(data.regions.some((region) => region.status === 'held'))
   assert.ok(data.states.every((state) => Number.isFinite(state.labelX) && Number.isFinite(state.labelY)))
   assert.equal(new Set(data.states.map((state) => `${state.labelX}:${state.labelY}`)).size, 16)
@@ -55,7 +56,10 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
     const regions = data.regions.filter((region) => pointInPolygon([capital.x, capital.y], polygonPoints(region.path)))
     assert.equal(regions.length, 1, `${state.id}:${capital.name}:region`)
     assert.equal(regions[0].status, 'held', `${state.id}:${capital.name}:status`)
-    assert.deepEqual(regions[0].polities, [state.id], `${state.id}:${capital.name}:owner`)
+    if (regions[0].polities[0] === 'S06') assert.ok(regions[0].polities.includes(state.id), `${state.id}:${capital.name}:context`)
+    else assert.deepEqual(regions[0].polities, [state.id], `${state.id}:${capital.name}:owner`)
+    assert.deepEqual(capital.control.polityIds, [state.id], `${state.id}:${capital.name}:station`)
+    assert.equal(capital.control.status, 'held', `${state.id}:${capital.name}:station-status`)
   }
 })
 
