@@ -1,0 +1,300 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "서울:전국 — 한 전략 턴의 흐름 (TW 턴 + CK3 시간)",
+    "quality_profile": "standard"
+  },
+  "lanes": [
+    {
+      "id": "ck3",
+      "label": "CK3 인물·왕조"
+    },
+    {
+      "id": "time",
+      "label": "세계 시간"
+    },
+    {
+      "id": "plan",
+      "label": "TW 계획·해결"
+    },
+    {
+      "id": "battle",
+      "label": "TW 전투"
+    },
+    {
+      "id": "settle",
+      "label": "정산"
+    },
+    {
+      "id": "ending",
+      "label": "원정 결말"
+    }
+  ],
+  "phases": [
+    {
+      "id": "p-plan",
+      "label": "계획",
+      "fromCol": 0,
+      "toCol": 0
+    },
+    {
+      "id": "p-resolve",
+      "label": "일괄 해결",
+      "fromCol": 1,
+      "toCol": 2
+    },
+    {
+      "id": "p-battle",
+      "label": "교전",
+      "fromCol": 3,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "p-settle",
+      "label": "정산",
+      "fromCol": 4,
+      "toCol": 4
+    },
+    {
+      "id": "p-next",
+      "label": "다음 턴",
+      "fromCol": 5,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "mainPath": [
+    "plan",
+    "resolve",
+    "encounter",
+    "battle",
+    "settle",
+    "next"
+  ],
+  "nodes": [
+    {
+      "id": "agents",
+      "lane": "ck3",
+      "col": 0,
+      "type": "messagebus",
+      "label": "음모·요원",
+      "sublabel": "외교·암살·방해·정보",
+      "width": 128
+    },
+    {
+      "id": "crisis",
+      "lane": "ck3",
+      "col": 2,
+      "type": "security",
+      "label": "주간 위기",
+      "sublabel": "긴장·음모·계승 임계",
+      "width": 128
+    },
+    {
+      "id": "fate",
+      "lane": "ck3",
+      "col": 4,
+      "type": "frontend",
+      "label": "인물 운명",
+      "sublabel": "생사·부상·구금",
+      "width": 128
+    },
+    {
+      "id": "successor",
+      "lane": "ck3",
+      "col": 5,
+      "type": "security",
+      "label": "후계가 본체",
+      "sublabel": "지정 후계 → 계승 순서",
+      "width": 128
+    },
+    {
+      "id": "clock",
+      "lane": "time",
+      "col": 1,
+      "type": "database",
+      "label": "세계 시간 한 칸",
+      "sublabel": "턴 해결이 시간을 민다",
+      "width": 128
+    },
+    {
+      "id": "plan",
+      "lane": "plan",
+      "col": 0,
+      "type": "frontend",
+      "label": "명령 계획",
+      "sublabel": "최대 10인 · 미응답은 AI 대행",
+      "width": 128
+    },
+    {
+      "id": "resolve",
+      "lane": "plan",
+      "col": 1,
+      "type": "backend",
+      "label": "일괄 해결",
+      "sublabel": "이동력·태세·통제권",
+      "width": 128
+    },
+    {
+      "id": "encounter",
+      "lane": "plan",
+      "col": 2,
+      "type": "messagebus",
+      "label": "조우",
+      "sublabel": "대화·회피·전투",
+      "width": 128
+    },
+    {
+      "id": "next",
+      "lane": "plan",
+      "col": 5,
+      "type": "frontend",
+      "label": "원정 계속",
+      "sublabel": "다음 계획 단계",
+      "width": 128
+    },
+    {
+      "id": "battle",
+      "lane": "battle",
+      "col": 3,
+      "type": "backend",
+      "label": "닫힌 전투",
+      "sublabel": "부대 지휘 · 따로 진행",
+      "width": 128
+    },
+    {
+      "id": "settle",
+      "lane": "settle",
+      "col": 4,
+      "type": "database",
+      "label": "한 번 정산",
+      "sublabel": "ResultId 1회",
+      "width": 128
+    },
+    {
+      "id": "ending",
+      "lane": "ending",
+      "col": 5,
+      "type": "external",
+      "label": "다섯 결말",
+      "sublabel": "귀환·정착·정복·방랑·교역",
+      "width": 128
+    }
+  ],
+  "edges": [
+    {
+      "from": "plan",
+      "to": "resolve",
+      "label": "모든 명령 확정",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "from": "agents",
+      "to": "resolve",
+      "label": "요원 명령",
+      "role": "branch"
+    },
+    {
+      "from": "resolve",
+      "to": "clock",
+      "label": "한 칸 진행",
+      "role": "branch"
+    },
+    {
+      "from": "clock",
+      "to": "crisis",
+      "label": "주간 판정",
+      "role": "branch"
+    },
+    {
+      "from": "resolve",
+      "to": "encounter",
+      "label": "통제권 진입",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "from": "encounter",
+      "to": "battle",
+      "label": "개전",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "from": "encounter",
+      "to": "settle",
+      "label": "비전투 결과",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "from": "battle",
+      "to": "settle",
+      "label": "ResultId",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "from": "settle",
+      "to": "fate",
+      "label": "운명 반영",
+      "role": "branch"
+    },
+    {
+      "from": "fate",
+      "to": "successor",
+      "label": "사망·영구 구금",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "from": "settle",
+      "to": "next",
+      "label": "원정 계속",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "from": "settle",
+      "to": "ending",
+      "label": "결말 선택",
+      "role": "branch"
+    },
+    {
+      "from": "next",
+      "to": "plan",
+      "label": "다음 턴",
+      "variant": "dashed",
+      "role": "return"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "한 턴",
+      "items": [
+        "모두 계획을 확정하면 일괄 해결한다. 제출 순서는 우선권이 아니다",
+        "해결마다 세계 시간이 한 칸 가고 주간 위기·음모·계승 임계를 판정한다"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "소유자 결정 2026-09-24",
+      "items": [
+        "본체가 죽거나 영구 구금되면 지정 후계, 없으면 계승 순서의 인물이 본체가 된다",
+        "열린 전투는 다음 턴과 따로 진행되고, 결과는 ResultId로 한 번만 정산된다"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "결말",
+      "items": [
+        "정산은 귀환 명령이 아니다. 원정을 계속하거나 다섯 결말 가운데 하나를 고른다",
+        "설계 도식이며 구현 완료가 아니다. 수치는 정하지 않는다"
+      ]
+    }
+  ]
+}

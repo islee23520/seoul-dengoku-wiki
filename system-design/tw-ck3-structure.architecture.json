@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "서울:전국 — TW 전략·전투와 CK3 인물 정치의 결합 구조",
+    "quality_profile": "standard",
+    "viewBox": [
+      1440,
+      1010
+    ]
+  },
+  "components": [
+    {
+      "id": "succession",
+      "type": "security",
+      "label": "계승",
+      "sublabel": "지정 후계 → 계승 순서",
+      "pos": [
+        40,
+        90
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "person",
+      "type": "frontend",
+      "label": "본체 인물",
+      "sublabel": "플레이어 시점·권한",
+      "pos": [
+        400,
+        90
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "house",
+      "type": "backend",
+      "label": "가문·세력",
+      "sublabel": "S01–S16 · 봉신 계약",
+      "pos": [
+        760,
+        90
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "plot",
+      "type": "messagebus",
+      "label": "음모·명분",
+      "sublabel": "plot 미시 기록",
+      "pos": [
+        1120,
+        90
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "squad",
+      "type": "backend",
+      "label": "원정 분대",
+      "sublabel": "영웅 지휘관 + 병졸 ≤20",
+      "pos": [
+        400,
+        250
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "agent",
+      "type": "backend",
+      "label": "독립 요원",
+      "sublabel": "외교·암살·방해·정보",
+      "pos": [
+        1120,
+        250
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "turn",
+      "type": "messagebus",
+      "label": "동시 전략 턴",
+      "sublabel": "최대 10인 계획 → 일괄 해결",
+      "pos": [
+        400,
+        410
+      ],
+      "size": [
+        580,
+        72
+      ]
+    },
+    {
+      "id": "clock",
+      "type": "database",
+      "label": "세계 시간",
+      "sublabel": "하루·주 · 긴장·위기",
+      "pos": [
+        1120,
+        410
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "map",
+      "type": "cloud",
+      "label": "전략 지도",
+      "sublabel": "지상·지하철 층",
+      "pos": [
+        760,
+        570
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "encounter",
+      "type": "messagebus",
+      "label": "조우",
+      "sublabel": "대화·회피·전투",
+      "pos": [
+        760,
+        730
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "battle",
+      "type": "backend",
+      "label": "닫힌 전투",
+      "sublabel": "부대 지휘 · 일시정지",
+      "pos": [
+        400,
+        730
+      ],
+      "size": [
+        220,
+        72
+      ]
+    },
+    {
+      "id": "ledger",
+      "type": "database",
+      "label": "원장·정산",
+      "sublabel": "결과는 한 번만 반영",
+      "pos": [
+        400,
+        890
+      ],
+      "size": [
+        220,
+        72
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "CK3 인물·왕조 층",
+      "wraps": [
+        "succession",
+        "person",
+        "house",
+        "plot"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "TW 전략 층 · 동시 턴",
+      "wraps": [
+        "squad",
+        "agent",
+        "turn",
+        "clock",
+        "map"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "TW 전투 층 · 닫힌 세션",
+      "wraps": [
+        "encounter",
+        "battle"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "기록 층",
+      "wraps": [
+        "ledger"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "person-squad",
+      "from": "person",
+      "to": "squad",
+      "label": "직접 지휘",
+      "variant": "emphasis",
+      "labelDy": 24
+    },
+    {
+      "id": "squad-turn",
+      "from": "squad",
+      "to": "turn",
+      "label": "명령 확정",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "turn-map",
+      "from": "turn",
+      "to": "map",
+      "label": "일괄 해결",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "map-encounter",
+      "from": "map",
+      "to": "encounter",
+      "label": "통제권 진입",
+      "variant": "emphasis",
+      "labelDy": 24
+    },
+    {
+      "id": "encounter-battle",
+      "from": "encounter",
+      "to": "battle",
+      "label": "개전",
+      "variant": "emphasis"
+    },
+    {
+      "id": "battle-ledger",
+      "from": "battle",
+      "to": "ledger",
+      "label": "ResultId 1회",
+      "variant": "emphasis",
+      "labelDy": 24
+    },
+    {
+      "id": "encounter-ledger",
+      "from": "encounter",
+      "to": "ledger",
+      "label": "비전투 결과",
+      "variant": "dashed"
+    },
+    {
+      "id": "ledger-person",
+      "from": "ledger",
+      "to": "person",
+      "label": "생사·부상·구금",
+      "fromSide": "left",
+      "toSide": "top",
+      "via": [
+        [
+          16,
+          926
+        ],
+        [
+          16,
+          40
+        ],
+        [
+          510,
+          40
+        ]
+      ]
+    },
+    {
+      "id": "person-succession",
+      "from": "person",
+      "to": "succession",
+      "label": "사망·영구 구금",
+      "variant": "security"
+    },
+    {
+      "id": "succession-person",
+      "from": "succession",
+      "to": "person",
+      "label": "후계가 본체"
+    },
+    {
+      "id": "house-plot",
+      "from": "house",
+      "to": "plot",
+      "label": "계승·작위 쟁점"
+    },
+    {
+      "id": "plot-agent",
+      "from": "plot",
+      "to": "agent",
+      "label": "요원 명령",
+      "labelDy": 24
+    },
+    {
+      "id": "agent-turn",
+      "from": "agent",
+      "to": "turn",
+      "label": "명령 확정"
+    },
+    {
+      "id": "turn-clock",
+      "from": "turn",
+      "to": "clock",
+      "label": "한 칸 진행",
+      "labelAt": [
+        1004,
+        496
+      ]
+    },
+    {
+      "id": "clock-house",
+      "from": "clock",
+      "to": "house",
+      "label": "주간 위기·임계"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "주경로",
+      "items": [
+        "본체 인물 → 원정 분대 → 동시 턴 → 전략 지도 → 조우 → 닫힌 전투 → 원장 → 본체 인물",
+        "영웅은 직접 조작하지 않고 분대 명령으로만 지휘한다"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "소유자 결정 2026-09-24",
+      "items": [
+        "본체가 죽거나 영구 구금되면 지정 후계, 없으면 계승 순서의 인물이 새 본체가 된다. 후계가 없으면 그 캐릭터는 끝난다",
+        "턴 해결마다 세계 시간이 한 칸 가고, 주간 긴장·위기·음모 임계는 그 시간으로 판정한다. 열린 전투는 그동안 따로 진행된다"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "경계",
+      "items": [
+        "설계 도식이며 구현 완료가 아니다. 수치는 정하지 않는다",
+        "한 턴의 순서와 원정 다섯 결말은 흐름도에서 본다"
+      ]
+    }
+  ]
+}
