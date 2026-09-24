@@ -131,11 +131,7 @@
     { "id": "c6", "from": "return", "to": "strategy", "label": "재개", "fromSide": "bottom", "toSide": "bottom" },
     { "id": "c7", "from": "atlas", "to": "character", "label": "정본", "fromSide": "left", "toSide": "top" },
     { "id": "c8", "from": "places", "to": "strategy", "label": "장소", "fromSide": "bottom", "toSide": "top", "labelDy": 36 },
-    { "id": "c9", "from": "ecology", "to": "engagement", "label": "풀", "fromSide": "bottom", "toSide": "top", "labelDy": 36 },
-    { "id": "c10", "from": "rules", "to": "strategy", "label": "계약", "fromSide": "top", "toSide": "bottom", "channelX": 500 },
-    { "id": "c11", "from": "rules", "to": "battle", "label": "전투", "fromSide": "top", "toSide": "bottom", "channelX": 760 },
-    { "id": "c12", "from": "save", "to": "return", "label": "기록", "fromSide": "top", "toSide": "bottom", "channelX": 1040 },
-    { "id": "c13", "from": "pov", "to": "battle", "label": "정지", "fromSide": "top", "toSide": "bottom", "channelX": 1180 }
+    { "id": "c9", "from": "ecology", "to": "engagement", "label": "풀", "fromSide": "bottom", "toSide": "top", "labelDy": 36 }
   ],
   "cards": [
     {
@@ -150,7 +146,7 @@
       "dot": "emerald",
       "title": "두 정본",
       "items": [
-        "위는 로어(누구·어디), 아래는 규칙(무엇을 허락하는가)",
+        "위는 로어(누구·어디). 아래 규칙은 지도·전투·귀환을 제약한다",
         "설계 페이지가 있다고 구현된 것은 아니다"
       ]
     },
