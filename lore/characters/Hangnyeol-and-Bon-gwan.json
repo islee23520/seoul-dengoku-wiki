@@ -55,122 +55,6 @@
       }
     },
     {
-      "kind": "paragraph",
-      "anchor": "본관과-항렬-p2",
-      "text": {
-        "en": [
-          {
-            "text": "This document brought together the naming canon of Seoul Subway States and research findings. The machine-readable ledgers were "
-          },
-          {
-            "text": "Surnames and Bon-gwan",
-            "link": {
-              "domain": "name-pools",
-              "slug": "surnames-bongwan"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "Hangnyeol Systems",
-            "link": {
-              "domain": "name-pools",
-              "slug": "hangnyeol-systems"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "Clan Hangnyeol Tables",
-            "link": {
-              "domain": "name-pools",
-              "slug": "clan-hangnyeol-tables"
-            }
-          },
-          {
-            "text": ", and "
-          },
-          {
-            "text": "Character Applications",
-            "link": {
-              "domain": "name-pools",
-              "slug": "cast-hangnyeol"
-            }
-          },
-          {
-            "text": ". The data contract was "
-          },
-          {
-            "text": "Surname, Bon-gwan, and Hangnyeol Data Contract",
-            "link": {
-              "domain": "name-pools",
-              "slug": "hangnyeol-schema"
-            }
-          },
-          {
-            "text": "; the checker was `Tool/tools/wiki/verify-hangnyeol.mjs`."
-          }
-        ],
-        "ko": [
-          {
-            "text": "이 문서는 《서울:전국》의 작명 정본과 조사 결과를 함께 둔다. 기계가 읽는 원장은 "
-          },
-          {
-            "text": "성씨·본관",
-            "link": {
-              "domain": "name-pools",
-              "slug": "surnames-bongwan"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "항렬 체계",
-            "link": {
-              "domain": "name-pools",
-              "slug": "hangnyeol-systems"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "문중 항렬표",
-            "link": {
-              "domain": "name-pools",
-              "slug": "clan-hangnyeol-tables"
-            }
-          },
-          {
-            "text": ", "
-          },
-          {
-            "text": "인물 적용표",
-            "link": {
-              "domain": "name-pools",
-              "slug": "cast-hangnyeol"
-            }
-          },
-          {
-            "text": "다. 데이터 계약은 "
-          },
-          {
-            "text": "성씨·본관·항렬 데이터 계약",
-            "link": {
-              "domain": "name-pools",
-              "slug": "hangnyeol-schema"
-            }
-          },
-          {
-            "text": ", 검사는 `Tool/tools/wiki/verify-hangnyeol.mjs`다."
-          }
-        ]
-      }
-    },
-    {
       "kind": "heading",
       "anchor": "재벌-가문-항렬",
       "depth": 2,
@@ -343,14 +227,6 @@
           }
         ]
       ]
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "재벌-가문-항렬-p6",
-      "text": {
-        "en": "`surnames-bongwan.json` preserved 1985, 2000, and 2015 populations together with the major bon-gwan listed in the table. The 263 rows with a blank major bon-gwan field had a `bongwan_unlisted_reason`. Blank fields were not filled with an arbitrary bon-gwan.",
-        "ko": "`surnames-bongwan.json`은 1985·2000·2015 인구와 표에 적힌 대성 본관을 함께 보존한다. 대성 본관 칸이 빈 263행에는 `bongwan_unlisted_reason`을 둔다. 빈 칸을 임의 본관으로 채우지 않는다."
-      }
     },
     {
       "kind": "heading",
@@ -693,73 +569,12 @@
       }
     },
     {
-      "kind": "paragraph",
-      "anchor": "캐스트-적용-결과-p6",
-      "text": {
-        "en": "Hangnyeol characters were not overwritten for other people based on age alone. Bon-gwan was assigned by weighting Hanja variants of the same Hangul surname using 2015 population; if a majority bon-gwan existed, it took priority, and otherwise a name hash selected from the bon-gwan list in the table. The same input always produced the same result. This assigned a generation candidate; it did not confirm an actual person's bon-gwan, so the application table recorded the reason.",
-        "ko": "나머지 인물에게 나이만 보고 항렬자를 덮어쓰지 않는다. 본관은 같은 한글 성씨의 한자 변형을 2015년 인구로 가중 선택하고, 과반 본관이 있으면 그 본관을 우선하며 없으면 표의 본관 목록에서 이름 해시로 결정한다. 같은 입력은 늘 같은 결과를 낸다. 이는 생성 후보 배정이지 실제 개인의 본관을 확인했다는 뜻이 아니므로 적용표에 사유를 남긴다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "생성-규칙",
-      "depth": 2,
-      "text": {
-        "en": "Generation Rules",
-        "ko": "생성 규칙"
-      }
-    },
-    {
-      "kind": "list",
-      "anchor": "생성-규칙-list1",
-      "ordered": true,
-      "items": [
-        {
-          "en": "Check the character's naming tradition and surname spelling.",
-          "ko": "인물의 작명 전통과 성씨 표기를 확인한다."
-        },
-        {
-          "en": "Read the bon-gwan candidates for the surname and determine the Hanja surname variant using 2015 population weights.",
-          "ko": "성씨에 대응하는 본관 후보를 읽고 2015년 인구 가중으로 한자 성씨 변형을 결정한다."
-        },
-        {
-          "en": "Calculate generation count only when the parent-to-child family line reaches the founder.",
-          "ko": "부모→자식 가계가 시조까지 이어질 때만 세수를 계산한다."
-        },
-        {
-          "en": "Read the character, Hanja, and position for that generation in the clan hangnyeol table.",
-          "ko": "문중 항렬표에서 그 세수의 글자·한자·자리를 읽는다."
-        },
-        {
-          "en": "Place the hangnyeol character in the designated position of a two-character name. Do not apply it to a single-character name or an unconfirmed table.",
-          "ko": "두 글자 이름의 지정 자리에 항렬자를 넣는다. 외자·미확인 표는 적용하지 않는다."
-        },
-        {
-          "en": "Do not retroactively rename an already published cast character.",
-          "ko": "이미 게시된 캐스트 이름은 소급 개명하지 않는다."
-        },
-        {
-          "en": "Record sources, the reason for application, and the reason for being unused or unconfirmed in the character ledger.",
-          "ko": "출처, 적용 사유, 미사용 또는 미확인 사유를 인물 원장에 함께 기록한다."
-        }
-      ]
-    },
-    {
       "kind": "heading",
       "anchor": "검증",
       "depth": 2,
       "text": {
         "en": "Verification",
         "ko": "검증"
-      }
-    },
-    {
-      "kind": "code",
-      "anchor": "검증-code1",
-      "language": "bash",
-      "text": {
-        "en": "cd Tool/tools/wiki\nnode verify-hangnyeol.mjs\nnode verify-hangnyeol.mjs --cast\nnode test-verify-hangnyeol.mjs\n\ncd ../cast\npython3 test_hangnyeol_names.py",
-        "ko": "cd Tool/tools/wiki\nnode verify-hangnyeol.mjs\nnode verify-hangnyeol.mjs --cast\nnode test-verify-hangnyeol.mjs\n\ncd ../cast\npython3 test_hangnyeol_names.py"
       }
     },
     {

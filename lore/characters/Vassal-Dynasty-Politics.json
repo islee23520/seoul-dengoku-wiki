@@ -59,32 +59,12 @@
       "text": {
         "en": [
           {
-            "text": "The state remains as a vessel. What acts is a named person, and there is no fixed state personality and no betrayal probability. Proposals, approvals, and refusals ride the flow of "
-          },
-          {
-            "text": "Ambitions",
-            "link": {
-              "domain": "characters",
-              "slug": "Ambitions-and-Relations"
-            }
-          },
-          {
-            "text": " as it stands, and this document is the title, vassal, and dynasty rule laid on top of that flow. The ambition, fear, relation, and memory fields do not change."
+            "text": "The state remains as a vessel."
           }
         ],
         "ko": [
           {
-            "text": "국가는 그릇으로 남는다. 행동하는 것은 이름 있는 인물이며 고정 국가 성격과 배신 확률은 두지 않는다. 제안과 승인과 거부는 "
-          },
-          {
-            "text": "야망",
-            "link": {
-              "domain": "characters",
-              "slug": "Ambitions-and-Relations"
-            }
-          },
-          {
-            "text": "의 흐름을 그대로 타고 이 문서는 그 흐름 위에 얹는 작위·봉신·왕조 규칙이다. 야망·공포·관계·기억의 칸은 바꾸지 않는다."
+            "text": "국가는 그릇으로 남는다."
           }
         ]
       }
@@ -804,42 +784,6 @@
       }
     },
     {
-      "kind": "paragraph",
-      "anchor": "상속과-후계-p1",
-      "text": {
-        "en": [
-          {
-            "text": "Succession does not use bloodline alone. The order follows "
-          },
-          {
-            "text": "Ambitions",
-            "link": {
-              "domain": "characters",
-              "slug": "Ambitions-and-Relations"
-            }
-          },
-          {
-            "text": " as it stands."
-          }
-        ],
-        "ko": [
-          {
-            "text": "계승은 혈통만 쓰지 않는다. 순서는 "
-          },
-          {
-            "text": "야망",
-            "link": {
-              "domain": "characters",
-              "slug": "Ambitions-and-Relations"
-            }
-          },
-          {
-            "text": "를 그대로 따릅니다."
-          }
-        ]
-      }
-    },
-    {
       "kind": "list",
       "anchor": "상속과-후계-list2",
       "ordered": true,
@@ -1279,14 +1223,6 @@
       "text": {
         "en": "A kit holds temperament, tradition, and arm-custom as one bundle. Temperament is a bias of preferred means and does not overwrite a person's personality, and the personality field stays as it is. Tradition is the local custom attached to title grants, inheritance claims, and the rite calendar, and arm-custom is who takes up a weapon and which muster is lawful. Combat rules are not changed.",
         "ko": "키트는 기질·전통·병과 관습을 한 묶음으로 둡니다. 기질은 선호하는 수단의 편향이지 인물 성격을 덮어쓰지 않으며 성격 칸은 그대로다. 전통은 작위 수여와 상속 명분과 의례 달력에 붙는 현지 관습이고 병과 관습은 누가 무기를 들고 어떤 소집이 정당한지다. 전투 규칙은 고치지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "문화-정체-키트-p3",
-      "text": {
-        "en": "The numbers below are set as design assumptions. An added weight is only a weight in proposal evaluation, not an automatic approval.",
-        "ko": "아래 수치는 설계 가정으로 둔다. 가산은 제안 평가의 가중치일 뿐 자동 승인이 아닙니다."
       }
     },
     {
@@ -1769,8 +1705,8 @@
       "kind": "paragraph",
       "anchor": "작위충성과-분열-행렬-p5",
       "text": {
-        "en": "A mixed contract writes two rites side by side on one line. Erasing one is a breach, and a Diaspora Corridor rite is the valve of this mix. A corridor key is not overwritten with one of the five sphere keys.",
-        "ko": "혼합 계약은 두 제례를 한 줄에 나란히 적는다. 하나를 지우면 위반이고 이주민 회랑의 제례는 이 혼합의 밸브다. 회랑 키를 다섯 권역 키로 덮어쓰지 않는다."
+        "en": "A mixed contract writes two rites side by side on one line. Erasing one is a breach, and a Diaspora Corridor rite is the valve of this mix.",
+        "ko": "혼합 계약은 두 제례를 한 줄에 나란히 적는다. 하나를 지우면 위반이고 이주민 회랑의 제례는 이 혼합의 밸브다."
       }
     },
     {
@@ -1877,69 +1813,6 @@
         "en": "Random numbers use only the person stream and are not mixed with the battle stream and the encounter stream. A save file holds title held, vacant, and disputed, the clauses, attachment, and faith crossing of a vassal contract, the relic custodian, and the `plot` and `heir-stance` thresholds that have not yet fired. An unsupported save does not recover by drawing titles anew. It raises an error and leaves the previous file.",
         "ko": "난수는 인물 스트림만 쓰고 전투 스트림과 조우 스트림과 섞지 않는다. 저장 파일에는 작위 보유·공석·분쟁, 봉신 계약의 조항과 귀속과 신앙 교차, 유물 보관자, 아직 안 터진 `plot`·`heir-stance` 임계가 들어갑니다. 지원하지 않는 저장은 작위를 새로 뽑으며 복구하지 않고 오류를 내고 이전 파일을 둡니다."
       }
-    },
-    {
-      "kind": "heading",
-      "anchor": "넣지-말-것",
-      "depth": 2,
-      "text": {
-        "en": "What Not to Put In",
-        "ko": "넣지 말 것"
-      }
-    },
-    {
-      "kind": "list",
-      "anchor": "넣지-말-것-list1",
-      "items": [
-        {
-          "en": "a fixed state personality, an eternal alliance, a betrayal probability",
-          "ko": "국가 고정 성격, 영원한 동맹, 배신 확률"
-        },
-        {
-          "en": "a loyalty slider, a piety slider, a command that raises legitimacy directly",
-          "ko": "충성 슬라이더, 경건 슬라이더, 정통성을 직접 올리는 명령"
-        },
-        {
-          "en": "a dynasty of bloodline alone, automatic generation of an unnamed leader",
-          "ko": "혈통만의 왕조, 무명 지도자 자동 생성"
-        },
-        {
-          "en": "accrediting a title by territory alone, treating an integration without a relic as complete",
-          "ko": "영토만으로 작위를 인준하기, 유물 없는 통합을 완성으로 보기"
-        },
-        {
-          "en": "a vassal contract without a faith field and a rite calendar",
-          "ko": "신앙 칸과 의례 달력 없는 봉신 계약"
-        },
-        {
-          "en": "an ending that calls the revival of an old state institution a victory",
-          "ko": "옛 국가 제도의 부활을 승리라고 하는 결말"
-        },
-        {
-          "en": "carrying over a proper faith name or a title name from outside Seoul as written",
-          "ko": "서울 밖 고유 신앙명과 작위명을 그대로 옮기기"
-        },
-        {
-          "en": "using a culture key by changing it into a state ID",
-          "ko": "문화 키를 국가 ID로 바꿔 쓰기"
-        },
-        {
-          "en": "changing combat rules by arm-custom",
-          "ko": "병과 관습으로 전투 규칙을 고치기"
-        },
-        {
-          "en": "forcing a muster on a merchant livelihood holder",
-          "ko": "상인 생업자에게 소집 강제"
-        },
-        {
-          "en": "turning the Records Bureau into a barracks and keeping `legitimacy`",
-          "ko": "기록청을 병영으로 만들어 `법통`을 유지하기"
-        },
-        {
-          "en": "a command by which the player edits a crossing field directly",
-          "ko": "교차 칸을 플레이어가 직접 고치는 명령"
-        }
-      ]
     },
     {
       "kind": "heading",

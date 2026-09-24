@@ -65,14 +65,6 @@
     },
     {
       "kind": "paragraph",
-      "anchor": "거점과-영토-p1",
-      "text": {
-        "en": "A wiki diagram dated 2026-09-07. The isometric occupancy cells were the explanation of that day, not a battlefield grid — a flat diagram for documentation, not an actual game screen.",
-        "ko": "2026-09-07 위키 도표의 아이소 점유 칸은 당시 설명에 쓰였다. 전장 격자 규칙은 아니다. 도표는 문서용 평면도이며 실제 게임 화면이 아니다."
-      }
-    },
-    {
-      "kind": "paragraph",
       "anchor": "거점과-영토-p2",
       "text": {
         "en": "The stabilization of strongholds after occupation and the integration of territory were managed with strategy-map links and terrain.",
@@ -95,7 +87,7 @@
             }
           },
           {
-            "text": ". The numbers in the tables were design assumptions for the first prototype, to be tuned in playtests."
+            "text": "."
           }
         ],
         "ko": [
@@ -110,7 +102,7 @@
             }
           },
           {
-            "text": "을 따른다. 표의 수치는 첫 프로토타입용 설계 가정이며 플레이테스트로 조정한다."
+            "text": "을 따른다."
           }
         ]
       }
@@ -337,148 +329,6 @@
     },
     {
       "kind": "heading",
-      "anchor": "계산-규칙",
-      "depth": 2,
-      "text": {
-        "en": "Calculation Rules",
-        "ko": "계산 규칙"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p1-label",
-      "text": {
-        "en": [
-          {
-            "text": "A. Connectivity and Shortages",
-            "strong": true
-          }
-        ],
-        "ko": [
-          {
-            "text": "가. 연결도와 부족도",
-            "strong": true
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p1",
-      "text": {
-        "en": "For each legal supply route, the throughput rate of the narrowest link was taken and the largest of them used as `K`. Blockaded links were not deleted; their cause as `K=0` and their restoration conditions were preserved.",
-        "ko": "합법 보급 경로마다 처리율이 가장 낮은 연결을 찾는다. 경로별 최솟값 가운데 최댓값을 `K`로 사용한다. 봉쇄된 연결은 기록에 남긴다. `K=0`의 원인과 복구 조건도 보존한다."
-      }
-    },
-    {
-      "kind": "code",
-      "anchor": "계산-규칙-code2",
-      "language": "text",
-      "text": {
-        "en": "K = clamp(max_path(min_edge_capacity), 0, 1)\nfulfillment-rate(supply, demand) = 1 if the demand is 0, else clamp(supply/demand, 0, 1)\nS = 1 - min(fulfillment-rate(food-supply, food-demand), fulfillment-rate(power-supply, power-demand))",
-        "ko": "K = clamp(max_path(min_edge_capacity), 0, 1)\n충족률(공급, 수요) = 수요가 0이면 1, 아니면 clamp(공급/수요, 0, 1)\nS = 1 - min(충족률(식량공급, 식량수요), 충족률(전력공급, 전력수요))"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p3",
-      "text": {
-        "en": [
-          {
-            "text": "A resource with zero demand was treated as fulfillment 1, i.e. zero shortage contribution. This was the same shared rule as the shortage rule of "
-          },
-          {
-            "text": "Economy and Production",
-            "link": {
-              "domain": "economy",
-              "slug": "Economy-and-Production"
-            }
-          },
-          {
-            "text": ", and in no case did it divide by zero."
-          }
-        ],
-        "ko": [
-          {
-            "text": "수요가 0인 자원의 충족률은 1이고 부족 기여는 0이다. "
-          },
-          {
-            "text": "경제와 생산",
-            "link": {
-              "domain": "economy",
-              "slug": "Economy-and-Production"
-            }
-          },
-          {
-            "text": "의 부족률 규칙과 같은 공유 규칙이다. 0으로 나누는 계산은 하지 않는다."
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p4-label",
-      "text": {
-        "en": [
-          {
-            "text": "B. Overexpansion and Settlement",
-            "strong": true
-          }
-        ],
-        "ko": [
-          {
-            "text": "나. 과확장과 정산",
-            "strong": true
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p4",
-      "text": {
-        "en": [
-          {
-            "text": "Overreach `O` used the shared 0–2 scale defined in "
-          },
-          {
-            "text": "Logistics and Infrastructure",
-            "link": {
-              "domain": "economy",
-              "slug": "Logistics-and-Infrastructure"
-            }
-          },
-          {
-            "text": " as it stood. This document's governance burden and administrative capacity entered as the governance burden-ratio term `burden-ratio(governance-burden, administrative-capacity)` of that definition."
-          }
-        ],
-        "ko": [
-          {
-            "text": "과확장 `O`(이하 '과확장'이라 한다)는 "
-          },
-          {
-            "text": "물류와 기반 시설",
-            "link": {
-              "domain": "economy",
-              "slug": "Logistics-and-Infrastructure"
-            }
-          },
-          {
-            "text": "에 정의된 공유 0~2 척도를 사용한다. 이 문서의 통치부담과 행정역량은 통치 부담 비율 `부담비율(통치부담, 행정역량)` 항에 들어간다."
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p5",
-      "text": {
-        "en": "The daily settlement order was resource distribution → combat results → authority·cooperation·facilities → stage transition → event reservation. Identical inputs always produced identical results.",
-        "ko": "하루 정산은 자원 배분 → 전투 결과 → 권위·협력·시설 → 단계 전이 → 사건 예약 순서로 진행한다. 동일한 입력에는 항상 같은 결과를 낸다."
-      }
-    },
-    {
-      "kind": "heading",
       "anchor": "기본-수치",
       "depth": 2,
       "text": {
@@ -697,36 +547,6 @@
           }
         ]
       }
-    },
-    {
-      "kind": "list",
-      "anchor": "경계-상황-list1",
-      "items": [
-        {
-          "en": "With food or power below 75%, a shortage state attached and authority and cooperation fell.",
-          "ko": "식량 또는 전력이 75% 미만이면 부족 상태가 붙고 권위·협력이 하락한다."
-        },
-        {
-          "en": "In full isolation, imports and exports were 0, but local reserves and generation kept working.",
-          "ko": "완전 고립이면 수입·수출은 0이지만 현지 비축과 발전은 계속 작동한다."
-        },
-        {
-          "en": "Overreach arose not as a territory cap but from shortage of staff, garrisons, and links.",
-          "ko": "과확장은 영토 상한이 아니라 담당자, 주둔군과 연결 부족으로 발생한다."
-        },
-        {
-          "en": "When several strongholds crossed a threshold on the same day, settlement ran in stabilized-stronghold ID order.",
-          "ko": "같은 날 여러 거점이 임계치를 넘으면 안정된 거점 ID 순서로 정산한다."
-        },
-        {
-          "en": "A station with only unpowered facilities was treated as power demand 0; its power fulfillment became 1, raising the shortage `S` not at all, but it was not read as having gained power service either.",
-          "ko": "무전력 시설만 있는 역은 전력 수요 0으로 처리하며, 이때 전력 충족률은 1이 되어 부족도 `S`를 올리지 않지만 전력 서비스가 생긴 것으로 보지도 않는다."
-        },
-        {
-          "en": "Pressure debt (`PressureDebt`) was the accumulation of external event pressure — a design assumption with default 0 and range 0~100. It piled up through authority and cooperation decay, visibility, hostile adjacency, and overreach, and shrank with garrison cover and connectivity `K`; when the debt reached 100, one event matching the cause was reserved and 100 subtracted.",
-          "ko": "압박 부채(`PressureDebt`)는 외부 사건 압박의 누적치이며, 설계 가정으로 기본값 0·범위 0~100이다. 권위·협력 저하와 가시성·적대 인접·과확장으로 쌓이고 주둔 커버와 연결도 `K`로 줄어들며, 부채가 100에 도달하면 원인에 맞는 사건을 하나 예약하고 부채 100을 뺀다."
-        }
-      ]
     },
     {
       "kind": "heading",

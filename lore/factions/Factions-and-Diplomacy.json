@@ -47,14 +47,6 @@
     },
     {
       "kind": "paragraph",
-      "anchor": "세력과-외교-p1",
-      "text": {
-        "en": "A wiki diagram dated 2026-09-07. The position, direction, and field-of-view cell drawings were the explanation of that day — a flat diagram for documentation, not an actual game screen.",
-        "ko": "2026-09-07 위키 도표. 위치·방향·시야 칸 그림은 당시 설명이다. 문서용 평면도이며 실제 게임 화면이 아니다."
-      }
-    },
-    {
-      "kind": "paragraph",
       "anchor": "세력과-외교-p2",
       "text": {
         "en": "Negotiation between powers and the grant of passage rights were decided by the trust, reputation, and legitimacy of the route and station nodes.",
@@ -65,8 +57,8 @@
       "kind": "paragraph",
       "anchor": "세력과-외교-p3",
       "text": {
-        "en": "Politics was not one favorability number but a graph of personal trust, public reputation, local legitimacy, deliverable promises, and collective grievances. The numbers in the tables were design assumptions.",
-        "ko": "정치는 하나의 호감도가 아니라 개인 신뢰, 대중 평판, 지역별 정통성, 이행 가능한 약속과 집단 불만의 그래프다. 표의 수치는 설계 가정으로 둔다."
+        "en": "Politics was not one favorability number but a graph of personal trust, public reputation, local legitimacy, deliverable promises, and collective grievances.",
+        "ko": "정치는 하나의 호감도가 아니라 개인 신뢰, 대중 평판, 지역별 정통성, 이행 가능한 약속과 집단 불만의 그래프다."
       }
     },
     {
@@ -209,40 +201,6 @@
           }
         ]
       ]
-    },
-    {
-      "kind": "heading",
-      "anchor": "계산-규칙",
-      "depth": 2,
-      "text": {
-        "en": "Calculation Rules",
-        "ko": "계산 규칙"
-      }
-    },
-    {
-      "kind": "code",
-      "anchor": "계산-규칙-code1",
-      "language": "text",
-      "text": {
-        "en": "Rel = clamp(1 - 0.50*shortfall - 0.30*isolation - 0.40*overreach, 0, 1)\ntrust-change = clamp(sum(event-impact * credibility), -25, 25)\nT' = clamp(T + trust-change + baseline-shift, -100, 100)\npressure = clamp(0.45*grievance + 0.35*solidarity + 0.20*(100*leverage), 0, 100)",
-        "ko": "Rel = clamp(1 - 0.50*부족 - 0.30*고립 - 0.40*과확장, 0, 1)\n신뢰변화 = clamp(sum(사건영향 * 신빙성), -25, 25)\nT' = clamp(T + 신뢰변화 + 기준선이동, -100, 100)\n압력 = clamp(0.45*불만 + 0.35*결속 + 0.20*(100*지렛대), 0, 100)"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p2",
-      "text": {
-        "en": "Of pressure's three inputs, grievance and solidarity sat on 0–100 scales while leverage sat on 0–1, so leverage was multiplied by 100 to normalize it onto the same scale before the weighted sum. Pressure remained a 0–100 value.",
-        "ko": "압력의 세 입력 중 불만과 결속은 0~100 척도이고, 지렛대는 0~1 척도라서 100을 곱해 같은 척도로 정규화한 뒤 가중합한다. 압력은 0~100 값으로 남는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p3",
-      "text": {
-        "en": "Every proposal first checked actual routes, goods, authority, and exclusive-contract conflicts. An impossible promise could not be pushed through with high negotiating skill.",
-        "ko": "모든 제안은 먼저 실제 경로, 물자, 권한, 배타 계약 충돌을 검사한다. 불가능한 약속은 높은 교섭 능력으로 통과시킬 수 없다."
-      }
     },
     {
       "kind": "heading",

@@ -65,14 +65,6 @@
     },
     {
       "kind": "paragraph",
-      "anchor": "물류와-기반-시설-p1",
-      "text": {
-        "en": "A wiki diagram dated 2026-09-07. The four-direction cell links were the grammar of that day's drawing, not a throughput formula — a flat diagram for documentation, not an actual game screen.",
-        "ko": "2026-09-07 위키 도표의 4방향 칸 연결은 당시 그림의 문법이었다. 처리량 공식은 아래 계산 규칙에 있다. 도표는 문서용 평면도이며 실제 게임 화면이 아니다."
-      }
-    },
-    {
-      "kind": "paragraph",
       "anchor": "물류와-기반-시설-p2",
       "text": {
         "en": "Supply-line bottlenecks and throughput were predicted and managed from section links and terrain.",
@@ -83,8 +75,8 @@
       "kind": "paragraph",
       "anchor": "물류와-기반-시설-p3",
       "text": {
-        "en": "Logistics was not the fact that stock existed but the ability of the needed kinds of goods to arrive on time by licensed routes. The numbers in the tables were all design assumptions.",
-        "ko": "물류는 필요한 종류의 물자를 허가된 경로로 제때 보내는 능력이다. 표의 수치는 모두 설계 가정이다."
+        "en": "Logistics was not the fact that stock existed but the ability of the needed kinds of goods to arrive on time by licensed routes.",
+        "ko": "물류는 필요한 종류의 물자를 허가된 경로로 제때 보내는 능력이다."
       }
     },
     {
@@ -217,100 +209,6 @@
           }
         ]
       ]
-    },
-    {
-      "kind": "heading",
-      "anchor": "계산-규칙",
-      "depth": 2,
-      "text": {
-        "en": "Calculation Rules",
-        "ko": "계산 규칙"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-code1-label",
-      "text": {
-        "en": [
-          {
-            "text": "A. Throughput and Shared Scale",
-            "strong": true
-          }
-        ],
-        "ko": [
-          {
-            "text": "가. 처리량과 공유 척도",
-            "strong": true
-          }
-        ]
-      }
-    },
-    {
-      "kind": "code",
-      "anchor": "계산-규칙-code1",
-      "language": "text",
-      "text": {
-        "en": "C_e = clamp(B_e * I_e * P_e * X_e * (1-H_e), 0, B_e)\nsupply-rate = clamp(arrivals / max(watch-period-demand, 1), 0, 1)\nshortage-rate = clamp(unmet / max(requirement, 1), 0, 1)\nburden-ratio(numerator, denominator) = if the denominator is 0 then (0 if the numerator is also 0, else 3), else numerator/denominator\noverreach = clamp(max(burden-ratio(required-throughput, actual-flow), burden-ratio(return-requirement, Q), burden-ratio(governance-burden, administrative-capacity)) - 1, 0, 2)\nfull-isolation = 1 if the isolation stage is 2, else 0\nloadΔ = clamp(20 * shortage-rate + 8 * full-isolation + 6 * overreach, 0, 35)\nload A = clamp(A + loadΔ, 0, 100)",
-        "ko": "C_e = clamp(B_e * I_e * P_e * X_e * (1-H_e), 0, B_e)\n보급률 = clamp(도착량 / max(감시기간수요, 1), 0, 1)\n부족률 = clamp(미충족량 / max(필요량, 1), 0, 1)\n부담비율(분자, 분모) = 분모가 0이면 (분자도 0이면 0, 아니면 3), 아니면 분자/분모\n과확장 = clamp(max(부담비율(요구처리량, 실제흐름), 부담비율(귀환필요량, Q), 부담비율(통치부담, 행정역량)) - 1, 0, 2)\n완전고립 = 고립 단계가 2이면 1, 아니면 0\n부하Δ = clamp(20 * 부족률 + 8 * 완전고립 + 6 * 과확장, 0, 35)\n부하 A = clamp(A + 부하Δ, 0, 100)"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p2",
-      "text": {
-        "en": "`Overreach` was a 0–2 scale shared by the six strategy documents, and this document's definition was the standard. It took the largest of the three burden ratios — logistics (required-throughput/actual-flow), return (return-requirement/Q), governance (governance-burden/administrative-capacity) — minus 1, clamped to 0–2. When a burden ratio's denominator was 0 with a numerator remaining, the ratio was defined as 3 so that overreach saturated instantly at the cap of 2; when the numerator was also 0, that burden was treated as 0 — so the calculation was always defined.",
-        "ko": "여섯 전략 문서가 공유하는 0~2 척도를 과확장(이하 '과확장'이라 한다)으로 정한다. 이 문서의 정의를 기준으로 삼는다. 물류(요구처리량/실제흐름), 귀환(귀환필요량/Q), 통치(통치부담/행정역량)의 부담 비율 중 최댓값에서 1을 뺀 뒤 0~2로 자른다. 분모가 0이고 분자가 남아 있으면 부담 비율은 3이다. 이때 과확장은 상한 2이다. 분자도 0이면 부담 비율은 0이다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p3",
-      "text": {
-        "en": "The `isolation stage` too was a shared 0–2 continuous scale this document defined. All legal main routes normal was 0; some routes blockaded so that only detours and light freight were possible was 1; every legal route cut was the anchor point 2; intermediate values interpolated by the fraction of blockaded legal-route throughput.",
-        "ko": "이 문서가 정의하는 고립 단계(이하 '고립 단계'라 한다)는 공유 0~2 연속 척도이다. 모든 합법 주 경로가 정상이면 0이다. 일부 경로가 봉쇄되어 우회·경화물만 가능하면 1이다. 모든 합법 경로가 차단되면 2이다. 중간값은 봉쇄된 합법 경로 처리량의 비율로 보간한다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p4",
-      "text": {
-        "en": "`Load` was a 0–100 cumulative scale this document defined; its coefficients and band effects were design assumptions. At the end of each watch period `loadΔ` was added and the sum clamped to 0–100. With the supply rate at 1 and the required capability tags present at a licensed safe stronghold, it recovered by 15 per watch period instead of rising. 0–24 readiness carried no logistics-specific effect; 25–49 strain applied readiness decay and a restriction on discretionary actions needing spare capacity; 50–74 critical fixed, on section entry, one untreated injury worsening or one lowest-state item of equipment damaged (with neither present, the loss of a designated cargo, chosen by severity then persistent-ID order); 75–99 failure forced a decision among withdrawal, cargo abandonment, local procurement, splitting, and explicit high-risk continuation; 100 collapse barred starting a forward move and passed to stranding, surrender, dispersal, or rescue/last-stand encounters. No automatic proportional deaths applied.",
-        "ko": "이 문서가 정의하는 부하(이하 '부하'라 한다)는 0~100 누적 척도이다. 증감 계수와 구간 효과는 설계 가정이다. 감시기간 말에 `부하Δ`를 더한 뒤 0~100으로 자른다. 보급률이 1이고 허가된 안전 거점에 필요 능력 태그가 있으면 증가 대신 감시기간당 15만큼 회복한다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-부하-구간-label",
-      "text": {
-        "en": [
-          {
-            "text": "B. Load Bands",
-            "strong": true
-          }
-        ],
-        "ko": [
-          {
-            "text": "나. 부하 구간",
-            "strong": true
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-부하-구간",
-      "text": {
-        "en": "B. Load Ranges",
-        "ko": "0~24 준비에는 물류 특화 효과가 없다. 25~49 긴장에서는 준비도가 감소하고 여유 용량이 필요한 임의 행동을 제한한다. 50~74 임계에서는 구간 진입 시 미치료 부상 하나를 악화시키거나 최하위 상태 장비 하나를 손상시킨다. 둘 다 없으면 지정 화물을 잃는다. 대상은 심각도 다음 영속 ID 순으로 정한다. 75~99 실패에서는 후퇴·화물 유기·현지 조달·분할·명시적 고위험 속행 중 하나를 결정해야 한다. 100 붕괴에서는 전진 개시를 막고 좌초·항복·해산 또는 구조/최후 조우로 넘긴다. 자동 비율 사망은 적용하지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p5",
-      "text": {
-        "en": "Supply distribution was decided by policy priority and persistent-ID order. Goods fulfilled only demands whose capability tags matched; the medical, battery, and repair tags were never exchanged for one another even with general supply points left over.",
-        "ko": "보급은 정책 우선순위와 영속 ID 순서로 배분한다. 물자는 능력 태그가 맞는 수요에만 배정한다. 일반 보급점이 남아 있어도 의료·배터리·수리 태그는 서로 바꾸지 않는다."
-      }
     },
     {
       "kind": "heading",

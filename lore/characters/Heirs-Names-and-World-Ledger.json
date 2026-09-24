@@ -102,14 +102,6 @@
       }
     },
     {
-      "kind": "paragraph",
-      "anchor": "후계-이름-로스터-세계-원장-p2",
-      "text": {
-        "en": "This document defines the target rules for generating heirs. It distinguishes the 412 people with detailed character bodies from the 10 listed only in the current roster of 422, and does not rename names already assigned. Candidate sampling in `tools/cast/generate_nemotron_roster.py` does not mean the heir, relation, or save features below are implemented.",
-        "ko": "이 문서는 후계 생성의 목표 규칙이다. 현재 총람 422명 가운데 상세 인물 본문이 있는 412명과 총람만 있는 10명을 구분하며, 이미 붙인 이름을 다시 짓지 않는다. `tools/cast/generate_nemotron_roster.py`의 후보 샘플링은 아래 후계·관계·저장 기능의 구현 완료를 뜻하지 않는다."
-      }
-    },
-    {
       "kind": "heading",
       "anchor": "문화-키",
       "depth": 2,
@@ -337,17 +329,7 @@
               }
             },
             {
-              "text": " — experimental seeds pairing bon-gwan names with created character sequences. Not historical clan hangnyeol tables. The difference between the target contract and current implementation is documented in "
-            },
-            {
-              "text": "Bon-gwan and Hangnyeol",
-              "link": {
-                "domain": "characters",
-                "slug": "Hangnyeol-and-Bon-gwan"
-              }
-            },
-            {
-              "text": "."
+              "text": " — experimental seeds pairing bon-gwan names with created character sequences. Not historical clan hangnyeol tables."
             }
           ],
           "ko": [
@@ -359,17 +341,7 @@
               }
             },
             {
-              "text": " — 본관명과 창작 글자 순서를 붙인 실험용 시드. 실존 문중 항렬표가 아닙니다. 목표 계약과 현재 구현의 차이는 "
-            },
-            {
-              "text": "본관과 항렬",
-              "link": {
-                "domain": "characters",
-                "slug": "Hangnyeol-and-Bon-gwan"
-              }
-            },
-            {
-              "text": "에 둔다."
+              "text": " — 본관명과 창작 글자 순서를 붙인 실험용 시드. 실존 문중 항렬표가 아닙니다."
             }
           ]
         }
@@ -610,14 +582,6 @@
       "text": {
         "en": "Micro-Records",
         "ko": "미시 기록"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "미시-기록-p1",
-      "text": {
-        "en": "Actions the player takes toward characters do not immediately alter state values. Only the following are recorded.",
-        "ko": "플레이어가 인물에게 하는 일은 국가 수치를 바로 건드리지 않는다. 아래만 기록한다."
       }
     },
     {

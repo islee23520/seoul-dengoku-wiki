@@ -65,14 +65,6 @@
     },
     {
       "kind": "paragraph",
-      "anchor": "경제와-생산-p1",
-      "text": {
-        "en": "A wiki diagram dated 2026-09-07. The direction-by-direction cell placement was the grammar of that day's drawing — a flat diagram for documentation, not an actual game screen.",
-        "ko": "2026-09-07 위키 도표의 방향별 칸 배치는 당시 그림의 문법이었다. 도표는 문서용 평면도이며 실제 게임 화면이 아니다."
-      }
-    },
-    {
-      "kind": "paragraph",
       "anchor": "경제와-생산-p2",
       "text": {
         "en": "Labor was placed around production facilities and line capacity matched to stock flows.",
@@ -83,8 +75,8 @@
       "kind": "paragraph",
       "anchor": "경제와-생산-p3",
       "text": {
-        "en": "The economy was not one money but a combination of survival resources, production resources, labor, power, and actual transport capacity. All numbers were design assumptions for the first prototype.",
-        "ko": "경제는 생존 자원, 제작 자원, 노동, 전력과 실제 운송 능력으로 구성된다. 문서의 모든 수치는 첫 프로토타입용 설계 가정이다."
+        "en": "The economy was not one money but a combination of survival resources, production resources, labor, power, and actual transport capacity.",
+        "ko": "경제는 생존 자원, 제작 자원, 노동, 전력과 실제 운송 능력으로 구성된다."
       }
     },
     {
@@ -217,135 +209,6 @@
           }
         ]
       ]
-    },
-    {
-      "kind": "heading",
-      "anchor": "계산-규칙",
-      "depth": 2,
-      "text": {
-        "en": "Calculation Rules",
-        "ko": "계산 규칙"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p1-label",
-      "text": {
-        "en": [
-          {
-            "text": "A. Essential Consumption and Production",
-            "strong": true
-          }
-        ],
-        "ko": [
-          {
-            "text": "가. 필수 소비와 생산",
-            "strong": true
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p1",
-      "text": {
-        "en": "At the start of a day, water, food, and emergency medicine for the residents were reserved first, and facility inputs and market orders were assigned after. Production was limited by the lowest fulfillment rate among labor, inputs, power, and facility state. When a demand was 0 or the required-input set was empty, that fulfillment rate was 1, and in no case was there division by zero.",
-        "ko": "하루 시작에 주민용 물·식량·응급 의료를 먼저 예약한다. 그 뒤 시설 입력과 시장 주문을 배정한다. 생산량에는 노동·입력·전력 충족률 중 최솟값과 시설 상태를 적용한다. 요구량이 0이거나 필요 입력 집합이 비어 있으면 해당 충족률은 1이다. 0으로 나누는 계산은 하지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p2",
-      "text": {
-        "en": "The daily settlement order was part of the determinism and followed the numbering below.",
-        "ko": "일일 정산 순서는 결정론의 일부이다. 정산은 아래 번호를 따른다."
-      }
-    },
-    {
-      "kind": "list",
-      "anchor": "계산-규칙-list3",
-      "ordered": true,
-      "items": [
-        {
-          "en": "Fix the day's line states, passage rights, unit positions, available labor, policies, demands, and assigned priorities.",
-          "ko": "당일 노선 상태, 통과권, 부대 위치, 가용 인력, 정책, 수요, 지정 우선순위를 고정한다."
-        },
-        {
-          "en": "Compute network overreach and available line capacity.",
-          "ko": "네트워크 과확장과 가용 노선 용량을 계산한다."
-        },
-        {
-          "en": "Reserve labor for defense, expedition, treatment, and transport orders.",
-          "ko": "방어·원정·치료·운송 명령에 인력을 예약한다."
-        },
-        {
-          "en": "Reserve opening stock and power for the day's essential consumption; facility inputs did not consume this reservation.",
-          "ko": "개시 재고와 전력을 당일 필수 소비에 예약하며, 시설 입력은 이 예약을 소비하지 않는다."
-        },
-        {
-          "en": "Assign the remaining labor to facilities by assigned priority, breaking ties by stable facility ID then stable laborer ID.",
-          "ko": "남은 인력을 지정 우선순위로 시설에 배정하고, 동순위는 안정 시설 ID 다음 안정 인력 ID로 끊는다."
-        },
-        {
-          "en": "Assign unreserved power and stock inputs to facilities by the same priority and tie rules.",
-          "ko": "미예약 전력과 재고 입력을 같은 우선순위·동점 규칙으로 시설에 배정한다."
-        },
-        {
-          "en": "Run production per the assignments, consume inputs, and add outputs.",
-          "ko": "배정에 따라 생산을 실행하고 입력을 소비하며 산출을 더한다."
-        },
-        {
-          "en": "Dispatch licensed freight from unreserved departure stock, limited by destination storage headroom, freight labor, line capacity, and passage rights. Arrived stock could be used for the destination's same-day essential consumption.",
-          "ko": "미예약 출발 재고에서 인가 화물을 발송하며, 도착지 여유 저장·화물 노동·노선 용량·통과권으로 제한한다. 도착 재고는 도착지의 당일 필수 소비에 쓸 수 있다."
-        },
-        {
-          "en": "Settle essential consumption from reserved shares, arrived freight, and the day's output at the same consumer priority.",
-          "ko": "예약분, 도착 화물, 당일 산출로 필수 소비를 같은 소비자 우선순위로 정산한다."
-        },
-        {
-          "en": "Compute shortages, the next day's labor endurance, local buy and sell prices, overflows, and exposed convoy and stockpile facts.",
-          "ko": "부족, 다음 날 노동 지속성, 현지 매수·매도 가격, 넘침, 노출된 호송·비축 사실을 계산한다."
-        },
-        {
-          "en": "Leave cause-by-cause receipts and update the daily totals. The weekly system read these receipts and did not recompute the day.",
-          "ko": "원인별 영수증을 남기고 일일 집계를 갱신한다. 주간 시스템은 이 영수증을 읽으며 하루를 다시 계산하지 않는다."
-        }
-      ]
-    },
-    {
-      "kind": "code",
-      "anchor": "계산-규칙-code4",
-      "language": "text",
-      "text": {
-        "en": "labor-rate = 1 if required-labor is 0, else clamp(available-skilled-labor / required-labor, 0, 1)\ninput-rate = 1 if the required-input set is empty, else min_r(1 if required-amount_r is 0, else clamp(allocated-amount_r / required-amount_r, 0, 1))\npower-rate = 1 if required-power is 0, else clamp(allocated-power / required-power, 0, 1)\nproduction = base-output * min(labor-rate, input-rate, power-rate) * facility-state\nshortage-rate_r = 0 if total-demand_r is 0, else clamp(1 - fulfilled-demand_r / total-demand_r, 0, 1)\nlabor-endurance = clamp(1 - sum_r(penalty-coefficient_r * shortage-rate_r), 0.2, 1)",
-        "ko": "노동률 = 필요인력이 0이면 1, 아니면 clamp(가용직능인력 / 필요인력, 0, 1)\n입력률 = 필요 입력 집합이 비어 있으면 1, 아니면 min_r(필요량_r이 0이면 1, 아니면 clamp(배정량_r / 필요량_r, 0, 1))\n전력률 = 필요전력이 0이면 1, 아니면 clamp(배정전력 / 필요전력, 0, 1)\n생산량 = 기본산출 * min(노동률, 입력률, 전력률) * 시설상태\n부족률_r = 총수요_r이 0이면 0, 아니면 clamp(1 - 충족수요_r / 총수요_r, 0, 1)\n노동지속성 = clamp(1 - sum_r(감점계수_r * 부족률_r), 0.2, 1)"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p5-label",
-      "text": {
-        "en": [
-          {
-            "text": "B. Prices and Isolation",
-            "strong": true
-          }
-        ],
-        "ko": [
-          {
-            "text": "나. 가격과 격리",
-            "strong": true
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "계산-규칙-p5",
-      "text": {
-        "en": "Price made no stock. A trade stood only with actual goods, purchasing power, access rights, and transport capacity. The price multiplier moved, added onto the scarce item, by the product of isolation sensitivity (design assumption 0.35), the import-dependence term `I = 0 if essential demand is 0, else 1 - clamp(inbound capacity / essential demand, 0, 1)`, and the per-resource import dependence. Isolation erased no production directly; it limited transport, widened the price half-band, and raised the prices only of resources with import dependence above 0.",
-        "ko": "가격만으로 재고가 생기지는 않는다. 거래에는 실제 물건, 구매력, 접근권과 운송 용량이 필요하다. 가격 승수에는 희소 항과 격리 민감도(설계 가정 0.35), 수입 의존 항 `I = 필수 수요가 0이면 0, 아니면 1 - clamp(반입 용량 / 필수 수요, 0, 1)`, 자원별 수입 의존도의 곱을 더한다. 격리는 수송을 제한하고 가격 반폭을 넓힌다. 격리로 인한 가격 상승은 수입 의존도가 0보다 큰 자원에만 적용한다. 격리만으로 생산량을 직접 줄이지 않는다."
-      }
     },
     {
       "kind": "heading",
@@ -577,80 +440,6 @@
           }
         ]
       }
-    },
-    {
-      "kind": "list",
-      "anchor": "경계-상황-list1",
-      "items": [
-        {
-          "en": "With demand 0, the shortage rate too was 0; no division by zero.",
-          "ko": "수요가 0이면 부족률도 0이며 0으로 나누지 않는다."
-        },
-        {
-          "en": "With required labor 0, the labor rate was 1; no division by zero.",
-          "ko": "필요 노동이 0이면 노동률은 1이며 0으로 나누지 않는다."
-        },
-        {
-          "en": "With required power 0, the power rate was 1; no division by zero.",
-          "ko": "필요 전력이 0이면 전력률은 1이며 0으로 나누지 않는다."
-        },
-        {
-          "en": "With an individual input's required amount 0, that input's fulfillment rate was set to 1.",
-          "ko": "개별 입력의 필요량이 0이면 그 입력의 충족률은 1로 둔다."
-        },
-        {
-          "en": "With the required-input set empty, the input rate was set to 1.",
-          "ko": "필요 입력 집합이 비어 있으면 입력률은 1로 둔다."
-        },
-        {
-          "en": "Shortages of water, food, and power lowered the next day's labor; a medicine shortage limited the treatment acts themselves.",
-          "ko": "물·식량·전력 부족은 다음 날 노동을 낮추고, 의약품 부족은 치료 행동 자체를 제한한다."
-        },
-        {
-          "en": "An ammunition shortage limited not residents' labor but tactical equipment and the number of possible sorties.",
-          "ko": "탄약 부족은 주민 노동이 아니라 전술 장비와 출격 가능 수량을 제한한다."
-        },
-        {
-          "en": "Under a labor shortage, no unqualified person was substituted automatically; production orders were partially completed.",
-          "ko": "인력 부족 시 자격 없는 인물을 자동 대체하지 않고 생산 주문이 부분 완료된다."
-        },
-        {
-          "en": "A self-sufficient isolated station took no arbitrary isolation penalty on the price of the resource it produced.",
-          "ko": "고립된 자급 역은 해당 자원의 가격에 임의의 고립 감점을 받지 않는다."
-        },
-        {
-          "en": [
-            {
-              "text": "Under overreach, line output fell by up to 50% and local output by up to 25%. Coordination demand was the per-station administrative demand of 1 point plus 0.5 points per operated line (design assumption), and coordination supply was assigned logistics 2 points, contact 1.5 points, records 1.5 points, and ledger upgrades (design assumption). These two were the governance-burden and administrative-capacity inputs of the overreach formula in "
-            },
-            {
-              "text": "Logistics and Infrastructure",
-              "link": {
-                "domain": "economy",
-                "slug": "Logistics-and-Infrastructure"
-              }
-            },
-            {
-              "text": ", and the 50% and 25% reductions above were proportional to clamp(overreach, 0, 1) and never exceeded those caps."
-            }
-          ],
-          "ko": [
-            {
-              "text": "과확장 시 노선 산출은 최대 50%, 현지 산출은 최대 25%까지 감소한다. 조율 수요는 역당 행정 수요 1점에 운영 노선당 0.5점(설계 가정)을 더한 값이며, 조율 공급은 배정 물류 2점·연락 1.5점·기록 1.5점과 저작 업그레이드(설계 가정)다. 이 둘은 "
-            },
-            {
-              "text": "물류와 기반 시설",
-              "link": {
-                "domain": "economy",
-                "slug": "Logistics-and-Infrastructure"
-              }
-            },
-            {
-              "text": " 과확장 공식의 통치부담·행정역량 입력이며, 앞의 50%·25% 감소는 clamp(과확장, 0, 1)에 비례하고 그 상한을 넘지 않는다."
-            }
-          ]
-        }
-      ]
     },
     {
       "kind": "heading",
