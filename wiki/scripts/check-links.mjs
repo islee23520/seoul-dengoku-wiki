@@ -5,18 +5,19 @@ import { fileURLToPath } from 'node:url'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const source = await readFile(resolve(root, 'src/wikiLinks.ts'), 'utf8')
 const paths = [...source.matchAll(/:\s*'([^']+)'/g)].map((match) => match[1])
-const spaRoutes = new Set(['/', '/states', '/documents', '/people'])
-const catalogRoutes = new Set((await readdir(resolve(root, '../wiki-source/world')))
-  .filter((name) => name.endsWith('.md'))
-  .map((name) => `/world/${name === 'index.md' ? '' : name.slice(0, -3)}`))
+const spaRoutes = new Set(['/', '/states', '/documents', '/people', '/updates'])
+const catalogSource = await readFile(resolve(root, 'src/generated/wikiCatalog.ts'), 'utf8')
+const catalogRoutes = new Set([...catalogSource.matchAll(/route: '([^']+)'/g)].map((match) => match[1]))
 
 const failures = []
 for (const path of paths) {
   if (path.startsWith('http') || spaRoutes.has(path) || catalogRoutes.has(path)) continue
-  const relative = path.replace(/^\//, '')
-  const candidates = path.endsWith('/')
-    ? [resolve(root, '../wiki-source/dist', relative, 'index.html')]
-    : [resolve(root, '../wiki-source/dist', relative)]
+  const route = path.replace(/\/$/, '')
+  const page = route === '' ? 'index.html' : `${route.replace(/^\//, '')}.html`
+  const candidates = [
+    resolve(root, 'dist', page),
+    resolve(root, 'dist', route.replace(/^\//, ''), 'index.html'),
+  ]
   let found = false
   for (const candidate of candidates) {
     try {

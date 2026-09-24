@@ -7,7 +7,7 @@ import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { toString } from 'mdast-util-to-string'
 import { gfm } from 'micromark-extension-gfm'
 
-import { renderLoreMarkdown } from '../../wiki-source/scripts/lore-json-render.mjs'
+import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 const loreRoot = resolve(import.meta.dirname, '../../lore')
 const parse = (markdown) => fromMarkdown(markdown, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] })

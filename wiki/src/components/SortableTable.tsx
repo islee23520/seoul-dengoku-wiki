@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 interface SortableTableProps {
   headers: string[]
-  rows: (string | { text: string; link?: string; badge?: 'power' | 'weak' })[][]
+  rows: (string | { text: string; link?: string; badge?: 'power' | 'mid' | 'weak' })[][]
 }
 
 type TableCell = SortableTableProps['rows'][number][number]
@@ -34,7 +34,7 @@ export default function SortableTable({ headers, rows }: SortableTableProps) {
     if (typeof cell === 'string') return cell
     if (cell.badge) {
       return <span className={`inline-block rounded px-2 py-0.5 text-xs font-semibold ${
-        cell.badge === 'power' ? 'bg-red-50 text-red-700' : 'bg-green-50 text-green-700'
+        cell.badge === 'power' ? 'bg-red-50 text-red-700' : cell.badge === 'mid' ? 'bg-amber-50 text-amber-800' : 'bg-green-50 text-green-700'
       }`}>{cell.text}</span>
     }
     if (cell.link) return <Link to={cell.link} className="font-medium text-accent hover:underline">{cell.text}</Link>

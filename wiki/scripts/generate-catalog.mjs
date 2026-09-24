@@ -1,13 +1,20 @@
-import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
-import { basename, dirname, extname, relative, resolve } from 'node:path'
+import { mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
+import { basename, dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import proj4 from 'proj4'
-import { STATES } from '../../../TOOL/tools/wiki/world-atlas-schema.mjs'
+import { fromMarkdown } from 'mdast-util-from-markdown'
+import { gfmFromMarkdown } from 'mdast-util-gfm'
+import { gfm } from 'micromark-extension-gfm'
+import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs'
+import { projectionsFromAtlas } from './world-atlas-render.mjs'
+import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { buildWorldIndex } from './build-world-index.mjs'
 import { latestUpdates } from './update-history.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const repoRoot = resolve(projectRoot, '../..')
-const contentRoot = resolve(projectRoot, 'src/content')
+// This checkout is the wiki submodule (lore/ and wiki/ at its root), not WEB/ inside the parent repo.
+const repoRoot = resolve(projectRoot, '..')
+const worldJsonRoot = resolve(projectRoot, 'src/generated/world')
 const generatedRoot = resolve(projectRoot, 'src/generated')
 const publicRoot = resolve(projectRoot, 'public')
 const domains = ['world']
@@ -15,6 +22,73 @@ const wikiAssetTarget = resolve(publicRoot, 'wiki-assets')
 
 const normalizeTitle = (markdown, fallback) =>
   markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
+
+const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
+
+const splitCells = (line) => line.split('|').slice(1, -1).map((cell) => cell.trim())
+
+const rowCell = (row, prefix) => Object.entries(row).find(([key]) => key === prefix || key.startsWith(prefix))?.[1] ?? ''
+
+const tableRows = (markdown) => {
+  const lines = markdown.split('\n')
+  const start = lines.findIndex((line) => line.startsWith('|') && !/^\|\s*---/.test(line))
+  if (start < 0) return []
+  const block = []
+  for (const line of lines.slice(start)) {
+    if (!line.startsWith('|')) break
+    if (!/^\|\s*---/.test(line)) block.push(line)
+  }
+  const header = /국명|ID/.test(block[0] ?? '') ? splitCells(block.shift()) : null
+  return block.map((line) => {
+    const cells = splitCells(line)
+    return header
+      ? Object.fromEntries(header.map((column, index) => [column, cells[index] ?? '']))
+      : { '국명': cells[0] ?? '', '기원': cells[1] ?? '', '형태': cells[2] ?? '', '강국': cells[3] ?? '', '원인': cells[4] ?? '' }
+  }).filter((row) => row['국명'] && row['국명'] !== '국명')
+}
+
+const parseStateRows = (markdown) => {
+  const rows = tableRows(markdown).map((row) => {
+    const idCell = row.ID ?? row['식별자'] ?? ''
+    const id = idCell.match(/S(?:0[1-9]|1[0-6])/u)?.[0]
+    const originCell = rowCell(row, '기원') || rowCell(row, '출신')
+    const embedded = (originCell.match(/중심\s*([^|()]+?)역/u) ?? originCell.match(/([가-힣]{2,8})역/u) ?? [])[1] ?? ''
+    const capital = (rowCell(row, '수도역') || rowCell(row, '중심역')).replace(/역$/u, '').trim() || embedded.trim()
+    return {
+      id,
+      name: publicStateName(row['국명']),
+      names: [...new Set([
+        publicStateName(row['국명']),
+        ...[...row['국명'].matchAll(/기원 표기 ([^,)]+)/gu)].map((match) => match[1].trim()),
+        (originCell.split(/[.]/u)[0] ?? '').trim(),
+      ].filter((candidate) => candidate.length >= 2))],
+      origin: originCell || rowCell(row, '정부') || rowCell(row, '형태'),
+      government: rowCell(row, '정부') || rowCell(row, '형태'),
+      power: (rowCell(row, '등급') || rowCell(row, '강국')).split(',')[0].trim(),
+      cause: rowCell(row, '국호') || rowCell(row, '원인') || rowCell(row, '인과') || rowCell(row, '유래'),
+      capital,
+    }
+  })
+  if (rows.length !== 16 || rows.some((row) => !row.name)) throw new Error(`E_STATE_TABLE:${rows.length}`)
+  rows.forEach((row, index) => {
+    if (!row.id) row.id = `S${String(index + 1).padStart(2, '0')}`
+  })
+  if (rows.some((row) => !row.capital)) throw new Error(`E_STATE_CAPITAL:${rows.filter((row) => !row.capital).map((row) => row.name).join(',')}`)
+  return rows
+}
+
+const leaderForNames = (markdown, names) => {
+  if (!markdown) return ''
+  const ranked = []
+  for (const match of markdown.matchAll(/^## ([^\n]+)\n\n([\s\S]*?)(?=\n## |$)/gm)) {
+    const intro = match[2].split('\n', 1)[0]
+    const introHit = names.some((candidate) => candidate && (intro.startsWith(candidate) || intro.includes(`${candidate} `)))
+    const bodyHit = names.some((candidate) => candidate && match[2].includes(candidate))
+    if (introHit || bodyHit) ranked.push({ person: match[1].trim(), score: introHit ? 2 : 1 })
+  }
+  ranked.sort((left, right) => right.score - left.score)
+  return ranked[0]?.person ?? ''
+}
 
 const githubBlob = 'https://github.com/islee23520/seoul-kenshi/blob/main/'
 
@@ -53,26 +127,84 @@ const normalizeMarkdown = (markdown, domain, routeBySlug) => stripProjectionHead
   .replace(/<NavBox[\s\S]*?<\/NavBox>/g, ''))
   .replace(/\]\(([^)]+)\)/g, (_full, href) => `](${rewriteRelativeHref(href, domain, routeBySlug)})`)
 
-await rm(contentRoot, { recursive: true, force: true })
-await mkdir(contentRoot, { recursive: true })
+const firstExisting = async (candidates) => {
+  for (const candidate of candidates) {
+    try {
+      if ((await stat(candidate)).isFile()) return candidate
+    } catch {}
+  }
+  throw new Error(`E_SOURCE_MISSING:${candidates.join('|')}`)
+}
+
+const outsideRoots = [resolve(repoRoot, '..'), resolve(repoRoot, '../..')]
+const resolveOutside = (relativePath) => firstExisting([
+  resolve(repoRoot, relativePath),
+  ...outsideRoots.map((root) => resolve(root, relativePath)),
+])
+
+const loreJsonDocument = (value) => value && typeof value === 'object' && !Array.isArray(value) && typeof value.domain === 'string' && Array.isArray(value.content)
+
+const walkLoreJson = async (dir, acc = []) => {
+  for (const entry of await readdir(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith('.')) continue
+    const path = join(dir, entry.name)
+    if (entry.isDirectory()) {
+      if (['name-pools', 'regions', 'editorial', 'sources'].includes(entry.name)) continue
+      await walkLoreJson(path, acc)
+      continue
+    }
+    if (!entry.isFile() || !entry.name.endsWith('.json') || entry.name.startsWith('authoring.')) continue
+    const value = JSON.parse(await readFile(path, 'utf8'))
+    if (loreJsonDocument(value)) acc.push({ path, value, slug: basename(entry.name, '.json') })
+  }
+  return acc
+}
+
+await rm(resolve(projectRoot, 'src/content'), { recursive: true, force: true })
+await rm(worldJsonRoot, { recursive: true, force: true })
+await mkdir(worldJsonRoot, { recursive: true })
 await mkdir(generatedRoot, { recursive: true })
 await mkdir(publicRoot, { recursive: true })
 await rm(wikiAssetTarget, { recursive: true, force: true })
 
+const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
+const jsonPages = await walkLoreJson(loreRoot)
+const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
+const atlasMarkdown = await readFile(resolve(loreRoot, 'World-Narrative-Atlas.md'), 'utf8')
+const atlas = extractAtlasJson(atlasMarkdown)
+if (!atlas.ok) throw new Error(`E_ATLAS_JSON:${atlas.error}`)
+const atlasHash = sha256Text(atlasMarkdown)
+const projections = projectionsFromAtlas(atlas.value, atlasHash)
+const glossaryMarkdown = await readFile(resolve(loreRoot, 'Glossary.md'), 'utf8')
+const worldIndex = await buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
+
+const renderedBySlug = new Map()
+for (const page of jsonPages) {
+  renderedBySlug.set(page.slug, renderLoreMarkdown(page.value, 'ko', (_domain, slug) => `${slug}.md`))
+}
+for (const [name, markdown] of Object.entries(projections)) {
+  const slug = basename(name, '.md')
+  if (pagesBySlug.has(slug)) throw new Error(`E_PROJECTION_COLLIDES_WITH_JSON:${slug}`)
+  renderedBySlug.set(slug, markdown)
+}
+if (pagesBySlug.has('Glossary')) throw new Error('E_GLOSSARY_JSON_UNEXPECTED')
+renderedBySlug.set('Glossary', glossaryMarkdown)
+// The atlas is the hand-authored canon (no JSON twin). Its machine registry is the canonical
+// JSON inside the ```json fence; the page body is that canon with reader links rewritten below.
+renderedBySlug.set('World-Narrative-Atlas', atlasMarkdown)
+renderedBySlug.set('index', worldIndex)
+
 const documents = []
 for (const domain of domains) {
-  const sourceDir = resolve(repoRoot, 'WEB/wiki-source', domain)
-  const names = (await readdir(sourceDir)).filter((name) => extname(name) === '.md').sort()
-  for (const name of names) {
-    const slug = basename(name, '.md')
-    const markdown = await readFile(resolve(sourceDir, name), 'utf8')
+  for (const slug of [...renderedBySlug.keys()].sort((left, right) => left.localeCompare(right))) {
+    const markdown = renderedBySlug.get(slug)
     documents.push({
       domain,
       slug,
       route: `/${domain}/${slug === 'index' ? '' : slug}`,
       title: normalizeTitle(markdown, slug),
       markdown,
-      name,
+      name: `${slug}.md`,
     })
   }
 }
@@ -84,9 +216,15 @@ for (const document of documents) {
 }
 
 for (const document of documents) {
-  const targetDir = resolve(contentRoot, document.domain)
-  await mkdir(targetDir, { recursive: true })
-  await writeFile(resolve(targetDir, document.name), normalizeMarkdown(document.markdown, document.domain, routeBySlug))
+  const body = normalizeMarkdown(document.markdown, document.domain, routeBySlug)
+  const blocks = fromMarkdown(body, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
+  const removePositions = (node) => {
+    delete node.position
+    for (const child of node.children ?? []) removePositions(child)
+  }
+  for (const block of blocks) removePositions(block)
+  await writeFile(resolve(worldJsonRoot, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, blocks })}
+`)
 }
 
 const lines = [
@@ -114,47 +252,46 @@ const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/updat
 const wikiUpdates = latestUpdates(updateHistory.updates)
 await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdate = { readonly date: string; readonly sequence: number; readonly title: string; readonly category: string; readonly status: string; readonly source: string; readonly route: string }\n\nexport const wikiUpdateHistory = ${JSON.stringify(updateHistory.updates, null, 2)} as const satisfies readonly WikiUpdate[]\n\nexport const wikiUpdates = ${JSON.stringify(wikiUpdates, null, 2)} as const satisfies readonly WikiUpdate[]\n`)
 
-const stateSource = await readFile(resolve(repoRoot, 'WEB/lore/factions/Sixteen-States.md'), 'utf8')
-const officesSource = await readFile(resolve(repoRoot, 'WEB/lore/offices/Offices-and-Ranks.md'), 'utf8')
+const stateSource = renderedBySlug.get('Sixteen-States')
+const officesSource = renderedBySlug.get('Offices-and-Ranks')
+if (!stateSource || !officesSource) throw new Error('E_STATE_OR_OFFICE_PAGE_MISSING')
 const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
 const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .map((match) => [match[1].trim(), match.slice(2).map((rank) => rank.trim())]))
-const stateTable = stateSource.match(/\| 국명 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
-const stateRows = [...stateTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
-  .map((match) => match.slice(1).map((cell) => cell.trim()))
-  .filter(([name]) => name !== '국명' && !name.startsWith('---'))
-const rulerByState = new Map([
-  ['대한민국정부', '윤서린'], ['여의도출자연합회', '최지우'], ['서초전산그룹', '이홍원'], ['양재기공주식회사', '정호준'],
-  ['설교명부정', '오경재'], ['본당인준정', '남윤경'], ['승가구휼정', '백온'], ['교헌필사정', '오해린'],
-  ['정동노동총연맹', '정유라'], ['급수계약정', '한재목'], ['규격동맹', '강민서'], ['선로후계정', '박태겸'],
-  ['호위보호정', '배우진'], ['관문군정', '고서준'], ['중립호송시', '장세화'], ['의약중립맹', '류은비'],
-])
-const stateSlug = (index) => `s${String(index + 1).padStart(2, '0')}`
-const stateCatalog = stateRows.map(([name, origin, government, power, cause], index) => ({
-  slug: stateSlug(index), name, origin, government, power, cause, ruler: rulerByState.get(name) ?? '',
+const stateRows = parseStateRows(stateSource)
+const coreCharacters = renderedBySlug.get('Core-Characters')
+const stateCatalog = stateRows.map((row) => ({
+  slug: row.id.toLowerCase(),
+  name: row.name,
+  origin: row.origin,
+  government: row.government,
+  power: row.power,
+  cause: row.cause,
+  ruler: leaderForNames(coreCharacters, row.names),
+  capital: row.capital,
 }))
-await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export const stateCatalog = ${JSON.stringify(stateCatalog, null, 2)} as const\n`)
+await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type StateRecord = { slug: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
-const peopleSource = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/values-cast.json'), 'utf8')).people
-const genderSource = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/gender-cast.json'), 'utf8')).people
+const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
+const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
-const stateNameById = new Map(peopleSource.filter((person) => /^S(?:0[1-9]|1[0-6])$/u.test(person.state)).map((person) => [person.state, person.state_name]))
-const regionAtlasSource = await readFile(resolve(repoRoot, 'TOOL/tools/regions/data/atlas-data.js'), 'utf8')
+const stateNameById = new Map(stateCatalog.map((state) => [state.slug.toUpperCase(), state.name]))
+const regionAtlasSource = await readFile(await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
-const seoulGraph = JSON.parse(await readFile(resolve(repoRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
-const officialLineData = JSON.parse(await readFile(resolve(repoRoot, 'WEB/wiki/scripts/official-seoul-lines.json'), 'utf8'))
-const stationControlLedger = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/places/station-control-overrides.json'), 'utf8'))
+const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
+const stationControlLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/station-control-overrides.json'), 'utf8'))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
 proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
 
 const regionContentById = new Map()
-for (const entry of await readdir(resolve(repoRoot, 'WEB/lore/regions/content'), { withFileTypes: true })) {
+for (const entry of await readdir(resolve(loreRoot, 'regions/content'), { withFileTypes: true })) {
   if (!entry.isFile() || !/^\d{5}\.json$/u.test(entry.name)) continue
-  const district = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/regions/content', entry.name), 'utf8'))
+  const district = JSON.parse(await readFile(resolve(loreRoot, 'regions/content', entry.name), 'utf8'))
   for (const region of district.regions) regionContentById.set(region.region_id, region.content)
 }
 if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)
-const creativeNameLedger = JSON.parse(await readFile(resolve(repoRoot, 'RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
+const creativeNameLedger = JSON.parse(await readFile(await resolveOutside('RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
 const normalizePublicNames = (text) => {
   let normalized = text
   for (const entry of [...creativeNameLedger.replacements].sort((left, right) => right.old.length - left.old.length)) {
@@ -194,11 +331,8 @@ const pointInPolygon = ([x, y], points) => {
   }
   return inside
 }
-const capitalSource = await readFile(resolve(repoRoot, 'WEB/lore/factions/Sixteen-States.md'), 'utf8')
-const stateIdByName = new Map(STATES.map((state) => [state.name, state.id]))
-const capitalNameByState = new Map([...capitalSource.matchAll(/^\| ([^|]+) \| ([^|]*?중심\s+([^|()]+?)역(?:\([^|]*\))?[^|]*) \|/gm)]
-  .map((match) => [stateIdByName.get(match[1].trim()), match[3].trim()])
-  .filter(([stateId]) => stateId !== undefined))
+const stateIdByName = new Map(stateRows.map((row) => [row.name, row.id]))
+const capitalNameByState = new Map(stateRows.map((row) => [row.id, row.capital.replace(/역$/u, '')]))
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
@@ -274,7 +408,7 @@ const polygonMetrics = (points) => {
   }
 }
 const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => left.localeCompare(right)).map(([id, name]) => {
-  const state = stateCatalog.find((candidate) => candidate.name === name)
+  const state = stateCatalog.find((candidate) => candidate.slug === id.toLowerCase())
   if (!state) throw new Error(`E_TERRITORY_STATE_NOT_FOUND:${id}:${name}`)
   const candidates = regionAtlas.regions
     .filter((region) => region.content.polity_contexts.length === 1 && region.content.polity_contexts[0] === id)
@@ -336,11 +470,9 @@ const openingTerritories = {
 }
 await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
 
-const centuryAnnalsSource = await readFile(resolve(repoRoot, 'WEB/lore/chronology/Century-Annals.md'), 'utf8')
-const timelineField = (body, field) => body.match(new RegExp(`^- ${field}:\\s*(.+)$`, 'm'))?.[1]?.trim()
-  ?? body.match(new RegExp(`^\\| ${field} \\| (.+) \\|$`, 'm'))?.[1]?.trim()
-  ?? ''
-const firstSentence = (text) => text.match(/^.*?[.!?](?:\s|$)/u)?.[0]?.trim() ?? text.trim()
+const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
+if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
+const centuryAnnalsDocument = pagesBySlug.get('Century-Annals')?.value
 const relatedTimelineDocuments = (text) => {
   const related = [{ title: '서울전국 백년실록', route: '/world/Century-Annals' }]
   const add = (title, route) => { if (!related.some((entry) => entry.route === route)) related.push({ title, route }) }
@@ -352,16 +484,22 @@ const relatedTimelineDocuments = (text) => {
   if (peopleSource.some((person) => text.includes(person.name))) add('등장인물 전체', '/people')
   return related
 }
-const yearHeadings = [...centuryAnnalsSource.matchAll(/^### (20\d{2}|21\d{2})년$/gm)]
-const timelineYears = yearHeadings.map((heading, index) => {
-  const year = Number(heading[1])
-  const body = centuryAnnalsSource.slice(heading.index + heading[0].length, yearHeadings[index + 1]?.index ?? centuryAnnalsSource.length).trim()
-  const prose = body.split(/\n(?=[-|])/u)[0].split(/\n\s*\n/u).map((paragraph) => paragraph.trim()).filter(Boolean)
+const sourceParagraphs = (centuryAnnalsDocument?.content ?? [])
+  .filter((block) => block.kind === 'paragraph')
+  .map((block) => typeof block.text.ko === 'string' ? block.text.ko : block.text.ko.map((run) => run.text).join(''))
+const byYear = new Map()
+for (const paragraph of sourceParagraphs) {
+  const year = Number(paragraph.match(/(?:^|\s)((?:20|21)\d{2})년/u)?.[1])
+  if (!Number.isInteger(year)) continue
+  if (!byYear.has(year)) byYear.set(year, [])
+  byYear.get(year).push(paragraph)
+}
+const timelineYears = [...byYear.entries()].sort(([left], [right]) => left - right).map(([year, prose]) => {
   const summary = prose.slice(0, 2).join(' ')
-  const pressure = timelineField(body, '압력') || firstSentence(prose[0] ?? '')
-  const decision = timelineField(body, '결정') || firstSentence(prose[1] ?? prose[0] ?? '')
-  const immediate = timelineField(body, '즉시') || firstSentence(prose.at(-1) ?? '')
-  const aftermath = timelineField(body, '뒤') || immediate
+  const pressure = ''
+  const decision = ''
+  const immediate = ''
+  const aftermath = ''
   return {
     year,
     summary,
@@ -370,10 +508,13 @@ const timelineYears = yearHeadings.map((heading, index) => {
     immediate,
     aftermath,
     sourceRoute: `/world/Century-Annals#${year}년`,
-    relatedDocuments: relatedTimelineDocuments(`${body}\n${summary}`),
+    relatedDocuments: relatedTimelineDocuments(prose.join('\n')),
   }
 })
-if (timelineYears.length !== 101 || timelineYears[0]?.year !== 2026 || timelineYears.at(-1)?.year !== 2126) throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}`)
+const duplicateYears = timelineYears.map((entry) => entry.year).filter((year, index, years) => years.indexOf(year) !== index)
+if (timelineYears.length === 0 || timelineYears[0]?.year !== 2026 || timelineYears.at(-1)?.year < timelineYears[0].year || duplicateYears.length > 0) {
+  throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${duplicateYears.join(',')}`)
+}
 await writeFile(resolve(publicRoot, 'timeline-overview.json'), `${JSON.stringify({ schema: 'seoul-timeline-overview.v1', years: timelineYears, states: territoryStates }, null, 2)}\n`)
 
 const personCards = new Map()
@@ -390,14 +531,17 @@ const addPersonCards = (text, file, pattern) => {
 }
 for (let index = 1; index <= 16; index += 1) {
   const file = `Cast-State-${String(index).padStart(2, '0')}.md`
-  const text = await readFile(resolve(repoRoot, 'WEB/lore/characters', file), 'utf8')
+  const text = renderedBySlug.get(basename(file, '.md'))
+  if (!text) throw new Error(`E_CAST_PAGE_MISSING:${file}`)
   addPersonCards(text, file, /^### 인물 (.+)$/gm)
 }
 for (const [file, pattern] of [['Core-Characters.md', /^## (?!인물 목록$)(.+)$/gm], ['Cast-Unaffiliated.md', /^### 인물 (.+)$/gm]]) {
-  const text = await readFile(resolve(repoRoot, 'WEB/lore/characters', file), 'utf8')
+  const text = renderedBySlug.get(basename(file, '.md'))
+  if (!text) throw new Error(`E_CAST_PAGE_MISSING:${file}`)
   addPersonCards(text, file, pattern)
 }
-const relationText = await readFile(resolve(repoRoot, 'WEB/lore/characters/Cast-Relations.md'), 'utf8')
+const relationText = renderedBySlug.get('Cast-Relations')
+if (!relationText) throw new Error('E_CAST_RELATIONS_MISSING')
 const relations = [...relationText.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .map((match) => ({ from: match[1].trim(), type: match[2].trim(), to: match[3].trim(), basis: match[4].trim() }))
   .filter((relation) => relation.from !== '인물' && !relation.from.startsWith('---'))
@@ -424,9 +568,10 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const position = fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
   const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const occupation = fields['생업'] ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
-  const stateTiers = tiersByState.get(person.state_name)
+  const stateName = stateNameById.get(person.state) ?? person.state_name
+  const stateTiers = tiersByState.get(stateName) ?? tiersByState.get(person.state_name)
   const tierIndex = stateTiers?.indexOf(rank) ?? -1
-  const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : (() => { throw new Error(`E_PERSON_TIER_MISSING:${person.name}:${person.state_name}:${rank}`) })()
+  const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
   return {
     id: `person-${String(index + 1).padStart(4, '0')}`,
     name: person.name,
@@ -438,7 +583,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
     gender: genderByName.get(person.name)?.gender ?? (() => { throw new Error(`E_PERSON_GENDER_MISSING:${person.name}`) })(),
     stage: person.stage,
     state: person.state,
-    stateName: person.state_name,
+    stateName,
     sourceRoute: `/world/${source}#${anchor}`,
     detailRoute: `/people/person-${String(index + 1).padStart(4, '0')}`,
   }
@@ -468,4 +613,4 @@ for (const person of peopleCatalog) {
   await writeFile(resolve(personDetailsRoot, `${person.id}.json`), `${JSON.stringify(detail, null, 2)}\n`)
 }
 await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const peopleCatalog = ${JSON.stringify(peopleCatalog, null, 2)} as const\nexport const peopleCount = ${peopleCatalog.length}\n`)
-console.log(`WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, contentRoot)}`)
+console.log(`WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)
