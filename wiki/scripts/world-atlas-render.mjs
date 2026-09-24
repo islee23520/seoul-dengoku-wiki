@@ -16,6 +16,11 @@ const GROUP_CATEGORIES = {
   biomechanical: '생체기계·시설 생태',
 };
 
+// Mirrors WorldBlocks.tsx headingId so projection fragments resolve in the rendered page.
+function headingId(text) {
+  return text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-');
+}
+
 function tableCell(value) {
   return String(value ?? '').trim().replaceAll('|', '&#124;').replace(/\n+/g, ' / ');
 }
@@ -201,7 +206,7 @@ export function renderHostileIndex(atlas, atlasHash) {
     lines.push(`- 교섭: ${group.negotiation}`);
     lines.push(`- 도덕 비용: ${group.moral_cost}`);
     const scenarioLinks = (group.scenario_outlines ?? []).length > 0
-      ? group.scenario_outlines.map((scenario) => `[${scenario.id}](groups/Hostile-Group-${group.id}.md#${scenario.id.toLowerCase()}--${scenario.title.replaceAll(' ', '-')})`)
+      ? group.scenario_outlines.map((scenario) => `[${scenario.id}](groups/Hostile-Group-${group.id}.md#${headingId(`${scenario.id} · ${scenario.title}`)})`)
       : group.scenario_links ?? [];
     lines.push(`- 시나리오: ${scenarioLinks.join(', ')}`);
     lines.push('');
