@@ -9,7 +9,8 @@
 import { fromMarkdown } from "mdast-util-from-markdown";
 import { gfmFromMarkdown } from "mdast-util-gfm";
 import { gfm } from "micromark-extension-gfm";
-const [mode, wt, doc, specPath] = process.argv.slice(2);
+const KO_ONLY = process.argv.includes("--ko-only");
+const [mode, wt, doc, specPath] = process.argv.slice(2).filter(a => a !== "--ko-only");
 const mdPath = `${wt}/lore/${doc}.md`, jsonPath = `${wt}/lore/${doc}.json`;
 const raw = await Bun.file(mdPath).text();
 const fm = raw.match(/^---\n[\s\S]*?\n---\n+/)?.[0] ?? "";
@@ -58,9 +59,10 @@ for (const e of spec.entries) {
     content.push(b); continue; }
   k++;
   if (e.i) { blocks.push(`**${e.i[0]}**`); content.push({ kind: "paragraph", anchor: `${base}-p${k}`, text: { en: [{ text: e.i[1], strong: true }], ko: [{ text: e.i[0], strong: true }] } }); continue; }
-  if (e.p) { if (!e.p[0]?.trim() || !e.p[1]?.trim()) throw new Error(`empty paragraph near ${base}`); blocks.push(e.p[0]); content.push({ kind: "paragraph", anchor: `${base}-p${k}`, text: { en: toRuns(e.p[1]), ko: toRuns(e.p[0]) } }); continue; }
+  if (e.p) { if (!e.p[0]?.trim() || (!KO_ONLY && !e.p[1]?.trim())) throw new Error(`empty paragraph near ${base}`); blocks.push(e.p[0]); content.push({ kind: "paragraph", anchor: `${base}-p${k}`, text: { en: toRuns(e.p[1]), ko: toRuns(e.p[0]) } }); continue; }
   throw new Error("bad entry " + JSON.stringify(e));
 }
+if (KO_ONLY) { const tailK = md.match(/\n*$/)[0] || "\n"; await Bun.write(mdPath, fm + blocks.join("\n\n") + tailK); console.log(`built ${doc} (ko-only: md written, json untouched; run full build after the English pass)`); process.exit(0); }
 const nonProse = j.content.filter(b => b.kind !== "paragraph").map(b => b.anchor).filter(a => !seen.has(a));
 if (nonProse.length) throw new Error(`non-prose blocks dropped: ${nonProse.join(", ")}`);
 const tail = md.match(/\n*$/)[0] || "\n";
