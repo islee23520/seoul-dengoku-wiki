@@ -4,23 +4,39 @@ import SortableTable from '../components/SortableTable'
 import { stateCatalog } from '../generated/stateCatalog'
 import { stateRoute } from '../wikiRouting'
 
-const stateRows = stateCatalog.map((state) => [
-  { text: state.name, link: stateRoute(state.slug) },
-  state.origin.match(/중심 ([^.)]+)/)?.[1] ?? state.origin,
-  state.government,
-  { text: state.power.startsWith('강국') ? '강국' : '약소', badge: state.power.startsWith('강국') ? 'power' as const : 'weak' as const },
-  state.ruler,
-])
+const tierOf = (power: string): '강국' | '약국' | '소국' => {
+  if (power.startsWith('강국')) return '강국'
+  if (power.startsWith('약국')) return '약국'
+  return '소국'
+}
 
-const links = Object.fromEntries(stateCatalog.map((state) => [state.name, stateRoute(state.slug)]))
+const tierBadge = { 강국: 'power', 약국: 'mid', 소국: 'weak' } as const
+
+type StateCell = string | { text: string; link?: string; badge?: 'power' | 'mid' | 'weak' }
+
+const stateRows: StateCell[][] = []
+for (const state of stateCatalog) {
+  const tier = tierOf(state.power)
+  stateRows.push([
+    { text: state.name, link: stateRoute(state.slug) },
+    state.capital || state.origin,
+    state.government,
+    { text: tier, badge: tierBadge[tier] },
+    state.ruler,
+  ])
+}
+
+const tierGroups: { label: '강국' | '약국' | '소국'; links: { label: string; to: string }[] }[] = [
+  { label: '강국', links: [] },
+  { label: '약국', links: [] },
+  { label: '소국', links: [] },
+]
+for (const state of stateCatalog) {
+  tierGroups.find((group) => group.label === tierOf(state.power))?.links.push({ label: state.name, to: stateRoute(state.slug) })
+}
 const navBox = {
   title: '서울 십육국 둘러보기',
-  groups: [
-    { label: '서부', links: ['급수계약정', '규격동맹'].map((label) => ({ label, to: links[label] })) },
-    { label: '중앙', links: ['대한민국정부', '선로후계정', '전국경제인연합회'].map((label) => ({ label, to: links[label] })) },
-    { label: '동부', links: ['호위보호정', '중립호송시', '의약중립맹', '관문군정'].map((label) => ({ label, to: links[label] })) },
-     { label: '동남', links: ['서초전산그룹', '양재기공주식회사', '설교명부정', '본당인준정', '승가구휼정', '교헌필사정', '정동노동총연맹'].map((label) => ({ label, to: links[label] })) },
-  ],
+  groups: tierGroups.filter((group) => group.links.length > 0),
 }
 
 export default function StatesPage() {

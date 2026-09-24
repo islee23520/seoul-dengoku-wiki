@@ -1,21 +1,25 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
+import { spawnSync } from 'node:child_process'
 import { basename, dirname, extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { fromMarkdown } from 'mdast-util-from-markdown'
+import { gfmFromMarkdown } from 'mdast-util-gfm'
+import { gfm } from 'micromark-extension-gfm'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const repoRoot = resolve(projectRoot, '../..')
+const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, '../lore'))
 const domains = ['world']
 const outputArg = process.argv.indexOf('--json')
 const outputPath = outputArg >= 0 ? process.argv[outputArg + 1] : null
 
 const documents = []
 for (const domain of domains) {
-  const sourceDir = resolve(repoRoot, 'WEB/wiki-source', domain)
-  const names = (await readdir(sourceDir)).filter((name) => extname(name) === '.md').sort()
+  const sourceDir = resolve(projectRoot, 'src/generated/world')
+  const names = (await readdir(sourceDir)).filter((name) => extname(name) === '.json').sort()
   for (const name of names) {
-    const markdown = await readFile(resolve(sourceDir, name), 'utf8')
-    const heading = markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '') ?? basename(name, '.md')
-    documents.push({ domain, slug: basename(name, '.md'), title: heading })
+    const page = JSON.parse(await readFile(resolve(sourceDir, name), 'utf8'))
+    const heading = page.title ?? basename(name, '.json')
+    documents.push({ domain, slug: basename(name, '.json'), title: heading.trim() })
   }
 }
 
@@ -40,6 +44,8 @@ try {
 }
 
 const failures = []
+const relations = spawnSync(process.execPath, [resolve(loreRoot, 'relations/validate.mjs')], { encoding: 'utf8' })
+if (relations.status !== 0) failures.push(`relation-contract:${(relations.stderr || relations.stdout || relations.error?.message || 'missing validator').trim()}`)
 if (documents.length === 0) failures.push('document-count:0')
 if (!appSource.includes('path="/:domain/:slug"')) failures.push('missing-react-document-route')
 if (!articleSource.includes('wikiCatalog')) failures.push('article-not-backed-by-catalog')
@@ -55,12 +61,27 @@ for (const document of documents) {
 }
 
 for (const domain of domains) {
-  const contentDir = resolve(projectRoot, 'src/content', domain)
-  const names = (await readdir(contentDir)).filter((name) => extname(name) === '.md')
+  const contentDir = resolve(projectRoot, 'src/generated/world')
+  const names = (await readdir(contentDir)).filter((name) => extname(name) === '.json')
   for (const name of names) {
-    const markdown = await readFile(resolve(contentDir, name), 'utf8')
-    for (const match of markdown.matchAll(/\]\(([^)]+)\)/g)) {
-      const href = match[1]
+    const page = JSON.parse(await readFile(resolve(contentDir, name), 'utf8'))
+    if ('body' in page || !Array.isArray(page.blocks) || page.blocks.length === 0 || typeof page.reviewText !== 'string') failures.push(`unstructured-content:${domain}/${name}`)
+    else {
+      const parsed = fromMarkdown(page.reviewText, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
+      const withoutPosition = (node) => {
+        delete node.position
+        for (const child of node.children ?? []) withoutPosition(child)
+      }
+      for (const block of parsed) withoutPosition(block)
+      if (JSON.stringify(parsed) !== JSON.stringify(page.blocks)) failures.push(`review-text-drift:${domain}/${name}`)
+    }
+    const links = []
+    const visit = (node) => {
+      if (node.url && node.type === 'link') links.push(node.url)
+      for (const child of node.children ?? []) visit(child)
+    }
+    for (const block of page.blocks ?? []) visit(block)
+    for (const href of links) {
       if (!href.startsWith('http') && /\.html(?:#|$)/i.test(href)) failures.push(`legacy-content-link:${domain}/${name}:${href}`)
       if (!href.startsWith('/') && !href.startsWith('#') && !href.startsWith('http')) failures.push(`relative-content-link:${domain}/${name}:${href}`)
       if (/^\/world\//.test(href)) {

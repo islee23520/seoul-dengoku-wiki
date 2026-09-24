@@ -1,46 +1,17 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import type { Components } from 'react-markdown'
 import { wikiCatalog, type WikiDomain } from '../generated/wikiCatalog'
-import { normalizeWikiHref, toWikiPath } from '../wikiRouting'
+import { WorldBlocks, headingId, plainText, type WorldBlock } from '../components/WorldBlocks'
 
 const OpeningTerritoryMap = lazy(() => import('../components/OpeningTerritoryMap'))
 const TimelineOverview = lazy(() => import('../components/TimelineOverview'))
 
-const markdownModules = import.meta.glob<string>('../content/**/*.md', {
-  query: '?raw',
+const worldModules = import.meta.glob<{ blocks: WorldBlock[] }>('../generated/world/*.json', {
   import: 'default',
 })
 
 const isWikiDomain = (value: string | undefined): value is WikiDomain =>
   value === 'world'
-
-const markdownComponents: Components = {
-  a: ({ href, children, ...props }) => {
-    const normalizedHref = normalizeWikiHref(href)
-    if (normalizedHref.startsWith('/world/')) {
-      return <Link to={normalizedHref} {...props}>{children}</Link>
-    }
-    return <a href={normalizedHref.startsWith('/') ? toWikiPath(normalizedHref) : normalizedHref} rel={normalizedHref.startsWith('http') ? 'noreferrer' : undefined} {...props}>{children}</a>
-  },
-  table: ({ children }) => (
-    <div className="wiki-table-wrap">
-      <table>{children}</table>
-    </div>
-  ),
-  h2: ({ children }) => {
-    const title = String(children)
-    const id = title.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
-    return <h2 id={id}>{children}</h2>
-  },
-  h3: ({ children }) => {
-    const title = String(children)
-    const id = title.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
-    return <h3 id={id}>{children}</h3>
-  },
-}
 
 export default function ArticlePage() {
   const { domain, slug } = useParams()
@@ -48,20 +19,21 @@ export default function ArticlePage() {
 
   const normalizedSlug = slug?.replace(/\.html$/, '') || 'index'
   const wikiDocument = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
-  const [markdown, setMarkdown] = useState<string | null>(null)
+  const [blocks, setBlocks] = useState<WorldBlock[] | null>(null)
   const [loadFailed, setLoadFailed] = useState(false)
 
   useEffect(() => {
     let active = true
-    const load = markdownModules[`../content/${domain}/${normalizedSlug}.md`]
-    setMarkdown(null)
+    const load = worldModules[`../generated/world/${normalizedSlug}.json`]
+    setBlocks(null)
     setLoadFailed(false)
     if (!load) {
       setLoadFailed(true)
       return () => { active = false }
     }
     void load().then((content) => {
-      if (active) setMarkdown(content)
+      if (active) setBlocks(Array.isArray(content.blocks) ? content.blocks : null)
+      if (active && !Array.isArray(content.blocks)) setLoadFailed(true)
     }).catch((error: unknown) => {
       if (error instanceof Error) {
         if (active) setLoadFailed(true)
@@ -80,16 +52,14 @@ export default function ArticlePage() {
   }, [wikiDocument])
 
   const sectionLinks = useMemo(() => {
-    if (!markdown) return []
-    return [...markdown.matchAll(/^(#{2,3})\s+(.+)$/gm)].map((match) => {
-      const title = match[2].replace(/\s+\{#[^}]+\}\s*$/, '').trim()
-      const id = title.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
-      return { depth: match[1].length, id, title }
-    }).slice(0, 18)
-  }, [markdown])
+    if (!blocks) return []
+    return blocks.filter((block) => block.type === 'heading' && [2, 3].includes(block.depth ?? 0)).map((block) => ({
+      depth: block.depth ?? 2, title: plainText(block), id: headingId(plainText(block)),
+    })).slice(0, 18)
+  }, [blocks])
 
   if (!wikiDocument || loadFailed) return <Navigate to={`/${domain}/`} replace />
-  if (!markdown) {
+  if (!blocks) {
     return <div className="wiki-loading" role="status">문서를 불러오고 있습니다.</div>
   }
 
@@ -116,9 +86,7 @@ export default function ArticlePage() {
 
       <div className="wiki-article-grid">
         <div className="wiki-prose">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-            {markdown}
-          </ReactMarkdown>
+          <WorldBlocks blocks={blocks} />
         </div>
 
         {sectionLinks.length > 0 && (
