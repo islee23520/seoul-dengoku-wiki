@@ -17,6 +17,12 @@ const headingId = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]
 export const plainText = (node: WorldBlock): string => node.value ?? (node.children ?? []).map(plainText).join('')
 
 export function WorldBlocks({ blocks }: { blocks: WorldBlock[] }) {
+  const headingIds = new Set<string>()
+  const collectHeadingIds = (node: WorldBlock) => {
+    if (node.type === 'heading') headingIds.add(headingId(plainText(node)))
+    node.children?.forEach(collectHeadingIds)
+  }
+  blocks.forEach(collectHeadingIds)
   const datedYears = new Set<string>()
   const render = (node: WorldBlock, key: number): ReactNode => {
     const children = node.children?.map((child, index) => render(child, index))
@@ -28,7 +34,7 @@ export function WorldBlocks({ blocks }: { blocks: WorldBlock[] }) {
       }
       case 'paragraph': {
         const year = plainText(node).match(/(?:^|\s)((?:20|21)\d{2})년/u)?.[1]
-        const id = year && !datedYears.has(year) ? `${year}년` : undefined
+        const id = year && !datedYears.has(year) && !headingIds.has(`${year}년`) ? `${year}년` : undefined
         if (year && id) datedYears.add(year)
         return <p key={key} id={id}>{children}</p>
       }
