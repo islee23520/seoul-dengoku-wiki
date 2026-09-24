@@ -53,22 +53,9 @@ export default defineConfig({
       }
     },
     nav: [
-      { text: '게임설계', link: '/design/' },
       { text: '세계관', link: '/world/' }
     ],
     sidebar: {
-      '/design/': [
-        {
-          text: '게임설계',
-          collapsed: false,
-          items: sidebarItems('design', '/design')
-        },
-        {
-          text: '규칙 문서',
-          collapsed: true,
-          items: sidebarItems('rules', '/rules')
-        }
-      ],
       '/world/': [
         {
           text: '세계관',

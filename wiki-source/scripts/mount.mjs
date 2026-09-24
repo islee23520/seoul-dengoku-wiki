@@ -1,4 +1,5 @@
-// mount.mjs v3 — lore + materialized GDD pages + root documents → wiki-source/{world,rules,design}
+// mount.mjs v4 — lore → wiki-source/world. GDD pages are published by GDD/viewer at /gdd/;
+// materialized GDD pages are read only as link targets so lore links resolve to /gdd/ routes.
 // 유니온 pageByFile/pageByStem로 도메인 간 베어 링크 재작성 (스켑틱 #10)
 import { existsSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { basename, dirname, join } from 'node:path'
@@ -11,20 +12,20 @@ const wikiRoot = join(docsSiteRoot, '..')
 const repoRoot = join(wikiRoot, '..')
 const gddPagesRoot = process.env.GDD_PAGES_ROOT
 if (!gddPagesRoot) throw new Error('GDD_PAGES_ROOT is required: materialize GDD JSON canon before mounting')
-const rootDocsRoot = process.env.ROOT_DOCS_ROOT || repoRoot
 const referenceDir = join(repoRoot, 'RESEARCH', 'canon-reference')
 
 const GITHUB_WIKI = 'https://github.com/islee23520/seoul-kenshi/blob/main/' + 'retired-reference-assets/'
 
-const DOMAIN_ROOTS = [
-  { domain: 'world', dir: join(wikiRoot, 'lore') },
-  { domain: 'rules', dir: join(gddPagesRoot, 'rules') },
-  { domain: 'rules', dir: join(gddPagesRoot, 'references') },
-  { domain: 'rules', dir: join(gddPagesRoot, 'architecture') },
-  { domain: 'design', dir: gddPagesRoot },
-  { domain: 'design', dir: join(gddPagesRoot, 'art') },
+const WORLD_ROOT = join(wikiRoot, 'lore')
+// GDD viewer categories (GDD/viewer/scripts/generate-catalog.mjs): materialized dir -> /gdd/<category>/<slug>
+const GDD_LINK_ROOTS = [
+  { category: 'design', dir: gddPagesRoot },
+  { category: 'rules', dir: join(gddPagesRoot, 'rules') },
+  { category: 'architecture', dir: join(gddPagesRoot, 'architecture') },
+  { category: 'references', dir: join(gddPagesRoot, 'references') },
+  { category: 'art', dir: join(gddPagesRoot, 'art') },
 ]
-const ROOT_DOCS = ['Concept.md', 'Design.md', 'ToDo.md', 'Intent.md']
+const GDD_SECTIONS = new Set(['rules', 'architecture', 'references', 'art'])
 
 const EXCLUDED_NAMES = new Set(['_Sidebar.md', '_TEMPLATE.md', 'AGENTS.md', 'AUTHORING-JSON.md'])
 const PUBLIC_EXCLUDED_NAMES = new Set([
@@ -113,8 +114,9 @@ function rewriteHref(href, pageByFile, pageByStem) {
   const gddMatch = pathPart.match(/(?:^|\/)GDD\/(.+)\.md$/)
   if (gddMatch) {
     const source = gddMatch[1]
-    const domain = /^(?:rules|references|architecture)\//.test(source) ? 'rules' : /^(?:art\/)?[^/]+$/.test(source) ? 'design' : null
-    return domain ? `${sitePath(domain, basename(source) + '.md')}${hash}` : `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/${source.toLowerCase()}.json${hash}`
+    const [section, rest] = source.includes('/') ? [source.slice(0, source.indexOf('/')), source.slice(source.indexOf('/') + 1)] : ['design', source]
+    const category = !source.includes('/') || (GDD_SECTIONS.has(section) && !rest.includes('/')) ? section : null
+    return category ? `/gdd/${category}/${basename(source)}${hash}` : `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/${source.toLowerCase()}.json${hash}`
   }
   if (pathPart.includes('system-design/') && !pathPart.endsWith('.md')) {
     return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/collections/system-design.json${hash}`
@@ -147,38 +149,29 @@ for (const name of listMarkdown(referenceDir)) {
   excluded.push(`reference/${name}`)
 }
 
-// 후보 수집: LORE는 재귀(평면 스템), 나머지 도메인은 루트 평면 md + 루트 4문서
+// 후보 수집: LORE는 재귀(평면 스템)로 world에 쓰고, GDD 페이지는 /gdd/ 링크 대상으로만 쓴다
 const candidates = []
-for (const { domain, dir } of DOMAIN_ROOTS) {
-  if (domain === 'world') {
-    for (const { name, src, document } of listLoreMarkdown(dir)) {
-      candidates.push({ name, src, domain, document })
-    }
-    continue
-  }
-  for (const name of listMarkdown(dir)) {
-    candidates.push({ name, src: join(dir, name), domain })
-  }
+for (const { name, src, document } of listLoreMarkdown(WORLD_ROOT)) {
+  candidates.push({ name, src, domain: 'world', document })
 }
-for (const name of ROOT_DOCS) {
-  candidates.push({ name, src: join(rootDocsRoot, name), domain: 'design' })
+const gddTargets = []
+for (const { category, dir } of GDD_LINK_ROOTS) {
+  for (const name of listMarkdown(dir)) {
+    gddTargets.push({ name, path: `/gdd/${category}/${name.replace(/\.md$/, '')}` })
+  }
 }
 
 const currentDestinations = new Set(candidates.map(({ name, domain }) => join(docsSiteRoot, domain, name)))
-for (const domain of ['world', 'rules', 'design']) {
-  for (const name of listMarkdown(join(docsSiteRoot, domain))) {
-    if (name === 'index.md') continue
-    if (domain === 'rules' && name.startsWith('Rules-')) continue
-    const path = join(docsSiteRoot, domain, name)
-    if (!currentDestinations.has(path)) rmSync(path, { force: true })
-  }
+for (const name of listMarkdown(join(docsSiteRoot, 'world'))) {
+  if (name === 'index.md') continue
+  const path = join(docsSiteRoot, 'world', name)
+  if (!currentDestinations.has(path)) rmSync(path, { force: true })
 }
 
 // 유니온 맵 (도메인 간 베어 링크 재작성용)
 const pageByFile = new Map()
 const pageByStem = new Map()
-for (const { name, domain } of candidates) {
-  const path = sitePath(domain, name)
+for (const { name, path } of [...candidates.map(({ name, domain }) => ({ name, path: sitePath(domain, name) })), ...gddTargets]) {
   if (pageByFile.has(name)) {
     rejected.push(`${name}: duplicate across domain roots`)
     continue
