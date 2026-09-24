@@ -11,7 +11,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "애오개 대기열과 아현시장 지붕",
-        "summary": "아현역과 애오개역 사이 마포대로는 부품 호송 줄과 장바구니 줄이 같은 차선을 다툰다. 아현시장 지붕 아래 게이트 5는 저녁 식량을 저울질하는 자리로 바뀌고, 공덕SK리더스뷰 저층은 그 식량이 늦으면 먼저 불을 끈다. 아현동 주민센터는 시장 순번만 적어 주고, 아현초 운동장은 낮 배급 마당이다. 임하준이 보이지 않고 중앙 급수·부품 계약이 같은 날 끝나자 애오개 대합실 무전기가 먼저 끊긴다.",
+        "summary": "아현역과 애오개역 사이 마포대로는 부품 호송 줄과 장바구니 줄이 같은 차선을 다툰다. 아현시장 지붕 아래 게이트 5는 저녁 식량을 저울질하는 자리로 바뀌고, 공덕SK리더스뷰 저층은 그 식량이 늦으면 먼저 불을 끈다. 아현동 주민센터는 시장 순번만 적어 주고, 아현초 운동장은 낮 배급 마당이다.",
         "anchor_refs": [
           "osm:node:5937884698",
           "osm:node:6039313658",
@@ -21,13 +21,11 @@
           "osm:way:1075681315"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "애오개 호송 당직",
           "아현시장 지붕 저울지기",
@@ -100,7 +98,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "아현 선로. 아현동 통행세 구간. 보유 S09.",
+                "contents": "아현 선로. 아현동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -139,7 +137,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "애오개 선로. 아현동 통행세 구간. 보유 S09.",
+                "contents": "애오개 선로. 아현동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -178,7 +176,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "아현동 주민센터 1층. 아현동 배급 창구. 보유 S09.",
+                "contents": "아현동 주민센터 1층. 아현동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -238,13 +236,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -256,7 +249,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "공덕오거리 호송 상자와 시장 저울",
-        "summary": "공덕역 대합실은 의료 호송 상자와 송신 예비기판이 같은 환승 슬롯을 겨루는 자리다. 공덕오거리에서 줄이 네 갈래로 갈라지고, 공덕시장과 돼지슈퍼 앞은 호송이 늦으면 저녁 저울이 먼저 빈다. 공덕동 주민센터는 슬롯 순번만 찍고, 서울공덕초 운동장은 대기 들것 마당이다. 임하준 실종과 중앙 계약 만료가 같은 날 공덕에 닿아 의료 대기가 길어진다.",
+        "summary": "공덕역 대합실은 의료 호송 상자와 송신 예비기판이 같은 환승 슬롯을 겨루는 자리다. 공덕오거리에서 줄이 네 갈래로 갈라지고, 공덕시장과 돼지슈퍼 앞은 호송이 늦으면 저녁 저울이 먼저 빈다. 공덕동 주민센터는 슬롯 순번만 찍고, 서울공덕초 운동장은 대기 들것 마당이다.",
         "anchor_refs": [
           "osm:node:6039313661",
           "osm:node:10156103097",
@@ -266,13 +259,11 @@
           "osm:way:464248402"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "공덕 환승 호송조",
           "공덕시장 저울지기",
@@ -340,7 +331,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "공덕 선로. 공덕동 통행세 구간. 보유 S09.",
+                "contents": "공덕 선로. 공덕동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -379,7 +370,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "공덕동 주민센터 1층. 공덕동 배급 창구. 보유 S09.",
+                "contents": "공덕동 주민센터 1층. 공덕동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -487,13 +478,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -515,13 +501,11 @@
           "osm:node:436760119"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "도화 단지 양수조",
           "우성3동 물지게",
@@ -548,7 +532,7 @@
           "kind": "water",
           "description": "양수 전력이 북단 인파 정리로 빠지면 우성아파트 3동 저수조가 먼저 마르고, 빈 관을 억지로 돌리면 도화현대1차 지하가 역류한다."
         },
-        "opening_state": "중앙 급수 계약이 만료된 개막일, 도화동 단지 대표와 북단 안내조는 가구별 물 인계와 수변 통행의 확인 절차를 정하려 한다.",
+        "opening_state": "도화동 단지 대표와 북단 안내조는 가구별 물 인계와 수변 통행의 확인 절차를 정하려 한다.",
         "connections": "공덕·용강·염리와 용산·한강 쪽을 접하지만 원효대교나 마포대교의 실제 사용은 별도 점검과 협약이 필요하며 가구 양수 기록은 그 통행권을 대신하지 않는다.",
         "action": {
           "id": "1144058500-dohwa-bridge-roster",
@@ -589,7 +573,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "도화동 주민센터 1층. 도화동 배급 창구. 보유 S09.",
+                "contents": "도화동 주민센터 1층. 도화동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -706,7 +690,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "경찰공제회관 1층. 도화동 잔존 골조. 보유 S09.",
+                "contents": "경찰공제회관 1층. 도화동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -720,13 +704,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -738,7 +717,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "마포우체국앞 전언과 굴국밥 화덕",
-        "summary": "마포역 대합실과 마포우체국앞 사이가 짧은 전언을 받는 창구로 이어진다. 김명자굴국밥 건물 화덕은 그 창구의 잉크를 말리는 온기다. 용강동 주민센터는 전언 수수료 대신 저녁 국 순번을 적고, 래미안마포리브웰 저층은 국이 식으면 전언을 다음 날로 미룬다. 임하준 실종 소문이 우체국앞 게시판에 붙지만 검증 방송 원문은 상암에서 아직 오지 않는다.",
+        "summary": "마포역 대합실과 마포우체국앞 사이가 짧은 전언을 받는 창구로 이어진다. 김명자굴국밥 건물 화덕은 그 창구의 잉크를 말리는 온기다. 용강동 주민센터는 전언 수수료 대신 저녁 국 순번을 적고, 래미안마포리브웰 저층은 국이 식으면 전언을 다음 날로 미룬다. 검증 방송 원문은 상암에서 아직 오지 않는다.",
         "anchor_refs": [
           "osm:node:6039313662",
           "osm:node:414683256",
@@ -748,13 +727,11 @@
           "osm:node:2139941819"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "마포역 전언 수수",
           "굴국밥 화덕 당직",
@@ -827,7 +804,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "마포 선로. 용강동 통행세 구간. 보유 S09.",
+                "contents": "마포 선로. 용강동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -972,13 +949,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1000,13 +972,11 @@
           "osm:node:5530034379"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "로욜라 서고 제습조",
           "노고산 물통 감시",
@@ -1033,7 +1003,7 @@
           "kind": "slope",
           "description": "대흥동 전체 지형의 기복은 관측 자료에서 계산한 값이며 특정 계단·골목·경로의 높이 차로 사용할 수 없어 실제 통행은 별도 확인해야 한다."
         },
-        "opening_state": "중앙 부품 계약이 만료된 개막일, 로욜라도서관의 창작 보관조는 사본 건조와 인계에 필요한 전력·교대를 우선 배정하려 한다.",
+        "opening_state": "로욜라도서관의 창작 보관조는 사본 건조와 인계에 필요한 전력·교대를 우선 배정하려 한다.",
         "connections": "아현·서강·신수·용강·염리와 서대문 신촌 방향의 사본 인계를 주민 서기가 확인하되 공유 경계는 곧바로 새로운 통행 간선이 아니다.",
         "action": {
           "id": "1144060000-loyola-dehumidify",
@@ -1059,7 +1029,7 @@
           ],
           "tradeoff": "제습 9점이 서강대 캠퍼스 조명에서 빠진다. 노고산 물통 감시 3교대가 서고에 묶여 이대 쪽 사본 운반이 오후 한 차례 끊긴다."
         },
-        "uncertainty": "서강대·로욜라도서관·노고산·다산관 출입구·대흥역은 OSM 위치다. 제습 가동과 사본 서고는 개막일 창작이며, 실재 대학 도서관 운영을 태그로 읽지 않는다.",
+        "uncertainty": "서강대·로욜라도서관·노고산·다산관 출입구·대흥역은 OSM 위치다.",
         "buildings": [
           {
             "anchor_ref": "osm:node:5937884696",
@@ -1074,7 +1044,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "이대 선로. 대흥동 통행세 구간. 보유 S09.",
+                "contents": "이대 선로. 대흥동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1113,7 +1083,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "대흥 선로. 대흥동 통행세 구간. 보유 S09.",
+                "contents": "대흥 선로. 대흥동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1152,7 +1122,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "서강대 선로. 대흥동 통행세 구간. 보유 S09.",
+                "contents": "서강대 선로. 대흥동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1226,13 +1196,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1244,7 +1209,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "여고 본관 급수 칠판",
-        "summary": "서울여자고등학교 본관 복도는 염리 가구의 급수 순번 칠판으로 바뀐다. 염리동 주민센터는 그 칠판 사본만 창구에 붙이고, 일성여중고와 서울디자인고·동도중 운동장은 물통을 내려놓는 마당이다. 백범로 쪽 보행은 낮에만 열리며, 중앙 급수 계약 만료 뒤 한서초 앞 줄이 본관 계단까지 올라온다.",
+        "summary": "서울여자고등학교 본관 복도는 염리 가구의 급수 순번 칠판으로 바뀐다. 염리동 주민센터는 그 칠판 사본만 창구에 붙이고, 일성여중고와 서울디자인고·동도중 운동장은 물통을 내려놓는 마당이다. 한서초 앞 줄이 본관 계단까지 올라온다.",
         "anchor_refs": [
           "osm:relation:10814366",
           "osm:node:368899018",
@@ -1254,13 +1219,11 @@
           "osm:node:368928992"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "여고 본관 칠판 서기",
           "동도중 마당 물통조",
@@ -1285,7 +1248,7 @@
         ],
         "hazard": {
           "kind": "governance",
-          "description": "본관 칠판과 주민센터 사본이 어긋나면 한서초 줄이 두 순번을 동시에 주장하고, 만료 계약을 여고 도장으로 위조한 쪽지가 운동장에서 돈다."
+          "description": "본관 칠판과 주민센터 사본이 어긋나면 한서초 줄이 두 순번을 동시에 주장하고, 계약을 여고 도장으로 위조한 쪽지가 운동장에서 돈다."
         },
         "opening_state": "염리동 주민센터의 창작 배급조는 개막일 공급 공백 속에서 서울여고 본관 게시와 가구별 물 인계를 같은 기준으로 확인하려 한다.",
         "connections": "아현·공덕·도화·대흥·용강의 가구 배급 정보를 맞추되 거리 표기만으로 물 운반을 약속하지 않고 실제 보행과 수령 장소를 확인한다.",
@@ -1374,7 +1337,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "염리동 주민센터 1층. 염리동 배급 창구. 보유 S09.",
+                "contents": "염리동 주민센터 1층. 염리동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1480,13 +1443,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1508,13 +1466,11 @@
           "osm:way:402093770"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "병원 처마 들것조",
           "신수중 마당 대기",
@@ -1612,7 +1568,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신수동 주민센터 1층. 신수동 배급 창구. 보유 S09.",
+                "contents": "신수동 주민센터 1층. 신수동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1718,13 +1674,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1746,13 +1697,11 @@
           "osm:relation:19703067"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "상수 골목 야간상점",
           "와우산 계단 불감시",
@@ -1779,7 +1728,7 @@
           "kind": "fire",
           "description": "상수 골목 기름등과 상업 건물 차양이 와우산 경사에서 겹치면, 인문사회관 쪽으로 불씨가 구르고 광흥창 숙박 칸이 연기를 먹는다."
         },
-        "opening_state": "중앙 계약이 만료된 개막일, 상수·광흥창 주변 상인과 주민 대표는 야간 교환 공간의 화기·조명·숙영 문제를 함께 협의한다.",
+        "opening_state": "상수·광흥창 주변 상인과 주민 대표는 야간 교환 공간의 화기·조명·숙영 문제를 함께 협의한다.",
         "connections": "서교·대흥·신수·용강의 교환 요청을 실제 인계 시간에 맞추며 서강대교 북단과 수변 접근은 별도 확인 대상으로 남긴다.",
         "action": {
           "id": "1144065500-sangsu-night-watch",
@@ -1820,7 +1769,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "광흥창 선로. 서강동 통행세 구간. 보유 S09.",
+                "contents": "광흥창 선로. 서강동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1859,7 +1808,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "상수 선로. 서강동 통행세 구간. 보유 S09.",
+                "contents": "상수 선로. 서강동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1898,7 +1847,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "서강동 주민센터 1층. 서강동 배급 창구. 보유 S09.",
+                "contents": "서강동 주민센터 1층. 서강동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1937,13 +1886,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1955,7 +1899,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "홍대입구 대합실의 저녁 전언",
-        "summary": "홍대입구역 대합실과 홍대입구역사거리는 전언 수수와 남은 술을 식량과 바꾸던 버릇이 남은 시장이다. 서교동 주민센터는 저녁 슬롯만 허가하고, 서울서교초 운동장은 전언 대기석이다. 망원역 쪽 출입구는 같은 동 안에서도 주거 물 줄이 먼저 서며 송신 키는 여기 두지 않는다. 임하준 실종 소문이 역사거리 벽에 붙지만 교차검증 원문은 상암 창이 비면 공란으로 남는다.",
+        "summary": "홍대입구역 대합실과 홍대입구역사거리는 전언 수수와 남은 술을 식량과 바꾸던 버릇이 남은 시장이다. 서교동 주민센터는 저녁 슬롯만 허가하고, 서울서교초 운동장은 전언 대기석이다. 망원역 쪽 출입구는 같은 동 안에서도 주거 물 줄이 먼저 서며 송신 키는 여기 두지 않는다.",
         "anchor_refs": [
           "osm:node:13055976391",
           "osm:node:5919544685",
@@ -1965,13 +1909,11 @@
           "osm:node:6041674907"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "홍대입구 전언중개인",
           "역사거리 저녁상점",
@@ -2044,7 +1986,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "홍대입구 선로. 서교동 통행세 구간. 보유 S09.",
+                "contents": "홍대입구 선로. 서교동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2083,7 +2025,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "홍대입구 선로. 서교동 통행세 구간. 보유 S09.",
+                "contents": "홍대입구 선로. 서교동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2122,7 +2064,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "망원 선로. 서교동 통행세 구간. 보유 S09.",
+                "contents": "망원 선로. 서교동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2161,7 +2103,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "서교동 주민센터 1층. 서교동 배급 창구. 보유 S09.",
+                "contents": "서교동 주민센터 1층. 서교동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2175,13 +2117,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2203,13 +2140,11 @@
           "osm:node:11667208118"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "합정 낮나루 장부지기",
           "수상훈련장 배줄",
@@ -2277,7 +2212,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "합정 선로. 합정동 통행세 구간. 보유 S09.",
+                "contents": "합정 선로. 합정동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2422,13 +2357,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2450,13 +2380,11 @@
           "osm:node:2139811784"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "망원시장 물항아리 저울",
           "안내센터 양수 장부",
@@ -2483,7 +2411,7 @@
           "kind": "water",
           "description": "상암 송신 전력이 양수 계정을 잡아먹으면 시장 지붕 항아리가 먼저 마르고, 빈 항아리를 한강 쪽으로 억지로 내리면 아이파크 저층 부엌이 역류한 흙물을 받는다."
         },
-        "opening_state": "중앙 급수 계약이 만료된 개막일, 망원시장 상인과 주민센터는 가구 양수와 시장 배급이 같은 물 재고를 중복 사용하지 않도록 협의한다.",
+        "opening_state": "망원시장 상인과 주민센터는 가구 양수와 시장 배급이 같은 물 재고를 중복 사용하지 않도록 협의한다.",
         "connections": "서교·합정·성산1동·망원2동의 시장·가구 요청을 확인된 생활 길에서 처리하고 수변 인계는 별도 안전 확인 뒤 배정한다.",
         "action": {
           "id": "1144069000-mangwon-market-jars",
@@ -2524,7 +2452,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "망원1동 주민센터 1층. 망원1동 배급 창구. 보유 S09.",
+                "contents": "망원1동 주민센터 1층. 망원1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2556,7 +2484,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "망원시장 1층 허가 장터. 보유 S09.",
+                "contents": "망원시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2581,7 +2509,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "망원시장 1층 허가 장터. 보유 S09.",
+                "contents": "망원시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2606,13 +2534,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2634,13 +2557,11 @@
           "osm:node:355129296"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "유수지 양수조",
           "선착장 물통줄",
@@ -2713,7 +2634,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "망원2동 주민센터 1층. 망원2동 배급 창구. 보유 S09.",
+                "contents": "망원2동 주민센터 1층. 망원2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2791,7 +2712,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "월드컵시장 1층 허가 장터. 보유 S09.",
+                "contents": "월드컵시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2844,13 +2765,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2872,13 +2788,11 @@
           "osm:node:10741074819"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "동진시장 화로지기",
           "사거리 손수레",
@@ -2951,7 +2865,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "연남동주민센터 1층. 연남동 배급 창구. 보유 S09.",
+                "contents": "연남동주민센터 1층. 연남동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3029,7 +2943,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "동진시장 1층 허가 장터. 보유 S09.",
+                "contents": "동진시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ],
@@ -3056,13 +2970,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3084,13 +2993,11 @@
           "osm:node:13769097637"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "성미산 마당 계량",
           "홍제천 물통 지게",
@@ -3336,13 +3243,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3364,13 +3266,11 @@
           "osm:relation:12746169"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "농수산물시장 아침저울",
           "경기장 회랑 대기안내",
@@ -3423,7 +3323,7 @@
           ],
           "tradeoff": "월드컵경기장 회랑 조명 11점이 빠진다. 검증방송 대기표가 오후까지 밀리고 가좌 전언 3건이 구청 창구에서 하루 묵는다."
         },
-        "uncertainty": "농수산물시장·월드컵경기장·마포구청·관련 역명·불광천은 OSM 위치다. 아침 저울과 방송 대기열은 개막일 창작이며, 실재 구청·경기장 운영을 태그로 읽지 않는다.",
+        "uncertainty": "농수산물시장·월드컵경기장·마포구청·관련 역명·불광천은 OSM 위치다.",
         "buildings": [
           {
             "anchor_ref": "osm:node:6041674909",
@@ -3438,7 +3338,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "마포구청 선로. 성산2동 통행세 구간. 보유 S09.",
+                "contents": "마포구청 선로. 성산2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3477,7 +3377,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "월드컵경기장 선로. 성산2동 통행세 구간. 보유 S09.",
+                "contents": "월드컵경기장 선로. 성산2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3516,7 +3416,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "가좌 선로. 성산2동 통행세 구간. 보유 S09.",
+                "contents": "가좌 선로. 성산2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3555,7 +3455,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "마포구청 1층. 성산2동 배급 창구. 보유 S09.",
+                "contents": "마포구청 1층. 성산2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3569,13 +3469,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3597,14 +3492,12 @@
           "osm:way:690397735"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-09.md",
-          "docs/game-logic/Hostile-Ecology-Index.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-09.md",
+          "WIKI/lore/bestiary/Hostile-Ecology-Index.md"
         ],
-        "polity_contexts": [
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "DMC 송신 당직",
           "난지 펌프 냉각조",
@@ -3631,7 +3524,7 @@
           "kind": "power",
           "description": "송신기를 오래 켜면 난지 냉각 회랑 온도가 올라 저온포자 막이 두꺼워지고, 끄면 교차검증 창이 비며 상암산 철탑에 전파까마귀 횃대가 늘어난다."
         },
-        "opening_state": "중앙 급수·부품 계약이 만료된 개막일, 상암의 창작 송신조와 난지 펌프 점검조는 확인된 장비 상태를 바탕으로 전력 배정을 협의한다.",
+        "opening_state": "상암의 창작 송신조와 난지 펌프 점검조는 확인된 장비 상태를 바탕으로 전력 배정을 협의한다.",
         "connections": "성산2동·망원2동과 서북 외곽·한강 쪽의 연락 요청을 구분하고 송신·펌프 작업을 위한 실제 접근과 인계 협약을 별도로 확인한다.",
         "action": {
           "id": "1144074000-nanji-cooler-hold",
@@ -3672,7 +3565,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "디지털미디어시티 선로. 상암동 통행세 구간. 보유 S09.",
+                "contents": "디지털미디어시티 선로. 상암동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3711,7 +3604,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "수색 선로. 상암동 통행세 구간. 보유 S09.",
+                "contents": "수색 선로. 상암동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3798,7 +3691,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "난지하수중계펌프장 1층. 상암동 잔존 골조. 보유 S09.",
+                "contents": "난지하수중계펌프장 1층. 상암동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -3812,13 +3705,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S09",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }

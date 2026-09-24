@@ -50,7 +50,7 @@
       "anchor": "강구동-건물-재사용-p1-ko-label-1",
       "text": {
         "en": "가. Principle of building reuse",
-        "ko": "가. 건물 재사용의 원칙"
+        "ko": "가. 강구동 건물의 용도"
       }
     },
     {
@@ -103,68 +103,6 @@
       }
     },
     {
-      "kind": "paragraph",
-      "anchor": "세력과-건물-p3-ko-label-4",
-      "text": {
-        "en": "다. Three dong states",
-        "ko": "다. 동의 세 상태"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "세력과-건물-p3",
-      "text": {
-        "en": "A dong held one of three states.",
-        "ko": "동은 세 상태 가운데 하나에 있다. 내용은 다음 표와 같다."
-      }
-    },
-    {
-      "kind": "table",
-      "anchor": "세력과-건물-table4",
-      "columns": [
-        {
-          "en": "State",
-          "ko": "상태"
-        },
-        {
-          "en": "Meaning",
-          "ko": "뜻"
-        }
-      ],
-      "rows": [
-        [
-          {
-            "en": "`held`",
-            "ko": "`held`"
-          },
-          {
-            "en": "One power held it with dominance of 50 or more.",
-            "ko": "한 세력이 지배력 50 이상으로 가져간다."
-          }
-        ],
-        [
-          {
-            "en": "`contested`",
-            "ko": "`contested`"
-          },
-          {
-            "en": "Two or more powers shared it, or one power's dominance stood below 50.",
-            "ko": "둘 이상이 나눠 가지거나, 한 세력의 지배력이 50 미만이다."
-          }
-        ],
-        [
-          {
-            "en": "`vacant`",
-            "ko": "`vacant`"
-          },
-          {
-            "en": "No power's flag stood. The buildings and the station remained.",
-            "ko": "세력 깃발이 없다. 건물과 역은 있다."
-          }
-        ]
-      ]
-    },
-    {
       "kind": "heading",
       "anchor": "세-층",
       "depth": 2,
@@ -188,68 +126,6 @@
         "en": "The contents of the three layers follow in the table.",
         "ko": "세 층의 내용은 다음 표와 같다."
       }
-    },
-    {
-      "kind": "table",
-      "anchor": "세-층-table1",
-      "columns": [
-        {
-          "en": "Layer",
-          "ko": "층"
-        },
-        {
-          "en": "Unit",
-          "ko": "단위"
-        },
-        {
-          "en": "Work",
-          "ko": "하는 일"
-        }
-      ],
-      "rows": [
-        [
-          {
-            "en": "River",
-            "ko": "강"
-          },
-          {
-            "en": "The Han's north and south, the tributaries",
-            "ko": "한강 남북, 지천"
-          },
-          {
-            "en": "Flooding, embankments, and berths decided whether the first floor was swallowed.",
-            "ko": "침수·제방·선석이 1층을 먹을지 결정한다."
-          }
-        ],
-        [
-          {
-            "en": "Gu",
-            "ko": "구"
-          },
-          {
-            "en": "The 25 autonomous districts",
-            "ko": "25 자치구"
-          },
-          {
-            "en": "Set which trade took the district's surviving buildings. The district was not turned into a state.",
-            "ko": "어떤 직능이 그 구의 잔존 건물을 가져가는지 정한다. 구를 국가로 바꾸지 않는다."
-          }
-        ],
-        [
-          {
-            "en": "Dong",
-            "ko": "동"
-          },
-          {
-            "en": "The 427 administrative dong",
-            "ko": "427 행정동"
-          },
-          {
-            "en": "For each observation anchor, recorded the pre-collapse use and the post-collapse application.",
-            "ko": "관측 앵커마다 붕괴 전 용도와 붕괴 후 쓰임을 적는다."
-          }
-        ]
-      ]
     },
     {
       "kind": "paragraph",
@@ -678,72 +554,6 @@
       }
     },
     {
-      "kind": "table",
-      "anchor": "층마다-table1",
-      "columns": [
-        {
-          "en": "`state`",
-          "ko": "`state`"
-        },
-        {
-          "en": "Meaning",
-          "ko": "뜻"
-        }
-      ],
-      "rows": [
-        [
-          {
-            "en": "`flooded`",
-            "ko": "`flooded`"
-          },
-          {
-            "en": "Monsoon and tributary water. Habitation forbidden.",
-            "ko": "우기·지천 물. 거주 금지."
-          }
-        ],
-        [
-          {
-            "en": "`sealed`",
-            "ko": "`sealed`"
-          },
-          {
-            "en": "Planks and iron gates. No entry without license.",
-            "ko": "판자·쇠터. 허가 없이면 못 들어간다."
-          }
-        ],
-        [
-          {
-            "en": "`occupied`",
-            "ko": "`occupied`"
-          },
-          {
-            "en": "In human use. Rations, quarters, hand-offs.",
-            "ko": "사람이 쓴다. 배급·숙영·인계."
-          }
-        ],
-        [
-          {
-            "en": "`abandoned`",
-            "ko": "`abandoned`"
-          },
-          {
-            "en": "Corners emptied. Low-intensity searching only.",
-            "ko": "모서리 비웠. 낮은 탐색만."
-          }
-        ],
-        [
-          {
-            "en": "`yard`",
-            "ko": "`yard`"
-          },
-          {
-            "en": "Open air. Playgrounds, freight marshaling.",
-            "ko": "노천. 운동장·화물 정렬."
-          }
-        ]
-      ]
-    },
-    {
       "kind": "paragraph",
       "anchor": "층마다-p2-ko-label-12",
       "text": {
@@ -758,112 +568,6 @@
         "en": "Minimum floors by use:",
         "ko": "용도별 최소 층은 다음 표와 같다."
       }
-    },
-    {
-      "kind": "table",
-      "anchor": "층마다-table3",
-      "columns": [
-        {
-          "en": "Observed",
-          "ko": "관측"
-        },
-        {
-          "en": "Floors",
-          "ko": "층"
-        }
-      ],
-      "rows": [
-        [
-          {
-            "en": "Station",
-            "ko": "역"
-          },
-          {
-            "en": "B2 tracks, B1 platform, first floor concourse, rooftop watchtower",
-            "ko": "지하 2 선로, 지하 1 승강장, 1층 대합실, 옥상 망루"
-          }
-        ],
-        [
-          {
-            "en": "School",
-            "ko": "학교"
-          },
-          {
-            "en": "First floor entrance and playground, second floor classroom quarters, third floor special rooms sealed, rooftop",
-            "ko": "1층 현관·운동장, 2층 교실 숙영, 3층 특별실 봉인, 옥상"
-          }
-        ],
-        [
-          {
-            "en": "Apartment",
-            "ko": "아파트"
-          },
-          {
-            "en": "Floors 1–2 flooded or abandoned, floor 3 habitation, rooftop sealed",
-            "ko": "1–2층 침수 또는 포기, 3층 거주, 옥상 봉인"
-          }
-        ],
-        [
-          {
-            "en": "Community center",
-            "ko": "주민센터"
-          },
-          {
-            "en": "First floor window, second floor stacks sealed",
-            "ko": "1층 창구, 2층 서고 봉인"
-          }
-        ],
-        [
-          {
-            "en": "Hospital · clinic",
-            "ko": "병원·의원"
-          },
-          {
-            "en": "First floor waiting, second floor beds",
-            "ko": "1층 대기, 2층 침상"
-          }
-        ],
-        [
-          {
-            "en": "University",
-            "ko": "대학"
-          },
-          {
-            "en": "First floor copying workshop, laboratory blocks sealed",
-            "ko": "1층 사본 공방, 실험동 봉인"
-          }
-        ],
-        [
-          {
-            "en": "Market",
-            "ko": "시장"
-          },
-          {
-            "en": "Basement warehouses, first floor licensed market",
-            "ko": "지하 창고, 1층 허가 장터"
-          }
-        ],
-        [
-          {
-            "en": "Park · green space",
-            "ko": "공원·녹지"
-          },
-          {
-            "en": "One floor at grade",
-            "ko": "지표면 한 층"
-          }
-        ],
-        [
-          {
-            "en": "Everything else",
-            "ko": "그 밖"
-          },
-          {
-            "en": "First floor, rooftop when needed",
-            "ko": "1층, 필요 시 옥상"
-          }
-        ]
-      ]
     },
     {
       "kind": "paragraph",

@@ -13,6 +13,7 @@ const referenceDir = [join(repoRoot, 'RESEARCH', 'canon-reference'), join(repoRo
   ?? join(repoRoot, 'RESEARCH', 'canon-reference')
 
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
+const COINED_PHRASES = ['창세 구술', '창세 이야기', '구술로만', '창세의 첫 줄', '창세의 첫 급수협약', '창세는 햇수 없는 구술']
 export const EXPECTED_REFERENCE_EXCLUSIONS = 20
 const EXCLUDED_STEMS = ['_sidebar', '_template', 'cast-profile-contract', 'cast-registration-template', 'random-cast-roster']
 const HUB_PREFIXES = ['/gdd/', '/ui-layout-moodboard/', '/ui-ux-refs/', '/play/']
@@ -62,6 +63,11 @@ function visibleText(source) {
 function findBannedTerms(text) {
   const lower = text.toLowerCase()
   return BANNED_TERMS.filter((term) => lower.includes(term.toLowerCase()))
+}
+
+export function coinedPhraseFailures(text, source) {
+  return COINED_PHRASES.filter((phrase) => text.includes(phrase))
+    .map((phrase) => `FAIL coined-phrase: ${source} contains "${phrase}"`)
 }
 
 function markdownLinks(markdown) {
@@ -116,6 +122,7 @@ function main() {
     for (const term of findBannedTerms(visibleText(values.join(' ')))) {
       failures.push(`FAIL banned-term: ${rel} contains "${term}"`)
     }
+    failures.push(...coinedPhraseFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
     for (const href of links) {
       if (!href.startsWith('/') || href.startsWith('//')) continue
       if (HUB_PREFIXES.some((prefix) => href.startsWith(prefix))) continue
@@ -126,6 +133,14 @@ function main() {
 
   const shell = readFileSync(join(distDir, 'index.html'), 'utf8')
   for (const term of findBannedTerms(visibleText(shell))) failures.push(`FAIL banned-term: dist/index.html contains "${term}"`)
+  failures.push(...coinedPhraseFailures(visibleText(shell), 'dist/index.html'))
+  for (const file of listFiles(join(distDir, 'assets')).filter((file) => file.endsWith('.js'))) {
+    failures.push(...coinedPhraseFailures(readFileSync(file, 'utf8'), posixRel(wikiRoot, file)))
+  }
+  for (const file of listFiles(join(wikiRoot, 'public/person-details')).filter((file) => file.endsWith('.json'))) {
+    const person = JSON.parse(readFileSync(file, 'utf8'))
+    failures.push(...coinedPhraseFailures(JSON.stringify([person.sections, person.biography, person.fields]), posixRel(wikiRoot, file)))
+  }
   for (const href of htmlLinks(shell)) {
     if (!href.startsWith('/') || href.startsWith('//')) continue
     if (HUB_PREFIXES.some((prefix) => href.startsWith(prefix)) || href.startsWith('/wiki/')) continue
@@ -137,6 +152,7 @@ function main() {
   console.log(`section-count world: ${pages.length}`)
   console.log(`html-files: ${listFiles(distDir).filter((file) => file.endsWith('.html')).length}`)
   console.log(`banned-term failures: ${failures.filter((line) => line.includes('banned-term')).length}`)
+  console.log(`coined-phrase failures: ${failures.filter((line) => line.includes('coined-phrase')).length}`)
   console.log(`broken-link failures: ${failures.filter((line) => line.includes('broken-link')).length}`)
   console.log(`exclusion failures: ${failures.filter((line) => line.includes('exclusion')).length}`)
   if (failures.length > 0) {

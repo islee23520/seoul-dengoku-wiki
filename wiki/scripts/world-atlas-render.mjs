@@ -27,8 +27,7 @@ function tableCell(value) {
 
 function banner(atlasHash, lead) {
   return [
-    lead || '이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.',
-    '',
+    ...(lead ? [lead, ''] : []),
     `- 원본 앵커: \`LORE/World-Narrative-Atlas.md\``,
     `- 원본 해시: \`${atlasHash}\``,
     '',
@@ -77,33 +76,25 @@ export function renderTheaters(atlas, atlasHash) {
   const lines = [...projectionPreamble(atlas, 'External-Theaters.md', '외부전구', atlasHash)];
   for (const theater of atlas.theaters ?? []) {
     lines.push(`## ${theater.id} · ${theater.display_name}`, '');
-    lines.push(`- 출처층: ${theater.source_kind}`);
-    lines.push(`- 확인: ${theater.verified}`);
-    lines.push(`- 추론: ${theater.inference}`);
-    lines.push(`- 창작: ${theater.original_fiction}`);
-    lines.push(`- 정사 연결표 제거 가능: ${theater.japan_bridge_removable ? '예' : '아니오'}`);
     lines.push(`- 연결 국가: ${(theater.states ?? []).map((id) => stateLabel(atlas, id)).join(', ')}`);
     lines.push('');
     lines.push(theater.prose.trim(), '');
     if (theater.seoul_route) {
       lines.push('### 서울 쪽 경로', '',
-        `- 확인된 지리: ${theater.seoul_route.verified_geography}`,
         `- 준비 거점: ${(theater.seoul_route.staging_nodes ?? []).join(' → ')}`,
-        `- 바깥 경계: ${theater.seoul_route.outbound_boundary}`,
-        `- 이동 시간: ${theater.seoul_route.fixed_duration}`, '');
+        '');
     }
     if (theater.travel_constraints) {
       lines.push('### 이동·계절', '',
         `- 계절 조건: ${(theater.travel_constraints.seasonal_conditions ?? []).join(' / ')}`,
         `- 중단 조건: ${(theater.travel_constraints.suspension_conditions ?? []).join(' / ')}`,
-        `- 기록 원칙: ${theater.travel_constraints.rule}`, '');
+        '');
     }
     if (theater.supply_chain) {
       lines.push('### 공급·검문', '');
       for (const flow of theater.supply_chain.flows ?? []) {
         lines.push(`- ${flow.kind} · ${flow.contents}: ${flow.handoff_rule}`);
       }
-      lines.push(`- 분리 원칙: ${theater.supply_chain.separation_rule}`);
       for (const checkpoint of theater.checkpoints ?? []) {
         lines.push(`- ${checkpoint.id} · ${checkpoint.place}: ${checkpoint.function} / ${(checkpoint.checks ?? []).join(', ')}`);
       }
@@ -113,10 +104,7 @@ export function renderTheaters(atlas, atlasHash) {
       lines.push('### 언어·소문', '',
         `- 기록 언어: ${theater.language_rumor_protocol.record_language}`,
         `- 통역 원칙: ${theater.language_rumor_protocol.interpreter_rule}`);
-      for (const row of theater.language_rumor_protocol.rumor_reliability ?? []) {
-        lines.push(`- ${row.tier}: ${row.rule}`);
-      }
-      lines.push(`- 금지 추론: ${theater.language_rumor_protocol.prohibited_inference}`, '');
+      lines.push('');
     }
     lines.push('### 16국 이해', '');
     for (const row of theater.state_interests ?? []) {
@@ -131,13 +119,8 @@ export function renderTheaters(atlas, atlasHash) {
         `- 사건: ${theater.opening_event.scenario_id}`,
         `- 촉발: ${theater.opening_event.trigger}`,
         `- 충돌: ${theater.opening_event.conflict}`,
-        `- 첫 판단: ${theater.opening_event.player_decision}`, '');
+        '');
     }
-    lines.push('### 플레이어 진입', '');
-    for (const row of theater.player_entry_points ?? []) {
-      lines.push(`- ${row.id} · ${row.place}: ${row.role} / 첫 판단 ${row.first_decision}`);
-    }
-    lines.push('', '### 명시적 미정', '', ...(theater.explicit_unknowns ?? []).map((item) => `- ${item}`), '');
     lines.push('### 시나리오 쇄');
     for (const chain of theater.scenario_chains ?? []) {
       lines.push(`- ${chain.id}: ${chain.summary}`);
@@ -303,8 +286,7 @@ export function renderGroupDossier(group, atlasHash, entries = []) {
   if (entries.length > 0) {
     lines.push('', '## 개체와 전장 편성', '');
     if (group.bestiary) lines.push(group.bestiary.command_scope, '');
-    lines.push('플레이어는 부대에 이동·경계·교전·철수와 전문 작업을 지시합니다. 아래 대응법은 그 명령을 수행하는 부대의 행동이며, 영웅을 직접 조작하는 기술 목록으로 쓰지 않습니다. 사람 병졸 분대의 최대 20명과 별도 영웅 규칙을 동물·기계의 개체 수로 옮기지 않습니다.', '',
-      '| 개체·전문 | 구분 | 전장 단위 | 전장 역할 | 기존 역할군 | 출처 배치 |', '| --- | --- | --- | --- | --- | --- |');
+    lines.push('| 개체·전문 | 구분 | 전장 단위 | 전장 역할 | 기존 역할군 | 출처 배치 |', '| --- | --- | --- | --- | --- | --- |');
     for (const entry of entries) {
       const data = entry.bestiary;
       lines.push(`| [${entry.id} · ${tableCell(entry.display_name)}](#${entry.id.toLowerCase()}) | ${data ? BESTIARY_KINDS[data.kind] : ''} | ${data ? BESTIARY_FORMATIONS[data.formation] : ''} | ${tableCell(data?.battlefield_role)} | ${tableCell(entry.role_class)} | ${entry.batchId} |`);

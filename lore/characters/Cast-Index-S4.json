@@ -25,13 +25,13 @@
   },
   "locales": {
     "en": {
-      "title": "Reconstruction-Era S4 Duty Roster",
-      "summary": "Offices fill the empty seats of a living sphere, as in rationing, maintenance, record-keeping, courier work, patrol, and watch duty.",
+      "title": "Local Duty Roster",
+      "summary": "A roster of people on local duty.",
       "tense": "present"
     },
     "ko": {
-      "title": "재건기 S4 당직 명부",
-      "summary": "직위는 배급·정비·기록·전령·순찰·당직처럼 생활권 빈 칸을 메운다.",
+      "title": "생활권 당직 명부",
+      "summary": "생활권 당직 인물 명부.",
       "tense": "present"
     }
   },
@@ -41,192 +41,182 @@
       "anchor": "재건기-s4-당직-명부",
       "depth": 1,
       "text": {
-        "en": "Reconstruction-Era S4 Duty Roster",
-        "ko": "재건기 S4 당직 명부"
+        "en": "Local Duty Roster",
+        "ko": "생활권 당직 명부"
       }
     },
     {
       "kind": "table",
-      "anchor": "재건기-s4-당직-명부-table1",
+      "anchor": "state-names",
       "columns": [
         {
-          "en": "State",
-          "ko": "국가"
+          "ko": "국가 ID",
+          "en": "State ID"
         },
         {
-          "en": "Added S4",
-          "ko": "추가 S4"
+          "ko": "국명",
+          "en": "State"
         }
       ],
       "rows": [
         [
           {
-            "en": "01 The Sluice",
-            "ko": "01 수문국"
+            "ko": "S01",
+            "en": "S01"
           },
           {
-            "en": "37",
-            "ko": "37"
+            "ko": "수문국",
+            "en": "The Sluice"
           }
         ],
         [
           {
-            "en": "02 The Gauge",
-            "ko": "02 규격맹"
+            "ko": "S02",
+            "en": "S02"
           },
           {
-            "en": "37",
-            "ko": "37"
+            "ko": "규격맹",
+            "en": "The Gauge"
           }
         ],
         [
           {
-            "en": "03 Taeuk Group",
-            "ko": "03 태욱그룹"
+            "ko": "S03",
+            "en": "S03"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "태욱그룹",
+            "en": "Taeuk Group"
           }
         ],
         [
           {
-            "en": "04 Myeongbu Church",
-            "ko": "04 명부교회"
+            "ko": "S04",
+            "en": "S04"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "명부교회",
+            "en": "Myeongbu Church"
           }
         ],
         [
           {
-            "en": "05 Eastern Command",
-            "ko": "05 동방사"
+            "ko": "S05",
+            "en": "S05"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "동방사",
+            "en": "Eastern Command"
           }
         ],
         [
           {
-            "en": "06 Government of the Republic of Korea",
-            "ko": "06 대한민국정부"
+            "ko": "S06",
+            "en": "S06"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "대한민국정부",
+            "en": "Government of the Republic of Korea"
           }
         ],
         [
           {
-            "en": "07 The Junction",
-            "ko": "07 환적국"
+            "ko": "S07",
+            "en": "S07"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "환적국",
+            "en": "The Junction"
           }
         ],
         [
           {
-            "en": "08 Central Technology Preservation Office",
-            "ko": "08 중앙기술보존원"
+            "ko": "S08",
+            "en": "S08"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "중앙기술보존원",
+            "en": "Central Technology Preservation Office"
           }
         ],
         [
           {
-            "en": "09 Yeouido Investors' Association",
-            "ko": "09 여의도출자연합회"
+            "ko": "S09",
+            "en": "S09"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "여의도출자연합회",
+            "en": "Yeouido Investors' Association"
           }
         ],
         [
           {
-            "en": "10 Anguk Order",
-            "ko": "10 안국총림"
+            "ko": "S10",
+            "en": "S10"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "안국총림",
+            "en": "Anguk Order"
           }
         ],
         [
           {
-            "en": "11 Seongha Group",
-            "ko": "11 성하그룹"
+            "ko": "S11",
+            "en": "S11"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "성하그룹",
+            "en": "Seongha Group"
           }
         ],
         [
           {
-            "en": "12 Sinnae Transport",
-            "ko": "12 신내운수"
+            "ko": "S12",
+            "en": "S12"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "신내운수",
+            "en": "Sinnae Transport"
           }
         ],
         [
           {
-            "en": "13 White Cross",
-            "ko": "13 흰십자단"
+            "ko": "S13",
+            "en": "S13"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "흰십자단",
+            "en": "White Cross"
           }
         ],
         [
           {
-            "en": "14 Achasan Gate",
-            "ko": "14 아관사"
+            "ko": "S14",
+            "en": "S14"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "아관사",
+            "en": "Achasan Gate"
           }
         ],
         [
           {
-            "en": "15 Myeongdong Archdiocese",
-            "ko": "15 명동대교구"
+            "ko": "S15",
+            "en": "S15"
           },
           {
-            "en": "36",
-            "ko": "36"
+            "ko": "명동대교구",
+            "en": "Myeongdong Archdiocese"
           }
         ],
         [
           {
-            "en": "16 Jeongdong Federation",
-            "ko": "16 정동노총"
+            "ko": "S16",
+            "en": "S16"
           },
           {
-            "en": "36",
-            "ko": "36"
-          }
-        ],
-        [
-          {
-            "en": "Total",
-            "ko": "합"
-          },
-          {
-            "en": "578",
-            "ko": "578"
+            "ko": "정동노총",
+            "en": "Jeongdong Federation"
           }
         ]
       ]
@@ -235,8 +225,8 @@
       "kind": "paragraph",
       "anchor": "재건기-s4-당직-명부-p2",
       "text": {
-        "en": "Offices fill the empty seats of a living sphere, as in rationing, maintenance, record-keeping, courier work, patrol, and watch duty. They are not the same body as the core seventeen.",
-        "ko": "직위는 배급·정비·기록·전령·순찰·당직처럼 생활권 빈 칸을 메운다. 핵심 17명과 같은 몸이 아니다."
+        "en": "Offices fill the empty seats of a living sphere, as in rationing, maintenance, record-keeping, courier work, patrol, and watch duty..",
+        "ko": "직위는 배급·정비·기록·전령·순찰·당직처럼 생활권 빈 칸을 메운다."
       }
     }
   ],
