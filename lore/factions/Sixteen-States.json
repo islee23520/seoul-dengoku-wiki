@@ -900,19 +900,19 @@
     },
     {
       "kind": "heading",
-      "anchor": "정부의-중앙-기반과-한계와-내분",
+      "anchor": "정부의-중앙-기반과-관계와-내분",
       "depth": 2,
       "text": {
-        "en": "The Government's Central Base, Its Limits, and Its Internal Strife",
-        "ko": "정부의 중앙 기반과 한계와 내분"
+        "ko": "정부의 중앙 기반과 관계와 내분",
+        "en": "The Government's Central Base, Its Relations, and Its Internal Strife"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "p-8",
       "text": {
-        "en": "The Government of the Republic of Korea was the de facto first power. Its direct rule over downtown Jongno and Jung-gu, around Gwanghwamun, was the strongest of the sixteen. That strength stood on four grounds.",
-        "ko": "대한민국정부는 사실상 첫 번째 강국이다. 종로·중구, 광화문 일대의 도심을 직접 다스리는 힘이 열여섯 가운데 가장 강하다. 그 힘은 네 가지에 선다."
+        "ko": "대한민국정부는 첫 번째 강국이다. 기술 자산과 전투 병력을 많이 가졌고 종로·중구, 광화문 일대의 도심을 직접 다스린다. 그 힘은 네 가지에 선다.",
+        "en": "The Government of the Republic of Korea was the first power. It held many technical assets and combat troops and ruled downtown Jongno and Jung-gu, around Gwanghwamun, directly. That strength stood on four grounds."
       }
     },
     {
@@ -920,8 +920,8 @@
       "anchor": "list-6",
       "items": [
         {
-          "en": "The authority of the emergency order. The seven order-lineage states, the Sluice, the Eastern Command, the Achasan Gate, the Junction, the Sinnae Transport, the Gauge, and the White Cross, registered successions and treaties with the records office. A succession not registered was not recognized as a state within the order lineage.",
-          "ko": "긴급명령의 권위다. 질서 계열 일곱, 곧 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단은 승계와 조약을 기록청에 등록한다. 등록되지 않은 승계는 질서 계열 안에서 나라로 인정받지 못한다."
+          "ko": "긴급명령의 권위다. 동방사와 아관사는 승계와 조약을 기록청에 등록하는 형식으로 정부에 복속한다. 수문국·환적국·신내운수·규격맹·흰십자단도 승계와 조약을 기록청에 등록한다. 등록되지 않은 승계는 질서 계열 안에서 나라로 인정받지 못한다.",
+          "en": "The authority of the emergency order. The Eastern Command and the Achasan Gate were subject to the government in the form of registering successions and treaties with the records office. The Sluice, the Junction, the Sinnae Transport, the Gauge, and the White Cross also registered successions and treaties there. A succession not registered was not recognized as a state within the order lineage."
         },
         {
           "en": "The downtown ration and rolls. The government ran the resident rolls and the ration windows of Jongno and Jung-gu. A person absent from the rolls received no ration downtown.",
@@ -960,6 +960,170 @@
         "en": "In May 2122 Kim Yeongyu gathered nineteen records officers and formed Onminui.",
         "ko": "2122년 5월 김연규는 기록 당직자 19명을 모아 온민의를 결성하였다."
       }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "p-12",
+      "text": {
+        "ko": "동방사와 아관사는 독립한 사령부이면서 정부에 복속한 나라다. 기록청에 승계와 조약을 등록하거나 청사 도장과 명부를 쓰는 나라들은 정부를 보좌한다. 정부와 이런 관계를 맺지 않은 나라는 독립국이다.",
+        "en": "The Eastern Command and the Achasan Gate were independent commands that were also subject to the government. States that registered successions and treaties with the records office or used the government stamp and roll supported the government. States with no such tie were independent."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "table-gov-relations",
+      "columns": [
+        {
+          "ko": "국가",
+          "en": "State"
+        },
+        {
+          "ko": "정부와의 관계",
+          "en": "Relation to the government"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "ko": "동방사",
+            "en": "Eastern Command"
+          },
+          {
+            "ko": "복속",
+            "en": "Subject"
+          }
+        ],
+        [
+          {
+            "ko": "아관사",
+            "en": "Achasan Gate"
+          },
+          {
+            "ko": "복속",
+            "en": "Subject"
+          }
+        ],
+        [
+          {
+            "ko": "환적국",
+            "en": "Junction"
+          },
+          {
+            "ko": "보좌",
+            "en": "Supporting"
+          }
+        ],
+        [
+          {
+            "ko": "신내운수",
+            "en": "Sinnae Transport"
+          },
+          {
+            "ko": "보좌",
+            "en": "Supporting"
+          }
+        ],
+        [
+          {
+            "ko": "규격맹",
+            "en": "Gauge"
+          },
+          {
+            "ko": "보좌",
+            "en": "Supporting"
+          }
+        ],
+        [
+          {
+            "ko": "흰십자단",
+            "en": "White Cross"
+          },
+          {
+            "ko": "보좌",
+            "en": "Supporting"
+          }
+        ],
+        [
+          {
+            "ko": "명동대교구",
+            "en": "Myeongdong Archdiocese"
+          },
+          {
+            "ko": "보좌",
+            "en": "Supporting"
+          }
+        ],
+        [
+          {
+            "ko": "안국총림",
+            "en": "Anguk Order"
+          },
+          {
+            "ko": "보좌",
+            "en": "Supporting"
+          }
+        ],
+        [
+          {
+            "ko": "정동노총",
+            "en": "Jeongdong Federation"
+          },
+          {
+            "ko": "보좌",
+            "en": "Supporting"
+          }
+        ],
+        [
+          {
+            "ko": "태욱그룹",
+            "en": "Taeuk Group"
+          },
+          {
+            "ko": "독립",
+            "en": "Independent"
+          }
+        ],
+        [
+          {
+            "ko": "여의도출자연합회",
+            "en": "Yeouido Investment Federation"
+          },
+          {
+            "ko": "독립",
+            "en": "Independent"
+          }
+        ],
+        [
+          {
+            "ko": "명부교회",
+            "en": "Myeongbu Church"
+          },
+          {
+            "ko": "독립",
+            "en": "Independent"
+          }
+        ],
+        [
+          {
+            "ko": "성하그룹",
+            "en": "Seongha Group"
+          },
+          {
+            "ko": "독립",
+            "en": "Independent"
+          }
+        ],
+        [
+          {
+            "ko": "중앙기술보존원",
+            "en": "Central Technology Preservation Office"
+          },
+          {
+            "ko": "독립",
+            "en": "Independent"
+          }
+        ]
+      ]
     },
     {
       "kind": "heading",
