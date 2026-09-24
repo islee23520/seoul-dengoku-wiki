@@ -10,9 +10,9 @@
   },
   "provenance": {
     "original_anchor": "lore/characters/Cast-Index.md",
-    "original_hash": "2842e52d6c294c87f1b5c4790ee150d24754fe96acf88ce777b40dbe9658ebf3",
+    "original_hash": "3534ff497704fa063e0f1666254feb4086aeeb567d1a648694f7ab778d14dbea",
     "history": [
-      "Korean lore/characters/Cast-Index.md SHA-256 2842e52d6c294c87f1b5c4790ee150d24754fe96acf88ce777b40dbe9658ebf3.",
+      "Korean lore/characters/Cast-Index.md SHA-256 3534ff497704fa063e0f1666254feb4086aeeb567d1a648694f7ab778d14dbea.",
       "English lore/characters/Cast-Index.en.md SHA-256 2efe51af292d63e4caac2c6ecd57df205a311c0f21d208a498e8c055e604b514; copied verbatim, no translation written."
     ]
   },
@@ -49,8 +49,8 @@
       "kind": "paragraph",
       "anchor": "인물-총람-p1",
       "text": {
-        "en": "A roster that bound the 1,004 named people of the sixteen states of post-collapse Seoul and the unaffiliated corridors by state, office, tier, and edge count. The 1,004 rows of unique names link the core figures, the sixteen state ledgers, and the unaffiliated cards. Migrant corridors and conscription-remnant personnel outside the sixteen ledgers are bound separately in the corridor people compendium.",
-        "ko": "붕괴 이후 서울 16국과 무소속 회랑의 이름 있는 인물 1004명을 국가·직위·단계·관계 수로 묶은 명부다. 고유 이름 1004행은 핵심 인물, 16개 국가 장부, 무소속 카드에 모두 연결된다. 16국 장부 바깥의 이주민 회랑과 징집 잔존 인력은 회랑 인물 총람에 따로 묶는다."
+        "en": "A roster that bound the 1,006 named people of the sixteen states of post-collapse Seoul and the unaffiliated corridors by state, office, tier, and edge count. The 1,006 rows of unique names link the core figures, the sixteen state ledgers, and the unaffiliated cards. Migrant corridors and conscription-remnant personnel outside the sixteen ledgers are bound separately in the corridor people compendium.",
+        "ko": "붕괴 이후 서울 16국과 무소속 회랑의 이름 있는 인물 1006명을 국가·직위·단계·관계 수로 묶은 명부다. 고유 이름 1006행은 핵심 인물, 16개 국가 장부, 무소속 카드에 모두 연결된다. 16국 장부 바깥의 이주민 회랑과 징집 잔존 인력은 회랑 인물 총람에 따로 묶는다."
       }
     },
     {
@@ -276,22 +276,6 @@
     },
     {
       "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p11",
-      "text": {
-        "en": "By the #14 machine-merge ban, Story-Batch/Hostile-Group bodies were not added to this branch wholesale.",
-        "ko": "#14 기계 병합 금지로 Story-Batch/Hostile-Group 본문은 이 브랜치에 일괄 추가하지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p12",
-      "text": {
-        "en": "`confirmed-landed`, used for B001 on the source hub, meant landing inside that branch and did not mean publication to main.",
-        "ko": "원본 허브에서 B001에 사용한 `confirmed-landed`는 그 브랜치 안의 착지를 뜻하며, main 게시를 뜻하지는 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
       "anchor": "게시-문서와-조각-현황-p13",
       "text": {
         "en": "G07–G24 had no files at the recorded SHAs, but the `ea81bb9` landed bodies existed on main, and the result of the issue #17 curation remained in the publication-status column.",
@@ -320,222 +304,6 @@
         }
       ],
       "rows": [
-        [
-          {
-            "en": "B001",
-            "ko": "B001"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B001.md` @ `8dd66cc72f11fc2d93b062ce33af6a491a84a7ab` (`docs/cast-backstories-houses-physical-ai`)",
-            "ko": "`docs/game-logic/Story-Batch-B001.md` @ `8dd66cc72f11fc2d93b062ce33af6a491a84a7ab` (`docs/cast-backstories-houses-physical-ai`)"
-          },
-          {
-            "en": "Publication confirmed. K-person affiliation, office, and trigger events match Cast-State/Core. H01 Hannuri is synthetic (absent from the compendium). Banned tokens 0",
-            "ko": "게시 확인. K-인물 소속·직위·촉발 사건 Cast-State/Core 일치. H01 한누리는 합성(총람 비등재). 금지 토큰 0"
-          }
-        ],
-        [
-          {
-            "en": "B002",
-            "ko": "B002"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B002.md` @ `b6397adb27eabe3503af3011ffda624bc884b33e` (`docs/cast-b002`)",
-            "ko": "`docs/game-logic/Story-Batch-B002.md` @ `b6397adb27eabe3503af3011ffda624bc884b33e` (`docs/cast-b002`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H02 Seorin is synthetic (absent from the compendium, not identical with Yun Seorin). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H02 서린은 합성(총람 비등재, 윤서린과 비동일). #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B003",
-            "ko": "B003"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B003.md` @ `23240675edcb508f327ef903afcb4a56a95d38d0` (`docs/cast-b003`)",
-            "ko": "`docs/game-logic/Story-Batch-B003.md` @ `23240675edcb508f327ef903afcb4a56a95d38d0` (`docs/cast-b003`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H03 Lee Do is synthetic (absent from the compendium). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H03 이도는 합성(총람 비등재). #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B004",
-            "ko": "B004"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B004.md` @ `c3f33a7839748ee1408d8113278f7522b5757441` (`docs/cast-b004`)",
-            "ko": "`docs/game-logic/Story-Batch-B004.md` @ `c3f33a7839748ee1408d8113278f7522b5757441` (`docs/cast-b004`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H04 Gangbyeol is synthetic (absent from the compendium). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H04 강별은 합성(총람 비등재). #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B005",
-            "ko": "B005"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B005.md` @ `406d5e8922450519d847f856f667d2226bb8139f` (`docs/cast-b005`)",
-            "ko": "`docs/game-logic/Story-Batch-B005.md` @ `406d5e8922450519d847f856f667d2226bb8139f` (`docs/cast-b005`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H05 Yunjae is synthetic (absent from the compendium, not identical with Ji Yunjae or Tak Yunjae). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H05 윤재는 합성(총람 비등재, 지윤재·탁윤재와 비동일). #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B006",
-            "ko": "B006"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B006.md` @ `2da40af520c5498b3f8af910b9f2b44712cade97` (`docs/cast-b006`)",
-            "ko": "`docs/game-logic/Story-Batch-B006.md` @ `2da40af520c5498b3f8af910b9f2b44712cade97` (`docs/cast-b006`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H06 Baksol is synthetic (absent from the compendium). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H06 박솔은 합성(총람 비등재). #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B007",
-            "ko": "B007"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B007.md` @ `fb447e42d0010379bbb20d5ed71b85c5281cc906` (`docs/cast-b007`)",
-            "ko": "`docs/game-logic/Story-Batch-B007.md` @ `fb447e42d0010379bbb20d5ed71b85c5281cc906` (`docs/cast-b007`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H07 Jeonguram is synthetic (absent from the compendium). The body wrongly claimed the Cast-Index.md#S07 anchor. Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H07 정우람은 합성(총람 비등재). 본문이 Cast-Index.md#S07 앵커를 잘못 주장. #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B008",
-            "ko": "B008"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B008.md` @ `8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa` (`docs/cast-b008`)",
-            "ko": "`docs/game-logic/Story-Batch-B008.md` @ `8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa` (`docs/cast-b008`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H08 Choidaon is synthetic (absent from the compendium). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H08 최다온은 합성(총람 비등재). #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B009",
-            "ko": "B009"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B009.md` @ `f9e9a9f74736e3181987307b41482b68aee54032` (`docs/cast-b009`)",
-            "ko": "`docs/game-logic/Story-Batch-B009.md` @ `f9e9a9f74736e3181987307b41482b68aee54032` (`docs/cast-b009`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H09 Joharam is synthetic (absent from the compendium). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H09 조하람은 합성(총람 비등재). #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B010",
-            "ko": "B010"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B010.md` @ `702c75668c10d26cf05f3d679003239450af3f71` (`docs/cast-b010`)",
-            "ko": "`docs/game-logic/Story-Batch-B010.md` @ `702c75668c10d26cf05f3d679003239450af3f71` (`docs/cast-b010`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H10 Yunsaeron is synthetic (absent from the compendium). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H10 윤새론은 합성(총람 비등재). #14로 미게시"
-          }
-        ],
-        [
-          {
-            "en": "B011",
-            "ko": "B011"
-          },
-          {
-            "en": "Discarded (reason: synthetic H11 Kim Doha shares a name with state-03 residents' representative Kim Doha)",
-            "ko": "폐기(사유: H11 합성 김도하가 국가03 주민대표 김도하와 동명)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B011.md` @ `1feb1084269ce3882a220959eea61b10eaf89ca9` (`docs/cast-b011`)",
-            "ko": "`docs/game-logic/Story-Batch-B011.md` @ `1feb1084269ce3882a220959eea61b10eaf89ca9` (`docs/cast-b011`)"
-          },
-          {
-            "en": "Discard confirmed and reason corrected. The human Kim Doha (Magok–Banghwa residents' representative) and the H11 synthetic person shared one display name. K-person affiliations matched, but the same-name collision blocked publication",
-            "ko": "폐기 확인·사유 정정. 인간 김도하(마곡·방화 주민대표)와 H11 합성 인격이 같은 표시 이름. K-인물 소속은 일치하나 동명 충돌로 게시 불가"
-          }
-        ],
-        [
-          {
-            "en": "B012",
-            "ko": "B012"
-          },
-          {
-            "en": "Discarded (reason: #14 body never landed, curation passed)",
-            "ko": "폐기(사유: #14 본문 미착지, 큐레이션 통과)"
-          },
-          {
-            "en": "`docs/game-logic/Story-Batch-B012.md` @ `6e6f958e191969c4e4d2ff5427820249ef73e484` (`docs/cast-b012`)",
-            "ko": "`docs/game-logic/Story-Batch-B012.md` @ `6e6f958e191969c4e4d2ff5427820249ef73e484` (`docs/cast-b012`)"
-          },
-          {
-            "en": "K-person names and affiliations match Cast-State. H12 Ichaeon is synthetic (absent from the compendium). Unpublished by #14",
-            "ko": "K-인물 Cast-State 이름·소속 일치. H12 이채온은 합성(총람 비등재). #14로 미게시"
-          }
-        ],
         [
           {
             "en": "G01",
@@ -1332,16 +1100,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-01-급수계약정",
+      "anchor": "국가-01-수문국",
       "depth": 2,
       "text": {
         "en": "State 01 Water Compact",
-        "ko": "국가 01 급수계약정"
+        "ko": "국가 01 수문국"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-01-급수계약정-table1",
+      "anchor": "국가-01-수문국-table1",
       "columns": [
         {
           "en": "Name",
@@ -1869,16 +1637,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-02-규격동맹",
+      "anchor": "국가-02-규격맹",
       "depth": 2,
       "text": {
         "en": "State 02 Standards Alliance",
-        "ko": "국가 02 규격동맹"
+        "ko": "국가 02 규격맹"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-02-규격동맹-table1",
+      "anchor": "국가-02-규격맹-table1",
       "columns": [
         {
           "en": "Name",
@@ -2406,16 +2174,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-03-양재기공주식회사",
+      "anchor": "국가-03-태욱그룹",
       "depth": 2,
       "text": {
         "en": "State 03 Yangjae Machineworks Company",
-        "ko": "국가 03 양재기공주식회사"
+        "ko": "국가 03 태욱그룹"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-03-양재기공주식회사-table1",
+      "anchor": "국가-03-태욱그룹-table1",
       "columns": [
         {
           "en": "Name",
@@ -2441,16 +2209,34 @@
             "ko": "정호준"
           },
           {
-            "en": "Chief Researcher for Life Safety",
-            "ko": "생명안전 연구책임자"
+            "en": "Taeuk chief of life-safety research",
+            "ko": "태욱 생명안전 연구책임자"
           },
           {
-            "en": "Core",
+            "en": "주요",
             "ko": "주요"
           },
           {
             "en": "0",
             "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "Jeong Seoon",
+            "ko": "정서온"
+          },
+          {
+            "en": "Chair of Taeuk Group",
+            "ko": "태욱그룹 회장"
+          },
+          {
+            "en": "주요",
+            "ko": "주요"
+          },
+          {
+            "en": "3",
+            "ko": "3"
           }
         ],
         [
@@ -2961,16 +2747,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-04-설교명부정",
+      "anchor": "국가-04-명부교회",
       "depth": 2,
       "text": {
         "en": "State 04 Sermon Registry",
-        "ko": "국가 04 설교명부정"
+        "ko": "국가 04 명부교회"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-04-설교명부정-table1",
+      "anchor": "국가-04-명부교회-table1",
       "columns": [
         {
           "en": "Name",
@@ -3022,8 +2808,8 @@
             "ko": "주요"
           },
           {
-            "en": "3",
-            "ko": "3"
+            "en": "4",
+            "ko": "4"
           }
         ],
         [
@@ -3534,16 +3320,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-05-호위보호정",
+      "anchor": "국가-05-동방사",
       "depth": 2,
       "text": {
         "en": "State 05 Escort Protection State",
-        "ko": "국가 05 호위보호정"
+        "ko": "국가 05 동방사"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-05-호위보호정-table1",
+      "anchor": "국가-05-동방사-table1",
       "columns": [
         {
           "en": "Name",
@@ -4572,16 +4358,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-07-선로후계정",
+      "anchor": "국가-07-환적국",
       "depth": 2,
       "text": {
         "en": "State 07 Line Succession State",
-        "ko": "국가 07 선로후계정"
+        "ko": "국가 07 환적국"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-07-선로후계정-table1",
+      "anchor": "국가-07-환적국-table1",
       "columns": [
         {
           "en": "Name",
@@ -5055,16 +4841,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-08-원불교",
+      "anchor": "국가-08-중앙기술보존원",
       "depth": 2,
       "text": {
         "en": "State 08 Won Buddhism",
-        "ko": "국가 08 원불교"
+        "ko": "국가 08 중앙기술보존원"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-08-원불교-table1",
+      "anchor": "국가-08-중앙기술보존원-table1",
       "columns": [
         {
           "en": "Name",
@@ -5086,15 +4872,15 @@
       "rows": [
         [
           {
-            "en": "O Haerin",
+            "en": "Oh Haerin",
             "ko": "오해린"
           },
           {
-            "en": "Head of the Cold-Storage Merchants",
-            "ko": "냉동상인 대표"
+            "en": "Director of the Central Technical Preservation Institute",
+            "ko": "중앙기술보존원 원장"
           },
           {
-            "en": "Core",
+            "en": "주요",
             "ko": "주요"
           },
           {
@@ -6039,16 +5825,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-10-승가구휼정",
+      "anchor": "국가-10-안국총림",
       "depth": 2,
       "text": {
         "en": "State 10 Sangha Relief State",
-        "ko": "국가 10 승가구휼정"
+        "ko": "국가 10 안국총림"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-10-승가구휼정-table1",
+      "anchor": "국가-10-안국총림-table1",
       "columns": [
         {
           "en": "Name",
@@ -6540,16 +6326,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-11-서초전산그룹",
+      "anchor": "국가-11-성하그룹",
       "depth": 2,
       "text": {
         "en": "State 11 Seocho Computing Group",
-        "ko": "국가 11 서초전산그룹"
+        "ko": "국가 11 성하그룹"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-11-서초전산그룹-table1",
+      "anchor": "국가-11-성하그룹-table1",
       "columns": [
         {
           "en": "Name",
@@ -7023,16 +6809,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-12-중립호송시",
+      "anchor": "국가-12-신내운수",
       "depth": 2,
       "text": {
         "en": "State 12 Neutral Convoy City",
-        "ko": "국가 12 중립호송시"
+        "ko": "국가 12 신내운수"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-12-중립호송시-table1",
+      "anchor": "국가-12-신내운수-table1",
       "columns": [
         {
           "en": "Name",
@@ -7524,16 +7310,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-13-의약중립맹",
+      "anchor": "국가-13-흰십자단",
       "depth": 2,
       "text": {
         "en": "State 13 Medical Neutrality League",
-        "ko": "국가 13 의약중립맹"
+        "ko": "국가 13 흰십자단"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-13-의약중립맹-table1",
+      "anchor": "국가-13-흰십자단-table1",
       "columns": [
         {
           "en": "Name",
@@ -8025,16 +7811,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-14-관문군정",
+      "anchor": "국가-14-아관사",
       "depth": 2,
       "text": {
         "en": "State 14 Gate Military Government",
-        "ko": "국가 14 관문군정"
+        "ko": "국가 14 아관사"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-14-관문군정-table1",
+      "anchor": "국가-14-아관사-table1",
       "columns": [
         {
           "en": "Name",
@@ -8060,11 +7846,11 @@
             "ko": "고서준"
           },
           {
-            "en": "Ridge Defense Chief",
-            "ko": "능선수비대장"
+            "en": "Gate commander of Agwansa",
+            "ko": "아관사 관문사령관"
           },
           {
-            "en": "Core",
+            "en": "주요",
             "ko": "주요"
           },
           {
@@ -8074,11 +7860,29 @@
         ],
         [
           {
-            "en": "I Ilseop",
+            "en": "Tak Seoyun",
+            "ko": "탁서윤"
+          },
+          {
+            "en": "Guui guard captain of Agwansa",
+            "ko": "아관사 구의수비대장"
+          },
+          {
+            "en": "주요",
+            "ko": "주요"
+          },
+          {
+            "en": "1",
+            "ko": "1"
+          }
+        ],
+        [
+          {
+            "en": "Lee Ilseop",
             "ko": "이일섭"
           },
           {
-            "en": "gate joint-rule ledger clerk",
+            "en": "Gate joint-rule ledger clerk",
             "ko": "관문 공동통치 원장 서기"
           },
           {
@@ -8086,8 +7890,8 @@
             "ko": "S1"
           },
           {
-            "en": "3",
-            "ko": "3"
+            "en": "0",
+            "ko": "0"
           }
         ],
         [
@@ -8526,16 +8330,16 @@
     },
     {
       "kind": "heading",
-      "anchor": "국가-15-본당인준정",
+      "anchor": "국가-15-명동대교구",
       "depth": 2,
       "text": {
         "en": "State 15 Cathedral Accreditation State",
-        "ko": "국가 15 본당인준정"
+        "ko": "국가 15 명동대교구"
       }
     },
     {
       "kind": "table",
-      "anchor": "국가-15-본당인준정-table1",
+      "anchor": "국가-15-명동대교구-table1",
       "columns": [
         {
           "en": "Name",

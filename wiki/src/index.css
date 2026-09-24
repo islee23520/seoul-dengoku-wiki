@@ -265,7 +265,7 @@ summary:focus-visible {
 .person-data-section h2 { margin-block: 0 0.35rem; font-size: 1rem; }
 .person-data-table { min-inline-size: 100%; width: 100%; border-collapse: collapse; }
 .person-data-table th { inline-size: 38%; background: color-mix(in srgb, var(--wiki-nav) 88%, white); color: white; }
-.person-data-table td { background: var(--wiki-paper); overflow-wrap: anywhere; }
+.person-data-table td { background: var(--wiki-paper); color: var(--wiki-text); overflow-wrap: anywhere; }
 .person-canon-prose > h2 { margin-block-start: 0; }
 .person-canon-prose section { border-block-end: 1px solid var(--wiki-line); padding-block-end: 0.75rem; }
 .person-canon-prose details { margin-block-start: 1rem; border: 1px solid var(--wiki-line); padding: 0.75rem; }
@@ -280,13 +280,13 @@ summary:focus-visible {
 .territory-filter select { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.5rem; }
 .territory-map-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; align-items: start; }
 .territory-map-canvas { min-inline-size: 0; overflow: hidden; border: 1px solid var(--wiki-line); background: #e9e5dc; }
-.territory-map-canvas-3d { position: relative; min-block-size: 42rem; background: #07151c; isolation: isolate; }
+.territory-map-canvas-3d { position: relative; min-block-size: 42rem; block-size: calc(100vh - 12rem); background: #07151c; isolation: isolate; }
 .territory-map-canvas-3d canvas { position: absolute; inset: 0; display: block; inline-size: 100%; block-size: 100%; cursor: grab; }
 .territory-map-canvas-3d canvas:active { cursor: grabbing; }
 .territory-marker-connectors { position: absolute; inset: 0; z-index: 2; inline-size: 100%; block-size: 100%; pointer-events: none; }
 .territory-marker-connectors line { stroke: rgb(255 214 107 / 0.8); stroke-width: 0.18; vector-effect: non-scaling-stroke; }
 .territory-state-markers { position: absolute; inset: 0; z-index: 5; pointer-events: none; }
-.territory-state-marker { position: absolute; z-index: 6; display: inline-flex; align-items: center; gap: 0.3rem; inline-size: 8.5rem; border: 1px solid rgb(255 255 255 / 0.65); background: rgb(7 21 28 / 0.88); color: white; padding: 0.2rem 0.3rem; translate: -50% -115%; pointer-events: auto; cursor: pointer; font: inherit; text-align: start; }
+.territory-state-marker { position: absolute; z-index: 6; display: inline-flex; align-items: center; gap: 0.3rem; inline-size: 7rem; border: 1px solid rgb(255 255 255 / 0.65); background: rgb(7 21 28 / 0.88); color: white; padding: 0.2rem 0.3rem; translate: -50% -115%; pointer-events: auto; cursor: pointer; font: inherit; font-size: 0.72rem; text-align: start; }
 .territory-state-marker:hover, .territory-state-marker[aria-pressed="true"] { border-color: #fff; background: rgb(143 45 39 / 0.94); }
 .territory-capital-marker { border-width: 2px; border-color: #ffd66b; box-shadow: 0 0 0 2px rgb(7 21 28 / 0.72), 0 0 1rem rgb(255 214 107 / 0.4); }
 .territory-capital-marker::after { content: ''; position: absolute; inset-inline-start: 50%; inset-block-start: 100%; inline-size: 0.16rem; block-size: 1rem; background: #ffd66b; translate: -50% 0; }

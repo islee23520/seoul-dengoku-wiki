@@ -2,8 +2,8 @@
 //
 // 계약 (schema: wiki-person-id-candidates.v1)
 // - 후보 명부는 lore/name-pools/values-cast.json의 people[] 배열 순서를 그대로 유지한다 (이름 정렬 금지).
-// - 기존 신원 K001–K422은 lore/World-Narrative-Atlas.md의 "humans" 기계 등록부를 정본으로 읽고
-//   lore/Story-Batch-Manifest.md 투영과 대조한다. 어긋나면 NOTES에 기록한다 (추측 금지).
+// - 기존 신원 K001–K422은 lore/World-Narrative-Atlas.md의 "humans" 기계 등록부를 정본으로 읽는다.
+//   (사회 서사 배치 원장 투영은 2026-09-24에 폐기되어 대조하지 않는다.)
 // - inputSha256은 values-cast.json 바이트의 SHA-256, baseCommit은 생성 시점 HEAD 40자리 커밋이다.
 //   baseCommit은 증명 값이므로 재생성 검사는 커밋된 표의 baseCommit을 전달해 전체 바이트가 같음을 확인한다.
 // - 후보는 ordinal 1..N만 받는다. 실제 K423+ 번호 발급은 이 표에서 하지 않는다.
@@ -27,7 +27,6 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
 const VALUES_PATH = path.join(REPO, "lore", "name-pools", "values-cast.json");
 const ATLAS_PATH = path.join(REPO, "lore", "World-Narrative-Atlas.md");
-const MANIFEST_PATH = path.join(REPO, "lore", "Story-Batch-Manifest.md");
 const CHARS_DIR = path.join(REPO, "lore", "characters");
 const CORRIDORS_PATH = path.join(CHARS_DIR, "Cast-Corridors-Index.md");
 const CORE_PATH = path.join(CHARS_DIR, "Core-Characters.md");
@@ -71,11 +70,6 @@ export function loadContext() {
   const valuesJson = JSON.parse(valuesBytes.toString("utf8"));
   const atlasText = readFileSync(ATLAS_PATH, "utf8");
   const humans = JSON.parse(extractJsonArrayOnce(atlasText, "humans"));
-  const manifestText = readFileSync(MANIFEST_PATH, "utf8");
-  const manifest = new Map();
-  for (const m of manifestText.matchAll(/^\| (K\d{3}) \| ([^|]+) \|/gm)) {
-    if (!manifest.has(m[1])) manifest.set(m[1], m[2].trim());
-  }
   const coreText = readFileSync(CORE_PATH, "utf8");
   const coreNames = [...coreText.matchAll(/^## (.+)$/gm)]
     .map((m) => m[1].trim())
@@ -103,7 +97,6 @@ export function loadContext() {
     valuesBytes,
     valuesJson,
     humans,
-    manifest,
     ledger: { coreNames, castStateNames, unaffiliated, corridorsNames },
   };
 }
@@ -114,20 +107,6 @@ export function buildTable(ctx, baseCommit) {
   const atlasById = new Map(ctx.humans.map((h) => [h.id, h]));
   const notes = [];
 
-  // 등록부 대조: 아틀라스(정본) ↔ 배치 원장 투영
-  for (const [id, name] of ctx.manifest) {
-    const h = atlasById.get(id);
-    if (!h) {
-      notes.push({ type: "registry-mismatch", name, detail: `배치 원장의 ${id}가 아틀라스 humans 등록부에 없다` });
-    } else if (h.name !== name) {
-      notes.push({ type: "registry-mismatch", name, detail: `${id} 이름이 아틀라스(${h.name})와 배치 원장(${name})에서 다르다` });
-    }
-  }
-  for (const id of atlasById.keys()) {
-    if (!ctx.manifest.has(id)) {
-      notes.push({ type: "registry-mismatch", name: atlasById.get(id).name, detail: `아틀라스 ${id}가 배치 원장 투영에 없다` });
-    }
-  }
   for (const h of ctx.humans) {
     if (!peopleByName.has(h.name)) {
       notes.push({ type: "k-name-not-in-values", name: h.name, detail: `기존 K(${h.id})가 values-cast.json people에 없다` });

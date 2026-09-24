@@ -54,25 +54,23 @@ const parseStateRows = (markdown) => {
     const originCell = rowCell(row, '기원') || rowCell(row, '출신')
     const embedded = (originCell.match(/중심\s*([^|()]+?)역/u) ?? originCell.match(/([가-힣]{2,8})역/u) ?? [])[1] ?? ''
     const capital = (rowCell(row, '수도역') || rowCell(row, '중심역')).replace(/역$/u, '').trim() || embedded.trim()
+    const rawName = row['국명']
+    const origin = rawName.match(/\(기원 표기 ([^,)]+)/u)?.[1]?.trim() ?? rawName
     return {
       id,
-      name: publicStateName(row['국명']),
+      name: publicStateName(rawName),
       names: [...new Set([
-        publicStateName(row['국명']),
-        ...[...row['국명'].matchAll(/기원 표기 ([^,)]+)/gu)].map((match) => match[1].trim()),
+        publicStateName(rawName), origin,
         (originCell.split(/[.]/u)[0] ?? '').trim(),
       ].filter((candidate) => candidate.length >= 2))],
-      origin: originCell || rowCell(row, '정부') || rowCell(row, '형태'),
+      origin,
       government: rowCell(row, '정부') || rowCell(row, '형태'),
       power: (rowCell(row, '등급') || rowCell(row, '강국')).split(',')[0].trim(),
-      cause: rowCell(row, '국호') || rowCell(row, '원인') || rowCell(row, '인과') || rowCell(row, '유래'),
+      cause: rowCell(row, '주요 관계') || rowCell(row, '원인') || rowCell(row, '인과') || rowCell(row, '유래'),
       capital,
     }
   })
-  if (rows.length !== 16 || rows.some((row) => !row.name)) throw new Error(`E_STATE_TABLE:${rows.length}`)
-  rows.forEach((row, index) => {
-    if (!row.id) row.id = `S${String(index + 1).padStart(2, '0')}`
-  })
+  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
   if (rows.some((row) => !row.capital)) throw new Error(`E_STATE_CAPITAL:${rows.filter((row) => !row.capital).map((row) => row.name).join(',')}`)
   return rows
 }
@@ -255,22 +253,28 @@ await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdat
 const stateSource = renderedBySlug.get('Sixteen-States')
 const officesSource = renderedBySlug.get('Offices-and-Ranks')
 if (!stateSource || !officesSource) throw new Error('E_STATE_OR_OFFICE_PAGE_MISSING')
+if (!pagesBySlug.get('Sixteen-States')?.value.source?.refs?.includes('lore/factions/Sixteen-States.md')) throw new Error('E_STATE_CANON_PROVENANCE')
 const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
-const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
-  .map((match) => [match[1].trim(), match.slice(2).map((rank) => rank.trim())]))
 const stateRows = parseStateRows(stateSource)
 const coreCharacters = renderedBySlug.get('Core-Characters')
+const stateIdByName = new Map(stateRows.flatMap((row) => [[row.name, row.id], [row.origin, row.id]]))
+const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
+  .filter((match) => match[1].trim() !== '국가')
+  .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((rank) => rank.trim())]))
+if (tiersByState.size !== 16) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByState.size}`)
 const stateCatalog = stateRows.map((row) => ({
   slug: row.id.toLowerCase(),
+  id: row.id,
   name: row.name,
   origin: row.origin,
   government: row.government,
   power: row.power,
   cause: row.cause,
-  ruler: leaderForNames(coreCharacters, row.names),
+  ruler: row.government.match(/회장 (\S+)/u)?.[1] ?? leaderForNames(coreCharacters, row.names),
   capital: row.capital,
+  capitalName: row.capital,
 }))
-await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type StateRecord = { slug: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
+await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type StateRecord = { slug: string; id: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
 const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
 const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
@@ -331,7 +335,6 @@ const pointInPolygon = ([x, y], points) => {
   }
   return inside
 }
-const stateIdByName = new Map(stateRows.map((row) => [row.name, row.id]))
 const capitalNameByState = new Map(stateRows.map((row) => [row.id, row.capital.replace(/역$/u, '')]))
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
@@ -441,6 +444,62 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     capitalY: capital.y,
   }
 })
+const vassalsTableMatch = stateSource.match(/\| 속국 \| 본국 \|[\s\S]*?(?=\n\n|$)/)?.[0] ?? ''
+const vassalsRows = [...vassalsTableMatch.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
+  .map((match) => match.slice(1).map((cell) => cell.trim()))
+  .filter(([name]) => name !== '속국' && !name.startsWith('---'))
+
+const anchorRules = {
+  '경기도(고양)': '3호선 대화 방면',
+  '제일수문(양평)': '경의중앙 지평 방면',
+  '제이수문(춘천)': '경춘선',
+  '제1분공방(천안·아산, 이씨)': '1호선 남단',
+  '제2분공방(시흥)': '',
+  '제1종착(인천)': '1호선 인천',
+  '제2종착(파주)': '경의중앙 문산',
+  '제1경비지구(하남)': '5호선 하남',
+  '제2경비지구(남양주)': '',
+  '제3경비지구(의정부·연천)': '1호선 북단·7호선 장암',
+  '태욱중공업 성남사업장': '신분당/8호선',
+  '태욱중공업 수원사업장': '수인분당',
+  '영종지점(영종)': '공항철도'
+}
+
+const cityRules = {
+  '경기도(고양)': '고양',
+  '제일수문(양평)': '양평',
+  '제이수문(춘천)': '춘천',
+  '제1분공방(천안·아산, 이씨)': '천안·아산',
+  '제2분공방(시흥)': '시흥',
+  '제1종착(인천)': '인천',
+  '제2종착(파주)': '파주',
+  '제1경비지구(하남)': '하남',
+  '제2경비지구(남양주)': '남양주',
+  '제3경비지구(의정부·연천)': '의정부·연천',
+  '태욱중공업 성남사업장': '성남',
+  '태욱중공업 수원사업장': '수원',
+  '영종지점(영종)': '영종'
+}
+
+const mapVassalName = (rawName) => {
+  if (rawName === '제1분공방(천안·아산, 이씨)') return '제1분공방'
+  const match = rawName.match(/^([^(]+)\(/)
+  return match ? match[1] : rawName
+}
+
+const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
+  const suzerainId = stateIdByName.get(suzerainName)
+  if (!suzerainId) throw new Error(`E_VASSAL_SUZERAIN_NOT_FOUND:${suzerainName}`)
+  return {
+    name: mapVassalName(rawName),
+    city: cityRules[rawName] || rawName,
+    suzerain: suzerainId,
+    founded,
+    duty,
+    anchor: anchorRules[rawName] || ''
+  }
+})
+
 const openingTerritories = {
   schema: 'seoul-opening-territories.v1',
   epoch: regionAtlas.fictional_epoch,
@@ -448,6 +507,7 @@ const openingTerritories = {
   height: mapHeight,
   attribution: regionAtlas.attribution,
   states: territoryStates,
+  vassals,
   lines: officialLineData.lines,
   stations: mapStations,
   edges: mapEdges,
@@ -568,8 +628,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const position = fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
   const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const occupation = fields['생업'] ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
-  const stateName = stateNameById.get(person.state) ?? person.state_name
-  const stateTiers = tiersByState.get(stateName) ?? tiersByState.get(person.state_name)
+  const stateTiers = tiersByState.get(person.state)
   const tierIndex = stateTiers?.indexOf(rank) ?? -1
   const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
   return {
@@ -583,7 +642,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
     gender: genderByName.get(person.name)?.gender ?? (() => { throw new Error(`E_PERSON_GENDER_MISSING:${person.name}`) })(),
     stage: person.stage,
     state: person.state,
-    stateName,
+    stateName: stateNameById.get(person.state) ?? person.state_name,
     sourceRoute: `/world/${source}#${anchor}`,
     detailRoute: `/people/person-${String(index + 1).padStart(4, '0')}`,
   }

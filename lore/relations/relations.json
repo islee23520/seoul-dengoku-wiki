@@ -1,0 +1,22 @@
+{
+  "schema": "lore-relations.v1",
+  "note": "Approved K001–K1004 are read from the frozen registry. P IDs are provisional local identities, not issued K IDs or owner approvals. Source tables are normalized at load time.",
+  "provisionalPeople": [
+    { "id": "P001", "name": "신준", "sourceAnchor": "관계-원장-table3" },
+    { "id": "P002", "name": "신종목", "sourceAnchor": "관계-원장-table3" },
+    { "id": "P003", "name": "김연규", "sourceAnchor": "관계-원장-table3" },
+    { "id": "P004", "name": "탁서윤", "sourceAnchor": "관계-원장-table3" },
+    { "id": "P005", "name": "정서온", "sourceAnchor": "관계-원장-table3" }
+  ],
+  "organizations": [
+    { "id": "O01", "name": "온민의", "stateId": "S06", "sourceAnchor": "ch41-i1-p" },
+    { "id": "O02", "name": "장경종", "sourceAnchor": "table-3" },
+    { "id": "O03", "name": "정통회", "sourceAnchor": "table-3" },
+    { "id": "O04", "name": "성전총회", "sourceAnchor": "table-3" }
+  ],
+  "eventLinks": [
+    { "eventId": "E:ch31-i1-p", "personId": "P005" },
+    { "eventId": "E:ch41-i1-p", "personId": "P003", "organizationId": "O01" },
+    { "eventId": "E:ch43-i1-p", "personId": "P002" }
+  ]
+}

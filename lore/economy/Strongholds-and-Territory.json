@@ -47,10 +47,28 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "거점과-영토-p1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Status of Charts",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 도표의 지위",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "거점과-영토-p1",
       "text": {
         "en": "A wiki diagram dated 2026-09-07. The isometric occupancy cells were the explanation of that day, not a battlefield grid — a flat diagram for documentation, not an actual game screen.",
-        "ko": "2026-09-07 위키 도표. 아이소 점유 칸은 당시 설명이며 전장 격자가 아니다. 문서용 평면도이며 실제 게임 화면이 아니다."
+        "ko": "2026-09-07 위키 도표의 아이소 점유 칸은 당시 설명에 쓰였다. 전장 격자 규칙은 아니다. 도표는 문서용 평면도이며 실제 게임 화면이 아니다."
       }
     },
     {
@@ -58,7 +76,7 @@
       "anchor": "거점과-영토-p2",
       "text": {
         "en": "The stabilization of strongholds after occupation and the integration of territory were managed with strategy-map links and terrain.",
-        "ko": "거점 점유 후 안정화와 영토 통합을 전략맵 연결과 지형으로 관리합니다."
+        "ko": "거점 점유 이후의 안정화와 영토 통합은 전략맵 연결과 지형에 따라 관리한다."
       }
     },
     {
@@ -82,7 +100,7 @@
         ],
         "ko": [
           {
-            "text": "역은 점령 즉시 완성되는 깃발이 아니라 사람, 시설과 연결을 다시 작동시켜야 하는 전략 거점이다. 행정동은 면적이고, 세력이 가져가는 최소 단위는 건물이다. 동에 지하철역이 있으면 그 역이 핵심 시설로 남는다. 플레이 중 지역에 띄우는 세력 이름과 영향력은 그 동의 `territory` 칸이며, 영향력은 지배력과 같다. 건물·강·구 규칙은 "
+            "text": "역은 점령 뒤 사람, 시설과 연결을 다시 작동시켜야 하는 전략 거점이다. 행정동은 면적 단위이다. 세력이 점유하는 최소 단위는 건물이다. 동에 지하철역이 있으면 그 역이 핵심 시설이다. 플레이 중 표시하는 세력 이름과 영향력은 그 동의 `territory` 칸에 있다. 영향력은 지배력과 같다. 건물·강·구 규칙은 "
           },
           {
             "text": "강·구·동 건물 재사용",
@@ -92,7 +110,7 @@
             }
           },
           {
-            "text": "을 따른다. 표의 수치는 모두 첫 프로토타입용 설계 가정이며 플레이테스트로 조정한다."
+            "text": "을 따른다. 표의 수치는 첫 프로토타입용 설계 가정이며 플레이테스트로 조정한다."
           }
         ]
       }
@@ -108,10 +126,28 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "지배력-p1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Forces by Neighborhood",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 동별 보유 세력",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "지배력-p1",
       "text": {
         "en": "Dominance `C` ran 0–100. The sum of the holding powers in one dong did not exceed 100, and the influence number on screen was `C`.",
-        "ko": "지배력 `C`는 0~100이다. 한 동의 보유 세력 합은 100을 넘지 않으며, 화면의 영향력 숫자는 `C`다."
+        "ko": "동별 지배력 `C`(이하 '지배력'이라 한다)는 0~100이다. 한 동의 보유 세력별 지배력 합은 100을 넘지 않는다. 화면의 영향력 숫자는 `C`이다."
       }
     },
     {
@@ -165,7 +201,7 @@
       "anchor": "지배력-p3",
       "text": {
         "en": "A power that lost its station had its dominance in that dong halved. A power holding only schools remained as a support-building occupant and did not change the dong's flag.",
-        "ko": "역을 잃은 세력은 그 동의 지배력을 절반으로 깎는다. 학교만 가진 세력은 지원 건물 점유로 남고, 동 깃발을 바꾸지 않는다."
+        "ko": "역을 잃은 세력의 동별 지배력은 절반으로 줄인다. 학교만 가진 세력은 지원 건물 점유자로 남는다. 학교만 점유해서는 동 깃발을 바꾸지 않는다."
       }
     },
     {
@@ -175,6 +211,24 @@
       "text": {
         "en": "Inputs and Outputs",
         "ko": "입력과 출력"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "입력과-출력-table1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Stronghold Status",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 거점 상태",
+            "strong": true
+          }
+        ]
       }
     },
     {
@@ -292,10 +346,28 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "계산-규칙-p1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Connectivity and Shortages",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 연결도와 부족도",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "계산-규칙-p1",
       "text": {
         "en": "For each legal supply route, the throughput rate of the narrowest link was taken and the largest of them used as `K`. Blockaded links were not deleted; their cause as `K=0` and their restoration conditions were preserved.",
-        "ko": "합법적인 보급 경로마다 가장 좁은 연결의 처리율을 구하고 그중 가장 큰 값을 `K`로 사용한다. 봉쇄된 연결은 삭제하지 않고 `K=0`의 원인과 복구 조건을 보존한다."
+        "ko": "합법 보급 경로마다 처리율이 가장 낮은 연결을 찾는다. 경로별 최솟값 가운데 최댓값을 `K`로 사용한다. 봉쇄된 연결은 기록에 남긴다. `K=0`의 원인과 복구 조건도 보존한다."
       }
     },
     {
@@ -328,7 +400,7 @@
         ],
         "ko": [
           {
-            "text": "수요가 0인 자원은 충족률 1, 즉 부족 기여 0으로 처리한다. 이는 "
+            "text": "수요가 0인 자원의 충족률은 1이고 부족 기여는 0이다. "
           },
           {
             "text": "경제와 생산",
@@ -338,7 +410,25 @@
             }
           },
           {
-            "text": "의 부족률 규칙과 동일한 공유 규칙이며 어떤 경우에도 0으로 나누지 않는다."
+            "text": "의 부족률 규칙과 같은 공유 규칙이다. 0으로 나누는 계산은 하지 않는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "계산-규칙-p4-label",
+      "text": {
+        "en": [
+          {
+            "text": "B. Overexpansion and Settlement",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "나. 과확장과 정산",
+            "strong": true
           }
         ]
       }
@@ -364,7 +454,7 @@
         ],
         "ko": [
           {
-            "text": "과확장 `O`는 "
+            "text": "과확장 `O`(이하 '과확장'이라 한다)는 "
           },
           {
             "text": "물류와 기반 시설",
@@ -374,7 +464,7 @@
             }
           },
           {
-            "text": "에 정의된 공유 0~2 척도를 그대로 사용한다. 이 문서의 통치부담과 행정역량은 그 정의의 통치 부담 비율 `부담비율(통치부담, 행정역량)` 항으로 들어간다."
+            "text": "에 정의된 공유 0~2 척도를 사용한다. 이 문서의 통치부담과 행정역량은 통치 부담 비율 `부담비율(통치부담, 행정역량)` 항에 들어간다."
           }
         ]
       }
@@ -384,7 +474,7 @@
       "anchor": "계산-규칙-p5",
       "text": {
         "en": "The daily settlement order was resource distribution → combat results → authority·cooperation·facilities → stage transition → event reservation. Identical inputs always produced identical results.",
-        "ko": "하루 정산 순서는 자원 배분 → 전투 결과 → 권위·협력·시설 → 단계 전이 → 사건 예약이다. 동일한 입력은 항상 같은 결과를 낸다."
+        "ko": "하루 정산은 자원 배분 → 전투 결과 → 권위·협력·시설 → 단계 전이 → 사건 예약 순서로 진행한다. 동일한 입력에는 항상 같은 결과를 낸다."
       }
     },
     {
@@ -394,6 +484,24 @@
       "text": {
         "en": "Base Numbers",
         "ko": "기본 수치"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "기본-수치-table1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Facilities and Integration Criteria",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 시설과 통합 기준",
+            "strong": true
+          }
+        ]
       }
     },
     {
@@ -551,7 +659,7 @@
       "anchor": "기본-수치-p2",
       "text": {
         "en": "Occupied ground passed through `dispute → occupation → stabilization → integration`. Integration required `A>=65`, `L>=55`, `R>=60`, `K>=0.5`, and `S<=0.25` to hold for 3 consecutive days.",
-        "ko": "점령지는 `분쟁 → 점령 → 안정화 → 통합`을 거친다. `A>=65`, `L>=55`, `R>=60`, `K>=0.5`, `S<=0.25`를 3일 연속 만족해야 통합된다."
+        "ko": "점령지는 `분쟁 → 점령 → 안정화 → 통합` 순서로 전이한다. `A>=65`, `L>=55`, `R>=60`, `K>=0.5`, `S<=0.25`를 3일 연속 만족하면 통합된다."
       }
     },
     {
@@ -570,6 +678,24 @@
       "text": {
         "en": "Boundary Cases",
         "ko": "경계 상황"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "경계-상황-list1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Shortages and Incident Pressure",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 부족과 사건 압박",
+            "strong": true
+          }
+        ]
       }
     },
     {
@@ -613,10 +739,28 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "계산-예시-p1-label",
+      "text": {
+        "en": [
+          {
+            "text": "A. Shortages and Integration Rollback",
+            "strong": true
+          }
+        ],
+        "ko": [
+          {
+            "text": "가. 부족과 통합 후퇴",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "계산-예시-p1",
       "text": {
         "en": "With food 40/100 and power 60/100, `S = 1 - min(0.4, 0.6) = 0.6`. With no legal route, `K=0`. With governance burden 4.5 and administrative capacity 3, the governance burden-ratio was `4.5/3=1.5`; with the logistics and return burden ratios smaller, `O=clamp(1.5-1,0,2)=0.5`. A station where the three conditions overlapped could not meet the integration conditions; an already integrated station fell back to the stabilization stage, and with authority collapsed too, it retreated further to occupation. Even so, with local food, generation, and repair crews remaining, recovery continued.",
-        "ko": "식량 40/100, 전력 60/100이면 `S = 1 - min(0.4, 0.6) = 0.6`이다. 합법 경로가 없으면 `K=0`이다. 통치부담 4.5와 행정역량 3이면 통치 부담 비율은 `4.5/3=1.5`이고, 물류·귀환 부담 비율이 그보다 작다면 `O=clamp(1.5-1,0,2)=0.5`다. 세 조건이 겹친 역은 통합 조건을 만족할 수 없고, 이미 통합된 역이라면 안정화 단계로 후퇴하며, 권위까지 붕괴하면 점령 단계로 더 물러난다. 그래도 현지 식량·발전·수리반이 남아 있다면 복구는 계속된다."
+        "ko": "식량 40/100, 전력 60/100이면 `S = 1 - min(0.4, 0.6) = 0.6`이다. 합법 경로가 없으면 `K=0`이다. 통치부담 4.5와 행정역량 3이면 통치 부담 비율은 `4.5/3=1.5`이다. 물류·귀환 부담 비율이 더 작으면 `O=clamp(1.5-1,0,2)=0.5`이다. 이 역은 통합 조건을 만족할 수 없다. 통합된 역에서는 안정화 단계로 후퇴한다. 권위까지 붕괴하면 점령 단계로 후퇴한다. 현지 식량·발전·수리반이 남아 있으면 복구를 계속한다."
       }
     }
   ],
