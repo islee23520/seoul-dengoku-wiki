@@ -1,8 +1,9 @@
 // person-id-registry.json 발급기·검증기 (owner 승인각 고정)
 //
 // 계약 (schema: wiki-person-id-registry.v1)
-// - 이 발급은 2026-09-22 소유자 승인(세션 senpi:01a0c914)에 묶인다. 입력 두 개의 SHA-256이
-//   승인각과 하나라도 다르면 즉시 실패한다 (fail closed — 추측 발급 금지).
+// - 이 발급은 2026-09-22 소유자 승인(세션 senpi:01a0c914)에 묶였고, 2026-09-25 소유자 Q1 답
+//   「재생성 후 재승인」(decisions.json Q1)으로 state_name 재생성 뒤 입력 해시를 다시 승인했다.
+//   입력 두 개의 SHA-256이 승인각과 하나라도 다르면 즉시 실패한다 (fail closed — 추측 발급 금지).
 //     · lore/name-pools/values-cast.json          → APPROVED.inputSha256
 //     · lore/name-pools/person-id-candidates.json → APPROVED.candidatesSha256
 // - K001–K422은 후보 파일의 existingK 스냅숏을 그대로 옮긴다 (재배치·이름 변경 금지).
@@ -33,9 +34,10 @@ const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
-  approvedAt: "2026-09-22",
-  inputSha256: "73395cd7e84fd9f31628f48f3942624bf94317610ef7fc31d2e6e44851b98830",
-  candidatesSha256: "bf3f3332c002e3363b3fac7eb69b58ef0cad369d052bbf3eaa0226c1aa8e228e",
+  approvedAt: "2026-09-25",
+  ownerRef: "Q1 decisions.json",
+  inputSha256: "0f34a33db5a170c085264ceeadbc93c4bde25246ba00483c7ddbca84179190cc",
+  candidatesSha256: "7c4754681342162453763afe049d9a69c16b2808256d4fc03e91e7970036ef2e",
 };
 export const FROZEN = { existingK: 422, issued: 582, total: 1004 };
 
@@ -127,6 +129,7 @@ export function validateRegistry(registry, ctx) {
   if (
     a.approvedBy !== APPROVED.approvedBy ||
     a.approvedAt !== APPROVED.approvedAt ||
+    a.ownerRef !== APPROVED.ownerRef ||
     a.inputSha256 !== APPROVED.inputSha256 ||
     a.candidatesSha256 !== APPROVED.candidatesSha256
   ) {
