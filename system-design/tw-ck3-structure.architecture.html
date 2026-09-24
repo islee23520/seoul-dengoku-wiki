@@ -5306,15 +5306,15 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <text data-detail="context" x="870" y="780" class="t-muted" font-size="9" text-anchor="middle">대화·회피·전투</text>
         </g>
 
-        <g id="node-battle" data-node-id="battle" data-node-label="닫힌 전투" tabindex="0" role="button" aria-label="Focus 닫힌 전투, 부대 지휘 · 일시정지 미정, TW 전투 층 · 닫힌 세션" aria-pressed="false" data-node-kind="backend" data-node-sublabel="부대 지휘 · 일시정지 미정" data-node-context="TW 전투 층 · 닫힌 세션">
-          <title>닫힌 전투 · 부대 지휘 · 일시정지 미정 · TW 전투 층 · 닫힌 세션</title>
+        <g id="node-battle" data-node-id="battle" data-node-label="닫힌 전투" tabindex="0" role="button" aria-label="Focus 닫힌 전투, 부대 지휘 · 일시정지 없음, TW 전투 층 · 닫힌 세션" aria-pressed="false" data-node-kind="backend" data-node-sublabel="부대 지휘 · 일시정지 없음" data-node-context="TW 전투 층 · 닫힌 세션">
+          <title>닫힌 전투 · 부대 지휘 · 일시정지 없음 · TW 전투 층 · 닫힌 세션</title>
           <rect x="400" y="730" width="220" height="72" rx="6" class="c-mask"/>
           <rect x="400" y="730" width="220" height="72" rx="6" class="c-backend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(406 736) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="510" y="764" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">닫힌 전투</text>
-        <text data-detail="context" x="510" y="780" class="t-muted" font-size="9" text-anchor="middle">부대 지휘 · 일시정지 미정</text>
+        <text data-detail="context" x="510" y="780" class="t-muted" font-size="9" text-anchor="middle">부대 지휘 · 일시정지 없음</text>
         </g>
 
         <g id="node-ledger" data-node-id="ledger" data-node-label="원장·정산" tabindex="0" role="button" aria-label="Focus 원장·정산, 결과는 한 번만 반영, 기록 층" aria-pressed="false" data-node-kind="database" data-node-sublabel="결과는 한 번만 반영" data-node-context="기록 층">
@@ -5619,7 +5619,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <ul>
           <li>&bull; 본체가 죽거나 영구 구금되면 지정 후계, 없으면 계승 순서의 인물이 새 본체가 되고 시점은 그 인물의 위치로 옮긴다. 남은 분대는 병졸 중 임시 분대장을 뽑는다</li>
           <li>&bull; 턴 해결마다 세계 시간이 한 칸 가고 주간 위기·음모 임계를 판정한다. 전투 중인 분대만 결과 정산 때까지 새 전략 명령이 잠긴다</li>
-          <li>&bull; 전투 카메라는 3D 자유 지휘(팬·오빗·줌)로 확정한다. 전투 일시정지 규칙은 다시 정하는 중이다</li>
+          <li>&bull; 전투 카메라는 3D 자유 지휘(팬·오빗·줌)이고, 전투에는 일시정지와 속도 조절이 없다</li>
+          <li>&bull; 영웅은 주 클래스 하나와 보조 태그를 가진다. 임시 분대장은 정식 지휘관과 같은 명령을 쓰되 효과가 약하다</li>
+          <li>&bull; 턴 제한 시간은 방장이 세션 설정으로 정하고, 군단 크기는 고정 상한 없이 보급·통제권이 제한한다</li>
         </ul>
       </div>
 

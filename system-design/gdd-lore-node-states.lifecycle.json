@@ -8,7 +8,7 @@
   },
   "lanes": [
     { "id": "main", "label": "주경로" },
-    { "id": "hold", "label": "이 전투만 일시정지" },
+    { "id": "hold", "label": "전투 중단 없음 · 일시정지·감속·배속 없음" },
     { "id": "terminal", "label": "캠페인 귀환" }
   ],
   "states": [
@@ -17,8 +17,7 @@
     { "id": "strategy", "type": "active", "label": "전략 지도", "lane": "main", "col": 2 },
     { "id": "engagement", "type": "active", "label": "교전", "lane": "main", "col": 3 },
     { "id": "battle", "type": "active", "label": "부대 지휘", "lane": "main", "col": 4 },
-    { "id": "return", "type": "success", "label": "캠페인 귀환", "lane": "terminal", "col": 2 },
-    { "id": "pause", "type": "failure", "label": "이 전투만 일시정지", "lane": "hold", "col": 1 }
+    { "id": "return", "type": "success", "label": "캠페인 귀환", "lane": "terminal", "col": 2 }
   ],
   "transitions": [
     { "from": "character", "to": "house" },
@@ -27,8 +26,6 @@
     { "from": "engagement", "to": "battle", "label": "붙다" },
     { "from": "engagement", "to": "strategy", "label": "숨다", "fromSide": "bottom", "toSide": "bottom", "via": [[556, 250], [402, 250]] },
     { "from": "engagement", "to": "return", "label": "말하다", "fromSide": "top", "toSide": "left", "via": [[556, 80], [640, 80], [640, 479]] },
-    { "from": "battle", "to": "pause" },
-    { "from": "pause", "to": "battle" },
     { "from": "battle", "to": "return" },
     { "from": "return", "to": "character", "label": "귀환", "fromSide": "bottom", "toSide": "bottom", "via": [[710, 535], [94, 535]] },
     { "from": "return", "to": "house", "label": "정착", "fromSide": "bottom", "toSide": "bottom", "via": [[710, 562], [248, 562]] },
@@ -47,10 +44,10 @@
     },
     {
       "dot": "amber",
-      "title": "일시정지",
+      "title": "전투 진행",
       "items": [
-        "이 파티의 닫힌 전투만 멈춘다",
-        "기한 만료 뒤 채택한 설계 기본값이다"
+        "전투에는 일시정지와 감속·배속이 없다",
+        "카메라는 소유자가 확정한 3D 자유 지휘 시점이다"
       ]
     },
     {
