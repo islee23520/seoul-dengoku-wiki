@@ -77,7 +77,7 @@
 - [세계 확장 관계 원장](World-Relation-Ledger.md)
 - [세계 확장 색인](World-Expansion-Index.md)
 
-투영물 안내: `LORE/bestiary/`의 색인과 27개 집단 도감, `LORE/` 루트의 `Story-Batch-*.md`, `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md`는 World-Narrative-Atlas의 읽기 전용 투영물입니다. 몬스터 배치 본문 페이지는 폐기했고, M번호는 집단 도감 안 개체의 출처 정보로만 남습니다. 수정은 원본 총람에만 반영합니다.
+투영물 안내: `LORE/bestiary/`의 색인과 27개 집단 도감, `LORE/` 루트의 `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md`는 World-Narrative-Atlas의 읽기 전용 투영물입니다. 몬스터 배치 본문 페이지는 폐기했고, M번호는 집단 도감 안 개체의 출처 정보로만 남습니다. 수정은 원본 총람에만 반영합니다.
 
 ---
 
