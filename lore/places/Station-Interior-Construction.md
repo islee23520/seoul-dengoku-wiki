@@ -43,6 +43,6 @@
 
 ## 출처
 
-- [경제와 생산](../economy/Economy-and-Production.md)
-- [거점과 영토](../economy/Strongholds-and-Territory.md)
-- [월드맵을 어떻게 구성하나](World-Map-Construction.md)
+- [경제와 생산, 물류 규칙](/gdd/rules/Rules-EconomyLogistics)
+- [거점과 영토 규칙](/gdd/rules/Rules-Strongholds)
+- [월드맵의 구조](World-Map-Construction.md)

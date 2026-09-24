@@ -11,16 +11,16 @@ The value/policy scale system behind cast and org numbers, the faith schism, the
 | 10 person value axes + 5 desire axes + org policy slots | `Values-and-Policy-Scales.md` — the numeric ledger lives in `../name-pools/values-cast.json` / `values-orgs.json` |
 | Faith schism | `Faith-Culture-Schism.md` — 2026 religious makeup sourced (Pew 2010); five campaign axes that change rules |
 | Nine martial schools | `Martial-Paths.md` — formal Sino-Korean names + field aliases; six technique categories; unit-command expression only |
-| Food / distribution | `Food-Culture.md` — station-window rations first; numbers continue into `../economy/Economy-and-Production.md` |
+| Food / distribution | `Food-Culture.md` — station-window rations first; numbers continue into GDD `rules/Rules-EconomyLogistics` |
 | Oral creation story | `Oral-Stories.md` — 대정전 canon; the five oral titles are locked by `../chronology/Scenario-Timeline.md` |
 
 ## CONVENTIONS
 - Scales span −100..100 (− is U+2212, matching cast cards); 0 means not yet tipped on that axis. New persons/orgs never go up with axis cells empty.
-- Leader change ⇒ charter numbers re-reviewed; fixed national personalities are banned (same rule as `../characters/Ambitions-and-Relations.md` — note `Values-and-Policy-Scales.md`'s link to that file is stale, missing `../characters/`).
+- Leader change ⇒ charter numbers re-reviewed; fixed national personalities are banned (game rule in GDD `rules/Rules-FactionsWarfare`).
 - Faith grows from events (blackout nights, opened sluices, deaths at the platform edge), never from a 총재 decree; occupying a gu does not change temperament.
 - The three locked theocratic state names remain real institution successors. S08 is the technocratic office of the Central Technology Preservation Institute, not a fourth theocracy. Do not add living clergy, denomination logos, local 노회 names or extra religious states; wreckage rites and splinter names remain fiction.
 - Design borrowings (Stellaris ethics pairs, EU4 policy slots) import mechanics only — never proper nouns, iconography, or event text.
-- Food canon keeps the water-first-then-rice habit; the ration chain 영등포 정수 당직 → 신정 기지 밥솔 → 암사 호위 hands off to `../economy/` docs.
+- Food canon keeps the water-first-then-rice habit; the ration chain 영등포 정수 당직 → 신정 기지 밥솔 → 암사 호위 hands off to GDD `rules/Rules-EconomyLogistics`.
 
 ## ANTI-PATTERNS
 - The original five schools remain canon, but the owner lifted the numerical cap. New schools require a distinct 2026 origin, a fictional 2126 successor name, transmission practice, equipment dependency, failure condition and Patina review.

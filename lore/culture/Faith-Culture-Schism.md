@@ -364,7 +364,7 @@
 
 **가. 성소**
 
-붕괴 전 징집 장부가 나뉜 자리가 성소이다. 이 계열은 새 국가를 만들지 않는다. 제사는 [징집 잔존과 군 장부](../factions/Conscription-Remnants.md) 위에 둔다.
+붕괴 전 징집 장부가 나뉜 자리가 성소이다. 이 계열은 새 국가를 만들지 않는다. 제사는 [징집 잔존과 군 장부](/gdd/rules/Rules-FactionsWarfare) 위에 둔다.
 
 **나. 의례**
 
@@ -422,7 +422,7 @@
 
 **바. 집안 이름**
 
-권역마다 이어지는 집안의 이름은 [후계, 이름 로스터, 세계 원장](../characters/Heirs-Names-and-World-Ledger.md)에 실려 있다. 2126년 각 나라가 거느린 역은 [서울 십육국](../factions/Sixteen-States.md)에 실려 있다. 나라의 경계가 달라도 집안의 이름은 이어진다.
+권역마다 이어지는 집안의 이름은 [후계, 이름 로스터, 세계 원장](/gdd/rules/Rules-FactionsWarfare)에 실려 있다. 2126년 각 나라가 거느린 역은 [서울 십육국](../factions/Sixteen-States.md)에 실려 있다. 나라의 경계가 달라도 집안의 이름은 이어진다.
 
 **사. 북부 피난민**
 
@@ -483,7 +483,7 @@
 | 봉신 맹세 | 봉신은 안내방송, 도장, 급수꼭지, 광고액자 가운데 자신의 맹세에 쓴 증표를 내민다 |
 | 작위 보유 | 이단 판정을 받은 역장과 숨은 사제는 직함을 두고 다툰다 |
 | 배급 순위 | 제사에 참여한 가구를 앞세우는 창구와 공개 경매를 따르는 창구가 갈린다 |
-| 정통성 근거 | 수문에서는 물, 배전실에서는 전력, 병원에서는 의료를 권위의 근거로 삼는다. 그 근거를 둘러싼 다툼은 [세력과 외교](../factions/Factions-and-Diplomacy.md)에도 이어진다 |
+| 정통성 근거 | 수문에서는 물, 배전실에서는 전력, 병원에서는 의료를 권위의 근거로 삼는다. 그 근거를 둘러싼 다툼은 [세력과 외교](/gdd/rules/Rules-FactionsWarfare)에도 이어진다 |
 | 조약 인준 | 광화문의 도장, 여의도의 방송 기록, 시청의 계약 중재 가운데 어느 것을 믿을지 다툰다 |
 | 공개 여부 | 제사가 게시판에서 배전실로 옮겨 가거나 같은 계열의 두 당집이 서로 이단이라 부른다 |
 
@@ -540,15 +540,12 @@
 
 - [기동권 이탈](../overview/World-Unbinding.md)
 - [시나리오 타임라인](../chronology/Scenario-Timeline.md)
-- [구술 이야기](Oral-Stories.md)
+- [이야기](Oral-Stories.md)
 - [서울 십육국](../factions/Sixteen-States.md)
 - [관직](../offices/Offices-and-Ranks.md)
 - [등장인물](../characters/Core-Characters.md)
-- [세력과 외교](../factions/Factions-and-Diplomacy.md)
+- [세력과 외교, 전쟁과 공성 규칙](/gdd/rules/Rules-FactionsWarfare)
 - [잃어버린 기술](../technology/Lost-Technology-Lineage.md)
-- [징집 잔존과 군 장부](../factions/Conscription-Remnants.md)
-- [후계, 이름 로스터, 세계 원장](../characters/Heirs-Names-and-World-Ledger.md)
-- [야망](../characters/Ambitions-and-Relations.md)
 - [이주민 회랑](../factions/Diaspora-Corridors.md)
 - [인물·세력·생업](../characters/Characters-Factions-and-Professions.md)
 - [본관과 항렬](../characters/Hangnyeol-and-Bon-gwan.md)

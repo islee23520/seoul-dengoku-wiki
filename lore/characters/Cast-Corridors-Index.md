@@ -13,5 +13,5 @@
 
 ## 출처
 
-- [징집 잔존](../factions/Conscription-Remnants.md)
+- [세력과 외교, 전쟁과 공성 규칙](/gdd/rules/Rules-FactionsWarfare)
 - [이주민 회랑](../factions/Diaspora-Corridors.md)

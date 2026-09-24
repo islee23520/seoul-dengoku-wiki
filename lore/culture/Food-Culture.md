@@ -4,7 +4,7 @@
 
 2026년 서울의 식량은 가락시장 경매, 노량진 수산시장 새벽 하역, 편의점과 학교 급식으로 유통되었고, [기동권 이탈](../overview/World-Unbinding.md)의 밤에 냉장 설비와 원격 발주가 멈추었다. 남은 쌀과 얼음과 수조의 물은 대합실 배급에 쓰였다.
 
-2126년 주민은 역 창구에서 배급을 받는다. 물을 먼저 받고 밥을 받는 습관이 남아 있고, 시설과 시장은 주민 몫을 예약한 뒤에 거래한다. 배분 기준은 [경제와 생산](../economy/Economy-and-Production.md)에 있다.
+2126년 주민은 역 창구에서 배급을 받는다. 물을 먼저 받고 밥을 받는 습관이 남아 있고, 시설과 시장은 주민 몫을 예약한 뒤에 거래한다. 배분 기준은 [경제와 생산](/gdd/rules/Rules-EconomyLogistics)에 있다.
 
 ## 역 배급식
 
@@ -69,7 +69,7 @@
 
 ## 출처
 
-- [연표](../chronology/Scenario-Timeline.md)
+- [시나리오 타임라인](../chronology/Scenario-Timeline.md)
 - [신앙과 문화의 분열](Faith-Culture-Schism.md)
 - [이야기](Oral-Stories.md)
 - [서울 십육국](../factions/Sixteen-States.md)

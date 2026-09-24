@@ -32,7 +32,7 @@
 | 현장 휴머노이드 | Boston Dynamics Atlas. 최소 감독의 자재 이송, 현대차 현장 시험. ([Atlas](https://www.bostondynamics.com/atlas), 열람 2026-09-17) | 봉인 갤러리의 반복 루틴. [잃어버린 기술](../technology/Lost-Technology-Lineage.md) |
 | 편대 학습 | 현대차그룹 2026-09-13, 자율주행 Data Flywheel 가동 발표. 수집·학습·검증·배포의 구름 고리. ([뉴스룸](https://www.hyundai.com/worldwide/en/newsroom), 열람 2026-09-17) | 구름이 죽은 뒤의 단말. 새 가중은 만들지 못한다 |
 | 지하철 안전망 | 서울시 2017 안전 강화안. IoT 등 ICT 안전관리를 전제로 한다. ([SMG](https://world.seoul.go.kr/creating-safe-seoul-metropolitan-subway/), 열람 2026-09-17) | 역 공간과 수조는 남고, 원격 안전 관제는 죽는다 |
-| 병역 명부 | 병무청은 2026에도 입영 본인선택을 받는다. ([mma.go.kr](https://www.mma.go.kr/), 열람 2026-09-17) | 종이·필사 명부. 전산 소집은 없다. [징집 잔존](../factions/Conscription-Remnants.md) |
+| 병역 명부 | 병무청은 2026에도 입영 본인선택을 받는다. ([mma.go.kr](https://www.mma.go.kr/), 열람 2026-09-17) | 종이·필사 명부. 전산 소집은 없다. [징집 잔존](/gdd/rules/Rules-FactionsWarfare) |
 
 ## 주간의 연쇄
 
@@ -97,4 +97,4 @@
 - [Pew](https://www.pewresearch.org/short-reads/2014/08/12/6-facts-about-christianity-in-south-korea/)
 - [서울전국 연표 2026–2126](../chronology/Century-Annals.md)
 - [시나리오 타임라인](../chronology/Scenario-Timeline.md)
-- [신앙](../culture/Faith-Culture-Schism.md)
+- [신앙과 문화의 분열](../culture/Faith-Culture-Schism.md)

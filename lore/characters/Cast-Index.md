@@ -524,4 +524,4 @@
 ## 출처
 
 - [관계 원장](Cast-Relations.md)
-- [무소속 인물 장부](Cast-Unaffiliated.md)
+- [무소속 인물](Cast-Unaffiliated.md)

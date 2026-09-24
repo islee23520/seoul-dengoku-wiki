@@ -35,5 +35,5 @@
 
 ## 출처
 
-- [물류와 기반 시설](../economy/Logistics-and-Infrastructure.md)
-- [거점과 영토](../economy/Strongholds-and-Territory.md)
+- [경제와 생산, 물류 규칙](/gdd/rules/Rules-EconomyLogistics)
+- [거점과 영토 규칙](/gdd/rules/Rules-Strongholds)

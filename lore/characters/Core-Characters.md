@@ -371,6 +371,6 @@
 ## 출처
 
 - [무공](../culture/Martial-Paths.md)
-- [가문](../factions/Chaebol-Houses-and-Century-Factions.md)
+- [재벌 가문과 세기 파벌](../factions/Chaebol-Houses-and-Century-Factions.md)
 - [관직](../offices/Offices-and-Ranks.md)
 - [운영가문](../Operating-Houses.md)
