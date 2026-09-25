@@ -3,7 +3,7 @@
 운영가문은 법인 후계 가문과 시민·직능 가문으로 나뉜다. 각 가문이 맡은 기반과 연결 국가는 아래에 기록한다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `c3f928d0809f1b13ed9ab889db5aa49b2353fac4af8b913f0d19cc17df417bf1`
+- 원본 해시: `3d7bb3aeb13bff698868669ed86ffe2459f356861b33af4eab773eeb9329a889`
 
 ## HC01 · 여의도전산가
 

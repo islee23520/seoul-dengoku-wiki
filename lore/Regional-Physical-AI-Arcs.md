@@ -1,7 +1,7 @@
 # 권역·피지컬 AI 서사선
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `c3f928d0809f1b13ed9ab889db5aa49b2353fac4af8b913f0d19cc17df417bf1`
+- 원본 해시: `3d7bb3aeb13bff698868669ed86ffe2459f356861b33af4eab773eeb9329a889`
 
 ## ARC-H-HC01 · HC01 운영 연속성
 
