@@ -280,7 +280,7 @@ const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/val
 const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
 const stateNameById = new Map(stateCatalog.map((state) => [state.slug.toUpperCase(), state.name]))
-const regionAtlasSource = await readFile(await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
+const regionAtlasSource = await readFile(process.env.WIKI_REGION_ATLAS_PATH ?? await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
 const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
@@ -302,6 +302,7 @@ for (const entry of await readdir(resolve(loreRoot, 'regions/content'), { withFi
   for (const region of district.regions) regionContentById.set(region.region_id, region.content)
 }
 if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)
+const surfaceHolders = (content) => content?.territory?.holders.map((holder) => holder.polity) ?? []
 const creativeNameLedger = JSON.parse(await readFile(await resolveOutside('RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
 const normalizePublicNames = (text) => {
   let normalized = text
@@ -365,7 +366,7 @@ const mapStations = seoulGraph.stations.map((station) => {
   const region = regionAtlas.regions.find((candidate) => pointInPolygon([x, y], simplifyRing(geometryRings(candidate.map_geometry)[0]).map(mapPoint)))
   const lineIds = officialLineData.stations[station.id] ?? []
   const content = region ? regionContentById.get(region.id) : null
-  const baselinePolityIds = content?.polity_contexts ?? []
+  const baselinePolityIds = surfaceHolders(content)
   const delta = stationControlOverrides.get(station.id) ?? null
   const capitalStateId = capitalStateByStationId.get(station.id)
   const polityIds = delta?.polityIds ?? (capitalStateId ? [capitalStateId] : baselinePolityIds)
@@ -423,7 +424,7 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
   const state = stateCatalog.find((candidate) => candidate.slug === id.toLowerCase())
   if (!state) throw new Error(`E_TERRITORY_STATE_NOT_FOUND:${id}:${name}`)
   const candidates = regionAtlas.regions
-    .filter((region) => region.content.polity_contexts.length === 1 && region.content.polity_contexts[0] === id)
+    .filter((region) => surfaceHolders(region.content).length === 1 && surfaceHolders(region.content)[0] === id)
     .map((region) => {
       const points = simplifyRing(geometryRings(region.map_geometry)[0]).map(mapPoint)
       return { id: region.id, ...polygonMetrics(points) }
@@ -536,7 +537,7 @@ const openingTerritories = {
   majorStationIds,
   regions: regionAtlas.regions.map((region) => {
     const content = regionContentById.get(region.id)
-    const polities = content.polity_contexts
+    const polities = surfaceHolders(content)
     return {
       id: region.id,
       name: region.name,
