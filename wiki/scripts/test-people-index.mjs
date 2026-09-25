@@ -9,15 +9,15 @@ test('all canonical people are indexed and linked to a canon card', async () => 
   const names = [...catalog.matchAll(/"name": "([^"]+)"/g)].map((match) => match[1])
   const sourceRoutes = [...catalog.matchAll(/"sourceRoute": "([^"]+)"/g)].map((match) => match[1])
   const detailRoutes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
-  assert.equal(count, 1007)
-  assert.equal(names.length, 1007)
-  assert.equal(new Set(names).size, 1007)
-  assert.equal(sourceRoutes.length, 1007)
-  assert.equal(detailRoutes.length, 1007)
-  assert.equal(new Set(detailRoutes).size, 1007)
+  assert.equal(count, 1010)
+  assert.equal(names.length, 1010)
+  assert.equal(new Set(names).size, 1010)
+  assert.equal(sourceRoutes.length, 1010)
+  assert.equal(detailRoutes.length, 1010)
+  assert.equal(new Set(detailRoutes).size, 1010)
   assert.ok(sourceRoutes.every((route) => route.startsWith('/world/') && route.includes('#')))
   const genders = [...catalog.matchAll(/"gender": "([^"]+)"/g)].map((match) => match[1])
-  assert.equal(genders.length, 1007)
+  assert.equal(genders.length, 1010)
   assert.ok(genders.every((gender) => gender === '여성' || gender === '남성'))
   assert.equal(sourceRoutes.filter((route) => route.startsWith('/world/Core-Characters#인물-')).length, 0)
   for (const route of sourceRoutes) {
@@ -33,6 +33,25 @@ test('people search route is linked from wiki navigation', async () => {
   const links = await readFile(new URL('../src/wikiLinks.ts', import.meta.url), 'utf8')
   assert.match(app, /path="\/people"/)
   assert.match(links, /characters: '\/people'/)
+})
+
+test('the atlas projection links all five unaffiliated people through the generated catalog', async () => {
+  const page = JSON.parse(await readFile(new URL('../src/generated/world/World-Expansion-Index.json', import.meta.url), 'utf8'))
+  const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const links = []
+  const visit = (node) => {
+    if (node.type === 'link' && node.url.startsWith('/people/')) links.push(node)
+    for (const child of node.children ?? []) visit(child)
+  }
+  page.blocks.forEach(visit)
+  assert.deepEqual(links.map((link) => link.url), [1003, 1004, 1008, 1009, 1010].map((id) => '/people/person-' + id))
+  for (const link of links) {
+    assert.ok(catalog.includes('"detailRoute": "' + link.url + '"'), link.url)
+    const id = link.url.split('/').at(-1)
+    const detail = JSON.parse(await readFile(new URL('../public/person-details/' + id + '.json', import.meta.url), 'utf8'))
+    assert.equal(detail.state, 'S00')
+    assert.equal(detail.name, link.children.map((child) => child.value).join(''))
+  }
 })
 
 test('people page sorts the complete roster by Korean name order', async () => {
@@ -64,7 +83,7 @@ test('people page states the confirmed hero contract without auto-assigning prop
   const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
   const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
 
-  assert.match(page, /1,007명은 모두 영웅 인물/)
+  assert.match(page, /1,010명은 모두 영웅 인물/)
   assert.match(page, /전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성/)
   assert.match(page, /전투 클래스 이름과 개인별 배정은 아직 확정되지 않았/)
   assert.doesNotMatch(generator, /heroClass/)

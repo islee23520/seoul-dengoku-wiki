@@ -6,10 +6,34 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const source = (file) => JSON.parse(readFileSync(path.join(HERE, "..", file), "utf8"));
 const ko = (cell) => cell.ko;
 
+export function resolveRelations(relationSource, people) {
+  const idsByName = new Map();
+  const personIds = new Set(people.map((person) => person.id));
+  for (const person of people) idsByName.set(person.name, [...(idsByName.get(person.name) || []), person.id]);
+  const errors = [];
+  const resolve = (value, label) => {
+    if (personIds.has(value)) return value;
+    const matches = idsByName.get(value) || [];
+    if (matches.length > 1) errors.push(`${label}: ambiguous person name ${value} (${matches.join(", ")}); use a person ID`);
+    return matches.length === 1 ? matches[0] : undefined;
+  };
+  const relations = relationSource.content.filter((block) => block.kind === "table").flatMap((block) =>
+    block.rows.map((row, index) => {
+      const id = `R:${block.anchor}:${index + 1}`;
+      return {
+        id, fromPersonId: resolve(ko(row[0]), `${id}.fromPersonId`),
+        toPersonId: resolve(ko(row[2]), `${id}.toPersonId`),
+        type: ko(row[1]), sourceAnchor: block.anchor, sourceRow: index,
+      };
+    }));
+  return { relations, errors };
+}
+
 export function loadDataset() {
   const config = JSON.parse(readFileSync(path.join(HERE, "relations.json"), "utf8"));
   const stateSource = source("factions/Sixteen-States.json");
   const relationSource = source("characters/Cast-Relations.json");
+  const castIndex = source("characters/Cast-Index.json");
   const registry = source("name-pools/person-id-registry.json");
   const chronicle = source("chronology/Century-Annals.json");
   const table = (doc, anchor) => doc.content.find((block) => block.kind === "table" && block.anchor === anchor);
@@ -24,14 +48,7 @@ export function loadDataset() {
     sourceAnchor: "table-2", sourceRow: index,
   }));
   const people = [...registry.persons, ...config.provisionalPeople];
-  const personByName = new Map(people.map((person) => [person.name, person.id]));
-  const relations = relationSource.content.filter((block) => block.kind === "table").flatMap((block) =>
-    block.rows.map((row, index) => ({
-      id: `R:${block.anchor}:${index + 1}`,
-      fromPersonId: personByName.get(ko(row[0])),
-      toPersonId: personByName.get(ko(row[2])),
-      type: ko(row[1]), sourceAnchor: block.anchor, sourceRow: index,
-    })));
+  const { relations, errors: relationErrors } = resolveRelations(relationSource, people);
   // Only paragraphs that begin with an explicit year are independently dated.
   // Undated paragraphs are deliberately not assigned a date from their chapter.
   const events = chronicle.content.filter((block) => block.kind === "paragraph")
@@ -44,14 +61,15 @@ export function loadDataset() {
     });
   return {
     config, states, vassals, people, organizations: config.organizations,
-    relations, events, eventLinks: config.eventLinks,
-    sources: { stateSource, relationSource, registry, chronicle },
+    relations, relationErrors, events, eventLinks: config.eventLinks,
+    sources: { stateSource, relationSource, castIndex, registry, chronicle },
   };
 }
 
 export function validate(dataset) {
   const errors = [];
   const { config, states, vassals, people, organizations, relations, events, eventLinks, sources } = dataset;
+  errors.push(...(dataset.relationErrors || []));
   const unique = (rows, label) => {
     const ids = new Set();
     for (const row of rows) {
@@ -81,22 +99,22 @@ export function validate(dataset) {
     fk(row.parentStateId, stateIds, row.id);
     fk(row.sourceAnchor, stateAnchors, row.id);
   }
-  if (sources.registry.totalPeople !== 1007 || sources.registry.persons.length !== 1007 ||
+  if (sources.registry.totalPeople !== 1010 || sources.registry.persons.length !== 1010 ||
       sources.registry.persons.some((p, i) => p.id !== `K${String(i + 1).padStart(3, "0")}`) ||
-      people.length !== sources.registry.persons.length + config.provisionalPeople.length) errors.push("people: frozen K001–K1007 mismatch");
-  const names = new Set();
-  for (const person of people) {
-    if (names.has(person.name)) errors.push(`people: duplicate name ${person.name}`);
-    names.add(person.name);
-  }
+      people.length !== sources.registry.persons.length + config.provisionalPeople.length) errors.push("people: frozen K001–K1010 mismatch");
   for (const person of config.provisionalPeople) {
     if (!/^P\d{3}$/.test(person.id) || !(sources.relationSource.content.find((b) => b.anchor === person.sourceAnchor)?.rows || [])
       .some((r) => ko(r[0]) === person.name || ko(r[2]) === person.name)) errors.push(`provisional identity: missing source ${person.id}`);
   }
   const knownTypes = new Set(["친족", "양자", "사제", "지휘", "계약", "빚", "맹세", "경쟁", "원한", "보호체류", "배신"]);
+  const unaffiliatedNames = new Set(sources.castIndex.content
+    .find((block) => block.anchor === "무소속-인물-table2").rows.map((row) => ko(row[0])));
   for (const row of relations) {
-    fk(row.fromPersonId, personIds, `${row.id}.fromPersonId`);
-    fk(row.toPersonId, personIds, `${row.id}.toPersonId`);
+    const sourceRow = sources.relationSource.content.find((block) => block.anchor === row.sourceAnchor).rows[row.sourceRow];
+    if (row.fromPersonId === undefined && unaffiliatedNames.has(ko(sourceRow[0]))) { /* Phase 1: named, not yet issued an ID. */ }
+    else fk(row.fromPersonId, personIds, `${row.id}.fromPersonId`);
+    if (row.toPersonId === undefined && unaffiliatedNames.has(ko(sourceRow[2]))) { /* Phase 1: named, not yet issued an ID. */ }
+    else fk(row.toPersonId, personIds, `${row.id}.toPersonId`);
     fk(row.sourceAnchor, relationAnchors, row.id);
     if (!knownTypes.has(row.type)) errors.push(`${row.id}: unknown relation type ${row.type}`);
   }
@@ -128,5 +146,5 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const dataset = loadDataset();
   const errors = validate(dataset);
   if (errors.length) { console.error(errors.join("\n")); process.exitCode = 1; }
-  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1007 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
+  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1010 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
 }

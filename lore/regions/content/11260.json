@@ -23,7 +23,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "88병원 마당 들것 대기",
           "풍림아이원 옥상통 당번",
@@ -223,8 +225,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -249,7 +256,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "용마산역 출구 심사 당직",
           "용마산로 경사 횃불 인부",
@@ -484,8 +493,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -509,7 +523,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "면목유수지 수문 당번",
           "세차장 통헹굼 인부",
@@ -648,8 +664,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -674,7 +695,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "면목역 출구 안내",
           "혜원사거리 통과증 서기",
@@ -888,8 +911,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -914,7 +942,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "약수터 지게 당번",
           "사가정 대합실 세정 인부",
@@ -1142,8 +1172,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -1167,7 +1202,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "원진 마당 분류 당번",
           "면목고 운동장 경증 대기",
@@ -1367,8 +1404,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1393,7 +1435,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "망우 승강장 들것 순서",
           "상봉 환승 안내",
@@ -1621,8 +1665,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -1647,7 +1696,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "동부시장 저울 상인",
           "우유조합 냉각 당번",
@@ -1847,8 +1898,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -1873,7 +1929,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "마을금고 장부 서기",
           "중화고 운동장 대기 반장",
@@ -2108,8 +2166,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -2134,7 +2197,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "장미제일시장 새벽 상인",
           "중랑역 환적 인부",
@@ -2306,8 +2371,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2332,7 +2402,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "먹골 약수 지게",
           "태릉고 운동장 대피 서기",
@@ -2546,8 +2618,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -2571,7 +2648,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "월릉교 조명 가설 인부",
           "세원아파트 전력 당번",
@@ -2771,8 +2850,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -3050,7 +3134,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "늘찬병원 마당 들것",
           "동원사거리 경사 끌꾼",
@@ -3250,8 +3336,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -3276,7 +3367,9 @@
           "lore/characters/Cast-State-12.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "서울의료원 마당 호송 분류",
           "신내IC 진입 안내",
@@ -3469,8 +3562,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -3494,7 +3592,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-12.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S12"
+        ],
         "inhabitants": [
           "중랑구청 로비 공청 서기",
           "7단지 배급창고 반장",
@@ -3720,8 +3820,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }

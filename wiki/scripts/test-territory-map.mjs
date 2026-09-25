@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readFile, readdir } from 'node:fs/promises'
 import test from 'node:test'
 
 test('opening territory map covers every Seoul dong and all sixteen states', async () => {
@@ -16,10 +16,21 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.equal(new Set(data.regions.map((region) => region.id)).size, 427)
   assert.ok(data.regions.every((region) => region.path.length > 0))
   assert.ok(data.regions.every((region) => region.openingState.length > 0))
-  assert.ok(data.regions.every((region) => region.polities.length >= 1 || region.status === 'vacant'))
-  assert.ok(data.regions.some((region) => region.status === 'vacant'))
-  assert.ok(data.regions.every((region) => ['held', 'contested', 'vacant'].includes(region.status)))
-  assert.ok(data.regions.some((region) => region.status === 'held'))
+  assert.equal(data.regions.filter((region) => region.status === 'held').length, 427)
+  assert.equal(data.regions.filter((region) => region.status === 'vacant').length, 0)
+  assert.equal(data.regions.filter((region) => region.status === 'contested').length, 0)
+  assert.ok(data.regions.every((region) => region.polities.length === 1))
+  assert.equal(data.regions.filter((region) => ['종로구', '중구'].includes(region.district)).length, 32)
+  assert.ok(data.regions.filter((region) => ['종로구', '중구'].includes(region.district)).every((region) => region.polities[0] === 'S06'))
+  const contentRoot = new URL('../../lore/regions/content/', import.meta.url)
+  for (const filename of (await readdir(contentRoot)).filter((name) => /^\d{5}\.json$/u.test(name))) {
+    const district = JSON.parse(await readFile(new URL(filename, contentRoot), 'utf8'))
+    for (const source of district.regions) {
+      const projected = data.regions.find((region) => region.id === source.region_id)
+      assert.equal(projected.status, source.content.territory.status, source.region_id)
+      assert.deepEqual(projected.polities, source.content.territory.holders.map((holder) => holder.polity), source.region_id)
+    }
+  }
   assert.ok(data.states.every((state) => Number.isFinite(state.labelX) && Number.isFinite(state.labelY)))
   assert.equal(new Set(data.states.map((state) => `${state.labelX}:${state.labelY}`)).size, 16)
   assert.equal(data.stations.length, 334)
@@ -56,7 +67,7 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
     const regions = data.regions.filter((region) => pointInPolygon([capital.x, capital.y], polygonPoints(region.path)))
     assert.equal(regions.length, 1, `${state.id}:${capital.name}:region`)
     assert.equal(regions[0].status, 'held', `${state.id}:${capital.name}:status`)
-    if (regions[0].polities[0] === 'S06') assert.ok(regions[0].polities.includes(state.id), `${state.id}:${capital.name}:context`)
+    if (['종로구', '중구'].includes(regions[0].district)) assert.deepEqual(regions[0].polities, ['S06'], `${state.id}:${capital.name}:government-block`)
     else assert.deepEqual(regions[0].polities, [state.id], `${state.id}:${capital.name}:owner`)
     assert.deepEqual(capital.control.polityIds, [state.id], `${state.id}:${capital.name}:station`)
     assert.equal(capital.control.status, 'held', `${state.id}:${capital.name}:station-status`)

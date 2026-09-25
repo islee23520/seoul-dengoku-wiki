@@ -7,6 +7,7 @@ import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs'
 import { projectionsFromAtlas } from './world-atlas-render.mjs'
+import { verifyAtlasPeople } from './world-atlas-verify.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
 import { latestUpdates } from './update-history.mjs'
@@ -171,6 +172,13 @@ const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
 const atlasMarkdown = await readFile(resolve(loreRoot, 'World-Narrative-Atlas.md'), 'utf8')
 const atlas = extractAtlasJson(atlasMarkdown)
 if (!atlas.ok) throw new Error(`E_ATLAS_JSON:${atlas.error}`)
+const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
+const atlasPeople = verifyAtlasPeople(atlas.value, {
+  registry: JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')),
+  candidates: JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-candidates.json'), 'utf8')),
+  people: peopleSource,
+})
+if (atlasPeople.failures.length) throw new Error(atlasPeople.failures.join('\n'))
 const atlasHash = sha256Text(atlasMarkdown)
 const projections = projectionsFromAtlas(atlas.value, atlasHash)
 const glossaryMarkdown = await readFile(resolve(loreRoot, 'Glossary.md'), 'utf8')
@@ -276,11 +284,10 @@ const stateCatalog = stateRows.map((row) => ({
 }))
 await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type StateRecord = { slug: string; id: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
-const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
 const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
 const stateNameById = new Map(stateCatalog.map((state) => [state.slug.toUpperCase(), state.name]))
-const regionAtlasSource = await readFile(await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
+const regionAtlasSource = await readFile(process.env.WIKI_REGION_ATLAS_PATH ?? await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
 const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
@@ -302,6 +309,7 @@ for (const entry of await readdir(resolve(loreRoot, 'regions/content'), { withFi
   for (const region of district.regions) regionContentById.set(region.region_id, region.content)
 }
 if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)
+const surfaceHolders = (content) => content?.territory?.holders.map((holder) => holder.polity) ?? []
 const creativeNameLedger = JSON.parse(await readFile(await resolveOutside('RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
 const normalizePublicNames = (text) => {
   let normalized = text
@@ -367,7 +375,7 @@ const mapStations = seoulGraph.stations.map((station) => {
   const region = regionAtlas.regions.find((candidate) => pointInPolygon([x, y], simplifyRing(geometryRings(candidate.map_geometry)[0]).map(mapPoint)))
   const lineIds = officialLineData.stations[station.id] ?? []
   const content = region ? regionContentById.get(region.id) : null
-  const baselinePolityIds = content?.polity_contexts ?? []
+  const baselinePolityIds = surfaceHolders(content)
   const delta = stationControlOverrides.get(station.id) ?? null
   const capitalStateId = capitalStateByStationId.get(station.id)
   const polityIds = delta?.polityIds ?? (capitalStateId ? [capitalStateId] : baselinePolityIds)
@@ -425,7 +433,7 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
   const state = stateCatalog.find((candidate) => candidate.slug === id.toLowerCase())
   if (!state) throw new Error(`E_TERRITORY_STATE_NOT_FOUND:${id}:${name}`)
   const candidates = regionAtlas.regions
-    .filter((region) => region.content.polity_contexts.length === 1 && region.content.polity_contexts[0] === id)
+    .filter((region) => surfaceHolders(region.content).length === 1 && surfaceHolders(region.content)[0] === id)
     .map((region) => {
       const points = simplifyRing(geometryRings(region.map_geometry)[0]).map(mapPoint)
       return { id: region.id, ...polygonMetrics(points) }
@@ -545,7 +553,7 @@ const openingTerritories = {
   majorStationIds,
   regions: regionAtlas.regions.map((region) => {
     const content = regionContentById.get(region.id)
-    const polities = content.polity_contexts
+    const polities = surfaceHolders(content)
     return {
       id: region.id,
       name: region.name,
@@ -668,7 +676,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const office = sections['관직'] ?? ''
   const position = fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
   const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
-  const occupation = fields['생업'] ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
+  const occupation = fields['생업'] ?? cards.map((card) => parseCardFields(card.body)['생업']).find(Boolean) ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const stateTiers = tiersByState.get(person.state)
   const tierIndex = stateTiers?.findIndex((ranks) => ranks.includes(rank)) ?? -1
   const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
