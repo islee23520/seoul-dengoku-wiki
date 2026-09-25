@@ -102,6 +102,17 @@ test('published hangnyeol counts match the clan register and issued cast', () =>
   assert.ok(summary.en.includes(cast.people.length.toLocaleString('en-US')))
 })
 
+test('state-name years agree across the Korean and English table cells', () => {
+  const page = JSON.parse(readFileSync(join(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
+  const table = page.content.find((block) => block.kind === 'table' && block.columns[0].ko === 'ID')
+  assert.ok(table)
+  assert.equal(table.rows.length, 16)
+  for (const row of table.rows) {
+    const years = (text) => [...text.matchAll(/(?<!\d)(?:20|21)\d{2}(?!\d)/gu)].map((match) => match[0])
+    assert.deepEqual(years(row[5].en), years(row[5].ko), row[0].ko)
+  }
+})
+
 test('every authored lore document gives each content block a unique anchor', () => {
   for (const { path, document } of documents) {
     const anchors = document.content.map((block) => block.anchor)
