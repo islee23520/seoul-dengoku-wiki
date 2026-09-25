@@ -87,9 +87,11 @@ for (const document of documents) {
   const hrefs = await Promise.all(links.map((match) => normalizeHref(match[1], document.source)))
   let index = 0
   await writeFile(resolve(targetDir, `${document.slug}.md`), normalized.replace(/\]\(([^)]+)\)/g, () => `](${hrefs[index++]})`))
-  const canon = JSON.parse(await readFile(resolve(gddRoot, document.sourcePath), 'utf8'))
-  if (Array.isArray(canon.content)) {
-    await writeFile(resolve(sharedContentRoot, `${document.category}-${document.slug}.json`), `${JSON.stringify(canon.content)}\n`)
+  if (document.sourcePath.endsWith('.json')) {
+    const canon = JSON.parse(await readFile(resolve(gddRoot, document.sourcePath), 'utf8'))
+    if (Array.isArray(canon.content)) {
+      await writeFile(resolve(sharedContentRoot, `${document.category}-${document.slug}.json`), `${JSON.stringify(canon.content)}\n`)
+    }
   }
 }
 
