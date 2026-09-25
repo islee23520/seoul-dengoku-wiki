@@ -24,7 +24,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "배수지 밸브 당직",
           "노들 선석 하역",
@@ -229,8 +231,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -255,7 +262,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "공터 각재반",
           "청화 대기 보호자",
@@ -438,8 +447,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -465,7 +479,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "북문 양수반",
           "봉천고개 물지게",
@@ -655,8 +671,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -681,7 +702,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "장승배기 개찰원",
           "래미안 옥상 당직",
@@ -899,8 +922,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -925,7 +953,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "시장 저울 서기",
           "국사봉 지게꾼",
@@ -1124,8 +1154,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1150,7 +1185,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "약수 옥상 당직",
           "양녕로 집줄 반장",
@@ -1354,8 +1391,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1611,7 +1653,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "사당 개찰원",
           "상점가 저울 주인",
@@ -1829,8 +1873,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1855,7 +1904,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "동작 승강장 호송",
           "현충원 담장 안내",
@@ -2066,8 +2117,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2092,7 +2148,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "통문 열쇠지기",
           "총신 언덕 양수",
@@ -2296,8 +2354,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2322,7 +2385,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "사당시장 저울",
           "남성 개찰",
@@ -2519,8 +2584,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2545,7 +2615,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "복지관 솥 당직",
           "까치산 땔감꾼",
@@ -2772,8 +2844,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2798,7 +2875,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "교차로 신호 당직",
           "용마산 지게",
@@ -3016,8 +3095,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3042,7 +3126,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "도림천 둑 당직",
           "와우산 지게",
@@ -3260,8 +3346,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3286,7 +3377,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-08.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S08"
+        ],
         "inhabitants": [
           "들것 인계반",
           "공원 빈들것 회수",
@@ -3497,8 +3590,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S08",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }

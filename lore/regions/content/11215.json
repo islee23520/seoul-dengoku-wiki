@@ -26,7 +26,9 @@
           "lore/characters/Cast-State-14.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "일감호 양수조",
           "한아름시장 저울 서기",
@@ -249,8 +251,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 100
+            }
+          ]
         },
         "core_station": true
       }
@@ -277,7 +284,9 @@
           "lore/characters/Cast-State-14.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "아사달 양수조",
           "천우 선반 도제",
@@ -487,8 +496,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 100
+            }
+          ]
         },
         "core_station": false
       }
@@ -515,7 +529,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "샤인빌 골목 반장",
           "데이케어 마당 저수 서기",
@@ -675,8 +691,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -702,7 +723,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "차고 배차 반장",
           "물지게 짐꾼",
@@ -884,8 +907,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -912,7 +940,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "중곡 대합실 서기",
           "장평교 통과 기록원",
@@ -1115,8 +1145,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1142,7 +1177,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "능선 주간 척후",
           "대원 운동장 집결 안내",
@@ -1373,8 +1410,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1401,7 +1443,9 @@
           "lore/characters/Cast-State-14.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "군자 대합실 서기",
           "환경연못 세정조",
@@ -1618,8 +1662,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -1645,7 +1694,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "천호대교 북단 척후",
           "광나루 통과 서기",
@@ -1848,8 +1899,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1875,7 +1931,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "골목시장 저울 서기",
           "자양 물지게",
@@ -2064,8 +2122,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2351,7 +2414,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "우성 옥상 독지기",
           "아쿠아링 빗물조",
@@ -2582,8 +2647,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2611,7 +2681,9 @@
           "lore/characters/Cast-State-14.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "커먼그라운드 봉인 서기",
           "조양시장 화기 당번",
@@ -2814,8 +2886,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -2842,7 +2919,9 @@
           "lore/characters/Cast-State-14.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "구의1동 창구 서기",
           "새한아파트 양수조",
@@ -3020,8 +3099,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -3047,7 +3131,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "아차산 주간 척후",
           "구의시장앞 게시 서기",
@@ -3271,8 +3357,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3300,7 +3391,9 @@
           "lore/characters/Cast-State-14.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S14"
+        ],
         "inhabitants": [
           "동서울 짐꾼",
           "터미널 통과 서기",
@@ -3503,8 +3596,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S14",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
