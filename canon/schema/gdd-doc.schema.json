@@ -4,202 +4,876 @@
   "title": "GDD normalized document and domain collection",
   "description": "Shared structural contract for GDD domain collections and documents. J2 dispatches collection/document, checks source identity, and validates blocks. Existing readCanonJson needs generic dispatch. codeFence and new shapes require lossless rendering before full migration. A paragraph uses either inlines (one line) or lines (nonempty ordered nonempty inline arrays joined by LF), never both. Every block after the first defaults to one blank line before it; blankLinesBefore=0 or 2 overrides that gap. thematicBreak.marker is exactly ---. Padded tables retain header/rows; table.dividers stores exact delimiter cells including the observed spaced ' --- ' spelling, rendered as |<dividers joined by |>|. Raw table rows are a separate branch: rawRows stores every cell's exact text between pipes including empty and surrounding spaces, rendered as |<raw cells joined by |>|; rawHeader optionally stores the same exact header spelling, otherwise the padded header is emitted. rawRows and rows are mutually exclusive. linkReferenceDefinition renders '[label]: href' as a separate line-exact block, not an inline link. J2 validates divider/header and row/header widths and rejects redundant JSON forms. document.terminalLineFeeds records one, two or three trailing LF bytes, omitted means one. blockQuote.lines renders nonempty inline arrays after '> ', empty arrays as bare '>', joining lines with LF; [!NOTE] remains literal text. Nested list children.indent stores 2 or 3 exact spaces before child markers, ordered children start at 1. Source excerpts are not whole-file migrations.",
   "$defs": {
-    "id": { "type": "string", "minLength": 1 },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
     "inline": {
       "oneOf": [
         {
-          "type": "object", "required": ["kind", "text"],
+          "type": "object",
+          "required": [
+            "kind",
+            "text"
+          ],
           "properties": {
-            "kind": { "const": "text" },
-            "text": { "type": "string", "minLength": 1, "pattern": "^[^\r\n]+$" }
-          }, "additionalProperties": false
+            "kind": {
+              "const": "text"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[^\r\n]+$"
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["kind", "text", "href"],
+          "type": "object",
+          "required": [
+            "kind",
+            "text",
+            "href"
+          ],
           "properties": {
-            "kind": { "const": "link" },
-            "text": { "type": "string", "minLength": 1 },
-            "href": { "type": "string", "minLength": 1 }
-          }, "additionalProperties": false
+            "kind": {
+              "const": "link"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "href": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["kind", "text", "targetDocumentId"],
+          "type": "object",
+          "required": [
+            "kind",
+            "text",
+            "targetDocumentId"
+          ],
           "properties": {
-            "kind": { "const": "docLink" },
-            "text": { "type": "string", "minLength": 1 },
-            "targetDocumentId": { "type": "string", "pattern": "^doc\\.[A-Za-z0-9-]+$" }
-          }, "additionalProperties": false
+            "kind": {
+              "const": "docLink"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "targetDocumentId": {
+              "type": "string",
+              "pattern": "^doc\\.[A-Za-z0-9-]+$"
+            }
+          },
+          "additionalProperties": false
         }
       ]
     },
-    "cell": { "type": "string", "minLength": 1, "pattern": "^[^|\r\n]+$" },
-    "rawCell": { "type": "string", "pattern": "^[^|\r\n]*$" },
-    "divider": { "type": "string", "pattern": "^(?::?-+:?| :?-+:? )$" },
-    "blankLinesBefore": { "enum": [0, 2] },
-    "inlines": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/inline" } },
-    "listContinuation": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^ {2,3}[^\\r\\n]+$" } },
+    "cell": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[^|\r\n]+$"
+    },
+    "rawCell": {
+      "type": "string",
+      "pattern": "^[^|\r\n]*$"
+    },
+    "divider": {
+      "type": "string",
+      "pattern": "^(?::?-+:?| :?-+:? )$"
+    },
+    "blankLinesBefore": {
+      "enum": [
+        0,
+        2
+      ]
+    },
+    "inlines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/inline"
+      }
+    },
+    "listContinuation": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^ {2,3}[^\\r\\n]+$"
+      }
+    },
     "listItem": {
       "oneOf": [
-        { "$ref": "#/$defs/inlines" },
         {
-          "type": "object", "required": ["inlines", "continuation"],
-          "properties": {
-            "inlines": { "$ref": "#/$defs/inlines" },
-            "continuation": { "$ref": "#/$defs/listContinuation" }
-          }, "additionalProperties": false
+          "$ref": "#/$defs/inlines"
         },
         {
-          "type": "object", "required": ["inlines", "children"],
+          "type": "object",
+          "required": [
+            "inlines",
+            "continuation"
+          ],
           "properties": {
-            "inlines": { "$ref": "#/$defs/inlines" },
-            "children": {
-              "type": "object", "required": ["ordered", "indent", "items"],
-              "properties": {
-                "ordered": { "enum": [true, false] },
-                "indent": { "enum": [2, 3] },
-                "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/inlines" } }
-              }, "additionalProperties": false
+            "inlines": {
+              "$ref": "#/$defs/inlines"
+            },
+            "continuation": {
+              "$ref": "#/$defs/listContinuation"
             }
-          }, "additionalProperties": false
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "inlines",
+            "children"
+          ],
+          "properties": {
+            "inlines": {
+              "$ref": "#/$defs/inlines"
+            },
+            "children": {
+              "type": "object",
+              "required": [
+                "ordered",
+                "indent",
+                "items"
+              ],
+              "properties": {
+                "ordered": {
+                  "enum": [
+                    true,
+                    false
+                  ]
+                },
+                "indent": {
+                  "enum": [
+                    2,
+                    3
+                  ]
+                },
+                "items": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/inlines"
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
         }
       ]
     },
     "block": {
       "oneOf": [
         {
-          "type": "object", "required": ["id", "kind", "level", "inlines"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "level",
+            "inlines"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "heading" },
-            "level": { "enum": [1, 2, 3, 4] },
-            "inlines": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/inline" } },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "heading"
+            },
+            "level": {
+              "enum": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            "inlines": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/inline"
+              }
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["id", "kind"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "paragraph" },
-            "inlines": { "$ref": "#/$defs/inlines" },
-            "lines": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/inlines" } },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false,
-          "oneOf": [{ "required": ["inlines"] }, { "required": ["lines"] }]
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "paragraph"
+            },
+            "inlines": {
+              "$ref": "#/$defs/inlines"
+            },
+            "lines": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/inlines"
+              }
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false,
+          "oneOf": [
+            {
+              "required": [
+                "inlines"
+              ]
+            },
+            {
+              "required": [
+                "lines"
+              ]
+            }
+          ]
         },
         {
-          "type": "object", "required": ["id", "kind", "ordered", "items"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "ordered",
+            "items"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "list" },
-            "ordered": { "enum": [true, false] },
-            "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/listItem" } },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "list"
+            },
+            "ordered": {
+              "enum": [
+                true,
+                false
+              ]
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/listItem"
+              }
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["id", "kind", "lines"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "lines"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "blockQuote" },
-            "lines": { "type": "array", "minItems": 1, "items": { "type": "array", "items": { "$ref": "#/$defs/inline" } } },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "blockQuote"
+            },
+            "lines": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/inline"
+                }
+              }
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["id", "kind", "marker"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "marker"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "thematicBreak" },
-            "marker": { "const": "---" },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "thematicBreak"
+            },
+            "marker": {
+              "const": "---"
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["id", "kind", "label", "href"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "label",
+            "href"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "linkReferenceDefinition" },
-            "label": { "type": "string", "minLength": 1, "pattern": "^[^\\[\\]\\r\\n]+$" },
-            "href": { "type": "string", "minLength": 1, "pattern": "^[^\\r\\n]+$" },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "linkReferenceDefinition"
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[^\\[\\]\\r\\n]+$"
+            },
+            "href": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[^\\r\\n]+$"
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["id", "kind", "header", "dividers", "rows"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "header",
+            "dividers",
+            "rows"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "table" },
-            "header": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/cell" } },
-            "dividers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/divider" } },
-            "rows": { "type": "array", "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/cell" } } },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "table"
+            },
+            "header": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/cell"
+              }
+            },
+            "dividers": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/divider"
+              }
+            },
+            "rows": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/cell"
+                }
+              }
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["id", "kind", "header", "dividers", "rawRows"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "header",
+            "dividers",
+            "rawRows"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "table" },
-            "header": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/cell" } },
-            "rawHeader": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/rawCell" } },
-            "dividers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/divider" } },
-            "rawRows": { "type": "array", "minItems": 1, "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/rawCell" } } },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "table"
+            },
+            "header": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/cell"
+              }
+            },
+            "rawHeader": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/rawCell"
+              }
+            },
+            "dividers": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/divider"
+              }
+            },
+            "rawRows": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/rawCell"
+                }
+              }
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false
         },
         {
-          "type": "object", "required": ["id", "kind", "fence", "info", "text"],
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "fence",
+            "info",
+            "text"
+          ],
           "properties": {
-            "id": { "$ref": "#/$defs/id" }, "kind": { "const": "codeFence" },
-            "fence": { "type": "string", "pattern": "^`{3,}$" },
-            "info": { "type": "string", "pattern": "^[^`\\r\\n]*$" },
-            "text": { "type": "string" },
-            "blankLinesBefore": { "$ref": "#/$defs/blankLinesBefore" }
-          }, "additionalProperties": false
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "codeFence"
+            },
+            "fence": {
+              "type": "string",
+              "pattern": "^`{3,}$"
+            },
+            "info": {
+              "type": "string",
+              "pattern": "^[^`\\r\\n]*$"
+            },
+            "text": {
+              "type": "string"
+            },
+            "blankLinesBefore": {
+              "$ref": "#/$defs/blankLinesBefore"
+            }
+          },
+          "additionalProperties": false
         }
       ]
     },
     "source": {
-      "type": "object", "required": ["path", "lineStart", "lineEnd", "sha256"],
+      "type": "object",
+      "required": [
+        "path",
+        "lineStart",
+        "lineEnd",
+        "sha256"
+      ],
       "properties": {
-        "path": { "type": "string", "pattern": "^(?:(?:rules|architecture|references|proposals|system-design|art)/[A-Za-z0-9-]+(?:/[A-Za-z0-9-]+)*|[A-Za-z0-9-]+)\\.md$" },
-        "lineStart": { "type": "integer", "minimum": 1 },
-        "lineEnd": { "type": "integer", "minimum": 1 },
-        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
-      }, "additionalProperties": false
+        "path": {
+          "type": "string",
+          "pattern": "^(?:(?:rules|architecture|references|proposals|system-design|art)/[A-Za-z0-9-]+(?:/[A-Za-z0-9-]+)*|[A-Za-z0-9-]+)\\.md$"
+        },
+        "lineStart": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "lineEnd": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
     },
     "entry": {
-      "type": "object", "required": ["id", "path", "locale", "status", "source"],
+      "type": "object",
+      "required": [
+        "id",
+        "path",
+        "locale",
+        "status",
+        "source"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^doc\\.[A-Za-z0-9-]+$" },
-        "path": { "type": "string", "pattern": "^locales/ko-KR/(?:rules|architecture|references|root|proposals|system-design|art)/[A-Za-z0-9-]+\\.json$" },
-        "locale": { "const": "ko-KR" },
-        "status": { "enum": ["accepted", "proposal", "retired"] },
-        "source": { "$ref": "#/$defs/source" }
-      }, "additionalProperties": false
+        "id": {
+          "type": "string",
+          "pattern": "^doc\\.[A-Za-z0-9-]+$"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^locales/ko-KR/(?:rules|architecture|references|root|proposals|system-design|art)/[A-Za-z0-9-]+\\.json$"
+        },
+        "locale": {
+          "const": "ko-KR"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "proposal",
+            "retired"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        }
+      },
+      "additionalProperties": false
     },
     "collection": {
-      "type": "object", "required": ["schemaVersion", "domain", "locale", "documents"],
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "domain",
+        "locale",
+        "documents"
+      ],
       "properties": {
-        "schemaVersion": { "const": 1 },
-        "domain": { "enum": ["rules", "architecture", "references", "root", "proposals", "system-design", "art"] },
-        "locale": { "const": "ko-KR" },
-        "documents": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/entry" } }
-      }, "additionalProperties": false
+        "schemaVersion": {
+          "const": 1
+        },
+        "domain": {
+          "enum": [
+            "rules",
+            "architecture",
+            "references",
+            "root",
+            "proposals",
+            "system-design",
+            "art"
+          ]
+        },
+        "locale": {
+          "const": "ko-KR"
+        },
+        "documents": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/entry"
+          }
+        }
+      },
+      "additionalProperties": false
     },
     "document": {
-      "type": "object", "required": ["schemaVersion", "locale", "status", "source", "document", "blocks"],
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "locale",
+        "status",
+        "source",
+        "document",
+        "blocks"
+      ],
       "properties": {
-        "schemaVersion": { "const": 1 }, "locale": { "const": "ko-KR" },
-        "status": { "enum": ["accepted", "proposal", "retired"] },
-        "source": { "$ref": "#/$defs/source" },
-        "document": {
-          "type": "object", "required": ["id", "blockIds"],
-          "properties": {
-            "id": { "type": "string", "pattern": "^doc\\.[A-Za-z0-9-]+$" },
-            "blockIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
-            "terminalLineFeeds": { "enum": [1, 2, 3] }
-          }, "additionalProperties": false
+        "schemaVersion": {
+          "const": 1
         },
-        "blocks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/block" } }
-      }, "additionalProperties": false
+        "locale": {
+          "const": "ko-KR"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "proposal",
+            "retired"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "document": {
+          "type": "object",
+          "required": [
+            "id",
+            "blockIds"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^doc\\.[A-Za-z0-9-]+$"
+            },
+            "blockIds": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/id"
+              }
+            },
+            "terminalLineFeeds": {
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/block"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "artContentNode": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "anchor",
+            "text",
+            "depth"
+          ],
+          "properties": {
+            "kind": {
+              "const": "heading"
+            },
+            "anchor": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9가-힣][A-Za-z0-9가-힣_-]*$"
+            },
+            "text": {
+              "type": "object",
+              "required": [
+                "ko"
+              ],
+              "properties": {
+                "ko": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            },
+            "depth": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "anchor",
+            "text"
+          ],
+          "properties": {
+            "kind": {
+              "const": "paragraph"
+            },
+            "anchor": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9가-힣][A-Za-z0-9가-힣_-]*$"
+            },
+            "text": {
+              "type": "object",
+              "required": [
+                "ko"
+              ],
+              "properties": {
+                "ko": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "anchor",
+            "items"
+          ],
+          "properties": {
+            "kind": {
+              "const": "list"
+            },
+            "anchor": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9가-힣][A-Za-z0-9가-힣_-]*$"
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "ko"
+                ],
+                "properties": {
+                  "ko": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "artContentDocument": {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "locale",
+        "status",
+        "source",
+        "version",
+        "domain",
+        "id",
+        "slug",
+        "locales",
+        "content"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "locale": {
+          "const": "ko-KR"
+        },
+        "status": {
+          "const": "accepted"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "version": {
+          "const": 1
+        },
+        "domain": {
+          "enum": [
+            "root",
+            "art"
+          ]
+        },
+        "id": {
+          "enum": [
+            "doc.Asset-Pipeline",
+            "doc.Character-Art-Direction"
+          ]
+        },
+        "slug": {
+          "enum": [
+            "Asset-Pipeline",
+            "Character-Art-Direction"
+          ]
+        },
+        "locales": {
+          "type": "object",
+          "required": [
+            "ko"
+          ],
+          "properties": {
+            "ko": {
+              "type": "object",
+              "required": [
+                "title",
+                "summary",
+                "tense"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "summary": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "tense": {
+                  "const": "present"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "content": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/artContentNode"
+          }
+        }
+      },
+      "additionalProperties": false
     }
   },
   "oneOf": [
-    { "$ref": "#/$defs/collection" },
-    { "$ref": "#/$defs/document" }
+    {
+      "$ref": "#/$defs/collection"
+    },
+    {
+      "$ref": "#/$defs/document"
+    },
+    {
+      "$ref": "#/$defs/artContentDocument"
+    }
   ]
 }

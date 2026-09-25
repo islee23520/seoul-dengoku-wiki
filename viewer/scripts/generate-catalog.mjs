@@ -8,6 +8,7 @@ if (!process.env.GDD_PAGES_ROOT) throw new Error('GDD_PAGES_ROOT is required: ma
 const gddPagesRoot = resolve(process.env.GDD_PAGES_ROOT)
 const contentRoot = resolve(projectRoot, 'src/content')
 const generatedRoot = resolve(projectRoot, 'src/generated')
+const sharedContentRoot = resolve(generatedRoot, 'shared-content')
 const categories = [
   { id: 'design', label: '제품 설계', dir: '', depth: 0 },
   { id: 'rules', label: '게임 규칙', dir: 'rules', depth: 0 },
@@ -47,6 +48,7 @@ const sourceKey = async (path) => {
 await rm(contentRoot, { recursive: true, force: true })
 await mkdir(contentRoot, { recursive: true })
 await mkdir(generatedRoot, { recursive: true })
+await mkdir(sharedContentRoot, { recursive: true })
 
 const documents = []
 for (const category of categories) {
@@ -85,6 +87,10 @@ for (const document of documents) {
   const hrefs = await Promise.all(links.map((match) => normalizeHref(match[1], document.source)))
   let index = 0
   await writeFile(resolve(targetDir, `${document.slug}.md`), normalized.replace(/\]\(([^)]+)\)/g, () => `](${hrefs[index++]})`))
+  const canon = JSON.parse(await readFile(resolve(gddRoot, document.sourcePath), 'utf8'))
+  if (Array.isArray(canon.content)) {
+    await writeFile(resolve(sharedContentRoot, `${document.category}-${document.slug}.json`), `${JSON.stringify(canon.content)}\n`)
+  }
 }
 
 const valuesCast = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8'))

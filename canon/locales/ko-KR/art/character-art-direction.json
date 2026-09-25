@@ -8,148 +8,106 @@
     "lineEnd": 132,
     "sha256": "a836f1172dcaded9b30c67b9b66408cb53f9e00e783b49f719dd9ed18dac55b2"
   },
-  "document": {
-    "id": "doc.Character-Art-Direction",
-    "blockIds": [
-      "source.b1",
-      "source.b2",
-      "source.b3",
-      "source.b4",
-      "source.b5",
-      "source.b6",
-      "source.b7",
-      "source.b8",
-      "source.b9",
-      "source.b10",
-      "source.b11",
-      "source.b12"
-    ]
+  "version": 1,
+  "domain": "art",
+  "id": "doc.Character-Art-Direction",
+  "slug": "Character-Art-Direction",
+  "locales": {
+    "ko": {
+      "title": "캐릭터 미술 방향",
+      "summary": "제품 목표는 애니메이션풍 정비율 인물과 프로젝트 자체 툰 셰이딩이다. 얼굴과 장비 외곽선은 전략 지도와 3D 자유 지휘 전투 카메라에서 식별할 수 있도록 제작한다. 아래 제작 단계의 실행 상태는 에셋별 영수증으로 구분한다.",
+      "tense": "present"
+    }
   },
-  "blocks": [
+  "content": [
     {
-      "id": "source.b1",
       "kind": "heading",
-      "level": 1,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "캐릭터 미술 방향"
-        }
-      ]
+      "anchor": "캐릭터-미술-방향",
+      "depth": 1,
+      "text": {
+        "ko": "캐릭터 미술 방향"
+      }
     },
     {
-      "id": "source.b2",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "제품 목표는 애니메이션풍 정비율 인물과 프로젝트 자체 툰 셰이딩이다. 얼굴과 장비 외곽선은 전략 지도와 3D 자유 지휘 전투 카메라에서 식별할 수 있도록 제작한다. 아래 제작 단계의 실행 상태는 에셋별 영수증으로 구분한다."
-        }
-      ]
+      "anchor": "source-b2",
+      "text": {
+        "ko": "제품 목표는 애니메이션풍 정비율 인물과 프로젝트 자체 툰 셰이딩이다. 얼굴과 장비 외곽선은 전략 지도와 3D 자유 지휘 전투 카메라에서 식별할 수 있도록 제작한다. 아래 제작 단계의 실행 상태는 에셋별 영수증으로 구분한다."
+      }
     },
     {
-      "id": "source.b3",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "몸체와 얼굴"
-        }
-      ]
+      "anchor": "몸체와-얼굴",
+      "depth": 2,
+      "text": {
+        "ko": "몸체와 얼굴"
+      }
     },
     {
-      "id": "source.b4",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "ART-ASSETS/avatar-gen에 보관한 남녀 바디 패키지를 기본 형태로 사용한다. 얼굴의 정체성과 바디의 잠긴 부위를 보존하면서 Blender에서 부품을 조립한다. 피부색·눈·의상 재질은 하나의 캐릭터로 읽히게 맞추고 실제 화면에서 다각도로 살핀다."
-        }
-      ]
+      "anchor": "source-b4",
+      "text": {
+        "ko": "ART-ASSETS/avatar-gen에 보관한 남녀 바디 패키지를 기본 형태로 사용한다. 얼굴의 정체성과 바디의 잠긴 부위를 보존하면서 Blender에서 부품을 조립한다. 피부색·눈·의상 재질은 하나의 캐릭터로 읽히게 맞추고 실제 화면에서 다각도로 살핀다."
+      }
     },
     {
-      "id": "source.b5",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "헤어와 의상"
-        }
-      ]
+      "anchor": "헤어와-의상",
+      "depth": 2,
+      "text": {
+        "ko": "헤어와 의상"
+      }
     },
     {
-      "id": "source.b6",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "남자 헤어는 머리 표면에 머리색과 헤어라인을 칠하고 바깥으로 돌출되는 부분만 별도의 메시로 만든다. 여자 헤어의 제작 구조는 캐릭터별 디자인에 맞춰 결정한다."
-        }
-      ]
+      "anchor": "source-b6",
+      "text": {
+        "ko": "남자 헤어는 머리 표면에 머리색과 헤어라인을 칠하고 바깥으로 돌출되는 부분만 별도의 메시로 만든다. 여자 헤어의 제작 구조는 캐릭터별 디자인에 맞춰 결정한다."
+      }
     },
     {
-      "id": "source.b7",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "의상은 검증된 텍스처가 연결된 모델을 사용한다. 참조 이미지에서 만든 Tripo 부품을 조립할 때 바디와 접합부, 재질과 외부 텍스처를 확인한다. 편집 원본과 텍스처가 담긴 교환 파일은 ART-ASSETS 매니페스트의 역할과 해시로 식별한다."
-        }
-      ]
+      "anchor": "source-b7",
+      "text": {
+        "ko": "의상은 검증된 텍스처가 연결된 모델을 사용한다. 참조 이미지에서 만든 Tripo 부품을 조립할 때 바디와 접합부, 재질과 외부 텍스처를 확인한다. 편집 원본과 텍스처가 담긴 교환 파일은 ART-ASSETS 매니페스트의 역할과 해시로 식별한다."
+      }
     },
     {
-      "id": "source.b8",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "전신과 초상"
-        }
-      ]
+      "anchor": "전신과-초상",
+      "depth": 2,
+      "text": {
+        "ko": "전신과 초상"
+      }
     },
     {
-      "id": "source.b9",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "전신 아바타는 Blender에서 조립하고 Auto-Rig Pro로 리깅·스키닝한 뒤 Blender에서 애니메이션을 제작한다. 웹 뷰어와 Unity의 요소 ID를 일치시켜 부품 표시를 동일하게 확인한다. 각 에셋의 리깅·애니메이션 실행 상태와 결과를 개별 영수증에 기록한다."
-        }
-      ]
+      "anchor": "source-b9",
+      "text": {
+        "ko": "전신 아바타는 Blender에서 조립하고 Auto-Rig Pro로 리깅·스키닝한 뒤 Blender에서 애니메이션을 제작한다. 웹 뷰어와 Unity의 요소 ID를 일치시켜 부품 표시를 동일하게 확인한다. 각 에셋의 리깅·애니메이션 실행 상태와 결과를 개별 영수증에 기록한다."
+      }
     },
     {
-      "id": "source.b10",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "프로필 초상은 완성된 3D 객체를 로컬 Blender에서 렌더한 PNG다. 얼굴, 의상과 표정이 인물의 역할을 알아볼 수 있게 구성하고, 렌더 이미지와 원본 객체의 경로·해시를 기록한다. 화면용 초상 생성과 게임 에셋의 런타임 반입은 각자 검증한다."
-        }
-      ]
+      "anchor": "source-b10",
+      "text": {
+        "ko": "프로필 초상은 완성된 3D 객체를 로컬 Blender에서 렌더한 PNG다. 얼굴, 의상과 표정이 인물의 역할을 알아볼 수 있게 구성하고, 렌더 이미지와 원본 객체의 경로·해시를 기록한다. 화면용 초상 생성과 게임 에셋의 런타임 반입은 각자 검증한다."
+      }
     },
     {
-      "id": "source.b11",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "검토 화면"
-        }
-      ]
+      "anchor": "검토-화면",
+      "depth": 2,
+      "text": {
+        "ko": "검토 화면"
+      }
     },
     {
-      "id": "source.b12",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "Blender에서 정면·측면·사선과 와이어프레임·재질 화면을 확인한다. Unity에서는 실제 전략·전투 카메라 거리와 각도에서 인물 비례, 헤어 실루엣, 장비와 재질의 가독성을 확인한다. 선택된 시각 증거는 에셋 매니페스트와 연결해 보관한다."
-        }
-      ]
+      "anchor": "source-b12",
+      "text": {
+        "ko": "Blender에서 정면·측면·사선과 와이어프레임·재질 화면을 확인한다. Unity에서는 실제 전략·전투 카메라 거리와 각도에서 인물 비례, 헤어 실루엣, 장비와 재질의 가독성을 확인한다. 선택된 시각 증거는 에셋 매니페스트와 연결해 보관한다."
+      }
     }
   ]
 }

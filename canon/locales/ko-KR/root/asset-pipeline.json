@@ -8,242 +8,165 @@
     "lineEnd": 103,
     "sha256": "88a62a59f89a6f5953280f55c47c2635081376dc3a503ef7270efb3fdbc22062"
   },
-  "document": {
-    "id": "doc.Asset-Pipeline",
-    "blockIds": [
-      "source.b1",
-      "source.b2",
-      "source.b3",
-      "source.b4",
-      "source.b5",
-      "source.b6",
-      "source.b7",
-      "source.b8",
-      "source.b9",
-      "source.b10",
-      "source.b11",
-      "source.b12",
-      "source.b13",
-      "source.b14",
-      "source.b15",
-      "source.b16",
-      "source.b17",
-      "source.b18",
-      "source.b19"
-    ]
+  "version": 1,
+  "domain": "root",
+  "id": "doc.Asset-Pipeline",
+  "slug": "Asset-Pipeline",
+  "locales": {
+    "ko": {
+      "title": "아트 에셋 제작·보관 공정",
+      "summary": "이 문서는 캐릭터, 초상, 프롭, UI, 타이틀 아트의 제작부터 게임 반입까지 다룬다. 각 단계는 실제 구현 상태를 구분해 기록한다. 캐릭터 기본 경로는 승인된 아바타 바디와 제작한 부품을 Blender에서 조립하는 방식이다.",
+      "tense": "present"
+    }
   },
-  "blocks": [
+  "content": [
     {
-      "id": "source.b1",
       "kind": "heading",
-      "level": 1,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "아트 에셋 제작·보관 공정"
-        }
-      ]
+      "anchor": "아트-에셋-제작-보관-공정",
+      "depth": 1,
+      "text": {
+        "ko": "아트 에셋 제작·보관 공정"
+      }
     },
     {
-      "id": "source.b2",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "이 문서는 캐릭터, 초상, 프롭, UI, 타이틀 아트의 제작부터 게임 반입까지 다룬다. 각 단계는 실제 구현 상태를 구분해 기록한다. 캐릭터 기본 경로는 승인된 아바타 바디와 제작한 부품을 Blender에서 조립하는 방식이다."
-        }
-      ]
+      "anchor": "source-b2",
+      "text": {
+        "ko": "이 문서는 캐릭터, 초상, 프롭, UI, 타이틀 아트의 제작부터 게임 반입까지 다룬다. 각 단계는 실제 구현 상태를 구분해 기록한다. 캐릭터 기본 경로는 승인된 아바타 바디와 제작한 부품을 Blender에서 조립하는 방식이다."
+      }
     },
     {
-      "id": "source.b3",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "의도와 제작 경로"
-        }
-      ]
+      "anchor": "의도와-제작-경로",
+      "depth": 2,
+      "text": {
+        "ko": "의도와 제작 경로"
+      }
     },
     {
-      "id": "source.b4",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "에셋 작업을 시작할 때 종류, 사용 목적, 원본 출처, 사용 권리, 제작 도구, 필요한 최종 형식을 기록한다. 의도 그래프 컴파일러는 현재 에셋 종류별 기존 경로에서 동작한다. Tripo·Auto-Rig Pro·3D 초상용 필드와 분기 검사는 목표 계약이며 구현 상태를 별도로 기록한다."
-        }
-      ]
+      "anchor": "source-b4",
+      "text": {
+        "ko": "에셋 작업을 시작할 때 종류, 사용 목적, 원본 출처, 사용 권리, 제작 도구, 필요한 최종 형식을 기록한다. 의도 그래프 컴파일러는 현재 에셋 종류별 기존 경로에서 동작한다. Tripo·Auto-Rig Pro·3D 초상용 필드와 분기 검사는 목표 계약이며 구현 상태를 별도로 기록한다."
+      }
     },
     {
-      "id": "source.b5",
       "kind": "list",
-      "ordered": false,
+      "anchor": "source-b5",
       "items": [
-        [
-          {
-            "kind": "text",
-            "text": "캐릭터·초상: 매니페스트에 등록된 avatar-gen 바디를 출발점으로 삼고, 부품 제작·Blender 조립·검증·내보내기를 거쳐 3D 객체에서 초상을 렌더한다."
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "프롭: 권리와 출처를 확인한 원본을 Blender에서 제작하거나 정리하고, 게임에 필요한 형식으로 내보낸다."
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "UI·타이틀·콘셉트: CLIProxy를 통한 2D 이미지 생성 결과와 편집 가능한 원본을 보관하고, 게임에서 쓰일 결과물을 별도로 검수한다."
-          }
-        ]
+        {
+          "ko": "캐릭터·초상: 매니페스트에 등록된 avatar-gen 바디를 출발점으로 삼고, 부품 제작·Blender 조립·검증·내보내기를 거쳐 3D 객체에서 초상을 렌더한다."
+        },
+        {
+          "ko": "프롭: 권리와 출처를 확인한 원본을 Blender에서 제작하거나 정리하고, 게임에 필요한 형식으로 내보낸다."
+        },
+        {
+          "ko": "UI·타이틀·콘셉트: CLIProxy를 통한 2D 이미지 생성 결과와 편집 가능한 원본을 보관하고, 게임에서 쓰일 결과물을 별도로 검수한다."
+        }
       ]
     },
     {
-      "id": "source.b6",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "캐릭터 3D 제작"
-        }
-      ]
+      "anchor": "캐릭터-3d-제작",
+      "depth": 2,
+      "text": {
+        "ko": "캐릭터 3D 제작"
+      }
     },
     {
-      "id": "source.b7",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "ART-ASSETS/avatar-gen의 매니페스트에 등록된 남녀 바디 패키지를 출발점으로 삼는다. 헤어·의상 등 3D 부품은 참조 이미지를 준비한 뒤 Tripo 웹 버전에서 만들고 Blender에서 바디와 조립한다. Tripo 작업은 Aside 브라우저에서 수행한다. 2D 이미지 생성은 Tripo 입력용 참조 시트와 UI·타이틀 아트에도 사용한다. 생성 모델과 입력 이미지의 출처 및 사용 권리는 에셋별로 기록한다."
-        }
-      ]
+      "anchor": "source-b7",
+      "text": {
+        "ko": "ART-ASSETS/avatar-gen의 매니페스트에 등록된 남녀 바디 패키지를 출발점으로 삼는다. 헤어·의상 등 3D 부품은 참조 이미지를 준비한 뒤 Tripo 웹 버전에서 만들고 Blender에서 바디와 조립한다. Tripo 작업은 Aside 브라우저에서 수행한다. 2D 이미지 생성은 Tripo 입력용 참조 시트와 UI·타이틀 아트에도 사용한다. 생성 모델과 입력 이미지의 출처 및 사용 권리는 에셋별로 기록한다."
+      }
     },
     {
-      "id": "source.b8",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "Blender 작업에서는 원본을 보존하고 새 결과를 만든다. 바디와 얼굴 정체성, 경계, UV, 텍스처 연결을 점검한 뒤 부품을 맞추고 프로젝트 자체 툰 재질을 적용한다. 메시의 양쪽을 먼저 감사하며, 수리가 필요한 곳만 계획하고 적용 결과를 새 Blender 프로세스에서 재검증한다. 현행 자동 수리 범위는 제한적이다."
-        }
-      ]
+      "anchor": "source-b8",
+      "text": {
+        "ko": "Blender 작업에서는 원본을 보존하고 새 결과를 만든다. 바디와 얼굴 정체성, 경계, UV, 텍스처 연결을 점검한 뒤 부품을 맞추고 프로젝트 자체 툰 재질을 적용한다. 메시의 양쪽을 먼저 감사하며, 수리가 필요한 곳만 계획하고 적용 결과를 새 Blender 프로세스에서 재검증한다. 현행 자동 수리 범위는 제한적이다."
+      }
     },
     {
-      "id": "source.b9",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "리깅·스키닝에는 Blender의 Auto-Rig Pro를 쓰고 애니메이션은 Blender에서 제작한다. character-tool은 리깅·내보내기 작업을 지원한다. 캐릭터별 리깅·애니메이션 실행 여부와 검사 결과를 영수증에 남긴다."
-        }
-      ]
+      "anchor": "source-b9",
+      "text": {
+        "ko": "리깅·스키닝에는 Blender의 Auto-Rig Pro를 쓰고 애니메이션은 Blender에서 제작한다. character-tool은 리깅·내보내기 작업을 지원한다. 캐릭터별 리깅·애니메이션 실행 여부와 검사 결과를 영수증에 남긴다."
+      }
     },
     {
-      "id": "source.b10",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "초상 제작"
-        }
-      ]
+      "anchor": "초상-제작",
+      "depth": 2,
+      "text": {
+        "ko": "초상 제작"
+      }
     },
     {
-      "id": "source.b11",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "준비된 .blend·.glb·.gltf·.fbx 3D 객체를 로컬 Blender에서 렌더해 PNG 초상을 만든다. portrait-gen의 생성·검사·내보내기 명령은 실제 렌더, 이미지 유효성, 원본과 결과 해시를 기록한다. 원본 메시 승인과 Unity 런타임 승격은 각자의 검증 결과로 기록한다."
-        }
-      ]
+      "anchor": "source-b11",
+      "text": {
+        "ko": "준비된 .blend·.glb·.gltf·.fbx 3D 객체를 로컬 Blender에서 렌더해 PNG 초상을 만든다. portrait-gen의 생성·검사·내보내기 명령은 실제 렌더, 이미지 유효성, 원본과 결과 해시를 기록한다. 원본 메시 승인과 Unity 런타임 승격은 각자의 검증 결과로 기록한다."
+      }
     },
     {
-      "id": "source.b12",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "원본과 결과물의 저장소"
-        }
-      ]
+      "anchor": "원본과-결과물의-저장소",
+      "depth": 2,
+      "text": {
+        "ko": "원본과 결과물의 저장소"
+      }
     },
     {
-      "id": "source.b13",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "편집 가능한 .blend, 외부 텍스처가 있는 FBX, 승인된 텍스처·GLB, 선택한 검수 이미지는 ART-ASSETS/<에셋군>/에 보관한다. TOOL/은 제작·검증 코드를 소유한다. 각 에셋군의 manifest.json에는 안정적인 역할, 저장소 상대 경로, 원본과 결과의 SHA-256, 입력 출처와 사용 권리, 승인 상태를 기록한다. Blender·이미지·FBX·GLB 등의 바이너리는 Git LFS로 커밋하고 원격에 푸시한 뒤에만 로컬 작업 폴더를 정리한다."
-        }
-      ]
+      "anchor": "source-b13",
+      "text": {
+        "ko": "편집 가능한 .blend, 외부 텍스처가 있는 FBX, 승인된 텍스처·GLB, 선택한 검수 이미지는 ART-ASSETS/<에셋군>/에 보관한다. TOOL/은 제작·검증 코드를 소유한다. 각 에셋군의 manifest.json에는 안정적인 역할, 저장소 상대 경로, 원본과 결과의 SHA-256, 입력 출처와 사용 권리, 승인 상태를 기록한다. Blender·이미지·FBX·GLB 등의 바이너리는 Git LFS로 커밋하고 원격에 푸시한 뒤에만 로컬 작업 폴더를 정리한다."
+      }
     },
     {
-      "id": "source.b14",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "후보와 임시 렌더는 프로젝트의 .omo/evidence/<작업명>/에 모은다. 채택된 편집 원본·텍스처·교환 파일은 ART-ASSETS에 올린다. 작업 폴더를 지우기 전 일반·무시 파일을 모두 열거하고, 매니페스트의 해시와 원격 저장소의 파일을 대조한다."
-        }
-      ]
+      "anchor": "source-b14",
+      "text": {
+        "ko": "후보와 임시 렌더는 프로젝트의 .omo/evidence/<작업명>/에 모은다. 채택된 편집 원본·텍스처·교환 파일은 ART-ASSETS에 올린다. 작업 폴더를 지우기 전 일반·무시 파일을 모두 열거하고, 매니페스트의 해시와 원격 저장소의 파일을 대조한다."
+      }
     },
     {
-      "id": "source.b15",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "Unity 반입과 화면 확인"
-        }
-      ]
+      "anchor": "unity-반입과-화면-확인",
+      "depth": 2,
+      "text": {
+        "ko": "Unity 반입과 화면 확인"
+      }
     },
     {
-      "id": "source.b16",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "FBX와 외부 텍스처를 독립적으로 다시 가져와 재질 연결, 도구 버전, 실제 단위, 크기와 피벗을 확인한다. 웹 GLB와 Unity FBX는 avatar-contract.json의 같은 요소 ID·이름을 사용하며 좌표축과 손잡이계 변환을 명시한다. Three.js와 Unity에서 같은 요소 표시 상태를 검사한다."
-        }
-      ]
+      "anchor": "source-b16",
+      "text": {
+        "ko": "FBX와 외부 텍스처를 독립적으로 다시 가져와 재질 연결, 도구 버전, 실제 단위, 크기와 피벗을 확인한다. 웹 GLB와 Unity FBX는 avatar-contract.json의 같은 요소 ID·이름을 사용하며 좌표축과 손잡이계 변환을 명시한다. Three.js와 Unity에서 같은 요소 표시 상태를 검사한다."
+      }
     },
     {
-      "id": "source.b17",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "Unity 반입 후 전략 지도와 3D 자유 지휘 전투 카메라의 실제 화면에서 형태와 재질이 읽히는지 확인한다. 팬·오빗·줌으로 여러 각도를 살핀다. 게임 에셋의 런타임 슬롯 반입은 별도의 출처·임포트 검사를 거친다."
-        }
-      ]
+      "anchor": "source-b17",
+      "text": {
+        "ko": "Unity 반입 후 전략 지도와 3D 자유 지휘 전투 카메라의 실제 화면에서 형태와 재질이 읽히는지 확인한다. 팬·오빗·줌으로 여러 각도를 살핀다. 게임 에셋의 런타임 슬롯 반입은 별도의 출처·임포트 검사를 거친다."
+      }
     },
     {
-      "id": "source.b18",
       "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "UI 아트 반입"
-        }
-      ]
+      "anchor": "ui-아트-반입",
+      "depth": 2,
+      "text": {
+        "ko": "UI 아트 반입"
+      }
     },
     {
-      "id": "source.b19",
       "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "Unity UI는 AssetDatabase가 가져온 텍스처와 임포터 설정을 사용한다. 여러 투명 이미지를 합성할 때에는 source-over 알파 합성을 적용해 아래 층의 색과 알파를 보존한다."
-        }
-      ]
+      "anchor": "source-b19",
+      "text": {
+        "ko": "Unity UI는 AssetDatabase가 가져온 텍스처와 임포터 설정을 사용한다. 여러 투명 이미지를 합성할 때에는 source-over 알파 합성을 적용해 아래 층의 색과 알파를 보존한다."
+      }
     }
   ]
 }
