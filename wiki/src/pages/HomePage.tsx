@@ -24,7 +24,7 @@ const panels: { title: string; items: PanelItem[] }[] = [
     { label: '항렬과 본관', to: wikiLinks.hangnyeol, spa: true },
   ]},
   { title: '지리', items: [
-    { label: '지하철 레이어', to: wikiLinks.subway, spa: true },
+    { label: '월드맵', to: wikiLinks.subway, spa: true },
     { label: '역 카탈로그', to: wikiLinks.stations, spa: true },
     { label: '지역 설정', to: wikiLinks.regions, spa: true },
   ]},
