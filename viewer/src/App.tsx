@@ -89,16 +89,18 @@ function DocumentPage() {
   const [sharedContent, setSharedContent] = useState<DocumentNode[] | null>(null)
   useEffect(() => {
     if (!document) return
+    let active = true
     setMarkdown(null)
     setSharedContent(null)
     const shared = sharedModules[`./generated/shared-content/${document.category}-${document.slug}.json`]
     if (shared) {
-      void shared().then(setSharedContent)
-      return
+      void shared().then((content) => { if (active) setSharedContent(content) })
+      return () => { active = false }
     }
     const load = markdownModules[`./content/${document.category}/${document.slug}.md`]
     if (!load) return
-    void load().then(setMarkdown)
+    void load().then((content) => { if (active) setMarkdown(content) })
+    return () => { active = false }
   }, [document])
   if (!document) return <Navigate to="/documents" replace />
   return (
