@@ -1,18 +1,7 @@
 {
   "schema": "lore-relations.v1",
-  "note": "Approved K001–K1007 are read from the frozen registry. Remaining P IDs are provisional local identities. Source tables are normalized at load time.",
-  "provisionalPeople": [
-    {
-      "id": "P001",
-      "name": "신준",
-      "sourceAnchor": "관계-원장-table3"
-    },
-    {
-      "id": "P002",
-      "name": "신종목",
-      "sourceAnchor": "관계-원장-table3"
-    }
-  ],
+  "note": "Approved K001–K1010 are read from the frozen registry. Remaining P IDs are provisional local identities. Source tables are normalized at load time.",
+  "provisionalPeople": [],
   "organizations": [
     {
       "id": "O01",
@@ -48,7 +37,7 @@
     },
     {
       "eventId": "E:ch43-i1-p",
-      "personId": "P002"
+      "personId": "K1009"
     }
   ]
 }
