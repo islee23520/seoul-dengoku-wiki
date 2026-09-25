@@ -14,6 +14,8 @@ const referenceDir = [join(repoRoot, 'RESEARCH', 'canon-reference'), join(repoRo
 
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
 const COINED_PHRASES = ['창세 구술', '창세 이야기', '구술로만', '창세의 첫 줄', '창세의 첫 급수협약', '창세는 햇수 없는 구술']
+// Korean attaches particles (라벨렌의, 라벨렌을), so the Hangul form matches without a trailing boundary.
+const RAVELEN_REFERENCE = /(?<![\p{L}\p{N}_])ravelen(?![\p{L}\p{N}_])|라벨렌/iu
 export const EXPECTED_REFERENCE_EXCLUSIONS = 20
 const EXCLUDED_STEMS = ['_sidebar', '_template', 'cast-profile-contract', 'cast-registration-template', 'random-cast-roster']
 const HUB_PREFIXES = ['/gdd/', '/ui-layout-moodboard/', '/ui-ux-refs/', '/play/']
@@ -70,6 +72,10 @@ export function coinedPhraseFailures(text, source) {
     .map((phrase) => `FAIL coined-phrase: ${source} contains "${phrase}"`)
 }
 
+export function ravelenExclusionFailures(text, source) {
+  return RAVELEN_REFERENCE.test(text) ? [`FAIL exclusion: ${source} contains a Ravelen reference`] : []
+}
+
 function markdownLinks(markdown) {
   return [...markdown.matchAll(/\]\(([^)\s]+)\)/g)].map((match) => match[1])
 }
@@ -106,7 +112,9 @@ function main() {
     if (EXCLUDED_STEMS.includes(stem) || stem === 'kenshi' || rel.toLowerCase().includes('/reference/')) {
       failures.push(`FAIL exclusion: ${rel} matches excluded source "${stem}"`)
     }
-    const document = JSON.parse(readFileSync(page, 'utf8'))
+    const pageSource = readFileSync(page, 'utf8')
+    const document = JSON.parse(pageSource)
+    failures.push(...ravelenExclusionFailures(JSON.stringify(document), rel))
     if ('body' in document || !Array.isArray(document.blocks) || document.blocks.length === 0 || typeof document.reviewText !== 'string') {
       failures.push(`FAIL unstructured-content: ${rel}`)
       continue
@@ -132,14 +140,23 @@ function main() {
   }
 
   const shell = readFileSync(join(distDir, 'index.html'), 'utf8')
+  failures.push(...ravelenExclusionFailures(shell, 'dist/index.html'))
   for (const term of findBannedTerms(visibleText(shell))) failures.push(`FAIL banned-term: dist/index.html contains "${term}"`)
   failures.push(...coinedPhraseFailures(visibleText(shell), 'dist/index.html'))
   for (const file of listFiles(join(distDir, 'assets')).filter((file) => file.endsWith('.js'))) {
-    failures.push(...coinedPhraseFailures(readFileSync(file, 'utf8'), posixRel(wikiRoot, file)))
+    const source = readFileSync(file, 'utf8')
+    const rel = posixRel(wikiRoot, file)
+    failures.push(...coinedPhraseFailures(source, rel))
+    failures.push(...ravelenExclusionFailures(source, rel))
   }
-  for (const file of listFiles(join(wikiRoot, 'public/person-details')).filter((file) => file.endsWith('.json'))) {
-    const person = JSON.parse(readFileSync(file, 'utf8'))
-    failures.push(...coinedPhraseFailures(JSON.stringify([person.sections, person.biography, person.fields]), posixRel(wikiRoot, file)))
+  for (const file of listFiles(join(wikiRoot, 'public')).filter((file) => file.endsWith('.json'))) {
+    const source = readFileSync(file, 'utf8')
+    const rel = posixRel(wikiRoot, file)
+    failures.push(...ravelenExclusionFailures(JSON.stringify(JSON.parse(source)), rel))
+    if (rel.startsWith('public/person-details/')) {
+      const person = JSON.parse(source)
+      failures.push(...coinedPhraseFailures(JSON.stringify([person.sections, person.biography, person.fields]), rel))
+    }
   }
   for (const href of htmlLinks(shell)) {
     if (!href.startsWith('/') || href.startsWith('//')) continue
