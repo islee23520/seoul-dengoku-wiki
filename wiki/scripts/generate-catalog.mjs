@@ -555,14 +555,14 @@ await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringi
 const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
 if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
 const centuryAnnalsDocument = pagesBySlug.get('Century-Annals')?.value
-const relatedTimelineDocuments = (text) => {
+const relatedTimelineDocuments = (text, hasTheaterChronicle = false) => {
   const related = [{ title: '서울전국 연표 2026–2126', route: '/world/Century-Annals' }]
   const add = (title, route) => { if (!related.some((entry) => entry.route === route)) related.push({ title, route }) }
   if (territoryStates.some((state) => text.includes(state.id) || text.includes(state.name)) || /열여섯|십육국|국호/u.test(text)) add('서울 십육국', '/world/Sixteen-States')
   if (/HC\d{2}|HP\d{2}|가문|총수|본관|항렬|법인 후계/u.test(text)) add('가문', '/world/Chaebol-Houses-and-Century-Factions')
   if (/교회|성당|불교|원불교|예배|신정|위령|신앙|종단|교구/u.test(text)) add('신앙과 문화의 분열', '/world/Faith-Culture-Schism')
   if (/휴머노이드|기술|무구|인가 서버|공장|제작|배터리|전지|도면|정비/u.test(text)) add('이 시대의 기술과 무구', '/world/Era-Arms-and-Tech-Level')
-  if (/XT0[1-5]|외부전구|임진|서해|대한해협|두만강|인천신탁|바깥/u.test(text)) add('바깥', '/world/External-Theaters')
+  if (hasTheaterChronicle || /XT0[1-5]|외부전구|임진|서해|대한해협|두만강|인천신탁|바깥/u.test(text)) add('바깥', '/world/External-Theaters')
   if (peopleSource.some((person) => text.includes(person.name))) add('등장인물 전체', '/people')
   return related
 }
@@ -571,8 +571,10 @@ const firstSentence = (text) => text.match(/^.*?[.!?](?:\s|$)/u)?.[0]?.trim() ??
 // A year is a `### YYYY년` heading in the annals; its paragraphs run until the next year or era heading,
 // so every entry links to an anchor that exists on the Century-Annals page.
 const byYear = new Map()
+const theaterChronicleYears = new Set()
 let currentYear = null
 for (const block of centuryAnnalsDocument?.content ?? []) {
+  if (block.kind === 'heading' && currentYear !== null && /-xt0[1-5]-/u.test(block.anchor ?? '')) theaterChronicleYears.add(currentYear)
   if (block.kind === 'heading' && block.depth <= 3) {
     const year = block.depth === 3 ? Number(koText(block.text.ko).match(/^((?:20|21)\d{2})년$/u)?.[1]) : NaN
     currentYear = Number.isInteger(year) ? year : null
@@ -598,7 +600,7 @@ const timelineYears = [...byYear.entries()].sort(([left], [right]) => left - rig
     immediate,
     aftermath,
     sourceRoute: `/world/Century-Annals#${year}년`,
-    relatedDocuments: relatedTimelineDocuments(prose.join('\n')),
+    relatedDocuments: relatedTimelineDocuments(prose.join('\n'), theaterChronicleYears.has(year)),
   }
 })
 const emptyYears = timelineYears.filter((entry) => entry.summary.length === 0).map((entry) => entry.year)
