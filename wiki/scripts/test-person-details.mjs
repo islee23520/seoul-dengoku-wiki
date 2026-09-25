@@ -476,6 +476,44 @@ test('S10 issued cards retain card-backed bilingual livelihoods and original mar
   assert.equal(seen.size, 62)
 })
 
+test('S11 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-11.json', import.meta.url), 'utf8'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const values = JSON.parse(await readFile(new URL('../../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
+  const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
+  assert.equal(headings.length, 61)
+  const seen = new Set()
+  for (const [index, heading] of headings.entries()) {
+    const id = idByName.get(heading.name)
+    assert.ok(id && !seen.has(id), heading.name)
+    seen.add(id)
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const fields = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+    const occupations = fields.filter((item) => plain(item.ko).startsWith('생업: '))
+    assert.equal(occupations.length, 1, id)
+    assert.match(plain(occupations[0].en), /^Livelihood: \S/u, id)
+    const livelihood = plain(occupations[0].ko).slice(4)
+    assert.ok(livelihood && livelihood !== '미등록', id)
+    const detailIndex = values.findIndex((person) => person.name === heading.name && person.state === 'S11')
+    assert.ok(detailIndex >= 0, id)
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${String(detailIndex + 1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.name, heading.name, id)
+    assert.equal(detail.occupation, livelihood, id)
+    assert.equal(detail.fields['생업'], livelihood, id)
+    assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-11#'), id)
+    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
+      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
+    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|기록칼|호위방패|수문손)/u)?.[1]
+    assert.ok(martial, id)
+    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+  }
+  assert.equal(seen.size, 61)
+})
+
 test('person detail page renders tables and the canonical prose sections', async () => {
   const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8')
   const page = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
