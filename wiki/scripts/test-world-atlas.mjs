@@ -28,6 +28,24 @@ test('expansion projection links every unaffiliated ID to its actual person rout
   assert.deepEqual(links, ids.map((id) => '/people/person-' + id.slice(1).padStart(4, '0')))
 })
 
+test('theater projection retains sourced route, rumor, player-entry and unknown fields', () => {
+  const parsed = extractAtlasJson(markdown)
+  assert.equal(parsed.ok, true, parsed.error)
+  const projection = projectionsFromAtlas(parsed.value, 'test')['External-Theaters.md']
+  for (const theater of parsed.value.theaters) {
+    assert.ok(projection.includes(`## ${theater.id} · ${theater.display_name}`), theater.id)
+    for (const value of [theater.verified, theater.inference, theater.original_fiction,
+      theater.seoul_route.verified_geography, theater.seoul_route.outbound_boundary,
+      theater.seoul_route.fixed_duration, theater.travel_constraints.rule,
+      theater.language_rumor_protocol.prohibited_inference,
+      theater.opening_event.player_decision, ...theater.explicit_unknowns]) {
+      assert.ok(projection.includes(value), `${theater.id}: ${value}`)
+    }
+    for (const entry of theater.player_entry_points) assert.ok(projection.includes(entry.first_decision), entry.id)
+    for (const rumor of theater.language_rumor_protocol.rumor_reliability) assert.ok(projection.includes(rumor.rule), `${theater.id}: ${rumor.tier}`)
+  }
+})
+
 const context = {
   registry: JSON.parse(await readFile(new URL('name-pools/person-id-registry.json', lore), 'utf8')),
   candidates: JSON.parse(await readFile(new URL('name-pools/person-id-candidates.json', lore), 'utf8')),
