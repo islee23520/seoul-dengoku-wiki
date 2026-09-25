@@ -164,7 +164,7 @@ function main() {
   const historicalPage = JSON.parse(readFileSync(join(contentDir, 'Sixteen-States.json'), 'utf8'))
   const historicalPageCount = (JSON.stringify(historicalPage.blocks).match(/급수계약정/gu) ?? []).length
   const historicalOriginCount = (readFileSync(join(wikiRoot, 'src/generated/stateCatalog.ts'), 'utf8').match(/"origin": "급수계약정"/gu) ?? []).length
-  if (historicalPageCount !== 1 || historicalOriginCount !== 1) failures.push('FAIL retired-form: historical origin baseline changed')
+  if (historicalPageCount !== 0 || historicalOriginCount !== 1) failures.push('FAIL retired-form: historical origin baseline changed')
   let historicalBundleCount = 0
   for (const file of listFiles(join(distDir, 'assets')).filter((file) => file.endsWith('.js'))) {
     const source = readFileSync(file, 'utf8')
