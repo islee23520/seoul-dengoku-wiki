@@ -149,6 +149,34 @@
   border: 1px solid rgb(255 255 255 / 0.7);
 }
 
+.territory-landmark-markers {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.territory-landmark-marker {
+  position: absolute;
+  translate: -50% -50%;
+  inline-size: 1.15rem;
+  block-size: 1.15rem;
+  border: 2px solid;
+  border-radius: 50%;
+  background: rgb(4 17 23 / 0.94);
+  color: #f8e9a3;
+  font-size: 0.7rem;
+  line-height: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.territory-landmark-marker:focus-visible,
+.territory-landmark-marker[aria-pressed='true'] {
+  outline: 2px solid #f8e9a3;
+  outline-offset: 2px;
+}
+
 .territory-vassal-markers {
   position: absolute;
   inset: 0;
@@ -449,3 +477,14 @@
   font-size: 12px;
   pointer-events: none;
 }
+
+.territory-landmark-index {
+  border: 1px solid var(--wiki-line);
+  background: var(--wiki-paper);
+  padding: 0.75rem;
+}
+
+.territory-landmark-index ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+.territory-landmark-index button { display: flex; align-items: center; gap: 0.45rem; width: 100%; border: 1px solid var(--wiki-line); background: transparent; color: var(--wiki-text); font: inherit; text-align: left; cursor: pointer; padding: 0.35rem; }
+.territory-landmark-index button span:last-child { margin-inline-start: auto; font-size: 0.75rem; }
+.territory-landmark-index button[aria-pressed='true'], .territory-landmark-index button:focus-visible { outline: 2px solid var(--wiki-accent); }
