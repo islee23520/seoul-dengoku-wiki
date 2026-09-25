@@ -48,6 +48,24 @@
   color: #04111a;
 }
 
+.territory-underground-levels {
+  position: absolute;
+  inset-block-start: 3.9rem;
+  inset-inline-start: 0.75rem;
+  z-index: 7;
+  display: grid;
+  gap: 0.32rem;
+  color: #e0faff;
+  font-size: 0.72rem;
+  pointer-events: none;
+}
+
+.territory-underground-levels span {
+  padding: 0.18rem 0.45rem;
+  border-inline-start: 3px solid #9ee9ff;
+  background: rgb(4 17 23 / 0.86);
+}
+
 .territory-map-canvas .territory-state-marker {
   position: absolute;
   z-index: 6;
@@ -147,15 +165,32 @@
   border-radius: 50%;
   padding: 0;
   translate: -50% -50%;
+  pointer-events: none;
+}
+
+.territory-vassal-label {
+  position: absolute;
+  z-index: 7;
+  translate: -50% -50%;
+  max-inline-size: 190px;
+  min-block-size: 25px;
+  border: 1px solid;
+  border-radius: 3px;
+  background: rgb(4 17 23 / 0.94);
+  color: #f4fbfc;
+  padding: 0.18rem 0.42rem;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
   pointer-events: auto;
   cursor: pointer;
 }
 
-.territory-vassal-marker:hover,
-.territory-vassal-marker:focus-visible {
-  border-color: #ffd66b;
-  outline: none;
-  box-shadow: 0 0 0 3px rgb(255 214 107 / 0.45);
+.territory-vassal-label:hover,
+.territory-vassal-label:focus-visible {
+  outline: 2px solid #ffd66b;
+  outline-offset: 1px;
 }
 
 .territory-vassal-inset {
@@ -224,9 +259,105 @@
   white-space: nowrap;
 }
 
-.territory-marker-connectors .territory-vassal-connector line {
-  stroke: #9ee9ff;
-  stroke-width: 0.35;
+.territory-toolbar {
+  flex-wrap: nowrap;
+  gap: 0.65rem;
+}
+
+.territory-toolbar .territory-filter {
+  min-inline-size: 0;
+  white-space: nowrap;
+}
+
+.territory-toolbar .territory-filter select {
+  min-inline-size: 0;
+  max-inline-size: 12rem;
+}
+
+.territory-camera-controls.territory-camera-overlay {
+  position: absolute;
+  inset-inline-end: 0.75rem;
+  inset-block-end: 0.75rem;
+  z-index: 8;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.2rem;
+  inline-size: 12.75rem;
+  border: 1px solid rgb(158 233 255 / 0.55);
+  border-radius: 4px;
+  background: rgb(4 17 23 / 0.93);
+  padding: 0.35rem;
+  box-shadow: 0 0 0 2px rgb(7 21 28 / 0.72);
+}
+
+.territory-camera-overlay button {
+  min-inline-size: 0;
+  border: 1px solid rgb(158 233 255 / 0.35);
+  background: rgb(19 50 61 / 0.9);
+  color: #e0faff;
+  padding: 0.24rem 0.12rem;
+  font: inherit;
+  font-size: 0.62rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.territory-camera-overlay button:hover,
+.territory-camera-overlay button:focus-visible {
+  outline: 1px solid #ffd66b;
+  background: #24596a;
+}
+
+.territory-detail {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  max-block-size: 24rem;
+  padding: 0.65rem;
+  font-size: 0.78rem;
+}
+
+.territory-detail section {
+  min-inline-size: 0;
+  border: 1px solid var(--wiki-line);
+  background: #fff;
+  padding: 0.6rem 0.7rem;
+}
+
+.territory-detail section:only-child {
+  grid-column: 1 / -1;
+}
+
+.territory-detail .wiki-domain-label {
+  margin: 0 0 0.2rem;
+  font-size: 0.65rem;
+}
+
+.territory-detail h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.territory-detail h4 {
+  margin: 0.5rem 0 0.12rem;
+  color: var(--wiki-nav);
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.territory-detail p {
+  margin: 0.12rem 0;
+  line-height: 1.4;
+}
+
+.territory-detail .person-data-table {
+  margin: 0;
+  font-size: 0.72rem;
+}
+
+.territory-detail .territory-state-link {
+  margin-block-start: 0.45rem;
+  font-size: 0.72rem;
 }
 
 .territory-detail .person-data-table th,
@@ -241,6 +372,8 @@
 }
 
 @media (max-width: 480px) {
+  .territory-toolbar { flex-wrap: wrap; }
+  .territory-detail { grid-template-columns: minmax(0, 1fr); }
   .territory-vassal-inset {
     inline-size: 100%;
   }
