@@ -48,6 +48,58 @@
   color: #04111a;
 }
 
+.territory-selection-summary {
+  position: absolute;
+  inset-inline-start: 0.75rem;
+  inset-block-end: 0.75rem;
+  z-index: 8;
+  display: grid;
+  gap: 0.18rem;
+  max-inline-size: min(26rem, 55%);
+  border: 1px solid rgb(158 233 255 / 0.6);
+  border-inline-start: 3px solid #9ee9ff;
+  background: rgb(4 17 23 / 0.94);
+  color: #e0faff;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.72rem;
+  pointer-events: none;
+}
+
+.territory-selection-summary strong { font-size: 0.9rem; }
+
+.territory-state-summary {
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-end: 0.75rem;
+  z-index: 8;
+  display: grid;
+  gap: 0.3rem;
+  inline-size: min(17rem, 35%);
+  border: 2px solid;
+  background: rgb(4 17 23 / 0.95);
+  box-shadow: 0 0.45rem 1.3rem rgb(0 0 0 / 0.36);
+  color: #e0faff;
+  padding: 0.7rem;
+  font-size: 0.75rem;
+}
+
+.territory-state-summary strong { font-size: 1rem; }
+.territory-state-summary .wiki-domain-label { color: #9ee9ff; }
+.territory-state-summary a { color: #f8e9a3; font-weight: 700; }
+.territory-state-summary a:focus-visible { outline: 2px solid #f8e9a3; }
+
+.territory-map-canvas-3d { scroll-margin-block-start: 1rem; }
+
+.territory-marker-filters { display: flex; align-items: center; gap: 0.5rem; border: 1px solid var(--wiki-line); margin: 0; padding: 0.25rem 0.5rem; }
+.territory-marker-filters legend { font-weight: 700; }
+.territory-marker-filters label { display: inline-flex; align-items: center; gap: 0.2rem; cursor: pointer; }
+
+.territory-map-layout { position: relative; }
+.territory-detail-toggle { position: absolute; inset-block-start: 3.9rem; inset-inline-end: 0.75rem; z-index: 8; border: 1px solid #9ee9ff; background: rgb(4 17 23 / 0.94); color: #e0faff; padding: 0.4rem 0.6rem; cursor: pointer; }
+.territory-map-layout > .territory-detail { position: absolute; inset-block-start: 0; inset-inline-end: 0; z-index: 9; display: block; inline-size: min(23rem, 40%); max-block-size: min(42rem, 90%); overflow-y: auto; border: 2px solid #9ee9ff; background: rgb(4 17 23 / 0.97); color: #e0faff; box-shadow: -0.5rem 0 1.5rem rgb(0 0 0 / 0.5); }
+.territory-map-layout > .territory-detail section { background: #f8f5ef; color: var(--wiki-text); }
+.territory-detail-close { display: block; margin-inline-start: auto; margin-block-end: 0.5rem; border: 1px solid #9ee9ff; background: transparent; color: #e0faff; padding: 0.3rem 0.5rem; cursor: pointer; }
+
 .territory-underground-levels {
   position: absolute;
   inset-block-start: 3.9rem;

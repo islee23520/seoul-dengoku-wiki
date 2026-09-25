@@ -1,4 +1,4 @@
-# 월드맵의 구조
+# 세계 지도의 구성
 
 가. 지리의 뼈대
 
@@ -10,19 +10,19 @@
 
 다. 관련 문서
 
-관련 문서: [서울과 지하철 레이어](World-and-Subway-Layers.md), [서울 십육국](../factions/Sixteen-States.md), [서울 지역 설정 데이터](../regions/README.md), [서울 역 카탈로그](Seoul-Station-Catalog.md), [역 내부에 들어가면](Station-Interior-Construction.md), [이동과 조우](/gdd/rules/Travel-and-Encounters).
+관련 문서: [세계 지도](World-and-Subway-Layers.md), [서울 십육국](../factions/Sixteen-States.md), [서울 지역 설정 데이터](../regions/README.md), [서울 역 카탈로그](Seoul-Station-Catalog.md), [역 내부에 들어가면](Station-Interior-Construction.md), [이동과 조우](/gdd/rules/Travel-and-Encounters).
 
 ## 자치구 25
 
 가. 구 이름의 출처
 
-구 이름은 KOSTAT GeoJSON `properties.name`을 그대로 쓴다. 스물다섯 구가 모두 월드맵에 있다.
+구 이름은 KOSTAT GeoJSON `properties.name`을 그대로 쓴다. 스물다섯 구가 모두 세계 지도에 있다.
 
 종로구, 중구, 용산구, 성동구, 광진구, 동대문구, 중랑구, 성북구, 강북구, 도봉구, 노원구, 은평구, 서대문구, 마포구, 양천구, 강서구, 구로구, 금천구, 영등포구, 동작구, 관악구, 서초구, 강남구, 송파구, 강동구.
 
 나. 구역과 권역
 
-이 25개가 월드맵의 핵심 구역으로 남는다. 십육국은 이 구 위에 권역을 얹는다. 영등포구를 수문국으로, 종로구를 대한민국정부로 바꿔 부르지 않는다.
+이 25개가 세계 지도의 핵심 구역으로 남는다. 십육국은 이 구 위에 권역을 얹는다. 영등포구를 수문국으로, 종로구를 대한민국정부로 바꿔 부르지 않는다.
 
 ## 역 목록
 

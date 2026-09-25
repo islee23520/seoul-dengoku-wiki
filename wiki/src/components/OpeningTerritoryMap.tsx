@@ -13,7 +13,7 @@ import './OpeningTerritoryMap.css'
 type State = { id: string; name: string; slug: string; origin: string; government: string; power: string; relation: '복속' | '보좌' | '독립' | null; ruler: string; cause: string; labelX: number; labelY: number; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
 type Region = { id: string; name: string; district: string; path: string; polities: string[]; status: 'held' | 'contested' | 'vacant'; openingState: string; summary: string; stationCount: number }
 type LineDefinition = { name: string; color: string }
-type StationControl = { source: 'derived-from-surface' | 'outside-surface-atlas' | 'control-delta'; deltaId: string | null; status: 'held' | 'contested' | 'vacant' | 'unknown'; polityIds: string[]; polityNames: string[]; surfaceRegionId: string | null; surfaceRegionName: string | null; hierarchy: { state: string; regionalAuthority: string; stationManager: string } }
+type StationControl = { source: 'derived-from-surface' | 'outside-surface-atlas' | 'control-delta'; deltaId: string | null; status: 'held' | 'contested' | 'vacant' | 'unknown'; polityIds: string[]; polityNames: string[]; primary: string | null; surfaceRegionId: string | null; surfaceRegionName: string | null; hierarchy: { state: string; regionalAuthority: string; stationManager: string } }
 type Station = { id: string; name: string; district: string; x: number; y: number; degree: number; lineIds: string[]; control: StationControl }
 type DisplayStation = Station & { memberIds: string[]; names: string[] }
 type SubwayEdge = { a: string; b: string; lineIds: string[] }
@@ -24,12 +24,13 @@ type TerritoryData = { width: number; height: number; projection: Projection; ep
 type TerrainLayer = TerrainTile & { name: string; zoom: number; minElevation: number; maxElevation: number }
 type WaterFeature = { id: string; kind: 'polygon' | 'line'; tag: Record<string, string>; coordinates: number[][] | number[][][] }
 type DetailTile = TerrainTile & { waterFile: string }
-type RegionalData = { meta: { layers: TerrainLayer[]; detailTiles: DetailTile[]; farWaterFile: string; attribution: string }; coarse: Uint16Array; farWater: { features: WaterFeature[] }; boundaries: Array<{ city: string; centroid: [number, number]; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] } }>; rail: { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> } }
+type NorthernRail = { source: { snapshot: string; license: string }; scope: string; coverage: { missingNorthernBoundariesInRenderedLayer: boolean }; paths: Array<{ osmWay: number; mode: string; points: [number, number][]; passage2126: 'unknown' }>; stations: Array<{ osmNode: number; mode: string; east: number; north: number; passage2126: 'unknown' }> }
+type RegionalData = { meta: { layers: TerrainLayer[]; detailTiles: DetailTile[]; farWaterFile: string; attribution: string }; coarse: Uint16Array; farWater: { features: WaterFeature[] }; boundaries: Array<{ city: string; centroid: [number, number]; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] } }>; rail: { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> }; northernRail: NorthernRail }
 type PlatformDetail = { railM: number | null; platformM: number | null; floors: string | null; platformType: string | null; exits: number | null; transfers: string[] | null; sources: Record<string, 'depth' | 'operations'> }
 type UndergroundDetail = { schema: string; verticalScale: string; sources: Record<string, { url: string; license: string; asOf: string; sha256: string }>; stations: Record<string, Record<string, PlatformDetail>>; paths: Array<{ lineId: string; edge: number; osmWay: number | null; kind: 'observed' | 'schematic'; points: [number, number, number | null][] }> }
 type TerritoryLayer = 'surface' | 'subway'
 type MarkerPosition = { left: number; top: number; anchorLeft: number; anchorTop: number; visible: boolean }
-type RegionMesh = THREE.Mesh<THREE.ExtrudeGeometry, THREE.MeshStandardMaterial> & { userData: { regionId: string; baseColor: string } }
+type RegionMesh = THREE.Mesh<THREE.ShapeGeometry, THREE.MeshStandardMaterial> & { userData: { regionId: string; baseColor: string } }
 type StateEdgeLine = THREE.Line<THREE.BufferGeometry, THREE.LineBasicMaterial> & { userData: { holderId: string | null; lineIds: string[] } }
 type MapRuntime = {
   reset: () => void
@@ -158,6 +159,10 @@ export default function OpeningTerritoryMap() {
   const [selectedLandmark, setSelectedLandmark] = useState<string | null>(null)
   const [stateFilter, setStateFilter] = useState('all')
   const [selectedLine, setSelectedLine] = useState('all')
+  const [showStations, setShowStations] = useState(false)
+  const [showLandmarks, setShowLandmarks] = useState(false)
+  const [showVassals, setShowVassals] = useState(false)
+  const [detailOpen, setDetailOpen] = useState(false)
   const [layer, setLayer] = useState<TerritoryLayer>('surface')
   const [markerPositions, setMarkerPositions] = useState<Record<string, MarkerPosition>>({})
   const [stationMarkerPositions, setStationMarkerPositions] = useState<Record<string, MarkerPosition>>({})
@@ -195,13 +200,14 @@ export default function OpeningTerritoryMap() {
       return response
     })
     void asset('regional-terrain.json').then((response) => response.json() as Promise<RegionalData['meta']>).then(async (meta) => {
-      const [boundaries, rail, coarse, farWater] = await Promise.all([
+      const [boundaries, rail, northernRail, coarse, farWater] = await Promise.all([
         asset('regional-boundaries.json').then((response) => response.json() as Promise<RegionalData['boundaries']>),
         asset('regional-rail.json').then((response) => response.json() as Promise<RegionalData['rail']>),
+        asset('northern-rail.json').then((response) => response.json() as Promise<NorthernRail>),
         asset(meta.layers.find((entry) => entry.name === 'peninsula')!.file).then((response) => response.arrayBuffer()),
         asset(meta.farWaterFile).then((response) => response.json() as Promise<RegionalData['farWater']>),
       ])
-      setRegional({ meta, boundaries, rail, coarse: new Uint16Array(coarse), farWater })
+      setRegional({ meta, boundaries, rail, northernRail, coarse: new Uint16Array(coarse), farWater })
     }).catch((error) => { if (error.name !== 'AbortError') setFailed(true) })
     return () => controller.abort()
   }, [data])
@@ -235,11 +241,16 @@ export default function OpeningTerritoryMap() {
     setSelectedVassal(null)
     setStateFilter(state.id)
     setSelectedId(state.capitalRegionId)
+    setDetailOpen(true)
+    runtimeRef.current?.reset()
+    shellRef.current?.scrollIntoView({ block: 'start' })
   }
   const selectVassal = (vassal: Vassal) => {
     setSelectedVassal(vassal.name)
     setStateFilter('all')
     setSelectedId(null)
+    setDetailOpen(true)
+    shellRef.current?.scrollIntoView({ block: 'start' })
   }
 
   useEffect(() => {
@@ -450,15 +461,14 @@ export default function OpeningTerritoryMap() {
         else shape.lineTo(x, y)
       })
       shape.closePath()
-      const depth = (region.status === 'held' ? 0.82 : region.status === 'vacant' ? 0.3 : 0.46) + Math.min(region.stationCount * 0.035, 0.28)
-      const geometry = new TessellateModifier(1.8, 5).modify(new THREE.ExtrudeGeometry(shape, { depth, steps: 1, bevelEnabled: false }))
+      const geometry = new TessellateModifier(1.8, 5).modify(new THREE.ShapeGeometry(shape))
       geometry.rotateX(-Math.PI / 2)
       const positions = geometry.getAttribute('position')
-      for (let index = 0; index < positions.count; index += 1) positions.setY(index, positions.getY(index) + surfaceY(positions.getX(index), positions.getZ(index)) + 0.14)
+      for (let index = 0; index < positions.count; index += 1) positions.setY(index, surfaceY(positions.getX(index), positions.getZ(index)) + 0.11)
       positions.needsUpdate = true
       geometry.computeVertexNormals()
       const baseColor = region.status === 'vacant' ? vacantColor : region.status === 'contested' ? '#9f9276' : states.get(region.polities[0])?.color ?? '#777777'
-      const material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.68, metalness: 0.08, emissive: 0x061016, emissiveIntensity: 0.18 })
+      const material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.85, transparent: true, opacity: 0.58, depthWrite: false, side: THREE.DoubleSide })
       const mesh = new THREE.Mesh(geometry, material) as RegionMesh
       mesh.renderOrder = 2
       mesh.userData = { regionId: region.id, baseColor }
@@ -497,8 +507,6 @@ export default function OpeningTerritoryMap() {
         const z = (station.y - data.height / 2) * scale
         const levels = station.lineIds.map((lineId) => ({ lineId, entry: station.memberIds.map((id) => underground.stations[id]?.[lineId]).find(Boolean) })).filter((item): item is { lineId: string; entry: PlatformDetail } => Boolean(item.entry))
         if (!levels.length) continue
-        const deepest = Math.min(...levels.map(({ entry }) => depthY(entry.railM)))
-        const height = Math.max(0.3, surfaceY(x, z) + 0.4 - deepest)
         levels.forEach(({ lineId, entry }, index) => {
           const known = entry.platformM !== null
           const y = depthY(entry.platformM) + 0.12
@@ -601,6 +609,40 @@ export default function OpeningTerritoryMap() {
       vassalLineMaterials.push({ lineId, material })
       disposables.push(geometry, material)
     }
+    const northernByMode = new Map<string, number[]>()
+    const [railEast0, railNorth0, railEast1, railNorth1] = coarseLayer.bboxEPSG5179
+    const railCell = Math.min((railEast1 - railEast0) / (coarseLayer.width - 1), (railNorth1 - railNorth0) / (coarseLayer.height - 1))
+    const railPoint = (east: number, north: number) => {
+      const { x, z } = worldAt(east, north)
+      const elevation = Math.max(...[-1, 1].flatMap((dx) => [-1, 1].map((dy) => terrainSample(coarseLayer, regional.coarse, east + dx * railCell / 2, north + dy * railCell / 2))))
+      return [x, terrainHeight(elevation) + 0.82, z]
+    }
+    for (const path of regional.northernRail.paths) {
+      const positions = northernByMode.get(path.mode) ?? []
+      for (let index = 1; index < path.points.length; index += 1) {
+        const [aEast, aNorth] = path.points[index - 1]
+        const [bEast, bNorth] = path.points[index]
+        const steps = Math.max(1, Math.ceil(Math.hypot(bEast - aEast, bNorth - aNorth) / (railCell / 2)))
+        let previous = railPoint(aEast, aNorth)
+        for (let step = 1; step <= steps; step += 1) {
+          const fraction = step / steps
+          const current = railPoint(aEast + (bEast - aEast) * fraction, aNorth + (bNorth - aNorth) * fraction)
+          positions.push(...previous, ...current)
+          previous = current
+        }
+      }
+      northernByMode.set(path.mode, positions)
+    }
+    for (const [mode, positions] of northernByMode) {
+      const geometry = new THREE.BufferGeometry()
+      geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
+      const material = new THREE.LineBasicMaterial({ color: mode === 'rail' ? '#ead7a1' : '#b7c5b2', transparent: true, opacity: 0.9 })
+      const line = new THREE.LineSegments(geometry, material)
+      line.renderOrder = 5
+      regionalRailGroup.add(line)
+      vassalLineMaterials.push({ lineId: 'northern-rail', material })
+      disposables.push(geometry, material)
+    }
     for (const [lineId, positions] of subwayPositionsByLine) {
       const subwayGeometry = new THREE.BufferGeometry()
       subwayGeometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
@@ -684,6 +726,16 @@ export default function OpeningTerritoryMap() {
     regionalStationCloud.renderOrder = 5
     scene.add(regionalStationCloud)
     disposables.push(regionalStationGeometry, regionalStationMaterial)
+    const northernStationGeometry = new THREE.BufferGeometry()
+    northernStationGeometry.setAttribute('position', new THREE.Float32BufferAttribute(regional.northernRail.stations.flatMap((station) => {
+      const { x, z } = worldAt(station.east, station.north)
+      return [x, surfaceY(x, z) + 1.05, z]
+    }), 3))
+    const northernStationMaterial = new THREE.PointsMaterial({ color: 0xffe8a1, size: 1.1, sizeAttenuation: true })
+    const northernStations = new THREE.Points(northernStationGeometry, northernStationMaterial)
+    northernStations.renderOrder = 6
+    scene.add(northernStations)
+    disposables.push(northernStationGeometry, northernStationMaterial)
 
     const vassalGroup = new THREE.Group()
     const vassalAnchors = new Map<string, THREE.Vector3>()
@@ -877,7 +929,7 @@ export default function OpeningTerritoryMap() {
       pointer.set(((event.clientX - rect.left) / rect.width) * 2 - 1, -((event.clientY - rect.top) / rect.height) * 2 + 1)
       raycaster.setFromCamera(pointer, camera)
       const hit = raycaster.intersectObjects(meshes, false)[0]?.object as RegionMesh | undefined
-      if (hit?.userData.regionId) setSelectedId(hit.userData.regionId)
+      if (hit?.userData.regionId) { setSelectedId(hit.userData.regionId); setDetailOpen(true) }
     }
     const onPointerMove = (event: PointerEvent) => {
       const rect = canvas.getBoundingClientRect()
@@ -967,7 +1019,8 @@ export default function OpeningTerritoryMap() {
       <div className="territory-toolbar">
         <label className="territory-filter"><span>국가 필터</span><select value={stateFilter} onChange={(event) => { const state = states.get(event.target.value); if (state) selectState(state); else setStateFilter('all') }}><option value="all">16국 전체</option>{data.states.map((state) => <option key={state.id} value={state.id}>{state.id} · {state.name}</option>)}</select></label>
         <label className="territory-filter"><span>노선 필터</span><select value={selectedLine} onChange={(event) => setSelectedLine(event.target.value)}><option value="all">전체 노선</option>{Object.entries(data.lines).map(([lineId, line]) => <option key={lineId} value={lineId}>{line.name}</option>)}</select></label>
-        <label className="territory-filter"><span>지역 선택</span><select value={selectedId ?? ''} onChange={(event) => { setSelectedVassal(null); setSelectedId(event.target.value) }}><option value="">선택 안 함</option>{data.regions.map((region) => <option key={region.id} value={region.id}>{region.district} · {region.name}</option>)}</select></label>
+        <label className="territory-filter"><span>지역 선택</span><select value={selectedId ?? ''} onChange={(event) => { setSelectedVassal(null); setSelectedId(event.target.value); setDetailOpen(Boolean(event.target.value)) }}><option value="">선택 안 함</option>{data.regions.map((region) => <option key={region.id} value={region.id}>{region.district} · {region.name}</option>)}</select></label>
+        <fieldset className="territory-marker-filters"><legend>지도 표시</legend><label><input type="checkbox" checked={showStations} onChange={(event) => setShowStations(event.target.checked)} />역</label><label><input type="checkbox" checked={showLandmarks} onChange={(event) => setShowLandmarks(event.target.checked)} />시설</label><label><input type="checkbox" checked={showVassals} onChange={(event) => setShowVassals(event.target.checked)} />속국</label></fieldset>
         <span className="territory-controls-help">왼쪽 드래그 팬 · 오른쪽 드래그 오빗 · 휠 줌</span>
       </div>
       <div className="territory-tier-legend" aria-label="국력 등급 범례">
@@ -984,6 +1037,9 @@ export default function OpeningTerritoryMap() {
             <button type="button" aria-pressed={layer === 'surface'} onClick={() => setLayer('surface')}>지상</button>
             <button type="button" aria-pressed={layer === 'subway'} onClick={() => { setLayer('subway'); runtimeRef.current?.reset() }}>지하</button>
           </div>
+          {(selectedState || selectedStation || selectedLandmark || selectedVassal || selected) && <button type="button" className="territory-detail-toggle" aria-expanded={detailOpen} aria-controls="territory-detail-panel" onClick={() => setDetailOpen((open) => !open)}>{detailOpen ? '정보 접기' : '정보 펼치기'}</button>}
+          {selectedStation && !detailOpen && <div className="territory-selection-summary" role="status"><strong>{selectedStation.names.join(' · ')}</strong><span>{selectedStation.control.polityNames.join(' · ') || '통제 미상'} · 경비·통행 우선 {selectedStation.control.primary ? states.get(selectedStation.control.primary)?.name ?? selectedStation.control.primary : '미상'}</span></div>}
+          {selectedState && !detailOpen && <div className="territory-state-summary" role="status" style={{ borderColor: selectedState.color }}><span className="wiki-domain-label">선택 국가 · {selectedState.id}</span><strong>{selectedState.name}</strong><span>{selectedState.power} · 수도역 {data.stations.find((station) => station.id === selectedState.capitalStationId)?.name ?? selectedState.capitalStationId}</span><span>수장 {selectedState.ruler}{selectedState.relation ? ` · 정부와 ${selectedState.relation}` : ''}</span><Link to={`/states/${selectedState.slug}`}>국가 상세 보기</Link></div>}
           {layer === 'subway' && <div className="territory-underground-levels" aria-label="지하 심도 범례"><span>실측 심도: 지표 아래 5 m = 지도 1 단위</span><span>승강장 · 노선별 실측 깊이 / 선로 · 실측 곡선</span><span>회색 점선: 심도 또는 선형 미상 · 개략 연결</span></div>}
           <div className="territory-camera-controls territory-camera-overlay" role="group" aria-label="3D 지도 카메라 조작">
             <button type="button" onClick={() => runtimeRef.current?.pan(0, -6)}>팬 북쪽</button>
@@ -1004,7 +1060,7 @@ export default function OpeningTerritoryMap() {
               return <button key={state.id} type="button" className="territory-state-marker territory-capital-marker" data-capital-station-id={state.capitalStationId} aria-pressed={stateFilter === state.id} aria-label={`${state.id} ${state.name} 수도역 ${capital?.name ?? state.capitalStationId}`} title={`${state.id} ${state.name} · 수도역 ${capital?.name ?? state.capitalStationId}`} style={{ left: `${position?.anchorLeft ?? state.capitalX / data.width * 100}%`, top: `${position?.anchorTop ?? state.capitalY / data.height * 100}%`, backgroundColor: states.get(state.id)?.color, visibility: position?.visible === false ? 'hidden' : 'visible' }} onClick={() => selectState(state)}><StateFlag stateId={state.id} /></button>
             })}
           </div>
-          <div className="territory-vassal-markers" aria-hidden={cameraPortrait ? 'true' : undefined} aria-label="속국 13 본국 연결 지점">
+          {showVassals && <div className="territory-vassal-markers" aria-hidden={cameraPortrait ? 'true' : undefined} aria-label="속국 13 본국 연결 지점">
             {vassals.map((vassal) => {
               const position = vassalMarkerPositions[vassal.name]
               const suzerain = states.get(vassal.suzerain)
@@ -1015,33 +1071,34 @@ export default function OpeningTerritoryMap() {
                 {label && position?.visible && <button type="button" className="territory-vassal-label" aria-pressed={selectedVassal === vassal.name} style={{ left: `${label.left}%`, top: `${label.top}%`, borderColor: data.lines[vassal.lineId]?.color ?? suzerain.color }} aria-label={`${vassal.name} ${vassal.city} 본국 ${suzerain.name} 속국`} title={`${vassal.name}(${vassal.city}) · ${vassal.anchor} · 본국 ${suzerain.name}`} onClick={() => selectVassal(vassal)}>{vassal.name} · {vassal.city}</button>}
               </div>
             })}
-          </div>
-          {layer === 'surface' && <div className="territory-landmark-markers" aria-label="2126년 주요 시설">
+          </div>}
+          {showLandmarks && layer === 'surface' && <div className="territory-landmark-markers" aria-label="2126년 주요 시설">
             {data.landmarks.map((site) => { const position = landmarkPositions[site.id]; return position?.visible && <button key={site.id} type="button" className="territory-landmark-marker" data-landmark-id={site.id} aria-label={`${site.name} 시설 정보`} aria-pressed={selectedLandmark === site.id} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: states.get(site.holderId)?.color }} onClick={() => setSelectedLandmark(site.id)} title={`${site.name} · ${site.role}`}>◆</button> })}
           </div>}
-          <div className="territory-station-markers" aria-label="주요 지하철역 이름">
+          {showStations && <div className="territory-station-markers" aria-label="주요 지하철역 이름">
             {displayStations.filter((station) => station.memberIds.some((id) => data.majorStationIds.includes(id))).map((station) => {
               const position = stationMarkerPositions[station.id]
               if (!station) return null
               if (selectedLine !== 'all' && !station.lineIds.includes(selectedLine)) return null
               return <span key={station.id} className="territory-station-marker" data-station-id={station.id} style={{ left: `${position?.left ?? station.x / data.width * 100}%`, top: `${position?.top ?? station.y / data.height * 100}%`, visibility: position?.visible === false ? 'hidden' : 'visible' }}>{station.names.join(' · ')}</span>
             })}
-          </div>
-          <div className="territory-station-hit-targets" aria-label="역 점령 정보">
+          </div>}
+          {showStations && <div className="territory-station-hit-targets" aria-label="역 점령 정보">
             {displayStations.map((station) => {
               const position = stationMarkerPositions[station.id]
               if (!position || position.visible === false || (selectedLine !== 'all' && !station.lineIds.includes(selectedLine))) return null
               const showTooltip = () => setHoveredStation({ station, left: position.left / 100 * (shellRef.current?.clientWidth ?? 1), top: position.top / 100 * (shellRef.current?.clientHeight ?? 1) })
               const lineColor = data.lines[station.lineIds[0]]?.color ?? '#f8f1cf'
-              return <button key={station.id} type="button" className="territory-station-hit" data-station-id={station.id} data-source-station-ids={station.memberIds.join(' ')} aria-label={`${station.names.join(' · ')} 역 정보`} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: lineColor }} onClick={() => { setSelectedStation(station); if (layer === 'subway') runtimeRef.current?.focusStation(station) }} onPointerEnter={showTooltip} onPointerLeave={() => setHoveredStation(null)} onFocus={showTooltip} onBlur={() => setHoveredStation(null)} />
+              return <button key={station.id} type="button" className="territory-station-hit" data-station-id={station.id} data-source-station-ids={station.memberIds.join(' ')} aria-label={`${station.names.join(' · ')} 역 정보`} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: lineColor }} onClick={() => { setSelectedStation(station); setDetailOpen(true); if (layer === 'subway') runtimeRef.current?.focusStation(station) }} onPointerEnter={showTooltip} onPointerLeave={() => setHoveredStation(null)} onFocus={showTooltip} onBlur={() => setHoveredStation(null)} />
             })}
-          </div>
+          </div>}
           {hoveredStation && <div className="territory-station-tooltip" role="status" style={{ left: hoveredStation.left, top: hoveredStation.top }}>
             <strong>{hoveredStation.station.names.join(' · ')}</strong>
             <div className="territory-tooltip-lines">{hoveredStation.station.lineIds.length > 0 ? hoveredStation.station.lineIds.map((lineId) => <span key={lineId} style={{ borderColor: data.lines[lineId]?.color, color: data.lines[lineId]?.color }}>{data.lines[lineId]?.name ?? lineId}</span>) : <span>노선 미확인</span>}</div>
             <dl>
-              <div><dt>점령 상태</dt><dd>{hoveredStation.station.control.status === 'held' ? '단독 지배' : hoveredStation.station.control.status === 'contested' ? '경합' : hoveredStation.station.control.status === 'vacant' ? '무주지' : '미확인'}</dd></div>
-              <div><dt>지배 국가</dt><dd>{hoveredStation.station.control.hierarchy.state}</dd></div>
+              <div><dt>역 상태</dt><dd>{hoveredStation.station.control.status === 'held' ? '점유' : hoveredStation.station.control.status === 'contested' ? '분쟁' : hoveredStation.station.control.status === 'vacant' ? '무주지' : '미확인'}</dd></div>
+              <div><dt>관여 국가</dt><dd>{hoveredStation.station.control.hierarchy.state}</dd></div>
+              {hoveredStation.station.control.primary && <div><dt>경비·통행 우선</dt><dd>{states.get(hoveredStation.station.control.primary)?.name ?? hoveredStation.station.control.primary}</dd></div>}
               <div><dt>지배 계층</dt><dd>{hoveredStation.station.control.hierarchy.state} → {hoveredStation.station.control.hierarchy.regionalAuthority} → {hoveredStation.station.control.hierarchy.stationManager}</dd></div>
               <div><dt>점령 원장</dt><dd>{hoveredStation.station.control.source === 'derived-from-surface' ? '지표 영토 기반 초안' : hoveredStation.station.control.source === 'control-delta' ? `역 점령 변경 기록${hoveredStation.station.control.deltaId ? ` · ${hoveredStation.station.control.deltaId}` : ''}` : '서울 영토 원장 밖 · 미확인'}</dd></div>
             </dl>
@@ -1068,16 +1125,18 @@ export default function OpeningTerritoryMap() {
         </div>
         <div className="territory-landmark-index" aria-label="2126년 주요 시설 목록">
           <p className="territory-vassal-inset-title">주요 시설 · {data.landmarks.length}</p>
-          <ul>{data.landmarks.map((site) => <li key={site.id}><button type="button" aria-pressed={selectedLandmark === site.id} onClick={() => { setLayer('surface'); setSelectedLandmark(site.id); setSelectedId(null) }}><span className="territory-state-swatch" style={{ backgroundColor: states.get(site.holderId)?.color }} />{site.name}<span>{site.role}</span></button></li>)}</ul>
+          <ul>{data.landmarks.map((site) => <li key={site.id}><button type="button" aria-pressed={selectedLandmark === site.id} onClick={() => { setLayer('surface'); setSelectedLandmark(site.id); setSelectedId(null); setDetailOpen(true); shellRef.current?.scrollIntoView({ block: 'start' }) }}><span className="territory-state-swatch" style={{ backgroundColor: states.get(site.holderId)?.color }} />{site.name}<span>{site.role}</span></button></li>)}</ul>
         </div>
-        <aside className="territory-detail" aria-live="polite">
+        {detailOpen && <aside id="territory-detail-panel" className="territory-detail" aria-label="선택 정보" aria-live="polite"><button type="button" className="territory-detail-close" onClick={() => setDetailOpen(false)}>정보 접기</button>
+          {layer === 'surface' && selectedStation && <section aria-labelledby="selected-surface-station-title"><p className="wiki-domain-label">선택한 역 · 지상</p><h3 id="selected-surface-station-title">{selectedStation.names.join(' · ')}</h3><table className="person-data-table"><tbody><tr><th>역 상태</th><td>{selectedStation.control.status === 'held' ? '점유' : selectedStation.control.status === 'contested' ? '분쟁' : selectedStation.control.status === 'vacant' ? '무주지' : '미상'}</td></tr><tr><th>관여 국가</th><td>{selectedStation.control.polityNames.join(' · ') || '미상'}</td></tr><tr><th>경비·통행 우선</th><td>{selectedStation.control.primary ? states.get(selectedStation.control.primary)?.name ?? selectedStation.control.primary : '미상'}</td></tr><tr><th>주변 동</th><td>{selectedStation.control.surfaceRegionName ?? '미상'}</td></tr></tbody></table><p>{selectedStation.control.hierarchy.regionalAuthority}</p></section>}
           {layer === 'subway' && selectedStation && underground && <section aria-labelledby="selected-station-title"><p className="wiki-domain-label">역 상세 · 관측 자료</p><h3 id="selected-station-title">{selectedStation.names.join(' · ')}</h3>{selectedStation.lineIds.map((lineId) => { const entry = underground.stations[selectedStation.id]?.[lineId] ?? selectedStation.memberIds.map((id) => underground.stations[id]?.[lineId]).find(Boolean); return <div key={lineId}><h4 style={{ color: data.lines[lineId]?.color }}>{data.lines[lineId]?.name ?? lineId}</h4><table className="person-data-table"><tbody>{([['승강장 심도', entry?.platformM == null ? '심도 미상' : `${entry.platformM} m`, 'depth'], ['선로 심도', entry?.railM == null ? '심도 미상' : `${entry.railM} m`, 'depth'], ['역 층수', entry?.floors ?? '미상', 'floors'], ['승강장 형식', entry?.platformType ?? '미상', 'platformType'], ['출입구', entry?.exits == null ? '미상' : `${entry.exits}개`, 'exits'], ['환승노선', entry?.transfers?.join(' · ') || '미상', 'transfers']] as const).map(([label, value, field]) => <tr key={field}><th>{label}</th><td>{value} <small>{entry?.sources[field] ? `· ${entry.sources[field] === 'depth' ? 'OA-13305' : '15044440'}` : '· 관측 없음'}</small></td></tr>)}</tbody></table></div> })}<p>서울교통공사 공공누리 1유형 · 운영 현황 이용허락범위 제한 없음 · OSM ODbL. 심도는 현행 지표 기준이며 미상 구간은 개략 표시입니다.</p></section>}
           {selectedLandmark && (() => { const site = data.landmarks.find((entry) => entry.id === selectedLandmark)!; return <section aria-labelledby="selected-landmark-title"><p className="wiki-domain-label">2126년 주요 시설</p><h3 id="selected-landmark-title">{site.name}</h3><table className="person-data-table"><tbody><tr><th>시설 소유</th><td>{states.get(site.holderId)?.name}</td></tr><tr><th>주변 동 지배</th><td>{states.get(site.surfaceHolderId)?.name}{site.isEnclave ? ' · 시설 월경지' : ''}</td></tr><tr><th>역할</th><td>{site.role}</td></tr><tr><th>실제 요새화</th><td>{site.fortification === 'confirmed' ? '확정' : '미상'}</td></tr>{site.connectionStationId && <tr><th>역 연결 통행</th><td>{site.connectionStationId} · 2126년 확인</td></tr>}</tbody></table><p>{site.detail}</p><p>{site.address} · <a href={site.coordinateSource}>위치 출처</a> · {data.landmarkAttribution}</p></section> })()}
           {selectedVassal && (() => { const vassal = vassals.find((entry) => entry.name === selectedVassal)!; return <section aria-labelledby="selected-vassal-title"><p className="wiki-domain-label">선택된 속국 · {vassal.city}</p><h3 id="selected-vassal-title">{vassal.name}</h3><table className="person-data-table"><tbody><tr><th>본국</th><td>{states.get(vassal.suzerain)?.name}</td></tr><tr><th>연결 노선</th><td>{data.lines[vassal.lineId]?.name}</td></tr><tr><th>설립</th><td>{vassal.founded}</td></tr><tr><th>역할</th><td>{vassal.duty}</td></tr></tbody></table><p>{vassal.coordinateSource}</p></section> })()}
-          {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : selected.status === 'vacant' ? '무주지' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ') || '없음'}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126 시점 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p></section>}
+          {selected && !selectedState && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지역 상태</th><td>{selected.status === 'held' ? '점유' : selected.status === 'vacant' ? '무주지' : '분쟁'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ') || '없음'}</td></tr><tr><th>역 수</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126년 상태</h4><p>{selected.openingState}</p><h4>지역 기록</h4><p>{selected.summary}</p></section>}
           {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr>{selectedState.relation && <tr><th>정부와의 관계</th><td>{selectedState.relation}</td></tr>}</tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
-        </aside>
+        </aside>}
       </div>
+      <p className="wiki-domain-label">북측 철도 관측: {regional.northernRail.paths.length.toLocaleString()}개 OSM 선로 way · {regional.northernRail.stations.length.toLocaleString()}개 역/간이역 점 · {regional.northernRail.source.snapshot} · {regional.northernRail.source.license}. 선로 간 물리 연결 및 2126년 통행은 미상. 북측 행정경계는 이 지도에 아직 반영되지 않았다. 이 수치는 PBF 스냅샷에서 태그된 객체의 범위이며 전 철도망 완전성을 뜻하지 않는다.</p>
       <p className="wiki-domain-label">{regional.meta.attribution}</p>
       <div className="territory-legend">{data.states.map((state) => <button key={state.id} type="button" data-tier={state.power} onClick={() => selectState(state)} aria-pressed={stateFilter === state.id}><span className="territory-legend-swatch" style={{ backgroundColor: states.get(state.id)?.color }} /><StateFlag stateId={state.id} /><span>{state.id} {state.name}</span></button>)}</div>
       <div className="territory-line-legend" aria-label="서울 지하철 노선 색상"><button type="button" aria-pressed={selectedLine === 'all'} onClick={() => setSelectedLine('all')}>전체 노선</button>{Object.entries(data.lines).map(([lineId, line]) => <button key={lineId} type="button" aria-pressed={selectedLine === lineId} onClick={() => setSelectedLine(lineId)}><span style={{ backgroundColor: line.color }} />{line.name}</button>)}</div>

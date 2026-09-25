@@ -18,8 +18,8 @@
 - [강·구·동 건물 재사용](places/Building-Reuse-Geography.md)
 - [서울 역 카탈로그](places/Seoul-Station-Catalog.md)
 - [역 내부에 들어가면](places/Station-Interior-Construction.md)
-- [서울과 지하철 레이어](places/World-and-Subway-Layers.md)
-- [월드맵을 어떻게 구성하나](places/World-Map-Construction.md)
+- [세계 지도](places/World-and-Subway-Layers.md)
+- [세계 지도의 구성](places/World-Map-Construction.md)
 
 ## 5. 세력과 집단
 - [서울 십육국](factions/Sixteen-States.md)
