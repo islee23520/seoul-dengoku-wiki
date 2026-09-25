@@ -25,6 +25,7 @@ const normalizeTitle = (markdown, fallback) =>
   markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
 
 const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
+const namingStates = JSON.parse(await readFile(resolve(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8')).states
 
 const splitCells = (line) => line.split('|').slice(1, -1).map((cell) => cell.trim())
 
@@ -56,7 +57,7 @@ const parseStateRows = (markdown) => {
     const embedded = (originCell.match(/중심\s*([^|()]+?)역/u) ?? originCell.match(/([가-힣]{2,8})역/u) ?? [])[1] ?? ''
     const capital = (rowCell(row, '수도역') || rowCell(row, '중심역')).replace(/역$/u, '').trim() || embedded.trim()
     const rawName = row['국명']
-    const origin = rawName.match(/\(기원 표기 ([^,)]+)/u)?.[1]?.trim() ?? rawName
+    const origin = namingStates.find((state) => state.id === id)?.precursor
     return {
       id,
       name: publicStateName(rawName),
@@ -71,7 +72,7 @@ const parseStateRows = (markdown) => {
       capital,
     }
   })
-  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
+  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id || !row.origin) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
   if (rows.some((row) => !row.capital)) throw new Error(`E_STATE_CAPITAL:${rows.filter((row) => !row.capital).map((row) => row.name).join(',')}`)
   return rows
 }
@@ -300,6 +301,11 @@ const relationByStateName = new Map(relationTable.rows.map(([state, relation]) =
 }))
 const stationControlLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/station-control-overrides.json'), 'utf8'))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
+if (stationControlOverrides.size !== stationControlLedger.overrides.length) throw new Error('E_STATION_CONTROL_DUPLICATE')
+for (const entry of stationControlLedger.overrides) {
+  if (!entry.polityIds?.length || !entry.polityIds.every((id) => stateNameById.has(id)) || !entry.polityIds.includes(entry.primary)) throw new Error(`E_STATION_CONTROL_PRIMARY:${entry.stationId}`)
+  if (entry.status !== (entry.polityIds.length === 1 ? 'held' : 'contested')) throw new Error(`E_STATION_CONTROL_STATUS:${entry.stationId}`)
+}
 proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
 
 const regionContentById = new Map()
@@ -393,6 +399,7 @@ const mapStations = seoulGraph.stations.map((station) => {
       status: delta?.status ?? (!region ? 'unknown' : polityIds.length === 0 ? 'vacant' : polityIds.length === 1 ? 'held' : 'contested'),
       polityIds,
       polityNames: polityIds.map((id) => stateNameById.get(id) ?? id),
+      primary: delta?.primary ?? (polityIds.length === 1 ? polityIds[0] : null),
       surfaceRegionId: region?.id ?? null,
       surfaceRegionName: region?.name ?? null,
       hierarchy: {

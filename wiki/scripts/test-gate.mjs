@@ -100,7 +100,7 @@ test('sixteen canonical state names and historical precursors match the private 
   const table = canon('lore/factions/Sixteen-States.json').content.find((block) => block.kind === 'table' && block.columns[0].ko === 'ID')
   assert.ok(table)
   assert.equal(table.rows.length, 16)
-  assert.deepEqual(table.rows.map((row) => [row[0].ko, row[1].ko]), ledger.states.map(({ id, name, precursor }) => [id, `${name}(기원 표기 ${precursor}${name === precursor ? ', 유지' : ''})`]))
+  assert.deepEqual(table.rows.map((row) => [row[0].ko, row[1].ko]), ledger.states.map(({ id, name }) => [id, name]))
 })
 
 test('retired public forms fail on published text surfaces', () => {

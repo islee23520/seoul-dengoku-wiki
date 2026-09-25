@@ -20,7 +20,7 @@ const sections: { title: string; items: SidebarItem[] }[] = [
     { label: '기술과 무구', to: wikiLinks.technology, spa: true },
   ]},
   { title: '지리', items: [
-    { label: '지하철 레이어', to: wikiLinks.subway, spa: true },
+    { label: '세계 지도', to: wikiLinks.subway, spa: true },
     { label: '역 카탈로그', to: wikiLinks.stations, spa: true },
   ]},
   { title: '도구', items: [

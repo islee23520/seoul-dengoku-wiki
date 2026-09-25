@@ -114,8 +114,33 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
     assert.equal(regions[0].status, 'held', `${state.id}:${capital.name}:status`)
     if (['종로구', '중구'].includes(regions[0].district)) assert.deepEqual(regions[0].polities, ['S06'], `${state.id}:${capital.name}:government-block`)
     else assert.deepEqual(regions[0].polities, [state.id], `${state.id}:${capital.name}:owner`)
-    assert.deepEqual(capital.control.polityIds, [state.id], `${state.id}:${capital.name}:station`)
-    assert.equal(capital.control.status, 'held', `${state.id}:${capital.name}:station-status`)
+    if (state.id === 'S16') {
+      assert.deepEqual(capital.control.polityIds, ['S06', 'S16'], 'City Hall shared station')
+      assert.equal(capital.control.status, 'contested')
+      assert.equal(capital.control.primary, 'S06')
+    } else {
+      assert.deepEqual(capital.control.polityIds, [state.id], `${state.id}:${capital.name}:station`)
+      assert.equal(capital.control.status, 'held', `${state.id}:${capital.name}:station-status`)
+      assert.equal(capital.control.primary, state.id)
+    }
+  }
+})
+
+test('the City Hall control ledger separates Government guard priority from the S16 capital and roll', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const ledger = JSON.parse(await readFile(new URL('../../lore/places/station-control-overrides.json', import.meta.url), 'utf8'))
+  const cityHall = data.stations.find((station) => station.id === '시청')
+  const delta = ledger.overrides.find((entry) => entry.stationId === '시청')
+  assert.deepEqual(cityHall.control.polityIds, delta.polityIds)
+  assert.equal(cityHall.control.primary, delta.primary)
+  assert.equal(cityHall.control.source, 'control-delta')
+  assert.equal(cityHall.control.status, 'contested')
+  assert.equal(data.states.find((state) => state.id === 'S16').capitalStationId, '시청')
+  assert.equal(data.regions.find((region) => region.id === cityHall.control.surfaceRegionId).polities[0], 'S06')
+  for (const stationId of ['광화문', '종로3가', '을지로입구']) {
+    const station = data.stations.find((entry) => entry.id === stationId)
+    assert.deepEqual(station.control.polityIds, ['S06'])
+    assert.equal(station.control.primary, 'S06')
   }
 })
 

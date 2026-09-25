@@ -48,6 +48,25 @@
   color: #04111a;
 }
 
+.territory-selection-summary {
+  position: absolute;
+  inset-inline-start: 0.75rem;
+  inset-block-end: 0.75rem;
+  z-index: 8;
+  display: grid;
+  gap: 0.18rem;
+  max-inline-size: min(26rem, 55%);
+  border: 1px solid rgb(158 233 255 / 0.6);
+  border-inline-start: 3px solid #9ee9ff;
+  background: rgb(4 17 23 / 0.94);
+  color: #e0faff;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.72rem;
+  pointer-events: none;
+}
+
+.territory-selection-summary strong { font-size: 0.9rem; }
+
 .territory-underground-levels {
   position: absolute;
   inset-block-start: 3.9rem;
