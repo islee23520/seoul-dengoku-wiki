@@ -1,6 +1,7 @@
-// Subset of TOOL/tools/wiki/world-atlas-schema.mjs used to project lore/World-Narrative-Atlas.md.
-// The wiki submodule has no TOOL sibling; these constants stay byte-compatible with that module.
+// Wiki-owned contract for lore/World-Narrative-Atlas.md and its projections.
 export const ATLAS_SCHEMA = 'world-narrative-atlas.v1';
+export const UNAFFILIATED_FIELDS = Object.freeze(['name', 'character_id']);
+export const FROZEN_HUMAN_COUNT = 422;
 
 export const STATES = Object.freeze([
   ['S01', '수문국'],
