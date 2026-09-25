@@ -93,7 +93,10 @@ test('person pages project the current state name from the S-ID', async () => {
 
 test('thirteen vassals point at valid suzerains outside the sixteen', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const canon = JSON.parse(await readFile(new URL('../../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  const canonVassals = canon.content.find((block) => block.anchor === 'table-2').rows.map((row) => row[0].ko.replace(/\([^)]*\)/gu, '').trim())
   assert.equal(data.vassals.length, 13)
+  assert.deepEqual(data.vassals.map((vassal) => vassal.name).sort(), canonVassals.sort())
   const stateIds = new Set(data.states.map((state) => state.id))
   const expectedVassalSuzerains = {
     '경기도': 'S06', '제일수문': 'S01', '제이수문': 'S01', '제1분공방': 'S02', '제2분공방': 'S02',
@@ -107,6 +110,19 @@ test('thirteen vassals point at valid suzerains outside the sixteen', async () =
     assert.ok(vassal.city.length > 0, `city: ${vassal.name}`)
     assert.match(vassal.founded, /^2\d{3}\.\s*\d+\./u, `founded: ${vassal.name}`)
     assert.ok(vassal.duty.length > 0, `duty: ${vassal.name}`)
+    assert.equal(vassal.coordinateStatus, 'TODO', `outside Seoul coordinate: ${vassal.name}`)
+    assert.ok(vassal.anchor.length > 0, `line anchor: ${vassal.name}`)
+    assert.ok(data.lines[vassal.lineId], `official line: ${vassal.name}`)
+  }
+})
+
+test('government relations come from the canon table and use only defined terms or null', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const canon = JSON.parse(await readFile(new URL('../../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  const relations = new Map(canon.content.find((block) => block.anchor === 'table-gov-relations').rows.map((row) => [row[0].ko, row[1].ko]))
+  for (const state of data.states) {
+    assert.ok(state.relation === null || ['복속', '보좌', '독립'].includes(state.relation), state.id)
+    assert.equal(state.relation, relations.get(state.name) ?? null, state.id)
   }
 })
 
@@ -133,11 +149,17 @@ test('territory map offers surface and subway layers with vassal ring and tier l
   assert.match(map, /지하/)
   assert.match(map, /territory-layer-toggle/)
   assert.match(map, /territory-layer-overlay/)
+  assert.match(map, /undergroundLevels/)
+  assert.match(map, /역 · 대합실/)
+  assert.match(map, /승강장/)
+  assert.match(map, /터널/)
+  assert.match(map, /territory-underground-levels/)
   assert.match(map, /aria-pressed=\{layer ===/)
   assert.match(map, /territory-vassal-markers/)
   assert.match(map, /territory-vassal-marker/)
   assert.match(map, /territory-vassal-inset/)
-  assert.match(map, /territory-vassal-connector/)
+  assert.match(map, /territory-vassal-label/)
+  assert.doesNotMatch(map, /territory-vassal-connector/)
   assert.match(map, /territory-state-swatch/)
   assert.match(map, /속국/)
   assert.match(map, /territory-tier-legend/)
@@ -171,7 +193,7 @@ test('territory map is a real Three.js scene with state labels and flags', async
   assert.match(css, /\.territory-station-markers \{[^}]*z-index: 3/u)
   assert.match(css, /\.territory-station-hit-targets \{[^}]*z-index: 4/u)
   assert.match(map, /territory-capital-marker/)
-  assert.match(map, /territory-marker-connectors/)
+  assert.doesNotMatch(map, /territory-marker-connectors/)
   assert.match(map, /anchorLeft/)
   assert.match(map, /resolveMarkerCollisions/)
   assert.match(map, /capitalStationId/)
