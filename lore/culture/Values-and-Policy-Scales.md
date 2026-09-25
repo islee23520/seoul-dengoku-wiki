@@ -89,7 +89,7 @@
 정책: 전쟁 _ | 이주민 _ | 급수 _ | 노동 _ | 기록 _ | 기술 _ | 교역 _ | 후계 _ | 결합 _
 ```
 
-운영가문 HC·HP와 외부전구 XT도 같은 칸을 쓴다. 가문 산문의 기록은 [세계 서사 총람](../World-Narrative-Atlas.md)이다. 층별 세부 설명은 [가문](../factions/Chaebol-Houses-and-Century-Factions.md)에 있다.
+운영가문 HC·HP와 서울 바깥 회랑 XT도 같은 칸을 쓴다. 가문 산문의 기록은 [세계 서사 총람](../World-Narrative-Atlas.md)이다. 층별 세부 설명은 [가문](../factions/Chaebol-Houses-and-Century-Factions.md)에 있다.
 
 ## 개막 핵심 인물 17명
 
