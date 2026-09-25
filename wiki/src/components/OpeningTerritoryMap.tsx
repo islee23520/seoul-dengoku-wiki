@@ -20,6 +20,8 @@ type Projection = { crs: 'EPSG:5179'; minEast: number; maxEast: number; minNorth
 type TerritoryData = { width: number; height: number; projection: Projection; epoch: { label: string }; states: State[]; vassals: Vassal[]; lines: Record<string, LineDefinition>; stations: Station[]; edges: SubwayEdge[]; majorStationIds: string[]; regions: Region[]; attribution: string }
 type TerrainLayer = { name: string; file: string; zoom: number; bboxEPSG5179: number[]; width: number; height: number; minElevation: number; maxElevation: number }
 type RegionalData = { meta: { layers: TerrainLayer[]; attribution: string }; grids: Uint16Array[]; boundaries: Array<{ city: string; centroid: [number, number]; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] } }>; rail: { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> } }
+type PlatformDetail = { railM: number | null; platformM: number | null; floors: string | null; platformType: string | null; exits: number | null; transfers: string[] | null; sources: Record<string, 'depth' | 'operations'> }
+type UndergroundDetail = { schema: string; verticalScale: string; sources: Record<string, { url: string; license: string; asOf: string; sha256: string }>; stations: Record<string, Record<string, PlatformDetail>>; paths: Array<{ lineId: string; edge: number; osmWay: number | null; kind: 'observed' | 'schematic'; points: [number, number, number | null][] }> }
 type TerritoryLayer = 'surface' | 'subway'
 type MarkerPosition = { left: number; top: number; anchorLeft: number; anchorTop: number; visible: boolean }
 type RegionMesh = THREE.Mesh<THREE.ExtrudeGeometry, THREE.MeshStandardMaterial> & { userData: { regionId: string; baseColor: string } }
@@ -30,6 +32,7 @@ type MapRuntime = {
   orbit: (radians: number) => void
   zoom: (factor: number) => void
   framePeninsula: () => void
+  focusStation: (station: DisplayStation) => void
   meshes: RegionMesh[]
   lineMaterials: Map<string, THREE.LineBasicMaterial>
   vassalLineMaterials: Array<{ lineId: string; material: THREE.LineBasicMaterial }>
@@ -41,6 +44,7 @@ type MapRuntime = {
   capitalMaterial: THREE.PointsMaterial
   vassalGroup: THREE.Group
   undergroundGroup: THREE.Group
+  undergroundMaterials: Map<string, THREE.Material[]>
   base: THREE.Mesh
   applyLayer: (layer: TerritoryLayer) => void
 }
@@ -52,6 +56,7 @@ const unknownStationColor = '#5d6f78'
 const vacantColor = '#6f7a7f'
 const surfaceStationColor = '#f8f1cf'
 const undergroundLevels = { station: -1.8, platform: -4.4, tunnel: -7 } as const
+const depthY = (metres: number | null) => metres === null ? undergroundLevels.tunnel : -metres / 5
 
 const compassLabel = (x: number, y: number, width: number, height: number) => {
   const degrees = ((Math.atan2(x - width / 2, height / 2 - y) * 180 / Math.PI) + 360) % 360
@@ -141,6 +146,8 @@ export default function OpeningTerritoryMap() {
   const requestedRegion = searchParams.get('region')
   const [data, setData] = useState<TerritoryData | null>(null)
   const [regional, setRegional] = useState<RegionalData | null>(null)
+  const [underground, setUnderground] = useState<UndergroundDetail | null>(null)
+  const [selectedStation, setSelectedStation] = useState<DisplayStation | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [selectedVassal, setSelectedVassal] = useState<string | null>(null)
   const [stateFilter, setStateFilter] = useState('all')
@@ -189,6 +196,16 @@ export default function OpeningTerritoryMap() {
     }).catch((error) => { if (error.name !== 'AbortError') setFailed(true) })
     return () => controller.abort()
   }, [data])
+
+  useEffect(() => {
+    if (layer !== 'subway' || underground) return
+    const controller = new AbortController()
+    void fetch(`${import.meta.env.BASE_URL}underground-detail.json`, { signal: controller.signal })
+      .then((response) => { if (!response.ok) throw new Error(`E_UNDERGROUND_ASSET:${response.status}`); return response.json() as Promise<UndergroundDetail> })
+      .then(setUnderground)
+      .catch((error) => { if (error.name !== 'AbortError') setFailed(true) })
+    return () => controller.abort()
+  }, [layer, underground])
 
   useEffect(() => {
     if (!data) return
@@ -240,8 +257,8 @@ export default function OpeningTerritoryMap() {
     controls.enableDamping = false
     controls.screenSpacePanning = false
     controls.minPolarAngle = Math.PI * 0.16
-    controls.maxPolarAngle = Math.PI * 0.47
-    controls.minDistance = 42
+    controls.maxPolarAngle = Math.PI * 0.49
+    controls.minDistance = 3
     controls.maxDistance = 6500
     controls.mouseButtons.LEFT = THREE.MOUSE.PAN
     controls.mouseButtons.RIGHT = THREE.MOUSE.ROTATE
@@ -354,38 +371,83 @@ export default function OpeningTerritoryMap() {
 
     const undergroundGroup = new THREE.Group()
     scene.add(undergroundGroup)
-    for (const [level, depth] of Object.entries(undergroundLevels)) {
-      const geometry = new THREE.PlaneGeometry(104, mapWorldHeight + 4)
-      geometry.rotateX(-Math.PI / 2)
-      const material = new THREE.MeshBasicMaterial({ color: level === 'station' ? 0x1d4955 : level === 'platform' ? 0x163844 : 0x102b39, transparent: true, opacity: 0.12, depthWrite: false, side: THREE.DoubleSide })
-      const plane = new THREE.Mesh(geometry, material)
-      plane.position.y = depth - 0.2
-      undergroundGroup.add(plane)
-      disposables.push(geometry, material)
+    const groundMaterial = new THREE.MeshBasicMaterial({ color: '#387084', transparent: true, opacity: 0.09, depthWrite: false, side: THREE.DoubleSide })
+    const groundGeometry = new THREE.PlaneGeometry(104, mapWorldHeight + 4)
+    groundGeometry.rotateX(-Math.PI / 2)
+    const ground = new THREE.Mesh(groundGeometry, groundMaterial)
+    ground.position.y = -0.15
+    undergroundGroup.add(ground)
+    disposables.push(groundGeometry, groundMaterial)
+    const undergroundMaterials = new Map<string, THREE.Material[]>()
+    const addUndergroundMaterial = (lineId: string, material: THREE.Material) => {
+      undergroundMaterials.set(lineId, [...(undergroundMaterials.get(lineId) ?? []), material])
+      disposables.push(material)
     }
-    const stationStacks = new THREE.Group()
-    undergroundGroup.add(stationStacks)
-    const stackGeometry = new THREE.CylinderGeometry(0.12, 0.12, undergroundLevels.station - undergroundLevels.tunnel, 6)
-    const stackMaterial = new THREE.MeshBasicMaterial({ color: 0x79adb9, transparent: true, opacity: 0.45 })
-    const stacks = new THREE.InstancedMesh(stackGeometry, stackMaterial, displayStations.length)
-    const stackMatrix = new THREE.Matrix4()
-    displayStations.forEach((station, index) => {
-      stackMatrix.makeTranslation((station.x - data.width / 2) * scale, (undergroundLevels.station + undergroundLevels.tunnel) / 2, (station.y - data.height / 2) * scale)
-      stacks.setMatrixAt(index, stackMatrix)
-    })
-    stationStacks.add(stacks)
-    disposables.push(stackGeometry, stackMaterial)
-    for (const [level, depth] of [['station', undergroundLevels.station], ['platform', undergroundLevels.platform]] as const) {
-      const geometry = new THREE.CylinderGeometry(level === 'station' ? 0.47 : 0.34, level === 'station' ? 0.47 : 0.34, 0.16, 8)
-      const material = new THREE.MeshBasicMaterial({ color: level === 'station' ? 0xb7eaf4 : 0xffffff, vertexColors: false })
-      const discs = new THREE.InstancedMesh(geometry, material, displayStations.length)
-      displayStations.forEach((station, index) => {
-        stackMatrix.makeTranslation((station.x - data.width / 2) * scale, depth, (station.y - data.height / 2) * scale)
-        discs.setMatrixAt(index, stackMatrix)
-        if (level === 'platform') discs.setColorAt(index, new THREE.Color(data.lines[station.lineIds[0]]?.color ?? '#8ca7ad'))
-      })
-      stationStacks.add(discs)
-      disposables.push(geometry, material)
+    if (underground) {
+      const platformGeometry = new THREE.BoxGeometry(1, 0.08, 1)
+      disposables.push(platformGeometry)
+      for (const station of displayStations) {
+        const x = (station.x - data.width / 2) * scale
+        const z = (station.y - data.height / 2) * scale
+        const levels = station.lineIds.map((lineId) => ({ lineId, entry: station.memberIds.map((id) => underground.stations[id]?.[lineId]).find(Boolean) })).filter((item): item is { lineId: string; entry: PlatformDetail } => Boolean(item.entry))
+        if (!levels.length) continue
+        const deepest = Math.min(...levels.map(({ entry }) => depthY(entry.railM)))
+        const height = Math.max(0.3, surfaceY(x, z) + 0.4 - deepest)
+        levels.forEach(({ lineId, entry }, index) => {
+          const known = entry.platformM !== null
+          const y = depthY(entry.platformM) + 0.12
+          const shape = entry.platformType === '상대식' ? [-0.13, 0.13] : entry.platformType === '복합식' ? [-0.13, 0, 0.13] : [0]
+          const material = new THREE.MeshBasicMaterial({ color: known ? data.lines[lineId]?.color ?? '#9ee9ff' : '#78868a', transparent: true, opacity: known ? 0.88 : 0.24 })
+          addUndergroundMaterial(lineId, material)
+          for (const side of shape) {
+            const platform = new THREE.Mesh(platformGeometry, material)
+            platform.position.set(x + side + (index % 2) * 0.07, y, z + index * 0.12)
+            platform.scale.set(0.14, 1, Math.max(0.25, Math.min(0.55, Number(entry.floors?.match(/B(\d+)/)?.[1] ?? 2) * 0.1)))
+            undergroundGroup.add(platform)
+          }
+        })
+      }
+      const byLine = new Map<string, number[]>()
+      const fallbackByLine = new Map<string, number[]>()
+      for (const path of underground.paths) {
+        const target = path.kind === 'observed' && path.points.every((point) => point[2] !== null) ? byLine : fallbackByLine
+        const positions = target.get(path.lineId) ?? []
+        for (let i = 1; i < path.points.length; i += 1) {
+          for (const [px, py, metres] of [path.points[i - 1], path.points[i]]) {
+            const x = (px - data.width / 2) * scale
+            const z = (py - data.height / 2) * scale
+            positions.push(x, depthY(metres), z)
+          }
+        }
+        target.set(path.lineId, positions)
+      }
+      for (const [lineId, positions] of byLine) {
+        const ribbons: number[] = []
+        for (let index = 0; index < positions.length; index += 6) {
+          const [x1, y1, z1, x2, y2, z2] = positions.slice(index, index + 6)
+          const length = Math.hypot(x2 - x1, z2 - z1) || 1
+          const sideX = -(z2 - z1) / length * 0.027
+          const sideZ = (x2 - x1) / length * 0.027
+          ribbons.push(x1 - sideX, y1, z1 - sideZ, x2 - sideX, y2, z2 - sideZ, x1 + sideX, y1, z1 + sideZ,
+            x2 - sideX, y2, z2 - sideZ, x2 + sideX, y2, z2 + sideZ, x1 + sideX, y1, z1 + sideZ)
+        }
+        const geometry = new THREE.BufferGeometry()
+        geometry.setAttribute('position', new THREE.Float32BufferAttribute(ribbons, 3))
+        const material = new THREE.MeshBasicMaterial({ color: data.lines[lineId]?.color ?? '#9ee9ff', transparent: true, opacity: 0.95, side: THREE.DoubleSide, depthWrite: false })
+        undergroundGroup.add(new THREE.Mesh(geometry, material))
+        addUndergroundMaterial(lineId, material)
+        disposables.push(geometry)
+      }
+      for (const [lineId, positions] of fallbackByLine) {
+        const geometry = new THREE.BufferGeometry()
+        geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
+        const material = new THREE.LineDashedMaterial({ color: '#687b80', transparent: true, opacity: 0.2, dashSize: 0.35, gapSize: 0.45 })
+        const line = new THREE.LineSegments(geometry, material)
+        line.computeLineDistances()
+        undergroundGroup.add(line)
+        addUndergroundMaterial(lineId, material)
+        disposables.push(geometry)
+      }
     }
 
     const subwayPositionsByLine = new Map<string, number[]>()
@@ -431,11 +493,6 @@ export default function OpeningTerritoryMap() {
       regionalRailGroup.add(line)
       vassalLineMaterials.push({ lineId, material })
       disposables.push(geometry, material)
-      const tunnelGeometry = new THREE.BufferGeometry()
-      tunnelGeometry.setAttribute('position', new THREE.Float32BufferAttribute(positions.map((value, index) => index % 3 === 1 ? undergroundLevels.tunnel : value), 3))
-      const tunnel = new THREE.LineSegments(tunnelGeometry, material)
-      undergroundGroup.add(tunnel)
-      disposables.push(tunnelGeometry)
     }
     for (const [lineId, positions] of subwayPositionsByLine) {
       const subwayGeometry = new THREE.BufferGeometry()
@@ -448,14 +505,6 @@ export default function OpeningTerritoryMap() {
       lineMaterials.set(lineId, subwayMaterial)
       byLineSegments.push(subwayLines)
       disposables.push(subwayGeometry, subwayMaterial)
-      const tunnelGeometry = new THREE.BufferGeometry()
-      const tunnelPositions = positions.map((value, index) => index % 3 === 1 ? undergroundLevels.tunnel : value)
-      tunnelGeometry.setAttribute('position', new THREE.Float32BufferAttribute(tunnelPositions, 3))
-      const tunnel = new THREE.LineSegments(tunnelGeometry, subwayMaterial)
-      tunnel.userData.lineId = lineId
-      tunnel.renderOrder = 4
-      undergroundGroup.add(tunnel)
-      disposables.push(tunnelGeometry)
     }
 
     const holderMaterials = new Map<string | null, THREE.LineBasicMaterial>()
@@ -553,7 +602,7 @@ export default function OpeningTerritoryMap() {
       regionalRailGroup.visible = activeLayer === 'surface'
       regionalStationCloud.visible = activeLayer === 'surface'
       for (const mesh of meshes) mesh.visible = activeLayer === 'surface'
-      stationPoints.position.y = activeLayer === 'subway' ? undergroundLevels.station - 1.52 : 0
+      stationPoints.visible = activeLayer === 'surface'
       capitalPoints.visible = activeLayer === 'surface'
       for (const segment of byLineSegments) segment.visible = activeLayer === 'surface'
       for (const edgeLine of stateEdgeLines) edgeLine.visible = false
@@ -570,8 +619,8 @@ export default function OpeningTerritoryMap() {
     }
 
     const render = () => {
-      renderer.render(scene, camera)
       const cameraDistance = camera.position.distanceTo(controls.target)
+      renderer.render(scene, camera)
       const projectedStates = data.states.map((state) => {
         const x = (state.capitalX - data.width / 2) * scale
         const z = (state.capitalY - data.height / 2) * scale
@@ -588,7 +637,8 @@ export default function OpeningTerritoryMap() {
       for (const station of displayStations) {
         const x = (station.x - data.width / 2) * scale
         const z = (station.y - data.height / 2) * scale
-        const vector = new THREE.Vector3(x, layerRef.current === 'subway' ? undergroundLevels.station + 0.3 : surfaceY(x, z) + 1.82, z).project(camera)
+        const known = station.lineIds.flatMap((lineId) => station.memberIds.map((id) => underground?.stations[id]?.[lineId]?.platformM)).filter((value): value is number => typeof value === 'number')
+        const vector = new THREE.Vector3(x, layerRef.current === 'subway' ? depthY(known.length ? Math.min(...known) : null) + 0.4 : surfaceY(x, z) + 1.82, z).project(camera)
         const left = (vector.x * 0.5 + 0.5) * 100
         const top = (-vector.y * 0.5 + 0.5) * 100
         nextStations[station.id] = {
@@ -634,6 +684,16 @@ export default function OpeningTerritoryMap() {
       controls.update()
       render()
     }
+    const focusStation = (station: DisplayStation) => {
+      const x = (station.x - data.width / 2) * scale
+      const z = (station.y - data.height / 2) * scale
+      const depths = station.lineIds.flatMap((lineId) => station.memberIds.map((id) => underground?.stations[id]?.[lineId]?.platformM)).filter((value): value is number => typeof value === 'number')
+      const y = depthY(depths.length ? Math.min(...depths) : null)
+      controls.target.set(x, y, z)
+      camera.position.set(x + 2, y + 2.8, z + 5.5)
+      controls.update()
+      render()
+    }
     const pan = (x: number, z: number) => {
       const delta = new THREE.Vector3(x, 0, z)
       camera.position.add(delta)
@@ -656,7 +716,7 @@ export default function OpeningTerritoryMap() {
       controls.update()
       render()
     }
-    runtimeRef.current = { reset, pan, orbit, zoom, framePeninsula, meshes, lineMaterials, vassalLineMaterials, render, byLineSegments, stateEdgeLines, stationColorAttribute, stationMaterial, capitalMaterial, vassalGroup, undergroundGroup, base, applyLayer }
+    runtimeRef.current = { reset, pan, orbit, zoom, framePeninsula, focusStation, meshes, lineMaterials, vassalLineMaterials, undergroundMaterials, render, byLineSegments, stateEdgeLines, stationColorAttribute, stationMaterial, capitalMaterial, vassalGroup, undergroundGroup, base, applyLayer }
     applyLayer(layer)
 
     let pointerStart: [number, number] | null = null
@@ -717,7 +777,7 @@ export default function OpeningTerritoryMap() {
       renderer.dispose()
       runtimeRef.current = null
     }
-  }, [data, regional, states, displayStations])
+  }, [data, regional, states, displayStations, underground])
 
   useEffect(() => {
     if (!data || !runtimeRef.current) return
@@ -738,12 +798,18 @@ export default function OpeningTerritoryMap() {
       material.opacity = selected ? (selectedLine === 'all' ? 0.72 : 1) : 0.08
     }
     for (const { lineId, material } of runtimeRef.current.vassalLineMaterials) material.opacity = selectedLine === 'all' || lineId === selectedLine ? 0.95 : 0.08
+    const focusedLines = selectedStation && layer === 'subway' ? new Set(selectedStation.lineIds) : null
+    for (const [lineId, materials] of runtimeRef.current.undergroundMaterials) for (const material of materials) {
+      if (!(material instanceof THREE.LineBasicMaterial || material instanceof THREE.LineDashedMaterial || material instanceof THREE.MeshBasicMaterial)) continue
+      const highlighted = selectedLine === 'all' ? !focusedLines || focusedLines.has(lineId) : lineId === selectedLine
+      material.opacity = highlighted ? (material instanceof THREE.LineDashedMaterial ? 0.13 : 0.82) : focusedLines ? 0.015 : 0.04
+    }
     runtimeRef.current.applyLayer(layer)
     runtimeRef.current.render()
-  }, [selectedLine, layer])
+  }, [selectedLine, selectedStation, layer])
 
   if (failed) return <p className="wiki-domain-label">3D 서울 영토 지도를 불러오지 못했습니다. 페이지를 새로고침한 뒤에도 계속되면 다른 브라우저에서 다시 시도해 주세요.</p>
-  if (!data || !regional) return <div className="wiki-loading">서울 427개 동과 한반도 지형을 불러오고 있습니다.</div>
+  if (!data || !regional || (layer === 'subway' && !underground)) return <div className="wiki-loading">서울 427개 동과 한반도 지형, 지하 관측 자료를 불러오고 있습니다.</div>
 
   return (
     <section className="territory-map-section" aria-labelledby="opening-territory-title">
@@ -767,7 +833,7 @@ export default function OpeningTerritoryMap() {
             <button type="button" aria-pressed={layer === 'surface'} onClick={() => setLayer('surface')}>지상</button>
             <button type="button" aria-pressed={layer === 'subway'} onClick={() => { setLayer('subway'); runtimeRef.current?.reset() }}>지하</button>
           </div>
-          {layer === 'subway' && <div className="territory-underground-levels" aria-label="지하 세 층"><span>역 · 대합실</span><span>승강장</span><span>터널 · 공식 노선 색</span></div>}
+          {layer === 'subway' && <div className="territory-underground-levels" aria-label="지하 심도 범례"><span>실측 심도: 지표 아래 5 m = 지도 1 단위</span><span>승강장 · 노선별 실측 깊이 / 선로 · 실측 곡선</span><span>회색 점선: 심도 또는 선형 미상 · 개략 연결</span></div>}
           <div className="territory-camera-controls territory-camera-overlay" role="group" aria-label="3D 지도 카메라 조작">
             <button type="button" onClick={() => runtimeRef.current?.pan(0, -6)}>팬 북쪽</button>
             <button type="button" onClick={() => runtimeRef.current?.pan(-6, 0)}>팬 서쪽</button>
@@ -813,7 +879,7 @@ export default function OpeningTerritoryMap() {
               if (!position || position.visible === false || (selectedLine !== 'all' && !station.lineIds.includes(selectedLine))) return null
               const showTooltip = () => setHoveredStation({ station, left: position.left / 100 * (shellRef.current?.clientWidth ?? 1), top: position.top / 100 * (shellRef.current?.clientHeight ?? 1) })
               const lineColor = data.lines[station.lineIds[0]]?.color ?? '#f8f1cf'
-              return <button key={station.id} type="button" className="territory-station-hit" data-station-id={station.id} data-source-station-ids={station.memberIds.join(' ')} aria-label={`${station.names.join(' · ')} 역 정보`} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: lineColor }} onPointerEnter={showTooltip} onPointerLeave={() => setHoveredStation(null)} onFocus={showTooltip} onBlur={() => setHoveredStation(null)} />
+              return <button key={station.id} type="button" className="territory-station-hit" data-station-id={station.id} data-source-station-ids={station.memberIds.join(' ')} aria-label={`${station.names.join(' · ')} 역 정보`} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: lineColor }} onClick={() => { setSelectedStation(station); if (layer === 'subway') runtimeRef.current?.focusStation(station) }} onPointerEnter={showTooltip} onPointerLeave={() => setHoveredStation(null)} onFocus={showTooltip} onBlur={() => setHoveredStation(null)} />
             })}
           </div>
           {hoveredStation && <div className="territory-station-tooltip" role="status" style={{ left: hoveredStation.left, top: hoveredStation.top }}>
@@ -847,6 +913,7 @@ export default function OpeningTerritoryMap() {
           </ul>
         </div>
         <aside className="territory-detail" aria-live="polite">
+          {layer === 'subway' && selectedStation && underground && <section aria-labelledby="selected-station-title"><p className="wiki-domain-label">역 상세 · 관측 자료</p><h3 id="selected-station-title">{selectedStation.names.join(' · ')}</h3>{selectedStation.lineIds.map((lineId) => { const entry = underground.stations[selectedStation.id]?.[lineId] ?? selectedStation.memberIds.map((id) => underground.stations[id]?.[lineId]).find(Boolean); return <div key={lineId}><h4 style={{ color: data.lines[lineId]?.color }}>{data.lines[lineId]?.name ?? lineId}</h4><table className="person-data-table"><tbody>{([['승강장 심도', entry?.platformM == null ? '심도 미상' : `${entry.platformM} m`, 'depth'], ['선로 심도', entry?.railM == null ? '심도 미상' : `${entry.railM} m`, 'depth'], ['역 층수', entry?.floors ?? '미상', 'floors'], ['승강장 형식', entry?.platformType ?? '미상', 'platformType'], ['출입구', entry?.exits == null ? '미상' : `${entry.exits}개`, 'exits'], ['환승노선', entry?.transfers?.join(' · ') || '미상', 'transfers']] as const).map(([label, value, field]) => <tr key={field}><th>{label}</th><td>{value} <small>{entry?.sources[field] ? `· ${entry.sources[field] === 'depth' ? 'OA-13305' : '15044440'}` : '· 관측 없음'}</small></td></tr>)}</tbody></table></div> })}<p>서울교통공사 공공누리 1유형 · 운영 현황 이용허락범위 제한 없음 · OSM ODbL. 심도는 현행 지표 기준이며 미상 구간은 개략 표시입니다.</p></section>}
           {selectedVassal && (() => { const vassal = vassals.find((entry) => entry.name === selectedVassal)!; return <section aria-labelledby="selected-vassal-title"><p className="wiki-domain-label">선택된 속국 · {vassal.city}</p><h3 id="selected-vassal-title">{vassal.name}</h3><table className="person-data-table"><tbody><tr><th>본국</th><td>{states.get(vassal.suzerain)?.name}</td></tr><tr><th>연결 노선</th><td>{data.lines[vassal.lineId]?.name}</td></tr><tr><th>설립</th><td>{vassal.founded}</td></tr><tr><th>역할</th><td>{vassal.duty}</td></tr></tbody></table><p>{vassal.coordinateSource}</p></section> })()}
           {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : selected.status === 'vacant' ? '무주지' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ') || '없음'}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126 시점 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p></section>}
           {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr>{selectedState.relation && <tr><th>정부와의 관계</th><td>{selectedState.relation}</td></tr>}</tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
