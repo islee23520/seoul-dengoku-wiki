@@ -4,7 +4,8 @@
 // - 후보 명부는 lore/name-pools/values-cast.json의 people[] 배열 순서를 그대로 유지한다 (이름 정렬 금지).
 // - 기존 신원 K001–K422은 lore/World-Narrative-Atlas.md의 "humans" 기계 등록부를 정본으로 읽는다.
 //   (사회 서사 배치 원장 투영은 2026-09-24에 폐기되어 대조하지 않는다.)
-// - inputSha256은 values-cast.json 바이트의 SHA-256, baseCommit은 생성 시점 HEAD 40자리 커밋이다.
+// - inputSha256은 최종 values-cast.json 파일 바이트의 SHA-256이다.
+//   baseCommit은 생성 시점 HEAD 40자리 커밋이다.
 //   baseCommit은 증명 값이므로 재생성 검사는 커밋된 표의 baseCommit을 전달해 전체 바이트가 같음을 확인한다.
 // - 후보는 ordinal 1..N만 받는다. 실제 K423+ 번호 발급은 이 표에서 하지 않는다.
 //
@@ -34,7 +35,7 @@ const UNAFFILIATED_PATH = path.join(CHARS_DIR, "Cast-Unaffiliated.md");
 const TABLE_PATH = path.join(HERE, "person-id-candidates.json");
 
 export const SCHEMA = "wiki-person-id-candidates.v1";
-export const FROZEN = { existingK: 422, candidates: 582, total: 1004 };
+export const FROZEN = { existingK: 422, candidates: 585, total: 1007 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
@@ -253,10 +254,10 @@ if (!CLI_WRITE) {
     assert.deepEqual(validateTable(committed, ctx), []);
   });
 
-  test("(b) 개수 불변식 422 + 582 = 1004", () => {
+  test("(b) 개수 불변식 422 + 585 = 1007", () => {
     assert.equal(committed.existingKCount, 422);
-    assert.equal(committed.candidateCount, 582);
-    assert.equal(committed.totalPeople, 1004);
+    assert.equal(committed.candidateCount, 585);
+    assert.equal(committed.totalPeople, 1007);
     assert.equal(committed.existingKCount + committed.candidateCount, committed.totalPeople);
     assert.equal(committed.candidateCount, committed.totalPeople - committed.existingKCount);
   });
@@ -273,7 +274,7 @@ if (!CLI_WRITE) {
     assert.deepEqual(committed.candidates.map((c) => c.ordinal), committed.candidates.map((_, i) => i + 1));
   });
 
-  test("(e) inputSha256이 values-cast.json 실제 파일 해시와 같다", () => {
+test("(e) inputSha256이 values-cast 최종 파일 해시와 같다", () => {
     assert.equal(committed.inputSha256, sha256Hex(ctx.valuesBytes));
   });
 

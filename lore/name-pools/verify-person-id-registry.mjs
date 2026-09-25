@@ -1,6 +1,6 @@
 // person-id-registry.json 발급 계약 테스트 (node --test)
 //
-// 대상: issue-person-id-ids.mjs가 아니라 issue-person-ids.mjs — K423–K1004 발급 레지스트리.
+// 대상: issue-person-id-ids.mjs가 아니라 issue-person-ids.mjs — K423–K1007 발급 레지스트리.
 // 계약의 모든 규칙은 issue-person-ids.mjs의 validateRegistry가 계산하고,
 // 이 파일은 (a) 커밋된 레지스트리가 승인각 재생성과 바이트 단위로 같은지,
 // (b) 개수·유일성·발급 순서·aliases 불변식을, (c) 변이가 규칙에 걸리는지(RED-provable) 검사한다.
@@ -49,23 +49,23 @@ test("커밋된 레지스트리가 모든 불변식을 통과한다", () => {
   assert.deepEqual(validateRegistry(committed, ctx), []);
 });
 
-test("(b) 개수 불변식 422 + 582 = 1004", () => {
+test("(b) 개수 불변식 422 + 585 = 1007", () => {
   assert.equal(committed.existingKCount, 422);
-  assert.equal(committed.issuedCount, 582);
-  assert.equal(committed.totalPeople, 1004);
-  assert.equal(committed.persons.length, 1004);
+  assert.equal(committed.issuedCount, 585);
+  assert.equal(committed.totalPeople, 1007);
+  assert.equal(committed.persons.length, 1007);
   assert.equal(committed.existingKCount + committed.issuedCount, committed.totalPeople);
-  assert.equal(committed.persons.length - 422, 582);
+  assert.equal(committed.persons.length - 422, 585);
 });
 
-test("(c) id가 K001..K1004 연속·오름차순이고 전부 유일하다", () => {
+test("(c) id가 K001..K1007 연속·오름차순이고 전부 유일하다", () => {
   const ids = committed.persons.map((p) => p.id);
-  assert.equal(new Set(ids).size, 1004);
+  assert.equal(new Set(ids).size, 1007);
   ids.forEach((id, i) => assert.equal(id, kId(i + 1)));
   assert.equal(ids[0], "K001");
   assert.equal(ids[421], "K422");
   assert.equal(ids[422], "K423");
-  assert.equal(ids[1003], "K1004");
+  assert.equal(ids[1006], "K1007");
 });
 
 test("(d) K001–K422은 후보 파일 existingK 스냅숏 그대로다 (재배치 0)", () => {
@@ -77,9 +77,9 @@ test("(d) K001–K422은 후보 파일 existingK 스냅숏 그대로다 (재배�
   });
 });
 
-test("(e) K423+ 발급 순서가 후보 ordinal 순서와 같다 (1→K423 … 582→K1004)", () => {
+test("(e) K423+ 발급 순서가 후보 ordinal 순서와 같다 (1→K423 … 585→K1007)", () => {
   const candidates = ctx.candidatesJson.candidates;
-  assert.equal(candidates.length, 582);
+  assert.equal(candidates.length, 585);
   candidates.forEach((c, i) => {
     const p = committed.persons[422 + i];
     assert.equal(p.id, kId(423 + i), `ordinal ${c.ordinal}`);
@@ -106,11 +106,11 @@ test("(f) 안정 비-K ID 보유 후보의 aliases에 기존 ID가 정확히 들
   assert.deepEqual(iyen.aliases, ["iyen"]);
 });
 
-test("(g) approvalRef가 owner 승인각을 그대로 새긴다", () => {
+test("(g) approvalRef가 최종 파일 owner 승인각을 그대로 새긴다", () => {
   assert.deepEqual(committed.approvalRef, APPROVED);
   assert.equal(committed.approvalRef.approvedBy, "owner");
   assert.equal(committed.approvalRef.approvedAt, "2026-09-25");
-  assert.equal(committed.approvalRef.ownerRef, "Q1 decisions.json");
+  assert.equal(committed.approvalRef.ownerRef, "2026-09-25 초안대로 승인");
   assert.equal(committed.approvalRef.inputSha256, sha256Hex(ctx.valuesBytes));
   assert.equal(committed.approvalRef.candidatesSha256, sha256Hex(ctx.candidatesBytes));
   assert.equal(committed.schema, SCHEMA);
@@ -123,6 +123,17 @@ test("fail closed — values-cast.json 해시가 승인각과 다르면 거부�
   const problems = assertApprovedHashes({ valuesBytes: tampered, candidatesBytes: ctx.candidatesBytes });
   assert.equal(problems.length, 1);
   assert.match(problems[0], /values-cast\.json 해시\([0-9a-f]{64}\)가 승인각\([0-9a-f]{64}\)과 다르다/);
+});
+
+test("fail closed — 승인된 title 밖의 수정은 거부한다", () => {
+  const values = JSON.parse(ctx.valuesBytes.toString("utf8"));
+  values.people[0].state = "S99";
+  const tampered = Buffer.from(JSON.stringify(values, null, 2) + "\n");
+  assert.equal(assertApprovedHashes({ valuesBytes: tampered, candidatesBytes: ctx.candidatesBytes }).length, 1);
+  values.people[0].state = "S01";
+  values.people[0].title = "급수총재";
+  const revertedTitle = Buffer.from(JSON.stringify(values, null, 2) + "\n");
+  assert.equal(assertApprovedHashes({ valuesBytes: revertedTitle, candidatesBytes: ctx.candidatesBytes }).length, 1);
 });
 
 test("fail closed — person-id-candidates.json 해시가 승인각과 다르면 거부한다", () => {
@@ -164,7 +175,7 @@ test("변이 3 — 후보 한 명을 빼면 위반이 잡힌다", () => {
   mutated.persons.splice(422, 1);
   const violations = validateRegistry(mutated, ctx);
   assert.notEqual(violations.length, 0);
-  assert.ok(violations.some((x) => x.includes("1004") || x.includes("누락")));
+  assert.ok(violations.some((x) => x.includes("1007") || x.includes("누락")));
 });
 
 test("변이 4 — 조재표의 alias를 지우면 위반이 잡힌다", () => {

@@ -11,7 +11,7 @@ JSON datasets feeding character naming (surnames, 본관, 항렬), the numeric v
 | Data contract (required fields, check rules) | `hangnyeol-schema.md` — when doc and verifier code disagree, the code is canonical |
 | 본관/항렬 canon chain | `surnames-bongwan.json` (517 surnames, 413 본관; must be a superset of `surnames.json`) → `clans-hangnyeol.json` (10) → `clan-hangnyeol-tables.json` (170 clans) → `hangnyeol-systems.json` (9 systems) → per-person application in `cast-hangnyeol.json` (1001 cast; statuses `unconfirmed`/`unused`) |
 | Simple name pools | `surnames.json` (40 one-syllable surnames), `given-male.json`, `given-female.json` — used by heir generation and the random roster |
-| Numeric canon for the cast | `values-cast.json` — schema `janseon.values.cast.v2`, 1004 people (18 주요 locked, 98 S1, 200 S2, 110 S3, 578 S4), 10 value axes + 7 desire axes, −100..100 |
+| Numeric canon for the cast | `values-cast.json` — schema `janseon.values.cast.v2`, 1007 people (18 주요 locked + 3 주요 신규, 98 S1, 200 S2, 110 S3, 578 S4), 10 value axes + 7 desire axes, −100..100 |
 | Org values | `values-orgs.json` — schema `janseon.values.orgs.v1`, 37 orgs (HC/HP/XT), same 10 value axes + 9 policy domains |
 | Name-collision check | `existing-names.json` — every already-used given name |
 | Unvetted candidates | `roster-100.json` — Nemotron-Personas-Korea sample, seed 90421 |
