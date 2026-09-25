@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import test from 'node:test'
+import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 test('all canonical people expose unique detail routes and structured data', async () => {
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
@@ -56,6 +57,164 @@ test('S01 issued cards retain an explicit occupation and martial state in person
     if (detail.sourceRoute.startsWith('/world/Cast-State-01#')) assert.equal(detail.fields['생업'], occupation, heading.name)
     assert.ok(/^(?:수문손|차륜망치|호위방패|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
   }
+})
+
+test('S02 issued cards retain distinct bilingual livelihoods and their martial state', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-02.json', import.meta.url), 'utf8'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
+    : [])
+  assert.equal(headings.length, 66)
+  assert.ok(headings.some(({ name }) => name === '이일섭'))
+  for (const [index, heading] of headings.entries()) {
+    const id = idByName.get(heading.name)
+    assert.ok(id, heading.name)
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const fields = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+    const occupation = fields.find((item) => typeof item.ko === 'string' && item.ko.startsWith('생업: '))
+    assert.ok(occupation, heading.name)
+    assert.match(occupation.en, /^Livelihood: \S/u, heading.name)
+    const livelihood = occupation.ko.slice(4)
+    assert.notEqual(livelihood, '미등록', heading.name)
+    const title = fields.find((item) => typeof item.ko === 'string' && item.ko.startsWith('직함: '))?.ko.slice(4)
+    assert.notEqual(livelihood, title, heading.name)
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${id.slice(1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.name, heading.name)
+    assert.equal(detail.occupation, livelihood, heading.name)
+    assert.equal(detail.fields['생업'], livelihood, heading.name)
+    assert.ok(/^(?:수문손|차륜망치|호위방패|기록칼|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+  }
+})
+
+test('all currently issued S03 cards retain bilingual livelihoods distinct from office and martial path', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-03.json', import.meta.url), 'utf8'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
+    : [])
+  assert.ok(headings.length > 0)
+  assert.equal(new Set(headings.map(({ name }) => name)).size, headings.length)
+  for (const [index, heading] of headings.entries()) {
+    const id = idByName.get(heading.name)
+    assert.ok(id, heading.name)
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const fields = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+    const occupations = fields.filter((item) => typeof item.ko === 'string' && item.ko.startsWith('생업: '))
+    assert.equal(occupations.length, 1, heading.name)
+    const occupation = occupations[0]
+    assert.match(occupation.en, /^Livelihood: \S/u, heading.name)
+    const livelihood = occupation.ko.slice(4)
+    assert.notEqual(livelihood, '미등록', heading.name)
+    const title = fields.find((item) => typeof item.ko === 'string' && item.ko.startsWith('직함: '))?.ko.slice(4)
+    assert.notEqual(livelihood, title, heading.name)
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${id.slice(1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.name, heading.name)
+    assert.equal(detail.occupation, livelihood, heading.name)
+    assert.equal(detail.fields['생업'], livelihood, heading.name)
+    assert.ok(/^(?:기록칼|차륜망치|호위방패|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+  }
+})
+
+test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and martial paths', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-04.json', import.meta.url), 'utf8'))
+  const markdown = await readFile(new URL('../../lore/characters/Cast-State-04.md', import.meta.url), 'utf8')
+  assert.equal(markdown, renderLoreMarkdown(document, 'ko'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const idByName = new Map(registry.persons.map(({ id, name }) => [name, id]))
+  const values = JSON.parse(await readFile(new URL('../../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const detailIndexByName = new Map(values.map(({ name }, index) => [name, index + 1]))
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
+    : [])
+  assert.equal(headings.length, 64)
+  const ids = headings.map(({ name }) => idByName.get(name))
+  assert.equal(new Set(ids).size, 64)
+  assert.ok(ids.every((id) => /^K\d{3,4}$/u.test(id)))
+  const martial = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
+  for (const [index, heading] of headings.entries()) {
+    const id = ids[index]
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const fields = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+    const livelihoods = fields.filter((item) => typeof item.ko === 'string' && item.ko.startsWith('생업: '))
+    assert.equal(livelihoods.length, 1, id)
+    const occupation = livelihoods[0]
+    assert.match(occupation.en, /^Livelihood: \S/u, id)
+    const ko = occupation.ko.slice(4)
+    assert.notEqual(ko, '미등록', id)
+    const title = fields.find((item) => typeof item.ko === 'string' && item.ko.startsWith('직함: '))?.ko.slice(4)
+    const rank = fields.find((item) => typeof item.ko === 'string' && item.ko.startsWith('품계: '))?.ko.slice(4)
+    assert.notEqual(ko, title, id)
+    assert.notEqual(ko, rank, id)
+    const detailIndex = detailIndexByName.get(heading.name)
+    assert.ok(detailIndex, id)
+    const detailId = `person-${String(detailIndex).padStart(4, '0')}`
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.id, detailId, id)
+    assert.equal(detail.name, heading.name, id)
+    assert.equal(detail.occupation, ko, id)
+    assert.equal(detail.fields['생업'], ko, id)
+    assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-04#'), id)
+    const martialText = blocks.filter((block) => block.kind === 'paragraph').map((block) => martial(block.text.ko)).join('\n')
+      + '\n' + fields.map((item) => martial(item.ko)).join('\n')
+    assert.match(martialText, /무공\.\s*(?:차륜망치|기록칼|수문손|호위방패|없음\. 생업만\.)/u, id)
+  }
+})
+
+test('all 65 issued S05 cards retain bilingual livelihoods and their original martial declarations', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-05.json', import.meta.url), 'utf8'))
+  const markdown = await readFile(new URL('../../lore/characters/Cast-State-05.md', import.meta.url), 'utf8')
+  assert.equal(markdown, renderLoreMarkdown(document, 'ko'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const idByName = new Map(registry.persons.map(({ id, name }) => [name, id]))
+  const values = JSON.parse(await readFile(new URL('../../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const detailIndexByName = new Map(values.map(({ name }, index) => [name, index + 1]))
+  const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
+  const expectedMartial = new Map(Object.entries({
+    '동방사 방패': 'K115 K116 K119 K123 K128 K129 K460 K508 K556 K604 K652 K700 K748 K796 K844 K892 K940 K988',
+    '없음. 생업만.': 'K117 K131 K118 K125 K134 K136 K138 K139 K140 K141 K142 K428 K476 K524 K572 K620 K668 K716 K764 K812 K860 K908 K956',
+    '수문손': 'K121 K126 K127 K130 K133 K137 K444 K492 K540 K588 K636 K684 K732 K780 K828 K876 K924 K972 K143',
+    '차륜망치': 'K132 K135 K120 K124',
+    '기록칼': 'K122',
+  }).flatMap(([path, ids]) => ids.split(' ').map((id) => [id, path])))
+  assert.equal(expectedMartial.size, 65)
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }]
+    : [])
+  assert.equal(headings.length, 65)
+  const seen = new Set()
+  for (const [index, heading] of headings.entries()) {
+    const id = idByName.get(heading.name)
+    assert.ok(/^K\d{3,4}$/u.test(id ?? ''), heading.name)
+    assert.ok(!seen.has(id), id)
+    seen.add(id)
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const fields = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+    const livelihoods = fields.filter((item) => plain(item.ko).startsWith('생업: '))
+    assert.equal(livelihoods.length, 1, id)
+    assert.match(plain(livelihoods[0].en), /^Livelihood: \S/u, id)
+    const occupation = plain(livelihoods[0].ko).slice(4)
+    assert.notEqual(occupation, '미등록', id)
+    assert.notEqual(occupation, fields.find((item) => plain(item.ko).startsWith('품계: '))?.ko.slice(4), id)
+    assert.notEqual(occupation, fields.find((item) => plain(item.ko).startsWith('직함: '))?.ko.slice(4), id)
+    const detailIndex = detailIndexByName.get(heading.name)
+    assert.ok(detailIndex, id)
+    const detailId = `person-${String(detailIndex).padStart(4, '0')}`
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.id, detailId, id)
+    assert.equal(detail.name, heading.name, id)
+    assert.equal(detail.occupation, occupation, id)
+    assert.equal(detail.fields['생업'], occupation, id)
+    assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-05#'), id)
+    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
+      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
+    const martial = martialText.match(/무공\.\s*(동방사 방패|수문손|차륜망치|기록칼|없음\. 생업만\.)/u)?.[1]
+    assert.equal(martial, expectedMartial.get(id), id)
+    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+  }
+  assert.equal(seen.size, 65)
 })
 
 test('person detail page renders tables and the canonical prose sections', async () => {
