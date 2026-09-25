@@ -15,6 +15,7 @@
     "test:gate": "node --test scripts/test-gate.mjs",
     "test:states": "node --test scripts/test-state-routes.mjs",
     "test:legacy-routes": "node --test scripts/test-legacy-world-routes.mjs",
+    "test:region-routes": "node --test scripts/test-region-routes.mjs",
     "test:assets": "node --test scripts/test-wiki-assets.mjs",
     "test:people": "node --test scripts/test-people-index.mjs",
     "test:person-details": "node --test scripts/test-person-details.mjs",
