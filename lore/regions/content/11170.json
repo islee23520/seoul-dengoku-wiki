@@ -23,7 +23,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-07.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "계단 물지게",
           "후암 배급 반장",
@@ -249,8 +251,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -275,7 +282,9 @@
           "lore/characters/Cast-State-07.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "녹사평 개찰 당직",
           "남문 울타리 순찰",
@@ -515,8 +524,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -542,7 +556,9 @@
           "lore/characters/Cast-State-06.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "남영 개찰 안내",
           "도성 전령",
@@ -761,8 +777,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -787,7 +808,9 @@
           "lore/characters/Cast-State-06.md",
           "lore/characters/Cast-State-07.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "대학 필경사",
           "청파 계단 반장",
@@ -1013,8 +1036,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1039,7 +1067,9 @@
           "lore/characters/Cast-State-07.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "폐전자 선별반",
           "상가 열쇠 당직",
@@ -1225,8 +1255,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1250,7 +1285,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-07.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "가설울타리 인부",
           "운동장 배급 교사",
@@ -1497,8 +1534,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1523,7 +1565,9 @@
           "lore/characters/Cast-State-07.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "고개 들것조",
           "효창 개찰 안내",
@@ -1723,8 +1767,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1748,7 +1797,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-07.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "단지 양수 당직",
           "휴게소 교환원",
@@ -1911,8 +1962,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2195,7 +2251,9 @@
           "lore/characters/Cast-State-08.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "냉동 칸 임차",
           "온도 낭독원",
@@ -2414,8 +2472,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2440,7 +2503,9 @@
           "lore/characters/Cast-State-07.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "분기 전환 인부",
           "북단 감시",
@@ -2591,8 +2656,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2617,7 +2687,9 @@
           "lore/characters/Cast-State-07.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "골목 야간 당직",
           "이태원 개찰 안내",
@@ -2815,8 +2887,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2840,7 +2917,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-07.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "약수 봉인 당번",
           "탐방로 물지게",
@@ -3066,8 +3145,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -3092,7 +3176,9 @@
           "lore/characters/Cast-State-07.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "한남 들것조",
           "한강진 대기 안내",
@@ -3329,8 +3415,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3356,7 +3447,9 @@
           "lore/characters/Cast-State-08.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "선석 하역 인부",
           "터 추첨 서기",
@@ -3575,8 +3668,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3601,7 +3699,9 @@
           "lore/characters/Cast-State-07.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S07"
+        ],
         "inhabitants": [
           "고가 지게꾼",
           "실습동 공구 도제",
@@ -3806,8 +3906,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S07",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
