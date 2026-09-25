@@ -505,7 +505,7 @@
       "stage": "주요",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K002",
@@ -514,7 +514,7 @@
       "stage": "S1",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K003",
@@ -523,7 +523,7 @@
       "stage": "S1",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K004",
@@ -532,7 +532,7 @@
       "stage": "S1",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K005",
@@ -541,7 +541,7 @@
       "stage": "S1",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K006",
@@ -550,7 +550,7 @@
       "stage": "S1",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K007",
@@ -559,7 +559,7 @@
       "stage": "S1",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K008",
@@ -568,7 +568,7 @@
       "stage": "S1",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K009",
@@ -577,7 +577,7 @@
       "stage": "S1",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K010",
@@ -586,7 +586,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K011",
@@ -595,7 +595,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K012",
@@ -604,7 +604,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K013",
@@ -613,7 +613,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K014",
@@ -622,7 +622,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K015",
@@ -631,7 +631,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K016",
@@ -640,7 +640,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K017",
@@ -649,7 +649,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K018",
@@ -658,7 +658,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K019",
@@ -667,7 +667,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K020",
@@ -676,7 +676,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K021",
@@ -685,7 +685,7 @@
       "stage": "S2",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K022",
@@ -694,7 +694,7 @@
       "stage": "S3",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K023",
@@ -703,7 +703,7 @@
       "stage": "S3",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K024",
@@ -712,7 +712,7 @@
       "stage": "S3",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K025",
@@ -721,7 +721,7 @@
       "stage": "S3",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K026",
@@ -730,7 +730,7 @@
       "stage": "S3",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K027",
@@ -739,7 +739,7 @@
       "stage": "S3",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K028",
@@ -748,7 +748,7 @@
       "stage": "S3",
       "state_id": "S01",
       "state_name": "수문국",
-      "source_anchor": "Cast-Index.md#S01"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-01-수문국"
     },
     {
       "id": "K029",
@@ -757,7 +757,7 @@
       "stage": "주요",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K030",
@@ -766,7 +766,7 @@
       "stage": "S1",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K031",
@@ -775,7 +775,7 @@
       "stage": "S1",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K032",
@@ -784,7 +784,7 @@
       "stage": "S1",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K033",
@@ -793,7 +793,7 @@
       "stage": "S1",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K034",
@@ -802,7 +802,7 @@
       "stage": "S1",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K035",
@@ -811,7 +811,7 @@
       "stage": "S1",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K036",
@@ -820,7 +820,7 @@
       "stage": "S1",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K037",
@@ -829,7 +829,7 @@
       "stage": "S1",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K038",
@@ -838,7 +838,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K039",
@@ -847,7 +847,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K040",
@@ -856,7 +856,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K041",
@@ -865,7 +865,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K042",
@@ -874,7 +874,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K043",
@@ -883,7 +883,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K044",
@@ -892,7 +892,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K045",
@@ -901,7 +901,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K046",
@@ -910,7 +910,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K047",
@@ -919,7 +919,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K048",
@@ -928,7 +928,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K049",
@@ -937,7 +937,7 @@
       "stage": "S2",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K050",
@@ -946,7 +946,7 @@
       "stage": "S3",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K051",
@@ -955,7 +955,7 @@
       "stage": "S3",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K052",
@@ -964,7 +964,7 @@
       "stage": "S3",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K053",
@@ -973,7 +973,7 @@
       "stage": "S3",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K054",
@@ -982,7 +982,7 @@
       "stage": "S3",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K055",
@@ -991,7 +991,7 @@
       "stage": "S3",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K056",
@@ -1000,7 +1000,7 @@
       "stage": "S3",
       "state_id": "S02",
       "state_name": "규격맹",
-      "source_anchor": "Cast-Index.md#S02"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-02-규격맹"
     },
     {
       "id": "K057",
@@ -1009,7 +1009,7 @@
       "stage": "주요",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K058",
@@ -1018,7 +1018,7 @@
       "stage": "S1",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K059",
@@ -1027,7 +1027,7 @@
       "stage": "S1",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K060",
@@ -1036,7 +1036,7 @@
       "stage": "S1",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K061",
@@ -1045,7 +1045,7 @@
       "stage": "S1",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K062",
@@ -1054,7 +1054,7 @@
       "stage": "S1",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K063",
@@ -1063,7 +1063,7 @@
       "stage": "S1",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K064",
@@ -1072,7 +1072,7 @@
       "stage": "S1",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K065",
@@ -1081,7 +1081,7 @@
       "stage": "S1",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K066",
@@ -1090,7 +1090,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K067",
@@ -1099,7 +1099,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K068",
@@ -1108,7 +1108,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K069",
@@ -1117,7 +1117,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K070",
@@ -1126,7 +1126,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K071",
@@ -1135,7 +1135,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K072",
@@ -1144,7 +1144,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K073",
@@ -1153,7 +1153,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K074",
@@ -1162,7 +1162,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K075",
@@ -1171,7 +1171,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K076",
@@ -1180,7 +1180,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K077",
@@ -1189,7 +1189,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K078",
@@ -1198,7 +1198,7 @@
       "stage": "S3",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K079",
@@ -1207,7 +1207,7 @@
       "stage": "S3",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K080",
@@ -1216,7 +1216,7 @@
       "stage": "S3",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K081",
@@ -1225,7 +1225,7 @@
       "stage": "S3",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K082",
@@ -1234,7 +1234,7 @@
       "stage": "S3",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K083",
@@ -1243,7 +1243,7 @@
       "stage": "S3",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K084",
@@ -1252,7 +1252,7 @@
       "stage": "S3",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K085",
@@ -1261,7 +1261,7 @@
       "stage": "S2",
       "state_id": "S03",
       "state_name": "태욱그룹",
-      "source_anchor": "Cast-Index.md#S03"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-03-태욱그룹"
     },
     {
       "id": "K086",
@@ -1270,7 +1270,7 @@
       "stage": "주요",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K087",
@@ -1279,7 +1279,7 @@
       "stage": "주요",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K088",
@@ -1288,7 +1288,7 @@
       "stage": "S1",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K089",
@@ -1297,7 +1297,7 @@
       "stage": "S1",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K090",
@@ -1306,7 +1306,7 @@
       "stage": "S1",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K091",
@@ -1315,7 +1315,7 @@
       "stage": "S1",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K092",
@@ -1324,7 +1324,7 @@
       "stage": "S1",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K093",
@@ -1333,7 +1333,7 @@
       "stage": "S1",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K094",
@@ -1342,7 +1342,7 @@
       "stage": "S1",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K095",
@@ -1351,7 +1351,7 @@
       "stage": "S1",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K096",
@@ -1360,7 +1360,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K097",
@@ -1369,7 +1369,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K098",
@@ -1378,7 +1378,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K099",
@@ -1387,7 +1387,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K100",
@@ -1396,7 +1396,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K101",
@@ -1405,7 +1405,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K102",
@@ -1414,7 +1414,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K103",
@@ -1423,7 +1423,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K104",
@@ -1432,7 +1432,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K105",
@@ -1441,7 +1441,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K106",
@@ -1450,7 +1450,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K107",
@@ -1459,7 +1459,7 @@
       "stage": "S2",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K108",
@@ -1468,7 +1468,7 @@
       "stage": "S3",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K109",
@@ -1477,7 +1477,7 @@
       "stage": "S3",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K110",
@@ -1486,7 +1486,7 @@
       "stage": "S3",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K111",
@@ -1495,7 +1495,7 @@
       "stage": "S3",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K112",
@@ -1504,7 +1504,7 @@
       "stage": "S3",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K113",
@@ -1513,7 +1513,7 @@
       "stage": "S3",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K114",
@@ -1522,7 +1522,7 @@
       "stage": "S3",
       "state_id": "S04",
       "state_name": "명부교회",
-      "source_anchor": "Cast-Index.md#S04"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-04-명부교회"
     },
     {
       "id": "K115",
@@ -1531,7 +1531,7 @@
       "stage": "주요",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K116",
@@ -1540,7 +1540,7 @@
       "stage": "S1",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K117",
@@ -1549,7 +1549,7 @@
       "stage": "S1",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K118",
@@ -1558,7 +1558,7 @@
       "stage": "S1",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K119",
@@ -1567,7 +1567,7 @@
       "stage": "S1",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K120",
@@ -1576,7 +1576,7 @@
       "stage": "S1",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K121",
@@ -1585,7 +1585,7 @@
       "stage": "S1",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K122",
@@ -1594,7 +1594,7 @@
       "stage": "S1",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K123",
@@ -1603,7 +1603,7 @@
       "stage": "S1",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K124",
@@ -1612,7 +1612,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K125",
@@ -1621,7 +1621,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K126",
@@ -1630,7 +1630,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K127",
@@ -1639,7 +1639,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K128",
@@ -1648,7 +1648,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K129",
@@ -1657,7 +1657,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K130",
@@ -1666,7 +1666,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K131",
@@ -1675,7 +1675,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K132",
@@ -1684,7 +1684,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K133",
@@ -1693,7 +1693,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K134",
@@ -1702,7 +1702,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K135",
@@ -1711,7 +1711,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K136",
@@ -1720,7 +1720,7 @@
       "stage": "S3",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K137",
@@ -1729,7 +1729,7 @@
       "stage": "S3",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K138",
@@ -1738,7 +1738,7 @@
       "stage": "S3",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K139",
@@ -1747,7 +1747,7 @@
       "stage": "S3",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K140",
@@ -1756,7 +1756,7 @@
       "stage": "S3",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K141",
@@ -1765,7 +1765,7 @@
       "stage": "S3",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K142",
@@ -1774,7 +1774,7 @@
       "stage": "S3",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K143",
@@ -1783,7 +1783,7 @@
       "stage": "S2",
       "state_id": "S05",
       "state_name": "동방사",
-      "source_anchor": "Cast-Index.md#S05"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-05-동방사"
     },
     {
       "id": "K144",
@@ -1792,7 +1792,7 @@
       "stage": "주요",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K145",
@@ -1801,7 +1801,7 @@
       "stage": "S1",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K146",
@@ -1810,7 +1810,7 @@
       "stage": "S1",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K147",
@@ -1819,7 +1819,7 @@
       "stage": "S1",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K148",
@@ -1828,7 +1828,7 @@
       "stage": "S1",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K149",
@@ -1837,7 +1837,7 @@
       "stage": "S1",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K150",
@@ -1846,7 +1846,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K151",
@@ -1855,7 +1855,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K152",
@@ -1864,7 +1864,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K153",
@@ -1873,7 +1873,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K154",
@@ -1882,7 +1882,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K155",
@@ -1891,7 +1891,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K156",
@@ -1900,7 +1900,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K157",
@@ -1909,7 +1909,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K158",
@@ -1918,7 +1918,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K159",
@@ -1927,7 +1927,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K160",
@@ -1936,7 +1936,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K161",
@@ -1945,7 +1945,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K162",
@@ -1954,7 +1954,7 @@
       "stage": "S3",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K163",
@@ -1963,7 +1963,7 @@
       "stage": "S3",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K164",
@@ -1972,7 +1972,7 @@
       "stage": "S3",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K165",
@@ -1981,7 +1981,7 @@
       "stage": "S3",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K166",
@@ -1990,7 +1990,7 @@
       "stage": "S3",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K167",
@@ -1999,7 +1999,7 @@
       "stage": "S3",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K168",
@@ -2008,7 +2008,7 @@
       "stage": "S2",
       "state_id": "S06",
       "state_name": "대한민국정부",
-      "source_anchor": "Cast-Index.md#S06"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-06-대한민국정부"
     },
     {
       "id": "K169",
@@ -2017,7 +2017,7 @@
       "stage": "주요",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K170",
@@ -2026,7 +2026,7 @@
       "stage": "S1",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K171",
@@ -2035,7 +2035,7 @@
       "stage": "S1",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K172",
@@ -2044,7 +2044,7 @@
       "stage": "S1",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K173",
@@ -2053,7 +2053,7 @@
       "stage": "S1",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K174",
@@ -2062,7 +2062,7 @@
       "stage": "S1",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K175",
@@ -2071,7 +2071,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K176",
@@ -2080,7 +2080,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K177",
@@ -2089,7 +2089,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K178",
@@ -2098,7 +2098,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K179",
@@ -2107,7 +2107,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K180",
@@ -2116,7 +2116,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K181",
@@ -2125,7 +2125,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K182",
@@ -2134,7 +2134,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K183",
@@ -2143,7 +2143,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K184",
@@ -2152,7 +2152,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K185",
@@ -2161,7 +2161,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K186",
@@ -2170,7 +2170,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K187",
@@ -2179,7 +2179,7 @@
       "stage": "S3",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K188",
@@ -2188,7 +2188,7 @@
       "stage": "S3",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K189",
@@ -2197,7 +2197,7 @@
       "stage": "S3",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K190",
@@ -2206,7 +2206,7 @@
       "stage": "S3",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K191",
@@ -2215,7 +2215,7 @@
       "stage": "S3",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K192",
@@ -2224,7 +2224,7 @@
       "stage": "S3",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K193",
@@ -2233,7 +2233,7 @@
       "stage": "S2",
       "state_id": "S07",
       "state_name": "환적국",
-      "source_anchor": "Cast-Index.md#S07"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-07-환적국"
     },
     {
       "id": "K194",
@@ -2242,7 +2242,7 @@
       "stage": "주요",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K195",
@@ -2251,7 +2251,7 @@
       "stage": "S1",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K196",
@@ -2260,7 +2260,7 @@
       "stage": "S1",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K197",
@@ -2269,7 +2269,7 @@
       "stage": "S1",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K198",
@@ -2278,7 +2278,7 @@
       "stage": "S1",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K199",
@@ -2287,7 +2287,7 @@
       "stage": "S1",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K200",
@@ -2296,7 +2296,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K201",
@@ -2305,7 +2305,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K202",
@@ -2314,7 +2314,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K203",
@@ -2323,7 +2323,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K204",
@@ -2332,7 +2332,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K205",
@@ -2341,7 +2341,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K206",
@@ -2350,7 +2350,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K207",
@@ -2359,7 +2359,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K208",
@@ -2368,7 +2368,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K209",
@@ -2377,7 +2377,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K210",
@@ -2386,7 +2386,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K211",
@@ -2395,7 +2395,7 @@
       "stage": "S2",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K212",
@@ -2404,7 +2404,7 @@
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K213",
@@ -2413,7 +2413,7 @@
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K214",
@@ -2422,7 +2422,7 @@
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K215",
@@ -2431,7 +2431,7 @@
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K216",
@@ -2440,7 +2440,7 @@
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K217",
@@ -2449,7 +2449,7 @@
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K218",
@@ -2458,7 +2458,7 @@
       "stage": "S3",
       "state_id": "S08",
       "state_name": "중앙기술보존원",
-      "source_anchor": "Cast-Index.md#S08"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
     },
     {
       "id": "K219",
@@ -2467,7 +2467,7 @@
       "stage": "주요",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K220",
@@ -2476,7 +2476,7 @@
       "stage": "S1",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K221",
@@ -2485,7 +2485,7 @@
       "stage": "S1",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K222",
@@ -2494,7 +2494,7 @@
       "stage": "S1",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K223",
@@ -2503,7 +2503,7 @@
       "stage": "S1",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K224",
@@ -2512,7 +2512,7 @@
       "stage": "S1",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K225",
@@ -2521,7 +2521,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K226",
@@ -2530,7 +2530,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K227",
@@ -2539,7 +2539,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K228",
@@ -2548,7 +2548,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K229",
@@ -2557,7 +2557,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K230",
@@ -2566,7 +2566,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K231",
@@ -2575,7 +2575,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K232",
@@ -2584,7 +2584,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K233",
@@ -2593,7 +2593,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K234",
@@ -2602,7 +2602,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K235",
@@ -2611,7 +2611,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K236",
@@ -2620,7 +2620,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K237",
@@ -2629,7 +2629,7 @@
       "stage": "S3",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K238",
@@ -2638,7 +2638,7 @@
       "stage": "S3",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K239",
@@ -2647,7 +2647,7 @@
       "stage": "S3",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K240",
@@ -2656,7 +2656,7 @@
       "stage": "S3",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K241",
@@ -2665,7 +2665,7 @@
       "stage": "S3",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K242",
@@ -2674,7 +2674,7 @@
       "stage": "S3",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K243",
@@ -2683,7 +2683,7 @@
       "stage": "S3",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K244",
@@ -2692,7 +2692,7 @@
       "stage": "S2",
       "state_id": "S09",
       "state_name": "여의도출자연합회",
-      "source_anchor": "Cast-Index.md#S09"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
     },
     {
       "id": "K245",
@@ -2701,7 +2701,7 @@
       "stage": "주요",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K246",
@@ -2710,7 +2710,7 @@
       "stage": "S1",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K247",
@@ -2719,7 +2719,7 @@
       "stage": "S1",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K248",
@@ -2728,7 +2728,7 @@
       "stage": "S1",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K249",
@@ -2737,7 +2737,7 @@
       "stage": "S1",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K250",
@@ -2746,7 +2746,7 @@
       "stage": "S1",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K251",
@@ -2755,7 +2755,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K252",
@@ -2764,7 +2764,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K253",
@@ -2773,7 +2773,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K254",
@@ -2782,7 +2782,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K255",
@@ -2791,7 +2791,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K256",
@@ -2800,7 +2800,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K257",
@@ -2809,7 +2809,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K258",
@@ -2818,7 +2818,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K259",
@@ -2827,7 +2827,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K260",
@@ -2836,7 +2836,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K261",
@@ -2845,7 +2845,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K262",
@@ -2854,7 +2854,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K263",
@@ -2863,7 +2863,7 @@
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K264",
@@ -2872,7 +2872,7 @@
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K265",
@@ -2881,7 +2881,7 @@
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K266",
@@ -2890,7 +2890,7 @@
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K267",
@@ -2899,7 +2899,7 @@
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K268",
@@ -2908,7 +2908,7 @@
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K269",
@@ -2917,7 +2917,7 @@
       "stage": "S3",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K270",
@@ -2926,7 +2926,7 @@
       "stage": "S2",
       "state_id": "S10",
       "state_name": "안국총림",
-      "source_anchor": "Cast-Index.md#S10"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-10-안국총림"
     },
     {
       "id": "K271",
@@ -2935,7 +2935,7 @@
       "stage": "주요",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K272",
@@ -2944,7 +2944,7 @@
       "stage": "S1",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K273",
@@ -2953,7 +2953,7 @@
       "stage": "S1",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K274",
@@ -2962,7 +2962,7 @@
       "stage": "S1",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K275",
@@ -2971,7 +2971,7 @@
       "stage": "S1",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K276",
@@ -2980,7 +2980,7 @@
       "stage": "S1",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K277",
@@ -2989,7 +2989,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K278",
@@ -2998,7 +2998,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K279",
@@ -3007,7 +3007,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K280",
@@ -3016,7 +3016,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K281",
@@ -3025,7 +3025,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K282",
@@ -3034,7 +3034,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K283",
@@ -3043,7 +3043,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K284",
@@ -3052,7 +3052,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K285",
@@ -3061,7 +3061,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K286",
@@ -3070,7 +3070,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K287",
@@ -3079,7 +3079,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K288",
@@ -3088,7 +3088,7 @@
       "stage": "S2",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K289",
@@ -3097,7 +3097,7 @@
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K290",
@@ -3106,7 +3106,7 @@
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K291",
@@ -3115,7 +3115,7 @@
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K292",
@@ -3124,7 +3124,7 @@
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K293",
@@ -3133,7 +3133,7 @@
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K294",
@@ -3142,7 +3142,7 @@
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K295",
@@ -3151,7 +3151,7 @@
       "stage": "S3",
       "state_id": "S11",
       "state_name": "성하그룹",
-      "source_anchor": "Cast-Index.md#S11"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-11-성하그룹"
     },
     {
       "id": "K296",
@@ -3160,7 +3160,7 @@
       "stage": "주요",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K297",
@@ -3169,7 +3169,7 @@
       "stage": "S1",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K298",
@@ -3178,7 +3178,7 @@
       "stage": "S1",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K299",
@@ -3187,7 +3187,7 @@
       "stage": "S1",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K300",
@@ -3196,7 +3196,7 @@
       "stage": "S1",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K301",
@@ -3205,7 +3205,7 @@
       "stage": "S1",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K302",
@@ -3214,7 +3214,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K303",
@@ -3223,7 +3223,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K304",
@@ -3232,7 +3232,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K305",
@@ -3241,7 +3241,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K306",
@@ -3250,7 +3250,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K307",
@@ -3259,7 +3259,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K308",
@@ -3268,7 +3268,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K309",
@@ -3277,7 +3277,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K310",
@@ -3286,7 +3286,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K311",
@@ -3295,7 +3295,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K312",
@@ -3304,7 +3304,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K313",
@@ -3313,7 +3313,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K314",
@@ -3322,7 +3322,7 @@
       "stage": "S3",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K315",
@@ -3331,7 +3331,7 @@
       "stage": "S3",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K316",
@@ -3340,7 +3340,7 @@
       "stage": "S3",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K317",
@@ -3349,7 +3349,7 @@
       "stage": "S3",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K318",
@@ -3358,7 +3358,7 @@
       "stage": "S3",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K319",
@@ -3367,7 +3367,7 @@
       "stage": "S3",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K320",
@@ -3376,7 +3376,7 @@
       "stage": "S3",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K321",
@@ -3385,7 +3385,7 @@
       "stage": "S2",
       "state_id": "S12",
       "state_name": "신내운수",
-      "source_anchor": "Cast-Index.md#S12"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-12-신내운수"
     },
     {
       "id": "K322",
@@ -3394,7 +3394,7 @@
       "stage": "주요",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K323",
@@ -3403,7 +3403,7 @@
       "stage": "S1",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K324",
@@ -3412,7 +3412,7 @@
       "stage": "S1",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K325",
@@ -3421,7 +3421,7 @@
       "stage": "S1",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K326",
@@ -3430,7 +3430,7 @@
       "stage": "S1",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K327",
@@ -3439,7 +3439,7 @@
       "stage": "S1",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K328",
@@ -3448,7 +3448,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K329",
@@ -3457,7 +3457,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K330",
@@ -3466,7 +3466,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K331",
@@ -3475,7 +3475,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K332",
@@ -3484,7 +3484,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K333",
@@ -3493,7 +3493,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K334",
@@ -3502,7 +3502,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K335",
@@ -3511,7 +3511,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K336",
@@ -3520,7 +3520,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K337",
@@ -3529,7 +3529,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K338",
@@ -3538,7 +3538,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K339",
@@ -3547,7 +3547,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K340",
@@ -3556,7 +3556,7 @@
       "stage": "S3",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K341",
@@ -3565,7 +3565,7 @@
       "stage": "S3",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K342",
@@ -3574,7 +3574,7 @@
       "stage": "S3",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K343",
@@ -3583,7 +3583,7 @@
       "stage": "S3",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K344",
@@ -3592,7 +3592,7 @@
       "stage": "S3",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K345",
@@ -3601,7 +3601,7 @@
       "stage": "S3",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K346",
@@ -3610,7 +3610,7 @@
       "stage": "S3",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K347",
@@ -3619,7 +3619,7 @@
       "stage": "S2",
       "state_id": "S13",
       "state_name": "흰십자단",
-      "source_anchor": "Cast-Index.md#S13"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-13-흰십자단"
     },
     {
       "id": "K348",
@@ -3628,7 +3628,7 @@
       "stage": "주요",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K349",
@@ -3637,7 +3637,7 @@
       "stage": "S1",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K350",
@@ -3646,7 +3646,7 @@
       "stage": "S1",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K351",
@@ -3655,7 +3655,7 @@
       "stage": "S1",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K352",
@@ -3664,7 +3664,7 @@
       "stage": "S1",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K353",
@@ -3673,7 +3673,7 @@
       "stage": "S1",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K354",
@@ -3682,7 +3682,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K355",
@@ -3691,7 +3691,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K356",
@@ -3700,7 +3700,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K357",
@@ -3709,7 +3709,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K358",
@@ -3718,7 +3718,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K359",
@@ -3727,7 +3727,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K360",
@@ -3736,7 +3736,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K361",
@@ -3745,7 +3745,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K362",
@@ -3754,7 +3754,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K363",
@@ -3763,7 +3763,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K364",
@@ -3772,7 +3772,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K365",
@@ -3781,7 +3781,7 @@
       "stage": "S2",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K366",
@@ -3790,7 +3790,7 @@
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K367",
@@ -3799,7 +3799,7 @@
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K368",
@@ -3808,7 +3808,7 @@
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K369",
@@ -3817,7 +3817,7 @@
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K370",
@@ -3826,7 +3826,7 @@
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K371",
@@ -3835,7 +3835,7 @@
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K372",
@@ -3844,7 +3844,7 @@
       "stage": "S3",
       "state_id": "S14",
       "state_name": "아관사",
-      "source_anchor": "Cast-Index.md#S14"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-14-아관사"
     },
     {
       "id": "K373",
@@ -3853,7 +3853,7 @@
       "stage": "주요",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K374",
@@ -3862,7 +3862,7 @@
       "stage": "S1",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K375",
@@ -3871,7 +3871,7 @@
       "stage": "S1",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K376",
@@ -3880,7 +3880,7 @@
       "stage": "S1",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K377",
@@ -3889,7 +3889,7 @@
       "stage": "S1",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K378",
@@ -3898,7 +3898,7 @@
       "stage": "S1",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K379",
@@ -3907,7 +3907,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K380",
@@ -3916,7 +3916,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K381",
@@ -3925,7 +3925,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K382",
@@ -3934,7 +3934,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K383",
@@ -3943,7 +3943,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K384",
@@ -3952,7 +3952,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K385",
@@ -3961,7 +3961,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K386",
@@ -3970,7 +3970,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K387",
@@ -3979,7 +3979,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K388",
@@ -3988,7 +3988,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K389",
@@ -3997,7 +3997,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K390",
@@ -4006,7 +4006,7 @@
       "stage": "S3",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K391",
@@ -4015,7 +4015,7 @@
       "stage": "S3",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K392",
@@ -4024,7 +4024,7 @@
       "stage": "S3",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K393",
@@ -4033,7 +4033,7 @@
       "stage": "S3",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K394",
@@ -4042,7 +4042,7 @@
       "stage": "S3",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K395",
@@ -4051,7 +4051,7 @@
       "stage": "S3",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K396",
@@ -4060,7 +4060,7 @@
       "stage": "S3",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K397",
@@ -4069,7 +4069,7 @@
       "stage": "S2",
       "state_id": "S15",
       "state_name": "명동대교구",
-      "source_anchor": "Cast-Index.md#S15"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-15-명동대교구"
     },
     {
       "id": "K398",
@@ -4078,7 +4078,7 @@
       "stage": "주요",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K399",
@@ -4087,7 +4087,7 @@
       "stage": "S1",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K400",
@@ -4096,7 +4096,7 @@
       "stage": "S1",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K401",
@@ -4105,7 +4105,7 @@
       "stage": "S1",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K402",
@@ -4114,7 +4114,7 @@
       "stage": "S1",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K403",
@@ -4123,7 +4123,7 @@
       "stage": "S1",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K404",
@@ -4132,7 +4132,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K405",
@@ -4141,7 +4141,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K406",
@@ -4150,7 +4150,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K407",
@@ -4159,7 +4159,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K408",
@@ -4168,7 +4168,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K409",
@@ -4177,7 +4177,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K410",
@@ -4186,7 +4186,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K411",
@@ -4195,7 +4195,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K412",
@@ -4204,7 +4204,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K413",
@@ -4213,7 +4213,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K414",
@@ -4222,7 +4222,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K415",
@@ -4231,7 +4231,7 @@
       "stage": "S3",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K416",
@@ -4240,7 +4240,7 @@
       "stage": "S3",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K417",
@@ -4249,7 +4249,7 @@
       "stage": "S3",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K418",
@@ -4258,7 +4258,7 @@
       "stage": "S3",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K419",
@@ -4267,7 +4267,7 @@
       "stage": "S3",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K420",
@@ -4276,7 +4276,7 @@
       "stage": "S3",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K421",
@@ -4285,7 +4285,7 @@
       "stage": "S3",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     },
     {
       "id": "K422",
@@ -4294,7 +4294,7 @@
       "stage": "S2",
       "state_id": "S16",
       "state_name": "정동노총",
-      "source_anchor": "Cast-Index.md#S16"
+      "source_anchor": "lore/characters/Cast-Index.md#국가-16-정동노총"
     }
   ],
   "houses": [
@@ -4308,7 +4308,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4438,7 +4438,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4569,7 +4569,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4699,7 +4699,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4830,7 +4830,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -4960,7 +4960,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5090,7 +5090,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5220,7 +5220,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5351,7 +5351,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5482,7 +5482,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5613,7 +5613,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5744,7 +5744,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -5875,7 +5875,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6006,7 +6006,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6137,7 +6137,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6269,7 +6269,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6400,7 +6400,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6531,7 +6531,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6661,7 +6661,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6792,7 +6792,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -6923,7 +6923,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7055,7 +7055,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7186,7 +7186,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7317,7 +7317,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7448,7 +7448,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7589,7 +7589,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7725,7 +7725,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -7866,7 +7866,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8007,7 +8007,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8143,7 +8143,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8284,7 +8284,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8421,7 +8421,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/factions/Sixteen-States.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8556,8 +8556,8 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/chronology/Century-Annals.json#2069년-xt01-임진-제방-임시-검역소",
         "lore/chronology/Century-Annals.json#2104년-xt01-임진-제방-임시-검역소",
         "lore/chronology/Century-Annals.json#2125년-xt01-광화문-정부서울청사"
@@ -8795,8 +8795,8 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/chronology/Century-Annals.json#2079년-xt02-한강-하구-임시-부두",
         "lore/chronology/Century-Annals.json#2114년-xt02-한강-하구-임시-부두"
       ],
@@ -9034,8 +9034,8 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/chronology/Century-Annals.json#2079년-xt03-용산-환적창"
       ],
       "revision": 1,
@@ -9274,8 +9274,8 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/chronology/Century-Annals.json#2069년-xt04-암사-야적장",
         "lore/chronology/Century-Annals.json#2114년-xt04-암사-야적장"
       ],
@@ -9520,8 +9520,8 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/factions/Sixteen-States.md",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/chronology/Century-Annals.json#2069년-xt05-여의도-회관",
         "lore/chronology/Century-Annals.json#2122년-xt05-여의도-회관"
       ],
@@ -9781,8 +9781,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S01"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-01-수문국"
       ],
       "revision": 1,
       "projection_targets": [
@@ -9826,8 +9826,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S02"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-02-규격맹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -9871,8 +9871,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S03"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-03-태욱그룹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -9916,8 +9916,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S04"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-04-명부교회"
       ],
       "revision": 1,
       "projection_targets": [
@@ -9961,8 +9961,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S05"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-05-동방사"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10006,8 +10006,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S06"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-06-대한민국정부"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10051,8 +10051,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S07"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-07-환적국"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10096,8 +10096,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S08"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10141,8 +10141,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S09"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10186,8 +10186,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S10"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-10-안국총림"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10231,8 +10231,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S11"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-11-성하그룹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10276,8 +10276,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S12"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-12-신내운수"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10321,8 +10321,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S13"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-13-흰십자단"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10366,8 +10366,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S14"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-14-아관사"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10411,8 +10411,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S15"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-15-명동대교구"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10456,8 +10456,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S16"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-16-정동노총"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10501,8 +10501,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S01"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-01-수문국"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10546,8 +10546,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S02"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-02-규격맹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10591,8 +10591,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S03"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-03-태욱그룹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10636,8 +10636,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S04"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-04-명부교회"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10681,8 +10681,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S05"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-05-동방사"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10726,8 +10726,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S06"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-06-대한민국정부"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10771,8 +10771,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S07"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-07-환적국"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10816,8 +10816,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S08"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10861,8 +10861,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S09"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10906,8 +10906,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S10"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-10-안국총림"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10951,8 +10951,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S11"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-11-성하그룹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -10996,8 +10996,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S12"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-12-신내운수"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11041,8 +11041,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S13"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-13-흰십자단"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11086,8 +11086,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S14"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-14-아관사"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11131,8 +11131,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S15"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-15-명동대교구"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11176,8 +11176,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S16"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-16-정동노총"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11221,8 +11221,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S01"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-01-수문국"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11266,8 +11266,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S02"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-02-규격맹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11311,8 +11311,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S03"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-03-태욱그룹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11356,8 +11356,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S04"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-04-명부교회"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11401,8 +11401,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S05"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-05-동방사"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11446,8 +11446,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S06"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-06-대한민국정부"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11491,8 +11491,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S07"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-07-환적국"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11536,8 +11536,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S08"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-08-중앙기술보존원"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11581,8 +11581,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S09"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-09-여의도출자연합회"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11626,8 +11626,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S10"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-10-안국총림"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11671,8 +11671,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S11"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-11-성하그룹"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11716,8 +11716,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S12"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-12-신내운수"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11761,8 +11761,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S13"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-13-흰십자단"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11806,8 +11806,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S14"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-14-아관사"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11851,8 +11851,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S15"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-15-명동대교구"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11896,8 +11896,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/characters/Cast-Index.md",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "Cast-Index.md#S16"
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/characters/Cast-Index.md#국가-16-정동노총"
       ],
       "revision": 1,
       "projection_targets": [
@@ -11948,7 +11948,7 @@
       "source_anchors": [
         "lore/Research-Sources.md#SRC-SEOUL-WILDBOAR-RESPONSE",
         "lore/Research-Sources.md#SRC-NIBR-URBAN-WILDLIFE-MAP",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
@@ -12071,7 +12071,7 @@
       "source_anchors": [
         "lore/Research-Sources.md#SRC-NIBR-LARGE-BILLED-CROW",
         "lore/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
@@ -12198,7 +12198,7 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "lore/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
@@ -12322,7 +12322,7 @@
       "source_anchors": [
         "lore/Research-Sources.md#SRC-NIBR-URBAN-WILDLIFE-MAP",
         "lore/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
@@ -12444,7 +12444,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
@@ -12568,7 +12568,7 @@
       "source_anchors": [
         "lore/Research-Sources.md#SRC-SEOUL-PROTECTED-HABITATS",
         "lore/Research-Sources.md#SRC-SEOUL-WILDLIFE-RESCUE",
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 2,
@@ -12690,7 +12690,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
@@ -12815,7 +12815,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
@@ -12940,7 +12940,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
@@ -13060,7 +13060,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
@@ -13180,7 +13180,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
@@ -13300,7 +13300,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md"
       ],
       "revision": 3,
@@ -13420,7 +13420,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",
@@ -13484,7 +13484,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",
@@ -13548,7 +13548,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",
@@ -13605,7 +13605,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",
@@ -13662,7 +13662,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",
@@ -13719,7 +13719,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",
@@ -13776,7 +13776,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/bestiary/Hostile-Ecology-Index.md"
       ],
@@ -13848,7 +13848,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/bestiary/Hostile-Ecology-Index.md"
       ],
@@ -13920,7 +13920,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/bestiary/Hostile-Ecology-Index.md"
       ],
@@ -13992,7 +13992,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/bestiary/Hostile-Ecology-Index.md"
       ],
@@ -14064,7 +14064,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/bestiary/Hostile-Ecology-Index.md"
       ],
@@ -14136,7 +14136,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/bestiary/Hostile-Ecology-Index.md"
       ],
@@ -14208,7 +14208,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",
@@ -14267,7 +14267,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",
@@ -14328,7 +14328,7 @@
       "owner": "wiki-world",
       "source_kind": "original-fiction",
       "source_anchors": [
-        "lore/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "GDD/canon/locales/ko-KR/root/research-sources.json#SRC-SEOUL-FICTION-BOUNDARY",
         "lore/factions/Sixteen-States.md",
         "lore/Operating-Houses.md",
         "lore/Synthetic-Actors.md",

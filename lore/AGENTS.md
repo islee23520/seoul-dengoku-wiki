@@ -1,9 +1,9 @@
 # LORE root corpus — atlas canon and read-only projections
 
-Earned its file: score 17 (124 root md files, 16 subdirs, canon→projection architecture feeding the wiki tool); distinct domain — single-source canon plus generated projections. Subdirectories are separate domains with their own AGENTS.md.
+Earned its file: score 17 (root canon and domain data, canon→projection architecture feeding the wiki tool); distinct domain — single-source canon plus generated projections. Subdirectories are separate domains with their own AGENTS.md.
 
 ## OVERVIEW
-The root atlas (`World-Narrative-Atlas.md`) owns machine registries and generated projections. Domain subdirectories hold hand-authored canon under their own AGENTS.md, and `README.md` is the Korean TOC.
+The root atlas (`World-Narrative-Atlas.md`) owns machine registries and generated projections. Domain subdirectories hold JSON authoring sources and Markdown counterparts; some have their own AGENTS.md, and `README.md` is the Korean TOC.
 
 ## WHERE TO LOOK
 | Task | Location |
@@ -20,7 +20,7 @@ The root atlas (`World-Narrative-Atlas.md`) owns machine registries and generate
 
 ## CONVENTIONS
 - Every projection opens with `원본 앵커: LORE/World-Narrative-Atlas.md` plus `원본 해시`; the atlas machine registries (e.g. `monster_contents`) are canon and the split pages are views of them.
-- Projection rendering and checking live in `TOOL/tools/wiki` (`materialize-world-atlas.mjs --check`, `world-atlas-render.mjs`, `world-atlas-verify*.mjs`); the hash names the atlas Markdown that was rendered.
+- Projection rendering and checking live in `wiki/scripts` (`generate-catalog.mjs`, `world-atlas-render.mjs`, `gate.mjs`); the hash names the atlas Markdown that was rendered.
 - Entity IDs are permanent, never renumbered: humans `K001–K412` (Cast-Index row order), states `S01–S16`, houses `HCxx`/`HPxx`, external theaters `XT01–XT05`, synthetics `H/F/V01–16`, hostile groups `G01–G27`, entities `GxxEyy`, batches `Mxxx`/`Bxxx`.
 - Atlas prose contract: Korean 3rd-person limited 한다체 narrative, 합니다체 guidance; `source_kind` separates fact / inference / fiction; one cause-effect per paragraph.
 

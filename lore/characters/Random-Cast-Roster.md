@@ -44,7 +44,7 @@ import random
 from pathlib import Path
 
 people = json.loads(
-    Path('docs/game-logic/name-pools/roster-100.json').read_text(encoding='utf-8')
+    Path('lore/name-pools/roster-100.json').read_text(encoding='utf-8')
 )['people']
 candidate = random.Random(90421).choice(people)
 print(candidate['성명'], candidate['소속'], candidate['성격'])

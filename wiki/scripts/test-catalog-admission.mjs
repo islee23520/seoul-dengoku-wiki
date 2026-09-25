@@ -33,3 +33,10 @@ test('unknown public fields are rejected', () => {
   assert.deepEqual(unknownFields({ slug: 'index', title: '세계관', route: '/world/', reviewText: '', blocks: [], authoringRule: 'private' }, readerFields), ['authoringRule'])
   assert.deepEqual(unknownFields({ domain: 'world', slug: 'index', route: '/world/', title: '세계관', sourcePath: 'lore/index' }, catalogFields), ['sourcePath'])
 })
+
+test('the private naming ledger stays outside the published catalog', async () => {
+  const manifest = JSON.parse(await readFile(resolve(wikiRoot, 'public/wiki-contract.json'), 'utf8'))
+  const pageNames = await readdir(worldRoot)
+  assert.ok(!manifest.documents.some((document) => /editorial|Naming-Ledger/i.test(document.route)))
+  assert.ok(!pageNames.some((name) => /Naming-Ledger|Writing-Rules/i.test(name)))
+})

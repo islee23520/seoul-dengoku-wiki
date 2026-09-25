@@ -1,13 +1,16 @@
-import { mkdtempSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
+import { mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 
-import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, ravelenExclusionFailures, referenceExclusionFailures } from './gate.mjs'
+import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
+const repoRoot = join(scriptDir, '..', '..')
+const ledger = JSON.parse(readFileSync(join(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8'))
+const canon = (path) => JSON.parse(readFileSync(join(repoRoot, path), 'utf8'))
 const referenceDir = [
   join(scriptDir, '..', '..', 'RESEARCH', 'canon-reference'),
   join(scriptDir, '..', '..', '..', 'RESEARCH', 'canon-reference'),
@@ -75,6 +78,35 @@ test('reviewed coined phrases fail on each published text surface', () => {
 
 test('literal logbook lines and ordinary oral testimony are not coined phrases', () => {
   assert.deepEqual(coinedPhraseFailures('운전일지 제42권 첫 줄에 사망일을 적었다. 증언은 구술로 전한다. 창세기전은 참고작이다. 창세', 'world/Century-Annals'), [])
+})
+
+test('nine canonical school names and aliases match the private ledger', () => {
+  const table = canon('lore/culture/Martial-Paths.json').content.find((block) => block.kind === 'table' && block.columns[0].ko === '정식명')
+  assert.ok(table)
+  assert.equal(table.rows.length, 9)
+  assert.deepEqual(table.rows.map((row) => [row[0].ko, row[1].ko]), ledger.martialSchools.map(({ formalName, alias }) => [formalName, alias]))
+  assert.equal(ledger.martialBranch.name, '개방 손')
+  assert.ok(!ledger.martialSchools.some(({ formalName }) => formalName === '개방 손'))
+})
+
+test('sixteen canonical state names and historical precursors match the private ledger', () => {
+  const table = canon('lore/factions/Sixteen-States.json').content.find((block) => block.kind === 'table' && block.columns[0].ko === 'ID')
+  assert.ok(table)
+  assert.equal(table.rows.length, 16)
+  assert.deepEqual(table.rows.map((row) => [row[0].ko, row[1].ko]), ledger.states.map(({ id, name, precursor }) => [id, `${name}(기원 표기 ${precursor}${name === precursor ? ', 유지' : ''})`]))
+})
+
+test('retired public forms fail on published text surfaces', () => {
+  for (const source of ['src/generated/world/fixture.json', 'public/person-details/person-0001.json', 'dist/assets/index.js']) {
+    assert.ok(retiredFormFailures('Seoul Sengoku', source).some((failure) => failure.includes(source)))
+  }
+  assert.ok(retiredFormFailures('급수계약정', 'src/generated/world/Current-State.json').length > 0)
+})
+
+test('historical precursor remains valid in the state origin and chronicle', () => {
+  for (const source of ['src/generated/world/Century-Annals.json', 'src/generated/world/Sixteen-States.json']) {
+    assert.deepEqual(retiredFormFailures('2090년 급수계약정 기록', source), [])
+  }
 })
 
 test('injected Ravelen references fail the public catalog exclusion rule', () => {

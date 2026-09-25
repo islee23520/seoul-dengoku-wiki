@@ -13,6 +13,16 @@ export const toWikiPath = (path: string): string => {
 
 export const stateRoute = (slug: string): string => `/states/${slug}`
 
+export const legacyWorldRoutes: Readonly<Record<string, string>> = {
+  'Conscription-Remnants': 'Sixteen-States',
+  'Factions-and-Diplomacy': 'Chaebol-Houses-and-Century-Factions',
+  'Heirs-Names-and-World-Ledger': 'Hangnyeol-and-Bon-gwan',
+  'Ambitions-and-Relations': 'Cast-Relations',
+}
+
+export const resolveLegacyWorldRoute = (slug: string): string | undefined =>
+  legacyWorldRoutes[slug] ? `/world/${legacyWorldRoutes[slug]}` : undefined
+
 export const normalizeWikiHref = (href: string | undefined): string => {
   if (!href) return '#'
   if (href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href

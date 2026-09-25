@@ -369,7 +369,7 @@
 
 **가. 성소**
 
-붕괴 전 징집 장부가 나뉜 자리가 성소이다. 이 계열은 새 국가를 만들지 않는다. 제사는 [징집 잔존과 군 장부](../factions/Conscription-Remnants.md) 위에 둔다.
+붕괴 전 징집 장부가 나뉜 자리가 성소이다. 이 계열은 새 국가를 만들지 않는다. 제사는 [징집 잔존과 군 장부](../factions/Sixteen-States.md) 위에 둔다.
 
 **나. 의례**
 
@@ -411,7 +411,7 @@
 
 **나. 강제의 결과**
 
-국가가 한 신앙을 공개 제사로 정하여도 역 주민은 여러 제사를 함께 지낸다. 숨은 신앙은 압력을 빼는 밸브 역할을 한다. 강국이 공개 제사를 강제하면 주민은 축전유물파, 침묵분파, 이중가격례, 노선색분파로 옮겨 간다. 숨은 신앙이 발각되면 [세력과 외교](../factions/Factions-and-Diplomacy.md)의 불만과 평판 수치가 바뀐다. 고립은 외부 약속만 약화시킨다. 고립만으로 현지 당집의 정통성이 떨어지지는 않는다.
+국가가 한 신앙을 공개 제사로 정하여도 역 주민은 여러 제사를 함께 지낸다. 숨은 신앙은 압력을 빼는 밸브 역할을 한다. 강국이 공개 제사를 강제하면 주민은 축전유물파, 침묵분파, 이중가격례, 노선색분파로 옮겨 간다. 숨은 신앙이 발각되면 [세력과 외교](../factions/Chaebol-Houses-and-Century-Factions.md)의 불만과 평판 수치가 바뀐다. 고립은 외부 약속만 약화시킨다. 고립만으로 현지 당집의 정통성이 떨어지지는 않는다.
 
 **다. 회랑의 제사**
 
@@ -427,7 +427,7 @@
 
 **바. 작명 키**
 
-문화는 국가 ID와 별개이다. 작명 키는 권역 단위로 유지한다. [후계, 이름 로스터, 세계 원장](../characters/Heirs-Names-and-World-Ledger.md)의 `CultureKey`는 작명 묶음이다. 개막 2126의 국가-키 짝은 [서울 십육국](../factions/Sixteen-States.md)을 정본으로 한다. 국가가 병합되어도 키는 유지한다.
+문화는 국가 ID와 별개이다. 작명 키는 권역 단위로 유지한다. [후계, 이름 로스터, 세계 원장](../characters/Hangnyeol-and-Bon-gwan.md)의 `CultureKey`는 작명 묶음이다. 개막 2126의 국가-키 짝은 [서울 십육국](../factions/Sixteen-States.md)을 정본으로 한다. 국가가 병합되어도 키는 유지한다.
 
 **사. 북부 피난 키**
 
@@ -475,7 +475,7 @@
 
 **가. 교리와 정치**
 
-교리 편집은 이야기 정치의 절반과 연결된다. 왕조, 봉신, 작위, 음모는 [야망](../characters/Ambitions-and-Relations.md)이 다룬다. 신앙은 그 결정의 합법 여부를 판정한다.
+교리 편집은 이야기 정치의 절반과 연결된다. 왕조, 봉신, 작위, 음모는 [야망](../characters/Cast-Relations.md)이 다룬다. 신앙은 그 결정의 합법 여부를 판정한다.
 
 **나. 수정 칸**
 
@@ -488,7 +488,7 @@
 | 봉신 맹세 | 어느 안내방송·도장·급수꼭지·광고액자를 인용하는지 |
 | 작위 보유 | 이단은 역장을 못 함. 숨은 사제는 대행만. 신정 티어 1은 땅의 층 |
 | 배급 순위 | 제사 참여 가구 우선, 또는 공개 경매만 |
-| 정통성 근거 | 물·전력·안전·법통·기술·의료·교역 가운데 무엇을 잠그거나 여는지. 식은 [세력과 외교](../factions/Factions-and-Diplomacy.md)가 적는다 |
+| 정통성 근거 | 물·전력·안전·법통·기술·의료·교역 가운데 무엇을 잠그거나 여는지. 식은 [세력과 외교](../factions/Chaebol-Houses-and-Century-Factions.md)가 적는다 |
 | 조약 인준 | 광화문 도장, 여의도 편성 교차검증, 시청 계약 중재 중 무엇을 필수로 둘지 |
 | 매트릭스 칸 | 공개를 숨은으로, 소수를 이단으로 바꿈 |
 
@@ -558,7 +558,7 @@
 
 **가. 다섯 축**
 
-이야기에서 규칙을 바꾸는 축은 다섯이다. 이 축은 본문의 세기, 승계, 일상을 읽은 뒤에 적용한다. 축이 없으면 봉신 맹세만 남은 왕조 놀이가 된다. 해당 규칙은 [야망](../characters/Ambitions-and-Relations.md)에 기재되어 있다.
+이야기에서 규칙을 바꾸는 축은 다섯이다. 이 축은 본문의 세기, 승계, 일상을 읽은 뒤에 적용한다. 축이 없으면 봉신 맹세만 남은 왕조 놀이가 된다. 해당 규칙은 [야망](../characters/Cast-Relations.md)에 기재되어 있다.
 
 | 축 | 슬롯 | 무엇이 움직이나 | 실패하면 |
 |---|---|---|---|
@@ -585,11 +585,11 @@
 - [서울 십육국](../factions/Sixteen-States.md)
 - [관직](../offices/Offices-and-Ranks.md)
 - [등장인물](../characters/Core-Characters.md)
-- [세력과 외교](../factions/Factions-and-Diplomacy.md)
+- [세력과 외교](../factions/Chaebol-Houses-and-Century-Factions.md)
 - [잃어버린 기술](../technology/Lost-Technology-Lineage.md)
-- [징집 잔존과 군 장부](../factions/Conscription-Remnants.md)
-- [후계, 이름 로스터, 세계 원장](../characters/Heirs-Names-and-World-Ledger.md)
-- [야망](../characters/Ambitions-and-Relations.md)
+- [징집 잔존과 군 장부](../factions/Sixteen-States.md)
+- [후계, 이름 로스터, 세계 원장](../characters/Hangnyeol-and-Bon-gwan.md)
+- [야망](../characters/Cast-Relations.md)
 - [이주민 회랑](../factions/Diaspora-Corridors.md)
 - [인물·세력·생업](../characters/Characters-Factions-and-Professions.md)
 - [본관과 항렬](../characters/Hangnyeol-and-Bon-gwan.md)
