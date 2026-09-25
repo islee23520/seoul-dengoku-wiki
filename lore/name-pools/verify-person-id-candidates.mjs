@@ -35,7 +35,7 @@ const UNAFFILIATED_PATH = path.join(CHARS_DIR, "Cast-Unaffiliated.md");
 const TABLE_PATH = path.join(HERE, "person-id-candidates.json");
 
 export const SCHEMA = "wiki-person-id-candidates.v1";
-export const FROZEN = { existingK: 422, candidates: 585, total: 1007 };
+export const FROZEN = { existingK: 422, candidates: 588, total: 1010 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
@@ -254,10 +254,10 @@ if (!CLI_WRITE) {
     assert.deepEqual(validateTable(committed, ctx), []);
   });
 
-  test("(b) 개수 불변식 422 + 585 = 1007", () => {
+  test("(b) 개수 불변식 422 + 588 = 1010", () => {
     assert.equal(committed.existingKCount, 422);
-    assert.equal(committed.candidateCount, 585);
-    assert.equal(committed.totalPeople, 1007);
+    assert.equal(committed.candidateCount, 588);
+    assert.equal(committed.totalPeople, 1010);
     assert.equal(committed.existingKCount + committed.candidateCount, committed.totalPeople);
     assert.equal(committed.candidateCount, committed.totalPeople - committed.existingKCount);
   });

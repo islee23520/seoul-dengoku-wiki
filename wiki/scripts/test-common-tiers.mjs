@@ -2,10 +2,10 @@ import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import test from 'node:test'
 
-test('all 1007 people have a common T1-T5 tier', async () => {
+test('all 1010 people have a common T1-T5 tier', async () => {
   const root = new URL('../public/person-details/', import.meta.url)
   const files = (await readdir(root)).filter((name) => name.endsWith('.json'))
-  assert.equal(files.length, 1007)
+  assert.equal(files.length, 1010)
   for (const file of files) {
     const person = JSON.parse(await readFile(new URL(file, root), 'utf8'))
     assert.match(person.commonTier, /^T[1-5]$/u, file)

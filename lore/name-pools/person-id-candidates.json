@@ -1,10 +1,10 @@
 {
   "schema": "wiki-person-id-candidates.v1",
-  "inputSha256": "50c4370ca6193ca9251fcae413261adf4aaa0dbadcd898012a361964727ac5cf",
-  "baseCommit": "84a8c56b3ba3d4b31bc2db077458862a630f1768",
-  "totalPeople": 1007,
+  "inputSha256": "d2979fcecbe6c369d2d9a3730e5c2521e220ff7ee537ca962f8ab2a2389b893e",
+  "baseCommit": "7e8638a634d3c1541007cd5d095ac38df5cb9dbc",
+  "totalPeople": 1010,
   "existingKCount": 422,
-  "candidateCount": 585,
+  "candidateCount": 588,
   "existingK": [
     {
       "id": "K001",
@@ -6375,6 +6375,30 @@
       "state": "S06",
       "title": "온민의 수장",
       "locked": false
+    },
+    {
+      "ordinal": 586,
+      "name": "민웅기",
+      "stage": "S1",
+      "state": "S00",
+      "title": "통신 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 587,
+      "name": "신종목",
+      "stage": "S1",
+      "state": "S00",
+      "title": "귀환망 현장 계약자",
+      "locked": false
+    },
+    {
+      "ordinal": 588,
+      "name": "신준",
+      "stage": "S1",
+      "state": "S00",
+      "title": "",
+      "locked": false
     }
   ],
   "NOTES": [
@@ -6422,6 +6446,21 @@
       "type": "core-tier-without-k",
       "name": "김연규",
       "detail": "주요 단계 잠금 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "민웅기",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "신종목",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "신준",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
     },
     {
       "type": "ledger-person-not-in-values",
