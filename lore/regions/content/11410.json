@@ -25,7 +25,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S06"
+        ],
         "inhabitants": [
           "영천 저울손",
           "독립문 쪽지 서기",
@@ -196,8 +198,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -224,7 +231,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S06"
+        ],
         "inhabitants": [
           "두산 저층 반장",
           "푸르지오 난방 당번",
@@ -444,8 +453,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -473,7 +487,9 @@
           "lore/places/Seoul-Station-Catalog.md",
           "lore/characters/Cast-State-06.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S06"
+        ],
         "inhabitants": [
           "충정로 창구 서기",
           "서대문 대합실 안내",
@@ -700,8 +716,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -729,7 +750,9 @@
           "lore/places/Seoul-Station-Catalog.md",
           "lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "대합실 중개인",
           "의학도서관 전등 당번",
@@ -914,8 +937,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S09",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -942,7 +970,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "구청 장부 서기",
           "사천교 물통 지기",
@@ -1122,8 +1152,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S09",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1151,7 +1186,9 @@
           "lore/places/Seoul-Station-Catalog.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "고개 안내인",
           "성원아파트 난로 당번",
@@ -1322,8 +1359,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S09",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -1350,7 +1392,9 @@
           "lore/places/Seoul-Station-Catalog.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "약수 물지게",
           "대합실 통행증 서기",
@@ -1563,8 +1607,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S09",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -1591,7 +1640,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "인왕약수 물지게",
           "범바위 사면 감시",
@@ -1748,8 +1799,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1776,7 +1832,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "둔치 물수레",
           "풍림 저녁 반장",
@@ -1968,8 +2026,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1996,7 +2059,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "병원 난로 당직",
           "사회교육관 잠자리 관리",
@@ -2195,8 +2260,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -2223,7 +2293,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "모래내 저울손",
           "파크뷰 저녁 대표",
@@ -2417,8 +2489,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S09",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2445,7 +2522,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "운수 마당 수레꾼",
           "캠퍼스 상자 필경사",
@@ -2644,8 +2723,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S09",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2672,7 +2756,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/places/World-and-Subway-Layers.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "요양 난로 당직",
           "공터 적재 일꾼",
@@ -2875,8 +2961,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S09",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2903,7 +2994,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "사거리 물수레",
           "삼호아파트 저녁 반장",
@@ -3088,8 +3181,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S09",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
