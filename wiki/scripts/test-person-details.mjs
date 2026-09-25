@@ -65,8 +65,8 @@ test('S02 issued cards retain distinct bilingual livelihoods and their martial s
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
     : [])
-  assert.equal(headings.length, 65)
-  assert.ok(!headings.some(({ name }) => name === '이일섭'))
+  assert.equal(headings.length, 66)
+  assert.ok(headings.some(({ name }) => name === '이일섭'))
   for (const [index, heading] of headings.entries()) {
     const id = idByName.get(heading.name)
     assert.ok(id, heading.name)
