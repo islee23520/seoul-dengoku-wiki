@@ -160,13 +160,21 @@ function main() {
   failures.push(...retiredFormFailures(htmlMetadata(shell), 'dist/index.html metadata'))
   failures.push(...coinedPhraseFailures(visibleText(shell), 'dist/index.html'))
   failures.push(...retiredFormFailures(visibleText(shell), 'dist/index.html'))
+  const historicalForm = '급수계약정'
+  const historicalPage = JSON.parse(readFileSync(join(contentDir, 'Sixteen-States.json'), 'utf8'))
+  const historicalPageCount = (JSON.stringify(historicalPage.blocks).match(/급수계약정/gu) ?? []).length
+  const historicalOriginCount = (readFileSync(join(wikiRoot, 'src/generated/stateCatalog.ts'), 'utf8').match(/"origin": "급수계약정"/gu) ?? []).length
+  if (historicalPageCount !== 1 || historicalOriginCount !== 1) failures.push('FAIL retired-form: historical origin baseline changed')
+  let historicalBundleCount = 0
   for (const file of listFiles(join(distDir, 'assets')).filter((file) => file.endsWith('.js'))) {
     const source = readFileSync(file, 'utf8')
     const rel = posixRel(wikiRoot, file)
     failures.push(...coinedPhraseFailures(source, rel))
-    failures.push(...retiredFormFailures(source, rel))
+    historicalBundleCount += (source.match(/급수계약정/gu) ?? []).length
+    failures.push(...retiredFormFailures(source.replaceAll(historicalForm, ''), rel))
     failures.push(...ravelenExclusionFailures(source, rel))
   }
+  if (historicalBundleCount !== historicalPageCount * 2 + historicalOriginCount) failures.push(`FAIL retired-form: dist/assets/ contains ${historicalBundleCount} historical-origin forms; expected ${historicalPageCount * 2 + historicalOriginCount}`)
   for (const file of listFiles(join(wikiRoot, 'public')).filter((file) => file.endsWith('.json'))) {
     const source = readFileSync(file, 'utf8')
     const rel = posixRel(wikiRoot, file)
