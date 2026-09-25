@@ -207,9 +207,9 @@ test('territory map offers surface and subway layers with vassal ring and tier l
   assert.match(map, /territory-layer-toggle/)
   assert.match(map, /territory-layer-overlay/)
   assert.match(map, /undergroundLevels/)
-  assert.match(map, /역 · 대합실/)
+  assert.match(map, /실측 심도/)
   assert.match(map, /승강장/)
-  assert.match(map, /터널/)
+  assert.match(map, /회색 점선: 심도 또는 선형 미상/)
   assert.match(map, /territory-underground-levels/)
   assert.match(map, /aria-pressed=\{layer ===/)
   assert.match(map, /territory-vassal-markers/)
@@ -309,4 +309,52 @@ test('mouse controls use left drag for pan, right drag for orbit, and wheel zoom
   assert.match(map, /controls\.mouseButtons\.RIGHT = THREE\.MOUSE\.ROTATE/)
   assert.match(map, /onContextMenu=\{\(event\) => event\.preventDefault\(\)\}/)
   assert.doesNotMatch(map, /controls\.enableZoom = false/)
+})
+
+test('offline underground asset preserves observed depths, unknowns and graph membership', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const detail = JSON.parse(await readFile(new URL('../public/underground-detail.json', import.meta.url), 'utf8'))
+  assert.equal(detail.schema, 'underground-detail.v1')
+  assert.match(detail.verticalScale, /5 metres/)
+  assert.deepEqual(Object.keys(detail.stations).sort(), data.stations.map((station) => station.id).sort())
+  for (const source of Object.values(detail.sources)) {
+    assert.match(source.url, /^https:\/\//)
+    assert.match(source.license, /공공누리|제한 없음|ODbL/)
+    assert.match(source.sha256, /^[a-f0-9]{64}$/)
+  }
+  const samples = [
+    ['서울', '2-1', 11.85], ['시청', '2-1', 10.05], ['시청', '3-2', 19.89],
+    ['종로3가', '2-1', 11.24], ['종로3가', '4-3', 20.25], ['공덕', '6-5', 20.29],
+    ['공덕', '7-6', 13.38], ['여의도', '6-5', 27.78], ['Sindorim', '3-2', 10.84],
+    ['을지로4가', '6-5', 26.51], ['종각', '2-1', 11.43],
+  ]
+  for (const [station, line, observed] of samples) assert.equal(detail.stations[station]?.[line]?.platformM, observed, `${station}/${line}`)
+  assert.equal(detail.stations['공덕']['A'].platformM, null)
+  assert.equal(detail.stations['공덕']['K'].platformM, null)
+  assert.ok(Object.values(detail.stations).filter((lines) => Object.values(lines).every((entry) => entry.platformM === null)).length > 50)
+  for (const station of data.stations) {
+    assert.deepEqual(Object.keys(detail.stations[station.id]).sort(), station.lineIds.sort(), station.id)
+    for (const entry of Object.values(detail.stations[station.id])) {
+      assert.equal(entry.platformM === null, entry.railM === null, station.id)
+      assert.equal(entry.platformM !== null, Boolean(entry.sources.depth), station.id)
+      if (entry.platformM !== null) assert.ok(entry.platformM > 0 && entry.railM > entry.platformM)
+    }
+  }
+  assert.ok(detail.paths.some((path) => path.kind === 'observed' && path.points.length > 3))
+  const edgeKeys = new Set(data.edges.flatMap((edge, index) => edge.lineIds.map((line) => `${index}/${line}`)))
+  for (const path of detail.paths) {
+    assert.ok(edgeKeys.has(`${path.edge}/${path.lineId}`), `${path.edge}/${path.lineId}`)
+    assert.ok(path.points.length >= 2)
+    assert.ok(path.points.every(([x, y, depth]) => Number.isFinite(x) && Number.isFinite(y) && (depth === null || Number.isFinite(depth))))
+    assert.equal(path.kind === 'observed', path.osmWay !== null)
+  }
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  assert.match(map, /station\.memberIds\.map\(\(id\) => underground\.stations\[id\]\?\.\[lineId\]\)/)
+  assert.match(map, /displayStations/)
+  assert.match(map, /memberIds/)
+  assert.match(map, /selectedLine === 'all' \|\| lineId === selectedLine/)
+  const aliases = await readFile(new URL('../src/components/stationPresentation.ts', import.meta.url), 'utf8')
+  assert.match(aliases, /station\.lineIds\.some\(\(lineId\) => primary\.lineIds\.includes\(lineId\)\)/)
+  assert.ok(detail.stations['강변']['3-2'])
+  assert.ok(detail.stations['강변(동서울터미널)']['3-2'])
 })
