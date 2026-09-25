@@ -1,0 +1,523 @@
+{
+  "version": 1,
+  "states": [
+    {
+      "id": "S06",
+      "name": "대한민국정부",
+      "precursor": "대한민국정부",
+      "namingYear": 2026,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2026년"
+      ]
+    },
+    {
+      "id": "S01",
+      "name": "수문국",
+      "precursor": "급수계약정",
+      "namingYear": 2091,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2091년"
+      ]
+    },
+    {
+      "id": "S02",
+      "name": "규격맹",
+      "precursor": "규격동맹",
+      "namingYear": 2092,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2092년"
+      ]
+    },
+    {
+      "id": "S07",
+      "name": "환적국",
+      "precursor": "선로후계정",
+      "namingYear": 2092,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2092년"
+      ]
+    },
+    {
+      "id": "S05",
+      "name": "동방사",
+      "precursor": "호위보호정",
+      "namingYear": 2093,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2093년"
+      ]
+    },
+    {
+      "id": "S03",
+      "name": "태욱그룹",
+      "precursor": "양재기공주식회사",
+      "namingYear": 2095,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2095년"
+      ]
+    },
+    {
+      "id": "S09",
+      "name": "여의도출자연합회",
+      "precursor": "여의도출자연합회",
+      "namingYear": 2053,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2053년"
+      ]
+    },
+    {
+      "id": "S13",
+      "name": "흰십자단",
+      "precursor": "의약중립맹",
+      "namingYear": 2096,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2096년"
+      ]
+    },
+    {
+      "id": "S14",
+      "name": "아관사",
+      "precursor": "관문군정",
+      "namingYear": 2093,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2093년"
+      ]
+    },
+    {
+      "id": "S12",
+      "name": "신내운수",
+      "precursor": "중립호송시",
+      "namingYear": 2096,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2096년"
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "명부교회",
+      "precursor": "설교명부정",
+      "namingYear": 2096,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2096년"
+      ]
+    },
+    {
+      "id": "S15",
+      "name": "명동대교구",
+      "precursor": "본당인준정",
+      "namingYear": 2096,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2096년"
+      ]
+    },
+    {
+      "id": "S10",
+      "name": "안국총림",
+      "precursor": "승가구휼정",
+      "namingYear": 2096,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2096년"
+      ]
+    },
+    {
+      "id": "S11",
+      "name": "성하그룹",
+      "precursor": "서초전산그룹",
+      "namingYear": 2095,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2095년"
+      ]
+    },
+    {
+      "id": "S08",
+      "name": "중앙기술보존원",
+      "precursor": "교헌필사정",
+      "namingYear": 2079,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2079년"
+      ]
+    },
+    {
+      "id": "S16",
+      "name": "정동노총",
+      "precursor": "정동노동총연맹",
+      "namingYear": 2096,
+      "sources": [
+        "lore/factions/Sixteen-States.md#16국-기원",
+        "lore/chronology/Century-Annals.md#2096년"
+      ]
+    }
+  ],
+  "martialSchools": [
+    {
+      "formalName": "수문호흡법",
+      "hanja": null,
+      "alias": "수문손",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    },
+    {
+      "formalName": "차륜강체공",
+      "hanja": null,
+      "alias": "차륜망치",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    },
+    {
+      "formalName": "강단호명법",
+      "hanja": null,
+      "alias": "강단발",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    },
+    {
+      "formalName": "호위철벽진",
+      "hanja": null,
+      "alias": "호위방패",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    },
+    {
+      "formalName": "기록단절법",
+      "hanja": null,
+      "alias": "기록칼",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    },
+    {
+      "formalName": "죽검연환법",
+      "hanja": null,
+      "alias": "죽대손",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    },
+    {
+      "formalName": "연각권법",
+      "hanja": null,
+      "alias": "매트손",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    },
+    {
+      "formalName": "공탄총검법",
+      "hanja": null,
+      "alias": "빈탄손",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    },
+    {
+      "formalName": "감응조준법",
+      "hanja": null,
+      "alias": "렌즈숨",
+      "source": "lore/culture/Martial-Paths.md#아홉-유파"
+    }
+  ],
+  "martialBranch": {
+    "name": "개방 손",
+    "formalName": null,
+    "source": "lore/culture/Martial-Paths.md#개방-손"
+  },
+  "offices": [
+    {
+      "state": "대한민국정부",
+      "tiers": [
+        "대통령",
+        "장관",
+        "차관",
+        "국장",
+        "주사·기록 당직자"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "수문국",
+      "tiers": [
+        "군주",
+        "본부장",
+        "구역장",
+        "당직장",
+        "주사"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "환적국",
+      "tiers": [
+        "역장",
+        "본부장",
+        "구역장",
+        "당직장",
+        "주사"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "동방사",
+      "tiers": [
+        "사령관",
+        "참모장",
+        "대대장",
+        "중대장",
+        "병장"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "아관사",
+      "tiers": [
+        "사령관",
+        "참모장",
+        "대대장",
+        "중대장·수비대장·현장책임자",
+        "병장·공동실무원·수비대원"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "명부교회",
+      "tiers": [
+        "당회장",
+        "장로",
+        "권사",
+        "집사",
+        "교사"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "명동대교구",
+      "tiers": [
+        "대주교",
+        "신부",
+        "수사",
+        "부제",
+        "교우"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "안국총림",
+      "tiers": [
+        "방장",
+        "총무원장",
+        "주지·수좌",
+        "스님",
+        "신도·행자"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "중앙기술보존원",
+      "tiers": [
+        "원장",
+        "심사관",
+        "보존관·수석기사",
+        "기술원·기사",
+        "출입자·교도"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "여의도출자연합회",
+      "tiers": [
+        "의장",
+        "부회장",
+        "전무",
+        "부장·평의원",
+        "직원·서기"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "성하그룹",
+      "tiers": [
+        "회장",
+        "사장",
+        "전무·상무",
+        "부장",
+        "대리·사원"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "태욱그룹",
+      "tiers": [
+        "회장",
+        "사장",
+        "전무",
+        "부장",
+        "대리"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "정동노총",
+      "tiers": [
+        "위원장",
+        "부위원장",
+        "본부장",
+        "지부장",
+        "조합원"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "규격맹",
+      "tiers": [
+        "위원장",
+        "상임이사",
+        "이사",
+        "감사",
+        "조합원"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "신내운수",
+      "tiers": [
+        "사장",
+        "배차장",
+        "반장",
+        "서기",
+        "호송원"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    },
+    {
+      "state": "흰십자단",
+      "tiers": [
+        "단장",
+        "전문의",
+        "수련의",
+        "의무원",
+        "회원"
+      ],
+      "source": "lore/offices/Offices-and-Ranks.md#국가별-관직표"
+    }
+  ],
+  "seriesTitles": [
+    {
+      "form": "《서울:전국》",
+      "source": "lore/README.md"
+    },
+    {
+      "form": "Seoul Subway States",
+      "source": "lore/chronology/Century-Annals.json"
+    }
+  ],
+  "historicalOnlyForms": [
+    {
+      "form": "급수계약정",
+      "state": "S01",
+      "untilYear": 2091,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "규격동맹",
+      "state": "S02",
+      "untilYear": 2092,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "선로후계정",
+      "state": "S07",
+      "untilYear": 2092,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "호위보호정",
+      "state": "S05",
+      "untilYear": 2093,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "양재기공주식회사",
+      "state": "S03",
+      "untilYear": 2095,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "의약중립맹",
+      "state": "S13",
+      "untilYear": 2096,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "관문군정",
+      "state": "S14",
+      "untilYear": 2093,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "중립호송시",
+      "state": "S12",
+      "untilYear": 2096,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "설교명부정",
+      "state": "S04",
+      "untilYear": 2096,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "본당인준정",
+      "state": "S15",
+      "untilYear": 2096,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "승가구휼정",
+      "state": "S10",
+      "untilYear": 2096,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "서초전산그룹",
+      "state": "S11",
+      "untilYear": 2095,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "교헌필사정",
+      "state": "S08",
+      "untilYear": 2079,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    },
+    {
+      "form": "정동노동총연맹",
+      "state": "S16",
+      "untilYear": 2096,
+      "source": "lore/factions/Sixteen-States.md#16국-기원"
+    }
+  ],
+  "retiredPublicForms": [
+    {
+      "form": "급수계약정",
+      "source": "lore/factions/Sixteen-States.md#16국-기원",
+      "exceptSources": [
+        "Century-Annals.json",
+        "Sixteen-States.json",
+        "dist/assets/"
+      ]
+    },
+    {
+      "form": "Seoul Sengoku",
+      "source": "lore/README.md"
+    },
+    {
+      "form": "OmO",
+      "source": "lore/chronology/Century-Annals.md#2122년"
+    },
+    {
+      "form": "실록",
+      "source": "lore/chronology/Century-Annals.md"
+    }
+  ]
+}
