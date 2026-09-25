@@ -386,6 +386,61 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original 
   assert.equal(seen.size, 61)
 })
 
+test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and original martial states', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-09.json', import.meta.url), 'utf8'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const values = JSON.parse(await readFile(new URL('../../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const expectedMartial = new Map(Object.entries({
+    '없음. 생업만.': 'K219 K220 K223 K224 K226 K227 K229 K230 K232 K234 K235 K236 K237 K240 K241 K242 K432 K448 K480 K496 K528 K544 K576 K592 K624 K640 K672 K688 K720 K736 K768 K784 K816 K832 K864 K880 K912 K928 K960 K976 K244',
+    '기록칼': 'K221 K222 K231 K233 K238 K239 K243',
+    '차륜망치': 'K225 K464 K512 K560 K608 K656 K704 K752 K800 K848 K896 K944 K992',
+    '호위방패': 'K228',
+  }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
+  assert.equal(expectedMartial.size, 62)
+  const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
+  assert.equal(headings.length, 62)
+  const seen = new Set()
+  for (const [index, heading] of headings.entries()) {
+    const matches = registry.persons.filter((person) => person.name === heading.name)
+    assert.equal(matches.length, 1, heading.name)
+    const id = matches[0].id
+    assert.ok(expectedMartial.has(id), id)
+    assert.ok(!seen.has(id), id)
+    seen.add(id)
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const fields = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+    const occupations = fields.filter((item) => plain(item.ko).startsWith('생업: '))
+    assert.equal(occupations.length, 1, id)
+    assert.match(plain(occupations[0].en), /^Livelihood: \S/u, id)
+    const occupation = plain(occupations[0].ko).slice(4)
+    assert.ok(occupation && occupation !== '미등록', id)
+    const title = fields.find((item) => plain(item.ko).startsWith('직함: '))
+    const rank = fields.find((item) => plain(item.ko).startsWith('품계: '))
+    assert.notEqual(occupation, plain(title.ko).slice(4).split('\n')[0], id)
+    assert.notEqual(occupation, plain(rank.ko).slice(4), id)
+    const detailMatches = values.flatMap((person, valueIndex) => person.name === heading.name && person.state === 'S09'
+      ? [valueIndex + 1] : [])
+    assert.equal(detailMatches.length, 1, id)
+    const detailId = `person-${String(detailMatches[0]).padStart(4, '0')}`
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.id, detailId, id)
+    assert.equal(detail.name, heading.name, id)
+    assert.equal(detail.state, 'S09', id)
+    assert.equal(detail.occupation, occupation, id)
+    assert.equal(detail.fields['생업'], occupation, id)
+    assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-09#'), id)
+    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
+      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
+    const martial = martialText.match(/무공\.\s*(기록칼|차륜망치|호위방패|없음\. 생업만\.)/u)?.[1]
+    assert.equal(martial, expectedMartial.get(id), id)
+    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+  }
+  assert.equal(seen.size, 62)
+})
+
 test('person detail page renders tables and the canonical prose sections', async () => {
   const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8')
   const page = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
