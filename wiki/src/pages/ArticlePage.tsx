@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import { wikiCatalog, type WikiDomain } from '../generated/wikiCatalog'
 import { WorldBlocks, headingId, plainText, type WorldBlock } from '../components/WorldBlocks'
-import { resolveLegacyWorldRoute } from '../wikiRouting'
+import { resolveLegacyRegionRoute, resolveLegacyWorldRoute } from '../wikiRouting'
 
 const OpeningTerritoryMap = lazy(() => import('../components/OpeningTerritoryMap'))
 const TimelineOverview = lazy(() => import('../components/TimelineOverview'))
@@ -21,6 +21,7 @@ export default function ArticlePage() {
 
   const normalizedSlug = slug?.replace(/\.html$/, '') || 'index'
   const legacyRoute = domain === 'world' ? resolveLegacyWorldRoute(normalizedSlug) : undefined
+  const legacyRegionRoute = domain === 'world' ? resolveLegacyRegionRoute(pathname) : undefined
   const wikiDocument = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
   const [blocks, setBlocks] = useState<WorldBlock[] | null>(null)
   const [loadFailed, setLoadFailed] = useState(false)
@@ -74,6 +75,7 @@ export default function ArticlePage() {
   }, [blocks])
 
   if (legacyRoute) return <Navigate to={`${legacyRoute}${hash}`} replace />
+  if (legacyRegionRoute) return <Navigate to={legacyRegionRoute} replace />
   if (!wikiDocument || loadFailed) return <Navigate to={`/${domain}/`} replace />
   if (!blocks) {
     return <div className="wiki-loading" role="status">문서를 불러오고 있습니다.</div>

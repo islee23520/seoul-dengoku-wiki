@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { StateFlag } from './StateFlag'
+import { resolveRegionSelection } from '../wikiRouting'
 import './OpeningTerritoryMap.css'
 
 type State = { id: string; name: string; slug: string; origin: string; government: string; power: string; relation: '복속' | '보좌' | '독립' | null; ruler: string; cause: string; labelX: number; labelY: number; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
@@ -156,6 +157,8 @@ const parseTerritoryPath = (path: string) => {
 }
 
 export default function OpeningTerritoryMap() {
+  const [searchParams] = useSearchParams()
+  const requestedRegion = searchParams.get('region')
   const [data, setData] = useState<TerritoryData | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [stateFilter, setStateFilter] = useState('all')
@@ -182,10 +185,15 @@ export default function OpeningTerritoryMap() {
         if (!response.ok) throw new Error(`E_TERRITORY_HTTP:${response.status}`)
         return response.json() as Promise<TerritoryData>
       })
-      .then((value) => { setData(value); setSelectedId(value.regions[0]?.id ?? null) })
+      .then((value) => { setData(value) })
       .catch((error) => { if (error.name !== 'AbortError') setFailed(true) })
     return () => controller.abort()
   }, [])
+
+  useEffect(() => {
+    if (!data) return
+    setSelectedId(resolveRegionSelection(data.regions, requestedRegion))
+  }, [data, requestedRegion])
 
   const states = useMemo(() => new Map(data?.states.map((state, index) => [state.id, { ...state, color: colors[index] }]) ?? []), [data])
   const vassals = data?.vassals ?? []
