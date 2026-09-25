@@ -7,6 +7,7 @@ import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs'
 import { projectionsFromAtlas } from './world-atlas-render.mjs'
+import { verifyAtlasPeople } from './world-atlas-verify.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
 import { latestUpdates } from './update-history.mjs'
@@ -171,6 +172,13 @@ const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
 const atlasMarkdown = await readFile(resolve(loreRoot, 'World-Narrative-Atlas.md'), 'utf8')
 const atlas = extractAtlasJson(atlasMarkdown)
 if (!atlas.ok) throw new Error(`E_ATLAS_JSON:${atlas.error}`)
+const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
+const atlasPeople = verifyAtlasPeople(atlas.value, {
+  registry: JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')),
+  candidates: JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-candidates.json'), 'utf8')),
+  people: peopleSource,
+})
+if (atlasPeople.failures.length) throw new Error(atlasPeople.failures.join('\n'))
 const atlasHash = sha256Text(atlasMarkdown)
 const projections = projectionsFromAtlas(atlas.value, atlasHash)
 const glossaryMarkdown = await readFile(resolve(loreRoot, 'Glossary.md'), 'utf8')
@@ -276,7 +284,6 @@ const stateCatalog = stateRows.map((row) => ({
 }))
 await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type StateRecord = { slug: string; id: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
-const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
 const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
 const stateNameById = new Map(stateCatalog.map((state) => [state.slug.toUpperCase(), state.name]))

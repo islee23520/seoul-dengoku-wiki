@@ -60,3 +60,20 @@ event:
 - 구세대 `docs/cast-*` 브랜치와 조각을 `main`에 기계 병합하지 않는다. 브랜치별 자동 merge, rerere, ours/theirs 일괄 적용도 하지 않는다.
 - 총람의 게시 기준선 SHA, 큐레이션 이슈, 브랜치와 검토 상태는 공개 인물 산문이 아니라 비게시 작업 원장에 기록한다. 별도 조각은 그 원장에서 검토한 뒤 정본 카드와 연결한다.
 - 인물 총람의 관계 수는 관계 원장에서 해당 인물이 보낸 간선만 센다. 수신 간선으로만 이어진 인물을 고립 인물로 판정하지 않는다.
+
+## 총람 무소속 컬렉션
+
+- `World-Narrative-Atlas.md`의 기계 등록부 JSON 울타리 뒤, 마지막 2단계 절에 `## 무소속`을 한 번 둔다. 이 절에는 `unaffiliated` 객체 하나를 담은 JSON 울타리만 둔다. 객체 키는 이미 발급된 K ID이며, 같은 키를 반복하지 않는다.
+- 각 행의 필수 필드는 `name`과 `character_id`(캐릭터 ID)다. 조재표와 이연은 발급 원장의 기존 alias를 보존한다. 별도 alias가 없는 사람은 이미 발급된 K ID를 캐릭터 ID로 쓴다. 이름으로 새 ID를 추측하거나 다시 발급하지 않는다.
+- 16국 행의 `state_id`, `state_name`, 직위·단계 필드는 무소속 행에 넣지 않는다. 인물 상세의 사실과 전기는 기존 카드가 맡는다. 외부 출처·동명 위험 인물도 안정 캐릭터 ID가 필수이며, 기존 국가 카드에 소급하여 새 필드를 붙이지 않는다.
+- `humans[]` K001–K422와 `person-id-candidates.json`의 `existingK`는 동결한다. 합산 인물 수는 동결 국가 422명 + 발급 원장과 `values-cast.json`의 S00에 대조한 무소속 수다. 전체에서 ID·이름·캐릭터 ID 중복을 거부하며, S00은 국가 목록에 추가하지 않는다. 이 부분 총람은 전체 1010명 카드의 대체 명부가 아니다.
+- React 카탈로그 생성은 `world-atlas-verify.mjs`의 합산 검증을 통과한 뒤 `World-Expansion-Index.md` 투영에 다섯 인물의 실제 `/people/person-####` 경로를 싣는다. 다른 투영의 산문과 기존 인물 상세는 고치지 않는다.
+
+저장소 루트에서 위키의 동일 렌더러로 해당 Markdown 투영을 생성하고 바이트 검사를 한다. 부모 저장소의 구형 렌더러로 다른 투영을 일괄 덮어쓰지 않는다.
+
+```bash
+node wiki/scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.md --out lore --projection World-Expansion-Index.md
+node wiki/scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.md --out lore --projection World-Expansion-Index.md --check
+npm --prefix wiki run test:atlas
+npm --prefix wiki run build
+```
