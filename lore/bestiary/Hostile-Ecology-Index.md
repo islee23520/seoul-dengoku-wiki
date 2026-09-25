@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `840eb4a34065e527ce76802116c8bc358f4c96be0817ba66e62cfd1c8d17bfdf`
+- 원본 해시: `dca81a769ab9a15c3adc40c604704623e2d5ec16d382c8884670f3743064ad90`
 
 같은 서식권에 사는 공통종과 특수 변이를 구분해 읽습니다. 기계 기종, 고정 시설과 군집 현상은 생물 종과 따로 표시합니다.
 
@@ -100,7 +100,7 @@ XT01 유입 피난 행렬의 잔반은 별도 회수로 빼 무리 유인을 줄
 수렵 이득을 취하는 순간 통행 안전 데이터가 왜곡된다.
 
 공존을 택하면 단기 위협 신고가 남지만 수문 노동 동선은 유지된다.
-- 시나리오: [G01-SC1](groups/Hostile-Group-G01.md#g01-sc1--수문-밖-첫-발굽), [G01-SC2](groups/Hostile-Group-G01.md#g01-sc2--염분-웅덩이의-값), [G01-SC3](groups/Hostile-Group-G01.md#g01-sc3--범람선의-통행권)
+- 시나리오: [G01-SC1](groups/Hostile-Group-G01.md#g01-sc1-수문-밖-첫-발굽), [G01-SC2](groups/Hostile-Group-G01.md#g01-sc2-염분-웅덩이의-값), [G01-SC3](groups/Hostile-Group-G01.md#g01-sc3-범람선의-통행권)
 
 ### G01-SC1 · 수문 밖 첫 발굽
 
@@ -194,7 +194,7 @@ XT02 해풍 주간에는 횃대 공유를 인정하는 임시 깃발을 단다.
 - 도덕 비용: 둥지를 한꺼번에 밀어내면 단기 통행은 열리지만 경보 기능과 곤충 포식 균형이 무너지고, 보행 아동·피난민이 대체 공격 대상이 된다.
 
 송신 복구를 생태보다 앞세우면 야간 정전 구간이 늘어 다른 가문 갈등이 커진다.
-- 시나리오: [G02-SC1](groups/Hostile-Group-G02.md#g02-sc1--세-번의-경적), [G02-SC2](groups/Hostile-Group-G02.md#g02-sc2--가짜-정전-경보), [G02-SC3](groups/Hostile-Group-G02.md#g02-sc3--교량-위의-새-신호)
+- 시나리오: [G02-SC1](groups/Hostile-Group-G02.md#g02-sc1-세-번의-경적), [G02-SC2](groups/Hostile-Group-G02.md#g02-sc2-가짜-정전-경보), [G02-SC3](groups/Hostile-Group-G02.md#g02-sc3-교량-위의-새-신호)
 
 ### G02-SC1 · 세 번의 경적
 
@@ -282,7 +282,7 @@ H03이 공격성 군집으로 묶어도 HC03 중재자는 개체별 인식표·�
 - 도덕 비용: 유기 이력을 빌미로 전멸하면 보호 윤리와 시민 협조가 함께 무너지고, 급식을 끊으면 시장 아동 통로로 무리가 밀려든다.
 
 포획 개체를 투기 교환 자원으로 삼는 순간 협상 창이 닫힌다.
-- 시나리오: [G03-SC1](groups/Hostile-Group-G03.md#g03-sc1--녹슨-이름표), [G03-SC2](groups/Hostile-Group-G03.md#g03-sc2--급식차를-기억하는-무리), [G03-SC3](groups/Hostile-Group-G03.md#g03-sc3--환승-계단의-재결속)
+- 시나리오: [G03-SC1](groups/Hostile-Group-G03.md#g03-sc1-녹슨-이름표), [G03-SC2](groups/Hostile-Group-G03.md#g03-sc2-급식차를-기억하는-무리), [G03-SC3](groups/Hostile-Group-G03.md#g03-sc3-환승-계단의-재결속)
 
 ### G03-SC1 · 녹슨 이름표
 
@@ -374,7 +374,7 @@ XT04 한파 주간에는 갤러리 일부 난방을 공유 은신 허용 구역�
 - 도덕 비용: 질병 공포로 전면 독살하면 관로 노동자와 하류 식수가 함께 위험해지고, 지표종 정보를 잃는다.
 
 펌프 가동만 위해 은신처를 수몰시키면 지상 주거 침입이 늘어난다.
-- 시나리오: [G04-SC1](groups/Hostile-Group-G04.md#g04-sc1--맨홀-아래의-선행지표), [G04-SC2](groups/Hostile-Group-G04.md#g04-sc2--준설창의-두-가족), [G04-SC3](groups/Hostile-Group-G04.md#g04-sc3--펌프실의-마른-통로)
+- 시나리오: [G04-SC1](groups/Hostile-Group-G04.md#g04-sc1-맨홀-아래의-선행지표), [G04-SC2](groups/Hostile-Group-G04.md#g04-sc2-준설창의-두-가족), [G04-SC3](groups/Hostile-Group-G04.md#g04-sc3-펌프실의-마른-통로)
 
 ### G04-SC1 · 맨홀 아래의 선행지표
 
@@ -470,7 +470,7 @@ XT05 단백질 하역 주간에는 임시 이중 밀봉 라인을 우선 지원�
 - 도덕 비용: 전염 공포를 빌미로 피난민 구역만 봉쇄하면 군락은 더 깊은 케이블 층으로 들어가 복구가 어려워지고, 독성 전면전은 아동·반려 구간 노출을 키운다.
 
 배급 속도를 위해 잔반 회수를 미루면 2단계로 고정된다.
-- 시나리오: [G05-SC1](groups/Hostile-Group-G05.md#g05-sc1--두-번째-코어-둥지), [G05-SC2](groups/Hostile-Group-G05.md#g05-sc2--밀폐-순서의-오류), [G05-SC3](groups/Hostile-Group-G05.md#g05-sc3--개방-중정의-포식자)
+- 시나리오: [G05-SC1](groups/Hostile-Group-G05.md#g05-sc1-두-번째-코어-둥지), [G05-SC2](groups/Hostile-Group-G05.md#g05-sc2-밀폐-순서의-오류), [G05-SC3](groups/Hostile-Group-G05.md#g05-sc3-개방-중정의-포식자)
 
 ### G05-SC1 · 두 번째 코어 둥지
 
@@ -570,7 +570,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 - 도덕 비용: 복원 실패를 덮으려 군락을 전면 제거하면 하류 정화와 기착 네트워크가 붕괴하고, 수문 시야만 위해 수면을 말리면 먼지·악취·다른 포식 유입이 시민을 친다.
 
 보호종 가면을 쓴 밀거래도 협상 창을 닫는다.
-- 시나리오: [G06-SC1](groups/Hostile-Group-G06.md#g06-sc1--얕은-물의-세-기능군), [G06-SC2](groups/Hostile-Group-G06.md#g06-sc2--열차-시간표를-배운-새), [G06-SC3](groups/Hostile-Group-G06.md#g06-sc3--철새-주간의-선로)
+- 시나리오: [G06-SC1](groups/Hostile-Group-G06.md#g06-sc1-얕은-물의-세-기능군), [G06-SC2](groups/Hostile-Group-G06.md#g06-sc2-열차-시간표를-배운-새), [G06-SC3](groups/Hostile-Group-G06.md#g06-sc3-철새-주간의-선로)
 
 ### G06-SC1 · 얕은 물의 세 기능군
 
@@ -713,7 +713,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 필요를 악으로 번역하는 순간 완충제 재고를 공유할 정치가 사라진다.
 
 잔혹한 일소는 단기 안전처럼 보여도 장기 회랑 신뢰를 태운다.
-- 시나리오: [G07-SC1](groups/Hostile-Group-G07.md#g07-sc1--흰-염선의-배차), [G07-SC2](groups/Hostile-Group-G07.md#g07-sc2--장부-밖-폐전지), [G07-SC3](groups/Hostile-Group-G07.md#g07-sc3--하나의-전도면)
+- 시나리오: [G07-SC1](groups/Hostile-Group-G07.md#g07-sc1-흰-염선의-배차), [G07-SC2](groups/Hostile-Group-G07.md#g07-sc2-장부-밖-폐전지), [G07-SC3](groups/Hostile-Group-G07.md#g07-sc3-하나의-전도면)
 
 ### G07-SC1 · 흰 염선의 배차
 
@@ -856,7 +856,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 공존을 거부한 대가는 노량진과 제기동 밀폐 회랑의 공동 정화 실패다.
 
 필요를 악으로 부르면 여재 공유 정치가 사라진다.
-- 시나리오: [G08-SC1](groups/Hostile-Group-G08.md#g08-sc1--빈-천의-방향), [G08-SC2](groups/Hostile-Group-G08.md#g08-sc2--역회전-송풍), [G08-SC3](groups/Hostile-Group-G08.md#g08-sc3--거부된-방호키)
+- 시나리오: [G08-SC1](groups/Hostile-Group-G08.md#g08-sc1-빈-천의-방향), [G08-SC2](groups/Hostile-Group-G08.md#g08-sc2-역회전-송풍), [G08-SC3](groups/Hostile-Group-G08.md#g08-sc3-거부된-방호키)
 
 ### G08-SC1 · 빈 천의 방향
 
@@ -1003,7 +1003,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 온도 숫자를 숨긴 채 외양만 단죄하는 보고는 원장 위반으로 적힌다.
 
 저온 회랑의 호흡 불편을 인격 모욕의 근거로 쓰지 않으며, 배급 순번에서 특정 외양 단위를 뒤로 미루는 관행도 금지한다.
-- 시나리오: [G09-SC1](groups/Hostile-Group-G09.md#g09-sc1--정전-뒤-재기동), [G09-SC2](groups/Hostile-Group-G09.md#g09-sc2--조작된-검수-온도), [G09-SC3](groups/Hostile-Group-G09.md#g09-sc3--지워진-냉열-경계)
+- 시나리오: [G09-SC1](groups/Hostile-Group-G09.md#g09-sc1-정전-뒤-재기동), [G09-SC2](groups/Hostile-Group-G09.md#g09-sc2-조작된-검수-온도), [G09-SC3](groups/Hostile-Group-G09.md#g09-sc3-지워진-냉열-경계)
 
 ### G09-SC1 · 정전 뒤 재기동
 
@@ -1150,7 +1150,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 습한 공기 속의 기침을 인격 모욕으로 옮기지 않으며, 배급 창에서 특정 호흡 단위를 뒤로 미루는 관행을 금지한다.
 
 소독 구호가 원장 숫자보다 앞서면 위반으로 적는다.
-- 시나리오: [G10-SC1](groups/Hostile-Group-G10.md#g10-sc1--미끄러운-돌계단), [G10-SC2](groups/Hostile-Group-G10.md#g10-sc2--한-웅덩이의-두-물), [G10-SC3](groups/Hostile-Group-G10.md#g10-sc3--중지-선언)
+- 시나리오: [G10-SC1](groups/Hostile-Group-G10.md#g10-sc1-미끄러운-돌계단), [G10-SC2](groups/Hostile-Group-G10.md#g10-sc2-한-웅덩이의-두-물), [G10-SC3](groups/Hostile-Group-G10.md#g10-sc3-중지-선언)
 
 ### G10-SC1 · 미끄러운 돌계단
 
@@ -1293,7 +1293,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 알람음과 구동 외형을 인격 모욕의 근거로 쓰지 않으며, 보호자 동의 없는 분해 시연을 금지한다.
 
 돌봄 재개 문장은 강제 회수가 아니라 일정과 부품 숫자로만 쓴다.
-- 시나리오: [G11-SC1](groups/Hostile-Group-G11.md#g11-sc1--동시에-울린-알람), [G11-SC2](groups/Hostile-Group-G11.md#g11-sc2--두-장의-보호자-서명), [G11-SC3](groups/Hostile-Group-G11.md#g11-sc3--같은-포트)
+- 시나리오: [G11-SC1](groups/Hostile-Group-G11.md#g11-sc1-동시에-울린-알람), [G11-SC2](groups/Hostile-Group-G11.md#g11-sc2-두-장의-보호자-서명), [G11-SC3](groups/Hostile-Group-G11.md#g11-sc3-같은-포트)
 
 ### G11-SC1 · 동시에 울린 알람
 
@@ -1442,7 +1442,7 @@ H06이 하나의 적대 점수로 합치면 HC06 생태 당직이 기능군별 �
 분진 자극을 인격 모욕으로 옮기지 않으며, 작업 노출 흔적으로 통행 순번을 뒤로 미루는 관행을 금지한다.
 
 덮개와 여재 숫자보다 혐오 구호가 앞서면 원장 위반이다.
-- 시나리오: [G12-SC1](groups/Hostile-Group-G12.md#g12-sc1--멈춘-크레인), [G12-SC2](groups/Hostile-Group-G12.md#g12-sc2--역세수의-역류), [G12-SC3](groups/Hostile-Group-G12.md#g12-sc3--접지-매듭)
+- 시나리오: [G12-SC1](groups/Hostile-Group-G12.md#g12-sc1-멈춘-크레인), [G12-SC2](groups/Hostile-Group-G12.md#g12-sc2-역세수의-역류), [G12-SC3](groups/Hostile-Group-G12.md#g12-sc3-접지-매듭)
 
 ### G12-SC1 · 멈춘 크레인
 
