@@ -239,6 +239,10 @@ export function renderExpansionIndex(atlas, atlasHash) {
   const lines = ['# 세계 확장 색인', '', banner(atlasHash)];
   lines.push(`- 가문 ${(atlas.houses ?? []).length} / 전구 ${(atlas.theaters ?? []).length} / 합성 ${(atlas.synthetics ?? []).length}`);
   lines.push(`- 사회배치 ${(atlas.story_batches ?? []).length} / 생태 ${(atlas.hostile_groups ?? []).length} / 몬스터배치 ${(atlas.monster_batches ?? []).length}`);
+  lines.push('', '## 무소속', '', '| 캐릭터 ID | 인물 |', '| --- | --- |');
+  for (const [id, person] of Object.entries(atlas.unaffiliated)) {
+    lines.push('| ' + tableCell(person.character_id) + ' | [' + tableCell(person.name) + '](/people/person-' + id.slice(1).padStart(4, '0') + ') |');
+  }
   return `${lines.join('\n').trim()}\n`;
 }
 

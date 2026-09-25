@@ -25,6 +25,7 @@
     "test:timeline": "node --test scripts/test-timeline-overview.mjs",
     "test:lore-render": "node --test scripts/test-lore-json-render.mjs",
     "test:common-tiers": "node --test scripts/test-common-tiers.mjs",
+    "test:atlas": "node --test scripts/test-world-atlas.mjs",
     "test:person-id": "node --test ../lore/name-pools/verify-person-id-candidates.mjs ../lore/name-pools/verify-person-id-registry.mjs"
   },
   "dependencies": {

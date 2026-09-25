@@ -121,10 +121,38 @@ test('thirteen vassals point at valid suzerains outside the sixteen', async () =
     assert.ok(vassal.city.length > 0, `city: ${vassal.name}`)
     assert.match(vassal.founded, /^2\d{3}\.\s*\d+\./u, `founded: ${vassal.name}`)
     assert.ok(vassal.duty.length > 0, `duty: ${vassal.name}`)
-    assert.equal(vassal.coordinateStatus, 'TODO', `outside Seoul coordinate: ${vassal.name}`)
+    assert.equal(vassal.coordinateStatus, 'surveyed', `outside Seoul coordinate: ${vassal.name}`)
+    assert.match(vassal.coordinateSource, /vuski\/admdongkor/u)
+    assert.ok(Number.isFinite(vassal.east) && Number.isFinite(vassal.north))
     assert.ok(vassal.anchor.length > 0, `line anchor: ${vassal.name}`)
     assert.ok(data.lines[vassal.lineId], `official line: ${vassal.name}`)
   }
+})
+
+test('committed terrain covers Seoul and all surveyed vassal centroids with source attribution', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const meta = JSON.parse(await readFile(new URL('../public/regional-terrain.json', import.meta.url), 'utf8'))
+  const peninsula = meta.layers.find((layer) => layer.name === 'peninsula')
+  const metro = meta.layers.find((layer) => layer.name === 'metro')
+  assert.ok(peninsula && metro)
+  for (const layer of meta.layers) {
+    const bytes = await readFile(new URL(`../public/${layer.file}`, import.meta.url))
+    assert.equal(bytes.byteLength, layer.width * layer.height * 4)
+    assert.ok(layer.width <= 512 && layer.height <= 512)
+  }
+  const inside = (layer, east, north) => east >= layer.bboxEPSG5179[0] && east <= layer.bboxEPSG5179[2] && north >= layer.bboxEPSG5179[1] && north <= layer.bboxEPSG5179[3]
+  assert.ok(inside(metro, (data.projection.minEast + data.projection.maxEast) / 2, (data.projection.minNorth + data.projection.maxNorth) / 2))
+  for (const vassal of data.vassals) {
+    assert.ok(inside(metro, vassal.east, vassal.north), `${vassal.city} inside metro terrain`)
+    assert.ok(inside(peninsula, vassal.east, vassal.north), `${vassal.city} inside peninsula terrain`)
+  }
+  assert.match(meta.attribution, /Mapzen Terrain Tiles/u)
+  assert.match(meta.attribution, /vuski\/admdongkor CC BY 4\.0/u)
+  assert.match(meta.attribution, /OpenStreetMap contributors ODbL/u)
+  const rail = JSON.parse(await readFile(new URL('../public/regional-rail.json', import.meta.url), 'utf8'))
+  const stationNames = new Set(rail.stations.map((station) => station.name))
+  for (const name of ['신창', '연천', '춘천', '문산', '지평', '오이도', '석남', '인천공항2터미널', '광교', '원시']) assert.ok(stationNames.has(name), `regional station: ${name}`)
+  for (const lineId of ['2-1', '3-2', '4-3', '5-4', '6-5', '7-6', '8-7', '9-8', '10-9', 'A', 'B', 'E', 'G', 'I', 'I2', 'K', 'KK', 'KP', 'S', 'SH', 'SL', 'U', 'W', '1-GA']) assert.ok(rail.paths.some((path) => path.lineId === lineId), `regional line: ${lineId}`)
 })
 
 test('government relations come from the canon table and use only defined terms or null', async () => {

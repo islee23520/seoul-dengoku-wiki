@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+import { TessellateModifier } from 'three/addons/modifiers/TessellateModifier.js'
 import { StateFlag } from './StateFlag'
 import { resolveRegionSelection } from '../wikiRouting'
 import './OpeningTerritoryMap.css'
@@ -12,8 +13,11 @@ type LineDefinition = { name: string; color: string }
 type StationControl = { source: 'derived-from-surface' | 'outside-surface-atlas' | 'control-delta'; deltaId: string | null; status: 'held' | 'contested' | 'vacant' | 'unknown'; polityIds: string[]; polityNames: string[]; surfaceRegionId: string | null; surfaceRegionName: string | null; hierarchy: { state: string; regionalAuthority: string; stationManager: string } }
 type Station = { id: string; name: string; district: string; x: number; y: number; degree: number; lineIds: string[]; control: StationControl }
 type SubwayEdge = { a: string; b: string; lineIds: string[] }
-type Vassal = { name: string; city: string; suzerain: string; founded: string; duty: string; anchor: string; lineId: string; coordinateStatus: 'TODO' }
-type TerritoryData = { width: number; height: number; epoch: { label: string }; states: State[]; vassals: Vassal[]; lines: Record<string, LineDefinition>; stations: Station[]; edges: SubwayEdge[]; majorStationIds: string[]; regions: Region[]; attribution: string }
+type Vassal = { name: string; city: string; suzerain: string; founded: string; duty: string; anchor: string; lineId: string; x: number; y: number; east: number; north: number; coordinateStatus: 'surveyed'; coordinateSource: string }
+type Projection = { crs: 'EPSG:5179'; minEast: number; maxEast: number; minNorth: number; maxNorth: number }
+type TerritoryData = { width: number; height: number; projection: Projection; epoch: { label: string }; states: State[]; vassals: Vassal[]; lines: Record<string, LineDefinition>; stations: Station[]; edges: SubwayEdge[]; majorStationIds: string[]; regions: Region[]; attribution: string }
+type TerrainLayer = { name: string; file: string; zoom: number; bboxEPSG5179: number[]; width: number; height: number; minElevation: number; maxElevation: number }
+type RegionalData = { meta: { layers: TerrainLayer[]; attribution: string }; grids: Uint16Array[]; boundaries: Array<{ city: string; centroid: [number, number]; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] } }>; rail: { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> } }
 type TerritoryLayer = 'surface' | 'subway'
 type MarkerPosition = { left: number; top: number; anchorLeft: number; anchorTop: number; visible: boolean }
 type RegionMesh = THREE.Mesh<THREE.ExtrudeGeometry, THREE.MeshStandardMaterial> & { userData: { regionId: string; baseColor: string } }
@@ -23,6 +27,7 @@ type MapRuntime = {
   pan: (x: number, z: number) => void
   orbit: (radians: number) => void
   zoom: (factor: number) => void
+  framePeninsula: () => void
   meshes: RegionMesh[]
   lineMaterials: Map<string, THREE.LineBasicMaterial>
   vassalLineMaterials: Array<{ lineId: string; material: THREE.LineBasicMaterial }>
@@ -46,46 +51,10 @@ const vacantColor = '#6f7a7f'
 const surfaceStationColor = '#f8f1cf'
 const undergroundLevels = { station: -1.8, platform: -4.4, tunnel: -7 } as const
 
-const SEOUL_CENTER = { lat: 37.572, lon: 126.978 }
-const vassalCityCoords: Record<string, { lat: number; lon: number; ring: 1 | 2 }> = {
-  고양: { lat: 37.658, lon: 126.832, ring: 1 },
-  양평: { lat: 37.492, lon: 127.588, ring: 2 },
-  춘천: { lat: 37.881, lon: 127.73, ring: 2 },
-  '천안·아산': { lat: 36.804, lon: 127.074, ring: 2 },
-  시흥: { lat: 37.38, lon: 126.802, ring: 1 },
-  인천: { lat: 37.456, lon: 126.705, ring: 1 },
-  파주: { lat: 37.76, lon: 126.779, ring: 1 },
-  하남: { lat: 37.542, lon: 127.215, ring: 1 },
-  남양주: { lat: 37.637, lon: 127.219, ring: 1 },
-  '의정부·연천': { lat: 37.87, lon: 127.075, ring: 2 },
-  성남: { lat: 37.43, lon: 127.139, ring: 1 },
-  수원: { lat: 37.264, lon: 127.0, ring: 2 },
-  영종: { lat: 37.489, lon: 126.532, ring: 2 },
-}
-const vassalRingRadius = { 1: 51, 2: 57 }
-
-const cityBearing = (lat: number, lon: number) => Math.atan2((lon - SEOUL_CENTER.lon) * 88, (lat - SEOUL_CENTER.lat) * 111)
-
-const compassLabel = (lat: number, lon: number) => {
-  const degrees = ((cityBearing(lat, lon) * 180 / Math.PI) + 360) % 360
+const compassLabel = (x: number, y: number, width: number, height: number) => {
+  const degrees = ((Math.atan2(x - width / 2, height / 2 - y) * 180 / Math.PI) + 360) % 360
   const labels = ['북쪽', '북동쪽', '동쪽', '남동쪽', '남쪽', '남서쪽', '서쪽', '북서쪽']
   return labels[Math.round(degrees / 45) % 8]
-}
-
-const spreadAngles = (angles: number[], minGap: number) => {
-  const order = angles.map((angle, index) => ({ angle, index })).sort((left, right) => left.angle - right.angle)
-  const spread = order.map((entry) => entry.angle)
-  for (let index = 1; index < spread.length; index += 1) {
-    if (spread[index] - spread[index - 1] < minGap) spread[index] = spread[index - 1] + minGap
-  }
-  const wrap = spread[0] + Math.PI * 2 - spread[spread.length - 1]
-  if (order.length > 1 && wrap < minGap) {
-    const shift = (minGap - wrap) / 2
-    for (let index = 0; index < spread.length; index += 1) spread[index] += shift
-  }
-  const result = new Array<number>(angles.length)
-  order.forEach((entry, seat) => { result[entry.index] = spread[seat] })
-  return result
 }
 
 const resolveMarkerCollisions = (markers: Array<{ id: string; left: number; top: number; visible: boolean }>, width: number, height: number) => {
@@ -156,11 +125,22 @@ const parseTerritoryPath = (path: string) => {
   return points
 }
 
+const terrainHeight = (elevation: number) => elevation <= 0 ? -0.48 : Math.min(elevation, 2900) * 0.0045
+
+const terrainSample = (layer: TerrainLayer, grid: Uint16Array, east: number, north: number) => {
+  const [minEast, minNorth, maxEast, maxNorth] = layer.bboxEPSG5179
+  const col = THREE.MathUtils.clamp(Math.round((east - minEast) / (maxEast - minEast) * (layer.width - 1)), 0, layer.width - 1)
+  const row = THREE.MathUtils.clamp(Math.round((maxNorth - north) / (maxNorth - minNorth) * (layer.height - 1)), 0, layer.height - 1)
+  return grid[(row * layer.width + col) * 2] - 500
+}
+
 export default function OpeningTerritoryMap() {
   const [searchParams] = useSearchParams()
   const requestedRegion = searchParams.get('region')
   const [data, setData] = useState<TerritoryData | null>(null)
+  const [regional, setRegional] = useState<RegionalData | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [selectedVassal, setSelectedVassal] = useState<string | null>(null)
   const [stateFilter, setStateFilter] = useState('all')
   const [selectedLine, setSelectedLine] = useState('all')
   const [layer, setLayer] = useState<TerritoryLayer>('surface')
@@ -192,6 +172,24 @@ export default function OpeningTerritoryMap() {
 
   useEffect(() => {
     if (!data) return
+    const controller = new AbortController()
+    const asset = (name: string) => fetch(`${import.meta.env.BASE_URL}${name}`, { signal: controller.signal }).then((response) => {
+      if (!response.ok) throw new Error(`E_REGIONAL_ASSET:${name}:${response.status}`)
+      return response
+    })
+    void asset('regional-terrain.json').then((response) => response.json() as Promise<RegionalData['meta']>).then(async (meta) => {
+      const [boundaries, rail, ...buffers] = await Promise.all([
+        asset('regional-boundaries.json').then((response) => response.json() as Promise<RegionalData['boundaries']>),
+        asset('regional-rail.json').then((response) => response.json() as Promise<RegionalData['rail']>),
+        ...meta.layers.map((entry) => asset(entry.file).then((response) => response.arrayBuffer())),
+      ])
+      setRegional({ meta, boundaries, rail, grids: buffers.map((buffer) => new Uint16Array(buffer as ArrayBuffer)) })
+    }).catch((error) => { if (error.name !== 'AbortError') setFailed(true) })
+    return () => controller.abort()
+  }, [data])
+
+  useEffect(() => {
+    if (!data) return
     setSelectedId(resolveRegionSelection(data.regions, requestedRegion))
   }, [data, requestedRegion])
 
@@ -205,12 +203,18 @@ export default function OpeningTerritoryMap() {
     return counts
   }, [data])
   const selectState = (state: State) => {
+    setSelectedVassal(null)
     setStateFilter(state.id)
     setSelectedId(state.capitalRegionId)
   }
+  const selectVassal = (vassal: Vassal) => {
+    setSelectedVassal(vassal.name)
+    setStateFilter('all')
+    setSelectedId(null)
+  }
 
   useEffect(() => {
-    if (!data || !canvasRef.current || !shellRef.current) return
+    if (!data || !regional || !canvasRef.current || !shellRef.current) return
     const canvas = canvasRef.current
     const shell = shellRef.current
     let renderer: THREE.WebGLRenderer
@@ -227,15 +231,15 @@ export default function OpeningTerritoryMap() {
     renderer.setClearColor(0x07151c, 1)
 
     const scene = new THREE.Scene()
-    scene.fog = new THREE.Fog(0x07151c, 150, 340)
-    const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 420)
+    scene.fog = new THREE.Fog(0x07151c, 7000, 10500)
+    const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 12000)
     const controls = new OrbitControls(camera, canvas)
     controls.enableDamping = false
     controls.screenSpacePanning = false
     controls.minPolarAngle = Math.PI * 0.16
     controls.maxPolarAngle = Math.PI * 0.47
     controls.minDistance = 42
-    controls.maxDistance = 270
+    controls.maxDistance = 6500
     controls.mouseButtons.LEFT = THREE.MOUSE.PAN
     controls.mouseButtons.RIGHT = THREE.MOUSE.ROTATE
 
@@ -249,9 +253,68 @@ export default function OpeningTerritoryMap() {
 
     const scale = 100 / data.width
     const mapWorldHeight = data.height * scale
+    const { minEast, maxEast, minNorth, maxNorth } = data.projection
+    const worldAt = (east: number, north: number) => ({ x: (east - minEast) / (maxEast - minEast) * 100 - 50, z: (maxNorth - north) / (maxNorth - minNorth) * mapWorldHeight - mapWorldHeight / 2 })
+    const projectedAt = (x: number, z: number) => ({ east: minEast + (x + 50) / 100 * (maxEast - minEast), north: maxNorth - (z + mapWorldHeight / 2) / mapWorldHeight * (maxNorth - minNorth) })
+    const metroLayer = regional.meta.layers.find((entry) => entry.name === 'metro')!
+    const metroGrid = regional.grids[regional.meta.layers.indexOf(metroLayer)]
+    const surfaceY = (x: number, z: number) => {
+      const { east, north } = projectedAt(x, z)
+      const [e0, n0, e1, n1] = metroLayer.bboxEPSG5179
+      if (east < e0 || east > e1 || north < n0 || north > n1) return 0
+      return terrainHeight(terrainSample(metroLayer, metroGrid, east, north))
+    }
     const stationById = new Map(data.stations.map((station) => [station.id, station]))
     const meshes: RegionMesh[] = []
     const disposables: Array<{ dispose: () => void }> = []
+    const vassalByCity = new Map(vassals.map((entry) => [entry.city, entry]))
+    const terrainGroup = new THREE.Group()
+    scene.add(terrainGroup)
+    for (let layerIndex = 0; layerIndex < regional.meta.layers.length; layerIndex += 1) {
+      const terrain = regional.meta.layers[layerIndex]
+      const grid = regional.grids[layerIndex]
+      const vertices: number[] = []
+      const colors: number[] = []
+      const indices: number[] = []
+      const [e0, n0, e1, n1] = terrain.bboxEPSG5179
+      for (let row = 0; row < terrain.height; row += 1) {
+        const north = n1 - row / (terrain.height - 1) * (n1 - n0)
+        for (let col = 0; col < terrain.width; col += 1) {
+          const east = e0 + col / (terrain.width - 1) * (e1 - e0)
+          const { x, z } = worldAt(east, north)
+          const index = (row * terrain.width + col) * 2
+          const elevation = grid[index] - 500
+          const territoryIndex = grid[index + 1]
+          const living = territoryIndex > 0
+          const sea = elevation <= 0
+          const color = new THREE.Color(sea ? '#14394d' : living ? elevation > 550 ? '#68857e' : '#4f7364' : elevation > 900 ? '#66665f' : '#4a524f')
+          const variation = Math.min(0.2, Math.max(0, elevation) / 3600)
+          color.offsetHSL(0, 0, variation)
+          if (!sea && territoryIndex >= 2) {
+            const vassal = vassalByCity.get(regional.boundaries[territoryIndex - 2]?.city)
+            const suzerain = vassal && states.get(vassal.suzerain)
+            if (suzerain) color.lerp(new THREE.Color(suzerain.color), 0.78)
+          }
+          vertices.push(x, terrainHeight(elevation) + (terrain.name === 'metro' ? 0.08 : 0), z)
+          colors.push(color.r, color.g, color.b)
+        }
+      }
+      for (let row = 0; row < terrain.height - 1; row += 1) for (let col = 0; col < terrain.width - 1; col += 1) {
+        const a = row * terrain.width + col
+        const b = a + 1
+        const c = a + terrain.width
+        indices.push(a, c, b, b, c, c + 1)
+      }
+      const geometry = new THREE.BufferGeometry()
+      geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3))
+      geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3))
+      geometry.setIndex(indices)
+      geometry.computeVertexNormals()
+      const material = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide })
+      const mesh = new THREE.Mesh(geometry, material)
+      terrainGroup.add(mesh)
+      disposables.push(geometry, material)
+    }
     for (const region of data.regions) {
       const points = parseTerritoryPath(region.path)
       const shape = new THREE.Shape()
@@ -263,8 +326,11 @@ export default function OpeningTerritoryMap() {
       })
       shape.closePath()
       const depth = (region.status === 'held' ? 0.82 : region.status === 'vacant' ? 0.3 : 0.46) + Math.min(region.stationCount * 0.035, 0.28)
-      const geometry = new THREE.ExtrudeGeometry(shape, { depth, steps: 1, bevelEnabled: false })
+      const geometry = new TessellateModifier(1.8, 5).modify(new THREE.ExtrudeGeometry(shape, { depth, steps: 1, bevelEnabled: false }))
       geometry.rotateX(-Math.PI / 2)
+      const positions = geometry.getAttribute('position')
+      for (let index = 0; index < positions.count; index += 1) positions.setY(index, positions.getY(index) + surfaceY(positions.getX(index), positions.getZ(index)) + 0.14)
+      positions.needsUpdate = true
       geometry.computeVertexNormals()
       const baseColor = region.status === 'vacant' ? vacantColor : region.status === 'contested' ? '#9f9276' : states.get(region.polities[0])?.color ?? '#777777'
       const material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.68, metalness: 0.08, emissive: 0x061016, emissiveIntensity: 0.18 })
@@ -327,14 +393,47 @@ export default function OpeningTerritoryMap() {
       const lineIds = edge.lineIds.length > 0 ? edge.lineIds : ['unclassified']
       for (const lineId of lineIds) {
         if (!subwayPositionsByLine.has(lineId)) subwayPositionsByLine.set(lineId, [])
+        const ax = (a.x - data.width / 2) * scale
+        const az = (a.y - data.height / 2) * scale
+        const bx = (b.x - data.width / 2) * scale
+        const bz = (b.y - data.height / 2) * scale
         subwayPositionsByLine.get(lineId)!.push(
-          (a.x - data.width / 2) * scale, 1.38, (a.y - data.height / 2) * scale,
-          (b.x - data.width / 2) * scale, 1.38, (b.y - data.height / 2) * scale,
+          ax, surfaceY(ax, az) + 1.38, az,
+          bx, surfaceY(bx, bz) + 1.38, bz,
         )
       }
     }
     const lineMaterials = new Map<string, THREE.LineBasicMaterial>()
     const byLineSegments: THREE.LineSegments[] = []
+    const vassalLineMaterials: Array<{ lineId: string; material: THREE.LineBasicMaterial }> = []
+    const regionalRailGroup = new THREE.Group()
+    scene.add(regionalRailGroup)
+    const regionalByLine = new Map<string, number[]>()
+    for (const path of regional.rail.paths) {
+      if (path.points.length < 2) continue
+      const positions = regionalByLine.get(path.lineId) ?? []
+      const points = path.points.map(([east, north]) => {
+        const { x, z } = worldAt(east, north)
+        return [x, surfaceY(x, z) + 0.75, z]
+      })
+      for (let index = 1; index < points.length; index += 1) positions.push(...points[index - 1], ...points[index])
+      regionalByLine.set(path.lineId, positions)
+    }
+    for (const [lineId, positions] of regionalByLine) {
+      const geometry = new THREE.BufferGeometry()
+      geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
+      const material = new THREE.LineBasicMaterial({ color: data.lines[lineId]?.color ?? '#d1b976', transparent: true, opacity: 0.85 })
+      const line = new THREE.LineSegments(geometry, material)
+      line.userData.lineId = lineId
+      regionalRailGroup.add(line)
+      vassalLineMaterials.push({ lineId, material })
+      disposables.push(geometry, material)
+      const tunnelGeometry = new THREE.BufferGeometry()
+      tunnelGeometry.setAttribute('position', new THREE.Float32BufferAttribute(positions.map((value, index) => index % 3 === 1 ? undergroundLevels.tunnel : value), 3))
+      const tunnel = new THREE.LineSegments(tunnelGeometry, material)
+      undergroundGroup.add(tunnel)
+      disposables.push(tunnelGeometry)
+    }
     for (const [lineId, positions] of subwayPositionsByLine) {
       const subwayGeometry = new THREE.BufferGeometry()
       subwayGeometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
@@ -386,7 +485,11 @@ export default function OpeningTerritoryMap() {
       disposables.push(geometry)
     }
 
-    const stationPositions = data.stations.flatMap((station) => [(station.x - data.width / 2) * scale, 1.52, (station.y - data.height / 2) * scale])
+    const stationPositions = data.stations.flatMap((station) => {
+      const x = (station.x - data.width / 2) * scale
+      const z = (station.y - data.height / 2) * scale
+      return [x, surfaceY(x, z) + 1.52, z]
+    })
     const stationGeometry = new THREE.BufferGeometry()
     stationGeometry.setAttribute('position', new THREE.Float32BufferAttribute(stationPositions, 3))
     stationGeometry.setAttribute('stationIndex', new THREE.Float32BufferAttribute(data.stations.map((_, index) => index), 1))
@@ -398,7 +501,11 @@ export default function OpeningTerritoryMap() {
     scene.add(stationPoints)
     disposables.push(stationGeometry, stationMaterial)
 
-    const capitalPositions = data.states.flatMap((state) => [(state.capitalX - data.width / 2) * scale, 2.25, (state.capitalY - data.height / 2) * scale])
+    const capitalPositions = data.states.flatMap((state) => {
+      const x = (state.capitalX - data.width / 2) * scale
+      const z = (state.capitalY - data.height / 2) * scale
+      return [x, surfaceY(x, z) + 2.25, z]
+    })
     const capitalGeometry = new THREE.BufferGeometry()
     capitalGeometry.setAttribute('position', new THREE.Float32BufferAttribute(capitalPositions, 3))
     const capitalMaterial = new THREE.PointsMaterial({ color: 0xffd66b, size: 1.65, sizeAttenuation: true })
@@ -407,73 +514,41 @@ export default function OpeningTerritoryMap() {
     scene.add(capitalPoints)
     disposables.push(capitalGeometry, capitalMaterial)
 
+    const regionalStationGeometry = new THREE.BufferGeometry()
+    const regionalStationCoordinates = regional.rail.stations.flatMap((station) => {
+      const { x, z } = worldAt(station.east, station.north)
+      return [x, surfaceY(x, z) + 0.95, z]
+    })
+    regionalStationGeometry.setAttribute('position', new THREE.Float32BufferAttribute(regionalStationCoordinates, 3))
+    const regionalStationMaterial = new THREE.PointsMaterial({ color: 0xf7eac1, size: 0.85, sizeAttenuation: true })
+    const regionalStationCloud = new THREE.Points(regionalStationGeometry, regionalStationMaterial)
+    regionalStationCloud.renderOrder = 5
+    scene.add(regionalStationCloud)
+    disposables.push(regionalStationGeometry, regionalStationMaterial)
+
     const vassalGroup = new THREE.Group()
     const vassalAnchors = new Map<string, THREE.Vector3>()
-    const vassalLineMaterials: Array<{ lineId: string; material: THREE.LineBasicMaterial }> = []
-    if (vassals.length > 0) {
-      const byRing: Record<1 | 2, Array<{ name: string; angle: number }>> = { 1: [], 2: [] }
-      for (const vassal of vassals) {
-        const city = vassalCityCoords[vassal.city]
-        if (!city) continue
-        byRing[city.ring].push({ name: vassal.name, angle: cityBearing(city.lat, city.lon) })
-      }
-      const minGap: Record<1 | 2, number> = { 1: 0.34, 2: 0.5 }
-      const angleByName = new Map<string, number>()
-      for (const ring of [1, 2] as const) {
-        const entries = byRing[ring]
-        const spread = spreadAngles(entries.map((entry) => entry.angle), minGap[ring])
-        entries.forEach((entry, index) => angleByName.set(entry.name, spread[index]))
-      }
-      for (const vassal of vassals) {
-        const city = vassalCityCoords[vassal.city]
-        const angle = angleByName.get(vassal.name)
-        const suzerain = states.get(vassal.suzerain)
-        if (!city || angle === undefined) continue
-        const radius = vassalRingRadius[city.ring]
-        const anchor = new THREE.Vector3(Math.sin(angle) * radius, 1.5, -Math.cos(angle) * radius)
-        vassalAnchors.set(vassal.name, anchor)
-        const markerGeometry = new THREE.OctahedronGeometry(1.45)
-        const markerMaterial = new THREE.MeshStandardMaterial({ color: suzerain?.color ?? '#78868a', roughness: 0.5, metalness: 0.15, emissive: 0x0a141a, emissiveIntensity: 0.3 })
-        const marker = new THREE.Mesh(markerGeometry, markerMaterial)
-        marker.position.copy(anchor)
-        marker.renderOrder = 6
-        vassalGroup.add(marker)
-        disposables.push(markerGeometry, markerMaterial)
-        const pillarGeometry = new THREE.CylinderGeometry(0.1, 0.1, 1.7, 8)
-        const pillarMaterial = new THREE.MeshStandardMaterial({ color: 0x37505c, roughness: 0.8, metalness: 0.05 })
-        const pillar = new THREE.Mesh(pillarGeometry, pillarMaterial)
-        pillar.position.set(anchor.x, 0.75, anchor.z)
-        vassalGroup.add(pillar)
-        disposables.push(pillarGeometry, pillarMaterial)
-        if (suzerain) {
-          const bearing = new THREE.Vector3(Math.sin(angle), 0, -Math.cos(angle))
-          const candidates = data.stations.filter((station) => station.lineIds.includes(vassal.lineId))
-          const lastSeoulStation = candidates.reduce<Station | null>((best, station) => {
-            const score = ((station.x - data.width / 2) * scale) * bearing.x + ((station.y - data.height / 2) * scale) * bearing.z
-            const bestScore = best ? ((best.x - data.width / 2) * scale) * bearing.x + ((best.y - data.height / 2) * scale) * bearing.z : -Infinity
-            return score > bestScore ? station : best
-          }, null)
-          if (!lastSeoulStation) continue
-          const terminal = new THREE.Vector3((lastSeoulStation.x - data.width / 2) * scale, 1.5, (lastSeoulStation.y - data.height / 2) * scale)
-          const linkGeometry = new THREE.BufferGeometry().setFromPoints([terminal, anchor])
-          const linkMaterial = new THREE.LineBasicMaterial({ color: data.lines[vassal.lineId].color, transparent: true, opacity: 0.95 })
-          vassalLineMaterials.push({ lineId: vassal.lineId, material: linkMaterial })
-          const link = new THREE.Line(linkGeometry, linkMaterial)
-          link.renderOrder = 6
-          vassalGroup.add(link)
-          disposables.push(linkGeometry, linkMaterial)
-          const tunnelLinkGeometry = new THREE.BufferGeometry().setFromPoints([terminal.clone().setY(undergroundLevels.tunnel), anchor.clone().setY(undergroundLevels.tunnel)])
-          const tunnelLink = new THREE.Line(tunnelLinkGeometry, linkMaterial)
-          undergroundGroup.add(tunnelLink)
-          disposables.push(tunnelLinkGeometry)
-        }
-      }
+    for (const vassal of vassals) {
+      const suzerain = states.get(vassal.suzerain)
+      const { x, z } = worldAt(vassal.east, vassal.north)
+      const anchor = new THREE.Vector3(x, surfaceY(x, z) + 1.8, z)
+      vassalAnchors.set(vassal.name, anchor)
+      const geometry = new THREE.OctahedronGeometry(1.3)
+      const material = new THREE.MeshStandardMaterial({ color: suzerain?.color ?? '#78868a', roughness: 0.5, emissive: 0x11151a, emissiveIntensity: 0.3 })
+      const marker = new THREE.Mesh(geometry, material)
+      marker.position.copy(anchor)
+      marker.renderOrder = 6
+      vassalGroup.add(marker)
+      disposables.push(geometry, material)
     }
     scene.add(vassalGroup)
 
     const applyLayer = (activeLayer: TerritoryLayer) => {
       undergroundGroup.visible = activeLayer === 'subway'
-      base.visible = activeLayer === 'surface'
+      base.visible = false
+      terrainGroup.visible = activeLayer === 'surface'
+      regionalRailGroup.visible = activeLayer === 'surface'
+      regionalStationCloud.visible = activeLayer === 'surface'
       for (const mesh of meshes) mesh.visible = activeLayer === 'surface'
       stationPoints.position.y = activeLayer === 'subway' ? undergroundLevels.station - 1.52 : 0
       capitalPoints.visible = activeLayer === 'surface'
@@ -493,19 +568,24 @@ export default function OpeningTerritoryMap() {
 
     const render = () => {
       renderer.render(scene, camera)
+      const cameraDistance = camera.position.distanceTo(controls.target)
       const projectedStates = data.states.map((state) => {
-        const vector = new THREE.Vector3((state.capitalX - data.width / 2) * scale, 2.75, (state.capitalY - data.height / 2) * scale).project(camera)
+        const x = (state.capitalX - data.width / 2) * scale
+        const z = (state.capitalY - data.height / 2) * scale
+        const vector = new THREE.Vector3(x, surfaceY(x, z) + 2.75, z).project(camera)
         return {
           id: state.id,
           left: (vector.x * 0.5 + 0.5) * 100,
           top: (-vector.y * 0.5 + 0.5) * 100,
-          visible: vector.x >= -1 && vector.x <= 1 && vector.y >= -1 && vector.y <= 1 && vector.z > -1 && vector.z < 1,
+          visible: cameraDistance < 420 && vector.x >= -1 && vector.x <= 1 && vector.y >= -1 && vector.y <= 1 && vector.z > -1 && vector.z < 1,
         }
       })
       setMarkerPositions(resolveMarkerCollisions(projectedStates, Math.max(shell.clientWidth, 1), Math.max(shell.clientHeight, 1)))
       const nextStations: Record<string, MarkerPosition> = {}
       for (const station of data.stations) {
-        const vector = new THREE.Vector3((station.x - data.width / 2) * scale, layerRef.current === 'subway' ? undergroundLevels.station + 0.3 : 1.82, (station.y - data.height / 2) * scale).project(camera)
+        const x = (station.x - data.width / 2) * scale
+        const z = (station.y - data.height / 2) * scale
+        const vector = new THREE.Vector3(x, layerRef.current === 'subway' ? undergroundLevels.station + 0.3 : surfaceY(x, z) + 1.82, z).project(camera)
         const left = (vector.x * 0.5 + 0.5) * 100
         const top = (-vector.y * 0.5 + 0.5) * 100
         nextStations[station.id] = {
@@ -513,13 +593,13 @@ export default function OpeningTerritoryMap() {
           top,
           anchorLeft: left,
           anchorTop: top,
-          visible: vector.x >= -1 && vector.x <= 1 && vector.y >= -1 && vector.y <= 1 && vector.z > -1 && vector.z < 1,
+          visible: cameraDistance < 420 && vector.x >= -1 && vector.x <= 1 && vector.y >= -1 && vector.y <= 1 && vector.z > -1 && vector.z < 1,
         }
       }
       setStationMarkerPositions(nextStations)
       const nextVassals: Record<string, MarkerPosition> = {}
       for (const [name, anchor] of vassalAnchors) {
-        const vector = anchor.clone().setY(2.1).project(camera)
+        const vector = anchor.clone().project(camera)
         const left = (vector.x * 0.5 + 0.5) * 100
         const top = (-vector.y * 0.5 + 0.5) * 100
         nextVassals[name] = {
@@ -527,7 +607,7 @@ export default function OpeningTerritoryMap() {
           top,
           anchorLeft: (vector.x * 0.5 + 0.5) * 100,
           anchorTop: (-vector.y * 0.5 + 0.5) * 100,
-          visible: vector.x >= -0.98 && vector.x <= 0.98 && vector.y >= -0.98 && vector.y <= 0.98 && vector.z > -1 && vector.z < 1,
+          visible: cameraDistance < 780 && vector.x >= -0.98 && vector.x <= 0.98 && vector.y >= -0.98 && vector.y <= 0.98 && vector.z > -1 && vector.z < 1,
         }
       }
       setVassalMarkerPositions(nextVassals)
@@ -539,6 +619,15 @@ export default function OpeningTerritoryMap() {
       camera.position.set(0, portrait ? 122 : 135, portrait ? 148 : 180)
       camera.updateProjectionMatrix()
       controls.target.set(0, 0, 1)
+      controls.update()
+      render()
+    }
+    const framePeninsula = () => {
+      const layer = regional.meta.layers.find((entry) => entry.name === 'peninsula')!
+      const [e0, n0, e1, n1] = layer.bboxEPSG5179
+      const center = worldAt((e0 + e1) / 2, (n0 + n1) / 2)
+      controls.target.set(center.x, 0, center.z)
+      camera.position.set(center.x, 3600, center.z + 3400)
       controls.update()
       render()
     }
@@ -564,7 +653,7 @@ export default function OpeningTerritoryMap() {
       controls.update()
       render()
     }
-    runtimeRef.current = { reset, pan, orbit, zoom, meshes, lineMaterials, vassalLineMaterials, render, byLineSegments, stateEdgeLines, stationColorAttribute, stationMaterial, capitalMaterial, vassalGroup, undergroundGroup, base, applyLayer }
+    runtimeRef.current = { reset, pan, orbit, zoom, framePeninsula, meshes, lineMaterials, vassalLineMaterials, render, byLineSegments, stateEdgeLines, stationColorAttribute, stationMaterial, capitalMaterial, vassalGroup, undergroundGroup, base, applyLayer }
     applyLayer(layer)
 
     let pointerStart: [number, number] | null = null
@@ -625,7 +714,7 @@ export default function OpeningTerritoryMap() {
       renderer.dispose()
       runtimeRef.current = null
     }
-  }, [data, states])
+  }, [data, regional, states])
 
   useEffect(() => {
     if (!data || !runtimeRef.current) return
@@ -651,20 +740,21 @@ export default function OpeningTerritoryMap() {
   }, [selectedLine, layer])
 
   if (failed) return <p className="wiki-domain-label">3D 서울 영토 지도를 불러오지 못했습니다. 페이지를 새로고침한 뒤에도 계속되면 다른 브라우저에서 다시 시도해 주세요.</p>
-  if (!data) return <div className="wiki-loading">서울 427개 동 3D 2126 시점 영토 지도를 불러오고 있습니다.</div>
+  if (!data || !regional) return <div className="wiki-loading">서울 427개 동과 한반도 지형을 불러오고 있습니다.</div>
 
   return (
     <section className="territory-map-section" aria-labelledby="opening-territory-title">
-      <header><p className="wiki-domain-label">서울 전체 · 2126 시점 · Three.js</p><h2 id="opening-territory-title">3D 2126 시점 영토 지도</h2><p>서울 25개 구·427개 행정동을 미니어처 지형으로 돌출했습니다. 지하는 역(대합실)·승강장·터널을 층별로 펼치고, 터널 선로를 공식 노선 색으로 그립니다. 서울 밖 속국 13은 연결 노선의 마지막 서울 역에서 도시 방위로 이어지는 개략 표시입니다. 바깥 좌표와 지하 깊이는 측량값이 아닙니다. 왼쪽 드래그는 팬, 오른쪽 드래그는 오빗, 휠은 줌입니다.</p></header>
+      <header><p className="wiki-domain-label">한반도 지형 · 서울 전철 연결권 · 2126 시점</p><h2 id="opening-territory-title">3D 2126 시점 영토 지도</h2><p>한반도 전체 지형과 서울 연결 전철권의 상세 지형을 표시합니다. 서울의 427개 동과 속국 13개 시·군만 영토색으로 칠했습니다. 왼쪽 드래그는 팬, 오른쪽 드래그는 오빗, 휠은 줌입니다.</p></header>
       <div className="territory-toolbar">
         <label className="territory-filter"><span>국가 필터</span><select value={stateFilter} onChange={(event) => { const state = states.get(event.target.value); if (state) selectState(state); else setStateFilter('all') }}><option value="all">16국 전체</option>{data.states.map((state) => <option key={state.id} value={state.id}>{state.id} · {state.name}</option>)}</select></label>
         <label className="territory-filter"><span>노선 필터</span><select value={selectedLine} onChange={(event) => setSelectedLine(event.target.value)}><option value="all">전체 노선</option>{Object.entries(data.lines).map(([lineId, line]) => <option key={lineId} value={lineId}>{line.name}</option>)}</select></label>
-        <label className="territory-filter"><span>지역 선택</span><select value={selectedId ?? ''} onChange={(event) => setSelectedId(event.target.value)}>{data.regions.map((region) => <option key={region.id} value={region.id}>{region.district} · {region.name}</option>)}</select></label>
+        <label className="territory-filter"><span>지역 선택</span><select value={selectedId ?? ''} onChange={(event) => { setSelectedVassal(null); setSelectedId(event.target.value) }}><option value="">선택 안 함</option>{data.regions.map((region) => <option key={region.id} value={region.id}>{region.district} · {region.name}</option>)}</select></label>
         <span className="territory-controls-help">왼쪽 드래그 팬 · 오른쪽 드래그 오빗 · 휠 줌</span>
       </div>
       <div className="territory-tier-legend" aria-label="국력 등급 범례">
         {(['강국', '약국', '소국'] as const).map((tier) => <span key={tier} className="territory-tier-chip" data-tier={tier}><span className="territory-tier-dot" style={{ backgroundColor: tierColors[tier] }} />{tier} {tierCounts[tier] ?? 0}</span>)}
         <span className="territory-tier-note">지하 터널 색은 공식 노선 색 · 역 표시는 지배 상태 색</span>
+        <span className="territory-tier-note">폐허: 서울과 전철로 이어지지 않은 땅</span>
         <span className="territory-relation-legend">정부와의 관계: 복속 · 보좌 · 독립</span>
       </div>
       <div className="territory-map-layout">
@@ -672,7 +762,7 @@ export default function OpeningTerritoryMap() {
           <canvas ref={canvasRef} aria-label="서울 427개 동 Three.js 2126 시점 영토 지도" onContextMenu={(event) => event.preventDefault()} />
           <div className="territory-layer-toggle territory-layer-overlay" role="group" aria-label="지도 층 선택">
             <button type="button" aria-pressed={layer === 'surface'} onClick={() => setLayer('surface')}>지상</button>
-            <button type="button" aria-pressed={layer === 'subway'} onClick={() => setLayer('subway')}>지하</button>
+            <button type="button" aria-pressed={layer === 'subway'} onClick={() => { setLayer('subway'); runtimeRef.current?.reset() }}>지하</button>
           </div>
           {layer === 'subway' && <div className="territory-underground-levels" aria-label="지하 세 층"><span>역 · 대합실</span><span>승강장</span><span>터널 · 공식 노선 색</span></div>}
           <div className="territory-camera-controls territory-camera-overlay" role="group" aria-label="3D 지도 카메라 조작">
@@ -684,7 +774,8 @@ export default function OpeningTerritoryMap() {
             <button type="button" onClick={() => runtimeRef.current?.orbit(Math.PI / 12)}>오빗 오른쪽</button>
             <button type="button" onClick={() => runtimeRef.current?.zoom(0.78)}>줌인</button>
             <button type="button" onClick={() => runtimeRef.current?.zoom(1.28)}>줌아웃</button>
-            <button type="button" onClick={() => runtimeRef.current?.reset()}>전체 보기</button>
+            <button type="button" onClick={() => runtimeRef.current?.framePeninsula()}>한반도 보기</button>
+            <button type="button" onClick={() => runtimeRef.current?.reset()}>서울 보기</button>
           </div>
           <div className="territory-state-markers" aria-label="16국 수도 위치">
             {data.states.map((state) => {
@@ -701,7 +792,7 @@ export default function OpeningTerritoryMap() {
               const label = vassalLabelPositions[vassal.name]
               return <div key={vassal.name}>
                 <span className="territory-vassal-marker" style={{ left: `${position?.left ?? 50}%`, top: `${position?.top ?? 50}%`, backgroundColor: data.lines[vassal.lineId]?.color ?? suzerain.color, visibility: position?.visible === false ? 'hidden' : 'visible' }} />
-                {label && position?.visible && <button type="button" className="territory-vassal-label" style={{ left: `${label.left}%`, top: `${label.top}%`, borderColor: data.lines[vassal.lineId]?.color ?? suzerain.color }} aria-label={`${vassal.name} ${vassal.city} 본국 ${suzerain.name} 속국`} title={`${vassal.name}(${vassal.city}) · ${vassal.anchor} · 위치 미정 · 본국 ${suzerain.name}`} onClick={() => selectState(suzerain)}>{vassal.name} · {vassal.city}</button>}
+                {label && position?.visible && <button type="button" className="territory-vassal-label" aria-pressed={selectedVassal === vassal.name} style={{ left: `${label.left}%`, top: `${label.top}%`, borderColor: data.lines[vassal.lineId]?.color ?? suzerain.color }} aria-label={`${vassal.name} ${vassal.city} 본국 ${suzerain.name} 속국`} title={`${vassal.name}(${vassal.city}) · ${vassal.anchor} · 본국 ${suzerain.name}`} onClick={() => selectVassal(vassal)}>{vassal.name} · {vassal.city}</button>}
               </div>
             })}
           </div>
@@ -749,11 +840,12 @@ export default function OpeningTerritoryMap() {
             {vassals.map((vassal) => {
               const suzerain = states.get(vassal.suzerain)
               if (!suzerain) return null
-              return <li key={vassal.name}><button type="button" onClick={() => selectState(suzerain)} title={`선 해 ${vassal.founded} · ${vassal.duty} · ${vassal.anchor} · 위치 미정`}><span className="territory-vassal-dot" style={{ backgroundColor: data.lines[vassal.lineId]?.color }} />{vassal.name}<span className="territory-vassal-city">{vassalCityCoords[vassal.city] ? `${compassLabel(vassalCityCoords[vassal.city].lat, vassalCityCoords[vassal.city].lon)} · ` : ''}{vassal.city} · {suzerain.name} · 위치 미정</span></button></li>
+              return <li key={vassal.name}><button type="button" aria-pressed={selectedVassal === vassal.name} onClick={() => selectVassal(vassal)} title={`선 해 ${vassal.founded} · ${vassal.duty} · ${vassal.anchor} · ${vassal.coordinateSource}`}><span className="territory-vassal-dot" style={{ backgroundColor: data.lines[vassal.lineId]?.color }} />{vassal.name}<span className="territory-vassal-city">{compassLabel(vassal.x, vassal.y, data.width, data.height)} · {vassal.city} · {suzerain.name}</span></button></li>
             })}
           </ul>
         </div>
         <aside className="territory-detail" aria-live="polite">
+          {selectedVassal && (() => { const vassal = vassals.find((entry) => entry.name === selectedVassal)!; return <section aria-labelledby="selected-vassal-title"><p className="wiki-domain-label">선택된 속국 · {vassal.city}</p><h3 id="selected-vassal-title">{vassal.name}</h3><table className="person-data-table"><tbody><tr><th>본국</th><td>{states.get(vassal.suzerain)?.name}</td></tr><tr><th>연결 노선</th><td>{data.lines[vassal.lineId]?.name}</td></tr><tr><th>설립</th><td>{vassal.founded}</td></tr><tr><th>역할</th><td>{vassal.duty}</td></tr></tbody></table><p>{vassal.coordinateSource}</p></section> })()}
           {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : selected.status === 'vacant' ? '무주지' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ') || '없음'}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126 시점 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p></section>}
           {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr>{selectedState.relation && <tr><th>정부와의 관계</th><td>{selectedState.relation}</td></tr>}</tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
         </aside>
@@ -761,7 +853,7 @@ export default function OpeningTerritoryMap() {
       <div className="territory-legend">{data.states.map((state) => <button key={state.id} type="button" data-tier={state.power} onClick={() => selectState(state)} aria-pressed={stateFilter === state.id}><span className="territory-legend-swatch" style={{ backgroundColor: states.get(state.id)?.color }} /><StateFlag stateId={state.id} /><span>{state.id} {state.name}</span></button>)}</div>
       <div className="territory-line-legend" aria-label="서울 지하철 노선 색상"><button type="button" aria-pressed={selectedLine === 'all'} onClick={() => setSelectedLine('all')}>전체 노선</button>{Object.entries(data.lines).map(([lineId, line]) => <button key={lineId} type="button" aria-pressed={selectedLine === lineId} onClick={() => setSelectedLine(lineId)}><span style={{ backgroundColor: line.color }} />{line.name}</button>)}</div>
       <details className="territory-flag-provenance"><summary>16국 깃발 콘셉트 시트와 채택 자산</summary><p>CLIProxy Gemini로 생성한 4×4 콘셉트 시트를 Artkit으로 16개 셀에 분리해 지도·범례의 실제 깃발 자산으로 사용합니다.</p><img src={`${import.meta.env.BASE_URL}state-flags/concept-sheet.webp`} alt="16국 깃발 4×4 콘셉트 시트" loading="lazy" /></details>
-      <p className="wiki-domain-label">{data.epoch.label} · 국기 도안은 국가 기원에서 만든 공식 위키 식별기 · 3D 높이는 가독성용 과장 · {data.attribution}</p>
+      <p className="wiki-domain-label">{data.epoch.label} · 지형 높이는 가독성용 과장 · {data.attribution} · {regional.meta.attribution}</p>
     </section>
   )
 }

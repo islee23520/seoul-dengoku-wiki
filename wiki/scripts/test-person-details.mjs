@@ -98,3 +98,17 @@ test('person detail page renders tables and the canonical prose sections', async
   for (const label of ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']) assert.match(page, new RegExp(label))
   assert.match(page, /정본에 별도 산문이 등록되지 않았습니다/)
 })
+
+test('K998 keeps his detail route after relocation to the First Branch Workshop', async () => {
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0998.json', import.meta.url), 'utf8'))
+  assert.equal(detail.name, '이일섭')
+  assert.equal(detail.state, 'S02')
+  assert.equal(detail.title, '제1분공방 이씨 가문 후계')
+  assert.equal(detail.rank, '이사')
+  assert.equal(detail.commonTier, 'T3')
+  assert.equal(detail.occupation, '제1분공방 차량기지 밭 경작·곡물 재고 관리')
+  assert.equal(detail.sourceRoute, '/world/Cast-State-02#인물-이일섭')
+  assert.equal(detail.fields.기여자, '[islee23520](https://github.com/islee23520)')
+  assert.deepEqual(detail.relations, { outgoing: [], incoming: [] })
+  assert.doesNotMatch(detail.biography, /아관사|구의|고서준|곽민재|하윤목|원장 서기/)
+})

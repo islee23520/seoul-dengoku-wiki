@@ -35,6 +35,25 @@ test('people search route is linked from wiki navigation', async () => {
   assert.match(links, /characters: '\/people'/)
 })
 
+test('the atlas projection links all five unaffiliated people through the generated catalog', async () => {
+  const page = JSON.parse(await readFile(new URL('../src/generated/world/World-Expansion-Index.json', import.meta.url), 'utf8'))
+  const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const links = []
+  const visit = (node) => {
+    if (node.type === 'link' && node.url.startsWith('/people/')) links.push(node)
+    for (const child of node.children ?? []) visit(child)
+  }
+  page.blocks.forEach(visit)
+  assert.deepEqual(links.map((link) => link.url), [1003, 1004, 1008, 1009, 1010].map((id) => '/people/person-' + id))
+  for (const link of links) {
+    assert.ok(catalog.includes('"detailRoute": "' + link.url + '"'), link.url)
+    const id = link.url.split('/').at(-1)
+    const detail = JSON.parse(await readFile(new URL('../public/person-details/' + id + '.json', import.meta.url), 'utf8'))
+    assert.equal(detail.state, 'S00')
+    assert.equal(detail.name, link.children.map((child) => child.value).join(''))
+  }
+})
+
 test('people page sorts the complete roster by Korean name order', async () => {
   const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
   assert.match(page, /Intl\.Collator\('ko-KR'/)

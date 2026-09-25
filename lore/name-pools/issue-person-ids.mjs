@@ -36,9 +36,9 @@ export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
   approvedAt: "2026-09-25",
-  ownerRef: "2026-09-25 민웅기·신종목·신준 텍스트·값 승인 (성인 지향 이성·결합 단혼)",
-  inputSha256: "d2979fcecbe6c369d2d9a3730e5c2521e220ff7ee537ca962f8ab2a2389b893e",
-  candidatesSha256: "6b72106b2cdcdd39c9cd0c2f23e8acd0108a3e2729583b2804b666392e774b6c",
+  ownerRef: "2026-09-25 이일섭 K998 제1분공방 후계 교정 및 입력 해시 재승인",
+  inputSha256: "963e16de7aea7f126e9f350c1a0018fbd9bc977e5cd8702ad77838e804ab53ba",
+  candidatesSha256: "f212314cd864efdbf3932f414166a3d26101d5605154e0571719ba86f0b7b024",
 };
 export const FROZEN = { existingK: 422, issued: 588, total: 1010 };
 
