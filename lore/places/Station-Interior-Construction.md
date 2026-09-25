@@ -45,4 +45,4 @@
 
 - [경제와 생산, 물류 규칙](/gdd/rules/Rules-EconomyLogistics)
 - [거점과 영토 규칙](/gdd/rules/Rules-Strongholds)
-- [월드맵의 구조](World-Map-Construction.md)
+- [세계 지도의 구성](World-Map-Construction.md)
