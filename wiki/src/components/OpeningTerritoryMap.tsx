@@ -24,7 +24,8 @@ type TerritoryData = { width: number; height: number; projection: Projection; ep
 type TerrainLayer = TerrainTile & { name: string; zoom: number; minElevation: number; maxElevation: number }
 type WaterFeature = { id: string; kind: 'polygon' | 'line'; tag: Record<string, string>; coordinates: number[][] | number[][][] }
 type DetailTile = TerrainTile & { waterFile: string }
-type RegionalData = { meta: { layers: TerrainLayer[]; detailTiles: DetailTile[]; farWaterFile: string; attribution: string }; coarse: Uint16Array; farWater: { features: WaterFeature[] }; boundaries: Array<{ city: string; centroid: [number, number]; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] } }>; rail: { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> } }
+type NorthernRail = { source: { snapshot: string; license: string }; scope: string; coverage: { missingNorthernBoundariesInRenderedLayer: boolean }; paths: Array<{ osmWay: number; mode: string; points: [number, number][]; passage2126: 'unknown' }>; stations: Array<{ osmNode: number; mode: string; east: number; north: number; passage2126: 'unknown' }> }
+type RegionalData = { meta: { layers: TerrainLayer[]; detailTiles: DetailTile[]; farWaterFile: string; attribution: string }; coarse: Uint16Array; farWater: { features: WaterFeature[] }; boundaries: Array<{ city: string; centroid: [number, number]; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] } }>; rail: { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> }; northernRail: NorthernRail }
 type PlatformDetail = { railM: number | null; platformM: number | null; floors: string | null; platformType: string | null; exits: number | null; transfers: string[] | null; sources: Record<string, 'depth' | 'operations'> }
 type UndergroundDetail = { schema: string; verticalScale: string; sources: Record<string, { url: string; license: string; asOf: string; sha256: string }>; stations: Record<string, Record<string, PlatformDetail>>; paths: Array<{ lineId: string; edge: number; osmWay: number | null; kind: 'observed' | 'schematic'; points: [number, number, number | null][] }> }
 type TerritoryLayer = 'surface' | 'subway'
@@ -195,13 +196,14 @@ export default function OpeningTerritoryMap() {
       return response
     })
     void asset('regional-terrain.json').then((response) => response.json() as Promise<RegionalData['meta']>).then(async (meta) => {
-      const [boundaries, rail, coarse, farWater] = await Promise.all([
+      const [boundaries, rail, northernRail, coarse, farWater] = await Promise.all([
         asset('regional-boundaries.json').then((response) => response.json() as Promise<RegionalData['boundaries']>),
         asset('regional-rail.json').then((response) => response.json() as Promise<RegionalData['rail']>),
+        asset('northern-rail.json').then((response) => response.json() as Promise<NorthernRail>),
         asset(meta.layers.find((entry) => entry.name === 'peninsula')!.file).then((response) => response.arrayBuffer()),
         asset(meta.farWaterFile).then((response) => response.json() as Promise<RegionalData['farWater']>),
       ])
-      setRegional({ meta, boundaries, rail, coarse: new Uint16Array(coarse), farWater })
+      setRegional({ meta, boundaries, rail, northernRail, coarse: new Uint16Array(coarse), farWater })
     }).catch((error) => { if (error.name !== 'AbortError') setFailed(true) })
     return () => controller.abort()
   }, [data])
@@ -601,6 +603,26 @@ export default function OpeningTerritoryMap() {
       vassalLineMaterials.push({ lineId, material })
       disposables.push(geometry, material)
     }
+    const northernByMode = new Map<string, number[]>()
+    for (const path of regional.northernRail.paths) {
+      const positions = northernByMode.get(path.mode) ?? []
+      const points = path.points.map(([east, north]) => {
+        const { x, z } = worldAt(east, north)
+        return [x, surfaceY(x, z) + 0.82, z]
+      })
+      for (let index = 1; index < points.length; index += 1) positions.push(...points[index - 1], ...points[index])
+      northernByMode.set(path.mode, positions)
+    }
+    for (const [mode, positions] of northernByMode) {
+      const geometry = new THREE.BufferGeometry()
+      geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
+      const material = new THREE.LineBasicMaterial({ color: mode === 'rail' ? '#ead7a1' : '#b7c5b2', transparent: true, opacity: 0.9 })
+      const line = new THREE.LineSegments(geometry, material)
+      line.renderOrder = 5
+      regionalRailGroup.add(line)
+      vassalLineMaterials.push({ lineId: 'northern-rail', material })
+      disposables.push(geometry, material)
+    }
     for (const [lineId, positions] of subwayPositionsByLine) {
       const subwayGeometry = new THREE.BufferGeometry()
       subwayGeometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
@@ -684,6 +706,16 @@ export default function OpeningTerritoryMap() {
     regionalStationCloud.renderOrder = 5
     scene.add(regionalStationCloud)
     disposables.push(regionalStationGeometry, regionalStationMaterial)
+    const northernStationGeometry = new THREE.BufferGeometry()
+    northernStationGeometry.setAttribute('position', new THREE.Float32BufferAttribute(regional.northernRail.stations.flatMap((station) => {
+      const { x, z } = worldAt(station.east, station.north)
+      return [x, surfaceY(x, z) + 1.05, z]
+    }), 3))
+    const northernStationMaterial = new THREE.PointsMaterial({ color: 0xffe8a1, size: 1.1, sizeAttenuation: true })
+    const northernStations = new THREE.Points(northernStationGeometry, northernStationMaterial)
+    northernStations.renderOrder = 6
+    scene.add(northernStations)
+    disposables.push(northernStationGeometry, northernStationMaterial)
 
     const vassalGroup = new THREE.Group()
     const vassalAnchors = new Map<string, THREE.Vector3>()
@@ -1078,6 +1110,7 @@ export default function OpeningTerritoryMap() {
           {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr>{selectedState.relation && <tr><th>정부와의 관계</th><td>{selectedState.relation}</td></tr>}</tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
         </aside>
       </div>
+      <p className="wiki-domain-label">북측 철도 관측: {regional.northernRail.paths.length.toLocaleString()}개 OSM 선로 way · {regional.northernRail.stations.length.toLocaleString()}개 역/간이역 점 · {regional.northernRail.source.snapshot} · {regional.northernRail.source.license}. 선로 간 물리 연결 및 2126년 통행은 미상. 북측 행정경계는 이 지도에 아직 반영되지 않았다. 이 수치는 PBF 스냅샷에서 태그된 객체의 범위이며 전 철도망 완전성을 뜻하지 않는다.</p>
       <p className="wiki-domain-label">{regional.meta.attribution}</p>
       <div className="territory-legend">{data.states.map((state) => <button key={state.id} type="button" data-tier={state.power} onClick={() => selectState(state)} aria-pressed={stateFilter === state.id}><span className="territory-legend-swatch" style={{ backgroundColor: states.get(state.id)?.color }} /><StateFlag stateId={state.id} /><span>{state.id} {state.name}</span></button>)}</div>
       <div className="territory-line-legend" aria-label="서울 지하철 노선 색상"><button type="button" aria-pressed={selectedLine === 'all'} onClick={() => setSelectedLine('all')}>전체 노선</button>{Object.entries(data.lines).map(([lineId, line]) => <button key={lineId} type="button" aria-pressed={selectedLine === lineId} onClick={() => setSelectedLine(lineId)}><span style={{ backgroundColor: line.color }} />{line.name}</button>)}</div>
