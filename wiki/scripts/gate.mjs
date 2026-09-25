@@ -14,6 +14,7 @@ const referenceDir = [join(repoRoot, 'RESEARCH', 'canon-reference'), join(repoRo
 
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
 const COINED_PHRASES = ['창세 구술', '창세 이야기', '구술로만', '창세의 첫 줄', '창세의 첫 급수협약', '창세는 햇수 없는 구술']
+const namingLedger = JSON.parse(readFileSync(join(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8'))
 // Korean attaches particles (라벨렌의, 라벨렌을), so the Hangul form matches without a trailing boundary.
 const RAVELEN_REFERENCE = /(?<![\p{L}\p{N}_])ravelen(?![\p{L}\p{N}_])|라벨렌/iu
 export const EXPECTED_REFERENCE_EXCLUSIONS = 20
@@ -70,6 +71,12 @@ function findBannedTerms(text) {
 export function coinedPhraseFailures(text, source) {
   return COINED_PHRASES.filter((phrase) => text.includes(phrase))
     .map((phrase) => `FAIL coined-phrase: ${source} contains "${phrase}"`)
+}
+
+export function retiredFormFailures(text, source) {
+  return namingLedger.retiredPublicForms
+    .filter(({ form, exceptSources = [] }) => !exceptSources.some((pattern) => source.includes(pattern)) && text.includes(form))
+    .map(({ form }) => `FAIL retired-form: ${source} contains "${form}"`)
 }
 
 export function ravelenExclusionFailures(text, source) {
@@ -131,6 +138,7 @@ function main() {
       failures.push(`FAIL banned-term: ${rel} contains "${term}"`)
     }
     failures.push(...coinedPhraseFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
+    failures.push(...retiredFormFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
     for (const href of links) {
       if (!href.startsWith('/') || href.startsWith('//')) continue
       if (HUB_PREFIXES.some((prefix) => href.startsWith(prefix))) continue
@@ -143,10 +151,12 @@ function main() {
   failures.push(...ravelenExclusionFailures(shell, 'dist/index.html'))
   for (const term of findBannedTerms(visibleText(shell))) failures.push(`FAIL banned-term: dist/index.html contains "${term}"`)
   failures.push(...coinedPhraseFailures(visibleText(shell), 'dist/index.html'))
+  failures.push(...retiredFormFailures(visibleText(shell), 'dist/index.html'))
   for (const file of listFiles(join(distDir, 'assets')).filter((file) => file.endsWith('.js'))) {
     const source = readFileSync(file, 'utf8')
     const rel = posixRel(wikiRoot, file)
     failures.push(...coinedPhraseFailures(source, rel))
+    failures.push(...retiredFormFailures(source, rel))
     failures.push(...ravelenExclusionFailures(source, rel))
   }
   for (const file of listFiles(join(wikiRoot, 'public')).filter((file) => file.endsWith('.json'))) {
@@ -156,6 +166,7 @@ function main() {
     if (rel.startsWith('public/person-details/')) {
       const person = JSON.parse(source)
       failures.push(...coinedPhraseFailures(JSON.stringify([person.sections, person.biography, person.fields]), rel))
+      failures.push(...retiredFormFailures(JSON.stringify([person.sections, person.biography, person.fields]), rel))
     }
   }
   for (const href of htmlLinks(shell)) {
@@ -170,6 +181,7 @@ function main() {
   console.log(`html-files: ${listFiles(distDir).filter((file) => file.endsWith('.html')).length}`)
   console.log(`banned-term failures: ${failures.filter((line) => line.includes('banned-term')).length}`)
   console.log(`coined-phrase failures: ${failures.filter((line) => line.includes('coined-phrase')).length}`)
+  console.log(`retired-form failures: ${failures.filter((line) => line.includes('retired-form')).length}`)
   console.log(`broken-link failures: ${failures.filter((line) => line.includes('broken-link')).length}`)
   console.log(`exclusion failures: ${failures.filter((line) => line.includes('exclusion')).length}`)
   if (failures.length > 0) {

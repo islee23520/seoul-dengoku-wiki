@@ -11,6 +11,7 @@
     "test:links": "node scripts/check-links.mjs",
     "test:lore-links": "node --test scripts/test-lore-links.mjs",
     "test:contract": "node scripts/check-contract.mjs",
+    "test:admission": "node --test scripts/test-catalog-admission.mjs",
     "test:gate": "node --test scripts/test-gate.mjs",
     "test:states": "node --test scripts/test-state-routes.mjs",
     "test:legacy-routes": "node --test scripts/test-legacy-world-routes.mjs",

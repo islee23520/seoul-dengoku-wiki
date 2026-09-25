@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
+import { approvedRoutes, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, '../lore'))
@@ -44,6 +45,23 @@ try {
 }
 
 const failures = []
+const expectedRoutes = await approvedRoutes(loreRoot)
+const publishedRoutes = documents.map(({ domain, slug }) => `/${domain}/${slug === 'index' ? '' : slug}`).sort()
+if (JSON.stringify(publishedRoutes) !== JSON.stringify(expectedRoutes)) failures.push('published-routes-differ-from-approved-lore-set')
+const catalogRoutes = [...catalogSource.matchAll(/route: '([^']+)'/g)].map((match) => match[1]).sort()
+if (JSON.stringify(catalogRoutes) !== JSON.stringify(expectedRoutes)) failures.push('catalog-routes-differ-from-approved-lore-set')
+if (publicContract) {
+  if (unknownFields(publicContract, ['documents']).length) failures.push(`public-contract-extra-fields:${unknownFields(publicContract, ['documents']).join(',')}`)
+  if (!Array.isArray(publicContract.documents)) failures.push('public-contract-documents-invalid')
+  else {
+    const contractRoutes = publicContract.documents.map((document) => document.route).sort()
+    if (JSON.stringify(contractRoutes) !== JSON.stringify(expectedRoutes)) failures.push('public-contract-routes-differ-from-approved-lore-set')
+    for (const document of publicContract.documents) {
+      const extra = unknownFields(document, catalogFields)
+      if (extra.length) failures.push(`public-contract-document-extra-fields:${document.route}:${extra.join(',')}`)
+    }
+  }
+}
 const relations = spawnSync(process.execPath, [resolve(loreRoot, 'relations/validate.mjs')], { encoding: 'utf8' })
 if (relations.status !== 0) failures.push(`relation-contract:${(relations.stderr || relations.stdout || relations.error?.message || 'missing validator').trim()}`)
 if (documents.length === 0) failures.push('document-count:0')
@@ -65,6 +83,11 @@ for (const domain of domains) {
   const names = (await readdir(contentDir)).filter((name) => extname(name) === '.json')
   for (const name of names) {
     const page = JSON.parse(await readFile(resolve(contentDir, name), 'utf8'))
+    const extra = unknownFields(page, readerFields)
+    if (extra.length) failures.push(`reader-json-extra-fields:${domain}/${name}:${extra.join(',')}`)
+    const slug = basename(name, '.json')
+    const route = `/${domain}/${slug === 'index' ? '' : slug}`
+    if (page.slug !== slug || page.route !== route || typeof page.title !== 'string') failures.push(`reader-json-identity:${domain}/${name}`)
     if ('body' in page || !Array.isArray(page.blocks) || page.blocks.length === 0 || typeof page.reviewText !== 'string') failures.push(`unstructured-content:${domain}/${name}`)
     else {
       const parsed = fromMarkdown(page.reviewText, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
