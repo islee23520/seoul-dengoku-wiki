@@ -157,16 +157,16 @@
             "ko": "대한민국정부(기원 표기 대한민국정부, 유지)"
           },
           {
-            "en": "Gwanghwamun",
-            "ko": "광화문"
+            "ko": "광화문",
+            "en": "Gwanghwamun"
           },
           {
             "en": "Major power, first",
             "ko": "강국, 첫째"
           },
           {
-            "en": "A president chosen by the election rite of the duty families of the Government Complex Seoul",
-            "ko": "정부서울청사 당직 가문들의 선거 의례로 뽑는 대통령"
+            "ko": "정부서울청사 당직 가문들의 선거 의례로 뽑는 대통령",
+            "en": "A president chosen by the election rite of the duty families of the Government Complex Seoul"
           },
           {
             "en": "Name kept",
@@ -2039,6 +2039,14 @@
       }
     },
     {
+      "kind": "paragraph",
+      "anchor": "청와대-정부-중심-p1",
+      "text": {
+        "ko": "2126년 대한민국정부는 청와대에서 대통령 집무와 거처, 기록·배급·인준 업무를 맡았다. 정부서울청사 본관은 광화문·종로3가·을지로입구의 경비와 통행을 맡았다. 조계사와 명동성당, 정동노총 사무실은 정부가 다스리는 동 안에서 각 나라가 맡은 시설이다.",
+        "en": "In 2126, the Government of the Republic of Korea conducted the president’s office and residence, records, distribution, and approvals at Cheong Wa Dae. The Government Complex Seoul main building handled security and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. Jogyesa, Myeongdong Cathedral, and the Jeongdong union office were facilities held by their respective states inside Government-held dong."
+      }
+    },
+    {
       "kind": "table",
       "anchor": "table-6",
       "columns": [
@@ -2051,12 +2059,12 @@
           "ko": "위치"
         },
         {
-          "en": "The sixteen states were not a flat partition of Seoul. Waterworks, rail yards, headquarters, assemblies, transfers, and the fortress corridors were read together as living zones. This placement was the creative control at the opening, and only the locations of public facilities were marked as measured. A capital was a subway station, and a state name was not a station name.",
-          "ko": "나라"
+          "ko": "나라",
+          "en": "State"
         },
         {
-          "en": "Ground",
-          "ko": "근거"
+          "ko": "2126년 역할",
+          "en": "Role in 2126"
         }
       ],
       "rows": [
@@ -2074,8 +2082,8 @@
             "ko": "대한민국정부"
           },
           {
-            "en": "Measured on site. Gwanghwamun Station was the capital",
-            "ko": "실측. 광화문역이 수도"
+            "ko": "전방 행정·방어 거점. 광화문·종로3가·을지로입구 경비와 통행을 맡는다.",
+            "en": "Forward administrative and defensive post for Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga security and passage."
           }
         ],
         [
@@ -2092,8 +2100,8 @@
             "ko": "여의도출자연합회"
           },
           {
-            "en": "Measured on site. The capital ledger",
-            "ko": "실측. 출자 장부"
+            "ko": "회의·출자 장부 중심지.",
+            "en": "Meeting and investment-ledger center."
           }
         ],
         [
@@ -2110,8 +2118,8 @@
             "ko": "안국총림"
           },
           {
-            "en": "Measured on site. Anguk Station was the order's capital",
-            "ko": "실측. 안국역이 종단 수도"
+            "ko": "의례·인준 중심지.",
+            "en": "Ritual and approval center."
           }
         ],
         [
@@ -2128,8 +2136,8 @@
             "ko": "명동대교구"
           },
           {
-            "en": "Measured on site. Myeongdong Station was the diocese's capital",
-            "ko": "실측. 명동역이 교구 수도"
+            "ko": "예식·행정 중심지.",
+            "en": "Worship and administrative center."
           }
         ],
         [
@@ -2146,8 +2154,98 @@
             "ko": "정동노총"
           },
           {
-            "en": "Measured on site. The City Hall Station strike roll",
-            "ko": "실측. 시청역 파업 명부"
+            "ko": "교섭·파업 장부 중심지.",
+            "en": "Negotiation and strike-ledger center."
+          }
+        ],
+        [
+          {
+            "ko": "청와대",
+            "en": "Cheong Wa Dae"
+          },
+          {
+            "ko": "종로구 청와대로 1",
+            "en": "1 Cheongwadae-ro, Jongno-gu"
+          },
+          {
+            "ko": "대한민국정부",
+            "en": "Government of the Republic of Korea"
+          },
+          {
+            "ko": "대통령 집무·거처·기록·배급·인준의 중심지.",
+            "en": "Center for the president’s office, residence, records, distribution, and approvals."
+          }
+        ],
+        [
+          {
+            "ko": "롯데월드타워",
+            "en": "Lotte World Tower"
+          },
+          {
+            "ko": "송파구 올림픽로 300",
+            "en": "300 Olympic-ro, Songpa-gu"
+          },
+          {
+            "ko": "명동대교구",
+            "en": "Myeongdong Archdiocese"
+          },
+          {
+            "ko": "지상·지하 방어 거점. 잠실역 연결 통로로 통행한다.",
+            "en": "Surface and underground defensive post. Passage uses the connection to Jamsil Station."
+          }
+        ],
+        [
+          {
+            "ko": "N서울타워",
+            "en": "N Seoul Tower"
+          },
+          {
+            "ko": "용산구 남산공원길 105",
+            "en": "105 Namsangongwon-gil, Yongsan-gu"
+          },
+          {
+            "ko": "환적국",
+            "en": "The Junction"
+          },
+          {
+            "ko": "관측·수동 신호 중계 거점.",
+            "en": "Observation and manual signal relay."
+          }
+        ],
+        [
+          {
+            "ko": "국회의사당",
+            "en": "National Assembly building"
+          },
+          {
+            "ko": "영등포구 의사당대로 1",
+            "en": "1 Uisadang-daero, Yeongdeungpo-gu"
+          },
+          {
+            "ko": "여의도출자연합회",
+            "en": "Yeouido Investment Federation"
+          },
+          {
+            "ko": "출자국 대표 회의장.",
+            "en": "Meeting hall for representatives of the investing states."
+          }
+        ],
+        [
+          {
+            "ko": "동대문디자인플라자",
+            "en": "Dongdaemun Design Plaza"
+          },
+          {
+            "ko": "중구 을지로 281",
+            "en": "281 Eulji-ro, Jung-gu"
+          },
+          {
+            "ko": "대한민국정부",
+            "en": "Government of the Republic of Korea"
+          },
+          {
+            "ko": "지상·지하 통행·물자 검사 거점.",
+            "en": "Surface and underground passage and goods inspection post."
           }
         ]
       ]

@@ -20,6 +20,29 @@ test('alternate labels share one displayed station while graph nodes and edges r
   assert.ok(data.edges.some((edge) => edge.a === '신촌(지하)' || edge.b === '신촌(지하)'))
 })
 
+test('approved landmark roles project to surveyed facilities without changing surrounding dong ownership', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const source = JSON.parse(await readFile(new URL('../../lore/places/landmark-roles.json', import.meta.url), 'utf8'))
+  assert.equal(data.landmarks.length, 9)
+  assert.deepEqual(data.landmarks.map((site) => site.id), source.sites.map((site) => site.id))
+  const byRegion = new Map(data.regions.map((region) => [region.id, region]))
+  const byId = new Map(data.landmarks.map((site) => [site.id, site]))
+  for (const site of data.landmarks) {
+    const region = byRegion.get(site.regionId)
+    assert.ok(region, site.id)
+    assert.equal(site.surfaceHolderId, region.polities[0], site.id)
+    assert.equal(site.isEnclave, site.holderId !== site.surfaceHolderId, site.id)
+    assert.ok(Number.isFinite(site.x) && Number.isFinite(site.y), site.id)
+    assert.match(site.coordinateSource, /^https:\/\/www\.openstreetmap\.org\/(?:node|way|relation)\/\d+$/u, site.id)
+  }
+  assert.equal(byId.get('cheong-wa-dae').holderId, 'S06')
+  assert.equal(byId.get('lotte-world-tower').connectionStationId, '잠실')
+  assert.equal(byId.get('lotte-world-tower').fortification, 'confirmed')
+  assert.equal(byId.get('national-assembly').coordinateSource, 'https://www.openstreetmap.org/way/270596342')
+  assert.deepEqual(['jogyesa', 'myeongdong-cathedral'].map((id) => byId.get(id).isEnclave), [true, true])
+  assert.equal(data.states.find((state) => state.id === 'S06').capitalStationId, '광화문')
+})
+
 test('opening territory map covers every Seoul dong and all sixteen states', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   assert.equal(data.regions.length, 427)

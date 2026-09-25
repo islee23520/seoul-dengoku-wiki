@@ -538,6 +538,18 @@ const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
 })
 if (vassals.length !== 13 || vassals.some((vassal) => !vassal.anchor || !officialLineData.lines[vassal.lineId])) throw new Error('E_VASSAL_LINE_ANCHOR')
 
+const landmarkLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/landmark-roles.json'), 'utf8'))
+const projectedLandmarks = landmarkLedger.sites.map((site) => {
+  const region = regionAtlas.regions.find((entry) => entry.id === site.regionId)
+  if (!region || !stateNameById.has(site.holderId)) throw new Error(`E_LANDMARK_OWNER:${site.id}`)
+  const regionControl = surfaceHolders(regionContentById.get(region.id))
+  const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [site.lon, site.lat])
+  const [x, y] = mapPoint([east, north])
+  if (!pointInPolygon([x, y], simplifyRing(geometryRings(region.map_geometry)[0]).map(mapPoint))) throw new Error(`E_LANDMARK_REGION:${site.id}`)
+  if (site.connectionStationId && !mapStations.some((station) => station.id === site.connectionStationId)) throw new Error(`E_LANDMARK_STATION:${site.id}`)
+  return { ...site, x, y, surfaceHolderId: regionControl[0], isEnclave: regionControl[0] !== site.holderId }
+})
+if (new Set(projectedLandmarks.map((site) => site.id)).size !== projectedLandmarks.length) throw new Error('E_LANDMARK_DUPLICATE')
 const openingTerritories = {
   schema: 'seoul-opening-territories.v1',
   epoch: regionAtlas.fictional_epoch,
@@ -547,6 +559,8 @@ const openingTerritories = {
   attribution: regionAtlas.attribution,
   states: territoryStates,
   vassals,
+  landmarks: projectedLandmarks,
+  landmarkAttribution: landmarkLedger.geometryAttribution,
   lines: officialLineData.lines,
   stations: mapStations,
   edges: mapEdges,
