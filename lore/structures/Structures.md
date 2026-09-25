@@ -4,7 +4,7 @@
 
 2026년 서울 사람들은 지하철로 구를 넘었고 정수센터와 차량기지도 역과 터널에 연결되어 있었다. [기동권 이탈](../overview/World-Unbinding.md)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 나라의 중심지가 되었으며 터널 통행에는 허가가 필요해졌다. 정수장과 수문은 서명이 있어야 열렸다. 2126년 십육국은 역과 터널과 수문을 생활권으로 관리하되 구 이름을 국호로 쓰지 않는다.
 
-[서울 역 카탈로그](../places/Seoul-Station-Catalog.md)는 334역을 기록한다. [월드맵 구성](../places/World-Map-Construction.md)은 구 25개와 조립 순서를, [서울과 지하철 레이어](../places/World-and-Subway-Layers.md)는 여섯 층을 기록한다. 건물 쓰임은 [강·구·동 건물 재사용](../places/Building-Reuse-Geography.md)에 있다.
+[서울 역 카탈로그](../places/Seoul-Station-Catalog.md)는 334역을 기록한다. [세계 지도의 구성](../places/World-Map-Construction.md)은 구 25개와 조립 순서를, [서울과 지하철 레이어](../places/World-and-Subway-Layers.md)는 여섯 층을 기록한다. 건물 쓰임은 [강·구·동 건물 재사용](../places/Building-Reuse-Geography.md)에 있다.
 
 ## 역
 
@@ -60,7 +60,7 @@
 |---|---|---|---|
 | 역 | 이름 있는 역 334, 대합실과 승강장 | 요새, 배급 창구, 나라의 중심지 | [서울 역 카탈로그](../places/Seoul-Station-Catalog.md) |
 | 터널 | 지도 점에서 뽑은 인접 선로, 환승 | 허가된 통행, 침수와 봉쇄의 상태 | [서울과 지하철 레이어](../places/World-and-Subway-Layers.md) |
-| 차량기지 | 신정·천왕·방화·군자·고덕·창동·신내·수서 | 수리, 유치, 차륜과 호송 | [월드맵 구성](../places/World-Map-Construction.md) |
+| 차량기지 | 신정·천왕·방화·군자·고덕·창동·신내·수서 | 수리, 유치, 차륜과 호송 | [세계 지도의 구성](../places/World-Map-Construction.md) |
 | 정수장·수문 | 영등포·뚝섬·구의·암사 아리수 | 급수 서명, 갑문 당직 | [서울 십육국](../factions/Sixteen-States.md) |
 | 통로 | 환승, 정비 통로, 피난 계단 | 통행세, 잔반과 열, 우회 | [물류와 기반 시설](/gdd/rules/Rules-EconomyLogistics) |
 
