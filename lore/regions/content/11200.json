@@ -21,7 +21,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "무학봉 물지게",
           "단지 저수 당직",
@@ -205,8 +207,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -228,7 +235,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "상왕십리 환승 안내",
           "청계 수위 게시",
@@ -452,8 +461,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -475,7 +489,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "마장 계근",
           "정육 서기",
@@ -678,8 +694,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -701,7 +722,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "의료원 수술 당직",
           "한마당 숙영 반장",
@@ -925,8 +948,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -948,7 +976,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "왕십리 환승 안내",
           "구청 순번 서기",
@@ -1158,8 +1188,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -1181,7 +1216,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "대림 옥상 당직",
           "대현산 물지게",
@@ -1405,8 +1442,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1428,7 +1470,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "응봉 선로 정차수",
           "중랑천 물막이",
@@ -1647,8 +1691,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1670,7 +1719,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "벽산 계단 반장",
           "공영주차장 저수 당직",
@@ -1901,8 +1952,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1924,7 +1980,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "신금호 계단 안내",
           "푸르지오 옥상 당직",
@@ -2169,8 +2227,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -2192,7 +2255,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "금호역 순번 안내",
           "응봉산 샘 당직",
@@ -2395,8 +2460,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2418,7 +2488,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "옥수 환승 안내",
           "매봉 우회 짐꾼",
@@ -2656,8 +2728,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 45
+            }
+          ]
         },
         "core_station": true
       }
@@ -2679,7 +2756,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "펌프수비",
           "수질 당직",
@@ -2903,8 +2982,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -2926,7 +3010,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "뚝섬 환승 안내",
           "체육관 숙영 반장",
@@ -3129,8 +3215,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3152,7 +3243,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "시그마밸리 직인",
           "영동대교 북단 자경",
@@ -3334,8 +3427,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -3357,7 +3455,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "공방 직인",
           "성수역 출고 서기",
@@ -3561,8 +3661,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -3584,7 +3689,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "군자교 자경",
           "송원초 마대 교사",
@@ -3766,8 +3873,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -3789,7 +3901,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S04"
+        ],
         "inhabitants": [
           "푸르미르 계근",
           "중랑천 수위 게시",
@@ -3999,8 +4113,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S04",
+              "control": 45
+            }
+          ]
         },
         "core_station": true
       }

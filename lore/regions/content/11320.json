@@ -25,7 +25,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "주공3단지 세대주",
           "주민센터 급수 서기",
@@ -256,8 +258,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -284,7 +291,9 @@
           "lore/characters/Cast-State-11.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "시장입구 저울 인부",
           "우이천 모래주머니조",
@@ -459,8 +468,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -487,7 +501,9 @@
           "lore/characters/Cast-State-11.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "우이천로 물지게",
           "한승 출입 도장조",
@@ -711,8 +727,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -738,7 +759,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "창동 대합실 역무",
           "견인보관 저울 반장",
@@ -955,8 +978,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -982,7 +1010,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "제일병원 침상 당번",
           "등기국 원장 서기",
@@ -1171,8 +1201,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1199,7 +1234,9 @@
           "lore/characters/Cast-State-11.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "무수골 사면 안내",
           "상어바위 횃불 신호수",
@@ -1430,8 +1467,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1457,7 +1499,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "도봉산 대합실 신호수",
           "선수촌 교대 당번",
@@ -1667,8 +1711,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1695,7 +1744,9 @@
           "lore/characters/Cast-State-11.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "백운시장 국솥 인부",
           "덕성 교정 대피 지기",
@@ -1863,8 +1914,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1890,7 +1946,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "방학천 물지게",
           "기념관 증인 당번",
@@ -2137,8 +2195,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2165,7 +2228,9 @@
           "lore/characters/Cast-State-11.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "쌍문 대합실 안내",
           "한일병원 침상 당번",
@@ -2368,8 +2433,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -2395,7 +2465,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "정의여중고 야간 마당지기",
           "해등로 발전기 당번",
@@ -2626,8 +2698,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2653,7 +2730,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "방학 대합실 상자 안내",
           "중랑천 제방 인부",
@@ -2898,8 +2977,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2926,7 +3010,9 @@
           "lore/characters/Cast-State-11.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "방학동길 지게 인부",
           "둘레길 갈림 증인",
@@ -3157,8 +3243,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -3185,7 +3276,9 @@
           "lore/characters/Cast-State-11.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "시루봉 신호수",
           "재실 원장 낭독조",
@@ -3437,8 +3530,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
