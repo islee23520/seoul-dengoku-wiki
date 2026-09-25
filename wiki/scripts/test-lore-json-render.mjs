@@ -83,6 +83,13 @@ test('the corpus has lore JSON documents to render', () => {
   assert.ok(documents.length > 0)
 })
 
+test('every authored lore document gives each content block a unique anchor', () => {
+  for (const { path, document } of documents) {
+    const anchors = document.content.map((block) => block.anchor)
+    assert.equal(new Set(anchors).size, anchors.length, path)
+  }
+})
+
 for (const { path, document } of documents) {
   for (const locale of ['ko', 'en']) {
     test(`${document.id} renders to Markdown that keeps every block (${locale})`, () => {
