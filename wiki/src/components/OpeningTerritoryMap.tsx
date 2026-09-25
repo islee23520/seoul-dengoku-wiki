@@ -237,11 +237,14 @@ export default function OpeningTerritoryMap() {
     setSelectedVassal(null)
     setStateFilter(state.id)
     setSelectedId(state.capitalRegionId)
+    runtimeRef.current?.reset()
+    shellRef.current?.scrollIntoView({ block: 'start' })
   }
   const selectVassal = (vassal: Vassal) => {
     setSelectedVassal(vassal.name)
     setStateFilter('all')
     setSelectedId(null)
+    shellRef.current?.scrollIntoView({ block: 'start' })
   }
 
   useEffect(() => {
@@ -1029,6 +1032,7 @@ export default function OpeningTerritoryMap() {
             <button type="button" aria-pressed={layer === 'subway'} onClick={() => { setLayer('subway'); runtimeRef.current?.reset() }}>지하</button>
           </div>
           {selectedStation && <div className="territory-selection-summary" role="status"><strong>{selectedStation.names.join(' · ')}</strong><span>{selectedStation.control.polityNames.join(' · ') || '통제 미상'} · 경비·통행 우선 {selectedStation.control.primary ? states.get(selectedStation.control.primary)?.name ?? selectedStation.control.primary : '미상'}</span></div>}
+          {selectedState && <div className="territory-state-summary" role="status" style={{ borderColor: selectedState.color }}><span className="wiki-domain-label">선택 국가 · {selectedState.id}</span><strong>{selectedState.name}</strong><span>{selectedState.power} · 수도역 {data.stations.find((station) => station.id === selectedState.capitalStationId)?.name ?? selectedState.capitalStationId}</span><span>수장 {selectedState.ruler}{selectedState.relation ? ` · 정부와 ${selectedState.relation}` : ''}</span><Link to={`/states/${selectedState.slug}`}>국가 상세 보기</Link></div>}
           {layer === 'subway' && <div className="territory-underground-levels" aria-label="지하 심도 범례"><span>실측 심도: 지표 아래 5 m = 지도 1 단위</span><span>승강장 · 노선별 실측 깊이 / 선로 · 실측 곡선</span><span>회색 점선: 심도 또는 선형 미상 · 개략 연결</span></div>}
           <div className="territory-camera-controls territory-camera-overlay" role="group" aria-label="3D 지도 카메라 조작">
             <button type="button" onClick={() => runtimeRef.current?.pan(0, -6)}>팬 북쪽</button>
@@ -1114,7 +1118,7 @@ export default function OpeningTerritoryMap() {
         </div>
         <div className="territory-landmark-index" aria-label="2126년 주요 시설 목록">
           <p className="territory-vassal-inset-title">주요 시설 · {data.landmarks.length}</p>
-          <ul>{data.landmarks.map((site) => <li key={site.id}><button type="button" aria-pressed={selectedLandmark === site.id} onClick={() => { setLayer('surface'); setSelectedLandmark(site.id); setSelectedId(null) }}><span className="territory-state-swatch" style={{ backgroundColor: states.get(site.holderId)?.color }} />{site.name}<span>{site.role}</span></button></li>)}</ul>
+          <ul>{data.landmarks.map((site) => <li key={site.id}><button type="button" aria-pressed={selectedLandmark === site.id} onClick={() => { setLayer('surface'); setSelectedLandmark(site.id); setSelectedId(null); shellRef.current?.scrollIntoView({ block: 'start' }) }}><span className="territory-state-swatch" style={{ backgroundColor: states.get(site.holderId)?.color }} />{site.name}<span>{site.role}</span></button></li>)}</ul>
         </div>
         <aside className="territory-detail" aria-live="polite">
           {layer === 'surface' && selectedStation && <section aria-labelledby="selected-surface-station-title"><p className="wiki-domain-label">선택한 역 · 지상</p><h3 id="selected-surface-station-title">{selectedStation.names.join(' · ')}</h3><table className="person-data-table"><tbody><tr><th>역 상태</th><td>{selectedStation.control.status === 'held' ? '점유' : selectedStation.control.status === 'contested' ? '분쟁' : selectedStation.control.status === 'vacant' ? '무주지' : '미상'}</td></tr><tr><th>관여 국가</th><td>{selectedStation.control.polityNames.join(' · ') || '미상'}</td></tr><tr><th>경비·통행 우선</th><td>{selectedStation.control.primary ? states.get(selectedStation.control.primary)?.name ?? selectedStation.control.primary : '미상'}</td></tr><tr><th>주변 동</th><td>{selectedStation.control.surfaceRegionName ?? '미상'}</td></tr></tbody></table><p>{selectedStation.control.hierarchy.regionalAuthority}</p></section>}

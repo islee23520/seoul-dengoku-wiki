@@ -67,6 +67,29 @@
 
 .territory-selection-summary strong { font-size: 0.9rem; }
 
+.territory-state-summary {
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-end: 0.75rem;
+  z-index: 8;
+  display: grid;
+  gap: 0.3rem;
+  inline-size: min(17rem, 35%);
+  border: 2px solid;
+  background: rgb(4 17 23 / 0.95);
+  box-shadow: 0 0.45rem 1.3rem rgb(0 0 0 / 0.36);
+  color: #e0faff;
+  padding: 0.7rem;
+  font-size: 0.75rem;
+}
+
+.territory-state-summary strong { font-size: 1rem; }
+.territory-state-summary .wiki-domain-label { color: #9ee9ff; }
+.territory-state-summary a { color: #f8e9a3; font-weight: 700; }
+.territory-state-summary a:focus-visible { outline: 2px solid #f8e9a3; }
+
+.territory-map-canvas-3d { scroll-margin-block-start: 1rem; }
+
 .territory-underground-levels {
   position: absolute;
   inset-block-start: 3.9rem;
