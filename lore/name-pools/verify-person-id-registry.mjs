@@ -110,7 +110,7 @@ test("(g) approvalRef가 최종 파일 owner 승인각을 그대로 새긴다", 
   assert.deepEqual(committed.approvalRef, APPROVED);
   assert.equal(committed.approvalRef.approvedBy, "owner");
   assert.equal(committed.approvalRef.approvedAt, "2026-09-25");
-  assert.equal(committed.approvalRef.ownerRef, "2026-09-25 민웅기·신종목·신준 텍스트·값 승인 (성인 지향 이성·결합 단혼)");
+  assert.equal(committed.approvalRef.ownerRef, "2026-09-25 이일섭 K998 제1분공방 후계 교정 및 입력 해시 재승인");
   assert.equal(committed.approvalRef.inputSha256, sha256Hex(ctx.valuesBytes));
   assert.equal(committed.approvalRef.candidatesSha256, sha256Hex(ctx.candidatesBytes));
   assert.equal(committed.schema, SCHEMA);
