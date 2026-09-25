@@ -59,7 +59,7 @@ export function renderHouses(atlas, atlasHash) {
     lines.push(`- 출처층: ${house.source_kind}`);
     lines.push(`- 연결 국가: ${(house.states ?? []).map((id) => stateLabel(atlas, id)).join(', ')}`);
     lines.push(`- 전속 국가: 없음`);
-    lines.push(`- 스튜어드십: ${house.ai_stewardship?.accountable_human ?? ''}`);
+    lines.push(`- 관리: ${house.ai_stewardship?.accountable_human ?? ''}`);
     lines.push('');
     lines.push(house.prose.trim());
     lines.push('');
