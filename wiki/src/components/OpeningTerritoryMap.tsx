@@ -6,6 +6,8 @@ import { TessellateModifier } from 'three/addons/modifiers/TessellateModifier.js
 import { StateFlag } from './StateFlag'
 import { presentationStations } from './stationPresentation'
 import { resolveRegionSelection } from '../wikiRouting'
+import { TerrainTileCache, visibleTerrainTiles } from './terrainTileCache'
+import type { TerrainTile, TileCounts } from './terrainTileCache'
 import './OpeningTerritoryMap.css'
 
 type State = { id: string; name: string; slug: string; origin: string; government: string; power: string; relation: '복속' | '보좌' | '독립' | null; ruler: string; cause: string; labelX: number; labelY: number; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
@@ -18,8 +20,10 @@ type SubwayEdge = { a: string; b: string; lineIds: string[] }
 type Vassal = { name: string; city: string; suzerain: string; founded: string; duty: string; anchor: string; lineId: string; x: number; y: number; east: number; north: number; coordinateStatus: 'surveyed'; coordinateSource: string }
 type Projection = { crs: 'EPSG:5179'; minEast: number; maxEast: number; minNorth: number; maxNorth: number }
 type TerritoryData = { width: number; height: number; projection: Projection; epoch: { label: string }; states: State[]; vassals: Vassal[]; lines: Record<string, LineDefinition>; stations: Station[]; edges: SubwayEdge[]; majorStationIds: string[]; regions: Region[]; attribution: string }
-type TerrainLayer = { name: string; file: string; zoom: number; bboxEPSG5179: number[]; width: number; height: number; minElevation: number; maxElevation: number }
-type RegionalData = { meta: { layers: TerrainLayer[]; attribution: string }; grids: Uint16Array[]; boundaries: Array<{ city: string; centroid: [number, number]; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] } }>; rail: { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> } }
+type TerrainLayer = TerrainTile & { name: string; zoom: number; minElevation: number; maxElevation: number }
+type WaterFeature = { id: string; kind: 'polygon' | 'line'; tag: Record<string, string>; coordinates: number[][] | number[][][] }
+type DetailTile = TerrainTile & { waterFile: string }
+type RegionalData = { meta: { layers: TerrainLayer[]; detailTiles: DetailTile[]; farWaterFile: string; attribution: string }; coarse: Uint16Array; farWater: { features: WaterFeature[] }; boundaries: Array<{ city: string; centroid: [number, number]; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] } }>; rail: { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> } }
 type PlatformDetail = { railM: number | null; platformM: number | null; floors: string | null; platformType: string | null; exits: number | null; transfers: string[] | null; sources: Record<string, 'depth' | 'operations'> }
 type UndergroundDetail = { schema: string; verticalScale: string; sources: Record<string, { url: string; license: string; asOf: string; sha256: string }>; stations: Record<string, Record<string, PlatformDetail>>; paths: Array<{ lineId: string; edge: number; osmWay: number | null; kind: 'observed' | 'schematic'; points: [number, number, number | null][] }> }
 type TerritoryLayer = 'surface' | 'subway'
@@ -132,9 +136,9 @@ const parseTerritoryPath = (path: string) => {
   return points
 }
 
-const terrainHeight = (elevation: number) => elevation <= 0 ? -0.48 : Math.min(elevation, 2900) * 0.0045
+const terrainHeight = (elevation: number, sea = false) => sea ? -0.48 : Math.min(Math.max(elevation, -100), 2900) * 0.0045
 
-const terrainSample = (layer: TerrainLayer, grid: Uint16Array, east: number, north: number) => {
+const terrainSample = (layer: TerrainTile, grid: Uint16Array, east: number, north: number) => {
   const [minEast, minNorth, maxEast, maxNorth] = layer.bboxEPSG5179
   const col = THREE.MathUtils.clamp(Math.round((east - minEast) / (maxEast - minEast) * (layer.width - 1)), 0, layer.width - 1)
   const row = THREE.MathUtils.clamp(Math.round((maxNorth - north) / (maxNorth - minNorth) * (layer.height - 1)), 0, layer.height - 1)
@@ -160,6 +164,7 @@ export default function OpeningTerritoryMap() {
   const [hoveredStation, setHoveredStation] = useState<{ station: DisplayStation; left: number; top: number } | null>(null)
   const [failed, setFailed] = useState(false)
   const [cameraPortrait, setCameraPortrait] = useState(false)
+  const [tileCounts, setTileCounts] = useState<TileCounts>({ desired: 0, requests: 0, loaded: 0, inFlight: 0, decodedBytes: 0 })
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const shellRef = useRef<HTMLDivElement>(null)
   const runtimeRef = useRef<MapRuntime | null>(null)
@@ -187,12 +192,13 @@ export default function OpeningTerritoryMap() {
       return response
     })
     void asset('regional-terrain.json').then((response) => response.json() as Promise<RegionalData['meta']>).then(async (meta) => {
-      const [boundaries, rail, ...buffers] = await Promise.all([
+      const [boundaries, rail, coarse, farWater] = await Promise.all([
         asset('regional-boundaries.json').then((response) => response.json() as Promise<RegionalData['boundaries']>),
         asset('regional-rail.json').then((response) => response.json() as Promise<RegionalData['rail']>),
-        ...meta.layers.map((entry) => asset(entry.file).then((response) => response.arrayBuffer())),
+        asset(meta.layers.find((entry) => entry.name === 'peninsula')!.file).then((response) => response.arrayBuffer()),
+        asset(meta.farWaterFile).then((response) => response.json() as Promise<RegionalData['farWater']>),
       ])
-      setRegional({ meta, boundaries, rail, grids: buffers.map((buffer) => new Uint16Array(buffer as ArrayBuffer)) })
+      setRegional({ meta, boundaries, rail, coarse: new Uint16Array(coarse), farWater })
     }).catch((error) => { if (error.name !== 'AbortError') setFailed(true) })
     return () => controller.abort()
   }, [data])
@@ -276,13 +282,12 @@ export default function OpeningTerritoryMap() {
     const { minEast, maxEast, minNorth, maxNorth } = data.projection
     const worldAt = (east: number, north: number) => ({ x: (east - minEast) / (maxEast - minEast) * 100 - 50, z: (maxNorth - north) / (maxNorth - minNorth) * mapWorldHeight - mapWorldHeight / 2 })
     const projectedAt = (x: number, z: number) => ({ east: minEast + (x + 50) / 100 * (maxEast - minEast), north: maxNorth - (z + mapWorldHeight / 2) / mapWorldHeight * (maxNorth - minNorth) })
-    const metroLayer = regional.meta.layers.find((entry) => entry.name === 'metro')!
-    const metroGrid = regional.grids[regional.meta.layers.indexOf(metroLayer)]
+    const coarseLayer = regional.meta.layers.find((entry) => entry.name === 'peninsula')!
     const surfaceY = (x: number, z: number) => {
       const { east, north } = projectedAt(x, z)
-      const [e0, n0, e1, n1] = metroLayer.bboxEPSG5179
+      const [e0, n0, e1, n1] = coarseLayer.bboxEPSG5179
       if (east < e0 || east > e1 || north < n0 || north > n1) return 0
-      return terrainHeight(terrainSample(metroLayer, metroGrid, east, north))
+      return terrainHeight(terrainSample(coarseLayer, regional.coarse, east, north))
     }
     const stationById = new Map(data.stations.map((station) => [station.id, station]))
     const meshes: RegionMesh[] = []
@@ -290,9 +295,7 @@ export default function OpeningTerritoryMap() {
     const vassalByCity = new Map(vassals.map((entry) => [entry.city, entry]))
     const terrainGroup = new THREE.Group()
     scene.add(terrainGroup)
-    for (let layerIndex = 0; layerIndex < regional.meta.layers.length; layerIndex += 1) {
-      const terrain = regional.meta.layers[layerIndex]
-      const grid = regional.grids[layerIndex]
+    const buildTerrain = (terrain: TerrainTile, grid: Uint16Array, detail = false) => {
       const vertices: number[] = []
       const colors: number[] = []
       const indices: number[] = []
@@ -304,9 +307,9 @@ export default function OpeningTerritoryMap() {
           const { x, z } = worldAt(east, north)
           const index = (row * terrain.width + col) * 2
           const elevation = grid[index] - 500
-          const territoryIndex = grid[index + 1]
+          const territoryIndex = grid[index + 1] & 0x7fff
           const living = territoryIndex > 0
-          const sea = elevation <= 0
+          const sea = (grid[index + 1] & 0x8000) !== 0
           const color = new THREE.Color(sea ? '#14394d' : living ? elevation > 550 ? '#68857e' : '#4f7364' : elevation > 900 ? '#66665f' : '#4a524f')
           const variation = Math.min(0.2, Math.max(0, elevation) / 3600)
           color.offsetHSL(0, 0, variation)
@@ -315,7 +318,7 @@ export default function OpeningTerritoryMap() {
             const suzerain = vassal && states.get(vassal.suzerain)
             if (suzerain) color.lerp(new THREE.Color(suzerain.color), 0.78)
           }
-          vertices.push(x, terrainHeight(elevation) + (terrain.name === 'metro' ? 0.08 : 0), z)
+          vertices.push(x, terrainHeight(elevation, sea) + (detail ? 0.035 : 0), z)
           colors.push(color.r, color.g, color.b)
         }
       }
@@ -330,11 +333,110 @@ export default function OpeningTerritoryMap() {
       geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3))
       geometry.setIndex(indices)
       geometry.computeVertexNormals()
-      const material = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide })
+      const material = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide, polygonOffset: detail, polygonOffsetFactor: -1 })
       const mesh = new THREE.Mesh(geometry, material)
+      if (detail) mesh.renderOrder = 1
       terrainGroup.add(mesh)
-      disposables.push(geometry, material)
+      if (!detail) disposables.push(geometry, material)
+      return mesh
     }
+    buildTerrain(coarseLayer, regional.coarse)
+    const waterMaterial = new THREE.MeshBasicMaterial({ color: 0x2088ac, side: THREE.DoubleSide, depthTest: false, depthWrite: false })
+    const waterGroup = new THREE.Group()
+    terrainGroup.add(waterGroup)
+    waterGroup.visible = false
+    disposables.push(waterMaterial)
+    const buildWater = (features: WaterFeature[], terrain: TerrainTile, grid: Uint16Array, parent: THREE.Group, far = false) => {
+      let count = 0
+      const geometries: THREE.BufferGeometry[] = []
+      for (const feature of features) {
+        const point = ([east, north]: number[]) => {
+          const { x, z } = worldAt(east, north)
+          const elevation = terrainSample(terrain, grid, east, north)
+          return new THREE.Vector3(x, terrainHeight(elevation) + (far ? 0.07 : 0.11), z)
+        }
+        if (feature.kind === 'polygon') {
+          const rings = feature.coordinates as number[][][]
+          if (rings[0]?.length < 3) continue
+          const outline = rings[0].map(([east, north]) => worldAt(east, north))
+          const shape = new THREE.Shape(outline.map(({ x, z }) => new THREE.Vector2(x, -z)))
+          for (const hole of rings.slice(1)) shape.holes.push(new THREE.Path(hole.map(([east, north]) => { const { x, z } = worldAt(east, north); return new THREE.Vector2(x, -z) })))
+          const geometry = new THREE.ShapeGeometry(shape)
+          const positions = geometry.getAttribute('position')
+          for (let index = 0; index < positions.count; index += 1) {
+            const x = positions.getX(index)
+            const z = -positions.getY(index)
+            const { east, north } = projectedAt(x, z)
+            positions.setXYZ(index, x, terrainHeight(terrainSample(terrain, grid, east, north)) + (far ? 0.07 : 0.11), z)
+          }
+          positions.needsUpdate = true
+          geometries.push(geometry)
+        } else {
+          const coordinates = feature.coordinates as number[][]
+          if (coordinates.length < 2) continue
+          const vertices: number[] = []
+          const width = far ? 0.32 : feature.tag.waterway === 'river' ? 0.22 : 0.085
+          for (let i = 0; i < coordinates.length; i += 1) {
+            const current = point(coordinates[i])
+            const previous = point(coordinates[Math.max(0, i - 1)])
+            const next = point(coordinates[Math.min(coordinates.length - 1, i + 1)])
+            const dx = next.x - previous.x
+            const dz = next.z - previous.z
+            const magnitude = Math.hypot(dx, dz) || 1
+            vertices.push(current.x - dz / magnitude * width, current.y, current.z + dx / magnitude * width,
+              current.x + dz / magnitude * width, current.y, current.z - dx / magnitude * width)
+          }
+          const indices: number[] = []
+          for (let i = 0; i < coordinates.length - 1; i += 1) indices.push(i * 2, i * 2 + 2, i * 2 + 1, i * 2 + 1, i * 2 + 2, i * 2 + 3)
+          const geometry = new THREE.BufferGeometry()
+          geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3))
+          geometry.setIndex(indices)
+          geometries.push(geometry)
+        }
+      }
+      for (const geometry of geometries) {
+        const mesh = new THREE.Mesh(geometry, waterMaterial)
+        mesh.renderOrder = 4
+        parent.add(mesh)
+        count += 1
+      }
+      return { geometries, count }
+    }
+    const farWater = buildWater(regional.farWater.features.filter((feature) => feature.tag.waterway === 'river' && feature.kind === 'line'), coarseLayer, regional.coarse, waterGroup, true)
+    disposables.push(...farWater.geometries)
+    const detailGroups = new Map<string, { group: THREE.Group; geometries: THREE.BufferGeometry[]; waterMeshes: number }>()
+    const detailCache = new TerrainTileCache<{ grid: Uint16Array; water: { features: WaterFeature[] }; tile: DetailTile }>(
+      async (tile, signal) => {
+        const detail = tile as DetailTile
+        const [heightResponse, waterResponse] = await Promise.all([
+          fetch(`${import.meta.env.BASE_URL}${detail.file}`, { signal }),
+          fetch(`${import.meta.env.BASE_URL}${detail.waterFile}`, { signal }),
+        ])
+        if (!heightResponse.ok || !waterResponse.ok) throw new Error(`E_REGIONAL_DETAIL:${detail.key}`)
+        const [buffer, water] = await Promise.all([heightResponse.arrayBuffer(), waterResponse.json() as Promise<{ features: WaterFeature[] }>])
+        if (buffer.byteLength !== tile.width * tile.height * 4) throw new Error(`E_REGIONAL_DETAIL_LENGTH:${tile.key}`)
+        return { value: { tile: detail, grid: new Uint16Array(buffer), water }, bytes: buffer.byteLength + JSON.stringify(water).length * 2 }
+      },
+      (key, value) => {
+        const group = new THREE.Group()
+        const mesh = buildTerrain(value.tile, value.grid, true)
+        terrainGroup.remove(mesh)
+        group.add(mesh)
+        const water = buildWater(value.water.features, value.tile, value.grid, group)
+        terrainGroup.add(group)
+        detailGroups.set(key, { group, geometries: [mesh.geometry, ...water.geometries], waterMeshes: water.count })
+        render()
+      },
+      (key) => {
+        const detail = detailGroups.get(key)
+        if (!detail) return
+        terrainGroup.remove(detail.group)
+        for (const geometry of detail.geometries) geometry.dispose()
+        for (const child of detail.group.children) if (child instanceof THREE.Mesh && child.material !== waterMaterial) child.material.dispose()
+        detailGroups.delete(key)
+      },
+      (counts) => setTileCounts((current) => current.desired === counts.desired && current.requests === counts.requests && current.loaded === counts.loaded && current.inFlight === counts.inFlight && current.decodedBytes === counts.decodedBytes ? current : counts),
+    )
     for (const region of data.regions) {
       const points = parseTerritoryPath(region.path)
       const shape = new THREE.Shape()
@@ -355,6 +457,7 @@ export default function OpeningTerritoryMap() {
       const baseColor = region.status === 'vacant' ? vacantColor : region.status === 'contested' ? '#9f9276' : states.get(region.polities[0])?.color ?? '#777777'
       const material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.68, metalness: 0.08, emissive: 0x061016, emissiveIntensity: 0.18 })
       const mesh = new THREE.Mesh(geometry, material) as RegionMesh
+      mesh.renderOrder = 2
       mesh.userData = { regionId: region.id, baseColor }
       scene.add(mesh)
       meshes.push(mesh)
@@ -489,6 +592,7 @@ export default function OpeningTerritoryMap() {
       geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
       const material = new THREE.LineBasicMaterial({ color: data.lines[lineId]?.color ?? '#d1b976', transparent: true, opacity: 0.85 })
       const line = new THREE.LineSegments(geometry, material)
+      line.renderOrder = 5
       line.userData.lineId = lineId
       regionalRailGroup.add(line)
       vassalLineMaterials.push({ lineId, material })
@@ -500,7 +604,7 @@ export default function OpeningTerritoryMap() {
       const subwayMaterial = new THREE.LineBasicMaterial({ color: data.lines[lineId]?.color ?? '#78868a', transparent: true, opacity: 0.72 })
       const subwayLines = new THREE.LineSegments(subwayGeometry, subwayMaterial)
       subwayLines.userData.lineId = lineId
-      subwayLines.renderOrder = 3
+      subwayLines.renderOrder = 5
       scene.add(subwayLines)
       lineMaterials.set(lineId, subwayMaterial)
       byLineSegments.push(subwayLines)
@@ -596,13 +700,15 @@ export default function OpeningTerritoryMap() {
     scene.add(vassalGroup)
 
     const applyLayer = (activeLayer: TerritoryLayer) => {
+      layerRef.current = activeLayer
+      if (activeLayer === 'subway') { selectionKey = ''; detailCache.update([]) }
       undergroundGroup.visible = activeLayer === 'subway'
       base.visible = false
       terrainGroup.visible = activeLayer === 'surface'
       regionalRailGroup.visible = activeLayer === 'surface'
       regionalStationCloud.visible = activeLayer === 'surface'
       for (const mesh of meshes) mesh.visible = activeLayer === 'surface'
-      stationPoints.visible = activeLayer === 'surface'
+      stationPoints.visible = true
       capitalPoints.visible = activeLayer === 'surface'
       for (const segment of byLineSegments) segment.visible = activeLayer === 'surface'
       for (const edgeLine of stateEdgeLines) edgeLine.visible = false
@@ -618,7 +724,36 @@ export default function OpeningTerritoryMap() {
       capitalMaterial.size = activeLayer === 'subway' ? 2.1 : 1.65
     }
 
+    let selectionKey = ''
     const render = () => {
+      const distance = camera.position.distanceTo(controls.target)
+      waterGroup.visible = distance > 420 && layerRef.current === 'surface'
+      if (layerRef.current === 'subway' || distance > 420) {
+        if (selectionKey !== '') { selectionKey = ''; detailCache.update([]) }
+      }
+      else {
+        const corners: Array<{ east: number; north: number }> = []
+        for (const x of [-1, 0, 1]) for (const y of [-1, 0, 1]) {
+          const ray = new THREE.Raycaster()
+          ray.setFromCamera(new THREE.Vector2(x, y), camera)
+          const hit = new THREE.Vector3()
+          if (ray.ray.intersectPlane(new THREE.Plane(new THREE.Vector3(0, 1, 0), 0), hit)) corners.push(projectedAt(hit.x, hit.z))
+        }
+        if (corners.length) {
+          const margin = 25000
+          const footprint: [number, number, number, number] = [
+            Math.min(...corners.map((point) => point.east)) - margin,
+            Math.min(...corners.map((point) => point.north)) - margin,
+            Math.max(...corners.map((point) => point.east)) + margin,
+            Math.max(...corners.map((point) => point.north)) + margin,
+          ]
+          const center = projectedAt(controls.target.x, controls.target.z)
+          const selectedTiles = visibleTerrainTiles(regional.meta.detailTiles, footprint, [center.east, center.north])
+          const nextKey = selectedTiles.map((tile) => tile.key).join(',')
+          if (nextKey !== selectionKey) { selectionKey = nextKey; detailCache.update(selectedTiles) }
+        }
+      }
+
       const cameraDistance = camera.position.distanceTo(controls.target)
       renderer.render(scene, camera)
       const projectedStates = data.states.map((state) => {
@@ -680,7 +815,7 @@ export default function OpeningTerritoryMap() {
       const [e0, n0, e1, n1] = layer.bboxEPSG5179
       const center = worldAt((e0 + e1) / 2, (n0 + n1) / 2)
       controls.target.set(center.x, 0, center.z)
-      camera.position.set(center.x, 3600, center.z + 3400)
+      camera.position.set(center.x, 1950, center.z + 1650)
       controls.update()
       render()
     }
@@ -762,10 +897,12 @@ export default function OpeningTerritoryMap() {
     }
     const observer = new ResizeObserver(resize)
     observer.observe(shell)
-    reset()
+    if (layerRef.current === 'subway') reset()
+    else framePeninsula()
     resize()
 
     return () => {
+      detailCache.dispose()
       observer.disconnect()
       controls.removeEventListener('change', render)
       controls.dispose()
@@ -829,6 +966,7 @@ export default function OpeningTerritoryMap() {
       <div className="territory-map-layout">
         <div className="territory-map-canvas territory-map-canvas-3d" ref={shellRef} data-three-territory-map>
           <canvas ref={canvasRef} aria-label="서울 427개 동 Three.js 2126 시점 영토 지도" onContextMenu={(event) => event.preventDefault()} />
+          <output className="territory-terrain-stats" aria-label="지형 타일 상태">타일 {tileCounts.loaded}/{tileCounts.desired} · 요청 {tileCounts.requests} · 진행 {tileCounts.inFlight} · {(tileCounts.decodedBytes / 1048576).toFixed(2)} MiB</output>
           <div className="territory-layer-toggle territory-layer-overlay" role="group" aria-label="지도 층 선택">
             <button type="button" aria-pressed={layer === 'surface'} onClick={() => setLayer('surface')}>지상</button>
             <button type="button" aria-pressed={layer === 'subway'} onClick={() => { setLayer('subway'); runtimeRef.current?.reset() }}>지하</button>
@@ -919,6 +1057,7 @@ export default function OpeningTerritoryMap() {
           {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr>{selectedState.relation && <tr><th>정부와의 관계</th><td>{selectedState.relation}</td></tr>}</tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
         </aside>
       </div>
+      <p className="wiki-domain-label">{regional.meta.attribution}</p>
       <div className="territory-legend">{data.states.map((state) => <button key={state.id} type="button" data-tier={state.power} onClick={() => selectState(state)} aria-pressed={stateFilter === state.id}><span className="territory-legend-swatch" style={{ backgroundColor: states.get(state.id)?.color }} /><StateFlag stateId={state.id} /><span>{state.id} {state.name}</span></button>)}</div>
       <div className="territory-line-legend" aria-label="서울 지하철 노선 색상"><button type="button" aria-pressed={selectedLine === 'all'} onClick={() => setSelectedLine('all')}>전체 노선</button>{Object.entries(data.lines).map(([lineId, line]) => <button key={lineId} type="button" aria-pressed={selectedLine === lineId} onClick={() => setSelectedLine(lineId)}><span style={{ backgroundColor: line.color }} />{line.name}</button>)}</div>
       <details className="territory-flag-provenance"><summary>16국 깃발 콘셉트 시트와 채택 자산</summary><p>CLIProxy Gemini로 생성한 4×4 콘셉트 시트를 Artkit으로 16개 셀에 분리해 지도·범례의 실제 깃발 자산으로 사용합니다.</p><img src={`${import.meta.env.BASE_URL}state-flags/concept-sheet.webp`} alt="16국 깃발 4×4 콘셉트 시트" loading="lazy" /></details>
