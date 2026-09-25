@@ -499,8 +499,6 @@ export default function OpeningTerritoryMap() {
         const z = (station.y - data.height / 2) * scale
         const levels = station.lineIds.map((lineId) => ({ lineId, entry: station.memberIds.map((id) => underground.stations[id]?.[lineId]).find(Boolean) })).filter((item): item is { lineId: string; entry: PlatformDetail } => Boolean(item.entry))
         if (!levels.length) continue
-        const deepest = Math.min(...levels.map(({ entry }) => depthY(entry.railM)))
-        const height = Math.max(0.3, surfaceY(x, z) + 0.4 - deepest)
         levels.forEach(({ lineId, entry }, index) => {
           const known = entry.platformM !== null
           const y = depthY(entry.platformM) + 0.12
@@ -604,13 +602,27 @@ export default function OpeningTerritoryMap() {
       disposables.push(geometry, material)
     }
     const northernByMode = new Map<string, number[]>()
+    const [railEast0, railNorth0, railEast1, railNorth1] = coarseLayer.bboxEPSG5179
+    const railCell = Math.min((railEast1 - railEast0) / (coarseLayer.width - 1), (railNorth1 - railNorth0) / (coarseLayer.height - 1))
+    const railPoint = (east: number, north: number) => {
+      const { x, z } = worldAt(east, north)
+      const elevation = Math.max(...[-1, 1].flatMap((dx) => [-1, 1].map((dy) => terrainSample(coarseLayer, regional.coarse, east + dx * railCell / 2, north + dy * railCell / 2))))
+      return [x, terrainHeight(elevation) + 0.82, z]
+    }
     for (const path of regional.northernRail.paths) {
       const positions = northernByMode.get(path.mode) ?? []
-      const points = path.points.map(([east, north]) => {
-        const { x, z } = worldAt(east, north)
-        return [x, surfaceY(x, z) + 0.82, z]
-      })
-      for (let index = 1; index < points.length; index += 1) positions.push(...points[index - 1], ...points[index])
+      for (let index = 1; index < path.points.length; index += 1) {
+        const [aEast, aNorth] = path.points[index - 1]
+        const [bEast, bNorth] = path.points[index]
+        const steps = Math.max(1, Math.ceil(Math.hypot(bEast - aEast, bNorth - aNorth) / (railCell / 2)))
+        let previous = railPoint(aEast, aNorth)
+        for (let step = 1; step <= steps; step += 1) {
+          const fraction = step / steps
+          const current = railPoint(aEast + (bEast - aEast) * fraction, aNorth + (bNorth - aNorth) * fraction)
+          positions.push(...previous, ...current)
+          previous = current
+        }
+      }
       northernByMode.set(path.mode, positions)
     }
     for (const [mode, positions] of northernByMode) {
