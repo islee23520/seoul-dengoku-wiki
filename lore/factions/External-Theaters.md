@@ -2,8 +2,6 @@
 
 서울에서 바깥 회랑으로 이어지는 당직과 물자 인계를 기록한다.
 
-이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
-
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
 - 원본 해시: `dca81a769ab9a15c3adc40c604704623e2d5ec16d382c8884670f3743064ad90`
 
