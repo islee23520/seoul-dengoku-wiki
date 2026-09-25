@@ -159,6 +159,10 @@ export default function OpeningTerritoryMap() {
   const [selectedLandmark, setSelectedLandmark] = useState<string | null>(null)
   const [stateFilter, setStateFilter] = useState('all')
   const [selectedLine, setSelectedLine] = useState('all')
+  const [showStations, setShowStations] = useState(false)
+  const [showLandmarks, setShowLandmarks] = useState(false)
+  const [showVassals, setShowVassals] = useState(false)
+  const [detailOpen, setDetailOpen] = useState(false)
   const [layer, setLayer] = useState<TerritoryLayer>('surface')
   const [markerPositions, setMarkerPositions] = useState<Record<string, MarkerPosition>>({})
   const [stationMarkerPositions, setStationMarkerPositions] = useState<Record<string, MarkerPosition>>({})
@@ -237,11 +241,16 @@ export default function OpeningTerritoryMap() {
     setSelectedVassal(null)
     setStateFilter(state.id)
     setSelectedId(state.capitalRegionId)
+    setDetailOpen(true)
+    runtimeRef.current?.reset()
+    shellRef.current?.scrollIntoView({ block: 'start' })
   }
   const selectVassal = (vassal: Vassal) => {
     setSelectedVassal(vassal.name)
     setStateFilter('all')
     setSelectedId(null)
+    setDetailOpen(true)
+    shellRef.current?.scrollIntoView({ block: 'start' })
   }
 
   useEffect(() => {
@@ -921,7 +930,7 @@ export default function OpeningTerritoryMap() {
       pointer.set(((event.clientX - rect.left) / rect.width) * 2 - 1, -((event.clientY - rect.top) / rect.height) * 2 + 1)
       raycaster.setFromCamera(pointer, camera)
       const hit = raycaster.intersectObjects(meshes, false)[0]?.object as RegionMesh | undefined
-      if (hit?.userData.regionId) setSelectedId(hit.userData.regionId)
+      if (hit?.userData.regionId) { setSelectedId(hit.userData.regionId); setDetailOpen(true) }
     }
     const onPointerMove = (event: PointerEvent) => {
       const rect = canvas.getBoundingClientRect()
@@ -1011,7 +1020,8 @@ export default function OpeningTerritoryMap() {
       <div className="territory-toolbar">
         <label className="territory-filter"><span>국가 필터</span><select value={stateFilter} onChange={(event) => { const state = states.get(event.target.value); if (state) selectState(state); else setStateFilter('all') }}><option value="all">16국 전체</option>{data.states.map((state) => <option key={state.id} value={state.id}>{state.id} · {state.name}</option>)}</select></label>
         <label className="territory-filter"><span>노선 필터</span><select value={selectedLine} onChange={(event) => setSelectedLine(event.target.value)}><option value="all">전체 노선</option>{Object.entries(data.lines).map(([lineId, line]) => <option key={lineId} value={lineId}>{line.name}</option>)}</select></label>
-        <label className="territory-filter"><span>지역 선택</span><select value={selectedId ?? ''} onChange={(event) => { setSelectedVassal(null); setSelectedId(event.target.value) }}><option value="">선택 안 함</option>{data.regions.map((region) => <option key={region.id} value={region.id}>{region.district} · {region.name}</option>)}</select></label>
+        <label className="territory-filter"><span>지역 선택</span><select value={selectedId ?? ''} onChange={(event) => { setSelectedVassal(null); setSelectedId(event.target.value); setDetailOpen(Boolean(event.target.value)) }}><option value="">선택 안 함</option>{data.regions.map((region) => <option key={region.id} value={region.id}>{region.district} · {region.name}</option>)}</select></label>
+        <fieldset className="territory-marker-filters"><legend>지도 표시</legend><label><input type="checkbox" checked={showStations} onChange={(event) => setShowStations(event.target.checked)} />역</label><label><input type="checkbox" checked={showLandmarks} onChange={(event) => setShowLandmarks(event.target.checked)} />시설</label><label><input type="checkbox" checked={showVassals} onChange={(event) => setShowVassals(event.target.checked)} />속국</label></fieldset>
         <span className="territory-controls-help">왼쪽 드래그 팬 · 오른쪽 드래그 오빗 · 휠 줌</span>
       </div>
       <div className="territory-tier-legend" aria-label="국력 등급 범례">
@@ -1028,7 +1038,9 @@ export default function OpeningTerritoryMap() {
             <button type="button" aria-pressed={layer === 'surface'} onClick={() => setLayer('surface')}>지상</button>
             <button type="button" aria-pressed={layer === 'subway'} onClick={() => { setLayer('subway'); runtimeRef.current?.reset() }}>지하</button>
           </div>
-          {selectedStation && <div className="territory-selection-summary" role="status"><strong>{selectedStation.names.join(' · ')}</strong><span>{selectedStation.control.polityNames.join(' · ') || '통제 미상'} · 경비·통행 우선 {selectedStation.control.primary ? states.get(selectedStation.control.primary)?.name ?? selectedStation.control.primary : '미상'}</span></div>}
+          {(selectedState || selectedStation || selectedLandmark || selectedVassal || selected) && <button type="button" className="territory-detail-toggle" aria-expanded={detailOpen} aria-controls="territory-detail-panel" onClick={() => setDetailOpen((open) => !open)}>{detailOpen ? '정보 접기' : '정보 펼치기'}</button>}
+          {selectedStation && !detailOpen && <div className="territory-selection-summary" role="status"><strong>{selectedStation.names.join(' · ')}</strong><span>{selectedStation.control.polityNames.join(' · ') || '통제 미상'} · 경비·통행 우선 {selectedStation.control.primary ? states.get(selectedStation.control.primary)?.name ?? selectedStation.control.primary : '미상'}</span></div>}
+          {selectedState && !detailOpen && <div className="territory-state-summary" role="status" style={{ borderColor: selectedState.color }}><span className="wiki-domain-label">선택 국가 · {selectedState.id}</span><strong>{selectedState.name}</strong><span>{selectedState.power} · 수도역 {data.stations.find((station) => station.id === selectedState.capitalStationId)?.name ?? selectedState.capitalStationId}</span><span>수장 {selectedState.ruler}{selectedState.relation ? ` · 정부와 ${selectedState.relation}` : ''}</span><Link to={`/states/${selectedState.slug}`}>국가 상세 보기</Link></div>}
           {layer === 'subway' && <div className="territory-underground-levels" aria-label="지하 심도 범례"><span>실측 심도: 지표 아래 5 m = 지도 1 단위</span><span>승강장 · 노선별 실측 깊이 / 선로 · 실측 곡선</span><span>회색 점선: 심도 또는 선형 미상 · 개략 연결</span></div>}
           <div className="territory-camera-controls territory-camera-overlay" role="group" aria-label="3D 지도 카메라 조작">
             <button type="button" onClick={() => runtimeRef.current?.pan(0, -6)}>팬 북쪽</button>
@@ -1049,7 +1061,7 @@ export default function OpeningTerritoryMap() {
               return <button key={state.id} type="button" className="territory-state-marker territory-capital-marker" data-capital-station-id={state.capitalStationId} aria-pressed={stateFilter === state.id} aria-label={`${state.id} ${state.name} 수도역 ${capital?.name ?? state.capitalStationId}`} title={`${state.id} ${state.name} · 수도역 ${capital?.name ?? state.capitalStationId}`} style={{ left: `${position?.anchorLeft ?? state.capitalX / data.width * 100}%`, top: `${position?.anchorTop ?? state.capitalY / data.height * 100}%`, backgroundColor: states.get(state.id)?.color, visibility: position?.visible === false ? 'hidden' : 'visible' }} onClick={() => selectState(state)}><StateFlag stateId={state.id} /></button>
             })}
           </div>
-          <div className="territory-vassal-markers" aria-hidden={cameraPortrait ? 'true' : undefined} aria-label="속국 13 본국 연결 지점">
+          {showVassals && <div className="territory-vassal-markers" aria-hidden={cameraPortrait ? 'true' : undefined} aria-label="속국 13 본국 연결 지점">
             {vassals.map((vassal) => {
               const position = vassalMarkerPositions[vassal.name]
               const suzerain = states.get(vassal.suzerain)
@@ -1060,27 +1072,27 @@ export default function OpeningTerritoryMap() {
                 {label && position?.visible && <button type="button" className="territory-vassal-label" aria-pressed={selectedVassal === vassal.name} style={{ left: `${label.left}%`, top: `${label.top}%`, borderColor: data.lines[vassal.lineId]?.color ?? suzerain.color }} aria-label={`${vassal.name} ${vassal.city} 본국 ${suzerain.name} 속국`} title={`${vassal.name}(${vassal.city}) · ${vassal.anchor} · 본국 ${suzerain.name}`} onClick={() => selectVassal(vassal)}>{vassal.name} · {vassal.city}</button>}
               </div>
             })}
-          </div>
-          {layer === 'surface' && <div className="territory-landmark-markers" aria-label="2126년 주요 시설">
+          </div>}
+          {showLandmarks && layer === 'surface' && <div className="territory-landmark-markers" aria-label="2126년 주요 시설">
             {data.landmarks.map((site) => { const position = landmarkPositions[site.id]; return position?.visible && <button key={site.id} type="button" className="territory-landmark-marker" data-landmark-id={site.id} aria-label={`${site.name} 시설 정보`} aria-pressed={selectedLandmark === site.id} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: states.get(site.holderId)?.color }} onClick={() => setSelectedLandmark(site.id)} title={`${site.name} · ${site.role}`}>◆</button> })}
           </div>}
-          <div className="territory-station-markers" aria-label="주요 지하철역 이름">
+          {showStations && <div className="territory-station-markers" aria-label="주요 지하철역 이름">
             {displayStations.filter((station) => station.memberIds.some((id) => data.majorStationIds.includes(id))).map((station) => {
               const position = stationMarkerPositions[station.id]
               if (!station) return null
               if (selectedLine !== 'all' && !station.lineIds.includes(selectedLine)) return null
               return <span key={station.id} className="territory-station-marker" data-station-id={station.id} style={{ left: `${position?.left ?? station.x / data.width * 100}%`, top: `${position?.top ?? station.y / data.height * 100}%`, visibility: position?.visible === false ? 'hidden' : 'visible' }}>{station.names.join(' · ')}</span>
             })}
-          </div>
-          <div className="territory-station-hit-targets" aria-label="역 점령 정보">
+          </div>}
+          {showStations && <div className="territory-station-hit-targets" aria-label="역 점령 정보">
             {displayStations.map((station) => {
               const position = stationMarkerPositions[station.id]
               if (!position || position.visible === false || (selectedLine !== 'all' && !station.lineIds.includes(selectedLine))) return null
               const showTooltip = () => setHoveredStation({ station, left: position.left / 100 * (shellRef.current?.clientWidth ?? 1), top: position.top / 100 * (shellRef.current?.clientHeight ?? 1) })
               const lineColor = data.lines[station.lineIds[0]]?.color ?? '#f8f1cf'
-              return <button key={station.id} type="button" className="territory-station-hit" data-station-id={station.id} data-source-station-ids={station.memberIds.join(' ')} aria-label={`${station.names.join(' · ')} 역 정보`} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: lineColor }} onClick={() => { setSelectedStation(station); if (layer === 'subway') runtimeRef.current?.focusStation(station) }} onPointerEnter={showTooltip} onPointerLeave={() => setHoveredStation(null)} onFocus={showTooltip} onBlur={() => setHoveredStation(null)} />
+              return <button key={station.id} type="button" className="territory-station-hit" data-station-id={station.id} data-source-station-ids={station.memberIds.join(' ')} aria-label={`${station.names.join(' · ')} 역 정보`} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: lineColor }} onClick={() => { setSelectedStation(station); setDetailOpen(true); if (layer === 'subway') runtimeRef.current?.focusStation(station) }} onPointerEnter={showTooltip} onPointerLeave={() => setHoveredStation(null)} onFocus={showTooltip} onBlur={() => setHoveredStation(null)} />
             })}
-          </div>
+          </div>}
           {hoveredStation && <div className="territory-station-tooltip" role="status" style={{ left: hoveredStation.left, top: hoveredStation.top }}>
             <strong>{hoveredStation.station.names.join(' · ')}</strong>
             <div className="territory-tooltip-lines">{hoveredStation.station.lineIds.length > 0 ? hoveredStation.station.lineIds.map((lineId) => <span key={lineId} style={{ borderColor: data.lines[lineId]?.color, color: data.lines[lineId]?.color }}>{data.lines[lineId]?.name ?? lineId}</span>) : <span>노선 미확인</span>}</div>
@@ -1114,16 +1126,16 @@ export default function OpeningTerritoryMap() {
         </div>
         <div className="territory-landmark-index" aria-label="2126년 주요 시설 목록">
           <p className="territory-vassal-inset-title">주요 시설 · {data.landmarks.length}</p>
-          <ul>{data.landmarks.map((site) => <li key={site.id}><button type="button" aria-pressed={selectedLandmark === site.id} onClick={() => { setLayer('surface'); setSelectedLandmark(site.id); setSelectedId(null) }}><span className="territory-state-swatch" style={{ backgroundColor: states.get(site.holderId)?.color }} />{site.name}<span>{site.role}</span></button></li>)}</ul>
+          <ul>{data.landmarks.map((site) => <li key={site.id}><button type="button" aria-pressed={selectedLandmark === site.id} onClick={() => { setLayer('surface'); setSelectedLandmark(site.id); setSelectedId(null); setDetailOpen(true); shellRef.current?.scrollIntoView({ block: 'start' }) }}><span className="territory-state-swatch" style={{ backgroundColor: states.get(site.holderId)?.color }} />{site.name}<span>{site.role}</span></button></li>)}</ul>
         </div>
-        <aside className="territory-detail" aria-live="polite">
+        {detailOpen && <aside id="territory-detail-panel" className="territory-detail" aria-label="선택 정보" aria-live="polite"><button type="button" className="territory-detail-close" onClick={() => setDetailOpen(false)}>정보 접기</button>
           {layer === 'surface' && selectedStation && <section aria-labelledby="selected-surface-station-title"><p className="wiki-domain-label">선택한 역 · 지상</p><h3 id="selected-surface-station-title">{selectedStation.names.join(' · ')}</h3><table className="person-data-table"><tbody><tr><th>역 상태</th><td>{selectedStation.control.status === 'held' ? '점유' : selectedStation.control.status === 'contested' ? '분쟁' : selectedStation.control.status === 'vacant' ? '무주지' : '미상'}</td></tr><tr><th>관여 국가</th><td>{selectedStation.control.polityNames.join(' · ') || '미상'}</td></tr><tr><th>경비·통행 우선</th><td>{selectedStation.control.primary ? states.get(selectedStation.control.primary)?.name ?? selectedStation.control.primary : '미상'}</td></tr><tr><th>주변 동</th><td>{selectedStation.control.surfaceRegionName ?? '미상'}</td></tr></tbody></table><p>{selectedStation.control.hierarchy.regionalAuthority}</p></section>}
           {layer === 'subway' && selectedStation && underground && <section aria-labelledby="selected-station-title"><p className="wiki-domain-label">역 상세 · 관측 자료</p><h3 id="selected-station-title">{selectedStation.names.join(' · ')}</h3>{selectedStation.lineIds.map((lineId) => { const entry = underground.stations[selectedStation.id]?.[lineId] ?? selectedStation.memberIds.map((id) => underground.stations[id]?.[lineId]).find(Boolean); return <div key={lineId}><h4 style={{ color: data.lines[lineId]?.color }}>{data.lines[lineId]?.name ?? lineId}</h4><table className="person-data-table"><tbody>{([['승강장 심도', entry?.platformM == null ? '심도 미상' : `${entry.platformM} m`, 'depth'], ['선로 심도', entry?.railM == null ? '심도 미상' : `${entry.railM} m`, 'depth'], ['역 층수', entry?.floors ?? '미상', 'floors'], ['승강장 형식', entry?.platformType ?? '미상', 'platformType'], ['출입구', entry?.exits == null ? '미상' : `${entry.exits}개`, 'exits'], ['환승노선', entry?.transfers?.join(' · ') || '미상', 'transfers']] as const).map(([label, value, field]) => <tr key={field}><th>{label}</th><td>{value} <small>{entry?.sources[field] ? `· ${entry.sources[field] === 'depth' ? 'OA-13305' : '15044440'}` : '· 관측 없음'}</small></td></tr>)}</tbody></table></div> })}<p>서울교통공사 공공누리 1유형 · 운영 현황 이용허락범위 제한 없음 · OSM ODbL. 심도는 현행 지표 기준이며 미상 구간은 개략 표시입니다.</p></section>}
           {selectedLandmark && (() => { const site = data.landmarks.find((entry) => entry.id === selectedLandmark)!; return <section aria-labelledby="selected-landmark-title"><p className="wiki-domain-label">2126년 주요 시설</p><h3 id="selected-landmark-title">{site.name}</h3><table className="person-data-table"><tbody><tr><th>시설 소유</th><td>{states.get(site.holderId)?.name}</td></tr><tr><th>주변 동 지배</th><td>{states.get(site.surfaceHolderId)?.name}{site.isEnclave ? ' · 시설 월경지' : ''}</td></tr><tr><th>역할</th><td>{site.role}</td></tr><tr><th>실제 요새화</th><td>{site.fortification === 'confirmed' ? '확정' : '미상'}</td></tr>{site.connectionStationId && <tr><th>역 연결 통행</th><td>{site.connectionStationId} · 2126년 확인</td></tr>}</tbody></table><p>{site.detail}</p><p>{site.address} · <a href={site.coordinateSource}>위치 출처</a> · {data.landmarkAttribution}</p></section> })()}
           {selectedVassal && (() => { const vassal = vassals.find((entry) => entry.name === selectedVassal)!; return <section aria-labelledby="selected-vassal-title"><p className="wiki-domain-label">선택된 속국 · {vassal.city}</p><h3 id="selected-vassal-title">{vassal.name}</h3><table className="person-data-table"><tbody><tr><th>본국</th><td>{states.get(vassal.suzerain)?.name}</td></tr><tr><th>연결 노선</th><td>{data.lines[vassal.lineId]?.name}</td></tr><tr><th>설립</th><td>{vassal.founded}</td></tr><tr><th>역할</th><td>{vassal.duty}</td></tr></tbody></table><p>{vassal.coordinateSource}</p></section> })()}
-          {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지역 상태</th><td>{selected.status === 'held' ? '점유' : selected.status === 'vacant' ? '무주지' : '분쟁'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ') || '없음'}</td></tr><tr><th>역 수</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126년 상태</h4><p>{selected.openingState}</p><h4>지역 기록</h4><p>{selected.summary}</p></section>}
+          {selected && !selectedState && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지역 상태</th><td>{selected.status === 'held' ? '점유' : selected.status === 'vacant' ? '무주지' : '분쟁'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ') || '없음'}</td></tr><tr><th>역 수</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126년 상태</h4><p>{selected.openingState}</p><h4>지역 기록</h4><p>{selected.summary}</p></section>}
           {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr>{selectedState.relation && <tr><th>정부와의 관계</th><td>{selectedState.relation}</td></tr>}</tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
-        </aside>
+        </aside>}
       </div>
       <p className="wiki-domain-label">북측 철도 관측: {regional.northernRail.paths.length.toLocaleString()}개 OSM 선로 way · {regional.northernRail.stations.length.toLocaleString()}개 역/간이역 점 · {regional.northernRail.source.snapshot} · {regional.northernRail.source.license}. 선로 간 물리 연결 및 2126년 통행은 미상. 북측 행정경계는 이 지도에 아직 반영되지 않았다. 이 수치는 PBF 스냅샷에서 태그된 객체의 범위이며 전 철도망 완전성을 뜻하지 않는다.</p>
       <p className="wiki-domain-label">{regional.meta.attribution}</p>
