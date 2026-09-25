@@ -23,7 +23,7 @@ test('alternate labels share one displayed station while graph nodes and edges r
 test('approved landmark roles project to surveyed facilities without changing surrounding dong ownership', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const source = JSON.parse(await readFile(new URL('../../lore/places/landmark-roles.json', import.meta.url), 'utf8'))
-  assert.equal(data.landmarks.length, 9)
+  assert.equal(data.landmarks.length, 19)
   assert.deepEqual(data.landmarks.map((site) => site.id), source.sites.map((site) => site.id))
   const byRegion = new Map(data.regions.map((region) => [region.id, region]))
   const byId = new Map(data.landmarks.map((site) => [site.id, site]))
@@ -39,6 +39,10 @@ test('approved landmark roles project to surveyed facilities without changing su
   assert.equal(byId.get('lotte-world-tower').connectionStationId, '잠실')
   assert.equal(byId.get('lotte-world-tower').fortification, 'confirmed')
   assert.equal(byId.get('national-assembly').coordinateSource, 'https://www.openstreetmap.org/way/270596342')
+  for (const id of ['city-hall', 'seoul-station', 'war-memorial', 'jamsil-stadium', 'bldg63', 'coex', 'gwanghwamun', 'heunginjimun', 'sungnyemun', 'bosingak']) {
+    assert.equal(byId.get(id).fortification, 'unknown', id)
+    assert.equal(byId.get(id).isEnclave, false, id)
+  }
   assert.deepEqual(['jogyesa', 'myeongdong-cathedral'].map((id) => byId.get(id).isEnclave), [true, true])
   assert.equal(data.states.find((state) => state.id === 'S06').capitalStationId, '광화문')
 })
