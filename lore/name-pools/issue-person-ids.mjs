@@ -4,10 +4,11 @@
 // - 이 발급은 2026-09-22 소유자 승인(세션 senpi:01a0c914)에 묶였고, 2026-09-25 소유자 Q1 답
 //   「재생성 후 재승인」(decisions.json Q1)으로 state_name 재생성 뒤 입력 해시를 다시 승인했다.
 //   입력 두 개의 SHA-256이 승인각과 하나라도 다르면 즉시 실패한다 (fail closed — 추측 발급 금지).
-//     · lore/name-pools/values-cast.json          → APPROVED.inputSha256
+//     · lore/name-pools/values-cast.json 최종 파일 바이트 → APPROVED.inputSha256
 //     · lore/name-pools/person-id-candidates.json → APPROVED.candidatesSha256
+//   승인된 title 정정과 신규 3명은 최종 파일 해시에 포함한다.
 // - K001–K422은 후보 파일의 existingK 스냅숏을 그대로 옮긴다 (재배치·이름 변경 금지).
-// - K423–K1004은 후보 ordinal 순서 그대로 발급한다: ordinal 1 → K423 … ordinal 582 → K1004.
+// - K423–K1007은 후보 ordinal 순서 그대로 발급한다: ordinal 1 → K423 … ordinal 585 → K1007.
 // - 무소속 카드에 안정 캐릭터 ID가 이미 있는 후보(조재표 unaffiliated-jaepyo-jo, 이연 iyen)도
 //   K를 받고 기존 ID는 aliases가 된다 (owner 결정, 2026-09-22).
 // - 재생성은 항상 바이트 단위로 같아야 한다 (멱등). --check는 커밋된 파일과의 바이트 비교다.
@@ -35,11 +36,11 @@ export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
   approvedAt: "2026-09-25",
-  ownerRef: "Q1 decisions.json",
-  inputSha256: "0f34a33db5a170c085264ceeadbc93c4bde25246ba00483c7ddbca84179190cc",
-  candidatesSha256: "7c4754681342162453763afe049d9a69c16b2808256d4fc03e91e7970036ef2e",
+  ownerRef: "2026-09-25 초안대로 승인",
+  inputSha256: "50c4370ca6193ca9251fcae413261adf4aaa0dbadcd898012a361964727ac5cf",
+  candidatesSha256: "4ac774fa7ae65bb3a95c1440b9f58ab02c22d5e7f1731cc064d3e2202134f78a",
 };
-export const FROZEN = { existingK: 422, issued: 582, total: 1004 };
+export const FROZEN = { existingK: 422, issued: 585, total: 1007 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
@@ -149,7 +150,7 @@ export function validateRegistry(registry, ctx) {
     v.push(`개수 불변식 위반: ${registry.existingKCount} + ${registry.issuedCount} ≠ ${registry.totalPeople}`);
   }
 
-  // id는 전부 유일하고 K001..K1004 연속·오름차순이어야 한다 (기존 K 재사용 금지 포함).
+  // id는 전부 유일하고 K001..K1007 연속·오름차순이어야 한다 (기존 K 재사용 금지 포함).
   const ids = persons.map((p) => (p && p.id) || null);
   if (new Set(ids).size !== ids.length) v.push("id가 중복된다");
   ids.forEach((id, i) => {
@@ -165,7 +166,7 @@ export function validateRegistry(registry, ctx) {
     }
   });
 
-  // K423–K1004은 후보 ordinal 순서 그대로 발급 (ordinal 1 → K423 … 582 → K1004).
+  // K423–K1007은 후보 ordinal 순서 그대로 발급 (ordinal 1 → K423 … 585 → K1007).
   const candidates = (ctx.candidatesJson && ctx.candidatesJson.candidates) || [];
   const aliasMap = ctx.aliasMap || new Map();
   candidates.forEach((c, i) => {
