@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readFile, readdir } from 'node:fs/promises'
 import test from 'node:test'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
 
@@ -34,10 +34,21 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.equal(new Set(data.regions.map((region) => region.id)).size, 427)
   assert.ok(data.regions.every((region) => region.path.length > 0))
   assert.ok(data.regions.every((region) => region.openingState.length > 0))
-  assert.ok(data.regions.every((region) => region.polities.length >= 1 || region.status === 'vacant'))
-  assert.ok(data.regions.some((region) => region.status === 'vacant'))
-  assert.ok(data.regions.every((region) => ['held', 'contested', 'vacant'].includes(region.status)))
-  assert.ok(data.regions.some((region) => region.status === 'held'))
+  assert.equal(data.regions.filter((region) => region.status === 'held').length, 427)
+  assert.equal(data.regions.filter((region) => region.status === 'vacant').length, 0)
+  assert.equal(data.regions.filter((region) => region.status === 'contested').length, 0)
+  assert.ok(data.regions.every((region) => region.polities.length === 1))
+  assert.equal(data.regions.filter((region) => ['종로구', '중구'].includes(region.district)).length, 32)
+  assert.ok(data.regions.filter((region) => ['종로구', '중구'].includes(region.district)).every((region) => region.polities[0] === 'S06'))
+  const contentRoot = new URL('../../lore/regions/content/', import.meta.url)
+  for (const filename of (await readdir(contentRoot)).filter((name) => /^\d{5}\.json$/u.test(name))) {
+    const district = JSON.parse(await readFile(new URL(filename, contentRoot), 'utf8'))
+    for (const source of district.regions) {
+      const projected = data.regions.find((region) => region.id === source.region_id)
+      assert.equal(projected.status, source.content.territory.status, source.region_id)
+      assert.deepEqual(projected.polities, source.content.territory.holders.map((holder) => holder.polity), source.region_id)
+    }
+  }
   assert.ok(data.states.every((state) => Number.isFinite(state.labelX) && Number.isFinite(state.labelY)))
   assert.equal(new Set(data.states.map((state) => `${state.labelX}:${state.labelY}`)).size, 16)
   assert.equal(data.stations.length, 334)
@@ -74,7 +85,7 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
     const regions = data.regions.filter((region) => pointInPolygon([capital.x, capital.y], polygonPoints(region.path)))
     assert.equal(regions.length, 1, `${state.id}:${capital.name}:region`)
     assert.equal(regions[0].status, 'held', `${state.id}:${capital.name}:status`)
-    if (regions[0].polities[0] === 'S06') assert.ok(regions[0].polities.includes(state.id), `${state.id}:${capital.name}:context`)
+    if (['종로구', '중구'].includes(regions[0].district)) assert.deepEqual(regions[0].polities, ['S06'], `${state.id}:${capital.name}:government-block`)
     else assert.deepEqual(regions[0].polities, [state.id], `${state.id}:${capital.name}:owner`)
     assert.deepEqual(capital.control.polityIds, [state.id], `${state.id}:${capital.name}:station`)
     assert.equal(capital.control.status, 'held', `${state.id}:${capital.name}:station-status`)
@@ -128,10 +139,38 @@ test('thirteen vassals point at valid suzerains outside the sixteen', async () =
     assert.ok(vassal.city.length > 0, `city: ${vassal.name}`)
     assert.match(vassal.founded, /^2\d{3}\.\s*\d+\./u, `founded: ${vassal.name}`)
     assert.ok(vassal.duty.length > 0, `duty: ${vassal.name}`)
-    assert.equal(vassal.coordinateStatus, 'TODO', `outside Seoul coordinate: ${vassal.name}`)
+    assert.equal(vassal.coordinateStatus, 'surveyed', `outside Seoul coordinate: ${vassal.name}`)
+    assert.match(vassal.coordinateSource, /vuski\/admdongkor/u)
+    assert.ok(Number.isFinite(vassal.east) && Number.isFinite(vassal.north))
     assert.ok(vassal.anchor.length > 0, `line anchor: ${vassal.name}`)
     assert.ok(data.lines[vassal.lineId], `official line: ${vassal.name}`)
   }
+})
+
+test('committed terrain covers Seoul and all surveyed vassal centroids with source attribution', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const meta = JSON.parse(await readFile(new URL('../public/regional-terrain.json', import.meta.url), 'utf8'))
+  const peninsula = meta.layers.find((layer) => layer.name === 'peninsula')
+  const metro = meta.layers.find((layer) => layer.name === 'metro')
+  assert.ok(peninsula && metro)
+  for (const layer of meta.layers) {
+    const bytes = await readFile(new URL(`../public/${layer.file}`, import.meta.url))
+    assert.equal(bytes.byteLength, layer.width * layer.height * 4)
+    assert.ok(layer.width <= 512 && layer.height <= 512)
+  }
+  const inside = (layer, east, north) => east >= layer.bboxEPSG5179[0] && east <= layer.bboxEPSG5179[2] && north >= layer.bboxEPSG5179[1] && north <= layer.bboxEPSG5179[3]
+  assert.ok(inside(metro, (data.projection.minEast + data.projection.maxEast) / 2, (data.projection.minNorth + data.projection.maxNorth) / 2))
+  for (const vassal of data.vassals) {
+    assert.ok(inside(metro, vassal.east, vassal.north), `${vassal.city} inside metro terrain`)
+    assert.ok(inside(peninsula, vassal.east, vassal.north), `${vassal.city} inside peninsula terrain`)
+  }
+  assert.match(meta.attribution, /Mapzen Terrain Tiles/u)
+  assert.match(meta.attribution, /vuski\/admdongkor CC BY 4\.0/u)
+  assert.match(meta.attribution, /OpenStreetMap contributors ODbL/u)
+  const rail = JSON.parse(await readFile(new URL('../public/regional-rail.json', import.meta.url), 'utf8'))
+  const stationNames = new Set(rail.stations.map((station) => station.name))
+  for (const name of ['신창', '연천', '춘천', '문산', '지평', '오이도', '석남', '인천공항2터미널', '광교', '원시']) assert.ok(stationNames.has(name), `regional station: ${name}`)
+  for (const lineId of ['2-1', '3-2', '4-3', '5-4', '6-5', '7-6', '8-7', '9-8', '10-9', 'A', 'B', 'E', 'G', 'I', 'I2', 'K', 'KK', 'KP', 'S', 'SH', 'SL', 'U', 'W', '1-GA']) assert.ok(rail.paths.some((path) => path.lineId === lineId), `regional line: ${lineId}`)
 })
 
 test('government relations come from the canon table and use only defined terms or null', async () => {

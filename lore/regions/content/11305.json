@@ -25,7 +25,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "삼양 승강장 야간 단열 당직",
           "인수봉로 경사 횃불 인부",
@@ -239,8 +241,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -267,7 +274,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "미아 승강장 순번 서기",
           "수유프라자 저울 견습",
@@ -460,8 +469,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -487,7 +501,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "미아사거리 대합실 쉘 관리",
           "한일유엔아이 골목반장",
@@ -706,8 +722,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -733,7 +754,9 @@
           "lore/characters/Cast-State-10.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "숭인시장 좌석 중개",
           "햇빛여성병원 마당 세척",
@@ -928,8 +951,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -956,7 +984,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "솔샘 경사선로 보수",
           "동북시장 지게꾼",
@@ -1172,8 +1202,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1200,7 +1235,9 @@
           "lore/characters/Cast-State-10.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "강북북부시장 좌석 중개",
           "새한빛병원 들것 대기",
@@ -1379,8 +1416,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1406,7 +1448,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "주공5단지 난방 지게",
           "오동 잔디 방풍 당번",
@@ -1599,8 +1643,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -1626,7 +1675,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "꿈의숲 동문 낙엽 지게",
           "주공3단지 밤 당번",
@@ -1847,8 +1898,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1874,7 +1930,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "화계 등짐 심사",
           "빨래골입구 밧줄 당번",
@@ -2109,8 +2167,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2136,7 +2199,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "쌍문교 모래주머니 당번",
           "온누리약국 야간창",
@@ -2280,8 +2345,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -2308,7 +2378,9 @@
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "수유 교차 중개상",
           "종합시장 저울지기",
@@ -2480,8 +2552,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2508,7 +2585,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "북한산우이 숙영 취사",
           "왕관봉 야간 정찰",
@@ -2708,8 +2787,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2735,7 +2819,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/places/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "대한병원 야간등 당번",
           "가오리 경화물 지게",
@@ -2907,8 +2993,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }

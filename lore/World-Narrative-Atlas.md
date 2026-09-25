@@ -28855,3 +28855,32 @@
   }
 }
 ```
+
+## 무소속
+
+```json
+{
+  "unaffiliated": {
+    "K1003": {
+      "name": "조재표",
+      "character_id": "unaffiliated-jaepyo-jo"
+    },
+    "K1004": {
+      "name": "이연",
+      "character_id": "iyen"
+    },
+    "K1008": {
+      "name": "민웅기",
+      "character_id": "K1008"
+    },
+    "K1009": {
+      "name": "신종목",
+      "character_id": "K1009"
+    },
+    "K1010": {
+      "name": "신준",
+      "character_id": "K1010"
+    }
+  }
+}
+```
