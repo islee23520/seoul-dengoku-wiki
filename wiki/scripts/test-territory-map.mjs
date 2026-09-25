@@ -309,7 +309,7 @@ test('territory map is a real Three.js scene with state labels and flags', async
   assert.equal(packageJson.dependencies.three, '0.186.0')
   assert.match(map, /from 'three'/)
   assert.match(map, /OrbitControls/)
-  assert.match(map, /ExtrudeGeometry/)
+  assert.match(map, /ShapeGeometry/)
   assert.match(map, /Raycaster/)
   assert.match(map, /LineSegments/)
   assert.match(map, /territory-station-marker/)

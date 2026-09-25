@@ -30,7 +30,7 @@ type PlatformDetail = { railM: number | null; platformM: number | null; floors: 
 type UndergroundDetail = { schema: string; verticalScale: string; sources: Record<string, { url: string; license: string; asOf: string; sha256: string }>; stations: Record<string, Record<string, PlatformDetail>>; paths: Array<{ lineId: string; edge: number; osmWay: number | null; kind: 'observed' | 'schematic'; points: [number, number, number | null][] }> }
 type TerritoryLayer = 'surface' | 'subway'
 type MarkerPosition = { left: number; top: number; anchorLeft: number; anchorTop: number; visible: boolean }
-type RegionMesh = THREE.Mesh<THREE.ExtrudeGeometry, THREE.MeshStandardMaterial> & { userData: { regionId: string; baseColor: string } }
+type RegionMesh = THREE.Mesh<THREE.ShapeGeometry, THREE.MeshStandardMaterial> & { userData: { regionId: string; baseColor: string } }
 type StateEdgeLine = THREE.Line<THREE.BufferGeometry, THREE.LineBasicMaterial> & { userData: { holderId: string | null; lineIds: string[] } }
 type MapRuntime = {
   reset: () => void
@@ -461,15 +461,14 @@ export default function OpeningTerritoryMap() {
         else shape.lineTo(x, y)
       })
       shape.closePath()
-      const depth = (region.status === 'held' ? 0.82 : region.status === 'vacant' ? 0.3 : 0.46) + Math.min(region.stationCount * 0.035, 0.28)
-      const geometry = new TessellateModifier(1.8, 5).modify(new THREE.ExtrudeGeometry(shape, { depth, steps: 1, bevelEnabled: false }))
+      const geometry = new TessellateModifier(1.8, 5).modify(new THREE.ShapeGeometry(shape))
       geometry.rotateX(-Math.PI / 2)
       const positions = geometry.getAttribute('position')
-      for (let index = 0; index < positions.count; index += 1) positions.setY(index, positions.getY(index) + surfaceY(positions.getX(index), positions.getZ(index)) + 0.14)
+      for (let index = 0; index < positions.count; index += 1) positions.setY(index, surfaceY(positions.getX(index), positions.getZ(index)) + 0.11)
       positions.needsUpdate = true
       geometry.computeVertexNormals()
       const baseColor = region.status === 'vacant' ? vacantColor : region.status === 'contested' ? '#9f9276' : states.get(region.polities[0])?.color ?? '#777777'
-      const material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.68, metalness: 0.08, emissive: 0x061016, emissiveIntensity: 0.18 })
+      const material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.85, transparent: true, opacity: 0.58, depthWrite: false, side: THREE.DoubleSide })
       const mesh = new THREE.Mesh(geometry, material) as RegionMesh
       mesh.renderOrder = 2
       mesh.userData = { regionId: region.id, baseColor }
