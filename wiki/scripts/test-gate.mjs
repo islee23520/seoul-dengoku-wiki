@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 
-import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'
+import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, findBannedTerms, htmlMetadata, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
 const repoRoot = join(scriptDir, '..', '..')
@@ -78,6 +78,13 @@ test('reviewed coined phrases fail on each published text surface', () => {
 
 test('literal logbook lines and ordinary oral testimony are not coined phrases', () => {
   assert.deepEqual(coinedPhraseFailures('운전일지 제42권 첫 줄에 사망일을 적었다. 증언은 구술로 전한다. 창세기전은 참고작이다. 창세', 'world/Century-Annals'), [])
+})
+
+test('banned terms are checked in visible titles, person fields and HTML metadata without scanning library code or URLs', () => {
+  assert.deepEqual(findBannedTerms('인물 복제'), ['복제'])
+  assert.deepEqual(findBannedTerms('Seoul Subway States'), [])
+  assert.deepEqual(htmlMetadata('<meta name="description" content="Seoul Sengoku"><script>clone()</script><a href="https://github.com/islee23520/seoul-kenshi">Wiki</a>'), 'Seoul Sengoku')
+  assert.ok(retiredFormFailures(htmlMetadata('<meta property="og:title" content="Seoul Sengoku">'), 'dist/index.html metadata').length > 0)
 })
 
 test('nine canonical school names and aliases match the private ledger', () => {

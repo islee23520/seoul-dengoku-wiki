@@ -63,7 +63,12 @@ function visibleText(source) {
   return text
 }
 
-function findBannedTerms(text) {
+export function htmlMetadata(html) {
+  return [...html.matchAll(/<meta\b[^>]*\b(?:content|value)\s*=\s*(?:"([^"]*)"|'([^']*)')/gi)]
+    .map((match) => match[1] ?? match[2] ?? '').join(' ')
+}
+
+export function findBannedTerms(text) {
   const lower = text.toLowerCase()
   return BANNED_TERMS.filter((term) => lower.includes(term.toLowerCase()))
 }
@@ -134,7 +139,7 @@ function main() {
       for (const child of node.children ?? []) visit(child)
     }
     for (const block of document.blocks) visit(block)
-    for (const term of findBannedTerms(visibleText(values.join(' ')))) {
+    for (const term of findBannedTerms(visibleText(`${document.title} ${values.join(' ')}`))) {
       failures.push(`FAIL banned-term: ${rel} contains "${term}"`)
     }
     failures.push(...coinedPhraseFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
@@ -150,6 +155,9 @@ function main() {
   const shell = readFileSync(join(distDir, 'index.html'), 'utf8')
   failures.push(...ravelenExclusionFailures(shell, 'dist/index.html'))
   for (const term of findBannedTerms(visibleText(shell))) failures.push(`FAIL banned-term: dist/index.html contains "${term}"`)
+  for (const term of findBannedTerms(htmlMetadata(shell))) failures.push(`FAIL banned-term: dist/index.html metadata contains "${term}"`)
+  failures.push(...coinedPhraseFailures(htmlMetadata(shell), 'dist/index.html metadata'))
+  failures.push(...retiredFormFailures(htmlMetadata(shell), 'dist/index.html metadata'))
   failures.push(...coinedPhraseFailures(visibleText(shell), 'dist/index.html'))
   failures.push(...retiredFormFailures(visibleText(shell), 'dist/index.html'))
   for (const file of listFiles(join(distDir, 'assets')).filter((file) => file.endsWith('.js'))) {
@@ -165,8 +173,10 @@ function main() {
     failures.push(...ravelenExclusionFailures(JSON.stringify(JSON.parse(source)), rel))
     if (rel.startsWith('public/person-details/')) {
       const person = JSON.parse(source)
-      failures.push(...coinedPhraseFailures(JSON.stringify([person.sections, person.biography, person.fields]), rel))
-      failures.push(...retiredFormFailures(JSON.stringify([person.sections, person.biography, person.fields]), rel))
+      const visible = JSON.stringify([person.name, person.title, person.position, person.occupation, person.sections, person.biography, person.fields])
+      for (const term of findBannedTerms(visible)) failures.push(`FAIL banned-term: ${rel} contains "${term}"`)
+      failures.push(...coinedPhraseFailures(visible, rel))
+      failures.push(...retiredFormFailures(visible, rel))
     }
   }
   for (const href of htmlLinks(shell)) {
