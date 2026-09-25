@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 
-import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, referenceExclusionFailures } from './gate.mjs'
+import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, ravelenExclusionFailures, referenceExclusionFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
 const referenceDir = [
@@ -75,4 +75,17 @@ test('reviewed coined phrases fail on each published text surface', () => {
 
 test('literal logbook lines and ordinary oral testimony are not coined phrases', () => {
   assert.deepEqual(coinedPhraseFailures('운전일지 제42권 첫 줄에 사망일을 적었다. 증언은 구술로 전한다. 창세기전은 참고작이다. 창세', 'world/Century-Annals'), [])
+})
+
+test('injected Ravelen references fail the public catalog exclusion rule', () => {
+  for (const reference of ['Ravelen', 'rAvElEn', '라벨렌', '라벨렌의 연대기']) {
+    const fixture = JSON.stringify({ title: 'World', reviewText: `참고: ${reference}`, blocks: [] })
+    assert.deepEqual(ravelenExclusionFailures(fixture, 'src/generated/world/fixture.json'), [
+      'FAIL exclusion: src/generated/world/fixture.json contains a Ravelen reference',
+    ])
+  }
+})
+
+test('the exclusion rule keeps unrelated word fragments', () => {
+  assert.deepEqual(ravelenExclusionFailures('TravelEncounters ravelenish', 'fixture'), [])
 })
