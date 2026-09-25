@@ -301,6 +301,11 @@ const relationByStateName = new Map(relationTable.rows.map(([state, relation]) =
 }))
 const stationControlLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/station-control-overrides.json'), 'utf8'))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
+if (stationControlOverrides.size !== stationControlLedger.overrides.length) throw new Error('E_STATION_CONTROL_DUPLICATE')
+for (const entry of stationControlLedger.overrides) {
+  if (!entry.polityIds?.length || !entry.polityIds.every((id) => stateNameById.has(id)) || !entry.polityIds.includes(entry.primary)) throw new Error(`E_STATION_CONTROL_PRIMARY:${entry.stationId}`)
+  if (entry.status !== (entry.polityIds.length === 1 ? 'held' : 'contested')) throw new Error(`E_STATION_CONTROL_STATUS:${entry.stationId}`)
+}
 proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
 
 const regionContentById = new Map()
@@ -394,6 +399,7 @@ const mapStations = seoulGraph.stations.map((station) => {
       status: delta?.status ?? (!region ? 'unknown' : polityIds.length === 0 ? 'vacant' : polityIds.length === 1 ? 'held' : 'contested'),
       polityIds,
       polityNames: polityIds.map((id) => stateNameById.get(id) ?? id),
+      primary: delta?.primary ?? (polityIds.length === 1 ? polityIds[0] : null),
       surfaceRegionId: region?.id ?? null,
       surfaceRegionName: region?.name ?? null,
       hierarchy: {
