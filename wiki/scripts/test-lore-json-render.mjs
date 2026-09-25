@@ -83,6 +83,25 @@ test('the corpus has lore JSON documents to render', () => {
   assert.ok(documents.length > 0)
 })
 
+test('published hangnyeol counts match the clan register and issued cast', () => {
+  const clan = JSON.parse(readFileSync(join(loreRoot, 'name-pools/cast-hangnyeol.json'), 'utf8'))
+  const cast = JSON.parse(readFileSync(join(loreRoot, 'name-pools/values-cast.json'), 'utf8'))
+  const page = JSON.parse(readFileSync(join(loreRoot, 'characters/Hangnyeol-and-Bon-gwan.json'), 'utf8'))
+  const names = new Set(cast.people.map((person) => person.name))
+  const assigned = new Set(clan.people.map((person) => person.name))
+  assert.equal(names.size, cast.people.length)
+  assert.equal(assigned.size, clan.people.length)
+  for (const name of assigned) assert.ok(names.has(name), name)
+  const statuses = ['applied', 'unconfirmed', 'unused']
+  const table = page.content.find((block) => block.anchor === '캐스트-적용-결과-table3')
+  assert.deepEqual(table.rows.map((row) => row[1].ko), statuses.map((status) => String(clan.people.filter((person) => person.status === status).length)))
+  const summary = page.content.find((block) => block.anchor === '캐스트-적용-결과-p1').text
+  assert.ok(summary.ko.includes(`${clan.people.length.toLocaleString('en-US')}명`))
+  assert.ok(summary.ko.includes(`${cast.people.length.toLocaleString('en-US')}명`))
+  assert.ok(summary.en.includes(clan.people.length.toLocaleString('en-US')))
+  assert.ok(summary.en.includes(cast.people.length.toLocaleString('en-US')))
+})
+
 test('every authored lore document gives each content block a unique anchor', () => {
   for (const { path, document } of documents) {
     const anchors = document.content.map((block) => block.anchor)
