@@ -9,7 +9,7 @@ Korean-prose canon for every named character of post-collapse Seoul: roster inde
 | Task | Location |
 |------|----------|
 | Roster of the original 423 | `Cast-Index.md` (also the publication ledger; `관계 수` counts sender edges only) |
-| The additional 578 (1007 total including core-only and unaffiliated cards) | `Cast-Index-S4.md` |
+| The additional 578 (1010 total including core-only and unaffiliated cards) | `Cast-Index-S4.md` |
 | One state's character cards | `Cast-State-01.md`–`Cast-State-16.md` (1694–1804 lines each) |
 | T0 core cast | `Core-Characters.md` (the T0 list is derived from its `## 인물 목록`; the 18 `주요` are locked in `../name-pools/values-cast.json`) |
 | Directed relation edges | `Cast-Relations.md` (11 types: 친족·양자·사제·지휘·계약·빚·맹세·경쟁·원한·보호체류·배신) |

@@ -1,6 +1,6 @@
 # 랜덤 추가 로스터
 
-[roster-100.json](../name-pools/roster-100.json)은 인물 후보 100명을 담은 생성 실험 결과다. 완성 캐스트나 게임에 연결된 모집 명부로 읽히지는 않으며, 기존 [인물 총람](../characters/Cast-Index.md)의 1007명을 대체하지 않는다. 이 100명은 검토 전 후보다. 한 명을 올릴 때마다 [인물 카드 계약](../characters/Cast-Profile-Contract.md)과 [가치관과 정책 척도](../culture/Values-and-Policy-Scales.md) 10칸을 채운다. 시드만 돌리고 공포 문장을 그대로 베끼면 완료로 치지 않는다. 2026-09-12 감사에서 파일 생성과 설정 검증이 섞여 보고된 점을 확인했으며, 이 문서는 그 상태를 바로잡는다.
+[roster-100.json](../name-pools/roster-100.json)은 인물 후보 100명을 담은 생성 실험 결과다. 완성 캐스트나 게임에 연결된 모집 명부로 읽히지는 않으며, 기존 [인물 총람](../characters/Cast-Index.md)의 1010명을 대체하지 않는다. 이 100명은 검토 전 후보다. 한 명을 올릴 때마다 [인물 카드 계약](../characters/Cast-Profile-Contract.md)과 [가치관과 정책 척도](../culture/Values-and-Policy-Scales.md) 10칸을 채운다. 시드만 돌리고 공포 문장을 그대로 베끼면 완료로 치지 않는다. 2026-09-12 감사에서 파일 생성과 설정 검증이 섞여 보고된 점을 확인했으며, 이 문서는 그 상태를 바로잡는다.
 
 ## 생성에 사용한 자료
 
