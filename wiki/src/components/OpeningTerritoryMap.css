@@ -192,6 +192,11 @@
   outline: 2px solid #ffd66b;
   outline-offset: 1px;
 }
+.territory-vassal-label[aria-pressed='true'],
+.territory-vassal-inset button[aria-pressed='true'] {
+  outline: 2px solid #f7df9b;
+  outline-offset: 2px;
+}
 
 .territory-vassal-inset {
   display: grid;
