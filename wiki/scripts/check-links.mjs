@@ -1,6 +1,7 @@
 import { readFile, readdir, stat } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { loreLinkFailures } from './check-lore-links.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const source = await readFile(resolve(root, 'src/wikiLinks.ts'), 'utf8')
@@ -10,6 +11,7 @@ const catalogSource = await readFile(resolve(root, 'src/generated/wikiCatalog.ts
 const catalogRoutes = new Set([...catalogSource.matchAll(/route: '([^']+)'/g)].map((match) => match[1]))
 
 const failures = []
+failures.push(...await loreLinkFailures())
 for (const path of paths) {
   if (path.startsWith('http') || spaRoutes.has(path) || catalogRoutes.has(path)) continue
   const route = path.replace(/\/$/, '')
