@@ -114,6 +114,7 @@ test('historical precursor remains valid in the state origin and chronicle', () 
   for (const source of ['src/generated/world/Century-Annals.json', 'src/generated/world/Sixteen-States.json']) {
     assert.deepEqual(retiredFormFailures('2090년 급수계약정 기록', source), [])
   }
+  assert.ok(retiredFormFailures('급수계약정', 'dist/assets/fixture.js').length > 0)
 })
 
 test('injected Ravelen references fail the public catalog exclusion rule', () => {
