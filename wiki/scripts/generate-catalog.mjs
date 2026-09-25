@@ -25,6 +25,7 @@ const normalizeTitle = (markdown, fallback) =>
   markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
 
 const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
+const namingStates = JSON.parse(await readFile(resolve(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8')).states
 
 const splitCells = (line) => line.split('|').slice(1, -1).map((cell) => cell.trim())
 
@@ -56,7 +57,7 @@ const parseStateRows = (markdown) => {
     const embedded = (originCell.match(/중심\s*([^|()]+?)역/u) ?? originCell.match(/([가-힣]{2,8})역/u) ?? [])[1] ?? ''
     const capital = (rowCell(row, '수도역') || rowCell(row, '중심역')).replace(/역$/u, '').trim() || embedded.trim()
     const rawName = row['국명']
-    const origin = rawName.match(/\(기원 표기 ([^,)]+)/u)?.[1]?.trim() ?? rawName
+    const origin = namingStates.find((state) => state.id === id)?.precursor
     return {
       id,
       name: publicStateName(rawName),
@@ -71,7 +72,7 @@ const parseStateRows = (markdown) => {
       capital,
     }
   })
-  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
+  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id || !row.origin) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
   if (rows.some((row) => !row.capital)) throw new Error(`E_STATE_CAPITAL:${rows.filter((row) => !row.capital).map((row) => row.name).join(',')}`)
   return rows
 }
