@@ -26,7 +26,9 @@
           "lore/Operating-Houses.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "구청 계약 서기",
           "시장 저울 인부",
@@ -208,8 +210,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -235,7 +242,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "독바위 낙석 감시",
           "수향봉 정찰",
@@ -473,8 +482,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -500,7 +514,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "박석고개 문지기",
           "연서시장 좌판 상인",
@@ -731,8 +747,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -760,7 +781,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "명부 기입원",
           "동의 확인원",
@@ -956,8 +979,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -984,7 +1012,9 @@
           "lore/characters/Cast-State-10.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "강당 난로 정비",
           "고등학교 숙영 서기",
@@ -1236,8 +1266,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1264,7 +1299,9 @@
           "lore/characters/Cast-State-10.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "봉산 약초 채집",
           "사면 운반꾼",
@@ -1509,8 +1546,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1536,7 +1578,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "골조 물통 지기",
           "단지 항아리 반장",
@@ -1767,8 +1811,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1795,7 +1844,9 @@
           "lore/characters/Cast-State-10.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "공고 공구반",
           "불광천 들통조",
@@ -2026,8 +2077,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2054,7 +2110,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/Operating-Houses.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "시장 국솥 조리",
           "은평병원 미음 당번",
@@ -2264,8 +2322,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2291,7 +2354,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "골목 좌판 상인",
           "등불 기름 당번",
@@ -2501,8 +2566,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2528,7 +2598,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "서북병원 급수 당번",
           "역촌 대합실 들것조",
@@ -2731,8 +2803,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2760,7 +2837,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "기독대 전언 서기",
           "응암 승강장 줄지기",
@@ -2963,8 +3042,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -2991,7 +3075,9 @@
           "lore/characters/Cast-State-10.md",
           "lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "터널 낮문 높이재기",
           "새절 대기석 지기",
@@ -3217,8 +3303,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -3246,7 +3337,9 @@
           "lore/characters/Cast-State-09.md",
           "GDD/canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "DMC 전언수하",
           "증산 시장 저울 인부",
@@ -3477,8 +3570,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": true
       }
@@ -3506,7 +3604,9 @@
           "lore/characters/Cast-State-09.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "사업소 환적 인부",
           "수색교 어깨짐꾼",
@@ -3702,8 +3802,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            }
+          ]
         },
         "core_station": false
       }
@@ -3731,7 +3836,9 @@
           "lore/characters/Cast-State-10.md",
           "GDD/canon/locales/ko-KR/rules/rules-strongholds-clauses.json"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "구파발 낮문 안내",
           "기자봉 정찰",
@@ -3955,8 +4062,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }

@@ -19,7 +19,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "서초1동 주민 작업반",
           "생활 문서 교육 담당자"
@@ -200,8 +202,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 100
+            }
+          ]
         },
         "core_station": true
       }
@@ -221,7 +228,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S03"
+        ],
         "inhabitants": [
           "서초2동 주민 작업반",
           "계약 중재 담당자"
@@ -423,8 +432,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S03",
+              "control": 100
+            }
+          ]
         },
         "core_station": true
       }
@@ -444,7 +458,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "inhabitants": [
           "서초3동 주민 작업반",
           "민간 인계 담당자"
@@ -618,8 +634,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 100
+            }
+          ]
         },
         "core_station": true
       }
@@ -841,7 +862,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "잠원동 주민 작업반",
           "수변 비축 이전 담당자"
@@ -1043,8 +1066,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1064,7 +1092,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "반포본동 주민 작업반",
           "주거 배수 점검 담당자"
@@ -1266,8 +1296,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1287,7 +1322,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "반포1동 주민 작업반",
           "실내 교환과 취사 담당자"
@@ -1475,8 +1512,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1496,7 +1538,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "반포2동 주민 작업반",
           "하수 설비 점검 담당자"
@@ -1698,8 +1742,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1719,7 +1768,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "반포3동 주민 작업반",
           "짐 반환 관리 담당자"
@@ -1907,8 +1958,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1928,7 +1984,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "반포4동 주민 작업반",
           "의무 물자 배분 담당자"
@@ -2088,8 +2146,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2109,7 +2172,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "방배본동 주민 작업반",
           "생활 통역 교육 담당자"
@@ -2283,8 +2348,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2304,7 +2374,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "방배1동 주민 작업반",
           "처치 대기 지원 담당자"
@@ -2478,8 +2550,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2499,7 +2576,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "방배2동 주민 작업반",
           "고개 통행 안내 담당자"
@@ -2701,8 +2780,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2722,7 +2806,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "방배3동 주민 작업반",
           "방문 돌봄 담당자"
@@ -2889,8 +2975,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2910,7 +3001,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "방배4동 주민 작업반",
           "환승 인계 확인 담당자"
@@ -3105,8 +3198,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3349,7 +3447,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "양재2동 주민 작업반",
           "산지 귀환 확인 담당자"
@@ -3544,8 +3644,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3565,7 +3670,9 @@
           "lore/factions/Sixteen-States.md",
           "lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S16"
+        ],
         "inhabitants": [
           "내곡동 주민 작업반",
           "돌봄 보급 담당자"
@@ -3774,8 +3881,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S16",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }

@@ -15,7 +15,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "석계 환적과 선한이웃 야간등",
         "summary": "월계1동은 광운대 승강장과 석계 승강장이 한 생활권에서 같은 교대를 놓고 다툰다. 광운대학교미디어콘텐츠센터 강의동은 잔존 회로를 펴 보는 작업대로 쓰이고, 선한이웃병원 복도에는 야간 등유가 바닥이다. 삼화상운차고지 발전기가 병원과 107동 승강기를 동시에 못 돌린다.",
         "anchor_refs": [
@@ -210,8 +212,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -227,7 +234,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "초안산 가마와 녹천 등불",
         "summary": "월계2동은 녹천 승강장의 짧은 정차와 동초안산 사면이 한 교대를 나눈다. 초안산도자기체험장 가마는 개막일 난방용 불씨 후보지이고, 인덕대학교 실습동은 잔존 공구를 펴 보는 자리로만 거론된다. 염광 학교군 운동장은 하룻밤 건조대로, 중앙도서관전기차충전소는 배터리 잔량을 거두는 창고로 남는다.",
         "anchor_refs": [
@@ -450,8 +459,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -467,7 +481,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "월릉교 물통과 월계 정차",
         "summary": "월계3동은 월계 승강장의 가벼운 정비와 월릉교 아래 중랑천 물받이가 같은 손을 요구한다. 삼호3차아파트 옥상 물통이 바닥을 드러내고, 월계동진아교통 마당은 손수레를 세우는 자리로 남았다. 한천·녹천·연지 초등학교와 녹천중학교 운동장은 물통을 말리는 마당 후보지다.",
         "anchor_refs": [
@@ -690,8 +706,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -707,7 +728,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "공릉시장 경매와 풍림 배급줄",
         "summary": "공릉1동은 공릉 승강장과 태릉입구 승강장 사이에 공릉시장이 끼어 있다. 시장 점포는 당일 식량을 돌리는 자리이지 생산지가 아니고, 공릉 풍림아이원아파트 배급줄이 같은 재고를 본다. 공릉초등학교 운동장은 대기석, 공릉1동 주민센터는 순번 칠판이다.",
         "anchor_refs": [
@@ -944,8 +967,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -961,7 +989,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "다산관 숙영과 화랑대 관문",
         "summary": "공릉2동은 화랑대 승강장을 동부 관문처럼 쓰고, 다산관 강의동은 불암산 쪽에서 내려오는 하룻밤 자리 후보지다. 한국삼육고·중·초와 태랑중학교 운동장은 배급 건조대이고, 100년된 수목 아래가 교대 대기석이다. 화랑대사거리와 화랑로는 혼잡하나 통과권은 따로다.",
         "anchor_refs": [
@@ -1189,8 +1219,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1206,7 +1241,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "하계 칠판과 한성여객 종점",
         "summary": "하계1동은 하계 승강장 앞과 하계1동 주민센터 칠판이 같은 급수표를 놓고 다툰다. 한성여객종점은 손수레 종착이고, 삼익선경아파트 세대주는 표를 단지 순번으로 읽는다. 성림학사는 하룻밤 자리, 하계중·한천중·불암중 운동장은 공개 대기석이다.",
         "anchor_refs": [
@@ -1429,8 +1466,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -1446,7 +1488,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "하계실버센터와 5·6단지 물통",
         "summary": "하계2동은 하계5·6단지 옥상 물통과 하계실버센터 돌봄이 같은 교대를 나눈다. 벽산상가는 단지 앞 교환 좌판이고, 월계1교는 월계 쪽으로 손수레가 넘어가는 다리다. 중현·중평 초등학교와 중평중학교 운동장은 물통을 말리고 곡물을 펴는 마당이다. 중랑천·당현천은 위치만 실측이며 음용은 창작 검사 대상이다.",
         "anchor_refs": [
@@ -1681,8 +1725,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1698,7 +1747,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "물개바위 횃불과 중계본동 종점",
         "summary": "중계본동은 불암산 사면의 물개바위와 현대3차아파트 옥상이 한 횃불 교대를 나눈다. 중계본동종점은 손수레가 멈추는 자리이고, 불암초·수암초·불암고·영신여고 운동장은 하룻밤 건조대다. 가리온 표석은 능선 안내의 이정표로만 읽힌다.",
         "anchor_refs": [
@@ -1928,8 +1979,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -1945,7 +2001,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "구민체육센터 급수와 당현천 줄",
         "summary": "중계1동은 중계구민체육센터 탈의실을 비상 급수 창구 후보지로 보고, 서라벌고·청암중고·원광초·을지초·을지중 운동장은 배급 대기석이다. 당현천은 위치만 실측이며 음용은 창작 검사 대상이다. 노원로22길은 단지 보행이지 열차가 아니다.",
         "anchor_refs": [
@@ -2175,8 +2233,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2192,7 +2255,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "깔딱고개 모포와 주공 4·5단지",
         "summary": "중계4동은 깔딱고개 안부가 중계주공4~5단지 옥상보다 높다. 중계초·중계중·미래산업과학고·재현고·상계제일중 운동장은 하룻밤 건조대이고, 상계역1번출구는 이웃 승강장의 지상 출입일 뿐 이 동에 역 중심을 두지 않는다.",
         "anchor_refs": [
@@ -2427,8 +2492,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -2444,7 +2514,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "구민회관 원장과 중계 대기",
         "summary": "중계2·3동은 중계 승강장 대기줄과 노원구민회관 원장이 같은 손을 요구한다. 서울시립북미술관 홀은 하룻밤 필경 자리 후보지이고, 중원·청계·용동초와 서울아이티고 운동장은 배급 대기석이다. 중계근린공원은 공개 게시판 후보지다. 이 지역의 선택은 난간 보수만이 아니라 수업·거주 공간 사이 보행 안내를 다시 배치하는 일이다.",
         "anchor_refs": [
@@ -2646,8 +2718,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2663,7 +2740,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "약수터 물통과 수락산입구",
         "summary": "상계1동은 수락산 승강장과 수락산입구 보행이 한 교대를 나눈다. 약수터는 위치만 실측이며 음용은 창작 검사 대상이다. 코끼리바위 능선은 하룻밤 자리 후보지이고, 수락리버시티3·4단지와 노원초·수락초 운동장이 같은 물을 본다. 새서울병원·연세미메이드치과 복도는 야간 당직 후보지다.",
         "anchor_refs": [
@@ -2846,8 +2925,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -2863,7 +2947,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "환승통로 경매와 중앙하이츠 줄",
         "summary": "상계2동은 노원 승강장과 4호선-7호선 환승통로가 상가 신용을 돌리는 자리다. 동양메이저아파트와 상계중앙하이츠2차아파트 배급줄이 같은 재고를 보고, 상계초교입구교차로는 손수레가 엉키는 모퉁이다. 중계4동의 창작 숙영조는 물 운반 다음에 남는 젖은 침구와 건조 공간의 부족을 의제로 올린다.",
         "anchor_refs": [
@@ -3086,8 +3172,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3103,7 +3194,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "폭포약수터와 절고개 모포",
         "summary": "상계3·4동은 불암산 승강장과 절고개·덕능고개가 같은 경사 교대를 나눈다. 폭포약수터는 위치만 실측인 샘이고, 거북바위는 능선 이정표다. 흥안운수상계4동종점은 손수레 종착, 수락산로는 보행 기억이다. 신상계초·덕암초 운동장은 하룻밤 건조대다. 상계3·4동은 고지에서 본 통로를 생활 이동에 쓰기 전에 현장 확인이 필요한 구역으로 설정한다.",
         "anchor_refs": [
@@ -3331,8 +3424,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3348,7 +3446,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "한신 물통과 상계 정차",
         "summary": "상계5동은 상계 승강장의 짧은 정차와 한신1·2·3차아파트 옥상 물통이 같은 손을 요구한다. 한글비석로는 단지 보행이고, 보람사거리는 손수레가 엉키는 모퉁이다. 삼창타워프라자는 교환 좌판 후보지, 계상초 운동장은 건조대다.",
         "anchor_refs": [
@@ -3566,8 +3666,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3583,7 +3688,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "노원구청 게시와 8번출구 줄",
         "summary": "상계6·7동은 노원 승강장 8번출구 대기줄과 노원구청 게시판이 같은 권위를 놓고 다툰다. 한양아파트5동과 상계2-6단지 세대주는 급수표를 구하고, 노원삼성정형외과 복도는 야간 당직 후보지다. 마들근린공원 수영장은 위치만 실측인 물그릇이다. 월계2동 공동체는 단지 배급뿐 아니라 초안산 주변 보행자의 귀환을 확인해야 한다.",
         "anchor_refs": [
@@ -3787,8 +3894,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -3804,7 +3916,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "주공11단지 난방과 중랑천 줄",
         "summary": "상계8동은 상계주공11단지와 10단지 옥상 물통이 같은 난로를 놓고 다툰다. 상계주공15단지 출입과 상계14-16단지 보행이 손수레를 나눈다. 노원고·상경중·서울상경초·서울동일초 운동장은 건조대다. 중랑천은 위치만 실측이다.",
         "anchor_refs": [
@@ -4034,8 +4148,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
@@ -4051,7 +4170,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "마들 대합실과 주공14단지",
         "summary": "상계9동은 마들 승강장 대합실과 상계주공14단지 배급줄이 같은 난방을 나눈다. 상계주공12단지와 상계11~13단지 세대주가 같은 순번을 보고, 상원초·온곡초·상원중 운동장은 대기석이다. 지성관은 하룻밤 필경 후보지다.",
         "anchor_refs": [
@@ -4297,8 +4418,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": true
       }
@@ -4314,7 +4440,9 @@
           "lore/chronology/Scenario-Timeline.md",
           "lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [],
+        "polity_contexts": [
+          "S11"
+        ],
         "title": "창동차량사업소 철재와 주공7단지",
         "summary": "상계10동은 창동차량사업소 부지가 갈색 공터로 남아 철재를 거두는 자리고, 상계주공7단지 세대주는 그 철재를 난로와 물통 받침으로 달라고 한다. 용화여고·상월초·상곡초·온곡중 운동장은 건조대, 강북도로교통교육장은 손수레 연습 마당이다. 삼성그룹의 영향권이지 기지 전체의 소유 선언이 아니다.",
         "anchor_refs": [
@@ -4565,8 +4693,13 @@
           }
         ],
         "territory": {
-          "status": "vacant",
-          "holders": []
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S11",
+              "control": 70
+            }
+          ]
         },
         "core_station": false
       }
