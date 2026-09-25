@@ -87,6 +87,36 @@ test('S02 issued cards retain distinct bilingual livelihoods and their martial s
   }
 })
 
+test('all currently issued S03 cards retain bilingual livelihoods distinct from office and martial path', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-03.json', import.meta.url), 'utf8'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
+    : [])
+  assert.ok(headings.length > 0)
+  assert.equal(new Set(headings.map(({ name }) => name)).size, headings.length)
+  for (const [index, heading] of headings.entries()) {
+    const id = idByName.get(heading.name)
+    assert.ok(id, heading.name)
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const fields = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+    const occupations = fields.filter((item) => typeof item.ko === 'string' && item.ko.startsWith('생업: '))
+    assert.equal(occupations.length, 1, heading.name)
+    const occupation = occupations[0]
+    assert.match(occupation.en, /^Livelihood: \S/u, heading.name)
+    const livelihood = occupation.ko.slice(4)
+    assert.notEqual(livelihood, '미등록', heading.name)
+    const title = fields.find((item) => typeof item.ko === 'string' && item.ko.startsWith('직함: '))?.ko.slice(4)
+    assert.notEqual(livelihood, title, heading.name)
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/person-${id.slice(1).padStart(4, '0')}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.name, heading.name)
+    assert.equal(detail.occupation, livelihood, heading.name)
+    assert.equal(detail.fields['생업'], livelihood, heading.name)
+    assert.ok(/^(?:기록칼|차륜망치|호위방패|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+  }
+})
+
 test('person detail page renders tables and the canonical prose sections', async () => {
   const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8')
   const page = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
