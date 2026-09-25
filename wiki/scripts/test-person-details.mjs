@@ -329,6 +329,63 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and original 
   assert.equal(seen.size, 61)
 })
 
+test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original martial states', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-08.json', import.meta.url), 'utf8'))
+  const markdown = await readFile(new URL('../../lore/characters/Cast-State-08.md', import.meta.url), 'utf8')
+  assert.equal(markdown, renderLoreMarkdown(document, 'ko'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const values = JSON.parse(await readFile(new URL('../../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const expectedMartial = new Map(Object.entries({
+    '차륜망치': 'K208 K200',
+    '호위방패': 'K203 K447 K495 K543 K591 K639 K687 K735 K783 K831 K879 K927 K975',
+    '기록칼': 'K206',
+    '수문손': 'K216 K218',
+    '없음. 생업만.': 'K194 K199 K207 K211 K195 K196 K197 K198 K201 K202 K204 K205 K209 K210 K212 K213 K214 K215 K217 K431 K463 K479 K511 K527 K559 K575 K607 K623 K655 K671 K703 K719 K751 K767 K799 K815 K847 K863 K895 K911 K943 K959 K991',
+  }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
+  assert.equal(expectedMartial.size, 61)
+  const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
+  assert.equal(headings.length, 61)
+  const seen = new Set()
+  for (const [index, heading] of headings.entries()) {
+    const matches = registry.persons.filter((person) => person.name === heading.name)
+    assert.equal(matches.length, 1, heading.name)
+    const id = matches[0].id
+    assert.ok(expectedMartial.has(id), id)
+    assert.ok(!seen.has(id), id)
+    seen.add(id)
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const fields = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+    const occupations = fields.flatMap((item) => [...plain(item.ko).matchAll(/(?:^|\n)-?\s*생업: ([^\n]+)/gu)].map((match) => match[1]))
+    assert.equal(occupations.length, 1, id)
+    const occupation = occupations[0]
+    assert.ok(occupation && occupation !== '미등록', id)
+    assert.ok(fields.some((item) => /(?:^|\n)-?\s*Livelihood: \S/u.test(plain(item.en))), id)
+    const field = (prefix) => fields.find((item) => plain(item.ko).startsWith(prefix))
+    assert.notEqual(occupation, plain(field('품계: ').ko).slice(4), id)
+    assert.notEqual(occupation, plain(field('직함: ').ko).slice(4), id)
+    const detailMatches = values.flatMap((person, valueIndex) => person.name === heading.name && person.state === 'S08'
+      ? [valueIndex + 1] : [])
+    assert.equal(detailMatches.length, 1, id)
+    const detailId = `person-${String(detailMatches[0]).padStart(4, '0')}`
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${detailId}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.id, detailId, id)
+    assert.equal(detail.name, heading.name, id)
+    assert.equal(detail.state, 'S08', id)
+    assert.equal(detail.occupation, occupation, id)
+    assert.equal(detail.fields['생업'], occupation, id)
+    assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-08#'), id)
+    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
+      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
+    const martial = martialText.match(/무공\.\s*(차륜망치|호위방패|기록칼|수문손|없음\. 생업만\.)/u)?.[1]
+    assert.equal(martial, expectedMartial.get(id), id)
+    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+  }
+  assert.equal(seen.size, 61)
+})
+
 test('person detail page renders tables and the canonical prose sections', async () => {
   const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8')
   const page = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
