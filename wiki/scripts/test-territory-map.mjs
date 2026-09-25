@@ -1,6 +1,24 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import test from 'node:test'
+import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
+
+test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const displayed = presentationStations(data.stations)
+  assert.equal(data.stations.length, 334)
+  assert.equal(data.edges.length, 435)
+  assert.equal(Object.keys(stationAliases).length, 18)
+  assert.equal(displayed.length, 316)
+  for (const [aliasId, primaryId] of Object.entries(stationAliases)) {
+    const station = displayed.find((candidate) => candidate.id === primaryId)
+    assert.deepEqual(station.memberIds, [primaryId, aliasId], aliasId)
+    assert.deepEqual(station.lineIds, [...new Set(station.memberIds.flatMap((id) => data.stations.find((source) => source.id === id).lineIds))], aliasId)
+    assert.equal(displayed.some((candidate) => candidate.id === aliasId), false, aliasId)
+  }
+  assert.deepEqual(displayed.filter((station) => station.name.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
+  assert.ok(data.edges.some((edge) => edge.a === '신촌(지하)' || edge.b === '신촌(지하)'))
+})
 
 test('opening territory map covers every Seoul dong and all sixteen states', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
@@ -182,7 +200,7 @@ test('territory map is a real Three.js scene with state labels and flags', async
   assert.match(map, /territory-station-marker/)
   assert.match(map, /territory-station-tooltip/)
   assert.match(map, /territory-station-hit/)
-  assert.match(map, /334개 역 점령 정보/)
+  assert.match(map, /역 점령 정보/)
   assert.match(map, /hoveredStation/)
   assert.match(map, /selectedLine/)
   assert.match(map, /노선 필터/)

@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { StateFlag } from './StateFlag'
+import { presentationStations } from './stationPresentation'
 import { resolveRegionSelection } from '../wikiRouting'
 import './OpeningTerritoryMap.css'
 
@@ -11,6 +12,7 @@ type Region = { id: string; name: string; district: string; path: string; politi
 type LineDefinition = { name: string; color: string }
 type StationControl = { source: 'derived-from-surface' | 'outside-surface-atlas' | 'control-delta'; deltaId: string | null; status: 'held' | 'contested' | 'vacant' | 'unknown'; polityIds: string[]; polityNames: string[]; surfaceRegionId: string | null; surfaceRegionName: string | null; hierarchy: { state: string; regionalAuthority: string; stationManager: string } }
 type Station = { id: string; name: string; district: string; x: number; y: number; degree: number; lineIds: string[]; control: StationControl }
+type DisplayStation = Station & { memberIds: string[]; names: string[] }
 type SubwayEdge = { a: string; b: string; lineIds: string[] }
 type Vassal = { name: string; city: string; suzerain: string; founded: string; duty: string; anchor: string; lineId: string; coordinateStatus: 'TODO' }
 type TerritoryData = { width: number; height: number; epoch: { label: string }; states: State[]; vassals: Vassal[]; lines: Record<string, LineDefinition>; stations: Station[]; edges: SubwayEdge[]; majorStationIds: string[]; regions: Region[]; attribution: string }
@@ -168,7 +170,7 @@ export default function OpeningTerritoryMap() {
   const [stationMarkerPositions, setStationMarkerPositions] = useState<Record<string, MarkerPosition>>({})
   const [vassalMarkerPositions, setVassalMarkerPositions] = useState<Record<string, MarkerPosition>>({})
   const [vassalLabelPositions, setVassalLabelPositions] = useState<Record<string, { left: number; top: number }>>({})
-  const [hoveredStation, setHoveredStation] = useState<{ station: Station; left: number; top: number } | null>(null)
+  const [hoveredStation, setHoveredStation] = useState<{ station: DisplayStation; left: number; top: number } | null>(null)
   const [failed, setFailed] = useState(false)
   const [cameraPortrait, setCameraPortrait] = useState(false)
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -197,6 +199,7 @@ export default function OpeningTerritoryMap() {
 
   const states = useMemo(() => new Map(data?.states.map((state, index) => [state.id, { ...state, color: colors[index] }]) ?? []), [data])
   const vassals = data?.vassals ?? []
+  const displayStations = useMemo(() => presentationStations(data?.stations ?? []), [data])
   const selected = data?.regions.find((region) => region.id === selectedId)
   const selectedState = stateFilter === 'all' ? null : states.get(stateFilter) ?? null
   const tierCounts = useMemo(() => {
@@ -298,9 +301,9 @@ export default function OpeningTerritoryMap() {
     undergroundGroup.add(stationStacks)
     const stackGeometry = new THREE.CylinderGeometry(0.12, 0.12, undergroundLevels.station - undergroundLevels.tunnel, 6)
     const stackMaterial = new THREE.MeshBasicMaterial({ color: 0x79adb9, transparent: true, opacity: 0.45 })
-    const stacks = new THREE.InstancedMesh(stackGeometry, stackMaterial, data.stations.length)
+    const stacks = new THREE.InstancedMesh(stackGeometry, stackMaterial, displayStations.length)
     const stackMatrix = new THREE.Matrix4()
-    data.stations.forEach((station, index) => {
+    displayStations.forEach((station, index) => {
       stackMatrix.makeTranslation((station.x - data.width / 2) * scale, (undergroundLevels.station + undergroundLevels.tunnel) / 2, (station.y - data.height / 2) * scale)
       stacks.setMatrixAt(index, stackMatrix)
     })
@@ -309,8 +312,8 @@ export default function OpeningTerritoryMap() {
     for (const [level, depth] of [['station', undergroundLevels.station], ['platform', undergroundLevels.platform]] as const) {
       const geometry = new THREE.CylinderGeometry(level === 'station' ? 0.47 : 0.34, level === 'station' ? 0.47 : 0.34, 0.16, 8)
       const material = new THREE.MeshBasicMaterial({ color: level === 'station' ? 0xb7eaf4 : 0xffffff, vertexColors: false })
-      const discs = new THREE.InstancedMesh(geometry, material, data.stations.length)
-      data.stations.forEach((station, index) => {
+      const discs = new THREE.InstancedMesh(geometry, material, displayStations.length)
+      displayStations.forEach((station, index) => {
         stackMatrix.makeTranslation((station.x - data.width / 2) * scale, depth, (station.y - data.height / 2) * scale)
         discs.setMatrixAt(index, stackMatrix)
         if (level === 'platform') discs.setColorAt(index, new THREE.Color(data.lines[station.lineIds[0]]?.color ?? '#8ca7ad'))
@@ -386,11 +389,11 @@ export default function OpeningTerritoryMap() {
       disposables.push(geometry)
     }
 
-    const stationPositions = data.stations.flatMap((station) => [(station.x - data.width / 2) * scale, 1.52, (station.y - data.height / 2) * scale])
+    const stationPositions = displayStations.flatMap((station) => [(station.x - data.width / 2) * scale, 1.52, (station.y - data.height / 2) * scale])
     const stationGeometry = new THREE.BufferGeometry()
     stationGeometry.setAttribute('position', new THREE.Float32BufferAttribute(stationPositions, 3))
-    stationGeometry.setAttribute('stationIndex', new THREE.Float32BufferAttribute(data.stations.map((_, index) => index), 1))
-    const stationColorAttribute = new THREE.Float32BufferAttribute(new Array(data.stations.length * 3).fill(1), 3)
+    stationGeometry.setAttribute('stationIndex', new THREE.Float32BufferAttribute(displayStations.map((_, index) => index), 1))
+    const stationColorAttribute = new THREE.Float32BufferAttribute(new Array(displayStations.length * 3).fill(1), 3)
     stationGeometry.setAttribute('color', stationColorAttribute)
     const stationMaterial = new THREE.PointsMaterial({ color: 0xffffff, vertexColors: true, size: 0.38, sizeAttenuation: true })
     const stationPoints = new THREE.Points(stationGeometry, stationMaterial)
@@ -480,7 +483,7 @@ export default function OpeningTerritoryMap() {
       for (const segment of byLineSegments) segment.visible = activeLayer === 'surface'
       for (const edgeLine of stateEdgeLines) edgeLine.visible = false
       const surfaceColor = new THREE.Color(surfaceStationColor)
-      const stationColors = data.stations.map((station) => {
+      const stationColors = displayStations.map((station) => {
         if (activeLayer === 'surface') return surfaceColor
         if (station.control.polityIds.length === 1) return new THREE.Color(states.get(station.control.polityIds[0])?.color ?? contestedStationColor)
         return new THREE.Color(station.control.status === 'unknown' ? unknownStationColor : station.control.status === 'vacant' ? vacantColor : contestedStationColor)
@@ -504,7 +507,7 @@ export default function OpeningTerritoryMap() {
       })
       setMarkerPositions(resolveMarkerCollisions(projectedStates, Math.max(shell.clientWidth, 1), Math.max(shell.clientHeight, 1)))
       const nextStations: Record<string, MarkerPosition> = {}
-      for (const station of data.stations) {
+      for (const station of displayStations) {
         const vector = new THREE.Vector3((station.x - data.width / 2) * scale, layerRef.current === 'subway' ? undergroundLevels.station + 0.3 : 1.82, (station.y - data.height / 2) * scale).project(camera)
         const left = (vector.x * 0.5 + 0.5) * 100
         const top = (-vector.y * 0.5 + 0.5) * 100
@@ -585,7 +588,7 @@ export default function OpeningTerritoryMap() {
       raycaster.params.Points.threshold = 1.25
       raycaster.setFromCamera(pointer, camera)
       const hit = raycaster.intersectObject(stationPoints, false)[0]
-      const station = hit && Number.isInteger(hit.index) ? data.stations[hit.index!] : null
+      const station = hit && Number.isInteger(hit.index) ? displayStations[hit.index!] : null
       setHoveredStation(station ? { station, left: event.clientX - rect.left, top: event.clientY - rect.top } : null)
     }
     const onPointerLeave = () => setHoveredStation(null)
@@ -625,7 +628,7 @@ export default function OpeningTerritoryMap() {
       renderer.dispose()
       runtimeRef.current = null
     }
-  }, [data, states])
+  }, [data, states, displayStations])
 
   useEffect(() => {
     if (!data || !runtimeRef.current) return
@@ -706,25 +709,24 @@ export default function OpeningTerritoryMap() {
             })}
           </div>
           <div className="territory-station-markers" aria-label="주요 지하철역 이름">
-            {data.majorStationIds.map((stationId) => {
-              const station = data.stations.find((candidate) => candidate.id === stationId)
-              const position = stationMarkerPositions[stationId]
+            {displayStations.filter((station) => station.memberIds.some((id) => data.majorStationIds.includes(id))).map((station) => {
+              const position = stationMarkerPositions[station.id]
               if (!station) return null
               if (selectedLine !== 'all' && !station.lineIds.includes(selectedLine)) return null
-              return <span key={station.id} className="territory-station-marker" data-station-id={station.id} style={{ left: `${position?.left ?? station.x / data.width * 100}%`, top: `${position?.top ?? station.y / data.height * 100}%`, visibility: position?.visible === false ? 'hidden' : 'visible' }}>{station.name}</span>
+              return <span key={station.id} className="territory-station-marker" data-station-id={station.id} style={{ left: `${position?.left ?? station.x / data.width * 100}%`, top: `${position?.top ?? station.y / data.height * 100}%`, visibility: position?.visible === false ? 'hidden' : 'visible' }}>{station.names.join(' · ')}</span>
             })}
           </div>
-          <div className="territory-station-hit-targets" aria-label="334개 역 점령 정보">
-            {data.stations.map((station) => {
+          <div className="territory-station-hit-targets" aria-label="역 점령 정보">
+            {displayStations.map((station) => {
               const position = stationMarkerPositions[station.id]
               if (!position || position.visible === false || (selectedLine !== 'all' && !station.lineIds.includes(selectedLine))) return null
               const showTooltip = () => setHoveredStation({ station, left: position.left / 100 * (shellRef.current?.clientWidth ?? 1), top: position.top / 100 * (shellRef.current?.clientHeight ?? 1) })
               const lineColor = data.lines[station.lineIds[0]]?.color ?? '#f8f1cf'
-              return <button key={station.id} type="button" className="territory-station-hit" data-station-id={station.id} aria-label={`${station.name} 역 정보`} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: lineColor }} onPointerEnter={showTooltip} onPointerLeave={() => setHoveredStation(null)} onFocus={showTooltip} onBlur={() => setHoveredStation(null)} />
+              return <button key={station.id} type="button" className="territory-station-hit" data-station-id={station.id} data-source-station-ids={station.memberIds.join(' ')} aria-label={`${station.names.join(' · ')} 역 정보`} style={{ left: `${position.left}%`, top: `${position.top}%`, borderColor: lineColor }} onPointerEnter={showTooltip} onPointerLeave={() => setHoveredStation(null)} onFocus={showTooltip} onBlur={() => setHoveredStation(null)} />
             })}
           </div>
           {hoveredStation && <div className="territory-station-tooltip" role="status" style={{ left: hoveredStation.left, top: hoveredStation.top }}>
-            <strong>{hoveredStation.station.name}</strong>
+            <strong>{hoveredStation.station.names.join(' · ')}</strong>
             <div className="territory-tooltip-lines">{hoveredStation.station.lineIds.length > 0 ? hoveredStation.station.lineIds.map((lineId) => <span key={lineId} style={{ borderColor: data.lines[lineId]?.color, color: data.lines[lineId]?.color }}>{data.lines[lineId]?.name ?? lineId}</span>) : <span>노선 미확인</span>}</div>
             <dl>
               <div><dt>점령 상태</dt><dd>{hoveredStation.station.control.status === 'held' ? '단독 지배' : hoveredStation.station.control.status === 'contested' ? '경합' : hoveredStation.station.control.status === 'vacant' ? '무주지' : '미확인'}</dd></div>
