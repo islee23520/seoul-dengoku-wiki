@@ -708,7 +708,7 @@ export default function OpeningTerritoryMap() {
       regionalRailGroup.visible = activeLayer === 'surface'
       regionalStationCloud.visible = activeLayer === 'surface'
       for (const mesh of meshes) mesh.visible = activeLayer === 'surface'
-      stationPoints.visible = activeLayer === 'surface'
+      stationPoints.visible = true
       capitalPoints.visible = activeLayer === 'surface'
       for (const segment of byLineSegments) segment.visible = activeLayer === 'surface'
       for (const edgeLine of stateEdgeLines) edgeLine.visible = false
@@ -897,7 +897,8 @@ export default function OpeningTerritoryMap() {
     }
     const observer = new ResizeObserver(resize)
     observer.observe(shell)
-    framePeninsula()
+    if (layerRef.current === 'subway') reset()
+    else framePeninsula()
     resize()
 
     return () => {
