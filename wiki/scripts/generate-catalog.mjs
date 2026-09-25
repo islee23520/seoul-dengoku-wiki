@@ -660,7 +660,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const office = sections['관직'] ?? ''
   const position = fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
   const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
-  const occupation = fields['생업'] ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
+  const occupation = fields['생업'] ?? cards.map((card) => parseCardFields(card.body)['생업']).find(Boolean) ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const stateTiers = tiersByState.get(person.state)
   const tierIndex = stateTiers?.findIndex((ranks) => ranks.includes(rank)) ?? -1
   const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''

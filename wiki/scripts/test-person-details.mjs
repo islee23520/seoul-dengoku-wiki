@@ -29,6 +29,35 @@ test('all canonical people expose unique detail routes and structured data', asy
   }
 })
 
+test('S01 issued cards retain an explicit occupation and martial state in person details', async () => {
+  const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-01.json', import.meta.url), 'utf8'))
+  const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const issued = new Set(registry.persons.map((person) => person.name))
+  const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
+    ? [{ name: block.text.ko.replace(/^인물 /u, ''), index }]
+    : [])
+  assert.equal(headings.length, 65)
+  const details = new Map()
+  const detailRoot = new URL('../public/person-details/', import.meta.url)
+  for (const file of (await readdir(detailRoot)).filter((name) => name.endsWith('.json'))) {
+    const detail = JSON.parse(await readFile(new URL(file, detailRoot), 'utf8'))
+    details.set(detail.name, detail)
+  }
+  for (const [index, heading] of headings.entries()) {
+    assert.ok(issued.has(heading.name), heading.name)
+    const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
+    const occupation = blocks.filter((block) => block.kind === 'list').flatMap((block) => block.items)
+      .map((item) => typeof item.ko === 'string' ? item.ko : item.ko.map((run) => run.text).join(''))
+      .find((item) => item.startsWith('생업: '))?.slice(4)
+    assert.ok(occupation && occupation !== '미등록', heading.name)
+    const detail = details.get(heading.name)
+    assert.ok(detail, heading.name)
+    assert.equal(detail.occupation, occupation, heading.name)
+    if (detail.sourceRoute.startsWith('/world/Cast-State-01#')) assert.equal(detail.fields['생업'], occupation, heading.name)
+    assert.ok(/^(?:수문손|차륜망치|호위방패|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+  }
+})
+
 test('person detail page renders tables and the canonical prose sections', async () => {
   const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8')
   const page = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
