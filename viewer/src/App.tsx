@@ -2,10 +2,12 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, Navigate, Route, Routes, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { DocumentContent, type DocumentNode } from '@seoul-dengoku/document-renderer'
 import { dataCatalog } from './generated/dataCatalog'
 import { gddCatalog, gddCategories } from './generated/gddCatalog'
 
 const markdownModules = import.meta.glob<string>('./content/**/*.md', { query: '?raw', import: 'default' })
+const sharedModules = import.meta.glob<DocumentNode[]>('./generated/shared-content/*.json', { import: 'default' })
 
 const labels = Object.fromEntries(gddCategories.map((category) => [category.id, category.label])) as Record<string, string>
 
@@ -84,18 +86,28 @@ function DocumentPage() {
   const { category, slug } = useParams()
   const document = gddCatalog.find((candidate) => candidate.category === category && candidate.slug === slug)
   const [markdown, setMarkdown] = useState<string | null>(null)
+  const [sharedContent, setSharedContent] = useState<DocumentNode[] | null>(null)
   useEffect(() => {
     if (!document) return
+    let active = true
+    setMarkdown(null)
+    setSharedContent(null)
+    const shared = sharedModules[`./generated/shared-content/${document.category}-${document.slug}.json`]
+    if (shared) {
+      void shared().then((content) => { if (active) setSharedContent(content) })
+      return () => { active = false }
+    }
     const load = markdownModules[`./content/${document.category}/${document.slug}.md`]
     if (!load) return
-    void load().then(setMarkdown)
+    void load().then((content) => { if (active) setMarkdown(content) })
+    return () => { active = false }
   }, [document])
   if (!document) return <Navigate to="/documents" replace />
   return (
     <article>
       <nav className="gdd-breadcrumbs"><Link to="/">GDD</Link><span>›</span><Link to="/documents">{labels[document.category]}</Link><span>›</span><strong>{document.title}</strong></nav>
       <header className="gdd-page-header"><p className="gdd-kicker">{document.categoryLabel}</p><h1>{document.title}</h1><code>{document.sourcePath}</code></header>
-      <div className="gdd-prose">{markdown ? <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown> : <p>문서를 불러오고 있습니다.</p>}</div>
+      <div className="gdd-prose">{sharedContent ? <DocumentContent content={sharedContent.filter((node) => node.kind !== 'heading' || node.depth !== 1)} locale="ko" /> : markdown ? <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown> : <p>문서를 불러오고 있습니다.</p>}</div>
     </article>
   )
 }

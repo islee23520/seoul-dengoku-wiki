@@ -15,7 +15,8 @@
     "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^7.18.4",
-    "remark-gfm": "^4.0.0"
+    "remark-gfm": "^4.0.0",
+    "@seoul-dengoku/document-renderer": "file:../vendor/document-renderer"
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
