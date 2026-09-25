@@ -1,7 +1,7 @@
 # 세계 확장 색인
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `75b929cacd3a31ce8b5619c315365ee8663ec340931bdb370d57f4f3f317c466`
+- 원본 해시: `3d7bb3aeb13bff698868669ed86ffe2459f356861b33af4eab773eeb9329a889`
 
 - 가문 32 / 전구 5 / 합성 48
 - 사회배치 0 / 생태 27 / 몬스터배치 42
