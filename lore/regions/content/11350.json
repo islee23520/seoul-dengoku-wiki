@@ -11,15 +11,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "석계 환적과 선한이웃 야간등",
-        "summary": "월계1동은 광운대 승강장과 석계 승강장이 한 생활권에서 같은 교대를 놓고 다툰다. 광운대학교미디어콘텐츠센터 강의동은 잔존 회로를 펴 보는 작업대로 쓰이고, 선한이웃병원 복도에는 야간 등유가 바닥이다. 삼화상운차고지 발전기가 병원과 107동 승강기를 동시에 못 돌린다. 영축산 사면은 숙영 후보지일 뿐 북산 행렬이 이미 내려온 자리가 아니다. 월계1동 주민센터 칠판에는 임하준 실종과 중앙 급수·부품 계약 만료만 붙는다.",
+        "summary": "월계1동은 광운대 승강장과 석계 승강장이 한 생활권에서 같은 교대를 놓고 다툰다. 광운대학교미디어콘텐츠센터 강의동은 잔존 회로를 펴 보는 작업대로 쓰이고, 선한이웃병원 복도에는 야간 등유가 바닥이다. 삼화상운차고지 발전기가 병원과 107동 승강기를 동시에 못 돌린다.",
         "anchor_refs": [
           "osm:node:6041673026",
           "osm:node:368740348",
@@ -54,7 +52,7 @@
           "kind": "power",
           "description": "차고지 발전을 선한이웃병원에 붙이면 107동 물통 펌프가 멈추고, 107동을 살리면 병실 복도가 어두워 야간 이송이 끊긴다."
         },
-        "opening_state": "월계1동 주민센터는 새 급수·부품 계약을 보류한 채 석계와 광운대 승강장의 교대표만 고쳐 쓴다. 삼성그룹의 영향은 선로 작업 요청으로만 닿고, 기지 소유로 적히지 않았다. 세 유언장과 가을 북산 행렬, 겨울 베어링 조작은 개막 사실이 아니다.",
+        "opening_state": "월계1동 주민센터는 새 급수·부품 계약을 보류한 채 석계와 광운대 승강장의 교대표만 고쳐 쓴다. 삼성그룹의 영향은 선로 작업 요청으로만 닿고, 기지 소유로 적히지 않았다.",
         "connections": "월계2동·월계3동과 골목·선로 기억으로 맞닿되 공유 경계가 곧 통행 허가는 아니다. 성북 쪽 이웃은 우이천을 사이에 두고 호각만 맞춘다. 화랑로는 공릉 쪽으로 이어질 수 있으나 당일 통과권은 따로다.",
         "action": {
           "id": "1135056000-seonhan-night-lamp",
@@ -95,7 +93,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "광운대 선로. 월계1동 통행세 구간. 보유 S11.",
+                "contents": "광운대 선로. 월계1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -134,7 +132,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "석계 선로. 월계1동 통행세 구간. 보유 S11.",
+                "contents": "석계 선로. 월계1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -212,13 +210,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -230,15 +223,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "초안산 가마와 녹천 등불",
-        "summary": "월계2동은 녹천 승강장의 짧은 정차와 동초안산 사면이 한 교대를 나눈다. 초안산도자기체험장 가마는 개막일 난방용 불씨 후보지이고, 인덕대학교 실습동은 잔존 공구를 펴 보는 자리로만 거론된다. 염광 학교군 운동장은 하룻밤 건조대로, 중앙도서관전기차충전소는 배터리 잔량을 거두는 창고로 남는다. 월계2동 주민센터에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "월계2동은 녹천 승강장의 짧은 정차와 동초안산 사면이 한 교대를 나눈다. 초안산도자기체험장 가마는 개막일 난방용 불씨 후보지이고, 인덕대학교 실습동은 잔존 공구를 펴 보는 자리로만 거론된다. 염광 학교군 운동장은 하룻밤 건조대로, 중앙도서관전기차충전소는 배터리 잔량을 거두는 창고로 남는다.",
         "anchor_refs": [
           "osm:node:355172773",
           "osm:way:1492706634",
@@ -273,7 +264,7 @@
           "kind": "fire",
           "description": "체험장 가마를 밤새 피우면 동초안산 숙영은 녹지 않으나 불씨가 아파트 쪽으로 번질 수 있고, 불을 끄면 사면이 먼저 언다."
         },
-        "opening_state": "월계2동 주민센터는 급수 재계약 대기만 적어 두었다. 녹천 정차는 창동 차륜 칸을 기다리지 않고 가벼운 등짐만 받는다. 북산 남하는 가을 조건부이며 개막에 도착하지 않았다.",
+        "opening_state": "월계2동 주민센터는 급수 재계약 대기만 적어 두었다. 녹천 정차는 창동 차륜 칸을 기다리지 않고 가벼운 등짐만 받는다.",
         "connections": "월계1동·월계3동·하계2동·상계6·7동과 맞닿는다. 도봉 쪽 이웃은 우이천로를 기억하나 공유 경계가 통행로는 아니다.",
         "action": {
           "id": "1135057000-choansan-kiln-night",
@@ -314,7 +305,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "녹천 선로. 월계2동 통행세 구간. 보유 S11.",
+                "contents": "녹천 선로. 월계2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -459,13 +450,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -477,15 +463,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "월릉교 물통과 월계 정차",
-        "summary": "월계3동은 월계 승강장의 가벼운 정비와 월릉교 아래 중랑천 물받이가 같은 손을 요구한다. 삼호3차아파트 옥상 물통이 바닥을 드러내고, 월계동진아교통 마당은 손수레를 세우는 자리로 남았다. 한천·녹천·연지 초등학교와 녹천중학교 운동장은 물통을 말리는 마당 후보지다. 월계3동 주민센터 칠판에는 임하준 실종과 중앙 계약 만료만 적힌다.",
+        "summary": "월계3동은 월계 승강장의 가벼운 정비와 월릉교 아래 중랑천 물받이가 같은 손을 요구한다. 삼호3차아파트 옥상 물통이 바닥을 드러내고, 월계동진아교통 마당은 손수레를 세우는 자리로 남았다. 한천·녹천·연지 초등학교와 녹천중학교 운동장은 물통을 말리는 마당 후보지다.",
         "anchor_refs": [
           "osm:node:355172771",
           "osm:node:436761821",
@@ -561,7 +545,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "월계 선로. 월계3동 통행세 구간. 보유 S11.",
+                "contents": "월계 선로. 월계3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -600,7 +584,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "월계3동 주민센터 1층. 월계3동 배급 창구. 보유 S11.",
+                "contents": "월계3동 주민센터 1층. 월계3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -706,13 +690,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -724,15 +703,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "공릉시장 경매와 풍림 배급줄",
-        "summary": "공릉1동은 공릉 승강장과 태릉입구 승강장 사이에 공릉시장이 끼어 있다. 시장 점포는 당일 식량을 돌리는 자리이지 생산지가 아니고, 공릉 풍림아이원아파트 배급줄이 같은 재고를 본다. 공릉초등학교 운동장은 대기석, 공릉1동 주민센터는 순번 칠판이다. 개막일 칠판에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "공릉1동은 공릉 승강장과 태릉입구 승강장 사이에 공릉시장이 끼어 있다. 시장 점포는 당일 식량을 돌리는 자리이지 생산지가 아니고, 공릉 풍림아이원아파트 배급줄이 같은 재고를 본다. 공릉초등학교 운동장은 대기석, 공릉1동 주민센터는 순번 칠판이다.",
         "anchor_refs": [
           "osm:way:258026355",
           "osm:node:6046633874",
@@ -767,7 +744,7 @@
           "kind": "access",
           "description": "태릉입구 환승 혼잡이 시장 골목과 붙으면 풍림 배급줄이 승강장으로 밀리고, 단지를 먼저 열면 시장 신용이 당일 죽는다."
         },
-        "opening_state": "공릉1동 주민센터는 시장 경매와 단지 배급을 같은 시각에 열지 말라는 메모만 남겼다. 삼성그룹의 교환권은 영향권이지 시장 소유가 아니다. 세 유언장·가을 행렬은 개막 사실이 아니다.",
+        "opening_state": "공릉1동 주민센터는 시장 경매와 단지 배급을 같은 시각에 열지 말라는 메모만 남겼다. 삼성그룹의 교환권은 영향권이지 시장 소유가 아니다.",
         "connections": "공릉2동·하계1동·하계2동·월계3동과 맞닿고, 중랑·성북 쪽 이웃은 환승 기억으로만 이어진다. 공유 경계가 시장 통행 허가는 아니다.",
         "action": {
           "id": "1135059500-gongneung-market-first",
@@ -808,7 +785,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "태릉입구 선로. 공릉1동 통행세 구간. 보유 S11.",
+                "contents": "태릉입구 선로. 공릉1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -847,7 +824,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "공릉 선로. 공릉1동 통행세 구간. 보유 S11.",
+                "contents": "공릉 선로. 공릉1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -967,13 +944,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -985,15 +957,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "다산관 숙영과 화랑대 관문",
-        "summary": "공릉2동은 화랑대 승강장을 동부 관문처럼 쓰고, 다산관 강의동은 불암산 쪽에서 내려오는 하룻밤 자리 후보지다. 한국삼육고·중·초와 태랑중학교 운동장은 배급 건조대이고, 100년된 수목 아래가 교대 대기석이다. 화랑대사거리와 화랑로는 혼잡하나 통과권은 따로다. 공릉2동 주민센터에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "공릉2동은 화랑대 승강장을 동부 관문처럼 쓰고, 다산관 강의동은 불암산 쪽에서 내려오는 하룻밤 자리 후보지다. 한국삼육고·중·초와 태랑중학교 운동장은 배급 건조대이고, 100년된 수목 아래가 교대 대기석이다. 화랑대사거리와 화랑로는 혼잡하나 통과권은 따로다.",
         "anchor_refs": [
           "osm:relation:13051000",
           "osm:node:6041673023",
@@ -1028,7 +998,7 @@
           "kind": "slope",
           "description": "해발 차가 큰 동쪽이 다산관으로 몰리면 화랑대사거리가 막히고, 숙영을 안 열면 사면 쪽 하룻밤이 현대성우 계단으로 흘러든다."
         },
-        "opening_state": "공릉2동 주민센터는 사면 숙영을 화랑대 배급과 한 줄로 묶지 말라는 안건을 올렸으나 표결하지 못했다. 북산 남하는 가을 조건부이다. 창동 기술시험은 여기 게시되지 않았다.",
+        "opening_state": "공릉2동 주민센터는 사면 숙영을 화랑대 배급과 한 줄로 묶지 말라는 안건을 올렸으나 표결하지 못했다.",
         "connections": "공릉1동·하계1동·중계본동과 맞닿고, 중랑 쪽 이웃은 화랑로 기억으로 이어질 수 있으나 공유 경계가 통행로는 아니다.",
         "action": {
           "id": "1135060000-dasan-overnight",
@@ -1074,7 +1044,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "화랑대 선로. 공릉2동 통행세 구간. 보유 S11.",
+                "contents": "화랑대 선로. 공릉2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1159,7 +1129,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "공릉2동 주민센터 1층. 공릉2동 배급 창구. 보유 S11.",
+                "contents": "공릉2동 주민센터 1층. 공릉2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1219,13 +1189,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1237,15 +1202,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "하계 칠판과 한성여객 종점",
-        "summary": "하계1동은 하계 승강장 앞과 하계1동 주민센터 칠판이 같은 급수표를 놓고 다툰다. 한성여객종점은 손수레 종착이고, 삼익선경아파트 세대주는 표를 단지 순번으로 읽는다. 성림학사는 하룻밤 자리, 하계중·한천중·불암중 운동장은 공개 대기석이다. 개막일 칠판에는 임하준 실종과 중앙 계약 만료만 남는다.",
+        "summary": "하계1동은 하계 승강장 앞과 하계1동 주민센터 칠판이 같은 급수표를 놓고 다툰다. 한성여객종점은 손수레 종착이고, 삼익선경아파트 세대주는 표를 단지 순번으로 읽는다. 성림학사는 하룻밤 자리, 하계중·한천중·불암중 운동장은 공개 대기석이다.",
         "anchor_refs": [
           "osm:node:368899206",
           "osm:node:6046633875",
@@ -1280,7 +1243,7 @@
           "kind": "governance",
           "description": "칠판에 주거 표를 기지 승인보다 먼저 붙이면 종점 출고가 멈추고, 칠판을 비우면 삼익선경이 창동 점거의 표를 모은다."
         },
-        "opening_state": "하계1동 주민센터는 주거 이중 승인 요구를 칠판 한쪽에만 연필로 남겼다. 창동 연공회의 도장은 아직 없다. 세 유언장과 겨울 배차 조작은 개막 사실이 아니다.",
+        "opening_state": "하계1동 주민센터는 주거 이중 승인 요구를 칠판 한쪽에만 연필로 남겼다.",
         "connections": "하계2동·공릉1동·공릉2동·중계본동·중계1동·중계2·3동과 맞닿는다. 하계 승강장 보행이 이웃으로 이어질 수 있으나 공유 경계가 통행 허가는 아니다.",
         "action": {
           "id": "1135061100-hagye-board-first",
@@ -1321,7 +1284,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "하계 선로. 하계1동 통행세 구간. 보유 S11.",
+                "contents": "하계 선로. 하계1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1360,7 +1323,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "하계1동 주민센터 1층. 하계1동 배급 창구. 보유 S11.",
+                "contents": "하계1동 주민센터 1층. 하계1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1466,13 +1429,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1484,15 +1442,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "하계실버센터와 5·6단지 물통",
-        "summary": "하계2동은 하계5·6단지 옥상 물통과 하계실버센터 돌봄이 같은 교대를 나눈다. 벽산상가는 단지 앞 교환 좌판이고, 월계1교는 월계 쪽으로 손수레가 넘어가는 다리다. 중현·중평 초등학교와 중평중학교 운동장은 물통을 말리고 곡물을 펴는 마당이다. 중랑천·당현천은 위치만 실측이며 음용은 창작 검사 대상이다. 하계2동 주민센터에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "하계2동은 하계5·6단지 옥상 물통과 하계실버센터 돌봄이 같은 교대를 나눈다. 벽산상가는 단지 앞 교환 좌판이고, 월계1교는 월계 쪽으로 손수레가 넘어가는 다리다. 중현·중평 초등학교와 중평중학교 운동장은 물통을 말리고 곡물을 펴는 마당이다. 중랑천·당현천은 위치만 실측이며 음용은 창작 검사 대상이다.",
         "anchor_refs": [
           "osm:node:12152864467",
           "osm:node:414687895",
@@ -1527,7 +1483,7 @@
           "kind": "supply",
           "description": "실버센터에 교대를 남기면 5·6단지 물통과 월계1교 손수레가 비고, 단지를 살리면 센터 복도가 언다."
         },
-        "opening_state": "하계2동 주민센터는 급수 재계약을 보류한 채 5·6단지 순번만 고쳐 쓴다. 창동 차륜 칸을 여기서 세우지 않는다. 가을 북산 행렬은 개막 도착이 아니다.",
+        "opening_state": "하계2동 주민센터는 급수 재계약을 보류한 채 5·6단지 순번만 고쳐 쓴다. 창동 차륜 칸을 여기서 세우지 않는다.",
         "connections": "하계1동·월계2동·월계3동·공릉1동·중계2·3동·상계6·7동과 맞닿는다. 월계1교가 월계3동으로 이어질 수 있으나 공유 경계가 다리 허가는 아니다.",
         "action": {
           "id": "1135061200-hagye-silver-night",
@@ -1711,7 +1667,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "하계2동 주민센터 1층. 하계2동 배급 창구. 보유 S11.",
+                "contents": "하계2동 주민센터 1층. 하계2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1725,13 +1681,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1743,15 +1694,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "물개바위 횃불과 중계본동 종점",
-        "summary": "중계본동은 불암산 사면의 물개바위와 현대3차아파트 옥상이 한 횃불 교대를 나눈다. 중계본동종점은 손수레가 멈추는 자리이고, 불암초·수암초·불암고·영신여고 운동장은 하룻밤 건조대다. 가리온 표석은 능선 안내의 이정표로만 읽힌다. 중계본동 주민센터 칠판에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "중계본동은 불암산 사면의 물개바위와 현대3차아파트 옥상이 한 횃불 교대를 나눈다. 중계본동종점은 손수레가 멈추는 자리이고, 불암초·수암초·불암고·영신여고 운동장은 하룻밤 건조대다. 가리온 표석은 능선 안내의 이정표로만 읽힌다.",
         "anchor_refs": [
           "osm:node:10281590427",
           "osm:relation:8087204",
@@ -1786,7 +1735,7 @@
           "kind": "slope",
           "description": "물개바위 횃불을 끄면 현대3차 쪽 미끄럼이 늘고, 사람을 종점에 모으면 단열은 되나 능선 당번이 빠진다."
         },
-        "opening_state": "중계본동 주민센터는 사면 안내와 단지 급수를 한 줄로 묶지 말라는 메모만 남겼다. 북산 행렬은 가을 조건부이며 개막에 도착하지 않았다. 창동 기지를 여기 두지 않는다.",
+        "opening_state": "중계본동 주민센터는 사면 안내와 단지 급수를 한 줄로 묶지 말라는 메모만 남겼다.",
         "connections": "공릉2동·하계1동·중계1동·중계4동과 맞닿는다. 불암산 능선이 이웃으로 이어질 수 있으나 공유 경계가 등산로 허가는 아니다.",
         "action": {
           "id": "1135061900-mulgae-torch",
@@ -1827,7 +1776,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중계본동 주민센터 1층. 중계본동 배급 창구. 보유 S11.",
+                "contents": "중계본동 주민센터 1층. 중계본동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1979,13 +1928,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1997,15 +1941,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "구민체육센터 급수와 당현천 줄",
-        "summary": "중계1동은 중계구민체육센터 탈의실을 비상 급수 창구 후보지로 보고, 서라벌고·청암중고·원광초·을지초·을지중 운동장은 배급 대기석이다. 당현천은 위치만 실측이며 음용은 창작 검사 대상이다. 노원로22길은 단지 보행이지 열차가 아니다. 중계1동 주민센터에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "중계1동은 중계구민체육센터 탈의실을 비상 급수 창구 후보지로 보고, 서라벌고·청암중고·원광초·을지초·을지중 운동장은 배급 대기석이다. 당현천은 위치만 실측이며 음용은 창작 검사 대상이다. 노원로22길은 단지 보행이지 열차가 아니다.",
         "anchor_refs": [
           "osm:node:12152864458",
           "osm:node:7808597953",
@@ -2040,7 +1982,7 @@
           "kind": "water",
           "description": "체육센터 창구를 음용으로 열면 운동장 대기가 센터로 몰리고, 창구를 잠그면 당현천 미검사 물을 단지가 퍼 간다."
         },
-        "opening_state": "중계1동 주민센터는 새 급수계약 서명을 보류한 채 체육센터 창구 시각만 연필로 남겼다. 창동 연공회의 승인은 없다. 세 유언장은 다음 봄의 조건부이다.",
+        "opening_state": "중계1동 주민센터는 새 급수계약 서명을 보류한 채 체육센터 창구 시각만 연필로 남겼다.",
         "connections": "하계1동·중계본동·중계4동·중계2·3동·상계2동과 맞닿는다. 노원로22길이 중계본동으로 이어질 수 있으나 공유 경계가 통행 허가는 아니다.",
         "action": {
           "id": "1135062100-junggye-gym-tap",
@@ -2081,7 +2023,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중계1동 주민센터 1층. 중계1동 배급 창구. 보유 S11.",
+                "contents": "중계1동 주민센터 1층. 중계1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2233,13 +2175,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2251,15 +2188,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "깔딱고개 모포와 주공 4·5단지",
-        "summary": "중계4동은 깔딱고개 안부가 중계주공4~5단지 옥상보다 높다. 중계초·중계중·미래산업과학고·재현고·상계제일중 운동장은 하룻밤 건조대이고, 상계역1번출구는 이웃 승강장의 지상 출입일 뿐 이 동에 역 중심을 두지 않는다. 중계4동 주민센터에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "중계4동은 깔딱고개 안부가 중계주공4~5단지 옥상보다 높다. 중계초·중계중·미래산업과학고·재현고·상계제일중 운동장은 하룻밤 건조대이고, 상계역1번출구는 이웃 승강장의 지상 출입일 뿐 이 동에 역 중심을 두지 않는다.",
         "anchor_refs": [
           "osm:node:11377202495",
           "osm:node:14068933268",
@@ -2294,7 +2229,7 @@
           "kind": "slope",
           "description": "깔딱고개에 교대를 남기면 주공 4·5단지 물통이 비고, 단지를 살리면 안부 하룻밤이 얼어 출입구 계단으로 사람이 흘러든다."
         },
-        "opening_state": "중계4동 주민센터는 안부 숙영과 단지 급수를 한 시각에 열지 말라는 메모만 남겼다. 북산 남하는 가을 조건부이다. 창동 차륜 시험을 여기 게시하지 않는다.",
+        "opening_state": "중계4동 주민센터는 안부 숙영과 단지 급수를 한 시각에 열지 말라는 메모만 남겼다.",
         "connections": "중계본동·중계1동·상계2동·상계3·4동·상계5동과 맞닿는다. 상계역1번출구 보행이 상계5동으로 이어질 수 있으나 공유 경계가 승강장 허가는 아니다.",
         "action": {
           "id": "1135062400-kkalttak-blanket",
@@ -2340,7 +2275,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중계4동 주민센터 1층. 중계4동 배급 창구. 보유 S11.",
+                "contents": "중계4동 주민센터 1층. 중계4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2492,13 +2427,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2510,15 +2440,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "구민회관 원장과 중계 대기",
-        "summary": "중계2·3동은 중계 승강장 대기줄과 노원구민회관 원장이 같은 손을 요구한다. 서울시립북미술관 홀은 하룻밤 필경 자리 후보지이고, 중원·청계·용동초와 서울아이티고 운동장은 배급 대기석이다. 중계근린공원은 공개 게시판 후보지다. 중계2·3동 주민센터 칠판에는 임하준 실종과 계약 만료만 붙는다. 이 지역의 선택은 난간 보수만이 아니라 수업·거주 공간 사이 보행 안내를 다시 배치하는 일이다.",
+        "summary": "중계2·3동은 중계 승강장 대기줄과 노원구민회관 원장이 같은 손을 요구한다. 서울시립북미술관 홀은 하룻밤 필경 자리 후보지이고, 중원·청계·용동초와 서울아이티고 운동장은 배급 대기석이다. 중계근린공원은 공개 게시판 후보지다. 이 지역의 선택은 난간 보수만이 아니라 수업·거주 공간 사이 보행 안내를 다시 배치하는 일이다.",
         "anchor_refs": [
           "osm:node:414683452",
           "osm:node:6046633876",
@@ -2553,7 +2481,7 @@
           "kind": "governance",
           "description": "회관 원장에 주거 표를 먼저 붙이면 중계 승강장 안내가 빠지고, 원장을 비우면 단지가 창동 점거의 표를 모은다. 교대 안내 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
         },
-        "opening_state": "중계2·3동 주민센터는 구민회관 원장과 창동 연공회의 도장을 같은 판에 붙이지 말라는 안건을 올렸으나 표결하지 못했다. 세 유언장·겨울 배차 조작은 개막 사실이 아니다.",
+        "opening_state": "중계2·3동 주민센터는 구민회관 원장과 창동 연공회의 도장을 같은 판에 붙이지 말라는 안건을 올렸으나 표결하지 못했다.",
         "connections": "하계1동·하계2동·중계1동·상계6·7동과 맞닿는다. 중계 승강장 보행이 이웃으로 이어질 수 있으나 공유 경계가 통행 허가는 아니다.",
         "action": {
           "id": "1135062500-nowon-hall-ledger",
@@ -2594,7 +2522,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "중계 선로. 중계2·3동 통행세 구간. 보유 S11.",
+                "contents": "중계 선로. 중계2·3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2633,7 +2561,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중계2·3동 주민센터 1층. 중계2·3동 배급 창구. 보유 S11.",
+                "contents": "중계2·3동 주민센터 1층. 중계2·3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2718,13 +2646,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2736,15 +2659,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "약수터 물통과 수락산입구",
-        "summary": "상계1동은 수락산 승강장과 수락산입구 보행이 한 교대를 나눈다. 약수터는 위치만 실측이며 음용은 창작 검사 대상이다. 코끼리바위 능선은 하룻밤 자리 후보지이고, 수락리버시티3·4단지와 노원초·수락초 운동장이 같은 물을 본다. 새서울병원·연세미메이드치과 복도는 야간 당직 후보지다. 개막일 게시에는 임하준 실종과 계약 만료만 남는다.",
+        "summary": "상계1동은 수락산 승강장과 수락산입구 보행이 한 교대를 나눈다. 약수터는 위치만 실측이며 음용은 창작 검사 대상이다. 코끼리바위 능선은 하룻밤 자리 후보지이고, 수락리버시티3·4단지와 노원초·수락초 운동장이 같은 물을 본다. 새서울병원·연세미메이드치과 복도는 야간 당직 후보지다.",
         "anchor_refs": [
           "osm:node:4693090936",
           "osm:node:6046633881",
@@ -2779,7 +2700,7 @@
           "kind": "water",
           "description": "약수터를 단지 음용으로 열면 수락산입구 안내가 양수로 빠지고, 잠그면 단지가 미검사 물을 퍼 병원 당직이 설사를 본다."
         },
-        "opening_state": "상계1동은 새 급수계약을 보류한 채 약수터 검사 순번만 고쳐 쓴다. 북산 남하는 가을 조건부이며 개막에 코끼리바위에 도착하지 않았다. 창동 기지를 여기 두지 않는다.",
+        "opening_state": "상계1동은 새 급수계약을 보류한 채 약수터 검사 순번만 고쳐 쓴다.",
         "connections": "상계3·4동·상계8동·상계9동과 맞닿고, 도봉 쪽 이웃은 수락산입구 기억으로 이어질 수 있으나 공유 경계가 등산로 허가는 아니다.",
         "action": {
           "id": "1135063000-yaksuteo-test-draw",
@@ -2820,7 +2741,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "수락산 선로. 상계1동 통행세 구간. 보유 S11.",
+                "contents": "수락산 선로. 상계1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2911,7 +2832,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "약수터 1층. 상계1동 잔존 골조. 보유 S11.",
+                "contents": "약수터 1층. 상계1동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -2925,13 +2846,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2943,15 +2859,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "환승통로 경매와 중앙하이츠 줄",
-        "summary": "상계2동은 노원 승강장과 4호선-7호선 환승통로가 상가 신용을 돌리는 자리다. 동양메이저아파트와 상계중앙하이츠2차아파트 배급줄이 같은 재고를 보고, 상계초교입구교차로는 손수레가 엉키는 모퉁이다. 상계2동 주민센터 칠판에는 임하준 실종과 계약 만료만 붙는다. 중계4동의 창작 숙영조는 물 운반 다음에 남는 젖은 침구와 건조 공간의 부족을 의제로 올린다.",
+        "summary": "상계2동은 노원 승강장과 4호선-7호선 환승통로가 상가 신용을 돌리는 자리다. 동양메이저아파트와 상계중앙하이츠2차아파트 배급줄이 같은 재고를 보고, 상계초교입구교차로는 손수레가 엉키는 모퉁이다. 중계4동의 창작 숙영조는 물 운반 다음에 남는 젖은 침구와 건조 공간의 부족을 의제로 올린다.",
         "anchor_refs": [
           "osm:way:1181334291",
           "osm:node:8778625274",
@@ -2986,7 +2900,7 @@
           "kind": "access",
           "description": "환승통로 경매가 단지 줄과 붙으면 교차로가 막히고, 단지를 먼저 살리면 환승 신용이 당일 죽는다. 침구 건조 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
         },
-        "opening_state": "상계2동 주민센터는 환승 경매와 하이츠 배급을 같은 시각에 열지 말라는 메모만 남겼다. 삼성그룹의 교환권은 영향권이지 통로 소유가 아니다. 겨울 베어링 조작은 개막 사실이 아니다.",
+        "opening_state": "상계2동 주민센터는 환승 경매와 하이츠 배급을 같은 시각에 열지 말라는 메모만 남겼다. 삼성그룹의 교환권은 영향권이지 통로 소유가 아니다.",
         "connections": "중계1동·중계4동·상계5동·상계6·7동·상계9동·상계10동과 맞닿는다. 환승통로 보행이 상계6·7동 노원 승강장과 이어질 수 있으나 공유 경계가 통행 허가는 아니다.",
         "action": {
           "id": "1135064000-transfer-auction",
@@ -3027,7 +2941,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "노원 선로. 상계2동 통행세 구간. 보유 S11.",
+                "contents": "노원 선로. 상계2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3066,7 +2980,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "상계2동 주민센터 1층. 상계2동 배급 창구. 보유 S11.",
+                "contents": "상계2동 주민센터 1층. 상계2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3172,13 +3086,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3190,15 +3099,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "폭포약수터와 절고개 모포",
-        "summary": "상계3·4동은 불암산 승강장과 절고개·덕능고개가 같은 경사 교대를 나눈다. 폭포약수터는 위치만 실측인 샘이고, 거북바위는 능선 이정표다. 흥안운수상계4동종점은 손수레 종착, 수락산로는 보행 기억이다. 신상계초·덕암초 운동장은 하룻밤 건조대다. 상계3·4동 주민센터에는 임하준 실종과 계약 만료만 붙는다. 상계3·4동은 고지에서 본 통로를 생활 이동에 쓰기 전에 현장 확인이 필요한 구역으로 설정한다.",
+        "summary": "상계3·4동은 불암산 승강장과 절고개·덕능고개가 같은 경사 교대를 나눈다. 폭포약수터는 위치만 실측인 샘이고, 거북바위는 능선 이정표다. 흥안운수상계4동종점은 손수레 종착, 수락산로는 보행 기억이다. 신상계초·덕암초 운동장은 하룻밤 건조대다. 상계3·4동은 고지에서 본 통로를 생활 이동에 쓰기 전에 현장 확인이 필요한 구역으로 설정한다.",
         "anchor_refs": [
           "osm:node:10281591670",
           "osm:node:10281591480",
@@ -3233,7 +3140,7 @@
           "kind": "slope",
           "description": "절고개에 모포를 남기면 약수터 양수가 멈추고, 샘을 살리면 안부가 얼어 종점 마당으로 사람이 흘러든다. 보행 확인 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
         },
-        "opening_state": "상계3·4동 주민센터는 샘물 검사와 안부 숙영을 한 줄로 묶지 말라는 메모만 남겼다. 북산 남하는 가을 조건부이다. 창동 기술시험을 여기 게시하지 않는다.",
+        "opening_state": "상계3·4동 주민센터는 샘물 검사와 안부 숙영을 한 줄로 묶지 말라는 메모만 남겼다.",
         "connections": "중계4동·상계1동·상계5동·상계9동과 맞닿는다. 수락산로·절고개가 이웃으로 이어질 수 있으나 공유 경계가 능선 허가는 아니다.",
         "action": {
           "id": "1135066500-jeolgogae-camp",
@@ -3279,7 +3186,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "불암산 선로. 상계3·4동 통행세 구간. 보유 S11.",
+                "contents": "불암산 선로. 상계3·4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3318,7 +3225,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "상계3·4동 주민센터 1층. 상계3·4동 배급 창구. 보유 S11.",
+                "contents": "상계3·4동 주민센터 1층. 상계3·4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3424,13 +3331,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3442,15 +3344,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "한신 물통과 상계 정차",
-        "summary": "상계5동은 상계 승강장의 짧은 정차와 한신1·2·3차아파트 옥상 물통이 같은 손을 요구한다. 한글비석로는 단지 보행이고, 보람사거리는 손수레가 엉키는 모퉁이다. 삼창타워프라자는 교환 좌판 후보지, 계상초 운동장은 건조대다. 상계5동 주민센터 칠판에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "상계5동은 상계 승강장의 짧은 정차와 한신1·2·3차아파트 옥상 물통이 같은 손을 요구한다. 한글비석로는 단지 보행이고, 보람사거리는 손수레가 엉키는 모퉁이다. 삼창타워프라자는 교환 좌판 후보지, 계상초 운동장은 건조대다.",
         "anchor_refs": [
           "osm:node:9165988119",
           "osm:way:380801935",
@@ -3485,7 +3385,7 @@
           "kind": "supply",
           "description": "한신 옥상에 물을 올리면 상계 하역이 빠지고, 하역을 남기면 프라자 좌판이 갈증으로 문을 닫는다."
         },
-        "opening_state": "상계5동 주민센터는 새 급수계약을 보류한 채 한신 순번만 고쳐 쓴다. 창동 차륜 칸을 여기서 기다리지 않는다. 세 유언장은 개막 사실이 아니다.",
+        "opening_state": "상계5동 주민센터는 새 급수계약을 보류한 채 한신 순번만 고쳐 쓴다. 창동 차륜 칸을 여기서 기다리지 않는다.",
         "connections": "중계4동·상계2동·상계3·4동·상계9동과 맞닿는다. 한글비석로 보행이 이웃으로 이어질 수 있으나 공유 경계가 통행 허가는 아니다.",
         "action": {
           "id": "1135067000-hanshin-roof-water",
@@ -3526,7 +3426,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "상계 선로. 상계5동 통행세 구간. 보유 S11.",
+                "contents": "상계 선로. 상계5동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3567,7 +3467,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "상계5동 주민센터 1층. 상계5동 배급 창구. 보유 S11.",
+                "contents": "상계5동 주민센터 1층. 상계5동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3666,13 +3566,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3684,15 +3579,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "노원구청 게시와 8번출구 줄",
-        "summary": "상계6·7동은 노원 승강장 8번출구 대기줄과 노원구청 게시판이 같은 권위를 놓고 다툰다. 한양아파트5동과 상계2-6단지 세대주는 급수표를 구하고, 노원삼성정형외과 복도는 야간 당직 후보지다. 마들근린공원 수영장은 위치만 실측인 물그릇이다. 개막일 구청 문에는 임하준 실종과 중앙 계약 만료만 붙는다. 월계2동 공동체는 단지 배급뿐 아니라 초안산 주변 보행자의 귀환을 확인해야 한다.",
+        "summary": "상계6·7동은 노원 승강장 8번출구 대기줄과 노원구청 게시판이 같은 권위를 놓고 다툰다. 한양아파트5동과 상계2-6단지 세대주는 급수표를 구하고, 노원삼성정형외과 복도는 야간 당직 후보지다. 마들근린공원 수영장은 위치만 실측인 물그릇이다. 월계2동 공동체는 단지 배급뿐 아니라 초안산 주변 보행자의 귀환을 확인해야 한다.",
         "anchor_refs": [
           "osm:node:463188530",
           "osm:node:6046633877",
@@ -3727,7 +3620,7 @@
           "kind": "governance",
           "description": "구청 원장에 주거 표를 먼저 붙이면 8번출구 안내가 빠지고, 원장을 비우면 한양아파트가 창동 점거의 표를 모은다. 귀환 확인 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
         },
-        "opening_state": "노원구청은 창동 연공회의 도장보다 주거 표를 앞에 둘지 표결하지 못했다. 세 유언장·가을 행렬·겨울 베어링은 개막 사실이 아니다.",
+        "opening_state": "노원구청은 창동 연공회의 도장보다 주거 표를 앞에 둘지 표결하지 못했다.",
         "connections": "월계2동·하계2동·중계2·3동·상계2동·상계10동과 맞닿고, 도봉 쪽 이웃은 중랑천을 사이에 둔다. 공유 경계가 출구 허가는 아니다.",
         "action": {
           "id": "1135069500-nowon-office-board",
@@ -3768,7 +3661,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "노원 선로. 상계6·7동 통행세 구간. 보유 S11.",
+                "contents": "노원 선로. 상계6·7동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3894,13 +3787,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3912,15 +3800,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "주공11단지 난방과 중랑천 줄",
-        "summary": "상계8동은 상계주공11단지와 10단지 옥상 물통이 같은 난로를 놓고 다툰다. 상계주공15단지 출입과 상계14-16단지 보행이 손수레를 나눈다. 노원고·상경중·서울상경초·서울동일초 운동장은 건조대다. 중랑천은 위치만 실측이다. 상계8동 주민센터에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "상계8동은 상계주공11단지와 10단지 옥상 물통이 같은 난로를 놓고 다툰다. 상계주공15단지 출입과 상계14-16단지 보행이 손수레를 나눈다. 노원고·상경중·서울상경초·서울동일초 운동장은 건조대다. 중랑천은 위치만 실측이다.",
         "anchor_refs": [
           "osm:relation:9249167",
           "osm:way:380629526",
@@ -3955,7 +3841,7 @@
           "kind": "fire",
           "description": "11단지 난로를 밤새 피우면 10단지 물통 펌프 연료가 줄고, 불을 끄면 15단지 노인이 복도에서 언다."
         },
-        "opening_state": "상계8동 주민센터는 급수 재계약을 보류한 채 11단지 난로 당번만 고쳐 쓴다. 창동 차륜 칸을 단지 마당에 들이지 않는다. 가을 북산 행렬은 개막 도착이 아니다.",
+        "opening_state": "상계8동 주민센터는 급수 재계약을 보류한 채 11단지 난로 당번만 고쳐 쓴다. 창동 차륜 칸을 단지 마당에 들이지 않는다.",
         "connections": "상계1동·상계9동·상계10동과 맞닿고, 도봉 쪽 이웃은 중랑천을 사이에 둔다. 공유 경계가 단지 통행 허가는 아니다.",
         "action": {
           "id": "1135070000-jugong11-hearth",
@@ -3996,7 +3882,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "상계8동 주민센터 1층. 상계8동 배급 창구. 보유 S11.",
+                "contents": "상계8동 주민센터 1층. 상계8동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -4148,13 +4034,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -4166,15 +4047,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "마들 대합실과 주공14단지",
-        "summary": "상계9동은 마들 승강장 대합실과 상계주공14단지 배급줄이 같은 난방을 나눈다. 상계주공12단지와 상계11~13단지 세대주가 같은 순번을 보고, 상원초·온곡초·상원중 운동장은 대기석이다. 지성관은 하룻밤 필경 후보지다. 상계9동 주민센터 칠판에는 임하준 실종과 계약 만료만 붙는다.",
+        "summary": "상계9동은 마들 승강장 대합실과 상계주공14단지 배급줄이 같은 난방을 나눈다. 상계주공12단지와 상계11~13단지 세대주가 같은 순번을 보고, 상원초·온곡초·상원중 운동장은 대기석이다. 지성관은 하룻밤 필경 후보지다.",
         "anchor_refs": [
           "osm:node:6046633880",
           "osm:relation:9249168",
@@ -4209,7 +4088,7 @@
           "kind": "access",
           "description": "대합실을 단열 자리로 열면 14단지 배급줄이 승강장으로 밀리고, 배급을 먼저 열면 야간 대합실이 언다."
         },
-        "opening_state": "상계9동 주민센터는 대합실 단열과 14단지 배급을 같은 시각에 열지 말라는 메모만 남겼다. 창동 기술시험은 여기 게시되지 않았다. 세 유언장은 개막 사실이 아니다.",
+        "opening_state": "상계9동 주민센터는 대합실 단열과 14단지 배급을 같은 시각에 열지 말라는 메모만 남겼다.",
         "connections": "상계1동·상계2동·상계3·4동·상계5동·상계8동·상계10동과 맞닿는다. 마들 승강장 보행이 이웃으로 이어질 수 있으나 공유 경계가 통행 허가는 아니다.",
         "action": {
           "id": "1135071000-madeul-warm-hall",
@@ -4250,7 +4129,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "마들 선로. 상계9동 통행세 구간. 보유 S11.",
+                "contents": "마들 선로. 상계9동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -4418,13 +4297,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -4436,15 +4310,13 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "title": "창동차량사업소 철재와 주공7단지",
-        "summary": "상계10동은 창동차량사업소 부지가 갈색 공터로 남아 철재를 거두는 자리고, 상계주공7단지 세대주는 그 철재를 난로와 물통 받침으로 달라고 한다. 용화여고·상월초·상곡초·온곡중 운동장은 건조대, 강북도로교통교육장은 손수레 연습 마당이다. 상계10동 주민센터에는 임하준 실종과 계약 만료만 붙는다. 삼성그룹의 영향권이지 기지 전체의 소유 선언이 아니다.",
+        "summary": "상계10동은 창동차량사업소 부지가 갈색 공터로 남아 철재를 거두는 자리고, 상계주공7단지 세대주는 그 철재를 난로와 물통 받침으로 달라고 한다. 용화여고·상월초·상곡초·온곡중 운동장은 건조대, 강북도로교통교육장은 손수레 연습 마당이다. 삼성그룹의 영향권이지 기지 전체의 소유 선언이 아니다.",
         "anchor_refs": [
           "osm:way:239579565",
           "osm:way:380623545",
@@ -4479,7 +4351,7 @@
           "kind": "supply",
           "description": "철재를 7단지 난로에 주면 교육장 손수레가 멈추고, 기지 쪽 재고로 묶으면 단지가 갈증과 추위로 사업소 울타리를 민다."
         },
-        "opening_state": "상계10동 주민센터는 사업소 철재를 연공회의 인준 전 출고하지 말라는 메모와, 7단지 난로를 비우지 말라는 메모를 나란히 붙였다. 겨울 베어링 조작과 시험 차륜 결함은 개막 사실이 아니다. 기존 중앙 급수·부품 계약이 만료되어 새 계약의 조건을 협의 중이다.",
+        "opening_state": "상계10동 주민센터는 사업소 철재를 연공회의 인준 전 출고하지 말라는 메모와, 7단지 난로를 비우지 말라는 메모를 나란히 붙였다. 새 계약의 조건을 협의 중이다.",
         "connections": "상계2동·상계6·7동·상계8동·상계9동과 맞닿고, 도봉 쪽 이웃은 사업소 울타리 기억으로 이어질 수 있으나 공유 경계가 기지 출입 허가는 아니다.",
         "action": {
           "id": "1135072000-changdong-scrap-hearth",
@@ -4693,13 +4565,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }

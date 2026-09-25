@@ -16,12 +16,10 @@
           "osm:node:368651957"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "목1동 주민 작업반",
           "장부 교육 담당자"
@@ -42,8 +40,8 @@
           "kind": "power",
           "description": "야간 숙영 조명을 늘리면 낮 수업용 충전 시간이 줄어든다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 목1동 주민들은 다음 선택의 비용을 협의한다: 주간 교육용 전력을 예약한다.",
-        "connections": "목4동·목5동·신정2동·신정4동·신정6동과 경계를 맞대지만 목1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "목1동 주민들은 다음 선택의 비용을 협의한다: 주간 교육용 전력을 예약한다.",
+        "connections": "목4동·목5동·신정2동·신정4동·신정6동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147051000-local-choice",
           "label": "주간 교육용 전력을 예약한다",
@@ -78,7 +76,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "오목교 선로. 목1동 통행세 구간. 보유 S01.",
+                "contents": "오목교 선로. 목1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -117,7 +115,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "목동 선로. 목1동 통행세 구간. 보유 S01.",
+                "contents": "목동 선로. 목1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -195,13 +193,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -218,12 +211,10 @@
           "osm:node:4683476787"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "목2동 주민 작업반",
           "배수 점검 담당자"
@@ -244,8 +235,8 @@
           "kind": "water",
           "description": "막힌 유입구를 방치하면 낮은 골목의 물이 빠지지 않는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 목2동 주민들은 다음 선택의 비용을 협의한다: 막힌 유입구를 먼저 정리한다.",
-        "connections": "목3동·목4동·목5동과 경계를 맞대지만 목2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "목2동 주민들은 다음 선택의 비용을 협의한다: 막힌 유입구를 먼저 정리한다.",
+        "connections": "목3동·목4동·목5동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147052000-local-choice",
           "label": "막힌 유입구를 먼저 정리한다",
@@ -280,7 +271,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신목동 선로. 목2동 통행세 구간. 보유 S01.",
+                "contents": "신목동 선로. 목2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -344,7 +335,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "양화빗물펌프장 1층. 목2동 잔존 골조. 보유 S01.",
+                "contents": "양화빗물펌프장 1층. 목2동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -404,13 +395,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -427,12 +413,10 @@
           "osm:node:9181579791"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "목3동 주민 작업반",
           "짐 보관 담당자"
@@ -453,8 +437,8 @@
           "kind": "governance",
           "description": "한 보관함에 여러 가구 짐을 넣으면 반환 때 분쟁이 생긴다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 목3동 주민들은 다음 선택의 비용을 협의한다: 가구별 인계표를 발급한다.",
-        "connections": "목2동·목4동과 경계를 맞대지만 목3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "목3동 주민들은 다음 선택의 비용을 협의한다: 가구별 인계표를 발급한다.",
+        "connections": "목2동·목4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147053000-local-choice",
           "label": "가구별 인계표를 발급한다",
@@ -489,7 +473,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "등촌 선로. 목3동 통행세 구간. 보유 S01.",
+                "contents": "등촌 선로. 목3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -574,7 +558,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "목3동 주민센터 1층. 목3동 배급 창구. 보유 S01.",
+                "contents": "목3동 주민센터 1층. 목3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -627,13 +611,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -650,12 +629,10 @@
           "osm:way:465013536"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "목4동 주민 작업반",
           "생활 수리 담당자"
@@ -676,8 +653,8 @@
           "kind": "supply",
           "description": "긴급도를 보지 않고 큰 주문부터 처리하면 작은 가구의 누수가 방치된다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 목4동 주민들은 다음 선택의 비용을 협의한다: 누수 위험이 큰 가구를 우선한다.",
-        "connections": "목1동·목2동·목3동·목5동과 경계를 맞대지만 목4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "목4동 주민들은 다음 선택의 비용을 협의한다: 누수 위험이 큰 가구를 우선한다.",
+        "connections": "목1동·목2동·목3동·목5동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147054000-local-choice",
           "label": "누수 위험이 큰 가구를 우선한다",
@@ -712,7 +689,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "목4동 주민센터 1층. 목4동 배급 창구. 보유 S01.",
+                "contents": "목4동 주민센터 1층. 목4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -836,13 +813,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -859,12 +831,10 @@
           "osm:way:468438487"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "목5동 주민 작업반",
           "방문 돌봄 담당자"
@@ -885,8 +855,8 @@
           "kind": "access",
           "description": "모두를 거점으로 옮기면 이동이 어려운 가구가 배제된다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 목5동 주민들은 다음 선택의 비용을 협의한다: 방문 돌봄 교대를 확보한다.",
-        "connections": "목1동·목2동·목4동과 경계를 맞대지만 목5동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "목5동 주민들은 다음 선택의 비용을 협의한다: 방문 돌봄 교대를 확보한다.",
+        "connections": "목1동·목2동·목4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147055000-local-choice",
           "label": "방문 돌봄 교대를 확보한다",
@@ -992,7 +962,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "목5동 주민센터 1층. 목5동 배급 창구. 보유 S01.",
+                "contents": "목5동 주민센터 1층. 목5동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1052,13 +1022,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1075,12 +1040,10 @@
           "osm:way:468780039"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신월1동 주민 작업반",
           "생활품 교환 담당자"
@@ -1101,8 +1064,8 @@
           "kind": "governance",
           "description": "재고를 숨기면 필요한 물건을 가진 가구가 교환에 참여하지 않는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신월1동 주민들은 다음 선택의 비용을 협의한다: 공동 재고 게시판을 설치한다.",
-        "connections": "신월3동·신월4동·신월5동과 경계를 맞대지만 신월1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신월1동 주민들은 다음 선택의 비용을 협의한다: 공동 재고 게시판을 설치한다.",
+        "connections": "신월3동·신월4동·신월5동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147056000-local-choice",
           "label": "공동 재고 게시판을 설치한다",
@@ -1137,7 +1100,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신월1동주민센터 1층. 신월1동 배급 창구. 보유 S01.",
+                "contents": "신월1동주민센터 1층. 신월1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1162,7 +1125,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "대안보습학원 1층. 신월1동 잔존 골조. 보유 S01.",
+                "contents": "대안보습학원 1층. 신월1동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -1212,13 +1175,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1235,12 +1193,10 @@
           "osm:way:469683481"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신월2동 주민 작업반",
           "공동 취사와 교환 담당자"
@@ -1261,8 +1217,8 @@
           "kind": "fire",
           "description": "화기와 포장재가 붙으면 시장의 대피 통로까지 위험해진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신월2동 주민들은 다음 선택의 비용을 협의한다: 취사 구획과 통행 통로를 분리한다.",
-        "connections": "신월4동·신월6동·신정3동·신정4동과 경계를 맞대지만 신월2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신월2동 주민들은 다음 선택의 비용을 협의한다: 취사 구획과 통행 통로를 분리한다.",
+        "connections": "신월4동·신월6동·신정3동·신정4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147057000-local-choice",
           "label": "취사 구획과 통행 통로를 분리한다",
@@ -1297,7 +1253,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신월2동 주민센터 1층. 신월2동 배급 창구. 보유 S01.",
+                "contents": "신월2동 주민센터 1층. 신월2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1449,13 +1405,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1472,12 +1423,10 @@
           "osm:node:368922294"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신월3동 주민 작업반",
           "운반 장비 수선 담당자"
@@ -1498,8 +1447,8 @@
           "kind": "supply",
           "description": "교육 재료까지 출고하면 다음 교대에 새 작업자를 훈련할 수 없다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신월3동 주민들은 다음 선택의 비용을 협의한다: 도제 실습용 재료를 남긴다.",
-        "connections": "신월1동·신월5동·신월7동과 경계를 맞대지만 신월3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신월3동 주민들은 다음 선택의 비용을 협의한다: 도제 실습용 재료를 남긴다.",
+        "connections": "신월1동·신월5동·신월7동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147058000-local-choice",
           "label": "도제 실습용 재료를 남긴다",
@@ -1534,7 +1483,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신월3동주민센터 1층. 신월3동 배급 창구. 보유 S01.",
+                "contents": "신월3동주민센터 1층. 신월3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1686,13 +1635,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1709,12 +1653,10 @@
           "osm:way:253471757"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신월4동 주민 작업반",
           "대피 안내 담당자"
@@ -1735,8 +1677,8 @@
           "kind": "access",
           "description": "짐을 먼저 옮기느라 안내가 비면 가족이 다른 숙영지로 나뉜다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신월4동 주민들은 다음 선택의 비용을 협의한다: 가족 인계 담당자를 지정한다.",
-        "connections": "신월1동·신월2동·신월6동·신월7동과 경계를 맞대지만 신월4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신월4동 주민들은 다음 선택의 비용을 협의한다: 가족 인계 담당자를 지정한다.",
+        "connections": "신월1동·신월2동·신월6동·신월7동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147059000-local-choice",
           "label": "가족 인계 담당자를 지정한다",
@@ -1771,7 +1713,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신월4동주민센터 1층. 신월4동 배급 창구. 보유 S01.",
+                "contents": "신월4동주민센터 1층. 신월4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1888,13 +1830,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1911,12 +1848,10 @@
           "osm:relation:6913692"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신월5동 주민 작업반",
           "통행 상태 확인 담당자"
@@ -1937,8 +1872,8 @@
           "kind": "slope",
           "description": "확인하지 않은 사면에 손수레를 넣으면 구조 인력이 따로 필요해진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신월5동 주민들은 다음 선택의 비용을 협의한다: 보행 가능한 구간만 표시한다.",
-        "connections": "신월1동·신월3동과 경계를 맞대지만 신월5동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신월5동 주민들은 다음 선택의 비용을 협의한다: 보행 가능한 구간만 표시한다.",
+        "connections": "신월1동·신월3동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147060000-local-choice",
           "label": "보행 가능한 구간만 표시한다",
@@ -1973,7 +1908,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신월5동주민센터 1층. 신월5동 배급 창구. 보유 S01.",
+                "contents": "신월5동주민센터 1층. 신월5동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2125,13 +2060,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2148,12 +2078,10 @@
           "osm:way:465786476"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신월6동 주민 작업반",
           "침구 세탁 담당자"
@@ -2174,8 +2102,8 @@
           "kind": "supply",
           "description": "젖은 침구가 쌓이면 숙영실을 제때 다시 사용할 수 없다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신월6동 주민들은 다음 선택의 비용을 협의한다: 돌봄 가구 침구부터 건조한다.",
-        "connections": "신월2동·신월4동·신월7동·신정3동과 경계를 맞대지만 신월6동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신월6동 주민들은 다음 선택의 비용을 협의한다: 돌봄 가구 침구부터 건조한다.",
+        "connections": "신월2동·신월4동·신월7동·신정3동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147061000-local-choice",
           "label": "돌봄 가구 침구부터 건조한다",
@@ -2210,7 +2138,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신월6동 주민센터 1층. 신월6동 배급 창구. 보유 S01.",
+                "contents": "신월6동 주민센터 1층. 신월6동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2362,13 +2290,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2385,12 +2308,10 @@
           "osm:node:10252985357"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신월7동 주민 작업반",
           "지형 안내 담당자"
@@ -2411,8 +2332,8 @@
           "kind": "slope",
           "description": "멀리 보이는 통로를 확인 없이 개방하면 사면 장애물을 늦게 발견한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신월7동 주민들은 다음 선택의 비용을 협의한다: 관측 기록을 현장 점검과 함께 게시한다.",
-        "connections": "신월3동·신월4동·신월6동·신정3동과 경계를 맞대지만 신월7동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신월7동 주민들은 다음 선택의 비용을 협의한다: 관측 기록을 현장 점검과 함께 게시한다.",
+        "connections": "신월3동·신월4동·신월6동·신정3동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147061100-local-choice",
           "label": "관측 기록을 현장 점검과 함께 게시한다",
@@ -2447,7 +2368,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신월7동주민센터 1층. 신월7동 배급 창구. 보유 S01.",
+                "contents": "신월7동주민센터 1층. 신월7동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2578,13 +2499,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2601,12 +2517,10 @@
           "osm:way:1039486893"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신정1동 주민 작업반",
           "공개 계량 담당자"
@@ -2627,8 +2541,8 @@
           "kind": "governance",
           "description": "품목 단위가 섞이면 같은 양의 물건도 다른 값으로 기록된다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신정1동 주민들은 다음 선택의 비용을 협의한다: 품목별 단위를 공개한다.",
-        "connections": "신정3동·신정4동·신정6동·신정7동과 경계를 맞대지만 신정1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신정1동 주민들은 다음 선택의 비용을 협의한다: 품목별 단위를 공개한다.",
+        "connections": "신정3동·신정4동·신정6동·신정7동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147062000-local-choice",
           "label": "품목별 단위를 공개한다",
@@ -2663,7 +2577,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신정네거리 선로. 신정1동 통행세 구간. 보유 S01.",
+                "contents": "신정네거리 선로. 신정1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2702,7 +2616,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신정1동주민센터 1층. 신정1동 배급 창구. 보유 S01.",
+                "contents": "신정1동주민센터 1층. 신정1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2734,7 +2648,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "신정제일시장 1층 허가 장터. 보유 S01.",
+                "contents": "신정제일시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2787,13 +2701,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2810,12 +2719,10 @@
           "osm:node:4635982950"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신정2동 주민 작업반",
           "포장재 수리 담당자"
@@ -2836,8 +2743,8 @@
           "kind": "supply",
           "description": "상자가 부서지면 짧은 운반에서도 배급 물자가 손상된다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신정2동 주민들은 다음 선택의 비용을 협의한다: 공동 상자 수리 시간을 확보한다.",
-        "connections": "목1동·신정6동과 경계를 맞대지만 신정2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신정2동 주민들은 다음 선택의 비용을 협의한다: 공동 상자 수리 시간을 확보한다.",
+        "connections": "목1동·신정6동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147063000-local-choice",
           "label": "공동 상자 수리 시간을 확보한다",
@@ -2872,7 +2779,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신정2동 주민센터 1층. 신정2동 배급 창구. 보유 S01.",
+                "contents": "신정2동 주민센터 1층. 신정2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2904,7 +2811,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "오목교시장 1층 허가 장터. 보유 S01.",
+                "contents": "오목교시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -3003,13 +2910,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3026,12 +2928,10 @@
           "osm:relation:7425700"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신정3동 주민 작업반",
           "공구 대여 담당자"
@@ -3052,8 +2952,8 @@
           "kind": "governance",
           "description": "반납을 확인하지 않으면 다음 수리조가 도구 없이 기다린다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신정3동 주민들은 다음 선택의 비용을 협의한다: 반납 검사와 공동 수리 시간을 둔다.",
-        "connections": "신월2동·신월6동·신월7동·신정1동·신정4동·신정7동과 경계를 맞대지만 신정3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신정3동 주민들은 다음 선택의 비용을 협의한다: 반납 검사와 공동 수리 시간을 둔다.",
+        "connections": "신월2동·신월6동·신월7동·신정1동·신정4동·신정7동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147064000-local-choice",
           "label": "반납 검사와 공동 수리 시간을 둔다",
@@ -3261,13 +3161,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3284,12 +3179,10 @@
           "osm:node:368740922"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신정4동 주민 작업반",
           "세척수 관리 담당자"
@@ -3310,8 +3203,8 @@
           "kind": "water",
           "description": "용기를 섞어 쓰면 처치용 물의 관리 기록을 잃는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신정4동 주민들은 다음 선택의 비용을 협의한다: 용도별 용기를 분리한다.",
-        "connections": "목1동·신월2동·신정1동·신정3동과 경계를 맞대지만 신정4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신정4동 주민들은 다음 선택의 비용을 협의한다: 용도별 용기를 분리한다.",
+        "connections": "목1동·신월2동·신정1동·신정3동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147065000-local-choice",
           "label": "용도별 용기를 분리한다",
@@ -3346,7 +3239,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신정 선로. 신정4동 통행세 구간. 보유 S01.",
+                "contents": "신정 선로. 신정4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3410,7 +3303,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신정4동주민센터 1층. 신정4동 배급 창구. 보유 S01.",
+                "contents": "신정4동주민센터 1층. 신정4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3470,13 +3363,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3493,12 +3381,10 @@
           "osm:way:276663648"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신정6동 주민 작업반",
           "실무 교육 담당자"
@@ -3519,8 +3405,8 @@
           "kind": "supply",
           "description": "교육이 계속 밀리면 일부 숙련자에게 수리 주문이 몰린다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신정6동 주민들은 다음 선택의 비용을 협의한다: 교육 시간을 작업표에 예약한다.",
-        "connections": "목1동·신정1동·신정2동·신정7동과 경계를 맞대지만 신정6동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신정6동 주민들은 다음 선택의 비용을 협의한다: 교육 시간을 작업표에 예약한다.",
+        "connections": "목1동·신정1동·신정2동·신정7동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147067000-local-choice",
           "label": "교육 시간을 작업표에 예약한다",
@@ -3647,7 +3533,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신정6동 주민센터 1층. 신정6동 배급 창구. 보유 S01.",
+                "contents": "신정6동 주민센터 1층. 신정6동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3707,13 +3593,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3730,12 +3611,10 @@
           "osm:node:6033364440"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S01"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신정7동 주민 작업반",
           "통행 조정 담당자"
@@ -3756,8 +3635,8 @@
           "kind": "access",
           "description": "배급 화물이 한꺼번에 오면 일반 통행자가 출입구에서 기다린다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신정7동 주민들은 다음 선택의 비용을 협의한다: 배급 인계 시간대를 따로 둔다.",
-        "connections": "신정1동·신정3동·신정6동과 경계를 맞대지만 신정7동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신정7동 주민들은 다음 선택의 비용을 협의한다: 배급 인계 시간대를 따로 둔다.",
+        "connections": "신정1동·신정3동·신정6동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1147068000-local-choice",
           "label": "배급 인계 시간대를 따로 둔다",
@@ -3792,7 +3671,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "양천구청 선로. 신정7동 통행세 구간. 보유 S01.",
+                "contents": "양천구청 선로. 신정7동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3831,7 +3710,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신정7동주민센터 1층. 신정7동 배급 창구. 보유 S01.",
+                "contents": "신정7동주민센터 1층. 신정7동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3937,13 +3816,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S01",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }

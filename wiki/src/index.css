@@ -139,6 +139,22 @@ summary:focus-visible {
   line-height: 1.45;
 }
 
+.wiki-prose h4 {
+  scroll-margin-block-start: 1rem;
+  margin-block: 1.3rem 0.5rem;
+  font-size: 1.02rem;
+  line-height: 1.45;
+  color: var(--wiki-accent, inherit);
+}
+
+.wiki-prose h5 {
+  scroll-margin-block-start: 1rem;
+  margin-block: 0.9rem 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 .wiki-prose p,
 .wiki-prose ul,
 .wiki-prose ol,

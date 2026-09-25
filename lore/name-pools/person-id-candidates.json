@@ -1,10 +1,10 @@
 {
   "schema": "wiki-person-id-candidates.v1",
-  "inputSha256": "0f34a33db5a170c085264ceeadbc93c4bde25246ba00483c7ddbca84179190cc",
-  "baseCommit": "85e8be0159d6d504e9f83b38e8afa9474a7d73b6",
-  "totalPeople": 1004,
+  "inputSha256": "50c4370ca6193ca9251fcae413261adf4aaa0dbadcd898012a361964727ac5cf",
+  "baseCommit": "84a8c56b3ba3d4b31bc2db077458862a630f1768",
+  "totalPeople": 1007,
   "existingKCount": 422,
-  "candidateCount": 582,
+  "candidateCount": 585,
   "existingK": [
     {
       "id": "K001",
@@ -6351,6 +6351,30 @@
       "state": "S00",
       "title": "수행 전령",
       "locked": false
+    },
+    {
+      "ordinal": 583,
+      "name": "정서온",
+      "stage": "주요",
+      "state": "S03",
+      "title": "회장",
+      "locked": false
+    },
+    {
+      "ordinal": 584,
+      "name": "탁서윤",
+      "stage": "주요",
+      "state": "S14",
+      "title": "아관사 구의수비대장",
+      "locked": false
+    },
+    {
+      "ordinal": 585,
+      "name": "김연규",
+      "stage": "주요",
+      "state": "S06",
+      "title": "온민의 수장",
+      "locked": false
     }
   ],
   "NOTES": [
@@ -6383,6 +6407,21 @@
       "type": "state-tier-without-k",
       "name": "이연",
       "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "core-tier-without-k",
+      "name": "정서온",
+      "detail": "주요 단계 잠금 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "core-tier-without-k",
+      "name": "탁서윤",
+      "detail": "주요 단계 잠금 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "core-tier-without-k",
+      "name": "김연규",
+      "detail": "주요 단계 잠금 인물인데 K 식별자가 없다"
     },
     {
       "type": "ledger-person-not-in-values",

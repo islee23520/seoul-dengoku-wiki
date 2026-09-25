@@ -3,17 +3,15 @@
 Earned its file: score ~8 (S01–S16 ids are verifier-enforced in region content; `Sixteen-States.md` is the target of all 427 canon_refs and self-declares 정본 in its InfoBox; org numbers keyed HC/HP/XT live in `../name-pools/values-orgs.json`); distinct domain — the political map over the geography data.
 
 ## OVERVIEW
-The sixteen states S01–S16, their ruling houses and chaebol origins, the diplomacy model, plus overlays that are deliberately not states: diaspora corridors, conscription remnants, external theaters.
+The sixteen states S01–S16, their ruling houses and chaebol origins, plus overlays that are deliberately not states: diaspora corridors and external theaters. Diplomacy and conscription rules live in GDD `rules/Rules-FactionsWarfare`.
 
 ## WHERE TO LOOK
 | Task | Location |
 |------|----------|
 | The 16 states S01–S16 | `Sixteen-States.md` — InfoBox-declared 정본; 6 강국 (대한민국정부·수문국·규격맹·환적국·동방사·태욱그룹), 4 약국, 6 소국; forms 봉건·군정·신정·상업 |
 | Houses / chaebol origins | `Chaebol-Houses-and-Century-Factions.md` — families lease infrastructure to states; chaebol-origin states are the hereditary exception (상호가 국호) |
-| Diplomacy model | `Factions-and-Diplomacy.md` — trust/reputation/legitimacy/promises/grievances graph, not one opinion number; table numbers are design assumptions |
 | External theaters XT01–XT05 | `External-Theaters.md` — Seoul-side corridors only; read-only projection of World-Narrative-Atlas (edit via the atlas, parent contract) |
 | Diaspora corridors | `Diaspora-Corridors.md` — life-belt overlay on the 16 states; new people still satisfy the cast card contract (`../characters/Cast-Profile-Contract.md`) |
-| Conscription remnants | `Conscription-Remnants.md` — 4 creative-proposal orgs overlapping the 16 states; troop/ammunition numbers undecided |
 
 ## CONVENTIONS
 - `polity_contexts` in `../regions/content/` must be S01–S16 (`verify_region_atlas.py` rejects anything else); corridors, remnants, and XT ids never qualify as polities.

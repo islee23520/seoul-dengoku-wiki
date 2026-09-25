@@ -11,7 +11,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "구청 계약칠판과 시장 저울",
-        "summary": "개막일 은평구청 현관은 기존 중앙 급수·부품 계약 만료란과 임하준 실종 전갈만 받아 적는다. 녹번 대합실은 구청과 녹번동 주민센터 사이를 오가는 서명 줄을 세우고, 대조·불광시장 저울은 식량 상자와 의료 키트를 같은 눈금에 올린다. 은평튼튼병원 로비는 키트 잔량을 칠판에 옮기는 자리이고, 진흥로 작은숲은 그늘 대기석이다. 세 유언장과 북산 행렬은 이 현관에 없다.",
+        "summary": "녹번 대합실은 구청과 녹번동 주민센터 사이를 오가는 서명 줄을 세우고, 대조·불광시장 저울은 식량 상자와 의료 키트를 같은 눈금에 올린다. 은평튼튼병원 로비는 키트 잔량을 칠판에 옮기는 자리이고, 진흥로 작은숲은 그늘 대기석이다.",
         "anchor_refs": [
           "osm:node:1968205543",
           "osm:node:6033544459",
@@ -21,21 +21,19 @@
           "osm:way:1185917461"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Operating-Houses.md",
-          "docs/game-logic/Cast-State-10.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/Operating-Houses.md",
+          "WIKI/lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "구청 계약 서기",
           "시장 저울 인부",
           "튼튼병원 키트 당번",
           "녹번 대합실 서명 줄"
         ],
-        "livelihood": "은평구청에서 만료 계약란을 받아 적고, 대조·불광시장 저울로 식량과 키트를 나눈다. 녹번 대합실은 서명과 통과 순번만 맞추며, 은평튼튼병원은 키트 잔량을 공개한다. 진흥로 작은숲은 대기 그늘이지 약초밭이 아니다.",
+        "livelihood": "녹번 대합실은 서명과 통과 순번만 맞추며, 은평튼튼병원은 키트 잔량을 공개한다. 진흥로 작은숲은 대기 그늘이지 약초밭이 아니다.",
         "production": {
           "outputs": [
             "계약공백란",
@@ -57,7 +55,7 @@
           "kind": "governance",
           "description": "구청 칠판의 공백란이 길어지면 시장 저울이 먼저 사설 가격을 붙인다. 사설 가격을 막으면 서명 줄이 대합실에 쌓이고, 줄을 먼저 비우면 키트 게시가 하루 밀린다."
         },
-        "opening_state": "개막일 은평구청과 녹번동 주민센터의 창작 접수조는 임하준 실종·기존 중앙 계약 만료를 알리고 생활 배급과 통행 안내의 책임을 나누려 한다.",
+        "opening_state": "개막일 은평구청과 녹번동 주민센터의 창작 접수조는 생활 배급과 통행 안내의 책임을 나누려 한다.",
         "connections": "불광1·대조·응암1·역촌과 맞닿고 서쪽은 서대문 홍제 고개 쪽 경계다. 공유 경계가 곧 통행로는 아니며, 시장 상자를 불광1로 넘기려면 구청 날인이 따로 필요하다.",
         "action": {
           "id": "1138051000-hall-contract-board",
@@ -83,7 +81,7 @@
           "outcomes": [
             {
               "kind": "service",
-              "effect": "만료 계약 공백란을 공개 입회 없이 사설 가격으로 메우지 못하게 막는다."
+              "effect": "계약 공백란을 공개 입회 없이 사설 가격으로 메우지 못하게 막는다."
             },
             {
               "kind": "governance",
@@ -107,7 +105,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "녹번 선로. 녹번동 통행세 구간. 보유 S10.",
+                "contents": "녹번 선로. 녹번동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -146,7 +144,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "은평구청 1층. 녹번동 배급 창구. 보유 S10.",
+                "contents": "은평구청 1층. 녹번동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -203,20 +201,15 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "대조.불광시장 1층 허가 장터. 보유 S10.",
+                "contents": "대조.불광시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -228,7 +221,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "독바위 낙석줄과 수향봉 낮길",
-        "summary": "개막일 독바위 승강장 위 비탈은 낮에만 낙석줄을 치고, 불광 대합실은 그 줄을 통과한 사람만 받아 적는다. 수향봉·선림봉 사이 바윗길은 정찰이 먼저 밟고, 불광폭포 아래 웅덩이는 식수가 아니라 손 씻는 물로만 쓴다. 서울불광초·수리초 운동장은 낙석 대피 마당이고, 불광1동 주민센터는 낮 개방 시각만 게시한다. 야간 회랑과 가을 행렬은 아직 열리지 않았다.",
+        "summary": "개막일 독바위 승강장 위 비탈은 낮에만 낙석줄을 치고, 불광 대합실은 그 줄을 통과한 사람만 받아 적는다. 수향봉·선림봉 사이 바윗길은 정찰이 먼저 밟고, 불광폭포 아래 웅덩이는 식수가 아니라 손 씻는 물로만 쓴다. 서울불광초·수리초 운동장은 낙석 대피 마당이고, 불광1동 주민센터는 낮 개방 시각만 게시한다.",
         "anchor_refs": [
           "osm:node:6041674927",
           "osm:node:5930698996",
@@ -238,13 +231,11 @@
           "osm:way:751246907"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "독바위 낙석 감시",
           "수향봉 정찰",
@@ -323,7 +314,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "불광 선로. 불광1동 통행세 구간. 보유 S10.",
+                "contents": "불광 선로. 불광1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -362,7 +353,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "독바위 선로. 불광1동 통행세 구간. 보유 S10.",
+                "contents": "독바위 선로. 불광1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -482,13 +473,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -500,7 +486,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "박석고개 낮문과 연서시장 좌판",
-        "summary": "개막일 박석고개는 수레 바퀴가 미끄러운 낮문이고, 연서시장 좌판은 그 문을 통과한 곡물만 깐다. 불광2동 주민센터는 고개 개방 시각을 칠판에 적고, 연신중·연천중·연신초·불광중 운동장은 좌판 덮개와 대피 자리를 나눈다. 불광근린공원 나무 그늘은 짐 묶는 마당이다. 임하준 실종 전갈은 시장 칠판에 있고, 행렬은 고개를 넘지 않았다.",
+        "summary": "개막일 박석고개는 수레 바퀴가 미끄러운 낮문이고, 연서시장 좌판은 그 문을 통과한 곡물만 깐다. 불광2동 주민센터는 고개 개방 시각을 칠판에 적고, 연신중·연천중·연신초·불광중 운동장은 좌판 덮개와 대피 자리를 나눈다. 불광근린공원 나무 그늘은 짐 묶는 마당이다.",
         "anchor_refs": [
           "osm:node:436810671",
           "osm:node:10886208967",
@@ -510,13 +496,11 @@
           "osm:node:368928679"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "박석고개 문지기",
           "연서시장 좌판 상인",
@@ -545,7 +529,7 @@
           "kind": "access",
           "description": "박석고개 노면이 젖으면 수레가 미끄러져 연서시장 입구를 하루 막는다. 모래를 고개에 쏟으면 학교 운동장 덮개 일이 비고, 덮개를 먼저 치면 고개 통과표가 저녁까지 밀린다."
         },
-        "opening_state": "중앙 계약이 만료된 개막일, 연서시장 상인과 박석고개 안내조는 실제 확인된 통과 시간에 맞춰 곡물 인계를 협의한다.",
+        "opening_state": "연서시장 상인과 박석고개 안내조는 실제 확인된 통과 시간에 맞춰 곡물 인계를 협의한다.",
         "connections": "불광1·갈현1·진관과 맞닿는다. 공유 경계가 곧 산길은 아니며, 갈현1 연신내 대합실로 짐을 넘기려면 고개 통과표와 별도 날인이 필요하다.",
         "action": {
           "id": "1138053000-bakseok-daygate",
@@ -733,7 +717,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "불광2동 주민센터 1층. 불광2동 배급 창구. 보유 S10.",
+                "contents": "불광2동 주민센터 1층. 불광2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -747,13 +731,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -775,16 +754,13 @@
           "osm:way:1212005379"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Operating-Houses.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Cast-State-11.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/Operating-Houses.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "WIKI/lore/characters/Cast-State-11.md"
         ],
-        "polity_contexts": [
-          "S10",
-          "S11"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "명부 기입원",
           "동의 확인원",
@@ -863,7 +839,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "연신내 선로. 갈현1동 통행세 구간. 보유 S10, S11.",
+                "contents": "연신내 선로. 갈현1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -902,7 +878,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "연신내 선로. 갈현1동 통행세 구간. 보유 S10, S11.",
+                "contents": "연신내 선로. 갈현1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -966,7 +942,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "갈현1동 주민센터 1층. 갈현1동 배급 창구. 보유 S10, S11.",
+                "contents": "갈현1동 주민센터 1층. 갈현1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -980,17 +956,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 57
-            },
-            {
-              "polity": "S11",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1002,7 +969,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "선일여고 강당 난로와 학교 골목",
-        "summary": "개막일 선일여자고등학교 강당은 넘친 숙영을 받는 난로 자리이고, 선정고·대성고·선정중 교실은 같은 연통 나무를 다툰다. 선일여고·빅데이터고 정류는 교대 노동을 세는 들머리이며, 현재트윈빌아파트 마당은 난로 재를 식히는 곳이다. 연서로는 갈현1 명부 줄을 받지 않고 땔감 수레만 들인다. 계약 만료로 연료 가격이 오르고, 야간 회랑은 이 골목에 없다.",
+        "summary": "개막일 선일여자고등학교 강당은 넘친 숙영을 받는 난로 자리이고, 선정고·대성고·선정중 교실은 같은 연통 나무를 다툰다. 선일여고·빅데이터고 정류는 교대 노동을 세는 들머리이며, 현재트윈빌아파트 마당은 난로 재를 식히는 곳이다. 연서로는 갈현1 명부 줄을 받지 않고 땔감 수레만 들인다. 야간 회랑은 이 골목에 없다.",
         "anchor_refs": [
           "osm:node:368621443",
           "osm:node:368622631",
@@ -1012,14 +979,12 @@
           "osm:way:1289633000"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Economy-and-Production.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "GDD/viewer/src/content/rules/Rules-EconomyLogistics.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "강당 난로 정비",
           "고등학교 숙영 서기",
@@ -1271,13 +1236,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1299,14 +1259,12 @@
           "osm:way:327092795"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Economy-and-Production.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "GDD/viewer/src/content/rules/Rules-EconomyLogistics.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "봉산 약초 채집",
           "사면 운반꾼",
@@ -1385,7 +1343,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "구산 선로. 구산동 통행세 구간. 보유 S10.",
+                "contents": "구산 선로. 구산동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1551,13 +1509,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1569,7 +1522,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "빈 골조 물통과 보건원 정류",
-        "summary": "개막일 힐스테이트메디알레 공사 골조는 물통을 거는 뼈대이고, 호반베르디움과 삼성타운 마당은 그 물을 세대 항아리에 나눈다. 대조동 주민센터는 골조 물통 순번만 받아 적고, 국립보건원 정류는 물지게 교대를 세운다. 동명여고·대조초 운동장은 물통 그늘이다. 시외 정수가 끊긴 뒤 빗물과 제한 양수만 남고, 행렬은 이 골목에 도착하지 않았다.",
+        "summary": "개막일 힐스테이트메디알레 공사 골조는 물통을 거는 뼈대이고, 호반베르디움과 삼성타운 마당은 그 물을 세대 항아리에 나눈다. 대조동 주민센터는 골조 물통 순번만 받아 적고, 국립보건원 정류는 물지게 교대를 세운다. 동명여고·대조초 운동장은 물통 그늘이다.",
         "anchor_refs": [
           "osm:way:1117520408",
           "osm:node:368898987",
@@ -1579,13 +1532,11 @@
           "osm:way:31564868"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "골조 물통 지기",
           "단지 항아리 반장",
@@ -1614,7 +1565,7 @@
           "kind": "supply",
           "description": "골조 물통 뚜껑이 없으면 빗물이 흙탕이 되어 삼성타운 항아리까지 못 쓴다. 물지게를 갈현1 대합실로 먼저 보내면 호반베르디움 세대가 반나절 마르고, 세대를 먼저 채우면 정류 교대가 빈다."
         },
-        "opening_state": "중앙 급수 계약이 만료된 개막일, 대조동 주민센터와 단지 대표는 임시 저장통과 가구별 물 인계 순서를 함께 정한다.",
+        "opening_state": "대조동 주민센터와 단지 대표는 임시 저장통과 가구별 물 인계 순서를 함께 정한다.",
         "connections": "녹번·불광1·갈현1·갈현2·역촌과 맞닿는다. 공유 골목이 곧 녹번 시장 출입은 아니며, 물통을 넘기려면 주민센터 순번표가 따로 필요하다.",
         "action": {
           "id": "1138057000-frame-cistern",
@@ -1664,7 +1615,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "대조동 주민센터 1층. 대조동 배급 창구. 보유 S10.",
+                "contents": "대조동 주민센터 1층. 대조동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1816,13 +1767,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1844,14 +1790,12 @@
           "osm:node:11663495538"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Economy-and-Production.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "GDD/viewer/src/content/rules/Rules-EconomyLogistics.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "공고 공구반",
           "불광천 들통조",
@@ -1930,7 +1874,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "응암1동 주민센터 1층. 응암1동 배급 창구. 보유 S10.",
+                "contents": "응암1동 주민센터 1층. 응암1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2082,13 +2026,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2110,14 +2049,12 @@
           "osm:node:11663495518"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Operating-Houses.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "WIKI/lore/Operating-Houses.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "시장 국솥 조리",
           "은평병원 미음 당번",
@@ -2228,7 +2165,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "응암시장 1층 허가 장터. 보유 S10.",
+                "contents": "응암시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2327,13 +2264,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2345,7 +2277,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "대림시장골목 등불과 천변 모래주머니",
-        "summary": "개막일 대림시장골목은 등불 기름과 좌판 천이 같은 줄을 다툰다. 대림시장 건물 안은 마른 나물과 소금 항아리를 두고, 응암3동 주민센터는 골목 등불 시각만 적는다. 불광천 이 구간은 모래주머니로 좌판 앞을 막으며, 응암우성아파트 저층은 물이 들면 먼저 짐을 올린다. 은평문화예술정보학교 강당은 젖은 천을 말리는 자리이다. 야시장을 연다는 결정은 아직 없다.",
+        "summary": "개막일 대림시장골목은 등불 기름과 좌판 천이 같은 줄을 다툰다. 대림시장 건물 안은 마른 나물과 소금 항아리를 두고, 응암3동 주민센터는 골목 등불 시각만 적는다. 불광천 이 구간은 모래주머니로 좌판 앞을 막으며, 응암우성아파트 저층은 물이 들면 먼저 짐을 올린다. 은평문화예술정보학교 강당은 젖은 천을 말리는 자리이다.",
         "anchor_refs": [
           "osm:way:795977926",
           "osm:way:462890698",
@@ -2355,13 +2287,11 @@
           "osm:way:463007557"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "골목 좌판 상인",
           "등불 기름 당번",
@@ -2390,7 +2320,7 @@
           "kind": "fire",
           "description": "골목 등불이 기름을 과하게 먹으면 좌판 천에 불꽃이 옮는다. 등불을 끄면 도둑과 헛디딤이 늘고, 모래를 불 끄는 데 쓰면 천변 제방이 낮아져 우성아파트 저층이 젖는다."
         },
-        "opening_state": "중앙 계약이 만료된 개막일, 대림시장골목의 상인과 주민 안내조는 야간 영업 조명과 천변 안전 점검에 쓸 물자를 나누려 한다.",
+        "opening_state": "대림시장골목의 상인과 주민 안내조는 야간 영업 조명과 천변 안전 점검에 쓸 물자를 나누려 한다.",
         "connections": "응암1·응암2·신사1·신사2·증산과 맞닿고 남쪽은 서대문·마포 쪽 경계다. 공유 천변이 곧 증산 시장 길은 아니며, 소금 항아리를 넘기려면 골목 저울 날인이 필요하다.",
         "action": {
           "id": "1138060000-daerim-alley-lamps",
@@ -2447,7 +2377,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "대림시장 1층 허가 장터. 보유 S10.",
+                "contents": "대림시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -2564,20 +2494,15 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "대림시장골목 1층 허가 장터. 보유 S10.",
+                "contents": "대림시장골목 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2589,7 +2514,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "서북병원 급수통과 역촌 대합실",
-        "summary": "개막일 서울시립서북병원 마당은 거른 물을 병실 항아리에 올리는 자리이고, 역촌 대합실은 그 물을 나르는 들것 순번을 세운다. 역촌동주민센터는 병원 급수와 센트레빌 세대 급수를 한 칠판에 칸 나눠 적는다. 봉산 자락은 낙엽 땔감만 내리고, 역촌초 운동장은 들것을 씻는 마당이다. 시외 정수가 끊긴 뒤 병원 항아리가 먼저 마르고, 가을 행렬은 이 마당에 없다.",
+        "summary": "개막일 서울시립서북병원 마당은 거른 물을 병실 항아리에 올리는 자리이고, 역촌 대합실은 그 물을 나르는 들것 순번을 세운다. 역촌동주민센터는 병원 급수와 센트레빌 세대 급수를 한 칠판에 칸 나눠 적는다. 봉산 자락은 낙엽 땔감만 내리고, 역촌초 운동장은 들것을 씻는 마당이다.",
         "anchor_refs": [
           "osm:way:327092795",
           "osm:node:6041674939",
@@ -2599,13 +2524,11 @@
           "osm:way:263591039"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "서북병원 급수 당번",
           "역촌 대합실 들것조",
@@ -2684,7 +2607,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "역촌 선로. 역촌동 통행세 구간. 보유 S10.",
+                "contents": "역촌 선로. 역촌동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2723,7 +2646,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "역촌동주민센터 1층. 역촌동 배급 창구. 보유 S10.",
+                "contents": "역촌동주민센터 1층. 역촌동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2808,13 +2731,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2836,16 +2754,13 @@
           "osm:node:414683392"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Operating-Houses.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/Operating-Houses.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S10",
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "기독대 전언 서기",
           "응암 승강장 줄지기",
@@ -2924,7 +2839,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "응암 선로. 신사1동 통행세 구간. 보유 S10, S09.",
+                "contents": "응암 선로. 신사1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2988,7 +2903,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신사1동 주민센터 1층. 신사1동 배급 창구. 보유 S10, S09.",
+                "contents": "신사1동 주민센터 1층. 신사1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3048,17 +2963,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 57
-            },
-            {
-              "polity": "S09",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3080,15 +2986,12 @@
           "osm:way:1041615145"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Cast-State-09.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "WIKI/lore/characters/Cast-State-09.md"
         ],
-        "polity_contexts": [
-          "S10",
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "터널 낮문 높이재기",
           "새절 대기석 지기",
@@ -3167,7 +3070,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "새절 선로. 신사2동 통행세 구간. 보유 S10, S09.",
+                "contents": "새절 선로. 신사2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3254,7 +3157,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신사2동 주민센터 1층. 신사2동 배급 창구. 보유 S10, S09.",
+                "contents": "신사2동 주민센터 1층. 신사2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3314,17 +3217,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 57
-            },
-            {
-              "polity": "S09",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3346,16 +3240,13 @@
           "osm:way:1116878347"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Cast-State-09.md",
-          "docs/game-logic/Economy-and-Production.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "WIKI/lore/characters/Cast-State-09.md",
+          "GDD/viewer/src/content/rules/Rules-EconomyLogistics.md"
         ],
-        "polity_contexts": [
-          "S10",
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "DMC 전언수하",
           "증산 시장 저울 인부",
@@ -3434,7 +3325,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "증산 선로. 증산동 통행세 구간. 보유 S10, S09.",
+                "contents": "증산 선로. 증산동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3473,7 +3364,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "디지털미디어시티 선로. 증산동 통행세 구간. 보유 S10, S09.",
+                "contents": "디지털미디어시티 선로. 증산동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3512,7 +3403,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "디지털미디어시티 선로. 증산동 통행세 구간. 보유 S10, S09.",
+                "contents": "디지털미디어시티 선로. 증산동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3586,17 +3477,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 57
-            },
-            {
-              "polity": "S09",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3618,16 +3500,13 @@
           "osm:way:463145281"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Cast-State-09.md",
-          "docs/game-logic/Strongholds-and-Territory.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "WIKI/lore/characters/Cast-State-09.md",
+          "GDD/viewer/src/content/rules/Rules-Strongholds.md"
         ],
-        "polity_contexts": [
-          "S10",
-          "S09"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "사업소 환적 인부",
           "수색교 어깨짐꾼",
@@ -3752,7 +3631,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "수색동주민센터 1층. 수색동 배급 창구. 보유 S10, S09.",
+                "contents": "수색동주민센터 1층. 수색동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3823,17 +3702,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 57
-            },
-            {
-              "polity": "S09",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3845,7 +3715,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "구파발 낮 회랑과 기자봉 정찰",
-        "summary": "개막일 구파발 대합실은 북한산 서북 비탈에서 내려온 사람을 낮에만 받아 적는 관문이다. 기자봉 정찰이 구름정원길 낙석을 보고해야 진관동주민센터가 회랑 시각을 연다. 진관고·진관중·진관초·하나고 운동장은 숙영 자리와 약초 건조를 나누고, 은평성모병원 들머리는 다친 사람을 회랑 명부에 올리기 전 대기시키는 문이다. 백온 쪽 연방회의는 낮문만 열며, 지축 열차와 가을 행렬은 아직 없다.",
+        "summary": "개막일 구파발 대합실은 북한산 서북 비탈에서 내려온 사람을 낮에만 받아 적는 관문이다. 기자봉 정찰이 구름정원길 낙석을 보고해야 진관동주민센터가 회랑 시각을 연다. 진관고·진관중·진관초·하나고 운동장은 숙영 자리와 약초 건조를 나누고, 은평성모병원 들머리는 다친 사람을 회랑 명부에 올리기 전 대기시키는 문이다.",
         "anchor_refs": [
           "osm:node:6033544501",
           "osm:node:10252985115",
@@ -3855,15 +3725,13 @@
           "osm:way:468617542"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Operating-Houses.md",
-          "docs/game-logic/Cast-State-10.md",
-          "docs/game-logic/Strongholds-and-Territory.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/Operating-Houses.md",
+          "WIKI/lore/characters/Cast-State-10.md",
+          "GDD/viewer/src/content/rules/Rules-Strongholds.md"
         ],
-        "polity_contexts": [
-          "S10"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "구파발 낮문 안내",
           "기자봉 정찰",
@@ -3942,7 +3810,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "구파발 선로. 진관동 통행세 구간. 보유 S10.",
+                "contents": "구파발 선로. 진관동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3981,7 +3849,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "진관동주민센터 1층. 진관동 배급 창구. 보유 S10.",
+                "contents": "진관동주민센터 1층. 진관동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -4087,13 +3955,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S10",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }

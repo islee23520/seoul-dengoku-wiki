@@ -1,28 +1,26 @@
 # 세계 확장 관계 원장
 
-이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
-
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `bcfc3ee11e095926c59f3e962be07dcae18750c70c760ebd4ac9b6339ee09f7c`
+- 원본 해시: `065465902b159cc79a6e2274c09ded1620212c5fe19f65e4dced61bf2c777445`
 
 | 출발 | 유형 | 도착 | 근거 |
 | --- | --- | --- | --- |
 | HC01 | operates_in | S01 | 가문-국가 운영 연결 |
-| HC02 | operates_in | S02 | 가문-국가 운영 연결 |
+| HC02 | operates_in | S01 | 가문-국가 운영 연결 |
 | HC03 | operates_in | S03 | 가문-국가 운영 연결 |
 | HC04 | operates_in | S04 | 가문-국가 운영 연결 |
-| HC05 | operates_in | S05 | 가문-국가 운영 연결 |
-| HC06 | operates_in | S06 | 가문-국가 운영 연결 |
-| HC07 | operates_in | S07 | 가문-국가 운영 연결 |
-| HC08 | operates_in | S08 | 가문-국가 운영 연결 |
-| HC09 | operates_in | S09 | 가문-국가 운영 연결 |
-| HC10 | operates_in | S10 | 가문-국가 운영 연결 |
-| HC11 | operates_in | S11 | 가문-국가 운영 연결 |
-| HC12 | operates_in | S12 | 가문-국가 운영 연결 |
-| HC13 | operates_in | S13 | 가문-국가 운영 연결 |
-| HC14 | operates_in | S14 | 가문-국가 운영 연결 |
-| HP01 | operates_in | S15 | 가문-국가 운영 연결 |
-| HP02 | operates_in | S16 | 가문-국가 운영 연결 |
+| HC05 | operates_in | S10 | 가문-국가 운영 연결 |
+| HC06 | operates_in | S08 | 가문-국가 운영 연결 |
+| HC07 | operates_in | S02 | 가문-국가 운영 연결 |
+| HC08 | operates_in | S11 | 가문-국가 운영 연결 |
+| HC09 | operates_in | S06 | 가문-국가 운영 연결 |
+| HC10 | operates_in | S03 | 가문-국가 운영 연결 |
+| HC11 | operates_in | S07 | 가문-국가 운영 연결 |
+| HC12 | operates_in | S02 | 가문-국가 운영 연결 |
+| HC13 | operates_in | S06 | 가문-국가 운영 연결 |
+| HC14 | operates_in | S01 | 가문-국가 운영 연결 |
+| HP01 | operates_in | S01 | 가문-국가 운영 연결 |
+| HP02 | operates_in | S07 | 가문-국가 운영 연결 |
 | XT01 | pressures | S01 | 전구-국가 압력 |
 | XT02 | pressures | S04 | 전구-국가 압력 |
 | XT03 | pressures | S07 | 전구-국가 압력 |

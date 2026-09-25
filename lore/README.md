@@ -23,9 +23,7 @@
 
 ## 5. 세력과 집단
 - [서울 십육국](factions/Sixteen-States.md)
-- [세력과 외교](factions/Factions-and-Diplomacy.md)
 - [가문](factions/Chaebol-Houses-and-Century-Factions.md)
-- [징집 잔존과 군 장부](factions/Conscription-Remnants.md)
 - [이주민 회랑](factions/Diaspora-Corridors.md)
 - [바깥](factions/External-Theaters.md)
 - [서울 생태·변이 도감](bestiary/Hostile-Ecology-Index.md)
@@ -52,25 +50,16 @@
 - [이야기](culture/Oral-Stories.md)
 - [가치관과 정책 척도](culture/Values-and-Policy-Scales.md)
 
-## 12. 경제와 보급
-- [경제와 생산](economy/Economy-and-Production.md)
-- [물류와 기반 시설](economy/Logistics-and-Infrastructure.md)
-- [거점과 영토](economy/Strongholds-and-Territory.md)
-
-## 13. 등장인물
+## 12. 등장인물
 - [등장인물](characters/Core-Characters.md)
 - [인물 총람](characters/Cast-Index.md)
 - Cast-State 요약 1행: [01](characters/Cast-State-01.md) · [02](characters/Cast-State-02.md) · [03](characters/Cast-State-03.md) · [04](characters/Cast-State-04.md) · [05](characters/Cast-State-05.md) · [06](characters/Cast-State-06.md) · [07](characters/Cast-State-07.md) · [08](characters/Cast-State-08.md) · [09](characters/Cast-State-09.md) · [10](characters/Cast-State-10.md) · [11](characters/Cast-State-11.md) · [12](characters/Cast-State-12.md) · [13](characters/Cast-State-13.md) · [14](characters/Cast-State-14.md) · [15](characters/Cast-State-15.md) · [16](characters/Cast-State-16.md)
-- [야망](characters/Ambitions-and-Relations.md)
-- [후계, 이름 로스터, 세계 원장](characters/Heirs-Names-and-World-Ledger.md)
 - [본관과 항렬](characters/Hangnyeol-and-Bon-gwan.md)
-- [왕조와 봉신 정치](characters/Vassal-Dynasty-Politics.md)
 - [인물·세력·생업](characters/Characters-Factions-and-Professions.md)
 - [무소속 인물](characters/Cast-Unaffiliated.md)
 - [랜덤 추가 로스터](characters/Random-Cast-Roster.md)
-- [시작 프리셋 — 선택형 난이도와 결핍 조합](characters/Starting-Presets.md)
 
-## 14. 데이터 장부
+## 13. 데이터 장부
 - [성씨·본관·항렬 데이터 계약](name-pools/hangnyeol-schema.md) — JSON 장부는 `name-pools/` 디렉터리 참조
 - [서울 지역 설정 데이터](regions/README.md) — 원본·출처 데이터는 `regions/` 디렉터리 참조
 - [세계 서사 총람](World-Narrative-Atlas.md)

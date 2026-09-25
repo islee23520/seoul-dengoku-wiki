@@ -9,15 +9,15 @@ Korean-prose canon for every named character of post-collapse Seoul: roster inde
 | Task | Location |
 |------|----------|
 | Roster of the original 423 | `Cast-Index.md` (also the publication ledger; `관계 수` counts sender edges only) |
-| The additional 578 (1004 total including core-only and unaffiliated cards) | `Cast-Index-S4.md` |
+| The additional 578 (1007 total including core-only and unaffiliated cards) | `Cast-Index-S4.md` |
 | One state's character cards | `Cast-State-01.md`–`Cast-State-16.md` (1694–1804 lines each) |
 | T0 core cast | `Core-Characters.md` (the T0 list is derived from its `## 인물 목록`; the 18 `주요` are locked in `../name-pools/values-cast.json`) |
 | Directed relation edges | `Cast-Relations.md` (11 types: 친족·양자·사제·지휘·계약·빚·맹세·경쟁·원한·보호체류·배신) |
 | People outside the 16 ledgers | `Cast-Corridors-Index.md` (bodies live on the corridor pages), `Cast-Unaffiliated.md` |
 | Add or fix a named character | `Cast-Profile-Contract.md` (field meanings) + `Cast-Registration-Template.md` (blank card + issue flow) |
-| Naming canon | `Hangnyeol-and-Bon-gwan.md`, `Heirs-Names-and-World-Ledger.md` (data pools in `../name-pools/`) |
+| Naming canon | `Hangnyeol-and-Bon-gwan.md` (data pools in `../name-pools/`) |
 | Unvetted 100 candidates | `Random-Cast-Roster.md` + `../name-pools/roster-100.json` |
-| Design mechanics | `Ambitions-and-Relations.md` (people act, not states), `Vassal-Dynasty-Politics.md`, `Starting-Presets.md`, `Characters-Factions-and-Professions.md` (생업 일곱) |
+| Design mechanics | GDD `rules/Rules-FactionsWarfare`; `Characters-Factions-and-Professions.md` (생업 일곱) |
 
 ## CONVENTIONS
 - Card grammar: `### 인물 <name>` — contract-cell bullets first (성명, 캐릭터 ID, 출신 공동체, 세대와 출생, …), then the political cells (성격·야망·공포·통치·관계·촉발), then prose sections `**생애.** **관직.** **무공.** **일화.** **가문.** **관계.** **야망.** **공포.** **개입.**`

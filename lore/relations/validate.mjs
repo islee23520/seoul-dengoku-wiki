@@ -81,9 +81,9 @@ export function validate(dataset) {
     fk(row.parentStateId, stateIds, row.id);
     fk(row.sourceAnchor, stateAnchors, row.id);
   }
-  if (sources.registry.totalPeople !== 1004 || sources.registry.persons.length !== 1004 ||
+  if (sources.registry.totalPeople !== 1007 || sources.registry.persons.length !== 1007 ||
       sources.registry.persons.some((p, i) => p.id !== `K${String(i + 1).padStart(3, "0")}`) ||
-      people.length !== sources.registry.persons.length + config.provisionalPeople.length) errors.push("people: frozen K001–K1004 mismatch");
+      people.length !== sources.registry.persons.length + config.provisionalPeople.length) errors.push("people: frozen K001–K1007 mismatch");
   const names = new Set();
   for (const person of people) {
     if (names.has(person.name)) errors.push(`people: duplicate name ${person.name}`);
@@ -128,5 +128,5 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const dataset = loadDataset();
   const errors = validate(dataset);
   if (errors.length) { console.error(errors.join("\n")); process.exitCode = 1; }
-  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1004 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
+  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1007 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
 }

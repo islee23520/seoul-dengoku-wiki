@@ -16,12 +16,10 @@
           "osm:node:11237829305"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "신도림동 주민 작업반",
           "환승 인계와 장비 수리 담당자"
@@ -42,8 +40,8 @@
           "kind": "access",
           "description": "수리 중인 짐받이가 통로를 차지하면 일반 통행과 응급 이동이 동시에 막힌다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신도림동 주민들은 다음 선택의 비용을 협의한다: 정비 구획을 통로 밖으로 옮긴다.",
-        "connections": "구로2동·구로5동과 경계를 맞대지만 신도림동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "신도림동 주민들은 다음 선택의 비용을 협의한다: 정비 구획을 통로 밖으로 옮긴다.",
+        "connections": "구로2동·구로5동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153051000-local-choice",
           "label": "정비 구획을 통로 밖으로 옮긴다",
@@ -78,7 +76,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신도림 선로. 신도림동 통행세 구간. 보유 S02.",
+                "contents": "신도림 선로. 신도림동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -117,7 +115,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신도림 선로. 신도림동 통행세 구간. 보유 S02.",
+                "contents": "신도림 선로. 신도림동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -156,7 +154,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "도림천 선로. 신도림동 통행세 구간. 보유 S02.",
+                "contents": "도림천 선로. 신도림동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -195,7 +193,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "신도림동주민센터 1층. 신도림동 배급 창구. 보유 S02.",
+                "contents": "신도림동주민센터 1층. 신도림동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -209,13 +207,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -232,12 +225,10 @@
           "osm:way:253002682"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "구로1동 주민 작업반",
           "배수 상태 확인 담당자"
@@ -258,8 +249,8 @@
           "kind": "water",
           "description": "물길이 막힌 상태에서 주변 통행을 늘리면 낮은 구간에 사람이 고립될 수 있다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로1동 주민들은 다음 선택의 비용을 협의한다: 유입구와 우회 보행 구간을 함께 점검한다.",
-        "connections": "구로2동·가리봉동·고척1동·개봉2동과 경계를 맞대지만 구로1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "구로1동 주민들은 다음 선택의 비용을 협의한다: 유입구와 우회 보행 구간을 함께 점검한다.",
+        "connections": "구로2동·가리봉동·고척1동·개봉2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153052000-local-choice",
           "label": "유입구와 우회 보행 구간을 함께 점검한다",
@@ -294,7 +285,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "구일 선로. 구로1동 통행세 구간. 보유 S02.",
+                "contents": "구일 선로. 구로1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -333,7 +324,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "구로1동주민센터 1층. 구로1동 배급 창구. 보유 S02.",
+                "contents": "구로1동주민센터 1층. 구로1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -439,13 +430,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -462,12 +448,10 @@
           "osm:way:250489344"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "구로2동 주민 작업반",
           "처치 지원 담당자"
@@ -488,8 +472,8 @@
           "kind": "supply",
           "description": "세척 장비가 멈추면 처치 수요가 남아도 안전하게 받을 수 있는 인원이 줄어든다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로2동 주민들은 다음 선택의 비용을 협의한다: 의무 세척 설비를 먼저 수리한다.",
-        "connections": "신도림동·구로1동·구로4동·구로5동·가리봉동·고척1동과 경계를 맞대지만 구로2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "구로2동 주민들은 다음 선택의 비용을 협의한다: 의무 세척 설비를 먼저 수리한다.",
+        "connections": "신도림동·구로1동·구로4동·구로5동·가리봉동·고척1동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153053000-local-choice",
           "label": "의무 세척 설비를 먼저 수리한다",
@@ -524,7 +508,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "구로4동주민센터 1층. 구로2동 배급 창구. 보유 S02.",
+                "contents": "구로4동주민센터 1층. 구로2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -549,7 +533,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "구로2동 주민센터 1층. 구로2동 배급 창구. 보유 S02.",
+                "contents": "구로2동 주민센터 1층. 구로2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -574,7 +558,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "구로2동 자치회관 1층. 구로2동 배급 창구. 보유 S02.",
+                "contents": "구로2동 자치회관 1층. 구로2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -634,13 +618,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -657,12 +636,10 @@
           "osm:node:6033314429"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "구로3동 주민 작업반",
           "부품 인계 담당자"
@@ -683,8 +660,8 @@
           "kind": "access",
           "description": "부품 하역이 길어지면 작업자가 현장에 늦게 도착해 다음 공정도 멈춘다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로3동 주민들은 다음 선택의 비용을 협의한다: 작업자 통과 시간을 먼저 확보한다.",
-        "connections": "구로4동·가리봉동과 경계를 맞대지만 구로3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "구로3동 주민들은 다음 선택의 비용을 협의한다: 작업자 통과 시간을 먼저 확보한다.",
+        "connections": "구로4동·가리봉동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153054000-local-choice",
           "label": "작업자 통과 시간을 먼저 확보한다",
@@ -719,7 +696,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "구로디지털단지 선로. 구로3동 통행세 구간. 보유 S02.",
+                "contents": "구로디지털단지 선로. 구로3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -758,7 +735,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "남구로 선로. 구로3동 통행세 구간. 보유 S02.",
+                "contents": "남구로 선로. 구로3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -797,7 +774,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "가리봉동주민센터 1층. 구로3동 배급 창구. 보유 S02.",
+                "contents": "가리봉동주민센터 1층. 구로3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -857,13 +834,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -880,12 +852,10 @@
           "osm:relation:11576503"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "구로4동 주민 작업반",
           "생활 물길 정리 담당자"
@@ -906,8 +876,8 @@
           "kind": "water",
           "description": "물가에 쌓인 잔해가 흐름을 막으면 낮은 주거 구간의 물이 빠지지 않는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로4동 주민들은 다음 선택의 비용을 협의한다: 주거지 배수와 이어진 잔해부터 치운다.",
-        "connections": "구로2동·구로3동·구로5동·가리봉동과 경계를 맞대지만 구로4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "구로4동 주민들은 다음 선택의 비용을 협의한다: 주거지 배수와 이어진 잔해부터 치운다.",
+        "connections": "구로2동·구로3동·구로5동·가리봉동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153055000-local-choice",
           "label": "주거지 배수와 이어진 잔해부터 치운다",
@@ -1080,13 +1050,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1103,8 +1068,8 @@
           "osm:node:5774282517"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
         "polity_contexts": [
           "S02"
@@ -1129,8 +1094,8 @@
           "kind": "governance",
           "description": "예약 기록 없이 먼저 도착한 작업반이 물자를 가져가면 다른 주문자가 빈손으로 돌아간다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로5동 주민들은 다음 선택의 비용을 협의한다: 예약 주문과 수령자를 함께 확인한다.",
-        "connections": "신도림동·구로2동·구로4동과 경계를 맞대지만 구로5동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "구로5동 주민들은 다음 선택의 비용을 협의한다: 예약 주문과 수령자를 함께 확인한다.",
+        "connections": "신도림동·구로2동·구로4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153056000-local-choice",
           "label": "예약 주문과 수령자를 함께 확인한다",
@@ -1165,7 +1130,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "구로 선로. 구로5동 통행세 구간. 보유 S02.",
+                "contents": "구로 선로. 구로5동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1229,7 +1194,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "구로5동 주민센터 1층. 구로5동 배급 창구. 보유 S02.",
+                "contents": "구로5동 주민센터 1층. 구로5동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1312,12 +1277,10 @@
           "osm:way:302746692"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "가리봉동 주민 작업반",
           "부품 수리 교육 담당자"
@@ -1338,8 +1301,8 @@
           "kind": "governance",
           "description": "교육을 약속하고 운반 노동만 시키면 새 수리 인력이 자라지 못한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 가리봉동 주민들은 다음 선택의 비용을 협의한다: 도제 실습 시간을 공개 예약한다.",
-        "connections": "구로1동·구로2동·구로3동·구로4동과 경계를 맞대지만 가리봉동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "가리봉동 주민들은 다음 선택의 비용을 협의한다: 도제 실습 시간을 공개 예약한다.",
+        "connections": "구로1동·구로2동·구로3동·구로4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153059500-local-choice",
           "label": "도제 실습 시간을 공개 예약한다",
@@ -1463,7 +1426,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "구림약국 1층. 가리봉동 잔존 골조. 보유 S02.",
+                "contents": "구림약국 1층. 가리봉동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -1477,13 +1440,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1500,12 +1458,10 @@
           "osm:way:249853998"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "고척1동 주민 작업반",
           "건축 부재 보관 담당자"
@@ -1526,8 +1482,8 @@
           "kind": "water",
           "description": "젖은 목재를 섞어 쌓으면 정상 부재까지 손상돼 생활 수리 재료가 줄어든다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 고척1동 주민들은 다음 선택의 비용을 협의한다: 젖은 부재의 건조 구획을 만든다.",
-        "connections": "구로1동·구로2동·고척2동·개봉1동·개봉2동과 경계를 맞대지만 고척1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "고척1동 주민들은 다음 선택의 비용을 협의한다: 젖은 부재의 건조 구획을 만든다.",
+        "connections": "구로1동·구로2동·고척2동·개봉1동·개봉2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153072000-local-choice",
           "label": "젖은 부재의 건조 구획을 만든다",
@@ -1562,7 +1518,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "고척1동주민센터 1층. 고척1동 배급 창구. 보유 S02.",
+                "contents": "고척1동주민센터 1층. 고척1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1714,13 +1670,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1737,12 +1688,10 @@
           "osm:way:250175479"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "고척2동 주민 작업반",
           "재사용 포장 담당자"
@@ -1763,8 +1712,8 @@
           "kind": "governance",
           "description": "반환 기록 없이 상자를 가져가면 다음 배급 출하에 쓸 포장이 없다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 고척2동 주민들은 다음 선택의 비용을 협의한다: 공용 상자 대여표를 만든다.",
-        "connections": "고척1동·개봉1동과 경계를 맞대지만 고척2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "고척2동 주민들은 다음 선택의 비용을 협의한다: 공용 상자 대여표를 만든다.",
+        "connections": "고척1동·개봉1동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153073000-local-choice",
           "label": "공용 상자 대여표를 만든다",
@@ -1799,7 +1748,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "고척2동 주민센터 1층. 고척2동 배급 창구. 보유 S02.",
+                "contents": "고척2동 주민센터 1층. 고척2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1951,13 +1900,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1974,12 +1918,10 @@
           "osm:node:355172810"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "개봉1동 주민 작업반",
           "야간 귀환 안내 담당자"
@@ -2000,8 +1942,8 @@
           "kind": "power",
           "description": "조명이 부족하면 늦게 돌아온 주민이 출입구 인계 기록에서 빠질 수 있다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 개봉1동 주민들은 다음 선택의 비용을 협의한다: 귀환 집중 시간의 조명을 확보한다.",
-        "connections": "고척1동·고척2동·개봉2동·오류1동과 경계를 맞대지만 개봉1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "개봉1동 주민들은 다음 선택의 비용을 협의한다: 귀환 집중 시간의 조명을 확보한다.",
+        "connections": "고척1동·고척2동·개봉2동·오류1동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153074000-local-choice",
           "label": "귀환 집중 시간의 조명을 확보한다",
@@ -2036,7 +1978,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "개봉 선로. 개봉1동 통행세 구간. 보유 S02.",
+                "contents": "개봉 선로. 개봉1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2075,7 +2017,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "개봉1동주민센터 1층. 개봉1동 배급 창구. 보유 S02.",
+                "contents": "개봉1동주민센터 1층. 개봉1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2181,13 +2123,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2204,12 +2141,10 @@
           "osm:way:802375053"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "개봉2동 주민 작업반",
           "배수 설비 정비 담당자"
@@ -2230,8 +2165,8 @@
           "kind": "water",
           "description": "장비 상태를 확인하지 않고 가동하면 배수 중단을 늦게 알아 주변 접근을 통제하지 못한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 개봉2동 주민들은 다음 선택의 비용을 협의한다: 배수 펌프를 먼저 점검한다.",
-        "connections": "구로1동·고척1동·개봉1동·개봉3동·오류1동·오류2동과 경계를 맞대지만 개봉2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "개봉2동 주민들은 다음 선택의 비용을 협의한다: 배수 펌프를 먼저 점검한다.",
+        "connections": "구로1동·고척1동·개봉1동·개봉3동·오류1동·오류2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153075000-local-choice",
           "label": "배수 펌프를 먼저 점검한다",
@@ -2316,7 +2251,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "개봉2동주민센터 1층. 개봉2동 배급 창구. 보유 S02.",
+                "contents": "개봉2동주민센터 1층. 개봉2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2341,7 +2276,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "개봉1빗물펌프장 1층. 개봉2동 잔존 골조. 보유 S02.",
+                "contents": "개봉1빗물펌프장 1층. 개봉2동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -2355,13 +2290,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2378,12 +2308,10 @@
           "osm:way:383310884"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "개봉3동 주민 작업반",
           "생활 통행 안내 담당자"
@@ -2404,8 +2332,8 @@
           "kind": "access",
           "description": "물가 통행의 상태를 확인하지 않으면 가벼운 짐 운반도 주민 대피와 충돌한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 개봉3동 주민들은 다음 선택의 비용을 협의한다: 취약 보행자의 인계 시간을 분리한다.",
-        "connections": "개봉2동·오류2동과 경계를 맞대지만 개봉3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "개봉3동 주민들은 다음 선택의 비용을 협의한다: 취약 보행자의 인계 시간을 분리한다.",
+        "connections": "개봉2동·오류2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153076000-local-choice",
           "label": "취약 보행자의 인계 시간을 분리한다",
@@ -2440,7 +2368,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "개봉3동주민센터 1층. 개봉3동 배급 창구. 보유 S02.",
+                "contents": "개봉3동주민센터 1층. 개봉3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2592,13 +2520,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2615,12 +2538,10 @@
           "osm:way:533763905"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "오류1동 주민 작업반",
           "부품 검사와 교환 담당자"
@@ -2641,8 +2562,8 @@
           "kind": "supply",
           "description": "작동 여부를 모르는 부품을 생활 설비에 넣으면 같은 장비를 반복 수리해야 한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 오류1동 주민들은 다음 선택의 비용을 협의한다: 생활 설비용 부품부터 검사한다.",
-        "connections": "개봉1동·개봉2동·오류2동·수궁동과 경계를 맞대지만 오류1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "오류1동 주민들은 다음 선택의 비용을 협의한다: 생활 설비용 부품부터 검사한다.",
+        "connections": "개봉1동·개봉2동·오류2동·수궁동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153077000-local-choice",
           "label": "생활 설비용 부품부터 검사한다",
@@ -2677,7 +2598,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "오류동 선로. 오류1동 통행세 구간. 보유 S02.",
+                "contents": "오류동 선로. 오류1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2716,7 +2637,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "오류1동주민센터 1층. 오류1동 배급 창구. 보유 S02.",
+                "contents": "오류1동주민센터 1층. 오류1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2794,20 +2715,15 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "오류시장 1층 허가 장터. 보유 S02.",
+                "contents": "오류시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2824,12 +2740,10 @@
           "osm:way:429848280"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "오류2동 주민 작업반",
           "보호구 수선 담당자"
@@ -2850,8 +2764,8 @@
           "kind": "supply",
           "description": "찢어진 보호구를 계속 쓰면 수리 인력이 현장에 나가지 못한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 오류2동 주민들은 다음 선택의 비용을 협의한다: 위험 작업용 보호구를 우선 수선한다.",
-        "connections": "개봉2동·개봉3동·오류1동·수궁동·항동과 경계를 맞대지만 오류2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "오류2동 주민들은 다음 선택의 비용을 협의한다: 위험 작업용 보호구를 우선 수선한다.",
+        "connections": "개봉2동·개봉3동·오류1동·수궁동·항동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153078000-local-choice",
           "label": "위험 작업용 보호구를 우선 수선한다",
@@ -2886,7 +2800,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "천왕 선로. 오류2동 통행세 구간. 보유 S02.",
+                "contents": "천왕 선로. 오류2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2925,7 +2839,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "오류2동 주민센터 1층. 오류2동 배급 창구. 보유 S02.",
+                "contents": "오류2동 주민센터 1층. 오류2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3010,13 +2924,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3033,12 +2942,10 @@
           "osm:way:249852625"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "수궁동 주민 작업반",
           "생활 안내 표지 담당자"
@@ -3059,8 +2966,8 @@
           "kind": "access",
           "description": "표지가 낯선 명칭만 쓰면 외부에서 온 주민이 엉뚱한 집결지로 향한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 수궁동 주민들은 다음 선택의 비용을 협의한다: 현장 주민과 안내 표지를 대조한다.",
-        "connections": "오류1동·오류2동·항동과 경계를 맞대지만 수궁동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "수궁동 주민들은 다음 선택의 비용을 협의한다: 현장 주민과 안내 표지를 대조한다.",
+        "connections": "오류1동·오류2동·항동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153079000-local-choice",
           "label": "현장 주민과 안내 표지를 대조한다",
@@ -3095,7 +3002,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "온수 선로. 수궁동 통행세 구간. 보유 S02.",
+                "contents": "온수 선로. 수궁동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3134,7 +3041,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "수궁동 주민센터 1층. 수궁동 배급 창구. 보유 S02.",
+                "contents": "수궁동 주민센터 1층. 수궁동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3240,13 +3147,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3263,12 +3165,10 @@
           "osm:way:754149192"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "항동 주민 작업반",
           "지상 운반 장비 보수 담당자"
@@ -3289,8 +3189,8 @@
           "kind": "access",
           "description": "소수 장비가 고장 나면 학교 마당을 거치는 생활 물자 운반이 멈춘다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 항동 주민들은 다음 선택의 비용을 협의한다: 공용 운반 장비부터 보수한다.",
-        "connections": "오류2동·수궁동과 경계를 맞대지만 항동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "항동 주민들은 다음 선택의 비용을 협의한다: 공용 운반 장비부터 보수한다.",
+        "connections": "오류2동·수궁동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1153080000-local-choice",
           "label": "공용 운반 장비부터 보수한다",
@@ -3456,13 +3356,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }

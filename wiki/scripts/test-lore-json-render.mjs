@@ -108,3 +108,10 @@ test('unmounted GDD proposals resolve to their JSON canon', () => {
   }
   assert.equal(renderLoreMarkdown(document, 'en'), '[proposal](https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/proposals/narrative-direction.json)\n')
 })
+
+test('hub links such as /gdd/ are not placed under the wiki base', async () => {
+  const { toWikiPath } = await import('../src/wikiRouting.ts')
+  assert.equal(toWikiPath('/gdd/rules/Rules-FactionsWarfare'), '/gdd/rules/Rules-FactionsWarfare')
+  assert.equal(toWikiPath('/play/'), '/play/')
+  assert.equal(toWikiPath('/world/Sixteen-States'), '/wiki/world/Sixteen-States')
+})

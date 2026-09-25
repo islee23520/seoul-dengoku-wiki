@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 
-import { EXPECTED_REFERENCE_EXCLUSIONS, referenceExclusionFailures } from './gate.mjs'
+import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, referenceExclusionFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
 const referenceDir = [
@@ -61,4 +61,18 @@ test('missing reference directory is reported as an exclusion failure', () => {
   const failures = referenceExclusionFailures(join(tmpdir(), 'gate-ref-missing-does-not-exist'))
   assert.equal(failures.length, 1)
   assert.match(failures[0], /RESEARCH\/canon-reference\/ is missing/)
+})
+
+test('reviewed coined phrases fail on each published text surface', () => {
+  for (const [source, text] of [
+    ['src/generated/world/Oral-Stories.json', '창세 구술의 첫 줄'],
+    ['public/person-details/person-0001.json', '창세의 첫 급수협약은 구술로만 안다'],
+    ['dist/assets/index.js', '창세 이야기'],
+  ]) {
+    assert.ok(coinedPhraseFailures(text, source).some((failure) => failure.includes(source)))
+  }
+})
+
+test('literal logbook lines and ordinary oral testimony are not coined phrases', () => {
+  assert.deepEqual(coinedPhraseFailures('운전일지 제42권 첫 줄에 사망일을 적었다. 증언은 구술로 전한다. 창세기전은 참고작이다. 창세', 'world/Century-Annals'), [])
 })

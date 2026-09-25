@@ -284,6 +284,13 @@ const regionAtlasSource = await readFile(await resolveOutside('TOOL/tools/region
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
 const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
+const sixteenStatesLore = JSON.parse(await readFile(resolve(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
+const relationTable = sixteenStatesLore.content.find((block) => block.anchor === 'table-gov-relations')
+if (!relationTable || relationTable.kind !== 'table') throw new Error('E_GOV_RELATIONS_TABLE_MISSING')
+const relationByStateName = new Map(relationTable.rows.map(([state, relation]) => {
+  if (!['복속', '보좌', '독립'].includes(relation.ko)) throw new Error(`E_GOV_RELATION:${state.ko}:${relation.ko}`)
+  return [state.ko, relation.ko]
+}))
 const stationControlLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/station-control-overrides.json'), 'utf8'))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
 proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
@@ -345,11 +352,12 @@ for (const edge of seoulGraph.edges) {
   stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
   stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
 }
-const capitalStationIds = new Set([...capitalNameByState.entries()].map(([stateId, name]) => {
+const capitalStateByStationId = new Map([...capitalNameByState.entries()].map(([stateId, name]) => {
   const stationId = stationIdByName.get(name)
   if (!stationId) throw new Error(`E_CAPITAL_STATION_NOT_FOUND:${stateId}:${name}`)
-  return stationId
+  return [stationId, stateId]
 }))
+const capitalStationIds = new Set(capitalStateByStationId.keys())
 const mapStations = seoulGraph.stations.map((station) => {
   const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [station.lon, station.lat])
   const [x, y] = mapPoint([east, north])
@@ -359,7 +367,8 @@ const mapStations = seoulGraph.stations.map((station) => {
   const content = region ? regionContentById.get(region.id) : null
   const baselinePolityIds = content?.polity_contexts ?? []
   const delta = stationControlOverrides.get(station.id) ?? null
-  const polityIds = delta?.polityIds ?? baselinePolityIds
+  const capitalStateId = capitalStateByStationId.get(station.id)
+  const polityIds = delta?.polityIds ?? (capitalStateId ? [capitalStateId] : baselinePolityIds)
   return {
     id: station.id,
     name: station.nameKo,
@@ -371,13 +380,13 @@ const mapStations = seoulGraph.stations.map((station) => {
     control: {
       source: delta ? 'control-delta' : region ? 'derived-from-surface' : 'outside-surface-atlas',
       deltaId: delta?.id ?? null,
-      status: delta?.status ?? (!region ? 'unknown' : polityIds.length === 1 ? 'held' : 'contested'),
+      status: delta?.status ?? (!region ? 'unknown' : polityIds.length === 0 ? 'vacant' : polityIds.length === 1 ? 'held' : 'contested'),
       polityIds,
       polityNames: polityIds.map((id) => stateNameById.get(id) ?? id),
       surfaceRegionId: region?.id ?? null,
       surfaceRegionName: region?.name ?? null,
       hierarchy: {
-        state: polityIds.map((id) => stateNameById.get(id) ?? id).join(' · ') || '미확인',
+        state: polityIds.map((id) => stateNameById.get(id) ?? id).join(' · ') || (region ? '무주지' : '미확인'),
         regionalAuthority: delta?.regionalAuthority ?? (region ? `${region.district_name} 권역 책임자` : '서울 영토 원장 밖 · 미확인'),
         stationManager: delta?.stationManager ?? `${station.nameKo.replace(/역$/u, '')}역장`,
       },
@@ -434,6 +443,7 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     origin: state.origin,
     government: state.government,
     power: state.power,
+    relation: relationByStateName.get(name) ?? null,
     ruler: state.ruler,
     cause: state.cause,
     labelX: label.x,
@@ -454,15 +464,24 @@ const anchorRules = {
   '제일수문(양평)': '경의중앙 지평 방면',
   '제이수문(춘천)': '경춘선',
   '제1분공방(천안·아산, 이씨)': '1호선 남단',
-  '제2분공방(시흥)': '',
+  '제2분공방(시흥)': '서해선 시흥 방면',
   '제1종착(인천)': '1호선 인천',
   '제2종착(파주)': '경의중앙 문산',
   '제1경비지구(하남)': '5호선 하남',
-  '제2경비지구(남양주)': '',
+  '제2경비지구(남양주)': '경춘선 남양주 방면',
   '제3경비지구(의정부·연천)': '1호선 북단·7호선 장암',
   '태욱중공업 성남사업장': '신분당/8호선',
   '태욱중공업 수원사업장': '수인분당',
   '영종지점(영종)': '공항철도'
+}
+// These are schematic continuations from the last mapped Seoul station, not surveyed track geometry.
+const vassalLineIds = {
+  '경기도(고양)': '4-3', '제일수문(양평)': 'K', '제이수문(춘천)': 'G',
+  '제1분공방(천안·아산, 이씨)': '2-1', '제2분공방(시흥)': 'SH',
+  '제1종착(인천)': '2-1', '제2종착(파주)': 'K',
+  '제1경비지구(하남)': '6-5', '제2경비지구(남양주)': 'G',
+  '제3경비지구(의정부·연천)': '2-1', '태욱중공업 성남사업장': 'S',
+  '태욱중공업 수원사업장': 'B', '영종지점(영종)': 'A',
 }
 
 const cityRules = {
@@ -496,9 +515,12 @@ const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
     suzerain: suzerainId,
     founded,
     duty,
-    anchor: anchorRules[rawName] || ''
+    anchor: anchorRules[rawName],
+    lineId: vassalLineIds[rawName],
+    coordinateStatus: 'TODO'
   }
 })
+if (vassals.length !== 13 || vassals.some((vassal) => !vassal.anchor || !officialLineData.lines[vassal.lineId])) throw new Error('E_VASSAL_LINE_ANCHOR')
 
 const openingTerritories = {
   schema: 'seoul-opening-territories.v1',
@@ -521,7 +543,7 @@ const openingTerritories = {
       district: region.district_name,
       path: geometryPath(region.map_geometry),
       polities,
-      status: polities.length === 1 ? 'held' : 'contested',
+      status: content.territory?.status ?? (polities.length === 0 ? 'vacant' : polities.length === 1 ? 'held' : 'contested'),
       openingState: normalizePublicNames(content.opening_state),
       summary: normalizePublicNames(content.summary),
       stationCount: region.station_ids.length,

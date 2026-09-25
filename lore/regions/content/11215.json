@@ -21,14 +21,12 @@
           "osm:relation:7885627"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md",
-          "docs/game-logic/Cast-State-04.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md",
+          "WIKI/lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "일감호 양수조",
           "한아름시장 저울 서기",
@@ -57,8 +55,8 @@
           "kind": "water",
           "description": "일감호를 밤새 퍼내면 호안이 무너지고 화양 독이 흙탕으로 바뀐다. 한아름 저울이 먼저 멈추고 대합실 순번이 시장 줄로 새 나온다."
         },
-        "opening_state": "임하준 실종과 중앙 계약 만료가 알려진 개막일, 주민센터는 일감호 양수 교대와 한아름시장 운영에 필요한 인력을 먼저 협의한다.",
-        "connections": "군자동·능동·자양1동·자양3동·자양4동·구의1동과 맞닿으나 공유 경계가 동일로 통행을 보장하지 않는다. 성동 쪽 경계로 뚝도 나사를 받으러 가는 줄은 별도 허가가 필요하다.",
+        "opening_state": "주민센터는 일감호 양수 교대와 한아름시장 운영에 필요한 인력을 먼저 협의한다.",
+        "connections": "군자동·능동·자양1동·자양3동·자양4동·구의1동과 맞닿으나 공유 경계가 동일로 통행을 보장하지 않는다.",
         "action": {
           "id": "gwangjin-hwayang-ilgam-daypump",
           "label": "일감호 주간 양수 두 줄을 열고 야간 양수를 당일 반려한다",
@@ -107,7 +105,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "건대입구 선로. 화양동 통행세 구간. 보유 S14, S04.",
+                "contents": "건대입구 선로. 화양동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -148,7 +146,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "건대입구 선로. 화양동 통행세 구간. 보유 S14, S04.",
+                "contents": "건대입구 선로. 화양동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -251,13 +249,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 100
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -279,14 +272,12 @@
           "osm:way:1043613041"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md",
-          "docs/game-logic/Cast-State-04.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md",
+          "WIKI/lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "아사달 양수조",
           "천우 선반 도제",
@@ -411,7 +402,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "군자동주민센터 1층. 군자동 배급 창구. 보유 S14, S04.",
+                "contents": "군자동주민센터 1층. 군자동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -496,13 +487,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 100
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -525,13 +511,11 @@
           "osm:node:414685386"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "샤인빌 골목 반장",
           "데이케어 마당 저수 서기",
@@ -609,7 +593,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중곡1동 주민센터 1층. 중곡1동 배급 창구. 보유 S14.",
+                "contents": "중곡1동 주민센터 1층. 중곡1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -634,7 +618,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "영화데이케어센터 1층. 중곡1동 잔존 골조. 보유 S14.",
+                "contents": "영화데이케어센터 1층. 중곡1동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -659,7 +643,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "상상퀵서비스 1층. 중곡1동 잔존 골조. 보유 S14.",
+                "contents": "상상퀵서비스 1층. 중곡1동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -691,13 +675,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -719,13 +698,11 @@
           "osm:node:8033318685"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "차고 배차 반장",
           "물지게 짐꾼",
@@ -754,7 +731,7 @@
           "kind": "access",
           "description": "물지게가 차고에서 한꺼번에 나가 용마사거리를 막으면 중곡 골목 상자가 능동으로 넘어가지 못한다. 운동장을 대기열로 열면 배급 줄이 학교 담까지 밀린다."
         },
-        "opening_state": "중앙 부품 계약이 만료된 개막일, 중곡2동 작업반은 구의교통차고지의 생활 수레 보관과 용마사거리 취사 일정의 우선순위를 정한다.",
+        "opening_state": "중곡2동 작업반은 구의교통차고지의 생활 수레 보관과 용마사거리 취사 일정의 우선순위를 정한다.",
         "connections": "중곡1동·중곡3동·중곡4동·능동과 맞닿는다. 용마사거리는 교차로이지 중랑 능선이나 구의 펌프실로 가는 허가증이 아니다. 공유 경계로 이웃 동 독을 합치지 않는다.",
         "action": {
           "id": "gwangjin-junggok2-busyard-cisterncart",
@@ -804,7 +781,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중곡2동 주민센터 1층. 중곡2동 배급 창구. 보유 S14.",
+                "contents": "중곡2동 주민센터 1층. 중곡2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -907,13 +884,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -936,13 +908,11 @@
           "osm:relation:16259781"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "중곡 대합실 서기",
           "장평교 통과 기록원",
@@ -971,8 +941,8 @@
           "kind": "governance",
           "description": "장평교에 보호 창구가 먼저 열리면 대합실 급수표가 통행세로 바뀐다. 병상 당번과 아파트 반장이 같은 날 갈라선다."
         },
-        "opening_state": "개막일 중곡3동 주민센터는 임하준 실종과 계약 만료 공지를 붙인 뒤 장평교 통과 기록과 주거 급수표를 별도로 관리하는 방안을 협의한다.",
-        "connections": "중곡1동·중곡2동·중곡4동과 맞닿고 동대문·중랑과도 경계를 나눈다. 장평교와 중랑천은 공유 수면·교량 객체이지 중랑 환승시로 가는 자동 통행이 아니다.",
+        "opening_state": "장평교 통과 기록과 주거 급수표를 별도로 관리하는 방안을 협의한다.",
+        "connections": "중곡1동·중곡2동·중곡4동과 맞닿고 동대문·중랑과도 경계를 나눈다. 장평교와 중랑천은 공유 수면·교량 객체이지 중랑 환적국로 가는 자동 통행이 아니다.",
         "action": {
           "id": "gwangjin-junggok3-jangpyeong-daybook",
           "label": "장평교를 주간 급수표 대조만 열고 중무장은 거절한다",
@@ -1021,7 +991,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "중곡 선로. 중곡3동 통행세 구간. 보유 S14.",
+                "contents": "중곡 선로. 중곡3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1060,7 +1030,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중곡3동 주민센터 1층. 중곡3동 배급 창구. 보유 S14.",
+                "contents": "중곡3동 주민센터 1층. 중곡3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1145,13 +1115,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1173,13 +1138,11 @@
           "osm:node:3708064718"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "능선 주간 척후",
           "대원 운동장 집결 안내",
@@ -1304,7 +1267,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "중곡4동 주민센터 1층. 중곡4동 배급 창구. 보유 S14.",
+                "contents": "중곡4동 주민센터 1층. 중곡4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1410,13 +1373,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1438,15 +1396,12 @@
           "osm:node:436832681"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md",
-          "docs/game-logic/Cast-State-04.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md",
+          "WIKI/lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [
-          "S14",
-          "S04"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "군자 대합실 서기",
           "환경연못 세정조",
@@ -1525,7 +1480,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "어린이대공원 선로. 능동 통행세 구간. 보유 S14, S04.",
+                "contents": "어린이대공원 선로. 능동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1564,7 +1519,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "군자 선로. 능동 통행세 구간. 보유 S14, S04.",
+                "contents": "군자 선로. 능동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1603,7 +1558,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "능동 주민센터 1층. 능동 배급 창구. 보유 S14, S04.",
+                "contents": "능동 주민센터 1층. 능동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1663,17 +1618,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 57
-            },
-            {
-              "polity": "S04",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1695,13 +1641,11 @@
           "osm:way:1046426574"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "천호대교 북단 척후",
           "광나루 통과 서기",
@@ -1730,11 +1674,11 @@
           "kind": "access",
           "description": "순찰열차가 북단에 임의 정차하면 통과표가 보호비 창구로 바뀐다. 낙타고개 횃불이 꺼지면 단지 옥상과 교량이 같은 밤에 열린다."
         },
-        "opening_state": "광장동의 창작 안내조는 중앙 계약이 만료된 개막일에 광나루역 인계와 천호대교 북단 점검의 시간을 먼저 맞추려 한다.",
-        "connections": "구의2동·구의3동과 맞닿고 한강 너머 송파·강동과 경계를 나눈다. 공유 수면과 교량 북단이 잠실·천호 생활권 간선이 아니며, 도하 허가는 관문국 일정표가 따로다.",
+        "opening_state": "광장동의 창작 안내조는 광나루역 인계와 천호대교 북단 점검의 시간을 먼저 맞추려 한다.",
+        "connections": "구의2동·구의3동과 맞닿고 한강 너머 송파·강동과 경계를 나눈다. 공유 수면과 교량 북단이 잠실·천호 생활권 간선이 아니며, 도하 허가는 아관사 일정표가 따로다.",
         "action": {
           "id": "gwangjin-gwangjang-cheonho-north-toll",
-          "label": "천호대교 북단을 관문국 주간 경화물 일정표로만 열고 중무장은 거절한다",
+          "label": "천호대교 북단을 아관사 주간 경화물 일정표로만 열고 중무장은 거절한다",
           "target_ref": "osm:node:999136481",
           "costs": [
             {
@@ -1760,7 +1704,7 @@
             },
             {
               "kind": "authority",
-              "effect": "교량 통행을 관문국 주간 일정표로 하루 고정한다."
+              "effect": "교량 통행을 아관사 주간 일정표로 하루 고정한다."
             }
           ],
           "tradeoff": "낙타고개 횃불 여섯 교대가 빠져 고개 한 구간이 꺼진다. 광나루 대합실 야간 봉쇄가 약해져 단지 양수조가 대기열에 밀린다."
@@ -1780,7 +1724,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "광나루 선로. 광장동 통행세 구간. 보유 S14.",
+                "contents": "광나루 선로. 광장동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1890,7 +1834,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "광장동 주민센터 1층. 광장동 배급 창구. 보유 S14.",
+                "contents": "광장동 주민센터 1층. 광장동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1904,13 +1848,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1932,13 +1871,11 @@
           "osm:way:1193259435"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "골목시장 저울 서기",
           "자양 물지게",
@@ -2042,7 +1979,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "자양1동 주민센터 1층. 자양1동 배급 창구. 보유 S14.",
+                "contents": "자양1동 주민센터 1층. 자양1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2120,20 +2057,15 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "자양골목시장 1층 허가 장터. 보유 S14.",
+                "contents": "자양골목시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2155,10 +2087,10 @@
           "osm:node:414683223"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md",
-          "docs/game-logic/Cast-State-04.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md",
+          "WIKI/lore/characters/Cast-State-04.md"
         ],
         "polity_contexts": [
           "S14"
@@ -2191,7 +2123,7 @@
           "kind": "access",
           "description": "북단 감시가 빠지면 순찰열차가 강변에 붙고 대합실 잔압칸이 보호 도장으로 덮인다. 강을 길로 삼으면 송파 쪽 청구가 생활 통과로 위장한다."
         },
-        "opening_state": "중앙 급수·부품 계약이 만료된 개막일, 자양2동 안내조와 양수조는 구의역 안내·단지 물 운반·북단 점검에 나눌 전력을 협의한다.",
+        "opening_state": "자양2동 안내조와 양수조는 구의역 안내·단지 물 운반·북단 점검에 나눌 전력을 협의한다.",
         "connections": "자양1동·자양3동·구의1동·구의3동과 맞닿고 한강 너머 송파와 경계를 나눈다. 공유 수면이 잠실 배급국 출입이 아니며, 구의역 창구를 구의1동 사거리 소유로 적지 않는다.",
         "action": {
           "id": "gwangjin-jayang2-gui-pressure-board",
@@ -2241,7 +2173,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "구의 선로. 자양2동 통행세 구간. 보유 S14, S04.",
+                "contents": "구의 선로. 자양2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2326,7 +2258,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "자양2동 주민센터 1층. 자양2동 배급 창구. 보유 S14, S04.",
+                "contents": "자양2동 주민센터 1층. 자양2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2415,13 +2347,11 @@
           "osm:way:174699401"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "우성 옥상 독지기",
           "아쿠아링 빗물조",
@@ -2500,7 +2430,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "자양3동 주민센터 1층. 자양3동 배급 창구. 보유 S14.",
+                "contents": "자양3동 주민센터 1층. 자양3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2652,13 +2582,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2681,15 +2606,12 @@
           "osm:node:597233255"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md",
-          "docs/game-logic/Cast-State-04.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md",
+          "WIKI/lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [
-          "S14",
-          "S04"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "커먼그라운드 봉인 서기",
           "조양시장 화기 당번",
@@ -2718,7 +2640,7 @@
           "kind": "fire",
           "description": "야시 화기가 컨테이너 지붕으로 옮기면 조양시장과 맛의거리가 같은 불에 탄다. 봉인을 풀면 부품 상자가 야시 저울로 새고 죽 솥이 빈다."
         },
-        "opening_state": "임하준 실종과 계약 만료가 알려진 개막일, 자양4동 상인과 돌봄조는 시장 운영 시간을 늘리기 전에 포장·취사·돌봄 재고를 나누려 한다.",
+        "opening_state": "자양4동 상인과 돌봄조는 시장 운영 시간을 늘리기 전에 포장·취사·돌봄 재고를 나누려 한다.",
         "connections": "화양동·자양3동과 맞닿고 성동·강남과도 경계를 나눈다. 성수사거리 이름과 청담대교 북단이 성수 공방·강남 생활권 출입을 허가하지 않는다. 건대 맛의거리는 경계를 걸친 골목이지 화양 대합실이 아니다.",
         "action": {
           "id": "gwangjin-jayang4-commonground-seal",
@@ -2768,7 +2690,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "자양 선로. 자양4동 통행세 구간. 보유 S14, S04.",
+                "contents": "자양 선로. 자양4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2832,7 +2754,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "자양4동주민센터 1층. 자양4동 배급 창구. 보유 S14, S04.",
+                "contents": "자양4동주민센터 1층. 자양4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2892,17 +2814,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 57
-            },
-            {
-              "polity": "S04",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2924,15 +2837,12 @@
           "osm:way:1198651834"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md",
-          "docs/game-logic/Cast-State-04.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md",
+          "WIKI/lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [
-          "S14",
-          "S04"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "구의1동 창구 서기",
           "새한아파트 양수조",
@@ -3007,7 +2917,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "구의1동 주민센터 1층. 구의1동 배급 창구. 보유 S14, S04.",
+                "contents": "구의1동 주민센터 1층. 구의1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3110,17 +3020,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 57
-            },
-            {
-              "polity": "S04",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -3142,13 +3043,11 @@
           "osm:way:175320279"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md"
         ],
-        "polity_contexts": [
-          "S14"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "아차산 주간 척후",
           "구의시장앞 게시 서기",
@@ -3227,7 +3126,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "아차산 선로. 구의2동 통행세 구간. 보유 S14.",
+                "contents": "아차산 선로. 구의2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3358,7 +3257,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "구의2동 주민센터 1층. 구의2동 배급 창구. 보유 S14.",
+                "contents": "구의2동 주민센터 1층. 구의2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3372,13 +3271,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3401,15 +3295,12 @@
           "osm:node:1019336044"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-14.md",
-          "docs/game-logic/Cast-State-04.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-14.md",
+          "WIKI/lore/characters/Cast-State-04.md"
         ],
-        "polity_contexts": [
-          "S14",
-          "S04"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "동서울 짐꾼",
           "터미널 통과 서기",
@@ -3468,7 +3359,7 @@
             },
             {
               "kind": "authority",
-              "effect": "터미널 순번을 관문국 주간 일정표로 하루 고정한다."
+              "effect": "터미널 순번을 아관사 주간 일정표로 하루 고정한다."
             }
           ],
           "tradeoff": "테크노마트 저울 여섯 교대가 빠져 호환 나사가 하루 안 골라진다. 올림픽대교 북단 조명이 약해져 현대2단지 옥상 양수가 오후 끊긴다."
@@ -3488,7 +3379,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "강변 선로. 구의3동 통행세 구간. 보유 S14, S04.",
+                "contents": "강변 선로. 구의3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3552,7 +3443,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "구의3동 주민센터 1층. 구의3동 배급 창구. 보유 S14, S04.",
+                "contents": "구의3동 주민센터 1층. 구의3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3612,17 +3503,8 @@
           }
         ],
         "territory": {
-          "status": "contested",
-          "holders": [
-            {
-              "polity": "S14",
-              "control": 57
-            },
-            {
-              "polity": "S04",
-              "control": 43
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }

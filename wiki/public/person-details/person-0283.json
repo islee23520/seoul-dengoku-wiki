@@ -58,20 +58,7 @@
     "Cast-State-11"
   ],
   "relations": {
-    "outgoing": [
-      {
-        "from": "복두",
-        "type": "계약",
-        "to": "권도하",
-        "basis": "권도하에게 북문 우회로를 넘기고"
-      },
-      {
-        "from": "복두",
-        "type": "계약",
-        "to": "두국",
-        "basis": "두국의 북문 거점 칠판에 실측을 옮긴다"
-      }
-    ],
+    "outgoing": [],
     "incoming": []
   }
 }

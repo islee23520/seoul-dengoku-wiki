@@ -26,19 +26,19 @@
   "locales": {
     "en": {
       "title": "The Stories",
-      "summary": "The name the generation of 2126 memorized as the first line of the creation story remained the Great Blackout.",
+      "summary": "After the blackout of October 14, 2026, the Yeongdeungpo waterworks log and Yeouido vault inventory recorded water and parts exchanges.",
       "tense": "past"
     },
     "ko": {
       "title": "이야기",
-      "summary": "2126년 세대가 창세의 첫 줄로 외우는 이름은 대정전으로 남는다.",
+      "summary": "2026년 10월 14일 대정전 뒤 영등포 정수센터의 운전일지와 여의도 금고층 목록에 물과 부품 거래가 남았다.",
       "tense": "past"
     }
   },
   "content": [
     {
       "kind": "heading",
-      "anchor": "이야기",
+      "anchor": "대정전과-급수-기록",
       "depth": 1,
       "text": {
         "en": "The Stories",
@@ -49,672 +49,383 @@
       "kind": "paragraph",
       "anchor": "이야기-p1-label",
       "text": {
-        "en": "창세 구술의 첫 줄",
-        "ko": "**가. 창세 구술의 첫 줄**"
+        "en": "A. The waterworks operations log",
+        "ko": "**가. 정수센터 운전일지**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "이야기-p1",
       "text": {
-        "en": [
-          {
-            "text": "The name the generation of 2126 memorized as the first line of the creation story remained the Great Blackout. The name the canon set was "
-          },
-          {
-            "text": "motive-power revocation",
-            "link": {
-              "domain": "overview",
-              "slug": "World-Unbinding"
-            }
-          },
-          {
-            "text": ", and the power cut of that night stood so close to a symptom left in the creation story that it was never read as the event's own name."
-          }
-        ],
-        "ko": [
-          {
-            "text": "2126년 세대는 창세 구술의 첫 줄에 대정전을 둔다. 정본은 이 사건을 "
-          },
-          {
-            "text": "기동권 이탈",
-            "link": {
-              "domain": "overview",
-              "slug": "World-Unbinding"
-            }
-          },
-          {
-            "text": "이라 불렀다. 구술은 그날 밤의 전력 차단을 사건의 증상으로 전한다."
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "이야기-p2-label",
-      "text": {
-        "en": "구술 제목과 연도",
-        "ko": "**나. 구술 제목과 연도**"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "이야기-p2",
-      "text": {
-        "en": [
-          {
-            "text": "No year of the common era was attached to the oral titles. The years of the real events from the revocation of 2026 to the opening of 2126 belonged to "
-          },
-          {
-            "text": "the Seoul Subway States Timeline 2026–2126",
-            "link": {
-              "domain": "chronology",
-              "slug": "Century-Annals"
-            }
-          },
-          {
-            "text": ", and the creation oral titles locked by the "
-          },
-          {
-            "text": "Scenario Timeline",
-            "link": {
-              "domain": "chronology",
-              "slug": "Scenario-Timeline"
-            }
-          },
-          {
-            "text": " were the First Water Compact, the military-household register dispute, the Sixteen Banners, the Merit Subjects' Winter, and the Second Water Compact. The night of the Great Blackout remained the front seat of that list in the oral record."
-          }
-        ],
-        "ko": [
-          {
-            "text": "구술 제목에는 서기를 붙이지 않는다. 이탈 2026부터 개막 2126까지 실제 사건의 연도는 "
-          },
-          {
-            "text": "서울전국 연표 2026–2126",
-            "link": {
-              "domain": "chronology",
-              "slug": "Century-Annals"
-            }
-          },
-          {
-            "text": "에 기재한다. "
-          },
-          {
-            "text": "시나리오 타임라인",
-            "link": {
-              "domain": "chronology",
-              "slug": "Scenario-Timeline"
-            }
-          },
-          {
-            "text": "이 확정한 창세 구술 제목은 첫 급수협약, 군사호적 논쟁, 열여섯 깃발, 공신의 겨울, 둘째 급수협약이다. 대정전의 밤은 이 목록의 앞에 놓인다."
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "이야기-p3-label",
-      "text": {
-        "en": "이 문서의 범위",
-        "ko": "**다. 이 문서의 범위**"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "이야기-p3",
-      "text": {
-        "en": [
-          {
-            "text": "This page called for no new plotlines. It only gathered the seats already written and the testimony, and the prohibition was the same as the timeline's: a name entered as a founder in the ledgers and a person seated at the opening were never to be read as one body. The way rice and water repeated that oral record at the windows was carried by "
-          },
-          {
-            "text": "Food Culture",
-            "link": {
-              "domain": "culture",
-              "slug": "Food-Culture"
-            }
-          },
-          {
-            "text": ", and the way the pulpit and the altar read the same night as a blessing by "
-          },
-          {
-            "text": "the Faith-and-Culture Schism",
-            "link": {
-              "domain": "culture",
-              "slug": "Faith-Culture-Schism"
-            }
-          },
-          {
-            "text": "."
-          }
-        ],
-        "ko": [
-          {
-            "text": "이 문서는 기존 기록에 적힌 자리와 증언만 모은다. 새 줄거리는 추가하지 않는다. 장부상 창건자와 개막 시점의 인물은 동일인으로 보지 않으며 이 금지는 연표와 같다. 창구에서 구술을 되풀이하는 방식은 "
-          },
-          {
-            "text": "식문화",
-            "link": {
-              "domain": "culture",
-              "slug": "Food-Culture"
-            }
-          },
-          {
-            "text": "에 기재되어 있다. 강단과 제대가 같은 밤을 축복으로 해석하는 방식은 "
-          },
-          {
-            "text": "신앙과 문화의 분열",
-            "link": {
-              "domain": "culture",
-              "slug": "Faith-Culture-Schism"
-            }
-          },
-          {
-            "text": "에 기재되어 있다."
-          }
-        ]
+        "en": "At about 21:47 on October 14, 2026, remote control failed at the Yeongdeungpo waterworks. Duty officer Han Jeonghun operated the valves manually and entered the failure in the first line of a paper operations log.",
+        "ko": "2026년 10월 14일 21:47경 영등포아리수정수센터의 원격 제어가 끊겼다. 당직자들은 밸브를 수동으로 조작하였다. 야간 당직 책임자 한정훈은 종이 운전일지 첫 줄에 원격 제어 두절을 기재하였다."
       }
     },
     {
       "kind": "heading",
-      "anchor": "대정전의-밤",
+      "anchor": "2026년-10월-14일-대정전",
       "depth": 2,
       "text": {
-        "en": "The Night of the Great Blackout",
-        "ko": "대정전의 밤"
+        "en": "The Blackout of October 14, 2026",
+        "ko": "2026년 10월 14일 대정전"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "대정전의-밤-p1-label",
       "text": {
-        "en": "스카다 붕괴",
-        "ko": "**가. 스카다 붕괴**"
+        "en": "A. Crisis room report",
+        "ko": "**가. 상황실 보고**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "대정전의-밤-p1",
       "text": {
-        "en": "The oral record called it the Great Blackout. The canon called it motive-power revocation, and when the fleet calls, GNSS, the mobile networks, and the licensing servers stopped waiting for one another, the grid SCADA belonged to the same mesh and the lights folded.",
-        "ko": "구술은 이 사건을 대정전이라 불렀다. 정본은 기동권 이탈이라 불렀다. 편대 호출, 지엔에스에스, 이동망, 인가 서버가 서로의 응답을 기다리다 멈추었다. 변전 스카다도 같은 망에 묶여 있어 전력이 끊겼다."
+        "en": "At about 21:47 on October 14, 2026, district indicators went dark in sequence at the Blue House crisis center. Night officer Yun Taesik tried to report to the National Security Office and Joint Chiefs, but the lines did not connect.",
+        "ko": "2026년 10월 14일 21:47경 청와대 국가위기관리센터의 전국 시군구 표시가 차례로 꺼졌다. 야간 당직관 윤태식은 국가안보실장과 합동참모본부 등에 보고를 시도했으나 회선이 연결되지 않았다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "대정전의-밤-p2-label",
       "text": {
-        "en": "비상권한 행사",
-        "ko": "**나. 비상권한 행사**"
+        "en": "B. Emergency order",
+        "ko": "**나. 긴급명령**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "대정전의-밤-p2",
       "text": {
-        "en": "The Yeouido treatment plant and the Ttukseom workshops saved their own jurisdictions first. The emergency officers of the Amsa guard and the records wire exercised emergency powers on the same night; once the joint command mesh broke, living-sphere emergency committees arose in every sphere, and when those powers were returned stayed the seed of a century of legitimacy disputes.",
-        "ko": "여의도 정수 책임자와 뚝섬 공방 책임자는 자기 관할의 설비만 먼저 복구하였다. 암사 경비와 기록 전신의 비상 책임자들도 같은 밤에 비상권한을 행사하였다. 공동 지휘망이 끊기자 생활권마다 비상위원회가 설치되었다. 이 권한의 반환 시점은 이후 한 세기 동안 법통 분쟁의 쟁점이 되었다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "대정전의-밤-p3-label",
-      "text": {
-        "en": "증언",
-        "ko": "**다. 증언**"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "대정전의-밤-p3",
-      "text": {
-        "en": "The sound of seals at the threshold of the Seoul Station stacks traced that hour back. An oral account that the treatment, rail, and records officers each seized emergency powers at the stacks' threshold remained with the Republic of Korea Government, and at the Magok emergency committee a scribe who had written the times of the powers' exercise and return to the minute left the diary of the creation.",
-        "ko": "서울역 서고 문턱의 도장 소리가 그 시각의 증언으로 남았다. 대한민국정부에는 정수·철도·기록 책임자가 각자 비상권한을 행사하는 장면을 서고 문턱에서 보았다는 구술이 전한다. 마곡 비상위원회의 서기는 권한 행사와 반환 시각을 분 단위로 적은 창세 일지를 남겼다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "대정전의-밤-p4",
-      "text": {
-        "en": "On the Sinnae platform a draft advertisement remained. It was the memory that on the night the joint command mesh broke, copy claiming the developmental legitimacy of the great powers entered the loudspeaker script chest; no witness of the 2126 generation lived that night, so the diary, the sound of the seals, and the draft advertisement were read only as copies.",
-        "ko": "신내 승강장에는 광고 초안이 남았다. 공동 지휘망이 끊긴 밤에 강국 개발 정통성 문구가 확성기 대본함에 들어왔다는 기억이다. 2126년 세대의 증인은 그 밤을 겪지 않았다. 이들은 일지, 도장 소리, 광고 초안을 사본으로 읽는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "대정전의-밤-p5-label",
-      "text": {
-        "en": "원인에 관한 소문",
-        "ko": "**라. 원인에 관한 소문**"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "대정전의-밤-p5",
-      "text": {
-        "en": "Talk that set nuclear war, climate collapse, or plague as the first cause could remain a week's rumor. What the creation oral record raised to its first line was the night the lights folded.",
-        "ko": "핵전쟁, 기후붕괴, 역병을 1차 원인으로 드는 말은 주간의 소문으로 돌고 있다. 창세 구술은 전력이 끊긴 밤을 첫 줄에 둔다."
+        "en": "On October 15, 2026, the president wrote and signed an emergency order under Article 76 of the constitution. The prime minister countersigned it. Designated facility emergency officers received on-site authority during the communications outage.",
+        "ko": "2026년 10월 15일 대통령은 헌법 제76조에 따른 긴급명령을 작성하고 서명하였다. 국무총리가 부서하였다. 통신 두절 기간에는 지정 시설별 비상대비업무담당자가 현장 권한을 행사하도록 하였다."
       }
     },
     {
       "kind": "heading",
-      "anchor": "첫-급수협약",
+      "anchor": "2026년-물과-부품-거래",
       "depth": 2,
       "text": {
-        "en": "The First Water Compact",
-        "ko": "첫 급수협약"
+        "en": "The 2026 Water and Parts Exchange",
+        "ko": "2026년 물과 부품 거래"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "첫-급수협약-p1-label",
       "text": {
-        "en": "임시 교환",
-        "ko": "**가. 임시 교환**"
+        "en": "A. November 6 exchange",
+        "ko": "**가. 11월 6일 거래**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "첫-급수협약-p1",
       "text": {
-        "en": "The surviving treatment plants and the pump parts lay scattered. When the Yeouido treatment officer and the Ttukseom pump overseer struck a provisional compact trading water for parts, the hands that read it as public rights and the hands that read it as a protection contract divided on the spot, and the seed was planted from which the Water Compact, the Sermon Registry State, and the Escort Protection State grew into water great powers.",
-        "ko": "남은 정수 설비와 펌프 부품이 여러 곳으로 흩어졌다. 여의도 정수 책임자와 뚝섬 펌프 총괄은 물과 부품을 교환하는 임시 협약을 맺었다. 협약을 공공권리로 해석한 쪽과 보호계약으로 해석한 쪽이 그 자리에서 나뉘었다. 수문국, 명부교회, 동방사는 이 분기에서 출발하여 급수 강국으로 성장하였다."
+        "en": "On November 6, 2026, two Yeouido vault representatives visited the Yeongdeungpo waterworks. Han Jeonghun agreed to open the valve toward Yeouido from 06:00 to 12:00 daily in exchange for two emergency generator parts.",
+        "ko": "2026년 11월 6일 여의도 금고층 대표 2명이 영등포아리수정수센터를 찾아갔다. 한정훈은 비상발전기 부품 2개를 받는 대가로 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 개방하기로 하였다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "첫-급수협약-p2-label",
       "text": {
-        "en": "증언",
-        "ko": "**나. 증언**"
+        "en": "B. Two ledgers",
+        "ko": "**나. 두 장부**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "첫-급수협약-p2",
       "text": {
-        "en": "The scales of the Noryangjin berth testified to that afternoon. The scene of water and parts loading onto different spheres remained in the oral record as market testimony, and the anecdote that the last witness of the Yeongdeungpo-side exchange list heard a fire alarm ring down the vault corridor just before the original was sealed hung on the same title.",
-        "ko": "노량진 선석의 저울이 그날 오후의 증언으로 남았다. 물과 부품이 서로 다른 권역으로 실려 나간 장면이 시장 증언으로 전한다. 같은 제목에는 영등포 쪽 교환 목록의 마지막 증인이 원본을 봉인하기 직전 금고 복도에 화재 경보가 울렸다는 일화가 붙어 있다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "첫-급수협약-p3-label",
-      "text": {
-        "en": "이후의 관행",
-        "ko": "**다. 이후의 관행**"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "첫-급수협약-p3",
-      "text": {
-        "en": [
-          {
-            "text": "No new dialogue was made. The berth and the vault corridor were already written as the testimony seats of that compact, and the window habit that water came first and the pot followed grew out of this oral record. The saying that water without the Arisu mark was guest water, unfit for rites, was locked by "
-          },
-          {
-            "text": "the Faith-and-Culture Schism",
-            "link": {
-              "domain": "culture",
-              "slug": "Faith-Culture-Schism"
-            }
-          },
-          {
-            "text": ", and the consequence — that the ration pot waited for that mark — was carried by "
-          },
-          {
-            "text": "Food Culture",
-            "link": {
-              "domain": "culture",
-              "slug": "Food-Culture"
-            }
-          },
-          {
-            "text": "."
-          }
-        ],
-        "ko": [
-          {
-            "text": "이 문서는 새 대사를 만들지 않는다. 선석과 금고 복도는 협약의 증언 자리로 기록되어 있다. 물이 먼저 오고 솥이 뒤따른다는 창구의 관행은 이 구술에서 생겼다. 아리수 표지가 없는 물을 손님물이라 하여 제사에 쓰지 않는 규범은 "
-          },
-          {
-            "text": "신앙과 문화의 분열",
-            "link": {
-              "domain": "culture",
-              "slug": "Faith-Culture-Schism"
-            }
-          },
-          {
-            "text": "에 기재되어 있다. 배급 솥이 그 표지를 확인한 뒤에 물을 받는 절차는 "
-          },
-          {
-            "text": "식문화",
-            "link": {
-              "domain": "culture",
-              "slug": "Food-Culture"
-            }
-          },
-          {
-            "text": "에 기재되어 있다."
-          }
-        ]
+        "en": "Han Jeonghun entered the exchange in the operations log. The Yeouido vault also entered the parts and water exchange in its inventory under the same date.",
+        "ko": "한정훈은 거래 내용을 운전일지에 적었다. 여의도 금고층에서도 같은 날짜로 부품과 물의 거래를 목록에 기재하였다."
       }
     },
     {
       "kind": "heading",
-      "anchor": "둘째-급수협약",
+      "anchor": "2053년-영등포-급수-협약",
       "depth": 2,
       "text": {
-        "en": "The Second Water Compact",
-        "ko": "둘째 급수협약"
+        "en": "The 2053 Yeongdeungpo Water Agreement",
+        "ko": "2053년 영등포 급수 협약"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "둘째-급수협약-p1-label",
       "text": {
-        "en": "최저선 규정",
-        "ko": "**가. 최저선 규정**"
+        "en": "A. March 14 signatures",
+        "ko": "**가. 3월 14일 서명**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "둘째-급수협약-p1",
       "text": {
-        "en": "The provisional pumps and train parts ran out their lives. The officers of Yeouido, Ttukseom, Amsa, and Jegi-dong at that time wrote the minimum line, the standards, the emergency convoys, and the termination conditions again, the Ttukseom overseer stood surety for central water and parts, and that wording remained in the ledgers up to the third contract of the time. The minimum water right was the lesser states' support, and the protection clause was read as the grounds for the Amsa elders' intervention.",
-        "ko": "임시 펌프와 열차 부품이 수명을 다하였다. 여의도, 뚝섬, 암사, 제기동의 당시 책임자들이 최저선, 규격, 비상 호송, 종료 조건을 다시 정하였다. 뚝섬 총괄이 중앙 급수·부품의 보증인이 되었다. 이 문구는 세 번째 계약까지 장부에 남았다. 최소 급수권은 약국과 소국의 지지 기반이다. 보호조항은 암사 선대의 개입 근거로 해석된다."
+        "en": "On March 14, 2053, waterworks head Han Seokjin and six water-receiving family representatives met seven Yeouido family representatives. Fourteen representatives signed an agreement transferring management of eleven water facilities near Yeouido and Yeongdeungpo Station to the Yeouido families.",
+        "ko": "2053년 3월 14일 영등포 정수센터 책임자 한석진과 물을 받는 가문 대표 6명이 여의도 금고층에서 여의도 가문 대표 7명을 만났다. 양측 대표 14명이 협약서에 서명하였다. 협약에 따라 여의도 일대와 영등포역 주변 급수 설비 11곳의 관리권이 여의도 가문들에 넘어갔다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "둘째-급수협약-p2-label",
       "text": {
-        "en": "증언",
-        "ko": "**나. 증언**"
+        "en": "B. Move to Yangpyeong Station",
+        "ko": "**나. 양평역 이전**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "둘째-급수협약-p2",
       "text": {
-        "en": "Testimony that boxes were opened at the Yongsan transshipment shed lay layered. It was the seat where the spent pumps and train parts were checked by hand; at the Changdong public scales the spent wheels and brake boxes were checked together with the standards seal, and an oral account also held of escorting a sealed chest inscribed with the minimum-line clause back and forth between Ttukseom and Sinjeong.",
-        "ko": "용산 환적창에는 수명을 다한 펌프와 열차 부품의 상자를 열어 확인하였다는 증언이 있다. 창동 공개 저울에서는 수명을 다한 차륜과 제동 상자를 규격 도장과 함께 확인하였다. 뚝섬과 신정 사이를 오가며 최저선 조항을 적은 봉인함을 지켰다는 구술도 전한다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "둘째-급수협약-p3",
-      "text": {
-        "en": "On the Jeongdong General Labor Union side a witness of the signature remained. The hand that would decide the Second Water Compact's force still kept the hidden seals of the original audit sheet under seal, and the choice of reviving the seals with heat or washing them away with water stayed as the story's branch, never carried into a new plotline of the creation.",
-        "ko": "정동노동총연맹에는 서명 증인이 남아 있다. 둘째 급수협약의 효력을 판단할 권한자는 원본 감사표의 숨은 압인을 봉인한 채로 두고 있다. 압인을 열로 되살릴지 물로 씻을지는 이야기의 분기로 남아 있다. 이 분기는 창세의 새 줄거리로 옮기지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "둘째-급수협약-p4-label",
-      "text": {
-        "en": "개막일의 만료",
-        "ko": "**다. 개막일의 만료**"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "둘째-급수협약-p4",
-      "text": {
-        "en": "The third water contract of opening day opened together with its expiry. The central water-and-parts contract handed down from the creation oral record ended at the same moment, and the cell the oral record left blank by writing no termination condition shook the price of water and the medical convoys a century later.",
-        "ko": "세 번째 급수계약은 개막일에 만료된다. 창세 구술에서 이어진 중앙 급수·부품 계약도 같은 날 끝난다. 구술은 종료 조건을 적지 않고 비워 두었다. 이 빈칸은 한 세기 뒤 물 가격과 의료 호송의 쟁점이 된다."
+        "en": "From March 20, 2053, the Yeongdeungpo waterworks staff moved their base to Yangpyeong Station underground. Forty-five volumes of Han Jeonghun’s logs moved there. The waterworks continued operating.",
+        "ko": "2053년 3월 20일부터 영등포 정수센터 측은 거점을 양평역 지하로 옮겼다. 한정훈의 41권을 포함한 정수센터 운전일지 45권도 양평역 지하 서고로 옮겼다. 정수센터 설비는 계속 운전되었다."
       }
     },
     {
       "kind": "heading",
-      "anchor": "같은-창세의-다른-제목",
+      "anchor": "2120년-이후의-명부와-계약",
       "depth": 2,
       "text": {
-        "en": "Other Titles of the Same Creation",
-        "ko": "같은 창세의 다른 제목"
+        "en": "Registers and Contracts after 2120",
+        "ko": "2120년 이후의 명부와 계약"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p1-label",
       "text": {
-        "en": "분열의 구술",
-        "ko": "**가. 분열의 구술**"
+        "en": "A. Waterway contract",
+        "ko": "**가. 물길 계약**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p1",
       "text": {
-        "en": "The titles the timeline locked without year counts did not end at three. No new oral record was added; the titles already in existence were set side by side.",
-        "ko": "연표가 햇수 없이 확정한 제목은 셋 외에도 있다. 이 절은 새 구술을 보태지 않고 기존 제목만 나란히 둔다."
+        "en": "In June 2097, Sumunguk contracted with waterway workers in Yangpyeong and Chuncheon. They were entered in the Yangpyeong Station ration register in return for managing the waterways.",
+        "ko": "2097년 6월 수문국은 양평과 춘천의 물길 관리 인원들과 계약을 체결하였다. 두 곳은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 등재되었다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p2-label",
       "text": {
-        "en": "군사호적 논쟁",
-        "ko": "**나. 군사호적 논쟁**"
+        "en": "B. Reconstruction worker register",
+        "ko": "**나. 복구복무자 등록**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p2",
       "text": {
-        "en": "The military-household register dispute was an oral record split over household-unit service registration. Before the outer raids and the shortage of restoration hands, the Amsa military faction demanded it and the Bukhansan Bogukmun refugee delegates refused; where voluntary service and citizenship bound together, the league of the Jegi-dong and Bogukmun elders remained, and where forced registration remained, the Amsa officer network grew. The register citizens and the escort protection of that time were copies of this dispute.",
-        "ko": "군사호적 논쟁은 가족 단위 복무등록을 둘러싼 구술이다. 외곽 약탈과 복구 인력 부족을 이유로 암사 군사파가 등록을 요구하였다. 북한산보국문 난민대표는 이를 거부하였다. 자발 복무와 시민권을 묶으면 제기동·보국문 선대의 연대가 유지된다. 강제등록이 유지되면 암사 장교망이 확대된다. 당시의 명부 시민과 호위 보호 제도는 이 분쟁에서 나왔다."
+        "en": "In winter 2120, Dongbangsa demanded registration of reconstruction workers from Gyugyeokmaeng in exchange for pump parts. Gang Minseo placed workers who refused in the civic register.",
+        "ko": "2120년 겨울 동방사는 펌프 부품 공급의 대가로 규격맹에 복구복무자 등록을 요구하였다. 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p3-label",
       "text": {
-        "en": "열여섯 깃발",
-        "ko": "**다. 열여섯 깃발**"
+        "en": "C. Refugee register",
+        "ko": "**다. 피난민 명부**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p3",
       "text": {
-        "en": [
-          {
-            "text": "The Sixteen Banners was the declaration that the central emergency committee dissolved. The sixteen spheres raised their own charters and offices and became five great powers and eleven lesser states; the states that received accreditation gained legitimacy but owed the Records Bureau. Testimony remained at the seat of that declaration that the accredited Gate charter of Seoul Station and the unaccredited passage customs were folded separately into a chest, and the disposition of "
-          },
-          {
-            "text": "the Sixteen States of Seoul",
-            "link": {
-              "domain": "factions",
-              "slug": "Sixteen-States"
-            }
-          },
-          {
-            "text": " at the opening of 2126 was read as the descendant of those banners, fixed by no year's photograph."
-          }
-        ],
-        "ko": [
-          {
-            "text": "열여섯 깃발은 중앙 비상위원회의 해산 선언이다. 열여섯 권역이 각자 헌장과 직위를 내걸었다. 이로써 강국 여섯, 약국 넷, 소국 여섯이 생겼다. 일곱 질서 계통 국가는 기록청에 계승과 조약을 등록하였으나, 정부는 그 동의 없이 어느 나라도 묶지 못한다. 서울역 인준을 받은 관문 헌장과 인준을 받지 않은 통행 관습을 따로 접어 함에 넣었다는 증언이 이 선언의 자리로 남았다. 개막 2126의 "
-          },
-          {
-            "text": "서울 십육국",
-            "link": {
-              "domain": "factions",
-              "slug": "Sixteen-States"
-            }
-          },
-          {
-            "text": " 배치는 이 깃발들에서 이어진다. 개막 배치를 선언 당시의 배치로 간주하지 않는다."
-          }
-        ]
+        "en": "In 2123, a refugee procession from Bukhansan Bogukmun descended toward Anguk. Before its arrival, Baek On moved empty spaces in the refugee register to the citizenship column.",
+        "ko": "2123년 북한산 보국문 방면 피난 행렬이 안국으로 내려왔다. 백온은 행렬이 도착하기 전에 피난민 명부의 빈칸을 시민권 줄로 옮겼다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p4-label",
       "text": {
-        "en": "공신의 겨울",
-        "ko": "**라. 공신의 겨울**"
+        "en": "D. Three contracts",
+        "ko": "**라. 세 계약서**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p4",
       "text": {
-        "en": "The Merit Subjects' Winter was an oral record of demands made all at once. When the founding merit subjects held out offices, ration rights, and hereditary rights together, shaving the rewards grew coups and lavishing them scattered the titles, so some states became condominiums and some became court-guard states. The memory that only the relief boxes stayed empty clung to that winter's transcription in the oral record.",
-        "ko": "공신의 겨울은 창건 공신들이 관직, 배급권, 세습권을 한꺼번에 요구한 구술이다. 보상을 줄인 나라에서는 쿠데타가 일어났다. 보상을 넓게 나눈 나라에서는 관작이 흩어졌다. 일부 나라는 공동통치로 바뀌었고 일부 나라는 친위국으로 바뀌었다. 구호 상자만 빈 칸으로 남았다는 기억이 그 겨울의 필사본에 붙어 전한다."
+        "en": "In 2123, Sumunguk, Gyugyeokmaeng, and Hwanjeokguk sent separate water, parts, and transit contracts to the minor states in the same week. Jeong Yura copied their end conditions into one document.",
+        "ko": "2123년 수문국, 규격맹, 환적국이 같은 주에 약국들에 서로 다른 급수·부품·통행 계약을 보냈다. 정유라는 세 계약서의 종료조건만 한 문서로 옮겼다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p5-label",
       "text": {
-        "en": "공백의 세기",
-        "ko": "**마. 공백의 세기**"
+        "en": "E. State ledger",
+        "ko": "**마. 강약 장부**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p5",
       "text": {
-        "en": [
-          {
-            "text": "In the empty century no title was written anew. The living-sphere banners and the water ledgers ran on, but the faces of the founding merit subjects and the everyday life of 2026 became oral record, copies, and myth, and the reason the stations, the sluices, and the depots formed the skeleton that held those copies was written by "
-          },
-          {
-            "text": "the Structures Compendium",
-            "link": {
-              "domain": "structures",
-              "slug": "Structures"
-            }
-          },
-          {
-            "text": "."
-          }
-        ],
-        "ko": [
-          {
-            "text": "공백의 세기에는 새 제목을 붙이지 않는다. 생활권 깃발과 급수 장부는 계속 쓰이고 있다. 창건 공신의 얼굴과 2026년의 일상은 구술, 사본, 신화로 전한다. 역, 수문, 차량기지가 이 사본을 보관하는 뼈대가 된 경위는 "
-          },
-          {
-            "text": "구조물 총람",
-            "link": {
-              "domain": "structures",
-              "slug": "Structures"
-            }
-          },
-          {
-            "text": "에 기재되어 있다."
-          }
-        ]
+        "en": "In November 2125, the records office compiled a power ranking of sixteen states.",
+        "ko": "2125년 11월 기록청은 16개 국가의 강약 장부를 작성하였다."
       }
     },
     {
-      "kind": "table",
-      "anchor": "같은-창세의-다른-제목-table6",
-      "columns": [
+      "kind": "heading",
+      "anchor": "출처",
+      "depth": 2,
+      "text": {
+        "en": "Sources",
+        "ko": "출처"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "출처-list1",
+      "items": [
         {
-          "en": "Oral title",
-          "ko": "구술 제목"
+          "ko": [
+            {
+              "text": "서울전국 연표 2026–2126",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Seoul Subway States Timeline 2026–2126",
+              "link": {
+                "domain": "chronology",
+                "slug": "Century-Annals"
+              }
+            }
+          ]
         },
         {
-          "en": "Seats already written",
-          "ko": "이미 적힌 자리"
+          "ko": [
+            {
+              "text": "시나리오 타임라인",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Scenario Timeline",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
+            }
+          ]
         },
         {
-          "en": "The debt remaining at the opening",
-          "ko": "개막에 남는 빚"
+          "ko": [
+            {
+              "text": "신앙과 문화의 분열",
+              "link": {
+                "domain": "culture",
+                "slug": "Faith-Culture-Schism"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "The Faith-and-Culture Schism",
+              "link": {
+                "domain": "culture",
+                "slug": "Faith-Culture-Schism"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "식문화",
+              "link": {
+                "domain": "culture",
+                "slug": "Food-Culture"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Food Culture",
+              "link": {
+                "domain": "culture",
+                "slug": "Food-Culture"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "서울 십육국",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "The Sixteen States of Seoul",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "기동권 이탈",
+              "link": {
+                "domain": "overview",
+                "slug": "World-Unbinding"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Motive-Power Revocation",
+              "link": {
+                "domain": "overview",
+                "slug": "World-Unbinding"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "구조물 총람",
+              "link": {
+                "domain": "structures",
+                "slug": "Structures"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "The Structures Compendium",
+              "link": {
+                "domain": "structures",
+                "slug": "Structures"
+              }
+            }
+          ]
         }
-      ],
-      "rows": [
-        [
-          {
-            "en": "The night of the Great Blackout",
-            "ko": "대정전의 밤"
-          },
-          {
-            "en": "Seoul Station stacks, Magok emergency committee, Sinnae platform",
-            "ko": "서울역 서고, 마곡 비상위원회, 신내 승강장"
-          },
-          {
-            "en": "Unreturned emergency powers, copies of the diary",
-            "ko": "미반환 비상권한, 일지의 사본"
-          }
-        ],
-        [
-          {
-            "en": "The First Water Compact",
-            "ko": "첫 급수협약"
-          },
-          {
-            "en": "Yeouido and Ttukseom, the Noryangjin berth, the Yeongdeungpo exchange list",
-            "ko": "여의도·뚝섬, 노량진 선석, 영등포 교환 목록"
-          },
-          {
-            "en": "The split between public rights and the protection contract",
-            "ko": "공공권리와 보호계약의 갈라짐"
-          }
-        ],
-        [
-          {
-            "en": "The military-household register dispute",
-            "ko": "군사호적 논쟁"
-          },
-          {
-            "en": "Amsa, Bukhansan Bogukmun, Jegi-dong",
-            "ko": "암사, 북한산보국문, 제기동"
-          },
-          {
-            "en": "Register citizens and escort protection",
-            "ko": "명부 시민과 호위 보호"
-          }
-        ],
-        [
-          {
-            "en": "The Sixteen Banners",
-            "ko": "열여섯 깃발"
-          },
-          {
-            "en": "Seoul Station accreditation, the sixteen spheres",
-            "ko": "서울역 인준, 열여섯 권역"
-          },
-          {
-            "en": "The Records Bureau's debt, the descendants of the sixteen states",
-            "ko": "기록청의 빚, 십육국의 후손"
-          }
-        ],
-        [
-          {
-            "en": "The Merit Subjects' Winter",
-            "ko": "공신의 겨울"
-          },
-          {
-            "en": "Demands for office, rations, and inheritance",
-            "ko": "관직·배급·세습의 요구"
-          },
-          {
-            "en": "The empty cells and the hereditary cells",
-            "ko": "빈 칸과 세습 칸"
-          }
-        ],
-        [
-          {
-            "en": "The Second Water Compact",
-            "ko": "둘째 급수협약"
-          },
-          {
-            "en": "Yeouido, Ttukseom, Amsa, Jegi-dong; the Yongsan shed, the Changdong scales",
-            "ko": "여의도·뚝섬·암사·제기동, 용산 창, 창동 저울"
-          },
-          {
-            "en": "The minimum line and termination conditions, the third contract",
-            "ko": "최저선과 종료 조건, 세 번째 계약"
-          }
-        ]
       ]
     }
   ],

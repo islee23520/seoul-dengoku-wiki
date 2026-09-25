@@ -16,12 +16,10 @@
           "osm:way:228171769"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "서초1동 주민 작업반",
           "생활 문서 교육 담당자"
@@ -42,8 +40,8 @@
           "kind": "governance",
           "description": "문서를 읽는 사람에게만 확인을 맡기면 다른 가구의 의사가 기록에서 빠진다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 서초1동 주민들은 다음 선택의 비용을 협의한다: 작업 교대에 맞춘 이동 수업을 연다.",
-        "connections": "서초2동·서초3동·서초4동·양재1동과 경계를 맞대지만 서초1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "서초1동 주민들은 다음 선택의 비용을 협의한다: 작업 교대에 맞춘 이동 수업을 연다.",
+        "connections": "서초2동·서초3동·서초4동·양재1동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165051000-local-choice",
           "label": "작업 교대에 맞춘 이동 수업을 연다",
@@ -78,7 +76,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "남부터미널 선로. 서초1동 통행세 구간. 보유 S16.",
+                "contents": "남부터미널 선로. 서초1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -188,7 +186,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "서초1동 주민센터 1층. 서초1동 배급 창구. 보유 S16.",
+                "contents": "서초1동 주민센터 1층. 서초1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -202,13 +200,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 100
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -220,17 +213,15 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "구청 창구의 계약 대조",
-        "summary": "서초구청의 창작 중재조는 만료된 공급 계약과 새 제안을 같은 장부에 섞지 않으려 한다.",
+        "summary": "서초구청의 창작 중재조는 공급 계약과 새 제안을 같은 장부에 섞지 않으려 한다.",
         "anchor_refs": [
           "osm:node:1913831587"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S03"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "서초2동 주민 작업반",
           "계약 중재 담당자"
@@ -251,8 +242,8 @@
           "kind": "governance",
           "description": "끝난 계약을 현재 공급 약속처럼 쓰면 받을 수 없는 물자를 미리 배정한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 서초2동 주민들은 다음 선택의 비용을 협의한다: 계약 유효일과 실제 납품을 대조한다.",
-        "connections": "서초1동·서초4동·양재1동과 경계를 맞대지만 서초2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "서초2동 주민들은 다음 선택의 비용을 협의한다: 계약 유효일과 실제 납품을 대조한다.",
+        "connections": "서초1동·서초4동·양재1동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165052000-local-choice",
           "label": "계약 유효일과 실제 납품을 대조한다",
@@ -287,7 +278,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "강남 선로. 서초2동 통행세 구간. 보유 S16.",
+                "contents": "강남 선로. 서초2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -372,7 +363,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "서초구청 1층. 서초2동 배급 창구. 보유 S16.",
+                "contents": "서초구청 1층. 서초2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -432,13 +423,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S03",
-              "control": 100
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -455,12 +441,10 @@
           "osm:node:5933947006"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S11"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "서초3동 주민 작업반",
           "민간 인계 담당자"
@@ -481,8 +465,8 @@
           "kind": "access",
           "description": "화물 검수 대기열에 일반 통행이 섞이면 느린 보행자가 오래 기다린다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 서초3동 주민들은 다음 선택의 비용을 협의한다: 민간 통행 구획을 별도로 둔다.",
-        "connections": "서초1동·서초4동·반포4동·방배1동·방배3동·방배4동·양재1동과 경계를 맞대지만 서초3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "서초3동 주민들은 다음 선택의 비용을 협의한다: 민간 통행 구획을 별도로 둔다.",
+        "connections": "서초1동·서초4동·반포4동·방배1동·방배3동·방배4동·양재1동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165053000-local-choice",
           "label": "민간 통행 구획을 별도로 둔다",
@@ -517,7 +501,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "교대 선로. 서초3동 통행세 구간. 보유 S16.",
+                "contents": "교대 선로. 서초3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -556,7 +540,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "서초 선로. 서초3동 통행세 구간. 보유 S16.",
+                "contents": "서초 선로. 서초3동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -620,7 +604,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "서초3동 주민센터 1층. 서초3동 배급 창구. 보유 S16.",
+                "contents": "서초3동 주민센터 1층. 서초3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -634,13 +618,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S11",
-              "control": 100
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -657,8 +636,8 @@
           "osm:node:3824606390"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
         "polity_contexts": [
           "S11"
@@ -683,8 +662,8 @@
           "kind": "access",
           "description": "확인하지 않은 소문을 시간표에 올리면 주민이 닫힌 곳으로 향한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 서초4동 주민들은 다음 선택의 비용을 협의한다: 확인된 일정과 미확인 전갈을 구분한다.",
-        "connections": "서초1동·서초2동·서초3동·반포1동·반포4동과 경계를 맞대지만 서초4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "서초4동 주민들은 다음 선택의 비용을 협의한다: 확인된 일정과 미확인 전갈을 구분한다.",
+        "connections": "서초1동·서초2동·서초3동·반포1동·반포4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165053100-local-choice",
           "label": "확인된 일정과 미확인 전갈을 구분한다",
@@ -719,7 +698,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신논현 선로. 서초4동 통행세 구간. 보유 S16.",
+                "contents": "신논현 선로. 서초4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -758,7 +737,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "강남 선로. 서초4동 통행세 구간. 보유 S16.",
+                "contents": "강남 선로. 서초4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -797,7 +776,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "민원분소 1층. 서초4동 배급 창구. 보유 S16.",
+                "contents": "민원분소 1층. 서초4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -822,7 +801,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "서초4동 주민센터 1층. 서초4동 배급 창구. 보유 S16.",
+                "contents": "서초4동 주민센터 1층. 서초4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -859,12 +838,10 @@
           "osm:way:378066781"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "잠원동 주민 작업반",
           "수변 비축 이전 담당자"
@@ -885,8 +862,8 @@
           "kind": "water",
           "description": "수위 변화에 취약한 장소에 재고를 두면 한 번의 침수로 여러 가구 몫을 잃는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠원동 주민들은 다음 선택의 비용을 협의한다: 필수 재고를 먼저 높은 곳으로 옮긴다.",
-        "connections": "반포1동·반포3동과 경계를 맞대지만 잠원동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "잠원동 주민들은 다음 선택의 비용을 협의한다: 필수 재고를 먼저 높은 곳으로 옮긴다.",
+        "connections": "반포1동·반포3동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165054000-local-choice",
           "label": "필수 재고를 먼저 높은 곳으로 옮긴다",
@@ -921,7 +898,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "잠원 선로. 잠원동 통행세 구간. 보유 S16.",
+                "contents": "잠원 선로. 잠원동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -960,7 +937,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "잠원동 주민센터 1층. 잠원동 배급 창구. 보유 S16.",
+                "contents": "잠원동 주민센터 1층. 잠원동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1066,13 +1043,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1089,12 +1061,10 @@
           "osm:way:248405787"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "반포본동 주민 작업반",
           "주거 배수 점검 담당자"
@@ -1115,8 +1085,8 @@
           "kind": "water",
           "description": "통행 물품을 배수 구간에 쌓으면 물 빠짐과 보행이 함께 막힌다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 반포본동 주민들은 다음 선택의 비용을 협의한다: 생활 통로와 배수 구간을 정리한다.",
-        "connections": "반포2동과 경계를 맞대지만 반포본동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "반포본동 주민들은 다음 선택의 비용을 협의한다: 생활 통로와 배수 구간을 정리한다.",
+        "connections": "반포2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165055000-local-choice",
           "label": "생활 통로와 배수 구간을 정리한다",
@@ -1151,7 +1121,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "구반포 선로. 반포본동 통행세 구간. 보유 S16.",
+                "contents": "구반포 선로. 반포본동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1282,7 +1252,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "한신종합상가 1층. 반포본동 잔존 골조. 보유 S16.",
+                "contents": "한신종합상가 1층. 반포본동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -1296,13 +1266,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1319,12 +1284,10 @@
           "osm:way:1354860678"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "반포1동 주민 작업반",
           "실내 교환과 취사 담당자"
@@ -1345,8 +1308,8 @@
           "kind": "fire",
           "description": "포장재가 많은 통로에서 화기를 쓰면 대피할 폭이 줄어든다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 반포1동 주민들은 다음 선택의 비용을 협의한다: 화기 작업을 분리한 시간대에 모은다.",
-        "connections": "서초4동·잠원동·반포3동·반포4동과 경계를 맞대지만 반포1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "반포1동 주민들은 다음 선택의 비용을 협의한다: 화기 작업을 분리한 시간대에 모은다.",
+        "connections": "서초4동·잠원동·반포3동·반포4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165056000-local-choice",
           "label": "화기 작업을 분리한 시간대에 모은다",
@@ -1381,7 +1344,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "사평 선로. 반포1동 통행세 구간. 보유 S16.",
+                "contents": "사평 선로. 반포1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1420,7 +1383,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "반포 선로. 반포1동 통행세 구간. 보유 S16.",
+                "contents": "반포 선로. 반포1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1459,7 +1422,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "논현 선로. 반포1동 통행세 구간. 보유 S16.",
+                "contents": "논현 선로. 반포1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1512,13 +1475,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1535,12 +1493,10 @@
           "osm:way:412713513"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "반포2동 주민 작업반",
           "하수 설비 점검 담당자"
@@ -1561,8 +1517,8 @@
           "kind": "water",
           "description": "처리 상태를 확인하지 않은 물이 생활 저장조와 섞이면 문제 구간을 찾기 어렵다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 반포2동 주민들은 다음 선택의 비용을 협의한다: 시설별 유입·배출 기록을 나눈다.",
-        "connections": "반포본동·반포3동·반포4동·방배본동과 경계를 맞대지만 반포2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "반포2동 주민들은 다음 선택의 비용을 협의한다: 시설별 유입·배출 기록을 나눈다.",
+        "connections": "반포본동·반포3동·반포4동·방배본동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165057000-local-choice",
           "label": "시설별 유입·배출 기록을 나눈다",
@@ -1597,7 +1553,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "신반포 선로. 반포2동 통행세 구간. 보유 S16.",
+                "contents": "신반포 선로. 반포2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1643,7 +1599,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "고속터미널 지하상가 1층 허가 장터. 보유 S16.",
+                "contents": "고속터미널 지하상가 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -1742,13 +1698,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1765,12 +1716,10 @@
           "osm:way:1354860678"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "반포3동 주민 작업반",
           "짐 반환 관리 담당자"
@@ -1791,8 +1740,8 @@
           "kind": "governance",
           "description": "같은 상가라는 이유로 인계 기록을 합치면 책임자를 찾기 어렵다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 반포3동 주민들은 다음 선택의 비용을 협의한다: 구획별 수령자를 함께 기록한다.",
-        "connections": "잠원동·반포1동·반포2동·반포4동과 경계를 맞대지만 반포3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "반포3동 주민들은 다음 선택의 비용을 협의한다: 구획별 수령자를 함께 기록한다.",
+        "connections": "잠원동·반포1동·반포2동·반포4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165058000-local-choice",
           "label": "구획별 수령자를 함께 기록한다",
@@ -1834,7 +1783,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "고속터미널 지하상가 1층 허가 장터. 보유 S16.",
+                "contents": "고속터미널 지하상가 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -1898,7 +1847,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "반포3동 주민센터 1층. 반포3동 배급 창구. 보유 S16.",
+                "contents": "반포3동 주민센터 1층. 반포3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1958,13 +1907,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1981,12 +1925,10 @@
           "osm:way:412970177"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "반포4동 주민 작업반",
           "의무 물자 배분 담당자"
@@ -2007,8 +1949,8 @@
           "kind": "supply",
           "description": "예약하지 않고 지원 물자를 내보내면 긴급 처치 때 필요한 재고가 없다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 반포4동 주민들은 다음 선택의 비용을 협의한다: 응급용 최소 재고를 먼저 남긴다.",
-        "connections": "서초3동·서초4동·반포1동·반포2동·반포3동·방배본동·방배4동과 경계를 맞대지만 반포4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "반포4동 주민들은 다음 선택의 비용을 협의한다: 응급용 최소 재고를 먼저 남긴다.",
+        "connections": "서초3동·서초4동·반포1동·반포2동·반포3동·방배본동·방배4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165058100-local-choice",
           "label": "응급용 최소 재고를 먼저 남긴다",
@@ -2043,7 +1985,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "고속터미널 선로. 반포4동 통행세 구간. 보유 S16.",
+                "contents": "고속터미널 선로. 반포4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2107,7 +2049,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "반포4동주민센터 1층. 반포4동 배급 창구. 보유 S16.",
+                "contents": "반포4동주민센터 1층. 반포4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2139,20 +2081,15 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "고속터미널 지하상가 1층 허가 장터. 보유 S16.",
+                "contents": "고속터미널 지하상가 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2169,12 +2106,10 @@
           "osm:way:256787249"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "방배본동 주민 작업반",
           "생활 통역 교육 담당자"
@@ -2195,8 +2130,8 @@
           "kind": "governance",
           "description": "서명을 받는 데만 통역을 쓰면 주민은 계약의 대가를 이해하지 못한다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방배본동 주민들은 다음 선택의 비용을 협의한다: 계약 전 설명 시간을 따로 둔다.",
-        "connections": "반포2동·반포4동·방배4동과 경계를 맞대지만 방배본동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "방배본동 주민들은 다음 선택의 비용을 협의한다: 계약 전 설명 시간을 따로 둔다.",
+        "connections": "반포2동·반포4동·방배4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165059000-local-choice",
           "label": "계약 전 설명 시간을 따로 둔다",
@@ -2231,7 +2166,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "방배본동 주민센터 1층. 방배본동 배급 창구. 보유 S16.",
+                "contents": "방배본동 주민센터 1층. 방배본동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2348,13 +2283,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2371,12 +2301,10 @@
           "osm:node:2104058788"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "방배1동 주민 작업반",
           "처치 대기 지원 담당자"
@@ -2397,8 +2325,8 @@
           "kind": "access",
           "description": "물품 수령자가 실내를 채우면 처치가 필요한 주민이 밖에 남는다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방배1동 주민들은 다음 선택의 비용을 협의한다: 물품 수령 시간을 분리한다.",
-        "connections": "서초3동·방배2동·방배3동·방배4동과 경계를 맞대지만 방배1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "방배1동 주민들은 다음 선택의 비용을 협의한다: 물품 수령 시간을 분리한다.",
+        "connections": "서초3동·방배2동·방배3동·방배4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165060000-local-choice",
           "label": "물품 수령 시간을 분리한다",
@@ -2433,7 +2361,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "방배 선로. 방배1동 통행세 구간. 보유 S16.",
+                "contents": "방배 선로. 방배1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2472,7 +2400,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "내방 선로. 방배1동 통행세 구간. 보유 S16.",
+                "contents": "내방 선로. 방배1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2536,7 +2464,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "방배1동 주민센터 1층. 방배1동 배급 창구. 보유 S16.",
+                "contents": "방배1동 주민센터 1층. 방배1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2550,13 +2478,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2573,12 +2496,10 @@
           "osm:node:6036160370"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "방배2동 주민 작업반",
           "고개 통행 안내 담당자"
@@ -2599,8 +2520,8 @@
           "kind": "access",
           "description": "고개가 보인다는 이유로 모든 수레를 받으면 확인하지 못한 구간에 정체가 생긴다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방배2동 주민들은 다음 선택의 비용을 협의한다: 현장 확인된 통과 구간만 안내한다.",
-        "connections": "방배1동·방배3동·방배4동과 경계를 맞대지만 방배2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "방배2동 주민들은 다음 선택의 비용을 협의한다: 현장 확인된 통과 구간만 안내한다.",
+        "connections": "방배1동·방배3동·방배4동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165061000-local-choice",
           "label": "현장 확인된 통과 구간만 안내한다",
@@ -2635,7 +2556,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "남태령 선로. 방배2동 통행세 구간. 보유 S16.",
+                "contents": "남태령 선로. 방배2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -2674,7 +2595,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "방배2동주민센터 1층. 방배2동 배급 창구. 보유 S16.",
+                "contents": "방배2동주민센터 1층. 방배2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2780,13 +2701,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -2803,12 +2719,10 @@
           "osm:node:368740264"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "방배3동 주민 작업반",
           "방문 돌봄 담당자"
@@ -2829,8 +2743,8 @@
           "kind": "supply",
           "description": "모든 인력을 외부로 보내면 거점의 식사와 기본 처치가 비는 시간이 생긴다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방배3동 주민들은 다음 선택의 비용을 협의한다: 방문과 거점의 최소 인원을 분리한다.",
-        "connections": "서초3동·방배1동·방배2동·양재1동과 경계를 맞대지만 방배3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "방배3동 주민들은 다음 선택의 비용을 협의한다: 방문과 거점의 최소 인원을 분리한다.",
+        "connections": "서초3동·방배1동·방배2동·양재1동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165062000-local-choice",
           "label": "방문과 거점의 최소 인원을 분리한다",
@@ -2915,7 +2829,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "방배3동 주민센터 1층. 방배3동 배급 창구. 보유 S16.",
+                "contents": "방배3동 주민센터 1층. 방배3동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2975,13 +2889,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2998,12 +2907,10 @@
           "osm:node:6048953582"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "방배4동 주민 작업반",
           "환승 인계 확인 담당자"
@@ -3024,8 +2931,8 @@
           "kind": "governance",
           "description": "비슷한 이름을 같은 창구로 보면 짐이 다른 수령자에게 전달될 수 있다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방배4동 주민들은 다음 선택의 비용을 협의한다: 인계 장소와 수령자를 함께 확인한다.",
-        "connections": "서초3동·반포4동·방배본동·방배1동·방배2동과 경계를 맞대지만 방배4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "방배4동 주민들은 다음 선택의 비용을 협의한다: 인계 장소와 수령자를 함께 확인한다.",
+        "connections": "서초3동·반포4동·방배본동·방배1동·방배2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165062100-local-choice",
           "label": "인계 장소와 수령자를 함께 확인한다",
@@ -3060,7 +2967,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "이수 선로. 방배4동 통행세 구간. 보유 S16.",
+                "contents": "이수 선로. 방배4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3099,7 +3006,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "총신대입구(이수) 선로. 방배4동 통행세 구간. 보유 S16.",
+                "contents": "총신대입구(이수) 선로. 방배4동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3198,13 +3105,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3221,8 +3123,8 @@
           "osm:node:9401105051"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
         "polity_contexts": [
           "S03"
@@ -3247,8 +3149,8 @@
           "kind": "supply",
           "description": "장부 주문만 늘리면 받을 수 없는 식량을 가구에 약속하게 된다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 양재1동 주민들은 다음 선택의 비용을 협의한다: 도착 물자 기준으로 배급을 예약한다.",
-        "connections": "서초1동·서초2동·서초3동·방배3동·양재2동과 경계를 맞대지만 양재1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "양재1동 주민들은 다음 선택의 비용을 협의한다: 도착 물자 기준으로 배급을 예약한다.",
+        "connections": "서초1동·서초2동·서초3동·방배3동·양재2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165065100-local-choice",
           "label": "도착 물자 기준으로 배급을 예약한다",
@@ -3283,7 +3185,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "양재 선로. 양재1동 통행세 구간. 보유 S16.",
+                "contents": "양재 선로. 양재1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3322,7 +3224,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "양재 선로. 양재1동 통행세 구간. 보유 S16.",
+                "contents": "양재 선로. 양재1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3407,7 +3309,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "양재1동 주민센터 1층. 양재1동 배급 창구. 보유 S16.",
+                "contents": "양재1동 주민센터 1층. 양재1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3444,12 +3346,10 @@
           "osm:node:6641198808"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "양재2동 주민 작업반",
           "산지 귀환 확인 담당자"
@@ -3470,8 +3370,8 @@
           "kind": "slope",
           "description": "사면 조건을 확인하지 않으면 해가 진 뒤 돌아오지 못한 인원을 찾기 어렵다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 양재2동 주민들은 다음 선택의 비용을 협의한다: 출발 전 경로와 귀환 시각을 확인한다.",
-        "connections": "양재1동·내곡동과 경계를 맞대지만 양재2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "양재2동 주민들은 다음 선택의 비용을 협의한다: 출발 전 경로와 귀환 시각을 확인한다.",
+        "connections": "양재1동·내곡동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165065200-local-choice",
           "label": "출발 전 경로와 귀환 시각을 확인한다",
@@ -3506,7 +3406,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "양재시민의숲 선로. 양재2동 통행세 구간. 보유 S16.",
+                "contents": "양재시민의숲 선로. 양재2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3545,7 +3445,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "청계산입구 선로. 양재2동 통행세 구간. 보유 S16.",
+                "contents": "청계산입구 선로. 양재2동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -3584,7 +3484,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "양재2동 주민센터 1층. 양재2동 배급 창구. 보유 S16.",
+                "contents": "양재2동 주민센터 1층. 양재2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -3644,13 +3544,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -3667,12 +3562,10 @@
           "osm:way:350913033"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md"
         ],
-        "polity_contexts": [
-          "S16"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "내곡동 주민 작업반",
           "돌봄 보급 담당자"
@@ -3693,8 +3586,8 @@
           "kind": "supply",
           "description": "일반 교환에 물자를 먼저 쓰면 돌봄 가구의 당일 필수 소비가 부족하다."
         },
-        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 내곡동 주민들은 다음 선택의 비용을 협의한다: 돌봄용 소비분을 먼저 예약한다.",
-        "connections": "양재2동과 경계를 맞대지만 내곡동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "opening_state": "내곡동 주민들은 다음 선택의 비용을 협의한다: 돌봄용 소비분을 먼저 예약한다.",
+        "connections": "양재2동과 경계를 맞댄다.",
         "action": {
           "id": "dong-1165066000-local-choice",
           "label": "돌봄용 소비분을 먼저 예약한다",
@@ -3881,13 +3774,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S16",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }

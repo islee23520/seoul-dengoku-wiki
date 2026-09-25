@@ -3,13 +3,13 @@
   "approvalRef": {
     "approvedBy": "owner",
     "approvedAt": "2026-09-25",
-    "ownerRef": "Q1 decisions.json",
-    "inputSha256": "0f34a33db5a170c085264ceeadbc93c4bde25246ba00483c7ddbca84179190cc",
-    "candidatesSha256": "7c4754681342162453763afe049d9a69c16b2808256d4fc03e91e7970036ef2e"
+    "ownerRef": "2026-09-25 초안대로 승인",
+    "inputSha256": "50c4370ca6193ca9251fcae413261adf4aaa0dbadcd898012a361964727ac5cf",
+    "candidatesSha256": "4ac774fa7ae65bb3a95c1440b9f58ab02c22d5e7f1731cc064d3e2202134f78a"
   },
-  "totalPeople": 1004,
+  "totalPeople": 1007,
   "existingKCount": 422,
-  "issuedCount": 582,
+  "issuedCount": 585,
   "persons": [
     {
       "id": "K001",
@@ -4032,6 +4032,18 @@
       "aliases": [
         "iyen"
       ]
+    },
+    {
+      "id": "K1005",
+      "name": "정서온"
+    },
+    {
+      "id": "K1006",
+      "name": "탁서윤"
+    },
+    {
+      "id": "K1007",
+      "name": "김연규"
     }
   ]
 }

@@ -20,13 +20,11 @@
           "osm:way:1383710567"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "협동화 단지 계측반",
           "컴퓨존 창구 부품수",
@@ -54,7 +52,7 @@
           "kind": "power",
           "description": "마이크로오피스사거리 쪽 민가 간선을 군수 작업반이 선점하면 에이스하이엔드 야간이 밝아지고, 봉암빌라·온누리아파트 양수가 먼저 끊긴다."
         },
-        "opening_state": "임하준 실종과 중앙 급수·부품 계약 만료 소식이 가산동 주민센터에 도착했다. 계측 설비 일부는 작동하지만 식량과 원단이 부족하며 이강묵의 야간 편성 요구도 아직 평의회 승인을 받지 못한 상태다.",
+        "opening_state": "계측 설비 일부는 작동하지만 식량과 원단이 부족하며 이강묵의 야간 편성 요구도 아직 평의회 승인을 받지 못한 상태다.",
         "connections": "독산1동 출근 작업자와 구로 부품 주문은 가산 출고 일정에 묶여 있으므로 실제 수레 통행을 확인한 뒤 인계 시각을 맞춰야 한다.",
         "action": {
           "id": "1154551000-coop-day-line",
@@ -100,7 +98,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "가산디지털단지 선로. 가산동 통행세 구간. 보유 S02.",
+                "contents": "가산디지털단지 선로. 가산동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -139,7 +137,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "가산디지털단지 선로. 가산동 통행세 구간. 보유 S02.",
+                "contents": "가산디지털단지 선로. 가산동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -178,7 +176,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "가산동 주민센터 1층. 가산동 배급 창구. 보유 S02.",
+                "contents": "가산동 주민센터 1층. 가산동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -212,13 +210,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -239,13 +232,11 @@
           "osm:way:407459009"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "독산 승강장 중개",
           "홈플러스 솥 당직",
@@ -318,7 +309,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "독산 선로. 독산1동 통행세 구간. 보유 S02.",
+                "contents": "독산 선로. 독산1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -357,7 +348,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "독산1동주민센터 1층. 독산1동 배급 창구. 보유 S02.",
+                "contents": "독산1동주민센터 1층. 독산1동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -463,13 +454,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -481,7 +467,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "궁전빌리지 난간과 시흥대로 물통",
-        "summary": "궁전빌리지와 호정타워 주민들은 시흥대로에서 받은 물통을 계단으로 운반한다. 독산초 운동장의 아침 인계가 끝나면 구립독산도서관과 주민센터가 가구별 양수 순서를 맞추지만 중앙 계약 만료로 사면 급수가 불안정한 상황이다.",
+        "summary": "궁전빌리지와 호정타워 주민들은 시흥대로에서 받은 물통을 계단으로 운반한다. 사면 급수가 불안정한 상황이다.",
         "anchor_refs": [
           "osm:node:5524687314",
           "osm:way:385840021",
@@ -490,13 +476,11 @@
           "osm:node:11504870698"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "궁전빌리지 계단 반장",
           "독산초 마당 물통지기",
@@ -523,7 +507,7 @@
           "kind": "slope",
           "description": "독산2동의 지형 자료에는 동 전체의 기복이 관측된다. 이 수치를 특정 계단이나 운반 경로의 높이·경사로 단정하지 않으며, 궁전빌리지 난간 세 곳을 하루 먼저 묶는다에 필요한 실제 접근 상태는 현장에서 따로 확인한다."
         },
-        "opening_state": "개막일 주민센터는 중앙 급수 계약 만료를 알리고 도서관의 가구 명단으로 임시 순서를 정한다. 궁전빌리지 난간 세 곳이 흔들리지만 독산초 마당 양수도 아침 한 차례밖에 할 수 없다.",
+        "opening_state": "임시 순서를 정한다. 궁전빌리지 난간 세 곳이 흔들리지만 독산초 마당 양수도 아침 한 차례밖에 할 수 없다.",
         "connections": "독산1동에서 받은 물통을 사면 운반조가 이어받되 독산4동·시흥1동·시흥4동 접근을 따로 확인하며 시흥대로가 막히면 말미사거리 대기부터 조정한다.",
         "action": {
           "id": "1154562000-gungjeon-rail",
@@ -554,7 +538,7 @@
           ],
           "tradeoff": "목재 3묶음과 6교대를 난간에 쓰면 독산초 양수 작업이 늦어져 점심 물 공급 한 차례와 도서관 오후 순번 안내를 포기해야 한다."
         },
-        "uncertainty": "독산2동주민센터·서울독산초등학교·궁전빌리지·시흥대로·구립독산도서관은 OSM 스냅샷의 위치다. 난간 보수와 양수 순번은 개막일 창작이며, 학교·도서관의 현재 운영을 태그로 읽지 않는다.",
+        "uncertainty": "독산2동주민센터·서울독산초등학교·궁전빌리지·시흥대로·구립독산도서관은 OSM 스냅샷의 위치다.",
         "buildings": [
           {
             "anchor_ref": "osm:node:5524687314",
@@ -569,7 +553,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "독산2동주민센터 1층. 독산2동 배급 창구. 보유 S02.",
+                "contents": "독산2동주민센터 1층. 독산2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -686,7 +670,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "독산2동주민센터 앞 1층. 독산2동 잔존 골조. 보유 S02.",
+                "contents": "독산2동주민센터 앞 1층. 독산2동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -700,13 +684,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -718,7 +697,7 @@
         "source_kind": "original-fiction",
         "fictional_epoch": "opening-day",
         "title": "남문시장 좌판의 원단 교환",
-        "summary": "남문시장의 상인들은 가산 쪽 필터 원단과 주거지에서 가져온 곡물·김치통을 교환한다. 문성초 운동장에서 상자 무게를 재고 한양수자인아파트 저수조에서 취사용 물을 나누지만 계약 만료 뒤에는 교환값을 매일 다시 협의해야 한다.",
+        "summary": "남문시장의 상인들은 가산 쪽 필터 원단과 주거지에서 가져온 곡물·김치통을 교환한다.",
         "anchor_refs": [
           "osm:way:408855833",
           "osm:way:408855822",
@@ -727,13 +706,11 @@
           "osm:way:1006081351"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "남문시장 좌판 조합",
           "문성초 상자 검수",
@@ -860,7 +837,7 @@
                 "level": 1,
                 "label": "장터",
                 "state": "occupied",
-                "contents": "남문시장 1층 허가 장터. 보유 S02.",
+                "contents": "남문시장 1층 허가 장터.",
                 "condition": "예약분과 판매분을 줄로 나눈다."
               }
             ]
@@ -959,13 +936,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -986,13 +958,11 @@
           "osm:node:11504870691"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "극장 객석 당직",
           "태영빌라 골목 안내",
@@ -1019,7 +989,7 @@
           "kind": "governance",
           "description": "객석을 경비대 야간 편성으로 바꾸면 태영빌라 명부가 군사호적으로 읽히고, 대피석이 비면 비 오는 밤 독산로에서 사람이 떨어진다."
         },
-        "opening_state": "개막일 주민센터는 극장 대피 순번을 임시로 붙였다. 이강묵의 야간 편성 쪽지가 교차로에 걸렸으나 평의회의 세 도장은 아직 없고 정심초 배급도 오전에 한정돼 있다.",
+        "opening_state": "개막일 주민센터는 극장 대피 순번을 임시로 붙였다.",
         "connections": "독산1·2·3동 사면의 대피 요청을 현재 가구 명단으로 조정하며 관악 방향 접근은 따로 확인하고 비가 오면 독산로와 우체국앞교차로 보행을 함께 점검한다.",
         "action": {
           "id": "1154564000-theater-shelter-roll",
@@ -1157,7 +1127,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "독산4동 주민센터 1층. 독산4동 배급 창구. 보유 S02.",
+                "contents": "독산4동 주민센터 1층. 독산4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1182,7 +1152,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "에이스 하드웨어(시흥대로 396) 앞 1층. 독산4동 잔존 골조. 보유 S02.",
+                "contents": "에이스 하드웨어(시흥대로 396) 앞 1층. 독산4동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -1196,13 +1166,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1223,13 +1188,11 @@
           "osm:node:1307557173"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "시흥천 제방 짐꾼",
           "대명시장 좌판",
@@ -1257,7 +1220,7 @@
           "kind": "water",
           "description": "시흥천이 하룻밤 오르면 대명시장 하층이 잠기고, 금천구청역삼거리 통과 줄이 물웅덩이로 끊어져 가산 교대가 시흥1동 안에서 밤새 선다."
         },
-        "opening_state": "중앙 급수 계약 만료를 알린 주민센터는 천변 가구를 임시 순서에 올렸다. 금천구청역은 주간 내부 통과를 유지하지만 이강묵의 야간 차단 요구는 삼거리 게시판에만 붙어 있다.",
+        "opening_state": "금천구청역은 주간 내부 통과를 유지하지만 이강묵의 야간 차단 요구는 삼거리 게시판에만 붙어 있다.",
         "connections": "독산1·2동 교대 인원은 금천구청역 검수를 거치고 시흥3·4·5동 천변·골목의 접근을 확인한 뒤 물자를 넘기므로 대명시장 출하도 같은 조건에 묶인다.",
         "action": {
           "id": "1154567000-siheungcheon-sandbag",
@@ -1303,7 +1266,7 @@
                 "level": -2,
                 "label": "선로",
                 "state": "sealed",
-                "contents": "금천구청 선로. 시흥1동 통행세 구간. 보유 S02.",
+                "contents": "금천구청 선로. 시흥1동 통행세 구간.",
                 "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
               },
               {
@@ -1471,13 +1434,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": true
       }
@@ -1498,13 +1456,11 @@
           "osm:node:10600582610"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "칼바위 낙석 안내",
           "벽산3단지 밧줄 짐꾼",
@@ -1577,7 +1533,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "시흥2동 주민센터 1층. 시흥2동 배급 창구. 보유 S02.",
+                "contents": "시흥2동 주민센터 1층. 시흥2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1648,7 +1604,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "금천종합복지타운 1층. 시흥2동 배급 창구. 보유 S02.",
+                "contents": "금천종합복지타운 1층. 시흥2동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -1708,13 +1664,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -1735,13 +1686,11 @@
           "osm:node:4278630539"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "불로천 물통지기",
           "박미사랑 순번 서기",
@@ -1987,13 +1936,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2014,13 +1958,11 @@
           "osm:way:1033817784"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "순흥약수 짐꾼",
           "금강아파트 옥상 당직",
@@ -2047,7 +1989,7 @@
           "kind": "water",
           "description": "수질 미확인 약수를 옥상 생활 물과 섞으면 안전한 용도를 판단하기 어렵고, 젖은 공원 오솔길에서 물통이 깨지면 독산로22길 인계도 늦어진다. 가열만으로 모든 오염 제거를 보장하지 않는다."
         },
-        "opening_state": "개막일 금강아파트 옥상 물통 두 개가 기울어 우선 보수가 필요하다. 주민센터는 급수 만료를 알린 뒤 공원 오솔길을 아침만 이용하도록 조정했으며 월드메르디앙의 자체 저수 봉인 여부는 아직 협의 중이다.",
+        "opening_state": "개막일 금강아파트 옥상 물통 두 개가 기울어 우선 보수가 필요하다. 공원 오솔길을 아침만 이용하도록 조정했으며 월드메르디앙의 자체 저수 봉인 여부는 아직 협의 중이다.",
         "connections": "독산2동·시흥1동에서 돌아온 빈 통은 이 동의 배분표로 인계하며 시흥5동·관악과 접해 있어도 묘역과 공원 오솔길의 수레 통행은 따로 확인한다.",
         "action": {
           "id": "1154570000-sunheung-cistern",
@@ -2093,7 +2035,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "시흥4동 주민센터 1층. 시흥4동 배급 창구. 보유 S02.",
+                "contents": "시흥4동 주민센터 1층. 시흥4동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2210,7 +2152,7 @@
                 "level": 1,
                 "label": "1층",
                 "state": "flooded",
-                "contents": "한국SGI금천희망문화회관 1층. 시흥4동 잔존 골조. 보유 S02.",
+                "contents": "한국SGI금천희망문화회관 1층. 시흥4동 잔존 골조.",
                 "condition": "관측된 출입구만 쓰고 나머지는 막는다."
               },
               {
@@ -2226,13 +2168,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }
@@ -2253,13 +2190,11 @@
           "osm:way:1030370567"
         ],
         "canon_refs": [
-          "docs/game-logic/Sixteen-States.md",
-          "docs/game-logic/Scenario-Timeline.md",
-          "docs/game-logic/Cast-State-02.md"
+          "WIKI/lore/factions/Sixteen-States.md",
+          "WIKI/lore/chronology/Scenario-Timeline.md",
+          "WIKI/lore/characters/Cast-State-02.md"
         ],
-        "polity_contexts": [
-          "S02"
-        ],
+        "polity_contexts": [],
         "inhabitants": [
           "약수빌라 옹벽 목수",
           "신도브래뉴 옥상 당직",
@@ -2286,7 +2221,7 @@
           "kind": "slope",
           "description": "약수빌라 옹벽이 한 단 내려앉으면 시흥대로40길 물통 행렬이 막히고, 신도브래뉴 아래층 벽이 흙을 먹어 옥상 양수 당직이 대피한다."
         },
-        "opening_state": "중앙 급수·부품 계약이 만료된 개막일, 주민센터는 옹벽 균열이 있는 가구를 우선 명단에 올렸다. 약수빌라 말뚝 한쪽이 들떠 있으며 금천초 배급은 오전만 진행하고 화인전자 터의 야간 출입은 중단했다.",
+        "opening_state": "주민센터는 옹벽 균열이 있는 가구를 우선 명단에 올렸다. 약수빌라 말뚝 한쪽이 들떠 있으며 금천초 배급은 오전만 진행하고 화인전자 터의 야간 출입은 중단했다.",
         "connections": "시흥1동 통과 담당자와 시흥2동 사면 작업반, 시흥3·4동 운반조가 일정을 맞추되 시흥대로40길이 막히면 관악 경계를 길로 가정하지 않고 건영남서울·시흥 현대 쪽 보행을 먼저 확인한다.",
         "action": {
           "id": "1154571000-yaksoo-retaining",
@@ -2317,7 +2252,7 @@
           ],
           "tradeoff": "옹벽에 목재 4묶음과 6교대를 쓰면 신도브래뉴 양수와 금천초 취사가 늦어지고 화인전자 터 손전등 수리도 하루 중단해야 한다."
         },
-        "uncertainty": "약수빌라·관악산 신도브래뉴아파트·화인전자산업·시흥5동 주민센터·시흥대로40길은 OSM 스냅샷의 위치다. 옹벽 말뚝과 옥상 양수는 개막일 창작이며, 공장·학교·아파트의 현재 가동을 태그로 읽지 않는다.",
+        "uncertainty": "약수빌라·관악산 신도브래뉴아파트·화인전자산업·시흥5동 주민센터·시흥대로40길은 OSM 스냅샷의 위치다.",
         "buildings": [
           {
             "anchor_ref": "osm:node:368899176",
@@ -2332,7 +2267,7 @@
                 "level": 1,
                 "label": "민원 창구",
                 "state": "occupied",
-                "contents": "시흥5동 주민센터 1층. 시흥5동 배급 창구. 보유 S02.",
+                "contents": "시흥5동 주민센터 1층. 시흥5동 배급 창구.",
                 "condition": "번호표 기계는 죽은 채. 야간만 연다."
               },
               {
@@ -2484,13 +2419,8 @@
           }
         ],
         "territory": {
-          "status": "held",
-          "holders": [
-            {
-              "polity": "S02",
-              "control": 70
-            }
-          ]
+          "status": "vacant",
+          "holders": []
         },
         "core_station": false
       }

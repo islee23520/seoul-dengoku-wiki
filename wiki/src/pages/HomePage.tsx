@@ -17,12 +17,10 @@ const panels: { title: string; items: PanelItem[] }[] = [
     { label: '가문', to: wikiLinks.houses, spa: true },
     { label: '관직', to: wikiLinks.offices, spa: true },
     { label: '운영가문', to: wikiLinks.operatingHouses, spa: true },
-    { label: '징집 잔존', to: wikiLinks.conscription, spa: true },
   ]},
   { title: '인물', items: [
     { label: '등장인물', to: wikiLinks.characters, spa: true },
     { label: '인물 총람', to: wikiLinks.castIndex, spa: true },
-    { label: '야망과 관계', to: wikiLinks.ambitions, spa: true },
     { label: '항렬과 본관', to: wikiLinks.hangnyeol, spa: true },
   ]},
   { title: '지리', items: [
@@ -35,10 +33,6 @@ const panels: { title: string; items: PanelItem[] }[] = [
     { label: '기술과 무구', to: wikiLinks.technology, spa: true },
     { label: '식문화', to: wikiLinks.food, spa: true },
     { label: '구조물', to: wikiLinks.structures, spa: true },
-  ]},
-  { title: '경제', items: [
-    { label: '경제와 생산', to: wikiLinks.economy, spa: true },
-    { label: '물류와 기반', to: wikiLinks.logistics, spa: true },
   ]},
 ]
 

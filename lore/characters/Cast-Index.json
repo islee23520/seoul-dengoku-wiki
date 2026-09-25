@@ -26,12 +26,12 @@
   "locales": {
     "en": {
       "title": "Cast Compendium",
-      "summary": "A roster that bound the 1,004 named people of the sixteen states of post-collapse Seoul and the unaffiliated corridors by state, office, tier, and edge count.",
+      "summary": "In 2126 the sixteen state ledgers listed 426 people and the unaffiliated ledger listed two.",
       "tense": "past"
     },
     "ko": {
       "title": "인물 총람",
-      "summary": "붕괴 이후 서울 16국과 무소속 회랑의 이름 있는 인물 1004명을 국가·직위·단계·관계 수로 묶은 명부다.",
+      "summary": "2126년 십육국 명부에는 인물 426명, 무소속 장부에는 2명이 있다.",
       "tense": "past"
     }
   },
@@ -49,1053 +49,16 @@
       "kind": "paragraph",
       "anchor": "인물-총람-p1",
       "text": {
-        "en": "A roster that bound the 1,006 named people of the sixteen states of post-collapse Seoul and the unaffiliated corridors by state, office, tier, and edge count. The 1,006 rows of unique names link the core figures, the sixteen state ledgers, and the unaffiliated cards. Migrant corridors and conscription-remnant personnel outside the sixteen ledgers are bound separately in the corridor people compendium.",
-        "ko": "붕괴 이후 서울 16국과 무소속 회랑의 이름 있는 인물 1006명을 국가·직위·단계·관계 수로 묶은 명부다. 고유 이름 1006행은 핵심 인물, 16개 국가 장부, 무소속 카드에 모두 연결된다. 16국 장부 바깥의 이주민 회랑과 징집 잔존 인력은 회랑 인물 총람에 따로 묶는다."
+        "en": "The sixteen state ledgers list 426 named people in 2126. Two unaffiliated people remain in a separate ledger.",
+        "ko": "2126년 십육국 명부에는 이름 있는 인물 426명이 올라 있다. 무소속 인물 두 명은 별도 장부에 남았다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "인물-총람-p2",
       "text": {
-        "en": [
-          {
-            "text": "The table's `Edges` column counts only the sender edges of each person in the "
-          },
-          {
-            "text": "relation ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-Relations"
-            }
-          },
-          {
-            "text": " (receiving edges excluded). T0 core figures are connected by receiving edges, so a count of 0 did not read as isolation."
-          }
-        ],
-        "ko": [
-          {
-            "text": "표의 `관계 수`는 "
-          },
-          {
-            "text": "관계 원장",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-Relations"
-            }
-          },
-          {
-            "text": "에서 해당 인물이 보낸 송신 간선만 센다(수신 간선 제외). T0 핵심 인물은 수신 간선으로 연결되므로, 관계 수가 0이어도 고립으로 읽히지는 않는다."
-          }
-        ]
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "게시-문서와-조각-현황",
-      "depth": 2,
-      "text": {
-        "en": "Published Documents and Fragment Status",
-        "ko": "게시 문서와 조각 현황"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p1",
-      "text": {
-        "en": "Fragment completion did not read as worldview completion or wiki publication completion.",
-        "ko": "조각 완료는 세계관 완료나 Wiki 게시 완료로 읽히지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p2",
-      "text": {
-        "en": [
-          {
-            "text": "The currently published character sources were found in the per-state rosters and in "
-          },
-          {
-            "text": "Cast Relations",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-Relations"
-            }
-          },
-          {
-            "text": " and "
-          },
-          {
-            "text": "Core Characters",
-            "link": {
-              "domain": "characters",
-              "slug": "Core-Characters"
-            }
-          },
-          {
-            "text": "."
-          }
-        ],
-        "ko": [
-          {
-            "text": "현재 게시된 인물 원문은 국가별 명부와 "
-          },
-          {
-            "text": "인물 관계",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-Relations"
-            }
-          },
-          {
-            "text": " "
-          },
-          {
-            "text": "주요 인물",
-            "link": {
-              "domain": "characters",
-              "slug": "Core-Characters"
-            }
-          },
-          {
-            "text": "에서 확인한다."
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p3",
-      "text": {
-        "en": "Old-generation `docs/cast-*` branches and fragments were not put into main by machine merge (per-branch automatic merge, rerere, or wholesale ours/theirs).",
-        "ko": "구세대 `docs/cast-*` 브랜치와 조각은 기계 병합(브랜치별 자동 merge·rerere·ours/theirs 일괄 적용)으로 main에 넣지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p4",
-      "text": {
-        "en": [
-          {
-            "text": "The published character sources were `Cast-State-01`–`16`, this compendium, "
-          },
-          {
-            "text": "Cast Relations",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-Relations"
-            }
-          },
-          {
-            "text": ", and "
-          },
-          {
-            "text": "Core Characters",
-            "link": {
-              "domain": "characters",
-              "slug": "Core-Characters"
-            }
-          },
-          {
-            "text": ", and fragments were published only after curation against these sources."
-          }
-        ],
-        "ko": [
-          {
-            "text": "게시 인물 원본은 `Cast-State-01`–`16` 이 총람 "
-          },
-          {
-            "text": "인물 관계",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-Relations"
-            }
-          },
-          {
-            "text": " "
-          },
-          {
-            "text": "주요 인물",
-            "link": {
-              "domain": "characters",
-              "slug": "Core-Characters"
-            }
-          },
-          {
-            "text": "이며, 조각은 이 원본에 맞춰 큐레이션한 뒤에만 게시한다."
-          }
-        ]
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p5",
-      "text": {
-        "en": "The existence of a fragment file alone did not open publication approval.",
-        "ko": "조각 파일이 있다는 사실만으로 게시 승인이 열리지는 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p6",
-      "text": {
-        "en": "Below are the 39 items of the approved hub records `fe2d8aa` and `f7521c9`.",
-        "ko": "아래는 승인된 허브 기록 `fe2d8aa`·`f7521c9`의 39개 항목이다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p7",
-      "text": {
-        "en": "Publication baseline `1872919` lacked these 36 bodies and 3 images, so all remained unpublished and pending.",
-        "ko": "게시 기준선 `1872919`에는 이 본문 36개와 그림 3개가 없으므로 모두 미게시·대기로 남긴다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p8",
-      "text": {
-        "en": "Paths and SHAs were records tracking storage location, not publication links or integration approval.",
-        "ko": "경로와 SHA는 보관 위치를 추적하는 기록이며, 게시 링크나 통합 승인이 되지는 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p9",
-      "text": {
-        "en": "Bodies and images on separate branches were not included in this index.",
-        "ko": "별도 브랜치의 본문·그림은 이번 인덱스에 포함하지 않는다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p10",
-      "text": {
-        "en": "The result of the 2026-09-05 `docs/cast-backstories-houses-physical-ai` @ `4e204e8` curation (#15–#18) remained in the publication-status column.",
-        "ko": "2026-09-05 `docs/cast-backstories-houses-physical-ai` @ `4e204e8` 큐레이션(#15–#18) 결과는 게시 상태 칸에 남긴다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p13",
-      "text": {
-        "en": "G07–G24 had no files at the recorded SHAs, but the `ea81bb9` landed bodies existed on main, and the result of the issue #17 curation remained in the publication-status column.",
-        "ko": "G07–G24는 기록된 SHA에는 파일이 없었으나 `ea81bb9` 착지 본문이 main에 있으며, 이슈 #17 큐레이션 결과는 게시 상태 칸에 남긴다."
-      }
-    },
-    {
-      "kind": "table",
-      "anchor": "게시-문서와-조각-현황-table14",
-      "columns": [
-        {
-          "en": "Item",
-          "ko": "항목"
-        },
-        {
-          "en": "Publication status",
-          "ko": "게시 상태"
-        },
-        {
-          "en": "Recorded path · SHA · branch",
-          "ko": "기록된 경로 · SHA · 브랜치"
-        },
-        {
-          "en": "Fragment check / remaining work",
-          "ko": "조각 확인 / 남은 일"
-        }
-      ],
-      "rows": [
-        [
-          {
-            "en": "G01",
-            "ko": "G01"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G01.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)",
-            "ko": "`docs/game-logic/Hostile-Group-G01.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)"
-          },
-          {
-            "en": "Cast-State SoT cross-check complete; issue #16 curation approved",
-            "ko": "Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G02",
-            "ko": "G02"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G02.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)",
-            "ko": "`docs/game-logic/Hostile-Group-G02.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)"
-          },
-          {
-            "en": "Cast-State SoT cross-check complete; issue #16 curation approved",
-            "ko": "Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G03",
-            "ko": "G03"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G03.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)",
-            "ko": "`docs/game-logic/Hostile-Group-G03.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)"
-          },
-          {
-            "en": "Cast-State SoT cross-check complete; issue #16 curation approved",
-            "ko": "Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G04",
-            "ko": "G04"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G04.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)",
-            "ko": "`docs/game-logic/Hostile-Group-G04.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)"
-          },
-          {
-            "en": "Cast-State SoT cross-check complete; issue #16 curation approved",
-            "ko": "Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G05",
-            "ko": "G05"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G05.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)",
-            "ko": "`docs/game-logic/Hostile-Group-G05.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)"
-          },
-          {
-            "en": "Cast-State SoT cross-check complete; issue #16 curation approved",
-            "ko": "Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G06",
-            "ko": "G06"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G06.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)",
-            "ko": "`docs/game-logic/Hostile-Group-G06.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`)"
-          },
-          {
-            "en": "Cast-State SoT cross-check complete; issue #16 curation approved",
-            "ko": "Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G07",
-            "ko": "G07"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G07.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)",
-            "ko": "`docs/game-logic/Hostile-Group-G07.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G08",
-            "ko": "G08"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G08.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)",
-            "ko": "`docs/game-logic/Hostile-Group-G08.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G09",
-            "ko": "G09"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G09.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)",
-            "ko": "`docs/game-logic/Hostile-Group-G09.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G10",
-            "ko": "G10"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G10.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)",
-            "ko": "`docs/game-logic/Hostile-Group-G10.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G11",
-            "ko": "G11"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G11.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)",
-            "ko": "`docs/game-logic/Hostile-Group-G11.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G12",
-            "ko": "G12"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G12.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)",
-            "ko": "`docs/game-logic/Hostile-Group-G12.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G13",
-            "ko": "G13"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G13.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)",
-            "ko": "`docs/game-logic/Hostile-Group-G13.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G14",
-            "ko": "G14"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G14.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)",
-            "ko": "`docs/game-logic/Hostile-Group-G14.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G15",
-            "ko": "G15"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G15.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)",
-            "ko": "`docs/game-logic/Hostile-Group-G15.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G16",
-            "ko": "G16"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G16.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)",
-            "ko": "`docs/game-logic/Hostile-Group-G16.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G17",
-            "ko": "G17"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G17.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)",
-            "ko": "`docs/game-logic/Hostile-Group-G17.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G18",
-            "ko": "G18"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G18.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)",
-            "ko": "`docs/game-logic/Hostile-Group-G18.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G19",
-            "ko": "G19"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G19.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)",
-            "ko": "`docs/game-logic/Hostile-Group-G19.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G20",
-            "ko": "G20"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G20.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)",
-            "ko": "`docs/game-logic/Hostile-Group-G20.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G21",
-            "ko": "G21"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G21.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)",
-            "ko": "`docs/game-logic/Hostile-Group-G21.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G22",
-            "ko": "G22"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G22.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)",
-            "ko": "`docs/game-logic/Hostile-Group-G22.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G23",
-            "ko": "G23"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G23.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)",
-            "ko": "`docs/game-logic/Hostile-Group-G23.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "G24",
-            "ko": "G24"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/game-logic/Hostile-Group-G24.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)",
-            "ko": "`docs/game-logic/Hostile-Group-G24.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`)"
-          },
-          {
-            "en": "ea81bb9 body present; SoT names match; banned tokens 0; issue #17 curation approved",
-            "ko": "ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인"
-          }
-        ],
-        [
-          {
-            "en": "ISO-house-influence",
-            "ko": "ISO-house-influence"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/assets/wiki/house-influence-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`)",
-            "ko": "`docs/assets/wiki/house-influence-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`)"
-          },
-          {
-            "en": "Publication approved (operating-house HP/HC labels match, consistent with Cast-Relations and Operating-Houses.md, build fragment confirmed)",
-            "ko": "게시 승인 (운영가문/HP/HC 라벨 일치, Cast-Relations 및 Operating-Houses.md와 정합, 빌드 fragment 확인)"
-          }
-        ],
-        [
-          {
-            "en": "ISO-hostile-ecology",
-            "ko": "ISO-hostile-ecology"
-          },
-          {
-            "en": "Published",
-            "ko": "게시"
-          },
-          {
-            "en": "`docs/assets/wiki/hostile-ecology-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`)",
-            "ko": "`docs/assets/wiki/hostile-ecology-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`)"
-          },
-          {
-            "en": "Publication approved (G01–G24 labels match Hostile-Ecology-Index.md, G07+ incompleteness ignored, build fragment confirmed)",
-            "ko": "게시 승인 (G01–G24 라벨 및 Hostile-Ecology-Index.md와 일치, G07+ 미완성 무시, 빌드 fragment 확인)"
-          }
-        ]
-      ]
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "게시-문서와-조각-현황-p15",
-      "text": {
-        "en": [
-          {
-            "text": "State 01 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-01"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 02 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-02"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 03 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-03"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 04 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-04"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 05 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-05"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 06 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-06"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 07 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-07"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 08 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-08"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 09 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-09"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 10 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-10"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 11 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-11"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 12 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-12"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 13 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-13"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 14 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-14"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 15 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-15"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "State 16 ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-16"
-            }
-          }
-        ],
-        "ko": [
-          {
-            "text": "국가 01 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-01"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 02 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-02"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 03 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-03"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 04 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-04"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 05 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-05"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 06 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-06"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 07 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-07"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 08 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-08"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 09 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-09"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 10 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-10"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 11 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-11"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 12 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-12"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 13 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-13"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 14 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-14"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 15 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-15"
-            }
-          },
-          {
-            "text": " · "
-          },
-          {
-            "text": "국가 16 명부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-State-16"
-            }
-          }
-        ]
+        "en": "The relation ledger recorded contracts, protection, command, and rivalry among people.",
+        "ko": "관계 원장에는 인물 사이의 계약·보호·지휘·경쟁 등이 기록되어 있다."
       }
     },
     {
@@ -1136,7 +99,7 @@
           },
           {
             "en": "Water Director-General",
-            "ko": "급수총재"
+            "ko": "군주"
           },
           {
             "en": "Core",
@@ -1153,8 +116,8 @@
             "ko": "이서담"
           },
           {
-            "en": "Yangcheon ration-district representative",
-            "ko": "양천 배급구역 대표"
+            "en": "Yangcheon district chief",
+            "ko": "양천 구역장"
           },
           {
             "en": "S1",
@@ -1207,8 +170,8 @@
             "ko": "최한결"
           },
           {
-            "en": "Sinjeong Depot armored repair-train master",
-            "ko": "신정기지 장갑보수열차장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -1279,8 +242,8 @@
             "ko": "유세진"
           },
           {
-            "en": "Sinjeong Depot rail-passage dispatcher",
-            "ko": "신정기지 철도통행 배차관"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -1297,8 +260,8 @@
             "ko": "허도담"
           },
           {
-            "en": "Sinjeong Depot water-gate pump mechanic",
-            "ko": "신정기지 수문펌프 정비사"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -1405,8 +368,8 @@
             "ko": "제윤"
           },
           {
-            "en": "Sinjeong Depot passage-toll registrar",
-            "ko": "신정기지 통행세 기록관"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -1441,8 +404,8 @@
             "ko": "허은찬"
           },
           {
-            "en": "Sinjeong Depot siding power supervisor",
-            "ko": "신정기지 유치선 전력감독"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -1495,8 +458,8 @@
             "ko": "채한솔"
           },
           {
-            "en": "Sinjeong Depot emergency generator operator",
-            "ko": "신정기지 비상발전 운전장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -1513,8 +476,8 @@
             "ko": "고늘결"
           },
           {
-            "en": "Sinjeong–Ttukseom water-convoy train crew member",
-            "ko": "신정-뚝섬 급수호송 열차 승무원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -1585,8 +548,8 @@
             "ko": "여리안"
           },
           {
-            "en": "First Compact original custody clerk",
-            "ko": "첫 협약 원본 보관 서기"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -1621,8 +584,8 @@
             "ko": "우오름"
           },
           {
-            "en": "Lesser States Council water commissariat clerk",
-            "ko": "약소국 회의 급수병참 서기"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -1673,7 +636,7 @@
           },
           {
             "en": "Fabrication Council Mediator",
-            "ko": "제작평의회 중재자"
+            "ko": "위원장"
           },
           {
             "en": "Core",
@@ -1690,8 +653,8 @@
             "ko": "정시우"
           },
           {
-            "en": "Cheonwang Depot fabrication elder",
-            "ko": "천왕기지 제작원로"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -1834,8 +797,8 @@
             "ko": "허다온"
           },
           {
-            "en": "Cheonwang Depot wheel mechanic",
-            "ko": "천왕기지 차륜 정비사"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -1978,8 +941,8 @@
             "ko": "표예담"
           },
           {
-            "en": "Cheonwang Depot siding-dispatch duty officer",
-            "ko": "천왕기지 유치배차 실무장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -2086,8 +1049,8 @@
             "ko": "배온결"
           },
           {
-            "en": "merit-compensation ledger clerk",
-            "ko": "공신 보상 원장 서기"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -2158,8 +1121,8 @@
             "ko": "기필호"
           },
           {
-            "en": "Hegemony War fabrication commissariat",
-            "ko": "패권전 제작 병참"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -2228,7 +1191,7 @@
           },
           {
             "en": "Chair of Taeuk Group",
-            "ko": "태욱그룹 회장"
+            "ko": "회장"
           },
           {
             "en": "주요",
@@ -2299,8 +1262,8 @@
             "ko": "김도하"
           },
           {
-            "en": "Magok–Banghwa residents' representative",
-            "ko": "마곡·방화 주민대표"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -2317,8 +1280,8 @@
             "ko": "유민호"
           },
           {
-            "en": "Banghwa Depot siding and dispatch chief",
-            "ko": "방화기지 유치·배차장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -2389,8 +1352,8 @@
             "ko": "허서겸"
           },
           {
-            "en": "Banghwa Depot research-vehicle mechanic",
-            "ko": "방화기지 연구차량 정비사"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -2407,8 +1370,8 @@
             "ko": "구연재"
           },
           {
-            "en": "Magok certified-cargo logistics merchant",
-            "ko": "마곡 인증화물 물류상"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -2443,8 +1406,8 @@
             "ko": "채봄"
           },
           {
-            "en": "Banghwa gate patrol squad leader",
-            "ko": "방화 관문 순찰대 조장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -2515,8 +1478,8 @@
             "ko": "변태온"
           },
           {
-            "en": "Magok concourse stationmaster",
-            "ko": "마곡 대합실 역장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -2533,8 +1496,8 @@
             "ko": "허미리"
           },
           {
-            "en": "Banghwa Depot siding duty officer",
-            "ko": "방화기지 유치 실무장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -2551,8 +1514,8 @@
             "ko": "구선율"
           },
           {
-            "en": "Banghwa residents' market broker",
-            "ko": "방화 주민시장 중개인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -2659,8 +1622,8 @@
             "ko": "류하늘"
           },
           {
-            "en": "Great Blackout emergency-power clerk",
-            "ko": "대정전 비상권한 서기"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -2695,8 +1658,8 @@
             "ko": "여다솜"
           },
           {
-            "en": "Lesser States Council technology-sharing clerk",
-            "ko": "약소국 회의 기술공유 서기"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -2801,7 +1764,7 @@
           },
           {
             "en": "Inheritor of the Purification Principle",
-            "ko": "정수원리 전승자"
+            "ko": "당회장"
           },
           {
             "en": "Core",
@@ -2836,8 +1799,8 @@
             "ko": "한소미"
           },
           {
-            "en": "Seongsu workshop council representative",
-            "ko": "성수 공방평의회 대표"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -2872,8 +1835,8 @@
             "ko": "김보람"
           },
           {
-            "en": "Ttukseom pump defense chief",
-            "ko": "뚝섬 펌프수비대장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -2890,8 +1853,8 @@
             "ko": "이준택"
           },
           {
-            "en": "Gunja Depot vehicle maintenance chief",
-            "ko": "군자기지 차량정비장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -2944,8 +1907,8 @@
             "ko": "장민재"
           },
           {
-            "en": "Seongsu–Seongdong water-supply citizens' representative",
-            "ko": "성수·성동 급수 시민대표"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -2962,8 +1925,8 @@
             "ko": "유하은"
           },
           {
-            "en": "Seongsu leather and small-machinery trade representative",
-            "ko": "성수 가죽·소형기계 직능대표"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S1",
@@ -2980,8 +1943,8 @@
             "ko": "허겸"
           },
           {
-            "en": "Seongsu alley-pump mechanic",
-            "ko": "성수 골목펌프 정비사"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -2998,8 +1961,8 @@
             "ko": "구도영"
           },
           {
-            "en": "Seongsu packing-transport logistics merchant",
-            "ko": "성수 패킹운송 물류상"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -3016,8 +1979,8 @@
             "ko": "진모래"
           },
           {
-            "en": "Ttukseom pump-room medic",
-            "ko": "뚝섬 펌프실 의무원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -3070,8 +2033,8 @@
             "ko": "명강산"
           },
           {
-            "en": "Gunja–Seongsu flooded-tunnel surveyor",
-            "ko": "군자-성수 침수터널 탐사원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -3106,8 +2069,8 @@
             "ko": "변오름"
           },
           {
-            "en": "Seongsu concourse stationmaster",
-            "ko": "성수 대합실 역장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -3124,8 +2087,8 @@
             "ko": "표누리"
           },
           {
-            "en": "Gunja Depot siding duty officer",
-            "ko": "군자기지 유치 실무장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -3142,8 +2105,8 @@
             "ko": "명우솔"
           },
           {
-            "en": "Seongsu workshop-market auctioneer",
-            "ko": "성수 공방시장 경매사"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -3178,8 +2141,8 @@
             "ko": "변석훈"
           },
           {
-            "en": "Ttukseom pump-room generator operator",
-            "ko": "뚝섬 펌프실 발전운전장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -3196,8 +2159,8 @@
             "ko": "종나솔"
           },
           {
-            "en": "Ttukseom–Sinjeong water-convoy train crew member",
-            "ko": "뚝섬-신정 급수호송 열차 승무원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -3356,7 +2319,7 @@
           },
           {
             "en": "Water-Supply Escort Chief",
-            "ko": "상수호위사령"
+            "ko": "사령관"
           },
           {
             "en": "Core",
@@ -3733,8 +2696,8 @@
             "ko": "우지호"
           },
           {
-            "en": "military registry registration clerk",
-            "ko": "군사호적 등록 서기"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -3841,8 +2804,8 @@
             "ko": "여서하"
           },
           {
-            "en": "black dispatch sheet investigation clerk",
-            "ko": "검은 배차표 조사 서기"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -3911,7 +2874,25 @@
           },
           {
             "en": "Chief of the Record Bureau",
-            "ko": "기록청장"
+            "ko": "대통령"
+          },
+          {
+            "en": "Core",
+            "ko": "주요"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "Kim Yeongyu",
+            "ko": "김연규"
+          },
+          {
+            "en": "Head of the Onmin Council",
+            "ko": "온민의 수장"
           },
           {
             "en": "Core",
@@ -4270,8 +3251,8 @@
             "ko": "어태산"
           },
           {
-            "en": "Sixteen Banners ratification custodian",
-            "ko": "열여섯 깃발 인준 보관인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -4288,8 +3269,8 @@
             "ko": "란지호"
           },
           {
-            "en": "merit-compensation roster party",
-            "ko": "공신 보상 명부 당사자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -4306,8 +3287,8 @@
             "ko": "섭도윤"
           },
           {
-            "en": "Lesser States Council record courier",
-            "ko": "약소국 회의 기록 전령"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -4394,7 +3375,7 @@
           },
           {
             "en": "Railway Coordinator",
-            "ko": "철도조정관"
+            "ko": "역장"
           },
           {
             "en": "Core",
@@ -4771,8 +3752,8 @@
             "ko": "추한결"
           },
           {
-            "en": "second Water Compact transshipment witness",
-            "ko": "둘째 급수협약 환적 증인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -4789,8 +3770,8 @@
             "ko": "어지율"
           },
           {
-            "en": "Lesser States Council train guide",
-            "ko": "약소국 회의 열차 안내인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -4877,7 +3858,7 @@
           },
           {
             "en": "Director of the Central Technical Preservation Institute",
-            "ko": "중앙기술보존원 원장"
+            "ko": "원장"
           },
           {
             "en": "주요",
@@ -4984,8 +3965,8 @@
             "ko": "지윤재"
           },
           {
-            "en": "Noryangjin ice-machine mechanic",
-            "ko": "노량진 제빙기 정비사"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -5020,8 +4001,8 @@
             "ko": "연가온"
           },
           {
-            "en": "Noryangjin market medic",
-            "ko": "노량진시장 의무원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -5092,8 +4073,8 @@
             "ko": "차진아"
           },
           {
-            "en": "settlement-right ledger registrar",
-            "ko": "결제권 원장 기록관"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -5110,8 +4091,8 @@
             "ko": "설초아"
           },
           {
-            "en": "Noryangjin Station concourse stationmaster",
-            "ko": "노량진역 대합실 역장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -5128,8 +4109,8 @@
             "ko": "지마루"
           },
           {
-            "en": "Noryangjin cold-storage depot supervisor",
-            "ko": "노량진 냉동기지 감독"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -5182,8 +4163,8 @@
             "ko": "나루희"
           },
           {
-            "en": "Noryangjin ice-making emergency generator operator",
-            "ko": "노량진 제빙 비상발전 운전장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -5290,8 +4271,8 @@
             "ko": "추보람"
           },
           {
-            "en": "Lesser States Council food convoy shipowner",
-            "ko": "약소국 회의 식량 호송 선주"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -5308,8 +4289,8 @@
             "ko": "어도윤"
           },
           {
-            "en": "first Water Compact market witness",
-            "ko": "첫 급수협약 시장 증인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -5360,7 +4341,7 @@
           },
           {
             "en": "Broadcast Verifier",
-            "ko": "방송검증관"
+            "ko": "의장"
           },
           {
             "en": "Core",
@@ -5791,8 +4772,8 @@
             "ko": "추우찬"
           },
           {
-            "en": "eleven-seat council relay record keeper",
-            "ko": "열한 자리 회의 중계 기록원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -5861,7 +4842,7 @@
           },
           {
             "en": "Refugee Representative",
-            "ko": "난민대표"
+            "ko": "방장"
           },
           {
             "en": "Core",
@@ -6202,8 +5183,8 @@
             "ko": "란민준"
           },
           {
-            "en": "military registry refusal family",
-            "ko": "군사호적 거부 가족"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -6256,8 +5237,8 @@
             "ko": "단유진"
           },
           {
-            "en": "Lesser States Council refugee attendant",
-            "ko": "약소국 회의 난민 수행원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -6292,8 +5273,8 @@
             "ko": "홍은서"
           },
           {
-            "en": "merit-compensation relief party",
-            "ko": "공신 보상 구호 당사자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -6362,7 +5343,7 @@
           },
           {
             "en": "Depot Elder",
-            "ko": "차량기지 원로"
+            "ko": "회장"
           },
           {
             "en": "Core",
@@ -6595,8 +5576,8 @@
             "ko": "감두"
           },
           {
-            "en": "Changdong rolling-stock depot duty chief",
-            "ko": "창동 차량기지 당직장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -6775,8 +5756,8 @@
             "ko": "단건우"
           },
           {
-            "en": "Lesser States Council northern envoy technician",
-            "ko": "약소국 회의 북부 사절 기술자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -6793,8 +5774,8 @@
             "ko": "순하준"
           },
           {
-            "en": "second Water Compact wheel exchange witness",
-            "ko": "둘째 급수협약 차륜 교환 증인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -6845,7 +5826,7 @@
           },
           {
             "en": "Dispatch Medical Officer",
-            "ko": "배차의무관"
+            "ko": "사장"
           },
           {
             "en": "Core",
@@ -7240,8 +6221,8 @@
             "ko": "석봄우"
           },
           {
-            "en": "Hegemony War opening requisition crowd representative",
-            "ko": "패권전 개막 징발 인파 대표"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -7346,7 +6327,7 @@
           },
           {
             "en": "Head of the Healing Guild",
-            "ko": "치료길드 대표"
+            "ko": "단장"
           },
           {
             "en": "Core",
@@ -7759,8 +6740,8 @@
             "ko": "근우람"
           },
           {
-            "en": "military registry treatment refusal witness",
-            "ko": "군사호적 치료 거부 증인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -7777,8 +6758,8 @@
             "ko": "흥다온"
           },
           {
-            "en": "Hegemony War opening requisition crowd representative",
-            "ko": "패권전 개막 징발 인파 대표"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -8278,8 +7259,8 @@
             "ko": "초태온"
           },
           {
-            "en": "Lesser States Council gate witness",
-            "ko": "약소국 회의 관문 증인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -8296,8 +7277,8 @@
             "ko": "석주아"
           },
           {
-            "en": "Sixteen Banners gate ratification party",
-            "ko": "열여섯 깃발 관문 인준 관계자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -8366,7 +7347,7 @@
           },
           {
             "en": "Auction Arbiter",
-            "ko": "경매조정인"
+            "ko": "대주교"
           },
           {
             "en": "Core",
@@ -8491,8 +7472,8 @@
             "ko": "동미온"
           },
           {
-            "en": "Garak wholesale logistics merchant",
-            "ko": "가락 도매 물류상"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -8509,8 +7490,8 @@
             "ko": "방늘재"
           },
           {
-            "en": "Jamsil assembly clinic outpost medic",
-            "ko": "잠실 집결 의무소 거점 의무원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -8599,8 +7580,8 @@
             "ko": "판효담"
           },
           {
-            "en": "Garak bulk warehouse base duty chief, duty officer of Ra Jinwoo",
-            "ko": "가락 대형 창고 기지 당직장, 라진우의 실무 담당자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -8617,8 +7598,8 @@
             "ko": "천솔빛"
           },
           {
-            "en": "Jamsil Station concourse outpost chief, duty officer of Jeon Nagyeong",
-            "ko": "잠실역 대합실 거점장, 전나경의 실무 담당자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -8761,8 +7742,8 @@
             "ko": "초시람"
           },
           {
-            "en": "merit-compensation auction party",
-            "ko": "공신 보상 경매 당사자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -8849,7 +7830,7 @@
           },
           {
             "en": "Contract Auditor",
-            "ko": "계약감사관"
+            "ko": "위원장"
           },
           {
             "en": "Core",
@@ -8956,8 +7937,8 @@
             "ko": "수늘결"
           },
           {
-            "en": "Suseo depot mechanic, duty officer of Eun Boram",
-            "ko": "수서 기지 정비사, 은보람의 실무 담당자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -8974,8 +7955,8 @@
             "ko": "선초별"
           },
           {
-            "en": "Gangnam contract-sheet market logistics merchant, duty officer of Ha Seojin",
-            "ko": "강남 계약서 시장 물류상, 하서진의 실무 담당자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -9046,8 +8027,8 @@
             "ko": "천늘우"
           },
           {
-            "en": "Suseo outer surveyor",
-            "ko": "수서 외곽 탐사원"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -9082,8 +8063,8 @@
             "ko": "방마빛"
           },
           {
-            "en": "Suseo Station concourse outpost chief",
-            "ko": "수서역 대합실 거점장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -9118,8 +8099,8 @@
             "ko": "원초온"
           },
           {
-            "en": "Suseo rolling-stock depot duty chief",
-            "ko": "수서 차량기지 당직장"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S2",
@@ -9154,8 +8135,8 @@
             "ko": "근주하"
           },
           {
-            "en": "lesser-states joint negotiation signing clerk",
-            "ko": "약소국 공동교섭 서명 서기"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -9190,8 +8171,8 @@
             "ko": "매도한"
           },
           {
-            "en": "five unification drafts party",
-            "ko": "다섯 통일안 초안 관계자"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -9208,8 +8189,8 @@
             "ko": "탁세온"
           },
           {
-            "en": "second Water Compact signing witness",
-            "ko": "둘째 급수협약 서명 증인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -9226,8 +8207,8 @@
             "ko": "범하겸"
           },
           {
-            "en": "Sixteen Banners ratification audit assistant",
-            "ko": "열여섯 깃발 인준 감사 보조"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -9244,8 +8225,8 @@
             "ko": "창은찬"
           },
           {
-            "en": "Hegemony War opening requisition refugee crowd representative",
-            "ko": "패권전 개막 징발 피난 인파 대표"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -9262,8 +8243,8 @@
             "ko": "초진솔"
           },
           {
-            "en": "black dispatch train investigation witness",
-            "ko": "검은 배차 열차 조사 증인"
+            "en": "",
+            "ko": ""
           },
           {
             "en": "S3",
@@ -9298,8 +8279,8 @@
       "kind": "paragraph",
       "anchor": "국가-16-정동노총-p2",
       "text": {
-        "en": "412 in total",
-        "ko": "총 412명"
+        "en": "426 people in the sixteen state ledgers",
+        "ko": "십육국 명부 426명"
       }
     },
     {
@@ -9315,36 +8296,8 @@
       "kind": "paragraph",
       "anchor": "무소속-인물-p1",
       "text": {
-        "en": [
-          {
-            "text": "Unaffiliated people outside the sixteen state ledgers were gathered in this column alone. The source of record lay in the "
-          },
-          {
-            "text": "unaffiliated people ledger",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-Unaffiliated"
-            }
-          },
-          {
-            "text": "."
-          }
-        ],
-        "ko": [
-          {
-            "text": "16국 명부 바깥의 무소속 인물은 이 칸에만 모은다. 정본은 "
-          },
-          {
-            "text": "무소속 인물 장부",
-            "link": {
-              "domain": "characters",
-              "slug": "Cast-Unaffiliated"
-            }
-          },
-          {
-            "text": "에 둔다."
-          }
-        ]
+        "en": "Two unaffiliated people stood outside the sixteen state ledgers.",
+        "ko": "십육국 명부 바깥에는 무소속 인물 두 명이 있다."
       }
     },
     {
@@ -9405,6 +8358,61 @@
             "ko": "1"
           }
         ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "출처",
+      "depth": 2,
+      "text": {
+        "en": "Sources",
+        "ko": "출처"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "출처-list1",
+      "items": [
+        {
+          "ko": [
+            {
+              "text": "관계 원장",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Relations"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Relation Ledger",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Relations"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "무소속 인물",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Unaffiliated"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Unaffiliated Cast",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Unaffiliated"
+              }
+            }
+          ]
+        }
       ]
     }
   ],
