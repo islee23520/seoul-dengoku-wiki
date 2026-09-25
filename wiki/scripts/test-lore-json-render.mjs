@@ -87,8 +87,12 @@ for (const { path, document } of documents) {
   for (const locale of ['ko', 'en']) {
     test(`${document.id} renders to Markdown that keeps every block (${locale})`, () => {
       const tree = parse(renderLoreMarkdown(document, locale))
-      assert.equal(tree.children.length, document.content.length, path)
-      document.content.forEach((node, i) => assertBlock(node, tree.children[i], locale, `${path} ${node.anchor}`))
+      const eventAnchors = document.content.filter((node) => node.kind === 'heading' && /-xt0[1-5]-/u.test(node.anchor ?? '')).map((node) => node.anchor)
+      const publishedAnchors = tree.children.filter((block) => block.type === 'paragraph' && block.children.length === 2 && block.children[0].type === 'html' && block.children[1].type === 'html' && /^<a id="[^"]+">$/u.test(block.children[0].value ?? ''))
+      assert.deepEqual(publishedAnchors.map((block) => block.children[0].value.match(/^<a id="([^"]+)">$/u)[1]), eventAnchors, path)
+      const contentBlocks = tree.children.filter((block) => !publishedAnchors.includes(block))
+      assert.equal(contentBlocks.length, document.content.length, path)
+      document.content.forEach((node, i) => assertBlock(node, contentBlocks[i], locale, `${path} ${node.anchor}`))
     })
   }
 }

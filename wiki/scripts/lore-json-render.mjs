@@ -29,8 +29,10 @@ function renderLeaf(leaf, context, { cell = false } = {}) {
 
 function renderNode(node, locale, context) {
   switch (node.kind) {
-    case 'heading':
-      return `${'#'.repeat(node.depth)} ${renderLeaf(node.text[locale], context)}`
+    case 'heading': {
+      const heading = `${'#'.repeat(node.depth)} ${renderLeaf(node.text[locale], context)}`
+      return /-xt0[1-5]-/u.test(node.anchor ?? '') ? `<a id="${node.anchor}"></a>\n\n${heading}` : heading
+    }
     case 'paragraph':
       return renderLeaf(node.text[locale], context)
     case 'quote':

@@ -41,8 +41,60 @@ test('timeline overview cross-links the current 16 states and world canon', asyn
   const published = new Set([...contract.documents.map((document) => document.route), '/people'])
   const routes = new Set(data.years.flatMap((entry) => entry.relatedDocuments.map((document) => document.route)))
   for (const route of routes) assert.ok(published.has(route), `unpublished related route ${route}`)
-  // The 2026 re-authored annals are Seoul-internal and never mention XT01–XT05, so External-Theaters is not a required link.
   for (const route of ['/world/Sixteen-States', '/world/Chaebol-Houses-and-Century-Factions', '/world/Faith-Culture-Schism', '/world/Era-Arms-and-Tech-Level']) assert.ok(routes.has(route), route)
+})
+
+test('each external theater links to its dated chronicle entries in the generated pages', async () => {
+  const timeline = await readJson('../public/timeline-overview.json')
+  const annals = await readJson('../../lore/chronology/Century-Annals.json')
+  const publishedAnnals = await readJson('../src/generated/world/Century-Annals.json')
+  const theaterPage = await readJson('../src/generated/world/External-Theaters.json')
+  const expected = {
+    XT01: ['2069년-xt01-임진-제방-임시-검역소', '2104년-xt01-임진-제방-임시-검역소', '2125년-xt01-광화문-정부서울청사'],
+    XT02: ['2079년-xt02-한강-하구-임시-부두', '2114년-xt02-한강-하구-임시-부두'],
+    XT03: ['2079년-xt03-용산-환적창'],
+    XT04: ['2069년-xt04-암사-야적장', '2114년-xt04-암사-야적장'],
+    XT05: ['2069년-xt05-여의도-회관', '2122년-xt05-여의도-회관'],
+  }
+  const datedAnchors = new Map()
+  let year = null
+  for (const block of annals.content) {
+    if (block.kind !== 'heading') continue
+    if (block.depth === 3) year = Number(koText(block.text.ko).match(/^((?:20|21)\d{2})년$/u)?.[1])
+    else if (block.depth === 2) year = null
+    if (year && block.anchor) datedAnchors.set(block.anchor, year)
+  }
+  const links = new Map()
+  const publishedAnchors = new Set()
+  const collectAnchor = (node) => {
+    const anchor = node.type === 'html' && node.value?.match(/^<a id="([^"]+)">$/u)?.[1]
+    if (anchor) publishedAnchors.add(anchor)
+    for (const child of node.children ?? []) collectAnchor(child)
+  }
+  for (const block of publishedAnnals.blocks) collectAnchor(block)
+  let theaterId = null
+  const visit = (node) => {
+    if (node.type === 'link') links.get(theaterId)?.add(node.url)
+    for (const child of node.children ?? []) visit(child)
+  }
+  for (const block of theaterPage.blocks) {
+    if (block.type === 'heading' && block.depth === 2) {
+      theaterId = Object.keys(expected).find((id) => (block.children ?? []).map((node) => node.value ?? '').join('').startsWith(id)) ?? null
+      if (theaterId) links.set(theaterId, new Set())
+    }
+    if (theaterId) visit(block)
+  }
+  for (const [id, anchors] of Object.entries(expected)) {
+    assert.ok(links.has(id), `missing generated theater ${id}`)
+    for (const anchor of anchors) {
+      const datedYear = datedAnchors.get(anchor)
+      assert.ok(datedYear, `${id} missing dated canon anchor ${anchor}`)
+      assert.ok(publishedAnchors.has(anchor), `${id} missing published anchor ${anchor}`)
+      assert.ok(links.get(id).has(`/world/Century-Annals#${anchor}`), `${id} missing generated link ${anchor}`)
+      const timelineYear = timeline.years.find((entry) => entry.year === datedYear)
+      assert.ok(timelineYear?.relatedDocuments.some((document) => document.route === '/world/External-Theaters'), `${id} missing ${datedYear} timeline route`)
+    }
+  }
 })
 
 test('Scenario Timeline mounts the complete timeline overview', async () => {

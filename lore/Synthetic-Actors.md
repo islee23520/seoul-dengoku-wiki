@@ -1,7 +1,9 @@
 # 합성 사회 인격
 
+이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
+
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `065465902b159cc79a6e2274c09ded1620212c5fe19f65e4dced61bf2c777445`
+- 원본 해시: `840eb4a34065e527ce76802116c8bc358f4c96be0817ba66e62cfd1c8d17bfdf`
 
 ## H01 · 한누리 (누리)
 

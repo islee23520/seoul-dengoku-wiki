@@ -8557,7 +8557,10 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/chronology/Century-Annals.json#2069년-xt01-임진-제방-임시-검역소",
+        "lore/chronology/Century-Annals.json#2104년-xt01-임진-제방-임시-검역소",
+        "lore/chronology/Century-Annals.json#2125년-xt01-광화문-정부서울청사"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8598,7 +8601,7 @@
           "summary": "광화문 청사가 위조 혈연 증서를 가려내고 아차산 관문이 봉인 키를 나눈다"
         }
       ],
-      "prose": "임진 제방 아래 임시 검역소에서 안국총림 안내원이 귀환 명부를 손전등 빛에 비춘다.\n\n성하그룹 호송은 관문 밖 진흙길에 바퀴를 적시고, 신내 환승 창구는 가족 대기열만 먼저 연다.\n\n광화문 대한민국정부 주사가 위조 혈연 증서의 잉크 번짐을 짚고, 아차산 관문 초소는 봉인 키를 두 조각으로 나눈다.",
+      "prose": "임진 제방 아래 임시 검역소에서 안국총림 안내원이 귀환 명부를 손전등 빛에 비춘다.\n\n성하그룹 호송은 관문 밖 진흙길에 바퀴를 적시고, 신내 환승 창구는 가족 대기열만 먼저 연다.\n\n광화문 대한민국정부 주사가 위조 혈연 증서의 잉크 번짐을 짚고, 아차산 관문 초소는 봉인 키를 두 조각으로 나눈다.\n\n연표 기록: [2069년 기록](/world/Century-Annals#2069년-xt01-임진-제방-임시-검역소) · [2104년 기록](/world/Century-Annals#2104년-xt01-임진-제방-임시-검역소) · [2125년 기록](/world/Century-Annals#2125년-xt01-광화문-정부서울청사)",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "임진강·한강 합류와 북부 환승·피난 회랑이라는 공개 지형 앵커만 사용한다.",
@@ -8793,7 +8796,9 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/chronology/Century-Annals.json#2079년-xt02-한강-하구-임시-부두",
+        "lore/chronology/Century-Annals.json#2114년-xt02-한강-하구-임시-부두"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8834,7 +8839,7 @@
           "summary": "노량진 얼음 신용이 흔들릴 때 상암 송신이 경매 방송만 중계한다"
         }
       ],
-      "prose": "한강 하구 임시 부두에서 수문국 수문 당직이 조위표와 배수 밸브를 맞춘다.\n\n규격맹 이사는 냉동 압축기 소음을 듣고 부품 순번을 바꾸고, 태욱그룹 대리가 봉인 해시가 깨진 상자만 따로 둔다.\n\n중앙기술보존원 점검원은 전력 경고등이 켜져도 한강 남안 냉동 순번을 지우지 않는다.\n\n여의도출자연합회는 가격 구호 대신 부두 안전 회람만 돌린다.",
+      "prose": "한강 하구 임시 부두에서 수문국 수문 당직이 조위표와 배수 밸브를 맞춘다.\n\n규격맹 이사는 냉동 압축기 소음을 듣고 부품 순번을 바꾸고, 태욱그룹 대리가 봉인 해시가 깨진 상자만 따로 둔다.\n\n중앙기술보존원 점검원은 전력 경고등이 켜져도 한강 남안 냉동 순번을 지우지 않는다.\n\n여의도출자연합회는 가격 구호 대신 부두 안전 회람만 돌린다.\n\n연표 기록: [2079년 기록](/world/Century-Annals#2079년-xt02-한강-하구-임시-부두) · [2114년 기록](/world/Century-Annals#2114년-xt02-한강-하구-임시-부두)",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "서해 연안·한강 하구 물길과 강서·영등포 일대의 공개 시장·정수 위치만 사실 앵커로 둔다.",
@@ -9030,7 +9035,8 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/chronology/Century-Annals.json#2079년-xt03-용산-환적창"
       ],
       "revision": 1,
       "projection_targets": [
@@ -9071,7 +9077,7 @@
           "summary": "노량진 통역 창구가 용어 충돌을 기록한 뒤 비공개 연결표 없이도 협정을 유지한다"
         }
       ],
-      "prose": "환적국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다.\n\n정동노총 지부장은 닫힌 항로 대신 내륙 회차 슬롯을 열고, 명동대교구 신부는 혼인·위령 인준 봉인을 붙인다.\n\n명부교회 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다.\n\n흑석 통역 창구는 외래어를 한국어 주석 옆에 적어, 비공개 연결표를 치워도 협정이 남게 한다.",
+      "prose": "환적국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다.\n\n정동노총 지부장은 닫힌 항로 대신 내륙 회차 슬롯을 열고, 명동대교구 신부는 혼인·위령 인준 봉인을 붙인다.\n\n명부교회 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다.\n\n흑석 통역 창구는 외래어를 한국어 주석 옆에 적어, 비공개 연결표를 치워도 협정이 남게 한다.\n\n연표 기록: [2079년 기록](/world/Century-Annals#2079년-xt03-용산-환적창)",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "한반도와 일본 열도 사이 해상 거리 및 공개 항로의 일반 개념만 사실 앵커로 둔다.",
@@ -9269,7 +9275,9 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/chronology/Century-Annals.json#2069년-xt04-암사-야적장",
+        "lore/chronology/Century-Annals.json#2114년-xt04-암사-야적장"
       ],
       "revision": 1,
       "projection_targets": [
@@ -9310,7 +9318,7 @@
           "summary": "아차산 관문이 광물 샘플 봉인을 검사한 뒤 위조 원산지 표를 폐기한다"
         }
       ],
-      "prose": "동방사 야적장에서 화차 중량 센서가 한 칸만 과하게 뛴다.\n\n신내운수 호송원은 그 칸을 우회 슬롯에 넣고, 성하그룹 대리가 동절 연료 드럼 순번을 다시 쓴다.\n\n흰십자단 의무실은 동상에 걸린 귀환 노동자의 장갑을 말리고, 아관사 중대장은 원산지 위조 표를 난로에 넣지 않고 증빙 봉투에 봉한다.\n\n누구의 정부도 단죄하지 않고 화차와 사람만 검수한다.",
+      "prose": "동방사 야적장에서 화차 중량 센서가 한 칸만 과하게 뛴다.\n\n신내운수 호송원은 그 칸을 우회 슬롯에 넣고, 성하그룹 대리가 동절 연료 드럼 순번을 다시 쓴다.\n\n흰십자단 의무실은 동상에 걸린 귀환 노동자의 장갑을 말리고, 아관사 중대장은 원산지 위조 표를 난로에 넣지 않고 증빙 봉투에 봉한다.\n\n누구의 정부도 단죄하지 않고 화차와 사람만 검수한다.\n\n연표 기록: [2069년 기록](/world/Century-Annals#2069년-xt04-암사-야적장) · [2114년 기록](/world/Century-Annals#2114년-xt04-암사-야적장)",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "대륙 철도와 극동 에너지 회랑의 지리 개념만 사실 앵커로 둔다.",
@@ -9513,7 +9521,9 @@
       "source_kind": "original-fiction",
       "source_anchors": [
         "LORE/factions/Sixteen-States.md",
-        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+        "GDD/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "lore/chronology/Century-Annals.json#2069년-xt05-여의도-회관",
+        "lore/chronology/Century-Annals.json#2122년-xt05-여의도-회관"
       ],
       "revision": 1,
       "projection_targets": [
@@ -9555,7 +9565,7 @@
           "summary": "마곡이 궤도 단말 오탐을 교정하고 가락이 이산가족 상담 창구를 연장한다"
         }
       ],
-      "prose": "여의도출자연합회 회관 옥상에서 잔여 대역 추첨 번호가 회람된다.\n\n수문국 수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 대한민국정부 주사가 인도 목록 해시를 시민 참관 칸에 붙인다.\n\n정동노총 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태욱그룹 대리가 궤도 단말의 오탐 경보를 끈다.\n\n명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.",
+      "prose": "여의도출자연합회 회관 옥상에서 잔여 대역 추첨 번호가 회람된다.\n\n수문국 수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 대한민국정부 주사가 인도 목록 해시를 시민 참관 칸에 붙인다.\n\n정동노총 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 태욱그룹 대리가 궤도 단말의 오탐 경보를 끈다.\n\n명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.\n\n연표 기록: [2069년 기록](/world/Century-Annals#2069년-xt05-여의도-회관) · [2122년 기록](/world/Century-Annals#2122년-xt05-여의도-회관)",
       "seoul_route": {
         "evidence_kind": "verified-concept-plus-original-fiction",
         "verified_geography": "위성·인도·방재 협력의 일반 개념과 공개 국제기구 명칭 수준만 사실 앵커로 둔다.",
