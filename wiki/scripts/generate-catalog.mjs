@@ -329,6 +329,8 @@ const mapPoint = ([x, y]) => [
   Number(((x - mapBounds.minX) / (mapBounds.maxX - mapBounds.minX) * mapWidth).toFixed(2)),
   Number(((mapBounds.maxY - y) / (mapBounds.maxY - mapBounds.minY) * mapHeight).toFixed(2)),
 ]
+const regionalBoundaries = JSON.parse(await readFile(resolve(publicRoot, 'regional-boundaries.json'), 'utf8'))
+const boundaryByCity = new Map(regionalBoundaries.map((entry) => [entry.city, entry]))
 const geometryPath = (geometry) => geometryRings(geometry).map((ring) => {
   const points = simplifyRing(ring).map(mapPoint)
   return points.map(([x, y], index) => `${index === 0 ? 'M' : 'L'}${x},${y}`).join(' ') + ' Z'
@@ -474,7 +476,6 @@ const anchorRules = {
   '태욱중공업 수원사업장': '수인분당',
   '영종지점(영종)': '공항철도'
 }
-// These are schematic continuations from the last mapped Seoul station, not surveyed track geometry.
 const vassalLineIds = {
   '경기도(고양)': '4-3', '제일수문(양평)': 'K', '제이수문(춘천)': 'G',
   '제1분공방(천안·아산, 이씨)': '2-1', '제2분공방(시흥)': 'SH',
@@ -509,15 +510,22 @@ const mapVassalName = (rawName) => {
 const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
   const suzerainId = stateIdByName.get(suzerainName)
   if (!suzerainId) throw new Error(`E_VASSAL_SUZERAIN_NOT_FOUND:${suzerainName}`)
+  const city = cityRules[rawName] || rawName
+  const boundary = boundaryByCity.get(city)
+  if (!boundary) throw new Error(`E_VASSAL_BOUNDARY:${city}`)
+  const [x, y] = mapPoint(boundary.centroid)
   return {
     name: mapVassalName(rawName),
-    city: cityRules[rawName] || rawName,
+    city,
     suzerain: suzerainId,
     founded,
     duty,
     anchor: anchorRules[rawName],
     lineId: vassalLineIds[rawName],
-    coordinateStatus: 'TODO'
+    x, y,
+    east: boundary.centroid[0], north: boundary.centroid[1],
+    coordinateStatus: 'surveyed',
+    coordinateSource: 'vuski/admdongkor ver20260701 (CC BY 4.0; KOSTAT SGIS)'
   }
 })
 if (vassals.length !== 13 || vassals.some((vassal) => !vassal.anchor || !officialLineData.lines[vassal.lineId])) throw new Error('E_VASSAL_LINE_ANCHOR')
@@ -527,6 +535,7 @@ const openingTerritories = {
   epoch: regionAtlas.fictional_epoch,
   width: mapWidth,
   height: mapHeight,
+  projection: { crs: 'EPSG:5179', minEast: mapBounds.minX, maxEast: mapBounds.maxX, minNorth: mapBounds.minY, maxNorth: mapBounds.maxY },
   attribution: regionAtlas.attribution,
   states: territoryStates,
   vassals,
