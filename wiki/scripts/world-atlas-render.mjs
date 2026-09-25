@@ -76,18 +76,27 @@ export function renderTheaters(atlas, atlasHash) {
   const lines = [...projectionPreamble(atlas, 'External-Theaters.md', '외부전구', atlasHash)];
   for (const theater of atlas.theaters ?? []) {
     lines.push(`## ${theater.id} · ${theater.display_name}`, '');
+    lines.push(`- 출처층: ${theater.source_kind}`);
+    lines.push(`- 확인: ${theater.verified}`);
+    lines.push(`- 추론: ${theater.inference}`);
+    lines.push(`- 창작: ${theater.original_fiction}`);
+    lines.push(`- 정사 연결표 제거 가능: ${theater.japan_bridge_removable ? '예' : '아니오'}`);
     lines.push(`- 연결 국가: ${(theater.states ?? []).map((id) => stateLabel(atlas, id)).join(', ')}`);
     lines.push('');
     lines.push(theater.prose.trim(), '');
     if (theater.seoul_route) {
       lines.push('### 서울 쪽 경로', '',
+        `- 확인된 지리: ${theater.seoul_route.verified_geography}`,
         `- 준비 거점: ${(theater.seoul_route.staging_nodes ?? []).join(' → ')}`,
+        `- 바깥 경계: ${theater.seoul_route.outbound_boundary}`,
+        `- 이동 시간: ${theater.seoul_route.fixed_duration}`,
         '');
     }
     if (theater.travel_constraints) {
       lines.push('### 이동·계절', '',
         `- 계절 조건: ${(theater.travel_constraints.seasonal_conditions ?? []).join(' / ')}`,
         `- 중단 조건: ${(theater.travel_constraints.suspension_conditions ?? []).join(' / ')}`,
+        `- 기록 원칙: ${theater.travel_constraints.rule}`,
         '');
     }
     if (theater.supply_chain) {
@@ -95,6 +104,7 @@ export function renderTheaters(atlas, atlasHash) {
       for (const flow of theater.supply_chain.flows ?? []) {
         lines.push(`- ${flow.kind} · ${flow.contents}: ${flow.handoff_rule}`);
       }
+      lines.push(`- 분리 원칙: ${theater.supply_chain.separation_rule}`);
       for (const checkpoint of theater.checkpoints ?? []) {
         lines.push(`- ${checkpoint.id} · ${checkpoint.place}: ${checkpoint.function} / ${(checkpoint.checks ?? []).join(', ')}`);
       }
@@ -104,6 +114,8 @@ export function renderTheaters(atlas, atlasHash) {
       lines.push('### 언어·소문', '',
         `- 기록 언어: ${theater.language_rumor_protocol.record_language}`,
         `- 통역 원칙: ${theater.language_rumor_protocol.interpreter_rule}`);
+      for (const rumor of theater.language_rumor_protocol.rumor_reliability ?? []) lines.push(`- ${rumor.tier}: ${rumor.rule}`);
+      lines.push(`- 금지 추론: ${theater.language_rumor_protocol.prohibited_inference}`);
       lines.push('');
     }
     lines.push('### 16국 이해', '');
@@ -119,8 +131,16 @@ export function renderTheaters(atlas, atlasHash) {
         `- 사건: ${theater.opening_event.scenario_id}`,
         `- 촉발: ${theater.opening_event.trigger}`,
         `- 충돌: ${theater.opening_event.conflict}`,
+        `- 첫 판단: ${theater.opening_event.player_decision}`,
         '');
     }
+    lines.push('### 플레이어 진입', '');
+    for (const entry of theater.player_entry_points ?? []) {
+      lines.push(`- ${entry.id} · ${entry.place}: ${entry.role} / 첫 판단 ${entry.first_decision}`);
+    }
+    lines.push('', '### 명시적 미정', '');
+    for (const unknown of theater.explicit_unknowns ?? []) lines.push(`- ${unknown}`);
+    lines.push('');
     lines.push('### 시나리오 쇄');
     for (const chain of theater.scenario_chains ?? []) {
       lines.push(`- ${chain.id}: ${chain.summary}`);
