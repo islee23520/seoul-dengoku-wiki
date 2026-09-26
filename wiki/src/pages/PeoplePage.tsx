@@ -36,7 +36,7 @@ export default function PeoplePage() {
         <div><p className="wiki-domain-label">서울:전국 공식 위키 · 인물</p><h1>등장인물 전체</h1></div>
         <span className="wiki-canon-badge">{peopleCatalog.length}명</span>
       </header>
-      <p>이 원장의 1,010명은 모두 영웅 인물이다. 각 인물은 생업과 경력에 따라 전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성을 갖는다. 다만 전투 클래스 이름과 개인별 배정은 아직 확정되지 않았으며, 제안 단계 분류를 인물 카드에 자동으로 붙이지 않는다.</p>
+      <p>이 원장의 1,016명은 모두 영웅 인물이다. 각 인물은 생업과 경력에 따라 전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성을 갖는다. 다만 전투 클래스 이름과 개인별 배정은 아직 확정되지 않았으며, 제안 단계 분류를 인물 카드에 자동으로 붙이지 않는다.</p>
       <section className="people-recommended" aria-labelledby="recommended-people-title">
         <h2 id="recommended-people-title">개막 추천 인물</h2>
         <ul>{recommendedPeople.map((person) => (

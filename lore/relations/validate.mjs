@@ -99,9 +99,9 @@ export function validate(dataset) {
     fk(row.parentStateId, stateIds, row.id);
     fk(row.sourceAnchor, stateAnchors, row.id);
   }
-  if (sources.registry.totalPeople !== 1010 || sources.registry.persons.length !== 1010 ||
+  if (sources.registry.totalPeople !== 1016 || sources.registry.persons.length !== 1016 ||
       sources.registry.persons.some((p, i) => p.id !== `K${String(i + 1).padStart(3, "0")}`) ||
-      people.length !== sources.registry.persons.length + config.provisionalPeople.length) errors.push("people: frozen K001–K1010 mismatch");
+      people.length !== sources.registry.persons.length + config.provisionalPeople.length) errors.push("people: issued K001–K1016 mismatch");
   for (const person of config.provisionalPeople) {
     if (!/^P\d{3}$/.test(person.id) || !(sources.relationSource.content.find((b) => b.anchor === person.sourceAnchor)?.rows || [])
       .some((r) => ko(r[0]) === person.name || ko(r[2]) === person.name)) errors.push(`provisional identity: missing source ${person.id}`);
@@ -146,5 +146,5 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const dataset = loadDataset();
   const errors = validate(dataset);
   if (errors.length) { console.error(errors.join("\n")); process.exitCode = 1; }
-  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1010 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
+  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1016 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
 }

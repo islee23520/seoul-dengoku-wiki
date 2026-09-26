@@ -35,7 +35,7 @@ const UNAFFILIATED_PATH = path.join(CHARS_DIR, "Cast-Unaffiliated.md");
 const TABLE_PATH = path.join(HERE, "person-id-candidates.json");
 
 export const SCHEMA = "wiki-person-id-candidates.v1";
-export const FROZEN = { existingK: 422, candidates: 588, total: 1010 };
+export const FROZEN = { existingK: 422, candidates: 594, total: 1016 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
@@ -91,8 +91,13 @@ export function loadContext() {
     }
   }
   const corridorsText = readFileSync(CORRIDORS_PATH, "utf8");
+  // The index displays ledger aliases; only these two identities are backed by corridor cards.
+  const corridorAliases = new Map([
+    ["린샤오메이 (임소매)", "린샤오메이"],
+    ["팜반득 (범반득)", "팜반득"],
+  ]);
   const corridorsNames = [...corridorsText.matchAll(/^\| ([^|]+) \|/gm)]
-    .map((m) => m[1].trim())
+    .map((m) => corridorAliases.get(m[1].trim()) ?? m[1].trim())
     .filter((n) => n !== "이름" && !/^-+$/.test(n));
   return {
     valuesBytes,
@@ -131,7 +136,7 @@ export function buildTable(ctx, baseCommit) {
       locked: p.locked === true,
     });
     const unaff = unaffByName.get(p.name);
-    if (unaff && unaff.characterId) {
+    if (unaff && unaff.characterId && !/^K\d+$/u.test(unaff.characterId)) {
       notes.push({
         type: "existing-non-k-character-id",
         name: p.name,
@@ -254,10 +259,10 @@ if (!CLI_WRITE) {
     assert.deepEqual(validateTable(committed, ctx), []);
   });
 
-  test("(b) 개수 불변식 422 + 588 = 1010", () => {
+  test("(b) 개수 불변식 422 + 594 = 1016", () => {
     assert.equal(committed.existingKCount, 422);
-    assert.equal(committed.candidateCount, 588);
-    assert.equal(committed.totalPeople, 1010);
+    assert.equal(committed.candidateCount, 594);
+    assert.equal(committed.totalPeople, 1016);
     assert.equal(committed.existingKCount + committed.candidateCount, committed.totalPeople);
     assert.equal(committed.candidateCount, committed.totalPeople - committed.existingKCount);
   });

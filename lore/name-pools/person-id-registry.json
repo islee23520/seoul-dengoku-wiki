@@ -2,14 +2,14 @@
   "schema": "wiki-person-id-registry.v1",
   "approvalRef": {
     "approvedBy": "owner",
-    "approvedAt": "2026-09-25",
-    "ownerRef": "2026-09-25 이일섭 K998 제1분공방 후계 교정 및 입력 해시 재승인",
-    "inputSha256": "963e16de7aea7f126e9f350c1a0018fbd9bc977e5cd8702ad77838e804ab53ba",
-    "candidatesSha256": "f212314cd864efdbf3932f414166a3d26101d5605154e0571719ba86f0b7b024"
+    "approvedAt": "2026-09-26",
+    "ownerRef": "2026-09-26 회랑 6명 수치·성별·K1011–K1016 및 최종 두 입력 해시 승인",
+    "inputSha256": "c785d729cdee59fbe196be50bb4ecb883ea5e289ebc68545796144dc23240ef7",
+    "candidatesSha256": "804027d2efdf5e864c0728a672ad87e9200f6c3866be88d40df61f6a97acbeef"
   },
-  "totalPeople": 1010,
+  "totalPeople": 1016,
   "existingKCount": 422,
-  "issuedCount": 588,
+  "issuedCount": 594,
   "persons": [
     {
       "id": "K001",
@@ -4056,6 +4056,30 @@
     {
       "id": "K1010",
       "name": "신준"
+    },
+    {
+      "id": "K1011",
+      "name": "린샤오메이"
+    },
+    {
+      "id": "K1012",
+      "name": "팜반득"
+    },
+    {
+      "id": "K1013",
+      "name": "아미라 카심"
+    },
+    {
+      "id": "K1014",
+      "name": "조엘 박"
+    },
+    {
+      "id": "K1015",
+      "name": "나르기즈 유수포바"
+    },
+    {
+      "id": "K1016",
+      "name": "최일석"
     }
   ]
 }

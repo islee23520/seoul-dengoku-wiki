@@ -9,20 +9,26 @@ test('all canonical people are indexed and linked to a canon card', async () => 
   const names = [...catalog.matchAll(/"name": "([^"]+)"/g)].map((match) => match[1])
   const sourceRoutes = [...catalog.matchAll(/"sourceRoute": "([^"]+)"/g)].map((match) => match[1])
   const detailRoutes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
-  assert.equal(count, 1010)
-  assert.equal(names.length, 1010)
-  assert.equal(new Set(names).size, 1010)
-  assert.equal(sourceRoutes.length, 1010)
-  assert.equal(detailRoutes.length, 1010)
-  assert.equal(new Set(detailRoutes).size, 1010)
+  assert.equal(count, 1016)
+  assert.equal(names.length, 1016)
+  assert.equal(new Set(names).size, 1016)
+  assert.equal(sourceRoutes.length, 1016)
+  assert.equal(detailRoutes.length, 1016)
+  assert.equal(new Set(detailRoutes).size, 1016)
   assert.ok(sourceRoutes.every((route) => route.startsWith('/world/') && route.includes('#')))
   const genders = [...catalog.matchAll(/"gender": "([^"]+)"/g)].map((match) => match[1])
-  assert.equal(genders.length, 1010)
+  assert.equal(genders.length, 1016)
   assert.ok(genders.every((gender) => gender === '여성' || gender === '남성'))
   assert.equal(sourceRoutes.filter((route) => route.startsWith('/world/Core-Characters#인물-')).length, 0)
   for (const route of sourceRoutes) {
     const [document, anchor] = route.replace('/world/', '').split('#')
-    const markdown = await readFile(resolve(import.meta.dirname, `../../lore/characters/${document}.md`), 'utf8')
+    const markdown = await readFile(resolve(import.meta.dirname, `../../lore/${document === 'Diaspora-Corridors' ? 'factions' : 'characters'}/${document}.md`), 'utf8')
+    if (document === 'Diaspora-Corridors') {
+      const headings = [...markdown.matchAll(/^### (인물 .+)$/gmu)].map((match) => match[1])
+      const headingId = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
+      assert.ok(headings.some((heading) => headingId(heading) === anchor), route)
+      continue
+    }
     const expected = anchor.startsWith('인물-') ? `### 인물 ${anchor.slice(3)}` : `## ${anchor}`
     assert.ok(markdown.includes(expected), route)
   }
@@ -83,7 +89,7 @@ test('people page states the confirmed hero contract without auto-assigning prop
   const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
   const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
 
-  assert.match(page, /1,010명은 모두 영웅 인물/)
+  assert.match(page, /1,016명은 모두 영웅 인물/)
   assert.match(page, /전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성/)
   assert.match(page, /전투 클래스 이름과 개인별 배정은 아직 확정되지 않았/)
   assert.doesNotMatch(generator, /heroClass/)
