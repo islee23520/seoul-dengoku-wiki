@@ -4,6 +4,8 @@ import { peopleCatalog } from '../generated/peopleCatalog'
 
 const koreanNameOrder = new Intl.Collator('ko-KR', { usage: 'sort', sensitivity: 'variant' })
 const peopleByName = [...peopleCatalog].sort((left, right) => koreanNameOrder.compare(left.name, right.name) || left.id.localeCompare(right.id))
+const recommendedIds = ['person-1003', 'person-1008', 'person-1007', 'person-1009', 'person-0998']
+const recommendedPeople = recommendedIds.map((id) => peopleCatalog.find((person) => person.id === id)!)
 
 export default function PeoplePage() {
   const [query, setQuery] = useState('')
@@ -35,6 +37,12 @@ export default function PeoplePage() {
         <span className="wiki-canon-badge">{peopleCatalog.length}명</span>
       </header>
       <p>이 원장의 1,010명은 모두 영웅 인물이다. 각 인물은 생업과 경력에 따라 전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성을 갖는다. 다만 전투 클래스 이름과 개인별 배정은 아직 확정되지 않았으며, 제안 단계 분류를 인물 카드에 자동으로 붙이지 않는다.</p>
+      <section className="people-recommended" aria-labelledby="recommended-people-title">
+        <h2 id="recommended-people-title">개막 추천 인물</h2>
+        <ul>{recommendedPeople.map((person) => (
+          <li key={person.id}><Link to={person.detailRoute}>{person.name}</Link><span>{person.title}</span></li>
+        ))}</ul>
+      </section>
       <label className="people-search">
         <span>이름·직위·국가 검색</span>
         <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="예: 윤서린, 급수, S4" />
