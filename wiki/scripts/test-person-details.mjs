@@ -749,6 +749,13 @@ test('Min Woonggi practices judo separately from his repair trade', async () => 
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-민웅기')
 })
 
+test('Shin Jongmok has an opening objective grounded in his return-net work', async () => {
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1009.json', import.meta.url), 'utf8'))
+  assert.equal(detail.name, '신종목')
+  assert.ok(detail.sections['야망'])
+  assert.equal(detail.sourceRoute, '/world/Core-Characters#신종목')
+})
+
 test('K998 keeps his detail route after relocation to the First Branch Workshop', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0998.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '이일섭')
