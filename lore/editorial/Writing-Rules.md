@@ -4,6 +4,8 @@
 
 이 파일은 비게시 집필 지침이다. `wiki/scripts/generate-catalog.mjs`는 `editorial`을 생성 대상에서 제외하므로 공개 `/world/` 경로에 올리지 않는다. 공개 본문에는 집필 원칙, 정본의 소유·관리 설명, 독자에게 지시하는 문장이나 게임 계산 규칙을 쓰지 않는다.
 
+모든 세계관·인물·세력·무공·아이템·대사·위키 편집은 먼저 저장소 루트의 [세계관 편집 지침](../../WORLD_BUILDING_GUIDE.md)을 끝까지 읽고 적용한다. 이 문서는 그 지침을 반복하지 않고 로어 작성·생성 경계를 보완한다.
+
 ## 정본과 서술
 
 - 영역별 로어 JSON을 작성 원본으로 삼고 같은 이름의 Markdown 본문은 의미·표·링크·앵커를 맞춘다. `lore/World-Narrative-Atlas.md`와 `lore/Glossary.md`처럼 Markdown이 원본인 자료는 각각의 계약을 따른다. 생성 투영물은 손으로 고치지 않는다. 근거와 생성 경계는 [`../AGENTS.md`](../AGENTS.md)와 [`../World-Narrative-Atlas.md`](../World-Narrative-Atlas.md)를 확인한다.
