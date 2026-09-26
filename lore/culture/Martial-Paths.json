@@ -52,8 +52,8 @@
       "kind": "paragraph",
       "anchor": "무공-p1",
       "text": {
-        "en": "These were not skills chosen from a catalog; they read best as the hands of long practice. In the Seoul of 2026 people had lived at the Yeongdeungpo treatment plant's sluices, at the Sinjeong, Cheonwang, and Godeok depots, in the churches where pulpits remained, at guard posts, and in the deed record rooms, and after the call mesh died the hands remained. The Changdong depot lived on in those hands as memory alone, and in the story's present it stood empty without a state, read as the empty depot of the oral record. A century passed and the habits of the hand became transmission, and masters and taboos kept those habits. Technique read as the habit by which a body had survived in the land, not as a slot attached to a species.",
-        "ko": "2026년 서울에서는 영등포 정수장 수문, 신정·천왕·고덕 차량기지, 예배당 강단, 경비 초소, 등기 기록실에서 당직과 생업을 이어 갔다. 호출망이 끊긴 뒤에도 그 일을 하는 사람이 남았다. 창동 기지는 2126년 현재 나라가 없는 빈 기지이다. 창동 당직은 구술로 전한다. 한 세기 동안 당직과 생업에서 익힌 손이 전수가 되었다. 무공 사제는 금기와 함께 전수를 관리하고 있다."
+        "en": "In Seoul in 2026, people worked shifts and made their living at the Yeongdeungpo treatment plant's sluices, the Sinjeong, Cheonwang, and Godeok depots, church pulpits, guard posts, and deed record rooms. People continued that work after the call mesh failed. In 2126, Changdong is an empty depot without a state; its watch duties survive in oral accounts. Over the past century, people have passed the skills learned in their work on to apprentices. Martial masters oversee that transmission and its taboos.",
+        "ko": "2026년 서울에서는 영등포 정수장 수문, 신정·천왕·고덕 차량기지, 예배당 강단, 경비 초소, 등기 기록실에서 당직과 생업을 이어 갔다. 호출망이 끊긴 뒤에도 그 일을 하는 사람이 남았다. 창동 기지는 2126년 현재 나라가 없는 빈 기지이다. 창동 당직은 구술로 전한다. 지난 한 세기 동안 사람들은 당직과 생업에서 익힌 기술을 제자들에게 전해 왔다. 무공 스승은 금기와 함께 전수를 관리하고 있다."
       }
     },
     {
@@ -69,7 +69,15 @@
       "anchor": "무공-p3",
       "text": {
         "en": "Names were given by the oral record and the martial masters.",
-        "ko": "구술과 사제가 기법의 이름을 정한다."
+        "ko": "기법의 이름은 구술과 무공 스승의 가르침에 따라 정한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "기질적-기술-legacy-link",
+      "text": {
+        "ko": "<a id=\"기질적-기술\"></a>",
+        "en": "<a id=\"기질적-기술\"></a>"
       }
     },
     {
@@ -77,8 +85,8 @@
       "anchor": "기질적-기술",
       "depth": 2,
       "text": {
-        "en": "Temperamental techniques",
-        "ko": "기질적 기술"
+        "en": "Jun's route discrimination",
+        "ko": "신준의 경로 판별"
       }
     },
     {
@@ -90,12 +98,20 @@
       }
     },
     {
+      "kind": "paragraph",
+      "anchor": "손결-legacy-link",
+      "text": {
+        "ko": "<a id=\"손결\"></a>",
+        "en": "<a id=\"손결\"></a>"
+      }
+    },
+    {
       "kind": "heading",
       "anchor": "손결",
       "depth": 2,
       "text": {
-        "en": "Hand-Forms",
-        "ko": "손결"
+        "en": "Training Domains",
+        "ko": "수련 분야"
       }
     },
     {
@@ -104,13 +120,13 @@
       "text": {
         "en": [
           {
-            "text": "A. Six Handstyles",
+            "text": "A. Six Training Domains",
             "strong": true
           }
         ],
         "ko": [
           {
-            "text": "**가. 여섯 손결**",
+            "text": "**가. 여섯 수련 분야**",
             "strong": true
           }
         ]
@@ -120,8 +136,8 @@
       "kind": "paragraph",
       "anchor": "손결-p1",
       "text": {
-        "en": "Songeol groups work learned in waterworks, depots, pulpits, posts, and archives into six practices. Medics and the White Cross treat fever and diarrhea.",
-        "ko": "손결은 정수장, 차량기지, 강단, 초소, 서고에서 익힌 일을 여섯 가지로 분류한다. 발열과 설사는 의무원과 흰십자단이 치료한다."
+        "en": "Work learned in waterworks, depots, pulpits, posts, and archives falls into six training domains. Medics and the White Cross treat fever and diarrhea.",
+        "ko": "정수장, 차량기지, 강단, 초소, 서고에서 익힌 일은 여섯 수련 분야로 나뉜다. 발열과 설사는 의무원과 흰십자단이 치료한다."
       }
     },
     {
@@ -129,8 +145,8 @@
       "anchor": "손결-table2",
       "columns": [
         {
-          "en": "Hand-form",
-          "ko": "손결"
+          "ko": "수련 분야",
+          "en": "Training domain"
         },
         {
           "en": "Work in Seoul",
@@ -148,8 +164,8 @@
       "rows": [
         [
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Cuts the lungs against brine, turbid water, asbestos, and flooded tunnels. The breath that holds out to the end over registers and seals is also here",
@@ -166,8 +182,8 @@
         ],
         [
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Being struck hardens the body. The forms of shoulder, knee, hammer, and shield",
@@ -184,8 +200,8 @@
         ],
         [
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Moves catwalks, storage tracks, yellow lines, and stack alleys in file",
@@ -202,8 +218,8 @@
         ],
         [
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": [
@@ -245,8 +261,8 @@
         ],
         [
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "제압",
+            "en": "Restraint"
           },
           {
             "en": "Cuts the number of attackers landing at once with interval, roll-call, accreditation severance, and wheel locks. Capture was written per person as body status after the battle ended",
@@ -263,8 +279,8 @@
         ],
         [
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "Mends equipment, registers, the turbid-water confession, and morale. It did not raise fallen soldiers",
@@ -285,8 +301,8 @@
       "kind": "paragraph",
       "anchor": "손결-p3",
       "text": {
-        "en": "Putting Inner Breath and Hand-Mending in one cell made waterborne disease and hammer repair the same cure. Sickness and repair were divided.",
-        "ko": "내숨은 호흡과 버티기의 손결이고, 손고침은 장비와 명부와 사기를 고치는 손결이다. 수인병 치료와 망치 수리는 서로 다른 일이다."
+        "en": "Breath and endurance covers breathing and stamina; maintenance and support covers equipment, registers, and morale. Treating waterborne disease and repairing a hammer are different tasks.",
+        "ko": "호흡·지구력은 호흡과 버티기의 수련 분야이고, 정비·지원은 장비와 명부와 사기를 고치는 수련 분야이다. 수인병 치료와 망치 수리는 서로 다른 일이다."
       }
     },
     {
@@ -328,8 +344,8 @@
       "kind": "paragraph",
       "anchor": "아홉-유파-p2",
       "text": {
-        "en": "The ledgers and master address used Sino-Korean formal names; the field used the old everyday aliases. The formal names showed what the training handled, and the field aliases were never removed or treated as lesser words.",
-        "ko": "장부와 사제 호칭에는 한자어 정식명을 쓴다. 생활 별칭이 있는 유파는 현장에서 그 이름으로도 부른다."
+        "en": "Ledgers and forms of address between masters and apprentices use formal names. In the field, Wheel-Tempering Work is also called Wheel Hammer.",
+        "ko": "장부와 사제 호칭에는 정식명을 쓴다. 현장에서는 차륜강체공을 차륜망치라고도 부른다."
       }
     },
     {
@@ -345,8 +361,8 @@
           "ko": "생활 별칭"
         },
         {
-          "en": "The hand from 2026",
-          "ko": "2026에서 온 손"
+          "en": "Origin in 2026",
+          "ko": "2026년의 기원"
         },
         {
           "en": "Transmission",
@@ -357,8 +373,8 @@
           "ko": "금기"
         },
         {
-          "en": "Main hand-forms",
-          "ko": "주 손결"
+          "en": "Main training domains",
+          "ko": "주 수련 분야"
         },
         {
           "en": "Main tool layer",
@@ -376,8 +392,8 @@
             "ko": "수문호흡법"
           },
           {
-            "en": "—",
-            "ko": "—"
+            "ko": "—",
+            "en": "—"
           },
           {
             "en": "Treatment-plant and lock-gate watches",
@@ -392,8 +408,8 @@
             "ko": "탁수를 숨기면 전수가 끊긴다"
           },
           {
-            "en": "Inner Breath · Restraint",
-            "ko": "내숨·제압"
+            "en": "Breath and endurance · Restraint",
+            "ko": "호흡·지구력, 제압"
           },
           {
             "en": "Trade tools. The sluice key and the sampling bottle",
@@ -410,8 +426,8 @@
             "ko": "차륜강체공"
           },
           {
-            "en": "Wheel Hammer",
-            "ko": "차륜망치"
+            "ko": "차륜망치",
+            "en": "Wheel Hammer"
           },
           {
             "en": "Depot maintenance",
@@ -426,8 +442,8 @@
             "ko": "규격 없는 개조는 사제가 내친다"
           },
           {
-            "en": "Outer Hand · Hand-Mending",
-            "ko": "외손·손고침"
+            "en": "Body conditioning · Maintenance and support",
+            "ko": "신체 단련, 정비·지원"
           },
           {
             "en": "Trade tools, stronghold hydraulics, conditional lostech",
@@ -444,8 +460,8 @@
             "ko": "강단호명법"
           },
           {
-            "en": "Pulpit Voice",
-            "ko": "강단발"
+            "ko": "—",
+            "en": "—"
           },
           {
             "en": "Church elders and deacons",
@@ -460,12 +476,12 @@
             "ko": "살아 있는 목사 이름을 유파에 올리지 않는다"
           },
           {
-            "en": "Light Step · Restraint",
-            "ko": "경보·제압"
+            "en": "Movement and footwork · Restraint",
+            "ko": "이동·보법, 제압"
           },
           {
             "en": "Trade layer. The register rod and the broadcast stand. Guns are not the base",
-            "ko": "생업. 명부철심과 송신대. 총이 기본이 아니다"
+            "ko": "생업. 철심으로 묶은 명부와 마이크대. 총이 기본이 아니다"
           },
           {
             "en": "Transfer stations, small station houses",
@@ -478,8 +494,8 @@
             "ko": "호위철벽진"
           },
           {
-            "en": "—",
-            "ko": "—"
+            "ko": "—",
+            "en": "—"
           },
           {
             "en": "Guard and service remnants",
@@ -494,8 +510,8 @@
             "ko": "민간 명부를 방패 뒤에 숨기면 파문"
           },
           {
-            "en": "Outer Hand · Restraint",
-            "ko": "외손·제압"
+            "en": "Body conditioning · Restraint",
+            "ko": "신체 단련, 제압"
           },
           {
             "en": "Police-issue gear. Military remnants only when the ledger opens",
@@ -512,8 +528,8 @@
             "ko": "기록단절법"
           },
           {
-            "en": "—",
-            "ko": "—"
+            "ko": "—",
+            "en": "—"
           },
           {
             "en": "Deed and records offices",
@@ -524,12 +540,12 @@
             "ko": "칼은 도장이 아니다. 필사와 끊는 손"
           },
           {
-            "en": "Forge, and the hand dies",
-            "ko": "위조하면 손이 죽는다"
+            "en": "Forgery revokes the right to transmit the teaching",
+            "ko": "위조하면 전수 자격을 잃는다"
           },
           {
-            "en": "Restraint · Inner Breath",
-            "ko": "제압·내숨"
+            "en": "Restraint · Breath and endurance",
+            "ko": "제압, 호흡·지구력"
           },
           {
             "en": "Trade cutting and the seal chest. The blade is an opening tool",
@@ -546,8 +562,8 @@
             "ko": "죽검연환법"
           },
           {
-            "en": "Bamboo-Stave Hand",
-            "ko": "죽대손"
+            "ko": "—",
+            "en": "—"
           },
           {
             "en": "Traces of kendo, iaido, and koryu; school floors and bamboo staves",
@@ -562,8 +578,8 @@
             "ko": "실존 연맹·고류 이름을 2126년 족보로 속이지 않는다"
           },
           {
-            "en": "Outer Hand · Light Step",
-            "ko": "외손·경보"
+            "en": "Body conditioning · Movement and footwork",
+            "ko": "신체 단련, 이동·보법"
           },
           {
             "en": "Trade bamboo staves. Sheathed blades are a separate ledger",
@@ -580,8 +596,8 @@
             "ko": "연각권법"
           },
           {
-            "en": "Mat Hand",
-            "ko": "매트손"
+            "ko": "—",
+            "en": "—"
           },
           {
             "en": "Traces of taekwondo and school physical education; mats, padding, and drill calls",
@@ -596,8 +612,8 @@
             "ko": "살아 있는 사범·단체 이름을 후계 유파 소유로 삼지 않는다"
           },
           {
-            "en": "Outer Hand · Light Step",
-            "ko": "외손·경보"
+            "en": "Body conditioning · Movement and footwork",
+            "ko": "신체 단련, 이동·보법"
           },
           {
             "en": "Bare hands, mats, worn padding. Guns and blades are not this line",
@@ -610,12 +626,12 @@
         ],
         [
           {
-            "en": "Empty-Round Bayonet Method",
-            "ko": "공탄총검법"
+            "en": "Bayonet fighting",
+            "ko": "총검술"
           },
           {
-            "en": "Empty-Round Hand",
-            "ko": "빈탄손"
+            "ko": "—",
+            "en": "—"
           },
           {
             "en": "Bayonet drill of military and conscription remnants, and empty rifles",
@@ -627,11 +643,11 @@
           },
           {
             "en": "Passing a loaded rifle off as empty, or opening armories on civilian registers",
-            "ko": "탄 있는 총을 빈탄이라 속이거나 민간 명부로 무기고를 열지 않는다"
+            "ko": "탄 있는 총을 빈 총이라 속이거나 민간 명부로 무기고를 열지 않는다"
           },
           {
-            "en": "Outer Hand · Tools",
-            "ko": "외손·연장"
+            "en": "Body conditioning · Weapons and tools",
+            "ko": "신체 단련, 무기·도구"
           },
           {
             "en": "The empty rifles and bayonets of military remnants",
@@ -648,12 +664,12 @@
             "ko": "감응조준법"
           },
           {
-            "en": "Lens Breath",
-            "ko": "렌즈숨"
+            "ko": "—",
+            "en": "—"
           },
           {
-            "en": "Recovered lenses, sensors, drive terminals, and extinguisher drill",
-            "ko": "회수 렌즈·센서·구동 단자와 소화기 수련"
+            "ko": "회수 렌즈·센서·구동 단자 기반의 소화기 수련. 전력·탄약·정비에 의존한다",
+            "en": "Extinguisher drill built on recovered lenses, sensors, and drive terminals. It depends on power, ammunition, and maintenance"
           },
           {
             "en": "The gallery masters fitted and removed modules, matching breath and aim",
@@ -664,8 +680,8 @@
             "ko": "모듈을 만능으로 만들거나 가중치를 고쳐 쓴다고 주장하지 않는다"
           },
           {
-            "en": "Inner Breath · Tools",
-            "ko": "내숨·연장"
+            "en": "Breath and endurance · Weapons and tools",
+            "ko": "호흡·지구력, 무기·도구"
           },
           {
             "en": "Rare recovered goods. Charging, aging, ammunition, and maintenance all required",
@@ -821,7 +837,7 @@
       "text": {
         "en": [
           {
-            "text": "Among the lesser and theocratic states too, the hand did not follow the state. The hand of Yun Seorin of the Republic of Korea Government was the Record-Severance Method; the Gwanghwamun seal chest was that line. On the Yeouido transmission watch the Pulpit Voice grew. The taboo against raising a living pastor's name onto the school remained at the Yeouido microphone stand as well. On the General Assembly register line of the Sermon Registry State there were hands of completed Wheel Hammer transmission. The Pulpit Voice and pulpit-lineage faith were not read as one line; the Pulpit Voice was a school and the pulpit lineage a line of "
+            "text": "Among the lesser and theocratic states too, the hand did not follow the state. The hand of Yun Seorin of the Republic of Korea Government was the Record-Severance Method; the Gwanghwamun seal chest was that line. On the Yeouido transmission watch the Pulpit-Call Method grew. The taboo against raising a living pastor's name onto the school remained at the Yeouido microphone stand as well. On the General Assembly register line of the Sermon Registry State there were hands of completed Wheel Hammer transmission. The Pulpit-Call Method and pulpit-lineage faith were not read as one line; the Pulpit-Call Method was a school and the pulpit lineage a line of "
           },
           {
             "text": "Faith",
@@ -831,12 +847,12 @@
             }
           },
           {
-            "text": ". The Presbyterians did not monopolize the Pulpit Voice."
+            "text": ". The Presbyterians did not monopolize the Pulpit-Call Method."
           }
         ],
         "ko": [
           {
-            "text": "대한민국정부 윤서린의 전수는 기록단절법이고, 광화문 도장함에서 그 전수가 이어진다. 여의도출자연합회 송신 당직에서는 강단발을 전수한다. 여의도 마이크대에서도 살아 있는 목사의 이름을 유파 명부에 올리지 않는다. 명부교회 총회 명부 담당자 가운데 차륜망치 전수를 마친 사람이 있다. 강단발은 유파이고 강단계는 "
+            "text": "대한민국정부 윤서린의 전수는 기록단절법이고, 광화문 도장함에서 그 전수가 이어진다. 여의도출자연합회 송신 당직에서는 강단호명법을 전수한다. 여의도 마이크대에서도 살아 있는 목사의 이름을 유파 명부에 올리지 않는다. 명부교회 총회 명부 담당자 가운데 차륜망치 전수를 마친 사람이 있다. 강단호명법은 유파이고 강단계는 "
           },
           {
             "text": "신앙",
@@ -846,7 +862,7 @@
             }
           },
           {
-            "text": "의 계열이다. 장로회는 강단발을 독점하지 않는다."
+            "text": "의 계열이다. 장로회는 강단호명법을 독점하지 않는다."
           }
         ]
       }
@@ -910,13 +926,13 @@
           },
           {
             "en": "The bolt rite of the Open-Standards Rite does not replace the elder hand's edge",
-            "ko": "공개규격례의 볼트 제사가 원로손의 날인을 대신하지 않는다"
+            "ko": "공개규격례의 볼트 제사가 원로의 날인을 대신하지 않는다"
           }
         ],
         [
           {
-            "en": "Pulpit Voice",
-            "ko": "강단발"
+            "en": "Pulpit-Call Method",
+            "ko": "강단호명법"
           },
           {
             "en": "Pulpit lineage, occasionally the ledger-lineage transmissions",
@@ -951,8 +967,8 @@
             "ko": "원장계"
           },
           {
-            "en": "The heresy suits of the Record-Accreditation Rite and the death-of-the-hand for forgery are not tried as one. The martial path kills the hand; the state opens the prosecution",
-            "ko": "기록인준례의 이단 시비와 위조의 손죽음을 한 재판으로 섞지 않는다. 무공은 손을 죽이고, 나라는 인준을 연다"
+            "en": "Heresy disputes in the Record-Accreditation Rite and loss of transmission rights for forgery are separate proceedings. The school ends transmission; the state reviews accreditation",
+            "ko": "기록인준례의 이단 시비와 위조에 따른 전수 단절을 한 재판으로 섞지 않는다. 유파는 전수를 끊고, 나라는 인준을 심사한다"
           }
         ]
       ]
@@ -988,9 +1004,17 @@
             }
           },
           {
-            "text": "의 신정·부평 축 동원잔존, 용산 주둔 기억, 수방사 잔편, 북부 향토 회랑은 이 조직들과 같은 현장에서 활동한다. 호위철벽진은 그 잔존 인력에서 형성되었다. 네 조직은 유파가 아니다. 유치선달리기와 궤도기병 출고가 같은 레일을 다투면 조직 사이의 갈등으로 기록한다."
+            "text": "의 신정·부평 축 동원잔존, 용산 주둔 기억, 수방사 잔편, 북부 향토 회랑은 이 조직들과 같은 현장에서 활동한다. 호위철벽진은 그 잔존 인력에서 형성되었다. 네 조직은 유파가 아니다. 유치선 달리기와 궤도기병 출고가 같은 레일을 다투면 조직 사이의 갈등으로 기록한다."
           }
         ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "사제와-겸전과-형조-legacy-link",
+      "text": {
+        "ko": "<a id=\"사제와-겸전과-형조\"></a>",
+        "en": "<a id=\"사제와-겸전과-형조\"></a>"
       }
     },
     {
@@ -998,8 +1022,8 @@
       "anchor": "사제와-겸전과-형조",
       "depth": 2,
       "text": {
-        "en": "Masters, Dual Practice, and the Punishment Tribunal",
-        "ko": "사제와 겸전과 형조"
+        "en": "Masters and Dual-Practice Review",
+        "ko": "사제와 겸전 심사"
       }
     },
     {
@@ -1024,8 +1048,8 @@
       "kind": "paragraph",
       "anchor": "사제와-겸전과-형조-p1",
       "text": {
-        "en": "Transmission passed only from person to person. Books alone did not get one into a school; when a martial master died the line became oral record, and mixing schools with schools injured the body. No new plague was invented. When Inner Breath and Outer Hand fought in one chest, the cough and the joints went together. The strata of symptoms followed waterborne disease, asbestos, and the cooling-water ledger.",
-        "ko": "유파 전수는 사람에게서 사람으로 이어진다. 책만으로 유파에 들 수 없고, 사제가 죽으면 그 전수는 구술로 남는다. 두 유파를 겸전하면 몸이 상한다. 내숨과 외손의 겸전에는 기침과 관절 손상이 따르며, 그 증상은 수인병, 석면, 냉각수 원장에 기록된 범위에서 다룬다. 새 역병을 설정하지 않는다."
+        "en": "Transmission passed only from person to person. Books alone did not get one into a school; when a martial master died the line became oral record, and mixing schools with schools injured the body. No new plague was invented. When Breath and endurance and Body conditioning fought in one chest, the cough and the joints went together. The strata of symptoms followed waterborne disease, asbestos, and the cooling-water ledger.",
+        "ko": "유파 전수는 사람에게서 사람으로 이어진다. 책만으로 유파에 들 수 없고, 사제가 죽으면 그 전수는 구술로 남는다. 두 유파를 겸전하면 몸이 상한다. 호흡·지구력과 신체 단련의 겸전에는 기침과 관절 손상이 따르며, 그 증상은 수인병, 석면, 냉각수 원장에 기록된 범위에서 다룬다. 새 역병을 설정하지 않는다."
       }
     },
     {
@@ -1033,15 +1057,15 @@
       "anchor": "사제와-겸전과-형조-p2",
       "text": {
         "en": "A master was one kind of relation in the ledger. Not the same title as the priests of a faith chapel. Where this chapter spoke of transmission, it wrote martial master.",
-        "ko": "사제 관계는 인물 관계 원장에 기록한다. 전수를 맡은 사제는 무공 사제이고, 신앙 당집의 사제는 별도 직함이다."
+        "ko": "사제 관계는 인물 관계 원장에 기록한다. 전수를 맡은 사제는 무공 스승이고, 신앙 당집의 사제는 별도 직함이다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "사제와-겸전과-형조-p3",
       "text": {
-        "en": "The five tiers of title and the ranks of the martial path did not cross. A president could be an Apprentice Hand; a jusa clerk could be an Elder Hand.",
-        "ko": "작위의 다섯 층과 무공 품계는 별도로 정한다. 대통령이 견습손일 수 있고, 주사가 원로손일 수도 있다."
+        "en": "The five tiers of office and the martial ranks are separate. A president can be an apprentice, while a jusa clerk can be an elder.",
+        "ko": "작위의 다섯 층과 무공 품계는 별도로 정한다. 대통령이 견습일 수 있고, 주사가 원로일 수도 있다."
       }
     },
     {
@@ -1064,8 +1088,8 @@
       "rows": [
         [
           {
-            "en": "Apprentice Hand",
-            "ko": "견습손"
+            "en": "Apprentice",
+            "ko": "견습"
           },
           {
             "en": "Did the work but was not yet in the school",
@@ -1078,26 +1102,12 @@
         ],
         [
           {
-            "en": "Watch Hand",
-            "ko": "당직손"
+            "en": "Initiate",
+            "ko": "입문자"
           },
           {
-            "en": "The hand whose transmission opened before a martial master",
-            "ko": "무공 사제 앞에서 전수가 열린 손"
-          },
-          {
-            "en": "Independent of tier",
-            "ko": "티어와 무관하다"
-          }
-        ],
-        [
-          {
-            "en": "Master Hand",
-            "ko": "사제손"
-          },
-          {
-            "en": "Could pass on one line",
-            "ko": "한 줄을 넘길 수 있다"
+            "en": "Has begun learning from a martial master",
+            "ko": "무공 스승에게 전수를 받기 시작한 사람"
           },
           {
             "en": "Independent of tier",
@@ -1106,8 +1116,22 @@
         ],
         [
           {
-            "en": "Elder Hand",
-            "ko": "원로손"
+            "en": "Instructor",
+            "ko": "전수자"
+          },
+          {
+            "en": "Can teach the tradition they have learned to others",
+            "ko": "배운 계통을 다른 사람에게 가르칠 수 있다"
+          },
+          {
+            "en": "Independent of tier",
+            "ko": "티어와 무관하다"
+          }
+        ],
+        [
+          {
+            "en": "Elder",
+            "ko": "원로"
           },
           {
             "en": "Kept the taboo. Declared expulsion and casting-out",
@@ -1151,7 +1175,7 @@
             }
           },
           {
-            "text": "의 티어 5에만 허용한다. 해당 직함은 주사·병장·교사·교우·신도·교도·직원·대리·조합원·호송원·회원이다. 말단이 두 손을 짧게 빌리면 두 손결의 신체 손상을 감수한다. 겸전을 상성 우위로 적용하지 않는다."
+            "text": "의 티어 5에만 허용한다. 해당 직함은 주사·병장·교사·교우·신도·교도·직원·대리·조합원·호송원·회원이다. 말단이 두 손을 짧게 빌리면 두 수련 분야의 신체 손상을 감수한다. 겸전을 상성 우위로 적용하지 않는다."
           }
         ]
       }
@@ -1161,7 +1185,7 @@
       "anchor": "사제와-겸전과-형조-p6",
       "text": {
         "en": "When tier 4 or above carried two schools in one pair of hands, that state's accreditation and prosecution opened. The oral records of the martial paths called this the Punishment Tribunal. The Joseon Ministry of Punishments was not revived. The hand that sealed for each state was tier 2. Minister, bureau head, chief of staff, elder, priest, head of the General Directorate, senior dharma teacher, vice-chairman, company president, vice-chairwoman, standing director, corps head, director. When a head of state carried two transmissions, the Punishment Tribunal opened.",
-        "ko": "티어 4 이상이 두 유파를 겸전하면 국가의 인준과 죄 심사가 열린다. 무공 구술은 이 절차를 형조라 부른다. 이는 조선의 형조 직제가 아니다. 각 나라에서 인준을 날인하는 직함은 티어 2이다. 장관·본부장·참모장·장로·신부·총무원장·심사관·부회장·사장·부위원장·상임이사·단장·이사가 이에 해당한다. 국가 수장이 겸전해도 형조가 열린다."
+        "ko": "티어 4 이상이 두 유파를 겸전하면 국가의 인준과 죄 심사가 열린다. 무공 구술은 이 절차를 형조라 부른다. 이는 조선의 형조 직제가 아니다. 각 나라에서 인준을 날인하는 직함은 티어 2이다. 장관·본부장·참모장·장로·신부·총무원장·심사관·부회장·사장·부위원장·상임이사·단장·이사가 이에 해당한다. 국가 수장이 겸전해도 겸전 심사가 열린다."
       }
     },
     {
@@ -1239,8 +1263,8 @@
       "rows": [
         [
           {
-            "en": "Register-chest walk",
-            "ko": "명부함걸음"
+            "en": "Transcribing refugee registers",
+            "ko": "피난민 명부 옮겨 적기"
           },
           {
             "en": "The Anguk tablets, the register chests of the Bukhansan vacancy",
@@ -1251,14 +1275,14 @@
             "ko": "피난 이름을 옮겨 적는다"
           },
           {
-            "en": "Does not replace the Pulpit Voice's roll-call restraint",
-            "ko": "강단발의 호명 제압을 대신하지 않는다"
+            "en": "Does not replace the Pulpit-Call Method's roll-call restraint",
+            "ko": "강단호명법의 호명 제압을 대신하지 않는다"
           }
         ],
         [
           {
-            "en": "Refugee-line dividing",
-            "ko": "피난줄나눔"
+            "en": "Dividing evacuation lines",
+            "ko": "피난 대열 나누기"
           },
           {
             "en": "Concourses where the lodging oath lived",
@@ -1275,8 +1299,8 @@
         ],
         [
           {
-            "en": "Sitting before the tablets",
-            "ko": "위패앞앉음"
+            "en": "Silent remembrance before memorial tablets",
+            "ko": "위패 앞 묵념"
           },
           {
             "en": "Jogyesa and the chapels",
@@ -1287,22 +1311,22 @@
             "ko": "산 사람 이름을 유파 명부에 올리지 않는 침묵"
           },
           {
-            "en": "It is not the Pulpit Voice's line-up",
-            "ko": "강단발의 줄세움이 아니다"
+            "en": "It is not the Pulpit-Call Method's line-up",
+            "ko": "강단호명법의 줄 세우기가 아니다"
           }
         ],
         [
           {
-            "en": "Empty-hand sharing",
-            "ko": "빈손나눔"
+            "en": "Sharing remaining rations",
+            "ko": "남은 배급 나누기"
           },
           {
             "en": "Corridors and unclaimed land",
             "ko": "회랑과 무주지"
           },
           {
-            "en": "The hand of leftover rations. Begging was not read as a weapon",
-            "ko": "남은 배급의 손. 구걸을 병기로 읽지 않는다"
+            "en": "Shares the remaining rations. Begging is not a weapon",
+            "ko": "남은 배급을 나눈다. 구걸을 병기로 읽지 않는다"
           },
           {
             "en": "It is not a combat tool",
@@ -1315,8 +1339,8 @@
       "kind": "paragraph",
       "anchor": "개방-손-p3",
       "text": {
-        "en": "Sitting before the tablets emptied the Pulpit Voice's name-fixing with bare hands. A seat with no name raised could not be called. When the refugee-line dividing occupied a catwalk, the Sluice-Breath Method lost its road. That clash was not locked as an Open-Hand matchup advantage.",
-        "ko": "위패앞앉음에서는 산 사람의 이름을 명부에 올리지 않는다. 강단발의 호명고정은 등록된 이름을 대상으로 하고, 피난줄나눔이 캣워크를 점유하면 수문호흡법이 그 길을 쓸 수 없다. 두 충돌은 개방 무공의 절기 상성으로 정하지 않는다."
+        "en": "Silent remembrance before memorial tablets does not enter living people's names in the register. The Pulpit-Call Method's 'Halting on roll-call' acts on registered names. If 'Dividing evacuation lines' occupies a catwalk, the Sluice-Breath Method cannot use that route. Neither interaction establishes a special matchup for the Open Hand's martial arts.",
+        "ko": "위패 앞 묵념에서는 산 사람의 이름을 명부에 올리지 않는다. 강단호명법의 ‘호명에 맞춰 정지’는 등록된 이름을 대상으로 하고, ‘피난 대열 나누기’가 캣워크를 점유하면 수문호흡법이 그 길을 쓸 수 없다. 두 충돌은 개방 무공의 절기 상성으로 정하지 않는다."
       }
     },
     {
@@ -1371,12 +1395,20 @@
       }
     },
     {
+      "kind": "paragraph",
+      "anchor": "렌즈숨의-무협-효과-legacy-link",
+      "text": {
+        "ko": "<a id=\"렌즈숨의-무협-효과\"></a>",
+        "en": "<a id=\"렌즈숨의-무협-효과\"></a>"
+      }
+    },
+    {
       "kind": "heading",
       "anchor": "렌즈숨의-무협-효과",
       "depth": 2,
       "text": {
-        "en": "The Wuxia Effect of Lens Breath",
-        "ko": "렌즈숨의 무협 효과"
+        "en": "The Resonant-Aiming Method's martial effect",
+        "ko": "감응조준법의 무협 효과"
       }
     },
     {
@@ -1401,16 +1433,16 @@
       "kind": "paragraph",
       "anchor": "렌즈숨의-무협-효과-p1",
       "text": {
-        "en": "Lens Breath was not a school teaching only realistic firearms doctrine. When rare physical-AI lenses and sensors and drive assists attached, the master's movement looked faster than a person could follow. Threats in view were read in layers; recoil and body sway were assisted; and for short spans, engagements in several directions were held together. This effect was an exaggerated martial-arts feel made by equipment, and was not recorded as supernatural magic.",
-        "ko": "렌즈숨에는 희귀 피지컬 에이아이 렌즈, 센서, 구동 보조가 필요하다. 장비를 단 사제는 사람이 따라가기 어려운 속도로 움직이는 듯 보이며, 센서는 시야 안의 위협을 함께 표시한다. 구동 보조는 반동과 몸의 흔들림을 줄인다. 사제는 짧은 시간 여러 방향에서 교전한다. 이 무협 효과는 장비의 작용이며 초자연 마법이 아니다."
+        "en": "Resonant-Aiming Method was not a school teaching only realistic firearms doctrine. When rare physical-AI lenses and sensors and drive assists attached, the master's movement looked faster than a person could follow. Threats in view were read in layers; recoil and body sway were assisted; and for short spans, engagements in several directions were held together. This effect was an exaggerated martial-arts feel made by equipment, and was not recorded as supernatural magic.",
+        "ko": "감응조준법에는 희귀 피지컬 에이아이 렌즈, 센서, 구동 보조가 필요하다. 장비를 단 사제는 사람이 따라가기 어려운 속도로 움직이는 듯 보이며, 센서는 시야 안의 위협을 함께 표시한다. 구동 보조는 반동과 몸의 흔들림을 줄인다. 사제는 짧은 시간 여러 방향에서 교전한다. 이 무협 효과는 장비의 작용이며 초자연 마법이 아니다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "렌즈숨의-무협-효과-p2",
       "text": {
-        "en": "The price was plain. When power fell or the lenses clouded, the body returned to that of an ordinary marksman. Without ammunition or maintenance half the school vanished, and a wrong sensor classification could read a comrade as a threat. Left long to let the module judge in the user's place, it repeated the memory of loss of control. The elders of Lens Breath set first not the strong but those who knew when to switch off the equipment and withdraw.",
-        "ko": "전력이 떨어지거나 렌즈가 흐려지면 사제는 보조 없는 사격으로 돌아간다. 탄약과 정비가 끊기면 렌즈숨 전수의 절반을 쓸 수 없고, 센서가 동료를 위협으로 잘못 분류할 수도 있다. 모듈에 판단을 오래 맡기면 통제 상실이 반복된다. 렌즈숨 원로는 장비를 끄고 철수할 시점을 아는 사람을 우선한다."
+        "en": "The price was plain. When power fell or the lenses clouded, the body returned to that of an ordinary marksman. Without ammunition or maintenance half the school vanished, and a wrong sensor classification could read a comrade as a threat. Left long to let the module judge in the user's place, it repeated the memory of loss of control. The elders of Resonant-Aiming Method set first not the strong but those who knew when to switch off the equipment and withdraw.",
+        "ko": "전력이 떨어지거나 렌즈가 흐려지면 사제는 보조 없는 사격으로 돌아간다. 탄약과 정비가 끊기면 감응조준법 전수의 절반을 쓸 수 없고, 센서가 동료를 위협으로 잘못 분류할 수도 있다. 모듈에 판단을 오래 맡기면 통제 상실이 반복된다. 감응조준법 원로는 장비를 끄고 철수할 시점을 아는 사람을 우선한다."
       }
     },
     {
@@ -1498,12 +1530,12 @@
             "ko": "당직 자리가 바뀐다"
           },
           {
-            "en": "Light Step folds first",
-            "ko": "경보가 먼저 접힌다"
+            "en": "Movement and footwork is impaired first",
+            "ko": "이동·보법이 먼저 접힌다"
           },
           {
             "en": "The artificial leg leaves walking. The catwalk step and the storage-track run do not return",
-            "ko": "의족은 걷기를 남긴다. 캣워크걸음과 유치선달리기는 돌아오지 않는다"
+            "ko": "의족은 걷기를 남긴다. 철제 보도 걷기와 유치선 달리기는 돌아오지 않는다"
           }
         ],
         [
@@ -1513,11 +1545,11 @@
           },
           {
             "en": "The axle echo and the roll-call die",
-            "ko": "축울림과 호명이 죽는다"
+            "ko": "차축 소리 듣기와 호명이 죽는다"
           },
           {
-            "en": "The Wheel Hammer's inner breath, the Pulpit Voice's roll-call fold",
-            "ko": "차륜망치의 내숨, 강단발의 호명이 접힌다"
+            "en": "The Wheel Hammer's inner breath, the Pulpit-Call Method's roll-call fold",
+            "ko": "차륜망치의 호흡·지구력, 강단호명법의 호명이 접힌다"
           },
           {
             "en": "The hearing aid leaves trade communication",
@@ -1535,11 +1567,11 @@
           },
           {
             "en": "The Sluice-Breath Method's inner breath folds",
-            "ko": "수문호흡법 내숨이 접힌다"
+            "ko": "수문호흡법의 호흡·지구력이 접힌다"
           },
           {
             "en": "Respiratory protection is a trade layer. It does not replace the lock-gate breath",
-            "ko": "호흡보호는 생업 층이다. 갑문숨을 대체하지 않는다"
+            "ko": "호흡보호는 생업 층이다. 갑문 당직 수련을 대체하지 않는다"
           }
         ]
       ]
@@ -1604,28 +1636,28 @@
           "ko": "명령"
         },
         {
-          "en": "Inner Breath",
-          "ko": "내숨"
+          "en": "Breath and endurance",
+          "ko": "호흡·지구력"
         },
         {
-          "en": "Outer Hand",
-          "ko": "외손"
+          "en": "Body conditioning",
+          "ko": "신체 단련"
         },
         {
-          "en": "Light Step",
-          "ko": "경보"
+          "en": "Movement and footwork",
+          "ko": "이동·보법"
         },
         {
-          "en": "Tools",
-          "ko": "연장"
+          "en": "Weapons and tools",
+          "ko": "무기·도구"
         },
         {
           "en": "Restraint",
           "ko": "제압"
         },
         {
-          "en": "Hand-Mending",
-          "ko": "손고침"
+          "en": "Maintenance and support",
+          "ko": "정비·지원"
         }
       ],
       "rows": [
@@ -1636,7 +1668,7 @@
           },
           {
             "en": "Where water stood, the Sluice-Breath Method's breath ran long",
-            "ko": "물이 있는 자리면 수문호흡법 숨이 길다"
+            "ko": "물이 있는 자리면 수문호흡법의 숨이 길다"
           },
           {
             "en": "Carrying hammer and shield was slow",
@@ -1644,7 +1676,7 @@
           },
           {
             "en": "Main hand-form. Floor changes, catwalks, storage tracks",
-            "ko": "주 손결. 층 전환, 캣워크, 유치선"
+            "ko": "주 수련 분야. 층 전환, 캣워크, 유치선"
           },
           {
             "en": "Hydraulics and heavy weapons are stronghold gear. No personal carry begins",
@@ -1670,7 +1702,7 @@
           },
           {
             "en": "Main hand-form. The Wheel Hammer lives only on mended gear",
-            "ko": "주 손결. 고친 장비에서만 차륜망치가 산다"
+            "ko": "주 수련 분야. 고친 장비에서만 차륜망치가 산다"
           },
           {
             "en": "Contact after flank movement",
@@ -1726,7 +1758,7 @@
           },
           {
             "en": "Lining up the register",
-            "ko": "명부 줄세움"
+            "ko": "명부 줄 세우기"
           },
           {
             "en": "Front-rank shields",
@@ -1734,7 +1766,7 @@
           },
           {
             "en": "Main hand-form",
-            "ko": "주 손결"
+            "ko": "주 수련 분야"
           },
           {
             "en": "Intervals between large equipment",
@@ -1745,8 +1777,8 @@
             "ko": "차단문 순서, 서고 골목"
           },
           {
-            "en": "Regrouping meets not a card but only Hand-Mending after a halt",
-            "ko": "재집결은 카드가 아니라 정지 뒤의 손고침과만 만난다"
+            "en": "Regrouping is not a card; it connects only to maintenance and support after a halt",
+            "ko": "재집결은 카드가 아니라 정지 뒤의 정비·지원과만 만난다"
           }
         ],
         [
@@ -1756,15 +1788,15 @@
           },
           {
             "en": "Lock-gate breath, transcription breath",
-            "ko": "갑문숨, 필사숨"
+            "ko": "갑문 당직 수련, 서서 한 장 필사하기"
           },
           {
             "en": "The readiness of interval lock",
-            "ko": "간격잠금의 준비"
+            "ko": "간격 고정의 준비"
           },
           {
-            "en": "Light Step turns off during a halt",
-            "ko": "정지 중 경보는 꺼진다"
+            "en": "Movement and footwork is inactive during a halt",
+            "ko": "정지 중 이동·보법은 꺼진다"
           },
           {
             "en": "Strongpoint hydraulic deployment",
@@ -1772,11 +1804,11 @@
           },
           {
             "en": "Main hand-form. The capture cord comes only after a halt",
-            "ko": "주 손결. 포획줄은 정지 뒤에만"
+            "ko": "주 수련 분야. 포박은 정지 뒤에만"
           },
           {
             "en": "Main hand-form. Repair, the turbid-water confession, triple-copy collation",
-            "ko": "주 손결. 수리, 탁수고백, 삼본대조"
+            "ko": "주 수련 분야. 수리, 탁도 공개, 세 사본 대조"
           }
         ]
       ]
@@ -1785,8 +1817,8 @@
       "kind": "paragraph",
       "anchor": "전투와의-관계-p6",
       "text": {
-        "en": "The aptitude of a battlefield archetype was quality. It was not counted by adding numbers. The Han crossing was the Sluice-Breath Method's; the depot approach was the Wheel Hammer's; the short fronts of transfer-station floors and small station houses were the Pulpit Voice's and the Record-Severance Method's; the single file of a tunnel was the Escort Iron-Wall Formation's; the surface ruins were where Escort Iron-Wall Formation mobility met the Pulpit Voice's roll-call. At a terminal's blocked end, Restraint was strong.",
-        "ko": "전장 원형의 적성은 수치 보너스로 환산하지 않는다. 한강 횡단에서는 수문호흡법이, 차량기지 인접 구역에서는 차륜망치가 활동한다. 환승역 층과 작은 역사의 짧은 전열에는 강단발과 기록단절법이 맞는다. 터널의 한 줄 전열에는 호위철벽진이 맞고, 지상 폐허에서는 호위철벽진 기동과 강단발 호명이 맞붙는다. 종착역의 막힌 끝에서는 제압이 강하다."
+        "en": "The aptitude of a battlefield archetype was quality. It was not counted by adding numbers. The Han crossing was the Sluice-Breath Method's; the depot approach was the Wheel Hammer's; the short fronts of transfer-station floors and small station houses were the Pulpit-Call Method's and the Record-Severance Method's; the single file of a tunnel was the Escort Iron-Wall Formation's; the surface ruins were where Escort Iron-Wall Formation mobility met the Pulpit-Call Method's roll-call. At a terminal's blocked end, Restraint was strong.",
+        "ko": "전장 원형의 적성은 수치 보너스로 환산하지 않는다. 한강 횡단에서는 수문호흡법이, 차량기지 인접 구역에서는 차륜망치가 활동한다. 환승역 층과 작은 역사의 짧은 전열에는 강단호명법과 기록단절법이 맞는다. 터널의 한 줄 전열에는 호위철벽진이 맞고, 지상 폐허에서는 호위철벽진 기동과 강단호명법 호명이 맞붙는다. 종착역의 막힌 끝에서는 제압이 강하다."
       }
     },
     {
@@ -1829,7 +1861,7 @@
       "anchor": "수문호흡법-p2",
       "text": {
         "en": "Water was the wreckage of the system that had purified raw Han water and sent it on. After pumps, chlorine injection, and turbidity testing came down to human watches, this hand grew. When the tank-farming cells and the drinking-water cells used one surface, that day's cloudy water became the evening soup. Cooling water did not go onto the drinking ledger. When turbidity reading read cooling-water admixture as clear, the next waterborne disease opened on that watch's signature. Cutting the raw water was a watch bound to taboo, not a technique of the table. The Medical Neutrality League saw the dysentery and fever; the Sluice-Breath Method cut the cause above the water's surface.",
-        "ko": "2026년에는 한강 원수를 정수하여 관으로 보냈다. 펌프 운전, 염소 주입, 탁도 검사가 사람 당직으로 넘어간 뒤에야 수문호흡법이 형성되었다. 수조 농어 사육 칸과 식수 채수 칸이 한 수면을 쓰면 탁수가 저녁 국물에 섞인다. 냉각수는 식수 원장에 올리지 않는다. 탁도읽기에서 냉각수 혼입을 놓치면 당직자가 서명한 물에서 수인병이 생긴다. 원수를 분리하는 일은 기법이 아니라 당직이고, 흰십자단이 설사와 열을 치료한다. 수문호흡법은 수면에서 오염 원인을 확인한다."
+        "ko": "2026년에는 한강 원수를 정수하여 관으로 보냈다. 펌프 운전, 염소 주입, 탁도 검사가 사람 당직으로 넘어간 뒤에야 수문호흡법이 형성되었다. 수조 농어 사육 칸과 식수 채수 칸이 한 수면을 쓰면 탁수가 저녁 국물에 섞인다. 냉각수는 식수 원장에 올리지 않는다. 탁도 읽기에서 냉각수 혼입을 놓치면 당직자가 서명한 물에서 수인병이 생긴다. 원수를 분리하는 일은 기법이 아니라 당직이고, 흰십자단이 설사와 열을 치료한다. 수문호흡법은 수면에서 오염 원인을 확인한다."
       }
     },
     {
@@ -1837,24 +1869,28 @@
       "anchor": "수문호흡법-table3",
       "columns": [
         {
-          "en": "Technique",
-          "ko": "기법"
+          "en": "Item",
+          "ko": "항목"
         },
         {
-          "en": "Hand-form",
-          "ko": "손결"
+          "ko": "분류",
+          "en": "Classification"
         },
         {
-          "en": "Transmission line",
-          "ko": "전수 줄"
+          "en": "Training domain",
+          "ko": "수련 분야"
+        },
+        {
+          "en": "Teachers and places",
+          "ko": "가르치는 사람·곳"
         },
         {
           "en": "Training",
           "ko": "훈련"
         },
         {
-          "en": "Body's price",
-          "ko": "몸값"
+          "en": "Burden and risk",
+          "ko": "부담·위험"
         },
         {
           "en": "Counter",
@@ -1869,19 +1905,23 @@
           "ko": "전장 원형"
         },
         {
-          "en": "Taboo adjacency",
-          "ko": "금기 인접"
+          "en": "Related taboo",
+          "ko": "관련 금기"
         }
       ],
       "rows": [
         [
           {
-            "en": "Lock-gate breath",
-            "ko": "갑문숨"
+            "ko": "갑문 당직 수련",
+            "en": "Sluice-gate watch practice"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "호흡·버티기 수련",
+            "en": "Breath and bracing practice"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Lock-gate watch masters",
@@ -1896,8 +1936,8 @@
             "ko": "폐와 염소. 오래 하면 기침이 남는다"
           },
           {
-            "en": "The Pulpit Voice's roll-call cuts the breath; when the Record-Severance Method seals the watch log, there is no water to read",
-            "ko": "강단발 호명이 숨을 끊는다. 기록단절법이 당직 로그를 봉하면 읽을 물이 없다"
+            "en": "The Pulpit-Call Method's roll-call cuts the breath; when the Record-Severance Method seals the watch log, there is no water to read",
+            "ko": "강단호명법 호명이 숨을 끊는다. 기록단절법이 당직 로그를 봉하면 읽을 물이 없다"
           },
           {
             "en": "Halt. In flooding and crossing, morale breaks late",
@@ -1914,12 +1954,16 @@
         ],
         [
           {
-            "en": "Turbidity reading",
-            "ko": "탁도읽기"
+            "ko": "탁도 읽기",
+            "en": "Reading turbidity"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "생업·관찰",
+            "en": "Trade work and observation"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Sampling watch",
@@ -1927,7 +1971,7 @@
           },
           {
             "en": "Compares tank and pipe taste only before a martial master",
-            "ko": "수조와 관 맛을 무공 사제 앞에서만 견준다"
+            "ko": "수조와 관 맛을 무공 스승 앞에서만 견준다"
           },
           {
             "en": "Waterborne-disease exposure",
@@ -1952,12 +1996,16 @@
         ],
         [
           {
-            "en": "Chlorine chest",
-            "ko": "염소가슴"
+            "ko": "염소 주입 간격 세기",
+            "en": "Counting chlorine-injection intervals"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "생업·호흡",
+            "en": "Trade work and breathing"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Injection watch",
@@ -1990,12 +2038,16 @@
         ],
         [
           {
-            "en": "Sluice shoulder",
-            "ko": "수문어깨"
+            "ko": "수문 바퀴 밀기",
+            "en": "Pushing the sluice wheel"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "신체 수련",
+            "en": "Body practice"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Sluice-key masters",
@@ -2011,7 +2063,7 @@
           },
           {
             "en": "When the Wheel Hammer's wheel lock bites the gear, the shoulder spins free",
-            "ko": "차륜망치 차륜잠금이 기어를 물면 어깨가 헛돈다"
+            "ko": "차륜망치의 차륜 잠금이 기어를 물면 어깨가 헛돈다"
           },
           {
             "en": "Attack. Doors, lock gates, and barriers are the target",
@@ -2028,12 +2080,16 @@
         ],
         [
           {
-            "en": "Pipe knee",
-            "ko": "배관무릎"
+            "ko": "무릎으로 버티기",
+            "en": "Bracing with the knees"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "신체 수련",
+            "en": "Body practice"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Pipe apprentices",
@@ -2066,12 +2122,16 @@
         ],
         [
           {
-            "en": "Catwalk walk",
-            "ko": "캣워크걸음"
+            "ko": "철제 보도 걷기",
+            "en": "Walking the steel catwalk"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동 수련",
+            "en": "Movement practice"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Lock-gate walkways",
@@ -2087,7 +2147,7 @@
           },
           {
             "en": "The Record-Severance Method's stack alleys differ in width and confuse the feet",
-            "ko": "기록단절법 서고골목과 폭이 달라 발이 헷갈린다"
+            "ko": "기록단절법 서가 사이 이동과 폭이 달라 발이 헷갈린다"
           },
           {
             "en": "Move. Crosses restricted links without breaking the file",
@@ -2104,12 +2164,16 @@
         ],
         [
           {
-            "en": "Water's edge",
-            "ko": "수면가장자리"
+            "ko": "수조 턱 걷기",
+            "en": "Walking the tank lip"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동 수련",
+            "en": "Movement practice"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Tank watch",
@@ -2136,18 +2200,22 @@
             "ko": "한강, 종착역 수조"
           },
           {
-            "en": "Drinking water and farming on one surface fail Hand-Mending",
-            "ko": "식수와 양식을 한 수면에 두면 손고침이 실패한다"
+            "en": "Sharing one water surface between drinking water and aquaculture defeats maintenance and support",
+            "ko": "식수와 양식을 한 수면에 두면 정비·지원이 실패한다"
           }
         ],
         [
           {
-            "en": "Sluice-key staff",
-            "ko": "수문키봉"
+            "ko": "수문키 운용",
+            "en": "Operating the sluice key"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "도구 운용",
+            "en": "Tool handling"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "Key masters",
@@ -2180,12 +2248,16 @@
         ],
         [
           {
-            "en": "Sampling-bottle mark",
-            "ko": "채수병표"
+            "ko": "탁수 표시",
+            "en": "Marking turbid water"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "표식 운용",
+            "en": "Marker handling"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "Sampling line",
@@ -2200,8 +2272,8 @@
             "ko": "병은 소모다"
           },
           {
-            "en": "The Pulpit Voice's line-up tramples the mark away",
-            "ko": "강단발 줄세움이 표를 밟아 지운다"
+            "en": "The Pulpit-Call Method's line-up tramples the mark away",
+            "ko": "강단호명법의 줄 세우기가 표를 밟아 지운다"
           },
           {
             "en": "Marking before a halt. Not a thrower corps",
@@ -2218,16 +2290,20 @@
         ],
         [
           {
-            "en": "Water-cutoff lock",
-            "ko": "단수잠금"
+            "ko": "수문 폐쇄",
+            "en": "Closing the sluice"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "시설을 이용한 제압",
+            "en": "Restraint through facility control"
+          },
+          {
+            "ko": "제압",
+            "en": "Restraint"
           },
           {
             "en": "Elder hands only",
-            "ko": "원로손만"
+            "ko": "원로만"
           },
           {
             "en": "Closes the sluice and binds the opponent's feet",
@@ -2251,17 +2327,21 @@
           },
           {
             "en": "Cutting water to hide turbidity cuts the transmission and opens the Punishment Tribunal",
-            "ko": "탁수를 숨기려 단수하면 전수가 끊기고 형조가 열린다"
+            "ko": "탁수를 숨기려 단수하면 전수가 끊기고 겸전 심사가 열린다"
           }
         ],
         [
           {
-            "en": "Water-pressure catch",
-            "ko": "수압받이"
+            "ko": "수압 버티기",
+            "en": "Bracing against water pressure"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "버티기·진형",
+            "en": "Bracing and formation"
+          },
+          {
+            "ko": "제압",
+            "en": "Restraint"
           },
           {
             "en": "Lock-gate masters",
@@ -2294,12 +2374,16 @@
         ],
         [
           {
-            "en": "Turbid-water confession",
-            "ko": "탁수고백"
+            "ko": "탁도 공개",
+            "en": "Publishing turbidity"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "기록·공개 절차",
+            "en": "Record and public procedure"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "Before the elders",
@@ -2315,7 +2399,7 @@
           },
           {
             "en": "Without the Record-Severance Method's triple-copy collation, the confession stays oral record",
-            "ko": "기록단절법 삼본대조가 없으면 고백이 구술이 된다"
+            "ko": "기록단절법의 세 사본 대조가 없으면 고백이 구술이 된다"
           },
           {
             "en": "After a halt. Does not raise fallen soldiers",
@@ -2333,12 +2417,20 @@
       ]
     },
     {
+      "kind": "paragraph",
+      "anchor": "차륜망치-legacy-link",
+      "text": {
+        "ko": "<a id=\"차륜망치\"></a>",
+        "en": "<a id=\"차륜망치\"></a>"
+      }
+    },
+    {
       "kind": "heading",
       "anchor": "차륜망치",
       "depth": 2,
       "text": {
-        "en": "Wheel Hammer",
-        "ko": "차륜망치"
+        "en": "Wheel-Tempering Work",
+        "ko": "차륜강체공"
       }
     },
     {
@@ -2363,8 +2455,8 @@
       "kind": "paragraph",
       "anchor": "차륜망치-p1",
       "text": {
-        "en": "The hand of depot maintenance. Transmission passed person to person at the Sinjeong, Cheonwang, Godeok, and Sinnae depots. Changdong, Suseo, and Banghwa were unclaimed, so transmission there was dangerous and the standards elders came rarely. The more one mended, the more the hands grew, and off-standard modification was cast out by the martial masters.",
-        "ko": "차륜망치는 차량기지 정비에서 전수하는 손이다. 신정, 천왕, 고덕, 신내 기지에서 사람이 사람에게 전한다. 창동, 수서, 방화는 무주지이다. 그곳의 전수에는 위험이 따르고 규격 원로도 드물게 온다. 정비를 계속하며 숙련한다. 사제는 규격 없는 개조를 내친다."
+        "en": "Wheel-Tempering Work is a martial path passed down through depot maintenance. Transmission passed person to person at the Sinjeong, Cheonwang, Godeok, and Sinnae depots. Changdong, Suseo, and Banghwa were unclaimed, so transmission there was dangerous and the standards elders came rarely. Skill grew through continued maintenance, and off-standard modification was cast out by the martial masters.",
+        "ko": "차륜강체공은 차량기지 정비를 통해 전수하는 무공이다. 신정, 천왕, 고덕, 신내 기지에서 사람이 사람에게 전한다. 창동, 수서, 방화는 무주지이다. 그곳의 전수에는 위험이 따르고 규격 원로도 드물게 온다. 정비를 계속하며 숙련한다. 사제는 규격 없는 개조를 내친다."
       }
     },
     {
@@ -2372,7 +2464,7 @@
       "anchor": "차륜망치-p2",
       "text": {
         "en": "Neural-net weights could not be mended. Hoses, terminals, and lenses could. Recovered lostech was no personal universal weapon, and the seal bolt kept that boundary. Hydraulic structural equipment was the stronghold's gear. No one carried it without power.",
-        "ko": "차륜망치는 호스, 단자, 렌즈를 수리하나 신경망 가중치는 고치지 못하며, 회수한 잃어버린 기술 장비는 봉인볼트로 관리한다. 유압 구조 장비는 거점에 둔다. 동력 없이 개인이 휴대하지 않는다."
+        "ko": "차륜망치는 호스, 단자, 렌즈를 수리하나 신경망 가중치는 고치지 못하며, 회수한 잃어버린 기술 장비는 모듈 봉인으로 관리한다. 유압 구조 장비는 거점에 둔다. 동력 없이 개인이 휴대하지 않는다."
       }
     },
     {
@@ -2380,24 +2472,28 @@
       "anchor": "차륜망치-table3",
       "columns": [
         {
-          "en": "Technique",
-          "ko": "기법"
+          "en": "Item",
+          "ko": "항목"
         },
         {
-          "en": "Hand-form",
-          "ko": "손결"
+          "ko": "분류",
+          "en": "Classification"
         },
         {
-          "en": "Transmission line",
-          "ko": "전수 줄"
+          "en": "Training domain",
+          "ko": "수련 분야"
+        },
+        {
+          "en": "Teachers and places",
+          "ko": "가르치는 사람·곳"
         },
         {
           "en": "Training",
           "ko": "훈련"
         },
         {
-          "en": "Body's price",
-          "ko": "몸값"
+          "en": "Burden and risk",
+          "ko": "부담·위험"
         },
         {
           "en": "Counter",
@@ -2412,19 +2508,23 @@
           "ko": "전장 원형"
         },
         {
-          "en": "Taboo adjacency",
-          "ko": "금기 인접"
+          "en": "Related taboo",
+          "ko": "관련 금기"
         }
       ],
       "rows": [
         [
           {
-            "en": "Axle echo",
-            "ko": "축울림"
+            "ko": "차축 소리 듣기",
+            "en": "Listening to axle sounds"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "정비·관찰",
+            "en": "Maintenance and observation"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Maintenance masters",
@@ -2439,8 +2539,8 @@
             "ko": "청력"
           },
           {
-            "en": "The Pulpit Voice's transmissions and roll-calls cover the sound",
-            "ko": "강단발 송신과 호명이 음을 덮는다"
+            "en": "The Pulpit-Call Method's transmissions and roll-calls cover the sound",
+            "ko": "강단호명법 송신과 호명이 음을 덮는다"
           },
           {
             "en": "Halt. Keeps broken tools from being struck with",
@@ -2457,12 +2557,16 @@
         ],
         [
           {
-            "en": "Standard breath",
-            "ko": "규격숨"
+            "ko": "망치질에 맞춘 호흡",
+            "en": "Breathing with the hammer strikes"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "호흡 수련",
+            "en": "Breathing practice"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Track-maintenance masters",
@@ -2478,7 +2582,7 @@
           },
           {
             "en": "The Sluice-Breath Method's lock-gate breath differs in beat; dual practice injures the body",
-            "ko": "수문호흡법 갑문숨과 박자가 달라 겸전하면 몸이 상한다"
+            "ko": "수문호흡법 갑문 당직 수련과 박자가 달라 겸전하면 몸이 상한다"
           },
           {
             "en": "Halt before attack",
@@ -2495,12 +2599,16 @@
         ],
         [
           {
-            "en": "Standard hammer",
-            "ko": "규격망치"
+            "ko": "망치 내려치기",
+            "en": "Bringing down the hammer"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "타격 수련",
+            "en": "Striking practice"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Elder hammers",
@@ -2516,7 +2624,7 @@
           },
           {
             "en": "When the Escort Iron-Wall Formation's shield shoulder receives it, it does not go in at once",
-            "ko": "호위철벽진 방패어깨가 받으면 한 번에 안 들어간다"
+            "ko": "호위철벽진에서 어깨로 받친 방패에는 한 번에 들어가지 않는다"
           },
           {
             "en": "Attack. On unmended equipment the hammer does not live",
@@ -2533,12 +2641,16 @@
         ],
         [
           {
-            "en": "Carriage shoulder",
-            "ko": "대차어깨"
+            "ko": "어깨로 대차 밀기",
+            "en": "Pushing the bogie with the shoulder"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "신체 수련",
+            "en": "Body practice"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Storage-track watch",
@@ -2553,8 +2665,8 @@
             "ko": "허리"
           },
           {
-            "en": "Meeting the water-pressure catch head-on, the back goes first",
-            "ko": "수압받이와 정면으로 만나면 허리가 먼저 나간다"
+            "en": "Meeting water-pressure bracing head-on, the back goes first",
+            "ko": "수압 버티기와 정면으로 만나면 허리가 먼저 나간다"
           },
           {
             "en": "Formation change and movement",
@@ -2571,12 +2683,16 @@
         ],
         [
           {
-            "en": "Storage-track run",
-            "ko": "유치선달리기"
+            "ko": "유치선 달리기",
+            "en": "Running the storage track"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동 수련",
+            "en": "Movement practice"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Depot apprentices",
@@ -2609,12 +2725,16 @@
         ],
         [
           {
-            "en": "Inspection-pit gear lift",
-            "ko": "점검구기어들기"
+            "ko": "점검구로 기어들기",
+            "en": "Crawling into the inspection hatch"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동 수련",
+            "en": "Movement practice"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Undercarriage watch",
@@ -2630,7 +2750,7 @@
           },
           {
             "en": "When the Escort Iron-Wall Formation's interval lock blocks the entrance, one cannot come out",
-            "ko": "호위 간격잠금이 입구를 막으면 나오지 못한다"
+            "ko": "호위 간격 고정이 입구를 막으면 나오지 못한다"
           },
           {
             "en": "Move. Entering cover",
@@ -2647,12 +2767,16 @@
         ],
         [
           {
-            "en": "Spanner staff",
-            "ko": "스패너봉"
+            "ko": "스패너 운용",
+            "en": "Operating the spanner"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "도구 운용",
+            "en": "Tool handling"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "Tool masters",
@@ -2668,7 +2792,7 @@
           },
           {
             "en": "Shorter than the issue staff. The standard hammer is the true hand",
-            "ko": "제식 봉보다 짧다. 규격망치가 본손이다"
+            "ko": "제식 봉보다 짧다. 주로 쓰는 기법은 망치 내려치기다"
           },
           {
             "en": "Attack. Trade-tool layer",
@@ -2685,12 +2809,16 @@
         ],
         [
           {
-            "en": "Hydraulic deployment",
-            "ko": "유압전개"
+            "ko": "유압 장비 전개",
+            "en": "Deploying hydraulic equipment"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "시설 운용",
+            "en": "Facility operation"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "Stronghold maintenance",
@@ -2723,16 +2851,20 @@
         ],
         [
           {
-            "en": "Wheel lock",
-            "ko": "차륜잠금"
+            "ko": "차륜 잠금",
+            "en": "Locking the wheel"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "이동 제약",
+            "en": "Movement constraint"
           },
           {
-            "en": "Master hands",
-            "ko": "사제손"
+            "ko": "제압",
+            "en": "Restraint"
+          },
+          {
+            "en": "Instructors",
+            "ko": "전수자"
           },
           {
             "en": "Locks the opponent's cart and carriage wheels",
@@ -2761,12 +2893,16 @@
         ],
         [
           {
-            "en": "Barrier-gate order",
-            "ko": "차단문순서"
+            "ko": "차단문 닫는 순서",
+            "en": "Order for closing barrier doors"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "시설 운용",
+            "en": "Facility operation"
+          },
+          {
+            "ko": "제압",
+            "en": "Restraint"
           },
           {
             "en": "Cheonwang elders",
@@ -2781,8 +2917,8 @@
             "ko": "손에 문이 끼인다"
           },
           {
-            "en": "When the Pulpit Voice's line-up differs in order, the formation breaks",
-            "ko": "강단발 줄세움과 순서가 다르면 진형이 깨진다"
+            "en": "When the Pulpit-Call Method's line-up differs in order, the formation breaks",
+            "ko": "강단호명법의 줄 세우기와 순서가 다르면 진형이 깨진다"
           },
           {
             "en": "Formation change and halt",
@@ -2799,12 +2935,16 @@
         ],
         [
           {
-            "en": "Standard fit",
-            "ko": "규격맞춤"
+            "ko": "규격 맞추기",
+            "en": "Matching the standard"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "정비",
+            "en": "Maintenance"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "Track-maintenance masters",
@@ -2837,12 +2977,16 @@
         ],
         [
           {
-            "en": "Seal bolt",
-            "ko": "봉인볼트"
+            "ko": "모듈 봉인",
+            "en": "Sealing the module"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "정비·봉인",
+            "en": "Maintenance and sealing"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "The elders",
@@ -2876,12 +3020,20 @@
       ]
     },
     {
+      "kind": "paragraph",
+      "anchor": "강단발-legacy-link",
+      "text": {
+        "ko": "<a id=\"강단발\"></a>",
+        "en": "<a id=\"강단발\"></a>"
+      }
+    },
+    {
       "kind": "heading",
       "anchor": "강단발",
       "depth": 2,
       "text": {
-        "en": "Pulpit Voice",
-        "ko": "강단발"
+        "en": "Pulpit-Call Method",
+        "ko": "강단호명법"
       }
     },
     {
@@ -2906,8 +3058,8 @@
       "kind": "paragraph",
       "anchor": "강단발-p1",
       "text": {
-        "en": "The hand of church elders and deacons. Standing on foot and voice, having memorized the register. Transmission opened in the church aisles, the General Assembly registers, and the Yeouido transmission watches. No living pastor's real name or church logo went onto the school pedigree. The pulpit-lineage faith's right to preach and this school's roll-call could share a place but were not one line.",
-        "ko": "강단발은 예배당 장로와 집사가 명부와 호명을 전수하는 손이다. 예배당 통로, 총회 명부, 여의도 송신 당직에서 전한다. 살아 있는 목사의 실명과 교단 로고는 유파 족보에 올리지 않는다. 강단계 신앙의 설교권과 강단발의 호명은 같은 자리에서 행할 수 있다. 두 전수는 별개이다."
+        "en": "Pulpit Roll-Call Method is a martial path taught by church elders and deacons through registers and roll-call. Transmission opened in the church aisles, the General Assembly registers, and the Yeouido transmission watches. No living pastor's real name or church logo went onto the school pedigree. The pulpit-lineage faith's right to preach and this school's roll-call could share a place but were not one line.",
+        "ko": "강단호명법은 예배당 장로와 집사가 명부와 호명을 통해 전수하는 무공이다. 예배당 통로, 총회 명부, 여의도 송신 당직에서 전한다. 살아 있는 목사의 실명과 교단 로고는 유파 족보에 올리지 않는다. 강단계 신앙의 설교권과 강단호명법의 호명은 같은 자리에서 행할 수 있다. 두 전수는 별개이다."
       }
     },
     {
@@ -2915,24 +3067,28 @@
       "anchor": "강단발-table2",
       "columns": [
         {
-          "en": "Technique",
-          "ko": "기법"
+          "en": "Item",
+          "ko": "항목"
         },
         {
-          "en": "Hand-form",
-          "ko": "손결"
+          "ko": "분류",
+          "en": "Classification"
         },
         {
-          "en": "Transmission line",
-          "ko": "전수 줄"
+          "en": "Training domain",
+          "ko": "수련 분야"
+        },
+        {
+          "en": "Teachers and places",
+          "ko": "가르치는 사람·곳"
         },
         {
           "en": "Training",
           "ko": "훈련"
         },
         {
-          "en": "Body's price",
-          "ko": "몸값"
+          "en": "Burden and risk",
+          "ko": "부담·위험"
         },
         {
           "en": "Counter",
@@ -2947,19 +3103,23 @@
           "ko": "전장 원형"
         },
         {
-          "en": "Taboo adjacency",
-          "ko": "금기 인접"
+          "en": "Related taboo",
+          "ko": "관련 금기"
         }
       ],
       "rows": [
         [
           {
-            "en": "Pulpit breath",
-            "ko": "강단숨"
+            "ko": "명부 암송",
+            "en": "Reciting the register"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "호흡·암송",
+            "en": "Breathing and recitation"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Deacon masters",
@@ -2992,12 +3152,16 @@
         ],
         [
           {
-            "en": "Roll-call breath",
-            "ko": "호명숨"
+            "ko": "명부 호명",
+            "en": "Calling the register"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "발성 수련",
+            "en": "Vocal practice"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Register masters",
@@ -3030,12 +3194,16 @@
         ],
         [
           {
-            "en": "Register foot",
-            "ko": "명부발"
+            "ko": "호명에 맞춰 딛기",
+            "en": "Stepping to the roll call"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "발 디딤 수련",
+            "en": "Footwork practice"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Pulpit masters",
@@ -3051,7 +3219,7 @@
           },
           {
             "en": "The Escort shield shoulder blocks the feet",
-            "ko": "호위 방패어깨에 발이 막힌다"
+            "ko": "호위철벽진에서 어깨로 받친 방패에 발이 막힌다"
           },
           {
             "en": "Attack. Short. The main force is restraint",
@@ -3072,8 +3240,12 @@
             "ko": "통로어깨"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "—",
+            "en": "—"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Ushering deacons",
@@ -3088,8 +3260,8 @@
             "ko": "어깨"
           },
           {
-            "en": "Against the Sluice-Breath Method's water-pressure catch, the aisle vanishes",
-            "ko": "수문 수압받이에 통로가 사라진다"
+            "en": "Against the Sluice-Breath Method's water-pressure bracing, the aisle vanishes",
+            "ko": "수문호흡법의 수압 버티기에 통로가 사라진다"
           },
           {
             "en": "Formation change",
@@ -3106,12 +3278,16 @@
         ],
         [
           {
-            "en": "Yellow-line walk",
-            "ko": "노란선걸음"
+            "ko": "노란선 피해 걷기",
+            "en": "Walking while avoiding the yellow line"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동 수련",
+            "en": "Movement practice"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Platform taboo",
@@ -3127,7 +3303,7 @@
           },
           {
             "en": "The Escort Iron-Wall Formation's tunnel single file ignores the line",
-            "ko": "호위 터널한줄은 선을 무시한다"
+            "ko": "호위 터널 일렬 이동은 선을 무시한다"
           },
           {
             "en": "Move and formation",
@@ -3144,12 +3320,16 @@
         ],
         [
           {
-            "en": "Stair recall",
-            "ko": "층계단외움"
+            "ko": "층과 계단 외우기",
+            "en": "Memorizing floors and stairs"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동·기억",
+            "en": "Movement and memory"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Transfer masters",
@@ -3165,7 +3345,7 @@
           },
           {
             "en": "Fights the Record-Severance Method's triple-copy carry on the stairs",
-            "ko": "기록단절법 삼본나르기와 계단을 다툰다"
+            "ko": "기록단절법 세 사본 분산 운반과 계단을 다툰다"
           },
           {
             "en": "Move. Floor changes",
@@ -3182,12 +3362,16 @@
         ],
         [
           {
-            "en": "Register rod",
-            "ko": "명부철심"
+            "ko": "철심으로 묶은 명부",
+            "en": "Register bound with an iron spine"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "장비",
+            "en": "Equipment"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "The register chests",
@@ -3220,12 +3404,16 @@
         ],
         [
           {
-            "en": "Broadcast stand",
-            "ko": "송신대"
+            "ko": "마이크대",
+            "en": "Microphone stand"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "장비·발성 지원",
+            "en": "Equipment and vocal support"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "The Yeouido transmission line",
@@ -3258,12 +3446,16 @@
         ],
         [
           {
-            "en": "Line-up",
-            "ko": "줄세움"
+            "ko": "줄 세우기",
+            "en": "Forming a line"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "대열 운용",
+            "en": "Line formation"
+          },
+          {
+            "ko": "제압",
+            "en": "Restraint"
           },
           {
             "en": "Deacon elders",
@@ -3279,7 +3471,7 @@
           },
           {
             "en": "Clashes with the barrier-gate order",
-            "ko": "차단문순서와 충돌한다"
+            "ko": "차단문 닫는 순서와 충돌한다"
           },
           {
             "en": "Formation change",
@@ -3296,16 +3488,20 @@
         ],
         [
           {
-            "en": "Name-fixing",
-            "ko": "호명고정"
+            "ko": "호명에 맞춰 정지",
+            "en": "Stopping to the roll call"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "대열 운용",
+            "en": "Formation handling"
           },
           {
-            "en": "Master hands",
-            "ko": "사제손"
+            "ko": "제압",
+            "en": "Restraint"
+          },
+          {
+            "en": "Instructors",
+            "ko": "전수자"
           },
           {
             "en": "The name called stands in its place",
@@ -3334,12 +3530,16 @@
         ],
         [
           {
-            "en": "Relief line",
-            "ko": "구휼줄"
+            "ko": "배급 줄 정리",
+            "en": "Organizing the ration line"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "배급·사기 지원",
+            "en": "Ration and morale support"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "Elder relief",
@@ -3372,12 +3572,16 @@
         ],
         [
           {
-            "en": "Nameless rite",
-            "ko": "무명위령"
+            "ko": "고인 위령",
+            "en": "Rite for the dead"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "의례",
+            "en": "Rite"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "The elders",
@@ -3441,8 +3645,8 @@
       "kind": "paragraph",
       "anchor": "호위철벽진-p1",
       "text": {
-        "en": "The hand of guards and service remnants. With shield and interval, it cut the number landing at once. Transmission opened at the posts, the bridges, the Amsa emergency superintendence, the Guui ridge, and the edges of the Capital Defense Command remnants. It overlapped the guards of the Sinjeong–Bupyeong mobilization remnants without reading that organization under the school's name.",
-        "ko": "호위철벽진은 경비와 병역 잔존 인력이 방패와 간격을 전수하는 손이다. 한 번에 접근하는 적의 수를 줄이며, 초소, 교량, 암사 비상감독, 구의 능선, 수방사 잔편 가장자리에서 전한다. 신정·부평 축 동원잔존의 경비와 현장을 함께 쓰나, 동원잔존 조직 자체는 유파가 아니다."
+        "en": "Escort Iron-Wall Formation is a martial path in which guards and service remnants teach the use of shields and spacing. It reduces the number of enemies approaching at once. Transmission opened at the posts, the bridges, the Amsa emergency superintendence, the Guui ridge, and the edges of the Capital Defense Command remnants. It overlapped the guards of the Sinjeong–Bupyeong mobilization remnants without making that organization a martial school.",
+        "ko": "호위철벽진은 경비와 병역 잔존 인력이 방패 운용과 간격 유지를 가르치는 무공이다. 한 번에 접근하는 적의 수를 줄이며, 초소, 교량, 암사 비상감독, 구의 능선, 수방사 잔편 가장자리에서 전한다. 신정·부평 축 동원잔존의 경비와 현장을 함께 쓰나, 동원잔존 조직 자체는 유파가 아니다."
       }
     },
     {
@@ -3458,24 +3662,28 @@
       "anchor": "호위철벽진-table3",
       "columns": [
         {
-          "en": "Technique",
-          "ko": "기법"
+          "en": "Item",
+          "ko": "항목"
         },
         {
-          "en": "Hand-form",
-          "ko": "손결"
+          "ko": "분류",
+          "en": "Classification"
         },
         {
-          "en": "Transmission line",
-          "ko": "전수 줄"
+          "en": "Training domain",
+          "ko": "수련 분야"
+        },
+        {
+          "en": "Teachers and places",
+          "ko": "가르치는 사람·곳"
         },
         {
           "en": "Training",
           "ko": "훈련"
         },
         {
-          "en": "Body's price",
-          "ko": "몸값"
+          "en": "Burden and risk",
+          "ko": "부담·위험"
         },
         {
           "en": "Counter",
@@ -3490,19 +3698,23 @@
           "ko": "전장 원형"
         },
         {
-          "en": "Taboo adjacency",
-          "ko": "금기 인접"
+          "en": "Related taboo",
+          "ko": "관련 금기"
         }
       ],
       "rows": [
         [
           {
-            "en": "Interval breath",
-            "ko": "간격숨"
+            "ko": "방패를 든 호흡 수련",
+            "en": "Breathing practice with a shield"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "호흡 수련",
+            "en": "Breathing practice"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Shield masters",
@@ -3518,7 +3730,7 @@
           },
           {
             "en": "The Sluice-Breath Method's chlorine chest fouls the air in the gaps",
-            "ko": "수문 염소가슴이 틈의 공기를 더럽힌다"
+            "ko": "수문호흡법의 염소 주입이 틈의 공기를 더럽힌다"
           },
           {
             "en": "Halt",
@@ -3535,12 +3747,16 @@
         ],
         [
           {
-            "en": "Post breath",
-            "ko": "초소숨"
+            "ko": "초소 당직 수련",
+            "en": "Guard-post watch practice"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "호흡·교대 수련",
+            "en": "Breathing and watch rotation"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "The duty posts",
@@ -3555,7 +3771,7 @@
             "ko": "잠 부족"
           },
           {
-            "en": "The Pulpit Voice's roll-call disorders the relief",
+            "en": "The Pulpit-Call Method's roll-call disorders the relief",
             "ko": "강단 호명이 교대를 흐트러뜨린다"
           },
           {
@@ -3573,12 +3789,16 @@
         ],
         [
           {
-            "en": "Shield shoulder",
-            "ko": "방패어깨"
+            "ko": "어깨로 방패 받치기",
+            "en": "Bracing the shield with the shoulder"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "방패 운용",
+            "en": "Shield handling"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "The police-issue line",
@@ -3594,7 +3814,7 @@
           },
           {
             "en": "Struck with the Wheel Hammer's mended tools, the covering goes first",
-            "ko": "규격망치가 고친 연장으로 치면 피복이 먼저 간다"
+            "ko": "수리한 연장으로 내려치면 방패의 피복이 먼저 손상된다"
           },
           {
             "en": "The defense of attack. Fewer land at once",
@@ -3615,8 +3835,12 @@
             "ko": "제식봉내리기"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "봉 운용",
+            "en": "Staff handling"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Patrol masters",
@@ -3631,8 +3855,8 @@
             "ko": "팔"
           },
           {
-            "en": "Longer than the sluice-key staff, heavier than the Record-Severance Method's opening knife",
-            "ko": "수문키봉보다 길고 기록 개봉칼보다 무겁다"
+            "en": "Longer than a sluice key, heavier than a records-office opening knife",
+            "ko": "수문키보다 길고 기록원의 개봉칼보다 무겁다"
           },
           {
             "en": "Attack",
@@ -3649,12 +3873,16 @@
         ],
         [
           {
-            "en": "Post circuit",
-            "ko": "초소돌기"
+            "ko": "초소 돌기",
+            "en": "Circling the guard posts"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동·순찰",
+            "en": "Movement and patrol"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Post apprentices",
@@ -3670,7 +3898,7 @@
           },
           {
             "en": "When the storage-track run's circle overlaps, they collide at the depot",
-            "ko": "유치선달리기와 원이 겹치면 기지에서 충돌한다"
+            "ko": "유치선 달리기와 원이 겹치면 기지에서 충돌한다"
           },
           {
             "en": "Move",
@@ -3687,12 +3915,16 @@
         ],
         [
           {
-            "en": "Tunnel single file",
-            "ko": "터널한줄"
+            "ko": "터널 일렬 이동",
+            "en": "Single-file movement through the tunnel"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동·대형",
+            "en": "Movement and formation"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Military-remnant oral record",
@@ -3725,12 +3957,16 @@
         ],
         [
           {
-            "en": "Patrol shield",
-            "ko": "순찰방패"
+            "ko": "순찰 방패",
+            "en": "Patrol shield"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "장비",
+            "en": "Equipment"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "Police issue",
@@ -3763,12 +3999,16 @@
         ],
         [
           {
-            "en": "Surviving firearm",
-            "ko": "잔존소화기"
+            "ko": "군용 잔존 소형 화기",
+            "en": "Military-remnant small firearm"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "장비",
+            "en": "Equipment"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "Only lines where the deserter and mobilization ledgers opened",
@@ -3801,16 +4041,20 @@
         ],
         [
           {
-            "en": "Interval lock",
-            "ko": "간격잠금"
+            "ko": "간격 고정",
+            "en": "Fixing the interval"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "진형 운용·제압",
+            "en": "Formation handling and restraint"
           },
           {
-            "en": "Master hands",
-            "ko": "사제손"
+            "ko": "제압",
+            "en": "Restraint"
+          },
+          {
+            "en": "Instructors",
+            "ko": "전수자"
           },
           {
             "en": "Fixes the gaps",
@@ -3821,8 +4065,8 @@
             "ko": "어깨"
           },
           {
-            "en": "When the Pulpit Voice's line-up turns the gaps to register order, the lock empties",
-            "ko": "강단 줄세움이 틈을 명부 순으로 바꿔 잠금이 빈다"
+            "en": "When the Pulpit-Call Method's line-up turns the gaps to register order, the lock empties",
+            "ko": "강단 줄 세우기가 틈을 명부 순으로 바꿔 잠금이 빈다"
           },
           {
             "en": "Halt and formation. Fewer land at once",
@@ -3839,12 +4083,16 @@
         ],
         [
           {
-            "en": "Capture cord",
-            "ko": "포획줄"
+            "ko": "포박",
+            "en": "Binding"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "포박",
+            "en": "Binding"
+          },
+          {
+            "ko": "제압",
+            "en": "Restraint"
           },
           {
             "en": "The elders",
@@ -3877,12 +4125,16 @@
         ],
         [
           {
-            "en": "Clothing repair",
-            "ko": "피복꿰맴"
+            "ko": "방패·피복 수선",
+            "en": "Mending shield and clothing"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "정비",
+            "en": "Maintenance"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "The clothing watch",
@@ -3915,12 +4167,16 @@
         ],
         [
           {
-            "en": "Register separation",
-            "ko": "명부분리"
+            "ko": "명부 분리",
+            "en": "Separating registers"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "기록 관리",
+            "en": "Record management"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "Elder taboo training",
@@ -3936,7 +4192,7 @@
           },
           {
             "en": "The Record-Severance Method's triple-copy collation is the witness",
-            "ko": "기록단절법 삼본대조가 증인이다"
+            "ko": "기록단절법의 세 사본 대조가 증인이다"
           },
           {
             "en": "After a halt. Prevents expulsion",
@@ -3960,6 +4216,14 @@
       "text": {
         "en": "Landing Escort Formation",
         "ko": "상륙호위진"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "상륙호위진-classification",
+      "text": {
+        "ko": "분류: 집단 진형",
+        "en": "Classification: Group formation"
       }
     },
     {
@@ -4001,8 +4265,8 @@
       "kind": "paragraph",
       "anchor": "기록단절법-p1",
       "text": {
-        "en": "The hand of the deed and records offices. The blade was not a seal. The hand of transcription and severance was the transmission. Lines opened at the Gwanghwamun seal chests, the deed transcription, the Yangjae joint ledger, and the Gangnam cooling-key ledgers. Forgery killed the hand. Even if medicine mended the wrist, the transmission did not return.",
-        "ko": "기록단절법은 등기와 기록원에서 필사와 개봉을 전수하는 손이다. 광화문 도장함, 등기 필사, 양재 공동 원장, 강남 냉각 키 장부에서 전한다. 칼은 개봉 공구이며 직인이 아니다. 위조하면 전수가 끊긴다. 손목을 치료해도 위조로 끊긴 전수는 돌아오지 않는다."
+        "en": "Record-Severance Method is a martial path that teaches transcription and the opening of sealed records in deed and records offices. It is passed down at the Gwanghwamun seal chests, through deed transcription, and through the Yangjae joint ledger and Gangnam cooling-key ledgers. The blade is an opening tool, not an official seal. Forgery ends transmission. Even if medicine mends the wrist, transmission ended for forgery does not return.",
+        "ko": "기록단절법은 등기와 기록원에서 필사와 개봉을 가르치는 무공이다. 광화문 도장함, 등기 필사, 양재 공동 원장, 강남 냉각 키 장부에서 전한다. 칼은 개봉 공구이며 직인이 아니다. 위조하면 전수가 끊긴다. 손목을 치료해도 위조로 끊긴 전수는 돌아오지 않는다."
       }
     },
     {
@@ -4018,24 +4282,28 @@
       "anchor": "기록단절법-table3",
       "columns": [
         {
-          "en": "Technique",
-          "ko": "기법"
+          "en": "Item",
+          "ko": "항목"
         },
         {
-          "en": "Hand-form",
-          "ko": "손결"
+          "ko": "분류",
+          "en": "Classification"
         },
         {
-          "en": "Transmission line",
-          "ko": "전수 줄"
+          "en": "Training domain",
+          "ko": "수련 분야"
+        },
+        {
+          "en": "Teachers and places",
+          "ko": "가르치는 사람·곳"
         },
         {
           "en": "Training",
           "ko": "훈련"
         },
         {
-          "en": "Body's price",
-          "ko": "몸값"
+          "en": "Burden and risk",
+          "ko": "부담·위험"
         },
         {
           "en": "Counter",
@@ -4050,19 +4318,23 @@
           "ko": "전장 원형"
         },
         {
-          "en": "Taboo adjacency",
-          "ko": "금기 인접"
+          "en": "Related taboo",
+          "ko": "관련 금기"
         }
       ],
       "rows": [
         [
           {
-            "en": "Transcription breath",
-            "ko": "필사숨"
+            "ko": "서서 한 장 필사하기",
+            "en": "Copying one page while standing"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "필사 수련",
+            "en": "Transcription practice"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "Stack masters",
@@ -4077,7 +4349,7 @@
             "ko": "눈과 손목과 정온의 폐"
           },
           {
-            "en": "The Pulpit Voice's roll-call shakes the transcription beat",
+            "en": "The Pulpit-Call Method's roll-call shakes the transcription beat",
             "ko": "강단 호명이 필사 박자를 흔든다"
           },
           {
@@ -4095,12 +4367,16 @@
         ],
         [
           {
-            "en": "Seal breath",
-            "ko": "직인숨"
+            "ko": "날인 전 숨 고르기",
+            "en": "Settling breath before sealing"
           },
           {
-            "en": "Inner Breath",
-            "ko": "내숨"
+            "ko": "날인 수련",
+            "en": "Breath before sealing"
+          },
+          {
+            "ko": "호흡·지구력",
+            "en": "Breath and endurance"
           },
           {
             "en": "The seal watch",
@@ -4116,7 +4392,7 @@
           },
           {
             "en": "The Sluice-Breath Method's water-cutoff lock turns accreditation into paper",
-            "ko": "수문 단수잠금이 인준을 종이로 만든다"
+            "ko": "수문 폐쇄가 인준을 종이로 만든다"
           },
           {
             "en": "Halt. The order's legitimacy remains morale",
@@ -4133,12 +4409,16 @@
         ],
         [
           {
-            "en": "Severing hand",
-            "ko": "끊는손"
+            "ko": "개봉칼 다루기",
+            "en": "Handling the opening knife"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "개봉칼 운용·절단",
+            "en": "Opening-knife handling and cutting"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Opening masters",
@@ -4154,7 +4434,7 @@
           },
           {
             "en": "Against the shield shoulder the blade does not go in at once",
-            "ko": "방패어깨에 칼이 한 번에 들어가지 않는다"
+            "ko": "어깨로 받친 방패에는 칼이 한 번에 들어가지 않는다"
           },
           {
             "en": "Attack. Short and exact",
@@ -4171,12 +4451,16 @@
         ],
         [
           {
-            "en": "Wire-band wrist",
-            "ko": "철끈손목"
+            "ko": "철끈 조이기",
+            "en": "Tightening the iron strap"
           },
           {
-            "en": "Outer Hand",
-            "ko": "외손"
+            "ko": "도구 운용",
+            "en": "Tool handling"
+          },
+          {
+            "ko": "신체 단련",
+            "en": "Body conditioning"
           },
           {
             "en": "Chest watch",
@@ -4209,12 +4493,16 @@
         ],
         [
           {
-            "en": "Stack alley",
-            "ko": "서고골목"
+            "ko": "서가 사이 이동",
+            "en": "Moving between stacks"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "이동 수련",
+            "en": "Movement practice"
+          },
+          {
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
           },
           {
             "en": "Stack apprentices",
@@ -4247,16 +4535,20 @@
         ],
         [
           {
-            "en": "Triple-copy carry",
-            "ko": "삼본나르기"
+            "ko": "세 사본 분산 운반",
+            "en": "Distributing and carrying three copies"
           },
           {
-            "en": "Light Step",
-            "ko": "경보"
+            "ko": "운반 절차",
+            "en": "Carrying procedure"
           },
           {
-            "en": "Master hands",
-            "ko": "사제손"
+            "ko": "이동·보법",
+            "en": "Movement and footwork"
+          },
+          {
+            "en": "Instructors",
+            "ko": "전수자"
           },
           {
             "en": "Carries the three copies by different roads",
@@ -4268,7 +4560,7 @@
           },
           {
             "en": "Fights the stair recall on the stairs",
-            "ko": "층계단외움과 계단을 다툰다"
+            "ko": "‘층과 계단 외우기’ 수련과 같은 계단을 쓴다"
           },
           {
             "en": "Move. Flank exposure",
@@ -4285,12 +4577,16 @@
         ],
         [
           {
-            "en": "Opening knife",
-            "ko": "개봉칼"
+            "ko": "개봉칼",
+            "en": "Opening knife"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "장비",
+            "en": "Equipment"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "Trade cutting",
@@ -4323,12 +4619,16 @@
         ],
         [
           {
-            "en": "Seal chest",
-            "ko": "직인함"
+            "ko": "직인함",
+            "en": "Seal chest"
           },
           {
-            "en": "Tools",
-            "ko": "연장"
+            "ko": "장비",
+            "en": "Equipment"
+          },
+          {
+            "ko": "무기·도구",
+            "en": "Weapons and tools"
           },
           {
             "en": "The seal-chest line",
@@ -4365,12 +4665,16 @@
             "ko": "인준절단"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "절단·정통성 효과",
+            "en": "Cutting and legitimacy effect"
           },
           {
-            "en": "Master hands",
-            "ko": "사제손"
+            "ko": "제압",
+            "en": "Restraint"
+          },
+          {
+            "en": "Instructors",
+            "ko": "전수자"
           },
           {
             "en": "Cuts the false seal so that the unit's legitimacy formation reads as void",
@@ -4399,12 +4703,16 @@
         ],
         [
           {
-            "en": "Forgery detection",
-            "ko": "위조적발"
+            "ko": "위조 적발",
+            "en": "Detecting forgery"
           },
           {
-            "en": "Restraint",
-            "ko": "제압"
+            "ko": "기록 검증",
+            "en": "Forgery verification"
+          },
+          {
+            "ko": "제압",
+            "en": "Restraint"
           },
           {
             "en": "The elders",
@@ -4420,7 +4728,7 @@
           },
           {
             "en": "After the pointing, the capture cord is the Escort squad's work",
-            "ko": "가리킨 뒤 포획줄은 호위 분대의 일이다"
+            "ko": "가리킨 뒤 포박은 호위 분대의 일이다"
           },
           {
             "en": "Halt",
@@ -4437,12 +4745,16 @@
         ],
         [
           {
-            "en": "Triple-copy collation",
-            "ko": "삼본대조"
+            "ko": "세 사본 대조",
+            "en": "Collating three copies"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "기록 검증",
+            "en": "Forgery verification"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "The elders",
@@ -4475,12 +4787,16 @@
         ],
         [
           {
-            "en": "Ink-line correction",
-            "ko": "먹줄고침"
+            "ko": "기록 정정",
+            "en": "Correcting the record"
           },
           {
-            "en": "Hand-Mending",
-            "ko": "손고침"
+            "ko": "기록 정정",
+            "en": "Record correction"
+          },
+          {
+            "ko": "정비·지원",
+            "en": "Maintenance and support"
           },
           {
             "en": "The masters",
@@ -4495,8 +4811,8 @@
             "ko": "평판"
           },
           {
-            "en": "Fights the Pulpit Voice's nameless rite over who is witness",
-            "ko": "강단 무명위령과 누가 증인인지 다툰다"
+            "en": "Fights the Pulpit-Call Method's nameless rite over who is witness",
+            "ko": "강단 고인 위령과 누가 증인인지 다툰다"
           },
           {
             "en": "After a halt",
@@ -4544,8 +4860,8 @@
       "kind": "paragraph",
       "anchor": "상성과-대응-p1",
       "text": {
-        "en": "One hand won by taking the other's premise. Water was the Sluice-Breath Method's premise; mended equipment the Wheel Hammer's; registers the Pulpit Voice's; interval the Escort Iron-Wall Formation's; true copies the Record-Severance Method's. Without the premise taken, the blade did not go into the Escort Iron-Wall Formation at once, and the hammer did not live on unmended equipment. No handicap was set.",
-        "ko": "수문호흡법에는 물이 필요하다. 차륜망치에는 수리한 장비가 필요하다. 강단발에는 명부가 필요하다. 호위철벽진에는 간격이 필요하다. 기록단절법에는 진본이 필요하다. 상대가 이 전제를 빼면 해당 기법을 쓸 수 없다. 호위철벽진에는 칼이 한 번에 들어가지 않는다. 수리하지 않은 장비에는 차륜망치 기법을 쓸 수 없다. 대응 관계에 배수를 매기지 않는다."
+        "en": "One hand won by taking the other's premise. Water was the Sluice-Breath Method's premise; mended equipment the Wheel Hammer's; registers the Pulpit-Call Method's; interval the Escort Iron-Wall Formation's; true copies the Record-Severance Method's. Without the premise taken, the blade did not go into the Escort Iron-Wall Formation at once, and the hammer did not live on unmended equipment. No handicap was set.",
+        "ko": "수문호흡법에는 물이 필요하다. 차륜망치에는 수리한 장비가 필요하다. 강단호명법에는 명부가 필요하다. 호위철벽진에는 간격이 필요하다. 기록단절법에는 진본이 필요하다. 상대가 이 전제를 빼면 해당 기법을 쓸 수 없다. 호위철벽진에는 칼이 한 번에 들어가지 않는다. 수리하지 않은 장비에는 차륜망치 기법을 쓸 수 없다. 대응 관계에 배수를 매기지 않는다."
       }
     },
     {
@@ -4561,8 +4877,8 @@
           "ko": "저쪽"
         },
         {
-          "en": "The countering hand",
-          "ko": "대응의 손"
+          "en": "Countermeasure",
+          "ko": "대응 방식"
         },
         {
           "en": "On failure",
@@ -4585,7 +4901,7 @@
           },
           {
             "en": "Lock the axle and the sluice shoulder spins free",
-            "ko": "축을 잠그면 수문어깨가 헛돈다"
+            "ko": "축을 잠그면 수문 바퀴 밀기가 헛돈다"
           }
         ],
         [
@@ -4599,11 +4915,11 @@
           },
           {
             "en": "Wears down the covering with mended tools. Barrier-gate order",
-            "ko": "고친 연장으로 피복을 민다. 차단문순서"
+            "ko": "고친 연장으로 피복을 민다. 차단문 닫는 순서"
           },
           {
             "en": "The interval lock keeps it from going in at once",
-            "ko": "간격잠금 때문에 한 번에 들어가지 않는다"
+            "ko": "간격 고정 때문에 한 번에 들어가지 않는다"
           }
         ],
         [
@@ -4612,22 +4928,22 @@
             "ko": "호위철벽진"
           },
           {
-            "en": "Pulpit Voice",
-            "ko": "강단발"
+            "en": "Pulpit-Call Method",
+            "ko": "강단호명법"
           },
           {
             "en": "The shield's face cuts the roll-call. The tunnel single file ignores the aisle shoulder",
-            "ko": "호명을 방패 면이 가른다. 터널한줄은 통로어깨를 무시한다"
+            "ko": "호명을 방패 면이 가른다. 터널 일렬 이동은 통로어깨를 무시한다"
           },
           {
             "en": "The line-up turns the interval to register order. Hiding civilian registers draws expulsion",
-            "ko": "줄세움이 간격을 명부 순으로 바꾼다. 민간 명부를 숨기면 파문한다"
+            "ko": "줄 세우기가 간격을 명부 순으로 바꾼다. 민간 명부를 숨기면 파문한다"
           }
         ],
         [
           {
-            "en": "Pulpit Voice",
-            "ko": "강단발"
+            "en": "Pulpit-Call Method",
+            "ko": "강단호명법"
           },
           {
             "en": "Record-Severance Method",
@@ -4666,8 +4982,8 @@
             "ko": "수문호흡법"
           },
           {
-            "en": "Pulpit Voice",
-            "ko": "강단발"
+            "en": "Pulpit-Call Method",
+            "ko": "강단호명법"
           },
           {
             "en": "Chlorine and turbid water kill the throat",
@@ -4675,7 +4991,7 @@
           },
           {
             "en": "The roll-call cuts the lock-gate breath",
-            "ko": "호명이 갑문숨을 끊는다"
+            "ko": "호명이 갑문 당직 수련을 끊는다"
           }
         ],
         [
@@ -4706,8 +5022,8 @@
             "ko": "수문호흡법"
           },
           {
-            "en": "Interval cuts the water-pressure catch's approach",
-            "ko": "간격으로 수압받이 접근을 줄인다"
+            "en": "Spacing limits the approach of the water-pressure bracing formation",
+            "ko": "간격을 벌려 수압을 버티는 전열의 접근을 줄인다"
           },
           {
             "en": "The cutoff dries the post",
@@ -4716,8 +5032,8 @@
         ],
         [
           {
-            "en": "Pulpit Voice",
-            "ko": "강단발"
+            "en": "Pulpit-Call Method",
+            "ko": "강단호명법"
           },
           {
             "en": "Wheel Hammer",
@@ -4725,11 +5041,11 @@
           },
           {
             "en": "Transmission and roll-call cover the axle echo",
-            "ko": "송신과 호명이 축울림을 덮는다"
+            "ko": "송신과 호명 소리가 차축 소리를 덮는다"
           },
           {
             "en": "The standard hammer breaks the broadcast stand",
-            "ko": "규격망치가 송신대를 부순다"
+            "ko": "망치로 내려쳐 마이크대를 부순다"
           }
         ],
         [
@@ -4757,7 +5073,7 @@
       "anchor": "상성과-대응-p3",
       "text": {
         "en": "The Open Hand was no school and went into no cell of this table. The dual-practiced lowest rank, using two hands, tended only to double the body's price.",
-        "ko": "개방 무공은 유파가 아니므로 대응 표에서 제외한다. 말단의 겸전에는 두 손결의 신체 손상이 따른다."
+        "ko": "개방 무공은 유파가 아니므로 대응 표에서 제외한다. 말단의 겸전에는 두 수련 분야의 신체 손상이 따른다."
       }
     },
     {
@@ -4850,7 +5166,7 @@
           },
           {
             "en": "The martial master casts it out",
-            "ko": "무공 사제가 내친다"
+            "ko": "무공 스승이 내친다"
           },
           {
             "en": "Where it overlaps the Standards Alliance's bolt rites, the citizenship line fights",
@@ -4859,8 +5175,8 @@
         ],
         [
           {
-            "en": "Pulpit Voice",
-            "ko": "강단발"
+            "en": "Pulpit-Call Method",
+            "ko": "강단호명법"
           },
           {
             "en": "Raising a living pastor's name onto the school",
@@ -4890,7 +5206,7 @@
           },
           {
             "en": "Register-separation failure, discovered in convoy",
-            "ko": "명부분리 실패, 호송 적발"
+            "ko": "명부 분리 실패, 호송 적발"
           },
           {
             "en": "Expulsion",
@@ -4925,8 +5241,8 @@
         ],
         [
           {
-            "en": "Bamboo-Stave Hand",
-            "ko": "죽대손"
+            "en": "Bamboo-Sword Chain Method",
+            "ko": "죽검연환법"
           },
           {
             "en": "Passing real-league or koryu names off as successor pedigrees",
@@ -4947,8 +5263,8 @@
         ],
         [
           {
-            "en": "Mat Hand",
-            "ko": "매트손"
+            "en": "Linked-Kick Method",
+            "ko": "연각권법"
           },
           {
             "en": "Claiming living masters' or organizations' names as successor property",
@@ -4969,12 +5285,12 @@
         ],
         [
           {
-            "en": "Empty-Round Hand",
-            "ko": "빈탄손"
+            "en": "Bayonet fighting",
+            "ko": "총검술"
           },
           {
             "en": "Hiding a loaded rifle as empty",
-            "ko": "탄 있는 총을 빈탄으로 숨긴다"
+            "ko": "탄이 있는 총을 빈 총으로 속인다"
           },
           {
             "en": "Ammunition and armament ledger comparison",
@@ -4991,8 +5307,8 @@
         ],
         [
           {
-            "en": "Lens Breath",
-            "ko": "렌즈숨"
+            "en": "Resonant-Aiming Method",
+            "ko": "감응조준법"
           },
           {
             "en": "Making the module omnipotent and hiding loss of control",
