@@ -1,0 +1,82 @@
+{
+  "categories": [
+    {
+      "id": "overview",
+      "label": "개요",
+      "summary": "세계가 이렇게 된 경위와 개막의 전제.",
+      "requiredKinds": ["heading", "paragraph"]
+    },
+    {
+      "id": "chronology",
+      "label": "연표",
+      "summary": "연도와 날짜가 있는 사건.",
+      "requiredKinds": ["heading", "paragraph"]
+    },
+    {
+      "id": "characters",
+      "label": "인물",
+      "summary": "인물 카드, 관계, 본관.",
+      "requiredKinds": ["heading"]
+    },
+    {
+      "id": "bestiary",
+      "label": "생태 도감",
+      "summary": "적대 생태 집단과 개체.",
+      "requiredKinds": ["heading"]
+    },
+    {
+      "id": "factions",
+      "label": "세력",
+      "summary": "나라, 가문, 회랑.",
+      "requiredKinds": ["heading", "paragraph"]
+    },
+    {
+      "id": "offices",
+      "label": "관직",
+      "summary": "직책과 품계.",
+      "requiredKinds": ["heading", "paragraph", "table"]
+    },
+    {
+      "id": "places",
+      "label": "지리",
+      "summary": "지도, 역, 구역.",
+      "requiredKinds": ["heading", "paragraph", "table"]
+    },
+    {
+      "id": "culture",
+      "label": "문화",
+      "summary": "신앙, 무공, 식문화, 이야기.",
+      "requiredKinds": ["heading", "paragraph"]
+    },
+    {
+      "id": "goods",
+      "label": "물건",
+      "summary": "무기, 물자, 기술 수준.",
+      "requiredKinds": ["heading", "paragraph", "table"]
+    },
+    {
+      "id": "structures",
+      "label": "구조물",
+      "summary": "건물과 시설.",
+      "requiredKinds": ["heading", "paragraph", "table"]
+    },
+    {
+      "id": "technology",
+      "label": "기술",
+      "summary": "끊긴 기술과 그 계보.",
+      "requiredKinds": ["heading", "paragraph", "table"]
+    },
+    {
+      "id": "ailments",
+      "label": "질병",
+      "summary": "병과 증상.",
+      "requiredKinds": ["heading", "paragraph", "table"]
+    },
+    {
+      "id": "people-and-machines",
+      "label": "사람과 기체",
+      "summary": "사람과 기체의 구분.",
+      "requiredKinds": ["heading", "paragraph", "table"]
+    }
+  ]
+}

@@ -20,6 +20,7 @@
     "test:people": "node --test scripts/test-people-index.mjs",
     "test:person-details": "node --test scripts/test-person-details.mjs",
     "test:discovery": "node --test scripts/test-discovery-index.mjs",
+    "test:categories": "node --test scripts/test-category-registration.mjs",
     "test:territory-map": "node --test scripts/test-territory-map.mjs",
     "test:updates": "npm run generate && node --test scripts/test-update-history.mjs",
     "test:timeline": "node --test scripts/test-timeline-overview.mjs",
