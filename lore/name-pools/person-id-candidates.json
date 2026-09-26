@@ -1,10 +1,10 @@
 {
   "schema": "wiki-person-id-candidates.v1",
-  "inputSha256": "963e16de7aea7f126e9f350c1a0018fbd9bc977e5cd8702ad77838e804ab53ba",
+  "inputSha256": "c785d729cdee59fbe196be50bb4ecb883ea5e289ebc68545796144dc23240ef7",
   "baseCommit": "7e8638a634d3c1541007cd5d095ac38df5cb9dbc",
-  "totalPeople": 1010,
+  "totalPeople": 1016,
   "existingKCount": 422,
-  "candidateCount": 588,
+  "candidateCount": 594,
   "existingK": [
     {
       "id": "K001",
@@ -6399,6 +6399,54 @@
       "state": "S00",
       "title": "",
       "locked": false
+    },
+    {
+      "ordinal": 589,
+      "name": "린샤오메이",
+      "stage": "S4",
+      "state": "S00",
+      "title": "대림 이중장부 중개",
+      "locked": false
+    },
+    {
+      "ordinal": 590,
+      "name": "팜반득",
+      "stage": "S4",
+      "state": "S00",
+      "title": "야간 정비 조장",
+      "locked": false
+    },
+    {
+      "ordinal": 591,
+      "name": "아미라 카심",
+      "stage": "S4",
+      "state": "S00",
+      "title": "다국어 통행증 판독",
+      "locked": false
+    },
+    {
+      "ordinal": 592,
+      "name": "조엘 박",
+      "stage": "S4",
+      "state": "S00",
+      "title": "창고 열람 통역",
+      "locked": false
+    },
+    {
+      "ordinal": 593,
+      "name": "나르기즈 유수포바",
+      "stage": "S4",
+      "state": "S00",
+      "title": "두 말 피난 명부 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 594,
+      "name": "최일석",
+      "stage": "S4",
+      "state": "S00",
+      "title": "동원 명부 서기",
+      "locked": false
     }
   ],
   "NOTES": [
@@ -6461,36 +6509,6 @@
       "type": "state-tier-without-k",
       "name": "신준",
       "detail": "S1 단계 인물인데 K 식별자가 없다"
-    },
-    {
-      "type": "ledger-person-not-in-values",
-      "name": "린샤오메이 (임소매)",
-      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
-    },
-    {
-      "type": "ledger-person-not-in-values",
-      "name": "팜반득 (범반득)",
-      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
-    },
-    {
-      "type": "ledger-person-not-in-values",
-      "name": "아미라 카심",
-      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
-    },
-    {
-      "type": "ledger-person-not-in-values",
-      "name": "조엘 박",
-      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
-    },
-    {
-      "type": "ledger-person-not-in-values",
-      "name": "나르기즈 유수포바",
-      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
-    },
-    {
-      "type": "ledger-person-not-in-values",
-      "name": "최일석",
-      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
     }
   ]
 }

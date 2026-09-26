@@ -1,7 +1,7 @@
 {
   "schema": "seoul-dengoku.cast-gender.v2",
   "owner_decision": "2026-09-19 사용자 확정: 성별 범주는 여성·남성만 사용한다. 기존 사용자 지정 성별은 as-is로 보존하고, 미지정 인물은 국가별 설정에 따라 배정한다.",
-  "count": 1010,
+  "count": 1016,
   "categories": [
     "여성",
     "남성"
@@ -7215,6 +7215,12 @@
       "gender": "남성",
       "source": "기존 Core 카드 (신종목의 아들)",
       "user_locked": true
-    }
+    },
+    { "name": "린샤오메이", "state": "S00", "gender": "여성", "source": "소유자 지정 (2026-09-26)", "user_locked": true },
+    { "name": "팜반득", "state": "S00", "gender": "남성", "source": "소유자 지정 (2026-09-26)", "user_locked": true },
+    { "name": "아미라 카심", "state": "S00", "gender": "남성", "source": "소유자 지정 (2026-09-26)", "user_locked": true },
+    { "name": "조엘 박", "state": "S00", "gender": "여성", "source": "소유자 지정 (2026-09-26)", "user_locked": true },
+    { "name": "나르기즈 유수포바", "state": "S00", "gender": "남성", "source": "소유자 지정 (2026-09-26)", "user_locked": true },
+    { "name": "최일석", "state": "S00", "gender": "남성", "source": "소유자 지정 (2026-09-26)", "user_locked": true }
   ]
 }

@@ -20,7 +20,9 @@ export function verifyAtlasPeople(atlas, { registry, candidates, people }) {
     return { failures, stateCount: atlas.humans.length, unaffiliatedCount: 0, total: atlas.humans.length }
   }
   const issued = new Map(registry.persons.map((person) => [person.id, person]))
-  const expected = people.filter((person) => person.state === 'S00')
+  // Corridor cards are issued S00 people but are not members of the atlas's unaffiliated registry.
+  const corridorNames = new Set(['린샤오메이', '팜반득', '아미라 카심', '조엘 박', '나르기즈 유수포바', '최일석'])
+  const expected = people.filter((person) => person.state === 'S00' && !corridorNames.has(person.name))
   const ids = new Set(atlas.humans.map((human) => human.id))
   const characterIds = new Set()
   for (const [id, person] of Object.entries(collection)) {
@@ -42,7 +44,7 @@ export function verifyAtlasPeople(atlas, { registry, candidates, people }) {
     if (!castPerson || castPerson.name !== person.name) failures.push('E_UNAFFILIATED_ROUTE:' + id)
   }
   for (const [index, person] of people.entries()) {
-    if (person.state === 'S00' && !collection[`K${String(index + 1).padStart(3, '0')}`]) failures.push('E_UNAFFILIATED_MISSING:' + person.name)
+    if (person.state === 'S00' && !corridorNames.has(person.name) && !collection[`K${String(index + 1).padStart(3, '0')}`]) failures.push('E_UNAFFILIATED_MISSING:' + person.name)
   }
   const stateCount = atlas.humans.length
   const unaffiliatedCount = Object.keys(collection).length

@@ -671,6 +671,19 @@ for (const [file, pattern] of [['Core-Characters.md', /^## (?!인물 목록$)(.+
   if (!text) throw new Error(`E_CAST_PAGE_MISSING:${file}`)
   addPersonCards(text, file, pattern)
 }
+const corridorText = renderedBySlug.get('Diaspora-Corridors')
+if (!corridorText) throw new Error('E_CORRIDOR_PAGE_MISSING')
+const corridorNames = ['린샤오메이', '팜반득', '아미라 카심', '조엘 박', '나르기즈 유수포바', '최일석']
+const corridorHeadings = [...corridorText.matchAll(/^### 인물 (.+)$/gm)]
+for (const [index, heading] of corridorHeadings.entries()) {
+  const name = corridorNames.find((candidate) => heading[1] === candidate || heading[1].startsWith(`${candidate} (`))
+  if (!name) continue
+  const end = corridorHeadings[index + 1]?.index ?? corridorText.length
+  const body = corridorText.slice(heading.index + heading[0].length, end).trim()
+  const cards = personCards.get(name) ?? []
+  cards.push({ file: 'Diaspora-Corridors', body, heading: heading[1] })
+  personCards.set(name, cards)
+}
 const relationText = renderedBySlug.get('Cast-Relations')
 if (!relationText) throw new Error('E_CAST_RELATIONS_MISSING')
 const relations = [...relationText.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
@@ -694,7 +707,10 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const fields = parseCardFields(primary?.body ?? '')
   const sections = parseCardSections(primary?.body ?? '')
   const source = primary?.file ?? 'Cast-Index'
-  const anchor = source === 'Core-Characters' ? person.name : `인물-${person.name}`
+  const heading = source === 'Core-Characters' ? person.name : `인물-${primary?.heading ?? person.name}`
+  const anchor = source === 'Diaspora-Corridors'
+    ? heading.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
+    : heading
   const office = sections['관직'] ?? ''
   const position = fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
   const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'

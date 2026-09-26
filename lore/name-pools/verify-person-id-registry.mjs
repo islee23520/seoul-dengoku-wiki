@@ -49,23 +49,24 @@ test("커밋된 레지스트리가 모든 불변식을 통과한다", () => {
   assert.deepEqual(validateRegistry(committed, ctx), []);
 });
 
-test("(b) 개수 불변식 422 + 588 = 1010", () => {
+test("(b) 개수 불변식 422 + 594 = 1016", () => {
   assert.equal(committed.existingKCount, 422);
-  assert.equal(committed.issuedCount, 588);
-  assert.equal(committed.totalPeople, 1010);
-  assert.equal(committed.persons.length, 1010);
+  assert.equal(committed.issuedCount, 594);
+  assert.equal(committed.totalPeople, 1016);
+  assert.equal(committed.persons.length, 1016);
   assert.equal(committed.existingKCount + committed.issuedCount, committed.totalPeople);
-  assert.equal(committed.persons.length - 422, 588);
+  assert.equal(committed.persons.length - 422, 594);
 });
 
-test("(c) id가 K001..K1010 연속·오름차순이고 전부 유일하다", () => {
+test("(c) id가 K001..K1016 연속·오름차순이고 전부 유일하다", () => {
   const ids = committed.persons.map((p) => p.id);
-  assert.equal(new Set(ids).size, 1010);
+  assert.equal(new Set(ids).size, 1016);
   ids.forEach((id, i) => assert.equal(id, kId(i + 1)));
   assert.equal(ids[0], "K001");
   assert.equal(ids[421], "K422");
   assert.equal(ids[422], "K423");
   assert.equal(ids[1009], "K1010");
+  assert.equal(ids[1015], "K1016");
 });
 
 test("(d) K001–K422은 후보 파일 existingK 스냅숏 그대로다 (재배치 0)", () => {
@@ -77,9 +78,9 @@ test("(d) K001–K422은 후보 파일 existingK 스냅숏 그대로다 (재배�
   });
 });
 
-test("(e) K423+ 발급 순서가 후보 ordinal 순서와 같다 (1→K423 … 588→K1010)", () => {
+test("(e) K423+ 발급 순서가 후보 ordinal 순서와 같다 (1→K423 … 594→K1016)", () => {
   const candidates = ctx.candidatesJson.candidates;
-  assert.equal(candidates.length, 588);
+  assert.equal(candidates.length, 594);
   candidates.forEach((c, i) => {
     const p = committed.persons[422 + i];
     assert.equal(p.id, kId(423 + i), `ordinal ${c.ordinal}`);
@@ -109,8 +110,8 @@ test("(f) 안정 비-K ID 보유 후보의 aliases에 기존 ID가 정확히 들
 test("(g) approvalRef가 최종 파일 owner 승인각을 그대로 새긴다", () => {
   assert.deepEqual(committed.approvalRef, APPROVED);
   assert.equal(committed.approvalRef.approvedBy, "owner");
-  assert.equal(committed.approvalRef.approvedAt, "2026-09-25");
-  assert.equal(committed.approvalRef.ownerRef, "2026-09-25 이일섭 K998 제1분공방 후계 교정 및 입력 해시 재승인");
+  assert.equal(committed.approvalRef.approvedAt, "2026-09-26");
+  assert.equal(committed.approvalRef.ownerRef, "2026-09-26 회랑 6명 수치·성별·K1011–K1016 및 최종 두 입력 해시 승인");
   assert.equal(committed.approvalRef.inputSha256, sha256Hex(ctx.valuesBytes));
   assert.equal(committed.approvalRef.candidatesSha256, sha256Hex(ctx.candidatesBytes));
   assert.equal(committed.schema, SCHEMA);
