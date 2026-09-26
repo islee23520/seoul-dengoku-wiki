@@ -35,11 +35,11 @@
 
 | 정식명 | 한자 표기 | 생활 별칭 | 정본 |
 |---|---|---|---|
-| 수문호흡법 | 미정 | 수문손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 수문호흡법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
 | 차륜강체공 | 미정 | 차륜망치 | [무공](../culture/Martial-Paths.md#아홉-유파) |
 | 강단호명법 | 미정 | 강단발 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 호위철벽진 | 미정 | 호위방패 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 기록단절법 | 미정 | 기록칼 | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 호위철벽진 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 기록단절법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
 | 죽검연환법 | 미정 | 죽대손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
 | 연각권법 | 미정 | 매트손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
 | 공탄총검법 | 미정 | 빈탄손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
