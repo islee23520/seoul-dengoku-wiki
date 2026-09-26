@@ -1,9 +1,9 @@
 # LORE/culture — values scales, faith, martial paths, food, oral canon
 
-Earned its file: score ~8 (defines the 10 value + 5 desire axes that `../name-pools/values-cast.json` / `values-orgs.json` store; five martial schools locked; own no-real-denominations rule); distinct domain — the soft-canon layer over the polity map.
+Earned its file: score ~8 (defines the 10 value + 5 desire axes that `../name-pools/values-cast.json` / `values-orgs.json` store; nine martial schools; own no-real-denominations rule); distinct domain — the soft-canon layer over the polity map.
 
 ## OVERVIEW
-The value/policy scale system behind cast and org numbers, the faith schism, the five martial schools, food/distribution culture, and the oral creation story.
+The value/policy scale system behind cast and org numbers, the faith schism, the nine martial schools, food/distribution culture, and the oral creation story.
 
 ## WHERE TO LOOK
 | Task | Location |
