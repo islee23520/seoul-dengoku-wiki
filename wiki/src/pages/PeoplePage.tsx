@@ -68,7 +68,7 @@ export default function PeoplePage() {
           <thead><tr><th scope="col">이름</th><th scope="col">국가</th><th scope="col">직위</th><th scope="col">직급</th><th scope="col">직업</th><th scope="col">성별</th></tr></thead>
           <tbody>{filtered.map((person) => (
             <tr key={person.id}>
-              <td><Link to={person.detailRoute}>{person.name}</Link></td><td>{person.stateName || '무소속'}</td><td>{person.position}</td><td>{person.commonTier}</td><td>{person.occupation}</td><td>{person.gender}</td>
+              <td data-label="이름"><Link to={person.detailRoute}>{person.name}</Link></td><td data-label="국가">{person.stateName || '무소속'}</td><td data-label="직위">{person.position}</td><td data-label="직급">{person.commonTier}</td><td data-label="직업">{person.occupation}</td><td data-label="성별">{person.gender}</td>
             </tr>
           ))}</tbody>
         </table>
