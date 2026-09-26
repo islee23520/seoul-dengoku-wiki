@@ -725,7 +725,8 @@ test('person detail page renders tables and the canonical prose sections', async
   assert.match(page, /욕망/)
   assert.match(page, /정본 상세/)
   for (const label of ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']) assert.match(page, new RegExp(label))
-  assert.match(page, /정본에 별도 산문이 등록되지 않았습니다/)
+  assert.match(page, /sectionOrder\.filter\(\(label\) => detail\.sections\[label\]\)/)
+  assert.doesNotMatch(page, /정본에 별도 산문이 등록되지 않았습니다/)
 })
 
 test('Jo Jaepyo has the landing formation without an invented Marine Corps service record', async () => {
