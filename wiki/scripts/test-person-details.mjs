@@ -180,6 +180,11 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
     '기록단절법': 'K122',
   }).flatMap(([path, ids]) => ids.split(' ').map((id) => [id, path])))
   assert.equal(expectedMartial.size, 65)
+  const baeDetail = JSON.parse(await readFile(new URL('../public/person-details/person-0116.json', import.meta.url), 'utf8'))
+  assert.equal(baeDetail.sourceRoute, '/world/Cast-State-05#인물-배우진')
+  assert.equal(baeDetail.fields['생업'], '복구복무 명부·부품 대가 조정')
+  assert.match(baeDetail.biography, /^\*\*생애\.\*\* 2126년 세대\. 동방사 군벌 가문의 손\./u)
+  assert.match(baeDetail.sections['무공'], /^호위철벽진\./u)
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }]
     : [])
