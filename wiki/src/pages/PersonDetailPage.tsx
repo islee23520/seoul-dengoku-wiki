@@ -80,7 +80,7 @@ export default function PersonDetailPage() {
         </aside>
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
-          {sectionOrder.map((label) => <section key={label} data-section-status={detail.sections[label] ? 'registered' : 'missing'}><h3>{label}</h3>{detail.sections[label] ? <ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.sections[label]}</ReactMarkdown> : <p className="wiki-domain-label">정본에 별도 산문이 등록되지 않았습니다.</p>}</section>)}
+          {sectionOrder.filter((label) => detail.sections[label]).map((label) => <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.sections[label]}</ReactMarkdown></section>)}
           <details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
           <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>
         </div>
