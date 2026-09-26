@@ -723,6 +723,14 @@ test('person detail page renders tables and the canonical prose sections', async
   assert.match(page, /정본에 별도 산문이 등록되지 않았습니다/)
 })
 
+test('Jo Jaepyo has the landing formation without an invented Marine Corps service record', async () => {
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1003.json', import.meta.url), 'utf8'))
+  assert.equal(detail.name, '조재표')
+  assert.match(detail.sections['무공'], /^호위철벽진의 상륙호위진\./u)
+  assert.match(detail.sections['무공'], /해병대 복무.*미확인/u)
+  assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-조재표')
+})
+
 test('K998 keeps his detail route after relocation to the First Branch Workshop', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0998.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '이일섭')
