@@ -653,7 +653,8 @@ const addPersonCards = (text, file, pattern) => {
   for (let index = 0; index < headings.length; index += 1) {
     const name = headings[index][1].trim()
     if (name === '부록 — 가치관 숫자' || name === '인물 카드') continue
-    const body = text.slice(headings[index].index + headings[index][0].length, headings[index + 1]?.index ?? text.length).trim()
+    const nextHeading = headings[index + 1]?.index ?? (file === 'Cast-Unaffiliated.md' ? text.indexOf('\n## ', headings[index].index + headings[index][0].length) : -1)
+    const body = text.slice(headings[index].index + headings[index][0].length, nextHeading >= 0 ? nextHeading : text.length).trim()
     const cards = personCards.get(name) ?? []
     cards.push({ file: file.replace('.md', ''), body })
     personCards.set(name, cards)

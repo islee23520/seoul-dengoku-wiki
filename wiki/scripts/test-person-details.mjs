@@ -745,6 +745,7 @@ test('Min Woonggi practices judo separately from his repair trade', async () => 
   assert.match(detail.sections['무공'], /^유도\./u)
   assert.match(detail.sections['무공'], /징집 이력과 무기·탄약 접근은 미확인/u)
   assert.doesNotMatch(detail.sections['무공'], /공동 서사|조재표와 이연/u)
+  assert.doesNotMatch(detail.biography, /공동 서사|왜 따르는가/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-민웅기')
 })
 
