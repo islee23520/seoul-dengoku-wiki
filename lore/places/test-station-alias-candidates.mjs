@@ -112,3 +112,15 @@ test('all approved subtitles project one node without losing observed lines or m
   }
   assert.deepEqual(projected.stations.filter((station) => station.id.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
 })
+
+test('cross-region alias observations remain attached to the projected station', () => {
+  for (const id of ['삼성', '충정로', '남부터미널', '잠실']) {
+    const station = projected.stations.find((entry) => entry.id === id)
+    assert.deepEqual(station.control.memberSurfaces.map((entry) => entry.id), station.memberIds, id)
+    assert.ok(station.control.memberSurfaces.every((entry) => entry.surfaceRegionId && entry.polityIds.length), id)
+  }
+  const samsung = projected.stations.find((entry) => entry.id === '삼성')
+  assert.deepEqual(samsung.control.memberSurfaces.map((entry) => entry.polityIds), [['S04'], ['S16']])
+  assert.equal(samsung.control.primary, null)
+  assert.equal(samsung.control.hierarchy.regionalAuthority, null)
+})

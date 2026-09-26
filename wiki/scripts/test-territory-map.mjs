@@ -112,7 +112,7 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.ok(data.stations.filter((station) => station.control?.source === 'derived-from-surface').length > 300)
   assert.ok(data.stations.filter((station) => station.control?.source === 'outside-surface-atlas').every((station) => station.control.status === 'unknown'))
   assert.ok(data.stations.every((station) => station.control?.hierarchy?.stationManager.endsWith('역장')))
-  assert.ok(data.stations.filter((station) => station.control?.source === 'derived-from-surface').every((station) => station.control?.hierarchy?.regionalAuthority.includes('권역 책임자')))
+  assert.ok(data.stations.filter((station) => station.control?.source === 'derived-from-surface').every((station) => station.control?.hierarchy?.regionalAuthority === null ? station.control.memberSurfaces?.length > 1 : station.control?.hierarchy?.regionalAuthority.includes('권역 책임자')))
   assert.ok(data.majorStationIds.length >= 16)
   const stationIds = new Set(data.stations.map((station) => station.id))
   assert.ok(data.stations.every((station) => Number.isFinite(station.x) && Number.isFinite(station.y)))
@@ -141,6 +141,10 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
       assert.deepEqual(capital.control.polityIds, ['S06', 'S16'], 'City Hall shared station')
       assert.equal(capital.control.status, 'contested')
       assert.equal(capital.control.primary, 'S06')
+    } else if (capital.id === '삼성') {
+      assert.deepEqual(capital.control.memberSurfaces.map((entry) => entry.polityIds), [['S04'], ['S16']])
+      assert.equal(capital.control.primary, null)
+      assert.equal(capital.control.status, 'unknown')
     } else {
       assert.deepEqual(capital.control.polityIds, [state.id], `${state.id}:${capital.name}:station`)
       assert.equal(capital.control.status, 'held', `${state.id}:${capital.name}:station-status`)

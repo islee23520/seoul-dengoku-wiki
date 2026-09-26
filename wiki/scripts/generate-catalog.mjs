@@ -457,11 +457,23 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
   const identity = approvedStationAliases.find((entry) => entry.id === station.id)
   if (!identity) return station
   const memberIds = [identity.id, ...identity.aliases]
+  const memberSurfaces = memberIds.map((id) => {
+    const source = sourceMapStations.find((entry) => entry.id === id)
+    return { id, surfaceRegionId: source.control.surfaceRegionId, surfaceRegionName: source.control.surfaceRegionName, polityIds: source.control.polityIds }
+  })
+  const holders = new Set(memberSurfaces.flatMap((entry) => entry.polityIds))
+  const regions = new Set(memberSurfaces.map((entry) => entry.surfaceRegionId))
   return {
     ...station,
     memberIds,
     lineIds: [...new Set(sourceMapStations.filter((member) => memberIds.includes(member.id)).flatMap((member) => member.lineIds))],
     degree: new Set(seoulGraph.edges.filter((edge) => memberIds.includes(edge.a) || memberIds.includes(edge.b)).map((edge) => canonicalStationId(memberIds.includes(edge.a) ? edge.b : edge.a))).size,
+    control: {
+      ...station.control,
+      memberSurfaces,
+      ...(holders.size > 1 ? { status: 'unknown', polityIds: [], polityNames: [], primary: null, hierarchy: { ...station.control.hierarchy, state: '미확인', regionalAuthority: null } } : {}),
+      ...(regions.size > 1 ? { surfaceRegionId: null, surfaceRegionName: null, hierarchy: { ...station.control.hierarchy, ...(holders.size > 1 ? { state: '미확인' } : {}), regionalAuthority: null } } : {}),
+    },
   }
 })
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
