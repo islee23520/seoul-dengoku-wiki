@@ -677,7 +677,7 @@ const relations = [...relationText.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \
   .filter((relation) => relation.from !== '인물' && !relation.from.startsWith('---'))
 const parseCardSections = (body) => {
   const sections = {}
-  const matches = [...body.matchAll(/\*\*([^*]+?)\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/g)]
+  const matches = [...body.matchAll(/\*\*([^*]+?)\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*#{2,3}\s|\n\s*:::|$)/g)]
   for (const match of matches) sections[match[1].trim()] = match[2].trim()
   return sections
 }
