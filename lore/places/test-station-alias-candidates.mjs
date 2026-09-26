@@ -21,11 +21,12 @@ test('the candidate classifies every same-base pair without altering the 334-row
   assert.deepEqual(candidate.groups.find((group) => group.disposition === 'nonmerge').members, ['신촌', '신촌(지하)'])
 })
 
-test('Isu remains unresolved with both observed platforms and four graph neighbors', () => {
+test('Isu identity is approved while both observed platforms and four graph neighbors remain', () => {
   const isu = candidate.groups.find((group) => group.relatedStation === '이수')
-  assert.equal(isu.disposition, 'identity-choice-required')
+  assert.equal(isu.disposition, 'identity-approved-not-applied')
   assert.equal(isu.displayName, '총신대입구(이수)')
   assert.deepEqual(isu.aliases, ['총신대입구 (이수)', '이수'])
+  assert.match(isu.decision, /이수·총신대입구\(이수\).*하나의 역/u)
   for (const observation of isu.observations) {
     const station = interiors.stations.find((entry) => entry.name === observation.sourceName)
     assert.ok(station, observation.sourceName)

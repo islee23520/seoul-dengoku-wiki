@@ -16,7 +16,7 @@
     {
       "members": ["총신대입구 (이수)", "총신대입구(이수)"],
       "relatedStation": "이수",
-      "disposition": "identity-choice-required",
+      "disposition": "identity-approved-not-applied",
       "displayName": "총신대입구(이수)",
       "aliases": ["총신대입구 (이수)", "이수"],
       "observations": [
@@ -29,7 +29,7 @@
         "총신대입구 (이수)": ["동작", "사당"],
         "총신대입구(이수)": []
       },
-      "decisionNeeded": "7호선과 4호선 기록 및 이웃 네 곳을 하나로 합치기 전에 승강장·전투 타일의 물리적 동일성과 남길 노드 ID를 확정한다."
+      "decision": "소유자가 이수·총신대입구(이수)를 하나의 역으로, 표시명을 총신대입구(이수)로 확정했다. 그래프 통합 때 7호선 B4·4호선 B2와 남성·내방·동작·사당 연결을 모두 보존한다."
     },
     {
       "members": ["신촌", "신촌(지하)"],
