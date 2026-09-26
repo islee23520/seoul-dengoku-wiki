@@ -69,5 +69,5 @@ test('Suyu subtitle shares its observed platform and graph neighbors', () => {
     assert.deepEqual(interiors.stations.find((station) => station.name === name).observed_levels.lines.map((line) => [line.line, line.code]), [['4', 'B2']])
   }
   assert.deepEqual(projected.edges.filter((edge) => edge.a === suyu.id || edge.b === suyu.id).map((edge) => edge.a === suyu.id ? edge.b : edge.a).sort(), ['미아', '쌍문'])
-  assert.deepEqual(projected.edges.filter((edge) => edge.a === suyu.aliases[0] || edge.b === suyu.aliases[0]).map((edge) => edge.a === suyu.aliases[0] ? edge.b : edge.a).sort(), ['미아', '쌍문'])
+  assert.deepEqual(projected.edges.filter((edge) => edge.a === suyu.aliases[0] || edge.b === suyu.aliases[0]), [])
 })

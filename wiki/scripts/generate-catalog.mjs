@@ -401,7 +401,7 @@ const stationById = new Map(seoulGraph.stations.map((station) => [station.id, st
 const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
 const approvedStationAliases = stationCatalog.data.station_aliases
 const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
-if (approvedStationAliases.length !== 2 || canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
+if (approvedStationAliases.length !== 3 || canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
 const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
 const stationDegree = new Map(seoulGraph.stations.map((station) => [station.id, 0]))
