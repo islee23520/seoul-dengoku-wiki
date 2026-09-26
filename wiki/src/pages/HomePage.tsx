@@ -7,6 +7,7 @@ type PanelItem = { label: string; to: string; spa?: boolean }
 const panels: { title: string; items: PanelItem[] }[] = [
   { title: '세계관', items: [
     { label: '정본 문서 전체', to: wikiLinks.documents, spa: true },
+    { label: '분류', to: wikiLinks.categories, spa: true },
     { label: '서울 십육국', to: wikiLinks.states, spa: true },
     { label: '프롤로그', to: wikiLinks.overview, spa: true },
     { label: '연표', to: wikiLinks.timeline, spa: true },

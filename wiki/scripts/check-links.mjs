@@ -6,7 +6,7 @@ import { loreLinkFailures } from './check-lore-links.mjs'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const source = await readFile(resolve(root, 'src/wikiLinks.ts'), 'utf8')
 const paths = [...source.matchAll(/:\s*'([^']+)'/g)].map((match) => match[1])
-const spaRoutes = new Set(['/', '/states', '/documents', '/people', '/updates'])
+const spaRoutes = new Set(['/', '/states', '/documents', '/categories', '/people', '/updates'])
 const catalogSource = await readFile(resolve(root, 'src/generated/wikiCatalog.ts'), 'utf8')
 const catalogRoutes = new Set([...catalogSource.matchAll(/route: '([^']+)'/g)].map((match) => match[1]))
 

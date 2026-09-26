@@ -38,8 +38,29 @@ test('home and sidebar expose document and people indexes', async () => {
   const sidebar = await readFile(new URL('../src/components/Sidebar.tsx', import.meta.url), 'utf8')
   for (const source of [home, sidebar]) {
     assert.match(source, /wikiLinks\.documents/)
+    assert.match(source, /wikiLinks\.categories/)
     assert.match(source, /wikiLinks\.characters/)
     assert.match(source, /label: '프롤로그'/)
     assert.doesNotMatch(source, /기동권 이탈/)
   }
+})
+
+test('an authored document is indexed from its domain when categories are omitted', async () => {
+  const { registeredCategories, loadCategoryRegistry } = await import('./category-registration.mjs')
+  const registry = await loadCategoryRegistry(new URL('./category-registry.json', import.meta.url))
+  const omitted = { domain: 'places', slug: 'fresh-place', content: [] }
+  assert.deepEqual(registeredCategories(omitted, registry), ['places'])
+})
+
+test('a registered category lists its document and the index covers projections', async () => {
+  const index = await readFile(new URL('../src/generated/categoryIndex.ts', import.meta.url), 'utf8')
+  const page = await readFile(new URL('../src/pages/CategoriesPage.tsx', import.meta.url), 'utf8')
+  assert.match(index, /"id": "culture"/)
+  assert.match(index, /"slug": "Martial-Paths"/)
+  assert.match(index, /"id": "overview"/)
+  assert.match(index, /"slug": "World-Unbinding"/)
+  assert.match(index, /"slug": "Hostile-Group-G01"/)
+  assert.match(page, /categoryIndex\.categories/)
+  assert.match(page, /to=\{document\.route\}/)
+  assert.doesNotMatch(page, /requiredAnchors/)
 })

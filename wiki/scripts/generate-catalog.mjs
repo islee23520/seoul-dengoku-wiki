@@ -10,6 +10,7 @@ import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { verifyAtlasPeople } from './world-atlas-verify.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
+import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -160,6 +161,8 @@ const walkLoreJson = async (dir, acc = []) => {
   return acc
 }
 
+const categoryRegistry = await loadCategoryRegistry(resolve(dirname(fileURLToPath(import.meta.url)), 'category-registry.json'))
+
 await rm(resolve(projectRoot, 'src/content'), { recursive: true, force: true })
 await rm(worldJsonRoot, { recursive: true, force: true })
 await mkdir(worldJsonRoot, { recursive: true })
@@ -169,6 +172,9 @@ await rm(wikiAssetTarget, { recursive: true, force: true })
 
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
 const jsonPages = await walkLoreJson(loreRoot)
+const categoryErrors = jsonPages.flatMap((page) => registrationErrors(page.value, categoryRegistry, basename(page.path)))
+if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
+const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
 const atlasMarkdown = await readFile(resolve(loreRoot, 'World-Narrative-Atlas.md'), 'utf8')
 const atlas = extractAtlasJson(atlasMarkdown)
@@ -201,6 +207,26 @@ renderedBySlug.set('Glossary', glossaryMarkdown)
 renderedBySlug.set('World-Narrative-Atlas', atlasMarkdown)
 renderedBySlug.set('index', worldIndex)
 
+const projectionCategories = {
+  'Synthetic-Actors': 'people-and-machines',
+  'Operating-Houses': 'factions',
+  'Regional-Physical-AI-Arcs': 'overview',
+  'World-Relation-Ledger': 'factions',
+  'External-Theaters': 'places',
+  'World-Expansion-Index': 'overview',
+  'World-Narrative-Atlas': 'overview',
+  Glossary: 'overview',
+  index: 'overview',
+}
+for (const slug of renderedBySlug.keys()) {
+  if (categoriesBySlug.has(slug)) continue
+  const category = slug.startsWith('Hostile-Group-') || slug === 'Hostile-Ecology-Index'
+    ? 'bestiary'
+    : projectionCategories[slug]
+  if (!category || !categoryRegistry.categories.some((entry) => entry.id === category)) throw new Error(`E_CATEGORY_PROJECTION:${slug}`)
+  categoriesBySlug.set(slug, [category])
+}
+
 const documents = []
 for (const domain of domains) {
   for (const slug of [...renderedBySlug.keys()].sort((left, right) => left.localeCompare(right))) {
@@ -210,6 +236,7 @@ for (const domain of domains) {
       slug,
       route: `/${domain}/${slug === 'index' ? '' : slug}`,
       title: normalizeTitle(markdown, slug),
+      categories: categoriesBySlug.get(slug) ?? [],
       markdown,
       name: `${slug}.md`,
     })
@@ -253,6 +280,16 @@ const lines = [
 ]
 
 await writeFile(resolve(generatedRoot, 'wikiCatalog.ts'), `${lines.join('\n')}\n`)
+const registeredIndex = categoryIndex(
+  documents
+    .map((document) => ({ slug: document.slug, route: document.route, title: document.title, categories: document.categories })),
+  categoryRegistry,
+)
+await writeFile(resolve(generatedRoot, 'categoryIndex.ts'), `export type CategoryDocument = { readonly slug: string; readonly route: string; readonly title: string }
+export type WikiCategory = { readonly id: string; readonly label: string; readonly summary: string; readonly documents: readonly CategoryDocument[] }
+
+export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as const satisfies { readonly categories: readonly WikiCategory[]; readonly uncategorized: readonly CategoryDocument[] }
+`)
 await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({ documents: documents.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })) }, null, 2)}\n`)
 
 const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/update-history.json'), 'utf8'))
