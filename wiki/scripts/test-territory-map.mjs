@@ -6,8 +6,8 @@ import { presentationStations, stationAliases } from '../src/components/stationP
 test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const displayed = presentationStations(data.stations)
-  assert.equal(data.stations.length, 326)
-  assert.equal(data.edges.length, 425)
+  assert.equal(data.stations.length, 315)
+  assert.equal(data.edges.length, 410)
   assert.equal(Object.keys(stationAliases).length, 19)
   assert.equal(displayed.length, 315)
   for (const [aliasId, primaryId] of Object.entries(stationAliases)) {
@@ -101,11 +101,11 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   }
   assert.ok(data.states.every((state) => Number.isFinite(state.labelX) && Number.isFinite(state.labelY)))
   assert.equal(new Set(data.states.map((state) => `${state.labelX}:${state.labelY}`)).size, 16)
-  assert.equal(data.stations.length, 326)
-  assert.equal(data.edges.length, 425)
+  assert.equal(data.stations.length, 315)
+  assert.equal(data.edges.length, 410)
   assert.ok(Object.keys(data.lines).length >= 20)
   assert.ok(data.stations.every((station) => Array.isArray(station.lineIds)))
-  assert.equal(data.stations.filter((station) => station.lineIds.length > 0).length, 322)
+  assert.equal(data.stations.filter((station) => station.lineIds.length > 0).length, 311)
   assert.ok(data.edges.every((edge) => Array.isArray(edge.lineIds)))
   assert.ok(data.stations.every((station) => ['derived-from-surface', 'outside-surface-atlas', 'control-delta'].includes(station.control?.source)))
   assert.ok(data.stations.every((station) => Object.hasOwn(station.control, 'deltaId')))

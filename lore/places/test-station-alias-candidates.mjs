@@ -28,7 +28,7 @@ test('Isu identity is approved while both observed platforms and four graph neig
   const canonical = catalogData.data.station_aliases.find((station) => station.id === '총신대입구(이수)')
   assert.deepEqual(canonical.aliases, ['이수', '총신대입구 (이수)'])
   assert.deepEqual(canonical.observed_lines, { '이수': ['7'], '총신대입구 (이수)': ['4'], '총신대입구(이수)': ['4'] })
-  assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['총신대입구(이수)', '삼성', '수유', '서울대입구', '강변', '구의', '아현'])
+  assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['총신대입구(이수)', '삼성', '수유', '서울대입구', '강변', '구의', '아현', '대림', '충정로', '교대', '남부터미널', '방배', '왕십리', '한성대입구', '잠실', '경복궁', '혜화', '회현'])
   assert.equal(isu.disposition, 'wiki-projection-applied-source-pending')
   assert.equal(isu.displayName, '총신대입구(이수)')
   assert.deepEqual(isu.aliases, ['총신대입구 (이수)', '이수'])
@@ -77,7 +77,7 @@ test('four reviewed subtitle pairs preserve their observed platforms in one map 
     ['서울대입구', '서울대입구(관악구청)', '2', 'B2', ['낙성대', '봉천']],
     ['강변', '강변(동서울터미널)', '2', '2F', ['구의', '잠실나루']],
     ['구의', '구의(광진구청)', '2', '3F', ['강변', '건대입구']],
-    ['아현', '아현(추계예술대)', '2', 'B2', ['이대', '충정로', '충정로(경기대입구)']],
+    ['아현', '아현(추계예술대)', '2', 'B2', ['이대', '충정로']],
   ]
   for (const [id, alias, line, level, neighbors] of expected) {
     const canonical = catalogData.data.station_aliases.find((entry) => entry.id === id)
@@ -90,4 +90,25 @@ test('four reviewed subtitle pairs preserve their observed platforms in one map 
     assert.deepEqual(projected.stations.filter((station) => station.id === id).map((station) => station.memberIds), [[id, alias]])
     assert.deepEqual(projected.edges.filter((edge) => edge.a === id || edge.b === id).map((edge) => edge.a === id ? edge.b : edge.a).sort(), neighbors.slice().sort())
   }
+})
+
+test('all approved subtitles project one node without losing observed lines or movement neighbors', () => {
+  const canonicalId = new Map(catalogData.data.station_aliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
+  const original = JSON.parse(readFileSync(resolve(places, '../../../GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+  const projectedEdges = new Set(projected.edges.map((edge) => [edge.a, edge.b].sort().join('|')))
+  for (const entry of catalogData.data.station_aliases) {
+    assert.deepEqual(projected.stations.filter((station) => station.id === entry.id).map((station) => station.memberIds), [[entry.id, ...entry.aliases]])
+    assert.ok(entry.aliases.every((alias) => !projected.stations.some((station) => station.id === alias)))
+    for (const [source, lines] of Object.entries(entry.observed_lines)) {
+      const observation = interiors.stations.find((station) => station.name === source)
+      assert.ok(observation, source)
+      assert.deepEqual(observation.observed_levels.lines.map((line) => line.line), lines, source)
+    }
+  }
+  for (const edge of original.edges) {
+    const a = canonicalId.get(edge.a) ?? edge.a
+    const b = canonicalId.get(edge.b) ?? edge.b
+    if (a !== b) assert.ok(projectedEdges.has([a, b].sort().join('|')), `${edge.a}/${edge.b}`)
+  }
+  assert.deepEqual(projected.stations.filter((station) => station.id.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
 })
