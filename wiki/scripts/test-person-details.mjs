@@ -58,6 +58,20 @@ test('twelve S01 concourse explorers have owner-approved command ties to Byeon G
   }
 })
 
+test('twelve S01 bridge couriers have owner-approved command ties to Kim Taeun', async () => {
+  const names = ['민차현', '송은지', '허바우', '백미래', '남아은', '성사현', '조바원', '구람희', '임람나', '안새민', '이다민', '송다지']
+  const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const details = new Map()
+  for (const match of catalog.matchAll(/"id": "(person-\d{4})",\s*"name": "([^"]+)"/gu)) {
+    if (names.includes(match[2])) details.set(match[2], match[1])
+  }
+  assert.equal(details.size, names.length)
+  for (const name of names) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${details.get(name)}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.relations.outgoing.filter((edge) => edge.to === '김태운' && edge.type === '지휘').length, 1, name)
+  }
+})
+
 test('Oh Haerin keeps the owner-confirmed female identity', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0195.json', import.meta.url), 'utf8'))
   const ledger = JSON.parse(await readFile(new URL('../../lore/name-pools/gender-cast.json', import.meta.url), 'utf8'))
