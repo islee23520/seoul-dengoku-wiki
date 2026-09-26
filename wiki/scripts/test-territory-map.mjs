@@ -289,6 +289,8 @@ test('flat territory map preserves terrain, rivers, rail overlay and state selec
   assert.match(map, /northern-rail.json/)
   assert.match(map, /territory-transfer-marker/)
   assert.match(map, /chooseRegion\(region\)/)
+  assert.match(map, /role="button" tabIndex=\{0\}/)
+  assert.match(map, /event\.key === 'Enter' \|\| event\.key === ' '/)
   assert.match(map, /selectedState\.slug/)
   assert.match(map, /서울 전체/)
   assert.match(map, /광역철도 역 정보/)
