@@ -8354,5 +8354,18 @@
       ]
     }
   ],
-  "data": {}
+  "data": {
+    "station_aliases": [
+      {
+        "id": "총신대입구(이수)",
+        "aliases": ["이수", "총신대입구 (이수)"],
+        "observed_lines": {
+          "이수": ["7"],
+          "총신대입구 (이수)": ["4"],
+          "총신대입구(이수)": ["4"]
+        },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      }
+    ]
+  }
 }

@@ -5,6 +5,7 @@ import test from 'node:test'
 
 const places = import.meta.dirname
 const candidate = JSON.parse(readFileSync(resolve(places, 'Station-Alias-Candidates.json'), 'utf8'))
+const catalogData = JSON.parse(readFileSync(resolve(places, 'Seoul-Station-Catalog.json'), 'utf8'))
 const interiors = JSON.parse(readFileSync(resolve(places, '../regions/station-interiors.json'), 'utf8'))
 const catalog = readFileSync(resolve(places, 'Seoul-Station-Catalog.md'), 'utf8')
 const rows = [...catalog.matchAll(/^\| ([^|]+) \| [^|]* \| 37\.[^|]* \| 12[^|]* \|[^|]*\|$/gmu)].map((match) => match[1])
@@ -23,6 +24,10 @@ test('the candidate classifies every same-base pair without altering the 334-row
 
 test('Isu identity is approved while both observed platforms and four graph neighbors remain', () => {
   const isu = candidate.groups.find((group) => group.relatedStation === '이수')
+  const canonical = catalogData.data.station_aliases.find((station) => station.id === '총신대입구(이수)')
+  assert.deepEqual(canonical.aliases, ['이수', '총신대입구 (이수)'])
+  assert.deepEqual(canonical.observed_lines, { '이수': ['7'], '총신대입구 (이수)': ['4'], '총신대입구(이수)': ['4'] })
+  assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['총신대입구(이수)'])
   assert.equal(isu.disposition, 'identity-approved-not-applied')
   assert.equal(isu.displayName, '총신대입구(이수)')
   assert.deepEqual(isu.aliases, ['총신대입구 (이수)', '이수'])
