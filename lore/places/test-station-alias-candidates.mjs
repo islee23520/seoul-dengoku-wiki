@@ -7,6 +7,7 @@ const places = import.meta.dirname
 const candidate = JSON.parse(readFileSync(resolve(places, 'Station-Alias-Candidates.json'), 'utf8'))
 const catalogData = JSON.parse(readFileSync(resolve(places, 'Seoul-Station-Catalog.json'), 'utf8'))
 const interiors = JSON.parse(readFileSync(resolve(places, '../regions/station-interiors.json'), 'utf8'))
+const projected = JSON.parse(readFileSync(resolve(places, '../../wiki/public/opening-territories.json'), 'utf8'))
 const catalog = readFileSync(resolve(places, 'Seoul-Station-Catalog.md'), 'utf8')
 const rows = [...catalog.matchAll(/^\| ([^|]+) \| [^|]* \| 37\.[^|]* \| 12[^|]* \|[^|]*\|$/gmu)].map((match) => match[1])
 
@@ -28,7 +29,7 @@ test('Isu identity is approved while both observed platforms and four graph neig
   assert.deepEqual(canonical.aliases, ['이수', '총신대입구 (이수)'])
   assert.deepEqual(canonical.observed_lines, { '이수': ['7'], '총신대입구 (이수)': ['4'], '총신대입구(이수)': ['4'] })
   assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['총신대입구(이수)'])
-  assert.equal(isu.disposition, 'identity-approved-not-applied')
+  assert.equal(isu.disposition, 'wiki-projection-applied-source-pending')
   assert.equal(isu.displayName, '총신대입구(이수)')
   assert.deepEqual(isu.aliases, ['총신대입구 (이수)', '이수'])
   assert.match(isu.decision, /이수·총신대입구\(이수\).*하나의 역/u)
@@ -42,5 +43,7 @@ test('Isu identity is approved while both observed platforms and four graph neig
     '총신대입구 (이수)': ['동작', '사당'],
     '총신대입구(이수)': [],
   })
+  assert.deepEqual(projected.stations.filter((station) => station.id === canonical.id).map((station) => station.memberIds), [[canonical.id, ...canonical.aliases]])
+  assert.deepEqual(new Set(projected.edges.filter((edge) => edge.a === canonical.id || edge.b === canonical.id).map((edge) => edge.a === canonical.id ? edge.b : edge.a)), new Set(['남성', '내방', '동작', '사당']))
   for (const name of [...isu.members, isu.relatedStation, '신촌', '신촌(지하)']) assert.ok(rows.includes(name), name)
 })
