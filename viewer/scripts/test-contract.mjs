@@ -13,5 +13,5 @@ test('GDD catalog exposes canonical documents and current data summaries', async
   // Word-anchored so it matches Ref-Ravelen / ravelen-chronicles but not "TravelEncounters".
   assert.ok(contract.documents.every((document) => !/\bravelen/i.test(`${document.route} ${document.sourcePath}`)), 'retired Ravelen reference must not be in the GDD catalog')
   assert.equal(contract.documents.filter((document) => /^\/rules\/Rules-/.test(document.route)).length, 7, 'the seven migrated Rules-* clause pages are published under rules')
-  assert.deepEqual(contract.datasets.map((dataset) => dataset.records), [1010, 1010, 37, 334, 0, 334, 427])
+  assert.deepEqual(contract.datasets.map((dataset) => dataset.records), [1016, 1016, 37, 334, 1, 334, 427])
 })
