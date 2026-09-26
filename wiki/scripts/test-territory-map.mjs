@@ -18,6 +18,7 @@ test('alternate labels share one displayed station while graph nodes and edges r
   }
   const isu = displayed.find((station) => station.id === '총신대입구(이수)')
   assert.deepEqual(isu.memberIds, ['이수', '총신대입구 (이수)', '총신대입구(이수)'])
+  assert.deepEqual(isu.names, ['총신대입구(이수)'])
   assert.deepEqual(new Set(data.edges.filter((edge) => isu.memberIds.includes(edge.a) || isu.memberIds.includes(edge.b)).map((edge) => isu.memberIds.includes(edge.a) ? edge.b : edge.a)), new Set(['남성', '내방', '동작', '사당']))
   const underground = JSON.parse(await readFile(new URL('../public/underground-detail.json', import.meta.url), 'utf8'))
   assert.ok(isu.memberIds.some((id) => underground.stations[id]?.['5-4']))

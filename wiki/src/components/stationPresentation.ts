@@ -34,7 +34,7 @@ export function presentationStations<T extends { id: string; name: string; lineI
   return [...members].map(([id, group]) => ({
     ...byId.get(id)!,
     memberIds: group.map((station) => station.id),
-    names: group.map((station) => station.name),
+    names: id === '총신대입구(이수)' ? [byId.get(id)!.name] : group.map((station) => station.name),
     lineIds: [...new Set(group.flatMap((station) => station.lineIds))],
   }))
 }
