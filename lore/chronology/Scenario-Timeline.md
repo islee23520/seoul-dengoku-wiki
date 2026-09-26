@@ -12,18 +12,19 @@
 | 2111–2126 | 개막 전야 | 승계, 개막의 수장, 2125년 강약 장부. |
 
 ## 2026–2126 연도별 진입
-
-- [2026년](Century-Annals.md#2026년) · [2027년](Century-Annals.md#2027년)
-- [2031년](Century-Annals.md#2031년) · [2032년](Century-Annals.md#2032년) · [2035년](Century-Annals.md#2035년) · [2039년](Century-Annals.md#2039년)
-- [2046년](Century-Annals.md#2046년) · [2049년](Century-Annals.md#2049년)
-- [2051년](Century-Annals.md#2051년) · [2052년](Century-Annals.md#2052년) · [2053년](Century-Annals.md#2053년) · [2054년](Century-Annals.md#2054년) · [2055년](Century-Annals.md#2055년)
-- [2064년](Century-Annals.md#2064년)
-- [2071년](Century-Annals.md#2071년) · [2072년](Century-Annals.md#2072년) · [2073년](Century-Annals.md#2073년) · [2079년](Century-Annals.md#2079년)
-- [2085년](Century-Annals.md#2085년)
-- [2091년](Century-Annals.md#2091년) · [2097년](Century-Annals.md#2097년) · [2098년](Century-Annals.md#2098년)
-- [2100년](Century-Annals.md#2100년) · [2107년](Century-Annals.md#2107년)
-- [2112년](Century-Annals.md#2112년) · [2113년](Century-Annals.md#2113년) · [2114년](Century-Annals.md#2114년) · [2115년](Century-Annals.md#2115년) · [2117년](Century-Annals.md#2117년) · [2118년](Century-Annals.md#2118년) · [2119년](Century-Annals.md#2119년)
-- [2120년](Century-Annals.md#2120년) · [2121년](Century-Annals.md#2121년) · [2122년](Century-Annals.md#2122년)
+- [2026년](Century-Annals.md#2026년) · [2027년](Century-Annals.md#2027년) · [2028년](Century-Annals.md#2028년) · [2029년](Century-Annals.md#2029년) · [2030년](Century-Annals.md#2030년) · [2031년](Century-Annals.md#2031년) · [2032년](Century-Annals.md#2032년)
+- [2033년](Century-Annals.md#2033년) · [2034년](Century-Annals.md#2034년) · [2035년](Century-Annals.md#2035년) · [2036년](Century-Annals.md#2036년) · [2037년](Century-Annals.md#2037년) · [2038년](Century-Annals.md#2038년) · [2039년](Century-Annals.md#2039년)
+- [2041년](Century-Annals.md#2041년) · [2042년](Century-Annals.md#2042년) · [2044년](Century-Annals.md#2044년) · [2046년](Century-Annals.md#2046년) · [2048년](Century-Annals.md#2048년) · [2049년](Century-Annals.md#2049년) · [2050년](Century-Annals.md#2050년)
+- [2051년](Century-Annals.md#2051년) · [2052년](Century-Annals.md#2052년) · [2053년](Century-Annals.md#2053년) · [2054년](Century-Annals.md#2054년) · [2055년](Century-Annals.md#2055년) · [2056년](Century-Annals.md#2056년) · [2057년](Century-Annals.md#2057년)
+- [2058년](Century-Annals.md#2058년) · [2059년](Century-Annals.md#2059년) · [2060년](Century-Annals.md#2060년) · [2061년](Century-Annals.md#2061년) · [2062년](Century-Annals.md#2062년) · [2063년](Century-Annals.md#2063년) · [2064년](Century-Annals.md#2064년)
+- [2066년](Century-Annals.md#2066년) · [2068년](Century-Annals.md#2068년) · [2069년](Century-Annals.md#2069년) · [2070년](Century-Annals.md#2070년) · [2071년](Century-Annals.md#2071년) · [2072년](Century-Annals.md#2072년) · [2073년](Century-Annals.md#2073년)
+- [2074년](Century-Annals.md#2074년) · [2075년](Century-Annals.md#2075년) · [2076년](Century-Annals.md#2076년) · [2077년](Century-Annals.md#2077년) · [2078년](Century-Annals.md#2078년) · [2079년](Century-Annals.md#2079년) · [2080년](Century-Annals.md#2080년)
+- [2082년](Century-Annals.md#2082년) · [2084년](Century-Annals.md#2084년) · [2085년](Century-Annals.md#2085년) · [2088년](Century-Annals.md#2088년) · [2090년](Century-Annals.md#2090년) · [2091년](Century-Annals.md#2091년) · [2092년](Century-Annals.md#2092년)
+- [2093년](Century-Annals.md#2093년) · [2095년](Century-Annals.md#2095년) · [2096년](Century-Annals.md#2096년) · [2097년](Century-Annals.md#2097년) · [2098년](Century-Annals.md#2098년) · [2099년](Century-Annals.md#2099년) · [2100년](Century-Annals.md#2100년)
+- [2101년](Century-Annals.md#2101년) · [2102년](Century-Annals.md#2102년) · [2104년](Century-Annals.md#2104년) · [2106년](Century-Annals.md#2106년) · [2107년](Century-Annals.md#2107년) · [2109년](Century-Annals.md#2109년) · [2110년](Century-Annals.md#2110년)
+- [2111년](Century-Annals.md#2111년) · [2112년](Century-Annals.md#2112년) · [2113년](Century-Annals.md#2113년) · [2114년](Century-Annals.md#2114년) · [2115년](Century-Annals.md#2115년) · [2116년](Century-Annals.md#2116년) · [2117년](Century-Annals.md#2117년)
+- [2118년](Century-Annals.md#2118년) · [2119년](Century-Annals.md#2119년) · [2120년](Century-Annals.md#2120년) · [2121년](Century-Annals.md#2121년) · [2122년](Century-Annals.md#2122년) · [2123년](Century-Annals.md#2123년) · [2124년](Century-Annals.md#2124년)
+- [2125년](Century-Annals.md#2125년) · [2126년](Century-Annals.md#2126년)
 
 ## 이야기 개막
 
