@@ -756,6 +756,13 @@ test('Shin Jongmok has an opening objective grounded in his return-net work', as
   assert.equal(detail.sourceRoute, '/world/Core-Characters#신종목')
 })
 
+test('Kim Yeongyu has an opening objective without claiming approval', async () => {
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1007.json', import.meta.url), 'utf8'))
+  assert.equal(detail.name, '김연규')
+  assert.ok(detail.sections['야망'])
+  assert.equal(detail.sourceRoute, '/world/Core-Characters#김연규')
+})
+
 test('K998 keeps his detail route after relocation to the First Branch Workshop', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0998.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '이일섭')
