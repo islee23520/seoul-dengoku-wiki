@@ -89,3 +89,15 @@ test('people page states the confirmed hero contract without auto-assigning prop
   assert.doesNotMatch(generator, /heroClass/)
   assert.doesNotMatch(generator, /campaignRole/)
 })
+
+test('opening recommendations resolve to the five owner-selected person routes', async () => {
+  const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
+  const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const ids = page.match(/const recommendedIds = \[([^\]]+)\]/)?.[1].match(/person-\d{4}/g)
+  assert.deepEqual(ids, ['person-1003', 'person-1008', 'person-1007', 'person-1009', 'person-0998'])
+  for (const [id, name] of ids.map((id, index) => [id, ['조재표', '민웅기', '김연규', '신종목', '이일섭'][index]])) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.name, name)
+    assert.ok(catalog.includes(`"detailRoute": "/people/${id}"`))
+  }
+})
