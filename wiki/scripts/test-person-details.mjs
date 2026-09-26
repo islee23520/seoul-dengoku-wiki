@@ -30,6 +30,16 @@ test('all canonical people expose unique detail routes and structured data', asy
   }
 })
 
+test('Oh Haerin keeps the owner-confirmed female identity', async () => {
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0195.json', import.meta.url), 'utf8'))
+  const ledger = JSON.parse(await readFile(new URL('../../lore/name-pools/gender-cast.json', import.meta.url), 'utf8'))
+  const gender = ledger.people.find((person) => person.name === '오해린')
+  assert.equal(detail.name, '오해린')
+  assert.equal(detail.gender, '여성')
+  assert.equal(gender.gender, '여성')
+  assert.equal(gender.user_locked, true)
+})
+
 test('S01 issued cards retain an explicit occupation and martial state in person details', async () => {
   const document = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-01.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
