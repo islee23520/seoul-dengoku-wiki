@@ -2,6 +2,7 @@ export const wikiLinks = {
   home: '/',
   states: '/states',
   documents: '/documents',
+  categories: '/categories',
   worldIndex: '/world/',
   overview: '/world/World-Unbinding',
   timeline: '/world/Scenario-Timeline',
