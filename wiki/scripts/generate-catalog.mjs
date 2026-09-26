@@ -399,10 +399,10 @@ const capitalNameByState = new Map(stateRows.map((row) => [row.id, row.capital.r
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
 const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
-const isuIdentity = stationCatalog.data.station_aliases.find((entry) => entry.id === '총신대입구(이수)')
-if (!isuIdentity || ![isuIdentity.id, ...isuIdentity.aliases].every((id) => stationById.has(id))) throw new Error('E_ISU_ALIAS_SOURCE')
-const isuMembers = [isuIdentity.id, ...isuIdentity.aliases]
-const canonicalStationId = (id) => isuMembers.includes(id) ? isuIdentity.id : id
+const approvedStationAliases = stationCatalog.data.station_aliases
+const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
+if (approvedStationAliases.length !== 2 || canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
+const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
 const stationDegree = new Map(seoulGraph.stations.map((station) => [station.id, 0]))
 for (const edge of seoulGraph.edges) {
@@ -410,7 +410,7 @@ for (const edge of seoulGraph.edges) {
   stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
   stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
 }
-for (const alias of isuIdentity.aliases) stationIdByName.set(alias, isuIdentity.id)
+for (const entry of approvedStationAliases) for (const alias of entry.aliases) stationIdByName.set(alias, entry.id)
 const capitalStateByStationId = new Map([...capitalNameByState.entries()].map(([stateId, name]) => {
   const stationId = stationIdByName.get(name)
   if (!stationId) throw new Error(`E_CAPITAL_STATION_NOT_FOUND:${stateId}:${name}`)
@@ -453,19 +453,25 @@ const sourceMapStations = seoulGraph.stations.map((station) => {
     },
   }
 })
-const mapStations = sourceMapStations.filter((station) => !isuIdentity.aliases.includes(station.id)).map((station) => station.id === isuIdentity.id ? {
-  ...station,
-  memberIds: isuMembers,
-  lineIds: [...new Set(sourceMapStations.filter((member) => isuMembers.includes(member.id)).flatMap((member) => member.lineIds))],
-  degree: isuMembers.reduce((total, id) => total + (stationDegree.get(id) ?? 0), 0),
-} : station)
+const mapStations = sourceMapStations.filter((station) => canonicalStationId(station.id) === station.id).map((station) => {
+  const identity = approvedStationAliases.find((entry) => entry.id === station.id)
+  if (!identity) return station
+  const memberIds = [identity.id, ...identity.aliases]
+  return {
+    ...station,
+    memberIds,
+    lineIds: [...new Set(sourceMapStations.filter((member) => memberIds.includes(member.id)).flatMap((member) => member.lineIds))],
+    degree: new Set(seoulGraph.edges.filter((edge) => memberIds.includes(edge.a) || memberIds.includes(edge.b)).map((edge) => canonicalStationId(memberIds.includes(edge.a) ? edge.b : edge.a))).size,
+  }
+})
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
 const stationLines = new Map(sourceMapStations.map((station) => [station.id, station.lineIds]))
-const mapEdges = seoulGraph.edges.map((edge) => ({
+const projectedEdges = seoulGraph.edges.map((edge) => ({
   a: canonicalStationId(edge.a),
   b: canonicalStationId(edge.b),
   lineIds: stationLines.get(edge.a).filter((lineId) => stationLines.get(edge.b).includes(lineId)),
 }))
+const mapEdges = projectedEdges.filter((edge, index) => projectedEdges.findIndex((candidate) => candidate.a === edge.a && candidate.b === edge.b && candidate.lineIds.join(',') === edge.lineIds.join(',')) === index)
 const polygonMetrics = (points) => {
   let twiceArea = 0
   let weightedX = 0

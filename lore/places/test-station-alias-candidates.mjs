@@ -57,5 +57,5 @@ test('Samsung subtitle shares one observed platform and the same graph neighbors
   }
   assert.deepEqual(samsung.observed_lines, { 삼성: ['2'], '삼성(무역센터)': ['2'] })
   assert.deepEqual(projected.edges.filter((edge) => edge.a === samsung.id || edge.b === samsung.id).map((edge) => edge.a === samsung.id ? edge.b : edge.a).sort(), ['선릉', '종합운동장'])
-  assert.deepEqual(projected.edges.filter((edge) => edge.a === samsung.aliases[0] || edge.b === samsung.aliases[0]).map((edge) => edge.a === samsung.aliases[0] ? edge.b : edge.a).sort(), ['선릉', '종합운동장'])
+  assert.deepEqual(projected.edges.filter((edge) => edge.a === samsung.aliases[0] || edge.b === samsung.aliases[0]), [])
 })
