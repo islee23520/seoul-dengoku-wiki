@@ -540,3 +540,44 @@
 .territory-landmark-index button { display: flex; align-items: center; gap: 0.45rem; width: 100%; border: 1px solid var(--wiki-line); background: transparent; color: var(--wiki-text); font: inherit; text-align: left; cursor: pointer; padding: 0.35rem; }
 .territory-landmark-index button span:last-child { margin-inline-start: auto; font-size: 0.75rem; }
 .territory-landmark-index button[aria-pressed='true'], .territory-landmark-index button:focus-visible { outline: 2px solid var(--wiki-accent); }
+.territory-map-flat {
+  position: relative;
+  block-size: min(76vh, 54rem);
+  min-block-size: 36rem;
+  background: #193c4b;
+  isolation: isolate;
+}
+
+.territory-flat-svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  touch-action: none;
+  cursor: grab;
+}
+
+.territory-flat-svg:active { cursor: grabbing; }
+.territory-flat-region { cursor: pointer; }
+.territory-flat-region:hover, .territory-flat-region:focus { fill-opacity: 0.95; stroke: #fff1bf; stroke-width: 2; }
+.territory-national-borders { filter: drop-shadow(0 0 2px #e7d9ae); }
+.territory-flat-river { filter: drop-shadow(0 0 2px #071f31); }
+.territory-metro-line { opacity: 0.96; }
+.territory-transfer-marker, .territory-regional-station, .territory-flat-station, .territory-flat-capital { cursor: pointer; }
+.territory-transfer-marker:hover, .territory-regional-station:hover, .territory-flat-station:hover { stroke: #ffdb6b; stroke-width: 4; }
+
+.territory-flat-controls {
+  position: absolute;
+  z-index: 8;
+  inset-block-start: 0.65rem;
+  inset-inline-start: 0.65rem;
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  border: 1px solid #a7ced7;
+  background: rgb(8 24 34 / 0.93);
+}
+.territory-flat-controls button { border: 0; background: transparent; color: #eff9f9; padding: 0.4rem; cursor: pointer; }
+.territory-flat-controls button[aria-pressed='true'] { background: #b8e3e8; color: #0b2530; }
+.territory-flat-controls button:focus-visible, .territory-flat-region:focus-visible { outline: 2px solid #ffdf83; }
+.territory-rail-toggle { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 700; }
+.territory-map-flat .territory-detail { max-block-size: 85%; }
