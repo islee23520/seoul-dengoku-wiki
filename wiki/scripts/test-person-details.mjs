@@ -470,7 +470,7 @@ test('S10 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-10#'), id)
     const martial = detail.sections['무공']
-    assert.match(martial, /^(?:없음\. 생업만\.|없음\. 강호 갈래는 안국총림 안의 개방 손\.|수문손|기록칼|차륜망치|호위방패)/u, id)
+    assert.match(martial, /^(?:없음\. 생업만\.|없음\. 강호 갈래는 안국총림 안의 개방 무공\.|수문손|기록칼|차륜망치|호위방패)/u, id)
     assert.doesNotMatch(martial, /생업:/u, id)
   }
   assert.equal(seen.size, 62)
