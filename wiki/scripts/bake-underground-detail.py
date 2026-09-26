@@ -42,6 +42,15 @@ def main():
     args = parser.parse_args()
     depth_file, operation_file = args.cache / 'depth.csv', args.cache / 'operations.csv'
     catalog = json.loads((ROOT / 'wiki/public/opening-territories.json').read_text())
+    alias_catalog = json.loads((ROOT / 'lore/places/Seoul-Station-Catalog.json').read_text())
+    source_by_station_line = {
+        (station_id, LINE_IDS[line]): source.split('(')[0]
+        for entry in alias_catalog['data']['station_aliases']
+        for station_id in [entry['id'], *entry['aliases']]
+        for source, observed in entry['observed_lines'].items()
+        if source != '총신대입구 (이수)'
+        for line in observed
+    }
     official = json.loads((ROOT / 'wiki/scripts/official-seoul-lines.json').read_text())
     import re
     aliases = dict(re.findall(r"'([^']+)': '([^']+)'", (ROOT / 'wiki/src/components/stationPresentation.ts').read_text()))
@@ -49,9 +58,9 @@ def main():
     operations = {(name_key(row['역명']), LINE_IDS[row['호선'].replace('호선', '')]): row for row in rows(operation_file) if row['호선'].replace('호선', '') in LINE_IDS}
     stations = {}
     for station in catalog['stations']:
-        key = name_key(aliases.get(station['id'], station['name']))
         entries = {}
         for line in station['lineIds']:
+            key = name_key(source_by_station_line.get((station['id'], line), aliases.get(station['id'], station['name'])))
             depth, operation = depths.get((key, line)), operations.get((key, line))
             underground_depth = depth if depth and float(depth['정거장깊이']) > 0 and float(depth['선로기준정거장깊이']) > 0 else None
             entries[line] = {
