@@ -37,13 +37,13 @@
 |---|---|---|---|
 | 수문호흡법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
 | 차륜강체공 | 미정 | 차륜망치 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 강단호명법 | 미정 | 강단발 | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 강단호명법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
 | 호위철벽진 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
 | 기록단절법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 죽검연환법 | 미정 | 죽대손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 연각권법 | 미정 | 매트손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 공탄총검법 | 미정 | 빈탄손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 감응조준법 | 미정 | 렌즈숨 | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 죽검연환법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 연각권법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 총검술 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 감응조준법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
 
 한자 원문은 현재 정본에 없으므로 미정이다. 개방 무공은 유파가 아닌 강호 갈래이며 정식 유파명은 미정이다. 근거: [무공](../culture/Martial-Paths.md#개방-무공).
 

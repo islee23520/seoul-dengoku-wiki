@@ -772,6 +772,19 @@ test('Shin Jongmok has an opening objective grounded in his return-net work', as
   assert.equal(detail.sourceRoute, '/world/Core-Characters#신종목')
 })
 
+test('Shin Jongmok exposes the directed bayonet skill without inferred equipment or rank', async () => {
+  const source = JSON.parse(await readFile(new URL('../../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
+  const martial = source.content.find((block) => block.anchor === '신종목-p4')
+  assert.equal(martial.text.ko.map((run) => run.text).join(''), '무공. 총검술.')
+  assert.equal(martial.text.en.map((run) => run.text).join(''), 'Martial path. Bayonet fighting.')
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1009.json', import.meta.url), 'utf8'))
+  assert.equal(detail.name, '신종목')
+  assert.equal(detail.sections['무공'], '총검술.')
+  assert.match(detail.biography, /\*\*무공\.\*\* 총검술\./u)
+  assert.doesNotMatch(detail.biography, /\*\*무공\.\*\* 없음\. 생업만\./u)
+  assert.equal(detail.sourceRoute, '/world/Core-Characters#신종목')
+})
+
 test('Kim Yeongyu has an opening objective without claiming approval', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1007.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '김연규')
