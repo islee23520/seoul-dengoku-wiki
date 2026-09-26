@@ -40,9 +40,12 @@ test('home and sidebar expose document and people indexes', async () => {
     assert.match(source, /wikiLinks\.documents/)
     assert.match(source, /wikiLinks\.categories/)
     assert.match(source, /wikiLinks\.characters/)
-    assert.match(source, /label: '프롤로그'/)
     assert.doesNotMatch(source, /기동권 이탈/)
   }
+  assert.match(home, /categoryIndex\.categories\.map/)
+  assert.match(home, /category\.documents\.map/)
+  assert.match(home, /to=\{document\.route\}/)
+  assert.match(sidebar, /label: '프롤로그'/)
 })
 
 test('an authored document is indexed from its domain when categories are omitted', async () => {
@@ -63,4 +66,12 @@ test('a registered category lists its document and the index covers projections'
   assert.match(page, /categoryIndex\.categories/)
   assert.match(page, /to=\{document\.route\}/)
   assert.doesNotMatch(page, /requiredAnchors/)
+})
+
+test('category entries use authored Korean titles when pages have no top heading', async () => {
+  const source = await readFile(new URL('../src/generated/categoryIndex.ts', import.meta.url), 'utf8')
+  const index = JSON.parse(source.split('export const categoryIndex = ')[1].split(' as const satisfies')[0])
+  const characters = index.categories.find(({ id }) => id === 'characters')
+  const page = JSON.parse(await readFile(new URL('../../lore/characters/Cast-State-01.json', import.meta.url), 'utf8'))
+  assert.equal(characters.documents.find(({ slug }) => slug === 'Cast-State-01').title, page.locales.ko.title)
 })

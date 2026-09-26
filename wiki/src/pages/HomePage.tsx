@@ -1,41 +1,7 @@
 import { Link } from 'react-router-dom'
+import { categoryIndex } from '../generated/categoryIndex'
 import { wikiUpdates } from '../generated/wikiUpdates'
 import { wikiLinks } from '../wikiLinks'
-
-type PanelItem = { label: string; to: string; spa?: boolean }
-
-const panels: { title: string; items: PanelItem[] }[] = [
-  { title: '세계관', items: [
-    { label: '정본 문서 전체', to: wikiLinks.documents, spa: true },
-    { label: '분류', to: wikiLinks.categories, spa: true },
-    { label: '서울 십육국', to: wikiLinks.states, spa: true },
-    { label: '프롤로그', to: wikiLinks.overview, spa: true },
-    { label: '연표', to: wikiLinks.timeline, spa: true },
-    { label: '사람과 기체', to: wikiLinks.peopleAndMachines, spa: true },
-    { label: '질병과 증상', to: wikiLinks.ailments, spa: true },
-  ]},
-  { title: '세력', items: [
-    { label: '가문', to: wikiLinks.houses, spa: true },
-    { label: '관직', to: wikiLinks.offices, spa: true },
-    { label: '운영가문', to: wikiLinks.operatingHouses, spa: true },
-  ]},
-  { title: '인물', items: [
-    { label: '등장인물', to: wikiLinks.characters, spa: true },
-    { label: '인물 총람', to: wikiLinks.castIndex, spa: true },
-    { label: '항렬과 본관', to: wikiLinks.hangnyeol, spa: true },
-  ]},
-  { title: '지리', items: [
-    { label: '세계 지도', to: wikiLinks.subway, spa: true },
-    { label: '역 카탈로그', to: wikiLinks.stations, spa: true },
-    { label: '지역 설정', to: wikiLinks.regions, spa: true },
-  ]},
-  { title: '문화', items: [
-    { label: '신앙과 풍속', to: wikiLinks.faith, spa: true },
-    { label: '기술과 무구', to: wikiLinks.technology, spa: true },
-    { label: '식문화', to: wikiLinks.food, spa: true },
-    { label: '구조물', to: wikiLinks.structures, spa: true },
-  ]},
-]
 
 export default function HomePage() {
   return (
@@ -56,22 +22,27 @@ export default function HomePage() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {panels.map(panel => (
-          <div key={panel.title} className="rounded-lg border border-gray-200 bg-white p-4">
-            <h3 className="mb-2 border-b border-gray-200 pb-1.5 text-sm font-bold text-gray-700">
-              {panel.title}
-            </h3>
-            {panel.items.map(item => item.spa ? (
-              <Link key={item.label} to={item.to} className="block py-1 text-sm text-accent hover:underline">
-                {item.label}
-              </Link>
-            ) : (
-              <a key={item.label} href={item.to} className="block py-1 text-sm text-accent hover:underline">
-                {item.label}
-              </a>
-            ))}
-          </div>
+      <div className="mb-3 flex gap-4 text-sm">
+        <Link to={wikiLinks.documents} className="text-accent hover:underline">정본 문서 전체</Link>
+        <Link to={wikiLinks.categories} className="text-accent hover:underline">분류 전체</Link>
+        <Link to={wikiLinks.characters} className="text-accent hover:underline">인물 총람</Link>
+      </div>
+
+      <div className="grid grid-cols-1 items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {categoryIndex.categories.map(category => (
+          <section key={category.id} className="rounded-lg border border-gray-200 bg-white p-4">
+            <h2 className="mb-2 border-b border-gray-200 pb-1.5 text-sm font-bold text-gray-700">
+              <Link to={`/categories/${category.id}`} className="text-accent hover:underline">{category.label}</Link>
+              <span className="ml-2 text-xs font-normal text-gray-500">{category.documents.length}개</span>
+            </h2>
+            <ul className="max-h-64 overflow-y-auto">
+              {category.documents.map(document => (
+                <li key={document.route}>
+                  <Link to={document.route} className="block py-1 text-sm text-accent hover:underline">{document.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         ))}
       </div>
     </div>
