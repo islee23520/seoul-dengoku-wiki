@@ -21,7 +21,7 @@ export const stationAliases: Record<string, string> = {
   '회현(남대문시장)': '회현',
 }
 
-export function presentationStations<T extends { id: string; name: string; lineIds: string[] }>(stations: T[]) {
+export function presentationStations<T extends { id: string; name: string; lineIds: string[]; memberIds?: string[] }>(stations: T[]) {
   const byId = new Map(stations.map((station) => [station.id, station]))
   const members = new Map<string, T[]>()
   for (const station of stations) {
@@ -33,7 +33,7 @@ export function presentationStations<T extends { id: string; name: string; lineI
   }
   return [...members].map(([id, group]) => ({
     ...byId.get(id)!,
-    memberIds: group.map((station) => station.id),
+    memberIds: group.flatMap((station) => station.memberIds ?? [station.id]),
     names: id === '총신대입구(이수)' ? [byId.get(id)!.name] : group.map((station) => station.name),
     lineIds: [...new Set(group.flatMap((station) => station.lineIds))],
   }))

@@ -398,6 +398,11 @@ const pointInPolygon = ([x, y], points) => {
 const capitalNameByState = new Map(stateRows.map((row) => [row.id, row.capital.replace(/역$/u, '')]))
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
+const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
+const isuIdentity = stationCatalog.data.station_aliases.find((entry) => entry.id === '총신대입구(이수)')
+if (!isuIdentity || ![isuIdentity.id, ...isuIdentity.aliases].every((id) => stationById.has(id))) throw new Error('E_ISU_ALIAS_SOURCE')
+const isuMembers = [isuIdentity.id, ...isuIdentity.aliases]
+const canonicalStationId = (id) => isuMembers.includes(id) ? isuIdentity.id : id
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
 const stationDegree = new Map(seoulGraph.stations.map((station) => [station.id, 0]))
 for (const edge of seoulGraph.edges) {
@@ -405,13 +410,14 @@ for (const edge of seoulGraph.edges) {
   stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
   stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
 }
+for (const alias of isuIdentity.aliases) stationIdByName.set(alias, isuIdentity.id)
 const capitalStateByStationId = new Map([...capitalNameByState.entries()].map(([stateId, name]) => {
   const stationId = stationIdByName.get(name)
   if (!stationId) throw new Error(`E_CAPITAL_STATION_NOT_FOUND:${stateId}:${name}`)
   return [stationId, stateId]
 }))
 const capitalStationIds = new Set(capitalStateByStationId.keys())
-const mapStations = seoulGraph.stations.map((station) => {
+const sourceMapStations = seoulGraph.stations.map((station) => {
   const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [station.lon, station.lat])
   const [x, y] = mapPoint([east, north])
   if (x < 0 || x > mapWidth || y < 0 || y > mapHeight) throw new Error(`E_STATION_MAP_BOUNDS:${station.id}:${x}:${y}`)
@@ -447,10 +453,17 @@ const mapStations = seoulGraph.stations.map((station) => {
     },
   }
 })
+const mapStations = sourceMapStations.filter((station) => !isuIdentity.aliases.includes(station.id)).map((station) => station.id === isuIdentity.id ? {
+  ...station,
+  memberIds: isuMembers,
+  lineIds: [...new Set(sourceMapStations.filter((member) => isuMembers.includes(member.id)).flatMap((member) => member.lineIds))],
+  degree: isuMembers.reduce((total, id) => total + (stationDegree.get(id) ?? 0), 0),
+} : station)
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
-const stationLines = new Map(mapStations.map((station) => [station.id, station.lineIds]))
+const stationLines = new Map(sourceMapStations.map((station) => [station.id, station.lineIds]))
 const mapEdges = seoulGraph.edges.map((edge) => ({
-  ...edge,
+  a: canonicalStationId(edge.a),
+  b: canonicalStationId(edge.b),
   lineIds: stationLines.get(edge.a).filter((lineId) => stationLines.get(edge.b).includes(lineId)),
 }))
 const polygonMetrics = (points) => {

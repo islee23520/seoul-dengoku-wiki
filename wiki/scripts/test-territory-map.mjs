@@ -6,14 +6,14 @@ import { presentationStations, stationAliases } from '../src/components/stationP
 test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const displayed = presentationStations(data.stations)
-  assert.equal(data.stations.length, 334)
+  assert.equal(data.stations.length, 332)
   assert.equal(data.edges.length, 435)
   assert.equal(Object.keys(stationAliases).length, 19)
   assert.equal(displayed.length, 315)
   for (const [aliasId, primaryId] of Object.entries(stationAliases)) {
     const station = displayed.find((candidate) => candidate.id === primaryId)
     assert.deepEqual(new Set(station.memberIds), new Set(primaryId === '총신대입구(이수)' ? [primaryId, '이수', '총신대입구 (이수)'] : [primaryId, aliasId]), aliasId)
-    assert.deepEqual(station.lineIds, [...new Set(station.memberIds.flatMap((id) => data.stations.find((source) => source.id === id).lineIds))], aliasId)
+    assert.deepEqual(station.lineIds, [...new Set(station.memberIds.flatMap((id) => data.stations.find((source) => source.id === id)?.lineIds ?? []))], aliasId)
     assert.equal(displayed.some((candidate) => candidate.id === aliasId), false, aliasId)
   }
   const isu = displayed.find((station) => station.id === '총신대입구(이수)')
@@ -21,6 +21,7 @@ test('alternate labels share one displayed station while graph nodes and edges r
   const approved = catalog.data.station_aliases.find((station) => station.id === '총신대입구(이수)')
   assert.deepEqual(new Set(isu.memberIds), new Set([approved.id, ...approved.aliases]))
   assert.deepEqual(isu.names, [approved.id])
+  assert.equal(data.stations.filter((station) => [approved.id, ...approved.aliases].includes(station.id)).length, 1)
   assert.deepEqual(new Set(data.edges.filter((edge) => isu.memberIds.includes(edge.a) || isu.memberIds.includes(edge.b)).map((edge) => isu.memberIds.includes(edge.a) ? edge.b : edge.a)), new Set(['남성', '내방', '동작', '사당']))
   const underground = JSON.parse(await readFile(new URL('../public/underground-detail.json', import.meta.url), 'utf8'))
   assert.equal(underground.stations[approved.id]['5-4'].platformM, 13.55)
@@ -91,11 +92,11 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   }
   assert.ok(data.states.every((state) => Number.isFinite(state.labelX) && Number.isFinite(state.labelY)))
   assert.equal(new Set(data.states.map((state) => `${state.labelX}:${state.labelY}`)).size, 16)
-  assert.equal(data.stations.length, 334)
+  assert.equal(data.stations.length, 332)
   assert.equal(data.edges.length, 435)
   assert.ok(Object.keys(data.lines).length >= 20)
   assert.ok(data.stations.every((station) => Array.isArray(station.lineIds)))
-  assert.ok(data.stations.filter((station) => station.lineIds.length > 0).length >= 330)
+  assert.equal(data.stations.filter((station) => station.lineIds.length > 0).length, 328)
   assert.ok(data.edges.every((edge) => Array.isArray(edge.lineIds)))
   assert.ok(data.stations.every((station) => ['derived-from-surface', 'outside-surface-atlas', 'control-delta'].includes(station.control?.source)))
   assert.ok(data.stations.every((station) => Object.hasOwn(station.control, 'deltaId')))
