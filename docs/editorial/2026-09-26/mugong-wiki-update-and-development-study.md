@@ -133,6 +133,8 @@
 
 ## 권장 발전 방향
 
+아래는 조사 당시의 후속 설계 제안이며 이번 명칭 개정으로 구현·채택된 내용이 아니다. 특히 3절의 상호부조 제안은 현행 원천의 개방 무공·안국총림·환승계 구분을 대체하지 않는다. 현재 편집에는 [세계관 편집 지침](../../../WORLD_BUILDING_GUIDE.md)의 경계를 우선 적용한다.
+
 ### 1. P0 — 전승을 사회적 관계 레이어로 먼저 잠근다
 
 새 국가·병과·전투 수치를 추가하지 않고 `전승(tradition)`을 인물 관계와 생업에 붙는 별도 서사 레이어로 정의한다. 최소 필드는 다음과 같다.
@@ -215,8 +217,8 @@
 
 ## 근거
 
-- [Martial-Paths 정본](https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/culture/Martial-Paths.md) — 최신 HEAD `dd8661d`, 아홉 유파·개방 무공·환승계
-- [Martial-Paths 기계 원장](https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/culture/Martial-Paths.json) — 정본 문서의 JSON 투영 원천
+- [Martial-Paths 조사 기준본](https://github.com/islee23520/seoul-dengoku-wiki/blob/dd8661d2f2326f4b107071a3e5f310a96a9eb9d9/lore/culture/Martial-Paths.md) — 조사 당시 HEAD `dd8661d`, 아홉 유파·개방 무공·환승계
+- [Martial-Paths 기계 원장 기준본](https://github.com/islee23520/seoul-dengoku-wiki/blob/dd8661d2f2326f4b107071a3e5f310a96a9eb9d9/lore/culture/Martial-Paths.json) — 정본 문서의 JSON 투영 원천
 - [Wiki PR #195](https://github.com/islee23520/seoul-dengoku-wiki/pull/195) — 안국총림의 개방·소림 무공 전수 명시
 - Ref-Mechanism-Index 조사본 (2026-09-15 부모 조사 스냅샷, 이 저장소에는 포함하지 않음) — 비통치 직업과 개인 서사를 군사 승리와 분리하는 설계 원칙; 최신 Wiki에서 레퍼런스 문서가 내려간 뒤에도 조사 근거로 보존
 - Ref-Taikou-Risshiden 조사본 (2026-09-15 부모 조사 스냅샷, 이 저장소에는 포함하지 않음) — 사사·유파·도장·제자·비기 흐름; 서울켄시 구현 증거가 아닌 참고 메커니즘
@@ -224,7 +226,7 @@
 - [인물 카드 계약 정본](../../../lore/characters/Cast-Profile-Contract.md) — 부모 조사본의 출처·생업·소속·무장 접근 계약에 대응하는 현재 Wiki 경로
 - Realtime-Formation-Card-Battle 조사본 (2026-09-12 부모 조사 스냅샷, 이 저장소에는 포함하지 않음) — RTFC 전투 계약과 미완료 게이트
 - [정본 게시 표면](https://seoul-dengoku.linalab.io/wiki/) — GitHub Wiki 정본을 읽기용으로 게시하는 사이트
-- [person-1009 생성 투영](https://github.com/islee23520/seoul-dengoku-wiki/blob/main/wiki/public/person-details/person-1009.json) — 사이트 인물 endpoint와 바이트 일치
+- [person-1009 생성 투영 기준본](https://github.com/islee23520/seoul-dengoku-wiki/blob/dd8661d2f2326f4b107071a3e5f310a96a9eb9d9/wiki/public/person-details/person-1009.json) — 조사 당시 사이트 인물 endpoint와 바이트 일치
 - 이슈 #102 조사 원문 (2026-09-15 부모 조사 스냅샷, 이 저장소에는 포함하지 않음) — 무술 유파·개방 제안의 원 요구
 - 이슈 #102 세계관 제안서 (2026-09-15 부모 조사 스냅샷, 이 저장소에는 포함하지 않음) — 세 유파·상호부조망 창작 초안
 

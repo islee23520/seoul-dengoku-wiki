@@ -16,5 +16,6 @@
 - [2026-09-26 명칭 감사 개정안](docs/editorial/2026-09-26/martial-name-audit-and-revision.md)
 - [2026-09-26 감사 검증 기록](docs/editorial/2026-09-26/martial-name-audit-verification.md)
 - [2026-09-26 Wiki 업데이트·발전 연구](docs/editorial/2026-09-26/mugong-wiki-update-and-development-study.md)
+- [원천 적용·GitHub 제출 검증](docs/editorial/2026-09-26/publication-verification.md)
 
 감사 문서는 역사적 기록이다. 신종목의 총검술 사용자 정정은 최신 사용자 지시로 기록된 적용 방향이며, 총림의 개방·타구봉법과 소림 전수 분리는 현재 원천 경계다. 그와 별개로 감사 문서의 제안·네 보류 항목·검증 공백은 자동 승인이나 게시 완료가 아니다. 2026-09-26 현재 브랜치의 병합·배포 상태는 각 문서의 적용 메모를 따른다.
