@@ -235,7 +235,7 @@ for (const domain of domains) {
       domain,
       slug,
       route: `/${domain}/${slug === 'index' ? '' : slug}`,
-      title: normalizeTitle(markdown, slug),
+      title: pagesBySlug.get(slug)?.value.locales?.ko?.title ?? normalizeTitle(markdown, slug),
       categories: categoriesBySlug.get(slug) ?? [],
       markdown,
       name: `${slug}.md`,
