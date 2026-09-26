@@ -12,14 +12,14 @@ const catalog = readFileSync(resolve(places, 'Seoul-Station-Catalog.md'), 'utf8'
 const rows = [...catalog.matchAll(/^\| ([^|]+) \| [^|]* \| 37\.[^|]* \| 12[^|]* \|[^|]*\|$/gmu)].map((match) => match[1])
 
 test('the candidate classifies every same-base pair without altering the 334-row roster', () => {
-  assert.equal(candidate.status, 'review-candidate-not-applied')
+  assert.equal(candidate.status, 'wiki-projection-applied-source-pending')
   assert.equal(rows.length, 334)
   assert.equal(interiors.stations.length, 334)
   const grouped = Map.groupBy(rows, (name) => name.replace(/\s*\(.*\)$/u, ''))
   const pairs = [...grouped.values()].filter((names) => names.length > 1)
   assert.equal(pairs.length, 19)
   assert.deepEqual(candidate.groups.map((group) => group.members.slice().sort().join('|')).sort(), pairs.map((pair) => pair.slice().sort().join('|')).sort())
-  assert.equal(candidate.groups.filter((group) => group.disposition === 'alias-candidate').length, 17)
+  assert.equal(candidate.groups.filter((group) => group.disposition === 'wiki-projection-applied-source-pending').length, 18)
   assert.deepEqual(candidate.groups.find((group) => group.disposition === 'nonmerge').members, ['신촌', '신촌(지하)'])
 })
 
