@@ -28,7 +28,7 @@ test('Isu identity is approved while both observed platforms and four graph neig
   const canonical = catalogData.data.station_aliases.find((station) => station.id === '총신대입구(이수)')
   assert.deepEqual(canonical.aliases, ['이수', '총신대입구 (이수)'])
   assert.deepEqual(canonical.observed_lines, { '이수': ['7'], '총신대입구 (이수)': ['4'], '총신대입구(이수)': ['4'] })
-  assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['총신대입구(이수)', '삼성'])
+  assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['총신대입구(이수)', '삼성', '수유'])
   assert.equal(isu.disposition, 'wiki-projection-applied-source-pending')
   assert.equal(isu.displayName, '총신대입구(이수)')
   assert.deepEqual(isu.aliases, ['총신대입구 (이수)', '이수'])
@@ -58,4 +58,16 @@ test('Samsung subtitle shares one observed platform and the same graph neighbors
   assert.deepEqual(samsung.observed_lines, { 삼성: ['2'], '삼성(무역센터)': ['2'] })
   assert.deepEqual(projected.edges.filter((edge) => edge.a === samsung.id || edge.b === samsung.id).map((edge) => edge.a === samsung.id ? edge.b : edge.a).sort(), ['선릉', '종합운동장'])
   assert.deepEqual(projected.edges.filter((edge) => edge.a === samsung.aliases[0] || edge.b === samsung.aliases[0]), [])
+})
+
+test('Suyu subtitle shares its observed platform and graph neighbors', () => {
+  const suyu = catalogData.data.station_aliases.find((station) => station.id === '수유')
+  assert.deepEqual(suyu.aliases, ['수유(강북구청)'])
+  assert.deepEqual(suyu.observed_lines, { 수유: ['4'], '수유(강북구청)': ['4'] })
+  for (const name of [suyu.id, ...suyu.aliases]) {
+    assert.ok(rows.includes(name))
+    assert.deepEqual(interiors.stations.find((station) => station.name === name).observed_levels.lines.map((line) => [line.line, line.code]), [['4', 'B2']])
+  }
+  assert.deepEqual(projected.edges.filter((edge) => edge.a === suyu.id || edge.b === suyu.id).map((edge) => edge.a === suyu.id ? edge.b : edge.a).sort(), ['미아', '쌍문'])
+  assert.deepEqual(projected.edges.filter((edge) => edge.a === suyu.aliases[0] || edge.b === suyu.aliases[0]).map((edge) => edge.a === suyu.aliases[0] ? edge.b : edge.a).sort(), ['미아', '쌍문'])
 })
