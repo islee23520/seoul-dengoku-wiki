@@ -44,6 +44,20 @@ test('thirteen S01 ration clerks have owner-approved command ties to I Seodam', 
   }
 })
 
+test('twelve S01 concourse explorers have owner-approved command ties to Byeon Goun', async () => {
+  const names = ['이늘민', '최아아', '송하지', '임서나', '성수현', '양자태', '성하현', '백차래', '정남준', '안구민', '신차민', '차자원']
+  const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const details = new Map()
+  for (const match of catalog.matchAll(/"id": "(person-\d{4})",\s*"name": "([^"]+)"/gu)) {
+    if (names.includes(match[2])) details.set(match[2], match[1])
+  }
+  assert.equal(details.size, names.length)
+  for (const name of names) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${details.get(name)}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.relations.outgoing.filter((edge) => edge.to === '변고운' && edge.type === '지휘').length, 1, name)
+  }
+})
+
 test('Oh Haerin keeps the owner-confirmed female identity', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0195.json', import.meta.url), 'utf8'))
   const ledger = JSON.parse(await readFile(new URL('../../lore/name-pools/gender-cast.json', import.meta.url), 'utf8'))
