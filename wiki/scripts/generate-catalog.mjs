@@ -656,7 +656,8 @@ const addPersonCards = (text, file, pattern) => {
     const nextHeading = headings[index + 1]?.index ?? (file === 'Cast-Unaffiliated.md' ? text.indexOf('\n## ', headings[index].index + headings[index][0].length) : -1)
     const body = text.slice(headings[index].index + headings[index][0].length, nextHeading >= 0 ? nextHeading : text.length).trim()
     const cards = personCards.get(name) ?? []
-    cards.push({ file: file.replace('.md', ''), body })
+    const slug = file.replace('.md', '')
+    cards.push({ file: slug, body, primary: pagesBySlug.get(slug)?.value.primary_detail_names?.includes(name) ?? false })
     personCards.set(name, cards)
   }
 }
@@ -698,12 +699,18 @@ const parseCardSections = (body) => {
 const parseCardFields = (body) => Object.fromEntries(
   [...body.matchAll(/^- ([^:\n]+):\s*(.+)$/gm)].map((match) => [match[1].trim(), match[2].trim()]),
 )
+const primaryCard = (person) => {
+  const cards = personCards.get(person.name) ?? []
+  const selected = cards.find((card) => card.primary)
+  if (selected) return selected
+  return [...cards].sort((left, right) => right.body.length - left.body.length)[0]
+}
 const personDetailsRoot = resolve(publicRoot, 'person-details')
 await rm(personDetailsRoot, { recursive: true, force: true })
 await mkdir(personDetailsRoot, { recursive: true })
 const peopleCatalog = peopleSource.map((person, index) => {
   const cards = personCards.get(person.name) ?? []
-  const primary = [...cards].sort((left, right) => right.body.length - left.body.length)[0]
+  const primary = primaryCard(person)
   const fields = parseCardFields(primary?.body ?? '')
   const sections = parseCardSections(primary?.body ?? '')
   const source = primary?.file ?? 'Cast-Index'
@@ -737,7 +744,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
 for (const person of peopleCatalog) {
   const ledger = peopleSource.find((candidate) => candidate.name === person.name)
   const cards = personCards.get(person.name) ?? []
-  const primary = [...cards].sort((left, right) => right.body.length - left.body.length)[0]
+  const primary = primaryCard(ledger)
   const body = primary?.body ?? ''
   const detail = {
     ...person,

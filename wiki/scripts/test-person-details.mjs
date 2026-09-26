@@ -173,13 +173,18 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
   const detailIndexByName = new Map(values.map(({ name }, index) => [name, index + 1]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const expectedMartial = new Map(Object.entries({
-    '동방사 방패': 'K115 K116 K119 K123 K128 K129 K460 K508 K556 K604 K652 K700 K748 K796 K844 K892 K940 K988',
+    '호위철벽진': 'K115 K116 K119 K123 K128 K129 K460 K508 K556 K604 K652 K700 K748 K796 K844 K892 K940 K988',
     '없음. 생업만.': 'K117 K131 K118 K125 K134 K136 K138 K139 K140 K141 K142 K428 K476 K524 K572 K620 K668 K716 K764 K812 K860 K908 K956',
     '수문호흡법': 'K121 K126 K127 K130 K133 K137 K444 K492 K540 K588 K636 K684 K732 K780 K828 K876 K924 K972 K143',
     '차륜망치': 'K132 K135 K120 K124',
     '기록단절법': 'K122',
   }).flatMap(([path, ids]) => ids.split(' ').map((id) => [id, path])))
   assert.equal(expectedMartial.size, 65)
+  const baeDetail = JSON.parse(await readFile(new URL('../public/person-details/person-0116.json', import.meta.url), 'utf8'))
+  assert.equal(baeDetail.sourceRoute, '/world/Cast-State-05#인물-배우진')
+  assert.equal(baeDetail.fields['생업'], '복구복무 명부·부품 대가 조정')
+  assert.match(baeDetail.biography, /^\*\*생애\.\*\* 2126년 세대\. 동방사 군벌 가문의 손\./u)
+  assert.match(baeDetail.sections['무공'], /^호위철벽진\./u)
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }]
     : [])
@@ -210,7 +215,7 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-05#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(동방사 방패|수문호흡법|차륜망치|기록단절법|없음\. 생업만\.)/u)?.[1]
+    const martial = martialText.match(/무공\.\s*(호위철벽진|수문호흡법|차륜망치|기록단절법|없음\. 생업만\.)/u)?.[1]
     assert.equal(martial, expectedMartial.get(id), id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
