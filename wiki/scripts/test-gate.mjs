@@ -92,8 +92,8 @@ test('nine canonical school names and aliases match the private ledger', () => {
   assert.ok(table)
   assert.equal(table.rows.length, 9)
   assert.deepEqual(table.rows.map((row) => [row[0].ko, row[1].ko]), ledger.martialSchools.map(({ formalName, alias }) => [formalName, alias]))
-  assert.equal(ledger.martialBranch.name, '개방 손')
-  assert.ok(!ledger.martialSchools.some(({ formalName }) => formalName === '개방 손'))
+  assert.equal(ledger.martialBranch.name, '개방 무공')
+  assert.ok(!ledger.martialSchools.some(({ formalName }) => formalName === '개방 무공'))
 })
 
 test('sixteen canonical state names and historical precursors match the private ledger', () => {
