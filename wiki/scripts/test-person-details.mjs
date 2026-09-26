@@ -731,6 +731,14 @@ test('Jo Jaepyo has the landing formation without an invented Marine Corps servi
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-조재표')
 })
 
+test('Lee Yeon has the escort formation without invented firearm access or service', async () => {
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1004.json', import.meta.url), 'utf8'))
+  assert.equal(detail.name, '이연')
+  assert.match(detail.sections['무공'], /^호위철벽진의 상륙호위진\./u)
+  assert.match(detail.sections['무공'], /총기 접근과 복무 이력은 미확인/u)
+  assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-이연')
+})
+
 test('K998 keeps his detail route after relocation to the First Branch Workshop', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0998.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '이일섭')
