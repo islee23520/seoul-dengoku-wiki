@@ -95,7 +95,8 @@ test('four reviewed subtitle pairs preserve their observed platforms in one map 
 test('all approved subtitles project one node without losing observed lines or movement neighbors', () => {
   const canonicalId = new Map(catalogData.data.station_aliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
   const original = JSON.parse(readFileSync(resolve(places, '../../../GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
-  const projectedEdges = new Set(projected.edges.map((edge) => [edge.a, edge.b].sort().join('|')))
+  const lines = JSON.parse(readFileSync(resolve(places, '../../wiki/scripts/official-seoul-lines.json'), 'utf8')).stations
+  const projectedEdges = new Set(projected.edges.flatMap((edge) => edge.lineIds.map((line) => `${[edge.a, edge.b].sort().join('|')}/${line}`)))
   for (const entry of catalogData.data.station_aliases) {
     assert.deepEqual(projected.stations.filter((station) => station.id === entry.id).map((station) => station.memberIds), [[entry.id, ...entry.aliases]])
     assert.ok(entry.aliases.every((alias) => !projected.stations.some((station) => station.id === alias)))
@@ -108,7 +109,9 @@ test('all approved subtitles project one node without losing observed lines or m
   for (const edge of original.edges) {
     const a = canonicalId.get(edge.a) ?? edge.a
     const b = canonicalId.get(edge.b) ?? edge.b
-    if (a !== b) assert.ok(projectedEdges.has([a, b].sort().join('|')), `${edge.a}/${edge.b}`)
+    if (a !== b) for (const line of (lines[edge.a] ?? []).filter((id) => lines[edge.b]?.includes(id))) {
+      assert.ok(projectedEdges.has(`${[a, b].sort().join('|')}/${line}`), `${edge.a}/${edge.b}/${line}`)
+    }
   }
   assert.deepEqual(projected.stations.filter((station) => station.id.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
 })
