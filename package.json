@@ -11,6 +11,8 @@
     "test:links": "node scripts/check-links.mjs",
     "test:lore-links": "node --test scripts/test-lore-links.mjs",
     "test:contract": "node scripts/check-contract.mjs",
+    "test:artifacts": "node --test scripts/test-artifact-allowlist.mjs",
+    "check:artifacts": "node scripts/check-artifact-allowlist.mjs",
     "test:admission": "node --test scripts/test-catalog-admission.mjs",
     "test:gate": "node --test scripts/test-gate.mjs",
     "test:states": "node --test scripts/test-state-routes.mjs",
