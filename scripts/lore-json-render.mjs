@@ -3,6 +3,8 @@
 // enter it through this renderer instead of hand-kept .md files.
 import { posix } from 'node:path'
 
+const headingId = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
+
 const leafRuns = (leaf) => (typeof leaf === 'string' ? [{ text: leaf }] : leaf)
 
 function linkTarget(run, fromDir, targetFile) {
@@ -31,7 +33,15 @@ function renderNode(node, locale, context) {
   switch (node.kind) {
     case 'heading': {
       const heading = `${'#'.repeat(node.depth)} ${renderLeaf(node.text[locale], context)}`
-      return /-xt0[1-5]-/u.test(node.anchor ?? '') ? `<a id="${node.anchor}"></a>\n\n${heading}` : heading
+      const legacy = /-xt0[1-5]-/u.test(node.anchor ?? '') ? [node.anchor] : []
+      const aliases = [...legacy, ...(node.publicAnchors ?? [])]
+      const natural = headingId(leafRuns(node.text[locale]).map((run) => run.text).join(''))
+      const markup = aliases.filter((alias) => alias !== natural && !context.ids.has(alias)).map((alias) => {
+        if (!/^[\p{L}\p{N}_-]+$/u.test(alias)) throw new Error(`${node.anchor}: unsafe public anchor ${alias}`)
+        context.ids.add(alias)
+        return `<a id="${alias}"></a>`
+      })
+      return markup.length ? `${markup.join('\n')}\n\n${heading}` : heading
     }
     case 'paragraph':
       return renderLeaf(node.text[locale], context)
@@ -57,6 +67,13 @@ function renderNode(node, locale, context) {
 // targetFile(domain, slug) returns the repository path a lore link points at, e.g. 'lore/culture/Martial-Paths.md'.
 export function renderLoreMarkdown(document, locale, targetFile = (domain, slug) => `lore/${domain === 'root' ? '' : `${domain}/`}${slug}.md`) {
   const fromDir = document.domain === 'root' ? 'lore' : `lore/${document.domain}`
-  const context = { fromDir, targetFile }
+  const aliases = new Set()
+  for (const node of document.content) for (const alias of node.publicAnchors ?? []) {
+    if (aliases.has(alias)) throw new Error(`${node.anchor}: duplicate public anchor ${alias}`)
+    aliases.add(alias)
+  }
+  const ids = new Set(document.content.filter((node) => node.kind === 'heading')
+    .map((node) => headingId(leafRuns(node.text[locale]).map((run) => run.text).join(''))))
+  const context = { fromDir, targetFile, ids }
   return `${document.content.map((node) => renderNode(node, locale, context)).join('\n\n')}\n`
 }

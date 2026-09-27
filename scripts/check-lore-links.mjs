@@ -1,9 +1,10 @@
 import { readFile, readdir, stat } from 'node:fs/promises'
-import { basename, dirname, extname, join, resolve } from 'node:path'
+import { basename, dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
+import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 const repo = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const lore = resolve(repo, 'lore')
@@ -22,9 +23,12 @@ async function collect(dir) {
 }
 const generated = resolve(repo, 'src/generated/world')
 const headingCache = new Map()
+const privatePages = new Set(['Cast-Profile-Contract', 'Cast-Registration-Template', 'Random-Cast-Roster'])
 async function anchors(path) {
   if (headingCache.has(path)) return headingCache.get(path)
-  const text = await readFile(path, 'utf8')
+  const text = extname(path) === '.json'
+    ? renderLoreMarkdown(JSON.parse(await readFile(path, 'utf8')), 'ko')
+    : await readFile(path, 'utf8')
   const ids = new Set()
   walk(parse(text), (node) => {
     if (node.type === 'heading') ids.add(slug(plain(node)))
@@ -43,8 +47,19 @@ async function anchors(path) {
 
 export async function loreLinkFailures() {
   files.length = 0
+  headingCache.clear()
   await collect(lore)
   const failures = []
+  async function targetFor(path) {
+    if (extname(path) === '.md') {
+      const json = path.slice(0, -3) + '.json'
+      if (await exists(json)) {
+        const value = JSON.parse(await readFile(json, 'utf8'))
+        if (Array.isArray(value.content) && value.domain) return json
+      }
+    }
+    return path
+  }
   async function check(href, source) {
     if (!href || /^(?:https?:|mailto:|git:|\/gdd\/|\/ui-)/.test(href)) return
     const [rawPath, rawHash] = href.split('#', 2)
@@ -74,9 +89,10 @@ export async function loreLinkFailures() {
     let path, hash
     try { path = decodeURIComponent(rawPath); hash = rawHash ? decodeURIComponent(rawHash) : '' }
     catch { failures.push(`${source}: invalid encoding ${href}`); return }
-    const target = path ? resolve(dirname(source), path) : source
+    const target = await targetFor(path ? resolve(dirname(source), path) : source)
+    if (extname(source) === '.json' && privatePages.has(basename(target, extname(target)))) { failures.push(`${source}: private ${href}`); return }
     if (!(await exists(target))) { failures.push(`${source}: missing ${href}`); return }
-    if (hash && extname(target) === '.md' && !(await anchors(target)).has(hash)) failures.push(`${source}: missing anchor ${href}`)
+    if (hash && ['.md', '.json'].includes(extname(target)) && !(await anchors(target)).has(hash)) failures.push(`${source}: missing anchor ${href}`)
   }
   for (const file of files) {
     if (file.endsWith('.md')) {
@@ -91,7 +107,7 @@ export async function loreLinkFailures() {
         if (!value || typeof value !== 'object') return
         if (value.link?.domain && value.link?.slug && value.link.domain !== 'gdd') {
           const { domain, slug: name, anchor } = value.link
-          references.push({ href: `${domain === 'root' ? '../' : `../${domain}/`}${name}.md${anchor ? `#${anchor}` : ''}`, source: file })
+          references.push({ href: relative(dirname(file), resolve(lore, domain === 'root' ? '' : domain, `${name}.md`)) + (anchor ? `#${anchor}` : ''), source: file })
         }
         if (typeof value.href === 'string') references.push({ href: value.href, source: file })
         for (const [key, child] of Object.entries(value)) {
