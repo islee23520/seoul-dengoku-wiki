@@ -72,4 +72,17 @@ test('default mode checks changed files plus the migration ledger; strict mode f
   assert.match(strict.stderr, /^E_UNMIGRATED: lore\/World-Narrative-Atlas\.md: /mu)
   assert.doesNotMatch(strict.stderr, /E_UNMIGRATED: lore\/(?:[^/\n]+\/)*(?:AGENTS|AUTHORING-JSON)\.md/u)
   assert.doesNotMatch(strict.stderr, /E_UNMIGRATED: lore\/ailments\/Ailments\.md/u)
+  // Task 10c exceptions stay Markdown; the glossary still has to become a JSON authoring document.
+  for (const path of ['lore/README.md', 'lore/characters/Cast-Profile-Contract.md', 'lore/characters/Cast-Registration-Template.md', 'lore/characters/Random-Cast-Roster.md', 'lore/editorial/Naming-Ledger.md', 'lore/editorial/Writing-Rules.md', 'lore/name-pools/cast-backfill-draft.md', 'lore/name-pools/hangnyeol-schema.md', 'lore/places/Station-Alias-Candidates.md', 'lore/regions/README.md', 'lore/regions/sources/observed-levels-join.md']) {
+    assert.ok(!strict.stderr.includes(`E_UNMIGRATED: ${path}:`), path)
+  }
+  assert.match(strict.stderr, /^E_UNMIGRATED: lore\/Glossary\.md: /mu)
+  // The exception list names files; a new Markdown file anywhere under lore is still reported.
+  const stray = join(root, 'lore/editorial/Unlisted-Note.md')
+  writeFileSync(stray, '# note\n')
+  try {
+    assert.match(run('--strict').stderr, /^E_UNMIGRATED: lore\/editorial\/Unlisted-Note\.md: /mu)
+  } finally {
+    rmSync(stray)
+  }
 })

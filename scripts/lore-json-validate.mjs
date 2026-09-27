@@ -11,6 +11,21 @@ const loreRoot = join(root, 'lore')
 const schemaRunner = join(root, 'scripts/lore-json-schema.py')
 const excluded = new Set(['M007', 'B017', 'B020'])
 const privatePages = new Set(['Cast-Profile-Contract', 'Cast-Registration-Template', 'Random-Cast-Roster'])
+// Operating guidance, private contracts and templates, and unapproved drafts stay Markdown (task 10c ledger).
+// Every other lore Markdown file must have a JSON authoring document.
+const allowedMarkdown = new Set([
+  'lore/README.md',
+  'lore/characters/Cast-Profile-Contract.md',
+  'lore/characters/Cast-Registration-Template.md',
+  'lore/characters/Random-Cast-Roster.md',
+  'lore/editorial/Naming-Ledger.md',
+  'lore/editorial/Writing-Rules.md',
+  'lore/name-pools/cast-backfill-draft.md',
+  'lore/name-pools/hangnyeol-schema.md',
+  'lore/places/Station-Alias-Candidates.md',
+  'lore/regions/README.md',
+  'lore/regions/sources/observed-levels-join.md',
+])
 const locales = ['en', 'ko']
 
 function leaves(node) {
@@ -150,6 +165,7 @@ function unmigratedMarkdown(authoring) {
   return loreFiles()
     .filter((path) => path.endsWith('.md') && !path.endsWith('/AGENTS.md') && path !== 'lore/AUTHORING-JSON.md')
     .filter((path) => !migrated.has(path.replace(/\.md$/u, '.json')))
+    .filter((path) => !allowedMarkdown.has(path))
 }
 
 function report(failures, summary) {
