@@ -113,9 +113,22 @@ export default function OpeningTerritoryMap() {
   const mapRef = useRef<SVGSVGElement>(null)
   const textMeshRef = useRef<HTMLDivElement>(null)
   const requestedRegion = params.get('region')
+  // The WebGL label scene depends only on the data; panning and zooming move its camera through these refs.
+  const boxRef = useRef<Box | null>(null)
+  const drawRef = useRef<(() => void) | null>(null)
+  const pendingBox = useRef<Box | null>(null)
+  const frameRequest = useRef(0)
+  const handlers = useRef<{ chooseRegion: (region: Region) => void; chooseState: (state: State) => void; selectStation: (station: DisplayStation) => void } | null>(null)
 
   useEffect(() => {
-    if (!data || !box || !water || !textMeshRef.current) return
+    boxRef.current = box
+    drawRef.current?.()
+  }, [box])
+
+  useEffect(() => () => cancelAnimationFrame(frameRequest.current), [])
+
+  useEffect(() => {
+    if (!data || !water || !textMeshRef.current) return
     const host = textMeshRef.current
     const scene = new THREE.Scene()
     const camera = new THREE.OrthographicCamera()
@@ -187,8 +200,9 @@ export default function OpeningTerritoryMap() {
     }
     setLabelBoxes(placed.map(({ id, x, y, width, height }) => ({ id, x: x - width / 2, y: y - height / 2, width, height })))
     const draw = () => {
+      const box = boxRef.current
       const { width, height } = host.getBoundingClientRect()
-      if (!width || !height) return
+      if (!box || !width || !height) return
       setMapSize((size) => size.width === width && size.height === height ? size : { width, height })
       renderer.setSize(width, height)
       const aspect = width / height
@@ -203,11 +217,12 @@ export default function OpeningTerritoryMap() {
       camera.updateProjectionMatrix()
       renderer.render(scene, camera)
     }
+    drawRef.current = draw
     const resize = new ResizeObserver(draw)
     resize.observe(host)
     draw()
-    return () => { resize.disconnect(); meshes.forEach((mesh) => mesh.geometry.dispose()); textures.forEach((texture) => texture.dispose()); scene.children.forEach((child) => (child as THREE.Mesh).material && ((child as THREE.Mesh).material as THREE.Material).dispose()); renderer.dispose(); host.removeChild(renderer.domElement) }
-  }, [data, box, water])
+    return () => { drawRef.current = null; resize.disconnect(); meshes.forEach((mesh) => mesh.geometry.dispose()); textures.forEach((texture) => texture.dispose()); scene.children.forEach((child) => (child as THREE.Mesh).material && ((child as THREE.Mesh).material as THREE.Material).dispose()); renderer.dispose(); host.removeChild(renderer.domElement) }
+  }, [data, water])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -261,13 +276,52 @@ export default function OpeningTerritoryMap() {
   const states = useMemo(() => new Map(data?.states.map((state, index) => [state.id, { ...state, color: colors[index] }]) ?? []), [data])
   const stations = useMemo(() => presentationStations(data?.stations ?? []), [data])
   const borders = useMemo(() => regionBorders(data?.regions ?? []), [data])
+  const projectToMap = useMemo(() => data ? (east: number, north: number): [number, number] => [
+    (east - data.projection.minEast) / (data.projection.maxEast - data.projection.minEast) * data.width,
+    (data.projection.maxNorth - north) / (data.projection.maxNorth - data.projection.minNorth) * data.height,
+  ] : null, [data])
+  const regionPoints = useMemo(() => new Map((data?.regions ?? []).map((region) => [region.id, [...region.path.matchAll(/[ML](-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/gu)].map((match) => [Number(match[1]), Number(match[2])])])), [data])
+  const flagAnchors = useMemo(() => new Map((data?.states ?? []).map((state) => {
+    const held = (data?.regions ?? []).filter((region) => region.polities.includes(state.id)).map((region) => regionPoints.get(region.id) ?? [])
+    const candidates: [number, number][] = []
+    for (const distance of [55, 80, 110, 145, 190]) for (const [dx, dy] of [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [-1, 1], [1, -1], [-1, -1]]) candidates.push([state.labelX + dx * distance, state.labelY + dy * distance])
+    const anchor = candidates.find(([x, y]) =>
+      held.some((points) => insideRing([x, y], points)) &&
+      labelBoxes.every((label) => x < label.x - 28 || x > label.x + label.width + 28 || y < label.y - 24 || y > label.y + label.height + 24)
+    ) ?? [state.labelX, state.labelY] as [number, number]
+    return [state.id, anchor]
+  })), [data, regionPoints, labelBoxes])
+  // Everything drawn inside the SVG is independent of the viewport, so panning only changes its viewBox.
+  const svgLayers = useMemo(() => {
+    if (!data || !terrain || !relief || !water || !projectToMap) return null
+    const toMap = projectToMap
+    const peninsulaLayer = terrain.layers.find((entry) => entry.name === 'peninsula')!
+    const [e0, n0, e1, n1] = peninsulaLayer.bboxEPSG5179
+    const [px, py] = toMap(e0, n1)
+    const [pr, pb] = toMap(e1, n0)
+    const riverPaths = water.features.filter((feature) => feature.kind === 'line' && feature.tag.waterway === 'river')
+    const displayedRail = rail?.paths.filter((path) => selectedLine === 'all' || path.lineId === selectedLine) ?? []
+    return <>
+        <image href={relief} x={px} y={py} width={pr - px} height={pb - py} preserveAspectRatio="none" imageRendering="auto" />
+        {boundaries.map((boundary) => { const vassal = data.vassals.find((item) => item.city === boundary.city); return <path key={boundary.city} d={trace(boundary.geometry, toMap)} fill={vassal ? states.get(vassal.suzerain)?.color : 'none'} fillOpacity={vassal ? 0.55 : 0} stroke={vassal ? states.get(vassal.suzerain)?.color : 'none'} strokeWidth="3" vectorEffect="non-scaling-stroke" onClick={() => { if (vassal && !dragged.current) { setSelectedVassal(vassal.name); setDetailOpen(true) } }} /> })}
+        {data.regions.map((region) => <path key={region.id} d={region.path} className="territory-flat-region" data-region-id={region.id} data-state-id={region.polities[0]} role="button" tabIndex={0} aria-label={`${region.district} ${region.name} · ${states.get(region.polities[0])?.name ?? '영토'} 보기`} fill={states.get(region.polities[0])?.color ?? '#77858a'} fillOpacity={selectedId === region.id ? 0.95 : stateFilter === 'all' || region.polities.includes(stateFilter) ? 0.72 : 0.24} stroke="#35434b" strokeWidth="0.6" vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.chooseRegion(region) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handlers.current?.chooseRegion(region) } }} />)}
+        <path d={borders} className="territory-national-borders" fill="none" stroke="#18252d" strokeWidth="3.6" vectorEffect="non-scaling-stroke" pointerEvents="none" />
+        {riverPaths.map((feature) => <polyline key={feature.id} className="territory-flat-river" points={(feature.coordinates as number[][]).map(([east, north]) => toMap(east, north).join(',')).join(' ')} fill="none" stroke="#36a8c4" strokeWidth="2.4" vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
+        {showRail && displayedRail.map((path, index) => <polyline key={`metro-${index}`} className="territory-metro-line" data-line-id={path.lineId} points={path.points.map(([east, north]) => toMap(east, north).join(',')).join(' ')} fill="none" stroke={data.lines[path.lineId]?.color ?? '#d5e5e8'} strokeWidth={selectedLine === 'all' ? '2.8' : '4'} vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
+        {showRail && frame === 'peninsula' && northern && <path d={northern.paths.map((path) => path.points.map(([east, north], index) => `${index ? 'L' : 'M'}${toMap(east, north).join(',')}`).join(' ')).join(' ')} fill="none" stroke="#e7d397" strokeWidth="1.2" strokeDasharray="5 5" vectorEffect="non-scaling-stroke" pointerEvents="none" />}
+        {showRail && data.edges.flatMap((edge, index) => edge.lineIds.filter((id) => selectedLine === 'all' || selectedLine === id).map((id) => { const a = data.stations.find((station) => station.id === edge.a), b = data.stations.find((station) => station.id === edge.b); return a && b ? <line key={`seoul-${index}-${id}`} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke={data.lines[id]?.color ?? '#eee'} strokeWidth="3.2" vectorEffect="non-scaling-stroke" pointerEvents="none" /> : null }))}
+        {showRail && rail?.stations.filter((station) => station.lineIds.length > 1 && (selectedLine === 'all' || station.lineIds.includes(selectedLine))).map((station, index) => { const [x, y] = toMap(station.east, station.north); return <circle key={`transfer-${index}`} className="territory-transfer-marker" cx={x} cy={y} r="4.8" fill="#fff" stroke="#1d3038" strokeWidth="2.5" vectorEffect="non-scaling-stroke" onClick={() => { setRegionalStation(station); setSelectedStation(null); setSelectedId(null); setStateFilter('all'); setDetailOpen(true) }}><title>{station.name} · 환승역</title></circle> })}
+        {showRail && showStations && rail?.stations.filter((station) => !data.stations.some((seoul) => seoul.name === station.name) && (selectedLine === 'all' || station.lineIds.includes(selectedLine))).map((station, index) => { const [x, y] = toMap(station.east, station.north); return <circle key={`outer-${index}`} className="territory-regional-station" cx={x} cy={y} r="3.3" fill="#f6ecd0" stroke={data.lines[station.lineIds[0]]?.color ?? '#345'} strokeWidth="1.5" vectorEffect="non-scaling-stroke" onClick={() => { setRegionalStation(station); setSelectedStation(null); setSelectedId(null); setStateFilter('all'); setDetailOpen(true) }}><title>{station.name} · 광역철도</title></circle> })}
+        {showStations && stations.filter((station) => station.memberIds.some((id) => data.majorStationIds.includes(id)) && (selectedLine === 'all' || station.lineIds.includes(selectedLine))).map((station) => <g key={station.id} className="territory-flat-station" data-station-id={station.id} onClick={() => handlers.current?.selectStation(station)}><circle cx={station.x} cy={station.y} r={station.lineIds.length > 1 ? 6 : 4} fill="#fff" stroke={data.lines[station.lineIds[0]]?.color ?? '#264655'} strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{station.names.join(' · ')} · {station.lineIds.map((id) => data.lines[id]?.name).join(' · ')}</title></g>)}
+        {showLandmarks && data.landmarks.map((site) => <circle key={site.id} cx={site.x} cy={site.y} r="5" fill={states.get(site.holderId)?.color} stroke="#fff" strokeWidth="1.8" vectorEffect="non-scaling-stroke" onClick={() => { setSelectedLandmark(site.id); setDetailOpen(true) }}><title>{site.name} · {site.role}</title></circle>)}
+        {showVassals && data.vassals.map((vassal) => <g key={vassal.name} onClick={() => { setSelectedVassal(vassal.name); setDetailOpen(true) }}><circle cx={toMap(vassal.east, vassal.north)[0]} cy={toMap(vassal.east, vassal.north)[1]} r="8" fill={states.get(vassal.suzerain)?.color} stroke="#fff" strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{vassal.name} · {vassal.city}</title></g>)}
+        {data.states.map((state) => <g key={state.id} className="territory-flat-capital" data-capital-station-id={state.capitalStationId} onClick={() => handlers.current?.chooseState(state)}><circle cx={state.capitalX} cy={state.capitalY} r="7" fill={states.get(state.id)?.color} stroke="#fff" strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{state.id} {state.name} · 수도역 {state.capitalStationId}</title></g>)}
+    </>
+  }, [data, terrain, relief, water, projectToMap, boundaries, states, stations, borders, rail, northern, frame, showRail, showStations, showLandmarks, showVassals, selectedLine, selectedId, stateFilter])
   if (failed) return <p className="wiki-domain-label">영토 지도를 불러오지 못했습니다. 새로고침해 주세요.</p>
   if (!data || !terrain || !relief || !water || !box) return <div className="wiki-loading">서울 영토와 강줄기를 불러오고 있습니다.</div>
 
-  const toMap = (east: number, north: number): [number, number] => [
-    (east - data.projection.minEast) / (data.projection.maxEast - data.projection.minEast) * data.width,
-    (data.projection.maxNorth - north) / (data.projection.maxNorth - data.projection.minNorth) * data.height,
-  ]
+  const toMap = projectToMap!
   const peninsula = terrain.layers.find((entry) => entry.name === 'peninsula')!
   const [e0, n0, e1, n1] = peninsula.bboxEPSG5179
   const [px, py] = toMap(e0, n1)
@@ -283,6 +337,17 @@ export default function OpeningTerritoryMap() {
     setSelectedStation(null); setRegionalStation(null); setSelectedVassal(null); setSelectedLandmark(null); setDetailOpen(true)
   }
   const selectStation = (station: DisplayStation) => { setSelectedStation(station); setRegionalStation(null); setSelectedId(null); setStateFilter('all'); setSelectedVassal(null); setSelectedLandmark(null); setDetailOpen(true) }
+  handlers.current = { chooseRegion, chooseState, selectStation }
+  // Pointer and wheel events can arrive several times per frame; apply at most one viewport change per frame.
+  const scheduleBox = (next: Box) => {
+    pendingBox.current = next
+    if (frameRequest.current) return
+    frameRequest.current = requestAnimationFrame(() => {
+      frameRequest.current = 0
+      if (pendingBox.current) setBox(pendingBox.current)
+      pendingBox.current = null
+    })
+  }
   const onPointerDown = (event: PointerEvent<SVGSVGElement>) => { dragged.current = false; start.current = { x: event.clientX, y: event.clientY, box, moved: false } }
   const onPointerMove = (event: PointerEvent<SVGSVGElement>) => {
     const gesture = start.current
@@ -291,7 +356,7 @@ export default function OpeningTerritoryMap() {
     const dx = (event.clientX - gesture.x) / rect.width * gesture.box.width
     const dy = (event.clientY - gesture.y) / rect.height * gesture.box.height
     if (Math.hypot(event.clientX - gesture.x, event.clientY - gesture.y) > 5) { gesture.moved = true; dragged.current = true }
-    setBox({ ...gesture.box, x: gesture.box.x - dx, y: gesture.box.y - dy })
+    scheduleBox({ ...gesture.box, x: gesture.box.x - dx, y: gesture.box.y - dy })
   }
   const onPointerUp = () => { start.current = null }
   const onWheel = (event: WheelEvent<SVGSVGElement>) => {
@@ -300,9 +365,10 @@ export default function OpeningTerritoryMap() {
     const x = (event.clientX - rect.left) / rect.width
     const y = (event.clientY - rect.top) / rect.height
     const factor = event.deltaY > 0 ? 1.18 : 0.84
-    const width = Math.max(100, Math.min(pr - px, box.width * factor))
-    const height = box.height * width / box.width
-    setBox({ x: box.x + x * (box.width - width), y: box.y + y * (box.height - height), width, height })
+    const base = pendingBox.current ?? box
+    const width = Math.max(100, Math.min(pr - px, base.width * factor))
+    const height = base.height * width / base.width
+    scheduleBox({ x: base.x + x * (base.width - width), y: base.y + y * (base.height - height), width, height })
   }
   const zoom = (factor: number) => { const width = Math.max(100, Math.min(pr - px, box.width * factor)); const height = box.height * width / box.width; setBox({ x: box.x + (box.width - width) / 2, y: box.y + (box.height - height) / 2, width, height }) }
   const selected = data.regions.find((region) => region.id === selectedId)
@@ -311,22 +377,11 @@ export default function OpeningTerritoryMap() {
   const selectedLandmarkData = data.landmarks.find((landmark) => landmark.id === selectedLandmark)
   const selectedRegionalHolder = regionalStation && boundaries.find((boundary) => insideBoundary([regionalStation.east, regionalStation.north], boundary.geometry))
   const mapScale = Math.min(mapSize.width / box.width, mapSize.height / box.height)
-  const flagAnchor = (state: State): [number, number] => {
-    const held = data.regions.filter((region) => region.polities.includes(state.id))
-    const candidates: [number, number][] = []
-    for (const distance of [55, 80, 110, 145, 190]) for (const [dx, dy] of [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [-1, 1], [1, -1], [-1, -1]]) candidates.push([state.labelX + dx * distance, state.labelY + dy * distance])
-    return candidates.find(([x, y]) =>
-      held.some((region) => insideRing([x, y], [...region.path.matchAll(/[ML](-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/gu)].map((match) => [Number(match[1]), Number(match[2])]))) &&
-      labelBoxes.every((label) => x < label.x - 28 || x > label.x + label.width + 28 || y < label.y - 24 || y > label.y + label.height + 24)
-    ) ?? [state.labelX, state.labelY]
-  }
   const flagPosition = (x: number, y: number) => ({
     left: `${50 + (x - box.x - box.width / 2) * mapScale / mapSize.width * 100}%`,
     top: `${50 + (y - box.y - box.height / 2) * mapScale / mapSize.height * 100}%`,
   })
   const selectedSuzerain = data.vassals.find((vassal) => vassal.city === selectedRegionalHolder?.city)
-  const displayedRail = rail?.paths.filter((path) => selectedLine === 'all' || path.lineId === selectedLine) ?? []
-  const riverPaths = water.features.filter((feature) => feature.kind === 'line' && feature.tag.waterway === 'river')
   const stationDetail = selectedStation && underground?.stations[selectedStation.id]
 
   return <section className="territory-map-section" aria-labelledby="opening-territory-title">
@@ -343,24 +398,11 @@ export default function OpeningTerritoryMap() {
     <div className="territory-map-layout"><div className="territory-map-canvas territory-map-flat" data-flat-territory-map>
       <div className="territory-flat-controls" role="group" aria-label="지도 범위"><button type="button" onClick={frameSeoul} aria-pressed={frame === 'seoul'}>서울 전체</button><button type="button" onClick={framePeninsula} aria-pressed={frame === 'peninsula'}>한반도 보기</button><button type="button" onClick={() => zoom(0.8)}>줌인</button><button type="button" onClick={() => zoom(1.25)}>줌아웃</button></div>
       <svg ref={mapRef} className="territory-flat-svg" viewBox={`${box.x} ${box.y} ${box.width} ${box.height}`} role="img" aria-label="서울 국가 경계와 강줄기, 선택 가능한 역과 노선" onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onWheel={onWheel}>
-        <image href={relief} x={px} y={py} width={pr - px} height={pb - py} preserveAspectRatio="none" imageRendering="auto" />
-        {boundaries.map((boundary) => { const vassal = data.vassals.find((item) => item.city === boundary.city); return <path key={boundary.city} d={trace(boundary.geometry, toMap)} fill={vassal ? states.get(vassal.suzerain)?.color : 'none'} fillOpacity={vassal ? 0.55 : 0} stroke={vassal ? states.get(vassal.suzerain)?.color : 'none'} strokeWidth="3" vectorEffect="non-scaling-stroke" onClick={() => { if (vassal && !dragged.current) { setSelectedVassal(vassal.name); setDetailOpen(true) } }} /> })}
-        {data.regions.map((region) => <path key={region.id} d={region.path} className="territory-flat-region" data-region-id={region.id} data-state-id={region.polities[0]} role="button" tabIndex={0} aria-label={`${region.district} ${region.name} · ${states.get(region.polities[0])?.name ?? '영토'} 보기`} fill={states.get(region.polities[0])?.color ?? '#77858a'} fillOpacity={selectedId === region.id ? 0.95 : stateFilter === 'all' || region.polities.includes(stateFilter) ? 0.72 : 0.24} stroke="#35434b" strokeWidth="0.6" vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) chooseRegion(region) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); chooseRegion(region) } }} />)}
-        <path d={borders} className="territory-national-borders" fill="none" stroke="#18252d" strokeWidth="3.6" vectorEffect="non-scaling-stroke" pointerEvents="none" />
-        {riverPaths.map((feature) => <polyline key={feature.id} className="territory-flat-river" points={(feature.coordinates as number[][]).map(([east, north]) => toMap(east, north).join(',')).join(' ')} fill="none" stroke="#36a8c4" strokeWidth="2.4" vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
-        {showRail && displayedRail.map((path, index) => <polyline key={`metro-${index}`} className="territory-metro-line" data-line-id={path.lineId} points={path.points.map(([east, north]) => toMap(east, north).join(',')).join(' ')} fill="none" stroke={data.lines[path.lineId]?.color ?? '#d5e5e8'} strokeWidth={selectedLine === 'all' ? '2.8' : '4'} vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
-        {showRail && frame === 'peninsula' && northern && <path d={northern.paths.map((path) => path.points.map(([east, north], index) => `${index ? 'L' : 'M'}${toMap(east, north).join(',')}`).join(' ')).join(' ')} fill="none" stroke="#e7d397" strokeWidth="1.2" strokeDasharray="5 5" vectorEffect="non-scaling-stroke" pointerEvents="none" />}
-        {showRail && data.edges.flatMap((edge, index) => edge.lineIds.filter((id) => selectedLine === 'all' || selectedLine === id).map((id) => { const a = data.stations.find((station) => station.id === edge.a), b = data.stations.find((station) => station.id === edge.b); return a && b ? <line key={`seoul-${index}-${id}`} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke={data.lines[id]?.color ?? '#eee'} strokeWidth="3.2" vectorEffect="non-scaling-stroke" pointerEvents="none" /> : null }))}
-        {showRail && rail?.stations.filter((station) => station.lineIds.length > 1 && (selectedLine === 'all' || station.lineIds.includes(selectedLine))).map((station, index) => { const [x, y] = toMap(station.east, station.north); return <circle key={`transfer-${index}`} className="territory-transfer-marker" cx={x} cy={y} r="4.8" fill="#fff" stroke="#1d3038" strokeWidth="2.5" vectorEffect="non-scaling-stroke" onClick={() => { setRegionalStation(station); setSelectedStation(null); setSelectedId(null); setStateFilter('all'); setDetailOpen(true) }}><title>{station.name} · 환승역</title></circle> })}
-        {showRail && showStations && rail?.stations.filter((station) => !data.stations.some((seoul) => seoul.name === station.name) && (selectedLine === 'all' || station.lineIds.includes(selectedLine))).map((station, index) => { const [x, y] = toMap(station.east, station.north); return <circle key={`outer-${index}`} className="territory-regional-station" cx={x} cy={y} r="3.3" fill="#f6ecd0" stroke={data.lines[station.lineIds[0]]?.color ?? '#345'} strokeWidth="1.5" vectorEffect="non-scaling-stroke" onClick={() => { setRegionalStation(station); setSelectedStation(null); setSelectedId(null); setStateFilter('all'); setDetailOpen(true) }}><title>{station.name} · 광역철도</title></circle> })}
-        {showStations && stations.filter((station) => station.memberIds.some((id) => data.majorStationIds.includes(id)) && (selectedLine === 'all' || station.lineIds.includes(selectedLine))).map((station) => <g key={station.id} className="territory-flat-station" data-station-id={station.id} onClick={() => selectStation(station)}><circle cx={station.x} cy={station.y} r={station.lineIds.length > 1 ? 6 : 4} fill="#fff" stroke={data.lines[station.lineIds[0]]?.color ?? '#264655'} strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{station.names.join(' · ')} · {station.lineIds.map((id) => data.lines[id]?.name).join(' · ')}</title></g>)}
-        {showLandmarks && data.landmarks.map((site) => <circle key={site.id} cx={site.x} cy={site.y} r="5" fill={states.get(site.holderId)?.color} stroke="#fff" strokeWidth="1.8" vectorEffect="non-scaling-stroke" onClick={() => { setSelectedLandmark(site.id); setDetailOpen(true) }}><title>{site.name} · {site.role}</title></circle>)}
-        {showVassals && data.vassals.map((vassal) => <g key={vassal.name} onClick={() => { setSelectedVassal(vassal.name); setDetailOpen(true) }}><circle cx={toMap(vassal.east, vassal.north)[0]} cy={toMap(vassal.east, vassal.north)[1]} r="8" fill={states.get(vassal.suzerain)?.color} stroke="#fff" strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{vassal.name} · {vassal.city}</title></g>)}
-        {data.states.map((state) => <g key={state.id} className="territory-flat-capital" data-capital-station-id={state.capitalStationId} onClick={() => chooseState(state)}><circle cx={state.capitalX} cy={state.capitalY} r="7" fill={states.get(state.id)?.color} stroke="#fff" strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{state.id} {state.name} · 수도역 {state.capitalStationId}</title></g>)}
+        {svgLayers}
       </svg>
       <div ref={textMeshRef} className="territory-surface-text-mesh" aria-hidden="true" />
       <div className="territory-faction-flags" aria-label="16국 영토 깃발">
-        {data.states.map((state) => { const [x, y] = flagAnchor(state); return <button key={state.id} type="button" className="territory-faction-flag" data-territory-flag={state.id} aria-label={`${state.name} 영토 보기`} aria-pressed={stateFilter === state.id} style={{ ...flagPosition(x, y), borderColor: states.get(state.id)?.color }} onClick={() => chooseState(state)}><StateFlag stateId={state.id} /></button> })}
+        {data.states.map((state) => { const [x, y] = flagAnchors.get(state.id) ?? [state.labelX, state.labelY]; return <button key={state.id} type="button" className="territory-faction-flag" data-territory-flag={state.id} aria-label={`${state.name} 영토 보기`} aria-pressed={stateFilter === state.id} style={{ ...flagPosition(x, y), borderColor: states.get(state.id)?.color }} onClick={() => chooseState(state)}><StateFlag stateId={state.id} /></button> })}
       </div>
       {(selectedState || selectedStation || regionalStation || selectedLandmark || selectedVassal || selected) && <button type="button" className="territory-detail-toggle" aria-expanded={detailOpen} aria-controls="territory-detail-panel" onClick={() => setDetailOpen((open) => !open)}>{detailOpen ? '정보 접기' : '정보 펼치기'}</button>}
       {detailOpen && <aside id="territory-detail-panel" className="territory-detail" aria-label="선택 정보" aria-live="polite"><button type="button" className="territory-detail-close" onClick={() => setDetailOpen(false)}>정보 접기</button>
