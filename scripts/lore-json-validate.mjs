@@ -4,6 +4,7 @@ import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { coinedPhraseFailures, findBannedTerms, retiredFormFailures } from './gate.mjs'
+import { ledger } from './lore-json-validate-ledger.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const loreRoot = join(root, 'lore')
@@ -23,6 +24,34 @@ function texts(value) {
   return typeof value === 'string' ? [value] : Array.isArray(value) ? value.map((run) => run.text) : []
 }
 
+// EN is the primary locale and KO corresponds block by block: every localized leaf of every content block
+// carries both locales, and every block ID named in `data` is bound to a content block of the same document.
+function localeBindingFailures(document, label) {
+  const failures = []
+  const content = Array.isArray(document?.content) ? document.content : []
+  const blockIds = new Set(content.map((node) => node?.anchor))
+  content.forEach((node, index) => {
+    const block = node?.anchor ?? `content[${index}]`
+    const localized = node?.kind === 'rule' ? []
+      : node?.kind === 'list' ? node.items ?? []
+      : node?.kind === 'table' ? [...(node.columns ?? []), ...(node.rows ?? []).flat()]
+      : [node?.text]
+    for (const leaf of localized) {
+      for (const locale of locales) {
+        if (!leaf || typeof leaf !== 'object' || !(locale in leaf)) failures.push(`E_LOCALE: ${label}: ${block} is missing its ${locale} block`)
+      }
+    }
+  })
+  const visit = (value) => {
+    if (Array.isArray(value)) return value.forEach(visit)
+    if (!value || typeof value !== 'object') return
+    if (typeof value.anchor === 'string' && !blockIds.has(value.anchor)) failures.push(`E_ANCHOR: ${label}: data block id ${value.anchor} has no content block`)
+    Object.values(value).forEach(visit)
+  }
+  visit(document?.data)
+  return failures
+}
+
 function namingFailures(text, label, position) {
   return [...findBannedTerms(text), ...coinedPhraseFailures(text, label), ...retiredFormFailures(text, label)]
     .map((issue) => `E_NAMING: ${label}: ${position}: ${issue}`)
@@ -40,6 +69,7 @@ function validate(files) {
       continue
     }
     const label = relative(root, file)
+    failures.push(...localeBindingFailures(document, label))
     const domain = document?.domain
     const schema = spawnSync('python3', [schemaRunner, domain ?? ''], { input: JSON.stringify(document), encoding: 'utf8' })
     if (schema.error || schema.status !== 0) {
@@ -64,6 +94,7 @@ function validate(files) {
   }
   for (const { file, document } of documents.values()) {
     const label = relative(root, file)
+    if (document.tense.en !== document.tense.ko) failures.push(`E_TENSE: ${label}: tense en and ko differ (${document.tense.en}/${document.tense.ko})`)
     for (const locale of locales) {
       if (document.tense[locale] !== document.locales[locale].tense) failures.push(`E_TENSE: ${label}: ${locale} header differs from envelope`)
       for (const field of ['title', 'summary']) failures.push(...namingFailures(document.locales[locale][field], label, `${locale}.${field}`))
@@ -96,16 +127,64 @@ function validate(files) {
   return failures
 }
 
+function git(...args) {
+  const result = spawnSync('git', args, { cwd: root, encoding: 'utf8' })
+  if (result.error || result.status !== 0) throw new Error(`E_GIT: git ${args.join(' ')}: ${result.stderr?.trim() || result.error?.message}`)
+  return result.stdout.split('\n').filter(Boolean)
+}
+
+// An authoring document is a lore JSON object with the envelope's locale/content body; region data, name pools,
+// the glossary and the schema files are other data contracts. Unparseable lore JSON is kept so it fails as E_JSON.
+function isAuthoring(path) {
+  let value
+  try { value = JSON.parse(readFileSync(join(root, path), 'utf8')) } catch { return true }
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value) && !('$schema' in value)
+    && ('locales' in value || Array.isArray(value.content))
+}
+
+const loreFiles = () => git('ls-files', '--cached', '--others', '--exclude-standard', '--', 'lore')
+  .filter((path) => existsSync(join(root, path)))
+
+function unmigratedMarkdown(authoring) {
+  const migrated = new Set(authoring)
+  return loreFiles()
+    .filter((path) => path.endsWith('.md') && !path.endsWith('/AGENTS.md') && path !== 'lore/AUTHORING-JSON.md')
+    .filter((path) => !migrated.has(path.replace(/\.md$/u, '.json')))
+}
+
+function report(failures, summary) {
+  for (const failure of failures) console.error(failure)
+  if (failures.length) {
+    console.error(`FAIL: ${summary}, ${failures.length} failure(s)`)
+    process.exitCode = 1
+  } else console.log(`OK: ${summary}`)
+}
+
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const files = process.argv.slice(2).map((file) => resolve(file))
-  if (!files.length) {
-    console.error('Usage: node scripts/lore-json-validate.mjs <authoring.json> [...authoring.json]')
+  const args = process.argv.slice(2)
+  const strict = args.includes('--strict')
+  const baseIndex = args.indexOf('--base')
+  const base = baseIndex >= 0 ? args[baseIndex + 1] : 'origin/main'
+  const files = args.filter((arg, index) => arg !== '--strict' && (baseIndex < 0 || (index !== baseIndex && index !== baseIndex + 1)))
+  if (baseIndex >= 0 && !base) {
+    console.error('Usage: node scripts/lore-json-validate.mjs [--strict | --base <ref> | <authoring.json>...]')
     process.exitCode = 2
+  } else if (files.length) {
+    report(validate(files.map((file) => resolve(file))), `${files.length} lore JSON document(s)`)
+  } else if (strict) {
+    const authoring = loreFiles().filter((path) => path.endsWith('.json') && isAuthoring(path))
+    const unmigrated = unmigratedMarkdown(authoring)
+    report([
+      ...validate(authoring.map((path) => join(root, path))),
+      ...unmigrated.map((path) => `E_UNMIGRATED: ${path}: Markdown corpus file has no JSON authoring document`),
+    ], `strict: ${authoring.length} lore JSON document(s), ${unmigrated.length} unmigrated Markdown file(s)`)
   } else {
-    const failures = validate(files)
-    for (const failure of failures) console.error(failure)
-    if (failures.length) process.exitCode = 1
-    else console.log(`OK: ${files.length} lore JSON document(s)`)
+    const changed = [...new Set([
+      ...git('diff', '--name-only', '--diff-filter=d', base, '--', 'lore'),
+      ...git('ls-files', '--others', '--exclude-standard', '--', 'lore'),
+    ])].filter((path) => path.endsWith('.json') && isAuthoring(path))
+    const selected = [...new Set([...changed, ...ledger])]
+    report(validate(selected.map((path) => join(root, path))), `${selected.length} lore JSON document(s) (changed ${changed.length}, ledger ${ledger.length})`)
   }
 }
 
