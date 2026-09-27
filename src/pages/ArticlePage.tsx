@@ -9,6 +9,8 @@ import { wikiAnchorHref } from '../sharedCategories'
 
 const OpeningTerritoryMap = lazy(() => import('../components/OpeningTerritoryMap'))
 const TimelineOverview = lazy(() => import('../components/TimelineOverview'))
+// Mermaid is large, so it loads only when an article actually contains a diagram.
+const loadMermaid = () => import('mermaid')
 
 type WikiLocale = 'ko' | 'en'
 
@@ -131,8 +133,8 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
       <div className="wiki-article-grid">
         <div className="wiki-prose">
           {content.map((node, index) => node.node.type === 'table'
-            ? <TableViewport key={index} label={text.table}><DocumentContent content={[node]} locale={locale} resolveHref={resolveWikiContentHref} /></TableViewport>
-            : <DocumentContent key={index} content={[node]} locale={locale} resolveHref={resolveWikiContentHref} />)}
+            ? <TableViewport key={index} label={text.table}><DocumentContent content={[node]} locale={locale} resolveHref={resolveWikiContentHref} loadMermaid={loadMermaid} /></TableViewport>
+            : <DocumentContent key={index} content={[node]} locale={locale} resolveHref={resolveWikiContentHref} loadMermaid={loadMermaid} />)}
         </div>
 
         {sectionLinks.length > 0 && (

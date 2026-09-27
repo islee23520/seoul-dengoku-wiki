@@ -20,6 +20,7 @@
   },
   "assets": {
     "pattern": "^(.+)-[A-Za-z0-9_-]{8}\\.(?:js|css)$",
+    "libraryDirectory": "lib",
     "appChunks": [
       "CategoriesPage",
       "DocumentsPage",
@@ -29,6 +30,7 @@
       "TimelineOverview",
       "index",
       "peopleCatalog",
+      "rolldown-runtime",
       "world"
     ]
   },
