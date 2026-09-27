@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { Breadcrumbs, PageHeader, QueryControl } from '@seoul-dengoku/shared-web-ui'
 import { categoryIndex } from '../generated/categoryIndex'
+import { wikiAnchorHref } from '../sharedCategories'
 
 export default function CategoriesPage() {
   const { categoryId } = useParams()
@@ -17,19 +19,29 @@ export default function CategoriesPage() {
     : []
 
   return (
-    <article className="wiki-article" data-wiki-shell="react-official">
-      <header className="wiki-article-header">
-        <div>
-          <p className="wiki-domain-label">서울:전국 공식 위키 · 분류</p>
-          <h1>{selected ? selected.label : '분류'}</h1>
-        </div>
-        <span className="wiki-canon-badge">{selected ? `${selected.documents.length}개` : `${categoryIndex.categories.length}개 분류`}</span>
-      </header>
-      {selected ? <p className="category-summary">{selected.summary}</p> : null}
-      <label className="people-search">
-        <span>{selected ? '이 분류의 문서' : '분류 이름'}</span>
-        <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={selected ? '문서 제목' : '분류 찾기'} />
-      </label>
+    <article>
+      <Breadcrumbs
+        label="현재 위치"
+        resolveHref={wikiAnchorHref}
+        items={selected
+          ? [{ title: '대문', href: '/' }, { title: '분류', href: '/categories' }, { title: selected.label }]
+          : [{ title: '대문', href: '/' }, { title: '분류' }]}
+      />
+      <PageHeader
+        kicker="서울:전국 공식 위키 · 분류"
+        title={selected ? selected.label : '분류'}
+        badge={selected ? `${selected.documents.length}개` : `${categoryIndex.categories.length}개 분류`}
+      />
+      {selected ? <p className="wiki-category-lead">{selected.summary}</p> : null}
+      <QueryControl
+        id="category-query"
+        label={selected ? '이 분류의 문서' : '분류 이름'}
+        value={query}
+        onChange={setQuery}
+        placeholder={selected ? '문서 제목' : '분류 찾기'}
+        resultCount={selected ? documents.length : categories.length}
+        countLabel={(count) => `${count}건`}
+      />
       {selected ? (
         <>
           <p><Link to="/categories">모든 분류</Link></p>

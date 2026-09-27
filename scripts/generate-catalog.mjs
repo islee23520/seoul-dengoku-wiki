@@ -12,6 +12,7 @@ import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
 import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
+import { wikiPublicationManifest } from './publication-manifest.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -136,7 +137,7 @@ const firstExisting = async (candidates) => {
   throw new Error(`E_SOURCE_MISSING:${candidates.join('|')}`)
 }
 
-const outsideRoots = [resolve(repoRoot, '..'), resolve(repoRoot, '../..')]
+const outsideRoots = [process.env.SEOUL_KENSHI_ROOT, resolve(repoRoot, '..'), resolve(repoRoot, '../..')].filter(Boolean)
 const resolveOutside = (relativePath) => firstExisting([
   resolve(repoRoot, relativePath),
   ...outsideRoots.map((root) => resolve(root, relativePath)),
@@ -235,6 +236,7 @@ for (const domain of domains) {
       slug,
       route: `/${domain}/${slug === 'index' ? '' : slug}`,
       title: pagesBySlug.get(slug)?.value.locales?.ko?.title ?? normalizeTitle(markdown, slug),
+      summary: pagesBySlug.get(slug)?.value.locales?.ko?.summary ?? '',
       categories: categoriesBySlug.get(slug) ?? [],
       markdown,
       name: `${slug}.md`,
@@ -242,6 +244,7 @@ for (const domain of domains) {
   }
 }
 
+const publicationManifest = await wikiPublicationManifest({ loreRoot, documents, registry: categoryRegistry })
 const routeBySlug = new Map()
 for (const document of documents) {
   routeBySlug.set(`${document.domain}:${document.slug}`, document.route)
@@ -279,6 +282,7 @@ const lines = [
 ]
 
 await writeFile(resolve(generatedRoot, 'wikiCatalog.ts'), `${lines.join('\n')}\n`)
+await writeFile(resolve(generatedRoot, 'publication-manifest.json'), `${JSON.stringify(publicationManifest, null, 2)}\n`)
 const registeredIndex = categoryIndex(
   documents
     .map((document) => ({ slug: document.slug, route: document.route, title: document.title, categories: document.categories })),
