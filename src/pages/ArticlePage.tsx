@@ -48,23 +48,25 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
   const koreanDocument = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
   const alternate = (locale === 'ko' ? wikiEnglishCatalog : wikiCatalog).find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
   const [blocks, setBlocks] = useState<WikiBlock[] | null>(null)
-  const [loadFailed, setLoadFailed] = useState(false)
+  // Keyed by slug: a legacy slug that fails to load must not fail its redirect target on the next render.
+  const [failedSlug, setFailedSlug] = useState<string | null>(null)
+  const loadFailed = failedSlug === normalizedSlug
 
   useEffect(() => {
     let active = true
     const load = worldModules[locale][`${modulePrefix[locale]}${normalizedSlug}.json`]
     setBlocks(null)
-    setLoadFailed(false)
+    setFailedSlug(null)
     if (!load) {
-      setLoadFailed(true)
+      setFailedSlug(normalizedSlug)
       return () => { active = false }
     }
     void load().then((content) => {
       if (active) setBlocks(Array.isArray(content.blocks) ? content.blocks : null)
-      if (active && !Array.isArray(content.blocks)) setLoadFailed(true)
+      if (active && !Array.isArray(content.blocks)) setFailedSlug(normalizedSlug)
     }).catch((error: unknown) => {
       if (error instanceof Error) {
-        if (active) setLoadFailed(true)
+        if (active) setFailedSlug(normalizedSlug)
         console.error(error.message)
         return
       }
