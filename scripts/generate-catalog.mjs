@@ -721,7 +721,7 @@ const addPersonCards = (text, file, pattern) => {
     const body = text.slice(headings[index].index + headings[index][0].length, nextHeading >= 0 ? nextHeading : text.length).trim()
     const cards = personCards.get(name) ?? []
     const slug = file.replace('.md', '')
-    cards.push({ file: slug, body, primary: pagesBySlug.get(slug)?.value.primary_detail_names?.includes(name) ?? false })
+    cards.push({ file: slug, body, primary: pagesBySlug.get(slug)?.value.data?.primary_detail_names?.includes(name) ?? false })
     personCards.set(name, cards)
   }
 }
