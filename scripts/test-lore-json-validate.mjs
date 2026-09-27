@@ -62,10 +62,20 @@ test('atlas narrative nodes bind anchors and expose public aliases', () => {
       prose: [{ kind: 'paragraph', anchor: 'embedded-summary', text: { en: 'Example.', ko: '예시.' } }]
     })
     document.data.registry = undefined
+    // Owned prose may link a block of another document; that anchor is not a local block ID.
+    const annals = (anchor) => [{ text: 'record', link: { domain: 'chronology', slug: 'Century-Annals', anchor } }]
+    document.data.atlas.hostile_groups[0].prose[0].text = { en: annals('2069년-xt01-임진-제방-임시-검역소'), ko: annals('2069년-xt01-임진-제방-임시-검역소') }
     const file = join(dir, 'World-Narrative-Atlas.json')
     writeFileSync(file, JSON.stringify(document))
     const valid = run(file)
     assert.equal(valid.status, 0, valid.stderr)
+    document.data.atlas.hostile_groups[0].prose[0].text.en = annals('missing-annals-block')
+    writeFileSync(file, JSON.stringify(document))
+    const missing = run(file)
+    assert.equal(missing.status, 1, missing.stderr)
+    assert.match(missing.stderr, /E_LINK: .*chronology\/Century-Annals#missing-annals-block does not exist/)
+    assert.doesNotMatch(missing.stderr, /E_ANCHOR/)
+    document.data.atlas.hostile_groups[0].prose[0].text.en = 'Example.'
     document.data.atlas.hostile_groups[0].dossier_prose[0].publicAnchors = ['embedded-summary']
     writeFileSync(file, JSON.stringify(document))
     const duplicate = run(file)
@@ -185,7 +195,8 @@ test('default mode checks changed files plus the migration ledger; strict mode f
   assert.match(changed.stdout, /^OK: \d+ lore JSON document\(s\) \(changed \d+, ledger \d+\)/mu)
   const strict = run('--strict')
   assert.equal(strict.status, 1, strict.stdout)
-  assert.match(strict.stderr, /^E_UNMIGRATED: lore\/World-Narrative-Atlas\.md: /mu)
+  // The atlas chain (source plus its 34 projections) is migrated: none of its Markdown paths remains.
+  assert.doesNotMatch(strict.stderr, /E_UNMIGRATED: lore\/(?:World-Narrative-Atlas|Operating-Houses|Regional-Physical-AI-Arcs|Synthetic-Actors|World-Expansion-Index|World-Relation-Ledger|factions\/External-Theaters|bestiary\/Hostile-Ecology-Index|bestiary\/groups\/Hostile-Group-G\d{2})\.md/u)
   assert.doesNotMatch(strict.stderr, /E_UNMIGRATED: lore\/(?:[^/\n]+\/)*(?:AGENTS|AUTHORING-JSON)\.md/u)
   assert.doesNotMatch(strict.stderr, /E_UNMIGRATED: lore\/ailments\/Ailments\.md/u)
   // Task 10c exceptions stay Markdown; the glossary still has to become a JSON authoring document.

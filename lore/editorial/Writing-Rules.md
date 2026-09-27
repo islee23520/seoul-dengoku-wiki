@@ -8,7 +8,7 @@
 
 ## 정본과 서술
 
-- 영역별 로어 JSON을 작성 원본으로 삼고 같은 이름의 Markdown 본문은 의미·표·링크·앵커를 맞춘다. `lore/World-Narrative-Atlas.md`와 `lore/Glossary.md`처럼 Markdown이 원본인 자료는 각각의 계약을 따른다. 생성 투영물은 손으로 고치지 않는다. 근거와 생성 경계는 [`../AGENTS.md`](../AGENTS.md)와 [`../World-Narrative-Atlas.md`](../World-Narrative-Atlas.md)를 확인한다.
+- 영역별 로어 JSON을 작성 원본으로 삼고 같은 이름의 Markdown 본문은 의미·표·링크·앵커를 맞춘다. `lore/Glossary.md`처럼 Markdown이 원본인 자료는 각각의 계약을 따른다. 생성 투영물은 손으로 고치지 않는다. 근거와 생성 경계는 [`../AGENTS.md`](../AGENTS.md)와 [`../World-Narrative-Atlas.json`](../World-Narrative-Atlas.json)를 확인한다.
 - 한국어 산문은 연표의 인정 사실체로 쓴다. 날짜와 당사자, 행위와 그 결과를 확인된 기록에 연결한다. 3인칭 한다체로 한 문단에 한 인과를 담고, 없는 사건을 요약이나 부재 서술로 메우지 않는다. 검증되지 않은 진술은 사실로 확정하지 않는다. 다른 언어의 필드가 있어도 영어를 한국어 서술의 정본으로 삼지 않는다.
 - 비장한 고어식 이름과 근거 없는 조어를 만들지 않는다. '창세 구술', '창세 이야기', '구술로만', '창세의 첫 줄', '창세의 첫 급수협약'을 공개 산문에 쓰지 않는다. 실제 운전일지의 '첫 줄', 일반적인 구술 증언, 정당한 단어 '창세' 자체는 이 금지에 포함하지 않는다.
 
@@ -28,7 +28,7 @@
 - 미성년자의 성적 서사는 쓰지 않는다. 인물의 출처 상태와 공개 여부는 [`../characters/AGENTS.md`](../characters/AGENTS.md) 및 [`../characters/Cast-Profile-Contract.md`](../characters/Cast-Profile-Contract.md)를 따른다.
 - 새 인물·조직의 가치관 축은 비워 두지 않는다. 가치관 표에서 나이를 추정하거나 기존 인물 422명의 나이 칸을 채우지 않는다. 욕망과 취향은 가치관과 별도 축에 둔다.
 - 인물 가치관의 빈 칸과 열 축 순서는 [인물 등록 템플릿](../characters/Cast-Registration-Template.md)을 따른다. 조직 정책은 전쟁·이주민·급수·노동·기록·기술·교역·후계·결합 아홉 칸으로 기입한다. 빈 서식은 `정책: 전쟁 _ | 이주민 _ | 급수 _ | 노동 _ | 기록 _ | 기술 _ | 교역 _ | 후계 _ | 결합 _`이며 실제 선택지는 [가치관과 정책 척도](../culture/Values-and-Policy-Scales.md)의 표를 따른다.
-- 합성체는 전지적 존재가 아니며 무한한 에너지·완전한 장기 기억·전역 네트워크·담당 구역 밖 시설 통제 능력을 주지 않는다. 인물·국가·가문·외부 전구·합성체·적대 개체의 영구 ID를 다시 매기지 않는다. ID 범위와 합성체 제약의 근거는 [`../AGENTS.md`](../AGENTS.md) 및 [`../World-Narrative-Atlas.md`](../World-Narrative-Atlas.md)에 있다.
+- 합성체는 전지적 존재가 아니며 무한한 에너지·완전한 장기 기억·전역 네트워크·담당 구역 밖 시설 통제 능력을 주지 않는다. 인물·국가·가문·외부 전구·합성체·적대 개체의 영구 ID를 다시 매기지 않는다. ID 범위와 합성체 제약의 근거는 [`../AGENTS.md`](../AGENTS.md) 및 [`../World-Narrative-Atlas.json`](../World-Narrative-Atlas.json)에 있다.
 
 ## 신앙 문서의 집필 경계
 
@@ -88,17 +88,17 @@ event:
 
 ## 총람 무소속 컬렉션
 
-- `World-Narrative-Atlas.md`의 기계 등록부 JSON 울타리 뒤, 마지막 2단계 절에 `## 무소속`을 한 번 둔다. 이 절에는 `unaffiliated` 객체 하나를 담은 JSON 울타리만 둔다. 객체 키는 이미 발급된 K ID이며, 같은 키를 반복하지 않는다.
+- 무소속 인물은 `World-Narrative-Atlas.json`의 `data.atlas.unaffiliated` 객체에 둔다. 객체 키는 이미 발급된 K ID이며, 같은 키를 반복하지 않는다.
 - 각 행의 필수 필드는 `name`과 `character_id`(캐릭터 ID)다. 조재표와 이연은 발급 원장의 기존 alias를 보존한다. 별도 alias가 없는 사람은 이미 발급된 K ID를 캐릭터 ID로 쓴다. 이름으로 새 ID를 추측하거나 다시 발급하지 않는다.
 - 16국 행의 `state_id`, `state_name`, 직위·단계 필드는 무소속 행에 넣지 않는다. 인물 상세의 사실과 전기는 기존 카드가 맡는다. 외부 출처·동명 위험 인물도 안정 캐릭터 ID가 필수이며, 기존 국가 카드에 소급하여 새 필드를 붙이지 않는다.
 - `humans[]` K001–K422와 `person-id-candidates.json`의 `existingK`는 동결한다. 합산 인물 수는 동결 국가 422명 + 발급 원장과 `values-cast.json`의 S00에 대조한 무소속 수다. 전체에서 ID·이름·캐릭터 ID 중복을 거부하며, S00은 국가 목록에 추가하지 않는다. 이 부분 총람은 전체 1010명 카드의 대체 명부가 아니다.
-- React 카탈로그 생성은 `world-atlas-verify.mjs`의 합산 검증을 통과한 뒤 `World-Expansion-Index.md` 투영에 다섯 인물의 실제 `/people/person-####` 경로를 싣는다. 다른 투영의 산문과 기존 인물 상세는 고치지 않는다.
+- React 카탈로그 생성은 `world-atlas-verify.mjs`의 합산 검증을 통과한 뒤 `World-Expansion-Index.json` 투영에 다섯 인물의 실제 `/people/person-####` 경로를 싣는다. 다른 투영의 산문과 기존 인물 상세는 고치지 않는다.
 
 저장소 루트에서 위키의 동일 렌더러로 해당 Markdown 투영을 생성하고 바이트 검사를 한다. 부모 저장소의 구형 렌더러로 다른 투영을 일괄 덮어쓰지 않는다.
 
 ```bash
-node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.md --out lore --projection World-Expansion-Index.md
-node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.md --out lore --projection World-Expansion-Index.md --check
+node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.json --out lore --projection World-Expansion-Index.json
+node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.json --out lore --projection World-Expansion-Index.json --check
 npm run test:atlas
 npm run build
 ```

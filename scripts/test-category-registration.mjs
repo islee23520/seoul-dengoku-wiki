@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict'
+import { existsSync } from 'node:fs'
 import { readFile, readdir } from 'node:fs/promises'
 import { basename, join, resolve } from 'node:path'
 import test from 'node:test'
@@ -6,7 +7,6 @@ import { categoryIndex, loadCategoryRegistry, registeredCategories, registration
 
 const root = resolve(import.meta.dirname, '..')
 const registryPath = new URL('./category-registry.json', import.meta.url)
-
 const document = (categories = ['culture']) => ({
   domain: 'culture', slug: 'Sample', categories,
   locales: { ko: { title: '글', summary: '내용' }, en: { title: 'Article', summary: 'Content' } },
@@ -15,6 +15,18 @@ const document = (categories = ['culture']) => ({
     { kind: 'heading', anchor: '표제', depth: 1, text: { ko: '글', en: 'Article' } },
     { kind: 'paragraph', anchor: '본문', text: { ko: '내용', en: 'Content' } },
   ],
+})
+
+const atlasProjection = ({ slug, categories, domain = 'root', content }) => ({
+  ...document(categories),
+  domain, slug,
+  source: { kind: 'computed', refs: ['lore/World-Narrative-Atlas.json'] },
+  provenance: {
+    original_anchor: 'lore/World-Narrative-Atlas.json',
+    original_hash: 'a'.repeat(64),
+    history: ['world-atlas-projections.v2'],
+  },
+  content,
 })
 
 test('known categories register by domain, even without an explicit category', async () => {
@@ -35,6 +47,30 @@ test('unknown domains and categories cannot publish', async () => {
   assert.deepEqual(registrationErrors(document(['missing']), registry, 'Bad.json'), ['E_CATEGORY_UNKNOWN:Bad.json:missing'])
   assert.deepEqual(registrationErrors(document([]), registry, 'Bad.json'), ['E_CATEGORY_SHAPE:Bad.json'])
   assert.deepEqual(registrationErrors(document(['culture', 'culture']), registry, 'Bad.json'), ['E_CATEGORY_DUPLICATE:Bad.json'])
+})
+
+test('root atlas documents register under explicit known reader categories', async () => {
+  const registry = await loadCategoryRegistry(registryPath)
+  const page = { ...document(['overview']), domain: 'root', slug: 'World-Narrative-Atlas' }
+  assert.deepEqual(registeredCategories(page, registry), ['overview'])
+  assert.deepEqual(registrationErrors(page, registry, 'World-Narrative-Atlas.json'), [])
+  assert.deepEqual(registrationErrors({ ...page, categories: undefined }, registry, 'World-Narrative-Atlas.json'), [
+    'E_CATEGORY_SHAPE:World-Narrative-Atlas.json',
+  ])
+})
+
+test('verified atlas projections use their generator content contract instead of category filler', async () => {
+  const registry = await loadCategoryRegistry(registryPath)
+  const heading = [{ kind: 'heading', anchor: 'heading', depth: 1, text: { ko: '표제', en: 'Heading' } }]
+  const projection = atlasProjection({ slug: 'External-Theaters', categories: ['places'], domain: 'factions', content: heading })
+  assert.deepEqual(registrationErrors(projection, registry, 'External-Theaters.json'), [])
+  assert.deepEqual(registrationErrors({ ...projection, source: { kind: 'computed', refs: ['lore/Other.json'] } }, registry, 'External-Theaters.json'), [
+    'E_CATEGORY_CONTENT:External-Theaters.json:places:paragraph',
+    'E_CATEGORY_CONTENT:External-Theaters.json:places:table',
+  ])
+  assert.deepEqual(registrationErrors({ ...projection, content: [] }, registry, 'External-Theaters.json'), [
+    'E_CATEGORY_CONTENT:External-Theaters.json:atlas-projection:heading',
+  ])
 })
 
 test('the private category template enforces source, locale, and content shape', async () => {

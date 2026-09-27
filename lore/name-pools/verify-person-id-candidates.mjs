@@ -2,7 +2,7 @@
 //
 // 계약 (schema: wiki-person-id-candidates.v1)
 // - 후보 명부는 lore/name-pools/values-cast.json의 people[] 배열 순서를 그대로 유지한다 (이름 정렬 금지).
-// - 기존 신원 K001–K422은 lore/World-Narrative-Atlas.md의 "humans" 기계 등록부를 정본으로 읽는다.
+// - 기존 신원 K001–K422은 lore/World-Narrative-Atlas.json의 data.atlas.humans 등록부를 정본으로 읽는다.
 //   (사회 서사 배치 원장 투영은 2026-09-24에 폐기되어 대조하지 않는다.)
 // - inputSha256은 최종 values-cast.json 파일 바이트의 SHA-256이다.
 //   baseCommit은 생성 시점 HEAD 40자리 커밋이다.
@@ -27,7 +27,7 @@ import path from "node:path";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
 const VALUES_PATH = path.join(REPO, "lore", "name-pools", "values-cast.json");
-const ATLAS_PATH = path.join(REPO, "lore", "World-Narrative-Atlas.md");
+const ATLAS_PATH = path.join(REPO, "lore", "World-Narrative-Atlas.json");
 const CHARS_DIR = path.join(REPO, "lore", "characters");
 const CORRIDORS_PATH = path.join(CHARS_DIR, "Cast-Corridors-Index.md");
 const CORE_PATH = path.join(CHARS_DIR, "Core-Characters.md");
@@ -70,7 +70,7 @@ export function loadContext() {
   const valuesBytes = readFileSync(VALUES_PATH);
   const valuesJson = JSON.parse(valuesBytes.toString("utf8"));
   const atlasText = readFileSync(ATLAS_PATH, "utf8");
-  const humans = JSON.parse(extractJsonArrayOnce(atlasText, "humans"));
+  const humans = JSON.parse(atlasText).data.atlas.humans.map((h) => ({ ...h, name: h.name.ko }));
   const coreText = readFileSync(CORE_PATH, "utf8");
   const coreNames = [...coreText.matchAll(/^## (.+)$/gm)]
     .map((m) => m[1].trim())

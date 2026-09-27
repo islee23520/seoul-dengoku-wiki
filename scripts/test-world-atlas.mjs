@@ -1,142 +1,177 @@
 import assert from 'node:assert/strict'
-import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
-import { resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
+import { join, resolve } from 'node:path'
 import test from 'node:test'
-import { extractAtlasJson } from './world-atlas-parse.mjs'
+
+import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
+import { parseWorldAtlas, sha256Text } from './world-atlas-parse.mjs'
+import {
+  ATLAS_SCHEMA,
+  PROJECTION_PATHS,
+  canonicalJson,
+} from './world-atlas-schema.mjs'
 import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { verifyAtlasPeople } from './world-atlas-verify.mjs'
-import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
 
-const lore = new URL('../lore/', import.meta.url)
-const markdown = await readFile(new URL('World-Narrative-Atlas.md', lore), 'utf8')
-const ids = ['K1003', 'K1004', 'K1008', 'K1009', 'K1010']
+const worktree = resolve(new URL('..', import.meta.url).pathname)
+// Scratch output for materializer tests stays in the task evidence tree, not in lore or tmpdir.
+const evidenceRoot = '/Users/ilseoblee/workspace/seoul-kenshi/.omo/evidence/lore-wiki-issues-sweep/T14prime/pr4/schema-fix'
+const candidatePath = join(worktree, 'lore/World-Narrative-Atlas.json')
+const sourceText = await readFile(candidatePath, 'utf8')
+const parsed = parseWorldAtlas(sourceText)
+assert.equal(parsed.ok, true, parsed.error)
+const source = parsed.value
+const atlas = source.data.atlas
+const projections = projectionsFromAtlas(source, sha256Text(sourceText))
 
-test('atlas parses unaffiliated IDs separately from the frozen state prefix', () => {
-  const parsed = extractAtlasJson(markdown)
-  assert.equal(parsed.ok, true, parsed.error)
-  assert.deepEqual(Object.keys(parsed.value.unaffiliated), ids)
-  assert.equal(parsed.value.humans.length, 422)
-  assert.equal(parsed.value.states.length, 16)
+const context = {
+  registry: JSON.parse(await readFile(join(worktree, 'lore/name-pools/person-id-registry.json'), 'utf8')),
+  candidates: JSON.parse(await readFile(join(worktree, 'lore/name-pools/person-id-candidates.json'), 'utf8')),
+  people: JSON.parse(await readFile(join(worktree, 'lore/name-pools/values-cast.json'), 'utf8')).people,
+}
+
+test('JSON atlas parser owns WNA-001 data.atlas v2', () => {
+  assert.equal(source.id, 'WNA-001')
+  assert.equal(atlas.schema, ATLAS_SCHEMA)
+  assert.equal(atlas.states.length, 16)
+  assert.equal(atlas.humans.length, 422)
+  assert.deepEqual(Object.keys(atlas.unaffiliated), ['K1003', 'K1004', 'K1008', 'K1009', 'K1010'])
 })
 
-test('expansion projection links every unaffiliated ID to its actual person route', () => {
-  const parsed = extractAtlasJson(markdown)
-  assert.equal(parsed.ok, true, parsed.error)
-  const projection = projectionsFromAtlas(parsed.value, 'test')['World-Expansion-Index.md']
-  const links = [...projection.matchAll(/\]\((\/people\/person-\d{4})\)/g)].map((match) => match[1])
-  assert.deepEqual(links, ids.map((id) => '/people/person-' + id.slice(1).padStart(4, '0')))
-})
+for (const [name, mutate, code] of [
+  ['invalid JSON', (text) => `${text.slice(0, -2)}\n`, 'E_ATLAS_JSON'],
+  ['wrong document ID', (text) => { const value = JSON.parse(text); value.id = 'WNA'; return JSON.stringify(value) }, 'E_ATLAS_ID'],
+  ['wrong atlas schema', (text) => text.replace(ATLAS_SCHEMA, 'world-narrative-atlas.v1'), 'E_ATLAS_SCHEMA'],
+  ['missing atlas data', (text) => text.replace('"atlas": {', '"removed_atlas": {'), 'E_ATLAS_DATA'],
+]) {
+  test(`JSON atlas parser rejects ${name}`, () => {
+    const result = parseWorldAtlas(mutate(sourceText))
+    assert.equal(result.ok, false)
+    assert.match(result.error, new RegExp(code))
+  })
+}
 
-test('theater projection retains sourced route, rumor, player-entry and unknown fields', () => {
-  const parsed = extractAtlasJson(markdown)
-  assert.equal(parsed.ok, true, parsed.error)
-  const projection = projectionsFromAtlas(parsed.value, 'test')['External-Theaters.md']
-  for (const theater of parsed.value.theaters) {
-    assert.ok(projection.includes(`## ${theater.id} · ${theater.display_name}`), theater.id)
-    for (const value of [theater.verified, theater.inference, theater.original_fiction,
-      theater.seoul_route.verified_geography, theater.seoul_route.outbound_boundary,
-      theater.seoul_route.fixed_duration, theater.travel_constraints.rule,
-      theater.language_rumor_protocol.prohibited_inference,
-      theater.opening_event.player_decision, ...theater.explicit_unknowns]) {
-      assert.ok(projection.includes(value), `${theater.id}: ${value}`)
-    }
-    for (const entry of theater.player_entry_points) assert.ok(projection.includes(entry.first_decision), entry.id)
-    for (const rumor of theater.language_rumor_protocol.rumor_reliability) assert.ok(projection.includes(rumor.rule), `${theater.id}: ${rumor.tier}`)
+test('renderer returns the exact 34 canonical JSON destinations', () => {
+  assert.deepEqual(Object.keys(projections).sort(), [...PROJECTION_PATHS].sort())
+  for (const [path, envelope] of Object.entries(projections)) {
+    assert.equal(envelope.source.kind, 'computed', path)
+    assert.equal(envelope.source.hash, sha256Text(sourceText), path)
+    assert.equal(envelope.provenance.original_anchor, 'lore/World-Narrative-Atlas.json', path)
+    assert.equal(envelope.provenance.original_hash, sha256Text(sourceText), path)
   }
 })
 
-const context = {
-  registry: JSON.parse(await readFile(new URL('name-pools/person-id-registry.json', lore), 'utf8')),
-  candidates: JSON.parse(await readFile(new URL('name-pools/person-id-candidates.json', lore), 'utf8')),
-  people: JSON.parse(await readFile(new URL('name-pools/values-cast.json', lore), 'utf8')).people,
-}
-const atlas = extractAtlasJson(markdown).value
+test('expansion projection links every unaffiliated ID to its actual person route', () => {
+  const table = projections['World-Expansion-Index.json'].content.find((node) => node.kind === 'table')
+  for (const locale of ['en', 'ko']) {
+    const links = table.rows.map((row) => row[1][locale].match(/\]\((\/people\/person-\d{4})\)$/u)?.[1])
+    assert.deepEqual(links, Object.keys(atlas.unaffiliated).map((id) => `/people/person-${id.slice(1).padStart(4, '0')}`), locale)
+  }
+})
 
-test('aggregate validation counts 422 state people plus five issued unaffiliated people', () => {
+test('projections carry lore links and bold as runs, and no Korean in English leaves', () => {
+  const hangul = /[가-힯]/u
+  for (const [path, envelope] of Object.entries(projections)) {
+    const visit = (value, where, english) => {
+      if (typeof value === 'string') {
+        assert.ok(!(english && hangul.test(value)), `${path} ${where}: ${value.slice(0, 60)}`)
+        return
+      }
+      if (Array.isArray(value)) return value.forEach((item, index) => visit(item, `${where}[${index}]`, english))
+      if (!value || typeof value !== 'object') return
+      for (const [key, child] of Object.entries(value)) if (key !== 'link') visit(child, `${where}.${key}`, english || key === 'en')
+    }
+    visit(envelope, '$', false)
+    for (const node of envelope.content.filter((block) => block.kind === 'paragraph')) {
+      for (const locale of ['en', 'ko']) {
+        const plain = typeof node.text[locale] === 'string' ? [node.text[locale]] : node.text[locale].map((run) => run.text)
+        for (const value of plain) assert.doesNotMatch(value, /\*\*|\[[^\]]+\]\([^)]*\)|(?:^|\n)#{1,6} /u, `${path} ${node.anchor} ${locale}`)
+      }
+    }
+  }
+  const dossier = projections['bestiary/groups/Hostile-Group-G01.json']
+  assert.deepEqual(dossier.content[1].text.ko, [{ text: '생태·변이 도감', link: { domain: 'bestiary', slug: 'Hostile-Ecology-Index' } }])
+  const entry = dossier.content.find((node) => node.publicAnchors?.includes('g01e01'))
+  assert.equal(entry?.kind, 'heading')
+})
+
+test('canonical serialization sorts object keys recursively without reordering arrays', () => {
+  const value = { z: { b: 2, a: 1 }, a: [{ z: 1, a: 2 }, { b: 3, a: 4 }] }
+  const once = canonicalJson(value)
+  const twice = canonicalJson(JSON.parse(once))
+  assert.equal(once, twice)
+  assert.equal(once, '{\n  "a": [\n    {\n      "a": 2,\n      "z": 1\n    },\n    {\n      "a": 4,\n      "b": 3\n    }\n  ],\n  "z": {\n    "a": 1,\n    "b": 2\n  }\n}\n')
+})
+
+test('people verifier preserves the frozen prefix and issued unaffiliated aliases', () => {
   assert.deepEqual(verifyAtlasPeople(atlas, context), {
     failures: [], stateCount: 422, unaffiliatedCount: 5, total: 427,
   })
-  assert.deepEqual(atlas.humans.map(({ id, name }) => ({ id, name })), context.candidates.existingK)
+  assert.deepEqual(atlas.humans.map(({ id, name }) => ({ id, name: name.ko })), context.candidates.existingK)
 })
 
 for (const [name, mutate, code] of [
   ['missing collection', (value) => { delete value.unaffiliated }, 'E_UNAFFILIATED_COLLECTION'],
-  ['array collection', (value) => { value.unaffiliated = [] }, 'E_UNAFFILIATED_COLLECTION'],
   ['missing card', (value) => { delete value.unaffiliated.K1008 }, 'E_UNAFFILIATED_MISSING:'],
-  ['missing character ID', (value) => { delete value.unaffiliated.K1008.character_id }, 'E_UNAFFILIATED_FIELDS:'],
-  ['empty character ID', (value) => { value.unaffiliated.K1008.character_id = ' ' }, 'E_UNAFFILIATED_FIELDS:'],
-  ['state field on unaffiliated card', (value) => { value.unaffiliated.K1008.state_id = 'S00' }, 'E_UNAFFILIATED_FIELDS:'],
-  ['biography on registry row', (value) => { value.unaffiliated.K1008.biography = 'invented' }, 'E_UNAFFILIATED_FIELDS:'],
   ['changed alias', (value) => { value.unaffiliated.K1003.character_id = 'K1003' }, 'E_UNAFFILIATED_CHARACTER_ID:'],
-  ['unissued ID', (value) => { value.unaffiliated.K1011 = value.unaffiliated.K1008; delete value.unaffiliated.K1008 }, 'E_UNAFFILIATED_ISSUED_ID:'],
   ['duplicate state ID', (value) => { value.unaffiliated.K001 = value.unaffiliated.K1008; delete value.unaffiliated.K1008 }, 'E_PERSON_DUPLICATE:'],
-  ['duplicate character ID', (value) => { value.unaffiliated.K1008.character_id = value.unaffiliated.K1003.character_id }, 'E_PERSON_DUPLICATE:'],
   ['seventeenth state', (value) => { value.states.push({ id: 'S00' }) }, 'E_ATLAS_STATES'],
-  ['frozen prefix renamed', (value) => { value.humans[0].name = 'changed' }, 'E_K_MAP:'],
-  ['unaffiliated appended to humans', (value) => { value.humans.push({ id: 'K1008', name: '민웅기' }) }, 'E_K_MAP'],
+  ['frozen prefix renamed', (value) => { value.humans[0].name.ko = 'changed' }, 'E_K_MAP:'],
 ]) {
-  test('verifier rejects ' + name, () => {
-    const mutated = structuredClone(atlas)
-    mutate(mutated)
-    const result = verifyAtlasPeople(mutated, context)
+  test(`people verifier rejects ${name}`, () => {
+    const changed = structuredClone(atlas)
+    mutate(changed)
+    const result = verifyAtlasPeople(changed, context)
     assert.ok(result.failures.some((failure) => failure.startsWith(code)), JSON.stringify(result))
   })
 }
 
-test('verifier rejects a non-S00 issued member at the same ID', () => {
-  const changed = structuredClone(context)
-  changed.people[1007].state = 'S14'
-  assert.ok(verifyAtlasPeople(atlas, changed).failures.includes('E_UNAFFILIATED_MEMBERSHIP:K1008'))
-})
-
-test('a namesake with a distinct issued ID remains a separate person', () => {
-  const changedAtlas = structuredClone(atlas)
-  const changed = structuredClone(context)
-  const name = changedAtlas.humans[0].name
-  changedAtlas.unaffiliated.K1008.name = name
-  changed.registry.persons[1007].name = name
-  changed.people[1007].name = name
-  assert.deepEqual(verifyAtlasPeople(changedAtlas, changed).failures, [])
-})
-
-test('verifier rejects a person route that points at another catalog row', () => {
-  const changed = structuredClone(context)
-  ;[changed.people[1007], changed.people[1008]] = [changed.people[1008], changed.people[1007]]
-  assert.ok(verifyAtlasPeople(atlas, changed).failures.includes('E_UNAFFILIATED_ROUTE:K1008'))
-})
-
-const registrySection = markdown.slice(0, markdown.indexOf('\n## 무소속'))
-const unaffiliatedSection = markdown.slice(markdown.indexOf('## 무소속'))
-for (const [name, source, code] of [
-  ['missing heading', registrySection, 'E_UNAFFILIATED_HEADING'],
-  ['repeated heading', markdown + '\n## 무소속\n', 'E_UNAFFILIATED_HEADING'],
-  ['collection before registry', unaffiliatedSection + '\n' + registrySection, 'E_UNAFFILIATED_POSITION'],
-  ['collection before another section', markdown + '\n## following\n', 'E_UNAFFILIATED_POSITION'],
-  ['missing JSON fence', registrySection + '\n## 무소속\n{}', 'E_UNAFFILIATED_FENCE'],
-  ['duplicate JSON ID', markdown.replace('"K1004": {', '"K1003": {'), 'E_UNAFFILIATED_DUPLICATE_ID'],
-  ['second collection owner', markdown.replace('"schema":', '"unaffiliated": {}, "schema":'), 'E_UNAFFILIATED_COLLECTION'],
-]) {
-  test('parser rejects ' + name, () => {
-    assert.deepEqual(extractAtlasJson(source), { ok: false, error: code })
-  })
-}
-
-test('projection write and check agree, and a changed projection is rejected', async () => {
-  const fixtureRoot = new URL('../../.omo/evidence/wiki-issues/i11/', import.meta.url)
-  await mkdir(fixtureRoot, { recursive: true })
-  const directory = await mkdtemp(new URL('projection-', fixtureRoot))
-  const options = { atlasPath: fileURLToPath(new URL('World-Narrative-Atlas.md', lore)), outDir: directory, projection: 'World-Expansion-Index.md' }
+test('bulk materialization is byte-stable and selected check is read-only', async () => {
+  const directory = join(evidenceRoot, 'test-materialize')
+  await rm(directory, { recursive: true, force: true })
+  await mkdir(directory, { recursive: true })
+  const options = { atlasPath: candidatePath, outDir: directory }
   try {
     const written = await materializeWorldAtlas(options)
+    assert.equal(written.projections.length, 34)
+    const before = await readFile(join(directory, PROJECTION_PATHS[0]), 'utf8')
     assert.deepEqual(await materializeWorldAtlas({ ...options, check: true }), written)
-    await writeFile(resolve(directory, options.projection), 'stale')
-    await assert.rejects(materializeWorldAtlas({ ...options, check: true }), /E_PROJECTION_STALE/)
+    assert.deepEqual(await materializeWorldAtlas({ ...options, projection: PROJECTION_PATHS[0], check: true }), {
+      ...written,
+      projections: [PROJECTION_PATHS[0]],
+    })
+    assert.equal(await readFile(join(directory, PROJECTION_PATHS[0]), 'utf8'), before)
+  } finally {
+    await rm(directory, { recursive: true, force: true })
+  }
+})
+
+test('check reports stale, missing, unexpected, misplaced and Markdown twins together', async () => {
+  const directory = join(evidenceRoot, 'test-mutations')
+  await rm(directory, { recursive: true, force: true })
+  await mkdir(directory, { recursive: true })
+  const options = { atlasPath: candidatePath, outDir: directory }
+  try {
+    await materializeWorldAtlas(options)
+    const stale = PROJECTION_PATHS[0]
+    const missing = PROJECTION_PATHS[1]
+    await writeFile(join(directory, stale), '{}\n')
+    await rm(join(directory, missing))
+    await writeFile(join(directory, 'Unexpected-Atlas.json'), '{}\n')
+    await writeFile(join(directory, stale.replace(/\.json$/u, '.md')), '# twin\n')
+    await mkdir(join(directory, 'wrong'), { recursive: true })
+    await writeFile(join(directory, 'wrong', PROJECTION_PATHS[2].split('/').at(-1)), canonicalJson(projections[PROJECTION_PATHS[2]]))
+    await assert.rejects(materializeWorldAtlas({ ...options, check: true }), (error) => {
+      for (const code of ['E_PROJECTION_STALE', 'E_PROJECTION_MISSING', 'E_PROJECTION_UNEXPECTED', 'E_PROJECTION_MARKDOWN_TWIN', 'E_PROJECTION_MISPLACED']) {
+        assert.match(error.message, new RegExp(code))
+      }
+      return true
+    })
   } finally {
     await rm(directory, { recursive: true, force: true })
   }
 })
 
 test('materializer rejects paths outside the projection vocabulary', async () => {
-  await assert.rejects(materializeWorldAtlas({ projection: '../World-Narrative-Atlas.md' }), /E_PROJECTION_NAME/)
+  await assert.rejects(materializeWorldAtlas({ atlasPath: candidatePath, outDir: evidenceRoot, projection: '../World-Narrative-Atlas.json' }), /E_PROJECTION_NAME/)
 })

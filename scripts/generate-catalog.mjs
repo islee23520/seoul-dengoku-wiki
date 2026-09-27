@@ -5,9 +5,7 @@ import proj4 from 'proj4'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
-import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs'
-import { projectionsFromAtlas } from './world-atlas-render.mjs'
-import { verifyAtlasPeople } from './world-atlas-verify.mjs'
+import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
 import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
@@ -175,58 +173,35 @@ await mkdir(publicRoot, { recursive: true })
 await rm(wikiAssetTarget, { recursive: true, force: true })
 
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
+await materializeWorldAtlas({
+  atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
+  outDir: loreRoot,
+  check: true,
+})
 const jsonPages = await walkLoreJson(loreRoot)
 const categoryErrors = jsonPages.flatMap((page) => registrationErrors(page.value, categoryRegistry, basename(page.path)))
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
-const atlasMarkdown = await readFile(resolve(loreRoot, 'World-Narrative-Atlas.md'), 'utf8')
-const atlas = extractAtlasJson(atlasMarkdown)
-if (!atlas.ok) throw new Error(`E_ATLAS_JSON:${atlas.error}`)
 const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
-const atlasPeople = verifyAtlasPeople(atlas.value, {
-  registry: JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')),
-  candidates: JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-candidates.json'), 'utf8')),
-  people: peopleSource,
-})
-if (atlasPeople.failures.length) throw new Error(atlasPeople.failures.join('\n'))
-const atlasHash = sha256Text(atlasMarkdown)
-const projections = projectionsFromAtlas(atlas.value, atlasHash)
 const glossaryMarkdown = await readFile(resolve(loreRoot, 'Glossary.md'), 'utf8')
-const worldIndex = await buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
+const worldIndex = buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
 
 const renderedBySlug = new Map()
 for (const page of jsonPages) {
   renderedBySlug.set(page.slug, renderLoreMarkdown(page.value, 'ko', (_domain, slug) => `${slug}.md`))
 }
-for (const [name, markdown] of Object.entries(projections)) {
-  const slug = basename(name, '.md')
-  if (pagesBySlug.has(slug)) throw new Error(`E_PROJECTION_COLLIDES_WITH_JSON:${slug}`)
-  renderedBySlug.set(slug, markdown)
-}
 if (pagesBySlug.has('Glossary')) throw new Error('E_GLOSSARY_JSON_UNEXPECTED')
 renderedBySlug.set('Glossary', glossaryMarkdown)
-// The atlas is the hand-authored canon (no JSON twin). Its machine registry is the canonical
-// JSON inside the ```json fence; the page body is that canon with reader links rewritten below.
-renderedBySlug.set('World-Narrative-Atlas', atlasMarkdown)
 renderedBySlug.set('index', worldIndex)
 
 const projectionCategories = {
-  'Synthetic-Actors': 'people-and-machines',
-  'Operating-Houses': 'factions',
-  'Regional-Physical-AI-Arcs': 'overview',
-  'World-Relation-Ledger': 'factions',
-  'External-Theaters': 'places',
-  'World-Expansion-Index': 'overview',
-  'World-Narrative-Atlas': 'overview',
   Glossary: 'overview',
   index: 'overview',
 }
 for (const slug of renderedBySlug.keys()) {
   if (categoriesBySlug.has(slug)) continue
-  const category = slug.startsWith('Hostile-Group-') || slug === 'Hostile-Ecology-Index'
-    ? 'bestiary'
-    : projectionCategories[slug]
+  const category = projectionCategories[slug]
   if (!category || !categoryRegistry.categories.some((entry) => entry.id === category)) throw new Error(`E_CATEGORY_PROJECTION:${slug}`)
   categoriesBySlug.set(slug, [category])
 }
