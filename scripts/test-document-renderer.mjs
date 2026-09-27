@@ -43,6 +43,7 @@ test('renderer preserves article table semantics and WIKI page uses shared viewp
   const page = await readFile(new URL('../src/pages/ArticlePage.tsx', import.meta.url), 'utf8')
   assert.match(page, /fromWikiBlocks\(blocks\)/)
   assert.match(page, /<DocumentContent content=\{\[node\]\}/)
-  assert.match(page, /<TableViewport key=\{index\} label="본문 표">/)
+  assert.match(page, /<TableViewport key=\{index\} label=\{text\.table\}>/)
+  assert.match(page, /table: '본문 표'/)
   assert.doesNotMatch(page, /WorldBlocks/)
 })

@@ -11,9 +11,9 @@ const CategoriesPage = lazy(() => import('./pages/CategoriesPage'))
 import StatesPage from './pages/StatesPage'
 import UpdatesPage from './pages/UpdatesPage'
 import { resolveLegacyRegionRoute, worldRegionMapRoute } from './wikiRouting'
-import { wikiCatalog } from './generated/wikiCatalog'
+import { wikiCatalog, wikiEnglishCatalog } from './generated/wikiCatalog'
 
-const appRoutes = new Set(['/', '/states', '/updates', '/people', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route)])
+const appRoutes = new Set(['/', '/states', '/updates', '/people', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route), ...wikiEnglishCatalog.map(({ route }) => route)])
 
 function useNativeWikiLinks() {
   const navigate = useNavigate()
@@ -57,8 +57,9 @@ export default function App() {
         <Route path="/categories/:categoryId" element={<Suspense fallback={<div className="wiki-loading">분류를 불러오고 있습니다.</div>}><CategoriesPage /></Suspense>} />
         <Route path="/regions/*" element={<LegacyRegionPage />} />
         <Route path="/world/regions/*" element={<LegacyRegionPage />} />
-        <Route path="/:domain/:slug" element={<ArticlePage />} />
-        <Route path="/:domain/" element={<ArticlePage />} />
+        <Route path="/en/:domain/:slug" element={<ArticlePage key="en" locale="en" />} />
+        <Route path="/:domain/:slug" element={<ArticlePage key="ko" />} />
+        <Route path="/:domain/" element={<ArticlePage key="ko" />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
     </Layout>
