@@ -10,13 +10,13 @@ The sixteen states S01–S16, their ruling houses and chaebol origins, plus over
 |------|----------|
 | The 16 states S01–S16 | `Sixteen-States.md` — InfoBox-declared 정본; 6 강국 (대한민국정부·수문국·규격맹·환적국·동방사·태욱그룹), 4 약국, 6 소국; forms 봉건·군정·신정·상업 |
 | Houses / chaebol origins | `Chaebol-Houses-and-Century-Factions.md` — families lease infrastructure to states; chaebol-origin states are the hereditary exception (상호가 국호) |
-| External theaters XT01–XT05 | `External-Theaters.md` — Seoul-side corridors only; read-only projection of World-Narrative-Atlas (edit via the atlas, parent contract) |
+| External theaters XT01–XT05 | `External-Theaters.json` — Seoul-side corridors only; read-only projection of World-Narrative-Atlas (edit via the atlas, parent contract) |
 | Diaspora corridors | `Diaspora-Corridors.md` — life-belt overlay on the 16 states; new people still satisfy the cast card contract (`../characters/Cast-Profile-Contract.md`) |
 
 ## CONVENTIONS
 - `polity_contexts` in `../regions/content/` must be S01–S16 (`verify_region_atlas.py` rejects anything else); corridors, remnants, and XT ids never qualify as polities.
 - Leader titles come from each state's 2026 real-institution job titles (`../offices/Offices-and-Ranks.md`); the tier ladder is identical across the 16, only names differ — 봉건 wording like 남작 never appears in the ledgers.
-- `External-Theaters.md` prose is a read-only projection of World-Narrative-Atlas — never hand-edit it; change the atlas and re-project (parent contract).
+- `External-Theaters.json` prose is a read-only projection of World-Narrative-Atlas — never hand-edit it; change the atlas and re-project (parent contract).
 - From chaebol history only 승계 습관 crosses into canon (who qualifies, how it splits, who custodies); real conglomerate names/logos stay out except where 상호=국호 canon already fixes it.
 
 ## ANTI-PATTERNS

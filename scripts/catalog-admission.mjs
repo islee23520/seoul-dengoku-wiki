@@ -1,7 +1,5 @@
-import { readdir, readFile } from 'node:fs/promises'
-import { basename, join, relative } from 'node:path'
-import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs'
-import { projectionsFromAtlas } from './world-atlas-render.mjs'
+import { access, readdir, readFile } from 'node:fs/promises'
+import { basename, join, relative, resolve } from 'node:path'
 
 export const readerFields = ['slug', 'title', 'route', 'reviewText', 'blocks']
 export const catalogFields = ['domain', 'slug', 'route', 'title']
@@ -9,9 +7,46 @@ export const catalogFields = ['domain', 'slug', 'route', 'title']
 export const unknownFields = (value, allowed) =>
   Object.keys(value).filter((field) => !allowed.includes(field))
 
-// Match the publisher's lore JSON selection, then include only its three
-// explicit Markdown sources and the projections derived from the atlas.
-export async function approvedDocuments(loreRoot) {
+const atlasProjectionPaths = [
+  'Operating-Houses.json',
+  'Regional-Physical-AI-Arcs.json',
+  'Synthetic-Actors.json',
+  'World-Expansion-Index.json',
+  'World-Relation-Ledger.json',
+  'factions/External-Theaters.json',
+  'bestiary/Hostile-Ecology-Index.json',
+  ...Array.from({ length: 27 }, (_, index) => `bestiary/groups/Hostile-Group-G${String(index + 1).padStart(2, '0')}.json`),
+]
+
+export const atlasDocumentPaths = Object.freeze(['World-Narrative-Atlas.json', ...atlasProjectionPaths])
+const atlasPathSet = new Set(atlasDocumentPaths)
+
+const exists = async (path) => {
+  try {
+    await access(path)
+    return true
+  } catch {
+    return false
+  }
+}
+
+const atlasMarkdownTwin = (path) => path.replace(/\.json$/u, '.md')
+
+const defaultAtlasCheck = async (options) => {
+  const { materializeWorldAtlas } = await import('./materialize-world-atlas.mjs')
+  return materializeWorldAtlas(options)
+}
+
+// Match the publisher's lore JSON selection. The atlas source and projections use
+// the ordinary JSON path, but only after the materializer verifies the committed set.
+export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasCheck, includeWorldIndex = true } = {}) {
+  const atlasPath = resolve(loreRoot, 'World-Narrative-Atlas.json')
+  await checkAtlas({ atlasPath, outDir: loreRoot, check: true })
+  for (const relativePath of atlasDocumentPaths) {
+    if (await exists(resolve(loreRoot, atlasMarkdownTwin(relativePath)))) {
+      throw new Error(`E_ATLAS_MARKDOWN_TWIN:${atlasMarkdownTwin(relativePath)}`)
+    }
+  }
   const slugs = new Set()
   const documents = []
   const add = (slug, source, id) => {
@@ -29,24 +64,17 @@ export async function approvedDocuments(loreRoot) {
           const slug = basename(entry.name, '.json')
           if (slugs.has(slug)) throw new Error(`E_DUPLICATE_LORE_SLUG:${slug}`)
           slugs.add(slug)
-          add(slug, `lore/${relative(loreRoot, path).replaceAll('\\', '/')}`, value.id)
+          const sourcePath = relative(loreRoot, path).replaceAll('\\', '/')
+          add(slug, `lore/${sourcePath}`, atlasPathSet.has(sourcePath) ? `wiki:${slug}` : value.id)
         }
       }
     }
   }
   await walk(loreRoot)
 
-  const atlasMarkdown = await readFile(join(loreRoot, 'World-Narrative-Atlas.md'), 'utf8')
-  const atlas = extractAtlasJson(atlasMarkdown)
-  if (!atlas.ok) throw new Error(`E_ATLAS_JSON:${atlas.error}`)
-  for (const name of Object.keys(projectionsFromAtlas(atlas.value, sha256Text(atlasMarkdown)))) {
-    const slug = basename(name, '.md')
-    if (slugs.has(slug)) throw new Error(`E_PROJECTION_COLLIDES_WITH_JSON:${slug}`)
-    slugs.add(slug)
-    add(slug, 'lore/World-Narrative-Atlas.md', `wiki:${slug}`)
-  }
+  if (!includeWorldIndex) return documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
   await readFile(join(loreRoot, 'Glossary.md'), 'utf8')
-  for (const slug of ['Glossary', 'World-Narrative-Atlas', 'index']) {
+  for (const slug of ['Glossary', 'index']) {
     if (slugs.has(slug)) throw new Error(`E_PUBLISH_SOURCE_COLLISION:${slug}`)
     slugs.add(slug)
     add(slug, slug === 'index' ? 'scripts/build-world-index.mjs' : `lore/${slug}.md`, `wiki:${slug}`)

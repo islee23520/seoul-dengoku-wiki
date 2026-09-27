@@ -78,11 +78,12 @@ function localeBindingFailures(document, label) {
       }
     }
   })
+  // A run's link.anchor names a block in the linked document; E_LINK checks it there.
   const visit = (value) => {
     if (Array.isArray(value)) return value.forEach(visit)
     if (!value || typeof value !== 'object') return
     if (typeof value.anchor === 'string' && !blockIds.has(value.anchor)) failures.push(`E_ANCHOR: ${label}: data block id ${value.anchor} has no content block`)
-    Object.values(value).forEach(visit)
+    Object.entries(value).forEach(([key, child]) => { if (key !== 'link') visit(child) })
   }
   visit(document?.data)
   return failures
@@ -229,8 +230,12 @@ function isAuthoring(path) {
     && ('locales' in value || Array.isArray(value.content))
 }
 
+// A document file is named by its slug, which cannot begin with '.'; dot-prefixed paths are tool scratch
+// (for example the link checker's transient fixtures), never authoring documents.
+const scratch = (path) => path.split('/').some((part) => part.startsWith('.'))
+
 const loreFiles = () => git('ls-files', '--cached', '--others', '--exclude-standard', '--', 'lore')
-  .filter((path) => existsSync(join(root, path)))
+  .filter((path) => !scratch(path) && existsSync(join(root, path)))
 
 function unmigratedMarkdown(authoring) {
   const migrated = new Set(authoring)
@@ -270,7 +275,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const changed = [...new Set([
       ...git('diff', '--name-only', '--diff-filter=d', base, '--', 'lore'),
       ...git('ls-files', '--others', '--exclude-standard', '--', 'lore'),
-    ])].filter((path) => path.endsWith('.json') && isAuthoring(path))
+    ])].filter((path) => path.endsWith('.json') && !scratch(path) && isAuthoring(path))
     const selected = [...new Set([...changed, ...ledger])]
     report(validate(selected.map((path) => join(root, path))), `${selected.length} lore JSON document(s) (changed ${changed.length}, ledger ${ledger.length})`)
   }

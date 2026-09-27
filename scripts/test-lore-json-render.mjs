@@ -15,6 +15,7 @@ const parse = (markdown) => fromMarkdown(markdown, { extensions: [gfm()], mdastE
 function loreDocuments(dir = loreRoot) {
   const out = []
   for (const name of readdirSync(dir).sort()) {
+    if (name.startsWith('.')) continue // tool scratch such as the link checker's fixtures, never a document
     const path = join(dir, name)
     if (statSync(path).isDirectory()) out.push(...loreDocuments(path))
     else if (name.endsWith('.json') && !name.startsWith('authoring.')) {
@@ -27,6 +28,8 @@ function loreDocuments(dir = loreRoot) {
 
 // The visible text a reader sees for one JSON leaf: its runs' text, parsed as inline Markdown.
 const leafText = (leaf) => (typeof leaf === 'string' ? leaf : leaf.map((run) => run.text).join(''))
+// The reader's heading ID (src/wikiDocument.ts).
+const headingId = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
 // Prefix every line so a leaf such as '#' or '1.' is read as inline text, as it is inside its block.
 const visible = (leaf) => toString(parse(leafText(leaf).replace(/^/gm, 'a'))).replace(/^a/gm, '')
 const links = (node) => {
@@ -124,12 +127,27 @@ for (const { path, document } of documents) {
   for (const locale of ['ko', 'en']) {
     test(`${document.id} renders to Markdown that keeps every block (${locale})`, () => {
       const tree = parse(renderLoreMarkdown(document, locale))
-      const eventAnchors = document.content.filter((node) => node.kind === 'heading' && /-xt0[1-5]-/u.test(node.anchor ?? '')).map((node) => node.anchor)
-      const publishedAnchors = tree.children.filter((block) => block.type === 'paragraph' && block.children.length === 2 && block.children[0].type === 'html' && block.children[1].type === 'html' && eventAnchors.includes(block.children[0].value?.match(/^<a id="([^"]+)">$/u)?.[1]))
-      assert.deepEqual(publishedAnchors.map((block) => block.children[0].value.match(/^<a id="([^"]+)">$/u)[1]), eventAnchors, path)
-      const contentBlocks = tree.children.filter((block) => !publishedAnchors.includes(block))
-      assert.equal(contentBlocks.length, document.content.length, path)
-      document.content.forEach((node, i) => assertBlock(node, contentBlocks[i], locale, `${path} ${node.anchor}`))
+      // A heading's legacy event anchor and public aliases that its locale's heading IDs do not already
+      // provide are published once, as an anchor-only paragraph directly before that heading.
+      const published = new Set(document.content.filter((node) => node.kind === 'heading').map((node) => headingId(leafText(node.text[locale]))))
+      const aliasesOf = (node) => {
+        if (node.kind !== 'heading') return []
+        const legacy = /-xt0[1-5]-/u.test(node.anchor ?? '') ? [node.anchor] : []
+        return [...legacy, ...(node.publicAnchors ?? [])].filter((alias) => !published.has(alias) && published.add(alias))
+      }
+      let cursor = 0
+      document.content.forEach((node) => {
+        const where = `${path} ${node.anchor}`
+        const aliases = aliasesOf(node)
+        if (aliases.length) {
+          const block = tree.children[cursor++]
+          assert.equal(block?.type, 'paragraph', where)
+          assert.ok(block.children.every((child) => child.type === 'html' || (child.type === 'text' && !child.value.trim())), where)
+          assert.deepEqual(block.children.map((child) => child.value.match(/^<a id="([^"]+)">$/u)?.[1]).filter(Boolean), aliases, where)
+        }
+        assertBlock(node, tree.children[cursor++], locale, where)
+      })
+      assert.equal(tree.children.length, cursor, path)
     })
   }
 }

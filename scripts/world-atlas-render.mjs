@@ -1,397 +1,484 @@
-import { getGroupDossierFilename, PROJECTION_FILES, STATE_BY_ID, STORY_SECTION_KEYS } from './world-atlas-schema.mjs';
+import { getGroupDossierPath, PROJECTION_PATHS_BY_KIND, STATE_BY_ID } from './world-atlas-schema.mjs'
 
+// Generator-owned wording. Atlas values carry their own EN/KO; these labels frame them in each locale.
+const L = (ko, en) => ({ en, ko })
 const BESTIARY_KINDS = {
-  'common-organism': '공통종',
-  'mutant-organism': '변이종',
-  machine: '기계 기종',
-  'biomechanical-organism': '생체기계 변이',
-  habitat: '서식 거점·시설',
-  event: '군집 현상',
-};
-const BESTIARY_FORMATIONS = { single: '독립 개체', group: '무리·부대', site: '고정 거점', event: '사건·현상' };
+  'common-organism': L('공통종', 'Common species'),
+  'mutant-organism': L('변이종', 'Mutant species'),
+  machine: L('기계 기종', 'Machine type'),
+  'biomechanical-organism': L('생체기계 변이', 'Biomechanical variant'),
+  habitat: L('서식 거점·시설', 'Habitat site or facility'),
+  event: L('군집 현상', 'Swarm phenomenon'),
+}
+const BESTIARY_FORMATIONS = {
+  single: L('독립 개체', 'Single individual'),
+  group: L('무리·부대', 'Pack or unit'),
+  site: L('고정 거점', 'Fixed site'),
+  event: L('사건·현상', 'Event or phenomenon'),
+}
 const GROUP_CATEGORIES = {
-  'animal-urban': '도시 동물',
-  'humanoid-mutant': '인체 변이·공생',
-  'rogue-robot': '잔존 자동 기계',
-  biomechanical: '생체기계·시설 생태',
-};
+  'animal-urban': L('도시 동물', 'Urban animals'),
+  'humanoid-mutant': L('인체 변이·공생', 'Human mutation and symbiosis'),
+  'rogue-robot': L('잔존 자동 기계', 'Surviving automatic machines'),
+  biomechanical: L('생체기계·시설 생태', 'Biomechanical and facility ecology'),
+}
+// Schema tokens that are Korean words; their English wording lives here, not in the atlas.
+export const OBLIGATION_TARGETS = Object.freeze({ 시민: L('시민', 'citizens') })
+export const RUMOR_TIERS = Object.freeze({ 확인: L('확인', 'confirmed'), 보류: L('보류', 'withheld'), 전언: L('전언', 'hearsay') })
+const YES_NO = [L('아니오', 'No'), L('예', 'Yes')]
+const ATLAS_SOURCE = 'lore/World-Narrative-Atlas.json'
 
 // Mirrors WorldBlocks.tsx headingId so projection fragments resolve in the rendered page.
 function headingId(text) {
-  return text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-');
+  return text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
 }
 
-function tableCell(value) {
-  return String(value ?? '').trim().replaceAll('|', '&#124;').replace(/\n+/g, ' / ');
+// A part is a machine string or number (same in both locales), a localized {en, ko} value
+// (string or run array per locale), a run, or an array of parts.
+function runs(part, locale) {
+  if (part === null || part === undefined) return []
+  if (typeof part === 'string' || typeof part === 'number') return [{ text: String(part) }]
+  if (Array.isArray(part)) return part.flatMap((item) => runs(item, locale))
+  if ('en' in part && 'ko' in part) return runs(part[locale], locale)
+  if (typeof part.text === 'string') return [part]
+  throw new Error(`E_ATLAS_RENDER: unsupported text part ${JSON.stringify(part)}`)
 }
 
-function banner(atlasHash, lead) {
-  return [
-    ...(lead ? [lead, ''] : []),
-    `- 원본 앵커: \`LORE/World-Narrative-Atlas.md\``,
-    `- 원본 해시: \`${atlasHash}\``,
-    '',
-  ].join('\n');
+function compact(list, map = (text) => text) {
+  const out = []
+  for (const run of list) {
+    const next = { ...run, text: map(run.text) }
+    if (!next.text) continue
+    const last = out.at(-1)
+    if (last && Object.keys(last).length === 1 && Object.keys(next).length === 1) last.text += next.text
+    else out.push(next)
+  }
+  if (out.length === 0) return ''
+  return out.length === 1 && Object.keys(out[0]).length === 1 ? out[0].text : out
 }
 
-function projectionPreamble(atlas, file, fallbackTitle, atlasHash) {
-  const page = atlas.projection_pages?.[file] ?? {};
-  const title = page.title || fallbackTitle;
-  const lines = [`# ${title}`, ''];
-  const intro = typeof page.intro === 'string' ? page.intro.trim() : '';
-  if (intro) lines.push(intro, '');
-  lines.push(banner(atlasHash, page.banner));
-  return lines;
+const text = (...parts) => ({ en: compact(runs(parts, 'en')), ko: compact(runs(parts, 'ko')) })
+// Table cells keep one line, as the Markdown projection did.
+const cell = (...parts) => {
+  const lines = (value) => value.replace(/\n+/g, ' / ')
+  const [en, ko] = ['en', 'ko'].map((locale) => compact(runs(parts, locale), lines))
+  const trim = (value) => typeof value === 'string' ? value.trim() : value
+  return { en: trim(en), ko: trim(ko) }
+}
+function join(values, separator) {
+  return values.flatMap((value, index) => index === 0 ? [value] : [separator, value])
+}
+const localized = (value, locale) => compact(runs(value, locale))
+const link = (label, domain, slug, anchor) => ({
+  en: [{ text: localized(label, 'en'), link: { domain, slug, ...(anchor ? { anchor } : {}) } }],
+  ko: [{ text: localized(label, 'ko'), link: { domain, slug, ...(anchor ? { anchor } : {}) } }],
+})
+
+// A multi-paragraph atlas value keeps its paragraph boundaries: the first paragraph stays in the
+// list item and each following paragraph becomes its own block, as the Markdown projection read.
+function paragraphs(leaf) {
+  const split = (value) => typeof value === 'string' ? value.split(/\n\s*\n/u) : [value]
+  const [en, ko] = [split(leaf.en), split(leaf.ko)]
+  if (en.length !== ko.length) throw new Error(`E_ATLAS_RENDER: EN/KO paragraph counts differ: ${JSON.stringify(leaf).slice(0, 120)}`)
+  return ko.map((value, index) => ({ en: en[index], ko: value }))
+}
+
+function contentBuilder(slug) {
+  const content = []
+  let index = 0
+  const anchor = (kind) => `${slug}-${kind}-${String(++index).padStart(4, '0')}`
+  return {
+    content,
+    heading(depth, value, publicAnchors = []) {
+      content.push({ kind: 'heading', depth, anchor: anchor('heading'), text: value, ...(publicAnchors.length ? { publicAnchors } : {}) })
+    },
+    paragraph(value) { content.push({ kind: 'paragraph', anchor: anchor('paragraph'), text: value }) },
+    list(items) {
+      let pending = []
+      const flush = () => {
+        if (pending.length) content.push({ kind: 'list', anchor: anchor('list'), items: pending })
+        pending = []
+      }
+      for (const item of items) {
+        const [first, ...rest] = paragraphs(item)
+        pending.push(first)
+        if (rest.length === 0) continue
+        flush()
+        for (const value of rest) this.paragraph(value)
+      }
+      flush()
+    },
+    table(columns, rows) { if (rows.length) content.push({ kind: 'table', anchor: anchor('table'), columns, rows }) },
+    // Owned atlas prose is copied block for block; the projection gives each copy its own anchor.
+    nodes(nodes = []) {
+      for (const node of nodes) {
+        const { publicAnchors, anchor: _anchor, ...rest } = node
+        content.push({ ...rest, anchor: anchor(node.kind) })
+      }
+    },
+  }
 }
 
 function stateLabel(atlas, id) {
-  const fromHumans = (atlas.humans ?? []).find((h) => h.state_id === id)?.state_name;
-  if (fromHumans) return `${id} ${fromHumans}`;
-  return STATE_BY_ID[id] ? `${id} ${STATE_BY_ID[id].name}` : id;
+  const name = (atlas.humans ?? []).find((human) => human.state_id === id)?.state_name
+  if (name) return text(id, ' ', name)
+  return STATE_BY_ID[id] ? text(id, ' ', STATE_BY_ID[id].name) : text(id)
+}
+const states = (atlas, ids = []) => join(ids.map((id) => stateLabel(atlas, id)), ', ')
+
+function preamble(atlas, slug, fallbackTitle) {
+  const page = atlas.projection_pages?.[slug] ?? {}
+  const b = contentBuilder(slug)
+  b.heading(1, text(page.title ?? fallbackTitle))
+  if (page.intro) b.paragraph(text(page.intro))
+  if (page.banner) b.paragraph(text(page.banner))
+  return b
 }
 
-export function renderHouses(atlas, atlasHash) {
-  const lines = [...projectionPreamble(atlas, 'Operating-Houses.md', '운영가문', atlasHash)];
+export function renderHouses(atlas) {
+  const b = preamble(atlas, 'Operating-Houses', L('운영가문', 'Operating Houses'))
   for (const house of atlas.houses ?? []) {
-    lines.push(`## ${house.id} · ${house.display_name}`, '');
-    lines.push(`- 분류: ${house.house_class}`);
-    lines.push(`- 상태: ${house.status}`);
-    lines.push(`- 출처층: ${house.source_kind}`);
-    lines.push(`- 연결 국가: ${(house.states ?? []).map((id) => stateLabel(atlas, id)).join(', ')}`);
-    lines.push(`- 전속 국가: 없음`);
-    lines.push(`- 관리: ${house.ai_stewardship?.accountable_human ?? ''}`);
-    lines.push('');
-    lines.push(house.prose.trim());
-    lines.push('');
-    lines.push('### 3막');
-    for (const arc of house.arcs ?? []) {
-      lines.push(`- ${arc.act}막 ${arc.title}: ${arc.summary}`);
-    }
-    lines.push('');
+    b.heading(2, text(house.id, ' · ', house.display_name))
+    b.list([
+      text(L('분류', 'Class'), ': ', house.house_class),
+      text(L('상태', 'Status'), ': ', house.status),
+      text(L('출처층', 'Source layer'), ': ', house.source_kind),
+      text(L('연결 국가', 'Linked states'), ': ', states(atlas, house.states)),
+      text(L('전속 국가', 'Exclusive states'), ': ', L('없음', 'None')),
+      text(L('관리', 'Steward'), ': ', house.ai_stewardship?.accountable_human),
+    ])
+    b.nodes(house.prose)
+    b.heading(3, text(L('3막', 'Three acts')))
+    b.list((house.arcs ?? []).map((arc) => text(L(`${arc.act}막 `, `Act ${arc.act}, `), arc.title, ': ', arc.summary)))
   }
-  return `${lines.join('\n').trim()}\n`;
+  return b.content
 }
 
-export function renderTheaters(atlas, atlasHash) {
-  const lines = [...projectionPreamble(atlas, 'External-Theaters.md', '외부전구', atlasHash)];
+export function renderTheaters(atlas) {
+  const b = preamble(atlas, 'External-Theaters', L('외부전구', 'External Theaters'))
   for (const theater of atlas.theaters ?? []) {
-    lines.push(`## ${theater.id} · ${theater.display_name}`, '');
-    lines.push(`- 출처층: ${theater.source_kind}`);
-    lines.push(`- 확인: ${theater.verified}`);
-    lines.push(`- 추론: ${theater.inference}`);
-    lines.push(`- 창작: ${theater.original_fiction}`);
-    lines.push(`- 정사 연결표 제거 가능: ${theater.japan_bridge_removable ? '예' : '아니오'}`);
-    lines.push(`- 연결 국가: ${(theater.states ?? []).map((id) => stateLabel(atlas, id)).join(', ')}`);
-    lines.push('');
-    lines.push(theater.prose.trim(), '');
-    if (theater.seoul_route) {
-      lines.push('### 서울 쪽 경로', '',
-        `- 확인된 지리: ${theater.seoul_route.verified_geography}`,
-        `- 준비 거점: ${(theater.seoul_route.staging_nodes ?? []).join(' → ')}`,
-        `- 바깥 경계: ${theater.seoul_route.outbound_boundary}`,
-        `- 이동 시간: ${theater.seoul_route.fixed_duration}`,
-        '');
+    b.heading(2, text(theater.id, ' · ', theater.display_name))
+    b.list([
+      text(L('출처층', 'Source layer'), ': ', theater.source_kind),
+      text(L('확인', 'Verified'), ': ', theater.verified),
+      text(L('추론', 'Inference'), ': ', theater.inference),
+      text(L('창작', 'Original fiction'), ': ', theater.original_fiction),
+      text(L('정사 연결표 제거 가능', 'Canon bridge table removable'), ': ', YES_NO[theater.japan_bridge_removable ? 1 : 0]),
+      text(L('연결 국가', 'Linked states'), ': ', states(atlas, theater.states)),
+    ])
+    b.nodes(theater.prose)
+    const route = theater.seoul_route
+    if (route) {
+      b.heading(3, text(L('서울 쪽 경로', 'Seoul-side route')))
+      b.list([
+        text(L('확인된 지리', 'Verified geography'), ': ', route.verified_geography),
+        text(L('준비 거점', 'Staging nodes'), ': ', join(route.staging_nodes ?? [], ' → ')),
+        text(L('바깥 경계', 'Outbound boundary'), ': ', route.outbound_boundary),
+        text(L('이동 시간', 'Travel time'), ': ', route.fixed_duration),
+      ])
     }
-    if (theater.travel_constraints) {
-      lines.push('### 이동·계절', '',
-        `- 계절 조건: ${(theater.travel_constraints.seasonal_conditions ?? []).join(' / ')}`,
-        `- 중단 조건: ${(theater.travel_constraints.suspension_conditions ?? []).join(' / ')}`,
-        `- 기록 원칙: ${theater.travel_constraints.rule}`,
-        '');
+    const travel = theater.travel_constraints
+    if (travel) {
+      b.heading(3, text(L('이동·계절', 'Travel and seasons')))
+      b.list([
+        text(L('계절 조건', 'Seasonal conditions'), ': ', join(travel.seasonal_conditions ?? [], ' / ')),
+        text(L('중단 조건', 'Suspension conditions'), ': ', join(travel.suspension_conditions ?? [], ' / ')),
+        text(L('기록 원칙', 'Recording rule'), ': ', travel.rule),
+      ])
     }
     if (theater.supply_chain) {
-      lines.push('### 공급·검문', '');
-      for (const flow of theater.supply_chain.flows ?? []) {
-        lines.push(`- ${flow.kind} · ${flow.contents}: ${flow.handoff_rule}`);
-      }
-      lines.push(`- 분리 원칙: ${theater.supply_chain.separation_rule}`);
-      for (const checkpoint of theater.checkpoints ?? []) {
-        lines.push(`- ${checkpoint.id} · ${checkpoint.place}: ${checkpoint.function} / ${(checkpoint.checks ?? []).join(', ')}`);
-      }
-      lines.push('');
+      b.heading(3, text(L('공급·검문', 'Supply and checkpoints')))
+      b.list([
+        ...(theater.supply_chain.flows ?? []).map((flow) => text(flow.kind, ' · ', flow.contents, ': ', flow.handoff_rule)),
+        text(L('분리 원칙', 'Separation rule'), ': ', theater.supply_chain.separation_rule),
+        ...(theater.checkpoints ?? []).map((checkpoint) => text(checkpoint.id, ' · ', checkpoint.place, ': ', checkpoint.function, ' / ', join(checkpoint.checks ?? [], ', '))),
+      ])
     }
-    if (theater.language_rumor_protocol) {
-      lines.push('### 언어·소문', '',
-        `- 기록 언어: ${theater.language_rumor_protocol.record_language}`,
-        `- 통역 원칙: ${theater.language_rumor_protocol.interpreter_rule}`);
-      for (const rumor of theater.language_rumor_protocol.rumor_reliability ?? []) lines.push(`- ${rumor.tier}: ${rumor.rule}`);
-      lines.push(`- 금지 추론: ${theater.language_rumor_protocol.prohibited_inference}`);
-      lines.push('');
+    const language = theater.language_rumor_protocol
+    if (language) {
+      b.heading(3, text(L('언어·소문', 'Language and rumor')))
+      b.list([
+        text(L('기록 언어', 'Record language'), ': ', language.record_language),
+        text(L('통역 원칙', 'Interpreter rule'), ': ', language.interpreter_rule),
+        ...(language.rumor_reliability ?? []).map((row) => text(RUMOR_TIERS[row.tier] ?? row.tier, ': ', row.rule)),
+        text(L('금지 추론', 'Prohibited inference'), ': ', language.prohibited_inference),
+      ])
     }
-    lines.push('### 16국 이해', '');
-    for (const row of theater.state_interests ?? []) {
-      lines.push(`- ${stateLabel(atlas, row.state_id)}: ${row.interest} / 지렛대 ${row.leverage} / 넘지 않는 선 ${row.red_line}`);
+    b.heading(3, text(L('16국 이해', 'Interests of the sixteen states')))
+    b.list((theater.state_interests ?? []).map((row) => text(stateLabel(atlas, row.state_id), ': ', row.interest,
+      L(' / 지렛대 ', ' / leverage: '), row.leverage, L(' / 넘지 않는 선 ', ' / red line: '), row.red_line)))
+    b.heading(3, text(L('생태 압력', 'Ecological pressure')))
+    b.list((theater.hostile_ecology_interaction ?? []).map((row) => text(row.group_id, ': ', row.interaction,
+      L(' / 대응 ', ' / response: '), row.operational_response, L(' / 비살상 제약 ', ' / nonlethal constraint: '), row.nonlethal_constraint)))
+    const opening = theater.opening_event
+    if (opening) {
+      b.heading(3, text(L('개막 2126', 'Opening 2126')))
+      b.list([
+        text(L('사건', 'Event'), ': ', opening.scenario_id),
+        text(L('촉발', 'Trigger'), ': ', opening.trigger),
+        text(L('충돌', 'Conflict'), ': ', opening.conflict),
+        text(L('첫 판단', 'First decision'), ': ', opening.player_decision),
+      ])
     }
-    lines.push('', '### 생태 압력', '');
-    for (const row of theater.hostile_ecology_interaction ?? []) {
-      lines.push(`- ${row.group_id}: ${row.interaction} / 대응 ${row.operational_response} / 비살상 제약 ${row.nonlethal_constraint}`);
-    }
-    if (theater.opening_event) {
-      lines.push('', '### 개막 2126', '',
-        `- 사건: ${theater.opening_event.scenario_id}`,
-        `- 촉발: ${theater.opening_event.trigger}`,
-        `- 충돌: ${theater.opening_event.conflict}`,
-        `- 첫 판단: ${theater.opening_event.player_decision}`,
-        '');
-    }
-    lines.push('### 플레이어 진입', '');
-    for (const entry of theater.player_entry_points ?? []) {
-      lines.push(`- ${entry.id} · ${entry.place}: ${entry.role} / 첫 판단 ${entry.first_decision}`);
-    }
-    lines.push('', '### 명시적 미정', '');
-    for (const unknown of theater.explicit_unknowns ?? []) lines.push(`- ${unknown}`);
-    lines.push('');
-    lines.push('### 시나리오 쇄');
-    for (const chain of theater.scenario_chains ?? []) {
-      lines.push(`- ${chain.id}: ${chain.summary}`);
-    }
-    lines.push('');
+    b.heading(3, text(L('플레이어 진입', 'Player entry')))
+    b.list((theater.player_entry_points ?? []).map((entry) => text(entry.id, ' · ', entry.place, ': ', entry.role,
+      L(' / 첫 판단 ', ' / first decision: '), entry.first_decision)))
+    b.heading(3, text(L('명시적 미정', 'Explicit unknowns')))
+    b.list((theater.explicit_unknowns ?? []).map((unknown) => text(unknown)))
+    b.heading(3, text(L('시나리오 쇄', 'Scenario chains')))
+    b.list((theater.scenario_chains ?? []).map((chain) => text(chain.id, ': ', chain.summary)))
   }
-  return `${lines.join('\n').trim()}\n`;
+  return b.content
 }
 
-export function renderSynthetics(atlas, atlasHash) {
-  const lines = ['# 합성 사회 인격', '', banner(atlasHash)];
+export function renderSynthetics(atlas) {
+  const b = preamble(atlas, 'Synthetic-Actors', L('합성 사회 인격', 'Synthetic Social Personas'))
   for (const actor of atlas.synthetics ?? []) {
-    lines.push(`## ${actor.id} · ${actor.display_name} (${actor.callsign})`, '');
-    lines.push(`- 급: ${actor.cls}`);
-    lines.push(`- 기체: ${actor.body_platform}`);
-    lines.push(`- 보관·법적 지위: ${actor.custody_legal}`);
-    lines.push(`- 기억 연속: ${actor.memory_continuity}`);
-    lines.push(`- 에너지·부품: ${actor.energy_parts}`);
-    lines.push(`- 정비: ${actor.maintenance}`);
-    lines.push(`- 망·안전: ${actor.network_safety}`);
-    lines.push(`- 창발 목표: ${actor.emergent_goal}`);
-    lines.push(`- 일탈·회복: ${actor.divergence_recovery}`);
-    lines.push(`- 관계: ${(actor.relations ?? []).map((r) => `${r.target} ${r.kind}`).join(', ')}`);
-    lines.push('');
-    lines.push(actor.prose.trim(), '');
+    b.heading(2, text(actor.id, ' · ', actor.display_name, ' (', actor.callsign, ')'))
+    b.list([
+      text(L('급', 'Class'), ': ', actor.cls),
+      text(L('기체', 'Body platform'), ': ', actor.body_platform),
+      text(L('보관·법적 지위', 'Custody and legal status'), ': ', actor.custody_legal),
+      text(L('기억 연속', 'Memory continuity'), ': ', actor.memory_continuity),
+      text(L('에너지·부품', 'Energy and parts'), ': ', actor.energy_parts),
+      text(L('정비', 'Maintenance'), ': ', actor.maintenance),
+      text(L('망·안전', 'Network and safety'), ': ', actor.network_safety),
+      text(L('창발 목표', 'Emergent goal'), ': ', actor.emergent_goal),
+      text(L('일탈·회복', 'Divergence and recovery'), ': ', actor.divergence_recovery),
+      text(L('관계', 'Relations'), ': ', join((actor.relations ?? []).map((relation) => `${relation.target} ${relation.kind}`), ', ')),
+    ])
+    b.nodes(actor.prose)
   }
-  return `${lines.join('\n').trim()}\n`;
+  return b.content
 }
 
-export function renderStoryManifest(atlas, atlasHash) {
-  const lines = ['# 사회 서사 배치 원장', '', banner(atlasHash)];
-  for (const batch of atlas.story_batches ?? []) {
-    lines.push(`## ${batch.id}`, '');
-    lines.push('| 식별자 | 이름 | 출신 | 소집단 | 국가 |');
-    lines.push('| --- | --- | --- | --- | --- |');
-    for (const row of batch.actors ?? []) {
-      lines.push(`| ${row.id} | ${row.name} | ${row.origin} | ${row.subgroup ?? ''} | ${row.state_id ?? ''} |`);
-    }
-    lines.push('');
-  }
-  return `${lines.join('\n').trim()}\n`;
+const scenarioAnchor = (scenario) => headingId(`${scenario.id} · ${localized(scenario.title, 'ko')}`)
+
+function scenarioOutline(b, scenario, publicAnchors = []) {
+  b.heading(3, text(scenario.id, ' · ', scenario.title), publicAnchors)
+  b.list([
+    text(L('단계', 'Stage'), ': ', scenario.stage),
+    text(L('촉발', 'Trigger'), ': ', scenario.trigger),
+    text(L('관련 세력', 'Actors'), ': ', join(scenario.actors ?? [], ', ')),
+    text(L('생태 기제', 'Ecological mechanism'), ': ', scenario.mechanism),
+    text(L('선택지', 'Choices'), ': ', join(scenario.choices ?? [], ' / ')),
+    text(L('결과', 'Outcomes'), ': ', scenario.outcomes),
+    text(L('도덕 비용', 'Moral cost'), ': ', scenario.moral_cost),
+    text(L('원본 항목', 'Source dossier'), ': ', scenario.dossier_ref),
+  ])
 }
 
-export function renderHostileIndex(atlas, atlasHash) {
-  const lines = ['# 서울 생태·변이 도감', '', banner(atlasHash),
-    '같은 서식권에 사는 공통종과 특수 변이를 구분해 읽습니다. 기계 기종, 고정 시설과 군집 현상은 생물 종과 따로 표시합니다.', '',
-    '| 집단 도감 | 생태 분류 | 본문이 있는 항목 |', '| --- | --- | ---: |'];
-  const entries = Object.values(atlas.monster_contents ?? {}).flatMap((content) => content.entries ?? []);
+export function renderHostileIndex(atlas) {
+  const b = preamble(atlas, 'Hostile-Ecology-Index', L('서울 생태·변이 도감', 'Seoul Ecology and Variant Bestiary'))
+  b.paragraph(text(L(
+    '같은 서식권에 사는 공통종과 특수 변이를 구분해 읽습니다. 기계 기종, 고정 시설과 군집 현상은 생물 종과 따로 표시합니다.',
+    'Common species and special variants that share a habitat are read apart. Machine types, fixed sites and swarm phenomena are marked separately from living species.',
+  )))
+  const entries = Object.values(atlas.monster_contents ?? {}).flatMap((content) => content.entries ?? [])
+  b.table(
+    [text(L('집단 도감', 'Group dossier')), text(L('생태 분류', 'Ecological class')), text(L('본문이 있는 항목', 'Entries with text'))],
+    (atlas.hostile_groups ?? []).map((group) => [
+      cell(link(text(group.id, ' · ', group.display_name), 'bestiary', `groups/Hostile-Group-${group.id}`)),
+      cell(GROUP_CATEGORIES[group.category] ?? ''),
+      cell(entries.filter((entry) => entry.group_id === group.id).length),
+    ]),
+  )
   for (const group of atlas.hostile_groups ?? []) {
-    lines.push(`| [${group.id} · ${tableCell(group.display_name)}](groups/Hostile-Group-${group.id}.md) | ${GROUP_CATEGORIES[group.category] ?? ''} | ${entries.filter((entry) => entry.group_id === group.id).length} |`);
+    b.heading(2, text(group.id, ' · ', group.display_name))
+    const scenarios = (group.scenario_outlines ?? []).length > 0
+      ? group.scenario_outlines.map((scenario) => link(scenario.id, 'bestiary', `groups/Hostile-Group-${group.id}`, scenarioAnchor(scenario)))
+      : group.scenario_links ?? []
+    b.list([
+      text(L('현대 불안', 'Modern anxiety'), ': ', group.modern_anxiety),
+      text(L('허구 기원', 'Fictional origin'), ': ', group.fictional_origin),
+      text(L('영역', 'Territory'), ': ', group.territory_migration),
+      text(L('경제', 'Economy'), ': ', group.economy),
+      text(L('생애', 'Life cycle'), ': ', group.lifecycle),
+      ...(group.adaptation ? [text(L('장기 적응', 'Long-term adaptation'), ': ', group.adaptation)] : []),
+      text(L('감각', 'Senses'), ': ', group.senses),
+      text(L('위계', 'Hierarchy'), ': ', group.hierarchy),
+      text(L('연결', 'Links'), ': ', JSON.stringify(group.links)),
+      text(L('상승 1-3', 'Escalation 1-3'), ': ', group.escalation),
+      text(L('교전', 'Combat'), ': ', group.combat_counterplay),
+      text(L('교섭', 'Negotiation'), ': ', group.negotiation),
+      text(L('도덕 비용', 'Moral cost'), ': ', group.moral_cost),
+      text(L('시나리오', 'Scenarios'), ': ', join(scenarios, ', ')),
+    ])
+    for (const scenario of group.scenario_outlines ?? []) scenarioOutline(b, scenario)
   }
-  lines.push('');
-  for (const group of atlas.hostile_groups ?? []) {
-    lines.push(`## ${group.id} · ${group.display_name}`, '');
-    lines.push(`- 현대 불안: ${group.modern_anxiety}`);
-    lines.push(`- 허구 기원: ${group.fictional_origin}`);
-    lines.push(`- 영역: ${group.territory_migration}`);
-    lines.push(`- 경제: ${group.economy}`);
-    lines.push(`- 생애: ${group.lifecycle}`);
-    if (group.adaptation) lines.push(`- 장기 적응: ${group.adaptation}`);
-    lines.push(`- 감각: ${group.senses}`);
-    lines.push(`- 위계: ${group.hierarchy}`);
-    lines.push(`- 연결: ${JSON.stringify(group.links)}`);
-    lines.push(`- 상승 1-3: ${group.escalation}`);
-    lines.push(`- 교전: ${group.combat_counterplay}`);
-    lines.push(`- 교섭: ${group.negotiation}`);
-    lines.push(`- 도덕 비용: ${group.moral_cost}`);
-    const scenarioLinks = (group.scenario_outlines ?? []).length > 0
-      ? group.scenario_outlines.map((scenario) => `[${scenario.id}](groups/Hostile-Group-${group.id}.md#${headingId(`${scenario.id} · ${scenario.title}`)})`)
-      : group.scenario_links ?? [];
-    lines.push(`- 시나리오: ${scenarioLinks.join(', ')}`);
-    lines.push('');
-    for (const scenario of group.scenario_outlines ?? []) {
-      lines.push(`### ${scenario.id} · ${scenario.title}`, '');
-      lines.push(`- 단계: ${scenario.stage}`);
-      lines.push(`- 촉발: ${scenario.trigger}`);
-      lines.push(`- 관련 세력: ${(scenario.actors ?? []).join(', ')}`);
-      lines.push(`- 생태 기제: ${scenario.mechanism}`);
-      lines.push(`- 선택지: ${(scenario.choices ?? []).join(' / ')}`);
-      lines.push(`- 결과: ${scenario.outcomes}`);
-      lines.push(`- 도덕 비용: ${scenario.moral_cost}`);
-      lines.push(`- 원본 항목: ${scenario.dossier_ref}`);
-      lines.push('');
-    }
-  }
-  return `${lines.join('\n').trim()}\n`;
+  return b.content
 }
 
-export function renderChronology(atlas, atlasHash) {
-  const lines = ['# 권역·피지컬 AI 서사선', '', banner(atlasHash)];
+export function renderChronology(atlas) {
+  const b = preamble(atlas, 'Regional-Physical-AI-Arcs', L('권역·피지컬 AI 서사선', 'Regional and Physical AI Arcs'))
   for (const arc of atlas.arcs ?? []) {
-    lines.push(`## ${arc.id} · ${arc.title}`, '');
-    lines.push(`- 가문: ${(arc.house_ids ?? []).join(', ')}`);
-    lines.push(`- 전구: ${(arc.theater_ids ?? []).join(', ')}`);
-    lines.push(`- 합성급: ${(arc.synthetic_classes ?? []).join(', ')}`);
-    lines.push(`- 생태: ${(arc.group_ids ?? []).join(', ')}`);
-    for (const act of arc.acts ?? []) {
-      lines.push(`- ${act.act}막: ${act.summary}`);
-    }
-    lines.push('');
+    b.heading(2, text(arc.id, ' · ', arc.title))
+    b.list([
+      text(L('가문', 'Houses'), ': ', join(arc.house_ids ?? [], ', ')),
+      text(L('전구', 'Theaters'), ': ', join(arc.theater_ids ?? [], ', ')),
+      text(L('합성급', 'Synthetic classes'), ': ', join(arc.synthetic_classes ?? [], ', ')),
+      text(L('생태', 'Ecologies'), ': ', join(arc.group_ids ?? [], ', ')),
+      ...(arc.acts ?? []).map((act) => text(L(`${act.act}막`, `Act ${act.act}`), ': ', act.summary)),
+    ])
   }
-  return `${lines.join('\n').trim()}\n`;
+  return b.content
 }
 
-export function renderRelationLedger(atlas, atlasHash) {
-  const lines = ['# 세계 확장 관계 원장', '', banner(atlasHash)];
-  lines.push('| 출발 | 유형 | 도착 | 근거 |');
-  lines.push('| --- | --- | --- | --- |');
-  for (const rel of atlas.relations ?? []) {
-    lines.push(`| ${rel.from} | ${rel.kind} | ${rel.to} | ${rel.reason} |`);
-  }
-  return `${lines.join('\n').trim()}\n`;
+export function renderRelationLedger(atlas) {
+  const b = preamble(atlas, 'World-Relation-Ledger', L('세계 확장 관계 원장', 'World Expansion Relation Ledger'))
+  b.table(
+    [text(L('출발', 'From')), text(L('유형', 'Kind')), text(L('도착', 'To')), text(L('근거', 'Reason'))],
+    (atlas.relations ?? []).map((relation) => [
+      cell(relation.from_label ?? relation.from), cell(relation.kind), cell(relation.to_label ?? relation.to), cell(relation.reason),
+    ]),
+  )
+  return b.content
 }
 
-export function renderExpansionIndex(atlas, atlasHash) {
-  const lines = ['# 세계 확장 색인', '', banner(atlasHash)];
-  lines.push(`- 가문 ${(atlas.houses ?? []).length} / 전구 ${(atlas.theaters ?? []).length} / 합성 ${(atlas.synthetics ?? []).length}`);
-  lines.push(`- 사회배치 ${(atlas.story_batches ?? []).length} / 생태 ${(atlas.hostile_groups ?? []).length} / 몬스터배치 ${(atlas.monster_batches ?? []).length}`);
-  lines.push('', '## 무소속', '', '| 캐릭터 ID | 인물 |', '| --- | --- |');
-  for (const [id, person] of Object.entries(atlas.unaffiliated)) {
-    lines.push('| ' + tableCell(person.character_id) + ' | [' + tableCell(person.name) + '](/people/person-' + id.slice(1).padStart(4, '0') + ') |');
-  }
-  return `${lines.join('\n').trim()}\n`;
+export function renderExpansionIndex(atlas) {
+  const b = preamble(atlas, 'World-Expansion-Index', L('세계 확장 색인', 'World Expansion Index'))
+  const count = (key) => (atlas[key] ?? []).length
+  b.list([
+    text(L('가문 ', 'Houses '), count('houses'), L(' / 전구 ', ' / Theaters '), count('theaters'), L(' / 합성 ', ' / Synthetics '), count('synthetics')),
+    text(L('사회배치 ', 'Social batches '), count('story_batches'), L(' / 생태 ', ' / Ecologies '), count('hostile_groups'), L(' / 몬스터배치 ', ' / Monster batches '), count('monster_batches')),
+  ])
+  b.heading(2, text(L('무소속', 'Unaffiliated')), ['무소속'])
+  // Person pages are hub routes outside lore, so the cell keeps its route link as written.
+  b.table(
+    [text(L('캐릭터 ID', 'Character ID')), text(L('인물', 'Person'))],
+    Object.entries(atlas.unaffiliated ?? {}).map(([id, person]) => [
+      cell(person.character_id),
+      cell('[', person.name, `](/people/person-${id.slice(1).padStart(4, '0')})`),
+    ]),
+  )
+  return b.content
 }
 
-export function projectionsFromAtlas(atlas, atlasHash) {
-  const out = {};
-  const entries = Object.entries(atlas.monster_contents ?? {}).flatMap(([batchId, content]) =>
-    (content.entries ?? []).map((entry) => ({ ...entry, batchId })));
-  if ((atlas.houses ?? []).length) out[PROJECTION_FILES.houses] = renderHouses(atlas, atlasHash);
-  if ((atlas.theaters ?? []).length) out[PROJECTION_FILES.theaters] = renderTheaters(atlas, atlasHash);
-  if ((atlas.synthetics ?? []).length) out[PROJECTION_FILES.synthetics] = renderSynthetics(atlas, atlasHash);
-  // Story-batch manifest is retired with the batch pages. The registry stays in the atlas.
-  if ((atlas.hostile_groups ?? []).length) out[PROJECTION_FILES.hostileIndex] = renderHostileIndex(atlas, atlasHash);
-  if ((atlas.arcs ?? []).length) out[PROJECTION_FILES.chronology] = renderChronology(atlas, atlasHash);
-  if ((atlas.relations ?? []).length) out[PROJECTION_FILES.relationLedger] = renderRelationLedger(atlas, atlasHash);
-  if ((atlas.arcs ?? []).length) out[PROJECTION_FILES.expansionIndex] = renderExpansionIndex(atlas, atlasHash);
-  // Story-batch pages are retired. Their registry remains inside the atlas; it is not a world route.
-  for (const group of atlas.hostile_groups ?? []) {
-    const n = Number(String(group.id ?? '').slice(1));
-    if (!Number.isInteger(n)) continue;
-    const canonical = (group.scenario_outlines ?? []).length > 0 || Boolean(group.dossier_prose);
-    if (n >= 19 && !canonical) continue;
-    if (canonical) {
-      out[getGroupDossierFilename(group.id)] = renderGroupDossier(group, atlasHash, entries.filter((entry) => entry.group_id === group.id));
-    } else {
-      out[getGroupDossierFilename(group.id)] = renderGroupDossierPage(group, atlasHash);
-    }
-  }
-  return out;
-}
-
-export function renderGroupDossier(group, atlasHash, entries = []) {
-  const lines = [`# ${group.id} · ${group.display_name}`, '', banner(atlasHash), ''];
-  lines.push('[생태·변이 도감](../Hostile-Ecology-Index.md)', '');
+export function renderGroupDossier(group, entries = []) {
+  const b = contentBuilder(`Hostile-Group-${group.id}`)
+  b.heading(1, text(group.id, ' · ', group.display_name))
+  b.paragraph(link(L('생태·변이 도감', 'Ecology and variant bestiary'), 'bestiary', 'Hostile-Ecology-Index'))
   if (group.bestiary) {
-    lines.push('## 공통종과 변이종', '', group.bestiary.common_ecology, '', group.bestiary.variant_relation, '');
+    b.heading(2, text(L('공통종과 변이종', 'Common species and variants')))
+    b.paragraph(text(group.bestiary.common_ecology))
+    b.paragraph(text(group.bestiary.variant_relation))
   }
-  lines.push('## 생태 정보', '', '| 항목 | 기록 |', '| --- | --- |');
-  for (const [label, key] of [
-    ['기원', 'fictional_origin'], ['서식·이동', 'territory_migration'],
-    ['먹이·에너지', 'economy'], ['생애·정비', 'lifecycle'],
-    ['감각', 'senses'], ['집단 행동', 'hierarchy'], ['장기 적응', 'adaptation'],
-  ]) {
-    if (group[key]) lines.push(`| ${label} | ${tableCell(group[key])} |`);
-  }
+  b.heading(2, text(L('생태 정보', 'Ecology')))
+  b.table([text(L('항목', 'Item')), text(L('기록', 'Record'))], [
+    [L('기원', 'Origin'), 'fictional_origin'], [L('서식·이동', 'Habitat and movement'), 'territory_migration'],
+    [L('먹이·에너지', 'Food and energy'), 'economy'], [L('생애·정비', 'Life cycle and upkeep'), 'lifecycle'],
+    [L('감각', 'Senses'), 'senses'], [L('집단 행동', 'Group behavior'), 'hierarchy'], [L('장기 적응', 'Long-term adaptation'), 'adaptation'],
+  ].filter(([, key]) => group[key]).map(([label, key]) => [cell(label), cell(group[key])]))
   if (entries.length > 0) {
-    lines.push('', '## 개체와 전장 편성', '');
-    if (group.bestiary) lines.push(group.bestiary.command_scope, '');
-    lines.push('| 개체·전문 | 구분 | 전장 단위 | 전장 역할 | 기존 역할군 | 출처 배치 |', '| --- | --- | --- | --- | --- | --- |');
+    b.heading(2, text(L('개체와 전장 편성', 'Individuals and battlefield formation')))
+    if (group.bestiary) b.paragraph(text(group.bestiary.command_scope))
+    b.table(
+      [L('개체·전문', 'Individual'), L('구분', 'Type'), L('전장 단위', 'Battlefield unit'), L('전장 역할', 'Battlefield role'), L('기존 역할군', 'Former role class'), L('출처 배치', 'Source batch')].map((label) => text(label)),
+      entries.map((entry) => [
+        cell(link(text(entry.id, ' · ', entry.display_name), 'bestiary', `groups/Hostile-Group-${group.id}`, entry.id.toLowerCase())),
+        cell(entry.bestiary ? BESTIARY_KINDS[entry.bestiary.kind] : ''),
+        cell(entry.bestiary ? BESTIARY_FORMATIONS[entry.bestiary.formation] : ''),
+        cell(entry.bestiary?.battlefield_role ?? ''),
+        cell(entry.role_class),
+        cell(entry.batchId),
+      ]),
+    )
     for (const entry of entries) {
-      const data = entry.bestiary;
-      lines.push(`| [${entry.id} · ${tableCell(entry.display_name)}](#${entry.id.toLowerCase()}) | ${data ? BESTIARY_KINDS[data.kind] : ''} | ${data ? BESTIARY_FORMATIONS[data.formation] : ''} | ${tableCell(data?.battlefield_role)} | ${tableCell(entry.role_class)} | ${entry.batchId} |`);
-    }
-    for (const entry of entries) {
-      const data = entry.bestiary;
-      lines.push('', `<a id="${entry.id.toLowerCase()}"></a>`, '', `### ${entry.id} · ${entry.display_name}`, '',
-        `- 출처 배치: ${entry.batchId}`, `- 기존 역할군: ${entry.role_class}`, `- 연결: ${JSON.stringify(entry.links ?? {})}`, '');
+      const data = entry.bestiary
+      b.heading(3, text(entry.id, ' · ', entry.display_name), [entry.id.toLowerCase()])
+      b.list([
+        text(L('출처 배치', 'Source batch'), ': ', entry.batchId),
+        text(L('기존 역할군', 'Former role class'), ': ', entry.role_class),
+        text(L('연결', 'Links'), ': ', JSON.stringify(entry.links ?? {})),
+      ])
       if (data) {
-        lines.push('| 도감 항목 | 기록 |', '| --- | --- |',
-          `| 구분 | ${BESTIARY_KINDS[data.kind]} |`,
-          `| 전장 단위 | ${BESTIARY_FORMATIONS[data.formation]} |`,
-          `| 전장 역할 | ${tableCell(data.battlefield_role)} |`,
-          `| 공통종·변이와 지휘 범위 | ${tableCell(data.scope_note)} |`, '');
+        b.table([text(L('도감 항목', 'Bestiary item')), text(L('기록', 'Record'))], [
+          [cell(L('구분', 'Type')), cell(BESTIARY_KINDS[data.kind])],
+          [cell(L('전장 단위', 'Battlefield unit')), cell(BESTIARY_FORMATIONS[data.formation])],
+          [cell(L('전장 역할', 'Battlefield role')), cell(data.battlefield_role)],
+          [cell(L('공통종·변이와 지휘 범위', 'Common species, variants and command scope')), cell(data.scope_note)],
+        ])
       }
-      lines.push(String(entry.prose ?? '').trim(), '');
+      b.nodes(entry.prose)
     }
   }
-  lines.push('', '## 서식권 기록', '');
-  lines.push((group.dossier_prose || group.prose || '').trim());
-  lines.push('');
-  if ((group.scenario_outlines ?? []).length > 0) lines.push('## 연결 시나리오', '');
-  for (const scenario of group.scenario_outlines ?? []) {
-    lines.push(`### ${scenario.id} · ${scenario.title}`, '');
-    lines.push(`- 단계: ${scenario.stage}`);
-    lines.push(`- 촉발: ${scenario.trigger}`);
-    lines.push(`- 관련 세력: ${(scenario.actors ?? []).join(', ')}`);
-    lines.push(`- 생태 기제: ${scenario.mechanism}`);
-    lines.push(`- 선택지: ${(scenario.choices ?? []).join(' / ')}`);
-    lines.push(`- 결과: ${scenario.outcomes}`);
-    lines.push(`- 도덕 비용: ${scenario.moral_cost}`);
-    lines.push(`- 원본 항목: ${scenario.dossier_ref}`);
-    lines.push('');
-  }
-  return `${lines.join('\n').trim()}\n`;
+  b.heading(2, text(L('서식권 기록', 'Habitat record')))
+  b.nodes(group.dossier_prose?.length ? group.dossier_prose : group.prose)
+  if ((group.scenario_outlines ?? []).length > 0) b.heading(2, text(L('연결 시나리오', 'Linked scenarios')))
+  // The index links each outline by its Korean heading fragment; EN pages keep it as an alias.
+  for (const scenario of group.scenario_outlines ?? []) scenarioOutline(b, scenario, [scenarioAnchor(scenario)])
+  return b.content
 }
 
-export function renderStoryBatchPage(batchId, content, atlasHash) {
-  const lines = [`# 사회 서사 배치 ${batchId}`, '', banner(atlasHash)];
-  for (const actor of content.actors ?? []) {
-    lines.push(`## 인물 ${actor.id} · ${actor.name}`, '');
-    if (actor.links) {
-      lines.push(`- 연결: house=${actor.links.house ?? ''} theater=${actor.links.theater ?? ''} scenarios=${(actor.links.scenarios ?? []).join(',')}`);
-      lines.push('');
-    }
-    for (const key of STORY_SECTION_KEYS) {
-      lines.push(`### ${key}`, '');
-      lines.push(String(actor.sections?.[key] ?? '').trim(), '');
-    }
-    lines.push('### 3막');
-    for (const act of actor.arc ?? []) {
-      lines.push(`- ${act.act}막: ${act.summary}`);
-    }
-    lines.push('', '### 분기 결말 목록');
-    for (const out of actor.outcomes ?? []) {
-      lines.push(`- ${out.id}: ${out.summary}`);
-    }
-    lines.push('');
+const slugOf = (path) => path.split('/').at(-1).replace(/\.json$/u, '')
+const domainOf = (path) => path.startsWith('factions/') ? 'factions' : path.startsWith('bestiary/') ? 'bestiary' : 'root'
+const categoryOf = (path) => path.startsWith('bestiary/') ? 'bestiary'
+  : path === PROJECTION_PATHS_BY_KIND.theaters ? 'places'
+    : path === PROJECTION_PATHS_BY_KIND.houses || path === PROJECTION_PATHS_BY_KIND.relationLedger ? 'factions'
+      : path === PROJECTION_PATHS_BY_KIND.synthetics ? 'people-and-machines' : 'overview'
+
+function projectionEnvelope(path, content, sourceHash, atlas, group = null, entries = []) {
+  const slug = slugOf(path)
+  const page = atlas.projection_pages?.[slug] ?? {}
+  const title = content.find((node) => node.kind === 'heading').text
+  const summary = page.summary ? text(page.summary) : title
+  const sourceRefs = [ATLAS_SOURCE, group ? `data.atlas.hostile_groups[id=${group.id}]` : `data.atlas.projection_pages.${slug}`]
+  const data = group ? {
+    ecology: {
+      description: group.bestiary?.common_ecology ?? group.prose[0]?.text ?? group.display_name,
+      variants: entries.map((entry) => ({ id: entry.id, source_batch: entry.batchId })),
+    },
+    integration: {
+      manifest: 'TOOL/tools/wiki/confirmed-integration-manifest.json',
+      excluded: [{ id: 'M007', kind: 'monsters' }, { id: 'B017', kind: 'social' }, { id: 'B020', kind: 'social' }],
+    },
+  } : {}
+  return {
+    version: 1,
+    domain: domainOf(path),
+    id: group?.id ?? `DOC:${slug}`,
+    slug,
+    categories: [categoryOf(path)],
+    status: 'approved',
+    tense: { en: 'present', ko: 'present' },
+    provenance: {
+      original_anchor: ATLAS_SOURCE,
+      original_hash: sourceHash,
+      history: ['world-atlas-projections.v2'],
+    },
+    source: { kind: 'computed', refs: sourceRefs, hash: sourceHash },
+    locales: {
+      en: { title: title.en, summary: summary.en, tense: 'present' },
+      ko: { title: title.ko, summary: summary.ko, tense: 'present' },
+    },
+    content,
+    data,
   }
-  return `${lines.join('\n').trim()}\n`;
 }
 
-export function renderGroupDossierPage(group, atlasHash) {
-  const lines = [`# 적대 생태 도сье ${group.id} · ${group.display_name}`, '', banner(atlasHash)];
-  for (const [label, key] of [
-    ['현대 불안', 'modern_anxiety'],
-    ['허구 기원', 'fictional_origin'],
-    ['영역·이동', 'territory_migration'],
-    ['경제', 'economy'],
-    ['생애', 'lifecycle'],
-    ['감각', 'senses'],
-    ['위계', 'hierarchy'],
-    ['상승', 'escalation'],
-    ['교전', 'combat_counterplay'],
-    ['교섭', 'negotiation'],
-    ['도덕 비용', 'moral_cost'],
-  ]) {
-    lines.push(`### ${label}`, '', String(group[key] ?? '').trim(), '');
+// Returns relative projection path -> JSON authoring envelope, built from the atlas's bilingual fields.
+export function projectionsFromAtlas(document, sourceHash) {
+  const atlas = document.data.atlas
+  const entries = Object.entries(atlas.monster_contents ?? {}).flatMap(([batchId, content]) =>
+    (content.entries ?? []).map((entry) => ({ ...entry, batchId })))
+  const pages = [
+    [PROJECTION_PATHS_BY_KIND.houses, renderHouses, (atlas.houses ?? []).length],
+    [PROJECTION_PATHS_BY_KIND.theaters, renderTheaters, (atlas.theaters ?? []).length],
+    [PROJECTION_PATHS_BY_KIND.synthetics, renderSynthetics, (atlas.synthetics ?? []).length],
+    [PROJECTION_PATHS_BY_KIND.hostileIndex, renderHostileIndex, (atlas.hostile_groups ?? []).length],
+    [PROJECTION_PATHS_BY_KIND.chronology, renderChronology, (atlas.arcs ?? []).length],
+    [PROJECTION_PATHS_BY_KIND.relationLedger, renderRelationLedger, (atlas.relations ?? []).length],
+    [PROJECTION_PATHS_BY_KIND.expansionIndex, renderExpansionIndex, (atlas.arcs ?? []).length],
+  ]
+  const output = {}
+  for (const [path, render, present] of pages) {
+    if (present) output[path] = projectionEnvelope(path, render(atlas), sourceHash, atlas)
   }
-  lines.push('### 연결', '', '```json', JSON.stringify(group.links ?? {}, null, 2), '```', '');
-  lines.push('### 시나리오', '', (group.scenario_links ?? []).map((s) => `- ${s}`).join('\n'), '');
-  lines.push('### 본문', '', String(group.dossier_prose ?? group.prose ?? '').trim(), '');
-  return `${lines.join('\n').trim()}\n`;
+  // Story-batch and monster-batch pages are retired; their registries remain inside the atlas.
+  for (const group of atlas.hostile_groups ?? []) {
+    const groupEntries = entries.filter((entry) => entry.group_id === group.id)
+    const path = getGroupDossierPath(group.id)
+    output[path] = projectionEnvelope(path, renderGroupDossier(group, groupEntries), sourceHash, atlas, group, groupEntries)
+  }
+  return output
 }

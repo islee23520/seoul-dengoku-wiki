@@ -356,7 +356,7 @@
       "properties": {"id": {"$ref": "#/$defs/entryId"}, "display_name": {"$ref": "#/$defs/localized"}, "bestiary": {"$ref": "#/$defs/entryBestiary"}, "group_id": {"$ref": "#/$defs/groupId"}, "role_class": {"$ref": "#/$defs/localized"}, "links": {"$ref": "#/$defs/entryLinks"}, "prose": {"$ref": "#/$defs/nodes"}}, "additionalProperties": false
     },
     "monsterContent": {
-      "type": "object", "required": ["id", "owner", "source_kind", "source_anchors", "entries"],
+      "type": "object", "required": ["entries"],
       "properties": {"id": {"$ref": "#/$defs/batchId"}, "owner": {"type": "string", "minLength": 1}, "source_kind": {"const": "original-fiction"}, "source_anchors": {"$ref": "#/$defs/stringList"}, "entries": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/monsterEntry"}}}, "additionalProperties": false
     },
     "arc": {

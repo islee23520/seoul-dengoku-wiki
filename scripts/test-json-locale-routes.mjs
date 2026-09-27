@@ -1,8 +1,11 @@
 import assert from 'node:assert/strict'
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
+import { mkdir, mkdtemp, readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
+import { tmpdir } from 'node:os'
 import test from 'node:test'
 
+import { approvedDocuments } from './catalog-admission.mjs'
 import { localizedDocuments, localizedRoute } from './localized-documents.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { pageFailures, privateLinkFailures } from './gate.mjs'
@@ -11,6 +14,23 @@ const wikiRoot = resolve(import.meta.dirname, '..')
 const source = JSON.parse(readFileSync(resolve(wikiRoot, 'lore/culture/Martial-Paths.json'), 'utf8'))
 const renderJson = (value, locale) => renderLoreMarkdown(value, locale, (_domain, slug) => `${slug}.md`)
 const titleFallback = (markdown, slug) => markdown.match(/^#\s+(.+)$/m)?.[1] ?? slug
+const fixtureDocument = ({ id, slug, domain = 'root', categories, sourceKind = 'computed' }) => ({
+  version: 1, domain, id, slug, status: 'approved', categories,
+  tense: { en: 'present', ko: 'present' },
+  locales: {
+    en: { title: `${slug} EN`, summary: `${slug} summary`, tense: 'present' },
+    ko: { title: `${slug} KO`, summary: `${slug} 요약`, tense: 'present' },
+  },
+  source: { kind: sourceKind, refs: ['lore/World-Narrative-Atlas.json'] },
+  provenance: { original_anchor: 'lore/World-Narrative-Atlas.json', original_hash: null, history: [] },
+  content: [{
+    kind: 'heading', anchor: `${slug.toLowerCase()}-heading`, depth: 1,
+    text: { en: `${slug} EN`, ko: `${slug} KO` },
+  }],
+  data: slug === 'World-Narrative-Atlas'
+    ? { atlas: { schema: 'world-narrative-atlas.v2', document: { id: 'WNA-001' } } }
+    : {},
+})
 
 test('one JSON source document produces an English route and keeps the Korean URL', () => {
   const [ko, en, ...rest] = localizedDocuments({ domain: 'world', slug: 'Martial-Paths', json: source, renderJson, titleFallback })
@@ -32,6 +52,31 @@ test('an unmigrated Markdown corpus keeps its single Korean path', () => {
 
 test('one corpus is never published from both Markdown and JSON', () => {
   assert.throws(() => localizedDocuments({ domain: 'world', slug: 'Martial-Paths', json: source, markdown: '# 무공\n', renderJson, titleFallback }), /E_DUAL_SOURCE:Martial-Paths/)
+})
+
+test('an atlas JSON source and two JSON projections produce matching KO and EN route sets', async () => {
+  const root = await mkdtemp(resolve(tmpdir(), 'wiki-t14-fixture-'))
+  await mkdir(resolve(root, 'bestiary/groups'), { recursive: true })
+  const fixtures = [
+    fixtureDocument({ id: 'WNA-001', slug: 'World-Narrative-Atlas', categories: ['overview'], sourceKind: 'original-fiction' }),
+    fixtureDocument({ id: 'DOC:Operating-Houses', slug: 'Operating-Houses', categories: ['factions'] }),
+    fixtureDocument({ id: 'G01', slug: 'Hostile-Group-G01', domain: 'bestiary', categories: ['bestiary'] }),
+  ]
+  await writeFile(resolve(root, 'World-Narrative-Atlas.json'), JSON.stringify(fixtures[0]))
+  await writeFile(resolve(root, 'Operating-Houses.json'), JSON.stringify(fixtures[1]))
+  await writeFile(resolve(root, 'bestiary/groups/Hostile-Group-G01.json'), JSON.stringify(fixtures[2]))
+  const admitted = await approvedDocuments(root, { checkAtlas: async () => {}, includeWorldIndex: false })
+  const localized = []
+  for (const { source: sourcePath, route } of admitted) {
+    const value = JSON.parse(await readFile(resolve(wikiRoot, sourcePath.replace(/^lore\//, `${root}/`)), 'utf8'))
+    localized.push(...localizedDocuments({ domain: 'world', slug: route.split('/').at(-1), json: value, renderJson, titleFallback }))
+  }
+  assert.deepEqual(localized.filter(({ locale }) => locale === 'ko').map(({ route }) => route).sort(), [
+    '/world/Hostile-Group-G01', '/world/Operating-Houses', '/world/World-Narrative-Atlas',
+  ])
+  assert.deepEqual(localized.filter(({ locale }) => locale === 'en').map(({ route }) => route).sort(), [
+    '/en/world/Hostile-Group-G01', '/en/world/Operating-Houses', '/en/world/World-Narrative-Atlas',
+  ])
 })
 
 test('the generated contract carries both locale routes of the JSON document', () => {
