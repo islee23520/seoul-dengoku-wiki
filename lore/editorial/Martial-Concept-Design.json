@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "domain": "editorial",
+  "id": "DOC:Martial-Concept-Design",
+  "slug": "martial-concept-design",
+  "categories": [
+    "editorial"
+  ],
+  "status": "draft",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "provenance": {
+    "original_anchor": "https://github.com/islee23520/seoul-dengoku-wiki/issues/16",
+    "original_hash": null,
+    "history": [
+      "2026-09-28: design drafted for wiki issue #16 against lore/culture/Martial-Paths.json; Korean written first, English rendered block by block."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "https://github.com/islee23520/seoul-dengoku-wiki/issues/16",
+      "lore/culture/Martial-Paths.json",
+      "lore/factions/Diaspora-Corridors.json",
+      "WORLD_BUILDING_GUIDE.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Martial concept design",
+      "summary": "A design answering issue #16 within the current martial canon.",
+      "tense": "present"
+    },
+    "ko": {
+      "title": "무협 컨셉 설계안",
+      "summary": "이슈 #16의 요구에 현재 무공 정본 안에서 답하는 설계안.",
+      "tense": "present"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "design",
+      "depth": 1,
+      "text": {
+        "en": "Martial concept design",
+        "ko": "무협 컨셉 설계안"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "design-p1",
+      "text": {
+        "en": "Issue #16 asks for three things: a martial school that combat characters train in, a beggar group carrying the Gaebang of wuxia fiction into later Seoul, and a high-context packet so the proposer can write ideation drafts. This design answers the three within the current martial canon.",
+        "ko": "이슈 #16은 전투 인물이 배운 무술 유파, 개방을 옮긴 거지 무리, 제안자가 아이데이션 초안을 쓸 수 있는 고맥락 자료 세 가지를 요구한다. 이 설계안은 현재 무공 정본 안에서 세 요구에 답한다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "canon",
+      "depth": 2,
+      "text": {
+        "en": "Current martial canon",
+        "ko": "현재 무공 정본"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "canon-p1",
+      "text": {
+        "en": [
+          {
+            "text": "The authoring source for martial arts is "
+          },
+          {
+            "text": "Martial paths",
+            "link": {
+              "domain": "culture",
+              "slug": "Martial-Paths"
+            }
+          },
+          {
+            "text": ". Martial arts cover only personal training tied to fighting, in three branches: combat arts, inner methods, and footwork and lightness skills."
+          }
+        ],
+        "ko": [
+          {
+            "text": "무공의 저작 원천은 "
+          },
+          {
+            "text": "무공",
+            "link": {
+              "domain": "culture",
+              "slug": "Martial-Paths"
+            }
+          },
+          {
+            "text": " 문서다. 무공은 싸움과 이어지는 개인 수행이며 전투 무공, 심법, 보법·경공의 세 갈래로 나뉜다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "canon-p2",
+      "text": {
+        "en": "Livelihoods, facility operation, equipment, rites and roll work stay with the school as field work. Formation drills for many people belong to command and organisation.",
+        "ko": "생업, 시설 운용, 장비, 의례, 명부 업무는 유파 현장의 업무로 남는다. 여러 사람이 맞추는 대열은 지휘와 편성에 속한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "canon-p3",
+      "text": {
+        "en": "Each school and branch is written with one formal name. Everyday nicknames and slurs are not used.",
+        "ko": "유파와 갈래는 정식명 하나로 적는다. 생활 별칭과 멸칭은 쓰지 않는다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "canon-schools",
+      "columns": [
+        {
+          "en": "Formal name",
+          "ko": "정식명"
+        },
+        {
+          "en": "2026 origin",
+          "ko": "2026년의 기원"
+        },
+        {
+          "en": "Main training fields",
+          "ko": "주 수련 분야"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Sluice-Breath Method",
+            "ko": "수문호흡법"
+          },
+          {
+            "en": "Treatment-plant and lock-gate watches",
+            "ko": "정수장·갑문 당직"
+          },
+          {
+            "en": "Inner practice, footwork and lightness practice, staff-method combat art",
+            "ko": "심법, 보법·경공, 봉법 계열 전투 무공"
+          }
+        ],
+        [
+          {
+            "en": "Wheel-Tempering Work",
+            "ko": "차륜강체공"
+          },
+          {
+            "en": "Depot maintenance",
+            "ko": "차량기지 정비"
+          },
+          {
+            "en": "Inner practice, footwork and lightness practice, staff-method combat art",
+            "ko": "심법, 보법·경공, 봉법 계열 전투 무공"
+          }
+        ],
+        [
+          {
+            "en": "Pulpit-Call Method",
+            "ko": "강단호명법"
+          },
+          {
+            "en": "Church elders and deacons",
+            "ko": "예배당 장로·집사"
+          },
+          {
+            "en": "Footwork",
+            "ko": "보법"
+          }
+        ],
+        [
+          {
+            "en": "Escort Iron-Wall Formation",
+            "ko": "호위철벽진"
+          },
+          {
+            "en": "Guard and service remnants",
+            "ko": "경비·병역 잔해"
+          },
+          {
+            "en": "Inner practice, shield art, staff method",
+            "ko": "심법, 방패술, 봉법"
+          }
+        ],
+        [
+          {
+            "en": "Bamboo-Sword Chain Method",
+            "ko": "죽검연환법"
+          },
+          {
+            "en": "Traces of kendo, iaido, and koryu; school floors and bamboo staves",
+            "ko": "검도·거합도·고류의 흔적, 학교 마루와 죽대"
+          },
+          {
+            "en": "Body conditioning · Movement and footwork",
+            "ko": "신체 단련, 이동·보법"
+          }
+        ],
+        [
+          {
+            "en": "Linked-Kick Method",
+            "ko": "연각권법"
+          },
+          {
+            "en": "Traces of taekwondo and school physical education; mats, padding, and drill calls",
+            "ko": "태권도와 학교 체육의 흔적, 매트·호구·구령"
+          },
+          {
+            "en": "Body conditioning · Movement and footwork",
+            "ko": "신체 단련, 이동·보법"
+          }
+        ],
+        [
+          {
+            "en": "Bayonet fighting",
+            "ko": "총검술"
+          },
+          {
+            "en": "Bayonet drill of military and conscription remnants, and empty rifles",
+            "ko": "군·징집 잔존의 총검 훈련과 탄이 떨어진 소총"
+          },
+          {
+            "en": "Body conditioning · Weapons and tools",
+            "ko": "신체 단련, 무기·도구"
+          }
+        ],
+        [
+          {
+            "en": "Resonant-Aiming Method",
+            "ko": "감응조준법"
+          },
+          {
+            "en": "Small-arms drill built on recovered lenses, sensors, and drive terminals",
+            "ko": "회수 렌즈·센서·구동 단자 기반의 소화기 수련"
+          },
+          {
+            "en": "Breath and endurance · Weapons and tools",
+            "ko": "호흡·지구력, 무기·도구"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "canon-p4",
+      "text": {
+        "en": "Taekwondo, Taekkyeon, Subak, Ssireum, Judo, Bonguk Geombeop, Taijiquan and Taiji Jianfa keep their real names. Shaolin, Huashan and the martial-art names from Jin Yong's novels are also written as they are.",
+        "ko": "태권도, 택견, 수박, 씨름, 유도, 본국검법, 태극권, 태극검법은 실제 이름을 그대로 쓴다. 소림사와 화산파, 김용 소설의 무공명도 그대로 적는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "canon-p5",
+      "text": {
+        "en": "Gaebang martial arts form a branch outside the eight schools. In Anguk Chongnim, the Gaebang arts Hangryong Sip-pal Jang and Tagu Bongbeop are handed down along a line separate from Shaolin martial arts.",
+        "ko": "개방 무공은 여덟 유파 밖의 무술 갈래다. 안국총림에서는 개방의 항룡십팔장·타구봉법이 소림 무공과 다른 줄로 전해진다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "canon-p6",
+      "text": {
+        "en": "The Transfer Circle is a mobile mutual-aid network. Station workers, porters, repairers, interpreters, carers, traders and travellers take part in it while keeping their own homes and affiliations.",
+        "ko": "환승계는 이동 상호부조망이다. 역무 경험자, 짐꾼, 수리공, 통역자, 돌봄 노동자, 장사꾼, 여행자가 각자의 집과 소속을 유지한 채 참여한다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "school",
+      "depth": 2,
+      "text": {
+        "en": "Request 1: a martial school",
+        "ko": "요구 1: 무술 유파"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "school-p1",
+      "text": {
+        "en": "The proposer's example was a taekwondo school. Taekwondo is written under its real name, and the successor school that carries its traces in 2126 Seoul is the Linked-Kick Method.",
+        "ko": "제안자가 든 예는 태권도파다. 태권도는 실제 이름으로 적고, 2126년 서울에서 그 흔적을 이은 후계 유파는 연각권법이다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "school-p2",
+      "text": {
+        "en": "Mat-duty keepers teach the Linked-Kick Method as linked kicks and punches and shifts of the centre of weight. Fighters of this line train with bare hands, mats and patched protectors.",
+        "ko": "연각권법은 매트 당직자가 이어지는 발과 주먹, 중심 이동으로 가르친다. 이 줄의 수련자는 맨손과 매트와 기운 호구로 수련한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "school-p3",
+      "text": {
+        "en": "A character who learned taekwondo itself is recorded through that person's own teacher, training and equipment. The name alone does not settle who taught whom in 2126.",
+        "ko": "태권도 자체를 익힌 인물은 그 사람의 사제와 수련과 장비 기록으로 적는다. 이름만으로 2126년의 누가 누구에게 배웠는지는 정해지지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "school-p4",
+      "text": {
+        "en": "Growth through training passes from person to person. A teacher manages transmission together with its taboos, and a student who learns two schools goes through a dual-training review.",
+        "ko": "수련에 따른 성장은 사람에게서 사람으로 이어진다. 무공 스승이 금기와 함께 전수를 관리하고, 두 유파를 함께 익히는 수련자는 겸전 심사를 거친다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "school-p5",
+      "text": {
+        "en": "Martial rank and noble rank are recorded separately. A president can be an apprentice, and a clerk can be an elder.",
+        "ko": "무공 품계와 작위는 따로 기록한다. 대통령이 견습일 수 있고 주사가 원로일 수 있다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "beggars",
+      "depth": 2,
+      "text": {
+        "en": "Request 2: the beggar group",
+        "ko": "요구 2: 거지 무리"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "beggars-p1",
+      "text": {
+        "en": "Following the director's direction, Gaebang martial arts run from the religious power to Chongnim, then to Gaebang transmission and Tagu Bongbeop.",
+        "ko": "디렉터가 정한 방향에 따라 개방의 무공은 교 세력에서 총림을 거쳐 개방 전수와 타구봉법으로 이어진다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "beggars-p2",
+      "text": {
+        "en": "Belonging and learning are recorded separately. Membership in Chongnim alone is not recorded as having learned Gaebang or Shaolin martial arts.",
+        "ko": "소속과 습득은 따로 기록한다. 총림 구성원이라는 사실만으로 개방 무공이나 소림 무공을 익힌 것으로 적지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "beggars-p3",
+      "text": {
+        "en": "Pickpocketing and smuggling on the subway are disputed inside the Transfer Circle. What some members do is not laid on every member.",
+        "ko": "지하철의 소매치기와 밀수는 환승계 안에서도 다툼의 대상이다. 일부 계원의 행위를 전체 계원에게 돌리지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "beggars-p4",
+      "text": {
+        "en": "A pickpocket is recorded by livelihood and deed. Whether a given pickpocket also learned Gaebang martial arts is written only from that person's own transmission record.",
+        "ko": "소매치기는 생업과 행위로 기록한다. 그 사람이 개방 무공도 익혔는지는 본인의 전수 기록으로만 적는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "beggars-p5",
+      "text": {
+        "en": "Sharing leftover rations in the corridors and unclaimed ground is a custom. Begging is recorded as begging and not as a weapon.",
+        "ko": "회랑과 무주지에서 남은 배급을 나누는 일은 습속이다. 구걸은 구걸로 기록하고 병기로 읽지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "daerim",
+      "depth": 2,
+      "text": {
+        "en": "Fit with the Daerim power",
+        "ko": "대림 세력과의 정합"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "daerim-p1",
+      "text": {
+        "en": "The power in Daerim that the owner mentioned is the Daerim and Garibong Korean-Chinese corridor. The corridor overlaps Standards Alliance territory and keeps dual Chinese–Korean ledgers and interpretation trade in parts and food.",
+        "ko": "소유자가 말한 대림의 세력은 대림·가리봉 중국동포 회랑이다. 이 회랑은 규격맹 영토와 겹치며 중국어·한국어 이중 장부와 부품·식량의 통역 거래를 이어 간다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "daerim-p2",
+      "text": {
+        "en": "This design keeps the pickpocket group out of the Daerim corridor. Placing it there would tie a migrant community to crime.",
+        "ko": "이 설계안은 소매치기 무리를 대림 회랑에 두지 않는다. 그곳에 두면 이주민 공동체를 범죄와 묶게 된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "daerim-p3",
+      "text": {
+        "en": "Martial activity is recorded where it appears. The corridor's practitioners, if any, are written from each person's own teacher and school.",
+        "ko": "강호 갈래의 활동은 출현한 자리에서 기록한다. 회랑에 수련자가 있다면 각자의 스승과 유파로 적는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "names",
+      "depth": 2,
+      "text": {
+        "en": "Names used",
+        "ko": "사용한 이름"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "names-p1",
+      "text": {
+        "en": "Every school, branch and technique name in this design already appears in the martial canon or is a real martial art. The design adds no new school, branch, technique or organisation name.",
+        "ko": "이 설계안의 유파·갈래·기법 이름은 모두 무공 정본에 이미 있거나 실제 무술 이름이다. 새 유파명, 갈래명, 기법명, 조직명은 더하지 않았다."
+      }
+    }
+  ],
+  "data": {}
+}
