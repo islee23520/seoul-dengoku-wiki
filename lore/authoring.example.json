@@ -59,6 +59,54 @@
           }
         ]
       }
-    ]
+    ],
+    "atlas": {
+      "schema": "world-narrative-atlas.v2",
+      "document": {
+        "id": "__EXAMPLE__:document",
+        "display_name": {"en": "Example atlas", "ko": "예시 아틀라스"},
+        "document_status": "active",
+        "owner": "__EXAMPLE__:owner",
+        "support_reviewers": [],
+        "revision": "__EXAMPLE__:revision",
+        "last_verified_commit": "__EXAMPLE__:commit",
+        "source_kind": "original-fiction",
+        "source_anchors": ["__EXAMPLE__:source"],
+        "dependencies": [],
+        "related_ids": [],
+        "projection_targets": [],
+        "change_ledger_entry": "__EXAMPLE__:change",
+        "verification_state": "__EXAMPLE__:state"
+      },
+      "writing_contract": {
+        "narrative_register": "__EXAMPLE__:narrative",
+        "guide_register": "__EXAMPLE__:guide",
+        "viewpoint": "__EXAMPLE__:viewpoint",
+        "honorifics": "__EXAMPLE__:honorifics",
+        "multicultural_rule": "__EXAMPLE__:multicultural",
+        "synthetic_rule": "__EXAMPLE__:synthetic",
+        "hostile_rule": "__EXAMPLE__:hostile",
+        "source_kind_visible": true
+      },
+      "projection_pages": {
+        "__EXAMPLE__-projection": {
+          "title": {"en": "Example projection", "ko": "예시 투영"},
+          "summary": {"en": "Example only.", "ko": "예시 전용."},
+          "intro": {"en": "Example only.", "ko": "예시 전용."}
+        }
+      },
+      "states": [],
+      "humans": [],
+      "unaffiliated": {},
+      "houses": [],
+      "theaters": [],
+      "synthetics": [],
+      "hostile_groups": [],
+      "monster_batches": [],
+      "monster_contents": {},
+      "arcs": [],
+      "relations": [],
+      "change_ledger": []
+    }
   }
 }
