@@ -98,6 +98,7 @@ export default function OpeningTerritoryMap() {
   const [selectedLine, setSelectedLine] = useState('all')
   const [stateFilter, setStateFilter] = useState('all')
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [showRegionDetail, setShowRegionDetail] = useState(true)
   const [selectedStation, setSelectedStation] = useState<DisplayStation | null>(null)
   const [regionalStation, setRegionalStation] = useState<Rail['stations'][number] | null>(null)
   const [selectedVassal, setSelectedVassal] = useState<string | null>(null)
@@ -273,12 +274,13 @@ export default function OpeningTerritoryMap() {
   const [pr, pb] = toMap(e1, n0)
   const framePeninsula = () => { setFrame('peninsula'); setBox({ x: px, y: py, width: pr - px, height: pb - py }) }
   const frameSeoul = () => { setFrame('seoul'); setBox({ x: 0, y: 0, width: data.width, height: data.height }) }
-  const chooseState = (state: State) => { setSelectedId(state.capitalRegionId); setStateFilter(state.id); setSelectedStation(null); setRegionalStation(null); setSelectedVassal(null); setSelectedLandmark(null); setDetailOpen(true) }
+  const chooseState = (state: State) => { setSelectedId(state.capitalRegionId); setShowRegionDetail(false); setStateFilter(state.id); setSelectedStation(null); setRegionalStation(null); setSelectedVassal(null); setSelectedLandmark(null); setDetailOpen(true) }
   const chooseRegion = (region: Region) => {
     setSelectedId(region.id)
+    setShowRegionDetail(true)
     const state = states.get(region.polities[0])
     setStateFilter(state?.id ?? 'all')
-    setSelectedStation(null); setRegionalStation(null); setDetailOpen(true)
+    setSelectedStation(null); setRegionalStation(null); setSelectedVassal(null); setSelectedLandmark(null); setDetailOpen(true)
   }
   const selectStation = (station: DisplayStation) => { setSelectedStation(station); setRegionalStation(null); setSelectedId(null); setStateFilter('all'); setSelectedVassal(null); setSelectedLandmark(null); setDetailOpen(true) }
   const onPointerDown = (event: PointerEvent<SVGSVGElement>) => { dragged.current = false; start.current = { x: event.clientX, y: event.clientY, box, moved: false } }
@@ -362,8 +364,8 @@ export default function OpeningTerritoryMap() {
       </div>
       {(selectedState || selectedStation || regionalStation || selectedLandmark || selectedVassal || selected) && <button type="button" className="territory-detail-toggle" aria-expanded={detailOpen} aria-controls="territory-detail-panel" onClick={() => setDetailOpen((open) => !open)}>{detailOpen ? '정보 접기' : '정보 펼치기'}</button>}
       {detailOpen && <aside id="territory-detail-panel" className="territory-detail" aria-label="선택 정보" aria-live="polite"><button type="button" className="territory-detail-close" onClick={() => setDetailOpen(false)}>정보 접기</button>
-        {selectedState && <section><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3>{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>중심역</th><td>{selectedState.capitalStationId}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr></tbody></table><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.name} 국가 상세 보기</Link></section>}
-        {selected && !selectedState && <section><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3>{selected.name}</h3><p>{selected.openingState}</p><p>{selected.summary}</p></section>}
+        {selectedState && !showRegionDetail && <section><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3>{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>중심역</th><td>{selectedState.capitalStationId}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr></tbody></table><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.name} 국가 상세 보기</Link></section>}
+        {selected && showRegionDetail && <section><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3>{selected.name}</h3><p>{selected.openingState}</p><p>{selected.summary}</p></section>}
         {selectedStation && <section><p className="wiki-domain-label">서울 역 정보</p><h3>{selectedStation.names.join(' · ')}</h3><table className="person-data-table"><tbody><tr><th>구</th><td>{selectedStation.district}</td></tr><tr><th>노선·환승</th><td>{selectedStation.lineIds.map((id) => data.lines[id]?.name ?? id).join(' · ')}</td></tr><tr><th>역 상태</th><td>{selectedStation.control.status === 'held' ? '점유' : selectedStation.control.status === 'contested' ? '분쟁' : selectedStation.control.status === 'vacant' ? '무주지' : '상태 기록 없음'}</td></tr><tr><th>관여 국가</th><td>{selectedStation.control.polityNames.join(' · ') || '기록 없음'}</td></tr><tr><th>경비·통행 우선</th><td>{selectedStation.control.primary ? states.get(selectedStation.control.primary)?.name ?? selectedStation.control.primary : '기록 없음'}</td></tr><tr><th>지배 계층</th><td>{selectedStation.control.hierarchy.state} → {selectedStation.control.hierarchy.regionalAuthority} → {selectedStation.control.hierarchy.stationManager}</td></tr>{selectedStation.lineIds.map((id) => { const entry = stationDetail?.[id] ?? selectedStation.memberIds.map((member) => underground?.stations[member]?.[id]).find(Boolean); return entry ? <tr key={id}><th>{data.lines[id]?.name ?? id} 승강장</th><td>{entry.floors ?? '층 기록 없음'} · {entry.platformM == null ? '심도 기록 없음' : `${entry.platformM} m`} · 출구 {entry.exits ?? '기록 없음'}</td></tr> : null })}</tbody></table></section>}
         {regionalStation && <section><p className="wiki-domain-label">광역철도 역 정보</p><h3>{regionalStation.name}</h3><table className="person-data-table"><tbody><tr><th>노선·환승</th><td>{regionalStation.lineIds.map((id) => data.lines[id]?.name ?? id).join(' · ')}</td></tr><tr><th>지표 권역</th><td>{selectedRegionalHolder?.city ?? '서울 외 지도 권역'}</td></tr>{selectedSuzerain && <tr><th>속국·본국</th><td>{selectedSuzerain.name} · {states.get(selectedSuzerain.suzerain)?.name}</td></tr>}</tbody></table><p>현행 철도 위치 자료의 역이다. 국가 통제는 별도 역 점령 원장으로 확인한다.</p></section>}
         {selectedVassalData && <section><p className="wiki-domain-label">선택된 속국 · {selectedVassalData.city}</p><h3>{selectedVassalData.name}</h3><p>본국 {states.get(selectedVassalData.suzerain)?.name} · {data.lines[selectedVassalData.lineId]?.name}</p><p>{selectedVassalData.duty}</p></section>}
