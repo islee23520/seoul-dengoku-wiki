@@ -1,5 +1,5 @@
-import { lazy, Suspense } from 'react'
-import { Navigate, Routes, Route, useLocation } from 'react-router-dom'
+import { lazy, Suspense, useEffect } from 'react'
+import { Navigate, Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import HomePage from './pages/HomePage'
 import ArticlePage from './pages/ArticlePage'
@@ -11,6 +11,30 @@ const CategoriesPage = lazy(() => import('./pages/CategoriesPage'))
 import StatesPage from './pages/StatesPage'
 import UpdatesPage from './pages/UpdatesPage'
 import { resolveLegacyRegionRoute, worldRegionMapRoute } from './wikiRouting'
+import { wikiCatalog } from './generated/wikiCatalog'
+
+const appRoutes = new Set(['/', '/states', '/updates', '/people', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route)])
+
+function useNativeWikiLinks() {
+  const navigate = useNavigate()
+  useEffect(() => {
+    const onClick = (event: MouseEvent) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+      const anchor = (event.target as HTMLElement | null)?.closest?.('a[href]') as HTMLAnchorElement | null
+      if (!anchor || anchor.hasAttribute('download') || (anchor.target && anchor.target !== '_self')) return
+      const href = anchor.getAttribute('href') ?? ''
+      if (href.startsWith('#')) return
+      const url = new URL(href, window.location.href)
+      if (url.origin !== window.location.origin || !url.pathname.startsWith('/wiki/')) return
+      const path = url.pathname.slice('/wiki'.length)
+      if (!appRoutes.has(path) && !/^\/(?:categories|states|people)\/[^/]+$/.test(path)) return
+      event.preventDefault()
+      navigate(`${path}${url.search}${url.hash}`)
+    }
+    document.addEventListener('click', onClick)
+    return () => document.removeEventListener('click', onClick)
+  }, [navigate])
+}
 
 function LegacyRegionPage() {
   const { pathname } = useLocation()
@@ -18,6 +42,7 @@ function LegacyRegionPage() {
 }
 
 export default function App() {
+  useNativeWikiLinks()
   return (
     <Layout>
       <Routes>
