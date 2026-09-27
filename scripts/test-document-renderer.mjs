@@ -3,8 +3,10 @@ import { readFile, readdir } from 'node:fs/promises'
 import test from 'node:test'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
+import { fromMarkdown } from 'mdast-util-from-markdown'
 import { DocumentContent, fromWikiBlocks } from '@seoul-dengoku/document-renderer'
 import { resolveWikiContentHref } from '../src/wikiRouting.ts'
+import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 const worldRoot = new URL('../src/generated/world/', import.meta.url)
 const blocks = async (name) => JSON.parse(await readFile(new URL(name, worldRoot), 'utf8')).blocks
@@ -34,6 +36,19 @@ test('rendered heading and year anchors retain timeline destinations', async () 
     { type: 'paragraph', children: [{ type: 'text', value: '2126년 시작' }] },
     { type: 'paragraph', children: [{ type: 'text', value: '2126년 반복' }] },
   ]), /^<p id="2126년">2126년 시작<\/p><p>2126년 반복<\/p>$/)
+})
+
+test('actual document renderer exposes aliases and natural headings in both locales', () => {
+  const document = { domain: 'bestiary', content: [
+    { kind: 'heading', depth: 2, anchor: 'entry', publicAnchors: ['g01e01', 'old-name'], text: { ko: '괴물 이름', en: 'Monster Name' } },
+  ] }
+  for (const [locale, natural] of [['ko', '괴물-이름'], ['en', 'monster-name']]) {
+    const nodes = fromMarkdown(renderLoreMarkdown(document, locale)).children
+    const html = renderToStaticMarkup(createElement(DocumentContent, { content: fromWikiBlocks(nodes), locale, resolveHref: resolveWikiContentHref }))
+    for (const id of ['g01e01', 'old-name', natural]) assert.equal((html.match(new RegExp(`id="${id}"`, 'gu')) ?? []).length, 1, html)
+    assert.doesNotMatch(html, /&lt;a id=/u)
+    assert.doesNotMatch(html, /<a id="g01e01"><\/a><\/p>/u)
+  }
 })
 
 test('renderer preserves article table semantics and WIKI page uses shared viewport', async () => {

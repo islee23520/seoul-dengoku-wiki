@@ -157,6 +157,26 @@ test('an authored compatibility anchor remains separate from a renamed visible h
   assert.equal(toString(tree.children[1]), '강단호명법')
 })
 
+test('public aliases render once in both locales without changing ordinary headings', () => {
+  const document = { domain: 'bestiary', content: [
+    { kind: 'heading', depth: 2, anchor: 'entry', publicAnchors: ['g01e01', '옛-이름'], text: { ko: '새 이름', en: 'New Name' } },
+    { kind: 'heading', depth: 2, anchor: 'next', publicAnchors: ['g01e01'], text: { ko: '다음', en: 'Next' } },
+  ] }
+  for (const locale of ['ko', 'en']) {
+    assert.throws(() => renderLoreMarkdown(document, locale), /duplicate public anchor g01e01/)
+    document.content[1].publicAnchors = ['다음']
+    const markdown = renderLoreMarkdown(document, locale)
+    assert.equal((markdown.match(/<a id="g01e01"><\/a>/gu) ?? []).length, 1)
+    assert.equal((markdown.match(/<a id="옛-이름"><\/a>/gu) ?? []).length, 1)
+    assert.equal((markdown.match(/<a id="다음"><\/a>/gu) ?? []).length, locale === 'ko' ? 0 : 1)
+    document.content[1].publicAnchors = ['g01e01']
+  }
+  const legacy = { domain: 'bestiary', content: [{ kind: 'heading', depth: 2, anchor: 'entry', text: { ko: '새 이름' } }] }
+  assert.equal(renderLoreMarkdown(legacy, 'ko'), '## 새 이름\n')
+  document.content[1].publicAnchors = ['bad" onclick="x']
+  assert.throws(() => renderLoreMarkdown(document, 'ko'), /unsafe public anchor/)
+})
+
 test('unmounted GDD proposals resolve to their JSON canon', () => {
   const document = {
     domain: 'chronology',
