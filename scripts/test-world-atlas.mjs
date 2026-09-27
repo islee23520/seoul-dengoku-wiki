@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
-import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import test from 'node:test'
 
@@ -14,8 +15,8 @@ import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { verifyAtlasPeople } from './world-atlas-verify.mjs'
 
 const worktree = resolve(new URL('..', import.meta.url).pathname)
-// Scratch output for materializer tests stays in the task evidence tree, not in lore or tmpdir.
-const evidenceRoot = '/Users/ilseoblee/workspace/seoul-kenshi/.omo/evidence/lore-wiki-issues-sweep/T14prime/pr4/schema-fix'
+// Scratch output for materializer tests lives in a per-run temporary directory, never in lore.
+const evidenceRoot = await mkdtemp(join(tmpdir(), 'wiki-world-atlas-'))
 const candidatePath = join(worktree, 'lore/World-Narrative-Atlas.json')
 const sourceText = await readFile(candidatePath, 'utf8')
 const parsed = parseWorldAtlas(sourceText)
