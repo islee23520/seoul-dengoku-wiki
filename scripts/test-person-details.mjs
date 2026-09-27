@@ -136,7 +136,7 @@ test('S02 issued cards retain distinct bilingual livelihoods and their martial s
     assert.equal(detail.name, heading.name)
     assert.equal(detail.occupation, livelihood, heading.name)
     assert.equal(detail.fields['생업'], livelihood, heading.name)
-    assert.ok(/^(?:수문호흡법|차륜망치|호위철벽진|기록단절법|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+    assert.ok(/^(?:수문호흡법|차륜망치|호위철벽진|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
   }
 })
 
@@ -166,7 +166,7 @@ test('all currently issued S03 cards retain bilingual livelihoods distinct from 
     assert.equal(detail.name, heading.name)
     assert.equal(detail.occupation, livelihood, heading.name)
     assert.equal(detail.fields['생업'], livelihood, heading.name)
-    assert.ok(/^(?:기록단절법|차륜망치|호위철벽진|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+    assert.ok(/^(?:차륜망치|호위철벽진|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
   }
 })
 
@@ -211,7 +211,7 @@ test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and martial p
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-04#'), id)
     const martialText = blocks.filter((block) => block.kind === 'paragraph').map((block) => martial(block.text.ko)).join('\n')
       + '\n' + fields.map((item) => martial(item.ko)).join('\n')
-    assert.match(martialText, /무공\.\s*(?:차륜망치|기록단절법|수문호흡법|호위철벽진|없음\. 생업만\.)/u, id)
+    assert.match(martialText, /무공\.\s*(?:차륜망치|수문호흡법|호위철벽진|없음\. 생업만\.)/u, id)
   }
 })
 
@@ -226,10 +226,9 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const expectedMartial = new Map(Object.entries({
     '호위철벽진': 'K115 K116 K119 K123 K128 K129 K460 K508 K556 K604 K652 K700 K748 K796 K844 K892 K940 K988',
-    '없음. 생업만.': 'K117 K131 K118 K125 K134 K136 K138 K139 K140 K141 K142 K428 K476 K524 K572 K620 K668 K716 K764 K812 K860 K908 K956',
+    '없음. 생업만.': 'K117 K131 K118 K125 K134 K136 K138 K139 K140 K141 K142 K428 K476 K524 K572 K620 K668 K716 K764 K812 K860 K908 K956 K122',
     '수문호흡법': 'K121 K126 K127 K130 K133 K137 K444 K492 K540 K588 K636 K684 K732 K780 K828 K876 K924 K972 K143',
     '차륜망치': 'K132 K135 K120 K124',
-    '기록단절법': 'K122',
   }).flatMap(([path, ids]) => ids.split(' ').map((id) => [id, path])))
   assert.equal(expectedMartial.size, 65)
   const baeDetail = JSON.parse(await readFile(new URL('../public/person-details/person-0116.json', import.meta.url), 'utf8'))
@@ -267,7 +266,7 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-05#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(호위철벽진|수문호흡법|차륜망치|기록단절법|없음\. 생업만\.)/u)?.[1]
+    const martial = martialText.match(/무공\.\s*(호위철벽진|수문호흡법|차륜망치|없음\. 생업만\.)/u)?.[1]
     assert.equal(martial, expectedMartial.get(id), id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -282,8 +281,7 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their original ma
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
   const expectedMartial = new Map(Object.entries({
-    '기록단절법': 'K144 K161 K145 K146 K147 K148 K151 K153 K154 K156 K159 K164 K166 K461 K509 K557 K605 K653 K701 K749 K797 K845 K893 K941 K989 K168',
-    '없음. 생업만.': 'K157 K149 K152 K160 K162 K165 K167 K429 K445 K477 K493 K525 K541 K573 K589 K621 K637 K669 K685 K717 K733 K765 K781 K813 K829 K861 K877 K909 K925 K957 K973',
+    '없음. 생업만.': 'K157 K149 K152 K160 K162 K165 K167 K429 K445 K477 K493 K525 K541 K573 K589 K621 K637 K669 K685 K717 K733 K765 K781 K813 K829 K861 K877 K909 K925 K957 K973 K144 K161 K145 K146 K147 K148 K151 K153 K154 K156 K159 K164 K166 K461 K509 K557 K605 K653 K701 K749 K797 K845 K893 K941 K989 K168',
     '차륜망치': 'K158 K150',
     '수문호흡법': 'K155 K163',
   }).flatMap(([path, ids]) => ids.split(' ').map((id) => [id, path])))
@@ -323,7 +321,7 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their original ma
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-06#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(기록단절법|차륜망치|수문호흡법|없음\. 생업만\.)/u)?.[1]
+    const martial = martialText.match(/무공\.\s*(차륜망치|수문호흡법|없음\. 생업만\.)/u)?.[1]
     assert.equal(martial, expectedMartial.get(id), id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
   }
@@ -338,9 +336,8 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and original 
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
   const expectedMartial = new Map(Object.entries({
     '차륜망치': 'K169 K175 K192',
-    '없음. 생업만.': 'K170 K182 K183 K171 K172 K173 K174 K176 K177 K179 K180 K184 K185 K186 K188 K191 K430 K446 K462 K478 K494 K510 K526 K542 K558 K574 K590 K606 K622 K638 K654 K670 K686 K702 K718 K734 K750 K766 K782 K798 K814 K830 K846 K862 K878 K894 K910 K926 K942 K958 K974 K990 K193',
+    '없음. 생업만.': 'K170 K182 K183 K171 K172 K173 K174 K176 K177 K179 K180 K184 K185 K186 K188 K191 K430 K446 K462 K478 K494 K510 K526 K542 K558 K574 K590 K606 K622 K638 K654 K670 K686 K702 K718 K734 K750 K766 K782 K798 K814 K830 K846 K862 K878 K894 K910 K926 K942 K958 K974 K990 K193 K181 K187',
     '호위철벽진': 'K178',
-    '기록단절법': 'K181 K187',
     '수문호흡법': 'K189 K190',
   }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
   assert.equal(expectedMartial.size, 61)
@@ -379,7 +376,7 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and original 
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-07#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(차륜망치|호위철벽진|기록단절법|수문호흡법|없음\. 생업만\.)/u)?.[1]
+    const martial = martialText.match(/무공\.\s*(차륜망치|호위철벽진|수문호흡법|없음\. 생업만\.)/u)?.[1]
     assert.equal(martial, expectedMartial.get(id), id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
   }
@@ -395,9 +392,8 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original 
   const expectedMartial = new Map(Object.entries({
     '차륜망치': 'K208 K200',
     '호위철벽진': 'K203 K447 K495 K543 K591 K639 K687 K735 K783 K831 K879 K927 K975',
-    '기록단절법': 'K206',
     '수문호흡법': 'K216 K218',
-    '없음. 생업만.': 'K194 K199 K207 K211 K195 K196 K197 K198 K201 K202 K204 K205 K209 K210 K212 K213 K214 K215 K217 K431 K463 K479 K511 K527 K559 K575 K607 K623 K655 K671 K703 K719 K751 K767 K799 K815 K847 K863 K895 K911 K943 K959 K991',
+    '없음. 생업만.': 'K194 K199 K207 K211 K195 K196 K197 K198 K201 K202 K204 K205 K209 K210 K212 K213 K214 K215 K217 K431 K463 K479 K511 K527 K559 K575 K607 K623 K655 K671 K703 K719 K751 K767 K799 K815 K847 K863 K895 K911 K943 K959 K991 K206',
   }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
   assert.equal(expectedMartial.size, 61)
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
@@ -435,7 +431,7 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original 
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-08#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(차륜망치|호위철벽진|기록단절법|수문호흡법|없음\. 생업만\.)/u)?.[1]
+    const martial = martialText.match(/무공\.\s*(차륜망치|호위철벽진|수문호흡법|없음\. 생업만\.)/u)?.[1]
     assert.equal(martial, expectedMartial.get(id), id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -448,8 +444,7 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and origi
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
   const expectedMartial = new Map(Object.entries({
-    '없음. 생업만.': 'K219 K220 K223 K224 K226 K227 K229 K230 K232 K234 K235 K236 K237 K240 K241 K242 K432 K448 K480 K496 K528 K544 K576 K592 K624 K640 K672 K688 K720 K736 K768 K784 K816 K832 K864 K880 K912 K928 K960 K976 K244',
-    '기록단절법': 'K221 K222 K231 K233 K238 K239 K243',
+    '없음. 생업만.': 'K219 K220 K223 K224 K226 K227 K229 K230 K232 K234 K235 K236 K237 K240 K241 K242 K432 K448 K480 K496 K528 K544 K576 K592 K624 K640 K672 K688 K720 K736 K768 K784 K816 K832 K864 K880 K912 K928 K960 K976 K244 K221 K222 K231 K233 K238 K239 K243',
     '차륜망치': 'K225 K464 K512 K560 K608 K656 K704 K752 K800 K848 K896 K944 K992',
     '호위철벽진': 'K228',
   }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
@@ -490,7 +485,7 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and origi
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-09#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(기록단절법|차륜망치|호위철벽진|없음\. 생업만\.)/u)?.[1]
+    const martial = martialText.match(/무공\.\s*(차륜망치|호위철벽진|없음\. 생업만\.)/u)?.[1]
     assert.equal(martial, expectedMartial.get(id), id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -527,7 +522,7 @@ test('S10 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-10#'), id)
     const martial = detail.sections['무공']
-    assert.match(martial, /^(?:없음\. 생업만\.|없음\. 강호 갈래는 안국총림 안의 개방 무공\.|수문호흡법|기록단절법|차륜망치|호위철벽진)/u, id)
+    assert.match(martial, /^(?:없음\. 생업만\.|없음\. 강호 갈래는 안국총림 안의 개방 무공\.|수문호흡법|차륜망치|호위철벽진)/u, id)
     assert.doesNotMatch(martial, /생업:/u, id)
   }
   assert.equal(seen.size, 62)
@@ -563,7 +558,7 @@ test('S11 issued cards retain card-backed bilingual livelihoods and original mar
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-11#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|기록단절법|호위철벽진|수문호흡법)/u)?.[1]
+    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|호위철벽진|수문호흡법)/u)?.[1]
     assert.ok(martial, id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -601,7 +596,7 @@ test('S12 issued cards retain card-backed bilingual livelihoods and original mar
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-12#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|기록단절법|호위철벽진)/u)?.[1]
+    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|호위철벽진)/u)?.[1]
     assert.ok(martial, id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -639,7 +634,7 @@ test('S13 issued cards retain card-backed bilingual livelihoods and original mar
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-13#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|기록단절법|호위철벽진)/u)?.[1]
+    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|호위철벽진)/u)?.[1]
     assert.ok(martial, id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -677,7 +672,7 @@ test('S14 issued cards retain card-backed bilingual livelihoods and original mar
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-14#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|기록단절법|호위철벽진|수문호흡법)/u)?.[1]
+    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|호위철벽진|수문호흡법)/u)?.[1]
     assert.ok(martial, id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -722,7 +717,7 @@ test('S15 issued cards retain card-backed bilingual livelihoods and original mar
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-15#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|기록단절법|호위철벽진|수문호흡법)/u)?.[1]
+    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|호위철벽진|수문호흡법)/u)?.[1]
     assert.ok(martial, id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -760,7 +755,7 @@ test('S16 issued cards retain card-backed bilingual livelihoods and original mar
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-16#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|기록단절법|호위철벽진|수문호흡법)/u)?.[1]
+    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜망치|호위철벽진|수문호흡법)/u)?.[1]
     assert.ok(martial, id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
@@ -815,7 +810,7 @@ test('Shin Jongmok has an opening objective grounded in his return-net work', as
 })
 
 test('Shin Jongmok exposes the directed bayonet skill without inferred equipment or rank', async () => {
-  const source = JSON.parse(await readFile(new URL('../../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
+  const source = JSON.parse(await readFile(new URL('../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
   const martial = source.content.find((block) => block.anchor === '신종목-p4')
   assert.equal(martial.text.ko.map((run) => run.text).join(''), '무공. 총검술.')
   assert.equal(martial.text.en.map((run) => run.text).join(''), 'Martial path. Bayonet fighting.')
