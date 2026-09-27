@@ -564,6 +564,12 @@
 .territory-metro-line { opacity: 0.96; }
 .territory-transfer-marker, .territory-regional-station, .territory-flat-station, .territory-flat-capital { cursor: pointer; }
 .territory-transfer-marker:hover, .territory-regional-station:hover, .territory-flat-station:hover { stroke: #ffdb6b; stroke-width: 4; }
+.territory-surface-text-mesh { position: absolute; inset: 0; pointer-events: none; }
+.territory-surface-text-mesh canvas { display: block; inline-size: 100%; block-size: 100%; }
+.territory-faction-flags { position: absolute; inset: 0; z-index: 6; overflow: hidden; pointer-events: none; }
+.territory-faction-flag { position: absolute; display: grid; place-items: center; inline-size: 2.8rem; block-size: 2rem; padding: 0; translate: -50% -50%; border: 2px solid; border-radius: 3px; background: #091c24; box-shadow: 0 2px 6px rgb(0 0 0 / 0.7); pointer-events: auto; cursor: pointer; }
+.territory-faction-flag .state-flag { inline-size: 2.35rem; }
+.territory-faction-flag:hover, .territory-faction-flag:focus-visible, .territory-faction-flag[aria-pressed='true'] { outline: 2px solid #ffe18c; outline-offset: 1px; }
 
 .territory-flat-controls {
   position: absolute;

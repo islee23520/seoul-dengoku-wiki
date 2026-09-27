@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useRef, useState, type PointerEvent, type WheelEvent } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import * as THREE from 'three'
 import { StateFlag } from './StateFlag'
 import { presentationStations } from './stationPresentation'
 import { resolveRegionSelection } from '../wikiRouting'
 import './OpeningTerritoryMap.css'
 
-type State = { id: string; name: string; slug: string; origin: string; government: string; power: string; relation: string | null; ruler: string; cause: string; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
+type State = { id: string; name: string; slug: string; origin: string; government: string; power: string; relation: string | null; ruler: string; cause: string; labelX: number; labelY: number; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
 type Region = { id: string; name: string; district: string; path: string; polities: string[]; status: string; openingState: string; summary: string; stationCount: number }
 type StationControl = { source: string; status: string; polityIds: string[]; polityNames: string[]; primary: string | null; surfaceRegionName: string | null; hierarchy: { state: string; regionalAuthority: string; stationManager: string } }
 type Station = { id: string; name: string; district: string; x: number; y: number; degree: number; lineIds: string[]; control: StationControl }
@@ -91,6 +92,8 @@ export default function OpeningTerritoryMap() {
   const [underground, setUnderground] = useState<Underground | null>(null)
   const [frame, setFrame] = useState<'seoul' | 'peninsula'>('seoul')
   const [box, setBox] = useState<Box | null>(null)
+  const [mapSize, setMapSize] = useState({ width: 0, height: 0 })
+  const [labelBoxes, setLabelBoxes] = useState<Array<Box & { id: string }>>([])
   const [showRail, setShowRail] = useState(false)
   const [selectedLine, setSelectedLine] = useState('all')
   const [stateFilter, setStateFilter] = useState('all')
@@ -107,7 +110,93 @@ export default function OpeningTerritoryMap() {
   const start = useRef<{ x: number; y: number; box: Box; moved: boolean } | null>(null)
   const dragged = useRef(false)
   const mapRef = useRef<SVGSVGElement>(null)
+  const textMeshRef = useRef<HTMLDivElement>(null)
   const requestedRegion = params.get('region')
+
+  useEffect(() => {
+    if (!data || !box || !water || !textMeshRef.current) return
+    const host = textMeshRef.current
+    const scene = new THREE.Scene()
+    const camera = new THREE.OrthographicCamera()
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true })
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    host.appendChild(renderer.domElement)
+    const meshes: THREE.Mesh[] = []
+    const textures: THREE.CanvasTexture[] = []
+    const placed: Array<{ id: string; x: number; y: number; width: number; height: number }> = []
+    const statesByArea = [...data.states].sort((left, right) => {
+      const count = (id: string) => data.regions.filter((region) => region.polities.includes(id)).length
+      return count(left.id) - count(right.id)
+    })
+    for (const state of statesByArea) {
+      const held = data.regions.filter((region) => region.polities.includes(state.id)).map((region) => ({
+        points: [...region.path.matchAll(/[ML](-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/gu)].map((match) => [Number(match[1]), Number(match[2])] as [number, number]),
+      }))
+      const centers: [number, number][] = [[state.labelX, state.labelY], ...held.map(({ points }) => [points.reduce((sum, point) => sum + point[0], 0) / points.length, points.reduce((sum, point) => sum + point[1], 0) / points.length] as [number, number])]
+      const canvas = document.createElement('canvas')
+      const context = canvas.getContext('2d')!
+      context.font = '900 74px sans-serif'
+      canvas.width = Math.ceil(context.measureText(state.name).width) + 16
+      canvas.height = 100
+      context.font = '900 74px sans-serif'
+      context.textAlign = 'center'
+      context.textBaseline = 'middle'
+      context.lineWidth = 8
+      context.strokeStyle = '#10242d'
+      context.fillStyle = '#fff6de'
+      context.strokeText(state.name, canvas.width / 2, canvas.height / 2)
+      context.fillText(state.name, canvas.width / 2, canvas.height / 2)
+      let fit = { width: 0, x: state.labelX, y: state.labelY, height: 0 }
+      for (const [x, y] of centers) for (let width = 220; width >= 40; width -= 10) {
+        const height = width * canvas.height / canvas.width
+        const inside = Array.from({ length: 13 * 5 }, (_, index) => [x - width / 2 + (index % 13 + 0.5) * width / 13, y - height / 2 + (Math.floor(index / 13) + 0.5) * height / 5] as [number, number]).every((point) => held.some(({ points }) => insideRing(point, points)))
+        const overlaps = placed.some((other) => Math.abs(x - other.x) < (width + other.width) / 2 + 8 && Math.abs(y - other.y) < (height + other.height) / 2 + 8)
+        if (inside && !overlaps && width > fit.width) fit = { width, x, y, height }
+      }
+      if (fit.width) placed.push({ id: state.id, ...fit })
+      const texture = new THREE.CanvasTexture(canvas)
+      textures.push(texture)
+      const width = fit.width
+      const height = fit.height
+      const material = new THREE.MeshBasicMaterial({ map: texture, transparent: true, depthWrite: false, side: THREE.DoubleSide })
+      for (const region of held) {
+        const points = region.points.map(([x, y]) => [x, -y])
+        const shape = new THREE.Shape(points.map(([x, py]) => new THREE.Vector2(x, py)))
+        const geometry = new THREE.ShapeGeometry(shape)
+        const positions = geometry.getAttribute('position')
+        const uvs = geometry.getAttribute('uv')
+        for (let index = 0; index < positions.count; index++) {
+          uvs.setXY(index, (positions.getX(index) - (fit.x - width / 2)) / width, (positions.getY(index) - (-fit.y - height / 2)) / height)
+        }
+        const mesh = new THREE.Mesh(geometry, material)
+        mesh.userData.stateId = state.id
+        scene.add(mesh)
+        meshes.push(mesh)
+      }
+    }
+    setLabelBoxes(placed.map(({ id, x, y, width, height }) => ({ id, x: x - width / 2, y: y - height / 2, width, height })))
+    const draw = () => {
+      const { width, height } = host.getBoundingClientRect()
+      if (!width || !height) return
+      setMapSize((size) => size.width === width && size.height === height ? size : { width, height })
+      renderer.setSize(width, height)
+      const aspect = width / height
+      const mapAspect = box.width / box.height
+      const viewWidth = aspect > mapAspect ? box.height * aspect : box.width
+      const viewHeight = aspect > mapAspect ? box.height : box.width / aspect
+      camera.left = box.x + (box.width - viewWidth) / 2
+      camera.right = camera.left + viewWidth
+      camera.top = -box.y + (viewHeight - box.height) / 2
+      camera.bottom = camera.top - viewHeight
+      camera.position.z = 1
+      camera.updateProjectionMatrix()
+      renderer.render(scene, camera)
+    }
+    const resize = new ResizeObserver(draw)
+    resize.observe(host)
+    draw()
+    return () => { resize.disconnect(); meshes.forEach((mesh) => mesh.geometry.dispose()); textures.forEach((texture) => texture.dispose()); scene.children.forEach((child) => (child as THREE.Mesh).material && ((child as THREE.Mesh).material as THREE.Material).dispose()); renderer.dispose(); host.removeChild(renderer.domElement) }
+  }, [data, box, water])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -209,6 +298,20 @@ export default function OpeningTerritoryMap() {
   const selectedVassalData = data.vassals.find((vassal) => vassal.name === selectedVassal)
   const selectedLandmarkData = data.landmarks.find((landmark) => landmark.id === selectedLandmark)
   const selectedRegionalHolder = regionalStation && boundaries.find((boundary) => insideBoundary([regionalStation.east, regionalStation.north], boundary.geometry))
+  const mapScale = Math.min(mapSize.width / box.width, mapSize.height / box.height)
+  const flagAnchor = (state: State): [number, number] => {
+    const held = data.regions.filter((region) => region.polities.includes(state.id))
+    const candidates: [number, number][] = []
+    for (const distance of [55, 80, 110, 145, 190]) for (const [dx, dy] of [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [-1, 1], [1, -1], [-1, -1]]) candidates.push([state.labelX + dx * distance, state.labelY + dy * distance])
+    return candidates.find(([x, y]) =>
+      held.some((region) => insideRing([x, y], [...region.path.matchAll(/[ML](-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/gu)].map((match) => [Number(match[1]), Number(match[2])]))) &&
+      labelBoxes.every((label) => x < label.x - 28 || x > label.x + label.width + 28 || y < label.y - 24 || y > label.y + label.height + 24)
+    ) ?? [state.labelX, state.labelY]
+  }
+  const flagPosition = (x: number, y: number) => ({
+    left: `${50 + (x - box.x - box.width / 2) * mapScale / mapSize.width * 100}%`,
+    top: `${50 + (y - box.y - box.height / 2) * mapScale / mapSize.height * 100}%`,
+  })
   const selectedSuzerain = data.vassals.find((vassal) => vassal.city === selectedRegionalHolder?.city)
   const displayedRail = rail?.paths.filter((path) => selectedLine === 'all' || path.lineId === selectedLine) ?? []
   const riverPaths = water.features.filter((feature) => feature.kind === 'line' && feature.tag.waterway === 'river')
@@ -243,6 +346,10 @@ export default function OpeningTerritoryMap() {
         {showVassals && data.vassals.map((vassal) => <g key={vassal.name} onClick={() => { setSelectedVassal(vassal.name); setDetailOpen(true) }}><circle cx={toMap(vassal.east, vassal.north)[0]} cy={toMap(vassal.east, vassal.north)[1]} r="8" fill={states.get(vassal.suzerain)?.color} stroke="#fff" strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{vassal.name} · {vassal.city}</title></g>)}
         {data.states.map((state) => <g key={state.id} className="territory-flat-capital" data-capital-station-id={state.capitalStationId} onClick={() => chooseState(state)}><circle cx={state.capitalX} cy={state.capitalY} r="7" fill={states.get(state.id)?.color} stroke="#fff" strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{state.id} {state.name} · 수도역 {state.capitalStationId}</title></g>)}
       </svg>
+      <div ref={textMeshRef} className="territory-surface-text-mesh" aria-hidden="true" />
+      <div className="territory-faction-flags" aria-label="16국 영토 깃발">
+        {data.states.map((state) => { const [x, y] = flagAnchor(state); return <button key={state.id} type="button" className="territory-faction-flag" data-territory-flag={state.id} aria-label={`${state.name} 영토 보기`} aria-pressed={stateFilter === state.id} style={{ ...flagPosition(x, y), borderColor: states.get(state.id)?.color }} onClick={() => chooseState(state)}><StateFlag stateId={state.id} /></button> })}
+      </div>
       {(selectedState || selectedStation || regionalStation || selectedLandmark || selectedVassal || selected) && <button type="button" className="territory-detail-toggle" aria-expanded={detailOpen} aria-controls="territory-detail-panel" onClick={() => setDetailOpen((open) => !open)}>{detailOpen ? '정보 접기' : '정보 펼치기'}</button>}
       {detailOpen && <aside id="territory-detail-panel" className="territory-detail" aria-label="선택 정보" aria-live="polite"><button type="button" className="territory-detail-close" onClick={() => setDetailOpen(false)}>정보 접기</button>
         {selectedState && <section><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3>{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>중심역</th><td>{selectedState.capitalStationId}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr></tbody></table><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.name} 국가 상세 보기</Link></section>}
