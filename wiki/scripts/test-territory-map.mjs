@@ -2,6 +2,32 @@ import assert from 'node:assert/strict'
 import { readFile, readdir } from 'node:fs/promises'
 import test from 'node:test'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
+import { validatedDensities } from './region-density.mjs'
+
+test('projected density covers all 427 source codes and preserves the unrounded area formula', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const source = JSON.parse(await readFile(new URL('../../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
+  const values = validatedDensities(data.regions, source)
+  const byId = new Map(data.regions.map((region) => [region.id, region]))
+  assert.equal(byId.size, 427)
+  for (const region of data.regions) {
+    const code = region.id.replace(/^region:/u, '')
+    const density = values[code]
+    const people = density * (region.areaM2 / 1e6) / source.ratio
+    assert.ok(Math.abs(people - Math.round(people)) < 1e-7, code)
+    assert.equal(byId.get(region.id)?.density2126, density, code)
+  }
+  assert.equal(data.vassals.length, 13)
+  assert.ok(data.vassals.every((vassal) => !Object.hasOwn(vassal, 'density2126')))
+  assert.match(data.populationAttribution, /행정안전부 주민등록 인구통계/u)
+})
+
+test('density validation rejects a code that is not in the pinned atlas', async () => {
+  const source = JSON.parse(await readFile(new URL('../../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
+  const regions = Object.keys(source.density2126ByDong).map((code) => ({ id: `region:${code}` }))
+  regions[0] = { id: 'region:9999999999' }
+  assert.throws(() => validatedDensities(regions, source), /E_REGION_POPULATION_COVERAGE/u)
+})
 
 test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
