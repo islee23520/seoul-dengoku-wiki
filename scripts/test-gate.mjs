@@ -8,7 +8,7 @@ import assert from 'node:assert/strict'
 import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, findBannedTerms, htmlMetadata, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
-const repoRoot = join(scriptDir, '..', '..')
+const repoRoot = join(scriptDir, '..')
 const ledger = JSON.parse(readFileSync(join(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8'))
 const canon = (path) => JSON.parse(readFileSync(join(repoRoot, path), 'utf8'))
 const referenceDir = [
