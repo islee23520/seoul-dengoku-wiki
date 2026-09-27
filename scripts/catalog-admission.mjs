@@ -1,5 +1,6 @@
 import { access, readdir, readFile } from 'node:fs/promises'
 import { basename, join, relative, resolve } from 'node:path'
+import { glossaryDocument } from './glossary-document.mjs'
 
 export const readerFields = ['slug', 'title', 'route', 'reviewText', 'blocks']
 export const catalogFields = ['domain', 'slug', 'route', 'title']
@@ -69,11 +70,12 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
   await walk(loreRoot)
 
   if (!includeWorldIndex) return documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
-  await readFile(join(loreRoot, 'Glossary.md'), 'utf8')
+  // The Glossary page is generated from the term dictionary, so the dictionary must build it.
+  glossaryDocument(JSON.parse(await readFile(join(loreRoot, 'glossary.json'), 'utf8')))
   for (const slug of ['Glossary', 'index']) {
     if (slugs.has(slug)) throw new Error(`E_PUBLISH_SOURCE_COLLISION:${slug}`)
     slugs.add(slug)
-    add(slug, slug === 'index' ? 'scripts/build-world-index.mjs' : `lore/${slug}.md`, `wiki:${slug}`)
+    add(slug, slug === 'index' ? 'scripts/build-world-index.mjs' : 'lore/glossary.json', `wiki:${slug}`)
   }
   return documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
 }

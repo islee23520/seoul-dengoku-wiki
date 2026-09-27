@@ -28,6 +28,7 @@
     "test:timeline": "node --test scripts/test-timeline-overview.mjs",
     "test:lore-render": "node --test scripts/test-lore-json-render.mjs",
     "test:lore-json": "node --test scripts/test-lore-json-validate.mjs",
+    "test:glossary": "node --test scripts/test-glossary-document.mjs",
     "test:document-renderer": "node --test scripts/test-document-renderer.mjs",
     "test:json-locale-routes": "node --test scripts/test-json-locale-routes.mjs",
     "test:common-tiers": "node --test scripts/test-common-tiers.mjs",

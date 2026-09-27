@@ -46,8 +46,8 @@ test('one JSON source document produces an English route and keeps the Korean UR
 })
 
 test('an unmigrated Markdown corpus keeps its single Korean path', () => {
-  const documents = localizedDocuments({ domain: 'world', slug: 'Glossary', markdown: '# 용어집\n\n본문\n', renderJson, titleFallback })
-  assert.deepEqual(documents.map(({ locale, route, title }) => [locale, route, title]), [['ko', '/world/Glossary', '용어집']])
+  const documents = localizedDocuments({ domain: 'world', slug: 'Markdown-Corpus', markdown: '# 용어집\n\n본문\n', renderJson, titleFallback })
+  assert.deepEqual(documents.map(({ locale, route, title }) => [locale, route, title]), [['ko', '/world/Markdown-Corpus', '용어집']])
 })
 
 test('one corpus is never published from both Markdown and JSON', () => {
@@ -83,7 +83,9 @@ test('the generated contract carries both locale routes of the JSON document', (
   const contract = JSON.parse(readFileSync(resolve(wikiRoot, 'public/wiki-contract.json'), 'utf8'))
   assert.ok(contract.documents.some(({ route }) => route === '/world/Martial-Paths'))
   assert.ok(contract.englishDocuments.some(({ route }) => route === '/en/world/Martial-Paths'))
-  assert.ok(!contract.englishDocuments.some(({ slug }) => slug === 'Glossary'))
+  // The Glossary page is generated from lore/glossary.json, so it publishes both locales too.
+  assert.ok(contract.documents.some(({ route, title }) => route === '/world/Glossary' && title === '용어 사전'))
+  assert.ok(contract.englishDocuments.some(({ route, title }) => route === '/en/world/Glossary' && title === 'Glossary'))
   const english = JSON.parse(readFileSync(resolve(wikiRoot, 'src/generated/world-en/Martial-Paths.json'), 'utf8'))
   assert.equal(english.route, '/en/world/Martial-Paths')
 })

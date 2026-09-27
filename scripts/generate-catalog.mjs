@@ -12,6 +12,7 @@ import { categoryIndex, loadCategoryRegistry, registeredCategories, registration
 import { latestUpdates } from './update-history.mjs'
 import { wikiPublicationManifest } from './publication-manifest.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
+import { glossaryDocument } from './glossary-document.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -185,15 +186,18 @@ if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
 const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
-const glossaryMarkdown = await readFile(resolve(loreRoot, 'Glossary.md'), 'utf8')
+const glossaryPath = resolve(loreRoot, 'glossary.json')
+const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(JSON.parse(await readFile(glossaryPath, 'utf8'))) }
 const worldIndex = buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
 
 const renderedBySlug = new Map()
 for (const page of jsonPages) {
   renderedBySlug.set(page.slug, renderLoreMarkdown(page.value, 'ko', (_domain, slug) => `${slug}.md`))
 }
+// The Glossary page is built in memory from the term dictionary; an authored Glossary page would be a second source.
 if (pagesBySlug.has('Glossary')) throw new Error('E_GLOSSARY_JSON_UNEXPECTED')
-renderedBySlug.set('Glossary', glossaryMarkdown)
+pagesBySlug.set('Glossary', glossaryPage)
+renderedBySlug.set('Glossary', renderLoreMarkdown(glossaryPage.value, 'ko', (_domain, slug) => `${slug}.md`))
 renderedBySlug.set('index', worldIndex)
 
 const projectionCategories = {
