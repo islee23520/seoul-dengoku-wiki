@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { access, mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import test from 'node:test'
+import { onTestFinished, test } from 'vitest'
 import { approvedDocuments, categories, loadGddSources } from './catalog-admission.mjs'
 import { gddPublicationManifest, validatePublicationManifest } from './publication-manifest.mjs'
 
@@ -39,11 +39,11 @@ test('the publication manifest equals the public canon source set and generated 
   }
 })
 
-test('new public rules appear while proposal and system-design fixtures remain excluded', async (t) => {
+test('new public rules appear while proposal and system-design fixtures remain excluded', async () => {
   const evidence = resolve(process.env.SEOUL_KENSHI_ROOT ?? resolve(import.meta.dirname, '../../..'), '.omo/evidence/publication-manifest/fixtures')
   await mkdir(evidence, { recursive: true })
   const root = await mkdtemp(resolve(evidence, 'gdd-'))
-  t.after(() => rm(root, { recursive: true, force: true }))
+  onTestFinished(() => rm(root, { recursive: true, force: true }))
   const pagesRoot = resolve(root, 'pages')
   await mkdir(resolve(root, 'canon/collections'), { recursive: true })
   await mkdir(resolve(root, 'canon/locales/ko-KR'), { recursive: true })
