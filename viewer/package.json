@@ -17,7 +17,7 @@
     "react-markdown": "^9.0.1",
     "react-router-dom": "^7.18.4",
     "remark-gfm": "^4.0.0",
-    "@seoul-dengoku/document-renderer": "file:../vendor/document-renderer",
+    "@seoul-dengoku/document-renderer": "file:./vendor/seoul-dengoku-document-renderer-0.1.1.tgz",
     "@seoul-dengoku/shared-web-ui": "file:./vendor/seoul-dengoku-shared-web-ui-0.1.1.tgz"
   },
   "devDependencies": {
