@@ -3,32 +3,51 @@ import { access, copyFile, mkdir, mkdtemp, readdir, readFile, writeFile } from '
 import { tmpdir } from 'node:os'
 import { basename, resolve } from 'node:path'
 import test from 'node:test'
-import { approvedDocuments, approvedRoutes, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
+import { approvedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
 import { loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { validatePublicationManifest, wikiPublicationManifest } from './publication-manifest.mjs'
 
 const wikiRoot = resolve(import.meta.dirname, '..')
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(wikiRoot, 'lore'))
 const worldRoot = resolve(wikiRoot, 'src/generated/world')
+const englishWorldRoot = resolve(wikiRoot, 'src/generated/world-en')
 
 test('the generated catalog admits exactly the current lore publish set', async () => {
-  const expected = await approvedRoutes(loreRoot)
+  const approved = await approvedDocuments(loreRoot)
+  const expected = approved.map(({ route }) => route)
+  const expectedEnglish = approved.filter(({ source }) => source.endsWith('.json')).map(({ route }) => `/en${route}`)
   const source = await readFile(resolve(wikiRoot, 'src/generated/wikiCatalog.ts'), 'utf8')
-  const catalog = [...source.matchAll(/route: '([^']+)'/g)].map((match) => match[1]).sort()
+  const englishStart = source.indexOf('export const wikiEnglishCatalog')
+  assert.ok(englishStart > 0)
+  const routesIn = (catalog) => [...catalog.matchAll(/route: '([^']+)'/g)].map((match) => match[1]).sort()
+  const catalog = routesIn(source.slice(0, englishStart))
+  const englishCatalog = routesIn(source.slice(englishStart))
   const manifest = JSON.parse(await readFile(resolve(wikiRoot, 'public/wiki-contract.json'), 'utf8'))
   const pageNames = (await readdir(worldRoot)).filter((name) => name.endsWith('.json'))
   const pages = await Promise.all(pageNames.map(async (name) => JSON.parse(await readFile(resolve(worldRoot, name), 'utf8'))))
+  const englishPageNames = (await readdir(englishWorldRoot)).filter((name) => name.endsWith('.json'))
+  const englishPages = await Promise.all(englishPageNames.map(async (name) => JSON.parse(await readFile(resolve(englishWorldRoot, name), 'utf8'))))
 
   assert.ok(expected.length > 0)
+  assert.ok(expectedEnglish.length > 0)
   assert.deepEqual(catalog, expected)
-  assert.deepEqual(Object.keys(manifest), ['documents'])
+  assert.deepEqual(englishCatalog, expectedEnglish)
+  assert.deepEqual(Object.keys(manifest), ['documents', 'englishDocuments'])
   assert.deepEqual(manifest.documents.map((document) => document.route).sort(), expected)
+  assert.deepEqual(manifest.englishDocuments.map((document) => document.route).sort(), expectedEnglish)
   assert.deepEqual(pages.map((page) => page.route).sort(), expected)
+  assert.deepEqual(englishPages.map((page) => page.route).sort(), expectedEnglish)
   assert.equal(new Set(expected).size, expected.length)
+  assert.equal(new Set(expectedEnglish).size, expectedEnglish.length)
   for (const document of manifest.documents) assert.deepEqual(unknownFields(document, catalogFields), [], document.route)
+  for (const document of manifest.englishDocuments) assert.deepEqual(unknownFields(document, catalogFields), [], document.route)
   for (const [index, page] of pages.entries()) {
     assert.deepEqual(unknownFields(page, readerFields), [], pageNames[index])
     assert.equal(page.slug, basename(pageNames[index], '.json'))
+  }
+  for (const [index, page] of englishPages.entries()) {
+    assert.deepEqual(unknownFields(page, readerFields), [], englishPageNames[index])
+    assert.equal(page.slug, basename(englishPageNames[index], '.json'))
   }
 })
 
