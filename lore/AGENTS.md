@@ -3,7 +3,7 @@
 Earned its file: score 17 (root canon and domain data, canon→projection architecture feeding the wiki tool); distinct domain — single-source canon plus generated projections. Subdirectories are separate domains with their own AGENTS.md.
 
 ## OVERVIEW
-The root atlas (`World-Narrative-Atlas.json`) owns machine registries and generated projections. Domain subdirectories hold JSON authoring sources and Markdown counterparts; some have their own AGENTS.md, and `README.md` is the Korean TOC.
+The root atlas (`World-Narrative-Atlas.json`) owns machine registries and generated projections. Domain subdirectories hold the JSON authoring sources; each page's Markdown is rendered from its JSON at build time and is never committed (a `.md` beside its `.json` fails `E_MARKDOWN_TWIN`). Some have their own AGENTS.md, and `README.md` is the Korean TOC.
 
 ## WHERE TO LOOK
 | Task | Location |

@@ -8,7 +8,8 @@
 
 ## 정본과 서술
 
-- 영역별 로어 JSON을 작성 원본으로 삼고 같은 이름의 Markdown 본문은 의미·표·링크·앵커를 맞춘다. `lore/Glossary.md`처럼 Markdown이 원본인 자료는 각각의 계약을 따른다. 생성 투영물은 손으로 고치지 않는다. 근거와 생성 경계는 [`../AGENTS.md`](../AGENTS.md)와 [`../World-Narrative-Atlas.json`](../World-Narrative-Atlas.json)를 확인한다.
+- 공개 본문의 정본은 `lore/` 영역별 JSON이고, MongoDB는 이 JSON을 적재·조회하는 파생 저장소일 뿐 정본이 아니다. 제안은 한국어·영어 어느 쪽으로 받아도 되지만 편입 전에 같은 JSON 노드에 ko·en이 함께 있어야 한다.
+- 공개 페이지의 Markdown은 빌드 때 JSON에서 렌더하며 저장소에 두지 않는다. JSON 옆에 같은 이름의 Markdown 파일이 있으면 검사(`E_MARKDOWN_TWIN`)가 실패한다. `lore/Glossary.md`처럼 Markdown이 원본인 자료는 각각의 계약을 따른다. 생성 투영물은 손으로 고치지 않는다. 근거와 생성 경계는 [`../AGENTS.md`](../AGENTS.md)와 [`../World-Narrative-Atlas.json`](../World-Narrative-Atlas.json)를 확인한다.
 - 한국어 산문은 연표의 인정 사실체로 쓴다. 날짜와 당사자, 행위와 그 결과를 확인된 기록에 연결한다. 3인칭 한다체로 한 문단에 한 인과를 담고, 없는 사건을 요약이나 부재 서술로 메우지 않는다. 검증되지 않은 진술은 사실로 확정하지 않는다. 다른 언어의 필드가 있어도 영어를 한국어 서술의 정본으로 삼지 않는다.
 - 비장한 고어식 이름과 근거 없는 조어를 만들지 않는다. '창세 구술', '창세 이야기', '구술로만', '창세의 첫 줄', '창세의 첫 급수협약'을 공개 산문에 쓰지 않는다. 실제 운전일지의 '첫 줄', 일반적인 구술 증언, 정당한 단어 '창세' 자체는 이 금지에 포함하지 않는다.
 
@@ -94,7 +95,7 @@ event:
 - `humans[]` K001–K422와 `person-id-candidates.json`의 `existingK`는 동결한다. 합산 인물 수는 동결 국가 422명 + 발급 원장과 `values-cast.json`의 S00에 대조한 무소속 수다. 전체에서 ID·이름·캐릭터 ID 중복을 거부하며, S00은 국가 목록에 추가하지 않는다. 이 부분 총람은 전체 1010명 카드의 대체 명부가 아니다.
 - React 카탈로그 생성은 `world-atlas-verify.mjs`의 합산 검증을 통과한 뒤 `World-Expansion-Index.json` 투영에 다섯 인물의 실제 `/people/person-####` 경로를 싣는다. 다른 투영의 산문과 기존 인물 상세는 고치지 않는다.
 
-저장소 루트에서 위키의 동일 렌더러로 해당 Markdown 투영을 생성하고 바이트 검사를 한다. 부모 저장소의 구형 렌더러로 다른 투영을 일괄 덮어쓰지 않는다.
+저장소 루트에서 위키의 동일 렌더러로 해당 JSON 투영을 생성하고 바이트 검사를 한다. 부모 저장소의 구형 렌더러로 다른 투영을 일괄 덮어쓰지 않는다.
 
 ```bash
 node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.json --out lore --projection World-Expansion-Index.json
