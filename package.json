@@ -31,6 +31,7 @@
     "test:person-id": "node --test lore/name-pools/verify-person-id-candidates.mjs lore/name-pools/verify-person-id-registry.mjs"
   },
   "dependencies": {
+    "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
     "@seoul-dengoku/document-renderer": "file:./vendor/seoul-dengoku-document-renderer-0.1.1.tgz",
     "@seoul-dengoku/shared-web-ui": "file:./vendor/seoul-dengoku-shared-web-ui-0.1.1.tgz",
     "proj4": "2.22.0",

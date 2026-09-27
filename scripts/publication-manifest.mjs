@@ -1,9 +1,7 @@
-import { resolve } from 'node:path'
-import { pathToFileURL } from 'node:url'
+import { createPublicationManifest, validatePublicationManifest } from '@seoul-dengoku/publication-manifest'
 import { approvedDocuments } from './catalog-admission.mjs'
 
-const parentRoot = process.env.SEOUL_KENSHI_ROOT ?? resolve(import.meta.dirname, '../..')
-export const { createPublicationManifest, validatePublicationManifest } = await import(pathToFileURL(resolve(parentRoot, 'TOOL/tools/doc-publishing/publication-manifest.mjs')).href)
+export { validatePublicationManifest }
 
 export async function wikiPublicationManifest({ loreRoot, documents, registry }) {
   const admittedDocuments = await approvedDocuments(loreRoot)
