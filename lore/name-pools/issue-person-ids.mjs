@@ -24,12 +24,12 @@ import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { readRendered } from "../../scripts/lore-read-rendered.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
 const VALUES_PATH = path.join(REPO, "lore", "name-pools", "values-cast.json");
 const CANDIDATES_PATH = path.join(REPO, "lore", "name-pools", "person-id-candidates.json");
-const UNAFFILIATED_PATH = path.join(REPO, "lore", "characters", "Cast-Unaffiliated.md");
 const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 
 export const SCHEMA = "wiki-person-id-registry.v1";
@@ -84,7 +84,7 @@ export function loadApprovedContext() {
     valuesBytes,
     candidatesBytes,
     candidatesJson: JSON.parse(candidatesBytes.toString("utf8")),
-    aliasMap: loadStableNonKIds(readFileSync(UNAFFILIATED_PATH, "utf8")),
+    aliasMap: loadStableNonKIds(readRendered(path.join(REPO, "lore"), "characters", "Cast-Unaffiliated")),
   };
 }
 

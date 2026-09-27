@@ -23,15 +23,15 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { readRendered } from "../../scripts/lore-read-rendered.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
 const VALUES_PATH = path.join(REPO, "lore", "name-pools", "values-cast.json");
 const ATLAS_PATH = path.join(REPO, "lore", "World-Narrative-Atlas.json");
-const CHARS_DIR = path.join(REPO, "lore", "characters");
-const CORRIDORS_PATH = path.join(CHARS_DIR, "Cast-Corridors-Index.md");
-const CORE_PATH = path.join(CHARS_DIR, "Core-Characters.md");
-const UNAFFILIATED_PATH = path.join(CHARS_DIR, "Cast-Unaffiliated.md");
+const LORE_DIR = path.join(REPO, "lore");
+// 인물 명부는 저작 JSON을 렌더해 읽는다 (Markdown 쌍둥이에 기대지 않는다).
+const readCharacters = (slug) => readRendered(LORE_DIR, "characters", slug);
 const TABLE_PATH = path.join(HERE, "person-id-candidates.json");
 
 export const SCHEMA = "wiki-person-id-candidates.v1";
@@ -71,17 +71,16 @@ export function loadContext() {
   const valuesJson = JSON.parse(valuesBytes.toString("utf8"));
   const atlasText = readFileSync(ATLAS_PATH, "utf8");
   const humans = JSON.parse(atlasText).data.atlas.humans.map((h) => ({ ...h, name: h.name.ko }));
-  const coreText = readFileSync(CORE_PATH, "utf8");
+  const coreText = readCharacters("Core-Characters");
   const coreNames = [...coreText.matchAll(/^## (.+)$/gm)]
     .map((m) => m[1].trim())
     .filter((n) => !n.startsWith("부록"));
   const castStateNames = [];
   for (let i = 1; i <= 16; i++) {
-    const file = path.join(CHARS_DIR, `Cast-State-${String(i).padStart(2, "0")}.md`);
-    const text = readFileSync(file, "utf8");
+    const text = readCharacters(`Cast-State-${String(i).padStart(2, "0")}`);
     for (const m of text.matchAll(/^### 인물 (.+)$/gm)) castStateNames.push(m[1].trim());
   }
-  const unaffText = readFileSync(UNAFFILIATED_PATH, "utf8");
+  const unaffText = readCharacters("Cast-Unaffiliated");
   const unaffiliated = [];
   for (const block of unaffText.split(/^### /m).slice(1)) {
     const nameMatch = block.match(/^인물 (.+)$/m);
@@ -90,7 +89,7 @@ export function loadContext() {
       unaffiliated.push({ name: nameMatch[1].trim(), characterId: idMatch ? idMatch[1] : null });
     }
   }
-  const corridorsText = readFileSync(CORRIDORS_PATH, "utf8");
+  const corridorsText = readCharacters("Cast-Corridors-Index");
   // The index displays ledger aliases; only these two identities are backed by corridor cards.
   const corridorAliases = new Map([
     ["린샤오메이 (임소매)", "린샤오메이"],

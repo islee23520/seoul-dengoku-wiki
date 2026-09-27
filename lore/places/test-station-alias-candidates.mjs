@@ -2,11 +2,12 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import test from 'node:test'
+import { readRendered } from '../../scripts/lore-read-rendered.mjs'
 
 const places = import.meta.dirname
 const candidate = JSON.parse(readFileSync(resolve(places, 'Station-Alias-Candidates.json'), 'utf8'))
 const interiors = JSON.parse(readFileSync(resolve(places, '../regions/station-interiors.json'), 'utf8'))
-const catalog = readFileSync(resolve(places, 'Seoul-Station-Catalog.md'), 'utf8')
+const catalog = readRendered(resolve(places, '..'), 'places', 'Seoul-Station-Catalog')
 const rows = [...catalog.matchAll(/^\| ([^|]+) \| [^|]* \| 37\.[^|]* \| 12[^|]* \|[^|]*\|$/gmu)].map((match) => match[1])
 
 test('the candidate classifies every same-base pair without altering the 334-row roster', () => {
