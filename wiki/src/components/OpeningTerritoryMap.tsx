@@ -146,12 +146,22 @@ export default function OpeningTerritoryMap() {
       context.fillStyle = '#fff6de'
       context.strokeText(state.name, canvas.width / 2, canvas.height / 2)
       context.fillText(state.name, canvas.width / 2, canvas.height / 2)
+      const pixels = context.getImageData(0, 0, canvas.width, canvas.height).data
+      const glyph: [number, number][] = []
+      for (let y = 0; y < canvas.height; y++) for (let x = 0; x < canvas.width; x++) {
+        if (pixels[(y * canvas.width + x) * 4 + 3]) glyph.push([(x + 0.5) / canvas.width - 0.5, (y + 0.5) / canvas.height - 0.5])
+      }
       let fit = { width: 0, x: state.labelX, y: state.labelY, height: 0 }
       for (const [x, y] of centers) for (let width = 220; width >= 40; width -= 10) {
         const height = width * canvas.height / canvas.width
         const inside = Array.from({ length: 13 * 5 }, (_, index) => [x - width / 2 + (index % 13 + 0.5) * width / 13, y - height / 2 + (Math.floor(index / 13) + 0.5) * height / 5] as [number, number]).every((point) => held.some(({ points }) => insideRing(point, points)))
         const overlaps = placed.some((other) => Math.abs(x - other.x) < (width + other.width) / 2 + 8 && Math.abs(y - other.y) < (height + other.height) / 2 + 8)
         if (inside && !overlaps && width > fit.width) fit = { width, x, y, height }
+      }
+      const minimumWidth = fit.width * 0.8
+      while (fit.width > minimumWidth && glyph.filter(([u, v]) => !held.some(({ points }) => insideRing([fit.x + u * fit.width, fit.y + v * fit.height], points))).length > glyph.length * 0.005) {
+        fit.width *= 0.95
+        fit.height *= 0.95
       }
       if (fit.width) placed.push({ id: state.id, ...fit })
       const texture = new THREE.CanvasTexture(canvas)
