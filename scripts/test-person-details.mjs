@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
-import test from 'node:test'
+import { test } from 'vitest'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 test('all canonical people expose unique detail routes and structured data', async () => {

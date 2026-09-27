@@ -12,6 +12,6 @@
 
 ## VERIFY
 ```bash
-node --test TOOL/tools/wiki/test-world-atlas.mjs
+npm run test:atlas
 node TOOL/tools/wiki/materialize-world-atlas.mjs --atlas LORE/World-Narrative-Atlas.md --out LORE --check
 ```

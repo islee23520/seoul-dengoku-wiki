@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import test from 'node:test'
+import { test } from 'vitest'
 
 const projectRoot = resolve(import.meta.dirname, '..')
 

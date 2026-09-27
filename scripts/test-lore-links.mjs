@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { writeFile, rm } from 'node:fs/promises'
-import test from 'node:test'
+import { test } from 'vitest'
 import { loreLinkFailures } from './check-lore-links.mjs'
 
 test('lore checker rejects a missing file and a missing anchor', async () => {
