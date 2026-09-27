@@ -13,10 +13,12 @@ import { buildWorldIndex } from './build-world-index.mjs'
 import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
 import { wikiPublicationManifest } from './publication-manifest.mjs'
+import { localizedDocuments } from './localized-documents.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
 const worldJsonRoot = resolve(projectRoot, 'src/generated/world')
+const worldEnJsonRoot = resolve(projectRoot, 'src/generated/world-en')
 const generatedRoot = resolve(projectRoot, 'src/generated')
 const publicRoot = resolve(projectRoot, 'public')
 const domains = ['world']
@@ -166,6 +168,8 @@ const categoryRegistry = await loadCategoryRegistry(resolve(dirname(fileURLToPat
 await rm(resolve(projectRoot, 'src/content'), { recursive: true, force: true })
 await rm(worldJsonRoot, { recursive: true, force: true })
 await mkdir(worldJsonRoot, { recursive: true })
+await rm(worldEnJsonRoot, { recursive: true, force: true })
+await mkdir(worldEnJsonRoot, { recursive: true })
 await mkdir(generatedRoot, { recursive: true })
 await mkdir(publicRoot, { recursive: true })
 await rm(wikiAssetTarget, { recursive: true, force: true })
@@ -227,20 +231,25 @@ for (const slug of renderedBySlug.keys()) {
   categoriesBySlug.set(slug, [category])
 }
 
+// The source decides the locales: a JSON authoring document publishes ko and en from one file,
+// a Markdown-only corpus publishes its Korean body alone.
 const documents = []
+const englishDocuments = []
 for (const domain of domains) {
   for (const slug of [...renderedBySlug.keys()].sort((left, right) => left.localeCompare(right))) {
-    const markdown = renderedBySlug.get(slug)
-    documents.push({
+    const page = pagesBySlug.get(slug)
+    for (const document of localizedDocuments({
       domain,
       slug,
-      route: `/${domain}/${slug === 'index' ? '' : slug}`,
-      title: pagesBySlug.get(slug)?.value.locales?.ko?.title ?? normalizeTitle(markdown, slug),
-      summary: pagesBySlug.get(slug)?.value.locales?.ko?.summary ?? '',
-      categories: categoriesBySlug.get(slug) ?? [],
-      markdown,
-      name: `${slug}.md`,
-    })
+      json: page?.value,
+      markdown: page ? undefined : renderedBySlug.get(slug),
+      renderJson: (value, locale) => renderLoreMarkdown(value, locale, (_domain, target) => `${target}.md`),
+      titleFallback: normalizeTitle,
+    })) {
+      const entry = { ...document, categories: categoriesBySlug.get(slug) ?? [], name: `${slug}.md` }
+      if (document.locale === 'ko') documents.push(entry)
+      else englishDocuments.push(entry)
+    }
   }
 }
 
@@ -250,18 +259,26 @@ for (const document of documents) {
   routeBySlug.set(`${document.domain}:${document.slug}`, document.route)
   if (!routeBySlug.has(`any:${document.slug}`)) routeBySlug.set(`any:${document.slug}`, document.route)
 }
+// English pages link to the English route when the target has one, and to the Korean route otherwise.
+const englishRouteBySlug = new Map(routeBySlug)
+for (const document of englishDocuments) {
+  englishRouteBySlug.set(`${document.domain}:${document.slug}`, document.route)
+  englishRouteBySlug.set(`any:${document.slug}`, document.route)
+}
 
-for (const document of documents) {
-  const body = normalizeMarkdown(document.markdown, document.domain, routeBySlug)
+const writeDocument = async (root, document, routes) => {
+  const body = normalizeMarkdown(document.markdown, document.domain, routes)
   const blocks = fromMarkdown(body, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
   const removePositions = (node) => {
     delete node.position
     for (const child of node.children ?? []) removePositions(child)
   }
   for (const block of blocks) removePositions(block)
-  await writeFile(resolve(worldJsonRoot, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
+  await writeFile(resolve(root, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
 `)
 }
+for (const document of documents) await writeDocument(worldJsonRoot, document, routeBySlug)
+for (const document of englishDocuments) await writeDocument(worldEnJsonRoot, document, englishRouteBySlug)
 
 const lines = [
   'export type WikiDomain = \'world\'',
@@ -275,6 +292,10 @@ const lines = [
   '',
   'export const wikiCatalog = [',
   ...documents.map((document) => `  { domain: '${document.domain}', slug: '${document.slug}', route: '${document.route}', title: ${JSON.stringify(document.title)} },`),
+  '] as const satisfies readonly WikiDocument[]',
+  '',
+  'export const wikiEnglishCatalog = [',
+  ...englishDocuments.map((document) => `  { domain: '${document.domain}', slug: '${document.slug}', route: '${document.route}', title: ${JSON.stringify(document.title)} },`),
   '] as const satisfies readonly WikiDocument[]',
   '',
   `export const wikiDocumentCount = ${documents.length}`,
@@ -293,7 +314,10 @@ export type WikiCategory = { readonly id: string; readonly label: string; readon
 
 export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as const satisfies { readonly categories: readonly WikiCategory[]; readonly uncategorized: readonly CategoryDocument[] }
 `)
-await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({ documents: documents.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })) }, null, 2)}\n`)
+await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({
+  documents: documents.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })),
+  englishDocuments: englishDocuments.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })),
+}, null, 2)}\n`)
 
 const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/update-history.json'), 'utf8'))
 const wikiUpdates = latestUpdates(updateHistory.updates)
