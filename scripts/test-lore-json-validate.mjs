@@ -7,6 +7,7 @@ import test from 'node:test'
 const root = resolve(import.meta.dirname, '..')
 const evidence = join(root, '.omo/evidence/lore-wiki-issues-sweep/task-10f')
 const example = JSON.parse(readFileSync(join(root, 'lore/ailments/authoring.example.json'), 'utf8'))
+const chronologyExample = JSON.parse(readFileSync(join(root, 'lore/chronology/authoring.example.json'), 'utf8'))
 const run = (...files) => spawnSync(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), ...files], { cwd: root, encoding: 'utf8' })
 
 test('the eighteen domain examples and a published page pass', () => {
@@ -22,8 +23,8 @@ test('the eighteen domain examples and a published page pass', () => {
 test('bad locale, ID, link, Markdown, slug and naming fail independently', () => {
   mkdirSync(evidence, { recursive: true })
   const dir = mkdtempSync(join(evidence, 'fixture-'))
-  const fixture = (name, mutate) => {
-    const document = structuredClone(example)
+  const fixture = (name, mutate, base = example) => {
+    const document = structuredClone(base)
     mutate(document)
     const file = join(dir, `${name}.json`)
     writeFileSync(file, JSON.stringify(document))
@@ -42,8 +43,13 @@ test('bad locale, ID, link, Markdown, slug and naming fail independently', () =>
       ['anchor', (d) => { d.content[1].anchor = d.content[0].anchor }, /E_ANCHOR/],
       ['provenance', (d) => { delete d.provenance }, /E_PROVENANCE/],
     ]
-    for (const [name, mutate, expected] of cases) {
-      const result = run(fixture(name, mutate))
+    for (const [name, mutate, expected, base] of [
+      ...cases,
+      ['missing-locale-block', (d) => { delete d.content[1].text.ko }, /E_LOCALE: .*example-body.* ko/],
+      ['tense-pair', (d) => { d.tense.ko = 'present'; d.locales.ko.tense = 'present' }, /E_TENSE: .*en and ko differ/],
+      ['unmatched-block-id', (d) => { d.data.sequence[0].anchor = 'Does-Not-Exist' }, /E_ANCHOR: .*Does-Not-Exist has no content block/, chronologyExample],
+    ]) {
+      const result = run(fixture(name, mutate, base))
       assert.equal(result.status, 1, `${name}: ${result.stdout} ${result.stderr}`)
       assert.match(result.stderr, expected, name)
     }
@@ -55,4 +61,15 @@ test('bad locale, ID, link, Markdown, slug and naming fail independently', () =>
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }
+})
+
+test('default mode checks changed files plus the migration ledger; strict mode fails unmigrated Markdown', () => {
+  const changed = run('--base', 'HEAD')
+  assert.equal(changed.status, 0, changed.stderr)
+  assert.match(changed.stdout, /^OK: \d+ lore JSON document\(s\) \(changed \d+, ledger \d+\)/mu)
+  const strict = run('--strict')
+  assert.equal(strict.status, 1, strict.stdout)
+  assert.match(strict.stderr, /^E_UNMIGRATED: lore\/World-Narrative-Atlas\.md: /mu)
+  assert.doesNotMatch(strict.stderr, /E_UNMIGRATED: lore\/(?:[^/\n]+\/)*(?:AGENTS|AUTHORING-JSON)\.md/u)
+  assert.doesNotMatch(strict.stderr, /E_UNMIGRATED: lore\/ailments\/Ailments\.md/u)
 })
