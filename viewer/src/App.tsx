@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Navigate, Route, Routes, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom'
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown, { type ExtraProps } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { DocumentContent, type DocumentNode } from '@seoul-dengoku/document-renderer'
+import { DocumentContent, MermaidDiagram, type DocumentNode } from '@seoul-dengoku/document-renderer'
 import {
   Breadcrumbs, CategoryTree, DocumentList, PageHeader, QueryControl, SectionHeading,
   ServiceCard, SiteShell, StateNotice, TableOfContents, TableViewport,
@@ -147,12 +147,22 @@ const headingTextOf = (children: React.ReactNode): string => {
   return ''
 }
 
+// Mermaid is large, so it loads only when a page actually contains a diagram.
+const loadMermaid = () => import('mermaid')
+
 const slugify = (text: string) => text.trim().toLowerCase().replace(/\s+/g, '-').replace(/[^\p{L}\p{N}-]/gu, '')
 
 const markdownComponents = {
   h2: ({ children }: { children?: React.ReactNode }) => <h2 id={slugify(headingTextOf(children))}>{children}</h2>,
   h3: ({ children }: { children?: React.ReactNode }) => <h3 id={slugify(headingTextOf(children))}>{children}</h3>,
   table: ({ children }: { children?: React.ReactNode }) => <TableViewport label="문서 표"><table>{children}</table></TableViewport>,
+  pre: ({ children, node }: { children?: React.ReactNode } & ExtraProps) => {
+    const code = node?.children[0]
+    const classes = code?.type === 'element' ? code.properties.className : undefined
+    if (code?.type !== 'element' || !Array.isArray(classes) || !classes.includes('language-mermaid')) return <pre>{children}</pre>
+    const source = code.children.map((child) => (child.type === 'text' ? child.value : '')).join('').replace(/\n$/, '')
+    return <MermaidDiagram id={`diagram-${node?.position?.start.line ?? 0}`} source={source} load={loadMermaid} />
+  },
 }
 
 interface TocEntry { depth: number; anchor: string; text: string }
@@ -200,7 +210,7 @@ function DocumentPage() {
       <div className="gdd-article-layout">
         <div className="gdd-article-body">
           {sharedContent
-            ? <DocumentContent content={sharedContent.filter((node) => node.kind !== 'heading' || node.depth !== 1)} locale="ko" />
+            ? <DocumentContent content={sharedContent.filter((node) => node.kind !== 'heading' || node.depth !== 1)} locale="ko" loadMermaid={loadMermaid} />
             : markdown
               ? <MarkdownBody markdown={markdown} />
               : <StateNotice state="loading" message="문서를 불러오고 있습니다." />}
