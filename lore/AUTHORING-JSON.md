@@ -1,6 +1,6 @@
 # JSON 작성 계약 (T10e)
 
-이 폴더의 `authoring.shared.schema.json`은 새 위키 본문 JSON의 공통 봉투와 본문 노드를 정의한다. 루트와 17개 하위 영역의 `authoring.schema.json`/`authoring.example.json`은 각각 영역별 작성 형식과 **게시하지 않는 예시**다. 지역 JSON, 이름 자료, 용어 JSON과 `Glossary.md`는 아직 이 형식으로 옮기지 않았다. 따라서 새 스키마는 기존 데이터 계약이나 게시 파이프라인을 바꾸지 않는다. 특히 `editorial` 예시는 운영 계약이며 공개 기사가 아니다.
+이 폴더의 `authoring.shared.schema.json`은 새 위키 본문 JSON의 공통 봉투와 본문 노드를 정의한다. 루트와 17개 하위 영역의 `authoring.schema.json`/`authoring.example.json`은 각각 영역별 작성 형식과 **게시하지 않는 예시**다. 지역 JSON, 이름 자료, 용어 JSON은 이 형식이 아니다. 용어 사전 페이지(`/world/Glossary`)는 `glossary.json`에서 빌드 때 만든다. 따라서 새 스키마는 기존 데이터 계약이나 게시 파이프라인을 바꾸지 않는다. 특히 `editorial` 예시는 운영 계약이며 공개 기사가 아니다.
 
 - `version`은 작성 형식 버전 1, `domain`은 폴더명(루트만 `root`), `id`는 영구 식별자, `slug`는 문서 주소 줄기다. 기존 ID나 슬러그를 전환 과정에서 다시 할당하지 않는다. `DOC:<slug>`는 기존 고정 ID가 없는 *새 문서*를 위한 형식이다. 기존 문서의 주소·앵커는 원본과 대조한 뒤 따로 보존한다.
 - 루트 문서 `WNA-001`은 일반 `data.registry` 대신 `data.atlas`를 사용하며 `schema: "world-narrative-atlas.v2"`를 요구한다. 아틀라스의 상태·인물·가문·회랑·합성체·적대 집단·예약 배치·작성 괴물·서사 호·관계·변경 기록은 `authoring.atlas.schema.json`의 닫힌 객체 계약을 따른다. 작성 원본은 `lore/World-Narrative-Atlas.json`이고, 34개 투영 문서는 `scripts/materialize-world-atlas.mjs`가 이 원본에서 생성하는 JSON 봉투다.
@@ -22,7 +22,7 @@
 검증은 `node scripts/lore-json-validate.mjs`로 실행한다. 설치된 Python `jsonschema` Draft 2020-12로 각 문서를 영역별 스키마에 대조한 뒤 로케일·블록 ID·시제·링크·명명 규칙을 확인한다.
 
 - 기본 모드(인자 없음)는 `origin/main` 대비 바뀐 `lore/**/*.json` 작성 문서(추적되지 않은 새 파일 포함)와 `scripts/lore-json-validate-ledger.mjs`의 이전 완료 문서 목록을 검증한다. 비교 기준은 `--base <ref>`로 바꾼다. 계약을 모두 통과한 문서만 목록에 올린다.
-- `--strict`는 모든 `lore/**/*.json` 작성 문서를 검증하고, 같은 이름의 JSON 작성 문서가 없는 `lore/**/*.md` 본문 파일을 모두 `E_UNMIGRATED`로 실패 처리한다. `AGENTS.md`와 이 문서는 본문이 아니어서 제외한다. 남은 대상은 `lore/Glossary.md` 하나이며, 이것을 옮기기 전까지 `--strict`는 실패하는 것이 정상이다.
+- `--strict`는 모든 `lore/**/*.json` 작성 문서를 검증하고, 같은 이름의 JSON 작성 문서가 없는 `lore/**/*.md` 본문 파일을 모두 `E_UNMIGRATED`로 실패 처리한다. `AGENTS.md`와 이 문서는 본문이 아니어서 제외한다. 남은 대상은 없으므로 `--strict`는 통과해야 한다.
 - 기본 모드와 `--strict` 모두 JSON 작성 문서 옆에 같은 이름의 `.md`가 있으면 `E_MARKDOWN_TWIN`으로 실패한다. 공개 페이지의 Markdown은 빌드 때 JSON에서 렌더하며 저장소에 두지 않는다.
 - 파일 경로를 인자로 주면 그 문서들만 검증한다.
  파일 간 고유 ID·슬러그/앵커 충돌, 출처 존재, 의미 동등성 및 게시 승인 여부는 현행 데이터·승인 목록과 대조해야 한다. 스키마 통과만으로 게시 가능 판정을 내리지 않는다.
