@@ -4,7 +4,7 @@ import { basename, join, resolve } from 'node:path'
 import test from 'node:test'
 import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 
-const root = resolve(import.meta.dirname, '../..')
+const root = resolve(import.meta.dirname, '..')
 const registryPath = new URL('./category-registry.json', import.meta.url)
 
 const document = (categories = ['culture']) => ({
