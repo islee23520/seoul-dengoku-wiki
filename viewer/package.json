@@ -11,12 +11,14 @@
     "test": "node --test scripts/test-contract.mjs"
   },
   "dependencies": {
+    "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^7.18.4",
     "remark-gfm": "^4.0.0",
-    "@seoul-dengoku/document-renderer": "file:../vendor/document-renderer"
+    "@seoul-dengoku/document-renderer": "file:../vendor/document-renderer",
+    "@seoul-dengoku/shared-web-ui": "file:./vendor/seoul-dengoku-shared-web-ui-0.1.1.tgz"
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
