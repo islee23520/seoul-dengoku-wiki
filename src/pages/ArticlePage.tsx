@@ -61,7 +61,11 @@ export default function ArticlePage() {
       if (error instanceof URIError) return
       throw error
     }
-    document.getElementById(targetId)?.scrollIntoView()
+    const target = document.getElementById(targetId)
+    if (target) {
+      target.scrollIntoView({ behavior: 'instant' })
+      window.scrollBy({ top: -1, behavior: 'instant' })
+    }
   }, [blocks, pathname, hash])
 
   useEffect(() => {

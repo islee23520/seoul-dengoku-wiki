@@ -125,7 +125,7 @@ for (const { path, document } of documents) {
     test(`${document.id} renders to Markdown that keeps every block (${locale})`, () => {
       const tree = parse(renderLoreMarkdown(document, locale))
       const eventAnchors = document.content.filter((node) => node.kind === 'heading' && /-xt0[1-5]-/u.test(node.anchor ?? '')).map((node) => node.anchor)
-      const publishedAnchors = tree.children.filter((block) => block.type === 'paragraph' && block.children.length === 2 && block.children[0].type === 'html' && block.children[1].type === 'html' && /^<a id="[^"]+">$/u.test(block.children[0].value ?? ''))
+      const publishedAnchors = tree.children.filter((block) => block.type === 'paragraph' && block.children.length === 2 && block.children[0].type === 'html' && block.children[1].type === 'html' && eventAnchors.includes(block.children[0].value?.match(/^<a id="([^"]+)">$/u)?.[1]))
       assert.deepEqual(publishedAnchors.map((block) => block.children[0].value.match(/^<a id="([^"]+)">$/u)[1]), eventAnchors, path)
       const contentBlocks = tree.children.filter((block) => !publishedAnchors.includes(block))
       assert.equal(contentBlocks.length, document.content.length, path)
@@ -140,6 +140,21 @@ test('lore links render as paths relative to the page and keep their anchor', ()
     content: [{ kind: 'paragraph', anchor: 'p1', text: { en: [{ text: 'a', link: { domain: 'overview', slug: 'World-Unbinding', anchor: 'x' } }, { text: ' b', link: { domain: 'gdd', slug: 'rules/Warfare-and-Sieges' } }], ko: 'k' } }],
   }
   assert.equal(renderLoreMarkdown(document, 'en'), '[a](../overview/World-Unbinding.md#x)[ b](/gdd/rules/Warfare-and-Sieges)\n')
+})
+
+test('an authored compatibility anchor remains separate from a renamed visible heading', () => {
+  const document = {
+    domain: 'culture',
+    content: [
+      { kind: 'paragraph', anchor: 'legacy-link', text: { ko: '<a id="강단발"></a>' } },
+      { kind: 'heading', depth: 2, anchor: '강단발', text: { ko: '강단호명법' } },
+    ],
+  }
+  const tree = parse(renderLoreMarkdown(document, 'ko'))
+  assert.equal(tree.children.length, 2)
+  assert.equal(tree.children[0].children[0].value, '<a id="강단발">')
+  assert.ok(tree.children[0].children.every((node) => node.type === 'html'))
+  assert.equal(toString(tree.children[1]), '강단호명법')
 })
 
 test('unmounted GDD proposals resolve to their JSON canon', () => {
