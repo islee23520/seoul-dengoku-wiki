@@ -245,6 +245,16 @@ function unmigratedMarkdown(authoring) {
     .filter((path) => !allowedMarkdown.has(path))
 }
 
+// The JSON authoring document is the only source of a page: a Markdown file beside it is a stale twin, not a mirror.
+function markdownTwins() {
+  const files = loreFiles()
+  const present = new Set(files)
+  return files
+    .filter((path) => path.endsWith('.md'))
+    .filter((path) => present.has(path.replace(/\.md$/u, '.json')) && isAuthoring(path.replace(/\.md$/u, '.json')))
+    .map((path) => `E_MARKDOWN_TWIN: ${path}: Markdown file sits next to its JSON authoring document; edit the JSON and delete the Markdown`)
+}
+
 function report(failures, summary) {
   for (const failure of failures) console.error(failure)
   if (failures.length) {
@@ -269,6 +279,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const unmigrated = unmigratedMarkdown(authoring)
     report([
       ...validate(authoring.map((path) => join(root, path))),
+      ...markdownTwins(),
       ...unmigrated.map((path) => `E_UNMIGRATED: ${path}: Markdown corpus file has no JSON authoring document`),
     ], `strict: ${authoring.length} lore JSON document(s), ${unmigrated.length} unmigrated Markdown file(s)`)
   } else {
@@ -277,7 +288,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
       ...git('ls-files', '--others', '--exclude-standard', '--', 'lore'),
     ])].filter((path) => path.endsWith('.json') && !scratch(path) && isAuthoring(path))
     const selected = [...new Set([...changed, ...ledger])]
-    report(validate(selected.map((path) => join(root, path))), `${selected.length} lore JSON document(s) (changed ${changed.length}, ledger ${ledger.length})`)
+    report([...validate(selected.map((path) => join(root, path))), ...markdownTwins()], `${selected.length} lore JSON document(s) (changed ${changed.length}, ledger ${ledger.length})`)
   }
 }
 

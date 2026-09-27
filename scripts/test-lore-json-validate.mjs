@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { spawnSync } from 'node:child_process'
 import { join, resolve } from 'node:path'
 import test from 'node:test'
@@ -211,5 +211,23 @@ test('default mode checks changed files plus the migration ledger; strict mode f
     assert.match(run('--strict').stderr, /^E_UNMIGRATED: lore\/editorial\/Unlisted-Note\.md: /mu)
   } finally {
     rmSync(stray)
+  }
+})
+
+test('a Markdown file next to its JSON authoring document fails in default and strict mode', () => {
+  const twin = join(root, 'lore/culture/Martial-Paths.md')
+  assert.ok(!existsSync(twin), 'Martial-Paths.md must not be committed next to its JSON source')
+  const clean = run()
+  assert.equal(clean.status, 0, clean.stderr)
+  // Data JSON beside a task 10c Markdown file (for example the naming ledger) is not an authoring source.
+  assert.doesNotMatch(run('--strict').stderr, /E_MARKDOWN_TWIN/u)
+  writeFileSync(twin, '# twin\n')
+  try {
+    for (const result of [run(), run('--strict')]) {
+      assert.equal(result.status, 1, result.stdout)
+      assert.match(result.stderr, /^E_MARKDOWN_TWIN: lore\/culture\/Martial-Paths\.md: /mu)
+    }
+  } finally {
+    rmSync(twin)
   }
 })

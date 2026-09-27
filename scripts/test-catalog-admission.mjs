@@ -145,7 +145,18 @@ test('atlas admission uses one verified JSON source plus JSON projections withou
     { source: 'lore/World-Narrative-Atlas.json', id: 'wiki:World-Narrative-Atlas', route: '/world/World-Narrative-Atlas' },
   ])
   await writeFile(resolve(root, 'World-Narrative-Atlas.md'), '# forbidden twin\n')
-  await assert.rejects(approvedDocuments(root, { checkAtlas: async () => {}, includeWorldIndex: false }), /E_ATLAS_MARKDOWN_TWIN/)
+  await assert.rejects(approvedDocuments(root, { checkAtlas: async () => {}, includeWorldIndex: false }), /E_MARKDOWN_TWIN:World-Narrative-Atlas\.md/)
+})
+
+test('any admitted JSON document with a Markdown twin is rejected', async () => {
+  const root = await syntheticAtlasRoot()
+  await writeFile(resolve(root, 'culture/Added.json'), JSON.stringify(projectionDocument({
+    id: 'DOC:Added', slug: 'Added', domain: 'culture', categories: ['culture'],
+  })))
+  const options = { checkAtlas: async () => {}, includeWorldIndex: false }
+  assert.ok((await approvedDocuments(root, options)).some(({ source }) => source === 'lore/culture/Added.json'))
+  await writeFile(resolve(root, 'culture/Added.md'), '# forbidden twin\n')
+  await assert.rejects(approvedDocuments(root, options), /E_MARKDOWN_TWIN:culture\/Added\.md/)
 })
 
 test('a new draft JSON fixture registers while private and non-document fixtures stay excluded', async () => {

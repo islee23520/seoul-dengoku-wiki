@@ -30,8 +30,6 @@ const exists = async (path) => {
   }
 }
 
-const atlasMarkdownTwin = (path) => path.replace(/\.json$/u, '.md')
-
 const defaultAtlasCheck = async (options) => {
   const { materializeWorldAtlas } = await import('./materialize-world-atlas.mjs')
   return materializeWorldAtlas(options)
@@ -42,11 +40,6 @@ const defaultAtlasCheck = async (options) => {
 export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasCheck, includeWorldIndex = true } = {}) {
   const atlasPath = resolve(loreRoot, 'World-Narrative-Atlas.json')
   await checkAtlas({ atlasPath, outDir: loreRoot, check: true })
-  for (const relativePath of atlasDocumentPaths) {
-    if (await exists(resolve(loreRoot, atlasMarkdownTwin(relativePath)))) {
-      throw new Error(`E_ATLAS_MARKDOWN_TWIN:${atlasMarkdownTwin(relativePath)}`)
-    }
-  }
   const slugs = new Set()
   const documents = []
   const add = (slug, source, id) => {
@@ -65,6 +58,9 @@ export async function approvedDocuments(loreRoot, { checkAtlas = defaultAtlasChe
           if (slugs.has(slug)) throw new Error(`E_DUPLICATE_LORE_SLUG:${slug}`)
           slugs.add(slug)
           const sourcePath = relative(loreRoot, path).replaceAll('\\', '/')
+          // The JSON document is the only source; a Markdown file beside it is a stale twin.
+          const twin = sourcePath.replace(/\.json$/u, '.md')
+          if (await exists(resolve(loreRoot, twin))) throw new Error(`E_MARKDOWN_TWIN:${twin}`)
           add(slug, `lore/${sourcePath}`, atlasPathSet.has(sourcePath) ? `wiki:${slug}` : value.id)
         }
       }
