@@ -24,6 +24,7 @@
 - 실존 기업·제품·로고·표어·현직 임원 이름을 허구 속에 넣지 않는다. 실존 인물이나 기관에 허구의 범죄·비리·스캔들을 귀속하지 않는다. 근거는 [`../AGENTS.md`](../AGENTS.md)와 [`../characters/AGENTS.md`](../characters/AGENTS.md)의 금지 항목이다.
 - 미성년자의 성적 서사는 쓰지 않는다. 인물의 출처 상태와 공개 여부는 [`../characters/AGENTS.md`](../characters/AGENTS.md) 및 [`../characters/Cast-Profile-Contract.md`](../characters/Cast-Profile-Contract.md)를 따른다.
 - 새 인물·조직의 가치관 축은 비워 두지 않는다. 가치관 표에서 나이를 추정하거나 기존 인물 422명의 나이 칸을 채우지 않는다. 욕망과 취향은 가치관과 별도 축에 둔다.
+- 인물 가치관의 빈 칸과 열 축 순서는 [인물 등록 템플릿](../characters/Cast-Registration-Template.md)을 따른다. 조직 정책은 전쟁·이주민·급수·노동·기록·기술·교역·후계·결합 아홉 칸으로 기입한다. 빈 서식은 `정책: 전쟁 _ | 이주민 _ | 급수 _ | 노동 _ | 기록 _ | 기술 _ | 교역 _ | 후계 _ | 결합 _`이며 실제 선택지는 [가치관과 정책 척도](../culture/Values-and-Policy-Scales.md)의 표를 따른다.
 - 합성체는 전지적 존재가 아니며 무한한 에너지·완전한 장기 기억·전역 네트워크·담당 구역 밖 시설 통제 능력을 주지 않는다. 인물·국가·가문·외부 전구·합성체·적대 개체의 영구 ID를 다시 매기지 않는다. ID 범위와 합성체 제약의 근거는 [`../AGENTS.md`](../AGENTS.md) 및 [`../World-Narrative-Atlas.md`](../World-Narrative-Atlas.md)에 있다.
 
 ## 신앙 문서의 집필 경계
