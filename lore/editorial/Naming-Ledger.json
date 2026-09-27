@@ -172,7 +172,7 @@
     {
       "formalName": "차륜강체공",
       "hanja": null,
-      "alias": "차륜망치",
+      "alias": null,
       "source": "lore/culture/Martial-Paths.md#여덟-유파"
     },
     {
@@ -511,6 +511,16 @@
     {
       "form": "실록",
       "source": "lore/chronology/Century-Annals.md"
+    },
+    {
+      "form": "차륜망치",
+      "source": "lore/culture/Martial-Paths.md#여덟-유파",
+      "exceptSources": ["Martial-Paths"]
+    },
+    {
+      "form": "Wheel Hammer",
+      "source": "lore/culture/Martial-Paths.md#여덟-유파",
+      "exceptSources": ["Martial-Paths"]
     }
   ]
 }
