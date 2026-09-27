@@ -19,7 +19,7 @@ OSM 자료는 `© OpenStreetMap contributors`, ODbL 1.0 조건을 유지한다. 
 
 - `content/<구 코드>.json`: 해당 구에 속한 모든 동의 최종 저작 내용. 다른 구의 시설을 이름만 보고 가져오지 않는다.
 - 공간·객체 원장 생성 도구: `TOOL/tools/regions/`.
-- 공식 지도: `WEB/wiki/`의 `World-and-Subway-Layers`. 지도 빌드 입력은 `TOOL/tools/regions/data/atlas-data.js`다.
+- 공식 지도: `WIKI/`의 `World-and-Subway-Layers`. 지도 빌드 입력은 `TOOL/tools/regions/data/atlas-data.js`다.
 - 공간 생성물과 검증 기록: `.omo/evidence/seoul-regions/`. 이 폴더의 존재만으로 콘텐츠 완료를 판단하지 않는다.
 
 각 동은 주민·생업, 산출/입력/부족, 위험, 개막 상태, 이웃과의 관계, 플레이어 행동/비용/결과/대가, **건물 재사용**을 가진다. 건물 칸은 `content.buildings`다. 강·구·동 규칙은 [강·구·동 건물 재사용](../places/Building-Reuse-Geography.md)이 정본이다. 장소와 태그는 관측, 경계·소속·면적은 계산, 붕괴 뒤 주민과 사건은 창작이다. OSM 태그만으로 기관의 현재 가동을 말하지 않는다.

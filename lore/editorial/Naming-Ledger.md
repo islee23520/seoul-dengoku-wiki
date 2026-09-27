@@ -88,4 +88,4 @@
 | 창세 이야기 | 근거 없는 조어로 폐기 | [Writing-Rules](Writing-Rules.md) |
 | 창세의 첫 줄 | 근거 없는 조어로 폐기 | [Writing-Rules](Writing-Rules.md) |
 
-`구술로만`, `창세의 첫 급수협약`, `창세는 햇수 없는 구술`은 기존 조어 게이트가 검사한다. 근거: [Writing-Rules](Writing-Rules.md), [`gate.mjs`](../../wiki/scripts/gate.mjs).
+`구술로만`, `창세의 첫 급수협약`, `창세는 햇수 없는 구술`은 기존 조어 게이트가 검사한다. 근거: [Writing-Rules](Writing-Rules.md), [`gate.mjs`](../../scripts/gate.mjs).
