@@ -25,11 +25,15 @@
     "test:updates": "npm run generate && node --test scripts/test-update-history.mjs",
     "test:timeline": "node --test scripts/test-timeline-overview.mjs",
     "test:lore-render": "node --test scripts/test-lore-json-render.mjs",
+    "test:document-renderer": "node --test scripts/test-document-renderer.mjs",
     "test:common-tiers": "node --test scripts/test-common-tiers.mjs",
     "test:atlas": "node --test scripts/test-world-atlas.mjs",
     "test:person-id": "node --test lore/name-pools/verify-person-id-candidates.mjs lore/name-pools/verify-person-id-registry.mjs"
   },
   "dependencies": {
+    "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
+    "@seoul-dengoku/document-renderer": "file:./vendor/seoul-dengoku-document-renderer-0.1.1.tgz",
+    "@seoul-dengoku/shared-web-ui": "file:./vendor/seoul-dengoku-shared-web-ui-0.1.1.tgz",
     "proj4": "2.22.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

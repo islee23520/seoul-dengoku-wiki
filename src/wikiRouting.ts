@@ -63,3 +63,9 @@ export const normalizeWikiHref = (href: string | undefined): string => {
   }
   return `${normalizedPath}${hash ? `#${hash}` : ''}`
 }
+
+/** DocumentContent uses native anchors, which need the browser router's /wiki basename. */
+export const resolveWikiContentHref = (url: string): string => {
+  const href = normalizeWikiHref(url)
+  return href.startsWith('/') ? toWikiPath(href) : href
+}
