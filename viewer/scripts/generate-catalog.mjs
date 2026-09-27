@@ -2,6 +2,8 @@ import { existsSync } from 'node:fs'
 import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { categories, excluded, loadGddSources } from './catalog-admission.mjs'
+import { gddPublicationManifest } from './publication-manifest.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 if (!process.env.GDD_PAGES_ROOT) throw new Error('GDD_PAGES_ROOT is required: materialize GDD JSON canon before generating the catalog')
@@ -9,15 +11,6 @@ const gddPagesRoot = resolve(process.env.GDD_PAGES_ROOT)
 const contentRoot = resolve(projectRoot, 'src/content')
 const generatedRoot = resolve(projectRoot, 'src/generated')
 const sharedContentRoot = resolve(generatedRoot, 'shared-content')
-const categories = [
-  { id: 'design', label: '제품 설계', dir: '', depth: 0 },
-  { id: 'rules', label: '게임 규칙', dir: 'rules', depth: 0 },
-  { id: 'architecture', label: '아키텍처', dir: 'architecture', depth: 0 },
-  { id: 'references', label: '레퍼런스 연구', dir: 'references', depth: 0 },
-  { id: 'decisions', label: '결정 기록', dir: 'adr', depth: 0 },
-  { id: 'art', label: '아트 설계', dir: 'art', depth: 0 },
-]
-const excluded = new Set(['AGENTS.md', 'README.md'])
 const gddRoot = process.env.GDD_ROOT ?? resolve(projectRoot, '..')
 // Dataset summaries read the parent repository that hosts GDD: the hub checkout keeps lore at WIKI/lore,
 // a standalone GDD checkout reads the sibling LORE/ directory that GDD links point at.
@@ -25,15 +18,8 @@ const repoRoot = process.env.SEOUL_KENSHI_ROOT ?? resolve(gddRoot, '..')
 const loreRoot = process.env.LORE_ROOT ?? [resolve(repoRoot, 'WIKI/lore'), resolve(repoRoot, 'LORE')].find((path) => existsSync(path))
 if (!loreRoot) throw new Error(`E_LORE_ROOT_MISSING: neither WIKI/lore nor LORE exists under ${repoRoot}; set LORE_ROOT`)
 // Rendered page path -> the GDD file that owns it: the JSON canon document, or the exempt Markdown file itself.
-const canonPathByPage = new Map()
-for (const name of await readdir(resolve(gddRoot, 'canon/collections'))) {
-  if (extname(name) !== '.json') continue
-  for (const entry of JSON.parse(await readFile(resolve(gddRoot, 'canon/collections', name), 'utf8')).documents) canonPathByPage.set(entry.source.path, `canon/${entry.path}`)
-}
-for (const name of await readdir(resolve(gddRoot, 'canon/locales/ko-KR'))) {
-  if (!/^adr-\d{3}\.json$/.test(name)) continue
-  canonPathByPage.set(JSON.parse(await readFile(resolve(gddRoot, 'canon/locales/ko-KR', name), 'utf8')).source.path, `canon/locales/ko-KR/${name}`)
-}
+const sources = await loadGddSources(gddRoot)
+const canonPathByPage = new Map([...sources].map(([page, { source }]) => [page, source]))
 const githubRoot = 'https://github.com/islee23520/seoul-dengoku/blob/main/'
 
 const titleOf = (markdown, fallback) => markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
@@ -59,10 +45,16 @@ for (const category of categories) {
     if (!(await stat(source)).isFile()) continue
     const slug = basename(name, '.md')
     const markdown = await readFile(source, 'utf8')
-    documents.push({ category: category.id, categoryLabel: category.label, slug, route: `/${category.id}/${slug}`, title: titleOf(markdown, slug), source, sourcePath: await sourceKey(source), markdown })
+    const sourcePath = await sourceKey(source)
+    const canon = sourcePath.endsWith('.json') ? JSON.parse(await readFile(resolve(gddRoot, sourcePath), 'utf8')) : null
+    const id = canon ? (canon.document?.id ?? canon.id) : `gdd:${slug}`
+    const summary = canon?.locales?.ko?.summary ?? ''
+    const contentRef = Array.isArray(canon?.content) ? `src/generated/shared-content/${category.id}-${slug}.json` : `src/content/${category.id}/${slug}.md`
+    documents.push({ category: category.id, categoryLabel: category.label, slug, route: `/${category.id}/${slug}`, title: titleOf(markdown, slug), source, sourcePath, markdown, id, summary, contentRef, canon })
   }
 }
 
+const publicationManifest = await gddPublicationManifest({ gddRoot, pagesRoot: gddPagesRoot, sources, documents })
 const routeBySource = new Map(documents.map((document) => [document.sourcePath, document.route]))
 const normalizeHref = async (href, source) => {
   if (href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href
@@ -87,11 +79,8 @@ for (const document of documents) {
   const hrefs = await Promise.all(links.map((match) => normalizeHref(match[1], document.source)))
   let index = 0
   await writeFile(resolve(targetDir, `${document.slug}.md`), normalized.replace(/\]\(([^)]+)\)/g, () => `](${hrefs[index++]})`))
-  if (document.sourcePath.endsWith('.json')) {
-    const canon = JSON.parse(await readFile(resolve(gddRoot, document.sourcePath), 'utf8'))
-    if (Array.isArray(canon.content)) {
-      await writeFile(resolve(sharedContentRoot, `${document.category}-${document.slug}.json`), `${JSON.stringify(canon.content)}\n`)
-    }
+  if (Array.isArray(document.canon?.content)) {
+    await writeFile(resolve(sharedContentRoot, `${document.category}-${document.slug}.json`), `${JSON.stringify(document.canon.content)}\n`)
   }
 }
 
@@ -118,6 +107,7 @@ const dataCatalog = [
 
 const catalogSource = `export const gddCategories = ${JSON.stringify(categories.map(({ id, label }) => ({ id, label })), null, 2)} as const\n\nexport const gddCatalog = ${JSON.stringify(documents.map(({ category, categoryLabel, slug, route, title, sourcePath }) => ({ category, categoryLabel, slug, route, title, sourcePath })), null, 2)} as const\n`
 await writeFile(resolve(generatedRoot, 'gddCatalog.ts'), catalogSource)
+await writeFile(resolve(generatedRoot, 'publication-manifest.json'), `${JSON.stringify(publicationManifest, null, 2)}\n`)
 await writeFile(resolve(generatedRoot, 'dataCatalog.ts'), `export const dataCatalog = ${JSON.stringify(dataCatalog, null, 2)} as const\n`)
 await writeFile(resolve(generatedRoot, 'gdd-contract.json'), `${JSON.stringify({ documents: documents.map(({ category, route, title, sourcePath }) => ({ category, route, title, sourcePath })), datasets: dataCatalog }, null, 2)}\n`)
 console.log(`GDD_CATALOG_GENERATED documents=${documents.length} datasets=${dataCatalog.length}`)
