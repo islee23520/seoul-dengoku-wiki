@@ -91,6 +91,12 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
     }
   }, [blocks, pathname, hash])
 
+  // The page shell is Korean; an English article must announce its own language to assistive technology.
+  useEffect(() => {
+    document.documentElement.lang = locale
+    return () => { document.documentElement.lang = 'ko' }
+  }, [locale])
+
   useEffect(() => {
     if (!wikiDocument) return
     window.document.title = `${wikiDocument.title} | ${text.site}`
