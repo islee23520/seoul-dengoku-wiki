@@ -37,8 +37,12 @@ export async function artifactFailures({ distRoot, allowlist, appSource }) {
     if (!rest.length) {
       if (!rootFiles.has(file)) failures.push(`E_ARTIFACT_UNLISTED: ${file}`)
     } else if (top === 'assets') {
+      const library = allowlist.assets.libraryDirectory
       const match = name.match(assetPattern)
-      if (!match) failures.push(`E_ARTIFACT_UNLISTED: ${file}`)
+      // The build writes dependency-only chunks one level under the library directory.
+      if (library && name.startsWith(`${library}/`)) {
+        if (!(name.slice(library.length + 1).match(assetPattern) && !name.slice(library.length + 1).includes('/'))) failures.push(`E_ARTIFACT_UNLISTED: ${file}`)
+      } else if (!match) failures.push(`E_ARTIFACT_UNLISTED: ${file}`)
       else if (!appChunks.has(match[1]) && !documentSlugs.has(match[1])) failures.push(`E_ARTIFACT_CHUNK: ${file} is not an app module or admitted document`)
     } else if (!directories[top] || !directories[top].test(name)) failures.push(`E_ARTIFACT_UNLISTED: ${file}`)
   }

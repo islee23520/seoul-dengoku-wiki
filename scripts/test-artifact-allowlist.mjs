@@ -23,6 +23,7 @@ async function fixture(extra = {}, omit = []) {
     'assets/index-AbCd1234.js': '',
     'assets/index-AbCd1234.css': '',
     'assets/Ailments-Zz9_Yx-8.js': '',
+    'assets/lib/mermaid.core-AbCd1234.js': '',
     ...extra,
   }
   for (const file of omit) delete files[file]
@@ -48,6 +49,8 @@ test('unlisted files, private chunks and missing artifacts fail', async () => {
     [{ 'drafts/Cast-Profile-Contract.json': '{}' }, [], /E_ARTIFACT_UNLISTED: drafts\/Cast-Profile-Contract\.json/],
     [{ 'assets/Cast-Profile-Contract-AbCd1234.js': '' }, [], /E_ARTIFACT_CHUNK: assets\/Cast-Profile-Contract-AbCd1234\.js/],
     [{ 'assets/unhashed.js': '' }, [], /E_ARTIFACT_UNLISTED: assets\/unhashed\.js/],
+    [{ 'assets/lib/Cast-Profile-Contract.json': '{}' }, [], /E_ARTIFACT_UNLISTED: assets\/lib\/Cast-Profile-Contract\.json/],
+    [{ 'assets/lib/nested/katex-AbCd1234.js': '' }, [], /E_ARTIFACT_UNLISTED: assets\/lib\/nested\/katex-AbCd1234\.js/],
     [{}, ['opening-territories.json'], /E_ARTIFACT_MISSING: opening-territories\.json/],
     [{}, ['state-flags/S01.webp'], /E_ARTIFACT_MISSING: state-flags\//],
   ]
