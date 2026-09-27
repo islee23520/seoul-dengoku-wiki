@@ -87,11 +87,12 @@ test('banned terms are checked in visible titles, person fields and HTML metadat
   assert.ok(retiredFormFailures(htmlMetadata('<meta property="og:title" content="Seoul Sengoku">'), 'dist/index.html metadata').length > 0)
 })
 
-test('eight canonical school names and optional aliases match the private ledger', () => {
+test('eight canonical school names match the private ledger and carry no everyday alias', () => {
   const table = canon('lore/culture/Martial-Paths.json').content.find((block) => block.kind === 'table' && block.columns[0].ko === '정식명')
   assert.ok(table)
   assert.equal(table.rows.length, 8)
-  assert.deepEqual(table.rows.map((row) => [row[0].ko, row[1].ko === '—' ? null : row[1].ko]), ledger.martialSchools.map(({ formalName, alias }) => [formalName, alias]))
+  assert.deepEqual(table.rows.map((row) => row[0].ko), ledger.martialSchools.map(({ formalName }) => formalName))
+  assert.deepEqual(ledger.martialSchools.filter(({ alias }) => alias !== null), [])
   assert.equal(ledger.martialBranch.name, '개방 무공')
   assert.ok(!ledger.martialSchools.some(({ formalName }) => formalName === '개방 무공'))
 })
