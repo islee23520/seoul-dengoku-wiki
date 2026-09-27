@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import test from 'node:test'
+import { readRendered } from './lore-read-rendered.mjs'
 
 test('all canonical people are indexed and linked to a canon card', async () => {
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
@@ -22,7 +23,7 @@ test('all canonical people are indexed and linked to a canon card', async () => 
   assert.equal(sourceRoutes.filter((route) => route.startsWith('/world/Core-Characters#인물-')).length, 0)
   for (const route of sourceRoutes) {
     const [document, anchor] = route.replace('/world/', '').split('#')
-    const markdown = await readFile(resolve(import.meta.dirname, `../lore/${document === 'Diaspora-Corridors' ? 'factions' : 'characters'}/${document}.md`), 'utf8')
+    const markdown = readRendered(resolve(import.meta.dirname, '../lore'), document === 'Diaspora-Corridors' ? 'factions' : 'characters', document)
     if (document === 'Diaspora-Corridors') {
       const headings = [...markdown.matchAll(/^### (인물 .+)$/gmu)].map((match) => match[1])
       const headingId = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')

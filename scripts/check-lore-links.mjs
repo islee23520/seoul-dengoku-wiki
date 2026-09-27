@@ -119,7 +119,7 @@ export async function loreLinkFailures() {
       }
       scan(json)
       for (const { href, source } of references) {
-        if (href.startsWith(repo)) { if (!(await exists(href))) failures.push(`${source}: missing ${href}`) }
+        if (href.startsWith(repo)) { if (!(await exists(await targetFor(href)))) failures.push(`${source}: missing ${href}`) }
         else await check(href, source)
       }
     }
