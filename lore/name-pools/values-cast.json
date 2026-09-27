@@ -20,7 +20,7 @@
     "과시",
     "지속"
   ],
-  "count": 1016,
+  "count": 1018,
   "people": [
     {
       "name": "한재목",
@@ -31388,6 +31388,16 @@
       "name": "최일석", "title": "동원 명부 서기", "stage": "S4", "state": "S00", "state_name": "동원잔존", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": 30, "개방": -10, "무력": 10, "물질": -10, "공동": 20, "원칙": 50, "공개": -30, "자격": 20, "분산": 10, "변혁": -20 },
       "desire": { "갈망": 20, "독점": 10, "위험": -40, "과시": -30, "지속": 50, "지향": "이성", "결합": "계약동거" }, "locked": false
+    },
+    {
+      "name": "지연희", "title": "독립 전령", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
+      "values": { "권위": null, "개방": null, "무력": null, "물질": null, "공동": null, "원칙": null, "공개": null, "자격": null, "분산": null, "변혁": null },
+      "desire": { "갈망": null, "독점": null, "위험": null, "과시": null, "지속": null, "지향": null, "결합": null }, "locked": false
+    },
+    {
+      "name": "서하진", "title": "권역 간 계약 자문가", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
+      "values": { "권위": null, "개방": null, "무력": null, "물질": null, "공동": null, "원칙": null, "공개": null, "자격": null, "분산": null, "변혁": null },
+      "desire": { "갈망": null, "독점": null, "위험": null, "과시": null, "지속": null, "지향": null, "결합": null }, "locked": false
     }
   ]
 }

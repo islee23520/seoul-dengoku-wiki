@@ -1,10 +1,10 @@
 {
   "schema": "wiki-person-id-candidates.v1",
-  "inputSha256": "c785d729cdee59fbe196be50bb4ecb883ea5e289ebc68545796144dc23240ef7",
-  "baseCommit": "7e8638a634d3c1541007cd5d095ac38df5cb9dbc",
-  "totalPeople": 1016,
+  "inputSha256": "9411241f70cad28d15bf1d6324f39af69979896011da34aba6975b91a0a8dc21",
+  "baseCommit": "16604d2fbcc09025eec290e961b2e4fe8a3a797c",
+  "totalPeople": 1018,
   "existingKCount": 422,
-  "candidateCount": 594,
+  "candidateCount": 596,
   "existingK": [
     {
       "id": "K001",
@@ -6447,6 +6447,22 @@
       "state": "S00",
       "title": "동원 명부 서기",
       "locked": false
+    },
+    {
+      "ordinal": 595,
+      "name": "지연희",
+      "stage": "S1",
+      "state": "S00",
+      "title": "독립 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 596,
+      "name": "서하진",
+      "stage": "S1",
+      "state": "S00",
+      "title": "권역 간 계약 자문가",
+      "locked": false
     }
   ],
   "NOTES": [
@@ -6508,6 +6524,16 @@
     {
       "type": "state-tier-without-k",
       "name": "신준",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "지연희",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "서하진",
       "detail": "S1 단계 인물인데 K 식별자가 없다"
     }
   ]

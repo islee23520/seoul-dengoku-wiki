@@ -10,8 +10,8 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   minors: boolean
   sourceKind: string
   locked: boolean
-  values: Record<string, number>
-  desire: Record<string, number | string>
+  values: Record<string, number | null>
+  desire: Record<string, number | string | null>
   fields: Record<string, string>
   sections: Record<string, string>
   biography: string
@@ -21,11 +21,11 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
 
 const sectionOrder = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
 
-function DataTable({ title, rows }: { title: string; rows: Array<[string, string | number]> }) {
+function DataTable({ title, rows }: { title: string; rows: Array<[string, string | number | null]> }) {
   return (
     <section className="person-data-section">
       <h2>{title}</h2>
-      <div className="wiki-table-wrap"><table className="person-data-table"><tbody>{rows.map(([label, value]) => <tr key={label}><th>{label}</th><td>{String(value)}</td></tr>)}</tbody></table></div>
+      <div className="wiki-table-wrap"><table className="person-data-table"><tbody>{rows.map(([label, value]) => <tr key={label}><th>{label}</th><td>{value === null ? '—' : String(value)}</td></tr>)}</tbody></table></div>
     </section>
   )
 }
