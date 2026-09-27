@@ -110,7 +110,7 @@ function DocumentsPage() {
   const matches = (text: string) => !needle || text.toLocaleLowerCase('ko').includes(needle)
   const groups = treeCategories
     .filter((category) => !selected || category.id === selected)
-    .map((category) => ({ category, documents: category.documents.filter((document) => matches(`${document.title} ${document.summary ?? ''}`)) }))
+    .map((category) => ({ category, documents: category.documents.filter((document) => matches(`${document.title} ${document.summary ?? ''} ${document.meta ?? ''} ${category.title}`)) }))
     .filter((group) => group.documents.length > 0)
   const total = groups.reduce((count, group) => count + group.documents.length, 0)
   const label = selected ? categoryLabelById.get(selected) : undefined
