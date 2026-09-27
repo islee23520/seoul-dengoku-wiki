@@ -125,7 +125,8 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
       {alternate && <p className="wiki-locale-switch"><Link to={alternate.route} hrefLang={locale === 'ko' ? 'en' : 'ko'}>{text.otherLocale}</Link></p>}
 
       {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <Suspense fallback={<StateNotice state="loading" message="2126 시점 영토 지도를 준비하고 있습니다." />}><OpeningTerritoryMap /></Suspense>}
-      {domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<StateNotice state="loading" message="연표 전체 줄거리를 준비하고 있습니다." />}><TimelineOverview /></Suspense>}
+      {/* The year overview data and labels are Korean-only, so it belongs to the Korean page alone. */}
+      {locale === 'ko' && domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<StateNotice state="loading" message="연표 전체 줄거리를 준비하고 있습니다." />}><TimelineOverview /></Suspense>}
 
       <div className="wiki-article-grid">
         <div className="wiki-prose">
