@@ -13,14 +13,14 @@ const catalog = readRendered(resolve(places, '..'), 'places', 'Seoul-Station-Cat
 const rows = [...catalog.matchAll(/^\| ([^|]+) \| [^|]* \| 37\.[^|]* \| 12[^|]* \|[^|]*\|$/gmu)].map((match) => match[1])
 
 test('the candidate classifies every same-base pair without altering the 334-row roster', () => {
-  assert.equal(candidate.status, 'wiki-projection-applied-source-pending')
+  assert.equal(candidate.status, 'approved-alias-only')
   assert.equal(rows.length, 334)
   assert.equal(interiors.stations.length, 334)
   const grouped = Map.groupBy(rows, (name) => name.replace(/\s*\(.*\)$/u, ''))
   const pairs = [...grouped.values()].filter((names) => names.length > 1)
   assert.equal(pairs.length, 19)
   assert.deepEqual(candidate.groups.map((group) => group.members.slice().sort().join('|')).sort(), pairs.map((pair) => pair.slice().sort().join('|')).sort())
-  assert.equal(candidate.groups.filter((group) => group.disposition === 'wiki-projection-applied-source-pending').length, 18)
+  assert.equal(candidate.groups.filter((group) => group.disposition === 'approved-alias').length, 18)
   assert.deepEqual(candidate.groups.find((group) => group.disposition === 'nonmerge').members, ['신촌', '신촌(지하)'])
 })
 
@@ -30,7 +30,7 @@ test('Isu identity is approved while both observed platforms and four graph neig
   assert.deepEqual(canonical.aliases, ['이수', '총신대입구 (이수)'])
   assert.deepEqual(canonical.observed_lines, { '이수': ['7'], '총신대입구 (이수)': ['4'], '총신대입구(이수)': ['4'] })
   assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['총신대입구(이수)', '삼성', '수유', '서울대입구', '강변', '구의', '아현', '대림', '충정로', '교대', '남부터미널', '방배', '왕십리', '한성대입구', '잠실', '경복궁', '혜화', '회현'])
-  assert.equal(isu.disposition, 'wiki-projection-applied-source-pending')
+  assert.equal(isu.disposition, 'approved-alias')
   assert.equal(isu.displayName, '총신대입구(이수)')
   assert.deepEqual(isu.aliases, ['총신대입구 (이수)', '이수'])
   assert.match(isu.decision, /이수·총신대입구\(이수\).*하나의 역/u)
