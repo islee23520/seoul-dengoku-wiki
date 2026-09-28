@@ -201,7 +201,7 @@ export function mainClause(text, section, name) {
   return /(^|\s)[가-힣]+(이|가|들이) /u.test(body) || /^[가-힣·]+(은|는) /u.test(body) ? null : main
 }
 
-// 같은 사건 판정(G2 Q9 L0 추천안 B, 소유자 승인 대기). 두 카드가 같은 사건을 다른 문장으로 적으면 앞의 때·장소 절은 달라도
+// 같은 사건 판정(소유자 결정 2026-09-28, G2 Q9 L0 B). 두 카드가 같은 사건을 다른 문장으로 적으면 앞의 때·장소 절은 달라도
 // 끝 서술어가 같고(…하였다 → …했다) 낱말 대부분이 겹친다. 조사를 뗀 낱말이 짧은 쪽의 60% 이상 겹치면 같은 사건으로 본다.
 // 한 능력에서 다른 카드의 같은 사건 문장은 한 건으로 센다. 같은 카드 안의 서로 다른 문장은 따로 센다.
 const EVENT_OVERLAP = 0.6
@@ -217,9 +217,9 @@ export function sameEvent(a, b) {
   return shared / Math.min(sa.size, sb.size) >= EVENT_OVERLAP
 }
 
-// ---- 16국 수장 검토 추천안(G2 Q9 B, leader-questions.md L01–L16의 추천 선택지). 소유자 답변 전이므로 채택 정본이 아니다. ----
+// ---- 16국 수장 검토(소유자 결정 2026-09-28, G2 Q9 L01–L16). 최지우(L09)는 Core-Characters 판본이 정본이다. ----
 // add: 카드 문장(글자 그대로)을 지정 기술의 근거로 센다. tier가 없으면 절의 등급을 따르고, ability: false가 아니면 기준 능력 근거로도 센다.
-// exclude: 본인 행위가 아닌 문장을 근거에서 뺀다. drop: 생업 칸의 낱말이 잘못 부른 기술을 뺀다. hold: 원천 충돌로 바꾸지 않는다.
+// exclude: 본인 행위가 아닌 문장을 근거에서 뺀다. drop: 생업 칸의 낱말이 잘못 부른 기술을 뺀다.
 export const LEADER_REVIEW = {
   K001: { q: 'L01', choice: 'B', add: [
     { quote: '한재목은 그 열쇠로 배급구역 대표들의 연서를 받기 전에 수문을 열지 않는 버릇을 배웠다.', skill: 'administration', tier: 'B' },
@@ -235,7 +235,7 @@ export const LEADER_REVIEW = {
   K144: { q: 'L06', choice: 'B', add: [{ quote: '세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다.', skill: 'administration' }] },
   K169: { q: 'L07', choice: 'C', drop: ['observation'], add: [{ quote: '박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다.', skill: 'administration' }] },
   K194: { q: 'L08', choice: 'B', add: [{ quote: '노량진 냉동 창고의 열쇠를 관리하였다.', skill: 'administration' }] },
-  K219: { q: 'L09', choice: 'A', hold: 'Cast-State-09와 Core-Characters의 일화·무공이 서로 다르다. 정본 판본을 소유자가 정하기 전에는 바꾸지 않는다.' },
+  K219: { q: 'L09', choice: 'C', add: [{ quote: '북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다.', skill: 'electronicsOp', tier: 'C' }] },
   K245: { q: 'L10', choice: 'B', add: [
     { quote: '행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 신도 명부 줄로 옮겼다.', skill: 'administration' },
     { quote: '행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 시민권 줄로 옮겼다.', skill: 'administration' },
@@ -644,7 +644,7 @@ export function build(root = ROOT) {
   const doc = {
     schema: SCHEMA,
     status: 'proposal',
-    note: '겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 세고(G2 Q9 L0 추천안), 16국 수장에는 수장별 검토의 추천 선택지를 적용했다(L01–L16). 이 두 가지는 소유자 항목별 승인 대기이며 채택 정본이 아니다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.',
+    note: '겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다(G2 Q9 L0 B). 16국 수장에는 수장별 검토의 선택지를 적용한다(G2 Q9 L01–L16). 최지우(K219)는 Core-Characters 판본을 따른다(L09 C). 모두 소유자 결정 2026-09-28이다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.',
     invariants: { ...APPROVED_HASHES },
     rules: {
       edition: 'GURPS Basic Set: Characters, 4th ed. (SJG 2004)',
@@ -657,8 +657,8 @@ export function build(root = ROOT) {
       bands: BANDS,
       unspent: { floor: UNSPENT_FLOOR, rule: '75 CP 미만이면 모자란 만큼 미사용 점수(unspent points)로 둔다. 기술·능력·특성으로 쓰지 않는다(소유자 결정 2026-09-28, G2 Q2 B)' },
       owner_tier_a: { ...OWNER_TIER_A, rule: '사용자 확정 직위 줄이 직접 가리키는 핵심 기술(소유자 결정 2026-09-28, G2 Q6 C)' },
-      same_event: { rule: '한 능력에서 다른 카드에 다른 문장으로 실린 같은 사건은 한 건으로 센다. 끝 서술어가 같고(…하였다 → …했다) 조사를 뗀 낱말이 짧은 문장의 60% 이상 겹치면 같은 사건이다. 다른 판본은 같은 기술의 보조 인용으로만 둔다', status: '추천안, 소유자 승인 대기(G2 Q9 L0)' },
-      leader_review: { status: '추천안, 소유자 항목별 승인 대기(G2 Q9 B, L01–L16)', items: Object.fromEntries(Object.entries(LEADER_REVIEW).map(([id, r]) => [id, { question: r.q, choice: r.choice, ...(r.hold ? { hold: r.hold } : {}) }])) },
+      same_event: { rule: '한 능력에서 다른 카드에 다른 문장으로 실린 같은 사건은 한 건으로 센다. 끝 서술어가 같고(…하였다 → …했다) 조사를 뗀 낱말이 짧은 문장의 60% 이상 겹치면 같은 사건이다. 다른 판본은 같은 기술의 보조 인용으로만 둔다', status: '소유자 결정 2026-09-28 (G2 Q9 L0)' },
+      leader_review: { status: '소유자 결정 2026-09-28 (G2 Q9 L01–L16)', items: Object.fromEntries(Object.entries(LEADER_REVIEW).map(([id, r]) => [id, { question: r.q, choice: r.choice }])) },
       languages: '카드 「언어:」 줄의 언어만, 첫 언어 Native, 나머지 숙련도 미정(null), 모두 0 CP. 숙련도 CP는 뒤의 규칙을 기다린다(소유자 결정 2026-09-28, G2 Q8 C)',
       traits: { reputation: 'B26–27, 카드가 유명세를 적은 사람만', combat_reflexes: 'B43, 15 CP, Dodge +1, 소유자가 지명한 사람만', disadvantages: '발급하지 않음' },
       tl: '/TL? — 캠페인 기술 수준 미정(G1 Q14)',
@@ -769,7 +769,7 @@ export function verify(doc, root = ROOT) {
     const lead = LEADER_REVIEW[p.id]
     if (lead && !pilot) {
       const quotes = new Set([...Object.values(p.attributes ?? {}).flatMap((x) => x.evidence ?? []), ...(p.skills ?? []).flatMap((s) => s.evidence ?? [])].map((e) => e.quote))
-      for (const x of lead.add ?? []) if (!quotes.has(x.quote)) fail(`${tag} ${lead.q}: 추천안 근거 «${x.quote}»가 적용되지 않음`)
+      for (const x of lead.add ?? []) if (!quotes.has(x.quote)) fail(`${tag} ${lead.q}: 수장 검토 근거 «${x.quote}»가 적용되지 않음`)
       for (const q of lead.exclude ?? []) if (quotes.has(q)) fail(`${tag} ${lead.q}: 뺀 문장 «${q}»이 근거에 남음`)
       for (const k of lead.drop ?? []) if ((p.skills ?? []).some((s) => s.name === SKILLS[k].name)) fail(`${tag} ${lead.q}: 뺀 기술 ${SKILLS[k].name}이 남음`)
     }

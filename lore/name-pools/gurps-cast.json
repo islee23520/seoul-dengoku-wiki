@@ -1,7 +1,7 @@
 {
  "schema": "wiki-gurps-cast.v1",
  "status": "proposal",
- "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 세고(G2 Q9 L0 추천안), 16국 수장에는 수장별 검토의 추천 선택지를 적용했다(L01–L16). 이 두 가지는 소유자 항목별 승인 대기이며 채택 정본이 아니다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
+ "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다(G2 Q9 L0 B). 16국 수장에는 수장별 검토의 선택지를 적용한다(G2 Q9 L01–L16). 최지우(K219)는 Core-Characters 판본을 따른다(L09 C). 모두 소유자 결정 2026-09-28이다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
  "invariants": {
   "lore/name-pools/values-cast.json": "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
   "lore/name-pools/person-id-registry.json": "d5fb337c16d91f4ac0200ea91accb16400742e53e1ed5a046f76f381ddf41f23"
@@ -61,10 +61,10 @@
   },
   "same_event": {
    "rule": "한 능력에서 다른 카드에 다른 문장으로 실린 같은 사건은 한 건으로 센다. 끝 서술어가 같고(…하였다 → …했다) 조사를 뗀 낱말이 짧은 문장의 60% 이상 겹치면 같은 사건이다. 다른 판본은 같은 기술의 보조 인용으로만 둔다",
-   "status": "추천안, 소유자 승인 대기(G2 Q9 L0)"
+   "status": "소유자 결정 2026-09-28 (G2 Q9 L0)"
   },
   "leader_review": {
-   "status": "추천안, 소유자 항목별 승인 대기(G2 Q9 B, L01–L16)",
+   "status": "소유자 결정 2026-09-28 (G2 Q9 L01–L16)",
    "items": {
     "K001": {
      "question": "L01",
@@ -100,8 +100,7 @@
     },
     "K219": {
      "question": "L09",
-     "choice": "A",
-     "hold": "Cast-State-09와 Core-Characters의 일화·무공이 서로 다르다. 정본 판본을 소유자가 정하기 전에는 바꾸지 않는다."
+     "choice": "C"
     },
     "K245": {
      "question": "L10",
@@ -26234,10 +26233,16 @@
      "evidence": []
     },
     "IQ": {
-     "value": 10,
-     "cp": 0,
+     "value": 11,
+     "cp": 20,
      "rule": "card-actions",
-     "evidence": []
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-09.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
+      }
+     ]
     },
     "HT": {
      "value": 10,
@@ -26262,7 +26267,7 @@
       }
      ],
      "cp": 8,
-     "level": 12
+     "level": 13
     },
     {
      "name": "Accounting",
@@ -26278,14 +26283,35 @@
       }
      ],
      "cp": 8,
-     "level": 11
+     "level": 12
+    },
+    {
+     "name": "Electronics Operation/TL? (Communications)",
+     "ko": "통신 운용",
+     "attr": "IQ",
+     "diff": "A",
+     "tier": "C",
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-09.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/86/text/ko",
+       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
+      }
+     ],
+     "cp": 4,
+     "level": 12
     }
    ],
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 10,
-    "Per": 10,
+    "Will": 11,
+    "Per": 11,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -26293,12 +26319,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 0,
+    "attributes": 20,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 16,
-    "spent": 16,
-    "unspent": 59,
+    "skills": 20,
+    "spent": 40,
+    "unspent": 35,
     "total": 75
    },
    "band": "일반 인물",

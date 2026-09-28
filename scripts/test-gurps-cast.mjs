@@ -114,7 +114,7 @@ test('Q8 C: 카드에 적힌 언어를 0 CP로 싣고 첫 언어만 Native다', 
   assert.deepEqual(find(doc, 'K1003').languages.map((l) => l.name), ['한국어'])
 })
 
-// G2 Q9 B 16국 수장 검토 추천안(소유자 항목별 승인 대기). L0: 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다.
+// G2 Q9 16국 수장 검토(소유자 결정 2026-09-28). L0: 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다.
 const CORE = 'lore/characters/Core-Characters.json'
 const SAME_EVENT = [
   ['K194', '가짜 약이 경매에 올랐을 때, 오해린은 상자를 봉한 채 값을 올렸다.', '오해린은 상자를 봉한 채 값을 올렸다.', '/content/78/text/ko'],
@@ -147,7 +147,7 @@ test('L0: 두 판본 중 하나만 능력 근거로 두고, 다른 판본은 같
   }
 })
 
-// 수장별 추천안 적용 뒤의 값(leader-questions.md). 최지우(L09)는 두 카드가 충돌하므로 바꾸지 않는다.
+// 수장별 검토 적용 뒤의 값(leader-questions.md). 최지우(L09)는 Core-Characters 판본을 따른다(C).
 const LEADERS = {
   K001: [12, 64, 75, ['Administration B', 'Observation B', 'Politics C', 'Breath Control C']],
   K029: [12, 56, 75, ['Diplomacy B', 'Administration C', 'Breath Control C']],
@@ -157,7 +157,7 @@ const LEADERS = {
   K144: [11, 28, 75, ['Administration B']],
   K169: [12, 64, 75, ['Administration B', 'Diplomacy B', 'Leadership C', 'Breath Control C']],
   K194: [12, 56, 75, ['Administration B', 'Merchant B']],
-  K219: [10, 16, 75, ['Administration B', 'Accounting B']],
+  K219: [11, 40, 75, ['Administration B', 'Accounting B', 'Electronics Operation/TL? (Communications) C']],
   K245: [11, 28, 75, ['Administration B']],
   K271: [11, 32, 75, ['Breath Control B', 'Administration C']],
   K296: [11, 32, 75, ['Administration B', 'Breath Control C']],
@@ -166,7 +166,7 @@ const LEADERS = {
   K373: [12, 56, 75, ['Merchant B', 'Diplomacy B']],
   K398: [12, 56, 75, ['Accounting B', 'Administration C', 'Diplomacy C']],
 }
-test('수장 추천안: 16국 수장의 IQ·사용 CP·총점·기술이 추천 선택지와 같다', () => {
+test('수장 검토: 16국 수장의 IQ·사용 CP·총점·기술이 소유자 결정 선택지와 같다', () => {
   for (const [id, [iq, spent, total, skills]] of Object.entries(LEADERS)) {
     const p = find(doc, id)
     assert.equal(p.attributes.IQ.value, iq, `${id} IQ`)
@@ -177,7 +177,7 @@ test('수장 추천안: 16국 수장의 IQ·사용 CP·총점·기술이 추천 
   }
 })
 
-test('수장 추천안: 남윤경의 시설 문장은 근거가 아니고, 배우진 Mechanic·박태겸 Observation은 빠진다', () => {
+test('수장 검토: 남윤경의 시설 문장은 근거가 아니고, 배우진 Mechanic·박태겸 Observation은 빠진다', () => {
   const nam = find(doc, 'K373')
   const all = [...Object.values(nam.attributes).flatMap((a) => a.evidence), ...nam.skills.flatMap((s) => s.evidence)]
   assert.ok(!all.some((e) => e.quote === '주교회의 청사 광진 면목로는 바깥 창고로만 남긴다.'))
