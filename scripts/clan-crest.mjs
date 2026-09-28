@@ -96,17 +96,26 @@ export function assignCrests(clanIds) {
 export function renderCrest(choice, researched) {
   const color = INKS[choice.ink]
   if (researched) {
-    const angles = { blossom: 5, petal: 6, leaf: 7, wreath: 8, wheel: 8, star: 8, wave: 6, bird: 2, ring: 10, fan: 6, plum: 5, butterfly: 4, circle: 6, crest: 8 }
-    const count = angles[researched.motif] ?? 6
-    const form = { blossom: 'plum', petal: 'lotus', leaf: 'bamboo', wreath: 'pine', wheel: 'lozenge', star: 'lozenge', wave: 'wave', bird: 'feather', ring: 'chilbo', fan: 'fan', plum: 'plum', butterfly: 'butterfly', circle: 'chilbo', crest: 'key' }[researched.motif] ?? 'plum'
-    const radius = count > 7 ? 23 : count > 5 ? 21 : 18
-    const marks = Array.from({ length: count }, (_, i) => {
-      const degrees = i * 360 / count
-      const [x, y] = polar(radius, degrees)
-      return place(form, x, y, count > 7 ? 0.7 : count > 5 ? 0.88 : 1.1, degrees)
-    }).join('')
-    const innerRing = researched.motif === 'ringed-blossom' ? '<circle cx="50" cy="50" r="37" fill="none" stroke-width="1.8"/>' : ''
-    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><g fill="${color}" stroke="${color}" stroke-width="0.8"><circle cx="50" cy="50" r="45" fill="none" stroke-width="2.4"/>${innerRing}${marks}<circle cx="50" cy="50" r="4"/></g></svg>\n`
+    const designs = {
+      blossom: ['radial5', 'plum', 'lotus', 'plain'],
+      'ringed-blossom': ['single', 'plum', 'lotus', 'double'],
+      petal: ['radial6', 'lotus', 'chilbo', 'plain'],
+      leaf: ['pair', 'bamboo', 'pine', 'double'],
+      wreath: ['wreath', 'pine', 'plum', 'plain'],
+      wheel: ['radial8', 'lozenge', 'key', 'plain'],
+      star: ['single', 'lozenge', 'chilbo', 'needle'],
+      wave: ['stack3', 'wave', 'cloud', 'double'],
+      bird: ['pair', 'feather', 'feather', 'plain'],
+      ring: ['single', 'chilbo', 'lozenge', 'double'],
+      fan: ['radial3', 'fan', 'fan', 'plain'],
+      plum: ['single', 'plum', 'lotus', 'plain'],
+      butterfly: ['single', 'butterfly', 'lotus', 'plain'],
+      circle: ['radial4', 'chilbo', 'lozenge', 'double'],
+      crest: ['block', 'key', 'lozenge', 'octagon'],
+    }
+    const [kind, first, second, border] = designs[researched.motif]
+    const body = layout(kind, first, second, kind === 'block' || kind === 'wreath', border === 'plain' ? 0.9 : 0.78)
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><g fill="${color}" stroke="${color}">${frame(border)}</g><g fill="${color}" stroke="${color}" stroke-width="0.6">${body}</g></svg>\n`
   }
   const inverted = choice.modifier === 'inverted'
   const fg = inverted ? '#ffffff' : color
