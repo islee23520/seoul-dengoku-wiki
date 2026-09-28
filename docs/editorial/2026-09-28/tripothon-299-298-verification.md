@@ -10,7 +10,7 @@ GDD 참조 HEAD: `e4b14cac11314c47da23b8e04eb4c4e336ffc3e6`.
 - `lore/chronology/Scenario-Timeline.json`: 기존 회수 카드 뒤에 학동·논현2동의 **미승인 위치 제안** 한 문단을 한영으로 추가했다. 기존 41개 블록은 HEAD와 파싱 값 대조에서 모두 동일했다.
 - `lore/chronology/Tripothon-Return-Relay-Proposal.json`: 별도 한영 draft 원천. 원문 근거, 경로, 성인 3명 분대, 별도 대여 장비, 5+1단계의 14개 선택 행, 수치 효과, 성공·실패·귀환 조건, 소유자 결정 5행, 구현 인수 사례를 담았다.
 - 지역 관측 JSON·OSM 객체·역 그래프·게임 데이터는 변경하지 않았다. 기존 명칭, 2124년 기연결, 민웅기의 대전 체류, 신준의 동의·휴식, S00 원장 행의 proposal 상태를 보존했다.
-- #299와 #298 본문·댓글을 `gh issue view --repo islee23520/seoul-dengoku --json title,body,comments`로 확인했다. #299 댓글 0개, #298 소유자 댓글 5864851948은 승인 전 위치 잠금을 요구한다.
+- #299와 #298 본문·댓글을 `gh issue view --repo islee23520/seoul-dengoku --json title,body,comments`로 확인했다. #298 소유자 댓글 5864851948은 승인 전 위치 잠금을 요구한다. 이후 #299 소유자 댓글 5871403351은 도달 거리를 턴 수 대신 역·층 경로로 적도록 정정했다. 제안 본문의 3간선은 역 사이 연결 수로만 설명하며 실제 거리·시간·층 경로는 확정하지 않았다.
 
 ## 실행과 결과
 
