@@ -476,7 +476,7 @@ test('between-station segments are underground units with a rule-derived control
   for (const edge of data.edges) {
     assert.equal(edge.id, `segment:${edge.a}~${edge.b}`)
     assert.ok(['open', 'checkpoint', 'unknown'].includes(edge.passage2126), edge.id)
-    if (edge.passage2126 !== 'unknown') assert.equal(edge.passage2126, edge.control.status === 'held' ? 'open' : 'checkpoint', edge.id)
+    if (edge.passage2126 !== 'unknown' && !ledger.passageDecisions.some((entry) => entry.segmentId === edge.id)) assert.equal(edge.passage2126, edge.control.status === 'held' ? 'open' : 'checkpoint', edge.id)
     assert.ok(['derived-from-stations', 'control-delta'].includes(edge.control?.source), edge.id)
     assert.ok(Object.hasOwn(edge.control, 'deltaId'), edge.id)
     const delta = segmentDeltas.get(edge.id)
@@ -503,10 +503,11 @@ test('between-station segments are underground units with a rule-derived control
   }
   // 소유자 결정(2026-09-28): 개막 시점 모든 역이 점유되어 있으므로 미확인 구간도 없다.
   assert.equal(data.edges.filter((edge) => edge.control.status === 'unknown').length, 0)
-  // 소유자 결정(2026-09-28): 한강 횡단 구간만 구간별 결정 전까지 unknown으로 남는다.
-  const hanCrossings = ['segment:노량진~용산', 'segment:동작~이촌', 'segment:압구정~옥수', 'segment:당산~합정', 'segment:마포~여의나루', 'segment:자양~청담']
-  for (const id of hanCrossings) assert.equal(data.edges.find((edge) => edge.id === id).passage2126, 'unknown', id)
-  assert.equal(data.edges.filter((edge) => edge.passage2126 === 'unknown').length, 12)
+  // 소유자 결정(2026-09-28): 한강 횡단 12구간은 구간별 결정을 따른다.
+  assert.equal(ledger.passageDecisions.length, 12)
+  for (const decision of ledger.passageDecisions) assert.equal(data.edges.find((edge) => edge.id === decision.segmentId).passage2126, decision.passage2126, decision.segmentId)
+  assert.equal(data.edges.find((edge) => edge.id === 'segment:압구정~옥수').passage2126, 'open')
+  assert.equal(data.edges.filter((edge) => edge.passage2126 === 'unknown').length, 0)
 })
 
 test('surface and underground territory are separate flat views switched explicitly', async () => {

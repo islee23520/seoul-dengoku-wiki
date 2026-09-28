@@ -521,7 +521,14 @@ const crossesHan = (a, b) => {
   const [da, db] = [stationDistrictById.get(a), stationDistrictById.get(b)]
   return (HAN_NORTH_DISTRICTS.has(da) && HAN_SOUTH_DISTRICTS.has(db)) || (HAN_SOUTH_DISTRICTS.has(da) && HAN_NORTH_DISTRICTS.has(db))
 }
-const passage2126 = (edge, control) => crossesHan(edge.a, edge.b) ? 'unknown' : control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
+const passageDecisions = new Map((stationControlLedger.passageDecisions ?? []).map((entry) => [entry.segmentId, entry.passage2126]))
+if (passageDecisions.size !== (stationControlLedger.passageDecisions ?? []).length) throw new Error('E_PASSAGE_DECISION_DUPLICATE')
+for (const value of passageDecisions.values()) if (!['open', 'checkpoint', 'blocked'].includes(value)) throw new Error(`E_PASSAGE_DECISION_VALUE:${value}`)
+const passage2126 = (edge, control) => {
+  const id = `segment:${edge.a}~${edge.b}`
+  if (crossesHan(edge.a, edge.b)) return passageDecisions.get(id) ?? 'unknown'
+  return control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
+}
 const projectedEdges = seoulGraph.edges.map((edge) => ({ a: canonicalStationId(edge.a), b: canonicalStationId(edge.b), lineIds: stationLines.get(edge.a).filter((id) => stationLines.get(edge.b).includes(id)) }))
 const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
   const id = `segment:${edge.a}~${edge.b}`
@@ -529,6 +536,7 @@ const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && pro
   return { ...edge, id, control, passage2126: passage2126(edge, control) }
 })
 for (const segmentId of segmentControlOverrides.keys()) if (!mapEdges.some((edge) => edge.id === segmentId)) throw new Error(`E_SEGMENT_CONTROL_UNKNOWN_SEGMENT:${segmentId}`)
+for (const segmentId of passageDecisions.keys()) if (!mapEdges.some((edge) => edge.id === segmentId && crossesHan(edge.a, edge.b))) throw new Error(`E_PASSAGE_DECISION_NOT_HAN_CROSSING:${segmentId}`)
 const polygonMetrics = (points) => {
   let twiceArea = 0
   let weightedX = 0
