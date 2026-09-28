@@ -69,8 +69,8 @@
         ],
         [
           "strategy",
-          "독립 원정 분대별 계획 → 일괄 해결; 태세는 통상 행군·강행군·매복·주둔·야영.",
-          "`strategy → engagement`: 경로 전체의 이동력·태세·지형·통행권·봉쇄·층·통제권 검사 통과 뒤 이동; 통제권 진입 시 정지, 다음 명령은 후퇴·공격·허가 우회. 강행군은 공격·요격 개시 불가. 충돌·조우는 동일 입력에 결정론적으로 판정한다.",
+          "독립 원정 분대별 명령 → 시간 기반 이동(결정 14); 태세는 통상 행군·강행군·매복·주둔·야영.",
+          "`strategy → engagement`: 경로 전체의 태세·지형·통행권·봉쇄·층·통제권 검사 통과 뒤 이동; 통제권 진입 시 정지, 다음 명령은 후퇴·공격·허가 우회. 강행군은 공격·요격 개시 불가. 충돌·조우는 동일 입력에 결정론적으로 판정한다.",
           "`GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:68`, `GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:70`, `GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:71`, `GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:72`, `GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:73`, `GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:76`, `GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:84`, `GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:87`, `GDD/rules/Travel-and-Encounters.md:27`"
         ],
         [
