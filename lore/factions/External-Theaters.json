@@ -643,7 +643,7 @@
       "items": [
         {
           "en": "Seasonal conditions: The tide and the state of estuary drainage changed wharf access and the loading order. / When the sea wind overlapped the breeding season, the passage rules over the bridge and transmission inspection hatches were adjusted. / Instability in the cold-storage power demanded the order of verification and quarantine before the movement of cargo.",
-          "ko": "계절 조건: 조위와 하구 배수 상태가 부두 접근과 적재 순번을 바꾼다. / 해풍과 번식기가 겹치면 교량·송신 점검구 상공의 통행 규칙을 조정한다. / 냉동 전력의 불안정은 화물의 이동보다 검증·격리 순서를 먼저 요구한다."
+          "ko": "계절 조건: 조위와 하구 배수 상태가 부두 접근과 적재 순번을 바꾼다. / 해풍과 번식기가 겹치면 교량·송신 점검구 상공의 통행 규칙을 조정한다. / 냉동 전력이 불안정하면 화물 이동보다 검증·격리 순서를 앞세운다."
         },
         {
           "en": "Suspension conditions: when the tide table and the drainage-valve record did not agree / when a cold box's temperature record and its seal hash disagreed / when the split custody of the stevedore crane control keys had collapsed",
@@ -651,7 +651,7 @@
         },
         {
           "en": "Recording rule: Links blocked by tide or power were not erased from the map; they remained as sections carrying danger, control, and repair conditions.",
-          "ko": "기록 원칙: 조위나 전력으로 막힌 연결은 지도에서 지우지 않고 위험·통제·복구 조건을 지닌 구간으로 남긴다."
+          "ko": "기록 원칙: 조위나 전력으로 막힌 연결은 지도에서 지우지 않고 위험·통제·복구 조건이 있는 구간으로 남긴다."
         }
       ],
       "kind": "list"
@@ -1064,7 +1064,7 @@
         },
         {
           "en": "Recording rule: Even when one relay closed, the remaining relays did not automatically absorb the same freight and risk.",
-          "ko": "기록 원칙: 한 중계가 닫혀도 나머지 중계가 같은 물자와 위험을 자동으로 떠안지 않는다."
+          "ko": "기록 원칙: 한 중계가 닫혀도 같은 물자와 위험이 나머지 중계로 자동으로 넘어가지 않는다."
         }
       ],
       "kind": "list"
@@ -1165,7 +1165,7 @@
       "items": [
         {
           "en": "S07 The Junction: It kept the connection between the Yongsan transshipment and the three-branch relay unbroken. / leverage: the operating memory of the central transshipment ledger and the fence keys / red line: It did not automatically pass the risk of one closed route onto another turnback line.",
-          "ko": "S07 환적국: 용산 환적과 세 갈래 중계의 연결을 끊기지 않게 한다. / 지렛대 중앙 환적 장부와 울타리 열쇠의 운영 기억 / 넘지 않는 선 닫힌 한 길의 위험을 다른 회차선에 자동 전가하지 않는다."
+          "ko": "S07 환적국: 용산 환적과 세 갈래 중계의 연결이 끊기지 않게 한다. / 지렛대 중앙 환적 장부와 울타리 열쇠의 운영 기억 / 넘지 않는 선 닫힌 한 길의 위험을 다른 회차선에 자동 전가하지 않는다."
         },
         {
           "en": "S16 Jeongdong Federation: It published the passage conditions of the inland turnback and the carrying labor. / leverage: the City Hall turnback line and the passage right of the strike rolls / red line: It did not hand cargo with no interpretation to the workers unilaterally.",
@@ -1393,7 +1393,7 @@
       "kind": "paragraph",
       "text": {
         "en": "No one's government was condemned; only the freight cars and the people were inspected.",
-        "ko": "누구의 정부도 단죄하지 않고 화차와 사람만 검수한다."
+        "ko": "어느 정부도 단죄하지 않고 화차와 사람만 검수한다."
       }
     },
     {
@@ -2090,7 +2090,7 @@
         },
         {
           "en": "G10: The choice to pass the water in the direction of the sea wind could leave one season's burden on the Flood-Mold Breath Cluster's corridor and the outer storage grounds. / response: Before the drainage choice, the residents' roll and the right to stop the pumps were confirmed, and the contamination burden was published. / nonlethal constraint: Passing the water to the outskirts so that only the center of Seoul shed its cost was not used as a costless solution.",
-          "ko": "G10: 해풍 방향으로 물을 넘기는 선택은 침수곰팡이호흡단의 회랑과 외곽 저장지에 한 철의 부담을 남길 수 있다. / 대응 배수 선택 전에 주민 명부와 펌프 중지권을 확인하고 오염 부담을 공개한다. / 비살상 제약 외곽에 물을 넘겨 서울 중심의 비용만 지우는 선택을 무비용 해법으로 쓰지 않는다."
+          "ko": "G10: 해풍 방향으로 물을 넘기면 침수곰팡이호흡단의 회랑과 외곽 저장지에 한 철의 부담이 남을 수 있다. / 대응 배수 선택 전에 주민 명부와 펌프 중지권을 확인하고 오염 부담을 공개한다. / 비살상 제약 외곽에 물을 넘겨 서울 중심의 비용만 지우는 선택을 무비용 해법으로 쓰지 않는다."
         },
         {
           "en": "G15: When a delivery-goods code was received, the Care Wheel could raise both the supply and the intensity of quarantine. / response: The roll, the consent hash, and the power to each bed were cross-checked, blocking over-supply and new confinement. / nonlethal constraint: The welfare block was not burned, and the locks of every bed were not cut at once.",
@@ -2236,11 +2236,11 @@
       "world-atlas-projections.v2"
     ],
     "original_anchor": "lore/World-Narrative-Atlas.json",
-    "original_hash": "4d9365255746feb5d0dbb8baed0764bd5e25a0fb2fa69488e3fb527ef7098ed0"
+    "original_hash": "cf95cdb45d4c54ea76a98dc043e35013f3717a14d5aa211a65c9a4b24278d4fb"
   },
   "slug": "External-Theaters",
   "source": {
-    "hash": "4d9365255746feb5d0dbb8baed0764bd5e25a0fb2fa69488e3fb527ef7098ed0",
+    "hash": "cf95cdb45d4c54ea76a98dc043e35013f3717a14d5aa211a65c9a4b24278d4fb",
     "kind": "computed",
     "refs": [
       "lore/World-Narrative-Atlas.json",
