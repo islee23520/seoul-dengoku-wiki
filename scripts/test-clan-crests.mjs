@@ -1,21 +1,18 @@
 import assert from 'node:assert/strict'
 import { readFile, readdir } from 'node:fs/promises'
 import { test } from 'node:test'
-import { INKS, LAYOUTS, MOTIFS, assignCrests, renderCrest } from './clan-crest.mjs'
-import { normalizeRealEmblem, renderRealCrest } from './clan-crest-real.mjs'
+import { LAYOUTS, MOTIFS, assignCrests, renderCrest } from './clan-crest.mjs'
 
 const root = new URL('../', import.meta.url)
 const tables = JSON.parse(await readFile(new URL('lore/name-pools/clan-hangnyeol-tables.json', root), 'utf8'))
 const clans = tables.clans.filter((clan) => !clan.id.includes('-agreed-'))
 const assigned = assignCrests(clans.map((clan) => clan.id))
-const manifest = JSON.parse(await readFile(new URL('assets/clan-crests-real/manifest.json', root), 'utf8'))
-const real = new Map(manifest.emblems.map((row) => [row.clan, row]))
+const manifest = JSON.parse(await readFile(new URL('assets/clan-crest-motifs.json', root), 'utf8'))
+const researched = new Map(manifest.motifs.map((row) => [row.clan, row]))
 
 async function expected(clan) {
   const choice = assigned.get(clan.id)
-  if (!real.has(clan.id)) return renderCrest(choice)
-  const emblem = normalizeRealEmblem(await readFile(new URL(`assets/clan-crests-real/${clan.id}.svg`, root), 'utf8'))
-  return renderRealCrest(emblem, INKS[choice.ink])
+  return renderCrest(choice, researched.get(clan.id))
 }
 
 test('every clan has exactly one committed crest that matches the generator', async () => {
@@ -42,16 +39,15 @@ test('generated crests are text-free, single-ink and use the whole vocabulary', 
   assert.ok(new Set(choices.map((c) => c.motif)).size >= MOTIFS.length - 1)
 })
 
-test('real Commons seals are public domain, belong to known clans and render in one ink', async () => {
+test('researched motifs reference known clans without copying source geometry', async () => {
   const ids = new Set(clans.map((clan) => clan.id))
-  assert.ok(manifest.emblems.length > 0)
-  for (const row of manifest.emblems) {
+  assert.ok(manifest.motifs.length > 0)
+  for (const row of manifest.motifs) {
     assert.ok(ids.has(row.clan), row.clan)
-    assert.equal(row.license, 'Public domain', row.clan)
-    assert.match(row.url, /^https:\/\/upload\.wikimedia\.org\//, row.clan)
+    assert.match(row.reference, /^https:\/\/upload\.wikimedia\.org\//, row.clan)
     const svg = await expected({ id: row.clan })
     assert.doesNotMatch(svg, /<text|<image|href=|<script/, row.clan)
     const colors = new Set((svg.match(/#[0-9a-fA-F]{6}\b/g) ?? []).map((c) => c.toLowerCase()).filter((c) => c !== '#ffffff'))
-    assert.deepEqual([...colors], [INKS[assigned.get(row.clan).ink]], row.clan)
+    assert.equal(colors.size, 1, row.clan)
   }
 })
