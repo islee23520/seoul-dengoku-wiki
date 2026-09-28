@@ -116,8 +116,7 @@
           "required": ["kind", "anchor"],
           "properties": {
             "kind": {"const": "rule"},
-            "anchor": {"$ref": "#/$defs/anchor"},
-            "publicAnchors": {"$ref": "#/$defs/publicAnchors"}
+            "anchor": {"$ref": "#/$defs/anchor"}
           },
           "additionalProperties": false
         },
@@ -127,7 +126,6 @@
           "properties": {
             "kind": {"const": "code"},
             "anchor": {"$ref": "#/$defs/anchor"},
-            "publicAnchors": {"$ref": "#/$defs/publicAnchors"},
             "language": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$"},
             "info": {"type": "string", "minLength": 1},
             "text": {
@@ -160,7 +158,6 @@
             "anchor": {
               "$ref": "#/$defs/anchor"
             },
-            "publicAnchors": {"$ref": "#/$defs/publicAnchors"},
             "depth": {"type": "integer", "minimum": 1, "maximum": 6},
             "text": {
               "$ref": "#/$defs/localizedText"
@@ -187,7 +184,6 @@
             "anchor": {
               "$ref": "#/$defs/anchor"
             },
-            "publicAnchors": {"$ref": "#/$defs/publicAnchors"},
             "items": {
               "type": "array",
               "minItems": 1,
@@ -213,7 +209,6 @@
             "anchor": {
               "$ref": "#/$defs/anchor"
             },
-            "publicAnchors": {"$ref": "#/$defs/publicAnchors"},
             "columns": {
               "type": "array",
               "minItems": 1,
@@ -240,12 +235,6 @@
     "anchor": {
       "type": "string",
       "pattern": "^[A-Za-z0-9가-힣][A-Za-z0-9가-힣_-]*$"
-    },
-    "publicAnchors": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true,
-      "items": {"$ref": "#/$defs/anchor"}
     },
     "envelope": {
       "type": "object",

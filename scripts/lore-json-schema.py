@@ -11,7 +11,6 @@ from referencing import Registry, Resource
 root = Path(__file__).resolve().parent.parent / "lore"
 schemas = [json.loads(path.read_text()) for path in root.rglob("authoring.schema.json")]
 schemas.append(json.loads((root / "authoring.shared.schema.json").read_text()))
-schemas.append(json.loads((root / "authoring.atlas.schema.json").read_text()))
 registry = Registry().with_resources(
     (schema["$id"], Resource.from_contents(schema)) for schema in schemas
 )
