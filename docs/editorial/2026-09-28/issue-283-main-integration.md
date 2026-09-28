@@ -11,3 +11,7 @@ main이 추가한 국가별 사건 요약에서 `koText`를 참조하나 #283은
 검증은 production build(TypeScript 포함), strict JSON, 공개 gate, 로어 및 위키 링크, 계약, artifact allowlist, Atlas 재생성 일치, 스키마·렌더·연표·지도·인물·문서·용어집 회귀 검사다. 별도 lint 명령은 없다. Vite의 큰 번들 경고가 남는다. 브라우저 QA·원격 푸시·PR·main 병합·사이트 배포는 후속 전달 단계이며 이 문서는 완료를 주장하지 않는다. 기존 미추적 `wiki/`는 보존했다.
 
 최종 재검증은 모두 exit 0: build, strict JSON 101문서, 공개 gate, 로어 링크, Wiki 링크 22경로, 계약, artifact allowlist, Atlas 투영 일치. 스키마·gate·admission·링크·인물·문서·용어집 회귀 검사는 통과했고, 앞서 실패했던 외부 지역사 렌더를 고친 뒤 렌더·Atlas·연표·지도 223개 검사를 재실행해 223/223 통과(실패·skip 0)를 확인했다. 최초 실패를 성공으로 재분류하지 않고 수정 후 재검증으로 구분한다.
+
+전달 직전 병합된 main `80a850cb`(#205 역 별칭·통제)도 추가 통합했다. 충돌한 `public/opening-territories.json`은 최신 생성기로 다시 만들었다. 같은 build·strict·gate·링크·계약·투영 검사와 렌더·Atlas·연표·지도·역 별칭 검사를 추가 실행한다. 원천과 이전 검증 기록은 보존한다.
+
+80a850cb 통합 최종 결과: 위 명령 전부 exit 0, 렌더·Atlas·연표·지도·역 별칭 231/231 통과, 실패·skip 0.
