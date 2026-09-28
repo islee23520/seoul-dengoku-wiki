@@ -4,6 +4,14 @@ import test from 'node:test'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
 import { validatedDensities } from './region-density.mjs'
 
+test('rail geometry uses one visible source and the detail panel stays in the viewport', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  const styles = await readFile(new URL('../src/components/OpeningTerritoryMap.css', import.meta.url), 'utf8')
+  assert.match(map, /showRail && !rail && data\.edges\.flatMap/u)
+  assert.match(map, /showRail && displayedRail\.map/u)
+  assert.match(styles, /\.territory-map-flat > \.territory-detail \{ position: fixed;/u)
+})
+
 test('projected density covers all 427 source codes and preserves the unrounded area formula', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const source = JSON.parse(await readFile(new URL('../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
