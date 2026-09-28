@@ -172,13 +172,16 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
     if (['종로구', '중구'].includes(regions[0].district)) assert.deepEqual(regions[0].polities, ['S06'], `${state.id}:${capital.name}:government-block`)
     else assert.deepEqual(regions[0].polities, [state.id], `${state.id}:${capital.name}:owner`)
     if (state.id === 'S16') {
-      assert.deepEqual(capital.control.polityIds, ['S06', 'S16'], 'City Hall shared station')
-      assert.equal(capital.control.status, 'contested')
+      // 소유자 결정(2026-09-28): 개막 시청역은 대한민국정부 점유, 분쟁 없음.
+      assert.deepEqual(capital.control.polityIds, ['S06'], 'City Hall opening occupant')
+      assert.equal(capital.control.status, 'held')
       assert.equal(capital.control.primary, 'S06')
     } else if (capital.id === '삼성') {
       assert.deepEqual(capital.control.memberSurfaces.map((entry) => entry.polityIds), [['S04'], ['S16']])
-      assert.equal(capital.control.primary, null)
-      assert.equal(capital.control.status, 'unknown')
+      // 소유자 결정(2026-09-28): 두 표기는 같은 역이고 개막 점유는 명부교회다.
+      assert.equal(capital.control.source, 'control-delta')
+      assert.equal(capital.control.primary, 'S04')
+      assert.equal(capital.control.status, 'held')
     } else {
       assert.deepEqual(capital.control.polityIds, [state.id], `${state.id}:${capital.name}:station`)
       assert.equal(capital.control.status, 'held', `${state.id}:${capital.name}:station-status`)
@@ -195,7 +198,7 @@ test('the City Hall control ledger separates Government guard priority from the 
   assert.deepEqual(cityHall.control.polityIds, delta.polityIds)
   assert.equal(cityHall.control.primary, delta.primary)
   assert.equal(cityHall.control.source, 'control-delta')
-  assert.equal(cityHall.control.status, 'contested')
+  assert.equal(cityHall.control.status, 'held')
   assert.equal(data.states.find((state) => state.id === 'S16').capitalStationId, '시청')
   assert.equal(data.regions.find((region) => region.id === cityHall.control.surfaceRegionId).polities[0], 'S06')
   for (const stationId of ['광화문', '종로3가', '을지로입구']) {
@@ -497,7 +500,8 @@ test('between-station segments are underground units with a rule-derived control
       assert.equal(edge.control.primary, null, edge.id)
     }
   }
-  assert.ok(data.edges.some((edge) => edge.control.status === 'unknown'))
+  // 소유자 결정(2026-09-28): 개막 시점 모든 역이 점유되어 있으므로 미확인 구간도 없다.
+  assert.equal(data.edges.filter((edge) => edge.control.status === 'unknown').length, 0)
 })
 
 test('surface and underground territory are separate flat views switched explicitly', async () => {

@@ -125,17 +125,21 @@ test('cross-region alias observations remain attached to the projected station',
   }
   const samsung = projected.stations.find((entry) => entry.id === '삼성')
   assert.deepEqual(samsung.control.memberSurfaces.map((entry) => entry.polityIds), [['S04'], ['S16']])
-  assert.equal(samsung.control.primary, null)
-  assert.equal(samsung.control.hierarchy.regionalAuthority, null)
+  // 소유자 결정(2026-09-28): 두 표기는 같은 역이고 개막 점유 원장은 명부교회다.
+  assert.equal(samsung.control.source, 'control-delta')
+  assert.equal(samsung.control.primary, 'S04')
 })
 
-test('every alias member keeps its own control record and only disagreement clears the node control', () => {
+test('every alias member keeps its own control record and only unresolved disagreement clears the node control', () => {
   for (const entry of catalogData.data.station_aliases) {
     const station = projected.stations.find((candidate) => candidate.id === entry.id)
     assert.deepEqual(station.control.memberSurfaces.map((member) => member.id), [entry.id, ...entry.aliases], entry.id)
     assert.ok(station.control.memberSurfaces.every((member) => ['source', 'deltaId', 'status', 'primary', 'surfaceRegionId', 'surfaceRegionName', 'polityIds'].every((key) => Object.hasOwn(member, key))), entry.id)
     const records = new Set(station.control.memberSurfaces.map((member) => `${member.status}:${member.primary}:${[...member.polityIds].sort().join(',')}`))
-    if (records.size > 1) {
+    if (station.control.source === 'control-delta') {
+      assert.equal(station.control.status, 'held', entry.id)
+      assert.equal(station.control.polityIds.length, 1, entry.id)
+    } else if (records.size > 1) {
       assert.equal(station.control.status, 'unknown', entry.id)
       assert.deepEqual(station.control.polityIds, [], entry.id)
       assert.equal(station.control.primary, null, entry.id)
