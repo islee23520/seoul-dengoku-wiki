@@ -347,16 +347,16 @@
       "anchor": "External-Theaters-list-0020",
       "items": [
         {
-          "en": "G01: When the evacuation column's food traces overlapped the flood level, the Flood-Boar Swarm could occupy the sluice stairs. / response: The leftovers were diverted to a separate sealed collection, and the passage times were divided. / nonlethal constraint: A wholesale cull scattered the herd into the alleys, so it was kept only as a last resort.",
-          "ko": "G01: 피난 행렬의 음식물 흔적과 홍수위가 겹치면 범람멧돼지군이 수문 계단을 점유할 수 있다. / 대응 잔반을 별도 밀폐 회수로 돌리고 통행 시간을 분할한다. / 비살상 제약 전면 살처분은 무리를 골목으로 흩뜨리므로 최후 수단으로만 둔다."
+          "en": "G01: When the evacuation column's food traces overlapped the flood level, the Wild Boar could occupy the sluice stairs. / response: The leftovers were diverted to a separate sealed collection, and the passage times were divided. / nonlethal constraint: A wholesale cull scattered the herd into the alleys, so it was kept only as a last resort.",
+          "ko": "G01: 피난 행렬의 음식물 흔적과 홍수위가 겹치면 멧돼지가 수문 계단을 점유할 수 있다. / 대응 잔반을 별도 밀폐 회수로 돌리고 통행 시간을 분할한다. / 비살상 제약 전면 살처분은 무리를 골목으로 흩뜨리므로 최후 수단으로만 둔다."
         },
         {
           "en": "G06: When the migratory birds' movement along the northern wind path overlapped the sluice inspection, access to the bridges and the depot narrowed. / response: The roosts and perches of each functional flock and the low-noise inspection window were adjusted. / nonlethal constraint: The choice of drying the water surface to drive the flock out left an ecological and water-quality cost.",
           "ko": "G06: 북방 바람길의 철새 이동이 수문 점검과 겹치면 교량·차량기지 접근이 좁아진다. / 대응 기능군별 수면·횃대와 저소음 점검 창을 조정한다. / 비살상 제약 수면을 말려 군집을 내보내는 선택은 생태와 수질 비용을 남긴다."
         },
         {
-          "en": "G16: A materials signal from the northern corridor could widen the working radius of the Blueprint-Ghost Machine Corps' temporary bridges. / response: The stop grid and the exception layer were checked first, separating people's dwellings from the materials signal. / nonlethal constraint: Instead of destroying the blueprint vault or the equipment, only the wrong layer port was sealed.",
-          "ko": "G16: 북방 회랑 자재 신호가 도면유령기계단의 가설교량 작업 반경을 넓힐 수 있다. / 대응 중지 격자와 예외 레이어를 먼저 확인해 사람의 거처와 자재 신호를 분리한다. / 비살상 제약 도면 금고나 장비를 파괴하는 대신 잘못된 레이어 포트만 봉인한다."
+          "en": "G16: A materials signal from the northern corridor could widen the working radius of the Girder Spider' temporary bridges. / response: The stop grid and the exception layer were checked first, separating people's dwellings from the materials signal. / nonlethal constraint: Instead of destroying the blueprint vault or the equipment, only the wrong layer port was sealed.",
+          "ko": "G16: 북방 회랑 자재 신호가 철골거미의 가설교량 작업 반경을 넓힐 수 있다. / 대응 중지 격자와 예외 레이어를 먼저 확인해 사람의 거처와 자재 신호를 분리한다. / 비살상 제약 도면 금고나 장비를 파괴하는 대신 잘못된 레이어 포트만 봉인한다."
         }
       ],
       "kind": "list"
@@ -643,7 +643,7 @@
       "items": [
         {
           "en": "Seasonal conditions: The tide and the state of estuary drainage changed wharf access and the loading order. / When the sea wind overlapped the breeding season, the passage rules over the bridge and transmission inspection hatches were adjusted. / Instability in the cold-storage power demanded the order of verification and quarantine before the movement of cargo.",
-          "ko": "계절 조건: 조위와 하구 배수 상태가 부두 접근과 적재 순번을 바꾼다. / 해풍과 번식기가 겹치면 교량·송신 점검구 상공의 통행 규칙을 조정한다. / 냉동 전력의 불안정은 화물의 이동보다 검증·격리 순서를 먼저 요구한다."
+          "ko": "계절 조건: 조위와 하구 배수 상태가 부두 접근과 적재 순번을 바꾼다. / 해풍과 번식기가 겹치면 교량·송신 점검구 상공의 통행 규칙을 조정한다. / 냉동 전력이 불안정하면 화물 이동보다 검증·격리 순서를 앞세운다."
         },
         {
           "en": "Suspension conditions: when the tide table and the drainage-valve record did not agree / when a cold box's temperature record and its seal hash disagreed / when the split custody of the stevedore crane control keys had collapsed",
@@ -651,7 +651,7 @@
         },
         {
           "en": "Recording rule: Links blocked by tide or power were not erased from the map; they remained as sections carrying danger, control, and repair conditions.",
-          "ko": "기록 원칙: 조위나 전력으로 막힌 연결은 지도에서 지우지 않고 위험·통제·복구 조건을 지닌 구간으로 남긴다."
+          "ko": "기록 원칙: 조위나 전력으로 막힌 연결은 지도에서 지우지 않고 위험·통제·복구 조건이 있는 구간으로 남긴다."
         }
       ],
       "kind": "list"
@@ -786,16 +786,12 @@
       "anchor": "External-Theaters-list-0047",
       "items": [
         {
-          "en": "G02: When the sea wind overlapped the breeding season, the Radio-Wave Crow Flock made a shared perch over the bridge and transmission inspection hatches. / response: Umbrella columns, substitute perches, and a shifted maintenance hour separated people from the nests. / nonlethal constraint: Instead of pushing the nests out all at once, relocation poles and a retained stretch were used.",
-          "ko": "G02: 해풍과 번식기가 겹치면 전파까마귀떼가 교량·송신 점검구 상공의 공동 횃대를 만든다. / 대응 우산 행렬, 대체 횃대, 보수 시간대 조정으로 사람과 둥지를 갈라 놓는다. / 비살상 제약 둥지를 한꺼번에 밀어내지 않고 이설 막대와 존치 구간을 사용한다."
+          "en": "G02: When the sea wind overlapped the breeding season, the Large-billed Crow made a shared perch over the bridge and transmission inspection hatches. / response: Umbrella columns, substitute perches, and a shifted maintenance hour separated people from the nests. / nonlethal constraint: Instead of pushing the nests out all at once, relocation poles and a retained stretch were used.",
+          "ko": "G02: 해풍과 번식기가 겹치면 큰부리까마귀가 교량·송신 점검구 상공의 공동 횃대를 만든다. / 대응 우산 행렬, 대체 횃대, 보수 시간대 조정으로 사람과 둥지를 갈라 놓는다. / 비살상 제약 둥지를 한꺼번에 밀어내지 않고 이설 막대와 존치 구간을 사용한다."
         },
         {
-          "en": "G17: When the sea noise strengthened, the alarm radius of the Surveillance-Orbit Swarm along the southwestern waterfront could widen. / response: False alarms were separated by cross-checking the band filter against the medical and sluice markers. / nonlethal constraint: Instead of destroying the masts wholesale, only the head that raised the false alarm was left on standby.",
-          "ko": "G17: 해상 잡음이 강해지면 감시궤도군의 서남 수변 경보 반경이 넓어질 수 있다. / 대응 대역 필터와 의료·수문 표식의 대조로 오탐을 분리한다. / 비살상 제약 마스트를 일괄 파괴하지 않고 오탐을 낸 헤드만 대기 상태로 둔다."
-        },
-        {
-          "en": "G27: A change in the tide could shift both the Sluice's drainage hour and the Deep-Trilobite Swarm's return line. / response: The work tables of the manual inspection gate and the reference buoy were separated, preserving people's passage. / nonlethal constraint: A full drainage could cut the temporary water carriage, so it was not used as an automatic solution.",
-          "ko": "G27: 조위 변화가 수문국 배수 시각과 심층삼엽군의 귀환선을 동시에 바꿀 수 있다. / 대응 수동 점검문과 기준 부이의 작업표를 분리해 사람의 통행을 보존한다. / 비살상 제약 전면 배수는 임시 수상 운반을 끊을 수 있으므로 자동 해법으로 쓰지 않는다."
+          "en": "G17: When the sea noise strengthened, the alarm radius of the One-Eye Tower along the southwestern waterfront could widen. / response: False alarms were separated by cross-checking the band filter against the medical and sluice markers. / nonlethal constraint: Instead of destroying the masts wholesale, only the head that raised the false alarm was left on standby.",
+          "ko": "G17: 해상 잡음이 강해지면 외눈탑의 서남 수변 경보 반경이 넓어질 수 있다. / 대응 대역 필터와 의료·수문 표식의 대조로 오탐을 분리한다. / 비살상 제약 마스트를 일괄 파괴하지 않고 오탐을 낸 헤드만 대기 상태로 둔다."
         }
       ],
       "kind": "list"
@@ -1068,7 +1064,7 @@
         },
         {
           "en": "Recording rule: Even when one relay closed, the remaining relays did not automatically absorb the same freight and risk.",
-          "ko": "기록 원칙: 한 중계가 닫혀도 나머지 중계가 같은 물자와 위험을 자동으로 떠안지 않는다."
+          "ko": "기록 원칙: 한 중계가 닫혀도 같은 물자와 위험이 나머지 중계로 자동으로 넘어가지 않는다."
         }
       ],
       "kind": "list"
@@ -1169,7 +1165,7 @@
       "items": [
         {
           "en": "S07 The Junction: It kept the connection between the Yongsan transshipment and the three-branch relay unbroken. It handles tolls and loading contracts at the Incheon and Paju termini and with outside caravans, without owning entire ports. / leverage: the operating memory of the central transshipment ledger and the fence keys / red line: It did not automatically pass the risk of one closed route onto another turnback line.",
-          "ko": "S07 환적국: 용산 환적과 세 갈래 중계의 연결을 끊기지 않게 한다. 인천·파주 종착과 외부 상단의 통행세·하역 계약을 다루되 항구 전체의 소유권은 없다. / 지렛대 중앙 환적 장부와 울타리 열쇠의 운영 기억 / 넘지 않는 선 닫힌 한 길의 위험을 다른 회차선에 자동 전가하지 않는다."
+          "ko": "S07 환적국: 용산 환적과 세 갈래 중계의 연결이 끊기지 않게 한다. 인천·파주 종착과 외부 상단의 통행세·하역 계약을 다루되 항구 전체의 소유권은 없다. / 지렛대 중앙 환적 장부와 울타리 열쇠의 운영 기억 / 넘지 않는 선 닫힌 한 길의 위험을 다른 회차선에 자동 전가하지 않는다."
         },
         {
           "en": "S16 Jeongdong Federation: It published the passage conditions of the inland turnback and the carrying labor. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: the City Hall turnback line and the passage right of the strike rolls / red line: It did not hand cargo with no interpretation to the workers unilaterally.",
@@ -1203,16 +1199,16 @@
       "anchor": "External-Theaters-list-0074",
       "items": [
         {
-          "en": "G03: When the strait-side logistics vibration overlapped a break in feeding, the Abandoned-Dog Iron Pack could ring the freezer approaches. / response: Feeding zones by family and shaded passages were laid out, separating the stevedore approaches. / nonlethal constraint: The pack was not treated as a single hostile body, and no order of slaughter was used.",
-          "ko": "G03: 해협 쪽 물류 진동과 급식 중단이 겹치면 유기견철군이 냉동고 진입로를 둘러쌀 수 있다. / 대응 가족별 급식 구역과 그늘 통로를 마련해 하역 진입로를 분리한다. / 비살상 제약 무리를 단일 적대 집단으로 취급하거나 학살 명령을 쓰지 않는다."
+          "en": "G03: When the strait-side logistics vibration overlapped a break in feeding, the Feral Dog could ring the freezer approaches. / response: Feeding zones by family and shaded passages were laid out, separating the stevedore approaches. / nonlethal constraint: The pack was not treated as a single hostile body, and no order of slaughter was used.",
+          "ko": "G03: 해협 쪽 물류 진동과 급식 중단이 겹치면 들개가 냉동고 진입로를 둘러쌀 수 있다. / 대응 가족별 급식 구역과 그늘 통로를 마련해 하역 진입로를 분리한다. / 비살상 제약 무리를 단일 적대 집단으로 취급하거나 학살 명령을 쓰지 않는다."
         },
         {
           "en": "G08: Dust and pressure changes at the relay wharf could unsettle the Cleanroom Mutant's judgment of the protection doors. / response: Differential pressure, grounding, and the rolls were not combined on one key; the approval record of each door was cross-checked. / nonlethal constraint: The doors were not all opened without authority for the sake of a medical convoy.",
           "ko": "G08: 중계 부두의 먼지와 압력 변화가 클린룸변이자의 방호 문 판단을 흔들 수 있다. / 대응 차압·접지·명부를 한 키에 합치지 않고 문별 승인 기록을 대조한다. / 비살상 제약 의료 호송을 위해 전 문을 무단 개방하지 않는다."
         },
         {
-          "en": "G18: Transshipment vibration could mix the Retired-Line Maintenance-Train Corps' defect map with the real crack coordinates. / response: The exclusion list stamped with the original hash was loaded to the onboard port, and a manual tow route was left. / nonlethal constraint: Instead of destroying the cars, the wrongly connected defect map was withdrawn.",
-          "ko": "G18: 환적 진동이 폐선보수열차군의 결함 맵과 실제 균열 좌표를 섞을 수 있다. / 대응 원본 해시가 찍힌 제외 목록을 차상 포트에 넣고 수동 견인로를 남긴다. / 비살상 제약 차량을 파괴하는 대신 잘못 연결된 결함 맵을 회수한다."
+          "en": "G18: Transshipment vibration could mix the Fire-Leg Train' defect map with the real crack coordinates. / response: The exclusion list stamped with the original hash was loaded to the onboard port, and a manual tow route was left. / nonlethal constraint: Instead of destroying the cars, the wrongly connected defect map was withdrawn.",
+          "ko": "G18: 환적 진동이 불다리열차의 결함 맵과 실제 균열 좌표를 섞을 수 있다. / 대응 원본 해시가 찍힌 제외 목록을 차상 포트에 넣고 수동 견인로를 남긴다. / 비살상 제약 차량을 파괴하는 대신 잘못 연결된 결함 맵을 회수한다."
         }
       ],
       "kind": "list"
@@ -1397,7 +1393,7 @@
       "kind": "paragraph",
       "text": {
         "en": "No one's government was condemned; only the freight cars and the people were inspected. The Dokdo outpost reaches Seoul as hearsay in 2124. In 2125 a few contacts compare independent testimony, objects, and landing records and confirm that the group exists. This establishes neither a public route nor Seoul’s control. If a rescued sailor requests contact in 2126, decisions about disclosing identities and contacts pit support and trade against the risk of pursuit. Escorting a messenger and forwarding a reply in Seoul are conditional stories, not dependent on Shin Jong-mok’s direct radio contact with Dokdo or authentication through Shin Jun’s memories.",
-        "ko": "누구의 정부도 단죄하지 않고 화차와 사람만 검수한다. 2124년 서울에는 독도 초소 이야기가 전언으로 들어오고, 2125년 소수 연락 관계자가 별개 경로의 증언·물건·접안 기록을 대조해 집단의 실재를 확인한다. 이는 공개 항로나 서울 통제권의 확정이 아니다. 2126년 구조된 선원이 연락을 요청한다면 신원과 연락처 공개 범위를 놓고 지원·교역과 추적 위험이 충돌한다. 서울 전령 호위와 답장 전달은 조건부 이야기이며 신종목의 독도 직통 무전이나 신준의 기억을 통한 실재 인증에 기대지 않는다."
+        "ko": "어느 정부도 단죄하지 않고 화차와 사람만 검수한다. 2124년 서울에는 독도 초소 이야기가 전언으로 들어오고, 2125년 소수 연락 관계자가 별개 경로의 증언·물건·접안 기록을 대조해 집단의 실재를 확인한다. 이는 공개 항로나 서울 통제권의 확정이 아니다. 2126년 구조된 선원이 연락을 요청한다면 신원과 연락처 공개 범위를 놓고 지원·교역과 추적 위험이 충돌한다. 서울 전령 호위와 답장 전달은 조건부 이야기이며 신종목의 독도 직통 무전이나 신준의 기억을 통한 실재 인증에 기대지 않는다."
       }
     },
     {
@@ -1642,16 +1638,16 @@
       "anchor": "External-Theaters-list-0101",
       "items": [
         {
-          "en": "G04: The cold wave and the break in logistics could change the Sewer-Raccoon Pack's feed density and its movement on the eastern branch lines. / response: Substitute shelter pipes and heated permitted zones were opened, separating the pump approaches from the family groups. / nonlethal constraint: Poison bait and wholesale flooding raised the risk to water quality and of intrusion above ground, so they were not used.",
-          "ko": "G04: 한파와 물류 단절이 하수너구리족의 사료 밀도와 동부 지선 이동을 바꿀 수 있다. / 대응 대체 은신 관과 난방 허용 구역을 열어 펌프 접근로와 가족군을 분리한다. / 비살상 제약 독먹이와 전면 수몰은 수질과 지상 침입 위험을 키우므로 쓰지 않는다."
+          "en": "G04: The cold wave and the break in logistics could change the Raccoon Dog's feed density and its movement on the eastern branch lines. / response: Substitute shelter pipes and heated permitted zones were opened, separating the pump approaches from the family groups. / nonlethal constraint: Poison bait and wholesale flooding raised the risk to water quality and of intrusion above ground, so they were not used.",
+          "ko": "G04: 한파와 물류 단절이 너구리의 사료 밀도와 동부 지선 이동을 바꿀 수 있다. / 대응 대체 은신 관과 난방 허용 구역을 열어 펌프 접근로와 가족군을 분리한다. / 비살상 제약 독먹이와 전면 수몰은 수질과 지상 침입 위험을 키우므로 쓰지 않는다."
         },
         {
           "en": "G09: If the mineral and fuel cars took the coolant first, the outer warehouses the Cryo-Spore Host depended on could be emptied first. / response: The cold boundary and the temperature record of each warehouse were published, separating the cost of fuel from the cost of cooling. / nonlethal constraint: Neither broadcast cooling nor food preservation was hidden and sacrificed.",
           "ko": "G09: 광물·연료 화차가 냉각수를 선점하면 저온포자숙주가 의지하는 외곽 창고부터 비워질 수 있다. / 대응 냉열 경계와 창고별 온도 기록을 공개해 연료·냉각의 비용을 분리한다. / 비살상 제약 방송 냉각과 식량 보존 중 하나를 숨겨 희생시키지 않는다."
         },
         {
-          "en": "G14: A freight-car weight signal mixed in from XT04 could raise the Phantom Dispatch Corps' priority on the long-distance slots. / response: Only signed slots were kept, and the share of emergency slots was separated, diverting the empty-car loop. / nonlethal constraint: Instead of breaking the empty cars, the token and the pad power were separated in stages.",
-          "ko": "G14: XT04에서 섞여 들어온 화차 중량 신호가 유령배차대의 장거리 슬롯 우선을 키울 수 있다. / 대응 서명된 슬롯만 남기고 응급 슬롯 비율을 분리해 공차 루프를 우회시킨다. / 비살상 제약 공차를 부수는 대신 토큰과 패드 전원을 단계적으로 분리한다."
+          "en": "G14: A freight-car weight signal mixed in from XT04 could raise the Empty Cart' priority on the long-distance slots. / response: Only signed slots were kept, and the share of emergency slots was separated, diverting the empty-car loop. / nonlethal constraint: Instead of breaking the empty cars, the token and the pad power were separated in stages.",
+          "ko": "G14: XT04에서 섞여 들어온 화차 중량 신호가 빈수레의 장거리 슬롯 우선을 키울 수 있다. / 대응 서명된 슬롯만 남기고 응급 슬롯 비율을 분리해 공차 루프를 우회시킨다. / 비살상 제약 공차를 부수는 대신 토큰과 패드 전원을 단계적으로 분리한다."
         },
         {
           "en": "G26: Fuel cars and heavy tows could press on the load verification of sidings and temporary structures. / response: The tow was divided between a published load test and a safe rail guide. / nonlethal constraint: Blowing the power core was not used as the default solution for opening passage.",
@@ -2089,16 +2085,16 @@
       "anchor": "External-Theaters-list-0128",
       "items": [
         {
-          "en": "G05: When frozen and deep-sea protein residue piled up, the Transfer-Rat Colony could extend its branch nests as far as the stevedore elevator passages. / response: Leftover collection and a temporary double-sealing line were run first, and the stevedore hours were divided. / nonlethal constraint: Refugees were not sealed off by a contagion stigma or by wholesale toxic spraying.",
-          "ko": "G05: 냉동·원양 단백질 잔여물이 쌓이면 환승쥐군락이 하역 엘리베이터 통로까지 가지 둥지를 넓힐 수 있다. / 대응 잔반 회수와 임시 이중 밀봉 라인을 먼저 운영하고 하역 시간을 나눈다. / 비살상 제약 전염 낙인이나 전면 독성 살포로 피난민을 봉쇄하지 않는다."
+          "en": "G05: When frozen and deep-sea protein residue piled up, the Brown Rat could extend its branch nests as far as the stevedore elevator passages. / response: Leftover collection and a temporary double-sealing line were run first, and the stevedore hours were divided. / nonlethal constraint: Refugees were not sealed off by a contagion stigma or by wholesale toxic spraying.",
+          "ko": "G05: 냉동·원양 단백질 잔여물이 쌓이면 집쥐가 하역 엘리베이터 통로까지 가지 둥지를 넓힐 수 있다. / 대응 잔반 회수와 임시 이중 밀봉 라인을 먼저 운영하고 하역 시간을 나눈다. / 비살상 제약 전염 낙인이나 전면 독성 살포로 피난민을 봉쇄하지 않는다."
         },
         {
           "en": "G10: The choice to pass the water in the direction of the sea wind could leave one season's burden on the Flood-Mold Breath Cluster's corridor and the outer storage grounds. / response: Before the drainage choice, the residents' roll and the right to stop the pumps were confirmed, and the contamination burden was published. / nonlethal constraint: Passing the water to the outskirts so that only the center of Seoul shed its cost was not used as a costless solution.",
-          "ko": "G10: 해풍 방향으로 물을 넘기는 선택은 침수곰팡이호흡단의 회랑과 외곽 저장지에 한 철의 부담을 남길 수 있다. / 대응 배수 선택 전에 주민 명부와 펌프 중지권을 확인하고 오염 부담을 공개한다. / 비살상 제약 외곽에 물을 넘겨 서울 중심의 비용만 지우는 선택을 무비용 해법으로 쓰지 않는다."
+          "ko": "G10: 해풍 방향으로 물을 넘기면 침수곰팡이호흡단의 회랑과 외곽 저장지에 한 철의 부담이 남을 수 있다. / 대응 배수 선택 전에 주민 명부와 펌프 중지권을 확인하고 오염 부담을 공개한다. / 비살상 제약 외곽에 물을 넘겨 서울 중심의 비용만 지우는 선택을 무비용 해법으로 쓰지 않는다."
         },
         {
-          "en": "G15: When a delivery-goods code was received, the Care-Circulation Body could raise both the supply and the intensity of quarantine. / response: The roll, the consent hash, and the power to each bed were cross-checked, blocking over-supply and new confinement. / nonlethal constraint: The welfare block was not burned, and the locks of every bed were not cut at once.",
-          "ko": "G15: 인도 물자 코드가 수신되면 돌봄순환체가 보급과 격리 강도를 함께 높일 수 있다. / 대응 명단·동의 해시·병상별 전원을 대조해 과보급과 신규 감금을 막는다. / 비살상 제약 복지동을 불태우거나 모든 병상 락을 한꺼번에 끊지 않는다."
+          "en": "G15: When a delivery-goods code was received, the Care Wheel could raise both the supply and the intensity of quarantine. / response: The roll, the consent hash, and the power to each bed were cross-checked, blocking over-supply and new confinement. / nonlethal constraint: The welfare block was not burned, and the locks of every bed were not cut at once.",
+          "ko": "G15: 인도 물자 코드가 수신되면 돌봄바퀴가 보급과 격리 강도를 함께 높일 수 있다. / 대응 명단·동의 해시·병상별 전원을 대조해 과보급과 신규 감금을 막는다. / 비살상 제약 복지동을 불태우거나 모든 병상 락을 한꺼번에 끊지 않는다."
         },
         {
           "en": "G25: The medicine capsules on the XT05 delivery list could pile up with an old simulated recipient. / response: The recipient mark, the delivery table, and the loading bay were cross-checked against the field treatment record. / nonlethal constraint: Instead of destroying the main transmitter at once, the rescue double row and the citizen passage were assessed together.",
@@ -2240,11 +2236,11 @@
       "world-atlas-projections.v2"
     ],
     "original_anchor": "lore/World-Narrative-Atlas.json",
-    "original_hash": "c6eb4b1e046ea2f8d35e0d4e14485e5cb7afd60a2a1f9f3cae9ad79396eb388c"
+    "original_hash": "8d2050819021fef19eb03c00806f621589b153eb5350bb2d22146a039e665f70"
   },
   "slug": "External-Theaters",
   "source": {
-    "hash": "c6eb4b1e046ea2f8d35e0d4e14485e5cb7afd60a2a1f9f3cae9ad79396eb388c",
+    "hash": "8d2050819021fef19eb03c00806f621589b153eb5350bb2d22146a039e665f70",
     "kind": "computed",
     "refs": [
       "lore/World-Narrative-Atlas.json",

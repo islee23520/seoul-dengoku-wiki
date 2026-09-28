@@ -12,6 +12,11 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-단유진",
   "detailRoute": "/people/person-0268",
+  "clan": {
+    "id": "b2e8-c5f0-c548-6bb5",
+    "name": "연안 단씨",
+    "crest": "clan-crests/b2e8-c5f0-c548-6bb5.svg"
+  },
   "generation": "opening",
   "minors": false,
   "sourceKind": "proposal",
@@ -64,7 +69,7 @@
         "from": "단유진",
         "type": "계약",
         "to": "백온",
-        "basis": "백온의 회의 발언을 수행으로 받치고"
+        "basis": "백온의 회의 발언을 수행으로 뒷받침하고"
       },
       {
         "from": "단유진",

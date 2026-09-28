@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate": "node scripts/generate-catalog.mjs",
+    "generate": "node scripts/generate-catalog.mjs && node scripts/generate-clan-crests.mjs",
     "build": "npm run generate && tsc -b && vite build",
     "preview": "vite preview",
     "test:links": "node scripts/check-links.mjs",
@@ -15,6 +15,7 @@
     "check:artifacts": "node scripts/check-artifact-allowlist.mjs",
     "test:admission": "node --test scripts/test-catalog-admission.mjs",
     "test:gate": "node --test scripts/test-gate.mjs",
+    "test:crests": "node --test scripts/test-clan-crests.mjs",
     "test:naming-ledger": "node --test scripts/test-naming-ledger-sources.mjs",
     "test:states": "node --test scripts/test-state-routes.mjs",
     "test:legacy-routes": "node --test scripts/test-legacy-world-routes.mjs",

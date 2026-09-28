@@ -216,7 +216,7 @@
       "anchor": "실존-문중-자료와-창작-가계-분리-p4",
       "text": {
         "en": "The bon-gwan identities actually used by the cast were organized into 169 clans: 166 based on historical material and three created for the setting. Public research did not confirm historical bon-gwan for Ran and Heung, so the clans newly agreed upon after the collapse were the created Dobong Ran clan and Susaek Heung clan, respectively. They were not claimed to be historical bon-gwan, and no sources were attached.",
-        "ko": "캐스트가 실제 쓰는 본관 정체성은 169개 문중으로 정리했다. 이 가운데 실존 자료 기반은 166개, 세계관 창작 문중은 3개다. 공개 조사에서 실존 본관을 확인하지 못한 란씨와 흥씨는 각각 붕괴 후 `도봉 란씨`, `수색 흥씨`를 새로 합의한 창작 문중으로 배정했다. 실존 본관이라고 주장하지 않으며, 출처도 붙이지 않는다."
+        "ko": "캐스트가 실제 쓰는 본관은 169개 문중으로 정리했다. 이 가운데 실존 자료 기반은 166개, 세계관 창작 문중은 3개다. 공개 조사에서 실존 본관을 확인하지 못한 란씨와 흥씨는 각각 붕괴 후 `도봉 란씨`, `수색 흥씨`를 새로 합의한 창작 문중으로 배정했다. 실존 본관이라고 주장하지 않으며, 출처도 붙이지 않는다."
       }
     },
     {
@@ -232,8 +232,8 @@
       "kind": "paragraph",
       "anchor": "캐스트-적용-결과-p1",
       "text": {
-        "en": "The clan register recorded bon-gwan and clan IDs for 1,001 people. The cast roster listed 1,019 people.",
-        "ko": "문중 명부에는 인물 1,001명의 본관과 문중 ID가 기록되어 있다. 인물 명부에는 1,019명이 올라 있다."
+        "en": "The clan register listed all 1,019 people on the cast roster; 1,018 of them had bon-gwan and clan IDs.",
+        "ko": "문중 명부에는 인물 명부의 1,019명이 모두 올라 있다. 그 가운데 1,018명에게 본관과 문중 ID가 있다."
       }
     },
     {
@@ -245,11 +245,11 @@
             "text": "Bon-gwan and clan IDs were present for "
           },
           {
-            "text": "1,001 people",
+            "text": "1,018 people",
             "strong": true
           },
           {
-            "text": ". Na, Ra, Ryu, Mun, and Min, whose surnames had no major bon-gwan in the census table, were supplemented from separate historical clan material; Ran and Heung, whose historical bon-gwan could not be confirmed, were assigned the created clans above. Completing bon-gwan assignment and confirming hangnyeol were different things."
+            "text": ". Na, Ra, Ryu, Mun, and Min, whose surnames had no major bon-gwan in the census table, were supplemented from separate historical clan material; Ran and Heung, whose historical bon-gwan could not be confirmed, were assigned the created clans above. Im Somae, Beom Bandeuk, Amira Qasim, and Nargiz Yusupova opened new naturalized bon-gwan named after the places where they settled. Lee Yeon, a synthetic humanoid, has no paternal line and so no bon-gwan. Completing bon-gwan assignment and confirming hangnyeol were different things."
           }
         ],
         "ko": [
@@ -257,11 +257,11 @@
             "text": "본관과 문중 id는 "
           },
           {
-            "text": "1,001명",
+            "text": "1,018명",
             "strong": true
           },
           {
-            "text": "에게 들어 있다. 센서스 표에 대성 본관이 없던 나·라·류·문·민은 별도 실존 문중 자료로 보강했고, 실존 본관을 확인하지 못한 란·흥은 위의 창작 문중으로 배정했다. 본관 배정 완료와 항렬 확인 완료는 다른 뜻이다."
+            "text": "에게 들어 있다. 센서스 표에 대성 본관이 없던 나·라·류·문·민은 별도 실존 문중 자료로 보강했고, 실존 본관을 확인하지 못한 란·흥은 위의 창작 문중으로 배정했다. 임소매·범반득·아미라 카심·나르기즈 유수포바는 정착한 곳의 이름으로 새 귀화 본관을 열었다. 합성 휴머노이드 이연은 부계 가계가 없어 본관을 두지 않는다. 본관 배정 완료와 항렬 확인 완료는 다른 뜻이다."
           }
         ]
       }
@@ -300,16 +300,30 @@
         ],
         [
           {
-            "en": "`unconfirmed`",
-            "ko": "`unconfirmed`"
+            "en": "`inferred`",
+            "ko": "`inferred`"
           },
           {
-            "en": "949",
-            "ko": "949"
+            "en": "556",
+            "ko": "556"
           },
           {
-            "en": "Bon-gwan candidates assigned using census population weights, but paternal lineage, branch, and generation count were not confirmed",
-            "ko": "센서스 인구 가중으로 본관 후보를 배정했으나 부계 가계·분파·세수를 확인하지 못함"
+            "en": "Families of one clan that share a character in the same name position agreed on a new hangnyeol after the collapse. They are the first generation of that agreed table",
+            "ko": "같은 문중에서 이름의 같은 자리에 같은 글자를 쓰는 집안끼리 붕괴 뒤 새로 합의한 항렬. 합의한 항렬표의 첫 세대다"
+          }
+        ],
+        [
+          {
+            "en": "`free`",
+            "ko": "`free`"
+          },
+          {
+            "en": "409",
+            "ko": "409"
+          },
+          {
+            "en": "Families that named their children without a hangnyeol, because no other household in the clan shares a name character",
+            "ko": "같은 문중에 이름 글자를 함께 쓰는 집안이 없어 항렬 없이 이름을 지은 가계"
           }
         ],
         [
@@ -318,12 +332,26 @@
             "ko": "`unused`"
           },
           {
-            "en": "49",
-            "ko": "49"
+            "en": "50",
+            "ko": "50"
           },
           {
             "en": "Single-character names had no hangnyeol position for a two-character name",
             "ko": "외자 이름이라 두 글자 이름의 항렬자 자리를 적용하지 않음"
+          }
+        ],
+        [
+          {
+            "en": "`no-bongwan`",
+            "ko": "`no-bongwan`"
+          },
+          {
+            "en": "1",
+            "ko": "1"
+          },
+          {
+            "en": "No paternal line, so no bon-gwan, clan, or hangnyeol",
+            "ko": "부계 가계가 없어 본관·문중·항렬을 두지 않음"
           }
         ]
       ]
@@ -362,8 +390,8 @@
       "kind": "paragraph",
       "anchor": "캐스트-적용-결과-p5",
       "text": {
-        "en": "The bon-gwan and generational elements of the three leaders followed the lock table above. Lee Hongwon, chair of Seocho Computing Group, was Gyeongju Lee, Water; Jeong Hojun, chair of Yangjae Machineworks Company, was Jinyang Jeong, Metal; and Choi Jiwoo, presiding chair of the Yeouido Investment Union, was Changnyeong Choi, Fire. These elements were the hangnyeol rules for the opening generation; the characters `hong`, `ho`, and `ji` were not retrospectively identified as hangnyeol characters.",
-        "ko": "수장 삼인의 본관·세대 오행은 앞의 잠금표를 따른다. 성하그룹 회장 이홍원은 경주 이씨 水, 태욱그룹 회장 정서온은 진양 정씨 金, 여의도출자연합회 의장 최지우는 창녕 최씨 火다. 오행은 개막 세대의 항렬 규칙이며, `홍`·`호`·`지` 한 글자를 항렬자로 소급 판정하지 않는다."
+        "en": "The bon-gwan and generational elements of the three leaders followed the lock table above. Lee Hongwon, chair of Seongha Group, was Gyeongju Lee, Water; Jeong Seo-on, chair of Taeuk Group, was Jinyang Jeong, Metal; and Choi Jiwoo, chair of the Yeouido Investment Federation, was Changnyeong Choi, Fire. These elements were the hangnyeol rules for the opening generation; the characters `hong`, `seo`, and `ji` were not retrospectively identified as hangnyeol characters.",
+        "ko": "수장 삼인의 본관·세대 오행은 앞의 잠금표를 따른다. 성하그룹 회장 이홍원은 경주 이씨 水, 태욱그룹 회장 정서온은 진양 정씨 金, 여의도출자연합회 의장 최지우는 창녕 최씨 火다. 오행은 개막 세대의 항렬 규칙이며, `홍`·`서`·`지` 한 글자를 항렬자로 소급 판정하지 않는다."
       }
     },
     {

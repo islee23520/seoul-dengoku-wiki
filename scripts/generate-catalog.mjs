@@ -188,6 +188,7 @@ if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
 const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
+const lineageByName = new Map(JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-hangnyeol.json'), 'utf8')).people.map((person) => [person.name, person]))
 const glossaryPath = resolve(loreRoot, 'glossary.json')
 const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(JSON.parse(await readFile(glossaryPath, 'utf8'))) }
 const worldIndex = buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
@@ -859,8 +860,11 @@ for (const person of peopleCatalog) {
   const cards = personCards.get(person.name) ?? []
   const primary = primaryCard(ledger)
   const body = primary?.body ?? ''
+  const lineage = lineageByName.get(person.name)
+  if (!lineage) throw new Error(`E_PERSON_LINEAGE_MISSING:${person.name}`)
   const detail = {
     ...person,
+    clan: lineage.clan ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨`, crest: `clan-crests/${lineage.base_clan ?? lineage.clan}.svg` } : null,
     generation: ledger.generation,
     minors: ledger.minors,
     sourceKind: ledger.source,

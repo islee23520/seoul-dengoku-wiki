@@ -12,6 +12,11 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-범한들",
   "detailRoute": "/people/person-0369",
+  "clan": {
+    "id": "bc94-ae08-c131",
+    "name": "금성 범씨",
+    "crest": "clan-crests/bc94-ae08-c131.svg"
+  },
   "generation": "opening",
   "minors": false,
   "sourceKind": "proposal",
@@ -70,7 +75,7 @@
         "from": "범한들",
         "type": "맹세",
         "to": "임하준",
-        "basis": "임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다"
+        "basis": "임하준의 실종 뒤에 남은 만료 표시를 증언의 바탕으로 삼는다"
       }
     ],
     "incoming": [
