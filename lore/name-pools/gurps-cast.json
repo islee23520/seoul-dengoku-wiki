@@ -1,7 +1,7 @@
 {
  "schema": "wiki-gurps-cast.v1",
  "status": "proposal",
- "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
+ "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다(G2 Q9 L0 B). 16국 수장에는 수장별 검토의 선택지를 적용한다(G2 Q9 L01–L16). 최지우(K219)는 Core-Characters 판본을 따른다(L09 C). 모두 소유자 결정 2026-09-28이다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
  "invariants": {
   "lore/name-pools/values-cast.json": "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
   "lore/name-pools/person-id-registry.json": "d5fb337c16d91f4ac0200ea91accb16400742e53e1ed5a046f76f381ddf41f23"
@@ -59,6 +59,79 @@
    "K1004": "Observation",
    "rule": "사용자 확정 직위 줄이 직접 가리키는 핵심 기술(소유자 결정 2026-09-28, G2 Q6 C)"
   },
+  "same_event": {
+   "rule": "한 능력에서 다른 카드에 다른 문장으로 실린 같은 사건은 한 건으로 센다. 끝 서술어가 같고(…하였다 → …했다) 조사를 뗀 낱말이 짧은 문장의 60% 이상 겹치면 같은 사건이다. 다른 판본은 같은 기술의 보조 인용으로만 둔다",
+   "status": "소유자 결정 2026-09-28 (G2 Q9 L0)"
+  },
+  "leader_review": {
+   "status": "소유자 결정 2026-09-28 (G2 Q9 L01–L16)",
+   "items": {
+    "K001": {
+     "question": "L01",
+     "choice": "B"
+    },
+    "K029": {
+     "question": "L02",
+     "choice": "A"
+    },
+    "K1005": {
+     "question": "L03",
+     "choice": "A"
+    },
+    "K423": {
+     "question": "L04",
+     "choice": "L0"
+    },
+    "K115": {
+     "question": "L05",
+     "choice": "B"
+    },
+    "K144": {
+     "question": "L06",
+     "choice": "B"
+    },
+    "K169": {
+     "question": "L07",
+     "choice": "C"
+    },
+    "K194": {
+     "question": "L08",
+     "choice": "B"
+    },
+    "K219": {
+     "question": "L09",
+     "choice": "C"
+    },
+    "K245": {
+     "question": "L10",
+     "choice": "B"
+    },
+    "K271": {
+     "question": "L11",
+     "choice": "B"
+    },
+    "K296": {
+     "question": "L12",
+     "choice": "A"
+    },
+    "K322": {
+     "question": "L13",
+     "choice": "B"
+    },
+    "K348": {
+     "question": "L14",
+     "choice": "L0"
+    },
+    "K373": {
+     "question": "L15",
+     "choice": "B"
+    },
+    "K398": {
+     "question": "L16",
+     "choice": "B"
+    }
+   }
+  },
   "languages": "카드 「언어:」 줄의 언어만, 첫 언어 Native, 나머지 숙련도 미정(null), 모두 0 CP. 숙련도 CP는 뒤의 규칙을 기다린다(소유자 결정 2026-09-28, G2 Q8 C)",
   "traits": {
    "reputation": "B26–27, 카드가 유명세를 적은 사람만",
@@ -99,10 +172,21 @@
      "evidence": []
     },
     "IQ": {
-     "value": 10,
-     "cp": 0,
+     "value": 12,
+     "cp": 40,
      "rule": "card-actions",
-     "evidence": []
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-01.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "한재목은 그 열쇠로 배급구역 대표들의 연서를 받기 전에 수문을 열지 않는 버릇을 배웠다."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/3/text/ko",
+       "quote": "물 계약 가문들이 계약 회의에서 군주를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 군주 자리에 앉았다."
+      }
+     ]
     },
     "HT": {
      "value": 10,
@@ -113,6 +197,27 @@
    },
    "traits": [],
    "skills": [
+    {
+     "name": "Administration",
+     "ko": "행정·기록",
+     "attr": "IQ",
+     "diff": "A",
+     "tier": "B",
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-01.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "한재목은 그 열쇠로 배급구역 대표들의 연서를 받기 전에 수문을 열지 않는 버릇을 배웠다."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/3/text/ko",
+       "quote": "한재목은 그 열쇠로 배급구역 대표들의 연서를 받기 전에 수문을 열지 않는 버릇을 배웠다."
+      }
+     ],
+     "cp": 8,
+     "level": 14
+    },
     {
      "name": "Observation",
      "ko": "관찰(경비·순찰)",
@@ -127,7 +232,23 @@
       }
      ],
      "cp": 8,
-     "level": 12
+     "level": 14
+    },
+    {
+     "name": "Politics",
+     "ko": "정치(선거·표 모으기)",
+     "attr": "IQ",
+     "diff": "A",
+     "tier": "C",
+     "evidence": [
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/3/text/ko",
+       "quote": "물 계약 가문들이 계약 회의에서 군주를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 군주 자리에 앉았다."
+      }
+     ],
+     "cp": 4,
+     "level": 13
     },
     {
      "name": "Breath Control",
@@ -154,8 +275,8 @@
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 10,
-    "Per": 10,
+    "Will": 12,
+    "Per": 12,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -163,12 +284,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 0,
+    "attributes": 40,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 12,
-    "spent": 12,
-    "unspent": 63,
+    "skills": 24,
+    "spent": 64,
+    "unspent": 11,
     "total": 75
    },
    "band": "일반 인물",
@@ -13710,10 +13831,21 @@
      "evidence": []
     },
     "IQ": {
-     "value": 10,
-     "cp": 0,
+     "value": 12,
+     "cp": 40,
      "rule": "card-actions",
-     "evidence": []
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-05.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/43/text/ko",
+       "quote": "배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구했으며 창동방호가의 서명은 받지 않았다."
+      }
+     ]
     },
     "HT": {
      "value": 10,
@@ -13735,26 +13867,20 @@
        "path": "lore/characters/Cast-State-05.json",
        "pointer": "/content/2/items/1/ko",
        "quote": "생업: 복구복무 명부·부품 대가 조정"
-      }
-     ],
-     "cp": 8,
-     "level": 12
-    },
-    {
-     "name": "Mechanic/TL?",
-     "ko": "기계 정비",
-     "attr": "IQ",
-     "diff": "A",
-     "tier": "B",
-     "evidence": [
+      },
       {
        "path": "lore/characters/Cast-State-05.json",
-       "pointer": "/content/2/items/1/ko",
-       "quote": "생업: 복구복무 명부·부품 대가 조정"
+       "pointer": "/content/1/text/ko",
+       "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/46/text/ko",
+       "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
       }
      ],
      "cp": 8,
-     "level": 12
+     "level": 14
     },
     {
      "name": "Diplomacy",
@@ -13767,10 +13893,15 @@
        "path": "lore/characters/Cast-State-05.json",
        "pointer": "/content/2/items/1/ko",
        "quote": "생업: 복구복무 명부·부품 대가 조정"
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/43/text/ko",
+       "quote": "배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구했으며 창동방호가의 서명은 받지 않았다."
       }
      ],
      "cp": 8,
-     "level": 11
+     "level": 13
     },
     {
      "name": "Shield",
@@ -13797,8 +13928,8 @@
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 10,
-    "Per": 10,
+    "Will": 12,
+    "Per": 12,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -13806,12 +13937,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 0,
+    "attributes": 40,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 28,
-    "spent": 28,
-    "unspent": 47,
+    "skills": 20,
+    "spent": 60,
+    "unspent": 15,
     "total": 75
    },
    "band": "일반 인물",
@@ -17355,10 +17486,16 @@
      "evidence": []
     },
     "IQ": {
-     "value": 10,
-     "cp": 0,
+     "value": 11,
+     "cp": 20,
      "rule": "card-actions",
-     "evidence": []
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-06.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다."
+      }
+     ]
     },
     "HT": {
      "value": 10,
@@ -17387,20 +17524,30 @@
        "quote": "생업 별명은 기록청장."
       },
       {
+       "path": "lore/characters/Cast-State-06.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다."
+      },
+      {
        "path": "lore/characters/Core-Characters.json",
        "pointer": "/content/60/text/ko",
        "quote": "생업 별명은 기록청장."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/62/text/ko",
+       "quote": "세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다."
       }
      ],
      "cp": 8,
-     "level": 12
+     "level": 13
     }
    ],
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 10,
-    "Per": 10,
+    "Will": 11,
+    "Per": 11,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -17408,12 +17555,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 0,
+    "attributes": 20,
     "advantages": 0,
     "disadvantages": 0,
     "skills": 8,
-    "spent": 8,
-    "unspent": 67,
+    "spent": 28,
+    "unspent": 47,
     "total": 75
    },
    "band": "일반 인물",
@@ -20196,10 +20343,15 @@
      "evidence": []
     },
     "IQ": {
-     "value": 11,
-     "cp": 20,
+     "value": 12,
+     "cp": 40,
      "rule": "card-actions",
      "evidence": [
+      {
+       "path": "lore/characters/Cast-State-07.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다."
+      },
       {
        "path": "lore/characters/Cast-State-07.json",
        "pointer": "/content/1/text/ko",
@@ -20227,26 +20379,20 @@
        "path": "lore/characters/Cast-State-07.json",
        "pointer": "/content/2/items/3/ko",
        "quote": "생업: 호송 배차표 관리·공개"
-      }
-     ],
-     "cp": 8,
-     "level": 13
-    },
-    {
-     "name": "Observation",
-     "ko": "관찰(경비·순찰)",
-     "attr": "Per",
-     "diff": "A",
-     "tier": "B",
-     "evidence": [
+      },
       {
        "path": "lore/characters/Cast-State-07.json",
-       "pointer": "/content/2/items/3/ko",
-       "quote": "생업: 호송 배차표 관리·공개"
+       "pointer": "/content/1/text/ko",
+       "quote": "박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/67/text/ko",
+       "quote": "박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다."
       }
      ],
      "cp": 8,
-     "level": 13
+     "level": 14
     },
     {
      "name": "Diplomacy",
@@ -20267,7 +20413,7 @@
       }
      ],
      "cp": 8,
-     "level": 12
+     "level": 13
     },
     {
      "name": "Leadership",
@@ -20288,7 +20434,7 @@
       }
      ],
      "cp": 4,
-     "level": 12
+     "level": 13
     },
     {
      "name": "Breath Control",
@@ -20315,8 +20461,8 @@
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 11,
-    "Per": 11,
+    "Will": 12,
+    "Per": 12,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -20324,12 +20470,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 20,
+    "attributes": 40,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 32,
-    "spent": 52,
-    "unspent": 23,
+    "skills": 24,
+    "spent": 64,
+    "unspent": 11,
     "total": 75
    },
    "band": "일반 인물",
@@ -23109,8 +23255,8 @@
       },
       {
        "path": "lore/characters/Core-Characters.json",
-       "pointer": "/content/78/text/ko",
-       "quote": "오해린은 상자를 봉한 채 값을 올렸다."
+       "pointer": "/content/75/text/ko",
+       "quote": "노량진 냉동 창고의 열쇠를 관리하였다."
       }
      ]
     },
@@ -23134,6 +23280,11 @@
        "path": "lore/characters/Cast-State-08.json",
        "pointer": "/content/2/items/2/ko",
        "quote": "생업: 냉동 창고 열쇠·경매 가격 관리"
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/75/text/ko",
+       "quote": "노량진 냉동 창고의 열쇠를 관리하였다."
       }
      ],
      "cp": 8,
@@ -26082,10 +26233,16 @@
      "evidence": []
     },
     "IQ": {
-     "value": 10,
-     "cp": 0,
+     "value": 11,
+     "cp": 20,
      "rule": "card-actions",
-     "evidence": []
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-09.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
+      }
+     ]
     },
     "HT": {
      "value": 10,
@@ -26110,7 +26267,7 @@
       }
      ],
      "cp": 8,
-     "level": 12
+     "level": 13
     },
     {
      "name": "Accounting",
@@ -26126,14 +26283,35 @@
       }
      ],
      "cp": 8,
-     "level": 11
+     "level": 12
+    },
+    {
+     "name": "Electronics Operation/TL? (Communications)",
+     "ko": "통신 운용",
+     "attr": "IQ",
+     "diff": "A",
+     "tier": "C",
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-09.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/86/text/ko",
+       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
+      }
+     ],
+     "cp": 4,
+     "level": 12
     }
    ],
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 10,
-    "Per": 10,
+    "Will": 11,
+    "Per": 11,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -26141,12 +26319,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 0,
+    "attributes": 20,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 16,
-    "spent": 16,
-    "unspent": 59,
+    "skills": 20,
+    "spent": 40,
+    "unspent": 35,
     "total": 75
    },
    "band": "일반 인물",
@@ -29054,10 +29232,16 @@
      "evidence": []
     },
     "IQ": {
-     "value": 10,
-     "cp": 0,
+     "value": 11,
+     "cp": 20,
      "rule": "card-actions",
-     "evidence": []
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-10.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 신도 명부 줄로 옮겼다."
+      }
+     ]
     },
     "HT": {
      "value": 10,
@@ -29086,20 +29270,30 @@
        "quote": "생업 별명은 명부 필사."
       },
       {
+       "path": "lore/characters/Cast-State-10.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 신도 명부 줄로 옮겼다."
+      },
+      {
        "path": "lore/characters/Core-Characters.json",
        "pointer": "/content/92/text/ko",
        "quote": "생업 별명은 명부 필사."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/94/text/ko",
+       "quote": "행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 시민권 줄로 옮겼다."
       }
      ],
      "cp": 8,
-     "level": 12
+     "level": 13
     }
    ],
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 10,
-    "Per": 10,
+    "Will": 11,
+    "Per": 11,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -29107,12 +29301,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 0,
+    "attributes": 20,
     "advantages": 0,
     "disadvantages": 0,
     "skills": 8,
-    "spent": 8,
-    "unspent": 67,
+    "spent": 28,
+    "unspent": 47,
     "total": 75
    },
    "band": "일반 인물",
@@ -31861,10 +32055,16 @@
      "evidence": []
     },
     "IQ": {
-     "value": 10,
-     "cp": 0,
+     "value": 11,
+     "cp": 20,
      "rule": "card-actions",
-     "evidence": []
+     "evidence": [
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/102/text/ko",
+       "quote": "승계 시험 전날, 이홍원은 주거 공동체의 표를 시험장 밖으로 내보냈다."
+      }
+     ]
     },
     "HT": {
      "value": 10,
@@ -31880,7 +32080,7 @@
      "ko": "호흡 수련(심법)",
      "attr": "HT",
      "diff": "H",
-     "tier": "C",
+     "tier": "B",
      "evidence": [
       {
        "path": "lore/characters/Cast-State-11.json",
@@ -31888,20 +32088,46 @@
        "quote": "차륜강체공."
       },
       {
+       "path": "lore/characters/Cast-State-11.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "원로 사제."
+      },
+      {
        "path": "lore/characters/Core-Characters.json",
        "pointer": "/content/101/text/ko",
        "quote": "차륜강체공."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/101/text/ko",
+       "quote": "원로 사제."
+      }
+     ],
+     "cp": 8,
+     "level": 11
+    },
+    {
+     "name": "Administration",
+     "ko": "행정·기록",
+     "attr": "IQ",
+     "diff": "A",
+     "tier": "C",
+     "evidence": [
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/102/text/ko",
+       "quote": "승계 시험 전날, 이홍원은 주거 공동체의 표를 시험장 밖으로 내보냈다."
       }
      ],
      "cp": 4,
-     "level": 10
+     "level": 12
     }
    ],
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 10,
-    "Per": 10,
+    "Will": 11,
+    "Per": 11,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -31909,12 +32135,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 0,
+    "attributes": 20,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 4,
-    "spent": 4,
-    "unspent": 71,
+    "skills": 12,
+    "spent": 32,
+    "unspent": 43,
     "total": 75
    },
    "band": "일반 인물",
@@ -34813,19 +35039,14 @@
      "evidence": []
     },
     "IQ": {
-     "value": 12,
-     "cp": 40,
+     "value": 11,
+     "cp": 20,
      "rule": "card-actions",
      "evidence": [
       {
        "path": "lore/characters/Cast-State-12.json",
        "pointer": "/content/1/text/ko",
        "quote": "정유라의 회의 호송이 열리기 전, 장세화는 일반 열차와 의료열차의 운행 시간을 계절별로 나눠 배차표에 적었다."
-      },
-      {
-       "path": "lore/characters/Core-Characters.json",
-       "pointer": "/content/110/text/ko",
-       "quote": "협의 호송이 열리기 전, 장세화는 일반 열차와 의료열차의 운행 시간을 계절별로 나눠 배차표에 적었다."
       }
      ]
     },
@@ -34872,7 +35093,7 @@
       }
      ],
      "cp": 8,
-     "level": 14
+     "level": 13
     },
     {
      "name": "Breath Control",
@@ -34899,8 +35120,8 @@
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 12,
-    "Per": 12,
+    "Will": 11,
+    "Per": 11,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -34908,12 +35129,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 40,
+    "attributes": 20,
     "advantages": 0,
     "disadvantages": 0,
     "skills": 12,
-    "spent": 52,
-    "unspent": 23,
+    "spent": 32,
+    "unspent": 43,
     "total": 75
    },
    "band": "일반 인물",
@@ -37752,14 +37973,19 @@
      "evidence": []
     },
     "IQ": {
-     "value": 11,
-     "cp": 20,
+     "value": 12,
+     "cp": 40,
      "rule": "card-actions",
      "evidence": [
       {
        "path": "lore/characters/Cast-State-13.json",
        "pointer": "/content/1/text/ko",
        "quote": "가짜 약 상자가 경매에 오른 날, 류은비는 오해린의 봉인 전에 거래를 끊었다."
+      },
+      {
+       "path": "lore/characters/Cast-State-13.json",
+       "pointer": "/content/3/text/ko",
+       "quote": "류은비는 전문의의 진료와 수련의 도제 수련을 지휘하며 환자의 소속과 재산이 아닌 중증도로 병상을 배정한다."
       }
      ]
     },
@@ -37790,13 +38016,18 @@
        "quote": "생업 별명은 의료단 단장."
       },
       {
+       "path": "lore/characters/Cast-State-13.json",
+       "pointer": "/content/3/text/ko",
+       "quote": "류은비는 전문의의 진료와 수련의 도제 수련을 지휘하며 환자의 소속과 재산이 아닌 중증도로 병상을 배정한다."
+      },
+      {
        "path": "lore/characters/Core-Characters.json",
        "pointer": "/content/116/text/ko",
        "quote": "생업 별명은 의료단 단장."
       }
      ],
      "cp": 8,
-     "level": 12
+     "level": 13
     },
     {
      "name": "Leadership",
@@ -37822,7 +38053,7 @@
       }
      ],
      "cp": 8,
-     "level": 13
+     "level": 14
     },
     {
      "name": "Merchant",
@@ -37843,14 +38074,14 @@
       }
      ],
      "cp": 4,
-     "level": 12
+     "level": 13
     }
    ],
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 11,
-    "Per": 11,
+    "Will": 12,
+    "Per": 12,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -37858,12 +38089,12 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 20,
+    "attributes": 40,
     "advantages": 0,
     "disadvantages": 0,
     "skills": 20,
-    "spent": 40,
-    "unspent": 35,
+    "spent": 60,
+    "unspent": 15,
     "total": 75
    },
    "band": "일반 인물",
@@ -41505,8 +41736,8 @@
      "evidence": []
     },
     "IQ": {
-     "value": 13,
-     "cp": 60,
+     "value": 12,
+     "cp": 40,
      "rule": "card-actions",
      "evidence": [
       {
@@ -41518,11 +41749,6 @@
        "path": "lore/characters/Core-Characters.json",
        "pointer": "/content/123/text/ko",
        "quote": "대치 때 처음으로 같은 명령서에 함께 서명하였다."
-      },
-      {
-       "path": "lore/characters/Core-Characters.json",
-       "pointer": "/content/126/text/ko",
-       "quote": "고서준은 능선 통행을 허가제로 올렸다."
       }
      ]
     },
@@ -41559,7 +41785,7 @@
       }
      ],
      "cp": 8,
-     "level": 15
+     "level": 14
     },
     {
      "name": "Leadership",
@@ -41585,7 +41811,7 @@
       }
      ],
      "cp": 8,
-     "level": 15
+     "level": 14
     },
     {
      "name": "Administration",
@@ -41611,7 +41837,7 @@
       }
      ],
      "cp": 4,
-     "level": 14
+     "level": 13
     },
     {
      "name": "Shield",
@@ -41638,8 +41864,8 @@
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 13,
-    "Per": 13,
+    "Will": 12,
+    "Per": 12,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -41647,13 +41873,13 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 60,
+    "attributes": 40,
     "advantages": 0,
     "disadvantages": 0,
     "skills": 24,
-    "spent": 84,
-    "unspent": 0,
-    "total": 84
+    "spent": 64,
+    "unspent": 11,
+    "total": 75
    },
    "band": "일반 인물",
    "baseline": false
@@ -44563,15 +44789,10 @@
      "evidence": []
     },
     "IQ": {
-     "value": 13,
-     "cp": 60,
+     "value": 12,
+     "cp": 40,
      "rule": "card-actions",
      "evidence": [
-      {
-       "path": "lore/characters/Cast-State-15.json",
-       "pointer": "/content/1/text/ko",
-       "quote": "주교회의 청사 광진 면목로는 바깥 창고로만 남긴다."
-      },
       {
        "path": "lore/characters/Cast-State-15.json",
        "pointer": "/content/1/text/ko",
@@ -44632,7 +44853,7 @@
       }
      ],
      "cp": 8,
-     "level": 15
+     "level": 14
     },
     {
      "name": "Diplomacy",
@@ -44658,35 +44879,14 @@
       }
      ],
      "cp": 8,
-     "level": 14
-    },
-    {
-     "name": "Administration",
-     "ko": "행정·기록",
-     "attr": "IQ",
-     "diff": "A",
-     "tier": "C",
-     "evidence": [
-      {
-       "path": "lore/characters/Cast-State-15.json",
-       "pointer": "/content/1/text/ko",
-       "quote": "주교회의 청사 광진 면목로는 바깥 창고로만 남긴다."
-      },
-      {
-       "path": "lore/characters/Core-Characters.json",
-       "pointer": "/content/139/text/ko",
-       "quote": "주교회의 청사 광진 면목로는 바깥 창고로만 남긴다."
-      }
-     ],
-     "cp": 4,
-     "level": 14
+     "level": 13
     }
    ],
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 13,
-    "Per": 13,
+    "Will": 12,
+    "Per": 12,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -44694,13 +44894,13 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 60,
+    "attributes": 40,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 20,
-    "spent": 80,
-    "unspent": 0,
-    "total": 80
+    "skills": 16,
+    "spent": 56,
+    "unspent": 19,
+    "total": 75
    },
    "band": "일반 인물",
    "baseline": false
@@ -47388,8 +47588,8 @@
       },
       {
        "path": "lore/characters/Core-Characters.json",
-       "pointer": "/content/150/text/ko",
-       "quote": "정유라는 세 장을 겹쳐 종료조건만 남기고 나머지를 봉하였다."
+       "pointer": "/content/147/text/ko",
+       "quote": "세 강국이 서로 다른 급수계약을 약소국에 동시에 내민 철, 정유라는 종료조건과 감사권을 한 장에 넣었다."
       }
      ]
     },
@@ -47448,6 +47648,22 @@
      ],
      "cp": 4,
      "level": 13
+    },
+    {
+     "name": "Diplomacy",
+     "ko": "교섭·조정",
+     "attr": "IQ",
+     "diff": "H",
+     "tier": "C",
+     "evidence": [
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/147/text/ko",
+       "quote": "세 강국이 서로 다른 급수계약을 약소국에 동시에 내민 철, 정유라는 종료조건과 감사권을 한 장에 넣었다."
+      }
+     ],
+     "cp": 4,
+     "level": 12
     }
    ],
    "languages": [],
@@ -47465,9 +47681,9 @@
     "attributes": 40,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 12,
-    "spent": 52,
-    "unspent": 23,
+    "skills": 16,
+    "spent": 56,
+    "unspent": 19,
     "total": 75
    },
    "band": "일반 인물",
@@ -50263,8 +50479,8 @@
      "evidence": []
     },
     "IQ": {
-     "value": 13,
-     "cp": 60,
+     "value": 12,
+     "cp": 40,
      "rule": "card-actions",
      "evidence": [
       {
@@ -50276,11 +50492,6 @@
        "path": "lore/characters/Cast-State-04.json",
        "pointer": "/content/1/text/ko",
        "quote": "취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다."
-      },
-      {
-       "path": "lore/characters/Core-Characters.json",
-       "pointer": "/content/156/text/ko",
-       "quote": "유언 3장을 총회 회의실에 공개하였다."
       }
      ]
     },
@@ -50322,7 +50533,7 @@
       }
      ],
      "cp": 8,
-     "level": 15
+     "level": 14
     },
     {
      "name": "Diplomacy",
@@ -50343,7 +50554,7 @@
       }
      ],
      "cp": 4,
-     "level": 13
+     "level": 12
     },
     {
      "name": "Breath Control",
@@ -50370,8 +50581,8 @@
    "languages": [],
    "secondary": {
     "HP": 10,
-    "Will": 13,
-    "Per": 13,
+    "Will": 12,
+    "Per": 12,
     "FP": 10,
     "BasicSpeed": 5,
     "BasicMove": 5,
@@ -50379,13 +50590,13 @@
     "Dodge": 8
    },
    "cp": {
-    "attributes": 60,
+    "attributes": 40,
     "advantages": 0,
     "disadvantages": 0,
     "skills": 16,
-    "spent": 76,
-    "unspent": 0,
-    "total": 76
+    "spent": 56,
+    "unspent": 19,
+    "total": 75
    },
    "band": "일반 인물",
    "baseline": false
