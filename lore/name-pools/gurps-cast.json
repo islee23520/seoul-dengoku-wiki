@@ -3,8 +3,8 @@
  "status": "proposal",
  "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
  "invariants": {
-  "lore/name-pools/values-cast.json": "05eebe21f559b23fb6a6bcdb8d2ff5bbe62770155487fe086f42c1c00481521b",
-  "lore/name-pools/person-id-registry.json": "14d0376384b12dd85247f3e19d96bae25f8cd011b40e8efe09ba35919b400f2a"
+  "lore/name-pools/values-cast.json": "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
+  "lore/name-pools/person-id-registry.json": "922b2c0d575e10789e94d949c53bd8b3a1310e83cd0baf4a015beffa0f5165ae"
  },
  "rules": {
   "edition": "GURPS Basic Set: Characters, 4th ed. (SJG 2004)",
@@ -67,7 +67,7 @@
   },
   "tl": "/TL? — 캠페인 기술 수준 미정(G1 Q14)"
  },
- "count": 1018,
+ "count": 1019,
  "people": [
   {
    "id": "K001",
@@ -121931,6 +121931,140 @@
     "skills": 12,
     "spent": 12,
     "unspent": 63,
+    "total": 75
+   },
+   "band": "일반 인물",
+   "baseline": false
+  },
+  {
+   "id": "K1019",
+   "name": "박성수",
+   "url": "/people/person-1019",
+   "state": "S00",
+   "method": "card-lexicon",
+   "role": {
+    "display": "주 통신선 정비 / 부 기록 보관",
+    "evidence": [
+     {
+      "path": "lore/characters/Cast-Unaffiliated.json",
+      "pointer": "/content/28/items/4/ko",
+      "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+     }
+    ]
+   },
+   "attributes": {
+    "ST": {
+     "value": 10,
+     "cp": 0,
+     "rule": "card-actions",
+     "evidence": []
+    },
+    "DX": {
+     "value": 10,
+     "cp": 0,
+     "rule": "card-actions",
+     "evidence": []
+    },
+    "IQ": {
+     "value": 12,
+     "cp": 40,
+     "rule": "card-actions",
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-Unaffiliated.json",
+       "pointer": "/content/30/text/ko",
+       "quote": "정비하러 다니는 그 길로 사본을 나른다."
+      },
+      {
+       "path": "lore/characters/Cast-Unaffiliated.json",
+       "pointer": "/content/31/text/ko",
+       "quote": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다."
+      }
+     ]
+    },
+    "HT": {
+     "value": 10,
+     "cp": 0,
+     "rule": "card-actions",
+     "evidence": []
+    }
+   },
+   "traits": [],
+   "skills": [
+    {
+     "name": "Mechanic/TL?",
+     "ko": "기계 정비",
+     "attr": "IQ",
+     "diff": "A",
+     "tier": "B",
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-Unaffiliated.json",
+       "pointer": "/content/28/items/4/ko",
+       "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+      },
+      {
+       "path": "lore/characters/Cast-Unaffiliated.json",
+       "pointer": "/content/30/text/ko",
+       "quote": "정비하러 다니는 그 길로 사본을 나른다."
+      }
+     ],
+     "cp": 8,
+     "level": 14
+    },
+    {
+     "name": "Administration",
+     "ko": "행정·기록",
+     "attr": "IQ",
+     "diff": "A",
+     "tier": "C",
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-Unaffiliated.json",
+       "pointer": "/content/28/items/4/ko",
+       "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+      },
+      {
+       "path": "lore/characters/Cast-Unaffiliated.json",
+       "pointer": "/content/31/text/ko",
+       "quote": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다."
+      }
+     ],
+     "cp": 4,
+     "level": 13
+    }
+   ],
+   "languages": [
+    {
+     "name": "한국어",
+     "level": "Native",
+     "cp": 0,
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-Unaffiliated.json",
+       "pointer": "/content/28/items/3/ko",
+       "quote": "언어: 한국어"
+      }
+     ]
+    }
+   ],
+   "secondary": {
+    "HP": 10,
+    "Will": 12,
+    "Per": 12,
+    "FP": 10,
+    "BasicSpeed": 5,
+    "BasicMove": 5,
+    "BasicLift": 20,
+    "Dodge": 8
+   },
+   "cp": {
+    "attributes": 40,
+    "advantages": 0,
+    "disadvantages": 0,
+    "skills": 12,
+    "spent": 52,
+    "unspent": 23,
     "total": 75
    },
    "band": "일반 인물",

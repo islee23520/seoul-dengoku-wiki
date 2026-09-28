@@ -1,15 +1,15 @@
 {
   "schema": "wiki-person-id-registry.v1",
   "approvalRef": {
-    "approvedBy": "owner",
+    "approvedBy": "pending-owner",
     "approvedAt": "2026-09-28",
-    "ownerRef": "2026-09-28 지연희·서하진 K1017–K1018 발급 및 최종 두 입력 해시 승인",
-    "inputSha256": "05eebe21f559b23fb6a6bcdb8d2ff5bbe62770155487fe086f42c1c00481521b",
-    "candidatesSha256": "1b19cd63690366589a29cd701250c529339cfc153b86dfcb494a3f9ae25534db"
+    "ownerRef": "2026-09-28 박성수 K1019 발급 초안 — 최종 두 입력 해시의 소유자 승인 대기",
+    "inputSha256": "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
+    "candidatesSha256": "d2b9df48b05a1e620a2ae369d1b84fc0ffdbc869d88fa8a11ebc714c9f69a5cf"
   },
-  "totalPeople": 1018,
+  "totalPeople": 1019,
   "existingKCount": 422,
-  "issuedCount": 596,
+  "issuedCount": 597,
   "persons": [
     {
       "id": "K001",
@@ -4088,6 +4088,10 @@
     {
       "id": "K1018",
       "name": "서하진"
+    },
+    {
+      "id": "K1019",
+      "name": "박성수"
     }
   ]
 }

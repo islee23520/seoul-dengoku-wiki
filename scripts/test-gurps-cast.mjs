@@ -1,6 +1,6 @@
 // 겁스 4판 인물 수치 검사기 시험 (node --test).
 // (a) 커밋된 gurps-cast.json이 검사를 통과하고 카드에서 다시 파생한 결과와 바이트 단위로 같은지,
-// (b) 승인 견본 두 사람과 K001–K1018 순서가 그대로인지, (c) 변이마다 검사가 실패하는지 본다.
+// (b) 승인 견본 두 사람과 K001–K1019 순서가 그대로인지, (c) 변이마다 검사가 실패하는지 본다.
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -22,8 +22,8 @@ test('카드에서 다시 파생한 결과가 커밋된 파일과 바이트 단�
   assert.equal(serialize(build().doc), raw)
 })
 
-test('K001–K1018 1,018명이 발급 순서대로 있고 URL은 values-cast 순번을 따른다', () => {
-  assert.equal(doc.people.length, 1018)
+test('K001–K1019 1,019명이 발급 순서대로 있고 URL은 values-cast 순번을 따른다', () => {
+  assert.equal(doc.people.length, 1019)
   doc.people.forEach((p, i) => assert.equal(p.id, `K${String(i + 1).padStart(3, '0')}`))
   assert.equal(find(doc, 'K1003').url, '/people/person-1003')
   assert.equal(find(doc, 'K1009').url, '/people/person-1009')
@@ -100,7 +100,7 @@ test('Q6 C: 이연 Observation은 A(12 CP)이고 사용자 확정 직위 줄을 
 
 test('Q8 C: 카드에 적힌 언어를 0 CP로 싣고 첫 언어만 Native다', () => {
   const withLang = doc.people.filter((p) => p.languages.length).map((p) => p.id)
-  assert.deepEqual(withLang, ['K1003', 'K1004', 'K1008', 'K1011', 'K1012', 'K1013', 'K1014', 'K1015', 'K1016', 'K1017', 'K1018'])
+  assert.deepEqual(withLang, ['K1003', 'K1004', 'K1008', 'K1011', 'K1012', 'K1013', 'K1014', 'K1015', 'K1016', 'K1017', 'K1018', 'K1019'])
   for (const p of doc.people) {
     p.languages.forEach((l, i) => {
       assert.equal(l.cp, 0)

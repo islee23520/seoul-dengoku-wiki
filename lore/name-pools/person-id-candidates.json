@@ -1,10 +1,10 @@
 {
   "schema": "wiki-person-id-candidates.v1",
-  "inputSha256": "05eebe21f559b23fb6a6bcdb8d2ff5bbe62770155487fe086f42c1c00481521b",
-  "baseCommit": "75fa368db5526caf97217b19e05a39953cc8ca57",
-  "totalPeople": 1018,
+  "inputSha256": "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
+  "baseCommit": "dce766303f264b9484d074b14853dec1be5eb1d0",
+  "totalPeople": 1019,
   "existingKCount": 422,
-  "candidateCount": 596,
+  "candidateCount": 597,
   "existingK": [
     {
       "id": "K001",
@@ -6463,6 +6463,14 @@
       "state": "S00",
       "title": "권역 간 계약 자문가",
       "locked": false
+    },
+    {
+      "ordinal": 597,
+      "name": "박성수",
+      "stage": "S1",
+      "state": "S00",
+      "title": "사본 관리인",
+      "locked": false
     }
   ],
   "NOTES": [
@@ -6534,6 +6542,11 @@
     {
       "type": "state-tier-without-k",
       "name": "서하진",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "박성수",
       "detail": "S1 단계 인물인데 K 식별자가 없다"
     }
   ]
