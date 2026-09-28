@@ -81,7 +81,7 @@ test('literal logbook lines and ordinary oral testimony are not coined phrases',
 })
 
 test('editorial status markers cannot ship as visible wiki copy', () => {
-  for (const marker of ['창작 제안', '(미확인)']) {
+  for (const marker of ['창작 제안', '(미확인)', '사용자 확정', 'owner-confirmed']) {
     assert.match(editorialMarkerFailures(marker, 'world/example')[0], /FAIL editorial-marker: world\/example/u)
   }
   assert.deepEqual(editorialMarkerFailures('역의 이름과 위치를 기록했다.', 'world/example'), [])
