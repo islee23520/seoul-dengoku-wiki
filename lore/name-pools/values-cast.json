@@ -20,7 +20,7 @@
     "과시",
     "지속"
   ],
-  "count": 1018,
+  "count": 1019,
   "people": [
     {
       "name": "한재목",
@@ -31398,6 +31398,11 @@
       "name": "서하진", "title": "권역 간 계약 자문가", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -10, "개방": 40, "무력": -40, "물질": 60, "공동": -40, "원칙": 20, "공개": -60, "자격": 30, "분산": 50, "변혁": 20 },
       "desire": { "갈망": 50, "독점": 40, "위험": 60, "과시": -30, "지속": 20, "지향": null, "결합": null }, "locked": false
+    },
+    {
+      "name": "박성수", "title": "사본 관리인", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
+      "values": { "권위": 10, "개방": 30, "무력": -40, "물질": -50, "공동": -10, "원칙": 60, "공개": 60, "자격": 10, "분산": -20, "변혁": 10 },
+      "desire": { "갈망": 30, "독점": -30, "위험": -20, "과시": -50, "지속": 60, "지향": null, "결합": null }, "locked": false
     }
   ]
 }
