@@ -9,6 +9,8 @@ import { ledger } from './lore-json-validate-ledger.mjs'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const loreRoot = join(root, 'lore')
 const schemaRunner = join(root, 'scripts/lore-json-schema.py')
+// A schema check that stalls fails with its file label instead of hanging the run (#279).
+const schemaTimeout = Number(process.env.LORE_JSON_SCHEMA_TIMEOUT_MS) || 60000
 const excluded = new Set(['M007', 'B017', 'B020'])
 const privatePages = new Set(['Cast-Profile-Contract', 'Cast-Registration-Template', 'Random-Cast-Roster'])
 // Operating guidance, private contracts and templates, and unapproved drafts stay Markdown (task 10c ledger).
@@ -155,7 +157,14 @@ function validate(files) {
     failures.push(...localeBindingFailures(document, label))
     failures.push(...atlasFailures(document, label))
     const domain = document?.domain
-    const schema = spawnSync('python3', [schemaRunner, domain ?? ''], { input: JSON.stringify(document), encoding: 'utf8' })
+    // The runner reads the document from its path; its standard input is closed so it can never wait on a pipe (#279).
+    const schema = spawnSync('python3', [schemaRunner, domain ?? '', file], {
+      stdio: ['ignore', 'pipe', 'pipe'], encoding: 'utf8', timeout: schemaTimeout, killSignal: 'SIGKILL',
+    })
+    if (schema.error?.code === 'ETIMEDOUT') {
+      failures.push(`E_SCHEMA: ${label}: schema check did not finish within ${schemaTimeout} ms`)
+      continue
+    }
     if (schema.error || schema.status !== 0) {
       failures.push(`${label}: ${schema.stdout?.trim() || schema.stderr?.trim() || schema.error?.message || 'E_SCHEMA: failed'}`)
       continue
