@@ -76,6 +76,7 @@ export const SKILLS = {
   forgery: { name: 'Forgery/TL?', ko: '위조 감별', attr: 'IQ', diff: 'H' },
   diplomacy: { name: 'Diplomacy', ko: '교섭·조정', attr: 'IQ', diff: 'H' },
   leadership: { name: 'Leadership', ko: '지휘', attr: 'IQ', diff: 'A' },
+  politics: { name: 'Politics', ko: '정치(선거·표 모으기)', attr: 'IQ', diff: 'A' },
   interrogation: { name: 'Interrogation', ko: '증인 대질', attr: 'IQ', diff: 'A' },
   areaKnowledge: { name: 'Area Knowledge (근무 구역)', ko: '지역 지식(전령·전달)', attr: 'IQ', diff: 'E' },
   navigation: { name: 'Navigation/TL? (Land)', ko: '길찾기(지상)', attr: 'IQ', diff: 'A' },
@@ -198,6 +199,56 @@ export function mainClause(text, section, name) {
   const main = cut >= 0 ? text.slice(cut + 2) : text
   const body = main.replace(/^\d{4}년 /u, '')
   return /(^|\s)[가-힣]+(이|가|들이) /u.test(body) || /^[가-힣·]+(은|는) /u.test(body) ? null : main
+}
+
+// 같은 사건 판정(G2 Q9 L0 추천안 B, 소유자 승인 대기). 두 카드가 같은 사건을 다른 문장으로 적으면 앞의 때·장소 절은 달라도
+// 끝 서술어가 같고(…하였다 → …했다) 낱말 대부분이 겹친다. 조사를 뗀 낱말이 짧은 쪽의 60% 이상 겹치면 같은 사건으로 본다.
+// 한 능력에서 다른 카드의 같은 사건 문장은 한 건으로 센다. 같은 카드 안의 서로 다른 문장은 따로 센다.
+const EVENT_OVERLAP = 0.6
+const eventWords = (text) => text.trim().replace(/\.$/u, '').replace(/하였다$/u, '했다').replace(/되었다$/u, '됐다').split(/\s+/u)
+const stem = (w) => w.replace(/[,.]$/u, '').replace(/(으로|에서|에게|을|를|이|가|은|는|에|의|로|과|와|도|만)$/u, '')
+export function sameEvent(a, b) {
+  const wa = eventWords(a)
+  const wb = eventWords(b)
+  if (wa.at(-1) !== wb.at(-1)) return false
+  const sa = new Set(wa.map(stem))
+  const sb = new Set(wb.map(stem))
+  const shared = [...sa].filter((w) => sb.has(w)).length
+  return shared / Math.min(sa.size, sb.size) >= EVENT_OVERLAP
+}
+
+// ---- 16국 수장 검토 추천안(G2 Q9 B, leader-questions.md L01–L16의 추천 선택지). 소유자 답변 전이므로 채택 정본이 아니다. ----
+// add: 카드 문장(글자 그대로)을 지정 기술의 근거로 센다. tier가 없으면 절의 등급을 따르고, ability: false가 아니면 기준 능력 근거로도 센다.
+// exclude: 본인 행위가 아닌 문장을 근거에서 뺀다. drop: 생업 칸의 낱말이 잘못 부른 기술을 뺀다. hold: 원천 충돌로 바꾸지 않는다.
+export const LEADER_REVIEW = {
+  K001: { q: 'L01', choice: 'B', add: [
+    { quote: '한재목은 그 열쇠로 배급구역 대표들의 연서를 받기 전에 수문을 열지 않는 버릇을 배웠다.', skill: 'administration', tier: 'B' },
+    { quote: '물 계약 가문들이 계약 회의에서 군주를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 군주 자리에 앉았다.', skill: 'politics', tier: 'C' },
+  ] },
+  K029: { q: 'L02', choice: 'A' },
+  K1005: { q: 'L03', choice: 'A' },
+  K423: { q: 'L04', choice: 'L0' },
+  K115: { q: 'L05', choice: 'B', drop: ['mechanic'], add: [
+    { quote: '배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구했으며 창동방호가의 서명은 받지 않았다.', skill: 'diplomacy' },
+    { quote: '강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다.', skill: 'administration' },
+  ] },
+  K144: { q: 'L06', choice: 'B', add: [{ quote: '세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다.', skill: 'administration' }] },
+  K169: { q: 'L07', choice: 'C', drop: ['observation'], add: [{ quote: '박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다.', skill: 'administration' }] },
+  K194: { q: 'L08', choice: 'B', add: [{ quote: '노량진 냉동 창고의 열쇠를 관리하였다.', skill: 'administration' }] },
+  K219: { q: 'L09', choice: 'A', hold: 'Cast-State-09와 Core-Characters의 일화·무공이 서로 다르다. 정본 판본을 소유자가 정하기 전에는 바꾸지 않는다.' },
+  K245: { q: 'L10', choice: 'B', add: [
+    { quote: '행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 신도 명부 줄로 옮겼다.', skill: 'administration' },
+    { quote: '행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 시민권 줄로 옮겼다.', skill: 'administration' },
+  ] },
+  K271: { q: 'L11', choice: 'B', add: [
+    { quote: '원로 사제.', skill: 'breathControl', tier: 'B', ability: false },
+    { quote: '승계 시험 전날, 이홍원은 주거 공동체의 표를 시험장 밖으로 내보냈다.', skill: 'administration' },
+  ] },
+  K296: { q: 'L12', choice: 'A' },
+  K322: { q: 'L13', choice: 'B', add: [{ quote: '류은비는 전문의의 진료와 수련의 도제 수련을 지휘하며 환자의 소속과 재산이 아닌 중증도로 병상을 배정한다.', skill: 'physician' }] },
+  K348: { q: 'L14', choice: 'L0' },
+  K373: { q: 'L15', choice: 'B', exclude: ['주교회의 청사 광진 면목로는 바깥 창고로만 남긴다.'] },
+  K398: { q: 'L16', choice: 'B', add: [{ quote: '세 강국이 서로 다른 급수계약을 약소국에 동시에 내민 철, 정유라는 종료조건과 감사권을 한 장에 넣었다.', skill: 'diplomacy' }] },
 }
 
 const CAST_SUFFIX = /\s*\((창작 제안|사용자 확정|미확인|발급된 인물 ID|개막 체류지 사용자 확정)\)\s*$/u
@@ -342,6 +393,13 @@ export function derivePerson(root, person, castNames) {
   const skillEv = new Map()
   const abilityEv = { ST: [], DX: [], IQ: [], HT: [] }
   const seenAbility = { ST: new Set(), DX: new Set(), IQ: new Set(), HT: new Set() }
+  // 같은 문장은 한 번, 다른 카드에 다른 문장으로 실린 같은 사건도 한 번만 센다(L0).
+  const countAbility = (a, text, ev) => {
+    if (seenAbility[a].has(text) || abilityEv[a].some((e) => e.path !== ev.path && sameEvent(e.quote, text))) return
+    seenAbility[a].add(text)
+    abilityEv[a].push(ev)
+  }
+  const lead = LEADER_REVIEW[person.id]
   const addSkill = (skill, tier, ev, section) => {
     const cur = skillEv.get(skill) ?? { tier, evidence: [] }
     if (TIERS[tier] > TIERS[cur.tier]) cur.tier = tier
@@ -359,6 +417,15 @@ export function derivePerson(root, person, castNames) {
     }
     for (const s of sentences) {
       if (s.section === '생업' || ['관계', '야망', '공포', '개입', '가문', '신념'].includes(s.section)) continue
+      if (lead?.exclude?.includes(s.text)) { review.push({ section: s.section, text: s.text, verdict: `leader-exclude ${lead.q}` }); continue }
+      const pinned = lead?.add?.find((x) => x.quote === s.text)
+      if (pinned) {
+        const ev = evidence(card.path, s.pointer, s.text)
+        addSkill(pinned.skill, pinned.tier ?? TIER_BY_SECTION[s.section] ?? 'C', ev, s.section)
+        if (pinned.ability !== false) countAbility(abilityOf(SKILLS[pinned.skill].attr), s.text, ev)
+        review.push({ section: s.section, text: s.text, verdict: `leader-add ${lead.q} ${pinned.skill}` })
+        continue
+      }
       if (s.section === '무공') {
         for (const [re, skills] of MARTIAL) if (re.test(s.text)) for (const skill of skills) addSkill(skill, 'C', evidence(card.path, s.pointer, s.text), '무공')
         continue
@@ -379,11 +446,7 @@ export function derivePerson(root, person, castNames) {
       if (rule.skill && !rule.skipSkill) addSkill(rule.skill, tier, confirmed ? evidence(card.path, s.pointer, s.line) : ev, s.section)
       const abilities = new Set(rule.abilities ?? [])
       if (rule.skill && !rule.skipSkill) abilities.add(abilityOf(SKILLS[rule.skill].attr))
-      for (const a of abilities) {
-        if (seenAbility[a].has(s.text)) continue
-        seenAbility[a].add(s.text)
-        abilityEv[a].push(ev)
-      }
+      for (const a of abilities) countAbility(a, s.text, ev)
     }
     // 생업 칸이 없는 카드(Core)의 생업 별명은 역할 표시로만 쓴다.
   }
@@ -392,6 +455,7 @@ export function derivePerson(root, person, castNames) {
     const value = ABILITY_BASE + count
     return [a, { value, cp: (value - ABILITY_BASE) * ATTR_COST[a], rule: 'card-actions', evidence: abilityEv[a].slice(0, ABILITY_CAP) }]
   }))
+  for (const key of lead?.drop ?? []) skillEv.delete(key)
   const skills = [...skillEv.entries()].map(([key, { tier, evidence: evs }]) => ({ key, tier, evidence: evs }))
   return { cards, role, attributes, skills, traits: [], review }
 }
@@ -580,7 +644,7 @@ export function build(root = ROOT) {
   const doc = {
     schema: SCHEMA,
     status: 'proposal',
-    note: '겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.',
+    note: '겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 세고(G2 Q9 L0 추천안), 16국 수장에는 수장별 검토의 추천 선택지를 적용했다(L01–L16). 이 두 가지는 소유자 항목별 승인 대기이며 채택 정본이 아니다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.',
     invariants: { ...APPROVED_HASHES },
     rules: {
       edition: 'GURPS Basic Set: Characters, 4th ed. (SJG 2004)',
@@ -593,6 +657,8 @@ export function build(root = ROOT) {
       bands: BANDS,
       unspent: { floor: UNSPENT_FLOOR, rule: '75 CP 미만이면 모자란 만큼 미사용 점수(unspent points)로 둔다. 기술·능력·특성으로 쓰지 않는다(소유자 결정 2026-09-28, G2 Q2 B)' },
       owner_tier_a: { ...OWNER_TIER_A, rule: '사용자 확정 직위 줄이 직접 가리키는 핵심 기술(소유자 결정 2026-09-28, G2 Q6 C)' },
+      same_event: { rule: '한 능력에서 다른 카드에 다른 문장으로 실린 같은 사건은 한 건으로 센다. 끝 서술어가 같고(…하였다 → …했다) 조사를 뗀 낱말이 짧은 문장의 60% 이상 겹치면 같은 사건이다. 다른 판본은 같은 기술의 보조 인용으로만 둔다', status: '추천안, 소유자 승인 대기(G2 Q9 L0)' },
+      leader_review: { status: '추천안, 소유자 항목별 승인 대기(G2 Q9 B, L01–L16)', items: Object.fromEntries(Object.entries(LEADER_REVIEW).map(([id, r]) => [id, { question: r.q, choice: r.choice, ...(r.hold ? { hold: r.hold } : {}) }])) },
       languages: '카드 「언어:」 줄의 언어만, 첫 언어 Native, 나머지 숙련도 미정(null), 모두 0 CP. 숙련도 CP는 뒤의 규칙을 기다린다(소유자 결정 2026-09-28, G2 Q8 C)',
       traits: { reputation: 'B26–27, 카드가 유명세를 적은 사람만', combat_reflexes: 'B43, 15 CP, Dodge +1, 소유자가 지명한 사람만', disadvantages: '발급하지 않음' },
       tl: '/TL? — 캠페인 기술 수준 미정(G1 Q14)',
@@ -656,6 +722,9 @@ export function verify(doc, root = ROOT) {
       if (at.rule === 'card-actions') {
         const distinct = new Set(at.evidence.map((e) => e.quote))
         if (distinct.size !== at.evidence.length) fail(`${tag} ${a}: 같은 문장을 두 번 셈`)
+        at.evidence.forEach((e, k) => {
+          if (at.evidence.slice(0, k).some((f) => f.path !== e.path && sameEvent(f.quote, e.quote))) fail(`${tag} ${a}: 두 카드에 실린 같은 사건을 두 번 셈 «${e.quote}»`)
+        })
         if (at.value !== ABILITY_BASE + Math.min(ABILITY_CAP, distinct.size)) fail(`${tag} ${a} ${at.value}: 행위 문장 ${distinct.size}건과 맞지 않음(기본 10, 1건당 +1, 최대 +3)`)
       } else if (at.rule === 'pilot-approved') {
         if (!pilot) fail(`${tag} ${a}: 견본값 규칙은 견본 두 사람에게만`)
@@ -696,6 +765,13 @@ export function verify(doc, root = ROOT) {
       for (const e of s.evidence ?? []) if (!quoteHolds(root, e)) fail(`${tag} ${s.name}: 인용 불일치 ${e.path}#${e.pointer ?? ''} «${e.quote}»`)
       if (/Guns|Soldier|Beam Weapons|Gunner/u.test(s.name)) fail(`${tag} ${s.name}: 총기·복무 기술은 근거 규칙이 없다`)
       skillCp += TIERS[s.tier]
+    }
+    const lead = LEADER_REVIEW[p.id]
+    if (lead && !pilot) {
+      const quotes = new Set([...Object.values(p.attributes ?? {}).flatMap((x) => x.evidence ?? []), ...(p.skills ?? []).flatMap((s) => s.evidence ?? [])].map((e) => e.quote))
+      for (const x of lead.add ?? []) if (!quotes.has(x.quote)) fail(`${tag} ${lead.q}: 추천안 근거 «${x.quote}»가 적용되지 않음`)
+      for (const q of lead.exclude ?? []) if (quotes.has(q)) fail(`${tag} ${lead.q}: 뺀 문장 «${q}»이 근거에 남음`)
+      for (const k of lead.drop ?? []) if ((p.skills ?? []).some((s) => s.name === SKILLS[k].name)) fail(`${tag} ${lead.q}: 뺀 기술 ${SKILLS[k].name}이 남음`)
     }
     if (OWNER_TIER_A[p.id] && p.skills?.find((s) => s.name === OWNER_TIER_A[p.id])?.tier !== 'A') fail(`${tag} ${OWNER_TIER_A[p.id]}: 소유자 결정 A 등급이 아님`)
     const spent = attrCp + adv + dis + skillCp
