@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import test from 'node:test'
+import { readRendered } from './lore-read-rendered.mjs'
 
 test('all canonical people are indexed and linked to a canon card', async () => {
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
@@ -9,20 +10,22 @@ test('all canonical people are indexed and linked to a canon card', async () => 
   const names = [...catalog.matchAll(/"name": "([^"]+)"/g)].map((match) => match[1])
   const sourceRoutes = [...catalog.matchAll(/"sourceRoute": "([^"]+)"/g)].map((match) => match[1])
   const detailRoutes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
-  assert.equal(count, 1016)
-  assert.equal(names.length, 1016)
-  assert.equal(new Set(names).size, 1016)
-  assert.equal(sourceRoutes.length, 1016)
-  assert.equal(detailRoutes.length, 1016)
-  assert.equal(new Set(detailRoutes).size, 1016)
+  assert.equal(count, 1019)
+  const countModule = await readFile(new URL('../src/generated/peopleCount.ts', import.meta.url), 'utf8')
+  assert.equal(Number(countModule.match(/peopleCount = (\d+)/)?.[1]), count)
+  assert.equal(names.length, 1019)
+  assert.equal(new Set(names).size, 1019)
+  assert.equal(sourceRoutes.length, 1019)
+  assert.equal(detailRoutes.length, 1019)
+  assert.equal(new Set(detailRoutes).size, 1019)
   assert.ok(sourceRoutes.every((route) => route.startsWith('/world/') && route.includes('#')))
   const genders = [...catalog.matchAll(/"gender": "([^"]+)"/g)].map((match) => match[1])
-  assert.equal(genders.length, 1016)
+  assert.equal(genders.length, 1019)
   assert.ok(genders.every((gender) => gender === '여성' || gender === '남성'))
   assert.equal(sourceRoutes.filter((route) => route.startsWith('/world/Core-Characters#인물-')).length, 0)
   for (const route of sourceRoutes) {
     const [document, anchor] = route.replace('/world/', '').split('#')
-    const markdown = await readFile(resolve(import.meta.dirname, `../lore/${document === 'Diaspora-Corridors' ? 'factions' : 'characters'}/${document}.md`), 'utf8')
+    const markdown = readRendered(resolve(import.meta.dirname, '../lore'), document === 'Diaspora-Corridors' ? 'factions' : 'characters', document)
     if (document === 'Diaspora-Corridors') {
       const headings = [...markdown.matchAll(/^### (인물 .+)$/gmu)].map((match) => match[1])
       const headingId = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
@@ -41,7 +44,7 @@ test('people search route is linked from wiki navigation', async () => {
   assert.match(links, /characters: '\/people'/)
 })
 
-test('the atlas projection links all five unaffiliated people through the generated catalog', async () => {
+test('the atlas projection links all eight unaffiliated people through the generated catalog', async () => {
   const page = JSON.parse(await readFile(new URL('../src/generated/world/World-Expansion-Index.json', import.meta.url), 'utf8'))
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
   const links = []
@@ -50,7 +53,7 @@ test('the atlas projection links all five unaffiliated people through the genera
     for (const child of node.children ?? []) visit(child)
   }
   page.blocks.forEach(visit)
-  assert.deepEqual(links.map((link) => link.url), [1003, 1004, 1008, 1009, 1010].map((id) => '/people/person-' + id))
+  assert.deepEqual(links.map((link) => link.url), [1003, 1004, 1008, 1009, 1010, 1017, 1018, 1019].map((id) => '/people/person-' + id))
   for (const link of links) {
     assert.ok(catalog.includes('"detailRoute": "' + link.url + '"'), link.url)
     const id = link.url.split('/').at(-1)
@@ -89,7 +92,7 @@ test('people page states the confirmed hero contract without auto-assigning prop
   const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
   const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
 
-  assert.match(page, /1,016명은 모두 영웅 인물/)
+  assert.match(page, /1,019명은 모두 영웅 인물/)
   assert.match(page, /전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성/)
   assert.match(page, /전투 클래스 이름과 개인별 배정은 아직 확정되지 않았/)
   assert.doesNotMatch(generator, /heroClass/)

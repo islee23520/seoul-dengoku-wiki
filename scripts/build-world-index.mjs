@@ -7,23 +7,15 @@ import { basename, join } from 'node:path'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 const readPage = (loreRoot, slug) => {
-  const candidates = [
-    join(loreRoot, `${slug}.md`),
-    join(loreRoot, `${slug}.json`),
-  ]
+  const candidates = [join(loreRoot, `${slug}.json`)]
   const domains = ['characters', 'factions', 'chronology', 'overview', 'people-and-machines', 'places', 'offices', 'goods', 'structures', 'technology', 'ailments', 'culture', 'economy']
-  for (const domain of domains) {
-    candidates.push(join(loreRoot, domain, `${slug}.json`), join(loreRoot, domain, `${slug}.md`))
-  }
+  for (const domain of domains) candidates.push(join(loreRoot, domain, `${slug}.json`))
   for (const path of candidates) {
     let text
     try { text = readFileSync(path, 'utf8') } catch { continue }
-    if (path.endsWith('.json')) {
-      const document = JSON.parse(text)
-      if (!document || !Array.isArray(document.content)) continue
-      return renderLoreMarkdown(document, 'ko', (_domain, linked) => `${linked}.md`)
-    }
-    return text
+    const document = JSON.parse(text)
+    if (!document || !Array.isArray(document.content)) continue
+    return renderLoreMarkdown(document, 'ko', (_domain, linked) => `${linked}.md`)
   }
   throw new Error(`E_WORLD_INDEX_SOURCE:${slug}`)
 }

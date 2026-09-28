@@ -3,18 +3,23 @@
     "term_id": "state-01",
     "display_name_ko": "수문국",
     "reader_definition_ko": "양평역을 수도로 삼고 서부 급수를 맡는 강국.",
+    "display_name_en": "The Sluice",
+    "reader_definition_en": "The major power that holds Yangpyeong Station as its capital and runs the western water supply.",
     "category": "state",
     "owner_path": "lore/factions/Sixteen-States.json",
     "allowed_context": [
       "all"
     ],
     "aliases": [],
+    "aliases_en": [],
     "status": "fact-public"
   },
   {
     "term_id": "state-06",
     "display_name_ko": "대한민국정부",
     "reader_definition_ko": "광화문을 중심으로 종로·중구의 명부와 배급, 도장·인지세, 청사 경비대를 직접 관리하는 십육국 제일의 강국.",
+    "display_name_en": "Republic of Korea Government",
+    "reader_definition_en": "The foremost major power of the sixteen states, directly managing the registers and rations of Jongno and Jung-gu, seals and stamp duty, and the government-building guard from Gwanghwamun.",
     "category": "state",
     "owner_path": "lore/factions/Sixteen-States.json",
     "allowed_context": [
@@ -23,31 +28,42 @@
     "aliases": [
       "정부"
     ],
+    "aliases_en": [
+      "Government"
+    ],
     "status": "fact-public"
   },
   {
     "term_id": "state-16",
     "display_name_ko": "정동노총",
     "reader_definition_ko": "시청역 앞 파업 명부를 지키는 소국.",
+    "display_name_en": "Jeongdong Federation",
+    "reader_definition_en": "The minor power that guards the strike register in front of City Hall Station.",
     "category": "state",
     "owner_path": "lore/factions/Sixteen-States.json",
     "allowed_context": [
       "all"
     ],
     "aliases": [],
+    "aliases_en": [],
     "status": "fact-public"
   },
   {
     "term_id": "house-hp01",
     "display_name_ko": "영등포수문가",
     "reader_definition_ko": "영등포 일대의 지하 수로와 제어 밸브를 장악한 기술자 가문.",
+    "display_name_en": "Yeongdeungpo Sluice House",
+    "reader_definition_en": "An engineering house that controls the underground waterways and control valves around Yeongdeungpo.",
     "category": "organization",
-    "owner_path": "lore/World-Narrative-Atlas.md",
+    "owner_path": "lore/World-Narrative-Atlas.json",
     "allowed_context": [
       "all"
     ],
     "aliases": [
       "수문가"
+    ],
+    "aliases_en": [
+      "Sluice House"
     ],
     "status": "fiction-original"
   },
@@ -55,13 +71,18 @@
     "term_id": "house-hc01",
     "display_name_ko": "여의도전산가",
     "reader_definition_ko": "구 여의도의 금융 전산망과 데이터 센터를 통제하는 기업 가문.",
+    "display_name_en": "Yeouido Computing House",
+    "reader_definition_en": "A corporate house that controls the financial computing network and data centers of old Yeouido.",
     "category": "organization",
-    "owner_path": "lore/World-Narrative-Atlas.md",
+    "owner_path": "lore/World-Narrative-Atlas.json",
     "allowed_context": [
       "all"
     ],
     "aliases": [
       "전산가"
+    ],
+    "aliases_en": [
+      "Computing House"
     ],
     "status": "fiction-original"
   },
@@ -69,6 +90,8 @@
     "term_id": "tech-physical-ai",
     "display_name_ko": "피지컬 에이아이",
     "reader_definition_ko": "물리적 신체를 가지고 전술 작전을 수행하는 기계 지능.",
+    "display_name_en": "Physical AI",
+    "reader_definition_en": "A machine intelligence with a physical body that carries out tactical operations.",
     "category": "technology",
     "owner_path": "lore/technology",
     "allowed_context": [
@@ -77,12 +100,17 @@
     "aliases": [
       "PAI"
     ],
+    "aliases_en": [
+      "PAI"
+    ],
     "status": "fiction-original"
   },
   {
     "term_id": "tech-lens",
     "display_name_ko": "렌즈",
     "reader_definition_ko": "착용자의 시야에 전장 정보와 기계 상태를 겹쳐 보여주는 증강 장비.",
+    "display_name_en": "Lens",
+    "reader_definition_en": "Augmented gear that overlays battlefield information and machine status on the wearer’s view.",
     "category": "equipment",
     "owner_path": "lore/technology",
     "allowed_context": [
@@ -91,12 +119,17 @@
     "aliases": [
       "전술렌즈"
     ],
+    "aliases_en": [
+      "Tactical lens"
+    ],
     "status": "generic-unregistered"
   },
   {
     "term_id": "person-lensbreath",
     "display_name_ko": "렌즈 착용자",
     "reader_definition_ko": "항상 렌즈를 착용하고 기계와 동기화된 채 살아가는 자.",
+    "display_name_en": "Lens wearer",
+    "reader_definition_en": "A person who always wears a lens and lives synchronized with machines.",
     "category": "person_category",
     "owner_path": "lore/people-and-machines",
     "allowed_context": [
@@ -104,12 +137,15 @@
       "informal"
     ],
     "aliases": [],
+    "aliases_en": [],
     "status": "fiction-original"
   },
   {
     "term_id": "martial-aiming",
     "display_name_ko": "감응조준법",
     "reader_definition_ko": "피지컬 에이아이 렌즈의 센서 정보와 자신의 시각을 동기화하여 사격하는 사격술.",
+    "display_name_en": "Resonant-Aiming Method",
+    "reader_definition_en": "A marksmanship art that synchronizes a physical-AI lens’s sensor data with the shooter’s own sight.",
     "category": "martial_school",
     "owner_path": "lore/culture/Martial-Paths.json",
     "allowed_context": [
@@ -118,24 +154,32 @@
     "aliases": [
       "감응조준"
     ],
+    "aliases_en": [
+      "Resonant aiming"
+    ],
     "status": "fiction-original"
   },
   {
     "term_id": "martial-breathing",
     "display_name_ko": "수문호흡법",
     "reader_definition_ko": "유독 가스가 섞인 하층 공기에서 효율적으로 산소를 확보하는 호흡 기술.",
+    "display_name_en": "Sluice-Breath Method",
+    "reader_definition_en": "A breathing technique for securing oxygen efficiently in lower-level air mixed with toxic gas.",
     "category": "martial_school",
     "owner_path": "lore/culture/Martial-Paths.json",
     "allowed_context": [
       "all"
     ],
     "aliases": [],
+    "aliases_en": [],
     "status": "fiction-original"
   },
   {
     "term_id": "geo-deep-tunnel",
     "display_name_ko": "심층 터널",
     "reader_definition_ko": "환승 통로 밑바닥에 위치한 가장 깊은 구역으로, 빛이 들지 않고 환기가 되지 않는다.",
+    "display_name_en": "Deep tunnel",
+    "reader_definition_en": "The deepest zone, at the bottom of the transfer passages, with no light and no ventilation.",
     "category": "geography",
     "owner_path": "lore/places",
     "allowed_context": [
@@ -144,24 +188,32 @@
     "aliases": [
       "심층"
     ],
+    "aliases_en": [
+      "Deep level"
+    ],
     "status": "generic-unregistered"
   },
   {
     "term_id": "event-collapse",
     "display_name_ko": "대단선",
     "reader_definition_ko": "2026년부터 서울의 호출망과 전력·급수망이 끊어진 사건.",
+    "display_name_en": "The Severance",
+    "reader_definition_en": "The event from 2026 in which Seoul’s call network and its power and water networks were cut.",
     "category": "event",
     "owner_path": "lore/chronology/Century-Annals.json",
     "allowed_context": [
       "all"
     ],
     "aliases": [],
+    "aliases_en": [],
     "status": "generic-unregistered"
   },
   {
     "term_id": "event-present",
     "display_name_ko": "2126년",
     "reader_definition_ko": "서울 열여섯 나라의 개막 시점.",
+    "display_name_en": "2126",
+    "reader_definition_en": "The opening moment of Seoul’s sixteen states.",
     "category": "event",
     "owner_path": "lore/chronology/Century-Annals.json",
     "allowed_context": [
@@ -170,12 +222,17 @@
     "aliases": [
       "현재"
     ],
+    "aliases_en": [
+      "Present"
+    ],
     "status": "generic-unregistered"
   },
   {
     "term_id": "ailment-spore",
     "display_name_ko": "포자감염",
     "reader_definition_ko": "저온 환경의 지하 균류 포자가 폐에 자리 잡아 호흡기를 굳게 만드는 치명적 증상.",
+    "display_name_en": "Spore infection",
+    "reader_definition_en": "A deadly condition in which spores of underground fungi from cold environments settle in the lungs and stiffen the airways.",
     "category": "ailment",
     "owner_path": "lore/ailments",
     "allowed_context": [
@@ -183,6 +240,9 @@
     ],
     "aliases": [
       "포자병"
+    ],
+    "aliases_en": [
+      "Spore sickness"
     ],
     "status": "fiction-original"
   }
