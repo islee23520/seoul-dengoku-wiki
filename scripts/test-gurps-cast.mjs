@@ -30,10 +30,11 @@ test('K001–K1019 1,019명이 발급 순서대로 있고 URL은 values-cast 순
   assert.equal(find(doc, 'K1009').url, '/people/person-1009')
 })
 
-test('승인 견본: 조재표 216, 신종목 207, 두 사람 모두 주역·강자', () => {
+test('근거 수정 견본: 조재표 210, 신종목 207, 두 사람 모두 주역·강자', () => {
   const jo = find(doc, 'K1003')
   const shin = find(doc, 'K1009')
-  assert.equal(jo.cp.total, 216)
+  assert.equal(jo.cp.total, 210)
+  assert.ok(jo.skills.every((skill) => !['Staff', 'Hiking'].includes(skill.name)))
   assert.equal(shin.cp.total, 207)
   assert.equal(jo.band, '주역·강자')
   assert.equal(shin.band, '주역·강자')
@@ -224,7 +225,7 @@ const MUTATIONS = [
   ['역할 표시 인용 변조', (d) => { d.people[sampleIndex].role.evidence[0].quote += ' 대장' }],
   ['총점 −1', (d) => { d.people[sampleIndex].cp.total -= 1 }],
   ['구간 이름 변경', (d) => { find(d, 'K1003').band = '숙련자' }],
-  ['견본 총점 216→214(기술 한 칸 C→D)', (d) => { const p = find(d, 'K1003'); const s = p.skills.find((k) => k.name === 'Staff'); s.tier = 'D'; s.cp = 2; s.level = 12; p.cp.skills -= 2; p.cp.total -= 2 }],
+  ['견본 총점 210→208(기술 한 칸 C→D)', (d) => { const p = find(d, 'K1003'); const s = p.skills.find((k) => k.name === 'Observation'); s.tier = 'D'; s.cp = 2; s.level -= 1; p.cp.skills -= 2; p.cp.spent -= 2; p.cp.total -= 2 }],
   ['Combat Reflexes를 지명되지 않은 사람에게', (d) => { const p = d.people[sampleIndex]; p.traits.push({ ...find(d, 'K1003').traits.find((t) => t.rule === 'combat-reflexes') }); p.cp.advantages += 15; p.cp.total += 15; p.secondary.Dodge += 1 }],
   ['Combat Reflexes 15→10 CP', (d) => { find(d, 'K1009').traits[0].cp = 10 }],
   ['유명세 근거 없는 Reputation', (d) => { const p = d.people[sampleIndex]; p.traits.push({ name: 'Reputation +1', kind: 'advantage', rule: 'reputation', level: 1, people: 1, frequency: 1, cp: 5, evidence: p.skills[0].evidence }); p.cp.advantages += 5; p.cp.total += 5 }],

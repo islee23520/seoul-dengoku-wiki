@@ -4,6 +4,14 @@ import test from 'node:test'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
 import { validatedDensities } from './region-density.mjs'
 
+test('rail geometry uses one visible source and the detail panel stays in the viewport', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  const styles = await readFile(new URL('../src/components/OpeningTerritoryMap.css', import.meta.url), 'utf8')
+  assert.match(map, /showRail && !rail && data\.edges\.flatMap/u)
+  assert.match(map, /showRail && displayedRail\.map/u)
+  assert.match(styles, /\.territory-map-flat > \.territory-detail \{ position: fixed;/u)
+})
+
 test('projected density covers all 427 source codes and preserves the unrounded area formula', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const source = JSON.parse(await readFile(new URL('../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
@@ -284,6 +292,29 @@ test('government relations come from the canon table and use only defined terms 
   }
 })
 
+test('all map states project founding, government, foreign relations and dated annals from canon', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const states = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  const annals = JSON.parse(await readFile(new URL('../lore/chronology/Century-Annals.json', import.meta.url), 'utf8'))
+  const rows = new Map(states.content.find((node) => node.anchor === 'table').rows.map((row) => [row[0].ko, row]))
+  const prose = new Set(annals.content.filter((node) => node.kind === 'paragraph').map((node) => typeof node.text?.ko === 'string' ? node.text.ko : node.text?.ko?.map((run) => run.text).join('')))
+  for (const state of data.states) {
+    const row = rows.get(state.id)
+    assert.ok(row, state.id)
+    assert.equal(state.founded, row[5].ko, state.id)
+    assert.equal(state.government, row[4].ko, state.id)
+    assert.equal(state.vassals, row[6].ko, state.id)
+    assert.equal(state.religion, row[7].ko, state.id)
+    assert.equal(state.foreignRelations, row[8].ko, state.id)
+    assert.ok(state.chronology.length > 0, state.id)
+    for (const event of state.chronology) {
+      assert.ok(event.text.includes(state.name), state.id)
+      assert.ok(prose.has(event.text), state.id)
+      assert.equal(event.sourceRoute, `/world/Century-Annals#${event.year}년`, state.id)
+    }
+  }
+})
+
 test('World and Subway Layers mounts the opening territory map', async () => {
   const page = await readFile(new URL('../src/pages/ArticlePage.tsx', import.meta.url), 'utf8')
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
@@ -403,4 +434,56 @@ test('offline underground asset preserves observed depths, unknowns and graph me
   assert.match(aliases, /station\.lineIds\.some\(\(lineId\) => primary\.lineIds\.includes\(lineId\)\)/)
   assert.ok(detail.stations['강변']['3-2'])
   assert.ok(detail.stations['강변(동서울터미널)']['3-2'])
+})
+
+test('between-station segments are underground units with a rule-derived control and unknown 2126 passage', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const ledger = JSON.parse(await readFile(new URL('../lore/places/station-control-overrides.json', import.meta.url), 'utf8'))
+  const stationById = new Map(data.stations.map((station) => [station.id, station]))
+  const segmentDeltas = new Map((ledger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
+  assert.equal(data.edges.length, 435)
+  assert.equal(new Set(data.edges.map((edge) => edge.id)).size, 435)
+  for (const edge of data.edges) {
+    assert.equal(edge.id, `segment:${edge.a}~${edge.b}`)
+    assert.equal(edge.passage2126, 'unknown', edge.id)
+    assert.ok(['derived-from-stations', 'control-delta'].includes(edge.control?.source), edge.id)
+    assert.ok(Object.hasOwn(edge.control, 'deltaId'), edge.id)
+    const delta = segmentDeltas.get(edge.id)
+    if (delta) {
+      assert.equal(edge.control.source, 'control-delta', edge.id)
+      assert.deepEqual(edge.control.polityIds, delta.polityIds, edge.id)
+      continue
+    }
+    const a = stationById.get(edge.a).control
+    const b = stationById.get(edge.b).control
+    const sameHolders = [...a.polityIds].sort().join('|') === [...b.polityIds].sort().join('|')
+    if (a.status === 'unknown' || b.status === 'unknown') {
+      assert.equal(edge.control.status, 'unknown', edge.id)
+      assert.deepEqual(edge.control.polityIds, [], edge.id)
+      assert.equal(edge.control.primary, null, edge.id)
+    } else if (sameHolders) {
+      assert.deepEqual(edge.control.polityIds, a.polityIds, edge.id)
+      assert.equal(edge.control.status, a.status, edge.id)
+    } else {
+      assert.equal(edge.control.status, 'contested', edge.id)
+      assert.deepEqual(edge.control.polityIds, [...new Set([...a.polityIds, ...b.polityIds])].sort(), edge.id)
+      assert.equal(edge.control.primary, null, edge.id)
+    }
+  }
+  assert.ok(data.edges.some((edge) => edge.control.status === 'unknown'))
+})
+
+test('surface and underground territory are separate flat views switched explicitly', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  const css = await readFile(new URL('../src/components/OpeningTerritoryMap.css', import.meta.url), 'utf8')
+  assert.match(map, /className="territory-layer-toggle"/)
+  assert.match(map, /aria-pressed=\{layer === 'surface'\}[^>]*>지상 영토</)
+  assert.match(map, /aria-pressed=\{layer === 'underground'\}[^>]*>지하 영토</)
+  assert.match(map, /data-underground-segment=\{edge\.id\}/)
+  assert.match(map, /data-station-area=\{station\.id\}/)
+  assert.match(map, /미배정/)
+  assert.match(map, /2126 통행/)
+  assert.match(css, /\.territory-underground-segment/)
+  assert.doesNotMatch(css, /territory-underground-levels/)
+  assert.doesNotMatch(map, /OrbitControls|data-three-territory-map|undergroundGroup/)
 })
