@@ -469,9 +469,10 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
   const memberIds = [identity.id, ...identity.aliases]
   const memberSurfaces = memberIds.map((id) => {
     const source = sourceMapStations.find((entry) => entry.id === id)
-    return { id, surfaceRegionId: source.control.surfaceRegionId, surfaceRegionName: source.control.surfaceRegionName, polityIds: source.control.polityIds }
+    const { source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds } = source.control
+    return { id, source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds }
   })
-  const holders = new Set(memberSurfaces.flatMap((entry) => entry.polityIds))
+  const holders = new Set(memberSurfaces.map((entry) => `${entry.status}:${entry.primary}:${[...entry.polityIds].sort().join(',')}`))
   const regions = new Set(memberSurfaces.map((entry) => entry.surfaceRegionId))
   return {
     ...station,
