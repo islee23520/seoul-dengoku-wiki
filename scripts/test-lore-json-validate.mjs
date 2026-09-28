@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
-import { spawnSync } from 'node:child_process'
+import { chmodSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { spawn, spawnSync } from 'node:child_process'
 import { join, resolve } from 'node:path'
 import test from 'node:test'
 
@@ -233,5 +233,37 @@ test('a Markdown file next to its JSON authoring document fails in default and s
     }
   } finally {
     rmSync(twin)
+  }
+})
+
+// #279: the schema runner used to read the document from standard input and could wait on the pipe forever.
+test('the schema runner reads the document from its path and never waits on standard input', async () => {
+  const child = spawn('python3', [join(root, 'scripts/lore-json-schema.py'), 'ailments', join(root, 'lore/ailments/Ailments.json')], { cwd: root, stdio: ['pipe', 'pipe', 'pipe'] })
+  let stdout = ''
+  child.stdout.on('data', (chunk) => { stdout += chunk })
+  // Standard input stays open and silent: a runner that reads it would never exit.
+  const exited = new Promise((done) => child.on('exit', (code) => done(code)))
+  const stalled = new Promise((done) => setTimeout(() => done('stalled'), 30000).unref())
+  const outcome = await Promise.race([exited, stalled])
+  child.kill('SIGKILL')
+  assert.equal(outcome, 0, `schema runner ${outcome === 'stalled' ? 'waited on standard input' : `exited ${outcome}: ${stdout}`}`)
+})
+
+test('a stalled schema check fails with its file label instead of hanging', () => {
+  mkdirSync(evidence, { recursive: true })
+  const dir = mkdtempSync(join(evidence, 'stalled-schema-'))
+  try {
+    const python = join(dir, 'python3')
+    writeFileSync(python, '#!/bin/sh\nexec sleep 30\n')
+    chmodSync(python, 0o755)
+    const result = spawnSync(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), 'lore/ailments/Ailments.json'], {
+      cwd: root, encoding: 'utf8', timeout: 20000,
+      env: { ...process.env, PATH: `${dir}:${process.env.PATH}`, LORE_JSON_SCHEMA_TIMEOUT_MS: '500' },
+    })
+    assert.equal(result.error, undefined, 'the validator itself hung')
+    assert.equal(result.status, 1, result.stdout)
+    assert.match(result.stderr, /^E_SCHEMA: lore\/ailments\/Ailments\.json: schema check did not finish within 500 ms$/mu)
+  } finally {
+    rmSync(dir, { recursive: true, force: true })
   }
 })
