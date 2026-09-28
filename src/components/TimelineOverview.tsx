@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 type RelatedDocument = { title: string; route: string }
-type TimelineYear = { year: number; summary: string; pressure: string; decision: string; immediate: string; aftermath: string; sourceRoute: string; relatedDocuments: RelatedDocument[] }
+type RegionalEvent = { title: string; prose: string; sourceRoute: string }
+type TimelineYear = { year: number; summary: string; pressure: string; decision: string; immediate: string; aftermath: string; regionalEvents?: RegionalEvent[]; sourceRoute: string; relatedDocuments: RelatedDocument[] }
 type TimelineOverviewData = { schema: string; years: TimelineYear[] }
 
 const periods = [
@@ -52,13 +53,19 @@ export default function TimelineOverview() {
         {years.map((entry) => (
           <li key={entry.year} className="timeline-overview-year" id={`overview-${entry.year}`}>
             <div className="timeline-overview-year-heading"><Link to={entry.sourceRoute}>{entry.year}년</Link><span>{entry.relatedDocuments.length - 1}개 정본 연결</span></div>
-            <p className="timeline-overview-summary">{entry.summary}</p>
-            <dl className="timeline-causality">
+            {entry.pressure && <p className="timeline-overview-summary">{entry.summary}</p>}
+            {entry.pressure && <dl className="timeline-causality">
               <div><dt>압력</dt><dd>{entry.pressure}</dd></div>
               <div><dt>결정</dt><dd>{entry.decision}</dd></div>
               <div><dt>즉시</dt><dd>{entry.immediate}</dd></div>
               <div><dt>후속</dt><dd>{entry.aftermath}</dd></div>
-            </dl>
+            </dl>}
+            {(entry.regionalEvents?.length ?? 0) > 0 && <section aria-label={`${entry.year}년 지역 사건`}>
+              {entry.regionalEvents?.map((event) => <article key={event.sourceRoute}>
+                <h3><Link to={event.sourceRoute}>{event.title}</Link></h3>
+                <p className="timeline-overview-summary">{event.prose}</p>
+              </article>)}
+            </section>}
             <nav aria-label={`${entry.year}년 연결 문서`} className="timeline-related-documents">
               {entry.relatedDocuments.map((document) => <Link key={document.route} to={document.route}>{document.title}</Link>)}
             </nav>

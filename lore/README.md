@@ -5,7 +5,7 @@
 ## 1. 개요
 - [용어 사전 (Glossary)](/world/Glossary) — `glossary.json`에서 생성
 - [기계 판독용 용어 사전 (JSON)](glossary.json)
-- [기동권 이탈](overview/World-Unbinding.md)
+- [대정전](overview/World-Unbinding.md)
 
 ## 2. 사람과 기체
 - [사람과 기체](people-and-machines/People-and-Machines.md)

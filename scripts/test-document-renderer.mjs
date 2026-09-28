@@ -38,6 +38,20 @@ test('rendered heading and year anchors retain timeline destinations', async () 
   ]), /^<p id="2126년">2126년 시작<\/p><p>2126년 반복<\/p>$/)
 })
 
+test('regional timeline links reach unique anchors in both rendered locales', async () => {
+  const timeline = JSON.parse(await readFile(new URL('../public/timeline-overview.json', import.meta.url), 'utf8'))
+  const routes = timeline.years.flatMap((entry) => entry.regionalEvents.map((event) => event.sourceRoute))
+  assert.equal(routes.length, 16)
+  for (const localeRoot of ['world', 'world-en']) {
+    const page = JSON.parse(await readFile(new URL(`../src/generated/${localeRoot}/Century-Annals.json`, import.meta.url), 'utf8'))
+    const html = render(page.blocks)
+    for (const route of routes) {
+      const anchor = decodeURIComponent(route.split('#')[1])
+      assert.equal(html.split(`id="${anchor}"`).length - 1, 1, `${localeRoot}: ${route}`)
+    }
+  }
+})
+
 test('actual document renderer exposes aliases and natural headings in both locales', () => {
   const document = { domain: 'bestiary', content: [
     { kind: 'heading', depth: 2, anchor: 'entry', publicAnchors: ['g01e01', 'old-name'], text: { ko: '괴물 이름', en: 'Monster Name' } },

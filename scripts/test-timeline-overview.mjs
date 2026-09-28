@@ -1,9 +1,59 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import test from 'node:test'
+import { buildTimelineYears } from './timeline-overview.mjs'
 
 const readJson = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
 const koText = (leaf) => typeof leaf === 'string' ? leaf : leaf.map((run) => run.text).join('')
+
+test('regional events retain all peninsula prose without mixing Seoul causal summaries', async () => {
+  const annals = await readJson('../lore/chronology/Century-Annals.json')
+  const years = buildTimelineYears(annals.content, () => [])
+  const seoulOnly = buildTimelineYears(annals.content.filter((block) => !block.anchor?.startsWith('peninsula-')), () => [])
+  const headings = annals.content.filter((block) => block.kind === 'heading' && block.anchor?.startsWith('peninsula-'))
+  const events = years.flatMap((entry) => entry.regionalEvents)
+  assert.equal(headings.length, 16)
+  assert.equal(events.length, headings.length)
+  for (const heading of headings) {
+    const event = events.find((candidate) => candidate.sourceRoute === `/world/Century-Annals#${heading.publicAnchors[0]}`)
+    assert.equal(event?.title, koText(heading.text.ko))
+    const paragraph = annals.content.find((block) => block.anchor === `${heading.anchor}-p`)
+    assert.equal(event?.prose, koText(paragraph.text.ko))
+  }
+  assert.deepEqual(years.map((entry) => entry.year), seoulOnly.map((entry) => entry.year))
+  for (const entry of years) {
+    const original = seoulOnly.find((candidate) => candidate.year === entry.year)
+    for (const key of ['pressure', 'decision', 'immediate', 'aftermath']) assert.equal(entry[key], original[key], `${entry.year} ${key}`)
+    if (original.summary) assert.equal(entry.summary, original.summary, `${entry.year} summary`)
+  }
+  for (const year of [2028, 2032, 2036]) {
+    const entry = years.find((candidate) => candidate.year === year)
+    assert.ok(entry.pressure)
+    assert.ok(entry.regionalEvents.length)
+    assert.ok(!entry.summary.includes(entry.regionalEvents[0].prose))
+    assert.ok(!entry.aftermath.includes(entry.regionalEvents[0].prose.split('.')[0]))
+  }
+  const honam = years.find((entry) => entry.year === 2087)
+  assert.equal(honam.pressure, '')
+  assert.equal(honam.summary, honam.regionalEvents[0].prose)
+  assert.ok(honam.summary.length >= 40)
+})
+
+test('regional event grouping resets at another section and years remain sorted', () => {
+  const heading = (depth, text, anchor) => ({ kind: 'heading', depth, text: { ko: text }, anchor })
+  const paragraph = (text) => ({ kind: 'paragraph', text: { ko: text } })
+  const years = buildTimelineYears([
+    heading(3, '2087년'), heading(4, '호남', 'peninsula-2087-test'), paragraph('씨앗을 남긴다.'), paragraph('다음 배를 기다린다.'),
+    heading(4, '서울'), paragraph('서울의 별도 사건이다.'),
+    heading(2, '다음 시대'), paragraph('연도 바깥의 글이다.'),
+    heading(3, '2028년'), paragraph('구로의 기록이다.'),
+  ], () => [])
+  assert.deepEqual(years.map((entry) => entry.year), [2028, 2087])
+  assert.equal(years[1].regionalEvents[0].prose, '씨앗을 남긴다. 다음 배를 기다린다.')
+  assert.equal(years[1].summary, '서울의 별도 사건이다.')
+  assert.equal(years[0].aftermath, '구로의 기록이다.')
+  assert.equal(years[0].regionalEvents.length, 0)
+})
 
 test('timeline overview has one causal summary for every year heading in the Century-Annals canon', async () => {
   const data = await readJson('../public/timeline-overview.json')
@@ -19,7 +69,11 @@ test('timeline overview has one causal summary for every year heading in the Cen
   assert.ok(data.years.every((entry, index) => index === 0 || entry.year > data.years[index - 1].year))
   assert.ok(data.years.every((entry) => entry.year >= 2026 && entry.year <= 2126))
   assert.ok(data.years.every((entry) => entry.summary.length >= 40))
-  assert.ok(data.years.every((entry) => entry.pressure.length > 0 && entry.decision.length > 0 && entry.immediate.length > 0 && entry.aftermath.length > 0))
+  assert.ok(data.years.every((entry) =>
+    (entry.pressure.length > 0 && entry.decision.length > 0 && entry.immediate.length > 0 && entry.aftermath.length > 0)
+    || (entry.regionalEvents.length > 0 && entry.summary === entry.regionalEvents.map((event) => event.prose).join(' '))))
+  assert.deepEqual(data.years, buildTimelineYears(annals.content, () => [])
+    .map((entry, index) => ({ ...entry, relatedDocuments: data.years[index].relatedDocuments })))
   assert.ok(data.years.every((entry) => entry.sourceRoute === `/world/Century-Annals#${entry.year}년`))
   assert.ok(data.years.every((entry) => entry.relatedDocuments.length >= 1))
 })
@@ -30,6 +84,16 @@ test('every timeline source anchor exists on the published Century-Annals page',
   const headingText = (node) => node.value ?? (node.children ?? []).map(headingText).join('')
   const anchors = new Set(page.blocks.filter((block) => block.type === 'heading').map((block) => headingText(block).trim()))
   for (const entry of data.years) assert.ok(anchors.has(`${entry.year}년`), entry.sourceRoute)
+  const explicitAnchors = new Set()
+  const visit = (node) => {
+    const anchor = node.type === 'html' && node.value?.match(/^<a id="([^"]+)">$/u)?.[1]
+    if (anchor) explicitAnchors.add(anchor)
+    for (const child of node.children ?? []) visit(child)
+  }
+  page.blocks.forEach(visit)
+  for (const event of data.years.flatMap((entry) => entry.regionalEvents)) {
+    assert.ok(explicitAnchors.has(event.sourceRoute.split('#')[1]), event.sourceRoute)
+  }
 })
 
 test('timeline overview cross-links the current 16 states and world canon', async () => {
