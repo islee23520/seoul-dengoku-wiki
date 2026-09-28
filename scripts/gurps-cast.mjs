@@ -578,10 +578,10 @@ function traitCp(t) {
   return null
 }
 
-function finish(record) {
+export function calculateDraft(record, { directSkillCp = false } = {}) {
   const cr = record.traits.some((t) => t.rule === 'combat-reflexes')
   record.secondary = secondary(record.attributes, cr)
-  for (const s of record.skills) { s.cp = TIERS[s.tier]; s.level = skillLevel(record.attributes, record.secondary, s.attr, s.diff, s.cp) }
+  for (const s of record.skills) { if (!directSkillCp) s.cp = TIERS[s.tier]; s.level = skillLevel(record.attributes, record.secondary, s.attr, s.diff, s.cp) }
   const attrCp = Object.values(record.attributes).reduce((n, a) => n + a.cp, 0)
   const adv = record.traits.filter((t) => t.kind === 'advantage').reduce((n, t) => n + t.cp, 0)
   const dis = record.traits.filter((t) => t.kind === 'disadvantage').reduce((n, t) => n + t.cp, 0)
@@ -594,6 +594,7 @@ function finish(record) {
   record.baseline = spent === 0
   return record
 }
+const finish = calculateDraft
 
 const SKILL_ORDER = Object.keys(SKILLS)
 export function build(root = ROOT) {
