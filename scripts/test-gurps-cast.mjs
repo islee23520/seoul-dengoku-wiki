@@ -157,7 +157,7 @@ const LEADERS = {
   K144: [11, 28, 75, ['Administration B']],
   K169: [12, 64, 75, ['Administration B', 'Diplomacy B', 'Leadership C', 'Breath Control C']],
   K194: [12, 56, 75, ['Administration B', 'Merchant B']],
-  K219: [11, 40, 75, ['Administration B', 'Accounting B', 'Electronics Operation/TL? (Communications) C']],
+  K219: [11, 44, 75, ['Administration B', 'Electronics Operation/TL? (Communications) B', 'Accounting B']],
   K245: [11, 28, 75, ['Administration B']],
   K271: [11, 32, 75, ['Breath Control B', 'Administration C']],
   K296: [11, 32, 75, ['Administration B', 'Breath Control C']],
