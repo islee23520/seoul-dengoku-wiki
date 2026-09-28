@@ -439,9 +439,11 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and origi
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
   const expectedMartial = new Map(Object.entries({
-    '없음. 생업만.': 'K219 K220 K223 K224 K226 K227 K229 K230 K232 K234 K235 K236 K237 K240 K241 K242 K432 K448 K480 K496 K528 K544 K576 K592 K624 K640 K672 K688 K720 K736 K768 K784 K816 K832 K864 K880 K912 K928 K960 K976 K244 K221 K222 K231 K233 K238 K239 K243',
+    '없음. 생업만.': 'K220 K223 K224 K226 K227 K229 K230 K232 K234 K235 K236 K237 K240 K241 K242 K432 K448 K480 K496 K528 K544 K576 K592 K624 K640 K672 K688 K720 K736 K768 K784 K816 K832 K864 K880 K912 K928 K960 K976 K244 K221 K222 K231 K233 K238 K239 K243',
     '차륜강체공': 'K225 K464 K512 K560 K608 K656 K704 K752 K800 K848 K896 K944 K992',
     '호위철벽진': 'K228',
+    // 최지우는 Core-Characters 판본을 따른다(소유자 결정 2026-09-28).
+    '강단호명법': 'K219',
   }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
   assert.equal(expectedMartial.size, 62)
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
@@ -480,7 +482,7 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and origi
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-09#'), id)
     const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
       : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(차륜강체공|호위철벽진|없음\. 생업만\.)/u)?.[1]
+    const martial = martialText.match(/무공\.\s*(차륜강체공|호위철벽진|강단호명법|없음\. 생업만\.)/u)?.[1]
     assert.equal(martial, expectedMartial.get(id), id)
     assert.ok(detail.sections['무공']?.startsWith(martial), id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)

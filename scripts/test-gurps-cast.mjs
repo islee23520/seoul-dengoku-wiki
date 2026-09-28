@@ -5,6 +5,7 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import test from 'node:test'
+import * as G from './gurps-cast.mjs'
 import { ABILITY_CAP, BANDS, OUT, ROOT, TIERS, bandFor, build, serialize, stepFor, verify } from './gurps-cast.mjs'
 
 const raw = readFileSync(join(ROOT, OUT), 'utf8')
@@ -113,6 +114,97 @@ test('Q8 C: 카드에 적힌 언어를 0 CP로 싣고 첫 언어만 Native다', 
   assert.deepEqual(find(doc, 'K1003').languages.map((l) => l.name), ['한국어'])
 })
 
+// G2 Q9 16국 수장 검토(소유자 결정 2026-09-28). L0: 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다.
+const CORE = 'lore/characters/Core-Characters.json'
+const SAME_EVENT = [
+  ['K194', '가짜 약이 경매에 올랐을 때, 오해린은 상자를 봉한 채 값을 올렸다.', '오해린은 상자를 봉한 채 값을 올렸다.', '/content/78/text/ko'],
+  ['K296', '정유라의 회의 호송이 열리기 전, 장세화는 일반 열차와 의료열차의 운행 시간을 계절별로 나눠 배차표에 적었다.', '협의 호송이 열리기 전, 장세화는 일반 열차와 의료열차의 운행 시간을 계절별로 나눠 배차표에 적었다.', '/content/110/text/ko'],
+  ['K398', '세 계약이 동시에 도착했을 때, 정유라는 세 장을 겹쳐 종료조건만 남기고 나머지를 봉했다.', '정유라는 세 장을 겹쳐 종료조건만 남기고 나머지를 봉하였다.', '/content/150/text/ko'],
+  ['K348', '북부 정수가 시외에서 끊겼다는 소문이 돌았을 때, 고서준은 능선 통행을 허가제로 올렸다.', '고서준은 능선 통행을 허가제로 올렸다.', '/content/126/text/ko'],
+  ['K423', '취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다.', '유언 3장을 총회 회의실에 공개하였다.', '/content/156/text/ko'],
+]
+
+test('L0: 같은 사건의 두 판본은 같은 사건으로, 다른 사건은 다른 사건으로 판정한다', () => {
+  assert.equal(typeof G.sameEvent, 'function')
+  for (const [, a, b] of SAME_EVENT) assert.ok(G.sameEvent(a, b), `${a} / ${b}`)
+  assert.ok(G.sameEvent('펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.', '펌프 정비 공정의 원본 함을 수문국과 공동 봉인하는 데 합의하였다.'))
+  assert.ok(G.sameEvent('행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 시민권 줄로 옮겼다.', '행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 신도 명부 줄로 옮겼다.'))
+  assert.ok(!G.sameEvent('흉작 소문이 저울에 닿기 전, 남윤경은 비상배급 칸을 열고 공개 경매를 하루 미뤘다.', '창고를 봉쇄하는 상인을 공개 경매와 비공개 비상배급으로 동시에 누른다.'))
+  assert.ok(!G.sameEvent('취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다.', '펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.'))
+})
+
+test('L0: 두 판본 중 하나만 능력 근거로 두고, 다른 판본은 같은 기술의 보조 인용으로 남는다', () => {
+  for (const [id, first, second] of SAME_EVENT) {
+    const p = find(doc, id)
+    const iq = p.attributes.IQ.evidence.map((e) => e.quote)
+    assert.ok(iq.includes(first), `${id} 첫 판본이 IQ 근거에 없음`)
+    assert.ok(!iq.includes(second), `${id} 둘째 판본이 IQ 근거에 남음`)
+    assert.ok(p.skills.some((s) => s.evidence.some((e) => e.quote === second)), `${id} 둘째 판본이 기술 인용에서 빠짐`)
+  }
+  for (const p of doc.people) for (const [a, at] of Object.entries(p.attributes)) {
+    if (at.rule !== 'card-actions') continue
+    at.evidence.forEach((e, k) => assert.ok(!at.evidence.slice(0, k).some((f) => f.path !== e.path && G.sameEvent(f.quote, e.quote)), `${p.id} ${a}: 같은 사건을 두 카드에서 셈 «${e.quote}»`))
+  }
+})
+
+// 수장별 검토 적용 뒤의 값(leader-questions.md). 최지우(L09)는 Core-Characters 판본을 따른다(C).
+const LEADERS = {
+  K001: [12, 64, 75, ['Administration B', 'Observation B', 'Politics C', 'Breath Control C']],
+  K029: [12, 56, 75, ['Diplomacy B', 'Administration C', 'Breath Control C']],
+  K1005: [10, 8, 75, ['Administration B']],
+  K423: [12, 56, 75, ['Administration B', 'Diplomacy C', 'Breath Control C']],
+  K115: [12, 60, 75, ['Administration B', 'Diplomacy B', 'Shield C']],
+  K144: [11, 28, 75, ['Administration B']],
+  K169: [12, 64, 75, ['Administration B', 'Diplomacy B', 'Leadership C', 'Breath Control C']],
+  K194: [12, 56, 75, ['Administration B', 'Merchant B']],
+  K219: [11, 40, 75, ['Administration B', 'Accounting B', 'Electronics Operation/TL? (Communications) C']],
+  K245: [11, 28, 75, ['Administration B']],
+  K271: [11, 32, 75, ['Breath Control B', 'Administration C']],
+  K296: [11, 32, 75, ['Administration B', 'Breath Control C']],
+  K322: [12, 60, 75, ['Physician/TL? B', 'Leadership B', 'Merchant C']],
+  K348: [12, 64, 75, ['Observation B', 'Leadership B', 'Administration C', 'Shield C']],
+  K373: [12, 56, 75, ['Merchant B', 'Diplomacy B']],
+  K398: [12, 56, 75, ['Accounting B', 'Administration C', 'Diplomacy C']],
+}
+test('수장 검토: 16국 수장의 IQ·사용 CP·총점·기술이 소유자 결정 선택지와 같다', () => {
+  for (const [id, [iq, spent, total, skills]] of Object.entries(LEADERS)) {
+    const p = find(doc, id)
+    assert.equal(p.attributes.IQ.value, iq, `${id} IQ`)
+    for (const a of ['ST', 'DX', 'HT']) assert.equal(p.attributes[a].value, 10, `${id} ${a}`)
+    assert.equal(p.cp.spent, spent, `${id} spent`)
+    assert.equal(p.cp.total, total, `${id} total`)
+    assert.deepEqual(p.skills.map((s) => `${s.name} ${s.tier}`), skills, `${id} skills`)
+  }
+})
+
+test('수장 검토: 남윤경의 시설 문장은 근거가 아니고, 배우진 Mechanic·박태겸 Observation은 빠진다', () => {
+  const nam = find(doc, 'K373')
+  const all = [...Object.values(nam.attributes).flatMap((a) => a.evidence), ...nam.skills.flatMap((s) => s.evidence)]
+  assert.ok(!all.some((e) => e.quote === '주교회의 청사 광진 면목로는 바깥 창고로만 남긴다.'))
+  assert.ok(!find(doc, 'K115').skills.some((s) => s.name.startsWith('Mechanic')))
+  assert.ok(!find(doc, 'K169').skills.some((s) => s.name === 'Observation'))
+  const politics = find(doc, 'K001').skills.find((s) => s.name === 'Politics')
+  assert.deepEqual([politics.attr, politics.diff, politics.cp, politics.level], ['IQ', 'A', 4, 13])
+})
+
+// IQ 근거 목록을 바꾸고 IQ에 걸린 수치를 모두 다시 맞춘다(L0 위반만 남기려는 변이용).
+function setIQ(p, evidence) {
+  const at = p.attributes.IQ
+  const value = 10 + Math.min(3, evidence.length)
+  const delta = value - at.value
+  at.evidence = evidence
+  at.value = value
+  at.cp = (value - 10) * 20
+  p.secondary.Will += delta
+  p.secondary.Per += delta
+  for (const s of p.skills) if (['IQ', 'Per', 'Will'].includes(s.attr)) s.level += delta
+  p.cp.attributes += delta * 20
+  p.cp.spent += delta * 20
+  p.cp.unspent = Math.max(0, 75 - p.cp.spent)
+  p.cp.total = p.cp.spent + p.cp.unspent
+  p.band = bandFor(p.cp.total)[0]
+}
+
 const MUTATIONS = [
   ['기술 CP를 등급과 다르게(8→12, 수준 그대로)', (d) => { d.people[sampleIndex].skills[0].cp = 12 }],
   ['기술 등급만 B→C로(CP 그대로)', (d) => { d.people[sampleIndex].skills[0].tier = 'C' }],
@@ -156,6 +248,8 @@ const MUTATIONS = [
   ['언어에 숙련도 CP', (d) => { find(d, 'K1012').languages[1].cp = 2 }],
   ['둘째 언어를 Native로', (d) => { find(d, 'K1012').languages[1].level = 'Native' }],
   ['카드에 없는 언어 추가', (d) => { const p = find(d, 'K1011'); p.languages.push({ ...p.languages[0], name: '영어', level: null }) }],
+  ['L0: 같은 사건의 다른 판본을 다시 능력 근거로(장세화 IQ 12)', (d) => { const p = find(d, 'K296'); const ev = p.attributes.IQ.evidence.filter((e) => e.path !== CORE); setIQ(p, [...ev, { path: CORE, pointer: SAME_EVENT[1][3], quote: SAME_EVENT[1][2] }]) }],
+  ['L0: 같은 사건의 다른 판본을 다시 능력 근거로(고서준 IQ 13)', (d) => { const p = find(d, 'K348'); const ev = p.attributes.IQ.evidence.filter((e) => e.quote !== SAME_EVENT[3][2]); setIQ(p, [...ev, { path: CORE, pointer: SAME_EVENT[3][3], quote: SAME_EVENT[3][2] }]) }],
 ]
 
 for (const [label, mutate] of MUTATIONS) {
