@@ -77,9 +77,10 @@ export function createDraftStore({ root = defaultRoot } = {}) {
       const fields = parseFields(input).fields
       let personId
       if (input.base) {
-        const source = JSON.parse(await readFile(join(ROOT, 'lore/name-pools/gurps-cast.json'), 'utf8'))
-        const person = source.people.find((entry) => entry.url === `/people/${input.base.personId}`)
+        const source = await readFile(join(ROOT, 'lore/name-pools/gurps-cast.json'), 'utf8')
+        const person = JSON.parse(source).people.find((entry) => entry.url === `/people/${input.base.personId}`)
         if (!person || person.name !== fields.name) fail('DRAFT_IDENTITY', '원본 인물과 초안의 신원이 다르다')
+        if (input.base.sha256 && input.base.sha256 !== hash(source)) fail('DRAFT_CONFLICT', '원본 인물 자료의 해시가 바뀌었다')
         personId = person.id
       }
       const draft = await this.create({ personId, fields, provenance: input.provenance ?? {} })
