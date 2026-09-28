@@ -11,6 +11,8 @@ test('all canonical people are indexed and linked to a canon card', async () => 
   const sourceRoutes = [...catalog.matchAll(/"sourceRoute": "([^"]+)"/g)].map((match) => match[1])
   const detailRoutes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
   assert.equal(count, 1018)
+  const countModule = await readFile(new URL('../src/generated/peopleCount.ts', import.meta.url), 'utf8')
+  assert.equal(Number(countModule.match(/peopleCount = (\d+)/)?.[1]), count)
   assert.equal(names.length, 1018)
   assert.equal(new Set(names).size, 1018)
   assert.equal(sourceRoutes.length, 1018)
