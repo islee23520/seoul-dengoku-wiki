@@ -37,10 +37,6 @@
     "test:person-id": "node --test lore/name-pools/verify-person-id-candidates.mjs lore/name-pools/verify-person-id-registry.mjs",
     "test:mongo-load": "node --test scripts/test-mongo-load.mjs",
     "test:gurps": "node --test scripts/test-gurps-cast.mjs",
-    "test:sheet-local": "node --test scripts/sheet-local/test-drafts.mjs scripts/sheet-local/test-pr.mjs scripts/sheet-local/test-submit.mjs",
-    "sheet:mcp": "node scripts/sheet-local/mcp.mjs",
-    "sheet:mcp:http": "node scripts/sheet-local/http.mjs",
-    "sheet:pr": "node scripts/sheet-local/pr.mjs",
     "db:load": "node scripts/mongo-load.mjs"
   },
   "dependencies": {
