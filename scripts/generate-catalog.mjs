@@ -512,10 +512,21 @@ const segmentControl = (segmentId, a, b) => {
   if ([...a.polityIds].sort().join('|') === [...b.polityIds].sort().join('|')) return { source: 'derived-from-stations', deltaId: null, status: a.status, polityIds: a.polityIds, primary: a.primary }
   return { source: 'derived-from-stations', deltaId: null, status: 'contested', polityIds: [...new Set([...a.polityIds, ...b.polityIds])].sort(), primary: null }
 }
+// 2126 통행(소유자 결정 2026-09-28): 양 끝 점유 세력이 같으면 통행, 다르면 검문 통행이다.
+// 한강을 건너는 구간은 구간마다 소유자 결정을 받을 때까지 unknown으로 둔다. 강 북쪽·남쪽은 역의 자치구로 가른다.
+const HAN_NORTH_DISTRICTS = new Set(['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구'])
+const HAN_SOUTH_DISTRICTS = new Set(['강서구', '양천구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구'])
+const stationDistrictById = new Map(mapStations.map((station) => [station.id, station.district]))
+const crossesHan = (a, b) => {
+  const [da, db] = [stationDistrictById.get(a), stationDistrictById.get(b)]
+  return (HAN_NORTH_DISTRICTS.has(da) && HAN_SOUTH_DISTRICTS.has(db)) || (HAN_SOUTH_DISTRICTS.has(da) && HAN_NORTH_DISTRICTS.has(db))
+}
+const passage2126 = (edge, control) => crossesHan(edge.a, edge.b) ? 'unknown' : control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
 const projectedEdges = seoulGraph.edges.map((edge) => ({ a: canonicalStationId(edge.a), b: canonicalStationId(edge.b), lineIds: stationLines.get(edge.a).filter((id) => stationLines.get(edge.b).includes(id)) }))
 const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
   const id = `segment:${edge.a}~${edge.b}`
-  return { ...edge, id, control: segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b)), passage2126: 'unknown' }
+  const control = segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b))
+  return { ...edge, id, control, passage2126: passage2126(edge, control) }
 })
 for (const segmentId of segmentControlOverrides.keys()) if (!mapEdges.some((edge) => edge.id === segmentId)) throw new Error(`E_SEGMENT_CONTROL_UNKNOWN_SEGMENT:${segmentId}`)
 const polygonMetrics = (points) => {
