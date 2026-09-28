@@ -4,7 +4,7 @@
 
 ## 표기 원칙
 
-- 한국어 정본의 확정된 이름을 그대로 쓴다. 외래어·한자어 표기는 확인된 정본 표기만 사용하며 미정 칸을 추측으로 채우지 않는다. 근거: [Writing-Rules](Writing-Rules.md), [용어 사전](../Glossary.md).
+- 한국어 정본의 확정된 이름을 그대로 쓴다. 외래어·한자어 표기는 확인된 정본 표기만 사용하며 미정 칸을 추측으로 채우지 않는다. 근거: [Writing-Rules](Writing-Rules.md), [용어 사전](/world/Glossary).
 - 공식 직함은 국가별 관직표의 티어를 따르고 무공 품계·생업 별칭과 섞지 않는다. 근거: [관직](../offices/Offices-and-Ranks.md#국가별-관직표), [무공](../culture/Martial-Paths.md#유파와-나라).
 - 실존 이름은 사실명으로만 기록하고 상표·기관명을 창작 권리로 주장하지 않는다. 창작명은 출처를 연결하고, 출처·권리 확인이 필요한 이름은 보류한다. 폐기형은 공개 현행 표기로 쓰지 않는다. 근거: [Writing-Rules](Writing-Rules.md), [로어 작업 규칙](../AGENTS.md).
 
@@ -33,17 +33,16 @@
 
 ## 무공
 
-| 정식명 | 한자 표기 | 생활 별칭 | 정본 |
-|---|---|---|---|
-| 수문호흡법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 차륜강체공 | 미정 | 차륜망치 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 강단호명법 | 미정 | 강단발 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 호위철벽진 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 기록단절법 | 미정 | — | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 죽검연환법 | 미정 | 죽대손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 연각권법 | 미정 | 매트손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 공탄총검법 | 미정 | 빈탄손 | [무공](../culture/Martial-Paths.md#아홉-유파) |
-| 감응조준법 | 미정 | 렌즈숨 | [무공](../culture/Martial-Paths.md#아홉-유파) |
+| 정식명 | 한자 표기 | 정본 |
+|---|---|---|
+| 수문호흡법 | 미정 | [무공](../culture/Martial-Paths.md#여덟-유파) |
+| 차륜강체공 | 미정 | [무공](../culture/Martial-Paths.md#여덟-유파) |
+| 강단호명법 | 미정 | [무공](../culture/Martial-Paths.md#여덟-유파) |
+| 호위철벽진 | 미정 | [무공](../culture/Martial-Paths.md#여덟-유파) |
+| 죽검연환법 | 미정 | [무공](../culture/Martial-Paths.md#여덟-유파) |
+| 연각권법 | 미정 | [무공](../culture/Martial-Paths.md#여덟-유파) |
+| 총검술 | 미정 | [무공](../culture/Martial-Paths.md#여덟-유파) |
+| 감응조준법 | 미정 | [무공](../culture/Martial-Paths.md#여덟-유파) |
 
 한자 원문은 현재 정본에 없으므로 미정이다. 개방 무공은 유파가 아닌 강호 갈래이며 정식 유파명은 미정이다. 근거: [무공](../culture/Martial-Paths.md#개방-무공).
 
@@ -88,4 +87,4 @@
 | 창세 이야기 | 근거 없는 조어로 폐기 | [Writing-Rules](Writing-Rules.md) |
 | 창세의 첫 줄 | 근거 없는 조어로 폐기 | [Writing-Rules](Writing-Rules.md) |
 
-`구술로만`, `창세의 첫 급수협약`, `창세는 햇수 없는 구술`은 기존 조어 게이트가 검사한다. 근거: [Writing-Rules](Writing-Rules.md), [`gate.mjs`](../../wiki/scripts/gate.mjs).
+`구술로만`, `창세의 첫 급수협약`, `창세는 햇수 없는 구술`은 기존 조어 게이트가 검사한다. 근거: [Writing-Rules](Writing-Rules.md), [`gate.mjs`](../../scripts/gate.mjs).

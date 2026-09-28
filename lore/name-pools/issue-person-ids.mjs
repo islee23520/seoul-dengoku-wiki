@@ -3,12 +3,14 @@
 // 계약 (schema: wiki-person-id-registry.v1)
 // - K001–K1010은 2026-09-25 승인 그대로 보존한다. 2026-09-26 소유자가 회랑 여섯 명의
 //   값·순서와 1016명 확장 계약을 승인해 신규 입력 해시를 재승인했다.
+//   2026-09-28 초안 PR은 지연희·서하진(K1017–K1018)을 발급하고 소유자가 최종 두 입력 해시를 승인했다.
+//   2026-09-28 초안 PR은 박성수(K1019)를 발급한다. 소유자가 최종 두 입력 해시를 승인했다.
 //   입력 두 개의 SHA-256이 승인각과 하나라도 다르면 즉시 실패한다 (fail closed — 추측 발급 금지).
 //     · lore/name-pools/values-cast.json 최종 파일 바이트 → APPROVED.inputSha256
 //     · lore/name-pools/person-id-candidates.json → APPROVED.candidatesSha256
 //   승인된 title 정정과 신규 3명은 최종 파일 해시에 포함한다.
 // - K001–K422은 후보 파일의 existingK 스냅숏을 그대로 옮긴다 (재배치·이름 변경 금지).
-// - K423–K1016은 후보 ordinal 순서 그대로 발급한다: ordinal 1 → K423 … ordinal 594 → K1016.
+// - K423–K1019는 후보 ordinal 순서 그대로 발급한다: ordinal 1 → K423 … ordinal 597 → K1019.
 // - 무소속 카드에 안정 캐릭터 ID가 이미 있는 후보(조재표 unaffiliated-jaepyo-jo, 이연 iyen)도
 //   K를 받고 기존 ID는 aliases가 된다 (owner 결정, 2026-09-22).
 // - 재생성은 항상 바이트 단위로 같아야 한다 (멱등). --check는 커밋된 파일과의 바이트 비교다.
@@ -24,23 +26,23 @@ import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { readRendered } from "../../scripts/lore-read-rendered.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
 const VALUES_PATH = path.join(REPO, "lore", "name-pools", "values-cast.json");
 const CANDIDATES_PATH = path.join(REPO, "lore", "name-pools", "person-id-candidates.json");
-const UNAFFILIATED_PATH = path.join(REPO, "lore", "characters", "Cast-Unaffiliated.md");
 const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 
 export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
-  approvedAt: "2026-09-26",
-  ownerRef: "2026-09-26 회랑 6명 수치·성별·K1011–K1016 및 최종 두 입력 해시 승인",
-  inputSha256: "c785d729cdee59fbe196be50bb4ecb883ea5e289ebc68545796144dc23240ef7",
-  candidatesSha256: "804027d2efdf5e864c0728a672ad87e9200f6c3866be88d40df61f6a97acbeef",
+  approvedAt: "2026-09-28",
+  ownerRef: "2026-09-28 박성수 K1019 발급 및 최종 두 입력 해시 승인",
+  inputSha256: "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
+  candidatesSha256: "d2b9df48b05a1e620a2ae369d1b84fc0ffdbc869d88fa8a11ebc714c9f69a5cf",
 };
-export const FROZEN = { existingK: 422, issued: 594, total: 1016 };
+export const FROZEN = { existingK: 422, issued: 597, total: 1019 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
@@ -84,7 +86,7 @@ export function loadApprovedContext() {
     valuesBytes,
     candidatesBytes,
     candidatesJson: JSON.parse(candidatesBytes.toString("utf8")),
-    aliasMap: loadStableNonKIds(readFileSync(UNAFFILIATED_PATH, "utf8")),
+    aliasMap: loadStableNonKIds(readRendered(path.join(REPO, "lore"), "characters", "Cast-Unaffiliated")),
   };
 }
 
@@ -150,7 +152,7 @@ export function validateRegistry(registry, ctx) {
     v.push(`개수 불변식 위반: ${registry.existingKCount} + ${registry.issuedCount} ≠ ${registry.totalPeople}`);
   }
 
-  // id는 전부 유일하고 K001..K1016 연속·오름차순이어야 한다 (기존 K 재사용 금지 포함).
+  // id는 전부 유일하고 K001..K1019 연속·오름차순이어야 한다 (기존 K 재사용 금지 포함).
   const ids = persons.map((p) => (p && p.id) || null);
   if (new Set(ids).size !== ids.length) v.push("id가 중복된다");
   ids.forEach((id, i) => {
@@ -166,7 +168,7 @@ export function validateRegistry(registry, ctx) {
     }
   });
 
-  // K423–K1010은 후보 ordinal 순서 그대로 발급 (ordinal 1 → K423 … 588 → K1010).
+  // K423–K1019는 후보 ordinal 순서 그대로 발급 (ordinal 1 → K423 … 597 → K1019).
   const candidates = (ctx.candidatesJson && ctx.candidatesJson.candidates) || [];
   const aliasMap = ctx.aliasMap || new Map();
   candidates.forEach((c, i) => {

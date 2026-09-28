@@ -1,0 +1,821 @@
+{
+  "version": 1,
+  "domain": "chronology",
+  "id": "DOC:Sindorim-Junction-Cargo-Gate",
+  "slug": "sindorim-junction-cargo-gate",
+  "categories": [
+    "chronology"
+  ],
+  "status": "draft",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "provenance": {
+    "original_anchor": "https://github.com/islee23520/seoul-dengoku-wiki/issues/22",
+    "original_hash": null,
+    "history": [
+      "2026-09-28: event card carried over from wiki issue #22 (sections 2-7); Korean written first, English rendered block by block."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "https://github.com/islee23520/seoul-dengoku-wiki/issues/22",
+      "https://github.com/islee23520/seoul-dengoku-wiki/issues/23",
+      "lore/structures/Structures.json"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Sindorim Junction Cargo Gate",
+      "summary": "How the party first crossed the Sindorim junction changes the gate, the permits and the plan when it returns with a convoy.",
+      "tense": "present"
+    },
+    "ko": {
+      "title": "신도림 연결부 화물문",
+      "summary": "일행이 신도림 연결부를 처음 지난 방법에 따라 수송대와 돌아온 날의 문과 허가와 계획이 달라진다.",
+      "tense": "present"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "gate",
+      "depth": 1,
+      "text": {
+        "en": "Sindorim Junction Cargo Gate",
+        "ko": "신도림 연결부 화물문"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "gate-p1",
+      "text": {
+        "en": "Sindorim is the bottleneck between Yeongdeungpo and Guro. Loads bound from one to the other pass through a junction there.",
+        "ko": "신도림은 영등포와 구로 사이의 병목이다. 두 곳을 오가는 짐은 이곳의 연결부를 지난다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "junction",
+      "depth": 2,
+      "text": {
+        "en": "The junction",
+        "ko": "연결부의 구조"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "junction-p1",
+      "text": {
+        "en": "The junction runs from an outer waiting point through the main cargo gate to an inner assembly point. A separate maintenance passage beside it admits only people and back loads.",
+        "ko": "연결부는 바깥 대기점에서 주 화물문을 지나 안쪽 집결점으로 이어진다. 그 옆의 정비 통로로는 사람과 등짐만 지나간다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "junction-p2",
+      "text": {
+        "en": "A load of filter media can be split across several backs, so it can go through the maintenance passage.",
+        "ko": "여과재 한 짐은 여러 사람의 등에 나누어 멜 수 있어서 정비 통로로도 옮길 수 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "junction-p3",
+      "text": {
+        "en": "A load of copper parts cannot be broken down or carried without equipment. It moves only through the main cargo gate.",
+        "ko": "구리 부품 한 짐은 장비 없이는 분해하거나 운반할 수 없다. 이 짐은 주 화물문으로만 옮긴다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "request",
+      "depth": 2,
+      "text": {
+        "en": "The day's request",
+        "ko": "당일의 의뢰"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "request-p1",
+      "text": {
+        "en": "The party finished a transport job taken in Yeongdeungpo at Guro and received the agreed pay. On the way back through Sindorim, the transport chief offers a separate haul.",
+        "ko": "일행은 영등포에서 받은 운송 의뢰를 구로에서 마치고 약속한 보수를 받았다. 신도림으로 돌아오는 길에 수송 책임자가 별도의 수송을 제안한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "request-p2",
+      "text": {
+        "en": "Two porters are to move one load of filter media and one load of copper parts. The work crew at the site is waiting for the filter media.",
+        "ko": "운반인 두 사람이 여과재 한 짐과 구리 부품 한 짐을 옮기려 한다. 현장 근무조는 여과재를 기다린다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "request-p3",
+      "text": {
+        "en": "An armed salvage squad claims the copper and has announced that it will arrive at 15:00. Whether the claim is valid has not yet been confirmed.",
+        "ko": "무장 회수대는 구리의 소유권을 주장하며 15시에 도착한다고 알려 왔다. 그 주장이 옳은지는 아직 확인되지 않았다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "request-p4",
+      "text": {
+        "en": "The extra pay is split into a share for delivering the filter media and a share for delivering the copper. If the copper is not delivered, its share is not paid.",
+        "ko": "추가 보수는 여과재 인도분과 구리 인도분으로 나뉜다. 구리를 인도하지 못하면 구리 몫은 지급되지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "request-p5",
+      "text": {
+        "en": "The pay for the finished job stays with the party. Turning down the extra haul does not take it back.",
+        "ko": "앞서 마친 의뢰의 보수는 일행의 것이다. 추가 수송을 거절해도 그 보수는 회수되지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "passage",
+      "depth": 2,
+      "text": {
+        "en": "Conditions of passage",
+        "ko": "통행의 조건"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "passage-list",
+      "items": [
+        {
+          "en": "Passage rights are issued separately from any repair to the gate. The permits of the party and of the designated convoy are checked one by one.",
+          "ko": "통행권은 문의 수리와 별도로 발급된다. 일행의 허가와 지정 수송대의 허가는 각각 확인한다."
+        },
+        {
+          "en": "The copper can be kept under seal until its ownership is confirmed. A sealed-storage agreement carries a written condition that the salvage squad will not object to the movement of the people and the filter media.",
+          "ko": "구리는 소유권이 확인될 때까지 봉인해 보관할 수 있다. 봉인 보관 합의에는 회수대가 사람과 여과재의 이동에 이의를 걸지 않는다는 서면 조건이 붙는다."
+        },
+        {
+          "en": "A sealed-storage agreement takes effect once the signer's authority and the document's authenticity are confirmed.",
+          "ko": "봉인 보관 합의는 서명자의 권한과 서류의 진위가 확인된 뒤에 효력을 갖는다."
+        },
+        {
+          "en": "If the haul is postponed, the loads stay in the confirmed outer warehouse. The transport chief arranges the permit and escort again with the next shift.",
+          "ko": "수송을 미루면 짐은 확인된 바깥 창고에 남는다. 수송 책임자는 다음 근무조와 허가와 호위를 다시 마련한다."
+        },
+        {
+          "en": "The salvage squad comes at the same hour with the same intent whatever state the junction gate is in.",
+          "ko": "회수대는 연결부 문의 상태와 관계없이 같은 시각에 같은 목적으로 온다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "schedule",
+      "depth": 2,
+      "text": {
+        "en": "Schedule",
+        "ko": "일정"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "schedule-table",
+      "columns": [
+        {
+          "en": "Time",
+          "ko": "시각"
+        },
+        {
+          "en": "What happens",
+          "ko": "일"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Day one 13:30",
+            "ko": "당일 13:30"
+          },
+          {
+            "en": "The offer and the public timetable are read.",
+            "ko": "제안과 공개 일정표를 읽는다."
+          }
+        ],
+        [
+          {
+            "en": "Day one 14:00",
+            "ko": "당일 14:00"
+          },
+          {
+            "en": "Today's haul departs. Permit, route and participation are settled before then.",
+            "ko": "오늘 수송이 출발한다. 허가와 경로와 참여는 그 전에 정한다."
+          }
+        ],
+        [
+          {
+            "en": "Day one 14:20",
+            "ko": "당일 14:20"
+          },
+          {
+            "en": "One run through the main passage is complete.",
+            "ko": "주 통로로 한 차례 운반이 끝난다."
+          }
+        ],
+        [
+          {
+            "en": "Day one 14:40",
+            "ko": "당일 14:40"
+          },
+          {
+            "en": "People and filter media sent through the maintenance passage arrive.",
+            "ko": "정비 통로로 옮긴 사람과 여과재가 도착한다."
+          }
+        ],
+        [
+          {
+            "en": "Day one 15:00",
+            "ko": "당일 15:00"
+          },
+          {
+            "en": "The salvage squad arrives. From then on, delivery of the copper is settled only with a valid sealed-storage agreement or a separate settlement.",
+            "ko": "회수대가 도착한다. 이후 구리 인도는 유효한 봉인 보관 합의나 별도의 해결이 있어야 정해진다."
+          }
+        ],
+        [
+          {
+            "en": "Day two 09:00",
+            "ko": "다음 날 09:00"
+          },
+          {
+            "en": "The general counter issues new permits. Any damage settlement for a broken gate remains a separate matter.",
+            "ko": "일반 창구가 새 허가를 발급한다. 부서진 문의 손해 합의는 따로 남는다."
+          }
+        ],
+        [
+          {
+            "en": "Day two 10:00",
+            "ko": "다음 날 10:00"
+          },
+          {
+            "en": "The next haul departs. Delivery is at 10:20 through the main passage and at 10:40 through the maintenance passage.",
+            "ko": "다음 수송이 출발한다. 주 통로로는 10:20, 정비 통로로는 10:40에 인도한다."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "crossings",
+      "depth": 2,
+      "text": {
+        "en": "Three earlier crossings",
+        "ko": "세 가지 앞선 통과"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "crossings-p1",
+      "text": {
+        "en": "The way the party first got through the junction decides the state of the gate and the permits on the day it returns.",
+        "ko": "일행이 처음 연결부를 지날 때 택한 방법에 따라 돌아온 날의 문 상태와 허가가 달라진다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "repair",
+      "depth": 3,
+      "text": {
+        "en": "Repair and agreement",
+        "ko": "수리와 합의"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "repair-p1",
+      "text": {
+        "en": "The party paid for the repair when it set out and fixed the control mechanism. The gate can therefore still be opened and closed.",
+        "ko": "일행은 출발할 때 수리비를 내고 조작 장치를 고쳤다. 그래서 문은 지금도 열고 닫을 수 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "repair-p2",
+      "text": {
+        "en": "The main-passage permits of both the party and the designated convoy are valid. The transport chief can agree with the party on when to open and close the gate.",
+        "ko": "일행과 지정 수송대의 주 통로 허가가 모두 유효하다. 수송 책임자는 문을 언제 열고 닫을지 일행과 정할 수 있다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "forced",
+      "depth": 3,
+      "text": {
+        "en": "Forced breach",
+        "ko": "강행 파괴"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "forced-p1",
+      "text": {
+        "en": "The party broke the gate to get through. The broken gate stays open and cannot be closed.",
+        "ko": "일행은 문을 부수고 지나갔다. 부서진 문은 열린 채 닫히지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "forced-p2",
+      "text": {
+        "en": "The party got through, but the designated convoy has no permit. The transport chief will not send the loads until a permit is confirmed.",
+        "ko": "일행은 통과했지만 지정 수송대에는 허가가 없다. 수송 책임자는 허가를 확인하기 전에는 짐을 보내지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "forced-p3",
+      "text": {
+        "en": "The damage dispute with the site remains open even after a new permit is issued.",
+        "ko": "현장과의 손해 다툼은 새 허가가 나온 뒤에도 따로 남는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "detour",
+      "depth": 3,
+      "text": {
+        "en": "Maintenance-passage detour",
+        "ko": "정비 통로 우회"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "detour-p1",
+      "text": {
+        "en": "The party found the maintenance passage and went through it. The main cargo gate is still broken and shut.",
+        "ko": "일행은 정비 통로를 찾아 지나갔다. 주 화물문은 고장 난 채 닫혀 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "detour-p2",
+      "text": {
+        "en": "Light passage through the maintenance passage is permitted to the party alone. The convoy needs a new permit to use it.",
+        "ko": "정비 통로의 가벼운 통행은 일행에게만 허가되어 있다. 수송대가 이 통로를 쓰려면 새 허가를 받아야 한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "crossings-p2",
+      "text": {
+        "en": "After a forced breach or a detour, the designated convoy has to obtain a new permit at the general counter. The counter issues it at 09:00 the next day, after today's departure.",
+        "ko": "강행 파괴나 정비 통로 우회 뒤에는 지정 수송대가 일반 창구에서 허가를 새로 받아야 한다. 창구는 오늘 출발 시각을 넘긴 다음 날 9시에 허가를 발급한다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "plans",
+      "depth": 2,
+      "text": {
+        "en": "Plans and their costs",
+        "ko": "계획과 대가"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "plans-table",
+      "columns": [
+        {
+          "en": "Earlier crossing",
+          "ko": "앞선 통과"
+        },
+        {
+          "en": "Plan",
+          "ko": "계획"
+        },
+        {
+          "en": "Cost shown first",
+          "ko": "먼저 드는 대가"
+        },
+        {
+          "en": "Outcome without a fight",
+          "ko": "교전이 없을 때의 결과"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Repair and agreement",
+            "ko": "수리와 합의"
+          },
+          {
+            "en": "Use the permit and the salvage squad's arrival time to move the haul before the squad arrives. The order of opening and closing the gate goes into the crossing order and the retreat plan.",
+            "ko": "허가와 회수대 도착 시각을 맞추어 회수대가 오기 전에 수송한다. 문을 여닫는 순서는 통과 순서와 퇴로 계획에 넣는다."
+          },
+          {
+            "en": "To make today's departure, the party gives up its other plans for the day.",
+            "ko": "당일 출발에 맞추려고 일행은 그날의 다른 일정을 포기한다."
+          },
+          {
+            "en": "With time and permit confirmed, both people and both loads are delivered and every extra promise is kept. If a condition fails, the party chooses again among postponing, negotiating and fighting.",
+            "ko": "시각과 허가가 확인되면 두 사람과 두 짐이 인도되고 추가 약속이 모두 이행된다. 조건이 어긋나면 일행은 연기, 협상, 교전 가운데 다시 고른다."
+          }
+        ],
+        [
+          {
+            "en": "Forced breach",
+            "ko": "강행 파괴"
+          },
+          {
+            "en": "Confirm the haul permit first and keep the copper under seal to set the dispute aside. Closing the gate is not available.",
+            "ko": "수송 허가를 먼저 확인하고 구리를 봉인 보관해 분쟁을 떼어 둔다. 문을 닫는 방법은 쓸 수 없다."
+          },
+          {
+            "en": "Through the general counter the haul moves the next day. The copper share of the extra pay is not yet earned, and the damage settlement remains.",
+            "ko": "일반 창구를 거치면 수송은 다음 날이 된다. 구리 몫 추가 보수는 아직 없고 손해 합의도 남는다."
+          },
+          {
+            "en": "Once an authorised agreement stands, both people and the filter media are delivered and the copper is held in the warehouse. Without a permit the convoy does not move.",
+            "ko": "권한 있는 합의가 성립하면 두 사람과 여과재가 인도되고 구리는 창고에 보류된다. 허가가 없으면 수송대는 움직이지 않는다."
+          }
+        ],
+        [
+          {
+            "en": "Maintenance-passage detour",
+            "ko": "정비 통로 우회"
+          },
+          {
+            "en": "Extend the maintenance-passage permit to the convoy and split the filter media across backs.",
+            "ko": "정비 통로 사용 허가를 수송대까지 넓히고 여과재를 나누어 멘다."
+          },
+          {
+            "en": "Through the general counter the haul moves the next day. The party helps carry, and the copper load stays in the warehouse.",
+            "ko": "일반 창구를 거치면 수송은 다음 날이 된다. 일행이 운반을 돕고 구리 짐은 창고에 남는다."
+          },
+          {
+            "en": "After the permit is confirmed, both people and the filter media are delivered. The big gate and bulk transport remain unsolved, and no fight takes place in the main passage.",
+            "ko": "허가를 확인한 뒤 두 사람과 여과재가 인도된다. 큰 문과 대량 운송 문제는 그대로 남고 주 통로에서 싸움이 벌어지지 않는다."
+          }
+        ],
+        [
+          {
+            "en": "Any of the three",
+            "ko": "세 경우 모두"
+          },
+          {
+            "en": "Agree with an authorised party on storing the copper and on a later review.",
+            "ko": "권한 있는 당사자와 구리 보관과 이후 심사를 합의한다."
+          },
+          {
+            "en": "The copper share of the extra pay is held back, and a later recipient must be named.",
+            "ko": "구리 인도분 추가 보수가 보류되고 이후의 수령자를 정해야 한다."
+          },
+          {
+            "en": "The agreement leaves gate, permit and carrying capacity as they were. People and filter media move once each case's passage conditions are met.",
+            "ko": "합의는 문과 허가와 운반 능력을 그대로 둔다. 각 경우의 통로 조건을 갖춘 뒤 사람과 여과재를 옮긴다."
+          }
+        ],
+        [
+          {
+            "en": "Any of the three",
+            "ko": "세 경우 모두"
+          },
+          {
+            "en": "Postpone today's haul or turn down the extra job.",
+            "ko": "오늘 수송을 미루거나 추가 의뢰를 거절한다."
+          },
+          {
+            "en": "There is no delivery record and no extra pay this time.",
+            "ko": "이번 인도 실적과 추가 보수가 없다."
+          },
+          {
+            "en": "The earlier job stays complete. Both people and both loads wait in the warehouse, and the transport chief rearranges the schedule.",
+            "ko": "앞선 의뢰의 완료는 그대로다. 두 사람과 두 짐은 창고에서 기다리고 수송 책임자가 이후 일정을 조정한다."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "plans-p1",
+      "text": {
+        "en": "If the party chooses to fight, each earlier crossing poses a different question. After a repair it must decide why the gate stays open, after a breach what controls an entrance that cannot close, and after a detour whether there is any reason to fight in the main passage.",
+        "ko": "일행이 싸움을 택하면 앞선 통과마다 먼저 정할 물음이 다르다. 수리 뒤에는 문을 왜 열어 두는지, 파괴 뒤에는 닫을 수 없는 입구를 무엇으로 막을지, 우회 뒤에는 주 통로에서 싸울 까닭이 있는지를 정한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "plans-p2",
+      "text": {
+        "en": "Victory, casualties and the movement of cargo in a fight are settled by the fight itself.",
+        "ko": "교전의 승패와 사상자, 화물의 이동은 전투에서 정해진다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "companions",
+      "depth": 2,
+      "text": {
+        "en": "Messenger and archivist",
+        "ko": "전령과 기록관"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "companions-p1",
+      "text": {
+        "en": "After a breach or a detour, the transport chief's file may already hold a mandate. The mandate names the designated convoy, the passage to use and the hours of both days.",
+        "ko": "강행 파괴나 정비 통로 우회 뒤에도 수송 책임자의 서류철에 위임장이 처음부터 들어 있을 수 있다. 위임장에는 지정 수송대와 사용할 통로, 당일과 다음 날의 시간이 적혀 있다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "companions-table",
+      "columns": [
+        {
+          "en": "Companion",
+          "ko": "동행"
+        },
+        {
+          "en": "What can be confirmed",
+          "ko": "확인할 수 있는 일"
+        },
+        {
+          "en": "How the plan changes",
+          "ko": "달라지는 계획"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Messenger",
+            "ko": "전령"
+          },
+          {
+            "en": "Confirms the salvage squad's arrival window and responsible counter through a notice delivered by hand.",
+            "ko": "직접 전한 통지서로 회수대의 도착 시각과 담당 창구를 확인한다."
+          },
+          {
+            "en": "The party weighs moving today within the confirmed time. Issuing permits remains the counter's work.",
+            "ko": "확인된 시간 안에서 당일 이동을 검토한다. 허가 발급은 여전히 창구의 일이다."
+          }
+        ],
+        [
+          {
+            "en": "Archivist",
+            "ko": "기록관"
+          },
+          {
+            "en": "Spends ten minutes checking whether the mandate in the file covers this convoy, passage and time.",
+            "ko": "서류철의 위임장이 이번 수송대와 통로와 시간을 담는지 10분 동안 대조한다."
+          },
+          {
+            "en": "With the check done at 13:40, today's departure can be met. The broken gate, the copper dispute and the passage's cargo limit stay as they are.",
+            "ko": "13시 40분에 대조가 끝나면 당일 출발에 맞출 수 있다. 부서진 문과 구리 소유권 다툼, 정비 통로의 화물 제약은 그대로다."
+          }
+        ],
+        [
+          {
+            "en": "Neither",
+            "ko": "동행 없음"
+          },
+          {
+            "en": "Uses the public timetable and the general counter.",
+            "ko": "공개 일정표와 일반 창구를 쓴다."
+          },
+          {
+            "en": "The party postpones to the next day to obtain a permit, or turns down the extra job.",
+            "ko": "다음 날로 미루어 허가를 받거나 추가 의뢰를 거절한다."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "companions-p2",
+      "text": {
+        "en": "Without a mandate in the file, the permit conditions are the same whoever travels with the party.",
+        "ko": "서류철에 위임장이 없으면 누가 동행하든 허가 조건은 같다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "record",
+      "depth": 2,
+      "text": {
+        "en": "What the outcome records",
+        "ko": "결과의 기록"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "record-table",
+      "columns": [
+        {
+          "en": "Field",
+          "ko": "칸"
+        },
+        {
+          "en": "What it records",
+          "ko": "기록하는 내용"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "People",
+            "ko": "사람"
+          },
+          {
+            "en": "Delivered, or waiting in the warehouse. If there is a fight, capture, injury and death follow from its result.",
+            "ko": "인도 완료 또는 창고 대기. 교전이 있으면 포획과 부상과 사망은 전투 결과를 따른다."
+          }
+        ],
+        [
+          {
+            "en": "Cargo",
+            "ko": "화물"
+          },
+          {
+            "en": "Whether the filter media was delivered, whether the copper was delivered or held under seal, the storage place and who may receive it.",
+            "ko": "여과재 인도 여부, 구리의 인도 또는 봉인 보류 여부, 보관 장소와 수령 권한"
+          }
+        ],
+        [
+          {
+            "en": "Pay for the earlier job",
+            "ko": "앞선 의뢰의 보수"
+          },
+          {
+            "en": "Already paid. The outcome of the extra job does not take it back.",
+            "ko": "이미 지급되었다. 추가 의뢰의 결과로 회수되지 않는다."
+          }
+        ],
+        [
+          {
+            "en": "Extra promises",
+            "ko": "추가 약속"
+          },
+          {
+            "en": "The filter-media share, the copper share, the promised haul time and when it was actually kept.",
+            "ko": "여과재 인도분, 구리 인도분, 약속한 수송 시각과 실제 이행 시점"
+          }
+        ],
+        [
+          {
+            "en": "Facilities and rights",
+            "ko": "시설과 권리"
+          },
+          {
+            "en": "Whether the gate works or is broken, who a permit covers for which passage and time, and any damage dispute left open.",
+            "ko": "문의 조작 또는 파손 상태, 허가의 대상과 통로와 시간, 남은 손해 다툼"
+          }
+        ],
+        [
+          {
+            "en": "Direct relations",
+            "ko": "직접 관계"
+          },
+          {
+            "en": "Who saw what and whose promise was kept. The outcome stays with those people and does not become an alliance between states or a grudge across the city.",
+            "ko": "누가 무엇을 보았고 누구와의 약속을 지켰는지. 결과는 그 사람들 사이에 남고 국가 사이의 동맹이나 도시 전체의 원한으로 번지지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "revisit",
+      "depth": 2,
+      "text": {
+        "en": "Returning later",
+        "ko": "다시 찾았을 때"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "revisit-p1",
+      "text": {
+        "en": "If everything was delivered after a repair, the work crew is using the new filter media and pays the promised fee.",
+        "ko": "수리 뒤 전량이 인도되었다면 근무조는 새 여과재를 쓰고 약속한 대금을 치른다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "revisit-p2",
+      "text": {
+        "en": "If the copper was held back after a breach, the transport chief thanks the party for bringing the people back and asks to meet again when the seal is lifted.",
+        "ko": "파괴 뒤 구리가 보류되었다면 수송 책임자는 사람들이 무사히 돌아온 데 고마워하며 봉인을 풀 때 다시 만나자고 한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "revisit-p3",
+      "text": {
+        "en": "After a detour, the maintenance passage has actually been used, and repairing the big cargo gate is still the next job.",
+        "ko": "우회 뒤에는 정비 통로가 실제로 쓰였고, 큰 화물문의 수리는 다음 일로 남아 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "revisit-p4",
+      "text": {
+        "en": "If the extra pay was handed over at the first delivery, the return visit only confirms that it was received.",
+        "ko": "추가 보수를 첫 인도 때 이미 받았다면 다시 찾은 날에는 수령만 확인한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "revisit-p5",
+      "text": {
+        "en": "If the party turned the extra job down, the transport chief only tells it when the loads left in the warehouse will move next.",
+        "ko": "추가 의뢰를 거절했다면 수송 책임자는 창고에 남은 짐의 다음 일정만 알린다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "absence",
+      "depth": 2,
+      "text": {
+        "en": "When the site chief is gone",
+        "ko": "현장 책임자가 없을 때"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "absence-p1",
+      "text": {
+        "en": "If the site chief dies or is away, the promise to defend the gate together lapses with them. Permits already issued stay in force.",
+        "ko": "현장 책임자가 죽거나 자리를 비우면 함께 문을 지키겠다는 약속도 사라진다. 이미 발급된 허가는 그대로 효력을 갖는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "absence-p2",
+      "text": {
+        "en": "If a permit has to be changed and there is no lawful deputy, the haul is postponed.",
+        "ko": "허가를 바꿔야 하는데 적법한 대행이 없으면 수송은 연기된다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "sources",
+      "depth": 2,
+      "text": {
+        "en": "Sources",
+        "ko": "출처"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "sources-list",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "Structures",
+              "link": {
+                "domain": "structures",
+                "slug": "Structures"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "구조물",
+              "link": {
+                "domain": "structures",
+                "slug": "Structures"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Scenario timeline",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "시나리오 타임라인",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "data": {}
+}

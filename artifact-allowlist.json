@@ -1,0 +1,54 @@
+{
+  "rootFiles": [
+    "index.html",
+    "northern-rail.json",
+    "opening-territories.json",
+    "regional-boundaries.json",
+    "regional-metro.bin",
+    "regional-peninsula.bin",
+    "regional-rail.json",
+    "regional-terrain-far-water.json",
+    "regional-terrain.json",
+    "timeline-overview.json",
+    "underground-detail.json",
+    "wiki-contract.json"
+  ],
+  "directories": {
+    "person-details": "^person-[0-9]{4}\\.json$",
+    "regional-terrain-tiles": "^[0-9]+-[0-9]+(?:-water\\.json|\\.bin)$",
+    "state-flags": "^(?:S(?:0[1-9]|1[0-6])|concept-sheet)\\.webp$"
+  },
+  "assets": {
+    "pattern": "^(.+)-[A-Za-z0-9_-]{8}\\.(?:js|css)$",
+    "libraryDirectory": "lib",
+    "appChunks": [
+      "CategoriesPage",
+      "DocumentsPage",
+      "OpeningTerritoryMap",
+      "PeoplePage",
+      "PersonDetailPage",
+      "TimelineOverview",
+      "index",
+      "peopleCatalog",
+      "rolldown-runtime",
+      "world"
+    ]
+  },
+  "routes": [
+    { "path": "/", "disposition": "page" },
+    { "path": "/states", "disposition": "page" },
+    { "path": "/states/:stateSlug", "disposition": "page" },
+    { "path": "/updates", "disposition": "page" },
+    { "path": "/people", "disposition": "page" },
+    { "path": "/people/:personId", "disposition": "page" },
+    { "path": "/documents", "disposition": "page" },
+    { "path": "/categories", "disposition": "page" },
+    { "path": "/categories/:categoryId", "disposition": "page" },
+    { "path": "/regions/*", "disposition": "legacy-redirect" },
+    { "path": "/world/regions/*", "disposition": "legacy-redirect" },
+    { "path": "/en/:domain/:slug", "disposition": "article" },
+    { "path": "/:domain/:slug", "disposition": "article" },
+    { "path": "/:domain/", "disposition": "article" },
+    { "path": "*", "disposition": "fallback-home" }
+  ]
+}

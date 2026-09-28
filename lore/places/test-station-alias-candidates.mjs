@@ -2,13 +2,14 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import test from 'node:test'
+import { readRendered } from '../../scripts/lore-read-rendered.mjs'
 
 const places = import.meta.dirname
 const candidate = JSON.parse(readFileSync(resolve(places, 'Station-Alias-Candidates.json'), 'utf8'))
 const catalogData = JSON.parse(readFileSync(resolve(places, 'Seoul-Station-Catalog.json'), 'utf8'))
 const interiors = JSON.parse(readFileSync(resolve(places, '../regions/station-interiors.json'), 'utf8'))
-const projected = JSON.parse(readFileSync(resolve(places, '../../wiki/public/opening-territories.json'), 'utf8'))
-const catalog = readFileSync(resolve(places, 'Seoul-Station-Catalog.md'), 'utf8')
+const projected = JSON.parse(readFileSync(resolve(places, '../../public/opening-territories.json'), 'utf8'))
+const catalog = readRendered(resolve(places, '..'), 'places', 'Seoul-Station-Catalog')
 const rows = [...catalog.matchAll(/^\| ([^|]+) \| [^|]* \| 37\.[^|]* \| 12[^|]* \|[^|]*\|$/gmu)].map((match) => match[1])
 
 test('the candidate classifies every same-base pair without altering the 334-row roster', () => {
@@ -95,7 +96,7 @@ test('four reviewed subtitle pairs preserve their observed platforms in one map 
 test('all approved subtitles project one node without losing observed lines or movement neighbors', () => {
   const canonicalId = new Map(catalogData.data.station_aliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
   const original = JSON.parse(readFileSync(resolve(places, '../../../GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
-  const lines = JSON.parse(readFileSync(resolve(places, '../../wiki/scripts/official-seoul-lines.json'), 'utf8')).stations
+  const lines = JSON.parse(readFileSync(resolve(places, '../../scripts/official-seoul-lines.json'), 'utf8')).stations
   const projectedEdges = new Set(projected.edges.flatMap((edge) => edge.lineIds.map((line) => `${[edge.a, edge.b].sort().join('|')}/${line}`)))
   for (const entry of catalogData.data.station_aliases) {
     assert.deepEqual(projected.stations.filter((station) => station.id === entry.id).map((station) => station.memberIds), [[entry.id, ...entry.aliases]])
