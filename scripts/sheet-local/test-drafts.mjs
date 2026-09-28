@@ -110,5 +110,6 @@ test('public draft imports through the stable person route without issuing an ID
   assert.equal(imported.fields.name, '박성수')
   assert.equal(imported.validation.valid, true)
   await assert.rejects(store.importDraft({ ...published, fields: { ...published.fields, name: '다른 인물' } }), { code: 'DRAFT_IDENTITY' })
+  await assert.rejects(store.importDraft({ ...published, base: { personId: 'person-1019', sha256: 'stale-hash' } }), { code: 'DRAFT_CONFLICT' })
   assert.equal((await store.list()).length, 1)
 })
