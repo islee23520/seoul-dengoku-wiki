@@ -29,12 +29,12 @@
   "locales": {
     "en": {
       "title": "World Map",
-      "summary": "The stairs that led down from the concourse to the platform, and the corner where a transfer corridor bent, lay over each other in a single picture.",
+      "summary": "Seoul's opening-day territory map.",
       "tense": "past"
     },
     "ko": {
       "title": "세계 지도",
-      "summary": "대합실에서 승강장으로 내려가는 계단과, 환승 통로가 꺾이는 모서리가 한 그림에 겹친다.",
+      "summary": "개막일 서울의 영토 지도.",
       "tense": "past"
     }
   },
@@ -50,260 +50,28 @@
     },
     {
       "kind": "paragraph",
-      "anchor": "서울과-지하철-레이어-p1-ko-label-1",
+      "anchor": "지도-표시-범위",
       "text": {
-        "en": "A. The concourse and platform",
-        "ko": "가. 대합실과 승강장"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "서울과-지하철-레이어-p1",
-      "text": {
-        "en": "The stairs that led down from the concourse to the platform, and the corner where a transfer corridor bent, lay over each other in a single picture.",
-        "ko": "대합실에서 승강장으로 내려가는 계단과 환승 통로의 모서리가 한 그림에 겹쳐 있다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "세계의-수직-구조",
-      "depth": 2,
-      "text": {
-        "en": "The Vertical Structure of the World",
-        "ko": "세계의 수직 구조"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "세계의-수직-구조-p1-ko-label-2",
-      "text": {
-        "en": "A. Administrative map and actual levels",
-        "ko": "가. 행정 지도와 실제 층"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "세계의-수직-구조-p1",
-      "text": {
-        "en": "Read Seoul only as an administrative map painted flat in districts like Jongno-gu, Jung-gu, and Yeongdeungpo-gu, and the ground on which the states of the reconstruction stood never came into view. The places where people actually ate, slept, and passed goods were floors of different heights — the Seoul Station concourse, the Sindorim transfer, the Wangsimni tracks, the deep levels toward Amsa — and each floor carried its own work and its own dangers. The world was the graph that joined those floors.",
-        "ko": "행정 지도는 서울을 종로구·중구·영등포구의 평면으로 칠한다. 사람이 먹고 자고 물건을 넘기는 곳은 서울역 대합실, 신도림 환승, 왕십리 선로, 암사 쪽 심층처럼 높이가 다른 층이다. 재건의 나라는 그 층 위에 서 있다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "세계의-수직-구조-table2-ko-label-added",
-      "text": {
-        "en": "b. Work and hazards by layer",
-        "ko": "나. 층마다의 일과 위험"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "세계의-수직-구조-table2-ko-label-3",
-      "text": {
-        "en": "People open markets and lodging in the concourse and move people and freight along the platforms. Transfer passages and stairs connect these levels. Each level also has hazards that obstruct passage.",
-        "ko": "대합실에서는 장터와 숙소를 열고, 승강장에서는 사람과 화물을 옮긴다. 환승 통로와 계단이 이 층들을 잇는다. 층마다 통행을 가로막는 위험도 다르다."
+        "en": "The map shows opening-day surface holdings alongside mapped rail locations. A rail line on the map does not establish passage at the opening.",
+        "ko": "지도에는 개막일의 지상 점유지와 철도 위치가 함께 표시된다. 선로 표시는 개막일 통행 가능 여부를 뜻하지 않는다."
       }
     },
     {
       "kind": "table",
-      "anchor": "세계의-수직-구조-table2",
+      "anchor": "지도-표시-항목",
       "columns": [
-        {
-          "en": "Layer",
-          "ko": "층"
-        },
-        {
-          "en": "Primary function",
-          "ko": "주요 기능"
-        },
-        {
-          "en": "Representative risk",
-          "ko": "대표 위험"
-        }
+        { "en": "Map layer", "ko": "표시 항목" },
+        { "en": "Coverage", "ko": "범위" }
       ],
       "rows": [
         [
-          {
-            "en": "Surface ruins",
-            "ko": "지상 폐허"
-          },
-          {
-            "en": "Resource gathering, solar power, long-range observation",
-            "ko": "자원 수집, 태양광, 장거리 관측"
-          },
-          {
-            "en": "Weather, collapse, exposure, clashes between powers",
-            "ko": "기후, 붕괴, 노출, 세력 충돌"
-          }
+          { "en": "Surface holdings", "ko": "지상 점유" },
+          { "en": "The sixteen states at the opening", "ko": "개막일 16국" }
         ],
         [
-          {
-            "en": "Station concourse",
-            "ko": "역사 대합실"
-          },
-          {
-            "en": "Markets, habitation, administration, information",
-            "ko": "시장, 주거, 행정, 정보"
-          },
-          {
-            "en": "Crowding, fire, power struggles",
-            "ko": "과밀, 화재, 권력 분쟁"
-          }
-        ],
-        [
-          {
-            "en": "Platform · tracks",
-            "ko": "승강장·선로"
-          },
-          {
-            "en": "Movement, defensive lines, freight",
-            "ko": "이동, 방어선, 화물 운송"
-          },
-          {
-            "en": "Bottlenecks, ambushes, power cuts",
-            "ko": "병목, 매복, 전력 차단"
-          }
-        ],
-        [
-          {
-            "en": "Transfer corridors",
-            "ko": "환승 통로"
-          },
-          {
-            "en": "Political and logistics links between lines",
-            "ko": "노선 간 정치·물류 연결"
-          },
-          {
-            "en": "Blockades, transit tolls, congestion",
-            "ko": "봉쇄, 통행세, 혼잡"
-          }
-        ],
-        [
-          {
-            "en": "Deep tunnels",
-            "ko": "심층 터널"
-          },
-          {
-            "en": "Covert movement, maintenance facilities",
-            "ko": "은밀 이동, 정비 시설"
-          },
-          {
-            "en": "Flooding, darkness, communications loss",
-            "ko": "침수, 어둠, 통신 단절"
-          }
-        ],
-        [
-          {
-            "en": "Depot-adjacent strongholds",
-            "ko": "차량기지 인접 거점"
-          },
-          {
-            "en": "Repair, parts, bulk storage",
-            "ko": "수리, 부품, 대규모 저장"
-          },
-          {
-            "en": "Strategic sieges, fire",
-            "ko": "전략적 공성, 화재"
-          }
+          { "en": "Rail locations", "ko": "철도 위치" },
+          { "en": "Mapped stations and tracks", "ko": "지도에 기록된 역과 선로" }
         ]
-      ]
-    },
-    {
-      "kind": "heading",
-      "anchor": "그래프-구성",
-      "depth": 2,
-      "text": {
-        "en": "Graph Construction",
-        "ko": "그래프 구성"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "그래프-구성-p1",
-      "text": {
-        "en": "Stairs join the concourse and platform at Seoul Station. Sindorim has transfer passages, while Amsa Station sits beside underground water channels.",
-        "ko": "서울역의 대합실과 승강장은 계단으로 이어진다. 신도림에는 환승 통로가 있고, 암사에는 지하 수로와 역이 겹친다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "동적-연결",
-      "depth": 2,
-      "text": {
-        "en": "Dynamic Links",
-        "ko": "동적 연결"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "동적-연결-p1-ko-label-5",
-      "text": {
-        "en": "A. States and causes",
-        "ko": "가. 상태와 원인"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "동적-연결-p1",
-      "text": {
-        "en": "Tunnels and passages carry records of normal, hazardous, controlled, and blockaded states. Flooding, collapse, and temporary repair leave their causes and the conditions for reopening alongside those states.",
-        "ko": "터널과 통로에는 정상·위험·통제·봉쇄 상태가 기록된다. 침수·붕괴·임시 복구가 일어나면 그 원인과 다시 열기 위한 조건도 함께 남는다."
-      }
-    },
-    {
-      "kind": "heading",
-      "anchor": "출처",
-      "depth": 2,
-      "text": {
-        "en": "Sources",
-        "ko": "출처"
-      }
-    },
-    {
-      "kind": "list",
-      "anchor": "출처-list1",
-      "items": [
-        {
-          "ko": [
-            {
-              "text": "경제와 생산, 물류 규칙",
-              "link": {
-                "domain": "gdd",
-                "slug": "rules/Rules-EconomyLogistics"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Economy, Production and Logistics Rules",
-              "link": {
-                "domain": "gdd",
-                "slug": "rules/Rules-EconomyLogistics"
-              }
-            }
-          ]
-        },
-        {
-          "ko": [
-            {
-              "text": "거점과 영토 규칙",
-              "link": {
-                "domain": "gdd",
-                "slug": "rules/Rules-Strongholds"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Strongholds and Territory Rules",
-              "link": {
-                "domain": "gdd",
-                "slug": "rules/Rules-Strongholds"
-              }
-            }
-          ]
-        }
       ]
     }
   ],
