@@ -4,6 +4,7 @@ import { join, resolve } from 'node:path'
 import { calculateDraft, ATTR_COST, stepFor, ROOT } from '../gurps-cast.mjs'
 
 const defaultRoot = resolve(ROOT, '.omo/sheet-drafts')
+const detailRoot = resolve(ROOT, 'public/person-details')
 const attributes = ['ST', 'DX', 'IQ', 'HT']
 const difficulties = ['E', 'A', 'H', 'VH']
 const hash = (text) => createHash('sha256').update(text).digest('hex')
@@ -53,8 +54,14 @@ export function createDraftStore({ root = defaultRoot } = {}) {
   return {
     async choices() {
       const values = JSON.parse(await readFile(join(ROOT, 'lore/name-pools/values-cast.json'), 'utf8'))
-      const affiliations = [...new Set(values.people.map((person) => person.state_name))].filter(Boolean)
-      return { affiliations, backgrounds: ['역 구내 근무', '생활권 호송', '기록 보관', '설비 정비'], livelihoods: ['전령', '기록관', '탐사원', '정비사', '호송원'] }
+      const affiliations = [...new Set(values.people.map((person) => person.state_name))].filter(Boolean).sort((a, b) => a.localeCompare(b, 'ko'))
+      const livelihoods = new Set()
+      for (const file of await readdir(detailRoot)) {
+        if (!/^person-\d{4}\.json$/u.test(file)) continue
+        const person = JSON.parse(await readFile(join(detailRoot, file), 'utf8'))
+        if (person.occupation) livelihoods.add(person.occupation)
+      }
+      return { affiliations, backgrounds: ['역 구내 근무', '생활권 호송', '기록 보관', '설비 정비'], livelihoods: [...livelihoods].sort((a, b) => a.localeCompare(b, 'ko')) }
     },
     async create(input = {}) {
       const base = await baseRecord(input.personId)
