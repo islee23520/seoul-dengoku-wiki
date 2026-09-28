@@ -52,16 +52,16 @@
       "kind": "paragraph",
       "anchor": "관직-p1-label",
       "text": {
-        "en": "직함의 기원",
-        "ko": "**가. 직함의 기원**"
+        "en": "Titles and government grades",
+        "ko": "**가. 작위와 품계**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "관직-p1",
       "text": {
-        "en": "The titles of Seoul in 2126 were not game terms. They were seats people in Korea understood in 2026, or seats Joseon had used before that. For a hand to open water and stamp the registers after the call mesh died, it had to hold rank.",
-        "ko": "2126년 서울의 직함은 2026년 한국의 기관 직제와 조선 관직에서 왔다. 호출망이 멈춘 뒤 수문을 열거나 명부에 서명하는 사람에게 품계를 매겼다."
+        "en": "Feudal titles and government-granted grades are separate records. The five title ranks are emperor, king, duke, count, and baron; their names can vary with each state's politics and faith. The Government of the Republic of Korea grants administrative grades from president to junior civil servant. Its president claims the legitimacy of the Republic of Korea, not a king's title.",
+        "ko": "봉건 작위와 행정 품계는 다른 기록이다. 작위는 황제·왕·공작·백작·남작의 다섯 층이며 나라의 정치와 종교에 따라 실제 호칭이 달라진다. 품계는 대한민국정부가 하사하며 대통령부터 말단 공무원까지의 직제를 구분한다. 대통령은 대한민국정부가 스스로 대한민국의 정통성을 주장하며 쓰는 직함이지 왕 작위의 다른 이름이 아니다."
       }
     },
     {
@@ -76,8 +76,8 @@
       "kind": "paragraph",
       "anchor": "관직-p2",
       "text": {
-        "en": "The sixteen states used five office tiers, with titles differing by institution.",
-        "ko": "십육국은 다섯 층의 품계를 쓰며 직함은 나라별 기관에서 다르게 정하였다."
+        "en": "The sixteen states use different institutional offices. A commander, church chair, or company chair of another state is not automatically a grade granted by the Government of the Republic of Korea.",
+        "ko": "십육국의 직함은 나라별 기관에서 다르게 정하였다. 다른 나라의 사령관·당회장·회장 같은 직함을 대한민국정부가 하사한 품계로 바꾸지 않는다."
       }
     },
     {
@@ -92,8 +92,8 @@
       "kind": "paragraph",
       "anchor": "관직-p3",
       "text": {
-        "en": "There was no emperor tier. Seoul had no son of heaven. The heads of the sixteen states did not call one another king. What they called each other was the tier-1 title of that nation; only the layer the ledgers assigned was of king rank.",
-        "ko": "황제 층은 없다. 서울에 천자는 없다. 십육국 수장은 서로를 왕이라 부르지 않고 그 나라 티어 1의 직함으로 부른다. 장부가 매기는 층만 왕급이다."
+        "en": "Sixteen states divide territory inside metropolitan Seoul. Emperor is the highest feudal title rank, but no opening-day ruler of Seoul has been issued that title.",
+        "ko": "서울 광역시 안에는 열여섯 나라가 영토를 나누어 가진다. 황제는 봉건 작위의 최상위 층이지만 개막 서울의 수장을 황제로 발급한 기록은 없다."
       }
     },
     {
@@ -101,8 +101,8 @@
       "anchor": "다섯-층",
       "depth": 2,
       "text": {
-        "en": "The Five Layers",
-        "ko": "다섯 층"
+        "en": "The Five Feudal Title Ranks",
+        "ko": "봉건 작위의 다섯 층"
       }
     },
     {
@@ -117,8 +117,8 @@
       "kind": "paragraph",
       "anchor": "다섯-층-p1",
       "text": {
-        "en": "The baron, count, duke, king, and court figures of Crusader Kings were layers of land. The opening fixed those layers as tiers 1 through 5 and wrote the names apart only by form of government and institutional rank. The feudal operating houses read from stationmaster down to jusa clerk; the military governments from commander down to byeongjang; the theocracies from Moderator, archbishop, and spiritual director down to gyosa, gyowoo, and sindo; the commercial states from chairman, guild head, presiding chair, company president, or order head down to jikwon, johapwon, hosongwon, and hoewon.",
-        "ko": "다섯 층의 티어는 1부터 5까지이다. 봉건 운영가문은 역장부터 주사까지, 군정은 사령관부터 병장까지 직함을 쓴다. 신정의 티어 1은 당회장·대주교·방장 중 하나이며 티어 5는 교사·교우·신도 중 하나이다. 상업 국가의 티어 1은 회장·위원장·의장·사장·단장 중 하나이며 티어 5는 직원·조합원·호송원·회원 중 하나이다."
+        "en": "The basic feudal title ranks are emperor, king, duke, count, and baron. A metropolitan city or province is a state-scale scope, a gu a duchy-scale scope, and a dong a county-scale scope. De jure scope, current vassal or holder, and practical local control are separate. Each of Seoul's 427 dong has one state holder at the opening. Unset areas outside them remain colonizable wilderness.",
+        "ko": "작위의 기본 다섯 층은 황제, 왕, 공작, 백작, 남작이다. 광역시·도는 국가 범위, 구는 공작위 범위, 동은 백작위 범위이다. 법정 작위 범위, 현재 봉신·소유 관계, 현장 통제력은 서로 구분한다. 개막 서울의 427개 동은 각각 한 나라에 속한다. 그 밖의 미설정 지역은 개척 가능한 미개척지이다."
       }
     },
     {
@@ -126,20 +126,16 @@
       "anchor": "다섯-층-table2",
       "columns": [
         {
-          "en": "Tier",
-          "ko": "티어"
+          "en": "Title rank",
+          "ko": "작위 층"
         },
         {
-          "en": "CK mapping",
-          "ko": "CK 대응"
+          "en": "Basic title",
+          "ko": "기본 호칭"
         },
         {
-          "en": "Old Joseon office",
-          "ko": "옛 조선 관직"
-        },
-        {
-          "en": "Unit ruled",
-          "ko": "다스리는 단위"
+          "en": "Territorial scope",
+          "ko": "영토 범위"
         }
       ],
       "rows": [
@@ -149,16 +145,12 @@
             "ko": "1"
           },
           {
-            "en": "King",
-            "ko": "왕"
+            "en": "Emperor",
+            "ko": "황제"
           },
           {
-            "en": "Suryeong",
-            "ko": "수령"
-          },
-          {
-            "en": "One of the sixteen states",
-            "ko": "십육국 한 나라"
+            "en": "Above a kingdom",
+            "ko": "왕국 위의 작위 범위"
           }
         ],
         [
@@ -167,16 +159,12 @@
             "ko": "2"
           },
           {
-            "en": "Duke",
-            "ko": "공작"
+            "en": "King",
+            "ko": "왕"
           },
           {
-            "en": "Panseo",
-            "ko": "판서"
-          },
-          {
-            "en": "The great matters within a state — water, escort, registers, repair",
-            "ko": "나라 안의 큰 일 — 물·호위·명부·수리"
+            "en": "State scope",
+            "ko": "국가 범위"
           }
         ],
         [
@@ -185,16 +173,12 @@
             "ko": "3"
           },
           {
-            "en": "Count",
-            "ko": "백작"
+            "en": "Duke",
+            "ko": "공작"
           },
           {
-            "en": "Gunsu",
-            "ko": "군수"
-          },
-          {
-            "en": "One gu, the living sphere of a great station",
-            "ko": "한 구, 큰 역 생활권"
+            "en": "Gu scope",
+            "ko": "구 범위"
           }
         ],
         [
@@ -203,16 +187,12 @@
             "ko": "4"
           },
           {
-            "en": "Baron",
-            "ko": "남작"
+            "en": "Count",
+            "ko": "백작"
           },
           {
-            "en": "Hyeongam",
-            "ko": "현감"
-          },
-          {
-            "en": "One station, one sluice, one market",
-            "ko": "역 하나, 수문 하나, 시장 하나"
+            "en": "Dong scope",
+            "ko": "동 범위"
           }
         ],
         [
@@ -221,16 +201,12 @@
             "ko": "5"
           },
           {
-            "en": "Court figures",
-            "ko": "궁정 인물"
+            "en": "Baron",
+            "ko": "남작"
           },
           {
-            "en": "Chamha",
-            "ko": "참하"
-          },
-          {
-            "en": "No land. Signature and watch only",
-            "ko": "땅이 없다. 서명과 당직만 있다"
+            "en": "Station and nearby stronghold scope",
+            "ko": "역과 주변 거점 범위"
           }
         ]
       ]
@@ -239,16 +215,16 @@
       "kind": "paragraph",
       "anchor": "다섯-층-p3-label",
       "text": {
-        "en": "기존 분류망 대응",
-        "ko": "**나. 기존 분류망 대응**"
+        "en": "Title scope and current control",
+        "ko": "**나. 작위 범위와 현재 지배**"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "다섯-층-p3",
       "text": {
-        "en": "Rulers held tier one, while facility staff held lower tiers. States used different titles for the same five levels.",
-        "ko": "수장은 티어 1이고 단일 시설의 당직은 아래 품계에 놓인다. 각국은 같은 다섯 층을 서로 다른 직함으로 불렀다."
+        "en": "A title's territorial scope does not by itself identify its current holder or effective control. A titled person's government grade and trade are recorded separately.",
+        "ko": "작위의 영토 범위만으로 현재 지배자나 통제력을 판정하지 않는다. 작위를 받은 인물의 품계와 생업도 작위와 별도로 기록한다."
       }
     },
     {
@@ -272,8 +248,8 @@
       "kind": "paragraph",
       "anchor": "국가별-관직-p1",
       "text": {
-        "en": "Real ranks were laid over the tiers. Feudal heredity, emergency superintendence, and laying-on-of-hands remained in the prose, while the titles themselves kept the words those institutions had used in 2026.",
-        "ko": "실존 직제를 티어에 얹는다. 봉건 세습, 비상감독, 안수는 승계 방식으로 서술하고 직함 자체는 2026년 그 기관이 쓰던 말을 지킨다."
+        "en": "The state office table records each institution's duties and office names. Its column order is not a conversion into the five feudal title ranks.",
+        "ko": "국가별 관직표는 각 기관의 직무와 직함을 적는다. 봉건 작위의 다섯 층과 관직표의 열 순서를 같은 등급으로 읽지 않는다."
       }
     },
     {
@@ -297,16 +273,16 @@
       "kind": "paragraph",
       "anchor": "대한민국정부-p1",
       "text": {
-        "en": "President—Minister—Vice Minister—Director General—jusa clerk. The ranks the Government Complex Seoul main building had used. The president at tier 1 was elected by the duty houses. Only the civil-service houses that had inherited the duty, generation after generation, held a vote. It was an aristocratic election that kept only the form of democracy. In 2126, Ministers, Vice Ministers, and Directors General divided the records, distribution, and approvals at Cheong Wa Dae and the affairs of districts and stations. The Government Complex Seoul main building handled security and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. The jusa clerk held no land. The government ruled Jongno and Jung-gu directly, and the duty houses fought over control of the city center and over the factions among themselves.",
-        "ko": "대통령, 장관, 차관, 국장, 주사는 정부서울청사 본관이 쓰던 직급이다. 티어 1인 대통령은 당직 가문들이 선거로 뽑는다. 대대로 당직을 세습한 공무원 가문만 표를 가진다. 민주의 형식만 남은 귀족 선거다. 2126년 장관, 차관, 국장은 청와대의 기록·배급·인준과 구·역의 일을 나눠 맡았다. 정부서울청사 본관은 광화문·종로3가·을지로입구의 경비와 통행을 맡았다. 주사는 땅이 없다. 정부는 종로·중구를 직접 다스리고, 당직 가문들은 도심 통제와 내분을 주변으로 두고 싸운다."
+        "en": "President, Minister, Vice Minister, Director General, and jusa clerk are grades granted by the Government of the Republic of Korea. The duty houses elected the president; only inherited civil-service duty houses voted. The election retained a democratic form within those houses. In 2126, ministers, vice ministers, and directors divided the records, distribution, and approvals at Cheong Wa Dae and the affairs of districts and stations. The Government Complex Seoul main building handled security and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. A jusa clerk held no land. The government ruled Jongno and Jung-gu directly, while duty houses contested control of the city center.",
+        "ko": "대통령, 장관, 차관, 국장, 주사는 대한민국정부가 하사하는 품계이다. 대통령은 당직 가문들이 선거로 뽑는다. 대대로 당직을 세습한 공무원 가문만 표를 가진다. 민주의 형식만 남은 귀족 선거다. 2126년 장관, 차관, 국장은 청와대의 기록·배급·인준과 구·역의 일을 나눠 맡았다. 정부서울청사 본관은 광화문·종로3가·을지로입구의 경비와 통행을 맡았다. 주사는 땅이 없다. 정부는 종로·중구를 직접 다스리고, 당직 가문들은 도심 통제와 내분을 주변으로 두고 싸운다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "대한민국정부-p2",
       "text": {
-        "en": "The president, ministers, vice ministers, directors and jusa clerks exercise executive duties. Legislative deliberation and judicial review are separate authorities; registering a bill or judgment does not make a minister its legislator or judge. The five tiers compare the sixteen states' offices, not hereditary lordships or military command. The opening-day titles and holders of the legislative and judicial offices remain unconfirmed.",
-        "ko": "대통령·장관·차관·국장·주사는 행정부 직무를 맡는다. 입법부의 심의와 사법부의 재판은 별개다. 법안이나 판결을 기록했다는 이유로 장관이 입법자나 재판관이 되지 않는다. 다섯 티어는 십육국의 직위를 비교하는 분류이며 세습 영주 작위나 군 지휘권이 아니다. 입법부와 사법부의 개막 직함과 재직자는 확인되지 않았다."
+        "en": "The president, ministers, vice ministers, directors, and jusa clerks exercise executive duties. Legislative deliberation and judicial review are separate authorities; registering a bill or judgment does not make a minister its legislator or judge. An opening-day holder of a count title or higher also has a grade granted by the Government of the Republic of Korea.",
+        "ko": "대통령·장관·차관·국장·주사는 행정부 직무를 맡는다. 입법부의 심의와 사법부의 재판은 별개다. 법안이나 판결을 기록했다는 이유로 장관이 입법자나 재판관이 되지 않는다. 백작위 이상의 작위를 가진 개막 인물은 대한민국정부가 하사한 품계도 갖는다."
       }
     },
     {
@@ -1073,161 +1049,6 @@
           }
         ]
       ]
-    },
-    {
-      "kind": "heading",
-      "anchor": "옛-조선-관직-치환",
-      "depth": 2,
-      "text": {
-        "en": "The Old Joseon Office Substitution",
-        "ko": "옛 조선 관직 치환"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "옛-조선-관직-치환-p1-label",
-      "text": {
-        "en": "조선 관직 사용 흔적",
-        "ko": "**가. 조선 관직 사용 흔적**"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "옛-조선-관직-치환-p1",
-      "text": {
-        "en": "In 2126 the ruler of the Sluice was a lord, the ruler of the Government a president, and the ruler of the Junction a stationmaster.",
-        "ko": "2126년 수문국의 수장은 군주, 대한민국정부의 수장은 대통령, 환적국의 수장은 역장이다."
-      }
-    },
-    {
-      "kind": "table",
-      "anchor": "옛-조선-관직-치환-table2",
-      "columns": [
-        {
-          "en": "Old address",
-          "ko": "옛 호칭"
-        },
-        {
-          "en": "Tier",
-          "ko": "티어"
-        },
-        {
-          "en": "CK mapping",
-          "ko": "CK 대응"
-        },
-        {
-          "en": "Ground of substitution",
-          "ko": "치환 근거"
-        }
-      ],
-      "rows": [
-        [
-          {
-            "en": "Suryeong",
-            "ko": "수령"
-          },
-          {
-            "en": "1",
-            "ko": "1"
-          },
-          {
-            "en": "King",
-            "ko": "왕"
-          },
-          {
-            "en": "The chief of a county. The head-of-state cell of one of the sixteen states. Substituted by each nation's tier-1 title",
-            "ko": "고을 으뜸. 십육국 한 나라의 수장 칸. 나라별 티어1 직함으로 치환"
-          }
-        ],
-        [
-          {
-            "en": "Panseo",
-            "ko": "판서"
-          },
-          {
-            "en": "2",
-            "ko": "2"
-          },
-          {
-            "en": "Duke",
-            "ko": "공작"
-          },
-          {
-            "en": "The chief of a Six Boards office and the 2026 Bureau Head's approval. The cell of a state's great matters",
-            "ko": "육조 으뜸·2026 본부장 결재. 나라 안의 큰 일 칸"
-          }
-        ],
-        [
-          {
-            "en": "Gunsu",
-            "ko": "군수"
-          },
-          {
-            "en": "3",
-            "ko": "3"
-          },
-          {
-            "en": "Count",
-            "ko": "백작"
-          },
-          {
-            "en": "The seat that fed one gu. The living-sphere cell",
-            "ko": "한 구를 먹여 살리는 자리. 생활권 칸"
-          }
-        ],
-        [
-          {
-            "en": "Hyeongam",
-            "ko": "현감"
-          },
-          {
-            "en": "4",
-            "ko": "4"
-          },
-          {
-            "en": "Baron",
-            "ko": "남작"
-          },
-          {
-            "en": "One station, one sluice. The stronghold cell",
-            "ko": "역 하나·수문 하나. 거점 칸"
-          }
-        ],
-        [
-          {
-            "en": "Chamha",
-            "ko": "참하"
-          },
-          {
-            "en": "5",
-            "ko": "5"
-          },
-          {
-            "en": "Court figures",
-            "ko": "궁정 인물"
-          },
-          {
-            "en": "A seat with no land and a signature only. The working-rank cell",
-            "ko": "땅이 없고 서명만 있는 자리. 실무 칸"
-          }
-        ]
-      ]
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "옛-조선-관직-치환-p3-label",
-      "text": {
-        "en": "조선 육조와 업무 분담",
-        "ko": "**나. 조선 육조와 업무 분담**"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "옛-조선-관직-치환-p3",
-      "text": {
-        "en": "The names of the Six Boards were Joseon's Personnel, Taxation, Rites, War, Punishments, and Works. What actually moved at the opening remained four matters: water and rations, escort and the muster registers, accreditation and punishment, repair and standards. The personnel database had died with the call mesh, and the rites went to the churches, the temples, the shrines, and the chapels. The 2026 HR and general-affairs teams were not laid onto those seats.",
-        "ko": "육조의 이름은 조선의 이, 호, 예, 병, 형, 공이다. 개막에서 실제로 움직이는 일은 물과 배급, 호위와 징집 명부 관리, 인준과 형벌, 설비 수리와 규격 관리 넷으로 남는다. 인사 데이터베이스 기능은 호출망과 함께 죽었고, 제사는 교회와 절과 사당과 교당이 맡는다. 2026년식 인사나 총무 조직은 직제에 반영하지 않는다."
-      }
     },
     {
       "kind": "heading",
