@@ -13,14 +13,15 @@ export const stationAliases: Record<string, string> = {
   '아현(추계예술대)': '아현',
   '왕십리(성동구청)': '왕십리',
   '잠실(송파구청)': '잠실',
-  '총신대입구(이수)': '총신대입구 (이수)',
+  '이수': '총신대입구(이수)',
+  '총신대입구 (이수)': '총신대입구(이수)',
   '충정로(경기대입구)': '충정로',
   '한성대입구(삼선교)': '한성대입구',
   '혜화(서울대학교병원)': '혜화',
   '회현(남대문시장)': '회현',
 }
 
-export function presentationStations<T extends { id: string; name: string; lineIds: string[] }>(stations: T[]) {
+export function presentationStations<T extends { id: string; name: string; lineIds: string[]; memberIds?: string[] }>(stations: T[]) {
   const byId = new Map(stations.map((station) => [station.id, station]))
   const members = new Map<string, T[]>()
   for (const station of stations) {
@@ -32,8 +33,8 @@ export function presentationStations<T extends { id: string; name: string; lineI
   }
   return [...members].map(([id, group]) => ({
     ...byId.get(id)!,
-    memberIds: group.map((station) => station.id),
-    names: group.map((station) => station.name),
+    memberIds: group.flatMap((station) => station.memberIds ?? [station.id]),
+    names: id === '총신대입구(이수)' ? [byId.get(id)!.name] : group.map((station) => station.name),
     lineIds: [...new Set(group.flatMap((station) => station.lineIds))],
   }))
 }

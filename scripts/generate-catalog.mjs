@@ -417,6 +417,11 @@ const pointInPolygon = ([x, y], points) => {
 const capitalNameByState = new Map(stateRows.map((row) => [row.id, row.capital.replace(/역$/u, '')]))
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
+const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
+const approvedStationAliases = stationCatalog.data.station_aliases
+const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
+if (approvedStationAliases.length !== 18 || canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
+const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
 const stationDegree = new Map(seoulGraph.stations.map((station) => [station.id, 0]))
 for (const edge of seoulGraph.edges) {
@@ -424,13 +429,14 @@ for (const edge of seoulGraph.edges) {
   stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
   stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
 }
+for (const entry of approvedStationAliases) for (const alias of entry.aliases) stationIdByName.set(alias, entry.id)
 const capitalStateByStationId = new Map([...capitalNameByState.entries()].map(([stateId, name]) => {
   const stationId = stationIdByName.get(name)
   if (!stationId) throw new Error(`E_CAPITAL_STATION_NOT_FOUND:${stateId}:${name}`)
   return [stationId, stateId]
 }))
 const capitalStationIds = new Set(capitalStateByStationId.keys())
-const mapStations = seoulGraph.stations.map((station) => {
+const sourceMapStations = seoulGraph.stations.map((station) => {
   const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [station.lon, station.lat])
   const [x, y] = mapPoint([east, north])
   if (x < 0 || x > mapWidth || y < 0 || y > mapHeight) throw new Error(`E_STATION_MAP_BOUNDS:${station.id}:${x}:${y}`)
@@ -466,10 +472,34 @@ const mapStations = seoulGraph.stations.map((station) => {
     },
   }
 })
+const mapStations = sourceMapStations.filter((station) => canonicalStationId(station.id) === station.id).map((station) => {
+  const identity = approvedStationAliases.find((entry) => entry.id === station.id)
+  if (!identity) return station
+  const memberIds = [identity.id, ...identity.aliases]
+  const memberSurfaces = memberIds.map((id) => {
+    const source = sourceMapStations.find((entry) => entry.id === id)
+    const { source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds } = source.control
+    return { id, source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds }
+  })
+  const holders = new Set(memberSurfaces.map((entry) => `${entry.status}:${entry.primary}:${[...entry.polityIds].sort().join(',')}`))
+  const regions = new Set(memberSurfaces.map((entry) => entry.surfaceRegionId))
+  return {
+    ...station,
+    memberIds,
+    lineIds: [...new Set(sourceMapStations.filter((member) => memberIds.includes(member.id)).flatMap((member) => member.lineIds))],
+    degree: new Set(seoulGraph.edges.filter((edge) => memberIds.includes(edge.a) || memberIds.includes(edge.b)).map((edge) => canonicalStationId(memberIds.includes(edge.a) ? edge.b : edge.a))).size,
+    control: {
+      ...station.control,
+      memberSurfaces,
+      // 명시적 점유 원장(ControlDelta)이 있으면 별칭 구성원의 지표 소유가 달라도 원장이 이긴다.
+      ...(holders.size > 1 && station.control.source !== 'control-delta' ? { status: 'unknown', polityIds: [], polityNames: [], primary: null, hierarchy: { ...station.control.hierarchy, state: '미확인', regionalAuthority: null } } : {}),
+      ...(regions.size > 1 ? { surfaceRegionId: null, surfaceRegionName: null, hierarchy: { ...station.control.hierarchy, ...(holders.size > 1 && station.control.source !== 'control-delta' ? { state: '미확인' } : {}), regionalAuthority: station.control.source === 'control-delta' ? station.control.hierarchy.regionalAuthority : null } } : {}),
+    },
+  }
+})
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
-const stationLines = new Map(mapStations.map((station) => [station.id, station.lineIds]))
+const stationLines = new Map(sourceMapStations.map((station) => [station.id, station.lineIds]))
 const stationControlById = new Map(mapStations.map((station) => [station.id, station.control]))
-// 역 사이 구간 지배: 양 끝 역 지배가 같으면 그 지배, 다르면 분쟁, 한쪽이라도 unknown이면 unknown이다. 예외는 원장의 segmentOverrides로만 둔다.
 const segmentControlOverrides = new Map((stationControlLedger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
 if (segmentControlOverrides.size !== (stationControlLedger.segmentOverrides ?? []).length) throw new Error('E_SEGMENT_CONTROL_DUPLICATE')
 const segmentControl = (segmentId, a, b) => {
@@ -482,17 +512,31 @@ const segmentControl = (segmentId, a, b) => {
   if ([...a.polityIds].sort().join('|') === [...b.polityIds].sort().join('|')) return { source: 'derived-from-stations', deltaId: null, status: a.status, polityIds: a.polityIds, primary: a.primary }
   return { source: 'derived-from-stations', deltaId: null, status: 'contested', polityIds: [...new Set([...a.polityIds, ...b.polityIds])].sort(), primary: null }
 }
-const mapEdges = seoulGraph.edges.map((edge) => {
+// 2126 통행(소유자 결정 2026-09-28): 양 끝 점유 세력이 같으면 통행, 다르면 검문 통행이다.
+// 한강을 건너는 구간은 구간마다 소유자 결정을 받을 때까지 unknown으로 둔다. 강 북쪽·남쪽은 역의 자치구로 가른다.
+const HAN_NORTH_DISTRICTS = new Set(['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구'])
+const HAN_SOUTH_DISTRICTS = new Set(['강서구', '양천구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구'])
+const stationDistrictById = new Map(mapStations.map((station) => [station.id, station.district]))
+const crossesHan = (a, b) => {
+  const [da, db] = [stationDistrictById.get(a), stationDistrictById.get(b)]
+  return (HAN_NORTH_DISTRICTS.has(da) && HAN_SOUTH_DISTRICTS.has(db)) || (HAN_SOUTH_DISTRICTS.has(da) && HAN_NORTH_DISTRICTS.has(db))
+}
+const passageDecisions = new Map((stationControlLedger.passageDecisions ?? []).map((entry) => [entry.segmentId, entry.passage2126]))
+if (passageDecisions.size !== (stationControlLedger.passageDecisions ?? []).length) throw new Error('E_PASSAGE_DECISION_DUPLICATE')
+for (const value of passageDecisions.values()) if (!['open', 'checkpoint', 'blocked'].includes(value)) throw new Error(`E_PASSAGE_DECISION_VALUE:${value}`)
+const passage2126 = (edge, control) => {
   const id = `segment:${edge.a}~${edge.b}`
-  return {
-    ...edge,
-    id,
-    lineIds: stationLines.get(edge.a).filter((lineId) => stationLines.get(edge.b).includes(lineId)),
-    control: segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b)),
-    passage2126: 'unknown',
-  }
+  if (crossesHan(edge.a, edge.b)) return passageDecisions.get(id) ?? 'unknown'
+  return control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
+}
+const projectedEdges = seoulGraph.edges.map((edge) => ({ a: canonicalStationId(edge.a), b: canonicalStationId(edge.b), lineIds: stationLines.get(edge.a).filter((id) => stationLines.get(edge.b).includes(id)) }))
+const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
+  const id = `segment:${edge.a}~${edge.b}`
+  const control = segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b))
+  return { ...edge, id, control, passage2126: passage2126(edge, control) }
 })
 for (const segmentId of segmentControlOverrides.keys()) if (!mapEdges.some((edge) => edge.id === segmentId)) throw new Error(`E_SEGMENT_CONTROL_UNKNOWN_SEGMENT:${segmentId}`)
+for (const segmentId of passageDecisions.keys()) if (!mapEdges.some((edge) => edge.id === segmentId && crossesHan(edge.a, edge.b))) throw new Error(`E_PASSAGE_DECISION_NOT_HAN_CROSSING:${segmentId}`)
 const polygonMetrics = (points) => {
   let twiceArea = 0
   let weightedX = 0

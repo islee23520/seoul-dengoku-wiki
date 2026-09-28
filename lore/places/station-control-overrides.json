@@ -6,11 +6,119 @@
     {
       "id": "CITYHALL-2126-OPENING",
       "stationId": "시청",
-      "status": "contested",
-      "polityIds": ["S06", "S16"],
+      "status": "held",
+      "polityIds": [
+        "S06"
+      ],
       "primary": "S06",
-      "regionalAuthority": "대한민국정부 청사 경비·통행증 / 정동노총 수도·파업 명부",
+      "regionalAuthority": "대한민국정부 청사 경비·통행증",
       "stationManager": "시청역장"
+    },
+    {
+      "id": "SAMSEONG-2126-OPENING",
+      "stationId": "삼성",
+      "status": "held",
+      "polityIds": [
+        "S04"
+      ],
+      "primary": "S04",
+      "regionalAuthority": "강남구 권역 책임자",
+      "stationManager": "삼성역장"
+    },
+    {
+      "id": "GWANGMYEONGSAGEORI-2126-OPENING",
+      "stationId": "광명사거리",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "regionalAuthority": "구로구 권역 책임자",
+      "stationManager": "광명사거리역장"
+    },
+    {
+      "id": "SEOKSU-2126-OPENING",
+      "stationId": "석수",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "regionalAuthority": "금천구 권역 책임자",
+      "stationManager": "석수역장"
+    },
+    {
+      "id": "DAECHI-2126-OPENING",
+      "stationId": "대치",
+      "status": "held",
+      "polityIds": [
+        "S16"
+      ],
+      "primary": "S16",
+      "regionalAuthority": "강남구 권역 책임자",
+      "stationManager": "대치역장"
+    }
+  ],
+  "passageDecisions": [
+    {
+      "segmentId": "segment:Yeongdeungpo~서울역",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:노량진~용산",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:당산~합정",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:강변~잠실나루",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:압구정~옥수",
+      "passage2126": "open",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:동작~이촌",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:마포~여의나루",
+      "passage2126": "open",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:광나루~천호",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:자양~청담",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:서울숲~압구정로데오",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:강남구청~서울숲",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    },
+    {
+      "segmentId": "segment:공덕~마곡나루",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
     }
   ]
 }

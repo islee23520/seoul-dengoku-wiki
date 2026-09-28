@@ -53,7 +53,8 @@ export function stepFor(cp) {
 export const UNSPENT_FLOOR = 75
 // 사용자 확정 직위 줄이 직접 가리키는 핵심 기술의 A 등급(소유자 결정 2026-09-28, G2 Q6 C). 견본 밖에서는 이 한 칸뿐이다.
 export const OWNER_TIER_A = { K1004: 'Observation' }
-const CONFIRMED_OFFICE = /^직위: .+ \(사용자 확정\)$/u
+// 확정 여부는 위 표가 기록한다. 공개 카드 문장에는 확정 표시를 두지 않는다.
+const OFFICE_LINE = /^직위: /u
 export const bandFor = (total) => BANDS.filter((b) => total >= b.min && total <= b.max).map((b) => b.name)
 // Per·Will은 IQ에서 파생하므로(B16) 그 기술의 행위 문장은 IQ 근거로 센다.
 const abilityOf = (attr) => (attr === 'Per' || attr === 'Will' ? 'IQ' : attr)
@@ -324,8 +325,7 @@ function cardSentences(card, core) {
           if (field) {
             fields.push({ key: field[1].trim(), value: field[2].trim(), pointer: leaf.pointer, quote: line })
             if (ACTION_FIELDS.has(field[1].trim())) {
-              const confirmed = CONFIRMED_OFFICE.test(line)
-              for (const s of field[2].split(/(?<=[.])\s+/u)) if (s.trim()) out.push({ section: field[1].trim(), text: s.trim().replace(CAST_SUFFIX, ''), pointer: leaf.pointer, line, confirmed })
+              for (const s of field[2].split(/(?<=[.])\s+/u)) if (s.trim()) out.push({ section: field[1].trim(), text: s.trim().replace(CAST_SUFFIX, ''), pointer: leaf.pointer, line })
             }
             continue
           }
@@ -440,8 +440,8 @@ export function derivePerson(root, person, castNames) {
       review.push({ section: s.section, text: s.text, verdict: rule ? (rule.skip ? (rule.other ? 'other-actor' : 'skip') : `${rule.generic ? '~' : ''}${rule.skill ?? '-'}${rule.abilities ? `+${rule.abilities.join('')}` : ''}`) : 'unmatched' })
       if (!rule || rule.skip) continue
       const ev = evidence(card.path, s.pointer, s.text)
-      // 사용자 확정 직위 줄이 가리키는 기술은 A다. 인용은 확정 표시가 보이도록 직위 줄 전체로 한다.
-      const confirmed = s.section === '직위' && s.confirmed
+      // 소유자가 정한 직위 기술(OWNER_TIER_A)은 A다. 인용은 직위 줄 전체로 한다.
+      const confirmed = s.section === '직위' && Boolean(rule.skill) && SKILLS[rule.skill]?.name === OWNER_TIER_A[person.id]
       const tier = confirmed ? 'A' : TIER_BY_SECTION[s.section] ?? 'C'
       if (rule.skill && !rule.skipSkill) addSkill(rule.skill, tier, confirmed ? evidence(card.path, s.pointer, s.line) : ev, s.section)
       const abilities = new Set(rule.abilities ?? [])
@@ -476,7 +476,7 @@ const PILOT_SOURCES = {
   'contract-rep': [CONTRACT, undefined, 'Reputation은 카드가 유명세를 적은 사람에게만 둔다.'],
   'guide-bayonet': [G, undefined, '최소 문구는 `무공: 총검술` 또는 `신종목은 총검술을 익혔다.`다.'],
   'jo-job': [U, '/content/3/items/4/ko', '생업: 주 탐사원 / 부 순찰대'],
-  'jo-office': [U, '/content/3/items/6/ko', '직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명 (사용자 확정)'],
+  'jo-office': [U, '/content/3/items/6/ko', '직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명'],
   'jo-temper': [U, '/content/3/items/7/ko', '사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다'],
   'jo-fear': [U, '/content/3/items/9/ko', '공포: 유명세가 일행을 현상금·징집·정치 선전의 표적으로 만드는 것'],
   'jo-rule': [U, '/content/3/items/10/ko', '통치 방식: 위험·대가·철수 조건을 먼저 공개하고 계약한다.'],
@@ -748,7 +748,7 @@ export function verify(doc, root = ROOT) {
       if (!(s.tier in TIERS)) { fail(`${tag} ${s.name}: 등급 ${s.tier} 무효`); continue }
       if (s.tier === 'A' && !pilot) {
         if (OWNER_TIER_A[p.id] !== s.name) fail(`${tag} ${s.name}: A 등급은 견본과 소유자가 정한 사용자 확정 직위 기술에만`)
-        if (!(s.evidence ?? []).some((e) => CONFIRMED_OFFICE.test(e.quote) && quoteHolds(root, e))) fail(`${tag} ${s.name}: A 등급에 사용자 확정 직위 인용이 없음`)
+        if (!(s.evidence ?? []).some((e) => OFFICE_LINE.test(e.quote) && quoteHolds(root, e))) fail(`${tag} ${s.name}: A 등급에 사용자 확정 직위 인용이 없음`)
       }
       if (s.cp !== TIERS[s.tier]) fail(`${tag} ${s.name}: 등급 ${s.tier}=${TIERS[s.tier]} CP인데 ${s.cp} CP`)
       const known = Object.values(SKILLS).find((k) => k.name === s.name)
