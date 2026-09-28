@@ -340,6 +340,15 @@ const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
 const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
 const sixteenStatesLore = JSON.parse(await readFile(resolve(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
+const stateTable = sixteenStatesLore.content.find((block) => block.anchor === 'table')
+if (!stateTable || stateTable.kind !== 'table' || stateTable.rows.length !== 16) throw new Error('E_STATE_DETAIL_TABLE')
+const stateDetails = new Map(stateTable.rows.map((row) => [row[0].ko, {
+  name: row[1].ko,
+  founded: row[5].ko,
+  vassals: row[6].ko,
+  religion: row[7].ko,
+  foreignRelations: row[8].ko,
+}]))
 const relationTable = sixteenStatesLore.content.find((block) => block.anchor === 'table-gov-relations')
 if (!relationTable || relationTable.kind !== 'table') throw new Error('E_GOV_RELATIONS_TABLE_MISSING')
 const relationByStateName = new Map(relationTable.rows.map(([state, relation]) => {
@@ -507,6 +516,8 @@ const polygonMetrics = (points) => {
 const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => left.localeCompare(right)).map(([id, name]) => {
   const state = stateCatalog.find((candidate) => candidate.slug === id.toLowerCase())
   if (!state) throw new Error(`E_TERRITORY_STATE_NOT_FOUND:${id}:${name}`)
+  const details = stateDetails.get(id)
+  if (!details || details.name !== name) throw new Error(`E_STATE_DETAIL_IDENTITY:${id}`)
   const candidates = regionAtlas.regions
     .filter((region) => surfaceHolders(region.content).length === 1 && surfaceHolders(region.content)[0] === id)
     .map((region) => {
@@ -531,6 +542,10 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     relation: relationByStateName.get(name) ?? null,
     ruler: state.ruler,
     cause: state.cause,
+    founded: details.founded,
+    vassals: details.vassals,
+    religion: details.religion,
+    foreignRelations: details.foreignRelations,
     labelX: label.x,
     labelY: label.y,
     capitalStationId,
@@ -716,6 +731,24 @@ const emptyYears = timelineYears.filter((entry) => entry.summary.length === 0).m
 if (timelineYears.length === 0 || timelineYears[0]?.year !== 2026 || timelineYears.at(-1)?.year > 2126 || emptyYears.length > 0) {
   throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${emptyYears.join(',')}`)
 }
+const stateEvents = new Map(territoryStates.map((state) => [state.name, []]))
+let eventYear = null
+for (const block of centuryAnnalsDocument.content) {
+  if (block.kind === 'heading' && block.depth <= 3) {
+    const year = block.depth === 3 ? Number(koText(block.text.ko).match(/^((?:20|21)\d{2})년$/u)?.[1]) : NaN
+    eventYear = Number.isInteger(year) ? year : null
+  }
+  if (eventYear === null || block.kind !== 'paragraph') continue
+  const text = koText(block.text.ko)
+  for (const state of territoryStates) {
+    if (text.includes(state.name)) stateEvents.get(state.name).push({ year: eventYear, text, sourceRoute: `/world/Century-Annals#${eventYear}년` })
+  }
+}
+for (const state of territoryStates) {
+  state.chronology = stateEvents.get(state.name)
+  if (state.chronology.length === 0) throw new Error(`E_STATE_CHRONOLOGY_EMPTY:${state.id}`)
+}
+await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
 await writeFile(resolve(publicRoot, 'timeline-overview.json'), `${JSON.stringify({ schema: 'seoul-timeline-overview.v1', years: timelineYears, states: territoryStates }, null, 2)}\n`)
 
 const personCards = new Map()

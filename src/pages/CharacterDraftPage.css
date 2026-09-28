@@ -1,0 +1,29 @@
+.sheet-editor { max-inline-size: none; }
+.sheet-editor-layout { display: grid; grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+.sheet-editor-list, .sheet-editor-work, .sheet-editor-candidates, .sheet-editor-diff { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 1rem; min-inline-size: 0; }
+.sheet-editor-list { position: sticky; inset-block-start: 1rem; max-block-size: calc(100dvh - 2rem); display: grid; grid-template-rows: auto auto auto minmax(0, 1fr) auto; gap: 0.75rem; }
+.sheet-editor-list h2, .sheet-editor-candidates h2, .sheet-editor-diff h2 { margin: 0; font-size: 1.15rem; }
+.sheet-editor-list label, .sheet-editor-fields section { display: grid; gap: 0.4rem; }
+.sheet-editor-list ul { min-block-size: 0; overflow-y: auto; list-style: none; margin: 0; padding: 0; border-block: 1px solid var(--wiki-line); }
+.sheet-editor-list li + li { border-block-start: 1px solid var(--wiki-line); }
+.sheet-editor-list li button { inline-size: 100%; text-align: start; }
+.sheet-editor-list li small { display: block; color: var(--wiki-muted); overflow-wrap: anywhere; }
+.sheet-editor-list li button[aria-pressed="true"] { background: var(--wiki-toc); color: var(--wiki-accent-dark); }
+.sheet-editor-work { display: grid; gap: 1rem; }
+.sheet-editor-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding-block-end: 1rem; border-block-end: 1px solid var(--wiki-line); }
+.sheet-editor-toolbar span { margin-inline-end: auto; color: var(--wiki-muted); }
+.sheet-editor button { border: 1px solid var(--wiki-line); color: var(--wiki-text); background: var(--wiki-paper); padding: 0.5rem 0.75rem; cursor: pointer; }
+.sheet-editor button:hover, .sheet-editor button:focus-visible { border-color: var(--wiki-accent); color: var(--wiki-accent-dark); }
+.sheet-editor input, .sheet-editor select, .sheet-editor textarea { inline-size: 100%; min-inline-size: 0; border: 1px solid var(--wiki-line); color: var(--wiki-text); background: var(--wiki-paper); padding: 0.6rem; font: inherit; }
+.sheet-editor textarea { resize: vertical; }
+.sheet-editor-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.sheet-editor-fields section:nth-child(5) { grid-column: 1 / -1; }
+.sheet-editor-fields label { font-weight: 700; }
+.sheet-editor-fields small, .sheet-editor-status { color: var(--wiki-muted); overflow-wrap: anywhere; }
+.sheet-editor-status { background: var(--wiki-toc); padding: 0.75rem; margin: 0; }
+.sheet-editor-candidates { background: var(--wiki-toc); display: grid; gap: 0.75rem; }
+.sheet-editor-candidates div { border-block-start: 1px solid var(--wiki-line); padding-block-start: 0.75rem; }
+.sheet-editor-diff dl { display: grid; gap: 0.5rem; }
+.sheet-editor-diff dl div { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 0.5rem; }
+.sheet-editor-diff dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 768px) { .sheet-editor-layout { grid-template-columns: minmax(0, 1fr); } .sheet-editor-list { position: static; max-block-size: 20rem; } .sheet-editor-fields { grid-template-columns: minmax(0, 1fr); } .sheet-editor-fields section:nth-child(5) { grid-column: auto; } }

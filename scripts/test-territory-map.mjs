@@ -4,6 +4,14 @@ import test from 'node:test'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
 import { validatedDensities } from './region-density.mjs'
 
+test('rail geometry uses one visible source and the detail panel stays in the viewport', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  const styles = await readFile(new URL('../src/components/OpeningTerritoryMap.css', import.meta.url), 'utf8')
+  assert.match(map, /showRail && !rail && data\.edges\.flatMap/u)
+  assert.match(map, /showRail && displayedRail\.map/u)
+  assert.match(styles, /\.territory-map-flat > \.territory-detail \{ position: fixed;/u)
+})
+
 test('projected density covers all 427 source codes and preserves the unrounded area formula', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const source = JSON.parse(await readFile(new URL('../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
@@ -281,6 +289,29 @@ test('government relations come from the canon table and use only defined terms 
   for (const state of data.states) {
     assert.ok(state.relation === null || ['복속', '보좌', '독립'].includes(state.relation), state.id)
     assert.equal(state.relation, relations.get(state.name) ?? null, state.id)
+  }
+})
+
+test('all map states project founding, government, foreign relations and dated annals from canon', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const states = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  const annals = JSON.parse(await readFile(new URL('../lore/chronology/Century-Annals.json', import.meta.url), 'utf8'))
+  const rows = new Map(states.content.find((node) => node.anchor === 'table').rows.map((row) => [row[0].ko, row]))
+  const prose = new Set(annals.content.filter((node) => node.kind === 'paragraph').map((node) => typeof node.text?.ko === 'string' ? node.text.ko : node.text?.ko?.map((run) => run.text).join('')))
+  for (const state of data.states) {
+    const row = rows.get(state.id)
+    assert.ok(row, state.id)
+    assert.equal(state.founded, row[5].ko, state.id)
+    assert.equal(state.government, row[4].ko, state.id)
+    assert.equal(state.vassals, row[6].ko, state.id)
+    assert.equal(state.religion, row[7].ko, state.id)
+    assert.equal(state.foreignRelations, row[8].ko, state.id)
+    assert.ok(state.chronology.length > 0, state.id)
+    for (const event of state.chronology) {
+      assert.ok(event.text.includes(state.name), state.id)
+      assert.ok(prose.has(event.text), state.id)
+      assert.equal(event.sourceRoute, `/world/Century-Annals#${event.year}년`, state.id)
+    }
   }
 })
 
