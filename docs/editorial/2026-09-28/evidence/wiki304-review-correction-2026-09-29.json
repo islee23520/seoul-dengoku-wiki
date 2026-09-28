@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-09-28T22:34:40.744213+00:00",
+  "scope": "Documentation-only factual correction; existing local outputs inspected without rebuilding. No publication or scenario approval asserted.",
+  "wikiHeadBeforeCorrection": "677b64fe6ee45076b78516bb2eb1389993a5c703",
+  "reviewSnapshot": {
+    "workspacePath": "research/2026-09-29/director-followup/sources/seoul-dengoku-wiki-open-audit.json",
+    "sha256": "e6a485d7a8ba5a4cb7880842a79b234cdaab069f376479efc9e5a401149a5c05",
+    "fetchedAt": "2026-09-28 22:30:32 UTC",
+    "review": {
+      "id": 5341433031,
+      "html_url": "https://github.com/islee23520/seoul-dengoku-wiki/pull/304#pullrequestreview-5341433031",
+      "submitted_at": "2026-09-28T16:09:04Z",
+      "commit_id": "677b64fe6ee45076b78516bb2eb1389993a5c703",
+      "state": "CHANGES_REQUESTED",
+      "body": "수정 요청: `docs/editorial/2026-09-28/tripothon-299-298-verification.md`가 아직 “#299 댓글 0개”라고 기록하지만 소유자 댓글 5871403351은 이동 거리를 턴 수가 아닌 역·층 경로로 표현하도록 정정했습니다. 또한 문서 앞부분의 공개 연표/85개 카탈로그 검증은 당시 이력이고, 현재 제안은 비게시 `lore/editorial/Tripothon-Return-Relay-Proposal.json`입니다. 당시 검증과 현재 게시 상태를 혼동하지 않도록 기록을 정리해 주세요. 제가 만든 보조 PR #310은 최신 귀하의 브랜치 위로 갱신해 두었고 이 댓글 사실 정정 한 줄만 담습니다. 원하시면 그 PR의 문장을 가져가되, 현재 비게시 경계와 원정 위치·수치의 미승인 상태는 유지해 주세요. 공개 페이지로 다시 옮기거나 시나리오 승인을 전제로 하지 마세요."
+    }
+  },
+  "ownerComments": [
+    {
+      "id": 5871403351,
+      "html_url": "https://github.com/islee23520/seoul-dengoku/issues/299#issuecomment-5871403351",
+      "created_at": "2026-09-28T13:58:15Z",
+      "updated_at": "2026-09-28T13:58:15Z",
+      "body": "@berkshirehathaways 게임 로직이 바뀌어 이 이슈 작업 기준이 달라졌습니다. 본문 맨 위 「2026-09-28 게임 로직 변경」 절을 먼저 확인해 주세요.\n\n이 이슈에 미치는 영향: 위치 설정 자체는 그대로다. 다만 도달 방식이 시간 기반 이동이므로 강남구청에서의 거리는 「몇 턴」이 아니라 「몇 역·어떤 층 경로」로 적어 주세요."
+    },
+    {
+      "id": 5864851948,
+      "html_url": "https://github.com/islee23520/seoul-dengoku/issues/298#issuecomment-5864851948",
+      "created_at": "2026-09-28T06:43:42Z",
+      "updated_at": "2026-09-28T06:43:42Z",
+      "body": "폐쇄 통신창고 위치: 위키 정본에 위치가 없음을 전수 검색으로 확인(2026-09-28). 소유자 지시로 @berkshirehathaways 에게 위키 정본 설정을 요청 → #299 (마감 2026-09-30 18:00 KST). 확정 전까지 목표 사슬 2단계는 막힘 유지, 임의 역 사용 금지."
+    }
+  ],
+  "ownerCorrectionPR": {
+    "url": "https://github.com/islee23520/seoul-dengoku-wiki/pull/310",
+    "head": "12d1c6b7658d5e2972e68bea78059c85e75b4b99",
+    "inspection": "gh pr view + gh pr diff: one added/one removed line in the verification document; correction wording adopted, no merge"
+  },
+  "editorialSource": {
+    "path": "lore/editorial/Tripothon-Return-Relay-Proposal.json",
+    "sha256": "4b108d3e3c3c38fb8ae4bd9f0f7ea97aeb4b8b272734d86ed69799389c9501fd",
+    "status": "draft",
+    "domain": "editorial",
+    "blocks": 24,
+    "unchangedFromHead": true,
+    "locationProposalPreserved": true
+  },
+  "existingOutputChecks": [
+    {
+      "path": "src/generated/wikiCatalog.ts",
+      "sha256": "cb93f3e529ef0b9efdc426e4ccf49385c6c42218ab4727dd6d6531426dec1565",
+      "proposal_slug_absent": true,
+      "location_proposal_anchor_absent": true
+    },
+    {
+      "path": "src/generated/publication-manifest.json",
+      "sha256": "b17fbcfa63430a29bfe8262a93510fb7036de7f9f693904b220e627bb8c0968e",
+      "proposal_slug_absent": true,
+      "location_proposal_anchor_absent": true
+    },
+    {
+      "path": "lore/chronology/Scenario-Timeline.json",
+      "sha256": "5683e6cf1d610728dac960f39117899cfd0fc3fe903869a7b7333d8a7d973dfc",
+      "proposal_slug_absent": true,
+      "location_proposal_anchor_absent": true
+    },
+    {
+      "path": "src/generated/world/Scenario-Timeline.json",
+      "sha256": "62ef47548815027bcfa59961901138a223d03769a9a54e5ea7b5ef69078ae56d",
+      "proposal_slug_absent": true,
+      "location_proposal_anchor_absent": true
+    },
+    {
+      "path": "src/generated/world-en/Scenario-Timeline.json",
+      "sha256": "fe74b187e1065b18fb4979374b72eccd915245f29f8bf66df1953374d1bf10df",
+      "proposal_slug_absent": true,
+      "location_proposal_anchor_absent": true
+    },
+    {
+      "path": "src/generated/world/Tripothon-Return-Relay-Proposal.json",
+      "exists": false
+    },
+    {
+      "path": "src/generated/world-en/Tripothon-Return-Relay-Proposal.json",
+      "exists": false
+    }
+  ],
+  "manifestDocuments": 84,
+  "limitations": [
+    "Existing generated files are local evidence, not a new build or live deployment check.",
+    "Full build/tests and browser QA were not rerun for prose-only changes.",
+    "Location, roster, values, layer route and runtime implementation remain unapproved or unverified as documented."
+  ],
+  "markdownLocalLinks": {
+    "result": "PASS",
+    "paths": [
+      "../../../lore/editorial/Tripothon-Return-Relay-Proposal.json",
+      "evidence/wiki304-review-correction-2026-09-29.json"
+    ]
+  }
+}

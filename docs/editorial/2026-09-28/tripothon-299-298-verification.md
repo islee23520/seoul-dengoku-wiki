@@ -1,18 +1,28 @@
 # #299·#298 위키 제안 검증
 
-검증일: 2026-09-28. 브랜치: `codex/tripothon-warehouse-scenario`.
+최초 검증일: 2026-09-28. 사실관계·게시 경계 정정일: 2026-09-29. 브랜치: `codex/tripothon-warehouse-scenario`.
 기준 WIKI HEAD: `e83970e8b5796c1f3b428ef58c79a5c1cb48b7f5`.
 GAME 입력 HEAD: `84920d8c418d0f8e2bbc474b83d4a9ca0c397728`.
 GDD 참조 HEAD: `e4b14cac11314c47da23b8e04eb4c4e336ffc3e6`.
 
-## 범위와 보존
+## 현재 상태와 이력 구분 (2026-09-29)
+
+현재 검토 원천은 비게시 [`lore/editorial/Tripothon-Return-Relay-Proposal.json`](../../../lore/editorial/Tripothon-Return-Relay-Proposal.json)이며 `status: draft`다. 원정 위치·분대·수치·선택은 미승인 상태로 유지한다. 공개 카탈로그·검색·연표에서 제외하며, 공개 연표에서 옮긴 위치 문단은 편집 원천에만 보존한다.
+
+아래 최초 검증부터 ‘리더의 실제 브라우저 확인 및 표시 정정’까지의 공개 경로·연표 문단·카탈로그 85개·테스트 수·원천 해시는 **공개 제외 적용 전의 과거 관찰**이다. 당시 실행과 복구 이력을 보존하며 현재 게시·승인 또는 이번 재실행 결과로 해석하지 않는다. ‘공개 제외 정책 적용 이력’ 이후의 후속 검증도 각 단계 당시의 기록이다. 이번 문서 정정은 원천·생성물·게시 정책을 바꾸지 않았다.
+
+소유자 [PR #304 정식 검토](https://github.com/islee23520/seoul-dengoku-wiki/pull/304#pullrequestreview-5341433031)와 [#299 댓글](https://github.com/islee23520/seoul-dengoku/issues/299#issuecomment-5871403351)을 대조했다. 보조 [PR #310](https://github.com/islee23520/seoul-dengoku-wiki/pull/310)의 `12d1c6b7658d5e2972e68bea78059c85e75b4b99`에는 댓글 사실 정정 한 줄만 있음을 확인하고 해당 문장을 반영했다. PR 자체를 병합한 것은 아니다.
+
+이번 확인 기준 HEAD는 `677b64fe6ee45076b78516bb2eb1389993a5c703`이다. 기존 생성물의 공개 manifest 84문서, 카탈로그·manifest 내 제안 항목 부재, 한영 제안 생성 파일 부재, 연표 원천·한영 생성물의 위치 제안 제외를 확인했다. 편집 원천 SHA-256 `4b108d3e3c3c38fb8ae4bd9f0f7ea97aeb4b8b272734d86ed69799389c9501fd`와 24개 블록은 변경하지 않았다. [근거·검사 기록](evidence/wiki304-review-correction-2026-09-29.json)에 출처와 해시를 남겼다. 산문만 수정했으므로 build·테스트·브라우저 QA를 다시 실행하지 않았으며 원격 게시도 확인하지 않았다.
+
+## 최초 검증 당시 범위와 보존
 
 - `lore/chronology/Scenario-Timeline.json`: 기존 회수 카드 뒤에 학동·논현2동의 **미승인 위치 제안** 한 문단을 한영으로 추가했다. 기존 41개 블록은 HEAD와 파싱 값 대조에서 모두 동일했다.
 - `lore/chronology/Tripothon-Return-Relay-Proposal.json`: 별도 한영 draft 원천. 원문 근거, 경로, 성인 3명 분대, 별도 대여 장비, 5+1단계의 14개 선택 행, 수치 효과, 성공·실패·귀환 조건, 소유자 결정 5행, 구현 인수 사례를 담았다.
 - 지역 관측 JSON·OSM 객체·역 그래프·게임 데이터는 변경하지 않았다. 기존 명칭, 2124년 기연결, 민웅기의 대전 체류, 신준의 동의·휴식, S00 원장 행의 proposal 상태를 보존했다.
-- #299와 #298 본문·댓글을 `gh issue view --repo islee23520/seoul-dengoku --json title,body,comments`로 확인했다. #299 댓글 0개, #298 소유자 댓글 5864851948은 승인 전 위치 잠금을 요구한다.
+- #299와 #298 본문·댓글을 `gh issue view --repo islee23520/seoul-dengoku --json title,body,comments`로 확인했다. #298 소유자 댓글 5864851948은 승인 전 위치 잠금을 요구한다. 이후 #299 소유자 댓글 5871403351은 도달 거리를 턴 수 대신 역·층 경로로 적도록 정정했다. 제안 본문의 3간선은 역 사이 연결 수로만 설명하며 실제 거리·시간·층 경로는 확정하지 않았다.
 
-## 실행과 결과
+## 최초 검증 당시 실행과 결과
 
 | 명령 / 확인 | 결과 |
 |---|---|
@@ -27,13 +37,13 @@ GDD 참조 HEAD: `e4b14cac11314c47da23b8e04eb4c4e336ffc3e6`.
 | `git diff --check` | exit 0 |
 | Node assert 직접 대조 | 기존 timeline 블록 41개 보존, 강남구청↔학동·강남구청↔선정릉 간선 존재, 두 로케일 reviewText의 D298-D/T≥80/지역 ID 존재, 예시 경로 물자 2·긴장도 22 확인 |
 
-생성 결과 확인 경로:
+당시 생성 결과 확인 경로 (현재 제안은 공개 제외):
 
 - `src/generated/world/Tripothon-Return-Relay-Proposal.json` → `/world/Tripothon-Return-Relay-Proposal`
 - `src/generated/world-en/Tripothon-Return-Relay-Proposal.json` → `/en/world/Tripothon-Return-Relay-Proposal`
 - `src/generated/world/Scenario-Timeline.json`의 위치 제안 문단.
 
-이는 로컬 공개용 렌더 원천 및 production build 확인이다. 실제 원격 사이트 게시나 브라우저 시각 QA를 수행했다는 뜻이 아니다. 생성물은 커밋하지 않는다. 별도 lint 스크립트는 없으며 스키마·publication gate·TypeScript·diff 검사를 사용했다.
+이는 당시 로컬 공개용 렌더 원천 및 production build 확인 기록이다. 실제 원격 사이트 게시나 브라우저 시각 QA를 수행했다는 뜻이 아니다. 생성물은 커밋하지 않는다. 별도 lint 스크립트는 없으며 스키마·publication gate·TypeScript·diff 검사를 사용했다.
 
 ## 중간 실패와 복구
 
@@ -42,9 +52,9 @@ GDD 참조 HEAD: `e4b14cac11314c47da23b8e04eb4c4e336ffc3e6`.
 - 생성 JSON은 본문 구조 앵커를 reviewText에 그대로 싣지 않는다. 첫 임시 확인 스크립트의 앵커/문자열 기대를 실제 렌더 계약의 reviewText 문구 검사로 바로잡았다. 마지막 확인은 exit 0이다.
 - 선택 LSP biome은 기존 미설치 상태다. 설치하지 않았다. Vite의 향후 native config 경고와 500kB chunk 경고는 남았으며 빌드 실패는 아니다.
 
-## 미결·반영 상태
+## 최초 검증 당시 미결·반영 상태
 
-로컬 검토용 변경이며 커밋·푸시·PR·소유자 승인·원격 게시·Unity 구현을 하지 않았다. D299 위치, D298-A 분대/장비, D298-B 경제/척도/80 임계, D298-C 시계/판정 매핑, D298-D 조우/정착 조건은 승인 대기다. 기본안은 S16 통행 협상과 귀환이며 S04 전투 세팅은 제공하지 않는다. 수치는 시연 비교용 제안으로 GDD의 K_i·O 공식 입력과 단위가 다르다. 인수 사례는 Unity 실행 테스트가 아니다.
+최초 검증 당시에는 로컬 검토용 변경으로 커밋·푸시·PR·소유자 승인·원격 게시·Unity 구현 전이었다. D299 위치, D298-A 분대/장비, D298-B 경제/척도/80 임계, D298-C 시계/판정 매핑, D298-D 조우/정착 조건은 승인 대기다. 기본안은 S16 통행 협상과 귀환이며 S04 전투 세팅은 제공하지 않는다. 수치는 시연 비교용 제안으로 GDD의 K_i·O 공식 입력과 단위가 다르다. 인수 사례는 Unity 실행 테스트가 아니다.
 
 ## 독립 검토 후 정산 경계 보강
 
@@ -83,7 +93,7 @@ GDD 참조 HEAD: `e4b14cac11314c47da23b8e04eb4c4e336ffc3e6`.
 마지막 표시 교정: 한국어 표의 두 범위 `-10~10`, `0~100`이 GFM의 취소선으로 이어질 수 있어 `-10부터 10까지`, `0부터 100까지`로 풀어 썼다. 수치는 동일하다. 재빌드·TypeScript·publication gate exit 0, 생성된 제안의 `delete` 노드 0개를 확인했다. 최종 원천 SHA-256은 `78bae3d8493e709fe7ea5ea6a648494ef00723b47d7aae7197cc0cd855014f65`다. 이전 캡처는 앞선 동일 의미 제안의 관찰 기록이며 이 표시 교정 이후 캡처로 재분류하지 않는다.
 
 
-## 최신 공개 정책 적용 (후속 검증)
+## 공개 제외 정책 적용 이력 (후속 검증)
 
 앞선 공개 경로·카탈로그 85개 기록은 당시 상태의 증거다. 현재 원천은 `lore/editorial/Tripothon-Return-Relay-Proposal.json`으로 옮겼고 공개 카탈로그·검색·연표에서는 제외한다. `status: draft`와 미승인 창작 제안 요약을 그대로 유지한다. 단어를 우회해서 공개하거나 승인된 정본으로 바꾸지 않는다. 기존 연표의 위치 제안 문단은 같은 앵커로 편집 원천에 보존했으며 원래 사건 카드는 유지한다.
 
