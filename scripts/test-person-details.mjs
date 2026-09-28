@@ -777,7 +777,7 @@ test('Jo Jaepyo has the landing formation without an invented Marine Corps servi
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1003.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '조재표')
   assert.match(detail.sections['무공'], /^호위철벽진의 상륙호위진\./u)
-  assert.match(detail.sections['무공'], /해병대 복무.*미확인/u)
+  assert.doesNotMatch(detail.sections['무공'], /해병대 복무|총기 접근/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-조재표')
 })
 
@@ -785,7 +785,7 @@ test('Lee Yeon has the escort formation without invented firearm access or servi
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1004.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '이연')
   assert.match(detail.sections['무공'], /^호위철벽진의 상륙호위진\./u)
-  assert.match(detail.sections['무공'], /총기 접근과 복무 이력은 미확인/u)
+  assert.doesNotMatch(detail.sections['무공'], /총기 접근|복무 이력/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-이연')
 })
 
@@ -793,7 +793,7 @@ test('Min Woonggi practices judo separately from his repair trade', async () => 
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1008.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '민웅기')
   assert.match(detail.sections['무공'], /^유도\./u)
-  assert.match(detail.sections['무공'], /징집 이력과 무기·탄약 접근은 미확인/u)
+  assert.doesNotMatch(detail.sections['무공'], /징집 이력|무기·탄약 접근/u)
   assert.doesNotMatch(detail.sections['무공'], /공동 서사|조재표와 이연/u)
   assert.doesNotMatch(detail.biography, /공동 서사|왜 따르는가/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-민웅기')
