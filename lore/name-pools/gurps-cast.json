@@ -26210,12 +26210,12 @@
    "state": "S09",
    "method": "card-lexicon",
    "role": {
-    "display": "금고 당직·출자 장부 보전",
+    "display": "송신 당직·출자 장부 보전",
     "evidence": [
      {
       "path": "lore/characters/Cast-State-09.json",
       "pointer": "/content/2/items/0/ko",
-      "quote": "생업: 금고 당직·출자 장부 보전"
+      "quote": "생업: 송신 당직·출자 장부 보전"
      }
     ]
    },
@@ -26263,7 +26263,33 @@
       {
        "path": "lore/characters/Cast-State-09.json",
        "pointer": "/content/2/items/0/ko",
-       "quote": "생업: 금고 당직·출자 장부 보전"
+       "quote": "생업: 송신 당직·출자 장부 보전"
+      }
+     ],
+     "cp": 8,
+     "level": 13
+    },
+    {
+     "name": "Electronics Operation/TL? (Communications)",
+     "ko": "통신 운용",
+     "attr": "IQ",
+     "diff": "A",
+     "tier": "B",
+     "evidence": [
+      {
+       "path": "lore/characters/Cast-State-09.json",
+       "pointer": "/content/2/items/0/ko",
+       "quote": "생업: 송신 당직·출자 장부 보전"
+      },
+      {
+       "path": "lore/characters/Cast-State-09.json",
+       "pointer": "/content/1/text/ko",
+       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
+      },
+      {
+       "path": "lore/characters/Core-Characters.json",
+       "pointer": "/content/86/text/ko",
+       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
       }
      ],
      "cp": 8,
@@ -26279,31 +26305,10 @@
       {
        "path": "lore/characters/Cast-State-09.json",
        "pointer": "/content/2/items/0/ko",
-       "quote": "생업: 금고 당직·출자 장부 보전"
+       "quote": "생업: 송신 당직·출자 장부 보전"
       }
      ],
      "cp": 8,
-     "level": 12
-    },
-    {
-     "name": "Electronics Operation/TL? (Communications)",
-     "ko": "통신 운용",
-     "attr": "IQ",
-     "diff": "A",
-     "tier": "C",
-     "evidence": [
-      {
-       "path": "lore/characters/Cast-State-09.json",
-       "pointer": "/content/1/text/ko",
-       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
-      },
-      {
-       "path": "lore/characters/Core-Characters.json",
-       "pointer": "/content/86/text/ko",
-       "quote": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다."
-      }
-     ],
-     "cp": 4,
      "level": 12
     }
    ],
@@ -26322,9 +26327,9 @@
     "attributes": 20,
     "advantages": 0,
     "disadvantages": 0,
-    "skills": 20,
-    "spent": 40,
-    "unspent": 35,
+    "skills": 24,
+    "spent": 44,
+    "unspent": 31,
     "total": 75
    },
    "band": "일반 인물",
