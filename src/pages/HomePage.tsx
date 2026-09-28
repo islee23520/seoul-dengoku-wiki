@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { PageHeader, SectionHeading, ServiceCard } from '@seoul-dengoku/shared-web-ui'
 import { categoryIndex } from '../generated/categoryIndex'
 import { wikiUpdates } from '../generated/wikiUpdates'
+import { peopleCount } from '../generated/peopleCount'
 import { wikiLinks } from '../wikiLinks'
 import { wikiAnchorHref } from '../sharedCategories'
 
@@ -16,7 +17,7 @@ export default function HomePage() {
       <SectionHeading title="바로 보기" />
       <div className="wiki-service-grid">
         <ServiceCard href={wikiAnchorHref(wikiLinks.subway)} title="세계 지도" path={wikiAnchorHref(wikiLinks.subway)} summary="지상 영토와 지하 노선층을 함께 보는 개막 시점 지도" />
-        <ServiceCard href={wikiAnchorHref(wikiLinks.characters)} title="등장인물 전체" path={wikiAnchorHref(wikiLinks.characters)} summary="1010인 인물 원장과 개인 문서" />
+        <ServiceCard href={wikiAnchorHref(wikiLinks.characters)} title="등장인물 전체" path={wikiAnchorHref(wikiLinks.characters)} summary={`${peopleCount}인 인물 원장과 개인 문서`} />
         <ServiceCard href={wikiAnchorHref(wikiLinks.states)} title="서울 십육국" path={wikiAnchorHref(wikiLinks.states)} summary="십육국 국가 표식과 관계" />
       </div>
 
