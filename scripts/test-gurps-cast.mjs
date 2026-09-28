@@ -88,12 +88,12 @@ test('Q2 B: 미사용 점수는 기술이 되지 않는다(기술 CP 합계는 �
   }
 })
 
-test('Q6 C: 이연 Observation은 A(12 CP)이고 사용자 확정 직위 줄을 인용한다. 민웅기는 그대로 B', () => {
+test('Q6 C: 이연 Observation은 A(12 CP)이고 소유자가 정한 직위 줄을 인용한다. 민웅기는 그대로 B', () => {
   const lee = find(doc, 'K1004')
   const obs = lee.skills.find((s) => s.name === 'Observation')
   assert.equal(obs.tier, 'A')
   assert.equal(obs.cp, 12)
-  assert.ok(obs.evidence.some((e) => e.quote === '직위: 수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명 (사용자 확정)'))
+  assert.ok(obs.evidence.some((e) => e.quote === '직위: 수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명'))
   const min = find(doc, 'K1008')
   assert.equal(min.skills.find((s) => s.name.startsWith('Electronics Repair')).tier, 'B')
   const aTier = doc.people.filter((p) => p.method !== 'pilot-approved' && p.skills.some((s) => s.tier === 'A')).map((p) => p.id)
@@ -244,7 +244,7 @@ const MUTATIONS = [
   ['미사용 점수를 75 넘게', (d) => { const p = d.people[sampleIndex]; p.cp.unspent += 5; p.cp.total += 5 }],
   ['구간을 근거 미달로', (d) => { d.people[sampleIndex].band = '근거 미달' }],
   ['이연 Observation을 B로', (d) => { const s = find(d, 'K1004').skills.find((k) => k.name === 'Observation'); s.tier = 'B'; s.cp = 8; s.level -= 1 }],
-  ['이연 A 등급의 사용자 확정 인용 제거', (d) => { const s = find(d, 'K1004').skills.find((k) => k.name === 'Observation'); s.evidence = s.evidence.filter((e) => !e.quote.startsWith('직위: ')) }],
+  ['이연 A 등급의 직위 줄 인용 제거', (d) => { const s = find(d, 'K1004').skills.find((k) => k.name === 'Observation'); s.evidence = s.evidence.filter((e) => !e.quote.startsWith('직위: ')) }],
   ['민웅기 Electronics Repair를 A로', (d) => { const s = find(d, 'K1008').skills.find((k) => k.name.startsWith('Electronics Repair')); s.tier = 'A'; s.cp = 12; s.level += 1 }],
   ['언어에 숙련도 CP', (d) => { find(d, 'K1012').languages[1].cp = 2 }],
   ['둘째 언어를 Native로', (d) => { find(d, 'K1012').languages[1].level = 'Native' }],

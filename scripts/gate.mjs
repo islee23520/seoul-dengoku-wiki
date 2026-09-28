@@ -80,7 +80,7 @@ export function coinedPhraseFailures(text, source) {
 }
 
 export function editorialMarkerFailures(text, source) {
-  return ['창작 제안', '(미확인)'].filter((marker) => text.includes(marker))
+  return ['창작 제안', '(미확인)', '사용자 확정', 'owner-confirmed'].filter((marker) => text.includes(marker))
     .map((marker) => `FAIL editorial-marker: ${source} contains "${marker}"`)
 }
 
