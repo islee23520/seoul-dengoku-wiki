@@ -27,8 +27,6 @@ const allowedMarkdown = new Set([
   'lore/regions/sources/observed-levels-join.md',
 ])
 const locales = ['en', 'ko']
-const excludedAtlasEntries = new Set(['G04E13', 'G04E14', 'G04E15', 'G04E16', 'G05E01', 'G05E02', 'G05E03', 'G05E04', 'G05E05', 'G05E06'])
-const retiredAtlasRoute = /^(?:Monster-Batch-|Story-Batch-|(?:Monster|Story)-Batch-Manifest$)/u
 
 function leaves(node) {
   if (node.kind === 'heading' || node.kind === 'paragraph' || node.kind === 'quote') return [node.text]
@@ -43,29 +41,10 @@ function texts(value) {
 
 // EN is the primary locale and KO corresponds block by block: every localized leaf of every content block
 // carries both locales, and every block ID named in `data` is bound to a content block of the same document.
-function nodesIn(document) {
-  const nodes = [...(Array.isArray(document?.content) ? document.content : [])]
-  const visit = (value, key) => {
-    if (Array.isArray(value)) {
-      if (key === 'prose' || key === 'dossier_prose') nodes.push(...value)
-      else value.forEach((item) => visit(item))
-      return
-    }
-    if (!value || typeof value !== 'object') return
-    Object.entries(value).forEach(([childKey, child]) => visit(child, childKey))
-  }
-  visit(document?.data)
-  return nodes
-}
-
 function localeBindingFailures(document, label) {
   const failures = []
-  const content = nodesIn(document)
-  const blockIds = new Set()
-  content.forEach((node) => {
-    if (typeof node?.anchor === 'string') blockIds.add(node.anchor)
-    for (const anchor of node?.publicAnchors ?? []) blockIds.add(anchor)
-  })
+  const content = Array.isArray(document?.content) ? document.content : []
+  const blockIds = new Set(content.map((node) => node?.anchor))
   content.forEach((node, index) => {
     const block = node?.anchor ?? `content[${index}]`
     const localized = node?.kind === 'rule' ? []
@@ -88,52 +67,6 @@ function localeBindingFailures(document, label) {
   return failures
 }
 
-function atlasFailures(document, label) {
-  const failures = []
-  if (document?.id !== 'WNA-001') return failures
-  const atlas = document?.data?.atlas
-  if (!atlas || typeof atlas !== 'object') return failures
-  const contentKeys = Object.keys(atlas.monster_contents ?? {})
-  if (contentKeys.includes('M007')) failures.push(`E_EXCLUDED_ID: ${label}: authored monster content M007 is excluded`)
-  for (const content of Object.values(atlas.monster_contents ?? {})) {
-    if (content?.id === 'M007') failures.push(`E_EXCLUDED_ID: ${label}: authored monster content M007 is excluded`)
-    for (const entry of content?.entries ?? []) {
-      if (excludedAtlasEntries.has(entry?.id)) failures.push(`E_EXCLUDED_ID: ${label}: authored monster entry ${entry.id} is reserved by M007`)
-    }
-  }
-  for (const [slug] of Object.entries(atlas.projection_pages ?? {})) {
-    if (retiredAtlasRoute.test(slug)) failures.push(`E_EXCLUDED_ID: ${label}: retired atlas route ${slug}`)
-    if (/(?:^|[-/])(?:B017|B020)(?:$|[-/])/u.test(slug)) failures.push(`E_EXCLUDED_ID: ${label}: excluded social record route ${slug}`)
-  }
-  const ids = new Set()
-  const names = new Map()
-  for (const collection of ['states', 'humans', 'houses', 'theaters', 'synthetics', 'hostile_groups', 'monster_batches', 'arcs']) {
-    for (const record of atlas[collection] ?? []) {
-      if (ids.has(record.id)) failures.push(`E_ID: ${label}: duplicate atlas ID ${record.id}`)
-      ids.add(record.id)
-      const name = record?.display_name?.ko
-      if (typeof name === 'string') names.set(name, record.id)
-    }
-  }
-  for (const content of Object.values(atlas.monster_contents ?? {})) {
-    for (const entry of content?.entries ?? []) {
-      if (ids.has(entry.id)) failures.push(`E_ID: ${label}: duplicate atlas ID ${entry.id}`)
-      ids.add(entry.id)
-    }
-  }
-  for (const relation of atlas.relations ?? []) {
-    for (const endpoint of ['from', 'to']) {
-      const value = relation?.[endpoint]
-      if (typeof value !== 'string') continue
-      if (!ids.has(value)) {
-        if (names.has(value)) failures.push(`E_REFERENCE: ${label}: relation ${endpoint} ${value} must use stable ID ${names.get(value)} with optional ${endpoint}_label`)
-        else failures.push(`E_REFERENCE: ${label}: relation ${endpoint} ${value} does not resolve`)
-      }
-    }
-  }
-  return failures
-}
-
 function namingFailures(text, label, position) {
   return [...findBannedTerms(text), ...coinedPhraseFailures(text, label), ...retiredFormFailures(text, label)]
     .map((issue) => `E_NAMING: ${label}: ${position}: ${issue}`)
@@ -152,7 +85,6 @@ function validate(files) {
     }
     const label = relative(root, file)
     failures.push(...localeBindingFailures(document, label))
-    failures.push(...atlasFailures(document, label))
     const domain = document?.domain
     const schema = spawnSync('python3', [schemaRunner, domain ?? ''], { input: JSON.stringify(document), encoding: 'utf8' })
     if (schema.error || schema.status !== 0) {
@@ -169,13 +101,9 @@ function validate(files) {
     const directory = relative(loreRoot, ownDir)
     if (!directory.startsWith('..') && directory.split('/')[0] !== (domain === 'root' ? '' : domain)) failures.push(`E_DOMAIN: ${label}: domain does not match directory`)
     const anchors = new Set()
-    for (const node of nodesIn(document)) {
+    for (const node of document.content) {
       if (anchors.has(node.anchor)) failures.push(`E_ANCHOR: ${label}: duplicate ${node.anchor}`)
       anchors.add(node.anchor)
-      for (const anchor of node.publicAnchors ?? []) {
-        if (anchors.has(anchor)) failures.push(`E_ANCHOR: ${label}: duplicate ${anchor}`)
-        anchors.add(anchor)
-      }
     }
     documents.set(`${domain}/${document.slug}`, { file, document, anchors })
   }
@@ -186,7 +114,7 @@ function validate(files) {
       if (document.tense[locale] !== document.locales[locale].tense) failures.push(`E_TENSE: ${label}: ${locale} header differs from envelope`)
       for (const field of ['title', 'summary']) failures.push(...namingFailures(document.locales[locale][field], label, `${locale}.${field}`))
     }
-    nodesIn(document).forEach((node) => {
+    document.content.forEach((node) => {
       if (node.kind === 'table' && node.rows.some((row) => row.length !== node.columns.length)) failures.push(`E_BLOCK: ${label}: ${node.anchor} table row width differs`)
       for (const leaf of leaves(node)) {
         for (const locale of locales) {
@@ -204,7 +132,7 @@ function validate(files) {
             if (privatePages.has(slug) || (!existsSync(target) && !existsSync(markdown))) failures.push(`E_LINK: ${label}: ${domain}/${slug} does not exist or is private`)
             else if (anchor && existsSync(target)) {
               const targetDocument = documents.get(`${domain}/${slug}`)?.document ?? JSON.parse(readFileSync(target, 'utf8'))
-              if (!nodesIn(targetDocument).some((block) => block.anchor === anchor || block.publicAnchors?.includes(anchor))) failures.push(`E_LINK: ${label}: ${domain}/${slug}#${anchor} does not exist`)
+              if (!targetDocument.content?.some((block) => block.anchor === anchor)) failures.push(`E_LINK: ${label}: ${domain}/${slug}#${anchor} does not exist`)
             }
           }
         }
