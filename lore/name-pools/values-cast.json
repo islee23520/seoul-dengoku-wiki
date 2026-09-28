@@ -31391,13 +31391,13 @@
     },
     {
       "name": "지연희", "title": "독립 전령", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
-      "values": { "권위": null, "개방": null, "무력": null, "물질": null, "공동": null, "원칙": null, "공개": null, "자격": null, "분산": null, "변혁": null },
-      "desire": { "갈망": null, "독점": null, "위험": null, "과시": null, "지속": null, "지향": null, "결합": null }, "locked": false
+      "values": { "권위": -20, "개방": 30, "무력": -30, "물질": 20, "공동": -10, "원칙": -30, "공개": -60, "자격": 0, "분산": 30, "변혁": 40 },
+      "desire": { "갈망": 40, "독점": 10, "위험": 30, "과시": -40, "지속": -20, "지향": null, "결합": null }, "locked": false
     },
     {
       "name": "서하진", "title": "권역 간 계약 자문가", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
-      "values": { "권위": null, "개방": null, "무력": null, "물질": null, "공동": null, "원칙": null, "공개": null, "자격": null, "분산": null, "변혁": null },
-      "desire": { "갈망": null, "독점": null, "위험": null, "과시": null, "지속": null, "지향": null, "결합": null }, "locked": false
+      "values": { "권위": -10, "개방": 40, "무력": -40, "물질": 60, "공동": -40, "원칙": 20, "공개": -60, "자격": 30, "분산": 50, "변혁": 20 },
+      "desire": { "갈망": 50, "독점": 40, "위험": 60, "과시": -30, "지속": 20, "지향": null, "결합": null }, "locked": false
     }
   ]
 }

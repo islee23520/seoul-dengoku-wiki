@@ -446,6 +446,10 @@
           "ko": "개인 야망: 정보 조직에서 벗어나 자유를 얻으려 한다. 이 목표는 남에게 밝히지 않는다."
         },
         {
+          "en": "Fear: That the organization breaks its promise and her debt and contract never end.",
+          "ko": "공포: 조직이 약속을 어겨 빚과 계약이 끝나지 않는 것을 두려워한다."
+        },
+        {
           "en": "Governing style: She reaches her ends by moving other people with information and negotiation rather than by fighting herself.",
           "ko": "통치 방식: 직접 싸우기보다 정보와 교섭으로 다른 사람을 움직여 목적을 이룬다."
         },
@@ -517,8 +521,20 @@
           "ko": "세대와 출생: 개막 세대"
         },
         {
+          "en": "Language: Korean",
+          "ko": "언어: 한국어"
+        },
+        {
+          "en": "Occupation: primary logistics merchant / secondary recordkeeper",
+          "ko": "생업: 주 물류상 / 부 기록관"
+        },
+        {
           "en": "Affiliation: An unaffiliated independent merchant house. She holds no state office.",
           "ko": "소속: 무소속 독립 상단. 어느 나라의 관직도 맡지 않는다."
+        },
+        {
+          "en": "Rank: none — she holds no state office.",
+          "ko": "품계: 해당 없음 — 어느 나라의 관직도 맡지 않는다."
         },
         {
           "en": "Position: adviser on contracts between spheres — her public title. In fact she owns a network that funds and guarantees several local merchant houses.",
@@ -527,6 +543,10 @@
         {
           "en": "Personality: She checks statements against expressions and gestures, and circumstances against records, for where they disagree, and breaks problems into small tasks. She puts logic and gain first, shows little empathy, and presses the other side hard when she is under pressure.",
           "ko": "성격: 진술과 표정·몸짓, 상황과 기록이 어긋나는 곳을 대조하고 문제를 작은 과제로 나눈다. 논리와 실리를 앞세우고 공감이 적으며, 압박을 받으면 상대를 몰아붙인다."
+        },
+        {
+          "en": "Personal ambition: To widen a guarantee network that belongs to no sphere, so that the terms of trade between spheres are drawn up in her own ledgers.",
+          "ko": "개인 야망: 어느 권역에도 속하지 않는 보증망을 넓혀, 권역 사이의 거래 조건을 자기 장부에서 짜려 한다."
         },
         {
           "en": "Fear: Boredom. It is why she chooses dangerous problems and deals.",
@@ -554,8 +574,8 @@
       "kind": "paragraph",
       "anchor": "인물-서하진-p1",
       "text": {
-        "en": "Seo Hajin inherited a small credit ledger. The network she runs today grew through contracts, acquisitions and guarantees she designed herself.",
-        "ko": "서하진은 작은 신용 장부를 이어받았다. 지금의 상단망은 서하진이 계약과 인수, 보증을 직접 설계하며 넓힌 것이다."
+        "en": "Seo Hajin took over a small credit ledger, debts included, from a merchant-house owner who was closing down. The network she runs today grew through contracts, acquisitions and guarantees she designed herself.",
+        "ko": "서하진은 문을 닫는 한 상단주에게서 작은 신용 장부를 그 빚과 함께 인수하였다. 지금의 상단망은 서하진이 계약과 인수, 보증을 직접 설계하며 넓힌 것이다."
       }
     },
     {
@@ -706,12 +726,12 @@
       "anchor": "첫-등장-사건-서하진-list1",
       "items": [
         {
-          "en": "The contract. Three merchant houses bid in the Yongsan transshipment tender of March 2125. All three carried Seo Hajin's guarantee, and the contract went to one of them. Junction stationmaster Park Taegyeom signed the contract.",
-          "ko": "계약. 2125년 3월 용산 환적 계약 입찰에 상단 3곳이 참가하였다. 세 상단은 모두 서하진의 보증을 받았고, 계약은 그 가운데 1곳에 돌아갔다. 환적국 역장 박태겸이 계약서에 서명하였다."
+          "en": "The contract. Three merchant houses bid in the Yongsan transshipment tender of March 2125. All three carried Seo Hajin's guarantee, and the contract went to one of them. Junction stationmaster Park Taegyeom signed the contract. His counterparty was the winning house; he made no contract with Seo Hajin herself.",
+          "ko": "계약. 2125년 3월 용산 환적 계약 입찰에 상단 3곳이 참가하였다. 세 상단은 모두 서하진의 보증을 받았고, 계약은 그 가운데 1곳에 돌아갔다. 환적국 역장 박태겸이 계약서에 서명하였다. 박태겸의 계약 상대는 낙찰 상단이며, 박태겸은 서하진과 직접 계약하지 않았다."
         },
         {
-          "en": "The merchant pushed out. The independent logistics merchant who lost the contract had no way of knowing that the rival houses were tied to the same source of funds. That gap in information was the merchant's disadvantage. The merchant had never caused Seo Hajin a loss and was simply pushed out of this deal.",
-          "ko": "밀려난 물류상. 계약을 놓친 독립 물류상은 경쟁 상단들이 같은 자금줄에 이어져 있다는 사실을 알 수 없었다. 이 정보의 차이가 물류상의 불리함이었다. 물류상은 서하진에게 손실을 끼친 적이 없고, 이번 거래에서 밀려났다."
+          "en": "The merchant pushed out. The independent logistics merchant who lost the contract runs one of the two houses that did not win. The merchant knew Seo Hajin stood behind their own house but did not know the rival houses had the same guarantor. That gap in information was the merchant's disadvantage. The merchant had never caused Seo Hajin a loss and was simply pushed out of this deal.",
+          "ko": "밀려난 물류상. 계약을 놓친 독립 물류상은 낙찰받지 못한 두 상단 가운데 한 곳을 이끈다. 물류상은 자기 상단의 보증인이 서하진이라는 것은 알았지만, 경쟁 상단들도 같은 보증인을 두었다는 사실은 몰랐다. 이 정보의 차이가 물류상의 불리함이었다. 물류상은 서하진에게 손실을 끼친 적이 없고, 이번 거래에서 밀려났다."
         },
         {
           "en": "The gap. The Yongsan transshipment contract documents contain no clause requiring the real owner to be disclosed to the counterparty. The existing disclosure duties on prices, stock, auctions and passage rights still apply.",
@@ -722,12 +742,16 @@
           "ko": "위임. 조사는 계약을 놓친 물류상의 정식 위임을 받아 시작한다."
         },
         {
-          "en": "Access. That a ledger exists and the right to read it are separate matters. A single request does not open all of Suseo's private guarantee ledgers.",
-          "ko": "열람. 장부가 있다는 사실과 그 장부를 볼 권한은 별개이다. 한 번의 청구로는 수서의 민간 보증 장부를 모두 볼 수 없다."
+          "en": "Access. That a ledger exists and the right to read it are separate matters. A single request does not open all of Suseo's private guarantee ledgers. The mandate opens only the guarantees the merchant received personally, and only the published part of the Yongsan dispatch table can be read.",
+          "ko": "열람. 장부가 있다는 사실과 그 장부를 볼 권한은 별개이다. 한 번의 청구로는 수서의 민간 보증 장부를 모두 볼 수 없다. 위임으로 볼 수 있는 것은 그 물류상 본인이 받은 보증 건뿐이고, 용산 배차표는 공개된 부분만 볼 수 있다."
         },
         {
           "en": "Cross-checking. The common source of funds comes to light only when separate public records, testimony or contract copies are compared.",
           "ko": "대조. 공통 자금줄은 별도의 공개 기록이나 증언, 계약 사본을 대조해야 드러난다."
+        },
+        {
+          "en": "Premature charges. Raising the suspicion without enough evidence costs the player credit, and Seo Hajin records the player as someone to watch.",
+          "ko": "성급한 제기. 증거가 모자란 채 의혹을 제기하면 플레이어의 신용이 떨어진다. 서하진은 그 플레이어를 경계할 상대로 기록한다."
         },
         {
           "en": "Validity. Proving the common source of funds leaves the 2125 contract in force.",

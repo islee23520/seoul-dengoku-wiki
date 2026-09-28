@@ -38,8 +38,8 @@ export const APPROVED = {
   approvedBy: "pending-owner",
   approvedAt: "2026-09-28",
   ownerRef: "2026-09-28 초안 PR: 지연희·서하진 K1017–K1018 발급과 최종 두 입력 해시 — 소유자 승인 대기",
-  inputSha256: "9411241f70cad28d15bf1d6324f39af69979896011da34aba6975b91a0a8dc21",
-  candidatesSha256: "a6bf30aad17058b10a11280391aad3a0a02e3ca470bf19e00dfa06438cab6141",
+  inputSha256: "05eebe21f559b23fb6a6bcdb8d2ff5bbe62770155487fe086f42c1c00481521b",
+  candidatesSha256: "1b19cd63690366589a29cd701250c529339cfc153b86dfcb494a3f9ae25534db",
 };
 export const FROZEN = { existingK: 422, issued: 596, total: 1018 };
 
