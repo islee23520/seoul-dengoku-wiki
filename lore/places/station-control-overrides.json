@@ -6,11 +6,57 @@
     {
       "id": "CITYHALL-2126-OPENING",
       "stationId": "시청",
-      "status": "contested",
-      "polityIds": ["S06", "S16"],
+      "status": "held",
+      "polityIds": [
+        "S06"
+      ],
       "primary": "S06",
-      "regionalAuthority": "대한민국정부 청사 경비·통행증 / 정동노총 수도·파업 명부",
+      "regionalAuthority": "대한민국정부 청사 경비·통행증",
       "stationManager": "시청역장"
+    },
+    {
+      "id": "SAMSEONG-2126-OPENING",
+      "stationId": "삼성",
+      "status": "held",
+      "polityIds": [
+        "S04"
+      ],
+      "primary": "S04",
+      "regionalAuthority": "강남구 권역 책임자",
+      "stationManager": "삼성역장"
+    },
+    {
+      "id": "GWANGMYEONGSAGEORI-2126-OPENING",
+      "stationId": "광명사거리",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "regionalAuthority": "구로구 권역 책임자",
+      "stationManager": "광명사거리역장"
+    },
+    {
+      "id": "SEOKSU-2126-OPENING",
+      "stationId": "석수",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "regionalAuthority": "금천구 권역 책임자",
+      "stationManager": "석수역장"
+    },
+    {
+      "id": "DAECHI-2126-OPENING",
+      "stationId": "대치",
+      "status": "held",
+      "polityIds": [
+        "S16"
+      ],
+      "primary": "S16",
+      "regionalAuthority": "강남구 권역 책임자",
+      "stationManager": "대치역장"
     }
   ]
 }

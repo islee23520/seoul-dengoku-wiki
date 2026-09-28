@@ -29,12 +29,12 @@
   "locales": {
     "en": {
       "title": "Rail Station Catalog Connected to Seoul",
-      "summary": "334 stations within Seoul and 610 additional station nodes on physically connected railway tracks",
+      "summary": "334 observed station-name rows and 315 stations within Seoul, plus 610 station nodes on physically connected railway tracks",
       "tense": "past"
     },
     "ko": {
       "title": "서울 연결 철도 역 카탈로그",
-      "summary": "서울 안 334곳과 서울 선로에 연결된 외부 역 610곳의 위치 카탈로그",
+      "summary": "서울 역 관측 명칭 334행과 역 315곳, 서울 선로에 연결된 외부 역 610곳의 위치 카탈로그",
       "tense": "past"
     }
   },
@@ -60,8 +60,8 @@
       "kind": "paragraph",
       "anchor": "서울-역-카탈로그-p1",
       "text": {
-        "en": "The 334 named stations within Seoul and the 25 autonomous districts were the table's skeleton. Every station name — Seoul Station and Jonggak, Yeouido, Gangnam, Jamsil — was a point joining the world. Seolleung and Samseong of Gangnam-gu, Gyeongbokgung of Jongno-gu, City Hall of Jung-gu, Yeouinaru of Yeongdeungpo-gu, and Sindorim of Guro-gu stood side by side on one list.",
-        "ko": "서울 안 이름 있는 역 334곳과 자치구 25가 표의 뼈대다. 서울역, 종각, 여의도, 강남, 잠실 등 모든 역명이 세계를 연결하는 지점이다."
+        "en": "The table records 334 observed station names and locations across Seoul's 25 districts. Nineteen rows are official subtitles or spelling variants of the same station. The wiki map displays 315 stations. Seoul Station, Jonggak, Yeouido, Gangnam, and Jamsil are points along movement routes.",
+        "ko": "서울 25개 자치구의 역 이름과 관측 위치 334행이 표에 실렸다. 공식 부제와 표기 차이 19행은 같은 역의 별칭이다. 위키 지도는 역 315곳을 표시한다. 서울역, 종각, 여의도, 강남, 잠실 등은 이동 경로의 지점이다."
       }
     },
     {
@@ -24263,5 +24263,115 @@
       ]
     }
   ],
-  "data": {}
+  "data": {
+    "station_aliases": [
+      {
+        "id": "총신대입구(이수)",
+        "aliases": ["이수", "총신대입구 (이수)"],
+        "observed_lines": {
+          "이수": ["7"],
+          "총신대입구 (이수)": ["4"],
+          "총신대입구(이수)": ["4"]
+        },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "삼성",
+        "aliases": ["삼성(무역센터)"],
+        "observed_lines": {
+          "삼성": ["2"],
+          "삼성(무역센터)": ["2"]
+        },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "수유",
+        "aliases": ["수유(강북구청)"],
+        "observed_lines": {
+          "수유": ["4"],
+          "수유(강북구청)": ["4"]
+        },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "서울대입구",
+        "aliases": ["서울대입구(관악구청)"],
+        "observed_lines": { "서울대입구": ["2"], "서울대입구(관악구청)": ["2"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "강변",
+        "aliases": ["강변(동서울터미널)"],
+        "observed_lines": { "강변": ["2"], "강변(동서울터미널)": ["2"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "구의",
+        "aliases": ["구의(광진구청)"],
+        "observed_lines": { "구의": ["2"], "구의(광진구청)": ["2"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "아현",
+        "aliases": ["아현(추계예술대)"],
+        "observed_lines": { "아현": ["2"], "아현(추계예술대)": ["2"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "대림", "aliases": ["대림(구로구청)"],
+        "observed_lines": { "대림": ["2", "7"], "대림(구로구청)": ["2", "7"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "충정로", "aliases": ["충정로(경기대입구)"],
+        "observed_lines": { "충정로": ["2", "5"], "충정로(경기대입구)": ["2", "5"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "교대", "aliases": ["교대(법원·검찰청)"],
+        "observed_lines": { "교대": ["2", "3"], "교대(법원·검찰청)": ["2", "3"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "남부터미널", "aliases": ["남부터미널(예술의전당)"],
+        "observed_lines": { "남부터미널": ["3"], "남부터미널(예술의전당)": ["3"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "방배", "aliases": ["방배 (백석예술대)"],
+        "observed_lines": { "방배": ["2"], "방배 (백석예술대)": ["2"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "왕십리", "aliases": ["왕십리(성동구청)"],
+        "observed_lines": { "왕십리": ["2", "5"], "왕십리(성동구청)": ["2", "5"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "한성대입구", "aliases": ["한성대입구(삼선교)"],
+        "observed_lines": { "한성대입구": ["4"], "한성대입구(삼선교)": ["4"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "잠실", "aliases": ["잠실(송파구청)"],
+        "observed_lines": { "잠실": ["2", "8"], "잠실(송파구청)": ["2", "8"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "경복궁", "aliases": ["경복궁(정부서울청사)"],
+        "observed_lines": { "경복궁": ["3"], "경복궁(정부서울청사)": ["3"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "혜화", "aliases": ["혜화(서울대학교병원)"],
+        "observed_lines": { "혜화": ["4"], "혜화(서울대학교병원)": ["4"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      },
+      {
+        "id": "회현", "aliases": ["회현(남대문시장)"],
+        "observed_lines": { "회현": ["4"], "회현(남대문시장)": ["4"] },
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/120"
+      }
+    ]
+  }
 }
