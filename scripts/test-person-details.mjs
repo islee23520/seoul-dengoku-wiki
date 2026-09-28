@@ -8,10 +8,10 @@ test('all canonical people expose unique detail routes and structured data', asy
   const routes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
   const detailRoot = new URL('../public/person-details/', import.meta.url)
   const names = (await readdir(detailRoot)).filter((name) => name.endsWith('.json'))
-  assert.equal(routes.length, 1018)
-  assert.equal(new Set(routes).size, 1018)
+  assert.equal(routes.length, 1019)
+  assert.equal(new Set(routes).size, 1019)
   assert.ok(routes.every((route) => /^\/people\/person-\d{4}$/u.test(route)))
-  assert.equal(names.length, 1018)
+  assert.equal(names.length, 1019)
   for (const name of names) {
     const detail = JSON.parse(await readFile(new URL(name, detailRoot), 'utf8'))
     assert.ok(detail.biography.length > 0, name)
