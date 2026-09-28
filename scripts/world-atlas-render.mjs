@@ -7,6 +7,7 @@ const BESTIARY_KINDS = {
   'mutant-organism': L('변이종', 'Mutant species'),
   machine: L('기계 기종', 'Machine type'),
   'biomechanical-organism': L('생체기계 변이', 'Biomechanical variant'),
+  'infected-person': L('감염자', 'Infected person'),
   habitat: L('서식 거점·시설', 'Habitat site or facility'),
   event: L('군집 현상', 'Swarm phenomenon'),
 }
@@ -21,6 +22,7 @@ const GROUP_CATEGORIES = {
   'humanoid-mutant': L('인체 변이·공생', 'Human mutation and symbiosis'),
   'rogue-robot': L('잔존 자동 기계', 'Surviving automatic machines'),
   biomechanical: L('생체기계·시설 생태', 'Biomechanical and facility ecology'),
+  infected: L('감염자', 'The infected'),
 }
 // Schema tokens that are Korean words; their English wording lives here, not in the atlas.
 export const OBLIGATION_TARGETS = Object.freeze({ 시민: L('시민', 'citizens') })

@@ -330,7 +330,7 @@
       "type": "object",
       "required": ["id", "display_name", "bestiary", "category", "owner", "source_kind", "source_anchors", "revision", "projection_targets", "modern_anxiety", "fictional_origin", "territory_migration", "economy", "lifecycle", "senses", "hierarchy", "links", "escalation", "combat_counterplay", "negotiation", "moral_cost", "scenario_links", "dossier_prose", "prose"],
       "properties": {
-        "id": {"$ref": "#/$defs/groupId"}, "display_name": {"$ref": "#/$defs/localized"}, "bestiary": {"$ref": "#/$defs/bestiaryClass"}, "category": {"enum": ["animal-urban", "humanoid-mutant", "rogue-robot", "biomechanical"]},
+        "id": {"$ref": "#/$defs/groupId"}, "display_name": {"$ref": "#/$defs/localized"}, "bestiary": {"$ref": "#/$defs/bestiaryClass"}, "category": {"enum": ["animal-urban", "humanoid-mutant", "rogue-robot", "biomechanical", "infected"]},
         "owner": {"type": "string", "minLength": 1}, "source_kind": {"const": "original-fiction"}, "source_anchors": {"$ref": "#/$defs/stringList"}, "revision": {"type": "integer", "minimum": 1}, "projection_targets": {"$ref": "#/$defs/stringList"},
         "modern_anxiety": {"$ref": "#/$defs/localized"}, "fictional_origin": {"$ref": "#/$defs/localized"}, "territory_migration": {"$ref": "#/$defs/localized"}, "economy": {"$ref": "#/$defs/localized"}, "lifecycle": {"$ref": "#/$defs/localized"}, "adaptation": {"$ref": "#/$defs/localized"}, "senses": {"$ref": "#/$defs/localized"}, "hierarchy": {"$ref": "#/$defs/localized"}, "links": {"$ref": "#/$defs/groupLinks"},
         "escalation": {"$ref": "#/$defs/localized"}, "combat_counterplay": {"$ref": "#/$defs/localized"}, "negotiation": {"$ref": "#/$defs/localized"}, "moral_cost": {"$ref": "#/$defs/localized"}, "scenario_links": {"$ref": "#/$defs/stringList"},
@@ -344,7 +344,7 @@
     },
     "entryBestiary": {
       "type": "object", "required": ["kind", "formation", "battlefield_role", "scope_note"],
-      "properties": {"kind": {"enum": ["common-organism", "mutant-organism", "machine", "biomechanical-organism", "habitat", "event"]}, "formation": {"enum": ["single", "group", "site", "event"]}, "battlefield_role": {"$ref": "#/$defs/localized"}, "scope_note": {"$ref": "#/$defs/localized"}}, "additionalProperties": false
+      "properties": {"kind": {"enum": ["common-organism", "mutant-organism", "machine", "biomechanical-organism", "infected-person", "habitat", "event"]}, "formation": {"enum": ["single", "group", "site", "event"]}, "battlefield_role": {"$ref": "#/$defs/localized"}, "scope_note": {"$ref": "#/$defs/localized"}}, "additionalProperties": false
     },
     "entryLinks": {
       "type": "object",
