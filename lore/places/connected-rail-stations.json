@@ -1,0 +1,4771 @@
+{
+  "schema": "seoul-connected-rail-stations.v1",
+  "source": {
+    "url": "https://download.geofabrik.de/asia/south-korea-260924.osm.pbf",
+    "sha256": "cd4f04b9145cb8e1cacaf2ce9b10cdb5425f7ae3ae49dac73ef2084f42d94329",
+    "license": "ODbL 1.0",
+    "scope": "Mapped station/halt nodes within 150m of a rail/subway/light_rail track component connected to Seoul; physical topology only, no 2126 passage or occupancy"
+  },
+  "stations": [
+    {
+      "osmId": "9008200149",
+      "nameKo": "가남",
+      "nameEn": "Ganam",
+      "lat": 37.1974167,
+      "lon": 127.5354382,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172786",
+      "nameKo": "가능",
+      "nameEn": "Ganeung",
+      "lat": 37.7483211,
+      "lon": 127.0443627,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6312484228",
+      "nameKo": "가천대",
+      "nameEn": "Gachon Univ.",
+      "lat": 37.4486992,
+      "lon": 127.1267248,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881583288",
+      "nameKo": "가평",
+      "nameEn": "Gapyeong",
+      "lat": 37.8145183,
+      "lon": 127.5107625,
+      "mode": "train"
+    },
+    {
+      "osmId": "3218977267",
+      "nameKo": "간석",
+      "nameEn": "Ganseok",
+      "lat": 37.4647335,
+      "lon": 126.6935306,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8390030413",
+      "nameKo": "간석오거리",
+      "nameEn": "Ganseogogeori",
+      "lat": 37.4671553,
+      "lon": 126.7079494,
+      "mode": "subway"
+    },
+    {
+      "osmId": "12178154628",
+      "nameKo": "간현레일바이크종점",
+      "nameEn": "간현레일바이크종점",
+      "lat": 37.3876847,
+      "lon": 127.787058,
+      "mode": "train"
+    },
+    {
+      "osmId": "5884250499",
+      "nameKo": "갈매",
+      "nameEn": "Galmae",
+      "lat": 37.6339464,
+      "lon": 127.1147293,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390080120",
+      "nameKo": "갈산",
+      "nameEn": "Galsan",
+      "lat": 37.5168126,
+      "lon": 126.7215178,
+      "mode": "subway"
+    },
+    {
+      "osmId": "9104562711",
+      "nameKo": "감곡장호원",
+      "nameEn": "Gamgok Janghowon",
+      "lat": 37.1270431,
+      "lon": 127.6356198,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636794",
+      "nameKo": "강경",
+      "nameEn": "Ganggyeong",
+      "lat": 36.1548371,
+      "lon": 127.0172715,
+      "mode": "train"
+    },
+    {
+      "osmId": "5487467976",
+      "nameKo": "강구",
+      "nameEn": "Gangu",
+      "lat": 36.3522445,
+      "lon": 129.372231,
+      "mode": "train"
+    },
+    {
+      "osmId": "8223919750",
+      "nameKo": "강릉",
+      "nameEn": "Gangneung",
+      "lat": 37.76452,
+      "lon": 128.8993979,
+      "mode": "train"
+    },
+    {
+      "osmId": "5448526340",
+      "nameKo": "강매",
+      "nameEn": "Gangmae",
+      "lat": 37.6122869,
+      "lon": 126.8445278,
+      "mode": "train"
+    },
+    {
+      "osmId": "9021551362",
+      "nameKo": "강진",
+      "nameEn": "Gangjin",
+      "lat": 34.6283879,
+      "lon": 126.7722931,
+      "mode": "train"
+    },
+    {
+      "osmId": "2783311708",
+      "nameKo": "강촌",
+      "nameEn": "Gangchon",
+      "lat": 37.8057137,
+      "lon": 127.6341294,
+      "mode": "train"
+    },
+    {
+      "osmId": "7660226015",
+      "nameKo": "개운포",
+      "nameEn": "Gaeunpo",
+      "lat": 35.5078991,
+      "lon": 129.3211169,
+      "mode": "train"
+    },
+    {
+      "osmId": "4421383184",
+      "nameKo": "개포",
+      "nameEn": "Gaepo",
+      "lat": 36.6269426,
+      "lon": 128.3285628,
+      "mode": "train"
+    },
+    {
+      "osmId": "5757147572",
+      "nameKo": "거제",
+      "nameEn": "Geoje",
+      "lat": 35.1888685,
+      "lon": 129.0739899,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636824",
+      "nameKo": "거제해맞이",
+      "nameEn": "Geojehaemaji",
+      "lat": 35.1814092,
+      "lon": 129.0690909,
+      "mode": "train"
+    },
+    {
+      "osmId": "12961370708",
+      "nameKo": "검단호수공원",
+      "nameEn": "Geomdan Lake Park",
+      "lat": 37.6024395,
+      "lon": 126.6885664,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5919544721",
+      "nameKo": "검암",
+      "nameEn": "Geomam",
+      "lat": 37.5691799,
+      "lon": 126.6737138,
+      "mode": "train"
+    },
+    {
+      "osmId": "5927814417",
+      "nameKo": "경기광주",
+      "nameEn": "Gyeonggi Gwangju",
+      "lat": 37.3989035,
+      "lon": 127.2532824,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173088",
+      "nameKo": "경마공원",
+      "nameEn": "Seoul Racecourse Park",
+      "lat": 37.4437648,
+      "lon": 127.0078955,
+      "mode": "subway"
+    },
+    {
+      "osmId": "366677068",
+      "nameKo": "경산",
+      "nameEn": "Gyeongsan",
+      "lat": 35.8193291,
+      "lon": 128.7276119,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8390080122",
+      "nameKo": "경인교대입구",
+      "nameEn": "Gyeongin Nat'l Univ. of Education",
+      "lat": 37.5384076,
+      "lon": 126.7226027,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4092335459",
+      "nameKo": "경주",
+      "nameEn": "Gyeongju",
+      "lat": 35.7982689,
+      "lon": 129.1389632,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637794",
+      "nameKo": "계룡",
+      "nameEn": "Gyeryong",
+      "lat": 36.2724063,
+      "lon": 127.2665313,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390080123",
+      "nameKo": "계산",
+      "nameEn": "Gyesan",
+      "lat": 37.543336,
+      "lon": 126.7278571,
+      "mode": "subway"
+    },
+    {
+      "osmId": "3152004117",
+      "nameKo": "계양",
+      "nameEn": "Gyeyang",
+      "lat": 37.5715012,
+      "lon": 126.7358582,
+      "mode": "subway"
+    },
+    {
+      "osmId": "3152004118",
+      "nameKo": "계양",
+      "nameEn": "Gyeyang",
+      "lat": 37.571767,
+      "lon": 126.736311,
+      "mode": "train"
+    },
+    {
+      "osmId": "5511790788",
+      "nameKo": "고색",
+      "nameEn": "Gosaek",
+      "lat": 37.249691,
+      "lon": 126.9804598,
+      "mode": "train"
+    },
+    {
+      "osmId": "6923835563",
+      "nameKo": "고잔",
+      "nameEn": "Gojan",
+      "lat": 37.3168514,
+      "lon": 126.8231007,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368636319",
+      "nameKo": "고한",
+      "nameEn": "Gohan",
+      "lat": 37.2008397,
+      "lon": 128.8529765,
+      "mode": "train"
+    },
+    {
+      "osmId": "2090733292",
+      "nameKo": "곡산",
+      "nameEn": "Goksan",
+      "lat": 37.645746,
+      "lon": 126.8018102,
+      "mode": "train"
+    },
+    {
+      "osmId": "8366725244",
+      "nameKo": "곡성",
+      "nameEn": "Gokseong",
+      "lat": 35.2834557,
+      "lon": 127.3044579,
+      "mode": "train"
+    },
+    {
+      "osmId": "5927814385",
+      "nameKo": "곤지암",
+      "nameEn": "Gonjiam",
+      "lat": 37.3505063,
+      "lon": 127.346279,
+      "mode": "subway"
+    },
+    {
+      "osmId": "3470563715",
+      "nameKo": "공전",
+      "nameEn": "Gongjeon",
+      "lat": 37.1013791,
+      "lon": 128.0779736,
+      "mode": "train"
+    },
+    {
+      "osmId": "7839145036",
+      "nameKo": "공주",
+      "nameEn": "Gongju",
+      "lat": 36.3322371,
+      "lon": 127.0966368,
+      "mode": "train"
+    },
+    {
+      "osmId": "5919544813",
+      "nameKo": "공항화물청사",
+      "nameEn": "Incheon International Airport Cargo Terminal",
+      "lat": 37.4590304,
+      "lon": 126.4774954,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173082",
+      "nameKo": "과천",
+      "nameEn": "Gwacheon",
+      "lat": 37.4330744,
+      "lon": 126.9969576,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172696",
+      "nameKo": "관악",
+      "nameEn": "Gwanak",
+      "lat": 37.4187236,
+      "lon": 126.9091539,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5276465656",
+      "nameKo": "광곡",
+      "nameEn": "Gwanggok",
+      "lat": 34.7964818,
+      "lon": 127.0730183,
+      "mode": "train"
+    },
+    {
+      "osmId": "6271638115",
+      "nameKo": "광교",
+      "nameEn": "Gwanggyo",
+      "lat": 37.3021094,
+      "lon": 127.0442808,
+      "mode": "train"
+    },
+    {
+      "osmId": "6264104129",
+      "nameKo": "광교중앙",
+      "nameEn": "Gwanggyo Jungang",
+      "lat": 37.2885618,
+      "lon": 127.0515194,
+      "mode": "train"
+    },
+    {
+      "osmId": "2847440772",
+      "nameKo": "광명",
+      "nameEn": "Gwangmyeong",
+      "lat": 37.41638,
+      "lon": 126.8846978,
+      "mode": "train"
+    },
+    {
+      "osmId": "12783799735",
+      "nameKo": "광양",
+      "nameEn": "Gwangyang",
+      "lat": 34.9561451,
+      "lon": 127.587824,
+      "mode": "train"
+    },
+    {
+      "osmId": "7769360347",
+      "nameKo": "광주",
+      "nameEn": "Gwangju",
+      "lat": 35.1653215,
+      "lon": 126.9093193,
+      "mode": "train"
+    },
+    {
+      "osmId": "7769360289",
+      "nameKo": "광주송정",
+      "nameEn": "Gwangju Songjeong",
+      "lat": 35.1377072,
+      "lon": 126.7901098,
+      "mode": "train"
+    },
+    {
+      "osmId": "4774670646",
+      "nameKo": "괴목",
+      "nameEn": "괴목",
+      "lat": 35.0953742,
+      "lon": 127.4268206,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173831",
+      "nameKo": "괴정",
+      "nameEn": "Goejeong",
+      "lat": 35.0999307,
+      "lon": 128.992862,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5426070122",
+      "nameKo": "교대",
+      "nameEn": "Busan National University of Education",
+      "lat": 35.1938431,
+      "lon": 129.0797463,
+      "mode": "train"
+    },
+    {
+      "osmId": "8724477916",
+      "nameKo": "교대",
+      "nameEn": "Busan National University of Education",
+      "lat": 35.1952181,
+      "lon": 129.0800325,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8371236055",
+      "nameKo": "구례구",
+      "nameEn": "Guryegu",
+      "lat": 35.1634776,
+      "lon": 127.4519666,
+      "mode": "train"
+    },
+    {
+      "osmId": "11942201669",
+      "nameKo": "구리",
+      "nameEn": "Guri",
+      "lat": 37.6022712,
+      "lon": 127.1408384,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173646",
+      "nameKo": "구리",
+      "nameEn": "Guri",
+      "lat": 37.6032517,
+      "lon": 127.1433747,
+      "mode": "train"
+    },
+    {
+      "osmId": "9787544152",
+      "nameKo": "구미",
+      "nameEn": "Gumi",
+      "lat": 36.1283119,
+      "lon": 128.3310455,
+      "mode": "subway"
+    },
+    {
+      "osmId": "289245618",
+      "nameKo": "구서",
+      "nameEn": "Guseo",
+      "lat": 35.2472273,
+      "lon": 129.091268,
+      "mode": "subway"
+    },
+    {
+      "osmId": "10787176952",
+      "nameKo": "구성",
+      "nameEn": "Guseong",
+      "lat": 37.2990413,
+      "lon": 127.1039242,
+      "mode": "train"
+    },
+    {
+      "osmId": "1914727295",
+      "nameKo": "구성",
+      "nameEn": "Guseong",
+      "lat": 37.299009,
+      "lon": 127.1057537,
+      "mode": "train"
+    },
+    {
+      "osmId": "4693461947",
+      "nameKo": "구절리",
+      "nameEn": "Gujeolli",
+      "lat": 37.5166348,
+      "lon": 128.7269867,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637755",
+      "nameKo": "구포",
+      "nameEn": "Gupo",
+      "lat": 35.2053084,
+      "lon": 128.9973006,
+      "mode": "train"
+    },
+    {
+      "osmId": "5889529448",
+      "nameKo": "국수",
+      "nameEn": "Guksu",
+      "lat": 37.5161724,
+      "lon": 127.3993318,
+      "mode": "train"
+    },
+    {
+      "osmId": "2444013648",
+      "nameKo": "국제업무지구",
+      "nameEn": "International Business District",
+      "lat": 37.3997869,
+      "lon": 126.6304116,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368636646",
+      "nameKo": "군산",
+      "nameEn": "Gunsan",
+      "lat": 35.9993608,
+      "lon": 126.7602959,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172701",
+      "nameKo": "군포",
+      "nameEn": "Gunpo",
+      "lat": 37.3535747,
+      "lon": 126.9484606,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5881583344",
+      "nameKo": "굴봉산",
+      "nameEn": "Gulbongsan",
+      "lat": 37.8319287,
+      "lon": 127.5571369,
+      "mode": "train"
+    },
+    {
+      "osmId": "6050654946",
+      "nameKo": "굴포천",
+      "nameEn": "Gulpocheon",
+      "lat": 37.5070226,
+      "lon": 126.731337,
+      "mode": "subway"
+    },
+    {
+      "osmId": "3152004119",
+      "nameKo": "귤현",
+      "nameEn": "Gyulhyeon",
+      "lat": 37.5663544,
+      "lon": 126.7426554,
+      "mode": "subway"
+    },
+    {
+      "osmId": "9513182410",
+      "nameKo": "극락강",
+      "nameEn": "Geungnakgang",
+      "lat": 35.1759932,
+      "lon": 126.8300353,
+      "mode": "train"
+    },
+    {
+      "osmId": "1880695888",
+      "nameKo": "금강",
+      "nameEn": "Geumgang",
+      "lat": 35.8624915,
+      "lon": 128.7373933,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881815128",
+      "nameKo": "금곡",
+      "nameEn": "Geumgok",
+      "lat": 37.637287,
+      "lon": 127.2074445,
+      "mode": "train"
+    },
+    {
+      "osmId": "5803833316",
+      "nameKo": "금릉",
+      "nameEn": "Geumneung",
+      "lat": 37.7513781,
+      "lon": 126.765343,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173126",
+      "nameKo": "금정",
+      "nameEn": "Geumjeong",
+      "lat": 37.3723075,
+      "lon": 126.943397,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4686167736",
+      "nameKo": "금지",
+      "nameEn": "Geumji",
+      "lat": 35.3292751,
+      "lon": 127.2902118,
+      "mode": "train"
+    },
+    {
+      "osmId": "5442165368",
+      "nameKo": "금촌",
+      "nameEn": "Geumchon",
+      "lat": 37.7662332,
+      "lon": 126.7745788,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237826789",
+      "nameKo": "기성",
+      "nameEn": "Giseong",
+      "lat": 36.7904291,
+      "lon": 129.4475785,
+      "mode": "train"
+    },
+    {
+      "osmId": "5786705261",
+      "nameKo": "기장",
+      "nameEn": "Gijang",
+      "lat": 35.2444351,
+      "lon": 129.2188738,
+      "mode": "train"
+    },
+    {
+      "osmId": "5909960761",
+      "nameKo": "기흥",
+      "nameEn": "Giheung",
+      "lat": 37.2755132,
+      "lon": 127.1160129,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881583619",
+      "nameKo": "김유정",
+      "nameEn": "Gimyujeong",
+      "lat": 37.8184357,
+      "lon": 127.7140763,
+      "mode": "train"
+    },
+    {
+      "osmId": "8442435447",
+      "nameKo": "김천(구미)",
+      "nameEn": "Gimcheon(Gumi)",
+      "lat": 36.1130256,
+      "lon": 128.1806889,
+      "mode": "train"
+    },
+    {
+      "osmId": "6050654952",
+      "nameKo": "까치울",
+      "nameEn": "Kkachiul",
+      "lat": 37.5062407,
+      "lon": 126.8113842,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8236839371",
+      "nameKo": "나주",
+      "nameEn": "Naju",
+      "lat": 35.0139274,
+      "lon": 126.7174847,
+      "mode": "train"
+    },
+    {
+      "osmId": "5907964902",
+      "nameKo": "남동인더스파크",
+      "nameEn": "Namdong Induspark",
+      "lat": 37.4077519,
+      "lon": 126.6952345,
+      "mode": "train"
+    },
+    {
+      "osmId": "5425853202",
+      "nameKo": "남산",
+      "nameEn": "Namsan",
+      "lat": 35.2654258,
+      "lon": 129.0925658,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4550135662",
+      "nameKo": "남성현",
+      "nameEn": "Namseonghyeon",
+      "lat": 35.7048337,
+      "lon": 128.7162166,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636513",
+      "nameKo": "남원",
+      "nameEn": "Namwon",
+      "lat": 35.4112509,
+      "lon": 127.3613332,
+      "mode": "train"
+    },
+    {
+      "osmId": "6094326926",
+      "nameKo": "남위례",
+      "nameEn": "Namwirye",
+      "lat": 37.4627715,
+      "lon": 127.1392162,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368636918",
+      "nameKo": "남창",
+      "nameEn": "Namchang",
+      "lat": 35.4192677,
+      "lon": 129.2824686,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881583631",
+      "nameKo": "남춘천",
+      "nameEn": "Namchuncheon",
+      "lat": 37.8640114,
+      "lon": 127.7239381,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637836",
+      "nameKo": "남평",
+      "nameEn": "Nampyeong",
+      "lat": 35.0569825,
+      "lon": 126.8719689,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173841",
+      "nameKo": "남포",
+      "nameEn": "Nampo",
+      "lat": 35.0979243,
+      "lon": 129.0349473,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4753904469",
+      "nameKo": "남포",
+      "nameEn": "남포",
+      "lat": 36.3155876,
+      "lon": 126.5947591,
+      "mode": "train"
+    },
+    {
+      "osmId": "6094326924",
+      "nameKo": "남한산성입구",
+      "nameEn": "Namhansanseong",
+      "lat": 37.4515531,
+      "lon": 127.1598132,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5773428961",
+      "nameKo": "낫개",
+      "nameEn": "Natgae",
+      "lat": 35.0652983,
+      "lon": 128.979733,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368636930",
+      "nameKo": "내수",
+      "nameEn": "Naesu",
+      "lat": 36.728448,
+      "lon": 127.5357926,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173757",
+      "nameKo": "노포",
+      "nameEn": "Nopo",
+      "lat": 35.2839721,
+      "lon": 129.0951147,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172799",
+      "nameKo": "녹양",
+      "nameEn": "Nogyang",
+      "lat": 37.7594418,
+      "lon": 127.0423364,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7980071985",
+      "nameKo": "논산",
+      "nameEn": "Nonsan",
+      "lat": 36.2069077,
+      "lon": 127.0928492,
+      "mode": "train"
+    },
+    {
+      "osmId": "5448527919",
+      "nameKo": "능곡",
+      "nameEn": "Neunggok",
+      "lat": 37.6189396,
+      "lon": 126.8205157,
+      "mode": "train"
+    },
+    {
+      "osmId": "4660944411",
+      "nameKo": "능주",
+      "nameEn": "Neungju",
+      "lat": 34.985785,
+      "lon": 126.9642661,
+      "mode": "train"
+    },
+    {
+      "osmId": "5773432737",
+      "nameKo": "다대포항",
+      "nameEn": "Dadaepo Harbor",
+      "lat": 35.0577578,
+      "lon": 128.9713277,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5585724252",
+      "nameKo": "다대포해수욕장",
+      "nameEn": "Dadaepo Beach",
+      "lat": 35.0481953,
+      "lon": 128.9660188,
+      "mode": "subway"
+    },
+    {
+      "osmId": "11942201671",
+      "nameKo": "다산",
+      "nameEn": "Dasan",
+      "lat": 37.6243286,
+      "lon": 127.1497626,
+      "mode": "subway"
+    },
+    {
+      "osmId": "10678348035",
+      "nameKo": "다시",
+      "nameEn": "Dasi",
+      "lat": 35.0164504,
+      "lon": 126.6411305,
+      "mode": "train"
+    },
+    {
+      "osmId": "6094326923",
+      "nameKo": "단대오거리",
+      "nameEn": "Dandaeogeori",
+      "lat": 37.4450845,
+      "lon": 127.1567783,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8984037520",
+      "nameKo": "단양",
+      "nameEn": "Danyang",
+      "lat": 36.9731041,
+      "lon": 128.34404,
+      "mode": "train"
+    },
+    {
+      "osmId": "5921531686",
+      "nameKo": "달미",
+      "nameEn": "Dalmi",
+      "lat": 37.3491043,
+      "lon": 126.8090701,
+      "mode": "train"
+    },
+    {
+      "osmId": "3276816593",
+      "nameKo": "달월",
+      "nameEn": "Darwol",
+      "lat": 37.3799789,
+      "lon": 126.7453575,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636972",
+      "nameKo": "달천",
+      "nameEn": "Dalcheon",
+      "lat": 36.9607032,
+      "lon": 127.8798899,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173827",
+      "nameKo": "당리",
+      "nameEn": "Dangni",
+      "lat": 35.1034754,
+      "lon": 128.9738261,
+      "mode": "subway"
+    },
+    {
+      "osmId": "1684912049",
+      "nameKo": "당정",
+      "nameEn": "Dangjeong",
+      "lat": 37.3434316,
+      "lon": 126.9483607,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5937907125",
+      "nameKo": "대곡",
+      "nameEn": "Daegok",
+      "lat": 37.6317813,
+      "lon": 126.8102838,
+      "mode": "subway"
+    },
+    {
+      "osmId": "9863858581",
+      "nameKo": "대곡",
+      "nameEn": "Daegok",
+      "lat": 37.6312709,
+      "lon": 126.8121166,
+      "mode": "train"
+    },
+    {
+      "osmId": "6035746711",
+      "nameKo": "대공원",
+      "nameEn": "Seoul Grand Park",
+      "lat": 37.4358034,
+      "lon": 127.0066085,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368636344",
+      "nameKo": "대광리",
+      "nameEn": "Daegwang-ri",
+      "lat": 38.1849896,
+      "lon": 127.1085245,
+      "mode": "train"
+    },
+    {
+      "osmId": "8259053348",
+      "nameKo": "대구",
+      "nameEn": "Daegu",
+      "lat": 35.8760013,
+      "lon": 128.5960548,
+      "mode": "subway"
+    },
+    {
+      "osmId": "3408318907",
+      "nameKo": "대성리",
+      "nameEn": "Daeseong-ri",
+      "lat": 37.6838519,
+      "lon": 127.3795872,
+      "mode": "train"
+    },
+    {
+      "osmId": "8234193098",
+      "nameKo": "대야",
+      "nameEn": "Daeya",
+      "lat": 35.944932,
+      "lon": 126.8242542,
+      "mode": "train"
+    },
+    {
+      "osmId": "4974511635",
+      "nameKo": "대야미",
+      "nameEn": "Daeyami",
+      "lat": 37.3279256,
+      "lon": 126.9168618,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173691",
+      "nameKo": "대전",
+      "nameEn": "Daejeon",
+      "lat": 36.3322464,
+      "lon": 127.4346482,
+      "mode": "train"
+    },
+    {
+      "osmId": "13376351324",
+      "nameKo": "대천",
+      "nameEn": "Daecheon",
+      "lat": 36.3417336,
+      "lon": 126.586449,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173833",
+      "nameKo": "대티",
+      "nameEn": "Daeti",
+      "lat": 35.1031541,
+      "lon": 128.9999412,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5937907137",
+      "nameKo": "대화",
+      "nameEn": "Daehwa",
+      "lat": 37.6761753,
+      "lon": 126.7474634,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172795",
+      "nameKo": "덕계",
+      "nameEn": "Deokgye",
+      "lat": 37.8186361,
+      "lon": 127.0566509,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5446020616",
+      "nameKo": "덕소",
+      "nameEn": "Deokso",
+      "lat": 37.5869047,
+      "lon": 127.2088206,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172793",
+      "nameKo": "덕정",
+      "nameEn": "Deokjeong",
+      "lat": 37.843445,
+      "lon": 127.0615487,
+      "mode": "subway"
+    },
+    {
+      "osmId": "9143906247",
+      "nameKo": "덕하",
+      "nameEn": "Deokha",
+      "lat": 35.4940675,
+      "lon": 129.3031207,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636692",
+      "nameKo": "도계",
+      "nameEn": "Dogye",
+      "lat": 37.2293925,
+      "lon": 129.0442886,
+      "mode": "train"
+    },
+    {
+      "osmId": "368638233",
+      "nameKo": "도고온천",
+      "nameEn": "Dogooncheon",
+      "lat": 36.7495364,
+      "lon": 126.8895459,
+      "mode": "train"
+    },
+    {
+      "osmId": "5446010327",
+      "nameKo": "도농",
+      "nameEn": "Donong",
+      "lat": 37.6087826,
+      "lon": 127.161187,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636173",
+      "nameKo": "도라산",
+      "nameEn": "Dorasan",
+      "lat": 37.8983887,
+      "lon": 126.7091637,
+      "mode": "train"
+    },
+    {
+      "osmId": "5447330375",
+      "nameKo": "도심",
+      "nameEn": "Dosim",
+      "lat": 37.5796342,
+      "lon": 127.2226763,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637024",
+      "nameKo": "도안",
+      "nameEn": "Doan",
+      "lat": 36.814051,
+      "lon": 127.613816,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172834",
+      "nameKo": "도원",
+      "nameEn": "Dowon",
+      "lat": 37.4688261,
+      "lon": 126.6424009,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172830",
+      "nameKo": "도화",
+      "nameEn": "Dohwa",
+      "lat": 37.4661244,
+      "lon": 126.6682641,
+      "mode": "subway"
+    },
+    {
+      "osmId": "11942201670",
+      "nameKo": "동구릉",
+      "nameEn": "Donggureung",
+      "lat": 37.6105143,
+      "lon": 127.1381088,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7959053328",
+      "nameKo": "동대구",
+      "nameEn": "Dongdaegu",
+      "lat": 35.8791851,
+      "lon": 128.6283056,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173836",
+      "nameKo": "동대신",
+      "nameEn": "Dongdaesin",
+      "lat": 35.1103454,
+      "lon": 129.0177611,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172801",
+      "nameKo": "동두천",
+      "nameEn": "Dongducheon",
+      "lat": 37.9278263,
+      "lon": 127.0547822,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172805",
+      "nameKo": "동두천중앙",
+      "nameEn": "Dongducheonjungang",
+      "lat": 37.9018085,
+      "lon": 127.0565409,
+      "mode": "subway"
+    },
+    {
+      "osmId": "289245376",
+      "nameKo": "동래",
+      "nameEn": "Dongnae",
+      "lat": 35.2056761,
+      "lon": 129.0784845,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5757138369",
+      "nameKo": "동래",
+      "nameEn": "Dongnae",
+      "lat": 35.1972513,
+      "lon": 129.0911451,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030403",
+      "nameKo": "동막",
+      "nameEn": "Dongmak",
+      "lat": 37.3986231,
+      "lon": 126.6735412,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5581117238",
+      "nameKo": "동매",
+      "nameEn": "Dongmae",
+      "lat": 35.0897702,
+      "lon": 128.9732678,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6353989250",
+      "nameKo": "동백산",
+      "nameEn": "Dongbaeksan",
+      "lat": 37.1543454,
+      "lon": 129.0342354,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030415",
+      "nameKo": "동수",
+      "nameEn": "Dongsu",
+      "lat": 37.4854218,
+      "lon": 126.7185419,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172839",
+      "nameKo": "동암",
+      "nameEn": "Dongam",
+      "lat": 37.4710457,
+      "lon": 126.7028769,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7880740622",
+      "nameKo": "동익산",
+      "nameEn": "Dongiksan",
+      "lat": 35.9204873,
+      "lon": 126.9569285,
+      "mode": "train"
+    },
+    {
+      "osmId": "3216256063",
+      "nameKo": "동인천",
+      "nameEn": "Dongincheon",
+      "lat": 37.4751286,
+      "lon": 126.6330567,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6271708692",
+      "nameKo": "동천",
+      "nameEn": "Dongcheon",
+      "lat": 37.338098,
+      "lon": 127.1028283,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030404",
+      "nameKo": "동춘",
+      "nameEn": "Dongchun",
+      "lat": 37.4048204,
+      "lon": 126.6802706,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5535381367",
+      "nameKo": "동탄",
+      "nameEn": "Dongtan",
+      "lat": 37.2003594,
+      "lon": 127.0955764,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637061",
+      "nameKo": "동해",
+      "nameEn": "Donghae",
+      "lat": 37.4975753,
+      "lon": 129.1226016,
+      "mode": "train"
+    },
+    {
+      "osmId": "5425835737",
+      "nameKo": "두실",
+      "nameEn": "Dusil",
+      "lat": 35.25703,
+      "lon": 129.0913933,
+      "mode": "subway"
+    },
+    {
+      "osmId": "3427906838",
+      "nameKo": "두정",
+      "nameEn": "Dujeong",
+      "lat": 36.8336521,
+      "lon": 127.1489375,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4880228662",
+      "nameKo": "둔내",
+      "nameEn": "Dunnae",
+      "lat": 37.5100212,
+      "lon": 128.2212714,
+      "mode": "train"
+    },
+    {
+      "osmId": "4696590291",
+      "nameKo": "득량",
+      "nameEn": "Deungnyang",
+      "lat": 34.7611885,
+      "lon": 127.170332,
+      "mode": "train"
+    },
+    {
+      "osmId": "5937907134",
+      "nameKo": "마두",
+      "nameEn": "Madu",
+      "lat": 37.6520039,
+      "lon": 126.7777596,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8153431901",
+      "nameKo": "마산",
+      "nameEn": "Masan",
+      "lat": 35.2363635,
+      "lon": 128.576728,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881815357",
+      "nameKo": "마석",
+      "nameEn": "Maseok",
+      "lat": 37.6527753,
+      "lon": 127.3116745,
+      "mode": "train"
+    },
+    {
+      "osmId": "4456505490",
+      "nameKo": "만종",
+      "nameEn": "Manjong",
+      "lat": 37.353949,
+      "lon": 127.8931116,
+      "mode": "train"
+    },
+    {
+      "osmId": "7686530868",
+      "nameKo": "망양",
+      "nameEn": "Mangyang",
+      "lat": 35.4565132,
+      "lon": 129.2878274,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172791",
+      "nameKo": "망월사",
+      "nameEn": "Mangwolsa",
+      "lat": 37.7102529,
+      "lon": 127.0473968,
+      "mode": "subway"
+    },
+    {
+      "osmId": "452388446",
+      "nameKo": "망포",
+      "nameEn": "Mangpo",
+      "lat": 37.245765,
+      "lon": 127.0569012,
+      "mode": "subway"
+    },
+    {
+      "osmId": "10772818943",
+      "nameKo": "매곡",
+      "nameEn": "Maegok",
+      "lat": 37.4365864,
+      "lon": 127.7301441,
+      "mode": "train"
+    },
+    {
+      "osmId": "5880311190",
+      "nameKo": "매교",
+      "nameEn": "Maegyo",
+      "lat": 37.2654788,
+      "lon": 127.0156874,
+      "mode": "train"
+    },
+    {
+      "osmId": "5880311185",
+      "nameKo": "매탄권선",
+      "nameEn": "MaetanGwonseon",
+      "lat": 37.2530134,
+      "lon": 127.0403832,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237826793",
+      "nameKo": "매화",
+      "nameEn": "Maehwa",
+      "lat": 36.8826955,
+      "lon": 129.4097631,
+      "mode": "train"
+    },
+    {
+      "osmId": "4115279791",
+      "nameKo": "명륜",
+      "nameEn": "Myeongnyun",
+      "lat": 35.2126465,
+      "lon": 129.0797207,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368636371",
+      "nameKo": "명봉",
+      "nameEn": "Myeongbong",
+      "lat": 34.82774,
+      "lon": 127.0755195,
+      "mode": "train"
+    },
+    {
+      "osmId": "353186903",
+      "nameKo": "명학",
+      "nameEn": "Myeonghak",
+      "lat": 37.3843939,
+      "lon": 126.9356089,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5927397045",
+      "nameKo": "모란",
+      "nameEn": "Moran",
+      "lat": 37.4337388,
+      "lon": 127.1291547,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7908597457",
+      "nameKo": "모란",
+      "nameEn": "Moran",
+      "lat": 37.4322241,
+      "lon": 127.1290831,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7839157592",
+      "nameKo": "목포",
+      "nameEn": "Mokpo",
+      "lat": 34.7921339,
+      "lon": 126.3876448,
+      "mode": "train"
+    },
+    {
+      "osmId": "10678348094",
+      "nameKo": "몽탄",
+      "nameEn": "Mongtan",
+      "lat": 34.9298291,
+      "lon": 126.5037002,
+      "mode": "train"
+    },
+    {
+      "osmId": "8236839404",
+      "nameKo": "무안",
+      "nameEn": "Muan",
+      "lat": 34.9627975,
+      "lon": 126.5175783,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637950",
+      "nameKo": "묵호",
+      "nameEn": "Mukho",
+      "lat": 37.5461786,
+      "lon": 129.1082108,
+      "mode": "train"
+    },
+    {
+      "osmId": "8829216791",
+      "nameKo": "문경",
+      "nameEn": "Mungyeong",
+      "lat": 36.7202622,
+      "lon": 128.110201,
+      "mode": "train"
+    },
+    {
+      "osmId": "1565727595",
+      "nameKo": "문산",
+      "nameEn": "Munsan",
+      "lat": 37.8544531,
+      "lon": 126.7879045,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030409",
+      "nameKo": "문학경기장",
+      "nameEn": "Munhak Sports Complex",
+      "lat": 37.4351045,
+      "lon": 126.6977955,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637120",
+      "nameKo": "물금",
+      "nameEn": "Mulgeum",
+      "lat": 35.3066353,
+      "lon": 128.9853853,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881397260",
+      "nameKo": "미금",
+      "nameEn": "Migeum",
+      "lat": 37.3499776,
+      "lon": 127.1088905,
+      "mode": "train"
+    },
+    {
+      "osmId": "5927446185",
+      "nameKo": "미금",
+      "nameEn": "Migeum",
+      "lat": 37.3494279,
+      "lon": 127.1091598,
+      "mode": "train"
+    },
+    {
+      "osmId": "7908597462",
+      "nameKo": "미금",
+      "nameEn": "Migeum",
+      "lat": 37.3500225,
+      "lon": 127.1089985,
+      "mode": "train"
+    },
+    {
+      "osmId": "7797861989",
+      "nameKo": "미사",
+      "nameEn": "Misa",
+      "lat": 37.5630546,
+      "lon": 127.192822,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4767891732",
+      "nameKo": "민둥산",
+      "nameEn": "민둥산",
+      "lat": 37.2436437,
+      "lon": 128.7736429,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636742",
+      "nameKo": "밀양",
+      "nameEn": "Miryang",
+      "lat": 35.4748507,
+      "lon": 128.7714177,
+      "mode": "train"
+    },
+    {
+      "osmId": "4691566557",
+      "nameKo": "반성",
+      "nameEn": "Banseong",
+      "lat": 35.1748106,
+      "lon": 128.2582437,
+      "mode": "train"
+    },
+    {
+      "osmId": "5812740054",
+      "nameKo": "반월",
+      "nameEn": "Banwol",
+      "lat": 37.3124221,
+      "lon": 126.9038361,
+      "mode": "subway"
+    },
+    {
+      "osmId": "1329634746",
+      "nameKo": "배방",
+      "nameEn": "Baebang",
+      "lat": 36.7776995,
+      "lon": 127.0529902,
+      "mode": "subway"
+    },
+    {
+      "osmId": "2090733293",
+      "nameKo": "백마",
+      "nameEn": "Baengma",
+      "lat": 37.6583299,
+      "lon": 126.794475,
+      "mode": "train"
+    },
+    {
+      "osmId": "1939806959",
+      "nameKo": "백마고지",
+      "nameEn": "Baengmagoji",
+      "lat": 38.2575293,
+      "lon": 127.1660346,
+      "mode": "train"
+    },
+    {
+      "osmId": "6125828716",
+      "nameKo": "백석",
+      "nameEn": "Baekseok",
+      "lat": 37.6430359,
+      "lon": 126.7880378,
+      "mode": "subway"
+    },
+    {
+      "osmId": "2783256700",
+      "nameKo": "백양리",
+      "nameEn": "Baekyangri",
+      "lat": 37.8307811,
+      "lon": 127.5891684,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636524",
+      "nameKo": "백양사",
+      "nameEn": "Baekyangsa",
+      "lat": 35.4317191,
+      "lon": 126.80776,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172837",
+      "nameKo": "백운",
+      "nameEn": "Baegun",
+      "lat": 37.4831229,
+      "lon": 126.7071115,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637149",
+      "nameKo": "벌교",
+      "nameEn": "Beolgyo",
+      "lat": 34.841773,
+      "lon": 127.345584,
+      "mode": "train"
+    },
+    {
+      "osmId": "6035746705",
+      "nameKo": "범계",
+      "nameEn": "Beomgye",
+      "lat": 37.3899129,
+      "lon": 126.95091,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173726",
+      "nameKo": "범내골",
+      "nameEn": "Beomnaegol",
+      "lat": 35.1474005,
+      "lon": 129.0592024,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173761",
+      "nameKo": "범어사",
+      "nameEn": "Beomeosa",
+      "lat": 35.273102,
+      "lon": 129.092668,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173728",
+      "nameKo": "범일",
+      "nameEn": "Beomil",
+      "lat": 35.140947,
+      "lon": 129.059365,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5713855425",
+      "nameKo": "벡스코",
+      "nameEn": "BEXCO (Busan Museum of Art)",
+      "lat": 35.1715714,
+      "lon": 129.1360969,
+      "mode": "train"
+    },
+    {
+      "osmId": "11942201672",
+      "nameKo": "별내",
+      "nameEn": "Byeollae",
+      "lat": 37.6420348,
+      "lon": 127.1278172,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5884250514",
+      "nameKo": "별내",
+      "nameEn": "Byeollae",
+      "lat": 37.642333,
+      "lon": 127.1276086,
+      "mode": "train"
+    },
+    {
+      "osmId": "7265480504",
+      "nameKo": "별내별가람",
+      "nameEn": "Byeollaebyeolgaram",
+      "lat": 37.6678242,
+      "lon": 127.1162693,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4789111065",
+      "nameKo": "별어곡",
+      "nameEn": "별어곡",
+      "lat": 37.2692471,
+      "lon": 128.7397402,
+      "mode": "train"
+    },
+    {
+      "osmId": "4954074024",
+      "nameKo": "병점",
+      "nameEn": "Byeongjeom",
+      "lat": 37.206834,
+      "lon": 127.0331291,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172803",
+      "nameKo": "보산",
+      "nameEn": "Bosan",
+      "lat": 37.9141529,
+      "lon": 127.0572513,
+      "mode": "subway"
+    },
+    {
+      "osmId": "12892003321",
+      "nameKo": "보성",
+      "nameEn": "Boseong",
+      "lat": 34.7667691,
+      "lon": 127.0821389,
+      "mode": "train"
+    },
+    {
+      "osmId": "6641198799",
+      "nameKo": "보정",
+      "nameEn": "Bojeong",
+      "lat": 37.3125962,
+      "lon": 127.108344,
+      "mode": "train"
+    },
+    {
+      "osmId": "1973709782",
+      "nameKo": "봉명",
+      "nameEn": "Bongmyeong",
+      "lat": 36.8012958,
+      "lon": 127.135865,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637174",
+      "nameKo": "봉양",
+      "nameEn": "Bongyang",
+      "lat": 37.1304027,
+      "lon": 128.1298058,
+      "mode": "train"
+    },
+    {
+      "osmId": "8664432526",
+      "nameKo": "부강",
+      "nameEn": "Bugang",
+      "lat": 36.532549,
+      "lon": 127.3650211,
+      "mode": "train"
+    },
+    {
+      "osmId": "3233869354",
+      "nameKo": "부개",
+      "nameEn": "Bugae",
+      "lat": 37.4884914,
+      "lon": 126.7406058,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5930638324",
+      "nameKo": "부발",
+      "nameEn": "Bubal",
+      "lat": 37.2604023,
+      "lon": 127.4903284,
+      "mode": "train"
+    },
+    {
+      "osmId": "8693385785",
+      "nameKo": "부산",
+      "nameEn": "Busan",
+      "lat": 35.1155532,
+      "lon": 129.0425868,
+      "mode": "train"
+    },
+    {
+      "osmId": "5584656519",
+      "nameKo": "부산대",
+      "nameEn": "Pusan Nat'l Univ.",
+      "lat": 35.2296377,
+      "lon": 129.0893608,
+      "mode": "subway"
+    },
+    {
+      "osmId": "1768537544",
+      "nameKo": "부산역",
+      "nameEn": "Busan Station",
+      "lat": 35.1157262,
+      "lon": 129.0399028,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7461024100",
+      "nameKo": "부산원동",
+      "nameEn": "Busanwondong",
+      "lat": 35.1936252,
+      "lon": 129.1141622,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173848",
+      "nameKo": "부산진",
+      "nameEn": "Busanjin",
+      "lat": 35.1290282,
+      "lon": 129.0492214,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173722",
+      "nameKo": "부전",
+      "nameEn": "Bujeon",
+      "lat": 35.1626001,
+      "lon": 129.0629411,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5425834492",
+      "nameKo": "부전",
+      "nameEn": "Bujeon",
+      "lat": 35.1646008,
+      "lon": 129.0601074,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172828",
+      "nameKo": "부천",
+      "nameEn": "Bucheon",
+      "lat": 37.4841098,
+      "lon": 126.7827347,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6050654951",
+      "nameKo": "부천종합운동장",
+      "nameEn": "Bucheon Stadium",
+      "lat": 37.5054566,
+      "lon": 126.7972885,
+      "mode": "subway"
+    },
+    {
+      "osmId": "9417728884",
+      "nameKo": "부천종합운동장",
+      "nameEn": "Bucheon Stadium",
+      "lat": 37.5058364,
+      "lon": 126.7974606,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172821",
+      "nameKo": "부평",
+      "nameEn": "Bupyeong",
+      "lat": 37.489454,
+      "lon": 126.7245591,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8390030416",
+      "nameKo": "부평",
+      "nameEn": "Bupyeong",
+      "lat": 37.4899854,
+      "lon": 126.7237346,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6122528127",
+      "nameKo": "부평구청",
+      "nameEn": "Bupyeong-gu Office",
+      "lat": 37.5074652,
+      "lon": 126.721104,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8390080118",
+      "nameKo": "부평구청",
+      "nameEn": "Bupyeong-gu Office",
+      "lat": 37.5082283,
+      "lon": 126.7205539,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8390030414",
+      "nameKo": "부평삼거리",
+      "nameEn": "Bupyeongsamgeori",
+      "lat": 37.4779093,
+      "lon": 126.7103571,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8390080117",
+      "nameKo": "부평시장",
+      "nameEn": "Bupyeong Market",
+      "lat": 37.4983678,
+      "lon": 126.722289,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6132712618",
+      "nameKo": "북울산",
+      "nameEn": "Bugulsan",
+      "lat": 35.6148687,
+      "lon": 129.3724491,
+      "mode": "train"
+    },
+    {
+      "osmId": "8998267318",
+      "nameKo": "북천",
+      "nameEn": "Bukcheon",
+      "lat": 35.111672,
+      "lon": 127.8835812,
+      "mode": "train"
+    },
+    {
+      "osmId": "4628698287",
+      "nameKo": "사곡",
+      "nameEn": "Sagok",
+      "lat": 36.09837,
+      "lon": 128.3564296,
+      "mode": "subway"
+    },
+    {
+      "osmId": "2859438901",
+      "nameKo": "사릉",
+      "nameEn": "Sareung",
+      "lat": 37.6510986,
+      "lon": 127.1768961,
+      "mode": "train"
+    },
+    {
+      "osmId": "5511790792",
+      "nameKo": "사리",
+      "nameEn": "Sari",
+      "lat": 37.2908651,
+      "lon": 126.8571963,
+      "mode": "train"
+    },
+    {
+      "osmId": "360198537",
+      "nameKo": "사북",
+      "nameEn": "Sabuk",
+      "lat": 37.2261666,
+      "lon": 128.8170335,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173789",
+      "nameKo": "사상",
+      "nameEn": "Sasang",
+      "lat": 35.1624853,
+      "lon": 128.989003,
+      "mode": "train"
+    },
+    {
+      "osmId": "8041793373",
+      "nameKo": "사천",
+      "nameEn": "Sacheon",
+      "lat": 35.0933974,
+      "lon": 128.0903825,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173829",
+      "nameKo": "사하",
+      "nameEn": "Saha",
+      "lat": 35.09984,
+      "lon": 128.983094,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6185441876",
+      "nameKo": "산곡",
+      "nameEn": "Sangok",
+      "lat": 37.5086974,
+      "lon": 126.7036926,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173135",
+      "nameKo": "산본",
+      "nameEn": "Sanbon",
+      "lat": 37.3580735,
+      "lon": 126.9330964,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6094326925",
+      "nameKo": "산성",
+      "nameEn": "Sanseong",
+      "lat": 37.4568677,
+      "lon": 127.1499333,
+      "mode": "subway"
+    },
+    {
+      "osmId": "12387670670",
+      "nameKo": "살미",
+      "nameEn": "Salmi",
+      "lat": 36.9022446,
+      "lon": 127.9601789,
+      "mode": "train"
+    },
+    {
+      "osmId": "5927786378",
+      "nameKo": "삼동",
+      "nameEn": "Samdong",
+      "lat": 37.4086552,
+      "lon": 127.2033897,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4497184214",
+      "nameKo": "삼랑진",
+      "nameEn": "Samrangjin",
+      "lat": 35.3990296,
+      "lon": 128.8438715,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636158",
+      "nameKo": "삼례",
+      "nameEn": "Samnye",
+      "lat": 35.9039125,
+      "lon": 127.0659487,
+      "mode": "train"
+    },
+    {
+      "osmId": "4685320066",
+      "nameKo": "삼산",
+      "nameEn": "Samsan",
+      "lat": 37.3922782,
+      "lon": 127.7797291,
+      "mode": "train"
+    },
+    {
+      "osmId": "6050654947",
+      "nameKo": "삼산체육관",
+      "nameEn": "Samsan Gymnasium",
+      "lat": 37.506496,
+      "lon": 126.7423475,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5941651083",
+      "nameKo": "삼송",
+      "nameEn": "Samsong",
+      "lat": 37.6531194,
+      "lon": 126.8954796,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637247",
+      "nameKo": "삼척",
+      "nameEn": "Samcheok",
+      "lat": 37.4298261,
+      "lon": 129.178778,
+      "mode": "train"
+    },
+    {
+      "osmId": "13711016079",
+      "nameKo": "삼탄",
+      "nameEn": "Samtan",
+      "lat": 37.0734194,
+      "lon": 128.0386655,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637246",
+      "nameKo": "삽교",
+      "nameEn": "Sapgyo",
+      "lat": 36.6798216,
+      "lon": 126.7515305,
+      "mode": "train"
+    },
+    {
+      "osmId": "5878492833",
+      "nameKo": "상갈",
+      "nameEn": "Sanggal",
+      "lat": 37.2616918,
+      "lon": 127.1088952,
+      "mode": "train"
+    },
+    {
+      "osmId": "10694582728",
+      "nameKo": "상동",
+      "nameEn": "Sangdong",
+      "lat": 35.5557169,
+      "lon": 128.7604039,
+      "mode": "train"
+    },
+    {
+      "osmId": "3401205505",
+      "nameKo": "상동",
+      "nameEn": "Sang-dong",
+      "lat": 37.5058355,
+      "lon": 126.7531743,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173114",
+      "nameKo": "상록수",
+      "nameEn": "Sangnoksu",
+      "lat": 37.3028126,
+      "lon": 126.8667779,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5881815796",
+      "nameKo": "상천",
+      "nameEn": "Sangcheon",
+      "lat": 37.7701645,
+      "lon": 127.4544317,
+      "mode": "train"
+    },
+    {
+      "osmId": "6269598428",
+      "nameKo": "상현",
+      "nameEn": "Sanghyeon",
+      "lat": 37.2975826,
+      "lon": 127.069302,
+      "mode": "train"
+    },
+    {
+      "osmId": "9376156828",
+      "nameKo": "서경주",
+      "nameEn": "Seogyeongju",
+      "lat": 35.8846915,
+      "lon": 129.1808636,
+      "mode": "train"
+    },
+    {
+      "osmId": "7783042838",
+      "nameKo": "서광주",
+      "nameEn": "Seogwangju",
+      "lat": 35.1247329,
+      "lon": 126.8474307,
+      "mode": "train"
+    },
+    {
+      "osmId": "8259053324",
+      "nameKo": "서대구",
+      "nameEn": "Seodaegu",
+      "lat": 35.8813666,
+      "lon": 128.5417368,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173834",
+      "nameKo": "서대신",
+      "nameEn": "Seodaesin",
+      "lat": 35.1108608,
+      "lon": 129.0120406,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6006354021",
+      "nameKo": "서대전",
+      "nameEn": "Seodaejeon",
+      "lat": 36.3224768,
+      "lon": 127.403122,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636405",
+      "nameKo": "서도",
+      "nameEn": "Seodo",
+      "lat": 35.4920243,
+      "lon": 127.3308966,
+      "mode": "train"
+    },
+    {
+      "osmId": "5904958058",
+      "nameKo": "서동탄",
+      "nameEn": "Seodongtan",
+      "lat": 37.1956553,
+      "lon": 127.0520326,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5782717000",
+      "nameKo": "서면",
+      "nameEn": "Seomyeon",
+      "lat": 35.1577739,
+      "lon": 129.0592588,
+      "mode": "subway"
+    },
+    {
+      "osmId": "9143869772",
+      "nameKo": "서생",
+      "nameEn": "Seosaeng",
+      "lat": 35.3461278,
+      "lon": 129.2929527,
+      "mode": "train"
+    },
+    {
+      "osmId": "4826452445",
+      "nameKo": "서원주",
+      "nameEn": "Seowonju",
+      "lat": 37.3485297,
+      "lon": 127.8393953,
+      "mode": "train"
+    },
+    {
+      "osmId": "5896286361",
+      "nameKo": "서정리",
+      "nameEn": "Seojeong-ri",
+      "lat": 37.0570768,
+      "lon": 127.0529486,
+      "mode": "train"
+    },
+    {
+      "osmId": "10165830852",
+      "nameKo": "서천",
+      "nameEn": "Seocheon",
+      "lat": 36.0821954,
+      "lon": 126.7084727,
+      "mode": "train"
+    },
+    {
+      "osmId": "6312484225",
+      "nameKo": "서현",
+      "nameEn": "Seohyeon",
+      "lat": 37.3849098,
+      "lon": 127.1233331,
+      "mode": "train"
+    },
+    {
+      "osmId": "9931812354",
+      "nameKo": "서화성",
+      "nameEn": "Seohwaseong",
+      "lat": 37.2487819,
+      "lon": 126.7868664,
+      "mode": "train"
+    },
+    {
+      "osmId": "8298678456",
+      "nameKo": "석남",
+      "nameEn": "Seongnam",
+      "lat": 37.5062862,
+      "lon": 126.6746369,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637825",
+      "nameKo": "석불",
+      "nameEn": "Seokbul",
+      "lat": 37.4599748,
+      "lon": 127.6549407,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637281",
+      "nameKo": "석항",
+      "nameEn": "Seokhang",
+      "lat": 37.1972666,
+      "lon": 128.6205564,
+      "mode": "train"
+    },
+    {
+      "osmId": "6035746718",
+      "nameKo": "선바위",
+      "nameEn": "Seonbawi",
+      "lat": 37.4518055,
+      "lon": 127.0021114,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5921531580",
+      "nameKo": "선부",
+      "nameEn": "Seonbu",
+      "lat": 37.3344566,
+      "lon": 126.8098989,
+      "mode": "train"
+    },
+    {
+      "osmId": "4790155124",
+      "nameKo": "선평",
+      "nameEn": "선평",
+      "lat": 37.3217574,
+      "lon": 128.7126832,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030408",
+      "nameKo": "선학",
+      "nameEn": "Seonhak",
+      "lat": 37.4272405,
+      "lon": 126.6989894,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172707",
+      "nameKo": "성균관대",
+      "nameEn": "Sungkyunkwan Univ.",
+      "lat": 37.3002852,
+      "lon": 126.9711778,
+      "mode": "subway"
+    },
+    {
+      "osmId": "10787176950",
+      "nameKo": "성남",
+      "nameEn": "Seongnam",
+      "lat": 37.3936894,
+      "lon": 127.1205842,
+      "mode": "train"
+    },
+    {
+      "osmId": "10787176951",
+      "nameKo": "성남",
+      "nameEn": "Seongnam",
+      "lat": 37.3946908,
+      "lon": 127.1194122,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6269662492",
+      "nameKo": "성복",
+      "nameEn": "Seongbok",
+      "lat": 37.3134999,
+      "lon": 127.0803769,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636186",
+      "nameKo": "성환",
+      "nameEn": "Seonghwan",
+      "lat": 36.9159824,
+      "lon": 127.1268868,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4874383463",
+      "nameKo": "세류",
+      "nameEn": "Seryu",
+      "lat": 37.2441147,
+      "lon": 127.0137222,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355172712",
+      "nameKo": "세마",
+      "nameEn": "Sema",
+      "lat": 37.187372,
+      "lon": 127.0432736,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5930638289",
+      "nameKo": "세종대왕릉",
+      "nameEn": "Sejongdaewangneung",
+      "lat": 37.2936234,
+      "lon": 127.5706471,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6480269468",
+      "nameKo": "센텀",
+      "nameEn": "Centum",
+      "lat": 35.1794562,
+      "lon": 129.1245187,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030398",
+      "nameKo": "센트럴파크",
+      "nameEn": "Central Park",
+      "lat": 37.3935066,
+      "lon": 126.6345613,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5907965052",
+      "nameKo": "소래포구",
+      "nameEn": "Soraepogu",
+      "lat": 37.400917,
+      "lon": 126.733525,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172827",
+      "nameKo": "소사",
+      "nameEn": "소사",
+      "lat": 37.4827657,
+      "lon": 126.7955903,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8239410961",
+      "nameKo": "소사",
+      "nameEn": "Sosa",
+      "lat": 37.4829985,
+      "lon": 126.7950167,
+      "mode": "train"
+    },
+    {
+      "osmId": "5921531709",
+      "nameKo": "소새울",
+      "nameEn": "Sosaeul",
+      "lat": 37.4688742,
+      "lon": 126.7970994,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172814",
+      "nameKo": "소요산",
+      "nameEn": "Soyosan",
+      "lat": 37.9480012,
+      "lon": 127.0608178,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637291",
+      "nameKo": "소이",
+      "nameEn": "Soi",
+      "lat": 36.9226595,
+      "lon": 127.7564938,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172817",
+      "nameKo": "송내",
+      "nameEn": "Songnae",
+      "lat": 37.4877038,
+      "lon": 126.7528847,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5910775653",
+      "nameKo": "송도",
+      "nameEn": "Songdo",
+      "lat": 37.4299382,
+      "lon": 126.6547155,
+      "mode": "train"
+    },
+    {
+      "osmId": "8236203299",
+      "nameKo": "송도달빛축제공원",
+      "nameEn": "Songdo Moonlight Festival Park",
+      "lat": 37.4068054,
+      "lon": 126.6261064,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7249447663",
+      "nameKo": "송추",
+      "nameEn": "Songchu",
+      "lat": 37.7207922,
+      "lon": 126.9794074,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172721",
+      "nameKo": "송탄",
+      "nameEn": "Songtan",
+      "lat": 37.075356,
+      "lon": 127.0543657,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6312484224",
+      "nameKo": "수내",
+      "nameEn": "Sunae",
+      "lat": 37.3784062,
+      "lon": 127.1142451,
+      "mode": "train"
+    },
+    {
+      "osmId": "5347802252",
+      "nameKo": "수리산",
+      "nameEn": "Surisan",
+      "lat": 37.3504199,
+      "lon": 126.9255584,
+      "mode": "subway"
+    },
+    {
+      "osmId": "12387670671",
+      "nameKo": "수안보온천",
+      "nameEn": "Suanbo Oncheon",
+      "lat": 36.8416922,
+      "lon": 128.0050118,
+      "mode": "train"
+    },
+    {
+      "osmId": "4860959660",
+      "nameKo": "수원",
+      "nameEn": "Suwon",
+      "lat": 37.2658097,
+      "lon": 126.9999102,
+      "mode": "train"
+    },
+    {
+      "osmId": "7287966347",
+      "nameKo": "수원",
+      "nameEn": "Suwon",
+      "lat": 37.2662775,
+      "lon": 127.0004098,
+      "mode": "train"
+    },
+    {
+      "osmId": "5880311186",
+      "nameKo": "수원시청",
+      "nameEn": "Suwon City Hall",
+      "lat": 37.2616466,
+      "lon": 127.0318618,
+      "mode": "train"
+    },
+    {
+      "osmId": "6269743766",
+      "nameKo": "수지구청",
+      "nameEn": "Suji-gu Office",
+      "lat": 37.3225368,
+      "lon": 127.0947549,
+      "mode": "train"
+    },
+    {
+      "osmId": "6094326921",
+      "nameKo": "수진",
+      "nameEn": "Sujin",
+      "lat": 37.4374429,
+      "lon": 127.1406857,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8371236087",
+      "nameKo": "순천",
+      "nameEn": "Suncheon",
+      "lat": 34.9458107,
+      "lon": 127.5040597,
+      "mode": "train"
+    },
+    {
+      "osmId": "5910775264",
+      "nameKo": "숭의",
+      "nameEn": "Sungui",
+      "lat": 37.4607927,
+      "lon": 126.6382349,
+      "mode": "train"
+    },
+    {
+      "osmId": "5921531570",
+      "nameKo": "시우",
+      "nameEn": "Siu",
+      "lat": 37.3131143,
+      "lon": 126.7956376,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173718",
+      "nameKo": "시청",
+      "nameEn": "City Hall",
+      "lat": 35.1797508,
+      "lon": 129.076521,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5921531689",
+      "nameKo": "시흥능곡",
+      "nameEn": "Siheung Neunggok",
+      "lat": 37.3700847,
+      "lon": 126.8087509,
+      "mode": "train"
+    },
+    {
+      "osmId": "5921531706",
+      "nameKo": "시흥대야",
+      "nameEn": "Siheung Daeya",
+      "lat": 37.4503447,
+      "lon": 126.7931217,
+      "mode": "train"
+    },
+    {
+      "osmId": "5921531691",
+      "nameKo": "시흥시청",
+      "nameEn": "Siheung City Hall",
+      "lat": 37.3820785,
+      "lon": 126.8057464,
+      "mode": "train"
+    },
+    {
+      "osmId": "1915043094",
+      "nameKo": "신갈",
+      "nameEn": "Singal",
+      "lat": 37.2861537,
+      "lon": 127.1113752,
+      "mode": "train"
+    },
+    {
+      "osmId": "12961370707",
+      "nameKo": "신검단중앙",
+      "nameEn": "Singeomdanjungang",
+      "lat": 37.6026764,
+      "lon": 126.6985265,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5338792760",
+      "nameKo": "신길온천",
+      "nameEn": "Singiloncheon",
+      "lat": 37.3375382,
+      "lon": 126.7673001,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637308",
+      "nameKo": "신동",
+      "nameEn": "Sindong",
+      "lat": 35.9554422,
+      "lon": 128.4861116,
+      "mode": "train"
+    },
+    {
+      "osmId": "5930638511",
+      "nameKo": "신둔도예촌",
+      "nameEn": "Sindundoyechon",
+      "lat": 37.3155483,
+      "lon": 127.405293,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637309",
+      "nameKo": "신례원",
+      "nameEn": "Sillyewon",
+      "lat": 36.7271537,
+      "lon": 126.8495699,
+      "mode": "train"
+    },
+    {
+      "osmId": "5271456997",
+      "nameKo": "신망리",
+      "nameEn": "Sinmang-ri",
+      "lat": 38.1325039,
+      "lon": 127.0784611,
+      "mode": "train"
+    },
+    {
+      "osmId": "7106135782",
+      "nameKo": "신보성",
+      "nameEn": "Sinboseong",
+      "lat": 34.7593489,
+      "lon": 127.0856698,
+      "mode": "train"
+    },
+    {
+      "osmId": "4753904289",
+      "nameKo": "신성",
+      "nameEn": "Sinseong",
+      "lat": 36.5679864,
+      "lon": 126.6624096,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030405",
+      "nameKo": "신연수",
+      "nameEn": "Sinyeonsu",
+      "lat": 37.4180647,
+      "lon": 126.6939309,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5889529434",
+      "nameKo": "신원",
+      "nameEn": "Sinwon",
+      "lat": 37.5259709,
+      "lon": 127.3727035,
+      "mode": "train"
+    },
+    {
+      "osmId": "5773426737",
+      "nameKo": "신장림",
+      "nameEn": "Sinjangnim",
+      "lat": 35.0745502,
+      "lon": 128.9768092,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6050654949",
+      "nameKo": "신중동",
+      "nameEn": "Sinjung-dong",
+      "lat": 37.5030388,
+      "lon": 126.7762325,
+      "mode": "subway"
+    },
+    {
+      "osmId": "3406658077",
+      "nameKo": "신창",
+      "nameEn": "Sinchang",
+      "lat": 36.7697885,
+      "lon": 126.9518229,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5921531703",
+      "nameKo": "신천",
+      "nameEn": "Sincheon",
+      "lat": 37.4393096,
+      "lon": 126.7867997,
+      "mode": "train"
+    },
+    {
+      "osmId": "2346858838",
+      "nameKo": "신촌",
+      "nameEn": "Sinchon",
+      "lat": 37.5597815,
+      "lon": 126.9423581,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636441",
+      "nameKo": "신탄리",
+      "nameEn": "Sintan-ri",
+      "lat": 38.2127801,
+      "lon": 127.1394867,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637854",
+      "nameKo": "신탄진",
+      "nameEn": "Sintanjin",
+      "lat": 36.4496321,
+      "lon": 127.4281663,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637330",
+      "nameKo": "신태인",
+      "nameEn": "Sintaein",
+      "lat": 35.6877264,
+      "lon": 126.8841325,
+      "mode": "train"
+    },
+    {
+      "osmId": "5585871601",
+      "nameKo": "신평",
+      "nameEn": "Sinpyeong",
+      "lat": 35.0952151,
+      "lon": 128.9606813,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5910775265",
+      "nameKo": "신포",
+      "nameEn": "Sinpo",
+      "lat": 37.4682643,
+      "lon": 126.6248171,
+      "mode": "train"
+    },
+    {
+      "osmId": "5747415218",
+      "nameKo": "신해운대",
+      "nameEn": "Sinhaeundae",
+      "lat": 35.1817359,
+      "lon": 129.1768241,
+      "mode": "train"
+    },
+    {
+      "osmId": "5921531694",
+      "nameKo": "신현",
+      "nameEn": "Sinhyeon",
+      "lat": 37.4095842,
+      "lon": 126.7878699,
+      "mode": "train"
+    },
+    {
+      "osmId": "6094326922",
+      "nameKo": "신흥",
+      "nameEn": "Sinheung",
+      "lat": 37.4410027,
+      "lon": 127.1476641,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4497184211",
+      "nameKo": "심천",
+      "nameEn": "Simcheon",
+      "lat": 36.2368257,
+      "lon": 127.7207879,
+      "mode": "train"
+    },
+    {
+      "osmId": "4423233270",
+      "nameKo": "쌍룡",
+      "nameEn": "Ssangnyong",
+      "lat": 37.1742252,
+      "lon": 128.3286805,
+      "mode": "train"
+    },
+    {
+      "osmId": "980061738",
+      "nameKo": "쌍용",
+      "nameEn": "Ssangyong",
+      "lat": 36.7937183,
+      "lon": 127.1212913,
+      "mode": "subway"
+    },
+    {
+      "osmId": "12961370706",
+      "nameKo": "아라",
+      "nameEn": "Ara",
+      "lat": 37.5922592,
+      "lon": 126.7133006,
+      "mode": "subway"
+    },
+    {
+      "osmId": "1278980438",
+      "nameKo": "아산",
+      "nameEn": "Asan",
+      "lat": 36.7920971,
+      "lon": 127.1044526,
+      "mode": "train"
+    },
+    {
+      "osmId": "5889529461",
+      "nameKo": "아신",
+      "nameEn": "Asin",
+      "lat": 37.5139165,
+      "lon": 127.4432229,
+      "mode": "train"
+    },
+    {
+      "osmId": "4693461948",
+      "nameKo": "아우라지",
+      "nameEn": "Auraji",
+      "lat": 37.4728673,
+      "lon": 128.7221084,
+      "mode": "train"
+    },
+    {
+      "osmId": "8962684261",
+      "nameKo": "아화",
+      "nameEn": "Ahwa",
+      "lat": 35.8986342,
+      "lon": 129.0513788,
+      "mode": "train"
+    },
+    {
+      "osmId": "9376156829",
+      "nameKo": "안강",
+      "nameEn": "Angang",
+      "lat": 35.9705072,
+      "lon": 129.2334205,
+      "mode": "train"
+    },
+    {
+      "osmId": "5757138368",
+      "nameKo": "안락",
+      "nameEn": "Allak",
+      "lat": 35.1960354,
+      "lon": 129.1005867,
+      "mode": "train"
+    },
+    {
+      "osmId": "5911861706",
+      "nameKo": "안산",
+      "nameEn": "Ansan",
+      "lat": 37.3270474,
+      "lon": 126.7887966,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5444507509",
+      "nameKo": "안양",
+      "nameEn": "Anyang",
+      "lat": 37.4016302,
+      "lon": 126.9228826,
+      "mode": "train"
+    },
+    {
+      "osmId": "9932899423",
+      "nameKo": "안중",
+      "nameEn": "Anjung",
+      "lat": 36.9719691,
+      "lon": 126.9385092,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637858",
+      "nameKo": "압록",
+      "nameEn": "Amnok",
+      "lat": 35.1976801,
+      "lon": 127.3739296,
+      "mode": "train"
+    },
+    {
+      "osmId": "9104562082",
+      "nameKo": "앙성온천",
+      "nameEn": "Angseongoncheon",
+      "lat": 37.0920714,
+      "lon": 127.7869489,
+      "mode": "train"
+    },
+    {
+      "osmId": "4643555327",
+      "nameKo": "야당",
+      "nameEn": "Yadang",
+      "lat": 37.7129672,
+      "lon": 126.7615226,
+      "mode": "train"
+    },
+    {
+      "osmId": "5511790791",
+      "nameKo": "야목",
+      "nameEn": "Yamok",
+      "lat": 37.2612175,
+      "lon": 126.8840219,
+      "mode": "train"
+    },
+    {
+      "osmId": "6312484226",
+      "nameKo": "야탑",
+      "nameEn": "Yatap",
+      "lat": 37.4112976,
+      "lon": 127.1287143,
+      "mode": "train"
+    },
+    {
+      "osmId": "7290067937",
+      "nameKo": "약목",
+      "nameEn": "Yangmok",
+      "lat": 36.0375533,
+      "lon": 128.3643256,
+      "mode": "train"
+    },
+    {
+      "osmId": "4438565932",
+      "nameKo": "양동",
+      "nameEn": "Yangdong",
+      "lat": 37.4202671,
+      "lon": 127.7547601,
+      "mode": "train"
+    },
+    {
+      "osmId": "5890164170",
+      "nameKo": "양수",
+      "nameEn": "Yangsu",
+      "lat": 37.5460245,
+      "lon": 127.329015,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173720",
+      "nameKo": "양정",
+      "nameEn": "Yangjeong",
+      "lat": 35.1731584,
+      "lon": 129.0713,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5446013304",
+      "nameKo": "양정",
+      "nameEn": "Yangjeong",
+      "lat": 37.6040198,
+      "lon": 127.1946137,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172797",
+      "nameKo": "양주",
+      "nameEn": "Yangju",
+      "lat": 37.7742,
+      "lon": 127.044756,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5889532068",
+      "nameKo": "양평",
+      "nameEn": "Yangpyeong",
+      "lat": 37.4928474,
+      "lon": 127.4918972,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637377",
+      "nameKo": "어등",
+      "nameEn": "Eodeung",
+      "lat": 36.7154217,
+      "lon": 128.5600944,
+      "mode": "train"
+    },
+    {
+      "osmId": "5511790790",
+      "nameKo": "어천",
+      "nameEn": "Eocheon",
+      "lat": 37.2501199,
+      "lon": 126.9089151,
+      "mode": "train"
+    },
+    {
+      "osmId": "8142633924",
+      "nameKo": "여수엑스포",
+      "nameEn": "Yeosu EXPO",
+      "lat": 34.7555141,
+      "lon": 127.7492394,
+      "mode": "train"
+    },
+    {
+      "osmId": "5930629972",
+      "nameKo": "여주",
+      "nameEn": "Yeoju",
+      "lat": 37.2828814,
+      "lon": 127.6286055,
+      "mode": "subway"
+    },
+    {
+      "osmId": "1289512805",
+      "nameKo": "여천",
+      "nameEn": "Yeocheon",
+      "lat": 34.7794624,
+      "lon": 127.6644496,
+      "mode": "train"
+    },
+    {
+      "osmId": "6271625486",
+      "nameKo": "역곡",
+      "nameEn": "Yeokgok",
+      "lat": 37.4852186,
+      "lon": 126.8118113,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637895",
+      "nameKo": "연당",
+      "nameEn": "Yeondang",
+      "lat": 37.1849921,
+      "lon": 128.3960793,
+      "mode": "train"
+    },
+    {
+      "osmId": "368638215",
+      "nameKo": "연무대",
+      "nameEn": "Yeonmudae",
+      "lat": 36.1242869,
+      "lon": 127.087901,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636494",
+      "nameKo": "연산",
+      "nameEn": "Yeonsan",
+      "lat": 36.2119554,
+      "lon": 127.2009309,
+      "mode": "train"
+    },
+    {
+      "osmId": "5277767273",
+      "nameKo": "연산",
+      "nameEn": "Yeonsan",
+      "lat": 35.1861551,
+      "lon": 129.0815093,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5910775694",
+      "nameKo": "연수",
+      "nameEn": "Yeonsu",
+      "lat": 37.4177947,
+      "lon": 126.6789669,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636150",
+      "nameKo": "연천",
+      "nameEn": "Yeoncheon",
+      "lat": 38.1007279,
+      "lon": 127.0737179,
+      "mode": "subway"
+    },
+    {
+      "osmId": "12387670688",
+      "nameKo": "연풍",
+      "nameEn": "Yeonpung",
+      "lat": 36.7864342,
+      "lon": 128.0183018,
+      "mode": "train"
+    },
+    {
+      "osmId": "4767488289",
+      "nameKo": "연하",
+      "nameEn": "Yeonha",
+      "lat": 37.1907577,
+      "lon": 128.5552232,
+      "mode": "train"
+    },
+    {
+      "osmId": "9046712244",
+      "nameKo": "영덕",
+      "nameEn": "Yeongdeok station",
+      "lat": 36.4102544,
+      "lon": 129.3783288,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636449",
+      "nameKo": "영동",
+      "nameEn": "Yeongdong",
+      "lat": 36.1726667,
+      "lon": 127.7858142,
+      "mode": "train"
+    },
+    {
+      "osmId": "9021551364",
+      "nameKo": "영암",
+      "nameEn": "Yeongam",
+      "lat": 34.7587417,
+      "lon": 126.530939,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636680",
+      "nameKo": "영월역",
+      "nameEn": "Yeongwol",
+      "lat": 37.1821719,
+      "lon": 128.4809263,
+      "mode": "train"
+    },
+    {
+      "osmId": "4090063434",
+      "nameKo": "영종",
+      "nameEn": "Yeongjong",
+      "lat": 37.5118887,
+      "lon": 126.524599,
+      "mode": "train"
+    },
+    {
+      "osmId": "910386578",
+      "nameKo": "영주",
+      "nameEn": "Yeongju",
+      "lat": 36.8109445,
+      "lon": 128.625578,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637389",
+      "nameKo": "영천",
+      "nameEn": "Yeongcheon",
+      "lat": 35.9590454,
+      "lon": 128.9388909,
+      "mode": "train"
+    },
+    {
+      "osmId": "5878492789",
+      "nameKo": "영통",
+      "nameEn": "Yeongtong",
+      "lat": 37.2513466,
+      "lon": 127.071279,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637408",
+      "nameKo": "예당",
+      "nameEn": "Yedang",
+      "lat": 34.7786269,
+      "lon": 127.2022876,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637399",
+      "nameKo": "예미",
+      "nameEn": "Yemi",
+      "lat": 37.2124522,
+      "lon": 128.6483309,
+      "mode": "train"
+    },
+    {
+      "osmId": "8874484801",
+      "nameKo": "예산",
+      "nameEn": "Yesan",
+      "lat": 36.6871147,
+      "lon": 126.8284677,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030411",
+      "nameKo": "예술회관",
+      "nameEn": "Arts Center",
+      "lat": 37.449506,
+      "lon": 126.7009761,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637423",
+      "nameKo": "예천",
+      "nameEn": "Yecheon",
+      "lat": 36.6473156,
+      "lon": 128.4436945,
+      "mode": "train"
+    },
+    {
+      "osmId": "8560135440",
+      "nameKo": "오근장",
+      "nameEn": "Ogeunjang",
+      "lat": 36.6998966,
+      "lon": 127.4778612,
+      "mode": "train"
+    },
+    {
+      "osmId": "7265480503",
+      "nameKo": "오남",
+      "nameEn": "Onam",
+      "lat": 37.7052338,
+      "lon": 127.1911664,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6312484223",
+      "nameKo": "오리",
+      "nameEn": "Ori",
+      "lat": 37.3399397,
+      "lon": 127.1089098,
+      "mode": "train"
+    },
+    {
+      "osmId": "5511790789",
+      "nameKo": "오목천",
+      "nameEn": "Omokcheon",
+      "lat": 37.2433128,
+      "lon": 126.9637423,
+      "mode": "train"
+    },
+    {
+      "osmId": "5889529469",
+      "nameKo": "오빈",
+      "nameEn": "Obin",
+      "lat": 37.5061587,
+      "lon": 127.4738918,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172716",
+      "nameKo": "오산",
+      "nameEn": "Osan",
+      "lat": 37.145558,
+      "lon": 127.0667523,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172718",
+      "nameKo": "오산대",
+      "nameEn": "Osan College",
+      "lat": 37.1692997,
+      "lon": 127.0631149,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637868",
+      "nameKo": "오송",
+      "nameEn": "Osong",
+      "lat": 36.6202295,
+      "lon": 127.3273629,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637440",
+      "nameKo": "오수",
+      "nameEn": "Osu",
+      "lat": 35.5430825,
+      "lon": 127.3204028,
+      "mode": "train"
+    },
+    {
+      "osmId": "5786705227",
+      "nameKo": "오시리아",
+      "nameEn": "OSIRIA",
+      "lat": 35.1962844,
+      "lon": 129.2083168,
+      "mode": "train"
+    },
+    {
+      "osmId": "5727672637",
+      "nameKo": "오이도",
+      "nameEn": "Oido",
+      "lat": 37.3619245,
+      "lon": 126.7384943,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4813112289",
+      "nameKo": "옥산",
+      "nameEn": "옥산",
+      "lat": 36.2829061,
+      "lon": 128.0943658,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237832341",
+      "nameKo": "옥원",
+      "nameEn": "Ogwon",
+      "lat": 37.1838947,
+      "lon": 129.3238755,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636272",
+      "nameKo": "옥천",
+      "nameEn": "Okcheon",
+      "lat": 36.2977484,
+      "lon": 127.5653496,
+      "mode": "train"
+    },
+    {
+      "osmId": "5894627167",
+      "nameKo": "온양온천",
+      "nameEn": "Onyangoncheon",
+      "lat": 36.7805526,
+      "lon": 127.0031561,
+      "mode": "train"
+    },
+    {
+      "osmId": "4632583162",
+      "nameKo": "온천장",
+      "nameEn": "Oncheonjan",
+      "lat": 35.2202436,
+      "lon": 129.0864268,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637453",
+      "nameKo": "완사",
+      "nameEn": "Wansa",
+      "lat": 35.1346067,
+      "lon": 127.9771708,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636625",
+      "nameKo": "왜관",
+      "nameEn": "Waegwan",
+      "lat": 35.9920486,
+      "lon": 128.4004803,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4421386199",
+      "nameKo": "용궁",
+      "nameEn": "Yonggung",
+      "lat": 36.606919,
+      "lon": 128.2734161,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636728",
+      "nameKo": "용문",
+      "nameEn": "Yongmun",
+      "lat": 37.4822294,
+      "lon": 127.59465,
+      "mode": "train"
+    },
+    {
+      "osmId": "5890164145",
+      "nameKo": "운길산",
+      "nameEn": "Ungilsan",
+      "lat": 37.5547878,
+      "lon": 127.3098747,
+      "mode": "train"
+    },
+    {
+      "osmId": "3225282387",
+      "nameKo": "운서",
+      "nameEn": "Unseo",
+      "lat": 37.4929277,
+      "lon": 126.493815,
+      "mode": "train"
+    },
+    {
+      "osmId": "4699450803",
+      "nameKo": "운정",
+      "nameEn": "Unjeong",
+      "lat": 37.725329,
+      "lon": 126.7670452,
+      "mode": "train"
+    },
+    {
+      "osmId": "9950727434",
+      "nameKo": "운천",
+      "nameEn": "Uncheon",
+      "lat": 37.8799673,
+      "lon": 126.7699225,
+      "mode": "train"
+    },
+    {
+      "osmId": "1657629122",
+      "nameKo": "울산",
+      "nameEn": "Ulsan",
+      "lat": 35.5513139,
+      "lon": 129.1379303,
+      "mode": "train"
+    },
+    {
+      "osmId": "7962806665",
+      "nameKo": "웅천",
+      "nameEn": "웅천",
+      "lat": 36.2359262,
+      "lon": 126.6067347,
+      "mode": "train"
+    },
+    {
+      "osmId": "5937907115",
+      "nameKo": "원당",
+      "nameEn": "Wondang",
+      "lat": 37.6530498,
+      "lon": 126.8428981,
+      "mode": "subway"
+    },
+    {
+      "osmId": "1169237755",
+      "nameKo": "원덕",
+      "nameEn": "Wondeok",
+      "lat": 37.4687663,
+      "lon": 127.5468697,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637471",
+      "nameKo": "원동",
+      "nameEn": "Wondong",
+      "lat": 35.3624248,
+      "lon": 128.9207978,
+      "mode": "train"
+    },
+    {
+      "osmId": "7394341200",
+      "nameKo": "원릉",
+      "nameEn": "Wolleung",
+      "lat": 37.6626396,
+      "lon": 126.8399564,
+      "mode": "train"
+    },
+    {
+      "osmId": "5921531567",
+      "nameKo": "원시",
+      "nameEn": "Wonsi",
+      "lat": 37.3025572,
+      "lon": 126.7867849,
+      "mode": "train"
+    },
+    {
+      "osmId": "5807729379",
+      "nameKo": "원인재",
+      "nameEn": "Woninjae",
+      "lat": 37.4126256,
+      "lon": 126.6881558,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7902422674",
+      "nameKo": "원인재",
+      "nameEn": "Woninjae",
+      "lat": 37.4131241,
+      "lon": 126.6865914,
+      "mode": "train"
+    },
+    {
+      "osmId": "9417728897",
+      "nameKo": "원종",
+      "nameEn": "Wonjong",
+      "lat": 37.5238457,
+      "lon": 126.8048614,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8305399629",
+      "nameKo": "원주",
+      "nameEn": "Wonju",
+      "lat": 37.3164083,
+      "lon": 127.9228206,
+      "mode": "train"
+    },
+    {
+      "osmId": "4753904293",
+      "nameKo": "원죽",
+      "nameEn": "원죽",
+      "lat": 36.4667147,
+      "lon": 126.6176518,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637476",
+      "nameKo": "원창",
+      "nameEn": "Wonchang",
+      "lat": 34.864889,
+      "lon": 127.4473033,
+      "mode": "train"
+    },
+    {
+      "osmId": "5937907114",
+      "nameKo": "원흥",
+      "nameEn": "Wonheung",
+      "lat": 37.6505121,
+      "lon": 126.8736684,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5320511383",
+      "nameKo": "월곶",
+      "nameEn": "Wolgot",
+      "lat": 37.3917938,
+      "lon": 126.7427001,
+      "mode": "train"
+    },
+    {
+      "osmId": "9143869764",
+      "nameKo": "월내",
+      "nameEn": "Wollae",
+      "lat": 35.3280825,
+      "lon": 129.276559,
+      "mode": "train"
+    },
+    {
+      "osmId": "368638013",
+      "nameKo": "월롱",
+      "nameEn": "Wollong",
+      "lat": 37.796251,
+      "lon": 126.7925749,
+      "mode": "train"
+    },
+    {
+      "osmId": "5487472514",
+      "nameKo": "월포",
+      "nameEn": "Wolpo",
+      "lat": 36.2040057,
+      "lon": 129.3664017,
+      "mode": "train"
+    },
+    {
+      "osmId": "3649543267",
+      "nameKo": "음성",
+      "nameEn": "Eumseong",
+      "lat": 36.9257112,
+      "lon": 127.7039449,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637495",
+      "nameKo": "의성",
+      "nameEn": "Uiseong",
+      "lat": 36.35336,
+      "lon": 128.693128,
+      "mode": "train"
+    },
+    {
+      "osmId": "4860929585",
+      "nameKo": "의왕",
+      "nameEn": "Uiwang",
+      "lat": 37.3209981,
+      "lon": 126.9480341,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7777463060",
+      "nameKo": "의정부",
+      "nameEn": "Uijeongbu",
+      "lat": 37.7377035,
+      "lon": 127.0460501,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5882162364",
+      "nameKo": "이매",
+      "nameEn": "Imae",
+      "lat": 37.39464,
+      "lon": 127.1284003,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7908597459",
+      "nameKo": "이매",
+      "nameEn": "Imae",
+      "lat": 37.3953023,
+      "lon": 127.1282395,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637872",
+      "nameKo": "이양",
+      "nameEn": "Iyang",
+      "lat": 34.8915516,
+      "lon": 126.9898739,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637509",
+      "nameKo": "이원",
+      "nameEn": "Iwon",
+      "lat": 36.243989,
+      "lon": 127.6186518,
+      "mode": "train"
+    },
+    {
+      "osmId": "5930638347",
+      "nameKo": "이천",
+      "nameEn": "Icheon",
+      "lat": 37.2642411,
+      "lon": 127.4422242,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7839145082",
+      "nameKo": "익산",
+      "nameEn": "Iksan",
+      "lat": 35.9412564,
+      "lon": 126.9459134,
+      "mode": "train"
+    },
+    {
+      "osmId": "6035746707",
+      "nameKo": "인덕원",
+      "nameEn": "Indeogwon",
+      "lat": 37.4016323,
+      "lon": 126.9769656,
+      "mode": "subway"
+    },
+    {
+      "osmId": "9932899568",
+      "nameKo": "인주",
+      "nameEn": "Inju",
+      "lat": 36.8384093,
+      "lon": 126.8814308,
+      "mode": "train"
+    },
+    {
+      "osmId": "5902085992",
+      "nameKo": "인천",
+      "nameEn": "Incheon",
+      "lat": 37.4766821,
+      "lon": 126.6168874,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7902428189",
+      "nameKo": "인천",
+      "nameEn": "Incheon",
+      "lat": 37.4765694,
+      "lon": 126.6173655,
+      "mode": "train"
+    },
+    {
+      "osmId": "5919544839",
+      "nameKo": "인천공항2터미널",
+      "nameEn": "Incheon Int'l Airport Terminal 2",
+      "lat": 37.4689424,
+      "lon": 126.4334747,
+      "mode": "train"
+    },
+    {
+      "osmId": "5907965015",
+      "nameKo": "인천논현",
+      "nameEn": "Incheon Nonhyeon",
+      "lat": 37.4006866,
+      "lon": 126.7225648,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030399",
+      "nameKo": "인천대입구",
+      "nameEn": "Incheon National University",
+      "lat": 37.386116,
+      "lon": 126.6394474,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8390030410",
+      "nameKo": "인천터미널",
+      "nameEn": "Incheon Bus Terminal",
+      "lat": 37.4419457,
+      "lon": 126.6997157,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5910775269",
+      "nameKo": "인하대",
+      "nameEn": "Inha Univ.",
+      "lat": 37.4482473,
+      "lon": 126.6497844,
+      "mode": "train"
+    },
+    {
+      "osmId": "5786705259",
+      "nameKo": "일광",
+      "nameEn": "Ilgwang",
+      "lat": 35.268279,
+      "lon": 129.2332968,
+      "mode": "train"
+    },
+    {
+      "osmId": "10678348095",
+      "nameKo": "일로",
+      "nameEn": "Illo",
+      "lat": 34.8485411,
+      "lon": 126.4770913,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636257",
+      "nameKo": "일산",
+      "nameEn": "Ilsan",
+      "lat": 37.6822186,
+      "lon": 126.769498,
+      "mode": "train"
+    },
+    {
+      "osmId": "9007807571",
+      "nameKo": "일신",
+      "nameEn": "Ilsin",
+      "lat": 37.4453582,
+      "lon": 127.6890047,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637985",
+      "nameKo": "일영",
+      "nameEn": "Iryeong",
+      "lat": 37.7005712,
+      "lon": 126.9289695,
+      "mode": "train"
+    },
+    {
+      "osmId": "8236896050",
+      "nameKo": "임성리",
+      "nameEn": "Imseongni",
+      "lat": 34.8204653,
+      "lon": 126.435209,
+      "mode": "train"
+    },
+    {
+      "osmId": "946636583",
+      "nameKo": "임실",
+      "nameEn": "Imsil",
+      "lat": 35.6331938,
+      "lon": 127.2902071,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237832342",
+      "nameKo": "임원",
+      "nameEn": "Imwon",
+      "lat": 37.2401169,
+      "lon": 129.3265078,
+      "mode": "train"
+    },
+    {
+      "osmId": "2090733354",
+      "nameKo": "임진강",
+      "nameEn": "Imjingang",
+      "lat": 37.8882564,
+      "lon": 126.7482781,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636454",
+      "nameKo": "입석리",
+      "nameEn": "Ipseongni",
+      "lat": 37.1986389,
+      "lon": 128.2983291,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173840",
+      "nameKo": "자갈치",
+      "nameEn": "Jagalchi",
+      "lat": 35.0973457,
+      "lon": 129.0267678,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4767891713",
+      "nameKo": "자미원",
+      "nameEn": "자미원",
+      "lat": 37.2366742,
+      "lon": 128.7336795,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390080121",
+      "nameKo": "작전",
+      "nameEn": "Jakjeon",
+      "lat": 37.5303129,
+      "lon": 126.7225307,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7106135784",
+      "nameKo": "장동",
+      "nameEn": "Jangdong",
+      "lat": 34.7533238,
+      "lon": 126.9952703,
+      "mode": "train"
+    },
+    {
+      "osmId": "5581116350",
+      "nameKo": "장림",
+      "nameEn": "Jangnim",
+      "lat": 35.0818645,
+      "lon": 128.977383,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5487467993",
+      "nameKo": "장사",
+      "nameEn": "Jangsa",
+      "lat": 36.2841414,
+      "lon": 129.3691361,
+      "mode": "train"
+    },
+    {
+      "osmId": "6046633857",
+      "nameKo": "장암",
+      "nameEn": "Jangam",
+      "lat": 37.6999741,
+      "lon": 127.0529079,
+      "mode": "subway"
+    },
+    {
+      "osmId": "11942201168",
+      "nameKo": "장자호수공원",
+      "nameEn": "Jangja Lake Park",
+      "lat": 37.587406,
+      "lon": 127.1379117,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173740",
+      "nameKo": "장전",
+      "nameEn": "Jangjeon",
+      "lat": 35.2382122,
+      "lon": 129.0880983,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637537",
+      "nameKo": "장항",
+      "nameEn": "Janghang",
+      "lat": 36.0400309,
+      "lon": 126.7153815,
+      "mode": "train"
+    },
+    {
+      "osmId": "7394341197",
+      "nameKo": "장흥",
+      "nameEn": "Jangheung",
+      "lat": 37.7186862,
+      "lon": 126.9416098,
+      "mode": "train"
+    },
+    {
+      "osmId": "5188777381",
+      "nameKo": "재송",
+      "nameEn": "Jaesong",
+      "lat": 35.1880412,
+      "lon": 129.1200991,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637544",
+      "nameKo": "전곡",
+      "nameEn": "Jeongok",
+      "lat": 38.0245987,
+      "lon": 127.0718642,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7106197685",
+      "nameKo": "전남장흥",
+      "nameEn": "JeonnamJangheung",
+      "lat": 34.6690876,
+      "lon": 126.9110592,
+      "mode": "train"
+    },
+    {
+      "osmId": "8658838317",
+      "nameKo": "전의",
+      "nameEn": "Jeonui",
+      "lat": 36.6784389,
+      "lon": 127.2023372,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636231",
+      "nameKo": "전주",
+      "nameEn": "Jeonju",
+      "lat": 35.8500537,
+      "lon": 127.1623649,
+      "mode": "train"
+    },
+    {
+      "osmId": "4292242739",
+      "nameKo": "정동진",
+      "nameEn": "Jeongdongjin",
+      "lat": 37.6918304,
+      "lon": 129.0325076,
+      "mode": "train"
+    },
+    {
+      "osmId": "5937907135",
+      "nameKo": "정발산",
+      "nameEn": "Jeongbalsan",
+      "lat": 37.659711,
+      "lon": 126.7732651,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6035746708",
+      "nameKo": "정부과천청사",
+      "nameEn": "Government Complex Gwacheon",
+      "lat": 37.4264709,
+      "lon": 126.9897504,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5347790596",
+      "nameKo": "정왕",
+      "nameEn": "Jeongwang",
+      "lat": 37.3518096,
+      "lon": 126.7429544,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7839157504",
+      "nameKo": "정읍",
+      "nameEn": "Jeongeup",
+      "lat": 35.5757734,
+      "lon": 126.8419169,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881432712",
+      "nameKo": "정자",
+      "nameEn": "Jeongja",
+      "lat": 37.3666515,
+      "lon": 127.1084366,
+      "mode": "train"
+    },
+    {
+      "osmId": "7908597461",
+      "nameKo": "정자",
+      "nameEn": "Jeongja",
+      "lat": 37.366234,
+      "lon": 127.1081139,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172832",
+      "nameKo": "제물포",
+      "nameEn": "Jemulpo",
+      "lat": 37.4668149,
+      "lon": 126.6569848,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5274520073",
+      "nameKo": "제천",
+      "nameEn": "Jecheon",
+      "lat": 37.1270743,
+      "lon": 128.2059637,
+      "mode": "train"
+    },
+    {
+      "osmId": "4767891478",
+      "nameKo": "조동",
+      "nameEn": "Jodong",
+      "lat": 37.227742,
+      "lon": 128.697919,
+      "mode": "train"
+    },
+    {
+      "osmId": "13109011059",
+      "nameKo": "조성",
+      "nameEn": "Joseong",
+      "lat": 34.8066442,
+      "lon": 127.2483349,
+      "mode": "train"
+    },
+    {
+      "osmId": "4011911213",
+      "nameKo": "조치원",
+      "nameEn": "Jochiwon",
+      "lat": 36.60102,
+      "lon": 127.2958888,
+      "mode": "train"
+    },
+    {
+      "osmId": "1668440061",
+      "nameKo": "좌천",
+      "nameEn": "Jwacheon",
+      "lat": 35.3118289,
+      "lon": 129.2451313,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173730",
+      "nameKo": "좌천",
+      "nameEn": "Jwacheon",
+      "lat": 35.1343358,
+      "lon": 129.0543505,
+      "mode": "subway"
+    },
+    {
+      "osmId": "3649529962",
+      "nameKo": "주덕",
+      "nameEn": "Judeok",
+      "lat": 36.9731205,
+      "lon": 127.8028376,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636463",
+      "nameKo": "주생",
+      "nameEn": "Jusaeng",
+      "lat": 35.3767264,
+      "lon": 127.3170129,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172843",
+      "nameKo": "주안",
+      "nameEn": "Juan",
+      "lat": 37.4650814,
+      "lon": 126.6806313,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8334234978",
+      "nameKo": "주엽",
+      "nameEn": "Juyeop",
+      "lat": 37.6701524,
+      "lon": 126.7612377,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637565",
+      "nameKo": "주포",
+      "nameEn": "Jupo",
+      "lat": 36.4110191,
+      "lon": 126.5718187,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237832328",
+      "nameKo": "죽변",
+      "nameEn": "Jukbyeon",
+      "lat": 37.0499016,
+      "lon": 129.4039224,
+      "mode": "train"
+    },
+    {
+      "osmId": "5924431379",
+      "nameKo": "죽전",
+      "nameEn": "Jukjeon",
+      "lat": 37.3245669,
+      "lon": 127.1074072,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172816",
+      "nameKo": "중동",
+      "nameEn": "Jung-dong",
+      "lat": 37.4867775,
+      "lon": 126.7639671,
+      "mode": "subway"
+    },
+    {
+      "osmId": "13472835117",
+      "nameKo": "중리",
+      "nameEn": "Jung-ri",
+      "lat": 35.2496799,
+      "lon": 128.5191791,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173843",
+      "nameKo": "중앙",
+      "nameEn": "Jungang",
+      "lat": 35.1038431,
+      "lon": 129.0363271,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5349743238",
+      "nameKo": "중앙",
+      "nameEn": "Jungang",
+      "lat": 37.3160302,
+      "lon": 126.8385294,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368636466",
+      "nameKo": "증평",
+      "nameEn": "Jeungpyeong",
+      "lat": 36.778052,
+      "lon": 127.583969,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030400",
+      "nameKo": "지식정보단지",
+      "nameEn": "BIT Zone",
+      "lat": 37.3774709,
+      "lon": 126.645923,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5937907109",
+      "nameKo": "지축",
+      "nameEn": "Jichuk",
+      "lat": 37.6481183,
+      "lon": 126.9139297,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368637884",
+      "nameKo": "지평",
+      "nameEn": "Jipyeong",
+      "lat": 37.47681,
+      "lon": 127.6290656,
+      "mode": "train"
+    },
+    {
+      "osmId": "4656699757",
+      "nameKo": "지행",
+      "nameEn": "Jihaeng",
+      "lat": 37.892269,
+      "lon": 127.0558058,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4744538639",
+      "nameKo": "직산",
+      "nameEn": "Jiksan",
+      "lat": 36.8707374,
+      "lon": 127.1439118,
+      "mode": "subway"
+    },
+    {
+      "osmId": "10591459522",
+      "nameKo": "진부",
+      "nameEn": "Jinbu",
+      "lat": 37.6425685,
+      "lon": 128.5748224,
+      "mode": "train"
+    },
+    {
+      "osmId": "8998267344",
+      "nameKo": "진상",
+      "nameEn": "Jinsang",
+      "lat": 35.0150843,
+      "lon": 127.7197252,
+      "mode": "train"
+    },
+    {
+      "osmId": "3427906855",
+      "nameKo": "진위",
+      "nameEn": "Jinwi",
+      "lat": 37.1099923,
+      "lon": 127.0623892,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7265480502",
+      "nameKo": "진접",
+      "nameEn": "Jinjeop",
+      "lat": 37.7200538,
+      "lon": 127.2032505,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4691568063",
+      "nameKo": "진주",
+      "nameEn": "Jinju",
+      "lat": 35.1501201,
+      "lon": 128.1183494,
+      "mode": "train"
+    },
+    {
+      "osmId": "10566861525",
+      "nameKo": "창원",
+      "nameEn": "Changwon",
+      "lat": 35.2581253,
+      "lon": 128.6070336,
+      "mode": "train"
+    },
+    {
+      "osmId": "10566861524",
+      "nameKo": "창원중앙",
+      "nameEn": "Changwon Jungang",
+      "lat": 35.2425718,
+      "lon": 128.7016046,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881815171",
+      "nameKo": "천마산",
+      "nameEn": "Cheonmasan",
+      "lat": 37.6592164,
+      "lon": 127.2850496,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636171",
+      "nameKo": "천안",
+      "nameEn": "Cheonan",
+      "lat": 36.8102804,
+      "lon": 127.14684,
+      "mode": "train"
+    },
+    {
+      "osmId": "6048953567",
+      "nameKo": "철산",
+      "nameEn": "Cheolsan",
+      "lat": 37.4760012,
+      "lon": 126.8675973,
+      "mode": "subway"
+    },
+    {
+      "osmId": "10694582694",
+      "nameKo": "청도",
+      "nameEn": "Cheongdo",
+      "lat": 35.6398546,
+      "lon": 128.7461654,
+      "mode": "train"
+    },
+    {
+      "osmId": "3408263979",
+      "nameKo": "청라국제도시",
+      "nameEn": "Cheongna Int'l City",
+      "lat": 37.5564451,
+      "lon": 126.6246922,
+      "mode": "train"
+    },
+    {
+      "osmId": "4767326624",
+      "nameKo": "청령포",
+      "nameEn": "Cheongnyeongpo",
+      "lat": 37.1706749,
+      "lon": 128.4496819,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637601",
+      "nameKo": "청리",
+      "nameEn": "Cheongni",
+      "lat": 36.3390865,
+      "lon": 128.1288812,
+      "mode": "train"
+    },
+    {
+      "osmId": "5878492812",
+      "nameKo": "청명",
+      "nameEn": "Cheongmyeong",
+      "lat": 37.2599557,
+      "lon": 127.0795065,
+      "mode": "train"
+    },
+    {
+      "osmId": "5253627661",
+      "nameKo": "청산",
+      "nameEn": "Cheongsan",
+      "lat": 37.9951537,
+      "lon": 127.0743434,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4753904292",
+      "nameKo": "청소",
+      "nameEn": "Cheongso",
+      "lat": 36.4456785,
+      "lon": 126.5907764,
+      "mode": "train"
+    },
+    {
+      "osmId": "368638242",
+      "nameKo": "청주",
+      "nameEn": "Cheongju",
+      "lat": 36.6471132,
+      "lon": 127.3923613,
+      "mode": "train"
+    },
+    {
+      "osmId": "4631438436",
+      "nameKo": "청주공항",
+      "nameEn": "Cheongju Int'l Airport",
+      "lat": 36.7217992,
+      "lon": 127.4896373,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637607",
+      "nameKo": "청천",
+      "nameEn": "Cheongcheon",
+      "lat": 35.8808786,
+      "lon": 128.7694217,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881815521",
+      "nameKo": "청평",
+      "nameEn": "Cheongpyeong",
+      "lat": 37.735508,
+      "lon": 127.4266359,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173846",
+      "nameKo": "초량",
+      "nameEn": "Choryang",
+      "lat": 35.1212017,
+      "lon": 129.0429702,
+      "mode": "subway"
+    },
+    {
+      "osmId": "13589111847",
+      "nameKo": "초월",
+      "nameEn": "Chowol",
+      "lat": 37.3733642,
+      "lon": 127.2999492,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5921531579",
+      "nameKo": "초지",
+      "nameEn": "Choji",
+      "lat": 37.3198402,
+      "lon": 126.8078802,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7252470162",
+      "nameKo": "초지",
+      "nameEn": "Choji",
+      "lat": 37.3206177,
+      "lon": 126.8061208,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368638248",
+      "nameKo": "추풍령",
+      "nameEn": "Chupungnyeong",
+      "lat": 36.2128103,
+      "lon": 127.9963927,
+      "mode": "train"
+    },
+    {
+      "osmId": "6050654950",
+      "nameKo": "춘의",
+      "nameEn": "Chunui",
+      "lat": 37.5037314,
+      "lon": 126.7872014,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5821698813",
+      "nameKo": "춘천",
+      "nameEn": "Chuncheon",
+      "lat": 37.8845604,
+      "lon": 127.716664,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636118",
+      "nameKo": "충주",
+      "nameEn": "Chungju",
+      "lat": 36.9752571,
+      "lon": 127.9080675,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030402",
+      "nameKo": "캠퍼스타운",
+      "nameEn": "Campus Town",
+      "lat": 37.3881737,
+      "lon": 126.6618928,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4767326709",
+      "nameKo": "탄부",
+      "nameEn": "Tanbu",
+      "lat": 37.1833577,
+      "lon": 128.5091641,
+      "mode": "train"
+    },
+    {
+      "osmId": "5442183525",
+      "nameKo": "탄현",
+      "nameEn": "Tanhyeon",
+      "lat": 37.6941052,
+      "lon": 126.7610261,
+      "mode": "train"
+    },
+    {
+      "osmId": "6022603091",
+      "nameKo": "탕정",
+      "nameEn": "Tangjeong",
+      "lat": 36.7882137,
+      "lon": 127.0845547,
+      "mode": "subway"
+    },
+    {
+      "osmId": "6312484227",
+      "nameKo": "태평",
+      "nameEn": "Taepyeong",
+      "lat": 37.4397089,
+      "lon": 127.1277447,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636558",
+      "nameKo": "태화강",
+      "nameEn": "Taehwagang",
+      "lat": 35.5388089,
+      "lon": 129.3540107,
+      "mode": "train"
+    },
+    {
+      "osmId": "8390030401",
+      "nameKo": "테크노파크",
+      "nameEn": "Technopark",
+      "lat": 37.3823022,
+      "lon": 126.6562543,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173838",
+      "nameKo": "토성",
+      "nameEn": "Toseong",
+      "lat": 35.1007637,
+      "lon": 129.0198441,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5884250531",
+      "nameKo": "퇴계원",
+      "nameEn": "Toegyewon",
+      "lat": 37.6482557,
+      "lon": 127.1435322,
+      "mode": "train"
+    },
+    {
+      "osmId": "436402743",
+      "nameKo": "파주",
+      "nameEn": "Paju",
+      "lat": 37.8150577,
+      "lon": 126.7924283,
+      "mode": "train"
+    },
+    {
+      "osmId": "368636598",
+      "nameKo": "판교",
+      "nameEn": "Pangyo",
+      "lat": 36.1554157,
+      "lon": 126.6794253,
+      "mode": "train"
+    },
+    {
+      "osmId": "5927786493",
+      "nameKo": "판교",
+      "nameEn": "Pangyo",
+      "lat": 37.39473,
+      "lon": 127.111189,
+      "mode": "train"
+    },
+    {
+      "osmId": "8308318738",
+      "nameKo": "판교",
+      "nameEn": "Pangyo",
+      "lat": 37.3947237,
+      "lon": 127.1115312,
+      "mode": "train"
+    },
+    {
+      "osmId": "5447332140",
+      "nameKo": "팔당",
+      "nameEn": "Paldang",
+      "lat": 37.5474851,
+      "lon": 127.243806,
+      "mode": "train"
+    },
+    {
+      "osmId": "5881815147",
+      "nameKo": "평내호평",
+      "nameEn": "PyeongnaeHopyeong",
+      "lat": 37.6532144,
+      "lon": 127.2444899,
+      "mode": "train"
+    },
+    {
+      "osmId": "4880228659",
+      "nameKo": "평창",
+      "nameEn": "Pyeongchang",
+      "lat": 37.5619574,
+      "lon": 128.4300343,
+      "mode": "train"
+    },
+    {
+      "osmId": "355173129",
+      "nameKo": "평촌",
+      "nameEn": "Pyeongchon",
+      "lat": 37.394288,
+      "lon": 126.9638795,
+      "mode": "subway"
+    },
+    {
+      "osmId": "354373659",
+      "nameKo": "평택",
+      "nameEn": "Pyeongtaek",
+      "lat": 36.9908233,
+      "lon": 127.0853183,
+      "mode": "train"
+    },
+    {
+      "osmId": "3406450397",
+      "nameKo": "평택지제",
+      "nameEn": "Pyeongtaek Jije",
+      "lat": 37.0188005,
+      "lon": 127.070454,
+      "mode": "train"
+    },
+    {
+      "osmId": "7632207769",
+      "nameKo": "평택지제",
+      "nameEn": "Pyeongtaek Jije",
+      "lat": 37.018753,
+      "lon": 127.0698667,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237826788",
+      "nameKo": "평해",
+      "nameEn": "Pyeonghae",
+      "lat": 36.7257996,
+      "lon": 129.446079,
+      "mode": "train"
+    },
+    {
+      "osmId": "9044855253",
+      "nameKo": "포항",
+      "nameEn": "Pohang",
+      "lat": 36.0712333,
+      "lon": 129.3426784,
+      "mode": "train"
+    },
+    {
+      "osmId": "8984037491",
+      "nameKo": "풍기",
+      "nameEn": "Punggi",
+      "lat": 36.8740554,
+      "lon": 128.5234721,
+      "mode": "train"
+    },
+    {
+      "osmId": "2240495169",
+      "nameKo": "풍산",
+      "nameEn": "Pungsan",
+      "lat": 37.6723483,
+      "lon": 126.7862433,
+      "mode": "train"
+    },
+    {
+      "osmId": "5400271021",
+      "nameKo": "하남검단산",
+      "nameEn": "Hanam Geomdansan",
+      "lat": 37.5397035,
+      "lon": 127.2235329,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5400271007",
+      "nameKo": "하남시청",
+      "nameEn": "Hanam City Hall",
+      "lat": 37.5417742,
+      "lon": 127.2067037,
+      "mode": "subway"
+    },
+    {
+      "osmId": "5400270994",
+      "nameKo": "하남풍산",
+      "nameEn": "Hanam Pungsan",
+      "lat": 37.5519584,
+      "lon": 127.2036311,
+      "mode": "subway"
+    },
+    {
+      "osmId": "355173825",
+      "nameKo": "하단",
+      "nameEn": "Hadan",
+      "lat": 35.1062348,
+      "lon": 128.9667606,
+      "mode": "subway"
+    },
+    {
+      "osmId": "8221953269",
+      "nameKo": "하양",
+      "nameEn": "Hayang",
+      "lat": 35.909587,
+      "lon": 128.81844,
+      "mode": "train"
+    },
+    {
+      "osmId": "2090733287",
+      "nameKo": "한국항공대",
+      "nameEn": "Korea Aerospace University",
+      "lat": 37.6027807,
+      "lon": 126.8683965,
+      "mode": "train"
+    },
+    {
+      "osmId": "6586939086",
+      "nameKo": "한대앞",
+      "nameEn": "Hanyang University at Ansan",
+      "lat": 37.3097347,
+      "lon": 126.8536143,
+      "mode": "subway"
+    },
+    {
+      "osmId": "4767891477",
+      "nameKo": "함백",
+      "nameEn": "Hambaek",
+      "lat": 37.2159828,
+      "lon": 128.6973143,
+      "mode": "train"
+    },
+    {
+      "osmId": "13676737826",
+      "nameKo": "함안",
+      "nameEn": "Haman",
+      "lat": 35.2493254,
+      "lon": 128.4246585,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637685",
+      "nameKo": "함열",
+      "nameEn": "Hamyeol",
+      "lat": 36.0801666,
+      "lon": 126.9565697,
+      "mode": "train"
+    },
+    {
+      "osmId": "368637692",
+      "nameKo": "함창",
+      "nameEn": "Hamchang",
+      "lat": 36.5696001,
+      "lon": 128.174919,
+      "mode": "train"
+    },
+    {
+      "osmId": "8236839399",
+      "nameKo": "함평",
+      "nameEn": "Hampyeong",
+      "lat": 35.0236844,
+      "lon": 126.5390794,
+      "mode": "train"
+    },
+    {
+      "osmId": "9932899576",
+      "nameKo": "합덕",
+      "nameEn": "Hapdeok",
+      "lat": 36.7962458,
+      "lon": 126.798213,
+      "mode": "train"
+    },
+    {
+      "osmId": "5442185227",
+      "nameKo": "행신",
+      "nameEn": "Haengsin",
+      "lat": 37.612035,
+      "lon": 126.834058,
+      "mode": "train"
+    },
+    {
+      "osmId": "9931812471",
+      "nameKo": "향남",
+      "nameEn": "Hyangnam",
+      "lat": 37.122899,
+      "lon": 126.9127815,
+      "mode": "train"
+    },
+    {
+      "osmId": "5907964998",
+      "nameKo": "호구포",
+      "nameEn": "Hogupo",
+      "lat": 37.4016902,
+      "lon": 126.7086388,
+      "mode": "train"
+    },
+    {
+      "osmId": "8664401956",
+      "nameKo": "홍성",
+      "nameEn": "Hongseong",
+      "lat": 36.5993365,
+      "lon": 126.6812157,
+      "mode": "train"
+    },
+    {
+      "osmId": "1763799270",
+      "nameKo": "화명",
+      "nameEn": "Hwamyeong",
+      "lat": 35.2344564,
+      "lon": 129.0076308,
+      "mode": "train"
+    },
+    {
+      "osmId": "4860929592",
+      "nameKo": "화서",
+      "nameEn": "Hwaseo",
+      "lat": 37.2839144,
+      "lon": 126.9896135,
+      "mode": "subway"
+    },
+    {
+      "osmId": "12304408905",
+      "nameKo": "화성시청",
+      "nameEn": "Hwaseong City Hall",
+      "lat": 37.1896888,
+      "lon": 126.8206138,
+      "mode": "train"
+    },
+    {
+      "osmId": "9907371996",
+      "nameKo": "화순",
+      "nameEn": "Hwasun",
+      "lat": 35.0513137,
+      "lon": 126.9631644,
+      "mode": "train"
+    },
+    {
+      "osmId": "5937907124",
+      "nameKo": "화정",
+      "nameEn": "Hwajeong",
+      "lat": 37.6346457,
+      "lon": 126.832577,
+      "mode": "subway"
+    },
+    {
+      "osmId": "368636485",
+      "nameKo": "황간",
+      "nameEn": "Hwanggan",
+      "lat": 36.2243141,
+      "lon": 127.9122487,
+      "mode": "train"
+    },
+    {
+      "osmId": "355172790",
+      "nameKo": "회룡",
+      "nameEn": "Hoeryong",
+      "lat": 37.7249474,
+      "lon": 127.0473751,
+      "mode": "light_rail"
+    },
+    {
+      "osmId": "5350784135",
+      "nameKo": "회룡",
+      "nameEn": "Hoeryong",
+      "lat": 37.72441,
+      "lon": 127.0473504,
+      "mode": "subway"
+    },
+    {
+      "osmId": "7397984719",
+      "nameKo": "횡성",
+      "nameEn": "Hoengseong",
+      "lat": 37.4828074,
+      "lon": 128.0104835,
+      "mode": "train"
+    },
+    {
+      "osmId": "4691577004",
+      "nameKo": "횡천",
+      "nameEn": "Hoengcheon",
+      "lat": 35.0992713,
+      "lon": 127.8016787,
+      "mode": "train"
+    },
+    {
+      "osmId": "368638080",
+      "nameKo": "효천",
+      "nameEn": "Hyocheon",
+      "lat": 35.1029684,
+      "lon": 126.877049,
+      "mode": "train"
+    },
+    {
+      "osmId": "11696468018",
+      "nameKo": "후포",
+      "nameEn": "Hupo",
+      "lat": 36.6832255,
+      "lon": 129.4367291,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237832329",
+      "nameKo": "흥부",
+      "nameEn": "Heungbu",
+      "lat": 37.0972182,
+      "lon": 129.3691232,
+      "mode": "train"
+    },
+    {
+      "osmId": "5549811384",
+      "nameKo": "흥전삭도마을",
+      "nameEn": "흥전삭도마을",
+      "lat": 37.2130042,
+      "lon": 129.0389082,
+      "mode": "train"
+    }
+  ]
+}
