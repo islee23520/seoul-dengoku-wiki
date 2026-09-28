@@ -23,11 +23,11 @@ const catalogs = { ko: wikiCatalog, en: wikiEnglishCatalog }
 
 const labels = {
   ko: {
-    breadcrumbs: '현재 위치', home: '대문', world: '세계관', site: '서울:전국 공식 위키', badge: '정본',
+    breadcrumbs: '현재 위치', home: '대문', world: '세계관', site: '서울:전국 공식 위키', badge: '세계관 문서',
     loading: '문서를 불러오고 있습니다.', table: '본문 표', contents: '문서 목차', otherLocale: 'English',
   },
   en: {
-    breadcrumbs: 'You are here', home: 'Main page', world: 'World', site: 'Seoul Subway States Official Wiki', badge: 'Canon',
+    breadcrumbs: 'You are here', home: 'Main page', world: 'World', site: 'Seoul Subway States Official Wiki', badge: 'World document',
     loading: 'Loading the document.', table: 'Article table', contents: 'Contents', otherLocale: '한국어',
   },
 } as const
