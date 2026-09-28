@@ -475,14 +475,12 @@ const PILOT_SOURCES = {
   'contract-shin': [CONTRACT, undefined, '신종목의 DX는 13이고 총검술(Spear)은 12 CP다.'],
   'contract-rep': [CONTRACT, undefined, 'Reputation은 카드가 유명세를 적은 사람에게만 둔다.'],
   'guide-bayonet': [G, undefined, '최소 문구는 `무공: 총검술` 또는 `신종목은 총검술을 익혔다.`다.'],
-  'jo-residence': [U, '/content/3/items/2/ko', '현재 거주지 서울 전역 이동 회랑'],
-  'jo-job': [U, '/content/3/items/7/ko', '생업: 주 탐사원 / 부 순찰대 (창작 제안)'],
-  'jo-office': [U, '/content/3/items/9/ko', '직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명 (사용자 확정)'],
-  'jo-arms': [U, '/content/3/items/11/ko', '무장 접근: 보유 지팡이와 낡은 여행복. 즉석 근접 도구는 다룬다. 총기·탄약·전력 경로는 미확인 (창작 제안)'],
-  'jo-temper': [U, '/content/3/items/12/ko', '사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다 (창작 제안)'],
-  'jo-fear': [U, '/content/3/items/14/ko', '공포: 유명세가 일행을 현상금·징집·정치 선전의 표적으로 만드는 것 (창작 제안)'],
-  'jo-rule': [U, '/content/3/items/15/ko', '통치 방식: 위험·대가·철수 조건을 먼저 공개하고 계약한다.'],
-  'jo-mugong': [U, '/content/4/text/ko', '무공. 호위철벽진의 상륙호위진. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다. 실제 해병대 복무와 총기 접근은 미확인이다.'],
+  'jo-job': [U, '/content/3/items/4/ko', '생업: 주 탐사원 / 부 순찰대'],
+  'jo-office': [U, '/content/3/items/6/ko', '직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명 (사용자 확정)'],
+  'jo-temper': [U, '/content/3/items/7/ko', '사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다'],
+  'jo-fear': [U, '/content/3/items/9/ko', '공포: 유명세가 일행을 현상금·징집·정치 선전의 표적으로 만드는 것'],
+  'jo-rule': [U, '/content/3/items/10/ko', '통치 방식: 위험·대가·철수 조건을 먼저 공개하고 계약한다.'],
+  'jo-mugong': [U, '/content/4/text/ko', '무공. 호위철벽진의 상륙호위진. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다.'],
   'jo-mp-class': [MP, '/content/92/text/ko', '분류: 지휘·편성'],
   'jo-mp-p1': [MP, '/content/93/text/ko', '조재표는 일행에게 상륙호위진의 편성 절차를 가르친다.'],
   'jo-annals-2121': [CA, '/content/482/text/ko', '2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다.'],
@@ -510,10 +508,10 @@ const pilotSkill = (name, ko, attr, diff, tier, ids) => ({ curated: { name, ko, 
 export const PILOT = {
   K1003: {
     attributes: {
-      ST: [11, ['contract-pilot', 'jo-arms']],
-      DX: [12, ['contract-pilot', 'jo-arms']],
+      ST: [11, ['contract-pilot']],
+      DX: [12, ['contract-pilot']],
       IQ: [13, ['contract-pilot', 'jo-office', 'jo-temper']],
-      HT: [12, ['contract-pilot', 'jo-residence', 'jo-annals-2121']],
+      HT: [12, ['contract-pilot', 'jo-annals-2121']],
     },
     role: 'jo-job',
     traits: [
@@ -524,12 +522,10 @@ export const PILOT = {
       pilotSkill('Leadership', '지휘', 'IQ', 'A', 'A', ['jo-office', 'jo-temper', 'jo-mp-p1']),
       pilotSkill('Tactics', '전술(상륙호위진 편성·철수 판단)', 'IQ', 'H', 'A', ['jo-office', 'jo-mugong', 'jo-mp-class', 'jo-mp-p1', 'contract-combat']),
       pilotSkill('Navigation/TL? (Land)', '길찾기(지상)', 'IQ', 'A', 'B', ['jo-office', 'jo-job', 'jo-annals-2121']),
-      pilotSkill('Area Knowledge (서울 역·회랑)', '지역 지식', 'IQ', 'E', 'B', ['jo-residence', 'jo-annals-2121']),
+      pilotSkill('Area Knowledge (서울 역·회랑)', '지역 지식', 'IQ', 'E', 'B', ['jo-annals-2121']),
       pilotSkill('Diplomacy', '교섭(호위 계약)', 'IQ', 'H', 'B', ['jo-office', 'jo-rule', 'jo-annals-2121']),
       pilotSkill('Teaching', '교습(상륙호위진)', 'IQ', 'A', 'B', ['jo-mugong', 'jo-mp-p1']),
       pilotSkill('Observation', '관찰', 'Per', 'A', 'C', ['jo-job']),
-      pilotSkill('Staff', '봉(지팡이)', 'DX', 'A', 'C', ['jo-arms']),
-      pilotSkill('Hiking', '장거리 도보', 'HT', 'A', 'D', ['jo-residence']),
     ],
   },
   K1009: {
@@ -792,7 +788,7 @@ export function verify(doc, root = ROOT) {
     })
     if (spent === 0 && (p.skills.length || Object.values(p.attributes).some((a) => a.value !== ABILITY_BASE || a.evidence.length))) fail(`${tag}: 기준값인데 근거·수치가 있음`)
   })
-  if (PILOT.K1003 && doc.people?.[1002]?.cp?.total !== 216) fail(`K1003 총점 ${doc.people?.[1002]?.cp?.total} ≠ 승인 216`)
+  if (PILOT.K1003 && doc.people?.[1002]?.cp?.total !== 210) fail(`K1003 총점 ${doc.people?.[1002]?.cp?.total} ≠ 근거 수정값 210`)
   if (PILOT.K1009 && doc.people?.[1008]?.cp?.total !== 207) fail(`K1009 총점 ${doc.people?.[1008]?.cp?.total} ≠ 승인 207`)
   return errors
 }
