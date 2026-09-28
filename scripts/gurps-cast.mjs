@@ -36,9 +36,9 @@ export const DIFF_BASE = { E: 0, A: -1, H: -2, VH: -3 }
 export const TIERS = { A: 12, B: 8, C: 4, D: 2 }
 export const ABILITY_BASE = 10
 export const ABILITY_CAP = 3
-// 계약의 출발 구간. 경계값은 위 구간에 넣는다(125 → 숙련자, 200 → 주역·강자). 75 미만은 근거 미달로 표시한다.
+// 계약의 출발 구간. 경계값은 위 구간에 넣는다(125 → 숙련자, 200 → 주역·강자).
+// 75 CP 미만은 모자란 만큼 미사용 점수(unspent points)로 채운다(소유자 결정 2026-09-28, G2 Q2 B). 그래서 75 미만 구간은 없다.
 export const BANDS = [
-  { name: '근거 미달', min: 0, max: 74 },
   { name: '일반 인물', min: 75, max: 124 },
   { name: '숙련자', min: 125, max: 199 },
   { name: '주역·강자', min: 200, max: 300 },
@@ -50,6 +50,10 @@ export function stepFor(cp) {
   if (cp >= 8 && cp % 4 === 0) return 3 + (cp - 8) / 4
   return null
 }
+export const UNSPENT_FLOOR = 75
+// 사용자 확정 직위 줄이 직접 가리키는 핵심 기술의 A 등급(소유자 결정 2026-09-28, G2 Q6 C). 견본 밖에서는 이 한 칸뿐이다.
+export const OWNER_TIER_A = { K1004: 'Observation' }
+const CONFIRMED_OFFICE = /^직위: .+ \(사용자 확정\)$/u
 export const bandFor = (total) => BANDS.filter((b) => total >= b.min && total <= b.max).map((b) => b.name)
 // Per·Will은 IQ에서 파생하므로(B16) 그 기술의 행위 문장은 IQ 근거로 센다.
 const abilityOf = (attr) => (attr === 'Per' || attr === 'Will' ? 'IQ' : attr)
@@ -269,7 +273,8 @@ function cardSentences(card, core) {
           if (field) {
             fields.push({ key: field[1].trim(), value: field[2].trim(), pointer: leaf.pointer, quote: line })
             if (ACTION_FIELDS.has(field[1].trim())) {
-              for (const s of field[2].split(/(?<=[.])\s+/u)) if (s.trim()) out.push({ section: field[1].trim(), text: s.trim().replace(CAST_SUFFIX, ''), pointer: leaf.pointer })
+              const confirmed = CONFIRMED_OFFICE.test(line)
+              for (const s of field[2].split(/(?<=[.])\s+/u)) if (s.trim()) out.push({ section: field[1].trim(), text: s.trim().replace(CAST_SUFFIX, ''), pointer: leaf.pointer, line, confirmed })
             }
             continue
           }
@@ -307,6 +312,21 @@ function occupationSkills(value) {
   const found = []
   for (const part of parts) for (const [skill, re] of OCCUPATION_RULES) if (re.test(part.text)) found.push({ skill, tier: part.tier })
   return found
+}
+
+// 카드의 「언어:」 줄에 적힌 언어를 적힌 순서대로 싣는다(소유자 결정 2026-09-28, G2 Q8 C).
+// 첫 언어만 Native, 나머지 숙련도는 미정(null)이며 모두 0 CP다. 숙련도 CP는 뒤의 규칙을 기다린다.
+const LANGUAGE_NAME = /북경 관화|고려말|[가-힣]+어/gu
+const NOT_LANGUAGE = new Set(['시장어', '일상어', '용어'])
+export function languagesOf(root, name) {
+  for (const card of cardBlocks(root, name)) {
+    const field = cardSentences(card, card.path.endsWith('Core-Characters.json')).fields.find((f) => f.key === '언어')
+    if (!field) continue
+    const first = field.value.replace(CAST_SUFFIX, '').split(/\.\s/u)[0]
+    const names = [...new Set([...first.matchAll(LANGUAGE_NAME)].map((m) => m[0]).filter((n) => !NOT_LANGUAGE.has(n)))]
+    return names.map((n, i) => ({ name: n, level: i === 0 ? 'Native' : null, cp: 0, evidence: [evidence(card.path, field.pointer, field.quote)] }))
+  }
+  return []
 }
 
 const MARTIAL = [
@@ -353,8 +373,10 @@ export function derivePerson(root, person, castNames) {
       review.push({ section: s.section, text: s.text, verdict: rule ? (rule.skip ? (rule.other ? 'other-actor' : 'skip') : `${rule.generic ? '~' : ''}${rule.skill ?? '-'}${rule.abilities ? `+${rule.abilities.join('')}` : ''}`) : 'unmatched' })
       if (!rule || rule.skip) continue
       const ev = evidence(card.path, s.pointer, s.text)
-      const tier = TIER_BY_SECTION[s.section] ?? 'C'
-      if (rule.skill && !rule.skipSkill) addSkill(rule.skill, tier, ev, s.section)
+      // 사용자 확정 직위 줄이 가리키는 기술은 A다. 인용은 확정 표시가 보이도록 직위 줄 전체로 한다.
+      const confirmed = s.section === '직위' && s.confirmed
+      const tier = confirmed ? 'A' : TIER_BY_SECTION[s.section] ?? 'C'
+      if (rule.skill && !rule.skipSkill) addSkill(rule.skill, tier, confirmed ? evidence(card.path, s.pointer, s.line) : ev, s.section)
       const abilities = new Set(rule.abilities ?? [])
       if (rule.skill && !rule.skipSkill) abilities.add(abilityOf(SKILLS[rule.skill].attr))
       for (const a of abilities) {
@@ -500,10 +522,12 @@ function finish(record) {
   const adv = record.traits.filter((t) => t.kind === 'advantage').reduce((n, t) => n + t.cp, 0)
   const dis = record.traits.filter((t) => t.kind === 'disadvantage').reduce((n, t) => n + t.cp, 0)
   const skills = record.skills.reduce((n, s) => n + s.cp, 0)
-  const total = attrCp + adv + dis + skills
-  record.cp = { attributes: attrCp, advantages: adv, disadvantages: dis, skills, total }
+  const spent = attrCp + adv + dis + skills
+  const unspent = Math.max(0, UNSPENT_FLOOR - spent)
+  const total = spent + unspent
+  record.cp = { attributes: attrCp, advantages: adv, disadvantages: dis, skills, spent, unspent, total }
   record.band = bandFor(total)[0]
-  record.baseline = total === 0
+  record.baseline = spent === 0
   return record
 }
 
@@ -534,6 +558,7 @@ export function build(root = ROOT) {
         attributes,
         traits: pilot.traits.map((t) => ({ ...t })),
         skills: pilot.skills.map((s) => ({ ...s.curated, tier: s.tier, evidence: s.evidence })),
+        languages: languagesOf(root, entry.name),
       }))
       continue
     }
@@ -549,12 +574,13 @@ export function build(root = ROOT) {
       attributes: d.attributes,
       traits: [],
       skills,
+      languages: languagesOf(root, entry.name),
     }))
   }
   const doc = {
     schema: SCHEMA,
     status: 'proposal',
-    note: '겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.',
+    note: '겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.',
     invariants: { ...APPROVED_HASHES },
     rules: {
       edition: 'GURPS Basic Set: Characters, 4th ed. (SJG 2004)',
@@ -565,6 +591,9 @@ export function build(root = ROOT) {
       difficulty_base: DIFF_BASE,
       tiers: TIERS,
       bands: BANDS,
+      unspent: { floor: UNSPENT_FLOOR, rule: '75 CP 미만이면 모자란 만큼 미사용 점수(unspent points)로 둔다. 기술·능력·특성으로 쓰지 않는다(소유자 결정 2026-09-28, G2 Q2 B)' },
+      owner_tier_a: { ...OWNER_TIER_A, rule: '사용자 확정 직위 줄이 직접 가리키는 핵심 기술(소유자 결정 2026-09-28, G2 Q6 C)' },
+      languages: '카드 「언어:」 줄의 언어만, 첫 언어 Native, 나머지 숙련도 미정(null), 모두 0 CP. 숙련도 CP는 뒤의 규칙을 기다린다(소유자 결정 2026-09-28, G2 Q8 C)',
       traits: { reputation: 'B26–27, 카드가 유명세를 적은 사람만', combat_reflexes: 'B43, 15 CP, Dodge +1, 소유자가 지명한 사람만', disadvantages: '발급하지 않음' },
       tl: '/TL? — 캠페인 기술 수준 미정(G1 Q14)',
     },
@@ -653,7 +682,10 @@ export function verify(doc, root = ROOT) {
       if (names.has(s.name)) fail(`${tag} ${s.name}: 기술 중복`)
       names.add(s.name)
       if (!(s.tier in TIERS)) { fail(`${tag} ${s.name}: 등급 ${s.tier} 무효`); continue }
-      if (s.tier === 'A' && !pilot) fail(`${tag} ${s.name}: A 등급은 사용자 확정·소유자 지시가 있는 견본에만`)
+      if (s.tier === 'A' && !pilot) {
+        if (OWNER_TIER_A[p.id] !== s.name) fail(`${tag} ${s.name}: A 등급은 견본과 소유자가 정한 사용자 확정 직위 기술에만`)
+        if (!(s.evidence ?? []).some((e) => CONFIRMED_OFFICE.test(e.quote) && quoteHolds(root, e))) fail(`${tag} ${s.name}: A 등급에 사용자 확정 직위 인용이 없음`)
+      }
       if (s.cp !== TIERS[s.tier]) fail(`${tag} ${s.name}: 등급 ${s.tier}=${TIERS[s.tier]} CP인데 ${s.cp} CP`)
       const known = Object.values(SKILLS).find((k) => k.name === s.name)
       if (!pilot && (!known || known.attr !== s.attr || known.diff !== s.diff)) fail(`${tag} ${s.name}: 기술표(${known ? `${known.attr}/${known.diff}` : '없음'})와 기준·난이도 불일치 ${s.attr}/${s.diff}`)
@@ -665,13 +697,25 @@ export function verify(doc, root = ROOT) {
       if (/Guns|Soldier|Beam Weapons|Gunner/u.test(s.name)) fail(`${tag} ${s.name}: 총기·복무 기술은 근거 규칙이 없다`)
       skillCp += TIERS[s.tier]
     }
-    const total = attrCp + adv + dis + skillCp
-    const want = { attributes: attrCp, advantages: adv, disadvantages: dis, skills: skillCp, total }
+    if (OWNER_TIER_A[p.id] && p.skills?.find((s) => s.name === OWNER_TIER_A[p.id])?.tier !== 'A') fail(`${tag} ${OWNER_TIER_A[p.id]}: 소유자 결정 A 등급이 아님`)
+    const spent = attrCp + adv + dis + skillCp
+    const unspent = Math.max(0, UNSPENT_FLOOR - spent)
+    const total = spent + unspent
+    const want = { attributes: attrCp, advantages: adv, disadvantages: dis, skills: skillCp, spent, unspent, total }
     for (const [k, v] of Object.entries(want)) if (p.cp?.[k] !== v) fail(`${tag} cp.${k}: 적힌 ${p.cp?.[k]}, 계산 ${v}`)
+    if (Object.keys(p.cp ?? {}).join() !== Object.keys(want).join()) fail(`${tag} cp 칸이 ${Object.keys(want).join('·')}가 아님`)
     const bands = bandFor(total)
     if (bands.length !== 1 || p.band !== bands[0]) fail(`${tag} 구간: 적힌 ${p.band}, 계산 ${bands.join('/') || '범위 밖'}`)
-    if (p.baseline !== (total === 0)) fail(`${tag} baseline 표시 불일치`)
-    if (total === 0 && (p.skills.length || Object.values(p.attributes).some((a) => a.value !== ABILITY_BASE || a.evidence.length))) fail(`${tag}: 기준값인데 근거·수치가 있음`)
+    if (p.baseline !== (spent === 0)) fail(`${tag} baseline 표시 불일치`)
+    // 언어: 카드 「언어:」 줄에서 다시 뽑은 목록과 같아야 하고, 모두 0 CP, 첫 언어만 Native
+    const langs = languagesOf(root, p.name)
+    if (!Array.isArray(p.languages) || JSON.stringify(p.languages.map((l) => l.name)) !== JSON.stringify(langs.map((l) => l.name))) fail(`${tag} 언어: 적힌 ${p.languages?.map((l) => l.name)}, 카드 ${langs.map((l) => l.name)}`)
+    ;(p.languages ?? []).forEach((l, k) => {
+      if (l.cp !== 0) fail(`${tag} 언어 ${l.name}: ${l.cp} CP — 숙련도 CP는 아직 매기지 않는다`)
+      if (l.level !== (k === 0 ? 'Native' : null)) fail(`${tag} 언어 ${l.name}: 숙련도 ${l.level}`)
+      if (!l.evidence?.length || !l.evidence.every((e) => /^언어: /u.test(e.quote) && quoteHolds(root, e))) fail(`${tag} 언어 ${l.name}: 인용 불일치`)
+    })
+    if (spent === 0 && (p.skills.length || Object.values(p.attributes).some((a) => a.value !== ABILITY_BASE || a.evidence.length))) fail(`${tag}: 기준값인데 근거·수치가 있음`)
   })
   if (PILOT.K1003 && doc.people?.[1002]?.cp?.total !== 216) fail(`K1003 총점 ${doc.people?.[1002]?.cp?.total} ≠ 승인 216`)
   if (PILOT.K1009 && doc.people?.[1008]?.cp?.total !== 207) fail(`K1009 총점 ${doc.people?.[1008]?.cp?.total} ≠ 승인 207`)
@@ -683,7 +727,9 @@ export function summary(doc) {
   const nonBaseline = people.filter((p) => !p.baseline).length
   const bands = {}
   for (const p of people) bands[p.band] = (bands[p.band] ?? 0) + 1
-  return { people: people.length, nonBaseline, baseline: people.length - nonBaseline, bands, K1003: people[1002].cp.total, K1009: people[1008].cp.total }
+  const unspent = people.filter((p) => p.cp.unspent > 0).length
+  const languages = people.filter((p) => p.languages.length).length
+  return { people: people.length, nonBaseline, baseline: people.length - nonBaseline, bands, unspent, languages, K1003: people[1002].cp.total, K1009: people[1008].cp.total }
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
@@ -714,7 +760,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const rebuilt = serialize(build().doc)
     if (rebuilt !== raw) errors.push(`${OUT}가 카드에서 다시 파생한 결과와 다르다(node scripts/gurps-cast.mjs --write)`)
     if (errors.length) { errors.forEach((e) => console.error(`✗ ${e}`)); console.error(`FAIL: ${errors.length}건`); process.exit(1) }
-    console.log('PASS: K001–K1016 신원·순서·URL, 승인 해시, 능력(기본 10·+1/문장·최대 +3)·기술(A12/B8/C4/D2, B170)·보조 특성·CP·구간, 모든 인용 원문 대조, 재파생 일치', JSON.stringify(summary(doc)))
+    console.log('PASS: K001–K1016 신원·순서·URL, 승인 해시, 능력(기본 10·+1/문장·최대 +3)·기술(A12/B8/C4/D2, B170)·보조 특성·CP·미사용 점수(75 하한)·구간·언어(0 CP), 모든 인용 원문 대조, 재파생 일치', JSON.stringify(summary(doc)))
   } else {
     console.error('usage: node scripts/gurps-cast.mjs --write | --check | --review <tsv>')
     process.exit(2)

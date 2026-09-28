@@ -42,9 +42,10 @@ test('승인 견본: 조재표 216, 신종목 207, 두 사람 모두 주역·강
   assert.equal(shin.secondary.Dodge, 10)
 })
 
-test('근거 없는 사람은 네 능력 10과 빈 근거 목록만 가진다', () => {
+test('근거 없는 사람은 네 능력 10과 빈 근거 목록만 가지고, 75 CP 전부가 미사용 점수다', () => {
   for (const p of doc.people.filter((x) => x.baseline)) {
-    assert.equal(p.cp.total, 0)
+    assert.equal(p.cp.spent, 0)
+    assert.equal(p.cp.unspent, 75)
     assert.deepEqual(p.skills, [])
     for (const a of Object.values(p.attributes)) { assert.equal(a.value, 10); assert.deepEqual(a.evidence, []) }
   }
@@ -55,9 +56,61 @@ test('규칙표: B170 투자 단계, 등급표, 구간 경계', () => {
   assert.equal(stepFor(3), null)
   assert.deepEqual(TIERS, { A: 12, B: 8, C: 4, D: 2 })
   assert.equal(ABILITY_CAP, 3)
-  assert.deepEqual([0, 74, 75, 124, 125, 199, 200, 300].map((n) => bandFor(n)[0]), ['근거 미달', '근거 미달', '일반 인물', '일반 인물', '숙련자', '숙련자', '주역·강자', '주역·강자'])
+  assert.deepEqual([75, 124, 125, 199, 200, 300].map((n) => bandFor(n)[0]), ['일반 인물', '일반 인물', '숙련자', '숙련자', '주역·강자', '주역·강자'])
+  assert.deepEqual(bandFor(74), [])
   assert.deepEqual(bandFor(301), [])
-  assert.equal(BANDS.length, 4)
+  assert.equal(BANDS.length, 3)
+})
+
+// 소유자 결정 2026-09-28(G2 Q2 B·Q6 C·Q8 C).
+const spentOf = (p) => p.cp.attributes + p.cp.advantages + p.cp.disadvantages + p.cp.skills
+
+test('Q2 B: 75 CP 미만인 사람이 없고, 모자란 만큼만 미사용 점수로 채운다', () => {
+  for (const p of doc.people) {
+    assert.ok(p.cp.total >= 75, `${p.id} 총점 ${p.cp.total} < 75`)
+    assert.equal(p.cp.spent, spentOf(p), `${p.id} spent`)
+    assert.equal(p.cp.unspent, Math.max(0, 75 - p.cp.spent), `${p.id} unspent`)
+    assert.equal(p.cp.total, p.cp.spent + p.cp.unspent, `${p.id} total`)
+    assert.notEqual(p.band, '근거 미달', `${p.id} 근거 미달`)
+  }
+  assert.ok(doc.people.filter((p) => p.cp.unspent > 0).length > 900)
+})
+
+test('Q2 B: 미사용 점수는 기술이 되지 않는다(기술 CP 합계는 기술 목록과 같고, 기술표 밖 이름이 없다)', () => {
+  for (const p of doc.people) {
+    assert.equal(p.cp.skills, p.skills.reduce((n, s) => n + s.cp, 0), `${p.id} 기술 합계`)
+    for (const s of p.skills) {
+      assert.doesNotMatch(s.name, /unspent|미사용/iu, `${p.id} ${s.name}`)
+      assert.ok(s.evidence.length > 0, `${p.id} ${s.name} 근거 없음`)
+    }
+  }
+})
+
+test('Q6 C: 이연 Observation은 A(12 CP)이고 사용자 확정 직위 줄을 인용한다. 민웅기는 그대로 B', () => {
+  const lee = find(doc, 'K1004')
+  const obs = lee.skills.find((s) => s.name === 'Observation')
+  assert.equal(obs.tier, 'A')
+  assert.equal(obs.cp, 12)
+  assert.ok(obs.evidence.some((e) => e.quote === '직위: 수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명 (사용자 확정)'))
+  const min = find(doc, 'K1008')
+  assert.equal(min.skills.find((s) => s.name.startsWith('Electronics Repair')).tier, 'B')
+  const aTier = doc.people.filter((p) => p.method !== 'pilot-approved' && p.skills.some((s) => s.tier === 'A')).map((p) => p.id)
+  assert.deepEqual(aTier, ['K1004'])
+})
+
+test('Q8 C: 카드에 적힌 언어를 0 CP로 싣고 첫 언어만 Native다', () => {
+  const withLang = doc.people.filter((p) => p.languages.length).map((p) => p.id)
+  assert.deepEqual(withLang, ['K1003', 'K1004', 'K1008', 'K1011', 'K1012', 'K1013', 'K1014', 'K1015', 'K1016'])
+  for (const p of doc.people) {
+    p.languages.forEach((l, i) => {
+      assert.equal(l.cp, 0)
+      assert.equal(l.level, i === 0 ? 'Native' : null)
+      assert.ok(l.evidence.length === 1 && l.evidence[0].quote.startsWith('언어: '))
+    })
+  }
+  assert.deepEqual(find(doc, 'K1011').languages.map((l) => l.name), ['북경 관화', '한국어'])
+  assert.deepEqual(find(doc, 'K1012').languages.map((l) => l.name), ['베트남어', '한국어', '중국어'])
+  assert.deepEqual(find(doc, 'K1003').languages.map((l) => l.name), ['한국어'])
 })
 
 const MUTATIONS = [
@@ -93,6 +146,16 @@ const MUTATIONS = [
   ['승인 해시 한 글자 변경', (d) => { const k = 'lore/name-pools/values-cast.json'; d.invariants[k] = '0' + d.invariants[k].slice(1) }],
   ['규칙표 등급 A 16', (d) => { d.rules.tiers.A = 16 }],
   ['견본값 규칙을 일반 인물에', (d) => { const a = d.people[sampleIndex].attributes.IQ; a.rule = 'pilot-approved' }],
+  ['미사용 점수를 기술로 바꿈', (d) => { const p = d.people[sampleIndex]; p.skills.push({ name: 'Unspent Points', ko: '미사용', attr: 'IQ', diff: 'E', tier: 'C', cp: 4, level: 13, evidence: p.skills[0].evidence }); p.cp.skills += 4; p.cp.spent += 4; p.cp.unspent -= 4 }],
+  ['미사용 점수를 빼서 74 CP', (d) => { const p = d.people[sampleIndex]; p.cp.unspent -= 1; p.cp.total -= 1 }],
+  ['미사용 점수를 75 넘게', (d) => { const p = d.people[sampleIndex]; p.cp.unspent += 5; p.cp.total += 5 }],
+  ['구간을 근거 미달로', (d) => { d.people[sampleIndex].band = '근거 미달' }],
+  ['이연 Observation을 B로', (d) => { const s = find(d, 'K1004').skills.find((k) => k.name === 'Observation'); s.tier = 'B'; s.cp = 8; s.level -= 1 }],
+  ['이연 A 등급의 사용자 확정 인용 제거', (d) => { const s = find(d, 'K1004').skills.find((k) => k.name === 'Observation'); s.evidence = s.evidence.filter((e) => !e.quote.startsWith('직위: ')) }],
+  ['민웅기 Electronics Repair를 A로', (d) => { const s = find(d, 'K1008').skills.find((k) => k.name.startsWith('Electronics Repair')); s.tier = 'A'; s.cp = 12; s.level += 1 }],
+  ['언어에 숙련도 CP', (d) => { find(d, 'K1012').languages[1].cp = 2 }],
+  ['둘째 언어를 Native로', (d) => { find(d, 'K1012').languages[1].level = 'Native' }],
+  ['카드에 없는 언어 추가', (d) => { const p = find(d, 'K1011'); p.languages.push({ ...p.languages[0], name: '영어', level: null }) }],
 ]
 
 for (const [label, mutate] of MUTATIONS) {
