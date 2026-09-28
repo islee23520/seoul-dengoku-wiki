@@ -23,6 +23,7 @@
     "libraryDirectory": "lib",
     "appChunks": [
       "CategoriesPage",
+      "CharacterDraftPage",
       "DocumentsPage",
       "OpeningTerritoryMap",
       "PeoplePage",
@@ -40,6 +41,7 @@
     { "path": "/states/:stateSlug", "disposition": "page" },
     { "path": "/updates", "disposition": "page" },
     { "path": "/people", "disposition": "page" },
+    { "path": "/people/draft", "disposition": "page" },
     { "path": "/people/:personId", "disposition": "page" },
     { "path": "/documents", "disposition": "page" },
     { "path": "/categories", "disposition": "page" },
