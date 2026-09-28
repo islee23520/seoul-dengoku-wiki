@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "domain": "chronology",
+  "id": "DOC:scenario-timeline-pilot",
+  "slug": "Scenario-Timeline-pilot",
+  "status": "draft",
+  "tense": { "en": "past", "ko": "past" },
+  "provenance": {
+    "original_anchor": "WEB/lore/chronology/Scenario-Timeline.md#연대기의-원칙",
+    "original_hash": null,
+    "history": []
+  },
+  "source": { "kind": "original-fiction", "refs": ["WEB/lore/chronology/Scenario-Timeline.md"] },
+  "locales": {
+    "en": { "title": "Scenario Timeline (Pilot)", "summary": "Draft JSON pilot. Korean source strings are preserved verbatim; Markdown remains canonical.", "tense": "past" },
+    "ko": { "title": "시나리오 타임라인 (시범 변환)", "summary": "JSON 시범안. 한국어 원문 문자열을 그대로 보존하며 마크다운은 정본으로 유지한다.", "tense": "past" }
+  },
+  "content": [
+    { "kind": "heading", "anchor": "scenario-timeline", "text": { "en": "Scenario Timeline", "ko": "시나리오 타임라인" } },
+    { "kind": "heading", "anchor": "chronicle-principles", "text": { "en": "Chronicle Principles", "ko": "연대기의 원칙" } },
+    { "kind": "paragraph", "anchor": "timeline-not-fixed-script", "text": { "en": "This timeline is not a script that replays a fixed history. Events create conditions, while outcomes depend on living characters' ambitions, fears, relationships, memories, and offices. If a key character dies, is captured, or is persuaded, another actor may lead the same event to a different outcome.", "ko": "이 타임라인은 정해진 역사를 재생하는 각본으로 읽히지 않는다. 사건은 조건을 만들고, 결론은 살아 있는 인물의 야망과 공포, 관계와 기억, 직위에 따라 달라진다. 핵심 인물이 죽거나 포획되거나 설득되면 같은 사건도 다른 행위자가 다른 결과로 이끈다." } },
+    { "kind": "paragraph", "anchor": "calendar-anchors-and-ownership", "text": { "en": "The calendar anchors are fixed at the 2026 Unbinding of Operational Authority and the 2126 story opening. The [Seoul Dengoku Century Annals](Century-Annals.md) is canonical for the events, material pressures, and institutional changes across the intervening 101 years. This document owns conditional events after the opening, seasonal chronicle, and prototype cards. The cause is named [Unbinding of Operational Authority](../overview/World-Unbinding.md).", "ko": "서기 앵커는 2026 기동권 이탈과 2126 이야기 개막으로 잠근다. 그 사이 101개 연도의 사건·물자·제도 변화는 [서울전국 백년실록](Century-Annals.md)이 정본이다. 이 문서는 개막 이후 조건부 사건, 계절 연대기와 프로토타입 카드를 소유한다. 원인 이름은 [기동권 이탈](../overview/World-Unbinding.md)에 있다." } },
+    { "kind": "paragraph", "anchor": "opening-generation-is-not-founders", "text": { "en": "The 2126 generation did not live through the Unbinding. The First Water Compact, Military Register, Sixteen Banners, Winter of the Founders, and Second Water Compact belong to origin oral histories. A founder named in a ledger is not the same person as someone alive at the opening.", "ko": "2126년 세대는 이탈을 살지 않았다. 첫 급수협약, 군사호적, 열여섯 깃발, 공신의 겨울, 둘째 급수협약은 창세 구술이다. 장부에 적힌 창건자와 개막에 앉아 있는 사람을 같은 몸으로 읽지 않는다." } },
+    { "kind": "paragraph", "anchor": "post-opening-time-and-references", "text": { "en": "The first year's four seasons and the second year's hegemonic contest take place after the opening. Calendar years are omitted from their headings. Technology and law begin from the 2026 baseline: [Era Technology and Arms](../goods/Era-Arms-and-Tech-Level.md). Chaebol houses, former government, external theaters, and transformative houses are covered under [Houses](../factions/Chaebol-Houses-and-Century-Factions.md).", "ko": "첫해 사계절과 둘째 해 패권전은 개막 이후 이야기 시간이다. 서기를 제목에 넣지 않는다. 기술·법령 출발점은 2026이다. [이 시대의 기술과 무구](../goods/Era-Arms-and-Tech-Level.md). 총수 일가·구 정부·외부 전구·변혁 가문은 [가문](../factions/Chaebol-Houses-and-Century-Factions.md)." } }
+  ],
+  "data": {
+    "sequence": [
+      { "id": "EVENT:scenario-timeline-opening", "anchor": "scenario-timeline", "order": 0, "date": { "status": "known", "value": "2126" } }
+    ]
+  }
+}
