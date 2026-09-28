@@ -79,6 +79,11 @@ export function coinedPhraseFailures(text, source) {
     .map((phrase) => `FAIL coined-phrase: ${source} contains "${phrase}"`)
 }
 
+export function editorialMarkerFailures(text, source) {
+  return ['창작 제안', '(미확인)'].filter((marker) => text.includes(marker))
+    .map((marker) => `FAIL editorial-marker: ${source} contains "${marker}"`)
+}
+
 export function retiredFormFailures(text, source) {
   return namingLedger.retiredPublicForms
     .filter(({ form, exceptSources = [] }) => !exceptSources.some((pattern) => source.includes(pattern)) && text.includes(form))
@@ -123,6 +128,7 @@ export function pageFailures(document, rel, routes) {
     failures.push(`FAIL banned-term: ${rel} contains "${term}"`)
   }
   failures.push(...coinedPhraseFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
+  failures.push(...editorialMarkerFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
   failures.push(...retiredFormFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
   for (const href of links) {
     failures.push(...privateLinkFailures(href, rel))
@@ -178,8 +184,10 @@ function main() {
   for (const term of findBannedTerms(visibleText(shell))) failures.push(`FAIL banned-term: dist/index.html contains "${term}"`)
   for (const term of findBannedTerms(htmlMetadata(shell))) failures.push(`FAIL banned-term: dist/index.html metadata contains "${term}"`)
   failures.push(...coinedPhraseFailures(htmlMetadata(shell), 'dist/index.html metadata'))
+  failures.push(...editorialMarkerFailures(htmlMetadata(shell), 'dist/index.html metadata'))
   failures.push(...retiredFormFailures(htmlMetadata(shell), 'dist/index.html metadata'))
   failures.push(...coinedPhraseFailures(visibleText(shell), 'dist/index.html'))
+  failures.push(...editorialMarkerFailures(visibleText(shell), 'dist/index.html'))
   failures.push(...retiredFormFailures(visibleText(shell), 'dist/index.html'))
   const historicalForm = '급수계약정'
   const historicalPage = JSON.parse(readFileSync(join(contentDir, 'Sixteen-States.json'), 'utf8'))
