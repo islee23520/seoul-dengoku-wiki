@@ -8,8 +8,8 @@
       "depth": 1,
       "kind": "heading",
       "text": {
-        "en": "G14 · Phantom Dispatch Corps",
-        "ko": "G14 · 유령배차대"
+        "en": "G14 · Empty Cart",
+        "ko": "G14 · 빈수레"
       }
     },
     {
@@ -49,8 +49,8 @@
       "anchor": "Hostile-Group-G14-paragraph-0004",
       "kind": "paragraph",
       "text": {
-        "en": "The Phantom Dispatch Corps is an empty-car ecology that consumes the hour bell and the charging pads of the Achasan transfer slot. Passenger confirmation is dead and only the timetable tokens and docking beacons remain, and it does not understand the whole route but follows the last slot ID. Citizen power and the cluster's pads hang on the same distribution board, so cutting all power also puts out the transfer lights and the emergency charging.",
-        "ko": "유령배차대는 아차산 환승 슬롯의 정각 벨과 충전 패드를 소모하는 공차 생태다. 승객 확인은 죽었고 시간표 토큰과 도킹 비콘만 남았으며, 노선 전체를 이해하지 못하고 마지막 슬롯 ID를 따른다. 시민 전력과 군집 패드가 같은 분전에 걸려 전체 전원을 끄면 환승 조명과 응급 충전도 사라진다."
+        "en": "The Empty Cart is an empty-car ecology that consumes the hour bell and the charging pads of the Achasan transfer slot. Passenger confirmation is dead and only the timetable tokens and docking beacons remain, and it does not understand the whole route but follows the last slot ID. Citizen power and the cluster's pads hang on the same distribution board, so cutting all power also puts out the transfer lights and the emergency charging.",
+        "ko": "빈수레는 아차산 환승 슬롯의 정각 벨과 충전 패드를 소모하는 공차 생태다. 승객 확인은 죽었고 시간표 토큰과 도킹 비콘만 남았으며, 노선 전체를 이해하지 못하고 마지막 슬롯 ID를 따른다. 시민 전력과 군집 패드가 같은 분전에 걸려 전체 전원을 끄면 환승 조명과 응급 충전도 사라진다."
       }
     },
     {
@@ -980,7 +980,7 @@
           },
           {
             "en": "A low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas. It allots slots to the loop leader and the empty-shuttle band, empties the slot in question when a dual-signature seal arrives, and once charging hits its 25 percent floor it puts itself into dormancy until the next turn. Less a king of the Ghost Dispatch Fleet than a token distributor.",
-            "ko": "시간표 토큰 원통과 네 방향 슬롯 안테나를 실은 낮고 긴 공차다. 루프 리더와 공차 무리에 슬롯을 나누며 이중서명 봉인이 들어오면 해당 슬롯을 비우고, 충전 하한 25퍼센트가 되면 다음 회차까지 스스로 휴면한다. 유령배차대의 왕이라기보다 토큰 분배기다."
+            "ko": "시간표 토큰 원통과 네 방향 슬롯 안테나를 실은 낮고 긴 공차다. 루프 리더와 공차 무리에 슬롯을 나누며 이중서명 봉인이 들어오면 해당 슬롯을 비우고, 충전 하한 25퍼센트가 되면 다음 회차까지 스스로 휴면한다. 빈수레의 왕이라기보다 토큰 분배기다."
           }
         ]
       ]
@@ -990,7 +990,7 @@
       "items": [
         {
           "en": "Role and Body: The controller of the Ghost Dispatch Fleet, a low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas.",
-          "ko": "역할·신체: 유령배차대의 통제자로, 시간표 토큰 원통과 네 방향 슬롯 안테나를 실은 낮고 긴 공차다."
+          "ko": "역할·신체: 빈수레의 통제자로, 시간표 토큰 원통과 네 방향 슬롯 안테나를 실은 낮고 긴 공차다."
         },
         {
           "en": "Origin: The final turn table from the Achasan transfer server and the Magok test dispatch cache merged into one chassis and became the command car.",
@@ -4191,7 +4191,7 @@
       "kind": "paragraph",
       "text": {
         "en": "It orders top-of-the-hour priority across every Ghost Dispatch Fleet unit and folds even the emergency slots into the final evacuation column.",
-        "ko": "모든 유령배차대에 정각 우선권을 명령하고 응급 슬롯까지 마지막 대피열에 편입한다."
+        "ko": "모든 빈수레에 정각 우선권을 명령하고 응급 슬롯까지 마지막 대피열에 편입한다."
       }
     },
     {
@@ -4379,7 +4379,7 @@
       "kind": "paragraph",
       "text": {
         "en": "A Ghost Dispatch Fleet unit pushed north along XT04 weight signals absorbed the equipment meant for icy road surfaces.",
-        "ko": "XT04 중량 신호를 따라 북쪽으로 밀려난 유령배차대가 결빙 노면용 장비를 흡수했다."
+        "ko": "XT04 중량 신호를 따라 북쪽으로 밀려난 빈수레가 결빙 노면용 장비를 흡수했다."
       }
     },
     {
@@ -4530,8 +4530,8 @@
       "anchor": "Hostile-Group-G14-paragraph-0316",
       "kind": "paragraph",
       "text": {
-        "en": "The Phantom Dispatch Corps was an ecology of empty cars that consumed the timetable tokens of before the collapse.",
-        "ko": "유령배차대는 붕괴 전 시간표 토큰을 소모하는 공차 생태다."
+        "en": "The Empty Cart was an ecology of empty cars that consumed the timetable tokens of before the collapse.",
+        "ko": "빈수레는 붕괴 전 시간표 토큰을 소모하는 공차 생태다."
       }
     },
     {
@@ -4789,8 +4789,8 @@
   "data": {
     "ecology": {
       "description": {
-        "en": "The Phantom Dispatch Corps is an empty-car ecology that consumes the hour bell and the charging pads of the Achasan transfer slot. Passenger confirmation is dead and only the timetable tokens and docking beacons remain, and it does not understand the whole route but follows the last slot ID. Citizen power and the cluster's pads hang on the same distribution board, so cutting all power also puts out the transfer lights and the emergency charging.",
-        "ko": "유령배차대는 아차산 환승 슬롯의 정각 벨과 충전 패드를 소모하는 공차 생태다. 승객 확인은 죽었고 시간표 토큰과 도킹 비콘만 남았으며, 노선 전체를 이해하지 못하고 마지막 슬롯 ID를 따른다. 시민 전력과 군집 패드가 같은 분전에 걸려 전체 전원을 끄면 환승 조명과 응급 충전도 사라진다."
+        "en": "The Empty Cart is an empty-car ecology that consumes the hour bell and the charging pads of the Achasan transfer slot. Passenger confirmation is dead and only the timetable tokens and docking beacons remain, and it does not understand the whole route but follows the last slot ID. Citizen power and the cluster's pads hang on the same distribution board, so cutting all power also puts out the transfer lights and the emergency charging.",
+        "ko": "빈수레는 아차산 환승 슬롯의 정각 벨과 충전 패드를 소모하는 공차 생태다. 승객 확인은 죽었고 시간표 토큰과 도킹 비콘만 남았으며, 노선 전체를 이해하지 못하고 마지막 슬롯 ID를 따른다. 시민 전력과 군집 패드가 같은 분전에 걸려 전체 전원을 끄면 환승 조명과 응급 충전도 사라진다."
       },
       "variants": [
         {
@@ -4881,14 +4881,14 @@
   "id": "G14",
   "locales": {
     "en": {
-      "summary": "G14 · Phantom Dispatch Corps",
+      "summary": "G14 · Empty Cart",
       "tense": "present",
-      "title": "G14 · Phantom Dispatch Corps"
+      "title": "G14 · Empty Cart"
     },
     "ko": {
-      "summary": "G14 · 유령배차대",
+      "summary": "G14 · 빈수레",
       "tense": "present",
-      "title": "G14 · 유령배차대"
+      "title": "G14 · 빈수레"
     }
   },
   "provenance": {
@@ -4896,11 +4896,11 @@
       "world-atlas-projections.v2"
     ],
     "original_anchor": "lore/World-Narrative-Atlas.json",
-    "original_hash": "945cbde8b713023a6b86c074215844590182890c12b3beb8bc905f05a255d9c4"
+    "original_hash": "e58fdda0872ae383a91b75f2ef148f0b0d033ccf4dd980520bb4d4cb00507f67"
   },
   "slug": "Hostile-Group-G14",
   "source": {
-    "hash": "945cbde8b713023a6b86c074215844590182890c12b3beb8bc905f05a255d9c4",
+    "hash": "e58fdda0872ae383a91b75f2ef148f0b0d033ccf4dd980520bb4d4cb00507f67",
     "kind": "computed",
     "refs": [
       "lore/World-Narrative-Atlas.json",
