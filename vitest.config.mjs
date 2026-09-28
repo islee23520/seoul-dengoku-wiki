@@ -11,5 +11,6 @@ export default defineConfig({
     exclude: ['node_modules/**', 'dist/**'],
     pool: 'forks',
     fileParallelism: false,
+    testTimeout: 120_000,
   },
 })

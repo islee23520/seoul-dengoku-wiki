@@ -9,6 +9,7 @@ const wikiRoot = join(scriptDir, '..')
 const repoRoot = wikiRoot
 const distDir = join(wikiRoot, 'dist')
 const contentDir = join(wikiRoot, 'src/generated/world')
+const englishContentDir = join(wikiRoot, 'src/generated/world-en')
 const referenceDir = [join(repoRoot, 'RESEARCH', 'canon-reference'), join(repoRoot, '..', 'RESEARCH', 'canon-reference'), join(repoRoot, '..', '..', 'RESEARCH', 'canon-reference')].find((path) => existsSync(path))
   ?? join(repoRoot, 'RESEARCH', 'canon-reference')
 
@@ -78,6 +79,11 @@ export function coinedPhraseFailures(text, source) {
     .map((phrase) => `FAIL coined-phrase: ${source} contains "${phrase}"`)
 }
 
+export function editorialMarkerFailures(text, source) {
+  return ['창작 제안', '(미확인)', '사용자 확정', 'owner-confirmed'].filter((marker) => text.includes(marker))
+    .map((marker) => `FAIL editorial-marker: ${source} contains "${marker}"`)
+}
+
 export function retiredFormFailures(text, source) {
   return namingLedger.retiredPublicForms
     .filter(({ form, exceptSources = [] }) => !exceptSources.some((pattern) => source.includes(pattern)) && text.includes(form))
@@ -86,6 +92,52 @@ export function retiredFormFailures(text, source) {
 
 export function ravelenExclusionFailures(text, source) {
   return RAVELEN_REFERENCE.test(text) ? [`FAIL exclusion: ${source} contains a Ravelen reference`] : []
+}
+
+// A private document stays unpublished in every locale, so any link to it (wiki route, repository
+// Markdown path or GitHub blob URL) is a failure.
+export function privateLinkFailures(href, source) {
+  const path = href.split('#')[0].split('?')[0].replace(/\/$/, '')
+  let stem = path.split('/').at(-1) ?? ''
+  try { stem = decodeURIComponent(stem) } catch {}
+  stem = stem.replace(/\.(?:md|json|html)$/i, '').toLowerCase()
+  return EXCLUDED_STEMS.includes(stem) ? [`FAIL private-link: ${source} -> ${href}`] : []
+}
+
+// Checks one generated article (either locale) against the published route set.
+export function pageFailures(document, rel, routes) {
+  const failures = []
+  const stem = rel.split('/').at(-1).replace(/\.json$/i, '').toLowerCase()
+  if (EXCLUDED_STEMS.includes(stem) || stem === 'kenshi' || rel.toLowerCase().includes('/reference/')) {
+    failures.push(`FAIL exclusion: ${rel} matches excluded source "${stem}"`)
+  }
+  failures.push(...ravelenExclusionFailures(JSON.stringify(document), rel))
+  if ('body' in document || !Array.isArray(document.blocks) || document.blocks.length === 0 || typeof document.reviewText !== 'string') {
+    failures.push(`FAIL unstructured-content: ${rel}`)
+    return failures
+  }
+  const values = []
+  const links = []
+  const visit = (node) => {
+    if (node.type === 'text' || node.type === 'inlineCode' || node.type === 'code') values.push(node.value ?? '')
+    if (node.type === 'link') links.push(node.url ?? '')
+    for (const child of node.children ?? []) visit(child)
+  }
+  for (const block of document.blocks) visit(block)
+  for (const term of findBannedTerms(visibleText(`${document.title} ${values.join(' ')}`))) {
+    failures.push(`FAIL banned-term: ${rel} contains "${term}"`)
+  }
+  failures.push(...coinedPhraseFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
+  failures.push(...editorialMarkerFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
+  failures.push(...retiredFormFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
+  for (const href of links) {
+    failures.push(...privateLinkFailures(href, rel))
+    if (!href.startsWith('/') || href.startsWith('//')) continue
+    if (HUB_PREFIXES.some((prefix) => href.startsWith(prefix))) continue
+    const route = href.split('#')[0].split('?')[0].replace(/\/$/, '') || '/'
+    if (/^\/(?:en\/)?world(?:\/|$)/.test(route) && !routes.has(route)) failures.push(`FAIL broken-link: ${rel} -> ${href}`)
+  }
+  return failures
 }
 
 function markdownLinks(markdown) {
@@ -112,44 +164,19 @@ function main() {
   }
 
   const catalog = JSON.parse(readFileSync(join(wikiRoot, 'public/wiki-contract.json'), 'utf8'))
-  const routes = new Set(catalog.documents.map((document) => document.route.replace(/\/$/, '') || '/'))
+  const englishDocuments = catalog.englishDocuments ?? []
+  const routes = new Set([...catalog.documents, ...englishDocuments].map((document) => document.route.replace(/\/$/, '') || '/'))
   const pages = listFiles(contentDir).filter((file) => file.endsWith('.json')).sort()
   if (pages.length !== catalog.documents.length) {
     failures.push(`FAIL route-count: content ${pages.length} != contract ${catalog.documents.length}`)
   }
+  const englishPages = listFiles(englishContentDir).filter((file) => file.endsWith('.json')).sort()
+  if (englishPages.length !== englishDocuments.length) {
+    failures.push(`FAIL route-count: en content ${englishPages.length} != contract ${englishDocuments.length}`)
+  }
 
-  for (const page of pages) {
-    const rel = posixRel(wikiRoot, page)
-    const stem = rel.split('/').at(-1).replace(/\.json$/i, '').toLowerCase()
-    if (EXCLUDED_STEMS.includes(stem) || stem === 'kenshi' || rel.toLowerCase().includes('/reference/')) {
-      failures.push(`FAIL exclusion: ${rel} matches excluded source "${stem}"`)
-    }
-    const pageSource = readFileSync(page, 'utf8')
-    const document = JSON.parse(pageSource)
-    failures.push(...ravelenExclusionFailures(JSON.stringify(document), rel))
-    if ('body' in document || !Array.isArray(document.blocks) || document.blocks.length === 0 || typeof document.reviewText !== 'string') {
-      failures.push(`FAIL unstructured-content: ${rel}`)
-      continue
-    }
-    const values = []
-    const links = []
-    const visit = (node) => {
-      if (node.type === 'text' || node.type === 'inlineCode' || node.type === 'code') values.push(node.value ?? '')
-      if (node.type === 'link') links.push(node.url ?? '')
-      for (const child of node.children ?? []) visit(child)
-    }
-    for (const block of document.blocks) visit(block)
-    for (const term of findBannedTerms(visibleText(`${document.title} ${values.join(' ')}`))) {
-      failures.push(`FAIL banned-term: ${rel} contains "${term}"`)
-    }
-    failures.push(...coinedPhraseFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
-    failures.push(...retiredFormFailures(visibleText(`${document.title} ${document.reviewText}`), rel))
-    for (const href of links) {
-      if (!href.startsWith('/') || href.startsWith('//')) continue
-      if (HUB_PREFIXES.some((prefix) => href.startsWith(prefix))) continue
-      const route = href.split('#')[0].split('?')[0].replace(/\/$/, '') || '/'
-      if (route.startsWith('/world') && !routes.has(route)) failures.push(`FAIL broken-link: ${rel} -> ${href}`)
-    }
+  for (const page of [...pages, ...englishPages]) {
+    failures.push(...pageFailures(JSON.parse(readFileSync(page, 'utf8')), posixRel(wikiRoot, page), routes))
   }
 
   const shell = readFileSync(join(distDir, 'index.html'), 'utf8')
@@ -157,8 +184,10 @@ function main() {
   for (const term of findBannedTerms(visibleText(shell))) failures.push(`FAIL banned-term: dist/index.html contains "${term}"`)
   for (const term of findBannedTerms(htmlMetadata(shell))) failures.push(`FAIL banned-term: dist/index.html metadata contains "${term}"`)
   failures.push(...coinedPhraseFailures(htmlMetadata(shell), 'dist/index.html metadata'))
+  failures.push(...editorialMarkerFailures(htmlMetadata(shell), 'dist/index.html metadata'))
   failures.push(...retiredFormFailures(htmlMetadata(shell), 'dist/index.html metadata'))
   failures.push(...coinedPhraseFailures(visibleText(shell), 'dist/index.html'))
+  failures.push(...editorialMarkerFailures(visibleText(shell), 'dist/index.html'))
   failures.push(...retiredFormFailures(visibleText(shell), 'dist/index.html'))
   const historicalForm = '급수계약정'
   const historicalPage = JSON.parse(readFileSync(join(contentDir, 'Sixteen-States.json'), 'utf8'))
@@ -196,6 +225,8 @@ function main() {
   failures.push(...referenceExclusionFailures(referenceDir))
 
   console.log(`section-count world: ${pages.length}`)
+  console.log(`section-count world-en: ${englishPages.length}`)
+  console.log(`private-link failures: ${failures.filter((line) => line.includes('private-link')).length}`)
   console.log(`html-files: ${listFiles(distDir).filter((file) => file.endsWith('.html')).length}`)
   console.log(`banned-term failures: ${failures.filter((line) => line.includes('banned-term')).length}`)
   console.log(`coined-phrase failures: ${failures.filter((line) => line.includes('coined-phrase')).length}`)

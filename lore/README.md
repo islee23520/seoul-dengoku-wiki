@@ -3,7 +3,7 @@
 이 문서는 《서울:전국》 세계관의 설정과 데이터 구조를 정리한 종합 목차입니다. 링크는 이 문서(lore/README.md) 기준 상대 경로입니다.
 
 ## 1. 개요
-- [용어 사전 (Glossary)](Glossary.md)
+- [용어 사전 (Glossary)](/world/Glossary) — `glossary.json`에서 생성
 - [기계 판독용 용어 사전 (JSON)](glossary.json)
 - [기동권 이탈](overview/World-Unbinding.md)
 
@@ -25,8 +25,8 @@
 - [서울 십육국](factions/Sixteen-States.md)
 - [가문](factions/Chaebol-Houses-and-Century-Factions.md)
 - [이주민 회랑](factions/Diaspora-Corridors.md)
-- [바깥](factions/External-Theaters.md)
-- [서울 생태·변이 도감](bestiary/Hostile-Ecology-Index.md)
+- [바깥](factions/External-Theaters.json)
+- [서울 생태·변이 도감](bestiary/Hostile-Ecology-Index.json)
 
 ## 6. 직책
 - [관직](offices/Offices-and-Ranks.md)
@@ -62,11 +62,11 @@
 ## 13. 데이터 장부
 - [성씨·본관·항렬 데이터 계약](name-pools/hangnyeol-schema.md) — JSON 장부는 `name-pools/` 디렉터리 참조
 - [서울 지역 설정 데이터](regions/README.md) — 원본·출처 데이터는 `regions/` 디렉터리 참조
-- [세계 서사 총람](World-Narrative-Atlas.md)
-- [세계 확장 관계 원장](World-Relation-Ledger.md)
-- [세계 확장 색인](World-Expansion-Index.md)
+- [세계 서사 총람](World-Narrative-Atlas.json)
+- [세계 확장 관계 원장](World-Relation-Ledger.json)
+- [세계 확장 색인](World-Expansion-Index.json)
 
-투영물 안내: `lore/bestiary/`의 색인과 27개 집단 도감, `lore/` 루트의 `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md`는 World-Narrative-Atlas의 읽기 전용 투영물입니다. 몬스터 배치 본문 페이지는 폐기했고, M번호는 집단 도감 안 개체의 출처 정보로만 남습니다. 수정은 원본 총람에만 반영합니다.
+투영물 안내: `lore/bestiary/`의 색인과 27개 집단 도감, `lore/` 루트의 `Operating-Houses.json`, `Synthetic-Actors.json`, `Regional-Physical-AI-Arcs.json`는 World-Narrative-Atlas의 읽기 전용 투영물입니다. 몬스터 배치 본문 페이지는 폐기했고, M번호는 집단 도감 안 개체의 출처 정보로만 남습니다. 수정은 원본 총람에만 반영합니다.
 
 ---
 

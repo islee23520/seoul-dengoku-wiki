@@ -1,0 +1,175 @@
+{
+  "categories": [
+    "overview"
+  ],
+  "content": [
+    {
+      "anchor": "World-Expansion-Index-heading-0001",
+      "depth": 1,
+      "kind": "heading",
+      "text": {
+        "en": "World Expansion Index",
+        "ko": "세계 확장 색인"
+      }
+    },
+    {
+      "anchor": "World-Expansion-Index-list-0002",
+      "items": [
+        {
+          "en": "Houses 32 / Theaters 5 / Synthetics 48",
+          "ko": "가문 32 / 전구 5 / 합성 48"
+        },
+        {
+          "en": "Social batches 0 / Ecologies 27 / Monster batches 42",
+          "ko": "사회배치 0 / 생태 27 / 몬스터배치 42"
+        }
+      ],
+      "kind": "list"
+    },
+    {
+      "anchor": "World-Expansion-Index-heading-0003",
+      "depth": 2,
+      "kind": "heading",
+      "publicAnchors": [
+        "무소속"
+      ],
+      "text": {
+        "en": "Unaffiliated",
+        "ko": "무소속"
+      }
+    },
+    {
+      "anchor": "World-Expansion-Index-table-0004",
+      "columns": [
+        {
+          "en": "Character ID",
+          "ko": "캐릭터 ID"
+        },
+        {
+          "en": "Person",
+          "ko": "인물"
+        }
+      ],
+      "kind": "table",
+      "rows": [
+        [
+          {
+            "en": "unaffiliated-jaepyo-jo",
+            "ko": "unaffiliated-jaepyo-jo"
+          },
+          {
+            "en": "[Jo Jaepyo](/people/person-1003)",
+            "ko": "[조재표](/people/person-1003)"
+          }
+        ],
+        [
+          {
+            "en": "iyen",
+            "ko": "iyen"
+          },
+          {
+            "en": "[I Yeon](/people/person-1004)",
+            "ko": "[이연](/people/person-1004)"
+          }
+        ],
+        [
+          {
+            "en": "K1008",
+            "ko": "K1008"
+          },
+          {
+            "en": "[Min Woonggi](/people/person-1008)",
+            "ko": "[민웅기](/people/person-1008)"
+          }
+        ],
+        [
+          {
+            "en": "K1009",
+            "ko": "K1009"
+          },
+          {
+            "en": "[Shin Jongmok](/people/person-1009)",
+            "ko": "[신종목](/people/person-1009)"
+          }
+        ],
+        [
+          {
+            "en": "K1010",
+            "ko": "K1010"
+          },
+          {
+            "en": "[Shin Jun](/people/person-1010)",
+            "ko": "[신준](/people/person-1010)"
+          }
+        ],
+        [
+          {
+            "en": "K1017",
+            "ko": "K1017"
+          },
+          {
+            "en": "[Ji Yeonhee](/people/person-1017)",
+            "ko": "[지연희](/people/person-1017)"
+          }
+        ],
+        [
+          {
+            "en": "K1018",
+            "ko": "K1018"
+          },
+          {
+            "en": "[Seo Hajin](/people/person-1018)",
+            "ko": "[서하진](/people/person-1018)"
+          }
+        ],
+        [
+          {
+            "en": "K1019",
+            "ko": "K1019"
+          },
+          {
+            "en": "[Park Seongsu](/people/person-1019)",
+            "ko": "[박성수](/people/person-1019)"
+          }
+        ]
+      ]
+    }
+  ],
+  "data": {},
+  "domain": "root",
+  "id": "DOC:World-Expansion-Index",
+  "locales": {
+    "en": {
+      "summary": "World Expansion Index",
+      "tense": "present",
+      "title": "World Expansion Index"
+    },
+    "ko": {
+      "summary": "세계 확장 색인",
+      "tense": "present",
+      "title": "세계 확장 색인"
+    }
+  },
+  "provenance": {
+    "history": [
+      "world-atlas-projections.v2"
+    ],
+    "original_anchor": "lore/World-Narrative-Atlas.json",
+    "original_hash": "945cbde8b713023a6b86c074215844590182890c12b3beb8bc905f05a255d9c4"
+  },
+  "slug": "World-Expansion-Index",
+  "source": {
+    "hash": "945cbde8b713023a6b86c074215844590182890c12b3beb8bc905f05a255d9c4",
+    "kind": "computed",
+    "refs": [
+      "lore/World-Narrative-Atlas.json",
+      "data.atlas.projection_pages.World-Expansion-Index"
+    ]
+  },
+  "status": "approved",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "version": 1
+}

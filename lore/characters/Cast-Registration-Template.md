@@ -57,7 +57,7 @@ summary: 이름 있는 인물을 위키에 넣을 때 복사하는 빈 칸
 | [인물 총람](Cast-Index.md) 또는 [S4 당직](Cast-Index-S4.md) 또는 [회랑 인물](Cast-Corridors-Index.md) | 이름·직위·단계·관계 수 한 행 |
 | [관계 원장](Cast-Relations.md) | 송신 간선. 유형은 친족·양자·사제·지휘·계약·빚·맹세·경쟁·원한·보호체류·배신 |
 | [values-cast.json](../name-pools/values-cast.json) | `people` 한 객체. `count`는 배열 길이와 같게 |
-| [세계 서사 지도](../World-Narrative-Atlas.md) | 서사 원본이 필요하면 지도 절차를 따른다. 투영 페이지만 고치지 않는다 |
+| [세계 서사 지도](../World-Narrative-Atlas.json) | 서사 원본이 필요하면 지도 절차를 따른다. 투영 페이지만 고치지 않는다 |
 
 관계 수는 보낸 간선만 센다. 수신만 있는 핵심 인물의 관계 수 0은 고립이 아니다.
 

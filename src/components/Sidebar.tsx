@@ -19,7 +19,7 @@ const sections: { title: string; items: SidebarItem[] }[] = [
     { label: '갱신 이력', to: '/updates', spa: true },
   ]},
   { title: '도구', items: [
-    { label: 'GitHub', to: 'https://github.com/islee23520/seoul-kenshi', ext: true },
+    { label: 'GitHub', to: 'https://github.com/islee23520/seoul-dengoku-wiki', ext: true },
   ]},
 ]
 

@@ -2,7 +2,7 @@
 //
 // 계약 (schema: wiki-person-id-candidates.v1)
 // - 후보 명부는 lore/name-pools/values-cast.json의 people[] 배열 순서를 그대로 유지한다 (이름 정렬 금지).
-// - 기존 신원 K001–K422은 lore/World-Narrative-Atlas.md의 "humans" 기계 등록부를 정본으로 읽는다.
+// - 기존 신원 K001–K422은 lore/World-Narrative-Atlas.json의 data.atlas.humans 등록부를 정본으로 읽는다.
 //   (사회 서사 배치 원장 투영은 2026-09-24에 폐기되어 대조하지 않는다.)
 // - inputSha256은 최종 values-cast.json 파일 바이트의 SHA-256이다.
 //   baseCommit은 생성 시점 HEAD 40자리 커밋이다.
@@ -23,19 +23,19 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { readRendered } from "../../scripts/lore-read-rendered.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
 const VALUES_PATH = path.join(REPO, "lore", "name-pools", "values-cast.json");
-const ATLAS_PATH = path.join(REPO, "lore", "World-Narrative-Atlas.md");
-const CHARS_DIR = path.join(REPO, "lore", "characters");
-const CORRIDORS_PATH = path.join(CHARS_DIR, "Cast-Corridors-Index.md");
-const CORE_PATH = path.join(CHARS_DIR, "Core-Characters.md");
-const UNAFFILIATED_PATH = path.join(CHARS_DIR, "Cast-Unaffiliated.md");
+const ATLAS_PATH = path.join(REPO, "lore", "World-Narrative-Atlas.json");
+const LORE_DIR = path.join(REPO, "lore");
+// 인물 명부는 저작 JSON을 렌더해 읽는다 (Markdown 쌍둥이에 기대지 않는다).
+const readCharacters = (slug) => readRendered(LORE_DIR, "characters", slug);
 const TABLE_PATH = path.join(HERE, "person-id-candidates.json");
 
 export const SCHEMA = "wiki-person-id-candidates.v1";
-export const FROZEN = { existingK: 422, candidates: 594, total: 1016 };
+export const FROZEN = { existingK: 422, candidates: 597, total: 1019 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
@@ -70,18 +70,17 @@ export function loadContext() {
   const valuesBytes = readFileSync(VALUES_PATH);
   const valuesJson = JSON.parse(valuesBytes.toString("utf8"));
   const atlasText = readFileSync(ATLAS_PATH, "utf8");
-  const humans = JSON.parse(extractJsonArrayOnce(atlasText, "humans"));
-  const coreText = readFileSync(CORE_PATH, "utf8");
+  const humans = JSON.parse(atlasText).data.atlas.humans.map((h) => ({ ...h, name: h.name.ko }));
+  const coreText = readCharacters("Core-Characters");
   const coreNames = [...coreText.matchAll(/^## (.+)$/gm)]
     .map((m) => m[1].trim())
     .filter((n) => !n.startsWith("부록"));
   const castStateNames = [];
   for (let i = 1; i <= 16; i++) {
-    const file = path.join(CHARS_DIR, `Cast-State-${String(i).padStart(2, "0")}.md`);
-    const text = readFileSync(file, "utf8");
+    const text = readCharacters(`Cast-State-${String(i).padStart(2, "0")}`);
     for (const m of text.matchAll(/^### 인물 (.+)$/gm)) castStateNames.push(m[1].trim());
   }
-  const unaffText = readFileSync(UNAFFILIATED_PATH, "utf8");
+  const unaffText = readCharacters("Cast-Unaffiliated");
   const unaffiliated = [];
   for (const block of unaffText.split(/^### /m).slice(1)) {
     const nameMatch = block.match(/^인물 (.+)$/m);
@@ -90,7 +89,7 @@ export function loadContext() {
       unaffiliated.push({ name: nameMatch[1].trim(), characterId: idMatch ? idMatch[1] : null });
     }
   }
-  const corridorsText = readFileSync(CORRIDORS_PATH, "utf8");
+  const corridorsText = readCharacters("Cast-Corridors-Index");
   // The index displays ledger aliases; only these two identities are backed by corridor cards.
   const corridorAliases = new Map([
     ["린샤오메이 (임소매)", "린샤오메이"],
@@ -259,10 +258,10 @@ if (!CLI_WRITE) {
     assert.deepEqual(validateTable(committed, ctx), []);
   });
 
-  test("(b) 개수 불변식 422 + 594 = 1016", () => {
+  test("(b) 개수 불변식 422 + 597 = 1019", () => {
     assert.equal(committed.existingKCount, 422);
-    assert.equal(committed.candidateCount, 594);
-    assert.equal(committed.totalPeople, 1016);
+    assert.equal(committed.candidateCount, 597);
+    assert.equal(committed.totalPeople, 1019);
     assert.equal(committed.existingKCount + committed.candidateCount, committed.totalPeople);
     assert.equal(committed.candidateCount, committed.totalPeople - committed.existingKCount);
   });

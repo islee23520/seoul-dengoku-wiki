@@ -19,7 +19,8 @@ export default function StateDetailPage() {
       </header>
       <dl className="state-detail-grid">
         <div><dt>수장</dt><dd>{state.ruler}</dd></div>
-        <div><dt>기원·중심역</dt><dd>{state.origin}</dd></div>
+        <div><dt>기원</dt><dd>{state.origin}</dd></div>
+        <div><dt>중심역</dt><dd>{state.capitalName}</dd></div>
         <div><dt>정부 형태</dt><dd>{state.government}</dd></div>
         <div><dt>국력</dt><dd>{state.power}</dd></div>
       </dl>

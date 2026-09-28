@@ -5,26 +5,37 @@ import { test } from 'vitest'
 test('document index links every generated canon document', async () => {
   const catalog = await readFile(new URL('../src/generated/wikiCatalog.ts', import.meta.url), 'utf8')
   const page = await readFile(new URL('../src/pages/DocumentsPage.tsx', import.meta.url), 'utf8')
-  const routes = [...catalog.matchAll(/route: '([^']+)'/g)].map((match) => match[1])
-  const worldRoot = new URL('../src/generated/world/', import.meta.url)
-  const generated = (await readdir(worldRoot)).filter((name) => name.endsWith('.json'))
-  assert.ok(generated.length > 0)
-  assert.equal(routes.length, generated.length)
+  const englishStart = catalog.indexOf('export const wikiEnglishCatalog')
+  assert.ok(englishStart > 0)
+  const routesIn = (source) => [...source.matchAll(/route: '([^']+)'/g)].map((match) => match[1])
+  const generatedRoutesIn = async (root) => {
+    const names = (await readdir(root)).filter((name) => name.endsWith('.json'))
+    return Promise.all(names.map(async (name) => JSON.parse(await readFile(new URL(name, root), 'utf8')).route))
+  }
+  // Korean pages and their English counterparts are separate catalogs; each must match its own generated set.
+  const routes = routesIn(catalog.slice(0, englishStart))
+  const englishRoutes = routesIn(catalog.slice(englishStart))
+  const generatedRoutes = await generatedRoutesIn(new URL('../src/generated/world/', import.meta.url))
+  const generatedEnglishRoutes = await generatedRoutesIn(new URL('../src/generated/world-en/', import.meta.url))
+  assert.ok(generatedRoutes.length > 0)
   assert.equal(new Set(routes).size, routes.length)
+  assert.equal(new Set(englishRoutes).size, englishRoutes.length)
   assert.ok(routes.every((route) => route.startsWith('/world/')))
-  const generatedRoutes = await Promise.all(generated.map(async (name) => JSON.parse(await readFile(new URL(name, worldRoot), 'utf8')).route))
+  assert.ok(englishRoutes.every((route) => route.startsWith('/en/world/')))
   assert.deepEqual([...generatedRoutes].sort(), [...routes].sort())
+  assert.deepEqual([...generatedEnglishRoutes].sort(), [...englishRoutes].sort())
+  assert.ok(englishRoutes.every((route) => routes.includes(route.slice('/en'.length))))
   assert.match(page, /wikiCatalog\.length/)
   assert.match(page, /to=\{document\.route\}/)
 })
 
-test('editorial writing rules stay outside generated world and all 83 routes', async () => {
+test('editorial writing rules stay outside generated world and all 84 routes', async () => {
   const rules = await readFile(new URL('../lore/editorial/Writing-Rules.md', import.meta.url), 'utf8')
   assert.match(rules, /공개 본문과 집필 규칙의 경계/)
   const contract = JSON.parse(await readFile(new URL('../public/wiki-contract.json', import.meta.url), 'utf8'))
   const generated = (await readdir(new URL('../src/generated/world/', import.meta.url))).filter((name) => name.endsWith('.json'))
-  assert.equal(contract.documents.length, 83)
-  assert.equal(generated.length, 83)
+  assert.equal(contract.documents.length, 84)
+  assert.equal(generated.length, 84)
   assert.ok(contract.documents.every(({ route }) => !route.includes('Writing-Rules')))
   assert.ok(!generated.includes('Writing-Rules.json'))
   for (const name of generated) {

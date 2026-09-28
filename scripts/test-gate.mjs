@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
 
-import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, findBannedTerms, htmlMetadata, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'
+import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, editorialMarkerFailures, findBannedTerms, htmlMetadata, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
 const repoRoot = join(scriptDir, '..')
@@ -80,6 +80,13 @@ test('literal logbook lines and ordinary oral testimony are not coined phrases',
   assert.deepEqual(coinedPhraseFailures('운전일지 제42권 첫 줄에 사망일을 적었다. 증언은 구술로 전한다. 창세기전은 참고작이다. 창세', 'world/Century-Annals'), [])
 })
 
+test('editorial status markers cannot ship as visible wiki copy', () => {
+  for (const marker of ['창작 제안', '(미확인)', '사용자 확정', 'owner-confirmed']) {
+    assert.match(editorialMarkerFailures(marker, 'world/example')[0], /FAIL editorial-marker: world\/example/u)
+  }
+  assert.deepEqual(editorialMarkerFailures('역의 이름과 위치를 기록했다.', 'world/example'), [])
+})
+
 test('banned terms are checked in visible titles, person fields and HTML metadata without scanning library code or URLs', () => {
   assert.deepEqual(findBannedTerms('인물 복제'), ['복제'])
   assert.deepEqual(findBannedTerms('Seoul Subway States'), [])
@@ -87,12 +94,12 @@ test('banned terms are checked in visible titles, person fields and HTML metadat
   assert.ok(retiredFormFailures(htmlMetadata('<meta property="og:title" content="Seoul Sengoku">'), 'dist/index.html metadata').length > 0)
 })
 
-test('eight canonical school names and optional aliases match the private ledger', () => {
+test('eight canonical school names match the private ledger and carry no everyday alias', () => {
   const table = canon('lore/culture/Martial-Paths.json').content.find((block) => block.kind === 'table' && block.columns[0].ko === '정식명')
   assert.ok(table)
-  // Record-keeping duties left the martial paths in bdedd8d0, leaving eight schools.
   assert.equal(table.rows.length, 8)
-  assert.deepEqual(table.rows.map((row) => [row[0].ko, row[1].ko === '—' ? null : row[1].ko]), ledger.martialSchools.map(({ formalName, alias }) => [formalName, alias]))
+  assert.deepEqual(table.rows.map((row) => row[0].ko), ledger.martialSchools.map(({ formalName }) => formalName))
+  assert.deepEqual(ledger.martialSchools.filter(({ alias }) => alias !== null), [])
   assert.equal(ledger.martialBranch.name, '개방 무공')
   assert.ok(!ledger.martialSchools.some(({ formalName }) => formalName === '개방 무공'))
 })

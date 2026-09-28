@@ -2,20 +2,77 @@ import assert from 'node:assert/strict'
 import { readFile, readdir } from 'node:fs/promises'
 import { test } from 'vitest'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
+import { validatedDensities } from './region-density.mjs'
+
+test('rail geometry uses one visible source and the detail panel stays in the viewport', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  const styles = await readFile(new URL('../src/components/OpeningTerritoryMap.css', import.meta.url), 'utf8')
+  assert.match(map, /showRail && !rail && data\.edges\.flatMap/u)
+  assert.match(map, /showRail && displayedRail\.map/u)
+  assert.match(styles, /\.territory-map-flat > \.territory-detail \{ position: fixed;/u)
+})
+
+test('projected density covers all 427 source codes and preserves the unrounded area formula', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const source = JSON.parse(await readFile(new URL('../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
+  const values = validatedDensities(data.regions, source)
+  const byId = new Map(data.regions.map((region) => [region.id, region]))
+  assert.equal(byId.size, 427)
+  for (const region of data.regions) {
+    const code = region.id.replace(/^region:/u, '')
+    const density = values[code]
+    const people = density * (region.areaM2 / 1e6) / source.ratio
+    assert.ok(Math.abs(people - Math.round(people)) < 1e-7, code)
+    assert.equal(byId.get(region.id)?.density2126, density, code)
+  }
+  assert.equal(data.vassals.length, 13)
+  assert.ok(data.vassals.every((vassal) => !Object.hasOwn(vassal, 'density2126')))
+  assert.match(data.populationAttribution, /행정안전부 주민등록 인구통계/u)
+})
+
+test('density validation rejects a code that is not in the pinned atlas', async () => {
+  const source = JSON.parse(await readFile(new URL('../lore/regions/sources/population-2026-08.json', import.meta.url), 'utf8'))
+  const regions = Object.keys(source.density2126ByDong).map((code) => ({ id: `region:${code}` }))
+  regions[0] = { id: 'region:9999999999' }
+  assert.throws(() => validatedDensities(regions, source), /E_REGION_POPULATION_COVERAGE/u)
+})
 
 test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const displayed = presentationStations(data.stations)
-  assert.equal(data.stations.length, 334)
-  assert.equal(data.edges.length, 435)
-  assert.equal(Object.keys(stationAliases).length, 18)
-  assert.equal(displayed.length, 316)
+  assert.equal(data.stations.length, 315)
+  assert.equal(data.edges.length, 410)
+  assert.equal(Object.keys(stationAliases).length, 19)
+  assert.equal(displayed.length, 315)
   for (const [aliasId, primaryId] of Object.entries(stationAliases)) {
     const station = displayed.find((candidate) => candidate.id === primaryId)
-    assert.deepEqual(station.memberIds, [primaryId, aliasId], aliasId)
-    assert.deepEqual(station.lineIds, [...new Set(station.memberIds.flatMap((id) => data.stations.find((source) => source.id === id).lineIds))], aliasId)
+    assert.deepEqual(new Set(station.memberIds), new Set(primaryId === '총신대입구(이수)' ? [primaryId, '이수', '총신대입구 (이수)'] : [primaryId, aliasId]), aliasId)
+    assert.deepEqual(station.lineIds, [...new Set(station.memberIds.flatMap((id) => data.stations.find((source) => source.id === id)?.lineIds ?? []))], aliasId)
     assert.equal(displayed.some((candidate) => candidate.id === aliasId), false, aliasId)
   }
+  const isu = displayed.find((station) => station.id === '총신대입구(이수)')
+  const catalog = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))
+  const approved = catalog.data.station_aliases.find((station) => station.id === '총신대입구(이수)')
+  assert.deepEqual(new Set(isu.memberIds), new Set([approved.id, ...approved.aliases]))
+  assert.deepEqual(isu.names, [approved.id])
+  assert.equal(data.stations.filter((station) => [approved.id, ...approved.aliases].includes(station.id)).length, 1)
+  assert.deepEqual(new Set(data.edges.filter((edge) => isu.memberIds.includes(edge.a) || isu.memberIds.includes(edge.b)).map((edge) => isu.memberIds.includes(edge.a) ? edge.b : edge.a)), new Set(['남성', '내방', '동작', '사당']))
+  const underground = JSON.parse(await readFile(new URL('../public/underground-detail.json', import.meta.url), 'utf8'))
+  assert.equal(underground.stations[approved.id]['5-4'].platformM, 13.55)
+  assert.equal(underground.stations[approved.id]['8-7'].platformM, 22.62)
+  assert.equal(underground.stations[approved.id]['5-4'].floors, 'B2')
+  assert.equal(underground.stations[approved.id]['8-7'].floors, 'B4')
+  const samsung = catalog.data.station_aliases.find((station) => station.id === '삼성')
+  assert.deepEqual(displayed.find((station) => station.id === samsung.id).memberIds, [samsung.id, ...samsung.aliases])
+  assert.equal(data.stations.filter((station) => [samsung.id, ...samsung.aliases].includes(station.id)).length, 1)
+  assert.equal(data.stations.find((station) => station.id === samsung.id).degree, 2)
+  assert.deepEqual(data.edges.filter((edge) => edge.a === samsung.id || edge.b === samsung.id).map((edge) => edge.a === samsung.id ? edge.b : edge.a).sort(), ['선릉', '종합운동장'])
+  assert.equal(underground.stations[samsung.id]['3-2'].floors, 'B2')
+  const suyu = catalog.data.station_aliases.find((station) => station.id === '수유')
+  assert.deepEqual(displayed.find((station) => station.id === suyu.id).memberIds, [suyu.id, ...suyu.aliases])
+  assert.equal(data.stations.filter((station) => [suyu.id, ...suyu.aliases].includes(station.id)).length, 1)
+  assert.deepEqual(data.edges.filter((edge) => edge.a === suyu.id || edge.b === suyu.id).map((edge) => edge.a === suyu.id ? edge.b : edge.a).sort(), ['미아', '쌍문'])
+  assert.equal(underground.stations[suyu.id]['5-4'].floors, 'B2')
   assert.deepEqual(displayed.filter((station) => station.name.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
   assert.ok(data.edges.some((edge) => edge.a === '신촌(지하)' || edge.b === '신촌(지하)'))
 })
@@ -78,18 +135,18 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   }
   assert.ok(data.states.every((state) => Number.isFinite(state.labelX) && Number.isFinite(state.labelY)))
   assert.equal(new Set(data.states.map((state) => `${state.labelX}:${state.labelY}`)).size, 16)
-  assert.equal(data.stations.length, 334)
-  assert.equal(data.edges.length, 435)
+  assert.equal(data.stations.length, 315)
+  assert.equal(data.edges.length, 410)
   assert.ok(Object.keys(data.lines).length >= 20)
   assert.ok(data.stations.every((station) => Array.isArray(station.lineIds)))
-  assert.ok(data.stations.filter((station) => station.lineIds.length > 0).length >= 330)
+  assert.equal(data.stations.filter((station) => station.lineIds.length > 0).length, 311)
   assert.ok(data.edges.every((edge) => Array.isArray(edge.lineIds)))
   assert.ok(data.stations.every((station) => ['derived-from-surface', 'outside-surface-atlas', 'control-delta'].includes(station.control?.source)))
   assert.ok(data.stations.every((station) => Object.hasOwn(station.control, 'deltaId')))
   assert.ok(data.stations.filter((station) => station.control?.source === 'derived-from-surface').length > 300)
   assert.ok(data.stations.filter((station) => station.control?.source === 'outside-surface-atlas').every((station) => station.control.status === 'unknown'))
   assert.ok(data.stations.every((station) => station.control?.hierarchy?.stationManager.endsWith('역장')))
-  assert.ok(data.stations.filter((station) => station.control?.source === 'derived-from-surface').every((station) => station.control?.hierarchy?.regionalAuthority.includes('권역 책임자')))
+  assert.ok(data.stations.filter((station) => station.control?.source === 'derived-from-surface').every((station) => station.control?.hierarchy?.regionalAuthority === null ? station.control.memberSurfaces?.length > 1 : station.control?.hierarchy?.regionalAuthority.includes('권역 책임자')))
   assert.ok(data.majorStationIds.length >= 16)
   const stationIds = new Set(data.stations.map((station) => station.id))
   assert.ok(data.stations.every((station) => Number.isFinite(station.x) && Number.isFinite(station.y)))
@@ -115,9 +172,16 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
     if (['종로구', '중구'].includes(regions[0].district)) assert.deepEqual(regions[0].polities, ['S06'], `${state.id}:${capital.name}:government-block`)
     else assert.deepEqual(regions[0].polities, [state.id], `${state.id}:${capital.name}:owner`)
     if (state.id === 'S16') {
-      assert.deepEqual(capital.control.polityIds, ['S06', 'S16'], 'City Hall shared station')
-      assert.equal(capital.control.status, 'contested')
+      // 소유자 결정(2026-09-28): 개막 시청역은 대한민국정부 점유, 분쟁 없음.
+      assert.deepEqual(capital.control.polityIds, ['S06'], 'City Hall opening occupant')
+      assert.equal(capital.control.status, 'held')
       assert.equal(capital.control.primary, 'S06')
+    } else if (capital.id === '삼성') {
+      assert.deepEqual(capital.control.memberSurfaces.map((entry) => entry.polityIds), [['S04'], ['S16']])
+      // 소유자 결정(2026-09-28): 두 표기는 같은 역이고 개막 점유는 명부교회다.
+      assert.equal(capital.control.source, 'control-delta')
+      assert.equal(capital.control.primary, 'S04')
+      assert.equal(capital.control.status, 'held')
     } else {
       assert.deepEqual(capital.control.polityIds, [state.id], `${state.id}:${capital.name}:station`)
       assert.equal(capital.control.status, 'held', `${state.id}:${capital.name}:station-status`)
@@ -134,7 +198,7 @@ test('the City Hall control ledger separates Government guard priority from the 
   assert.deepEqual(cityHall.control.polityIds, delta.polityIds)
   assert.equal(cityHall.control.primary, delta.primary)
   assert.equal(cityHall.control.source, 'control-delta')
-  assert.equal(cityHall.control.status, 'contested')
+  assert.equal(cityHall.control.status, 'held')
   assert.equal(data.states.find((state) => state.id === 'S16').capitalStationId, '시청')
   assert.equal(data.regions.find((region) => region.id === cityHall.control.surfaceRegionId).polities[0], 'S06')
   for (const stationId of ['광화문', '종로3가', '을지로입구']) {
@@ -258,6 +322,29 @@ test('government relations come from the canon table and use only defined terms 
   }
 })
 
+test('all map states project founding, government, foreign relations and dated annals from canon', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const states = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  const annals = JSON.parse(await readFile(new URL('../lore/chronology/Century-Annals.json', import.meta.url), 'utf8'))
+  const rows = new Map(states.content.find((node) => node.anchor === 'table').rows.map((row) => [row[0].ko, row]))
+  const prose = new Set(annals.content.filter((node) => node.kind === 'paragraph').map((node) => typeof node.text?.ko === 'string' ? node.text.ko : node.text?.ko?.map((run) => run.text).join('')))
+  for (const state of data.states) {
+    const row = rows.get(state.id)
+    assert.ok(row, state.id)
+    assert.equal(state.founded, row[5].ko, state.id)
+    assert.equal(state.government, row[4].ko, state.id)
+    assert.equal(state.vassals, row[6].ko, state.id)
+    assert.equal(state.religion, row[7].ko, state.id)
+    assert.equal(state.foreignRelations, row[8].ko, state.id)
+    assert.ok(state.chronology.length > 0, state.id)
+    for (const event of state.chronology) {
+      assert.ok(event.text.includes(state.name), state.id)
+      assert.ok(prose.has(event.text), state.id)
+      assert.equal(event.sourceRoute, `/world/Century-Annals#${event.year}년`, state.id)
+    }
+  }
+})
+
 test('World and Subway Layers mounts the opening territory map', async () => {
   const page = await readFile(new URL('../src/pages/ArticlePage.tsx', import.meta.url), 'utf8')
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
@@ -376,5 +463,64 @@ test('offline underground asset preserves observed depths, unknowns and graph me
   const aliases = await readFile(new URL('../src/components/stationPresentation.ts', import.meta.url), 'utf8')
   assert.match(aliases, /station\.lineIds\.some\(\(lineId\) => primary\.lineIds\.includes\(lineId\)\)/)
   assert.ok(detail.stations['강변']['3-2'])
-  assert.ok(detail.stations['강변(동서울터미널)']['3-2'])
+  assert.equal(detail.stations['강변(동서울터미널)'], undefined)
+})
+
+test('between-station segments are underground units with a rule-derived control and occupation-based 2126 passage', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const ledger = JSON.parse(await readFile(new URL('../lore/places/station-control-overrides.json', import.meta.url), 'utf8'))
+  const stationById = new Map(data.stations.map((station) => [station.id, station]))
+  const segmentDeltas = new Map((ledger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
+  assert.equal(data.edges.length, 410)
+  assert.equal(new Set(data.edges.map((edge) => edge.id)).size, 410)
+  for (const edge of data.edges) {
+    assert.equal(edge.id, `segment:${edge.a}~${edge.b}`)
+    assert.ok(['open', 'checkpoint', 'unknown'].includes(edge.passage2126), edge.id)
+    if (edge.passage2126 !== 'unknown' && !ledger.passageDecisions.some((entry) => entry.segmentId === edge.id)) assert.equal(edge.passage2126, edge.control.status === 'held' ? 'open' : 'checkpoint', edge.id)
+    assert.ok(['derived-from-stations', 'control-delta'].includes(edge.control?.source), edge.id)
+    assert.ok(Object.hasOwn(edge.control, 'deltaId'), edge.id)
+    const delta = segmentDeltas.get(edge.id)
+    if (delta) {
+      assert.equal(edge.control.source, 'control-delta', edge.id)
+      assert.deepEqual(edge.control.polityIds, delta.polityIds, edge.id)
+      continue
+    }
+    const a = stationById.get(edge.a).control
+    const b = stationById.get(edge.b).control
+    const sameHolders = [...a.polityIds].sort().join('|') === [...b.polityIds].sort().join('|')
+    if (a.status === 'unknown' || b.status === 'unknown') {
+      assert.equal(edge.control.status, 'unknown', edge.id)
+      assert.deepEqual(edge.control.polityIds, [], edge.id)
+      assert.equal(edge.control.primary, null, edge.id)
+    } else if (sameHolders) {
+      assert.deepEqual(edge.control.polityIds, a.polityIds, edge.id)
+      assert.equal(edge.control.status, a.status, edge.id)
+    } else {
+      assert.equal(edge.control.status, 'contested', edge.id)
+      assert.deepEqual(edge.control.polityIds, [...new Set([...a.polityIds, ...b.polityIds])].sort(), edge.id)
+      assert.equal(edge.control.primary, null, edge.id)
+    }
+  }
+  // 소유자 결정(2026-09-28): 개막 시점 모든 역이 점유되어 있으므로 미확인 구간도 없다.
+  assert.equal(data.edges.filter((edge) => edge.control.status === 'unknown').length, 0)
+  // 소유자 결정(2026-09-28): 한강 횡단 12구간은 구간별 결정을 따른다.
+  assert.equal(ledger.passageDecisions.length, 12)
+  for (const decision of ledger.passageDecisions) assert.equal(data.edges.find((edge) => edge.id === decision.segmentId).passage2126, decision.passage2126, decision.segmentId)
+  assert.equal(data.edges.find((edge) => edge.id === 'segment:압구정~옥수').passage2126, 'open')
+  assert.equal(data.edges.filter((edge) => edge.passage2126 === 'unknown').length, 0)
+})
+
+test('surface and underground territory are separate flat views switched explicitly', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  const css = await readFile(new URL('../src/components/OpeningTerritoryMap.css', import.meta.url), 'utf8')
+  assert.match(map, /className="territory-layer-toggle"/)
+  assert.match(map, /aria-pressed=\{layer === 'surface'\}[^>]*>지상 영토</)
+  assert.match(map, /aria-pressed=\{layer === 'underground'\}[^>]*>지하 영토</)
+  assert.match(map, /data-underground-segment=\{edge\.id\}/)
+  assert.match(map, /data-station-area=\{station\.id\}/)
+  assert.match(map, /미배정/)
+  assert.match(map, /2126 통행/)
+  assert.match(css, /\.territory-underground-segment/)
+  assert.doesNotMatch(css, /territory-underground-levels/)
+  assert.doesNotMatch(map, /OrbitControls|data-three-territory-map|undergroundGroup/)
 })

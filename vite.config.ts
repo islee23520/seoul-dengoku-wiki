@@ -9,4 +9,15 @@ export default defineConfig({
     alias: { '@': path.resolve(__dirname, 'src') },
   },
   server: { port: 5174 },
+  build: {
+    rolldownOptions: {
+      output: {
+        // Chunks made only of dependencies (the lazily loaded Mermaid graph) go to assets/lib/,
+        // which artifact-allowlist.json accepts as a whole; lore content never lives in node_modules.
+        chunkFileNames: (chunk) => chunk.moduleIds.length > 0 && chunk.moduleIds.every((id) => id.includes('/node_modules/'))
+          ? 'assets/lib/[name]-[hash].js'
+          : 'assets/[name]-[hash].js',
+      },
+    },
+  },
 })

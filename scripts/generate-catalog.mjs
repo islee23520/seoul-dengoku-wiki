@@ -5,18 +5,20 @@ import proj4 from 'proj4'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
-import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs'
-import { projectionsFromAtlas } from './world-atlas-render.mjs'
-import { verifyAtlasPeople } from './world-atlas-verify.mjs'
+import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
 import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
 import { wikiPublicationManifest } from './publication-manifest.mjs'
+import { localizedDocuments } from './localized-documents.mjs'
+import { glossaryDocument } from './glossary-document.mjs'
+import { validatedDensities } from './region-density.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
 const worldJsonRoot = resolve(projectRoot, 'src/generated/world')
+const worldEnJsonRoot = resolve(projectRoot, 'src/generated/world-en')
 const generatedRoot = resolve(projectRoot, 'src/generated')
 const publicRoot = resolve(projectRoot, 'public')
 const domains = ['world']
@@ -91,7 +93,8 @@ const leaderForNames = (markdown, names) => {
   return ranked[0]?.person ?? ''
 }
 
-const githubBlob = 'https://github.com/islee23520/seoul-kenshi/blob/main/'
+const githubBlob = 'https://github.com/islee23520/seoul-dengoku/blob/main/'
+const wikiBlob = 'https://github.com/islee23520/seoul-dengoku-wiki/blob/main/'
 
 const stripProjectionHeader = (markdown) => {
   const lines = markdown.split('\n')
@@ -115,7 +118,7 @@ const rewriteRelativeHref = (href, domain, routeBySlug) => {
   if (path.includes('GAME-REFERENCE/ui-layout-moodboard')) return '/ui-layout-moodboard/'
   if (path.includes('GAME-REFERENCE/ui-ux-refs')) return '/ui-ux-refs/'
   if (path.includes('.omo/decisions/issue-101')) return '/ui-ux-refs/'
-  if (path.includes('name-pools/')) return `${githubBlob}LORE/name-pools/${basename(path)}`
+  if (path.includes('name-pools/')) return `${wikiBlob}lore/name-pools/${basename(path)}`
   if (path.includes('GDD/proposals/')) return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/proposals/${basename(path, '.md').toLowerCase()}.json`
   if (path.includes('CONTRIBUTING.md')) return `${githubBlob}CONTRIBUTING.md`
   return `${githubBlob}${path.replace(/^\.\.\//g, '')}`
@@ -166,81 +169,68 @@ const categoryRegistry = await loadCategoryRegistry(resolve(dirname(fileURLToPat
 await rm(resolve(projectRoot, 'src/content'), { recursive: true, force: true })
 await rm(worldJsonRoot, { recursive: true, force: true })
 await mkdir(worldJsonRoot, { recursive: true })
+await rm(worldEnJsonRoot, { recursive: true, force: true })
+await mkdir(worldEnJsonRoot, { recursive: true })
 await mkdir(generatedRoot, { recursive: true })
 await mkdir(publicRoot, { recursive: true })
 await rm(wikiAssetTarget, { recursive: true, force: true })
 
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
+await materializeWorldAtlas({
+  atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
+  outDir: loreRoot,
+  check: true,
+})
 const jsonPages = await walkLoreJson(loreRoot)
 const categoryErrors = jsonPages.flatMap((page) => registrationErrors(page.value, categoryRegistry, basename(page.path)))
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
-const atlasMarkdown = await readFile(resolve(loreRoot, 'World-Narrative-Atlas.md'), 'utf8')
-const atlas = extractAtlasJson(atlasMarkdown)
-if (!atlas.ok) throw new Error(`E_ATLAS_JSON:${atlas.error}`)
 const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
-const atlasPeople = verifyAtlasPeople(atlas.value, {
-  registry: JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')),
-  candidates: JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-candidates.json'), 'utf8')),
-  people: peopleSource,
-})
-if (atlasPeople.failures.length) throw new Error(atlasPeople.failures.join('\n'))
-const atlasHash = sha256Text(atlasMarkdown)
-const projections = projectionsFromAtlas(atlas.value, atlasHash)
-const glossaryMarkdown = await readFile(resolve(loreRoot, 'Glossary.md'), 'utf8')
-const worldIndex = await buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
+const glossaryPath = resolve(loreRoot, 'glossary.json')
+const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(JSON.parse(await readFile(glossaryPath, 'utf8'))) }
+const worldIndex = buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
 
 const renderedBySlug = new Map()
 for (const page of jsonPages) {
   renderedBySlug.set(page.slug, renderLoreMarkdown(page.value, 'ko', (_domain, slug) => `${slug}.md`))
 }
-for (const [name, markdown] of Object.entries(projections)) {
-  const slug = basename(name, '.md')
-  if (pagesBySlug.has(slug)) throw new Error(`E_PROJECTION_COLLIDES_WITH_JSON:${slug}`)
-  renderedBySlug.set(slug, markdown)
-}
+// The Glossary page is built in memory from the term dictionary; an authored Glossary page would be a second source.
 if (pagesBySlug.has('Glossary')) throw new Error('E_GLOSSARY_JSON_UNEXPECTED')
-renderedBySlug.set('Glossary', glossaryMarkdown)
-// The atlas is the hand-authored canon (no JSON twin). Its machine registry is the canonical
-// JSON inside the ```json fence; the page body is that canon with reader links rewritten below.
-renderedBySlug.set('World-Narrative-Atlas', atlasMarkdown)
+pagesBySlug.set('Glossary', glossaryPage)
+renderedBySlug.set('Glossary', renderLoreMarkdown(glossaryPage.value, 'ko', (_domain, slug) => `${slug}.md`))
 renderedBySlug.set('index', worldIndex)
 
 const projectionCategories = {
-  'Synthetic-Actors': 'people-and-machines',
-  'Operating-Houses': 'factions',
-  'Regional-Physical-AI-Arcs': 'overview',
-  'World-Relation-Ledger': 'factions',
-  'External-Theaters': 'places',
-  'World-Expansion-Index': 'overview',
-  'World-Narrative-Atlas': 'overview',
   Glossary: 'overview',
   index: 'overview',
 }
 for (const slug of renderedBySlug.keys()) {
   if (categoriesBySlug.has(slug)) continue
-  const category = slug.startsWith('Hostile-Group-') || slug === 'Hostile-Ecology-Index'
-    ? 'bestiary'
-    : projectionCategories[slug]
+  const category = projectionCategories[slug]
   if (!category || !categoryRegistry.categories.some((entry) => entry.id === category)) throw new Error(`E_CATEGORY_PROJECTION:${slug}`)
   categoriesBySlug.set(slug, [category])
 }
 
+// The source decides the locales: a JSON authoring document publishes ko and en from one file,
+// a Markdown-only corpus publishes its Korean body alone.
 const documents = []
+const englishDocuments = []
 for (const domain of domains) {
   for (const slug of [...renderedBySlug.keys()].sort((left, right) => left.localeCompare(right))) {
-    const markdown = renderedBySlug.get(slug)
-    documents.push({
+    const page = pagesBySlug.get(slug)
+    for (const document of localizedDocuments({
       domain,
       slug,
-      route: `/${domain}/${slug === 'index' ? '' : slug}`,
-      title: pagesBySlug.get(slug)?.value.locales?.ko?.title ?? normalizeTitle(markdown, slug),
-      summary: pagesBySlug.get(slug)?.value.locales?.ko?.summary ?? '',
-      categories: categoriesBySlug.get(slug) ?? [],
-      markdown,
-      name: `${slug}.md`,
-    })
+      json: page?.value,
+      markdown: page ? undefined : renderedBySlug.get(slug),
+      renderJson: (value, locale) => renderLoreMarkdown(value, locale, (_domain, target) => `${target}.md`),
+      titleFallback: normalizeTitle,
+    })) {
+      const entry = { ...document, categories: categoriesBySlug.get(slug) ?? [], name: `${slug}.md` }
+      if (document.locale === 'ko') documents.push(entry)
+      else englishDocuments.push(entry)
+    }
   }
 }
 
@@ -250,18 +240,26 @@ for (const document of documents) {
   routeBySlug.set(`${document.domain}:${document.slug}`, document.route)
   if (!routeBySlug.has(`any:${document.slug}`)) routeBySlug.set(`any:${document.slug}`, document.route)
 }
+// English pages link to the English route when the target has one, and to the Korean route otherwise.
+const englishRouteBySlug = new Map(routeBySlug)
+for (const document of englishDocuments) {
+  englishRouteBySlug.set(`${document.domain}:${document.slug}`, document.route)
+  englishRouteBySlug.set(`any:${document.slug}`, document.route)
+}
 
-for (const document of documents) {
-  const body = normalizeMarkdown(document.markdown, document.domain, routeBySlug)
+const writeDocument = async (root, document, routes) => {
+  const body = normalizeMarkdown(document.markdown, document.domain, routes)
   const blocks = fromMarkdown(body, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
   const removePositions = (node) => {
     delete node.position
     for (const child of node.children ?? []) removePositions(child)
   }
   for (const block of blocks) removePositions(block)
-  await writeFile(resolve(worldJsonRoot, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
+  await writeFile(resolve(root, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
 `)
 }
+for (const document of documents) await writeDocument(worldJsonRoot, document, routeBySlug)
+for (const document of englishDocuments) await writeDocument(worldEnJsonRoot, document, englishRouteBySlug)
 
 const lines = [
   'export type WikiDomain = \'world\'',
@@ -275,6 +273,10 @@ const lines = [
   '',
   'export const wikiCatalog = [',
   ...documents.map((document) => `  { domain: '${document.domain}', slug: '${document.slug}', route: '${document.route}', title: ${JSON.stringify(document.title)} },`),
+  '] as const satisfies readonly WikiDocument[]',
+  '',
+  'export const wikiEnglishCatalog = [',
+  ...englishDocuments.map((document) => `  { domain: '${document.domain}', slug: '${document.slug}', route: '${document.route}', title: ${JSON.stringify(document.title)} },`),
   '] as const satisfies readonly WikiDocument[]',
   '',
   `export const wikiDocumentCount = ${documents.length}`,
@@ -293,7 +295,10 @@ export type WikiCategory = { readonly id: string; readonly label: string; readon
 
 export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as const satisfies { readonly categories: readonly WikiCategory[]; readonly uncategorized: readonly CategoryDocument[] }
 `)
-await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({ documents: documents.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })) }, null, 2)}\n`)
+await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({
+  documents: documents.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })),
+  englishDocuments: englishDocuments.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })),
+}, null, 2)}\n`)
 
 const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/update-history.json'), 'utf8'))
 const wikiUpdates = latestUpdates(updateHistory.updates)
@@ -330,9 +335,20 @@ const genderByName = new Map(genderSource.map((person) => [person.name, person])
 const stateNameById = new Map(stateCatalog.map((state) => [state.slug.toUpperCase(), state.name]))
 const regionAtlasSource = await readFile(process.env.WIKI_REGION_ATLAS_PATH ?? await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
+const populationSource = JSON.parse(await readFile(resolve(loreRoot, 'regions/sources/population-2026-08.json'), 'utf8'))
+const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
 const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
 const sixteenStatesLore = JSON.parse(await readFile(resolve(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
+const stateTable = sixteenStatesLore.content.find((block) => block.anchor === 'table')
+if (!stateTable || stateTable.kind !== 'table' || stateTable.rows.length !== 16) throw new Error('E_STATE_DETAIL_TABLE')
+const stateDetails = new Map(stateTable.rows.map((row) => [row[0].ko, {
+  name: row[1].ko,
+  founded: row[5].ko,
+  vassals: row[6].ko,
+  religion: row[7].ko,
+  foreignRelations: row[8].ko,
+}]))
 const relationTable = sixteenStatesLore.content.find((block) => block.anchor === 'table-gov-relations')
 if (!relationTable || relationTable.kind !== 'table') throw new Error('E_GOV_RELATIONS_TABLE_MISSING')
 const relationByStateName = new Map(relationTable.rows.map(([state, relation]) => {
@@ -401,6 +417,11 @@ const pointInPolygon = ([x, y], points) => {
 const capitalNameByState = new Map(stateRows.map((row) => [row.id, row.capital.replace(/역$/u, '')]))
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
+const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
+const approvedStationAliases = stationCatalog.data.station_aliases
+const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
+if (approvedStationAliases.length !== 18 || canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
+const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
 const stationDegree = new Map(seoulGraph.stations.map((station) => [station.id, 0]))
 for (const edge of seoulGraph.edges) {
@@ -408,13 +429,14 @@ for (const edge of seoulGraph.edges) {
   stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
   stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
 }
+for (const entry of approvedStationAliases) for (const alias of entry.aliases) stationIdByName.set(alias, entry.id)
 const capitalStateByStationId = new Map([...capitalNameByState.entries()].map(([stateId, name]) => {
   const stationId = stationIdByName.get(name)
   if (!stationId) throw new Error(`E_CAPITAL_STATION_NOT_FOUND:${stateId}:${name}`)
   return [stationId, stateId]
 }))
 const capitalStationIds = new Set(capitalStateByStationId.keys())
-const mapStations = seoulGraph.stations.map((station) => {
+const sourceMapStations = seoulGraph.stations.map((station) => {
   const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [station.lon, station.lat])
   const [x, y] = mapPoint([east, north])
   if (x < 0 || x > mapWidth || y < 0 || y > mapHeight) throw new Error(`E_STATION_MAP_BOUNDS:${station.id}:${x}:${y}`)
@@ -450,12 +472,71 @@ const mapStations = seoulGraph.stations.map((station) => {
     },
   }
 })
+const mapStations = sourceMapStations.filter((station) => canonicalStationId(station.id) === station.id).map((station) => {
+  const identity = approvedStationAliases.find((entry) => entry.id === station.id)
+  if (!identity) return station
+  const memberIds = [identity.id, ...identity.aliases]
+  const memberSurfaces = memberIds.map((id) => {
+    const source = sourceMapStations.find((entry) => entry.id === id)
+    const { source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds } = source.control
+    return { id, source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds }
+  })
+  const holders = new Set(memberSurfaces.map((entry) => `${entry.status}:${entry.primary}:${[...entry.polityIds].sort().join(',')}`))
+  const regions = new Set(memberSurfaces.map((entry) => entry.surfaceRegionId))
+  return {
+    ...station,
+    memberIds,
+    lineIds: [...new Set(sourceMapStations.filter((member) => memberIds.includes(member.id)).flatMap((member) => member.lineIds))],
+    degree: new Set(seoulGraph.edges.filter((edge) => memberIds.includes(edge.a) || memberIds.includes(edge.b)).map((edge) => canonicalStationId(memberIds.includes(edge.a) ? edge.b : edge.a))).size,
+    control: {
+      ...station.control,
+      memberSurfaces,
+      // 명시적 점유 원장(ControlDelta)이 있으면 별칭 구성원의 지표 소유가 달라도 원장이 이긴다.
+      ...(holders.size > 1 && station.control.source !== 'control-delta' ? { status: 'unknown', polityIds: [], polityNames: [], primary: null, hierarchy: { ...station.control.hierarchy, state: '미확인', regionalAuthority: null } } : {}),
+      ...(regions.size > 1 ? { surfaceRegionId: null, surfaceRegionName: null, hierarchy: { ...station.control.hierarchy, ...(holders.size > 1 && station.control.source !== 'control-delta' ? { state: '미확인' } : {}), regionalAuthority: station.control.source === 'control-delta' ? station.control.hierarchy.regionalAuthority : null } } : {}),
+    },
+  }
+})
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
-const stationLines = new Map(mapStations.map((station) => [station.id, station.lineIds]))
-const mapEdges = seoulGraph.edges.map((edge) => ({
-  ...edge,
-  lineIds: stationLines.get(edge.a).filter((lineId) => stationLines.get(edge.b).includes(lineId)),
-}))
+const stationLines = new Map(sourceMapStations.map((station) => [station.id, station.lineIds]))
+const stationControlById = new Map(mapStations.map((station) => [station.id, station.control]))
+const segmentControlOverrides = new Map((stationControlLedger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
+if (segmentControlOverrides.size !== (stationControlLedger.segmentOverrides ?? []).length) throw new Error('E_SEGMENT_CONTROL_DUPLICATE')
+const segmentControl = (segmentId, a, b) => {
+  const delta = segmentControlOverrides.get(segmentId)
+  if (delta) {
+    if (!delta.polityIds?.length || !delta.polityIds.every((id) => stateNameById.has(id)) || (delta.primary !== null && !delta.polityIds.includes(delta.primary))) throw new Error(`E_SEGMENT_CONTROL_PRIMARY:${segmentId}`)
+    return { source: 'control-delta', deltaId: delta.id, status: delta.status, polityIds: delta.polityIds, primary: delta.primary }
+  }
+  if (a.status === 'unknown' || b.status === 'unknown') return { source: 'derived-from-stations', deltaId: null, status: 'unknown', polityIds: [], primary: null }
+  if ([...a.polityIds].sort().join('|') === [...b.polityIds].sort().join('|')) return { source: 'derived-from-stations', deltaId: null, status: a.status, polityIds: a.polityIds, primary: a.primary }
+  return { source: 'derived-from-stations', deltaId: null, status: 'contested', polityIds: [...new Set([...a.polityIds, ...b.polityIds])].sort(), primary: null }
+}
+// 2126 통행(소유자 결정 2026-09-28): 양 끝 점유 세력이 같으면 통행, 다르면 검문 통행이다.
+// 한강을 건너는 구간은 구간마다 소유자 결정을 받을 때까지 unknown으로 둔다. 강 북쪽·남쪽은 역의 자치구로 가른다.
+const HAN_NORTH_DISTRICTS = new Set(['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구'])
+const HAN_SOUTH_DISTRICTS = new Set(['강서구', '양천구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구'])
+const stationDistrictById = new Map(mapStations.map((station) => [station.id, station.district]))
+const crossesHan = (a, b) => {
+  const [da, db] = [stationDistrictById.get(a), stationDistrictById.get(b)]
+  return (HAN_NORTH_DISTRICTS.has(da) && HAN_SOUTH_DISTRICTS.has(db)) || (HAN_SOUTH_DISTRICTS.has(da) && HAN_NORTH_DISTRICTS.has(db))
+}
+const passageDecisions = new Map((stationControlLedger.passageDecisions ?? []).map((entry) => [entry.segmentId, entry.passage2126]))
+if (passageDecisions.size !== (stationControlLedger.passageDecisions ?? []).length) throw new Error('E_PASSAGE_DECISION_DUPLICATE')
+for (const value of passageDecisions.values()) if (!['open', 'checkpoint', 'blocked'].includes(value)) throw new Error(`E_PASSAGE_DECISION_VALUE:${value}`)
+const passage2126 = (edge, control) => {
+  const id = `segment:${edge.a}~${edge.b}`
+  if (crossesHan(edge.a, edge.b)) return passageDecisions.get(id) ?? 'unknown'
+  return control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
+}
+const projectedEdges = seoulGraph.edges.map((edge) => ({ a: canonicalStationId(edge.a), b: canonicalStationId(edge.b), lineIds: stationLines.get(edge.a).filter((id) => stationLines.get(edge.b).includes(id)) }))
+const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
+  const id = `segment:${edge.a}~${edge.b}`
+  const control = segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b))
+  return { ...edge, id, control, passage2126: passage2126(edge, control) }
+})
+for (const segmentId of segmentControlOverrides.keys()) if (!mapEdges.some((edge) => edge.id === segmentId)) throw new Error(`E_SEGMENT_CONTROL_UNKNOWN_SEGMENT:${segmentId}`)
+for (const segmentId of passageDecisions.keys()) if (!mapEdges.some((edge) => edge.id === segmentId && crossesHan(edge.a, edge.b))) throw new Error(`E_PASSAGE_DECISION_NOT_HAN_CROSSING:${segmentId}`)
 const polygonMetrics = (points) => {
   let twiceArea = 0
   let weightedX = 0
@@ -479,6 +560,8 @@ const polygonMetrics = (points) => {
 const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => left.localeCompare(right)).map(([id, name]) => {
   const state = stateCatalog.find((candidate) => candidate.slug === id.toLowerCase())
   if (!state) throw new Error(`E_TERRITORY_STATE_NOT_FOUND:${id}:${name}`)
+  const details = stateDetails.get(id)
+  if (!details || details.name !== name) throw new Error(`E_STATE_DETAIL_IDENTITY:${id}`)
   const candidates = regionAtlas.regions
     .filter((region) => surfaceHolders(region.content).length === 1 && surfaceHolders(region.content)[0] === id)
     .map((region) => {
@@ -503,6 +586,10 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     relation: relationByStateName.get(name) ?? null,
     ruler: state.ruler,
     cause: state.cause,
+    founded: details.founded,
+    vassals: details.vassals,
+    religion: details.religion,
+    foreignRelations: details.foreignRelations,
     labelX: label.x,
     labelY: label.y,
     capitalStationId,
@@ -604,6 +691,7 @@ const openingTerritories = {
   height: mapHeight,
   projection: { crs: 'EPSG:5179', minEast: mapBounds.minX, maxEast: mapBounds.maxX, minNorth: mapBounds.minY, maxNorth: mapBounds.maxY },
   attribution: regionAtlas.attribution,
+  populationAttribution: `${populationSource.source.publisher} ${populationSource.baseline} ${populationSource.source.statistic} (${populationSource.source.definition}); ${populationSource.ratio * 100}% 투영 · ${populationSource.boundary.effectiveDate} 행정동 경계 면적 · ${populationSource.source.url}`,
   states: territoryStates,
   vassals,
   landmarks: projectedLandmarks,
@@ -625,6 +713,8 @@ const openingTerritories = {
       openingState: normalizePublicNames(content.opening_state),
       summary: normalizePublicNames(content.summary),
       stationCount: region.station_ids.length,
+      areaM2: region.area_m2,
+      density2126: densityByDong[region.id.replace(/^region:/u, '')],
     }
   }),
 }
@@ -685,6 +775,24 @@ const emptyYears = timelineYears.filter((entry) => entry.summary.length === 0).m
 if (timelineYears.length === 0 || timelineYears[0]?.year !== 2026 || timelineYears.at(-1)?.year > 2126 || emptyYears.length > 0) {
   throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${emptyYears.join(',')}`)
 }
+const stateEvents = new Map(territoryStates.map((state) => [state.name, []]))
+let eventYear = null
+for (const block of centuryAnnalsDocument.content) {
+  if (block.kind === 'heading' && block.depth <= 3) {
+    const year = block.depth === 3 ? Number(koText(block.text.ko).match(/^((?:20|21)\d{2})년$/u)?.[1]) : NaN
+    eventYear = Number.isInteger(year) ? year : null
+  }
+  if (eventYear === null || block.kind !== 'paragraph') continue
+  const text = koText(block.text.ko)
+  for (const state of territoryStates) {
+    if (text.includes(state.name)) stateEvents.get(state.name).push({ year: eventYear, text, sourceRoute: `/world/Century-Annals#${eventYear}년` })
+  }
+}
+for (const state of territoryStates) {
+  state.chronology = stateEvents.get(state.name)
+  if (state.chronology.length === 0) throw new Error(`E_STATE_CHRONOLOGY_EMPTY:${state.id}`)
+}
+await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
 await writeFile(resolve(publicRoot, 'timeline-overview.json'), `${JSON.stringify({ schema: 'seoul-timeline-overview.v1', years: timelineYears, states: territoryStates }, null, 2)}\n`)
 
 const personCards = new Map()
@@ -697,7 +805,7 @@ const addPersonCards = (text, file, pattern) => {
     const body = text.slice(headings[index].index + headings[index][0].length, nextHeading >= 0 ? nextHeading : text.length).trim()
     const cards = personCards.get(name) ?? []
     const slug = file.replace('.md', '')
-    cards.push({ file: slug, body, primary: pagesBySlug.get(slug)?.value.primary_detail_names?.includes(name) ?? false })
+    cards.push({ file: slug, body, primary: pagesBySlug.get(slug)?.value.data?.primary_detail_names?.includes(name) ?? false })
     personCards.set(name, cards)
   }
 }
@@ -806,4 +914,6 @@ for (const person of peopleCatalog) {
   await writeFile(resolve(personDetailsRoot, `${person.id}.json`), `${JSON.stringify(detail, null, 2)}\n`)
 }
 await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const peopleCatalog = ${JSON.stringify(peopleCatalog, null, 2)} as const\nexport const peopleCount = ${peopleCatalog.length}\n`)
+// The home page reads only the count, so it gets its own module and does not bundle the catalog.
+await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
 console.log(`WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)

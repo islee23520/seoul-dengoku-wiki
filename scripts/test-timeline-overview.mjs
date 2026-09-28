@@ -102,6 +102,7 @@ test('Scenario Timeline mounts the complete timeline overview', async () => {
   const component = await readFile(new URL('../src/components/TimelineOverview.tsx', import.meta.url), 'utf8')
   assert.match(page, /Scenario-Timeline/)
   assert.match(page, /TimelineOverview/)
+  assert.match(page, /locale === 'ko' && domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense/)
   assert.match(component, /전체 \{data\.years\.length\}개 연도/)
   assert.doesNotMatch(component, /101개/)
   assert.match(component, /재접촉 전야 2115–2126/)
