@@ -10,7 +10,7 @@ The root atlas (`World-Narrative-Atlas.json`) owns machine registries and genera
 |------|----------|
 | Change atlas registry facts | `World-Narrative-Atlas.json`; edit generated pages only through the renderer |
 | Corpus TOC | `README.md` (Korean, relative links, links into all subdirs) |
-| Hostile groups G01–G27 | `bestiary/Hostile-Ecology-Index.json` → `bestiary/groups/Hostile-Group-Gxx.json`; each group page owns ecology, scenarios and every GxxEyy entry |
+| Hostile groups G01–G26 | `bestiary/Hostile-Ecology-Index.json` → `bestiary/groups/Hostile-Group-Gxx.json`; each group page owns ecology, scenarios and every GxxEyy entry |
 | Bestiary entries `GxxEyy` | Group pages contain all 422 authored entries; Mxxx remains source provenance inside each entry and no batch body page is published |
 | Steward houses | `Operating-Houses.json` (corporate HC01–HC22 + civic HP01–HP10) |
 | Synthetics | `Synthetic-Actors.json` (humanoid H / facility F / mobile V, 16 each) |
@@ -21,7 +21,7 @@ The root atlas (`World-Narrative-Atlas.json`) owns machine registries and genera
 ## CONVENTIONS
 - Every projection is a generated JSON envelope whose provenance carries `original_anchor: lore/World-Narrative-Atlas.json` and the atlas `original_hash`; the atlas machine registries (e.g. `monster_contents`) are canon and the split pages are views of them.
 - Projection rendering and checking live in `scripts/` (`generate-catalog.mjs`, `world-atlas-render.mjs`, `gate.mjs`); the hash names the atlas Markdown that was rendered.
-- Entity IDs are permanent, never renumbered: humans `K001–K412` (Cast-Index row order), states `S01–S16`, houses `HCxx`/`HPxx`, external theaters `XT01–XT05`, synthetics `H/F/V01–16`, hostile groups `G01–G27`, entities `GxxEyy`, batches `Mxxx`/`Bxxx`.
+- Entity IDs are permanent, never renumbered: humans `K001–K412` (Cast-Index row order), states `S01–S16`, houses `HCxx`/`HPxx`, external theaters `XT01–XT05`, synthetics `H/F/V01–16`, hostile groups `G01–G26` (G27 retired), entities `GxxEyy`, batches `Mxxx`/`Bxxx`.
 - Atlas prose contract: Korean 3rd-person limited 한다체 narrative, 합니다체 guidance; `source_kind` separates fact / inference / fiction; one cause-effect per paragraph.
 
 ## ANTI-PATTERNS

@@ -494,81 +494,6 @@
     },
     {
       "kind": "heading",
-      "anchor": "g27-심층삼엽군",
-      "depth": 3,
-      "text": {
-        "en": "G27 Deep-Trilobite Swarm",
-        "ko": "G27 심층삼엽군"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "g27-심층삼엽군-p1-ko-label-12",
-      "text": {
-        "en": "A. Status of the line",
-        "ko": "가. 라인의 지위"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "g27-심층삼엽군-p1",
-      "text": {
-        "en": "G27 is a machine line for deep inspection and sluice maintenance, equipped with layered armor and sealed underwater propulsion.",
-        "ko": "G27 심층삼엽군은 심층 검사와 수문 유지보수를 맡은 기계 라인이다. 다층 장갑과 밀폐형 수중 추진 장치를 갖추었다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "g27-심층삼엽군-p2-ko-label-13",
-      "text": {
-        "en": "B. Restart trigger",
-        "ko": "나. 재기동 개시점"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "g27-심층삼엽군-p2",
-      "text": {
-        "en": "Narrative of the restart trigger\nThe restart sequence was triggered when the conduit flow gauge rose past its mandate or a shutoff-valve signal came in. The Deep-Trilobite chassis risen from the pump-conduit floor lit their underwater sonic sensors and began the routine of removing organics and foreign matter through the flooded passage.",
-        "ko": "관로 유량 수위계가 사정권 이상으로 상승하거나 차단 밸브 신호가 유입되면 재기동 시퀀스가 유발된다. 펌프 관로 바닥에서 일어난 심층삼엽군 기체들은 수중 음파 센서를 켠다. 침수 통로 전체의 유기물과 외부 이물질 제거 루틴을 개시한다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "g27-심층삼엽군-list4-ko-label-14",
-      "text": {
-        "en": "C. Major equipment and modules",
-        "ko": "다. 주요 장비와 모듈"
-      }
-    },
-    {
-      "kind": "list",
-      "anchor": "g27-심층삼엽군-list4",
-      "items": [
-        {
-          "en": "Multilayer flat armor: a layered shell protecting the internal boards from high water pressure and corrosive polluted water.",
-          "ko": "다층 편평 장갑: 높은 수압과 부식성 오염수로부터 내장 기판을 보호하는 적층형 외갑이다."
-        },
-        {
-          "en": "Sealed underwater thrusters: jet devices controlling water flow and moving pressed against the conduit bed.",
-          "ko": "밀폐형 수중 추진기: 수중 수류를 제어하며 관로 하상에 밀착해 이동할 수 있는 분사 장치다."
-        },
-        {
-          "en": "Underwater ultrasonic sensors: they identified pipe cracks and foreign matter even in turbid mud.",
-          "ko": "수중 초음파 센서: 탁도 높은 진흙 속에서도 관로 균열과 외부 물질을 식별한다."
-        },
-        {
-          "en": "Sediment intake ports: they high-pressure-sucked and crushed the ridges and debris piled on the waterway floor.",
-          "ko": "침전물 흡입 포트: 수로 바닥에 쌓인 요철과 이물질을 고압 흡입하여 분쇄 처리한다."
-        },
-        {
-          "en": "Hydraulic anchor holds: they fixed the chassis firmly to the floor inside sewers rushing with current.",
-          "ko": "유압 고정 앵커: 급류가 흐르는 하수관 내부에서 기체를 바닥에 견고히 고정한다."
-        }
-      ]
-    },
-    {
-      "kind": "heading",
       "anchor": "봉인회수쟁탈",
       "depth": 2,
       "text": {
@@ -813,10 +738,6 @@
         {
           "en": "Heavy mount: G26 Fossil-Roar Swarm chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.",
           "ko": "중장 거치대: G26 철공룡 기체가 거점 교차로를 묵직하게 막아서며 중거리 접근을 물리적으로 튕겨낸다."
-        },
-        {
-          "en": "Flooded geometric net: G27 Deep-Trilobite Swarm layered seals over the waterway below the sluice gallery, plugging the enemy's flanking and escape routes.",
-          "ko": "침수 기하망: G27 심층삼엽군이 수문 갤러리 아래쪽 수로를 겹겹이 봉쇄하여 적의 우회 및 탈출 경로를 틀어막는다."
         }
       ]
     },
@@ -857,8 +778,8 @@
             "ko": "생물모방(Biomimetics) 공학, 곤충 및 절지동물 구조"
           },
           {
-            "en": "The G25/G26/G27 line names and detail submodels. Not a 2026 deployment verification",
-            "ko": "G25/G26/G27 독자 라인 명칭 및 세부 하부 모델. 2026 배치 검증 아님"
+            "en": "The G25/G26 line names and detail submodels. Not a 2026 deployment verification",
+            "ko": "G25/G26 독자 라인 명칭 및 세부 하부 모델. 2026 배치 검증 아님"
           }
         ],
         [
@@ -1179,8 +1100,8 @@
       "kind": "paragraph",
       "anchor": "염출-기술유물-신화-p3",
       "text": {
-        "en": "The skeleton of the three lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, the G26 Fossil-Roar Swarm the line mending heavy plant, the G27 Deep-Trilobite Swarm the line examining deep conduits. Faith lodging in them did not change those roles. They merely read different gods into the same chassis.",
-        "ko": "세 로스트 라인의 뼈대는 바꾸지 않는다. G25 등불개미는 수색을 맡은 라인이다. G26 철공룡은 무거운 장비를 고치는 라인이다. G27 심층삼엽군은 깊은 관로를 살피는 라인이다. 신앙이 깃들어도 역할은 달라지지 않는다. 같은 기체를 서로 다른 신으로 읽는다."
+        "en": "The skeleton of the two lost lines was not changed carelessly. The G25 Lantern Ant firmly remained the line charged with search, and the G26 Iron Dinosaur the line mending heavy plant. Faith lodging in them did not change those roles. They merely read different gods into the same chassis.",
+        "ko": "두 로스트 라인의 뼈대는 바꾸지 않는다. G25 등불개미는 수색을 맡은 라인이다. G26 철공룡은 무거운 장비를 고치는 라인이다. 신앙이 깃들어도 역할은 달라지지 않는다. 같은 기체를 서로 다른 신으로 읽는다."
       }
     },
     {
@@ -1334,8 +1255,8 @@
       "kind": "paragraph",
       "anchor": "구세계-상징-신격화-p2",
       "text": {
-        "en": "The G25's sensor modules and protocol cards were the faint echoes that voice had left. The underwater ultrasound the G27 emitted was likewise read as another announcement heard from within the water. If someone moved a station mark elsewhere, they believed the sanctuary itself moved whole to that place. To erase a mark wantonly was therefore held the impiety of erasing the god's very existence.",
-        "ko": "G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다. G27이 내뿜는 수중 초음파는 물속에서 들려오는 안내방송으로 읽힌다. 역 표지를 다른 곳으로 옮기면 성소도 그곳으로 통째로 옮겨간다고 믿는다. 표지를 지우는 일은 신의 존재를 지우는 불경으로 간주된다."
+        "en": "The G25's sensor modules and protocol cards were the faint echoes that voice had left. If someone moved a station mark elsewhere, they believed the sanctuary itself moved whole to that place. To erase a mark wantonly was therefore held the impiety of erasing the god's very existence.",
+        "ko": "G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다. 역 표지를 다른 곳으로 옮기면 성소도 그곳으로 통째로 옮겨간다고 믿는다. 표지를 지우는 일은 신의 존재를 지우는 불경으로 간주된다."
       }
     },
     {
@@ -1443,8 +1364,8 @@
       "kind": "paragraph",
       "anchor": "신앙-계열별-유물-해석-p2",
       "text": {
-        "en": "The machine-worship family read the old rolling stock, the substations, and even the G26's heavy drives together as one sacred body. The consumption-rite family accepted crumpled currency, gate passage, and even secret parts auctions as one solemn rite. The symbol-deification family took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 and G27 as a single line of voice the creator had left.",
-        "ko": "기계 숭배 가족은 낡은 전동차와 변전소, G26의 무거운 구동부를 하나의 신성한 몸으로 읽는다. 소비 의례 가족은 구겨진 화폐와 개찰구 통과, 은밀한 부품 경매를 하나의 제사로 받아들인다. 상징 신격화 가족은 끊긴 안내방송과 바랜 역 표지, G25·G27의 센서 신호를 창조주가 남긴 목소리로 여긴다."
+        "en": "The machine-worship family read the old rolling stock, the substations, and even the G26's heavy drives together as one sacred body. The consumption-rite family accepted crumpled currency, gate passage, and even secret parts auctions as one solemn rite. The symbol-deification family took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 as a single line of voice the creator had left.",
+        "ko": "기계 숭배 가족은 낡은 전동차와 변전소, G26의 무거운 구동부를 하나의 신성한 몸으로 읽는다. 소비 의례 가족은 구겨진 화폐와 개찰구 통과, 은밀한 부품 경매를 하나의 제사로 받아들인다. 상징 신격화 가족은 끊긴 안내방송과 바랜 역 표지, G25의 센서 신호를 창조주가 남긴 목소리로 여긴다."
       }
     },
     {
@@ -1459,8 +1380,8 @@
       "kind": "paragraph",
       "anchor": "신앙-계열별-유물-해석-p3",
       "text": {
-        "en": "The very same G25 charging module was a sublime breath to the Busbar Rite, a costly offering to the Stamp Rite, and the box where the holy voice dwelt to the Announcement Rite. The same G26 hydraulic underbody was the joint bridging legs to the Wheel Rite but a fearsome judgment punishing those who passed without right to the Gate Rite. Even the G27's ultrasound was, to the Busbar Rite, merely wiring laid underwater, while the Announcement Rite read it as a distant broadcast ringing through the deep water.",
-        "ko": "G25 축전 모듈은 모선제에 숭고한 숨결이다. 찍힘제에는 값비싼 제물이다. 안내제에는 거룩한 목소리가 머무는 상자다. G26 유압 하체는 차륜제에 다리를 잇는 관절이다. 개찰제에는 함부로 통행하는 자를 벌하는 심판이다. G27 초음파는 모선제에 물속에 깔린 전선이다. 안내제에는 깊은 수중에서 울려 퍼지는 방송이다."
+        "en": "The very same G25 charging module was a sublime breath to the Busbar Rite, a costly offering to the Stamp Rite, and the box where the holy voice dwelt to the Announcement Rite. The same G26 hydraulic underbody was the joint bridging legs to the Wheel Rite but a fearsome judgment punishing those who passed without right to the Gate Rite.",
+        "ko": "G25 축전 모듈은 모선제에 숭고한 숨결이다. 찍힘제에는 값비싼 제물이다. 안내제에는 거룩한 목소리가 머무는 상자다. G26 유압 하체는 차륜제에 다리를 잇는 관절이다. 개찰제에는 함부로 통행하는 자를 벌하는 심판이다."
       }
     },
     {
