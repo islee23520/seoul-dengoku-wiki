@@ -1,0 +1,81 @@
+# #299·#298 위키 제안 검증
+
+검증일: 2026-09-28. 브랜치: `codex/tripothon-warehouse-scenario`.
+기준 WIKI HEAD: `e83970e8b5796c1f3b428ef58c79a5c1cb48b7f5`.
+GAME 입력 HEAD: `84920d8c418d0f8e2bbc474b83d4a9ca0c397728`.
+GDD 참조 HEAD: `e4b14cac11314c47da23b8e04eb4c4e336ffc3e6`.
+
+## 범위와 보존
+
+- `lore/chronology/Scenario-Timeline.json`: 기존 회수 카드 뒤에 학동·논현2동의 **미승인 위치 제안** 한 문단을 한영으로 추가했다. 기존 41개 블록은 HEAD와 파싱 값 대조에서 모두 동일했다.
+- `lore/chronology/Tripothon-Return-Relay-Proposal.json`: 별도 한영 draft 원천. 원문 근거, 경로, 성인 3명 분대, 별도 대여 장비, 5+1단계의 14개 선택 행, 수치 효과, 성공·실패·귀환 조건, 소유자 결정 5행, 구현 인수 사례를 담았다.
+- 지역 관측 JSON·OSM 객체·역 그래프·게임 데이터는 변경하지 않았다. 기존 명칭, 2124년 기연결, 민웅기의 대전 체류, 신준의 동의·휴식, S00 원장 행의 proposal 상태를 보존했다.
+- #299와 #298 본문·댓글을 `gh issue view --repo islee23520/seoul-dengoku --json title,body,comments`로 확인했다. #299 댓글 0개, #298 소유자 댓글 5864851948은 승인 전 위치 잠금을 요구한다.
+
+## 실행과 결과
+
+| 명령 / 확인 | 결과 |
+|---|---|
+| `npm ci --ignore-scripts` | exit 0, 380 packages, audit 0 vulnerabilities |
+| `node scripts/lore-json-validate.mjs lore/chronology/Scenario-Timeline.json lore/chronology/Tripothon-Return-Relay-Proposal.json` | exit 0, 2문서 |
+| `node --test scripts/test-lore-json-validate.mjs scripts/test-lore-json-render.mjs scripts/test-timeline-overview.mjs` | exit 0, 192 pass / 0 fail / 0 skip |
+| `SEOUL_KENSHI_ROOT=/Users/stevenshin/Documents/ChatGPT/서울켄시/output/tripothon-game npm run build` | 최종 exit 0, catalog 85, TypeScript와 Vite build 통과 |
+| `node scripts/gate.mjs` | 최종 exit 0, gate PASS, private/banned/coined/retired/broken/exclusion failures 모두 0 |
+| `node scripts/lore-json-validate.mjs --strict` | 최종 exit 0, 102문서, unmigrated Markdown 0 |
+| `node scripts/check-links.mjs` | exit 0, 22 registered paths |
+| `node scripts/check-artifact-allowlist.mjs` | exit 0, 1504 files, 16 routes |
+| `git diff --check` | exit 0 |
+| Node assert 직접 대조 | 기존 timeline 블록 41개 보존, 강남구청↔학동·강남구청↔선정릉 간선 존재, 두 로케일 reviewText의 D298-D/T≥80/지역 ID 존재, 예시 경로 물자 2·긴장도 22 확인 |
+
+생성 결과 확인 경로:
+
+- `src/generated/world/Tripothon-Return-Relay-Proposal.json` → `/world/Tripothon-Return-Relay-Proposal`
+- `src/generated/world-en/Tripothon-Return-Relay-Proposal.json` → `/en/world/Tripothon-Return-Relay-Proposal`
+- `src/generated/world/Scenario-Timeline.json`의 위치 제안 문단.
+
+이는 로컬 공개용 렌더 원천 및 production build 확인이다. 실제 원격 사이트 게시나 브라우저 시각 QA를 수행했다는 뜻이 아니다. 생성물은 커밋하지 않는다. 별도 lint 스크립트는 없으며 스키마·publication gate·TypeScript·diff 검사를 사용했다.
+
+## 중간 실패와 복구
+
+- 최초 gate는 `창작 제안`이라는 금지 편집 표식을 거부했다. 의미와 승인 잠금을 보존한 `미승인 위치 제안`으로 고친 뒤 재생성·gate 통과를 확인했다.
+- validator 테스트는 잠시 Markdown twin fixture를 생성한다. 동시에 실행한 재생성 1회가 `E_MARKDOWN_TWIN:culture/Martial-Paths.md`로 실패했다. 테스트가 정상 종료·fixture 정리한 뒤 **순차** build와 strict 검증이 통과했다. 이 테스트와 generator를 동시에 실행하지 않는다.
+- 생성 JSON은 본문 구조 앵커를 reviewText에 그대로 싣지 않는다. 첫 임시 확인 스크립트의 앵커/문자열 기대를 실제 렌더 계약의 reviewText 문구 검사로 바로잡았다. 마지막 확인은 exit 0이다.
+- 선택 LSP biome은 기존 미설치 상태다. 설치하지 않았다. Vite의 향후 native config 경고와 500kB chunk 경고는 남았으며 빌드 실패는 아니다.
+
+## 미결·반영 상태
+
+로컬 검토용 변경이며 커밋·푸시·PR·소유자 승인·원격 게시·Unity 구현을 하지 않았다. D299 위치, D298-A 분대/장비, D298-B 경제/척도/80 임계, D298-C 시계/판정 매핑, D298-D 조우/정착 조건은 승인 대기다. 기본안은 S16 통행 협상과 귀환이며 S04 전투 세팅은 제공하지 않는다. 수치는 시연 비교용 제안으로 GDD의 K_i·O 공식 입력과 단위가 다르다. 인수 사례는 Unity 실행 테스트가 아니다.
+
+## 독립 검토 후 정산 경계 보강
+
+팀의 `proposal-review.md`에서 명목 Δ의 역산이 제한값 적용 또는 후속 부품 소모 뒤에는 안전하지 않음을 지적했다. 후속 수정은 제안 JSON과 이 검증 기록에 한정했다. 기존 timeline과 동결 원천은 수정하지 않았다.
+
+- 확정 전 미리보기만 교체 가능하다. 미리보기는 원장·자원을 변경하지 않고, 새 선택을 현재 원장에서 다시 계산한다.
+- 한 번 정산한 단계는 교체하지 않는다. 후속 의존·소모가 있으면 특히 취소할 수 없다. 대기 비용 확정 후에는 해당 대기·교섭을 계속하거나 귀환하며, 다른 조건 재시도는 이전 기록을 남긴 새 원정이다.
+- 부품 2개 회수→가동에 모두 소모→회수 선택 교체 거부 사례와 L=9→+2 미리보기 10→+0 미리보기 9 사례를 한영으로 추가했다. 확정된 L=10의 교체도 거부한다. `10-2=8`로 되돌리지 않는다.
+- 소유자 승인·런타임 미구현 경계는 그대로다. 위 사례는 게임 실행 검증이 아니라 구현 인수 명세다.
+
+이 정산 경계 보강 시점의 원천 SHA-256: `d56f24a3426152d3bf8549277b28955fd0545a1900f8a28b83a5f61a88d6799d` (`lore/chronology/Tripothon-Return-Relay-Proposal.json`). 기준 HEAD는 `e83970e8b5796c1f3b428ef58c79a5c1cb48b7f5`로 동일하다. 아래 최신 방향 정렬에서 원천 해시가 갱신된다.
+
+재검증 결과: 대상 JSON 검증 exit 0(1문서), 위와 동일한 환경의 `npm run build` exit 0, `node scripts/gate.mjs` exit 0(PASS), `node --test scripts/test-lore-json-render.mjs` exit 0(177 pass / 0 fail / 0 skip), 두 로케일 공개용 `reviewText`에 추가한 소모·제한값·미리보기 문구 확인 exit 0, `git diff --check` exit 0. 최종 build 완료를 리더에게 전달했으며 브라우저 QA는 리더가 별도로 수행한다.
+
+## 최신 소유자 결정 13·14 정렬
+
+소유자 PR #306의 `Intent.md` 고정 커밋 `5a98964518f0e7110e91ba37e7e9590135be21c1` 원천 스냅샷 `research/2026-09-28/tripothon/sources/intent-5a989645.md`를 읽고 현재 제안만 정렬했다. 해당 PR의 방향 확정과 이 시나리오 위치·분대·수치의 개별 승인은 별개다.
+
+- 결정 14를 현재 이동 권위로 표시했다. #298과 이전 GDD의 동시 턴·턴 제한·턴별 이동력 문구는 활성 방향에서 대체됐다. 플레이어와 AI 모두 세계 시간이 흐르는 동안 경로를 따라 이동한다.
+- 기존 ‘당직→이동 턴’ 매핑을 삭제했다. 당직은 추상 사건 지연 제안이며 실제 세계 시간 길이·예약 시각 매핑은 소유자 승인 전 미정이다. 3간선은 경로 연결 수이고 실거리·속도·경과 시간 수치가 아니다.
+- 결정 13의 개인 공격 판정, 자동/수동 동일 규칙, 교전 전 분대 지시, 근접 교전 중 새 명령 잠금, 전투 전체 후퇴, 전투 결과 정산 전 지도 이동 명령 잠금을 한영으로 명시했다. 기본 원정에 필수 전투를 추가하지 않았다.
+- 이야기 선택·제안 수치와 정확히 한 번 정산, 기존 보강한 정산 경계를 유지했다. 새 속도·거리·전투 수치를 만들지 않았고 기존 bridge/Core/Unity POC를 새 결정의 구현으로 보고하지 않았다. 동결 원천·기존 timeline·관련 없는 GDD는 수정하지 않았다.
+
+최종 제안 원천 SHA-256: `6fa7327938ef0608c0df758a141671647a39ca662ae07c7b1b4a21e01f998589`.
+
+재검증: 대상 JSON schema exit 0(1문서), 같은 `SEOUL_KENSHI_ROOT`의 `npm run build` exit 0(TypeScript 포함), publication gate PASS(exit 0), render tests 177 pass / 0 fail / 0 skip(exit 0), `git diff --check` exit 0. 양쪽 공개용 `reviewText`에서 고정 SHA·AI 세계 시간·전투 전체 후퇴·정산 제한값 사례가 존재하고 옛 당직→이동 턴 매핑이 없음을 직접 assert해 exit 0을 확인했다. 리더에게 최종 build 준비를 통지했으며 원격 게시·Unity 실행·브라우저 QA 완료 주장은 추가하지 않는다.
+
+## 리더의 실제 브라우저 확인 및 표시 정정
+
+같은 원천 해시의 production build를 127.0.0.1:4174에서 열었다. Codex 실제 브라우저에서 한국어 제안 본문, 미승인 위치·수치, 시간 기반 이동·개인 판정 전투, 5+1 선택 표와 성공 조건을 확인했다. English 링크를 눌러 `/wiki/en/world/Tripothon-Return-Relay-Proposal`로 이동한 뒤 같은 승인 경계와 결과 표를 확인했다. 이는 대표 데스크톱 내용·언어 전환 확인이며 다중 플랫폼 QA나 원격 게시 확인이 아니다.
+
+확인 도중 `ArticlePage.tsx`가 모든 글에 `정본/Canon` 배지를 고정 표시해 draft도 확정처럼 보이는 문제를 발견했다. 배지를 중립적인 `세계관 문서/World document`로 변경했다. 기존 문서의 설정 승인 상태는 바꾸지 않는다. 이 문구 변경 뒤 production build(TypeScript 포함), publication gate와 diff 검사 모두 exit 0이다. 브라우저 캡처는 배지 변경 전 관찰 기록이므로 변경 후 배지의 화면 증거로 쓰지 않는다.
+
+자료와 UI 문구는 별도 원자 커밋으로 인계한다. GitHub PR은 검토용이며 main 병합·시나리오 수치 승인·원격 배포 완료와 구분한다.
