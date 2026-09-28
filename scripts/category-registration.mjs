@@ -16,7 +16,7 @@ const atlasProjectionSlugs = new Set([
   'World-Relation-Ledger',
   'External-Theaters',
   'Hostile-Ecology-Index',
-  ...Array.from({ length: 27 }, (_, index) => `Hostile-Group-G${String(index + 1).padStart(2, '0')}`),
+  ...Array.from({ length: 26 }, (_, index) => `Hostile-Group-G${String(index + 1).padStart(2, '0')}`),
 ])
 
 const verifiedAtlasProjection = (document) =>
