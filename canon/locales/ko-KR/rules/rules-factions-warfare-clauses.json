@@ -1,0 +1,2335 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "rules/Rules-FactionsWarfare.md",
+    "lineStart": 1,
+    "lineEnd": 293,
+    "sha256": "040f1ee5874ed9334884ea1870b1794d3504d41e4e8988ae7f1c622594dd520a"
+  },
+  "document": {
+    "id": "doc.Rules-FactionsWarfare",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39",
+      "source.b40",
+      "source.b41",
+      "source.b42",
+      "source.b43",
+      "source.b44",
+      "source.b45",
+      "source.b46",
+      "source.b47",
+      "source.b48",
+      "source.b49",
+      "source.b50",
+      "source.b51",
+      "source.b52",
+      "source.b53",
+      "source.b54",
+      "source.b55",
+      "source.b56",
+      "source.b57",
+      "source.b58",
+      "source.b59",
+      "source.b60",
+      "source.b61",
+      "source.b62",
+      "source.b63",
+      "source.b64",
+      "source.b65",
+      "source.b66",
+      "source.b67",
+      "source.b68",
+      "source.b69",
+      "source.b70",
+      "source.b71",
+      "source.b72",
+      "source.b73",
+      "r2.rwarfare-34",
+      "r2.rwarfare-34.body",
+      "r2.rwarfare-35",
+      "r2.rwarfare-35.body",
+      "r2.rwarfare-36",
+      "r2.rwarfare-36.body",
+      "r2.rwarfare-36.kinds",
+      "r2.rwarfare-36.rules",
+      "r2.rwarfare-37",
+      "r2.rwarfare-37.body",
+      "r2.rwarfare-38",
+      "r2.rwarfare-38.body",
+      "r2.rwarfare-39",
+      "r2.rwarfare-39.body",
+      "r2.rwarfare-40",
+      "r2.rwarfare-40.body",
+      "r2.rwarfare-40.order",
+      "r2.rwarfare-41",
+      "r2.rwarfare-41.body",
+      "r2.rwarfare-41.kits",
+      "source.b74",
+      "source.b75",
+      "source.b76",
+      "source.b77",
+      "source.b78",
+      "source.b79"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "세력과 외교, 전쟁과 공성 규칙"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "blockQuote",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "출처: docs/game-logic/Factions-and-Diplomacy.md, docs/game-logic/Warfare-and-Sieges.md — 계약 수치는 구현 상수를 우선한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개요"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "세력 정치는 호감도 하나가 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개인 신뢰와 대중 평판과 지역별 정통성과 이행 가능한 약속과 집단 불만의 그래프로 관계를 읽는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전쟁은 병력 수 비교가 아니라 접근로와 보급과 사기와 퇴로와 점령 후 유지 능력을 둘러싼 연속 과정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "핵심 수치"
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "table",
+      "header": [
+        "항목",
+        "값",
+        "범위"
+      ],
+      "dividers": [
+        "---",
+        "---:",
+        "---"
+      ],
+      "rows": [
+        [
+          "신뢰 `T[A,B]`",
+          "기본 0",
+          "-100~100"
+        ],
+        [
+          "평판 `R[F,a]`",
+          "기본 0",
+          "-100~100"
+        ],
+        [
+          "정통성 `L[F,n,k]`",
+          "현지 신규 주장 20",
+          "0~100"
+        ],
+        [
+          "정치 자본 `PC`",
+          "기본 0",
+          "0~100"
+        ],
+        [
+          "불만 `G`",
+          "기본 0",
+          "0~100"
+        ],
+        [
+          "결속 `C` (외교)",
+          "기본 0",
+          "0~100"
+        ],
+        [
+          "지렛대 `V`",
+          "기본 0",
+          "0~1"
+        ],
+        [
+          "이행 신뢰도 `Rel`",
+          "`clamp(1 - 0.50*부족 - 0.30*고립 - 0.40*과확장, 0, 1)`",
+          "0~1"
+        ],
+        [
+          "신뢰변화",
+          "`clamp(sum(사건영향 * 신빙성), -25, 25)`",
+          "-25~25"
+        ],
+        [
+          "갱신 신뢰 `T'`",
+          "`clamp(T + 신뢰변화 + 기준선이동, -100, 100)`",
+          "-100~100"
+        ],
+        [
+          "압력",
+          "`clamp(0.45*불만 + 0.35*결속 + 0.20*(100*지렛대), 0, 100)`",
+          "0~100"
+        ],
+        [
+          "일반 회의 비용",
+          "5 정치 자본",
+          "0~100"
+        ],
+        [
+          "긴급 심의 비용",
+          "10 정치 자본",
+          "0~100"
+        ],
+        [
+          "연합 전체 안건",
+          "20 정치 자본",
+          "0~100"
+        ],
+        [
+          "조직화 압력",
+          "40",
+          "0~100"
+        ],
+        [
+          "위기 압력",
+          "70",
+          "0~100"
+        ],
+        [
+          "강제 요구 지렛대",
+          "0.75",
+          "0~1"
+        ],
+        [
+          "일반 협약 재검토",
+          "3주",
+          "1주~12주"
+        ],
+        [
+          "강제 요구 유지",
+          "2주 연속",
+          "—"
+        ],
+        [
+          "전력 `S`",
+          "기본 100",
+          "0~100"
+        ],
+        [
+          "결속 `C` (작전)",
+          "기본 70",
+          "0~100"
+        ],
+        [
+          "보급일 `D`",
+          "기본 3일",
+          "0일~6일"
+        ],
+        [
+          "피로 `F`",
+          "기본 0",
+          "0~100"
+        ],
+        [
+          "접근 용량 `A`",
+          "기본 2파티",
+          "1~3"
+        ],
+        [
+          "방어 엄폐 `V`",
+          "기본 10",
+          "0~30"
+        ],
+        [
+          "압박 `P` · 돌파 `B`",
+          "기본 0",
+          "0~100"
+        ],
+        [
+          "피로계수",
+          "`clamp(1 - F/200, 0.5, 1)`",
+          "0.5~1"
+        ],
+        [
+          "적재계수",
+          "`clamp(1 - max(0, 적재율-80)/100, 0.8, 1)`",
+          "0.8~1"
+        ],
+        [
+          "압박증가",
+          "`clamp(6 + floor((공격작전력-수비작전력)/20) - 고립, 1, 12)`",
+          "1~12"
+        ],
+        [
+          "패주손실",
+          "`clamp(15 + 5*고립 + floor(F/10), 15, 35)`",
+          "15~35"
+        ],
+        [
+          "주둔요구",
+          "`clamp(20 + 10*적대접근로수 + floor(5*과확장), 20, 80)`",
+          "20~80"
+        ],
+        [
+          "고립 단계",
+          "정상 0 / 부분 봉쇄 1 / 완전 차단 2",
+          "0~2"
+        ],
+        [
+          "과확장",
+          "물류 공유 척도",
+          "0~2"
+        ],
+        [
+          "위험 추가 손실",
+          "0",
+          "0~4"
+        ],
+        [
+          "철수 피로",
+          "+15",
+          "0~100"
+        ],
+        [
+          "압박 일일 증가",
+          "6",
+          "1~12"
+        ],
+        [
+          "점령 직후 치안",
+          "20",
+          "0~100"
+        ],
+        [
+          "돌파 문턱",
+          "`P>=40` 뒤 `B` 누적",
+          "—"
+        ],
+        [
+          "무보급 전투 계수",
+          "0.60",
+          "—"
+        ],
+        [
+          "Rel 검산",
+          "부족 0.30 · 고립 0.40 · 과확장 0.50 → 0.53",
+          "—"
+        ],
+        [
+          "압력 검산",
+          "불만 80 · 결속 60 · 지렛대 0.8 → 73",
+          "—"
+        ],
+        [
+          "압박증가 검산",
+          "공격 90 · 수비 78 · 고립 0 → 6",
+          "—"
+        ],
+        [
+          "피로계수 검산",
+          "피로 40 → 0.8",
+          "—"
+        ],
+        [
+          "패주손실 검산",
+          "고립 2 · 피로 70 → 32",
+          "—"
+        ]
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조항"
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-01 정치는 그래프다"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "호감도 하나로 외교를 접지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개인 신뢰와 청중별 평판과 근거별 정통성과 이행 가능한 약속과 집단 불만의 그래프로 판정한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-02 신뢰 T"
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "신뢰 `T[A,B]`의 범위는 -100~100이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기본값은 0이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개인과 기관 사이 협조는 이 값에서 읽는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-03 평판 R"
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "평판 `R[F,a]`의 범위는 -100~100이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기본값은 0이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "청중별 공개 평가만 이 축에 남긴다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-04 정통성 L"
+        }
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "정통성 `L[F,n,k]`의 범위는 0~100이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현지 신규 주장은 20으로 연다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "식량·전력·안전 같은 근거별 승인이 이 값에 묶인다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신앙은 근거 칸 `k`를 잠그거나 연다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-05 정치 자본 PC"
+        }
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "정치 자본 `PC`의 범위는 0~100이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기본값은 0이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "회의와 보증과 연합 행동의 비용으로만 쓴다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-06 불만 결속 지렛대"
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "불만 `G`와 결속 `C`의 범위는 0~100이고 기본값은 0이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "지렛대 `V`의 범위는 0~1이고 기본값은 0이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결속은 집단 행동을 조직하는 능력이고 지렛대는 상대를 강제할 실질 수단이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-07 이행 신뢰도 Rel"
+        }
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "`Rel = clamp(1 - 0.50*부족 - 0.30*고립 - 0.40*과확장, 0, 1)`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "범위는 0~1로 가둔다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "제안 수용과 계약 위험은 이 값에서 읽는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-08 신뢰 갱신"
+        }
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "`신뢰변화 = clamp(sum(사건영향 * 신빙성), -25, 25)`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`T' = clamp(T + 신뢰변화 + 기준선이동, -100, 100)`으로 덮는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "한 번의 사건으로 -25 아래나 25 위를 직접 밀어내지 못한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-09 압력 산식"
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "`압력 = clamp(0.45*불만 + 0.35*결속 + 0.20*(100*지렛대), 0, 100)`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "불만과 결속은 0~100이고 지렛대는 0~1이라 100을 곱해 같은 척도로 맞춘다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "압력의 범위는 0~100이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-10 불가능한 약속"
+        }
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "모든 제안은 먼저 실제 경로와 물자와 권한과 배타 계약 충돌을 검사한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "불가능한 약속은 높은 교섭 능력으로 통과시키지 못한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-11 회의 비용"
+        }
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "일반 회의는 5 정치 자본이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "긴급 심의는 10 정치 자본이고 연합 전체 안건은 20 정치 자본이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "세 비용 모두 0~100 안에 가둔다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b30",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-12 정치 자본의 한계"
+        }
+      ]
+    },
+    {
+      "id": "source.b31",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "정치 자본 지출은 신뢰나 정통성을 직접 바꾸지 못한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "그 값은 지출이 뒷받침한 행동의 기록된 결과로만 바뀐다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b32",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-13 강제 요구 문턱"
+        }
+      ]
+    },
+    {
+      "id": "source.b33",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "조직화 압력은 40이고 위기 압력은 70이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "강제 요구 지렛대는 0.75다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "압력 70 이상과 지렛대 0.75 이상이 2주 연속일 때만 파업·봉쇄·분리를 연다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b34",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-14 협약 재검토"
+        }
+      ]
+    },
+    {
+      "id": "source.b35",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "일반 협약 재검토의 기본은 3주다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "범위는 1주~12주다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b36",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-15 고립과 정통성"
+        }
+      ]
+    },
+    {
+      "id": "source.b37",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "고립은 외부 약속만 약화시킨다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현지 통치의 정통성을 자동으로 깎지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b38",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-16 후계와 동시 제안"
+        }
+      ]
+    },
+    {
+      "id": "source.b39",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "후계자가 바뀌면 개인 약속과 제도 약속을 구분해 재검토한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "새 후계의 성명은 후계·이름 로스터·세계 원장을 따른다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동시 제안은 같은 주간 스냅샷으로 평가한 뒤 명령 ID 순서로 정산한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b40",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-17 Rel 검산"
+        }
+      ]
+    },
+    {
+      "id": "source.b41",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "부족 0.30 고립 0.40 과확장 0.50이면 감점은 0.15와 0.12와 0.20이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`Rel=clamp(1-0.15-0.12-0.20,0,1)=0.53`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신뢰 60이어도 실제 배송 성공률이 53%면 장기 전력 공급 협약은 거부되거나 담보·단계 이행이 붙는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b42",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-18 압력 검산"
+        }
+      ]
+    },
+    {
+      "id": "source.b43",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "불만 80 결속 60 지렛대 0.8이면 `압력=clamp(0.45*80+0.35*60+0.20*(100*0.8),0,100)=73`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "지렛대 0.75 이상과 함께 2주 연속이면 강제 요구가 열린다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패 원인이 제3자 봉쇄이고 사전 통보했다면 신빙성 계수로 신뢰 손실을 줄인다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b44",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-19 전쟁의 축"
+        }
+      ]
+    },
+    {
+      "id": "source.b45",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전쟁은 병력 수 비교가 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "접근로와 보급과 사기와 퇴로와 점령 후 유지 능력의 연속 과정으로 푼다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공성 접근로와 보급과 퇴로는 전략맵 지형과 연결 상태로 계획한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b46",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-20 전력과 결속"
+        }
+      ]
+    },
+    {
+      "id": "source.b47",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "전력 `S`의 범위는 0~100이고 기본값은 100이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "작전 결속 `C`의 범위는 0~100이고 기본값은 70이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전력은 전투 가능 인원·장비이고 결속은 대형 유지와 철수 통제다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b48",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-21 보급일과 피로"
+        }
+      ]
+    },
+    {
+      "id": "source.b49",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "보급일 `D`의 범위는 0~6이고 기본값은 3일이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "피로 `F`의 범위는 0~100이고 기본값은 0이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보급일은 작전 지속 기간이고 피로는 전투 효율과 패주 손실에 붙는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b50",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-22 접근 용량과 엄폐"
+        }
+      ]
+    },
+    {
+      "id": "source.b51",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "접근 용량 `A`의 범위는 1~3이고 기본값은 2파티다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "방어 엄폐 `V`의 범위는 0~30이고 기본값은 10이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "압박 `P`와 돌파 `B`의 범위는 0~100이고 기본값은 0이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b52",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-23 전투 계수"
+        }
+      ]
+    },
+    {
+      "id": "source.b53",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "`피로계수 = clamp(1 - F/200, 0.5, 1)`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`적재계수 = clamp(1 - max(0, 적재율-80)/100, 0.8, 1)`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투는 시작 시 확정된 전투 컨텍스트만 쓰고 종료 결과는 `ResultId`로 한 번만 캠페인에 반영한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b54",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-24 압박 증가"
+        }
+      ]
+    },
+    {
+      "id": "source.b55",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "`압박증가 = clamp(6 + floor((공격작전력-수비작전력)/20) - 고립, 1, 12)`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "압박 일일 증가 기본값은 6이고 범위는 1~12다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "고립은 정상 0 부분 봉쇄 1 완전 차단 2이며 물류 문서를 그대로 쓴다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b56",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-25 패주와 주둔"
+        }
+      ]
+    },
+    {
+      "id": "source.b57",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "`패주손실 = clamp(15 + 5*고립 + floor(F/10), 15, 35)`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`주둔요구 = clamp(20 + 10*적대접근로수 + floor(5*과확장), 20, 80)`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "과확장은 물류의 공유 0~2 척도를 그대로 가져온다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b58",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-26 부가 손실"
+        }
+      ]
+    },
+    {
+      "id": "source.b59",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "위험 추가 손실의 기본값은 0이고 범위는 0~4다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "철수 피로는 +15이며 범위는 0~100이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "점령 직후 치안은 20이고 범위는 0~100이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b60",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-27 무보급"
+        }
+      ]
+    },
+    {
+      "id": "source.b61",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "탄약과 식량을 묶은 보급일이 0이면 전투 계수는 0.60이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "다음 무보급 공성일을 지속하지 못한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b62",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-28 고립의 대가"
+        }
+      ]
+    },
+    {
+      "id": "source.b63",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "고립은 압박 증가를 낮춘다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "철수·패주 손실은 커지고 점령지 수리는 막힌다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b64",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-29 퇴로 검사"
+        }
+      ]
+    },
+    {
+      "id": "source.b65",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "명령 철수는 퇴로 그래프 검사 `LegalFallback`을 통과한 경로가 있을 때만 성립한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "검사에 실패하면 그 철수 명령을 막고 긴급 탈출, 수락이 필요한 항복 또는 사기 패주의 가능성을 남긴다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`LegalFallback` 실패 자체를 패주나 항복으로 바꾸지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b66",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-30 점령의 한계"
+        }
+      ]
+    },
+    {
+      "id": "source.b67",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "점령 승리는 시설 복구와 주민 협력을 자동 부여하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동시 공격은 접근 용량만큼만 완전 전력을 쓰고 나머지는 예비·지원으로 정산한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b68",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-31 상태 전이"
+        }
+      ]
+    },
+    {
+      "id": "source.b69",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "흐름은 접근에서 시작해 공격 명령이면 교전으로 압박 작전이면 봉쇄로 간다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "봉쇄는 `P>=40`과 `B` 누적에서 돌파로 넘긴다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "교전은 `LegalFallback`을 통과한 철수 명령이면 질서 철수, 결속 붕괴로 통제를 잃으면 패주, 제안과 상대 수락이 있으면 수락된 항복으로 끝난다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "포획은 이 종료 상태들과 별개인 전투 뒤 인물별 구금 결과다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b70",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-32 점령 이후"
+        }
+      ]
+    },
+    {
+      "id": "source.b71",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "돌파에서 목표를 확보하면 점령이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "점령 다음은 주둔·수리·협상의 안정화다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b72",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-33 작전 검산"
+        }
+      ]
+    },
+    {
+      "id": "source.b73",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "공격 작전력 90 수비 작전력 78 고립 0이면 `압박증가=clamp(6+floor(12/20),1,12)=6`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공격대 피로 40이면 피로계수는 `clamp(1-0.2,0.5,1)=0.8`이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "같은 공격대가 고립 2 피로 70으로 패주하면 `패주손실=clamp(15+10+7,15,35)=32`다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-34",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-34 배신의 세 조건"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-34.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "배신은 위반할 조약이나 개인 맹세가 있고, 이름 있는 인물이 그 위반을 명령하거나 독단으로 실행하고, 그 인물이 알고 있던 촉발 사건과 동기가 있을 때만 성립한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "세 조건 가운데 하나라도 빠지면 배신이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-35",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-35 독단 공격과 국가 전쟁"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-35.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "군령관이 수장의 명령 없이 벌인 공격은 그 자체로 국가 사이의 전쟁을 열지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수장은 공격자를 처벌하고 배상할지, 공격을 사후 승인해 공식 전쟁으로 삼을지 결정한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-36",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-36 플레이어 정치 개입과 미시 기록"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-36.body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+        "text": "플레이어 인물이 다른 인물에게 하는 아래 정치 행위는 국가 관계 수치를 직접 바꾸지 않고 여섯 종류의 미시 기록으로 남는다."
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-36.kinds",
+      "kind": "table",
+      "header": [
+        "행위",
+        "기록 종류",
+        "대상"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "면담",
+          "`talk`",
+          "인물"
+        ],
+        [
+          "물자·통행·포로·기록 거래",
+          "`trade`",
+          "인물 또는 직위"
+        ],
+        [
+          "후계 공개 지지·실격",
+          "`heir-stance`",
+          "후보"
+        ],
+        [
+          "조약 호송",
+          "`escort`",
+          "서명자"
+        ],
+        [
+          "소문 반증·폭로",
+          "`rumour`",
+          "인물 또는 직위"
+        ],
+        [
+          "쿠데타 지원·경고",
+          "`plot`",
+          "주도자"
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-36.rules",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "면담은 상대의 공개·비공개 동기를 알아내는 행위다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "한 줄에는 원인 ID, 세계 시간, 주체, 대상, 크기, 규칙 판본을 적으며 크기는 정수다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "플레이어가 직위를 얻으면 그 직위의 제안자·승인자·거부권자로 행동한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신뢰·정통성을 직접 올리거나 전쟁 사건을 강제로 여는 명령은 없다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개입 결과로 관계가 바뀌어도 관계 원장의 지휘 간선은 자동으로 사라지지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-37",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-37 국가와 인물"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-37.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "국가는 인물과 계약을 담는 그릇이며 스스로 행동하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "제안·승인·거부는 이름 있는 인물이 자기 야망에 따라 한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "국가에 고정 성격이나 배신 확률을 두지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "작위·봉신·왕조 규칙은 인물의 야망·공포·관계·기억 칸을 바꾸지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-38",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-38 봉신 계약"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-38.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "봉신은 국가 관계 수치가 아니라 서명자와 조항을 가진 계약으로 성립한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "계약 한 줄에는 상급·하급 작위, 양측 제안자·서명자·비준자, 직위 귀속과 인물 귀속의 구분, 급수·통행·배급·호송·기록 인준·소집 가운데 실제로 이행할 조항을 적는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공개 신앙을 적고, 숨은 신앙은 비공개 원장에만 둔다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "양측 `CultureKey`, 헌납·소각·가동·기름·순례 가운데 실제로 출석할 의례 조항, 혼합 계약과 개종 압력의 구분, 서명자가 죽거나 직위를 잃을 때의 자동 유지·재비준·종료 가운데 하나를 함께 적는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공개 신앙·문화 키·의례 달력이 빠진 계약은 재비준 쟁점을 연다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "같은 물자를 두 계약에 동시에 묶거나 같은 유물을 두 사당에 동시에 둘 수 없다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "소집 조항은 전투 병력을 불러내지 않고 동원 명부·무기고 열쇠·탈영 장부를 누구에게 열지만 정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "상인 생업자에게 소집을 거는 계약은 거부된다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보호국은 권역사와 권역사 사이의 봉신 계약이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수장이 직접 쥔 역은 직할, 이름 있는 봉신에게 준 역은 위임이다. 위임을 거두지 않은 채 유물만 빼면 배신 쟁점이 열린다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신앙 가족이 다른 봉신 계약은 혼합 계약이 기본이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-39",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-39 혼합 계약"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-39.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "혼합 계약은 두 제례를 한 줄에 함께 기록한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "한쪽 제례를 지우면 계약 위반이며 RWARFARE-34의 배신 판정 대상이 된다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "이주민 회랑의 제례 키를 다섯 권역 문화 키로 덮어쓰지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-40",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-40 계승 순서"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-40.body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계승은 혈통 하나로 정하지 않는다. 후보는 아래 순서로 본다."
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-40.order",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "지정 후계자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "부수장 또는 대행자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선거와 평의회 추대"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "친족과 양자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사제와 도제"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "직능 길드 추천"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "군사적 거점 통제"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-41",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-41 문화 정체 키트"
+        }
+      ]
+    },
+    {
+      "id": "r2.rwarfare-41.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "문화 정체 키트의 가산 수치는 설계 가정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "가산은 제안 평가의 가중치로만 쓰며 제안을 자동 승인하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "키트별 정치 효과는 아래 표를 따른다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r2.rwarfare-41.kits",
+      "kind": "table",
+      "header": [
+        "키",
+        "정치 효과"
+      ],
+      "dividers": [
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "`west-sluice`",
+          "봉신에게 물 할당과 헌납례를 조항으로 요구하고 지정 유언에 이행 기록을 붙임"
+        ],
+        [
+          "`center-record`",
+          "작위 수여에 기록 인준과 유물 열람이 없으면 권역 전체에 무효"
+        ],
+        [
+          "`north-refuge`",
+          "강제복무 조항이 있는 봉신을 거부하고 양자·사제가 혈족보다 앞설 수 있음"
+        ],
+        [
+          "`east-caravan`",
+          "보호 명분으로 하위 작위 회수가 열리기 쉽고 `plot` 임계가 낮아짐"
+        ],
+        [
+          "`southeast-ration`",
+          "작위보다 조정권이 후계를 가름하고 소집 조항을 거의 안 받음"
+        ]
+      ]
+    },
+    {
+      "id": "source.b74",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "판정 순서"
+        }
+      ]
+    },
+    {
+      "id": "source.b75",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "실제 경로와 물자와 권한과 배타 계약 충돌을 먼저 검사한다. 불가능한 약속은 여기서 끊는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`Rel`을 `clamp(1 - 0.50*부족 - 0.30*고립 - 0.40*과확장, 0, 1)`로 구한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신뢰변화와 `T'`를 자른 뒤 평판과 정통성을 같은 주간 스냅샷으로 읽는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정치 자본 비용을 뺀다. 일반 회의 5 긴급 심의 10 연합 전체 안건 20이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "압력을 계산한다. 70 이상과 지렛대 0.75 이상이 2주 연속일 때만 강제 요구를 연다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동시 제안은 같은 주간 스냅샷으로 평가한 뒤 명령 ID 순서로 정산한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "공성 접근로와 보급과 퇴로를 전략맵 지형과 연결 상태로 고정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "시작 시 확정된 전투 컨텍스트만 쓴다. 보급일 0이면 전투 계수 0.60을 넣고 다음 무보급 공성일을 막는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "접근 용량 안에서만 완전 전력을 투입한다. 나머지는 예비·지원이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "압박증가와 피로계수와 적재계수를 적용한다. `P>=40`과 `B` 누적에서 돌파를 연다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`LegalFallback`을 통과한 경로가 있을 때만 명령 철수를 허용한다. 실패하면 철수 명령을 막되 긴급 탈출, 수락된 항복과 사기 패주를 각각 별도 가능성으로 판정한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "종료 결과는 `ResultId`로 한 번만 캠페인에 반영한다. 점령 승리에 시설 복구와 주민 협력을 자동으로 붙이지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "주둔요구를 계산하고 점령 직후 치안 20에서 안정화를 연다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b76",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "금지 사항"
+        }
+      ]
+    },
+    {
+      "id": "source.b77",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "호감도 하나로 외교를 접지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "불가능한 약속을 교섭 능력으로 통과시키지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정치 자본 지출로 신뢰나 정통성을 직접 바꾸지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "압력 70과 지렛대 0.75가 2주 연속이 아닌데 강제 요구를 열지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "고립으로 현지 정통성을 자동으로 깎지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후계 교체 때 개인 약속과 제도 약속을 한 덩어리로 덮지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동시 제안의 난수를 다시 굴려 순서를 바꾸지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "병력 수 비교만으로 전쟁을 닫지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보급일 0에서 다음 무보급 공성일을 지속하지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`LegalFallback` 실패를 질서 철수, 자동 패주 또는 자동 항복으로 처리하지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명령 철수, 사기 패주, 수락된 항복과 포획을 같은 상태로 합치지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "점령 승리에 시설 복구와 주민 협력을 자동 부여하지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "접근 용량을 넘는 동시 공격에 완전 전력을 주지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 결과를 `ResultId` 없이 두 번 반영하지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "설계 가정 수치를 구현 상수보다 앞세우지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "고립 단계 0~2와 과확장 0~2를 다른 범위로 바꾸지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "국가에 고정 성격, 영원한 동맹, 배신 확률을 두지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "충성·경건 슬라이더나 정통성을 직접 올리는 명령을 두지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "혈통만의 왕조나 무명 지도자 자동 생성을 두지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "영토만으로 작위를 인준하거나 유물 없는 통합을 완성으로 보지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "신앙 칸과 의례 달력 없는 봉신 계약을 성립시키지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "옛 국가 제도의 부활을 승리 결말로 두지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "서울 밖 고유 신앙명과 작위명을 그대로 옮기지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "문화 키를 국가 ID로 바꿔 쓰지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "병과 관습으로 전투 규칙을 고치지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "상인 생업자에게 소집을 강제하지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기록청을 병영으로 만들어 `법통`을 유지하지 말 것"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "분열 행렬의 교차 칸을 플레이어가 직접 고치는 명령을 두지 말 것"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b78",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "출처"
+        }
+      ]
+    },
+    {
+      "id": "source.b79",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`LORE/factions/Factions-and-Diplomacy.md` — 입력 축과 Rel·신뢰·압력 공식과 회의 비용과 강제 요구 문턱. 본문 표기는 설계 가정."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[전쟁·공성](Warfare-and-Sieges.md) — 작전 입력과 전투 계수와 압박·패주·주둔 공식, `LegalFallback`과 종료 상태 분리. 본문 표기는 설계 가정."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수치 충돌: 외교 결속 `C` 기본값 0과 작전 결속 `C` 기본값 70은 도메인이 다르다. 같은 계약 값이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "계약·잠긴 표기는 두 원문에 없었다. 구현 상수가 생기면 그 값을 우선한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "검산 고정: Rel 0.53. 압력 73. 압박증가 6. 피로계수 0.8. 패주손실 32."
+          }
+        ]
+      ]
+    }
+  ]
+}

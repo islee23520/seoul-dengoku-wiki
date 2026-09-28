@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
   "locale": "ko-KR",
+  "source": {
+    "path": "adr/ADR-002-character-candidate-retrospective.md",
+    "sha256": "131249858dc513cb99f8b47923d3cf1c085d75274752bd72f891158ba5247a6e"
+  },
   "document": {
     "id": "doc.ADR-002",
     "blockIds": [
@@ -105,12 +109,6 @@
           {
             "kind": "text",
             "text": "Unity 6000.7.0a5 batchmode: 격리 경로 Assets/Janseon/ArtCandidates/Characters import 279텍스처(원본 RGBA 동일, 576x2560 다운스케일 없음), runtime Art 경로 쓰기 거부."
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "실제 PlayMode: Animator + AnimationClipPlayable 구동으로 276프레임/60클립 전체 캡처, NUnit 1/1 exit 0, 카메라 pitch 35.264 yaw 45 orthographic."
           }
         ],
         [

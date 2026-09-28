@@ -1,0 +1,32 @@
+{
+  "name": "seoul-dengoku-gdd-viewer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "generate": "node scripts/generate-catalog.mjs",
+    "build": "npm run generate && tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "test": "node --test scripts/test-contract.mjs"
+  },
+  "dependencies": {
+    "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
+    "mermaid": "^11.17.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^7.18.4",
+    "remark-gfm": "^4.0.0",
+    "@seoul-dengoku/document-renderer": "file:./vendor/seoul-dengoku-document-renderer-0.1.2.tgz",
+    "@seoul-dengoku/shared-web-ui": "file:./vendor/seoul-dengoku-shared-web-ui-0.1.2.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "typescript": "^5.5.3",
+    "vite": "^8.3.0"
+  }
+}

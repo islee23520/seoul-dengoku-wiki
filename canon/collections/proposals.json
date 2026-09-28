@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "domain": "proposals",
+  "locale": "ko-KR",
+  "documents": [
+    {
+      "id": "doc.Narrative-Direction",
+      "path": "locales/ko-KR/proposals/narrative-direction.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "proposals/Narrative-Direction.md",
+        "lineStart": 1,
+        "lineEnd": 100,
+        "sha256": "ff59869678ce4084cb543a95161e22209a2ba266e183cf7df780cd321620a66f"
+      }
+    },
+    {
+      "id": "doc.Scenario-Hold-the-Gate",
+      "path": "locales/ko-KR/proposals/scenario-hold-the-gate.json",
+      "locale": "ko-KR",
+      "status": "proposal",
+      "source": {
+        "path": "proposals/Scenario-Hold-the-Gate.md",
+        "lineStart": 1,
+        "lineEnd": 160,
+        "sha256": "817a0a1b6cacc017344d09c9785ac4eba05eb8686a3ec6277fde4befd3361c38"
+      }
+    }
+  ]
+}

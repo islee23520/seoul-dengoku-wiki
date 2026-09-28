@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "domain": "architecture",
+  "locale": "ko-KR",
+  "documents": [
+    {
+      "id": "doc.Unity-Architecture-Implementation-Plan",
+      "path": "locales/ko-KR/architecture/unity-architecture-implementation-plan.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "architecture/Unity-Architecture-Implementation-Plan.md",
+        "lineStart": 1,
+        "lineEnd": 168,
+        "sha256": "ee8ba009ceb893e45b75e884ba9aeddf8621739f48cc6a070d22ee2b4147cb13"
+      }
+    },
+    {
+      "id": "doc.Unity-Architecture",
+      "path": "locales/ko-KR/architecture/unity-architecture.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "architecture/Unity-Architecture.md",
+        "lineStart": 1,
+        "lineEnd": 39,
+        "sha256": "accc72366a8699ba8009b94e0feb227e32f174d78737bb53d340c0e217aa7419"
+      }
+    },
+    {
+      "id": "doc.Unity-System-Design",
+      "path": "locales/ko-KR/architecture/unity-system-design.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "architecture/Unity-System-Design.md",
+        "lineStart": 1,
+        "lineEnd": 209,
+        "sha256": "f5b5f59a55137de3d3673262a7266d07409548afacfee941cc43a09fa4625363"
+      }
+    }
+  ]
+}
