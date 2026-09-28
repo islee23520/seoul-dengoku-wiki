@@ -11,7 +11,7 @@ The root atlas (`World-Narrative-Atlas.json`) owns machine registries and genera
 | Change atlas registry facts | `World-Narrative-Atlas.json`; edit generated pages only through the renderer |
 | Corpus TOC | `README.md` (Korean, relative links, links into all subdirs) |
 | Hostile groups G01–G26 | `bestiary/Hostile-Ecology-Index.json` → `bestiary/groups/Hostile-Group-Gxx.json`; each group page owns ecology, scenarios and every GxxEyy entry |
-| Bestiary entries `GxxEyy` | Group pages contain all 328 authored entries (infected stages G19–G24 keep three each); Mxxx remains source provenance inside each entry and no batch body page is published |
+| Bestiary entries `GxxEyy` | Group pages contain all 250 authored entries (human groups G07–G12 and infected stages G19–G24 keep three each); Mxxx remains source provenance inside each entry and no batch body page is published |
 | Steward houses | `Operating-Houses.json` (corporate HC01–HC22 + civic HP01–HP10) |
 | Synthetics | `Synthetic-Actors.json` (humanoid H / facility F / mobile V, 16 each) |
 | Narrative arcs | `Regional-Physical-AI-Arcs.json` (`ARC-*` three-act outlines per house/region) |
