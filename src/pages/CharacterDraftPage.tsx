@@ -99,6 +99,25 @@ export default function CharacterDraftPage() {
     URL.revokeObjectURL(url)
     setMessage('검토용 초안을 내보냈습니다. 정본 변경과 K ID 발급은 별도 승인 절차입니다.')
   }
+  const issue = () => {
+    if (!fields.name.trim()) { setMessage('이슈를 작성하기 전에 이름을 입력하세요.'); return }
+    const lines = [
+      '## 목적',
+      `${selected ? '기존 인물 수정' : '새 인물 등록'} 요청: ${fields.name}`,
+      '',
+      '## 정본 대조',
+      selected ? `원본: ${original?.detailRoute ?? selected} (원본 해시 검증은 로컬 도구에서 수행)` : '새 인물 후보. K ID는 발급 전이다.',
+      '',
+      '## 변경 제안',
+      ...fieldOrder.map((key) => `- ${fieldLabels[key]}: ${fields[key] || '(비어 있음)'} · ${provenance[key]?.kind ?? 'user'}${provenance[key]?.source ? ` · ${provenance[key]?.source}` : ''}`),
+      '',
+      '## 검증과 승인',
+      '이슈의 내용은 초안이며 정본 변경·인물 ID 발급·승인을 뜻하지 않는다. 「초안 내보내기」로 받은 JSON 파일을 이슈에 직접 첨부하고 근거와 한국어/영어 병기를 검토한다.',
+    ]
+    const params = new URLSearchParams({ title: `[인물] ${fields.name} ${selected ? '수정' : '등록'} 요청`, body: lines.join('\n') })
+    window.open(`https://github.com/islee23520/seoul-dengoku-wiki/issues/new?${params}`, '_blank', 'noopener,noreferrer')
+    setMessage('GitHub 이슈 작성 화면을 열었습니다. 내용을 검토한 뒤 직접 등록하세요.')
+  }
   const importFile = async (file: File) => {
     try {
       const draft = readDraft(JSON.parse(await file.text()))
@@ -121,7 +140,7 @@ export default function CharacterDraftPage() {
       <header className="wiki-article-header"><div><p className="wiki-domain-label">서울:전국 공식 위키 · 인물 도구</p><h1>인물 시트 초안</h1><p>정본의 인물 정보를 읽고 새 설정을 검토합니다. 저장되는 파일은 승인 전 초안입니다.</p></div><span className="wiki-canon-badge">초안</span></header>
       <div className="sheet-editor-layout">
         <aside className="sheet-editor-list" aria-label="기존 인물 선택"><h2>기존 인물</h2><label>인물 검색<input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="이름·생업·나라" /></label><button type="button" onClick={newDraft}>새 인물 초안</button><ul>{people.map((person) => <li key={person.id}><button type="button" aria-pressed={selected === person.id} onClick={() => choose(person.id)}>{person.name}<small>{person.stateName || '무소속'} · {person.occupation}</small></button></li>)}</ul><p className="wiki-domain-label">최대 100명 표시 · 검색으로 좁혀 주세요.</p></aside>
-        <div className="sheet-editor-work"><div className="sheet-editor-toolbar"><span>{selected ? `원본 ${selected}` : '새 인물'} · 수정 {revision}</span>{original && <Link to={original.detailRoute}>원본 카드 보기</Link>}<button type="button" onClick={example}>AI 예시 보기</button><button type="button" onClick={() => upload.current?.click()}>JSON 불러오기</button><button type="button" onClick={download}>초안 내보내기</button><input ref={upload} type="file" accept="application/json,.json" hidden onChange={(event) => { const file = event.target.files?.[0]; if (file) void importFile(file); event.target.value = '' }} /></div>
+        <div className="sheet-editor-work"><div className="sheet-editor-toolbar"><span>{selected ? `원본 ${selected}` : '새 인물'} · 수정 {revision}</span>{original && <Link to={original.detailRoute}>원본 카드 보기</Link>}<button type="button" onClick={example}>AI 예시 보기</button><button type="button" onClick={() => upload.current?.click()}>JSON 불러오기</button><button type="button" onClick={download}>초안 내보내기</button><button type="button" onClick={issue}>검토 이슈 작성</button><input ref={upload} type="file" accept="application/json,.json" hidden onChange={(event) => { const file = event.target.files?.[0]; if (file) void importFile(file); event.target.value = '' }} /></div>
           <p role="status" aria-live="polite" className="sheet-editor-status">{message || '필드를 선택해 입력하거나 기존 인물을 복사하세요.'}</p>
           <div className="sheet-editor-fields">
             {fieldOrder.map((key) => <section key={key}><label htmlFor={`sheet-${key}`}>{fieldLabels[key]}</label>{key === 'affiliation' || key === 'livelihood' ? <><input id={`sheet-${key}`} value={fields[key]} onChange={(event) => change(key, event.target.value)} list={`sheet-${key}-options`} /><datalist id={`sheet-${key}-options`}>{(key === 'affiliation' ? stateOptions : livelihoodOptions).map((value) => <option value={value} key={value} />)}</datalist></> : key === 'name' ? <input id={`sheet-${key}`} value={fields[key]} onChange={(event) => change(key, event.target.value)} /> : <textarea id={`sheet-${key}`} rows={key === 'backstory' ? 5 : 3} value={fields[key]} onChange={(event) => change(key, event.target.value)} /> }<small>{provenance[key]?.kind === 'canon' ? '정본에서 복사됨' : provenance[key]?.kind === 'ai-example' ? 'AI 예시를 수락함 · 사실 검토 필요' : '사용자 입력'}{provenance[key]?.source && ` · ${provenance[key]?.source}`}</small></section>)}
