@@ -35,6 +35,7 @@
     "test:atlas": "node --test scripts/test-world-atlas.mjs",
     "test:person-id": "node --test lore/name-pools/verify-person-id-candidates.mjs lore/name-pools/verify-person-id-registry.mjs",
     "test:mongo-load": "node --test scripts/test-mongo-load.mjs",
+    "test:gurps": "node --test scripts/test-gurps-cast.mjs",
     "db:load": "node scripts/mongo-load.mjs"
   },
   "dependencies": {
