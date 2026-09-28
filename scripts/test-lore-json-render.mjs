@@ -95,7 +95,7 @@ test('published hangnyeol counts match the clan register and issued cast', () =>
   assert.equal(names.size, cast.people.length)
   assert.equal(assigned.size, clan.people.length)
   for (const name of assigned) assert.ok(names.has(name), name)
-  const statuses = ['applied', 'unconfirmed', 'unused']
+  const statuses = ['applied', 'inferred', 'free', 'unused']
   const table = page.content.find((block) => block.anchor === '캐스트-적용-결과-table3')
   assert.deepEqual(table.rows.map((row) => row[1].ko), statuses.map((status) => String(clan.people.filter((person) => person.status === status).length)))
   const summary = page.content.find((block) => block.anchor === '캐스트-적용-결과-p1').text
