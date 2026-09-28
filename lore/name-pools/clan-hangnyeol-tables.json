@@ -1040,6 +1040,16 @@
       "quote": "33世 O燮(섭)",
       "evidence": "Research/verification/hangnyeol/raw/jeonui-lee-cheonggang-hangnyeol.md",
       "live_check": "unchecked"
+    },
+    {
+      "id": "s-census-r0275",
+      "record_id": "census-r0275",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[신 (성씨)|신]]'''(愼)||51,865||45,764||40,772||align=left|'''[[거창 신씨|거창]]'''(居昌)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
     }
   ],
   "clans": [
@@ -3260,6 +3270,78 @@
           "position": "second"
         }
       ]
+    },
+    {
+      "id": "c2e0-ac70-cc3d-613c",
+      "surname": "신",
+      "bongwan": "거창",
+      "bongwan_hanja": "居昌",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0275"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c815-c9c4-c591-912d",
+      "surname": "정",
+      "bongwan": "진양",
+      "bongwan_hanja": "晉陽",
+      "surname_hanja": "鄭",
+      "branch": "unconfirmed",
+      "provenance": "creative",
+      "creative_rationale": "개막 세대 수장 잠금표가 태욱그룹 회장 정서온의 본관으로 정한 진양 정씨다. 센서스 대표 본관 표에는 없어 실존 출처를 붙이지 않는다.",
+      "method_ref": "munjung-banpo",
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "잠금표는 개막 세대 오행(金)만 정하고 세수·항렬자는 정하지 않았다."
+    },
+    {
+      "id": "c784-b300-b9bc-6797",
+      "surname": "임",
+      "bongwan": "대림",
+      "branch": "귀화 본관",
+      "provenance": "creative",
+      "creative_rationale": "린샤오메이이 임소매로 등록해 대림에 정착한 뒤 새로 연 귀화 본관. 실존 본관 대장에 없는 새 본관이다.",
+      "method_ref": "munjung-banpo",
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "귀화로 새로 연 본관이라 이어 온 항렬표가 없다.",
+      "surname_hanja": "林"
+    },
+    {
+      "id": "bc94-ad6c-b85c-8303",
+      "surname": "범",
+      "bongwan": "구로",
+      "branch": "귀화 본관",
+      "provenance": "creative",
+      "creative_rationale": "팜반득이 범반득으로 등록해 구로에 정착한 뒤 새로 연 귀화 본관. 실존 본관 대장에 없는 새 본관이다.",
+      "method_ref": "munjung-banpo",
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "귀화로 새로 연 본관이라 이어 온 항렬표가 없다.",
+      "surname_hanja": "范"
+    },
+    {
+      "id": "ce74-c2ec-c774-d0dc-c6d0",
+      "surname": "카심",
+      "bongwan": "이태원",
+      "branch": "귀화 본관",
+      "provenance": "creative",
+      "creative_rationale": "아미라 카심이 이태원 통행 골목에 정착한 뒤 새로 연 귀화 본관. 실존 본관 대장에 없는 새 본관이다.",
+      "method_ref": "munjung-banpo",
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "귀화로 새로 연 본관이라 이어 온 항렬표가 없다."
+    },
+    {
+      "id": "c720-c218-d3ec-bc14-c790-c591",
+      "surname": "유수포바",
+      "bongwan": "자양",
+      "branch": "귀화 본관",
+      "provenance": "creative",
+      "creative_rationale": "나르기즈 유수포바이 자양·건대 하숙에 정착한 뒤 새로 연 귀화 본관. 실존 본관 대장에 없는 새 본관이다.",
+      "method_ref": "munjung-banpo",
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "귀화로 새로 연 본관이라 이어 온 항렬표가 없다."
     },
     {
       "id": "ac15-c9c4-c8fc-agreed-c720-second",
