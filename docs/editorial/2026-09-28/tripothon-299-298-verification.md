@@ -79,3 +79,5 @@ GDD 참조 HEAD: `e4b14cac11314c47da23b8e04eb4c4e336ffc3e6`.
 확인 도중 `ArticlePage.tsx`가 모든 글에 `정본/Canon` 배지를 고정 표시해 draft도 확정처럼 보이는 문제를 발견했다. 배지를 중립적인 `세계관 문서/World document`로 변경했다. 기존 문서의 설정 승인 상태는 바꾸지 않는다. 이 문구 변경 뒤 production build(TypeScript 포함), publication gate와 diff 검사 모두 exit 0이다. 브라우저 캡처는 배지 변경 전 관찰 기록이므로 변경 후 배지의 화면 증거로 쓰지 않는다.
 
 자료와 UI 문구는 별도 원자 커밋으로 인계한다. GitHub PR은 검토용이며 main 병합·시나리오 수치 승인·원격 배포 완료와 구분한다.
+
+마지막 표시 교정: 한국어 표의 두 범위 `-10~10`, `0~100`이 GFM의 취소선으로 이어질 수 있어 `-10부터 10까지`, `0부터 100까지`로 풀어 썼다. 수치는 동일하다. 재빌드·TypeScript·publication gate exit 0, 생성된 제안의 `delete` 노드 0개를 확인했다. 최종 원천 SHA-256은 `78bae3d8493e709fe7ea5ea6a648494ef00723b47d7aae7197cc0cd855014f65`다. 이전 캡처는 앞선 동일 의미 제안의 관찰 기록이며 이 표시 교정 이후 캡처로 재분류하지 않는다.
