@@ -1,7 +1,8 @@
+export const koText = (leaf) => typeof leaf === 'string' ? leaf : leaf.map((run) => run.text).join('')
+
 // A year is a `### YYYY년` heading in the annals; its paragraphs run until the next year or era heading,
 // so every entry links to an anchor that exists on the Century-Annals page.
 export function buildTimelineYears(content, relatedDocuments) {
-  const koText = (leaf) => typeof leaf === 'string' ? leaf : leaf.map((run) => run.text).join('')
   const firstSentence = (text) => text.match(/^.*?[.!?](?:\s|$)/u)?.[0]?.trim() ?? text.trim()
   const byYear = new Map()
   const theaterChronicleYears = new Set()

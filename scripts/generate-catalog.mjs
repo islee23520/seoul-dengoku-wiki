@@ -14,7 +14,7 @@ import { wikiPublicationManifest } from './publication-manifest.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
 import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
-import { buildTimelineYears } from './timeline-overview.mjs'
+import { buildTimelineYears, koText } from './timeline-overview.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
