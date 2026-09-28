@@ -29,12 +29,12 @@
   "locales": {
     "en": {
       "title": "Rail Station Catalog Connected to Seoul",
-      "summary": "334 stations within Seoul and 595 additional station nodes on physically connected railway tracks",
+      "summary": "334 stations within Seoul and 610 additional station nodes on physically connected railway tracks",
       "tense": "past"
     },
     "ko": {
       "title": "서울 연결 철도 역 카탈로그",
-      "summary": "서울 안 334곳과 서울 선로에 연결된 외부 역 595곳의 위치 카탈로그",
+      "summary": "서울 안 334곳과 서울 선로에 연결된 외부 역 610곳의 위치 카탈로그",
       "tense": "past"
     }
   },
@@ -8366,8 +8366,8 @@
       "kind": "paragraph",
       "anchor": "서울-연결-철도망-p1",
       "text": {
-        "ko": "아래 역은 서울에서 물리적으로 이어지는 선로의 역 위치다. 선로 연결은 2126년 통행이나 거주를 확정하지 않는다. OpenStreetMap 2026-09-24 추출본(ODbL 1.0)의 개별 역 노드를 따른다.",
-        "en": "The stations below lie on tracks physically connected to Seoul. Track continuity does not establish passage or habitation in 2126. Individual station nodes come from the OpenStreetMap 2026-09-24 extract (ODbL 1.0)."
+        "ko": "아래 역은 서울에서 물리적으로 이어지는 선로의 역 위치다. 선로 연결은 2126년 통행이나 거주를 확정하지 않는다. OpenStreetMap 2026-09-24 추출본(ODbL 1.0)의 개별 역 노드를 따른다. 선로에서 250m 이내 역과 해남역(257m, 역 노드 확인)을 수록했다.",
+        "en": "The stations below lie on tracks physically connected to Seoul. Track continuity does not establish passage or habitation in 2126. Individual station nodes come from the OpenStreetMap 2026-09-24 extract (ODbL 1.0). Stations within 250m of the track and Haenam station (257m, verified station node) are included."
       }
     },
     {
@@ -9208,6 +9208,32 @@
         ],
         [
           {
+            "ko": "고래불",
+            "en": "Goraebul"
+          },
+          {
+            "ko": "Goraebul",
+            "en": "Goraebul"
+          },
+          {
+            "ko": "36.60257",
+            "en": "36.60257"
+          },
+          {
+            "ko": "129.40617",
+            "en": "129.40617"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n11731499812",
+            "en": "n11731499812"
+          }
+        ],
+        [
+          {
             "ko": "고색",
             "en": "Gosaek"
           },
@@ -9676,6 +9702,32 @@
         ],
         [
           {
+            "ko": "광천",
+            "en": "Gwangcheon"
+          },
+          {
+            "ko": "Gwangcheon",
+            "en": "Gwangcheon"
+          },
+          {
+            "ko": "36.50176",
+            "en": "36.50176"
+          },
+          {
+            "ko": "126.62241",
+            "en": "126.62241"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n368636861",
+            "en": "n368636861"
+          }
+        ],
+        [
+          {
             "ko": "괴목",
             "en": "괴목"
           },
@@ -10092,6 +10144,32 @@
         ],
         [
           {
+            "ko": "군위",
+            "en": "Gunwi"
+          },
+          {
+            "ko": "Gunwi",
+            "en": "Gunwi"
+          },
+          {
+            "ko": "36.16096",
+            "en": "36.16096"
+          },
+          {
+            "ko": "128.74572",
+            "en": "128.74572"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n11953618205",
+            "en": "n11953618205"
+          }
+        ],
+        [
+          {
             "ko": "군포",
             "en": "Gunpo"
           },
@@ -10218,6 +10296,32 @@
           {
             "ko": "n9513182410",
             "en": "n9513182410"
+          }
+        ],
+        [
+          {
+            "ko": "근덕",
+            "en": "Geundeok"
+          },
+          {
+            "ko": "Geundeok",
+            "en": "Geundeok"
+          },
+          {
+            "ko": "37.31364",
+            "en": "37.31364"
+          },
+          {
+            "ko": "129.27887",
+            "en": "129.27887"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n12237832353",
+            "en": "n12237832353"
           }
         ],
         [
@@ -10530,6 +10634,32 @@
           {
             "ko": "n6050654952",
             "en": "n6050654952"
+          }
+        ],
+        [
+          {
+            "ko": "나전",
+            "en": "나전"
+          },
+          {
+            "ko": "나전",
+            "en": "나전"
+          },
+          {
+            "ko": "37.44978",
+            "en": "37.44978"
+          },
+          {
+            "ko": "128.66843",
+            "en": "128.66843"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n4693461949",
+            "en": "n4693461949"
           }
         ],
         [
@@ -12952,6 +13082,32 @@
         ],
         [
           {
+            "ko": "목행",
+            "en": "Mokhaeng"
+          },
+          {
+            "ko": "Mokhaeng",
+            "en": "Mokhaeng"
+          },
+          {
+            "ko": "37.01670",
+            "en": "37.01670"
+          },
+          {
+            "ko": "127.93272",
+            "en": "127.93272"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n368637081",
+            "en": "n368637081"
+          }
+        ],
+        [
+          {
             "ko": "몽탄",
             "en": "Mongtan"
           },
@@ -13052,6 +13208,32 @@
           {
             "ko": "n8829216791",
             "en": "n8829216791"
+          }
+        ],
+        [
+          {
+            "ko": "문곡",
+            "en": "Mungok"
+          },
+          {
+            "ko": "Mungok",
+            "en": "Mungok"
+          },
+          {
+            "ko": "37.15175",
+            "en": "37.15175"
+          },
+          {
+            "ko": "128.98986",
+            "en": "128.98986"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n4779079334",
+            "en": "n4779079334"
           }
         ],
         [
@@ -16696,6 +16878,32 @@
         ],
         [
           {
+            "ko": "신기",
+            "en": "Singi"
+          },
+          {
+            "ko": "Singi",
+            "en": "Singi"
+          },
+          {
+            "ko": "37.34611",
+            "en": "37.34611"
+          },
+          {
+            "ko": "129.08521",
+            "en": "129.08521"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n368636422",
+            "en": "n368636422"
+          }
+        ],
+        [
+          {
             "ko": "신길온천",
             "en": "Singiloncheon"
           },
@@ -18490,6 +18698,32 @@
         ],
         [
           {
+            "ko": "영해",
+            "en": "Yeonghae"
+          },
+          {
+            "ko": "Yeonghae",
+            "en": "Yeonghae"
+          },
+          {
+            "ko": "36.53894",
+            "en": "36.53894"
+          },
+          {
+            "ko": "129.39696",
+            "en": "129.39696"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n12237826787",
+            "en": "n12237826787"
+          }
+        ],
+        [
+          {
             "ko": "예당",
             "en": "Yedang"
           },
@@ -19266,6 +19500,32 @@
           {
             "ko": "n1657629122",
             "en": "n1657629122"
+          }
+        ],
+        [
+          {
+            "ko": "울진",
+            "en": "Uljin"
+          },
+          {
+            "ko": "Uljin",
+            "en": "Uljin"
+          },
+          {
+            "ko": "36.98174",
+            "en": "36.98174"
+          },
+          {
+            "ko": "129.39547",
+            "en": "129.39547"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n12237832304",
+            "en": "n12237832304"
           }
         ],
         [
@@ -20622,6 +20882,32 @@
         ],
         [
           {
+            "ko": "장성",
+            "en": "Jangseong"
+          },
+          {
+            "ko": "Jangseong",
+            "en": "Jangseong"
+          },
+          {
+            "ko": "35.30012",
+            "en": "35.30012"
+          },
+          {
+            "ko": "126.77968",
+            "en": "126.77968"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n7839157576",
+            "en": "n7839157576"
+          }
+        ],
+        [
+          {
             "ko": "장암",
             "en": "Jangam"
           },
@@ -21922,6 +22208,32 @@
         ],
         [
           {
+            "ko": "천안아산",
+            "en": "Cheonan-Asan"
+          },
+          {
+            "ko": "Cheonan-Asan",
+            "en": "Cheonan-Asan"
+          },
+          {
+            "ko": "36.79438",
+            "en": "36.79438"
+          },
+          {
+            "ko": "127.10450",
+            "en": "127.10450"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n4725167962",
+            "en": "n4725167962"
+          }
+        ],
+        [
+          {
             "ko": "철산",
             "en": "Cheolsan"
           },
@@ -22542,6 +22854,32 @@
           {
             "ko": "n6022603091",
             "en": "n6022603091"
+          }
+        ],
+        [
+          {
+            "ko": "태백",
+            "en": "Taebaek"
+          },
+          {
+            "ko": "Taebaek",
+            "en": "Taebaek"
+          },
+          {
+            "ko": "37.17591",
+            "en": "37.17591"
+          },
+          {
+            "ko": "128.98400",
+            "en": "128.98400"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n13676737827",
+            "en": "n13676737827"
           }
         ],
         [
@@ -23170,6 +23508,32 @@
         ],
         [
           {
+            "ko": "하동",
+            "en": "Hadong"
+          },
+          {
+            "ko": "Hadong",
+            "en": "Hadong"
+          },
+          {
+            "ko": "35.06388",
+            "en": "35.06388"
+          },
+          {
+            "ko": "127.76161",
+            "en": "127.76161"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n10296593753",
+            "en": "n10296593753"
+          }
+        ],
+        [
+          {
             "ko": "하양",
             "en": "Hayang"
           },
@@ -23400,6 +23764,32 @@
           {
             "ko": "n9932899576",
             "en": "n9932899576"
+          }
+        ],
+        [
+          {
+            "ko": "해남",
+            "en": "해남"
+          },
+          {
+            "ko": "해남",
+            "en": "해남"
+          },
+          {
+            "ko": "34.63700",
+            "en": "34.63700"
+          },
+          {
+            "ko": "126.63730",
+            "en": "126.63730"
+          },
+          {
+            "ko": "일반철도",
+            "en": "Mainline rail"
+          },
+          {
+            "ko": "n9021551363",
+            "en": "n9021551363"
           }
         ],
         [

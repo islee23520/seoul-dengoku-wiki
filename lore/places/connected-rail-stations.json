@@ -4,7 +4,7 @@
     "url": "https://download.geofabrik.de/asia/south-korea-260924.osm.pbf",
     "sha256": "cd4f04b9145cb8e1cacaf2ce9b10cdb5425f7ae3ae49dac73ef2084f42d94329",
     "license": "ODbL 1.0",
-    "scope": "Mapped station/halt nodes within 150m of a rail/subway/light_rail track component connected to Seoul; physical topology only, no 2126 passage or occupancy"
+    "scope": "Mapped station/halt nodes within 250m of a rail/subway/light_rail track component connected to Seoul, plus Haenam n9021551363 (257m, railway=station, station=train); physical topology only, no 2126 passage or occupancy."
   },
   "stations": [
     {
@@ -256,6 +256,14 @@
       "mode": "train"
     },
     {
+      "osmId": "11731499812",
+      "nameKo": "고래불",
+      "nameEn": "Goraebul",
+      "lat": 36.6025696,
+      "lon": 129.4061724,
+      "mode": "train"
+    },
+    {
       "osmId": "5511790788",
       "nameKo": "고색",
       "nameEn": "Gosaek",
@@ -400,6 +408,14 @@
       "mode": "train"
     },
     {
+      "osmId": "368636861",
+      "nameKo": "광천",
+      "nameEn": "Gwangcheon",
+      "lat": 36.50176,
+      "lon": 126.622414,
+      "mode": "train"
+    },
+    {
       "osmId": "4774670646",
       "nameKo": "괴목",
       "nameEn": "괴목",
@@ -528,6 +544,14 @@
       "mode": "train"
     },
     {
+      "osmId": "11953618205",
+      "nameKo": "군위",
+      "nameEn": "Gunwi",
+      "lat": 36.1609561,
+      "lon": 128.7457167,
+      "mode": "train"
+    },
+    {
       "osmId": "355172701",
       "nameKo": "군포",
       "nameEn": "Gunpo",
@@ -565,6 +589,14 @@
       "nameEn": "Geungnakgang",
       "lat": 35.1759932,
       "lon": 126.8300353,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237832353",
+      "nameKo": "근덕",
+      "nameEn": "Geundeok",
+      "lat": 37.3136408,
+      "lon": 129.2788657,
       "mode": "train"
     },
     {
@@ -662,6 +694,14 @@
       "lat": 37.5062407,
       "lon": 126.8113842,
       "mode": "subway"
+    },
+    {
+      "osmId": "4693461949",
+      "nameKo": "나전",
+      "nameEn": "나전",
+      "lat": 37.4497823,
+      "lon": 128.668432,
+      "mode": "train"
     },
     {
       "osmId": "8236839371",
@@ -1408,6 +1448,14 @@
       "mode": "train"
     },
     {
+      "osmId": "368637081",
+      "nameKo": "목행",
+      "nameEn": "Mokhaeng",
+      "lat": 37.016701,
+      "lon": 127.932717,
+      "mode": "train"
+    },
+    {
       "osmId": "10678348094",
       "nameKo": "몽탄",
       "nameEn": "Mongtan",
@@ -1437,6 +1485,14 @@
       "nameEn": "Mungyeong",
       "lat": 36.7202622,
       "lon": 128.110201,
+      "mode": "train"
+    },
+    {
+      "osmId": "4779079334",
+      "nameKo": "문곡",
+      "nameEn": "Mungok",
+      "lat": 37.1517538,
+      "lon": 128.9898642,
       "mode": "train"
     },
     {
@@ -2560,6 +2616,14 @@
       "mode": "subway"
     },
     {
+      "osmId": "368636422",
+      "nameKo": "신기",
+      "nameEn": "Singi",
+      "lat": 37.3461065,
+      "lon": 129.0852087,
+      "mode": "train"
+    },
+    {
       "osmId": "5338792760",
       "nameKo": "신길온천",
       "nameEn": "Singiloncheon",
@@ -3112,6 +3176,14 @@
       "mode": "train"
     },
     {
+      "osmId": "12237826787",
+      "nameKo": "영해",
+      "nameEn": "Yeonghae",
+      "lat": 36.5389389,
+      "lon": 129.3969587,
+      "mode": "train"
+    },
+    {
       "osmId": "368637408",
       "nameKo": "예당",
       "nameEn": "Yedang",
@@ -3349,6 +3421,14 @@
       "nameEn": "Ulsan",
       "lat": 35.5513139,
       "lon": 129.1379303,
+      "mode": "train"
+    },
+    {
+      "osmId": "12237832304",
+      "nameKo": "울진",
+      "nameEn": "Uljin",
+      "lat": 36.9817408,
+      "lon": 129.395474,
       "mode": "train"
     },
     {
@@ -3768,6 +3848,14 @@
       "mode": "train"
     },
     {
+      "osmId": "7839157576",
+      "nameKo": "장성",
+      "nameEn": "Jangseong",
+      "lat": 35.3001204,
+      "lon": 126.7796823,
+      "mode": "train"
+    },
+    {
       "osmId": "6046633857",
       "nameKo": "장암",
       "nameEn": "Jangam",
@@ -4168,6 +4256,14 @@
       "mode": "train"
     },
     {
+      "osmId": "4725167962",
+      "nameKo": "천안아산",
+      "nameEn": "Cheonan-Asan",
+      "lat": 36.7943803,
+      "lon": 127.1044991,
+      "mode": "train"
+    },
+    {
       "osmId": "6048953567",
       "nameKo": "철산",
       "nameEn": "Cheolsan",
@@ -4358,6 +4454,14 @@
       "lat": 36.7882137,
       "lon": 127.0845547,
       "mode": "subway"
+    },
+    {
+      "osmId": "13676737827",
+      "nameKo": "태백",
+      "nameEn": "Taebaek",
+      "lat": 37.1759118,
+      "lon": 128.983997,
+      "mode": "train"
     },
     {
       "osmId": "6312484227",
@@ -4552,6 +4656,14 @@
       "mode": "subway"
     },
     {
+      "osmId": "10296593753",
+      "nameKo": "하동",
+      "nameEn": "Hadong",
+      "lat": 35.0638799,
+      "lon": 127.7616118,
+      "mode": "train"
+    },
+    {
       "osmId": "8221953269",
       "nameKo": "하양",
       "nameEn": "Hayang",
@@ -4621,6 +4733,14 @@
       "nameEn": "Hapdeok",
       "lat": 36.7962458,
       "lon": 126.798213,
+      "mode": "train"
+    },
+    {
+      "osmId": "9021551363",
+      "nameKo": "해남",
+      "nameEn": "해남",
+      "lat": 34.6369981,
+      "lon": 126.6372997,
       "mode": "train"
     },
     {
