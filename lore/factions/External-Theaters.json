@@ -792,10 +792,6 @@
         {
           "en": "G17: When the sea noise strengthened, the alarm radius of the One-Eye Tower along the southwestern waterfront could widen. / response: False alarms were separated by cross-checking the band filter against the medical and sluice markers. / nonlethal constraint: Instead of destroying the masts wholesale, only the head that raised the false alarm was left on standby.",
           "ko": "G17: 해상 잡음이 강해지면 외눈탑의 서남 수변 경보 반경이 넓어질 수 있다. / 대응 대역 필터와 의료·수문 표식의 대조로 오탐을 분리한다. / 비살상 제약 마스트를 일괄 파괴하지 않고 오탐을 낸 헤드만 대기 상태로 둔다."
-        },
-        {
-          "en": "G27: A change in the tide could shift both the Sluice's drainage hour and the Deep-Trilobite Swarm's return line. / response: The work tables of the manual inspection gate and the reference buoy were separated, preserving people's passage. / nonlethal constraint: A full drainage could cut the temporary water carriage, so it was not used as an automatic solution.",
-          "ko": "G27: 조위 변화가 수문국 배수 시각과 심층삼엽군의 귀환선을 동시에 바꿀 수 있다. / 대응 수동 점검문과 기준 부이의 작업표를 분리해 사람의 통행을 보존한다. / 비살상 제약 전면 배수는 임시 수상 운반을 끊을 수 있으므로 자동 해법으로 쓰지 않는다."
         }
       ],
       "kind": "list"
@@ -2240,11 +2236,11 @@
       "world-atlas-projections.v2"
     ],
     "original_anchor": "lore/World-Narrative-Atlas.json",
-    "original_hash": "b07e43e29de231e505b6fce0f53b254cbbcedbc891671e061d8f8ab047d0bfc8"
+    "original_hash": "0e12d0392bd28e261661daaca05ff8e0fa0a90ba33cdd185c1f417f8be6a43c0"
   },
   "slug": "External-Theaters",
   "source": {
-    "hash": "b07e43e29de231e505b6fce0f53b254cbbcedbc891671e061d8f8ab047d0bfc8",
+    "hash": "0e12d0392bd28e261661daaca05ff8e0fa0a90ba33cdd185c1f417f8be6a43c0",
     "kind": "computed",
     "refs": [
       "lore/World-Narrative-Atlas.json",
