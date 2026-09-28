@@ -468,10 +468,31 @@ const mapStations = seoulGraph.stations.map((station) => {
 })
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
 const stationLines = new Map(mapStations.map((station) => [station.id, station.lineIds]))
-const mapEdges = seoulGraph.edges.map((edge) => ({
-  ...edge,
-  lineIds: stationLines.get(edge.a).filter((lineId) => stationLines.get(edge.b).includes(lineId)),
-}))
+const stationControlById = new Map(mapStations.map((station) => [station.id, station.control]))
+// 역 사이 구간 지배: 양 끝 역 지배가 같으면 그 지배, 다르면 분쟁, 한쪽이라도 unknown이면 unknown이다. 예외는 원장의 segmentOverrides로만 둔다.
+const segmentControlOverrides = new Map((stationControlLedger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
+if (segmentControlOverrides.size !== (stationControlLedger.segmentOverrides ?? []).length) throw new Error('E_SEGMENT_CONTROL_DUPLICATE')
+const segmentControl = (segmentId, a, b) => {
+  const delta = segmentControlOverrides.get(segmentId)
+  if (delta) {
+    if (!delta.polityIds?.length || !delta.polityIds.every((id) => stateNameById.has(id)) || (delta.primary !== null && !delta.polityIds.includes(delta.primary))) throw new Error(`E_SEGMENT_CONTROL_PRIMARY:${segmentId}`)
+    return { source: 'control-delta', deltaId: delta.id, status: delta.status, polityIds: delta.polityIds, primary: delta.primary }
+  }
+  if (a.status === 'unknown' || b.status === 'unknown') return { source: 'derived-from-stations', deltaId: null, status: 'unknown', polityIds: [], primary: null }
+  if ([...a.polityIds].sort().join('|') === [...b.polityIds].sort().join('|')) return { source: 'derived-from-stations', deltaId: null, status: a.status, polityIds: a.polityIds, primary: a.primary }
+  return { source: 'derived-from-stations', deltaId: null, status: 'contested', polityIds: [...new Set([...a.polityIds, ...b.polityIds])].sort(), primary: null }
+}
+const mapEdges = seoulGraph.edges.map((edge) => {
+  const id = `segment:${edge.a}~${edge.b}`
+  return {
+    ...edge,
+    id,
+    lineIds: stationLines.get(edge.a).filter((lineId) => stationLines.get(edge.b).includes(lineId)),
+    control: segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b)),
+    passage2126: 'unknown',
+  }
+})
+for (const segmentId of segmentControlOverrides.keys()) if (!mapEdges.some((edge) => edge.id === segmentId)) throw new Error(`E_SEGMENT_CONTROL_UNKNOWN_SEGMENT:${segmentId}`)
 const polygonMetrics = (points) => {
   let twiceArea = 0
   let weightedX = 0

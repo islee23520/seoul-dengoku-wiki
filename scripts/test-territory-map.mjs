@@ -435,3 +435,55 @@ test('offline underground asset preserves observed depths, unknowns and graph me
   assert.ok(detail.stations['강변']['3-2'])
   assert.ok(detail.stations['강변(동서울터미널)']['3-2'])
 })
+
+test('between-station segments are underground units with a rule-derived control and unknown 2126 passage', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const ledger = JSON.parse(await readFile(new URL('../lore/places/station-control-overrides.json', import.meta.url), 'utf8'))
+  const stationById = new Map(data.stations.map((station) => [station.id, station]))
+  const segmentDeltas = new Map((ledger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
+  assert.equal(data.edges.length, 435)
+  assert.equal(new Set(data.edges.map((edge) => edge.id)).size, 435)
+  for (const edge of data.edges) {
+    assert.equal(edge.id, `segment:${edge.a}~${edge.b}`)
+    assert.equal(edge.passage2126, 'unknown', edge.id)
+    assert.ok(['derived-from-stations', 'control-delta'].includes(edge.control?.source), edge.id)
+    assert.ok(Object.hasOwn(edge.control, 'deltaId'), edge.id)
+    const delta = segmentDeltas.get(edge.id)
+    if (delta) {
+      assert.equal(edge.control.source, 'control-delta', edge.id)
+      assert.deepEqual(edge.control.polityIds, delta.polityIds, edge.id)
+      continue
+    }
+    const a = stationById.get(edge.a).control
+    const b = stationById.get(edge.b).control
+    const sameHolders = [...a.polityIds].sort().join('|') === [...b.polityIds].sort().join('|')
+    if (a.status === 'unknown' || b.status === 'unknown') {
+      assert.equal(edge.control.status, 'unknown', edge.id)
+      assert.deepEqual(edge.control.polityIds, [], edge.id)
+      assert.equal(edge.control.primary, null, edge.id)
+    } else if (sameHolders) {
+      assert.deepEqual(edge.control.polityIds, a.polityIds, edge.id)
+      assert.equal(edge.control.status, a.status, edge.id)
+    } else {
+      assert.equal(edge.control.status, 'contested', edge.id)
+      assert.deepEqual(edge.control.polityIds, [...new Set([...a.polityIds, ...b.polityIds])].sort(), edge.id)
+      assert.equal(edge.control.primary, null, edge.id)
+    }
+  }
+  assert.ok(data.edges.some((edge) => edge.control.status === 'unknown'))
+})
+
+test('surface and underground territory are separate flat views switched explicitly', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  const css = await readFile(new URL('../src/components/OpeningTerritoryMap.css', import.meta.url), 'utf8')
+  assert.match(map, /className="territory-layer-toggle"/)
+  assert.match(map, /aria-pressed=\{layer === 'surface'\}[^>]*>지상 영토</)
+  assert.match(map, /aria-pressed=\{layer === 'underground'\}[^>]*>지하 영토</)
+  assert.match(map, /data-underground-segment=\{edge\.id\}/)
+  assert.match(map, /data-station-area=\{station\.id\}/)
+  assert.match(map, /미배정/)
+  assert.match(map, /2126 통행/)
+  assert.match(css, /\.territory-underground-segment/)
+  assert.doesNotMatch(css, /territory-underground-levels/)
+  assert.doesNotMatch(map, /OrbitControls|data-three-territory-map|undergroundGroup/)
+})
