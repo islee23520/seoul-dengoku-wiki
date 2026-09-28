@@ -61,3 +61,7 @@
 
 - 기계 검사 로그: `.omo/evidence/lore-wiki-issues-sweep/drafts/story-drafts/rule-check.log` (사건 PASS, 설계안 PASS, 위반 표본 FAIL: C1·N1·N2·W1·P1 적발)
 - 스키마·로케일·링크 검증: 같은 폴더의 `receipt.md`
+
+## 6. 소유자 답변 (2026-09-28)
+
+소유자는 2026-09-28에 선택 질문의 권고안을 일괄 채택했다. Q6 (a) 통제 국가를 적지 않는다. Q7 (a) 공개 문서 `lore/chronology/Sindorim-Junction-Cargo-Gate.json`, 제목 「신도림 연결부 화물문」을 유지한다. Q8 (b) #23에 승계 메모를 남기고 이 PR 병합 때 #22를 닫는다. Q9 (a) 전투 연결과 3절의 비게시 반례 두 건은 GDD #10(HG-2)에 인계한다.
