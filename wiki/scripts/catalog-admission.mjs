@@ -1,5 +1,5 @@
 import { readdir, readFile } from 'node:fs/promises'
-import { basename, join } from 'node:path'
+import { basename, join, relative } from 'node:path'
 import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs'
 import { projectionsFromAtlas } from './world-atlas-render.mjs'
 
@@ -11,8 +11,12 @@ export const unknownFields = (value, allowed) =>
 
 // Match the publisher's lore JSON selection, then include only its three
 // explicit Markdown sources and the projections derived from the atlas.
-export async function approvedRoutes(loreRoot) {
+export async function approvedDocuments(loreRoot) {
   const slugs = new Set()
+  const documents = []
+  const add = (slug, source, id) => {
+    documents.push({ source, id, route: `/world/${slug === 'index' ? '' : slug}` })
+  }
   const walk = async (dir) => {
     for (const entry of await readdir(dir, { withFileTypes: true })) {
       if (entry.name.startsWith('.')) continue
@@ -25,6 +29,7 @@ export async function approvedRoutes(loreRoot) {
           const slug = basename(entry.name, '.json')
           if (slugs.has(slug)) throw new Error(`E_DUPLICATE_LORE_SLUG:${slug}`)
           slugs.add(slug)
+          add(slug, `lore/${relative(loreRoot, path).replaceAll('\\', '/')}`, value.id)
         }
       }
     }
@@ -38,11 +43,17 @@ export async function approvedRoutes(loreRoot) {
     const slug = basename(name, '.md')
     if (slugs.has(slug)) throw new Error(`E_PROJECTION_COLLIDES_WITH_JSON:${slug}`)
     slugs.add(slug)
+    add(slug, 'lore/World-Narrative-Atlas.md', `wiki:${slug}`)
   }
   await readFile(join(loreRoot, 'Glossary.md'), 'utf8')
   for (const slug of ['Glossary', 'World-Narrative-Atlas', 'index']) {
     if (slugs.has(slug)) throw new Error(`E_PUBLISH_SOURCE_COLLISION:${slug}`)
     slugs.add(slug)
+    add(slug, slug === 'index' ? 'wiki/scripts/build-world-index.mjs' : `lore/${slug}.md`, `wiki:${slug}`)
   }
-  return [...slugs].map((slug) => `/world/${slug === 'index' ? '' : slug}`).sort()
+  return documents.sort((left, right) => left.route < right.route ? -1 : left.route > right.route ? 1 : 0)
+}
+
+export async function approvedRoutes(loreRoot) {
+  return (await approvedDocuments(loreRoot)).map(({ route }) => route)
 }

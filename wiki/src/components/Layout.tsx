@@ -1,14 +1,25 @@
 import { ReactNode } from 'react'
-import Sidebar from './Sidebar'
+import { SiteShell } from '@seoul-dengoku/shared-web-ui'
+import SidebarNavigation from './Sidebar'
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen md:flex">
-      <a href="#main-content" className="wiki-skip-link">본문으로 건너뛰기</a>
-      <Sidebar />
-      <main id="main-content" className="min-w-0 flex-1 md:ml-[220px]">
-        <div className="mx-auto min-w-0 max-w-[1200px] px-4 py-5 sm:px-6 md:px-8">{children}</div>
-      </main>
-    </div>
+    <SiteShell
+      site="wiki"
+      theme="light"
+      brand={
+        <>
+          서울<span className="text-sidebar-active">:전국</span>
+          <span className="wiki-brand-sub">공식 위키</span>
+        </>
+      }
+      homeHref="/wiki/"
+      navigation={<SidebarNavigation />}
+      navLabel="주요 표면과 문서 분류"
+      menuLabel="전체 메뉴"
+      skipLabel="본문으로 건너뛰기"
+    >
+      {children}
+    </SiteShell>
   )
 }

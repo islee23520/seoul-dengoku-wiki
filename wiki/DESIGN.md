@@ -80,3 +80,43 @@
 - WCAG 2.2 AA, 본문 대비 4.5:1 이상, 모든 상호작용에 `focus-visible` 표시.
 - 문서 제목은 페이지당 H1 하나. 표는 가로 스크롤 가능하며 본문 전체를 밀지 않는다.
 - 허용 부채 없음.
+
+## 9. 공유 웹 UI 계약 매핑 (2026-09-27)
+
+이 문서의 문서 가독성 체계(§2–§8)가 부모 저장소 공유 계약 `TOOL/docs/Shared-Web-UI-Design-Contract.md`의 기준선이 되었다. hub와 GDD 뷰어가 이 문서의 값과 컴포넌트 어휘로 수렴한다. 이 절은 매핑만 기록하고 §1–§8의 값을 바꾸지 않는다.
+
+### 토큰 매핑
+
+| 이 문서 | 공유 역할 토큰 | 값 |
+|---|---|---|
+| `--wiki-canvas` | `--sui-color-canvas` | `#f7f7f4` |
+| `--wiki-paper` | `--sui-color-surface` | `#ffffff` |
+| `--wiki-nav` | `--sui-color-nav` | `#1a1f2e` |
+| `--wiki-nav-hover` | `--sui-color-nav-hover` | `#2a3045` |
+| `--wiki-text` | `--sui-color-ink` | `#27313d` |
+| `--wiki-muted` | `--sui-color-ink-secondary` / `--sui-color-ink-muted` | `#697586` (light는 두 역할이 같은 값; canvas 위 사용 제약은 계약 §2) |
+| `--wiki-line` | `--sui-color-line` | `#d9dee5` |
+| `--wiki-accent` | `--sui-color-accent` (site=wiki) | `#b63c32` |
+| `--wiki-accent-dark` | `--sui-color-accent-strong`, light `--sui-color-focus` | `#8f2d27` |
+| `--wiki-toc` | `--sui-color-accent-soft` (site=wiki) | `#fbf4f1` |
+
+계약이 내비 글자값 `--sui-color-nav-ink #b8c4d2`·`--sui-color-nav-ink-strong #ffffff`를 새로 정의해 이 문서에 없던 내비 글자 역할을 채운다. 표 교대행 `--sui-color-surface-sunken #f2f3f5`(tailwind `table.alt`와 같은 값)도 계약 §2로 흡수된다.
+
+### 컴포넌트 매핑
+
+| 이 문서 | 공유 컴포넌트 |
+|---|---|
+| `Layout` | `SiteShell` (skip link·`main#main-content` 구조 유지) |
+| `Sidebar` | `SiteShell` + `CategoryTree` (도메인 묶음은 트리 그룹으로; People·States·Map 특수 항목은 위키 로컬 유지) |
+| `ArticlePage` 셸 | `PageHeader` + `Breadcrumbs` + `TableOfContents` + `ArticleBody`(document-renderer) |
+| `SortableTable` | `TableViewport` 내부 표 |
+
+`TerritoryMap3D`, `InfoBox`, `NavBox`, `StateFlag`, `TimelineOverview`, 인물 검색·국가 페이지 위젯은 위키 로컬 컴포넌트로 유지한다.
+
+### tailwind 드리프트 정리
+
+`tailwind.config.js`의 `accent #c0392b/#922b21`, `toc #fff5f5/#ffcdd2`, `sidebar.active #e53e3e`(nav 위 3.98:1)는 이 문서의 값과 어긋난다. 공유 마이그레이션에서 이 문서 §2의 값으로 수렴하며, 이 문서가 상위 기준이다.
+
+### 경계
+
+이 절은 계약 매핑만 기록한다. 정본 JSON·공개 자격·경로·앵커는 바뀌지 않는다.
