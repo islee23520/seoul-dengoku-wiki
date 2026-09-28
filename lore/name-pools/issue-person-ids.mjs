@@ -4,7 +4,7 @@
 // - K001–K1010은 2026-09-25 승인 그대로 보존한다. 2026-09-26 소유자가 회랑 여섯 명의
 //   값·순서와 1016명 확장 계약을 승인해 신규 입력 해시를 재승인했다.
 //   2026-09-28 초안 PR은 지연희·서하진(K1017–K1018)을 발급하고 소유자가 최종 두 입력 해시를 승인했다.
-//   2026-09-28 초안 PR은 박성수(K1019)를 발급한다. 최종 두 입력 해시는 소유자 승인 대기(pending-owner)다.
+//   2026-09-28 초안 PR은 박성수(K1019)를 발급한다. 소유자가 최종 두 입력 해시를 승인했다.
 //   입력 두 개의 SHA-256이 승인각과 하나라도 다르면 즉시 실패한다 (fail closed — 추측 발급 금지).
 //     · lore/name-pools/values-cast.json 최종 파일 바이트 → APPROVED.inputSha256
 //     · lore/name-pools/person-id-candidates.json → APPROVED.candidatesSha256
@@ -36,9 +36,9 @@ const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 
 export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
-  approvedBy: "pending-owner",
+  approvedBy: "owner",
   approvedAt: "2026-09-28",
-  ownerRef: "2026-09-28 박성수 K1019 발급 초안 — 최종 두 입력 해시의 소유자 승인 대기",
+  ownerRef: "2026-09-28 박성수 K1019 발급 및 최종 두 입력 해시 승인",
   inputSha256: "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
   candidatesSha256: "d2b9df48b05a1e620a2ae369d1b84fc0ffdbc869d88fa8a11ebc714c9f69a5cf",
 };

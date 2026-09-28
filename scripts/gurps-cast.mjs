@@ -18,10 +18,10 @@ export const SCHEMA = 'wiki-gurps-cast.v1'
 const CONTRACT = 'lore/characters/Cast-Profile-Contract.md'
 const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
-// 입력 해시(person-id-registry approvalRef, 2026-09-28 K1019 발급 초안 — 소유자 승인 대기). 두 파일은 이 작업에서 바뀌면 안 된다.
+// 입력 해시(person-id-registry approvalRef, 2026-09-28 K1019 발급 소유자 승인). 두 파일은 이 작업에서 바뀌면 안 된다.
 export const APPROVED_HASHES = {
   [VALUES]: 'd8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508',
-  [REGISTRY]: '922b2c0d575e10789e94d949c53bd8b3a1310e83cd0baf4a015beffa0f5165ae',
+  [REGISTRY]: 'd5fb337c16d91f4ac0200ea91accb16400742e53e1ed5a046f76f381ddf41f23',
 }
 const CARD_FILES = [
   ...Array.from({ length: 16 }, (_, i) => `lore/characters/Cast-State-${String(i + 1).padStart(2, '0')}.json`),
