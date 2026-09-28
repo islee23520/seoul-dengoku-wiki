@@ -18,7 +18,7 @@ AI 클라이언트의 MCP 서버 설정에 다음 실행을 등록한다. 작업
 }
 ```
 
-도구는 `list_choices`, `create_draft`, `get_draft`, `propose_edit`, `validate_draft`, `export_draft`, `example_candidate`다. `example_candidate`는 AI에게 후보 구조를 보여 준다. AI가 직접 제안한 내용은 `propose_edit`의 `provenance`에 `kind: "ai-example"`로 남긴다. 채택해도 정본 승인이 아니다.
+도구는 `list_choices`, `create_draft`, `get_draft`, `import_draft`, `propose_edit`, `validate_draft`, `export_draft`, `example_candidate`다. `import_draft`는 공개 웹 JSON의 `person-####` 경로를 기존 원장의 K ID와 대조한 뒤 새 로컬 초안을 만든다. `example_candidate`는 AI에게 후보 구조를 보여 준다. AI가 직접 제안한 내용은 `propose_edit`의 `provenance`에 `kind: "ai-example"`로 남긴다. 채택해도 정본 승인이 아니다.
 
 기존 인물은 `create_draft({"personId":"K1003"})`로 열 수 있다. 초안에는 원본 원장의 SHA-256이 기록되며, 원장이 바뀌면 `validate_draft`에서 충돌을 알린다. 수정은 직전 `revision`을 요구한다. 새 인물은 K ID 없이 시작한다. 초안 파일은 위 환경변수의 전용 디렉터리에만 기록된다.
 

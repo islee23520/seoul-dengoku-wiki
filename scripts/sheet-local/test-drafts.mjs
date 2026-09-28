@@ -34,7 +34,13 @@ test('draft edits preserve approved files and enforce revision conflicts', async
   const updated = await store.edit(draft.id, 1, { fields: { backstory: '배급 차례를 기록한다.' } })
   assert.equal(updated.revision, 2)
   await assert.rejects(store.edit(draft.id, 1, { fields: { name: '나중 이름' } }), { code: 'DRAFT_CONFLICT' })
-  assert.equal((await store.export(draft.id)).draft.fields.backstory, '배급 차례를 기록한다.')
+  const simultaneous = await Promise.allSettled([
+    store.edit(draft.id, 2, { fields: { backstory: '첫 제안' } }),
+    store.edit(draft.id, 2, { fields: { backstory: '두 번째 제안' } }),
+  ])
+  assert.deepEqual(simultaneous.map((result) => result.status), ['fulfilled', 'rejected'])
+  assert.equal((await store.get(draft.id)).revision, 3)
+  assert.equal((await store.export(draft.id)).draft.fields.backstory, '첫 제안')
   assert.equal(createHash('sha256').update(await readFile(approved)).digest('hex'), before)
 })
 
@@ -91,4 +97,18 @@ test('localhost MCP rejects foreign hosts and origins before any draft edit', as
   })
   assert.equal(foreignHostStatus, 403)
   assert.equal((await fetch(endpoint, { method: 'POST', headers: { ...headers, authorization: 'Bearer wrong' }, body })).status, 401)
+})
+
+test('public draft imports through the stable person route without issuing an ID', async (t) => {
+  await mkdir(join(ROOT, '.omo'), { recursive: true })
+  const root = await mkdtemp(join(ROOT, '.omo/sheet-import-test-'))
+  t.after(() => rm(root, { recursive: true, force: true }))
+  const store = createDraftStore({ root })
+  const published = { schema: 'seoul-character-draft.v1', revision: 3, base: { personId: 'person-1019', sha256: '' }, fields: { ...exampleFields, name: '박성수' }, provenance: { background: { kind: 'user' } } }
+  const imported = await store.importDraft(published)
+  assert.equal(imported.base.personId, 'K1019')
+  assert.equal(imported.fields.name, '박성수')
+  assert.equal(imported.validation.valid, true)
+  await assert.rejects(store.importDraft({ ...published, fields: { ...published.fields, name: '다른 인물' } }), { code: 'DRAFT_IDENTITY' })
+  assert.equal((await store.list()).length, 1)
 })

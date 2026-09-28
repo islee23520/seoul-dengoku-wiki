@@ -51,6 +51,7 @@ async function baseRecord(personId) {
 
 export function createDraftStore({ root = defaultRoot } = {}) {
   async function read(id) { return JSON.parse(await readFile(fileFor(root, id), 'utf8')) }
+  let pending = Promise.resolve()
   return {
     async choices() {
       const values = JSON.parse(await readFile(join(ROOT, 'lore/name-pools/values-cast.json'), 'utf8'))
@@ -71,18 +72,35 @@ export function createDraftStore({ root = defaultRoot } = {}) {
       await writeFile(fileFor(root, draft.id), `${JSON.stringify(draft, null, 2)}\n`, { flag: 'wx' })
       return draft
     },
+    async importDraft(input) {
+      if (!input || input.schema !== 'seoul-character-draft.v1') fail('DRAFT_SCHEMA', '공개 초안 형식이 아니다')
+      const fields = parseFields(input).fields
+      let personId
+      if (input.base) {
+        const source = JSON.parse(await readFile(join(ROOT, 'lore/name-pools/gurps-cast.json'), 'utf8'))
+        const person = source.people.find((entry) => entry.url === `/people/${input.base.personId}`)
+        if (!person || person.name !== fields.name) fail('DRAFT_IDENTITY', '원본 인물과 초안의 신원이 다르다')
+        personId = person.id
+      }
+      const draft = await this.create({ personId, fields, provenance: input.provenance ?? {} })
+      return { ...draft, validation: await this.validate(draft.id) }
+    },
     async get(id) { return read(id) },
     async list() {
       try { return (await readdir(root)).filter((name) => /^[0-9a-f-]{36}\.json$/u.test(name)).map((name) => name.slice(0, -5)) }
       catch (error) { if (error.code === 'ENOENT') return []; throw error }
     },
-    async edit(id, revision, patch) {
-      const draft = await read(id)
-      if (draft.revision !== revision) fail('DRAFT_CONFLICT', '초안 버전이 바뀌었다')
-      const parsed = parseFields({ fields: { ...draft.fields, ...patch.fields }, attributes: { ...draft.attributes, ...patch.attributes }, skills: patch.skills ?? draft.skills })
-      const next = { ...draft, ...parsed, revision: revision + 1, provenance: { ...draft.provenance, ...patch.provenance } }
-      await writeFile(fileFor(root, id), `${JSON.stringify(next, null, 2)}\n`)
-      return next
+    edit(id, revision, patch) {
+      const operation = pending.then(async () => {
+        const draft = await read(id)
+        if (draft.revision !== revision) fail('DRAFT_CONFLICT', '초안 버전이 바뀌었다')
+        const parsed = parseFields({ fields: { ...draft.fields, ...patch.fields }, attributes: { ...draft.attributes, ...patch.attributes }, skills: patch.skills ?? draft.skills })
+        const next = { ...draft, ...parsed, revision: revision + 1, provenance: { ...draft.provenance, ...patch.provenance } }
+        await writeFile(fileFor(root, id), `${JSON.stringify(next, null, 2)}\n`)
+        return next
+      })
+      pending = operation.then(() => undefined, () => undefined)
+      return operation
     },
     async validate(id) {
       const draft = await read(id)

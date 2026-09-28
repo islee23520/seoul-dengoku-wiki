@@ -8,6 +8,7 @@ export const tools = [
   { name: 'list_choices', description: '인물 배경·소속·생업 선택지를 읽는다', inputSchema: { type: 'object', properties: {} } },
   { name: 'create_draft', description: '새 인물 또는 기존 인물의 검토 초안을 만든다', inputSchema: { type: 'object', properties: { personId: { type: 'string' }, fields: { type: 'object' }, attributes: { type: 'object' }, skills: { type: 'array' } } } },
   { name: 'get_draft', description: '초안을 읽는다', inputSchema: { type: 'object', properties: { id: { type: 'string' } }, required: ['id'] } },
+  { name: 'import_draft', description: '공개 웹에서 내보낸 초안을 K ID에 대조하여 로컬로 가져온다', inputSchema: { type: 'object', properties: { draft: { type: 'object' } }, required: ['draft'] } },
   { name: 'propose_edit', description: '예상 버전을 대조해 초안을 수정한다', inputSchema: { type: 'object', properties: { id: { type: 'string' }, revision: { type: 'integer' }, patch: { type: 'object' } }, required: ['id', 'revision', 'patch'] } },
   { name: 'validate_draft', description: '근거 충돌과 겁스 점수를 검사한다', inputSchema: { type: 'object', properties: { id: { type: 'string' } }, required: ['id'] } },
   { name: 'export_draft', description: '검토용 초안 JSON을 내보낸다', inputSchema: { type: 'object', properties: { id: { type: 'string' } }, required: ['id'] } },
@@ -19,6 +20,7 @@ export async function call(store, name, args) {
     case 'list_choices': return store.choices()
     case 'create_draft': return store.create(args)
     case 'get_draft': return store.get(args.id)
+    case 'import_draft': return store.importDraft(args.draft)
     case 'propose_edit': return store.edit(args.id, args.revision, args.patch)
     case 'validate_draft': return store.validate(args.id)
     case 'export_draft': return store.export(args.id)
