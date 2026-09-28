@@ -590,7 +590,6 @@ function finish(record) {
   record.baseline = spent === 0
   return record
 }
-
 const SKILL_ORDER = Object.keys(SKILLS)
 export function build(root = ROOT) {
   const registry = JSON.parse(readSource(root, REGISTRY).raw)
