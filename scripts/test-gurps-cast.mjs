@@ -1,6 +1,6 @@
 // 겁스 4판 인물 수치 검사기 시험 (node --test).
 // (a) 커밋된 gurps-cast.json이 검사를 통과하고 카드에서 다시 파생한 결과와 바이트 단위로 같은지,
-// (b) 승인 견본 두 사람과 K001–K1016 순서가 그대로인지, (c) 변이마다 검사가 실패하는지 본다.
+// (b) 승인 견본 두 사람과 K001–K1018 순서가 그대로인지, (c) 변이마다 검사가 실패하는지 본다.
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -22,8 +22,8 @@ test('카드에서 다시 파생한 결과가 커밋된 파일과 바이트 단�
   assert.equal(serialize(build().doc), raw)
 })
 
-test('K001–K1016 1,016명이 발급 순서대로 있고 URL은 values-cast 순번을 따른다', () => {
-  assert.equal(doc.people.length, 1016)
+test('K001–K1018 1,018명이 발급 순서대로 있고 URL은 values-cast 순번을 따른다', () => {
+  assert.equal(doc.people.length, 1018)
   doc.people.forEach((p, i) => assert.equal(p.id, `K${String(i + 1).padStart(3, '0')}`))
   assert.equal(find(doc, 'K1003').url, '/people/person-1003')
   assert.equal(find(doc, 'K1009').url, '/people/person-1009')
@@ -100,7 +100,7 @@ test('Q6 C: 이연 Observation은 A(12 CP)이고 사용자 확정 직위 줄을 
 
 test('Q8 C: 카드에 적힌 언어를 0 CP로 싣고 첫 언어만 Native다', () => {
   const withLang = doc.people.filter((p) => p.languages.length).map((p) => p.id)
-  assert.deepEqual(withLang, ['K1003', 'K1004', 'K1008', 'K1011', 'K1012', 'K1013', 'K1014', 'K1015', 'K1016'])
+  assert.deepEqual(withLang, ['K1003', 'K1004', 'K1008', 'K1011', 'K1012', 'K1013', 'K1014', 'K1015', 'K1016', 'K1017', 'K1018'])
   for (const p of doc.people) {
     p.languages.forEach((l, i) => {
       assert.equal(l.cp, 0)
@@ -143,7 +143,7 @@ const MUTATIONS = [
   ['한 사람 누락', (d) => { d.people.splice(500, 1); d.count -= 1 }],
   ['URL 변경', (d) => { d.people[sampleIndex].url = '/people/person-9999' }],
   ['이름 변경', (d) => { d.people[sampleIndex].name += '가' }],
-  ['승인 해시 한 글자 변경', (d) => { const k = 'lore/name-pools/values-cast.json'; d.invariants[k] = '0' + d.invariants[k].slice(1) }],
+  ['승인 해시 한 글자 변경', (d) => { const k = 'lore/name-pools/values-cast.json'; d.invariants[k] = (d.invariants[k][0] === '0' ? '1' : '0') + d.invariants[k].slice(1) }],
   ['규칙표 등급 A 16', (d) => { d.rules.tiers.A = 16 }],
   ['견본값 규칙을 일반 인물에', (d) => { const a = d.people[sampleIndex].attributes.IQ; a.rule = 'pilot-approved' }],
   ['미사용 점수를 기술로 바꿈', (d) => { const p = d.people[sampleIndex]; p.skills.push({ name: 'Unspent Points', ko: '미사용', attr: 'IQ', diff: 'E', tier: 'C', cp: 4, level: 13, evidence: p.skills[0].evidence }); p.cp.skills += 4; p.cp.spent += 4; p.cp.unspent -= 4 }],

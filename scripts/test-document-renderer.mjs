@@ -16,7 +16,7 @@ const render = (nodes) => renderToStaticMarkup(createElement(DocumentContent, {
 
 test('every published WIKI document adapts without dropping an unsupported node', async () => {
   const names = (await readdir(worldRoot)).filter((name) => name.endsWith('.json'))
-  assert.equal(names.length, 83)
+  assert.equal(names.length, 84)
   for (const name of names) assert.equal(fromWikiBlocks(await blocks(name)).length, (await blocks(name)).length, name)
 })
 

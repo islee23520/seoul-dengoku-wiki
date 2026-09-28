@@ -18,10 +18,10 @@ export const SCHEMA = 'wiki-gurps-cast.v1'
 const CONTRACT = 'lore/characters/Cast-Profile-Contract.md'
 const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
-// 소유자 승인 해시(person-id-registry approvalRef, G1 영수증). 두 파일은 이 작업에서 바뀌면 안 된다.
+// 소유자 승인 해시(person-id-registry approvalRef, 2026-09-28 K1017–K1018 발급 승인). 두 파일은 이 작업에서 바뀌면 안 된다.
 export const APPROVED_HASHES = {
-  [VALUES]: 'c785d729cdee59fbe196be50bb4ecb883ea5e289ebc68545796144dc23240ef7',
-  [REGISTRY]: 'b1c9d8cb697b429701d2cff6e4ccbe1f206b917484fbfe55b5c18b42d1093dd4',
+  [VALUES]: '05eebe21f559b23fb6a6bcdb8d2ff5bbe62770155487fe086f42c1c00481521b',
+  [REGISTRY]: '14d0376384b12dd85247f3e19d96bae25f8cd011b40e8efe09ba35919b400f2a',
 }
 const CARD_FILES = [
   ...Array.from({ length: 16 }, (_, i) => `lore/characters/Cast-State-${String(i + 1).padStart(2, '0')}.json`),
@@ -620,7 +620,7 @@ export function verify(doc, root = ROOT) {
   const values = JSON.parse(readSource(root, VALUES).raw).people
   const indexByName = new Map(values.map((p, i) => [p.name, i]))
   if (!Array.isArray(doc.people) || doc.people.length !== registry.persons.length || doc.count !== registry.persons.length) fail(`인원: ${doc.people?.length} ≠ ${registry.persons.length}`)
-  if (registry.persons.length !== 1016) fail(`registry 인원 ${registry.persons.length} ≠ 1016`)
+  if (registry.persons.length !== 1018) fail(`registry 인원 ${registry.persons.length} ≠ 1018`)
   registry.persons.forEach((entry, i) => {
     const want = `K${String(i + 1).padStart(3, '0')}`
     if (entry.id !== want) fail(`registry 순서: ${i} ${entry.id} ≠ ${want}`)
@@ -760,7 +760,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const rebuilt = serialize(build().doc)
     if (rebuilt !== raw) errors.push(`${OUT}가 카드에서 다시 파생한 결과와 다르다(node scripts/gurps-cast.mjs --write)`)
     if (errors.length) { errors.forEach((e) => console.error(`✗ ${e}`)); console.error(`FAIL: ${errors.length}건`); process.exit(1) }
-    console.log('PASS: K001–K1016 신원·순서·URL, 승인 해시, 능력(기본 10·+1/문장·최대 +3)·기술(A12/B8/C4/D2, B170)·보조 특성·CP·미사용 점수(75 하한)·구간·언어(0 CP), 모든 인용 원문 대조, 재파생 일치', JSON.stringify(summary(doc)))
+    console.log('PASS: K001–K1018 신원·순서·URL, 승인 해시, 능력(기본 10·+1/문장·최대 +3)·기술(A12/B8/C4/D2, B170)·보조 특성·CP·미사용 점수(75 하한)·구간·언어(0 CP), 모든 인용 원문 대조, 재파생 일치', JSON.stringify(summary(doc)))
   } else {
     console.error('usage: node scripts/gurps-cast.mjs --write | --check | --review <tsv>')
     process.exit(2)
