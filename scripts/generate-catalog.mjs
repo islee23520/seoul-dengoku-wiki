@@ -13,6 +13,7 @@ import { latestUpdates } from './update-history.mjs'
 import { wikiPublicationManifest } from './publication-manifest.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
 import { glossaryDocument } from './glossary-document.mjs'
+import { validatedDensities } from './region-density.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -334,6 +335,8 @@ const genderByName = new Map(genderSource.map((person) => [person.name, person])
 const stateNameById = new Map(stateCatalog.map((state) => [state.slug.toUpperCase(), state.name]))
 const regionAtlasSource = await readFile(process.env.WIKI_REGION_ATLAS_PATH ?? await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
+const populationSource = JSON.parse(await readFile(resolve(loreRoot, 'regions/sources/population-2026-08.json'), 'utf8'))
+const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
 const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
 const sixteenStatesLore = JSON.parse(await readFile(resolve(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
@@ -608,6 +611,7 @@ const openingTerritories = {
   height: mapHeight,
   projection: { crs: 'EPSG:5179', minEast: mapBounds.minX, maxEast: mapBounds.maxX, minNorth: mapBounds.minY, maxNorth: mapBounds.maxY },
   attribution: regionAtlas.attribution,
+  populationAttribution: `${populationSource.source.publisher} ${populationSource.baseline} ${populationSource.source.statistic} (${populationSource.source.definition}); ${populationSource.ratio * 100}% 투영 · ${populationSource.boundary.effectiveDate} 행정동 경계 면적 · ${populationSource.source.url}`,
   states: territoryStates,
   vassals,
   landmarks: projectedLandmarks,
@@ -629,6 +633,8 @@ const openingTerritories = {
       openingState: normalizePublicNames(content.opening_state),
       summary: normalizePublicNames(content.summary),
       stationCount: region.station_ids.length,
+      areaM2: region.area_m2,
+      density2126: densityByDong[region.id.replace(/^region:/u, '')],
     }
   }),
 }
