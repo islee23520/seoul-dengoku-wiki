@@ -20,6 +20,25 @@ export type MapTransport = {
   subscribe: (receive: (message: unknown) => void) => () => void
 }
 
+export type TerrainStatus = { type: 'ready'; tile: string; sourceSha256: string; manifestSha256: string } |
+  { type: 'error'; code: string; message: string }
+
+export function terrainStatus(message: unknown, tileHashes: ReadonlyMap<string, string>, manifestSha256: string): TerrainStatus | null {
+  if (!message || typeof message !== 'object') return null
+  const event = message as Record<string, unknown>
+  if (event.schema !== 'janseon-wiki-map.v1') return null
+  if (event.type === 'error' && typeof event.code === 'string' && typeof event.message === 'string')
+    return { type: 'error', code: event.code, message: event.message }
+  if (event.type !== 'ready' || event.projection !== 'EPSG:5179' ||
+      typeof event.selection !== 'object' || event.selection === null) return null
+  const selection = event.selection as Record<string, unknown>
+  if (selection.kind !== 'regional-terrain-tile' || typeof selection.id !== 'string' ||
+      !selection.id.startsWith('regional:')) return null
+  const tile = selection.id.slice('regional:'.length)
+  if (tileHashes.get(tile) !== event.sourceSha256 || event.manifestSha256 !== manifestSha256) return null
+  return { type: 'ready', tile, sourceSha256: event.sourceSha256 as string, manifestSha256 }
+}
+
 export function createMapBridge(catalog: MapCatalog, transport: MapTransport, onSelected: (selection: MapSelection | null) => void) {
   const displayStations = new Set(catalog.stations.map(({ id }) => id))
   const gameToDisplay = new Map([...displayStations].map((id) => [id, id]))

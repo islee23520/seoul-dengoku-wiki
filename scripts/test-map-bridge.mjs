@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
-import { createMapBridge } from '../src/components/mapBridge.ts'
+import { createMapBridge, terrainStatus } from '../src/components/mapBridge.ts'
 import { stationAliases } from '../src/components/stationPresentation.ts'
 
 test('all 334 game station IDs select exactly the 315 displayed station IDs', async () => {
@@ -91,4 +91,28 @@ test('disposing the bridge unsubscribes once and ignores late inbound and outbou
   receive({ type: 'selected', selection: { kind: 'region', id: 'region:1' } })
   bridge.select({ kind: 'region', id: 'region:1' })
   assert.deepEqual([unsubscribed, selected, sent], [1, 0, 0])
+})
+
+test('Unity terrain readiness validates pinned tile bytes but never becomes a wiki detail selection', async () => {
+  const manifest = JSON.parse(await readFile(new URL('../public/regional-terrain.json', import.meta.url), 'utf8'))
+  const tile = manifest.detailTiles.find((item) => item.key === '5-4')
+  const hashes = new Map(manifest.detailTiles.map((item) => [item.key, item.sha256]))
+  const source = await readFile(new URL('../public/regional-terrain.json', import.meta.url))
+  const { createHash } = await import('node:crypto')
+  const manifestSha256 = createHash('sha256').update(source).digest('hex')
+  const ready = { schema: 'janseon-wiki-map.v1', type: 'ready', projection: 'EPSG:5179',
+    selection: { kind: 'regional-terrain-tile', id: 'regional:5-4' },
+    sourceSha256: tile.sha256, manifestSha256 }
+  assert.deepEqual(terrainStatus(ready, hashes, manifestSha256), { type: 'ready', tile: '5-4', sourceSha256: tile.sha256, manifestSha256 })
+  assert.equal(terrainStatus({ ...ready, sourceSha256: '0'.repeat(64) }, hashes, manifestSha256), null)
+  assert.equal(terrainStatus({ ...ready, type: 'selection' }, hashes, manifestSha256), null)
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  let selected = 0
+  let receive = () => {}
+  const bridge = createMapBridge({ ...data, outsideUnits: [] }, {
+    send: () => {}, subscribe: (handler) => { receive = handler; return () => {} },
+  }, () => { selected += 1 })
+  receive({ ...ready, type: 'selection' })
+  assert.equal(selected, 0)
+  bridge.dispose()
 })
