@@ -150,7 +150,7 @@ export function renderHouses(atlas) {
       text(L('출처층', 'Source layer'), ': ', house.source_kind),
       text(L('연결 국가', 'Linked states'), ': ', states(atlas, house.states)),
       text(L('전속 국가', 'Exclusive states'), ': ', L('없음', 'None')),
-      text(L('관리', 'Steward'), ': ', house.ai_stewardship?.accountable_human),
+      ...(house.ai_stewardship?.accountable_human ? [text(L('관리', 'Steward'), ': ', house.ai_stewardship.accountable_human)] : []),
     ])
     b.nodes(house.prose)
     b.heading(3, text(L('3막', 'Three acts')))
