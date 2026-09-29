@@ -97,6 +97,12 @@ event:
 
 저장소 루트에서 위키의 동일 렌더러로 해당 JSON 투영을 생성하고 바이트 검사를 한다. 부모 저장소의 구형 렌더러로 다른 투영을 일괄 덮어쓰지 않는다.
 
+## 카테고리 문서의 필수 항목
+
+공개 카테고리 문서는 `scripts/category-registry.json`의 13개 분류를 따른다. 각 문서는 한국어·영어 제목과 요약, `source.refs`, 본문 제목과 문단을 가진다. 관직·지리·물건·구조물·기술·질병·사람과 기체는 표도 가진다. 없는 날짜·보유자·수치를 칸을 채우려고 만들지 않는다.
+
+2026-09-29 대표 문서 대조: 개요 `World-Unbinding`, 연표 `Century-Annals`, 인물 `Cast-Corridors-Index`, 생태 `Hostile-Ecology-Index`, 세력 `Chaebol-Houses-and-Century-Factions`, 관직 `Offices-and-Ranks`, 지리 `Building-Reuse-Geography`, 문화 `Faith-Culture-Schism`, 물건 `Era-Arms-and-Tech-Level`, 구조물 `Structures`, 기술 `Lost-Technology-Lineage`, 질병 `Ailments`, 사람과 기체 `People-and-Machines`. 열세 문서 모두 제목·요약·출처·필수 본문 종류를 갖췄다. 세력 대표 문서에는 표가 없고, 등록부도 세력에 표를 요구하지 않는다.
+
 ```bash
 node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.json --out lore --projection World-Expansion-Index.json
 node scripts/materialize-world-atlas.mjs --atlas lore/World-Narrative-Atlas.json --out lore --projection World-Expansion-Index.json --check
