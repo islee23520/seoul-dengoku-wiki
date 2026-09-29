@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { readFile, readdir } from 'node:fs/promises'
-import test from 'node:test'
+import { test } from 'vitest'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
 import { validatedDensities } from './region-density.mjs'
 

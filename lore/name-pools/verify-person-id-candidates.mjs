@@ -1,4 +1,4 @@
-// person-id-candidates.json 동결·재생성·검증기 (node --test)
+// person-id-candidates.json 동결·재생성·검증기 (Vitest)
 //
 // 계약 (schema: wiki-person-id-candidates.v1)
 // - 후보 명부는 lore/name-pools/values-cast.json의 people[] 배열 순서를 그대로 유지한다 (이름 정렬 금지).
@@ -10,13 +10,13 @@
 // - 후보는 ordinal 1..N만 받는다. 실제 K423+ 번호 발급은 이 표에서 하지 않는다.
 //
 // 실행
-// - 검증: node --test lore/name-pools/verify-person-id-candidates.mjs
+// - 검증: npm run test:person-id
 // - 생성: node lore/name-pools/verify-person-id-candidates.mjs --write [--force]
 //   (생성은 values-cast.json을 절대 고치지 않는다. 출력이 이미 있는 파일과 다르면 --force가 필요하다.)
 //
 // 파괴 검사(mutations)는 RED-provable 이다: 검증 규칙이 없으면 아래 변이 테스트 자체가 실패한다.
 
-import { test } from "node:test";
+import { test } from "vitest";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
@@ -234,7 +234,7 @@ export function validateTable(table, ctx) {
   return v;
 }
 
-// ---- 진입: --write면 생성 CLI만 돌고, 아니면 node:test 계약 검사를 등록한다 ----
+// ---- 진입: --write면 생성 CLI만 돌고, 아니면 Vitest 계약 검사를 등록한다 ----
 
 const CLI_WRITE = process.argv.includes("--write");
 
