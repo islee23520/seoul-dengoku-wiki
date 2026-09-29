@@ -141,7 +141,7 @@ function preamble(atlas, slug, fallbackTitle) {
 }
 
 export function renderHouses(atlas) {
-  const b = preamble(atlas, 'Operating-Houses', L('운영가문', 'Operating Houses'))
+  const b = preamble(atlas, 'Operating-Houses', L('운영 조직', 'Operating Organizations'))
   for (const house of atlas.houses ?? []) {
     b.heading(2, text(house.id, ' · ', house.display_name))
     b.list([
@@ -150,7 +150,7 @@ export function renderHouses(atlas) {
       text(L('출처층', 'Source layer'), ': ', house.source_kind),
       text(L('연결 국가', 'Linked states'), ': ', states(atlas, house.states)),
       text(L('전속 국가', 'Exclusive states'), ': ', L('없음', 'None')),
-      text(L('관리', 'Steward'), ': ', house.ai_stewardship?.accountable_human),
+      ...(house.ai_stewardship?.accountable_human ? [text(L('관리', 'Steward'), ': ', house.ai_stewardship.accountable_human)] : []),
     ])
     b.nodes(house.prose)
     b.heading(3, text(L('3막', 'Three acts')))
