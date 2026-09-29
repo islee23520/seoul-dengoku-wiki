@@ -30,6 +30,46 @@ const CP_COST: Record<number, number> = { 7: -70, 8: -50, 9: -30, 10: 0, 11: 10,
 function toggleItem(list: string[], id: string): string[] {
   return list.includes(id) ? list.filter(x => x !== id) : [...list, id]
 }
+const STATE_OPTIONS = [
+  { id: 'S01', name: '수문국' }, { id: 'S02', name: '규격맹' },
+  { id: 'S03', name: '태욱그룹' }, { id: 'S04', name: '명부교회' },
+  { id: 'S05', name: '동방사' }, { id: 'S06', name: '대한민국정부' },
+  { id: 'S07', name: '환적국' }, { id: 'S08', name: '중앙기술보존원' },
+  { id: 'S09', name: '여의도출자연합회' }, { id: 'S10', name: '안국총림' },
+  { id: 'S11', name: '성하그룹' }, { id: 'S12', name: '신내운수' },
+  { id: 'S13', name: '흰십자단' }, { id: 'S14', name: '아관사' },
+  { id: 'S15', name: '명동대교구' }, { id: 'S16', name: '정동노총' },
+  { id: '', name: '무소속' },
+]
+
+const STATE_POSITIONS: Record<string, string[]> = {
+  S01: ['군주', '본부장', '구역장', '당직장', '주사'],
+  S02: ['위원장', '상임이사', '이사', '감사', '조합원'],
+  S03: ['회장', '사장', '전무', '부장', '대리'],
+  S04: ['당회장', '장로', '권사', '집사', '교사'],
+  S05: ['사령관', '참모장', '대대장', '중대장', '병장'],
+  S06: ['대통령', '장관', '차관', '국장', '주사'],
+  S07: ['역장', '본부장', '구역장', '당직장', '주사'],
+  S08: ['원장', '심사관', '보존관', '기술원', '출입자'],
+  S09: ['의장', '부회장', '전무', '부장', '직원'],
+  S10: ['방장', '총무원장', '주지', '스님', '신도'],
+  S11: ['회장', '사장', '전무', '부장', '대리'],
+  S12: ['사장', '배차장', '반장', '서기', '호송원'],
+  S13: ['단장', '전문의', '수련의', '의무원', '회원'],
+  S14: ['사령관', '참모장', '대대장', '중대장', '병장'],
+  S15: ['대주교', '신부', '수사', '부제', '교우'],
+  S16: ['위원장', '부위원장', '본부장', '지부장', '조합원'],
+  '': ['무소속'],
+}
+
+const OCCUPATION_OPTIONS = [
+  '정수 당직', '갑문 당직', '차량 정비', '장비 수리', '궤도 관리',
+  '물 계약', '배급 서기', '경비 당직', '호송 인원', '의료 진료',
+  '약재 조제', '명부 관리', '기록 관리', '교육 담당', '통행 관리',
+  '수문 조작', '설비 점검', '규격 검사', '창고 관리', '연락 당직',
+  '경작', '사냥', '채집', '제조', '운송', '무역', '정보 수집',
+]
+
 
 export default function CharacterDraftPage() {
   const [sheet, setSheet] = useState<GurmpsSheet>(DEFAULT)
@@ -225,10 +265,30 @@ export default function CharacterDraftPage() {
       <section className="draft-basic">
         <h2>기본 정보</h2>
         <div className="form-grid">
-          <label>이름 <input type="text" value={sheet.name} onChange={e => set('name', e.target.value)} /></label>
-          <label>국가 <input type="text" value={sheet.state} onChange={e => set('state', e.target.value)} /></label>
-          <label>직위 <input type="text" value={sheet.position} onChange={e => set('position', e.target.value)} /></label>
-          <label>생업 <input type="text" value={sheet.occupation} onChange={e => set('occupation', e.target.value)} /></label>
+          <label>이름
+            <input type="text" value={sheet.name} onChange={e => set('name', e.target.value)} placeholder="이름 입력" list="name-list" />
+            <datalist id="name-list">
+              {characterList.slice(0, 100).map((c: { id: string; name: string }) => <option key={c.id} value={c.name} />)}
+            </datalist>
+          </label>
+          <label>국가
+            <select value={sheet.state} onChange={e => { set('state', e.target.value); set('position', '') }}>
+              <option value="">— 선택 —</option>
+              {STATE_OPTIONS.map((s: { id: string; name: string }) => <option key={s.id} value={s.id}>{s.id} {s.name}</option>)}
+            </select>
+          </label>
+          <label>직위
+            <select value={sheet.position} onChange={e => set('position', e.target.value)}>
+              <option value="">— 선택 —</option>
+              {(STATE_POSITIONS[sheet.state] || []).map((p: string) => <option key={p} value={p}>{p}</option>)}
+            </select>
+          </label>
+          <label>생업
+            <select value={sheet.occupation} onChange={e => set('occupation', e.target.value)}>
+              <option value="">— 선택 —</option>
+              {OCCUPATION_OPTIONS.map((o: string) => <option key={o} value={o}>{o}</option>)}
+            </select>
+          </label>
         </div>
       </section>
 
