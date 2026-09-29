@@ -1,6 +1,6 @@
 import { stationAliases } from './stationPresentation'
 
-export type MapSelectionKind = 'region' | 'state' | 'station' | 'segment' | 'landmark'
+export type MapSelectionKind = 'region' | 'state' | 'station' | 'segment' | 'landmark' | 'vassal' | 'outside-unit'
 export type MapSelection = { kind: MapSelectionKind; id: string }
 export type WikiMapMessage = { type: 'select'; selection: MapSelection | null }
 export type UnityMapMessage = { type: 'selected'; selection: MapSelection | null }
@@ -11,6 +11,8 @@ export type MapCatalog = {
   stations: Array<{ id: string }>
   edges: Array<{ id: string }>
   landmarks: Array<{ id: string }>
+  vassals: Array<{ name: string }>
+  outsideUnits: Array<{ id: string }>
 }
 
 export type MapTransport = {
@@ -30,6 +32,8 @@ export function createMapBridge(catalog: MapCatalog, transport: MapTransport, on
     station: displayStations,
     segment: new Set(catalog.edges.map(({ id }) => id)),
     landmark: new Set(catalog.landmarks.map(({ id }) => id)),
+    vassal: new Set(catalog.vassals.map(({ name }) => name)),
+    'outside-unit': new Set(catalog.outsideUnits.map(({ id }) => id)),
   }
   const displaySelection = (value: unknown): MapSelection | null | undefined => {
     if (value === null) return null

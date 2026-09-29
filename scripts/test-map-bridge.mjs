@@ -6,6 +6,7 @@ import { stationAliases } from '../src/components/stationPresentation.ts'
 
 test('all 334 game station IDs select exactly the 315 displayed station IDs', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
   const displayIds = new Set(data.stations.map(({ id }) => id))
   const gameIds = new Set([...displayIds, ...Object.keys(stationAliases)])
   assert.equal(displayIds.size, 315)
@@ -17,7 +18,7 @@ test('all 334 game station IDs select exactly the 315 displayed station IDs', as
     send: (message) => sent.push(message),
     subscribe: (handler) => { receive = handler; return () => { receive = () => {} } },
   }
-  const bridge = createMapBridge(data, transport, (selection) => selected.push(selection))
+  const bridge = createMapBridge({ ...data, outsideUnits: outside.units }, transport, (selection) => selected.push(selection))
   for (const id of gameIds) {
     const expected = stationAliases[id] ?? id
     receive({ type: 'selected', selection: { kind: 'station', id } })
@@ -37,34 +38,38 @@ test('all 334 game station IDs select exactly the 315 displayed station IDs', as
 
 test('selection preserves kind and stable ID; unknown or malformed messages cannot select', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
+  const catalog = { ...data, outsideUnits: outside.units }
   const selected = []
   const sent = []
   let receive = () => {}
-  const bridge = createMapBridge(data, {
+  const bridge = createMapBridge(catalog, {
     send: (message) => sent.push(message),
     subscribe: (handler) => { receive = handler; return () => {} },
   }, (selection) => selected.push(selection))
   for (const [kind, id] of [
     ['region', data.regions[0].id], ['state', data.states[0].id],
     ['station', data.stations[0].id], ['segment', data.edges[0].id],
-    ['landmark', data.landmarks[0].id],
+    ['landmark', data.landmarks[0].id], ['vassal', data.vassals[0].name],
+    ['outside-unit', outside.units[0].id],
   ]) {
     const selection = { kind, id }
     bridge.select(selection)
     receive({ type: 'selected', selection })
     assert.deepEqual(selected[selected.length - 1], selection)
   }
-  assert.equal(sent.length, 5)
+  assert.equal(sent.length, 7)
   for (const message of [
     { type: 'selected', selection: { kind: 'station', id: 'nonexistent' } },
     { type: 'selected', selection: { kind: 'region', id: data.stations[0].id } },
     { type: 'selected', selection: { kind: 'unknown', id: data.regions[0].id } },
     { type: 'selected', selection: { kind: 'state', id: 7 } },
+    { type: 'selected', selection: { kind: 'outside-unit', id: 'nonexistent' } },
     { type: 'other', selection: null },
   ]) receive(message)
   bridge.select({ kind: 'station', id: 'nonexistent' })
-  assert.equal(selected.length, 5)
-  assert.equal(sent.length, 5)
+  assert.equal(selected.length, 7)
+  assert.equal(sent.length, 7)
   receive({ type: 'selected', selection: null })
   bridge.select(null)
   assert.equal(selected[selected.length - 1], null)
@@ -77,7 +82,7 @@ test('disposing the bridge unsubscribes once and ignores late inbound and outbou
   let unsubscribed = 0
   let sent = 0
   let selected = 0
-  const bridge = createMapBridge({ regions: [{ id: 'region:1' }], states: [], stations: [], edges: [], landmarks: [] }, {
+  const bridge = createMapBridge({ regions: [{ id: 'region:1' }], states: [], stations: [], edges: [], landmarks: [], vassals: [], outsideUnits: [] }, {
     send: () => { sent += 1 },
     subscribe: (handler) => { receive = handler; return () => { unsubscribed += 1 } },
   }, () => { selected += 1 })
