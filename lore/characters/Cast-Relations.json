@@ -35,7 +35,158 @@
     "ko": {
       "title": "관계 원장",
       "summary": "S1 국가 실세와 T0 핵심 인물을 잇는 방향성 희소 그래프다.",
-      "tense": "past"
+      "tense": "past",
+      "content": [
+        {
+          "kind": "table",
+          "columns": [
+            {
+              "ko": "인물",
+              "en": "Person"
+            },
+            {
+              "ko": "유형",
+              "en": "Type"
+            },
+            {
+              "ko": "대상",
+              "en": "Target"
+            },
+            {
+              "ko": "근거",
+              "en": "Grounds"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ko": "김연규",
+                "en": "Kim Gyun"
+              },
+              {
+                "ko": "상관",
+                "en": "superior"
+              },
+              {
+                "ko": "민웅기",
+                "en": "Min Woonggi"
+              },
+              {
+                "ko": "민웅기는 김연규 휘하에서 근무한다",
+                "en": ""
+              }
+            ],
+            [
+              {
+                "ko": "김연규",
+                "en": "Kim Gyun"
+              },
+              {
+                "ko": "동맹",
+                "en": "ally"
+              },
+              {
+                "ko": "이일섭",
+                "en": "Lee Ilseop"
+              },
+              {
+                "ko": "오다-도쿠가와 동맹에 대응한다",
+                "en": ""
+              }
+            ],
+            [
+              {
+                "ko": "민웅기",
+                "en": "Min Woonggi"
+              },
+              {
+                "ko": "경쟁",
+                "en": "rival"
+              },
+              {
+                "ko": "이일섭",
+                "en": "Lee Ilseop"
+              },
+              {
+                "ko": "도요토미-도쿠가와 경쟁에 대응한다",
+                "en": ""
+              }
+            ],
+            [
+              {
+                "ko": "민웅기",
+                "en": "Min Woonggi"
+              },
+              {
+                "ko": "동료",
+                "en": "comrade"
+              },
+              {
+                "ko": "신종목",
+                "en": "Shin Jongmok"
+              },
+              {
+                "ko": "같은 세력에서 활동한다",
+                "en": ""
+              }
+            ],
+            [
+              {
+                "ko": "김연규",
+                "en": "Kim Gyun"
+              },
+              {
+                "ko": "상관",
+                "en": "superior"
+              },
+              {
+                "ko": "신종목",
+                "en": "Shin Jongmok"
+              },
+              {
+                "ko": "김연규 체계에 속한다",
+                "en": ""
+              }
+            ],
+            [
+              {
+                "ko": "신종목",
+                "en": "Shin Jongmok"
+              },
+              {
+                "ko": "부자",
+                "en": "kin"
+              },
+              {
+                "ko": "신준",
+                "en": "Shin Jun"
+              },
+              {
+                "ko": "신준은 신종목의 아들이다",
+                "en": ""
+              }
+            ],
+            [
+              {
+                "ko": "조재표",
+                "en": "Jo Jaepyo"
+              },
+              {
+                "ko": "지도자",
+                "en": "leader"
+              },
+              {
+                "ko": "민웅기",
+                "en": "Min Woonggi"
+              },
+              {
+                "ko": "낭인 단장 — 대비되는 야인 지도자",
+                "en": ""
+              }
+            ]
+          ]
+        }
+      ]
     }
   },
   "content": [
@@ -10489,43 +10640,672 @@
             "ko": "선한솜의 지하 함 온도를 발전 쪽에서 받치고"
           }
         ],
-        [{"en":"Im Dalna","ko":"임달나"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Baek Sanseok","ko":"백산석"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Seong Dalhyeon","ko":"성달현"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Han Bukwoo","ko":"한북우"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Kim Bitho","ko":"김빛호"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Mun Supmin","ko":"문숲민"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Gwak Gahyeon","ko":"곽가현"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"I Minseok","ko":"이민석"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Song Jaehyeon","ko":"송재현"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Go Neuljin","ko":"고늘진"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"No Solho","ko":"노솔호"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"I Haseok","ko":"이하석"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"Im Geonwoo","ko":"임건우"},{"en":"command","ko":"지휘"},{"en":"I Seodam","ko":"이서담"},{"en":"Serves as a ration clerk under I Seodam on the water allocation shift","ko":"이서담의 배급구역 서기로 급수 배분 당직을 맡음"}],
-        [{"en":"I Neulmin","ko":"이늘민"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Choi Aa","ko":"최아아"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Song Haji","ko":"송하지"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Im Seona","ko":"임서나"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Seong Suhyeon","ko":"성수현"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Yang Jatae","ko":"양자태"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Seong Hahyeon","ko":"성하현"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Baek Charae","ko":"백차래"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Jeong Namjun","ko":"정남준"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"An Gumin","ko":"안구민"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Sin Chamin","ko":"신차민"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Cha Jawon","ko":"차자원"},{"en":"command","ko":"지휘"},{"en":"Byeon Goun","ko":"변고운"},{"en":"Serves under Byeon Goun on concourse shifts and conduit surveys","ko":"변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"}],
-        [{"en":"Min Chahyeon","ko":"민차현"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Song Eunji","ko":"송은지"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Heo Bawoo","ko":"허바우"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Baek Mirae","ko":"백미래"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Nam Aeun","ko":"남아은"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Seong Sahyeon","ko":"성사현"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Jo Bawon","ko":"조바원"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Gu Ramhui","ko":"구람희"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Im Ramna","ko":"임람나"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"An Saemin","ko":"안새민"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"I Damin","ko":"이다민"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}],
-        [{"en":"Song Daji","ko":"송다지"},{"en":"command","ko":"지휘"},{"en":"Kim Taeun","ko":"김태운"},{"en":"Serves under Kim Taeun on bridge passage and night-crossing reports","ko":"김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"}]
+        [
+          {
+            "en": "Im Dalna",
+            "ko": "임달나"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Baek Sanseok",
+            "ko": "백산석"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Seong Dalhyeon",
+            "ko": "성달현"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Han Bukwoo",
+            "ko": "한북우"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Kim Bitho",
+            "ko": "김빛호"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Mun Supmin",
+            "ko": "문숲민"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Gwak Gahyeon",
+            "ko": "곽가현"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "I Minseok",
+            "ko": "이민석"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Song Jaehyeon",
+            "ko": "송재현"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Go Neuljin",
+            "ko": "고늘진"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "No Solho",
+            "ko": "노솔호"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "I Haseok",
+            "ko": "이하석"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Im Geonwoo",
+            "ko": "임건우"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "I Seodam",
+            "ko": "이서담"
+          },
+          {
+            "en": "Serves as a ration clerk under I Seodam on the water allocation shift",
+            "ko": "이서담의 배급구역 서기로 급수 배분 당직을 맡음"
+          }
+        ],
+        [
+          {
+            "en": "I Neulmin",
+            "ko": "이늘민"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Choi Aa",
+            "ko": "최아아"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Song Haji",
+            "ko": "송하지"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Im Seona",
+            "ko": "임서나"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Seong Suhyeon",
+            "ko": "성수현"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Yang Jatae",
+            "ko": "양자태"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Seong Hahyeon",
+            "ko": "성하현"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Baek Charae",
+            "ko": "백차래"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Jeong Namjun",
+            "ko": "정남준"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "An Gumin",
+            "ko": "안구민"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Sin Chamin",
+            "ko": "신차민"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Cha Jawon",
+            "ko": "차자원"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Byeon Goun",
+            "ko": "변고운"
+          },
+          {
+            "en": "Serves under Byeon Goun on concourse shifts and conduit surveys",
+            "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Min Chahyeon",
+            "ko": "민차현"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Song Eunji",
+            "ko": "송은지"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Heo Bawoo",
+            "ko": "허바우"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Baek Mirae",
+            "ko": "백미래"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Nam Aeun",
+            "ko": "남아은"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Seong Sahyeon",
+            "ko": "성사현"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Jo Bawon",
+            "ko": "조바원"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Gu Ramhui",
+            "ko": "구람희"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Im Ramna",
+            "ko": "임람나"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "An Saemin",
+            "ko": "안새민"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "I Damin",
+            "ko": "이다민"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ],
+        [
+          {
+            "en": "Song Daji",
+            "ko": "송다지"
+          },
+          {
+            "en": "command",
+            "ko": "지휘"
+          },
+          {
+            "en": "Kim Taeun",
+            "ko": "김태운"
+          },
+          {
+            "en": "Serves under Kim Taeun on bridge passage and night-crossing reports",
+            "ko": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음"
+          }
+        ]
       ]
     },
     {
