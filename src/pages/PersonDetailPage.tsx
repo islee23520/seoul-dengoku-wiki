@@ -71,7 +71,7 @@ export default function PersonDetailPage() {
   return (
     <article className="wiki-article" data-wiki-shell="react-official" data-person-id={detail.id}>
       <nav aria-label="현재 위치" className="wiki-breadcrumbs"><Link to="/">대문</Link><span aria-hidden="true">›</span><Link to="/people">등장인물 전체</Link><span aria-hidden="true">›</span><strong>{detail.name}</strong></nav>
-      <header className="wiki-article-header"><div><p className="wiki-domain-label">서울:전국 공식 위키 · 인물</p><h1>{detail.name}</h1><p>{detail.stateName || '무소속'} · {detail.title}</p>{detail.clan && <p><img src={`${import.meta.env.BASE_URL}${detail.clan.crest}`} alt={`${detail.clan.name} 문장`} width="64" height="64" loading="lazy" /> {detail.clan.name}</p>}</div><span className="wiki-canon-badge">정본</span></header>
+      <header className="wiki-article-header"><div><p className="wiki-domain-label">서울:전국 공식 위키 · 인물</p><h1>{detail.name}</h1><p>{detail.stateName || '무소속'} · {detail.title}</p>{detail.clan && <p><img src={`${import.meta.env.BASE_URL}${detail.clan.crest}`} alt={`${detail.clan.name} 문장`} width="64" height="64" loading="lazy" /> <Link to={`/families/${detail.clan.id}`} className="wiki-link">{detail.clan.name}</Link></p>}</div><span className="wiki-canon-badge">정본</span></header>
       <div className="person-detail-layout">
         <aside className="person-data-panel" aria-label="인물 구조화 데이터">
           <DataTable title="기본 정보" rows={basicRows} />

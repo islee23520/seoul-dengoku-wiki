@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage'
 import ArticlePage from './pages/ArticlePage'
 import StateDetailPage from './pages/StateDetailPage'
 const PeoplePage = lazy(() => import('./pages/PeoplePage'))
+const FamiliesPage = lazy(() => import('./pages/FamiliesPage'))
+const FamilyDetailPage = lazy(() => import('./pages/FamilyDetailPage'))
 const PersonDetailPage = lazy(() => import('./pages/PersonDetailPage'))
 const CharacterDraftPage = lazy(() => import('./pages/CharacterDraftPage'))
 const DocumentsPage = lazy(() => import('./pages/DocumentsPage'))
@@ -14,7 +16,7 @@ import UpdatesPage from './pages/UpdatesPage'
 import { resolveLegacyRegionRoute, worldRegionMapRoute } from './wikiRouting'
 import { wikiCatalog, wikiEnglishCatalog } from './generated/wikiCatalog'
 
-const appRoutes = new Set(['/', '/states', '/updates', '/people', '/people/draft', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route), ...wikiEnglishCatalog.map(({ route }) => route)])
+const appRoutes = new Set(['/', '/states', '/updates', '/people', '/families', '/people/draft', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route), ...wikiEnglishCatalog.map(({ route }) => route)])
 
 function useNativeWikiLinks() {
   const navigate = useNavigate()
@@ -28,7 +30,7 @@ function useNativeWikiLinks() {
       const url = new URL(href, window.location.href)
       if (url.origin !== window.location.origin || !url.pathname.startsWith('/wiki/')) return
       const path = url.pathname.slice('/wiki'.length)
-      if (!appRoutes.has(path) && !/^\/(?:categories|states|people)\/[^/]+$/.test(path)) return
+      if (!appRoutes.has(path) && !/^\/(?:categories|states|people|families)\/[^/]+$/.test(path)) return
       event.preventDefault()
       navigate(`${path}${url.search}${url.hash}`)
     }
@@ -52,6 +54,8 @@ export default function App() {
         <Route path="/states/:stateSlug" element={<StateDetailPage />} />
         <Route path="/updates" element={<UpdatesPage />} />
         <Route path="/people" element={<Suspense fallback={<div className="wiki-loading">인물 원장을 불러오고 있습니다.</div>}><PeoplePage /></Suspense>} />
+        <Route path="/families" element={<Suspense fallback={<div className="wiki-loading">가문 원장을 불러오고 있습니다.</div>}><FamiliesPage /></Suspense>} />
+        <Route path="/families/:clanId" element={<Suspense fallback={<div className="wiki-loading">가문 상세를 불러오고 있습니다.</div>}><FamilyDetailPage /></Suspense>} />
         <Route path="/people/draft" element={<Suspense fallback={<div className="wiki-loading">초안 편집기를 불러오고 있습니다.</div>}><CharacterDraftPage /></Suspense>} />
         <Route path="/people/:personId" element={<Suspense fallback={<div className="wiki-loading">인물 상세를 불러오고 있습니다.</div>}><PersonDetailPage /></Suspense>} />
         <Route path="/documents" element={<Suspense fallback={<div className="wiki-loading">문서 색인을 불러오고 있습니다.</div>}><DocumentsPage /></Suspense>} />

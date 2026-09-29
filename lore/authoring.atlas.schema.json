@@ -133,7 +133,7 @@
     },
     "membership": {
       "type": "object",
-      "required": ["classes", "entry_routes", "dual_membership_policy", "steward"],
+      "required": ["classes", "entry_routes", "dual_membership_policy"],
       "properties": {
         "classes": {"type": "array", "items": {"enum": ["APPRENTICE", "LICENSED_MEMBER", "CORE_MEMBER", "OFFICER", "STEWARD"]}},
         "entry_routes": {"type": "array", "items": {"enum": ["OPEN_EXAM", "APPRENTICESHIP", "LATERAL_ADMISSION", "CHARTER_ADOPTION"]}},
@@ -144,7 +144,7 @@
     },
     "succession": {
       "type": "object",
-      "required": ["state", "designated", "caretaker_triad", "trigger_events"],
+      "required": ["state", "caretaker_triad", "trigger_events"],
       "properties": {
         "state": {"const": "NORMAL"},
         "designated": {"$ref": "#/$defs/localized"},
@@ -171,7 +171,7 @@
     },
     "aiStewardship": {
       "type": "object",
-      "required": ["system_ids", "authorized_functions", "prohibited_functions", "accountable_human", "human_veto_required", "dual_key_shutdown"],
+      "required": ["system_ids", "authorized_functions", "prohibited_functions", "human_veto_required", "dual_key_shutdown"],
       "properties": {
         "system_ids": {"type": "array", "items": {"type": "string", "pattern": "^(?:__EXAMPLE__:ai|H[CP][0-9]{2}-AI)$"}},
         "authorized_functions": {"$ref": "#/$defs/localizedList"},
@@ -218,7 +218,11 @@
         "protected_guests": {"type": "array", "items": {"$ref": "#/$defs/protectedGuest"}}, "ai_stewardship": {"$ref": "#/$defs/aiStewardship"},
         "obligations": {"type": "array", "items": {"$ref": "#/$defs/obligation"}}, "arcs": {"type": "array", "items": {"$ref": "#/$defs/houseAct"}}, "prose": {"$ref": "#/$defs/nodes"}
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "if": {"properties": {"id": {"enum": ["HC19", "HC20"]}}, "required": ["id"]},
+      "then": {"properties": {"membership": {"properties": {"steward": false}}, "succession": {"properties": {"designated": false}}, "ai_stewardship": {"properties": {"accountable_human": false}}}},
+      "else": {"properties": {"membership": {"required": ["steward"]}, "ai_stewardship": {"required": ["accountable_human"]}}},
+      "allOf": [{"if": {"properties": {"id": {"enum": ["HC16", "HC17", "HC18", "HC19", "HC20", "HC21", "HC22"]}}, "required": ["id"]}, "then": {"properties": {"succession": {"properties": {"designated": false}}}}, "else": {"properties": {"succession": {"required": ["designated"]}}}}]
     },
     "routes": {
       "type": "object",
