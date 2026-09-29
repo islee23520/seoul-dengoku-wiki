@@ -141,7 +141,7 @@ function preamble(atlas, slug, fallbackTitle) {
 }
 
 export function renderHouses(atlas) {
-  const b = preamble(atlas, 'Operating-Houses', L('운영가문', 'Operating Houses'))
+  const b = preamble(atlas, 'Operating-Houses', L('운영 조직', 'Operating Organizations'))
   for (const house of atlas.houses ?? []) {
     b.heading(2, text(house.id, ' · ', house.display_name))
     b.list([
