@@ -4,12 +4,13 @@ import test from 'node:test'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
 import { validatedDensities } from './region-density.mjs'
 
-test('rail geometry uses one visible source and the detail panel stays in the viewport', async () => {
+test('rail geometry uses one visible source and the detail panel stays inside the map', async () => {
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
   const styles = await readFile(new URL('../src/components/OpeningTerritoryMap.css', import.meta.url), 'utf8')
   assert.match(map, /showRail && !rail && data\.edges\.flatMap/u)
   assert.match(map, /showRail && displayedRail\.map/u)
-  assert.match(styles, /\.territory-map-flat > \.territory-detail \{ position: fixed;/u)
+  assert.match(styles, /\.territory-map-flat > \.territory-detail \{ position: absolute;/u)
+  assert.match(styles, /max-block-size: calc\(100% - 4\.25rem\); overflow-y: auto/u)
 })
 
 test('projected density covers all 427 source codes and preserves the unrounded area formula', async () => {
@@ -261,6 +262,16 @@ test('thirteen vassals point at valid suzerains outside the sixteen', async () =
     assert.ok(vassal.anchor.length > 0, `line anchor: ${vassal.name}`)
     assert.ok(data.lines[vassal.lineId], `official line: ${vassal.name}`)
   }
+})
+
+test('vassal locality boundaries stay separate from unverified area control', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const boundaries = JSON.parse(await readFile(new URL('../public/regional-boundaries.json', import.meta.url), 'utf8'))
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  assert.deepEqual(new Set(boundaries.map(({ city }) => city)), new Set(data.vassals.map(({ city }) => city)))
+  assert.match(map, /data-vassal-boundary=\{boundary\.city\} d=\{trace\(boundary\.geometry, toMap\)\} fill="none"/u)
+  assert.match(map, /data-vassal-marker=\{vassal\.city\} role="button" tabIndex=\{0\}/u)
+  assert.match(map, /setFrame\('peninsula'\); setBox\(\{ x: x - width \/ 2, y: y - height \/ 2, width, height \}\); setSelectedVassal\(vassal\.name\)/u)
 })
 
 test('committed terrain covers Seoul and all surveyed vassal centroids with source attribution', async () => {
