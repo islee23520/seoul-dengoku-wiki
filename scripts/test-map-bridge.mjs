@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
-import { createMapBridge, terrainStatus } from '../src/components/mapBridge.ts'
+import { createMapBridge, selectionAtUnityCoordinate, terrainStatus } from '../src/components/mapBridge.ts'
 import { stationAliases } from '../src/components/stationPresentation.ts'
 
 test('all 334 game station IDs select exactly the 315 displayed station IDs', async () => {
@@ -115,4 +115,20 @@ test('Unity terrain readiness validates pinned tile bytes but never becomes a wi
   receive({ ...ready, type: 'selection' })
   assert.equal(selected, 0)
   bridge.dispose()
+})
+
+test('Unity projected tile click resolves actual outside-unit ID only with pinned manifest and tile hashes', async () => {
+  const source = await readFile(new URL('../public/regional-terrain.json', import.meta.url))
+  const manifest = JSON.parse(source)
+  const { createHash } = await import('node:crypto')
+  const manifestSha = createHash('sha256').update(source).digest('hex')
+  const map = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8')).units
+  const tile = manifest.detailTiles.find((item) => item.key === '5-4')
+  const click = { schema: 'janseon-wiki-map.v1', type: 'coordinate-selection', projection: 'EPSG:5179',
+    selection: { kind: 'regional-terrain-tile', id: 'regional:5-4' },
+    east: 962500, north: 1937500, sourceSha256: tile.sha256, manifestSha256: manifestSha }
+  assert.deepEqual(selectionAtUnityCoordinate(click, manifest, manifestSha, map, outside), { kind: 'outside-unit', id: '4113164000' })
+  assert.equal(selectionAtUnityCoordinate({ ...click, sourceSha256: '0'.repeat(64) }, manifest, manifestSha, map, outside), null)
+  assert.equal(selectionAtUnityCoordinate({ ...click, east: 900000 }, manifest, manifestSha, map, outside), null)
 })

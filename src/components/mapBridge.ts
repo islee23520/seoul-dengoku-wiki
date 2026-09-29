@@ -1,4 +1,5 @@
 import { stationAliases } from './stationPresentation'
+import { selectAtCoordinates } from './mapCoordinateSelection'
 
 export type MapSelectionKind = 'region' | 'state' | 'station' | 'segment' | 'landmark' | 'vassal' | 'outside-unit'
 export type MapSelection = { kind: MapSelectionKind; id: string }
@@ -37,6 +38,26 @@ export function terrainStatus(message: unknown, tileHashes: ReadonlyMap<string, 
   const tile = selection.id.slice('regional:'.length)
   if (tileHashes.get(tile) !== event.sourceSha256 || event.manifestSha256 !== manifestSha256) return null
   return { type: 'ready', tile, sourceSha256: event.sourceSha256 as string, manifestSha256 }
+}
+
+export function selectionAtUnityCoordinate(message: unknown,
+  manifest: { detailTiles: Array<{ key: string; sha256: string; bboxEPSG5179: number[] }> },
+  manifestSha256: string,
+  map: { width: number; height: number; projection: { minEast: number; maxEast: number; minNorth: number; maxNorth: number }; regions: Array<{ id: string; path: string }> },
+  outside: Array<{ id: string; path: string }>): MapSelection | null {
+  if (!message || typeof message !== 'object') return null
+  const event = message as Record<string, unknown>
+  if (event.schema !== 'janseon-wiki-map.v1' || event.type !== 'coordinate-selection' || event.projection !== 'EPSG:5179' ||
+      event.manifestSha256 !== manifestSha256 || typeof event.east !== 'number' || typeof event.north !== 'number' ||
+      !event.selection || typeof event.selection !== 'object') return null
+  const selection = event.selection as Record<string, unknown>
+  if (selection.kind !== 'regional-terrain-tile' || typeof selection.id !== 'string' || !selection.id.startsWith('regional:')) return null
+  const tileId = selection.id.slice('regional:'.length)
+  const tile = manifest.detailTiles.find((item) => item.key === tileId)
+  if (!tile || tile.sha256 !== event.sourceSha256 || tile.bboxEPSG5179.length !== 4 ||
+      event.east < tile.bboxEPSG5179[0] || event.east > tile.bboxEPSG5179[2] ||
+      event.north < tile.bboxEPSG5179[1] || event.north > tile.bboxEPSG5179[3]) return null
+  return selectAtCoordinates(event.east, event.north, map, outside)
 }
 
 export function createMapBridge(catalog: MapCatalog, transport: MapTransport, onSelected: (selection: MapSelection | null) => void) {
