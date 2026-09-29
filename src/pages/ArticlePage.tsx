@@ -121,7 +121,7 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
   }
 
   return (
-    <article lang={locale}>
+    <article lang={locale} id={wikiHeadingId(wikiDocument.title)}>
       <Breadcrumbs
         label={text.breadcrumbs}
         resolveHref={wikiAnchorHref}

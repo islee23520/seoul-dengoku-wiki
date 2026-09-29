@@ -10,7 +10,7 @@ The sixteen states S01–S16, their ruling houses and chaebol origins, plus over
 |------|----------|
 | The 16 states S01–S16 | `Sixteen-States.json` — InfoBox-declared 정본; 6 강국 (대한민국정부·수문국·규격맹·환적국·동방사·태욱그룹), 4 약국, 6 소국; forms 봉건·군정·신정·상업 |
 | Houses / chaebol origins | `Chaebol-Houses-and-Century-Factions.json` — families lease infrastructure to states; chaebol-origin states are the hereditary exception (상호가 국호) |
-| External theaters XT01–XT05 | `External-Theaters.json` — Seoul-side corridors only; read-only projection of World-Narrative-Atlas (edit via the atlas, parent contract) |
+| External theaters XT01–XT05 | `External-Theaters.json` — Seoul-side corridors and authored peninsula connections; read-only projection of World-Narrative-Atlas (edit via the atlas, parent contract) |
 | Diaspora corridors | `Diaspora-Corridors.json` — life-belt overlay on the 16 states; new people still satisfy the cast card contract (`../characters/Cast-Profile-Contract.md`) |
 
 ## CONVENTIONS
@@ -24,5 +24,5 @@ The sixteen states S01–S16, their ruling houses and chaebol origins, plus over
 - Never write the 16 states as a one-ethnicity roster — the corridors exist because pre-collapse Seoul wasn't one (대림·가리봉·이태원·동대문·구로·용산 belts).
 - Military service history is never inferred from gender or name; post-collapse enlistment also exists.
 - Troop and ammunition numbers for the conscription remnants are deliberately undecided — don't fix them in canon pages.
-- External theaters: never assert crimes of real current regimes or institutions; corridors are rumor/ledger fragments, not intelligence reports.
+- External theaters: never assert crimes of real current regimes or institutions. Distinguish authored peninsula and Tsushima events from unconfirmed overseas reports. A witness to one harbor does not establish the condition of an entire country; Seoul-side procedures do not establish a continuous physical route.
 - Foreign-design borrowings (CK tiers, etc.) import structure only, never proper nouns.

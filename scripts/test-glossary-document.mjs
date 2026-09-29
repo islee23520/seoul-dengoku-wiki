@@ -24,9 +24,7 @@ const entry = (overrides = {}) => ({
   ...overrides,
 })
 
-// The Korean page published at /world/Glossary before the page was generated from glossary.json
-// (lore/Glossary.md, deleted), with its two layout slips in "기술 및 장비" normalised: a blank line
-// between the two items and none before "## 무공 및 전술".
+// Reader-facing snapshot of the canonical Korean glossary, including its section order and spacing.
 const koreanPage = `# 용어 사전
 
 ## 국가 (16개국)
@@ -60,7 +58,7 @@ const koreanPage = `# 용어 사전
 
 ## 사건 및 연대
 
-- **대단선**: 2026년부터 서울의 호출망과 전력·급수망이 끊어진 사건.
+- **대정전**: 2026년 10월 14일 21:47경 호출망과 원격 제어가 끊기고 전력 공급이 무너진 사건. 일부 시설은 사람의 수동 운전으로 버텼다.
 - **2126년**: 서울 열여섯 나라의 개막 시점. (별칭: 현재)
 
 ## 질병
@@ -68,7 +66,7 @@ const koreanPage = `# 용어 사전
 - **포자감염**: 저온 환경의 지하 균류 포자가 폐에 자리 잡아 호흡기를 굳게 만드는 치명적 증상. (별칭: 포자병)
 `
 
-test('the Korean page keeps the terms, definitions, aliases and section order of the old Glossary.md', () => {
+test('the Korean page renders the canonical terms, definitions, aliases and section order', () => {
   assert.equal(render('ko'), koreanPage)
 })
 

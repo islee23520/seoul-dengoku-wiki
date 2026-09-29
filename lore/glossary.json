@@ -195,10 +195,10 @@
   },
   {
     "term_id": "event-collapse",
-    "display_name_ko": "대단선",
-    "reader_definition_ko": "2026년부터 서울의 호출망과 전력·급수망이 끊어진 사건.",
-    "display_name_en": "The Severance",
-    "reader_definition_en": "The event from 2026 in which Seoul’s call network and its power and water networks were cut.",
+    "display_name_ko": "대정전",
+    "reader_definition_ko": "2026년 10월 14일 21:47경 호출망과 원격 제어가 끊기고 전력 공급이 무너진 사건. 일부 시설은 사람의 수동 운전으로 버텼다.",
+    "display_name_en": "The Great Blackout",
+    "reader_definition_en": "The event at about 21:47 on October 14, 2026, when the call network and remote control failed and power supplies broke down. Staff kept some facilities running manually.",
     "category": "event",
     "owner_path": "lore/chronology/Century-Annals.json",
     "allowed_context": [
@@ -206,7 +206,7 @@
     ],
     "aliases": [],
     "aliases_en": [],
-    "status": "generic-unregistered"
+    "status": "fiction-original"
   },
   {
     "term_id": "event-present",
