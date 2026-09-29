@@ -132,6 +132,7 @@ test('approved landmark roles project to surveyed facilities without changing su
 test('opening territory map covers every Seoul dong and all sixteen states', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   assert.equal(data.regions.length, 427)
+  assert.equal(data.states.find((state) => state.id === 'S04')?.ruler, '오경재')
   assert.equal(data.states.length, 16)
   const expectedStates = {
     S01: '수문국', S02: '규격맹', S03: '태욱그룹', S04: '명부교회',

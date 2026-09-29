@@ -63,13 +63,14 @@ export default function PeoplePage() {
             <col className="people-col-state" />
             <col className="people-col-position" />
             <col className="people-col-tier" />
+            <col className="people-col-rank" />
             <col className="people-col-occupation" />
             <col className="people-col-gender" />
           </colgroup>
-          <thead><tr><th scope="col">이름</th><th scope="col">국가</th><th scope="col">직위</th><th scope="col">직급</th><th scope="col">직업</th><th scope="col">성별</th></tr></thead>
+          <thead><tr><th scope="col">이름</th><th scope="col">국가</th><th scope="col">직위</th><th scope="col">공통 티어</th><th scope="col">국가별 직급</th><th scope="col">직업</th><th scope="col">성별</th></tr></thead>
           <tbody>{filtered.map((person) => (
             <tr key={person.id}>
-              <td data-label="이름"><Link to={person.detailRoute}>{person.name}</Link></td><td data-label="국가">{person.stateName || '무소속'}</td><td data-label="직위">{person.position}</td><td data-label="직급">{person.commonTier}</td><td data-label="직업">{person.occupation}</td><td data-label="성별">{person.gender}</td>
+              <td data-label="이름"><Link to={person.detailRoute}>{person.name}</Link></td><td data-label="국가">{person.stateName || '무소속'}</td><td data-label="직위">{person.position}</td><td data-label="공통 티어">{person.commonTier}</td><td data-label="국가별 직급">{person.rank === '미등록' ? '—' : person.rank}</td><td data-label="직업">{person.occupation}</td><td data-label="성별">{person.gender}</td>
             </tr>
           ))}</tbody>
         </table>
