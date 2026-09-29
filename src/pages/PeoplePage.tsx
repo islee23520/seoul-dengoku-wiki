@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import portraitCatalog from '../../portrait-catalog.json'
+import PortraitPromptPanel from './PortraitPromptPanel'
 
 const koreanNameOrder = new Intl.Collator('ko-KR', { usage: 'sort', sensitivity: 'variant' })
 const peopleByName = [...peopleCatalog].sort((left, right) => koreanNameOrder.compare(left.name, right.name) || left.id.localeCompare(right.id))
@@ -61,6 +62,7 @@ export default function PeoplePage() {
           </li>
         ))}</ul>
       </section>
+      <PortraitPromptPanel />
       <label className="people-search">
         <span>이름·직위·국가 검색</span>
         <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="예: 윤서린, 급수, S4" />
