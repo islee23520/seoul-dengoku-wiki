@@ -12,6 +12,11 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-백온",
   "detailRoute": "/people/person-0246",
+  "clan": {
+    "id": "bc31-c218-c6d0",
+    "name": "수원 백씨",
+    "crest": "clan-crests/bc31-c218-c6d0.svg"
+  },
   "generation": "opening",
   "minors": false,
   "sourceKind": "proposal",
@@ -141,7 +146,7 @@
         "from": "단유진",
         "type": "계약",
         "to": "백온",
-        "basis": "백온의 회의 발언을 수행으로 받치고"
+        "basis": "백온의 회의 발언을 수행으로 뒷받침하고"
       },
       {
         "from": "범온결",

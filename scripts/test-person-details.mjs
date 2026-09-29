@@ -15,6 +15,10 @@ test('all canonical people expose unique detail routes and structured data', asy
   for (const name of names) {
     const detail = JSON.parse(await readFile(new URL(name, detailRoot), 'utf8'))
     assert.ok(detail.biography.length > 0, name)
+    if (detail.clan) {
+      assert.match(detail.clan.crest, /^clan-crests\/[a-z0-9-]+\.svg$/u, name)
+      assert.ok((await readFile(new URL(`../public/${detail.clan.crest}`, import.meta.url), 'utf8')).includes('<svg'), name)
+    } else assert.equal(detail.name, '이연', name)
     assert.equal(Object.keys(detail.values).length, 10, name)
     assert.equal(Object.keys(detail.desire).length, 7, name)
     assert.ok(['여성', '남성'].includes(detail.gender), name)

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate": "node scripts/generate-catalog.mjs",
+    "generate": "node scripts/generate-catalog.mjs && node scripts/generate-clan-crests.mjs",
     "build": "npm run generate && tsc -b && vite build",
     "preview": "vite preview",
     "test": "npm run generate && vitest run",
@@ -14,6 +14,7 @@
     "test:contract": "node scripts/check-contract.mjs",
     "test:artifacts": "vitest run scripts/test-artifact-allowlist.mjs",
     "check:artifacts": "node scripts/check-artifact-allowlist.mjs",
+<<<<<<< HEAD
     "test:admission": "vitest run scripts/test-catalog-admission.mjs",
     "test:gate": "vitest run scripts/test-gate.mjs",
     "test:naming-ledger": "vitest run scripts/test-naming-ledger-sources.mjs",
@@ -38,6 +39,8 @@
     "test:person-id": "vitest run lore/name-pools/verify-person-id-candidates.mjs lore/name-pools/verify-person-id-registry.mjs",
     "test:mongo-load": "vitest run scripts/test-mongo-load.mjs",
     "test:gurps": "vitest run scripts/test-gurps-cast.mjs",
+    "test:crests": "vitest run scripts/test-clan-crests.mjs",
+    "test:families": "vitest run scripts/test-family-catalog.mjs",
     "db:load": "node scripts/mongo-load.mjs"
   },
   "dependencies": {

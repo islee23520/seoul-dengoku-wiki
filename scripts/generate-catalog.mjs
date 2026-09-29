@@ -187,6 +187,7 @@ if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
 const pagesBySlug = new Map(jsonPages.map((page) => [page.slug, page]))
 const peopleSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
+const lineageByName = new Map(JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-hangnyeol.json'), 'utf8')).people.map((person) => [person.name, person]))
 const glossaryPath = resolve(loreRoot, 'glossary.json')
 const glossaryPage = { path: glossaryPath, slug: 'Glossary', value: glossaryDocument(JSON.parse(await readFile(glossaryPath, 'utf8'))) }
 const worldIndex = buildWorldIndex({ loreRoot, readFile: (path) => readFile(path, 'utf8') })
@@ -324,7 +325,9 @@ const stateCatalog = stateRows.map((row) => ({
   government: row.government,
   power: row.power,
   cause: row.cause,
-  ruler: row.government.match(/회장 (\S+)/u)?.[1] ?? leaderForNames(coreCharacters, row.names),
+  ruler: row.id === 'S04'
+    ? (() => { const name = coreCharacters.match(/2126년 당회장 자리는 ([가-힣]{2,4})가 앉았다\./u)?.[1]; if (!name) throw new Error('E_S04_OPENING_RULER'); return name })()
+    : row.government.match(/(?:^|[,，]\s*)회장 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1] ?? leaderForNames(coreCharacters, row.names),
   capital: row.capital,
   capitalName: row.capital,
 }))
@@ -894,8 +897,11 @@ for (const person of peopleCatalog) {
   const cards = personCards.get(person.name) ?? []
   const primary = primaryCard(ledger)
   const body = primary?.body ?? ''
+  const lineage = lineageByName.get(person.name)
+  if (!lineage) throw new Error(`E_PERSON_LINEAGE_MISSING:${person.name}`)
   const detail = {
     ...person,
+    clan: lineage.clan ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨`, crest: `clan-crests/${lineage.base_clan ?? lineage.clan}.svg` } : null,
     generation: ledger.generation,
     minors: ledger.minors,
     sourceKind: ledger.source,
@@ -916,4 +922,53 @@ for (const person of peopleCatalog) {
 await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const peopleCatalog = ${JSON.stringify(peopleCatalog, null, 2)} as const\nexport const peopleCount = ${peopleCatalog.length}\n`)
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
+
+const clanTablesText = await readFile(resolve(repoRoot, 'lore/name-pools/clan-hangnyeol-tables.json'), 'utf8')
+const clanTables = JSON.parse(clanTablesText)
+const crestIndexText = await readFile(resolve(publicRoot, 'clan-crests/index.json'), 'utf8')
+const crestIndex = JSON.parse(crestIndexText)
+const branchesByBase = new Map()
+for (const branch of clanTables.clans.filter((entry) => entry.id.includes('-agreed-'))) {
+  const base = branch.id.split('-agreed-')[0]
+  const siblings = branchesByBase.get(base) ?? []
+  siblings.push({ id: branch.id, name: branch.branch, status: '추론', members: [] })
+  branchesByBase.set(base, siblings)
+}
+
+const clanFamilyCatalog = []
+for (const clan of clanTables.clans) {
+  if (clan.id.includes('-agreed-')) continue
+  const crest = crestIndex.crests.find((entry) => entry.id === clan.id)
+  const members = peopleCatalog
+    .filter((person) => lineageByName.get(person.name)?.base_clan === clan.id || lineageByName.get(person.name)?.clan === clan.id)
+    .map((person) => {
+      const lineage = lineageByName.get(person.name)
+      return {
+        id: person.id,
+        name: person.name,
+        branchId: lineage?.base_clan ? lineage.clan : null,
+        stateName: person.stateName,
+        occupation: person.occupation,
+        detailRoute: person.detailRoute,
+      }
+    })
+  const branches = branchesByBase.get(clan.id) ?? []
+  for (const branch of branches) branch.members = members.filter((person) => person.branchId === branch.id).map((person) => person.id)
+  const family = {
+    id: clan.id,
+    surname: clan.surname,
+    bongwan: clan.bongwan,
+    hanja: clan.bongwan_hanja ?? null,
+    branches,
+    crest: crest ? { source: crest.source, motif: crest.motif } : null,
+    members,
+  }
+  clanFamilyCatalog.push(family)
+}
+
+const clanFamilyCatalogOut = clanFamilyCatalog.sort((a, b) =>
+  a.bongwan.localeCompare(b.bongwan, 'ko') || a.surname.localeCompare(b.surname, 'ko')
+)
+await writeFile(resolve(generatedRoot, 'clanFamilyCatalog.ts'), `export const clanFamilyCatalog = ${JSON.stringify(clanFamilyCatalogOut, null, 2)} as const\n`)
+
 console.log(`WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)

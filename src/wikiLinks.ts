@@ -9,6 +9,7 @@ export const wikiLinks = {
   offices: '/world/Offices-and-Ranks',
   houses: '/world/Chaebol-Houses-and-Century-Factions',
   characters: '/people',
+  families: '/families',
   castIndex: '/people',
   hangnyeol: '/world/Hangnyeol-and-Bon-gwan',
   operatingHouses: '/world/Operating-Houses',

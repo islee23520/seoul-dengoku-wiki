@@ -134,7 +134,8 @@ test('bulk materialization is byte-stable and selected check is read-only', asyn
   const options = { atlasPath: candidatePath, outDir: directory }
   try {
     const written = await materializeWorldAtlas(options)
-    assert.equal(written.projections.length, 34)
+    // 소유자 결정(2026-09-28)으로 G27 페이지를 지워 투영은 33개다.
+    assert.equal(written.projections.length, 33)
     const before = await readFile(join(directory, PROJECTION_PATHS[0]), 'utf8')
     assert.deepEqual(await materializeWorldAtlas({ ...options, check: true }), written)
     assert.deepEqual(await materializeWorldAtlas({ ...options, projection: PROJECTION_PATHS[0], check: true }), {
