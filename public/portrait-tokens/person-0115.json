@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0115",
+  "characterId": "K115",
+  "name": "배우진",
+  "stateId": "S05",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": false,
+    "role": "동방사 사령관"
+  },
+  "artProposal": {
+    "description": "A man who commands an eastern protective force; proposed close-cut black hair, weathered face, firm expression, simple dark blue-grey utility jacket, no rank marks.",
+    "approvedAppearance": null,
+    "approvedOutfit": null,
+    "approvedEquipmentIds": [],
+    "approvalNote": "Every visible appearance and clothing choice in this image is an unapproved art proposal, not WIKI canon. No equipment approval is inferred."
+  },
+  "style": {
+    "styleId": "wingzero-119-medium-close-up-b-study-1",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-0115.png",
+    "sha256": "783080be4b9b4d91457ff38045c4620aadbd94f66dbf6d87ceb701bc2fffcd42",
+    "width": 1145,
+    "height": 1374
+  }
+}

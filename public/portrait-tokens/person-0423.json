@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0423",
+  "characterId": "K423",
+  "name": "오경재",
+  "stateId": "S04",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": false,
+    "role": "명부교회 당회장"
+  },
+  "artProposal": {
+    "description": "A man who leads a record-keeping congregation; proposed neatly brushed dark hair, narrow thoughtful face, plain faded olive civilian coat without clerical insignia.",
+    "approvedAppearance": null,
+    "approvedOutfit": null,
+    "approvedEquipmentIds": [],
+    "approvalNote": "Every visible appearance and clothing choice in this image is an unapproved art proposal, not WIKI canon. No equipment approval is inferred."
+  },
+  "style": {
+    "styleId": "wingzero-119-medium-close-up-b-study-1",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-0423.png",
+    "sha256": "4ef0cc9f3d6c56bcf240f8639b7fd072140f01d4e5bdf8f3d8beca9095257111",
+    "width": 1145,
+    "height": 1374
+  }
+}

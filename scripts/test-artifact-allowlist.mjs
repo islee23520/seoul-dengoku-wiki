@@ -17,6 +17,8 @@ async function fixture(extra = {}, omit = []) {
     ...Object.fromEntries(allowlist.rootFiles.map((file) => [file, '{}'])),
     'wiki-contract.json': JSON.stringify({ documents: [{ slug: 'Ailments' }], englishDocuments: [{ slug: 'Ailments' }] }),
     'person-details/person-0001.json': '{}',
+    'portraits/person-0001.png': '',
+    'portrait-tokens/person-0001.json': '{}',
     'regional-terrain-tiles/0-0.bin': '',
     'regional-terrain-tiles/0-0-water.json': '{}',
     'state-flags/S01.webp': '',
@@ -47,6 +49,7 @@ test('unlisted files, private chunks and missing artifacts fail', async () => {
   const cases = [
     [{ 'debug.json': '{}' }, [], /E_ARTIFACT_UNLISTED: debug\.json/],
     [{ 'person-details/person-1.json': '{}' }, [], /E_ARTIFACT_UNLISTED: person-details\/person-1\.json/],
+    [{ 'portraits/person-1.png': '' }, [], /E_ARTIFACT_UNLISTED: portraits\/person-1\.png/],
     [{ 'drafts/Cast-Profile-Contract.json': '{}' }, [], /E_ARTIFACT_UNLISTED: drafts\/Cast-Profile-Contract\.json/],
     [{ 'assets/Cast-Profile-Contract-AbCd1234.js': '' }, [], /E_ARTIFACT_CHUNK: assets\/Cast-Profile-Contract-AbCd1234\.js/],
     [{ 'assets/unhashed.js': '' }, [], /E_ARTIFACT_UNLISTED: assets\/unhashed\.js/],

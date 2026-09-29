@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1009",
+  "characterId": "K1009",
+  "name": "신종목",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": true,
+    "role": "Father, former special recovery operative and return-network field contractor; knows bayonet fighting, with no current weapon possession established"
+  },
+  "artProposal": {
+    "face": "Long narrow face, angular cheeks, deep-set tired eyes and guarded gaze",
+    "hair": "Short dark hair with a conspicuous white temple streak",
+    "outfit": "Worn deep brown field overshirt over slate shirt",
+    "palette": [
+      "deep brown",
+      "slate",
+      "muted skin"
+    ],
+    "carriedWeapons": "none depicted; bayonet-fighting skill does not imply possession"
+  },
+  "style": {
+    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-1009.png",
+    "sha256": "d2b246d4169cbe26fd2f44249714a0fcb432144792030a5ac98a6815cb3d622e",
+    "width": 1199,
+    "height": 1312
+  }
+}

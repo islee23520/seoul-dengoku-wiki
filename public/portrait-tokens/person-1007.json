@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1007",
+  "characterId": "K1007",
+  "name": "김연규",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": true,
+    "role": "Senior records official and head of the Onmin Council"
+  },
+  "artProposal": {
+    "face": "Narrow long face, reserved eyes and thin round glasses",
+    "hair": "Swept gray hair",
+    "outfit": "Plain deep navy high-collared civilian coat over light gray shirt",
+    "palette": [
+      "deep navy",
+      "light gray",
+      "muted skin"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred"
+  },
+  "style": {
+    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-1007.png",
+    "sha256": "6722ec56ff5587d57bcae64dcc7a5c2a207a643568d169ed086ca179ceddc2d5",
+    "width": 1215,
+    "height": 1295
+  }
+}
