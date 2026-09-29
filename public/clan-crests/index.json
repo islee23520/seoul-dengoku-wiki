@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "count": 176,
+  "count": 177,
   "crests": [
     {
       "id": "ac10-cc3d-c6d0",
@@ -2052,6 +2052,18 @@
       "motif": "bell",
       "secondMotif": "bat",
       "modifier": "hole",
+      "ink": "red"
+    },
+    {
+      "id": "goryeong-shin",
+      "surname": "신",
+      "bongwan": "고령",
+      "source": "generated",
+      "layout": "stack3",
+      "frame": "none",
+      "motif": "cloud",
+      "secondMotif": "butterfly",
+      "modifier": "alternating",
       "ink": "red"
     }
   ]

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
+import gurpsData from '../../lore/name-pools/gurps-cast.json'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { peopleCatalog } from '../generated/peopleCatalog'
@@ -31,12 +32,25 @@ function DataTable({ title, rows }: { title: string; rows: Array<[string, string
   )
 }
 
+
+function findGurps(): any {
+  try {
+    const path = window.location.pathname
+    const match = path.match(/person-(\d+)/)
+    if (!match) return null
+    const url = '/people/person-' + match[1]
+    const data = (gurpsData as { people: Array<{ url: string; [key: string]: unknown }> })
+    return data.people.find(p => p.url === url) || null
+  } catch { return null }
+}
+
 export default function PersonDetailPage() {
   const { personId } = useParams()
   const summary = peopleCatalog.find((person) => person.id === personId)
   const [detail, setDetail] = useState<PersonDetail | null>(null)
   const [failed, setFailed] = useState(false)
 
+  
   useEffect(() => {
     if (!summary) return
     let active = true
@@ -82,6 +96,38 @@ export default function PersonDetailPage() {
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
           {sectionOrder.filter((label) => detail.sections[label]).map((label) => <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.sections[label]}</ReactMarkdown></section>)}
+          
+      {(() => { const gurps: any = findGurps(); return gurps ? (
+        <section className="gurps-sheet">
+          <h2>겁스 4판 시트</h2>
+          <div className="gurps-attrs">
+            {(['ST','DX','IQ','HT'] as const).map(attr => (
+              <div key={attr} className="gurps-attr">
+                <span className="gurps-attr-code">{attr}</span>
+                <span className="gurps-attr-val">{gurps.attributes?.[attr]?.value ?? '—'}</span>
+              </div>
+            ))}
+          </div>
+          <div className="gurps-cp">
+            <span>총 CP: <strong>{gurps.cp?.total ?? '—'}</strong></span>
+            {gurps.cp?.unspent > 0 && <span className="gurps-unspent">미사용 {gurps.cp.unspent}CP</span>}
+          </div>
+          {gurps.skills && gurps.skills.length > 0 && (
+            <div className="gurps-skills">
+              <h3>기술</h3>
+              <table>
+                <thead><tr><th>기술</th><th>조건</th><th>수준</th></tr></thead>
+                <tbody>
+                  {gurps.skills.map((s: { ko: string; attr: string; level: number }, i: number) => (
+                    <tr key={i}><td>{s.ko}</td><td>{s.attr}</td><td>{s.level}</td></tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </section>
+      ) : null; })()}
+  
           <details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
           <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>
         </div>

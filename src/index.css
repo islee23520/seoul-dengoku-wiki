@@ -488,3 +488,15 @@ summary:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+.gurps-sheet { margin-block: 1.5rem; padding: 1rem; background: var(--wiki-toc); border-radius: 8px; }
+.gurps-attrs { display: flex; gap: 1rem; margin-block: .8rem; }
+.gurps-attr { display: flex; flex-direction: column; align-items: center; padding: .5rem 1rem; background: var(--wiki-paper); border: 1px solid var(--wiki-line); border-radius: 6px; }
+.gurps-attr-code { font-size: .75rem; color: var(--wiki-muted); font-weight: 700; }
+.gurps-attr-val { font-size: 1.3rem; font-weight: bold; color: var(--wiki-accent); }
+.gurps-cp { display: flex; gap: 1rem; margin-block: .5rem; font-size: .9rem; }
+.gurps-unspent { color: var(--wiki-accent-dark); font-weight: 600; }
+.gurps-skills h3 { font-size: .95rem; color: var(--wiki-nav); margin-block-end: .4rem; }
+.gurps-skills table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+.gurps-skills th { background: var(--wiki-nav); color: white; padding: .3rem .6rem; text-align: left; }
+.gurps-skills td { padding: .3rem .6rem; border-block-end: 1px solid var(--wiki-line); }
