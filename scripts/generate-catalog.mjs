@@ -922,4 +922,53 @@ for (const person of peopleCatalog) {
 await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const peopleCatalog = ${JSON.stringify(peopleCatalog, null, 2)} as const\nexport const peopleCount = ${peopleCatalog.length}\n`)
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
+
+const clanTablesText = await readFile(resolve(repoRoot, 'lore/name-pools/clan-hangnyeol-tables.json'), 'utf8')
+const clanTables = JSON.parse(clanTablesText)
+const crestIndexText = await readFile(resolve(publicRoot, 'clan-crests/index.json'), 'utf8')
+const crestIndex = JSON.parse(crestIndexText)
+const branchesByBase = new Map()
+for (const branch of clanTables.clans.filter((entry) => entry.id.includes('-agreed-'))) {
+  const base = branch.id.split('-agreed-')[0]
+  const siblings = branchesByBase.get(base) ?? []
+  siblings.push({ id: branch.id, name: branch.branch, status: '추론', members: [] })
+  branchesByBase.set(base, siblings)
+}
+
+const clanFamilyCatalog = []
+for (const clan of clanTables.clans) {
+  if (clan.id.includes('-agreed-')) continue
+  const crest = crestIndex.crests.find((entry) => entry.id === clan.id)
+  const members = peopleCatalog
+    .filter((person) => lineageByName.get(person.name)?.base_clan === clan.id || lineageByName.get(person.name)?.clan === clan.id)
+    .map((person) => {
+      const lineage = lineageByName.get(person.name)
+      return {
+        id: person.id,
+        name: person.name,
+        branchId: lineage?.base_clan ? lineage.clan : null,
+        stateName: person.stateName,
+        occupation: person.occupation,
+        detailRoute: person.detailRoute,
+      }
+    })
+  const branches = branchesByBase.get(clan.id) ?? []
+  for (const branch of branches) branch.members = members.filter((person) => person.branchId === branch.id).map((person) => person.id)
+  const family = {
+    id: clan.id,
+    surname: clan.surname,
+    bongwan: clan.bongwan,
+    hanja: clan.bongwan_hanja ?? null,
+    branches,
+    crest: crest ? { source: crest.source, motif: crest.motif } : null,
+    members,
+  }
+  clanFamilyCatalog.push(family)
+}
+
+const clanFamilyCatalogOut = clanFamilyCatalog.sort((a, b) =>
+  a.bongwan.localeCompare(b.bongwan, 'ko') || a.surname.localeCompare(b.surname, 'ko')
+)
+await writeFile(resolve(generatedRoot, 'clanFamilyCatalog.ts'), `export const clanFamilyCatalog = ${JSON.stringify(clanFamilyCatalogOut, null, 2)} as const\n`)
+
 console.log(`WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)
