@@ -936,4 +936,13 @@ const clanFamilyCatalogOut = clanFamilyCatalog.sort((a, b) =>
 )
 await writeFile(resolve(generatedRoot, 'clanFamilyCatalog.ts'), `export const clanFamilyCatalog = ${JSON.stringify(clanFamilyCatalogOut, null, 2)} as const\n`)
 
-console.log(`WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)
+console.log(`
+// Mark character cast pages as redirects to /people
+const castRedirectPatterns = [/^Cast-State-\d+$/, /^Core-Characters$/, /^Cast-Unaffiliated$/, /^Cast-Index/, /^Cast-Relations$/, /^Cast-Corridors-Index$/]
+for (const entry of Object.values(renderedBySlug)) {
+  if (castRedirectPatterns.some(p => p.test(entry.slug))) {
+    entry.redirectTo = '/people'
+  }
+}
+
+WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)

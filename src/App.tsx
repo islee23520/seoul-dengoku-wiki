@@ -49,7 +49,17 @@ export default function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        
+      {/* Character cast pages redirect to /people */}
+      <Route path="/world/Cast-State-:stateId" element={<Navigate to="/people" replace />} />
+      <Route path="/world/Core-Characters" element={<Navigate to="/people" replace />} />
+      <Route path="/world/Cast-Unaffiliated" element={<Navigate to="/people" replace />} />
+      <Route path="/world/Cast-Index" element={<Navigate to="/people" replace />} />
+      <Route path="/world/Cast-Index-S4" element={<Navigate to="/people" replace />} />
+      <Route path="/world/Cast-Corridors-Index" element={<Navigate to="/people" replace />} />
+      <Route path="/world/Cast-Relations" element={<Navigate to="/people" replace />} />
+
+      <Route path="/" element={<HomePage />} />
         <Route path="/states" element={<StatesPage />} />
         <Route path="/states/:stateSlug" element={<StateDetailPage />} />
         <Route path="/updates" element={<UpdatesPage />} />
