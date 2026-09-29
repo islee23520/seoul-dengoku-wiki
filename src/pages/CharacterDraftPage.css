@@ -33,3 +33,9 @@
 .draft-actions button:first-child{background:var(--wiki-accent);color:#fff;}
 .draft-actions a button{background:var(--wiki-nav);color:#fff;}
 @media(max-width:768px){.ai-row{flex-direction:column;}.option-list{grid-template-columns:1fr;}}
+.draft-charselect { margin-block-end: 1.5rem; padding: 1rem; background: var(--wiki-toc); border-radius: 8px; }
+.charselect-row { display: flex; gap: .5rem; align-items: center; }
+.charselect-search { flex: 1; padding: .5rem .8rem; border: 1px solid var(--wiki-line); border-radius: 4px; font-size: .9rem; }
+.charselect-dropdown { padding: .5rem .8rem; border: 1px solid var(--wiki-line); border-radius: 4px; font-size: .9rem; min-inline-size: 200px; background: var(--wiki-paper); }
+.charselect-loading { font-size: .85rem; color: var(--wiki-accent-dark); }
+.charselect-info { margin-block-start: .5rem; font-size: .85rem; color: var(--wiki-muted); }

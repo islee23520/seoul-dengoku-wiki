@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './CharacterDraftPage.css'
 import { ADVANTAGES, DISADVANTAGES, QUIRKS, BACKGROUNDS, APPEARANCES, AMBITIONS } from '../data/gurps-options'
@@ -33,6 +33,74 @@ function toggleItem(list: string[], id: string): string[] {
 
 export default function CharacterDraftPage() {
   const [sheet, setSheet] = useState<GurmpsSheet>(DEFAULT)
+
+  const [characterList, setCharacterList] = useState<Array<{id: string; name: string; state: string}>>([])
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedCharId, setSelectedCharId] = useState('')
+  const [loadingChar, setLoadingChar] = useState(false)
+
+
+  
+  useEffect(() => {
+    fetch('/api/characters')
+      .then(res => res.json())
+      .then(data => {
+        if (data.characters) setCharacterList(data.characters)
+      })
+      .catch(() => {
+        // API not available — try loading from static data
+        fetch('/wiki/assets/peopleCatalog-BDMn1gFg.js')
+          .catch(() => console.log('Character list unavailable'))
+      })
+  }, [])
+
+  const filteredCharacters = useMemo(() => {
+    if (!searchQuery.trim()) return characterList.slice(0, 50)
+    const q = searchQuery.trim().toLowerCase()
+    return characterList.filter(c =>
+      c.name.toLowerCase().includes(q) || c.state?.toLowerCase().includes(q)
+    ).slice(0, 50)
+  }, [characterList, searchQuery])
+
+  const loadCharacter = useCallback(async (id: string) => {
+    if (!id) return
+    setLoadingChar(true)
+    try {
+      const res = await fetch('/api/characters/' + id)
+      if (!res.ok) { console.log('Character not found'); return }
+      const data = await res.json()
+      // Populate the form with loaded data
+      setSheet(prev => ({
+        ...prev,
+        name: data.name || '',
+        state: data.state || '',
+        position: data.role?.display || data.position || '',
+        occupation: data.occupation || '',
+        selectedAdvantages: [],
+        selectedDisadvantages: [],
+        selectedQuirks: [],
+        selectedBackground: '',
+        selectedAppearance: '',
+        selectedAmbition: '',
+      }))
+      // Set attributes if available
+      if (data.attributes) {
+        setSheet(prev => ({
+          ...prev,
+          attributes: {
+            ST: data.attributes.ST?.value ?? 10,
+            DX: data.attributes.DX?.value ?? 10,
+            IQ: data.attributes.IQ?.value ?? 10,
+            HT: data.attributes.HT?.value ?? 10,
+          },
+          cp: data.cp?.total ?? 100,
+        }))
+      }
+    } catch (e) {
+      console.log('Failed to load character:', e)
+    }
+    setLoadingChar(false)
+  }, [])
 
   const attrCP = useMemo(() => Object.values(sheet.attributes).reduce((s, v) => s + (CP_COST[v] || 0), 0), [sheet.attributes])
   const advCP = useMemo(() => sheet.selectedAdvantages.reduce((s, id) => s + (ADVANTAGES.find(a => a.id === id)?.cp || 0), 0), [sheet.selectedAdvantages])
@@ -102,7 +170,43 @@ export default function CharacterDraftPage() {
       <h1>겁스 캐릭터 시트 생성기</h1>
       <p className="draft-hint">저장하여도 정본은 바뀌지 않았습니다. 정본 반영은 별도 승인이 필요합니다.</p>
 
-      <section className="draft-ai">
+      
+      <section className="draft-charselect">
+        <h2>기존 인물 선택</h2>
+        <div className="charselect-row">
+          <input
+            type="text"
+            placeholder="이름 또는 국가로 검색..."
+            value={searchQuery}
+            onChange={e => setSearchQuery(e.target.value)}
+            className="charselect-search"
+          />
+          <select
+            value={selectedCharId}
+            onChange={e => {
+              setSelectedCharId(e.target.value)
+              if (e.target.value) loadCharacter(e.target.value)
+            }}
+            className="charselect-dropdown"
+          >
+            <option value="">— 인물 선택 —</option>
+            {filteredCharacters.map(c => (
+              <option key={c.id} value={c.id}>
+                {c.name} ({c.state || '무소속'})
+              </option>
+            ))}
+          </select>
+          {loadingChar && <span className="charselect-loading">불러오는 중...</span>}
+        </div>
+        {selectedCharId && (
+          <p className="charselect-info">
+            선택: <strong>{characterList.find(c => c.id === selectedCharId)?.name}</strong>
+            {' '}| 능력치와 기본 정보가 로드됩니다. 수정 후 초안 내보내기 하세요.
+          </p>
+        )}
+      </section>
+
+<section className="draft-ai">
         <h2>AI 자동 생성 (BYOK)</h2>
         <p className="ai-hint">자기 AI 키를 입력하세요. 키는 브라우저에만 저장되고 서버로 전송되지 않습니다.</p>
         <div className="ai-row">
