@@ -38,6 +38,30 @@ test('density validation rejects a code that is not in the pinned atlas', async 
   assert.throws(() => validatedDensities(regions, source), /E_REGION_POPULATION_COVERAGE/u)
 })
 
+test('outside administrative units keep observed boundaries distinct from 2126 control', async () => {
+  const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
+  assert.equal(outside.schema, 'outside-seoul-admin-units.v1')
+  assert.equal(outside.sourceSha256, 'c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f')
+  assert.equal(outside.units.length, 1309)
+  assert.equal(new Set(outside.units.map((unit) => unit.id)).size, 1309)
+  assert.deepEqual(Object.fromEntries(['경기도', '강원특별자치도', '충청북도', '충청남도', '인천광역시'].map((province) => [province, outside.units.filter((unit) => unit.province === province).length])), { 경기도: 602, 강원특별자치도: 188, 충청북도: 153, 충청남도: 208, 인천광역시: 158 })
+  assert.ok(outside.units.every((unit) => unit.path.startsWith('M') && unit.holder2126 === null))
+  const source = JSON.parse(await readFile(new URL('../lore/regions/outside-control-2126.json', import.meta.url), 'utf8'))
+  const projected = JSON.parse(await readFile(new URL('../public/outside-control-2126.json', import.meta.url), 'utf8'))
+  assert.deepEqual(projected, { schema: source.schema, assignments: source.assignments })
+  assert.deepEqual(source.assignments.map(({ unitId, vassal, suzerain, station }) => [unitId, vassal, suzerain, station]), [
+    ['4128757000', '경기도', 'S06', '대화'],
+    ['4183039500', '제일수문', 'S01', '지평'],
+    ['5111057000', '제이수문', 'S01', '춘천'],
+  ])
+  const knownStates = new Set(JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8')).states.map((state) => state.id))
+  assert.ok(source.assignments.every(({ unitId, suzerain }) => outside.units.some((unit) => unit.id === unitId) && knownStates.has(suzerain)))
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  assert.match(map, /data-outside-unit=\{unit\.id\}/u)
+  assert.match(map, /chooseOutsideUnit\(unit\)/u)
+  assert.match(map, /selectedOutsideAssignment\.vassal/u)
+})
+
 test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const displayed = presentationStations(data.stations)

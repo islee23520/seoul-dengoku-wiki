@@ -551,6 +551,8 @@
 
 .territory-flat-svg:active { cursor: grabbing; }
 .territory-flat-region { cursor: pointer; }
+.territory-outside-unit { cursor: pointer; }
+.territory-outside-unit:hover, .territory-outside-unit:focus-visible { fill-opacity: 0.35; stroke: #ffe18c; stroke-opacity: 1; stroke-width: 2; }
 .territory-flat-region:hover, .territory-flat-region:focus { fill-opacity: 0.95; stroke: #fff1bf; stroke-width: 2; }
 .territory-national-borders { filter: drop-shadow(0 0 2px #e7d9ae); }
 .territory-flat-river { filter: drop-shadow(0 0 2px #071f31); }
