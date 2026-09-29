@@ -164,64 +164,460 @@
   ],
   "martialSchools": [
     {
-      "formalName": "수문호흡법",
-      "hanja": "水門呼吸法",
+      "formalName": "잔향권",
+      "hanja": "殘響拳",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/17"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     },
     {
-      "formalName": "차륜강체공",
-      "hanja": "車輛鋼體功",
+      "formalName": "절향권",
+      "hanja": "絕響拳",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/17"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     },
     {
-      "formalName": "강단호명법",
-      "hanja": "講壇呼名法",
+      "formalName": "박리권",
+      "hanja": "搏籬拳",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/17"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     },
     {
-      "formalName": "호위철벽진",
-      "hanja": "護衛鐵壁陣",
+      "formalName": "탄궁권",
+      "hanja": "彈穹拳",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/17"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     },
     {
-      "formalName": "죽검연환법",
-      "hanja": "竹劍連環法",
+      "formalName": "봉수권",
+      "hanja": "封髓拳",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/17"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     },
     {
-      "formalName": "연각권법",
-      "hanja": "燕脚拳法",
+      "formalName": "단말권",
+      "hanja": "斷脈拳",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/17"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "유엽수",
+      "hanja": "柔葉手",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "락엽수",
+      "hanja": "落葉手",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "붕뢰권",
+      "hanja": "崩賴拳",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "파쇄권",
+      "hanja": "破碎拳",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "묘광검",
+      "hanja": "秒光劍",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "궤적검",
+      "hanja": "軌跡劍",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "진도검",
+      "hanja": "振刀劍",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "월광검법",
+      "hanja": "月光劍法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "발도검",
+      "hanja": "拔刀劍",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "섬도검",
+      "hanja": "閃刀劍",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "유천검",
+      "hanja": "流天劍",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "락천검법",
+      "hanja": "落天劍法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "잔월검",
+      "hanja": "残月劍",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "만월검법",
+      "hanja": "滿月劍法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "유석도",
+      "hanja": "溜石刀",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "청벽도",
+      "hanja": "靑璧刀",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "녹천도",
+      "hanja": "鏽天刀",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "세철도법",
+      "hanja": "洗鐵刀法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "단재도",
+      "hanja": "斷材刀",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "백절도",
+      "hanja": "百截刀",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "군격도",
+      "hanja": "軍擊刀",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "섬격도법",
+      "hanja": "閃擊刀法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     },
     {
       "formalName": "총검술",
       "hanja": "銃劍術",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/17"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     },
     {
-      "formalName": "감응조준법",
-      "hanja": "感應照準法",
+      "formalName": "궤간창",
+      "hanja": "軌間槍",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/17"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     },
     {
-      "formalName": "상륙호위진",
-      "hanja": "上陸護衛陣",
+      "formalName": "관통창",
+      "hanja": "貫穿槍",
       "alias": null,
-      "source": "lore/culture/Martial-Paths.json#/content/91"
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "화극술",
+      "hanja": "火戟術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "단염극",
+      "hanja": "斷炎戟",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "철간봉",
+      "hanja": "鐵竿棒",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "풍운봉",
+      "hanja": "風雲棒",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "수면각",
+      "hanja": "水面脚",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "섬류각",
+      "hanja": "閃流脚",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "학슬각",
+      "hanja": "鶴膝脚",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "풍작퇴",
+      "hanja": "風爵腿",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "연쇄각",
+      "hanja": "連鎖脚",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "폭쇄퇴",
+      "hanja": "爆鎖腿",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "경운각",
+      "hanja": "輕雲脚",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "추운각",
+      "hanja": "追雲脚",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "저시궁",
+      "hanja": "低視弓",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "관시궁",
+      "hanja": "貫視弓",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "예국궁",
+      "hanja": "禮國弓",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "명중궁술",
+      "hanja": "命中弓術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "급장노",
+      "hanja": "急張弩",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "연노술",
+      "hanja": "連弩術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "탄석술",
+      "hanja": "彈石術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "비석술",
+      "hanja": "飛石術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "비철술",
+      "hanja": "飛鐵術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "산우술",
+      "hanja": "散雨術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "섬척",
+      "hanja": "閃擲",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "묘살",
+      "hanja": "秒殺",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "격창술",
+      "hanja": "擲槍術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "관창술",
+      "hanja": "貫槍術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "연막술",
+      "hanja": "煙幕術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "독연술",
+      "hanja": "毒煙術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "궤도신법",
+      "hanja": "軌道身法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "유성신공",
+      "hanja": "流星身功",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "벽행공",
+      "hanja": "壁行功",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "수직술",
+      "hanja": "垂直術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "공중공",
+      "hanja": "空中功",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "전공술",
+      "hanja": "轉空術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "월장공",
+      "hanja": "越障功",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "비장술",
+      "hanja": "飛障術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "연운보",
+      "hanja": "蓮雲步",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "무흔보법",
+      "hanja": "無痕步法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "궤보",
+      "hanja": "軌步",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "활보술",
+      "hanja": "滑步術",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "풍운보",
+      "hanja": "風雲步",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "뇌운보법",
+      "hanja": "雷雲步法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "급전보",
+      "hanja": "急轉步",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
+    },
+    {
+      "formalName": "선풍보법",
+      "hanja": "旋風步法",
+      "alias": null,
+      "source": "lore/culture/Martial-Paths.json#/content/15"
     }
   ],
   "martialBranch": {
     "name": "개방 무공",
     "formalName": null,
-    "source": "lore/culture/Martial-Paths.json#/content/43"
+    "source": "lore/culture/Martial-Paths.json#/content/35"
   },
   "offices": [
     {
