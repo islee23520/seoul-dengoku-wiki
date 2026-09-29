@@ -38,6 +38,20 @@ test('density validation rejects a code that is not in the pinned atlas', async 
   assert.throws(() => validatedDensities(regions, source), /E_REGION_POPULATION_COVERAGE/u)
 })
 
+test('outside administrative units keep observed boundaries distinct from 2126 control', async () => {
+  const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
+  assert.equal(outside.schema, 'outside-seoul-admin-units.v1')
+  assert.equal(outside.sourceSha256, 'c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f')
+  assert.equal(outside.units.length, 1151)
+  assert.equal(new Set(outside.units.map((unit) => unit.id)).size, 1151)
+  assert.deepEqual(Object.fromEntries(['경기도', '강원특별자치도', '충청북도', '충청남도'].map((province) => [province, outside.units.filter((unit) => unit.province === province).length])), { 경기도: 602, 강원특별자치도: 188, 충청북도: 153, 충청남도: 208 })
+  assert.ok(outside.units.every((unit) => unit.path.startsWith('M') && unit.holder2126 === null))
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  assert.match(map, /data-outside-unit=\{unit\.id\}/u)
+  assert.match(map, /chooseOutsideUnit\(unit\)/u)
+  assert.match(map, /selectedOutsideUnitData\.holder2126/u)
+})
+
 test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const displayed = presentationStations(data.stations)
