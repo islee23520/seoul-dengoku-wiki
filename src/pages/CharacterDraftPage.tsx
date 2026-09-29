@@ -95,11 +95,11 @@ export default function CharacterDraftPage() {
   }, [])
 
   const filteredCharacters = useMemo(() => {
-    if (!searchQuery.trim()) return characterList.slice(0, 50)
+    if (!searchQuery.trim()) return characterList
     const q = searchQuery.trim().toLowerCase()
     return characterList.filter(c =>
       c.name.toLowerCase().includes(q) || c.state?.toLowerCase().includes(q)
-    ).slice(0, 50)
+    )
   }, [characterList, searchQuery])
 
   const loadCharacter = useCallback(async (id: string) => {
@@ -268,7 +268,7 @@ export default function CharacterDraftPage() {
           <label>이름
             <input type="text" value={sheet.name} onChange={e => set('name', e.target.value)} placeholder="이름 입력" list="name-list" />
             <datalist id="name-list">
-              {characterList.slice(0, 100).map((c: { id: string; name: string }) => <option key={c.id} value={c.name} />)}
+              {characterList.map((c: { id: string; name: string }) => <option key={c.id} value={c.name} />)}
             </datalist>
           </label>
           <label>국가
