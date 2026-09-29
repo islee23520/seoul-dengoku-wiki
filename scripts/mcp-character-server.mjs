@@ -18,7 +18,7 @@ function loadGurps() {
 
 function findCharacter(id) {
   const data = loadGurps()
-  return data.characters?.find(c => c.id === id || c.personId === id) || null
+  return data.people?.find(c => c.id === id || c.personId === id) || null
 }
 
 function validateSheet(sheet) {
@@ -45,7 +45,7 @@ const server = createServer((req, res) => {
   // GET /api/characters — 전체 목록 (요약)
   if (req.method === 'GET' && parts[0] === 'api' && parts[1] === 'characters' && parts.length === 2) {
     const data = loadGurps()
-    const list = (data.characters || []).map(c => ({
+    const list = (data.people || []).map(c => ({
       id: c.id, personId: c.personId, name: c.name,
       state: c.state, cp: c.cp, tier: c.tier,
       ST: c.attributes?.ST, DX: c.attributes?.DX, IQ: c.attributes?.IQ, HT: c.attributes?.HT
@@ -88,10 +88,10 @@ const server = createServer((req, res) => {
         }
         // 저장 로직: gurps-cast.json에 추가
         const data = loadGurps()
-        const newId = 'person-' + String(1000 + (data.characters?.length || 0) + 1)
+        const newId = 'person-' + String(1000 + (data.people?.length || 0) + 1)
         const newChar = { id: newId, ...sheet, provenance: { kind: 'ai', source: 'mcp-api', timestamp: new Date().toISOString() } }
-        if (!data.characters) data.characters = []
-        data.characters.push(newChar)
+        if (!data.people) data.people = []
+        data.people.push(newChar)
         writeFileSync(GURPS, JSON.stringify(data, null, 2) + '\n')
         res.writeHead(201).end(JSON.stringify({ created: true, id: newId, character: newChar }))
       } catch (e) {
@@ -109,9 +109,9 @@ const server = createServer((req, res) => {
       try {
         const updates = JSON.parse(body)
         const data = loadGurps()
-        const idx = (data.characters || []).findIndex(c => c.id === parts[2] || c.personId === parts[2])
+        const idx = (data.people || []).findIndex(c => c.id === parts[2] || c.personId === parts[2])
         if (idx === -1) { res.writeHead(404).end(JSON.stringify({ error: '인물 없음' })); return }
-        const merged = { ...data.characters[idx], ...updates }
+        const merged = { ...data.people[idx], ...updates }
         const errors = validateSheet(merged)
         if (errors.length > 0) {
           res.writeHead(400).end(JSON.stringify({ error: '검증 실패', details: errors }))
@@ -119,7 +119,7 @@ const server = createServer((req, res) => {
         }
         merged._updated = new Date().toISOString()
         merged._updatedBy = 'mcp-api'
-        data.characters[idx] = merged
+        data.people[idx] = merged
         writeFileSync(GURPS, JSON.stringify(data, null, 2) + '\n')
         res.writeHead(200).end(JSON.stringify({ updated: true, character: merged }))
       } catch (e) {
