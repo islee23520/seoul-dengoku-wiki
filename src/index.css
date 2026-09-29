@@ -500,3 +500,36 @@ summary:focus-visible {
 .gurps-skills table { width: 100%; border-collapse: collapse; font-size: .85rem; }
 .gurps-skills th { background: var(--wiki-nav); color: white; padding: .3rem .6rem; text-align: left; }
 .gurps-skills td { padding: .3rem .6rem; border-block-end: 1px solid var(--wiki-line); }
+
+.gurps-sheet { margin-block-start: 2rem; padding: 1.2rem; background: var(--wiki-toc); border-radius: 8px; }
+.gurps-cp-total { display: flex; align-items: baseline; gap: 0.5rem; margin-block-end: 1rem; }
+.cp-number { font-size: 2rem; font-weight: bold; color: var(--wiki-accent); }
+.cp-label { font-size: 1rem; color: var(--wiki-muted); }
+.cp-note { font-size: 0.85rem; color: var(--wiki-muted); margin-left: 0.5rem; }
+.gurps-attrs { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.8rem; margin-block-end: 1rem; }
+.gurps-attr { display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0.8rem; background: var(--wiki-paper); border-radius: 6px; border: 1px solid var(--wiki-line); }
+.attr-icon { font-size: 1.4rem; }
+.attr-key { font-weight: bold; font-size: 1.1rem; min-width: 2.2rem; }
+.attr-value { font-size: 1.3rem; font-weight: bold; color: var(--wiki-accent); }
+.attr-desc { font-size: 0.75rem; color: var(--wiki-muted); flex: 1; line-height: 1.3; }
+.gurps-skills h3, .gurps-unit h3, .gurps-territory h3, .gurps-wandering h3 { font-size: 0.95rem; color: var(--wiki-nav); margin-block-end: 0.4rem; }
+.skill-row { display: flex; align-items: center; gap: 0.6rem; padding: 0.3rem 0; border-bottom: 1px solid var(--wiki-line); }
+.skill-name { font-weight: 600; min-width: 5rem; }
+.skill-level { font-weight: bold; color: var(--wiki-accent); min-width: 2rem; }
+.skill-effect { font-size: 0.78rem; color: var(--wiki-muted); }
+.values-desire-section { margin-block-start: 2rem; display: grid; gap: 1.5rem; }
+.values-block, .desire-block { padding: 1.2rem; background: var(--wiki-toc); border-radius: 8px; }
+.values-block h2, .desire-block h2 { font-size: 1.1rem; color: var(--wiki-nav); margin-block-end: 0.8rem; }
+.axis-row { display: flex; align-items: center; gap: 0.6rem; padding: 0.35rem 0; border-bottom: 1px solid var(--wiki-line); }
+.axis-icon { font-size: 1.1rem; min-width: 1.6rem; }
+.axis-name { font-weight: 600; min-width: 3.2rem; font-size: 0.9rem; }
+.axis-bar { flex: 1; height: 8px; background: var(--wiki-line); border-radius: 4px; position: relative; overflow: hidden; min-width: 100px; }
+.axis-bar::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--wiki-muted); }
+.axis-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+.axis-value { font-weight: bold; font-size: 0.85rem; min-width: 3rem; text-align: right; color: var(--wiki-accent); }
+.axis-desc { font-size: 0.72rem; color: var(--wiki-muted); min-width: 8rem; }
+.desire-extras { margin-block-start: 0.8rem; display: flex; gap: 1.5rem; }
+.desire-extras p { font-size: 0.9rem; color: var(--wiki-text); }
+.gurps-unit, .gurps-territory, .gurps-wandering { margin-block-start: 1rem; }
+.gurps-unit p, .gurps-territory p, .gurps-wandering p { font-size: 0.9rem; margin-block-end: 0.3rem; }
+.unit-note { color: var(--wiki-muted); font-size: 0.8rem !important; }
