@@ -20,7 +20,7 @@ export const PROJECTION_PATHS = Object.freeze([
   'World-Relation-Ledger.json',
   'factions/External-Theaters.json',
   'bestiary/Hostile-Ecology-Index.json',
-  ...Array.from({ length: 27 }, (_, index) => `bestiary/groups/Hostile-Group-G${String(index + 1).padStart(2, '0')}.json`),
+  ...Array.from({ length: 26 }, (_, index) => `bestiary/groups/Hostile-Group-G${String(index + 1).padStart(2, '0')}.json`),
 ])
 
 export const PROJECTION_PATH_SET = new Set(PROJECTION_PATHS)

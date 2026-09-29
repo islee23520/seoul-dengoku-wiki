@@ -12,6 +12,11 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-강민서",
   "detailRoute": "/people/person-0029",
+  "clan": {
+    "id": "ac15-c9c4-c8fc",
+    "name": "진주 강씨",
+    "crest": "clan-crests/ac15-c9c4-c8fc.svg"
+  },
   "generation": "opening",
   "minors": false,
   "sourceKind": "proposal",
@@ -135,7 +140,7 @@
         "from": "근우람",
         "type": "맹세",
         "to": "강민서",
-        "basis": "강민서의 복구복무 시민권 연대를 증언의 뼈대로 삼고"
+        "basis": "강민서의 복구복무 시민권 연대를 증언의 바탕으로 삼고"
       }
     ]
   }

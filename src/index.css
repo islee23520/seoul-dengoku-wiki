@@ -273,14 +273,16 @@ summary:focus-visible {
 .people-table th { background: var(--wiki-nav); color: white; }
 .people-col-name { inline-size: 8%; }
 .people-col-state { inline-size: 14%; }
-.people-col-position { inline-size: 31%; }
+.people-col-position { inline-size: 27%; }
 .people-col-tier { inline-size: 7%; }
-.people-col-occupation { inline-size: 32%; }
+.people-col-rank { inline-size: 10%; }
+.people-col-occupation { inline-size: 26%; }
 .people-col-gender { inline-size: 8%; }
 .people-table th:nth-child(1), .people-table td:nth-child(1),
 .people-table th:nth-child(2), .people-table td:nth-child(2),
 .people-table th:nth-child(4), .people-table td:nth-child(4),
-.people-table th:nth-child(6), .people-table td:nth-child(6) { white-space: nowrap; }
+.people-table th:nth-child(5), .people-table td:nth-child(5),
+.people-table th:nth-child(7), .people-table td:nth-child(7) { white-space: nowrap; }
 .person-detail-layout { display: grid; grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 .person-data-panel { display: grid; gap: 1rem; position: sticky; inset-block-start: 1rem; }
 .person-data-section h2 { margin-block: 0 0.35rem; font-size: 1rem; }

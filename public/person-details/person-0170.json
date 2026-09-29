@@ -12,6 +12,11 @@
   "stateName": "환적국",
   "sourceRoute": "/world/Cast-State-07#인물-박태겸",
   "detailRoute": "/people/person-0170",
+  "clan": {
+    "id": "bc15-bc00-c591",
+    "name": "밀양 박씨",
+    "crest": "clan-crests/bc15-bc00-c591.svg"
+  },
   "generation": "opening",
   "minors": false,
   "sourceKind": "proposal",
@@ -141,7 +146,7 @@
         "from": "석오름",
         "type": "맹세",
         "to": "박태겸",
-        "basis": "박태겸의 배차 조사 시각을 증인석의 닻으로 삼는다"
+        "basis": "박태겸의 배차 조사 시각을 증인석의 기준으로 삼는다"
       },
       {
         "from": "초진솔",

@@ -88,6 +88,14 @@ test('people table reserves an on-screen semantic column for gender', async () =
   assert.match(css, /\.people-col-gender\s*\{[^}]*inline-size:/s)
 })
 
+test('people table distinguishes sourced state rank from comparative tier', async () => {
+  const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
+  const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  assert.match(page, /<th scope="col">공통 티어<\/th><th scope="col">국가별 직급<\/th>/u)
+  assert.match(page, /person\.rank === '미등록' \? '—' : person\.rank/u)
+  assert.match(catalog, /"rank": "주사"/u)
+})
+
 test('people page states the confirmed hero contract without auto-assigning proposed classes', async () => {
   const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
   const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')

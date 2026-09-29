@@ -14,6 +14,7 @@ const sections: { title: string; items: SidebarItem[] }[] = [
   ]},
   { title: '주요 표면', items: [
     { label: '등장인물 전체', to: wikiLinks.characters, spa: true },
+    { label: '본관 가문', to: wikiLinks.families, spa: true },
     { label: '서울 십육국', to: wikiLinks.states, spa: true },
     { label: '세계 지도', to: wikiLinks.subway, spa: true },
     { label: '갱신 이력', to: '/updates', spa: true },
