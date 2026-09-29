@@ -1,29 +1,31 @@
-.sheet-editor { max-inline-size: none; }
-.sheet-editor-layout { display: grid; grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
-.sheet-editor-list, .sheet-editor-work, .sheet-editor-candidates, .sheet-editor-diff { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 1rem; min-inline-size: 0; }
-.sheet-editor-list { position: sticky; inset-block-start: 1rem; max-block-size: calc(100dvh - 2rem); display: grid; grid-template-rows: auto auto auto minmax(0, 1fr) auto; gap: 0.75rem; }
-.sheet-editor-list h2, .sheet-editor-candidates h2, .sheet-editor-diff h2 { margin: 0; font-size: 1.15rem; }
-.sheet-editor-list label, .sheet-editor-fields section { display: grid; gap: 0.4rem; }
-.sheet-editor-list ul { min-block-size: 0; overflow-y: auto; list-style: none; margin: 0; padding: 0; border-block: 1px solid var(--wiki-line); }
-.sheet-editor-list li + li { border-block-start: 1px solid var(--wiki-line); }
-.sheet-editor-list li button { inline-size: 100%; text-align: start; }
-.sheet-editor-list li small { display: block; color: var(--wiki-muted); overflow-wrap: anywhere; }
-.sheet-editor-list li button[aria-pressed="true"] { background: var(--wiki-toc); color: var(--wiki-accent-dark); }
-.sheet-editor-work { display: grid; gap: 1rem; }
-.sheet-editor-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding-block-end: 1rem; border-block-end: 1px solid var(--wiki-line); }
-.sheet-editor-toolbar span { margin-inline-end: auto; color: var(--wiki-muted); }
-.sheet-editor button { border: 1px solid var(--wiki-line); color: var(--wiki-text); background: var(--wiki-paper); padding: 0.5rem 0.75rem; cursor: pointer; }
-.sheet-editor button:hover, .sheet-editor button:focus-visible { border-color: var(--wiki-accent); color: var(--wiki-accent-dark); }
-.sheet-editor input, .sheet-editor select, .sheet-editor textarea { inline-size: 100%; min-inline-size: 0; border: 1px solid var(--wiki-line); color: var(--wiki-text); background: var(--wiki-paper); padding: 0.6rem; font: inherit; }
-.sheet-editor textarea { resize: vertical; }
-.sheet-editor-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-.sheet-editor-fields section:nth-child(5) { grid-column: 1 / -1; }
-.sheet-editor-fields label { font-weight: 700; }
-.sheet-editor-fields small, .sheet-editor-status { color: var(--wiki-muted); overflow-wrap: anywhere; }
-.sheet-editor-status { background: var(--wiki-toc); padding: 0.75rem; margin: 0; }
-.sheet-editor-candidates { background: var(--wiki-toc); display: grid; gap: 0.75rem; }
-.sheet-editor-candidates div { border-block-start: 1px solid var(--wiki-line); padding-block-start: 0.75rem; }
-.sheet-editor-diff dl { display: grid; gap: 0.5rem; }
-.sheet-editor-diff dl div { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 0.5rem; }
-.sheet-editor-diff dd { margin: 0; overflow-wrap: anywhere; }
-@media (max-width: 768px) { .sheet-editor-layout { grid-template-columns: minmax(0, 1fr); } .sheet-editor-list { position: static; max-block-size: 20rem; } .sheet-editor-fields { grid-template-columns: minmax(0, 1fr); } .sheet-editor-fields section:nth-child(5) { grid-column: auto; } }
+.draft-hint{color:var(--wiki-muted);font-size:.9rem;font-style:italic;margin-bottom:1rem;}
+.draft-lookup{margin-bottom:2rem;padding:1rem;background:var(--wiki-toc);border-radius:8px;}
+.lookup-row{display:flex;gap:.5rem;}
+.lookup-row input{flex:1;padding:.5rem .8rem;border:1px solid var(--wiki-line);border-radius:4px;font-size:.95rem;}
+.lookup-row button{padding:.5rem 1.2rem;background:var(--wiki-accent);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:.9rem;}
+.lookup-message{margin-top:.5rem;color:var(--wiki-accent-dark);font-size:.85rem;}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.8rem;}
+.form-grid label{display:flex;flex-direction:column;gap:.3rem;font-size:.85rem;font-weight:600;color:var(--wiki-muted);}
+.form-grid input,.form-grid select{padding:.5rem .7rem;border:1px solid var(--wiki-line);border-radius:4px;font-size:.9rem;background:var(--wiki-paper);}
+.attr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;}
+.attr-card{display:flex;flex-direction:column;align-items:center;padding:1rem;background:var(--wiki-paper);border:1px solid var(--wiki-line);border-radius:8px;gap:.3rem;}
+.attr-label{font-size:.8rem;color:var(--wiki-muted);font-weight:600;}
+.attr-code{font-size:1.2rem;font-weight:bold;color:var(--wiki-nav);}
+.attr-card input[type="range"]{width:100%;}
+.attr-value{font-size:1.5rem;font-weight:bold;color:var(--wiki-accent);}
+.attr-cost{font-size:.75rem;color:var(--wiki-muted);}
+.cp-summary{display:flex;gap:2rem;margin-top:.8rem;padding:.8rem;background:var(--wiki-toc);border-radius:6px;font-size:.9rem;}
+.skill-row{display:flex;gap:.5rem;margin-bottom:.4rem;align-items:center;}
+.skill-row input[type="text"]{flex:1;padding:.4rem .6rem;border:1px solid var(--wiki-line);border-radius:4px;}
+.skill-row input[type="number"]{width:70px;padding:.4rem .6rem;border:1px solid var(--wiki-line);border-radius:4px;}
+.skill-row button{padding:.3rem .6rem;background:var(--wiki-accent);color:#fff;border:none;border-radius:4px;cursor:pointer;}
+.add-skill{padding:.4rem 1rem;background:var(--wiki-nav);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:.85rem;margin-top:.4rem;}
+.traits-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;}
+.traits-grid label{display:flex;flex-direction:column;gap:.3rem;font-size:.85rem;font-weight:600;color:var(--wiki-muted);}
+.traits-grid textarea{padding:.5rem .7rem;border:1px solid var(--wiki-line);border-radius:4px;font-size:.85rem;resize:vertical;background:var(--wiki-paper);}
+.bio-editor,.appearance-editor,.ambition-editor{width:100%;padding:.6rem .8rem;border:1px solid var(--wiki-line);border-radius:4px;font-size:.9rem;margin-bottom:.6rem;resize:vertical;background:var(--wiki-paper);}
+.draft-actions{display:flex;gap:1rem;margin-top:1.5rem;}
+.draft-actions button{padding:.6rem 1.5rem;border:none;border-radius:6px;cursor:pointer;font-size:.95rem;}
+.draft-actions button:first-child{background:var(--wiki-accent);color:#fff;}
+.draft-actions a button{background:var(--wiki-nav);color:#fff;}
+@media(max-width:768px){.traits-grid{grid-template-columns:1fr;}.form-grid{grid-template-columns:1fr 1fr;}}
