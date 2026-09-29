@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import test from 'node:test'
+import { test } from 'vitest'
 
 test('character draft route is public and stays distinct from issued person details', async () => {
   const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8')

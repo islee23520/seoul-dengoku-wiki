@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import test from 'node:test'
+import { test } from 'vitest'
 
 test('connected rail catalog keeps 334 Seoul rows and adds every pinned external OSM node', async () => {
   const page = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))

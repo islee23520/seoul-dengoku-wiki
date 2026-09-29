@@ -1,4 +1,4 @@
-// person-id-registry.json 발급 계약 테스트 (node --test)
+// person-id-registry.json 발급 계약 테스트 (Vitest)
 //
 // 대상: issue-person-id-ids.mjs가 아니라 issue-person-ids.mjs — K423–K1010 발급 레지스트리.
 // 계약의 모든 규칙은 issue-person-ids.mjs의 validateRegistry가 계산하고,
@@ -6,7 +6,7 @@
 // (b) 개수·유일성·발급 순서·aliases 불변식을, (c) 변이가 규칙에 걸리는지(RED-provable) 검사한다.
 // 승인각 해시가 어긋나는 환경에서는 로드 단계에서 즉시 실패한다 (fail closed).
 
-import { test } from "node:test";
+import { test } from "vitest";
 import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";

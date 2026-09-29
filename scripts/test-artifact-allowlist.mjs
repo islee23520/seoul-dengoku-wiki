@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import { dirname, join, resolve } from 'node:path'
-import test from 'node:test'
+import { test } from 'vitest'
 
 import { artifactFailures, routerPaths } from './check-artifact-allowlist.mjs'
 

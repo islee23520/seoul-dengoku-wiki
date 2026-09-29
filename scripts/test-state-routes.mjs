@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import test from 'node:test'
+import { test } from 'vitest'
 
 test('sixteen states expose sixteen unique detail routes', async () => {
   const source = await readFile(new URL('../src/pages/StatesPage.tsx', import.meta.url), 'utf8')
