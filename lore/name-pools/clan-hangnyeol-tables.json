@@ -2667,7 +2667,15 @@
         "s-census-r0075"
       ],
       "rows": [],
-      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다.",
+      "branches": [
+        {
+          "id": "c774-c804-c758-674e-agreed-bbfc-second",
+          "surname": "이",
+          "bongwan": "전의",
+          "note": "재합의 가계"
+        }
+      ]
     },
     {
       "id": "c5ec-c758-b839-4f59",
@@ -3251,25 +3259,6 @@
       "method_ref": "ohaeng",
       "rows": [],
       "hangnyeol_unconfirmed_reason": "신생 문중의 항렬표는 아직 제정되지 않았다."
-    },
-    {
-      "id": "jeonui-lee-cheonggang",
-      "surname": "이",
-      "bongwan": "전의",
-      "bongwan_hanja": "全義",
-      "branch": "청강공파",
-      "provenance": "verified",
-      "sources": [
-        "s-jeonui-cheonggang-33-seop"
-      ],
-      "rows": [
-        {
-          "sesu": 33,
-          "hangnyeol": "섭",
-          "hanja": "燮",
-          "position": "second"
-        }
-      ]
     },
     {
       "id": "c2e0-ac70-cc3d-613c",
@@ -4692,24 +4681,6 @@
       ]
     },
     {
-      "id": "c774-c804-c758-674e-agreed-bbfc-second",
-      "surname": "이",
-      "bongwan": "전의",
-      "bongwan_hanja": "全義",
-      "branch": "민 항렬 재합의 가계",
-      "provenance": "creative",
-      "creative_rationale": "붕괴 후 족보가 끊긴 전의 이씨 생존자 가운데 이름 둘째 자에 '민'을 함께 쓰는 집안이 개막 세대에 새로 합의한 가계 항렬. 세수 1은 재합의 항렬표의 첫 세대다. 실존 문중 항렬표가 아니다.",
-      "method_ref": "munjung-banpo",
-      "rows": [
-        {
-          "sesu": 1,
-          "hangnyeol": "민",
-          "hanja": null,
-          "position": "second"
-        }
-      ]
-    },
-    {
       "id": "c784-bd80-c548-6797-agreed-b098-second",
       "surname": "임",
       "bongwan": "부안",
@@ -5633,6 +5604,19 @@
       "hangnyeol": null,
       "source": "가문 등록 (2026-09-29 소유자 추가 지시)",
       "branches": []
+    },
+    {
+      "id": "yeonan-lee",
+      "surname": "이",
+      "bongwan": "예안",
+      "bongwan_hanja": "禮安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0075"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
     }
   ]
 }
