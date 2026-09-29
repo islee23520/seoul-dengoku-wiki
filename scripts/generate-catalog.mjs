@@ -325,7 +325,9 @@ const stateCatalog = stateRows.map((row) => ({
   government: row.government,
   power: row.power,
   cause: row.cause,
-  ruler: row.government.match(/회장 (\S+)/u)?.[1] ?? leaderForNames(coreCharacters, row.names),
+  ruler: row.id === 'S04'
+    ? (() => { const name = coreCharacters.match(/2126년 당회장 자리는 ([가-힣]{2,4})가 앉았다\./u)?.[1]; if (!name) throw new Error('E_S04_OPENING_RULER'); return name })()
+    : row.government.match(/(?:^|[,，]\s*)회장 ([가-힣]{2,4})(?:$|[,，\s])/u)?.[1] ?? leaderForNames(coreCharacters, row.names),
   capital: row.capital,
   capitalName: row.capital,
 }))
