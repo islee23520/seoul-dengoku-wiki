@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
-import test from 'node:test'
+import { test } from 'vitest'
 import { readRendered } from '../../scripts/lore-read-rendered.mjs'
 
 const places = import.meta.dirname
@@ -95,7 +95,8 @@ test('four reviewed subtitle pairs preserve their observed platforms in one map 
 
 test('all approved subtitles project one node without losing observed lines or movement neighbors', () => {
   const canonicalId = new Map(catalogData.data.station_aliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
-  const original = JSON.parse(readFileSync(resolve(places, '../../../GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+  const gameRoot = process.env.SEOUL_KENSHI_ROOT ?? resolve(places, '../../../GAME')
+  const original = JSON.parse(readFileSync(resolve(gameRoot, 'Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
   const lines = JSON.parse(readFileSync(resolve(places, '../../scripts/official-seoul-lines.json'), 'utf8')).stations
   const projectedEdges = new Set(projected.edges.flatMap((edge) => edge.lineIds.map((line) => `${[edge.a, edge.b].sort().join('|')}/${line}`)))
   for (const entry of catalogData.data.station_aliases) {

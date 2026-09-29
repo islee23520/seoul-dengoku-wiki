@@ -1,9 +1,8 @@
 import assert from 'node:assert/strict'
 import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
-import { join } from 'node:path'
-import { fileURLToPath } from 'node:url'
-import test from 'node:test'
+import { join, resolve } from 'node:path'
+import { test } from 'vitest'
 
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
 import { parseWorldAtlas, sha256Text } from './world-atlas-parse.mjs'
@@ -15,7 +14,7 @@ import {
 import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { verifyAtlasPeople } from './world-atlas-verify.mjs'
 
-const worktree = fileURLToPath(new URL('..', import.meta.url))
+const worktree = resolve(new URL('..', import.meta.url).pathname)
 // Scratch output for materializer tests lives in a per-run temporary directory, never in lore.
 const evidenceRoot = await mkdtemp(join(tmpdir(), 'wiki-world-atlas-'))
 const candidatePath = join(worktree, 'lore/World-Narrative-Atlas.json')

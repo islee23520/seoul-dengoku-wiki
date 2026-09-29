@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import test from 'node:test'
+import { test } from 'vitest'
 import { readRendered } from './lore-read-rendered.mjs'
 
 test('all canonical people are indexed and linked to a canon card', async () => {

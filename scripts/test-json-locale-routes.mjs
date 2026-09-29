@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { mkdir, mkdtemp, readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { tmpdir } from 'node:os'
-import test from 'node:test'
+import { test } from 'vitest'
 
 import { approvedDocuments } from './catalog-admission.mjs'
 import { localizedDocuments, localizedRoute } from './localized-documents.mjs'

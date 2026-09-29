@@ -2,7 +2,7 @@ import { mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { test } from 'node:test'
+import { test } from 'vitest'
 import assert from 'node:assert/strict'
 
 import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, editorialMarkerFailures, findBannedTerms, htmlMetadata, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'

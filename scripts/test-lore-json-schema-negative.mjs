@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { mkdtempSync, readFileSync, rmSync, writeFileSync, mkdirSync } from 'node:fs'
 import { spawnSync } from 'node:child_process'
 import { join, resolve } from 'node:path'
-import test from 'node:test'
+import { test } from 'vitest'
 
 const root = resolve(import.meta.dirname, '..')
 const evidence = join(root, '.omo/evidence/lore-wiki-issues-sweep/T10e')

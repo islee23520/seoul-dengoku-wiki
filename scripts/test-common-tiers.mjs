@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
-import test from 'node:test'
+import { test } from 'vitest'
 
 test('all registered people have a common T1-T5 tier', async () => {
   const root = new URL('../public/person-details/', import.meta.url)

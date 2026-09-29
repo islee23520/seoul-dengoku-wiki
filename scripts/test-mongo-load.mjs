@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
-import test from 'node:test'
+import { test } from 'vitest'
 import {
   assertLoopback, canonicalHash, connect, corpus, defaultCollection, envelopeOf, load, projectRecord, recordFailures, verify,
 } from './mongo-load.mjs'
