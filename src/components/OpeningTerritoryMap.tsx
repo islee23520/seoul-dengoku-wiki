@@ -20,6 +20,7 @@ type Polygon = { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | n
 type Boundary = { city: string; geometry: Polygon }
 type OutsideUnit = { id: string; name: string; province: string; district: string; path: string; holder2126: string | null }
 type OutsideUnits = { source: string; sourceSha256: string; units: OutsideUnit[] }
+type OutsideControl = { assignments: Array<{ unitId: string; vassal: string; suzerain: string; station: string }> }
 type Rail = { paths: Array<{ lineId: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; lineIds: string[] }> }
 type NorthernRail = { source: { snapshot: string; license: string }; paths: Array<{ mode: string; points: [number, number][] }>; stations: Array<{ name: string; east: number; north: number; mode: string }> }
 type Water = { features: Array<{ id: string; kind: string; tag: Record<string, string>; coordinates: number[][] | number[][][] }> }
@@ -97,6 +98,7 @@ export default function OpeningTerritoryMap() {
   const [water, setWater] = useState<Water | null>(null)
   const [boundaries, setBoundaries] = useState<Boundary[]>([])
   const [outsideUnits, setOutsideUnits] = useState<OutsideUnits | null>(null)
+  const [outsideControl, setOutsideControl] = useState<OutsideControl | null>(null)
   const [rail, setRail] = useState<Rail | null>(null)
   const [northern, setNorthern] = useState<NorthernRail | null>(null)
   const [underground, setUnderground] = useState<Underground | null>(null)
@@ -244,14 +246,15 @@ export default function OpeningTerritoryMap() {
       if (!response.ok) throw new Error(`E_MAP_ASSET:${name}:${response.status}`)
       return response.json() as Promise<T>
     }
-    void Promise.all([asset<TerritoryData>('opening-territories.json'), asset<Terrain>('regional-terrain.json'), asset<Boundary[]>('regional-boundaries.json'), asset<OutsideUnits>('outside-admin-units.json')])
-      .then(async ([territories, meta, regions, outside]) => {
+    void Promise.all([asset<TerritoryData>('opening-territories.json'), asset<Terrain>('regional-terrain.json'), asset<Boundary[]>('regional-boundaries.json'), asset<OutsideUnits>('outside-admin-units.json'), asset<OutsideControl>('outside-control-2126.json')])
+      .then(async ([territories, meta, regions, outside, control]) => {
         const layer = meta.layers.find((entry) => entry.name === 'peninsula')!
         const bytes = await fetch(`${import.meta.env.BASE_URL}${layer.file}`, { signal: controller.signal }).then((response) => response.arrayBuffer())
         setData(territories)
         setTerrain(meta)
         setBoundaries(regions)
         setOutsideUnits(outside)
+        setOutsideControl(control)
         setRelief(reliefImage(bytes, layer))
         setBox({ x: 0, y: 0, width: territories.width, height: territories.height })
         return asset<Water>(meta.farWaterFile)
@@ -291,6 +294,7 @@ export default function OpeningTerritoryMap() {
   const stations = useMemo(() => presentationStations(data?.stations ?? []), [data])
   const seoulStationNames = useMemo(() => new Set(stations.flatMap((station) => station.memberIds.concat(station.names))), [stations])
   const borders = useMemo(() => regionBorders(data?.regions ?? []), [data])
+  const outsideAssignments = useMemo(() => new Map(outsideControl?.assignments.map((entry) => [entry.unitId, entry]) ?? []), [outsideControl])
   const stationPoints = useMemo(() => new Map((data?.stations ?? []).map((station) => [station.id, station])), [data])
   const projectToMap = useMemo(() => data ? (east: number, north: number): [number, number] => [
     (east - data.projection.minEast) / (data.projection.maxEast - data.projection.minEast) * data.width,
@@ -320,7 +324,7 @@ export default function OpeningTerritoryMap() {
     const displayedRail = rail?.paths.filter((path) => selectedLine === 'all' || path.lineId === selectedLine) ?? []
     return <>
         <image href={relief} x={px} y={py} width={pr - px} height={pb - py} preserveAspectRatio="none" imageRendering="auto" />
-        {layer === 'surface' && frame === 'peninsula' && outsideUnits?.units.map((unit) => <path key={unit.id} d={unit.path} data-outside-unit={unit.id} role="button" tabIndex={0} aria-label={`${unit.name} · 2126 지배 기록 없음`} className="territory-outside-unit" fill={unit.holder2126 ? states.get(unit.holder2126)?.color ?? unassignedColor : unassignedColor} fillOpacity={selectedOutsideUnit === unit.id ? 0.35 : 0.1} stroke={selectedOutsideUnit === unit.id ? '#ffe18c' : '#8a969b'} strokeOpacity="0.55" strokeWidth="0.65" vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.chooseOutsideUnit(unit) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handlers.current?.chooseOutsideUnit(unit) } }}><title>{unit.name} · 2126 지배 기록 없음</title></path>)}
+        {layer === 'surface' && frame === 'peninsula' && outsideUnits?.units.map((unit) => { const assignment = outsideAssignments.get(unit.id); const holder = assignment?.suzerain; const title = `${unit.name} · ${assignment ? `${assignment.vassal} / ${states.get(holder!)?.name ?? holder}` : '2126 지배 기록 없음'}`; return <path key={unit.id} d={unit.path} data-outside-unit={unit.id} data-control-status={assignment ? 'held' : 'unassigned'} role="button" tabIndex={0} aria-label={title} className="territory-outside-unit" fill={holder ? states.get(holder)?.color ?? unassignedColor : unassignedColor} fillOpacity={selectedOutsideUnit === unit.id ? 0.55 : assignment ? 0.55 : 0.1} stroke={selectedOutsideUnit === unit.id ? '#ffe18c' : '#8a969b'} strokeOpacity="0.55" strokeWidth="0.65" vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.chooseOutsideUnit(unit) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handlers.current?.chooseOutsideUnit(unit) } }}><title>{title}</title></path> })}
         {layer === 'surface' && showVassals && boundaries.map((boundary) => { const vassal = data.vassals.find((item) => item.city === boundary.city); return <path key={boundary.city} data-vassal-boundary={boundary.city} d={trace(boundary.geometry, toMap)} fill="none" stroke={vassal ? states.get(vassal.suzerain)?.color : 'none'} strokeOpacity={selectedVassal === vassal?.name ? 1 : 0.8} strokeWidth={selectedVassal === vassal?.name ? '3' : '1.5'} strokeDasharray="5 4" vectorEffect="non-scaling-stroke" pointerEvents="none"><title>{boundary.city} 행정 경계 · 속국 소재지, 전역 지배 미확정</title></path> })}
         {layer === 'underground' && data.regions.map((region) => <path key={region.id} d={region.path} className="territory-underground-ground" fill="#27343a" fillOpacity="0.6" stroke="#3c4a51" strokeWidth="0.5" vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
         {layer === 'surface' && data.regions.map((region) => <path key={region.id} d={region.path} className="territory-flat-region" data-region-id={region.id} data-state-id={region.polities[0]} role="button" tabIndex={0} aria-label={`${region.district} ${region.name} · ${states.get(region.polities[0])?.name ?? '영토'} 보기`} fill={states.get(region.polities[0])?.color ?? '#77858a'} fillOpacity={selectedId === region.id ? 0.95 : stateFilter === 'all' || region.polities.includes(stateFilter) ? 0.72 : 0.24} stroke="#35434b" strokeWidth="0.6" vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.chooseRegion(region) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handlers.current?.chooseRegion(region) } }} />)}
@@ -339,7 +343,7 @@ export default function OpeningTerritoryMap() {
         {data.states.map((state) => <g key={state.id} className="territory-flat-capital" data-capital-station-id={state.capitalStationId} onClick={() => handlers.current?.chooseState(state)}><circle cx={state.capitalX} cy={state.capitalY} r="7" fill={states.get(state.id)?.color} stroke="#fff" strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{state.id} {state.name} · 수도역 {state.capitalStationId}</title></g>)}
         {showStations && stations.filter((station) => (station.memberIds.length > 1 || data.majorStationIds.includes(station.id)) && (selectedLine === 'all' || station.lineIds.includes(selectedLine))).map((station) => <g key={station.id} className="territory-flat-station" data-station-id={station.id} onClick={() => handlers.current?.selectStation(station)}><circle cx={station.x} cy={station.y} r={station.lineIds.length > 1 ? 6 : 4} fill="#fff" stroke={data.lines[station.lineIds[0]]?.color ?? '#264655'} strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{station.names.join(' · ')} · {station.lineIds.map((id) => data.lines[id]?.name).join(' · ')}</title></g>)}
     </>
-  }, [data, terrain, relief, water, projectToMap, boundaries, outsideUnits, selectedOutsideUnit, states, stations, seoulStationNames, stationPoints, borders, rail, northern, frame, layer, selectedSegmentId, selectedVassal, showRail, showStations, showLandmarks, showVassals, selectedLine, selectedId, stateFilter])
+  }, [data, terrain, relief, water, projectToMap, boundaries, outsideUnits, outsideAssignments, selectedOutsideUnit, states, stations, seoulStationNames, stationPoints, borders, rail, northern, frame, layer, selectedSegmentId, selectedVassal, showRail, showStations, showLandmarks, showVassals, selectedLine, selectedId, stateFilter])
   if (failed) return <p className="wiki-domain-label">영토 지도를 불러오지 못했습니다. 새로고침해 주세요.</p>
   if (!data || !terrain || !relief || !water || !box) return <div className="wiki-loading">서울 영토와 강줄기를 불러오고 있습니다.</div>
 
@@ -403,6 +407,7 @@ export default function OpeningTerritoryMap() {
   const selectedState = states.get(stateFilter)
   const selectedVassalData = data.vassals.find((vassal) => vassal.name === selectedVassal)
   const selectedOutsideUnitData = outsideUnits?.units.find((unit) => unit.id === selectedOutsideUnit)
+  const selectedOutsideAssignment = selectedOutsideUnit && outsideAssignments.get(selectedOutsideUnit)
   const selectedLandmarkData = data.landmarks.find((landmark) => landmark.id === selectedLandmark)
   const selectedRegionalHolder = regionalStation && boundaries.find((boundary) => insideBoundary([regionalStation.east, regionalStation.north], boundary.geometry))
   const mapScale = Math.min(mapSize.width / box.width, mapSize.height / box.height)
@@ -427,7 +432,7 @@ export default function OpeningTerritoryMap() {
       <fieldset className="territory-marker-filters"><legend>지도 표시</legend><label><input type="checkbox" checked={showStations} onChange={(event) => setShowStations(event.target.checked)} />역</label>{layer === 'surface' && <><label><input type="checkbox" checked={showLandmarks} onChange={(event) => setShowLandmarks(event.target.checked)} />시설</label><label><input type="checkbox" checked={showVassals} onChange={(event) => setShowVassals(event.target.checked)} />속국</label></>}</fieldset>
       <span className="territory-controls-help">드래그 이동 · 휠 확대/축소</span>
     </div>
-    <div className="territory-tier-legend" aria-label="국력 등급 범례">{(['강국', '약국', '소국'] as const).map((tier) => <span key={tier} className="territory-tier-chip" data-tier={tier}><span className="territory-tier-dot" style={{ backgroundColor: tierColors[tier] }} />{tier} {data.states.filter((state) => state.power === tier).length}</span>)}<span className="territory-tier-note">{layer === 'surface' ? '굵은 선: 서울 국가 경계 · 회색 경계: 서울 밖 행정구역(2126 지배 기록 없음) · 점선: 속국 소재지 · 색상 선: 전철 노선' : '점: 역 구역 · 선: 역 사이 구간 · 색: 지배 국가'}</span></div>
+    <div className="territory-tier-legend" aria-label="국력 등급 범례">{(['강국', '약국', '소국'] as const).map((tier) => <span key={tier} className="territory-tier-chip" data-tier={tier}><span className="territory-tier-dot" style={{ backgroundColor: tierColors[tier] }} />{tier} {data.states.filter((state) => state.power === tier).length}</span>)}<span className="territory-tier-note">{layer === 'surface' ? '굵은 선: 서울 국가 경계 · 색칠된 서울 밖 행정구역: 확정 지배 · 회색 경계: 지배 기록 없음 · 점선: 속국 소재지 · 색상 선: 전철 노선' : '점: 역 구역 · 선: 역 사이 구간 · 색: 지배 국가'}</span></div>
     {layer === 'underground' && <div className="territory-underground-legend" aria-label="지하 구간 지배 범례"><span><span className="territory-underground-swatch" data-control-status="held" />점유 {segmentCounts('held')}</span><span><span className="territory-underground-swatch" data-control-status="contested" style={{ backgroundColor: contestedColor }} />분쟁 {segmentCounts('contested')}</span><span><span className="territory-underground-swatch" data-control-status="unassigned" style={{ backgroundColor: unassignedColor }} />미배정 {segmentCounts('unassigned')}</span><span className="territory-tier-note">구간 지배는 양 끝 역 지배가 같으면 그 국가, 다르면 분쟁으로 정합니다.</span></div>}
     <div className="territory-map-layout"><div className="territory-map-canvas territory-map-flat" data-flat-territory-map data-territory-layer={layer}>
       <div className="territory-flat-controls" role="group" aria-label="지도 범위"><button type="button" onClick={frameSeoul} aria-pressed={frame === 'seoul'}>서울 전체</button><button type="button" onClick={framePeninsula} aria-pressed={frame === 'peninsula'}>한반도 보기</button><button type="button" onClick={() => zoom(0.8)}>줌인</button><button type="button" onClick={() => zoom(1.25)}>줌아웃</button></div>
@@ -446,7 +451,7 @@ export default function OpeningTerritoryMap() {
         {selectedSegment && <section><p className="wiki-domain-label">지하 역 사이 구간</p><h3>{stationPoints.get(selectedSegment.a)?.name ?? selectedSegment.a}–{stationPoints.get(selectedSegment.b)?.name ?? selectedSegment.b}</h3><table className="person-data-table"><tbody><tr><th>노선</th><td>{selectedSegment.lineIds.map((id) => data.lines[id]?.name ?? id).join(' · ') || '기록 없음'}</td></tr><tr><th>구간 상태</th><td>{segmentStatusLabel(selectedSegment.control.status)}</td></tr><tr><th>관여 국가</th><td>{selectedSegment.control.polityIds.map((id) => states.get(id)?.name ?? id).join(' · ') || '미배정'}</td></tr><tr><th>지배 근거</th><td>{selectedSegment.control.source === 'control-delta' ? '구간 원장' : '양 끝 역 지배'}</td></tr><tr><th>2126 통행</th><td>{passageLabel(selectedSegment.passage2126)}</td></tr></tbody></table></section>}
         {regionalStation && <section><p className="wiki-domain-label">광역철도 역 정보</p><h3>{regionalStation.name}</h3><table className="person-data-table"><tbody><tr><th>노선·환승</th><td>{regionalStation.lineIds.map((id) => data.lines[id]?.name ?? id).join(' · ')}</td></tr><tr><th>지표 권역</th><td>{selectedRegionalHolder?.city ?? '서울 외 지도 권역'}</td></tr>{selectedSuzerain && <tr><th>속국·본국</th><td>{selectedSuzerain.name} · {states.get(selectedSuzerain.suzerain)?.name}</td></tr>}</tbody></table><p>현행 철도 위치 자료의 역이다. 국가 통제는 별도 역 점령 원장으로 확인한다.</p></section>}
         {selectedVassalData && <section><p className="wiki-domain-label">선택된 속국 · {selectedVassalData.city}</p><h3>{selectedVassalData.name}</h3><table className="person-data-table"><tbody><tr><th>본국</th><td>{states.get(selectedVassalData.suzerain)?.name}</td></tr><tr><th>성립</th><td>{selectedVassalData.founded}</td></tr><tr><th>하는 일</th><td>{selectedVassalData.duty}</td></tr><tr><th>선로 방향</th><td>{selectedVassalData.anchor}</td></tr></tbody></table><p>점선은 {selectedVassalData.city} 행정 경계입니다. 이 안의 각 읍·면·동 지배는 별도 확인 대상입니다.</p><p className="wiki-domain-label">경계: {selectedVassalData.coordinateSource}</p></section>}
-        {selectedOutsideUnitData && <section><p className="wiki-domain-label">서울 밖 행정구역 · {selectedOutsideUnitData.province}</p><h3>{selectedOutsideUnitData.name}</h3><table className="person-data-table"><tbody><tr><th>행정 단위</th><td>{selectedOutsideUnitData.district} · {selectedOutsideUnitData.id}</td></tr><tr><th>2126 지배</th><td>{selectedOutsideUnitData.holder2126 ? states.get(selectedOutsideUnitData.holder2126)?.name ?? selectedOutsideUnitData.holder2126 : '기록 없음'}</td></tr></tbody></table><p>표시된 경계는 2026년 행정 경계입니다. 속국 소재지와 해당 읍·면·동 전체의 지배는 별개의 사실입니다.</p><p className="wiki-domain-label">경계: {outsideUnits?.source} · SHA-256 {outsideUnits?.sourceSha256}</p></section>}
+        {selectedOutsideUnitData && <section><p className="wiki-domain-label">서울 밖 행정구역 · {selectedOutsideUnitData.province}</p><h3>{selectedOutsideUnitData.name}</h3><table className="person-data-table"><tbody><tr><th>행정 단위</th><td>{selectedOutsideUnitData.district} · {selectedOutsideUnitData.id}</td></tr><tr><th>2126 지배</th><td>{selectedOutsideAssignment ? `${selectedOutsideAssignment.vassal} · ${states.get(selectedOutsideAssignment.suzerain)?.name ?? selectedOutsideAssignment.suzerain}` : '기록 없음'}</td></tr>{selectedOutsideAssignment && <tr><th>중심역</th><td>{selectedOutsideAssignment.station}</td></tr>}</tbody></table><p>표시된 경계는 2026년 행정 경계입니다. {!selectedOutsideAssignment && '속국 소재지와 해당 읍·면·동 전체의 지배는 별개의 사실입니다.'}</p><p className="wiki-domain-label">경계: {outsideUnits?.source} · SHA-256 {outsideUnits?.sourceSha256}</p></section>}
         {selectedLandmarkData && <section><p className="wiki-domain-label">주요 시설</p><h3>{selectedLandmarkData.name}</h3><p>{selectedLandmarkData.role}</p><p>{selectedLandmarkData.detail}</p></section>}
       </aside>}
     </div></div>
