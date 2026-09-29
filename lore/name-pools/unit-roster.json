@@ -1,0 +1,295 @@
+{
+  "schema": "unit-roster/1",
+  "note": "놀랜드 부대 운영 방침 + GURPS 4판 기반. 정착지 자동 생성 인물로 부대를 편성한다.",
+  "design_source": {
+    "mechanics": "Norland squad model — 지휘관 1명 + 대원, 정착지 인구에서 모집",
+    "resolution": "GURPS 4e — 공격 3d6·능동 방어·DR·피해",
+    "owner_decisions": ["2026-09-28 놀랜드 완전 채택", "2026-09-29 GURPS 능력치 적용"]
+  },
+  "squad_structure": {
+    "commander": "1명 필수 (지휘 스킬 보유자)",
+    "members": "정착지에서 생성된 인물 중 직업·무공·능력치 매칭자",
+    "max_squads_per_settlement": "지휘관 수와 같음",
+    "recruitment": {
+      "sources": ["정착지 인구 (자동 생성 NPC)", "포로 (자유 부여 조건)", "용병 (CP 기반 비용)"],
+      "npc_matching": "occupation + martial + attributes → unit type 자동 매칭"
+    }
+  },
+  "unit_types": [
+    {
+      "id": "UT-bayonet",
+      "name": "총검 소대",
+      "name_en": "Bayonet Squad",
+      "category": "전열 보병",
+      "description": "총검술 훈련 병력. 백병전 주력 전열을 형성한다.",
+      "max_size": 30,
+      "base_size": 15,
+      "member_match": {
+        "martial_any": ["총검술", "총검술 상승"],
+        "occupation_any": ["경비 당직", "경비", "군", "병"],
+        "attributes_min": { "DX": 10, "HT": 10 }
+      },
+      "commander_match": {
+        "skill": "지휘 또는 Leadership",
+        "attributes_min": { "IQ": 11 }
+      },
+      "equipment": ["소총 (총검 장착)", "제복", "군화"],
+      "gurps_resolution": {
+        "attack": "총검술 스킬로 3d6 굴림",
+        "defense": "능동 방어 (막기·피하기)",
+        "damage": "찌르기 (imp)",
+        "dr_target": "상대 갑옷 DR"
+      },
+      "battle_role": "melee_front"
+    },
+    {
+      "id": "UT-sword",
+      "name": "검술 소대",
+      "name_en": "Sword Squad",
+      "category": "근접 보병",
+      "description": "검법 수련 병력. 기동 근접전과 제압에 특화한다.",
+      "max_size": 20,
+      "base_size": 10,
+      "member_match": {
+        "martial_any": ["검법", "검법 상승", "총검술", "본국검법"],
+        "occupation_any": ["호위", "경비", "무사"],
+        "attributes_min": { "DX": 11 }
+      },
+      "commander_match": {
+        "skill": "지휘",
+        "attributes_min": { "DX": 11, "IQ": 10 }
+      },
+      "equipment": ["도검", "방패 (선택)", "경갑"],
+      "gurps_resolution": {
+        "attack": "검법 스킬로 3d6",
+        "defense": "능동 방어 + 방패 보정",
+        "damage": "베기 (cut)"
+      },
+      "battle_role": "melee_flank"
+    },
+    {
+      "id": "UT-spear",
+      "name": "창술 소대",
+      "name_en": "Spear Squad",
+      "category": "전열 보병",
+      "description": "창술 훈련 병력. 장거리 리치로 전열 방어를 담당한다.",
+      "max_size": 25,
+      "base_size": 12,
+      "member_match": {
+        "martial_any": ["창술", "창술 상승"],
+        "occupation_any": ["경비", "군", "병", "호위"],
+        "attributes_min": { "ST": 10, "DX": 10 }
+      },
+      "commander_match": {
+        "skill": "지휘",
+        "attributes_min": { "ST": 10, "IQ": 10 }
+      },
+      "equipment": ["장창", "방패", "제복"],
+      "gurps_resolution": {
+        "attack": "창술 스킬로 3d6",
+        "defense": "능동 방어 + 방패",
+        "damage": "찌르기 (imp)",
+        "special": "긴 무기 리치 우선 공격"
+      },
+      "battle_role": "melee_defense"
+    },
+    {
+      "id": "UT-archer",
+      "name": "궁술 소대",
+      "name_en": "Archer Squad",
+      "category": "원거리",
+      "description": "궁술 수련 병력. 원거리 사격으로 지원한다.",
+      "max_size": 20,
+      "base_size": 10,
+      "member_match": {
+        "martial_any": ["궁술", "궁술 상승"],
+        "occupation_any": ["사냥", "경비", "정찰"],
+        "attributes_min": { "DX": 11, "ST": 10 }
+      },
+      "commander_match": {
+        "skill": "지휘",
+        "attributes_min": { "IQ": 10 }
+      },
+      "equipment": ["활", "화살", "집행 제복"],
+      "gurps_resolution": {
+        "attack": "궁술 스킬로 3d6 (명중)",
+        "damage": "관통 (imp)",
+        "range": "Bow ST 기반",
+        "ammo": "전투 중 소모 — 보급 필요"
+      },
+      "battle_role": "ranged_support"
+    },
+    {
+      "id": "UT-thrown",
+      "name": "암기 소대",
+      "name_en": "Skirmisher Squad",
+      "category": "원거리·특수",
+      "description": "암기술 병력. 투척 무기로 유린한 교란을 건다.",
+      "max_size": 15,
+      "base_size": 8,
+      "member_match": {
+        "martial_any": ["암기술", "암기술 상승"],
+        "occupation_any": ["정찰", "정보 수집", "무역"],
+        "attributes_min": { "DX": 11 }
+      },
+      "commander_match": {
+        "skill": "지휘",
+        "attributes_min": { "IQ": 11 }
+      },
+      "equipment": ["투척 단검", "투척 도끼", "은폐복"],
+      "gurps_resolution": {
+        "attack": "암기술 스킬로 3d6 (투척)",
+        "damage": "찌르기 (imp) 소형",
+        "special": "사거리 짧음, 명중률 높음"
+      },
+      "battle_role": "ranged_skirmish"
+    },
+    {
+      "id": "UT-scout",
+      "name": "정찰대",
+      "name_en": "Scout Unit",
+      "category": "특수",
+      "description": "경공·보법 수련 병력. 고속 이동과 시야 확보.",
+      "max_size": 10,
+      "base_size": 5,
+      "member_match": {
+        "martial_any": ["경공", "보법", "경공 상승", "보법 상승"],
+        "occupation_any": ["정찰", "정보 수집", "연락 당직"],
+        "attributes_min": { "DX": 11, "HT": 10 }
+      },
+      "commander_match": {
+        "skill": "지휘 또는 Survival",
+        "attributes_min": { "IQ": 11 }
+      },
+      "equipment": ["경량 장비", "은폐복", "신호 도구"],
+      "gurps_resolution": {
+        "movement": "기본 이동력 × 1.5 (경공 보정)",
+        "stealth": "Stealth 스킬",
+        "special": "전장 시야·매복 발견 담당"
+      },
+      "battle_role": "recon"
+    },
+    {
+      "id": "UT-guard",
+      "name": "호위대",
+      "name_en": "Guard Unit",
+      "category": "방어",
+      "description": "호위·방어 전문 병력. 요인 경호와 거점 방어.",
+      "max_size": 15,
+      "base_size": 8,
+      "member_match": {
+        "martial_any": ["호위철벽진", "방어 무공"],
+        "occupation_any": ["호위", "경비 당직", "수문 조작"],
+        "attributes_min": { "ST": 11, "HT": 11 }
+      },
+      "commander_match": {
+        "skill": "지휘",
+        "attributes_min": { "ST": 11, "IQ": 10 }
+      },
+      "equipment": ["방패", "둔기", "중갑"],
+      "gurps_resolution": {
+        "defense": "호위철벽진 스킬 + 방패 능동 방어",
+        "damage": "둔기 (cr)",
+        "special": "보호 대상 피해 대신 받기 가능"
+      },
+      "battle_role": "defense_protect"
+    },
+    {
+      "id": "UT-medic",
+      "name": "의무 지원대",
+      "name_en": "Medical Support",
+      "category": "지원",
+      "description": "흰십자단 전통의 의료 병력. 전장 응급 치료.",
+      "max_size": 10,
+      "base_size": 5,
+      "member_match": {
+        "martial_any": [],
+        "occupation_any": ["의료 진료", "약재 조제", "의무원"],
+        "attributes_min": { "IQ": 11 }
+      },
+      "commander_match": {
+        "skill": "의료 (Physician/First Aid)",
+        "attributes_min": { "IQ": 12 }
+      },
+      "equipment": ["의료 도구", "약재", "들것"],
+      "gurps_resolution": {
+        "special": "부상자 HP 회복 속도 증가",
+        "gurps_skill": "First Aid / Physician",
+        "effect": "전투 후 사망 판정 재굴림 1회"
+      },
+      "battle_role": "support_heal"
+    },
+    {
+      "id": "UT-engineer",
+      "name": "공병대",
+      "name_en": "Engineer Unit",
+      "category": "지원",
+      "description": "설비 수리·장애물 구축 병력. 거점 방어 시설 담당.",
+      "max_size": 15,
+      "base_size": 8,
+      "member_match": {
+        "martial_any": [],
+        "occupation_any": ["차량 정비", "장비 수리", "설비 점검", "궤도 관리"],
+        "attributes_min": { "IQ": 10, "ST": 10 }
+      },
+      "commander_match": {
+        "skill": "Engineering",
+        "attributes_min": { "IQ": 11 }
+      },
+      "equipment": ["공구", "재료", "용접기"],
+      "gurps_resolution": {
+        "special": "장애물 DR 부여, 거점 방어력 증가",
+        "gurps_skill": "Engineer",
+        "effect": "방어 시설 건설 속도 × 2"
+      },
+      "battle_role": "support_build"
+    },
+    {
+      "id": "UT-ronin",
+      "name": "낭인 부대",
+      "name_en": "Ronin Band",
+      "category": "특수",
+      "description": "무소속 전사 집단. 용병·약탈·호위 등 모든 역할 가능.",
+      "max_size": 25,
+      "base_size": 10,
+      "member_match": {
+        "martial_any": ["권법", "검법", "창술", "총검술", "궁술", "암기술"],
+        "occupation_any": ["무소속", "용병", "낭인"],
+        "attributes_min": { "DX": 10, "ST": 10 }
+      },
+      "commander_match": {
+        "skill": "지휘 또는 intimidation",
+        "attributes_min": { "ST": 10, "DX": 10, "IQ": 10 }
+      },
+      "equipment": ["혼합 장비", "약탈 무기"],
+      "gurps_resolution": {
+        "special": "편성 제한 없음 — 모든 무공 혼합 가능",
+        "loyalty": "낮음 — 급여·약탈 보상 필요"
+      },
+      "battle_role": "flexible"
+    }
+  ],
+  "settlement_composition": {
+    "principle": "정착지에 자동 생성된 인물이 부대 편성 인원 풀이 된다",
+    "auto_matching": {
+      "description": "각 정착지의 인물 목록에서 직업·무공·능력치로 부대 후보를 자동 필터링",
+      "example": "S01 수문국 정착지 → 경비 당직 인물 → 총검 소대·창술 소대 후보"
+    },
+    "scale_by_settlement": {
+      "대거점": "인구 500+ → 부대 최대 규모 유지 가능",
+      "중거점": "인구 200~499 → 부대 규모 70%",
+      "소거점": "인구 50~199 → 부대 규모 50%",
+      "초소": "인구 <50 → 정찰대·의무대만"
+    },
+    "gurps_anchor": {
+      "squad_cohesion": "지휘관 Leadership 스킬 기반",
+      "morale": "Will 기반 공포 판정 (B360)",
+      "fatigue": "FP 소모 — HT 기반 회복"
+    }
+  },
+  "hero_integration": {
+    "note": "여섯 영웅 클래스는 표시용 태그 (G6 결정에 따라 규칙에서 제외)",
+    "classes": ["수호", "돌파", "참모", "구호", "척후", "종군"],
+    "hero_role": "부대 지휘관 또는 독립 행동 영웅"
+  }
+}
