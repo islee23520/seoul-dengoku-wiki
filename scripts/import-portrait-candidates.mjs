@@ -8,6 +8,7 @@ const evidenceRoot = process.argv[2];
 if (!evidenceRoot) throw new Error('usage: node scripts/import-portrait-candidates.mjs <evidence-root>');
 const bHash = 'd928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526';
 const genders = JSON.parse(await readFile(join(wikiRoot, 'lore/name-pools/gender-cast.json'), 'utf8')).people;
+const properties = JSON.parse(await readFile(join(wikiRoot, 'portrait-properties.json'), 'utf8')).entries;
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const entries = [];
 const destImages = join(wikiRoot, 'public/portraits');
@@ -24,6 +25,10 @@ for (const group of ['recommended', 'rulers']) {
     const source = JSON.parse(await readFile(join(evidenceRoot, group, basename(row.tokenPath)), 'utf8'));
     if (source.personId !== row.personId || source.characterId !== row.characterId || source.name !== row.name) throw new Error(`portrait identity mismatch: ${row.personId}`);
     const facts = group === 'recommended' ? source.sourceFacts : source.canonicalFacts;
+    const proposal = group === 'recommended' ? { ...source.artProposal, upper: source.artProposal.outfit } : { ...source.artProposal, ...properties[row.personId] };
+    if (!proposal.face || !proposal.hair || !proposal.upper) throw new Error(`incomplete art proposal: ${row.personId}`);
+    proposal.lower ??= null;
+    proposal.footwear ??= null;
     const gender = genders.find((entry) => entry.name === row.name);
     if (!gender || gender.gender !== facts.gender) throw new Error(`gender ledger mismatch: ${row.personId}`);
     if (group === 'recommended' && gender.user_locked !== facts.genderUserLocked) throw new Error(`gender lock mismatch: ${row.personId}`);
@@ -31,7 +36,7 @@ for (const group of ['recommended', 'rulers']) {
       schemaVersion: 1, personId: row.personId, characterId: row.characterId, name: row.name,
       stateId: row.stateId ?? null, approval: 'art-proposal',
       facts: { gender: facts.gender, genderUserLocked: gender.user_locked, role: facts.openingRole ?? facts.role },
-      artProposal: source.artProposal,
+      artProposal: proposal,
       style: { styleId: row.styleId, referenceSha256: bHash, portraitShotId: 'medium-close-up-119', crop: 'head, both shoulders and upper chest' },
       image: { path: `/portraits/${row.personId}.png`, sha256: row.imageSha256, width: row.pngDimensions?.width ?? source.generation?.dimensions?.[0], height: row.pngDimensions?.height ?? source.generation?.dimensions?.[1] }
     };

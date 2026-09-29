@@ -20,6 +20,8 @@ test('every proposed portrait is bound to its person and immutable image hash', 
     assert.equal(token.facts.gender, genders.find(g => g.name === entry.name)?.gender);
     assert.equal(token.facts.genderUserLocked, genders.find(g => g.name === entry.name)?.user_locked);
     assert.equal(token.style.portraitShotId, 'medium-close-up-119');
+    assert.ok(token.artProposal.face && token.artProposal.hair && token.artProposal.upper, entry.personId);
+    assert.ok(Object.hasOwn(token.artProposal, 'lower') && Object.hasOwn(token.artProposal, 'footwear'), entry.personId);
     assert.doesNotMatch(JSON.stringify(token), /(?:\/Users\/|CLIPROXY_API_KEY|OPENAI_API_KEY|Authorization|apiKey)/);
   }
 });
