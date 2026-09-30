@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate": "node scripts/generate-catalog.mjs && node scripts/generate-clan-crests.mjs",
+    "generate": "node scripts/generate-clan-crests.mjs && node scripts/generate-catalog.mjs",
     "build": "npm run generate && tsc -b && vite build",
     "preview": "vite preview",
     "test": "npm run generate && vitest run",
