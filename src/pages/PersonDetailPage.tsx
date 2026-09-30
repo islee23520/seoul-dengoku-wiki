@@ -379,6 +379,7 @@ export default function PersonDetailPage() {
         </div>
         <span className="wiki-canon-badge">정본</span>
       </header>
+      <p><Link to={`/tools/character-art?person=${encodeURIComponent(detail.id)}`}>이 인물의 아트 작업 도구 열기</Link></p>
       <div className="person-detail-layout">
         <aside className="person-data-panel" aria-label="인물 구조화 데이터">
           <DataTable title="기본 정보" rows={basicRows} />
