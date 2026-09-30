@@ -16,6 +16,7 @@ import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
+import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -815,6 +816,14 @@ if (!relationText) throw new Error('E_CAST_RELATIONS_MISSING')
 const relations = [...relationText.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .map((match) => ({ from: match[1].trim(), type: match[2].trim(), to: match[3].trim(), basis: match[4].trim() }))
   .filter((relation) => relation.from !== '인물' && !relation.from.startsWith('---'))
+const courtDataset = loadDataset()
+const courtErrors = validateRelations(courtDataset)
+if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
+const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
+const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
+const retainersById = new Map(courtDataset.config.directRetainers.map((row) => [row.personId, row]))
+const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
+  courtDataset.config.directRetainers.filter((row) => row.courtId === court.id)]))
 const parseCardSections = (body) => {
   const sections = {}
   const matches = [...body.matchAll(/\*\*([^*]+?)\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*#{2,3}\s|\n\s*:::|$)/g)]
@@ -874,6 +883,7 @@ for (const person of peopleCatalog) {
   const sourceEnvelope = pagesBySlug.get(primary?.file)?.value
   if (!sourceEnvelope || !primary) throw new Error(`E_PERSON_FEEDBACK_SOURCE:${person.id}`)
   const lineage = lineageByName.get(person.name)
+  const issuedId = issuedIdByName.get(person.name)
   if (!lineage) throw new Error(`E_PERSON_LINEAGE_MISSING:${person.name}`)
   const detail = {
     ...person,
@@ -888,6 +898,16 @@ for (const person of peopleCatalog) {
     sections: parseCardSections(body),
     biography: body,
     sources: cards.map((card) => card.file),
+    ...(retainersById.has(issuedId) ? (() => {
+      const row = retainersById.get(issuedId)
+      return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
+        courtId: row.courtId, effectiveYear: courtDataset.config.courtContract.effectiveYear } }
+    })() : {}),
+    ...(courtMembersByOwner.has(issuedId) ? {
+      court: { id: `court:${issuedId}`,
+        members: courtMembersByOwner.get(issuedId).map((row) =>
+          ({ personId: row.personId, name: issuedById.get(row.personId).name })) },
+    } : {}),
     relations: {
       outgoing: relations.filter((relation) => relation.from === person.name),
       incoming: relations.filter((relation) => relation.to === person.name),

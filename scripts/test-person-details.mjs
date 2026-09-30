@@ -3,6 +3,73 @@ import { readdir, readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 
+test('S01 court projection retains exact approved direct lieges and owner memberships', async () => {
+  const approved = [
+    ['K002', 'K904 K568 K616 K712 K856 K952 K1001 K424 K520 K760 K808 K664 K472'],
+    ['K017', 'K504 K744 K600 K552 K456 K840 K888 K648 K936 K984 K792 K696'],
+    ['K003', 'K968 K440 K728 K488 K920 K536 K824 K776 K632 K872 K584 K680'],
+  ]
+  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const details = new Map()
+  for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter((name) => name.endsWith('.json'))) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
+    details.set(detail.name, detail)
+  }
+  const person = (id) => {
+    const issued = registry.persons.find((entry) => entry.id === id)
+    assert.ok(issued, id)
+    const detail = details.get(issued.name)
+    assert.ok(detail, id)
+    return detail
+  }
+  const expectedMembers = new Set()
+  const expectedOwners = new Set()
+  const checkProjection = (getPerson) => {
+    for (const [ownerId, members] of approved) {
+      const owner = getPerson(ownerId)
+      const courtId = `court:${ownerId}`
+      expectedOwners.add(owner.name)
+      const ids = members.split(' ')
+      assert.equal(owner.court?.id, courtId, ownerId)
+      assert.deepEqual(owner.court?.members.map(({ personId, name }) => [personId, name]),
+        ids.map((id) => [id, getPerson(id).name]), ownerId)
+      assert.equal(owner.directLiege, undefined, ownerId)
+      for (const id of ids) {
+        const detail = getPerson(id)
+        expectedMembers.add(detail.name)
+        assert.deepEqual(detail.directLiege,
+          { personId: ownerId, name: owner.name, courtId, effectiveYear: 2126 }, id)
+        assert.equal(detail.court, undefined, id)
+        assert.equal(detail.relations.outgoing.filter((edge) => edge.to === owner.name && edge.type === '지휘').length, 1, id)
+      }
+    }
+  }
+  checkProjection(person)
+  assert.equal(expectedMembers.size, 37)
+  assert.equal(expectedOwners.size, 3)
+  assert.ok(expectedMembers.has(person('K872').name))
+  assert.ok(!expectedMembers.has(person('K272').name))
+  assert.equal(details.size, 1019)
+  for (const detail of details.values()) {
+    if (!expectedMembers.has(detail.name)) assert.equal(detail.directLiege, undefined, detail.name)
+    if (!expectedOwners.has(detail.name)) assert.equal(detail.court, undefined, detail.name)
+  }
+  const withoutLiege = new Map(details)
+  withoutLiege.set(person('K904').name, { ...person('K904'), directLiege: undefined })
+  assert.throws(() => checkProjection((id) => withoutLiege.get(registry.persons.find((entry) => entry.id === id).name)), /K904/)
+  const wrongLiege = new Map(details)
+  wrongLiege.set(person('K904').name, { ...person('K904'), directLiege: { ...person('K904').directLiege, personId: 'K003' } })
+  assert.throws(() => checkProjection((id) => wrongLiege.get(registry.persons.find((entry) => entry.id === id).name)), /K904/)
+  const wrongMember = new Map(details)
+  wrongMember.set(person('K002').name, { ...person('K002'), court: { ...person('K002').court,
+    members: person('K002').court.members.map((member) => member.personId === 'K904' ? { ...member, personId: 'K272' } : member) } })
+  assert.throws(() => checkProjection((id) => wrongMember.get(registry.persons.find((entry) => entry.id === id).name)), /K002/)
+  const missingMember = new Map(details)
+  missingMember.set(person('K002').name, { ...person('K002'), court: { ...person('K002').court,
+    members: person('K002').court.members.filter((member) => member.personId !== 'K904') } })
+  assert.throws(() => checkProjection((id) => missingMember.get(registry.persons.find((entry) => entry.id === id).name)), /K002/)
+})
+
 test('all canonical people expose unique detail routes and structured data', async () => {
   const catalog = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
   const routes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
