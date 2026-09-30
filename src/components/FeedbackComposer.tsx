@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { FeedbackApiError, feedbackReasons, submitFeedback, type FeedbackReason } from '../feedbackApi'
 import { captureFeedbackAnchor, type FeedbackAnchor, type FeedbackDocument } from '../feedbackSelection'
 
-type Draft = { anchor: FeedbackAnchor; reason: FeedbackReason; body: string; alternative: string; idempotencyKey: string; reconfirmationRequired: boolean; editVersion: number }
+type Draft = { anchor: FeedbackAnchor; reason: FeedbackReason; body: string; alternative: string; idempotencyKey: string; reconfirmationRequired: boolean; editVersion: number; authorityVersion: 'document-view.v1' | 'historical' }
 const draftKey = (route: string) => `wiki-feedback-draft.v1:${route}`
 const quote = (anchor: FeedbackAnchor) => anchor.selections.map((part) => part.exactQuote).join('\n')
 const newKey = () => crypto.randomUUID()
@@ -20,7 +20,7 @@ const readDraft = (route: string): Draft | null => {
   try {
     const value = JSON.parse(saved) as Partial<Draft>
     if (!validAnchor(value.anchor, route) || typeof value.body !== 'string' || typeof value.alternative !== 'string' || !feedbackReasons.includes(value.reason as FeedbackReason)) throw new Error('invalid draft')
-    return { ...value, idempotencyKey: typeof value.idempotencyKey === 'string' && value.idempotencyKey.length >= 8 ? value.idempotencyKey : newKey(), reconfirmationRequired: value.reconfirmationRequired === true, editVersion: Number.isInteger(value.editVersion) ? value.editVersion as number : 0 } as Draft
+    return { ...value, authorityVersion: value.authorityVersion === 'document-view.v1' ? 'document-view.v1' : 'historical', idempotencyKey: typeof value.idempotencyKey === 'string' && value.idempotencyKey.length >= 8 ? value.idempotencyKey : newKey(), reconfirmationRequired: value.reconfirmationRequired === true || value.authorityVersion !== 'document-view.v1', editVersion: Number.isInteger(value.editVersion) ? value.editVersion as number : 0 } as Draft
   } catch { localStorage.removeItem(key); return null }
 }
 
@@ -36,7 +36,8 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
   useEffect(() => {
     requestRef.current?.controller.abort()
     requestRef.current = null
-    const restored = readDraft(pathname)
+    const loaded = readDraft(pathname)
+    const restored = loaded && (loaded.authorityVersion !== 'document-view.v1' || loaded.anchor.documentId !== documentInfo.documentId || loaded.anchor.sourceRevision !== documentInfo.sourceRevision || loaded.anchor.locale !== locale) ? { ...loaded, reconfirmationRequired: true, authorityVersion: 'historical' as const } : loaded
     setOwned({ route: pathname, draft: restored })
     setState(restored?.reconfirmationRequired ? 'reconfirm' : 'draft')
     setMessage(restored?.reconfirmationRequired ? '원문이 변경되었습니다. 현재 문장을 다시 선택해 확인해 주세요.' : '')
@@ -55,7 +56,7 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
     if (!root) return
     const anchor = captureFeedbackAnchor(root, documentInfo, pathname, locale)
     if (!anchor) { setState('error'); setMessage('본문에서 제보할 문장을 먼저 선택해 주세요.'); return }
-    replaceDraft({ anchor, reason: draft?.reason ?? feedbackReasons[0], body: draft?.body ?? '', alternative: draft?.alternative ?? '', idempotencyKey: newKey(), reconfirmationRequired: false, editVersion: (draft?.editVersion ?? 0) + 1 })
+    replaceDraft({ anchor, reason: draft?.reason ?? feedbackReasons[0], body: draft?.body ?? '', alternative: draft?.alternative ?? '', idempotencyKey: newKey(), reconfirmationRequired: false, authorityVersion: 'document-view.v1', editVersion: (draft?.editVersion ?? 0) + 1 })
     setState('draft'); setMessage('선택한 문장을 브라우저에 임시 저장했습니다.')
   }
 

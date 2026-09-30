@@ -1,47 +1,25 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
-import { clipSourceSpans } from '../src/feedbackSelection.ts'
 import { FeedbackApiError, submitFeedback } from '../src/feedbackApi.ts'
+import { clipSourceSegments } from '../src/feedbackSelection.ts'
 
-const generated = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
+const literalLeaf = {
+  leafId: 'formatted', blockAnchor: 'b', blockKind: 'paragraph', text: '생애. 2126년',
+  sourceSegments: [
+    { kind: 'literal', path: '/runs/0/text', start: 0, end: 3, unit: 'unicode-code-point', textStart: 0, textEnd: 3 },
+    { kind: 'literal', path: '/runs/1/text', start: 0, end: 7, unit: 'unicode-code-point', textStart: 3, textEnd: 10 },
+  ],
+}
 
-test('generated article leaves bind stable id, canonical revision, block anchor and formatted source spans', async () => {
-  const article = await generated('../src/generated/world/World-Unbinding.json')
-  assert.match(article.feedback.documentId, /^DOC:/)
-  assert.match(article.feedback.sourceRevision, /^[a-f0-9]{64}$/)
-  const formatted = article.feedback.selectableLeaves.find((leaf) => leaf.sourceSpans.length > 1)
-  assert.ok(formatted)
-  assert.ok(formatted.blockAnchor)
-  assert.equal(formatted.sourceSpans[0].textStart, 0)
-  assert.equal(formatted.sourceSpans.at(-1).textEnd, Array.from(formatted.text).length)
-  assert.ok(formatted.sourceSpans.every((span) => span.path.startsWith('/content/')))
-})
-
-test('table cells are distinct visible leaves and never gain synthetic separators', async () => {
-  const article = await generated('../src/generated/world/World-Unbinding.json')
-  const cells = article.feedback.selectableLeaves.filter((leaf) => leaf.leafId.includes(':cell:'))
-  assert.ok(cells.length > 10)
-  assert.equal(new Set(cells.map((leaf) => leaf.leafId)).size, cells.length)
-  assert.ok(cells.every((leaf) => !leaf.text.includes('\t')))
-  assert.ok(cells.some((leaf) => /:cell:1:1$/.test(leaf.leafId)))
-})
-
-test('source clipping preserves ordered cross-format spans with code-point end-exclusive offsets', () => {
-  const leaf = {
-    leafId: 'x', blockAnchor: 'b', blockKind: 'paragraph', text: '생애. 2126년',
-    sourceSpans: [
-      { path: '/runs/0/text', start: 0, end: 3, unit: 'unicode-code-point', textStart: 0, textEnd: 3 },
-      { path: '/runs/1/text', start: 0, end: 7, unit: 'unicode-code-point', textStart: 3, textEnd: 10 },
-    ],
-  }
-  assert.deepEqual(clipSourceSpans(leaf, 1, 8), [
+test('literal source clipping preserves ordered cross-format code-point spans', () => {
+  assert.deepEqual(clipSourceSegments(literalLeaf, 1, 8), [
     { path: '/runs/0/text', start: 1, end: 3, unit: 'unicode-code-point' },
     { path: '/runs/1/text', start: 0, end: 5, unit: 'unicode-code-point' },
   ])
 })
 
-test('adapter uses the U1 endpoint and never converts auth or server errors into success', async () => {
+test('adapter uses the U1 endpoint and never converts auth errors into success', async () => {
   const requests = []
   await assert.rejects(() => submitFeedback({ anchor: {}, body: 'x', reason: '기타' }, { idempotencyKey: 'stable-test-key', fetcher: async (url, init) => {
     requests.push({ url, init })
@@ -54,11 +32,13 @@ test('adapter uses the U1 endpoint and never converts auth or server errors into
   assert.equal(requests[1].init.method, 'POST')
 })
 
-test('public pages expose the composer but no annotation or underline data path', async () => {
+test('public pages expose the composer but no historical projector or annotation path', async () => {
   const article = await readFile(new URL('../src/pages/ArticlePage.tsx', import.meta.url), 'utf8')
   const person = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
+  const selection = await readFile(new URL('../src/feedbackSelection.ts', import.meta.url), 'utf8')
   for (const source of [article, person]) {
-    assert.match(source, /FeedbackComposer/)
+    assert.match(source, /useFeedbackDocument/)
     assert.doesNotMatch(source, /annotation|underline|reviewQueue/i)
   }
+  assert.doesNotMatch(selection, /personFeedbackDocument|markdownProjection|markdownLeaves/)
 })

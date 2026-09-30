@@ -1,0 +1,10 @@
+npm notice run seoul-dengoku-wiki@0.1.0 npx
+npm notice run 'vitest' run scripts/test-feedback-canonical-ui.mjs scripts/test-feedback-selection.mjs scripts/test-feedback-boundaries.mjs scripts/test-document-renderer.mjs
+
+ RUN  v5.0.2 /Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-ui-canonical
+
+
+ Test Files  4 passed (4)
+      Tests  19 passed (19)
+   Start at  01:56:35
+   Duration  1.08s (tests 51%, import 32%, transform 15%, worker 2%)

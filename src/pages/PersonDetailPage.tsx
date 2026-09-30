@@ -5,7 +5,8 @@ import remarkGfm from 'remark-gfm'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
-import { personFeedbackDocument, type FeedbackDocument } from '../feedbackSelection'
+import { useLocation } from 'react-router-dom'
+import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type PersonDetail = (typeof peopleCatalog)[number] & {
@@ -324,11 +325,14 @@ function ValuesDesireSection({ detail }: { detail: any }): JSX.Element | null {
 
 export default function PersonDetailPage() {
   const { personId } = useParams()
+  const { pathname } = useLocation()
   const summary: any = peopleCatalog.find((person) => person.id === personId)
   const [detail, setDetail] = useState<PersonDetail | null>(null)
   const [failed, setFailed] = useState(false)
   const proseRef = useRef<HTMLDivElement>(null)
-  const [feedback, setFeedback] = useState<FeedbackDocument | null>(null)
+  const [feedbackBound, setFeedbackBound] = useState(false)
+  const feedbackState = useFeedbackDocument(pathname, 'ko')
+  const feedback = feedbackState.status === 'ready' ? feedbackState.document : null
 
   useEffect(() => {
     if (!summary) return
@@ -344,13 +348,6 @@ export default function PersonDetailPage() {
       .catch(() => { if (active) setFailed(true) })
     return () => { active = false }
   }, [summary])
-
-  useEffect(() => {
-    let active = true
-    setFeedback(null)
-    if (detail) void personFeedbackDocument(detail).then((value) => { if (active) setFeedback(value) })
-    return () => { active = false }
-  }, [detail])
 
   useEffect(() => {
     if (!summary) return
@@ -373,6 +370,12 @@ export default function PersonDetailPage() {
     ...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as Array<string>),
     ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as Array<string>),
   ]
+  const canonicalProse = <>
+    {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
+      <section key={label} data-feedback-section={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
+    ))}
+    <details data-feedback-biography><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
+  </>
 
   return (
     <article className="wiki-article" data-wiki-shell="react-official" data-person-id={detail.id}>
@@ -398,12 +401,7 @@ export default function PersonDetailPage() {
         </aside>
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
-          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} selector="section[data-feedback-section] p, section[data-feedback-section] li, details[data-feedback-biography] p, details[data-feedback-biography] li">
-            {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
-              <section key={label} data-feedback-section={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
-            ))}
-          <details data-feedback-biography><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
-          </FeedbackSurface> : null}
+          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : canonicalProse}
 
           <GurpsSection personId={personId || ''} />
           <ValuesDesireSection detail={detail} />
@@ -411,7 +409,7 @@ export default function PersonDetailPage() {
           <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>
         </div>
       </div>
-      {feedback && <FeedbackComposer rootRef={proseRef} documentInfo={feedback} locale="ko" />}
+      {feedback && feedbackBound && <FeedbackComposer rootRef={proseRef} documentInfo={feedback} locale="ko" />}
     </article>
   )
 }
