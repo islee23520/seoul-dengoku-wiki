@@ -1,5 +1,4 @@
 import { mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
-import { createHash } from 'node:crypto'
 import { basename, dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import proj4 from 'proj4'
@@ -16,42 +15,17 @@ import { localizedDocuments } from './localized-documents.mjs'
 import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
-import { canonicalJson } from './world-atlas-schema.mjs'
+import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
 const worldJsonRoot = resolve(projectRoot, 'src/generated/world')
 const worldEnJsonRoot = resolve(projectRoot, 'src/generated/world-en')
 const generatedRoot = resolve(projectRoot, 'src/generated')
+const privateGeneratedRoot = resolve(projectRoot, 'src/generated-private')
 const publicRoot = resolve(projectRoot, 'public')
 const domains = ['world']
 const wikiAssetTarget = resolve(publicRoot, 'wiki-assets')
-const codePointLength = (value) => Array.from(value).length
-const canonicalHash = (value) => createHash('sha256').update(canonicalJson(value)).digest('hex')
-const localizedValue = (value, locale) => value?.[locale] ?? value?.ko ?? ''
-const valueLeaf = (value, path, locale) => {
-  const selected = localizedValue(value, locale)
-  if (typeof selected === 'string') return { text: selected, sourceSpans: [{ path, start: 0, end: codePointLength(selected), unit: 'unicode-code-point', textStart: 0, textEnd: codePointLength(selected) }] }
-  let text = ''
-  const sourceSpans = []
-  selected.forEach((run, index) => {
-    const textStart = codePointLength(text)
-    text += run.text
-    const textEnd = codePointLength(text)
-    sourceSpans.push({ path: `${path}/${index}/text`, start: 0, end: codePointLength(run.text), unit: 'unicode-code-point', textStart, textEnd })
-  })
-  return { text, sourceSpans }
-}
-const selectableLeaves = (envelope, locale) => envelope.content.flatMap((block, blockIndex) => {
-  if (blockIndex === 0 && block.kind === 'heading' && block.depth === 1) return []
-  const base = `/content/${blockIndex}`
-  const leaf = (leafId, value, path) => ({ leafId, blockAnchor: block.anchor, blockKind: block.kind, ...valueLeaf(value, path, locale) })
-  if (block.kind === 'rule') return []
-  if (block.kind === 'list') return block.items.map((item, index) => leaf(`${block.anchor}:item:${index}`, item, `${base}/items/${index}/${locale}`))
-  if (block.kind === 'table') return [...block.columns.map((cell, column) => leaf(`${block.anchor}:cell:0:${column}`, cell, `${base}/columns/${column}/${locale}`)), ...block.rows.flatMap((row, rowIndex) => row.map((cell, column) => leaf(`${block.anchor}:cell:${rowIndex + 1}:${column}`, cell, `${base}/rows/${rowIndex}/${column}/${locale}`)))]
-  return [leaf(`${block.anchor}:text`, block.text, `${base}/text/${locale}`)]
-})
-
 const normalizeTitle = (markdown, fallback) =>
   markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
 
@@ -277,6 +251,7 @@ for (const document of englishDocuments) {
   englishRouteBySlug.set(`any:${document.slug}`, document.route)
 }
 
+const publishedBlocks = new Map()
 const writeDocument = async (root, document, routes) => {
   const body = normalizeMarkdown(document.markdown, document.domain, routes)
   const blocks = fromMarkdown(body, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
@@ -285,11 +260,17 @@ const writeDocument = async (root, document, routes) => {
     for (const child of node.children ?? []) removePositions(child)
   }
   for (const block of blocks) removePositions(block)
-  await writeFile(resolve(root, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks, feedback: pagesBySlug.get(document.slug)?.value ? { documentId: pagesBySlug.get(document.slug).value.id, sourceRevision: canonicalHash(pagesBySlug.get(document.slug).value), selectableLeaves: selectableLeaves(pagesBySlug.get(document.slug).value, document.locale) } : null })}
+  publishedBlocks.set(`${document.locale}:${document.slug}`, blocks)
+  await writeFile(resolve(root, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
 `)
 }
 for (const document of documents) await writeDocument(worldJsonRoot, document, routeBySlug)
 for (const document of englishDocuments) await writeDocument(worldEnJsonRoot, document, englishRouteBySlug)
+
+const feedbackRecords = [...documents, ...englishDocuments].flatMap((document) => {
+  const envelope = pagesBySlug.get(document.slug)?.value
+  return envelope && envelope.id !== 'DOC:Glossary' ? [articleFeedbackRecord({ envelope, route: document.route, locale: document.locale, blocks: publishedBlocks.get(`${document.locale}:${document.slug}`) })] : []
+})
 
 const lines = [
   'export type WikiDomain = \'world\'',
@@ -890,6 +871,8 @@ for (const person of peopleCatalog) {
   const cards = personCards.get(person.name) ?? []
   const primary = primaryCard(ledger)
   const body = primary?.body ?? ''
+  const sourceEnvelope = pagesBySlug.get(primary?.file)?.value
+  if (!sourceEnvelope || !primary) throw new Error(`E_PERSON_FEEDBACK_SOURCE:${person.id}`)
   const lineage = lineageByName.get(person.name)
   if (!lineage) throw new Error(`E_PERSON_LINEAGE_MISSING:${person.name}`)
   const detail = {
@@ -911,7 +894,11 @@ for (const person of peopleCatalog) {
     },
   }
   await writeFile(resolve(personDetailsRoot, `${person.id}.json`), `${JSON.stringify(detail, null, 2)}\n`)
+  feedbackRecords.push(personFeedbackRecord({ envelope: sourceEnvelope, personId: person.id, route: person.detailRoute, headingText: primary.file === 'Core-Characters' ? person.name : `인물 ${primary.heading ?? person.name}`, locale: 'ko', sections: detail.sections }))
 }
+await mkdir(privateGeneratedRoot, { recursive: true })
+await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.ko.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'ko')))}\n`)
+await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.en.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'en')))}\n`)
 await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const peopleCatalog = ${JSON.stringify(peopleCatalog, null, 2)} as const\nexport const peopleCount = ${peopleCatalog.length}\n`)
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
@@ -953,6 +940,7 @@ for (const clan of clanTables.clans) {
     bongwan: clan.bongwan,
     hanja: clan.bongwan_hanja ?? null,
     branches,
+    showBranches: clan.show_branches !== false,
     crest: crest ? { source: crest.source, motif: crest.motif } : null,
     members,
   }

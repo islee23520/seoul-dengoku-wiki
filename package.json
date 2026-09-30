@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate": "node scripts/generate-catalog.mjs && node scripts/generate-clan-crests.mjs",
+    "generate": "node scripts/generate-clan-crests.mjs && node scripts/generate-catalog.mjs",
     "build": "npm run generate && tsc -b && vite build",
     "preview": "vite preview",
     "test": "npm run generate && vitest run",
@@ -40,14 +40,15 @@
     "test:gurps": "vitest run scripts/test-gurps-cast.mjs",
     "test:crests": "vitest run scripts/test-clan-crests.mjs",
     "test:families": "vitest run scripts/test-family-catalog.mjs",
-    "test:crests": "vitest run scripts/test-clan-crests.mjs",
-    "test:families": "vitest run scripts/test-family-catalog.mjs",
-    "db:load": "node scripts/mongo-load.mjs"
+    "db:load": "node scripts/mongo-load.mjs",
+    "test:feedback-catalog": "npm run generate && vitest run scripts/test-feedback-source-catalog.mjs",
+    "report:feedback-catalog": "node scripts/feedback-source-catalog-report.mjs"
   },
   "dependencies": {
-    "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
     "@seoul-dengoku/document-renderer": "file:./vendor/seoul-dengoku-document-renderer-0.1.2.tgz",
+    "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
     "@seoul-dengoku/shared-web-ui": "file:./vendor/seoul-dengoku-shared-web-ui-0.1.2.tgz",
+    "entities": "8.0.0",
     "mermaid": "^11.17.2",
     "proj4": "2.22.0",
     "react": "^18.3.1",

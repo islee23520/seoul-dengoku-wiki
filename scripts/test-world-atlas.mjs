@@ -62,6 +62,39 @@ test('renderer returns the exact 34 canonical JSON destinations', () => {
   }
 })
 
+test('external theaters keep world facts but never render private source controls', () => {
+  const changed = structuredClone(source)
+  const theaters = changed.data.atlas.theaters
+  theaters[0].source_kind = 'PRIVATE_SOURCE_SENTINEL'
+  theaters[0].verified = { en: 'PRIVATE_VERIFIED_SENTINEL', ko: '비공개 확인 표식' }
+  theaters[0].inference = { en: 'PRIVATE_INFERENCE_SENTINEL', ko: '비공개 추론 표식' }
+  theaters[0].original_fiction = { en: 'PRIVATE_FICTION_SENTINEL', ko: '비공개 창작 표식' }
+  theaters[0].japan_bridge_removable = false
+  theaters[0].reader_description = { en: 'Public corridor and actors remain', ko: '공개 회랑과 주체는 남는다' }
+  theaters[0].explicit_unknowns.push({ en: 'The traveler’s origin remains unknown.', ko: '통행자의 출신은 아직 알려지지 않았다.' })
+  theaters[0].prose.push({ kind: 'paragraph', text: { en: 'The watch locked the valve.', ko: '당직자가 밸브를 잠갔다.' } })
+  const page = projectionsFromAtlas(changed, 'fixture-hash')['factions/External-Theaters.json']
+  const reader = JSON.stringify({ locales: page.locales, content: page.content })
+  for (const sentinel of ['PRIVATE_SOURCE_SENTINEL', 'PRIVATE_VERIFIED_SENTINEL', 'PRIVATE_INFERENCE_SENTINEL', 'PRIVATE_FICTION_SENTINEL', '비공개 확인 표식']) {
+    assert.ok(!reader.includes(sentinel), sentinel)
+  }
+  const alternate = structuredClone(changed)
+  alternate.data.atlas.theaters[0].japan_bridge_removable = true
+  const alternatePage = projectionsFromAtlas(alternate, 'fixture-hash')['factions/External-Theaters.json']
+  assert.deepEqual(alternatePage.locales, page.locales)
+  assert.deepEqual(alternatePage.content, page.content)
+  for (const locale of ['ko', 'en']) {
+    const serialized = JSON.stringify(page.content.map((node) => node.text?.[locale] ?? node.items?.map((item) => item[locale])))
+    assert.ok(serialized.includes(theaters[0].reader_description[locale]), locale)
+    assert.ok(serialized.includes(theaters[0].seoul_route.staging_nodes[0][locale]), locale)
+    assert.ok(serialized.includes(theaters[0].explicit_unknowns[0][locale]), locale)
+    assert.ok(serialized.includes(theaters[0].explicit_unknowns.at(-1)[locale]), locale)
+    assert.ok(serialized.includes(theaters[0].prose.at(-1).text[locale]), locale)
+    assert.ok(serialized.includes('XT01'), locale)
+    assert.ok(serialized.includes('XT05'), locale)
+  }
+})
+
 test('expansion projection links every unaffiliated ID to its actual person route', () => {
   const table = projections['World-Expansion-Index.json'].content.find((node) => node.kind === 'table')
   for (const locale of ['en', 'ko']) {

@@ -11,12 +11,13 @@ export default function FamilyDetailPage() {
     return <Navigate to="/families" replace />
   }
 
+  const showBranches = family.showBranches
   const rows = useMemo(() => family.members.map((person) => [
     { text: person.name, link: person.detailRoute },
-    family.branches.find((branch) => branch.id === person.branchId)?.name ?? '항렬 없이 이름을 지은 가계',
+    ...(showBranches ? [family.branches.find((branch) => branch.id === person.branchId)?.name ?? '항렬 없이 이름을 지은 가계'] : []),
     person.stateName,
     person.occupation
-  ]), [family])
+  ]), [family, showBranches])
 
   return (
     <article className="wiki-page">
@@ -45,9 +46,9 @@ export default function FamilyDetailPage() {
 
       <section className="wiki-content">
         <h2>가문 인물 ({family.members.length}명)</h2>
-        {family.branches.length > 0 && <section><h3>재합의한 가계</h3><ul>{family.branches.map((branch) => <li key={branch.id}>{branch.name} · {branch.members.length}명</li>)}</ul></section>}
+        {showBranches && family.branches.length > 0 && <section><h3>재합의한 가계</h3><ul>{family.branches.map((branch) => <li key={branch.id}>{branch.name} · {branch.members.length}명</li>)}</ul></section>}
         <SortableTable
-          headers={['이름', '가계', '국가', '생업']}
+          headers={['이름', ...(showBranches ? ['가계'] : []), '국가', '생업']}
           rows={rows}
         />
       </section>
