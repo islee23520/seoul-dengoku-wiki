@@ -51,8 +51,8 @@ test('S01 court projection retains exact approved direct lieges and owner member
   assert.ok(!expectedMembers.has(person('K272').name))
   assert.equal(details.size, 1019)
   for (const detail of details.values()) {
-    if (!expectedMembers.has(detail.name)) assert.equal(detail.directLiege, undefined, detail.name)
-    if (!expectedOwners.has(detail.name)) assert.equal(detail.court, undefined, detail.name)
+    if (detail.state === 'S01' && !expectedMembers.has(detail.name)) assert.equal(detail.directLiege, undefined, detail.name)
+    if (detail.state === 'S01' && !expectedOwners.has(detail.name)) assert.equal(detail.court, undefined, detail.name)
   }
   const withoutLiege = new Map(details)
   withoutLiege.set(person('K904').name, { ...person('K904'), directLiege: undefined })
@@ -68,6 +68,59 @@ test('S01 court projection retains exact approved direct lieges and owner member
   missingMember.set(person('K002').name, { ...person('K002'), court: { ...person('K002').court,
     members: person('K002').court.members.filter((member) => member.personId !== 'K904') } })
   assert.throws(() => checkProjection((id) => missingMember.get(registry.persons.find((entry) => entry.id === id).name)), /K002/)
+})
+
+test('S02/S03 court projection retains exact approved direct lieges and owner memberships', async () => {
+  const approved = [
+    ['K032', 'K041'], ['K037', 'K047'], ['K033', 'K049'], ['K058', 'K068'],
+    ['K060', 'K069 K071'], ['K061', 'K073 K075'], ['K062', 'K074'],
+  ]
+  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const details = new Map()
+  for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter((name) => name.endsWith('.json'))) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
+    details.set(detail.id, detail)
+  }
+  const person = (id) => {
+    const index = registry.persons.findIndex((entry) => entry.id === id)
+    assert.notEqual(index, -1, id)
+    return details.get(`person-${String(index + 1).padStart(4, '0')}`)
+  }
+  const expectedMembers = new Set()
+  const expectedOwners = new Set()
+  const check = (getPerson) => {
+    for (const [ownerId, members] of approved) {
+      const owner = getPerson(ownerId)
+      const ids = members.split(' ')
+      expectedOwners.add(owner.id)
+      assert.equal(owner.court?.id, `court:${ownerId}`, ownerId)
+      assert.deepEqual(owner.court?.members, ids.map((id) => ({ personId: id, name: getPerson(id).name })), ownerId)
+      assert.equal(owner.directLiege, undefined, ownerId)
+      for (const id of ids) {
+        const member = getPerson(id)
+        expectedMembers.add(member.id)
+        assert.deepEqual(member.directLiege,
+          { personId: ownerId, name: owner.name, courtId: `court:${ownerId}`, effectiveYear: 2126 }, id)
+        assert.equal(member.court, undefined, id)
+        assert.equal(member.relations.outgoing.filter((edge) => edge.to === owner.name && edge.type === '지휘').length, 1, id)
+      }
+    }
+  }
+  check(person)
+  assert.equal(expectedMembers.size, 9)
+  assert.equal(expectedOwners.size, 7)
+  assert.equal(details.size, 1019)
+  for (const detail of details.values()) {
+    if (detail.state !== 'S01' && !expectedMembers.has(detail.id)) assert.equal(detail.directLiege, undefined, detail.id)
+    if (detail.state !== 'S01' && !expectedOwners.has(detail.id)) assert.equal(detail.court, undefined, detail.id)
+  }
+  const omitted = new Map(details)
+  omitted.set(person('K041').id, { ...person('K041'), directLiege: undefined })
+  assert.throws(() => check((id) => omitted.get(person(id).id)), /K041/)
+  const wrongCourt = new Map(details)
+  wrongCourt.set(person('K060').id, { ...person('K060'), court: { ...person('K060').court,
+    members: person('K060').court.members.filter((member) => member.personId !== 'K071') } })
+  assert.throws(() => check((id) => wrongCourt.get(person(id).id)), /K060/)
 })
 
 test('all canonical people expose unique detail routes and structured data', async () => {
