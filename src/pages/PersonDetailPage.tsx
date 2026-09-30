@@ -328,7 +328,7 @@ export default function PersonDetailPage() {
         </aside>
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
-          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} selector="section[data-feedback-section] p, section[data-feedback-section] li, details[data-feedback-biography] p">
+          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} selector="section[data-feedback-section] p, section[data-feedback-section] li, details[data-feedback-biography] p, details[data-feedback-biography] li">
             {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
               <section key={label} data-feedback-section={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
             ))}

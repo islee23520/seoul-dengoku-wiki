@@ -36,3 +36,18 @@ test('abort signal reaches both session and submission requests', async () => {
   await submitFeedback(payload, { idempotencyKey: 'stable-request-key', signal: controller.signal, fetcher: async (url, init) => { signals.push(init.signal); return url.endsWith('/session') ? json({ csrfToken: 'csrf-token' }) : json({ id: 1, status: 'received' }, 201) } })
   assert.deepEqual(signals, [controller.signal, controller.signal])
 })
+
+test('person Markdown leaves retain exact source offsets for section and biography lists', async () => {
+  const { personFeedbackDocument } = await import('../src/feedbackSelection.ts')
+  const detail = { id: 'person-0029', sections: { 관계: '한재목에게 펌프 부품을 댄다.\n\n- 소속: 규격맹\n- 생업: 공방 제작 조정' }, biography: '**관계.** 한재목에게 펌프 부품을 댄다.\n\n- 소속: 규격맹' }
+  const document = await personFeedbackDocument(detail)
+  for (const leaf of document.selectableLeaves) {
+    const source = leaf.sourceSpans[0].path === '/biography' ? detail.biography : detail.sections.관계
+    const visible = leaf.sourceSpans.map((span) => Array.from(source).slice(span.start, span.end).join('')).join('').replaceAll('**', '')
+    assert.equal(visible, leaf.text, leaf.leafId)
+  }
+  const sectionList = document.selectableLeaves.find((leaf) => leaf.leafId === 'section:관계:list:1')
+  assert.equal(sectionList.sourceSpans[0].start, Array.from(detail.sections.관계).findIndex((_, index) => Array.from(detail.sections.관계).slice(index).join('').startsWith(sectionList.text)))
+  const biographyList = document.selectableLeaves.find((leaf) => leaf.leafId === 'biography:list:1')
+  assert.equal(biographyList.text, '소속: 규격맹')
+})

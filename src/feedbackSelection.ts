@@ -85,30 +85,63 @@ export function captureFeedbackAnchor(root: HTMLElement, documentInfo: FeedbackD
 }
 
 const sortValue = (value: unknown): unknown => Array.isArray(value) ? value.map(sortValue) : value && typeof value === 'object' ? Object.fromEntries(Object.keys(value as Record<string, unknown>).sort().map((key) => [key, sortValue((value as Record<string, unknown>)[key])])) : value
-const personLeaf = (leafId: string, blockAnchor: string, blockKind: string, text: string, path: string): SelectableTextLeaf => ({
-  leafId, blockAnchor, blockKind, text,
-  sourceSpans: [{ path, start: 0, end: codePoints(text).length, unit: 'unicode-code-point', textStart: 0, textEnd: codePoints(text).length }],
-})
-const sectionLeaves = (label: string, markdown: string): SelectableTextLeaf[] => {
-  const lines = markdown.split('\n')
+const personLeaf = (leafId: string, blockAnchor: string, blockKind: string, text: string, path: string, sourceSpans: SourceSpan[]): SelectableTextLeaf => ({ leafId, blockAnchor, blockKind, text, sourceSpans })
+const markdownProjection = (source: string, path: string, sourceStart: number) => {
+  const points = codePoints(source)
+  let text = ''
+  const sourceSpans: SourceSpan[] = []
+  let sourceIndex = 0
+  let textIndex = 0
+  while (sourceIndex < points.length) {
+    if (points[sourceIndex] === '*' && points[sourceIndex + 1] === '*') { sourceIndex += 2; continue }
+    const runSourceStart = sourceIndex
+    const runTextStart = textIndex
+    let run = ''
+    while (sourceIndex < points.length && !(points[sourceIndex] === '*' && points[sourceIndex + 1] === '*')) {
+      run += points[sourceIndex]
+      sourceIndex += 1
+      textIndex += 1
+    }
+    text += run
+    if (run) sourceSpans.push({ path, start: sourceStart + runSourceStart, end: sourceStart + sourceIndex, unit: 'unicode-code-point', textStart: runTextStart, textEnd: textIndex })
+  }
+  return { text, sourceSpans }
+}
+const markdownLeaves = (prefix: string, blockAnchor: string, blockKind: string, markdown: string, path: string): SelectableTextLeaf[] => {
+  const points = codePoints(markdown)
   const leaves: SelectableTextLeaf[] = []
-  let paragraph: string[] = []
+  let cursor = 0
   let part = 0
-  const flush = () => { if (paragraph.length) { const text = paragraph.join('\n'); leaves.push(personLeaf(`section:${label}:paragraph:${part++}`, `section:${label}`, 'person-section-paragraph', text, `/sections/${label}`)); paragraph = [] } }
-  lines.forEach((line) => {
-    const item = line.match(/^[-*+]\s+(.+)$/u)
-    if (item) { flush(); leaves.push(personLeaf(`section:${label}:list:${part++}`, `section:${label}`, 'person-section-list-item', item[1], `/sections/${label}`)); return }
-    if (!line) { flush(); return }
-    paragraph.push(line)
-  })
-  flush()
+  while (cursor < points.length) {
+    while (points[cursor] === '\n') cursor += 1
+    if (cursor >= points.length) break
+    const blockStart = cursor
+    let blockEnd = cursor
+    while (blockEnd < points.length && !(points[blockEnd] === '\n' && points[blockEnd + 1] === '\n')) blockEnd += 1
+    const block = points.slice(blockStart, blockEnd).join('')
+    let lineStart = 0
+    const lines = block.split('\n')
+    const isList = lines.every((line) => /^[-*+]\s+/u.test(line))
+    if (isList) {
+      for (const line of lines) {
+        const marker = line.match(/^[-*+]\s+/u)?.[0] ?? ''
+        const projected = markdownProjection(line.slice(marker.length), path, blockStart + lineStart + codePoints(marker).length)
+        leaves.push(personLeaf(`${prefix}:list:${part++}`, blockAnchor, `${blockKind}-list-item`, projected.text, path, projected.sourceSpans))
+        lineStart += codePoints(line).length + 1
+      }
+    } else {
+      const projected = markdownProjection(block, path, blockStart)
+      leaves.push(personLeaf(`${prefix}:paragraph:${part++}`, blockAnchor, `${blockKind}-paragraph`, projected.text, path, projected.sourceSpans))
+    }
+    cursor = blockEnd + 2
+  }
   return leaves
 }
 export async function personFeedbackDocument(detail: { id: string; sections: Record<string, string>; biography: string }): Promise<FeedbackDocument> {
   const canonical = `${JSON.stringify(sortValue(detail), null, 2)}\n`
   const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(canonical))
   const sourceRevision = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('')
-  const section = Object.entries(detail.sections).flatMap(([label, text]) => sectionLeaves(label, text))
-  const biography = detail.biography.split(/\n{2,}/u).filter(Boolean).map((text, index) => personLeaf(`biography:paragraph:${index}`, 'biography', 'person-biography', text.replace(/\*\*/gu, ''), '/biography'))
+  const section = Object.entries(detail.sections).flatMap(([label, text]) => markdownLeaves(`section:${label}`, `section:${label}`, 'person-section', text, `/sections/${label}`))
+  const biography = markdownLeaves('biography', 'biography', 'person-biography', detail.biography, '/biography')
   return { documentId: `PERSON:${detail.id}`, sourceRevision, selectableLeaves: [...section, ...biography] }
 }
