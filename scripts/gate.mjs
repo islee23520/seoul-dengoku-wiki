@@ -221,15 +221,25 @@ export function apiDeclaredFields(person, rel) {
 
 export function uiTooltipFields(source) {
   const file = ts.createSourceFile('PersonDetailPage.tsx', source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX)
-  const maps = new Map()
+  const registry = ['attrExplain', 'skillExplain', 'valueMeta', 'desireMeta']
+  const declarations = new Map()
+  const declarationNames = new Set()
+  const consumed = new Set()
   const visit = (node) => {
-    if (ts.isVariableDeclaration(node) && ts.isIdentifier(node.name) && ['attrExplain', 'skillExplain', 'valueMeta', 'desireMeta'].includes(node.name.text)) maps.set(node.name.text, node.initializer)
+    if (ts.isVariableDeclaration(node) && ts.isIdentifier(node.name) && registry.includes(node.name.text)) {
+      declarations.set(node.name.text, node.initializer)
+      declarationNames.add(node.name)
+    }
+    if (ts.isIdentifier(node) && registry.includes(node.text) && !declarationNames.has(node)) consumed.add(node.text)
     ts.forEachChild(node, visit)
   }
   visit(file)
   const fields = []
-  for (const name of ['attrExplain', 'skillExplain', 'valueMeta', 'desireMeta']) {
-    const map = maps.get(name)
+  // 렌더에서 실제로 참조(소비)되는 툴팁 레지스트리만 요구·검사한다. 선언만 있고 소비되지 않은 맵은
+  // 공개 표면이 아니므로 요구하지 않는다. 소비되는 맵이 없거나 비면 실패한다.
+  for (const name of registry) {
+    if (!consumed.has(name)) continue
+    const map = declarations.get(name)
     if (!map || !ts.isObjectLiteralExpression(map) || !map.properties.length) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}`)
     for (const [index, entry] of map.properties.entries()) {
       if (!ts.isPropertyAssignment(entry)) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}/${index}`)

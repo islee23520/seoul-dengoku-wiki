@@ -210,12 +210,19 @@ test('category-purpose fields have local exceptions without hiding visible marke
   assert.match(visibleFieldFailures('인물 복제', 'public/opening-territories.json#/regions/0/summary')[0], /banned-term/u)
 })
 
-test('actual consumer tooltip copy is a separate visible surface', () => {
-  const source = "const attrExplain = { ST: { icon: 'x', desc: '사용자 확정' } }; const skillExplain = { '권법': '창작 제안' }; const valueMeta = { '권위': { plus: '정상', minus: '정상' } }; const desireMeta = { '갈망': { plus: '정상', minus: '정상' } }"
-  const fields = uiTooltipFields(source)
+test('tooltip registry follows actual render consumption in both directions', () => {
+  const declared = "const attrExplain = { ST: { icon: 'x', desc: '사용자 확정' } }; const skillExplain = { '권법': '창작 제안' }; const valueMeta = { '권위': { plus: '정상', minus: '정상' } }; const desireMeta = { '갈망': { plus: '정상', minus: '정상' } }"
+  // 선언만 있고 렌더 참조가 없으면 공개 표면이 아니다: 요구하지 않고 수집하지도 않는다.
+  assert.deepEqual(uiTooltipFields(declared), [])
+  assert.deepEqual(uiTooltipFields('const unrelated = {}'), [])
+  // 실제로 소비되는 맵은 그대로 검사한다(표지 문구 플래그 포함).
+  const consumed = declared + "; attrExplain['ST']; skillExplain['권법']; valueMeta['권위']; desireMeta['갈망']"
+  const fields = uiTooltipFields(consumed)
   assert.equal(fields.length, 6)
   assert.deepEqual(fields.map(([path, text]) => visibleFieldFailures(text, path).length), [1, 1, 0, 0, 0, 0])
-  assert.throws(() => uiTooltipFields('const unrelated = {}'), /E_UI_TOOLTIP_FIELDS/u)
+  // 소비되는데 선언이 없으면 실패한다. 제거된 미사용 맵은 요구하지 않는다.
+  assert.throws(() => uiTooltipFields("const attrExplain = { ST: { icon: 'x', desc: '정상' } }; attrExplain['ST']; skillExplain['권법']"), /E_UI_TOOLTIP_FIELDS:skillExplain/u)
+  assert.throws(() => uiTooltipFields(consumed.replace("const desireMeta = { '갈망': { plus: '정상', minus: '정상' } }; ", '')), /E_UI_TOOLTIP_FIELDS:desireMeta/u)
 })
 
 // Each case mutates only readFileSync bytes in a fresh process, then executes the real CLI.
