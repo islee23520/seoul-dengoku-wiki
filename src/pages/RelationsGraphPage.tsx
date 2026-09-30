@@ -22,18 +22,20 @@ export function layoutRetainerGraph(graph: typeof retainerGraph) {
     })
     return [{ ...owner, x: 115 + column * 265, y: 70 + row * 570 }, ...members]
   })
-  if (nodes.length !== graph.nodes.length || graph.edges.length !== nodes.length - graph.courts.length)
+  const positioned = new Map<string, (typeof nodes)[number]>()
+  for (const node of nodes) if (!positioned.has(node.id)) positioned.set(node.id, node)
+  if (positioned.size !== graph.nodes.length || graph.edges.length !== nodes.length - graph.courts.length)
     throw new Error('E_RETAINER_GRAPH_UNRESOLVED')
-  return nodes
+  return [...positioned.values()]
 }
 const nodes = layoutRetainerGraph(retainerGraph)
 const nodesById = new Map<string, (typeof nodes)[number]>(nodes.map((node) => [node.id, node]))
 
-export function selectRetainerRelationships(personId: string) {
-  const outgoing = retainerGraph.edges.find((edge) => edge.fromPersonId === personId)
-  const court = retainerGraph.courts.find((entry) => entry.ownerPersonId === personId || entry.id === outgoing?.courtId)
-  const liege = outgoing && nodesById.get(outgoing.toPersonId)
-  const members = retainerGraph.edges.filter((edge) => edge.toPersonId === personId)
+export function selectRetainerRelationships(personId: string, graph: typeof retainerGraph = retainerGraph) {
+  const outgoing = graph.edges.find((edge) => edge.fromPersonId === personId)
+  const court = graph.courts.find((entry) => entry.ownerPersonId === personId || entry.id === outgoing?.courtId)
+  const liege = outgoing && graph.nodes.find((node) => node.id === outgoing.toPersonId)
+  const members = graph.edges.filter((edge) => edge.toPersonId === personId)
   return { court, liege, members }
 }
 

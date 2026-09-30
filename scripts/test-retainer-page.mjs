@@ -2,10 +2,11 @@ import assert from 'node:assert/strict'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
+import { peopleCatalog } from '../src/generated/peopleCatalog.ts'
 import { test } from 'vitest'
 import { RelationsGraphPage, layoutRetainerGraph, selectRetainerRelationships } from '../src/pages/RelationsGraphPage.tsx'
 import { retainerGraph } from '../src/generated/retainerGraph.ts'
-import { loadDataset } from '../lore/relations/validate.mjs'
+import { loadDataset, validate } from '../lore/relations/validate.mjs'
 
 test('graph page renders generated directed court edges and all approved people', () => {
   const html = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(RelationsGraphPage)))
@@ -68,4 +69,28 @@ test('court owner selection exposes incoming members without an upstream liege',
     assert.equal(owner.liege, undefined)
     assert.ok(owner.members.some((edge) => edge.fromPersonId === memberId))
   }
+})
+
+test('source-valid court owner with an explicit upstream liege has one graph identity', () => {
+  const dataset = loadDataset()
+  dataset.config.courts.push({ id: 'court:K009', ownerPersonId: 'K009', stateId: 'S01' })
+  dataset.config.directRetainers.push({ personId: 'K017', liegePersonId: 'K009', courtId: 'court:K009', sourceRow: 14 })
+  assert.deepEqual(validate(dataset), [])
+  const issued = dataset.sources.registry.persons.find((person) => person.id === 'K009')
+  const value = dataset.sources.values.people.find((person) => person.name === issued.name)
+  const detailRoute = peopleCatalog.find((person) => person.name === issued.name)?.detailRoute
+  assert.ok(detailRoute)
+  const graph = {
+    nodes: [...retainerGraph.nodes, { id: issued.id, name: issued.name, state: value.state, detailRoute }],
+    edges: [...retainerGraph.edges, { fromPersonId: 'K017', toPersonId: 'K009', courtId: 'court:K009' }],
+    courts: [...retainerGraph.courts, { id: 'court:K009', ownerPersonId: 'K009', stateId: 'S01' }],
+  }
+  const positioned = layoutRetainerGraph(graph)
+  assert.equal(positioned.length, graph.nodes.length)
+  assert.equal(positioned.filter((node) => node.id === 'K017').length, 1)
+  assert.equal(positioned.find((node) => node.id === 'K017')?.y, layoutRetainerGraph(retainerGraph).find((node) => node.id === 'K017')?.y)
+  const owner = selectRetainerRelationships('K017', graph)
+  assert.equal(owner.court?.id, 'court:K017')
+  assert.equal(owner.liege?.id, 'K009')
+  assert.equal(owner.members.length, 12)
 })
