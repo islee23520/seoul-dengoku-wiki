@@ -23,7 +23,7 @@ for (const domain of domains) {
     for (const name of names) {
       const page = JSON.parse(await readFile(resolve(sourceDir, name), 'utf8'))
       const heading = page.title ?? basename(name, '.json')
-      target.push({ domain, slug: basename(name, '.json'), title: heading.trim() })
+      target.push({ domain, slug: basename(name, '.json'), title: heading.trim(), route: page.route })
     }
   }
 }
@@ -52,16 +52,18 @@ const failures = []
 const approved = publishedDocuments(await approvedDocuments(loreRoot))
 const peopleSource = await readFile(resolve(projectRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
 const people = JSON.parse(peopleSource.split('export const peopleCatalog = ')[1].split(' as const')[0])
+const sourcePeople = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
+const issued = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')).persons
 const detailRoot = resolve(projectRoot, 'public/person-details')
 const details = new Map()
 for (const name of (await readdir(detailRoot)).filter((name) => extname(name) === '.json')) {
   details.set(basename(name, '.json'), JSON.parse(await readFile(resolve(detailRoot, name), 'utf8')))
 }
-failures.push(...personRouteFailures(people, details))
+failures.push(...personRouteFailures(people, details, sourcePeople, issued))
 const expectedRoutes = approved.map(({ route }) => route)
 const expectedEnglishRoutes = approved.filter(({ source }) => source.endsWith('.json')).map(({ route }) => `/en${route}`)
-const publishedRoutes = documents.map(({ domain, slug }) => `/${domain}/${slug === 'index' ? '' : slug}`).sort()
-const publishedEnglishRoutes = englishDocuments.map(({ domain, slug }) => `/en/${domain}/${slug === 'index' ? '' : slug}`).sort()
+const publishedRoutes = documents.map(({ route }) => route).sort()
+const publishedEnglishRoutes = englishDocuments.map(({ route }) => route).sort()
 if (JSON.stringify(publishedRoutes) !== JSON.stringify(expectedRoutes)) failures.push('published-routes-differ-from-approved-lore-set')
 if (JSON.stringify(publishedEnglishRoutes) !== JSON.stringify(expectedEnglishRoutes)) failures.push('published-english-routes-differ-from-approved-lore-set')
 const englishStart = catalogSource.indexOf('export const wikiEnglishCatalog')

@@ -120,20 +120,26 @@ test('cast authoring sources remain available but their articles retire from bot
 test('each consolidated person route resolves to its own generated detail', async () => {
   const catalog = await readFile(resolve(wikiRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
   const people = JSON.parse(catalog.split('export const peopleCatalog = ')[1].split(' as const')[0])
+  const sourcePeople = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
+  const issued = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')).persons
   const detailRoot = resolve(wikiRoot, 'public/person-details')
   const details = new Map()
   for (const name of (await readdir(detailRoot)).filter((name) => name.endsWith('.json'))) {
     details.set(basename(name, '.json'), JSON.parse(await readFile(resolve(detailRoot, name), 'utf8')))
   }
-  assert.deepEqual(personRouteFailures(people, details), [])
+  const check = (catalog, files = details) => personRouteFailures(catalog, files, sourcePeople, issued)
+  assert.deepEqual(check(people), [])
   const first = people[0]
-  assert.ok(personRouteFailures([{ ...first, detailRoute: '/world/Cast-State-08' }], new Map([[first.id, details.get(first.id)]])).includes(`person-route:${first.id}`))
-  assert.ok(personRouteFailures([{ ...first, detailRoute: '' }], new Map([[first.id, details.get(first.id)]])).includes(`person-route:${first.id}`))
-  assert.ok(personRouteFailures([first], new Map()).includes(`missing-person-detail:${first.id}`))
-  assert.ok(personRouteFailures([first], new Map([[first.id, details.get(people[1].id)]])).includes(`person-detail-identity:${first.id}`))
-  assert.ok(personRouteFailures([first], new Map([[first.id, { ...details.get(first.id), detailRoute: '/en/people/person-0001' }]])).includes(`person-detail-identity:${first.id}`))
-  assert.ok(personRouteFailures([first, { ...people[1], detailRoute: first.detailRoute }], new Map([[first.id, details.get(first.id)], [people[1].id, details.get(people[1].id)]])).includes(`duplicate-person-route:${first.detailRoute}`))
-  assert.ok(personRouteFailures([first], new Map([[first.id, details.get(first.id)], [people[1].id, details.get(people[1].id)]])).includes(`unindexed-person-detail:${people[1].id}`))
+  assert.ok(check(people.map((person, index) => index === 0 ? { ...person, detailRoute: '/world/Cast-State-08' } : person)).includes(`person-route:${first.id}`))
+  assert.ok(check(people.map((person, index) => index === 0 ? { ...person, detailRoute: '' } : person)).includes(`person-route:${first.id}`))
+  assert.ok(check(people, new Map([...details].filter(([id]) => id !== first.id))).includes(`missing-person-detail:${first.id}`))
+  assert.ok(check(people, new Map(details).set(first.id, details.get(people[1].id))).includes(`person-detail-identity:${first.id}`))
+  assert.ok(check(people, new Map(details).set(first.id, { ...details.get(first.id), detailRoute: `/en${first.detailRoute}` })).includes(`person-detail-identity:${first.id}`))
+  assert.ok(check(people.map((person, index) => index === 1 ? { ...person, detailRoute: first.detailRoute } : person)).includes(`duplicate-person-route:${first.detailRoute}`))
+  assert.ok(check(people.slice(1), new Map([...details].filter(([id]) => id !== first.id))).includes('person-source-coverage'))
+  const wrongName = people[1].name
+  assert.ok(check(people.map((person, index) => index === 0 ? { ...person, name: wrongName } : person), new Map(details).set(first.id, { ...details.get(first.id), name: wrongName })).includes(`person-source-identity:${first.id}`))
+  assert.ok(check(people, new Map(details).set('person-extra', details.get(first.id))).includes('unindexed-person-detail:person-extra'))
 })
 
 test('unknown public fields are rejected', () => {
