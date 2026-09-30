@@ -24,6 +24,12 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
 
 const sectionOrder = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
 
+export function PersonSections({ sections }: { sections: Record<string, string> }): JSX.Element {
+  return <>{sectionOrder.filter((label) => sections[label]).map((label) => (
+    <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{sections[label]}</ReactMarkdown></section>
+  ))}</>
+}
+
 function DataTable({ title, rows }: { title: string; rows: Array<Array<string | number | null>> }) {
   return (
     <section className="person-data-section">
@@ -349,6 +355,10 @@ export default function PersonDetailPage() {
   if (!summary || failed) return <Navigate to="/people" replace />
   if (!detail) return <div className="wiki-loading" role="status">인물 상세를 불러오고 있습니다.</div>
 
+  return <PersonDetailContent detail={detail} personId={personId || ''} />
+}
+
+export function PersonDetailContent({ detail, personId }: { detail: PersonDetail; personId: string }): JSX.Element {
   const person: any = detail
   const basicRows: Array<Array<string | number | null>> = [
     ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
@@ -387,11 +397,9 @@ export default function PersonDetailPage() {
         </aside>
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
-          {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
-            <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
-          ))}
+          <PersonSections sections={detail.sections} />
 
-          <GurpsSection personId={personId || ''} />
+          <GurpsSection personId={personId} />
           <ValuesDesireSection detail={detail} />
 
           <details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
