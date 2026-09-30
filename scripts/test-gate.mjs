@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
+import { spawnSync } from 'node:child_process'
 
 import { EXPECTED_REFERENCE_EXCLUSIONS, apiDeclaredFields, apiVisibleFields, coinedPhraseFailures, editorialMarkerFailures, findBannedTerms, generatedArray, htmlMetadata, pageFailures, personVisibleFields, privateLinkFailures, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures, tableReviewRows, uiTooltipFields, visibleFieldFailures } from './gate.mjs'
 
@@ -157,7 +158,7 @@ test('structured visible fields report precise path and private links without br
   const doc = { title: '정상', reviewText: '본문', blocks: [{ type: 'paragraph', children: [{ type: 'text' }] }] }
   assert.throws(() => pageFailures(doc, 'world/x', new Set()), /E_READER_AST:world\/x:.*value/u)
   doc.blocks[0].children[0] = { type: 'unknownNode' }
-  assert.throws(() => pageFailures(doc, 'world/x', new Set()), /E_READER_AST:world\/x:.*type/u)
+  assert.throws(() => pageFailures(doc, 'world/x', new Set()), /E_READER_AST:world\/x:.*unknownNode/u)
 })
 
 test('person displayed fields are selected, and locked/source metadata is excluded', () => {
@@ -170,11 +171,13 @@ test('person displayed fields are selected, and locked/source metadata is exclud
 })
 
 test('API source boundary follows declared UI copy, not private evidence', () => {
-  const person = { name: '정상', unit: { note: '사용자 확정' }, provenance: { approval: '창작 제안' } }
+  const person = { name: '정상', unit: { type: '수행원', note: '사용자 확정' }, provenance: { approval: '창작 제안' } }
   assert.match(apiVisibleFields(person, 'gurps#/people/0').flatMap(([path, text]) => visibleFieldFailures(text, path))[0], /unit\/note/u)
   assert.ok(!apiVisibleFields(person, 'gurps#/people/0').some(([path]) => path.includes('provenance')))
   assert.ok(apiDeclaredFields(person, 'api/characters/person-0001').some(([path]) => path.includes('/unit/note')))
   assert.ok(!apiDeclaredFields(person, 'api/characters/person-0001').some(([path]) => path.includes('/provenance/approval')))
+  const masked = { skills: [{ name: '사용자 확정', ko: '검법' }] }
+  assert.deepEqual(apiVisibleFields(masked, 'api/characters/person-0001'), [['api/characters/person-0001#/skills/0/ko', '검법']])
 })
 
 test('table review emits AST cells with source hashes without scoring or dropping identities', () => {
@@ -202,13 +205,135 @@ test('category-purpose fields have local exceptions without hiding visible marke
   const category = { label: '기술', summary: '기록 장부의 수량과 잠긴 문을 설명한다.', requiredKinds: ['창작 제안'] }
   for (const key of ['label', 'summary']) assert.deepEqual(visibleFieldFailures(category[key], `registry/categories/0/${key}`), [])
   assert.match(visibleFieldFailures('사용자 확정', 'registry/categories/0/summary')[0], /editorial-marker/u)
-  assert.equal(category.requiredKinds.includes('창작 제안'), true) // not a rendered field
+  assert.deepEqual(['label', 'summary'].flatMap((key) => visibleFieldFailures(category[key], key)), [])
+  assert.deepEqual(visibleFieldFailures('문서 보관조는 원본을 열람하고 복제를 구분한다.', 'public/opening-territories.json#/regions/0/summary'), [])
+  assert.match(visibleFieldFailures('인물 복제', 'public/opening-territories.json#/regions/0/summary')[0], /banned-term/u)
 })
 
 test('actual consumer tooltip copy is a separate visible surface', () => {
-  const source = "const attrExplain = { ST: { icon: 'x', desc: '사용자 확정' } }; const skillExplain = { '권법': '창작 제안' }"
+  const source = "const attrExplain = { ST: { icon: 'x', desc: '사용자 확정' } }; const skillExplain = { '권법': '창작 제안' }; const valueMeta = { '권위': { plus: '정상', minus: '정상' } }; const desireMeta = { '갈망': { plus: '정상', minus: '정상' } }"
   const fields = uiTooltipFields(source)
-  assert.equal(fields.length, 2)
-  assert.deepEqual(fields.map(([path, text]) => visibleFieldFailures(text, path).length), [1, 1])
+  assert.equal(fields.length, 6)
+  assert.deepEqual(fields.map(([path, text]) => visibleFieldFailures(text, path).length), [1, 1, 0, 0, 0, 0])
   assert.throws(() => uiTooltipFields('const unrelated = {}'), /E_UI_TOOLTIP_FIELDS/u)
+})
+
+// Each case mutates only readFileSync bytes in a fresh process, then executes the real CLI.
+// No generated, canon, or shared-worktree file is changed by these regressions.
+function gateProbe(fixture) {
+  const script = `
+    import fs from 'node:fs';
+    import { syncBuiltinESMExports } from 'node:module';
+    import { pathToFileURL } from 'node:url';
+    const root = process.cwd();
+    const fixture = JSON.parse(process.env.GATE_FIXTURE);
+    const target = root + '/' + fixture.file;
+    const read = fs.readFileSync;
+    fs.readFileSync = function(path, ...args) {
+      if (String(path) !== target) return read.call(this, path, ...args);
+      const original = read.call(this, path, ...args);
+      if (fixture.append) return original + fixture.append;
+      if (fixture.replace) return original.replace(fixture.replace[0], fixture.replace[1]);
+      const data = JSON.parse(original);
+      let parent = data;
+      for (const key of fixture.path.slice(0, -1)) parent = parent[key];
+      if (fixture.remove) delete parent[fixture.path.at(-1)];
+      else if (fixture.rename) { const value = parent[fixture.path.at(-1)]; delete parent[fixture.path.at(-1)]; parent[fixture.rename] = value; }
+      else parent[fixture.path.at(-1)] = fixture.value;
+      return JSON.stringify(data);
+    };
+    syncBuiltinESMExports();
+    process.argv[1] = root + '/scripts/gate.mjs';
+    await import(pathToFileURL(process.argv[1]));
+  `
+  const run = spawnSync(process.execPath, ['--input-type=module', '-e', script], {
+    cwd: repoRoot, encoding: 'utf8', timeout: 60000, env: { ...process.env, GATE_FIXTURE: JSON.stringify(fixture) },
+  })
+  if (run.error) throw run.error
+  return { status: run.status, output: `${run.stdout}\n${run.stderr}` }
+}
+
+test('production gate reports visible map, timeline, state, and person-label markers', () => {
+  for (const [fixture, fragment] of [
+    [{ file: 'public/opening-territories.json', path: ['regions', 0, 'summary'], value: '사용자 확정' }, '/regions/0/summary'],
+    [{ file: 'public/opening-territories.json', path: ['states', 0, 'vassals'], value: '사용자 확정' }, '/states/0/vassals'],
+    [{ file: 'public/timeline-overview.json', path: ['years', 0, 'summary'], value: '사용자 확정' }, '/years/0/summary'],
+    [{ file: 'public/person-details/person-1003.json', path: ['fields', '생업'], rename: '사용자 확정' }, '/fields/사용자 확정'],
+  ]) {
+    const result = gateProbe(fixture)
+    assert.equal(result.status, 1, `${fragment}: ${result.output}`)
+    assert.ok(result.output.includes(fragment), result.output)
+  }
+})
+
+test('production gate excludes unused tooltip and private person metadata but catches consumed double-quoted tooltip', () => {
+  const privatePerson = gateProbe({ file: 'public/person-details/person-1003.json', path: ['locked'], value: '사용자 확정' })
+  assert.equal(privatePerson.status, 0, privatePerson.output)
+  const unused = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', append: "\nconst privateMetadata = {'approval': '사용자 확정'}\n" })
+  assert.equal(unused.status, 0, unused.output)
+  const consumed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', replace: ["desc: '힘 — 피해량·무게·HP 결정'", 'desc: "사용자 확정"'] })
+  assert.equal(consumed.status, 1, consumed.output)
+  assert.match(consumed.output, /tooltips/u)
+  const hiddenSkill = gateProbe({ file: 'lore/name-pools/gurps-cast.json', path: ['people', 0, 'skills', 0, 'name'], value: '사용자 확정' })
+  assert.equal(hiddenSkill.status, 0, hiddenSkill.output)
+})
+
+test('production gate rejects missing person identity, unsupported AST, and stale category consumer', () => {
+  for (const [fixture, fragment] of [
+    [{ file: 'public/person-details/person-1003.json', path: ['name'], remove: true }, '/name'],
+    [{ file: 'src/generated/peopleCatalog.ts', replace: ['"name": "한재목"', '"name": null'] }, '/people/0'],
+    [{ file: 'src/generated/world/Martial-Paths.json', path: ['blocks', 0, 'type'], value: 'linkReference' }, 'linkReference'],
+    [{ file: 'src/generated/categoryIndex.ts', replace: ['"summary": "세계가 이렇게 된 경위와 개막의 전제."', '"summary": "사용자 확정"'] }, 'categoryIndex'],
+  ]) {
+    const result = gateProbe(fixture)
+    assert.equal(result.status, 1, `${fragment}: ${result.output}`)
+    assert.ok(result.output.includes(fragment) || (fragment === 'categoryIndex' && result.output.includes('E_CATEGORY_CONSUMER')), result.output)
+  }
+})
+
+test('English explanatory cell is a review candidate while numeric and identity remain distinct', () => {
+  const en = canon('lore/culture/Martial-Paths.json')
+  const text = en.content.find((node) => node.kind === 'table' && node.rows.some((row) => row.some((cell) => typeof cell.en === 'string' && cell.en.includes('Taekwondo'))))
+  assert.ok(text)
+  const cell = text.rows.flat().find((item) => typeof item.en === 'string' && item.en.includes('Taekwondo')).en
+  const rows = tableReviewRows({ blocks: [{ type: 'table', children: [{ type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text', value: 'ID' }] }, { type: 'tableCell', children: [{ type: 'text', value: '1' }] }, { type: 'tableCell', children: [{ type: 'text', value: cell }] }] }] }] }, 'world-en/Martial-Paths.json')
+  assert.deepEqual(rows.map((row) => row.kind), ['identity-or-numeric', 'identity-or-numeric', 'prose-candidate'])
+})
+
+test('article acceptance matches rendered inline text, literal brackets and image alt', () => {
+  const doc = { title: '역사', reviewText: '본문', blocks: [{ type: 'paragraph', children: [
+    { type: 'text', value: '사용자 ' }, { type: 'strong', children: [{ type: 'text', value: '확정' }] },
+  ] }] }
+  assert.match(pageFailures(doc, 'world/fixture.json', new Set()).join('\n'), /editorial-marker/u)
+  doc.blocks[0].children = [{ type: 'text', value: '<사용자 확정>' }]
+  assert.match(pageFailures(doc, 'world/fixture.json', new Set()).join('\n'), /editorial-marker/u)
+  doc.blocks[0].children = [{ type: 'image', url: '/image.png', alt: '사용자 확정' }]
+  assert.match(pageFailures(doc, 'world/fixture.json', new Set()).join('\n'), /editorial-marker/u)
+})
+
+test('production gate catches split and literal-angle visible article markers', () => {
+  const path = ['blocks', 0, 'children']
+  for (const value of [
+    [{ type: 'text', value: '사용자 ' }, { type: 'strong', children: [{ type: 'text', value: '확정' }] }],
+    [{ type: 'text', value: '<사용자 확정>' }],
+    [{ type: 'image', url: '/missing.png', alt: '사용자 확정' }],
+  ]) {
+    const result = gateProbe({ file: 'src/generated/world/Martial-Paths.json', path, value })
+    assert.equal(result.status, 1, result.output)
+    assert.match(result.output, /editorial-marker.*Martial-Paths.json/u)
+  }
+})
+
+test('article acceptance rejects missing title and malformed renderer containers', () => {
+  const doc = { reviewText: '본문', blocks: [{ type: 'paragraph' }] }
+  assert.throws(() => pageFailures(doc, 'world/fixture.json', new Set()), /title|AST/u)
+  doc.title = '정상'
+  assert.throws(() => pageFailures(doc, 'world/fixture.json', new Set()), /E_READER_AST/u)
+  doc.blocks = [{ type: 'linkReference', children: [{ type: 'text', value: '정상' }] }]
+  assert.throws(() => pageFailures(doc, 'world/fixture.json', new Set()), /linkReference/u)
+})
+
+test('generated declaration parser rejects backup names and unrelated arrays', () => {
+  assert.throws(() => generatedArray('export const stateCatalogBackup = [{"name":"정상"}]', 'stateCatalog', 'fixture'), /E_GENERATED_ARRAY/u)
+  assert.throws(() => generatedArray('export const stateCatalog = null; export const wrongCatalog = [{"name":"정상"}]', 'stateCatalog', 'fixture'), /E_GENERATED_ARRAY/u)
 })

@@ -4,6 +4,8 @@ import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from '
 import { createHash } from 'node:crypto'
 import { dirname, join, relative, sep } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
+import ts from 'typescript'
+import { fromWikiBlocks } from '@seoul-dengoku/document-renderer'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const wikiRoot = join(scriptDir, '..')
@@ -107,20 +109,20 @@ export function privateLinkFailures(href, source) {
 
 export function visibleFieldFailures(text, source, { links = [], retiredSource = source } = {}) {
   if (typeof text !== 'string') throw new Error(`E_VISIBLE_FIELD:${source}`)
-  const visible = visibleText(text)
   return [
-    ...findBannedTerms(visible).map((term) => `FAIL banned-term: ${source} contains "${term}"`),
-    ...coinedPhraseFailures(visible, source),
-    ...editorialMarkerFailures(visible, source),
-    ...retiredFormFailures(visible, retiredSource).map((failure) => failure.replace(retiredSource, source)),
-    ...ravelenExclusionFailures(visible, source),
+    ...findBannedTerms(text).filter((term) => term !== '복제' || !source.includes('/regions/') || !/(?:문서고|문서|원본|열람).{0,45}복제/u.test(text))
+      .map((term) => `FAIL banned-term: ${source} contains "${term}"`),
+    ...coinedPhraseFailures(text, source),
+    ...editorialMarkerFailures(text, source),
+    ...retiredFormFailures(text, retiredSource).map((failure) => failure.replace(retiredSource, source)),
+    ...ravelenExclusionFailures(text, source),
     ...links.flatMap((href) => privateLinkFailures(href, source)),
   ]
 }
 
 const textNodes = new Set(['text', 'inlineCode', 'code'])
-const containerNodes = new Set(['root', 'paragraph', 'heading', 'blockquote', 'list', 'listItem', 'table', 'tableRow', 'tableCell', 'emphasis', 'strong', 'delete', 'link', 'linkReference'])
-const emptyNodes = new Set(['thematicBreak', 'break', 'html', 'image', 'imageReference', 'footnoteReference', 'definition'])
+const containerNodes = new Set(['paragraph', 'heading', 'blockquote', 'list', 'listItem', 'table', 'tableRow', 'tableCell', 'emphasis', 'strong', 'delete', 'link'])
+const emptyNodes = new Set(['thematicBreak', 'break', 'html', 'image'])
 
 function articleNodes(document, rel) {
   const values = []
@@ -133,20 +135,25 @@ function articleNodes(document, rel) {
     } else if (node.type === 'link') {
       if (typeof node.url !== 'string') throw new Error(`E_READER_AST:${rel}:${path}/url`)
       links.push(node.url)
+    } else if (node.type === 'image') {
+      if (typeof node.url !== 'string') throw new Error(`E_READER_AST:${rel}:${path}/url`)
+      if (node.alt != null && typeof node.alt !== 'string') throw new Error(`E_READER_AST:${rel}:${path}/alt`)
+      values.push(node.alt ?? node.value ?? '')
     } else if (!containerNodes.has(node.type) && !emptyNodes.has(node.type)) {
       throw new Error(`E_READER_AST:${rel}:${path}/type:${node.type}`)
     }
     if (node.children !== undefined && !Array.isArray(node.children)) throw new Error(`E_READER_AST:${rel}:${path}/children`)
+    if (containerNodes.has(node.type) && node.type !== 'link' && !Array.isArray(node.children)) throw new Error(`E_READER_AST:${rel}:${path}/children`)
     node.children?.forEach((child, index) => visit(child, `${path}/children/${index}`))
   }
-  document.blocks.forEach((block, index) => visit(block, `/blocks/${index}`))
-  return { values, links }
+  document.blocks.forEach((block, index) => { visit(block, `/blocks/${index}`); values.push('\n') })
+  return { text: values.join(''), links }
 }
 
 const cellText = (node, source) => {
   if (node.type !== 'tableCell') throw new Error(`E_READER_AST:${source}/tableCell`)
-  const { values, links } = articleNodes({ blocks: [node] }, source)
-  return { text: values.join(''), links }
+  const { text, links } = articleNodes({ blocks: [node] }, source)
+  return { text: text.trimEnd(), links }
 }
 
 export function tableReviewRows(document, rel) {
@@ -162,7 +169,8 @@ export function tableReviewRows(document, rel) {
         const { text, links } = cellText(cell, source)
         // Candidate for contextual review, not a score or a lexical ban. Proper names can be
         // ambiguous; identity/numeric cells remain present in the output for manual override.
-        const kind = /[가-힣].*(?:[.?!;:]|(?:다|요)(?:\s|$)|\s+(?:은|는|이|가|을|를|에|에서|의|와|과)(?:\s|$))/u.test(text) ? 'prose-candidate' : 'identity-or-numeric'
+        const kind = /[가-힣].*(?:[.?!;:]|(?:다|요)(?:\s|$)|\s+(?:은|는|이|가|을|를|에|에서|의|와|과)(?:\s|$))/u.test(text)
+          || /[A-Za-z][^.!?]{12,}[.!?](?:\s|$)/u.test(text) ? 'prose-candidate' : 'identity-or-numeric'
         rows.push({ source, kind, text, links, sourceHash: createHash('sha256').update(text).digest('hex') })
       })
     })
@@ -171,6 +179,7 @@ export function tableReviewRows(document, rel) {
 }
 
 export function personVisibleFields(person, rel) {
+  if (typeof person.name !== 'string') throw new Error(`E_VISIBLE_FIELD:${rel}#/name`)
   const fields = ['name', 'stateName', 'title', 'position', 'commonTier', 'rank', 'occupation', 'gender', 'stage', 'generation', 'biography']
   const out = fields.flatMap((field) => person[field] == null ? [] : [[`${rel}#/${field}`, person[field]]])
   for (const field of ['fields', 'sections']) {
@@ -179,6 +188,7 @@ export function personVisibleFields(person, rel) {
     for (const [key, value] of Object.entries(person[field])) {
       if (field === 'fields' && ['가치관', '욕망', '직위', '소속'].includes(key)) continue
       if (field === 'sections' && !['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입'].includes(key)) continue
+      if (field === 'fields') out.push([`${rel}#/fields/${key}/label`, key])
       out.push([`${rel}#/${field}/${key}`, value])
     }
   }
@@ -193,11 +203,11 @@ export function personVisibleFields(person, rel) {
 }
 
 export function apiVisibleFields(person, rel) {
-  const out = [['name', person.name], ['unit/type', person.unit?.type], ['unit/quality', person.unit?.quality], ['unit/note', person.unit?.note], ['territory/fief_name', person.territory?.fief_name], ['territory/type', person.territory?.type], ['territory/settlement/name', person.territory?.settlement?.name], ['wandering_force/type', person.wandering_force?.type], ['wandering_force/current_location', person.wandering_force?.current_location], ['wandering_force/camp/name', person.wandering_force?.camp?.name]]
+  const out = [['unit/type', person.unit?.type], ['unit/quality', person.unit?.type ? person.unit?.quality : null], ['unit/note', person.unit?.type ? person.unit?.note : null], ['territory/fief_name', person.territory?.fief_name], ['territory/type', person.territory?.type], ['territory/settlement/name', person.territory?.settlement?.name], ['wandering_force/type', person.wandering_force?.type], ['wandering_force/current_location', person.wandering_force?.current_location], ['wandering_force/camp/name', person.wandering_force?.camp?.name]]
   for (const group of ['advantages', 'disadvantages']) person[group]?.forEach((item, index) => {
     out.push([`${group}/${index}/name`, item.name], [`${group}/${index}/effect`, item.effect])
   })
-  person.skills?.forEach((skill, index) => out.push([`skills/${index}/name`, skill.name], [`skills/${index}/ko`, skill.ko]))
+  person.skills?.forEach((skill, index) => out.push([`skills/${index}/${skill.ko ? 'ko' : 'name'}`, skill.ko || skill.name]))
   return out.filter(([, value]) => value != null).map(([path, value]) => [`${rel}#/${path}`, value])
 }
 
@@ -208,35 +218,45 @@ export function apiDeclaredFields(person, rel) {
 }
 
 export function uiTooltipFields(source) {
-  const fields = []
-  for (const match of source.matchAll(/(?:desc|plus|minus):\s*'([^']*)'|'([^']+)'\s*:\s*'([^']*)'/gu)) {
-    fields.push(match[1] ?? match[3])
+  const file = ts.createSourceFile('PersonDetailPage.tsx', source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX)
+  const maps = new Map()
+  const visit = (node) => {
+    if (ts.isVariableDeclaration(node) && ts.isIdentifier(node.name) && ['attrExplain', 'skillExplain', 'valueMeta', 'desireMeta'].includes(node.name.text)) maps.set(node.name.text, node.initializer)
+    ts.forEachChild(node, visit)
   }
-  if (!fields.length) throw new Error('E_UI_TOOLTIP_FIELDS')
-  return fields.map((value, index) => [`src/pages/PersonDetailPage.tsx#/tooltips/${index}`, value])
+  visit(file)
+  const fields = []
+  for (const name of ['attrExplain', 'skillExplain', 'valueMeta', 'desireMeta']) {
+    const map = maps.get(name)
+    if (!map || !ts.isObjectLiteralExpression(map) || !map.properties.length) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}`)
+    for (const [index, entry] of map.properties.entries()) {
+      if (!ts.isPropertyAssignment(entry)) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}/${index}`)
+      if (name === 'skillExplain') {
+        if (!ts.isStringLiteralLike(entry.initializer)) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}/${index}`)
+        fields.push([`src/pages/PersonDetailPage.tsx#/tooltips/${name}/${index}`, entry.initializer.text])
+        continue
+      }
+      if (!ts.isObjectLiteralExpression(entry.initializer)) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}/${index}`)
+      const expected = name === 'attrExplain' ? ['desc'] : ['plus', 'minus']
+      for (const key of expected) {
+        const prop = entry.initializer.properties.find((item) => ts.isPropertyAssignment(item) && item.name.getText(file) === key)
+        if (!prop || !ts.isStringLiteralLike(prop.initializer)) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}/${index}/${key}`)
+        fields.push([`src/pages/PersonDetailPage.tsx#/tooltips/${name}/${index}/${key}`, prop.initializer.text])
+      }
+    }
+  }
+  return fields
 }
 
 export function generatedArray(source, name, file) {
-  const declaration = `export const ${name}`
-  const start = source.indexOf(' = [', source.indexOf(declaration))
-  if (!source.includes(declaration) || start < 0) throw new Error(`E_GENERATED_ARRAY:${file}:${name}`)
-  const tail = source.slice(start + 3)
-  let depth = 0
-  let quoted = false
-  let escaped = false
-  let end = -1
-  for (let index = 0; index < tail.length; index += 1) {
-    const char = tail[index]
-    if (quoted) {
-      if (escaped) escaped = false
-      else if (char === '\\') escaped = true
-      else if (char === '"') quoted = false
-    } else if (char === '"') quoted = true
-    else if (char === '[') depth += 1
-    else if (char === ']' && --depth === 0) { end = index; break }
-  }
-  if (end < 0) throw new Error(`E_GENERATED_ARRAY:${file}:${name}`)
-  return JSON.parse(tail.slice(0, end + 1))
+  const ast = ts.createSourceFile(file, source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS)
+  const statement = ast.statements.find((entry) => ts.isVariableStatement(entry) && entry.declarationList.declarations.some((decl) => ts.isIdentifier(decl.name) && decl.name.text === name))
+  const declaration = statement?.declarationList.declarations.find((entry) => ts.isIdentifier(entry.name) && entry.name.text === name)
+  if (!declaration || !declaration.initializer) throw new Error(`E_GENERATED_ARRAY:${file}:${name}`)
+  let value = declaration.initializer
+  if (ts.isAsExpression(value)) value = value.expression
+  if (!ts.isArrayLiteralExpression(value)) throw new Error(`E_GENERATED_ARRAY:${file}:${name}`)
+  return JSON.parse(value.getText(ast))
 }
 
 const readGeneratedArray = (file, name) => generatedArray(readFileSync(join(wikiRoot, file), 'utf8'), name, file)
@@ -252,8 +272,10 @@ export function pageFailures(document, rel, routes) {
     failures.push(`FAIL unstructured-content: ${rel}`)
     return failures
   }
-  const { values, links } = articleNodes(document, rel)
-  failures.push(...visibleFieldFailures(`${document.title} ${values.join(' ')}`, rel, { links }))
+  if (typeof document.title !== 'string') throw new Error(`E_VISIBLE_FIELD:${rel}#/title`)
+  try { fromWikiBlocks(document.blocks) } catch (error) { throw new Error(`E_READER_AST:${rel}:${error.message}`) }
+  const { text, links } = articleNodes(document, rel)
+  failures.push(...visibleFieldFailures(`${document.title}\n${text}`, rel, { links }))
   for (const href of links) {
     if (!href.startsWith('/') || href.startsWith('//')) continue
     if (HUB_PREFIXES.some((prefix) => href.startsWith(prefix))) continue
@@ -335,20 +357,31 @@ function main() {
   }
   if (historicalBundleCount !== historicalPageCount * 2 + historicalOriginCount) failures.push(`FAIL retired-form: dist/assets/ contains ${historicalBundleCount} historical-origin forms; expected ${historicalPageCount * 2 + historicalOriginCount}`)
   for (const file of listFiles(join(wikiRoot, 'public')).filter((file) => file.endsWith('.json'))) {
-    const source = readFileSync(file, 'utf8')
     const rel = posixRel(wikiRoot, file)
     if (rel.startsWith('public/person-details/')) {
-      const person = JSON.parse(source)
+      const person = JSON.parse(readFileSync(file, 'utf8'))
       for (const [field, value] of personVisibleFields(person, rel)) failures.push(...visibleFieldFailures(value, field, { links: markdownLinks(value) }))
     }
   }
   const people = readGeneratedArray('src/generated/peopleCatalog.ts', 'peopleCatalog')
+  const publicPeople = listFiles(join(wikiRoot, 'public/person-details')).filter((file) => file.endsWith('.json'))
+  if (people.length !== publicPeople.length) throw new Error(`E_PERSON_CONSUMER:${people.length}:${publicPeople.length}`)
   for (const [index, person] of people.entries()) {
+    if (typeof person.id !== 'string' || typeof person.name !== 'string') throw new Error(`E_PERSON_CONSUMER:/people/${index}`)
     for (const field of ['name', 'title', 'position', 'rank', 'occupation', 'gender', 'stateName', 'stage']) failures.push(...visibleFieldFailures(person[field], `src/generated/peopleCatalog.ts#/people/${index}/${field}`))
   }
   const categoryRegistry = JSON.parse(readFileSync(join(wikiRoot, 'scripts/category-registry.json'), 'utf8'))
+  const categorySource = readFileSync(join(wikiRoot, 'src/generated/categoryIndex.ts'), 'utf8')
+  const categoryAst = ts.createSourceFile('categoryIndex.ts', categorySource, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS)
+  const categoryDeclaration = categoryAst.statements.filter(ts.isVariableStatement).flatMap((entry) => [...entry.declarationList.declarations])
+    .find((entry) => ts.isIdentifier(entry.name) && entry.name.text === 'categoryIndex')
+  if (!categoryDeclaration?.initializer || !ts.isSatisfiesExpression(categoryDeclaration.initializer) || !ts.isAsExpression(categoryDeclaration.initializer.expression) || !ts.isObjectLiteralExpression(categoryDeclaration.initializer.expression.expression)) throw new Error('E_CATEGORY_CONSUMER')
+  const categoryIndex = JSON.parse(categoryDeclaration.initializer.expression.expression.getText(categoryAst))
+  if (!categoryIndex || categoryIndex.categories.length !== categoryRegistry.categories.length) throw new Error('E_CATEGORY_CONSUMER')
   for (const [index, category] of categoryRegistry.categories.entries()) {
-    for (const field of ['label', 'summary']) failures.push(...visibleFieldFailures(category[field], `scripts/category-registry.json#/categories/${index}/${field}`))
+    const consumed = categoryIndex.categories[index]
+    if (category.id !== consumed?.id || category.label !== consumed.label || category.summary !== consumed.summary) throw new Error(`E_CATEGORY_CONSUMER:/categories/${index}`)
+    for (const field of ['label', 'summary']) failures.push(...visibleFieldFailures(consumed[field], `src/generated/categoryIndex.ts#/categories/${index}/${field}`))
   }
   const history = JSON.parse(readFileSync(join(wikiRoot, 'data/update-history.json'), 'utf8'))
   history.updates.forEach((update, index) => {
@@ -369,17 +402,39 @@ function main() {
   }
   const territories = JSON.parse(readFileSync(join(wikiRoot, 'public/opening-territories.json'), 'utf8'))
   for (const [index, state] of territories.states.entries()) {
-    for (const field of ['name', 'origin', 'government', 'power', 'cause', 'ruler', 'founded', 'relation', 'religion', 'foreignRelations']) if (state[field] != null) {
+    for (const field of ['name', 'origin', 'government', 'power', 'cause', 'ruler', 'founded', 'relation', 'religion', 'foreignRelations', 'vassals']) if (state[field] != null) {
       const path = `public/opening-territories.json#/states/${index}/${field}`
       failures.push(...visibleFieldFailures(state[field], path, { retiredSource: field === 'origin' && state.id === 'S01' ? 'Sixteen-States.json' : path }))
     }
     state.chronology.forEach((event, eventIndex) => failures.push(...visibleFieldFailures(event.text, `public/opening-territories.json#/states/${index}/chronology/${eventIndex}/text`)))
   }
   territories.vassals.forEach((vassal, index) => {
-    for (const field of ['name', 'city', 'founded', 'duty']) failures.push(...visibleFieldFailures(vassal[field], `public/opening-territories.json#/vassals/${index}/${field}`))
+    for (const field of ['name', 'city', 'founded', 'duty', 'anchor', 'coordinateSource']) failures.push(...visibleFieldFailures(vassal[field], `public/opening-territories.json#/vassals/${index}/${field}`))
+  })
+  for (const [index, region] of territories.regions.entries()) {
+    for (const field of ['name', 'district', 'openingState', 'summary']) failures.push(...visibleFieldFailures(region[field], `public/opening-territories.json#/regions/${index}/${field}`))
+  }
+  for (const [index, station] of territories.stations.entries()) {
+    for (const field of ['name', 'district', 'control']) {
+      if (field === 'control') {
+        for (const key of ['status', 'primary']) if (station.control[key] != null) failures.push(...visibleFieldFailures(station.control[key], `public/opening-territories.json#/stations/${index}/control/${key}`))
+        for (const key of ['state', 'regionalAuthority', 'stationManager']) if (station.control.hierarchy[key] != null) failures.push(...visibleFieldFailures(station.control.hierarchy[key], `public/opening-territories.json#/stations/${index}/control/hierarchy/${key}`))
+      } else failures.push(...visibleFieldFailures(station[field], `public/opening-territories.json#/stations/${index}/${field}`))
+    }
+  }
+  territories.landmarks.forEach((landmark, index) => {
+    for (const field of ['name', 'role', 'detail']) failures.push(...visibleFieldFailures(landmark[field], `public/opening-territories.json#/landmarks/${index}/${field}`))
+  })
+  const timeline = JSON.parse(readFileSync(join(wikiRoot, 'public/timeline-overview.json'), 'utf8'))
+  timeline.years.forEach((year, index) => {
+    if (year.pressure) for (const field of ['summary', 'pressure', 'decision', 'immediate', 'aftermath']) failures.push(...visibleFieldFailures(year[field], `public/timeline-overview.json#/years/${index}/${field}`))
+    year.regionalEvents?.forEach((event, eventIndex) => {
+      for (const field of ['title', 'prose']) failures.push(...visibleFieldFailures(event[field], `public/timeline-overview.json#/years/${index}/regionalEvents/${eventIndex}/${field}`))
+    })
+    year.relatedDocuments.forEach((document, documentIndex) => failures.push(...visibleFieldFailures(document.title, `public/timeline-overview.json#/years/${index}/relatedDocuments/${documentIndex}/title`)))
   })
   const gurps = JSON.parse(readFileSync(join(wikiRoot, 'lore/name-pools/gurps-cast.json'), 'utf8'))
-  for (const [index, person] of gurps.people.entries()) {
+  for (const person of gurps.people) {
     // API source coverage is kept separately from article reviewText receipts.
     for (const [field, value] of apiDeclaredFields(person, `api/characters/${person.url?.split('/').at(-1) ?? person.id}`)) failures.push(...visibleFieldFailures(value, field))
   }
