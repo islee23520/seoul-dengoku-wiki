@@ -14,6 +14,7 @@ import { wikiPublicationManifest } from './publication-manifest.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
 import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
+import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
 
@@ -184,6 +185,7 @@ await materializeWorldAtlas({
   check: true,
 })
 const jsonPages = await walkLoreJson(loreRoot)
+const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot)).map(({ route }) => route))
 const categoryErrors = jsonPages.flatMap((page) => registrationErrors(page.value, categoryRegistry, basename(page.path)))
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
@@ -220,8 +222,7 @@ for (const slug of renderedBySlug.keys()) {
 const documents = []
 const englishDocuments = []
 for (const domain of domains) {
-  const castOnlyPagePattern = /^Cast-State-\d+$|^Core-Characters$|^Cast-Unaffiliated$|^Cast-Index-S4$|^Cast-Index$|^Cast-Relations$|^Cast-Corridors-Index$/
-for (const slug of [...renderedBySlug.keys()].filter(s => !castOnlyPagePattern.test(s)).sort((left, right) => left.localeCompare(right))) {
+  for (const slug of [...renderedBySlug.keys()].filter((slug) => publishedRoutes.has(`/world/${slug === 'index' ? '' : slug}`)).sort((left, right) => left.localeCompare(right))) {
     const page = pagesBySlug.get(slug)
     for (const document of localizedDocuments({
       domain,
@@ -867,6 +868,28 @@ const peopleCatalog = peopleSource.map((person, index) => {
     detailRoute: `/people/person-${String(index + 1).padStart(4, '0')}`,
   }
 })
+const catalogByName = new Map(peopleCatalog.map((person) => [person.name, person]))
+const graphPerson = (id) => {
+  const issued = issuedById.get(id)
+  const person = issued && catalogByName.get(issued.name)
+  if (!person || person.name !== issued.name) throw new Error(`E_RETAINER_GRAPH_PERSON:${id}`)
+  return { id, name: person.name, state: person.state, detailRoute: person.detailRoute }
+}
+const graphCourts = courtDataset.config.courts.filter((court) => court.stateId === 'S01')
+const graphCourtIds = new Set(graphCourts.map((court) => court.id))
+const graphRetainers = courtDataset.config.directRetainers.filter((row) => graphCourtIds.has(row.courtId))
+const graphIds = new Set(graphCourts.map((court) => court.ownerPersonId))
+for (const row of graphRetainers) {
+  graphIds.add(row.personId)
+  graphIds.add(row.liegePersonId)
+}
+const retainerGraph = {
+  nodes: [...graphIds].map(graphPerson),
+  edges: graphRetainers.map(({ personId, liegePersonId, courtId }) =>
+    ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
+  courts: graphCourts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
+}
+await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
 for (const person of peopleCatalog) {
   const ledger = peopleSource.find((candidate) => candidate.name === person.name)
   const cards = personCards.get(person.name) ?? []
