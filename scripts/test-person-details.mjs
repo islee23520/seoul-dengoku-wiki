@@ -76,15 +76,30 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
     ['K060', 'K069 K071'], ['K061', 'K073 K075'], ['K062', 'K074'],
   ]
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8'))
+  const catalogText = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const catalog = JSON.parse(catalogText.slice('export const peopleCatalog = '.length, catalogText.indexOf(' as const\n')))
+  const issuedById = new Map(registry.persons.map((person) => [person.id, person]))
+  const stateByName = new Map(values.people.map((person) => [person.name, person.state]))
   const details = new Map()
   for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter((name) => name.endsWith('.json'))) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
     details.set(detail.id, detail)
   }
-  const person = (id) => {
-    const index = registry.persons.findIndex((entry) => entry.id === id)
-    assert.notEqual(index, -1, id)
-    return details.get(`person-${String(index + 1).padStart(4, '0')}`)
+  const person = (id, records = details) => {
+    const issued = issuedById.get(id)
+    assert.ok(issued, id)
+    const matches = catalog.filter((entry) => entry.name === issued.name)
+    assert.equal(matches.length, 1, id)
+    const route = matches[0].detailRoute
+    assert.match(route, /^\/people\/person-\d{4}$/u, id)
+    const detail = records.get(route.slice('/people/'.length))
+    assert.ok(detail, id)
+    assert.equal(detail.id, matches[0].id, id)
+    assert.equal(detail.name, issued.name, id)
+    assert.equal(detail.state, stateByName.get(issued.name), id)
+    assert.equal(matches[0].state, stateByName.get(issued.name), id)
+    return detail
   }
   const expectedMembers = new Set()
   const expectedOwners = new Set()
@@ -94,13 +109,13 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
       const ids = members.split(' ')
       expectedOwners.add(owner.id)
       assert.equal(owner.court?.id, `court:${ownerId}`, ownerId)
-      assert.deepEqual(owner.court?.members, ids.map((id) => ({ personId: id, name: getPerson(id).name })), ownerId)
+      assert.deepEqual(owner.court?.members, ids.map((id) => ({ personId: id, name: issuedById.get(id).name })), ownerId)
       assert.equal(owner.directLiege, undefined, ownerId)
       for (const id of ids) {
         const member = getPerson(id)
         expectedMembers.add(member.id)
         assert.deepEqual(member.directLiege,
-          { personId: ownerId, name: owner.name, courtId: `court:${ownerId}`, effectiveYear: 2126 }, id)
+          { personId: ownerId, name: issuedById.get(ownerId).name, courtId: `court:${ownerId}`, effectiveYear: 2126 }, id)
         assert.equal(member.court, undefined, id)
         assert.equal(member.relations.outgoing.filter((edge) => edge.to === owner.name && edge.type === '지휘').length, 1, id)
       }
@@ -116,11 +131,30 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
   }
   const omitted = new Map(details)
   omitted.set(person('K041').id, { ...person('K041'), directLiege: undefined })
-  assert.throws(() => check((id) => omitted.get(person(id).id)), /K041/)
+  assert.throws(() => check((id) => person(id, omitted)), /K041/)
   const wrongCourt = new Map(details)
   wrongCourt.set(person('K060').id, { ...person('K060'), court: { ...person('K060').court,
     members: person('K060').court.members.filter((member) => member.personId !== 'K071') } })
-  assert.throws(() => check((id) => wrongCourt.get(person(id).id)), /K060/)
+  assert.throws(() => check((id) => person(id, wrongCourt)), /K060/)
+  const wrongIdentity = new Map(details)
+  wrongIdentity.set(person('K041').id, { ...person('K041'), name: issuedById.get('K194').name })
+  wrongIdentity.set(person('K032').id, { ...person('K032'), court: { ...person('K032').court,
+    members: [{ personId: 'K041', name: issuedById.get('K194').name }] } })
+  assert.throws(() => check((id) => person(id, wrongIdentity)), /K041/)
+  const blankIdentity = new Map(details)
+  blankIdentity.set(person('K041').id, { ...person('K041'), name: '' })
+  blankIdentity.set(person('K032').id, { ...person('K032'), court: { ...person('K032').court,
+    members: [{ personId: 'K041', name: '' }] } })
+  assert.throws(() => check((id) => person(id, blankIdentity)), /K041/)
+  const foreignState = new Map(details)
+  foreignState.set(person('K041').id, { ...person('K041'), state: 'S08' })
+  assert.throws(() => check((id) => person(id, foreignState)), /K041/)
+  const wrongOwner = new Map(details)
+  wrongOwner.set(person('K032').id, { ...person('K032'), name: issuedById.get('K194').name })
+  assert.throws(() => check((id) => person(id, wrongOwner)), /K032/)
+  const personCourt = new Map(details)
+  personCourt.set(person('K032').id, { ...person('K032'), court: { ...person('K032').court, id: 'K032' } })
+  assert.throws(() => check((id) => person(id, personCourt)), /K032/)
 })
 
 test('all canonical people expose unique detail routes and structured data', async () => {
