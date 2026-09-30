@@ -1,15 +1,21 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
+import { peopleCatalog } from '../generated/peopleCatalog'
+import { characterDraftExport } from './characterDraftExport'
+import gurpsCast from '../../lore/name-pools/gurps-cast.json'
 import './CharacterDraftPage.css'
 import { ADVANTAGES, DISADVANTAGES, QUIRKS, BACKGROUNDS, APPEARANCES, AMBITIONS } from '../data/gurps-options'
 
 type Attr = 'ST' | 'DX' | 'IQ' | 'HT'
+type GurpsEntry = { name: string; url: string; attributes: Record<Attr, { value: number }>; cp: { total: number } }
+const gurpsPeople = (gurpsCast as { people: GurpsEntry[] }).people
 
 interface GurmpsSheet {
   name: string; state: string; position: string; rank: string; occupation: string
   gender: string; birth: string; bongwan: string
   attributes: Record<Attr, number>
   cp: number; tier: string
+  sourceGurps: GurpsEntry | null
   selectedAdvantages: string[]; selectedDisadvantages: string[]
   selectedQuirks: string[]; selectedBackground: string
   selectedAppearance: string; selectedAmbition: string
@@ -19,7 +25,7 @@ interface GurmpsSheet {
 const DEFAULT: GurmpsSheet = {
   name: '', state: '', position: '', rank: '', occupation: '', gender: '', birth: '', bongwan: '',
   attributes: { ST: 10, DX: 10, IQ: 10, HT: 10 },
-  cp: 100, tier: '일반',
+  cp: 100, tier: '일반', sourceGurps: null,
   selectedAdvantages: [], selectedDisadvantages: [], selectedQuirks: [],
   selectedBackground: '', selectedAppearance: '', selectedAmbition: '',
   aiKey: '', aiModel: 'gpt-4o-mini', aiGenerating: false, aiMessage: ''
@@ -72,27 +78,19 @@ const OCCUPATION_OPTIONS = [
 
 
 export default function CharacterDraftPage() {
+  const [searchParams] = useSearchParams()
   const [sheet, setSheet] = useState<GurmpsSheet>(DEFAULT)
 
-  const [characterList, setCharacterList] = useState<Array<{id: string; name: string; state: string}>>([])
+  const characterList = peopleCatalog.map(person => ({ id: person.id, name: person.name, state: person.stateName }))
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCharId, setSelectedCharId] = useState('')
   const [loadingChar, setLoadingChar] = useState(false)
+  const [loadedCharId, setLoadedCharId] = useState('')
+  const [loadError, setLoadError] = useState('')
+  const canExport = !loadingChar && loadedCharId === selectedCharId
 
 
   
-  useEffect(() => {
-    fetch('/api/characters')
-      .then(res => res.json())
-      .then(data => {
-        if (data.characters) setCharacterList(data.characters)
-      })
-      .catch(() => {
-        // API not available — try loading from static data
-        fetch('/wiki/assets/peopleCatalog-BDMn1gFg.js')
-          .catch(() => console.log('Character list unavailable'))
-      })
-  }, [])
 
   const filteredCharacters = useMemo(() => {
     if (!searchQuery.trim()) return characterList
@@ -102,19 +100,32 @@ export default function CharacterDraftPage() {
     )
   }, [characterList, searchQuery])
 
-  const loadCharacter = useCallback(async (id: string) => {
-    if (!id) return
+  useEffect(() => {
+    const id = selectedCharId
+    const controller = new AbortController()
+    setLoadedCharId('')
+    setLoadError('')
+    setSheet(DEFAULT)
+    if (!id) { setLoadingChar(false); return }
     setLoadingChar(true)
+    void (async () => {
     try {
-      const res = await fetch('/api/characters/' + id)
-      if (!res.ok) { console.log('Character not found'); return }
+      const res = await fetch(`${import.meta.env.BASE_URL}person-details/${encodeURIComponent(id)}.json`, { signal: controller.signal })
+      if (!res.ok) throw new Error('인물 정보를 불러오지 못했습니다.')
       const data = await res.json()
+      if (controller.signal.aborted) return
+      const expected = peopleCatalog.find(person => person.id === id)
+      if (data.id !== id || data.name !== expected?.name) throw new Error('인물 정보의 ID와 이름이 일치하지 않습니다.')
+      const gurps = gurpsPeople.find(person => person.url === `/people/${id}` && person.name === data.name)
       // Populate the form with loaded data
       setSheet(prev => ({
         ...prev,
+        sourceGurps: gurps ?? null,
         name: data.name || '',
         state: data.state || '',
         position: data.role?.display || data.position || '',
+        rank: data.rank || '',
+        gender: data.gender || '',
         occupation: data.occupation || '',
         selectedAdvantages: [],
         selectedDisadvantages: [],
@@ -124,23 +135,34 @@ export default function CharacterDraftPage() {
         selectedAmbition: '',
       }))
       // Set attributes if available
-      if (data.attributes) {
+      if (gurps) {
         setSheet(prev => ({
           ...prev,
           attributes: {
-            ST: data.attributes.ST?.value ?? 10,
-            DX: data.attributes.DX?.value ?? 10,
-            IQ: data.attributes.IQ?.value ?? 10,
-            HT: data.attributes.HT?.value ?? 10,
+            ST: gurps.attributes.ST.value,
+            DX: gurps.attributes.DX.value,
+            IQ: gurps.attributes.IQ.value,
+            HT: gurps.attributes.HT.value,
           },
-          cp: data.cp?.total ?? 100,
+          cp: gurps.cp.total,
         }))
       }
+      setLoadedCharId(id)
     } catch (e) {
-      console.log('Failed to load character:', e)
+      if (!controller.signal.aborted) setLoadError(e instanceof Error ? e.message : '인물 조회 실패')
+    } finally {
+      if (!controller.signal.aborted) setLoadingChar(false)
     }
-    setLoadingChar(false)
-  }, [])
+    })()
+    return () => controller.abort()
+  }, [selectedCharId])
+
+  useEffect(() => {
+    const id = searchParams.get('person')
+    if (id && peopleCatalog.some(person => person.id === id)) {
+      setSelectedCharId(id)
+    }
+  }, [searchParams])
 
   const attrCP = useMemo(() => Object.values(sheet.attributes).reduce((s, v) => s + (CP_COST[v] || 0), 0), [sheet.attributes])
   const advCP = useMemo(() => sheet.selectedAdvantages.reduce((s, id) => s + (ADVANTAGES.find(a => a.id === id)?.cp || 0), 0), [sheet.selectedAdvantages])
@@ -156,9 +178,7 @@ export default function CharacterDraftPage() {
   }, [])
 
   const aiGenerate = useCallback(async () => {
-    if (!sheet.aiKey) { set('aiMessage', 'AI 키를 입력하세요. 키는 브라우저에만 저장되고 서버로 전송되지 않습니다.'); return }
-    set('aiGenerating', true); set('aiMessage', 'AI 생성 중...')
-
+    if (!canExport) return
     const prompt = `다음 조건에 맞는 겁스 4판 캐릭터를 만들어주세요. JSON으로만 답하세요.
 이름: ${sheet.name || '자유'}
 국가: ${sheet.state || '자유'}
@@ -173,33 +193,13 @@ export default function CharacterDraftPage() {
 
 형식: {"advantages": ["한글이름"], "disadvantages": ["한글이름"], "quirk": "한글이름", "background": "한글이름", "appearance": "한글이름", "ambition": "한글이름"}`
 
-    try {
-      const res = await fetch('https://api.openai.com/v1/chat/completions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${sheet.aiKey}` },
-        body: JSON.stringify({
-          model: sheet.aiModel,
-          messages: [{ role: 'user', content: prompt }],
-          temperature: 0.7, max_tokens: 500,
-        }),
-      })
-      const data = await res.json()
-      const text = data.choices?.[0]?.message?.content || '{}'
-      const json = JSON.parse(text.replace(/\`/g, '').replace(/json/g, '').trim())
-
-      const findId = (list: Array<{id: string; ko: string}>, ko: string) => list.find(x => x.ko === ko)?.id || ''
-      set('selectedAdvantages', (json.advantages || []).map((ko: string) => findId(ADVANTAGES, ko)).filter(Boolean))
-      set('selectedDisadvantages', (json.disadvantages || []).map((ko: string) => findId(DISADVANTAGES, ko)).filter(Boolean))
-      set('selectedQuirks', [findId(QUIRKS, json.quirk)].filter(Boolean))
-      set('selectedBackground', findId(BACKGROUNDS, json.background))
-      set('selectedAppearance', findId(APPEARANCES, json.appearance))
-      set('selectedAmbition', findId(AMBITIONS, json.ambition))
-      set('aiMessage', 'AI 생성 완료!')
-    } catch (e) {
-      set('aiMessage', `AI 생성 실패: ${e instanceof Error ? e.message : '알 수 없음'}`)
-    }
-    set('aiGenerating', false)
-  }, [sheet])
+    const url = URL.createObjectURL(new Blob([JSON.stringify({ schemaVersion: 1, personId: selectedCharId || null, approval: 'art-proposal', prompt }, null, 2)], { type: 'application/json' }))
+    const link = document.createElement('a')
+    link.href = url
+    link.download = 'character-sheet-ai-request.json'
+    link.click()
+    URL.revokeObjectURL(url)
+  }, [sheet, selectedCharId, canExport])
 
   const Chip = ({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) => (
     <button type="button" className={active ? 'chip active' : 'chip'} onClick={onClick}>{label}</button>
@@ -208,7 +208,9 @@ export default function CharacterDraftPage() {
   return (
     <main className="wiki-prose">
       <h1>겁스 캐릭터 시트 생성기</h1>
+      {selectedCharId && <p><Link to={`/tools/character-art?person=${encodeURIComponent(selectedCharId)}`}>선택 인물의 아트 작업 도구</Link></p>}
       <p className="draft-hint">저장하여도 정본은 바뀌지 않았습니다. 정본 반영은 별도 승인이 필요합니다.</p>
+      {sheet.sourceGurps && <details><summary>원본 겁스 시트</summary><pre>{JSON.stringify(sheet.sourceGurps, null, 2)}</pre></details>}
 
       
       <section className="draft-charselect">
@@ -225,7 +227,6 @@ export default function CharacterDraftPage() {
             value={selectedCharId}
             onChange={e => {
               setSelectedCharId(e.target.value)
-              if (e.target.value) loadCharacter(e.target.value)
             }}
             className="charselect-dropdown"
           >
@@ -237,6 +238,7 @@ export default function CharacterDraftPage() {
             ))}
           </select>
           {loadingChar && <span className="charselect-loading">불러오는 중...</span>}
+          {loadError && <p role="alert">{loadError}</p>}
         </div>
         {selectedCharId && (
           <p className="charselect-info">
@@ -247,19 +249,11 @@ export default function CharacterDraftPage() {
       </section>
 
 <section className="draft-ai">
-        <h2>AI 자동 생성 (BYOK)</h2>
-        <p className="ai-hint">자기 AI 키를 입력하세요. 키는 브라우저에만 저장되고 서버로 전송되지 않습니다.</p>
+        <h2>사용자 AI 도구에 전달</h2>
+        <p className="ai-hint">현재 시트의 작성 조건을 내보내 사용자 AI 도구에서 검토합니다. 인증과 실행은 사용자 장치에서 진행합니다.</p>
         <div className="ai-row">
-          <input type="password" placeholder="OpenAI API Key" value={sheet.aiKey} onChange={e => set('aiKey', e.target.value)} />
-          <select value={sheet.aiModel} onChange={e => set('aiModel', e.target.value)}>
-            <option value="gpt-4o-mini">GPT-4o mini</option>
-            <option value="gpt-4o">GPT-4o</option>
-          </select>
-          <button onClick={aiGenerate} disabled={sheet.aiGenerating}>
-            {sheet.aiGenerating ? '생성 중...' : 'AI 자동 생성'}
-          </button>
+          <button onClick={aiGenerate} disabled={!canExport}>시트 AI 요청 내보내기</button>
         </div>
-        {sheet.aiMessage && <p className="ai-message">{sheet.aiMessage}</p>}
       </section>
 
       <section className="draft-basic">
@@ -308,7 +302,8 @@ export default function CharacterDraftPage() {
           <span>능력치: <strong>{attrCP}</strong></span>
           <span>장점: <strong>{advCP}</strong></span>
           <span>단점: <strong>{disCP}</strong></span>
-          <span>총 CP: <strong>{totalCP}</strong></span>
+          <span>편집 배분 CP: <strong>{totalCP}</strong></span>
+          <span>원장 CP 예산: <strong>{sheet.cp}</strong></span>
         </div>
       </section>
 
@@ -378,10 +373,12 @@ export default function CharacterDraftPage() {
       </section>
 
       <section className="draft-actions">
-        <button onClick={() => {
-          const blob = new Blob([JSON.stringify(sheet, null, 2)], { type: 'application/json' })
+        <button disabled={!canExport} onClick={() => {
+          if (!canExport) return
+          const blob = new Blob([JSON.stringify(characterDraftExport(sheet, selectedCharId), null, 2)], { type: 'application/json' })
           const url = URL.createObjectURL(blob)
           const a = document.createElement('a'); a.href = url; a.download = 'character-gurps.json'; a.click()
+          URL.revokeObjectURL(url)
         }}>초안 내보내기</button>
         <Link to="/people"><button type="button">인물 목록으로</button></Link>
       </section>

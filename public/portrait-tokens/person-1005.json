@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1005",
+  "characterId": "K1005",
+  "name": "정서온",
+  "stateId": "S03",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "여성",
+    "genderUserLocked": true,
+    "role": "태욱그룹 회장"
+  },
+  "artProposal": {
+    "description": "A woman who chairs a life-safety research company; proposed straight dark bob, calm analytical gaze, plain muted brown modern jacket over charcoal shirt.",
+    "approvedAppearance": null,
+    "approvedOutfit": null,
+    "approvedEquipmentIds": [],
+    "approvalNote": "Every visible appearance and clothing choice in this image is an unapproved art proposal, not WIKI canon. No equipment approval is inferred.",
+    "face": "차분하고 분석적인 시선",
+    "hair": "곧은 짙은 단발",
+    "upper": "숯색 내의 위의 탁한 갈색 재킷",
+    "lower": null,
+    "footwear": null
+  },
+  "style": {
+    "styleId": "wingzero-119-medium-close-up-b-study-1",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-1005.png",
+    "sha256": "dbb4696603e45907bc99f5ad5246d000478c1327ac02e8bc9af1859fd535d091",
+    "width": 1145,
+    "height": 1374
+  }
+}
