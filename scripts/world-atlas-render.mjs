@@ -30,7 +30,6 @@ const GROUP_CATEGORIES = {
 // Schema tokens that are Korean words; their English wording lives here, not in the atlas.
 export const OBLIGATION_TARGETS = Object.freeze({ 시민: L('시민', 'citizens') })
 export const RUMOR_TIERS = Object.freeze({ 확인: L('확인', 'confirmed'), 보류: L('보류', 'withheld'), 전언: L('전언', 'hearsay') })
-const YES_NO = [L('아니오', 'No'), L('예', 'Yes')]
 const ATLAS_SOURCE = 'lore/World-Narrative-Atlas.json'
 
 // Mirrors WorldBlocks.tsx headingId so projection fragments resolve in the rendered page.
@@ -164,11 +163,7 @@ export function renderTheaters(atlas) {
   for (const theater of atlas.theaters ?? []) {
     b.heading(2, text(theater.id, ' · ', theater.display_name))
     b.list([
-      text(L('출처층', 'Source layer'), ': ', theater.source_kind),
-      text(L('확인', 'Verified'), ': ', theater.verified),
-      text(L('추론', 'Inference'), ': ', theater.inference),
-      text(L('창작', 'Original fiction'), ': ', theater.original_fiction),
-      text(L('정사 연결표 제거 가능', 'Canon bridge table removable'), ': ', YES_NO[theater.japan_bridge_removable ? 1 : 0]),
+      text(theater.reader_description),
       text(L('연결 국가', 'Linked states'), ': ', states(atlas, theater.states)),
     ])
     b.nodes(theater.prose)
