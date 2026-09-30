@@ -867,6 +867,25 @@ const peopleCatalog = peopleSource.map((person, index) => {
     detailRoute: `/people/person-${String(index + 1).padStart(4, '0')}`,
   }
 })
+const catalogByName = new Map(peopleCatalog.map((person) => [person.name, person]))
+const graphPerson = (id) => {
+  const issued = issuedById.get(id)
+  const person = issued && catalogByName.get(issued.name)
+  if (!person || person.name !== issued.name) throw new Error(`E_RETAINER_GRAPH_PERSON:${id}`)
+  return { id, name: person.name, state: person.state, detailRoute: person.detailRoute }
+}
+const graphIds = new Set(courtDataset.config.courts.map((court) => court.ownerPersonId))
+for (const row of courtDataset.config.directRetainers) {
+  graphIds.add(row.personId)
+  graphIds.add(row.liegePersonId)
+}
+const retainerGraph = {
+  nodes: [...graphIds].map(graphPerson),
+  edges: courtDataset.config.directRetainers.map(({ personId, liegePersonId, courtId }) =>
+    ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
+  courts: courtDataset.config.courts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
+}
+await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
 for (const person of peopleCatalog) {
   const ledger = peopleSource.find((candidate) => candidate.name === person.name)
   const cards = personCards.get(person.name) ?? []
