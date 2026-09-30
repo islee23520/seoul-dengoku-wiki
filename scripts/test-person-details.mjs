@@ -3,25 +3,41 @@ import { readdir, readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
+import { MemoryRouter } from 'react-router-dom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
-import { PersonSections } from '../src/pages/PersonDetailPage.tsx'
+import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
 
 const sourcePages = new Map()
-const assertMartialSource = async (detail, id) => {
-  const [, slug, anchor] = detail.sourceRoute.match(/^\/world\/([^#]+)#(.+)$/u) ?? []
-  assert.ok(slug && anchor, id)
-  if (!sourcePages.has(slug)) {
-    const document = JSON.parse(await readFile(new URL(`../lore/characters/${slug}.json`, import.meta.url), 'utf8'))
-    sourcePages.set(slug, renderLoreMarkdown(document, 'ko'))
+const cardSources = ['Cast-State-01', 'Cast-State-02', 'Cast-State-03', 'Cast-State-04', 'Cast-State-05',
+  'Cast-State-06', 'Cast-State-07', 'Cast-State-08', 'Cast-State-09', 'Cast-State-10', 'Cast-State-11',
+  'Cast-State-12', 'Cast-State-13', 'Cast-State-14', 'Cast-State-15', 'Cast-State-16',
+  'Core-Characters', 'Cast-Unaffiliated']
+const selectedCard = async (name) => {
+  const candidates = []
+  for (const slug of cardSources) {
+    if (!sourcePages.has(slug)) {
+      const document = JSON.parse(await readFile(new URL(`../lore/characters/${slug}.json`, import.meta.url), 'utf8'))
+      sourcePages.set(slug, { markdown: renderLoreMarkdown(document, 'ko'), primary: document.data?.primary_detail_names ?? [] })
+    }
+    const source = sourcePages.get(slug)
+    const heading = slug === 'Core-Characters' ? `## ${name}` : `### 인물 ${name}`
+    const start = source.markdown.indexOf(`${heading}\n`)
+    if (start < 0) continue
+    const body = source.markdown.slice(start + heading.length).split(/\n#{2,3} /u, 1)[0]
+    candidates.push({ slug, body, primary: source.primary.includes(name) })
   }
-  const heading = slug === 'Core-Characters' ? `## ${detail.name}` : `### 인물 ${detail.name}`
-  if (slug === 'Core-Characters') assert.equal(anchor, detail.name, id)
-  else if (slug.startsWith('Cast-')) assert.equal(anchor, `인물-${detail.name}`, id)
-  const markdown = sourcePages.get(slug)
-  const start = markdown.indexOf(`${heading}\n`)
-  assert.ok(start >= 0, id)
-  const body = markdown.slice(start + heading.length).split(/\n#{2,3} /u, 1)[0]
-  const martial = body.match(/\*\*무공\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/u)?.[1]?.trim()
+  assert.ok(candidates.length > 0, name)
+  return candidates.find((card) => card.primary) ?? candidates.sort((a, b) => b.body.trim().length - a.body.trim().length)[0]
+}
+const assertMartialSource = async (detail, id) => {
+  const issued = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+    .persons.find((person) => person.id === id || person.name === id)
+  assert.equal(detail.name, issued?.name, id)
+  const card = await selectedCard(issued.name)
+  const anchor = card.slug === 'Core-Characters' ? issued.name : `인물-${issued.name}`
+  assert.equal(detail.sourceRoute, `/world/${card.slug}#${anchor}`, id)
+  assert.equal(detail.biography, card.body.trim(), id)
+  const martial = card.body.match(/\*\*무공\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/u)?.[1]?.trim()
   assert.ok(martial, id)
   assert.equal(detail.sections['무공'], martial, id)
 }
@@ -858,13 +874,26 @@ test('S16 issued cards retain card-backed bilingual livelihoods and original mar
 })
 
 test('person detail page renders tables and the canonical prose sections', async () => {
-  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1009.json', import.meta.url), 'utf8'))
-  const html = renderToStaticMarkup(createElement(PersonSections, { sections: detail.sections }))
-  for (const [label, body] of Object.entries(detail.sections)) {
-    assert.ok(html.includes(`<h3>${label}</h3>`), label)
-    assert.ok(html.includes(body.slice(0, 4)), label)
+  const supported = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
+  const details = await Promise.all(['person-0001', 'person-0002', 'person-1009'].map(async (id) =>
+    JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))))
+  assert.deepEqual(new Set(details.flatMap((detail) => Object.keys(detail.sections))), new Set(supported))
+  for (const detail of details) {
+    const html = renderToStaticMarkup(createElement(MemoryRouter, null,
+      createElement(PersonDetailContent, { detail, personId: detail.id })))
+    assert.ok(html.includes(`data-person-id="${detail.id}"`), detail.id)
+    assert.ok(html.includes('<h2>기본 정보</h2>'), detail.id)
+    assert.ok(html.includes('<h2>가치관</h2>'), detail.id)
+    assert.ok(html.includes('<h2>욕망</h2>'), detail.id)
+    assert.ok(html.includes('<h2>정본 상세</h2>'), detail.id)
+    for (const label of Object.keys(detail.sections)) {
+      assert.ok(html.includes(`<h3>${label}</h3>`), `${detail.id}:${label}`)
+    }
   }
-  const missing = renderToStaticMarkup(createElement(PersonSections, { sections: { 무공: '', 야망: '목표' } }))
+  const missing = renderToStaticMarkup(createElement(MemoryRouter, null,
+    createElement(PersonDetailContent, {
+      detail: { ...details[0], sections: { 무공: '', 야망: '목표' } }, personId: details[0].id,
+    })))
   assert.ok(!missing.includes('<h3>무공</h3>'))
   assert.ok(missing.includes('<h3>야망</h3>'))
 })

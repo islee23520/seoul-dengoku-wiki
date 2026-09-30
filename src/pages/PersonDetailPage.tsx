@@ -355,6 +355,10 @@ export default function PersonDetailPage() {
   if (!summary || failed) return <Navigate to="/people" replace />
   if (!detail) return <div className="wiki-loading" role="status">인물 상세를 불러오고 있습니다.</div>
 
+  return <PersonDetailContent detail={detail} personId={personId || ''} />
+}
+
+export function PersonDetailContent({ detail, personId }: { detail: PersonDetail; personId: string }): JSX.Element {
   const person: any = detail
   const basicRows: Array<Array<string | number | null>> = [
     ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
@@ -395,7 +399,7 @@ export default function PersonDetailPage() {
           <h2>정본 상세</h2>
           <PersonSections sections={detail.sections} />
 
-          <GurpsSection personId={personId || ''} />
+          <GurpsSection personId={personId} />
           <ValuesDesireSection detail={detail} />
 
           <details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
