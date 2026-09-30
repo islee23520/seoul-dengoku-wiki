@@ -24,6 +24,12 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
 
 const sectionOrder = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
 
+export function PersonSections({ sections }: { sections: Record<string, string> }): JSX.Element {
+  return <>{sectionOrder.filter((label) => sections[label]).map((label) => (
+    <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{sections[label]}</ReactMarkdown></section>
+  ))}</>
+}
+
 function DataTable({ title, rows }: { title: string; rows: Array<Array<string | number | null>> }) {
   return (
     <section className="person-data-section">
@@ -387,9 +393,7 @@ export default function PersonDetailPage() {
         </aside>
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
-          {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
-            <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
-          ))}
+          <PersonSections sections={detail.sections} />
 
           <GurpsSection personId={personId || ''} />
           <ValuesDesireSection detail={detail} />
