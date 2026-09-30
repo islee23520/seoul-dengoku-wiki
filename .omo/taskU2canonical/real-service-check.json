@@ -1,0 +1,28 @@
+{
+  "view": {
+    "status": 200,
+    "documentId": "DOC:Entity-QA",
+    "route": "/world/Entity-QA",
+    "sourceRevision": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "leafId": "entity:p",
+    "visibleText": "A",
+    "sourceInterval": [
+      1,
+      6
+    ]
+  },
+  "accepted": {
+    "status": 201,
+    "id": 1,
+    "state": "received"
+  },
+  "stale": {
+    "status": 422,
+    "code": "source-changed",
+    "reconfirmationRequired": true
+  },
+  "partial": {
+    "status": 422,
+    "code": "ambiguous-selection"
+  }
+}

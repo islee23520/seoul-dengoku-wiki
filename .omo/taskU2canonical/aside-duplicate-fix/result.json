@@ -1,0 +1,53 @@
+{
+  "ambiguity": {
+    "returnedNull": true,
+    "attributes": [
+      null,
+      null
+    ]
+  },
+  "bindings": [
+    {
+      "id": "item:0",
+      "tag": "P"
+    },
+    {
+      "id": "item:1",
+      "tag": "P"
+    }
+  ],
+  "assigned": [
+    "item:0",
+    "item:1"
+  ],
+  "capture": {
+    "schemaVersion": "feedback-anchor.v1",
+    "documentId": "World-Unbinding",
+    "route": "/wiki/world/World-Unbinding",
+    "locale": "ko",
+    "sourceRevision": "qa-fixture",
+    "selections": [
+      {
+        "blockAnchor": "item:1",
+        "blockKind": "list-item",
+        "leafId": "item:1",
+        "exactQuote": "same",
+        "prefix": "",
+        "suffix": "",
+        "range": {
+          "start": 0,
+          "end": 4,
+          "unit": "unicode-code-point"
+        },
+        "sourceSpans": [
+          {
+            "path": "/content/items/1",
+            "start": 0,
+            "end": 4,
+            "unit": "unicode-code-point"
+          }
+        ]
+      }
+    ]
+  }
+}

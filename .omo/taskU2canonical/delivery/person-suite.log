@@ -1,0 +1,35 @@
+npm notice run seoul-dengoku-wiki@0.1.0 test:person-details
+npm notice run vitest run scripts/test-person-details.mjs
+
+ RUN  v5.0.2 /Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-ui-canonical
+
+stderr | scripts/test-person-details.mjs > person detail page renders tables and the canonical prose sections
+Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
+    at MemoryRouter (file:///Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-ui-canonical/node_modules/react-router/dist/development/chunk-OB3PAWPO.mjs:7044:3)
+
+ ❯ scripts/test-person-details.mjs (31 tests | 1 failed) 1819ms
+   × person detail page renders tables and the canonical prose sections 6ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  scripts/test-person-details.mjs > person detail page renders tables and the canonical prose sections
+ReferenceError: feedback is not defined
+ ❯ PersonDetailContent src/pages/PersonDetailPage.tsx:412:12
+
+ ❯ renderWithHooks node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:5662:16
+ ❯ renderIndeterminateComponent node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:5736:15
+ ❯ renderElement node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:5961:7
+ ❯ renderNodeDestructiveImpl node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6119:11
+ ❯ renderNodeDestructive node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6091:14
+ ❯ renderContextProvider node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:5935:3
+ ❯ renderElement node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6032:11
+ ❯ renderNodeDestructiveImpl node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6119:11
+ ❯ renderNodeDestructive node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6091:14
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 30 passed (31)
+   Start at  03:39:07
+   Duration  3.20s (tests 70%, transform 16%, import 14%)

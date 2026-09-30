@@ -1,0 +1,70 @@
+{
+  "target": "http://127.0.0.1:5212/wiki/people/person-0029",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "render": {
+    "status": "PASS",
+    "title": "강민서 | 서울:전국 공식 위키",
+    "bodyContainsPerson": true
+  },
+  "gate": {
+    "modeEndpoint": {
+      "status": 200,
+      "mode": "stale/hold accepted"
+    },
+    "releaseEndpoint": {
+      "status": 200,
+      "released": true
+    },
+    "heldCountAtVerification": 1
+  },
+  "checks": [
+    {
+      "id": "source-slicing",
+      "status": "PASS",
+      "relationshipLeaf": "section:관계:list:1",
+      "exactSelectedText": "소속: 규격맹",
+      "fullBiographyListItemFound": true,
+      "selectionRangeCount": 1
+    },
+    {
+      "id": "stale-422-lock",
+      "status": "PASS",
+      "staleResponseUI": "원문이 변경되었습니다. 현재 문장을 다시 선택해 확인해 주세요.",
+      "draftRetained": true,
+      "emptyRecaptureDidNotClearLock": true,
+      "afterReloadLockedButtonDisabled": true,
+      "validReselectionClearedLock": true
+    },
+    {
+      "id": "invalid-saved-anchor",
+      "status": "PASS",
+      "fixture": "sourceSpans=[]",
+      "readerAfterReload": {
+        "articleCount": 1,
+        "heading": "강민서",
+        "biographyPresent": true
+      },
+      "invalidDraftRemoved": true
+    },
+    {
+      "id": "held-submission-controls",
+      "status": "PASS",
+      "fixture": "OLD_SENT",
+      "gateHeldCount": 1,
+      "reasonDisabled": true,
+      "bodyDisabled": true,
+      "alternativeDisabled": true,
+      "submitDisabled": true,
+      "newUnsentNotEntered": true,
+      "afterRelease": "제보가 접수되었습니다."
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "u2-pass-final-success.png",
+    "u2-pass-final-affiliation.png"
+  ]
+}

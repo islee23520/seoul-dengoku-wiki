@@ -1,0 +1,52 @@
+{
+  "target": "http://127.0.0.1:5253/wiki/people/person-0998",
+  "capture": {
+    "viewport": "1440x900",
+    "screenshot": "person-0998-composer-blocked.png",
+    "screenshotVerified": true,
+    "screenshotActualDimensions": "1440x900"
+  },
+  "page": {
+    "h1": "이일섭",
+    "feedbackButtonPresent": true,
+    "biographyExpanded": true,
+    "contributorLeaf": {
+      "selector": "[data-feedback-leaf=\"biography:인물-이일섭-list2:item:5\"]",
+      "exists": true,
+      "tag": "LI",
+      "text": "기여자: islee23520",
+      "link": "https://github.com/islee23520"
+    }
+  },
+  "feedback": {
+    "requestedSelection": "islee23520",
+    "selectionAchieved": false,
+    "observedIssue": "Browser selection remained on unrelated text ('무력'); triggering '선택 문장 제보' showed '본문에서 제보할 문장을 먼저 선택해 주세요.'",
+    "composerInspected": false,
+    "persistedCanonicalAnchor": "/content/709/items/5/ko",
+    "canonicalAnchorVerified": false,
+    "submissionOrPersistence": "Not performed; no composer opened and no feedback submitted"
+  },
+  "incomingCompositeSurfaces": {
+    "personArtToolLinks": {
+      "count": 2,
+      "present": true,
+      "label": "이 인물의 아트 작업 도구 열기 / 이 인물로 아트 도구 열기",
+      "href": "/wiki/tools/character-art?person=person-0998"
+    },
+    "gurps": {
+      "visibleSectionOrState": null,
+      "apiPresence": "Not determined; a real API may be absent",
+      "note": "No GURPS surface was rendered in the inspected page; none inferred"
+    },
+    "courtOrDirectLiegeRows": {
+      "present": false,
+      "observed": "Structured relationship table says '등록된 방향성 관계 없음'; no court/direct-liege rows rendered"
+    }
+  },
+  "tab": {
+    "ownedTabOpened": true,
+    "closed": true
+  },
+  "scope": "Local page only. No external browser, provider, hosted-service, submission, or persistence claim."
+}

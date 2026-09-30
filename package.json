@@ -40,14 +40,15 @@
     "test:gurps": "vitest run scripts/test-gurps-cast.mjs",
     "test:crests": "vitest run scripts/test-clan-crests.mjs",
     "test:families": "vitest run scripts/test-family-catalog.mjs",
-    "test:crests": "vitest run scripts/test-clan-crests.mjs",
-    "test:families": "vitest run scripts/test-family-catalog.mjs",
-    "db:load": "node scripts/mongo-load.mjs"
+    "db:load": "node scripts/mongo-load.mjs",
+    "test:feedback-catalog": "npm run generate && vitest run scripts/test-feedback-source-catalog.mjs",
+    "report:feedback-catalog": "node scripts/feedback-source-catalog-report.mjs"
   },
   "dependencies": {
-    "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
     "@seoul-dengoku/document-renderer": "file:./vendor/seoul-dengoku-document-renderer-0.1.2.tgz",
+    "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",
     "@seoul-dengoku/shared-web-ui": "file:./vendor/seoul-dengoku-shared-web-ui-0.1.2.tgz",
+    "entities": "8.0.0",
     "mermaid": "^11.17.2",
     "proj4": "2.22.0",
     "react": "^18.3.1",
@@ -64,6 +65,7 @@
     "@types/three": "0.186.0",
     "@vitejs/plugin-react": "^5.2.0",
     "autoprefixer": "^10.4.19",
+    "jsdom": "^27.0.0",
     "mongodb": "^7.6.0",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.6",
