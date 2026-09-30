@@ -4,9 +4,10 @@ import { access, mkdir, mkdtemp, readdir, readFile, writeFile } from 'node:fs/pr
 import { basename, resolve } from 'node:path'
 import { test } from 'vitest'
 import { tmpdir } from 'node:os'
-import { approvedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
+import { approvedDocuments, publishedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
 import { loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { validatePublicationManifest } from './publication-manifest.mjs'
+import { personRouteFailures } from './person-publication-contract.mjs'
 
 const wikiRoot = resolve(import.meta.dirname, '..')
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(wikiRoot, 'lore'))
@@ -59,7 +60,7 @@ async function syntheticAtlasRoot() {
 }
 
 test('the generated catalog admits exactly the current lore publish set', async () => {
-  const approved = await approvedDocuments(loreRoot)
+  const approved = publishedDocuments(await approvedDocuments(loreRoot))
   const expected = approved.map(({ route }) => route)
   const expectedEnglish = approved.filter(({ source }) => source.endsWith('.json')).map(({ route }) => `/en${route}`)
   const source = await readFile(resolve(wikiRoot, 'src/generated/wikiCatalog.ts'), 'utf8')
@@ -97,6 +98,50 @@ test('the generated catalog admits exactly the current lore publish set', async 
   }
 })
 
+test('cast authoring sources remain available but their articles retire from both public locales', async () => {
+  const authored = await approvedDocuments(loreRoot)
+  const published = publishedDocuments(authored)
+  const retired = authored.filter((document) => !published.includes(document))
+  assert.ok(retired.some(({ route }) => route === '/world/Cast-State-08'))
+  assert.ok(retired.some(({ route }) => route === '/world/Core-Characters'))
+  assert.ok(published.some(({ route }) => route === '/world/Sixteen-States'))
+  assert.ok(published.some(({ route }) => route === '/world/'))
+  const catalog = await readFile(resolve(wikiRoot, 'src/generated/wikiCatalog.ts'), 'utf8')
+  const contract = JSON.parse(await readFile(resolve(wikiRoot, 'public/wiki-contract.json'), 'utf8'))
+  for (const { route } of retired) {
+    assert.ok(!catalog.includes(`route: '${route}'`), route)
+    assert.ok(!catalog.includes(`route: '/en${route}'`), route)
+    assert.ok(!contract.documents.some((document) => document.route === route), route)
+    assert.ok(!contract.englishDocuments.some((document) => document.route === `/en${route}`), route)
+  }
+  assert.deepEqual(publishedDocuments([...published, { route: '/world/Cast-State-99' }]), published)
+})
+
+test('each consolidated person route resolves to its own generated detail', async () => {
+  const catalog = await readFile(resolve(wikiRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
+  const people = JSON.parse(catalog.split('export const peopleCatalog = ')[1].split(' as const')[0])
+  const sourcePeople = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people
+  const issued = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/person-id-registry.json'), 'utf8')).persons
+  const detailRoot = resolve(wikiRoot, 'public/person-details')
+  const details = new Map()
+  for (const name of (await readdir(detailRoot)).filter((name) => name.endsWith('.json'))) {
+    details.set(basename(name, '.json'), JSON.parse(await readFile(resolve(detailRoot, name), 'utf8')))
+  }
+  const check = (catalog, files = details) => personRouteFailures(catalog, files, sourcePeople, issued)
+  assert.deepEqual(check(people), [])
+  const first = people[0]
+  assert.ok(check(people.map((person, index) => index === 0 ? { ...person, detailRoute: '/world/Cast-State-08' } : person)).includes(`person-route:${first.id}`))
+  assert.ok(check(people.map((person, index) => index === 0 ? { ...person, detailRoute: '' } : person)).includes(`person-route:${first.id}`))
+  assert.ok(check(people, new Map([...details].filter(([id]) => id !== first.id))).includes(`missing-person-detail:${first.id}`))
+  assert.ok(check(people, new Map(details).set(first.id, details.get(people[1].id))).includes(`person-detail-identity:${first.id}`))
+  assert.ok(check(people, new Map(details).set(first.id, { ...details.get(first.id), detailRoute: `/en${first.detailRoute}` })).includes(`person-detail-identity:${first.id}`))
+  assert.ok(check(people.map((person, index) => index === 1 ? { ...person, detailRoute: first.detailRoute } : person)).includes(`duplicate-person-route:${first.detailRoute}`))
+  assert.ok(check(people.slice(1), new Map([...details].filter(([id]) => id !== first.id))).includes('person-source-coverage'))
+  const wrongName = people[1].name
+  assert.ok(check(people.map((person, index) => index === 0 ? { ...person, name: wrongName } : person), new Map(details).set(first.id, { ...details.get(first.id), name: wrongName })).includes(`person-source-identity:${first.id}`))
+  assert.ok(check(people, new Map(details).set('person-extra', details.get(first.id))).includes('unindexed-person-detail:person-extra'))
+})
+
 test('unknown public fields are rejected', () => {
   assert.deepEqual(unknownFields({ slug: 'index', title: '세계관', route: '/world/', reviewText: '', blocks: [], authoringRule: 'private' }, readerFields), ['authoringRule'])
   assert.deepEqual(unknownFields({ domain: 'world', slug: 'index', route: '/world/', title: '세계관', sourcePath: 'lore/index' }, catalogFields), ['sourcePath'])
@@ -111,7 +156,7 @@ test('the private naming ledger stays outside the published catalog', async () =
 
 test('the publication manifest matches admitted identities, generated readers and category membership', async () => {
   const manifest = JSON.parse(await readFile(resolve(wikiRoot, 'src/generated/publication-manifest.json'), 'utf8'))
-  const expected = await approvedDocuments(loreRoot)
+  const expected = publishedDocuments(await approvedDocuments(loreRoot))
   validatePublicationManifest(manifest, expected)
   assert.equal(manifest.site, 'wiki')
   assert.deepEqual(manifest.documents.map(({ source, id, route }) => ({ source, id, route })), expected)
