@@ -3,7 +3,7 @@ import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { test } from 'vitest'
-import { RelationsGraphPage, layoutRetainerGraph } from '../src/pages/RelationsGraphPage.tsx'
+import { RelationsGraphPage, layoutRetainerGraph, selectRetainerRelationships } from '../src/pages/RelationsGraphPage.tsx'
 import { retainerGraph } from '../src/generated/retainerGraph.ts'
 
 test('graph page renders generated directed court edges and all approved people', () => {
@@ -24,4 +24,23 @@ test('page consumer rejects missing, wrong and orphaned graph endpoints', () => 
   const orphaned = { ...retainerGraph, edges: retainerGraph.edges.map((edge) => edge.fromPersonId === 'K904'
     ? { ...edge, courtId: 'court:K9999' } : edge) }
   assert.throws(() => layoutRetainerGraph(orphaned), /E_RETAINER_GRAPH_UNRESOLVED/)
+})
+
+test('member selection resolves its outgoing liege and canonical court', () => {
+  const selected = selectRetainerRelationships('K904')
+  assert.equal(selected.court?.id, 'court:K002')
+  assert.equal(selected.liege?.id, 'K002')
+  assert.equal(selected.liege?.detailRoute, '/people/person-0002')
+  assert.equal(selected.members.length, 0)
+})
+
+test('court owner selection exposes incoming members without an upstream liege', () => {
+  for (const [id, expectedCount] of [['K002', 13], ['K017', 12], ['K003', 12]]) {
+    const selected = selectRetainerRelationships(id)
+    assert.equal(selected.court?.ownerPersonId, id)
+    assert.equal(selected.liege, undefined, id)
+    assert.equal(selected.members.length, expectedCount, id)
+    assert.ok(selected.members.every((edge) => edge.toPersonId === id), id)
+  }
+  assert.ok(selectRetainerRelationships('K002').members.some((edge) => edge.fromPersonId === 'K904'))
 })

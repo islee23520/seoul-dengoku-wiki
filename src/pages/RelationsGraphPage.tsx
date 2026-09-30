@@ -27,6 +27,14 @@ export function layoutRetainerGraph(graph: typeof retainerGraph) {
 const nodes = layoutRetainerGraph(retainerGraph)
 const nodesById = new Map<string, (typeof nodes)[number]>(nodes.map((node) => [node.id, node]))
 
+export function selectRetainerRelationships(personId: string) {
+  const outgoing = retainerGraph.edges.find((edge) => edge.fromPersonId === personId)
+  const court = retainerGraph.courts.find((entry) => entry.ownerPersonId === personId || entry.id === outgoing?.courtId)
+  const liege = outgoing && nodesById.get(outgoing.toPersonId)
+  const members = retainerGraph.edges.filter((edge) => edge.toPersonId === personId)
+  return { court, liege, members }
+}
+
 export function RelationsGraphPage() {
   const [selectedNode, setSelectedNode] = useState('')
   const [searchQuery, setSearchQuery] = useState('')
@@ -36,10 +44,7 @@ export function RelationsGraphPage() {
   }, [searchQuery])
   const visibleIds = new Set(filteredNodes.map((node) => node.id))
   const selectedNodeData = nodesById.get(selectedNode)
-  const connectedEdges = retainerGraph.edges.filter((edge) =>
-    edge.fromPersonId === selectedNode || edge.toPersonId === selectedNode)
-  const selectedCourt = retainerGraph.courts.find((court) => connectedEdges.some((edge) => edge.courtId === court.id))
-  const owner = selectedCourt && nodesById.get(selectedCourt.ownerPersonId)
+  const { court, liege, members } = selectRetainerRelationships(selectedNode)
 
   return (
     <main className="wiki-prose">
@@ -88,8 +93,8 @@ export function RelationsGraphPage() {
       </svg>
       {selectedNodeData && <section aria-label="선택한 인물" style={{ marginTop: '1rem', padding: '1rem', background: 'var(--wiki-toc)', border: '1px solid var(--wiki-line)', borderRadius: '8px' }}>
         <h2>{selectedNodeData.name} · {selectedNodeData.id}</h2>
-        {selectedCourt && owner && <p>궁정 {selectedCourt.id} · 직속 주군 <Link to={owner.detailRoute}>{owner.name} ({owner.id})</Link></p>}
-        <p>직속 관계 {connectedEdges.length}건</p>
+        {court && <p>궁정 {court.id}{liege && <> · 직속 주군 <Link to={liege.detailRoute}>{liege.name} ({liege.id})</Link></>}</p>}
+        {members.length > 0 && <p>직속 가신 {members.length}명</p>}
         <Link to={selectedNodeData.detailRoute}>인물 상세</Link>
       </section>}
     </main>
