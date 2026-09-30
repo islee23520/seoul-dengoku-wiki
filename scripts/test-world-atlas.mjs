@@ -13,6 +13,10 @@ import {
 } from './world-atlas-schema.mjs'
 import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { verifyAtlasPeople } from './world-atlas-verify.mjs'
+import { fromMarkdown } from 'mdast-util-from-markdown'
+import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { localizedDocuments } from './localized-documents.mjs'
+import { publicHouseContent } from './public-house-content.mjs'
 
 const worktree = resolve(new URL('..', import.meta.url).pathname)
 // Scratch output for materializer tests lives in a per-run temporary directory, never in lore.
@@ -74,15 +78,50 @@ test('published house bodies omit private source classification in both locales'
 
   // When: the actual catalog consumer emits both localized public articles.
   for (const folder of ['world', 'world-en']) {
+    const locale = folder === 'world' ? 'ko' : 'en'
     const page = JSON.parse(await readFile(join(worktree, `src/generated/${folder}/Operating-Houses.json`), 'utf8'))
     const reader = JSON.stringify(page.blocks)
-    // Then: no classification row appears, while each house and its three acts remain.
+    // Then: only the known metadata item is absent; all other structured content survives.
     assert.ok(!reader.includes('original-fiction'), folder)
     assert.ok(!page.reviewText.includes('Source layer:'), folder)
     assert.ok(!page.reviewText.includes('출처층:'), folder)
     assert.equal(page.blocks.filter((node) => node.type === 'heading' && node.depth === 2).length, houses.length, folder)
     assert.equal(page.blocks.filter((node) => node.type === 'heading' && node.depth === 3).length, houses.length, folder)
+    const expected = structuredClone(projection)
+    for (const node of expected.content) if (node.kind === 'list' && node.items[2]?.en === 'Source layer: original-fiction' && node.items[2]?.ko === '출처층: original-fiction') node.items.splice(2, 1)
+    const expectedBlocks = fromMarkdown(renderLoreMarkdown(expected, locale)).children.slice(1)
+    assert.equal(page.blocks.length, expectedBlocks.length, folder)
+    const withoutPositions = (node) => {
+      const { position: _position, ...rest } = node
+      return { ...rest, ...(node.children ? { children: node.children.map(withoutPositions) } : {}) }
+    }
+    assert.deepEqual(page.blocks, expectedBlocks.map(withoutPositions), folder)
+    const prose = houses.flatMap((house) => house.prose.map((node) => node.text[locale]))
+    const acts = houses.flatMap((house) => house.arcs.map((arc) => arc.summary[locale]))
+    assert.equal(prose.length, 141)
+    assert.equal(acts.length, 96)
+    for (const paragraph of prose) assert.ok(page.reviewText.includes(paragraph), `${folder}: missing prose ${paragraph.slice(0, 30)}`)
+    for (const summary of acts) assert.ok(page.reviewText.includes(summary), `${folder}: missing act ${summary.slice(0, 30)}`)
     for (const house of houses) assert.ok(page.reviewText.includes(house.id), `${folder}: ${house.id}`)
+  }
+})
+
+test('authored code and quoted source-layer wording survives public catalog normalization', () => {
+  // Given: an authored code block and quote carrying the same text as the generated metadata.
+  const document = structuredClone(projections['Operating-Houses.json'])
+  document.content.push({ kind: 'code', anchor: 'authored-code', language: 'text', text: { en: '- Source layer: original-fiction', ko: '- 출처층: original-fiction' } })
+  document.content.push({ kind: 'quote', anchor: 'authored-quote', text: { en: 'Source layer: original-fiction', ko: '출처층: original-fiction' } })
+  document.content.push({ kind: 'paragraph', anchor: 'authored-link', text: { en: [{ text: 'House detail', link: { domain: 'factions', slug: 'Sixteen-States' } }], ko: [{ text: '조직 상세', link: { domain: 'factions', slug: 'Sixteen-States' } }] } })
+  // When: the localized document renderer emits both authored nodes.
+  const localized = localizedDocuments({ domain: 'world', slug: document.slug, json: document, renderJson: (value, locale) => renderLoreMarkdown(publicHouseContent(value), locale), titleFallback: () => document.slug })
+  // Then: legitimate authored text remains visible to the Markdown consumer.
+  for (const item of localized) {
+    const label = item.locale === 'ko' ? '출처층' : 'Source layer'
+    assert.ok(item.markdown.includes(`- ${label}: original-fiction`), item.locale)
+    assert.ok(item.markdown.includes(`> ${label}: original-fiction`), item.locale)
+    assert.ok(item.markdown.includes('(factions/Sixteen-States.md)'), item.locale)
+    assert.equal(fromMarkdown(item.markdown).children.filter((node) => node.type === 'code').length, 1, item.locale)
+    assert.equal(fromMarkdown(item.markdown).children.filter((node) => node.type === 'blockquote').length, 1, item.locale)
   }
 })
 

@@ -7,6 +7,7 @@ import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { publicHouseContent } from './public-house-content.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
 import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
@@ -107,7 +108,7 @@ const stripProjectionHeader = (markdown) => {
     /^- 원본 앵커: `LORE\/World-Narrative-Atlas\.md`$/u.test(line) ||
     /^- 원본 해시: `[a-f0-9]+`$/u.test(line)
   ))
-  return cleaned.join('\n').replace(/^- (?:출처층|Source layer):\s*original-fiction\s*\n/gmu, '')
+  return cleaned.join('\n')
 }
 
 const rewriteRelativeHref = (href, domain, routeBySlug) => {
@@ -230,7 +231,7 @@ for (const domain of domains) {
       slug,
       json: page?.value,
       markdown: page ? undefined : renderedBySlug.get(slug),
-      renderJson: (value, locale) => renderLoreMarkdown(value, locale, (_domain, target) => `${target}.md`),
+      renderJson: (value, locale) => renderLoreMarkdown(publicHouseContent(value), locale, (_domain, target) => `${target}.md`),
       titleFallback: normalizeTitle,
     })) {
       const entry = { ...document, categories: categoriesBySlug.get(slug) ?? [], name: `${slug}.md` }
