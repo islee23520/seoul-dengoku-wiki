@@ -396,6 +396,7 @@ export default function PersonDetailPage() {
 
           <details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
           <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>
+          <p><Link to={`/people/art?person=${encodeURIComponent(detail.id)}`}>이 인물로 아트 도구 열기</Link></p>
         </div>
       </div>
     </article>
