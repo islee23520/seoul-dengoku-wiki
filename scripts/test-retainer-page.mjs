@@ -2,17 +2,35 @@ import assert from 'node:assert/strict'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
+import { peopleCatalog } from '../src/generated/peopleCatalog.ts'
 import { test } from 'vitest'
 import { RelationsGraphPage, layoutRetainerGraph, selectRetainerRelationships } from '../src/pages/RelationsGraphPage.tsx'
 import { retainerGraph } from '../src/generated/retainerGraph.ts'
+import { loadDataset, validate } from '../lore/relations/validate.mjs'
 
 test('graph page renders generated directed court edges and all approved people', () => {
   const html = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(RelationsGraphPage)))
   assert.match(html, /data-person-id="K904"/)
   assert.match(html, /data-from="K904" data-to="K002"/)
   assert.match(html, /data-person-id="K002"/)
-  assert.equal((html.match(/data-person-id="K\d+"/g) ?? []).length, 40)
-  assert.equal((html.match(/data-from="K\d+" data-to="K\d+"/g) ?? []).length, 37)
+  assert.match(html, /data-from="K041" data-to="K032"/)
+  assert.match(html, /data-from="K068" data-to="K058"/)
+  const dataset = loadDataset()
+  const expectedIds = new Set(dataset.config.courts.map((court) => court.ownerPersonId))
+  for (const edge of dataset.config.directRetainers) {
+    expectedIds.add(edge.personId)
+    expectedIds.add(edge.liegePersonId)
+  }
+  assert.equal((html.match(/data-person-id="K\d+"/g) ?? []).length, expectedIds.size)
+  assert.equal((html.match(/data-from="K\d+" data-to="K\d+"/g) ?? []).length, dataset.config.directRetainers.length)
+})
+
+test('page rejects a missing approved relationship from the actual source set', () => {
+  const dataset = loadDataset()
+  const missing = dataset.config.directRetainers.find((row) => row.personId === 'K041')
+  assert.ok(missing)
+  const graphWithoutApprovedEdge = { ...retainerGraph, edges: retainerGraph.edges.filter((edge) => edge.fromPersonId !== missing.personId) }
+  assert.throws(() => layoutRetainerGraph(graphWithoutApprovedEdge), /E_RETAINER_GRAPH_UNRESOLVED/)
 })
 
 test('page consumer rejects missing, wrong and orphaned graph endpoints', () => {
@@ -43,4 +61,36 @@ test('court owner selection exposes incoming members without an upstream liege',
     assert.ok(selected.members.every((edge) => edge.toPersonId === id), id)
   }
   assert.ok(selectRetainerRelationships('K002').members.some((edge) => edge.fromPersonId === 'K904'))
+  for (const [memberId, ownerId] of [['K041', 'K032'], ['K068', 'K058']]) {
+    const member = selectRetainerRelationships(memberId)
+    const owner = selectRetainerRelationships(ownerId)
+    assert.equal(member.liege?.id, ownerId)
+    assert.equal(member.court?.ownerPersonId, ownerId)
+    assert.equal(owner.liege, undefined)
+    assert.ok(owner.members.some((edge) => edge.fromPersonId === memberId))
+  }
+})
+
+test('source-valid court owner with an explicit upstream liege has one graph identity', () => {
+  const dataset = loadDataset()
+  dataset.config.courts.push({ id: 'court:K009', ownerPersonId: 'K009', stateId: 'S01' })
+  dataset.config.directRetainers.push({ personId: 'K017', liegePersonId: 'K009', courtId: 'court:K009', sourceRow: 14 })
+  assert.deepEqual(validate(dataset), [])
+  const issued = dataset.sources.registry.persons.find((person) => person.id === 'K009')
+  const value = dataset.sources.values.people.find((person) => person.name === issued.name)
+  const detailRoute = peopleCatalog.find((person) => person.name === issued.name)?.detailRoute
+  assert.ok(detailRoute)
+  const graph = {
+    nodes: [...retainerGraph.nodes, { id: issued.id, name: issued.name, state: value.state, detailRoute }],
+    edges: [...retainerGraph.edges, { fromPersonId: 'K017', toPersonId: 'K009', courtId: 'court:K009' }],
+    courts: [...retainerGraph.courts, { id: 'court:K009', ownerPersonId: 'K009', stateId: 'S01' }],
+  }
+  const positioned = layoutRetainerGraph(graph)
+  assert.equal(positioned.length, graph.nodes.length)
+  assert.equal(positioned.filter((node) => node.id === 'K017').length, 1)
+  assert.equal(positioned.find((node) => node.id === 'K017')?.y, layoutRetainerGraph(retainerGraph).find((node) => node.id === 'K017')?.y)
+  const owner = selectRetainerRelationships('K017', graph)
+  assert.equal(owner.court?.id, 'court:K017')
+  assert.equal(owner.liege?.id, 'K009')
+  assert.equal(owner.members.length, 12)
 })
