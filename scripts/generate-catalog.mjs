@@ -874,16 +874,19 @@ const graphPerson = (id) => {
   if (!person || person.name !== issued.name) throw new Error(`E_RETAINER_GRAPH_PERSON:${id}`)
   return { id, name: person.name, state: person.state, detailRoute: person.detailRoute }
 }
-const graphIds = new Set(courtDataset.config.courts.map((court) => court.ownerPersonId))
-for (const row of courtDataset.config.directRetainers) {
+const graphCourts = courtDataset.config.courts.filter((court) => court.stateId === 'S01')
+const graphCourtIds = new Set(graphCourts.map((court) => court.id))
+const graphRetainers = courtDataset.config.directRetainers.filter((row) => graphCourtIds.has(row.courtId))
+const graphIds = new Set(graphCourts.map((court) => court.ownerPersonId))
+for (const row of graphRetainers) {
   graphIds.add(row.personId)
   graphIds.add(row.liegePersonId)
 }
 const retainerGraph = {
   nodes: [...graphIds].map(graphPerson),
-  edges: courtDataset.config.directRetainers.map(({ personId, liegePersonId, courtId }) =>
+  edges: graphRetainers.map(({ personId, liegePersonId, courtId }) =>
     ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
-  courts: courtDataset.config.courts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
+  courts: graphCourts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
 }
 await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
 for (const person of peopleCatalog) {

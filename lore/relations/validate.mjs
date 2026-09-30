@@ -123,7 +123,7 @@ export function validate(dataset) {
   }
   const { courts = [], directRetainers = [], courtContract } = config;
   const courtIds = unique(courts, "courts");
-  if (courtContract?.schema !== "s01-direct-retainers.v1" || courtContract.effectiveYear !== 2126 ||
+  if (courtContract?.schema !== "opening-direct-retainers.v1" || courtContract.effectiveYear !== 2126 ||
       !courtContract.approvalRef || courtContract.sourcePath !== "lore/characters/Cast-Relations.json" ||
       !relationAnchors.has(courtContract.sourceAnchor)) errors.push("courts: missing approved source metadata");
   const courtById = new Map(courts.map((court) => [court.id, court]));

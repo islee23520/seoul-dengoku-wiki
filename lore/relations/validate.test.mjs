@@ -9,15 +9,33 @@ test("sourced canon relationships validate", () => {
 test("approved S01 direct retainers resolve to three owner courts and unchanged command sources", () => {
   const dataset = loadDataset();
   const { courts, directRetainers } = dataset.config;
-  assert.equal(courts.length, 3);
-  assert.deepEqual(courts.map((court) => court.ownerPersonId), ["K002", "K017", "K003"]);
-  assert.deepEqual(directRetainers.map((row) => row.personId), [
+  assert.deepEqual(courts.slice(0, 3).map((court) => court.ownerPersonId), ["K002", "K017", "K003"]);
+  assert.deepEqual(directRetainers.slice(0, 37).map((row) => row.personId), [
     "K904", "K568", "K616", "K712", "K856", "K952", "K1001", "K424", "K520", "K760", "K808", "K664", "K472",
     "K504", "K744", "K600", "K552", "K456", "K840", "K888", "K648", "K936", "K984", "K792", "K696",
     "K968", "K440", "K728", "K488", "K920", "K536", "K824", "K776", "K632", "K872", "K584", "K680",
   ]);
   assert.ok(!directRetainers.some((row) => row.personId === "K272"));
   assert.deepEqual(validate(dataset), []);
+});
+
+test("approved S02/S03 retainers resolve to seven owner courts from their command rows", () => {
+  const dataset = loadDataset();
+  const expected = [
+    ["K041", "K032", 30], ["K047", "K037", 42], ["K049", "K033", 46],
+    ["K068", "K058", 52], ["K069", "K060", 54], ["K071", "K060", 58],
+    ["K073", "K061", 62], ["K074", "K062", 64], ["K075", "K061", 66],
+  ];
+  assert.deepEqual(dataset.config.directRetainers.slice(37), expected.map(([personId, liegePersonId, sourceRow]) =>
+    ({ personId, liegePersonId, courtId: `court:${liegePersonId}`, sourceRow })));
+  assert.deepEqual(dataset.config.courts.slice(3),
+    [["K032", "S02"], ["K037", "S02"], ["K033", "S02"], ["K058", "S03"],
+      ["K060", "S03"], ["K061", "S03"], ["K062", "S03"]]
+      .map(([ownerPersonId, stateId]) => ({ id: `court:${ownerPersonId}`, ownerPersonId, stateId })));
+  assert.deepEqual(validate(dataset), []);
+  const corrupt = loadDataset();
+  corrupt.config.directRetainers[37].courtId = "court:K037";
+  assert.match(validate(corrupt).join("\n"), /K041: orphan court/);
 });
 
 test("direct-liege validator rejects source, actor, court, nation and hierarchy corruption", () => {
