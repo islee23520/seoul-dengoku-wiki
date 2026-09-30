@@ -363,10 +363,10 @@ export default function PersonDetailPage() {
   if (!summary || failed) return <Navigate to="/people" replace />
   if (!detail) return <div className="wiki-loading" role="status">인물 상세를 불러오고 있습니다.</div>
 
-  return <PersonDetailContent detail={detail} personId={personId || ''} />
+  return <PersonDetailContent detail={detail} personId={personId || ''} feedback={feedback} feedbackBound={feedbackBound} proseRef={proseRef} setFeedbackBound={setFeedbackBound} />
 }
 
-export function PersonDetailContent({ detail, personId }: { detail: PersonDetail; personId: string }): JSX.Element {
+export function PersonDetailContent({ detail, personId, feedback = null, feedbackBound = false, proseRef = { current: null }, setFeedbackBound = () => {} }: { detail: PersonDetail; personId: string; feedback?: import('../feedbackSelection').FeedbackDocument | null; feedbackBound?: boolean; proseRef?: React.RefObject<HTMLDivElement>; setFeedbackBound?: (bound: boolean) => void }): JSX.Element {
   const person: any = detail
   const basicRows: Array<Array<string | number | null>> = [
     ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
