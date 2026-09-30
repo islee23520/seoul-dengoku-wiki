@@ -11,14 +11,16 @@ const NODE_COLORS: Record<string, string> = {
 
 export function layoutRetainerGraph(graph: typeof retainerGraph) {
   const nodes = graph.courts.flatMap((court, courtIndex) => {
+    const column = courtIndex % 3
+    const row = Math.floor(courtIndex / 3)
     const owner = graph.nodes.find((node) => node.id === court.ownerPersonId)
     if (!owner) throw new Error(`E_RETAINER_GRAPH_OWNER:${court.id}`)
     const members = graph.edges.filter((edge) => edge.courtId === court.id).map((edge, index) => {
       const person = graph.nodes.find((node) => node.id === edge.fromPersonId)
       if (!person || edge.toPersonId !== owner.id) throw new Error(`E_RETAINER_GRAPH_EDGE:${edge.fromPersonId}`)
-      return { ...person, x: 60 + courtIndex * 265 + (index % 2) * 110, y: 150 + Math.floor(index / 2) * 60 }
+      return { ...person, x: 60 + column * 265 + (index % 2) * 110, y: 150 + row * 570 + Math.floor(index / 2) * 60 }
     })
-    return [{ ...owner, x: 115 + courtIndex * 265, y: 70 }, ...members]
+    return [{ ...owner, x: 115 + column * 265, y: 70 + row * 570 }, ...members]
   })
   if (nodes.length !== graph.nodes.length || graph.edges.length !== nodes.length - graph.courts.length)
     throw new Error('E_RETAINER_GRAPH_UNRESOLVED')
@@ -50,7 +52,7 @@ export function RelationsGraphPage() {
     <main className="wiki-prose">
       <h1>직속 가신 관계</h1>
       <p style={{ color: 'var(--wiki-muted)', fontSize: '0.9rem' }}>
-        2126년 수문국의 세 궁정과 직속 가신 37명을 보여 줍니다. 인물을 선택하면 직속 주군과 궁정을 확인할 수 있습니다.
+        2126년 승인된 {retainerGraph.courts.length}개 궁정과 직속 가신 {retainerGraph.edges.length}명을 보여 줍니다. 인물을 선택하면 직속 주군과 궁정을 확인할 수 있습니다.
       </p>
       <div style={{ marginBottom: '1rem' }}>
         <input
@@ -64,9 +66,9 @@ export function RelationsGraphPage() {
       </div>
       <svg
         role="img"
-        aria-label="세 궁정의 직속 가신 관계 그래프"
-        viewBox="0 0 800 600"
-        style={{ width: '100%', height: '600px', border: '1px solid var(--wiki-line)', borderRadius: '8px', background: 'var(--wiki-paper)' }}
+        aria-label="승인된 직속 가신 관계 그래프"
+        viewBox={`0 0 800 ${Math.ceil(retainerGraph.courts.length / 3) * 570}`}
+        style={{ width: '100%', height: 'auto', border: '1px solid var(--wiki-line)', borderRadius: '8px', background: 'var(--wiki-paper)' }}
       >
         {retainerGraph.edges.map((edge) => {
           const from = nodesById.get(edge.fromPersonId)

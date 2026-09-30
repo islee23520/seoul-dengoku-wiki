@@ -874,9 +874,8 @@ const graphPerson = (id) => {
   if (!person || person.name !== issued.name) throw new Error(`E_RETAINER_GRAPH_PERSON:${id}`)
   return { id, name: person.name, state: person.state, detailRoute: person.detailRoute }
 }
-const graphCourts = courtDataset.config.courts.filter((court) => court.stateId === 'S01')
-const graphCourtIds = new Set(graphCourts.map((court) => court.id))
-const graphRetainers = courtDataset.config.directRetainers.filter((row) => graphCourtIds.has(row.courtId))
+const graphCourts = courtDataset.config.courts
+const graphRetainers = courtDataset.config.directRetainers
 const graphIds = new Set(graphCourts.map((court) => court.ownerPersonId))
 for (const row of graphRetainers) {
   graphIds.add(row.personId)

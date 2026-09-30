@@ -11,16 +11,16 @@ test('generated court graph resolves approved direct retainers to actual detail 
   const catalog = JSON.parse(catalogSource.replace(/^export const peopleCatalog = /u, '').replace(/ as const[\s\S]*$/u, ''))
   const byName = new Map(catalog.map((person) => [person.name, person]))
   const issued = new Map(dataset.sources.registry.persons.map((person) => [person.id, person]))
-  const s01Courts = dataset.config.courts.filter((court) => court.stateId === 'S01')
-  const s01CourtIds = new Set(s01Courts.map((court) => court.id))
-  const s01Retainers = dataset.config.directRetainers.filter((edge) => s01CourtIds.has(edge.courtId))
-  const expectedIds = new Set(s01Courts.map((court) => court.ownerPersonId))
-  for (const edge of s01Retainers) expectedIds.add(edge.personId)
+  const expectedIds = new Set(dataset.config.courts.map((court) => court.ownerPersonId))
+  for (const edge of dataset.config.directRetainers) {
+    expectedIds.add(edge.personId)
+    expectedIds.add(edge.liegePersonId)
+  }
 
-  assert.equal(retainerGraph.nodes.length, 40)
+  assert.equal(retainerGraph.nodes.length, expectedIds.size)
   assert.deepEqual(new Set(retainerGraph.nodes.map((node) => node.id)), expectedIds)
-  assert.deepEqual(retainerGraph.courts, s01Courts)
-  assert.deepEqual(retainerGraph.edges, s01Retainers.map(({ personId, liegePersonId, courtId }) =>
+  assert.deepEqual(retainerGraph.courts, dataset.config.courts)
+  assert.deepEqual(retainerGraph.edges, dataset.config.directRetainers.map(({ personId, liegePersonId, courtId }) =>
     ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })))
   for (const node of retainerGraph.nodes) {
     const person = byName.get(issued.get(node.id)?.name)
@@ -34,6 +34,10 @@ test('generated court graph resolves approved direct retainers to actual detail 
     { fromPersonId: 'K904', toPersonId: 'K002', courtId: 'court:K002' })
   assert.equal(retainerGraph.nodes.find((node) => node.id === 'K904')?.detailRoute, '/people/person-0904')
   assert.equal(retainerGraph.nodes.find((node) => node.id === 'K002')?.detailRoute, '/people/person-0002')
+  assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === 'K041'),
+    { fromPersonId: 'K041', toPersonId: 'K032', courtId: 'court:K032' })
+  assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === 'K068'),
+    { fromPersonId: 'K068', toPersonId: 'K058', courtId: 'court:K058' })
   assert.ok(!retainerGraph.nodes.some((node) => node.id === 'K272'))
 })
 
