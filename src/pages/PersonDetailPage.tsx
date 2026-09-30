@@ -17,6 +17,8 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   sections: Record<string, string>
   biography: string
   sources: string[]
+  directLiege?: { personId: string; name: string; courtId: string; effectiveYear: number }
+  court?: { id: string; members: Array<{ personId: string; name: string }> }
   relations: { outgoing: Relation[]; incoming: Relation[] }
 }
 
@@ -354,6 +356,8 @@ export default function PersonDetailPage() {
     ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속'].includes(label)),
   ]
   const relationRows = [
+    ...(detail.directLiege ? [[`직속 주군 · ${detail.directLiege.name}`, `2126년 · ${detail.directLiege.courtId} 소속 가신`]] : []),
+    ...(detail.court ? detail.court.members.map((member) => [`궁정 가신 · ${member.name}`, `2126년 · ${detail.court?.id}`]) : []),
     ...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as Array<string>),
     ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as Array<string>),
   ]

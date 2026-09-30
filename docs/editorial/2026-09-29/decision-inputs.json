@@ -1,0 +1,89 @@
+{
+  "schema": "tripothon-director-decision-inputs.v1",
+  "status": "proposal",
+  "observedDate": "2026-09-29",
+  "wikiBase": "7d1b5d742da03c89202f0113c520184f6fbf6de9",
+  "gameBase": "ac98566ab41132747ae86a3b6825ea5ad2518aeb",
+  "graphPath": "GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json",
+  "graphSha256": "6eaaf9490442e96a24ea122ba50304b7268f0e7de530c5f447a5a6c5f50e935d",
+  "proposalSource": "lore/editorial/Tripothon-Return-Relay-Proposal.json",
+  "runtimeTarget": null,
+  "stage2Locked": true,
+  "location": {
+    "recommendedStationId": "학동",
+    "recommendedRegionId": "region:1168053100",
+    "facilityKind": "separate-fictional-depot",
+    "approvedStationId": null,
+    "accessGeometry": null,
+    "entranceLayer": null,
+    "totalLayerTransitions": null,
+    "occupancyOrAccessAuthority": null,
+    "carryingCapacity": null,
+    "approver": null,
+    "approvedAt": null,
+    "approvalUrl": null
+  },
+  "route": {
+    "startStationId": "강남구청",
+    "outbound": ["강남구청", "학동"],
+    "onward": ["학동", "강남구청", "선정릉"],
+    "return": ["선정릉", "강남구청"],
+    "proposedLayerForEveryStationLeg": "subway",
+    "proposedStationLegLayerTransitions": 0,
+    "layerStatus": "proposal-not-in-station-graph",
+    "strategicEdges": [
+      {"id": "segment:강남구청~학동", "a": "강남구청", "b": "학동", "lineIds": ["8-7"], "passage2126": "open", "controller": "S16"},
+      {"id": "segment:강남구청~선정릉", "a": "강남구청", "b": "선정릉", "lineIds": ["B"], "passage2126": "open", "controller": "S16"}
+    ],
+    "localAccessApproved": false,
+    "layerPathApproved": false,
+    "travelDuration": null,
+    "transitionCost": null
+  },
+  "alternatives": [
+    {"stationId": "논현", "stationPath": ["강남구청", "학동", "논현"], "outboundEdges": 2},
+    {"stationId": "신사", "stationPath": ["강남구청", "학동", "논현", "신사"], "outboundEdges": 3},
+    {"stationId": "수서", "stationPath": ["강남구청", "선정릉", "봉은사", "종합운동장", "석촌", "송파", "가락시장", "수서"], "outboundEdges": 7}
+  ],
+  "squad": {
+    "heroCount": 1,
+    "proposedSoldierCount": 2,
+    "soldierLimit": 20,
+    "proposedTravelStance": "normal-march",
+    "approvedTravelStanceId": null,
+    "proposedActingLeaderSlot": "porter",
+    "approvedActingLeaderId": null,
+    "members": [
+      {
+        "slot": "commander", "personId": "K1009", "name": "신종목", "kind": "hero",
+        "roleBasis": "issue-298-director-direction", "role": "지휘·주민 회수 협의·귀환 판단",
+        "sourceAffiliation": "S00", "knownMartialArt": "총검술",
+        "proposedEquipment": ["연습용 목총 1 대여"],
+        "approvedInputs": {"weaponId": null, "armorId": null, "combatSkills": null, "bodyCondition": null, "mood": null, "leadership": null, "commandAssignment": null},
+        "approval": {"approver": null, "approvedAt": null, "url": null}
+      },
+      {
+        "slot": "porter", "personId": null, "name": null, "kind": "adult-soldier-proposal",
+        "roleBasis": "proposal", "role": "합의 수량 운반·출발/귀환 인원 대조; 임시 분대장 후보",
+        "proposedEquipment": ["운반 가방 1 대여", "분대 공구 꾸러미 1의 보관 담당"],
+        "approvedInputs": {"weaponId": null, "armorId": null, "combatSkills": null, "bodyCondition": null, "mood": null, "leadership": null, "commandAssignment": null},
+        "approval": {"approver": null, "approvedAt": null, "url": null}
+      },
+      {
+        "slot": "recorder", "personId": null, "name": null, "kind": "adult-soldier-proposal",
+        "roleBasis": "proposal", "role": "동의·대여/교환 수량·통행 허가·응답 확인 기록",
+        "proposedEquipment": ["운반 가방 1 대여", "분대 기록지 묶음 1의 보관 담당"],
+        "approvedInputs": {"weaponId": null, "armorId": null, "combatSkills": null, "bodyCondition": null, "mood": null, "leadership": null, "commandAssignment": null},
+        "approval": {"approver": null, "approvedAt": null, "url": null}
+      }
+    ]
+  },
+  "approvalItems": [
+    {"id": "D299", "scope": "역·별도 시설 위치", "approved": false, "approver": null, "approvedAt": null, "url": null},
+    {"id": "D299-ACCESS", "scope": "층별 접속·봉쇄·주민 출입 동의·회수 후 복귀 경로", "approved": false, "approver": null, "approvedAt": null, "url": null},
+    {"id": "D298-A", "scope": "2명 병졸 식별·개인 입력·장비·태세·임시 분대장", "approved": false, "approver": null, "approvedAt": null, "url": null},
+    {"id": "D298-B", "scope": "기존 choices 표 전체 효과·경제 단위·척도·위기 임계 80", "approved": false, "approver": null, "approvedAt": null, "url": null},
+    {"id": "D298-C", "scope": "가동 후 새 응답 AND·당직의 세계 시간 매핑·정확히 한 번 정산", "approved": false, "approver": null, "approvedAt": null, "url": null},
+    {"id": "D298-D", "scope": "조우 여부·상대별 입력·전투 선택·귀환/정착 조건", "approved": false, "approver": null, "approvedAt": null, "url": null}
+  ]
+}
