@@ -35,6 +35,7 @@ export function loadDataset() {
   const relationSource = source("characters/Cast-Relations.json");
   const castIndex = source("characters/Cast-Index.json");
   const registry = source("name-pools/person-id-registry.json");
+  const values = source("name-pools/values-cast.json");
   const chronicle = source("chronology/Century-Annals.json");
   const table = (doc, anchor) => doc.content.find((block) => block.kind === "table" && block.anchor === anchor);
   const states = table(stateSource, "table").rows.map((row) => ({
@@ -62,7 +63,7 @@ export function loadDataset() {
   return {
     config, states, vassals, people, organizations: config.organizations,
     relations, relationErrors, events, eventLinks: config.eventLinks,
-    sources: { stateSource, relationSource, castIndex, registry, chronicle },
+    sources: { stateSource, relationSource, castIndex, registry, values, chronicle },
   };
 }
 
@@ -80,6 +81,8 @@ export function validate(dataset) {
   };
   const stateIds = unique(states, "states");
   const personIds = unique(people, "people");
+  const peopleById = new Map(people.map((person) => [person.id, person]));
+  const stateByPersonId = new Map(sources.registry.persons.map((person, index) => [person.id, sources.values.people[index]?.state]));
   const orgIds = unique(organizations, "organizations");
   const eventIds = unique(events, "events");
   for (const [label, rows] of [["vassals", vassals], ["relations", relations], ["eventLinks", eventLinks.map((r) => ({ ...r, id: `${r.eventId}:${r.personId}:${r.organizationId || ""}` }))]]) unique(rows, label);
@@ -118,6 +121,45 @@ export function validate(dataset) {
     fk(row.sourceAnchor, relationAnchors, row.id);
     if (!knownTypes.has(row.type)) errors.push(`${row.id}: unknown relation type ${row.type}`);
   }
+  const { courts = [], directRetainers = [], courtContract } = config;
+  const courtIds = unique(courts, "courts");
+  if (courtContract?.schema !== "s01-direct-retainers.v1" || courtContract.effectiveYear !== 2126 ||
+      !courtContract.approvalRef || courtContract.sourcePath !== "lore/characters/Cast-Relations.json" ||
+      !relationAnchors.has(courtContract.sourceAnchor)) errors.push("courts: missing approved source metadata");
+  const courtById = new Map(courts.map((court) => [court.id, court]));
+  for (const court of courts) {
+    fk(court.ownerPersonId, personIds, `${court.id}.ownerPersonId`);
+    fk(court.stateId, stateIds, `${court.id}.stateId`);
+    if (court.id !== `court:${court.ownerPersonId}`) errors.push(`${court.id}: invalid owner-linked court ID`);
+    if (stateByPersonId.get(court.ownerPersonId) !== court.stateId) errors.push(`${court.id}: foreign nation owner`);
+  }
+  const liegeByPerson = new Map();
+  const sourceRows = sources.relationSource.content.find((block) => block.anchor === courtContract?.sourceAnchor)?.rows || [];
+  for (const row of directRetainers) {
+    fk(row.personId, personIds, "direct retainer");
+    fk(row.liegePersonId, personIds, `${row.personId}.liegePersonId`);
+    fk(row.courtId, courtIds, `${row.personId}.courtId`);
+    if (liegeByPerson.has(row.personId)) errors.push(`${row.personId}: duplicate direct liege`);
+    liegeByPerson.set(row.personId, row.liegePersonId);
+    if (row.personId === row.liegePersonId) errors.push(`${row.personId}: self direct liege`);
+    if (courtById.get(row.courtId)?.ownerPersonId !== row.liegePersonId) errors.push(`${row.personId}: orphan court`);
+    const person = peopleById.get(row.personId);
+    const liege = peopleById.get(row.liegePersonId);
+    if (!person || !liege || stateByPersonId.get(row.personId) !== stateByPersonId.get(row.liegePersonId) ||
+        stateByPersonId.get(row.personId) !== courtById.get(row.courtId)?.stateId)
+      errors.push(`${row.personId}: foreign nation direct liege`);
+    const sourceRow = sourceRows[row.sourceRow];
+    if (!Number.isInteger(row.sourceRow) || !sourceRow || sourceRow[1]?.ko !== "지휘" ||
+        sourceRow[0]?.ko !== person?.name || sourceRow[2]?.ko !== liege?.name || !sourceRow[3]?.ko)
+      errors.push(`${row.personId}: source command row mismatch`);
+  }
+  for (const personId of liegeByPerson.keys()) {
+    const seen = new Set();
+    for (let current = personId; liegeByPerson.has(current); current = liegeByPerson.get(current)) {
+      if (seen.has(current)) { errors.push(`${personId}: direct liege cycle`); break; }
+      seen.add(current);
+    }
+  }
   const orgSources = new Map([["O01", sources.chronicle], ["O02", sources.stateSource], ["O03", sources.stateSource], ["O04", sources.stateSource]]);
   for (const row of organizations) {
     if (row.stateId !== undefined) fk(row.stateId, stateIds, `${row.id}.stateId`);
@@ -146,5 +188,5 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const dataset = loadDataset();
   const errors = validate(dataset);
   if (errors.length) { console.error(errors.join("\n")); process.exitCode = 1; }
-  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1019 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
+  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1019 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} courts=${dataset.config.courts.length} directRetainers=${dataset.config.directRetainers.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
 }
