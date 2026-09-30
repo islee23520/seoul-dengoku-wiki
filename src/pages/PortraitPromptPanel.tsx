@@ -85,8 +85,8 @@ export default function PortraitPromptPanel() {
       <label>머리<select value={overrides.hair ?? ''} onChange={(event) => setOverrides({ ...overrides, hair: event.target.value || undefined })}><option value="">원본 유지</option>{hairOptions.map((value) => <option key={value}>{value}</option>)}</select></label>
       <label>상의<select value={overrides.upper ?? ''} onChange={(event) => setOverrides({ ...overrides, upper: event.target.value || undefined })}><option value="">원본 유지</option>{upperOptions.map((value) => <option key={value}>{value}</option>)}</select></label>
       <label>변형 ID<input value={overrides.variantId ?? ''} onChange={(event) => setOverrides({ ...overrides, variantId: event.target.value || undefined })} placeholder="속성 교체 시 필수" /></label>
-      <label>하의 초안<input value={overrides.lower ?? ''} onChange={event => setOverrides({ ...overrides, lower: event.target.value.trim() || undefined })} placeholder={token?.artProposal.lower ?? '사용자가 작성할 전신 하의'} /></label>
-      <label>신발 초안<input value={overrides.footwear ?? ''} onChange={event => setOverrides({ ...overrides, footwear: event.target.value.trim() || undefined })} placeholder={token?.artProposal.footwear ?? '사용자가 작성할 전신 신발'} /></label>
+      <label>하의 초안<input value={overrides.lower ?? ''} onChange={event => setOverrides({ ...overrides, lower: event.target.value || undefined })} placeholder={token?.artProposal.lower ?? '사용자가 작성할 전신 하의'} /></label>
+      <label>신발 초안<input value={overrides.footwear ?? ''} onChange={event => setOverrides({ ...overrides, footwear: event.target.value || undefined })} placeholder={token?.artProposal.footwear ?? '사용자가 작성할 전신 신발'} /></label>
     </div>
     {result?.missing.length ? <p role="status">전신 입력 누락: {result.missing.join(', ')}. 이 값을 확정하기 전에는 전신 이미지를 생성할 수 없다.</p> : null}
     {error ? <p role="alert">{error}</p> : null}
