@@ -14,6 +14,7 @@ import { wikiPublicationManifest } from './publication-manifest.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
 import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
+import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
 
@@ -184,6 +185,7 @@ await materializeWorldAtlas({
   check: true,
 })
 const jsonPages = await walkLoreJson(loreRoot)
+const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot)).map(({ route }) => route))
 const categoryErrors = jsonPages.flatMap((page) => registrationErrors(page.value, categoryRegistry, basename(page.path)))
 if (categoryErrors.length) throw new Error(categoryErrors.join('\n'))
 const categoriesBySlug = new Map(jsonPages.map((page) => [page.slug, registeredCategories(page.value, categoryRegistry)]))
@@ -220,8 +222,7 @@ for (const slug of renderedBySlug.keys()) {
 const documents = []
 const englishDocuments = []
 for (const domain of domains) {
-  const castOnlyPagePattern = /^Cast-State-\d+$|^Core-Characters$|^Cast-Unaffiliated$|^Cast-Index-S4$|^Cast-Index$|^Cast-Relations$|^Cast-Corridors-Index$/
-for (const slug of [...renderedBySlug.keys()].filter(s => !castOnlyPagePattern.test(s)).sort((left, right) => left.localeCompare(right))) {
+  for (const slug of [...renderedBySlug.keys()].filter((slug) => publishedRoutes.has(`/world/${slug === 'index' ? '' : slug}`)).sort((left, right) => left.localeCompare(right))) {
     const page = pagesBySlug.get(slug)
     for (const document of localizedDocuments({
       domain,
