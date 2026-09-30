@@ -39,3 +39,25 @@ test('mounted route and locale change clears authority and ignores an old respon
     globalThis.fetch = originalFetch
   }
 })
+
+test('mounted unmount while native abort is pending produces no unhandled rejection', async () => {
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  const originalFetch = globalThis.fetch, unhandled = [], started = deferred()
+  const listener = (event) => { unhandled.push(event.reason); event.preventDefault() }
+  window.addEventListener('unhandledrejection', listener)
+  globalThis.fetch = (_url, init) => {
+    const pending = new Promise((_resolve, reject) => init.signal.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')), { once: true }))
+    queueMicrotask(() => started.resolve())
+    return pending
+  }
+  const host = document.createElement('div'), root = createRoot(host)
+  try {
+    await act(async () => { root.render(createElement(Probe, { route: '/world/Pending', locale: 'ko' })) })
+    await started.promise
+    await act(async () => { root.unmount(); await Promise.resolve() })
+    assert.deepEqual(unhandled, [])
+  } finally {
+    window.removeEventListener('unhandledrejection', listener)
+    globalThis.fetch = originalFetch
+  }
+})

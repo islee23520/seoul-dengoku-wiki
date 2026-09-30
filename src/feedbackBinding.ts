@@ -2,7 +2,6 @@ import type { SelectableTextLeaf } from './feedbackSelection'
 
 export type FeedbackBinding = readonly [HTMLElement, string]
 
-const directText = (element: HTMLElement) => Array.from(element.childNodes).filter((node) => node.nodeType === Node.TEXT_NODE).map((node) => node.textContent ?? '').join('')
 const parentCandidate = (element: HTMLElement, candidates: Set<HTMLElement>) => {
   let parent = element.parentElement
   while (parent) {
@@ -24,7 +23,6 @@ export function bindFeedbackLeaves(root: HTMLElement, selector: string, leaves: 
     const element = elements[index]
     const text = element.textContent ?? ''
     if (text !== leaves[index].text) return null
-    if (element.tagName === 'LI' && directText(element) && text !== directText(element)) return null
     bindings.push([element, leaves[index].leafId])
   }
   return bindings

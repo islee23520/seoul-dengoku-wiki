@@ -35,3 +35,23 @@ test('ambiguous extra identical occurrence fails closed with no bindings', () =>
   assert.equal(bindFeedbackLeaves(root, one.selector, one.leaves), null)
   assert.equal(root.querySelectorAll('[data-feedback-leaf]').length, 0)
 })
+
+test('actual person contributor list item keeps inline link text and canonical identity', () => {
+  const root = document.createElement('div')
+  root.innerHTML = '<details><ul><li>기여자: <a href="https://github.com/islee23520">islee23520</a></li></ul></details>'
+  const person = { ...documentInfo, selector: 'li, p', leaves: [{ leafId: 'biography:인물-이일섭-list2:item:5', blockAnchor: 'biography', blockKind: 'person-biography-list-item', text: '기여자: islee23520', sourceSegments: [
+    { kind: 'literal', path: '/content/709/items/5/ko', start: 0, end: 5, unit: 'unicode-code-point', textStart: 0, textEnd: 5 },
+    { kind: 'literal', path: '/content/709/items/5/ko', start: 6, end: 16, unit: 'unicode-code-point', textStart: 5, textEnd: 15 },
+  ] }] }
+  const bindings = bindFeedbackLeaves(root, person.selector, person.leaves)
+  assert.ok(bindings)
+  assert.equal(bindings[0][0].tagName, 'LI')
+  assert.equal(bindings[0][1], person.leaves[0].leafId)
+  bindings[0][0].dataset.feedbackLeaf = bindings[0][1]
+  const linkText = root.querySelector('a').firstChild
+  const range = document.createRange(); range.selectNodeContents(linkText)
+  const anchor = captureFeedbackAnchor(root, person, '/world/Duplicate', 'ko', { rangeCount: 1, isCollapsed: false, getRangeAt: () => range })
+  assert.equal(anchor.selections[0].exactQuote, 'islee23520')
+  assert.equal(anchor.selections[0].leafId, person.leaves[0].leafId)
+  assert.equal(anchor.selections[0].sourceSpans[0].path, '/content/709/items/5/ko')
+})

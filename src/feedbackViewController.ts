@@ -13,12 +13,13 @@ export function createFeedbackViewController(onState: (state: FeedbackViewState 
       const id = ++request
       controller?.abort()
       controller = new AbortController()
+      const ownedController = controller
       onState({ status: 'loading' })
       try {
-        const next = await fetchFeedbackDocument(route, locale, { signal: controller.signal, fetcher })
+        const next = await fetchFeedbackDocument(route, locale, { signal: ownedController.signal, fetcher })
         if (request === id) onState(next)
       } catch (error) {
-        if (controller.signal.aborted || request !== id) return
+        if (ownedController.signal.aborted || request !== id) return
         console.error(error instanceof Error ? error.message : error)
         onState({ status: 'error' })
       }

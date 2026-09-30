@@ -26,3 +26,15 @@ test('route change clears authority, aborts old request and ignores its late rel
   assert.equal(states.at(-1).document.documentId, 'DOC:New')
   assert.equal(states.some((state) => state.status === 'ready' && state.document.documentId === 'DOC:Old'), false)
 })
+
+test('dispose during a pending native abort rejects silently without reading cleared controller state', async () => {
+  let rejectFetch, signal
+  const fetcher = (_url, init) => new Promise((_resolve, reject) => { signal = init.signal; rejectFetch = reject })
+  const states = [], controller = createFeedbackViewController((state) => states.push(state), fetcher)
+  const load = controller.load('/world/Pending', 'ko')
+  controller.dispose()
+  assert.equal(signal.aborted, true)
+  rejectFetch(new DOMException('Aborted', 'AbortError'))
+  await load
+  assert.deepEqual(states.map((state) => state.status), ['loading'])
+})
