@@ -51,3 +51,27 @@ test('person Markdown leaves retain exact source offsets for section and biograp
   const biographyList = document.selectableLeaves.find((leaf) => leaf.leafId === 'biography:list:1')
   assert.equal(biographyList.text, '소속: 규격맹')
 })
+
+test('actual person biography link label projects rendered text to label-only source spans', async () => {
+  const { readFile } = await import('node:fs/promises')
+  const { personFeedbackDocument, clipSourceSpans } = await import('../src/feedbackSelection.ts')
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0998.json', import.meta.url), 'utf8'))
+  const document = await personFeedbackDocument(detail)
+  const leaf = document.selectableLeaves.find((candidate) => candidate.leafId === 'biography:list:6')
+  assert.equal(leaf.text, '기여자: islee23520')
+  assert.doesNotMatch(leaf.text, /https:|[\[\]()]/u)
+  const source = Array.from(detail.biography)
+  assert.equal(leaf.sourceSpans.map((span) => source.slice(span.start, span.end).join('')).join(''), leaf.text)
+  const labelStart = Array.from(leaf.text).indexOf('i')
+  const clipped = clipSourceSpans(leaf, labelStart, labelStart + Array.from('islee23520').length)
+  assert.equal(clipped.map((span) => source.slice(span.start, span.end).join('')).join(''), 'islee23520')
+})
+
+test('formatted emoji link labels keep rendered order and exact source controls', async () => {
+  const { personFeedbackDocument } = await import('../src/feedbackSelection.ts')
+  const biography = '- 기여자: [**이😀름**](https://example.invalid/profile) 뒤'
+  const document = await personFeedbackDocument({ id: 'person-link-fixture', sections: {}, biography })
+  const leaf = document.selectableLeaves[0]
+  assert.equal(leaf.text, '기여자: 이😀름 뒤')
+  assert.equal(leaf.sourceSpans.map((span) => Array.from(biography).slice(span.start, span.end).join('')).join(''), leaf.text)
+})

@@ -92,19 +92,44 @@ const markdownProjection = (source: string, path: string, sourceStart: number) =
   const sourceSpans: SourceSpan[] = []
   let sourceIndex = 0
   let textIndex = 0
-  while (sourceIndex < points.length) {
-    if (points[sourceIndex] === '*' && points[sourceIndex + 1] === '*') { sourceIndex += 2; continue }
-    const runSourceStart = sourceIndex
-    const runTextStart = textIndex
-    let run = ''
-    while (sourceIndex < points.length && !(points[sourceIndex] === '*' && points[sourceIndex + 1] === '*')) {
-      run += points[sourceIndex]
-      sourceIndex += 1
-      textIndex += 1
-    }
+  const append = (start: number, end: number) => {
+    if (end <= start) return
+    const run = points.slice(start, end).join('')
+    const runStart = textIndex
     text += run
-    if (run) sourceSpans.push({ path, start: sourceStart + runSourceStart, end: sourceStart + sourceIndex, unit: 'unicode-code-point', textStart: runTextStart, textEnd: textIndex })
+    textIndex += end - start
+    sourceSpans.push({ path, start: sourceStart + start, end: sourceStart + end, unit: 'unicode-code-point', textStart: runStart, textEnd: textIndex })
   }
+  const project = (start: number, end: number) => {
+    let cursor = start
+    let plainStart = cursor
+    while (cursor < end) {
+      if (points[cursor] === '*' && points[cursor + 1] === '*') {
+        append(plainStart, cursor)
+        cursor += 2
+        plainStart = cursor
+        continue
+      }
+      if (points[cursor] === '[') {
+        let labelEnd = cursor + 1
+        while (labelEnd < end && points[labelEnd] !== ']') labelEnd += 1
+        if (labelEnd < end && points[labelEnd + 1] === '(') {
+          let targetEnd = labelEnd + 2
+          while (targetEnd < end && points[targetEnd] !== ')') targetEnd += 1
+          if (targetEnd < end) {
+            append(plainStart, cursor)
+            project(cursor + 1, labelEnd)
+            cursor = targetEnd + 1
+            plainStart = cursor
+            continue
+          }
+        }
+      }
+      cursor += 1
+    }
+    append(plainStart, end)
+  }
+  project(0, points.length)
   return { text, sourceSpans }
 }
 const markdownLeaves = (prefix: string, blockAnchor: string, blockKind: string, markdown: string, path: string): SelectableTextLeaf[] => {
