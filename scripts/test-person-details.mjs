@@ -1,7 +1,46 @@
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import { test } from 'vitest'
+import { createElement } from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
+import { MemoryRouter } from 'react-router-dom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
+
+const sourcePages = new Map()
+const cardSources = ['Cast-State-01', 'Cast-State-02', 'Cast-State-03', 'Cast-State-04', 'Cast-State-05',
+  'Cast-State-06', 'Cast-State-07', 'Cast-State-08', 'Cast-State-09', 'Cast-State-10', 'Cast-State-11',
+  'Cast-State-12', 'Cast-State-13', 'Cast-State-14', 'Cast-State-15', 'Cast-State-16',
+  'Core-Characters', 'Cast-Unaffiliated']
+const selectedCard = async (name) => {
+  const candidates = []
+  for (const slug of cardSources) {
+    if (!sourcePages.has(slug)) {
+      const document = JSON.parse(await readFile(new URL(`../lore/characters/${slug}.json`, import.meta.url), 'utf8'))
+      sourcePages.set(slug, { markdown: renderLoreMarkdown(document, 'ko'), primary: document.data?.primary_detail_names ?? [] })
+    }
+    const source = sourcePages.get(slug)
+    const heading = slug === 'Core-Characters' ? `## ${name}` : `### 인물 ${name}`
+    const start = source.markdown.indexOf(`${heading}\n`)
+    if (start < 0) continue
+    const body = source.markdown.slice(start + heading.length).split(/\n#{2,3} /u, 1)[0]
+    candidates.push({ slug, body, primary: source.primary.includes(name) })
+  }
+  assert.ok(candidates.length > 0, name)
+  return candidates.find((card) => card.primary) ?? candidates.sort((a, b) => b.body.trim().length - a.body.trim().length)[0]
+}
+const assertMartialSource = async (detail, id) => {
+  const issued = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+    .persons.find((person) => person.id === id || person.name === id)
+  assert.equal(detail.name, issued?.name, id)
+  const card = await selectedCard(issued.name)
+  const anchor = card.slug === 'Core-Characters' ? issued.name : `인물-${issued.name}`
+  assert.equal(detail.sourceRoute, `/world/${card.slug}#${anchor}`, id)
+  assert.equal(detail.biography, card.body.trim(), id)
+  const martial = card.body.match(/\*\*무공\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/u)?.[1]?.trim()
+  assert.ok(martial, id)
+  assert.equal(detail.sections['무공'], martial, id)
+}
 
 test('S01 court projection retains exact approved direct lieges and owner memberships', async () => {
   const approved = [
@@ -51,8 +90,8 @@ test('S01 court projection retains exact approved direct lieges and owner member
   assert.ok(!expectedMembers.has(person('K272').name))
   assert.equal(details.size, 1019)
   for (const detail of details.values()) {
-    if (!expectedMembers.has(detail.name)) assert.equal(detail.directLiege, undefined, detail.name)
-    if (!expectedOwners.has(detail.name)) assert.equal(detail.court, undefined, detail.name)
+    if (detail.state === 'S01' && !expectedMembers.has(detail.name)) assert.equal(detail.directLiege, undefined, detail.name)
+    if (detail.state === 'S01' && !expectedOwners.has(detail.name)) assert.equal(detail.court, undefined, detail.name)
   }
   const withoutLiege = new Map(details)
   withoutLiege.set(person('K904').name, { ...person('K904'), directLiege: undefined })
@@ -68,6 +107,93 @@ test('S01 court projection retains exact approved direct lieges and owner member
   missingMember.set(person('K002').name, { ...person('K002'), court: { ...person('K002').court,
     members: person('K002').court.members.filter((member) => member.personId !== 'K904') } })
   assert.throws(() => checkProjection((id) => missingMember.get(registry.persons.find((entry) => entry.id === id).name)), /K002/)
+})
+
+test('S02/S03 court projection retains exact approved direct lieges and owner memberships', async () => {
+  const approved = [
+    ['K032', 'K041'], ['K037', 'K047'], ['K033', 'K049'], ['K058', 'K068'],
+    ['K060', 'K069 K071'], ['K061', 'K073 K075'], ['K062', 'K074'],
+  ]
+  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8'))
+  const catalogText = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const catalog = JSON.parse(catalogText.slice('export const peopleCatalog = '.length, catalogText.indexOf(' as const\n')))
+  const issuedById = new Map(registry.persons.map((person) => [person.id, person]))
+  const stateByName = new Map(values.people.map((person) => [person.name, person.state]))
+  const details = new Map()
+  for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter((name) => name.endsWith('.json'))) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
+    details.set(detail.id, detail)
+  }
+  const person = (id, records = details) => {
+    const issued = issuedById.get(id)
+    assert.ok(issued, id)
+    const matches = catalog.filter((entry) => entry.name === issued.name)
+    assert.equal(matches.length, 1, id)
+    const route = matches[0].detailRoute
+    assert.match(route, /^\/people\/person-\d{4}$/u, id)
+    const detail = records.get(route.slice('/people/'.length))
+    assert.ok(detail, id)
+    assert.equal(detail.id, matches[0].id, id)
+    assert.equal(detail.name, issued.name, id)
+    assert.equal(detail.state, stateByName.get(issued.name), id)
+    assert.equal(matches[0].state, stateByName.get(issued.name), id)
+    return detail
+  }
+  const expectedMembers = new Set()
+  const expectedOwners = new Set()
+  const check = (getPerson) => {
+    for (const [ownerId, members] of approved) {
+      const owner = getPerson(ownerId)
+      const ids = members.split(' ')
+      expectedOwners.add(owner.id)
+      assert.equal(owner.court?.id, `court:${ownerId}`, ownerId)
+      assert.deepEqual(owner.court?.members, ids.map((id) => ({ personId: id, name: issuedById.get(id).name })), ownerId)
+      assert.equal(owner.directLiege, undefined, ownerId)
+      for (const id of ids) {
+        const member = getPerson(id)
+        expectedMembers.add(member.id)
+        assert.deepEqual(member.directLiege,
+          { personId: ownerId, name: issuedById.get(ownerId).name, courtId: `court:${ownerId}`, effectiveYear: 2126 }, id)
+        assert.equal(member.court, undefined, id)
+        assert.equal(member.relations.outgoing.filter((edge) => edge.to === owner.name && edge.type === '지휘').length, 1, id)
+      }
+    }
+  }
+  check(person)
+  assert.equal(expectedMembers.size, 9)
+  assert.equal(expectedOwners.size, 7)
+  assert.equal(details.size, 1019)
+  for (const detail of details.values()) {
+    if (detail.state !== 'S01' && !expectedMembers.has(detail.id)) assert.equal(detail.directLiege, undefined, detail.id)
+    if (detail.state !== 'S01' && !expectedOwners.has(detail.id)) assert.equal(detail.court, undefined, detail.id)
+  }
+  const omitted = new Map(details)
+  omitted.set(person('K041').id, { ...person('K041'), directLiege: undefined })
+  assert.throws(() => check((id) => person(id, omitted)), /K041/)
+  const wrongCourt = new Map(details)
+  wrongCourt.set(person('K060').id, { ...person('K060'), court: { ...person('K060').court,
+    members: person('K060').court.members.filter((member) => member.personId !== 'K071') } })
+  assert.throws(() => check((id) => person(id, wrongCourt)), /K060/)
+  const wrongIdentity = new Map(details)
+  wrongIdentity.set(person('K041').id, { ...person('K041'), name: issuedById.get('K194').name })
+  wrongIdentity.set(person('K032').id, { ...person('K032'), court: { ...person('K032').court,
+    members: [{ personId: 'K041', name: issuedById.get('K194').name }] } })
+  assert.throws(() => check((id) => person(id, wrongIdentity)), /K041/)
+  const blankIdentity = new Map(details)
+  blankIdentity.set(person('K041').id, { ...person('K041'), name: '' })
+  blankIdentity.set(person('K032').id, { ...person('K032'), court: { ...person('K032').court,
+    members: [{ personId: 'K041', name: '' }] } })
+  assert.throws(() => check((id) => person(id, blankIdentity)), /K041/)
+  const foreignState = new Map(details)
+  foreignState.set(person('K041').id, { ...person('K041'), state: 'S08' })
+  assert.throws(() => check((id) => person(id, foreignState)), /K041/)
+  const wrongOwner = new Map(details)
+  wrongOwner.set(person('K032').id, { ...person('K032'), name: issuedById.get('K194').name })
+  assert.throws(() => check((id) => person(id, wrongOwner)), /K032/)
+  const personCourt = new Map(details)
+  personCourt.set(person('K032').id, { ...person('K032'), court: { ...person('K032').court, id: 'K032' } })
+  assert.throws(() => check((id) => person(id, personCourt)), /K032/)
 })
 
 test('all canonical people expose unique detail routes and structured data', async () => {
@@ -178,7 +304,7 @@ test('S01 issued cards retain an explicit occupation and martial state in person
     assert.ok(detail, heading.name)
     assert.equal(detail.occupation, occupation, heading.name)
     if (detail.sourceRoute.startsWith('/world/Cast-State-01#')) assert.equal(detail.fields['생업'], occupation, heading.name)
-    assert.ok(/^(?:수문호흡법|차륜강체공|호위철벽진|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+    await assertMartialSource(detail, heading.name)
   }
 })
 
@@ -207,7 +333,7 @@ test('S02 issued cards retain distinct bilingual livelihoods and their martial s
     assert.equal(detail.name, heading.name)
     assert.equal(detail.occupation, livelihood, heading.name)
     assert.equal(detail.fields['생업'], livelihood, heading.name)
-    assert.ok(/^(?:수문호흡법|차륜강체공|호위철벽진|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+    await assertMartialSource(detail, heading.name)
   }
 })
 
@@ -237,7 +363,7 @@ test('all currently issued S03 cards retain bilingual livelihoods distinct from 
     assert.equal(detail.name, heading.name)
     assert.equal(detail.occupation, livelihood, heading.name)
     assert.equal(detail.fields['생업'], livelihood, heading.name)
-    assert.ok(/^(?:차륜강체공|호위철벽진|없음\. 생업만\.)/u.test(detail.sections['무공'] ?? ''), heading.name)
+    await assertMartialSource(detail, heading.name)
   }
 })
 
@@ -279,9 +405,7 @@ test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and martial p
     assert.equal(detail.occupation, ko, id)
     assert.equal(detail.fields['생업'], ko, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-04#'), id)
-    const martialText = blocks.filter((block) => block.kind === 'paragraph').map((block) => martial(block.text.ko)).join('\n')
-      + '\n' + fields.map((item) => martial(item.ko)).join('\n')
-    assert.match(martialText, /무공\.\s*(?:차륜강체공|수문호흡법|호위철벽진|없음\. 생업만\.)/u, id)
+    await assertMartialSource(detail, id)
   }
 })
 
@@ -293,18 +417,13 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
   const detailIndexByName = new Map(values.map(({ name }, index) => [name, index + 1]))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
-  const expectedMartial = new Map(Object.entries({
-    '호위철벽진': 'K115 K116 K119 K123 K128 K129 K460 K508 K556 K604 K652 K700 K748 K796 K844 K892 K940 K988',
-    '없음. 생업만.': 'K117 K131 K118 K125 K134 K136 K138 K139 K140 K141 K142 K428 K476 K524 K572 K620 K668 K716 K764 K812 K860 K908 K956 K122',
-    '수문호흡법': 'K121 K126 K127 K130 K133 K137 K444 K492 K540 K588 K636 K684 K732 K780 K828 K876 K924 K972 K143',
-    '차륜강체공': 'K132 K135 K120 K124',
-  }).flatMap(([path, ids]) => ids.split(' ').map((id) => [id, path])))
-  assert.equal(expectedMartial.size, 65)
   const baeDetail = JSON.parse(await readFile(new URL('../public/person-details/person-0116.json', import.meta.url), 'utf8'))
   assert.equal(baeDetail.sourceRoute, '/world/Cast-State-05#인물-배우진')
   assert.equal(baeDetail.fields['생업'], '복구복무 명부·부품 대가 조정')
-  assert.match(baeDetail.biography, /^\*\*생애\.\*\* 2126년 세대\. 동방사 군벌 가문의 손\./u)
-  assert.match(baeDetail.sections['무공'], /^호위철벽진\./u)
+  await assertMartialSource(baeDetail, 'K115')
+  await assert.rejects(assertMartialSource({ ...baeDetail, sections: { ...baeDetail.sections, 무공: '' } }, 'K115'), /K115/)
+  await assert.rejects(assertMartialSource({ ...baeDetail, name: '정소율' }, 'K115'), /K115/)
+  await assert.rejects(assertMartialSource({ ...baeDetail, sections: { ...baeDetail.sections, 무공: '단철공.' } }, 'K115'), /K115/)
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }]
     : [])
@@ -333,11 +452,7 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-05#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(호위철벽진|수문호흡법|차륜강체공|없음\. 생업만\.)/u)?.[1]
-    assert.equal(martial, expectedMartial.get(id), id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 65)
@@ -348,12 +463,6 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their original ma
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
-  const expectedMartial = new Map(Object.entries({
-    '없음. 생업만.': 'K157 K149 K152 K160 K162 K165 K167 K429 K445 K477 K493 K525 K541 K573 K589 K621 K637 K669 K685 K717 K733 K765 K781 K813 K829 K861 K877 K909 K925 K957 K973 K144 K161 K145 K146 K147 K148 K151 K153 K154 K156 K159 K164 K166 K461 K509 K557 K605 K653 K701 K749 K797 K845 K893 K941 K989 K168',
-    '차륜강체공': 'K158 K150',
-    '수문호흡법': 'K155 K163',
-  }).flatMap(([path, ids]) => ids.split(' ').map((id) => [id, path])))
-  assert.equal(expectedMartial.size, 61)
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
@@ -363,7 +472,6 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their original ma
     const matches = registry.persons.filter((person) => person.name === heading.name)
     assert.equal(matches.length, 1, heading.name)
     const id = matches[0].id
-    assert.ok(expectedMartial.has(id), id)
     assert.ok(!seen.has(id), id)
     seen.add(id)
     const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
@@ -387,11 +495,7 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their original ma
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-06#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(차륜강체공|수문호흡법|없음\. 생업만\.)/u)?.[1]
-    assert.equal(martial, expectedMartial.get(id), id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
   }
   assert.equal(seen.size, 61)
 })
@@ -401,13 +505,6 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and original 
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
-  const expectedMartial = new Map(Object.entries({
-    '차륜강체공': 'K169 K175 K192',
-    '없음. 생업만.': 'K170 K182 K183 K171 K172 K173 K174 K176 K177 K179 K180 K184 K185 K186 K188 K191 K430 K446 K462 K478 K494 K510 K526 K542 K558 K574 K590 K606 K622 K638 K654 K670 K686 K702 K718 K734 K750 K766 K782 K798 K814 K830 K846 K862 K878 K894 K910 K926 K942 K958 K974 K990 K193 K181 K187',
-    '호위철벽진': 'K178',
-    '수문호흡법': 'K189 K190',
-  }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
-  assert.equal(expectedMartial.size, 61)
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
@@ -417,7 +514,6 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and original 
     const matches = registry.persons.filter((person) => person.name === heading.name)
     assert.equal(matches.length, 1, heading.name)
     const id = matches[0].id
-    assert.ok(expectedMartial.has(id), id)
     assert.ok(!seen.has(id), id)
     seen.add(id)
     const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
@@ -441,11 +537,7 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and original 
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-07#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(차륜강체공|호위철벽진|수문호흡법|없음\. 생업만\.)/u)?.[1]
-    assert.equal(martial, expectedMartial.get(id), id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
   }
   assert.equal(seen.size, 61)
 })
@@ -455,13 +547,6 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original 
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
-  const expectedMartial = new Map(Object.entries({
-    '차륜강체공': 'K208 K200',
-    '호위철벽진': 'K203 K447 K495 K543 K591 K639 K687 K735 K783 K831 K879 K927 K975',
-    '수문호흡법': 'K216 K218',
-    '없음. 생업만.': 'K194 K199 K207 K211 K195 K196 K197 K198 K201 K202 K204 K205 K209 K210 K212 K213 K214 K215 K217 K431 K463 K479 K511 K527 K559 K575 K607 K623 K655 K671 K703 K719 K751 K767 K799 K815 K847 K863 K895 K911 K943 K959 K991 K206',
-  }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
-  assert.equal(expectedMartial.size, 61)
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
@@ -471,7 +556,6 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original 
     const matches = registry.persons.filter((person) => person.name === heading.name)
     assert.equal(matches.length, 1, heading.name)
     const id = matches[0].id
-    assert.ok(expectedMartial.has(id), id)
     assert.ok(!seen.has(id), id)
     seen.add(id)
     const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
@@ -495,11 +579,7 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original 
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-08#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(차륜강체공|호위철벽진|수문호흡법|없음\. 생업만\.)/u)?.[1]
-    assert.equal(martial, expectedMartial.get(id), id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 61)
@@ -509,14 +589,6 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and origi
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-09.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
-  const expectedMartial = new Map(Object.entries({
-    '없음. 생업만.': 'K220 K223 K224 K226 K227 K229 K230 K232 K234 K235 K236 K237 K240 K241 K242 K432 K448 K480 K496 K528 K544 K576 K592 K624 K640 K672 K688 K720 K736 K768 K784 K816 K832 K864 K880 K912 K928 K960 K976 K244 K221 K222 K231 K233 K238 K239 K243',
-    '차륜강체공': 'K225 K464 K512 K560 K608 K656 K704 K752 K800 K848 K896 K944 K992',
-    '호위철벽진': 'K228',
-    // 최지우는 Core-Characters 판본을 따른다(소유자 결정 2026-09-28).
-    '강단호명법': 'K219',
-  }).flatMap(([martial, ids]) => ids.split(' ').map((id) => [id, martial])))
-  assert.equal(expectedMartial.size, 62)
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
@@ -526,7 +598,6 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and origi
     const matches = registry.persons.filter((person) => person.name === heading.name)
     assert.equal(matches.length, 1, heading.name)
     const id = matches[0].id
-    assert.ok(expectedMartial.has(id), id)
     assert.ok(!seen.has(id), id)
     seen.add(id)
     const blocks = document.content.slice(heading.index + 1, headings[index + 1]?.index)
@@ -551,11 +622,7 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and origi
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-09#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\s*(차륜강체공|호위철벽진|강단호명법|없음\. 생업만\.)/u)?.[1]
-    assert.equal(martial, expectedMartial.get(id), id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 62)
@@ -589,9 +656,8 @@ test('S10 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-10#'), id)
-    const martial = detail.sections['무공']
-    assert.match(martial, /^(?:없음\. 생업만\.|없음\. 강호 갈래는 안국총림 안의 개방 무공\.|수문호흡법|차륜강체공|호위철벽진)/u, id)
-    assert.doesNotMatch(martial, /생업:/u, id)
+    await assertMartialSource(detail, id)
+    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 62)
 })
@@ -624,11 +690,7 @@ test('S11 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-11#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜강체공|호위철벽진|수문호흡법)/u)?.[1]
-    assert.ok(martial, id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 61)
@@ -662,11 +724,7 @@ test('S12 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-12#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜강체공|호위철벽진)/u)?.[1]
-    assert.ok(martial, id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 62)
@@ -700,11 +758,7 @@ test('S13 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-13#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜강체공|호위철벽진)/u)?.[1]
-    assert.ok(martial, id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 62)
@@ -738,11 +792,7 @@ test('S14 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-14#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜강체공|호위철벽진|수문호흡법)/u)?.[1]
-    assert.ok(martial, id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 61)
@@ -752,7 +802,7 @@ test('S14 issued cards retain card-backed bilingual livelihoods and original mar
   const takDetail = JSON.parse(await readFile(new URL('../public/person-details/person-1006.json', import.meta.url), 'utf8'))
   assert.equal(takDetail.name, '탁서윤')
   assert.equal(takDetail.occupation, plain(coreTak.text.ko).match(/생업 별명은 ([^.]+)\./u)[1])
-  assert.match(takDetail.sections['무공'] ?? '', /^호위철벽진/u)
+  await assertMartialSource(takDetail, 'K1006')
 })
 
 test('S15 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
@@ -783,11 +833,7 @@ test('S15 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-15#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜강체공|호위철벽진|수문호흡법)/u)?.[1]
-    assert.ok(martial, id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 61)
@@ -821,33 +867,41 @@ test('S16 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-16#'), id)
-    const martialText = blocks.flatMap((block) => block.kind === 'paragraph' ? [plain(block.text.ko)]
-      : block.kind === 'list' ? block.items.map((item) => plain(item.ko)) : []).join('\n')
-    const martial = martialText.match(/무공\.\*{0,2}\s*(없음\. 생업만\.|차륜강체공|호위철벽진|수문호흡법)/u)?.[1]
-    assert.ok(martial, id)
-    assert.ok(detail.sections['무공']?.startsWith(martial), id)
+    await assertMartialSource(detail, id)
     assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
   }
   assert.equal(seen.size, 61)
 })
 
 test('person detail page renders tables and the canonical prose sections', async () => {
-  const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8')
-  const page = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
-  assert.match(app, /path="\/people\/:personId"/)
-  assert.match(page, /기본 정보/)
-  assert.match(page, /가치관/)
-  assert.match(page, /욕망/)
-  assert.match(page, /정본 상세/)
-  for (const label of ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']) assert.match(page, new RegExp(label))
-  assert.match(page, /sectionOrder\.filter\(\(label\) => detail\.sections\[label\]\)/)
-  assert.doesNotMatch(page, /정본에 별도 산문이 등록되지 않았습니다/)
+  const supported = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
+  const details = await Promise.all(['person-0001', 'person-0002', 'person-1009'].map(async (id) =>
+    JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))))
+  assert.deepEqual(new Set(details.flatMap((detail) => Object.keys(detail.sections))), new Set(supported))
+  for (const detail of details) {
+    const html = renderToStaticMarkup(createElement(MemoryRouter, null,
+      createElement(PersonDetailContent, { detail, personId: detail.id })))
+    assert.ok(html.includes(`data-person-id="${detail.id}"`), detail.id)
+    assert.ok(html.includes('<h2>기본 정보</h2>'), detail.id)
+    assert.ok(html.includes('<h2>가치관</h2>'), detail.id)
+    assert.ok(html.includes('<h2>욕망</h2>'), detail.id)
+    assert.ok(html.includes('<h2>정본 상세</h2>'), detail.id)
+    for (const label of Object.keys(detail.sections)) {
+      assert.ok(html.includes(`<h3>${label}</h3>`), `${detail.id}:${label}`)
+    }
+  }
+  const missing = renderToStaticMarkup(createElement(MemoryRouter, null,
+    createElement(PersonDetailContent, {
+      detail: { ...details[0], sections: { 무공: '', 야망: '목표' } }, personId: details[0].id,
+    })))
+  assert.ok(!missing.includes('<h3>무공</h3>'))
+  assert.ok(missing.includes('<h3>야망</h3>'))
 })
 
 test('Jo Jaepyo has the landing formation without an invented Marine Corps service record', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1003.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '조재표')
-  assert.match(detail.sections['무공'], /^호위철벽진의 상륙호위진\./u)
+  await assertMartialSource(detail, 'K1003')
   assert.doesNotMatch(detail.sections['무공'], /해병대 복무|총기 접근/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-조재표')
 })
@@ -855,7 +909,7 @@ test('Jo Jaepyo has the landing formation without an invented Marine Corps servi
 test('Lee Yeon has the escort formation without invented firearm access or service', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1004.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '이연')
-  assert.match(detail.sections['무공'], /^호위철벽진의 상륙호위진\./u)
+  await assertMartialSource(detail, 'K1004')
   assert.doesNotMatch(detail.sections['무공'], /총기 접근|복무 이력/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-이연')
 })

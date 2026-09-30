@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1009",
+  "characterId": "K1009",
+  "name": "신종목",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": true,
+    "role": "Father, former special recovery operative and return-network field contractor; knows bayonet fighting, with no current weapon possession established"
+  },
+  "artProposal": {
+    "face": "Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait",
+    "hair": "Short dark hair from the existing Tripo character portrait",
+    "outfit": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio",
+    "palette": [
+      "dark teal-green",
+      "mustard",
+      "muted skin"
+    ],
+    "carriedWeapons": "none depicted; bayonet-fighting skill does not imply possession",
+    "upper": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio",
+    "lower": null,
+    "footwear": null
+  },
+  "style": {
+    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-1009.png",
+    "sha256": "482a9e975ab233d66fac5fe7b3361c097d3d37e88563e150ab28db6c59b018ee",
+    "width": 1214,
+    "height": 1295
+  },
+  "references": {
+    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "identitySha256": "1873d081539d8523c60e1dafb221910228b4286c3b572a3b48dc424197a33012",
+    "identityRole": "owner-reference",
+    "imageText": "none",
+    "reviewStatus": "candidate-reviewed"
+  }
+}

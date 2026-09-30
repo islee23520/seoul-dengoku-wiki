@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1008",
+  "characterId": "K1008",
+  "name": "민웅기",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": true,
+    "role": "Unaffiliated former communications repairer who farms in Daejeon at opening"
+  },
+  "artProposal": {
+    "face": "Youthful narrow face with light translucent angular glasses; owner-provided likeness reference",
+    "hair": "Straight dark hair covering the ears",
+    "outfit": "Muted olive-green work shirt with simple collar",
+    "palette": [
+      "olive",
+      "dark brown",
+      "warm gray"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "upper": "Muted olive-green work shirt with simple collar",
+    "lower": null,
+    "footwear": null
+  },
+  "style": {
+    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-1008.png",
+    "sha256": "ac6f94eb138134e30c110e9acf68d2c0efda9abb6f85230b8b813e4b010d3987",
+    "width": 1215,
+    "height": 1295
+  },
+  "references": {
+    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "identitySha256": "fd96a1b87bd44305085a4bd21b1f6fb52352574cb557981a6674c46be08f910e",
+    "identityRole": "owner-reference",
+    "imageText": "none",
+    "reviewStatus": "candidate-reviewed"
+  }
+}
