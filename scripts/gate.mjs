@@ -109,9 +109,11 @@ export function privateLinkFailures(href, source) {
 
 export function visibleFieldFailures(text, source, { links = [], retiredSource = source } = {}) {
   if (typeof text !== 'string') throw new Error(`E_VISIBLE_FIELD:${source}`)
+  const regionCopy = source.includes('/regions/')
+    ? text.replace(/(?:문서고|문서|원본|열람)[^.!?\n]*?복제/gu, (match) => match.replace('복제', '복사'))
+    : text
   return [
-    ...findBannedTerms(text).filter((term) => term !== '복제' || !source.includes('/regions/') || !/(?:문서고|문서|원본|열람).{0,45}복제/u.test(text))
-      .map((term) => `FAIL banned-term: ${source} contains "${term}"`),
+    ...findBannedTerms(regionCopy).map((term) => `FAIL banned-term: ${source} contains "${term}"`),
     ...coinedPhraseFailures(text, source),
     ...editorialMarkerFailures(text, source),
     ...retiredFormFailures(text, retiredSource).map((failure) => failure.replace(retiredSource, source)),
@@ -415,12 +417,12 @@ function main() {
     for (const field of ['name', 'district', 'openingState', 'summary']) failures.push(...visibleFieldFailures(region[field], `public/opening-territories.json#/regions/${index}/${field}`))
   }
   for (const [index, station] of territories.stations.entries()) {
-    for (const field of ['name', 'district', 'control']) {
-      if (field === 'control') {
-        for (const key of ['status', 'primary']) if (station.control[key] != null) failures.push(...visibleFieldFailures(station.control[key], `public/opening-territories.json#/stations/${index}/control/${key}`))
-        for (const key of ['state', 'regionalAuthority', 'stationManager']) if (station.control.hierarchy[key] != null) failures.push(...visibleFieldFailures(station.control.hierarchy[key], `public/opening-territories.json#/stations/${index}/control/hierarchy/${key}`))
-      } else failures.push(...visibleFieldFailures(station[field], `public/opening-territories.json#/stations/${index}/${field}`))
-    }
+    for (const field of ['name', 'district']) failures.push(...visibleFieldFailures(station[field], `public/opening-territories.json#/stations/${index}/${field}`))
+    station.control.polityNames.forEach((name, polityIndex) => failures.push(...visibleFieldFailures(name, `public/opening-territories.json#/stations/${index}/control/polityNames/${polityIndex}`)))
+    for (const key of ['state', 'regionalAuthority', 'stationManager']) if (station.control.hierarchy[key] != null) failures.push(...visibleFieldFailures(station.control.hierarchy[key], `public/opening-territories.json#/stations/${index}/control/hierarchy/${key}`))
+    station.control.memberSurfaces?.forEach((member, memberIndex) => {
+      if (member.surfaceRegionName != null) failures.push(...visibleFieldFailures(member.surfaceRegionName, `public/opening-territories.json#/stations/${index}/control/memberSurfaces/${memberIndex}/surfaceRegionName`))
+    })
   }
   territories.landmarks.forEach((landmark, index) => {
     for (const field of ['name', 'role', 'detail']) failures.push(...visibleFieldFailures(landmark[field], `public/opening-territories.json#/landmarks/${index}/${field}`))

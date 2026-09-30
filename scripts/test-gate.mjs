@@ -225,6 +225,7 @@ function gateProbe(fixture) {
     import fs from 'node:fs';
     import { syncBuiltinESMExports } from 'node:module';
     import { pathToFileURL } from 'node:url';
+    import ts from 'typescript';
     const root = process.cwd();
     const fixture = JSON.parse(process.env.GATE_FIXTURE);
     const target = root + '/' + fixture.file;
@@ -233,7 +234,35 @@ function gateProbe(fixture) {
       if (String(path) !== target) return read.call(this, path, ...args);
       const original = read.call(this, path, ...args);
       if (fixture.append) return original + fixture.append;
-      if (fixture.replace) return original.replace(fixture.replace[0], fixture.replace[1]);
+      if (fixture.tsProperty) {
+        const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+        let target;
+        function visit(node) {
+          if (fixture.tsProperty.map === 'categoryIndex' && ts.isPropertyAssignment(node) && node.name.getText(ast).replaceAll('"', '') === 'categories' && ts.isArrayLiteralExpression(node.initializer)) {
+            const entry = node.initializer.elements[fixture.tsProperty.entry];
+            target = entry.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast).replaceAll('"', '') === fixture.tsProperty.property)?.initializer;
+          }
+          if (fixture.tsProperty.map === 'attrExplain' && ts.isVariableDeclaration(node) && node.name.getText(ast) === 'attrExplain' && ts.isObjectLiteralExpression(node.initializer)) {
+            const entry = node.initializer.properties[fixture.tsProperty.entry];
+            target = entry.initializer.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast) === fixture.tsProperty.property)?.initializer;
+          }
+          ts.forEachChild(node, visit);
+        }
+        visit(ast);
+        if (!target || !ts.isStringLiteralLike(target)) throw new Error('E_TEST_FIXTURE_PROPERTY');
+        return original.slice(0, target.getStart(ast)) + JSON.stringify(fixture.tsProperty.value) + original.slice(target.getEnd());
+      }
+      if (fixture.tsArrayField) {
+        const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
+        const declaration = ast.statements.filter(ts.isVariableStatement).flatMap(s => [...s.declarationList.declarations]).find(d => d.name.getText(ast) === fixture.tsArrayField.name);
+        let array = declaration?.initializer;
+        if (array && ts.isAsExpression(array)) array = array.expression;
+        if (!array || !ts.isArrayLiteralExpression(array)) throw new Error('E_TEST_FIXTURE_ARRAY');
+        const entry = array.elements[fixture.tsArrayField.entry];
+        const prop = entry.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast).replaceAll('"', '') === fixture.tsArrayField.field);
+        if (!prop) throw new Error('E_TEST_FIXTURE_ARRAY_FIELD');
+        return original.slice(0, prop.initializer.getStart(ast)) + JSON.stringify(fixture.tsArrayField.value) + original.slice(prop.initializer.getEnd());
+      }
       const data = JSON.parse(original);
       let parent = data;
       for (const key of fixture.path.slice(0, -1)) parent = parent[key];
@@ -271,7 +300,7 @@ test('production gate excludes unused tooltip and private person metadata but ca
   assert.equal(privatePerson.status, 0, privatePerson.output)
   const unused = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', append: "\nconst privateMetadata = {'approval': '사용자 확정'}\n" })
   assert.equal(unused.status, 0, unused.output)
-  const consumed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', replace: ["desc: '힘 — 피해량·무게·HP 결정'", 'desc: "사용자 확정"'] })
+  const consumed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsProperty: { map: 'attrExplain', entry: 0, property: 'desc', value: '사용자 확정' } })
   assert.equal(consumed.status, 1, consumed.output)
   assert.match(consumed.output, /tooltips/u)
   const hiddenSkill = gateProbe({ file: 'lore/name-pools/gurps-cast.json', path: ['people', 0, 'skills', 0, 'name'], value: '사용자 확정' })
@@ -281,9 +310,9 @@ test('production gate excludes unused tooltip and private person metadata but ca
 test('production gate rejects missing person identity, unsupported AST, and stale category consumer', () => {
   for (const [fixture, fragment] of [
     [{ file: 'public/person-details/person-1003.json', path: ['name'], remove: true }, '/name'],
-    [{ file: 'src/generated/peopleCatalog.ts', replace: ['"name": "한재목"', '"name": null'] }, '/people/0'],
+    [{ file: 'src/generated/peopleCatalog.ts', tsArrayField: { name: 'peopleCatalog', entry: 0, field: 'name', value: null } }, '/people/0'],
     [{ file: 'src/generated/world/Martial-Paths.json', path: ['blocks', 0, 'type'], value: 'linkReference' }, 'linkReference'],
-    [{ file: 'src/generated/categoryIndex.ts', replace: ['"summary": "세계가 이렇게 된 경위와 개막의 전제."', '"summary": "사용자 확정"'] }, 'categoryIndex'],
+    [{ file: 'src/generated/categoryIndex.ts', tsProperty: { map: 'categoryIndex', entry: 0, property: 'summary', value: '사용자 확정' } }, 'categoryIndex'],
   ]) {
     const result = gateProbe(fixture)
     assert.equal(result.status, 1, `${fragment}: ${result.output}`)
@@ -322,6 +351,24 @@ test('production gate catches split and literal-angle visible article markers', 
     assert.equal(result.status, 1, result.output)
     assert.match(result.output, /editorial-marker.*Martial-Paths.json/u)
   }
+})
+
+test('production station gate checks shown polity names but ignores raw status codes', () => {
+  const visible = gateProbe({ file: 'public/opening-territories.json', path: ['stations', 0, 'control', 'polityNames'], value: ['사용자 확정'] })
+  assert.equal(visible.status, 1, visible.output)
+  assert.match(visible.output, /stations\/0\/control\/polityNames/u)
+  const status = gateProbe({ file: 'public/opening-territories.json', path: ['stations', 0, 'control', 'status'], value: '사용자 확정' })
+  assert.equal(status.status, 0, status.output)
+})
+
+test('production region copy exception checks each occurrence independently', () => {
+  const file = 'public/opening-territories.json'
+  const path = ['regions', 0, 'summary']
+  const allowed = gateProbe({ file, path, value: '문서를 복제했다.' })
+  assert.equal(allowed.status, 0, allowed.output)
+  const mixed = gateProbe({ file, path, value: '문서를 복제했다. 인물 복제도 했다.' })
+  assert.equal(mixed.status, 1, mixed.output)
+  assert.match(mixed.output, /regions\/0\/summary.*복제/u)
 })
 
 test('article acceptance rejects missing title and malformed renderer containers', () => {
