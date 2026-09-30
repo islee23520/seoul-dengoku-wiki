@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1007",
+  "characterId": "K1007",
+  "name": "김연규",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": true,
+    "role": "Senior records official and head of the Onmin Council"
+  },
+  "artProposal": {
+    "face": "Youthful narrow face, calm eyes, no glasses or facial hair; owner-provided likeness reference",
+    "hair": "Short straight black hair falling forward",
+    "outfit": "Plain deep navy high-collared civilian coat over light gray shirt",
+    "palette": [
+      "deep navy",
+      "light gray",
+      "muted skin"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "upper": "Plain deep navy high-collared civilian coat over light gray shirt",
+    "lower": null,
+    "footwear": null
+  },
+  "style": {
+    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-1007.png",
+    "sha256": "7ecbe4620b702cea688847d296d8cc4bc1aa2e52bf846a48b25bfcaa51bad0a0",
+    "width": 1215,
+    "height": 1295
+  },
+  "references": {
+    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "identitySha256": "c546b7296c501123b8bd21ccd9d6a153d4466deb5a8949305530c47c8ab75faf",
+    "identityRole": "owner-reference",
+    "imageText": "none",
+    "reviewStatus": "candidate-reviewed"
+  }
+}

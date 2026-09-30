@@ -1,11 +1,13 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
+import portraitCatalog from '../../portrait-catalog.json'
 
 const koreanNameOrder = new Intl.Collator('ko-KR', { usage: 'sort', sensitivity: 'variant' })
 const peopleByName = [...peopleCatalog].sort((left, right) => koreanNameOrder.compare(left.name, right.name) || left.id.localeCompare(right.id))
 const recommendedIds = ['person-1003', 'person-1008', 'person-1007', 'person-1009', 'person-0998']
 const recommendedPeople = recommendedIds.map((id) => peopleCatalog.find((person) => person.id === id)!)
+const portraits = new Map(portraitCatalog.entries.map((entry) => [entry.personId, entry]))
 
 export default function PeoplePage() {
   const [query, setQuery] = useState('')
@@ -38,10 +40,26 @@ export default function PeoplePage() {
       </header>
       <p>이 원장의 1,019명은 모두 영웅 인물이다. 각 인물은 생업과 경력에 따라 전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성을 갖는다. 다만 전투 클래스 이름과 개인별 배정은 아직 확정되지 않았으며, 제안 단계 분류를 인물 카드에 자동으로 붙이지 않는다.</p>
       <p><Link to="/people/draft">인물 시트 초안 만들기</Link> · 정본에 바로 반영되지 않는 검토용 편집기</p>
+      <p><Link to="/tools/character-art">인물 아트 작업 도구 열기</Link></p>
       <section className="people-recommended" aria-labelledby="recommended-people-title">
         <h2 id="recommended-people-title">개막 추천 인물</h2>
         <ul>{recommendedPeople.map((person) => (
-          <li key={person.id}><Link to={person.detailRoute}>{person.name}</Link><span>{person.title}</span></li>
+          <li key={person.id}>
+            {portraits.has(person.id) && <img className="people-portrait" src={`${import.meta.env.BASE_URL}portraits/${person.id}.png`} alt={`${person.name} 초상 아트 제안`} />}
+            <Link to={person.detailRoute}>{person.name}</Link><span>{person.title}</span>
+            {portraits.has(person.id) && <span>초상 아트 제안 · <a href={`${import.meta.env.BASE_URL}portrait-tokens/${person.id}.json`}>디자인 토큰</a></span>}
+          </li>
+        ))}</ul>
+      </section>
+      <section className="people-leaders" aria-labelledby="leader-portraits-title">
+        <h2 id="leader-portraits-title">16국 수장 초상</h2>
+        <p>이 초상의 얼굴과 의복은 정본 인물 정보와 구분되는 아트 제안이다.</p>
+        <ul>{portraitCatalog.entries.filter((entry) => entry.stateId).map((entry) => (
+          <li key={entry.personId}>
+            <img className="people-portrait" src={`${import.meta.env.BASE_URL}portraits/${entry.personId}.png`} alt={`${entry.name} 초상 아트 제안`} />
+            <Link to={`/people/${entry.personId}`}>{entry.name}</Link><span>{entry.stateId}</span>
+            <a href={`${import.meta.env.BASE_URL}portrait-tokens/${entry.personId}.json`}>디자인 토큰</a>
+          </li>
         ))}</ul>
       </section>
       <label className="people-search">

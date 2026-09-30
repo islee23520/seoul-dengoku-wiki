@@ -17,6 +17,8 @@ async function fixture(extra = {}, omit = []) {
     ...Object.fromEntries(allowlist.rootFiles.map((file) => [file, '{}'])),
     'wiki-contract.json': JSON.stringify({ documents: [{ slug: 'Ailments' }], englishDocuments: [{ slug: 'Ailments' }] }),
     'person-details/person-0001.json': '{}',
+    'portrait-tokens/person-0001.json': '{}',
+    'portraits/person-0001.png': '',
     'regional-terrain-tiles/0-0.bin': '',
     'regional-terrain-tiles/0-0-water.json': '{}',
     'state-flags/S01.webp': '',
