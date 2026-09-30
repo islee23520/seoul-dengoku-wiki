@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
-import { useLocation } from 'react-router-dom'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 
 type Relation = { from: string; type: string; to: string; basis: string }
@@ -28,9 +27,9 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
 
 const sectionOrder = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
 
-export function PersonSections({ sections }: { sections: Record<string, string> }): JSX.Element {
+export function PersonSections({ sections, feedback = false }: { sections: Record<string, string>; feedback?: boolean }): JSX.Element {
   return <>{sectionOrder.filter((label) => sections[label]).map((label) => (
-    <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{sections[label]}</ReactMarkdown></section>
+    <section key={label} {...(feedback ? { 'data-feedback-section': label } : {})}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{sections[label]}</ReactMarkdown></section>
   ))}</>
 }
 
@@ -381,9 +380,7 @@ export function PersonDetailContent({ detail, personId }: { detail: PersonDetail
     ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as Array<string>),
   ]
   const canonicalProse = <>
-    {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
-      <section key={label} data-feedback-section={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
-    ))}
+    <PersonSections sections={detail.sections} feedback />
     <details data-feedback-biography><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
   </>
 
@@ -412,11 +409,7 @@ export function PersonDetailContent({ detail, personId }: { detail: PersonDetail
         </aside>
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
-<<<<<<< HEAD
-          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : canonicalProse}
-=======
-          <PersonSections sections={detail.sections} />
->>>>>>> origin/main
+          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : <><PersonSections sections={detail.sections} /><details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details></>}
 
           <GurpsSection personId={personId} />
           <ValuesDesireSection detail={detail} />
