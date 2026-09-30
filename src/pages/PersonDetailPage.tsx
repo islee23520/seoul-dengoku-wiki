@@ -31,29 +31,131 @@ function DataTable({ title, rows }: { title: string; rows: Array<Array<string | 
   )
 }
 
-async function fetchGurps(personId: string) {
+type SheetAttr = { value?: number; cp?: number }
+type SheetTrait = { name: string; kind: string; cp?: number; rule?: string }
+type SheetSkill = { name?: string; ko?: string; level?: number; cp?: number }
+type SheetCp = { total?: number; attributes?: number; advantages?: number; disadvantages?: number; skills?: number; unspent?: number }
+type SheetSecondary = { HP?: number; FP?: number; Will?: number; Per?: number; BasicSpeed?: number; Dodge?: number }
+
+export type GurpsSheetData = {
+  band: string | null
+  attributes: Partial<Record<'ST' | 'DX' | 'IQ' | 'HT', SheetAttr>>
+  traits: SheetTrait[]
+  skills: SheetSkill[]
+  cp: SheetCp
+  secondary: SheetSecondary
+}
+
+export type GurpsParseResult = { ok: true; sheet: GurpsSheetData } | { ok: false; error: string }
+
+const isRecord = (value: unknown): value is Record<string, unknown> =>
+  typeof value === 'object' && value !== null && !Array.isArray(value)
+const isNumber = (value: unknown): value is number => typeof value === 'number' && Number.isFinite(value)
+
+function pickNumbers(label: string, raw: unknown, keys: readonly string[]): Record<string, number> | string {
+  if (raw === undefined || raw === null) return {}
+  if (!isRecord(raw)) return `${label}가 객체가 아니다`
+  for (const key of keys) {
+    const value = raw[key]
+    if (value !== undefined && value !== null && !isNumber(value)) return `${label}.${key}가 숫자가 아니다`
+  }
+  return Object.fromEntries(keys.filter((key) => isNumber(raw[key])).map((key) => [key, raw[key] as number]))
+}
+
+// 신원은 scripts/mcp-character-server.mjs의 matchesCharacter와 같다: personId 일치 또는 url === '/people/' + 요청 ID.
+// K 번호에서 route 순번을 추측하지 않는다. 예: person-0089는 K088이다.
+export function parseGurpsSheet(payload: unknown, personId: string): GurpsParseResult {
+  const reject = (error: string): GurpsParseResult => ({ ok: false, error })
+  if (!isRecord(payload)) return reject('시트 응답이 객체가 아니다')
+  if (payload.personId !== personId && payload.url !== '/people/' + personId) return reject('시트 신원이 요청한 인물과 다르다')
+
+  const band = payload.band === undefined || payload.band === null ? null : typeof payload.band === 'string' ? payload.band : undefined
+  if (band === undefined) return reject('band가 문자열이 아니다')
+
+  const attributes: GurpsSheetData['attributes'] = {}
+  if (payload.attributes !== undefined && payload.attributes !== null) {
+    if (!isRecord(payload.attributes)) return reject('attributes가 객체가 아니다')
+    for (const key of ['ST', 'DX', 'IQ', 'HT'] as const) {
+      const raw = payload.attributes[key]
+      if (raw === undefined || raw === null) continue
+      if (!isRecord(raw)) return reject(`attributes.${key}가 객체가 아니다`)
+      if (raw.value !== undefined && !isNumber(raw.value)) return reject(`attributes.${key}.value가 숫자가 아니다`)
+      if (raw.cp !== undefined && !isNumber(raw.cp)) return reject(`attributes.${key}.cp가 숫자가 아니다`)
+      attributes[key] = { value: raw.value as number | undefined, cp: raw.cp as number | undefined }
+    }
+  }
+
+  const traits: SheetTrait[] = []
+  if (payload.traits !== undefined && payload.traits !== null) {
+    if (!Array.isArray(payload.traits)) return reject('traits가 배열이 아니다')
+    for (const entry of payload.traits) {
+      if (!isRecord(entry)) return reject('traits 항목이 객체가 아니다')
+      if (typeof entry.name !== 'string') return reject('traits 항목의 name이 문자열이 아니다')
+      if (entry.kind !== undefined && typeof entry.kind !== 'string') return reject('traits 항목의 kind가 문자열이 아니다')
+      if (entry.cp !== undefined && !isNumber(entry.cp)) return reject('traits 항목의 cp가 숫자가 아니다')
+      traits.push({
+        name: entry.name,
+        kind: typeof entry.kind === 'string' ? entry.kind : '',
+        cp: entry.cp as number | undefined,
+        rule: typeof entry.rule === 'string' ? entry.rule : undefined,
+      })
+    }
+  }
+
+  const skills: SheetSkill[] = []
+  if (payload.skills !== undefined && payload.skills !== null) {
+    if (!Array.isArray(payload.skills)) return reject('skills가 배열이 아니다')
+    for (const entry of payload.skills) {
+      if (!isRecord(entry)) return reject('skills 항목이 객체가 아니다')
+      if (entry.name !== undefined && typeof entry.name !== 'string') return reject('skills 항목의 name이 문자열이 아니다')
+      if (entry.ko !== undefined && typeof entry.ko !== 'string') return reject('skills 항목의 ko가 문자열이 아니다')
+      if (entry.level !== undefined && !isNumber(entry.level)) return reject('skills 항목의 level이 숫자가 아니다')
+      if (entry.cp !== undefined && !isNumber(entry.cp)) return reject('skills 항목의 cp가 숫자가 아니다')
+      skills.push({
+        name: entry.name as string | undefined,
+        ko: entry.ko as string | undefined,
+        level: entry.level as number | undefined,
+        cp: entry.cp as number | undefined,
+      })
+    }
+  }
+
+  const cp = pickNumbers('cp', payload.cp, ['total', 'attributes', 'advantages', 'disadvantages', 'skills', 'unspent'])
+  if (typeof cp === 'string') return reject(cp)
+  const secondary = pickNumbers('secondary', payload.secondary, ['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'Dodge'])
+  if (typeof secondary === 'string') return reject(secondary)
+
+  return { ok: true, sheet: { band, attributes, traits, skills, cp: cp as SheetCp, secondary: secondary as SheetSecondary } }
+}
+
+async function fetchGurps(personId: string): Promise<GurpsParseResult | null> {
   try {
     const id = personId.startsWith('person-') ? personId : 'person-' + personId
     const res = await fetch('/api/characters/' + id)
     if (!res.ok) return null
-    return await res.json()
+    return parseGurpsSheet(await res.json(), id)
   } catch { return null }
 }
 
 function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
-  const [gurps, setGurps] = useState<any>(null)
+  const [sheet, setSheet] = useState<GurpsSheetData | null>(null)
 
   useEffect(() => {
+    setSheet(null)
     if (!personId) return
-    fetchGurps(personId).then(data => setGurps(data))
+    let active = true
+    fetchGurps(personId).then((result) => {
+      if (active && result?.ok) setSheet(result.sheet)
+    })
+    return () => { active = false }
   }, [personId])
 
-  if (!gurps) return null
-  return <GurpsSheet gurps={gurps} />
+  if (!sheet) return null
+  return <GurpsSheet gurps={sheet} />
 }
 
-export function GurpsSheet({ gurps }: { gurps: any }): JSX.Element {
-  const attrs = gurps.attributes || {}
+export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
+  const attrs = gurps.attributes
   const attrExplain: Record<string, { icon: string; desc: string }> = {
     ST: { icon: '💪', desc: '힘 · 기본 HP와 운반력의 기준' },
     DX: { icon: '🏃', desc: '민첩 · 기본 Speed의 기준' },
@@ -61,12 +163,12 @@ export function GurpsSheet({ gurps }: { gurps: any }): JSX.Element {
     HT: { icon: '❤️', desc: '건강 · 기본 FP와 Speed의 기준' },
   }
 
-  const cp = gurps.cp || {}
-  const skills = gurps.skills || []
-  const advantages = (gurps.traits || []).filter((trait: any) => trait.kind === 'advantage')
-  const disadvantages = (gurps.traits || []).filter((trait: any) => trait.kind === 'disadvantage')
-  const secondary = gurps.secondary || {}
-  const band = typeof gurps.band === 'string' && gurps.band ? gurps.band : null
+  const cp = gurps.cp
+  const skills = gurps.skills
+  const advantages = gurps.traits.filter((trait) => trait.kind === 'advantage')
+  const disadvantages = gurps.traits.filter((trait) => trait.kind === 'disadvantage')
+  const secondary = gurps.secondary
+  const band = gurps.band
 
   return (
     <section className="gurps-sheet">
@@ -88,7 +190,7 @@ export function GurpsSheet({ gurps }: { gurps: any }): JSX.Element {
       {advantages.length > 0 && (
         <div className="gurps-advantages">
           <h3>장점</h3>
-          {advantages.map((adv: any, i: number) => (
+          {advantages.map((adv, i) => (
             <div key={i} className="adv-row">
               <span className="adv-name">{adv.name}</span>
               <span className="adv-cp">{adv.cp} CP</span>
@@ -99,7 +201,7 @@ export function GurpsSheet({ gurps }: { gurps: any }): JSX.Element {
       {disadvantages.length > 0 && (
         <div className="gurps-disadvantages">
           <h3>단점</h3>
-          {disadvantages.map((d: any, i: number) => (
+          {disadvantages.map((d, i) => (
             <div key={i} className="adv-row">
               <span className="adv-name">{d.name}</span>
               <span className="adv-cp">{d.cp} CP</span>
@@ -129,12 +231,12 @@ export function GurpsSheet({ gurps }: { gurps: any }): JSX.Element {
         <div className="derived-row"><span>Will 의지</span><span>{secondary.Will ?? '—'}</span><span>기본값: IQ</span></div>
         <div className="derived-row"><span>Per 지각</span><span>{secondary.Per ?? '—'}</span><span>기본값: IQ</span></div>
         <div className="derived-row"><span>Speed</span><span>{secondary.BasicSpeed ?? '—'}</span><span>기본값: (DX+HT)÷4</span></div>
-        <div className="derived-row"><span>Dodge 회피</span><span>{secondary.Dodge ?? '—'}</span><span>기본값: ⌊Speed⌋+3{advantages.some((trait: any) => trait.rule === 'combat-reflexes') ? ', Combat Reflexes +1' : ''}</span></div>
+        <div className="derived-row"><span>Dodge 회피</span><span>{secondary.Dodge ?? '—'}</span><span>기본값: ⌊Speed⌋+3{advantages.some((trait) => trait.rule === 'combat-reflexes') ? ', Combat Reflexes +1' : ''}</span></div>
       </div>
       {skills.length > 0 && (
         <div className="gurps-skills">
           <h3>기술</h3>
-          {skills.map((s: any, i: number) => (
+          {skills.map((s, i) => (
             <div key={i} className="skill-row">
               <span className="skill-name">{s.ko || s.name}</span>
               <span className="skill-level">{s.level ?? '—'}{s.cp != null ? <small className="skill-cp"> ({s.cp} CP)</small> : null}</span>
