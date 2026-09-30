@@ -7,28 +7,29 @@ import { canonicalJson } from './world-atlas-schema.mjs'
 const length = (value) => Array.from(value).length
 export const canonicalRevision = (value) => createHash('sha256').update(canonicalJson(value)).digest('hex')
 const selected = (value, locale) => value?.[locale] ?? value?.ko
-const plainSpan = (path, text) => ({ path, start: 0, end: length(text), unit: 'unicode-code-point' })
-const mappedSpan = (path, start, end, textStart, textEnd) => ({ path, start, end, unit: 'unicode-code-point', textStart, textEnd })
+const literalSegment = (path, start, end, textStart, textEnd) => ({ kind: 'literal', path, start, end, unit: 'unicode-code-point', textStart, textEnd })
+const plainSegment = (path, text) => literalSegment(path, 0, length(text), 0, length(text))
+const entitySegment = (path, start, end, textStart, sourceToken, visibleText) => ({ kind: 'entity', path, start, end, unit: 'unicode-code-point', textStart, textEnd: textStart + 1, sourceToken, visibleText })
 
-function textSourceSpans(raw,value,path,sourceBase,textBase){
- const source=Array.from(raw),visible=Array.from(value),spans=[];let sourceIndex=0
+function textSourceSegments(raw,value,path,sourceBase,textBase){
+ const source=Array.from(raw),visible=Array.from(value),segments=[];let sourceIndex=0
  for(let textIndex=0;textIndex<visible.length;textIndex+=1){
   if(source[sourceIndex]==='\\'&&source[sourceIndex+1]===visible[textIndex])sourceIndex+=1
   if(source[sourceIndex]==='&'){
    const end=source.indexOf(';',sourceIndex)
-   if(end>sourceIndex){const token=source.slice(sourceIndex,end+1).join(''),decoded=mdastText(fromMarkdown(token).children[0]);if(decoded===visible[textIndex])throw new Error(`E_FEEDBACK_NONLINEAR_SOURCE_MAP:${path}:${sourceBase+sourceIndex}:${sourceBase+end+1}`)}
+   if(end>sourceIndex){const token=source.slice(sourceIndex,end+1).join(''),decoded=mdastText(fromMarkdown(token).children[0]);if(decoded===visible[textIndex]){segments.push(entitySegment(path,sourceBase+sourceIndex,sourceBase+end+1,textBase+textIndex,token,visible[textIndex]));sourceIndex=end+1;continue}}
   }
   if(source[sourceIndex]!==visible[textIndex])throw new Error(`E_FEEDBACK_SOURCE_MAP:${path}`)
-  spans.push(mappedSpan(path,sourceBase+sourceIndex,sourceBase+sourceIndex+1,textBase+textIndex,textBase+textIndex+1));sourceIndex+=1
+  segments.push(literalSegment(path,sourceBase+sourceIndex,sourceBase+sourceIndex+1,textBase+textIndex,textBase+textIndex+1));sourceIndex+=1
  }
- return spans
+ return segments
 }
 function visibleMarkdown(markdown, path, context = 'paragraph') {
-  if (context === 'code') return { text: markdown, sourceSpans: [plainSpan(path, markdown)] }
+  if (context === 'code') return { text: markdown, sourceSegments: [plainSegment(path, markdown)] }
   const wrappers = context === 'table' ? { prefix: '| ' , suffix: ' |\n| --- |' } : context === 'list' ? { prefix: '- ', suffix: '' } : context === 'heading' ? { prefix: '## ', suffix: '' } : { prefix: '', suffix: '' }
   const authored = `${wrappers.prefix}${markdown}${wrappers.suffix}`
   const root = fromMarkdown(authored, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] })
-  const spans = []
+  const segments = []
   let text = ''
   const walk = (node) => {
     if (node.type === 'text' || node.type === 'inlineCode') {
@@ -42,23 +43,22 @@ function visibleMarkdown(markdown, path, context = 'paragraph') {
       let sourceStart = length(markdown.slice(0, Math.max(0, startOffset))),sourceRaw=raw
       const literal=raw.indexOf(value)
       if(literal>=0){sourceStart+=length(raw.slice(0,literal));sourceRaw=value}
-      spans.push(...textSourceSpans(sourceRaw,value,path,sourceStart,textStart))
+      segments.push(...textSourceSegments(sourceRaw,value,path,sourceStart,textStart))
       text += value
       return
     }
     if (node.type === 'break') {
-      const textStart = length(text); text += '\n'; spans.push(mappedSpan(path, length(markdown.slice(0, Math.max(0, node.position.start.offset - wrappers.prefix.length))), length(markdown.slice(0, Math.max(0, node.position.start.offset - wrappers.prefix.length))) + 1, textStart, textStart + 1)); return
+      const textStart = length(text); text += '\n'; segments.push(literalSegment(path, length(markdown.slice(0, Math.max(0, node.position.start.offset - wrappers.prefix.length))), length(markdown.slice(0, Math.max(0, node.position.start.offset - wrappers.prefix.length))) + 1, textStart, textStart + 1)); return
     }
     for (const child of node.children ?? []) walk(child)
   }
   const target = context === 'table' ? root.children[0]?.children?.[0]?.children?.[0] : context === 'list' ? root.children[0]?.children?.[0] : root.children[0]
   if (target) walk(target)
-  if (!text) return { text: '', sourceSpans: [] }
+  if (!text) return { text: '', sourceSegments: [] }
   const merged=[]
-  for(const span of spans){const previous=merged.at(-1);if(previous&&previous.path===span.path&&previous.end===span.start&&previous.textEnd===span.textStart){previous.end=span.end;previous.textEnd=span.textEnd}else merged.push(span)}
-  spans.splice(0,spans.length,...merged)
-  if (spans.length === 1 && spans[0].start === 0 && spans[0].end === length(markdown) && spans[0].textEnd === length(text)) return { text, sourceSpans: [plainSpan(path, text)] }
-  return { text, sourceSpans: spans }
+  for(const value of segments){const previous=merged.at(-1);if(value.kind==='literal'&&previous?.kind==='literal'&&previous.path===value.path&&previous.end===value.start&&previous.textEnd===value.textStart){previous.end=value.end;previous.textEnd=value.textEnd}else merged.push(value)}
+  if (merged.length === 1 && merged[0].kind === 'literal' && merged[0].start === 0 && merged[0].end === length(markdown) && merged[0].textEnd === length(text)) return { text, sourceSegments: [plainSegment(path, text)] }
+  return { text, sourceSegments: merged }
 }
 
 function visibleValue(value,path,locale,context){
@@ -68,8 +68,8 @@ function visibleValue(value,path,locale,context){
  const rendered=visibleMarkdown(authored,path,context)
  let sourceCursor=0
  const runs=localized.map((run,index)=>{const start=sourceCursor;sourceCursor+=length(run.text);return{index,start,end:sourceCursor}})
- const sourceSpans=rendered.sourceSpans.flatMap((span)=>runs.flatMap((run)=>{const a=Math.max(span.start,run.start),b=Math.min(span.end,run.end);if(a>=b)return[];const spanTextStart='textStart'in span?span.textStart:0;return[mappedSpan(`${path}/${run.index}/text`,a-run.start,b-run.start,spanTextStart+a-span.start,spanTextStart+b-span.start)]}))
- return{text:rendered.text,sourceSpans}
+ const sourceSegments=rendered.sourceSegments.flatMap((segment)=>runs.flatMap((run)=>{const a=Math.max(segment.start,run.start),b=Math.min(segment.end,run.end);if(a>=b)return[];if(segment.kind==='entity'){if(a!==segment.start||b!==segment.end)throw new Error(`E_FEEDBACK_ENTITY_RUN_BOUNDARY:${path}`);return[entitySegment(`${path}/${run.index}/text`,a-run.start,b-run.start,segment.textStart,segment.sourceToken,segment.visibleText)]}return[literalSegment(`${path}/${run.index}/text`,a-run.start,b-run.start,segment.textStart+a-segment.start,segment.textStart+b-segment.start)]}))
+ return{text:rendered.text,sourceSegments}
 }
 const leaf = (block, leafId, blockKind, value, path, locale, blockAnchor = block.anchor) => ({ leafId, blockAnchor, blockKind, ...visibleValue(value, path, locale, blockKind === 'table' ? 'table' : blockKind === 'list' ? 'list' : blockKind === 'heading' ? 'heading' : blockKind === 'code' ? 'code' : 'paragraph') })
 
@@ -90,7 +90,7 @@ export function articleLeaves(envelope, locale) {
     }
     leaves.push(leaf(block, `${block.anchor}:text`, block.kind, block.text, `${base}/text/${locale}`, locale))
   })
-  return leaves.filter((value) => value.text && value.sourceSpans.length)
+  return leaves.filter((value) => value.text && value.sourceSegments.length)
 }
 
 const mdastText = (node) => node?.value ?? (node?.children ?? []).map(mdastText).join('')
@@ -129,7 +129,7 @@ function personSegment(envelope, headingAnchor) {
 }
 function localizedFragments(segment,locale){
  const bySection=new Map();let currentSection=null
- const add=(section,text,path,sourceBase=0)=>{if(!section||!text)return;const visible=visibleMarkdown(text,path);visible.sourceSpans=visible.sourceSpans.map((span)=>({...span,start:span.start+sourceBase,end:span.end+sourceBase}));const rows=bySection.get(section)??[];rows.push({text,path,visible});bySection.set(section,rows)}
+ const add=(section,text,path,sourceBase=0)=>{if(!section||!text)return;const visible=visibleMarkdown(text,path);visible.sourceSegments=visible.sourceSegments.map((segment)=>({...segment,start:segment.start+sourceBase,end:segment.end+sourceBase}));const rows=bySection.get(section)??[];rows.push({text,path,visible});bySection.set(section,rows)}
  const processValue=(value,path)=>{
   const localized=selected(value,locale)
   if(Array.isArray(localized)){
@@ -151,7 +151,7 @@ function localizedFragments(segment,locale){
  for(const {block,index} of segment){const base=`/content/${index}`;if(block.text)processValue(block.text,`${base}/text/${locale}`);block.items?.forEach((item,itemIndex)=>processValue(item,`${base}/items/${itemIndex}/${locale}`))}
  return bySection
 }
-function clipVisibleSpans(visible,start,end){return visible.sourceSpans.flatMap((span)=>{const spanStart='textStart'in span?span.textStart:0,spanEnd='textEnd'in span?span.textEnd:length(visible.text),a=Math.max(start,spanStart),b=Math.min(end,spanEnd);return a>=b?[]:[mappedSpan(span.path,span.start+a-spanStart,span.start+b-spanStart,a-start,b-start)]})}
+function clipVisibleSegments(visible,start,end){return visible.sourceSegments.flatMap((segment)=>{const a=Math.max(start,segment.textStart),b=Math.min(end,segment.textEnd);if(a>=b)return[];if(segment.kind==='entity')return[{...segment,textStart:a-start,textEnd:b-start}];return[literalSegment(segment.path,segment.start+a-segment.textStart,segment.start+b-segment.textStart,a-start,b-start)]})}
 function sectionSurfaceLeaves(markdown){const root=fromMarkdown(markdown,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]});const out=[];const add=(node,kind)=>{const text=mdastText(node);if(text)out.push({text,kind})};for(const node of root.children){if(node.type==='paragraph')add(node,'person-section-paragraph');if(node.type==='list')for(const item of node.children??[])add(item,'person-section-list-item')}return out}
 function actualSectionLeaves(sections,segment,locale,personId){
  const bySection=localizedFragments(segment,locale),leaves=[]
@@ -159,7 +159,7 @@ function actualSectionLeaves(sections,segment,locale,personId){
   for(const surface of sectionSurfaceLeaves(markdown)){const fragments=bySection.get(section)??[];let sourceIndex=-1,offset=-1
    for(let index=fragmentCursor;index<fragments.length;index+=1){const found=fragments[index].visible.text.indexOf(surface.text);if(found>=0){sourceIndex=index;offset=length(fragments[index].visible.text.slice(0,found));break}}
    if(sourceIndex<0)throw new Error(`E_PERSON_SECTION_SOURCE:${personId}:${section}:${surface.text.slice(0,40)}`)
-   const source=fragments[sourceIndex];fragmentCursor=sourceIndex+1;leaves.push({leafId:`section:${section}:${surface.kind.endsWith('list-item')?'list':'paragraph'}:${part++}`,blockAnchor:`section:${section}`,blockKind:surface.kind,text:surface.text,sourceSpans:clipVisibleSpans(source.visible,offset,offset+length(surface.text))})
+   const source=fragments[sourceIndex];fragmentCursor=sourceIndex+1;leaves.push({leafId:`section:${section}:${surface.kind.endsWith('list-item')?'list':'paragraph'}:${part++}`,blockAnchor:`section:${section}`,blockKind:surface.kind,text:surface.text,sourceSegments:clipVisibleSegments(source.visible,offset,offset+length(surface.text))})
   }
  }
  return leaves
@@ -174,7 +174,7 @@ export function personFeedbackRecord({ envelope, personId, route, headingAnchor,
       block.items.forEach((item, itemIndex) => leaves.push(leaf(block, `biography:${block.anchor}:item:${itemIndex}`, 'person-biography-list-item', item, `${base}/items/${itemIndex}/${locale}`, locale, 'biography')))
       continue
     }
-    if (block.kind !== 'rule' && block.kind !== 'heading') leaves.push(...articleLeaves({ content: [block] }, locale).map((value) => ({ ...value, leafId: `biography:${value.leafId}`, blockAnchor: 'biography', blockKind: `person-biography-${value.blockKind}`, sourceSpans: value.sourceSpans.map((span) => ({ ...span, path: span.path.replace('/content/0', base) })) })))
+    if (block.kind !== 'rule' && block.kind !== 'heading') leaves.push(...articleLeaves({ content: [block] }, locale).map((value) => ({ ...value, leafId: `biography:${value.leafId}`, blockAnchor: 'biography', blockKind: `person-biography-${value.blockKind}`, sourceSegments: value.sourceSegments.map((segment) => ({ ...segment, path: segment.path.replace('/content/0', base) })) })))
   }
   return { documentId: `PERSON:${personId}`, route, locale, sourceRevision: canonicalRevision(envelope), selector: 'section[data-feedback-section] p, section[data-feedback-section] li, details[data-feedback-biography] p, details[data-feedback-biography] li', leaves }
 }
@@ -187,5 +187,5 @@ export function privateCatalog(records) {
     if (documents[record.documentId]) throw new Error(`E_FEEDBACK_CATALOG_DUPLICATE:${record.documentId}`)
     documents[record.documentId] = { documentId: record.documentId, route: record.route, locale: record.locale, selector: record.selector, currentRevision: record.sourceRevision, revisions: { [record.sourceRevision]: { leaves: record.leaves } } }
   }
-  return { schemaVersion: 'selectable-text-catalog.v1', locale: [...locales][0], documents }
+  return { schemaVersion: 'selectable-text-catalog.v2', locale: [...locales][0], documents }
 }

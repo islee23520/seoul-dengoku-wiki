@@ -29,3 +29,13 @@ from the catalog. Computed pages without resolvable authored pointers are exclud
 of the canonical `lore/glossary.json` array, and `/world/` remains an unsupported
 computed index. Supporting Glossary later requires dictionary-field pointers and
 the dictionary-array canonical revision, not projection `/content/*` pointers.
+
+## Mapping v2
+
+Private catalogs use `selectable-text-catalog.v2` and ordered `sourceSegments`.
+Literal segments retain equal source/visible lengths. Entity segments carry the
+complete canonical encoded token plus its single decoded visible code point. A
+selection that touches an entity submits the full token source interval atomically.
+The shared service/U2 handoff is owned by the parent service candidate's
+`TOOL/feedback-service/ENTITY-MAPPING-V2.md`; the WIKI producer does not define a
+second clipping algorithm.

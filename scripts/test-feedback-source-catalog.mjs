@@ -27,7 +27,7 @@ test('canonical article records preserve renderer-visible inline, code, table, l
   assert.equal(record.leaves.find((leaf) => leaf.leafId === 'inline:text').text, '생애. A😀 링크')
   const scalar = record.leaves.find((leaf) => leaf.leafId === 'scalar:text')
   assert.equal(scalar.text, '코드와 표시')
-  assert.ok(scalar.sourceSpans.length >= 2)
+  assert.ok(scalar.sourceSegments.length >= 2)
   assert.deepEqual(record.leaves.filter((leaf) => leaf.blockAnchor === 'list').map((leaf) => leaf.leafId), ['list:item:0', 'list:item:1'])
   assert.equal(record.leaves.find((leaf) => leaf.leafId === 'table:cell:1:0').text, '강조 셀')
   const english = articleFeedbackRecord({ envelope: fixture, route: '/en/world/fixture', locale: 'en' }); assert.equal(english.leaves.find((leaf) => leaf.leafId === 'inline:text').text, 'Life. A😀 link')
@@ -48,15 +48,17 @@ test('publication-context boundary cases preserve actual reader text and source 
   assert.equal(record.leaves.find((leaf)=>leaf.leafId==='space:text').text,'A B')
   assert.deepEqual(record.leaves.filter((leaf)=>leaf.blockAnchor==='literal-table').map((leaf)=>leaf.text),['1.','---','#'])
   assert.equal(record.leaves.find((leaf)=>leaf.leafId==='literal-code:text').text,'**literal**\nA😀')
-  for(const leaf of record.leaves)for(let index=1;index<leaf.sourceSpans.length;index+=1)assert.ok(leaf.sourceSpans[index-1].end<=leaf.sourceSpans[index].start||leaf.sourceSpans[index-1].path!==leaf.sourceSpans[index].path)
+  for(const leaf of record.leaves)for(let index=1;index<leaf.sourceSegments.length;index+=1)assert.ok(leaf.sourceSegments[index-1].end<=leaf.sourceSegments[index].start||leaf.sourceSegments[index-1].path!==leaf.sourceSegments[index].path)
 })
 
 
 
-test('encoded entities fail explicitly because df9 equal-width spans cannot represent nonlinear provenance', () => {
+test('encoded entities retain full canonical tokens for scalar and run forms', () => {
  for(const value of ['😀 &amp; B','A &#65; B',[{text:'A '},{text:'&#65;'},{text:' B'}]]){
   const envelope={id:'DOC:entity',domain:'root',locales:{ko:{title:'Entity',summary:'',tense:'present'}},content:[{kind:'heading',anchor:'root',depth:1,text:{ko:'Entity'}},{kind:'paragraph',anchor:'entity',text:{ko:value}}]}
-  assert.throws(()=>articleFeedbackRecord({envelope,route:'/world/entity',locale:'ko'}),/E_FEEDBACK_NONLINEAR_SOURCE_MAP/)
+  const record=articleFeedbackRecord({envelope,route:'/world/entity',locale:'ko'}),leaf=record.leaves[0],entity=leaf.sourceSegments.find((segment)=>segment.kind==='entity')
+  assert.ok(entity);assert.equal(entity.end-entity.start,Array.from(entity.sourceToken).length);assert.equal(entity.textEnd-entity.textStart,1)
+  const source=Array.isArray(value)?value[Number(entity.path.match(/\/(\d+)\/text$/u)?.[1])].text:value;assert.equal(Array.from(source).slice(entity.start,entity.end).join(''),entity.sourceToken)
  }
 })
 
@@ -119,7 +121,7 @@ test('every emitted current catalog span resolves to a canonical JSON pointer an
  for(const [documentId,document] of Object.entries(catalog.documents)){
   let source
   if(documentId.startsWith('PERSON:')){const detail=JSON.parse(await readFile(resolve(`public/person-details/${documentId.slice(7)}.json`),'utf8')),slug=detail.sourceRoute.split('/').at(-1).split('#')[0],path=slug==='Diaspora-Corridors'?`lore/factions/${slug}.json`:`lore/characters/${slug}.json`;source=sources.get(slug)??JSON.parse(await readFile(resolve(path),'utf8'));sources.set(slug,source)}else{const slug=document.route.split('/').at(-1);const files={ 'Sixteen-States':'lore/factions/Sixteen-States.json','Operating-Houses':'lore/Operating-Houses.json' };if(files[slug])source=JSON.parse(await readFile(resolve(files[slug]),'utf8'));else continue}
-  for(const leaf of document.revisions[document.currentRevision].leaves)for(const span of leaf.sourceSpans){assert.equal(span.path.includes('#'),false,`${documentId}:${span.path}`);const value=resolvePointer(source,span.path);assert.equal(typeof value,'string',`${documentId}:${span.path}`);assert.ok(span.start>=0&&span.end<=Array.from(value).length&&span.start<span.end,`${documentId}:${span.path}:${span.start}-${span.end}`)}
+  for(const leaf of document.revisions[document.currentRevision].leaves)for(const span of leaf.sourceSegments){assert.equal(span.path.includes('#'),false,`${documentId}:${span.path}`);const value=resolvePointer(source,span.path);assert.equal(typeof value,'string',`${documentId}:${span.path}`);assert.ok(span.start>=0&&span.end<=Array.from(value).length&&span.start<span.end,`${documentId}:${span.path}:${span.start}-${span.end}`)}
  }
 })
 
@@ -131,12 +133,12 @@ test('actual person order, hidden-section filtering and duplicate source provena
  const hidden=catalog.documents['PERSON:person-0998'],hiddenLeaves=hidden.revisions[hidden.currentRevision].leaves;assert.equal(hiddenLeaves.some((leaf)=>leaf.blockAnchor==='section:신념'),false)
  const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-01.json'),'utf8')),mutatedDetail=structuredClone(detail);envelope.content[6].text.ko[1].text=` ${detail.sections['생애']}`;mutatedDetail.sections['관직']=detail.sections['생애']
  const duplicate=personFeedbackRecord({envelope,personId:detail.id,route:detail.detailRoute,headingText:`인물 ${detail.name}`,locale:'ko',sections:mutatedDetail.sections}),life=duplicate.leaves.find((leaf)=>leaf.leafId==='section:생애:paragraph:0'),office=duplicate.leaves.find((leaf)=>leaf.leafId==='section:관직:paragraph:0')
- assert.equal(life.sourceSpans[0].path,'/content/5/items/3/ko/2/text');assert.equal(office.sourceSpans[0].path,'/content/6/text/ko/1/text')
+ assert.equal(life.sourceSegments[0].path,'/content/5/items/3/ko/2/text');assert.equal(office.sourceSegments[0].path,'/content/6/text/ko/1/text')
 })
 
 test('actual reader-order multi-section selection passes df9 and reverse order fails', async (t) => {
  const catalogPath=resolve('src/generated-private/feedback-selectable-views.ko.json'),catalog=JSON.parse(await readFile(catalogPath,'utf8')),document=catalog.documents['PERSON:person-0002'],leaves=document.revisions[document.currentRevision].leaves
- const make=(leaf)=>({blockAnchor:leaf.blockAnchor,blockKind:leaf.blockKind,leafId:leaf.leafId,exactQuote:leaf.text,prefix:'',suffix:'',range:{start:0,end:Array.from(leaf.text).length,unit:'unicode-code-point'},sourceSpans:leaf.sourceSpans.map(({path,start,end,unit})=>({path,start,end,unit}))})
+ const make=(leaf)=>({blockAnchor:leaf.blockAnchor,blockKind:leaf.blockKind,leafId:leaf.leafId,exactQuote:leaf.text,prefix:'',suffix:'',range:{start:0,end:Array.from(leaf.text).length,unit:'unicode-code-point'},sourceSpans:leaf.sourceSegments.map(({path,start,end,unit})=>({path,start,end,unit}))})
  const office=make(leaves.find((leaf)=>leaf.leafId==='section:관직:paragraph:0')),martial=make(leaves.find((leaf)=>leaf.leafId==='section:무공:paragraph:0')),base={schemaVersion:'feedback-anchor.v1',documentId:document.documentId,route:document.route,locale:'ko',sourceRevision:document.currentRevision}
  const root=await mkdtemp(join(tmpdir(),'feedback-person-order-'));t.onTestFinished(()=>rm(root,{recursive:true,force:true}));const service=process.env.FEEDBACK_SERVICE_ROOT??'/Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-service-u3/TOOL/feedback-service',child=spawn(process.execPath,[resolve(service,'src/server.mjs')],{env:{...process.env,NODE_ENV:'test',FEEDBACK_AUTH_PROVIDER:'test',FEEDBACK_DB_PATH:join(root,'feedback.sqlite'),FEEDBACK_REDACTION_JOURNAL_PATH:join(root,'authority/redactions.jsonl'),FEEDBACK_SELECTABLE_VIEW_PATH:catalogPath,FEEDBACK_SESSION_SECRET:'o'.repeat(48),FEEDBACK_REVIEWER_IDS:'900',FEEDBACK_PORT:'0'},stdio:['ignore','pipe','pipe']});t.onTestFinished(()=>{if(child.exitCode===null)child.kill('SIGTERM')});const ready=await waitLine(child.stdout,'FEEDBACK_READY '),url=ready.slice(15).replace('/api/feedback/health',''),auth=await fetch(`${url}/api/feedback/auth/test-session`,{method:'POST',headers:{'x-test-github-id':'100','x-test-login':'order'}}),authBody=await auth.json(),cookie=auth.headers.get('set-cookie').split(';')[0];const submit=(selections,key)=>fetch(`${url}/api/feedback/submissions`,{method:'POST',headers:{cookie,'x-csrf-token':authBody.csrfToken,'idempotency-key':key,'content-type':'application/json'},body:JSON.stringify({anchor:{...base,selections},body:'person order',reason:'기타'})});assert.equal((await submit([office,martial],'reader-order')).status,201);assert.equal((await submit([martial,office],'reverse-order')).status,422)
 })
@@ -153,12 +155,12 @@ test('actual generated private catalog validates through the confirmed U3 HTTP p
   const catalogPath = resolve('src/generated-private/feedback-selectable-views.ko.json')
   const englishCatalog = JSON.parse(await readFile(resolve('src/generated-private/feedback-selectable-views.en.json'), 'utf8')); assert.ok(Object.values(englishCatalog.documents).every((value) => value.locale === 'en' && value.route.startsWith('/en/')))
   const catalog = JSON.parse(await readFile(catalogPath, 'utf8'))
-  const document = Object.values(catalog.documents).find((value) => value.locale === 'ko' && Object.values(value.revisions)[0].leaves.some((leaf) => leaf.sourceSpans.length > 1))
+  const document = Object.values(catalog.documents).find((value) => value.locale === 'ko' && Object.values(value.revisions)[0].leaves.some((leaf) => leaf.sourceSegments.length > 1))
   assert.ok(document)
   const [revision, revisionValue] = Object.entries(document.revisions)[0]
-  const leaf = revisionValue.leaves.find((candidate) => candidate.sourceSpans.length > 1)
+  const leaf = revisionValue.leaves.find((candidate) => candidate.sourceSegments.length > 1)
   const end = Math.min(3, Array.from(leaf.text).length)
-  const selectionSpans = leaf.sourceSpans.flatMap((span) => { const start = Math.max(0, span.textStart), stop = Math.min(end, span.textEnd); return start >= stop ? [] : [{ path: span.path, start: span.start + start - span.textStart, end: span.start + stop - span.textStart, unit: 'unicode-code-point' }] })
+  const selectionSpans = leaf.sourceSegments.flatMap((segment) => { const start = Math.max(0, segment.textStart), stop = Math.min(end, segment.textEnd); if(start>=stop)return[];return segment.kind==='entity'?[{path:segment.path,start:segment.start,end:segment.end,unit:'unicode-code-point'}]:[{path:segment.path,start:segment.start+start-segment.textStart,end:segment.start+stop-segment.textStart,unit:'unicode-code-point'}] })
   const anchor = { schemaVersion: 'feedback-anchor.v1', documentId: document.documentId, route: document.route, locale: document.locale, sourceRevision: revision, selections: [{ blockAnchor: leaf.blockAnchor, blockKind: leaf.blockKind, leafId: leaf.leafId, exactQuote: Array.from(leaf.text).slice(0, end).join(''), prefix: '', suffix: Array.from(leaf.text).slice(end, end + 32).join(''), range: { start: 0, end, unit: 'unicode-code-point' }, sourceSpans: selectionSpans }] }
   const root = await mkdtemp(join(tmpdir(), 'feedback-catalog-http-'))
   t.onTestFinished(() => rm(root, { recursive: true, force: true }))
@@ -171,7 +173,7 @@ test('actual generated private catalog validates through the confirmed U3 HTTP p
   const authBody = await authResponse.json(); const cookie = authResponse.headers.get('set-cookie').split(';')[0]
   const submit = async (value, key) => fetch(`${base}/api/feedback/submissions`, { method: 'POST', headers: { cookie, 'x-csrf-token': authBody.csrfToken, 'idempotency-key': key, 'content-type': 'application/json' }, body: JSON.stringify({ anchor: value, body: 'catalog integration', reason: '기타' }) })
   assert.equal((await submit(anchor, 'catalog-valid')).status, 201)
-  const states=catalog.documents['DOC:Sixteen-States'],statesLeaf=states.revisions[states.currentRevision].leaves.find((value)=>value.leafId==='table:cell:15:5');const statesAnchor={schemaVersion:'feedback-anchor.v1',documentId:states.documentId,route:states.route,locale:'ko',sourceRevision:states.currentRevision,selections:[{blockAnchor:statesLeaf.blockAnchor,blockKind:statesLeaf.blockKind,leafId:statesLeaf.leafId,exactQuote:statesLeaf.text,prefix:'',suffix:'',range:{start:0,end:Array.from(statesLeaf.text).length,unit:'unicode-code-point'},sourceSpans:statesLeaf.sourceSpans.map(({path,start,end,unit})=>({path,start,end,unit}))}]};assert.equal((await submit(statesAnchor,'catalog-states-date')).status,201)
+  const states=catalog.documents['DOC:Sixteen-States'],statesLeaf=states.revisions[states.currentRevision].leaves.find((value)=>value.leafId==='table:cell:15:5');const statesAnchor={schemaVersion:'feedback-anchor.v1',documentId:states.documentId,route:states.route,locale:'ko',sourceRevision:states.currentRevision,selections:[{blockAnchor:statesLeaf.blockAnchor,blockKind:statesLeaf.blockKind,leafId:statesLeaf.leafId,exactQuote:statesLeaf.text,prefix:'',suffix:'',range:{start:0,end:Array.from(statesLeaf.text).length,unit:'unicode-code-point'},sourceSpans:statesLeaf.sourceSegments.map(({path,start,end,unit})=>({path,start,end,unit}))}]};assert.equal((await submit(statesAnchor,'catalog-states-date')).status,201)
   const changed=JSON.parse(await readFile(resolve('lore/factions/Sixteen-States.json'),'utf8'));changed.content[7].rows[14][5].ko+=' 변경';const staleFromMutation=structuredClone(statesAnchor);staleFromMutation.sourceRevision=canonicalRevision(changed);const changedResponse=await submit(staleFromMutation,'catalog-source-mutated');assert.equal(changedResponse.status,422);assert.equal((await changedResponse.json()).error.code,'source-changed')
   const wrong = structuredClone(anchor); wrong.selections[0].sourceSpans[0].end += 1
   assert.equal((await submit(wrong, 'catalog-wrong')).status, 422)
