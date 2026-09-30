@@ -896,21 +896,36 @@ test('person detail page renders tables and the canonical prose sections', async
     })))
   assert.ok(!missing.includes('<h3>무공</h3>'))
   assert.ok(missing.includes('<h3>야망</h3>'))
+
+  for (const [id, name] of [['person-1003', '조재표'], ['person-1004', '이연']]) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))
+    const card = await selectedCard(name)
+    const formation = card.body.match(/\*\*호위 대열\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/u)?.[1]?.trim()
+    assert.ok(formation, id)
+    assert.equal(detail.sections['호위 대열'], formation, id)
+    const html = renderToStaticMarkup(createElement(MemoryRouter, null,
+      createElement(PersonDetailContent, { detail, personId: detail.id })))
+    const canonical = html.split('<summary>정본 카드 원문 전체</summary>')[0]
+    assert.ok(canonical.includes(`<h3>호위 대열</h3><p>${formation}</p>`), id)
+    assert.ok(!canonical.includes('<h3>무공</h3>'), id)
+  }
 })
 
 test('Jo Jaepyo has the landing formation without an invented Marine Corps service record', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1003.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '조재표')
-  await assertMartialSource(detail, 'K1003')
-  assert.doesNotMatch(detail.sections['무공'], /해병대 복무|총기 접근/u)
+  assert.ok(detail.sections['호위 대열'])
+  assert.equal(detail.sections['무공'], undefined)
+  assert.doesNotMatch(detail.sections['호위 대열'], /해병대 복무|총기 접근/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-조재표')
 })
 
 test('Lee Yeon has the escort formation without invented firearm access or service', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1004.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '이연')
-  await assertMartialSource(detail, 'K1004')
-  assert.doesNotMatch(detail.sections['무공'], /총기 접근|복무 이력/u)
+  assert.ok(detail.sections['호위 대열'])
+  assert.equal(detail.sections['무공'], undefined)
+  assert.doesNotMatch(detail.sections['호위 대열'], /총기 접근|복무 이력/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-이연')
 })
 

@@ -25,7 +25,7 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   relations: { outgoing: Relation[]; incoming: Relation[] }
 }
 
-const sectionOrder = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
+const sectionOrder = ['생애', '관직', '무공', '호위 대열', '일화', '가문', '관계', '야망', '공포', '개입']
 
 export function PersonSections({ sections, feedback = false }: { sections: Record<string, string>; feedback?: boolean }): JSX.Element {
   return <>{sectionOrder.filter((label) => sections[label]).map((label) => (
