@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import { DocumentContent, fromWikiBlocks, type WikiBlock } from '@seoul-dengoku/document-renderer'
 import { Breadcrumbs, PageHeader, StateNotice, TableOfContents, TableViewport } from '@seoul-dengoku/shared-web-ui'
@@ -6,6 +6,9 @@ import { wikiCatalog, wikiEnglishCatalog, type WikiDomain } from '../generated/w
 import { resolveLegacyRegionRoute, resolveLegacyWorldRoute, resolveWikiContentHref } from '../wikiRouting'
 import { wikiBlockText, wikiHeadingId } from '../wikiDocument'
 import { wikiAnchorHref } from '../sharedCategories'
+import FeedbackComposer from '../components/FeedbackComposer'
+import { FeedbackSurface } from '../components/FeedbackSurface'
+import type { FeedbackDocument } from '../feedbackSelection'
 
 const OpeningTerritoryMap = lazy(() => import('../components/OpeningTerritoryMap'))
 const TimelineOverview = lazy(() => import('../components/TimelineOverview'))
@@ -14,9 +17,11 @@ const loadMermaid = () => import('mermaid')
 
 type WikiLocale = 'ko' | 'en'
 
+type GeneratedArticle = { blocks: WikiBlock[]; feedback: FeedbackDocument | null }
+
 const worldModules = {
-  ko: import.meta.glob<{ blocks: WikiBlock[] }>('../generated/world/*.json', { import: 'default' }),
-  en: import.meta.glob<{ blocks: WikiBlock[] }>('../generated/world-en/*.json', { import: 'default' }),
+  ko: import.meta.glob<GeneratedArticle>('../generated/world/*.json', { import: 'default' }),
+  en: import.meta.glob<GeneratedArticle>('../generated/world-en/*.json', { import: 'default' }),
 }
 const modulePrefix = { ko: '../generated/world/', en: '../generated/world-en/' }
 const catalogs = { ko: wikiCatalog, en: wikiEnglishCatalog }
@@ -48,6 +53,8 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
   const koreanDocument = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
   const alternate = (locale === 'ko' ? wikiEnglishCatalog : wikiCatalog).find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
   const [blocks, setBlocks] = useState<WikiBlock[] | null>(null)
+  const [feedback, setFeedback] = useState<FeedbackDocument | null>(null)
+  const proseRef = useRef<HTMLDivElement>(null)
   // Keyed by slug: a legacy slug that fails to load must not fail its redirect target on the next render.
   const [failedSlug, setFailedSlug] = useState<string | null>(null)
   const loadFailed = failedSlug === normalizedSlug
@@ -56,6 +63,7 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
     let active = true
     const load = worldModules[locale][`${modulePrefix[locale]}${normalizedSlug}.json`]
     setBlocks(null)
+    setFeedback(null)
     setFailedSlug(null)
     if (!load) {
       setFailedSlug(normalizedSlug)
@@ -63,6 +71,7 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
     }
     void load().then((content) => {
       if (active) setBlocks(Array.isArray(content.blocks) ? content.blocks : null)
+      if (active) setFeedback(content.feedback ?? null)
       if (active && !Array.isArray(content.blocks)) setFailedSlug(normalizedSlug)
     }).catch((error: unknown) => {
       if (error instanceof Error) {
@@ -139,16 +148,17 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
       {locale === 'ko' && domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<StateNotice state="loading" message="연표 전체 줄거리를 준비하고 있습니다." />}><TimelineOverview /></Suspense>}
 
       <div className="wiki-article-grid">
-        <div className="wiki-prose">
+        {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback}><div className="wiki-prose">
           {content.map((node, index) => node.node.type === 'table'
             ? <TableViewport key={index} label={text.table}><DocumentContent content={[node]} locale={locale} resolveHref={resolveWikiContentHref} loadMermaid={loadMermaid} /></TableViewport>
             : <DocumentContent key={index} content={[node]} locale={locale} resolveHref={resolveWikiContentHref} loadMermaid={loadMermaid} />)}
-        </div>
+        </div></FeedbackSurface> : <div className="wiki-prose">{content.map((node, index) => <DocumentContent key={index} content={[node]} locale={locale} resolveHref={resolveWikiContentHref} loadMermaid={loadMermaid} />)}</div>}
 
         {sectionLinks.length > 0 && (
           <TableOfContents label={text.contents} items={sectionLinks.map((section) => ({ id: section.id, title: section.title, depth: section.depth }))} />
         )}
       </div>
+      {feedback && <FeedbackComposer rootRef={proseRef} documentInfo={feedback} locale={locale} />}
     </article>
   )
 }

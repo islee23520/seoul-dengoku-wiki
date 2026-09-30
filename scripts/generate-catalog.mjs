@@ -1,4 +1,5 @@
 import { mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
+import { createHash } from 'node:crypto'
 import { basename, dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import proj4 from 'proj4'
@@ -15,6 +16,7 @@ import { localizedDocuments } from './localized-documents.mjs'
 import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
+import { canonicalJson } from './world-atlas-schema.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -24,6 +26,31 @@ const generatedRoot = resolve(projectRoot, 'src/generated')
 const publicRoot = resolve(projectRoot, 'public')
 const domains = ['world']
 const wikiAssetTarget = resolve(publicRoot, 'wiki-assets')
+const codePointLength = (value) => Array.from(value).length
+const canonicalHash = (value) => createHash('sha256').update(canonicalJson(value)).digest('hex')
+const localizedValue = (value, locale) => value?.[locale] ?? value?.ko ?? ''
+const valueLeaf = (value, path, locale) => {
+  const selected = localizedValue(value, locale)
+  if (typeof selected === 'string') return { text: selected, sourceSpans: [{ path, start: 0, end: codePointLength(selected), unit: 'unicode-code-point', textStart: 0, textEnd: codePointLength(selected) }] }
+  let text = ''
+  const sourceSpans = []
+  selected.forEach((run, index) => {
+    const textStart = codePointLength(text)
+    text += run.text
+    const textEnd = codePointLength(text)
+    sourceSpans.push({ path: `${path}/${index}/text`, start: 0, end: codePointLength(run.text), unit: 'unicode-code-point', textStart, textEnd })
+  })
+  return { text, sourceSpans }
+}
+const selectableLeaves = (envelope, locale) => envelope.content.flatMap((block, blockIndex) => {
+  if (blockIndex === 0 && block.kind === 'heading' && block.depth === 1) return []
+  const base = `/content/${blockIndex}`
+  const leaf = (leafId, value, path) => ({ leafId, blockAnchor: block.anchor, blockKind: block.kind, ...valueLeaf(value, path, locale) })
+  if (block.kind === 'rule') return []
+  if (block.kind === 'list') return block.items.map((item, index) => leaf(`${block.anchor}:item:${index}`, item, `${base}/items/${index}/${locale}`))
+  if (block.kind === 'table') return [...block.columns.map((cell, column) => leaf(`${block.anchor}:cell:0:${column}`, cell, `${base}/columns/${column}/${locale}`)), ...block.rows.flatMap((row, rowIndex) => row.map((cell, column) => leaf(`${block.anchor}:cell:${rowIndex + 1}:${column}`, cell, `${base}/rows/${rowIndex}/${column}/${locale}`)))]
+  return [leaf(`${block.anchor}:text`, block.text, `${base}/text/${locale}`)]
+})
 
 const normalizeTitle = (markdown, fallback) =>
   markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
@@ -258,7 +285,7 @@ const writeDocument = async (root, document, routes) => {
     for (const child of node.children ?? []) removePositions(child)
   }
   for (const block of blocks) removePositions(block)
-  await writeFile(resolve(root, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
+  await writeFile(resolve(root, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks, feedback: pagesBySlug.get(document.slug)?.value ? { documentId: pagesBySlug.get(document.slug).value.id, sourceRevision: canonicalHash(pagesBySlug.get(document.slug).value), selectableLeaves: selectableLeaves(pagesBySlug.get(document.slug).value, document.locale) } : null })}
 `)
 }
 for (const document of documents) await writeDocument(worldJsonRoot, document, routeBySlug)

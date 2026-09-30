@@ -1,0 +1,51 @@
+[
+  {
+    "scenario": "article-formatted-selection",
+    "detail": {
+      "preview": ". 사건의 명칭",
+      "leaf": "대정전-p1-label:text"
+    }
+  },
+  {
+    "scenario": "draft-persisted",
+    "detail": {
+      "storage": [
+        "wiki-feedback-draft.v1:/world/World-Unbinding"
+      ]
+    }
+  },
+  {
+    "scenario": "draft-reloaded",
+    "detail": {
+      "preview": ". 사건의 명칭",
+      "body": "표현을 더 분명하게 다듬어 주세요."
+    }
+  },
+  {
+    "scenario": "backend-unavailable",
+    "detail": {
+      "status": "제보를 제출하지 못했습니다. 잠시 뒤 다시 시도해 주세요.",
+      "successVisible": 0
+    }
+  },
+  {
+    "scenario": "table-cell",
+    "detail": {
+      "preview": "공장 밀도",
+      "leaf": "2026년에-이미-있던-손-table2:cell:1:0"
+    }
+  },
+  {
+    "scenario": "person-section",
+    "detail": {
+      "preview": "2126년 세",
+      "leaf": "section:생애:text"
+    }
+  },
+  {
+    "scenario": "route-drafts-separated",
+    "detail": {
+      "articleDraftVisible": 0
+    }
+  }
+]

@@ -551,3 +551,19 @@ summary:focus-visible {
 .derived-row span:nth-child(2) { font-weight: bold; color: var(--wiki-accent); min-width: 2.5rem; text-align: center; }
 .derived-row span:last-child { color: var(--wiki-muted); flex: 1; }
 .attr-cp, .skill-cp { font-size: 0.68rem; color: var(--wiki-muted); font-weight: normal; }
+
+.feedback-composer { position: sticky; inset-block-end: 0; z-index: 20; display: grid; gap: .65rem; max-inline-size: 48rem; margin: 2rem auto 0; border: 1px solid var(--wiki-line); border-block-start: 3px solid var(--wiki-accent); background: color-mix(in srgb, var(--wiki-paper) 96%, transparent); padding: .9rem 1rem; box-shadow: 0 -.35rem 1rem rgb(31 42 55 / .08); }
+.feedback-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.feedback-composer button, .feedback-composer select, .feedback-composer textarea { border: 1px solid var(--wiki-line); border-radius: .2rem; background: var(--wiki-paper); color: var(--wiki-text); font: inherit; }
+.feedback-composer button { padding: .45rem .7rem; cursor: pointer; font-weight: 700; }
+.feedback-heading button, .feedback-actions button:last-child { border-color: var(--wiki-accent-dark); background: var(--wiki-accent-dark); color: white; }
+.feedback-composer form, .feedback-composer label { display: grid; gap: .35rem; }
+.feedback-composer form { gap: .75rem; }
+.feedback-composer select, .feedback-composer textarea { inline-size: 100%; padding: .5rem; }
+.feedback-composer textarea { min-block-size: 4.5rem; resize: vertical; }
+.feedback-help, .feedback-status { margin: 0; color: var(--wiki-muted); font-size: .85rem; }
+.feedback-preview { max-block-size: 8rem; margin: 0; overflow: auto; border-inline-start: 3px solid var(--wiki-accent); background: var(--wiki-toc); padding: .65rem .8rem; white-space: pre-wrap; }
+.feedback-actions { display: flex; justify-content: flex-end; gap: .5rem; }
+.feedback-error { color: var(--wiki-accent-dark); font-weight: 700; }
+.feedback-success { color: #246b3c; font-weight: 700; }
+@media (max-width: 44rem) { .feedback-composer { inset-inline: 0; margin-inline: -.5rem; } .feedback-heading { align-items: stretch; flex-direction: column; } }

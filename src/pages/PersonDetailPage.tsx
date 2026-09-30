@@ -1,8 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { peopleCatalog } from '../generated/peopleCatalog'
+import FeedbackComposer from '../components/FeedbackComposer'
+import { FeedbackSurface } from '../components/FeedbackSurface'
+import { personFeedbackDocument, type FeedbackDocument } from '../feedbackSelection'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type PersonDetail = (typeof peopleCatalog)[number] & {
@@ -256,6 +259,8 @@ export default function PersonDetailPage() {
   const summary: any = peopleCatalog.find((person) => person.id === personId)
   const [detail, setDetail] = useState<PersonDetail | null>(null)
   const [failed, setFailed] = useState(false)
+  const proseRef = useRef<HTMLDivElement>(null)
+  const [feedback, setFeedback] = useState<FeedbackDocument | null>(null)
 
   useEffect(() => {
     if (!summary) return
@@ -271,6 +276,13 @@ export default function PersonDetailPage() {
       .catch(() => { if (active) setFailed(true) })
     return () => { active = false }
   }, [summary])
+
+  useEffect(() => {
+    let active = true
+    setFeedback(null)
+    if (detail) void personFeedbackDocument(detail).then((value) => { if (active) setFeedback(value) })
+    return () => { active = false }
+  }, [detail])
 
   useEffect(() => {
     if (!summary) return
@@ -316,9 +328,11 @@ export default function PersonDetailPage() {
         </aside>
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
-          {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
-            <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
-          ))}
+          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} selector="section[data-feedback-section] > p">
+            {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
+              <section key={label} data-feedback-section={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
+            ))}
+          </FeedbackSurface> : null}
 
           <GurpsSection personId={personId || ''} />
           <ValuesDesireSection detail={detail} />
@@ -327,6 +341,7 @@ export default function PersonDetailPage() {
           <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>
         </div>
       </div>
+      {feedback && <FeedbackComposer rootRef={proseRef} documentInfo={feedback} locale="ko" />}
     </article>
   )
 }
