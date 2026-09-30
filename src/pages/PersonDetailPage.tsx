@@ -260,7 +260,7 @@ export default function PersonDetailPage() {
           <p>{detail.stateName || '무소속'} · {detail.title}</p>
           {detail.clan && (
             <p className="person-clan-line">
-              <img src={`${import.meta.env.BASE_URL}${detail.clan.crest}`} alt={`${detail.clan.name} 문장`} width="64" height="64" loading="lazy" />
+              <img src={`${import.meta.env.BASE_URL}${detail.clan.crest.startsWith('/') ? '' : '/'}${detail.clan.crest}`} alt={`${detail.clan.name} 문장`} width="64" height="64" loading="lazy" />
               <Link to={`/families/${detail.clan.id}`} className="wiki-link">{detail.clan.name}</Link>
             </p>
           )}
