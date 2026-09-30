@@ -305,6 +305,12 @@ summary:focus-visible {
 .person-canon-prose > h2 { margin-block-start: 0; }
 .person-canon-prose section { border-block-end: 1px solid var(--wiki-line); padding-block-end: 0.75rem; }
 .person-canon-prose details { margin-block-start: 1rem; border: 1px solid var(--wiki-line); padding: 0.75rem; }
+.person-art-connection { display: grid; gap: var(--sui-space-16); padding: var(--sui-space-16); border: 1px solid var(--wiki-line); background: var(--wiki-paper); }
+.person-art-connection label { display: grid; gap: var(--sui-space-8); }
+.person-art-connection input, .person-art-connection button { max-inline-size: 32rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: var(--sui-space-8); }
+.person-art-connection button { cursor: pointer; }
+.person-art-connection button:disabled { cursor: not-allowed; color: var(--wiki-muted); }
+.person-art-connection img { display: block; max-inline-size: 100%; block-size: auto; }
 .territory-map-section { max-inline-size: none; margin-block-end: 2rem; border-block-end: 2px solid var(--wiki-line); padding-block-end: 1.5rem; }
 .territory-toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: 0.75rem; margin-block: 1rem; }
 .territory-toolbar button { border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.5rem 0.75rem; cursor: pointer; font-weight: 700; }
