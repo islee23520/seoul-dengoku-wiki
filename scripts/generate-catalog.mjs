@@ -107,7 +107,7 @@ const stripProjectionHeader = (markdown) => {
     /^- 원본 앵커: `LORE\/World-Narrative-Atlas\.md`$/u.test(line) ||
     /^- 원본 해시: `[a-f0-9]+`$/u.test(line)
   ))
-  return cleaned.join('\n').replace(/^- 출처층:\s*original-fiction\s*\n/gmu, '')
+  return cleaned.join('\n').replace(/^- (?:출처층|Source layer):\s*original-fiction\s*\n/gmu, '')
 }
 
 const rewriteRelativeHref = (href, domain, routeBySlug) => {

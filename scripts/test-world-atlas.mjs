@@ -62,6 +62,30 @@ test('renderer returns the exact 34 canonical JSON destinations', () => {
   }
 })
 
+test('published house bodies omit private source classification in both locales', async () => {
+  // Given: the atlas's 32 houses and their derived projection still carry private provenance.
+  const houses = atlas.houses
+  const projection = projections['Operating-Houses.json']
+  assert.equal(houses.length, 32)
+  assert.ok(houses.every((house) => house.source_kind === 'original-fiction'))
+  assert.equal(projection.provenance.original_anchor, 'lore/World-Narrative-Atlas.json')
+  assert.equal(projection.provenance.original_hash, sha256Text(sourceText))
+  assert.equal(projection.content.filter((node) => node.kind === 'list' && node.items.some((item) => item.en === 'Source layer: original-fiction')).length, houses.length)
+
+  // When: the actual catalog consumer emits both localized public articles.
+  for (const folder of ['world', 'world-en']) {
+    const page = JSON.parse(await readFile(join(worktree, `src/generated/${folder}/Operating-Houses.json`), 'utf8'))
+    const reader = JSON.stringify(page.blocks)
+    // Then: no classification row appears, while each house and its three acts remain.
+    assert.ok(!reader.includes('original-fiction'), folder)
+    assert.ok(!page.reviewText.includes('Source layer:'), folder)
+    assert.ok(!page.reviewText.includes('출처층:'), folder)
+    assert.equal(page.blocks.filter((node) => node.type === 'heading' && node.depth === 2).length, houses.length, folder)
+    assert.equal(page.blocks.filter((node) => node.type === 'heading' && node.depth === 3).length, houses.length, folder)
+    for (const house of houses) assert.ok(page.reviewText.includes(house.id), `${folder}: ${house.id}`)
+  }
+})
+
 test('external theaters keep world facts but never render private source controls', () => {
   const changed = structuredClone(source)
   const theaters = changed.data.atlas.theaters
