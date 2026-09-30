@@ -22,6 +22,7 @@ export type MapTransport = {
 }
 
 export type TerrainStatus = { type: 'ready'; tile: string; sourceSha256: string; manifestSha256: string } |
+  { type: 'streamed'; tile: string; residentTiles: string[]; manifestSha256: string } |
   { type: 'error'; code: string; message: string }
 
 export function terrainStatus(message: unknown, tileHashes: ReadonlyMap<string, string>, manifestSha256: string): TerrainStatus | null {
@@ -30,12 +31,18 @@ export function terrainStatus(message: unknown, tileHashes: ReadonlyMap<string, 
   if (event.schema !== 'janseon-wiki-map.v1') return null
   if (event.type === 'error' && typeof event.code === 'string' && typeof event.message === 'string')
     return { type: 'error', code: event.code, message: event.message }
-  if (event.type !== 'ready' || event.projection !== 'EPSG:5179' ||
-      typeof event.selection !== 'object' || event.selection === null) return null
+  if (event.projection !== 'EPSG:5179' || typeof event.selection !== 'object' || event.selection === null ||
+      (event.type !== 'ready' && event.type !== 'tiles-changed')) return null
   const selection = event.selection as Record<string, unknown>
   if (selection.kind !== 'regional-terrain-tile' || typeof selection.id !== 'string' ||
       !selection.id.startsWith('regional:')) return null
   const tile = selection.id.slice('regional:'.length)
+  if (event.type === 'tiles-changed') {
+    if (event.manifestSha256 !== manifestSha256 || !Array.isArray(event.residentTiles) ||
+        event.residentTiles.some((key) => typeof key !== 'string' || tileHashes.get(key) == null)) return null
+    if (!event.residentTiles.includes(tile)) return null
+    return { type: 'streamed', tile, residentTiles: event.residentTiles as string[], manifestSha256 }
+  }
   if (tileHashes.get(tile) !== event.sourceSha256 || event.manifestSha256 !== manifestSha256) return null
   return { type: 'ready', tile, sourceSha256: event.sourceSha256 as string, manifestSha256 }
 }

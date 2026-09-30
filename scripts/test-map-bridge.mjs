@@ -132,3 +132,15 @@ test('Unity projected tile click resolves actual outside-unit ID only with pinne
   assert.equal(selectionAtUnityCoordinate({ ...click, sourceSha256: '0'.repeat(64) }, manifest, manifestSha, map, outside), null)
   assert.equal(selectionAtUnityCoordinate({ ...click, east: 900000 }, manifest, manifestSha, map, outside), null)
 })
+
+test('terrainStatus accepts a hash-bound tiles-changed streaming neighborhood', () => {
+  const event = { schema: 'janseon-wiki-map.v1', type: 'tiles-changed', projection: 'EPSG:5179', selection: { kind: 'regional-terrain-tile', id: 'regional:6-4' }, sourceSha256: 'b6-4', manifestSha256: 'm1', residentTiles: ['5-4', '6-4'] }
+  assert.deepEqual(terrainStatus(event, new Map([['5-4', 'a5-4'], ['6-4', 'b6-4']]), 'm1'), { type: 'streamed', tile: '6-4', residentTiles: ['5-4', '6-4'], manifestSha256: 'm1' })
+})
+
+test('terrainStatus rejects tiles-changed with forged residents or foreign manifest', () => {
+  const event = { schema: 'janseon-wiki-map.v1', type: 'tiles-changed', projection: 'EPSG:5179', selection: { kind: 'regional-terrain-tile', id: 'regional:6-4' }, sourceSha256: 'b6-4', manifestSha256: 'm1', residentTiles: ['5-4', '9-9'] }
+  assert.equal(terrainStatus(event, new Map([['5-4', 'a5-4'], ['6-4', 'b6-4']]), 'm1'), null)
+  const foreign = { ...event, manifestSha256: 'm2' }
+  assert.equal(terrainStatus(foreign, new Map([['5-4', 'a5-4'], ['6-4', 'b6-4']]), 'm1'), null)
+})
