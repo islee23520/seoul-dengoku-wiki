@@ -17,6 +17,7 @@
 
 - `World-Narrative-Atlas.json`의 `theaters[]`에서 `source_kind`, `verified`, `inference`, `original_fiction`, `japan_bridge_removable`은 비공개 출처·집필 분류다. 공개 투영에는 별도의 `reader_description`과 확인된 경로·주체·행위·세계 안의 미상·연표 링크를 남긴다. 현실 지리의 확인 범위와 창작 역사, 개별 전언의 신뢰도는 집필 단계에서 대조하되 이를 독자에게 집필 지시로 표시하지 않는다.
 - XT03의 원작 정사 연결표는 `japan_bridge_removable: true`로 분리되어 언제든 제거할 수 있다. 비공개 연결표를 치워도 부산·대마도 원정의 창작 역사와 흑석 통역 창구의 협정 주석, 회수품·배상 요구·증언은 남는다. 원천 `theaters[id=XT03].original_fiction` 및 `prose[3]`의 2026-09-30 수정 전 SHA-256은 작업 증거 `task-08`의 원천 diff에 기록한다. 이 제거 가능 지시를 공개 설명이나 인물의 세계 내 발언으로 옮기지 않는다.
+- XT03의 원정 관련 집단·인물 정식명, 일본 본토 정치, 원작 정사 연결표 내용은 집필 단계에서 미정이다(원천 `theaters[id=XT03].explicit_unknowns[1]`, Task 8 이전 SHA `90e936199a1188508036200ab149c6a4ccadf140065e26c4c27f467ec0df7cb7`). 이는 세계 안의 인물이 모른다는 사실이 아니다. 공개 본문에는 원정 주체와 현지 협력자의 확인된 참여 및 항구 승리의 범위만 남긴다.
 
 ## 무공 이름과 서술
 

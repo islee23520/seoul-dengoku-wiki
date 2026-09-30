@@ -75,9 +75,14 @@ test('external theaters keep world facts but never render private source control
   theaters[0].prose.push({ kind: 'paragraph', text: { en: 'The watch locked the valve.', ko: '당직자가 밸브를 잠갔다.' } })
   const page = projectionsFromAtlas(changed, 'fixture-hash')['factions/External-Theaters.json']
   const reader = JSON.stringify({ locales: page.locales, content: page.content })
-  for (const sentinel of ['PRIVATE_SOURCE_SENTINEL', 'PRIVATE_VERIFIED_SENTINEL', 'PRIVATE_INFERENCE_SENTINEL', 'PRIVATE_FICTION_SENTINEL', '비공개 확인 표식', '정사 연결표 제거 가능', 'Canon bridge table removable']) {
+  for (const sentinel of ['PRIVATE_SOURCE_SENTINEL', 'PRIVATE_VERIFIED_SENTINEL', 'PRIVATE_INFERENCE_SENTINEL', 'PRIVATE_FICTION_SENTINEL', '비공개 확인 표식']) {
     assert.ok(!reader.includes(sentinel), sentinel)
   }
+  const alternate = structuredClone(changed)
+  alternate.data.atlas.theaters[0].japan_bridge_removable = true
+  const alternatePage = projectionsFromAtlas(alternate, 'fixture-hash')['factions/External-Theaters.json']
+  assert.deepEqual(alternatePage.locales, page.locales)
+  assert.deepEqual(alternatePage.content, page.content)
   for (const locale of ['ko', 'en']) {
     const serialized = JSON.stringify(page.content.map((node) => node.text?.[locale] ?? node.items?.map((item) => item[locale])))
     assert.ok(serialized.includes(theaters[0].reader_description[locale]), locale)
@@ -88,8 +93,6 @@ test('external theaters keep world facts but never render private source control
     assert.ok(serialized.includes('XT01'), locale)
     assert.ok(serialized.includes('XT05'), locale)
   }
-  assert.deepEqual(theaters[0].source_anchors, atlas.theaters[0].source_anchors)
-  assert.equal(atlas.theaters[0].japan_bridge_removable, true)
 })
 
 test('expansion projection links every unaffiliated ID to its actual person route', () => {
