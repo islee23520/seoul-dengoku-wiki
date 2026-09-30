@@ -3,9 +3,9 @@
   "note": "Approved K001–K1010 are read from the frozen registry. Remaining P IDs are provisional local identities. Source tables are normalized at load time.",
   "provisionalPeople": [],
   "courtContract": {
-    "schema": "s01-direct-retainers.v1",
+    "schema": "opening-direct-retainers.v1",
     "effectiveYear": 2126,
-    "approvalRef": "owner-s01-court-decision.md (2026-09-30)",
+    "approvalRef": "owner-s01-court-decision.md; owner-s02-s03-court-decision.md (2026-09-30)",
     "courtIdContract": "court:<issued owner person ID>; immutable owner-linked identity, distinct from person/state/grant IDs",
     "sourcePath": "lore/characters/Cast-Relations.json",
     "sourceAnchor": "s2-직능거점-관계-table3"
@@ -13,7 +13,14 @@
   "courts": [
     { "id": "court:K002", "ownerPersonId": "K002", "stateId": "S01" },
     { "id": "court:K017", "ownerPersonId": "K017", "stateId": "S01" },
-    { "id": "court:K003", "ownerPersonId": "K003", "stateId": "S01" }
+    { "id": "court:K003", "ownerPersonId": "K003", "stateId": "S01" },
+    { "id": "court:K032", "ownerPersonId": "K032", "stateId": "S02" },
+    { "id": "court:K037", "ownerPersonId": "K037", "stateId": "S02" },
+    { "id": "court:K033", "ownerPersonId": "K033", "stateId": "S02" },
+    { "id": "court:K058", "ownerPersonId": "K058", "stateId": "S03" },
+    { "id": "court:K060", "ownerPersonId": "K060", "stateId": "S03" },
+    { "id": "court:K061", "ownerPersonId": "K061", "stateId": "S03" },
+    { "id": "court:K062", "ownerPersonId": "K062", "stateId": "S03" }
   ],
   "directRetainers": [
     { "personId": "K904", "liegePersonId": "K002", "courtId": "court:K002", "sourceRow": 380 },
@@ -52,7 +59,16 @@
     { "personId": "K632", "liegePersonId": "K003", "courtId": "court:K003", "sourceRow": 413 },
     { "personId": "K872", "liegePersonId": "K003", "courtId": "court:K003", "sourceRow": 414 },
     { "personId": "K584", "liegePersonId": "K003", "courtId": "court:K003", "sourceRow": 415 },
-    { "personId": "K680", "liegePersonId": "K003", "courtId": "court:K003", "sourceRow": 416 }
+    { "personId": "K680", "liegePersonId": "K003", "courtId": "court:K003", "sourceRow": 416 },
+    { "personId": "K041", "liegePersonId": "K032", "courtId": "court:K032", "sourceRow": 30 },
+    { "personId": "K047", "liegePersonId": "K037", "courtId": "court:K037", "sourceRow": 42 },
+    { "personId": "K049", "liegePersonId": "K033", "courtId": "court:K033", "sourceRow": 46 },
+    { "personId": "K068", "liegePersonId": "K058", "courtId": "court:K058", "sourceRow": 52 },
+    { "personId": "K069", "liegePersonId": "K060", "courtId": "court:K060", "sourceRow": 54 },
+    { "personId": "K071", "liegePersonId": "K060", "courtId": "court:K060", "sourceRow": 58 },
+    { "personId": "K073", "liegePersonId": "K061", "courtId": "court:K061", "sourceRow": 62 },
+    { "personId": "K074", "liegePersonId": "K062", "courtId": "court:K062", "sourceRow": 64 },
+    { "personId": "K075", "liegePersonId": "K061", "courtId": "court:K061", "sourceRow": 66 }
   ],
   "organizations": [
     {
