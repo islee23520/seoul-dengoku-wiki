@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
 
-import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, editorialMarkerFailures, findBannedTerms, htmlMetadata, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'
+import { EXPECTED_REFERENCE_EXCLUSIONS, apiDeclaredFields, apiVisibleFields, coinedPhraseFailures, editorialMarkerFailures, findBannedTerms, generatedArray, htmlMetadata, pageFailures, personVisibleFields, privateLinkFailures, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures, tableReviewRows, uiTooltipFields, visibleFieldFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
 const repoRoot = join(scriptDir, '..')
@@ -136,4 +136,79 @@ test('injected Ravelen references fail the public catalog exclusion rule', () =>
 
 test('the exclusion rule keeps unrelated word fragments', () => {
   assert.deepEqual(ravelenExclusionFailures('TravelEncounters ravelenish', 'fixture'), [])
+})
+
+test('structured article checks title and AST, not unrendered summary or private metadata', () => {
+  const doc = { title: '역사', summary: '창작 제안', sourceKind: '창작 제안', reviewText: '본문', blocks: [{ type: 'paragraph', children: [{ type: 'text', value: '본문' }] }] }
+  assert.deepEqual(pageFailures(doc, 'src/generated/world/Example.json', new Set()), [])
+  doc.title = '사용자 확정'
+  assert.match(pageFailures(doc, 'src/generated/world/Example.json', new Set())[0], /editorial-marker.*Example.json/u)
+  doc.title = '역사'; doc.blocks[0].children[0].value = '(미확인)'
+  assert.match(pageFailures(doc, 'src/generated/world/Example.json', new Set())[0], /editorial-marker.*Example.json/u)
+  doc.blocks[0].children[0].value = '밸브를 잠갔다. 이름이 알려지지 않았다.'
+  assert.deepEqual(pageFailures(doc, 'src/generated/world/Example.json', new Set()), [])
+})
+
+test('structured visible fields report precise path and private links without broad word bans', () => {
+  assert.deepEqual(visibleFieldFailures('잠긴 문', 'category/summary'), [])
+  assert.match(visibleFieldFailures('창작 제안', 'category/summary')[0], /category\/summary/u)
+  assert.deepEqual(privateLinkFailures('/world/Cast-Profile-Contract', 'article'), ['FAIL private-link: article -> /world/Cast-Profile-Contract'])
+  assert.throws(() => visibleFieldFailures(undefined, 'category/summary'), /E_VISIBLE_FIELD:category\/summary/u)
+  const doc = { title: '정상', reviewText: '본문', blocks: [{ type: 'paragraph', children: [{ type: 'text' }] }] }
+  assert.throws(() => pageFailures(doc, 'world/x', new Set()), /E_READER_AST:world\/x:.*value/u)
+  doc.blocks[0].children[0] = { type: 'unknownNode' }
+  assert.throws(() => pageFailures(doc, 'world/x', new Set()), /E_READER_AST:world\/x:.*type/u)
+})
+
+test('person displayed fields are selected, and locked/source metadata is excluded', () => {
+  const person = { name: '정상', title: '직함', sections: { 생애: '창작 제안', 기타: '창작 제안' }, fields: { 생업: '정상', 소속: '창작 제안' }, biography: '정상', locked: '창작 제안', sourceKind: '창작 제안', clan: { name: '정상' }, relations: { outgoing: [{ from: 'A', to: 'B', type: '관계', basis: '정상' }], incoming: [] } }
+  const fields = personVisibleFields(person, 'public/person-details/p.json')
+  assert.ok(fields.some(([path]) => path.endsWith('/sections/생애')))
+  assert.ok(!fields.some(([path]) => path.includes('/locked') || path.includes('/sourceKind') || path.includes('/fields/소속') || path.includes('/sections/기타')))
+  assert.match(fields.flatMap(([path, text]) => visibleFieldFailures(text, path))[0], /sections\/생애/u)
+  assert.ok(personVisibleFields({ ...person, sections: { 생애: '정상' } }, 'person').every(([path, text]) => visibleFieldFailures(text, path).length === 0))
+})
+
+test('API source boundary follows declared UI copy, not private evidence', () => {
+  const person = { name: '정상', unit: { note: '사용자 확정' }, provenance: { approval: '창작 제안' } }
+  assert.match(apiVisibleFields(person, 'gurps#/people/0').flatMap(([path, text]) => visibleFieldFailures(text, path))[0], /unit\/note/u)
+  assert.ok(!apiVisibleFields(person, 'gurps#/people/0').some(([path]) => path.includes('provenance')))
+  assert.ok(apiDeclaredFields(person, 'api/characters/person-0001').some(([path]) => path.includes('/unit/note')))
+  assert.ok(!apiDeclaredFields(person, 'api/characters/person-0001').some(([path]) => path.includes('/provenance/approval')))
+})
+
+test('table review emits AST cells with source hashes without scoring or dropping identities', () => {
+  const document = { blocks: [{ type: 'table', children: [
+    { type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text', value: 'ID' }] }, { type: 'tableCell', children: [{ type: 'text', value: '설명' }] }] },
+    { type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text', value: 'S01' }] }, { type: 'tableCell', children: [{ type: 'text', value: '그 유파 전수가 반으로 접힌다.' }] }] },
+  ] }] }
+  const rows = tableReviewRows(document, 'world/Martial-Paths.json')
+  assert.equal(rows.length, 4)
+  assert.deepEqual(rows.map((row) => row.kind), ['identity-or-numeric', 'identity-or-numeric', 'identity-or-numeric', 'prose-candidate'])
+  assert.match(rows[3].source, /blocks\/0\/rows\/1\/cells\/1/u)
+  assert.match(rows[3].sourceHash, /^[a-f0-9]{64}$/u)
+  assert.throws(() => tableReviewRows({ blocks: [{ type: 'table', children: [{ type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text' }] }] }] }] }, 'world/x'), /E_READER_AST/u)
+})
+
+test('generated UI catalog adapter reads only the declared array and fails stale or malformed input', () => {
+  const fixture = 'export const stateCatalog: readonly StateRecord[] = [{"name":"사용자 확정"}]\nexport const elsewhere = ["정상"]\n'
+  const states = generatedArray(fixture, 'stateCatalog', 'fixture/stateCatalog.ts')
+  assert.match(visibleFieldFailures(states[0].name, 'fixture/stateCatalog.ts#/states/0/name')[0], /states\/0\/name/u)
+  assert.throws(() => generatedArray(fixture, 'peopleCatalog', 'fixture'), /E_GENERATED_ARRAY/u)
+  assert.throws(() => generatedArray('export const stateCatalog = [undefined]', 'stateCatalog', 'fixture'), /SyntaxError/u)
+})
+
+test('category-purpose fields have local exceptions without hiding visible markers', () => {
+  const category = { label: '기술', summary: '기록 장부의 수량과 잠긴 문을 설명한다.', requiredKinds: ['창작 제안'] }
+  for (const key of ['label', 'summary']) assert.deepEqual(visibleFieldFailures(category[key], `registry/categories/0/${key}`), [])
+  assert.match(visibleFieldFailures('사용자 확정', 'registry/categories/0/summary')[0], /editorial-marker/u)
+  assert.equal(category.requiredKinds.includes('창작 제안'), true) // not a rendered field
+})
+
+test('actual consumer tooltip copy is a separate visible surface', () => {
+  const source = "const attrExplain = { ST: { icon: 'x', desc: '사용자 확정' } }; const skillExplain = { '권법': '창작 제안' }"
+  const fields = uiTooltipFields(source)
+  assert.equal(fields.length, 2)
+  assert.deepEqual(fields.map(([path, text]) => visibleFieldFailures(text, path).length), [1, 1])
+  assert.throws(() => uiTooltipFields('const unrelated = {}'), /E_UI_TOOLTIP_FIELDS/u)
 })
