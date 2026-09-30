@@ -926,6 +926,7 @@ for (const clan of clanTables.clans) {
     bongwan: clan.bongwan,
     hanja: clan.bongwan_hanja ?? null,
     branches,
+    showBranches: clan.show_branches !== false,
     crest: crest ? { source: crest.source, motif: crest.motif } : null,
     members,
   }
