@@ -18,7 +18,7 @@ import UpdatesPage from './pages/UpdatesPage'
 import { resolveLegacyRegionRoute, worldRegionMapRoute } from './wikiRouting'
 import { wikiCatalog, wikiEnglishCatalog } from './generated/wikiCatalog'
 
-const appRoutes = new Set(['/', '/states', '/updates', '/people', '/families', '/people/draft', '/tools/character-art', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route), ...wikiEnglishCatalog.map(({ route }) => route)])
+const appRoutes = new Set(['/', '/states', '/updates', '/people', '/families', '/people/draft', '/tools/character-art', '/people/art', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route), ...wikiEnglishCatalog.map(({ route }) => route)])
 
 function useNativeWikiLinks() {
   const navigate = useNavigate()
@@ -71,6 +71,7 @@ export default function App() {
         <Route path="/families/:clanId" element={<Suspense fallback={<div className="wiki-loading">가문 상세를 불러오고 있습니다.</div>}><FamilyDetailPage /></Suspense>} />
         <Route path="/people/relations" element={<Suspense fallback={<div className="wiki-loading">관계 그래프를 불러오고 있습니다.</div>}><RelationsGraphPage /></Suspense>} />
           <Route path="/people/draft" element={<Suspense fallback={<div className="wiki-loading">초안 편집기를 불러오고 있습니다.</div>}><CharacterDraftPage /></Suspense>} />
+        <Route path="/people/art" element={<Suspense fallback={<div className="wiki-loading">아트 도구를 불러오고 있습니다.</div>}><CharacterArtToolPage /></Suspense>} />
         <Route path="/people/:personId" element={<Suspense fallback={<div className="wiki-loading">인물 상세를 불러오고 있습니다.</div>}><PersonDetailPage /></Suspense>} />
         <Route path="/documents" element={<Suspense fallback={<div className="wiki-loading">문서 색인을 불러오고 있습니다.</div>}><DocumentsPage /></Suspense>} />
         <Route path="/categories" element={<Suspense fallback={<div className="wiki-loading">분류를 불러오고 있습니다.</div>}><CategoriesPage /></Suspense>} />
