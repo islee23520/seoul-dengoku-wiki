@@ -4,8 +4,9 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
+import { spawnSync } from 'node:child_process'
 
-import { EXPECTED_REFERENCE_EXCLUSIONS, coinedPhraseFailures, editorialMarkerFailures, findBannedTerms, htmlMetadata, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures } from './gate.mjs'
+import { EXPECTED_REFERENCE_EXCLUSIONS, apiDeclaredFields, apiVisibleFields, coinedPhraseFailures, editorialMarkerFailures, findBannedTerms, generatedArray, htmlMetadata, pageFailures, personVisibleFields, privateLinkFailures, ravelenExclusionFailures, referenceExclusionFailures, retiredFormFailures, tableReviewRows, uiTooltipFields, visibleFieldFailures } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
 const repoRoot = join(scriptDir, '..')
@@ -136,4 +137,303 @@ test('injected Ravelen references fail the public catalog exclusion rule', () =>
 
 test('the exclusion rule keeps unrelated word fragments', () => {
   assert.deepEqual(ravelenExclusionFailures('TravelEncounters ravelenish', 'fixture'), [])
+})
+
+test('structured article checks title and AST, not unrendered summary or private metadata', () => {
+  const doc = { title: '역사', summary: '창작 제안', sourceKind: '창작 제안', reviewText: '본문', blocks: [{ type: 'paragraph', children: [{ type: 'text', value: '본문' }] }] }
+  assert.deepEqual(pageFailures(doc, 'src/generated/world/Example.json', new Set()), [])
+  doc.title = '사용자 확정'
+  assert.match(pageFailures(doc, 'src/generated/world/Example.json', new Set())[0], /editorial-marker.*Example.json/u)
+  doc.title = '역사'; doc.blocks[0].children[0].value = '(미확인)'
+  assert.match(pageFailures(doc, 'src/generated/world/Example.json', new Set())[0], /editorial-marker.*Example.json/u)
+  doc.blocks[0].children[0].value = '밸브를 잠갔다. 이름이 알려지지 않았다.'
+  assert.deepEqual(pageFailures(doc, 'src/generated/world/Example.json', new Set()), [])
+})
+
+test('structured visible fields report precise path and private links without broad word bans', () => {
+  assert.deepEqual(visibleFieldFailures('잠긴 문', 'category/summary'), [])
+  assert.match(visibleFieldFailures('창작 제안', 'category/summary')[0], /category\/summary/u)
+  assert.deepEqual(privateLinkFailures('/world/Cast-Profile-Contract', 'article'), ['FAIL private-link: article -> /world/Cast-Profile-Contract'])
+  assert.throws(() => visibleFieldFailures(undefined, 'category/summary'), /E_VISIBLE_FIELD:category\/summary/u)
+  const doc = { title: '정상', reviewText: '본문', blocks: [{ type: 'paragraph', children: [{ type: 'text' }] }] }
+  assert.throws(() => pageFailures(doc, 'world/x', new Set()), /E_READER_AST:world\/x:.*value/u)
+  doc.blocks[0].children[0] = { type: 'unknownNode' }
+  assert.throws(() => pageFailures(doc, 'world/x', new Set()), /E_READER_AST:world\/x:.*unknownNode/u)
+})
+
+test('person displayed fields are selected, and locked/source metadata is excluded', () => {
+  const person = { name: '정상', title: '직함', sections: { 생애: '창작 제안', 기타: '창작 제안' }, fields: { 생업: '정상', 소속: '창작 제안' }, biography: '정상', locked: '창작 제안', sourceKind: '창작 제안', clan: { name: '정상' }, relations: { outgoing: [{ from: 'A', to: 'B', type: '관계', basis: '정상' }], incoming: [] } }
+  const fields = personVisibleFields(person, 'public/person-details/p.json')
+  assert.ok(fields.some(([path]) => path.endsWith('/sections/생애')))
+  assert.ok(!fields.some(([path]) => path.includes('/locked') || path.includes('/sourceKind') || path.includes('/fields/소속') || path.includes('/sections/기타')))
+  assert.match(fields.flatMap(([path, text]) => visibleFieldFailures(text, path))[0], /sections\/생애/u)
+  assert.ok(personVisibleFields({ ...person, sections: { 생애: '정상' } }, 'person').every(([path, text]) => visibleFieldFailures(text, path).length === 0))
+})
+
+test('API source boundary follows declared UI copy, not private evidence', () => {
+  const person = { name: '정상', unit: { type: '수행원', note: '사용자 확정' }, provenance: { approval: '창작 제안' } }
+  assert.match(apiVisibleFields(person, 'gurps#/people/0').flatMap(([path, text]) => visibleFieldFailures(text, path))[0], /unit\/note/u)
+  assert.ok(!apiVisibleFields(person, 'gurps#/people/0').some(([path]) => path.includes('provenance')))
+  assert.ok(apiDeclaredFields(person, 'api/characters/person-0001').some(([path]) => path.includes('/unit/note')))
+  assert.ok(!apiDeclaredFields(person, 'api/characters/person-0001').some(([path]) => path.includes('/provenance/approval')))
+  const masked = { skills: [{ name: '사용자 확정', ko: '검법' }] }
+  assert.deepEqual(apiVisibleFields(masked, 'api/characters/person-0001'), [['api/characters/person-0001#/skills/0/ko', '검법']])
+})
+
+test('table review emits AST cells with source hashes without scoring or dropping identities', () => {
+  const document = { blocks: [{ type: 'table', children: [
+    { type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text', value: 'ID' }] }, { type: 'tableCell', children: [{ type: 'text', value: '설명' }] }] },
+    { type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text', value: 'S01' }] }, { type: 'tableCell', children: [{ type: 'text', value: '그 유파 전수가 반으로 접힌다.' }] }] },
+  ] }] }
+  const rows = tableReviewRows(document, 'world/Martial-Paths.json')
+  assert.equal(rows.length, 4)
+  assert.deepEqual(rows.map((row) => row.kind), ['identity-or-numeric', 'identity-or-numeric', 'identity-or-numeric', 'prose-candidate'])
+  assert.match(rows[3].source, /blocks\/0\/rows\/1\/cells\/1/u)
+  assert.match(rows[3].sourceHash, /^[a-f0-9]{64}$/u)
+  assert.throws(() => tableReviewRows({ blocks: [{ type: 'table', children: [{ type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text' }] }] }] }] }, 'world/x'), /E_READER_AST/u)
+})
+
+test('generated UI catalog adapter reads only the declared array and fails stale or malformed input', () => {
+  const fixture = 'export const stateCatalog: readonly StateRecord[] = [{"name":"사용자 확정"}]\nexport const elsewhere = ["정상"]\n'
+  const states = generatedArray(fixture, 'stateCatalog', 'fixture/stateCatalog.ts')
+  assert.match(visibleFieldFailures(states[0].name, 'fixture/stateCatalog.ts#/states/0/name')[0], /states\/0\/name/u)
+  assert.throws(() => generatedArray(fixture, 'peopleCatalog', 'fixture'), /E_GENERATED_ARRAY/u)
+  assert.throws(() => generatedArray('export const stateCatalog = [undefined]', 'stateCatalog', 'fixture'), /SyntaxError/u)
+})
+
+test('category-purpose fields have local exceptions without hiding visible markers', () => {
+  const category = { label: '기술', summary: '기록 장부의 수량과 잠긴 문을 설명한다.', requiredKinds: ['창작 제안'] }
+  for (const key of ['label', 'summary']) assert.deepEqual(visibleFieldFailures(category[key], `registry/categories/0/${key}`), [])
+  assert.match(visibleFieldFailures('사용자 확정', 'registry/categories/0/summary')[0], /editorial-marker/u)
+  assert.deepEqual(['label', 'summary'].flatMap((key) => visibleFieldFailures(category[key], key)), [])
+  assert.deepEqual(visibleFieldFailures('문서 보관조는 원본을 열람하고 복제를 구분한다.', 'public/opening-territories.json#/regions/0/summary'), [])
+  assert.match(visibleFieldFailures('인물 복제', 'public/opening-territories.json#/regions/0/summary')[0], /banned-term/u)
+})
+
+test('tooltip registry follows actual render consumption in both directions', () => {
+  const declared = "const attrExplain = { ST: { icon: 'x', desc: '사용자 확정' } }; const skillExplain = { '권법': '창작 제안' }; const valueMeta = { '권위': { plus: '정상', minus: '정상' } }; const desireMeta = { '갈망': { plus: '정상', minus: '정상' } }"
+  // 선언만 있고 렌더 참조가 없으면 공개 표면이 아니다: 요구하지 않고 수집하지도 않는다.
+  assert.deepEqual(uiTooltipFields(declared), [])
+  assert.deepEqual(uiTooltipFields('const unrelated = {}'), [])
+  // 무관 객체의 속성 키와 멤버 이름은 값 참조가 아니다.
+  assert.deepEqual(uiTooltipFields("const privateDiagnostics = { skillExplain: 'private-only' }; const meta = {}; meta.skillExplain"), [])
+  // 실제로 소비되는 맵은 그대로 검사한다(표지 문구 플래그 포함).
+  const consumed = declared + "; attrExplain['ST']; skillExplain['권법']; valueMeta['권위']; desireMeta['갈망']"
+  const fields = uiTooltipFields(consumed)
+  assert.equal(fields.length, 6)
+  assert.deepEqual(fields.map(([path, text]) => visibleFieldFailures(text, path).length), [1, 1, 0, 0, 0, 0])
+  // 소비되는데 선언이 없으면 실패한다. 제거된 미사용 맵은 요구하지 않는다.
+  assert.throws(() => uiTooltipFields("const attrExplain = { ST: { icon: 'x', desc: '정상' } }; attrExplain['ST']; skillExplain['권법']"), /E_UI_TOOLTIP_FIELDS:skillExplain/u)
+  assert.throws(() => uiTooltipFields(consumed.replace("const desireMeta = { '갈망': { plus: '정상', minus: '정상' } }; ", '')), /E_UI_TOOLTIP_FIELDS:desireMeta/u)
+  // 미해결 값 참조는 다른 스코프의 같은 철자 선언으로 면제되지 않는다.
+  assert.throws(() => uiTooltipFields("const attrHints = { ST: { icon: 'x', desc: '정상' } }; attrExplain['ST']"), /E_UI_TOOLTIP_FIELDS:attrExplain/u)
+  assert.throws(() => uiTooltipFields("function neverRendered() { const skillExplain = { x: 'normal' }; return 0 }; skillExplain['x']"), /E_UI_TOOLTIP_FIELDS:skillExplain/u)
+  // 미사용 같은이름 지역 선언은 실제 소비 맵을 덮어쓰지 못한다: 표지는 여전히 잡힌다.
+  const shadowed = consumed + "; function neverRendered() { const attrExplain = { ST: { icon: 'y', desc: '정상' } }; return 0 }"
+  const shadowFields = uiTooltipFields(shadowed)
+  assert.equal(shadowFields.length, 6)
+  assert.equal(shadowFields.filter(([path, text]) => visibleFieldFailures(text, path).length > 0).length, 2)
+  // 그림자 선언 자체는 소비되지 않아 요구 대상이 아니다(빈 객체여도 통과).
+  assert.equal(uiTooltipFields(consumed + "; function neverRendered() { const skillExplain = {}; return 0 }").length, 6)
+})
+
+// Each case mutates only readFileSync bytes in a fresh process, then executes the real CLI.
+// No generated, canon, or shared-worktree file is changed by these regressions.
+function gateProbe(fixture) {
+  const script = `
+    import fs from 'node:fs';
+    import { syncBuiltinESMExports } from 'node:module';
+    import { pathToFileURL } from 'node:url';
+    import ts from 'typescript';
+    const root = process.cwd();
+    const fixture = JSON.parse(process.env.GATE_FIXTURE);
+    const target = root + '/' + fixture.file;
+    const read = fs.readFileSync;
+    fs.readFileSync = function(path, ...args) {
+      if (String(path) !== target) return read.call(this, path, ...args);
+      const original = read.call(this, path, ...args);
+      if (fixture.tsRename) {
+        const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+        let targetNode;
+        function visitRename(node) {
+          if (!targetNode && ts.isVariableDeclaration(node) && ts.isIdentifier(node.name) && node.name.getText(ast) === fixture.tsRename.from) targetNode = node.name;
+          ts.forEachChild(node, visitRename);
+        }
+        visitRename(ast);
+        if (!targetNode) throw new Error('E_TEST_FIXTURE_RENAME');
+        const renamedSource = original.slice(0, targetNode.getStart(ast)) + fixture.tsRename.to + original.slice(targetNode.getEnd());
+        return fixture.append ? renamedSource + fixture.append : renamedSource;
+      }
+      if (fixture.append && !fixture.tsProperty) return original + fixture.append;
+      if (fixture.tsProperty) {
+        const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+        let target;
+        function visit(node) {
+          if (fixture.tsProperty.map === 'categoryIndex' && ts.isPropertyAssignment(node) && node.name.getText(ast).replaceAll('"', '') === 'categories' && ts.isArrayLiteralExpression(node.initializer)) {
+            const entry = node.initializer.elements[fixture.tsProperty.entry];
+            target = entry.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast).replaceAll('"', '') === fixture.tsProperty.property)?.initializer;
+          }
+          if (fixture.tsProperty.map === 'attrExplain' && ts.isVariableDeclaration(node) && node.name.getText(ast) === 'attrExplain' && ts.isObjectLiteralExpression(node.initializer)) {
+            const entry = node.initializer.properties[fixture.tsProperty.entry];
+            target = entry.initializer.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast) === fixture.tsProperty.property)?.initializer;
+          }
+          ts.forEachChild(node, visit);
+        }
+        visit(ast);
+        if (!target || !ts.isStringLiteralLike(target)) throw new Error('E_TEST_FIXTURE_PROPERTY');
+        { const out = original.slice(0, target.getStart(ast)) + JSON.stringify(fixture.tsProperty.value) + original.slice(target.getEnd()); if (fixture.append) return out + fixture.append; return out; }
+      }
+      if (fixture.tsArrayField) {
+        const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
+        const declaration = ast.statements.filter(ts.isVariableStatement).flatMap(s => [...s.declarationList.declarations]).find(d => d.name.getText(ast) === fixture.tsArrayField.name);
+        let array = declaration?.initializer;
+        if (array && ts.isAsExpression(array)) array = array.expression;
+        if (!array || !ts.isArrayLiteralExpression(array)) throw new Error('E_TEST_FIXTURE_ARRAY');
+        const entry = array.elements[fixture.tsArrayField.entry];
+        const prop = entry.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast).replaceAll('"', '') === fixture.tsArrayField.field);
+        if (!prop) throw new Error('E_TEST_FIXTURE_ARRAY_FIELD');
+        return original.slice(0, prop.initializer.getStart(ast)) + JSON.stringify(fixture.tsArrayField.value) + original.slice(prop.initializer.getEnd());
+      }
+      const data = JSON.parse(original);
+      let parent = data;
+      for (const key of fixture.path.slice(0, -1)) parent = parent[key];
+      if (fixture.remove) delete parent[fixture.path.at(-1)];
+      else if (fixture.rename) { const value = parent[fixture.path.at(-1)]; delete parent[fixture.path.at(-1)]; parent[fixture.rename] = value; }
+      else parent[fixture.path.at(-1)] = fixture.value;
+      return JSON.stringify(data);
+    };
+    syncBuiltinESMExports();
+    process.argv[1] = root + '/scripts/gate.mjs';
+    await import(pathToFileURL(process.argv[1]));
+  `
+  const run = spawnSync(process.execPath, ['--input-type=module', '-e', script], {
+    cwd: repoRoot, encoding: 'utf8', timeout: 60000, env: { ...process.env, GATE_FIXTURE: JSON.stringify(fixture) },
+  })
+  if (run.error) throw run.error
+  return { status: run.status, output: `${run.stdout}\n${run.stderr}` }
+}
+
+test('production gate reports visible map, timeline, state, and person-label markers', () => {
+  for (const [fixture, fragment] of [
+    [{ file: 'public/opening-territories.json', path: ['regions', 0, 'summary'], value: '사용자 확정' }, '/regions/0/summary'],
+    [{ file: 'public/opening-territories.json', path: ['states', 0, 'vassals'], value: '사용자 확정' }, '/states/0/vassals'],
+    [{ file: 'public/timeline-overview.json', path: ['years', 0, 'summary'], value: '사용자 확정' }, '/years/0/summary'],
+    [{ file: 'public/person-details/person-1003.json', path: ['fields', '생업'], rename: '사용자 확정' }, '/fields/사용자 확정'],
+  ]) {
+    const result = gateProbe(fixture)
+    assert.equal(result.status, 1, `${fragment}: ${result.output}`)
+    assert.ok(result.output.includes(fragment), result.output)
+  }
+})
+
+test('production gate excludes unused tooltip and private person metadata but catches consumed double-quoted tooltip', () => {
+  const privatePerson = gateProbe({ file: 'public/person-details/person-1003.json', path: ['locked'], value: '사용자 확정' })
+  assert.equal(privatePerson.status, 0, privatePerson.output)
+  const unused = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', append: "\nconst privateMetadata = {'approval': '사용자 확정'}\n" })
+  assert.equal(unused.status, 0, unused.output)
+  const consumed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsProperty: { map: 'attrExplain', entry: 0, property: 'desc', value: '사용자 확정' } })
+  assert.equal(consumed.status, 1, consumed.output)
+  assert.match(consumed.output, /tooltips/u)
+  // 무관 객체의 skillExplain 속성 키는 소비가 아니다: 게이트는 통과해야 한다.
+  const propertyKey = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', append: "\nconst privateDiagnostics = { skillExplain: 'private-only' };\n" })
+  assert.equal(propertyKey.status, 0, propertyKey.output)
+  // 실제 소비 맵의 표지는 미사용 같은이름 지역 선언이 가리지 못한다: 여전히 실패해야 한다.
+  const shadow = gateProbe({
+    file: 'src/pages/PersonDetailPage.tsx',
+    tsProperty: { map: 'attrExplain', entry: 0, property: 'desc', value: '사용자 확정' },
+    append: '\nfunction neverRenderedProbe() {\n  const attrExplain = { ST: { icon: "x", desc: "normal" } };\n  return 0;\n}\n',
+  })
+  assert.equal(shadow.status, 1, shadow.output)
+  assert.match(shadow.output, /tooltips/u)
+  // 선언 이름만 바뀐 실제 참조(미해결)는 무관 같은이름 미사용 선언이 있어도 실패한다.
+  const renamed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsRename: { from: 'attrExplain', to: 'attrExplainUnused' } })
+  assert.equal(renamed.status, 1, renamed.output)
+  assert.match(renamed.output, /E_UI_TOOLTIP_FIELDS:attrExplain/u)
+  const renamedShadow = gateProbe({
+    file: 'src/pages/PersonDetailPage.tsx',
+    tsRename: { from: 'attrExplain', to: 'attrExplainUnused' },
+    append: '\nfunction neverRenderedProbe() {\n  const attrExplain = { ST: { icon: "x", desc: "normal" } };\n  return 0;\n}\n',
+  })
+  assert.equal(renamedShadow.status, 1, renamedShadow.output)
+  assert.match(renamedShadow.output, /E_UI_TOOLTIP_FIELDS:attrExplain/u)
+  const hiddenSkill = gateProbe({ file: 'lore/name-pools/gurps-cast.json', path: ['people', 0, 'skills', 0, 'name'], value: '사용자 확정' })
+  assert.equal(hiddenSkill.status, 0, hiddenSkill.output)
+})
+
+test('production gate rejects missing person identity, unsupported AST, and stale category consumer', () => {
+  for (const [fixture, fragment] of [
+    [{ file: 'public/person-details/person-1003.json', path: ['name'], remove: true }, '/name'],
+    [{ file: 'src/generated/peopleCatalog.ts', tsArrayField: { name: 'peopleCatalog', entry: 0, field: 'name', value: null } }, '/people/0'],
+    [{ file: 'src/generated/world/Martial-Paths.json', path: ['blocks', 0, 'type'], value: 'linkReference' }, 'linkReference'],
+    [{ file: 'src/generated/categoryIndex.ts', tsProperty: { map: 'categoryIndex', entry: 0, property: 'summary', value: '사용자 확정' } }, 'categoryIndex'],
+  ]) {
+    const result = gateProbe(fixture)
+    assert.equal(result.status, 1, `${fragment}: ${result.output}`)
+    assert.ok(result.output.includes(fragment) || (fragment === 'categoryIndex' && result.output.includes('E_CATEGORY_CONSUMER')), result.output)
+  }
+})
+
+test('English explanatory cell is a review candidate while numeric and identity remain distinct', () => {
+  const en = canon('lore/culture/Martial-Paths.json')
+  const text = en.content.find((node) => node.kind === 'table' && node.rows.some((row) => row.some((cell) => typeof cell.en === 'string' && cell.en.includes('Taekwondo'))))
+  assert.ok(text)
+  const cell = text.rows.flat().find((item) => typeof item.en === 'string' && item.en.includes('Taekwondo')).en
+  const rows = tableReviewRows({ blocks: [{ type: 'table', children: [{ type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text', value: 'ID' }] }, { type: 'tableCell', children: [{ type: 'text', value: '1' }] }, { type: 'tableCell', children: [{ type: 'text', value: cell }] }] }] }] }, 'world-en/Martial-Paths.json')
+  assert.deepEqual(rows.map((row) => row.kind), ['identity-or-numeric', 'identity-or-numeric', 'prose-candidate'])
+})
+
+test('article acceptance matches rendered inline text, literal brackets and image alt', () => {
+  const doc = { title: '역사', reviewText: '본문', blocks: [{ type: 'paragraph', children: [
+    { type: 'text', value: '사용자 ' }, { type: 'strong', children: [{ type: 'text', value: '확정' }] },
+  ] }] }
+  assert.match(pageFailures(doc, 'world/fixture.json', new Set()).join('\n'), /editorial-marker/u)
+  doc.blocks[0].children = [{ type: 'text', value: '<사용자 확정>' }]
+  assert.match(pageFailures(doc, 'world/fixture.json', new Set()).join('\n'), /editorial-marker/u)
+  doc.blocks[0].children = [{ type: 'image', url: '/image.png', alt: '사용자 확정' }]
+  assert.match(pageFailures(doc, 'world/fixture.json', new Set()).join('\n'), /editorial-marker/u)
+})
+
+test('production gate catches split and literal-angle visible article markers', () => {
+  const path = ['blocks', 0, 'children']
+  for (const value of [
+    [{ type: 'text', value: '사용자 ' }, { type: 'strong', children: [{ type: 'text', value: '확정' }] }],
+    [{ type: 'text', value: '<사용자 확정>' }],
+    [{ type: 'image', url: '/missing.png', alt: '사용자 확정' }],
+  ]) {
+    const result = gateProbe({ file: 'src/generated/world/Martial-Paths.json', path, value })
+    assert.equal(result.status, 1, result.output)
+    assert.match(result.output, /editorial-marker.*Martial-Paths.json/u)
+  }
+})
+
+test('production station gate checks shown polity names but ignores raw status codes', () => {
+  const visible = gateProbe({ file: 'public/opening-territories.json', path: ['stations', 0, 'control', 'polityNames'], value: ['사용자 확정'] })
+  assert.equal(visible.status, 1, visible.output)
+  assert.match(visible.output, /stations\/0\/control\/polityNames/u)
+  const status = gateProbe({ file: 'public/opening-territories.json', path: ['stations', 0, 'control', 'status'], value: '사용자 확정' })
+  assert.equal(status.status, 0, status.output)
+})
+
+test('production region copy exception checks each occurrence independently', () => {
+  const file = 'public/opening-territories.json'
+  const path = ['regions', 0, 'summary']
+  const allowed = gateProbe({ file, path, value: '문서를 복제했다.' })
+  assert.equal(allowed.status, 0, allowed.output)
+  const mixed = gateProbe({ file, path, value: '문서를 복제했다. 인물 복제도 했다.' })
+  assert.equal(mixed.status, 1, mixed.output)
+  assert.match(mixed.output, /regions\/0\/summary.*복제/u)
+})
+
+test('article acceptance rejects missing title and malformed renderer containers', () => {
+  const doc = { reviewText: '본문', blocks: [{ type: 'paragraph' }] }
+  assert.throws(() => pageFailures(doc, 'world/fixture.json', new Set()), /title|AST/u)
+  doc.title = '정상'
+  assert.throws(() => pageFailures(doc, 'world/fixture.json', new Set()), /E_READER_AST/u)
+  doc.blocks = [{ type: 'linkReference', children: [{ type: 'text', value: '정상' }] }]
+  assert.throws(() => pageFailures(doc, 'world/fixture.json', new Set()), /linkReference/u)
+})
+
+test('generated declaration parser rejects backup names and unrelated arrays', () => {
+  assert.throws(() => generatedArray('export const stateCatalogBackup = [{"name":"정상"}]', 'stateCatalog', 'fixture'), /E_GENERATED_ARRAY/u)
+  assert.throws(() => generatedArray('export const stateCatalog = null; export const wrongCatalog = [{"name":"정상"}]', 'stateCatalog', 'fixture'), /E_GENERATED_ARRAY/u)
 })
