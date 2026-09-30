@@ -5,7 +5,8 @@ import { fileURLToPath } from 'node:url'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
-import { approvedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
+import { approvedDocuments, publishedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
+import { personRouteFailures } from './person-publication-contract.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, 'lore'))
@@ -48,7 +49,15 @@ try {
 }
 
 const failures = []
-const approved = await approvedDocuments(loreRoot)
+const approved = publishedDocuments(await approvedDocuments(loreRoot))
+const peopleSource = await readFile(resolve(projectRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
+const people = JSON.parse(peopleSource.split('export const peopleCatalog = ')[1].split(' as const')[0])
+const detailRoot = resolve(projectRoot, 'public/person-details')
+const details = new Map()
+for (const name of (await readdir(detailRoot)).filter((name) => extname(name) === '.json')) {
+  details.set(basename(name, '.json'), JSON.parse(await readFile(resolve(detailRoot, name), 'utf8')))
+}
+failures.push(...personRouteFailures(people, details))
 const expectedRoutes = approved.map(({ route }) => route)
 const expectedEnglishRoutes = approved.filter(({ source }) => source.endsWith('.json')).map(({ route }) => `/en${route}`)
 const publishedRoutes = documents.map(({ domain, slug }) => `/${domain}/${slug === 'index' ? '' : slug}`).sort()

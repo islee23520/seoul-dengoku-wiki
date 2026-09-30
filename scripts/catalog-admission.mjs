@@ -21,6 +21,9 @@ const atlasProjectionPaths = [
 
 export const atlasDocumentPaths = Object.freeze(['World-Narrative-Atlas.json', ...atlasProjectionPaths])
 const atlasPathSet = new Set(atlasDocumentPaths)
+const retiredCastArticle = /^Cast-State-\d+$|^Core-Characters$|^Cast-Unaffiliated$|^Cast-Index-S4$|^Cast-Index$|^Cast-Relations$|^Cast-Corridors-Index$/u
+
+export const publishedDocuments = (documents) => documents.filter(({ route }) => !retiredCastArticle.test(route.split('/').at(-1)))
 
 const exists = async (path) => {
   try {
