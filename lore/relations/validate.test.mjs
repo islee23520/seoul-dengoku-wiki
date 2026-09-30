@@ -6,6 +6,41 @@ test("sourced canon relationships validate", () => {
   assert.deepEqual(validate(loadDataset()), []);
 });
 
+test("approved S01 direct retainers resolve to three owner courts and unchanged command sources", () => {
+  const dataset = loadDataset();
+  const { courts, directRetainers } = dataset.config;
+  assert.equal(courts.length, 3);
+  assert.deepEqual(courts.map((court) => court.ownerPersonId), ["K002", "K017", "K003"]);
+  assert.deepEqual(directRetainers.map((row) => row.personId), [
+    "K904", "K568", "K616", "K712", "K856", "K952", "K1001", "K424", "K520", "K760", "K808", "K664", "K472",
+    "K504", "K744", "K600", "K552", "K456", "K840", "K888", "K648", "K936", "K984", "K792", "K696",
+    "K968", "K440", "K728", "K488", "K920", "K536", "K824", "K776", "K632", "K872", "K584", "K680",
+  ]);
+  assert.ok(!directRetainers.some((row) => row.personId === "K272"));
+  assert.deepEqual(validate(dataset), []);
+});
+
+test("direct-liege validator rejects source, actor, court, nation and hierarchy corruption", () => {
+  const cases = [
+    ["source", (d) => { d.config.directRetainers[0].sourceRow = 414; }, /source command row mismatch/],
+    ["actor", (d) => { d.config.directRetainers[0].personId = "K272"; }, /source command row mismatch/],
+    ["orphan court", (d) => { d.config.directRetainers[0].courtId = "court:K017"; }, /orphan court/],
+    ["self", (d) => { d.config.directRetainers[0].liegePersonId = "K904"; }, /self direct liege/],
+    ["cycle", (d) => { d.config.directRetainers.push({ personId: "K002", liegePersonId: "K904", courtId: "court:K904", sourceRow: 380 }); }, /direct liege cycle/],
+    ["foreign nation", (d) => { d.config.courts[0].stateId = "S02"; }, /foreign nation owner/],
+    ["missing approval", (d) => { delete d.config.courtContract.approvalRef; }, /missing approved source metadata/],
+  ];
+  for (const [label, mutate, expected] of cases) {
+    const dataset = loadDataset();
+    mutate(dataset);
+    assert.match(validate(dataset).join("\n"), expected, label);
+  }
+  const social = loadDataset();
+  assert.ok(social.relations.some((row) => row.fromPersonId === "K1008" && row.toPersonId === "K1009"));
+  assert.ok(social.relations.some((row) => row.fromPersonId === "K1009" && row.toPersonId === "K1008"));
+  assert.deepEqual(validate(social), []);
+});
+
 test("a broken directed-person foreign key fails validation", () => {
   const dataset = loadDataset();
   dataset.relations[0] = { ...dataset.relations[0], toPersonId: "P999" };

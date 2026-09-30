@@ -17,6 +17,8 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   sections: Record<string, string>
   biography: string
   sources: string[]
+  directLiege?: { personId: string; name: string; courtId: string; effectiveYear: number }
+  court?: { id: string; members: Array<{ personId: string; name: string }> }
   relations: { outgoing: Relation[]; incoming: Relation[] }
 }
 
@@ -354,6 +356,8 @@ export default function PersonDetailPage() {
     ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속'].includes(label)),
   ]
   const relationRows = [
+    ...(detail.directLiege ? [[`직속 주군 · ${detail.directLiege.name}`, `2126년 · ${detail.directLiege.courtId} 소속 가신`]] : []),
+    ...(detail.court ? detail.court.members.map((member) => [`궁정 가신 · ${member.name}`, `2126년 · ${detail.court?.id}`]) : []),
     ...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as Array<string>),
     ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as Array<string>),
   ]
@@ -375,6 +379,7 @@ export default function PersonDetailPage() {
         </div>
         <span className="wiki-canon-badge">정본</span>
       </header>
+      <p><Link to={`/tools/character-art?person=${encodeURIComponent(detail.id)}`}>이 인물의 아트 작업 도구 열기</Link></p>
       <div className="person-detail-layout">
         <aside className="person-data-panel" aria-label="인물 구조화 데이터">
           <DataTable title="기본 정보" rows={basicRows} />
