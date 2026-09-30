@@ -37,6 +37,8 @@ export function terrainStatus(message: unknown, tileHashes: ReadonlyMap<string, 
   if (selection.kind !== 'regional-terrain-tile' || typeof selection.id !== 'string' ||
       !selection.id.startsWith('regional:')) return null
   const tile = selection.id.slice('regional:'.length)
+  const sourceHash = tileHashes.get(tile)
+  if (typeof sourceHash !== 'string' || typeof event.sourceSha256 !== 'string' || sourceHash !== event.sourceSha256) return null
   if (event.type === 'tiles-changed') {
     if (event.manifestSha256 !== manifestSha256 || !Array.isArray(event.residentTiles) ||
         event.residentTiles.some((key) => typeof key !== 'string' || tileHashes.get(key) == null)) return null

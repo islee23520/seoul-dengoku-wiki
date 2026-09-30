@@ -5,7 +5,7 @@ type Region = { id: string; path: string }
 type OutsideUnit = { id: string; path: string }
 
 const rings = (path: string) => [...path.matchAll(/M([^MZ]+)Z/gu)].map((match) =>
-  [...match[1].matchAll(/[ML](-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/gu)].map((point) => [Number(point[1]), Number(point[2])] as const))
+  [...('M' + match[1]).matchAll(/[ML](-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/gu)].map((point) => [Number(point[1]), Number(point[2])] as const))
 
 const inside = (x: number, y: number, ring: readonly (readonly [number, number])[]) => {
   let result = false

@@ -3,6 +3,23 @@ import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { createMapBridge, selectionAtUnityCoordinate, terrainStatus } from '../src/components/mapBridge.ts'
 import { stationAliases } from '../src/components/stationPresentation.ts'
+import { selectAtCoordinates } from '../src/components/mapCoordinateSelection.ts'
+
+test('coordinate polygon parsing preserves the initial M vertex', () => {
+  const map = { width: 10, height: 10, projection: { minEast: 0, maxEast: 10, minNorth: 0, maxNorth: 10 },
+    regions: [{ id: 'triangle', path: 'M0,0L10,0L0,10Z' }] }
+  assert.deepEqual(selectAtCoordinates(1, 9, map, []), { kind: 'region', id: 'triangle' })
+  assert.equal(selectAtCoordinates(9, 1, map, []), null)
+})
+
+test('terrain status rejects unknown tiles and missing or forged source hashes', () => {
+  const event = { schema: 'janseon-wiki-map.v1', type: 'ready', projection: 'EPSG:5179',
+    selection: { kind: 'regional-terrain-tile', id: 'regional:6-4' }, manifestSha256: 'm1', residentTiles: ['6-4'] }
+  const hashes = new Map([['6-4', 'correct']])
+  assert.equal(terrainStatus(event, hashes, 'm1'), null)
+  assert.equal(terrainStatus({ ...event, selection: { kind: 'regional-terrain-tile', id: 'regional:unknown' } }, hashes, 'm1'), null)
+  assert.equal(terrainStatus({ ...event, type: 'tiles-changed', sourceSha256: 'wrong' }, hashes, 'm1'), null)
+})
 
 test('all 334 game station IDs select exactly the 315 displayed station IDs', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
