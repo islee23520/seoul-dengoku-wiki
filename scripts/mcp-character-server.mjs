@@ -3,10 +3,10 @@
 // 사용법: node scripts/mcp-character-server.mjs
 // MCP 클라이언트가 이 서버에 연결해 캐릭터를 생성·조회·수정합니다.
 
-import { 
+import { createServer } from 'node:http'
 // ── Settlement NPC Generation ──
-import { readFileSync } from 'node:fs'
-import { join, dirname } from 'node:path'
+import { readFileSync, writeFileSync } from 'node:fs'
+import { join, resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -128,11 +128,6 @@ function generateNPC(rand, settlementId, settlementType, state) {
   }
 }
 
-createServer } from 'node:http'
-import { readFileSync, writeFileSync, existsSync } from 'node:fs'
-import { join, resolve, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
-
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const GURPS = join(ROOT, 'lore/name-pools/gurps-cast.json')
 const PORT = parseInt(process.env.MCP_PORT || '17200', 10)
@@ -143,7 +138,11 @@ function loadGurps() {
 
 function findCharacter(id) {
   const data = loadGurps()
-  return data.people?.find(c => c.id === id || c.personId === id) || null
+  return data.people?.find(c => matchesCharacter(c, id)) || null
+}
+
+function matchesCharacter(character, id) {
+  return character.id === id || character.personId === id || character.url === '/people/' + id
 }
 
 function validateSheet(sheet) {
@@ -156,6 +155,16 @@ function validateSheet(sheet) {
   if (typeof sheet.cp !== 'number' || sheet.cp < 25 || sheet.cp > 1000) errors.push('CP 25-1000 범위')
   return errors
 }
+
+const server = createServer((req, res) => {
+  res.setHeader('Content-Type', 'application/json')
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PATCH,OPTIONS')
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
+  if (req.method === 'OPTIONS') { res.writeHead(204).end(); return }
+
+  const url = new URL(req.url, `http://localhost:${PORT}`)
+  const parts = url.pathname.split('/').filter(Boolean)
 
   // Settlement NPC generation
   if (req.method === 'POST' && parts[0] === 'api' && parts[1] === 'settlements' && parts[3] === 'generate-npcs') {
@@ -204,22 +213,11 @@ function validateSheet(sheet) {
     return
   }
 
-
-const server = createServer((req, res) => {
-  res.setHeader('Content-Type', 'application/json')
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PATCH,OPTIONS')
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
-  if (req.method === 'OPTIONS') { res.writeHead(204).end(); return }
-
-  const url = new URL(req.url, `http://localhost:${PORT}`)
-  const parts = url.pathname.split('/').filter(Boolean)
-
   // GET /api/characters — 전체 목록 (요약)
   if (req.method === 'GET' && parts[0] === 'api' && parts[1] === 'characters' && parts.length === 2) {
     const data = loadGurps()
     const list = (data.people || []).map(c => ({
-      id: c.id, personId: c.personId, name: c.name,
+      id: c.id, personId: c.personId || c.url?.split('/').pop(), name: c.name,
       state: c.state, cp: c.cp, tier: c.tier,
       ST: c.attributes?.ST, DX: c.attributes?.DX, IQ: c.attributes?.IQ, HT: c.attributes?.HT
     }))
@@ -282,7 +280,7 @@ const server = createServer((req, res) => {
       try {
         const updates = JSON.parse(body)
         const data = loadGurps()
-        const idx = (data.people || []).findIndex(c => c.id === parts[2] || c.personId === parts[2])
+        const idx = (data.people || []).findIndex(c => matchesCharacter(c, parts[2]))
         if (idx === -1) { res.writeHead(404).end(JSON.stringify({ error: '인물 없음' })); return }
         const merged = { ...data.people[idx], ...updates }
         const errors = validateSheet(merged)
@@ -320,6 +318,7 @@ const server = createServer((req, res) => {
 })
 
 server.listen(PORT, '127.0.0.1', () => {
-  console.log(`겁스 캐릭터 MCP 서버: http://127.0.0.1:${PORT}`)
-  console.log(`도구 목록: http://127.0.0.1:${PORT}/mcp/tools`)
+  const port = server.address().port
+  console.log(`겁스 캐릭터 MCP 서버: http://127.0.0.1:${port}`)
+  console.log(`도구 목록: http://127.0.0.1:${port}/mcp/tools`)
 })
