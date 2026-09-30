@@ -40,9 +40,9 @@
     "test:gurps": "vitest run scripts/test-gurps-cast.mjs",
     "test:crests": "vitest run scripts/test-clan-crests.mjs",
     "test:families": "vitest run scripts/test-family-catalog.mjs",
-    "test:crests": "vitest run scripts/test-clan-crests.mjs",
-    "test:families": "vitest run scripts/test-family-catalog.mjs",
-    "db:load": "node scripts/mongo-load.mjs"
+    "db:load": "node scripts/mongo-load.mjs",
+    "test:feedback-catalog": "npm run generate && vitest run scripts/test-feedback-source-catalog.mjs",
+    "report:feedback-catalog": "node scripts/feedback-source-catalog-report.mjs"
   },
   "dependencies": {
     "@seoul-dengoku/publication-manifest": "file:./vendor/seoul-dengoku-publication-manifest-0.1.0.tgz",

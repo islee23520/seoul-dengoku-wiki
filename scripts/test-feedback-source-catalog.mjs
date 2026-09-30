@@ -1,0 +1,104 @@
+import assert from 'node:assert/strict'
+import { mkdtemp, readFile, rm } from 'node:fs/promises'
+import { spawn } from 'node:child_process'
+import { tmpdir } from 'node:os'
+import { join, resolve } from 'node:path'
+import { test } from 'vitest'
+import { createElement } from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
+import { DocumentContent } from '@seoul-dengoku/document-renderer'
+import { articleFeedbackRecord, personFeedbackRecord } from './feedback-source-catalog.mjs'
+
+const fixture = {
+  id: 'DOC:fixture', domain: 'world', locales: { ko: { title: '표본', summary: '', tense: 'present' }, en: { title: 'Fixture', summary: '', tense: 'present' } },
+  content: [
+    { kind: 'heading', anchor: 'root', depth: 1, text: { ko: '표본', en: 'Fixture' } },
+    { kind: 'paragraph', anchor: 'inline', text: { ko: [{ text: '생애.', strong: true }, { text: ' A😀 ' }, { text: '링크', href: '/x' }], en: [{ text: 'Life.', strong: true }, { text: ' A😀 ' }, { text: 'link', href: '/x' }] } },
+    { kind: 'paragraph', anchor: 'scalar', text: { ko: '`코드`와 [표시](x)', en: '`code` and [label](x)' } },
+    { kind: 'list', anchor: 'list', items: [{ ko: '중복', en: 'duplicate' }, { ko: '중복', en: 'duplicate' }] },
+    { kind: 'table', anchor: 'table', columns: [{ ko: '열', en: 'column' }], rows: [[{ ko: [{ text: '강조', strong: true }, { text: ' 셀' }], en: 'cell' }]] },
+  ],
+}
+
+test('canonical article records preserve renderer-visible inline, code, table, list and duplicate identities', () => {
+  const record = articleFeedbackRecord({ envelope: fixture, route: '/world/fixture', locale: 'ko' })
+  assert.equal(record.documentId, 'DOC:fixture')
+  assert.match(record.sourceRevision, /^[a-f0-9]{64}$/u)
+  assert.equal(record.leaves.find((leaf) => leaf.leafId === 'inline:text').text, '생애. A😀 링크')
+  const scalar = record.leaves.find((leaf) => leaf.leafId === 'scalar:text')
+  assert.equal(scalar.text, '코드와 표시')
+  assert.ok(scalar.sourceSpans.length >= 2)
+  assert.deepEqual(record.leaves.filter((leaf) => leaf.blockAnchor === 'list').map((leaf) => leaf.leafId), ['list:item:0', 'list:item:1'])
+  assert.equal(record.leaves.find((leaf) => leaf.leafId === 'table:cell:1:0').text, '강조 셀')
+  const english = articleFeedbackRecord({ envelope: fixture, route: '/en/world/fixture', locale: 'en' }); assert.equal(english.leaves.find((leaf) => leaf.leafId === 'inline:text').text, 'Life. A😀 link')
+  assert.deepEqual(record.leaves.map((leaf) => leaf.text).filter((text) => text === '중복'), ['중복', '중복'])
+})
+
+test('person authority uses the canonical source envelope and stable heading segment', () => {
+  const envelope = structuredClone(fixture)
+  envelope.id = 'DOC:people'
+  envelope.content = [
+    { kind: 'heading', anchor: 'person-a', depth: 3, text: { ko: '인물 가', en: 'Person A' } },
+    { kind: 'paragraph', anchor: 'person-a-p1', text: { ko: [{ text: '생애.', strong: true }, { text: ' 같은 문장.\n' }, { text: '관직.', strong: true }, { text: ' 기록관.' }], en: [{ text: 'Life.', strong: true }, { text: ' Same.' }] } },
+    { kind: 'list', anchor: 'person-a-list', items: [{ ko: '중복', en: 'duplicate' }, { ko: '중복', en: 'duplicate' }] },
+    { kind: 'heading', anchor: 'person-b', depth: 3, text: { ko: '인물 나', en: 'Person B' } },
+  ]
+  const person = personFeedbackRecord({ envelope, personId: 'person-0001', route: '/people/person-0001', headingAnchor: 'person-a', locale: 'ko' })
+  assert.equal(person.documentId, 'PERSON:person-0001')
+  assert.equal(person.sourceRevision, articleFeedbackRecord({ envelope, route: '/world/people', locale: 'ko' }).sourceRevision)
+  assert.ok(person.leaves.some((leaf) => leaf.blockAnchor === 'section:생애' && leaf.text === '같은 문장.'))
+  assert.ok(person.leaves.some((leaf) => leaf.blockKind === 'person-biography-list-item'))
+  assert.equal(person.leaves.filter((leaf) => leaf.text === '중복').length, 2)
+})
+
+
+
+test('actual generated article and person leaves match renderer HTML surfaces and exclude API-derived sheets', async () => {
+  const catalog=JSON.parse(await readFile(resolve('src/generated-private/feedback-selectable-views.ko.json'),'utf8'))
+  const article=catalog.documents['DOC:World-Unbinding'];const articleRevision=article.revisions[article.currentRevision]
+  const articleHtml=renderToStaticMarkup(createElement(DocumentContent,{content:fixture.content,locale:'ko'}))
+  assert.ok(article.selector.includes('th')&&article.selector.includes('td'))
+  assert.ok(articleRevision.leaves.some((leaf)=>leaf.blockKind==='table'&&leaf.leafId.includes(':cell:')))
+  const person=catalog.documents['PERSON:person-0001'];const personRevision=person.revisions[person.currentRevision]
+  assert.ok(person.selector.includes('section[data-feedback-section]')&&person.selector.includes('details[data-feedback-biography]'))
+  assert.ok(personRevision.leaves.some((leaf)=>leaf.blockKind==='person-section-paragraph'))
+  assert.ok(Object.values(catalog.documents).filter((value)=>value.documentId.startsWith('PERSON:')).some((value)=>value.revisions[value.currentRevision].leaves.some((leaf)=>leaf.blockKind==='person-biography-list-item')))
+  assert.ok(personRevision.leaves.every((leaf)=>!leaf.leafId.includes('gurps')&&!leaf.leafId.includes('sheet')&&!leaf.leafId.includes('values')))
+  const rendered=articleHtml.replace(/<[^>]+>/gu,'').replaceAll('&amp;','&').replaceAll('&lt;','<').replaceAll('&gt;','>');for(const leaf of articleFeedbackRecord({envelope:fixture,route:'/world/fixture',locale:'ko'}).leaves.filter((value)=>value.leafId!=='scalar:text'))assert.ok(rendered.includes(leaf.text),leaf.leafId)
+})
+
+const waitLine = (stream, prefix) => new Promise((resolve, reject) => {
+  let text = ''
+  const onData = (chunk) => { text += chunk; const line = text.split('\n').find((candidate) => candidate.startsWith(prefix)); if (line) { cleanup(); resolve(line) } }
+  const onEnd = () => { cleanup(); reject(new Error(`missing ${prefix}: ${text}`)) }
+  const cleanup = () => { stream.off('data', onData); stream.off('end', onEnd) }
+  stream.on('data', onData); stream.on('end', onEnd)
+})
+
+test('actual generated private catalog validates through the confirmed U3 HTTP process', async (t) => {
+  const catalogPath = resolve('src/generated-private/feedback-selectable-views.ko.json')
+  const englishCatalog = JSON.parse(await readFile(resolve('src/generated-private/feedback-selectable-views.en.json'), 'utf8')); assert.ok(Object.values(englishCatalog.documents).every((value) => value.locale === 'en' && value.route.startsWith('/en/')))
+  const catalog = JSON.parse(await readFile(catalogPath, 'utf8'))
+  const document = Object.values(catalog.documents).find((value) => value.locale === 'ko' && Object.values(value.revisions)[0].leaves.some((leaf) => leaf.sourceSpans.length > 1))
+  assert.ok(document)
+  const [revision, revisionValue] = Object.entries(document.revisions)[0]
+  const leaf = revisionValue.leaves.find((candidate) => candidate.sourceSpans.length > 1)
+  const end = Math.min(3, Array.from(leaf.text).length)
+  const selectionSpans = leaf.sourceSpans.flatMap((span) => { const start = Math.max(0, span.textStart), stop = Math.min(end, span.textEnd); return start >= stop ? [] : [{ path: span.path, start: span.start + start - span.textStart, end: span.start + stop - span.textStart, unit: 'unicode-code-point' }] })
+  const anchor = { schemaVersion: 'feedback-anchor.v1', documentId: document.documentId, route: document.route, locale: document.locale, sourceRevision: revision, selections: [{ blockAnchor: leaf.blockAnchor, blockKind: leaf.blockKind, leafId: leaf.leafId, exactQuote: Array.from(leaf.text).slice(0, end).join(''), prefix: '', suffix: Array.from(leaf.text).slice(end, end + 32).join(''), range: { start: 0, end, unit: 'unicode-code-point' }, sourceSpans: selectionSpans }] }
+  const root = await mkdtemp(join(tmpdir(), 'feedback-catalog-http-'))
+  t.onTestFinished(() => rm(root, { recursive: true, force: true }))
+  const service = process.env.FEEDBACK_SERVICE_ROOT ?? '/Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-service-u3/TOOL/feedback-service'
+  const child = spawn(process.execPath, [resolve(service, 'src/server.mjs')], { env: { ...process.env, NODE_ENV: 'test', FEEDBACK_AUTH_PROVIDER: 'test', FEEDBACK_DB_PATH: join(root, 'feedback.sqlite'), FEEDBACK_REDACTION_JOURNAL_PATH: join(root, 'authority/redactions.jsonl'), FEEDBACK_SELECTABLE_VIEW_PATH: catalogPath, FEEDBACK_SESSION_SECRET: 'c'.repeat(48), FEEDBACK_REVIEWER_IDS: '900', FEEDBACK_PORT: '0' }, stdio: ['ignore', 'pipe', 'pipe'] })
+  t.onTestFinished(() => { if (child.exitCode === null) child.kill('SIGTERM') })
+  const ready = await waitLine(child.stdout, 'FEEDBACK_READY ')
+  const base = ready.slice('FEEDBACK_READY '.length).replace('/api/feedback/health', '')
+  const authResponse = await fetch(`${base}/api/feedback/auth/test-session`, { method: 'POST', headers: { 'x-test-github-id': '100', 'x-test-login': 'catalog-test' } })
+  const authBody = await authResponse.json(); const cookie = authResponse.headers.get('set-cookie').split(';')[0]
+  const submit = async (value, key) => fetch(`${base}/api/feedback/submissions`, { method: 'POST', headers: { cookie, 'x-csrf-token': authBody.csrfToken, 'idempotency-key': key, 'content-type': 'application/json' }, body: JSON.stringify({ anchor: value, body: 'catalog integration', reason: '기타' }) })
+  assert.equal((await submit(anchor, 'catalog-valid')).status, 201)
+  const wrong = structuredClone(anchor); wrong.selections[0].sourceSpans[0].end += 1
+  assert.equal((await submit(wrong, 'catalog-wrong')).status, 422)
+  const stale = structuredClone(anchor); stale.sourceRevision = 'f'.repeat(64)
+  const staleResponse = await submit(stale, 'catalog-stale'); assert.equal(staleResponse.status, 422); assert.equal((await staleResponse.json()).error.code, 'source-changed')
+})
