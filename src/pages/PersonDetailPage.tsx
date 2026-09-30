@@ -49,37 +49,24 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
   }, [personId])
 
   if (!gurps) return null
+  return <GurpsSheet gurps={gurps} />
+}
 
+export function GurpsSheet({ gurps }: { gurps: any }): JSX.Element {
   const attrs = gurps.attributes || {}
   const attrExplain: Record<string, { icon: string; desc: string }> = {
-    ST: { icon: '💪', desc: '힘 — 피해량·무게·HP 결정' },
-    DX: { icon: '🏃', desc: '민첩 — 명중률·회피·전투 기술 기반' },
-    IQ: { icon: '🧠', desc: '지능 — 지각·의지·전략 기반' },
-    HT: { icon: '❤️', desc: '건강 — 피로·생존·회복' },
-  }
-  const skillExplain: Record<string, string> = {
-    '총검술': '총검 찌르기 명중률. 부대 전투력 직결',
-    '검법': '도검 베기·찌르기 명중률',
-    '창술': '장창 찌르기. 리치 우선권',
-    '궁술': '활 명중률. 원거리 지원',
-    '암기술': '투척 무기 명중률. 암습 보정',
-    '경공': '이동력 증가. 회피 보정',
-    '보법': '균형 유지. 넉다운 저항',
-    '권법': '맨손 타격 기술',
-    '지휘': '부대 사기·통제력. 도주 판정 보정',
-    '전략': '부대 전체 행동 보정',
-    '전술': '소부대 교전 보정',
-    '외교': '협상 성공률',
-    '정치': '권력 획득·유지',
-    '처세': '사회적 상황 대응',
+    ST: { icon: '💪', desc: '힘 · 기본 HP와 운반력의 기준' },
+    DX: { icon: '🏃', desc: '민첩 · 기본 Speed의 기준' },
+    IQ: { icon: '🧠', desc: '지능 · 기본 Will과 Per의 기준' },
+    HT: { icon: '❤️', desc: '건강 · 기본 FP와 Speed의 기준' },
   }
 
   const cp = gurps.cp || {}
-  const attrSum = Object.values(attrs).reduce((s: number, a: any) => s + (a?.cp || 0), 0)
   const skills = gurps.skills || []
-  const unit = gurps.unit || {}
-  const territory = gurps.territory
-  const wandering = gurps.wandering_force
+  const advantages = (gurps.traits || []).filter((trait: any) => trait.kind === 'advantage')
+  const disadvantages = (gurps.traits || []).filter((trait: any) => trait.kind === 'disadvantage')
+  const secondary = gurps.secondary || {}
+  const band = typeof gurps.band === 'string' && gurps.band ? gurps.band : null
 
   return (
     <section className="gurps-sheet">
@@ -87,36 +74,35 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
       <div className="gurps-cp-total">
         <span className="cp-number">{cp.total ?? '—'}</span>
         <span className="cp-label">CP</span>
-        <span className="cp-note">{(cp.total || 0) >= 200 ? '주요 인물 (200~300)' : (cp.total || 0) >= 125 ? '훈련 (125~200)' : '일반 (75~125)'}</span>
+        {band && <span className="cp-note">{band}</span>}
       </div>
       <div className="gurps-cp-breakdown">
         <h4>CP 계산 내역</h4>
-        <div className="cp-row"><span>능력치</span><span>{cp.attributes ?? attrSum} CP</span></div>
-        <div className="cp-row"><span>장점</span><span>+{cp.advantages ?? 0} CP</span></div>
-        <div className="cp-row"><span>단점</span><span>{cp.disadvantages ?? 0} CP</span></div>
-        <div className="cp-row"><span>기술</span><span>+{cp.skills ?? 0} CP</span></div>
+        <div className="cp-row"><span>능력치</span><span>{cp.attributes ?? '—'} CP</span></div>
+        <div className="cp-row"><span>장점</span><span>{cp.advantages ?? '—'} CP</span></div>
+        <div className="cp-row"><span>단점</span><span>{cp.disadvantages ?? '—'} CP</span></div>
+        <div className="cp-row"><span>기술</span><span>{cp.skills ?? '—'} CP</span></div>
+        <div className="cp-row"><span>미사용</span><span>{cp.unspent ?? '—'} CP</span></div>
         <div className="cp-row cp-sum"><span>합계</span><span>{cp.total ?? '—'} CP</span></div>
       </div>
-      {gurps.advantages && gurps.advantages.length > 0 && (
+      {advantages.length > 0 && (
         <div className="gurps-advantages">
-          <h3>장점 (CP 포함)</h3>
-          {(gurps.advantages || []).map((adv: any, i: number) => (
-            <div key={i} className="adv-row" title={adv.effect || ''}>
+          <h3>장점</h3>
+          {advantages.map((adv: any, i: number) => (
+            <div key={i} className="adv-row">
               <span className="adv-name">{adv.name}</span>
-              <span className="adv-cp">{adv.cp > 0 ? '+' + adv.cp : adv.cp} CP</span>
-              {adv.effect && <span className="adv-effect">{adv.effect}</span>}
+              <span className="adv-cp">{adv.cp} CP</span>
             </div>
           ))}
         </div>
       )}
-      {gurps.disadvantages && gurps.disadvantages.length > 0 && (
+      {disadvantages.length > 0 && (
         <div className="gurps-disadvantages">
-          <h3>단점 (CP 환급)</h3>
-          {(gurps.disadvantages || []).map((d: any, i: number) => (
-            <div key={i} className="adv-row" title={d.effect || ''}>
+          <h3>단점</h3>
+          {disadvantages.map((d: any, i: number) => (
+            <div key={i} className="adv-row">
               <span className="adv-name">{d.name}</span>
               <span className="adv-cp">{d.cp} CP</span>
-              {d.effect && <span className="adv-effect">{d.effect}</span>}
             </div>
           ))}
         </div>
@@ -130,52 +116,30 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
             <div key={key} className="gurps-attr" title={ex.desc}>
               <span className="attr-icon">{ex.icon}</span>
               <span className="attr-key">{key}</span>
-              <span className="attr-value">{a.value ?? a}{a?.cp != null ? <small className="attr-cp"> ({a.cp} CP)</small> : null}</span>
+              <span className="attr-value">{a.value ?? '—'}{a?.cp != null ? <small className="attr-cp"> ({a.cp} CP)</small> : null}</span>
               <span className="attr-desc">{ex.desc}</span>
             </div>
           )
         })}
       </div>
       <div className="gurps-derived">
-        <h3>파생 수치 (능력치에서 자동 계산, 추가 CP 불필요)</h3>
-        <div className="derived-row"><span>HP 체력</span><span>{attrs?.ST?.value ?? '—'}</span><span>= ST — 0 이하 기절, −5×ST 사망</span></div>
-        <div className="derived-row"><span>FP 피로</span><span>{attrs?.HT?.value ?? '—'}</span><span>= HT — 장기전 유지, 0 이하 행동 불가</span></div>
-        <div className="derived-row"><span>Will 의지</span><span>{attrs?.IQ?.value ?? '—'}</span><span>= IQ — 공포 판정·도주 판정 기반</span></div>
-        <div className="derived-row"><span>Per 지각</span><span>{attrs?.IQ?.value ?? '—'}</span><span>= IQ — 매복 발견·정찰</span></div>
-        <div className="derived-row"><span>Speed</span><span>{Math.floor((((attrs?.DX?.value ?? 10) + (attrs?.HT?.value ?? 10)) / 4) * 10) / 10}</span><span>= (DX+HT)÷4 — 행동 순서 결정</span></div>
-        <div className="derived-row"><span>Dodge 회피</span><span>{Math.floor((attrs?.DX?.value ?? 10) + (attrs?.HT?.value ?? 10)) / 4 + 3}</span><span>= Speed+3 — 피하기 능동 방어</span></div>
+        <h3>파생 수치</h3>
+        <div className="derived-row"><span>HP 체력</span><span>{secondary.HP ?? '—'}</span><span>기본값: ST</span></div>
+        <div className="derived-row"><span>FP 피로</span><span>{secondary.FP ?? '—'}</span><span>기본값: HT</span></div>
+        <div className="derived-row"><span>Will 의지</span><span>{secondary.Will ?? '—'}</span><span>기본값: IQ</span></div>
+        <div className="derived-row"><span>Per 지각</span><span>{secondary.Per ?? '—'}</span><span>기본값: IQ</span></div>
+        <div className="derived-row"><span>Speed</span><span>{secondary.BasicSpeed ?? '—'}</span><span>기본값: (DX+HT)÷4</span></div>
+        <div className="derived-row"><span>Dodge 회피</span><span>{secondary.Dodge ?? '—'}</span><span>기본값: ⌊Speed⌋+3{advantages.some((trait: any) => trait.rule === 'combat-reflexes') ? ', Combat Reflexes +1' : ''}</span></div>
       </div>
       {skills.length > 0 && (
         <div className="gurps-skills">
           <h3>기술</h3>
           {skills.map((s: any, i: number) => (
-            <div key={i} className="skill-row" title={skillExplain[s.name] || skillExplain[s.ko] || ''}>
+            <div key={i} className="skill-row">
               <span className="skill-name">{s.ko || s.name}</span>
-              <span className="skill-level">{s.level}{s.cp ? <small className="skill-cp"> ({s.cp}CP)</small> : null}</span>
-              {skillExplain[s.name || s.ko] && <span className="skill-effect">{skillExplain[s.name || s.ko]}</span>}
+              <span className="skill-level">{s.level ?? '—'}{s.cp != null ? <small className="skill-cp"> ({s.cp} CP)</small> : null}</span>
             </div>
           ))}
-        </div>
-      )}
-      {unit && unit.type && (
-        <div className="gurps-unit">
-          <h3>부대</h3>
-          <p>⚙ {unit.type} — {unit.size}명 ({unit.quality})</p>
-          {unit.note && <p className="unit-note">{unit.note}</p>}
-        </div>
-      )}
-      {territory && (
-        <div className="gurps-territory">
-          <h3>영지</h3>
-          <p>🏰 {territory.fief_name} ({territory.type})</p>
-          <p>🏠 정착지: {territory.settlement?.name || territory.fief_name + ' 정착지'}</p>
-        </div>
-      )}
-      {wandering && (
-        <div className="gurps-wandering">
-          <h3>유랑 부대</h3>
-          <p>⛺ {wandering.type} — 현재: {wandering.current_location}</p>
-          {wandering.camp && <p>🏕 야영지: {wandering.camp.name}</p>}
         </div>
       )}
     </section>
