@@ -220,16 +220,61 @@ export function apiDeclaredFields(person, rel) {
 }
 
 export function uiTooltipFields(source) {
-  const file = ts.createSourceFile('PersonDetailPage.tsx', source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX)
-  const maps = new Map()
+  const fileName = 'PersonDetailPage.tsx'
+  const registry = ['attrExplain', 'skillExplain', 'valueMeta', 'desireMeta']
+  // 심볼 규명으로 참조→선언 묶음(스코프 반영). 같은 이름의 무관 지역 선언이 실제 소비 맵을 덮어쓰지 않게 한다.
+  const host = {
+    getSourceFile: (name) => name === fileName ? ts.createSourceFile(fileName, source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX) : undefined,
+    writeFile: () => {},
+    getCurrentDirectory: () => '/',
+    getDirectories: () => [],
+    fileExists: (name) => name === fileName,
+    readFile: (name) => name === fileName ? source : undefined,
+    getDefaultLibFileName: () => 'lib.d.ts',
+    useCaseSensitiveFileNames: () => true,
+    getCanonicalFileName: (name) => name,
+    getNewLine: () => '\n',
+  }
+  const program = ts.createProgram([fileName], { noResolve: true }, host)
+  const checker = program.getTypeChecker()
+  const file = program.getSourceFile(fileName)
+  const declarations = []
+  const declarationNames = new Set()
+  const valueRefs = []
+  const isNamePosition = (node) => {
+    const parent = node.parent
+    if (!parent) return false
+    if ((ts.isPropertyAssignment(parent) || ts.isPropertySignature(parent) || ts.isEnumMember(parent) || ts.isMethodDeclaration(parent) || ts.isMethodSignature(parent) || ts.isPropertyDeclaration(parent)) && parent.name === node) return true
+    if (ts.isPropertyAccessExpression(parent) && parent.name === node) return true
+    if ((ts.isVariableDeclaration(parent) || ts.isParameter(parent)) && parent.name === node) return true
+    return false
+  }
   const visit = (node) => {
-    if (ts.isVariableDeclaration(node) && ts.isIdentifier(node.name) && ['attrExplain', 'skillExplain', 'valueMeta', 'desireMeta'].includes(node.name.text)) maps.set(node.name.text, node.initializer)
+    if (ts.isVariableDeclaration(node) && ts.isIdentifier(node.name) && registry.includes(node.name.text)) {
+      declarations.push(node)
+      declarationNames.add(node.name)
+    } else if (ts.isIdentifier(node) && registry.includes(node.text) && !declarationNames.has(node) && !isNamePosition(node)) {
+      valueRefs.push(node)
+    }
     ts.forEachChild(node, visit)
   }
   visit(file)
+  const bound = []
+  const boundSet = new Set()
+  for (const ref of valueRefs) {
+    // 값 위치 참조는 checker로 수집된 레지스트리 선언에 실제로 규명되어야 한다. 미해결 참조는
+    // 다른 스코프에 같은 철자 선언이 있어도 결격이고, 파일 전역 이름 존재로 넘기지 않는다.
+    const decl = checker.getSymbolAtLocation(ref)?.valueDeclaration
+    if (!declarations.includes(decl)) throw new Error(`E_UI_TOOLTIP_FIELDS:${ref.text}`)
+    if (boundSet.has(decl)) continue
+    boundSet.add(decl)
+    bound.push(decl)
+  }
   const fields = []
-  for (const name of ['attrExplain', 'skillExplain', 'valueMeta', 'desireMeta']) {
-    const map = maps.get(name)
+  // 검사 대상은 실제 참조가 묶인 선언뿐이다. 소비되지 않은 선언(무관 그림자 포함)은 공개 표면이 아니다.
+  for (const decl of bound) {
+    const name = decl.name.text
+    const map = decl.initializer
     if (!map || !ts.isObjectLiteralExpression(map) || !map.properties.length) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}`)
     for (const [index, entry] of map.properties.entries()) {
       if (!ts.isPropertyAssignment(entry)) throw new Error(`E_UI_TOOLTIP_FIELDS:${name}/${index}`)
