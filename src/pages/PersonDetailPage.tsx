@@ -26,25 +26,25 @@ function DataTable({ title, rows }: { title: string; rows: Array<Array<string | 
   return (
     <section className="person-data-section">
       <h2>{title}</h2>
-      <div className="wiki-table-wrap"><table className="person-data-table"><tbody>{rows.map(([label, value]) => <tr key={label}><th>{label}</th><td>{value === null ? '—' : String(value)}</td></tr>)}</tbody></table></div>
+      <div className="wiki-table-wrap"><table className="person-data-table"><tbody>{rows.map((row, i) => <tr key={i}><th>{row[0]}</th><td>{row[1] === null || row[1] === undefined ? '—' : String(row[1])}</td></tr>)}</tbody></table></div>
     </section>
   )
 }
 
-
 async function fetchGurps(personId: string) {
   try {
-    const res = await fetch('/api/characters/person-' + personId)
+    const id = personId.startsWith('person-') ? personId : 'person-' + personId
+    const res = await fetch('/api/characters/' + id)
     if (!res.ok) return null
     return await res.json()
   } catch { return null }
 }
 
-
 function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
   const [gurps, setGurps] = useState<any>(null)
 
   useEffect(() => {
+    if (!personId) return
     fetchGurps(personId).then(data => setGurps(data))
   }, [personId])
 
@@ -52,12 +52,11 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
 
   const attrs = gurps.attributes || {}
   const attrExplain: Record<string, { icon: string; desc: string }> = {
-    ST: { icon: '💪', desc: '힘 — 피해량·무게·HP 결정. 총검 찌르기 피해 증가, 무거운 갑옷 착용 가능' },
-    DX: { icon: '🏃', desc: '민첩 — 명중률·회피·전투 기술 기반. 스킬 습득 속도, 회피 능동 방어' },
-    IQ: { icon: '🧠', desc: '지능 — 지각·의지·전략 기반. 부대 지휘, 매복 발견, 공포 저항' },
-    HT: { icon: '❤️', desc: '건강 — 피로·생존·회복. 장시간 전투 유지, 부상 회복 속도' },
+    ST: { icon: '💪', desc: '힘 — 피해량·무게·HP 결정' },
+    DX: { icon: '🏃', desc: '민첩 — 명중률·회피·전투 기술 기반' },
+    IQ: { icon: '🧠', desc: '지능 — 지각·의지·전략 기반' },
+    HT: { icon: '❤️', desc: '건강 — 피로·생존·회복' },
   }
-
   const skillExplain: Record<string, string> = {
     '총검술': '총검 찌르기 명중률. 부대 전투력 직결',
     '검법': '도검 베기·찌르기 명중률',
@@ -66,13 +65,13 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
     '암기술': '투척 무기 명중률. 암습 보정',
     '경공': '이동력 증가. 회피 보정',
     '보법': '균형 유지. 넉다운 저항',
-    '권법': '맨손 타격 기술. 무기 없이 전투 가능',
+    '권법': '맨손 타격 기술',
     '지휘': '부대 사기·통제력. 도주 판정 보정',
-    '전략': '부대 전체 행동 보정. 전장 선택',
-    '전술': '소부대 교전 보정. 매복 설정',
-    '외교': '협상 성공률. 세력 관계 개선',
-    '정치': '권력 획득·유지. 음모 저항',
-    '처세': '사회적 상황 대응. 인상 관리',
+    '전략': '부대 전체 행동 보정',
+    '전술': '소부대 교전 보정',
+    '외교': '협상 성공률',
+    '정치': '권력 획득·유지',
+    '처세': '사회적 상황 대응',
   }
 
   const cp = gurps.cp || {}
@@ -89,7 +88,6 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
         <span className="cp-label">CP</span>
         <span className="cp-note">{(cp.total || 0) >= 200 ? '주요 인물 (200~300)' : (cp.total || 0) >= 125 ? '훈련 (125~200)' : '일반 (75~125)'}</span>
       </div>
-
       <div className="gurps-attrs">
         {(['ST', 'DX', 'IQ', 'HT'] as const).map(key => {
           const a = attrs[key]
@@ -105,20 +103,18 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
           )
         })}
       </div>
-
       {skills.length > 0 && (
         <div className="gurps-skills">
           <h3>기술</h3>
           {skills.map((s: any, i: number) => (
-            <div key={i} className="skill-row" title={skillExplain[s.name] || ''}>
-              <span className="skill-name">{s.name}</span>
+            <div key={i} className="skill-row" title={skillExplain[s.name] || skillExplain[s.ko] || ''}>
+              <span className="skill-name">{s.ko || s.name}</span>
               <span className="skill-level">{s.level}</span>
-              {skillExplain[s.name] && <span className="skill-effect">{skillExplain[s.name]}</span>}
+              {skillExplain[s.name || s.ko] && <span className="skill-effect">{skillExplain[s.name || s.ko]}</span>}
             </div>
           ))}
         </div>
       )}
-
       {unit && unit.type && (
         <div className="gurps-unit">
           <h3>부대</h3>
@@ -126,7 +122,6 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
           {unit.note && <p className="unit-note">{unit.note}</p>}
         </div>
       )}
-
       {territory && (
         <div className="gurps-territory">
           <h3>영지</h3>
@@ -134,7 +129,6 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
           <p>🏠 정착지: {territory.settlement?.name || territory.fief_name + ' 정착지'}</p>
         </div>
       )}
-
       {wandering && (
         <div className="gurps-wandering">
           <h3>유랑 부대</h3>
@@ -163,7 +157,6 @@ function ValuesDesireSection({ detail }: { detail: any }): JSX.Element | null {
     '분산': { icon: '🌳', plus: '분산 의사결정', minus: '집중 의사결정' },
     '변혁': { icon: '🔄', plus: '급진적 변화 추구', minus: '현상 유지 선호' },
   }
-
   const desireMeta: Record<string, { icon: string; plus: string; minus: string }> = {
     '갈망': { icon: '🔥', plus: '강한 욕구 추구', minus: '절제·금욕' },
     '독점': { icon: '🔒', plus: '독점·소유 추구', minus: '공유·개방' },
@@ -196,20 +189,19 @@ function ValuesDesireSection({ detail }: { detail: any }): JSX.Element | null {
         <div className="values-block">
           <h2>가치관</h2>
           {Object.entries(values).map(([name, val]) =>
-            renderAxis(name, val as number, valueMeta)
+            typeof val === 'number' ? renderAxis(name, val, valueMeta) : null
           )}
         </div>
       )}
       {desire && (
         <div className="desire-block">
           <h2>욕망</h2>
-          {Object.entries(desire).map(([name, val]) => {
-            if (typeof val !== 'number') return null
-            return renderAxis(name, val as number, desireMeta)
-          })}
+          {Object.entries(desire).map(([name, val]) =>
+            typeof val === 'number' ? renderAxis(name, val, desireMeta) : null
+          )}
           <div className="desire-extras">
-            {desire['지향'] && <p>🧭 지향: {desire['지향']}</p>}
-            {desire['결합'] && <p>💍 결합: {desire['결합']}</p>}
+            {desire['지향'] && <p>🧭 지향: {String(desire['지향'])}</p>}
+            {desire['결합'] && <p>💍 결합: {String(desire['결합'])}</p>}
           </div>
         </div>
       )}
@@ -217,12 +209,11 @@ function ValuesDesireSection({ detail }: { detail: any }): JSX.Element | null {
   )
 }
 
-export function PersonDetailPage(): JSX.Element {
-  const { personId } = useParams<{ personId: string }>()
+export default function PersonDetailPage() {
+  const { personId } = useParams()
+  const summary: any = peopleCatalog.find((person) => person.id === personId)
   const [detail, setDetail] = useState<PersonDetail | null>(null)
   const [failed, setFailed] = useState(false)
-
-  const summary: any = peopleCatalog.find(p => p.id === personId)
 
   useEffect(() => {
     if (!summary) return
@@ -230,100 +221,70 @@ export function PersonDetailPage(): JSX.Element {
     setDetail(null)
     setFailed(false)
     void fetch(`${import.meta.env.BASE_URL}person-details/${summary.id}.json`)
-      .then(response => {
-        if (!response.ok) throw new Error(String(response.status))
-        return response.json()
+      .then((response) => {
+        if (!response.ok) throw new Error(`${response.status}`)
+        return response.json() as Promise<PersonDetail>
       })
-      .then(data => { if (active) setDetail(data as PersonDetail) })
+      .then((person) => { if (active) setDetail(person) })
       .catch(() => { if (active) setFailed(true) })
     return () => { active = false }
   }, [summary])
 
-  if (!summary) return <Navigate to="/wiki/people" replace />
+  useEffect(() => {
+    if (!summary) return
+    document.title = `${summary.name} | 서울:전국 공식 위키`
+    return () => { document.title = '서울:전국 — 공식 위키' }
+  }, [summary])
 
-  const person = (detail as Record<string, any>) ?? (summary as unknown as Record<string, any>)
+  if (!summary || failed) return <Navigate to="/people" replace />
+  if (!detail) return <div className="wiki-loading" role="status">인물 상세를 불러오고 있습니다.</div>
+
+  const person: any = detail
+  const basicRows: Array<Array<string | number | null>> = [
+    ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
+    ['직위', person.position], ['직급(공통 티어)', person.commonTier], ['국가 품계', person.rank], ['직업', person.occupation], ['성별', person.gender], ['단계', person.stage], ['세대', person.generation],
+    ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속'].includes(label)),
+  ]
+  const relationRows = [
+    ...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as Array<string>),
+    ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as Array<string>),
+  ]
 
   return (
-    <main className="wiki-prose person-detail">
-      <header className="person-header">
-        <h1>{person.name}</h1>
-        {person.title && <p className="person-title">{person.title}</p>}
-        <div className="person-meta">
-          {person.state && <span className="person-state">{person.state}</span>}
-          {person.position && <span className="person-position">{person.position}</span>}
-          {person.rank && <span className="person-rank">{person.rank}</span>}
+    <article className="wiki-article" data-wiki-shell="react-official" data-person-id={detail.id}>
+      <nav aria-label="현재 위치" className="wiki-breadcrumbs"><Link to="/">대문</Link><span aria-hidden="true">›</span><Link to="/people">등장인물 전체</Link><span aria-hidden="true">›</span><strong>{detail.name}</strong></nav>
+      <header className="wiki-article-header">
+        <div>
+          <p className="wiki-domain-label">서울:전국 공식 위키 · 인물</p>
+          <h1>{detail.name}</h1>
+          <p>{detail.stateName || '무소속'} · {detail.title}</p>
+          {detail.clan && (
+            <p className="person-clan-line">
+              <img src={`${import.meta.env.BASE_URL}${detail.clan.crest}`} alt={`${detail.clan.name} 문장`} width="64" height="64" loading="lazy" />
+              <Link to={`/families/${detail.clan.id}`} className="wiki-link">{detail.clan.name}</Link>
+            </p>
+          )}
         </div>
+        <span className="wiki-canon-badge">정본</span>
       </header>
-
-      {failed && (
-        <p className="person-load-failed">인물 상세 정보를 불러오지 못했습니다.</p>
-      )}
-
-      {!detail && !failed && (
-        <p className="person-loading">인물 정보를 불러오는 중…</p>
-      )}
-
-      {detail && (
-        <>
-          {detail.biography && (
-            <section className="person-biography">
-              <h2>생애</h2>
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown>
-            </section>
-          )}
-
-          {Object.keys(detail.fields ?? {}).length > 0 && (
-            <section className="person-fields">
-              <h2>기본 정보</h2>
-              <DataTable title="기본" rows={(Object.entries(detail.fields) as Array<[string, any]>).map(([k, v]) => [k, v])} />
-            </section>
-          )}
-
-          <GurpsSection personId={personId ?? ''} />
-
-          <ValuesDesireSection detail={detail} />
-
-          {(Object.entries(detail.sections ?? {}) as Array<[string, string]>).map(([sectionTitle, body]) => (
-            <section key={sectionTitle} className="person-section">
-              <h2>{sectionTitle}</h2>
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{body}</ReactMarkdown>
-            </section>
+      <div className="person-detail-layout">
+        <aside className="person-data-panel" aria-label="인물 구조화 데이터">
+          <DataTable title="기본 정보" rows={basicRows} />
+          <DataTable title="관계" rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />
+        </aside>
+        <div className="wiki-prose person-canon-prose">
+          <h2>정본 상세</h2>
+          {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
+            <section key={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
           ))}
 
-          {(detail.relations?.outgoing?.length > 0 || detail.relations?.incoming?.length > 0) && (
-            <section className="person-relations">
-              <h2>관계</h2>
-              {detail.relations.outgoing.length > 0 && (
-                <DataTable
-                  title="→ 주변 인물"
-                  rows={detail.relations.outgoing.map(r => [r.to, r.type, r.basis])}
-                />
-              )}
-              {detail.relations.incoming.length > 0 && (
-                <DataTable
-                  title="← 주변 인물"
-                  rows={detail.relations.incoming.map(r => [r.from, r.type, r.basis])}
-                />
-              )}
-            </section>
-          )}
+          <GurpsSection personId={personId || ''} />
+          <ValuesDesireSection detail={detail} />
 
-          {detail.sources && detail.sources.length > 0 && (
-            <section className="person-sources">
-              <h2>출처</h2>
-              <ul>
-                {detail.sources.map(s => <li key={s}>{s}</li>)}
-              </ul>
-            </section>
-          )}
-        </>
-      )}
-
-      <div className="person-nav">
-        <Link to="/wiki/people">← 인물 목록</Link>
+          <details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
+          <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>
+        </div>
       </div>
-    </main>
+    </article>
   )
 }
-
-export default PersonDetailPage
