@@ -13,12 +13,24 @@
       "path": "/api/feedback/submissions",
       "credentials": "include",
       "authentication": "GitHub-authenticated session required; anonymous UI stores a local draft only",
-      "success": "Only a successful backend response may produce submitted/success UI"
+      "success": "Only a successful backend response may produce submitted/success UI",
+      "headers": {
+        "x-csrf-token": "from authenticated session response",
+        "idempotency-key": "stable 8-128 character key per local draft"
+      },
+      "acknowledgement": "application/json feedback record with integer id and non-empty status; redirects, HTML and malformed JSON are errors"
     },
     "loginStart": {
       "method": "GET",
       "path": "/api/feedback/auth/login",
       "status": "provider registration and hosted verification remain human-gated"
+    },
+    "session": {
+      "method": "GET",
+      "path": "/api/feedback/auth/session",
+      "response": {
+        "csrfToken": "required string"
+      }
     }
   },
   "uiOwnership": {
@@ -39,27 +51,65 @@
     "sourceSpan": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["path", "start", "end", "unit"],
+      "required": [
+        "path",
+        "start",
+        "end",
+        "unit"
+      ],
       "properties": {
-        "path": { "type": "string", "minLength": 1, "description": "Stable JSON pointer or equivalent source path into the canonical envelope." },
-        "start": { "type": "integer", "minimum": 0 },
-        "end": { "type": "integer", "minimum": 0 },
-        "unit": { "const": "unicode-code-point" }
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable JSON pointer or equivalent source path into the canonical envelope."
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unit": {
+          "const": "unicode-code-point"
+        }
       }
     },
     "selectableTextLeaf": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["leafId", "blockAnchor", "blockKind", "text", "sourceSpans"],
+      "required": [
+        "leafId",
+        "blockAnchor",
+        "blockKind",
+        "text",
+        "sourceSpans"
+      ],
       "properties": {
-        "leafId": { "type": "string", "minLength": 1, "description": "Stable identity within the revision; table cells include row/column identity and person leaves include section identity." },
-        "blockAnchor": { "type": "string", "minLength": 1 },
-        "blockKind": { "type": "string", "minLength": 1 },
-        "text": { "type": "string", "description": "Rendered selectable text without Markdown formatting/link syntax; authored whitespace and newlines are preserved." },
+        "leafId": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable identity within the revision; table cells include row/column identity and person leaves include section identity."
+        },
+        "blockAnchor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blockKind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "description": "Rendered selectable text without Markdown formatting/link syntax; authored whitespace and newlines are preserved."
+        },
         "sourceSpans": {
           "type": "array",
           "minItems": 1,
-          "items": { "$ref": "#/$defs/sourceSpan" },
+          "items": {
+            "$ref": "#/$defs/sourceSpan"
+          },
           "description": "Ordered mapping for the full visible leaf. A bold-to-plain or link-label selection is valid because formatting syntax is excluded while source spans remain ordered."
         }
       }
@@ -67,28 +117,69 @@
     "selectionPart": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["blockAnchor", "blockKind", "leafId", "exactQuote", "prefix", "suffix", "range", "sourceSpans"],
+      "required": [
+        "blockAnchor",
+        "blockKind",
+        "leafId",
+        "exactQuote",
+        "prefix",
+        "suffix",
+        "range",
+        "sourceSpans"
+      ],
       "properties": {
-        "blockAnchor": { "type": "string", "minLength": 1 },
-        "blockKind": { "type": "string", "minLength": 1 },
-        "leafId": { "type": "string", "minLength": 1 },
-        "exactQuote": { "type": "string", "minLength": 1 },
-        "prefix": { "type": "string" },
-        "suffix": { "type": "string" },
+        "blockAnchor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blockKind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "leafId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exactQuote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prefix": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        },
         "range": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["start", "end", "unit"],
+          "required": [
+            "start",
+            "end",
+            "unit"
+          ],
           "properties": {
-            "start": { "type": "integer", "minimum": 0, "description": "Inclusive offset in the visible leaf." },
-            "end": { "type": "integer", "minimum": 1, "description": "Exclusive offset in the visible leaf." },
-            "unit": { "const": "unicode-code-point" }
+            "start": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Inclusive offset in the visible leaf."
+            },
+            "end": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Exclusive offset in the visible leaf."
+            },
+            "unit": {
+              "const": "unicode-code-point"
+            }
           }
         },
         "sourceSpans": {
           "type": "array",
           "minItems": 1,
-          "items": { "$ref": "#/$defs/sourceSpan" },
+          "items": {
+            "$ref": "#/$defs/sourceSpan"
+          },
           "description": "Source spans clipped to the selected visible range, ordered by rendered selection direction normalized to document order."
         }
       }
@@ -96,17 +187,44 @@
     "feedbackAnchor": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["schemaVersion", "documentId", "route", "locale", "sourceRevision", "selections"],
+      "required": [
+        "schemaVersion",
+        "documentId",
+        "route",
+        "locale",
+        "sourceRevision",
+        "selections"
+      ],
       "properties": {
-        "schemaVersion": { "const": "feedback-anchor.v1" },
-        "documentId": { "type": "string", "minLength": 1, "description": "Stable lore envelope id or stable person document id." },
-        "route": { "type": "string", "pattern": "^/" },
-        "locale": { "enum": ["ko", "en"] },
-        "sourceRevision": { "type": "string", "pattern": "^[a-f0-9]{64}$", "description": "SHA-256 of canonical envelope serialization at selection time, never provenance.original_hash." },
+        "schemaVersion": {
+          "const": "feedback-anchor.v1"
+        },
+        "documentId": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable lore envelope id or stable person document id."
+        },
+        "route": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "locale": {
+          "enum": [
+            "ko",
+            "en"
+          ]
+        },
+        "sourceRevision": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 of canonical envelope serialization at selection time, never provenance.original_hash."
+        },
         "selections": {
           "type": "array",
           "minItems": 1,
-          "items": { "$ref": "#/$defs/selectionPart" },
+          "items": {
+            "$ref": "#/$defs/selectionPart"
+          },
           "description": "Ordered per-leaf parts; cross-cell, cross-block, and cross-person-section selections are never collapsed into a synthetic contiguous range."
         }
       }
@@ -114,24 +232,54 @@
     "submission": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["anchor", "body", "reason"],
+      "required": [
+        "anchor",
+        "body",
+        "reason"
+      ],
       "properties": {
-        "anchor": { "$ref": "#/$defs/feedbackAnchor" },
-        "body": { "type": "string", "minLength": 1 },
-        "reason": {
-          "enum": ["어색한 표현", "뜻이 불명확", "설정·사실 충돌", "내부 집필 지시", "기타"]
+        "anchor": {
+          "$ref": "#/$defs/feedbackAnchor"
         },
-        "alternative": { "type": "string" }
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "enum": [
+            "어색한 표현",
+            "뜻이 불명확",
+            "설정·사실 충돌",
+            "내부 집필 지시",
+            "기타"
+          ]
+        },
+        "alternative": {
+          "type": "string"
+        }
       }
     }
   },
   "type": "object",
   "additionalProperties": false,
-  "required": ["anchor", "body", "reason"],
+  "required": [
+    "anchor",
+    "body",
+    "reason"
+  ],
   "properties": {
-    "anchor": { "$ref": "#/$defs/feedbackAnchor" },
-    "body": { "type": "string", "minLength": 1 },
-    "reason": { "$ref": "#/$defs/submission/properties/reason" },
-    "alternative": { "type": "string" }
+    "anchor": {
+      "$ref": "#/$defs/feedbackAnchor"
+    },
+    "body": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reason": {
+      "$ref": "#/$defs/submission/properties/reason"
+    },
+    "alternative": {
+      "type": "string"
+    }
   }
 }

@@ -85,15 +85,30 @@ export function captureFeedbackAnchor(root: HTMLElement, documentInfo: FeedbackD
 }
 
 const sortValue = (value: unknown): unknown => Array.isArray(value) ? value.map(sortValue) : value && typeof value === 'object' ? Object.fromEntries(Object.keys(value as Record<string, unknown>).sort().map((key) => [key, sortValue((value as Record<string, unknown>)[key])])) : value
-export async function personFeedbackDocument(detail: { id: string; sections: Record<string, string> }): Promise<FeedbackDocument> {
+const personLeaf = (leafId: string, blockAnchor: string, blockKind: string, text: string, path: string): SelectableTextLeaf => ({
+  leafId, blockAnchor, blockKind, text,
+  sourceSpans: [{ path, start: 0, end: codePoints(text).length, unit: 'unicode-code-point', textStart: 0, textEnd: codePoints(text).length }],
+})
+const sectionLeaves = (label: string, markdown: string): SelectableTextLeaf[] => {
+  const lines = markdown.split('\n')
+  const leaves: SelectableTextLeaf[] = []
+  let paragraph: string[] = []
+  let part = 0
+  const flush = () => { if (paragraph.length) { const text = paragraph.join('\n'); leaves.push(personLeaf(`section:${label}:paragraph:${part++}`, `section:${label}`, 'person-section-paragraph', text, `/sections/${label}`)); paragraph = [] } }
+  lines.forEach((line) => {
+    const item = line.match(/^[-*+]\s+(.+)$/u)
+    if (item) { flush(); leaves.push(personLeaf(`section:${label}:list:${part++}`, `section:${label}`, 'person-section-list-item', item[1], `/sections/${label}`)); return }
+    if (!line) { flush(); return }
+    paragraph.push(line)
+  })
+  flush()
+  return leaves
+}
+export async function personFeedbackDocument(detail: { id: string; sections: Record<string, string>; biography: string }): Promise<FeedbackDocument> {
   const canonical = `${JSON.stringify(sortValue(detail), null, 2)}\n`
   const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(canonical))
   const sourceRevision = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('')
-  return {
-    documentId: `PERSON:${detail.id}`, sourceRevision,
-    selectableLeaves: Object.entries(detail.sections).map(([label, text]) => ({
-      leafId: `section:${label}:text`, blockAnchor: `section:${label}`, blockKind: 'person-section', text,
-      sourceSpans: [{ path: `/sections/${label}`, start: 0, end: codePoints(text).length, unit: 'unicode-code-point', textStart: 0, textEnd: codePoints(text).length }],
-    })),
-  }
+  const section = Object.entries(detail.sections).flatMap(([label, text]) => sectionLeaves(label, text))
+  const biography = detail.biography.split(/\n{2,}/u).filter(Boolean).map((text, index) => personLeaf(`biography:paragraph:${index}`, 'biography', 'person-biography', text.replace(/\*\*/gu, ''), '/biography'))
+  return { documentId: `PERSON:${detail.id}`, sourceRevision, selectableLeaves: [...section, ...biography] }
 }

@@ -42,14 +42,16 @@ test('source clipping preserves ordered cross-format spans with code-point end-e
 })
 
 test('adapter uses the U1 endpoint and never converts auth or server errors into success', async () => {
-  let request
-  await assert.rejects(() => submitFeedback({ anchor: {}, body: 'x', reason: '기타' }, async (url, init) => {
-    request = { url, init }
-    return new Response(JSON.stringify({ message: '로그인 필요' }), { status: 401, headers: { 'content-type': 'application/json' } })
-  }), (error) => error instanceof FeedbackApiError && error.status === 401)
-  assert.equal(request.url, '/api/feedback/submissions')
-  assert.equal(request.init.credentials, 'include')
-  assert.equal(request.init.method, 'POST')
+  const requests = []
+  await assert.rejects(() => submitFeedback({ anchor: {}, body: 'x', reason: '기타' }, { idempotencyKey: 'stable-test-key', fetcher: async (url, init) => {
+    requests.push({ url, init })
+    return url.endsWith('/session')
+      ? new Response(JSON.stringify({ csrfToken: 'csrf' }), { status: 200, headers: { 'content-type': 'application/json' } })
+      : new Response(JSON.stringify({ error: { code: 'authentication-required', message: '로그인 필요' } }), { status: 401, headers: { 'content-type': 'application/json' } })
+  } }), (error) => error instanceof FeedbackApiError && error.status === 401)
+  assert.equal(requests[1].url, '/api/feedback/submissions')
+  assert.equal(requests[1].init.credentials, 'include')
+  assert.equal(requests[1].init.method, 'POST')
 })
 
 test('public pages expose the composer but no annotation or underline data path', async () => {

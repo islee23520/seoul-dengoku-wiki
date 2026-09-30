@@ -1,0 +1,23 @@
+[
+  {
+    "scenario": "html-200",
+    "message": "서버 응답을 확인할 수 없습니다.",
+    "draft": "html draft"
+  },
+  {
+    "scenario": "pending-dedup",
+    "posts": 1,
+    "pending": true
+  },
+  {
+    "scenario": "cancel-abort",
+    "draft": 0,
+    "posts": 1
+  },
+  {
+    "scenario": "stale-reconfirm",
+    "message": "원문이 변경되었습니다. 현재 문장을 다시 선택해 확인해 주세요.",
+    "draft": "stale draft",
+    "submitDisabled": true
+  }
+]

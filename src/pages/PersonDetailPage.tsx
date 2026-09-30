@@ -328,16 +328,16 @@ export default function PersonDetailPage() {
         </aside>
         <div className="wiki-prose person-canon-prose">
           <h2>정본 상세</h2>
-          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} selector="section[data-feedback-section] > p">
+          {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} selector="section[data-feedback-section] p, section[data-feedback-section] li, details[data-feedback-biography] p">
             {sectionOrder.filter((label) => (detail.sections as any)[label]).map((label) => (
               <section key={label} data-feedback-section={label}><h3>{label}</h3><ReactMarkdown remarkPlugins={[remarkGfm]}>{(detail.sections as any)[label]}</ReactMarkdown></section>
             ))}
+          <details data-feedback-biography><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
           </FeedbackSurface> : null}
 
           <GurpsSection personId={personId || ''} />
           <ValuesDesireSection detail={detail} />
 
-          <details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details>
           <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>
         </div>
       </div>
