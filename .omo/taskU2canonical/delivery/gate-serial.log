@@ -1,0 +1,33 @@
+npm notice run seoul-dengoku-wiki@0.1.0 test:gate
+npm notice run vitest run scripts/test-gate.mjs
+
+ RUN  v5.0.2 /Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-ui-canonical
+
+ ❯ scripts/test-gate.mjs (34 tests | 1 failed) 18972ms
+   × eight canonical school names match the private ledger and carry no everyday alias 14ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  scripts/test-gate.mjs > eight canonical school names match the private ledger and carry no everyday alias
+AssertionError: The expression evaluated to a falsy value:
+
+  ok(table)
+
+
+simple
+
+ ❯ scripts/test-gate.mjs:100:10
+     98| test('eight canonical school names match the private ledger and carry …
+     99|   const table = canon('lore/culture/Martial-Paths.json').content.find(…
+    100|   assert.ok(table)
+       |          ^
+    101|   assert.equal(table.rows.length, 8)
+    102|   assert.deepEqual(table.rows.map((row) => row[0].ko), ledger.martialS…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 33 passed (34)
+   Start at  03:47:58
+   Duration  19.38s (tests 99%, import 1%, transform 1%)

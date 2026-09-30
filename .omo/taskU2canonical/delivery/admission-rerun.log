@@ -1,0 +1,143 @@
+npm notice run seoul-dengoku-wiki@0.1.0 test:admission
+npm notice run vitest run scripts/test-catalog-admission.mjs
+
+ RUN  v5.0.2 /Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-ui-canonical
+
+ ❯ scripts/test-catalog-admission.mjs (9 tests | 1 failed) 630ms
+   × the generated catalog admits exactly the current lore publish set 213ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  scripts/test-catalog-admission.mjs > the generated catalog admits exactly the current lore publish set
+AssertionError: Expected values to be strictly deep-equal:
++ actual - expected
+... Skipped lines
+
+  [
+    '/en/world/Ailments',
+    '/en/world/Building-Reuse-Geography',
+    '/en/world/Century-Annals',
+    '/en/world/Chaebol-Houses-and-Century-Factions',
+...
+    '/en/world/Hostile-Group-G01',
+-   '/en/world/Hostile-Group-G02',
+-   '/en/world/Hostile-Group-G03',
+-   '/en/world/Hostile-Group-G04',
+-   '/en/world/Hostile-Group-G05',
+-   '/en/world/Hostile-Group-G06',
+-   '/en/world/Hostile-Group-G07',
+-   '/en/world/Hostile-Group-G08',
+-   '/en/world/Hostile-Group-G09',
+-   '/en/world/Hostile-Group-G10',
+-   '/en/world/Hostile-Group-G11',
+-   '/en/world/Hostile-Group-G12',
+-   '/en/world/Hostile-Group-G13',
+-   '/en/world/Hostile-Group-G14',
+-   '/en/world/Hostile-Group-G15',
+-   '/en/world/Hostile-Group-G16',
+-   '/en/world/Hostile-Group-G17',
+-   '/en/world/Hostile-Group-G18',
+-   '/en/world/Hostile-Group-G19',
+-   '/en/world/Hostile-Group-G20',
+-   '/en/world/Hostile-Group-G21',
+-   '/en/world/Hostile-Group-G22',
+-   '/en/world/Hostile-Group-G23',
+-   '/en/world/Hostile-Group-G24',
+-   '/en/world/Hostile-Group-G25',
+-   '/en/world/Hostile-Group-G26',
+-   '/en/world/Lost-Technology-Lineage',
+-   '/en/world/Martial-Paths',
+-   '/en/world/Offices-and-Ranks',
+-   '/en/world/Operating-Houses',
+-   '/en/world/Oral-Stories',
+-   '/en/world/People-and-Machines',
+-   '/en/world/Regional-Physical-AI-Arcs',
+-   '/en/world/Scenario-Timeline',
+-   '/en/world/Seoul-Station-Catalog',
+-   '/en/world/Sindorim-Junction-Cargo-Gate',
+-   '/en/world/Sixteen-States',
+-   '/en/world/Station-Interior-Construction',
+-   '/en/world/Structures',
+-   '/en/world/Synthetic-Actors',
+-   '/en/world/Values-and-Policy-Scales',
+-   '/en/world/World-Expansion-Index',
+-   '/en/world/World-Map-Construction',
+-   '/en/world/World-Narrative-Atlas',
+-   '/en/world/World-Relation-Ledger',
+-   '/en/world/World-Unbinding',
+-   '/en/world/World-and-Subway-Layers'
+  ]
+
+
+- Expected
++ Received
+
+@@ -11,52 +11,6 @@
+    "/en/world/Food-Culture",
+    "/en/world/Glossary",
+    "/en/world/Hangnyeol-and-Bon-gwan",
+    "/en/world/Hostile-Ecology-Index",
+    "/en/world/Hostile-Group-G01",
+-   "/en/world/Hostile-Group-G02",
+-   "/en/world/Hostile-Group-G03",
+-   "/en/world/Hostile-Group-G04",
+-   "/en/world/Hostile-Group-G05",
+-   "/en/world/Hostile-Group-G06",
+-   "/en/world/Hostile-Group-G07",
+-   "/en/world/Hostile-Group-G08",
+-   "/en/world/Hostile-Group-G09",
+-   "/en/world/Hostile-Group-G10",
+-   "/en/world/Hostile-Group-G11",
+-   "/en/world/Hostile-Group-G12",
+-   "/en/world/Hostile-Group-G13",
+-   "/en/world/Hostile-Group-G14",
+-   "/en/world/Hostile-Group-G15",
+-   "/en/world/Hostile-Group-G16",
+-   "/en/world/Hostile-Group-G17",
+-   "/en/world/Hostile-Group-G18",
+-   "/en/world/Hostile-Group-G19",
+-   "/en/world/Hostile-Group-G20",
+-   "/en/world/Hostile-Group-G21",
+-   "/en/world/Hostile-Group-G22",
+-   "/en/world/Hostile-Group-G23",
+-   "/en/world/Hostile-Group-G24",
+-   "/en/world/Hostile-Group-G25",
+-   "/en/world/Hostile-Group-G26",
+-   "/en/world/Lost-Technology-Lineage",
+-   "/en/world/Martial-Paths",
+-   "/en/world/Offices-and-Ranks",
+-   "/en/world/Operating-Houses",
+-   "/en/world/Oral-Stories",
+-   "/en/world/People-and-Machines",
+-   "/en/world/Regional-Physical-AI-Arcs",
+-   "/en/world/Scenario-Timeline",
+-   "/en/world/Seoul-Station-Catalog",
+-   "/en/world/Sindorim-Junction-Cargo-Gate",
+-   "/en/world/Sixteen-States",
+-   "/en/world/Station-Interior-Construction",
+-   "/en/world/Structures",
+-   "/en/world/Synthetic-Actors",
+-   "/en/world/Values-and-Policy-Scales",
+-   "/en/world/World-Expansion-Index",
+-   "/en/world/World-Map-Construction",
+-   "/en/world/World-Narrative-Atlas",
+-   "/en/world/World-Relation-Ledger",
+-   "/en/world/World-Unbinding",
+-   "/en/world/World-and-Subway-Layers",
+  ]
+
+ ❯ scripts/test-catalog-admission.mjs:86:10
+     84|   assert.deepEqual(manifest.englishDocuments.map((document) => documen…
+     85|   assert.deepEqual(pages.map((page) => page.route).sort(), expected)
+     86|   assert.deepEqual(englishPages.map((page) => page.route).sort(), expe…
+       |          ^
+     87|   assert.equal(new Set(expected).size, expected.length)
+     88|   assert.equal(new Set(expectedEnglish).size, expectedEnglish.length)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 8 passed (9)
+   Start at  03:45:48
+   Duration  857ms (tests 93%, transform 5%, import 2%)
