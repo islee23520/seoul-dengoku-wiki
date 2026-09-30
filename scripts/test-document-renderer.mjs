@@ -6,6 +6,9 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { DocumentContent, fromWikiBlocks } from '@seoul-dengoku/document-renderer'
 import { resolveWikiContentHref } from '../src/wikiRouting.ts'
+import { wikiArticleContent, wikiBlockText } from '../src/wikiDocument.ts'
+import { TableOfContents } from '@seoul-dengoku/shared-web-ui'
+import { JSDOM } from 'jsdom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 const worldRoot = new URL('../src/generated/world/', import.meta.url)
@@ -68,12 +71,52 @@ test('actual document renderer exposes aliases and natural headings in both loca
   }
 })
 
+test('repeated headings link to their own rendered article headings in both locales', async () => {
+  for (const [folder, locale, first] of [['world', 'ko', '3막'], ['world-en', 'en', 'three-acts']]) {
+    // Given: the complete generated article and its real renderer/TOC components.
+    const articleBlocks = JSON.parse(await readFile(new URL(`../src/generated/${folder}/Operating-Houses.json`, import.meta.url), 'utf8')).blocks
+    const content = wikiArticleContent(articleBlocks)
+    const items = content.filter(({ node }) => node.type === 'heading' && [2, 3].includes(node.depth ?? 0))
+      .map(({ node, anchors }) => ({ id: anchors.get(node), title: wikiBlockText(node), depth: node.depth })).slice(0, 18)
+    const html = content.map((node) => renderToStaticMarkup(createElement(DocumentContent, { content: [node], locale }))).join('')
+    const toc = renderToStaticMarkup(createElement(TableOfContents, { label: 'Contents', items }))
+    // When: the actual linked headings are resolved in the rendered DOM.
+    const document = new JSDOM(toc + html).window.document
+    const headings = [...document.querySelectorAll('h2,h3')]
+    const actHeadings = headings.filter((heading) => heading.textContent === (locale === 'ko' ? '3막' : 'Three acts'))
+    const links = [...document.querySelectorAll('.sui-toc a')]
+    // Then: all 32 acts have unique IDs and each visible link targets its own heading.
+    assert.equal(actHeadings.length, 32)
+    assert.equal(new Set(headings.map((heading) => heading.id)).size, headings.length)
+    assert.equal(actHeadings[0].id, first)
+    assert.equal(links.length, 18)
+    for (const [index, link] of links.entries()) assert.equal(document.getElementById(decodeURIComponent(link.hash.slice(1))), headings[index])
+  }
+})
+
+test('authored anchors and first heading URLs survive repeated heading allocation', () => {
+  // Given: an authored anchor and a later heading whose natural ID would collide with it.
+  const blocks = [
+    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Same' }] },
+    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Same' }] },
+    { type: 'paragraph', children: [{ type: 'html', value: '<a id="same-2">' }] },
+    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Same 3' }] },
+    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Other' }] },
+  ]
+  // When: the article renders with its TOC allocation.
+  const content = wikiArticleContent(blocks)
+  const html = content.map((node) => renderToStaticMarkup(createElement(DocumentContent, { content: [node], locale: 'ko' }))).join('')
+  const document = new JSDOM(html).window.document
+  // Then: the old first URLs and explicit anchor remain and the duplicate skips the reserved ID.
+  assert.deepEqual([...document.querySelectorAll('h2')].map((heading) => heading.id), ['same', 'same-4', 'same-3', 'other'])
+  assert.equal(document.getElementById('same-2')?.tagName, 'SPAN')
+})
+
 test('renderer preserves article table semantics and WIKI page uses shared viewport', async () => {
   const html = render((await blocks('World-Unbinding.json')).filter((node) => node.type === 'table').slice(0, 1))
   assert.match(html, /<table><thead><tr><th scope="col">/)
   assert.match(html, /<tbody><tr><td>/)
   const page = await readFile(new URL('../src/pages/ArticlePage.tsx', import.meta.url), 'utf8')
-  assert.match(page, /fromWikiBlocks\(blocks\)/)
   assert.match(page, /<DocumentContent content=\{\[node\]\}/)
   assert.match(page, /<TableViewport key=\{index\} label=\{text\.table\}>/)
   assert.match(page, /table: '본문 표'/)
