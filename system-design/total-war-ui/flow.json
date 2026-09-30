@@ -1,48 +1,23 @@
 {
-  "schema_version": 2,
-  "diagram_type": "workflow",
-  "meta": {
-    "title": "서울:전국 · 원정과 부대 지휘",
-    "quality_profile": "standard",
-    "legend": { "mode": "hidden" }
-  },
-  "lanes": [
-    { "id": "campaign", "label": "인물과 캠페인" },
-    { "id": "battle", "label": "파티의 전투 세션" },
-    { "id": "choice", "label": "다음 행선 선택" }
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": { "title": "서울:전국 · 세계 진행과 화면 소유", "quality_profile": "standard", "legend": { "mode": "hidden" } },
+  "layout": { "mode": "grid", "cols": 3, "cellW": 220, "cellH": 78, "gapX": 110, "gapY": 150 },
+  "components": [
+    { "id": "estate-view", "type": "frontend", "label": "생활 화면", "sublabel": "인물 선택 · 이동 · 대화", "row": 0, "col": 0 },
+    { "id": "strategy-view", "type": "frontend", "label": "전략 지도", "sublabel": "분대 위치 · 경로 · 지식", "row": 0, "col": 1 },
+    { "id": "battle-view", "type": "frontend", "label": "전투 화면", "sublabel": "교전 전 지시 · 3D 관전", "row": 0, "col": 2 },
+    { "id": "actor-state", "type": "backend", "label": "인물별 행동", "sublabel": "대기 · 이동 · 대화", "row": 1, "col": 0 },
+    { "id": "squad-state", "type": "backend", "label": "분대별 진행", "sublabel": "시간 기반 이동 · 조우", "row": 1, "col": 1 },
+    { "id": "battle-state", "type": "backend", "label": "교전별 진행", "sublabel": "병사 개인 판정 · 종료 결과", "row": 1, "col": 2 }
   ],
-  "mainPath": ["party", "encounter", "deployment", "command", "result"],
-  "nodes": [
-    { "id": "party", "lane": "campaign", "col": 0, "type": "frontend", "label": "파티 편성", "sublabel": "인물 · 장비 · 물자" },
-    { "id": "encounter", "lane": "campaign", "col": 1, "type": "frontend", "label": "원정과 조우", "sublabel": "경로 · 위험 · 대응" },
-    { "id": "peace", "lane": "campaign", "col": 3, "type": "frontend", "label": "비전투 해결", "sublabel": "교섭 · 현장 거래 · 우회" },
-    { "id": "deployment", "lane": "battle", "col": 2, "type": "frontend", "label": "전투 배치", "sublabel": "참가 부대 · 지형 · 퇴로" },
-    { "id": "command", "lane": "battle", "col": 3, "type": "frontend", "label": "부대 지휘", "sublabel": "이동 · 공격 · 진형" },
-    { "id": "result", "lane": "campaign", "col": 4, "type": "frontend", "label": "결과 확인", "sublabel": "생사 · 물자 · 현재 위치" },
-    { "id": "continue", "lane": "choice", "col": 2, "type": "frontend", "label": "원정 계속", "sublabel": "현 위치에서 다음 구간" },
-    { "id": "ending", "lane": "choice", "col": 5, "type": "frontend", "label": "원정 결말 선택", "sublabel": "다섯 갈래 중 선택" }
-  ],
-  "edges": [
-    { "from": "party", "to": "encounter", "role": "main" },
-    { "from": "encounter", "to": "deployment", "label": "전투 선택", "role": "main" },
-    { "from": "deployment", "to": "command", "label": "배치 확정", "role": "main" },
-    { "from": "command", "to": "result", "label": "전투 종료", "role": "main" },
-    { "from": "encounter", "to": "peace", "label": "비전투 선택", "role": "branch" },
-    { "from": "peace", "to": "result", "label": "조우 해결", "role": "branch" },
-    { "from": "result", "to": "continue", "label": "계속 이동", "role": "branch" },
-    { "from": "continue", "to": "encounter", "label": "다음 조우", "role": "return" },
-    { "from": "result", "to": "ending", "label": "원정을 마침", "role": "branch" }
+  "connections": [
+    { "from": "actor-state", "to": "estate-view", "label": "행동 상태 표시" },
+    { "from": "squad-state", "to": "strategy-view", "label": "위치와 상황 표시" },
+    { "from": "battle-state", "to": "battle-view", "label": "교전 상황 표시" }
   ],
   "cards": [
-    {
-      "dot": "slate",
-      "title": "결과를 읽는 기준",
-      "items": [
-        "승패, 명령 철수, 사기 붕괴에 따른 패주, 수락된 항복은 서로 구분합니다.",
-        "포획은 인물의 신병 처리 결과이며 항복·부상과 같은 뜻이 아닙니다.",
-        "결과는 한 번만 반영합니다. 반영 뒤 거점으로 자동 귀환하지 않습니다.",
-        "원정의 다섯 결말은 귀환·정착·정복·방랑·교역입니다."
-      ]
-    }
+    { "dot": "cyan", "title": "동시에 진행되는 세계", "items": ["인물·분대·교전은 각자의 상태와 발생 조건을 가진다. 화면 사이를 번호순으로 도는 전역 절차가 아니다.", "생활 공간에서도 사건이 발생한다. 관련 대상의 조건이 충족될 때만 행동이나 상황이 바뀐다.", "화면 선택과 세계 진행을 분리한다. 관련 없는 인물과 분대는 계속 행동한다."] },
+    { "dot": "slate", "title": "사건과 명령의 소유", "items": ["명령은 대상·권한·경로·상황 조건으로 검증한다. 화면을 여는 일만으로 행동을 완료하지 않는다.", "근접 교전 중 명령 잠금은 해당 분대에 적용한다. 전투에는 일시정지·감속·배속이 없다.", "결과는 해당 원장에 한 번 반영한다. 결과 정산을 생활 공간이나 자동 귀환과 혼용하지 않는다."] }
   ]
 }
