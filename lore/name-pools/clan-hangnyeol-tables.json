@@ -2667,15 +2667,8 @@
         "s-census-r0075"
       ],
       "rows": [],
-      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다.",
-      "branches": [
-        {
-          "id": "c774-c804-c758-674e-agreed-bbfc-second",
-          "surname": "이",
-          "bongwan": "전의",
-          "note": "재합의 가계"
-        }
-      ]
+      "show_branches": false,
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
     },
     {
       "id": "c5ec-c758-b839-4f59",
