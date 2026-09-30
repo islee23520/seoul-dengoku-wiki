@@ -104,6 +104,12 @@
       "r2.rwarfare-41",
       "r2.rwarfare-41.body",
       "r2.rwarfare-41.kits",
+      "r4.rwarfare-42",
+      "r4.rwarfare-42.body",
+      "r4.rwarfare-43",
+      "r4.rwarfare-43.body",
+      "r4.rwarfare-44",
+      "r4.rwarfare-44.body",
       "source.b74",
       "source.b75",
       "source.b76",
@@ -2002,6 +2008,129 @@
       ]
     },
     {
+      "id": "r4.rwarfare-42",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-42 충성"
+        }
+      ]
+    },
+    {
+      "id": "r4.rwarfare-42.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "영웅마다 자기 군주에 대한 충성 값을 둔다. 범위는 0~100이고 군주 자신은 늘 100이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "충성은 매일 그 영웅의 기분과 군주에 대한 신뢰 `T[영웅,군주]`에 따라 조금씩 움직인다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "충성이 25 미만인 채로 오래 가면 후계자는 반란을 일으키고 다른 영웅은 다른 군주에게 옮겨 간다. 높은 충성은 포획·암살·매수 같은 위험한 음모를 맡길 수 있는 조건이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "지속 기간, 하루 변화량과 위험 행동별 문턱은 이 문서에서 정하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r4.rwarfare-43",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-43 관계 구간"
+        }
+      ]
+    },
+    {
+      "id": "r4.rwarfare-43.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "인물 사이 관계는 신뢰 `T[A,B]`로 읽는다. 별도 관계 수치를 두지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`T` 25 이상은 친구, -25 이하는 적, -50 이하는 숙적이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "친구는 함께 시간을 보내고 서로 병문안하며 싸움에서 편을 든다. 적은 음모 대화의 대상이 된다. 숙적은 서로 살해를 시도할 수 있다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "가족과 연인은 관계에 보정을 받고 한쪽이 죽으면 애도한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r4.rwarfare-44",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RWARFARE-44 보상과 위협"
+        }
+      ]
+    },
+    {
+      "id": "r4.rwarfare-44.body",
+      "kind": "paragraph",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "군주는 자기 영웅에게 보상과 위협 명령을 내릴 수 있다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보상은 자원을 들여 그 영웅의 충성을 올리고 좋은 기분을 준다. 위협은 충성을 올리되 나쁜 기분을 준다. 두 효과의 크기는 군주의 설득 기술에 비례한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보상과 위협은 충성과 기분만 바꾼다. 신뢰 `T`와 정통성은 이 명령으로 직접 바뀌지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "비용과 효과 크기는 이 문서에서 정하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
       "id": "source.b74",
       "kind": "heading",
       "level": 2,
@@ -2218,7 +2347,7 @@
         [
           {
             "kind": "text",
-            "text": "충성·경건 슬라이더나 정통성을 직접 올리는 명령을 두지 말 것"
+            "text": "경건 슬라이더나 정통성을 직접 올리는 명령을 두지 말 것(충성은 RWARFARE-44의 보상·위협으로 바꿀 수 있다)"
           }
         ],
         [
