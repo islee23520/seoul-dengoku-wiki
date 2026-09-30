@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import { makeArtSourcePacket, resolveArtPerson } from './personArtSource'
+import PortraitPromptPanel from './PortraitPromptPanel'
 
 type ArtDetail = {
   readonly id: string
@@ -55,7 +56,9 @@ export default function CharacterArtToolPage() {
         <h2>{packet.name} · {packet.personId}</h2>
         <p><Link to={`/people/${packet.personId}`}>인물 상세로 돌아가기</Link></p>
         <p>등록된 인물 기록을 확인할 수 있습니다. 아트 생성 연결은 별도 도구가 필요합니다.</p>
+        <details><summary>인물 원본 기록</summary><pre>{JSON.stringify(packet, null, 2)}</pre></details>
       </section>}
+      {packet && <PortraitPromptPanel key={packet.personId} />}
     </div>
   </article>
 }

@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict'
+import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { makeArtSourcePacket, resolveArtPerson } from '../src/pages/personArtSource'
@@ -29,4 +30,26 @@ test('art packet rejects mismatched detail data', () => {
   const detail = { id: 'person-0145', name: '윤서린', sourceRoute: '/world/Core-Characters', fields: {}, sections: {} }
   assert.equal(makeArtSourcePacket(selected, { ...detail, id: 'person-0144' }), null)
   assert.equal(makeArtSourcePacket(selected, { ...detail, name: '다른 인물' }), null)
+})
+
+test('every published portrait token matches the current person identity and authored gender', async () => {
+  const catalog = JSON.parse(await readFile(new URL('../portrait-catalog.json', import.meta.url), 'utf8'))
+  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
+  for (const entry of catalog.entries) {
+    const token = JSON.parse(await readFile(new URL(`../public/portrait-tokens/${entry.personId}.json`, import.meta.url), 'utf8'))
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${entry.personId}.json`, import.meta.url), 'utf8'))
+    const permanent = registry.persons.find(person => person.id === entry.characterId)
+    assert.equal(permanent?.name, detail.name, entry.characterId)
+    assert.equal(entry.name, detail.name, entry.personId)
+    assert.equal(token.personId, detail.id)
+    assert.equal(token.characterId, entry.characterId)
+    assert.equal(token.name, detail.name)
+    assert.equal(token.facts.gender, detail.gender, entry.personId)
+    assert.equal(token.approval, 'art-proposal')
+    const image = await readFile(new URL(`../public/portraits/${entry.personId}.png`, import.meta.url))
+    assert.deepEqual(image.subarray(0, 8), Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]), entry.personId)
+    const hash = createHash('sha256').update(image).digest('hex')
+    assert.equal(hash, token.image.sha256, entry.personId)
+    assert.equal(hash, entry.imageSha256, entry.personId)
+  }
 })
