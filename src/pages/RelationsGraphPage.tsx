@@ -9,16 +9,22 @@ const NODE_COLORS: Record<string, string> = {
   S13: '#ada6da', S14: '#daada6', S15: '#a6dada', S16: '#dada6a',
 }
 
-const nodes = retainerGraph.courts.flatMap((court, courtIndex) => {
-  const owner = retainerGraph.nodes.find((node) => node.id === court.ownerPersonId)
-  if (!owner) throw new Error(`E_RETAINER_GRAPH_OWNER:${court.id}`)
-  const members = retainerGraph.edges.filter((edge) => edge.courtId === court.id).map((edge, index) => {
-    const person = retainerGraph.nodes.find((node) => node.id === edge.fromPersonId)
-    if (!person || edge.toPersonId !== owner.id) throw new Error(`E_RETAINER_GRAPH_EDGE:${edge.fromPersonId}`)
-    return { ...person, x: 60 + courtIndex * 265 + (index % 2) * 110, y: 150 + Math.floor(index / 2) * 60 }
+export function layoutRetainerGraph(graph: typeof retainerGraph) {
+  const nodes = graph.courts.flatMap((court, courtIndex) => {
+    const owner = graph.nodes.find((node) => node.id === court.ownerPersonId)
+    if (!owner) throw new Error(`E_RETAINER_GRAPH_OWNER:${court.id}`)
+    const members = graph.edges.filter((edge) => edge.courtId === court.id).map((edge, index) => {
+      const person = graph.nodes.find((node) => node.id === edge.fromPersonId)
+      if (!person || edge.toPersonId !== owner.id) throw new Error(`E_RETAINER_GRAPH_EDGE:${edge.fromPersonId}`)
+      return { ...person, x: 60 + courtIndex * 265 + (index % 2) * 110, y: 150 + Math.floor(index / 2) * 60 }
+    })
+    return [{ ...owner, x: 115 + courtIndex * 265, y: 70 }, ...members]
   })
-  return [{ ...owner, x: 115 + courtIndex * 265, y: 70 }, ...members]
-})
+  if (nodes.length !== graph.nodes.length || graph.edges.length !== nodes.length - graph.courts.length)
+    throw new Error('E_RETAINER_GRAPH_UNRESOLVED')
+  return nodes
+}
+const nodes = layoutRetainerGraph(retainerGraph)
 const nodesById = new Map<string, (typeof nodes)[number]>(nodes.map((node) => [node.id, node]))
 
 export function RelationsGraphPage() {
