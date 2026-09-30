@@ -40,9 +40,8 @@ function visibleMarkdown(markdown, path, context = 'paragraph') {
       const endOffset = node.position.end.offset - wrappers.prefix.length
       if (endOffset <= 0 || startOffset >= markdown.length) return
       const raw = markdown.slice(Math.max(0, startOffset), Math.min(markdown.length, endOffset))
-      let sourceStart = length(markdown.slice(0, Math.max(0, startOffset))),sourceRaw=raw
-      const literal=raw.indexOf(value)
-      if(literal>=0){sourceStart+=length(raw.slice(0,literal));sourceRaw=value}
+      let sourceStart = length(markdown.slice(0, Math.max(0, startOffset))),sourceRaw = raw
+      if(!/^&(?:#[0-9]{1,7}|#[xX][0-9A-Fa-f]{1,6}|[A-Za-z0-9]{1,31});$/u.test(raw)){const literal=raw.indexOf(value);if(literal>=0){sourceStart+=length(raw.slice(0,literal));sourceRaw=value}}
       segments.push(...textSourceSegments(sourceRaw,value,path,sourceStart,textStart))
       text += value
       return
@@ -143,7 +142,7 @@ function localizedFragments(segment,locale){
   const root=fromMarkdown(localized,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]})
   const visit=(node,inLabel=false)=>{
    if(node.type==='strong'){const name=mdastText(node).match(/^([^\n.]+)\./u)?.[1]?.trim();if(name){currentSection=name;return}}
-   if(!inLabel&&(node.type==='text'||node.type==='inlineCode')){const base=length(localized.slice(0,node.position.start.offset));add(currentSection,node.value,path,base);return}
+   if(!inLabel&&(node.type==='text'||node.type==='inlineCode')){const raw=localized.slice(node.position.start.offset,node.position.end.offset),base=length(localized.slice(0,node.position.start.offset));add(currentSection,raw,path,base);return}
    for(const child of node.children??[])visit(child,inLabel)
   }
   for(const node of root.children)visit(node)

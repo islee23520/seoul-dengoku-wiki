@@ -62,6 +62,23 @@ test('encoded entities retain full canonical tokens for scalar and run forms', (
  }
 })
 
+
+
+test('standalone entities remain atomic full-token segments', () => {
+ for(const value of ['&amp;','&#38;','&#35;',[{text:'&amp;'}]]){
+  const envelope={id:'DOC:standalone',domain:'root',locales:{ko:{title:'Standalone',summary:'',tense:'present'}},content:[{kind:'heading',anchor:'root',depth:1,text:{ko:'Standalone'}},{kind:'paragraph',anchor:'entity',text:{ko:value}}]},leaf=articleFeedbackRecord({envelope,route:'/world/standalone',locale:'ko'}).leaves[0],entity=leaf.sourceSegments.find((segment)=>segment.kind==='entity')
+  assert.ok(entity);const source=Array.isArray(value)?value[0].text:value;assert.equal(Array.from(source).slice(entity.start,entity.end).join(''),entity.sourceToken);assert.equal(entity.end-entity.start,Array.from(entity.sourceToken).length)
+ }
+})
+
+test('actual scalar person entity keeps canonical base offsets and CommonMark replacement semantics', async () => {
+ const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-11.json'),'utf8')),detail=JSON.parse(await readFile(resolve('public/person-details/person-0273.json'),'utf8')),original=detail.sections['생애'],source=envelope.content[28].items[3].ko
+ envelope.content[28].items[3].ko=source.replace(original,'😀 &amp; B');detail.sections['생애']='😀 & B'
+ const record=personFeedbackRecord({envelope,personId:detail.id,route:detail.detailRoute,headingText:`인물 ${detail.name}`,locale:'ko',sections:detail.sections}),leaf=record.leaves.find((value)=>value.leafId==='section:생애:paragraph:0')
+ assert.deepEqual(leaf.sourceSegments.map(({kind,start,end,textStart,textEnd})=>({kind,start,end,textStart,textEnd})),[{kind:'literal',start:26,end:28,textStart:0,textEnd:2},{kind:'entity',start:28,end:33,textStart:2,textEnd:3},{kind:'literal',start:33,end:35,textStart:3,textEnd:5}]);assert.equal(leaf.sourceSegments[1].sourceToken,'&amp;')
+ const replacement={id:'DOC:replacement',domain:'root',locales:{ko:{title:'Replacement',summary:'',tense:'present'}},content:[{kind:'heading',anchor:'root',depth:1,text:{ko:'Replacement'}},{kind:'paragraph',anchor:'p',text:{ko:'&#128;'}}]},replacementLeaf=articleFeedbackRecord({envelope:replacement,route:'/world/replacement',locale:'ko'}).leaves[0];assert.equal(replacementLeaf.text,'�');assert.equal(replacementLeaf.sourceSegments[0].sourceToken,'&#128;')
+})
+
 test('person authority uses the canonical source envelope and stable heading segment', () => {
   const envelope = structuredClone(fixture)
   envelope.id = 'DOC:people'
