@@ -252,6 +252,7 @@ for (const document of englishDocuments) {
   englishRouteBySlug.set(`any:${document.slug}`, document.route)
 }
 
+const publishedBlocks = new Map()
 const writeDocument = async (root, document, routes) => {
   const body = normalizeMarkdown(document.markdown, document.domain, routes)
   const blocks = fromMarkdown(body, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
@@ -260,6 +261,7 @@ const writeDocument = async (root, document, routes) => {
     for (const child of node.children ?? []) removePositions(child)
   }
   for (const block of blocks) removePositions(block)
+  publishedBlocks.set(`${document.locale}:${document.slug}`, blocks)
   await writeFile(resolve(root, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
 `)
 }
@@ -268,7 +270,7 @@ for (const document of englishDocuments) await writeDocument(worldEnJsonRoot, do
 
 const feedbackRecords = [...documents, ...englishDocuments].flatMap((document) => {
   const envelope = pagesBySlug.get(document.slug)?.value
-  return envelope ? [articleFeedbackRecord({ envelope, route: document.route, locale: document.locale })] : []
+  return envelope && envelope.id !== 'DOC:Glossary' ? [articleFeedbackRecord({ envelope, route: document.route, locale: document.locale, blocks: publishedBlocks.get(`${document.locale}:${document.slug}`) })] : []
 })
 
 const lines = [
@@ -893,7 +895,7 @@ for (const person of peopleCatalog) {
     },
   }
   await writeFile(resolve(personDetailsRoot, `${person.id}.json`), `${JSON.stringify(detail, null, 2)}\n`)
-  feedbackRecords.push(personFeedbackRecord({ envelope: sourceEnvelope, personId: person.id, route: person.detailRoute, headingText: primary.file === 'Core-Characters' ? person.name : `인물 ${primary.heading ?? person.name}`, locale: 'ko' }))
+  feedbackRecords.push(personFeedbackRecord({ envelope: sourceEnvelope, personId: person.id, route: person.detailRoute, headingText: primary.file === 'Core-Characters' ? person.name : `인물 ${primary.heading ?? person.name}`, locale: 'ko', sections: detail.sections }))
 }
 await mkdir(privateGeneratedRoot, { recursive: true })
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.ko.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'ko')))}\n`)
