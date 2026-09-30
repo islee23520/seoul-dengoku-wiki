@@ -225,6 +225,9 @@ test('tooltip registry follows actual render consumption in both directions', ()
   // 소비되는데 선언이 없으면 실패한다. 제거된 미사용 맵은 요구하지 않는다.
   assert.throws(() => uiTooltipFields("const attrExplain = { ST: { icon: 'x', desc: '정상' } }; attrExplain['ST']; skillExplain['권법']"), /E_UI_TOOLTIP_FIELDS:skillExplain/u)
   assert.throws(() => uiTooltipFields(consumed.replace("const desireMeta = { '갈망': { plus: '정상', minus: '정상' } }; ", '')), /E_UI_TOOLTIP_FIELDS:desireMeta/u)
+  // 미해결 값 참조는 다른 스코프의 같은 철자 선언으로 면제되지 않는다.
+  assert.throws(() => uiTooltipFields("const attrHints = { ST: { icon: 'x', desc: '정상' } }; attrExplain['ST']"), /E_UI_TOOLTIP_FIELDS:attrExplain/u)
+  assert.throws(() => uiTooltipFields("function neverRendered() { const skillExplain = { x: 'normal' }; return 0 }; skillExplain['x']"), /E_UI_TOOLTIP_FIELDS:skillExplain/u)
   // 미사용 같은이름 지역 선언은 실제 소비 맵을 덮어쓰지 못한다: 표지는 여전히 잡힌다.
   const shadowed = consumed + "; function neverRendered() { const attrExplain = { ST: { icon: 'y', desc: '정상' } }; return 0 }"
   const shadowFields = uiTooltipFields(shadowed)
@@ -249,6 +252,18 @@ function gateProbe(fixture) {
     fs.readFileSync = function(path, ...args) {
       if (String(path) !== target) return read.call(this, path, ...args);
       const original = read.call(this, path, ...args);
+      if (fixture.tsRename) {
+        const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+        let targetNode;
+        function visitRename(node) {
+          if (!targetNode && ts.isVariableDeclaration(node) && ts.isIdentifier(node.name) && node.name.getText(ast) === fixture.tsRename.from) targetNode = node.name;
+          ts.forEachChild(node, visitRename);
+        }
+        visitRename(ast);
+        if (!targetNode) throw new Error('E_TEST_FIXTURE_RENAME');
+        const renamedSource = original.slice(0, targetNode.getStart(ast)) + fixture.tsRename.to + original.slice(targetNode.getEnd());
+        return fixture.append ? renamedSource + fixture.append : renamedSource;
+      }
       if (fixture.append && !fixture.tsProperty) return original + fixture.append;
       if (fixture.tsProperty) {
         const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
@@ -330,6 +345,17 @@ test('production gate excludes unused tooltip and private person metadata but ca
   })
   assert.equal(shadow.status, 1, shadow.output)
   assert.match(shadow.output, /tooltips/u)
+  // 선언 이름만 바뀐 실제 참조(미해결)는 무관 같은이름 미사용 선언이 있어도 실패한다.
+  const renamed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsRename: { from: 'attrExplain', to: 'attrExplainUnused' } })
+  assert.equal(renamed.status, 1, renamed.output)
+  assert.match(renamed.output, /E_UI_TOOLTIP_FIELDS:attrExplain/u)
+  const renamedShadow = gateProbe({
+    file: 'src/pages/PersonDetailPage.tsx',
+    tsRename: { from: 'attrExplain', to: 'attrExplainUnused' },
+    append: '\nfunction neverRenderedProbe() {\n  const attrExplain = { ST: { icon: "x", desc: "normal" } };\n  return 0;\n}\n',
+  })
+  assert.equal(renamedShadow.status, 1, renamedShadow.output)
+  assert.match(renamedShadow.output, /E_UI_TOOLTIP_FIELDS:attrExplain/u)
   const hiddenSkill = gateProbe({ file: 'lore/name-pools/gurps-cast.json', path: ['people', 0, 'skills', 0, 'name'], value: '사용자 확정' })
   assert.equal(hiddenSkill.status, 0, hiddenSkill.output)
 })

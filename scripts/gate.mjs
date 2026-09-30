@@ -259,14 +259,14 @@ export function uiTooltipFields(source) {
     ts.forEachChild(node, visit)
   }
   visit(file)
-  const byName = new Map(declarations.map((decl) => [decl.name.text, decl]))
   const bound = []
   const boundSet = new Set()
   for (const ref of valueRefs) {
-    // 값 위치 참조는 대응 선언이 비지 않은 객체 리터럴로 존재해야 한다(누락·빈 맵 실패 유지).
-    if (!byName.has(ref.text)) throw new Error(`E_UI_TOOLTIP_FIELDS:${ref.text}`)
+    // 값 위치 참조는 checker로 수집된 레지스트리 선언에 실제로 규명되어야 한다. 미해결 참조는
+    // 다른 스코프에 같은 철자 선언이 있어도 결격이고, 파일 전역 이름 존재로 넘기지 않는다.
     const decl = checker.getSymbolAtLocation(ref)?.valueDeclaration
-    if (!declarations.includes(decl) || boundSet.has(decl)) continue
+    if (!declarations.includes(decl)) throw new Error(`E_UI_TOOLTIP_FIELDS:${ref.text}`)
+    if (boundSet.has(decl)) continue
     boundSet.add(decl)
     bound.push(decl)
   }
