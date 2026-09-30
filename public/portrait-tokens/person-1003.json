@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1003",
+  "characterId": "K1003",
+  "name": "조재표",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": false,
+    "role": "Unaffiliated route surveyor, escort commander and withdrawal decision maker"
+  },
+  "artProposal": {
+    "face": "Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference",
+    "hair": "Long wavy black hair reaching the shoulders",
+    "outfit": "Weathered charcoal field jacket, warm-gray shirt",
+    "palette": [
+      "charcoal",
+      "warm gray",
+      "muted skin"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "upper": "Weathered charcoal field jacket, warm-gray shirt",
+    "lower": null,
+    "footwear": null
+  },
+  "style": {
+    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-1003.png",
+    "sha256": "54c5c213acac92c817d23f6e0b22400bee3548377e693d8b6d9ffbc3c0b62bae",
+    "width": 1215,
+    "height": 1295
+  },
+  "references": {
+    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "identitySha256": "1dff3a86cd3f342ad0cd01bba195b56321d8e37d6ccac55793192b7e1c5075e5",
+    "identityRole": "owner-reference",
+    "imageText": "none",
+    "reviewStatus": "candidate-reviewed"
+  }
+}
