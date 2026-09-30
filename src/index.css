@@ -533,3 +533,21 @@ summary:focus-visible {
 .gurps-unit, .gurps-territory, .gurps-wandering { margin-block-start: 1rem; }
 .gurps-unit p, .gurps-territory p, .gurps-wandering p { font-size: 0.9rem; margin-block-end: 0.3rem; }
 .unit-note { color: var(--wiki-muted); font-size: 0.8rem !important; }
+
+.gurps-cp-breakdown { margin-block-end: 1rem; padding: 0.8rem; background: var(--wiki-paper); border: 1px solid var(--wiki-line); border-radius: 6px; }
+.gurps-cp-breakdown h4 { font-size: 0.85rem; color: var(--wiki-nav); margin-block-end: 0.4rem; }
+.cp-row { display: flex; justify-content: space-between; padding: 0.15rem 0; font-size: 0.85rem; }
+.cp-row.cp-sum { border-top: 1px solid var(--wiki-line); margin-top: 0.3rem; padding-top: 0.3rem; font-weight: bold; color: var(--wiki-accent); }
+.gurps-advantages h3, .gurps-disadvantages h3 { font-size: 0.9rem; color: var(--wiki-nav); margin-block-end: 0.3rem; }
+.adv-row { display: flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0; border-bottom: 1px solid var(--wiki-line); }
+.adv-name { font-weight: 600; font-size: 0.85rem; min-width: 10rem; }
+.adv-cp { font-weight: bold; font-size: 0.85rem; color: var(--wiki-accent); min-width: 3.5rem; text-align: right; }
+.adv-effect { font-size: 0.75rem; color: var(--wiki-muted); }
+
+.gurps-derived { margin-block-end: 1rem; padding: 0.8rem; background: var(--wiki-paper); border: 1px solid var(--wiki-line); border-radius: 6px; }
+.gurps-derived h3 { font-size: 0.85rem; color: var(--wiki-nav); margin-block-end: 0.4rem; }
+.derived-row { display: flex; gap: 0.8rem; padding: 0.2rem 0; font-size: 0.8rem; border-bottom: 1px solid var(--wiki-line); }
+.derived-row span:first-child { font-weight: 600; min-width: 5rem; }
+.derived-row span:nth-child(2) { font-weight: bold; color: var(--wiki-accent); min-width: 2.5rem; text-align: center; }
+.derived-row span:last-child { color: var(--wiki-muted); flex: 1; }
+.attr-cp, .skill-cp { font-size: 0.68rem; color: var(--wiki-muted); font-weight: normal; }

@@ -75,6 +75,7 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
   }
 
   const cp = gurps.cp || {}
+  const attrSum = Object.values(attrs).reduce((s: number, a: any) => s + (a?.cp || 0), 0)
   const skills = gurps.skills || []
   const unit = gurps.unit || {}
   const territory = gurps.territory
@@ -88,6 +89,38 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
         <span className="cp-label">CP</span>
         <span className="cp-note">{(cp.total || 0) >= 200 ? '주요 인물 (200~300)' : (cp.total || 0) >= 125 ? '훈련 (125~200)' : '일반 (75~125)'}</span>
       </div>
+      <div className="gurps-cp-breakdown">
+        <h4>CP 계산 내역</h4>
+        <div className="cp-row"><span>능력치</span><span>{cp.attributes ?? attrSum} CP</span></div>
+        <div className="cp-row"><span>장점</span><span>+{cp.advantages ?? 0} CP</span></div>
+        <div className="cp-row"><span>단점</span><span>{cp.disadvantages ?? 0} CP</span></div>
+        <div className="cp-row"><span>기술</span><span>+{cp.skills ?? 0} CP</span></div>
+        <div className="cp-row cp-sum"><span>합계</span><span>{cp.total ?? '—'} CP</span></div>
+      </div>
+      {gurps.advantages && gurps.advantages.length > 0 && (
+        <div className="gurps-advantages">
+          <h3>장점 (CP 포함)</h3>
+          {(gurps.advantages || []).map((adv: any, i: number) => (
+            <div key={i} className="adv-row" title={adv.effect || ''}>
+              <span className="adv-name">{adv.name}</span>
+              <span className="adv-cp">{adv.cp > 0 ? '+' + adv.cp : adv.cp} CP</span>
+              {adv.effect && <span className="adv-effect">{adv.effect}</span>}
+            </div>
+          ))}
+        </div>
+      )}
+      {gurps.disadvantages && gurps.disadvantages.length > 0 && (
+        <div className="gurps-disadvantages">
+          <h3>단점 (CP 환급)</h3>
+          {(gurps.disadvantages || []).map((d: any, i: number) => (
+            <div key={i} className="adv-row" title={d.effect || ''}>
+              <span className="adv-name">{d.name}</span>
+              <span className="adv-cp">{d.cp} CP</span>
+              {d.effect && <span className="adv-effect">{d.effect}</span>}
+            </div>
+          ))}
+        </div>
+      )}
       <div className="gurps-attrs">
         {(['ST', 'DX', 'IQ', 'HT'] as const).map(key => {
           const a = attrs[key]
@@ -97,11 +130,20 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
             <div key={key} className="gurps-attr" title={ex.desc}>
               <span className="attr-icon">{ex.icon}</span>
               <span className="attr-key">{key}</span>
-              <span className="attr-value">{a.value ?? a}</span>
+              <span className="attr-value">{a.value ?? a}{a?.cp != null ? <small className="attr-cp"> ({a.cp} CP)</small> : null}</span>
               <span className="attr-desc">{ex.desc}</span>
             </div>
           )
         })}
+      </div>
+      <div className="gurps-derived">
+        <h3>파생 수치 (능력치에서 자동 계산, 추가 CP 불필요)</h3>
+        <div className="derived-row"><span>HP 체력</span><span>{attrs?.ST?.value ?? '—'}</span><span>= ST — 0 이하 기절, −5×ST 사망</span></div>
+        <div className="derived-row"><span>FP 피로</span><span>{attrs?.HT?.value ?? '—'}</span><span>= HT — 장기전 유지, 0 이하 행동 불가</span></div>
+        <div className="derived-row"><span>Will 의지</span><span>{attrs?.IQ?.value ?? '—'}</span><span>= IQ — 공포 판정·도주 판정 기반</span></div>
+        <div className="derived-row"><span>Per 지각</span><span>{attrs?.IQ?.value ?? '—'}</span><span>= IQ — 매복 발견·정찰</span></div>
+        <div className="derived-row"><span>Speed</span><span>{Math.floor((((attrs?.DX?.value ?? 10) + (attrs?.HT?.value ?? 10)) / 4) * 10) / 10}</span><span>= (DX+HT)÷4 — 행동 순서 결정</span></div>
+        <div className="derived-row"><span>Dodge 회피</span><span>{Math.floor((attrs?.DX?.value ?? 10) + (attrs?.HT?.value ?? 10)) / 4 + 3}</span><span>= Speed+3 — 피하기 능동 방어</span></div>
       </div>
       {skills.length > 0 && (
         <div className="gurps-skills">
@@ -109,7 +151,7 @@ function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
           {skills.map((s: any, i: number) => (
             <div key={i} className="skill-row" title={skillExplain[s.name] || skillExplain[s.ko] || ''}>
               <span className="skill-name">{s.ko || s.name}</span>
-              <span className="skill-level">{s.level}</span>
+              <span className="skill-level">{s.level}{s.cp ? <small className="skill-cp"> ({s.cp}CP)</small> : null}</span>
               {skillExplain[s.name || s.ko] && <span className="skill-effect">{skillExplain[s.name || s.ko]}</span>}
             </div>
           ))}

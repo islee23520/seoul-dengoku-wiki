@@ -147602,46 +147602,116 @@
       "traits": [],
       "skills": [
         {
-          "name": "Administration",
-          "ko": "행정·기록",
+          "name": "전략",
           "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-02.json",
-              "pointer": "/content/709/items/3/ko",
-              "quote": "생업: 제1분공방 차량기지 밭 경작·곡물 재고 관리"
-            },
-            {
-              "path": "lore/characters/Cast-State-02.json",
-              "pointer": "/content/710/text/ko",
-              "quote": "2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다."
-            },
-            {
-              "path": "lore/characters/Cast-State-02.json",
-              "pointer": "/content/712/text/ko",
-              "quote": "2123년 이일섭은 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 같은 해 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다."
-            }
-          ],
+          "level": 16,
+          "difficulty": "상",
           "cp": 8,
-          "level": 14
+          "effect": "부대 전체 행동 보정. 전장 선택"
         },
         {
-          "name": "Farming/TL?",
-          "ko": "경작·종자",
+          "name": "정치",
           "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-02.json",
-              "pointer": "/content/709/items/3/ko",
-              "quote": "생업: 제1분공방 차량기지 밭 경작·곡물 재고 관리"
-            }
-          ],
+          "level": 17,
+          "difficulty": "상",
+          "cp": 16,
+          "effect": "권력 획득·유지"
+        },
+        {
+          "name": "외교",
+          "attr": "IQ",
+          "level": 15,
+          "difficulty": "상",
+          "cp": 4,
+          "effect": "협상 성공률"
+        },
+        {
+          "name": "지휘",
+          "attr": "IQ",
+          "level": 15,
+          "difficulty": "중",
           "cp": 8,
-          "level": 14
+          "effect": "부대 사기·통제"
+        },
+        {
+          "name": "처세",
+          "attr": "IQ",
+          "level": 15,
+          "difficulty": "중",
+          "cp": 8,
+          "effect": "사회적 상황 대응"
+        },
+        {
+          "name": "전술",
+          "attr": "IQ",
+          "level": 14,
+          "difficulty": "중",
+          "cp": 4,
+          "effect": "소부대 교전 보정"
+        },
+        {
+          "name": "생존",
+          "attr": "HT",
+          "level": 14,
+          "difficulty": "중",
+          "cp": 4,
+          "effect": "야영지 운영·야외 활동"
+        },
+        {
+          "name": "경제",
+          "attr": "IQ",
+          "level": 14,
+          "difficulty": "중",
+          "cp": 4,
+          "effect": "곡물 재고·자산 관리"
+        },
+        {
+          "name": "농업",
+          "attr": "IQ",
+          "level": 14,
+          "difficulty": "중",
+          "cp": 4,
+          "effect": "경작·수확 관리"
+        },
+        {
+          "name": "회계",
+          "attr": "IQ",
+          "level": 15,
+          "difficulty": "중",
+          "cp": 8,
+          "effect": "재고 장부·배급 계산"
+        },
+        {
+          "name": "장검",
+          "attr": "DX",
+          "level": 13,
+          "difficulty": "중",
+          "cp": 8,
+          "effect": "도검 베기·찌르기"
+        },
+        {
+          "name": "지역지식",
+          "attr": "IQ",
+          "level": 15,
+          "difficulty": "중",
+          "cp": 8,
+          "effect": "천안·아산 지리"
+        },
+        {
+          "name": "가족 지식",
+          "attr": "IQ",
+          "level": 16,
+          "difficulty": "중",
+          "cp": 16,
+          "effect": "가문 내부 사정"
+        },
+        {
+          "name": "소소한 생활 기술",
+          "attr": "IQ",
+          "level": 12,
+          "difficulty": "하",
+          "cp": 10,
+          "effect": "생활 전반 잡기술"
         }
       ],
       "languages": [],
@@ -147660,7 +147730,8 @@
         "advantages": 80,
         "disadvantages": -20,
         "skills": 110,
-        "total": 280
+        "total": 280,
+        "breakdown_visible": true
       },
       "band": "일반 인물",
       "baseline": false,
@@ -147692,7 +147763,56 @@
           "description": "작전 일대 고정 거점"
         },
         "note": "S02 작전 일대 관할 영지"
-      }
+      },
+      "advantages": [
+        {
+          "name": "Strong Will +2",
+          "cp": 10,
+          "effect": "의지 판정 +2 — 공포·정신 저항"
+        },
+        {
+          "name": "Fit",
+          "cp": 5,
+          "effect": "피로 회복 빠름"
+        },
+        {
+          "name": "Longevity",
+          "cp": 5,
+          "effect": "노화 지연"
+        },
+        {
+          "name": "Contacts (Extensive)",
+          "cp": 20,
+          "effect": "광범위 인맥 — 정보·지원 획득"
+        },
+        {
+          "name": "Wealth (Comfortable)",
+          "cp": 10,
+          "effect": "여유 자산"
+        },
+        {
+          "name": "Patience (Extended)",
+          "cp": 10,
+          "effect": "장기 계획 인내"
+        },
+        {
+          "name": "Strong Will 추가 +2",
+          "cp": 20,
+          "effect": "의지 총 +4 수준"
+        }
+      ],
+      "disadvantages": [
+        {
+          "name": "Code of Honor (가문)",
+          "cp": -10,
+          "effect": "가문 명예 수칙 준수 의무"
+        },
+        {
+          "name": "Sense of Duty (가문)",
+          "cp": -10,
+          "effect": "가문 수호 의무"
+        }
+      ]
     },
     {
       "id": "K999",
@@ -149128,20 +149248,68 @@
       "traits": [],
       "skills": [
         {
-          "name": "Administration",
-          "ko": "행정·기록",
+          "name": "전략",
           "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Core-Characters.json",
-              "pointer": "/content/166/text/ko",
-              "quote": "생업 별명은 기록 당직·문서 등재."
-            }
-          ],
+          "level": 17,
+          "difficulty": "상",
+          "cp": 16,
+          "effect": "부대 전체 행동 보정"
+        },
+        {
+          "name": "전술",
+          "attr": "IQ",
+          "level": 16,
+          "difficulty": "중",
+          "cp": 32,
+          "effect": "소부대 교전 보정"
+        },
+        {
+          "name": "협박",
+          "attr": "Will",
+          "level": 16,
+          "difficulty": "중",
           "cp": 8,
-          "level": 12
+          "effect": "공포 부여·복종 유도"
+        },
+        {
+          "name": "지휘",
+          "attr": "IQ",
+          "level": 16,
+          "difficulty": "중",
+          "cp": 16,
+          "effect": "부대 사기·통제"
+        },
+        {
+          "name": "장검",
+          "attr": "DX",
+          "level": 15,
+          "difficulty": "중",
+          "cp": 16,
+          "effect": "도검 베기·찌르기"
+        },
+        {
+          "name": "창술",
+          "attr": "DX",
+          "level": 14,
+          "difficulty": "중",
+          "cp": 8,
+          "effect": "장창 찌르기"
+        },
+        {
+          "name": "화기",
+          "attr": "DX",
+          "level": 15,
+          "difficulty": "중",
+          "cp": 16,
+          "effect": "화기 사격"
+        },
+        {
+          "name": "역사",
+          "attr": "IQ",
+          "level": 13,
+          "difficulty": "중",
+          "cp": 3,
+          "effect": "세계관 지식"
         }
       ],
       "languages": [],
@@ -149160,7 +149328,8 @@
         "advantages": 75,
         "disadvantages": -30,
         "skills": 115,
-        "total": 300
+        "total": 300,
+        "breakdown_visible": true
       },
       "band": "일반 인물",
       "baseline": false,
@@ -149192,7 +149361,66 @@
           "description": "서울역 일대 고정 거점"
         },
         "note": "S06 서울역 일대 관할 영지"
-      }
+      },
+      "advantages": [
+        {
+          "name": "Combat Reflexes",
+          "cp": 15,
+          "effect": "전투 반응 +1, 선제 행동"
+        },
+        {
+          "name": "Fearlessness +3",
+          "cp": 6,
+          "effect": "공포 판정 +3"
+        },
+        {
+          "name": "Strong Will +3",
+          "cp": 15,
+          "effect": "의지 판정 +3"
+        },
+        {
+          "name": "High Pain Threshold",
+          "cp": 10,
+          "effect": "통증 페널티 무시"
+        },
+        {
+          "name": "Ambidexterity",
+          "cp": 5,
+          "effect": "양손 사용 가능"
+        },
+        {
+          "name": "Contacts (Extensive)",
+          "cp": 20,
+          "effect": "광범위 인맥"
+        },
+        {
+          "name": "Leadership 보정",
+          "cp": 4,
+          "effect": "지휘력 우수"
+        }
+      ],
+      "disadvantages": [
+        {
+          "name": "Bad Temper",
+          "cp": -10,
+          "effect": "화내기 쉬움 — 자제 판정"
+        },
+        {
+          "name": "Bloodlust",
+          "cp": -10,
+          "effect": "적을 죽이려는 충동"
+        },
+        {
+          "name": "Overconfidence",
+          "cp": -5,
+          "effect": "과신 — 위험 감수"
+        },
+        {
+          "name": "Enemies (경쟁 세력)",
+          "cp": -5,
+          "effect": "적대 세력 존재"
+        }
+      ]
     },
     {
       "id": "K1008",
@@ -149255,94 +149483,84 @@
       "traits": [],
       "skills": [
         {
-          "name": "Electronics Repair/TL? (Communications)",
-          "ko": "통신 장비 정비",
+          "name": "전략",
           "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/9/items/6/ko",
-              "quote": "생업: 주 통신 정비사 / 부 고물·철물 수리"
-            },
-            {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/10/text/ko",
-              "quote": "민웅기는 강남구청 생활권에서 통신 장비를 정비했다."
-            },
-            {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/10/text/ko",
-              "quote": "폐단말과 송수신 부품으로 귀환망에 이동식 민간 중계기를 더했다."
-            }
-          ],
+          "level": 16,
+          "difficulty": "상",
           "cp": 8,
-          "level": 15
+          "effect": "부대 전체 행동 보정"
         },
         {
-          "name": "Administration",
-          "ko": "행정·기록",
+          "name": "정치",
           "attr": "IQ",
-          "diff": "A",
-          "tier": "C",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/10/text/ko",
-              "quote": "종료 처리한 연락처에서 다시 응답이 오자 시각과 전력 사용량을 기록했다."
-            }
-          ],
+          "level": 15,
+          "difficulty": "상",
           "cp": 4,
-          "level": 14
+          "effect": "권력 획득·유지"
         },
         {
-          "name": "Mechanic/TL?",
-          "ko": "기계 정비",
+          "name": "외교",
           "attr": "IQ",
-          "diff": "A",
-          "tier": "C",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/9/items/6/ko",
-              "quote": "생업: 주 통신 정비사 / 부 고물·철물 수리"
-            }
-          ],
-          "cp": 4,
-          "level": 14
+          "level": 14,
+          "difficulty": "상",
+          "cp": 2,
+          "effect": "협상 성공률"
         },
         {
-          "name": "Farming/TL?",
-          "ko": "경작·종자",
+          "name": "지휘",
           "attr": "IQ",
-          "diff": "A",
-          "tier": "C",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/10/text/ko",
-              "quote": "그곳에서 농업으로 생계를 잇고 물자를 두고 다투지 않아도 되는 길을 찾으며 평화에 대한 믿음을 굳혔다."
-            }
-          ],
-          "cp": 4,
-          "level": 14
+          "level": 15,
+          "difficulty": "중",
+          "cp": 8,
+          "effect": "부대 사기·통제"
         },
         {
-          "name": "Judo",
-          "ko": "유도",
+          "name": "전술",
+          "attr": "IQ",
+          "level": 14,
+          "difficulty": "중",
+          "cp": 4,
+          "effect": "소부대 교전 보정"
+        },
+        {
+          "name": "처세",
+          "attr": "IQ",
+          "level": 14,
+          "difficulty": "중",
+          "cp": 4,
+          "effect": "사회적 상황 대응"
+        },
+        {
+          "name": "장검",
           "attr": "DX",
-          "diff": "H",
-          "tier": "C",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/11/text/ko",
-              "quote": "유도."
-            }
-          ],
+          "level": 13,
+          "difficulty": "중",
+          "cp": 8,
+          "effect": "도검 베기·찌르기"
+        },
+        {
+          "name": "차량 운전",
+          "attr": "DX",
+          "level": 13,
+          "difficulty": "중",
+          "cp": 8,
+          "effect": "차량·이동 수단 조종"
+        },
+        {
+          "name": "정비",
+          "attr": "IQ",
+          "level": 14,
+          "difficulty": "중",
           "cp": 4,
-          "level": 10
+          "effect": "통신·기계 수리"
+        },
+        {
+          "name": "생활·사회 잡기술",
+          "attr": "IQ",
+          "level": 13,
+          "difficulty": "하",
+          "cp": 45,
+          "effect": "광범위 생존·사회 기술 묶음"
         }
       ],
       "languages": [
@@ -149371,10 +149589,11 @@
       },
       "cp": {
         "attributes": 90,
-        "advantages": 60,
+        "advantages": 69,
         "disadvantages": -25,
-        "skills": 125,
-        "total": 250
+        "skills": 95,
+        "total": 229,
+        "breakdown_visible": true
       },
       "band": "일반 인물",
       "baseline": false,
@@ -149406,7 +149625,66 @@
           "description": "회현 일대 고정 거점"
         },
         "note": "S06 회현 일대 관할 영지"
-      }
+      },
+      "advantages": [
+        {
+          "name": "Charisma +2",
+          "cp": 10,
+          "effect": "설득·지휘 +2 반응 보정"
+        },
+        {
+          "name": "Strong Will +2",
+          "cp": 10,
+          "effect": "의지 판정 +2"
+        },
+        {
+          "name": "Contacts (Variety)",
+          "cp": 15,
+          "effect": "다방면 인맥"
+        },
+        {
+          "name": "Wealth (Comfortable)",
+          "cp": 10,
+          "effect": "여유 자산"
+        },
+        {
+          "name": "Social Chameleon",
+          "cp": 5,
+          "effect": "계층 이동 적응"
+        },
+        {
+          "name": "Combat Reflexes",
+          "cp": 15,
+          "effect": "전투 반응 +1"
+        },
+        {
+          "name": "Fearlessness +2",
+          "cp": 4,
+          "effect": "공포 판정 +2"
+        }
+      ],
+      "disadvantages": [
+        {
+          "name": "Social Stigma (출신)",
+          "cp": -10,
+          "effect": "낮은 출신 편견"
+        },
+        {
+          "name": "Overconfidence",
+          "cp": -5,
+          "effect": "과신"
+        },
+        {
+          "name": "Duty (상관)",
+          "cp": -5,
+          "effect": "상관 명령 의무"
+        },
+        {
+          "name": "Reputation (야망가)",
+          "cp": -5,
+          "effect": "평판 페널티"
+        }
+      ]
     },
     {
       "id": "K1009",
