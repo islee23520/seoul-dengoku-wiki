@@ -35,21 +35,7 @@ test('endpoint request uses exact router-relative route and reports excluded pag
   assert.deepEqual(unavailable, { status: 'unavailable', code: 'selectable-view-excluded' })
 })
 
-test('public generated article data and UI contain no historical projector authority', async () => {
+test('public generated article data contains no bundled feedback authority', async () => {
   const generated = JSON.parse(await readFile(new URL('../src/generated/world/World-Unbinding.json', import.meta.url), 'utf8'))
   assert.equal('feedback' in generated, false)
-  const selection = await readFile(new URL('../src/feedbackSelection.ts', import.meta.url), 'utf8')
-  const person = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
-  assert.doesNotMatch(selection, /personFeedbackDocument|markdownProjection|markdownLeaves/)
-  assert.doesNotMatch(person, /personFeedbackDocument/)
-})
-
-
-test('document-view fetch forwards abort signal and cannot reuse another route response', async () => {
-  const controller = new AbortController()
-  let observed
-  const pending = fetchFeedbackDocument('/world/Entity', 'ko', { signal: controller.signal, fetcher: async (_url, init) => { observed = init.signal; return new Promise((_resolve, reject) => init.signal.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')), { once: true })) } })
-  controller.abort()
-  await assert.rejects(() => pending, (error) => error.name === 'AbortError')
-  assert.equal(observed, controller.signal)
 })

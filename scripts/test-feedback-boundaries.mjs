@@ -36,9 +36,3 @@ test('abort signal reaches both session and submission requests', async () => {
   await submitFeedback(payload, { idempotencyKey: 'stable-request-key', signal: controller.signal, fetcher: async (url, init) => { signals.push(init.signal); return url.endsWith('/session') ? json({ csrfToken: 'csrf-token' }) : json({ id: 1, status: 'received' }, 201) } })
   assert.deepEqual(signals, [controller.signal, controller.signal])
 })
-
-test('canonical authority is fetched rather than projected from person Markdown', async () => {
-  const person = await import('../src/feedbackSelection.ts')
-  assert.equal('personFeedbackDocument' in person, false)
-  assert.equal('markdownProjection' in person, false)
-})

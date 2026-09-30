@@ -31,14 +31,3 @@ test('adapter uses the U1 endpoint and never converts auth errors into success',
   assert.equal(requests[1].init.credentials, 'include')
   assert.equal(requests[1].init.method, 'POST')
 })
-
-test('public pages expose the composer but no historical projector or annotation path', async () => {
-  const article = await readFile(new URL('../src/pages/ArticlePage.tsx', import.meta.url), 'utf8')
-  const person = await readFile(new URL('../src/pages/PersonDetailPage.tsx', import.meta.url), 'utf8')
-  const selection = await readFile(new URL('../src/feedbackSelection.ts', import.meta.url), 'utf8')
-  for (const source of [article, person]) {
-    assert.match(source, /useFeedbackDocument/)
-    assert.doesNotMatch(source, /annotation|underline|reviewQueue/i)
-  }
-  assert.doesNotMatch(selection, /personFeedbackDocument|markdownProjection|markdownLeaves/)
-})

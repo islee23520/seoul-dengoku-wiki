@@ -1,0 +1,13 @@
+npm notice run seoul-dengoku-wiki@0.1.0 npx
+npm notice run 'vitest' run scripts/test-feedback-canonical-ui.mjs scripts/test-feedback-dom-binding.mjs scripts/test-feedback-view-controller.mjs scripts/test-feedback-view-hook.mjs scripts/test-feedback-selection.mjs scripts/test-feedback-boundaries.mjs scripts/test-document-renderer.mjs
+
+ RUN  v5.0.2 /Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-ui-canonical
+
+
+ Test Files  7 passed (7)
+      Tests  20 passed (20)
+   Start at  02:53:42
+   Duration  1.74s (environment 66%, tests 17%, import 11%, transform 6%, worker 1%)
+
+    Isolate  7 workers spawned · ~150ms startup each (spawn + environment, per file)
+             at least ~899ms faster with isolate: false — reuses workers across files instead of one per file
