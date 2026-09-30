@@ -75,19 +75,15 @@ function visibleRun(markdown,path){
  return{text,sourceSpans:spans}
 }
 
-function visibleValue(value, path, locale, context) {
-  const localized = selected(value, locale)
-  if (typeof localized === 'string') return visibleMarkdown(localized, path, context)
-  let text = ''
-  const sourceSpans = []
-  for (const [index, run] of localized.entries()) {
-    const visible = visibleRun(run.text, `${path}/${index}/text`)
-    const overlap = text.endsWith(' ') && visible.text.startsWith(' ') ? 1 : 0
-    const offset = length(text) - overlap
-    text += visible.text.slice(overlap)
-    sourceSpans.push(...visible.sourceSpans.flatMap((span) => { const start='textStart'in span?span.textStart:0,end='textEnd'in span?span.textEnd:length(visible.text),a=Math.max(overlap,start);return a>=end?[]:[mappedSpan(span.path,span.start+a-start,span.end,offset+a,end-overlap+offset)] }))
-  }
-  return { text, sourceSpans }
+function visibleValue(value,path,locale,context){
+ const localized=selected(value,locale)
+ if(typeof localized==='string')return visibleMarkdown(localized,path,context)
+ const authored=localized.map((run)=>run.text).join('')
+ const rendered=visibleMarkdown(authored,path,context)
+ let sourceCursor=0
+ const runs=localized.map((run,index)=>{const start=sourceCursor;sourceCursor+=length(run.text);return{index,start,end:sourceCursor}})
+ const sourceSpans=rendered.sourceSpans.flatMap((span)=>runs.flatMap((run)=>{const a=Math.max(span.start,run.start),b=Math.min(span.end,run.end);if(a>=b)return[];const spanTextStart='textStart'in span?span.textStart:0;return[mappedSpan(`${path}/${run.index}/text`,a-run.start,b-run.start,spanTextStart+a-span.start,spanTextStart+b-span.start)]}))
+ return{text:rendered.text,sourceSpans}
 }
 const leaf = (block, leafId, blockKind, value, path, locale, blockAnchor = block.anchor) => ({ leafId, blockAnchor, blockKind, ...visibleValue(value, path, locale, blockKind === 'table' ? 'table' : blockKind === 'list' ? 'list' : blockKind === 'heading' ? 'heading' : blockKind === 'code' ? 'code' : 'paragraph') })
 
@@ -135,6 +131,8 @@ export function articleFeedbackRecord({ envelope, route, locale, blocks }) {
 }
 
 
+export const PERSON_SECTION_ORDER=['생애','관직','무공','일화','가문','관계','야망','공포','개입']
+
 function personSegment(envelope, headingAnchor) {
   const start = envelope.content.findIndex((block) => block.kind === 'heading' && block.anchor === headingAnchor)
   if (start < 0) throw new Error(`E_PERSON_FEEDBACK_HEADING:${headingAnchor}`)
@@ -144,28 +142,33 @@ function personSegment(envelope, headingAnchor) {
   return envelope.content.slice(start + 1, end).map((block) => ({ block, index: envelope.content.indexOf(block) }))
 }
 function localizedFragments(segment,locale){
- const fragments=[]
- for(const {block,index} of segment){const base=`/content/${index}`;const add=(value,path)=>{const localized=selected(value,locale);if(typeof localized==='string')fragments.push({text:localized,path});else localized?.forEach((run,runIndex)=>fragments.push({text:run.text,path:`${path}/${runIndex}/text`}))};if(block.text)add(block.text,`${base}/text/${locale}`);block.items?.forEach((item,itemIndex)=>add(item,`${base}/items/${itemIndex}/${locale}`))}
- return fragments
+ const bySection=new Map();let currentSection=null
+ const add=(section,text,path)=>{if(!section||!text)return;const rows=bySection.get(section)??[];rows.push({text,path,visible:visibleMarkdown(text,path)});bySection.set(section,rows)}
+ const processValue=(value,path)=>{
+  const localized=selected(value,locale)
+  if(Array.isArray(localized)){
+   for(const [runIndex,run] of localized.entries()){
+    const name=run.strong?run.text.match(/^([^\n.]+)\./u)?.[1]?.trim():null
+    if(name){currentSection=name;continue}
+    add(currentSection,run.text,`${path}/${runIndex}/text`)
+   }
+   return
+  }
+  const root=fromMarkdown(localized,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]})
+  for(const node of root.children){for(const child of node.children??[]){if(child.type==='strong'){const name=mdastText(child).match(/^([^\n.]+)\./u)?.[1]?.trim();if(name){currentSection=name;continue}}if(currentSection&&['text','inlineCode','link','emphasis'].includes(child.type)){const text=mdastText(child);const sourceStart=child.position?.start?.offset??0;add(currentSection,text,`${path}#${sourceStart}`)}}}
+ }
+ for(const {block,index} of segment){const base=`/content/${index}`;if(block.text)processValue(block.text,`${base}/text/${locale}`);block.items?.forEach((item,itemIndex)=>processValue(item,`${base}/items/${itemIndex}/${locale}`))}
+ return bySection
 }
-function clipVisibleSpans(visible,start,end){
- return visible.sourceSpans.flatMap((span)=>{const spanStart='textStart'in span?span.textStart:0,spanEnd='textEnd'in span?span.textEnd:length(visible.text),a=Math.max(start,spanStart),b=Math.min(end,spanEnd);return a>=b?[]:[mappedSpan(span.path,span.start+a-spanStart,span.start+b-spanStart,a-start,b-start)]})
-}
-function sectionSurfaceLeaves(markdown){
- const root=fromMarkdown(markdown,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]});const out=[]
- const add=(node,kind)=>{const text=mdastText(node);if(text)out.push({text,kind})}
- for(const node of root.children){if(node.type==='paragraph')add(node,'person-section-paragraph');if(node.type==='list')for(const item of node.children??[])add(item,'person-section-list-item')}
- return out
-}
+function clipVisibleSpans(visible,start,end){return visible.sourceSpans.flatMap((span)=>{const spanStart='textStart'in span?span.textStart:0,spanEnd='textEnd'in span?span.textEnd:length(visible.text),a=Math.max(start,spanStart),b=Math.min(end,spanEnd);return a>=b?[]:[mappedSpan(span.path,span.start+a-spanStart,span.start+b-spanStart,a-start,b-start)]})}
+function sectionSurfaceLeaves(markdown){const root=fromMarkdown(markdown,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]});const out=[];const add=(node,kind)=>{const text=mdastText(node);if(text)out.push({text,kind})};for(const node of root.children){if(node.type==='paragraph')add(node,'person-section-paragraph');if(node.type==='list')for(const item of node.children??[])add(item,'person-section-list-item')}return out}
 function actualSectionLeaves(sections,segment,locale,personId){
- const fragments=localizedFragments(segment,locale).map((fragment)=>({...fragment,visible:visibleMarkdown(fragment.text,fragment.path)})),leaves=[]
- for(const [section,markdown] of Object.entries(sections)){
-  let part=0
-  for(const surface of sectionSurfaceLeaves(markdown)){
-   const source=fragments.find((fragment)=>fragment.visible.text.includes(surface.text))
-   if(!source)throw new Error(`E_PERSON_SECTION_SOURCE:${personId}:${section}:${surface.text.slice(0,40)}`)
-   const start=length(source.visible.text.slice(0,source.visible.text.indexOf(surface.text))),end=start+length(surface.text)
-   leaves.push({leafId:`section:${section}:${surface.kind.endsWith('list-item')?'list':'paragraph'}:${part++}`,blockAnchor:`section:${section}`,blockKind:surface.kind,text:surface.text,sourceSpans:clipVisibleSpans(source.visible,start,end)})
+ const bySection=localizedFragments(segment,locale),leaves=[]
+ for(const section of PERSON_SECTION_ORDER){const markdown=sections[section];if(!markdown)continue;let part=0,fragmentCursor=0
+  for(const surface of sectionSurfaceLeaves(markdown)){const fragments=bySection.get(section)??[];let sourceIndex=-1,offset=-1
+   for(let index=fragmentCursor;index<fragments.length;index+=1){const found=fragments[index].visible.text.indexOf(surface.text);if(found>=0){sourceIndex=index;offset=length(fragments[index].visible.text.slice(0,found));break}}
+   if(sourceIndex<0)throw new Error(`E_PERSON_SECTION_SOURCE:${personId}:${section}:${surface.text.slice(0,40)}`)
+   const source=fragments[sourceIndex];fragmentCursor=sourceIndex+1;leaves.push({leafId:`section:${section}:${surface.kind.endsWith('list-item')?'list':'paragraph'}:${part++}`,blockAnchor:`section:${section}`,blockKind:surface.kind,text:surface.text,sourceSpans:clipVisibleSpans(source.visible,offset,offset+length(surface.text))})
   }
  }
  return leaves

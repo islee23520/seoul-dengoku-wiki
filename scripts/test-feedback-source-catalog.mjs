@@ -7,7 +7,7 @@ import { test } from 'vitest'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { DocumentContent } from '@seoul-dengoku/document-renderer'
-import { articleFeedbackRecord, canonicalRevision, personFeedbackRecord } from './feedback-source-catalog.mjs'
+import { articleFeedbackRecord, canonicalRevision, PERSON_SECTION_ORDER, personFeedbackRecord } from './feedback-source-catalog.mjs'
 
 const fixture = {
   id: 'DOC:fixture', domain: 'world', locales: { ko: { title: '표본', summary: '', tense: 'present' }, en: { title: 'Fixture', summary: '', tense: 'present' } },
@@ -96,10 +96,30 @@ test('actual publication transforms and person surfaces exactly match current ge
   assert.equal(houseLeaves.some((leaf)=>leaf.text.includes('출처층: original-fiction')),false)
   assert.equal(catalog.documents['DOC:Glossary'],undefined)
   const details=['person-0001','person-0002']
-  for(const id of details){const detail=JSON.parse(await readFile(resolve(`public/person-details/${id}.json`),'utf8')),record=catalog.documents[`PERSON:${id}`],leaves=record.revisions[record.currentRevision].leaves;for(const label of Object.keys(detail.sections))assert.ok(leaves.some((leaf)=>leaf.blockAnchor===`section:${label}`),`${id}:${label}`);assert.ok(leaves.some((leaf)=>leaf.blockKind.startsWith('person-biography-')),id);assert.ok(record.selector.includes('details[data-feedback-biography] li'))}
+  for(const id of details){const detail=JSON.parse(await readFile(resolve(`public/person-details/${id}.json`),'utf8')),record=catalog.documents[`PERSON:${id}`],leaves=record.revisions[record.currentRevision].leaves;for(const label of PERSON_SECTION_ORDER.filter((value)=>detail.sections[value]))assert.ok(leaves.some((leaf)=>leaf.blockAnchor===`section:${label}`),`${id}:${label}`);assert.ok(leaves.some((leaf)=>leaf.blockKind.startsWith('person-biography-')),id);assert.ok(record.selector.includes('details[data-feedback-biography] li'))}
   let displayed=0,covered=0
-  for(const [documentId,record] of Object.entries(catalog.documents).filter(([id])=>id.startsWith('PERSON:'))){const id=documentId.slice('PERSON:'.length),detail=JSON.parse(await readFile(resolve(`public/person-details/${id}.json`),'utf8')),leaves=record.revisions[record.currentRevision].leaves;for(const label of Object.keys(detail.sections)){displayed++;if(leaves.some((leaf)=>leaf.blockAnchor===`section:${label}`))covered++}}
+  for(const [documentId,record] of Object.entries(catalog.documents).filter(([id])=>id.startsWith('PERSON:'))){const id=documentId.slice('PERSON:'.length),detail=JSON.parse(await readFile(resolve(`public/person-details/${id}.json`),'utf8')),leaves=record.revisions[record.currentRevision].leaves;for(const label of PERSON_SECTION_ORDER.filter((value)=>detail.sections[value])){displayed++;if(leaves.some((leaf)=>leaf.blockAnchor===`section:${label}`))covered++}}
   assert.equal(covered,displayed)
+})
+
+
+
+test('actual person order, hidden-section filtering and duplicate source provenance follow PersonDetailPage', async () => {
+ const catalog=JSON.parse(await readFile(resolve('src/generated-private/feedback-selectable-views.ko.json'),'utf8')),record=catalog.documents['PERSON:person-0002'],leaves=record.revisions[record.currentRevision].leaves
+ const sections=[...new Set(leaves.filter((leaf)=>leaf.blockAnchor.startsWith('section:')).map((leaf)=>leaf.blockAnchor.slice('section:'.length)))]
+ const detail=JSON.parse(await readFile(resolve('public/person-details/person-0002.json'),'utf8'))
+ assert.deepEqual(sections,PERSON_SECTION_ORDER.filter((label)=>detail.sections[label]))
+ const hidden=catalog.documents['PERSON:person-0998'],hiddenLeaves=hidden.revisions[hidden.currentRevision].leaves;assert.equal(hiddenLeaves.some((leaf)=>leaf.blockAnchor==='section:신념'),false)
+ const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-01.json'),'utf8')),mutatedDetail=structuredClone(detail);envelope.content[6].text.ko[1].text=` ${detail.sections['생애']}`;mutatedDetail.sections['관직']=detail.sections['생애']
+ const duplicate=personFeedbackRecord({envelope,personId:detail.id,route:detail.detailRoute,headingText:`인물 ${detail.name}`,locale:'ko',sections:mutatedDetail.sections}),life=duplicate.leaves.find((leaf)=>leaf.leafId==='section:생애:paragraph:0'),office=duplicate.leaves.find((leaf)=>leaf.leafId==='section:관직:paragraph:0')
+ assert.equal(life.sourceSpans[0].path,'/content/5/items/3/ko/2/text');assert.equal(office.sourceSpans[0].path,'/content/6/text/ko/1/text')
+})
+
+test('actual reader-order multi-section selection passes df9 and reverse order fails', async (t) => {
+ const catalogPath=resolve('src/generated-private/feedback-selectable-views.ko.json'),catalog=JSON.parse(await readFile(catalogPath,'utf8')),document=catalog.documents['PERSON:person-0002'],leaves=document.revisions[document.currentRevision].leaves
+ const make=(leaf)=>({blockAnchor:leaf.blockAnchor,blockKind:leaf.blockKind,leafId:leaf.leafId,exactQuote:leaf.text,prefix:'',suffix:'',range:{start:0,end:Array.from(leaf.text).length,unit:'unicode-code-point'},sourceSpans:leaf.sourceSpans.map(({path,start,end,unit})=>({path,start,end,unit}))})
+ const office=make(leaves.find((leaf)=>leaf.leafId==='section:관직:paragraph:0')),martial=make(leaves.find((leaf)=>leaf.leafId==='section:무공:paragraph:0')),base={schemaVersion:'feedback-anchor.v1',documentId:document.documentId,route:document.route,locale:'ko',sourceRevision:document.currentRevision}
+ const root=await mkdtemp(join(tmpdir(),'feedback-person-order-'));t.onTestFinished(()=>rm(root,{recursive:true,force:true}));const service=process.env.FEEDBACK_SERVICE_ROOT??'/Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-service-u3/TOOL/feedback-service',child=spawn(process.execPath,[resolve(service,'src/server.mjs')],{env:{...process.env,NODE_ENV:'test',FEEDBACK_AUTH_PROVIDER:'test',FEEDBACK_DB_PATH:join(root,'feedback.sqlite'),FEEDBACK_REDACTION_JOURNAL_PATH:join(root,'authority/redactions.jsonl'),FEEDBACK_SELECTABLE_VIEW_PATH:catalogPath,FEEDBACK_SESSION_SECRET:'o'.repeat(48),FEEDBACK_REVIEWER_IDS:'900',FEEDBACK_PORT:'0'},stdio:['ignore','pipe','pipe']});t.onTestFinished(()=>{if(child.exitCode===null)child.kill('SIGTERM')});const ready=await waitLine(child.stdout,'FEEDBACK_READY '),url=ready.slice(15).replace('/api/feedback/health',''),auth=await fetch(`${url}/api/feedback/auth/test-session`,{method:'POST',headers:{'x-test-github-id':'100','x-test-login':'order'}}),authBody=await auth.json(),cookie=auth.headers.get('set-cookie').split(';')[0];const submit=(selections,key)=>fetch(`${url}/api/feedback/submissions`,{method:'POST',headers:{cookie,'x-csrf-token':authBody.csrfToken,'idempotency-key':key,'content-type':'application/json'},body:JSON.stringify({anchor:{...base,selections},body:'person order',reason:'기타'})});assert.equal((await submit([office,martial],'reader-order')).status,201);assert.equal((await submit([martial,office],'reverse-order')).status,422)
 })
 
 const waitLine = (stream, prefix) => new Promise((resolve, reject) => {
