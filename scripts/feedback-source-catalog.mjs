@@ -11,21 +11,18 @@ const plainSpan = (path, text) => ({ path, start: 0, end: length(text), unit: 'u
 const mappedSpan = (path, start, end, textStart, textEnd) => ({ path, start, end, unit: 'unicode-code-point', textStart, textEnd })
 
 function textSourceSpans(raw,value,path,sourceBase,textBase){
- const spans=[];let source=0,text=0
- while(text<length(value)){
-  const visible=Array.from(value)[text]
-  if(raw[source]==='\\'&&Array.from(raw)[source+1]===visible){source+=1}
-  else if(raw[source]==='&'){
-   const end=raw.indexOf(';',source)
-   if(end>source){const token=raw.slice(source,end+1),decoded=mdastText(fromMarkdown(token).children[0]);if(decoded===visible){spans.push(mappedSpan(path,sourceBase+source,sourceBase+source+1,textBase+text,textBase+text+1));source=end+1;text+=1;continue}}
+ const source=Array.from(raw),visible=Array.from(value),spans=[];let sourceIndex=0
+ for(let textIndex=0;textIndex<visible.length;textIndex+=1){
+  if(source[sourceIndex]==='\\'&&source[sourceIndex+1]===visible[textIndex])sourceIndex+=1
+  if(source[sourceIndex]==='&'){
+   const end=source.indexOf(';',sourceIndex)
+   if(end>sourceIndex){const token=source.slice(sourceIndex,end+1).join(''),decoded=mdastText(fromMarkdown(token).children[0]);if(decoded===visible[textIndex])throw new Error(`E_FEEDBACK_NONLINEAR_SOURCE_MAP:${path}:${sourceBase+sourceIndex}:${sourceBase+end+1}`)}
   }
-  const current=Array.from(raw)[source]
-  if(current!==visible)throw new Error(`E_FEEDBACK_SOURCE_MAP:${path}`)
-  spans.push(mappedSpan(path,sourceBase+source,sourceBase+source+1,textBase+text,textBase+text+1));source+=1;text+=1
+  if(source[sourceIndex]!==visible[textIndex])throw new Error(`E_FEEDBACK_SOURCE_MAP:${path}`)
+  spans.push(mappedSpan(path,sourceBase+sourceIndex,sourceBase+sourceIndex+1,textBase+textIndex,textBase+textIndex+1));sourceIndex+=1
  }
  return spans
 }
-
 function visibleMarkdown(markdown, path, context = 'paragraph') {
   if (context === 'code') return { text: markdown, sourceSpans: [plainSpan(path, markdown)] }
   const wrappers = context === 'table' ? { prefix: '| ' , suffix: ' |\n| --- |' } : context === 'list' ? { prefix: '- ', suffix: '' } : context === 'heading' ? { prefix: '## ', suffix: '' } : { prefix: '', suffix: '' }
@@ -37,14 +34,15 @@ function visibleMarkdown(markdown, path, context = 'paragraph') {
     if (node.type === 'text' || node.type === 'inlineCode') {
       const value = node.value ?? ''
       if (!value) return
-      const textStart = length(text), textEnd = textStart + length(value)
+      const textStart = length(text)
       const startOffset = node.position.start.offset - wrappers.prefix.length
       const endOffset = node.position.end.offset - wrappers.prefix.length
       if (endOffset <= 0 || startOffset >= markdown.length) return
       const raw = markdown.slice(Math.max(0, startOffset), Math.min(markdown.length, endOffset))
-      const sourceStart = length(markdown.slice(0, Math.max(0, startOffset)))
-      try { spans.push(...textSourceSpans(raw,value,path,sourceStart,textStart)) }
-      catch { const relative=raw.indexOf(value);if(relative<0)throw new Error(`E_FEEDBACK_SOURCE_MAP:${path}`);spans.push(mappedSpan(path,sourceStart+length(raw.slice(0,relative)),sourceStart+length(raw.slice(0,relative))+length(value),textStart,textEnd)) }
+      let sourceStart = length(markdown.slice(0, Math.max(0, startOffset))),sourceRaw=raw
+      const literal=raw.indexOf(value)
+      if(literal>=0){sourceStart+=length(raw.slice(0,literal));sourceRaw=value}
+      spans.push(...textSourceSpans(sourceRaw,value,path,sourceStart,textStart))
       text += value
       return
     }
@@ -61,18 +59,6 @@ function visibleMarkdown(markdown, path, context = 'paragraph') {
   spans.splice(0,spans.length,...merged)
   if (spans.length === 1 && spans[0].start === 0 && spans[0].end === length(markdown) && spans[0].textEnd === length(text)) return { text, sourceSpans: [plainSpan(path, text)] }
   return { text, sourceSpans: spans }
-}
-
-function visibleRun(markdown,path){
- if(/^\s+$/u.test(markdown))return{text:markdown,sourceSpans:[plainSpan(path,markdown)]}
- const leading=markdown.match(/^\s*/u)?.[0]??'',trailing=markdown.match(/\s*$/u)?.[0]??''
- const core=markdown.slice(leading.length,markdown.length-trailing.length)
- const result=core?visibleMarkdown(core,path):{text:'',sourceSpans:[]}
- const spans=[];let text=''
- if(leading){const end=length(leading);text+=leading;spans.push(mappedSpan(path,0,end,0,end))}
- const offset=length(text);text+=result.text;spans.push(...result.sourceSpans.map(span=>'textStart'in span?{...span,start:span.start+length(leading),end:span.end+length(leading),textStart:span.textStart+offset,textEnd:span.textEnd+offset}:mappedSpan(span.path,span.start+length(leading),span.end+length(leading),offset,offset+length(result.text))))
- if(trailing){const sourceStart=length(markdown)-length(trailing),textStart=length(text);text+=trailing;spans.push(mappedSpan(path,sourceStart,length(markdown),textStart,length(text)))}
- return{text,sourceSpans:spans}
 }
 
 function visibleValue(value,path,locale,context){
@@ -143,7 +129,7 @@ function personSegment(envelope, headingAnchor) {
 }
 function localizedFragments(segment,locale){
  const bySection=new Map();let currentSection=null
- const add=(section,text,path)=>{if(!section||!text)return;const rows=bySection.get(section)??[];rows.push({text,path,visible:visibleMarkdown(text,path)});bySection.set(section,rows)}
+ const add=(section,text,path,sourceBase=0)=>{if(!section||!text)return;const visible=visibleMarkdown(text,path);visible.sourceSpans=visible.sourceSpans.map((span)=>({...span,start:span.start+sourceBase,end:span.end+sourceBase}));const rows=bySection.get(section)??[];rows.push({text,path,visible});bySection.set(section,rows)}
  const processValue=(value,path)=>{
   const localized=selected(value,locale)
   if(Array.isArray(localized)){
@@ -155,7 +141,12 @@ function localizedFragments(segment,locale){
    return
   }
   const root=fromMarkdown(localized,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]})
-  for(const node of root.children){for(const child of node.children??[]){if(child.type==='strong'){const name=mdastText(child).match(/^([^\n.]+)\./u)?.[1]?.trim();if(name){currentSection=name;continue}}if(currentSection&&['text','inlineCode','link','emphasis'].includes(child.type)){const text=mdastText(child);const sourceStart=child.position?.start?.offset??0;add(currentSection,text,`${path}#${sourceStart}`)}}}
+  const visit=(node,inLabel=false)=>{
+   if(node.type==='strong'){const name=mdastText(node).match(/^([^\n.]+)\./u)?.[1]?.trim();if(name){currentSection=name;return}}
+   if(!inLabel&&(node.type==='text'||node.type==='inlineCode')){const base=length(localized.slice(0,node.position.start.offset));add(currentSection,node.value,path,base);return}
+   for(const child of node.children??[])visit(child,inLabel)
+  }
+  for(const node of root.children)visit(node)
  }
  for(const {block,index} of segment){const base=`/content/${index}`;if(block.text)processValue(block.text,`${base}/text/${locale}`);block.items?.forEach((item,itemIndex)=>processValue(item,`${base}/items/${itemIndex}/${locale}`))}
  return bySection

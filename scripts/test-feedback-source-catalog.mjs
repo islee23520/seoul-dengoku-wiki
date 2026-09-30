@@ -41,16 +41,23 @@ test('publication-context boundary cases preserve actual reader text and source 
   envelope.content=[
    {kind:'heading',anchor:'root',depth:1,text:{ko:'표본',en:'Fixture'}},
    {kind:'paragraph',anchor:'space',text:{ko:[{text:'A'},{text:' '},{text:'B'}],en:'A B'}},
-   {kind:'paragraph',anchor:'entity',text:{ko:'A &amp; B',en:'A &amp; B'}},
    {kind:'table',anchor:'literal-table',columns:[{ko:'1.',en:'1.'},{ko:'---',en:'---'},{ko:'#',en:'#'}],rows:[]},
    {kind:'code',anchor:'literal-code',language:'text',text:{ko:'**literal**\nA😀',en:'**literal**\nA😀'}},
   ]
   const record=articleFeedbackRecord({envelope,route:'/world/boundary',locale:'ko'})
   assert.equal(record.leaves.find((leaf)=>leaf.leafId==='space:text').text,'A B')
-  assert.equal(record.leaves.find((leaf)=>leaf.leafId==='entity:text').text,'A & B')
   assert.deepEqual(record.leaves.filter((leaf)=>leaf.blockAnchor==='literal-table').map((leaf)=>leaf.text),['1.','---','#'])
   assert.equal(record.leaves.find((leaf)=>leaf.leafId==='literal-code:text').text,'**literal**\nA😀')
   for(const leaf of record.leaves)for(let index=1;index<leaf.sourceSpans.length;index+=1)assert.ok(leaf.sourceSpans[index-1].end<=leaf.sourceSpans[index].start||leaf.sourceSpans[index-1].path!==leaf.sourceSpans[index].path)
+})
+
+
+
+test('encoded entities fail explicitly because df9 equal-width spans cannot represent nonlinear provenance', () => {
+ for(const value of ['😀 &amp; B','A &#65; B',[{text:'A '},{text:'&#65;'},{text:' B'}]]){
+  const envelope={id:'DOC:entity',domain:'root',locales:{ko:{title:'Entity',summary:'',tense:'present'}},content:[{kind:'heading',anchor:'root',depth:1,text:{ko:'Entity'}},{kind:'paragraph',anchor:'entity',text:{ko:value}}]}
+  assert.throws(()=>articleFeedbackRecord({envelope,route:'/world/entity',locale:'ko'}),/E_FEEDBACK_NONLINEAR_SOURCE_MAP/)
+ }
 })
 
 test('person authority uses the canonical source envelope and stable heading segment', () => {
@@ -103,6 +110,18 @@ test('actual publication transforms and person surfaces exactly match current ge
 })
 
 
+
+
+
+test('every emitted current catalog span resolves to a canonical JSON pointer and source bounds', async () => {
+ const catalog=JSON.parse(await readFile(resolve('src/generated-private/feedback-selectable-views.ko.json'),'utf8')),sources=new Map()
+ const resolvePointer=(root,path)=>path.split('/').slice(1).reduce((value,part)=>value?.[part.replaceAll('~1','/').replaceAll('~0','~')],root)
+ for(const [documentId,document] of Object.entries(catalog.documents)){
+  let source
+  if(documentId.startsWith('PERSON:')){const detail=JSON.parse(await readFile(resolve(`public/person-details/${documentId.slice(7)}.json`),'utf8')),slug=detail.sourceRoute.split('/').at(-1).split('#')[0],path=slug==='Diaspora-Corridors'?`lore/factions/${slug}.json`:`lore/characters/${slug}.json`;source=sources.get(slug)??JSON.parse(await readFile(resolve(path),'utf8'));sources.set(slug,source)}else{const slug=document.route.split('/').at(-1);const files={ 'Sixteen-States':'lore/factions/Sixteen-States.json','Operating-Houses':'lore/Operating-Houses.json' };if(files[slug])source=JSON.parse(await readFile(resolve(files[slug]),'utf8'));else continue}
+  for(const leaf of document.revisions[document.currentRevision].leaves)for(const span of leaf.sourceSpans){assert.equal(span.path.includes('#'),false,`${documentId}:${span.path}`);const value=resolvePointer(source,span.path);assert.equal(typeof value,'string',`${documentId}:${span.path}`);assert.ok(span.start>=0&&span.end<=Array.from(value).length&&span.start<span.end,`${documentId}:${span.path}:${span.start}-${span.end}`)}
+ }
+})
 
 test('actual person order, hidden-section filtering and duplicate source provenance follow PersonDetailPage', async () => {
  const catalog=JSON.parse(await readFile(resolve('src/generated-private/feedback-selectable-views.ko.json'),'utf8')),record=catalog.documents['PERSON:person-0002'],leaves=record.revisions[record.currentRevision].leaves
