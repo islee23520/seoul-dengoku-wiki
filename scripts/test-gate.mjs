@@ -215,6 +215,8 @@ test('tooltip registry follows actual render consumption in both directions', ()
   // 선언만 있고 렌더 참조가 없으면 공개 표면이 아니다: 요구하지 않고 수집하지도 않는다.
   assert.deepEqual(uiTooltipFields(declared), [])
   assert.deepEqual(uiTooltipFields('const unrelated = {}'), [])
+  // 무관 객체의 속성 키와 멤버 이름은 값 참조가 아니다.
+  assert.deepEqual(uiTooltipFields("const privateDiagnostics = { skillExplain: 'private-only' }; const meta = {}; meta.skillExplain"), [])
   // 실제로 소비되는 맵은 그대로 검사한다(표지 문구 플래그 포함).
   const consumed = declared + "; attrExplain['ST']; skillExplain['권법']; valueMeta['권위']; desireMeta['갈망']"
   const fields = uiTooltipFields(consumed)
@@ -223,6 +225,13 @@ test('tooltip registry follows actual render consumption in both directions', ()
   // 소비되는데 선언이 없으면 실패한다. 제거된 미사용 맵은 요구하지 않는다.
   assert.throws(() => uiTooltipFields("const attrExplain = { ST: { icon: 'x', desc: '정상' } }; attrExplain['ST']; skillExplain['권법']"), /E_UI_TOOLTIP_FIELDS:skillExplain/u)
   assert.throws(() => uiTooltipFields(consumed.replace("const desireMeta = { '갈망': { plus: '정상', minus: '정상' } }; ", '')), /E_UI_TOOLTIP_FIELDS:desireMeta/u)
+  // 미사용 같은이름 지역 선언은 실제 소비 맵을 덮어쓰지 못한다: 표지는 여전히 잡힌다.
+  const shadowed = consumed + "; function neverRendered() { const attrExplain = { ST: { icon: 'y', desc: '정상' } }; return 0 }"
+  const shadowFields = uiTooltipFields(shadowed)
+  assert.equal(shadowFields.length, 6)
+  assert.equal(shadowFields.filter(([path, text]) => visibleFieldFailures(text, path).length > 0).length, 2)
+  // 그림자 선언 자체는 소비되지 않아 요구 대상이 아니다(빈 객체여도 통과).
+  assert.equal(uiTooltipFields(consumed + "; function neverRendered() { const skillExplain = {}; return 0 }").length, 6)
 })
 
 // Each case mutates only readFileSync bytes in a fresh process, then executes the real CLI.
@@ -240,7 +249,7 @@ function gateProbe(fixture) {
     fs.readFileSync = function(path, ...args) {
       if (String(path) !== target) return read.call(this, path, ...args);
       const original = read.call(this, path, ...args);
-      if (fixture.append) return original + fixture.append;
+      if (fixture.append && !fixture.tsProperty) return original + fixture.append;
       if (fixture.tsProperty) {
         const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
         let target;
@@ -257,7 +266,7 @@ function gateProbe(fixture) {
         }
         visit(ast);
         if (!target || !ts.isStringLiteralLike(target)) throw new Error('E_TEST_FIXTURE_PROPERTY');
-        return original.slice(0, target.getStart(ast)) + JSON.stringify(fixture.tsProperty.value) + original.slice(target.getEnd());
+        { const out = original.slice(0, target.getStart(ast)) + JSON.stringify(fixture.tsProperty.value) + original.slice(target.getEnd()); if (fixture.append) return out + fixture.append; return out; }
       }
       if (fixture.tsArrayField) {
         const ast = ts.createSourceFile(fixture.file, original, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
@@ -310,6 +319,17 @@ test('production gate excludes unused tooltip and private person metadata but ca
   const consumed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsProperty: { map: 'attrExplain', entry: 0, property: 'desc', value: '사용자 확정' } })
   assert.equal(consumed.status, 1, consumed.output)
   assert.match(consumed.output, /tooltips/u)
+  // 무관 객체의 skillExplain 속성 키는 소비가 아니다: 게이트는 통과해야 한다.
+  const propertyKey = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', append: "\nconst privateDiagnostics = { skillExplain: 'private-only' };\n" })
+  assert.equal(propertyKey.status, 0, propertyKey.output)
+  // 실제 소비 맵의 표지는 미사용 같은이름 지역 선언이 가리지 못한다: 여전히 실패해야 한다.
+  const shadow = gateProbe({
+    file: 'src/pages/PersonDetailPage.tsx',
+    tsProperty: { map: 'attrExplain', entry: 0, property: 'desc', value: '사용자 확정' },
+    append: '\nfunction neverRenderedProbe() {\n  const attrExplain = { ST: { icon: "x", desc: "normal" } };\n  return 0;\n}\n',
+  })
+  assert.equal(shadow.status, 1, shadow.output)
+  assert.match(shadow.output, /tooltips/u)
   const hiddenSkill = gateProbe({ file: 'lore/name-pools/gurps-cast.json', path: ['people', 0, 'skills', 0, 'name'], value: '사용자 확정' })
   assert.equal(hiddenSkill.status, 0, hiddenSkill.output)
 })
