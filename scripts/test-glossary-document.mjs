@@ -24,50 +24,18 @@ const entry = (overrides = {}) => ({
   ...overrides,
 })
 
-// Reader-facing snapshot of the canonical Korean glossary, including its section order and spacing.
-const koreanPage = `# 용어 사전
-
-## 국가 (16개국)
-
-- **수문국**: 양평역을 수도로 삼고 서부 급수를 맡는 강국.
-- **대한민국정부**: 광화문을 중심으로 종로·중구의 명부와 배급, 도장·인지세, 청사 경비대를 직접 관리하는 십육국 제일의 강국. (별칭: 정부)
-- **정동노총**: 시청역 앞 파업 명부를 지키는 소국.
-
-## 가문 및 조직
-
-- **영등포수문가**: 영등포 일대의 지하 수로와 제어 밸브를 장악한 기술자 가문. (별칭: 수문가)
-- **여의도전산가**: 구 여의도의 금융 전산망과 데이터 센터를 통제하는 기업 가문. (별칭: 전산가)
-
-## 인물 및 직책
-
-- **렌즈 착용자**: 항상 렌즈를 착용하고 기계와 동기화된 채 살아가는 자.
-
-## 기술 및 장비
-
-- **피지컬 에이아이**: 물리적 신체를 가지고 전술 작전을 수행하는 기계 지능. (별칭: PAI)
-- **렌즈**: 착용자의 시야에 전장 정보와 기계 상태를 겹쳐 보여주는 증강 장비. (별칭: 전술렌즈)
-
-## 무공 및 전술
-
-- **감응조준법**: 피지컬 에이아이 렌즈의 센서 정보와 자신의 시각을 동기화하여 사격하는 사격술. (별칭: 감응조준)
-- **수문호흡법**: 유독 가스가 섞인 하층 공기에서 효율적으로 산소를 확보하는 호흡 기술.
-
-## 시설 및 지리
-
-- **심층 터널**: 환승 통로 밑바닥에 위치한 가장 깊은 구역으로, 빛이 들지 않고 환기가 되지 않는다. (별칭: 심층)
-
-## 사건 및 연대
-
-- **대정전**: 2026년 10월 14일 21:47경 호출망과 원격 제어가 끊기고 전력 공급이 무너진 사건. 일부 시설은 사람의 수동 운전으로 버텼다.
-- **2126년**: 서울 열여섯 나라의 개막 시점. (별칭: 현재)
-
-## 질병
-
-- **포자감염**: 저온 환경의 지하 균류 포자가 폐에 자리 잡아 호흡기를 굳게 만드는 치명적 증상. (별칭: 포자병)
-`
-
 test('the Korean page renders the canonical terms, definitions, aliases and section order', () => {
-  assert.equal(render('ko'), koreanPage)
+  const expected = ['# 용어 사전', '']
+  for (const section of glossarySections) {
+    const terms = entries.filter(({ category }) => section.categories.includes(category))
+    if (!terms.length) continue
+    expected.push(`## ${section.ko}`, '')
+    for (const { display_name_ko: name, reader_definition_ko: definition, aliases } of terms) {
+      expected.push(`- **${name}**: ${definition}${aliases.length ? ` (별칭: ${aliases.join(', ')})` : ''}`)
+    }
+    expected.push('')
+  }
+  assert.equal(render('ko'), `${expected.join('\n').trimEnd()}\n`)
 })
 
 test('the English page renders every entry under the English section labels in the same order', () => {
@@ -82,6 +50,13 @@ test('the English page renders every entry under the English section labels in t
     assert.ok(english.includes(`\n- **${name}**: ${definition}${suffix}\n`), name)
   }
   assert.doesNotMatch(english, /[가-힣]/u)
+})
+
+test('the approved martial school has no field aliases in either locale', () => {
+  const aiming = entries.find(({ term_id }) => term_id === 'martial-aiming')
+  assert.ok(aiming)
+  assert.deepEqual(aiming.aliases, [])
+  assert.deepEqual(aiming.aliases_en, [])
 })
 
 test('the document is an in-memory root page with both locale titles', () => {
