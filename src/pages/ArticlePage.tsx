@@ -1,10 +1,10 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
-import { DocumentContent, fromWikiBlocks, type WikiBlock } from '@seoul-dengoku/document-renderer'
+import { DocumentContent, type WikiBlock } from '@seoul-dengoku/document-renderer'
 import { Breadcrumbs, PageHeader, StateNotice, TableOfContents, TableViewport } from '@seoul-dengoku/shared-web-ui'
 import { wikiCatalog, wikiEnglishCatalog, type WikiDomain } from '../generated/wikiCatalog'
 import { resolveLegacyRegionRoute, resolveLegacyWorldRoute, resolveWikiContentHref } from '../wikiRouting'
-import { wikiBlockText, wikiHeadingId } from '../wikiDocument'
+import { wikiArticleContent, wikiBlockText, wikiHeadingId } from '../wikiDocument'
 import { wikiAnchorHref } from '../sharedCategories'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
@@ -112,13 +112,10 @@ export default function ArticlePage({ locale = 'ko' }: { locale?: WikiLocale }) 
     return () => { document.title = '서울:전국 — 공식 위키' }
   }, [wikiDocument, text.site])
 
-  const sectionLinks = useMemo(() => {
-    if (!blocks) return []
-    return blocks.filter((block) => block.type === 'heading' && [2, 3].includes(block.depth ?? 0)).map((block) => ({
-      depth: block.depth ?? 2, title: wikiBlockText(block), id: wikiHeadingId(wikiBlockText(block)),
-    })).slice(0, 18)
-  }, [blocks])
-  const content = useMemo(() => blocks ? fromWikiBlocks(blocks) : [], [blocks])
+  const content = useMemo(() => blocks ? wikiArticleContent(blocks) : [], [blocks])
+  const sectionLinks = useMemo(() => content.filter(({ node }) => node.type === 'heading' && [2, 3].includes(node.depth ?? 0))
+    .map(({ node, anchors }) => ({ depth: node.depth ?? 2, title: wikiBlockText(node), id: anchors.get(node) ?? '' }))
+    .slice(0, 18), [content])
 
   if (legacyRoute) return <Navigate to={`${legacyRoute}${hash}`} replace />
   if (legacyRegionRoute) return <Navigate to={legacyRegionRoute} replace />
