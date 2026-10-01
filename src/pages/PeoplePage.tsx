@@ -1,23 +1,55 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
-import portraitCatalog from '../../portrait-catalog.json'
 
 const koreanNameOrder = new Intl.Collator('ko-KR', { usage: 'sort', sensitivity: 'variant' })
 const peopleByName = [...peopleCatalog].sort((left, right) => koreanNameOrder.compare(left.name, right.name) || left.id.localeCompare(right.id))
-const recommendedIds = ['person-1003', 'person-1008', 'person-1007', 'person-1009', 'person-0998']
-const recommendedPeople = recommendedIds.map((id) => peopleCatalog.find((person) => person.id === id)!)
-const portraits = new Map(portraitCatalog.entries.map((entry) => [entry.personId, entry]))
+
+const filterSessionKey = 'wiki.people.filters.v1'
+const commonTiers = ['T1', 'T2', 'T3', 'T4', 'T5']
+const defaultFilters = { query: '', state: 'all', commonTier: 'all', occupation: 'all', gender: 'all' }
+
+function readSessionFilters() {
+  try {
+    const saved = window.sessionStorage.getItem(filterSessionKey)
+    if (!saved) return defaultFilters
+    const parsed: unknown = JSON.parse(saved)
+    if (!parsed || typeof parsed !== 'object') throw new Error('Invalid People filter session')
+    const fields = parsed as Record<string, unknown>
+    if (!Object.keys(defaultFilters).every((key) => typeof fields[key] === 'string')) throw new Error('Invalid People filter fields')
+    const choice = (field: 'state' | 'occupation' | 'gender', catalogField: 'stateName' | 'occupation' | 'gender') =>
+      fields[field] === 'all' || peopleByName.some((person) => (person[catalogField] || '미등록') === fields[field]) ? fields[field] as string : 'all'
+    return {
+      query: fields.query as string,
+      state: choice('state', 'stateName'),
+      commonTier: fields.commonTier === 'all' || commonTiers.includes(fields.commonTier as string) ? fields.commonTier as string : 'all',
+      occupation: choice('occupation', 'occupation'),
+      gender: choice('gender', 'gender'),
+    }
+  } catch {
+    console.warn('People filter session could not be restored')
+    return defaultFilters
+  }
+}
 
 export default function PeoplePage() {
-  const [query, setQuery] = useState('')
-  const [state, setState] = useState('all')
-  const [commonTier, setCommonTier] = useState('all')
-  const [occupation, setOccupation] = useState('all')
-  const [gender, setGender] = useState('all')
+  const [filters, setFilters] = useState(readSessionFilters)
+  const { query, state, commonTier, occupation, gender } = filters
+  const setFilter = (field: keyof typeof defaultFilters, value: string) => setFilters((current) => ({ ...current, [field]: value }))
+  useEffect(() => {
+    try {
+      if (Object.keys(defaultFilters).every((key) => filters[key as keyof typeof defaultFilters] === defaultFilters[key as keyof typeof defaultFilters])) {
+        window.sessionStorage.removeItem(filterSessionKey)
+      } else {
+        window.sessionStorage.setItem(filterSessionKey, JSON.stringify(filters))
+      }
+    } catch {
+      console.warn('People filter session could not be saved')
+    }
+  }, [filters])
   const options = useMemo(() => {
     const values = (key: 'stateName' | 'occupation' | 'gender') => [...new Set(peopleByName.map((person) => person[key] || '미등록'))].sort(koreanNameOrder.compare)
-    return { states: values('stateName'), tiers: ['T1', 'T2', 'T3', 'T4', 'T5'], occupations: values('occupation'), genders: values('gender') }
+    return { states: values('stateName'), tiers: commonTiers, occupations: values('occupation'), genders: values('gender') }
   }, [])
   const filtered = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('ko')
@@ -30,7 +62,7 @@ export default function PeoplePage() {
     })
   }, [query, state, commonTier, occupation, gender])
 
-  const resetFilters = () => { setQuery(''); setState('all'); setCommonTier('all'); setOccupation('all'); setGender('all') }
+  const resetFilters = () => setFilters(defaultFilters)
 
   return (
     <article className="wiki-article" data-wiki-shell="react-official">
@@ -41,36 +73,15 @@ export default function PeoplePage() {
       <p>이 원장의 1,019명은 모두 영웅 인물이다. 각 인물은 생업과 경력에 따라 전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성을 갖는다. 다만 전투 클래스 이름과 개인별 배정은 아직 확정되지 않았으며, 제안 단계 분류를 인물 카드에 자동으로 붙이지 않는다.</p>
       <p><Link to="/people/draft">인물 시트 초안 만들기</Link> · 정본에 바로 반영되지 않는 검토용 편집기</p>
       <p><Link to="/tools/character-art">인물 아트 작업 도구 열기</Link></p>
-      <section className="people-recommended" aria-labelledby="recommended-people-title">
-        <h2 id="recommended-people-title">개막 추천 인물</h2>
-        <ul>{recommendedPeople.map((person) => (
-          <li key={person.id}>
-            {portraits.has(person.id) && <img className="people-portrait" src={`${import.meta.env.BASE_URL}portraits/${person.id}.png`} alt={`${person.name} 초상 아트 제안`} />}
-            <Link to={person.detailRoute}>{person.name}</Link><span>{person.title}</span>
-            {portraits.has(person.id) && <span>초상 아트 제안 · <a href={`${import.meta.env.BASE_URL}portrait-tokens/${person.id}.json`}>디자인 토큰</a></span>}
-          </li>
-        ))}</ul>
-      </section>
-      <section className="people-leaders" aria-labelledby="leader-portraits-title">
-        <h2 id="leader-portraits-title">16국 수장 초상</h2>
-        <p>이 초상의 얼굴과 의복은 정본 인물 정보와 구분되는 아트 제안이다.</p>
-        <ul>{portraitCatalog.entries.filter((entry) => entry.stateId).map((entry) => (
-          <li key={entry.personId}>
-            <img className="people-portrait" src={`${import.meta.env.BASE_URL}portraits/${entry.personId}.png`} alt={`${entry.name} 초상 아트 제안`} />
-            <Link to={`/people/${entry.personId}`}>{entry.name}</Link><span>{entry.stateId}</span>
-            <a href={`${import.meta.env.BASE_URL}portrait-tokens/${entry.personId}.json`}>디자인 토큰</a>
-          </li>
-        ))}</ul>
-      </section>
       <label className="people-search">
         <span>이름·직위·국가 검색</span>
-        <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="예: 윤서린, 급수, S4" />
+        <input type="search" value={query} onChange={(event) => setFilter('query', event.target.value)} placeholder="예: 윤서린, 급수, S4" />
       </label>
       <div className="people-filters" aria-label="등장인물 필터">
-        <label>국가<select value={state} onChange={(event) => setState(event.target.value)}><option value="all">전체</option>{options.states.map((value) => <option key={value}>{value}</option>)}</select></label>
-        <label>직급(공통 티어)<select value={commonTier} onChange={(event) => setCommonTier(event.target.value)}><option value="all">전체</option>{options.tiers.map((value) => <option key={value}>{value}</option>)}</select></label>
-        <label>직업<select value={occupation} onChange={(event) => setOccupation(event.target.value)}><option value="all">전체</option>{options.occupations.map((value) => <option key={value}>{value}</option>)}</select></label>
-        <label>성별<select value={gender} onChange={(event) => setGender(event.target.value)}><option value="all">전체</option>{options.genders.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label>국가<select value={state} onChange={(event) => setFilter('state', event.target.value)}><option value="all">전체</option>{options.states.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label>직급(공통 티어)<select value={commonTier} onChange={(event) => setFilter('commonTier', event.target.value)}><option value="all">전체</option>{options.tiers.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label>직업<select value={occupation} onChange={(event) => setFilter('occupation', event.target.value)}><option value="all">전체</option>{options.occupations.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label>성별<select value={gender} onChange={(event) => setFilter('gender', event.target.value)}><option value="all">전체</option>{options.genders.map((value) => <option key={value}>{value}</option>)}</select></label>
         <button type="button" onClick={resetFilters}>필터 초기화</button>
       </div>
       <p className="wiki-domain-label" aria-live="polite">검색 결과 {filtered.length}명</p>
