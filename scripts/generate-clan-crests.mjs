@@ -10,7 +10,10 @@ const tables = JSON.parse(await readFile(join(root, 'lore/name-pools/clan-hangny
 const clans = tables.clans.filter((clan) => !clan.id.includes('-agreed-'))
 const assigned = assignCrests(clans.map((clan) => clan.id))
 const motifs = new Map(JSON.parse(await readFile(join(root, 'assets', 'clan-crest-motifs.json'), 'utf8')).motifs.map((row) => [row.clan, row]))
-const selected = new Map([['c774-c804-c758-674e', '748efdbd7bc111c230ae57d32285630312b35df2258abf6952d8cad36db3b01a']])
+const selected = new Map([
+  ['c774-c804-c758-674e', '748efdbd7bc111c230ae57d32285630312b35df2258abf6952d8cad36db3b01a'],
+  ['goryeong-shin', 'faccdb8a017eef79666f85bf2f4af6232b8d459f4115fe974ac0568c958441e8'],
+])
 
 await mkdir(outDir, { recursive: true })
 for (const name of await readdir(outDir)) if (name.endsWith('.svg')) await rm(join(outDir, name))
