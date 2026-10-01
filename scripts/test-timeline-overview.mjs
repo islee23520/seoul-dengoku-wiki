@@ -5,6 +5,19 @@ import { test } from 'vitest'
 const readJson = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
 const koText = (leaf) => typeof leaf === 'string' ? leaf : leaf.map((run) => run.text).join('')
 
+test('regional-only years use their actual prose for overview fields', async () => {
+  const { buildTimelineYears } = await import('./timeline-overview.mjs')
+  const years = buildTimelineYears([
+    { kind: 'heading', depth: 3, text: { ko: '2125년' } },
+    { kind: 'heading', depth: 4, anchor: 'peninsula-example', text: { ko: '지역 사건' } },
+    { kind: 'paragraph', text: { ko: '화물 운송이 중단되었다. 다른 경로를 확인하였다.' } },
+  ], () => [])
+  assert.equal(years[0].pressure, '화물 운송이 중단되었다.')
+  assert.equal(years[0].decision, '화물 운송이 중단되었다.')
+  assert.equal(years[0].immediate, '화물 운송이 중단되었다.')
+  assert.equal(years[0].aftermath, years[0].immediate)
+})
+
 test('timeline overview has one causal summary for every year heading in the Century-Annals canon', async () => {
   const data = await readJson('../public/timeline-overview.json')
   const annals = await readJson('../lore/chronology/Century-Annals.json')
