@@ -20,7 +20,12 @@ test('GDD catalog exposes canonical documents and current data summaries', async
   const stationControl = JSON.parse(await readFile(resolve(loreRoot, 'places/station-control-overrides.json'), 'utf8'))
   assert.ok(stationControl.overrides.length > 0)
   assert.equal(new Set(stationControl.overrides.map(({ stationId }) => stationId)).size, stationControl.overrides.length)
-  assert.deepEqual(contract.datasets.map((dataset) => dataset.records), [1019, 1019, 37, 334, stationControl.overrides.length, 334, 427])
+  const cast = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8'))
+  const genders = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8'))
+  assert.equal(cast.count, cast.people.length)
+  assert.equal(genders.count, genders.people.length)
+  assert.equal(cast.people.length, genders.people.length)
+  assert.deepEqual(contract.datasets.map((dataset) => dataset.records), [cast.people.length, genders.people.length, 37, 334, stationControl.overrides.length, 334, 427])
 })
 
 test('the publication manifest equals the public canon source set and generated content', async () => {
