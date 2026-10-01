@@ -102,9 +102,9 @@ export function validate(dataset) {
     fk(row.parentStateId, stateIds, row.id);
     fk(row.sourceAnchor, stateAnchors, row.id);
   }
-  if (sources.registry.totalPeople !== 1019 || sources.registry.persons.length !== 1019 ||
+  if (sources.registry.totalPeople !== 1022 || sources.registry.persons.length !== 1022 ||
       sources.registry.persons.some((p, i) => p.id !== `K${String(i + 1).padStart(3, "0")}`) ||
-      people.length !== sources.registry.persons.length + config.provisionalPeople.length) errors.push("people: issued K001–K1019 mismatch");
+      people.length !== sources.registry.persons.length + config.provisionalPeople.length) errors.push("people: issued K001–K1022 mismatch");
   for (const person of config.provisionalPeople) {
     if (!/^P\d{3}$/.test(person.id) || !(sources.relationSource.content.find((b) => b.anchor === person.sourceAnchor)?.rows || [])
       .some((r) => ko(r[0]) === person.name || ko(r[2]) === person.name)) errors.push(`provisional identity: missing source ${person.id}`);

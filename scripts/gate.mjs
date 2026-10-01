@@ -13,7 +13,7 @@ const repoRoot = wikiRoot
 const distDir = join(wikiRoot, 'dist')
 const contentDir = join(wikiRoot, 'src/generated/world')
 const englishContentDir = join(wikiRoot, 'src/generated/world-en')
-const referenceDir = [join(repoRoot, 'RESEARCH', 'canon-reference'), join(repoRoot, '..', 'RESEARCH', 'canon-reference'), join(repoRoot, '..', '..', 'RESEARCH', 'canon-reference')].find((path) => existsSync(path))
+const referenceDir = [process.env.SEOUL_KENSHI_ROOT && join(process.env.SEOUL_KENSHI_ROOT, 'RESEARCH', 'canon-reference'), join(repoRoot, 'RESEARCH', 'canon-reference'), join(repoRoot, '..', 'RESEARCH', 'canon-reference'), join(repoRoot, '..', '..', 'RESEARCH', 'canon-reference')].filter(Boolean).find((path) => existsSync(path))
   ?? join(repoRoot, 'RESEARCH', 'canon-reference')
 
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']

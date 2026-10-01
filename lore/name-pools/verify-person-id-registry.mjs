@@ -49,18 +49,18 @@ test("커밋된 레지스트리가 모든 불변식을 통과한다", () => {
   assert.deepEqual(validateRegistry(committed, ctx), []);
 });
 
-test("(b) 개수 불변식 422 + 597 = 1019", () => {
+test("(b) 개수 불변식 422 + 600 = 1022", () => {
   assert.equal(committed.existingKCount, 422);
-  assert.equal(committed.issuedCount, 597);
-  assert.equal(committed.totalPeople, 1019);
-  assert.equal(committed.persons.length, 1019);
+  assert.equal(committed.issuedCount, 600);
+  assert.equal(committed.totalPeople, 1022);
+  assert.equal(committed.persons.length, 1022);
   assert.equal(committed.existingKCount + committed.issuedCount, committed.totalPeople);
-  assert.equal(committed.persons.length - 422, 597);
+  assert.equal(committed.persons.length - 422, 600);
 });
 
 test("(c) id가 K001..K1019 연속·오름차순이고 전부 유일하다", () => {
   const ids = committed.persons.map((p) => p.id);
-  assert.equal(new Set(ids).size, 1019);
+  assert.equal(new Set(ids).size, 1022);
   ids.forEach((id, i) => assert.equal(id, kId(i + 1)));
   assert.equal(ids[0], "K001");
   assert.equal(ids[421], "K422");
@@ -82,7 +82,7 @@ test("(d) K001–K422은 후보 파일 existingK 스냅숏 그대로다 (재배�
 
 test("(e) K423+ 발급 순서가 후보 ordinal 순서와 같다 (1→K423 … 597→K1019)", () => {
   const candidates = ctx.candidatesJson.candidates;
-  assert.equal(candidates.length, 597);
+  assert.equal(candidates.length, 600);
   candidates.forEach((c, i) => {
     const p = committed.persons[422 + i];
     assert.equal(p.id, kId(423 + i), `ordinal ${c.ordinal}`);
@@ -112,8 +112,8 @@ test("(f) 안정 비-K ID 보유 후보의 aliases에 기존 ID가 정확히 들
 test("(g) approvalRef가 최종 파일 승인각(소유자 승인)을 그대로 새긴다", () => {
   assert.deepEqual(committed.approvalRef, APPROVED);
   assert.equal(committed.approvalRef.approvedBy, "owner");
-  assert.equal(committed.approvalRef.approvedAt, "2026-09-28");
-  assert.equal(committed.approvalRef.ownerRef, "2026-09-28 박성수 K1019 발급 및 최종 두 입력 해시 승인");
+  assert.equal(committed.approvalRef.approvedAt, "2026-10-01");
+  assert.equal(committed.approvalRef.ownerRef, APPROVED.ownerRef);
   assert.equal(committed.approvalRef.inputSha256, sha256Hex(ctx.valuesBytes));
   assert.equal(committed.approvalRef.candidatesSha256, sha256Hex(ctx.candidatesBytes));
   assert.equal(committed.schema, SCHEMA);

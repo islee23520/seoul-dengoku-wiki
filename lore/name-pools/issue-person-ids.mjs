@@ -37,12 +37,12 @@ const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
-  approvedAt: "2026-09-28",
-  ownerRef: "2026-09-28 박성수 K1019 발급 및 최종 두 입력 해시 승인",
-  inputSha256: "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
-  candidatesSha256: "d2b9df48b05a1e620a2ae369d1b84fc0ffdbc869d88fa8a11ebc714c9f69a5cf",
+  approvedAt: "2026-10-01",
+  ownerRef: "사용자 최종 입력 승인: K1018 고예진 개명과 한서경·차유선·문도현 추가",
+  inputSha256: "1d5702c905da6e046fe742dea30ee55a0abe1167d8370a302265d518ab723c7a",
+  candidatesSha256: "e99786ced7dcece5e6b7b050034511c1bdda47fbd08d323a07fef8e01a5f01cc",
 };
-export const FROZEN = { existingK: 422, issued: 597, total: 1019 };
+export const FROZEN = { existingK: 422, issued: 600, total: 1022 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");

@@ -1,10 +1,10 @@
 {
   "schema": "wiki-person-id-candidates.v1",
-  "inputSha256": "d8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508",
-  "baseCommit": "dce766303f264b9484d074b14853dec1be5eb1d0",
-  "totalPeople": 1019,
+  "inputSha256": "1d5702c905da6e046fe742dea30ee55a0abe1167d8370a302265d518ab723c7a",
+  "baseCommit": "0bbd68e43311e3780ffbe92da78c5c73d02aa91c",
+  "totalPeople": 1022,
   "existingKCount": 422,
-  "candidateCount": 597,
+  "candidateCount": 600,
   "existingK": [
     {
       "id": "K001",
@@ -6458,7 +6458,7 @@
     },
     {
       "ordinal": 596,
-      "name": "서하진",
+      "name": "고예진",
       "stage": "S1",
       "state": "S00",
       "title": "권역 간 계약 자문가",
@@ -6470,6 +6470,30 @@
       "stage": "S1",
       "state": "S00",
       "title": "사본 관리인",
+      "locked": false
+    },
+    {
+      "ordinal": 598,
+      "name": "한서경",
+      "stage": "S1",
+      "state": "S00",
+      "title": "계약 검토 담당",
+      "locked": false
+    },
+    {
+      "ordinal": 599,
+      "name": "차유선",
+      "stage": "S1",
+      "state": "S00",
+      "title": "공동 위임 교섭자",
+      "locked": false
+    },
+    {
+      "ordinal": 600,
+      "name": "문도현",
+      "stage": "S1",
+      "state": "S00",
+      "title": "환적·인계 상단주",
       "locked": false
     }
   ],
@@ -6541,12 +6565,27 @@
     },
     {
       "type": "state-tier-without-k",
-      "name": "서하진",
+      "name": "고예진",
       "detail": "S1 단계 인물인데 K 식별자가 없다"
     },
     {
       "type": "state-tier-without-k",
       "name": "박성수",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "한서경",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "차유선",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "문도현",
       "detail": "S1 단계 인물인데 K 식별자가 없다"
     }
   ]
