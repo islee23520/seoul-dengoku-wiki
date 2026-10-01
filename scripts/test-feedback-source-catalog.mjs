@@ -9,6 +9,32 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { DocumentContent } from '@seoul-dengoku/document-renderer'
 import { articleFeedbackRecord, canonicalRevision, PERSON_SECTION_ORDER, personFeedbackRecord } from './feedback-source-catalog.mjs'
 
+test('public heading aliases preserve reader and feedback identity without hiding visible text drift', async () => {
+ const {renderLoreMarkdown}=await import('./lore-json-render.mjs')
+ const {fromMarkdown}=await import('mdast-util-from-markdown')
+ const {gfmFromMarkdown}=await import('mdast-util-gfm')
+ const {gfm}=await import('micromark-extension-gfm')
+ const {wikiArticleContent}=await import('../src/wikiDocument.ts')
+ const envelope={...structuredClone(fixture),content:[
+  fixture.content[0],
+  {kind:'heading',anchor:'administration',publicAnchors:['신앙','faith'],depth:2,text:{ko:'청사와 통행증',en:'The Government Complex and Passes'}},
+  {kind:'paragraph',anchor:'acts',text:{ko:'선거와 갱신',en:'Election and renewal'}},
+ ]}
+ for(const locale of ['ko','en']){
+  const markdown=renderLoreMarkdown(envelope,locale).replace(/^#\s+.+\n+/,'')
+  const blocks=fromMarkdown(markdown,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]}).children
+  const html=renderToStaticMarkup(createElement(DocumentContent,{content:wikiArticleContent(blocks),locale}))
+  for(const id of ['신앙','faith'])assert.equal(html.split('id="'+id+'"').length-1,1)
+  const record=articleFeedbackRecord({envelope,route:'/world/fixture',locale,blocks})
+  assert.deepEqual(record.leaves.map(({leafId,blockAnchor})=>({leafId,blockAnchor})),[{leafId:'administration:text',blockAnchor:'administration'},{leafId:'acts:text',blockAnchor:'acts'}])
+  const mutated=structuredClone(blocks)
+  mutated.find((node)=>node.type==='heading').children[0].value+=' drift'
+  assert.throws(()=>articleFeedbackRecord({envelope,route:'/world/fixture',locale,blocks:mutated}),/E_FEEDBACK_READER_PARITY/)
+  const mixed=fromMarkdown(markdown.replace('<a id="faith"></a>','<a id="faith"></a> visible drift'),{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]}).children
+  assert.throws(()=>articleFeedbackRecord({envelope,route:'/world/fixture',locale,blocks:mixed}),/E_FEEDBACK_READER_PARITY/)
+ }
+})
+
 const fixture = {
   id: 'DOC:fixture', domain: 'world', locales: { ko: { title: '표본', summary: '', tense: 'present' }, en: { title: 'Fixture', summary: '', tense: 'present' } },
   content: [
