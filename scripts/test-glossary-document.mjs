@@ -49,7 +49,14 @@ test('the English page renders every entry under the English section labels in t
     const suffix = aliases.length ? ` (also called: ${aliases.join(', ')})` : ''
     assert.ok(english.includes(`\n- **${name}**: ${definition}${suffix}\n`), name)
   }
-  assert.doesNotMatch(english, /[가-힣]/u)
+  const martial = JSON.parse(readFileSync(resolve(wikiRoot, 'lore/culture/Martial-Paths.json'), 'utf8'))
+  const ledger = JSON.parse(readFileSync(resolve(wikiRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8'))
+  const pair = martial.content.find(({ anchor }) => anchor === '아홉-유파-table1').rows.find((row) => row[2].ko === '저시궁')
+  const aiming = entries.find(({ term_id }) => term_id === 'martial-aiming')
+  assert.deepEqual([pair[2].ko, pair[3].ko, pair[4].ko, pair[5].ko], ledger.martialSchools.filter(({ formalName }) => [pair[2].ko, pair[4].ko].includes(formalName)).map(({ formalName, hanja }) => [formalName, hanja]).flat())
+  assert.equal(aiming.display_name_en, pair[2].en)
+  assert.ok(aiming.reader_definition_en.includes(pair[4].en))
+  assert.doesNotMatch(english.replaceAll(pair[2].en, '').replaceAll(pair[4].en, ''), /[가-힣]/u)
 })
 
 test('the approved martial school has no field aliases in either locale', () => {
