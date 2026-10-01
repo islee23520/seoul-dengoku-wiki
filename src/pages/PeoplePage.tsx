@@ -26,8 +26,8 @@ function readSessionFilters() {
       occupation: choice('occupation', 'occupation'),
       gender: choice('gender', 'gender'),
     }
-  } catch (error) {
-    console.warn('People filter session could not be restored', error)
+  } catch {
+    console.warn('People filter session could not be restored')
     return defaultFilters
   }
 }
@@ -43,8 +43,8 @@ export default function PeoplePage() {
       } else {
         window.sessionStorage.setItem(filterSessionKey, JSON.stringify(filters))
       }
-    } catch (error) {
-      console.warn('People filter session could not be saved', error)
+    } catch {
+      console.warn('People filter session could not be saved')
     }
   }, [filters])
   const options = useMemo(() => {

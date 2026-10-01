@@ -94,7 +94,8 @@ test('empty results persist and reset removes session state across remount', asy
 })
 
 test('malformed session data warns and restores defaults without crashing', async () => {
-  sessionStorage.setItem(key, '{broken')
+  const sentinel = 'private-session-sentinel'
+  sessionStorage.setItem(key, sentinel)
   const warning = vi.spyOn(console, 'warn').mockImplementation(() => {})
   let page
   try {
@@ -102,7 +103,28 @@ test('malformed session data warns and restores defaults without crashing', asyn
     assert.deepEqual(values(page.host), defaults)
     assert.equal(sessionStorage.getItem(key), null)
     assert.equal(warning.mock.calls.length, 1)
+    assert.ok(warning.mock.calls.every((args) => args.length === 1 && typeof args[0] === 'string'))
+    assert.ok(!warning.mock.calls.flat().join(' ').includes(sentinel))
+    assert.ok(!JSON.stringify(warning.mock.calls).includes(sentinel))
   } finally { if (page) await page.close(); warning.mockRestore(); sessionStorage.clear() }
+})
+
+test('storage write failures warn without exposing input-bearing error details', async () => {
+  sessionStorage.clear()
+  const sentinel = 'private-write-sentinel'
+  const warning = vi.spyOn(console, 'warn').mockImplementation(() => {})
+  const write = vi.spyOn(window.Storage.prototype, 'setItem').mockImplementation(() => { throw new Error(sentinel) })
+  let page
+  try {
+    page = await mount()
+    await choose(page.host, { ...selected, query: sentinel })
+    assert.equal(values(page.host).query, sentinel)
+    assert.equal(sessionStorage.getItem(key), null)
+    assert.ok(warning.mock.calls.length > 0)
+    assert.ok(warning.mock.calls.every((args) => args.length === 1 && typeof args[0] === 'string'))
+    assert.ok(!warning.mock.calls.flat().join(' ').includes(sentinel))
+    assert.ok(!JSON.stringify(warning.mock.calls).includes(sentinel))
+  } finally { if (page) await page.close(); write.mockRestore(); warning.mockRestore(); sessionStorage.clear() }
 })
 
 test('unknown saved dropdown choices default independently and preserve the raw query', async () => {
