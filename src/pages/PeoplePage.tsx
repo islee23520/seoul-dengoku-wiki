@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import portraitCatalog from '../../portrait-catalog.json'
@@ -9,15 +9,51 @@ const recommendedIds = ['person-1003', 'person-1008', 'person-1007', 'person-100
 const recommendedPeople = recommendedIds.map((id) => peopleCatalog.find((person) => person.id === id)!)
 const portraits = new Map(portraitCatalog.entries.map((entry) => [entry.personId, entry]))
 
+const filterSessionKey = 'wiki.people.filters.v1'
+const commonTiers = ['T1', 'T2', 'T3', 'T4', 'T5']
+const defaultFilters = { query: '', state: 'all', commonTier: 'all', occupation: 'all', gender: 'all' }
+
+function readSessionFilters() {
+  try {
+    const saved = window.sessionStorage.getItem(filterSessionKey)
+    if (!saved) return defaultFilters
+    const parsed: unknown = JSON.parse(saved)
+    if (!parsed || typeof parsed !== 'object') throw new Error('Invalid People filter session')
+    const fields = parsed as Record<string, unknown>
+    if (!Object.keys(defaultFilters).every((key) => typeof fields[key] === 'string')) throw new Error('Invalid People filter fields')
+    const choice = (field: 'state' | 'occupation' | 'gender', catalogField: 'stateName' | 'occupation' | 'gender') =>
+      fields[field] === 'all' || peopleByName.some((person) => (person[catalogField] || '미등록') === fields[field]) ? fields[field] as string : 'all'
+    return {
+      query: fields.query as string,
+      state: choice('state', 'stateName'),
+      commonTier: fields.commonTier === 'all' || commonTiers.includes(fields.commonTier as string) ? fields.commonTier as string : 'all',
+      occupation: choice('occupation', 'occupation'),
+      gender: choice('gender', 'gender'),
+    }
+  } catch (error) {
+    console.warn('People filter session could not be restored', error)
+    return defaultFilters
+  }
+}
+
 export default function PeoplePage() {
-  const [query, setQuery] = useState('')
-  const [state, setState] = useState('all')
-  const [commonTier, setCommonTier] = useState('all')
-  const [occupation, setOccupation] = useState('all')
-  const [gender, setGender] = useState('all')
+  const [filters, setFilters] = useState(readSessionFilters)
+  const { query, state, commonTier, occupation, gender } = filters
+  const setFilter = (field: keyof typeof defaultFilters, value: string) => setFilters((current) => ({ ...current, [field]: value }))
+  useEffect(() => {
+    try {
+      if (Object.keys(defaultFilters).every((key) => filters[key as keyof typeof defaultFilters] === defaultFilters[key as keyof typeof defaultFilters])) {
+        window.sessionStorage.removeItem(filterSessionKey)
+      } else {
+        window.sessionStorage.setItem(filterSessionKey, JSON.stringify(filters))
+      }
+    } catch (error) {
+      console.warn('People filter session could not be saved', error)
+    }
+  }, [filters])
   const options = useMemo(() => {
     const values = (key: 'stateName' | 'occupation' | 'gender') => [...new Set(peopleByName.map((person) => person[key] || '미등록'))].sort(koreanNameOrder.compare)
-    return { states: values('stateName'), tiers: ['T1', 'T2', 'T3', 'T4', 'T5'], occupations: values('occupation'), genders: values('gender') }
+    return { states: values('stateName'), tiers: commonTiers, occupations: values('occupation'), genders: values('gender') }
   }, [])
   const filtered = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('ko')
@@ -30,7 +66,7 @@ export default function PeoplePage() {
     })
   }, [query, state, commonTier, occupation, gender])
 
-  const resetFilters = () => { setQuery(''); setState('all'); setCommonTier('all'); setOccupation('all'); setGender('all') }
+  const resetFilters = () => setFilters(defaultFilters)
 
   return (
     <article className="wiki-article" data-wiki-shell="react-official">
@@ -64,13 +100,13 @@ export default function PeoplePage() {
       </section>
       <label className="people-search">
         <span>이름·직위·국가 검색</span>
-        <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="예: 윤서린, 급수, S4" />
+        <input type="search" value={query} onChange={(event) => setFilter('query', event.target.value)} placeholder="예: 윤서린, 급수, S4" />
       </label>
       <div className="people-filters" aria-label="등장인물 필터">
-        <label>국가<select value={state} onChange={(event) => setState(event.target.value)}><option value="all">전체</option>{options.states.map((value) => <option key={value}>{value}</option>)}</select></label>
-        <label>직급(공통 티어)<select value={commonTier} onChange={(event) => setCommonTier(event.target.value)}><option value="all">전체</option>{options.tiers.map((value) => <option key={value}>{value}</option>)}</select></label>
-        <label>직업<select value={occupation} onChange={(event) => setOccupation(event.target.value)}><option value="all">전체</option>{options.occupations.map((value) => <option key={value}>{value}</option>)}</select></label>
-        <label>성별<select value={gender} onChange={(event) => setGender(event.target.value)}><option value="all">전체</option>{options.genders.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label>국가<select value={state} onChange={(event) => setFilter('state', event.target.value)}><option value="all">전체</option>{options.states.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label>직급(공통 티어)<select value={commonTier} onChange={(event) => setFilter('commonTier', event.target.value)}><option value="all">전체</option>{options.tiers.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label>직업<select value={occupation} onChange={(event) => setFilter('occupation', event.target.value)}><option value="all">전체</option>{options.occupations.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label>성별<select value={gender} onChange={(event) => setFilter('gender', event.target.value)}><option value="all">전체</option>{options.genders.map((value) => <option key={value}>{value}</option>)}</select></label>
         <button type="button" onClick={resetFilters}>필터 초기화</button>
       </div>
       <p className="wiki-domain-label" aria-live="polite">검색 결과 {filtered.length}명</p>
