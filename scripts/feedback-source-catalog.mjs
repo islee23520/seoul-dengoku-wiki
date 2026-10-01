@@ -97,7 +97,7 @@ export function readerLeaves(blocks) {
   const values=[]
   for(const block of blocks){
     if(block.type==='html'||block.type==='thematicBreak')continue
-    if(block.type==='paragraph'&&(block.children??[]).every((child)=>child.type==='html'))continue
+    if(block.type==='paragraph'&&(block.children??[]).every((child)=>child.type==='html'||(child.type==='text'&&!child.value.trim())))continue
     if(block.type==='list'){for(const item of block.children??[])values.push({kind:'list',text:mdastText(item)});continue}
     if(block.type==='table'){for(const row of block.children??[])for(const cell of row.children??[])values.push({kind:'table',text:mdastText(cell)});continue}
     if(['paragraph','heading','blockquote','code'].includes(block.type))values.push({kind:block.type==='blockquote'?'quote':block.type,text:mdastText(block)})
