@@ -3,6 +3,7 @@ import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { peopleCatalog } from '../generated/peopleCatalog'
+import portraitCatalog from '../../portrait-catalog.json'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
@@ -404,6 +405,10 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
       <p><Link to={`/tools/character-art?person=${encodeURIComponent(detail.id)}`}>이 인물의 아트 작업 도구 열기</Link></p>
       <div className="person-detail-layout">
         <aside className="person-data-panel" aria-label="인물 구조화 데이터">
+          {portraitCatalog.entries.some((entry) => entry.personId === detail.id && entry.name === detail.name) && <figure>
+            <img className="people-portrait" src={`${import.meta.env.BASE_URL}portraits/${detail.id}.png`} alt={`${detail.name} 초상 아트 제안`} />
+            <figcaption>초상 아트 제안 · <a href={`${import.meta.env.BASE_URL}portrait-tokens/${detail.id}.json`}>디자인 토큰</a></figcaption>
+          </figure>}
           <DataTable title="기본 정보" rows={basicRows} />
           <DataTable title="관계" rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />
         </aside>
