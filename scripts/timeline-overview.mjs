@@ -35,12 +35,13 @@ export function buildTimelineYears(content, relatedDocuments) {
     }
   }
   return [...byYear.entries()].sort(([left], [right]) => left - right).map(([year, { prose, regionalEvents }]) => {
-    const immediate = firstSentence(prose.at(-1) ?? '')
+    const overviewProse = prose.length ? prose : regionalEvents.map((event) => event.prose).filter(Boolean)
+    const immediate = firstSentence(overviewProse.at(-1) ?? '')
     return {
       year,
       summary: prose.length ? prose.slice(0, 2).join(' ') : regionalEvents.map((event) => event.prose).join(' '),
-      pressure: firstSentence(prose[0] ?? ''),
-      decision: firstSentence(prose[1] ?? prose[0] ?? ''),
+      pressure: firstSentence(overviewProse[0] ?? ''),
+      decision: firstSentence(overviewProse[1] ?? overviewProse[0] ?? ''),
       immediate,
       aftermath: immediate,
       regionalEvents,
