@@ -28,9 +28,12 @@ test('retired public forms do not reappear as formal names or aliases', () => {
   }
 })
 
-test('imported gaebang branch entry carries a source anchor', () => {
+test('retired branch preserves private provenance outside the active name registry', () => {
   const mb = ledger.martialBranch
   assert.ok(mb, 'martialBranch entry required')
   assert.ok(mb.name, 'martialBranch name required')
-  assert.ok(mb.source, 'martialBranch source anchor required')
+  assert.equal(mb.rightsStatus, 'retired')
+  assert.equal(mb.formalName, null)
+  assert.match(mb.source, /^lore\/editorial\/[^#]+\.json#\//u)
+  assert.ok(!ledger.martialSchools.some(({ formalName }) => formalName === mb.name))
 })
