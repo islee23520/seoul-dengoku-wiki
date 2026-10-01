@@ -7,6 +7,7 @@ import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
+import { publicHouseContent } from './public-house-content.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
 import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
@@ -16,6 +17,7 @@ import { glossaryDocument } from './glossary-document.mjs'
 import { validatedDensities } from './region-density.mjs'
 import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
+import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -23,10 +25,10 @@ const repoRoot = projectRoot
 const worldJsonRoot = resolve(projectRoot, 'src/generated/world')
 const worldEnJsonRoot = resolve(projectRoot, 'src/generated/world-en')
 const generatedRoot = resolve(projectRoot, 'src/generated')
+const privateGeneratedRoot = resolve(projectRoot, 'src/generated-private')
 const publicRoot = resolve(projectRoot, 'public')
 const domains = ['world']
 const wikiAssetTarget = resolve(publicRoot, 'wiki-assets')
-
 const normalizeTitle = (markdown, fallback) =>
   markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
 
@@ -106,7 +108,7 @@ const stripProjectionHeader = (markdown) => {
     /^- 원본 앵커: `LORE\/World-Narrative-Atlas\.md`$/u.test(line) ||
     /^- 원본 해시: `[a-f0-9]+`$/u.test(line)
   ))
-  return cleaned.join('\n').replace(/^- 출처층:\s*original-fiction\s*\n/gmu, '')
+  return cleaned.join('\n')
 }
 
 const rewriteRelativeHref = (href, domain, routeBySlug) => {
@@ -229,7 +231,7 @@ for (const domain of domains) {
       slug,
       json: page?.value,
       markdown: page ? undefined : renderedBySlug.get(slug),
-      renderJson: (value, locale) => renderLoreMarkdown(value, locale, (_domain, target) => `${target}.md`),
+      renderJson: (value, locale) => renderLoreMarkdown(publicHouseContent(value), locale, (_domain, target) => `${target}.md`),
       titleFallback: normalizeTitle,
     })) {
       const entry = { ...document, categories: categoriesBySlug.get(slug) ?? [], name: `${slug}.md` }
@@ -252,6 +254,7 @@ for (const document of englishDocuments) {
   englishRouteBySlug.set(`any:${document.slug}`, document.route)
 }
 
+const publishedBlocks = new Map()
 const writeDocument = async (root, document, routes) => {
   const body = normalizeMarkdown(document.markdown, document.domain, routes)
   const blocks = fromMarkdown(body, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
@@ -260,11 +263,17 @@ const writeDocument = async (root, document, routes) => {
     for (const child of node.children ?? []) removePositions(child)
   }
   for (const block of blocks) removePositions(block)
+  publishedBlocks.set(`${document.locale}:${document.slug}`, blocks)
   await writeFile(resolve(root, `${document.slug}.json`), `${JSON.stringify({ slug: document.slug, title: document.title, route: document.route, reviewText: body, blocks })}
 `)
 }
 for (const document of documents) await writeDocument(worldJsonRoot, document, routeBySlug)
 for (const document of englishDocuments) await writeDocument(worldEnJsonRoot, document, englishRouteBySlug)
+
+const feedbackRecords = [...documents, ...englishDocuments].flatMap((document) => {
+  const envelope = pagesBySlug.get(document.slug)?.value
+  return envelope && envelope.id !== 'DOC:Glossary' ? [articleFeedbackRecord({ envelope, route: document.route, locale: document.locale, blocks: publishedBlocks.get(`${document.locale}:${document.slug}`) })] : []
+})
 
 const lines = [
   'export type WikiDomain = \'world\'',
@@ -897,6 +906,8 @@ for (const person of peopleCatalog) {
   const cards = personCards.get(person.name) ?? []
   const primary = primaryCard(ledger)
   const body = primary?.body ?? ''
+  const sourceEnvelope = pagesBySlug.get(primary?.file)?.value
+  if (!sourceEnvelope || !primary) throw new Error(`E_PERSON_FEEDBACK_SOURCE:${person.id}`)
   const lineage = lineageByName.get(person.name)
   const issuedId = issuedIdByName.get(person.name)
   if (!lineage) throw new Error(`E_PERSON_LINEAGE_MISSING:${person.name}`)
@@ -929,7 +940,11 @@ for (const person of peopleCatalog) {
     },
   }
   await writeFile(resolve(personDetailsRoot, `${person.id}.json`), `${JSON.stringify(detail, null, 2)}\n`)
+  feedbackRecords.push(personFeedbackRecord({ envelope: sourceEnvelope, personId: person.id, route: person.detailRoute, headingText: primary.file === 'Core-Characters' ? person.name : `인물 ${primary.heading ?? person.name}`, locale: 'ko', sections: detail.sections }))
 }
+await mkdir(privateGeneratedRoot, { recursive: true })
+await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.ko.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'ko')))}\n`)
+await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.en.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'en')))}\n`)
 await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const peopleCatalog = ${JSON.stringify(peopleCatalog, null, 2)} as const\nexport const peopleCount = ${peopleCatalog.length}\n`)
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)

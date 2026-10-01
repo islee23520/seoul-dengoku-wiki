@@ -1,0 +1,22 @@
+[
+  {
+    "scenario": "route-safe",
+    "body": "TARGET original draft",
+    "anchorRoute": "/world/Lost-Technology-Lineage"
+  },
+  {
+    "scenario": "biography",
+    "preview": "수문국 선출 군주.",
+    "leaf": "biography:paragraph:0"
+  },
+  {
+    "scenario": "person-list",
+    "preview": "소속: 규격맹",
+    "leaf": "section:관계:list:1"
+  },
+  {
+    "scenario": "malformed-recovery",
+    "article": 1,
+    "draft": 0
+  }
+]

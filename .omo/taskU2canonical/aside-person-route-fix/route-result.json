@@ -1,0 +1,11 @@
+{
+  "requestedRoute": "/world/World-Unbinding",
+  "result": "blocked",
+  "reason": "No POST hold-gate endpoint was discoverable at root or /wiki base; POST /api/__test__/gate returned 404 with public-base guidance and POST /wiki/api/__test__/gate returned 404. Did not trigger route navigation without a deterministic held response.",
+  "personRoutePreserved": true,
+  "currentPath": "/wiki/people/person-0998",
+  "h1": "이일섭",
+  "leafCount": 28,
+  "personDraftPresent": true,
+  "unhandled": []
+}

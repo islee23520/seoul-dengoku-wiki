@@ -44,6 +44,14 @@ test('근거 수정 견본: 조재표 210, 신종목 207, 두 사람 모두 주�
   assert.equal(shin.secondary.Dodge, 10)
 })
 
+test('조재표의 호위 대열 근거 네 곳은 현재 무공 원천의 인용에 결속된다', () => {
+  const jo = find(doc, 'K1003')
+  const evidence = ['Leadership', 'Tactics', 'Teaching'].flatMap((name) =>
+    jo.skills.find((skill) => skill.name === name).evidence.filter(({ path }) => path === 'lore/culture/Martial-Paths.json'))
+  assert.equal(evidence.length, 4)
+  for (const citation of evidence) assert.ok(G.quoteHolds(ROOT, citation), citation.pointer)
+})
+
 test('근거 없는 사람은 네 능력 10과 빈 근거 목록만 가지고, 75 CP 전부가 미사용 점수다', () => {
   for (const p of doc.people.filter((x) => x.baseline)) {
     assert.equal(p.cp.spent, 0)

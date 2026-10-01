@@ -148545,8 +148545,8 @@
             },
             {
               "path": "lore/culture/Martial-Paths.json",
-              "pointer": "/content/93/text/ko",
-              "quote": "조재표는 일행에게 관통창의 편성 절차를 가르친다."
+              "pointer": "/content/80/text/ko",
+              "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
             }
           ],
           "cp": 12,
@@ -148554,7 +148554,7 @@
         },
         {
           "name": "Tactics",
-          "ko": "전술(관통창 편성·철수 판단)",
+          "ko": "전술(호위 대열 편성·철수 판단)",
           "attr": "IQ",
           "diff": "H",
           "tier": "A",
@@ -148567,17 +148567,17 @@
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
               "pointer": "/content/4/text/ko",
-              "quote": "무공. 수벽술의 관통창. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다."
+              "quote": "호위 대열. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다."
             },
             {
               "path": "lore/culture/Martial-Paths.json",
-              "pointer": "/content/92/text/ko",
+              "pointer": "/content/79/text/ko",
               "quote": "분류: 지휘·편성"
             },
             {
               "path": "lore/culture/Martial-Paths.json",
-              "pointer": "/content/93/text/ko",
-              "quote": "조재표는 일행에게 관통창의 편성 절차를 가르친다."
+              "pointer": "/content/80/text/ko",
+              "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
             },
             {
               "path": "lore/characters/Cast-Profile-Contract.md",
@@ -148657,7 +148657,7 @@
         },
         {
           "name": "Teaching",
-          "ko": "교습(관통창)",
+          "ko": "교습(호위 대열)",
           "attr": "IQ",
           "diff": "A",
           "tier": "B",
@@ -148665,12 +148665,12 @@
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
               "pointer": "/content/4/text/ko",
-              "quote": "무공. 수벽술의 관통창. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다."
+              "quote": "호위 대열. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다."
             },
             {
               "path": "lore/culture/Martial-Paths.json",
-              "pointer": "/content/93/text/ko",
-              "quote": "조재표는 일행에게 관통창의 편성 절차를 가르친다."
+              "pointer": "/content/80/text/ko",
+              "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
             }
           ],
           "cp": 8,
@@ -149426,7 +149426,7 @@
       "id": "K1008",
       "name": "민웅기",
       "url": "/people/person-1008",
-      "state": "S06",
+      "state": "S00",
       "method": "card-lexicon",
       "role": {
         "display": "주 통신 정비사 / 부 고물·철물 수리",
@@ -149597,35 +149597,9 @@
       },
       "band": "일반 인물",
       "baseline": false,
-      "unit": {
-        "type": "민웅기 직속대",
-        "size": 35,
-        "quality": "정예",
-        "composition": [
-          "총검병",
-          "경비병",
-          "호위병"
-        ],
-        "note": "민웅기 직속 전투부대",
-        "faction_scale": {
-          "state": "S06",
-          "tier": "강세력",
-          "factor": 1.2
-        }
-      },
+      "unit": null,
       "wandering_force": null,
-      "territory": {
-        "fief_name": "회현",
-        "type": "역 영지",
-        "station": "회현",
-        "state": "S06",
-        "settlement": {
-          "name": "회현 정착지",
-          "type": "정착지",
-          "description": "회현 일대 고정 거점"
-        },
-        "note": "S06 회현 일대 관할 영지"
-      },
+      "territory": null,
       "advantages": [
         {
           "name": "Charisma +2",

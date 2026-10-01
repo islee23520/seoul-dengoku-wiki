@@ -1,0 +1,32 @@
+npm notice run seoul-dengoku-wiki@0.1.0 npx
+npm notice run 'vitest' run scripts/test-feedback-canonical-ui.mjs scripts/test-feedback-dom-binding.mjs scripts/test-feedback-view-controller.mjs scripts/test-feedback-view-hook.mjs scripts/test-feedback-selection.mjs scripts/test-feedback-boundaries.mjs scripts/test-document-renderer.mjs scripts/test-feedback-source-catalog.mjs
+
+ RUN  v5.0.2 /Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-ui-canonical
+
+ ❯ scripts/test-feedback-source-catalog.mjs (12 tests | 2 failed) 1541ms
+   × actual reader-order multi-section selection passes df9 and reverse order fails 284ms
+   × actual generated private catalog validates through the confirmed U3 HTTP process 263ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  scripts/test-feedback-source-catalog.mjs > actual reader-order multi-section selection passes df9 and reverse order fails
+ FAIL  scripts/test-feedback-source-catalog.mjs > actual generated private catalog validates through the confirmed U3 HTTP process
+Error: missing FEEDBACK_READY :
+ ❯ Socket.onEnd scripts/test-feedback-source-catalog.mjs:166:43
+    164|   let text = ''
+    165|   const onData = (chunk) => { text += chunk; const line = text.split('…
+    166|   const onEnd = () => { cleanup(); reject(new Error(`missing ${prefix}…
+       |                                           ^
+    167|   const cleanup = () => { stream.off('data', onData); stream.off('end'…
+    168|   stream.on('data', onData); stream.on('end', onEnd)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+
+ Test Files  1 failed | 7 passed (8)
+      Tests  2 failed | 33 passed (35)
+   Start at  03:39:08
+   Duration  4.10s (tests 56%, environment 24%, import 14%, transform 6%, worker 1%)
+
+    Isolate  8 workers spawned · ~210ms startup each (spawn + environment, per file)
+             at least ~1.47s faster with isolate: false — reuses workers across files instead of one per file
