@@ -1,7 +1,7 @@
 {
   "schema": "seoul-dengoku.cast-gender.v2",
   "owner_decision": "2026-09-19 사용자 확정: 성별 범주는 여성·남성만 사용한다. 기존 사용자 지정 성별은 as-is로 보존하고, 미지정 인물은 국가별 설정에 따라 배정한다.",
-  "count": 1019,
+  "count": 1022,
   "categories": [
     "여성",
     "남성"
@@ -10,11 +10,11 @@
   "policies": [
     {
       "state": "S00",
-      "people": 8,
-      "female_ratio": 0.38,
-      "female_count": 3,
-      "male_count": 5,
-      "reason": "무소속 이동 일행, 신규 귀환망 인물, 지연희·서하진·박성수의 성별 집계"
+      "people": 11,
+      "female_ratio": 0.45,
+      "female_count": 5,
+      "male_count": 6,
+      "reason": "무소속 인물과 사용자 확정 신규 3인의 성별 집계"
     },
     {
       "state": "S01",
@@ -7223,7 +7223,10 @@
     { "name": "나르기즈 유수포바", "state": "S00", "gender": "남성", "source": "소유자 지정 (2026-09-26)", "user_locked": true },
     { "name": "최일석", "state": "S00", "gender": "남성", "source": "소유자 지정 (2026-09-26)", "user_locked": true },
     { "name": "지연희", "state": "S00", "gender": "여성", "source": "위키 이슈 #9 사용자 인터뷰 확정", "user_locked": true },
-    { "name": "서하진", "state": "S00", "gender": "여성", "source": "위키 이슈 #8 확정 기준안", "user_locked": true },
-    { "name": "박성수", "state": "S00", "gender": "남성", "source": "위키 이슈 #272 소유자 확정", "user_locked": true }
+    { "name": "고예진", "state": "S00", "gender": "여성", "source": "위키 이슈 #8 이후 사용자 확정 개명", "user_locked": true },
+    { "name": "박성수", "state": "S00", "gender": "남성", "source": "위키 이슈 #272 소유자 확정", "user_locked": true },
+    { "name": "한서경", "state": "S00", "gender": "여성", "source": "사용자 확정 신규 인물", "user_locked": true },
+    { "name": "차유선", "state": "S00", "gender": "여성", "source": "사용자 확정 신규 인물", "user_locked": true },
+    { "name": "문도현", "state": "S00", "gender": "남성", "source": "사용자 확정 신규 인물", "user_locked": true }
   ]
 }

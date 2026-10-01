@@ -23,8 +23,8 @@ test('카드에서 다시 파생한 결과가 커밋된 파일과 바이트 단�
   assert.equal(serialize(build().doc), raw)
 })
 
-test('K001–K1019 1,019명이 발급 순서대로 있고 URL은 values-cast 순번을 따른다', () => {
-  assert.equal(doc.people.length, 1019)
+test('K001–K1022 1,022명이 발급 순서대로 있고 URL은 values-cast 순번을 따른다', () => {
+  assert.equal(doc.people.length, 1022)
   doc.people.forEach((p, i) => assert.equal(p.id, `K${String(i + 1).padStart(3, '0')}`))
   assert.equal(find(doc, 'K1003').url, '/people/person-1003')
   assert.equal(find(doc, 'K1009').url, '/people/person-1009')

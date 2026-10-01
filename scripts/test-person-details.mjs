@@ -88,7 +88,7 @@ test('S01 court projection retains exact approved direct lieges and owner member
   assert.equal(expectedOwners.size, 3)
   assert.ok(expectedMembers.has(person('K872').name))
   assert.ok(!expectedMembers.has(person('K272').name))
-  assert.equal(details.size, 1019)
+  assert.equal(details.size, 1022)
   for (const detail of details.values()) {
     if (detail.state === 'S01' && !expectedMembers.has(detail.name)) assert.equal(detail.directLiege, undefined, detail.name)
     if (detail.state === 'S01' && !expectedOwners.has(detail.name)) assert.equal(detail.court, undefined, detail.name)
@@ -163,7 +163,7 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
   check(person)
   assert.equal(expectedMembers.size, 9)
   assert.equal(expectedOwners.size, 7)
-  assert.equal(details.size, 1019)
+  assert.equal(details.size, 1022)
   for (const detail of details.values()) {
     if (detail.state !== 'S01' && !expectedMembers.has(detail.id)) assert.equal(detail.directLiege, undefined, detail.id)
     if (detail.state !== 'S01' && !expectedOwners.has(detail.id)) assert.equal(detail.court, undefined, detail.id)
@@ -201,17 +201,26 @@ test('all canonical people expose unique detail routes and structured data', asy
   const routes = [...catalog.matchAll(/"detailRoute": "([^"]+)"/g)].map((match) => match[1])
   const detailRoot = new URL('../public/person-details/', import.meta.url)
   const names = (await readdir(detailRoot)).filter((name) => name.endsWith('.json'))
-  assert.equal(routes.length, 1019)
-  assert.equal(new Set(routes).size, 1019)
+  assert.equal(routes.length, 1022)
+  assert.equal(new Set(routes).size, 1022)
   assert.ok(routes.every((route) => /^\/people\/person-\d{4}$/u.test(route)))
-  assert.equal(names.length, 1019)
+  assert.equal(names.length, 1022)
   for (const name of names) {
     const detail = JSON.parse(await readFile(new URL(name, detailRoot), 'utf8'))
     assert.ok(detail.biography.length > 0, name)
     if (detail.clan) {
       assert.match(detail.clan.crest, /^clan-crests\/[a-z0-9-]+\.svg$/u, name)
       assert.ok((await readFile(new URL(`../public/${detail.clan.crest}`, import.meta.url), 'utf8')).includes('<svg'), name)
-    } else assert.equal(detail.name, '이연', name)
+    } else {
+      const lineage = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
+        .people.find((person) => person.name === detail.name)
+      assert.ok(lineage, name)
+      if (lineage.status === 'no-bongwan') assert.equal(lineage.clan, undefined, name)
+      else {
+        assert.equal(lineage.clan, null, name)
+        assert.ok(['unused', 'unconfirmed'].includes(lineage.status), name)
+      }
+    }
     assert.equal(Object.keys(detail.values).length, 10, name)
     assert.equal(Object.keys(detail.desire).length, 7, name)
     assert.ok(['여성', '남성'].includes(detail.gender), name)

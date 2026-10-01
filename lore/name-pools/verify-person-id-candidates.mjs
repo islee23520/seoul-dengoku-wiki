@@ -35,7 +35,7 @@ const readCharacters = (slug) => readRendered(LORE_DIR, "characters", slug);
 const TABLE_PATH = path.join(HERE, "person-id-candidates.json");
 
 export const SCHEMA = "wiki-person-id-candidates.v1";
-export const FROZEN = { existingK: 422, candidates: 597, total: 1019 };
+export const FROZEN = { existingK: 422, candidates: 600, total: 1022 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
@@ -258,10 +258,10 @@ if (!CLI_WRITE) {
     assert.deepEqual(validateTable(committed, ctx), []);
   });
 
-  test("(b) 개수 불변식 422 + 597 = 1019", () => {
+  test("(b) 개수 불변식 422 + 600 = 1022", () => {
     assert.equal(committed.existingKCount, 422);
-    assert.equal(committed.candidateCount, 597);
-    assert.equal(committed.totalPeople, 1019);
+    assert.equal(committed.candidateCount, 600);
+    assert.equal(committed.totalPeople, 1022);
     assert.equal(committed.existingKCount + committed.candidateCount, committed.totalPeople);
     assert.equal(committed.candidateCount, committed.totalPeople - committed.existingKCount);
   });

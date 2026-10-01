@@ -20,8 +20,8 @@ const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
 // 입력 해시(person-id-registry approvalRef, 2026-09-28 K1019 발급 소유자 승인). 두 파일은 이 작업에서 바뀌면 안 된다.
 export const APPROVED_HASHES = {
-  [VALUES]: 'd8539fc26d75566cb9e5109ff2963f773641c3ae0442583c2649c45d9ac17508',
-  [REGISTRY]: 'd5fb337c16d91f4ac0200ea91accb16400742e53e1ed5a046f76f381ddf41f23',
+  [VALUES]: '1d5702c905da6e046fe742dea30ee55a0abe1167d8370a302265d518ab723c7a',
+  [REGISTRY]: 'c0aedfa82ef9a29c6dece15ee867efa0b12849ec561b44cb386e508a6f875c32',
 }
 const CARD_FILES = [
   ...Array.from({ length: 16 }, (_, i) => `lore/characters/Cast-State-${String(i + 1).padStart(2, '0')}.json`),
@@ -73,6 +73,7 @@ export const SKILLS = {
   hazmat: { name: 'Hazardous Materials/TL? (Biological)', ko: '검역·방역', attr: 'IQ', diff: 'A' },
   chemistry: { name: 'Chemistry/TL?', ko: '수질·시료 검사', attr: 'IQ', diff: 'H' },
   merchant: { name: 'Merchant', ko: '거래·경매', attr: 'IQ', diff: 'A' },
+  pistol: { name: 'Guns/TL? (Pistol)', ko: '권총 사격', attr: 'DX', diff: 'E' },
   accounting: { name: 'Accounting', ko: '회계·감사', attr: 'IQ', diff: 'H' },
   forgery: { name: 'Forgery/TL?', ko: '위조 감별', attr: 'IQ', diff: 'H' },
   diplomacy: { name: 'Diplomacy', ko: '교섭·조정', attr: 'IQ', diff: 'H' },
@@ -161,6 +162,7 @@ export const SENTENCE_RULES = [
   { skill: 'forgery', re: /위조 화폐를 거두고/ },
   { skill: 'cartography', re: /실측한 길만 실선으로 남기고|측량 숫자를 현장에서 두 번 읽고/ },
   // 무소속 카드의 칸 문장
+  { skill: 'pistol', re: /방호 교육과 반복 사격으로 권총을 익혔으며/ },
   { skill: 'staff', re: /^(호위 도구는|즉석 근접 도구는) 다룬다\.?$/ },
   { skill: 'observation', re: /명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명/ },
   { skill: 'electronicsRepair', re: /통신 장비를 정비했다|이동식 민간 중계기를 더했다/ },
@@ -442,7 +444,7 @@ export function derivePerson(root, person, castNames) {
       const ev = evidence(card.path, s.pointer, s.text)
       // 소유자가 정한 직위 기술(OWNER_TIER_A)은 A다. 인용은 직위 줄 전체로 한다.
       const confirmed = s.section === '직위' && Boolean(rule.skill) && SKILLS[rule.skill]?.name === OWNER_TIER_A[person.id]
-      const tier = confirmed ? 'A' : TIER_BY_SECTION[s.section] ?? 'C'
+      const tier = confirmed ? 'A' : rule.skill === 'pistol' && /반복 사격/u.test(s.text) ? 'B' : TIER_BY_SECTION[s.section] ?? 'C'
       if (rule.skill && !rule.skipSkill) addSkill(rule.skill, tier, confirmed ? evidence(card.path, s.pointer, s.line) : ev, s.section)
       const abilities = new Set(rule.abilities ?? [])
       if (rule.skill && !rule.skipSkill) abilities.add(abilityOf(SKILLS[rule.skill].attr))
@@ -681,7 +683,7 @@ export function verify(doc, root = ROOT) {
   const values = JSON.parse(readSource(root, VALUES).raw).people
   const indexByName = new Map(values.map((p, i) => [p.name, i]))
   if (!Array.isArray(doc.people) || doc.people.length !== registry.persons.length || doc.count !== registry.persons.length) fail(`인원: ${doc.people?.length} ≠ ${registry.persons.length}`)
-  if (registry.persons.length !== 1019) fail(`registry 인원 ${registry.persons.length} ≠ 1019`)
+  if (registry.persons.length !== 1022) fail(`registry 인원 ${registry.persons.length} ≠ 1022`)
   registry.persons.forEach((entry, i) => {
     const want = `K${String(i + 1).padStart(3, '0')}`
     if (entry.id !== want) fail(`registry 순서: ${i} ${entry.id} ≠ ${want}`)
@@ -758,7 +760,10 @@ export function verify(doc, root = ROOT) {
       else if (s.level !== level) fail(`${tag} ${s.name}: 적힌 수준 ${s.level}, 계산 ${level}`)
       if (!s.evidence?.length) fail(`${tag} ${s.name}: 출처 없음`)
       for (const e of s.evidence ?? []) if (!quoteHolds(root, e)) fail(`${tag} ${s.name}: 인용 불일치 ${e.path}#${e.pointer ?? ''} «${e.quote}»`)
-      if (/Guns|Soldier|Beam Weapons|Gunner/u.test(s.name)) fail(`${tag} ${s.name}: 총기·복무 기술은 근거 규칙이 없다`)
+      if (/Guns|Soldier|Beam Weapons|Gunner/u.test(s.name) &&
+          !(s.name === SKILLS.pistol.name && s.evidence?.every((e) => /방호 교육과 반복 사격으로 권총을 익혔으며/u.test(e.quote) && quoteHolds(root, e)))) {
+        fail(`${tag} ${s.name}: 총기·복무 기술에 승인된 수련 근거가 없다`)
+      }
       skillCp += TIERS[s.tier]
     }
     const lead = LEADER_REVIEW[p.id]
@@ -806,7 +811,29 @@ export function summary(doc) {
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2)
   const outPath = join(ROOT, OUT)
-  if (args.includes('--write')) {
+  if (args.includes('--write-person')) {
+    const selected = args.slice(args.indexOf('--write-person') + 1)
+    if (!selected.length || new Set(selected).size !== selected.length) throw new Error('Unique person IDs are required')
+    for (const [path, hash] of Object.entries(APPROVED_HASHES)) {
+      if (sha256(ROOT, path) !== hash) throw new Error(`Unapproved input: ${path}`)
+    }
+    const { doc: fresh } = build()
+    const current = JSON.parse(readFileSync(outPath, 'utf8'))
+    const replacements = new Map(selected.map((id) => {
+      const person = fresh.people.find((entry) => entry.id === id)
+      if (!person) throw new Error(`Unknown person ID: ${id}`)
+      const evidence = [...Object.values(person.attributes).flatMap((attribute) => attribute.evidence), ...person.skills.flatMap((skill) => skill.evidence)]
+      if (evidence.some((entry) => !quoteHolds(ROOT, entry))) throw new Error(`Invalid evidence: ${id}`)
+      return [id, person]
+    }))
+    const known = new Set(current.people.map((person) => person.id))
+    current.people = current.people.map((person) => replacements.get(person.id) ?? person)
+    current.people.push(...fresh.people.filter((person) => replacements.has(person.id) && !known.has(person.id)))
+    current.count = current.people.length
+    current.invariants = fresh.invariants
+    writeFileSync(outPath, JSON.stringify(current, null, 2) + '\n')
+    console.log(`WROTE selected identities: ${selected.join(', ')}`)
+  } else if (args.includes('--write')) {
     const { doc } = build()
     const errors = verify(doc)
     if (errors.length) { errors.forEach((e) => console.error(`✗ ${e}`)); console.error('FAIL: 파생 결과가 검사를 통과하지 못해 쓰지 않았다'); process.exit(1) }

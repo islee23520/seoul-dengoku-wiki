@@ -41,6 +41,14 @@ test('character API starts and resolves issued IDs and URL identities without mu
     assert.deepEqual(url.body, issued.body)
     assert.equal(url.body.id, 'K1003')
     assert.equal(url.body.url, '/people/person-1003')
+    for (const [id, name] of [['K1018', '고예진'], ['K1020', '한서경'], ['K1021', '차유선'], ['K1022', '문도현']]) {
+      const byId = await request('/api/characters/' + id)
+      const byUrl = await request('/api/characters/person-' + id.slice(1))
+      assert.equal(byId.status, 200)
+      assert.deepEqual(byUrl, byId)
+      assert.equal(byId.body.name, name)
+      for (const key of ['network', 'truth', 'stagedDeath', 'coercion']) assert.equal(Object.hasOwn(byId.body, key), false)
+    }
     assert.equal((await request('/api/characters/person-99999')).status, 404)
     assert.equal((await request('/api/characters/person-1003-extra')).status, 404)
     assert.equal((await request('/api/characters/K1003/sheet')).status, 200)

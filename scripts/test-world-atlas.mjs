@@ -40,7 +40,7 @@ test('JSON atlas parser owns WNA-001 data.atlas v2', () => {
   assert.equal(atlas.schema, ATLAS_SCHEMA)
   assert.equal(atlas.states.length, 16)
   assert.equal(atlas.humans.length, 422)
-  assert.deepEqual(Object.keys(atlas.unaffiliated), ['K1003', 'K1004', 'K1008', 'K1009', 'K1010', 'K1017', 'K1018', 'K1019'])
+  assert.deepEqual(Object.keys(atlas.unaffiliated), ['K1003', 'K1004', 'K1008', 'K1009', 'K1010', 'K1017', 'K1018', 'K1019', 'K1020', 'K1021', 'K1022'])
 })
 
 for (const [name, mutate, code] of [
@@ -202,7 +202,7 @@ test('canonical serialization sorts object keys recursively without reordering a
 
 test('people verifier preserves the frozen prefix and issued unaffiliated aliases', () => {
   assert.deepEqual(verifyAtlasPeople(atlas, context), {
-    failures: [], stateCount: 422, unaffiliatedCount: 8, total: 430,
+    failures: [], stateCount: 422, unaffiliatedCount: 11, total: 433,
   })
   assert.deepEqual(atlas.humans.map(({ id, name }) => ({ id, name: name.ko })), context.candidates.existingK)
 })
