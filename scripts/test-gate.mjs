@@ -95,14 +95,80 @@ test('banned terms are checked in visible titles, person fields and HTML metadat
   assert.ok(retiredFormFailures(htmlMetadata('<meta property="og:title" content="Seoul Sengoku">'), 'dist/index.html metadata').length > 0)
 })
 
-test('eight canonical school names match the private ledger and carry no everyday alias', () => {
-  const table = canon('lore/culture/Martial-Paths.json').content.find((block) => block.kind === 'table' && block.columns[0].ko === '정식명')
-  assert.ok(table)
-  assert.equal(table.rows.length, 8)
-  assert.deepEqual(table.rows.map((row) => row[0].ko), ledger.martialSchools.map(({ formalName }) => formalName))
-  assert.deepEqual(ledger.martialSchools.filter(({ alias }) => alias !== null), [])
-  assert.equal(ledger.martialBranch.name, '개방 무공')
-  assert.ok(!ledger.martialSchools.some(({ formalName }) => formalName === '개방 무공'))
+function assertMartialLedger(martial, naming) {
+  assert.equal(martial.id, 'DOC:Martial-Paths')
+  const tables = martial.content.filter(({ anchor }) => anchor === '아홉-유파-table1')
+  assert.equal(tables.length, 1)
+  const [table] = tables
+  assert.equal(table.kind, 'table')
+  assert.equal(table.columns.length, 6)
+  assert.equal(table.rows.length, 38)
+  const categories = new Set()
+  const pairs = []
+  const emptyAscended = []
+  for (const row of table.rows) {
+    assert.equal(row.length, 6)
+    for (const cell of row) {
+      assert.equal(typeof cell.ko, 'string')
+      assert.equal(typeof cell.en, 'string')
+      assert.ok(cell.ko.trim() && cell.en.trim())
+    }
+    for (const index of [2, 3, 4, 5]) assert.equal(row[index].en, row[index].ko)
+    categories.add(row[0].ko)
+    for (const [name, hanja, ascended] of [[row[2].ko, row[3].ko, false], [row[4].ko, row[5].ko, true]]) {
+      if (name === '—' && hanja === '—' && ascended) {
+        emptyAscended.push(row[2].ko)
+      } else {
+        assert.notEqual(name, '—')
+        assert.notEqual(hanja, '—')
+        pairs.push([name, hanja])
+      }
+    }
+  }
+  assert.equal(categories.size, 9)
+  assert.deepEqual(emptyAscended, ['총검술'])
+  assert.equal(pairs.length, 75)
+  assert.equal(new Set(pairs.map(([name]) => name)).size, 75)
+  assert.equal(naming.martialSchools.length, 75)
+  assert.deepEqual(pairs, naming.martialSchools.map(({ formalName, hanja }) => [formalName, hanja]))
+  assert.ok(naming.martialSchools.every(({ alias }) => alias === null))
+  assert.equal(naming.martialBranch.name, '개방 무공')
+  assert.ok(!categories.has(naming.martialBranch.name))
+  assert.ok(!naming.martialSchools.some(({ formalName }) => formalName === naming.martialBranch.name))
+}
+
+test('nine martial categories and 75 ordered formal-name pairs match the private ledger', () => {
+  assertMartialLedger(canon('lore/culture/Martial-Paths.json'), ledger)
+})
+
+test('martial table and ledger reject malformed identities while ignoring display prose', () => {
+  const martial = canon('lore/culture/Martial-Paths.json')
+  const table = martial.content.find(({ anchor }) => anchor === '아홉-유파-table1')
+  const cases = [
+    ['missing table', (source) => { source.content = source.content.filter(({ anchor }) => anchor !== table.anchor) }],
+    ['duplicate table', (source) => { source.content.push(structuredClone(table)) }],
+    ['missing row', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows.pop() }],
+    ['malformed row', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows[0].pop() }],
+    ['duplicate name', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows[1][2].ko = table.rows[0][2].ko }],
+    ['changed name', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows[0][2].ko = '다른 이름' }],
+    ['wrong Hanja', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows[0][3].ko = '異字' }],
+    ['English pair drift', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows[0][2].en = 'Different name' }],
+    ['half-empty ascent', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows[0][4].ko = '—' }],
+    ['extra empty ascent', (source) => { const row = source.content.find(({ anchor }) => anchor === table.anchor).rows[0]; row[4].ko = '—'; row[5].ko = '—' }],
+    ['blank pair', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows[0][2].ko = '' }],
+    ['non-null alias', (_source, naming) => { naming.martialSchools[0].alias = '별칭' }],
+    ['branch in names', (_source, naming) => { naming.martialSchools[0].formalName = naming.martialBranch.name }],
+  ]
+  for (const [label, mutate] of cases) {
+    const source = structuredClone(martial)
+    const naming = structuredClone(ledger)
+    mutate(source, naming)
+    assert.throws(() => assertMartialLedger(source, naming), undefined, label)
+  }
+  const reworded = structuredClone(martial)
+  reworded.content.find(({ anchor }) => anchor === table.anchor).columns[0].ko = '표시 머리말'
+  reworded.content.find(({ kind }) => kind === 'paragraph').text.ko = '표시 문단'
+  assertMartialLedger(reworded, ledger)
 })
 
 test('sixteen canonical state names and historical precursors match the private ledger', () => {
