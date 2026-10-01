@@ -4,6 +4,7 @@ import * as THREE from 'three'
 import { StateFlag } from './StateFlag'
 import { presentationStations } from './stationPresentation'
 import { resolveRegionSelection } from '../wikiRouting'
+import { segmentPointerChoices } from './segmentPointerSelection'
 import './OpeningTerritoryMap.css'
 
 type State = { id: string; name: string; slug: string; origin: string; government: string; power: string; relation: string | null; ruler: string; cause: string; founded: string; vassals: string; religion: string; foreignRelations: string; chronology: Array<{ year: number; text: string; sourceRoute: string }>; labelX: number; labelY: number; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
@@ -105,6 +106,7 @@ export default function OpeningTerritoryMap() {
   const [frame, setFrame] = useState<'seoul' | 'peninsula'>('seoul')
   const [layer, setLayer] = useState<'surface' | 'underground'>('surface')
   const [selectedSegmentId, setSelectedSegmentId] = useState<string | null>(null)
+  const [segmentChoices, setSegmentChoices] = useState<string[]>([])
   const [box, setBox] = useState<Box | null>(null)
   const [mapSize, setMapSize] = useState({ width: 0, height: 0 })
   const [labelBoxes, setLabelBoxes] = useState<Array<Box & { id: string }>>([])
@@ -290,6 +292,10 @@ export default function OpeningTerritoryMap() {
     if (data) setSelectedId(resolveRegionSelection(data.regions, requestedRegion))
   }, [data, requestedRegion])
 
+  useEffect(() => {
+    setSegmentChoices([])
+  }, [layer, selectedLine, selectedSegmentId, selectedId, selectedStation, regionalStation, selectedVassal, selectedOutsideUnit, selectedLandmark, stateFilter])
+
   const states = useMemo(() => new Map(data?.states.map((state, index) => [state.id, { ...state, color: colors[index] }]) ?? []), [data])
   const stations = useMemo(() => presentationStations(data?.stations ?? []), [data])
   const seoulStationNames = useMemo(() => new Set(stations.flatMap((station) => station.memberIds.concat(station.names))), [stations])
@@ -449,8 +455,46 @@ export default function OpeningTerritoryMap() {
     <div className="territory-map-layout"><div className="territory-map-canvas territory-map-flat" data-flat-territory-map data-territory-layer={layer}>
       <div className="territory-flat-controls" role="group" aria-label="지도 범위"><button type="button" onClick={frameSeoul} aria-pressed={frame === 'seoul'}>서울 전체</button><button type="button" onClick={framePeninsula} aria-pressed={frame === 'peninsula'}>한반도 보기</button><button type="button" onClick={() => zoom(0.8)}>줌인</button><button type="button" onClick={() => zoom(1.25)}>줌아웃</button></div>
       <svg ref={mapRef} className="territory-flat-svg" viewBox={`${box.x} ${box.y} ${box.width} ${box.height}`} role="img" aria-label={layer === 'surface' ? '서울 국가 경계와 강줄기, 서울 밖 행정구역과 속국 소재지' : '서울 지하 역 구역과 역 사이 구간의 지배'} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onWheel={onWheel}>
-        {svgLayers}
+        <g onKeyDownCapture={(event) => {
+          if ((event.key === 'Enter' || event.key === ' ') && event.target instanceof SVGElement && event.target.hasAttribute('data-underground-segment')) setSegmentChoices([])
+        }} onClickCapture={(event) => {
+          if (layer !== 'underground' || !(event.target instanceof SVGElement) || !event.target.hasAttribute('data-underground-segment') || event.detail === 0) return
+          event.stopPropagation()
+          if (dragged.current) return
+          const lines = Array.from(event.currentTarget.querySelectorAll<SVGLineElement>('line[data-underground-segment]'))
+          const candidates = segmentPointerChoices({ x: event.clientX, y: event.clientY }, lines.flatMap((line) => {
+            const matrix = line.getScreenCTM()
+            const localMatrix = line.getCTM()
+            const id = line.getAttribute('data-underground-segment')
+            const style = getComputedStyle(line)
+            if (!matrix || !localMatrix || !id || style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) === 0 || Number(style.strokeOpacity) === 0 || style.stroke === 'none') return []
+            const a = new DOMPoint(line.x1.baseVal.value, line.y1.baseVal.value).matrixTransform(matrix)
+            const b = new DOMPoint(line.x2.baseVal.value, line.y2.baseVal.value).matrixTransform(matrix)
+            // non-scaling-stroke excludes the SVG viewBox scale, but not outer CSS scale.
+            const cssScale = Math.hypot(matrix.a, matrix.b) / Math.hypot(localMatrix.a, localMatrix.b)
+            const strokeScale = style.vectorEffect === 'non-scaling-stroke' ? cssScale : Math.hypot(matrix.a, matrix.b)
+            return [{ id, a, b, strokeWidth: Number.parseFloat(style.strokeWidth) * strokeScale }]
+          }))
+          if (candidates.length === 1) {
+            const segment = data.edges.find((edge) => edge.id === candidates[0])
+            if (segment) selectSegment(segment)
+            setSegmentChoices([])
+          } else if (candidates.length > 1) {
+            setDetailOpen(false)
+            setSegmentChoices(candidates)
+          } else {
+            setSegmentChoices([])
+          }
+        }}>{svgLayers}</g>
       </svg>
+      {segmentChoices.length > 1 && <div className="territory-segment-choices" role="group" aria-label="겹친 지하 구간 선택">
+        <p>지하 구간 선택</p>
+        {segmentChoices.map((id) => {
+          const segment = data.edges.find((edge) => edge.id === id)
+          return segment && <button key={id} type="button" className="territory-segment-choice" data-segment-choice={id} onClick={() => { selectSegment(segment); setSegmentChoices([]) }}>{stationPoints.get(segment.a)?.name ?? segment.a}–{stationPoints.get(segment.b)?.name ?? segment.b}</button>
+        })}
+        <button type="button" className="territory-segment-choice" onClick={() => setSegmentChoices([])}>닫기</button>
+      </div>}
       <div ref={textMeshRef} className="territory-surface-text-mesh" aria-hidden="true" />
       <div className="territory-faction-flags" aria-label="16국 영토 깃발">
         {data.states.map((state) => { const [x, y] = flagAnchors.get(state.id) ?? [state.labelX, state.labelY]; return <button key={state.id} type="button" className="territory-faction-flag" data-territory-flag={state.id} aria-label={`${state.name} 영토 보기`} aria-pressed={stateFilter === state.id} style={{ ...flagPosition(x, y), borderColor: states.get(state.id)?.color }} onClick={() => chooseState(state)}><StateFlag stateId={state.id} /></button> })}
