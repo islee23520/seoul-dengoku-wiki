@@ -1,62 +1,22 @@
 {
   "schema_version": 1,
-  "diagram_type": "lifecycle",
-  "meta": {
-    "title": "서울:전국 — 노드 상태 흐름",
-    "quality_profile": "standard",
-    "legend": { "mode": "hidden" }
-  },
-  "lanes": [
-    { "id": "main", "label": "주경로" },
-    { "id": "hold", "label": "전투 중단 없음 · 일시정지·감속·배속 없음" },
-    { "id": "terminal", "label": "캠페인 귀환" }
+  "diagram_type": "architecture",
+  "meta": { "title": "서울:전국 · 인물별 행동과 사건 전이", "quality_profile": "standard", "legend": { "mode": "hidden" }, "viewBox": [1000, 560] },
+  "components": [
+    { "id": "waiting", "type": "backend", "label": "대기", "sublabel": "다음 지시 또는 상황", "pos": [60, 100], "size": [160, 70] },
+    { "id": "moving", "type": "backend", "label": "이동", "sublabel": "대상 인물의 경로 진행", "pos": [720, 100], "size": [160, 70] },
+    { "id": "talking", "type": "backend", "label": "대화", "sublabel": "두 당사자의 상호작용", "pos": [390, 350], "size": [160, 70] }
   ],
-  "states": [
-    { "id": "character", "type": "start", "label": "인물", "lane": "main", "col": 0 },
-    { "id": "house", "type": "active", "label": "가문·세력", "lane": "main", "col": 1 },
-    { "id": "strategy", "type": "active", "label": "전략 지도", "lane": "main", "col": 2 },
-    { "id": "engagement", "type": "active", "label": "교전", "lane": "main", "col": 3 },
-    { "id": "battle", "type": "active", "label": "부대 지휘", "lane": "main", "col": 4 },
-    { "id": "return", "type": "success", "label": "캠페인 귀환", "lane": "terminal", "col": 2 }
-  ],
-  "transitions": [
-    { "from": "character", "to": "house" },
-    { "from": "house", "to": "strategy" },
-    { "from": "strategy", "to": "engagement" },
-    { "from": "engagement", "to": "battle", "label": "붙다" },
-    { "from": "engagement", "to": "strategy", "label": "숨다", "fromSide": "bottom", "toSide": "bottom", "via": [[556, 250], [402, 250]] },
-    { "from": "engagement", "to": "return", "label": "말하다", "fromSide": "top", "toSide": "left", "via": [[556, 80], [640, 80], [640, 479]] },
-    { "from": "battle", "to": "return" },
-    { "from": "return", "to": "character", "label": "귀환", "fromSide": "bottom", "toSide": "bottom", "via": [[710, 535], [94, 535]] },
-    { "from": "return", "to": "house", "label": "정착", "fromSide": "bottom", "toSide": "bottom", "via": [[710, 562], [248, 562]] },
-    { "from": "return", "to": "strategy", "label": "정복", "fromSide": "bottom", "toSide": "bottom", "via": [[710, 589], [402, 589]] },
-    { "from": "return", "to": "strategy", "label": "방랑", "fromSide": "bottom", "toSide": "bottom", "via": [[710, 616], [402, 616]] },
-    { "from": "return", "to": "house", "label": "교역", "fromSide": "bottom", "toSide": "bottom", "via": [[710, 643], [248, 643]] }
+  "connections": [
+    { "from": "waiting", "to": "moving", "label": "이동 지시", "fromSide": "right", "toSide": "left" },
+    { "from": "moving", "to": "waiting", "label": "도착 또는 대기 지시", "fromSide": "top", "toSide": "top", "via": [[800, 50], [140, 50]], "labelAt": [470, 30] },
+    { "from": "waiting", "to": "talking", "label": "대화 지시 · 거리 조건 충족", "fromSide": "bottom", "toSide": "left", "via": [[140, 385]], "labelAt": [255, 360] },
+    { "from": "moving", "to": "talking", "label": "대화 지시 · 거리 조건 충족", "fromSide": "right", "toSide": "right", "via": [[930, 135], [930, 385]], "labelAt": [665, 405] },
+    { "from": "talking", "to": "waiting", "label": "대기 지시 또는 대화 중단", "fromSide": "bottom", "toSide": "left", "via": [[470, 480], [20, 480], [20, 135]], "labelAt": [245, 500] },
+    { "from": "talking", "to": "moving", "label": "이동 지시로 대화 중단", "fromSide": "top", "toSide": "bottom", "via": [[470, 250], [800, 250]], "labelAt": [635, 230] }
   ],
   "cards": [
-    {
-      "dot": "cyan",
-      "title": "읽는 법",
-      "items": [
-        "주경로는 인물 → 가문·세력 → 전략 지도 → 교전 → 부대 지휘 → 캠페인 귀환이다",
-        "교전은 말하다·숨다·붙다로 갈리고, 캠페인 귀환은 다섯 결말로 돌아간다"
-      ]
-    },
-    {
-      "dot": "amber",
-      "title": "전투 진행",
-      "items": [
-        "전투에는 일시정지와 감속·배속이 없다",
-        "카메라는 소유자가 확정한 3D 자유 지휘 시점이다"
-      ]
-    },
-    {
-      "dot": "slate",
-      "title": "뷰어",
-      "items": [
-        "본문은 한국어, 뷰어 UI와 html lang은 영어 폴백",
-        "상태 이름은 canon/locales/ko-KR/system-design/gdd-lore-node-states.json 표와 같다"
-      ]
-    }
+    { "dot": "slate", "title": "대상과 조건", "items": ["화살표는 발생 조건을 만족한 대상의 전이다. 번호순으로 모든 상태를 거치는 절차가 아니다.", "인물마다 현재 행동을 가진다. 한 인물의 도착이나 대화 중단으로 다른 인물의 이동이 끝나지 않는다.", "가문·장소·규칙·저장 문서는 행동 단계가 아니라 서로 다른 소유자의 기록이다."] },
+    { "dot": "cyan", "title": "세계 진행과 화면", "items": ["생활·전략 지도·전투는 표시하는 공간과 정보가 다르다. 화면 선택을 세계 전체의 진행 단계로 사용하지 않는다.", "화면을 숨기거나 패널을 바꿔도 세계 시간과 관련 없는 인물·분대의 행동은 이어진다.", "사건은 원인·대상·조건·결과를 기록한다. 다른 사건이 발생하면 해당 대상이 그 조건에 맞는 상태로 전이한다."] }
   ]
 }
