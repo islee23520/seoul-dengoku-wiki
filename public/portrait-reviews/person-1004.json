@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1004",
+  "characterId": "K1004",
+  "imageSha256": "90a70d6feee755f358946fa176be850e3abdc04d462642ae59ff68dd1cb42361",
+  "ownerVerdict": {
+    "verdict": "pass",
+    "updatedAt": "2026-10-01T01:50:24.697Z",
+    "scope": "exact portrait image only"
+  },
+  "generationRequest": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5-sunburst",
+    "prompt": "anime manga style: 橫山光輝. Image 1 is the exact locked B STYLE AND CAMERA reference, not character identity: match its slight three-quarter turn toward viewer's right, eye-level camera, neutral still posture, level shoulders, head scale, whole-head top margin and head/shoulders/upper-chest crop. Match varying ink weight, broad hard shadows, sparse hatching, muted matte pigment, paper texture and warm neutral gray backdrop. Image 2 is ADULT Iyen's definitive identity and outfit. Image 3 is exact accessory construction. Preserve wine-red long hair, pale face, ruby eyes, original facial proportions, two differently sized red mechanical disc ornaments on HER LEFT with dangling tassel, original earrings with red gems and central neck/chest circular jewelry. Preserve the original exposed shoulders, neckline, chest opening, lace edges and visible skin extent EXACTLY; add no covering panels, scarf, turtleneck or new sleeves. Do not replace mechanical discs with flower petals or relocate accessories. One adult woman only. Entire hair crown and head ornament inside the frame with the same clear top margin as image 1, no clipping. No names, writing, letters, codes, logos, watermark or caption strip. Change only illustration style and the specified shared camera/pose, never costume. Match image 1 line economy strictly: simplify line density rather than adding ornate illustration detail, while preserving every required accessory shape. Leave a clearly visible neutral background band above the complete hair crown and ornaments; do not let hair touch the top frame. Preserve the same eye-level head scale and camera distance as image 1. No other artist style.",
+    "size": "1024x1536",
+    "n": 1,
+    "references": [
+      {
+        "index": 1,
+        "role": "style-only",
+        "sha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526"
+      },
+      {
+        "index": 2,
+        "role": "identity-only",
+        "sha256": "ba8e02424e30bd33c6d4823ba5f8dafc009e9f5821c8fb103cb16ad8eee80c9b"
+      },
+      {
+        "index": 3,
+        "role": "additional-reference",
+        "sha256": "ef69f5bffe2ccb27b3495003b82fa0b320e0b05fb492c9ef4305d6cdc9af04e8"
+      }
+    ]
+  },
+  "generationReceipt": {
+    "request": {
+      "schemaVersion": 1,
+      "model": "gpt-image-2.5-sunburst",
+      "prompt": "anime manga style: 橫山光輝. Image 1 is the exact locked B STYLE AND CAMERA reference, not character identity: match its slight three-quarter turn toward viewer's right, eye-level camera, neutral still posture, level shoulders, head scale, whole-head top margin and head/shoulders/upper-chest crop. Match varying ink weight, broad hard shadows, sparse hatching, muted matte pigment, paper texture and warm neutral gray backdrop. Image 2 is ADULT Iyen's definitive identity and outfit. Image 3 is exact accessory construction. Preserve wine-red long hair, pale face, ruby eyes, original facial proportions, two differently sized red mechanical disc ornaments on HER LEFT with dangling tassel, original earrings with red gems and central neck/chest circular jewelry. Preserve the original exposed shoulders, neckline, chest opening, lace edges and visible skin extent EXACTLY; add no covering panels, scarf, turtleneck or new sleeves. Do not replace mechanical discs with flower petals or relocate accessories. One adult woman only. Entire hair crown and head ornament inside the frame with the same clear top margin as image 1, no clipping. No names, writing, letters, codes, logos, watermark or caption strip. Change only illustration style and the specified shared camera/pose, never costume. Match image 1 line economy strictly: simplify line density rather than adding ornate illustration detail, while preserving every required accessory shape. Leave a clearly visible neutral background band above the complete hair crown and ornaments; do not let hair touch the top frame. Preserve the same eye-level head scale and camera distance as image 1. No other artist style.",
+      "size": "1024x1536",
+      "n": 1,
+      "references": [
+        {
+          "index": 1,
+          "role": "style-only",
+          "sha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526"
+        },
+        {
+          "index": 2,
+          "role": "identity-only",
+          "sha256": "ba8e02424e30bd33c6d4823ba5f8dafc009e9f5821c8fb103cb16ad8eee80c9b"
+        },
+        {
+          "index": 3,
+          "role": "additional-reference",
+          "sha256": "ef69f5bffe2ccb27b3495003b82fa0b320e0b05fb492c9ef4305d6cdc9af04e8"
+        }
+      ]
+    },
+    "imageSha256": "90a70d6feee755f358946fa176be850e3abdc04d462642ae59ff68dd1cb42361",
+    "status": "candidate-unreviewed"
+  },
+  "canonPromotion": false,
+  "final3dPortraitContractSatisfied": false
+}

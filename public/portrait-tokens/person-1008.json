@@ -32,7 +32,7 @@
   },
   "image": {
     "path": "/portraits/person-1008.png",
-    "sha256": "ac6f94eb138134e30c110e9acf68d2c0efda9abb6f85230b8b813e4b010d3987",
+    "sha256": "72ebe2a2625394b5ddb9935f774a06eb6ed0da93c2075eb5648974134985860d",
     "width": 1215,
     "height": 1295
   },
@@ -42,5 +42,11 @@
     "identityRole": "owner-reference",
     "imageText": "none",
     "reviewStatus": "candidate-reviewed"
+  },
+  "imageReview": {
+    "record": "/portrait-reviews/person-1008.json",
+    "imageSha256": "72ebe2a2625394b5ddb9935f774a06eb6ed0da93c2075eb5648974134985860d",
+    "verdict": "pass",
+    "scope": "exact image only; no appearance or equipment canon promotion"
   }
 }

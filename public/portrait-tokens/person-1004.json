@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1004",
+  "characterId": "K1004",
+  "name": "이연",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "여성",
+    "genderUserLocked": true,
+    "role": "수행 전령"
+  },
+  "artProposal": {
+    "face": "생체 특징이 있는 합성 휴머노이드",
+    "hair": "긴 포도주색 머리",
+    "eyes": "루비색 눈",
+    "skin": "창백한 피부",
+    "upper": "확정 원본의 검정·포도주색 고딕 복장: 열린 어깨, 원래 가슴 노출 범위와 레이스 경계, 목 중심 원형 장식과 연결 스트랩, 코르셋형 몸판, 팔 위 밴드와 분리된 퍼프 소매·손목 장식. 가림 패널·스카프·추가 옷깃을 넣지 않음",
+    "lower": "원본 허리 중심 원형 장식과 포도주색 벨트·늘어진 장식끈, 짧은 앞부분과 비대칭 긴 검정 치맛자락·포도주색 안감, 허벅지 레이스와 얇은 검정 스타킹. 바지로 교체하거나 원래 보이는 피부를 가리지 않음",
+    "footwear": "원본의 검정 높은 굽 발목 부츠: 뾰족한 앞코, 가는 높은 굽, 붉은 연결 장식·버클 배치 유지",
+    "headwear": "원본 위치의 크기가 다른 붉은 기계식 원판 두 개와 아래로 늘어진 술 장식. 원형 귀걸이와 붉은 보석 유지",
+    "carriedWeapons": "none depicted; no ownership inferred"
+  },
+  "style": {
+    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
+    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest"
+  },
+  "image": {
+    "path": "/portraits/person-1004.png",
+    "sha256": "90a70d6feee755f358946fa176be850e3abdc04d462642ae59ff68dd1cb42361",
+    "width": 1215,
+    "height": 1295
+  },
+  "imageReview": {
+    "record": "/portrait-reviews/person-1004.json",
+    "imageSha256": "90a70d6feee755f358946fa176be850e3abdc04d462642ae59ff68dd1cb42361",
+    "verdict": "pass",
+    "scope": "exact image only; no appearance or equipment canon promotion"
+  }
+}

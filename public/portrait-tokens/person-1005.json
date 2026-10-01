@@ -30,8 +30,14 @@
   },
   "image": {
     "path": "/portraits/person-1005.png",
-    "sha256": "dbb4696603e45907bc99f5ad5246d000478c1327ac02e8bc9af1859fd535d091",
+    "sha256": "d88a79daec5d26b108760ca755d0d4e43df9db6c16a6efc4ddf71ccbb82cbde7",
     "width": 1145,
     "height": 1374
+  },
+  "imageReview": {
+    "record": "/portrait-reviews/person-1005.json",
+    "imageSha256": "d88a79daec5d26b108760ca755d0d4e43df9db6c16a6efc4ddf71ccbb82cbde7",
+    "verdict": "pass",
+    "scope": "exact image only; no appearance or equipment canon promotion"
   }
 }
