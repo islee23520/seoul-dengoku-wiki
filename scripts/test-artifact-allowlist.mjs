@@ -18,6 +18,7 @@ async function fixture(extra = {}, omit = []) {
     'wiki-contract.json': JSON.stringify({ documents: [{ slug: 'Ailments' }], englishDocuments: [{ slug: 'Ailments' }] }),
     'person-details/person-0001.json': '{}',
     'portrait-tokens/person-0001.json': '{}',
+    'portrait-reviews/person-0001.json': '{}',
     'portraits/person-0001.png': '',
     'regional-terrain-tiles/0-0.bin': '',
     'regional-terrain-tiles/0-0-water.json': '{}',
@@ -49,6 +50,7 @@ test('unlisted files, private chunks and missing artifacts fail', async () => {
   const cases = [
     [{ 'debug.json': '{}' }, [], /E_ARTIFACT_UNLISTED: debug\.json/],
     [{ 'person-details/person-1.json': '{}' }, [], /E_ARTIFACT_UNLISTED: person-details\/person-1\.json/],
+    [{ 'portrait-reviews/person-1.json': '{}' }, [], /E_ARTIFACT_UNLISTED: portrait-reviews\/person-1\.json/],
     [{ 'drafts/Cast-Profile-Contract.json': '{}' }, [], /E_ARTIFACT_UNLISTED: drafts\/Cast-Profile-Contract\.json/],
     [{ 'assets/Cast-Profile-Contract-AbCd1234.js': '' }, [], /E_ARTIFACT_CHUNK: assets\/Cast-Profile-Contract-AbCd1234\.js/],
     [{ 'assets/unhashed.js': '' }, [], /E_ARTIFACT_UNLISTED: assets\/unhashed\.js/],
@@ -56,6 +58,7 @@ test('unlisted files, private chunks and missing artifacts fail', async () => {
     [{ 'assets/lib/nested/katex-AbCd1234.js': '' }, [], /E_ARTIFACT_UNLISTED: assets\/lib\/nested\/katex-AbCd1234\.js/],
     [{}, ['opening-territories.json'], /E_ARTIFACT_MISSING: opening-territories\.json/],
     [{}, ['state-flags/S01.webp'], /E_ARTIFACT_MISSING: state-flags\//],
+    [{}, ['portrait-reviews/person-0001.json'], /E_ARTIFACT_MISSING: portrait-reviews\//],
   ]
   for (const [extra, omit, expected] of cases) {
     const dist = await fixture(extra, omit)

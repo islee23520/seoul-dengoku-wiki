@@ -11,8 +11,8 @@
     "role": "First Branch Workshop Lee-house heir who tends the depot field and checks grain stocks"
   },
   "artProposal": {
-    "face": "Soft youthful-adult round face and subdued steady gaze",
-    "hair": "Straight dark hair with heavy fringe",
+    "face": "Use the latest owner photograph for facial likeness: softly rounded jaw, natural cheek volume, straight dark eyebrows, slightly narrow eyes, rounded nose tip and softly shaped lips; no glasses or facial hair. Preserve the photographed facial proportions rather than the previous generated face.",
+    "hair": "Use the latest owner photograph: short dense black hair with a rounded natural crown, side volume and a curved slightly separated fringe above the eyebrows; not a uniform heavy straight fringe.",
     "outfit": "Muted clay-brown plain work jacket over cream shirt",
     "palette": [
       "clay brown",
@@ -32,8 +32,26 @@
   },
   "image": {
     "path": "/portraits/person-0998.png",
-    "sha256": "94a611c2290d2cf4fa1c809b0680fb2f18f56d7540a64000cf5e1953a8ac641d",
+    "sha256": "8b96b28031b8ee205fc0417bd79ffe3e21a50f8e248454a3bb2c4dc8ea535cf5",
     "width": 1215,
     "height": 1295
+  },
+  "references": {
+    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "identitySha256": "1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f",
+    "identityRole": "owner-face-and-hair-only",
+    "excludePhoto": [
+      "clothing",
+      "pose",
+      "background"
+    ],
+    "reviewStatus": "unreviewed"
+  },
+  "variantId": "ilseob-owner-photo-correction-v1",
+  "imageReview": {
+    "record": "/portrait-reviews/person-0998.json",
+    "imageSha256": "8b96b28031b8ee205fc0417bd79ffe3e21a50f8e248454a3bb2c4dc8ea535cf5",
+    "verdict": "pass",
+    "scope": "exact image only; no appearance or equipment canon promotion"
   }
 }
