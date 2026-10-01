@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "characterId": "K1017",
+  "name": "지연희",
+  "sourceStatus": "art-proposal",
+  "sourceRefs": [
+    "https://github.com/islee23520/seoul-dengoku-wiki/issues/329",
+    "https://seoul-dengoku.linalab.io/wiki/tools/character-art?person=person-1017"
+  ],
+  "lookId": "ji-yeonhui-interview-study-20261001",
+  "mood": "친절한 표정을 유지하지만 속내를 드러내지 않는 절제된 태도",
+  "occupation": "민간 전령",
+  "appearance": {
+    "ageCategory": "adult",
+    "gender": "여성",
+    "face": {
+      "value": "또렷한 이목구비, 눈에 잘 띄는 얼굴, 친절한 표정. 구체적인 나이는 비밀이다.",
+      "status": "approved",
+      "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/329"
+    },
+    "hair": {
+      "value": "검은색의 짧은 단발",
+      "status": "approved",
+      "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/329"
+    },
+    "eyes": {
+      "value": null,
+      "status": "unknown",
+      "source": null
+    },
+    "skin": {
+      "value": null,
+      "status": "unknown",
+      "source": null
+    },
+    "build": {
+      "value": "키가 크고 늘씬한 성인 여성. 자연스러운 성인 인체 비율이며 수치로 된 키·체중은 미정이다.",
+      "status": "approved",
+      "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/329"
+    }
+  },
+  "outfit": {
+    "id": "ji-yeonhui-courier-outfit-study-20261001",
+    "headwear": {
+      "value": null,
+      "status": "unknown",
+      "source": null
+    },
+    "upper": {
+      "value": "위급 시 화재로부터 몸을 보호하는 용도의 재킷형 외투. 구체적인 소재·보호 등급·색상은 미정이다.",
+      "status": "approved",
+      "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/329"
+    },
+    "lower": {
+      "value": "각선미가 드러나는 짧은 바지",
+      "status": "approved",
+      "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/329"
+    },
+    "footwear": {
+      "value": "군화. 구체적인 모델·색상·굽 높이는 미정이며 군 복무나 군 지급품임을 뜻하지 않는다.",
+      "status": "approved",
+      "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/329"
+    },
+    "marks": {
+      "value": null,
+      "status": "unknown",
+      "source": null
+    }
+  },
+  "equipment": {
+    "equipped": [
+      {
+        "id": "red-crystal-ear-piercing",
+        "description": "선배 전령에게 개인적으로 선물 받은 빨간색 크리스탈 장신구 형태의 이어피어스. GPS 기능은 장신구 외형에 드러내지 않는다.",
+        "status": "approved",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/329"
+      }
+    ],
+    "narrativeOnly": [
+      {
+        "id": "personal-short-awl",
+        "description": "피난할 때부터 지닌 짧은 송곳을 군화 안에 숨겨 다닌다. 무기를 꺼내거나 은닉 구조를 단면으로 그리지 않는다.",
+        "status": "approved",
+        "source": "https://github.com/islee23520/seoul-dengoku-wiki/issues/329"
+      }
+    ]
+  },
+  "pose": {
+    "portrait": "B안 가이드: 어깨가 수평인 중립 상반신, 머리와 몸통은 관찰자 오른쪽으로 약간 돌아가며 고개 기울임이나 손짓은 없다.",
+    "full-body": "B안 가이드: 양발로 서는 중립 자세, 팔은 몸통에서 약간 떨어뜨리며 양손과 발끝이 완전히 보인다."
+  }
+}
