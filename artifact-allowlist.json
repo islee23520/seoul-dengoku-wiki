@@ -20,6 +20,7 @@
   "directories": {
     "person-details": "^person-[0-9]{4}\\.json$",
     "portrait-tokens": "^person-[0-9]{4}\\.json$",
+    "portrait-reviews": "^person-[0-9]{4}\\.json$",
     "portraits": "^person-[0-9]{4}\\.png$",
     "clan-crests": "^(?:[a-z0-9-]+\\.svg|index\\.json)$",
     "regional-terrain-tiles": "^[0-9]+-[0-9]+(?:-water\\.json|\\.bin)$",

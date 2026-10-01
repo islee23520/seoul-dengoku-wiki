@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0998",
+  "characterId": "K998",
+  "imageSha256": "8b96b28031b8ee205fc0417bd79ffe3e21a50f8e248454a3bb2c4dc8ea535cf5",
+  "ownerVerdict": {
+    "verdict": "pass",
+    "updatedAt": "2026-10-01T01:50:35.591Z",
+    "scope": "exact portrait image only"
+  },
+  "generationRequest": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5-sunburst",
+    "prompt": "Image 1 is STYLE ONLY. Image 2 is ORIGINAL CHARACTER IDENTITY: The edited token is authoritative for every specified property, including gender, age, hair and garments. Override conflicting details in all reference images. Preserve reference identity details only where the token leaves them unchanged. Image 2 is a personal photograph for facial proportions and hairstyle ONLY. Preserve its facial likeness. Do not copy its clothing, pose, camera framing or background; use the authored outfit and shared camera contract instead. Never copy image 1 identity. No writing or labels within image. Exactly one person, one portrait view only. No comparison sheet, duplicate figure, inset or multi-view layout. Use edited token outfit details on their anatomically correct surfaces. Frame only full head, shoulders and upper chest. Original 2D anime character art of Yi Il-seop; male; opening-generation adult; calm restraint; First Branch Workshop Lee-house heir who tends the depot field and checks grain stocks; Use the latest owner photograph for facial likeness: softly rounded jaw, natural cheek volume, straight dark eyebrows, slightly narrow eyes, rounded nose tip and softly shaped lips; no glasses or facial hair. Preserve the photographed facial proportions rather than the previous generated face.; Use the latest owner photograph: short dense black hair with a rounded natural crown, side volume and a curved slightly separated fringe above the eyebrows; not a uniform heavy straight fringe.; adult build with natural proportions; Muted clay-brown plain work jacket over cream shirt. medium close-up shot centered on the face, shoulders and upper chest only; crop at chest level with the top of the head and both shoulders visible, consistent portrait scale across characters; eye-level three-quarter camera, no waist, hands, or full body. Pose: neutral still bust, shoulders level, head and torso turned slightly toward viewer's right as the B reference, no head tilt or gestures. anime manga style: Mitsuteru Yokoyama. Apply this single selected artist consistently to every character and output; do not blend other artist styles. Use the B image only for ink, flat shadows and palette treatment; never copy its person's face, hair, clothing or pose. Follow the 20th-century historical manga style of the B reference image. Maintain thick and thin ink lines, broad light planes on the face and solid blocks of light and shadow, sparse hatching, seam lines and paper texture where needed, low-saturation clothing and a warm neutral gray background. Avoid gloss, airbrushing and photographic gradients. Judge the art style by comparing it side by side with the reference image itself. Do not copy the B image person's face, hair or clothing onto another person. Do not put names, codes or letters in the image. The face, hairline, garment cut, palette and approved equipment must remain consistent across portrait and full-body views of this character. Modern post-collapse Seoul, not ancient armor. Keep the silhouette and flat ink treatment readable at a small portrait size. No glossy eyes, detailed anime hair strands, soft airbrushed shading, elaborate buckles, invented insignia, weapons, text or watermark.",
+    "size": "1024x1536",
+    "n": 1,
+    "references": [
+      {
+        "index": 1,
+        "role": "style-only",
+        "sha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526"
+      },
+      {
+        "index": 2,
+        "role": "identity-only",
+        "sha256": "1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+      }
+    ]
+  },
+  "generationReceipt": {
+    "request": {
+      "schemaVersion": 1,
+      "model": "gpt-image-2.5-sunburst",
+      "prompt": "Image 1 is STYLE ONLY. Image 2 is ORIGINAL CHARACTER IDENTITY: The edited token is authoritative for every specified property, including gender, age, hair and garments. Override conflicting details in all reference images. Preserve reference identity details only where the token leaves them unchanged. Image 2 is a personal photograph for facial proportions and hairstyle ONLY. Preserve its facial likeness. Do not copy its clothing, pose, camera framing or background; use the authored outfit and shared camera contract instead. Never copy image 1 identity. No writing or labels within image. Exactly one person, one portrait view only. No comparison sheet, duplicate figure, inset or multi-view layout. Use edited token outfit details on their anatomically correct surfaces. Frame only full head, shoulders and upper chest. Original 2D anime character art of Yi Il-seop; male; opening-generation adult; calm restraint; First Branch Workshop Lee-house heir who tends the depot field and checks grain stocks; Use the latest owner photograph for facial likeness: softly rounded jaw, natural cheek volume, straight dark eyebrows, slightly narrow eyes, rounded nose tip and softly shaped lips; no glasses or facial hair. Preserve the photographed facial proportions rather than the previous generated face.; Use the latest owner photograph: short dense black hair with a rounded natural crown, side volume and a curved slightly separated fringe above the eyebrows; not a uniform heavy straight fringe.; adult build with natural proportions; Muted clay-brown plain work jacket over cream shirt. medium close-up shot centered on the face, shoulders and upper chest only; crop at chest level with the top of the head and both shoulders visible, consistent portrait scale across characters; eye-level three-quarter camera, no waist, hands, or full body. Pose: neutral still bust, shoulders level, head and torso turned slightly toward viewer's right as the B reference, no head tilt or gestures. anime manga style: Mitsuteru Yokoyama. Apply this single selected artist consistently to every character and output; do not blend other artist styles. Use the B image only for ink, flat shadows and palette treatment; never copy its person's face, hair, clothing or pose. Follow the 20th-century historical manga style of the B reference image. Maintain thick and thin ink lines, broad light planes on the face and solid blocks of light and shadow, sparse hatching, seam lines and paper texture where needed, low-saturation clothing and a warm neutral gray background. Avoid gloss, airbrushing and photographic gradients. Judge the art style by comparing it side by side with the reference image itself. Do not copy the B image person's face, hair or clothing onto another person. Do not put names, codes or letters in the image. The face, hairline, garment cut, palette and approved equipment must remain consistent across portrait and full-body views of this character. Modern post-collapse Seoul, not ancient armor. Keep the silhouette and flat ink treatment readable at a small portrait size. No glossy eyes, detailed anime hair strands, soft airbrushed shading, elaborate buckles, invented insignia, weapons, text or watermark.",
+      "size": "1024x1536",
+      "n": 1,
+      "references": [
+        {
+          "index": 1,
+          "role": "style-only",
+          "sha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526"
+        },
+        {
+          "index": 2,
+          "role": "identity-only",
+          "sha256": "1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+        }
+      ]
+    },
+    "imageSha256": "8b96b28031b8ee205fc0417bd79ffe3e21a50f8e248454a3bb2c4dc8ea535cf5",
+    "status": "candidate-unreviewed"
+  },
+  "canonPromotion": false,
+  "final3dPortraitContractSatisfied": false
+}
