@@ -5,6 +5,7 @@ import { createRoot } from 'react-dom/client'
 import { MemoryRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import { test, vi } from 'vitest'
 import PeoplePage from '../src/pages/PeoplePage.tsx'
+import { peopleCatalog } from '../src/generated/peopleCatalog.ts'
 
 const key = 'wiki.people.filters.v1'
 const selected = { query: '감국', state: '신내운수', commonTier: 'T5', occupation: '외곽 호송 인원·발포 권한 확인', gender: '여성' }
@@ -112,6 +113,26 @@ test('unknown saved dropdown choices default independently and preserve the raw 
     const expected = { ...defaults, query: saved.query }
     assert.deepEqual(values(page.host), expected)
     assert.deepEqual(JSON.parse(sessionStorage.getItem(key)), expected)
+    assert.equal(page.host.querySelectorAll('.people-table tbody tr').length, 1)
+    assert.equal(page.host.querySelector('.people-table a').getAttribute('href'), '/people/person-0306')
+  } finally { await page.close(); sessionStorage.clear() }
+})
+
+test('ordinary roster and five controls remain without featured sections or portrait links', async () => {
+  sessionStorage.clear()
+  const page = await mount()
+  try {
+    assert.equal(page.host.querySelector('.people-recommended'), null)
+    assert.equal(page.host.querySelector('.people-leaders'), null)
+    assert.equal(page.host.querySelector('img.people-portrait'), null)
+    assert.equal(page.host.querySelector('a[href*="portrait-tokens/"]'), null)
+    assert.deepEqual(values(page.host), defaults)
+    assert.equal(page.host.querySelectorAll('.people-filters select').length, 4)
+    assert.equal(page.host.querySelectorAll('.people-table tbody tr').length, peopleCatalog.length)
+    assert.ok(page.host.querySelector('a[href="/people/draft"]'))
+    assert.ok(page.host.querySelector('a[href="/tools/character-art"]'))
+    await choose(page.host, selected)
+    assert.deepEqual(values(page.host), selected)
     assert.equal(page.host.querySelectorAll('.people-table tbody tr').length, 1)
     assert.equal(page.host.querySelector('.people-table a').getAttribute('href'), '/people/person-0306')
   } finally { await page.close(); sessionStorage.clear() }
