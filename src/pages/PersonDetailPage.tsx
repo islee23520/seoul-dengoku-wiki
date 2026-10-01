@@ -406,8 +406,8 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
       <div className="person-detail-layout">
         <aside className="person-data-panel" aria-label="인물 구조화 데이터">
           {portraitCatalog.entries.some((entry) => entry.personId === detail.id && entry.name === detail.name) && <figure>
-            <img className="people-portrait" src={`${import.meta.env.BASE_URL}portraits/${detail.id}.png`} alt={`${detail.name} 초상 아트 제안`} />
-            <figcaption>초상 아트 제안 · <a href={`${import.meta.env.BASE_URL}portrait-tokens/${detail.id}.json`}>디자인 토큰</a></figcaption>
+            <img className="people-portrait" src={`${import.meta.env.BASE_URL}portraits/${detail.id}.png?v=${portraitCatalog.entries.find((entry) => entry.personId === detail.id && entry.name === detail.name)?.imageSha256}`} alt={`${detail.name} 초상 아트 제안`} />
+            <figcaption>초상 아트 제안 · <a href={`${import.meta.env.BASE_URL}portrait-tokens/${detail.id}.json?v=${portraitCatalog.entries.find((entry) => entry.personId === detail.id && entry.name === detail.name)?.imageSha256}`}>디자인 토큰</a></figcaption>
           </figure>}
           <DataTable title="기본 정보" rows={basicRows} />
           <DataTable title="관계" rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />
