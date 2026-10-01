@@ -103,3 +103,16 @@ test('schema rejects an entry without a source', () => {
   delete broken.martialSchools[0].source
   assert.ok(schemaFailures(broken, schema, '').some((failure) => failure.includes('missing source')))
 })
+
+test('retired branch provenance cannot become an active public transmission', () => {
+  for (const mutate of [
+    (branch) => { delete branch.rightsStatus },
+    (branch) => { branch.rightsStatus = 'original' },
+    (branch) => { branch.source = 'lore/culture/Martial-Paths.json#/content/35' },
+    (branch) => { branch.formalName = branch.name },
+  ]) {
+    const broken = structuredClone(ledger)
+    mutate(broken.martialBranch)
+    assert.ok(schemaFailures(broken, schema, '').length > 0)
+  }
+})

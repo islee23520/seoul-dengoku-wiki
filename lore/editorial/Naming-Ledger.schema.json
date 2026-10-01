@@ -43,13 +43,13 @@
     },
     "martialBranch": {
       "type": "object",
-      "required": ["name", "formalName", "source"],
+      "required": ["name", "formalName", "source", "rightsStatus"],
       "additionalProperties": false,
       "properties": {
         "name": { "$ref": "#/$defs/form" },
-        "formalName": { "type": ["string", "null"] },
-        "source": { "$ref": "#/$defs/source" },
-        "rightsStatus": { "$ref": "#/$defs/rightsStatus" }
+        "formalName": { "type": "null" },
+        "source": { "type": "string", "pattern": "^lore/editorial/[A-Za-z0-9._/-]+\\.json#(?:/[^/#]+)+$" },
+        "rightsStatus": { "const": "retired" }
       }
     },
     "offices": {
