@@ -133,6 +133,9 @@ function assertMartialLedger(martial, naming) {
   assert.deepEqual(pairs, naming.martialSchools.map(({ formalName, hanja }) => [formalName, hanja]))
   assert.ok(naming.martialSchools.every(({ alias }) => alias === null))
   assert.equal(naming.martialBranch.name, '개방 무공')
+  assert.equal(naming.martialBranch.rightsStatus, 'retired')
+  assert.equal(naming.martialBranch.formalName, null)
+  assert.match(naming.martialBranch.source, /^lore\/editorial\/[^#]+\.json#\//u)
   assert.ok(!categories.has(naming.martialBranch.name))
   assert.ok(!naming.martialSchools.some(({ formalName }) => formalName === naming.martialBranch.name))
 }
@@ -158,6 +161,8 @@ test('martial table and ledger reject malformed identities while ignoring displa
     ['blank pair', (source) => { source.content.find(({ anchor }) => anchor === table.anchor).rows[0][2].ko = '' }],
     ['non-null alias', (_source, naming) => { naming.martialSchools[0].alias = '별칭' }],
     ['branch in names', (_source, naming) => { naming.martialSchools[0].formalName = naming.martialBranch.name }],
+    ['retired branch promoted', (_source, naming) => { naming.martialBranch.rightsStatus = 'original' }],
+    ['retired branch points to public source', (_source, naming) => { naming.martialBranch.source = 'lore/culture/Martial-Paths.json#/content/35' }],
   ]
   for (const [label, mutate] of cases) {
     const source = structuredClone(martial)
