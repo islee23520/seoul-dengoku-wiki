@@ -89,7 +89,7 @@
       "text": {
         "en": [
           {
-            "text": "The scale ran from −100 to 100. Zero meant only that the axis had not yet tipped; it did not stand for the virtue of indifference. The axes of desire and preference were recorded separately. The numeric ledgers were "
+            "text": "The scale runs from −100 to 100. Zero means that the axis has not yet tipped in either direction; it does not treat indifference as a virtue. Desires and preferences are recorded separately from values. The values are recorded in "
           },
           {
             "text": "values-cast.json",
@@ -108,7 +108,7 @@
         ],
         "ko": [
           {
-            "text": "눈금은 −100부터 100까지이다. 0은 그 축으로 아직 기울지 않은 상태를 뜻하며 무관심의 미덕을 뜻하지 않는다. 욕망과 취향은 별도 축에 기록되어 있다. 숫자 원장은 "
+            "text": "척도는 −100부터 100까지이다. 0은 그 축에서 아직 어느 쪽으로도 기울지 않은 상태를 뜻하며, 무관심을 미덕으로 평가하는 값은 아니다. 욕망과 취향은 가치관과 별도로 기록한다. 수치는 "
           },
           {
             "text": "values-cast.json",
@@ -122,7 +122,7 @@
             "href": "https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/name-pools/values-orgs.json"
           },
           {
-            "text": "을 따른다."
+            "text": "에 기록되어 있다."
           }
         ]
       }
@@ -133,13 +133,13 @@
       "text": {
         "en": [
           {
-            "text": "C. Reference Comparison Groups",
+            "text": "B. Persons and Organizations",
             "strong": true
           }
         ],
         "ko": [
           {
-            "text": "다. 참고 비교군",
+            "text": "나. 인물과 조직",
             "strong": true
           }
         ]
@@ -201,8 +201,8 @@
           "ko": "+100"
         },
         {
-          "en": "Where it bears on decisions",
-          "ko": "결정에 쓰는 곳"
+          "en": "Decisions affected",
+          "ko": "관련 의사결정"
         }
       ],
       "rows": [
@@ -461,26 +461,26 @@
       "text": {
         "en": [
           {
-            "text": "If values were the gradient on public issues, desire worked as the axis on which "
+            "text": "Values describe a person's stance on public issues. Desires describe "
           },
           {
-            "text": "with whom and how one wanted to entangle",
+            "text": "with whom and how a person wants to form relationships",
             "strong": true
           },
           {
-            "text": " shook decisions. It was read together with ambition and fear. Bonds made without the counterpart's consent, abuse of office, and material involving minors did not go into these cells."
+            "text": ", and influence decisions alongside ambitions and fears."
           }
         ],
         "ko": [
           {
-            "text": "가치관은 공공 쟁점에 대한 기울기이다. 욕망은 "
+            "text": "가치관은 공공 쟁점에 대한 성향을 나타낸다. 욕망은 "
           },
           {
             "text": "누구와 어떻게 관계를 맺으려 하는지",
             "strong": true
           },
           {
-            "text": "를 정하는 축이며 인물의 결정에 작용한다. 욕망은 야망, 공포와 함께 읽는다. 상대의 동의가 없는 결합, 직위 남용, 미성년 관련 소재는 이 칸에 올리지 않는다."
+            "text": "에 관한 성향으로, 야망과 공포와 함께 인물의 결정에 영향을 준다."
           }
         ]
       }
@@ -571,12 +571,12 @@
             "ko": "과시"
           },
           {
-            "en": "Hiding · the private",
-            "ko": "숨김·사적"
+            "en": "Private",
+            "ko": "비공개"
           },
           {
-            "en": "Display · the public",
-            "ko": "과시·공개"
+            "en": "Public",
+            "ko": "공개"
           }
         ],
         [
@@ -626,12 +626,11 @@
       }
     },
     {
-      "kind": "code",
+      "kind": "paragraph",
       "anchor": "인물-욕망과-취향-code4",
-      "language": "text",
       "text": {
-        "en": "Desires: longing _ | possessiveness _ | risk _ | display _ | duration _ | orientation _ | bonding _",
-        "ko": "욕망: 갈망 _ | 독점 _ | 위험 _ | 과시 _ | 지속 _ | 지향 _ | 결합 _"
+        "en": "The five desire scales are longing, possessiveness, risk, display and duration. Orientation and bonding are recorded separately from these scales.",
+        "ko": "욕망의 다섯 척도는 갈망·독점·위험·과시·지속이다. 지향과 결합 방식은 이 척도와 별도로 기록한다."
       }
     },
     {
@@ -706,13 +705,13 @@
       "text": {
         "en": [
           {
-            "text": "A. Policy Slot System",
+            "text": "A. Policy Choices",
             "strong": true
           }
         ],
         "ko": [
           {
-            "text": "가. 정책 슬롯 체계",
+            "text": "가. 정책 선택지",
             "strong": true
           }
         ]
@@ -724,26 +723,12 @@
       "text": {
         "en": [
           {
-            "text": "As in the Stellaris policy system, "
-          },
-          {
-            "text": "each slot was given choices.",
-            "strong": true
-          },
-          {
-            "text": " The numbers here were not slot strength but simple choice codes."
+            "text": "Organization policies have nine categories: war, migrants, water, labor, records, technology, trade, succession and bonding. Each category has its own choices."
           }
         ],
         "ko": [
           {
-            "text": "정책은 스텔라리스의 정책 체계처럼 "
-          },
-          {
-            "text": "슬롯마다 선택지를 둔다.",
-            "strong": true
-          },
-          {
-            "text": " 숫자는 슬롯의 강도가 아닌 선택지 코드이다."
+            "text": "조직의 정책은 전쟁·이주민·급수·노동·기록·기술·교역·후계·결합의 아홉 항목으로 나뉜다. 각 항목에는 선택지가 있다."
           }
         ]
       }
@@ -898,10 +883,34 @@
       "kind": "paragraph",
       "anchor": "조직-정책-8칸-p5",
       "text": {
-        "en": "Operating houses HC and HP and external theaters XT use the same fields. House records appear in the world narrative atlas.",
+        "en": [
+          {
+            "text": "Operating houses HC and HP and external theaters XT use the same fields. House records appear in the "
+          },
+          {
+            "text": "world narrative atlas",
+            "link": {
+              "domain": "root",
+              "slug": "World-Narrative-Atlas"
+            }
+          },
+          {
+            "text": ". Details by layer appear in "
+          },
+          {
+            "text": "Houses",
+            "link": {
+              "domain": "factions",
+              "slug": "Chaebol-Houses-and-Century-Factions"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
         "ko": [
           {
-            "text": "운영가문 HC·HP와 서울 바깥 회랑 XT도 같은 칸을 쓴다. 가문 산문의 기록은 "
+            "text": "운영가문 HC·HP와 서울 바깥 회랑 XT도 같은 항목을 쓴다. 가문에 관한 기록은 "
           },
           {
             "text": "세계 서사 총람",
@@ -911,7 +920,7 @@
             }
           },
           {
-            "text": "이다. 층별 세부 설명은 "
+            "text": "에 있고, 층별 세부 설명은 "
           },
           {
             "text": "가문",
@@ -941,13 +950,13 @@
       "text": {
         "en": [
           {
-            "text": "A. Suggested Entry List",
+            "text": "A. Values by Person",
             "strong": true
           }
         ],
         "ko": [
           {
-            "text": "가. 작성 제안 목록",
+            "text": "가. 인물별 가치관",
             "strong": true
           }
         ]
@@ -1809,8 +1818,8 @@
       "kind": "paragraph",
       "anchor": "개막-핵심-인물-17명-p3",
       "text": {
-        "en": "A positive qualification value meant proximity to examinations and apprenticeship. Im Chowon and I Hongwon stood high on this number, and Bae Ujin showed steep gradients on the force and authority items.",
-        "ko": "자격 값이 양수이면 시험·도제 쪽에 가깝다. 임초원과 이홍원은 이 값이 높다. 배우진은 무력과 권위의 기울기가 높다."
+        "en": "A positive qualification value means a preference for examinations and apprenticeship. Im Chowon and I Hongwon have high values on this axis. Bae Ujin has high force and authority values.",
+        "ko": "자격 값이 양수이면 시험·도제 쪽에 가깝다. 임초원과 이홍원은 이 값이 높다. 배우진은 무력과 권위 값이 높다."
       }
     },
     {
