@@ -4,6 +4,17 @@ import { peopleCatalog } from '../generated/peopleCatalog'
 import { makeArtSourcePacket, resolveArtPerson } from './personArtSource'
 import PortraitPromptPanel from './PortraitPromptPanel'
 
+import { StyleDownloadPanel, type StyleDownloadSource } from './StyleDownloadPanel'
+import originalStyle from '../../public/portrait-style-original-c3a7e481.json'
+
+const originalStyleExport: StyleDownloadSource = {
+  styleId: originalStyle.styleId,
+  referenceSha256: originalStyle.referenceSha256,
+  stylePrompt: originalStyle.stylePrompt,
+  camera: originalStyle.camera,
+  pose: originalStyle.pose,
+}
+
 type ArtDetail = {
   readonly id: string
   readonly name: string
@@ -123,6 +134,7 @@ export default function CharacterArtToolPage() {
     <nav aria-label="현재 위치" className="wiki-breadcrumbs"><Link to="/people">등장인물 전체</Link><span aria-hidden="true">›</span><strong>인물 아트 도구</strong></nav>
     <header className="wiki-article-header"><div><p className="wiki-domain-label">서울:전국 공식 위키 · 인물</p><h1>인물 아트 도구</h1></div></header>
     <div className="wiki-prose">
+      <StyleDownloadPanel source={originalStyleExport} />
       <label className="people-search"><span>인물 선택</span><select value={selected?.id ?? ''} onChange={(event) => setParams(event.target.value ? { person: event.target.value } : {})}>
         <option value="">인물을 선택하세요</option>
         {peopleCatalog.map((person) => <option key={person.id} value={person.id}>{person.name} · {person.id}</option>)}
