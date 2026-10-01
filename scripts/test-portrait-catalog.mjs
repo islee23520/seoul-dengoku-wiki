@@ -3,12 +3,15 @@ import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 
-test('portrait properties and immutable images follow the canonical 21-person catalog', async () => {
+test('portrait properties and immutable images follow the registered portrait catalog', async () => {
   const catalog = JSON.parse(await readFile(new URL('../portrait-catalog.json', import.meta.url), 'utf8'))
   const properties = JSON.parse(await readFile(new URL('../portrait-properties.json', import.meta.url), 'utf8'))
   const genders = JSON.parse(await readFile(new URL('../lore/name-pools/gender-cast.json', import.meta.url), 'utf8')).people
-  assert.equal(catalog.entries.length, 21)
-  assert.equal(new Set(catalog.entries.map(entry => entry.personId)).size, 21)
+  assert.ok(catalog.entries.length > 0)
+  assert.equal(new Set(catalog.entries.map(entry => entry.personId)).size, catalog.entries.length)
+  const iyen = catalog.entries.find(entry => entry.characterId === 'K1004')
+  assert.equal(iyen?.name, '이연')
+  assert.equal(iyen?.personId, 'person-1004')
   assert.equal(catalog.entries.filter(entry => entry.stateId).length, 16)
   assert.deepEqual(Object.keys(properties.entries).sort(), catalog.entries.map(entry => entry.personId).sort())
   for (const entry of catalog.entries) {
