@@ -97,7 +97,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "저장소 루트는 아래 도메인 디렉터리와 루트 설정 파일만 가질 수 있다. 이 목록 외의 루트 항목은 `Tool/tools/policy/check-repo-delivery-policy.mjs`의 구조 검사가 거부한다(fail-closed)."
+          "text": "저장소 루트는 아래 도메인 디렉터리와 루트 설정 파일만 가질 수 있다. 이 목록 외의 루트 항목은 `TOOL/tools/policy/check-repo-delivery-policy.mjs`의 구조 검사가 거부한다(fail-closed). 루트 `evidence/`는 허용 도메인이 아니며 모든 검증 자료는 ignored `.omo/evidence/`에만 둔다."
         }
       ]
     },

@@ -53,7 +53,7 @@
         [
           {
             "kind": "text",
-            "text": "범위: 루트 `evidence/`의 신규 작성, 검증, 병합 후 정리"
+            "text": "범위: 모든 캡처·영수증·QA 증거의 비공개 로컬 보관과 공개 제외"
           }
         ]
       ]
@@ -75,7 +75,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "루트 `evidence/`는 구현 검증 자료를 리뷰어와 공유하는 데 유용하지만, 병합 후에도 계속 누적되면 정본·실험·운영 자료의 경계가 흐려지고 저장소가 장기 보관소처럼 커진다. 반대로 evidence를 전면 폐기하면 PR 리뷰 시점의 실제 렌더·테스트·수치 근거를 추적할 수 없다."
+          "text": "소유자 결정으로 검증 자료는 저장소·PR·배포에 남기지 않는다. 공개 경로는 영구 보관·의도치 않은 노출·LFS 비용을 만들고, 검토에는 로컬 비공개 참조면 충분하다."
         }
       ]
     },
@@ -98,20 +98,20 @@
         [
           {
             "kind": "text",
-            "text": "`evidence/`는 **PR 리뷰 중 임시로 추적되는 증거 저장소**다."
+            "text": "모든 캡처·영수증·QA 증거는 무시되는 `.omo/evidence/`에만 둔다."
           }
         ],
         [
           {
             "kind": "text",
-            "text": "신규 증거는 반드시 `evidence/pr-<PR_NUMBER>/` 아래에만 둔다."
+            "text": "루트 `evidence/`는 금지된 경로다. 추가·강제 추가·PR 첨부·배포 입력으로 사용하지 않는다."
           }
         ],
         {
           "inlines": [
             {
               "kind": "text",
-              "text": "각 PR 폴더에는 `manifest.json`이 있어야 하며 최소한 다음을 기록한다."
+              "text": "비공개 증거는 작업자가 로컬 참조와 해시를 기록할 수 있지만, 이 저장소의 추적 파일이나 PR 산출물이 아니다."
             }
           ],
           "children": {
@@ -154,25 +154,25 @@
         [
           {
             "kind": "text",
-            "text": "PR 검사기는 현재 PR에서 추가·수정·이름 변경된 evidence artifact가 해당 PR 번호 폴더 안에 있고 매니페스트에 등록됐는지 검증한다. `evidence/README.md`는 정책 문서라 이 경로 규칙의 예외다."
+            "text": "저장소 게이트는 추적된 루트 `evidence/`와 추적된 `.omo/`를 거부하고, 게시 매니페스트가 root evidence를 입력으로 삼지 못하게 한다."
           }
         ],
         [
           {
             "kind": "text",
-            "text": "PR이 merge되면 GitHub Actions가 `evidence/pr-<PR_NUMBER>/`를 삭제하는 별도 cleanup branch와 pull request를 자동 생성한다."
+            "text": "PR·CI·배포는 비공개 증거를 업로드·게시·복사하지 않는다."
           }
         ],
         [
           {
             "kind": "text",
-            "text": "cleanup workflow는 main에 직접 push하거나 cleanup PR을 자동 merge하지 않는다. ADR-001의 owner-only merge 계약을 유지한다."
+            "text": "삭제·보존은 현재 작업 경로에만 적용하며 Git/LFS 과거 이력이나 원격 저장소를 다시 쓰지 않는다."
           }
         ],
         [
           {
             "kind": "text",
-            "text": "PR 폴더가 없으면 cleanup workflow는 성공적으로 종료하고 아무 변경도 만들지 않는다."
+            "text": "생산자는 기본 출력과 영수증을 `.omo/evidence/`로 사용한다."
           }
         ]
       ]
@@ -194,7 +194,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "이 결정 전부터 main에 존재한 비-PR evidence 디렉터리는 grandfathered historical evidence다. 이번 결정이 즉시 이동·삭제하지 않는다. 단, 앞으로 해당 legacy 경로에 파일을 추가하거나 수정하는 것은 금지한다. 별도 archive migration이 승인되기 전까지 읽기 전용으로 취급한다."
+          "text": "이 결정 전 root `evidence/`에 있던 파일은 소유자 허가로 현재 경로에서 제거한다. 사용 가능한 실제 바이트는 제거 전에 ignored `.omo/evidence/`에 SHA-256과 출처를 함께 보존한다."
         }
       ]
     },
@@ -217,25 +217,25 @@
         [
           {
             "kind": "text",
-            "text": "리뷰 중에는 증거가 버전 관리되고 PR diff에서 확인된다."
+            "text": "검토 근거는 로컬 비공개 상태로 남고 저장소 diff에는 포함되지 않는다."
           }
         ],
         [
           {
             "kind": "text",
-            "text": "merge 후에는 cleanup PR을 통해 장기 누적을 방지한다."
+            "text": "저장소와 공개 산출물에는 evidence 경로가 없다."
           }
         ],
         [
           {
             "kind": "text",
-            "text": "cleanup도 리뷰·승인을 거치므로 자동 삭제가 main에 직접 반영되지 않는다."
+            "text": "비공개 evidence는 force-add하거나 외부 서비스에 업로드하지 않는다."
           }
         ],
         [
           {
             "kind": "text",
-            "text": "장기 보존이 필요한 자산·영수증은 `ART-ASSETS/`, GDD/LORE 정본 또는 해당 도구의 정본 디렉터리로 승격해야 한다."
+            "text": "런타임·정본 자산은 해당 소유 경로의 승인 절차로만 승격하며, QA evidence 자체는 승격 대상이 아니다."
           }
         ]
       ]
