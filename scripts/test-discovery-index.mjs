@@ -29,13 +29,15 @@ test('document index links every generated canon document', async () => {
   assert.match(page, /to=\{document\.route\}/)
 })
 
-test('editorial writing rules stay outside generated world and all 83 routes', async () => {
+test('editorial writing rules stay outside the current published route set', async () => {
   const rules = await readFile(new URL('../lore/editorial/Writing-Rules.md', import.meta.url), 'utf8')
   assert.match(rules, /공개 본문과 집필 규칙의 경계/)
   const contract = JSON.parse(await readFile(new URL('../public/wiki-contract.json', import.meta.url), 'utf8'))
   const generated = (await readdir(new URL('../src/generated/world/', import.meta.url))).filter((name) => name.endsWith('.json'))
-  assert.equal(contract.documents.length, 83)
-  assert.equal(generated.length, 83)
+  const { approvedDocuments, publishedDocuments } = await import('./catalog-admission.mjs')
+  const expected = publishedDocuments(await approvedDocuments(new URL('../lore/', import.meta.url).pathname))
+  assert.deepEqual(contract.documents.map((document) => document.route).sort(), expected.map((document) => document.route).sort())
+  assert.equal(generated.length, expected.length)
   assert.ok(contract.documents.every(({ route }) => !route.includes('Writing-Rules')))
   assert.ok(!generated.includes('Writing-Rules.json'))
   for (const name of generated) {
@@ -84,5 +86,10 @@ test('category entries use authored Korean titles when pages have no top heading
   const index = JSON.parse(source.split('export const categoryIndex = ')[1].split(' as const satisfies')[0])
   const characters = index.categories.find(({ id }) => id === 'characters')
   const page = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-01.json', import.meta.url), 'utf8'))
-  assert.equal(characters.documents.find(({ slug }) => slug === 'Cast-State-01').title, page.locales.ko.title)
+  assert.equal(characters.documents.some(({ slug }) => slug === 'Cast-State-01'), false)
+  const { renderLoreMarkdown } = await import('./lore-json-render.mjs')
+  const { categoryIndex } = await import('./category-registration.mjs')
+  assert.doesNotMatch(renderLoreMarkdown(page, 'ko'), /^# /mu)
+  const fixture = categoryIndex([{ slug: 'Cast-State-01', route: '/world/Cast-State-01', title: page.locales.ko.title, categories: ['characters'] }], { categories: [{ id: 'characters', label: '인물' }] })
+  assert.equal(fixture.categories[0].documents[0].title, page.locales.ko.title)
 })
