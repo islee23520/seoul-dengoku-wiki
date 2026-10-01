@@ -15,9 +15,9 @@ vi.mock('three', async (importOriginal) => {
   } }
 })
 
-test.each(['switch layers', 'keep active layer'])('selected segment interaction: %s', async (scenario) => {
+test.each(['switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground'])('selected segment interaction: %s', async (scenario) => {
   const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
-  const edges = data.edges.filter((edge) => ['segment:신촌~이대', 'segment:동묘앞~신설동'].includes(edge.id))
+  const edges = data.edges.filter((edge) => ['segment:신촌~이대', 'segment:신촌(지하)~이대', 'segment:동묘앞~신설동'].includes(edge.id))
   const stationIds = new Set(edges.flatMap((edge) => [edge.a, edge.b]))
   const mapData = { ...data, edges, stations: data.stations.filter((station) => stationIds.has(station.id)), states: [], regions: [], landmarks: [], vassals: [], majorStationIds: [] }
   const terrain = { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [0, 0, 1, 1] }], farWaterFile: 'water.json', attribution: '' }
@@ -38,6 +38,33 @@ test.each(['switch layers', 'keep active layer'])('selected segment interaction:
     const layerButton = (name) => [...host.querySelectorAll('.territory-layer-toggle button')].find((button) => button.textContent === name)
     await act(async () => { layerButton('지하 영토').click() })
     const segment = host.querySelector('[data-underground-segment="segment:신촌~이대"]')
+    if (scenario.startsWith('choose ')) {
+      // jsdom has no SVG geometry; provide only the graphics boundary in screen pixels.
+      vi.stubGlobal('DOMPoint', class {
+        constructor(x, y) { this.x = x; this.y = y }
+        matrixTransform() { return { x: this.x, y: this.y } }
+      })
+      for (const line of host.querySelectorAll('line[data-underground-segment]')) {
+        for (const key of ['x1', 'y1', 'x2', 'y2']) Object.defineProperty(line, key, { configurable: true, value: { baseVal: { value: Number(line.getAttribute(key)) } } })
+        line.getScreenCTM = () => ({ a: 1, b: 0, c: 0, d: 1 })
+        line.getCTM = () => ({ a: 1, b: 0, c: 0, d: 1 })
+      }
+      const originalComputedStyle = window.getComputedStyle.bind(window)
+      vi.spyOn(window, 'getComputedStyle').mockImplementation((element) => element.matches('line[data-underground-segment]')
+        ? { strokeWidth: element.getAttribute('stroke-width'), vectorEffect: 'non-scaling-stroke', display: 'inline', visibility: 'visible', opacity: '1', strokeOpacity: '1', stroke: '#fff' }
+        : originalComputedStyle(element))
+      const x = (Number(segment.getAttribute('x1')) + Number(segment.getAttribute('x2'))) / 2
+      const y = (Number(segment.getAttribute('y1')) + Number(segment.getAttribute('y2'))) / 2
+      // Select first so opening a chooser must survive unchanged prior selection state.
+      await act(async () => { segment.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+      await act(async () => { segment.dispatchEvent(new MouseEvent('click', { bubbles: true, detail: 1, clientX: x, clientY: y })) })
+      assert.equal(host.querySelectorAll('[data-segment-choice]').length, 2)
+      const id = scenario === 'choose ShinCHON' ? 'segment:신촌~이대' : 'segment:신촌(지하)~이대'
+      await act(async () => { host.querySelector(`[data-segment-choice="${id}"]`).click() })
+      assert.equal(host.querySelector('#territory-detail-panel h3')?.textContent, scenario === 'choose ShinCHON' ? '신촌–이대' : '신촌(지하)–이대')
+      assert.equal(host.querySelectorAll('[data-segment-choice]').length, 0)
+      return
+    }
     await act(async () => { segment.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
     assert.equal(host.querySelector('#territory-detail-panel h3')?.textContent, '신촌–이대')
     if (scenario === 'keep active layer') {

@@ -3,6 +3,32 @@ import { readFile, readdir } from 'node:fs/promises'
 import { test } from 'vitest'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
 import { validatedDensities } from './region-density.mjs'
+import { segmentPointerChoices } from '../src/components/segmentPointerSelection.ts'
+
+test('overlapping actual ShinCHON segment strokes retain both exact IDs independent of paint order', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const stations = new Map(data.stations.map((station) => [station.id, station]))
+  const ids = ['segment:신촌~이대', 'segment:신촌(지하)~이대']
+  const segments = ids.map((id) => {
+    const edge = data.edges.find((item) => item.id === id)
+    return { id, a: stations.get(edge.a), b: stations.get(edge.b), strokeWidth: 4 }
+  })
+  const { a, b } = segments[0]
+  const point = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 }
+  assert.deepEqual(new Set(segmentPointerChoices(point, segments)), new Set(ids))
+  assert.deepEqual(new Set(segmentPointerChoices(point, [...segments].reverse())), new Set(ids))
+  assert.deepEqual(segmentPointerChoices(point, segments.slice(0, 1)), [ids[0]])
+})
+
+test('segment pointer hits stop at finite endpoints and use actual stroke width', () => {
+  const segment = { id: 'segment:test', a: { x: 0, y: 0 }, b: { x: 10, y: 0 }, strokeWidth: 4 }
+  assert.deepEqual(segmentPointerChoices({ x: 20, y: 0 }, [segment]), [])
+  assert.deepEqual(segmentPointerChoices({ x: 5, y: 3 }, [segment]), [])
+  assert.deepEqual(segmentPointerChoices({ x: 5, y: 3 }, [{ ...segment, strokeWidth: 7 }]), ['segment:test'])
+  const pointSegment = { ...segment, b: segment.a }
+  assert.deepEqual(segmentPointerChoices({ x: 1, y: 0 }, [pointSegment]), ['segment:test'])
+  assert.deepEqual(segmentPointerChoices({ x: 3, y: 0 }, [pointSegment]), [])
+})
 
 test('rail geometry uses one visible source and the detail panel stays inside the map', async () => {
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
