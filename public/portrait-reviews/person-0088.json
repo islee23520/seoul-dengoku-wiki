@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0088",
+  "characterId": "K423",
+  "imageSha256": "c23ddf3ddff81be238abe0c7a9018f768bdef45773cfc056c10a03bcd0be9c81",
+  "ownerVerdict": {
+    "verdict": "pass",
+    "updatedAt": "2026-10-01T03:47:32.053Z",
+    "scope": "exact portrait image only"
+  },
+  "generationRequest": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5-sunburst",
+    "prompt": "Image 1 is STYLE ONLY. Image 2 is ORIGINAL CHARACTER IDENTITY: preserve face, hair and costume as authored.  Never copy image 1 identity. No writing or labels within image. Exactly one person, one portrait view only.  No comparison sheet, duplicate figure, inset or multi-view layout. Preserve authored outfit details on their anatomically correct surfaces from the original identity image. Frame only full head, shoulders and upper chest. Original 2D anime character art of 오경재; 남성; 개막 세대 성인; 차분한 절제; 명부교회 당회장; 좁고 사려 깊은 얼굴; 단정히 넘긴 짙은 머리; 자연 비율의 성인 체형; 종교 문양 없는 빛바랜 올리브색 민간 외투. medium close-up shot centered on the face, shoulders and upper chest only; crop at chest level with the top of the head and both shoulders visible, consistent portrait scale across characters; eye-level three-quarter camera, no waist, hands, or full body. Pose: neutral still bust, shoulders level, head and torso turned slightly toward viewer's right as the B reference, no head tilt or gestures.  anime manga style: 橫山光輝. Apply this single selected artist consistently to every character and output; do not blend other artist styles. Use the B image only for ink, flat shadows and palette treatment; never copy its person's face, hair, clothing or pose. B안 기준 이미지의 20세기 역사만화풍을 따른다. 굵고 얇은 먹선, 넓은 밝은 얼굴 면과 단단한 명암 덩어리, 필요한 곳의 성긴 해칭·봉제선·종이 질감, 저채도 의복과 따뜻한 중성 회색 배경을 유지한다. 광택·에어브러시·사진식 그라데이션은 피한다. 화풍 판정은 기준 이미지 자체와 나란히 비교한다. B안 인물의 얼굴·헤어·복장은 다른 인물에 복제하지 않는다. 그림 안에는 이름·코드·글자를 넣지 않는다. The face, hairline, garment cut, palette and approved equipment must remain consistent across portrait and full-body views of this character. Modern post-collapse Seoul, not ancient armor. Keep the silhouette and flat ink treatment readable at a small portrait size. No glossy eyes, detailed anime hair strands, soft airbrushed shading, elaborate buckles, invented insignia, weapons, text or watermark.",
+    "size": "1024x1536",
+    "n": 1,
+    "references": [
+      {
+        "index": 1,
+        "role": "style-only",
+        "sha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526"
+      },
+      {
+        "index": 2,
+        "role": "identity-only",
+        "sha256": "4ef0cc9f3d6c56bcf240f8639b7fd072140f01d4e5bdf8f3d8beca9095257111"
+      }
+    ]
+  },
+  "generationReceipt": {
+    "request": {
+      "schemaVersion": 1,
+      "model": "gpt-image-2.5-sunburst",
+      "prompt": "Image 1 is STYLE ONLY. Image 2 is ORIGINAL CHARACTER IDENTITY: preserve face, hair and costume as authored.  Never copy image 1 identity. No writing or labels within image. Exactly one person, one portrait view only.  No comparison sheet, duplicate figure, inset or multi-view layout. Preserve authored outfit details on their anatomically correct surfaces from the original identity image. Frame only full head, shoulders and upper chest. Original 2D anime character art of 오경재; 남성; 개막 세대 성인; 차분한 절제; 명부교회 당회장; 좁고 사려 깊은 얼굴; 단정히 넘긴 짙은 머리; 자연 비율의 성인 체형; 종교 문양 없는 빛바랜 올리브색 민간 외투. medium close-up shot centered on the face, shoulders and upper chest only; crop at chest level with the top of the head and both shoulders visible, consistent portrait scale across characters; eye-level three-quarter camera, no waist, hands, or full body. Pose: neutral still bust, shoulders level, head and torso turned slightly toward viewer's right as the B reference, no head tilt or gestures.  anime manga style: 橫山光輝. Apply this single selected artist consistently to every character and output; do not blend other artist styles. Use the B image only for ink, flat shadows and palette treatment; never copy its person's face, hair, clothing or pose. B안 기준 이미지의 20세기 역사만화풍을 따른다. 굵고 얇은 먹선, 넓은 밝은 얼굴 면과 단단한 명암 덩어리, 필요한 곳의 성긴 해칭·봉제선·종이 질감, 저채도 의복과 따뜻한 중성 회색 배경을 유지한다. 광택·에어브러시·사진식 그라데이션은 피한다. 화풍 판정은 기준 이미지 자체와 나란히 비교한다. B안 인물의 얼굴·헤어·복장은 다른 인물에 복제하지 않는다. 그림 안에는 이름·코드·글자를 넣지 않는다. The face, hairline, garment cut, palette and approved equipment must remain consistent across portrait and full-body views of this character. Modern post-collapse Seoul, not ancient armor. Keep the silhouette and flat ink treatment readable at a small portrait size. No glossy eyes, detailed anime hair strands, soft airbrushed shading, elaborate buckles, invented insignia, weapons, text or watermark.",
+      "size": "1024x1536",
+      "n": 1,
+      "references": [
+        {
+          "index": 1,
+          "role": "style-only",
+          "sha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526"
+        },
+        {
+          "index": 2,
+          "role": "identity-only",
+          "sha256": "4ef0cc9f3d6c56bcf240f8639b7fd072140f01d4e5bdf8f3d8beca9095257111"
+        }
+      ]
+    },
+    "imageSha256": "c23ddf3ddff81be238abe0c7a9018f768bdef45773cfc056c10a03bcd0be9c81",
+    "status": "candidate-unreviewed"
+  },
+  "canonPromotion": false,
+  "final3dPortraitContractSatisfied": false
+}
