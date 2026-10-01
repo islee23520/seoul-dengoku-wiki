@@ -368,7 +368,19 @@ export default function OpeningTerritoryMap() {
   }
   const selectStation = (station: DisplayStation) => { setSelectedOutsideUnit(null); setSelectedSegmentId(null); setSelectedStation(station); setRegionalStation(null); setSelectedId(null); setStateFilter('all'); setSelectedVassal(null); setSelectedLandmark(null); setDetailOpen(true) }
   const selectSegment = (segment: Segment) => { setSelectedOutsideUnit(null); setSelectedSegmentId(segment.id); setSelectedStation(null); setRegionalStation(null); setSelectedId(null); setStateFilter('all'); setSelectedVassal(null); setSelectedLandmark(null); setDetailOpen(true) }
-  const chooseLayer = (next: 'surface' | 'underground') => { setLayer(next); setSelectedOutsideUnit(null); setSelectedSegmentId(null); setRegionalStation(null); setSelectedVassal(null); setSelectedLandmark(null) }
+  const chooseLayer = (next: 'surface' | 'underground') => {
+    if (next === layer) return
+    setLayer(next)
+    setSelectedOutsideUnit(null)
+    setSelectedSegmentId(null)
+    setSelectedId(null)
+    setSelectedStation(null)
+    setStateFilter('all')
+    setRegionalStation(null)
+    setSelectedVassal(null)
+    setSelectedLandmark(null)
+    setDetailOpen(false)
+  }
   handlers.current = { chooseRegion, chooseState, chooseVassal, chooseOutsideUnit, selectStation, selectSegment }
   // Pointer and wheel events can arrive several times per frame; apply at most one viewport change per frame.
   const scheduleBox = (next: Box) => {
