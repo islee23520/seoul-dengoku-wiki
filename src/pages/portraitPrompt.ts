@@ -5,7 +5,7 @@ export type PortraitToken = {
   approval: string
   facts: { gender: string; role: string }
   artProposal: { face: string; hair: string; upper: string; lower: string | null; footwear: string | null }
-  style: { referenceSha256: string; portraitShotId: string }
+  style: { referenceSha256: string | null; portraitShotId: string }
 }
 
 export type PromptOverrides = { gender?: string; ageCategory?: string; mood?: string; hair?: string; upper?: string; lower?: string; footwear?: string; variantId?: string }
