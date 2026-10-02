@@ -31,7 +31,6 @@ test('portrait properties and immutable images follow the registered portrait ca
       assert.equal(review.characterId, token.characterId)
       assert.equal(review.imageSha256, token.image.sha256)
       assert.equal(token.imageReview.imageSha256, token.image.sha256)
-      assert.equal(review.ownerVerdict.verdict, 'pass')
       assert.equal(review.generationReceipt.imageSha256, token.image.sha256)
       assert.deepEqual(review.generationRequest, review.generationReceipt.request)
       assert.equal(review.canonPromotion, false)

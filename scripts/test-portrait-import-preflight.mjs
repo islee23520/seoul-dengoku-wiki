@@ -42,6 +42,19 @@ test('legacy evidence IDs resolve canonically without restoring old paths or ref
   assert.deepEqual(await readdir(join(f.wiki, 'public/portrait-tokens')), ['person-0399.json'])
 })
 
+test('stable portrait artifacts do not require a passing review verdict', async () => {
+  const f = await fixture()
+  for (const verdict of ['FAIL', undefined]) {
+    const row = { ...f.row, qaVerdict: verdict }
+    await f.json(join(f.evidence, 'rulers/manifest.json'), { entries: [row] })
+    assert.equal((await preflightPortraitCandidates(f.evidence, f.wiki))[0].personId, 'person-0399')
+  }
+  await writeFile(join(f.evidence, 'rulers/portrait.png'), Buffer.concat([bytes, Buffer.from([2])]))
+  await assert.rejects(preflightPortraitCandidates(f.evidence, f.wiki), /Candidate image hash mismatch/)
+  await rm(join(f.evidence, 'rulers/portrait.png'))
+  await assert.rejects(preflightPortraitCandidates(f.evidence, f.wiki), { code: 'ENOENT' })
+})
+
 test('gender owner lock and replacement artwork fail before any published file changes', async () => {
   const f = await fixture()
   const before = await readFile(join(f.wiki, 'public/portrait-tokens/person-0399.json'))
