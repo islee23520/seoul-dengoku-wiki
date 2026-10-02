@@ -341,18 +341,28 @@
 }
 
 .territory-toolbar {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 0.65rem;
 }
 
+.territory-toolbar > * { flex-shrink: 0; }
+.territory-toolbar .territory-layer-toggle,
+.territory-toolbar .territory-marker-filters { flex: 0 0 auto; }
+.territory-toolbar button,
+.territory-toolbar label,
+.territory-toolbar legend { white-space: nowrap; }
+
 .territory-toolbar .territory-filter {
-  min-inline-size: 0;
+  flex: 0 0 auto;
+  min-inline-size: 12rem;
   white-space: nowrap;
 }
 
 .territory-toolbar .territory-filter select {
-  min-inline-size: 0;
-  max-inline-size: 12rem;
+  min-inline-size: 12rem;
+  inline-size: 16rem;
+  max-inline-size: none;
 }
 
 .territory-camera-controls.territory-camera-overlay {
