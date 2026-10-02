@@ -251,6 +251,25 @@ test('API source boundary follows declared UI copy, not private evidence', () =>
   assert.deepEqual(apiVisibleFields(masked, 'api/characters/person-0001'), [['api/characters/person-0001#/skills/0/ko', '검법']])
 })
 
+test('generated person sheet and holdings copy participates in the public field gate', () => {
+  const person = {
+    name: '정상', gurps: { band: '일반 인물', traits: [{ name: '명성', kind: 'advantage' }], skills: [{ name: 'Observation', ko: '관찰' }] },
+    unit: { type: '수행원', quality: '일반', note: '동행한다.', composition: ['수행원'] },
+    territory: { fief_name: '거점', type: '초소', station: '역', state: 'S01', note: '거점이다.', settlement: { name: '마을', type: '정착지', description: '거점 곁에 있다.' } },
+    wandering_force: { type: '유랑', current_location: '강변', note: '이동한다.', camp: { name: '야영지', type: '야영지', description: '강변에 있다.', facilities: ['숙소'], pack_up_time: '반나절' } },
+  }
+  const fields = personVisibleFields(person, 'person')
+  for (const pointer of ['/gurps/band', '/gurps/traits/0/name', '/gurps/skills/0/ko', '/unit/note', '/unit/composition/0', '/territory/settlement/description', '/wandering_force/camp/facilities/0', '/wandering_force/camp/pack_up_time']) {
+    assert.ok(fields.some(([path]) => path === `person#${pointer}`), pointer)
+    const changed = structuredClone(person)
+    const keys = pointer.slice(1).split('/')
+    const leaf = keys.pop()
+    keys.reduce((value, key) => value[key], changed)[leaf] = '사용자 확정'
+    assert.ok(personVisibleFields(changed, 'person').flatMap(([path, value]) => visibleFieldFailures(value, path)).some((failure) => failure.includes(pointer)), pointer)
+  }
+  assert.ok(fields.every(([path, value]) => visibleFieldFailures(value, path).length === 0))
+})
+
 test('table review emits AST cells with source hashes without scoring or dropping identities', () => {
   const document = { blocks: [{ type: 'table', children: [
     { type: 'tableRow', children: [{ type: 'tableCell', children: [{ type: 'text', value: 'ID' }] }, { type: 'tableCell', children: [{ type: 'text', value: '설명' }] }] },

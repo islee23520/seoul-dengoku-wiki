@@ -901,6 +901,9 @@ const retainerGraph = {
   courts: graphCourts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
 }
 await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
+const issuedSheets = JSON.parse(await readFile(resolve(repoRoot, 'lore/name-pools/gurps-cast.json'), 'utf8')).people
+const sheetById = new Map(issuedSheets.map((sheet) => [sheet.id, sheet]))
+if (sheetById.size !== issuedSheets.length) throw new Error('E_PERSON_SHEET_DUPLICATE_ID')
 for (const person of peopleCatalog) {
   const ledger = peopleSource.find((candidate) => candidate.name === person.name)
   const cards = personCards.get(person.name) ?? []
@@ -911,8 +914,23 @@ for (const person of peopleCatalog) {
   const lineage = lineageByName.get(person.name)
   const issuedId = issuedIdByName.get(person.name)
   if (!lineage) throw new Error(`E_PERSON_LINEAGE_MISSING:${person.name}`)
+  const sheet = sheetById.get(issuedId)
+  if (!sheet || sheet.name !== person.name || sheet.url !== person.detailRoute) throw new Error(`E_PERSON_SHEET_IDENTITY:${issuedId}:${person.id}`)
   const detail = {
     ...person,
+    gurps: {
+      id: issuedId,
+      personId: person.id,
+      band: sheet.band,
+      attributes: Object.fromEntries(Object.entries(sheet.attributes).map(([key, { value, cp }]) => [key, { value, cp }])),
+      traits: sheet.traits.map(({ name, kind, cp, rule }) => ({ name, kind, cp, rule })),
+      skills: sheet.skills.map(({ name, ko, level, cp }) => ({ name, ko, level, cp })),
+      cp: sheet.cp,
+      secondary: sheet.secondary,
+    },
+    unit: sheet.unit,
+    territory: sheet.territory,
+    wandering_force: sheet.wandering_force,
     clan: lineage.clan ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨`, crest: `clan-crests/${lineage.base_clan ?? lineage.clan}.svg` } : null,
     generation: ledger.generation,
     minors: ledger.minors,
