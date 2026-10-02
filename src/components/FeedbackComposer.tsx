@@ -15,13 +15,16 @@ const validAnchor = (anchor: unknown, route: string): anchor is FeedbackAnchor =
 }
 const readDraft = (route: string): Draft | null => {
   const key = draftKey(route)
-  const saved = localStorage.getItem(key)
-  if (!saved) return null
   try {
+    const saved = localStorage.getItem(key)
+    if (!saved) return null
     const value = JSON.parse(saved) as Partial<Draft>
     if (!validAnchor(value.anchor, route) || typeof value.body !== 'string' || typeof value.alternative !== 'string' || !feedbackReasons.includes(value.reason as FeedbackReason)) throw new Error('invalid draft')
     return { ...value, authorityVersion: value.authorityVersion === 'document-view.v1' ? 'document-view.v1' : 'historical', idempotencyKey: typeof value.idempotencyKey === 'string' && value.idempotencyKey.length >= 8 ? value.idempotencyKey : newKey(), reconfirmationRequired: value.reconfirmationRequired === true || value.authorityVersion !== 'document-view.v1', editVersion: Number.isInteger(value.editVersion) ? value.editVersion as number : 0 } as Draft
-  } catch { localStorage.removeItem(key); return null }
+  } catch {
+    try { localStorage.removeItem(key) } catch { /* Storage may be disabled. */ }
+    return null
+  }
 }
 
 export default function FeedbackComposer({ rootRef, documentInfo, locale }: { rootRef: React.RefObject<HTMLElement>; documentInfo: FeedbackDocument; locale: 'ko' | 'en' }) {
@@ -30,6 +33,7 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
   const draft = owned.route === pathname ? owned.draft : null
   const [state, setState] = useState<'draft' | 'pending' | 'error' | 'success' | 'reconfirm'>('draft')
   const [message, setMessage] = useState('')
+  const [storageWarning, setStorageWarning] = useState('')
   const actionRef = useRef<HTMLButtonElement>(null)
   const requestRef = useRef<{ id: symbol; controller: AbortController; key: string } | null>(null)
 
@@ -45,8 +49,15 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
 
   useEffect(() => {
     if (owned.route !== pathname) return
-    if (owned.draft) localStorage.setItem(draftKey(pathname), JSON.stringify(owned.draft))
-    else localStorage.removeItem(draftKey(pathname))
+    try {
+      if (owned.draft) localStorage.setItem(draftKey(pathname), JSON.stringify(owned.draft))
+      else localStorage.removeItem(draftKey(pathname))
+      setStorageWarning('')
+    } catch {
+      setStorageWarning(owned.draft
+        ? '브라우저에 임시 제보를 저장하지 못했습니다. 페이지를 닫기 전에 내용을 복사해 주세요.'
+        : '브라우저의 임시 제보를 지우지 못했습니다. 다시 열면 이전 초안이 남아 있을 수 있습니다.')
+    }
   }, [owned, pathname])
 
   const replaceDraft = (next: Draft | null) => setOwned({ route: pathname, draft: next })
@@ -101,5 +112,6 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
       <div className="feedback-actions"><button type="button" onClick={cancel}>취소</button><button type="submit" disabled={state === 'pending' || draft.reconfirmationRequired}>{state === 'pending' ? '제출 중…' : draft.reconfirmationRequired ? '문장을 다시 선택하세요' : '로그인하고 제출'}</button></div>
     </form>}
     {message && <p className={`feedback-status feedback-${state}`} role="status">{message}</p>}
+    {storageWarning && <p className="feedback-status feedback-storage-warning" role="status">{storageWarning}</p>}
   </aside>
 }
