@@ -1,6 +1,14 @@
 {
   "schema": "settlement-npc-generator/1",
-  "note": "개막 시 정착지 인구수에 비례하여 인물을 생성한다. 놀랜드 모집 모델 + 이 세계관 직업·무공 체계.",
+  "status": "legacy-proposal",
+  "note": "이전 정착지 인물 생성 제안이다. 아래 생성률·능력·무공 배정·인구 구간은 활성 게임 규칙의 승인값이 아니다. 인구·노동·생계·모집 규칙은 GDD가 소유한다.",
+  "rules_owner": "GDD/canon/locales/ko-KR/rules/campaign-progression.json",
+  "current_decisions": {
+    "population": "집계·개인 혼합. 개인화로 인구를 늘리거나 집계 노동과 개인 노동을 중복 계산하지 않는다",
+    "livelihood": "국가별 임금·배급 제도 유지",
+    "training": "직업·정착지 소속만으로 실제 무공·장비·숙련을 확정하지 않는다. 생성 후보의 수련 근거와 전수 조건은 별도 검토한다",
+    "parameters": "생성률·가변 정원 산식·수련 확률은 미정. 기존 API 구현과 이 파일의 값을 동일한 규칙으로 간주하지 않는다"
+  },
   "generation_rules": {
     "trigger": "게임 개막 시 1회 + 정착지 인구 증가 시 추가",
     "proportion": "정착지 인구 100명당 생성 인물 1명",

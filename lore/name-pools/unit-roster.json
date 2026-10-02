@@ -1,10 +1,13 @@
 {
   "schema": "unit-roster/1",
-  "note": "놀랜드 부대 운영 방침 + GURPS 4판 기반. 정착지 자동 생성 인물로 부대를 편성한다.",
+  "status": "legacy-proposal",
+  "note": "이전 편성 후보 자료다. 정원·효과·적격 수치는 활성 규칙이 아니며 게임 규칙의 의미는 GDD가 소유한다. 기존 후보 ID와 데이터 형태를 보존한다.",
   "design_source": {
-    "mechanics": "Norland squad model — 지휘관 1명 + 대원, 정착지 인구에서 모집",
-    "resolution": "GURPS 4e — 공격 3d6·능동 방어·DR·피해",
-    "owner_decisions": ["2026-09-28 놀랜드 완전 채택", "2026-09-29 GURPS 능력치 적용"]
+    "mechanics": "정착지 인구에서 후보를 모집하고 영웅과 병졸을 분리한다. 활성 정원은 지휘관 개인 능력치·국가 수준·정착지 수준에 따라 가변이며 공통 상한은 없다. 산식은 미정이다.",
+    "resolution": "현행 개인 판정 — 공격 3d6·능동 방어·DR·피해",
+    "owner_decisions": ["2026-10-02 시스템 연결 범위와 가변 부대 정원 확정"],
+    "rules_owner": "GDD/canon/locales/ko-KR/rules/hero-squads-and-simultaneous-turns.json",
+    "legacy_fields": "max_size·base_size·규모 배율·적격 임계·효과는 이전 제안이며 확정 정원·능력·훈련 근거로 사용하지 않는다"
   },
   "squad_structure": {
     "commander": "1명 필수 (지휘 스킬 보유자)",
@@ -288,7 +291,7 @@
     }
   },
   "hero_integration": {
-    "note": "여섯 영웅 클래스는 표시용 태그 (G6 결정에 따라 규칙에서 제외)",
+    "note": "여섯 영웅 클래스의 활성 역할은 GDD 영웅 분대 규칙을 따른다. 이 후보 자료가 결정 12의 주 전투 클래스와 보조 역할 태그를 폐기하지 않는다. 직업·소속만으로 클래스·수련·장비를 자동 부여하지 않는다.",
     "classes": ["수호", "돌파", "참모", "구호", "척후", "종군"],
     "hero_role": "부대 지휘관 또는 독립 행동 영웅"
   }
