@@ -15,13 +15,16 @@ const validAnchor = (anchor: unknown, route: string): anchor is FeedbackAnchor =
 }
 const readDraft = (route: string): Draft | null => {
   const key = draftKey(route)
-  const saved = localStorage.getItem(key)
-  if (!saved) return null
   try {
+    const saved = localStorage.getItem(key)
+    if (!saved) return null
     const value = JSON.parse(saved) as Partial<Draft>
     if (!validAnchor(value.anchor, route) || typeof value.body !== 'string' || typeof value.alternative !== 'string' || !feedbackReasons.includes(value.reason as FeedbackReason)) throw new Error('invalid draft')
     return { ...value, authorityVersion: value.authorityVersion === 'document-view.v1' ? 'document-view.v1' : 'historical', idempotencyKey: typeof value.idempotencyKey === 'string' && value.idempotencyKey.length >= 8 ? value.idempotencyKey : newKey(), reconfirmationRequired: value.reconfirmationRequired === true || value.authorityVersion !== 'document-view.v1', editVersion: Number.isInteger(value.editVersion) ? value.editVersion as number : 0 } as Draft
-  } catch { localStorage.removeItem(key); return null }
+  } catch {
+    try { localStorage.removeItem(key) } catch { /* Storage may be disabled. */ }
+    return null
+  }
 }
 
 export default function FeedbackComposer({ rootRef, documentInfo, locale }: { rootRef: React.RefObject<HTMLElement>; documentInfo: FeedbackDocument; locale: 'ko' | 'en' }) {
@@ -45,8 +48,13 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
 
   useEffect(() => {
     if (owned.route !== pathname) return
-    if (owned.draft) localStorage.setItem(draftKey(pathname), JSON.stringify(owned.draft))
-    else localStorage.removeItem(draftKey(pathname))
+    try {
+      if (owned.draft) localStorage.setItem(draftKey(pathname), JSON.stringify(owned.draft))
+      else localStorage.removeItem(draftKey(pathname))
+    } catch {
+      setState('error')
+      setMessage('브라우저에 임시 제보를 저장하지 못했습니다. 페이지를 닫기 전에 내용을 복사해 주세요.')
+    }
   }, [owned, pathname])
 
   const replaceDraft = (next: Draft | null) => setOwned({ route: pathname, draft: next })
