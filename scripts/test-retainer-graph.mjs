@@ -32,11 +32,19 @@ test('generated court graph resolves approved direct retainers to actual detail 
     expectedIds.add(edge.liegePersonId)
   }
 
+  for (const edge of dataset.config.ownerLieges.edges) {
+    expectedIds.add(edge.personId)
+    expectedIds.add(edge.liegePersonId)
+  }
   assert.equal(retainerGraph.nodes.length, expectedIds.size)
   assert.deepEqual(new Set(retainerGraph.nodes.map((node) => node.id)), expectedIds)
   assert.deepEqual(retainerGraph.courts, dataset.config.courts)
-  assert.deepEqual(retainerGraph.edges, dataset.config.directRetainers.map(({ personId, liegePersonId, courtId }) =>
+  const courtEdges = retainerGraph.edges.filter((edge) => edge.courtId !== null)
+  const ownerLiegeEdges = retainerGraph.edges.filter((edge) => edge.courtId === null)
+  assert.deepEqual(courtEdges, dataset.config.directRetainers.map(({ personId, liegePersonId, courtId }) =>
     ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })))
+  assert.deepEqual(ownerLiegeEdges, dataset.config.ownerLieges.edges.map(({ personId, liegePersonId, relationKind, ownerTerm }) =>
+    ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: null, relationKind, ownerTerm })))
   for (const node of retainerGraph.nodes) {
     const registered = issued.get(node.id)
     assert.ok(registered, node.id)
@@ -57,7 +65,14 @@ test('generated court graph resolves approved direct retainers to actual detail 
     { fromPersonId: 'K041', toPersonId: 'K032', courtId: 'court:K032' })
   assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === 'K068'),
     { fromPersonId: 'K068', toPersonId: 'K058', courtId: 'court:K058' })
+  assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === 'K002' && edge.courtId === null),
+    { fromPersonId: 'K002', toPersonId: 'K001', courtId: null, relationKind: 'direct-liege', ownerTerm: '직속 주군' })
+  assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === 'K062' && edge.courtId === null),
+    { fromPersonId: 'K062', toPersonId: 'K1005', courtId: null, relationKind: 'direct-vassal', ownerTerm: '직속 가신' })
+  assert.ok(retainerGraph.nodes.some((node) => node.id === 'K001'))
+  assert.ok(retainerGraph.nodes.some((node) => node.id === 'K1005'))
   assert.ok(!retainerGraph.nodes.some((node) => node.id === 'K272'))
+  assert.ok(!retainerGraph.edges.some((edge) => edge.fromPersonId === 'K068' && edge.courtId === null))
 })
 
 test('coordinated wrong graph and generated catalog countries fail against values canon', async () => {

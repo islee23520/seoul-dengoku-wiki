@@ -24,7 +24,19 @@ export function layoutRetainerGraph(graph: typeof retainerGraph) {
   })
   const positioned = new Map<string, (typeof nodes)[number]>()
   for (const node of nodes) if (!positioned.has(node.id)) positioned.set(node.id, node)
-  if (positioned.size !== graph.nodes.length || graph.edges.length !== nodes.length - graph.courts.length)
+  const ownerLiegeEdges = graph.edges.filter((edge) => edge.courtId === null)
+  for (const liegeId of new Set(ownerLiegeEdges.map((edge) => edge.toPersonId))) {
+    const vassals = ownerLiegeEdges.filter((edge) => edge.toPersonId === liegeId)
+      .map((edge) => positioned.get(edge.fromPersonId))
+    const liege = graph.nodes.find((node) => node.id === liegeId)
+    if (!liege || vassals.some((vassal) => !vassal)) throw new Error(`E_RETAINER_GRAPH_LIEGE:${liegeId}`)
+    const placed = vassals.filter((vassal) => vassal != null)
+    positioned.set(liegeId, { ...liege,
+      x: placed.reduce((sum, vassal) => sum + vassal.x, 0) / placed.length,
+      y: Math.min(...placed.map((vassal) => vassal.y)) - 90 })
+  }
+  if (positioned.size !== graph.nodes.length ||
+      graph.edges.some((edge) => !positioned.has(edge.fromPersonId) || !positioned.has(edge.toPersonId)))
     throw new Error('E_RETAINER_GRAPH_UNRESOLVED')
   return [...positioned.values()]
 }
@@ -32,11 +44,14 @@ const nodes = layoutRetainerGraph(retainerGraph)
 const nodesById = new Map<string, (typeof nodes)[number]>(nodes.map((node) => [node.id, node]))
 
 export function selectRetainerRelationships(personId: string, graph: typeof retainerGraph = retainerGraph) {
-  const outgoing = graph.edges.find((edge) => edge.fromPersonId === personId)
+  const outgoing = graph.edges.find((edge) => edge.fromPersonId === personId && edge.courtId !== null)
+    ?? graph.edges.find((edge) => edge.fromPersonId === personId)
   const court = graph.courts.find((entry) => entry.ownerPersonId === personId || entry.id === outgoing?.courtId)
   const liege = outgoing && graph.nodes.find((node) => node.id === outgoing.toPersonId)
+  const relationKind = outgoing && 'relationKind' in outgoing ? outgoing.relationKind : undefined
+  const ownerTerm = outgoing && 'ownerTerm' in outgoing ? outgoing.ownerTerm : undefined
   const members = graph.edges.filter((edge) => edge.toPersonId === personId)
-  return { court, liege, members }
+  return { court, liege, members, relationKind, ownerTerm }
 }
 
 export function RelationsGraphPage() {
@@ -48,13 +63,13 @@ export function RelationsGraphPage() {
   }, [searchQuery])
   const visibleIds = new Set(filteredNodes.map((node) => node.id))
   const selectedNodeData = nodesById.get(selectedNode)
-  const { court, liege, members } = selectRetainerRelationships(selectedNode)
+  const { court, liege, members, ownerTerm } = selectRetainerRelationships(selectedNode)
 
   return (
     <main className="wiki-prose">
       <h1>직속 가신 관계</h1>
       <p style={{ color: 'var(--wiki-muted)', fontSize: '0.9rem' }}>
-        2126년 승인된 {retainerGraph.courts.length}개 궁정과 직속 가신 {retainerGraph.edges.length}명을 보여 줍니다. 인물을 선택하면 직속 주군과 궁정을 확인할 수 있습니다.
+        2126년 승인된 {retainerGraph.courts.length}개 궁정, 궁정 직속 가신 {retainerGraph.edges.filter((edge) => edge.courtId !== null).length}명, 주군–가신 관계 {retainerGraph.edges.filter((edge) => edge.courtId === null).length}건을 보여 줍니다. 인물을 선택하면 직속 주군과 궁정을 확인할 수 있습니다.
       </p>
       <div style={{ marginBottom: '1rem' }}>
         <input
@@ -69,7 +84,7 @@ export function RelationsGraphPage() {
       <svg
         role="img"
         aria-label="승인된 직속 가신 관계 그래프"
-        viewBox={`0 0 800 ${Math.ceil(retainerGraph.courts.length / 3) * 570}`}
+        viewBox={`0 -120 800 ${Math.ceil(retainerGraph.courts.length / 3) * 570 + 120}`}
         style={{ width: '100%', height: 'auto', border: '1px solid var(--wiki-line)', borderRadius: '8px', background: 'var(--wiki-paper)' }}
       >
         {retainerGraph.edges.map((edge) => {
@@ -97,8 +112,9 @@ export function RelationsGraphPage() {
       </svg>
       {selectedNodeData && <section aria-label="선택한 인물" style={{ marginTop: '1rem', padding: '1rem', background: 'var(--wiki-toc)', border: '1px solid var(--wiki-line)', borderRadius: '8px' }}>
         <h2>{selectedNodeData.name} · {selectedNodeData.id}</h2>
-        {court && <p>궁정 {court.id}{liege && <> · 직속 주군 <Link to={liege.detailRoute}>{liege.name} ({liege.id})</Link></>}</p>}
-        {members.length > 0 && <p>직속 가신 {members.length}명</p>}
+        {court && <p>궁정 {court.id}{liege && <> · 직속 주군 <Link to={liege.detailRoute}>{liege.name} ({liege.id})</Link>{ownerTerm ? ` (${ownerTerm})` : ''}</>}</p>}
+        {!court && liege && <p>주군 관계{ownerTerm ? ` (${ownerTerm})` : ''} · 직속 <Link to={liege.detailRoute}>{liege.name} ({liege.id})</Link></p>}
+        {members.length > 0 && <p>직속 {members.length}명</p>}
         <Link to={selectedNodeData.detailRoute}>인물 상세</Link>
       </section>}
     </main>

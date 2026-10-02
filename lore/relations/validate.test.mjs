@@ -59,6 +59,43 @@ test("direct-liege validator rejects source, actor, court, nation and hierarchy 
   assert.deepEqual(validate(social), []);
 });
 
+test("approved 2026-10-02 owner lieges are exactly seven person-to-person edges", () => {
+  const dataset = loadDataset();
+  const { ownerLieges } = dataset.config;
+  assert.equal(ownerLieges.schema, "owner-liege-edges.v1");
+  assert.equal(ownerLieges.effectiveYear, 2126);
+  assert.deepEqual(ownerLieges.edges, [
+    { personId: "K002", liegePersonId: "K001", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K017", liegePersonId: "K001", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K003", liegePersonId: "K001", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K058", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
+    { personId: "K060", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
+    { personId: "K061", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
+    { personId: "K062", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
+  ]);
+  const sourceQuotes = ownerLieges.sourceBasis.map((basis) => basis.quote);
+  assert.ok(sourceQuotes.some((quote) => quote.includes("군주를 뽑고") && quote.includes("군주 자리에 앉았다")));
+  assert.ok(sourceQuotes.some((quote) => quote.includes("개막의 회장은 정서온이다")));
+  assert.ok(!ownerLieges.edges.some((edge) => ["K068", "K069", "K071", "K073", "K074", "K075"].includes(edge.personId)));
+  assert.deepEqual(validate(dataset), []);
+});
+
+test("owner-liege validator rejects stale approval, foreign nation, duplicate liege, cycle and forged term", () => {
+  const cases = [
+    ["foreign nation", (d) => { d.config.ownerLieges.edges[3].liegePersonId = "K001"; }, /K058: foreign nation owner liege/],
+    ["duplicate immediate liege", (d) => { d.config.ownerLieges.edges.push({ personId: "K904", liegePersonId: "K001", relationKind: "direct-liege", ownerTerm: "직속 주군" }); }, /K904: duplicate immediate liege/],
+    ["cycle", (d) => { d.config.ownerLieges.edges.push({ personId: "K1005", liegePersonId: "K058", relationKind: "direct-vassal", ownerTerm: "직속 가신" }); }, /direct liege cycle/],
+    ["self", (d) => { d.config.ownerLieges.edges[0].liegePersonId = "K002"; }, /K002: self owner liege/],
+    ["forged term", (d) => { d.config.ownerLieges.edges[0].ownerTerm = "직속 가신"; }, /K002: owner term mismatch/],
+    ["unknown liege", (d) => { d.config.ownerLieges.edges[0].liegePersonId = "K2000"; }, /missing foreign key K2000/],
+  ];
+  for (const [label, mutate, expected] of cases) {
+    const dataset = loadDataset();
+    mutate(dataset);
+    assert.match(validate(dataset).join("\n"), expected, label);
+  }
+});
+
 test("a broken directed-person foreign key fails validation", () => {
   const dataset = loadDataset();
   dataset.relations[0] = { ...dataset.relations[0], toPersonId: "P999" };

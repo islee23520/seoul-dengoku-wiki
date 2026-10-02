@@ -153,6 +153,24 @@ export function validate(dataset) {
         sourceRow[0]?.ko !== person?.name || sourceRow[2]?.ko !== liege?.name || !sourceRow[3]?.ko)
       errors.push(`${row.personId}: source command row mismatch`);
   }
+  const { ownerLieges } = config;
+  const ownerTermByKind = new Map([["direct-liege", "직속 주군"], ["direct-vassal", "직속 가신"]]);
+  if (ownerLieges?.schema !== "owner-liege-edges.v1" || ownerLieges.effectiveYear !== 2126 ||
+      !Array.isArray(ownerLieges.edges) || ownerLieges.edges.length === 0)
+    errors.push("ownerLieges: missing structural metadata (schema/effectiveYear/edges)");
+  for (const row of ownerLieges?.edges || []) {
+    fk(row.personId, personIds, "owner liege person");
+    fk(row.liegePersonId, personIds, `${row.personId}.ownerLiegePersonId`);
+    if (row.personId === row.liegePersonId) errors.push(`${row.personId}: self owner liege`);
+    if (ownerTermByKind.get(row.relationKind) !== row.ownerTerm)
+      errors.push(`${row.personId}: owner term mismatch for ${row.relationKind}`);
+    const person = peopleById.get(row.personId);
+    const liege = peopleById.get(row.liegePersonId);
+    if (person && liege && stateByPersonId.get(row.personId) !== stateByPersonId.get(row.liegePersonId))
+      errors.push(`${row.personId}: foreign nation owner liege`);
+    if (liegeByPerson.has(row.personId)) errors.push(`${row.personId}: duplicate immediate liege (court retainer and owner liege)`);
+    else liegeByPerson.set(row.personId, row.liegePersonId);
+  }
   for (const personId of liegeByPerson.keys()) {
     const seen = new Set();
     for (let current = personId; liegeByPerson.has(current); current = liegeByPerson.get(current)) {
@@ -188,5 +206,5 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const dataset = loadDataset();
   const errors = validate(dataset);
   if (errors.length) { console.error(errors.join("\n")); process.exitCode = 1; }
-  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1019 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} courts=${dataset.config.courts.length} directRetainers=${dataset.config.directRetainers.length} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
+  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1019 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} courts=${dataset.config.courts.length} directRetainers=${dataset.config.directRetainers.length} ownerLieges=${dataset.config.ownerLieges?.edges?.length ?? 0} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
 }
