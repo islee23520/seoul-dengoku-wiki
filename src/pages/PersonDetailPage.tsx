@@ -25,7 +25,9 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   sections: Record<string, string>
   biography: string
   sources: string[]
-  directLiege?: { personId: string; name: string; courtId: string; effectiveYear: number }
+  directLiege?:
+    | { personId: string; name: string; courtId: string; effectiveYear: number }
+    | { personId: string; name: string; relationKind: 'direct-liege' | 'direct-vassal'; ownerTerm: string; effectiveYear: number }
   court?: { id: string; members: Array<{ personId: string; name: string }> }
   relations: { outgoing: Relation[]; incoming: Relation[] }
 }
@@ -353,8 +355,14 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
     ['직위', person.position], ['직급(공통 티어)', person.commonTier], ['국가 품계', person.rank], ['직업', person.occupation], ['성별', person.gender], ['단계', person.stage], ['세대', person.generation],
     ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속'].includes(label)),
   ]
-  const relationRows = [
-    ...(detail.directLiege ? [[`직속 주군 · ${detail.directLiege.name}`, `2126년 · ${detail.directLiege.courtId} 소속 가신`]] : []),
+  const liegeRow: Array<Array<string>> | null = (() => {
+    const liege = detail.directLiege
+    if (!liege) return null
+    if ('courtId' in liege) return [[`직속 주군 · ${liege.name}`, `2126년 · ${liege.courtId} 소속 가신`]]
+    return [[`직속 주군 · ${liege.name}`, `2126년 · ${liege.ownerTerm}`]]
+  })()
+  const relationRows: Array<Array<string | number | null>> = [
+    ...(liegeRow ?? []),
     ...(detail.court ? detail.court.members.map((member) => [`궁정 가신 · ${member.name}`, `2126년 · ${detail.court?.id}`]) : []),
     ...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as Array<string>),
     ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as Array<string>),

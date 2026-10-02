@@ -840,6 +840,7 @@ const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name,
 const retainersById = new Map(courtDataset.config.directRetainers.map((row) => [row.personId, row]))
 const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
   courtDataset.config.directRetainers.filter((row) => row.courtId === court.id)]))
+const ownerLiegeByPerson = new Map(courtDataset.config.ownerLieges?.edges?.map((row) => [row.personId, row]) ?? [])
 const parseCardSections = (body) => {
   const sections = {}
   const matches = [...body.matchAll(/\*\*([^*]+?)\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*#{2,3}\s|\n\s*:::|$)/g)]
@@ -900,15 +901,24 @@ const graphPerson = (id) => {
 }
 const graphCourts = courtDataset.config.courts
 const graphRetainers = courtDataset.config.directRetainers
+const graphOwnerLieges = courtDataset.config.ownerLieges?.edges ?? []
 const graphIds = new Set(graphCourts.map((court) => court.ownerPersonId))
 for (const row of graphRetainers) {
   graphIds.add(row.personId)
   graphIds.add(row.liegePersonId)
 }
+for (const row of graphOwnerLieges) {
+  graphIds.add(row.personId)
+  graphIds.add(row.liegePersonId)
+}
 const retainerGraph = {
   nodes: [...graphIds].map(graphPerson),
-  edges: graphRetainers.map(({ personId, liegePersonId, courtId }) =>
-    ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
+  edges: [
+    ...graphRetainers.map(({ personId, liegePersonId, courtId }) =>
+      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
+    ...graphOwnerLieges.map(({ personId, liegePersonId, relationKind, ownerTerm }) =>
+      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: null, relationKind, ownerTerm })),
+  ],
   courts: graphCourts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
 }
 await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
@@ -958,6 +968,11 @@ for (const person of peopleCatalog) {
       const row = retainersById.get(issuedId)
       return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
         courtId: row.courtId, effectiveYear: courtDataset.config.courtContract.effectiveYear } }
+    })() : ownerLiegeByPerson.has(issuedId) ? (() => {
+      const row = ownerLiegeByPerson.get(issuedId)
+      return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
+        relationKind: row.relationKind, ownerTerm: row.ownerTerm,
+        effectiveYear: courtDataset.config.ownerLieges.effectiveYear } }
     })() : {}),
     ...(courtMembersByOwner.has(issuedId) ? {
       court: { id: `court:${issuedId}`,
