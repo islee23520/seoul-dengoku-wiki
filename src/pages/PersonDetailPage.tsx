@@ -10,6 +10,10 @@ import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type PersonDetail = (typeof peopleCatalog)[number] & {
+  gurps: GurpsSheetData & { id: string; personId: string }
+  unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
+  territory?: { fief_name: string; type: string; station: string; state: string; settlement: { name: string; type: string; description: string }; note: string } | null
+  wandering_force?: { type: string; size: number; current_location: string; camp: { name: string; type: string; description: string; facilities: string[]; pack_up_time: string }; note: string } | null
   clan: { id: string; name: string; crest: string } | null
   generation: string
   minors: boolean
@@ -138,32 +142,6 @@ export function parseGurpsSheet(payload: unknown, personId: string): GurpsParseR
   if (typeof secondary === 'string') return reject(secondary)
 
   return { ok: true, sheet: { band, attributes, traits, skills, cp: cp as SheetCp, secondary: secondary as SheetSecondary } }
-}
-
-async function fetchGurps(personId: string): Promise<GurpsParseResult | null> {
-  try {
-    const id = personId.startsWith('person-') ? personId : 'person-' + personId
-    const res = await fetch('/api/characters/' + id)
-    if (!res.ok) return null
-    return parseGurpsSheet(await res.json(), id)
-  } catch { return null }
-}
-
-function GurpsSection({ personId }: { personId: string }): JSX.Element | null {
-  const [sheet, setSheet] = useState<GurpsSheetData | null>(null)
-
-  useEffect(() => {
-    setSheet(null)
-    if (!personId) return
-    let active = true
-    fetchGurps(personId).then((result) => {
-      if (active && result?.ok) setSheet(result.sheet)
-    })
-    return () => { active = false }
-  }, [personId])
-
-  if (!sheet) return null
-  return <GurpsSheet gurps={sheet} />
 }
 
 export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
@@ -369,6 +347,7 @@ export default function PersonDetailPage() {
 
 export function PersonDetailContent({ detail, personId, feedback = null, feedbackBound = false, proseRef = { current: null }, setFeedbackBound = () => {} }: { detail: PersonDetail; personId: string; feedback?: import('../feedbackSelection').FeedbackDocument | null; feedbackBound?: boolean; proseRef?: React.RefObject<HTMLDivElement>; setFeedbackBound?: (bound: boolean) => void }): JSX.Element {
   const person: any = detail
+  const sheet = parseGurpsSheet(detail.gurps, personId)
   const basicRows: Array<Array<string | number | null>> = [
     ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
     ['직위', person.position], ['직급(공통 티어)', person.commonTier], ['국가 품계', person.rank], ['직업', person.occupation], ['성별', person.gender], ['단계', person.stage], ['세대', person.generation],
@@ -416,7 +395,31 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           <h2>정본 상세</h2>
           {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : <><PersonSections sections={detail.sections} /><details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details></>}
 
-          <GurpsSection personId={personId} />
+          {sheet.ok && <GurpsSheet gurps={sheet.sheet} />}
+          {detail.unit && <section className="gurps-unit">
+            <h2>부대</h2>
+            <p>{detail.unit.type} · {detail.unit.size}명 · {detail.unit.quality}</p>
+            <p>편성: {detail.unit.composition.join(', ')}</p>
+            <p>{detail.unit.note}</p>
+          </section>}
+          {detail.territory && <section className="gurps-territory">
+            <h2>영지</h2>
+            <p>{detail.territory.fief_name} · {detail.territory.type}</p>
+            <p>위치: {detail.territory.station} · {detail.territory.state}</p>
+            <p>{detail.territory.settlement.name} · {detail.territory.settlement.type}</p>
+            <p>{detail.territory.settlement.description}</p>
+            <p>{detail.territory.note}</p>
+          </section>}
+          {detail.wandering_force && <section className="gurps-wandering">
+            <h2>야영지와 유랑 부대</h2>
+            <p>{detail.wandering_force.type} · {detail.wandering_force.size}명</p>
+            <p>현재 위치: {detail.wandering_force.current_location}</p>
+            <p>{detail.wandering_force.camp.name} · {detail.wandering_force.camp.type}</p>
+            <p>{detail.wandering_force.camp.description}</p>
+            <p>시설: {detail.wandering_force.camp.facilities.join(', ')}</p>
+            <p>철수 준비: {detail.wandering_force.camp.pack_up_time}</p>
+            <p>{detail.wandering_force.note}</p>
+          </section>}
           <ValuesDesireSection detail={detail} />
 
           <p><Link to={detail.sourceRoute}>정본 원문 위치로 이동</Link></p>

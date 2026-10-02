@@ -201,6 +201,22 @@ export function personVisibleFields(person, rel) {
     })
   }
   for (const key of ['지향', '결합']) if (person.desire?.[key]) out.push([`${rel}#/desire/${key}`, person.desire[key]])
+  if (person.gurps) {
+    if (person.gurps.band != null) out.push([`${rel}#/gurps/band`, person.gurps.band])
+    person.gurps.traits?.forEach((trait, index) => {
+      if (['advantage', 'disadvantage'].includes(trait.kind)) out.push([`${rel}#/gurps/traits/${index}/name`, trait.name])
+    })
+    person.gurps.skills?.forEach((skill, index) => out.push([`${rel}#/gurps/skills/${index}/${skill.ko ? 'ko' : 'name'}`, skill.ko || skill.name]))
+  }
+  for (const [key, fields] of [['unit', ['type', 'quality', 'note']], ['territory', ['fief_name', 'type', 'station', 'state', 'note']], ['wandering_force', ['type', 'current_location', 'note']]]) {
+    if (person[key]) for (const field of fields) out.push([`${rel}#/${key}/${field}`, person[key][field]])
+  }
+  person.unit?.composition?.forEach((value, index) => out.push([`${rel}#/unit/composition/${index}`, value]))
+  if (person.territory?.settlement) for (const field of ['name', 'type', 'description']) out.push([`${rel}#/territory/settlement/${field}`, person.territory.settlement[field]])
+  if (person.wandering_force?.camp) {
+    for (const field of ['name', 'type', 'description', 'pack_up_time']) out.push([`${rel}#/wandering_force/camp/${field}`, person.wandering_force.camp[field]])
+    person.wandering_force.camp.facilities.forEach((value, index) => out.push([`${rel}#/wandering_force/camp/facilities/${index}`, value]))
+  }
   return out
 }
 
