@@ -4,6 +4,14 @@
   "description": "역 점령은 지표 영토와 독립된 원장이다. 개막 초안은 역 좌표의 지표 영토를 복사하고, 이후 변경은 overrides의 명시적 ControlDelta로만 반영한다.",
   "overrides": [
     {
+      "id": "SEOUL-2126-OPENING",
+      "stationId": "서울역",
+      "status": "held",
+      "polityIds": ["S06"],
+      "primary": "S06",
+      "decision": "소유자 결정: 통합 서울역은 대한민국정부 점유. 기존 지표 소유 기록은 별도 보존."
+    },
+    {
       "id": "CITYHALL-2126-OPENING",
       "stationId": "시청",
       "status": "held",
@@ -61,9 +69,9 @@
   ],
   "passageDecisions": [
     {
-      "segmentId": "segment:Yeongdeungpo~서울역",
+      "segmentId": "segment:디지털미디어시티~마곡나루",
       "passage2126": "checkpoint",
-      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+      "decision": "소유자 결정: 공식 일반 인접 공항철도 한강 횡단은 검문 통행."
     },
     {
       "segmentId": "segment:노량진~용산",
@@ -109,16 +117,26 @@
       "segmentId": "segment:서울숲~압구정로데오",
       "passage2126": "checkpoint",
       "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+    }
+  ],
+  "retiredPassageDecisions": [
+    {
+      "segmentId": "segment:Yeongdeungpo~서울역",
+      "passage2126": "checkpoint",
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행",
+      "retirement": "소유자 결정 2026-10-02: 일반 인접 구간 수리 후 옛 결정은 이력으로 보존하며 다른 구간에 복제하지 않는다."
     },
     {
       "segmentId": "segment:강남구청~서울숲",
       "passage2126": "checkpoint",
-      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행",
+      "retirement": "소유자 결정 2026-10-02: 일반 인접 구간 수리 후 옛 결정은 이력으로 보존하며 다른 구간에 복제하지 않는다."
     },
     {
       "segmentId": "segment:공덕~마곡나루",
       "passage2126": "checkpoint",
-      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행"
+      "decision": "소유자 결정 2026-09-28 한강 횡단 구간별 통행",
+      "retirement": "소유자 결정 2026-10-02: 일반 인접 구간 수리 후 옛 결정은 이력으로 보존하며 다른 구간에 복제하지 않는다."
     }
   ]
 }
