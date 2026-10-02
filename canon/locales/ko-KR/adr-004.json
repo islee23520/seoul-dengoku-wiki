@@ -115,6 +115,7 @@
         ["`TOOL/`", "저장소 Node 패키지(tools)·skills·서브모듈(unity-remote, character-forge)·Unity 문서"],
         ["`GAME/`", "Unity 프로젝트(에디터 핀 6000.7.0a5, batchmode 전용)"],
         ["`Backend/`", ".NET 8 CoreWCF 서버(루트 유지 — 소유자 선택)"],
+        ["`EVENT-APPLICATIONS/`", "행사 출품·지원 신청 관리 자료. 게임 및 릴리스 테스트 대상에서 제외한다."],
         ["`store/`", "런 산출물 보존(루트 유지)"],
         ["`archive/`", "워크트리 청소 스냅샷(sparse `!/archive/`, 루트 유지)"]
       ]
