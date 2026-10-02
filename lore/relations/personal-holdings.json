@@ -94,6 +94,22 @@
       "geometrySource": "opening-territories.regions",
       "parentGeography": "서울특별시",
       "wholeSeoulControl": false
+    },
+    {
+      "id": "holding:saetgang-concourse",
+      "name": { "ko": "샛강 대합실" },
+      "holderPersonId": "K233",
+      "directLiegePersonId": "K222",
+      "stateId": "S09",
+      "facilityRef": {
+        "sourcePath": "lore/regions/station-interiors.json",
+        "stationName": "샛강",
+        "layerId": "concourse"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
     }
   ]
 }

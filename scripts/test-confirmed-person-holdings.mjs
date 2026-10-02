@@ -4,6 +4,26 @@ import { test } from 'vitest'
 
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 
+test('Saetgang concourse holding preserves the exact facility and direct liege without geographic grants', () => {
+  const ledger = read('../lore/relations/personal-holdings.json')
+  const holding = ledger.holdings.find(row => row.holderPersonId === 'K233')
+  assert.equal(ledger.holdings.length, 2)
+  assert.deepEqual(holding, {
+    id: 'holding:saetgang-concourse', name: { ko: '샛강 대합실' },
+    holderPersonId: 'K233', directLiegePersonId: 'K222', stateId: 'S09',
+    facilityRef: { sourcePath: 'lore/regions/station-interiors.json', stationName: '샛강', layerId: 'concourse' },
+    adminRefs: [], geometrySource: null, territorialScale: null, formalTitleRank: null,
+  })
+  const station = read('../lore/regions/station-interiors.json').stations.find(row => row.name === holding.facilityRef.stationName)
+  assert.equal(station.observed_levels, null)
+  assert.equal(station.layers.find(row => row.id === holding.facilityRef.layerId).wiki_layer, '역사 대합실')
+  const detail = read('../public/person-details/person-0234.json')
+  assert.equal(detail.gurps.id, 'K233')
+  assert.equal(detail.directLiege.personId, 'K222')
+  assert.deepEqual(detail.confirmedHoldings, [holding])
+  assert.deepEqual(read('../public/confirmed-person-holdings.json'), ledger)
+})
+
 test('confirmed Yangcheon holding joins exact admin geometry and stays separate from proposal territory', () => {
   const ledger = read('../lore/relations/personal-holdings.json')
   const projected = read('../public/confirmed-person-holdings.json')
