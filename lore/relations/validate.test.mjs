@@ -98,6 +98,24 @@ test("owner-liege validator rejects stale approval, foreign nation, duplicate li
   }
 });
 
+test("owner-liege validator rejects missing kind and term from the real dataset", () => {
+  const dataset = loadDataset();
+  delete dataset.config.ownerLieges.edges[0].relationKind;
+  delete dataset.config.ownerLieges.edges[0].ownerTerm;
+  const errors = validate(dataset).join("\n");
+  assert.match(errors, /K002: unknown owner relation kind undefined/);
+  assert.match(errors, /K002: owner term mismatch/);
+});
+
+test("owner-liege validator rejects unknown kind with missing term from the real dataset", () => {
+  const dataset = loadDataset();
+  dataset.config.ownerLieges.edges[0].relationKind = "unknown-kind";
+  delete dataset.config.ownerLieges.edges[0].ownerTerm;
+  const errors = validate(dataset).join("\n");
+  assert.match(errors, /K002: unknown owner relation kind unknown-kind/);
+  assert.match(errors, /K002: owner term mismatch/);
+});
+
 test("a broken directed-person foreign key fails validation", () => {
   const dataset = loadDataset();
   dataset.relations[0] = { ...dataset.relations[0], toPersonId: "P999" };

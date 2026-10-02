@@ -1,0 +1,61 @@
+{
+  "schema": "territorial-scale.v1",
+  "regularRegions": {
+    "provinceCodes": [
+      "41",
+      "43",
+      "44",
+      "51"
+    ],
+    "province": "kingdom",
+    "city": "duchy",
+    "county": "duchy",
+    "district": "barony",
+    "directMunicipalEupMyeonDong": "barony",
+    "eupMyeonDongWithinGu": "component",
+    "componentImpliesLowerTitle": false
+  },
+  "specialCities": [
+    {
+      "name": "서울특별시",
+      "englishName": "Seoul Special City",
+      "city": "kingdom",
+      "district": "duchy",
+      "dong": "barony"
+    },
+    {
+      "name": "대전광역시",
+      "englishName": "Daejeon Metropolitan City",
+      "city": "kingdom",
+      "district": "duchy",
+      "dong": "barony"
+    }
+  ],
+  "scaleImpliesPersonalOwnership": false,
+  "scaleImpliesTitleRank": false,
+  "seoulControl": {
+    "majorPolities": 16,
+    "wholeKingdomControlledByOnePolity": false
+  },
+  "separateKingdomContainers": [
+    {
+      "provinceCode": "43",
+      "name": "충청북도"
+    },
+    {
+      "provinceCode": "44",
+      "name": "충청남도"
+    }
+  ],
+  "sejong": {
+    "provinceCode": "36",
+    "name": "세종특별자치시",
+    "englishName": "Sejong Special Self-Governing City",
+    "geographicContainerId": "admin:36",
+    "city": "kingdom",
+    "directEupMyeonDong": "barony",
+    "sourceAliases": [
+      "admin-city:36:세종시"
+    ]
+  }
+}

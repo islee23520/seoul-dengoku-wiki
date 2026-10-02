@@ -12,6 +12,102 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-한보라",
   "detailRoute": "/people/person-0124",
+  "gurps": {
+    "id": "K123",
+    "personId": "person-0124",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 12,
+        "cp": 40
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Observation",
+        "ko": "관찰(경비·순찰)",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Shield",
+        "ko": "방패술",
+        "level": 12,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 40,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 20,
+      "spent": 60,
+      "unspent": 15,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 12,
+      "Per": 12,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 동방사 규모",
+    "faction_scale": {
+      "state": "S05",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 4,
+    "current_location": "외곽 산지",
+    "camp": {
+      "name": "한보라 산림 야영지",
+      "type": "야영지",
+      "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+  },
   "clan": {
     "id": "d55c-ccad-c8fc",
     "name": "청주 한씨",

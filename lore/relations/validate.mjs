@@ -162,7 +162,9 @@ export function validate(dataset) {
     fk(row.personId, personIds, "owner liege person");
     fk(row.liegePersonId, personIds, `${row.personId}.ownerLiegePersonId`);
     if (row.personId === row.liegePersonId) errors.push(`${row.personId}: self owner liege`);
-    if (ownerTermByKind.get(row.relationKind) !== row.ownerTerm)
+    if (!ownerTermByKind.has(row.relationKind))
+      errors.push(`${row.personId}: unknown owner relation kind ${row.relationKind}`);
+    if (!row.ownerTerm || ownerTermByKind.get(row.relationKind) !== row.ownerTerm)
       errors.push(`${row.personId}: owner term mismatch for ${row.relationKind}`);
     const person = peopleById.get(row.personId);
     const liege = peopleById.get(row.liegePersonId);

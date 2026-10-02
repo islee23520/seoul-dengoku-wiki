@@ -12,6 +12,139 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-조재표",
   "detailRoute": "/people/person-1003",
+  "gurps": {
+    "id": "K1003",
+    "personId": "person-1003",
+    "band": "주역·강자",
+    "attributes": {
+      "ST": {
+        "value": 11,
+        "cp": 10
+      },
+      "DX": {
+        "value": 12,
+        "cp": 40
+      },
+      "IQ": {
+        "value": 13,
+        "cp": 60
+      },
+      "HT": {
+        "value": 12,
+        "cp": 20
+      }
+    },
+    "traits": [
+      {
+        "name": "Reputation +2 (유능한 호위 지휘자; 서울 역·회랑의 호위 의뢰인과 통행자 — 큰 집단 ×1/2; 항상 ×1)",
+        "kind": "advantage",
+        "cp": 5,
+        "rule": "reputation"
+      },
+      {
+        "name": "Combat Reflexes",
+        "kind": "advantage",
+        "cp": 15,
+        "rule": "combat-reflexes"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Leadership",
+        "ko": "지휘",
+        "level": 16,
+        "cp": 12
+      },
+      {
+        "name": "Tactics",
+        "ko": "전술(호위 대열 편성·철수 판단)",
+        "level": 15,
+        "cp": 12
+      },
+      {
+        "name": "Navigation/TL? (Land)",
+        "ko": "길찾기(지상)",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "Area Knowledge (서울 역·회랑)",
+        "ko": "지역 지식",
+        "level": 16,
+        "cp": 8
+      },
+      {
+        "name": "Diplomacy",
+        "ko": "교섭(호위 계약)",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Teaching",
+        "ko": "교습(호위 대열)",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "Observation",
+        "ko": "관찰",
+        "level": 14,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 130,
+      "advantages": 20,
+      "disadvantages": 0,
+      "skills": 60,
+      "spent": 210,
+      "unspent": 0,
+      "total": 210
+    },
+    "secondary": {
+      "HP": 11,
+      "Will": 13,
+      "Per": 13,
+      "FP": 12,
+      "BasicSpeed": 6,
+      "BasicMove": 6,
+      "BasicLift": 24,
+      "Dodge": 10
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "낭인 부대",
+    "size": 20,
+    "quality": "정예",
+    "composition": [
+      "낭인 전사"
+    ],
+    "note": "조재표 낭인단 — 유동 소규모 전투 집단",
+    "faction_scale": {
+      "state": "R01",
+      "tier": "개인",
+      "factor": 0.5
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "낭인 부대",
+    "size": 20,
+    "current_location": "남부 유동 야영지",
+    "camp": {
+      "name": "조재표 야영지",
+      "type": "야영지",
+      "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "낭인 — 야영지를 옮기며 활동"
+  },
   "clan": {
     "id": "c870-cc3d-b155-66fa",
     "name": "창녕 조씨",

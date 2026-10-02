@@ -12,6 +12,97 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-송솔지",
   "detailRoute": "/people/person-0480",
+  "gurps": {
+    "id": "K480",
+    "personId": "person-0480",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 11,
+        "cp": 10
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 11,
+        "cp": 20
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Merchant",
+        "ko": "거래·경매",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Area Knowledge (근무 구역)",
+        "ko": "지역 지식(전령·전달)",
+        "level": 14,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 30,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 24,
+      "spent": 54,
+      "unspent": 21,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 11,
+      "Will": 11,
+      "Per": 11,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 24,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+    "faction_scale": {
+      "state": "S09",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "방배",
+    "type": "초소 영지",
+    "station": "방배",
+    "state": "S09",
+    "settlement": {
+      "name": "방배 정착지",
+      "type": "정착지",
+      "description": "방배 일대 고정 거점"
+    },
+    "note": "S09 방배 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "c1a1-c740-c9c4-5b8b",
     "name": "은진 송씨",

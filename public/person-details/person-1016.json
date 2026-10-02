@@ -12,6 +12,96 @@
   "stateName": "동원잔존",
   "sourceRoute": "/world/Diaspora-Corridors#인물-최일석",
   "detailRoute": "/people/person-1016",
+  "gurps": {
+    "id": "K1016",
+    "personId": "person-1016",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 10,
+        "cp": 0
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Observation",
+        "ko": "관찰(경비·순찰)",
+        "level": 12,
+        "cp": 8
+      },
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 11,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 0,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 12,
+      "spent": 12,
+      "unspent": 63,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 10,
+      "Per": 10,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 2,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 소세력 S00 규모",
+    "faction_scale": {
+      "state": "S00",
+      "tier": "소세력",
+      "factor": 0.7
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 2,
+    "current_location": "고가도로 야영지",
+    "camp": {
+      "name": "최일석 야영지",
+      "type": "야영지",
+      "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+  },
   "clan": {
     "id": "cd5c-acbd-c8fc",
     "name": "경주 최씨",

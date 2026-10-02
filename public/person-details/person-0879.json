@@ -12,6 +12,97 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-배솔민",
   "detailRoute": "/people/person-0879",
+  "gurps": {
+    "id": "K879",
+    "personId": "person-0879",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 12,
+        "cp": 40
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Observation",
+        "ko": "관찰(경비·순찰)",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Shield",
+        "ko": "방패술",
+        "level": 12,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 40,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 20,
+      "spent": 60,
+      "unspent": 15,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 12,
+      "Per": 12,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+    "faction_scale": {
+      "state": "S08",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "응봉",
+    "type": "초소 영지",
+    "station": "응봉",
+    "state": "S08",
+    "settlement": {
+      "name": "응봉 정착지",
+      "type": "정착지",
+      "description": "응봉 일대 고정 거점"
+    },
+    "note": "S08 응봉 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "bc30-b300-ad6c-88f5",
     "name": "대구 배씨",

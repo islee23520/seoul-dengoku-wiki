@@ -12,6 +12,96 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-심유리",
   "detailRoute": "/people/person-0402",
+  "gurps": {
+    "id": "K401",
+    "personId": "person-0402",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 11,
+        "cp": 20
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Diplomacy",
+        "ko": "교섭·조정",
+        "level": 12,
+        "cp": 8
+      },
+      {
+        "name": "Physician/TL?",
+        "ko": "진료",
+        "level": 11,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 20,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 12,
+      "spent": 32,
+      "unspent": 43,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 11,
+      "Per": 11,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 정동노총 규모",
+    "faction_scale": {
+      "state": "S16",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 4,
+    "current_location": "외곽 산지",
+    "camp": {
+      "name": "심유리 산림 야영지",
+      "type": "야영지",
+      "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "S16 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+  },
   "clan": {
     "id": "c2ec-ccad-c1a1",
     "name": "청송 심씨",

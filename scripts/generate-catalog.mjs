@@ -825,6 +825,17 @@ const courtDataset = loadDataset()
 const courtErrors = validateRelations(courtDataset)
 if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
 const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
+const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
+const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
+await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
+for (const holding of personalHoldings.holdings) {
+  if (!issuedById.has(holding.holderPersonId) || !issuedById.has(holding.directLiegePersonId) || !holding.adminRefs.length) throw new Error('E_PERSON_HOLDING:' + holding.id)
+  for (const ref of holding.adminRefs) {
+    const region = openingTerritories.regions.find(region => region.id === ref.id)
+    if (!region || region.name !== ref.name) throw new Error('E_HOLDING_ADMIN_REF:' + holding.id + ':' + ref.id)
+  }
+}
+await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
 const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
 const retainersById = new Map(courtDataset.config.directRetainers.map((row) => [row.personId, row]))
 const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
@@ -938,6 +949,7 @@ for (const person of peopleCatalog) {
       cp: sheet.cp,
       secondary: sheet.secondary,
     },
+    confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
     unit: sheet.unit,
     territory: sheet.territory,
     wandering_force: sheet.wandering_force,
