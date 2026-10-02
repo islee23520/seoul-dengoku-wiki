@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1017",
+  "characterId": "K1017",
+  "name": "지연희",
+  "stateId": null,
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "여성",
+    "genderUserLocked": true,
+    "role": "민간 전령"
+  },
+  "artProposal": {
+    "face": "또렷한 이목구비와 친절하면서 속내를 드러내지 않는 성인 여성의 얼굴, 빨간색 크리스탈 이어피어스",
+    "hair": "검은색의 짧은 단발",
+    "upper": "화재로부터 몸을 보호하는 용도의 재킷형 외투. 시안에서는 어두운 회색으로 표현했으며 소재·보호 등급·색상은 정본 미확정이다.",
+    "lower": "각선미가 드러나는 짧은 바지",
+    "footwear": "군화",
+    "approvalNote": "초상화 등록 PR의 대상인 2D 시안이다. 미확정 색상과 의복 세부를 인물 정본으로 승격하지 않는다."
+  },
+  "style": {
+    "styleId": "yokoyama-text-only-study-20261001",
+    "referenceSha256": null,
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, shoulders and upper chest; close framing",
+    "referencePolicy": "사용자 동의에 따라 기준 레퍼런스 없이 생성한 시안이다. B 이미지와의 일치 여부는 검증하지 않았다."
+  },
+  "image": {
+    "path": "/portraits/person-1017.png",
+    "sha256": "2c3ffca99a0944e7b0af992110a32f4606fc9c82dfc91b25513b9045306a1685",
+    "width": 1254,
+    "height": 1254
+  },
+  "references": {
+    "styleSha256": null,
+    "identitySha256": null,
+    "identityRole": "authored-description-only",
+    "imageText": "none",
+    "reviewStatus": "registration-requested"
+  },
+  "imageReview": {
+    "record": "/portrait-reviews/person-1017.json",
+    "imageSha256": "2c3ffca99a0944e7b0af992110a32f4606fc9c82dfc91b25513b9045306a1685",
+    "verdict": "pass",
+    "scope": "exact image registration PR only; no appearance or equipment canon promotion"
+  }
+}
