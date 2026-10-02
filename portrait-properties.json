@@ -5,112 +5,3962 @@
     "person-1003": {
       "face": "Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference",
       "hair": "Long wavy black hair reaching the shoulders",
-      "upper": "Weathered charcoal field jacket, warm-gray shirt"
+      "upper": "Weathered charcoal field jacket, warm-gray shirt",
+      "identity": {
+        "characterId": "K1003",
+        "name": "조재표",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "faceShape": {
+            "value": "long oval with an angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "eyeShape": {
+            "value": "narrow almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, mostly straight with slight arches",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "lipColor": {
+            "value": "muted tan-pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight with slightly downturned corners",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "beardShape": {
+            "value": "none; completely clean-shaven cheeks, jaw, chin and upper lip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json#artProposal.face"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "Long wavy black hair reaching the shoulders",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "shape": {
+            "value": "thick, tousled waves with a loose center part and wispy strands",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "length": {
+            "value": "past the neck, near shoulder length",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "Weathered charcoal field jacket, warm-gray shirt",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1003.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-1008": {
       "face": "Youthful narrow face with light translucent angular glasses; owner-provided likeness reference",
-      "hair": "Straight dark hair covering the ears",
-      "upper": "Muted olive-green work shirt with simple collar"
+      "hair": "dark hair covering the ears",
+      "upper": "Muted olive-green work shirt with simple collar",
+      "identity": {
+        "characterId": "K1008",
+        "name": "민웅기",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "Youthful narrow face with light translucent angular glasses; owner-provided likeness reference",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "faceShape": {
+            "value": "oval with an angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "eyeShape": {
+            "value": "narrow almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "eyebrowShape": {
+            "value": "dark, thick, gently arched",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "lipColor": {
+            "value": "muted pink-brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "mouthShape": {
+            "value": "closed, with a slight upward curve",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "beardShape": {
+            "value": "none visible",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "dark hair covering the ears",
+            "status": "art-proposal",
+            "source": "owner-directive"
+          },
+          "shape": {
+            "value": "layered and tousled, with a loose fringe",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "length": {
+            "value": "medium, reaching the nape",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "slim to average",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "Muted olive-green work shirt with simple collar",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1008.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": "thin light-colored angular glasses",
+            "status": "art-proposal",
+            "source": "owner-directive"
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-1007": {
-      "face": "Youthful narrow face, calm eyes, no glasses or facial hair; owner-provided likeness reference",
-      "hair": "Short straight black hair falling forward",
-      "upper": "Plain deep navy high-collared civilian coat over light gray shirt"
+      "face": "Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven",
+      "hair": "short black hair",
+      "upper": "Plain deep navy high-collared civilian coat over light gray shirt",
+      "identity": {
+        "characterId": "K1007",
+        "name": "김연규",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven",
+            "status": "art-proposal",
+            "source": "owner-directive-20261002"
+          },
+          "faceShape": {
+            "value": "oval with a defined jaw and rounded chin",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "eyeShape": {
+            "value": "narrow, almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "eyebrowShape": {
+            "value": "straight, medium-thick, slightly tapered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "lipColor": {
+            "value": "muted natural peach",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "mouthShape": {
+            "value": "small, closed, nearly straight",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "beardShape": {
+            "value": "none, clean shaven",
+            "status": "art-proposal",
+            "source": "owner-directive"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "short black hair",
+            "status": "art-proposal",
+            "source": "owner-directive"
+          },
+          "shape": {
+            "value": "layered, slightly tousled, with side-swept strands across the forehead",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "length": {
+            "value": "short to medium",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "average, with broad shoulders",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": "flat chest",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "Plain deep navy high-collared civilian coat over light gray shirt",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1007.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": "eyeglasses mandatory, not large round lenses",
+            "status": "art-proposal",
+            "source": "owner-directive"
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-1009": {
       "face": "Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait",
       "hair": "Short dark hair from the existing Tripo character portrait",
-      "upper": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio"
+      "upper": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio",
+      "identity": {
+        "characterId": "K1009",
+        "name": "신종목",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "faceShape": {
+            "value": "angular oval with a defined jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "eyeShape": {
+            "value": "narrow, almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, straight with slight arches",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "lipColor": {
+            "value": "muted peach-brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "beardShape": {
+            "value": "sparse short stubble along the jaw, chin, and upper lip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "Short dark hair from the existing Tripo character portrait",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "shape": {
+            "value": "tousled and spiky with uneven forward-pointing bangs",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "length": {
+            "value": "short",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": "flat chest",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": "tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1009.json"
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0998": {
-      "face": "Use the latest owner photograph for facial likeness: softly rounded jaw, natural cheek volume, straight dark eyebrows, slightly narrow eyes, rounded nose tip and softly shaped lips; no glasses or facial hair. Preserve the photographed facial proportions rather than the previous generated face.",
-      "hair": "Use the latest owner photograph: short dense black hair with a rounded natural crown, side volume and a curved slightly separated fringe above the eyebrows; not a uniform heavy straight fringe.",
-      "upper": "Muted clay-brown plain work jacket over cream shirt"
+      "face": "Adult Korean facial identity preserved, with noticeably fuller cheeks and a rounder, softer lower face than the identity reference. More facial fullness, no narrow angular jaw or pointed chin.",
+      "hair": "Short dense black hair swept back and lightly side-parted, forehead clearly exposed; no fringe covering the forehead or eyebrows.",
+      "upper": "Muted clay-brown plain work jacket over cream shirt",
+      "identity": {
+        "characterId": "K998",
+        "name": "이일섭",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "Adult Korean facial identity preserved, with noticeably fuller cheeks and a rounder, softer lower face than the identity reference. More facial fullness, no narrow angular jaw or pointed chin.",
+            "status": "art-proposal",
+            "source": "owner-directive-20261002-forehead-and-fuller-body"
+          },
+          "faceShape": {
+            "value": "Full rounded oval face, plump cheeks, soft broad rounded jaw and chin; visibly fuller than the reference person.",
+            "status": "art-proposal",
+            "source": "owner-directive-20261002-forehead-and-fuller-body"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0998.json"
+          },
+          "eyeShape": {
+            "value": "Narrow almond shapes, gently curved upper lids and flatter lower lids, natural asymmetry",
+            "status": "art-proposal",
+            "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+          },
+          "eyebrowShape": {
+            "value": "Mostly straight, low arches, soft outer tapers",
+            "status": "art-proposal",
+            "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+          },
+          "lipColor": {
+            "value": "muted pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0998.json"
+          },
+          "mouthShape": {
+            "value": "Closed gently curved mouth, subtle cupid bow, fuller lower lip",
+            "status": "art-proposal",
+            "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+          },
+          "noseShape": {
+            "value": "Straight narrow bridge, softly rounded tip, small curved nostrils",
+            "status": "art-proposal",
+            "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+          },
+          "beardShape": {
+            "value": "clean shaven",
+            "status": "art-proposal",
+            "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "Short dense black hair swept back and lightly side-parted, forehead clearly exposed; no fringe covering the forehead or eyebrows.",
+            "status": "art-proposal",
+            "source": "owner-directive-20261002-forehead-and-fuller-body"
+          },
+          "shape": {
+            "value": "Natural rounded crown and side volume with swept-back front exposing the forehead.",
+            "status": "art-proposal",
+            "source": "owner-directive-20261002-forehead-and-fuller-body"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0998.json"
+          },
+          "length": {
+            "value": "short",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0998.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "Fuller, heavier-set build than the reference image, with a thicker neck and softer rounded shoulder and upper torso silhouette; preserve natural adult proportions.",
+            "status": "art-proposal",
+            "source": "owner-directive-20261002-forehead-and-fuller-body"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": "flat chest",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0998.json"
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "Muted clay-brown plain work jacket over cream shirt",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0998.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": "Large perfectly round clear eyeglass lenses in thin copper metal frames; mandatory",
+            "status": "art-proposal",
+            "source": "owner-directive-20261002"
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0001": {
       "face": "넓은 눈썹, 절제된 탐색 시선",
       "hair": "짧은 짙은 회색 머리",
-      "upper": "문양 없는 탁한 청회색 작업 외투"
+      "upper": "문양 없는 탁한 청회색 작업 외투",
+      "identity": {
+        "characterId": "K001",
+        "name": "한재목",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "넓은 눈썹, 절제된 탐색 시선",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "faceShape": {
+            "value": "angular oval with a broad jaw and rounded chin",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "eyeShape": {
+            "value": "narrow, almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, dark, slightly angled",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "lipColor": {
+            "value": "muted tan",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight with slightly downturned corners",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a broad, rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "beardShape": {
+            "value": "sparse short stubble on the cheeks and jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "짧은 짙은 회색 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "shape": {
+            "value": "dense, tousled, spiky layers with a short fringe",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "length": {
+            "value": "short",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered, sturdy",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "문양 없는 탁한 청회색 작업 외투",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0001.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0029": {
       "face": "각진 턱, 생각에 잠긴 표정",
       "hair": "짧고 구불거리는 검은 머리",
-      "upper": "접힌 옷깃의 무광 철회색 작업 재킷"
+      "upper": "접힌 옷깃의 무광 철회색 작업 재킷",
+      "identity": {
+        "characterId": "K029",
+        "name": "강민서",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "각진 턱, 생각에 잠긴 표정",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "faceShape": {
+            "value": "angular, with a broad jaw and squared chin",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "eyeShape": {
+            "value": "narrow, almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, dark, slightly angled",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "lipColor": {
+            "value": "muted brown-pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "mouthShape": {
+            "value": "closed, with a nearly straight line and a subtle downward turn",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip and broad nostrils",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "beardShape": {
+            "value": "clean-shaven",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "짧고 구불거리는 검은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "shape": {
+            "value": "thick, tousled waves swept back and to the side",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "length": {
+            "value": "medium-short",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered, sturdy",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": "flat chest",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "접힌 옷깃의 무광 철회색 작업 재킷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0029.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-1005": {
       "face": "차분하고 분석적인 시선",
       "hair": "곧은 짙은 단발",
-      "upper": "숯색 내의 위의 탁한 갈색 재킷"
+      "upper": "숯색 내의 위의 탁한 갈색 재킷",
+      "identity": {
+        "characterId": "K1005",
+        "name": "정서온",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "여성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "차분하고 분석적인 시선",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "faceShape": {
+            "value": "oval with a softly angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "eyeShape": {
+            "value": "almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "eyebrowShape": {
+            "value": "dark, gently arched, tapered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "lipColor": {
+            "value": "muted brown-pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "mouthShape": {
+            "value": "closed, with a softly defined upper lip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "beardShape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "곧은 짙은 단발",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "shape": {
+            "value": "straight, center-parted bob with ends curving slightly inward",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "color": {
+            "value": "near-black dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "length": {
+            "value": "chin-length",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "숯색 내의 위의 탁한 갈색 재킷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1005.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0088": {
       "face": "좁고 사려 깊은 얼굴",
       "hair": "단정히 넘긴 짙은 머리",
-      "upper": "종교 문양 없는 빛바랜 올리브색 민간 외투"
+      "upper": "종교 문양 없는 빛바랜 올리브색 민간 외투",
+      "identity": {
+        "characterId": "K423",
+        "name": "오경재",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "좁고 사려 깊은 얼굴",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "faceShape": {
+            "value": "oval with an angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "eyeShape": {
+            "value": "narrow, almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, mostly straight with a slight arch",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "lipColor": {
+            "value": "muted pink-brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "mouthShape": {
+            "value": "closed, with a thin upper lip and fuller lower lip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "beardShape": {
+            "value": "none visible",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "단정히 넘긴 짙은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "shape": {
+            "value": "thick, side-parted and swept back, with loose strands at the front",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "color": {
+            "value": "dark brown-black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "length": {
+            "value": "short to medium",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "average",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "종교 문양 없는 빛바랜 올리브색 민간 외투",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0088.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0116": {
       "face": "풍상 어린 얼굴, 단호한 표정",
       "hair": "짧게 자른 검은 머리",
-      "upper": "계급 표식 없는 어두운 청회색 작업 재킷"
+      "upper": "계급 표식 없는 어두운 청회색 작업 재킷",
+      "identity": {
+        "characterId": "K115",
+        "name": "배우진",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "풍상 어린 얼굴, 단호한 표정",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "faceShape": {
+            "value": "angular oval with a broad jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "eyeShape": {
+            "value": "almond-shaped, slightly hooded",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, mostly straight with a slight arch",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "lipColor": {
+            "value": "muted tan-pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight with slightly downturned corners",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "noseShape": {
+            "value": "broad bridge, rounded tip, wide nostrils",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "beardShape": {
+            "value": "clean-shaven",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "짧게 자른 검은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "shape": {
+            "value": "thick, textured, slightly tousled, swept forward",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "length": {
+            "value": "short",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered, sturdy",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "계급 표식 없는 어두운 청회색 작업 재킷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0116.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0145": {
       "face": "신중하게 재는 시선",
       "hair": "관자놀이에 은빛이 도는 머리",
-      "upper": "정부 배지 없는 갈회색 민간 외투"
+      "upper": "정부 배지 없는 갈회색 민간 외투",
+      "identity": {
+        "characterId": "K144",
+        "name": "윤서린",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "신중하게 재는 시선",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "faceShape": {
+            "value": "angular oval with a defined jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "eyeShape": {
+            "value": "narrow, almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, slightly arched",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "lipColor": {
+            "value": "muted brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "mouthShape": {
+            "value": "medium-width, closed, with a nearly straight line",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "beardShape": {
+            "value": "clean-shaven",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "관자놀이에 은빛이 도는 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "shape": {
+            "value": "swept back with a loose center part",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "color": {
+            "value": "black with gray streaks at the sides",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "length": {
+            "value": "short to medium",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "정부 배지 없는 갈회색 민간 외투",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0145.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0170": {
       "face": "단단한 얼굴",
       "hair": "바람에 흐트러진 짧은 검은 머리",
-      "upper": "열린 옷깃의 빛바랜 철회색 작업복"
+      "upper": "열린 옷깃의 빛바랜 철회색 작업복",
+      "identity": {
+        "characterId": "K169",
+        "name": "박태겸",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "단단한 얼굴",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "faceShape": {
+            "value": "oval with an angular jaw and broad chin",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "eyeShape": {
+            "value": "narrow almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, dark, slightly arched",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "lipColor": {
+            "value": "muted tan-pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight with slightly downturned corners",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "noseShape": {
+            "value": "medium-width bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "beardShape": {
+            "value": "clean-shaven",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "바람에 흐트러진 짧은 검은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "shape": {
+            "value": "thick, tousled, swept upward and to one side with a loose fringe",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "length": {
+            "value": "short",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "medium build with broad shoulders",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": "flat chest",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "열린 옷깃의 빛바랜 철회색 작업복",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0170.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0195": {
       "face": "예리하지만 절제된 시선",
       "hair": "낮게 묶은 짙은 머리",
-      "upper": "도구나 열쇠 없는 따뜻한 회갈색 작업 재킷"
+      "upper": "도구나 열쇠 없는 따뜻한 회갈색 작업 재킷",
+      "identity": {
+        "characterId": "K194",
+        "name": "오해린",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "여성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "예리하지만 절제된 시선",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "faceShape": {
+            "value": "oval with an angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "eyeShape": {
+            "value": "almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, slightly angled",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "lipColor": {
+            "value": "muted pink-brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "beardShape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "낮게 묶은 짙은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "shape": {
+            "value": "center-parted, swept back into a low bun with loose strands",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "length": {
+            "value": "long",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "average",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "도구나 열쇠 없는 따뜻한 회갈색 작업 재킷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0195.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0220": {
       "face": "각진 얼굴, 멀리 보는 경계 시선",
       "hair": "뒤로 넘긴 짙은 머리",
-      "upper": "회사 표식 없는 어두운 갈색 현대 재킷"
+      "upper": "회사 표식 없는 어두운 갈색 현대 재킷",
+      "identity": {
+        "characterId": "K219",
+        "name": "최지우",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "각진 얼굴, 멀리 보는 경계 시선",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "faceShape": {
+            "value": "angular oval with a defined jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "eyeShape": {
+            "value": "narrow almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, slightly arched",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "lipColor": {
+            "value": "muted tan",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "beardShape": {
+            "value": "sparse short stubble on the cheeks and jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "뒤로 넘긴 짙은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "shape": {
+            "value": "thick, side-parted and swept back, with loose strands at the front",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "length": {
+            "value": "medium-short, reaching the nape",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": "flat chest",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "회사 표식 없는 어두운 갈색 현대 재킷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0220.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0246": {
       "face": "차분하고 온화한 얼굴",
       "hair": "짧게 다듬은 희끗한 머리",
-      "upper": "종교 복장 아닌 탁한 흙갈색 민간 겉옷"
+      "upper": "종교 복장 아닌 탁한 흙갈색 민간 겉옷",
+      "identity": {
+        "characterId": "K245",
+        "name": "백온",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "차분하고 온화한 얼굴",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "faceShape": {
+            "value": "broad oval with an angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "eyeShape": {
+            "value": "almond-shaped, slightly hooded",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, mostly straight with a slight angle",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "lipColor": {
+            "value": "muted brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight with slightly downturned corners",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "noseShape": {
+            "value": "straight bridge, broad rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "beardShape": {
+            "value": "sparse short stubble along the cheeks and jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "짧게 다듬은 희끗한 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "shape": {
+            "value": "tousled, textured, slightly spiky",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "color": {
+            "value": "dark charcoal with gray streaks",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "length": {
+            "value": "short",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "average build with broad shoulders",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "종교 복장 아닌 탁한 흙갈색 민간 겉옷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0246.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0272": {
       "face": "주름이 있고 사려 깊은 얼굴",
       "hair": "단정히 가른 짙은 회색 머리",
-      "upper": "상표 없는 어두운 회색 작업 외투"
+      "upper": "상표 없는 어두운 회색 작업 외투",
+      "identity": {
+        "characterId": "K271",
+        "name": "이홍원",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "주름이 있고 사려 깊은 얼굴",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "faceShape": {
+            "value": "oval with an angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "eyeShape": {
+            "value": "narrow, slightly hooded almond shape",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, mostly straight with a slight arch",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "lipColor": {
+            "value": "muted tan-pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight with slightly downturned corners",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "noseShape": {
+            "value": "prominent straight bridge, rounded tip, moderately broad nostrils",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "beardShape": {
+            "value": "sparse short stubble around the upper lip, chin, and jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "단정히 가른 짙은 회색 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "shape": {
+            "value": "voluminous, side-parted and swept back",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "color": {
+            "value": "black with dark gray highlights",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "length": {
+            "value": "short to medium",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "상표 없는 어두운 회색 작업 외투",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0272.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0297": {
       "face": "주의 깊게 살피는 표정",
       "hair": "느슨하게 흐트러진 짧은 검은 머리",
-      "upper": "패치 없는 탁한 이끼회색 운수 작업 재킷"
+      "upper": "패치 없는 탁한 이끼회색 운수 작업 재킷",
+      "identity": {
+        "characterId": "K296",
+        "name": "장세화",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "주의 깊게 살피는 표정",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "faceShape": {
+            "value": "oval with an angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "eyeShape": {
+            "value": "almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, slightly arched",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "lipColor": {
+            "value": "muted beige-brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "mouthShape": {
+            "value": "closed, gently curved",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "beardShape": {
+            "value": "none",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "느슨하게 흐트러진 짧은 검은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "shape": {
+            "value": "thick, tousled, swept loosely upward and to the side",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "length": {
+            "value": "short at the sides, longer on top",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "average, with moderately broad shoulders",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "패치 없는 탁한 이끼회색 운수 작업 재킷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0297.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0323": {
       "face": "집중하며 사람을 살피는 표정",
       "hair": "옆으로 가른 부드러운 짙은 머리",
-      "upper": "의료 표식 없는 무광 돌청색 민간 재킷"
+      "upper": "의료 표식 없는 무광 돌청색 민간 재킷",
+      "identity": {
+        "characterId": "K322",
+        "name": "류은비",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "집중하며 사람을 살피는 표정",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "faceShape": {
+            "value": "angular oval with a defined jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "eyeShape": {
+            "value": "narrow almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, mostly straight with a slight arch",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "lipColor": {
+            "value": "muted tan-brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight with slightly downturned corners",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "beardShape": {
+            "value": "sparse short stubble on the cheeks and jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "옆으로 가른 부드러운 짙은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "shape": {
+            "value": "thick, voluminous, side-swept with a loose part",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "color": {
+            "value": "very dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "length": {
+            "value": "short to medium",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "의료 표식 없는 무광 돌청색 민간 재킷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0323.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0349": {
       "face": "단호한 시선",
       "hair": "거칠게 자른 짧은 검은 머리",
-      "upper": "갑옷·계급장 없는 탁한 숯색 실용 외투"
+      "upper": "갑옷·계급장 없는 탁한 숯색 실용 외투",
+      "identity": {
+        "characterId": "K348",
+        "name": "고서준",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "단호한 시선",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "faceShape": {
+            "value": "angular with a broad, squared jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "eyeColor": {
+            "value": "gray-brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "eyeShape": {
+            "value": "narrow almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, dark, angled",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "lipColor": {
+            "value": "muted peach",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "mouthShape": {
+            "value": "straight, closed, with thin lips",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "noseShape": {
+            "value": "straight bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "beardShape": {
+            "value": "clean-shaven",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "거칠게 자른 짧은 검은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "shape": {
+            "value": "tousled and spiky",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "length": {
+            "value": "short",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered, sturdy",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": "flat chest",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "갑옷·계급장 없는 탁한 숯색 실용 외투",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0349.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0374": {
       "face": "온화하지만 진지한 얼굴",
       "hair": "은빛이 엷게 도는 머리",
-      "upper": "성직 복장·상징 없는 따뜻한 갈색 민간 외투"
+      "upper": "성직 복장·상징 없는 따뜻한 갈색 민간 외투",
+      "identity": {
+        "characterId": "K373",
+        "name": "남윤경",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "남성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "온화하지만 진지한 얼굴",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "faceShape": {
+            "value": "oval with an angular jaw",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "eyeColor": {
+            "value": "dark brown",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "eyeShape": {
+            "value": "almond-shaped, slightly hooded",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, gently arched",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "lipColor": {
+            "value": "muted brown-pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "mouthShape": {
+            "value": "closed, nearly straight with slightly downturned corners",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "noseShape": {
+            "value": "prominent bridge with a rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "beardShape": {
+            "value": "clean-shaven",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "은빛이 엷게 도는 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "shape": {
+            "value": "side-parted and swept back, with a loose curved strand at the front",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "color": {
+            "value": "dark brown with gray streaks",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "length": {
+            "value": "medium",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "broad-shouldered",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "성직 복장·상징 없는 따뜻한 갈색 민간 외투",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0374.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-0399": {
       "face": "단호하고 예리한 성인 여성 얼굴, 수염 없음",
       "hair": "헝클어진 짧은 검은 머리",
-      "upper": "로고 없는 탁한 올리브회색 작업 재킷"
+      "upper": "로고 없는 탁한 올리브회색 작업 재킷",
+      "identity": {
+        "characterId": "K398",
+        "name": "정유라",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "여성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "단호하고 예리한 성인 여성 얼굴, 수염 없음",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "faceShape": {
+            "value": "oval with an angular jaw and narrow chin",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "eyeColor": {
+            "value": "dark gray",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "eyeShape": {
+            "value": "almond-shaped",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "eyebrowShape": {
+            "value": "thick, slightly angled",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "lipColor": {
+            "value": "muted tan",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "mouthShape": {
+            "value": "small, closed, nearly straight",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "noseShape": {
+            "value": "narrow bridge with a softly rounded tip",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "beardShape": {
+            "value": "clean-shaven",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "헝클어진 짧은 검은 머리",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "shape": {
+            "value": "tousled, layered, with wispy pointed strands",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "color": {
+            "value": "black",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "length": {
+            "value": "short to medium, reaching the nape",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "average",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "skin": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "upper": {
+            "value": "로고 없는 탁한 올리브회색 작업 재킷",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-0399.json"
+          },
+          "lower": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "footwear": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "shape": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "color": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "material": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "mounting": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          }
+        }
+      }
     },
     "person-1004": {
       "face": "생체 특징이 있는 합성 휴머노이드",
-      "hair": "긴 포도주색 머리",
-      "upper": "확정 원본의 검정·포도주색 고딕 복장: 열린 어깨, 원래 가슴 노출 범위와 레이스 경계, 목 중심 원형 장식과 연결 스트랩, 코르셋형 몸판, 팔 위 밴드와 분리된 퍼프 소매·손목 장식. 가림 패널·스카프·추가 옷깃을 넣지 않음"
+      "hair": "Very long, thick, loose hair with a full crown and layered, slightly wavy lengths. Wispy strands frame the face; long, uneven side-swept bangs partially cross the forehead and eyes. The main mass falls down the back toward the hips, with separated, curling ends and long sections flowing forward over both shoulders.",
+      "upper": "A fitted black, corset-like bodice beneath the bust, with structured panels, narrow wine-red piping, and multiple horizontal dark straps across the waist. A prominent round dark-and-wine ring ornament sits at the center front of the waist, with a long wine-colored tab hanging below. A close, high black collar connects to angular black straps that frame the upper chest while leaving the neckline open. A smaller round dark-and-wine ornament is centered below the throat; narrow straps descend from it toward the bust and outer cup edges. The shoulders remain bare. Separate black off-shoulder sleeves begin around the upper arms, secured by narrow dark bands with wine-red accents. The sleeves are loose and billowy through the forearms, then gather into banded, ruffled cuffs.",
+      "identity": {
+        "characterId": "K1004",
+        "name": "이연",
+        "ethnicity": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "origin": {
+          "value": "Korean",
+          "status": "art-proposal",
+          "source": "owner-directive-20261002"
+        },
+        "gender": "여성",
+        "ageCategory": "adult"
+      },
+      "slots": {
+        "face": {
+          "description": {
+            "value": "생체 특징이 있는 합성 휴머노이드",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "faceShape": {
+            "value": "oval with a tapered chin",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "eyeColor": {
+            "value": "reddish burgundy",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "eyeShape": {
+            "value": "almond-shaped, slightly downturned",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "eyebrowShape": {
+            "value": "thin, gently arched",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "lipColor": {
+            "value": "muted pink",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "mouthShape": {
+            "value": "small, closed, with a slight smile",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "noseShape": {
+            "value": "small and narrow",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "beardShape": {
+            "value": "none",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          }
+        },
+        "hair": {
+          "description": {
+            "value": "Very long, thick, loose hair with a full crown and layered, slightly wavy lengths. Wispy strands frame the face; long, uneven side-swept bangs partially cross the forehead and eyes. The main mass falls down the back toward the hips, with separated, curling ends and long sections flowing forward over both shoulders.",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "shape": {
+            "value": "thick, layered waves with wispy bangs",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "color": {
+            "value": "Deep burgundy-wine with plum shadows and lighter wine highlights.",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "length": {
+            "value": "past the waist",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          }
+        },
+        "body": {
+          "build": {
+            "value": "Large full bust and narrow waist; preserve original shoulder width, torso proportions and body silhouette",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "weight": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "height": {
+            "value": null,
+            "status": "unknown",
+            "source": null,
+            "unit": null
+          },
+          "bustSize": {
+            "value": "Large, full bust; preserve full natural volume and projection without reduction",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "skin": {
+            "value": "창백한 피부",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          }
+        },
+        "outfit": {
+          "headwear": {
+            "value": "On the anatomical left side of the head, two unequal mechanical discs, smaller beside larger, linked into a connected infinity silhouette. Dark centers with layered concentric segmented black-and-wine rims, preserved connecting bridge and slim hanging tassels. Not flowers, plain rings or unconnected clips.",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "upper": {
+            "value": "A fitted black, corset-like bodice beneath the bust, with structured panels, narrow wine-red piping, and multiple horizontal dark straps across the waist. A prominent round dark-and-wine ring ornament sits at the center front of the waist, with a long wine-colored tab hanging below. A close, high black collar connects to angular black straps that frame the upper chest while leaving the neckline open. A smaller round dark-and-wine ornament is centered below the throat; narrow straps descend from it toward the bust and outer cup edges. The shoulders remain bare. Separate black off-shoulder sleeves begin around the upper arms, secured by narrow dark bands with wine-red accents. The sleeves are loose and billowy through the forearms, then gather into banded, ruffled cuffs.",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "lower": {
+            "value": "원본 허리 중심 원형 장식과 포도주색 벨트·늘어진 장식끈, 짧은 앞부분과 비대칭 긴 검정 치맛자락·포도주색 안감, 허벅지 레이스와 얇은 검정 스타킹. 바지로 교체하거나 원래 보이는 피부를 가리지 않음",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "footwear": {
+            "value": "원본의 검정 높은 굽 발목 부츠: 뾰족한 앞코, 가는 높은 굽, 붉은 연결 장식·버클 배치 유지",
+            "status": "art-proposal",
+            "source": "portrait-tokens/person-1004.json"
+          },
+          "marks": {
+            "value": null,
+            "status": "unknown",
+            "source": null
+          },
+          "neckline": {
+            "value": "The original low, plunging neckline leaves the upper chest and pronounced central cleavage exposed. The black fitted cups support the bust from below and the outer sides; delicate black floral lace traces their upper edges. Do not raise the neckline, add fabric across the cleavage, or otherwise cover the exposed skin.",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          }
+        },
+        "accessories": {
+          "description": {
+            "value": "Long, matching dark-metal and wine-red drop earrings. Each has a small upper attachment, a slender open hoop, and a pointed wine-colored pendant hanging below.",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "shape": {
+            "value": "Linked unequal concentric segmented mechanical hairpin discs forming connected infinity silhouette; earrings with open hoops and pointed wine pendants",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "color": {
+            "value": "black, deep wine red",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "material": {
+            "value": "dark mechanical metal",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          },
+          "mounting": {
+            "value": "hairpin on anatomical left side of head; earrings at both ears; preserve original tassel attachment points",
+            "status": "art-proposal",
+            "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+          }
+        }
+      }
     },
     "person-1017": {
       "face": "또렷한 이목구비와 친절하면서 속내를 드러내지 않는 성인 여성의 얼굴, 빨간색 크리스탈 이어피어스",

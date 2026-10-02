@@ -22,31 +22,220 @@
     "carriedWeapons": "none depicted; bayonet-fighting skill does not imply possession",
     "upper": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio",
     "lower": null,
-    "footwear": null
+    "footwear": null,
+    "accessories": "tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil"
   },
   "style": {
-    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
-    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "portraitShotId": "medium-close-up-119",
-    "crop": "head, both shoulders and upper chest"
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
   },
   "image": {
     "path": "/portraits/person-1009.png",
-    "sha256": "5be5500ab57b7015ab1e058b231baf4f2682c7529d6d38b8a159e43302e15461",
-    "width": 1215,
-    "height": 1295
+    "sha256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00",
+    "width": 1160,
+    "height": 1355
   },
   "references": {
-    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "identitySha256": "1873d081539d8523c60e1dafb221910228b4286c3b572a3b48dc424197a33012",
     "identityRole": "owner-reference",
     "imageText": "none",
-    "reviewStatus": "candidate-reviewed"
+    "reviewStatus": "candidate-reviewed",
+    "originalIdentitySha256": "1873d081539d8523c60e1dafb221910228b4286c3b572a3b48dc424197a33012",
+    "originalIdentityRole": "owner-reference",
+    "identitySelectionNote": "Current original reference selected and hash verified"
   },
   "imageReview": {
     "record": "/portrait-reviews/person-1009.json",
-    "imageSha256": "5be5500ab57b7015ab1e058b231baf4f2682c7529d6d38b8a159e43302e15461",
+    "imageSha256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00",
     "verdict": "pass",
-    "scope": "exact image only; no appearance or equipment canon promotion"
+    "scope": "exact approved transparent PNG only"
+  },
+  "identity": {
+    "characterId": "K1009",
+    "name": "신종목",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "남성",
+    "ageCategory": "adult"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "faceShape": {
+        "value": "angular oval with a defined jaw",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "eyeShape": {
+        "value": "narrow, almond-shaped",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "eyebrowShape": {
+        "value": "thick, straight with slight arches",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "lipColor": {
+        "value": "muted peach-brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "mouthShape": {
+        "value": "closed, nearly straight",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "noseShape": {
+        "value": "straight bridge with a rounded tip",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "beardShape": {
+        "value": "sparse short stubble along the jaw, chin, and upper lip",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "Short dark hair from the existing Tripo character portrait",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "shape": {
+        "value": "tousled and spiky with uneven forward-pointing bangs",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "color": {
+        "value": "black",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "length": {
+        "value": "short",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "broad-shouldered",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "weight": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "flat chest",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "skin": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "upper": {
+        "value": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "lower": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "footwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "marks": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "neckline": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1009.json"
+      },
+      "shape": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "color": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "material": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "mounting": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
   }
 }

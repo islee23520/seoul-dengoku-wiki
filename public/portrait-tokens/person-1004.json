@@ -12,31 +12,217 @@
   },
   "artProposal": {
     "face": "생체 특징이 있는 합성 휴머노이드",
-    "hair": "긴 포도주색 머리",
+    "hair": "Very long, thick, loose hair with a full crown and layered, slightly wavy lengths. Wispy strands frame the face; long, uneven side-swept bangs partially cross the forehead and eyes. The main mass falls down the back toward the hips, with separated, curling ends and long sections flowing forward over both shoulders.",
     "eyes": "루비색 눈",
     "skin": "창백한 피부",
-    "upper": "확정 원본의 검정·포도주색 고딕 복장: 열린 어깨, 원래 가슴 노출 범위와 레이스 경계, 목 중심 원형 장식과 연결 스트랩, 코르셋형 몸판, 팔 위 밴드와 분리된 퍼프 소매·손목 장식. 가림 패널·스카프·추가 옷깃을 넣지 않음",
+    "upper": "A fitted black, corset-like bodice beneath the bust, with structured panels, narrow wine-red piping, and multiple horizontal dark straps across the waist. A prominent round dark-and-wine ring ornament sits at the center front of the waist, with a long wine-colored tab hanging below. A close, high black collar connects to angular black straps that frame the upper chest while leaving the neckline open. A smaller round dark-and-wine ornament is centered below the throat; narrow straps descend from it toward the bust and outer cup edges. The shoulders remain bare. Separate black off-shoulder sleeves begin around the upper arms, secured by narrow dark bands with wine-red accents. The sleeves are loose and billowy through the forearms, then gather into banded, ruffled cuffs.",
     "lower": "원본 허리 중심 원형 장식과 포도주색 벨트·늘어진 장식끈, 짧은 앞부분과 비대칭 긴 검정 치맛자락·포도주색 안감, 허벅지 레이스와 얇은 검정 스타킹. 바지로 교체하거나 원래 보이는 피부를 가리지 않음",
     "footwear": "원본의 검정 높은 굽 발목 부츠: 뾰족한 앞코, 가는 높은 굽, 붉은 연결 장식·버클 배치 유지",
-    "headwear": "원본 위치의 크기가 다른 붉은 기계식 원판 두 개와 아래로 늘어진 술 장식. 원형 귀걸이와 붉은 보석 유지",
-    "carriedWeapons": "none depicted; no ownership inferred"
+    "headwear": "On the anatomical left side of the head, two unequal mechanical discs, smaller beside larger, linked into a connected infinity silhouette. Dark centers with layered concentric segmented black-and-wine rims, preserved connecting bridge and slim hanging tassels. Not flowers, plain rings or unconnected clips.",
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "accessories": "Long, matching dark-metal and wine-red drop earrings. Each has a small upper attachment, a slender open hoop, and a pointed wine-colored pendant hanging below."
   },
   "style": {
-    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
-    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "5a79cf53ccd738285f754ddfc9bf6f5b9c12b74ae8d727744ec2054047b6acce",
     "portraitShotId": "medium-close-up-119",
-    "crop": "head, both shoulders and upper chest"
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
   },
   "image": {
     "path": "/portraits/person-1004.png",
-    "sha256": "90a70d6feee755f358946fa176be850e3abdc04d462642ae59ff68dd1cb42361",
-    "width": 1215,
-    "height": 1295
+    "sha256": "5f4be2cfd327496b8d90cb684506ca9726b6eb28afa9eb379238f4aa9bdce2fc",
+    "width": 1161,
+    "height": 1354
   },
   "imageReview": {
     "record": "/portrait-reviews/person-1004.json",
-    "imageSha256": "90a70d6feee755f358946fa176be850e3abdc04d462642ae59ff68dd1cb42361",
+    "imageSha256": "5f4be2cfd327496b8d90cb684506ca9726b6eb28afa9eb379238f4aa9bdce2fc",
     "verdict": "pass",
-    "scope": "exact image only; no appearance or equipment canon promotion"
+    "scope": "exact approved transparent PNG only"
+  },
+  "identity": {
+    "characterId": "K1004",
+    "name": "이연",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "여성",
+    "ageCategory": "adult"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "생체 특징이 있는 합성 휴머노이드",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "faceShape": {
+        "value": "oval with a tapered chin",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "eyeColor": {
+        "value": "reddish burgundy",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "eyeShape": {
+        "value": "almond-shaped, slightly downturned",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "eyebrowShape": {
+        "value": "thin, gently arched",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "lipColor": {
+        "value": "muted pink",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "mouthShape": {
+        "value": "small, closed, with a slight smile",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "noseShape": {
+        "value": "small and narrow",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "beardShape": {
+        "value": "none",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "Very long, thick, loose hair with a full crown and layered, slightly wavy lengths. Wispy strands frame the face; long, uneven side-swept bangs partially cross the forehead and eyes. The main mass falls down the back toward the hips, with separated, curling ends and long sections flowing forward over both shoulders.",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "shape": {
+        "value": "thick, layered waves with wispy bangs",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "color": {
+        "value": "Deep burgundy-wine with plum shadows and lighter wine highlights.",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "length": {
+        "value": "past the waist",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "Large full bust and narrow waist; preserve original shoulder width, torso proportions and body silhouette",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "weight": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "Large, full bust; preserve full natural volume and projection without reduction",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "skin": {
+        "value": "창백한 피부",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": "On the anatomical left side of the head, two unequal mechanical discs, smaller beside larger, linked into a connected infinity silhouette. Dark centers with layered concentric segmented black-and-wine rims, preserved connecting bridge and slim hanging tassels. Not flowers, plain rings or unconnected clips.",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "upper": {
+        "value": "A fitted black, corset-like bodice beneath the bust, with structured panels, narrow wine-red piping, and multiple horizontal dark straps across the waist. A prominent round dark-and-wine ring ornament sits at the center front of the waist, with a long wine-colored tab hanging below. A close, high black collar connects to angular black straps that frame the upper chest while leaving the neckline open. A smaller round dark-and-wine ornament is centered below the throat; narrow straps descend from it toward the bust and outer cup edges. The shoulders remain bare. Separate black off-shoulder sleeves begin around the upper arms, secured by narrow dark bands with wine-red accents. The sleeves are loose and billowy through the forearms, then gather into banded, ruffled cuffs.",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "lower": {
+        "value": "원본 허리 중심 원형 장식과 포도주색 벨트·늘어진 장식끈, 짧은 앞부분과 비대칭 긴 검정 치맛자락·포도주색 안감, 허벅지 레이스와 얇은 검정 스타킹. 바지로 교체하거나 원래 보이는 피부를 가리지 않음",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "footwear": {
+        "value": "원본의 검정 높은 굽 발목 부츠: 뾰족한 앞코, 가는 높은 굽, 붉은 연결 장식·버클 배치 유지",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1004.json"
+      },
+      "marks": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "neckline": {
+        "value": "The original low, plunging neckline leaves the upper chest and pronounced central cleavage exposed. The black fitted cups support the bust from below and the outer sides; delicate black floral lace traces their upper edges. Do not raise the neckline, add fabric across the cleavage, or otherwise cover the exposed skin.",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "Long, matching dark-metal and wine-red drop earrings. Each has a small upper attachment, a slender open hoop, and a pointed wine-colored pendant hanging below.",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "shape": {
+        "value": "Linked unequal concentric segmented mechanical hairpin discs forming connected infinity silhouette; earrings with open hoops and pointed wine pendants",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "color": {
+        "value": "black, deep wine red",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "material": {
+        "value": "dark mechanical metal",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      },
+      "mounting": {
+        "value": "hairpin on anatomical left side of head; earrings at both ears; preserve original tassel attachment points",
+        "status": "art-proposal",
+        "source": "GAME-REFERENCE/character-art-reference/iyen/iyen_spine_reference_01_turnaround.png"
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
   }
 }

@@ -11,8 +11,8 @@
     "role": "Senior records official and head of the Onmin Council"
   },
   "artProposal": {
-    "face": "Youthful narrow face, calm eyes, no glasses or facial hair; owner-provided likeness reference",
-    "hair": "Short straight black hair falling forward",
+    "face": "Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven",
+    "hair": "short black hair",
     "outfit": "Plain deep navy high-collared civilian coat over light gray shirt",
     "palette": [
       "deep navy",
@@ -22,31 +22,220 @@
     "carriedWeapons": "none depicted; no ownership inferred",
     "upper": "Plain deep navy high-collared civilian coat over light gray shirt",
     "lower": null,
-    "footwear": null
+    "footwear": null,
+    "accessories": "eyeglasses mandatory, not large round lenses"
   },
   "style": {
-    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
-    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "portraitShotId": "medium-close-up-119",
-    "crop": "head, both shoulders and upper chest"
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
   },
   "image": {
     "path": "/portraits/person-1007.png",
-    "sha256": "e5be87f02aefc6599c1d7aecdd7f8120ce1b789c814f80b1ef9140a314128627",
-    "width": 1215,
-    "height": 1295
+    "sha256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179",
+    "width": 1160,
+    "height": 1355
   },
   "references": {
-    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
-    "identitySha256": "c546b7296c501123b8bd21ccd9d6a153d4466deb5a8949305530c47c8ab75faf",
-    "identityRole": "owner-reference",
+    "styleSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
+    "identitySha256": "dce605a26a4b2e4a9ac12dc82875379175bd63d95b009fdb7523087a044efc44",
+    "identityRole": "owner-face-and-hair-only",
     "imageText": "none",
-    "reviewStatus": "candidate-reviewed"
+    "reviewStatus": "candidate-reviewed",
+    "originalIdentitySha256": "c546b7296c501123b8bd21ccd9d6a153d4466deb5a8949305530c47c8ab75faf",
+    "originalIdentityRole": "owner-reference",
+    "identitySelectionNote": "Current original reference selected and hash verified"
   },
   "imageReview": {
     "record": "/portrait-reviews/person-1007.json",
-    "imageSha256": "e5be87f02aefc6599c1d7aecdd7f8120ce1b789c814f80b1ef9140a314128627",
+    "imageSha256": "f2febf6ab53d0ed70401095b7c3ce89f01c2c7f33611a7b69e7c025b4c5d3179",
     "verdict": "pass",
-    "scope": "exact image only; no appearance or equipment canon promotion"
+    "scope": "exact approved transparent PNG only"
+  },
+  "identity": {
+    "characterId": "K1007",
+    "name": "김연규",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "남성",
+    "ageCategory": "adult"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Young adult Korean face, calm narrow eyes, original soft cheek and jaw proportions, eyeglasses required, clean-shaven",
+        "status": "art-proposal",
+        "source": "owner-directive-20261002"
+      },
+      "faceShape": {
+        "value": "oval with a defined jaw and rounded chin",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "eyeShape": {
+        "value": "narrow, almond-shaped",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "eyebrowShape": {
+        "value": "straight, medium-thick, slightly tapered",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "lipColor": {
+        "value": "muted natural peach",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "mouthShape": {
+        "value": "small, closed, nearly straight",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "noseShape": {
+        "value": "straight bridge with a rounded tip",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "beardShape": {
+        "value": "none, clean shaven",
+        "status": "art-proposal",
+        "source": "owner-directive"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "short black hair",
+        "status": "art-proposal",
+        "source": "owner-directive"
+      },
+      "shape": {
+        "value": "layered, slightly tousled, with side-swept strands across the forehead",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "color": {
+        "value": "black",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "length": {
+        "value": "short to medium",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "average, with broad shoulders",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "weight": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "flat chest",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "skin": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "upper": {
+        "value": "Plain deep navy high-collared civilian coat over light gray shirt",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1007.json"
+      },
+      "lower": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "footwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "marks": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "neckline": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "eyeglasses mandatory, not large round lenses",
+        "status": "art-proposal",
+        "source": "owner-directive"
+      },
+      "shape": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "color": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "material": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "mounting": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
   }
 }

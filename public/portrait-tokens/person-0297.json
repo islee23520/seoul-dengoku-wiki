@@ -20,18 +20,210 @@
     "hair": "느슨하게 흐트러진 짧은 검은 머리",
     "upper": "패치 없는 탁한 이끼회색 운수 작업 재킷",
     "lower": null,
-    "footwear": null
+    "footwear": null,
+    "accessories": null
   },
   "style": {
-    "styleId": "wingzero-119-medium-close-up-b-study-1",
-    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "portraitShotId": "medium-close-up-119",
-    "crop": "head, both shoulders and upper chest"
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
   },
   "image": {
     "path": "/portraits/person-0297.png",
-    "sha256": "368ecc45f7528435d7d3df87fec20897237eca28db1ef79607974ed9a9f03578",
-    "width": 1145,
-    "height": 1374
+    "sha256": "908d8b7c97f04c0e5b482ca3a44577787103dee82c4a818e3b2d425a647dd0f7",
+    "width": 1160,
+    "height": 1355
+  },
+  "identity": {
+    "characterId": "K296",
+    "name": "장세화",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "남성",
+    "ageCategory": "adult"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "주의 깊게 살피는 표정",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "faceShape": {
+        "value": "oval with an angular jaw",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "eyeShape": {
+        "value": "almond-shaped",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "eyebrowShape": {
+        "value": "thick, slightly arched",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "lipColor": {
+        "value": "muted beige-brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "mouthShape": {
+        "value": "closed, gently curved",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "noseShape": {
+        "value": "straight bridge with a rounded tip",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "beardShape": {
+        "value": "none",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "느슨하게 흐트러진 짧은 검은 머리",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "shape": {
+        "value": "thick, tousled, swept loosely upward and to the side",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "color": {
+        "value": "black",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "length": {
+        "value": "short at the sides, longer on top",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "average, with moderately broad shoulders",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "weight": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "bustSize": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "skin": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "upper": {
+        "value": "패치 없는 탁한 이끼회색 운수 작업 재킷",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0297.json"
+      },
+      "lower": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "footwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "marks": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "neckline": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "shape": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "color": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "material": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "mounting": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "imageReview": {
+    "record": "/portrait-reviews/person-0297.json",
+    "imageSha256": "908d8b7c97f04c0e5b482ca3a44577787103dee82c4a818e3b2d425a647dd0f7",
+    "verdict": "pass",
+    "scope": "exact approved transparent PNG only"
   }
 }
