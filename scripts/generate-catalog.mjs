@@ -828,8 +828,18 @@ const issuedById = new Map(courtDataset.people.map((person) => [person.id, perso
 const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
 const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
+const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
 for (const holding of personalHoldings.holdings) {
-  if (!issuedById.has(holding.holderPersonId) || !issuedById.has(holding.directLiegePersonId) || !holding.adminRefs.length) throw new Error('E_PERSON_HOLDING:' + holding.id)
+  if (!issuedById.has(holding.holderPersonId) || !issuedById.has(holding.directLiegePersonId) || (!holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
+  if (holding.facilityRef) {
+    const ref = holding.facilityRef
+    const station = stationInteriors.stations.find(station => station.name === ref.stationName)
+    const layer = station?.layers.find(layer => layer.id === ref.layerId)
+    if (ref.sourcePath !== 'lore/regions/station-interiors.json' || !layer ||
+        holding.name.ko !== `${station.name} 대합실` || ref.layerId !== 'concourse' ||
+        holding.adminRefs.length || holding.geometrySource !== null ||
+        holding.territorialScale !== null || holding.formalTitleRank !== null) throw new Error('E_HOLDING_FACILITY_REF:' + holding.id)
+  }
   for (const ref of holding.adminRefs) {
     const region = openingTerritories.regions.find(region => region.id === ref.id)
     if (!region || region.name !== ref.name) throw new Error('E_HOLDING_ADMIN_REF:' + holding.id + ':' + ref.id)
