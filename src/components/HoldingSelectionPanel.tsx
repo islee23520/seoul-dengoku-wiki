@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import registry from '../../lore/name-pools/person-id-registry.json'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import { retainerGraph } from '../generated/retainerGraph'
 
@@ -19,9 +18,7 @@ export type ConfirmedHoldings = { schema: 'confirmed-person-holdings.v1'; openin
 
 function personById(id: string) {
   const node = retainerGraph.nodes.find(person => person.id === id)
-  if (node) return peopleCatalog.find(person => person.detailRoute === node.detailRoute)
-  const issued = registry.persons.find(person => person.id === id)
-  return issued && peopleCatalog.find(person => person.name === issued.name)
+  return node && peopleCatalog.find(person => person.detailRoute === node.detailRoute)
 }
 
 function relationLabel(edge: { courtId: string | null; relationKind?: string; ownerTerm?: string }) {
@@ -54,7 +51,7 @@ export default function HoldingSelectionPanel({ holding, openingYear, selectedRe
       <div><dt>보유 범위</dt><dd>{holding.facilityRef ? `${holding.facilityRef.stationName} · ${holding.facilityRef.layerName ?? holding.facilityRef.layerId}` : `${holding.adminRefs.length}개 동`}</dd></div>
     </dl>
     {holder && <details><summary>공직 정보</summary><p>{holder.position} · {holder.rank} · {holder.commonTier}</p></details>}
-    {holding.facilityRef && <p>대합실만 보유합니다. 보유 경계·면적은 확인되지 않았으며 동 전체 소유·선로 통행세·정식 작위를 뜻하지 않습니다.</p>}
+    {holding.facilityRef && <p>보유 범위는 {holding.facilityRef.stationName}의 실제 대합실입니다. 지도는 위치를 도식으로 표시하며 대합실의 실제 경계와 면적은 표시하지 않습니다.</p>}
     {holding.adminRefs.length > 0 && <><h4>보유 동</h4><ul className="campaign-holding-regions">{holding.adminRefs.map(ref => <li key={ref.id}><button type="button" aria-pressed={ref.id === selectedRegionId} onClick={() => onSelectRegion(ref.id)}>{ref.name}</button></li>)}</ul></>}
     {members.length > 0 && <><h4>직속 관계</h4><ul className="campaign-holding-retainers">{members.map(({ person, edge }) => <li key={edge.fromPersonId}><Link to={person.detailRoute}>{person.name} · {edge.fromPersonId}</Link><span>{relationLabel(edge)}</span></li>)}</ul></>}
   </section>

@@ -6,8 +6,33 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { JSDOM } from 'jsdom'
 import HoldingSelectionPanel from '../src/components/HoldingSelectionPanel.tsx'
+import { peopleCatalog } from '../src/generated/peopleCatalog'
+import { retainerGraph } from '../src/generated/retainerGraph'
 
 const ledger = JSON.parse(readFileSync(new URL('../public/confirmed-person-holdings.json', import.meta.url), 'utf8'))
+
+for (const field of ['holderPersonId', 'directLiegePersonId']) {
+  test(`missing graph identity rejects same-name catalog entries: ${field}`, () => {
+    const holding = ledger.holdings.find(row => row.id === 'holding:saetgang-concourse')
+    const index = retainerGraph.nodes.findIndex(node => node.id === holding[field])
+    assert.ok(index >= 0)
+    const [node] = retainerGraph.nodes.splice(index, 1)
+    const person = peopleCatalog.find(person => person.detailRoute === node.detailRoute)
+    assert.ok(person)
+    peopleCatalog.push({ ...person, id: 'person-duplicate', detailRoute: '/people/person-duplicate' })
+    let dom
+    try {
+      dom = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
+        createElement(HoldingSelectionPanel, { holding, openingYear: ledger.openingYear, selectedRegionId: '', onSelectRegion() {} }))))
+      assert.ok(dom.window.document.querySelector('[role="alert"]'))
+      assert.equal(dom.window.document.querySelectorAll('a').length, 0)
+    } finally {
+      dom?.window.close()
+      peopleCatalog.pop()
+      retainerGraph.nodes.splice(index, 0, node)
+    }
+  })
+}
 
 for (const id of ['holding:yangcheon', 'holding:saetgang-concourse']) {
   test(`confirmed holding panel renders real person routes and exact admin selection: ${id}`, () => {
