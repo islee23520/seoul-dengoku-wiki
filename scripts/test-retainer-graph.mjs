@@ -71,6 +71,10 @@ test('generated court graph resolves approved direct retainers to actual detail 
     { fromPersonId: 'K062', toPersonId: 'K1005', courtId: null, relationKind: 'direct-vassal', ownerTerm: '직속 가신' })
   assert.ok(retainerGraph.nodes.some((node) => node.id === 'K001'))
   assert.ok(retainerGraph.nodes.some((node) => node.id === 'K1005'))
+  assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === 'K233'),
+    { fromPersonId: 'K233', toPersonId: 'K222', courtId: null, relationKind: 'direct-vassal', ownerTerm: '직속 가신' })
+  assert.ok(retainerGraph.nodes.some((node) => node.id === 'K233'))
+  assert.ok(retainerGraph.nodes.some((node) => node.id === 'K222'))
   assert.ok(!retainerGraph.nodes.some((node) => node.id === 'K272'))
   assert.ok(!retainerGraph.edges.some((edge) => edge.fromPersonId === 'K068' && edge.courtId === null))
 })

@@ -14,7 +14,7 @@
     "schema": "owner-liege-edges.v1",
     "effectiveYear": 2126,
     "approvalRef": "owner answer call_NVOyG7CkeMwdTvYlEprnTZe6 (2026-10-02): 수문국 직속 주군: 한재목으로 확정 (Recommended); 태욱 가신 관계: 정서온 직속 가신 (Recommended)",
-    "note": "Person-to-person liege edges for court owners only. No land grant, command authority, court, or feudal-status change for any other person; informational human decision, no automated receipt gate.",
+    "note": "Owner-approved person-to-person liege edges. No land grant, command authority, court, or feudal-status change for any other person; informational human decision, no automated receipt gate.",
     "sourceBasis": [
       { "path": "lore/characters/Cast-State-01.json", "anchor": "인물-한재목-p1", "quote": "물 계약 가문들이 양평역 계약 회의에서 군주를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 군주 자리에 앉았다." },
       { "path": "lore/characters/Cast-State-03.json", "anchor": "인물-정호준-p1", "quote": "정씨 회장 가문은 회장직을 세습하며, 개막의 회장은 정서온이다." }
@@ -26,7 +26,8 @@
       { "personId": "K058", "liegePersonId": "K1005", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" },
       { "personId": "K060", "liegePersonId": "K1005", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" },
       { "personId": "K061", "liegePersonId": "K1005", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" },
-      { "personId": "K062", "liegePersonId": "K1005", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" }
+      { "personId": "K062", "liegePersonId": "K1005", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" },
+      { "personId": "K233", "liegePersonId": "K222", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" }
     ]
   },
   "courts": [

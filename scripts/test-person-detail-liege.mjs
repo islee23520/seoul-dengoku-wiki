@@ -20,6 +20,7 @@ const ownerLiegeCases = [
   ['person-0060.json', '정서온', '직속 가신'],
   ['person-0061.json', '정서온', '직속 가신'],
   ['person-0062.json', '정서온', '직속 가신'],
+  ['person-0234.json', '송재민', '직속 가신'],
 ]
 
 test('seven owner-liege details render the known liege and exact owner term without a fabricated court', async () => {

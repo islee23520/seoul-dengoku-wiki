@@ -59,7 +59,7 @@ test("direct-liege validator rejects source, actor, court, nation and hierarchy 
   assert.deepEqual(validate(social), []);
 });
 
-test("approved 2026-10-02 owner lieges are exactly seven person-to-person edges", () => {
+test("approved owner lieges are exactly eight person-to-person edges", () => {
   const dataset = loadDataset();
   const { ownerLieges } = dataset.config;
   assert.equal(ownerLieges.schema, "owner-liege-edges.v1");
@@ -72,11 +72,13 @@ test("approved 2026-10-02 owner lieges are exactly seven person-to-person edges"
     { personId: "K060", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
     { personId: "K061", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
     { personId: "K062", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
+    { personId: "K233", liegePersonId: "K222", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
   ]);
   const sourceQuotes = ownerLieges.sourceBasis.map((basis) => basis.quote);
   assert.ok(sourceQuotes.some((quote) => quote.includes("군주를 뽑고") && quote.includes("군주 자리에 앉았다")));
   assert.ok(sourceQuotes.some((quote) => quote.includes("개막의 회장은 정서온이다")));
   assert.ok(!ownerLieges.edges.some((edge) => ["K068", "K069", "K071", "K073", "K074", "K075"].includes(edge.personId)));
+  assert.ok(!ownerLieges.edges.some((edge) => edge.liegePersonId === "K219"), "the S09 chair's existing command row must not be promoted by inference");
   assert.deepEqual(validate(dataset), []);
 });
 

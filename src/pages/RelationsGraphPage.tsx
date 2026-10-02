@@ -25,6 +25,14 @@ export function layoutRetainerGraph(graph: typeof retainerGraph) {
   const positioned = new Map<string, (typeof nodes)[number]>()
   for (const node of nodes) if (!positioned.has(node.id)) positioned.set(node.id, node)
   const ownerLiegeEdges = graph.edges.filter((edge) => edge.courtId === null)
+  const bottomBandY = Math.ceil(graph.courts.length / 3) * 570 + 120
+  const unplacedVassals = [...new Set(ownerLiegeEdges.map((edge) => edge.fromPersonId))]
+    .filter((id) => !positioned.has(id))
+  unplacedVassals.forEach((id, index) => {
+    const person = graph.nodes.find((node) => node.id === id)
+    if (!person) throw new Error(`E_RETAINER_GRAPH_EDGE:${id}`)
+    positioned.set(id, { ...person, x: 60 + (index % 5) * 160, y: bottomBandY + Math.floor(index / 5) * 60 })
+  })
   for (const liegeId of new Set(ownerLiegeEdges.map((edge) => edge.toPersonId))) {
     const vassals = ownerLiegeEdges.filter((edge) => edge.toPersonId === liegeId)
       .map((edge) => positioned.get(edge.fromPersonId))
@@ -84,7 +92,7 @@ export function RelationsGraphPage() {
       <svg
         role="img"
         aria-label="승인된 직속 가신 관계 그래프"
-        viewBox={`0 -120 800 ${Math.ceil(retainerGraph.courts.length / 3) * 570 + 120}`}
+        viewBox={`0 -120 800 ${Math.ceil(retainerGraph.courts.length / 3) * 570 + 320}`}
         style={{ width: '100%', height: 'auto', border: '1px solid var(--wiki-line)', borderRadius: '8px', background: 'var(--wiki-paper)' }}
       >
         {retainerGraph.edges.map((edge) => {
