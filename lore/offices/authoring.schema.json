@@ -21,12 +21,280 @@
             "tier": {
               "type": "string",
               "minLength": 1
+            },
+            "territorialScale": {
+              "$ref": "#/$defs/territorialScale"
             }
           },
           "additionalProperties": false
         }
       }
     },
-    {"if": {"properties": {"id": {"pattern": "^(?:DOC:|__EXAMPLE__)"}}}, "else": {"properties": {"data": {"required": ["tier"]}}}}
-  ]
+    {
+      "if": {
+        "properties": {
+          "id": {
+            "pattern": "^(?:DOC:|__EXAMPLE__)"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "data": {
+            "required": [
+              "tier"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "territorialScale": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "territorial-scale.v1"
+        },
+        "regularRegions": {
+          "type": "object",
+          "properties": {
+            "provinceCodes": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "const": "41"
+                },
+                {
+                  "const": "43"
+                },
+                {
+                  "const": "44"
+                },
+                {
+                  "const": "51"
+                }
+              ],
+              "items": false,
+              "minItems": 4,
+              "maxItems": 4
+            },
+            "province": {
+              "const": "kingdom"
+            },
+            "city": {
+              "const": "duchy"
+            },
+            "county": {
+              "const": "duchy"
+            },
+            "district": {
+              "const": "barony"
+            },
+            "directMunicipalEupMyeonDong": {
+              "const": "barony"
+            },
+            "eupMyeonDongWithinGu": {
+              "const": "component"
+            },
+            "componentImpliesLowerTitle": {
+              "const": false
+            }
+          },
+          "required": [
+            "provinceCodes",
+            "province",
+            "city",
+            "county",
+            "district",
+            "directMunicipalEupMyeonDong",
+            "eupMyeonDongWithinGu",
+            "componentImpliesLowerTitle"
+          ],
+          "additionalProperties": false
+        },
+        "specialCities": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "const": "서울특별시"
+                },
+                "englishName": {
+                  "const": "Seoul Special City"
+                },
+                "city": {
+                  "const": "kingdom"
+                },
+                "district": {
+                  "const": "duchy"
+                },
+                "dong": {
+                  "const": "barony"
+                }
+              },
+              "required": [
+                "name",
+                "englishName",
+                "city",
+                "district",
+                "dong"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "const": "대전광역시"
+                },
+                "englishName": {
+                  "const": "Daejeon Metropolitan City"
+                },
+                "city": {
+                  "const": "kingdom"
+                },
+                "district": {
+                  "const": "duchy"
+                },
+                "dong": {
+                  "const": "barony"
+                }
+              },
+              "required": [
+                "name",
+                "englishName",
+                "city",
+                "district",
+                "dong"
+              ],
+              "additionalProperties": false
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "scaleImpliesPersonalOwnership": {
+          "const": false
+        },
+        "scaleImpliesTitleRank": {
+          "const": false
+        },
+        "seoulControl": {
+          "type": "object",
+          "properties": {
+            "majorPolities": {
+              "const": 16
+            },
+            "wholeKingdomControlledByOnePolity": {
+              "const": false
+            }
+          },
+          "required": [
+            "majorPolities",
+            "wholeKingdomControlledByOnePolity"
+          ],
+          "additionalProperties": false
+        },
+        "separateKingdomContainers": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "object",
+              "properties": {
+                "provinceCode": {
+                  "const": "43"
+                },
+                "name": {
+                  "const": "충청북도"
+                }
+              },
+              "required": [
+                "provinceCode",
+                "name"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "provinceCode": {
+                  "const": "44"
+                },
+                "name": {
+                  "const": "충청남도"
+                }
+              },
+              "required": [
+                "provinceCode",
+                "name"
+              ],
+              "additionalProperties": false
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "sejong": {
+          "type": "object",
+          "properties": {
+            "provinceCode": {
+              "const": "36"
+            },
+            "name": {
+              "const": "세종특별자치시"
+            },
+            "englishName": {
+              "const": "Sejong Special Self-Governing City"
+            },
+            "geographicContainerId": {
+              "const": "admin:36"
+            },
+            "city": {
+              "const": "kingdom"
+            },
+            "directEupMyeonDong": {
+              "const": "barony"
+            },
+            "sourceAliases": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "const": "admin-city:36:세종시"
+                }
+              ],
+              "items": false,
+              "minItems": 1,
+              "maxItems": 1
+            }
+          },
+          "required": [
+            "provinceCode",
+            "name",
+            "englishName",
+            "geographicContainerId",
+            "city",
+            "directEupMyeonDong",
+            "sourceAliases"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "regularRegions",
+        "specialCities",
+        "scaleImpliesPersonalOwnership",
+        "scaleImpliesTitleRank",
+        "seoulControl",
+        "separateKingdomContainers",
+        "sejong"
+      ],
+      "additionalProperties": false
+    }
+  }
 }

@@ -12,6 +12,91 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-구새희",
   "detailRoute": "/people/person-0620",
+  "gurps": {
+    "id": "K620",
+    "personId": "person-0620",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 12,
+        "cp": 40
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Interrogation",
+        "ko": "증인 대질",
+        "level": 14,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 40,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 16,
+      "spent": 56,
+      "unspent": 19,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 12,
+      "Per": 12,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 동방사 규모",
+    "faction_scale": {
+      "state": "S05",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "송내",
+    "type": "초소 영지",
+    "station": "송내",
+    "state": "S05",
+    "settlement": {
+      "name": "송내 정착지",
+      "type": "정착지",
+      "description": "송내 일대 고정 거점"
+    },
+    "note": "S05 송내 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "ad6c-b2a5-c131",
     "name": "능성 구씨",

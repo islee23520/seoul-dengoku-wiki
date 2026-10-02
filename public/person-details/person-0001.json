@@ -12,6 +12,108 @@
   "stateName": "수문국",
   "sourceRoute": "/world/Core-Characters#한재목",
   "detailRoute": "/people/person-0001",
+  "gurps": {
+    "id": "K001",
+    "personId": "person-0001",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 12,
+        "cp": 40
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Observation",
+        "ko": "관찰(경비·순찰)",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Politics",
+        "ko": "정치(선거·표 모으기)",
+        "level": 13,
+        "cp": 4
+      },
+      {
+        "name": "Breath Control",
+        "ko": "호흡 수련(심법)",
+        "level": 10,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 40,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 24,
+      "spent": 64,
+      "unspent": 11,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 12,
+      "Per": 12,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 수문국 규모",
+    "faction_scale": {
+      "state": "S01",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 4,
+    "current_location": "한강 둔치",
+    "camp": {
+      "name": "한재목 한강변 야영지",
+      "type": "야영지",
+      "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+  },
   "clan": {
     "id": "d55c-ccad-c8fc",
     "name": "청주 한씨",

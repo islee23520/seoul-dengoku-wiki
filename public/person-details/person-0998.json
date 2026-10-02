@@ -12,6 +12,150 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-이일섭",
   "detailRoute": "/people/person-0998",
+  "gurps": {
+    "id": "K998",
+    "personId": "person-0998",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 11,
+        "cp": 10
+      },
+      "DX": {
+        "value": 12,
+        "cp": 20
+      },
+      "IQ": {
+        "value": 14,
+        "cp": 40
+      },
+      "HT": {
+        "value": 14,
+        "cp": 40
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "전략",
+        "level": 16,
+        "cp": 8
+      },
+      {
+        "name": "정치",
+        "level": 17,
+        "cp": 16
+      },
+      {
+        "name": "외교",
+        "level": 15,
+        "cp": 4
+      },
+      {
+        "name": "지휘",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "처세",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "전술",
+        "level": 14,
+        "cp": 4
+      },
+      {
+        "name": "생존",
+        "level": 14,
+        "cp": 4
+      },
+      {
+        "name": "경제",
+        "level": 14,
+        "cp": 4
+      },
+      {
+        "name": "농업",
+        "level": 14,
+        "cp": 4
+      },
+      {
+        "name": "회계",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "장검",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "지역지식",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "가족 지식",
+        "level": 16,
+        "cp": 16
+      },
+      {
+        "name": "소소한 생활 기술",
+        "level": 12,
+        "cp": 10
+      }
+    ],
+    "cp": {
+      "attributes": 110,
+      "advantages": 80,
+      "disadvantages": -20,
+      "skills": 110,
+      "total": 280,
+      "breakdown_visible": true
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 12,
+      "Per": 12,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "규격맹 호위대",
+    "size": 40,
+    "quality": "정예",
+    "composition": [
+      "호위병",
+      "검수병",
+      "경비병"
+    ],
+    "note": "규격맹 이사 직속 호위부대",
+    "faction_scale": {
+      "state": "S02",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "작전",
+    "type": "거점",
+    "station": "작전",
+    "state": "S02",
+    "settlement": {
+      "name": "작전 정착지",
+      "type": "정착지",
+      "description": "작전 일대 고정 거점"
+    },
+    "note": "S02 작전 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "c774-c804-c758-674e",
     "name": "전의 이씨",

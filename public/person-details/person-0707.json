@@ -12,6 +12,91 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-강마유",
   "detailRoute": "/people/person-0707",
+  "gurps": {
+    "id": "K707",
+    "personId": "person-0707",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 11,
+        "cp": 10
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 11,
+        "cp": 20
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Area Knowledge (근무 구역)",
+        "ko": "지역 지식(전령·전달)",
+        "level": 14,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 30,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 16,
+      "spent": 46,
+      "unspent": 29,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 11,
+      "Will": 11,
+      "Per": 11,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 24,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 신내운수 규모",
+    "faction_scale": {
+      "state": "S12",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "평내호평",
+    "type": "초소 영지",
+    "station": "평내호평",
+    "state": "S12",
+    "settlement": {
+      "name": "평내호평 정착지",
+      "type": "정착지",
+      "description": "평내호평 일대 고정 거점"
+    },
+    "note": "S12 평내호평 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "ac15-c9c4-c8fc",
     "name": "진주 강씨",

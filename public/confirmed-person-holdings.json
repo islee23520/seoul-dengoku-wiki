@@ -1,0 +1,99 @@
+{
+  "schema": "confirmed-person-holdings.v1",
+  "openingYear": 2126,
+  "holdings": [
+    {
+      "id": "holding:yangcheon",
+      "name": {
+        "ko": "양천구 영지",
+        "en": "Yangcheon District Holding"
+      },
+      "holderPersonId": "K002",
+      "directLiegePersonId": "K001",
+      "stateId": "S01",
+      "designation": {
+        "ko": "양천구 영주",
+        "en": "Lord of Yangcheon District"
+      },
+      "territorialScale": "duchy",
+      "formalTitleRank": null,
+      "adminRefs": [
+        {
+          "id": "region:1147051000",
+          "name": "목1동"
+        },
+        {
+          "id": "region:1147052000",
+          "name": "목2동"
+        },
+        {
+          "id": "region:1147053000",
+          "name": "목3동"
+        },
+        {
+          "id": "region:1147054000",
+          "name": "목4동"
+        },
+        {
+          "id": "region:1147055000",
+          "name": "목5동"
+        },
+        {
+          "id": "region:1147056000",
+          "name": "신월1동"
+        },
+        {
+          "id": "region:1147057000",
+          "name": "신월2동"
+        },
+        {
+          "id": "region:1147058000",
+          "name": "신월3동"
+        },
+        {
+          "id": "region:1147059000",
+          "name": "신월4동"
+        },
+        {
+          "id": "region:1147060000",
+          "name": "신월5동"
+        },
+        {
+          "id": "region:1147061000",
+          "name": "신월6동"
+        },
+        {
+          "id": "region:1147061100",
+          "name": "신월7동"
+        },
+        {
+          "id": "region:1147062000",
+          "name": "신정1동"
+        },
+        {
+          "id": "region:1147063000",
+          "name": "신정2동"
+        },
+        {
+          "id": "region:1147064000",
+          "name": "신정3동"
+        },
+        {
+          "id": "region:1147065000",
+          "name": "신정4동"
+        },
+        {
+          "id": "region:1147067000",
+          "name": "신정6동"
+        },
+        {
+          "id": "region:1147068000",
+          "name": "신정7동"
+        }
+      ],
+      "geometrySource": "opening-territories.regions",
+      "parentGeography": "서울특별시",
+      "wholeSeoulControl": false
+    }
+  ]
+}

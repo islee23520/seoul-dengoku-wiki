@@ -12,6 +12,96 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-강예준",
   "detailRoute": "/people/person-0146",
+  "gurps": {
+    "id": "K145",
+    "personId": "person-0146",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 10,
+        "cp": 0
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 12,
+        "cp": 8
+      },
+      {
+        "name": "Forgery/TL?",
+        "ko": "위조 감별",
+        "level": 11,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 0,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 16,
+      "spent": 16,
+      "unspent": 59,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 10,
+      "Per": 10,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
+    "faction_scale": {
+      "state": "S06",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 4,
+    "current_location": "고가도로 밑",
+    "camp": {
+      "name": "강예준 고가도로 하부 야영지",
+      "type": "야영지",
+      "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+  },
   "clan": {
     "id": "ac15-c9c4-c8fc",
     "name": "진주 강씨",

@@ -12,6 +12,97 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-엄누리",
   "detailRoute": "/people/person-0054",
+  "gurps": {
+    "id": "K054",
+    "personId": "person-0054",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 11,
+        "cp": 20
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Mechanic/TL?",
+        "ko": "기계 정비",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Forgery/TL?",
+        "ko": "위조 감별",
+        "level": 12,
+        "cp": 8
+      },
+      {
+        "name": "Breath Control",
+        "ko": "호흡 수련(심법)",
+        "level": 10,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 20,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 20,
+      "spent": 40,
+      "unspent": 35,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 11,
+      "Per": 11,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "confirmedHoldings": [],
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 규격맹 규모",
+    "faction_scale": {
+      "state": "S02",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "상동",
+    "type": "초소 영지",
+    "station": "상동",
+    "state": "S02",
+    "settlement": {
+      "name": "상동 정착지",
+      "type": "정착지",
+      "description": "상동 일대 고정 거점"
+    },
+    "note": "S02 상동 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "c5c4-c601-c6d4",
     "name": "영월 엄씨",
