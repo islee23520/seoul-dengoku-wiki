@@ -12,6 +12,95 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-안도한",
   "detailRoute": "/people/person-0298",
+  "gurps": {
+    "id": "K297",
+    "personId": "person-0298",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 11,
+        "cp": 10
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 11,
+        "cp": 20
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Observation",
+        "ko": "관찰(경비·순찰)",
+        "level": 13,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 30,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 16,
+      "spent": 46,
+      "unspent": 29,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 11,
+      "Will": 11,
+      "Per": 11,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 24,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 신내운수 규모",
+    "faction_scale": {
+      "state": "S12",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 4,
+    "current_location": "고가도로 밑",
+    "camp": {
+      "name": "안도한 고가도로 하부 야영지",
+      "type": "야영지",
+      "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+  },
   "clan": {
     "id": "c548-c21c-d765",
     "name": "순흥 안씨",

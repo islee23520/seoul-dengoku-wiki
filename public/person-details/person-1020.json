@@ -12,6 +12,63 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-한서경",
   "detailRoute": "/people/person-1020",
+  "gurps": {
+    "id": "K1020",
+    "personId": "person-1020",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 10,
+        "cp": 0
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 12,
+        "cp": 8
+      },
+      {
+        "name": "Merchant",
+        "ko": "거래·경매",
+        "level": 11,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 0,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 12,
+      "spent": 12,
+      "unspent": 63,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 10,
+      "Per": 10,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
   "clan": null,
   "generation": "opening",
   "minors": false,

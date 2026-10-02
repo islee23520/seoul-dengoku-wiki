@@ -12,6 +12,103 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-민웅기",
   "detailRoute": "/people/person-1008",
+  "gurps": {
+    "id": "K1008",
+    "personId": "person-1008",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 14,
+        "cp": 40
+      },
+      "IQ": {
+        "value": 14,
+        "cp": 40
+      },
+      "HT": {
+        "value": 11,
+        "cp": 10
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "전략",
+        "level": 16,
+        "cp": 8
+      },
+      {
+        "name": "정치",
+        "level": 15,
+        "cp": 4
+      },
+      {
+        "name": "외교",
+        "level": 14,
+        "cp": 2
+      },
+      {
+        "name": "지휘",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "전술",
+        "level": 14,
+        "cp": 4
+      },
+      {
+        "name": "처세",
+        "level": 14,
+        "cp": 4
+      },
+      {
+        "name": "장검",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "차량 운전",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "정비",
+        "level": 14,
+        "cp": 4
+      },
+      {
+        "name": "생활·사회 잡기술",
+        "level": 13,
+        "cp": 45
+      }
+    ],
+    "cp": {
+      "attributes": 90,
+      "advantages": 69,
+      "disadvantages": -25,
+      "skills": 95,
+      "total": 229,
+      "breakdown_visible": true
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 13,
+      "Per": 13,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": null,
+  "territory": null,
+  "wandering_force": null,
   "clan": {
     "id": "bbfc-c5ec-d765-9594",
     "name": "여흥 민씨",

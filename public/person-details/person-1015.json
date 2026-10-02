@@ -12,6 +12,89 @@
   "stateName": "이주민 회랑",
   "sourceRoute": "/world/Diaspora-Corridors#인물-나르기즈-유수포바-nargiz-yusupova-나르기즈",
   "detailRoute": "/people/person-1015",
+  "gurps": {
+    "id": "K1015",
+    "personId": "person-1015",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 10,
+        "cp": 0
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Area Knowledge (근무 구역)",
+        "ko": "지역 지식(전령·전달)",
+        "level": 13,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 0,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 8,
+      "spent": 8,
+      "unspent": 67,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 10,
+      "Per": 10,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "수행원",
+    "size": 2,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 소세력 S00 규모",
+    "faction_scale": {
+      "state": "S00",
+      "tier": "소세력",
+      "factor": 0.7
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 2,
+    "current_location": "외곽 순회 야영지",
+    "camp": {
+      "name": "나르기즈 유수포바 야영지",
+      "type": "야영지",
+      "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+  },
   "clan": {
     "id": "c720-c218-d3ec-bc14-c790-c591",
     "name": "자양 유수포바씨",

@@ -12,6 +12,107 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-동주하",
   "detailRoute": "/people/person-0338",
+  "gurps": {
+    "id": "K337",
+    "personId": "person-0338",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 12,
+        "cp": 40
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Mechanic/TL?",
+        "ko": "기계 정비",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Physician/TL?",
+        "ko": "진료",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Pharmacy/TL? (Herbal)",
+        "ko": "약재",
+        "level": 13,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 40,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 32,
+      "spent": 72,
+      "unspent": 3,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 12,
+      "Per": 12,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+    "faction_scale": {
+      "state": "S13",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 4,
+    "current_location": "고가도로 밑",
+    "camp": {
+      "name": "동주하 고가도로 하부 야영지",
+      "type": "야영지",
+      "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+  },
   "clan": {
     "id": "b3d9-ad11-cc9c",
     "name": "광천 동씨",

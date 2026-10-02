@@ -12,6 +12,119 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Core-Characters#김연규",
   "detailRoute": "/people/person-1007",
+  "gurps": {
+    "id": "K1007",
+    "personId": "person-1007",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 13,
+        "cp": 30
+      },
+      "DX": {
+        "value": 13,
+        "cp": 30
+      },
+      "IQ": {
+        "value": 15,
+        "cp": 60
+      },
+      "HT": {
+        "value": 12,
+        "cp": 20
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "전략",
+        "level": 17,
+        "cp": 16
+      },
+      {
+        "name": "전술",
+        "level": 16,
+        "cp": 32
+      },
+      {
+        "name": "협박",
+        "level": 16,
+        "cp": 8
+      },
+      {
+        "name": "지휘",
+        "level": 16,
+        "cp": 16
+      },
+      {
+        "name": "장검",
+        "level": 15,
+        "cp": 16
+      },
+      {
+        "name": "창술",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "화기",
+        "level": 15,
+        "cp": 16
+      },
+      {
+        "name": "역사",
+        "level": 13,
+        "cp": 3
+      }
+    ],
+    "cp": {
+      "attributes": 140,
+      "advantages": 75,
+      "disadvantages": -30,
+      "skills": 115,
+      "total": 300,
+      "breakdown_visible": true
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 10,
+      "Per": 10,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "온민 친위대",
+    "size": 45,
+    "quality": "정예",
+    "composition": [
+      "친위병",
+      "총검병",
+      "경비병"
+    ],
+    "note": "온민 수장 직속 친위부대",
+    "faction_scale": {
+      "state": "S06",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "서울역",
+    "type": "거점",
+    "station": "서울역",
+    "state": "S06",
+    "settlement": {
+      "name": "서울역 정착지",
+      "type": "정착지",
+      "description": "서울역 일대 고정 거점"
+    },
+    "note": "S06 서울역 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "ae40-acbd-c8fc-91d1",
     "name": "경주 김씨",

@@ -12,6 +12,90 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-흥지완",
   "detailRoute": "/people/person-0321",
+  "gurps": {
+    "id": "K320",
+    "personId": "person-0321",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 12,
+        "cp": 40
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Leadership",
+        "ko": "지휘",
+        "level": 13,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 40,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 12,
+      "spent": 52,
+      "unspent": 23,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 12,
+      "Per": 12,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 신내운수 규모",
+    "faction_scale": {
+      "state": "S12",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "청평",
+    "type": "초소 영지",
+    "station": "청평",
+    "state": "S12",
+    "settlement": {
+      "name": "청평 정착지",
+      "type": "정착지",
+      "description": "청평 일대 고정 거점"
+    },
+    "note": "S12 청평 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "creative-d765-c218-c0c9",
     "name": "수색 흥씨",

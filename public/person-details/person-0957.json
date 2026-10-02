@@ -12,6 +12,84 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-유하훈",
   "detailRoute": "/people/person-0957",
+  "gurps": {
+    "id": "K957",
+    "personId": "person-0957",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 11,
+        "cp": 20
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 13,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 20,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 8,
+      "spent": 28,
+      "unspent": 47,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 11,
+      "Per": 11,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
+    "faction_scale": {
+      "state": "S06",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "서울역",
+    "type": "초소 영지",
+    "station": "서울역",
+    "state": "S06",
+    "settlement": {
+      "name": "서울역 정착지",
+      "type": "정착지",
+      "description": "서울역 일대 고정 거점"
+    },
+    "note": "S06 서울역 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "c720-ac15-b989",
     "name": "강릉 유씨",

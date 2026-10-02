@@ -12,6 +12,69 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-고예진",
   "detailRoute": "/people/person-1018",
+  "gurps": {
+    "id": "K1018",
+    "personId": "person-1018",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 11,
+        "cp": 20
+      },
+      "IQ": {
+        "value": 10,
+        "cp": 0
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Merchant",
+        "ko": "거래·경매",
+        "level": 12,
+        "cp": 8
+      },
+      {
+        "name": "Guns/TL? (Pistol)",
+        "ko": "권총 사격",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 11,
+        "cp": 4
+      }
+    ],
+    "cp": {
+      "attributes": 20,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 20,
+      "spent": 40,
+      "unspent": 35,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 10,
+      "Per": 10,
+      "FP": 10,
+      "BasicSpeed": 5.25,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
   "clan": null,
   "generation": "opening",
   "minors": false,

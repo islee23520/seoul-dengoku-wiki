@@ -12,6 +12,95 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-복모",
   "detailRoute": "/people/person-0257",
+  "gurps": {
+    "id": "K256",
+    "personId": "person-0257",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 11,
+        "cp": 20
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Cartography/TL?",
+        "ko": "실측·지도",
+        "level": 13,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 20,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 16,
+      "spent": 36,
+      "unspent": 39,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 11,
+      "Per": 11,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 안국총림 규모",
+    "faction_scale": {
+      "state": "S10",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": null,
+  "wandering_force": {
+    "type": "무소속 유랑 부대",
+    "size": 4,
+    "current_location": "외곽 산지",
+    "camp": {
+      "name": "복모 산림 야영지",
+      "type": "야영지",
+      "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+      "facilities": [
+        "야전 숙소",
+        "취사 시설",
+        "무기 보관소"
+      ],
+      "pack_up_time": "반나절"
+    },
+    "note": "S10 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+  },
   "clan": {
     "id": "bcf5-ba74-cc9c",
     "name": "면천 복씨",

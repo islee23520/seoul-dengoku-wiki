@@ -12,6 +12,96 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-성은현",
   "detailRoute": "/people/person-0576",
+  "gurps": {
+    "id": "K576",
+    "personId": "person-0576",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 11,
+        "cp": 20
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Merchant",
+        "ko": "거래·경매",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Area Knowledge (근무 구역)",
+        "ko": "지역 지식(전령·전달)",
+        "level": 14,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 20,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 24,
+      "spent": 44,
+      "unspent": 31,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 11,
+      "Per": 11,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+    "faction_scale": {
+      "state": "S09",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "구반포",
+    "type": "초소 영지",
+    "station": "구반포",
+    "state": "S09",
+    "settlement": {
+      "name": "구반포 정착지",
+      "type": "정착지",
+      "description": "구반포 일대 고정 거점"
+    },
+    "note": "S09 구반포 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "cangnyeong-seong-yeolcha",
     "name": "창녕 성씨",

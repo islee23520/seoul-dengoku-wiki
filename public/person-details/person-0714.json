@@ -12,6 +12,84 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-서빛은",
   "detailRoute": "/people/person-0714",
+  "gurps": {
+    "id": "K714",
+    "personId": "person-0714",
+    "band": "일반 인물",
+    "attributes": {
+      "ST": {
+        "value": 10,
+        "cp": 0
+      },
+      "DX": {
+        "value": 10,
+        "cp": 0
+      },
+      "IQ": {
+        "value": 12,
+        "cp": 40
+      },
+      "HT": {
+        "value": 10,
+        "cp": 0
+      }
+    },
+    "traits": [],
+    "skills": [
+      {
+        "name": "Administration",
+        "ko": "행정·기록",
+        "level": 14,
+        "cp": 8
+      }
+    ],
+    "cp": {
+      "attributes": 40,
+      "advantages": 0,
+      "disadvantages": 0,
+      "skills": 8,
+      "spent": 48,
+      "unspent": 27,
+      "total": 75
+    },
+    "secondary": {
+      "HP": 10,
+      "Will": 12,
+      "Per": 12,
+      "FP": 10,
+      "BasicSpeed": 5,
+      "BasicMove": 5,
+      "BasicLift": 20,
+      "Dodge": 8
+    }
+  },
+  "unit": {
+    "type": "수행원",
+    "size": 4,
+    "quality": "일반",
+    "composition": [
+      "수행원"
+    ],
+    "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+    "faction_scale": {
+      "state": "S03",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "공릉",
+    "type": "초소 영지",
+    "station": "공릉",
+    "state": "S03",
+    "settlement": {
+      "name": "공릉 정착지",
+      "type": "정착지",
+      "description": "공릉 일대 고정 거점"
+    },
+    "note": "S03 공릉 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "c11c-b2ec-c131",
     "name": "달성 서씨",

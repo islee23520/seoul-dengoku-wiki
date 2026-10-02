@@ -12,6 +12,140 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Core-Characters#신종목",
   "detailRoute": "/people/person-1009",
+  "gurps": {
+    "id": "K1009",
+    "personId": "person-1009",
+    "band": "주역·강자",
+    "attributes": {
+      "ST": {
+        "value": 11,
+        "cp": 10
+      },
+      "DX": {
+        "value": 13,
+        "cp": 60
+      },
+      "IQ": {
+        "value": 12,
+        "cp": 40
+      },
+      "HT": {
+        "value": 12,
+        "cp": 20
+      }
+    },
+    "traits": [
+      {
+        "name": "Combat Reflexes",
+        "kind": "advantage",
+        "cp": 15,
+        "rule": "combat-reflexes"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Spear (fixed bayonet)",
+        "ko": "총검술",
+        "level": 16,
+        "cp": 12
+      },
+      {
+        "name": "Electronics Operation/TL? (Communications)",
+        "ko": "무전 운용",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Area Knowledge (강남구청 생활권·귀환망 12곳)",
+        "ko": "지역 지식",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "Scrounging",
+        "ko": "현장 회수",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "Diplomacy",
+        "ko": "교섭(주민 동의)",
+        "level": 13,
+        "cp": 8
+      },
+      {
+        "name": "Navigation/TL? (Land)",
+        "ko": "길찾기(지상)",
+        "level": 14,
+        "cp": 8
+      },
+      {
+        "name": "Leadership",
+        "ko": "지휘(피난민 귀환)",
+        "level": 13,
+        "cp": 4
+      },
+      {
+        "name": "Observation",
+        "ko": "관찰(호위)",
+        "level": 13,
+        "cp": 4
+      },
+      {
+        "name": "Hiking",
+        "ko": "장거리 도보",
+        "level": 12,
+        "cp": 2
+      }
+    ],
+    "cp": {
+      "attributes": 130,
+      "advantages": 15,
+      "disadvantages": 0,
+      "skills": 62,
+      "spent": 207,
+      "unspent": 0,
+      "total": 207
+    },
+    "secondary": {
+      "HP": 11,
+      "Will": 12,
+      "Per": 12,
+      "FP": 12,
+      "BasicSpeed": 6.25,
+      "BasicMove": 6,
+      "BasicLift": 24,
+      "Dodge": 10
+    }
+  },
+  "unit": {
+    "type": "신종목 인솔대",
+    "size": 25,
+    "quality": "정예",
+    "composition": [
+      "총검병",
+      "경비병"
+    ],
+    "note": "신종목 인솔 전투부대",
+    "faction_scale": {
+      "state": "S06",
+      "tier": "강세력",
+      "factor": 1.2
+    }
+  },
+  "territory": {
+    "fief_name": "명동",
+    "type": "역 영지",
+    "station": "명동",
+    "state": "S06",
+    "settlement": {
+      "name": "명동 정착지",
+      "type": "정착지",
+      "description": "명동 일대 고정 거점"
+    },
+    "note": "S06 명동 일대 관할 영지"
+  },
+  "wandering_force": null,
   "clan": {
     "id": "c2e0-ac70-cc3d-613c",
     "name": "거창 신씨",
