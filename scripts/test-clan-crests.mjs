@@ -10,11 +10,13 @@ const clans = tables.clans.filter((clan) => !clan.id.includes('-agreed-'))
 const assigned = assignCrests(clans.map((clan) => clan.id))
 const manifest = JSON.parse(await readFile(new URL('assets/clan-crest-motifs.json', root), 'utf8'))
 const researched = new Map(manifest.motifs.map((row) => [row.clan, row]))
-const selectedId = 'c774-c804-c758-674e'
-const selectedHash = '748efdbd7bc111c230ae57d32285630312b35df2258abf6952d8cad36db3b01a'
+const selected = [
+  { id: 'c774-c804-c758-674e', surname: '이', bongwan: '전의', source: 'selected', sha256: '748efdbd7bc111c230ae57d32285630312b35df2258abf6952d8cad36db3b01a' },
+  { id: 'goryeong-shin', surname: '신', bongwan: '고령', source: 'selected', sha256: 'faccdb8a017eef79666f85bf2f4af6232b8d459f4115fe974ac0568c958441e8' },
+]
 
 async function expected(clan) {
-  if (clan.id === selectedId) return readFile(new URL(`assets/clan-crests/${selectedId}.svg`, root), 'utf8')
+  if (selected.some((crest) => crest.id === clan.id)) return readFile(new URL(`assets/clan-crests/${clan.id}.svg`, root), 'utf8')
   const choice = assigned.get(clan.id)
   return renderCrest(choice, researched.get(clan.id))
 }
@@ -25,15 +27,13 @@ test('every clan has exactly one committed crest that matches the generator', as
   for (const clan of clans) assert.equal(await readFile(new URL(`public/clan-crests/${clan.id}.svg`, root), 'utf8'), await expected(clan), clan.id)
 })
 
-test('the selected Jeonui crest survives generation byte-for-byte', async () => {
-  const source = await readFile(new URL(`assets/clan-crests/${selectedId}.svg`, root))
-  const output = await readFile(new URL(`public/clan-crests/${selectedId}.svg`, root))
+for (const crest of selected) test(`the selected ${crest.id} crest survives generation byte-for-byte`, async () => {
+  const source = await readFile(new URL(`assets/clan-crests/${crest.id}.svg`, root))
+  const output = await readFile(new URL(`public/clan-crests/${crest.id}.svg`, root))
   const index = JSON.parse(await readFile(new URL('public/clan-crests/index.json', root), 'utf8'))
-  assert.equal(createHash('sha256').update(source).digest('hex'), selectedHash)
+  assert.equal(createHash('sha256').update(source).digest('hex'), crest.sha256)
   assert.deepEqual(output, source)
-  assert.deepEqual(index.crests.filter((crest) => crest.surname === '이' && crest.bongwan === '전의'), [
-    { id: selectedId, surname: '이', bongwan: '전의', source: 'selected', sha256: selectedHash },
-  ])
+  assert.deepEqual(index.crests.filter((entry) => entry.surname === crest.surname && entry.bongwan === crest.bongwan), [crest])
 })
 
 test('no two clans share a crest and assignment is stable', async () => {

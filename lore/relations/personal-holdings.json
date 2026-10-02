@@ -104,9 +104,11 @@
       "facilityRef": {
         "sourcePath": "lore/regions/station-interiors.json",
         "stationName": "샛강",
+        "stationIdentity": { "district": "영등포구", "lat": 37.51736, "lon": 126.92828 },
         "siteSourcePath": "lore/regions/content/11560.json",
         "siteAnchor": "osm:node:8401534578",
-        "layerId": "concourse"
+        "layerId": "concourse",
+        "layerName": "역사 대합실"
       },
       "adminRefs": [],
       "geometrySource": null,

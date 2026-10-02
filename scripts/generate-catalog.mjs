@@ -19,6 +19,7 @@ import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
+import { validateHoldingFacility } from './holding-facility.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -832,18 +833,7 @@ const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/st
 for (const holding of personalHoldings.holdings) {
   if (!issuedById.has(holding.holderPersonId) || !issuedById.has(holding.directLiegePersonId) || (!holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
   if (holding.facilityRef) {
-    const ref = holding.facilityRef
-    const stations = stationInteriors.stations.filter(station => station.name === ref.stationName)
-    const station = stations.length === 1 ? stations[0] : undefined
-    if (ref.siteSourcePath !== 'lore/regions/content/11560.json') throw new Error('E_HOLDING_SITE_REF:' + holding.id)
-    const siteSource = JSON.parse(await readFile(resolve(repoRoot, ref.siteSourcePath), 'utf8'))
-    const sites = siteSource.regions.flatMap(region => region.content.buildings).filter(site => site.anchor_ref === ref.siteAnchor)
-    if (sites.length !== 1 || sites[0].name !== ref.stationName || sites[0].observed_use !== '역') throw new Error('E_HOLDING_SITE_REF:' + holding.id)
-    const layer = station?.layers.find(layer => layer.id === ref.layerId)
-    if (ref.sourcePath !== 'lore/regions/station-interiors.json' || !layer ||
-        holding.name.ko !== `${station.name} 대합실` || ref.layerId !== 'concourse' ||
-        holding.adminRefs.length || holding.geometrySource !== null ||
-        holding.territorialScale !== null || holding.formalTitleRank !== null) throw new Error('E_HOLDING_FACILITY_REF:' + holding.id)
+    await validateHoldingFacility(holding, stationInteriors, repoRoot)
   }
   for (const ref of holding.adminRefs) {
     const region = openingTerritories.regions.find(region => region.id === ref.id)
@@ -1005,6 +995,21 @@ for (const person of peopleCatalog) {
 await mkdir(privateGeneratedRoot, { recursive: true })
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.ko.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'ko')))}\n`)
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.en.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'en')))}\n`)
+const portraitRegistry = JSON.parse(await readFile(resolve(repoRoot, 'portrait-catalog.json'), 'utf8'))
+const portraitIdentities = portraitRegistry.entries.map((entry) => {
+  const person = peopleCatalog.find((person) => person.id === entry.personId)
+  if (!person || person.name !== entry.name || issuedIdByName.get(person.name) !== entry.characterId) throw new Error(`E_PORTRAIT_IDENTITY:${entry.personId}`)
+  const lineage = lineageByName.get(person.name)
+  const clanId = lineage?.base_clan ?? lineage?.clan ?? null
+  return { personId: person.id, characterId: entry.characterId, imageSha256: entry.imageSha256,
+    stateFlag: /^S(?:0[1-9]|1[0-6])$/.test(person.state) ? `state-flags/${person.state}.webp` : null,
+    stateName: person.stateName || '무소속', clanId,
+    clanCrest: clanId ? `clan-crests/${clanId}.svg` : null,
+    bongwan: clanId && lineage?.bongwan ? lineage.bongwan : null,
+    nobleTitle: null }
+})
+await writeFile(resolve(generatedRoot, 'portraitIdentities.ts'), `export const portraitIdentities = ${JSON.stringify(portraitIdentities, null, 2)} as const\n`)
+
 await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const peopleCatalog = ${JSON.stringify(peopleCatalog, null, 2)} as const\nexport const peopleCount = ${peopleCatalog.length}\n`)
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
