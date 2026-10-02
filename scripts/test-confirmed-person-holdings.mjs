@@ -12,7 +12,8 @@ test('Saetgang concourse holding preserves the exact facility and direct liege w
     id: 'holding:saetgang-concourse', name: { ko: '샛강 대합실' },
     holderPersonId: 'K233', directLiegePersonId: 'K222', stateId: 'S09',
     facilityRef: { sourcePath: 'lore/regions/station-interiors.json', stationName: '샛강',
-      siteSourcePath: 'lore/regions/content/11560.json', siteAnchor: 'osm:node:8401534578', layerId: 'concourse' },
+      stationIdentity: { district: '영등포구', lat: 37.51736, lon: 126.92828 },
+      siteSourcePath: 'lore/regions/content/11560.json', siteAnchor: 'osm:node:8401534578', layerId: 'concourse', layerName: '역사 대합실' },
     adminRefs: [], geometrySource: null, territorialScale: null, formalTitleRank: null,
   })
   const stations = read('../lore/regions/station-interiors.json').stations.filter(row => row.name === holding.facilityRef.stationName)

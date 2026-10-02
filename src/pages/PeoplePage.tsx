@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
+import { portraitIdentities } from '../generated/portraitIdentities'
 
 const koreanNameOrder = new Intl.Collator('ko-KR', { usage: 'sort', sensitivity: 'variant' })
 const peopleByName = [...peopleCatalog].sort((left, right) => koreanNameOrder.compare(left.name, right.name) || left.id.localeCompare(right.id))
@@ -98,8 +99,17 @@ export default function PeoplePage() {
           </colgroup>
           <thead><tr><th scope="col">이름</th><th scope="col">국가</th><th scope="col">직위</th><th scope="col">공통 티어</th><th scope="col">국가별 직급</th><th scope="col">직업</th><th scope="col">성별</th></tr></thead>
           <tbody>{filtered.map((person) => (
-            <tr key={person.id}>
-              <td data-label="이름"><Link to={person.detailRoute}>{person.name}</Link></td><td data-label="국가">{person.stateName || '무소속'}</td><td data-label="직위">{person.position}</td><td data-label="공통 티어">{person.commonTier}</td><td data-label="국가별 직급">{person.rank === '미등록' ? '—' : person.rank}</td><td data-label="직업">{person.occupation}</td><td data-label="성별">{person.gender}</td>
+            <tr key={person.id} data-person-id={person.id}>
+              <td data-label="이름"><Link to={person.detailRoute}>{person.name}</Link>{portraitIdentities.filter((portrait) => portrait.personId === person.id).map((portrait) => <figure key={portrait.personId} className="people-row-portrait">
+                <Link to={person.detailRoute}><img src={`${import.meta.env.BASE_URL}portraits/${person.id}.png?v=${portrait.imageSha256}`} alt={`${person.name} 초상 아트 제안`} loading="lazy" /></Link>
+                <figcaption className="people-portrait-identity">
+                  {portrait.stateFlag && <img data-identity-field="stateFlag" src={`${import.meta.env.BASE_URL}${portrait.stateFlag}`} alt="" />}
+                  <span data-identity-field="stateName">{portrait.stateName}</span>
+                  {portrait.clanCrest && <Link data-identity-field="clanCrest" to={`/families/${portrait.clanId}`}><img src={`${import.meta.env.BASE_URL}${portrait.clanCrest}`} alt="가문 문장" /></Link>}
+                  {portrait.bongwan && <span data-identity-field="bongwan">{portrait.bongwan}</span>}
+                  {portrait.nobleTitle && <span data-identity-field="nobleTitle">{portrait.nobleTitle}</span>}
+                </figcaption>
+              </figure>)}</td><td data-label="국가">{person.stateName || '무소속'}</td><td data-label="직위">{person.position}</td><td data-label="공통 티어">{person.commonTier}</td><td data-label="국가별 직급">{person.rank === '미등록' ? '—' : person.rank}</td><td data-label="직업">{person.occupation}</td><td data-label="성별">{person.gender}</td>
             </tr>
           ))}</tbody>
         </table>
