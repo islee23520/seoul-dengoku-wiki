@@ -833,7 +833,12 @@ for (const holding of personalHoldings.holdings) {
   if (!issuedById.has(holding.holderPersonId) || !issuedById.has(holding.directLiegePersonId) || (!holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
   if (holding.facilityRef) {
     const ref = holding.facilityRef
-    const station = stationInteriors.stations.find(station => station.name === ref.stationName)
+    const stations = stationInteriors.stations.filter(station => station.name === ref.stationName)
+    const station = stations.length === 1 ? stations[0] : undefined
+    if (ref.siteSourcePath !== 'lore/regions/content/11560.json') throw new Error('E_HOLDING_SITE_REF:' + holding.id)
+    const siteSource = JSON.parse(await readFile(resolve(repoRoot, ref.siteSourcePath), 'utf8'))
+    const sites = siteSource.regions.flatMap(region => region.content.buildings).filter(site => site.anchor_ref === ref.siteAnchor)
+    if (sites.length !== 1 || sites[0].name !== ref.stationName || sites[0].observed_use !== '역') throw new Error('E_HOLDING_SITE_REF:' + holding.id)
     const layer = station?.layers.find(layer => layer.id === ref.layerId)
     if (ref.sourcePath !== 'lore/regions/station-interiors.json' || !layer ||
         holding.name.ko !== `${station.name} 대합실` || ref.layerId !== 'concourse' ||

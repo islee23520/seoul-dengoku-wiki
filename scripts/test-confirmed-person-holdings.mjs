@@ -11,10 +11,16 @@ test('Saetgang concourse holding preserves the exact facility and direct liege w
   assert.deepEqual(holding, {
     id: 'holding:saetgang-concourse', name: { ko: '샛강 대합실' },
     holderPersonId: 'K233', directLiegePersonId: 'K222', stateId: 'S09',
-    facilityRef: { sourcePath: 'lore/regions/station-interiors.json', stationName: '샛강', layerId: 'concourse' },
+    facilityRef: { sourcePath: 'lore/regions/station-interiors.json', stationName: '샛강',
+      siteSourcePath: 'lore/regions/content/11560.json', siteAnchor: 'osm:node:8401534578', layerId: 'concourse' },
     adminRefs: [], geometrySource: null, territorialScale: null, formalTitleRank: null,
   })
-  const station = read('../lore/regions/station-interiors.json').stations.find(row => row.name === holding.facilityRef.stationName)
+  const stations = read('../lore/regions/station-interiors.json').stations.filter(row => row.name === holding.facilityRef.stationName)
+  assert.equal(stations.length, 1)
+  const station = stations[0]
+  const sites = read('../lore/regions/content/11560.json').regions.flatMap(row => row.content.buildings).filter(row => row.anchor_ref === holding.facilityRef.siteAnchor)
+  assert.equal(sites.length, 1)
+  assert.equal(sites[0].name, holding.facilityRef.stationName)
   assert.equal(station.observed_levels, null)
   assert.equal(station.layers.find(row => row.id === holding.facilityRef.layerId).wiki_layer, '역사 대합실')
   const detail = read('../public/person-details/person-0234.json')
