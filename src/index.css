@@ -284,18 +284,23 @@ summary:focus-visible {
 .people-table { min-inline-size: 0; width: 100%; table-layout: fixed; border-collapse: collapse; }
 .people-table th, .people-table td { border: 1px solid var(--wiki-line); padding: 0.55rem 0.7rem; text-align: start; overflow-wrap: anywhere; }
 .people-table th { background: var(--wiki-nav); color: white; }
-.people-col-name { inline-size: 8%; }
+.people-col-name { inline-size: 18%; }
 .people-col-state { inline-size: 14%; }
-.people-col-position { inline-size: 27%; }
+.people-col-position { inline-size: 23%; }
 .people-col-tier { inline-size: 7%; }
 .people-col-rank { inline-size: 10%; }
-.people-col-occupation { inline-size: 26%; }
+.people-col-occupation { inline-size: 20%; }
 .people-col-gender { inline-size: 8%; }
 .people-table th:nth-child(1), .people-table td:nth-child(1),
 .people-table th:nth-child(2), .people-table td:nth-child(2),
 .people-table th:nth-child(4), .people-table td:nth-child(4),
 .people-table th:nth-child(5), .people-table td:nth-child(5),
 .people-table th:nth-child(7), .people-table td:nth-child(7) { white-space: nowrap; }
+.people-row-portrait { margin: 0.5rem 0 0; max-inline-size: 9rem; white-space: normal; }
+.people-row-portrait > a > img { display: block; inline-size: 100%; block-size: auto; }
+.people-portrait-identity { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; margin-block-start: 0.35rem; font-size: 0.8rem; }
+.people-portrait-identity img { inline-size: 1.7rem; block-size: 1.7rem; object-fit: contain; }
+.people-portrait-identity [data-identity-field="stateFlag"] { inline-size: 2rem; }
 .person-detail-layout { display: grid; grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 .person-data-panel { display: grid; gap: 1rem; position: sticky; inset-block-start: 1rem; }
 .person-data-section h2 { margin-block: 0 0.35rem; font-size: 1rem; }
