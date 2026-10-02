@@ -19,6 +19,8 @@ import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
+import { regularLineGraph } from './regular-line-graph.mjs'
+import { regionalLineGraph } from './regional-line-graph.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -355,6 +357,7 @@ const populationSource = JSON.parse(await readFile(resolve(loreRoot, 'regions/so
 const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
 const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
+const regularLineSource = JSON.parse(await readFile(resolve(loreRoot, 'places/regular-line-adjacency.json'), 'utf8'))
 const sixteenStatesLore = JSON.parse(await readFile(resolve(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
 const stateTable = sixteenStatesLore.content.find((block) => block.anchor === 'table')
 if (!stateTable || stateTable.kind !== 'table' || stateTable.rows.length !== 16) throw new Error('E_STATE_DETAIL_TABLE')
@@ -436,14 +439,27 @@ const stationById = new Map(seoulGraph.stations.map((station) => [station.id, st
 const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
 const approvedStationAliases = stationCatalog.data.station_aliases
 const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
-if (approvedStationAliases.length !== 18 || canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
+if (canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
 const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
+const regularGraph = regularLineGraph(regularLineSource, seoulGraph.stations.map((station) => canonicalStationId(station.id)))
+await mkdir(resolve(projectRoot, '.omo/evidence/station-line-facts'), { recursive: true })
+await writeFile(resolve(projectRoot, '.omo/evidence/station-line-facts/adjacency-coverage.json'), JSON.stringify({
+  sourceUrl: regularLineSource.source.url,
+  sourceSha256: regularLineSource.source.sha256,
+  generatedEdges: regularGraph.edges.length,
+  omittedAdjacentPairs: regularGraph.omitted,
+  scope: '서울 graph의 명시적 공식 역 코드 대응만 포함한다. 제외된 외부 인접 구간을 건너뛰어 서울 역끼리 연결하지 않는다.',
+}, null, 2))
+const regularNeighbors = new Map()
+for (const edge of regularGraph.edges) {
+  for (const [id, neighbor] of [[edge.a, edge.b], [edge.b, edge.a]]) {
+    if (!regularNeighbors.has(id)) regularNeighbors.set(id, new Set())
+    regularNeighbors.get(id).add(neighbor)
+  }
+}
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
-const stationDegree = new Map(seoulGraph.stations.map((station) => [station.id, 0]))
 for (const edge of seoulGraph.edges) {
   if (!stationById.has(edge.a) || !stationById.has(edge.b)) throw new Error(`E_SUBWAY_EDGE_STATION:${edge.a}:${edge.b}`)
-  stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
-  stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
 }
 for (const entry of approvedStationAliases) for (const alias of entry.aliases) stationIdByName.set(alias, entry.id)
 const capitalStateByStationId = new Map([...capitalNameByState.entries()].map(([stateId, name]) => {
@@ -457,7 +473,7 @@ const sourceMapStations = seoulGraph.stations.map((station) => {
   const [x, y] = mapPoint([east, north])
   if (x < 0 || x > mapWidth || y < 0 || y > mapHeight) throw new Error(`E_STATION_MAP_BOUNDS:${station.id}:${x}:${y}`)
   const region = regionAtlas.regions.find((candidate) => pointInPolygon([x, y], simplifyRing(geometryRings(candidate.map_geometry)[0]).map(mapPoint)))
-  const lineIds = officialLineData.stations[station.id] ?? []
+  const lineIds = [...(regularGraph.linesByStation.get(canonicalStationId(station.id)) ?? [])]
   const content = region ? regionContentById.get(region.id) : null
   const baselinePolityIds = surfaceHolders(content)
   const delta = stationControlOverrides.get(station.id) ?? null
@@ -469,8 +485,9 @@ const sourceMapStations = seoulGraph.stations.map((station) => {
     district: station.district,
     x,
     y,
-    degree: stationDegree.get(station.id) ?? 0,
+    degree: regularNeighbors.get(canonicalStationId(station.id))?.size ?? 0,
     lineIds,
+    surfacePolityIds: baselinePolityIds,
     control: {
       source: delta ? 'control-delta' : region ? 'derived-from-surface' : 'outside-surface-atlas',
       deltaId: delta?.id ?? null,
@@ -495,7 +512,7 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
   const memberSurfaces = memberIds.map((id) => {
     const source = sourceMapStations.find((entry) => entry.id === id)
     const { source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds } = source.control
-    return { id, source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds }
+    return { id, source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds, surfacePolityIds: source.surfacePolityIds }
   })
   const holders = new Set(memberSurfaces.map((entry) => `${entry.status}:${entry.primary}:${[...entry.polityIds].sort().join(',')}`))
   const regions = new Set(memberSurfaces.map((entry) => entry.surfaceRegionId))
@@ -503,7 +520,7 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
     ...station,
     memberIds,
     lineIds: [...new Set(sourceMapStations.filter((member) => memberIds.includes(member.id)).flatMap((member) => member.lineIds))],
-    degree: new Set(seoulGraph.edges.filter((edge) => memberIds.includes(edge.a) || memberIds.includes(edge.b)).map((edge) => canonicalStationId(memberIds.includes(edge.a) ? edge.b : edge.a))).size,
+    degree: regularNeighbors.get(station.id)?.size ?? 0,
     control: {
       ...station.control,
       memberSurfaces,
@@ -513,8 +530,14 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
     },
   }
 })
+const regionalBindings = JSON.parse(await readFile(resolve(loreRoot, 'places/regional-station-bindings.json'), 'utf8'))
+const officialRegionalGraph = regionalLineGraph(regularLineSource, regionalBindings, mapStations)
+await writeFile(resolve(publicRoot, 'regular-regional-connections.json'), JSON.stringify({
+  schema: 'regular-regional-connections.v1',
+  source: regularLineSource.source,
+  ...officialRegionalGraph,
+}, null, 2))
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
-const stationLines = new Map(sourceMapStations.map((station) => [station.id, station.lineIds]))
 const stationControlById = new Map(mapStations.map((station) => [station.id, station.control]))
 const segmentControlOverrides = new Map((stationControlLedger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
 if (segmentControlOverrides.size !== (stationControlLedger.segmentOverrides ?? []).length) throw new Error('E_SEGMENT_CONTROL_DUPLICATE')
@@ -545,7 +568,7 @@ const passage2126 = (edge, control) => {
   if (crossesHan(edge.a, edge.b)) return passageDecisions.get(id) ?? 'unknown'
   return control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
 }
-const projectedEdges = seoulGraph.edges.map((edge) => ({ a: canonicalStationId(edge.a), b: canonicalStationId(edge.b), lineIds: stationLines.get(edge.a).filter((id) => stationLines.get(edge.b).includes(id)) }))
+const projectedEdges = regularGraph.edges.map((edge) => ({ a: edge.a, b: edge.b, lineIds: edge.lineIds, sourceCodes: edge.sourceCodes }))
 const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
   const id = `segment:${edge.a}~${edge.b}`
   const control = segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b))

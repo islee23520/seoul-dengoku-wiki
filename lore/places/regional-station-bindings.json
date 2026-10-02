@@ -1,0 +1,3519 @@
+{
+  "schema": "official-regional-station-bindings.v1",
+  "sourceUrl": "https://www.seoulmetro.co.kr/kr/getLineData.do",
+  "sourceSha256": "66bec173e923789789c32646b993e3d12c85fd1d0090b69763e3e69543f086f2",
+  "bindings": [
+    {
+      "stationCode": "1812",
+      "interchangeUid": "1812",
+      "officialName": "인천",
+      "lineId": "2-1",
+      "observedName": "인천",
+      "east": 921926,
+      "north": 1942276
+    },
+    {
+      "stationCode": "1708",
+      "interchangeUid": "1708",
+      "officialName": "금정",
+      "lineId": "2-1",
+      "observedName": "금정",
+      "east": 950766,
+      "north": 1930425
+    },
+    {
+      "stationCode": "1713",
+      "interchangeUid": "1713",
+      "officialName": "수원",
+      "lineId": "2-1",
+      "observedName": "수원",
+      "east": 955787,
+      "north": 1918756
+    },
+    {
+      "stationCode": "0300",
+      "interchangeUid": "1953",
+      "officialName": "대곡",
+      "lineId": "K",
+      "observedName": "대곡",
+      "east": 939089,
+      "north": 1959377
+    },
+    {
+      "stationCode": "1252",
+      "interchangeUid": "1252",
+      "officialName": "신촌",
+      "lineId": "K",
+      "observedName": "신촌",
+      "east": 950746,
+      "north": 1951305
+    },
+    {
+      "stationCode": "1205",
+      "interchangeUid": "1205",
+      "officialName": "구리",
+      "lineId": "K",
+      "observedName": "구리",
+      "east": 968313,
+      "north": 1955863
+    },
+    {
+      "stationCode": "1217",
+      "interchangeUid": "1217",
+      "officialName": "양평",
+      "lineId": "K",
+      "observedName": "양평",
+      "east": 999276,
+      "north": 1943731
+    },
+    {
+      "stationCode": "1891",
+      "interchangeUid": "1812",
+      "officialName": "인천",
+      "lineId": "B",
+      "observedName": "인천",
+      "east": 921926,
+      "north": 1942276
+    },
+    {
+      "stationCode": "1800",
+      "interchangeUid": "1762",
+      "officialName": "오이도",
+      "lineId": "B",
+      "observedName": "오이도",
+      "east": 932587,
+      "north": 1929577
+    },
+    {
+      "stationCode": "4312",
+      "interchangeUid": "1857",
+      "officialName": "정자",
+      "lineId": "S",
+      "observedName": "정자",
+      "east": 965297,
+      "north": 1929664
+    },
+    {
+      "stationCode": "0010",
+      "interchangeUid": "1863",
+      "officialName": "구성",
+      "lineId": "1-GA",
+      "observedName": "구성",
+      "east": 964921,
+      "north": 1922243
+    },
+    {
+      "stationCode": "0011",
+      "interchangeUid": "0011",
+      "officialName": "동탄",
+      "lineId": "1-GA",
+      "observedName": "동탄",
+      "east": 964145,
+      "north": 1911152
+    },
+    {
+      "stationCode": "9001",
+      "interchangeUid": "9001",
+      "officialName": "킨텍스",
+      "lineId": "1-GA",
+      "observedName": "킨텍스",
+      "east": 933700,
+      "north": 1963115
+    },
+    {
+      "stationCode": "9002",
+      "interchangeUid": "1953",
+      "officialName": "대곡",
+      "lineId": "1-GA",
+      "observedName": "대곡",
+      "east": 939183,
+      "north": 1959437
+    },
+    {
+      "stationCode": "1919",
+      "interchangeUid": "1919",
+      "officialName": "연천",
+      "lineId": "2-1",
+      "observedName": "연천",
+      "east": 962637,
+      "north": 2011232
+    },
+    {
+      "stationCode": "1918",
+      "interchangeUid": "1918",
+      "officialName": "전곡",
+      "lineId": "2-1",
+      "observedName": "전곡",
+      "east": 962471,
+      "north": 2002725
+    },
+    {
+      "stationCode": "1917",
+      "interchangeUid": "1917",
+      "officialName": "청산",
+      "lineId": "2-1",
+      "observedName": "청산",
+      "east": 962567,
+      "north": 1999457
+    },
+    {
+      "stationCode": "1916",
+      "interchangeUid": "1916",
+      "officialName": "소요산",
+      "lineId": "2-1",
+      "observedName": "소요산",
+      "east": 961405,
+      "north": 1994228
+    },
+    {
+      "stationCode": "1915",
+      "interchangeUid": "1915",
+      "officialName": "동두천",
+      "lineId": "2-1",
+      "observedName": "동두천",
+      "east": 960893,
+      "north": 1991960
+    },
+    {
+      "stationCode": "1914",
+      "interchangeUid": "1914",
+      "officialName": "보산",
+      "lineId": "2-1",
+      "observedName": "보산",
+      "east": 961089,
+      "north": 1990473
+    },
+    {
+      "stationCode": "1913",
+      "interchangeUid": "1913",
+      "officialName": "동두천중앙",
+      "lineId": "2-1",
+      "observedName": "동두천중앙",
+      "east": 961009,
+      "north": 1989093
+    },
+    {
+      "stationCode": "1912",
+      "interchangeUid": "1912",
+      "officialName": "지행",
+      "lineId": "2-1",
+      "observedName": "지행",
+      "east": 960941,
+      "north": 1988058
+    },
+    {
+      "stationCode": "1911",
+      "interchangeUid": "1911",
+      "officialName": "덕정",
+      "lineId": "2-1",
+      "observedName": "덕정",
+      "east": 961434,
+      "north": 1982607
+    },
+    {
+      "stationCode": "1910",
+      "interchangeUid": "1910",
+      "officialName": "덕계",
+      "lineId": "2-1",
+      "observedName": "덕계",
+      "east": 960957,
+      "north": 1979896
+    },
+    {
+      "stationCode": "1909",
+      "interchangeUid": "1909",
+      "officialName": "양주",
+      "lineId": "2-1",
+      "observedName": "양주",
+      "east": 959903,
+      "north": 1974947
+    },
+    {
+      "stationCode": "1908",
+      "interchangeUid": "1908",
+      "officialName": "녹양",
+      "lineId": "2-1",
+      "observedName": "녹양",
+      "east": 959686,
+      "north": 1973304
+    },
+    {
+      "stationCode": "1907",
+      "interchangeUid": "1907",
+      "officialName": "가능",
+      "lineId": "2-1",
+      "observedName": "가능",
+      "east": 959890,
+      "north": 1972100
+    },
+    {
+      "stationCode": "1906",
+      "interchangeUid": "1906",
+      "officialName": "의정부",
+      "lineId": "2-1",
+      "observedName": "의정부",
+      "east": 960035,
+      "north": 1970877
+    },
+    {
+      "stationCode": "1905",
+      "interchangeUid": "1905",
+      "officialName": "회룡",
+      "lineId": "2-1",
+      "observedName": "회룡",
+      "east": 960100,
+      "north": 1969372
+    },
+    {
+      "stationCode": "1904",
+      "interchangeUid": "1904",
+      "officialName": "망월사",
+      "lineId": "2-1",
+      "observedName": "망월사",
+      "east": 960124,
+      "north": 1967855
+    },
+    {
+      "stationCode": "1803",
+      "interchangeUid": "1803",
+      "officialName": "역곡",
+      "lineId": "2-1",
+      "observedName": "역곡",
+      "east": 939096,
+      "north": 1943069
+    },
+    {
+      "stationCode": "1814",
+      "interchangeUid": "1814",
+      "officialName": "소사",
+      "lineId": "2-1",
+      "observedName": "소사",
+      "east": 937638,
+      "north": 1942832
+    },
+    {
+      "stationCode": "1804",
+      "interchangeUid": "1804",
+      "officialName": "부천",
+      "lineId": "2-1",
+      "observedName": "부천",
+      "east": 936462,
+      "north": 1943015
+    },
+    {
+      "stationCode": "1822",
+      "interchangeUid": "1822",
+      "officialName": "중동",
+      "lineId": "2-1",
+      "observedName": "중동",
+      "east": 934851,
+      "north": 1943310
+    },
+    {
+      "stationCode": "1805",
+      "interchangeUid": "1805",
+      "officialName": "송내",
+      "lineId": "2-1",
+      "observedName": "송내",
+      "east": 933840,
+      "north": 1943414
+    },
+    {
+      "stationCode": "1815",
+      "interchangeUid": "1815",
+      "officialName": "부개",
+      "lineId": "2-1",
+      "observedName": "부개",
+      "east": 932798,
+      "north": 1943513
+    },
+    {
+      "stationCode": "1806",
+      "interchangeUid": "1806",
+      "officialName": "부평",
+      "lineId": "2-1",
+      "observedName": "부평",
+      "east": 931444,
+      "north": 1943625
+    },
+    {
+      "stationCode": "1807",
+      "interchangeUid": "1807",
+      "officialName": "백운",
+      "lineId": "2-1",
+      "observedName": "백운",
+      "east": 929835,
+      "north": 1942870
+    },
+    {
+      "stationCode": "1808",
+      "interchangeUid": "1808",
+      "officialName": "동암",
+      "lineId": "2-1",
+      "observedName": "동암",
+      "east": 929522,
+      "north": 1941486
+    },
+    {
+      "stationCode": "1816",
+      "interchangeUid": "1816",
+      "officialName": "간석",
+      "lineId": "2-1",
+      "observedName": "간석",
+      "east": 928589,
+      "north": 1940902
+    },
+    {
+      "stationCode": "1809",
+      "interchangeUid": "1809",
+      "officialName": "주안",
+      "lineId": "2-1",
+      "observedName": "주안",
+      "east": 927347,
+      "north": 1940969
+    },
+    {
+      "stationCode": "1823",
+      "interchangeUid": "1823",
+      "officialName": "도화",
+      "lineId": "2-1",
+      "observedName": "도화",
+      "east": 926373,
+      "north": 1941091
+    },
+    {
+      "stationCode": "1810",
+      "interchangeUid": "1810",
+      "officialName": "제물포",
+      "lineId": "2-1",
+      "observedName": "제물포",
+      "east": 925417,
+      "north": 1941165
+    },
+    {
+      "stationCode": "1817",
+      "interchangeUid": "1817",
+      "officialName": "도원",
+      "lineId": "2-1",
+      "observedName": "도원",
+      "east": 924094,
+      "north": 1941440
+    },
+    {
+      "stationCode": "1811",
+      "interchangeUid": "1811",
+      "officialName": "동인천",
+      "lineId": "2-1",
+      "observedName": "동인천",
+      "east": 923279,
+      "north": 1942175
+    },
+    {
+      "stationCode": "1750",
+      "interchangeUid": "1750",
+      "officialName": "광명",
+      "lineId": "2-1",
+      "observedName": "광명",
+      "east": 945553,
+      "north": 1935494
+    },
+    {
+      "stationCode": "1705",
+      "interchangeUid": "1705",
+      "officialName": "관악",
+      "lineId": "2-1",
+      "observedName": "관악",
+      "east": 947705,
+      "north": 1935717
+    },
+    {
+      "stationCode": "1706",
+      "interchangeUid": "1706",
+      "officialName": "안양",
+      "lineId": "2-1",
+      "observedName": "안양",
+      "east": 949005,
+      "north": 1933663
+    },
+    {
+      "stationCode": "1707",
+      "interchangeUid": "1707",
+      "officialName": "명학",
+      "lineId": "2-1",
+      "observedName": "명학",
+      "east": 950071,
+      "north": 1931779
+    },
+    {
+      "stationCode": "1709",
+      "interchangeUid": "1709",
+      "officialName": "군포",
+      "lineId": "2-1",
+      "observedName": "군포",
+      "east": 951166,
+      "north": 1928408
+    },
+    {
+      "stationCode": "1729",
+      "interchangeUid": "1729",
+      "officialName": "당정",
+      "lineId": "2-1",
+      "observedName": "당정",
+      "east": 951145,
+      "north": 1927190
+    },
+    {
+      "stationCode": "1710",
+      "interchangeUid": "1710",
+      "officialName": "의왕",
+      "lineId": "2-1",
+      "observedName": "의왕",
+      "east": 951116,
+      "north": 1924633
+    },
+    {
+      "stationCode": "1711",
+      "interchangeUid": "1711",
+      "officialName": "성균관대",
+      "lineId": "2-1",
+      "observedName": "성균관대",
+      "east": 953217,
+      "north": 1922503
+    },
+    {
+      "stationCode": "1712",
+      "interchangeUid": "1712",
+      "officialName": "화서",
+      "lineId": "2-1",
+      "observedName": "화서",
+      "east": 954800,
+      "north": 1920612
+    },
+    {
+      "stationCode": "1715",
+      "interchangeUid": "1715",
+      "officialName": "세류",
+      "lineId": "2-1",
+      "observedName": "세류",
+      "east": 956917,
+      "north": 1916160
+    },
+    {
+      "stationCode": "1716",
+      "interchangeUid": "1716",
+      "officialName": "병점",
+      "lineId": "2-1",
+      "observedName": "병점",
+      "east": 958606,
+      "north": 1912069
+    },
+    {
+      "stationCode": "1717",
+      "interchangeUid": "1717",
+      "officialName": "세마",
+      "lineId": "2-1",
+      "observedName": "세마",
+      "east": 959523,
+      "north": 1909841
+    },
+    {
+      "stationCode": "1718",
+      "interchangeUid": "1718",
+      "officialName": "오산대",
+      "lineId": "2-1",
+      "observedName": "오산대",
+      "east": 961233,
+      "north": 1907864
+    },
+    {
+      "stationCode": "1719",
+      "interchangeUid": "1719",
+      "officialName": "오산",
+      "lineId": "2-1",
+      "observedName": "오산",
+      "east": 961516,
+      "north": 1905106
+    },
+    {
+      "stationCode": "1720",
+      "interchangeUid": "1720",
+      "officialName": "진위",
+      "lineId": "2-1",
+      "observedName": "진위",
+      "east": 961119,
+      "north": 1901273
+    },
+    {
+      "stationCode": "1721",
+      "interchangeUid": "1721",
+      "officialName": "송탄",
+      "lineId": "2-1",
+      "observedName": "송탄",
+      "east": 960393,
+      "north": 1897537
+    },
+    {
+      "stationCode": "1722",
+      "interchangeUid": "1722",
+      "officialName": "서정리",
+      "lineId": "2-1",
+      "observedName": "서정리",
+      "east": 960247,
+      "north": 1895327
+    },
+    {
+      "stationCode": "1723",
+      "interchangeUid": "1723",
+      "officialName": "평택지제",
+      "lineId": "2-1",
+      "observedName": "평택지제",
+      "east": 961801,
+      "north": 1891163
+    },
+    {
+      "stationCode": "1724",
+      "interchangeUid": "1724",
+      "officialName": "평택",
+      "lineId": "2-1",
+      "observedName": "평택",
+      "east": 963192,
+      "north": 1888019
+    },
+    {
+      "stationCode": "1725",
+      "interchangeUid": "1725",
+      "officialName": "성환",
+      "lineId": "2-1",
+      "observedName": "성환",
+      "east": 966780,
+      "north": 1879735
+    },
+    {
+      "stationCode": "1726",
+      "interchangeUid": "1726",
+      "officialName": "직산",
+      "lineId": "2-1",
+      "observedName": "직산",
+      "east": 968300,
+      "north": 1874716
+    },
+    {
+      "stationCode": "1727",
+      "interchangeUid": "1727",
+      "officialName": "두정",
+      "lineId": "2-1",
+      "observedName": "두정",
+      "east": 968720,
+      "north": 1870620
+    },
+    {
+      "stationCode": "1728",
+      "interchangeUid": "1728",
+      "officialName": "천안",
+      "lineId": "2-1",
+      "observedName": "천안",
+      "east": 968487,
+      "north": 1868112
+    },
+    {
+      "stationCode": "1401",
+      "interchangeUid": "1401",
+      "officialName": "봉명",
+      "lineId": "2-1",
+      "observedName": "봉명",
+      "east": 967463,
+      "north": 1867038
+    },
+    {
+      "stationCode": "1403",
+      "interchangeUid": "1403",
+      "officialName": "아산",
+      "lineId": "2-1",
+      "observedName": "아산",
+      "east": 964629,
+      "north": 1866033
+    },
+    {
+      "stationCode": "1404",
+      "interchangeUid": "1404",
+      "officialName": "탕정",
+      "lineId": "2-1",
+      "observedName": "탕정",
+      "east": 962842,
+      "north": 1865608
+    },
+    {
+      "stationCode": "1405",
+      "interchangeUid": "1405",
+      "officialName": "배방",
+      "lineId": "2-1",
+      "observedName": "배방",
+      "east": 960015,
+      "north": 1864429
+    },
+    {
+      "stationCode": "1407",
+      "interchangeUid": "1407",
+      "officialName": "온양온천",
+      "lineId": "2-1",
+      "observedName": "온양온천",
+      "east": 955579,
+      "north": 1864844
+    },
+    {
+      "stationCode": "1408",
+      "interchangeUid": "1408",
+      "officialName": "신창",
+      "lineId": "2-1",
+      "observedName": "신창",
+      "east": 950986,
+      "north": 1863620
+    },
+    {
+      "stationCode": "1749",
+      "interchangeUid": "1749",
+      "officialName": "서동탄",
+      "lineId": "2-1",
+      "observedName": "서동탄",
+      "east": 960225,
+      "north": 1910858
+    },
+    {
+      "stationCode": "1958",
+      "interchangeUid": "1958",
+      "officialName": "대화",
+      "lineId": "4-3",
+      "observedName": "대화",
+      "east": 933639,
+      "north": 1964335
+    },
+    {
+      "stationCode": "1957",
+      "interchangeUid": "1957",
+      "officialName": "주엽",
+      "lineId": "4-3",
+      "observedName": "주엽",
+      "east": 934848,
+      "north": 1963656
+    },
+    {
+      "stationCode": "1956",
+      "interchangeUid": "1956",
+      "officialName": "정발산",
+      "lineId": "4-3",
+      "observedName": "정발산",
+      "east": 935896,
+      "north": 1962494
+    },
+    {
+      "stationCode": "1955",
+      "interchangeUid": "1955",
+      "officialName": "마두",
+      "lineId": "4-3",
+      "observedName": "마두",
+      "east": 936287,
+      "north": 1961635
+    },
+    {
+      "stationCode": "1954",
+      "interchangeUid": "1954",
+      "officialName": "백석",
+      "lineId": "4-3",
+      "observedName": "백석",
+      "east": 937182,
+      "north": 1960636
+    },
+    {
+      "stationCode": "1953",
+      "interchangeUid": "1953",
+      "officialName": "대곡",
+      "lineId": "4-3",
+      "observedName": "대곡",
+      "east": 939089,
+      "north": 1959377
+    },
+    {
+      "stationCode": "1952",
+      "interchangeUid": "1952",
+      "officialName": "화정",
+      "lineId": "4-3",
+      "observedName": "화정",
+      "east": 941116,
+      "north": 1959668
+    },
+    {
+      "stationCode": "1951",
+      "interchangeUid": "1951",
+      "officialName": "원당",
+      "lineId": "4-3",
+      "observedName": "원당",
+      "east": 942082,
+      "north": 1961795
+    },
+    {
+      "stationCode": "1948",
+      "interchangeUid": "1948",
+      "officialName": "원흥",
+      "lineId": "4-3",
+      "observedName": "원흥",
+      "east": 944756,
+      "north": 1961407
+    },
+    {
+      "stationCode": "1950",
+      "interchangeUid": "1950",
+      "officialName": "삼송",
+      "lineId": "4-3",
+      "observedName": "삼송",
+      "east": 946674,
+      "north": 1961684
+    },
+    {
+      "stationCode": "0309",
+      "interchangeUid": "0309",
+      "officialName": "지축",
+      "lineId": "4-3",
+      "observedName": "지축",
+      "east": 948385,
+      "north": 1961100
+    },
+    {
+      "stationCode": "0405",
+      "interchangeUid": "0405",
+      "officialName": "진접",
+      "lineId": "5-4",
+      "observedName": "진접",
+      "east": 973840,
+      "north": 1969109
+    },
+    {
+      "stationCode": "0406",
+      "interchangeUid": "0406",
+      "officialName": "오남",
+      "lineId": "5-4",
+      "observedName": "오남",
+      "east": 972881,
+      "north": 1967396
+    },
+    {
+      "stationCode": "0408",
+      "interchangeUid": "0408",
+      "officialName": "별내별가람",
+      "lineId": "5-4",
+      "observedName": "별내별가람",
+      "east": 966218,
+      "north": 1963244
+    },
+    {
+      "stationCode": "1450",
+      "interchangeUid": "1450",
+      "officialName": "선바위",
+      "lineId": "5-4",
+      "observedName": "선바위",
+      "east": 956046,
+      "north": 1939178
+    },
+    {
+      "stationCode": "1451",
+      "interchangeUid": "1451",
+      "officialName": "경마공원",
+      "lineId": "5-4",
+      "observedName": "경마공원",
+      "east": 956472,
+      "north": 1938408
+    },
+    {
+      "stationCode": "1452",
+      "interchangeUid": "1452",
+      "officialName": "대공원",
+      "lineId": "5-4",
+      "observedName": "대공원",
+      "east": 956313,
+      "north": 1937439
+    },
+    {
+      "stationCode": "1453",
+      "interchangeUid": "1453",
+      "officialName": "과천",
+      "lineId": "5-4",
+      "observedName": "과천",
+      "east": 955486,
+      "north": 1937215
+    },
+    {
+      "stationCode": "1454",
+      "interchangeUid": "1454",
+      "officialName": "정부과천청사",
+      "lineId": "5-4",
+      "observedName": "정부과천청사",
+      "east": 954854,
+      "north": 1936486
+    },
+    {
+      "stationCode": "1455",
+      "interchangeUid": "1455",
+      "officialName": "인덕원",
+      "lineId": "5-4",
+      "observedName": "인덕원",
+      "east": 953710,
+      "north": 1933712
+    },
+    {
+      "stationCode": "1456",
+      "interchangeUid": "1456",
+      "officialName": "평촌",
+      "lineId": "5-4",
+      "observedName": "평촌",
+      "east": 952547,
+      "north": 1932931
+    },
+    {
+      "stationCode": "1457",
+      "interchangeUid": "1457",
+      "officialName": "범계",
+      "lineId": "5-4",
+      "observedName": "범계",
+      "east": 951395,
+      "north": 1932452
+    },
+    {
+      "stationCode": "1458",
+      "interchangeUid": "1708",
+      "officialName": "금정",
+      "lineId": "5-4",
+      "observedName": "금정",
+      "east": 950766,
+      "north": 1930425
+    },
+    {
+      "stationCode": "1751",
+      "interchangeUid": "1751",
+      "officialName": "산본",
+      "lineId": "5-4",
+      "observedName": "산본",
+      "east": 949714,
+      "north": 1928873
+    },
+    {
+      "stationCode": "1763",
+      "interchangeUid": "1763",
+      "officialName": "수리산",
+      "lineId": "5-4",
+      "observedName": "수리산",
+      "east": 949109,
+      "north": 1928019
+    },
+    {
+      "stationCode": "1752",
+      "interchangeUid": "1752",
+      "officialName": "대야미",
+      "lineId": "5-4",
+      "observedName": "대야미",
+      "east": 948287,
+      "north": 1925517
+    },
+    {
+      "stationCode": "1753",
+      "interchangeUid": "1753",
+      "officialName": "반월",
+      "lineId": "5-4",
+      "observedName": "반월",
+      "east": 947119,
+      "north": 1923799
+    },
+    {
+      "stationCode": "1754",
+      "interchangeUid": "1754",
+      "officialName": "상록수",
+      "lineId": "5-4",
+      "observedName": "상록수",
+      "east": 943784,
+      "north": 1922845
+    },
+    {
+      "stationCode": "1755",
+      "interchangeUid": "1755",
+      "officialName": "한대앞",
+      "lineId": "5-4",
+      "observedName": "한대앞",
+      "east": 942657,
+      "north": 1923694
+    },
+    {
+      "stationCode": "1756",
+      "interchangeUid": "1756",
+      "officialName": "중앙",
+      "lineId": "5-4",
+      "observedName": "중앙",
+      "east": 941295,
+      "north": 1924326
+    },
+    {
+      "stationCode": "1757",
+      "interchangeUid": "1757",
+      "officialName": "고잔",
+      "lineId": "5-4",
+      "observedName": "고잔",
+      "east": 939933,
+      "north": 1924429
+    },
+    {
+      "stationCode": "1758",
+      "interchangeUid": "1758",
+      "officialName": "초지",
+      "lineId": "5-4",
+      "observedName": "초지",
+      "east": 938414,
+      "north": 1924912
+    },
+    {
+      "stationCode": "1759",
+      "interchangeUid": "1759",
+      "officialName": "안산",
+      "lineId": "5-4",
+      "observedName": "안산",
+      "east": 936918,
+      "north": 1925617
+    },
+    {
+      "stationCode": "1760",
+      "interchangeUid": "1760",
+      "officialName": "신길온천",
+      "lineId": "5-4",
+      "observedName": "신길온천",
+      "east": 934998,
+      "north": 1926817
+    },
+    {
+      "stationCode": "1761",
+      "interchangeUid": "1761",
+      "officialName": "정왕",
+      "lineId": "5-4",
+      "observedName": "정왕",
+      "east": 932867,
+      "north": 1928382
+    },
+    {
+      "stationCode": "1762",
+      "interchangeUid": "1762",
+      "officialName": "오이도",
+      "lineId": "5-4",
+      "observedName": "오이도",
+      "east": 932587,
+      "north": 1929577
+    },
+    {
+      "stationCode": "2563",
+      "interchangeUid": "2563",
+      "officialName": "미사",
+      "lineId": "6-5",
+      "observedName": "미사",
+      "east": 972867,
+      "north": 1951567
+    },
+    {
+      "stationCode": "2564",
+      "interchangeUid": "2564",
+      "officialName": "하남풍산",
+      "lineId": "6-5",
+      "observedName": "하남풍산",
+      "east": 973884,
+      "north": 1950426
+    },
+    {
+      "stationCode": "2565",
+      "interchangeUid": "2565",
+      "officialName": "하남시청",
+      "lineId": "6-5",
+      "observedName": "하남시청",
+      "east": 974119,
+      "north": 1949192
+    },
+    {
+      "stationCode": "2566",
+      "interchangeUid": "2566",
+      "officialName": "하남검단산",
+      "lineId": "6-5",
+      "observedName": "하남검단산",
+      "east": 975591,
+      "north": 1948968
+    },
+    {
+      "stationCode": "3763",
+      "interchangeUid": "3213",
+      "officialName": "석남",
+      "lineId": "8-7",
+      "observedName": "석남",
+      "east": 926923,
+      "north": 1945557
+    },
+    {
+      "stationCode": "3762",
+      "interchangeUid": "3762",
+      "officialName": "산곡",
+      "lineId": "8-7",
+      "observedName": "산곡",
+      "east": 929621,
+      "north": 1945780
+    },
+    {
+      "stationCode": "3761",
+      "interchangeUid": "3118",
+      "officialName": "부평구청",
+      "lineId": "8-7",
+      "observedName": "부평구청",
+      "east": 931050,
+      "north": 1945652
+    },
+    {
+      "stationCode": "3760",
+      "interchangeUid": "3760",
+      "officialName": "굴포천",
+      "lineId": "8-7",
+      "observedName": "굴포천",
+      "east": 932062,
+      "north": 1945584
+    },
+    {
+      "stationCode": "3759",
+      "interchangeUid": "3759",
+      "officialName": "삼산체육관",
+      "lineId": "8-7",
+      "observedName": "삼산체육관",
+      "east": 933033,
+      "north": 1945519
+    },
+    {
+      "stationCode": "3758",
+      "interchangeUid": "3758",
+      "officialName": "상동",
+      "lineId": "8-7",
+      "observedName": "상동",
+      "east": 933992,
+      "north": 1945437
+    },
+    {
+      "stationCode": "3757",
+      "interchangeUid": "3757",
+      "officialName": "부천시청",
+      "lineId": "8-7",
+      "observedName": "부천시청",
+      "east": 934876,
+      "north": 1945312
+    },
+    {
+      "stationCode": "3756",
+      "interchangeUid": "3756",
+      "officialName": "신중동",
+      "lineId": "8-7",
+      "observedName": "신중동",
+      "east": 936027,
+      "north": 1945112
+    },
+    {
+      "stationCode": "3755",
+      "interchangeUid": "3755",
+      "officialName": "춘의",
+      "lineId": "8-7",
+      "observedName": "춘의",
+      "east": 936996,
+      "north": 1945180
+    },
+    {
+      "stationCode": "3754",
+      "interchangeUid": "3754",
+      "officialName": "부천종합운동장",
+      "lineId": "8-7",
+      "observedName": "부천종합운동장",
+      "east": 937888,
+      "north": 1945365
+    },
+    {
+      "stationCode": "3753",
+      "interchangeUid": "3753",
+      "officialName": "까치울",
+      "lineId": "8-7",
+      "observedName": "까치울",
+      "east": 939137,
+      "north": 1945443
+    },
+    {
+      "stationCode": "2749",
+      "interchangeUid": "2749",
+      "officialName": "철산",
+      "lineId": "8-7",
+      "observedName": "철산",
+      "east": 944098,
+      "north": 1942058
+    },
+    {
+      "stationCode": "2711",
+      "interchangeUid": "2711",
+      "officialName": "장암",
+      "lineId": "8-7",
+      "observedName": "장암",
+      "east": 960602,
+      "north": 1966829
+    },
+    {
+      "stationCode": "2805",
+      "interchangeUid": "1313",
+      "officialName": "별내",
+      "lineId": "9-8",
+      "observedName": "별내",
+      "east": 967183,
+      "north": 1960324
+    },
+    {
+      "stationCode": "2806",
+      "interchangeUid": "2806",
+      "officialName": "다산",
+      "lineId": "9-8",
+      "observedName": "다산",
+      "east": 969081,
+      "north": 1958313
+    },
+    {
+      "stationCode": "2807",
+      "interchangeUid": "2807",
+      "officialName": "동구릉",
+      "lineId": "9-8",
+      "observedName": "동구릉",
+      "east": 968062,
+      "north": 1956811
+    },
+    {
+      "stationCode": "2808",
+      "interchangeUid": "1205",
+      "officialName": "구리",
+      "lineId": "9-8",
+      "observedName": "구리",
+      "east": 968313,
+      "north": 1955863
+    },
+    {
+      "stationCode": "2809",
+      "interchangeUid": "2809",
+      "officialName": "장자호수공원",
+      "lineId": "9-8",
+      "observedName": "장자호수공원",
+      "east": 968026,
+      "north": 1954184
+    },
+    {
+      "stationCode": "2828",
+      "interchangeUid": "2828",
+      "officialName": "남위례",
+      "lineId": "9-8",
+      "observedName": "남위례",
+      "east": 968146,
+      "north": 1940424
+    },
+    {
+      "stationCode": "2822",
+      "interchangeUid": "2822",
+      "officialName": "산성",
+      "lineId": "9-8",
+      "observedName": "산성",
+      "east": 969037,
+      "north": 1939796
+    },
+    {
+      "stationCode": "2823",
+      "interchangeUid": "2823",
+      "officialName": "남한산성입구",
+      "lineId": "9-8",
+      "observedName": "남한산성입구",
+      "east": 969911,
+      "north": 1939209
+    },
+    {
+      "stationCode": "2824",
+      "interchangeUid": "2824",
+      "officialName": "단대오거리",
+      "lineId": "9-8",
+      "observedName": "단대오거리",
+      "east": 969638,
+      "north": 1938490
+    },
+    {
+      "stationCode": "2825",
+      "interchangeUid": "2825",
+      "officialName": "신흥",
+      "lineId": "9-8",
+      "observedName": "신흥",
+      "east": 968829,
+      "north": 1938041
+    },
+    {
+      "stationCode": "2826",
+      "interchangeUid": "2826",
+      "officialName": "수진",
+      "lineId": "9-8",
+      "observedName": "수진",
+      "east": 968212,
+      "north": 1937648
+    },
+    {
+      "stationCode": "2827",
+      "interchangeUid": "1853",
+      "officialName": "모란",
+      "lineId": "9-8",
+      "observedName": "모란",
+      "east": 967183,
+      "north": 1937066
+    },
+    {
+      "stationCode": "4928",
+      "interchangeUid": "4928",
+      "officialName": "고촌",
+      "lineId": "KP",
+      "observedName": "고촌",
+      "east": 935579,
+      "north": 1956019
+    },
+    {
+      "stationCode": "4927",
+      "interchangeUid": "4927",
+      "officialName": "풍무",
+      "lineId": "KP",
+      "observedName": "풍무",
+      "east": 932257,
+      "north": 1957277
+    },
+    {
+      "stationCode": "4926",
+      "interchangeUid": "4926",
+      "officialName": "사우(김포시청)",
+      "lineId": "KP",
+      "observedName": "사우",
+      "east": 931139,
+      "north": 1958160
+    },
+    {
+      "stationCode": "4925",
+      "interchangeUid": "4925",
+      "officialName": "걸포북변",
+      "lineId": "KP",
+      "observedName": "걸포북변",
+      "east": 929931,
+      "north": 1959422
+    },
+    {
+      "stationCode": "4924",
+      "interchangeUid": "4924",
+      "officialName": "운양",
+      "lineId": "KP",
+      "observedName": "운양",
+      "east": 928008,
+      "north": 1961907
+    },
+    {
+      "stationCode": "4923",
+      "interchangeUid": "4923",
+      "officialName": "장기",
+      "lineId": "KP",
+      "observedName": "장기",
+      "east": 926685,
+      "north": 1960831
+    },
+    {
+      "stationCode": "4922",
+      "interchangeUid": "4922",
+      "officialName": "마산",
+      "lineId": "KP",
+      "observedName": "마산",
+      "east": 924489,
+      "north": 1960471
+    },
+    {
+      "stationCode": "4921",
+      "interchangeUid": "4921",
+      "officialName": "구래",
+      "lineId": "KP",
+      "observedName": "구래",
+      "east": 923136,
+      "north": 1961017
+    },
+    {
+      "stationCode": "4920",
+      "interchangeUid": "4920",
+      "officialName": "양촌",
+      "lineId": "KP",
+      "observedName": "양촌",
+      "east": 921900,
+      "north": 1960609
+    },
+    {
+      "stationCode": "4601",
+      "interchangeUid": "4601",
+      "officialName": "발곡",
+      "lineId": "U",
+      "observedName": "발곡",
+      "east": 960604,
+      "north": 1969805
+    },
+    {
+      "stationCode": "4602",
+      "interchangeUid": "1905",
+      "officialName": "회룡",
+      "lineId": "U",
+      "observedName": "회룡",
+      "east": 960093,
+      "north": 1969589
+    },
+    {
+      "stationCode": "4603",
+      "interchangeUid": "4603",
+      "officialName": "범골",
+      "lineId": "U",
+      "observedName": "범골",
+      "east": 959791,
+      "north": 1970020
+    },
+    {
+      "stationCode": "4604",
+      "interchangeUid": "4604",
+      "officialName": "경전철의정부",
+      "lineId": "U",
+      "observedName": "경전철의정부",
+      "east": 959762,
+      "north": 1970968
+    },
+    {
+      "stationCode": "4605",
+      "interchangeUid": "4605",
+      "officialName": "의정부시청",
+      "lineId": "U",
+      "observedName": "의정부시청",
+      "east": 959021,
+      "north": 1971188
+    },
+    {
+      "stationCode": "4606",
+      "interchangeUid": "4606",
+      "officialName": "흥선",
+      "lineId": "U",
+      "observedName": "흥선",
+      "east": 959245,
+      "north": 1971617
+    },
+    {
+      "stationCode": "4607",
+      "interchangeUid": "4607",
+      "officialName": "의정부중앙",
+      "lineId": "U",
+      "observedName": "의정부중앙",
+      "east": 960343,
+      "north": 1971656
+    },
+    {
+      "stationCode": "4608",
+      "interchangeUid": "4608",
+      "officialName": "동오",
+      "lineId": "U",
+      "observedName": "동오",
+      "east": 960988,
+      "north": 1971839
+    },
+    {
+      "stationCode": "4609",
+      "interchangeUid": "4609",
+      "officialName": "새말",
+      "lineId": "U",
+      "observedName": "새말",
+      "east": 961588,
+      "north": 1972227
+    },
+    {
+      "stationCode": "4610",
+      "interchangeUid": "4610",
+      "officialName": "경기도청북부청사",
+      "lineId": "U",
+      "observedName": "경기도청북부청사",
+      "east": 962279,
+      "north": 1972432
+    },
+    {
+      "stationCode": "4611",
+      "interchangeUid": "4611",
+      "officialName": "효자",
+      "lineId": "U",
+      "observedName": "효자",
+      "east": 962773,
+      "north": 1972789
+    },
+    {
+      "stationCode": "4612",
+      "interchangeUid": "4612",
+      "officialName": "곤제",
+      "lineId": "U",
+      "observedName": "곤제",
+      "east": 963344,
+      "north": 1972382
+    },
+    {
+      "stationCode": "4613",
+      "interchangeUid": "4613",
+      "officialName": "어룡",
+      "lineId": "U",
+      "observedName": "어룡",
+      "east": 963458,
+      "north": 1971516
+    },
+    {
+      "stationCode": "4614",
+      "interchangeUid": "4614",
+      "officialName": "송산",
+      "lineId": "U",
+      "observedName": "송산",
+      "east": 963637,
+      "north": 1970912
+    },
+    {
+      "stationCode": "4615",
+      "interchangeUid": "4615",
+      "officialName": "탑석",
+      "lineId": "U",
+      "observedName": "탑석",
+      "east": 963780,
+      "north": 1970509
+    },
+    {
+      "stationCode": "3139",
+      "interchangeUid": "3139",
+      "officialName": "송도달빛축제공원",
+      "lineId": "I",
+      "observedName": "송도달빛축제공원",
+      "east": 922663,
+      "north": 1934549
+    },
+    {
+      "stationCode": "3138",
+      "interchangeUid": "3138",
+      "officialName": "국제업무지구",
+      "lineId": "I",
+      "observedName": "국제업무지구",
+      "east": 923053,
+      "north": 1933771
+    },
+    {
+      "stationCode": "3137",
+      "interchangeUid": "3137",
+      "officialName": "센트럴파크",
+      "lineId": "I",
+      "observedName": "센트럴파크",
+      "east": 923408,
+      "north": 1933056
+    },
+    {
+      "stationCode": "3136",
+      "interchangeUid": "3136",
+      "officialName": "인천대입구",
+      "lineId": "I",
+      "observedName": "인천대입구",
+      "east": 923840,
+      "north": 1932235
+    },
+    {
+      "stationCode": "3135",
+      "interchangeUid": "3135",
+      "officialName": "지식정보단지",
+      "lineId": "I",
+      "observedName": "지식정보단지",
+      "east": 924357,
+      "north": 1931341
+    },
+    {
+      "stationCode": "3134",
+      "interchangeUid": "3134",
+      "officialName": "테크노파크",
+      "lineId": "I",
+      "observedName": "테크노파크",
+      "east": 925267,
+      "north": 1931778
+    },
+    {
+      "stationCode": "3133",
+      "interchangeUid": "3133",
+      "officialName": "캠퍼스타운",
+      "lineId": "I",
+      "observedName": "캠퍼스타운",
+      "east": 925776,
+      "north": 1932422
+    },
+    {
+      "stationCode": "3132",
+      "interchangeUid": "3132",
+      "officialName": "동막",
+      "lineId": "I",
+      "observedName": "동막",
+      "east": 926873,
+      "north": 1933574
+    },
+    {
+      "stationCode": "3131",
+      "interchangeUid": "3131",
+      "officialName": "동춘",
+      "lineId": "I",
+      "observedName": "동춘",
+      "east": 927478,
+      "north": 1934259
+    },
+    {
+      "stationCode": "3130",
+      "interchangeUid": "3130",
+      "officialName": "원인재",
+      "lineId": "I",
+      "observedName": "원인재",
+      "east": 928146,
+      "north": 1935132
+    },
+    {
+      "stationCode": "3129",
+      "interchangeUid": "3129",
+      "officialName": "신연수",
+      "lineId": "I",
+      "observedName": "신연수",
+      "east": 928665,
+      "north": 1935737
+    },
+    {
+      "stationCode": "3128",
+      "interchangeUid": "3128",
+      "officialName": "선학",
+      "lineId": "I",
+      "observedName": "선학",
+      "east": 929121,
+      "north": 1936745
+    },
+    {
+      "stationCode": "3127",
+      "interchangeUid": "3127",
+      "officialName": "문학경기장",
+      "lineId": "I",
+      "observedName": "문학경기장",
+      "east": 929029,
+      "north": 1937602
+    },
+    {
+      "stationCode": "3126",
+      "interchangeUid": "3126",
+      "officialName": "인천터미널",
+      "lineId": "I",
+      "observedName": "인천터미널",
+      "east": 929202,
+      "north": 1938382
+    },
+    {
+      "stationCode": "3125",
+      "interchangeUid": "3125",
+      "officialName": "예술회관",
+      "lineId": "I",
+      "observedName": "예술회관",
+      "east": 929331,
+      "north": 1939286
+    },
+    {
+      "stationCode": "3124",
+      "interchangeUid": "3124",
+      "officialName": "인천시청",
+      "lineId": "I",
+      "observedName": "인천시청",
+      "east": 929436,
+      "north": 1940158
+    },
+    {
+      "stationCode": "3123",
+      "interchangeUid": "3123",
+      "officialName": "간석오거리",
+      "lineId": "I",
+      "observedName": "간석오거리",
+      "east": 929950,
+      "north": 1941197
+    },
+    {
+      "stationCode": "3122",
+      "interchangeUid": "3122",
+      "officialName": "부평삼거리",
+      "lineId": "I",
+      "observedName": "부평삼거리",
+      "east": 930169,
+      "north": 1942367
+    },
+    {
+      "stationCode": "3121",
+      "interchangeUid": "3121",
+      "officialName": "동수",
+      "lineId": "I",
+      "observedName": "동수",
+      "east": 930902,
+      "north": 1943204
+    },
+    {
+      "stationCode": "3120",
+      "interchangeUid": "1806",
+      "officialName": "부평",
+      "lineId": "I",
+      "observedName": "부평",
+      "east": 931373,
+      "north": 1943696
+    },
+    {
+      "stationCode": "3119",
+      "interchangeUid": "3119",
+      "officialName": "부평시장",
+      "lineId": "I",
+      "observedName": "부평시장",
+      "east": 931250,
+      "north": 1944629
+    },
+    {
+      "stationCode": "3118",
+      "interchangeUid": "3118",
+      "officialName": "부평구청",
+      "lineId": "I",
+      "observedName": "부평구청",
+      "east": 931107,
+      "north": 1945710
+    },
+    {
+      "stationCode": "3117",
+      "interchangeUid": "3117",
+      "officialName": "갈산",
+      "lineId": "I",
+      "observedName": "갈산",
+      "east": 931197,
+      "north": 1946665
+    },
+    {
+      "stationCode": "3116",
+      "interchangeUid": "3116",
+      "officialName": "작전",
+      "lineId": "I",
+      "observedName": "작전",
+      "east": 931301,
+      "north": 1948173
+    },
+    {
+      "stationCode": "3115",
+      "interchangeUid": "3115",
+      "officialName": "경인교대입구",
+      "lineId": "I",
+      "observedName": "경인교대입구",
+      "east": 931314,
+      "north": 1949073
+    },
+    {
+      "stationCode": "3114",
+      "interchangeUid": "3114",
+      "officialName": "계산",
+      "lineId": "I",
+      "observedName": "계산",
+      "east": 931792,
+      "north": 1949620
+    },
+    {
+      "stationCode": "3113",
+      "interchangeUid": "3113",
+      "officialName": "임학",
+      "lineId": "I",
+      "observedName": "임학",
+      "east": 932747,
+      "north": 1949810
+    },
+    {
+      "stationCode": "3112",
+      "interchangeUid": "3112",
+      "officialName": "박촌",
+      "lineId": "I",
+      "observedName": "박촌",
+      "east": 933315,
+      "north": 1950745
+    },
+    {
+      "stationCode": "3111",
+      "interchangeUid": "3111",
+      "officialName": "귤현",
+      "lineId": "I",
+      "observedName": "귤현",
+      "east": 933125,
+      "north": 1952108
+    },
+    {
+      "stationCode": "3110",
+      "interchangeUid": "3110",
+      "officialName": "계양",
+      "lineId": "I",
+      "observedName": "계양",
+      "east": 932407,
+      "north": 1952732
+    },
+    {
+      "stationCode": "3109",
+      "interchangeUid": "3109",
+      "officialName": "아라(북부법원검찰청)",
+      "lineId": "I",
+      "observedName": "아라",
+      "east": 930550,
+      "north": 1955045
+    },
+    {
+      "stationCode": "3108",
+      "interchangeUid": "3108",
+      "officialName": "신검단중앙",
+      "lineId": "I",
+      "observedName": "신검단중앙",
+      "east": 929253,
+      "north": 1956214
+    },
+    {
+      "stationCode": "3107",
+      "interchangeUid": "3107",
+      "officialName": "검단호수공원",
+      "lineId": "I",
+      "observedName": "검단호수공원",
+      "east": 928372,
+      "north": 1956198
+    },
+    {
+      "stationCode": "3201",
+      "interchangeUid": "3201",
+      "officialName": "검단오류",
+      "lineId": "I2",
+      "observedName": "검단오류",
+      "east": 922948,
+      "north": 1955410
+    },
+    {
+      "stationCode": "3202",
+      "interchangeUid": "3202",
+      "officialName": "왕길",
+      "lineId": "I2",
+      "observedName": "왕길",
+      "east": 924318,
+      "north": 1955431
+    },
+    {
+      "stationCode": "3203",
+      "interchangeUid": "3203",
+      "officialName": "검단사거리",
+      "lineId": "I2",
+      "observedName": "검단사거리",
+      "east": 925597,
+      "north": 1956160
+    },
+    {
+      "stationCode": "3204",
+      "interchangeUid": "3204",
+      "officialName": "마전",
+      "lineId": "I2",
+      "observedName": "마전",
+      "east": 926466,
+      "north": 1955677
+    },
+    {
+      "stationCode": "3205",
+      "interchangeUid": "3205",
+      "officialName": "완정",
+      "lineId": "I2",
+      "observedName": "완정",
+      "east": 927009,
+      "north": 1955157
+    },
+    {
+      "stationCode": "3206",
+      "interchangeUid": "3206",
+      "officialName": "독정",
+      "lineId": "I2",
+      "observedName": "독정",
+      "east": 927235,
+      "north": 1954299
+    },
+    {
+      "stationCode": "3207",
+      "interchangeUid": "4209",
+      "officialName": "검암",
+      "lineId": "I2",
+      "observedName": "검암",
+      "east": 927032,
+      "north": 1952514
+    },
+    {
+      "stationCode": "3208",
+      "interchangeUid": "3208",
+      "officialName": "검바위",
+      "lineId": "I2",
+      "observedName": "검바위",
+      "east": 927364,
+      "north": 1951657
+    },
+    {
+      "stationCode": "3209",
+      "interchangeUid": "3209",
+      "officialName": "아시아드경기장",
+      "lineId": "I2",
+      "observedName": "아시아드경기장",
+      "east": 927315,
+      "north": 1950580
+    },
+    {
+      "stationCode": "3211",
+      "interchangeUid": "3211",
+      "officialName": "가정",
+      "lineId": "I2",
+      "observedName": "가정",
+      "east": 927149,
+      "north": 1947580
+    },
+    {
+      "stationCode": "3212",
+      "interchangeUid": "3212",
+      "officialName": "가정중앙시장",
+      "lineId": "I2",
+      "observedName": "가정중앙시장",
+      "east": 927242,
+      "north": 1946737
+    },
+    {
+      "stationCode": "3213",
+      "interchangeUid": "3213",
+      "officialName": "석남",
+      "lineId": "I2",
+      "observedName": "석남",
+      "east": 927190,
+      "north": 1945532
+    },
+    {
+      "stationCode": "3214",
+      "interchangeUid": "3214",
+      "officialName": "서부여성회관",
+      "lineId": "I2",
+      "observedName": "서부여성회관",
+      "east": 927190,
+      "north": 1945532
+    },
+    {
+      "stationCode": "3215",
+      "interchangeUid": "3215",
+      "officialName": "인천가좌",
+      "lineId": "I2",
+      "observedName": "인천가좌",
+      "east": 927086,
+      "north": 1943703
+    },
+    {
+      "stationCode": "3216",
+      "interchangeUid": "3216",
+      "officialName": "가재울",
+      "lineId": "I2",
+      "observedName": "가재울",
+      "east": 927829,
+      "north": 1943085
+    },
+    {
+      "stationCode": "3217",
+      "interchangeUid": "3217",
+      "officialName": "주안국가산단",
+      "lineId": "I2",
+      "observedName": "주안국가산단",
+      "east": 927594,
+      "north": 1941924
+    },
+    {
+      "stationCode": "3218",
+      "interchangeUid": "1809",
+      "officialName": "주안",
+      "lineId": "I2",
+      "observedName": "주안",
+      "east": 927479,
+      "north": 1940953
+    },
+    {
+      "stationCode": "3219",
+      "interchangeUid": "3219",
+      "officialName": "시민공원",
+      "lineId": "I2",
+      "observedName": "시민공원",
+      "east": 927585,
+      "north": 1940219
+    },
+    {
+      "stationCode": "3220",
+      "interchangeUid": "3220",
+      "officialName": "석바위시장",
+      "lineId": "I2",
+      "observedName": "석바위시장",
+      "east": 928591,
+      "north": 1940130
+    },
+    {
+      "stationCode": "3221",
+      "interchangeUid": "3124",
+      "officialName": "인천시청",
+      "lineId": "I2",
+      "observedName": "인천시청",
+      "east": 929444,
+      "north": 1940099
+    },
+    {
+      "stationCode": "3222",
+      "interchangeUid": "3222",
+      "officialName": "석천사거리",
+      "lineId": "I2",
+      "observedName": "석천사거리",
+      "east": 930130,
+      "north": 1940027
+    },
+    {
+      "stationCode": "3223",
+      "interchangeUid": "3223",
+      "officialName": "모래내시장",
+      "lineId": "I2",
+      "observedName": "모래내시장",
+      "east": 930953,
+      "north": 1939912
+    },
+    {
+      "stationCode": "3224",
+      "interchangeUid": "3224",
+      "officialName": "만수",
+      "lineId": "I2",
+      "observedName": "만수",
+      "east": 932083,
+      "north": 1939801
+    },
+    {
+      "stationCode": "3225",
+      "interchangeUid": "3225",
+      "officialName": "남동구청",
+      "lineId": "I2",
+      "observedName": "남동구청",
+      "east": 932506,
+      "north": 1939048
+    },
+    {
+      "stationCode": "3226",
+      "interchangeUid": "3226",
+      "officialName": "인천대공원",
+      "lineId": "I2",
+      "observedName": "인천대공원",
+      "east": 933893,
+      "north": 1939105
+    },
+    {
+      "stationCode": "3227",
+      "interchangeUid": "3227",
+      "officialName": "운연",
+      "lineId": "I2",
+      "observedName": "운연",
+      "east": 934536,
+      "north": 1938141
+    },
+    {
+      "stationCode": "1312",
+      "interchangeUid": "1312",
+      "officialName": "갈매",
+      "lineId": "G",
+      "observedName": "갈매",
+      "east": 966009,
+      "north": 1959476
+    },
+    {
+      "stationCode": "1313",
+      "interchangeUid": "1313",
+      "officialName": "별내",
+      "lineId": "G",
+      "observedName": "별내",
+      "east": 967079,
+      "north": 1960348
+    },
+    {
+      "stationCode": "1314",
+      "interchangeUid": "1314",
+      "officialName": "퇴계원",
+      "lineId": "G",
+      "observedName": "퇴계원",
+      "east": 968591,
+      "north": 1961040
+    },
+    {
+      "stationCode": "1315",
+      "interchangeUid": "1315",
+      "officialName": "사릉",
+      "lineId": "G",
+      "observedName": "사릉",
+      "east": 971502,
+      "north": 1961337
+    },
+    {
+      "stationCode": "1316",
+      "interchangeUid": "1316",
+      "officialName": "금곡",
+      "lineId": "G",
+      "observedName": "금곡",
+      "east": 974224,
+      "north": 1959808
+    },
+    {
+      "stationCode": "1317",
+      "interchangeUid": "1317",
+      "officialName": "평내호평",
+      "lineId": "G",
+      "observedName": "평내호평",
+      "east": 977462,
+      "north": 1961556
+    },
+    {
+      "stationCode": "1318",
+      "interchangeUid": "1318",
+      "officialName": "천마산",
+      "lineId": "G",
+      "observedName": "천마산",
+      "east": 981070,
+      "north": 1962186
+    },
+    {
+      "stationCode": "1319",
+      "interchangeUid": "1319",
+      "officialName": "마석",
+      "lineId": "G",
+      "observedName": "마석",
+      "east": 983396,
+      "north": 1961493
+    },
+    {
+      "stationCode": "1320",
+      "interchangeUid": "1320",
+      "officialName": "대성리",
+      "lineId": "G",
+      "observedName": "대성리",
+      "east": 989359,
+      "north": 1964955
+    },
+    {
+      "stationCode": "1321",
+      "interchangeUid": "1321",
+      "officialName": "청평",
+      "lineId": "G",
+      "observedName": "청평",
+      "east": 993533,
+      "north": 1970655
+    },
+    {
+      "stationCode": "1322",
+      "interchangeUid": "1322",
+      "officialName": "상천",
+      "lineId": "G",
+      "observedName": "상천",
+      "east": 996021,
+      "north": 1974510
+    },
+    {
+      "stationCode": "1323",
+      "interchangeUid": "1323",
+      "officialName": "가평",
+      "lineId": "G",
+      "observedName": "가평",
+      "east": 1000945,
+      "north": 1979423
+    },
+    {
+      "stationCode": "1324",
+      "interchangeUid": "1324",
+      "officialName": "굴봉산",
+      "lineId": "G",
+      "observedName": "굴봉산",
+      "east": 1005077,
+      "north": 1981369
+    },
+    {
+      "stationCode": "1325",
+      "interchangeUid": "1325",
+      "officialName": "백양리",
+      "lineId": "G",
+      "observedName": "백양리",
+      "east": 1007861,
+      "north": 1981229
+    },
+    {
+      "stationCode": "1326",
+      "interchangeUid": "1326",
+      "officialName": "강촌",
+      "lineId": "G",
+      "observedName": "강촌",
+      "east": 1011809,
+      "north": 1978453
+    },
+    {
+      "stationCode": "1327",
+      "interchangeUid": "1327",
+      "officialName": "김유정",
+      "lineId": "G",
+      "observedName": "김유정",
+      "east": 1018865,
+      "north": 1979880
+    },
+    {
+      "stationCode": "1328",
+      "interchangeUid": "1328",
+      "officialName": "남춘천",
+      "lineId": "G",
+      "observedName": "남춘천",
+      "east": 1019685,
+      "north": 1984935
+    },
+    {
+      "stationCode": "1329",
+      "interchangeUid": "1329",
+      "officialName": "춘천",
+      "lineId": "G",
+      "observedName": "춘천",
+      "east": 1019084,
+      "north": 1987269
+    },
+    {
+      "stationCode": "1284",
+      "interchangeUid": "1284",
+      "officialName": "문산",
+      "lineId": "K",
+      "observedName": "문산",
+      "east": 937364,
+      "north": 1984185
+    },
+    {
+      "stationCode": "1283",
+      "interchangeUid": "1283",
+      "officialName": "파주",
+      "lineId": "K",
+      "observedName": "파주",
+      "east": 937702,
+      "north": 1979791
+    },
+    {
+      "stationCode": "1282",
+      "interchangeUid": "1282",
+      "officialName": "월롱",
+      "lineId": "K",
+      "observedName": "월롱",
+      "east": 937759,
+      "north": 1977760
+    },
+    {
+      "stationCode": "1280",
+      "interchangeUid": "1280",
+      "officialName": "금촌",
+      "lineId": "K",
+      "observedName": "금촌",
+      "east": 936177,
+      "north": 1974351
+    },
+    {
+      "stationCode": "1279",
+      "interchangeUid": "1279",
+      "officialName": "금릉",
+      "lineId": "K",
+      "observedName": "금릉",
+      "east": 935254,
+      "north": 1972726
+    },
+    {
+      "stationCode": "1278",
+      "interchangeUid": "1278",
+      "officialName": "운정",
+      "lineId": "K",
+      "observedName": "운정",
+      "east": 935445,
+      "north": 1969879
+    },
+    {
+      "stationCode": "1277",
+      "interchangeUid": "1277",
+      "officialName": "야당",
+      "lineId": "K",
+      "observedName": "야당",
+      "east": 934919,
+      "north": 1968443
+    },
+    {
+      "stationCode": "1276",
+      "interchangeUid": "1276",
+      "officialName": "탄현",
+      "lineId": "K",
+      "observedName": "탄현",
+      "east": 934850,
+      "north": 1966383
+    },
+    {
+      "stationCode": "1275",
+      "interchangeUid": "1275",
+      "officialName": "일산",
+      "lineId": "K",
+      "observedName": "일산",
+      "east": 935619,
+      "north": 1964971
+    },
+    {
+      "stationCode": "1274",
+      "interchangeUid": "1274",
+      "officialName": "풍산",
+      "lineId": "K",
+      "observedName": "풍산",
+      "east": 937028,
+      "north": 1963945
+    },
+    {
+      "stationCode": "1273",
+      "interchangeUid": "1273",
+      "officialName": "백마",
+      "lineId": "K",
+      "observedName": "백마",
+      "east": 937809,
+      "north": 1962245
+    },
+    {
+      "stationCode": "1272",
+      "interchangeUid": "1272",
+      "officialName": "곡산",
+      "lineId": "K",
+      "observedName": "곡산",
+      "east": 938372,
+      "north": 1960995
+    },
+    {
+      "stationCode": "1271",
+      "interchangeUid": "1271",
+      "officialName": "능곡",
+      "lineId": "K",
+      "observedName": "능곡",
+      "east": 939968,
+      "north": 1957986
+    },
+    {
+      "stationCode": "1270",
+      "interchangeUid": "1270",
+      "officialName": "행신",
+      "lineId": "K",
+      "observedName": "행신",
+      "east": 941237,
+      "north": 1957160
+    },
+    {
+      "stationCode": "1269",
+      "interchangeUid": "1269",
+      "officialName": "강매",
+      "lineId": "K",
+      "observedName": "강매",
+      "east": 942128,
+      "north": 1957169
+    },
+    {
+      "stationCode": "1268",
+      "interchangeUid": "1268",
+      "officialName": "한국항공대",
+      "lineId": "K",
+      "observedName": "한국항공대",
+      "east": 944193,
+      "north": 1956167
+    },
+    {
+      "stationCode": "1206",
+      "interchangeUid": "1206",
+      "officialName": "도농",
+      "lineId": "K",
+      "observedName": "도농",
+      "east": 970099,
+      "north": 1956648
+    },
+    {
+      "stationCode": "1207",
+      "interchangeUid": "1207",
+      "officialName": "양정",
+      "lineId": "K",
+      "observedName": "양정",
+      "east": 973001,
+      "north": 1956184
+    },
+    {
+      "stationCode": "1208",
+      "interchangeUid": "1208",
+      "officialName": "덕소",
+      "lineId": "K",
+      "observedName": "덕소",
+      "east": 974190,
+      "north": 1954276
+    },
+    {
+      "stationCode": "1209",
+      "interchangeUid": "1209",
+      "officialName": "도심",
+      "lineId": "K",
+      "observedName": "도심",
+      "east": 975432,
+      "north": 1953425
+    },
+    {
+      "stationCode": "1210",
+      "interchangeUid": "1210",
+      "officialName": "팔당",
+      "lineId": "K",
+      "observedName": "팔당",
+      "east": 977297,
+      "north": 1949896
+    },
+    {
+      "stationCode": "1211",
+      "interchangeUid": "1211",
+      "officialName": "운길산",
+      "lineId": "K",
+      "observedName": "운길산",
+      "east": 983127,
+      "north": 1950665
+    },
+    {
+      "stationCode": "1212",
+      "interchangeUid": "1212",
+      "officialName": "양수",
+      "lineId": "K",
+      "observedName": "양수",
+      "east": 984819,
+      "north": 1949689
+    },
+    {
+      "stationCode": "1213",
+      "interchangeUid": "1213",
+      "officialName": "신원",
+      "lineId": "K",
+      "observedName": "신원",
+      "east": 988731,
+      "north": 1947445
+    },
+    {
+      "stationCode": "1214",
+      "interchangeUid": "1214",
+      "officialName": "국수",
+      "lineId": "K",
+      "observedName": "국수",
+      "east": 991008,
+      "north": 1946296
+    },
+    {
+      "stationCode": "1215",
+      "interchangeUid": "1215",
+      "officialName": "아신",
+      "lineId": "K",
+      "observedName": "아신",
+      "east": 994887,
+      "north": 1946100
+    },
+    {
+      "stationCode": "1216",
+      "interchangeUid": "1216",
+      "officialName": "오빈",
+      "lineId": "K",
+      "observedName": "오빈",
+      "east": 997584,
+      "north": 1945242
+    },
+    {
+      "stationCode": "1218",
+      "interchangeUid": "1218",
+      "officialName": "원덕",
+      "lineId": "K",
+      "observedName": "원덕",
+      "east": 1004019,
+      "north": 1941084
+    },
+    {
+      "stationCode": "1219",
+      "interchangeUid": "1219",
+      "officialName": "용문",
+      "lineId": "K",
+      "observedName": "용문",
+      "east": 1008381,
+      "north": 1942539
+    },
+    {
+      "stationCode": "1220",
+      "interchangeUid": "1220",
+      "officialName": "지평",
+      "lineId": "K",
+      "observedName": "지평",
+      "east": 1011584,
+      "north": 1941996
+    },
+    {
+      "stationCode": "4215",
+      "interchangeUid": "4215",
+      "officialName": "인천공항2터미널",
+      "lineId": "A",
+      "observedName": "인천공항2터미널",
+      "east": 905691,
+      "north": 1941609
+    },
+    {
+      "stationCode": "4213",
+      "interchangeUid": "4213",
+      "officialName": "인천공항1터미널",
+      "lineId": "A",
+      "observedName": "인천공항1터미널",
+      "east": 907362,
+      "north": 1939190
+    },
+    {
+      "stationCode": "4212",
+      "interchangeUid": "4212",
+      "officialName": "공항화물청사",
+      "lineId": "A",
+      "observedName": "공항화물청사",
+      "east": 909582,
+      "north": 1940458
+    },
+    {
+      "stationCode": "4211",
+      "interchangeUid": "4211",
+      "officialName": "운서",
+      "lineId": "A",
+      "observedName": "운서",
+      "east": 911046,
+      "north": 1944204
+    },
+    {
+      "stationCode": "4217",
+      "interchangeUid": "4217",
+      "officialName": "영종",
+      "lineId": "A",
+      "observedName": "영종",
+      "east": 913820,
+      "north": 1946307
+    },
+    {
+      "stationCode": "4210",
+      "interchangeUid": "4210",
+      "officialName": "청라국제도시",
+      "lineId": "A",
+      "observedName": "청라국제도시",
+      "east": 922687,
+      "north": 1951155
+    },
+    {
+      "stationCode": "4209",
+      "interchangeUid": "4209",
+      "officialName": "검암",
+      "lineId": "A",
+      "observedName": "검암",
+      "east": 927028,
+      "north": 1952520
+    },
+    {
+      "stationCode": "4208",
+      "interchangeUid": "3110",
+      "officialName": "계양",
+      "lineId": "A",
+      "observedName": "계양",
+      "east": 932565,
+      "north": 1952765
+    },
+    {
+      "stationCode": "1890",
+      "interchangeUid": "1890",
+      "officialName": "신포",
+      "lineId": "B",
+      "observedName": "신포",
+      "east": 922509,
+      "north": 1941440
+    },
+    {
+      "stationCode": "1889",
+      "interchangeUid": "1889",
+      "officialName": "숭의",
+      "lineId": "B",
+      "observedName": "숭의",
+      "east": 923687,
+      "north": 1940576
+    },
+    {
+      "stationCode": "1888",
+      "interchangeUid": "1888",
+      "officialName": "인하대",
+      "lineId": "B",
+      "observedName": "인하대",
+      "east": 924762,
+      "north": 1939207
+    },
+    {
+      "stationCode": "1886",
+      "interchangeUid": "1886",
+      "officialName": "송도",
+      "lineId": "B",
+      "observedName": "송도",
+      "east": 925141,
+      "north": 1937130
+    },
+    {
+      "stationCode": "1885",
+      "interchangeUid": "1885",
+      "officialName": "연수",
+      "lineId": "B",
+      "observedName": "연수",
+      "east": 927259,
+      "north": 1935787
+    },
+    {
+      "stationCode": "1884",
+      "interchangeUid": "3130",
+      "officialName": "원인재",
+      "lineId": "B",
+      "observedName": "원인재",
+      "east": 927938,
+      "north": 1935261
+    },
+    {
+      "stationCode": "1883",
+      "interchangeUid": "1883",
+      "officialName": "남동인더스파크",
+      "lineId": "B",
+      "observedName": "남동인더스파크",
+      "east": 928705,
+      "north": 1934652
+    },
+    {
+      "stationCode": "1882",
+      "interchangeUid": "1882",
+      "officialName": "호구포",
+      "lineId": "B",
+      "observedName": "호구포",
+      "east": 929881,
+      "north": 1933959
+    },
+    {
+      "stationCode": "1881",
+      "interchangeUid": "1881",
+      "officialName": "인천논현",
+      "lineId": "B",
+      "observedName": "인천논현",
+      "east": 931099,
+      "north": 1933770
+    },
+    {
+      "stationCode": "1880",
+      "interchangeUid": "1880",
+      "officialName": "소래포구",
+      "lineId": "B",
+      "observedName": "소래포구",
+      "east": 932075,
+      "north": 1933853
+    },
+    {
+      "stationCode": "1879",
+      "interchangeUid": "1879",
+      "officialName": "월곶",
+      "lineId": "B",
+      "observedName": "월곶",
+      "east": 932932,
+      "north": 1932832
+    },
+    {
+      "stationCode": "1878",
+      "interchangeUid": "1878",
+      "officialName": "달월",
+      "lineId": "B",
+      "observedName": "달월",
+      "east": 933237,
+      "north": 1931559
+    },
+    {
+      "stationCode": "1836",
+      "interchangeUid": "1761",
+      "officialName": "정왕",
+      "lineId": "B",
+      "observedName": "정왕",
+      "east": 932867,
+      "north": 1928382
+    },
+    {
+      "stationCode": "1835",
+      "interchangeUid": "1760",
+      "officialName": "신길온천",
+      "lineId": "B",
+      "observedName": "신길온천",
+      "east": 934998,
+      "north": 1926817
+    },
+    {
+      "stationCode": "1834",
+      "interchangeUid": "1759",
+      "officialName": "안산",
+      "lineId": "B",
+      "observedName": "안산",
+      "east": 936918,
+      "north": 1925617
+    },
+    {
+      "stationCode": "1833",
+      "interchangeUid": "1758",
+      "officialName": "초지",
+      "lineId": "B",
+      "observedName": "초지",
+      "east": 938414,
+      "north": 1924912
+    },
+    {
+      "stationCode": "1832",
+      "interchangeUid": "1757",
+      "officialName": "고잔",
+      "lineId": "B",
+      "observedName": "고잔",
+      "east": 939933,
+      "north": 1924429
+    },
+    {
+      "stationCode": "1831",
+      "interchangeUid": "1756",
+      "officialName": "중앙",
+      "lineId": "B",
+      "observedName": "중앙",
+      "east": 941295,
+      "north": 1924326
+    },
+    {
+      "stationCode": "1830",
+      "interchangeUid": "1755",
+      "officialName": "한대앞",
+      "lineId": "B",
+      "observedName": "한대앞",
+      "east": 942657,
+      "north": 1923694
+    },
+    {
+      "stationCode": "1877",
+      "interchangeUid": "1877",
+      "officialName": "사리",
+      "lineId": "B",
+      "observedName": "사리",
+      "east": 943040,
+      "north": 1921593
+    },
+    {
+      "stationCode": "1876",
+      "interchangeUid": "1876",
+      "officialName": "야목",
+      "lineId": "B",
+      "observedName": "야목",
+      "east": 945322,
+      "north": 1918260
+    },
+    {
+      "stationCode": "1875",
+      "interchangeUid": "1875",
+      "officialName": "어천",
+      "lineId": "B",
+      "observedName": "어천",
+      "east": 947515,
+      "north": 1916997
+    },
+    {
+      "stationCode": "1874",
+      "interchangeUid": "1874",
+      "officialName": "오목천",
+      "lineId": "B",
+      "observedName": "오목천",
+      "east": 952383,
+      "north": 1916139
+    },
+    {
+      "stationCode": "1873",
+      "interchangeUid": "1873",
+      "officialName": "고색",
+      "lineId": "B",
+      "observedName": "고색",
+      "east": 953919,
+      "north": 1916899
+    },
+    {
+      "stationCode": "1846",
+      "interchangeUid": "1713",
+      "officialName": "수원",
+      "lineId": "B",
+      "observedName": "수원",
+      "east": 955787,
+      "north": 1918756
+    },
+    {
+      "stationCode": "1872",
+      "interchangeUid": "1872",
+      "officialName": "매교",
+      "lineId": "B",
+      "observedName": "매교",
+      "east": 957060,
+      "north": 1918621
+    },
+    {
+      "stationCode": "1871",
+      "interchangeUid": "1871",
+      "officialName": "수원시청",
+      "lineId": "B",
+      "observedName": "수원시청",
+      "east": 958494,
+      "north": 1918198
+    },
+    {
+      "stationCode": "1870",
+      "interchangeUid": "1870",
+      "officialName": "매탄권선",
+      "lineId": "B",
+      "observedName": "매탄권선",
+      "east": 959249,
+      "north": 1917229
+    },
+    {
+      "stationCode": "1869",
+      "interchangeUid": "1869",
+      "officialName": "망포",
+      "lineId": "B",
+      "observedName": "망포",
+      "east": 960711,
+      "north": 1916400
+    },
+    {
+      "stationCode": "1868",
+      "interchangeUid": "1868",
+      "officialName": "영통",
+      "lineId": "B",
+      "observedName": "영통",
+      "east": 961977,
+      "north": 1917031
+    },
+    {
+      "stationCode": "1867",
+      "interchangeUid": "1867",
+      "officialName": "청명",
+      "lineId": "B",
+      "observedName": "청명",
+      "east": 962712,
+      "north": 1917983
+    },
+    {
+      "stationCode": "1866",
+      "interchangeUid": "1866",
+      "officialName": "상갈",
+      "lineId": "B",
+      "observedName": "상갈",
+      "east": 965318,
+      "north": 1918167
+    },
+    {
+      "stationCode": "1865",
+      "interchangeUid": "1865",
+      "officialName": "기흥",
+      "lineId": "B",
+      "observedName": "기흥",
+      "east": 965956,
+      "north": 1919690
+    },
+    {
+      "stationCode": "1864",
+      "interchangeUid": "1864",
+      "officialName": "신갈",
+      "lineId": "B",
+      "observedName": "신갈",
+      "east": 965548,
+      "north": 1920869
+    },
+    {
+      "stationCode": "1863",
+      "interchangeUid": "1863",
+      "officialName": "구성",
+      "lineId": "B",
+      "observedName": "구성",
+      "east": 965056,
+      "north": 1922302
+    },
+    {
+      "stationCode": "1861",
+      "interchangeUid": "1861",
+      "officialName": "보정",
+      "lineId": "B",
+      "observedName": "보정",
+      "east": 965291,
+      "north": 1923780
+    },
+    {
+      "stationCode": "1862",
+      "interchangeUid": "1862",
+      "officialName": "죽전",
+      "lineId": "B",
+      "observedName": "죽전",
+      "east": 965216,
+      "north": 1925136
+    },
+    {
+      "stationCode": "1859",
+      "interchangeUid": "1859",
+      "officialName": "오리",
+      "lineId": "B",
+      "observedName": "오리",
+      "east": 965357,
+      "north": 1926918
+    },
+    {
+      "stationCode": "1858",
+      "interchangeUid": "1858",
+      "officialName": "미금",
+      "lineId": "B",
+      "observedName": "미금",
+      "east": 965368,
+      "north": 1927957
+    },
+    {
+      "stationCode": "1857",
+      "interchangeUid": "1857",
+      "officialName": "정자",
+      "lineId": "B",
+      "observedName": "정자",
+      "east": 965297,
+      "north": 1929664
+    },
+    {
+      "stationCode": "1856",
+      "interchangeUid": "1856",
+      "officialName": "수내",
+      "lineId": "B",
+      "observedName": "수내",
+      "east": 965846,
+      "north": 1931108
+    },
+    {
+      "stationCode": "1855",
+      "interchangeUid": "1855",
+      "officialName": "서현",
+      "lineId": "B",
+      "observedName": "서현",
+      "east": 966654,
+      "north": 1931826
+    },
+    {
+      "stationCode": "1860",
+      "interchangeUid": "1860",
+      "officialName": "이매",
+      "lineId": "B",
+      "observedName": "이매",
+      "east": 967092,
+      "north": 1932970
+    },
+    {
+      "stationCode": "1854",
+      "interchangeUid": "1854",
+      "officialName": "야탑",
+      "lineId": "B",
+      "observedName": "야탑",
+      "east": 967141,
+      "north": 1934749
+    },
+    {
+      "stationCode": "1853",
+      "interchangeUid": "1853",
+      "officialName": "모란",
+      "lineId": "B",
+      "observedName": "모란",
+      "east": 967183,
+      "north": 1937066
+    },
+    {
+      "stationCode": "1852",
+      "interchangeUid": "1852",
+      "officialName": "태평",
+      "lineId": "B",
+      "observedName": "태평",
+      "east": 967068,
+      "north": 1937902
+    },
+    {
+      "stationCode": "1851",
+      "interchangeUid": "1851",
+      "officialName": "가천대",
+      "lineId": "B",
+      "observedName": "가천대",
+      "east": 966981,
+      "north": 1938900
+    },
+    {
+      "stationCode": "4311",
+      "interchangeUid": "4311",
+      "officialName": "판교",
+      "lineId": "S",
+      "observedName": "판교",
+      "east": 965584,
+      "north": 1932878
+    },
+    {
+      "stationCode": "4313",
+      "interchangeUid": "1858",
+      "officialName": "미금",
+      "lineId": "S",
+      "observedName": "미금",
+      "east": 965368,
+      "north": 1927957
+    },
+    {
+      "stationCode": "4314",
+      "interchangeUid": "4314",
+      "officialName": "동천",
+      "lineId": "S",
+      "observedName": "동천",
+      "east": 964820,
+      "north": 1926614
+    },
+    {
+      "stationCode": "4315",
+      "interchangeUid": "4315",
+      "officialName": "수지구청",
+      "lineId": "S",
+      "observedName": "수지구청",
+      "east": 964096,
+      "north": 1924910
+    },
+    {
+      "stationCode": "4316",
+      "interchangeUid": "4316",
+      "officialName": "성복",
+      "lineId": "S",
+      "observedName": "성복",
+      "east": 962811,
+      "north": 1923909
+    },
+    {
+      "stationCode": "4317",
+      "interchangeUid": "4317",
+      "officialName": "상현",
+      "lineId": "S",
+      "observedName": "상현",
+      "east": 961831,
+      "north": 1922138
+    },
+    {
+      "stationCode": "4318",
+      "interchangeUid": "4318",
+      "officialName": "광교중앙",
+      "lineId": "S",
+      "observedName": "광교중앙",
+      "east": 960245,
+      "north": 1921162
+    },
+    {
+      "stationCode": "4319",
+      "interchangeUid": "4319",
+      "officialName": "광교",
+      "lineId": "S",
+      "observedName": "광교",
+      "east": 959546,
+      "north": 1922711
+    },
+    {
+      "stationCode": "1501",
+      "interchangeUid": "4311",
+      "officialName": "판교",
+      "lineId": "KK",
+      "observedName": "판교",
+      "east": 965587,
+      "north": 1932922
+    },
+    {
+      "stationCode": "1502",
+      "interchangeUid": "1860",
+      "officialName": "이매",
+      "lineId": "KK",
+      "observedName": "이매",
+      "east": 967097,
+      "north": 1933065
+    },
+    {
+      "stationCode": "1503",
+      "interchangeUid": "1503",
+      "officialName": "삼동",
+      "lineId": "KK",
+      "observedName": "삼동",
+      "east": 973748,
+      "north": 1934530
+    },
+    {
+      "stationCode": "1504",
+      "interchangeUid": "1504",
+      "officialName": "경기광주",
+      "lineId": "KK",
+      "observedName": "경기광주",
+      "east": 978106,
+      "north": 1933451
+    },
+    {
+      "stationCode": "1505",
+      "interchangeUid": "1505",
+      "officialName": "초월",
+      "lineId": "KK",
+      "observedName": "초월",
+      "east": 982204,
+      "north": 1930613
+    },
+    {
+      "stationCode": "1506",
+      "interchangeUid": "1506",
+      "officialName": "곤지암",
+      "lineId": "KK",
+      "observedName": "곤지암",
+      "east": 986427,
+      "north": 1928042
+    },
+    {
+      "stationCode": "1507",
+      "interchangeUid": "1507",
+      "officialName": "신둔도예촌",
+      "lineId": "KK",
+      "observedName": "신둔도예촌",
+      "east": 991561,
+      "north": 1924249
+    },
+    {
+      "stationCode": "1508",
+      "interchangeUid": "1508",
+      "officialName": "이천",
+      "lineId": "KK",
+      "observedName": "이천",
+      "east": 994880,
+      "north": 1918521
+    },
+    {
+      "stationCode": "1509",
+      "interchangeUid": "1509",
+      "officialName": "부발",
+      "lineId": "KK",
+      "observedName": "부발",
+      "east": 999138,
+      "north": 1917922
+    },
+    {
+      "stationCode": "1510",
+      "interchangeUid": "1510",
+      "officialName": "세종대왕릉",
+      "lineId": "KK",
+      "observedName": "세종대왕릉",
+      "east": 1006287,
+      "north": 1921820
+    },
+    {
+      "stationCode": "4501",
+      "interchangeUid": "1865",
+      "officialName": "기흥",
+      "lineId": "E",
+      "observedName": "기흥",
+      "east": 965951,
+      "north": 1919702
+    },
+    {
+      "stationCode": "4502",
+      "interchangeUid": "4502",
+      "officialName": "강남대",
+      "lineId": "E",
+      "observedName": "강남대",
+      "east": 966844,
+      "north": 1919093
+    },
+    {
+      "stationCode": "4503",
+      "interchangeUid": "4503",
+      "officialName": "지석",
+      "lineId": "E",
+      "observedName": "지석",
+      "east": 967773,
+      "north": 1919028
+    },
+    {
+      "stationCode": "4504",
+      "interchangeUid": "4504",
+      "officialName": "어정",
+      "lineId": "E",
+      "observedName": "어정",
+      "east": 968414,
+      "north": 1919615
+    },
+    {
+      "stationCode": "4505",
+      "interchangeUid": "4505",
+      "officialName": "동백",
+      "lineId": "E",
+      "observedName": "동백",
+      "east": 969209,
+      "north": 1918960
+    },
+    {
+      "stationCode": "4506",
+      "interchangeUid": "4506",
+      "officialName": "초당",
+      "lineId": "E",
+      "observedName": "초당",
+      "east": 969802,
+      "north": 1918038
+    },
+    {
+      "stationCode": "4508",
+      "interchangeUid": "4508",
+      "officialName": "삼가",
+      "lineId": "E",
+      "observedName": "삼가",
+      "east": 970560,
+      "north": 1915968
+    },
+    {
+      "stationCode": "4510",
+      "interchangeUid": "4510",
+      "officialName": "명지대",
+      "lineId": "E",
+      "observedName": "명지대",
+      "east": 972530,
+      "north": 1915501
+    },
+    {
+      "stationCode": "4511",
+      "interchangeUid": "4511",
+      "officialName": "김량장",
+      "lineId": "E",
+      "observedName": "김량장",
+      "east": 973282,
+      "north": 1915419
+    },
+    {
+      "stationCode": "4513",
+      "interchangeUid": "4513",
+      "officialName": "고진",
+      "lineId": "E",
+      "observedName": "고진",
+      "east": 974657,
+      "north": 1916257
+    },
+    {
+      "stationCode": "4514",
+      "interchangeUid": "4514",
+      "officialName": "보평",
+      "lineId": "E",
+      "observedName": "보평",
+      "east": 975035,
+      "north": 1917823
+    },
+    {
+      "stationCode": "4515",
+      "interchangeUid": "4515",
+      "officialName": "둔전",
+      "lineId": "E",
+      "observedName": "둔전",
+      "east": 974610,
+      "north": 1918721
+    },
+    {
+      "stationCode": "103C",
+      "interchangeUid": "1953",
+      "officialName": "대곡",
+      "lineId": "SH",
+      "observedName": "대곡",
+      "east": 939141,
+      "north": 1959315
+    },
+    {
+      "stationCode": "104C",
+      "interchangeUid": "1271",
+      "officialName": "능곡",
+      "lineId": "SH",
+      "observedName": "능곡",
+      "east": 940095,
+      "north": 1957880
+    },
+    {
+      "stationCode": "1981",
+      "interchangeUid": "1981",
+      "officialName": "원종",
+      "lineId": "SH",
+      "observedName": "원종",
+      "east": 938581,
+      "north": 1947212
+    },
+    {
+      "stationCode": "1982",
+      "interchangeUid": "3754",
+      "officialName": "부천종합운동장",
+      "lineId": "SH",
+      "observedName": "부천종합운동장",
+      "east": 937907,
+      "north": 1945378
+    },
+    {
+      "stationCode": "4804",
+      "interchangeUid": "1814",
+      "officialName": "소사",
+      "lineId": "SH",
+      "observedName": "소사",
+      "east": 937687,
+      "north": 1942809
+    },
+    {
+      "stationCode": "4805",
+      "interchangeUid": "4805",
+      "officialName": "소새울",
+      "lineId": "SH",
+      "observedName": "소새울",
+      "east": 937857,
+      "north": 1941286
+    },
+    {
+      "stationCode": "4806",
+      "interchangeUid": "4806",
+      "officialName": "시흥대야",
+      "lineId": "SH",
+      "observedName": "시흥대야",
+      "east": 937471,
+      "north": 1939225
+    },
+    {
+      "stationCode": "4807",
+      "interchangeUid": "4807",
+      "officialName": "신천",
+      "lineId": "SH",
+      "observedName": "신천",
+      "east": 936915,
+      "north": 1938035
+    },
+    {
+      "stationCode": "4808",
+      "interchangeUid": "4808",
+      "officialName": "신현",
+      "lineId": "SH",
+      "observedName": "신현",
+      "east": 936980,
+      "north": 1934745
+    },
+    {
+      "stationCode": "4809",
+      "interchangeUid": "4809",
+      "officialName": "시흥시청",
+      "lineId": "SH",
+      "observedName": "시흥시청",
+      "east": 938544,
+      "north": 1931664
+    },
+    {
+      "stationCode": "4810",
+      "interchangeUid": "4810",
+      "officialName": "시흥능곡",
+      "lineId": "SH",
+      "observedName": "시흥능곡",
+      "east": 938801,
+      "north": 1930355
+    },
+    {
+      "stationCode": "4811",
+      "interchangeUid": "4811",
+      "officialName": "달미",
+      "lineId": "SH",
+      "observedName": "달미",
+      "east": 938811,
+      "north": 1927998
+    },
+    {
+      "stationCode": "4812",
+      "interchangeUid": "4812",
+      "officialName": "선부",
+      "lineId": "SH",
+      "observedName": "선부",
+      "east": 938872,
+      "north": 1926376
+    },
+    {
+      "stationCode": "4813",
+      "interchangeUid": "1758",
+      "officialName": "초지",
+      "lineId": "SH",
+      "observedName": "초지",
+      "east": 938688,
+      "north": 1924762
+    },
+    {
+      "stationCode": "4814",
+      "interchangeUid": "4814",
+      "officialName": "시우",
+      "lineId": "SH",
+      "observedName": "시우",
+      "east": 937596,
+      "north": 1924024
+    },
+    {
+      "stationCode": "4815",
+      "interchangeUid": "4815",
+      "officialName": "원시",
+      "lineId": "SH",
+      "observedName": "원시",
+      "east": 936797,
+      "north": 1922858
+    },
+    {
+      "stationCode": "4509",
+      "interchangeUid": "4509",
+      "officialName": "시청·용인대",
+      "lineId": "E",
+      "observedName": "시청?용인대",
+      "east": 971476,
+      "north": 1915636,
+      "identitySource": "https://ever-line.co.kr/"
+    },
+    {
+      "stationCode": "4517",
+      "interchangeUid": "4517",
+      "officialName": "전대·에버랜드",
+      "lineId": "E",
+      "observedName": "전대?에버랜드",
+      "east": 975141,
+      "north": 1920749,
+      "identitySource": "https://ever-line.co.kr/"
+    },
+    {
+      "stationCode": "108C",
+      "interchangeUid": "1275",
+      "officialName": "일산",
+      "lineId": "SH",
+      "observedName": "일산",
+      "east": 935619,
+      "north": 1964971,
+      "identitySource": "https://info.korail.com/info/selectBbsNttView.do?key=911&bbsNo=199&nttNo=19481"
+    },
+    {
+      "stationCode": "107C",
+      "interchangeUid": "1274",
+      "officialName": "풍산",
+      "lineId": "SH",
+      "observedName": "풍산",
+      "east": 937028,
+      "north": 1963945,
+      "identitySource": "https://info.korail.com/info/selectBbsNttView.do?key=911&bbsNo=199&nttNo=19481"
+    },
+    {
+      "stationCode": "106C",
+      "interchangeUid": "1273",
+      "officialName": "백마",
+      "lineId": "SH",
+      "observedName": "백마",
+      "east": 937809,
+      "north": 1962245,
+      "identitySource": "https://info.korail.com/info/selectBbsNttView.do?key=911&bbsNo=199&nttNo=19481"
+    },
+    {
+      "stationCode": "105C",
+      "interchangeUid": "1272",
+      "officialName": "곡산",
+      "lineId": "SH",
+      "observedName": "곡산",
+      "east": 938372,
+      "north": 1960995,
+      "identitySource": "https://info.korail.com/info/selectBbsNttView.do?key=911&bbsNo=199&nttNo=19481"
+    },
+    {
+      "stationCode": "4512",
+      "interchangeUid": "4512",
+      "officialName": "용인중앙시장",
+      "lineId": "E",
+      "observedName": "운동장?송담대",
+      "east": 974206,
+      "north": 1915482,
+      "identitySource": "https://ever-line.co.kr/",
+      "identityBasis": "운영기관 역번호11 및 기존 좌표자료 동일 역코드4512"
+    },
+    {
+      "stationCode": "3210",
+      "interchangeUid": "3210",
+      "officialName": "서해구청",
+      "lineId": "I2",
+      "observedName": "서구청",
+      "east": 927278,
+      "north": 1949698,
+      "identitySource": "https://www.ictr.or.kr/main/subway/subwayStation.do?line_no=2&station_no=210",
+      "identityBasis": "I210 동일 역번호와 아시아드경기장~가정 인접 순서"
+    },
+    {
+      "stationCode": "1511",
+      "interchangeUid": "1511",
+      "officialName": "여주",
+      "lineId": "KK",
+      "observedName": "여주",
+      "east": 1011400,
+      "north": 1920447,
+      "coordinateSource": "lore/places/connected-rail-stations.json",
+      "osmId": "5930629972"
+    },
+    {
+      "stationCode": "1286",
+      "interchangeUid": "1286",
+      "officialName": "운천",
+      "lineId": "K",
+      "observedName": "운천",
+      "east": 935796,
+      "north": 1986933,
+      "coordinateSource": "lore/places/connected-rail-stations.json",
+      "osmId": "9950727434"
+    },
+    {
+      "stationCode": "1285",
+      "interchangeUid": "1285",
+      "officialName": "임진강",
+      "lineId": "K",
+      "observedName": "임진강",
+      "east": 933900,
+      "north": 1987868,
+      "coordinateSource": "lore/places/connected-rail-stations.json",
+      "osmId": "2090733354"
+    },
+    {
+      "stationCode": "1402",
+      "interchangeUid": "1402",
+      "officialName": "쌍용",
+      "lineId": "2-1",
+      "observedName": "쌍용",
+      "east": 966213,
+      "north": 1866241,
+      "coordinateSource": "lore/places/connected-rail-stations.json",
+      "osmId": "980061738"
+    },
+    {
+      "stationCode": "0009",
+      "interchangeUid": "1512",
+      "officialName": "성남",
+      "lineId": "1-GA",
+      "observedName": "성남",
+      "east": 966416,
+      "north": 1932800,
+      "coordinateSource": "lore/places/connected-rail-stations.json",
+      "osmId": "10787176950",
+      "identitySource": "https://snvision.seongnam.go.kr/18836",
+      "sharedWikidata": "Q123158798"
+    },
+    {
+      "stationCode": "1512",
+      "interchangeUid": "1512",
+      "officialName": "성남",
+      "lineId": "KK",
+      "observedName": "성남",
+      "east": 966313,
+      "north": 1932911,
+      "coordinateSource": "lore/places/connected-rail-stations.json",
+      "osmId": "10787176951",
+      "identitySource": "https://snvision.seongnam.go.kr/18836",
+      "sharedWikidata": "Q123158798"
+    },
+    {
+      "stationCode": "9000",
+      "interchangeUid": "9000",
+      "officialName": "운정중앙",
+      "lineId": "1-GA",
+      "observedName": "운정중앙",
+      "east": 931977,
+      "north": 1968785,
+      "identitySource": "https://www.paju.go.kr/www/www_02/environment/traffic_safe_traffic/traffic_safe_traffic_11.jsp",
+      "coordinateCheckUrl": "https://pts.map.naver.com/end-subway/ends/web/9111/home"
+    }
+  ],
+  "unresolved": []
+}
