@@ -585,3 +585,19 @@
 .territory-flat-controls button:focus-visible, .territory-flat-region:focus-visible { outline: 2px solid #ffdf83; }
 .territory-rail-toggle { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 700; }
 .territory-map-flat .territory-detail { max-block-size: 85%; }
+
+/* Confirmed holding selection uses the existing map geometry and click handlers. */
+.territory-map-flat > .territory-detail { inset-block-start: auto; inset-block-end: 0.75rem; inset-inline-start: 0.75rem; inset-inline-end: auto; border: 1px solid var(--wiki-line); box-shadow: none; }
+.campaign-holding { word-break: keep-all; overflow-wrap: anywhere; }
+.campaign-holding header { border-block-end: 1px solid var(--wiki-line); padding-block-end: 0.5rem; }
+.campaign-holding dl { margin: 0.5rem 0; }
+.campaign-holding dl > div { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 0.5rem; padding-block: 0.25rem; }
+.campaign-holding dt { color: var(--wiki-muted); }
+.campaign-holding dd { margin: 0; }
+.campaign-holding details { margin-block: 0.5rem; }
+.campaign-holding-regions { display: flex; flex-wrap: wrap; gap: 0.25rem; list-style: none; margin: 0.5rem 0; padding: 0; }
+.campaign-holding-regions button { border: 1px solid var(--wiki-line); color: var(--wiki-text); background: var(--wiki-paper); padding: 0.25rem 0.5rem; font: inherit; cursor: pointer; }
+.campaign-holding-regions button[aria-pressed='true'] { background: var(--wiki-nav); color: var(--wiki-paper); }
+.campaign-holding-retainers { list-style: none; margin: 0.5rem 0; padding: 0; }
+.campaign-holding-retainers li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; padding-block: 0.25rem; }
+.campaign-holding button:focus-visible, .campaign-holding a:focus-visible, .campaign-holding summary:focus-visible { outline: 2px solid var(--wiki-accent); outline-offset: 2px; }
