@@ -1,0 +1,158 @@
+{
+  "schema": "station-facility-reference.v1",
+  "asOf": "2026-10-02",
+  "stationId": "샛강",
+  "lineIds": [
+    "10-9",
+    "SL"
+  ],
+  "siteIdentity": {
+    "mapStationCount": 1,
+    "osmStationNodeCount": 2,
+    "sharedWikidata": "Q60000",
+    "identityScope": "노선별 두 위치점을 하나의 환승역 지도 ID에 연결한다. 대합실 경계나 동일 좌표를 뜻하지 않는다.",
+    "license": "ODbL 1.0",
+    "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap contributors",
+    "anchors": [
+      {
+        "id": "osm:node:8401534578",
+        "url": "https://www.openstreetmap.org/node/8401534578",
+        "apiUrl": "https://www.openstreetmap.org/api/0.6/node/8401534578",
+        "version": 6,
+        "lineId": "10-9",
+        "stationType": "subway",
+        "operator": "서울시메트로9호선",
+        "lat": 37.517362,
+        "lon": 126.928282,
+        "proofScope": "운영기관·역 종류·공통 Wikidata 태그와 공식 역정보를 대조한 위치점"
+      },
+      {
+        "id": "osm:node:8401534582",
+        "url": "https://www.openstreetmap.org/node/8401534582",
+        "apiUrl": "https://www.openstreetmap.org/api/0.6/node/8401534582",
+        "version": 12,
+        "lineId": "SL",
+        "stationType": "light_rail",
+        "operator": "로템SRS",
+        "lat": 37.5173674,
+        "lon": 126.9294177,
+        "proofScope": "운영기관·역 종류·공통 Wikidata 태그와 신림선 공식 역정보를 대조한 위치점"
+      }
+    ]
+  },
+  "publicationRights": {
+    "drawingsCopied": false,
+    "photosCopied": false,
+    "sourceProseCopied": false,
+    "officialWorkReuseLicense": null,
+    "basis": "공식 자료는 URL·조회 해시·사실값·검토 판정만 참조한다. 공개 열람을 도면·사진 재배포 허가로 해석하지 않는다."
+  },
+  "interiorRef": {
+    "path": "lore/regions/station-interiors.json",
+    "name": "샛강",
+    "layerId": "concourse"
+  },
+  "mapRef": {
+    "path": "public/opening-territories.json",
+    "stationId": "샛강",
+    "surfaceRegionId": "region:1156054000",
+    "surfaceRegionRole": "location-context-only",
+    "geometryKind": "station-point",
+    "facilityPolygon": null
+  },
+  "observations": [
+    {
+      "id": "sillim-station-info",
+      "publisher": "신림선도시철도",
+      "url": "http://www.sillimlrt.com/kr/html/sub01/010301.html",
+      "sourceKind": "official",
+      "scope": "신림선 운영기관·9호선 환승 안내 대조",
+      "status": "floor-label-conflict-unresolved",
+      "transportAuthentication": "HTTP 원문 조회; HTTPS 인증서 검증 오류로 전송 인증 한계 유지"
+    },
+    {
+      "id": "metro9-station-info",
+      "publisher": "서울시메트로9호선",
+      "url": "https://www.metro9.co.kr/prog/subwayInfo/kor/sub01_01/view.do",
+      "query": {
+        "sbwyNo": "4116",
+        "tabSe": "03"
+      },
+      "sourceKind": "official",
+      "claims": {
+        "platformType": "상대식",
+        "undergroundLevels": 3,
+        "exits": 4
+      },
+      "scope": "9호선 역정보",
+      "status": "conflicting-floor-description"
+    },
+    {
+      "id": "metro9-guide",
+      "url": "https://www.metro9.co.kr/thumbnail/subwayInfo/920_SI_20240216175854454Qo51.jpg",
+      "sha256": "797b0a7b869c4a022772ded165ddca4d72bc595147e88daec08f2c0b83794fbd",
+      "sourceKind": "official-guide-image",
+      "altClaims": {
+        "undergroundLevels": 4,
+        "exitLevel": "B2",
+        "platformLevels": [
+          "B3",
+          "B4"
+        ]
+      },
+      "status": "conflicts-with-station-info",
+      "use": "도면 대체텍스트와 역정보가 충돌하므로 전체 층수와 노선별 층을 확정하지 않는다."
+    },
+    {
+      "id": "metro9-photo-201107",
+      "url": "https://www.metro9.co.kr/webzine/1107/iframe03_08.html",
+      "sourceKind": "official-historical-photo",
+      "publishedMonth": "2011-07",
+      "claims": [
+        "게이트 밖 좌측 벽면 벽화",
+        "게이트 밖 공연장, 공연이 없으면 휴게공간"
+      ],
+      "photoUrls": [
+        "https://www.metro9.co.kr/webzine/images_1107/3-8(2).jpg",
+        "https://www.metro9.co.kr/webzine/images_1107/3-8(3).jpg"
+      ],
+      "scope": "신림선 개통 전 역사 풍경",
+      "currentLayoutVerified": false
+    },
+    {
+      "id": "metro9-accessibility",
+      "url": "https://www.metro9.co.kr/kor/sub01_06_03.do",
+      "sourceKind": "official",
+      "claims": {
+        "elevators": 4,
+        "escalators": 12,
+        "accessibleToilet": true
+      },
+      "scope": "9호선 시설 안내"
+    }
+  ],
+  "fiction2126": {
+    "sourceKind": "owner-directed-fiction",
+    "facilityId": "facility:saetgang-concourse",
+    "holderPersonId": "K233",
+    "directLiegePersonId": "K222",
+    "holdingScope": "concourse-only",
+    "formalTitleRank": null,
+    "wholeDongControl": false,
+    "trackTollRights": false,
+    "layoutDerivedFromOSM": false,
+    "existingLayerState": "occupied",
+    "existingSlots": [
+      "창고",
+      "급수"
+    ],
+    "historicPhotoDoesNotProveSurvival": true
+  },
+  "remaining": [
+    "9호선 안내도 층수 충돌 해소",
+    "신림선 공식 안내도와 9호선 자료의 층 표기 기준 충돌 해소",
+    "대합실 실제 경계·면적·시설 polygon",
+    "지도 lane producer 연결과 해당 lane의 UI 검증"
+  ]
+}
