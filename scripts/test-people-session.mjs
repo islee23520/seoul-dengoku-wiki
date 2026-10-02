@@ -6,6 +6,7 @@ import { MemoryRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import { test, vi } from 'vitest'
 import PeoplePage from '../src/pages/PeoplePage.tsx'
 import { peopleCatalog } from '../src/generated/peopleCatalog.ts'
+import { portraitIdentities } from '../src/generated/portraitIdentities.ts'
 
 const key = 'wiki.people.filters.v1'
 const selected = { query: '감국', state: '신내운수', commonTier: 'T5', occupation: '외곽 호송 인원·발포 권한 확인', gender: '여성' }
@@ -146,7 +147,7 @@ test('ordinary roster and five controls remain without featured sections or port
   try {
     assert.equal(page.host.querySelector('.people-recommended'), null)
     assert.equal(page.host.querySelector('.people-leaders'), null)
-    assert.equal(page.host.querySelector('img.people-portrait'), null)
+    assert.equal(page.host.querySelectorAll('.people-row-portrait').length, portraitIdentities.length)
     assert.equal(page.host.querySelector('a[href*="portrait-tokens/"]'), null)
     assert.deepEqual(values(page.host), defaults)
     assert.equal(page.host.querySelectorAll('.people-filters select').length, 4)
@@ -157,5 +158,29 @@ test('ordinary roster and five controls remain without featured sections or port
     assert.deepEqual(values(page.host), selected)
     assert.equal(page.host.querySelectorAll('.people-table tbody tr').length, 1)
     assert.equal(page.host.querySelector('.people-table a').getAttribute('href'), '/people/person-0306')
+  } finally { await page.close(); sessionStorage.clear() }
+})
+
+
+test('ordinary-row portraits bind stable IDs and ordered existing metadata without invented flags or titles', async () => {
+  sessionStorage.clear()
+  const page = await mount()
+  try {
+    for (const portrait of portraitIdentities) {
+      const row = page.host.querySelector('[data-person-id="' + portrait.personId + '"]')
+      const figure = row.querySelector('.people-row-portrait')
+      assert.ok(figure)
+      assert.equal(figure.querySelector('a').getAttribute('href'), '/people/' + portrait.personId)
+      assert.ok(figure.querySelector('img').getAttribute('src').includes(portrait.personId + '.png?v=' + portrait.imageSha256))
+      const expected = ['stateFlag', 'stateName', 'clanCrest', 'bongwan', 'nobleTitle'].filter(key => portrait[key] !== null)
+      assert.deepEqual([...figure.querySelectorAll('[data-identity-field]')].map(node => node.dataset.identityField), expected)
+      assert.equal(figure.querySelector('[data-identity-field="nobleTitle"]'), null)
+    }
+    const iyen = page.host.querySelector('[data-person-id="person-1004"] .people-row-portrait')
+    assert.equal(iyen.querySelector('[data-identity-field="stateFlag"]'), null)
+    assert.equal(iyen.querySelector('[data-identity-field="clanCrest"]'), null)
+    assert.equal(iyen.querySelector('[data-identity-field="bongwan"]'), null)
+    const yura = portraitIdentities.find(row => row.personId === 'person-0399')
+    assert.equal(yura.characterId, 'K398')
   } finally { await page.close(); sessionStorage.clear() }
 })

@@ -963,6 +963,21 @@ for (const person of peopleCatalog) {
 await mkdir(privateGeneratedRoot, { recursive: true })
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.ko.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'ko')))}\n`)
 await writeFile(resolve(privateGeneratedRoot, 'feedback-selectable-views.en.json'), `${JSON.stringify(privateCatalog(feedbackRecords.filter((record) => record.locale === 'en')))}\n`)
+const portraitRegistry = JSON.parse(await readFile(resolve(repoRoot, 'portrait-catalog.json'), 'utf8'))
+const portraitIdentities = portraitRegistry.entries.map((entry) => {
+  const person = peopleCatalog.find((person) => person.id === entry.personId)
+  if (!person || person.name !== entry.name || issuedIdByName.get(person.name) !== entry.characterId) throw new Error(`E_PORTRAIT_IDENTITY:${entry.personId}`)
+  const lineage = lineageByName.get(person.name)
+  const clanId = lineage?.base_clan ?? lineage?.clan ?? null
+  return { personId: person.id, characterId: entry.characterId, imageSha256: entry.imageSha256,
+    stateFlag: /^S(?:0[1-9]|1[0-6])$/.test(person.state) ? `state-flags/${person.state}.webp` : null,
+    stateName: person.stateName || '무소속', clanId,
+    clanCrest: clanId ? `clan-crests/${clanId}.svg` : null,
+    bongwan: clanId && lineage?.bongwan ? lineage.bongwan : null,
+    nobleTitle: null }
+})
+await writeFile(resolve(generatedRoot, 'portraitIdentities.ts'), `export const portraitIdentities = ${JSON.stringify(portraitIdentities, null, 2)} as const\n`)
+
 await writeFile(resolve(generatedRoot, 'peopleCatalog.ts'), `export const peopleCatalog = ${JSON.stringify(peopleCatalog, null, 2)} as const\nexport const peopleCount = ${peopleCatalog.length}\n`)
 // The home page reads only the count, so it gets its own module and does not bundle the catalog.
 await writeFile(resolve(generatedRoot, 'peopleCount.ts'), `export const peopleCount = ${peopleCatalog.length}\n`)
