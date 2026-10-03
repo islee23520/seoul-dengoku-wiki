@@ -7,9 +7,24 @@ import portraitCatalog from '../../portrait-catalog.json'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
+import { FamilyTree } from '../components/FamilyTree'
+import type { FamilyTreeData } from '../components/FamilyTree'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type PersonDetail = (typeof peopleCatalog)[number] & {
+  readonly familyTree: FamilyTreeData
+  readonly birthDate: string
+  readonly birthday: string
+  readonly age: number
+  readonly ageAsOf: string
+  readonly sourceStatus: 'owner-authored' | 'existing-canon'
+  readonly sourceRefs: readonly string[]
+  readonly proseContacts?: readonly { readonly recipientId: string; readonly recipientName: string; readonly basis: string }[]
+  readonly householdProposal?: {
+    readonly status: 'draft'
+    readonly links: readonly { readonly recipientId: string; readonly recipientName: string; readonly recipientKind: 'person' | 'family-node'; readonly type: 'kin' | 'contract'; readonly role: string; readonly basis: string }[]
+    readonly household: { readonly humanoidAdmission: string; readonly genderPreference: string }
+  } | null
   gurps: GurpsSheetData & { id: string; personId: string }
   unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
   territory?: { fief_name: string; type: string; station: string; state: string; settlement: { name: string; type: string; description: string }; note: string } | null
@@ -56,6 +71,7 @@ type SheetSecondary = { HP?: number; FP?: number; Will?: number; Per?: number; B
 export type GurpsSheetData = {
   band: string | null
   attributes: Partial<Record<'ST' | 'DX' | 'IQ' | 'HT', SheetAttr>>
+  numericStatus?: 'proposal' | null
   traits: SheetTrait[]
   skills: SheetSkill[]
   cp: SheetCp
@@ -141,7 +157,8 @@ export function parseGurpsSheet(payload: unknown, personId: string): GurpsParseR
   const secondary = pickNumbers('secondary', payload.secondary, ['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'Dodge'])
   if (typeof secondary === 'string') return reject(secondary)
 
-  return { ok: true, sheet: { band, attributes, traits, skills, cp: cp as SheetCp, secondary: secondary as SheetSecondary } }
+  if (payload.numericStatus !== undefined && payload.numericStatus !== null && payload.numericStatus !== 'proposal') return reject('numericStatus가 지원되지 않는 값이다')
+  return { ok: true, sheet: { band, ...(payload.numericStatus === 'proposal' ? { numericStatus: 'proposal' as const } : {}), attributes, traits, skills, cp: cp as SheetCp, secondary: secondary as SheetSecondary } }
 }
 
 export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
@@ -163,6 +180,7 @@ export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
   return (
     <section className="gurps-sheet">
       <h2>겁스 능력치</h2>
+      {gurps.numericStatus === 'proposal' && <p className="gurps-proposal-status">능력치 설정안 · 수치 승인 전</p>}
       <div className="gurps-cp-total">
         <span className="cp-number">{cp.total ?? '—'}</span>
         <span className="cp-label">CP</span>
@@ -350,10 +368,12 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
   const sheet = parseGurpsSheet(detail.gurps, personId)
   const basicRows: Array<Array<string | number | null>> = [
     ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
+    ['생년월일', detail.birthDate], ['생일', detail.birthday], ['나이', `만 ${detail.age}세`], ['나이 기준일', detail.ageAsOf],
     ['직위', person.position], ['직급(공통 티어)', person.commonTier], ['국가 품계', person.rank], ['직업', person.occupation], ['성별', person.gender], ['단계', person.stage], ['세대', person.generation],
-    ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속'].includes(label)),
+    ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속', '생년월일', '생일', '나이', '나이 기준일'].includes(label)),
   ]
   const relationRows = [
+    ...(detail.proseContacts ?? []).map(contact => [`업무 접점 · ${contact.recipientName}`, contact.basis]),
     ...(detail.directLiege ? [[`직속 주군 · ${detail.directLiege.name}`, `2126년 · ${detail.directLiege.courtId} 소속 가신`]] : []),
     ...(detail.court ? detail.court.members.map((member) => [`궁정 가신 · ${member.name}`, `2126년 · ${detail.court?.id}`]) : []),
     ...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as Array<string>),
@@ -392,6 +412,17 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           <DataTable title="관계" rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />
         </aside>
         <div className="wiki-prose person-canon-prose">
+          {detail.familyTree && <FamilyTree tree={detail.familyTree} />}
+          {detail.householdProposal && <section className="person-household-proposal">
+            <h2>가문 관계 설정안</h2>
+            {detail.householdProposal.links.length > 0 && <><p>현재 직속 가신 임명과 구분한 가족·계약 관계 설정안입니다.</p>
+            <DataTable title="가족과 외부 계약" rows={detail.householdProposal.links.map(link => {
+              const relative = detail.familyTree.nodes.find(node => node.id === link.recipientId)
+              const roles: Record<string, string> = { father: '아버지', mother: '어머니', 'grain-and-parts-logistics': '곡물·부품 운송', 'specification-audit-contact': '규격·감사 연락', 'wheel-inspection-contact': '차륜 검사 연락' }
+              return [`${relative?.name ?? link.recipientName} · ${link.type === 'kin' ? '가족' : '외부 계약'} · ${roles[link.role] ?? link.role}`, link.type === 'kin' ? '가계도에 연결된 부모 관계' : link.basis]
+            })} /></>}
+            <p>휴머노이드 입가: {detail.householdProposal.household.humanoidAdmission === 'deferred' ? '가문 신앙 확인 전 보류' : detail.householdProposal.household.humanoidAdmission === 'excluded' ? '기독교계 집안 반입 제외' : detail.householdProposal.household.humanoidAdmission}</p>
+          </section>}
           <h2>정본 상세</h2>
           {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : <><PersonSections sections={detail.sections} /><details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details></>}
 

@@ -12,6 +12,328 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-한차우",
   "detailRoute": "/people/person-0828",
+  "birthDate": "2075-07-08",
+  "birthday": "07-08",
+  "age": 51,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/577",
+    "lore/characters/Cast-State-05.json#/content/579",
+    "lore/characters/Cast-State-05.json#/content/580"
+  ],
+  "familyTree": {
+    "personId": "K828",
+    "nodes": [
+      {
+        "id": "K828",
+        "personId": "K828",
+        "kind": "person",
+        "name": "한차우",
+        "birthDate": "2075-07-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K828"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-한차우-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0828"
+      },
+      {
+        "id": "FH-K828-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한도재",
+        "birthDate": "2045-07-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2083,
+            "summary": "한도재는 영등포 정수 당직에서 우회 급수로 개통·전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-한차우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K828-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한도찬",
+        "birthDate": "2015-07-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한도찬은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-한차우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K828-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박도온",
+        "birthDate": "2045-07-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2083,
+            "summary": "박도온은 영등포 정수 당직에서 우회 급수로 개통·전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-한차우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K828-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도나",
+        "birthDate": "2015-07-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이도나는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-한차우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K828-P-01:K828:biological",
+        "from": "FH-K828-P-01",
+        "to": "K828",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K828-P-02:FH-K828-P-01:biological",
+        "from": "FH-K828-P-02",
+        "to": "FH-K828-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K828-M-01:K828:biological",
+        "from": "FH-K828-M-01",
+        "to": "K828",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K828-M-02:FH-K828-M-01:biological",
+        "from": "FH-K828-M-02",
+        "to": "FH-K828-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-한차우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K828",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K828-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3995"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K828-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3997"
+          }
+        ]
+      },
+      {
+        "recipientId": "K121",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "한차우는 우회 급수로의 개통과 공급 상태를 최도윤에게 알린다. 최도윤은 골목 배급표로 실제 물을 못 받는 가족을 확인해 급수 조정이 복무 등록으로 묶이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/560"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K828",
     "personId": "person-0828",
@@ -150,17 +472,24 @@
     "무공": "한류공.",
     "관직": "품계 병장. 직함은 급수 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 한차우는 우회 급수로의 개통과 공급 상태를 최도윤에게 알린다. 최도윤은 골목 배급표로 실제 물을 못 받는 가족을 확인해 급수 조정이 복무 등록으로 묶이지 않게 한다.",
     "야망": "급수 전령 자리에서 동방사의 장부를 끊기지 않게 잇는다.",
     "공포": "급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 우회 급수로 개통·전달\n- 품계: 병장\n- 직함: 급수 전령\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 병장. 직함은 급수 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 급수 전령 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −25 | 무력 60 | 물질 20 | 공동 30 | 원칙 −15 | 공개 −30 | 자격 −25 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 50 | 독점 −30 | 위험 −30 | 과시 −30 | 지속 30 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 우회 급수로 개통·전달\n- 품계: 병장\n- 직함: 급수 전령\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 병장. 직함은 급수 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 한차우는 우회 급수로의 개통과 공급 상태를 최도윤에게 알린다. 최도윤은 골목 배급표로 실제 물을 못 받는 가족을 확인해 급수 조정이 복무 등록으로 묶이지 않게 한다.\n\n**야망.** 급수 전령 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −25 | 무력 60 | 물질 20 | 공동 30 | 원칙 −15 | 공개 −30 | 자격 −25 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 50 | 독점 −30 | 위험 −30 | 과시 −30 | 지속 30 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-05"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "한차우",
+        "type": "계약",
+        "to": "최도윤",
+        "basis": "한차우는 우회 급수로의 개통과 공급 상태를 최도윤에게 알린다. 최도윤은 골목 배급표로 실제 물을 못 받는 가족을 확인해 급수 조정이 복무 등록으로 묶이지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -12,6 +12,473 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Core-Characters#김연규",
   "detailRoute": "/people/person-1007",
+  "birthDate": "2096-05-23",
+  "birthday": "05-23",
+  "age": 30,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Core-Characters.json#/content/165",
+    "lore/characters/Core-Characters.json#/content/170",
+    "lore/chronology/Century-Annals.json#/content/524",
+    "lore/chronology/Century-Annals.json#/content/526",
+    "lore/chronology/Century-Annals.json#/content/575",
+    "lore/chronology/Scenario-Timeline.json#/content/49"
+  ],
+  "familyTree": {
+    "personId": "K1007",
+    "nodes": [
+      {
+        "id": "K1007",
+        "personId": "K1007",
+        "kind": "person",
+        "name": "김연규",
+        "birthDate": "2096-05-23",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1007"
+          },
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생애. 2126년 세대. 대한민국정부 당직 가문 소속 기록 당직자다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "김연규-p2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-1007"
+      },
+      {
+        "id": "FH-K1007-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김민솔",
+        "birthDate": "2066-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2104,
+            "summary": "김민솔은 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "김연규-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1007-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김민미",
+        "birthDate": "2036-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "김민미는 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "김연규-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1007-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "김민도",
+        "birthDate": "2006-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김민도는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "김연규-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1007-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김서석",
+        "birthDate": "2066-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2104,
+            "summary": "김서석은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "김연규-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1007-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서현",
+        "birthDate": "2036-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "박서현은 생활권의 공동 거처에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "김연규-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1007-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서우",
+        "birthDate": "2006-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이서우는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "김연규-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1007-P-01:K1007:biological",
+        "from": "FH-K1007-P-01",
+        "to": "K1007",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1007-P-02:FH-K1007-P-01:biological",
+        "from": "FH-K1007-P-02",
+        "to": "FH-K1007-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1007-P-03:FH-K1007-P-02:biological",
+        "from": "FH-K1007-P-03",
+        "to": "FH-K1007-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1007-M-01:K1007:biological",
+        "from": "FH-K1007-M-01",
+        "to": "K1007",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1007-M-02:FH-K1007-M-01:biological",
+        "from": "FH-K1007-M-02",
+        "to": "FH-K1007-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1007-M-03:FH-K1007-M-02:biological",
+        "from": "FH-K1007-M-03",
+        "to": "FH-K1007-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "김연규-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K1007",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K1007-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4852"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K1007-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4855"
+          }
+        ]
+      },
+      {
+        "recipientId": "K144",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "온민의 문서 등재",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/1"
+          }
+        ]
+      },
+      {
+        "recipientId": "K144",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "outgoing",
+        "role": "온민의 문서 등재는 허락되고 인준은 거부됨",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/3"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1019",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "온민의 사본과 개정 요청을 대조해 전달 기록을 보내고 김연규가 승인한 개정을 배포함",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/196"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1019",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "사본 관리와 개정 요청 취합을 맡기고 배포할 개정 판단을 돌려줌",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/197"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K1007",
     "personId": "person-1007",
@@ -184,6 +651,12 @@
         "type": "경쟁",
         "to": "윤서린",
         "basis": "온민의 문서 등재는 허락되고 인준은 거부됨"
+      },
+      {
+        "from": "김연규",
+        "type": "계약",
+        "to": "박성수",
+        "basis": "사본 관리와 개정 요청 취합을 맡기고 배포할 개정 판단을 돌려줌"
       }
     ],
     "incoming": [
@@ -191,7 +664,7 @@
         "from": "박성수",
         "type": "계약",
         "to": "김연규",
-        "basis": "김연규가 온민의 문서 사본 관리와 개정 요청 취합을 맡김"
+        "basis": "온민의 사본과 개정 요청을 대조해 전달 기록을 보내고 김연규가 승인한 개정을 배포함"
       }
     ]
   }

@@ -1,6 +1,6 @@
 {
   "id": "person-0606",
-  "name": "손다연",
+  "name": "시몬 카민스키",
   "title": "호송 전령",
   "position": "호송 전령",
   "rank": "주사",
@@ -10,8 +10,529 @@
   "stage": "S4",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-손다연",
+  "sourceRoute": "/world/Cast-State-07#인물-시몬 카민스키",
   "detailRoute": "/people/person-0606",
+  "birthDate": "2102-02-05",
+  "birthday": "02-05",
+  "age": 24,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/380",
+    "lore/characters/Cast-State-07.json#/content/382",
+    "lore/characters/Cast-State-07.json#/content/383"
+  ],
+  "familyTree": {
+    "personId": "K606",
+    "nodes": [
+      {
+        "id": "K606",
+        "personId": "K606",
+        "kind": "person",
+        "name": "시몬 카민스키",
+        "birthDate": "2102-02-05",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K606"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-시몬-카민스키-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Szymon Kamiński",
+        "detailRoute": "/people/person-0606"
+      },
+      {
+        "id": "FH-K606-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "피오트르 카민스키",
+        "birthDate": "2072-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "피오트르 카민스키는 2072년에 태어났다. 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구의 가족 기록과 작업 사본을 읽으며 자랐고, 2090년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-시몬-카민스키-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Piotr Kamiński was born in 2072 and grew up reading family and work records. From 2090, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Piotr Kamiński",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K606-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "얀 카민스키",
+        "birthDate": "2042-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "얀 카민스키는 2042년에 태어났다. 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구의 가족 기록과 작업 사본을 읽으며 자랐고, 2060년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-시몬-카민스키-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Jan Kamiński was born in 2042 and grew up reading family and work records. From 2060, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Jan Kamiński",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K606-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "스타니스와프 카민스키",
+        "birthDate": "2012-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "스타니스와프 카민스키는 2012년에 태어났다. 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구의 가족 기록과 작업 사본을 읽으며 자랐고, 2030년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-시몬-카민스키-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Stanisław Kamiński was born in 2012 and grew up reading family and work records. From 2030, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Stanisław Kamiński",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K606-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "다누타 노비츠카",
+        "birthDate": "2072-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "다누타 노비츠카는 2072년에 태어났다. 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구의 가족 기록과 작업 사본을 읽으며 자랐고, 2090년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-시몬-카민스키-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Danuta Nowicka was born in 2072 and grew up reading family and work records. From 2090, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Danuta Nowicka",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K606-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "에바 노비츠카",
+        "birthDate": "2042-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "에바 노비츠카는 2042년에 태어났다. 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구의 가족 기록과 작업 사본을 읽으며 자랐고, 2060년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-시몬-카민스키-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Ewa Nowicka was born in 2042 and grew up reading family and work records. From 2060, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Ewa Nowicka",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K606-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "야드비가 노비츠카",
+        "birthDate": "2012-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "야드비가 노비츠카는 2012년에 태어났다. 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구의 가족 기록과 작업 사본을 읽으며 자랐고, 2030년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-시몬-카민스키-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Jadwiga Nowicka was born in 2012 and grew up reading family and work records. From 2030, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Jadwiga Nowicka",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K606-P-04",
+        "personId": null,
+        "kind": "historical",
+        "name": "유제프 카민스키",
+        "nameEn": "Józef Kamiński",
+        "birthDate": "1982-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K606-P-04"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "유제프 카민스키는 2026년 대정전 당시 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구 생활권에서 용산 화물창 민간 정비 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Józef Kamiński was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K606-P-04"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K606-M-04",
+        "personId": null,
+        "kind": "historical",
+        "name": "조피아 노비츠카",
+        "nameEn": "Zofia Nowicka",
+        "birthDate": "1982-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K606-M-04"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조피아 노비츠카는 2026년 대정전 당시 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구 생활권에서 용산 화물창 민간 정비 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Zofia Nowicka was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K606-M-04"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K606-P-01:K606:biological",
+        "from": "FH-K606-P-01",
+        "to": "K606",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K606-P-02:FH-K606-P-01:biological",
+        "from": "FH-K606-P-02",
+        "to": "FH-K606-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K606-P-03:FH-K606-P-02:biological",
+        "from": "FH-K606-P-03",
+        "to": "FH-K606-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K606-M-01:K606:biological",
+        "from": "FH-K606-M-01",
+        "to": "K606",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K606-M-02:FH-K606-M-01:biological",
+        "from": "FH-K606-M-02",
+        "to": "FH-K606-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K606-M-03:FH-K606-M-02:biological",
+        "from": "FH-K606-M-03",
+        "to": "FH-K606-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-시몬-카민스키-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K606-P-04:FH-K606-P-03:biological",
+        "from": "FH-K606-P-04",
+        "to": "FH-K606-P-03",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K606-P-04"
+          }
+        ]
+      },
+      {
+        "id": "FH-K606-M-04:FH-K606-M-03:biological",
+        "from": "FH-K606-M-04",
+        "to": "FH-K606-M-03",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K606-M-04"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K606",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K606-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2919"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K606-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2922"
+          }
+        ]
+      },
+      {
+        "recipientId": "K169",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "시몬 카민스키는 호송에서 지킨 인명 장부를 박태겸의 배차 창구에 전달한다. 박태겸은 실제 도착과 작은 호송의 출발을 확인해 사람의 인수가 화물 칸 기록에 빠지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/726"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K606",
     "personId": "person-0606",
@@ -97,9 +618,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "c190-bc00-c591",
-    "name": "밀양 손씨",
-    "crest": "clan-crests/c190-bc00-c591.svg"
+    "id": "DIV-K606",
+    "name": "용산·이태원 카민스키씨",
+    "crest": "clan-crests/DIV-K606.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -134,21 +655,28 @@
     "욕망": "갈망 10 | 독점 −35 | 위험 20 | 과시 25 | 지속 −5 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 시몬 카민스키는 2102년에 태어났다. 폴란드계 가계는 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 유제프 카민스키는 2026년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 시몬 카민스키의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 폴란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 시몬 카민스키는 호송에서 지킨 인명 장부를 박태겸의 배차 창구에 전달한다. 박태겸은 실제 도착과 작은 호송의 출발을 확인해 사람의 인수가 화물 칸 기록에 빠지지 않게 한다.",
     "야망": "호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
     "공포": "호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 호송 인명 장부 보호\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 0 | 물질 20 | 공동 0 | 원칙 5 | 공개 0 | 자격 25 | 분산 10 | 변혁 0\n- 욕망: 갈망 10 | 독점 −35 | 위험 20 | 과시 25 | 지속 −5 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 호송 인명 장부 보호\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 시몬 카민스키는 2102년에 태어났다. 폴란드계 가계는 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 유제프 카민스키는 2026년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 시몬 카민스키의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 폴란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 시몬 카민스키는 호송에서 지킨 인명 장부를 박태겸의 배차 창구에 전달한다. 박태겸은 실제 도착과 작은 호송의 출발을 확인해 사람의 인수가 화물 칸 기록에 빠지지 않게 한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 0 | 물질 20 | 공동 0 | 원칙 5 | 공개 0 | 자격 25 | 분산 10 | 변혁 0\n- 욕망: 갈망 10 | 독점 −35 | 위험 20 | 과시 25 | 지속 −5 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "시몬 카민스키",
+        "type": "계약",
+        "to": "박태겸",
+        "basis": "시몬 카민스키는 호송에서 지킨 인명 장부를 박태겸의 배차 창구에 전달한다. 박태겸은 실제 도착과 작은 호송의 출발을 확인해 사람의 인수가 화물 칸 기록에 빠지지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

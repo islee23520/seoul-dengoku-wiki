@@ -12,6 +12,397 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-설다흰",
   "detailRoute": "/people/person-0158",
+  "birthDate": "2083-12-14",
+  "birthday": "12-14",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/6",
+    "lore/characters/Cast-State-06.json#/content/8"
+  ],
+  "familyTree": {
+    "personId": "K157",
+    "nodes": [
+      {
+        "id": "K157",
+        "personId": "K157",
+        "kind": "person",
+        "name": "설다흰",
+        "birthDate": "2083-12-14",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K157"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-설다흰-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0158"
+      },
+      {
+        "id": "FH-K157-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "설승원",
+        "birthDate": "2053-12-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "설승원은 대합실 당직에서 대합실 의무 대기표·공증 창구 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-설다흰-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K157-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "설승진",
+        "birthDate": "2023-12-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "설승진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-설다흰-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K157-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이현윤",
+        "birthDate": "2053-12-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "이현윤은 대합실 당직에서 대합실 의무 대기표·공증 창구 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-설다흰-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K157-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현연",
+        "birthDate": "2023-12-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최현연은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-설다흰-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K157-P-01:K157:biological",
+        "from": "FH-K157-P-01",
+        "to": "K157",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K157-P-02:FH-K157-P-01:biological",
+        "from": "FH-K157-P-02",
+        "to": "FH-K157-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K157-M-01:K157:biological",
+        "from": "FH-K157-M-01",
+        "to": "K157",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K157-M-02:FH-K157-M-01:biological",
+        "from": "FH-K157-M-02",
+        "to": "FH-K157-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-설다흰-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K157",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K157-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/760"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K157-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/762"
+          }
+        ]
+      },
+      {
+        "recipientId": "K573",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노사호는 공개 창구로 돌린 청탁의 접수 내용과 증언을 설다흰에게 전한다. 설다흰은 공증 창구와 의무 대기표에 필요한 확인을 받아, 사적인 이송 요청이 환자 대기열보다 먼저 처리되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/337"
+          }
+        ]
+      },
+      {
+        "recipientId": "K765",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백새래는 작업반과 나눈 교대 조건을 설다흰에게 전한다. 설다흰은 공증 창구와 의무 대기표를 확인해 다시 열린 교대가 진료 대기와 문서 접수를 함께 이어받게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/505"
+          }
+        ]
+      },
+      {
+        "recipientId": "K909",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "안자늘은 작업반과 나눈 교대 조건을 설다흰에게 전한다. 설다흰은 공증 창구와 의무 대기표를 확인해 다시 열린 교대가 접수와 진료 대기를 함께 이어받게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/632"
+          }
+        ]
+      },
+      {
+        "recipientId": "K957",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "유하훈은 공개 창구로 돌린 청탁의 접수·회송 내용을 설다흰에게 전한다. 설다흰은 공증 창구·의무 대기표를 확인해 사적인 요청과 정상 접수를 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/674"
+          }
+        ]
+      },
+      {
+        "recipientId": "K147",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "윤지율의 배차 취소를 승강장에서 집행하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/134"
+          }
+        ]
+      },
+      {
+        "recipientId": "K152",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/135"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K157",
     "personId": "person-0158",
@@ -156,6 +547,31 @@
         "basis": "연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "노사호",
+        "type": "계약",
+        "to": "설다흰",
+        "basis": "노사호는 공개 창구로 돌린 청탁의 접수 내용과 증언을 설다흰에게 전한다. 설다흰은 공증 창구와 의무 대기표에 필요한 확인을 받아, 사적인 이송 요청이 환자 대기열보다 먼저 처리되지 않게 한다."
+      },
+      {
+        "from": "백새래",
+        "type": "계약",
+        "to": "설다흰",
+        "basis": "백새래는 작업반과 나눈 교대 조건을 설다흰에게 전한다. 설다흰은 공증 창구와 의무 대기표를 확인해 다시 열린 교대가 진료 대기와 문서 접수를 함께 이어받게 한다."
+      },
+      {
+        "from": "안자늘",
+        "type": "계약",
+        "to": "설다흰",
+        "basis": "안자늘은 작업반과 나눈 교대 조건을 설다흰에게 전한다. 설다흰은 공증 창구와 의무 대기표를 확인해 다시 열린 교대가 접수와 진료 대기를 함께 이어받게 한다."
+      },
+      {
+        "from": "유하훈",
+        "type": "계약",
+        "to": "설다흰",
+        "basis": "유하훈은 공개 창구로 돌린 청탁의 접수·회송 내용을 설다흰에게 전한다. 설다흰은 공증 창구·의무 대기표를 확인해 사적인 요청과 정상 접수를 구분한다."
+      }
+    ]
   }
 }

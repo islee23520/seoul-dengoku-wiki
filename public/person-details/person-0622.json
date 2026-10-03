@@ -1,6 +1,6 @@
 {
   "id": "person-0622",
-  "name": "진바혁",
+  "name": "미하이 이오네스쿠",
   "title": "배차 서기",
   "position": "배차 서기",
   "rank": "주사",
@@ -10,8 +10,425 @@
   "stage": "S4",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-진바혁",
+  "sourceRoute": "/world/Cast-State-07#인물-미하이 이오네스쿠",
   "detailRoute": "/people/person-0622",
+  "birthDate": "2073-07-30",
+  "birthday": "07-30",
+  "age": 53,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/391",
+    "lore/characters/Cast-State-07.json#/content/393",
+    "lore/characters/Cast-State-07.json#/content/394"
+  ],
+  "familyTree": {
+    "personId": "K622",
+    "nodes": [
+      {
+        "id": "K622",
+        "personId": "K622",
+        "kind": "person",
+        "name": "미하이 이오네스쿠",
+        "birthDate": "2073-07-30",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K622"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-미하이-이오네스쿠-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Mihai Ionescu",
+        "detailRoute": "/people/person-0622"
+      },
+      {
+        "id": "FH-K622-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이온 이오네스쿠",
+        "birthDate": "2043-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "이온 이오네스쿠는 2043년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2061년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-미하이-이오네스쿠-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Ion Ionescu was born in 2043 and grew up reading family and work records. From 2061, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Ion Ionescu",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K622-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "안드레이 이오네스쿠",
+        "birthDate": "2013-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "안드레이 이오네스쿠는 2013년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2031년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-미하이-이오네스쿠-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Andrei Ionescu was born in 2013 and grew up reading family and work records. From 2031, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Andrei Ionescu",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K622-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "아나 두미트레스쿠",
+        "birthDate": "2043-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "아나 두미트레스쿠는 2043년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2061년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-미하이-이오네스쿠-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Ana Dumitrescu was born in 2043 and grew up reading family and work records. From 2061, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Ana Dumitrescu",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K622-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "소리나 두미트레스쿠",
+        "birthDate": "2013-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "소리나 두미트레스쿠는 2013년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2031년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-미하이-이오네스쿠-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Sorina Dumitrescu was born in 2013 and grew up reading family and work records. From 2031, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Sorina Dumitrescu",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K622-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "니콜라에 이오네스쿠",
+        "nameEn": "Nicolae Ionescu",
+        "birthDate": "1983-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K622-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "니콜라에 이오네스쿠는 2026년 대정전 당시 동대문·용산 생활권에서 동대문 민간 봉제·화물 중개 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Nicolae Ionescu was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K622-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K622-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "플로리나 두미트레스쿠",
+        "nameEn": "Florina Dumitrescu",
+        "birthDate": "1983-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K622-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "플로리나 두미트레스쿠는 2026년 대정전 당시 동대문·용산 생활권에서 동대문 민간 봉제·화물 중개 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Florina Dumitrescu was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K622-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K622-P-01:K622:biological",
+        "from": "FH-K622-P-01",
+        "to": "K622",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K622-P-02:FH-K622-P-01:biological",
+        "from": "FH-K622-P-02",
+        "to": "FH-K622-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K622-M-01:K622:biological",
+        "from": "FH-K622-M-01",
+        "to": "K622",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K622-M-02:FH-K622-M-01:biological",
+        "from": "FH-K622-M-02",
+        "to": "FH-K622-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-미하이-이오네스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K622-P-03:FH-K622-P-02:biological",
+        "from": "FH-K622-P-03",
+        "to": "FH-K622-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K622-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K622-M-03:FH-K622-M-02:biological",
+        "from": "FH-K622-M-03",
+        "to": "FH-K622-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K622-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K622",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K622-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2991"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K622-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2993"
+          }
+        ]
+      },
+      {
+        "recipientId": "K185",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/727"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K622",
     "personId": "person-0622",
@@ -97,9 +514,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "c9c4-d48d-ae30",
-    "name": "풍기 진씨",
-    "crest": "clan-crests/c9c4-d48d-ae30.svg"
+    "id": "DIV-K622",
+    "name": "용산·이태원 이오네스쿠씨",
+    "crest": "clan-crests/DIV-K622.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -134,21 +551,28 @@
     "욕망": "갈망 45 | 독점 −15 | 위험 −5 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 미하이 이오네스쿠는 2073년에 태어났다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 니콜라에 이오네스쿠는 2026년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 미하이 이오네스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.",
     "야망": "배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
     "공포": "배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 15 | 공동 −10 | 원칙 −10 | 공개 −30 | 자격 40 | 분산 −5 | 변혁 0\n- 욕망: 갈망 45 | 독점 −15 | 위험 −5 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 미하이 이오네스쿠는 2073년에 태어났다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 니콜라에 이오네스쿠는 2026년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 미하이 이오네스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 15 | 공동 −10 | 원칙 −10 | 공개 −30 | 자격 40 | 분산 −5 | 변혁 0\n- 욕망: 갈망 45 | 독점 −15 | 위험 −5 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "미하이 이오네스쿠",
+        "type": "계약",
+        "to": "노아 데이비스",
+        "basis": "미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다."
+      }
+    ],
     "incoming": []
   }
 }

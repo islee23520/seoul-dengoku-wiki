@@ -12,6 +12,441 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-은태호",
   "detailRoute": "/people/person-0375",
+  "birthDate": "2086-08-22",
+  "birthday": "08-22",
+  "age": 40,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/60",
+    "lore/characters/Cast-State-15.json#/content/61",
+    "lore/characters/Cast-State-15.json#/content/62",
+    "lore/characters/Cast-State-15.json#/content/63"
+  ],
+  "familyTree": {
+    "personId": "K374",
+    "nodes": [
+      {
+        "id": "K374",
+        "personId": "K374",
+        "kind": "person",
+        "name": "은태호",
+        "birthDate": "2086-08-22",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K374"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 선거 개표 증인 부제 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-은태호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0375"
+      },
+      {
+        "id": "FH-K374-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "은승민",
+        "birthDate": "2056-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "은승민은 노량진 선창에서 개표 증언·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-은태호-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K374-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "은승원",
+        "birthDate": "2026-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "은승원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-은태호-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K374-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준리",
+        "birthDate": "2056-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "최준리는 노량진 선창에서 개표 증언·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-은태호-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K374-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준정",
+        "birthDate": "2026-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정준정은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-은태호-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K374-P-01:K374:biological",
+        "from": "FH-K374-P-01",
+        "to": "K374",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K374-P-02:FH-K374-P-01:biological",
+        "from": "FH-K374-P-02",
+        "to": "FH-K374-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K374-M-01:K374:biological",
+        "from": "FH-K374-M-01",
+        "to": "K374",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K374-M-02:FH-K374-M-01:biological",
+        "from": "FH-K374-M-02",
+        "to": "FH-K374-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-은태호-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K374",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K374-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1822"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K374-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1824"
+          }
+        ]
+      },
+      {
+        "recipientId": "K373",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/99"
+          }
+        ]
+      },
+      {
+        "recipientId": "K454",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "하민재는 선거 기록의 교대 서명이 빠지면 당시 인수인계 기록을 은태호에게 가져간다. 은태호는 개표 증인으로 남긴 증언과 선거 봉인을 살펴 누락된 서명을 확인하고, 절차에 관한 이의가 나오면 그 확인 경위를 증언한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/234"
+          }
+        ]
+      },
+      {
+        "recipientId": "K470",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "윤소율은 상하기 시작한 구휼 곡물을 먼저 나눠 주고 손실 내역을 은태호에게 전달한다. 은태호는 식량·약재 교환과 경매를 맡으며 그 손실을 확인해, 이미 배분한 곡물이 남은 재고로 다시 거래되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/247"
+          }
+        ]
+      },
+      {
+        "recipientId": "K502",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "진준혁은 선거 기록에서 빠진 교대 서명을 찾아 은태호에게 당시 증언과 함께 넘긴다. 은태호는 선거 봉인을 살펴 그 누락이 개표 증언과 어디서 어긋나는지 확인한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/275"
+          }
+        ]
+      },
+      {
+        "recipientId": "K518",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황구아는 구휼 곡물을 먼저 배분하고 공개한 손실 장부를 은태호에게 가져간다. 은태호는 식량과 약재를 교환할 때 그 배분량을 확인해 남은 물자를 중복 약속하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/289"
+          }
+        ]
+      },
+      {
+        "recipientId": "K550",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "윤타우는 선거 기록의 빠진 교대 서명을 찾아 당시 인수인계 증언과 함께 은태호에게 낸다. 은태호는 선거 봉인과 개표 증언을 확인해 기록이 끊긴 지점을 선거 절차에 관한 이의와 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/317"
+          }
+        ]
+      },
+      {
+        "recipientId": "K379",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "은태호의 경매를 현장에서 받치는 사제이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/336"
+          }
+        ]
+      },
+      {
+        "recipientId": "K385",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "은태호의 호가를 원장으로 옮기는 사제이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/348"
+          }
+        ]
+      },
+      {
+        "recipientId": "K395",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "은태호의 조정 호가에 패들로 이의를 올리고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/202"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K374",
     "personId": "person-0375",
@@ -149,6 +584,36 @@
   "relations": {
     "outgoing": [],
     "incoming": [
+      {
+        "from": "하민재",
+        "type": "계약",
+        "to": "은태호",
+        "basis": "하민재는 선거 기록의 교대 서명이 빠지면 당시 인수인계 기록을 은태호에게 가져간다. 은태호는 개표 증인으로 남긴 증언과 선거 봉인을 살펴 누락된 서명을 확인하고, 절차에 관한 이의가 나오면 그 확인 경위를 증언한다."
+      },
+      {
+        "from": "윤소율",
+        "type": "계약",
+        "to": "은태호",
+        "basis": "윤소율은 상하기 시작한 구휼 곡물을 먼저 나눠 주고 손실 내역을 은태호에게 전달한다. 은태호는 식량·약재 교환과 경매를 맡으며 그 손실을 확인해, 이미 배분한 곡물이 남은 재고로 다시 거래되지 않게 한다."
+      },
+      {
+        "from": "진준혁",
+        "type": "계약",
+        "to": "은태호",
+        "basis": "진준혁은 선거 기록에서 빠진 교대 서명을 찾아 은태호에게 당시 증언과 함께 넘긴다. 은태호는 선거 봉인을 살펴 그 누락이 개표 증언과 어디서 어긋나는지 확인한다."
+      },
+      {
+        "from": "황구아",
+        "type": "계약",
+        "to": "은태호",
+        "basis": "황구아는 구휼 곡물을 먼저 배분하고 공개한 손실 장부를 은태호에게 가져간다. 은태호는 식량과 약재를 교환할 때 그 배분량을 확인해 남은 물자를 중복 약속하지 않는다."
+      },
+      {
+        "from": "윤타우",
+        "type": "계약",
+        "to": "은태호",
+        "basis": "윤타우는 선거 기록의 빠진 교대 서명을 찾아 당시 인수인계 증언과 함께 은태호에게 낸다. 은태호는 선거 봉인과 개표 증언을 확인해 기록이 끊긴 지점을 선거 절차에 관한 이의와 구분한다."
+      },
       {
         "from": "천나솔",
         "type": "사제",

@@ -12,6 +12,397 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-원미루",
   "detailRoute": "/people/person-0334",
+  "birthDate": "2070-08-28",
+  "birthday": "08-28",
+  "age": 56,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/160",
+    "lore/characters/Cast-State-13.json#/content/165"
+  ],
+  "familyTree": {
+    "personId": "K333",
+    "nodes": [
+      {
+        "id": "K333",
+        "personId": "K333",
+        "kind": "person",
+        "name": "원미루",
+        "birthDate": "2070-08-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K333"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 위조약 감별 수련의 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-원미루-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0334"
+      },
+      {
+        "id": "FH-K333-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "원승석",
+        "birthDate": "2040-08-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "원승석은 제기동 의무소에서 위조약 감별·산지 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-원미루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K333-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "원승준",
+        "birthDate": "2010-08-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "원승준은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-원미루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K333-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송준석",
+        "birthDate": "2040-08-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "송준석은 제기동 의무소에서 위조약 감별·산지 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-원미루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K333-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조준민",
+        "birthDate": "2010-08-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조준민은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-원미루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K333-P-01:K333:biological",
+        "from": "FH-K333-P-01",
+        "to": "K333",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K333-P-02:FH-K333-P-01:biological",
+        "from": "FH-K333-P-02",
+        "to": "FH-K333-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K333-M-01:K333:biological",
+        "from": "FH-K333-M-01",
+        "to": "K333",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K333-M-02:FH-K333-M-01:biological",
+        "from": "FH-K333-M-02",
+        "to": "FH-K333-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-원미루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K333",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K333-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1612"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K333-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1614"
+          }
+        ]
+      },
+      {
+        "recipientId": "K660",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "구자희는 의심 약재를 봉인해 원미루에게 관리 기록과 함께 넘긴다. 원미루는 표본과 캡슐 인장을 살펴 유통 경로를 조사하고 확인되지 않은 산지는 점선으로 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/413"
+          }
+        ]
+      },
+      {
+        "recipientId": "K852",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "주카인은 의심 약재를 봉인해 원미루에게 관리 기록과 함께 넘긴다. 원미루는 표본·캡슐 인장을 살펴 경로를 조사하고 미확인 산지는 점선으로 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/581"
+          }
+        ]
+      },
+      {
+        "recipientId": "K900",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "강파유는 봉인한 의심 약재를 관리 기록과 함께 원미루에게 넘긴다. 원미루는 캡슐 인장·표본을 살펴 유통 경로를 조사하고 미확인 산지는 점선으로 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/623"
+          }
+        ]
+      },
+      {
+        "recipientId": "K996",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남빛원은 봉인한 의심 약재를 원미루에게 관리 기록과 함께 넘긴다. 원미루는 캡슐 인장·표본을 살펴 경로를 조사하고 미확인 산지는 점선으로 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/708"
+          }
+        ]
+      },
+      {
+        "recipientId": "K325",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "라세영에게 오염 좌표를 넘기는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/298"
+          }
+        ]
+      },
+      {
+        "recipientId": "K324",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "은채윤의 선반 약을 대조 표본으로 받는다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/299"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K333",
     "personId": "person-0334",
@@ -180,6 +571,31 @@
         "basis": "은채윤의 선반 약을 대조 표본으로 받는다"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "구자희",
+        "type": "계약",
+        "to": "원미루",
+        "basis": "구자희는 의심 약재를 봉인해 원미루에게 관리 기록과 함께 넘긴다. 원미루는 표본과 캡슐 인장을 살펴 유통 경로를 조사하고 확인되지 않은 산지는 점선으로 남긴다."
+      },
+      {
+        "from": "주카인",
+        "type": "계약",
+        "to": "원미루",
+        "basis": "주카인은 의심 약재를 봉인해 원미루에게 관리 기록과 함께 넘긴다. 원미루는 표본·캡슐 인장을 살펴 경로를 조사하고 미확인 산지는 점선으로 남긴다."
+      },
+      {
+        "from": "강파유",
+        "type": "계약",
+        "to": "원미루",
+        "basis": "강파유는 봉인한 의심 약재를 관리 기록과 함께 원미루에게 넘긴다. 원미루는 캡슐 인장·표본을 살펴 유통 경로를 조사하고 미확인 산지는 점선으로 남긴다."
+      },
+      {
+        "from": "남빛원",
+        "type": "계약",
+        "to": "원미루",
+        "basis": "남빛원은 봉인한 의심 약재를 원미루에게 관리 기록과 함께 넘긴다. 원미루는 캡슐 인장·표본을 살펴 경로를 조사하고 미확인 산지는 점선으로 남긴다."
+      }
+    ]
   }
 }

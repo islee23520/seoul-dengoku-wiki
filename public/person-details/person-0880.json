@@ -12,6 +12,328 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-백구래",
   "detailRoute": "/people/person-0880",
+  "birthDate": "2066-05-02",
+  "birthday": "05-02",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/578",
+    "lore/characters/Cast-State-09.json#/content/580",
+    "lore/characters/Cast-State-09.json#/content/581"
+  ],
+  "familyTree": {
+    "personId": "K880",
+    "nodes": [
+      {
+        "id": "K880",
+        "personId": "K880",
+        "kind": "person",
+        "name": "백구래",
+        "birthDate": "2066-05-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K880"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 금고 당직 자리는 정전 사흘 금고 유지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-백구래-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0880"
+      },
+      {
+        "id": "FH-K880-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "백승빈",
+        "birthDate": "2036-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "백승빈은 여의도 금고 당직에서 금고 당직 교대·기록 인수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-백구래-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K880-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "백승솔",
+        "birthDate": "2006-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "백승솔은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-백구래-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K880-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤도도",
+        "birthDate": "2036-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "윤도도는 여의도 금고 당직에서 금고 당직 교대·기록 인수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-백구래-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K880-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한도솔",
+        "birthDate": "2006-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한도솔은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-백구래-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K880-P-01:K880:biological",
+        "from": "FH-K880-P-01",
+        "to": "K880",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K880-P-02:FH-K880-P-01:biological",
+        "from": "FH-K880-P-02",
+        "to": "FH-K880-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K880-M-01:K880:biological",
+        "from": "FH-K880-M-01",
+        "to": "K880",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K880-M-02:FH-K880-M-01:biological",
+        "from": "FH-K880-M-02",
+        "to": "FH-K880-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-백구래-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K880",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K880-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4237"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K880-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4239"
+          }
+        ]
+      },
+      {
+        "recipientId": "K220",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "백구래는 금고 당직의 예비 전지 사용과 공급 상태를 권미래에게 알린다. 권미래는 남은 예비 전원을 확인해 다음 교대의 공급을 점검한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/605"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K880",
     "personId": "person-0880",
@@ -138,17 +460,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 금고 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 정전 사흘간 금고를 닫지 않고 예비 전지를 돌렸다. 이 일로 금고 당직 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 백구래는 금고 당직의 예비 전지 사용과 공급 상태를 권미래에게 알린다. 권미래는 남은 예비 전원을 확인해 다음 교대의 공급을 점검한다.",
     "야망": "금고 당직 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.",
     "공포": "금고 당직 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 금고 당직 교대·기록 인수\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 당직\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 금고 당직 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 금고 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 정전 사흘간 금고를 닫지 않고 예비 전지를 돌렸다. 이 일로 금고 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 금고 당직 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 금고 당직 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 25 | 무력 −20 | 물질 −20 | 공동 5 | 원칙 25 | 공개 60 | 자격 10 | 분산 30 | 변혁 10\n- 욕망: 갈망 10 | 독점 30 | 위험 20 | 과시 −20 | 지속 15 | 지향 유동 | 결합 없음",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 금고 당직 교대·기록 인수\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 당직\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 금고 당직 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 금고 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 정전 사흘간 금고를 닫지 않고 예비 전지를 돌렸다. 이 일로 금고 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 백구래는 금고 당직의 예비 전지 사용과 공급 상태를 권미래에게 알린다. 권미래는 남은 예비 전원을 확인해 다음 교대의 공급을 점검한다.\n\n**야망.** 금고 당직 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 금고 당직 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 25 | 무력 −20 | 물질 −20 | 공동 5 | 원칙 25 | 공개 60 | 자격 10 | 분산 30 | 변혁 10\n- 욕망: 갈망 10 | 독점 30 | 위험 20 | 과시 −20 | 지속 15 | 지향 유동 | 결합 없음",
   "sources": [
     "Cast-State-09"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "백구래",
+        "type": "계약",
+        "to": "권미래",
+        "basis": "백구래는 금고 당직의 예비 전지 사용과 공급 상태를 권미래에게 알린다. 권미래는 남은 예비 전원을 확인해 다음 교대의 공급을 점검한다."
+      }
+    ],
     "incoming": []
   }
 }

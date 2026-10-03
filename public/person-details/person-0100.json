@@ -12,6 +12,439 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-채구름",
   "detailRoute": "/people/person-0100",
+  "birthDate": "2073-11-14",
+  "birthday": "11-14",
+  "age": 53,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/159",
+    "lore/characters/Cast-State-04.json#/content/161"
+  ],
+  "familyTree": {
+    "personId": "K099",
+    "nodes": [
+      {
+        "id": "K099",
+        "personId": "K099",
+        "kind": "person",
+        "name": "채구름",
+        "birthDate": "2073-11-14",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K099"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 성동 교량 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-채구름-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0100"
+      },
+      {
+        "id": "FH-K099-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "채승연",
+        "birthDate": "2043-11-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "채승연은 암사 경비 초소에서 교량 경비·출입 통제 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-채구름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K099-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "채승정",
+        "birthDate": "2013-11-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "채승정은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-채구름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K099-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승솔",
+        "birthDate": "2043-11-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "정승솔은 암사 경비 초소에서 교량 경비·출입 통제 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-채구름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K099-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승훈",
+        "birthDate": "2013-11-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤승훈은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-채구름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K099-P-01:K099:biological",
+        "from": "FH-K099-P-01",
+        "to": "K099",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K099-P-02:FH-K099-P-01:biological",
+        "from": "FH-K099-P-02",
+        "to": "FH-K099-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K099-M-01:K099:biological",
+        "from": "FH-K099-M-01",
+        "to": "K099",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K099-M-02:FH-K099-M-01:biological",
+        "from": "FH-K099-M-02",
+        "to": "FH-K099-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-채구름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K099",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K099-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/492"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K099-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/494"
+          }
+        ]
+      },
+      {
+        "recipientId": "K427",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "정예은은 유치선 순찰 교대 기록을 채구름의 교량 출입 명부와 대조한다. 야간 출입 기록이 어긋나면 각 당직의 인수인계를 다시 짚고, 채구름은 자신이 쥔 암호패와 공정 감독의 확인으로 교량 출입을 점검한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/211"
+          }
+        ]
+      },
+      {
+        "recipientId": "K475",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "서다은은 유치선 순찰에서 읽은 매복 흔적을 채구름에게 전한다. 채구름은 교량 출입 점검에서 그 흔적이 이어지는 곳을 살피고 야간 암호패와 공정 감독의 확인을 받아, 순찰의 공백을 이용한 침투를 경계한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/251"
+          }
+        ]
+      },
+      {
+        "recipientId": "K523",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "고유진은 교량 습격 훈련에서 정정한 참관 내용을 채구름에게 전달한다. 채구름은 교량 순찰의 출입 점검에 그 내용을 반영해, 틀린 최초 보고가 실제 야간 봉쇄 판단에 섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/293"
+          }
+        ]
+      },
+      {
+        "recipientId": "K763",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "손바호는 유치선 야간 출입 기록과 교체 암호패 내용을 채구름에게 전한다. 채구름은 교량 출입에서 이중 확인을 지켜 경비 교대의 빈 곳을 통한 접근을 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/503"
+          }
+        ]
+      },
+      {
+        "recipientId": "K811",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "성숲현은 유치선 순찰에서 읽은 매복 흔적을 채구름에게 전한다. 채구름은 교량 접근 점검을 이어 받아 수위와 출입 기록으로 실제 침투 흔적을 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/545"
+          }
+        ]
+      },
+      {
+        "recipientId": "K859",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "최바아는 순찰에서 읽은 매복 흔적을 채구름에게 알린다. 채구름은 교량 수위와 출입 기록을 살펴 그 관찰이 실제 접근 흔적과 이어지는지 확인한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/587"
+          }
+        ]
+      },
+      {
+        "recipientId": "K955",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백아래는 정정한 교량 훈련 참관 내용을 채구름에게 전한다. 채구름은 실제 교량 접근 기록과 구분해 틀린 최초 보고가 현재 야간 봉쇄 근거로 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/672"
+          }
+        ]
+      },
+      {
+        "recipientId": "K090",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "김보람의 펌프수비 지휘를 교량에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/78"
+          }
+        ]
+      },
+      {
+        "recipientId": "K092",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "최나래의 기동 정비조와 교량 순찰을 맹세로 나누며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/79"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K099",
     "personId": "person-0100",
@@ -173,6 +606,49 @@
         "basis": "최나래의 기동 정비조와 교량 순찰을 맹세로 나누며"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "정예은",
+        "type": "계약",
+        "to": "채구름",
+        "basis": "정예은은 유치선 순찰 교대 기록을 채구름의 교량 출입 명부와 대조한다. 야간 출입 기록이 어긋나면 각 당직의 인수인계를 다시 짚고, 채구름은 자신이 쥔 암호패와 공정 감독의 확인으로 교량 출입을 점검한다."
+      },
+      {
+        "from": "서다은",
+        "type": "계약",
+        "to": "채구름",
+        "basis": "서다은은 유치선 순찰에서 읽은 매복 흔적을 채구름에게 전한다. 채구름은 교량 출입 점검에서 그 흔적이 이어지는 곳을 살피고 야간 암호패와 공정 감독의 확인을 받아, 순찰의 공백을 이용한 침투를 경계한다."
+      },
+      {
+        "from": "고유진",
+        "type": "계약",
+        "to": "채구름",
+        "basis": "고유진은 교량 습격 훈련에서 정정한 참관 내용을 채구름에게 전달한다. 채구름은 교량 순찰의 출입 점검에 그 내용을 반영해, 틀린 최초 보고가 실제 야간 봉쇄 판단에 섞이지 않게 한다."
+      },
+      {
+        "from": "손바호",
+        "type": "계약",
+        "to": "채구름",
+        "basis": "손바호는 유치선 야간 출입 기록과 교체 암호패 내용을 채구름에게 전한다. 채구름은 교량 출입에서 이중 확인을 지켜 경비 교대의 빈 곳을 통한 접근을 살핀다."
+      },
+      {
+        "from": "성숲현",
+        "type": "계약",
+        "to": "채구름",
+        "basis": "성숲현은 유치선 순찰에서 읽은 매복 흔적을 채구름에게 전한다. 채구름은 교량 접근 점검을 이어 받아 수위와 출입 기록으로 실제 침투 흔적을 살핀다."
+      },
+      {
+        "from": "최바아",
+        "type": "계약",
+        "to": "채구름",
+        "basis": "최바아는 순찰에서 읽은 매복 흔적을 채구름에게 알린다. 채구름은 교량 수위와 출입 기록을 살펴 그 관찰이 실제 접근 흔적과 이어지는지 확인한다."
+      },
+      {
+        "from": "백아래",
+        "type": "계약",
+        "to": "채구름",
+        "basis": "백아래는 정정한 교량 훈련 참관 내용을 채구름에게 전한다. 채구름은 실제 교량 접근 기록과 구분해 틀린 최초 보고가 현재 야간 봉쇄 근거로 쓰이지 않게 한다."
+      }
+    ]
   }
 }

@@ -12,6 +12,482 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-수효은",
   "detailRoute": "/people/person-0340",
+  "birthDate": "2090-03-18",
+  "birthday": "03-18",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/193"
+  ],
+  "familyTree": {
+    "personId": "K339",
+    "nodes": [
+      {
+        "id": "K339",
+        "personId": "K339",
+        "kind": "person",
+        "name": "수효은",
+        "birthDate": "2090-03-18",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K339"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 보관 수련의 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수효은-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0340"
+      },
+      {
+        "id": "FH-K339-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "수승민",
+        "birthDate": "2060-03-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "수승민은 제기동 의무소에서 약재 보관 출력 일지·봉인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수효은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K339-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "수승원",
+        "birthDate": "2030-03-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "수승원은 제기동 의무소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수효은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K339-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "수승진",
+        "birthDate": "2000-03-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "수승진은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수효은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K339-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준영",
+        "birthDate": "2060-03-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "정준영은 제기동 의무소에서 약재 보관 출력 일지·봉인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수효은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K339-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준우",
+        "birthDate": "2030-03-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "윤준우는 제기동 의무소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수효은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K339-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준원",
+        "birthDate": "2000-03-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한준원은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수효은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K339-P-01:K339:biological",
+        "from": "FH-K339-P-01",
+        "to": "K339",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K339-P-02:FH-K339-P-01:biological",
+        "from": "FH-K339-P-02",
+        "to": "FH-K339-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K339-P-03:FH-K339-P-02:biological",
+        "from": "FH-K339-P-03",
+        "to": "FH-K339-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K339-M-01:K339:biological",
+        "from": "FH-K339-M-01",
+        "to": "K339",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K339-M-02:FH-K339-M-01:biological",
+        "from": "FH-K339-M-02",
+        "to": "FH-K339-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K339-M-03:FH-K339-M-02:biological",
+        "from": "FH-K339-M-03",
+        "to": "FH-K339-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수효은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K339",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K339-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1642"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K339-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1645"
+          }
+        ]
+      },
+      {
+        "recipientId": "K564",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "문동은은 수술 때 쓴 약재와 정전 뒤의 보관 상태를 수효은에게 알린다. 수효은은 연료 잔량과 출력 일지를 확인해 건조실·진료소 공급을 살피고, 문동은은 손상된 약재가 다음 진료에 섞이지 않도록 관리 기록에 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/329"
+          }
+        ]
+      },
+      {
+        "recipientId": "K708",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "조아원은 관리하는 약재의 상태와 진료 중 필요한 양을 수효은에게 알린다. 수효은은 건조실·진료소 출력 일지를 확인해 보관 전력 공백이 약재 손상으로 이어진 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/455"
+          }
+        ]
+      },
+      {
+        "recipientId": "K328",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "수효은의 비상 발전에 건조 전력을 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/289"
+          }
+        ]
+      },
+      {
+        "recipientId": "K322",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "류은비의 치료 물자 우선에는 복종하되 은폐 배전은 거부한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/310"
+          }
+        ]
+      },
+      {
+        "recipientId": "K328",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "천다움의 건조기에 출력을 맞추고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/311"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K339",
     "personId": "person-0340",
@@ -175,6 +651,18 @@
       }
     ],
     "incoming": [
+      {
+        "from": "문동은",
+        "type": "계약",
+        "to": "수효은",
+        "basis": "문동은은 수술 때 쓴 약재와 정전 뒤의 보관 상태를 수효은에게 알린다. 수효은은 연료 잔량과 출력 일지를 확인해 건조실·진료소 공급을 살피고, 문동은은 손상된 약재가 다음 진료에 섞이지 않도록 관리 기록에 남긴다."
+      },
+      {
+        "from": "조아원",
+        "type": "계약",
+        "to": "수효은",
+        "basis": "조아원은 관리하는 약재의 상태와 진료 중 필요한 양을 수효은에게 알린다. 수효은은 건조실·진료소 출력 일지를 확인해 보관 전력 공백이 약재 손상으로 이어진 곳을 찾는다."
+      },
       {
         "from": "천다움",
         "type": "사제",

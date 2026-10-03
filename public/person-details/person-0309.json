@@ -12,6 +12,424 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-봉모",
   "detailRoute": "/people/person-0309",
+  "birthDate": "2074-05-29",
+  "birthday": "05-29",
+  "age": 52,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/171"
+  ],
+  "familyTree": {
+    "personId": "K308",
+    "nodes": [
+      {
+        "id": "K308",
+        "personId": "K308",
+        "kind": "person",
+        "name": "봉모",
+        "birthDate": "2074-05-29",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K308"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 통행 심사 기록관, 문시온의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-봉모-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0309"
+      },
+      {
+        "id": "FH-K308-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "봉승정",
+        "birthDate": "2044-05-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "봉승정은 서울역 등기소에서 통행 신분 조각·화물 봉인 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-봉모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K308-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "봉승아",
+        "birthDate": "2014-05-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "봉승아는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-봉모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K308-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오준석",
+        "birthDate": "2044-05-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "오준석은 서울역 등기소에서 통행 신분 조각·화물 봉인 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-봉모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K308-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현나",
+        "birthDate": "2014-05-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송현나는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-봉모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K308-P-01:K308:biological",
+        "from": "FH-K308-P-01",
+        "to": "K308",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K308-P-02:FH-K308-P-01:biological",
+        "from": "FH-K308-P-02",
+        "to": "FH-K308-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K308-M-01:K308:biological",
+        "from": "FH-K308-M-01",
+        "to": "K308",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K308-M-02:FH-K308-M-01:biological",
+        "from": "FH-K308-M-02",
+        "to": "FH-K308-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-봉모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K308",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K308-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1490"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K308-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1492"
+          }
+        ]
+      },
+      {
+        "recipientId": "K579",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "우달민은 대기열에서 갈린 두 증인의 말을 공개 대질로 확인해 봉모에게 전한다. 봉모는 신분 조각과 화물 봉인 기록을 살펴, 누구의 통행이었는지 확인되지 않은 증언이 심사 원장을 채우지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/342"
+          }
+        ]
+      },
+      {
+        "recipientId": "K627",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "정하준은 대기열 통과에 관한 대질 내용을 봉모에게 넘긴다. 봉모는 신분 조각과 화물 봉인을 확인해 누구의 대기였는지 확인되지 않은 말을 심사 사실로 적지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/384"
+          }
+        ]
+      },
+      {
+        "recipientId": "K771",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽하현은 대기열을 바꿔 달라는 청탁을 공개 창구로 돌리고 봉모에게 접수 내용을 넘긴다. 봉모는 신분 조각과 화물 봉인을 확인해 청탁의 영수증이 통행증으로 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/510"
+          }
+        ]
+      },
+      {
+        "recipientId": "K819",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "이북민은 대기열에서 갈린 증언을 확인해 봉모에게 전한다. 봉모는 신분 조각과 화물 봉인을 대조해 누구의 통과였는지 확인되지 않은 말을 심사 사실로 남기지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/552"
+          }
+        ]
+      },
+      {
+        "recipientId": "K963",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "성다현은 대기 순서 청탁을 공개 창구로 돌리고 봉모에게 접수 기록을 넘긴다. 봉모는 신분 조각·화물 봉인을 확인해 청탁의 영수증이 통행증으로 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/679"
+          }
+        ]
+      },
+      {
+        "recipientId": "K307",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "봉모의 심사대 거점 칠판에 좌표를 붙인다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/275"
+          }
+        ]
+      },
+      {
+        "recipientId": "K299",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "문시온의 지휘로 심사 원장을 옮기고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/276"
+          }
+        ]
+      },
+      {
+        "recipientId": "K307",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "복감의 후문 실측을 같은 줄에 적는다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/277"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K308",
     "personId": "person-0309",
@@ -157,6 +575,36 @@
       }
     ],
     "incoming": [
+      {
+        "from": "우달민",
+        "type": "계약",
+        "to": "봉모",
+        "basis": "우달민은 대기열에서 갈린 두 증인의 말을 공개 대질로 확인해 봉모에게 전한다. 봉모는 신분 조각과 화물 봉인 기록을 살펴, 누구의 통행이었는지 확인되지 않은 증언이 심사 원장을 채우지 않게 한다."
+      },
+      {
+        "from": "정하준",
+        "type": "계약",
+        "to": "봉모",
+        "basis": "정하준은 대기열 통과에 관한 대질 내용을 봉모에게 넘긴다. 봉모는 신분 조각과 화물 봉인을 확인해 누구의 대기였는지 확인되지 않은 말을 심사 사실로 적지 않는다."
+      },
+      {
+        "from": "곽하현",
+        "type": "계약",
+        "to": "봉모",
+        "basis": "곽하현은 대기열을 바꿔 달라는 청탁을 공개 창구로 돌리고 봉모에게 접수 내용을 넘긴다. 봉모는 신분 조각과 화물 봉인을 확인해 청탁의 영수증이 통행증으로 쓰이지 않게 한다."
+      },
+      {
+        "from": "이북민",
+        "type": "계약",
+        "to": "봉모",
+        "basis": "이북민은 대기열에서 갈린 증언을 확인해 봉모에게 전한다. 봉모는 신분 조각과 화물 봉인을 대조해 누구의 통과였는지 확인되지 않은 말을 심사 사실로 남기지 않는다."
+      },
+      {
+        "from": "성다현",
+        "type": "계약",
+        "to": "봉모",
+        "basis": "성다현은 대기 순서 청탁을 공개 창구로 돌리고 봉모에게 접수 기록을 넘긴다. 봉모는 신분 조각·화물 봉인을 확인해 청탁의 영수증이 통행증으로 쓰이지 않게 한다."
+      },
       {
         "from": "복감",
         "type": "계약",

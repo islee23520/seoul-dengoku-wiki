@@ -12,6 +12,328 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-강지유",
   "detailRoute": "/people/person-0428",
+  "birthDate": "2084-03-04",
+  "birthday": "03-04",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/302",
+    "lore/characters/Cast-State-05.json#/content/304",
+    "lore/characters/Cast-State-05.json#/content/305"
+  ],
+  "familyTree": {
+    "personId": "K428",
+    "nodes": [
+      {
+        "id": "K428",
+        "personId": "K428",
+        "kind": "person",
+        "name": "강지유",
+        "birthDate": "2084-03-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K428"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강지유-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0428"
+      },
+      {
+        "id": "FH-K428-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강준문",
+        "birthDate": "2054-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "강준문은 대합실 당직에서 관문 공개 창구 접수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강지유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K428-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강준섭",
+        "birthDate": "2024-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강준섭은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강지유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K428-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오준성",
+        "birthDate": "2054-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "오준성은 대합실 당직에서 관문 공개 창구 접수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강지유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K428-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송준훈",
+        "birthDate": "2024-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송준훈은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강지유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K428-P-01:K428:biological",
+        "from": "FH-K428-P-01",
+        "to": "K428",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K428-P-02:FH-K428-P-01:biological",
+        "from": "FH-K428-P-02",
+        "to": "FH-K428-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K428-M-01:K428:biological",
+        "from": "FH-K428-M-01",
+        "to": "K428",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K428-M-02:FH-K428-M-01:biological",
+        "from": "FH-K428-M-02",
+        "to": "FH-K428-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강지유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K428",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K428-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2080"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K428-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2082"
+          }
+        ]
+      },
+      {
+        "recipientId": "K122",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "강지유는 사적 청탁을 공개 관문 창구로 돌려 접수하고, 그 기록을 임겨레에게 넘겨 관문세·보호계약 전표와 맞춰 보게 한다. 임겨레는 접수 내용과 전표의 기한이 어긋난 곳을 짚어, 청탁이 정식 통행 근거로 둔갑하는 일을 추적한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/212"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K428",
     "personId": "person-0428",
@@ -132,17 +454,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 병장. 직함은 관문 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 관문 당직 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 강지유는 사적 청탁을 공개 관문 창구로 돌려 접수하고, 그 기록을 임겨레에게 넘겨 관문세·보호계약 전표와 맞춰 보게 한다. 임겨레는 접수 내용과 전표의 기한이 어긋난 곳을 짚어, 청탁이 정식 통행 근거로 둔갑하는 일을 추적한다.",
     "야망": "관문 당직 자리에서 동방사의 장부를 끊기지 않게 잇는다.",
     "공포": "관문 당직 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 관문 공개 창구 접수\n- 품계: 병장\n- 직함: 관문 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 병장. 직함은 관문 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 관문 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 관문 당직 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 관문 당직 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −45 | 무력 60 | 물질 20 | 공동 25 | 원칙 −25 | 공개 −40 | 자격 −15 | 분산 −45 | 변혁 −20\n- 욕망: 갈망 45 | 독점 35 | 위험 −30 | 과시 5 | 지속 5 | 지향 양성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 관문 공개 창구 접수\n- 품계: 병장\n- 직함: 관문 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 병장. 직함은 관문 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 관문 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 강지유는 사적 청탁을 공개 관문 창구로 돌려 접수하고, 그 기록을 임겨레에게 넘겨 관문세·보호계약 전표와 맞춰 보게 한다. 임겨레는 접수 내용과 전표의 기한이 어긋난 곳을 짚어, 청탁이 정식 통행 근거로 둔갑하는 일을 추적한다.\n\n**야망.** 관문 당직 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 관문 당직 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −45 | 무력 60 | 물질 20 | 공동 25 | 원칙 −25 | 공개 −40 | 자격 −15 | 분산 −45 | 변혁 −20\n- 욕망: 갈망 45 | 독점 35 | 위험 −30 | 과시 5 | 지속 5 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-05"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "강지유",
+        "type": "계약",
+        "to": "임겨레",
+        "basis": "강지유는 사적 청탁을 공개 관문 창구로 돌려 접수하고, 그 기록을 임겨레에게 넘겨 관문세·보호계약 전표와 맞춰 보게 한다. 임겨레는 접수 내용과 전표의 기한이 어긋난 곳을 짚어, 청탁이 정식 통행 근거로 둔갑하는 일을 추적한다."
+      }
+    ],
     "incoming": []
   }
 }

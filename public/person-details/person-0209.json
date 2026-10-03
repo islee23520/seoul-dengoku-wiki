@@ -12,6 +12,483 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-지마루",
   "detailRoute": "/people/person-0209",
+  "birthDate": "2090-03-22",
+  "birthday": "03-22",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/28",
+    "lore/characters/Cast-State-08.json#/content/30"
+  ],
+  "familyTree": {
+    "personId": "K208",
+    "nodes": [
+      {
+        "id": "K208",
+        "personId": "K208",
+        "kind": "person",
+        "name": "지마루",
+        "birthDate": "2090-03-22",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K208"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 냉동기지 감독 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-지마루-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0209"
+      },
+      {
+        "id": "FH-K208-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "지승정",
+        "birthDate": "2060-03-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "지승정은 신정 차량기지에서 냉동기지 전력 배분·충전 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-지마루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K208-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "지승아",
+        "birthDate": "2030-03-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "지승아는 신정 차량기지에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-지마루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K208-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "지승희",
+        "birthDate": "2000-03-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "지승희는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-지마루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K208-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현연",
+        "birthDate": "2060-03-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "윤현연은 신정 차량기지에서 냉동기지 전력 배분·충전 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-지마루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K208-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현은",
+        "birthDate": "2030-03-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "한현은은 신정 차량기지에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-지마루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K208-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현정",
+        "birthDate": "2000-03-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강현정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-지마루-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K208-P-01:K208:biological",
+        "from": "FH-K208-P-01",
+        "to": "K208",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K208-P-02:FH-K208-P-01:biological",
+        "from": "FH-K208-P-02",
+        "to": "FH-K208-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K208-P-03:FH-K208-P-02:biological",
+        "from": "FH-K208-P-03",
+        "to": "FH-K208-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K208-M-01:K208:biological",
+        "from": "FH-K208-M-01",
+        "to": "K208",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K208-M-02:FH-K208-M-01:biological",
+        "from": "FH-K208-M-02",
+        "to": "FH-K208-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K208-M-03:FH-K208-M-02:biological",
+        "from": "FH-K208-M-03",
+        "to": "FH-K208-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-지마루-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K208",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K208-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1002"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K208-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1005"
+          }
+        ]
+      },
+      {
+        "recipientId": "K463",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "김서연은 보관 중 곡물이 상하기 시작하면 먼저 나눠 주고 손실을 공개하면서 지마루에게 냉동기지의 전력 상태를 확인해 달라고 알린다. 지마루는 압축기와 충전 상태를 점검하고 제빙·식량 칸의 공급을 살펴, 추가 손실이 전력 공백에서 생기는지 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/240"
+          }
+        ]
+      },
+      {
+        "recipientId": "K511",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장하린은 곡물이 상하기 시작하면 먼저 나눠 주고 손실을 지마루에게 알린다. 지마루는 냉동기지 압축기와 전력 배분을 점검해 식량 칸의 공급 공백이 추가 손실로 이어지는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/282"
+          }
+        ]
+      },
+      {
+        "recipientId": "K195",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "조민재의 온도 공개에 전력을 대는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/184"
+          }
+        ]
+      },
+      {
+        "recipientId": "K200",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "지윤재의 제빙 시운전에 출력을 맞추며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/185"
+          }
+        ]
+      },
+      {
+        "recipientId": "K211",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/191"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K208",
     "personId": "person-0209",
@@ -175,6 +652,18 @@
       }
     ],
     "incoming": [
+      {
+        "from": "김서연",
+        "type": "계약",
+        "to": "지마루",
+        "basis": "김서연은 보관 중 곡물이 상하기 시작하면 먼저 나눠 주고 손실을 공개하면서 지마루에게 냉동기지의 전력 상태를 확인해 달라고 알린다. 지마루는 압축기와 충전 상태를 점검하고 제빙·식량 칸의 공급을 살펴, 추가 손실이 전력 공백에서 생기는지 찾는다."
+      },
+      {
+        "from": "장하린",
+        "type": "계약",
+        "to": "지마루",
+        "basis": "장하린은 곡물이 상하기 시작하면 먼저 나눠 주고 손실을 지마루에게 알린다. 지마루는 냉동기지 압축기와 전력 배분을 점검해 식량 칸의 공급 공백이 추가 손실로 이어지는지 살핀다."
+      },
       {
         "from": "나루희",
         "type": "계약",

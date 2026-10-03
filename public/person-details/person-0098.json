@@ -12,6 +12,368 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-구도영",
   "detailRoute": "/people/person-0098",
+  "birthDate": "2067-05-02",
+  "birthday": "05-02",
+  "age": 59,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/137"
+  ],
+  "familyTree": {
+    "personId": "K097",
+    "nodes": [
+      {
+        "id": "K097",
+        "personId": "K097",
+        "kind": "person",
+        "name": "구도영",
+        "birthDate": "2067-05-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K097"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 성수 패킹운송 물류상 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-구도영-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0098"
+      },
+      {
+        "id": "FH-K097-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "구승경",
+        "birthDate": "2037-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "구승경은 노량진 선창에서 패킹 수상 운송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-구도영-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K097-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "구승수",
+        "birthDate": "2007-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "구승수는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-구도영-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K097-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승리",
+        "birthDate": "2037-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "이승리는 노량진 선창에서 패킹 수상 운송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-구도영-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K097-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최승도",
+        "birthDate": "2007-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최승도는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-구도영-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K097-P-01:K097:biological",
+        "from": "FH-K097-P-01",
+        "to": "K097",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K097-P-02:FH-K097-P-01:biological",
+        "from": "FH-K097-P-02",
+        "to": "FH-K097-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K097-M-01:K097:biological",
+        "from": "FH-K097-M-01",
+        "to": "K097",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K097-M-02:FH-K097-M-01:biological",
+        "from": "FH-K097-M-02",
+        "to": "FH-K097-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-구도영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K097",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K097-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/482"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K097-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/484"
+          }
+        ]
+      },
+      {
+        "recipientId": "K603",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "고별호는 펌프 정비에 쓸 패킹을 구도영의 수상 운송으로 받는다. 구도영은 선창에서 상자 끈과 나룻배 시각을 확인하고, 고별호는 받은 패킹을 펌프 정비용으로 구분해 인수 기록에 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/363"
+          }
+        ]
+      },
+      {
+        "recipientId": "K095",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/74"
+          }
+        ]
+      },
+      {
+        "recipientId": "K088",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "한소미의 공정 분할에서 패킹 끈 색을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/75"
+          }
+        ]
+      },
+      {
+        "recipientId": "K105",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "구도영의 패킹 운송과 순번을 나누며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/91"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K097",
     "personId": "person-0098",
@@ -168,6 +530,12 @@
       }
     ],
     "incoming": [
+      {
+        "from": "고별호",
+        "type": "계약",
+        "to": "구도영",
+        "basis": "고별호는 펌프 정비에 쓸 패킹을 구도영의 수상 운송으로 받는다. 구도영은 선창에서 상자 끈과 나룻배 시각을 확인하고, 고별호는 받은 패킹을 펌프 정비용으로 구분해 인수 기록에 남긴다."
+      },
       {
         "from": "명우솔",
         "type": "지휘",

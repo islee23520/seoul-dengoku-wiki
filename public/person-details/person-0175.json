@@ -1,6 +1,6 @@
 {
   "id": "person-0175",
-  "name": "강다은",
+  "name": "클라라 베넷",
   "title": "선로 가문 배차원",
   "position": "선로 가문 배차원",
   "rank": "주사",
@@ -10,8 +10,471 @@
   "stage": "S1",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-강다은",
+  "sourceRoute": "/world/Cast-State-07#인물-클라라 베넷",
   "detailRoute": "/people/person-0175",
+  "birthDate": "2096-08-08",
+  "birthday": "08-08",
+  "age": 30,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/72",
+    "lore/characters/Cast-State-07.json#/content/76",
+    "lore/characters/Cast-State-07.json#/content/78"
+  ],
+  "familyTree": {
+    "personId": "K174",
+    "nodes": [
+      {
+        "id": "K174",
+        "personId": "K174",
+        "kind": "person",
+        "name": "클라라 베넷",
+        "birthDate": "2096-08-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K174"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 선로 가문 배차원 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-클라라-베넷-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Clara Bennett",
+        "detailRoute": "/people/person-0175"
+      },
+      {
+        "id": "FH-K174-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "아서 베넷",
+        "birthDate": "2066-08-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2104,
+            "summary": "아서 베넷은 2066년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2084년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-클라라-베넷-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Arthur Bennett was born in 2066 and grew up reading family and work records. From 2084, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Arthur Bennett",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K174-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "에드워드 베넷",
+        "birthDate": "2036-08-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "에드워드 베넷은 2036년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2054년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-클라라-베넷-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Edward Bennett was born in 2036 and grew up reading family and work records. From 2054, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Edward Bennett",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K174-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "조지 베넷",
+        "birthDate": "2006-08-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조지 베넷은 2026년 대정전 당시 용산·이태원 생활권에서 이태원 민간 숙박·통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-클라라-베넷-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "George Bennett was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "George Bennett",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K174-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "엘리자베스 휴스",
+        "birthDate": "2066-08-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2104,
+            "summary": "엘리자베스 휴스는 2066년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2084년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-클라라-베넷-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Elizabeth Hughes was born in 2066 and grew up reading family and work records. From 2084, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Elizabeth Hughes",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K174-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "안 휴스",
+        "birthDate": "2036-08-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "안 휴스는 2036년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2054년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-클라라-베넷-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Anne Hughes was born in 2036 and grew up reading family and work records. From 2054, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Anne Hughes",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K174-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "마거릿 휴스",
+        "birthDate": "2006-08-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마거릿 휴스는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 민간 숙박·통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-클라라-베넷-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Margaret Hughes was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Margaret Hughes",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K174-P-01:K174:biological",
+        "from": "FH-K174-P-01",
+        "to": "K174",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K174-P-02:FH-K174-P-01:biological",
+        "from": "FH-K174-P-02",
+        "to": "FH-K174-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K174-P-03:FH-K174-P-02:biological",
+        "from": "FH-K174-P-03",
+        "to": "FH-K174-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K174-M-01:K174:biological",
+        "from": "FH-K174-M-01",
+        "to": "K174",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K174-M-02:FH-K174-M-01:biological",
+        "from": "FH-K174-M-02",
+        "to": "FH-K174-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K174-M-03:FH-K174-M-02:biological",
+        "from": "FH-K174-M-03",
+        "to": "FH-K174-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-클라라-베넷-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K174",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K174-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/844"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K174-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/847"
+          }
+        ]
+      },
+      {
+        "recipientId": "K170",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "가문 배차 지휘를 받음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/63"
+          }
+        ]
+      },
+      {
+        "recipientId": "K273",
+        "recipientKind": "person",
+        "type": "배신",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/109"
+          }
+        ]
+      },
+      {
+        "recipientId": "K273",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "시험 차륜 유출 의심의 원한",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/187"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K174",
     "personId": "person-0175",
@@ -83,7 +546,7 @@
     "size": 4,
     "current_location": "고가도로 밑",
     "camp": {
-      "name": "강다은 고가도로 하부 야영지",
+      "name": "클라라 베넷 고가도로 하부 야영지",
       "type": "야영지",
       "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
       "facilities": [
@@ -96,9 +559,9 @@
     "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
   },
   "clan": {
-    "id": "ac15-c9c4-c8fc",
-    "name": "진주 강씨",
-    "crest": "clan-crests/ac15-c9c4-c8fc.svg"
+    "id": "DIV-K174",
+    "name": "용산·이태원 베넷씨",
+    "crest": "clan-crests/DIV-K174.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -133,25 +596,25 @@
     "욕망": "갈망 40 | 독점 −30 | 위험 30 | 과시 −20 | 지속 20 | 지향 무성향 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 선로 가문 배차원 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 선로 가문 배차원 자리는 무표 출발 열차 저지로 열렸다. 클라라 베넷은 2096년에 태어났다. 영국계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 선로 가문 배차원 업무를 맡는다. 조지 베넷은 2026년 용산·이태원에서 이태원 민간 숙박·통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 클라라 베넷의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 선로 가문 배차원. 가문 칸과 공공 칸의 배차를 섞어 놓고, 막판에 전환기로 이익이 큰 쪽을 연다.",
     "일화": "억류 열차의 전환기 키가 가문 금고와 조정관실에 하나씩 있다는 소문이 배차판에 붙었다.",
-    "관계": "신가온의 지휘를 받지만 박태겸에게 가문 동향을 팔아 빚을 졌다. 조우찬에게 창동 시험 차륜을 빼돌린 의혹이 있다.",
+    "관계": "알렉산더 밀러의 지휘를 받지만 박태겸에게 가문 동향을 팔아 빚을 졌다. 조우찬에게 창동 시험 차륜을 빼돌린 의혹이 있다.",
     "야망": "가문 거부권과 박태겸의 도제 승계를 동시에 거래해 자신이 후국회의의 실제 배차 키를 쥔다.",
     "공포": "양편을 걸다 들켜 선로 봉쇄대의 인질로 남는 것.",
     "개입": "어느 쪽 키를 살릴지 고르거나, 양다리 배차 장부를 후국회의에 펼칠 수 있다."
   },
-  "biography": "대담하고 기회에 빠르다. 가문의 이름을 방패로 쓰면서도 조정관의 배차표를 빈칸처럼 다룬다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 가문·공공 화차 배차와 전환기 운영\n- 직함: 선로 가문 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 선로 가문 배차원 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 선로 가문 배차원. 가문 칸과 공공 칸의 배차를 섞어 놓고, 막판에 전환기로 이익이 큰 쪽을 연다.\n\n**일화.** 억류 열차의 전환기 키가 가문 금고와 조정관실에 하나씩 있다는 소문이 배차판에 붙었다.\n\n**관계.** 신가온의 지휘를 받지만 박태겸에게 가문 동향을 팔아 빚을 졌다. 조우찬에게 창동 시험 차륜을 빼돌린 의혹이 있다.\n\n**야망.** 가문 거부권과 박태겸의 도제 승계를 동시에 거래해 자신이 후국회의의 실제 배차 키를 쥔다.\n\n**공포.** 양편을 걸다 들켜 선로 봉쇄대의 인질로 남는 것.\n\n**개입.** 어느 쪽 키를 살릴지 고르거나, 양다리 배차 장부를 후국회의에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 25 | 무력 −15 | 물질 15 | 공동 −10 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 40 | 독점 −30 | 위험 30 | 과시 −20 | 지속 20 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "대담하고 기회에 빠르다. 가문의 이름을 방패로 쓰면서도 조정관의 배차표를 빈칸처럼 다룬다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 가문·공공 화차 배차와 전환기 운영\n- 직함: 선로 가문 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 선로 가문 배차원 자리는 무표 출발 열차 저지로 열렸다. 클라라 베넷은 2096년에 태어났다. 영국계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 선로 가문 배차원 업무를 맡는다. 조지 베넷은 2026년 용산·이태원에서 이태원 민간 숙박·통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 클라라 베넷의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 선로 가문 배차원. 가문 칸과 공공 칸의 배차를 섞어 놓고, 막판에 전환기로 이익이 큰 쪽을 연다.\n\n**일화.** 억류 열차의 전환기 키가 가문 금고와 조정관실에 하나씩 있다는 소문이 배차판에 붙었다.\n\n**관계.** 알렉산더 밀러의 지휘를 받지만 박태겸에게 가문 동향을 팔아 빚을 졌다. 조우찬에게 창동 시험 차륜을 빼돌린 의혹이 있다.\n\n**야망.** 가문 거부권과 박태겸의 도제 승계를 동시에 거래해 자신이 후국회의의 실제 배차 키를 쥔다.\n\n**공포.** 양편을 걸다 들켜 선로 봉쇄대의 인질로 남는 것.\n\n**개입.** 어느 쪽 키를 살릴지 고르거나, 양다리 배차 장부를 후국회의에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 25 | 무력 −15 | 물질 15 | 공동 −10 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 40 | 독점 −30 | 위험 30 | 과시 −20 | 지속 20 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "강다은",
+        "from": "클라라 베넷",
         "type": "지휘",
-        "to": "신가온",
+        "to": "알렉산더 밀러",
         "basis": "가문 배차 지휘를 받음"
       }
     ],
@@ -159,7 +622,7 @@
       {
         "from": "조우찬",
         "type": "원한",
-        "to": "강다은",
+        "to": "클라라 베넷",
         "basis": "시험 차륜 유출 의심의 원한"
       }
     ]

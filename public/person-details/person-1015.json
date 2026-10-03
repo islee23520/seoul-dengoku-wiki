@@ -12,6 +12,417 @@
   "stateName": "이주민 회랑",
   "sourceRoute": "/world/Diaspora-Corridors#인물-나르기즈-유수포바-nargiz-yusupova-나르기즈",
   "detailRoute": "/people/person-1015",
+  "birthDate": "2076-01-02",
+  "birthday": "01-02",
+  "age": 50,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/factions/Diaspora-Corridors.json#/content/14"
+  ],
+  "familyTree": {
+    "personId": "K1015",
+    "nodes": [
+      {
+        "id": "K1015",
+        "personId": "K1015",
+        "kind": "person",
+        "name": "나르기즈 유수포바",
+        "birthDate": "2076-01-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1015"
+          },
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "성명: 나르기즈 유수포바. 하숙에서는 나르기즈. 장부 한글 나르기즈",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Nargiz Yusupova",
+        "detailRoute": "/people/person-1015"
+      },
+      {
+        "id": "FH-K1015-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "루스탐 유수포프",
+        "birthDate": "2046-01-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "루스탐 유수포프는 2046년에 태어났다. 자양·건대 고려인 하숙의 가족 기록과 작업 사본을 읽으며 자랐고, 2064년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Rustam Yusupov was born in 2046 and grew up reading family and work records. From 2064, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Rustam Yusupov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1015-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "안바르 유수포프",
+        "birthDate": "2016-01-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "안바르 유수포프는 2016년에 태어났다. 자양·건대 고려인 하숙의 가족 기록과 작업 사본을 읽으며 자랐고, 2034년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Anvar Yusupov was born in 2016 and grew up reading family and work records. From 2034, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Anvar Yusupov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1015-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김영숙",
+        "birthDate": "2046-01-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "김영숙은 2046년에 태어났다. 자양·건대 고려인 하숙의 가족 기록과 작업 사본을 읽으며 자랐고, 2064년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Kim Yeongsuk was born in 2046 and grew up reading family and work records. From 2064, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Kim Yeongsuk",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1015-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김옥순",
+        "birthDate": "2016-01-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김옥순은 2016년에 태어났다. 자양·건대 고려인 하숙의 가족 기록과 작업 사본을 읽으며 자랐고, 2034년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Kim Oksun was born in 2016 and grew up reading family and work records. From 2034, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Kim Oksun",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1015-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "카림 유수포프",
+        "nameEn": "Karim Yusupov",
+        "birthDate": "1986-01-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K1015-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "카림 유수포프는 2026년 대정전 당시 자양·건대 고려인 하숙 생활권에서 자양·건대의 고려인 민간 화물 중개 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Karim Yusupov was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K1015-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1015-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "김정희",
+        "nameEn": "Kim Jeonghui",
+        "birthDate": "1986-01-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K1015-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김정희는 2026년 대정전 당시 자양·건대 고려인 하숙 생활권에서 자양·건대의 고려인 민간 화물 중개 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Kim Jeonghui was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K1015-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1015-P-01:K1015:biological",
+        "from": "FH-K1015-P-01",
+        "to": "K1015",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1015-P-02:FH-K1015-P-01:biological",
+        "from": "FH-K1015-P-02",
+        "to": "FH-K1015-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1015-M-01:K1015:biological",
+        "from": "FH-K1015-M-01",
+        "to": "K1015",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1015-M-02:FH-K1015-M-01:biological",
+        "from": "FH-K1015-M-02",
+        "to": "FH-K1015-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1015-P-03:FH-K1015-P-02:biological",
+        "from": "FH-K1015-P-03",
+        "to": "FH-K1015-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K1015-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1015-M-03:FH-K1015-M-02:biological",
+        "from": "FH-K1015-M-03",
+        "to": "FH-K1015-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K1015-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K245",
+      "recipientName": "백온",
+      "basis": "주요 관계: 안국총림 방장 백온과 협력. 뚝섬 기동 정비조와 숙소 계약",
+      "sourceRef": {
+        "path": "lore/factions/Diaspora-Corridors.json",
+        "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+      }
+    }
+  ],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K1015",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K1015-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4882"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K1015-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4884"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": true,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "needed; actual profiles require contextual review"
+    }
+  },
   "gurps": {
     "id": "K1015",
     "personId": "person-1015",
@@ -133,7 +544,7 @@
     "품계": "없음",
     "가치관": "권위 −20 | 개방 40 | 무력 −30 | 물질 −20 | 공동 40 | 원칙 40 | 공개 30 | 자격 0 | 분산 40 | 변혁 30",
     "욕망": "갈망 60 | 독점 −10 | 위험 20 | 과시 20 | 지속 30 | 지향 이성 | 결합 단혼",
-    "출신 공동체": "자양·건대 고려인 하숙. 붕괴 전 화물 중개",
+    "출신 공동체": "자양·건대 고려인 하숙. 붕괴 전 화물 중개. 나르기즈 유수포바는 2076년 자양에서 태어났다. 우즈베크계 아버지와 고려인 어머니가 자양·건대 하숙에 남긴 가족 기록을 읽으며 자랐다. 일상에서는 러시아어를 쓰고 시장에서는 한국어를 사용하며, 고려말과 우즈베크어 가족 어휘도 이어받았다. 두 말 피난 명부를 나르는 전령으로 한글만 적힌 명부에는 서명하지 않는다. 카림 유수포프는 2026년 자양·건대 고려인 하숙에서 자양·건대의 고려인 민간 화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 나르기즈 유수포바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.",
     "언어": "러시아어 일상, 한국어 시장, 고려말 잔존",
     "생업": "전령",
     "소속": "고려인 하숙 명부. 명부교회와 안국총림 사이에 이중 등록",
@@ -148,7 +559,7 @@
     "촉발 사건": "이중 명부가 거부되면 동북 회랑 전령이 끊긴다"
   },
   "sections": {},
-  "biography": "- 성명: 나르기즈 유수포바. 하숙에서는 나르기즈. 장부 한글 나르기즈\n- 캐릭터 ID: K1015\n- 출생지: 자양\n- 성별: 남성\n- 품계: 없음\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 −20 | 공동 40 | 원칙 40 | 공개 30 | 자격 0 | 분산 40 | 변혁 30\n- 욕망: 갈망 60 | 독점 −10 | 위험 20 | 과시 20 | 지속 30 | 지향 이성 | 결합 단혼\n- 출신 공동체: 자양·건대 고려인 하숙. 붕괴 전 화물 중개\n- 언어: 러시아어 일상, 한국어 시장, 고려말 잔존\n- 생업: 전령\n- 소속: 고려인 하숙 명부. 명부교회와 안국총림 사이에 이중 등록\n- 직위: 두 말 피난 명부 전령\n- 징집 이력: 없음\n- 무장 접근: 없음\n- 성격: 명부에 한글만 있으면 그 줄을 읽지 않은 것으로 본다\n- 개인 야망: 북한산보국문 피난 행렬에 러시아어 줄을 공식 칸으로 넣는다\n- 공포: 하숙이 「미등록 외국」으로 묶여 공방 민병 검문에 걸리는 것\n- 통치·교섭 방식: 한글 전용 명부는 서명하지 않는다\n- 주요 관계: 안국총림 방장 백온과 협력. 뚝섬 기동 정비조와 숙소 계약\n- 촉발 사건: 이중 명부가 거부되면 동북 회랑 전령이 끊긴다",
+  "biography": "- 성명: 나르기즈 유수포바. 하숙에서는 나르기즈. 장부 한글 나르기즈\n- 캐릭터 ID: K1015\n- 출생지: 자양\n- 성별: 남성\n- 품계: 없음\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 −20 | 공동 40 | 원칙 40 | 공개 30 | 자격 0 | 분산 40 | 변혁 30\n- 욕망: 갈망 60 | 독점 −10 | 위험 20 | 과시 20 | 지속 30 | 지향 이성 | 결합 단혼\n- 출신 공동체: 자양·건대 고려인 하숙. 붕괴 전 화물 중개. 나르기즈 유수포바는 2076년 자양에서 태어났다. 우즈베크계 아버지와 고려인 어머니가 자양·건대 하숙에 남긴 가족 기록을 읽으며 자랐다. 일상에서는 러시아어를 쓰고 시장에서는 한국어를 사용하며, 고려말과 우즈베크어 가족 어휘도 이어받았다. 두 말 피난 명부를 나르는 전령으로 한글만 적힌 명부에는 서명하지 않는다. 카림 유수포프는 2026년 자양·건대 고려인 하숙에서 자양·건대의 고려인 민간 화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 나르기즈 유수포바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 러시아어 일상, 한국어 시장, 고려말 잔존\n- 생업: 전령\n- 소속: 고려인 하숙 명부. 명부교회와 안국총림 사이에 이중 등록\n- 직위: 두 말 피난 명부 전령\n- 징집 이력: 없음\n- 무장 접근: 없음\n- 성격: 명부에 한글만 있으면 그 줄을 읽지 않은 것으로 본다\n- 개인 야망: 북한산보국문 피난 행렬에 러시아어 줄을 공식 칸으로 넣는다\n- 공포: 하숙이 「미등록 외국」으로 묶여 공방 민병 검문에 걸리는 것\n- 통치·교섭 방식: 한글 전용 명부는 서명하지 않는다\n- 주요 관계: 안국총림 방장 백온과 협력. 뚝섬 기동 정비조와 숙소 계약\n- 촉발 사건: 이중 명부가 거부되면 동북 회랑 전령이 끊긴다",
   "sources": [
     "Diaspora-Corridors"
   ],

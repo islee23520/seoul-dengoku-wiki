@@ -12,6 +12,453 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-신태산",
   "detailRoute": "/people/person-0198",
+  "birthDate": "2079-12-17",
+  "birthday": "12-17",
+  "age": 47,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/72",
+    "lore/characters/Cast-State-08.json#/content/74"
+  ],
+  "familyTree": {
+    "personId": "K197",
+    "nodes": [
+      {
+        "id": "K197",
+        "personId": "K197",
+        "kind": "person",
+        "name": "신태산",
+        "birthDate": "2079-12-17",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K197"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-신태산-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0198"
+      },
+      {
+        "id": "FH-K197-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "신승호",
+        "birthDate": "2049-12-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2087,
+            "summary": "신승호는 신내 환승 당직에서 호송 경로·도착 중량 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-신태산-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K197-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "신승원",
+        "birthDate": "2019-12-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "신승원은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-신태산-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K197-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현수",
+        "birthDate": "2049-12-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2087,
+            "summary": "한현수는 신내 환승 당직에서 호송 경로·도착 중량 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-신태산-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K197-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현은",
+        "birthDate": "2019-12-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강현은은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-신태산-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K197-P-01:K197:biological",
+        "from": "FH-K197-P-01",
+        "to": "K197",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K197-P-02:FH-K197-P-01:biological",
+        "from": "FH-K197-P-02",
+        "to": "FH-K197-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K197-M-01:K197:biological",
+        "from": "FH-K197-M-01",
+        "to": "K197",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K197-M-02:FH-K197-M-01:biological",
+        "from": "FH-K197-M-02",
+        "to": "FH-K197-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-신태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K197",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K197-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/954"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K197-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/956"
+          }
+        ]
+      },
+      {
+        "recipientId": "K194",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "상회 호송 계약을 현장에서 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/66"
+          }
+        ]
+      },
+      {
+        "recipientId": "K173",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "호송 도착 시각을 맞춤",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/158"
+          }
+        ]
+      },
+      {
+        "recipientId": "K173",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "환적 창에서 호송을 인계",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/162"
+          }
+        ]
+      },
+      {
+        "recipientId": "K296",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "공동호송 초안을 현장 기준으로 검토",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/163"
+          }
+        ]
+      },
+      {
+        "recipientId": "K591",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장솔원은 능선 초계에서 읽은 매복 흔적을 신태산에게 알린다. 신태산은 다음 호송 출발 전에 현장 위험을 확인하고 화물과 인원 준비를 살펴, 이전 경로를 그대로 따라가는 일을 경계한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/352"
+          }
+        ]
+      },
+      {
+        "recipientId": "K639",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "안북민은 재검증한 교량 경비 보고를 신태산에게 전한다. 신태산은 다음 호송의 경로를 살펴 훈련상의 오인과 실제 통행 위험을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/394"
+          }
+        ]
+      },
+      {
+        "recipientId": "K735",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "차서환은 시장 호송로에서 읽은 매복 흔적을 신태산에게 전한다. 신태산은 다음 출발 전에 경로 위험과 화물 준비를 확인해 이전 길을 그대로 따르지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/478"
+          }
+        ]
+      },
+      {
+        "recipientId": "K927",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "주산인은 호송로의 매복 흔적을 신태산에게 전한다. 신태산은 다음 출발 전에 경로 위험과 화물 준비를 확인해 이전 길을 그대로 따르지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/647"
+          }
+        ]
+      },
+      {
+        "recipientId": "K203",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "신태산의 호송 계약을 부두에서 집행하는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/174"
+          }
+        ]
+      },
+      {
+        "recipientId": "K215",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "신태산의 호송 반에서 상자를 증언하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/100"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K197",
     "personId": "person-0198",
@@ -143,12 +590,12 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.",
     "일화": "한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.",
-    "관계": "오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.",
+    "관계": "오해린과 호송 계약을 맺고 루카스 슈나이더의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.",
     "야망": "노량진 호송선단을 공동호송의 실무 뼈대로 키워 강국의 보호비를 시장 자경으로 대체한다.",
     "공포": "호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
     "개입": "밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다."
   },
-  "biography": "과묵하고 신의가 강하다. 호송 중에 화물을 열어본 대원은 그날로 자경대에서 뺀다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 호송 경로·도착 중량 대조\n- 직함: 호송 반장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.\n\n**관계.** 오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.\n\n**야망.** 노량진 호송선단을 공동호송의 실무 뼈대로 키워 강국의 보호비를 시장 자경으로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 35 | 무력 −25 | 물질 60 | 공동 −15 | 원칙 −25 | 공개 25 | 자격 0 | 분산 30 | 변혁 10\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −30 | 과시 −5 | 지속 15 | 지향 동성 | 결합 다자\n:::",
+  "biography": "과묵하고 신의가 강하다. 호송 중에 화물을 열어본 대원은 그날로 자경대에서 뺀다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 호송 경로·도착 중량 대조\n- 직함: 호송 반장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.\n\n**관계.** 오해린과 호송 계약을 맺고 루카스 슈나이더의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.\n\n**야망.** 노량진 호송선단을 공동호송의 실무 뼈대로 키워 강국의 보호비를 시장 자경으로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 35 | 무력 −25 | 물질 60 | 공동 −15 | 원칙 −25 | 공개 25 | 자격 0 | 분산 30 | 변혁 10\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −30 | 과시 −5 | 지속 15 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],
@@ -163,7 +610,7 @@
       {
         "from": "신태산",
         "type": "계약",
-        "to": "송이든",
+        "to": "루카스 슈나이더",
         "basis": "환적 창에서 호송을 인계"
       },
       {
@@ -175,10 +622,34 @@
     ],
     "incoming": [
       {
-        "from": "송이든",
+        "from": "루카스 슈나이더",
         "type": "계약",
         "to": "신태산",
         "basis": "호송 도착 시각을 맞춤"
+      },
+      {
+        "from": "장솔원",
+        "type": "계약",
+        "to": "신태산",
+        "basis": "장솔원은 능선 초계에서 읽은 매복 흔적을 신태산에게 알린다. 신태산은 다음 호송 출발 전에 현장 위험을 확인하고 화물과 인원 준비를 살펴, 이전 경로를 그대로 따라가는 일을 경계한다."
+      },
+      {
+        "from": "안북민",
+        "type": "계약",
+        "to": "신태산",
+        "basis": "안북민은 재검증한 교량 경비 보고를 신태산에게 전한다. 신태산은 다음 호송의 경로를 살펴 훈련상의 오인과 실제 통행 위험을 구분한다."
+      },
+      {
+        "from": "차서환",
+        "type": "계약",
+        "to": "신태산",
+        "basis": "차서환은 시장 호송로에서 읽은 매복 흔적을 신태산에게 전한다. 신태산은 다음 출발 전에 경로 위험과 화물 준비를 확인해 이전 길을 그대로 따르지 않게 한다."
+      },
+      {
+        "from": "주산인",
+        "type": "계약",
+        "to": "신태산",
+        "basis": "주산인은 호송로의 매복 흔적을 신태산에게 전한다. 신태산은 다음 출발 전에 경로 위험과 화물 준비를 확인해 이전 길을 그대로 따르지 않게 한다."
       },
       {
         "from": "나태경",

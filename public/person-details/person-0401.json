@@ -12,6 +12,567 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-곽은재",
   "detailRoute": "/people/person-0401",
+  "birthDate": "2099-12-11",
+  "birthday": "12-11",
+  "age": 27,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/50",
+    "lore/characters/Cast-State-16.json#/content/52"
+  ],
+  "familyTree": {
+    "personId": "K400",
+    "nodes": [
+      {
+        "id": "K400",
+        "personId": "K400",
+        "kind": "person",
+        "name": "곽은재",
+        "birthDate": "2099-12-11",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K400"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 감사 보조 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽은재-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0401"
+      },
+      {
+        "id": "FH-K400-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승원",
+        "birthDate": "2069-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "곽승원은 서울역 등기소에서 급수 중단·호송 지연 감사표 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽은재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K400-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승진",
+        "birthDate": "2039-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "곽승진은 서울역 등기소에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽은재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K400-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승현",
+        "birthDate": "2009-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "곽승현은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽은재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K400-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준혁",
+        "birthDate": "2069-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "윤준혁은 서울역 등기소에서 급수 중단·호송 지연 감사표 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽은재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K400-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준규",
+        "birthDate": "2039-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "한준규는 서울역 등기소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽은재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K400-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "강준희",
+        "birthDate": "2009-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강준희는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽은재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K400-P-01:K400:biological",
+        "from": "FH-K400-P-01",
+        "to": "K400",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K400-P-02:FH-K400-P-01:biological",
+        "from": "FH-K400-P-02",
+        "to": "FH-K400-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K400-P-03:FH-K400-P-02:biological",
+        "from": "FH-K400-P-03",
+        "to": "FH-K400-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K400-M-01:K400:biological",
+        "from": "FH-K400-M-01",
+        "to": "K400",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K400-M-02:FH-K400-M-01:biological",
+        "from": "FH-K400-M-02",
+        "to": "FH-K400-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K400-M-03:FH-K400-M-02:biological",
+        "from": "FH-K400-M-03",
+        "to": "FH-K400-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽은재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K400",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K400-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1936"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K400-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1939"
+          }
+        ]
+      },
+      {
+        "recipientId": "K398",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "감사권을 실무로 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/105"
+          }
+        ]
+      },
+      {
+        "recipientId": "K455",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽성호는 감사 당직에서 보관한 원본 기록을 곽은재에게 인계한다. 곽은재는 급수 중단 시간과 호송 지연을 감사표에 적다가 근거가 비면 그 원본을 찾아, 조합 작업장의 피해가 빠진 채 감사가 종결되지 않도록 확인한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/235"
+          }
+        ]
+      },
+      {
+        "recipientId": "K503",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "김준호는 젖은 인준 문서를 말려 보존한 필사본을 곽은재에게 넘긴다. 곽은재는 급수 중단과 호송 지연의 감사 근거로 삼되 읽히지 않는 부분을 빈칸으로 남겨 구두 약속으로 피해 기록을 채우지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/276"
+          }
+        ]
+      },
+      {
+        "recipientId": "K551",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장금원은 물에 젖은 인준 문서를 말려 만든 필사본을 곽은재의 감사에 넘긴다. 곽은재는 급수 중단 시간과 호송 지연을 확인하면서 지워진 부분을 다시 찾아, 문서 손상 때문에 작업장 피해가 빠지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/318"
+          }
+        ]
+      },
+      {
+        "recipientId": "K647",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배사민은 이중 지급을 고친 감사 기록을 곽은재에게 전한다. 곽은재는 급수 중단과 호송 지연의 손실 근거를 확인해 같은 피해가 두 번 산정된 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/402"
+          }
+        ]
+      },
+      {
+        "recipientId": "K743",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "박마은은 보존한 감사 필사본을 곽은재에게 전한다. 곽은재는 단수 시간과 호송 지연을 확인해 젖어 읽히지 않는 줄 때문에 작업장 피해가 빠지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/486"
+          }
+        ]
+      },
+      {
+        "recipientId": "K791",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "서사서는 공개 열람을 기다리는 감사표의 보관 상태와 표시한 단수 시간 칸을 곽은재에게 알린다. 곽은재는 열람 사본을 확인해 공개 확인 전 종결 도장이 찍히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/528"
+          }
+        ]
+      },
+      {
+        "recipientId": "K887",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽카현은 이중 지급을 고친 감사 기록을 곽은재에게 전한다. 곽은재는 단수·호송 지연의 근거를 확인해 같은 피해가 중복 산정된 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/612"
+          }
+        ]
+      },
+      {
+        "recipientId": "K935",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "최은훈은 감사 원본과 인수 기록을 곽은재에게 전한다. 곽은재는 단수·호송 지연의 근거를 확인해 의심 사본 때문에 작업장 피해가 달라지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/655"
+          }
+        ]
+      },
+      {
+        "recipientId": "K410",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "곽은재의 보조 직인을 철끈으로 이어 받는 사제이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/370"
+          }
+        ]
+      },
+      {
+        "recipientId": "K416",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽은재의 감사표를 보조로 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/208"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K400",
     "personId": "person-0401",
@@ -168,6 +729,54 @@
       }
     ],
     "incoming": [
+      {
+        "from": "곽성호",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "곽성호는 감사 당직에서 보관한 원본 기록을 곽은재에게 인계한다. 곽은재는 급수 중단 시간과 호송 지연을 감사표에 적다가 근거가 비면 그 원본을 찾아, 조합 작업장의 피해가 빠진 채 감사가 종결되지 않도록 확인한다."
+      },
+      {
+        "from": "김준호",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "김준호는 젖은 인준 문서를 말려 보존한 필사본을 곽은재에게 넘긴다. 곽은재는 급수 중단과 호송 지연의 감사 근거로 삼되 읽히지 않는 부분을 빈칸으로 남겨 구두 약속으로 피해 기록을 채우지 않는다."
+      },
+      {
+        "from": "장금원",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "장금원은 물에 젖은 인준 문서를 말려 만든 필사본을 곽은재의 감사에 넘긴다. 곽은재는 급수 중단 시간과 호송 지연을 확인하면서 지워진 부분을 다시 찾아, 문서 손상 때문에 작업장 피해가 빠지지 않게 한다."
+      },
+      {
+        "from": "배사민",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "배사민은 이중 지급을 고친 감사 기록을 곽은재에게 전한다. 곽은재는 급수 중단과 호송 지연의 손실 근거를 확인해 같은 피해가 두 번 산정된 곳을 찾는다."
+      },
+      {
+        "from": "박마은",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "박마은은 보존한 감사 필사본을 곽은재에게 전한다. 곽은재는 단수 시간과 호송 지연을 확인해 젖어 읽히지 않는 줄 때문에 작업장 피해가 빠지지 않게 한다."
+      },
+      {
+        "from": "서사서",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "서사서는 공개 열람을 기다리는 감사표의 보관 상태와 표시한 단수 시간 칸을 곽은재에게 알린다. 곽은재는 열람 사본을 확인해 공개 확인 전 종결 도장이 찍히지 않게 한다."
+      },
+      {
+        "from": "곽카현",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "곽카현은 이중 지급을 고친 감사 기록을 곽은재에게 전한다. 곽은재는 단수·호송 지연의 근거를 확인해 같은 피해가 중복 산정된 곳을 찾는다."
+      },
+      {
+        "from": "최은훈",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "최은훈은 감사 원본과 인수 기록을 곽은재에게 전한다. 곽은재는 단수·호송 지연의 근거를 확인해 의심 사본 때문에 작업장 피해가 달라지지 않게 한다."
+      },
       {
         "from": "동새결",
         "type": "사제",

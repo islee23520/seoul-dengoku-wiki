@@ -12,6 +12,442 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Core-Characters#탁서윤",
   "detailRoute": "/people/person-1006",
+  "birthDate": "2091-12-11",
+  "birthday": "12-11",
+  "age": 35,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Core-Characters.json#/content/131",
+    "lore/chronology/Century-Annals.json#/content/434",
+    "lore/chronology/Century-Annals.json#/content/500"
+  ],
+  "familyTree": {
+    "personId": "K1006",
+    "nodes": [
+      {
+        "id": "K1006",
+        "personId": "K1006",
+        "kind": "person",
+        "name": "탁서윤",
+        "birthDate": "2091-12-11",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1006"
+          },
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생애. 2126년 세대. 구의 물 쪽 수비다. 관문사령관과 따로 뽑힌다. 전쟁과 급수는 고서준과 합의한 뒤에 정해진다. 대치 때 처음으로 같은 명령서에 함께 서명하였다. 그 전에는 따로 움직였다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "탁서윤-p2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-1006"
+      },
+      {
+        "id": "FH-K1006-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "탁승은",
+        "birthDate": "2061-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "탁승은은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "탁서윤-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1006-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "탁승연",
+        "birthDate": "2031-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "탁승연은 생활권의 공동 거처에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "탁서윤-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1006-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "탁승정",
+        "birthDate": "2001-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "탁승정은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "탁서윤-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1006-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조서석",
+        "birthDate": "2061-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "조서석은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "탁서윤-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1006-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김민빈",
+        "birthDate": "2031-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "김민빈은 생활권의 공동 거처에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "탁서윤-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1006-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서진",
+        "birthDate": "2001-12-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박서진은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "탁서윤-p2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1006-P-01:K1006:biological",
+        "from": "FH-K1006-P-01",
+        "to": "K1006",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1006-P-02:FH-K1006-P-01:biological",
+        "from": "FH-K1006-P-02",
+        "to": "FH-K1006-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1006-P-03:FH-K1006-P-02:biological",
+        "from": "FH-K1006-P-03",
+        "to": "FH-K1006-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1006-M-01:K1006:biological",
+        "from": "FH-K1006-M-01",
+        "to": "K1006",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1006-M-02:FH-K1006-M-01:biological",
+        "from": "FH-K1006-M-02",
+        "to": "FH-K1006-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1006-M-03:FH-K1006-M-02:biological",
+        "from": "FH-K1006-M-03",
+        "to": "FH-K1006-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "탁서윤-p2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K1006",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K1006-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4846"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K1006-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4849"
+          }
+        ]
+      },
+      {
+        "recipientId": "K001",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "구의 물과 서부 수문을 합의 뒤에 나눔",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/2"
+          }
+        ]
+      },
+      {
+        "recipientId": "K348",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "구의수비대장과 관문사령관의 이원 합의",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/7"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K1006",
     "personId": "person-1006",

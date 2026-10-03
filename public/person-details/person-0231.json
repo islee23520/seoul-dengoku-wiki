@@ -12,6 +12,553 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-복두모",
   "detailRoute": "/people/person-0231",
+  "birthDate": "2090-10-16",
+  "birthday": "10-16",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/116",
+    "lore/characters/Cast-State-09.json#/content/118"
+  ],
+  "familyTree": {
+    "personId": "K230",
+    "nodes": [
+      {
+        "id": "K230",
+        "personId": "K230",
+        "kind": "person",
+        "name": "복두모",
+        "birthDate": "2090-10-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K230"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 환전로 갱신 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-복두모-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0231"
+      },
+      {
+        "id": "FH-K230-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승석",
+        "birthDate": "2060-10-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "복승석은 대합실 당직에서 환전로 실측 좌표·갱신 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-복두모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K230-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승준",
+        "birthDate": "2030-10-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "복승준은 대합실 당직에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-복두모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K230-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승호",
+        "birthDate": "2000-10-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "복승호는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-복두모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K230-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현온",
+        "birthDate": "2060-10-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "최현온은 대합실 당직에서 환전로 실측 좌표·갱신 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-복두모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K230-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현재",
+        "birthDate": "2030-10-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "정현재는 대합실 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-복두모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K230-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현규",
+        "birthDate": "2000-10-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤현규는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-복두모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K230-P-01:K230:biological",
+        "from": "FH-K230-P-01",
+        "to": "K230",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K230-P-02:FH-K230-P-01:biological",
+        "from": "FH-K230-P-02",
+        "to": "FH-K230-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K230-P-03:FH-K230-P-02:biological",
+        "from": "FH-K230-P-03",
+        "to": "FH-K230-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K230-M-01:K230:biological",
+        "from": "FH-K230-M-01",
+        "to": "K230",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K230-M-02:FH-K230-M-01:biological",
+        "from": "FH-K230-M-02",
+        "to": "FH-K230-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K230-M-03:FH-K230-M-02:biological",
+        "from": "FH-K230-M-03",
+        "to": "FH-K230-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-복두모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K230",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K230-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1112"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K230-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1115"
+          }
+        ]
+      },
+      {
+        "recipientId": "K432",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "임유나는 환전 장부를 전달하다 통로가 막히면 복두모의 실측·갱신 기록과 전달 경로를 맞춰 본다. 복두모는 실측하지 않은 구간을 점선으로 남기고 독립 목격이 부족한 좌표를 원판에 올리지 않아, 전령이 확인된 길과 아직 확인되지 않은 길을 구분하게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/214"
+          }
+        ]
+      },
+      {
+        "recipientId": "K480",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "송솔지는 환전 장부를 나르다가 눈에 막힌 통로를 만나면 복두모에게 현장 상태를 알린다. 복두모는 그 구간을 실측하고 확인된 길과 미확인 길을 나눠 표시해, 송솔지가 소문만 믿고 장부를 우회로로 보내지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/255"
+          }
+        ]
+      },
+      {
+        "recipientId": "K528",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백북래는 환전 장부를 나르는 통로가 폭설에 막히면 복두모에게 막힌 위치를 알린다. 복두모는 우회 구간을 실측하고 확인되지 않은 길을 점선으로 남겨 전령이 안전한 전달 경로를 고르게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/297"
+          }
+        ]
+      },
+      {
+        "recipientId": "K624",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "이타민은 환전 장부 전달로의 통로가 막히면 복두모에게 위치와 현장 상태를 알린다. 복두모는 우회 구간을 실측해 확인된 길과 미확인 길을 나눠 표시한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/381"
+          }
+        ]
+      },
+      {
+        "recipientId": "K816",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "민카현은 막힌 환전 전달로를 복두모에게 알린다. 복두모는 우회 구간을 실측해 확인된 경로와 미확인 길을 나눠 전령이 소문만 따라가지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/549"
+          }
+        ]
+      },
+      {
+        "recipientId": "K864",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장파린은 환전 전달로의 막힌 위치를 복두모에게 알린다. 복두모는 우회 길을 실측해 확인된 경로와 미확인 구간을 나눠 표시한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/591"
+          }
+        ]
+      },
+      {
+        "recipientId": "K960",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노별아는 폐쇄된 환전 전달로의 위치를 복두모에게 알린다. 복두모는 우회 길을 실측해 확인된 경로와 미확인 구간을 나눠 표시한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/676"
+          }
+        ]
+      },
+      {
+        "recipientId": "K220",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "권미래에게 탑 좌표를 넘기고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/202"
+          }
+        ]
+      },
+      {
+        "recipientId": "K234",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "모국의 관문 중계와 실측을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/203"
+          }
+        ]
+      },
+      {
+        "recipientId": "K234",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "복두모의 실측 좌표를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/211"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K230",
     "personId": "person-0231",
@@ -180,6 +727,48 @@
       }
     ],
     "incoming": [
+      {
+        "from": "임유나",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "임유나는 환전 장부를 전달하다 통로가 막히면 복두모의 실측·갱신 기록과 전달 경로를 맞춰 본다. 복두모는 실측하지 않은 구간을 점선으로 남기고 독립 목격이 부족한 좌표를 원판에 올리지 않아, 전령이 확인된 길과 아직 확인되지 않은 길을 구분하게 한다."
+      },
+      {
+        "from": "송솔지",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "송솔지는 환전 장부를 나르다가 눈에 막힌 통로를 만나면 복두모에게 현장 상태를 알린다. 복두모는 그 구간을 실측하고 확인된 길과 미확인 길을 나눠 표시해, 송솔지가 소문만 믿고 장부를 우회로로 보내지 않게 한다."
+      },
+      {
+        "from": "백북래",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "백북래는 환전 장부를 나르는 통로가 폭설에 막히면 복두모에게 막힌 위치를 알린다. 복두모는 우회 구간을 실측하고 확인되지 않은 길을 점선으로 남겨 전령이 안전한 전달 경로를 고르게 한다."
+      },
+      {
+        "from": "이타민",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "이타민은 환전 장부 전달로의 통로가 막히면 복두모에게 위치와 현장 상태를 알린다. 복두모는 우회 구간을 실측해 확인된 길과 미확인 길을 나눠 표시한다."
+      },
+      {
+        "from": "민카현",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "민카현은 막힌 환전 전달로를 복두모에게 알린다. 복두모는 우회 구간을 실측해 확인된 경로와 미확인 길을 나눠 전령이 소문만 따라가지 않게 한다."
+      },
+      {
+        "from": "장파린",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "장파린은 환전 전달로의 막힌 위치를 복두모에게 알린다. 복두모는 우회 길을 실측해 확인된 경로와 미확인 구간을 나눠 표시한다."
+      },
+      {
+        "from": "노별아",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "노별아는 폐쇄된 환전 전달로의 위치를 복두모에게 알린다. 복두모는 우회 길을 실측해 확인된 경로와 미확인 구간을 나눠 표시한다."
+      },
       {
         "from": "모국",
         "type": "계약",

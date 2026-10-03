@@ -12,6 +12,429 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-손라호",
   "detailRoute": "/people/person-0646",
+  "birthDate": "2101-03-13",
+  "birthday": "03-13",
+  "age": 25,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/402",
+    "lore/characters/Cast-State-15.json#/content/403",
+    "lore/characters/Cast-State-15.json#/content/404",
+    "lore/characters/Cast-State-15.json#/content/405"
+  ],
+  "familyTree": {
+    "personId": "K646",
+    "nodes": [
+      {
+        "id": "K646",
+        "personId": "K646",
+        "kind": "person",
+        "name": "손라호",
+        "birthDate": "2101-03-13",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K646"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손라호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0646"
+      },
+      {
+        "id": "FH-K646-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승연",
+        "birthDate": "2071-03-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "손승연은 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손라호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K646-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승정",
+        "birthDate": "2041-03-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "손승정은 노량진 선창에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손라호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K646-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승아",
+        "birthDate": "2011-03-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "손승아는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손라호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K646-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조재우",
+        "birthDate": "2071-03-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "조재우는 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손라호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K646-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김재윤",
+        "birthDate": "2041-03-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "김재윤은 노량진 선창에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손라호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K646-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "박재규",
+        "birthDate": "2011-03-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박재규는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손라호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K646-P-01:K646:biological",
+        "from": "FH-K646-P-01",
+        "to": "K646",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K646-P-02:FH-K646-P-01:biological",
+        "from": "FH-K646-P-02",
+        "to": "FH-K646-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K646-P-03:FH-K646-P-02:biological",
+        "from": "FH-K646-P-03",
+        "to": "FH-K646-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K646-M-01:K646:biological",
+        "from": "FH-K646-M-01",
+        "to": "K646",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K646-M-02:FH-K646-M-01:biological",
+        "from": "FH-K646-M-02",
+        "to": "FH-K646-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K646-M-03:FH-K646-M-02:biological",
+        "from": "FH-K646-M-03",
+        "to": "FH-K646-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손라호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K646",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K646-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3103"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K646-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3106"
+          }
+        ]
+      },
+      {
+        "recipientId": "K385",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "손라호는 선거 기록의 교대 서명을 영미결에게 인계한다. 영미결은 필사본과 봉인 기록을 확인해 누락된 서명이 다음 선거 기록으로 그대로 이어지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/401"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K646",
     "personId": "person-0646",
@@ -132,17 +555,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교우. 직함은 명동역 선거 기록 서기. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
     "일화": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 손라호는 선거 기록의 교대 서명을 영미결에게 인계한다. 영미결은 필사본과 봉인 기록을 확인해 누락된 서명이 다음 선거 기록으로 그대로 이어지지 않게 한다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.",
     "개입": "명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "손라호는 명동역 선거 기록 서기 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 선거 기록·인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 선거 기록 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 선거 기록 서기. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −10 | 물질 70 | 공동 −15 | 원칙 −50 | 공개 −25 | 자격 10 | 분산 −5 | 변혁 −5\n- 욕망: 갈망 15 | 독점 20 | 위험 −30 | 과시 25 | 지속 35 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "손라호는 명동역 선거 기록 서기 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 선거 기록·인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 선거 기록 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 선거 기록 서기. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 손라호는 선거 기록의 교대 서명을 영미결에게 인계한다. 영미결은 필사본과 봉인 기록을 확인해 누락된 서명이 다음 선거 기록으로 그대로 이어지지 않게 한다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −10 | 물질 70 | 공동 −15 | 원칙 −50 | 공개 −25 | 자격 10 | 분산 −5 | 변혁 −5\n- 욕망: 갈망 15 | 독점 20 | 위험 −30 | 과시 25 | 지속 35 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-15"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "손라호",
+        "type": "계약",
+        "to": "영미결",
+        "basis": "손라호는 선거 기록의 교대 서명을 영미결에게 인계한다. 영미결은 필사본과 봉인 기록을 확인해 누락된 서명이 다음 선거 기록으로 그대로 이어지지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

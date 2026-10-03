@@ -1,0 +1,10 @@
+.family-tree-scroll { overflow-x: auto; border: 1px solid var(--wiki-line); background: var(--wiki-canvas); margin-block: 16px; }
+.family-tree-canvas { position: relative; }
+.family-tree-canvas svg { position: absolute; inset: 0; }
+.family-tree-canvas text { font-size: 12px; fill: var(--wiki-muted); }
+.family-tree-node { position: absolute; width: 180px; min-height: 80px; padding: 12px; box-sizing: border-box; border: 1px solid var(--wiki-line); background: var(--wiki-paper); text-align: center; }
+.family-tree-node small { display: block; color: var(--wiki-muted); font-size: 12px; margin-top: 4px; }
+.family-tree-current { border: 2px solid var(--wiki-accent); }
+.family-tree-timeline { padding-left: 24px; }
+.family-tree-timeline li { margin-block: 8px; }
+.family-tree-timeline time { color: var(--wiki-muted); font-variant-numeric: tabular-nums; }

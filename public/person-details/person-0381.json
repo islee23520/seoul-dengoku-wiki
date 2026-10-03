@@ -12,6 +12,498 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-동미온",
   "detailRoute": "/people/person-0381",
+  "birthDate": "2090-10-24",
+  "birthday": "10-24",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/115",
+    "lore/characters/Cast-State-15.json#/content/116",
+    "lore/characters/Cast-State-15.json#/content/117"
+  ],
+  "familyTree": {
+    "personId": "K380",
+    "nodes": [
+      {
+        "id": "K380",
+        "personId": "K380",
+        "kind": "person",
+        "name": "동미온",
+        "birthDate": "2090-10-24",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K380"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 교구 물자 접수 부제 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-동미온-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0381"
+      },
+      {
+        "id": "FH-K380-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "동승윤",
+        "birthDate": "2060-10-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "동승윤은 노량진 선창에서 교구 물자 접수·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-동미온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K380-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "동승우",
+        "birthDate": "2030-10-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "동승우는 노량진 선창에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-동미온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K380-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "동승경",
+        "birthDate": "2000-10-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "동승경은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-동미온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K380-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오준정",
+        "birthDate": "2060-10-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "오준정은 노량진 선창에서 교구 물자 접수·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-동미온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K380-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송준윤",
+        "birthDate": "2030-10-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "송준윤은 노량진 선창에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-동미온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K380-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "조준연",
+        "birthDate": "2000-10-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조준연은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-동미온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K380-P-01:K380:biological",
+        "from": "FH-K380-P-01",
+        "to": "K380",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K380-P-02:FH-K380-P-01:biological",
+        "from": "FH-K380-P-02",
+        "to": "FH-K380-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K380-P-03:FH-K380-P-02:biological",
+        "from": "FH-K380-P-03",
+        "to": "FH-K380-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K380-M-01:K380:biological",
+        "from": "FH-K380-M-01",
+        "to": "K380",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K380-M-02:FH-K380-M-01:biological",
+        "from": "FH-K380-M-02",
+        "to": "FH-K380-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K380-M-03:FH-K380-M-02:biological",
+        "from": "FH-K380-M-03",
+        "to": "FH-K380-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-동미온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K380",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K380-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1846"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K380-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1849"
+          }
+        ]
+      },
+      {
+        "recipientId": "K614",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "하남은은 구휼 물자와 함께 접수한 호스의 내역을 동미온에게 넘긴다. 동미온은 입하 중량과 파렛트 번호를 확인하고 식량·약재 짐을 다른 줄로 묶어, 접수한 부품이 구휼 식량으로 중복 기록되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/373"
+          }
+        ]
+      },
+      {
+        "recipientId": "K806",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남서은은 구휼 물자와 함께 접수한 부품 기록을 동미온에게 넘긴다. 동미온은 중량과 파렛트 번호를 확인해 부품·식량·약재가 서로 다른 입고 줄로 남게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/541"
+          }
+        ]
+      },
+      {
+        "recipientId": "K950",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "홍구원은 공개한 구휼 배급표와 인수 기록을 동미온에게 넘긴다. 동미온은 입하 중량·파렛트 번호를 확인해 실제 받은 물자와 배급 약속을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/668"
+          }
+        ]
+      },
+      {
+        "recipientId": "K379",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "동미온의 입고 무게를 같은 눈에 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/337"
+          }
+        ]
+      },
+      {
+        "recipientId": "K375",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "라진우의 재고 칸에 파렛트 번호를 맞추는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/338"
+          }
+        ]
+      },
+      {
+        "recipientId": "K381",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "방늘재의 시장 추에 입하 무게를 겹친다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/339"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K380",
     "personId": "person-0381",
@@ -162,6 +654,24 @@
       }
     ],
     "incoming": [
+      {
+        "from": "하남은",
+        "type": "계약",
+        "to": "동미온",
+        "basis": "하남은은 구휼 물자와 함께 접수한 호스의 내역을 동미온에게 넘긴다. 동미온은 입하 중량과 파렛트 번호를 확인하고 식량·약재 짐을 다른 줄로 묶어, 접수한 부품이 구휼 식량으로 중복 기록되지 않게 한다."
+      },
+      {
+        "from": "남서은",
+        "type": "계약",
+        "to": "동미온",
+        "basis": "남서은은 구휼 물자와 함께 접수한 부품 기록을 동미온에게 넘긴다. 동미온은 중량과 파렛트 번호를 확인해 부품·식량·약재가 서로 다른 입고 줄로 남게 한다."
+      },
+      {
+        "from": "홍구원",
+        "type": "계약",
+        "to": "동미온",
+        "basis": "홍구원은 공개한 구휼 배급표와 인수 기록을 동미온에게 넘긴다. 동미온은 입하 중량·파렛트 번호를 확인해 실제 받은 물자와 배급 약속을 구분한다."
+      },
       {
         "from": "천나솔",
         "type": "사제",

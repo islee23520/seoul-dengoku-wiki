@@ -12,6 +12,428 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-류바현",
   "detailRoute": "/people/person-0681",
+  "birthDate": "2099-01-26",
+  "birthday": "01-26",
+  "age": 27,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/478",
+    "lore/characters/Cast-State-02.json#/content/480",
+    "lore/characters/Cast-State-02.json#/content/481"
+  ],
+  "familyTree": {
+    "personId": "K681",
+    "nodes": [
+      {
+        "id": "K681",
+        "personId": "K681",
+        "kind": "person",
+        "name": "류바현",
+        "birthDate": "2099-01-26",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K681"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-류바현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0681"
+      },
+      {
+        "id": "FH-K681-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "류승빈",
+        "birthDate": "2069-01-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "류승빈은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-류바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K681-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "류승솔",
+        "birthDate": "2039-01-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "류승솔은 암사 경비 초소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-류바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K681-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "류승미",
+        "birthDate": "2009-01-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "류승미는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-류바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K681-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송재은",
+        "birthDate": "2069-01-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "송재은은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-류바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K681-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조재완",
+        "birthDate": "2039-01-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "조재완은 암사 경비 초소에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-류바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K681-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "김재희",
+        "birthDate": "2009-01-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김재희는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-류바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K681-P-01:K681:biological",
+        "from": "FH-K681-P-01",
+        "to": "K681",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K681-P-02:FH-K681-P-01:biological",
+        "from": "FH-K681-P-02",
+        "to": "FH-K681-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K681-P-03:FH-K681-P-02:biological",
+        "from": "FH-K681-P-03",
+        "to": "FH-K681-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K681-M-01:K681:biological",
+        "from": "FH-K681-M-01",
+        "to": "K681",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K681-M-02:FH-K681-M-01:biological",
+        "from": "FH-K681-M-02",
+        "to": "FH-K681-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K681-M-03:FH-K681-M-02:biological",
+        "from": "FH-K681-M-03",
+        "to": "FH-K681-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-류바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K681",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K681-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3267"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K681-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3270"
+          }
+        ]
+      },
+      {
+        "recipientId": "K041",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "류바현은 전력장치 주변 난입을 제지하고 채리울에게 출입 기록을 알린다. 채리울은 공방 순찰 경로를 확인해 장치 경비와 공구 창고의 인수인계 사이에 빈 구간이 생겼는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/431"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K681",
     "personId": "person-0681",
@@ -144,17 +566,24 @@
     "무공": "수벽술.",
     "관직": "품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 류바현은 전력장치 주변 난입을 제지하고 채리울에게 출입 기록을 알린다. 채리울은 공방 순찰 경로를 확인해 장치 경비와 공구 창고의 인수인계 사이에 빈 구간이 생겼는지 살핀다.",
     "야망": "전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
     "공포": "전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 −5 | 무력 15 | 물질 50 | 공동 30 | 원칙 5 | 공개 25 | 자격 55 | 분산 15 | 변혁 15\n- 욕망: 갈망 40 | 독점 −30 | 위험 35 | 과시 −10 | 지속 0 | 지향 양성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 류바현은 전력장치 주변 난입을 제지하고 채리울에게 출입 기록을 알린다. 채리울은 공방 순찰 경로를 확인해 장치 경비와 공구 창고의 인수인계 사이에 빈 구간이 생겼는지 살핀다.\n\n**야망.** 전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 −5 | 무력 15 | 물질 50 | 공동 30 | 원칙 5 | 공개 25 | 자격 55 | 분산 15 | 변혁 15\n- 욕망: 갈망 40 | 독점 −30 | 위험 35 | 과시 −10 | 지속 0 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-02"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "류바현",
+        "type": "계약",
+        "to": "채리울",
+        "basis": "류바현은 전력장치 주변 난입을 제지하고 채리울에게 출입 기록을 알린다. 채리울은 공방 순찰 경로를 확인해 장치 경비와 공구 창고의 인수인계 사이에 빈 구간이 생겼는지 살핀다."
+      }
+    ],
     "incoming": []
   }
 }

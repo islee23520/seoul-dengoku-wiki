@@ -12,6 +12,483 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-소두감",
   "detailRoute": "/people/person-0303",
+  "birthDate": "2101-11-10",
+  "birthday": "11-10",
+  "age": 25,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/105",
+    "lore/characters/Cast-State-12.json#/content/107"
+  ],
+  "familyTree": {
+    "personId": "K302",
+    "nodes": [
+      {
+        "id": "K302",
+        "personId": "K302",
+        "kind": "person",
+        "name": "소두감",
+        "birthDate": "2101-11-10",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K302"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 유치선 정비사, 안도한의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-소두감-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0303"
+      },
+      {
+        "id": "FH-K302-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "소승영",
+        "birthDate": "2071-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "소승영은 신정 차량기지에서 유치선 배차표·정비 일지 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-소두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K302-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "소승윤",
+        "birthDate": "2041-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "소승윤은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-소두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K302-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "소승우",
+        "birthDate": "2011-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "소승우는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-소두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K302-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준은",
+        "birthDate": "2071-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "최준은은 신정 차량기지에서 유치선 배차표·정비 일지 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-소두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K302-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현도",
+        "birthDate": "2041-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "정현도는 신정 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-소두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K302-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준준",
+        "birthDate": "2011-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤준준은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-소두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K302-P-01:K302:biological",
+        "from": "FH-K302-P-01",
+        "to": "K302",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K302-P-02:FH-K302-P-01:biological",
+        "from": "FH-K302-P-02",
+        "to": "FH-K302-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K302-P-03:FH-K302-P-02:biological",
+        "from": "FH-K302-P-03",
+        "to": "FH-K302-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K302-M-01:K302:biological",
+        "from": "FH-K302-M-01",
+        "to": "K302",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K302-M-02:FH-K302-M-01:biological",
+        "from": "FH-K302-M-02",
+        "to": "FH-K302-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K302-M-03:FH-K302-M-02:biological",
+        "from": "FH-K302-M-03",
+        "to": "FH-K302-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-소두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K302",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K302-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1464"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K302-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1467"
+          }
+        ]
+      },
+      {
+        "recipientId": "K611",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남차원은 침수 구간 폐쇄를 소두감에게 알려 해당 배차 전갈의 기록을 넘긴다. 소두감은 배차표와 정비 일지를 함께 확인해 폐쇄 구간에 나갈 칸을 가리고, 정비 서명 없는 우회 출고도 걸러낸다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/370"
+          }
+        ]
+      },
+      {
+        "recipientId": "K739",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "민강현은 의무호송의 유치선 체류 시각을 소두감에게 전한다. 소두감은 배차표와 정비 일지를 확인해 정비로 머문 시간과 실제 출고 시간을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/482"
+          }
+        ]
+      },
+      {
+        "recipientId": "K297",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "안도한의 배차 실무를 유치선에서 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/264"
+          }
+        ]
+      },
+      {
+        "recipientId": "K310",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "국소의 기지 당직과 공구를 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/265"
+          }
+        ]
+      },
+      {
+        "recipientId": "K310",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "소두감의 정비 창과 당직을 나누고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/281"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K302",
     "personId": "person-0303",
@@ -174,6 +651,18 @@
       }
     ],
     "incoming": [
+      {
+        "from": "남차원",
+        "type": "계약",
+        "to": "소두감",
+        "basis": "남차원은 침수 구간 폐쇄를 소두감에게 알려 해당 배차 전갈의 기록을 넘긴다. 소두감은 배차표와 정비 일지를 함께 확인해 폐쇄 구간에 나갈 칸을 가리고, 정비 서명 없는 우회 출고도 걸러낸다."
+      },
+      {
+        "from": "민강현",
+        "type": "계약",
+        "to": "소두감",
+        "basis": "민강현은 의무호송의 유치선 체류 시각을 소두감에게 전한다. 소두감은 배차표와 정비 일지를 확인해 정비로 머문 시간과 실제 출고 시간을 구분한다."
+      },
       {
         "from": "국소",
         "type": "계약",

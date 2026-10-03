@@ -12,6 +12,570 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-고서준",
   "detailRoute": "/people/person-0349",
+  "birthDate": "2099-07-06",
+  "birthday": "07-06",
+  "age": 27,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/123",
+    "lore/chronology/Century-Annals.json#/content/434",
+    "lore/chronology/Century-Annals.json#/content/500",
+    "lore/chronology/Century-Annals.json#/content/567"
+  ],
+  "familyTree": {
+    "personId": "K348",
+    "nodes": [
+      {
+        "id": "K348",
+        "personId": "K348",
+        "kind": "person",
+        "name": "고서준",
+        "birthDate": "2099-07-06",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K348"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 능선 수비. 아차산관문사령부와 구의수비대는 각자 병력에서 지휘관을 뽑고 서로 다른 지휘권을 유지한다. 고서준이 아차산관문사령부 사령관으로 선출된 것은 한강진교량공회의 능선 통행을 끊기지 않게 지킨 뒤였다. 구의수비대의 결재가 늦어도 전쟁과 급수는 단독으로 결정하지 못한다. 두 지휘부는 서로를 계속 감시한다. 배우진의 수벽술과 같은 유파이나, 가문 키는 교량이다. 건대 고려인 회랑이 이 나라 가장자리에 얹힌다. 한재목의 수문은 하구에서 이 교량과 만난다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-고서준-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0349"
+      },
+      {
+        "id": "FH-K348-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "고승연",
+        "birthDate": "2069-07-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "고승연은 생활권의 공동 거처에서 능선수비대장 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-고서준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K348-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "고승정",
+        "birthDate": "2039-07-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "고승정은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-고서준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K348-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "고승아",
+        "birthDate": "2009-07-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "고승아는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-고서준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K348-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박준연",
+        "birthDate": "2069-07-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "박준연은 생활권의 공동 거처에서 능선수비대장 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-고서준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K348-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준정",
+        "birthDate": "2039-07-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "이준정은 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-고서준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K348-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준찬",
+        "birthDate": "2009-07-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최준찬은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-고서준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K348-P-01:K348:biological",
+        "from": "FH-K348-P-01",
+        "to": "K348",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K348-P-02:FH-K348-P-01:biological",
+        "from": "FH-K348-P-02",
+        "to": "FH-K348-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K348-P-03:FH-K348-P-02:biological",
+        "from": "FH-K348-P-03",
+        "to": "FH-K348-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K348-M-01:K348:biological",
+        "from": "FH-K348-M-01",
+        "to": "K348",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K348-M-02:FH-K348-M-01:biological",
+        "from": "FH-K348-M-02",
+        "to": "FH-K348-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K348-M-03:FH-K348-M-02:biological",
+        "from": "FH-K348-M-03",
+        "to": "FH-K348-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-고서준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K348",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K348-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1688"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K348-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1691"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1006",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "구의수비대장과 관문사령관의 이원 합의",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/7"
+          }
+        ]
+      },
+      {
+        "recipientId": "K349",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "능선 초병으로 수비 명령을 수행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/94"
+          }
+        ]
+      },
+      {
+        "recipientId": "K350",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "통행 협약을 교량에서 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/95"
+          }
+        ]
+      },
+      {
+        "recipientId": "K352",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "구의 제한급수 권한을 다툼",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/97"
+          }
+        ]
+      },
+      {
+        "recipientId": "K353",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "교량 척후를 대장에게 직보",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/98"
+          }
+        ]
+      },
+      {
+        "recipientId": "K119",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "능선 정찰과 교량 통행을 겨룸",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/138"
+          }
+        ]
+      },
+      {
+        "recipientId": "K129",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "고서준의 능선 정찰과 통행 좌표를 경쟁하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/107"
+          }
+        ]
+      },
+      {
+        "recipientId": "K365",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "고서준의 전시 지휘에는 복종하되 은폐 배전은 거부한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/334"
+          }
+        ]
+      },
+      {
+        "recipientId": "K366",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "고서준의 교량 허가와 증언을 겹치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/178"
+          }
+        ]
+      },
+      {
+        "recipientId": "K371",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/188"
+          }
+        ]
+      },
+      {
+        "recipientId": "K372",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "고서준의 공동통치 날인만 보조 함의 열쇠로 둔다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/190"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K348",
     "personId": "person-0349",

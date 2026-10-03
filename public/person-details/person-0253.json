@@ -12,6 +12,508 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-모봉",
   "detailRoute": "/people/person-0253",
+  "birthDate": "2081-07-20",
+  "birthday": "07-20",
+  "age": 45,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/116"
+  ],
+  "familyTree": {
+    "personId": "K252",
+    "nodes": [
+      {
+        "id": "K252",
+        "personId": "K252",
+        "kind": "person",
+        "name": "모봉",
+        "birthDate": "2081-07-20",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K252"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 짐 장부 주지 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-모봉-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0253"
+      },
+      {
+        "id": "FH-K252-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "모승현",
+        "birthDate": "2051-07-20",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "모승현은 노량진 선창에서 짐 출처 장부·통행 표 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-모봉-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K252-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "모승영",
+        "birthDate": "2021-07-20",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "모승영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-모봉-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K252-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박현온",
+        "birthDate": "2051-07-20",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "박현온은 노량진 선창에서 짐 출처 장부·통행 표 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-모봉-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K252-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이현란",
+        "birthDate": "2021-07-20",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이현란은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-모봉-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K252-P-01:K252:biological",
+        "from": "FH-K252-P-01",
+        "to": "K252",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K252-P-02:FH-K252-P-01:biological",
+        "from": "FH-K252-P-02",
+        "to": "FH-K252-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K252-M-01:K252:biological",
+        "from": "FH-K252-M-01",
+        "to": "K252",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K252-M-02:FH-K252-M-01:biological",
+        "from": "FH-K252-M-02",
+        "to": "FH-K252-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-모봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K252",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K252-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1222"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K252-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1224"
+          }
+        ]
+      },
+      {
+        "recipientId": "K465",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "박은윤은 공동 저울로 잰 짐의 무게를 장부에 적어 모봉에게 인계한다. 모봉은 상자마다 출처를 적고 가족 명부와 통행 표를 확인해 짐을 받아, 운송 중 무게가 바뀌거나 출처 없는 상자가 끼어든 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/242"
+          }
+        ]
+      },
+      {
+        "recipientId": "K497",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "차지환은 침수 구간의 붕괴를 보고하고 폐쇄 소식을 모봉에게 전달한다. 모봉은 짐 운송로의 표시를 고치고 통행 표를 확인해, 총회 필사본과 짐이 폐쇄 구간으로 계속 들어가지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/270"
+          }
+        ]
+      },
+      {
+        "recipientId": "K513",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "한타우는 상하기 시작한 곡물을 배분한 뒤 남은 중량과 손실을 모봉에게 인계한다. 모봉은 상자 출처와 가족 명부를 확인해 이미 나눠 준 곡물이 운송할 짐에 다시 잡히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/284"
+          }
+        ]
+      },
+      {
+        "recipientId": "K545",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "박돌윤은 침수 구간의 붕괴와 폐쇄를 모봉에게 전하고 총회 필사본 전달을 멈춘 지점을 알린다. 모봉은 짐 운송로 표시와 통행 표를 고쳐, 폐쇄 소식이 늦어져 짐과 필사본이 같은 위험 구간으로 들어가지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/312"
+          }
+        ]
+      },
+      {
+        "recipientId": "K609",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "허라우는 공동 저울로 다시 잰 짐의 무게를 모봉에게 넘긴다. 모봉은 상자 출처와 가족 명부를 확인해, 잘못된 눈금으로 적힌 짐이 그대로 운송 장부에 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/368"
+          }
+        ]
+      },
+      {
+        "recipientId": "K657",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "차새환은 짐의 출처와 인수 기록을 모봉에게 넘긴다. 모봉은 상자별 출처와 통행 표를 확인해 접수된 물자가 가족 명부에 없는 운송 짐으로 섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/410"
+          }
+        ]
+      },
+      {
+        "recipientId": "K753",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신가빈은 공개 배급표와 짐의 인수 기록을 모봉에게 넘긴다. 모봉은 출처와 가족 명부를 확인해 배분한 물자가 운송할 잔량으로 다시 기록되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/494"
+          }
+        ]
+      },
+      {
+        "recipientId": "K849",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽나호는 공동 저울로 다시 잰 짐의 중량을 모봉에게 넘긴다. 모봉은 출처와 통행 표를 확인해 잘못된 무게가 운송 장부에 계속 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/578"
+          }
+        ]
+      },
+      {
+        "recipientId": "K897",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "박라윤은 짐의 출처·인수 기록을 모봉에게 넘긴다. 모봉은 가족 명부와 통행 표를 확인해 접수된 물자가 확인 안 된 운송 짐으로 섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/620"
+          }
+        ]
+      },
+      {
+        "recipientId": "K945",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신자빈은 공개 배급표와 짐의 인수 기록을 모봉에게 넘긴다. 모봉은 출처·가족 명부를 확인해 배급으로 나간 물자가 운송 잔량으로 다시 계산되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/663"
+          }
+        ]
+      },
+      {
+        "recipientId": "K993",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백동래는 먼저 배분한 곡물과 짐의 잔량을 모봉에게 넘긴다. 모봉은 출처·가족 명부를 확인해 이미 나눈 물자가 운송할 재고로 다시 잡히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/705"
+          }
+        ]
+      },
+      {
+        "recipientId": "K248",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "강태산의 정찰 보고를 운송 시각에 맞추고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/218"
+          }
+        ]
+      },
+      {
+        "recipientId": "K226",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "모봉용의 절연재 짐을 회랑에서 인수한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/219"
+          }
+        ]
+      },
+      {
+        "recipientId": "K259",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "모봉의 산악 운송을 입구에서 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/232"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K252",
     "personId": "person-0253",
@@ -162,6 +664,72 @@
       }
     ],
     "incoming": [
+      {
+        "from": "박은윤",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "박은윤은 공동 저울로 잰 짐의 무게를 장부에 적어 모봉에게 인계한다. 모봉은 상자마다 출처를 적고 가족 명부와 통행 표를 확인해 짐을 받아, 운송 중 무게가 바뀌거나 출처 없는 상자가 끼어든 곳을 찾는다."
+      },
+      {
+        "from": "차지환",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "차지환은 침수 구간의 붕괴를 보고하고 폐쇄 소식을 모봉에게 전달한다. 모봉은 짐 운송로의 표시를 고치고 통행 표를 확인해, 총회 필사본과 짐이 폐쇄 구간으로 계속 들어가지 않게 한다."
+      },
+      {
+        "from": "한타우",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "한타우는 상하기 시작한 곡물을 배분한 뒤 남은 중량과 손실을 모봉에게 인계한다. 모봉은 상자 출처와 가족 명부를 확인해 이미 나눠 준 곡물이 운송할 짐에 다시 잡히지 않게 한다."
+      },
+      {
+        "from": "박돌윤",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "박돌윤은 침수 구간의 붕괴와 폐쇄를 모봉에게 전하고 총회 필사본 전달을 멈춘 지점을 알린다. 모봉은 짐 운송로 표시와 통행 표를 고쳐, 폐쇄 소식이 늦어져 짐과 필사본이 같은 위험 구간으로 들어가지 않게 한다."
+      },
+      {
+        "from": "허라우",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "허라우는 공동 저울로 다시 잰 짐의 무게를 모봉에게 넘긴다. 모봉은 상자 출처와 가족 명부를 확인해, 잘못된 눈금으로 적힌 짐이 그대로 운송 장부에 남지 않게 한다."
+      },
+      {
+        "from": "차새환",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "차새환은 짐의 출처와 인수 기록을 모봉에게 넘긴다. 모봉은 상자별 출처와 통행 표를 확인해 접수된 물자가 가족 명부에 없는 운송 짐으로 섞이지 않게 한다."
+      },
+      {
+        "from": "신가빈",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "신가빈은 공개 배급표와 짐의 인수 기록을 모봉에게 넘긴다. 모봉은 출처와 가족 명부를 확인해 배분한 물자가 운송할 잔량으로 다시 기록되지 않게 한다."
+      },
+      {
+        "from": "곽나호",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "곽나호는 공동 저울로 다시 잰 짐의 중량을 모봉에게 넘긴다. 모봉은 출처와 통행 표를 확인해 잘못된 무게가 운송 장부에 계속 남지 않게 한다."
+      },
+      {
+        "from": "박라윤",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "박라윤은 짐의 출처·인수 기록을 모봉에게 넘긴다. 모봉은 가족 명부와 통행 표를 확인해 접수된 물자가 확인 안 된 운송 짐으로 섞이지 않게 한다."
+      },
+      {
+        "from": "신자빈",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "신자빈은 공개 배급표와 짐의 인수 기록을 모봉에게 넘긴다. 모봉은 출처·가족 명부를 확인해 배급으로 나간 물자가 운송 잔량으로 다시 계산되지 않게 한다."
+      },
+      {
+        "from": "백동래",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "백동래는 먼저 배분한 곡물과 짐의 잔량을 모봉에게 넘긴다. 모봉은 출처·가족 명부를 확인해 이미 나눈 물자가 운송할 재고로 다시 잡히지 않게 한다."
+      },
       {
         "from": "두소",
         "type": "계약",

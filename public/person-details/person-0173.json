@@ -1,6 +1,6 @@
 {
   "id": "person-0173",
-  "name": "황지호",
+  "name": "아이작 워커",
   "title": "선로 도제",
   "position": "선로 도제",
   "rank": "주사",
@@ -10,8 +10,540 @@
   "stage": "S1",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-황지호",
+  "sourceRoute": "/world/Cast-State-07#인물-아이작 워커",
   "detailRoute": "/people/person-0173",
+  "birthDate": "2095-11-30",
+  "birthday": "11-30",
+  "age": 31,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/50",
+    "lore/characters/Cast-State-07.json#/content/54"
+  ],
+  "familyTree": {
+    "personId": "K172",
+    "nodes": [
+      {
+        "id": "K172",
+        "personId": "K172",
+        "kind": "person",
+        "name": "아이작 워커",
+        "birthDate": "2095-11-30",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K172"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 선로 도제 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아이작-워커-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Isaac Walker",
+        "detailRoute": "/people/person-0173"
+      },
+      {
+        "id": "FH-K172-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "마이클 워커",
+        "birthDate": "2065-11-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "마이클 워커는 2065년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2083년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아이작-워커-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Michael Walker was born in 2065 and grew up reading family and work records. From 2083, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Michael Walker",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K172-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "토머스 워커",
+        "birthDate": "2035-11-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "토머스 워커는 2035년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2053년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아이작-워커-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Thomas Walker was born in 2035 and grew up reading family and work records. From 2053, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Thomas Walker",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K172-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "새뮤얼 워커",
+        "birthDate": "2005-11-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "새뮤얼 워커는 2026년 대정전 당시 용산·이태원 생활권에서 미 육군 보급 업무를 맡고 있었다. 연락이 끊긴 뒤 남은 물자와 인계받은 사람을 종이에 적었다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아이작-워커-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Samuel Walker was in the family's local community when communications failed in 2026. Serving in US Army logistics, he recorded remaining supplies and their recipients."
+          }
+        ],
+        "nameEn": "Samuel Walker",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K172-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "에블린 카터",
+        "birthDate": "2065-11-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "에블린 카터는 2065년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2083년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아이작-워커-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Evelyn Carter was born in 2065 and grew up reading family and work records. From 2083, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Evelyn Carter",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K172-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "로절린 카터",
+        "birthDate": "2035-11-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "로절린 카터는 2035년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2053년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아이작-워커-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Rosalind Carter was born in 2035 and grew up reading family and work records. From 2053, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Rosalind Carter",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K172-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "콘스턴스 카터",
+        "birthDate": "2005-11-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "콘스턴스 카터는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 숙박업과 민간 통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아이작-워커-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Constance Carter was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Constance Carter",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K172-P-01:K172:biological",
+        "from": "FH-K172-P-01",
+        "to": "K172",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K172-P-02:FH-K172-P-01:biological",
+        "from": "FH-K172-P-02",
+        "to": "FH-K172-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K172-P-03:FH-K172-P-02:biological",
+        "from": "FH-K172-P-03",
+        "to": "FH-K172-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K172-M-01:K172:biological",
+        "from": "FH-K172-M-01",
+        "to": "K172",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K172-M-02:FH-K172-M-01:biological",
+        "from": "FH-K172-M-02",
+        "to": "FH-K172-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K172-M-03:FH-K172-M-02:biological",
+        "from": "FH-K172-M-03",
+        "to": "FH-K172-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아이작-워커-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K172",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K172-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/834"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K172-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/837"
+          }
+        ]
+      },
+      {
+        "recipientId": "K169",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "outgoing",
+        "role": "선로 도제로 역장 밑에서 수련",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/61"
+          }
+        ]
+      },
+      {
+        "recipientId": "K271",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/155"
+          }
+        ]
+      },
+      {
+        "recipientId": "K272",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/156"
+          }
+        ]
+      },
+      {
+        "recipientId": "K224",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "열차 무전을 재밍 증거로 삼음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/175"
+          }
+        ]
+      },
+      {
+        "recipientId": "K272",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "제동 부품을 용산 도제와 나눔",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/184"
+          }
+        ]
+      },
+      {
+        "recipientId": "K175",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "아이작 워커의 정비 일지를 현장에서 집행하는 사제이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/144"
+          }
+        ]
+      },
+      {
+        "recipientId": "K177",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "아이작 워커의 도제 숙소를 진료로 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/148"
+          }
+        ]
+      },
+      {
+        "recipientId": "K192",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "아이작 워커의 정비 일지를 고발 근거로 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/92"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K172",
     "personId": "person-0173",
@@ -89,7 +621,7 @@
     "size": 4,
     "current_location": "한강 둔치",
     "camp": {
-      "name": "황지호 한강변 야영지",
+      "name": "아이작 워커 한강변 야영지",
       "type": "야영지",
       "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
       "facilities": [
@@ -102,9 +634,9 @@
     "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
   },
   "clan": {
-    "id": "d669-c7a5-c218-9ec3",
-    "name": "장수 황씨",
-    "crest": "clan-crests/d669-c7a5-c218-9ec3.svg"
+    "id": "DIV-K172",
+    "name": "용산·이태원 워커씨",
+    "crest": "clan-crests/DIV-K172.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -139,23 +671,23 @@
     "욕망": "갈망 0 | 독점 25 | 위험 −10 | 과시 −10 | 지속 −15 | 지향 양성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 선로 도제 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 선로 도제 자리는 교대 무단 결근 대체 당직으로 열렸다. 아이작 워커는 2095년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 선로 도제 업무를 맡는다. 새뮤얼 워커는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아이작 워커의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 선로 도제. 정비 일지를 공개하고 가문 원로의 구두 지시를 문장으로 다시 받아 적는다.",
     "일화": "임초원 억류 열차의 제동 점검을 도제에게 맡기라는 명령과 손대지 말라는 가문 명령이 동시에 떨어졌다.",
-    "관계": "박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 신가온의 배급 압박을 받는다.",
+    "관계": "박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 알렉산더 밀러의 배급 압박을 받는다.",
     "야망": "박태겸의 양자 기술자 경로로 후계가 되어 혈연 선로가문의 거부권을 배차표에서 지운다.",
     "공포": "자신이 임초원을 끌어들이기 위한 미끼 도제로 소비되는 것.",
     "개입": "도제의 정비 권한을 증언하거나, 그를 창동으로 빼내 가문 회의를 흔들 수 있다."
   },
-  "biography": "침착하고 손끝이 정확하지만 가문 앞에서 목소리가 작아진다. 숙련으로 자리를 증명해야 한다는 강박이 있다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 정비 일지·제동 점검\n- 직함: 선로 도제\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 선로 도제 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 선로 도제. 정비 일지를 공개하고 가문 원로의 구두 지시를 문장으로 다시 받아 적는다.\n\n**일화.** 임초원 억류 열차의 제동 점검을 도제에게 맡기라는 명령과 손대지 말라는 가문 명령이 동시에 떨어졌다.\n\n**관계.** 박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 신가온의 배급 압박을 받는다.\n\n**야망.** 박태겸의 양자 기술자 경로로 후계가 되어 혈연 선로가문의 거부권을 배차표에서 지운다.\n\n**공포.** 자신이 임초원을 끌어들이기 위한 미끼 도제로 소비되는 것.\n\n**개입.** 도제의 정비 권한을 증언하거나, 그를 창동으로 빼내 가문 회의를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 0 | 물질 25 | 공동 0 | 원칙 −5 | 공개 −20 | 자격 60 | 분산 5 | 변혁 5\n- 욕망: 갈망 0 | 독점 25 | 위험 −10 | 과시 −10 | 지속 −15 | 지향 양성 | 결합 다자\n:::",
+  "biography": "침착하고 손끝이 정확하지만 가문 앞에서 목소리가 작아진다. 숙련으로 자리를 증명해야 한다는 강박이 있다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 정비 일지·제동 점검\n- 직함: 선로 도제\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 선로 도제 자리는 교대 무단 결근 대체 당직으로 열렸다. 아이작 워커는 2095년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 선로 도제 업무를 맡는다. 새뮤얼 워커는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아이작 워커의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 선로 도제. 정비 일지를 공개하고 가문 원로의 구두 지시를 문장으로 다시 받아 적는다.\n\n**일화.** 임초원 억류 열차의 제동 점검을 도제에게 맡기라는 명령과 손대지 말라는 가문 명령이 동시에 떨어졌다.\n\n**관계.** 박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 알렉산더 밀러의 배급 압박을 받는다.\n\n**야망.** 박태겸의 양자 기술자 경로로 후계가 되어 혈연 선로가문의 거부권을 배차표에서 지운다.\n\n**공포.** 자신이 임초원을 끌어들이기 위한 미끼 도제로 소비되는 것.\n\n**개입.** 도제의 정비 권한을 증언하거나, 그를 창동으로 빼내 가문 회의를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 0 | 물질 25 | 공동 0 | 원칙 −5 | 공개 −20 | 자격 60 | 분산 5 | 변혁 5\n- 욕망: 갈망 0 | 독점 25 | 위험 −10 | 과시 −10 | 지속 −15 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "황지호",
+        "from": "아이작 워커",
         "type": "사제",
         "to": "박태겸",
         "basis": "선로 도제로 역장 밑에서 수련"
@@ -165,32 +697,32 @@
       {
         "from": "조은우",
         "type": "계약",
-        "to": "황지호",
+        "to": "아이작 워커",
         "basis": "열차 무전을 재밍 증거로 삼음"
       },
       {
         "from": "송하율",
         "type": "계약",
-        "to": "황지호",
+        "to": "아이작 워커",
         "basis": "제동 부품을 용산 도제와 나눔"
       },
       {
-        "from": "양건우",
+        "from": "미콜라 본다렌코",
         "type": "사제",
-        "to": "황지호",
-        "basis": "황지호의 정비 일지를 현장에서 집행하는 사제이고"
+        "to": "아이작 워커",
+        "basis": "아이작 워커의 정비 일지를 현장에서 집행하는 사제이고"
       },
       {
-        "from": "차호민",
+        "from": "가브리엘 존슨",
         "type": "사제",
-        "to": "황지호",
-        "basis": "황지호의 도제 숙소를 진료로 받치고"
+        "to": "아이작 워커",
+        "basis": "아이작 워커의 도제 숙소를 진료로 받치고"
       },
       {
-        "from": "란하율",
+        "from": "올렉산드르 셰우첸코",
         "type": "계약",
-        "to": "황지호",
-        "basis": "황지호의 정비 일지를 고발 근거로 받고"
+        "to": "아이작 워커",
+        "basis": "아이작 워커의 정비 일지를 고발 근거로 받고"
       }
     ]
   }

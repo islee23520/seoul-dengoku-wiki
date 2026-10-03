@@ -1,6 +1,6 @@
 {
   "id": "person-0174",
-  "name": "송이든",
+  "name": "루카스 슈나이더",
   "title": "환적 배차원",
   "position": "환적 배차원",
   "rank": "주사",
@@ -10,8 +10,535 @@
   "stage": "S1",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-송이든",
+  "sourceRoute": "/world/Cast-State-07#인물-루카스 슈나이더",
   "detailRoute": "/people/person-0174",
+  "birthDate": "2071-09-26",
+  "birthday": "09-26",
+  "age": 55,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/61"
+  ],
+  "familyTree": {
+    "personId": "K173",
+    "nodes": [
+      {
+        "id": "K173",
+        "personId": "K173",
+        "kind": "person",
+        "name": "루카스 슈나이더",
+        "birthDate": "2071-09-26",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K173"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 환적 배차원 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-루카스-슈나이더-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Lukas Schneider",
+        "detailRoute": "/people/person-0174"
+      },
+      {
+        "id": "FH-K173-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "페터 슈나이더",
+        "birthDate": "2041-09-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "페터 슈나이더는 2041년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2059년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-루카스-슈나이더-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Peter Schneider was born in 2041 and grew up reading family and work records. From 2059, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Peter Schneider",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K173-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한스 슈나이더",
+        "birthDate": "2011-09-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한스 슈나이더는 2011년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2029년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-루카스-슈나이더-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Hans Schneider was born in 2011 and grew up reading family and work records. From 2029, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Hans Schneider",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K173-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "안나 바그너",
+        "birthDate": "2041-09-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "안나 바그너는 2041년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2059년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-루카스-슈나이더-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Anna Wagner was born in 2041 and grew up reading family and work records. From 2059, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Anna Wagner",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K173-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "마리아 바그너",
+        "birthDate": "2011-09-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마리아 바그너는 2011년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2029년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-루카스-슈나이더-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Maria Wagner was born in 2011 and grew up reading family and work records. From 2029, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Maria Wagner",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K173-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "카를 슈나이더",
+        "nameEn": "Karl Schneider",
+        "birthDate": "1981-09-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K173-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "카를 슈나이더는 2026년 대정전 당시 용산·이태원 생활권에서 용산 화물·민간 기계 정비 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Karl Schneider was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K173-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K173-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "크리스타 바그너",
+        "nameEn": "Christa Wagner",
+        "birthDate": "1981-09-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K173-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "크리스타 바그너는 2026년 대정전 당시 용산·이태원 생활권에서 용산 화물·민간 기계 정비 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Christa Wagner was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K173-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K173-P-01:K173:biological",
+        "from": "FH-K173-P-01",
+        "to": "K173",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K173-P-02:FH-K173-P-01:biological",
+        "from": "FH-K173-P-02",
+        "to": "FH-K173-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K173-M-01:K173:biological",
+        "from": "FH-K173-M-01",
+        "to": "K173",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K173-M-02:FH-K173-M-01:biological",
+        "from": "FH-K173-M-02",
+        "to": "FH-K173-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-루카스-슈나이더-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K173-P-03:FH-K173-P-02:biological",
+        "from": "FH-K173-P-03",
+        "to": "FH-K173-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K173-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K173-M-03:FH-K173-M-02:biological",
+        "from": "FH-K173-M-03",
+        "to": "FH-K173-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K173-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K173",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K173-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/840"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K173-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/842"
+          }
+        ]
+      },
+      {
+        "recipientId": "K169",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "창고 임대 장부를 역장에게 보고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/62"
+          }
+        ]
+      },
+      {
+        "recipientId": "K198",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "얼음 벽돌을 환적 창에서 받음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/157"
+          }
+        ]
+      },
+      {
+        "recipientId": "K197",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "호송 도착 시각을 맞춤",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/158"
+          }
+        ]
+      },
+      {
+        "recipientId": "K195",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "냉동 화물을 용산 환적에 맡김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/159"
+          }
+        ]
+      },
+      {
+        "recipientId": "K197",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "환적 창에서 호송을 인계",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/162"
+          }
+        ]
+      },
+      {
+        "recipientId": "K176",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/146"
+          }
+        ]
+      },
+      {
+        "recipientId": "K183",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/160"
+          }
+        ]
+      },
+      {
+        "recipientId": "K184",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "루카스 슈나이더의 임대 장부를 경매 전 확인하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/162"
+          }
+        ]
+      },
+      {
+        "recipientId": "K190",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/88"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K173",
     "personId": "person-0174",
@@ -83,7 +610,7 @@
     "size": 4,
     "current_location": "운행 중단 역사",
     "camp": {
-      "name": "송이든 폐역 야영지",
+      "name": "루카스 슈나이더 폐역 야영지",
       "type": "야영지",
       "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
       "facilities": [
@@ -96,9 +623,9 @@
     "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
   },
   "clan": {
-    "id": "c1a1-d64d-c8fc-5b8b",
-    "name": "홍주 송씨",
-    "crest": "clan-crests/c1a1-d64d-c8fc-5b8b.svg"
+    "id": "DIV-K173",
+    "name": "용산·이태원 슈나이더씨",
+    "crest": "clan-crests/DIV-K173.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -133,7 +660,7 @@
     "욕망": "갈망 35 | 독점 −25 | 위험 40 | 과시 5 | 지속 5 | 지향 동성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 환적 배차원 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 환적 배차원 자리는 무표 출발 열차 저지로 열렸다. 루카스 슈나이더는 2071년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 환적 배차원 업무를 맡는다. 카를 슈나이더는 2026년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 루카스 슈나이더의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 환적 배차원. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.",
     "일화": "노량진 정전 소문이 용산에 닿자 냉동 칸 임차인들이 화물을 밤사이에 빼내기 시작했다.",
@@ -142,26 +669,26 @@
     "공포": "전력 없는 밤에 냉동 화물이 녹아 후국의 중계 신용이 하루 만에 무너지는 것.",
     "개입": "얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다."
   },
-  "biography": "사교적이지만 창고 열쇠는 몸에서 떼지 않는다. 빈 상자를 가득 찬 것처럼 적는 사람을 원수로 본다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환적창고 온도·재고 검증\n- 직함: 환적 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환적 배차원 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적 배차원. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.\n\n**일화.** 노량진 정전 소문이 용산에 닿자 냉동 칸 임차인들이 화물을 밤사이에 빼내기 시작했다.\n\n**관계.** 박태겸에게 창고 임대 장부를 보고하고 서나연의 얼음 벽돌을 환적한다. 신태산과는 호송 도착 시각을 맞춘다.\n\n**야망.** 냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 만든다.\n\n**공포.** 전력 없는 밤에 냉동 화물이 녹아 후국의 중계 신용이 하루 만에 무너지는 것.\n\n**개입.** 얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 20 | 공동 0 | 원칙 −5 | 공개 −20 | 자격 20 | 분산 5 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 40 | 과시 5 | 지속 5 | 지향 동성 | 결합 단혼\n:::",
+  "biography": "사교적이지만 창고 열쇠는 몸에서 떼지 않는다. 빈 상자를 가득 찬 것처럼 적는 사람을 원수로 본다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환적창고 온도·재고 검증\n- 직함: 환적 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환적 배차원 자리는 무표 출발 열차 저지로 열렸다. 루카스 슈나이더는 2071년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 환적 배차원 업무를 맡는다. 카를 슈나이더는 2026년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 루카스 슈나이더의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적 배차원. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.\n\n**일화.** 노량진 정전 소문이 용산에 닿자 냉동 칸 임차인들이 화물을 밤사이에 빼내기 시작했다.\n\n**관계.** 박태겸에게 창고 임대 장부를 보고하고 서나연의 얼음 벽돌을 환적한다. 신태산과는 호송 도착 시각을 맞춘다.\n\n**야망.** 냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 만든다.\n\n**공포.** 전력 없는 밤에 냉동 화물이 녹아 후국의 중계 신용이 하루 만에 무너지는 것.\n\n**개입.** 얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 20 | 공동 0 | 원칙 −5 | 공개 −20 | 자격 20 | 분산 5 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 40 | 과시 5 | 지속 5 | 지향 동성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "송이든",
+        "from": "루카스 슈나이더",
         "type": "지휘",
         "to": "박태겸",
         "basis": "창고 임대 장부를 역장에게 보고"
       },
       {
-        "from": "송이든",
+        "from": "루카스 슈나이더",
         "type": "계약",
         "to": "서나연",
         "basis": "얼음 벽돌을 환적 창에서 받음"
       },
       {
-        "from": "송이든",
+        "from": "루카스 슈나이더",
         "type": "계약",
         "to": "신태산",
         "basis": "호송 도착 시각을 맞춤"
@@ -171,38 +698,38 @@
       {
         "from": "조민재",
         "type": "계약",
-        "to": "송이든",
+        "to": "루카스 슈나이더",
         "basis": "냉동 화물을 용산 환적에 맡김"
       },
       {
         "from": "신태산",
         "type": "계약",
-        "to": "송이든",
+        "to": "루카스 슈나이더",
         "basis": "환적 창에서 호송을 인계"
       },
       {
-        "from": "주서람",
+        "from": "나탈리야 소콜로바",
         "type": "지휘",
-        "to": "송이든",
-        "basis": "송이든의 환적 순서를 현장에서 집행하는 계약이고"
+        "to": "루카스 슈나이더",
+        "basis": "루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고"
       },
       {
-        "from": "양채윤",
+        "from": "앙드레 뒤부아",
         "type": "지휘",
-        "to": "송이든",
-        "basis": "송이든의 창고 온도에 전력을 대는 지휘를 받고"
+        "to": "루카스 슈나이더",
+        "basis": "루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고"
       },
       {
-        "from": "주하음",
+        "from": "헬레나 비슈니에프스카",
         "type": "계약",
-        "to": "송이든",
-        "basis": "송이든의 임대 장부를 경매 전 확인하며"
+        "to": "루카스 슈나이더",
+        "basis": "루카스 슈나이더의 임대 장부를 경매 전 확인하며"
       },
       {
-        "from": "추한결",
+        "from": "필리프 뮐러",
         "type": "맹세",
-        "to": "송이든",
-        "basis": "송이든의 창고 임대 장부에 협약 중량을 겹치고"
+        "to": "루카스 슈나이더",
+        "basis": "루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고"
       }
     ]
   }

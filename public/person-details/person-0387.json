@@ -12,6 +12,440 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-판효담",
   "detailRoute": "/people/person-0387",
+  "birthDate": "2086-01-15",
+  "birthday": "01-15",
+  "age": 40,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/181",
+    "lore/characters/Cast-State-15.json#/content/182",
+    "lore/characters/Cast-State-15.json#/content/183"
+  ],
+  "familyTree": {
+    "personId": "K386",
+    "nodes": [
+      {
+        "id": "K386",
+        "personId": "K386",
+        "kind": "person",
+        "name": "판효담",
+        "birthDate": "2086-01-15",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K386"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 명동역 교구청에서 명동역 보관함 당직 부제 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-판효담-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0387"
+      },
+      {
+        "id": "FH-K386-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "판승윤",
+        "birthDate": "2056-01-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "판승윤은 신정 차량기지에서 보관함 당직·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-판효담-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K386-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "판승우",
+        "birthDate": "2026-01-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "판승우는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-판효담-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K386-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준온",
+        "birthDate": "2056-01-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "최준온은 신정 차량기지에서 보관함 당직·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-판효담-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K386-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준희",
+        "birthDate": "2026-01-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정준희는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-판효담-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K386-P-01:K386:biological",
+        "from": "FH-K386-P-01",
+        "to": "K386",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K386-P-02:FH-K386-P-01:biological",
+        "from": "FH-K386-P-02",
+        "to": "FH-K386-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K386-M-01:K386:biological",
+        "from": "FH-K386-M-01",
+        "to": "K386",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K386-M-02:FH-K386-M-01:biological",
+        "from": "FH-K386-M-02",
+        "to": "FH-K386-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-판효담-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K386",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K386-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1874"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K386-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1876"
+          }
+        ]
+      },
+      {
+        "recipientId": "K582",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "진돌린은 다시 열린 교대의 인준 명부 서명을 판효담에게 넘긴다. 판효담은 보관함 당직 기록과 봉인을 확인해, 교대가 멈춘 사이 빠진 서명과 안쪽에서 열린 봉인 흔적을 함께 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/345"
+          }
+        ]
+      },
+      {
+        "recipientId": "K630",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "윤강율은 다시 열린 교대의 인준 명부 서명을 판효담에게 인계한다. 판효담은 보관함 당직과 봉인을 확인해 교대 중단 사이의 기록 공백을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/387"
+          }
+        ]
+      },
+      {
+        "recipientId": "K774",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "주강석은 인준 명부의 대질 증언과 서명을 판효담에게 인계한다. 판효담은 보관함 봉인과 교대 기록을 확인해 증언 충돌이 보관 중 생긴 누락인지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/513"
+          }
+        ]
+      },
+      {
+        "recipientId": "K822",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "정산준은 다시 열린 교대의 인준 명부 서명을 판효담에게 넘긴다. 판효담은 보관함 봉인과 당직 기록을 확인해 중단 사이 빠진 인수를 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/555"
+          }
+        ]
+      },
+      {
+        "recipientId": "K966",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "우라진은 다시 열린 교대의 인준 서명을 판효담에게 넘긴다. 판효담은 보관함 봉인·당직 기록을 확인해 교대 중단 사이 빠진 인수를 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/682"
+          }
+        ]
+      },
+      {
+        "recipientId": "K384",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "판효담의 창고 기지 칠판에 좌표를 붙인다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/347"
+          }
+        ]
+      },
+      {
+        "recipientId": "K375",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "라진우의 재고 원장을 기지에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/350"
+          }
+        ]
+      },
+      {
+        "recipientId": "K382",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "수한별의 순찰과 자물쇠를 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/351"
+          }
+        ]
+      },
+      {
+        "recipientId": "K389",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "판효담의 창고 기지에 출력을 맞추고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/357"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K386",
     "personId": "person-0387",
@@ -163,6 +597,36 @@
       }
     ],
     "incoming": [
+      {
+        "from": "진돌린",
+        "type": "계약",
+        "to": "판효담",
+        "basis": "진돌린은 다시 열린 교대의 인준 명부 서명을 판효담에게 넘긴다. 판효담은 보관함 당직 기록과 봉인을 확인해, 교대가 멈춘 사이 빠진 서명과 안쪽에서 열린 봉인 흔적을 함께 살핀다."
+      },
+      {
+        "from": "윤강율",
+        "type": "계약",
+        "to": "판효담",
+        "basis": "윤강율은 다시 열린 교대의 인준 명부 서명을 판효담에게 인계한다. 판효담은 보관함 당직과 봉인을 확인해 교대 중단 사이의 기록 공백을 찾는다."
+      },
+      {
+        "from": "주강석",
+        "type": "계약",
+        "to": "판효담",
+        "basis": "주강석은 인준 명부의 대질 증언과 서명을 판효담에게 인계한다. 판효담은 보관함 봉인과 교대 기록을 확인해 증언 충돌이 보관 중 생긴 누락인지 살핀다."
+      },
+      {
+        "from": "정산준",
+        "type": "계약",
+        "to": "판효담",
+        "basis": "정산준은 다시 열린 교대의 인준 명부 서명을 판효담에게 넘긴다. 판효담은 보관함 봉인과 당직 기록을 확인해 중단 사이 빠진 인수를 찾는다."
+      },
+      {
+        "from": "우라진",
+        "type": "계약",
+        "to": "판효담",
+        "basis": "우라진은 다시 열린 교대의 인준 서명을 판효담에게 넘긴다. 판효담은 보관함 봉인·당직 기록을 확인해 교대 중단 사이 빠진 인수를 찾는다."
+      },
       {
         "from": "원주온",
         "type": "계약",

@@ -12,6 +12,429 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-손별연",
   "detailRoute": "/people/person-0566",
+  "birthDate": "2096-08-31",
+  "birthday": "08-31",
+  "age": 30,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/347",
+    "lore/characters/Cast-State-15.json#/content/348",
+    "lore/characters/Cast-State-15.json#/content/349",
+    "lore/characters/Cast-State-15.json#/content/350"
+  ],
+  "familyTree": {
+    "personId": "K566",
+    "nodes": [
+      {
+        "id": "K566",
+        "personId": "K566",
+        "kind": "person",
+        "name": "손별연",
+        "birthDate": "2096-08-31",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K566"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손별연-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0566"
+      },
+      {
+        "id": "FH-K566-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승영",
+        "birthDate": "2066-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2104,
+            "summary": "손승영은 노량진 선창에서 구휼 물자 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손별연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K566-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승윤",
+        "birthDate": "2036-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "손승윤은 노량진 선창에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손별연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K566-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승우",
+        "birthDate": "2006-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "손승우는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손별연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K566-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최재진",
+        "birthDate": "2066-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2104,
+            "summary": "최재진은 노량진 선창에서 구휼 물자 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손별연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K566-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정태리",
+        "birthDate": "2036-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "정태리는 노량진 선창에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손별연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K566-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤태섭",
+        "birthDate": "2006-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤태섭은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-손별연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K566-P-01:K566:biological",
+        "from": "FH-K566-P-01",
+        "to": "K566",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K566-P-02:FH-K566-P-01:biological",
+        "from": "FH-K566-P-02",
+        "to": "FH-K566-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K566-P-03:FH-K566-P-02:biological",
+        "from": "FH-K566-P-03",
+        "to": "FH-K566-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K566-M-01:K566:biological",
+        "from": "FH-K566-M-01",
+        "to": "K566",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K566-M-02:FH-K566-M-01:biological",
+        "from": "FH-K566-M-02",
+        "to": "FH-K566-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K566-M-03:FH-K566-M-02:biological",
+        "from": "FH-K566-M-03",
+        "to": "FH-K566-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-손별연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K566",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K566-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2737"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K566-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2740"
+          }
+        ]
+      },
+      {
+        "recipientId": "K391",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "손별연은 구휼 물자를 공동 저울로 다시 재고 매리울에게 인수 중량을 알린다. 매리울은 물자의 상태를 검수해 녹거나 훼손된 재고를 정상 물자와 구분하고, 다음 당직이 실제 남은 양을 받게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/331"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K566",
     "personId": "person-0566",
@@ -138,17 +561,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
     "일화": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 손별연은 구휼 물자를 공동 저울로 다시 재고 매리울에게 인수 중량을 알린다. 매리울은 물자의 상태를 검수해 녹거나 훼손된 재고를 정상 물자와 구분하고, 다음 당직이 실제 남은 양을 받게 한다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.",
     "개입": "명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "손별연은 명동역 구휼 물자 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 구휼 물자 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 구휼 물자 당직\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 35 | 무력 −5 | 물질 60 | 공동 −15 | 원칙 −40 | 공개 −15 | 자격 −5 | 분산 5 | 변혁 −5\n- 욕망: 갈망 25 | 독점 40 | 위험 20 | 과시 0 | 지속 −15 | 지향 동성 | 결합 다자\n:::",
+  "biography": "손별연은 명동역 구휼 물자 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 구휼 물자 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 구휼 물자 당직\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 손별연은 구휼 물자를 공동 저울로 다시 재고 매리울에게 인수 중량을 알린다. 매리울은 물자의 상태를 검수해 녹거나 훼손된 재고를 정상 물자와 구분하고, 다음 당직이 실제 남은 양을 받게 한다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 35 | 무력 −5 | 물질 60 | 공동 −15 | 원칙 −40 | 공개 −15 | 자격 −5 | 분산 5 | 변혁 −5\n- 욕망: 갈망 25 | 독점 40 | 위험 20 | 과시 0 | 지속 −15 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-15"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "손별연",
+        "type": "계약",
+        "to": "매리울",
+        "basis": "손별연은 구휼 물자를 공동 저울로 다시 재고 매리울에게 인수 중량을 알린다. 매리울은 물자의 상태를 검수해 녹거나 훼손된 재고를 정상 물자와 구분하고, 다음 당직이 실제 남은 양을 받게 한다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -1,18 +1,22 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import { test } from 'vitest'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { JSDOM } from 'jsdom'
 import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
+import { loadCastBirthdays } from './cast-birthdays.mjs'
 
 const read = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 const issued = read('../lore/name-pools/gurps-cast.json').people
 const registry = new Map(read('../lore/name-pools/person-id-registry.json').persons.map((row) => [row.id, row]))
+const birthdays = await loadCastBirthdays(fileURLToPath(new URL('../lore/', import.meta.url)), [...registry.values()])
 const detailFor = (row) => read(`../public/person-details/${row.url.split('/').pop()}.json`)
 const projection = (row) => ({
   id: row.id, personId: row.url.split('/').pop(), band: row.band,
+  ...(row.source?.numericStatus === 'proposal' ? { numericStatus: 'proposal' } : {}),
   attributes: Object.fromEntries(Object.entries(row.attributes).map(([key, attr]) => [key, { value: attr.value, cp: attr.cp }])),
   traits: row.traits.map(({ name, kind, cp, rule }) => ({ name, kind, cp, ...(rule === undefined ? {} : { rule }) })),
   skills: row.skills.map(({ name, ko, level, cp }) => ({ name, ...(ko === undefined ? {} : { ko }), level, cp })),
@@ -20,6 +24,41 @@ const projection = (row) => ({
 })
 const render = (detail) => new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
   createElement(PersonDetailContent, { detail, personId: detail.id }))))
+
+test('generated details preserve birth ledger values for every issued identity', () => {
+  assert.equal(issued.length, registry.size)
+  for (const row of issued) {
+    const detail = detailFor(row)
+    const birth = birthdays.get(row.id)
+    assert.ok(birth, row.id)
+    for (const [key, value] of Object.entries(birth)) assert.deepEqual(detail[key], value, `${row.id}:${key}`)
+  }
+})
+
+test('unrecorded parents remain explicit while existing parent relationships survive', () => {
+  for (const [id, status, parentId, type] of [
+    ['K087', 'biological-parents-unrecorded', 'K086', 'adoptive'],
+    ['K1010', 'maternal-parent-unrecorded', 'K1009', 'biological'],
+  ]) {
+    const detail = detailFor(issued.find(row => row.id === id))
+    assert.equal(detail.familyTree.parentStatus, status)
+    assert.ok(detail.familyTree.edges.some(edge => edge.from === parentId && edge.to === id && edge.type === type))
+  }
+})
+
+test('identity table renders birthday and completed age with its date basis', () => {
+  const row = issued.find((entry) => entry.id === 'K088')
+  const detail = detailFor(row)
+  const dom = render(detail)
+  try {
+    const rows = new Map([...dom.window.document.querySelectorAll('.person-data-table tbody tr')]
+      .map((node) => [node.querySelector('th').textContent, node.querySelector('td').textContent]))
+    assert.equal(rows.get('생년월일'), detail.birthDate)
+    assert.equal(rows.get('생일'), detail.birthday)
+    assert.equal(rows.get('나이'), `만 ${detail.age}세`)
+    assert.equal(rows.get('나이 기준일'), detail.ageAsOf)
+  } finally { dom.window.close() }
+})
 
 test('generated person sheets preserve every issued identity and numeric field without API access', () => {
   for (const row of issued) {
@@ -79,6 +118,38 @@ test('generated-to-person-page integration exposes all four information classes'
   assert.deepEqual(selectors, new Set(['.gurps-sheet', '.gurps-unit', '.gurps-territory', '.gurps-wandering']))
 })
 
+test('existing prose contacts retain source meaning without becoming contract or command edges', () => {
+  const row = issued.find(entry => entry.id === 'K085')
+  const detail = detailFor(row)
+  assert.equal(detail.proseContacts[0].recipientId, 'K057')
+  assert.equal(detail.relations.outgoing.length, 0)
+  const dom = render(detail)
+  try {
+    assert.ok(dom.window.document.querySelector('.person-data-panel').textContent.includes(detail.proseContacts[0].basis))
+  } finally { dom.window.close() }
+})
+
+test('existing regional cooperation is visible at both endpoints without invented contract edges', () => {
+  const amira = detailFor(issued.find(entry => entry.id === 'K1013'))
+  const joel = detailFor(issued.find(entry => entry.id === 'K1014'))
+  const outgoing = amira.proseContacts.find(contact => contact.recipientId === 'K1014')
+  const incoming = joel.proseContacts.find(contact => contact.recipientId === 'K1013')
+  assert.ok(outgoing)
+  assert.ok(incoming)
+  assert.deepEqual(incoming.sourceRef, outgoing.sourceRef)
+  assert.equal(incoming.basis, outgoing.basis)
+  assert.equal(amira.relations.outgoing.some(contact => contact.recipientId === 'K1014'), false)
+  assert.equal(joel.relations.outgoing.some(contact => contact.recipientId === 'K1013'), false)
+})
+
+test('every issued person has an actual person contact or preserved court connection', () => {
+  assert.equal(issued.length, registry.size)
+  for (const row of issued) {
+    const detail = detailFor(row)
+    assert.ok(detail.relations.outgoing.length || detail.relations.incoming.length || detail.proseContacts.length || detail.court?.members.length || detail.directLiege, row.id)
+  }
+})
+
 test('unissued holdings remain absent on the generated person page', () => {
   const row = issued.find((entry) => !entry.unit && !entry.territory && !entry.wandering_force)
   assert.ok(row)
@@ -86,5 +157,23 @@ test('unissued holdings remain absent on the generated person page', () => {
   try {
     assert.ok(dom.window.document.querySelector('.gurps-sheet'))
     assert.equal(dom.window.document.querySelector('.gurps-unit, .gurps-territory, .gurps-wandering'), null)
+  } finally { dom.window.close() }
+})
+
+test('household proposals remain separate from existing direct-retainer assignments', () => {
+  const row = issued.find(entry => entry.id === 'K998')
+  const detail = detailFor(row)
+  assert.equal(detail.householdProposal.status, 'draft')
+  const dom = render(detail)
+  try {
+    const section = dom.window.document.querySelector('.person-household-proposal')
+    assert.ok(section)
+    for (const link of detail.householdProposal.links) {
+      assert.ok(section.textContent.includes(link.recipientName))
+      if (link.type === 'contract') assert.ok(section.textContent.includes(link.basis))
+    }
+    assert.equal(detail.directLiege, undefined)
+    assert.deepEqual(detail.court.members.map(member => member.personId), ['K425', 'K441'])
+    assert.equal(detail.householdProposal.household.humanoidAdmission, 'deferred')
   } finally { dom.window.close() }
 })

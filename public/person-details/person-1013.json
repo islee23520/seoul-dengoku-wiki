@@ -12,6 +12,417 @@
   "stateName": "이주민 회랑",
   "sourceRoute": "/world/Diaspora-Corridors#인물-아미라-카심-amira-qasim-아미라",
   "detailRoute": "/people/person-1013",
+  "birthDate": "2084-03-26",
+  "birthday": "03-26",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/factions/Diaspora-Corridors.json#/content/10"
+  ],
+  "familyTree": {
+    "personId": "K1013",
+    "nodes": [
+      {
+        "id": "K1013",
+        "personId": "K1013",
+        "kind": "person",
+        "name": "아미라 카심",
+        "birthDate": "2084-03-26",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1013"
+          },
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "성명: 아미라 카심. 이태원 통행증에는 Amira. 한글 장부 아미라",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Amira Qasim",
+        "detailRoute": "/people/person-1013"
+      },
+      {
+        "id": "FH-K1013-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "유수프 카심",
+        "birthDate": "2054-03-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "유수프 카심은 2054년에 태어났다. 이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2072년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Yusuf Qasim was born in 2054 and grew up reading family and work records. From 2072, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Yusuf Qasim",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1013-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "하산 카심",
+        "birthDate": "2024-03-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "하산 카심은 2024년에 태어났다. 이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2042년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Hassan Qasim was born in 2024 and grew up reading family and work records. From 2042, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Hassan Qasim",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1013-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "라일라 하다드",
+        "birthDate": "2054-03-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "라일라 하다드는 2054년에 태어났다. 이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2072년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Layla Haddad was born in 2054 and grew up reading family and work records. From 2072, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Layla Haddad",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1013-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "마리암 하다드",
+        "birthDate": "2024-03-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마리암 하다드는 2024년에 태어났다. 이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2042년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/factions/Diaspora-Corridors.json",
+                "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Mariam Haddad was born in 2024 and grew up reading family and work records. From 2042, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Mariam Haddad",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1013-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "할리드 카심",
+        "nameEn": "Khalid Qasim",
+        "birthDate": "1994-03-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K1013-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "할리드 카심은 2026년 대정전 당시 이태원 생활권에서 이태원 민간 통역·숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Khalid Qasim was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K1013-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1013-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "나디아 하다드",
+        "nameEn": "Nadia Haddad",
+        "birthDate": "1994-03-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K1013-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "나디아 하다드는 2026년 대정전 당시 이태원 생활권에서 이태원 민간 통역·숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Nadia Haddad was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K1013-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1013-P-01:K1013:biological",
+        "from": "FH-K1013-P-01",
+        "to": "K1013",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1013-P-02:FH-K1013-P-01:biological",
+        "from": "FH-K1013-P-02",
+        "to": "FH-K1013-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1013-M-01:K1013:biological",
+        "from": "FH-K1013-M-01",
+        "to": "K1013",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1013-M-02:FH-K1013-M-01:biological",
+        "from": "FH-K1013-M-02",
+        "to": "FH-K1013-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/factions/Diaspora-Corridors.json",
+            "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1013-P-03:FH-K1013-P-02:biological",
+        "from": "FH-K1013-P-03",
+        "to": "FH-K1013-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K1013-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1013-M-03:FH-K1013-M-02:biological",
+        "from": "FH-K1013-M-03",
+        "to": "FH-K1013-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K1013-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K1014",
+      "recipientName": "조엘 박",
+      "basis": "주요 관계: 박태겸의 배차 가문과 계약. 용산 울타리 용역 조엘 박과 협력",
+      "sourceRef": {
+        "path": "lore/factions/Diaspora-Corridors.json",
+        "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+      }
+    }
+  ],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K1013",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K1013-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4874"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K1013-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4876"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": true,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "needed; actual profiles require contextual review"
+    }
+  },
   "gurps": {
     "id": "K1013",
     "personId": "person-1013",
@@ -139,7 +550,7 @@
     "품계": "없음",
     "가치관": "권위 0 | 개방 50 | 무력 −30 | 물질 0 | 공동 20 | 원칙 40 | 공개 20 | 자격 0 | 분산 20 | 변혁 30",
     "욕망": "갈망 40 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 40 | 지향 양성 | 결합 단혼",
-    "출신 공동체": "이태원 통행 골목. 붕괴 전 통역·숙박",
+    "출신 공동체": "이태원 통행 골목. 붕괴 전 통역·숙박. 아미라 카심은 2084년 이태원에서 태어났다. 이라크 아랍계 통역·숙박 가계에서 영어와 아랍어를 익히고, 환적국 배차 창구에서 한국어 통행 용어와 다국어 통행증을 대조한다. 통행증에 한 언어만 적혀 있으면 승강기를 열지 않는다. 할리드 카심은 2026년 이태원에서 이태원 민간 통역·숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아미라 카심의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.",
     "언어": "영어·아랍어 일상, 한국어 통행 용어",
     "생업": "전령 (주), 물류상 (부)",
     "소속": "이태원 통행 골목. 환적국 배차 창구의 통역 용역",
@@ -154,7 +565,7 @@
     "촉발 사건": "통행 금지어가 붙으면 용산 환적이 하루 멈춘다"
   },
   "sections": {},
-  "biography": "- 성명: 아미라 카심. 이태원 통행증에는 Amira. 한글 장부 아미라\n- 캐릭터 ID: K1013\n- 출생지: 이태원\n- 성별: 남성\n- 품계: 없음\n- 가치관: 권위 0 | 개방 50 | 무력 −30 | 물질 0 | 공동 20 | 원칙 40 | 공개 20 | 자격 0 | 분산 20 | 변혁 30\n- 욕망: 갈망 40 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 40 | 지향 양성 | 결합 단혼\n- 출신 공동체: 이태원 통행 골목. 붕괴 전 통역·숙박\n- 언어: 영어·아랍어 일상, 한국어 통행 용어\n- 생업: 전령 (주), 물류상 (부)\n- 소속: 이태원 통행 골목. 환적국 배차 창구의 통역 용역\n- 직위: 다국어 통행증 판독\n- 징집 이력: 없음\n- 무장 접근: 없음. 통행증과 숙소 열쇠\n- 성격: 진영 이름을 먼저 말하지 않고, 열차가 서는 층부터 묻는다\n- 개인 야망: 용산 환적에서 통역 없는 열차를 없앤다\n- 공포: 한 진영이 「외국어 통행 금지」를 걸어 골목 숙소를 봉인하는 것\n- 통치·교섭 방식: 통행증 언어가 하나면 승강기를 열지 않는다\n- 주요 관계: 박태겸의 배차 가문과 계약. 용산 울타리 용역 조엘 박과 협력\n- 촉발 사건: 통행 금지어가 붙으면 용산 환적이 하루 멈춘다",
+  "biography": "- 성명: 아미라 카심. 이태원 통행증에는 Amira. 한글 장부 아미라\n- 캐릭터 ID: K1013\n- 출생지: 이태원\n- 성별: 남성\n- 품계: 없음\n- 가치관: 권위 0 | 개방 50 | 무력 −30 | 물질 0 | 공동 20 | 원칙 40 | 공개 20 | 자격 0 | 분산 20 | 변혁 30\n- 욕망: 갈망 40 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 40 | 지향 양성 | 결합 단혼\n- 출신 공동체: 이태원 통행 골목. 붕괴 전 통역·숙박. 아미라 카심은 2084년 이태원에서 태어났다. 이라크 아랍계 통역·숙박 가계에서 영어와 아랍어를 익히고, 환적국 배차 창구에서 한국어 통행 용어와 다국어 통행증을 대조한다. 통행증에 한 언어만 적혀 있으면 승강기를 열지 않는다. 할리드 카심은 2026년 이태원에서 이태원 민간 통역·숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아미라 카심의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 영어·아랍어 일상, 한국어 통행 용어\n- 생업: 전령 (주), 물류상 (부)\n- 소속: 이태원 통행 골목. 환적국 배차 창구의 통역 용역\n- 직위: 다국어 통행증 판독\n- 징집 이력: 없음\n- 무장 접근: 없음. 통행증과 숙소 열쇠\n- 성격: 진영 이름을 먼저 말하지 않고, 열차가 서는 층부터 묻는다\n- 개인 야망: 용산 환적에서 통역 없는 열차를 없앤다\n- 공포: 한 진영이 「외국어 통행 금지」를 걸어 골목 숙소를 봉인하는 것\n- 통치·교섭 방식: 통행증 언어가 하나면 승강기를 열지 않는다\n- 주요 관계: 박태겸의 배차 가문과 계약. 용산 울타리 용역 조엘 박과 협력\n- 촉발 사건: 통행 금지어가 붙으면 용산 환적이 하루 멈춘다",
   "sources": [
     "Diaspora-Corridors"
   ],

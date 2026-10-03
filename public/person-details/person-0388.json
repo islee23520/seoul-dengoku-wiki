@@ -12,6 +12,557 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-천솔빛",
   "detailRoute": "/people/person-0388",
+  "birthDate": "2090-03-28",
+  "birthday": "03-28",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/27",
+    "lore/characters/Cast-State-15.json#/content/28",
+    "lore/characters/Cast-State-15.json#/content/29",
+    "lore/characters/Cast-State-15.json#/content/32",
+    "lore/characters/Cast-State-15.json#/content/33",
+    "lore/characters/Cast-State-15.json#/content/34"
+  ],
+  "familyTree": {
+    "personId": "K387",
+    "nodes": [
+      {
+        "id": "K387",
+        "personId": "K387",
+        "kind": "person",
+        "name": "천솔빛",
+        "birthDate": "2090-03-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K387"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 수사 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-천솔빛-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0388"
+      },
+      {
+        "id": "FH-K387-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "천승경",
+        "birthDate": "2060-03-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "천승경은 대합실 당직에서 인준 명부 대조·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-천솔빛-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K387-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "천승수",
+        "birthDate": "2030-03-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "천승수는 대합실 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-천솔빛-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K387-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "천승은",
+        "birthDate": "2000-03-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "천승은은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-천솔빛-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K387-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준규",
+        "birthDate": "2060-03-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "정준규는 대합실 당직에서 인준 명부 대조·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-천솔빛-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K387-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준훈",
+        "birthDate": "2030-03-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "윤준훈은 대합실 당직에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-천솔빛-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K387-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준정",
+        "birthDate": "2000-03-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한준정은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-천솔빛-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K387-P-01:K387:biological",
+        "from": "FH-K387-P-01",
+        "to": "K387",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K387-P-02:FH-K387-P-01:biological",
+        "from": "FH-K387-P-02",
+        "to": "FH-K387-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K387-P-03:FH-K387-P-02:biological",
+        "from": "FH-K387-P-03",
+        "to": "FH-K387-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K387-M-01:K387:biological",
+        "from": "FH-K387-M-01",
+        "to": "K387",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K387-M-02:FH-K387-M-01:biological",
+        "from": "FH-K387-M-02",
+        "to": "FH-K387-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K387-M-03:FH-K387-M-02:biological",
+        "from": "FH-K387-M-03",
+        "to": "FH-K387-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-천솔빛-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K387",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K387-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1878"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K387-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1881"
+          }
+        ]
+      },
+      {
+        "recipientId": "K438",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황지아는 교대마다 확인한 인준 명부 서명을 천솔빛의 사제단 소집 봉인 기록과 맞춰 본다. 누락된 서명이 나타나면 당시의 인수인계와 증언을 함께 짚어, 선거를 둘러싼 다툼 속에서도 어느 당직의 기록이 빠졌는지 확인한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/221"
+          }
+        ]
+      },
+      {
+        "recipientId": "K486",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "손마연은 교대 서명에 관한 증언이 갈리면 두 증인을 대질시키고 그 내용을 천솔빛에게 넘긴다. 천솔빛은 사제단 소집 봉인의 누락을 살필 때 그 증언을 확인해, 인수인계의 빈칸과 선거 절차의 이의를 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/261"
+          }
+        ]
+      },
+      {
+        "recipientId": "K534",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "하가은은 화재에서 지킨 인명 장부를 천솔빛에게 인계하고 빠진 교대 서명을 알린다. 천솔빛은 사제단 소집 봉인의 기록을 찾아 화재로 사라진 부분과 처음부터 누락된 부분을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/303"
+          }
+        ]
+      },
+      {
+        "recipientId": "K678",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황빛아는 인준 명부의 대질 증언과 교대 서명을 천솔빛에게 넘긴다. 천솔빛은 사제단 소집 봉인을 확인해 서로 다른 증언 중 실제 인수 기록에 남은 내용을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/429"
+          }
+        ]
+      },
+      {
+        "recipientId": "K726",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배달원은 보관한 인명 장부와 교대 서명을 천솔빛에게 인계한다. 천솔빛은 소집 봉인 기록을 확인해 손실된 기록과 처음부터 없던 서명을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/471"
+          }
+        ]
+      },
+      {
+        "recipientId": "K870",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "권바린은 대질 증언과 인준 교대 서명을 천솔빛에게 넘긴다. 천솔빛은 소집 봉인 기록을 확인해 서로 다른 증언 중 실제 인수된 내용을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/597"
+          }
+        ]
+      },
+      {
+        "recipientId": "K918",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "허나우는 보관한 인명 장부와 교대 서명을 천솔빛에게 넘긴다. 천솔빛은 소집 봉인 기록을 확인해 화재로 잃은 기록과 처음부터 없던 서명을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/640"
+          }
+        ]
+      },
+      {
+        "recipientId": "K376",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "전나경의 지휘로 광장 줄을 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/352"
+          }
+        ]
+      },
+      {
+        "recipientId": "K381",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "방늘재의 진료 막과 대기열을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/353"
+          }
+        ]
+      },
+      {
+        "recipientId": "K392",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "천솔빛의 광장 줄에서 피난 인파를 대표하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/196"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K387",
     "personId": "person-0388",
@@ -157,6 +708,48 @@
       }
     ],
     "incoming": [
+      {
+        "from": "황지아",
+        "type": "계약",
+        "to": "천솔빛",
+        "basis": "황지아는 교대마다 확인한 인준 명부 서명을 천솔빛의 사제단 소집 봉인 기록과 맞춰 본다. 누락된 서명이 나타나면 당시의 인수인계와 증언을 함께 짚어, 선거를 둘러싼 다툼 속에서도 어느 당직의 기록이 빠졌는지 확인한다."
+      },
+      {
+        "from": "손마연",
+        "type": "계약",
+        "to": "천솔빛",
+        "basis": "손마연은 교대 서명에 관한 증언이 갈리면 두 증인을 대질시키고 그 내용을 천솔빛에게 넘긴다. 천솔빛은 사제단 소집 봉인의 누락을 살필 때 그 증언을 확인해, 인수인계의 빈칸과 선거 절차의 이의를 구분한다."
+      },
+      {
+        "from": "하가은",
+        "type": "계약",
+        "to": "천솔빛",
+        "basis": "하가은은 화재에서 지킨 인명 장부를 천솔빛에게 인계하고 빠진 교대 서명을 알린다. 천솔빛은 사제단 소집 봉인의 기록을 찾아 화재로 사라진 부분과 처음부터 누락된 부분을 구분한다."
+      },
+      {
+        "from": "황빛아",
+        "type": "계약",
+        "to": "천솔빛",
+        "basis": "황빛아는 인준 명부의 대질 증언과 교대 서명을 천솔빛에게 넘긴다. 천솔빛은 사제단 소집 봉인을 확인해 서로 다른 증언 중 실제 인수 기록에 남은 내용을 찾는다."
+      },
+      {
+        "from": "배달원",
+        "type": "계약",
+        "to": "천솔빛",
+        "basis": "배달원은 보관한 인명 장부와 교대 서명을 천솔빛에게 인계한다. 천솔빛은 소집 봉인 기록을 확인해 손실된 기록과 처음부터 없던 서명을 구분한다."
+      },
+      {
+        "from": "권바린",
+        "type": "계약",
+        "to": "천솔빛",
+        "basis": "권바린은 대질 증언과 인준 교대 서명을 천솔빛에게 넘긴다. 천솔빛은 소집 봉인 기록을 확인해 서로 다른 증언 중 실제 인수된 내용을 찾는다."
+      },
+      {
+        "from": "허나우",
+        "type": "계약",
+        "to": "천솔빛",
+        "basis": "허나우는 보관한 인명 장부와 교대 서명을 천솔빛에게 넘긴다. 천솔빛은 소집 봉인 기록을 확인해 화재로 잃은 기록과 처음부터 없던 서명을 구분한다."
+      },
       {
         "from": "탁필호",
         "type": "계약",

@@ -12,6 +12,584 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-장예린",
   "detailRoute": "/people/person-0064",
+  "birthDate": "2100-08-03",
+  "birthday": "08-03",
+  "age": 26,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-03.json#/content/93",
+    "lore/characters/Cast-State-03.json#/content/94",
+    "lore/characters/Cast-State-03.json#/content/95",
+    "lore/characters/Cast-State-03.json#/content/98",
+    "lore/characters/Cast-State-03.json#/content/99"
+  ],
+  "familyTree": {
+    "personId": "K064",
+    "nodes": [
+      {
+        "id": "K064",
+        "personId": "K064",
+        "kind": "person",
+        "name": "장예린",
+        "birthDate": "2100-08-03",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K064"
+          },
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 마곡 시험동에서 자랐다. 서부 수질검사망 운영관 자리는 표본 이중 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-장예린-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0064"
+      },
+      {
+        "id": "FH-K064-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "장승진",
+        "birthDate": "2070-08-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2108,
+            "summary": "장승진은 마곡 시험동에서 수질 채수·검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-장예린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K064-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "장승현",
+        "birthDate": "2040-08-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "장승현은 마곡 시험동에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-장예린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K064-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "장승영",
+        "birthDate": "2010-08-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "장승영은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-장예린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K064-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승연",
+        "birthDate": "2070-08-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2108,
+            "summary": "윤승연은 마곡 시험동에서 수질 채수·검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-장예린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K064-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승희",
+        "birthDate": "2040-08-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "한승희는 마곡 시험동에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-장예린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K064-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "강승정",
+        "birthDate": "2010-08-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강승정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-장예린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K064-P-01:K064:biological",
+        "from": "FH-K064-P-01",
+        "to": "K064",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K064-P-02:FH-K064-P-01:biological",
+        "from": "FH-K064-P-02",
+        "to": "FH-K064-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K064-P-03:FH-K064-P-02:biological",
+        "from": "FH-K064-P-03",
+        "to": "FH-K064-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K064-M-01:K064:biological",
+        "from": "FH-K064-M-01",
+        "to": "K064",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K064-M-02:FH-K064-M-01:biological",
+        "from": "FH-K064-M-02",
+        "to": "FH-K064-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K064-M-03:FH-K064-M-02:biological",
+        "from": "FH-K064-M-03",
+        "to": "FH-K064-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-장예린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K064",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K064-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/330"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K064-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/333"
+          }
+        ]
+      },
+      {
+        "recipientId": "K004",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "영등포 표본을 교차검증",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/36"
+          }
+        ]
+      },
+      {
+        "recipientId": "K088",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "검사 센서 수리를 성수 공방에 맡김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/130"
+          }
+        ]
+      },
+      {
+        "recipientId": "K442",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "홍상훈은 수질 계측 당직 기록을 장예린의 채수 시각·시약 로트 원장과 맞춰 본다. 측정에 관한 증언이 갈리면 공개 대질에서 확인한 내용을 원장과 대조하여, 장예린이 기준 초과에 대한 송수 중단 권고를 올릴 때 근거가 된 측정을 확인한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/223"
+          }
+        ]
+      },
+      {
+        "recipientId": "K490",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "유세훈은 수질 계측에서 들어온 사적 청탁을 공개 창구로 돌리고 장예린에게 해당 측정의 기록을 전달한다. 장예린은 채수 시각과 시약 로트를 확인해, 청탁에 맞춰 검사 주기가 줄거나 결과가 바뀌는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/264"
+          }
+        ]
+      },
+      {
+        "recipientId": "K538",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "주우석은 수질 계측에 관한 사적 청탁을 공개 창구로 돌린 뒤 장예린에게 해당 기록을 넘긴다. 장예린은 채수 시각과 시약 로트를 확인해 결과를 바꾸려는 요구와 실제 검사 조건을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/306"
+          }
+        ]
+      },
+      {
+        "recipientId": "K634",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "오마호는 다시 열린 수질 계측 교대의 기록을 장예린에게 넘긴다. 장예린은 채수 시각과 시약 로트를 확인해 당직이 빈 동안 빠진 검사를 완료로 처리하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/390"
+          }
+        ]
+      },
+      {
+        "recipientId": "K682",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "홍가훈은 수질 계측 교대의 기록과 누락 시각을 장예린에게 전한다. 장예린은 채수·시약 기록을 확인해 비어 있던 당직의 검사를 완료로 이어 쓰지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/432"
+          }
+        ]
+      },
+      {
+        "recipientId": "K730",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남새원은 측정에 관한 대질 증언을 장예린에게 전한다. 장예린은 채수 시각과 시약 로트를 확인해 말이 달라진 부분을 실제 검사 조건과 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/474"
+          }
+        ]
+      },
+      {
+        "recipientId": "K874",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "홍자원은 다시 열린 계측 교대의 인수 기록을 장예린에게 전한다. 장예린은 채수·시약 기록을 확인해 비어 있던 당직의 검사가 완료로 이어 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/600"
+          }
+        ]
+      },
+      {
+        "recipientId": "K922",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노하호는 측정에 관한 대질 증언을 장예린에게 넘긴다. 장예린은 채수 시각과 시약 로트를 확인해 말이 달라진 부분과 실제 검사 조건을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/643"
+          }
+        ]
+      },
+      {
+        "recipientId": "K071",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "장예린의 수질 검사망에 외곽 우물 표본을 보내며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/59"
+          }
+        ]
+      },
+      {
+        "recipientId": "K079",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "장예린의 검사망 운영을 증언으로 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/30"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K064",
     "personId": "person-0064",
@@ -162,6 +740,54 @@
       }
     ],
     "incoming": [
+      {
+        "from": "홍상훈",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "홍상훈은 수질 계측 당직 기록을 장예린의 채수 시각·시약 로트 원장과 맞춰 본다. 측정에 관한 증언이 갈리면 공개 대질에서 확인한 내용을 원장과 대조하여, 장예린이 기준 초과에 대한 송수 중단 권고를 올릴 때 근거가 된 측정을 확인한다."
+      },
+      {
+        "from": "유세훈",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "유세훈은 수질 계측에서 들어온 사적 청탁을 공개 창구로 돌리고 장예린에게 해당 측정의 기록을 전달한다. 장예린은 채수 시각과 시약 로트를 확인해, 청탁에 맞춰 검사 주기가 줄거나 결과가 바뀌는지 살핀다."
+      },
+      {
+        "from": "주우석",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "주우석은 수질 계측에 관한 사적 청탁을 공개 창구로 돌린 뒤 장예린에게 해당 기록을 넘긴다. 장예린은 채수 시각과 시약 로트를 확인해 결과를 바꾸려는 요구와 실제 검사 조건을 구분한다."
+      },
+      {
+        "from": "오마호",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "오마호는 다시 열린 수질 계측 교대의 기록을 장예린에게 넘긴다. 장예린은 채수 시각과 시약 로트를 확인해 당직이 빈 동안 빠진 검사를 완료로 처리하지 않는다."
+      },
+      {
+        "from": "홍가훈",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "홍가훈은 수질 계측 교대의 기록과 누락 시각을 장예린에게 전한다. 장예린은 채수·시약 기록을 확인해 비어 있던 당직의 검사를 완료로 이어 쓰지 않는다."
+      },
+      {
+        "from": "남새원",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "남새원은 측정에 관한 대질 증언을 장예린에게 전한다. 장예린은 채수 시각과 시약 로트를 확인해 말이 달라진 부분을 실제 검사 조건과 구분한다."
+      },
+      {
+        "from": "홍자원",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "홍자원은 다시 열린 계측 교대의 인수 기록을 장예린에게 전한다. 장예린은 채수·시약 기록을 확인해 비어 있던 당직의 검사가 완료로 이어 쓰이지 않게 한다."
+      },
+      {
+        "from": "노하호",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "노하호는 측정에 관한 대질 증언을 장예린에게 넘긴다. 장예린은 채수 시각과 시약 로트를 확인해 말이 달라진 부분과 실제 검사 조건을 구분한다."
+      },
       {
         "from": "명해솔",
         "type": "지휘",

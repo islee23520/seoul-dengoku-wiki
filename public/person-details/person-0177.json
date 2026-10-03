@@ -1,6 +1,6 @@
 {
   "id": "person-0177",
-  "name": "주서람",
+  "name": "나탈리야 소콜로바",
   "title": "환적창고 물류상",
   "position": "환적창고 물류상",
   "rank": "주사",
@@ -10,8 +10,380 @@
   "stage": "S2",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-주서람",
+  "sourceRoute": "/world/Cast-State-07#인물-나탈리야 소콜로바",
   "detailRoute": "/people/person-0177",
+  "birthDate": "2066-08-07",
+  "birthday": "08-07",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/94",
+    "lore/characters/Cast-State-07.json#/content/96"
+  ],
+  "familyTree": {
+    "personId": "K176",
+    "nodes": [
+      {
+        "id": "K176",
+        "personId": "K176",
+        "kind": "person",
+        "name": "나탈리야 소콜로바",
+        "birthDate": "2066-08-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K176"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 환적창고 물류상 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-나탈리야-소콜로바-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Nataliya Sokolova",
+        "detailRoute": "/people/person-0177"
+      },
+      {
+        "id": "FH-K176-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "세르게이 소콜로프",
+        "birthDate": "2036-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "세르게이 소콜로프는 2036년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2054년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-나탈리야-소콜로바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Sergei Sokolov was born in 2036 and grew up reading family and work records. From 2054, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Sergei Sokolov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K176-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "알렉세이 소콜로프",
+        "birthDate": "2006-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "알렉세이 소콜로프는 2026년 대정전 당시 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-나탈리야-소콜로바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Alexei Sokolov was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Alexei Sokolov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K176-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "안나 스미르노바",
+        "birthDate": "2036-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "안나 스미르노바는 2036년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2054년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-나탈리야-소콜로바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Anna Smirnova was born in 2036 and grew up reading family and work records. From 2054, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Anna Smirnova",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K176-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이리나 스미르노바",
+        "birthDate": "2006-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이리나 스미르노바는 2026년 대정전 당시 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-나탈리야-소콜로바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Irina Smirnova was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Irina Smirnova",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K176-P-01:K176:biological",
+        "from": "FH-K176-P-01",
+        "to": "K176",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K176-P-02:FH-K176-P-01:biological",
+        "from": "FH-K176-P-02",
+        "to": "FH-K176-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K176-M-01:K176:biological",
+        "from": "FH-K176-M-01",
+        "to": "K176",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K176-M-02:FH-K176-M-01:biological",
+        "from": "FH-K176-M-02",
+        "to": "FH-K176-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-나탈리야-소콜로바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K176",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K176-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/856"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K176-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/858"
+          }
+        ]
+      },
+      {
+        "recipientId": "K173",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/146"
+          }
+        ]
+      },
+      {
+        "recipientId": "K198",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "서나연의 얼음 벽돌을 인계하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/147"
+          }
+        ]
+      },
+      {
+        "recipientId": "K184",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "나탈리야 소콜로바의 칸 봉쇄를 경매 자격 박탈로 집행하는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/163"
+          }
+        ]
+      },
+      {
+        "recipientId": "K201",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "나탈리야 소콜로바의 용산 칸 봉인과 인계 시각을 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/171"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K176",
     "personId": "person-0177",
@@ -83,7 +455,7 @@
     "size": 4,
     "current_location": "외곽 산지",
     "camp": {
-      "name": "주서람 산림 야영지",
+      "name": "나탈리야 소콜로바 산림 야영지",
       "type": "야영지",
       "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
       "facilities": [
@@ -96,9 +468,9 @@
     "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
   },
   "clan": {
-    "id": "c8fc-c2e0-c548",
-    "name": "신안 주씨",
-    "crest": "clan-crests/c8fc-c2e0-c548.svg"
+    "id": "DIV-K176",
+    "name": "용산·이태원 소콜로바씨",
+    "crest": "clan-crests/DIV-K176.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -133,29 +505,29 @@
     "욕망": "갈망 40 | 독점 15 | 위험 20 | 과시 15 | 지속 5 | 지향 유동 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 환적창고 물류상 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2126년 세대. 노량진 선창에서 자랐다. 환적창고 물류상 자리는 저울 재점검 공개로 열렸다. 나탈리야 소콜로바는 2066년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 환적창고 물류상 업무를 맡는다. 알렉세이 소콜로프는 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 나탈리야 소콜로바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 환적창고 물류상. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 환적창고 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "송이든의 환적 순서를 현장에서 집행하는 계약이고, 서나연의 얼음 벽돌을 인계하며, 신태산의 호송 도착 시각을 맞춘다.",
+    "관계": "루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고, 서나연의 얼음 벽돌을 인계하며, 신태산의 호송 도착 시각을 맞춘다.",
     "야망": "냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 현장화한다.",
     "공포": "전력 없는 밤에 냉동 화물이 녹아 중계 신용이 하루 만에 무너지는 것.",
     "개입": "얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다."
   },
-  "biography": "빈 상자를 가득 찬 것처럼 적는 사람을 원수로 보고, 온도가 흔들리면 표정이 굳는다. 창고 열쇠는 몸에서 떼지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 창고 온도·재고 확인과 손실 장부 공개\n- 직함: 환적창고 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 환적창고 물류상 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적창고 물류상. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 환적창고 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 송이든의 환적 순서를 현장에서 집행하는 계약이고, 서나연의 얼음 벽돌을 인계하며, 신태산의 호송 도착 시각을 맞춘다.\n\n**야망.** 냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 현장화한다.\n\n**공포.** 전력 없는 밤에 냉동 화물이 녹아 중계 신용이 하루 만에 무너지는 것.\n\n**개입.** 얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 20 | 무력 −5 | 물질 45 | 공동 −15 | 원칙 −15 | 공개 −15 | 자격 20 | 분산 −10 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 20 | 과시 15 | 지속 5 | 지향 유동 | 결합 다자\n:::",
+  "biography": "빈 상자를 가득 찬 것처럼 적는 사람을 원수로 보고, 온도가 흔들리면 표정이 굳는다. 창고 열쇠는 몸에서 떼지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 창고 온도·재고 확인과 손실 장부 공개\n- 직함: 환적창고 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 환적창고 물류상 자리는 저울 재점검 공개로 열렸다. 나탈리야 소콜로바는 2066년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 환적창고 물류상 업무를 맡는다. 알렉세이 소콜로프는 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 나탈리야 소콜로바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적창고 물류상. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 환적창고 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고, 서나연의 얼음 벽돌을 인계하며, 신태산의 호송 도착 시각을 맞춘다.\n\n**야망.** 냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 현장화한다.\n\n**공포.** 전력 없는 밤에 냉동 화물이 녹아 중계 신용이 하루 만에 무너지는 것.\n\n**개입.** 얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 20 | 무력 −5 | 물질 45 | 공동 −15 | 원칙 −15 | 공개 −15 | 자격 20 | 분산 −10 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 20 | 과시 15 | 지속 5 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "주서람",
+        "from": "나탈리야 소콜로바",
         "type": "지휘",
-        "to": "송이든",
-        "basis": "송이든의 환적 순서를 현장에서 집행하는 계약이고"
+        "to": "루카스 슈나이더",
+        "basis": "루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고"
       },
       {
-        "from": "주서람",
+        "from": "나탈리야 소콜로바",
         "type": "계약",
         "to": "서나연",
         "basis": "서나연의 얼음 벽돌을 인계하며"
@@ -163,16 +535,16 @@
     ],
     "incoming": [
       {
-        "from": "주하음",
+        "from": "헬레나 비슈니에프스카",
         "type": "지휘",
-        "to": "주서람",
-        "basis": "주서람의 칸 봉쇄를 경매 자격 박탈로 집행하는 계약이고"
+        "to": "나탈리야 소콜로바",
+        "basis": "나탈리야 소콜로바의 칸 봉쇄를 경매 자격 박탈로 집행하는 계약이고"
       },
       {
         "from": "마솔",
         "type": "계약",
-        "to": "주서람",
-        "basis": "주서람의 용산 칸 봉인과 인계 시각을 맞춘다"
+        "to": "나탈리야 소콜로바",
+        "basis": "나탈리야 소콜로바의 용산 칸 봉인과 인계 시각을 맞춘다"
       }
     ]
   }

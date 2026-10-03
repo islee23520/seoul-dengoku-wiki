@@ -12,6 +12,399 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-전나경",
   "detailRoute": "/people/person-0377",
+  "birthDate": "2075-07-04",
+  "birthday": "07-04",
+  "age": 51,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/82",
+    "lore/characters/Cast-State-15.json#/content/83",
+    "lore/characters/Cast-State-15.json#/content/84",
+    "lore/characters/Cast-State-15.json#/content/85"
+  ],
+  "familyTree": {
+    "personId": "K376",
+    "nodes": [
+      {
+        "id": "K376",
+        "personId": "K376",
+        "kind": "person",
+        "name": "전나경",
+        "birthDate": "2075-07-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K376"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 명동역 구휼 부제 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-전나경-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0377"
+      },
+      {
+        "id": "FH-K376-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "전승진",
+        "birthDate": "2045-07-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2083,
+            "summary": "전승진은 영등포 정수 당직에서 구휼 물자 배분·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-전나경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K376-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "전승현",
+        "birthDate": "2015-07-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "전승현은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-전나경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K376-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준완",
+        "birthDate": "2045-07-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2083,
+            "summary": "윤준완은 영등포 정수 당직에서 구휼 물자 배분·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-전나경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K376-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준은",
+        "birthDate": "2015-07-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한준은은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-전나경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K376-P-01:K376:biological",
+        "from": "FH-K376-P-01",
+        "to": "K376",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K376-P-02:FH-K376-P-01:biological",
+        "from": "FH-K376-P-02",
+        "to": "FH-K376-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K376-M-01:K376:biological",
+        "from": "FH-K376-M-01",
+        "to": "K376",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K376-M-02:FH-K376-M-01:biological",
+        "from": "FH-K376-M-02",
+        "to": "FH-K376-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-전나경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K376",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K376-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1830"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K376-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1832"
+          }
+        ]
+      },
+      {
+        "recipientId": "K144",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "배급 원장 사본을 기록청에 넘김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/101"
+          }
+        ]
+      },
+      {
+        "recipientId": "K662",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "진금린은 먼저 배분한 곡물과 손실 내역을 전나경에게 넘긴다. 전나경은 구휼 물자 배분을 확인해 남은 재고와 이미 가족에게 건넨 몫을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/415"
+          }
+        ]
+      },
+      {
+        "recipientId": "K710",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장하원은 먼저 배분한 구휼 곡물과 손실을 전나경에게 인계한다. 전나경은 가족에게 전달된 몫과 남은 재고를 확인해 같은 물자가 다시 배분 약속에 잡히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/457"
+          }
+        ]
+      },
+      {
+        "recipientId": "K902",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "윤남우는 공개 배급표와 구휼 인수 기록을 전나경에게 넘긴다. 전나경은 이미 가족에게 건넨 몫과 남은 재고를 확인해 같은 물자를 다시 약속하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/626"
+          }
+        ]
+      },
+      {
+        "recipientId": "K381",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "전나경의 비상 배급줄과 침상을 나누고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/340"
+          }
+        ]
+      },
+      {
+        "recipientId": "K387",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "전나경의 지휘로 광장 줄을 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/352"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K376",
     "personId": "person-0377",
@@ -168,6 +561,24 @@
       }
     ],
     "incoming": [
+      {
+        "from": "진금린",
+        "type": "계약",
+        "to": "전나경",
+        "basis": "진금린은 먼저 배분한 곡물과 손실 내역을 전나경에게 넘긴다. 전나경은 구휼 물자 배분을 확인해 남은 재고와 이미 가족에게 건넨 몫을 구분한다."
+      },
+      {
+        "from": "장하원",
+        "type": "계약",
+        "to": "전나경",
+        "basis": "장하원은 먼저 배분한 구휼 곡물과 손실을 전나경에게 인계한다. 전나경은 가족에게 전달된 몫과 남은 재고를 확인해 같은 물자가 다시 배분 약속에 잡히지 않게 한다."
+      },
+      {
+        "from": "윤남우",
+        "type": "계약",
+        "to": "전나경",
+        "basis": "윤남우는 공개 배급표와 구휼 인수 기록을 전나경에게 넘긴다. 전나경은 이미 가족에게 건넨 몫과 남은 재고를 확인해 같은 물자를 다시 약속하지 않는다."
+      },
       {
         "from": "방늘재",
         "type": "계약",

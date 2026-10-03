@@ -1,6 +1,6 @@
 {
   "id": "person-0186",
-  "name": "차라온",
+  "name": "노아 데이비스",
   "title": "용산창 이동의무차 반장",
   "position": "용산창 이동의무차 반장",
   "rank": "주사",
@@ -10,8 +10,513 @@
   "stage": "S2",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-차라온",
+  "sourceRoute": "/world/Cast-State-07#인물-노아 데이비스",
   "detailRoute": "/people/person-0186",
+  "birthDate": "2092-02-04",
+  "birthday": "02-04",
+  "age": 34,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/171",
+    "lore/characters/Cast-State-07.json#/content/173",
+    "lore/characters/Cast-State-07.json#/content/175"
+  ],
+  "familyTree": {
+    "personId": "K185",
+    "nodes": [
+      {
+        "id": "K185",
+        "personId": "K185",
+        "kind": "person",
+        "name": "노아 데이비스",
+        "birthDate": "2092-02-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K185"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-노아-데이비스-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Noah Davis",
+        "detailRoute": "/people/person-0186"
+      },
+      {
+        "id": "FH-K185-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "로버트 데이비스",
+        "birthDate": "2062-02-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "로버트 데이비스는 2062년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2080년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-노아-데이비스-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Robert Davis was born in 2062 and grew up reading family and work records. From 2080, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Robert Davis",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K185-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "제임스 데이비스",
+        "birthDate": "2032-02-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "제임스 데이비스는 2032년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2050년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-노아-데이비스-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "James Davis was born in 2032 and grew up reading family and work records. From 2050, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "James Davis",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K185-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "에드워드 데이비스",
+        "birthDate": "2002-02-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "에드워드 데이비스는 2026년 대정전 당시 용산·이태원 생활권에서 미 육군 보급 업무를 맡고 있었다. 연락이 끊긴 뒤 남은 물자와 인계받은 사람을 종이에 적었다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-노아-데이비스-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Edward Davis was in the family's local community when communications failed in 2026. Serving in US Army logistics, he recorded remaining supplies and their recipients."
+          }
+        ],
+        "nameEn": "Edward Davis",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K185-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조앤 테일러",
+        "birthDate": "2062-02-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "조앤 테일러는 2062년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2080년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-노아-데이비스-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Joan Taylor was born in 2062 and grew up reading family and work records. From 2080, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Joan Taylor",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K185-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "메이블 테일러",
+        "birthDate": "2032-02-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "메이블 테일러는 2032년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2050년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-노아-데이비스-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Mabel Taylor was born in 2032 and grew up reading family and work records. From 2050, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Mabel Taylor",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K185-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "마거릿 테일러",
+        "birthDate": "2002-02-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마거릿 테일러는 2026년 대정전 당시 용산·이태원 생활권에서 용산의 민간 창고 관리와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-노아-데이비스-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Margaret Taylor was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Margaret Taylor",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K185-P-01:K185:biological",
+        "from": "FH-K185-P-01",
+        "to": "K185",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K185-P-02:FH-K185-P-01:biological",
+        "from": "FH-K185-P-02",
+        "to": "FH-K185-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K185-P-03:FH-K185-P-02:biological",
+        "from": "FH-K185-P-03",
+        "to": "FH-K185-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K185-M-01:K185:biological",
+        "from": "FH-K185-M-01",
+        "to": "K185",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K185-M-02:FH-K185-M-01:biological",
+        "from": "FH-K185-M-02",
+        "to": "FH-K185-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K185-M-03:FH-K185-M-02:biological",
+        "from": "FH-K185-M-03",
+        "to": "FH-K185-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-노아-데이비스-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K185",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K185-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/896"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K185-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/899"
+          }
+        ]
+      },
+      {
+        "recipientId": "K510",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/720"
+          }
+        ]
+      },
+      {
+        "recipientId": "K622",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/727"
+          }
+        ]
+      },
+      {
+        "recipientId": "K702",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "오언 켈리는 제설한 환승 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상과 활력을 확인해 이동 기록에만 남은 환자가 실제 치료를 받게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/732"
+          }
+        ]
+      },
+      {
+        "recipientId": "K894",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "세바스티안 브라운은 통로에서 먼저 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 이동의무차에서 상태를 확인해 호송 지연이 동상 치료의 누락으로 이어지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/744"
+          }
+        ]
+      },
+      {
+        "recipientId": "K296",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "outgoing",
+        "role": "장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/164"
+          }
+        ]
+      },
+      {
+        "recipientId": "K177",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/165"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K185",
     "personId": "person-0186",
@@ -91,9 +596,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "cc28-c5f0-c548",
-    "name": "연안 차씨",
-    "crest": "clan-crests/cc28-c5f0-c548.svg"
+    "id": "DIV-K185",
+    "name": "용산·이태원 데이비스씨",
+    "crest": "clan-crests/DIV-K185.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -128,34 +633,59 @@
     "욕망": "갈망 30 | 독점 10 | 위험 35 | 과시 −15 | 지속 15 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다. 노아 데이비스는 2092년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 이동의무차 반장 업무를 맡는다. 에드워드 데이비스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 노아 데이비스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
-    "관직": "품계 주사. 직함은 용산창 이동의무차 반장. 숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 황지호의 정비 일지 연서로 숙소 옆 진료를 연다.",
+    "관직": "품계 주사. 직함은 용산창 이동의무차 반장. 숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 이동의무차 반장 자리의 서명이 장부에 올랐다.",
-    "관계": "차호민의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.",
+    "관계": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.",
     "야망": "배급이 끊긴 도제 숙소에도 이동 의무차가 들어가게 해 양자 승계의 의료 최저선을 후국회에 못 박는다.",
     "공포": "억류 열차 부상자가 난민 명부로만 남아 창동으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
     "개입": "시약 상자를 호송해 숙소 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다."
   },
-  "biography": "도제 숙소 난로가 꺼지면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 가문 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 이동의무차 화상·동상 진료 운영\n- 직함: 용산창 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 용산창 이동의무차 반장. 숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 황지호의 정비 일지 연서로 숙소 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 차호민의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.\n\n**야망.** 배급이 끊긴 도제 숙소에도 이동 의무차가 들어가게 해 양자 승계의 의료 최저선을 후국회에 못 박는다.\n\n**공포.** 억류 열차 부상자가 난민 명부로만 남아 창동으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 숙소 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 25 | 무력 −30 | 물질 20 | 공동 −10 | 원칙 15 | 공개 −20 | 자격 40 | 분산 0 | 변혁 −10\n- 욕망: 갈망 30 | 독점 10 | 위험 35 | 과시 −15 | 지속 15 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "도제 숙소 난로가 꺼지면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 가문 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 이동의무차 화상·동상 진료 운영\n- 직함: 용산창 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다. 노아 데이비스는 2092년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 이동의무차 반장 업무를 맡는다. 에드워드 데이비스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 노아 데이비스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 용산창 이동의무차 반장. 숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.\n\n**야망.** 배급이 끊긴 도제 숙소에도 이동 의무차가 들어가게 해 양자 승계의 의료 최저선을 후국회에 못 박는다.\n\n**공포.** 억류 열차 부상자가 난민 명부로만 남아 창동으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 숙소 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 25 | 무력 −30 | 물질 20 | 공동 −10 | 원칙 15 | 공개 −20 | 자격 40 | 분산 0 | 변혁 −10\n- 욕망: 갈망 30 | 독점 10 | 위험 35 | 과시 −15 | 지속 15 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "차라온",
+        "from": "노아 데이비스",
         "type": "빚",
         "to": "장세화",
         "basis": "장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며"
       },
       {
-        "from": "차라온",
+        "from": "노아 데이비스",
         "type": "계약",
-        "to": "차호민",
-        "basis": "차호민의 창 진료가 봉쇄되면 환자를 숙소로 받고"
+        "to": "가브리엘 존슨",
+        "basis": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "키아라 리치",
+        "type": "계약",
+        "to": "노아 데이비스",
+        "basis": "키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다."
+      },
+      {
+        "from": "미하이 이오네스쿠",
+        "type": "계약",
+        "to": "노아 데이비스",
+        "basis": "미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다."
+      },
+      {
+        "from": "오언 켈리",
+        "type": "계약",
+        "to": "노아 데이비스",
+        "basis": "오언 켈리는 제설한 환승 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상과 활력을 확인해 이동 기록에만 남은 환자가 실제 치료를 받게 한다."
+      },
+      {
+        "from": "세바스티안 브라운",
+        "type": "계약",
+        "to": "노아 데이비스",
+        "basis": "세바스티안 브라운은 통로에서 먼저 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 이동의무차에서 상태를 확인해 호송 지연이 동상 치료의 누락으로 이어지지 않게 한다."
+      }
+    ]
   }
 }

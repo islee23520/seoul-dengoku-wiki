@@ -12,6 +12,411 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-조은우",
   "detailRoute": "/people/person-0225",
+  "birthDate": "2084-08-06",
+  "birthday": "08-06",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/50",
+    "lore/characters/Cast-State-09.json#/content/52"
+  ],
+  "familyTree": {
+    "personId": "K224",
+    "nodes": [
+      {
+        "id": "K224",
+        "personId": "K224",
+        "kind": "person",
+        "name": "조은우",
+        "birthDate": "2084-08-06",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K224"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 추적조 반장 자리는 정전 사흘 금고 유지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조은우-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0225"
+      },
+      {
+        "id": "FH-K224-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현정",
+        "birthDate": "2054-08-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "조현정은 여의도 금고 당직에서 위조 화폐 추적 로그·금고 접근 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조은우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K224-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현아",
+        "birthDate": "2024-08-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조현아는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조은우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K224-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현희",
+        "birthDate": "2054-08-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "오현희는 여의도 금고 당직에서 위조 화폐 추적 로그·금고 접근 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조은우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K224-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현연",
+        "birthDate": "2024-08-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송현연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조은우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K224-P-01:K224:biological",
+        "from": "FH-K224-P-01",
+        "to": "K224",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K224-P-02:FH-K224-P-01:biological",
+        "from": "FH-K224-P-02",
+        "to": "FH-K224-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K224-M-01:K224:biological",
+        "from": "FH-K224-M-01",
+        "to": "K224",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K224-M-02:FH-K224-M-01:biological",
+        "from": "FH-K224-M-02",
+        "to": "FH-K224-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조은우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K224",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K224-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1084"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K224-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1086"
+          }
+        ]
+      },
+      {
+        "recipientId": "K220",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "송신탑을 전파추적조가 지킴",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/73"
+          }
+        ]
+      },
+      {
+        "recipientId": "K115",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "outgoing",
+        "role": "재밍 의혹을 추적",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/174"
+          }
+        ]
+      },
+      {
+        "recipientId": "K172",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "열차 무전을 재밍 증거로 삼음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/175"
+          }
+        ]
+      },
+      {
+        "recipientId": "K688",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백남석은 거둔 위조 화폐와 금고 당직 인수 기록을 조은우에게 넘긴다. 조은우는 추적 로그와 접근 기록을 확인해 위조 화폐가 어느 교대 사이에 들어왔는지 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/437"
+          }
+        ]
+      },
+      {
+        "recipientId": "K976",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "조돌준은 거둔 위조 화폐와 금고 인수 기록을 조은우에게 넘긴다. 조은우는 추적 로그·접근 기록을 확인해 어느 교대 사이에 위조 화폐가 들어왔는지 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/690"
+          }
+        ]
+      },
+      {
+        "recipientId": "K228",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "조은우의 지휘로 탑을 돌고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/198"
+          }
+        ]
+      },
+      {
+        "recipientId": "K242",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "조은우의 전파추적에 원점 쪽지를 넘기고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/118"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K224",
     "personId": "person-0225",
@@ -143,12 +548,12 @@
     "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 위조 화폐 추적조 반장. 추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다.",
     "일화": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 위조 화폐 추적조 반장 자리의 서명이 장부에 올랐다.",
-    "관계": "권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 황지호가 가져온 열차 장부를 증거로 삼는다.",
+    "관계": "권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 아이작 워커가 가져온 열차 장부를 증거로 삼는다.",
     "야망": "위조 화폐와 군사 압류를 같은 죄로 기록해 공용 화폐의 신용을 금고 주권으로 남긴다.",
     "공포": "추적조가 검열 기관으로 변해 최지우의 공용 화폐를 내부에서 멈추는 것.",
     "개입": "위조 화폐의 원점을 함께 찾거나, 추적조의 과잉 봉쇄를 출자 평의회에 고발할 수 있다."
   },
-  "biography": "직선적이고 소문에 빠르다. 위조 화폐의 출처를 찾으면 도구보다 사람을 먼저 봉쇄한다.\n\n- 생업: 위조 화폐 추적 로그·금고 접근 확인\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 위조 화폐 추적조 반장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 추적조 반장 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 위조 화폐 추적조 반장. 추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다.\n\n**일화.** 2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 위조 화폐 추적조 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 황지호가 가져온 열차 장부를 증거로 삼는다.\n\n**야망.** 위조 화폐와 군사 압류를 같은 죄로 기록해 공용 화폐의 신용을 금고 주권으로 남긴다.\n\n**공포.** 추적조가 검열 기관으로 변해 최지우의 공용 화폐를 내부에서 멈추는 것.\n\n**개입.** 위조 화폐의 원점을 함께 찾거나, 추적조의 과잉 봉쇄를 출자 평의회에 고발할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 −25 | 물질 −5 | 공동 5 | 원칙 30 | 공개 55 | 자격 5 | 분산 25 | 변혁 −10\n- 욕망: 갈망 50 | 독점 −25 | 위험 −10 | 과시 −25 | 지속 −10 | 지향 무성향 | 결합 계약동거",
+  "biography": "직선적이고 소문에 빠르다. 위조 화폐의 출처를 찾으면 도구보다 사람을 먼저 봉쇄한다.\n\n- 생업: 위조 화폐 추적 로그·금고 접근 확인\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 위조 화폐 추적조 반장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 추적조 반장 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 위조 화폐 추적조 반장. 추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다.\n\n**일화.** 2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 위조 화폐 추적조 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 아이작 워커가 가져온 열차 장부를 증거로 삼는다.\n\n**야망.** 위조 화폐와 군사 압류를 같은 죄로 기록해 공용 화폐의 신용을 금고 주권으로 남긴다.\n\n**공포.** 추적조가 검열 기관으로 변해 최지우의 공용 화폐를 내부에서 멈추는 것.\n\n**개입.** 위조 화폐의 원점을 함께 찾거나, 추적조의 과잉 봉쇄를 출자 평의회에 고발할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 −25 | 물질 −5 | 공동 5 | 원칙 30 | 공개 55 | 자격 5 | 분산 25 | 변혁 −10\n- 욕망: 갈망 50 | 독점 −25 | 위험 −10 | 과시 −25 | 지속 −10 | 지향 무성향 | 결합 계약동거",
   "sources": [
     "Cast-State-09"
   ],
@@ -169,11 +574,23 @@
       {
         "from": "조은우",
         "type": "계약",
-        "to": "황지호",
+        "to": "아이작 워커",
         "basis": "열차 무전을 재밍 증거로 삼음"
       }
     ],
     "incoming": [
+      {
+        "from": "백남석",
+        "type": "계약",
+        "to": "조은우",
+        "basis": "백남석은 거둔 위조 화폐와 금고 당직 인수 기록을 조은우에게 넘긴다. 조은우는 추적 로그와 접근 기록을 확인해 위조 화폐가 어느 교대 사이에 들어왔는지 찾는다."
+      },
+      {
+        "from": "조돌준",
+        "type": "계약",
+        "to": "조은우",
+        "basis": "조돌준은 거둔 위조 화폐와 금고 인수 기록을 조은우에게 넘긴다. 조은우는 추적 로그·접근 기록을 확인해 어느 교대 사이에 위조 화폐가 들어왔는지 찾는다."
+      },
       {
         "from": "용복",
         "type": "지휘",

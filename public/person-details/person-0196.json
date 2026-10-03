@@ -12,6 +12,553 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-조민재",
   "detailRoute": "/people/person-0196",
+  "birthDate": "2100-02-02",
+  "birthday": "02-02",
+  "age": 26,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/50",
+    "lore/characters/Cast-State-08.json#/content/56"
+  ],
+  "familyTree": {
+    "personId": "K195",
+    "nodes": [
+      {
+        "id": "K195",
+        "personId": "K195",
+        "kind": "person",
+        "name": "조민재",
+        "birthDate": "2100-02-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K195"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 냉동 상인 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-조민재-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0196"
+      },
+      {
+        "id": "FH-K195-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현현",
+        "birthDate": "2070-02-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2108,
+            "summary": "조현현은 노량진 선창에서 냉동 재고 온도·중량 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-조민재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K195-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현영",
+        "birthDate": "2040-02-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "조현영은 노량진 선창에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-조민재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K195-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현윤",
+        "birthDate": "2010-02-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조현윤은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-조민재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K195-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현아",
+        "birthDate": "2070-02-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2108,
+            "summary": "정현아는 노량진 선창에서 냉동 재고 온도·중량 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-조민재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K195-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현영",
+        "birthDate": "2040-02-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "윤현영은 노량진 선창에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-조민재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K195-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현윤",
+        "birthDate": "2010-02-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한현윤은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-조민재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K195-P-01:K195:biological",
+        "from": "FH-K195-P-01",
+        "to": "K195",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K195-P-02:FH-K195-P-01:biological",
+        "from": "FH-K195-P-02",
+        "to": "FH-K195-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K195-P-03:FH-K195-P-02:biological",
+        "from": "FH-K195-P-03",
+        "to": "FH-K195-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K195-M-01:K195:biological",
+        "from": "FH-K195-M-01",
+        "to": "K195",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K195-M-02:FH-K195-M-01:biological",
+        "from": "FH-K195-M-02",
+        "to": "FH-K195-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K195-M-03:FH-K195-M-02:biological",
+        "from": "FH-K195-M-03",
+        "to": "FH-K195-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-조민재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K195",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K195-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/942"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K195-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/945"
+          }
+        ]
+      },
+      {
+        "recipientId": "K194",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "전력·물 계약을 냉동 실무로 돌림",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/64"
+          }
+        ]
+      },
+      {
+        "recipientId": "K173",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "냉동 화물을 용산 환적에 맡김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/159"
+          }
+        ]
+      },
+      {
+        "recipientId": "K373",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "outgoing",
+        "role": "시세 발표 시각을 가락과 다툼",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/160"
+          }
+        ]
+      },
+      {
+        "recipientId": "K575",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽파호는 상하기 시작한 곡물을 먼저 배분하고 손실을 조민재에게 알린다. 조민재는 재고 온도와 중량을 확인해 남은 재고를 공개하고, 이미 배분한 곡물이 경매 물량에 다시 잡히는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/338"
+          }
+        ]
+      },
+      {
+        "recipientId": "K703",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "이강민은 먼저 배분한 곡물과 손실을 조민재에게 알린다. 조민재는 온도와 중량으로 남은 재고를 확인해 이미 나눈 물자가 냉동 재고로 다시 계산되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/450"
+          }
+        ]
+      },
+      {
+        "recipientId": "K895",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "김바호는 공개 배급표와 재고 인수 기록을 조민재에게 넘긴다. 조민재는 온도·중량으로 남은 재고를 확인해 배급으로 나간 물자가 다시 창고 물량으로 계산되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/618"
+          }
+        ]
+      },
+      {
+        "recipientId": "K911",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "류금현은 먼저 배분한 곡물과 손실을 조민재에게 알린다. 조민재는 온도·중량으로 남은 재고를 확인해 이미 나눈 물자가 경매 재고에 다시 잡히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/633"
+          }
+        ]
+      },
+      {
+        "recipientId": "K959",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "심북현은 먼저 배분한 곡물과 손실을 조민재에게 알린다. 조민재는 온도·중량으로 잔량을 확인해 배분한 물자가 창고 재고에 다시 잡히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/675"
+          }
+        ]
+      },
+      {
+        "recipientId": "K201",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "조민재의 삼호 창고 온도 기록을 현장에서 집행하는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/170"
+          }
+        ]
+      },
+      {
+        "recipientId": "K208",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "조민재의 온도 공개에 전력을 대는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/184"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K195",
     "personId": "person-0196",
@@ -143,12 +690,12 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 냉동 상인. 재고 온도와 중량을 정오에 공개하고, 허위 재고가 나오면 해당 칸의 경매 자격을 박탈한다.",
     "일화": "정전으로 노량진 삼호 창고의 온도가 위험선까지 오르자 상인들이 재고를 밤사이에 옮기기 시작했다.",
-    "관계": "오해린의 지휘 아래 한재목과 전력·물 계약을 실무로 돌린다. 송이든에게 냉동 화물을 맡기고, 남윤경과 시세 발표 시각을 다툰다.",
+    "관계": "오해린의 지휘 아래 한재목과 전력·물 계약을 실무로 돌린다. 루카스 슈나이더에게 냉동 화물을 맡기고, 남윤경과 시세 발표 시각을 다툰다.",
     "야망": "얼음 벽돌과 단기 식량 재고를 오해린의 결제권 담보로 묶어 가락의 가격 주도권을 노량진이 가져온다.",
     "공포": "전력이 하루만 끊겨도 냉동창고의 신용이 녹아내리는 것.",
     "개입": "발전 부품을 구해 냉동을 살리거나, 녹은 재고를 가득 찬 것처럼 적은 장부를 폭로할 수 있다."
   },
-  "biography": "손실을 숨기는 동료를 참지 못하고, 숫자보다 냄새로 창고 상태를 먼저 읽는다. 흥정에서는 웃지만 온도계가 흔들리면 표정이 굳는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 냉동 재고 온도·중량 검사\n- 직함: 냉동 상인\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 냉동 상인 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 냉동 상인. 재고 온도와 중량을 정오에 공개하고, 허위 재고가 나오면 해당 칸의 경매 자격을 박탈한다.\n\n**일화.** 정전으로 노량진 삼호 창고의 온도가 위험선까지 오르자 상인들이 재고를 밤사이에 옮기기 시작했다.\n\n**관계.** 오해린의 지휘 아래 한재목과 전력·물 계약을 실무로 돌린다. 송이든에게 냉동 화물을 맡기고, 남윤경과 시세 발표 시각을 다툰다.\n\n**야망.** 얼음 벽돌과 단기 식량 재고를 오해린의 결제권 담보로 묶어 가락의 가격 주도권을 노량진이 가져온다.\n\n**공포.** 전력이 하루만 끊겨도 냉동창고의 신용이 녹아내리는 것.\n\n**개입.** 발전 부품을 구해 냉동을 살리거나, 녹은 재고를 가득 찬 것처럼 적은 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −10 | 물질 90 | 공동 −20 | 원칙 −30 | 공개 10 | 자격 10 | 분산 20 | 변혁 10\n- 욕망: 갈망 25 | 독점 −30 | 위험 −10 | 과시 30 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "손실을 숨기는 동료를 참지 못하고, 숫자보다 냄새로 창고 상태를 먼저 읽는다. 흥정에서는 웃지만 온도계가 흔들리면 표정이 굳는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 냉동 재고 온도·중량 검사\n- 직함: 냉동 상인\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 냉동 상인 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 냉동 상인. 재고 온도와 중량을 정오에 공개하고, 허위 재고가 나오면 해당 칸의 경매 자격을 박탈한다.\n\n**일화.** 정전으로 노량진 삼호 창고의 온도가 위험선까지 오르자 상인들이 재고를 밤사이에 옮기기 시작했다.\n\n**관계.** 오해린의 지휘 아래 한재목과 전력·물 계약을 실무로 돌린다. 루카스 슈나이더에게 냉동 화물을 맡기고, 남윤경과 시세 발표 시각을 다툰다.\n\n**야망.** 얼음 벽돌과 단기 식량 재고를 오해린의 결제권 담보로 묶어 가락의 가격 주도권을 노량진이 가져온다.\n\n**공포.** 전력이 하루만 끊겨도 냉동창고의 신용이 녹아내리는 것.\n\n**개입.** 발전 부품을 구해 냉동을 살리거나, 녹은 재고를 가득 찬 것처럼 적은 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −10 | 물질 90 | 공동 −20 | 원칙 −30 | 공개 10 | 자격 10 | 분산 20 | 변혁 10\n- 욕망: 갈망 25 | 독점 −30 | 위험 −10 | 과시 30 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-08"
   ],
@@ -163,7 +710,7 @@
       {
         "from": "조민재",
         "type": "계약",
-        "to": "송이든",
+        "to": "루카스 슈나이더",
         "basis": "냉동 화물을 용산 환적에 맡김"
       },
       {
@@ -174,6 +721,36 @@
       }
     ],
     "incoming": [
+      {
+        "from": "곽파호",
+        "type": "계약",
+        "to": "조민재",
+        "basis": "곽파호는 상하기 시작한 곡물을 먼저 배분하고 손실을 조민재에게 알린다. 조민재는 재고 온도와 중량을 확인해 남은 재고를 공개하고, 이미 배분한 곡물이 경매 물량에 다시 잡히는지 살핀다."
+      },
+      {
+        "from": "이강민",
+        "type": "계약",
+        "to": "조민재",
+        "basis": "이강민은 먼저 배분한 곡물과 손실을 조민재에게 알린다. 조민재는 온도와 중량으로 남은 재고를 확인해 이미 나눈 물자가 냉동 재고로 다시 계산되지 않게 한다."
+      },
+      {
+        "from": "김바호",
+        "type": "계약",
+        "to": "조민재",
+        "basis": "김바호는 공개 배급표와 재고 인수 기록을 조민재에게 넘긴다. 조민재는 온도·중량으로 남은 재고를 확인해 배급으로 나간 물자가 다시 창고 물량으로 계산되지 않게 한다."
+      },
+      {
+        "from": "류금현",
+        "type": "계약",
+        "to": "조민재",
+        "basis": "류금현은 먼저 배분한 곡물과 손실을 조민재에게 알린다. 조민재는 온도·중량으로 남은 재고를 확인해 이미 나눈 물자가 경매 재고에 다시 잡히지 않게 한다."
+      },
+      {
+        "from": "심북현",
+        "type": "계약",
+        "to": "조민재",
+        "basis": "심북현은 먼저 배분한 곡물과 손실을 조민재에게 알린다. 조민재는 온도·중량으로 잔량을 확인해 배분한 물자가 창고 재고에 다시 잡히지 않게 한다."
+      },
       {
         "from": "마솔",
         "type": "지휘",

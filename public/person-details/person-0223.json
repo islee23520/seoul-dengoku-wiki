@@ -12,6 +12,467 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-송재민",
   "detailRoute": "/people/person-0223",
+  "birthDate": "2082-10-09",
+  "birthday": "10-09",
+  "age": 44,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/28",
+    "lore/characters/Cast-State-09.json#/content/30"
+  ],
+  "familyTree": {
+    "personId": "K222",
+    "nodes": [
+      {
+        "id": "K222",
+        "personId": "K222",
+        "kind": "person",
+        "name": "송재민",
+        "birthDate": "2082-10-09",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K222"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 금고 키 기록원 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-송재민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0223"
+      },
+      {
+        "id": "FH-K222-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현수",
+        "birthDate": "2052-10-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "송현수는 서울역 등기소에서 금고 키 분할·보관 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-송재민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K222-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현은",
+        "birthDate": "2022-10-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송현은은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-송재민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K222-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현완",
+        "birthDate": "2052-10-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "강현완은 서울역 등기소에서 금고 키 분할·보관 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-송재민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K222-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현재",
+        "birthDate": "2022-10-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임현재는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-송재민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K222-P-01:K222:biological",
+        "from": "FH-K222-P-01",
+        "to": "K222",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K222-P-02:FH-K222-P-01:biological",
+        "from": "FH-K222-P-02",
+        "to": "FH-K222-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K222-M-01:K222:biological",
+        "from": "FH-K222-M-01",
+        "to": "K222",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K222-M-02:FH-K222-M-01:biological",
+        "from": "FH-K222-M-02",
+        "to": "FH-K222-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-송재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K222",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K222-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1076"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K222-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1078"
+          }
+        ]
+      },
+      {
+        "recipientId": "K219",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "암호 서비스를 의장 지휘로 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/71"
+          }
+        ]
+      },
+      {
+        "recipientId": "K146",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "incoming",
+        "role": "암호문 원본 보관 빚",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/146"
+          }
+        ]
+      },
+      {
+        "recipientId": "K057",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "공개 자료 중계를 지지",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/170"
+          }
+        ]
+      },
+      {
+        "recipientId": "K146",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "암호 원본 함을 문서고에 맡김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/171"
+          }
+        ]
+      },
+      {
+        "recipientId": "K448",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백현석은 금고 교대 때 빠진 기록을 발견하면 당직 두 명의 확인을 받아 송재민에게 인계한다. 송재민은 이를 키 분할·보관 기록에 남겨, 다음 당직이 누구에게 기록을 받았는지 확인하면서 각 키 조각의 보관자를 구분하게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/228"
+          }
+        ]
+      },
+      {
+        "recipientId": "K544",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "이바석은 얼어붙은 금고 문을 닦은 뒤 잠금 상태와 당직 인계 내용을 송재민에게 알린다. 송재민은 키 조각별 보관 기록을 확인해 기계 결빙과 열쇠 인수의 공백을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/311"
+          }
+        ]
+      },
+      {
+        "recipientId": "K736",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "주하인은 금고 당직의 이중 확인 기록을 송재민에게 넘긴다. 송재민은 키 조각별 보관 기록과 인수 시각을 확인해 빈 교대가 어느 기록 전달에서 생겼는지 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/479"
+          }
+        ]
+      },
+      {
+        "recipientId": "K928",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "우다민은 이중 확인한 금고 당직 기록을 송재민에게 넘긴다. 송재민은 키 조각별 보관과 인수 시각을 확인해 빈 교대가 생긴 기록 전달을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/648"
+          }
+        ]
+      },
+      {
+        "recipientId": "K233",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "송재민의 암호 함을 보관하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/208"
+          }
+        ]
+      },
+      {
+        "recipientId": "K236",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "송재민의 지휘로 부스를 돌리고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/214"
+          }
+        ]
+      },
+      {
+        "recipientId": "K238",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "송재민의 암호 함을 전령로로 옮기고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/110"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K222",
     "personId": "person-0223",
@@ -173,6 +634,30 @@
         "type": "빚",
         "to": "송재민",
         "basis": "암호문 원본 보관 빚"
+      },
+      {
+        "from": "백현석",
+        "type": "계약",
+        "to": "송재민",
+        "basis": "백현석은 금고 교대 때 빠진 기록을 발견하면 당직 두 명의 확인을 받아 송재민에게 인계한다. 송재민은 이를 키 분할·보관 기록에 남겨, 다음 당직이 누구에게 기록을 받았는지 확인하면서 각 키 조각의 보관자를 구분하게 한다."
+      },
+      {
+        "from": "이바석",
+        "type": "계약",
+        "to": "송재민",
+        "basis": "이바석은 얼어붙은 금고 문을 닦은 뒤 잠금 상태와 당직 인계 내용을 송재민에게 알린다. 송재민은 키 조각별 보관 기록을 확인해 기계 결빙과 열쇠 인수의 공백을 구분한다."
+      },
+      {
+        "from": "주하인",
+        "type": "계약",
+        "to": "송재민",
+        "basis": "주하인은 금고 당직의 이중 확인 기록을 송재민에게 넘긴다. 송재민은 키 조각별 보관 기록과 인수 시각을 확인해 빈 교대가 어느 기록 전달에서 생겼는지 찾는다."
+      },
+      {
+        "from": "우다민",
+        "type": "계약",
+        "to": "송재민",
+        "basis": "우다민은 이중 확인한 금고 당직 기록을 송재민에게 넘긴다. 송재민은 키 조각별 보관과 인수 시각을 확인해 빈 교대가 생긴 기록 전달을 찾는다."
       },
       {
         "from": "두용",

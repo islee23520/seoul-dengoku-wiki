@@ -12,6 +12,328 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-고하호",
   "detailRoute": "/people/person-0563",
+  "birthDate": "2077-08-23",
+  "birthday": "08-23",
+  "age": 49,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/358",
+    "lore/characters/Cast-State-12.json#/content/360",
+    "lore/characters/Cast-State-12.json#/content/361"
+  ],
+  "familyTree": {
+    "personId": "K563",
+    "nodes": [
+      {
+        "id": "K563",
+        "personId": "K563",
+        "kind": "person",
+        "name": "고하호",
+        "birthDate": "2077-08-23",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K563"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-고하호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0563"
+      },
+      {
+        "id": "FH-K563-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "고승혁",
+        "birthDate": "2047-08-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "고승혁은 신내 환승 당직에서 배차 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-고하호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K563-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "고승문",
+        "birthDate": "2017-08-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "고승문은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-고하호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K563-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김태성",
+        "birthDate": "2047-08-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "김태성은 신내 환승 당직에서 배차 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-고하호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K563-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박태솔",
+        "birthDate": "2017-08-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박태솔은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-고하호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K563-P-01:K563:biological",
+        "from": "FH-K563-P-01",
+        "to": "K563",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K563-P-02:FH-K563-P-01:biological",
+        "from": "FH-K563-P-02",
+        "to": "FH-K563-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K563-M-01:K563:biological",
+        "from": "FH-K563-M-01",
+        "to": "K563",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K563-M-02:FH-K563-M-01:biological",
+        "from": "FH-K563-M-02",
+        "to": "FH-K563-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-고하호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K563",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K563-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2721"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K563-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2723"
+          }
+        ]
+      },
+      {
+        "recipientId": "K310",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "고하호는 습격에서 지킨 인명 장부와 배차 전갈을 국소에게 전달한다. 국소는 당직 명과 출고 시각을 확인해 도착하지 않은 전령과 비어 버린 기지 당직을 다음 교대에 알린다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/328"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K563",
     "personId": "person-0563",
@@ -138,17 +460,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 배차 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 배차 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 고하호는 습격에서 지킨 인명 장부와 배차 전갈을 국소에게 전달한다. 국소는 당직 명과 출고 시각을 확인해 도착하지 않은 전령과 비어 버린 기지 당직을 다음 교대에 알린다.",
     "야망": "배차 전령 자리에서 신내운수의 장부를 끊기지 않게 잇는다.",
     "공포": "배차 전령 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 배차 전령 기록·당직 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 배차 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 배차 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 배차 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 배차 전령 자리에서 신내운수의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 전령 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 55 | 무력 −25 | 물질 5 | 공동 25 | 원칙 20 | 공개 40 | 자격 25 | 분산 45 | 변혁 5\n- 욕망: 갈망 30 | 독점 10 | 위험 15 | 과시 5 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 배차 전령 기록·당직 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 배차 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 배차 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 배차 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 고하호는 습격에서 지킨 인명 장부와 배차 전갈을 국소에게 전달한다. 국소는 당직 명과 출고 시각을 확인해 도착하지 않은 전령과 비어 버린 기지 당직을 다음 교대에 알린다.\n\n**야망.** 배차 전령 자리에서 신내운수의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 전령 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 55 | 무력 −25 | 물질 5 | 공동 25 | 원칙 20 | 공개 40 | 자격 25 | 분산 45 | 변혁 5\n- 욕망: 갈망 30 | 독점 10 | 위험 15 | 과시 5 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-12"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "고하호",
+        "type": "계약",
+        "to": "국소",
+        "basis": "고하호는 습격에서 지킨 인명 장부와 배차 전갈을 국소에게 전달한다. 국소는 당직 명과 출고 시각을 확인해 도착하지 않은 전령과 비어 버린 기지 당직을 다음 교대에 알린다."
+      }
+    ],
     "incoming": []
   }
 }

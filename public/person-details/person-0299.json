@@ -12,6 +12,495 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-전미리",
   "detailRoute": "/people/person-0299",
+  "birthDate": "2080-03-07",
+  "birthday": "03-07",
+  "age": 46,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/61",
+    "lore/characters/Cast-State-12.json#/content/63"
+  ],
+  "familyTree": {
+    "personId": "K298",
+    "nodes": [
+      {
+        "id": "K298",
+        "personId": "K298",
+        "kind": "person",
+        "name": "전미리",
+        "birthDate": "2080-03-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K298"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 의료 조원 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-전미리-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0299"
+      },
+      {
+        "id": "FH-K298-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "전승석",
+        "birthDate": "2050-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2088,
+            "summary": "전승석은 제기동 의무소에서 환자 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-전미리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K298-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "전승준",
+        "birthDate": "2020-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "전승준은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-전미리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K298-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현솔",
+        "birthDate": "2050-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2088,
+            "summary": "조현솔은 제기동 의무소에서 환자 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-전미리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K298-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김현도",
+        "birthDate": "2020-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김현도는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-전미리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K298-P-01:K298:biological",
+        "from": "FH-K298-P-01",
+        "to": "K298",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K298-P-02:FH-K298-P-01:biological",
+        "from": "FH-K298-P-02",
+        "to": "FH-K298-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K298-M-01:K298:biological",
+        "from": "FH-K298-M-01",
+        "to": "K298",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K298-M-02:FH-K298-M-01:biological",
+        "from": "FH-K298-M-02",
+        "to": "FH-K298-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-전미리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K298",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K298-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1446"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K298-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1448"
+          }
+        ]
+      },
+      {
+        "recipientId": "K296",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "의료동맹을 현장에서 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/85"
+          }
+        ]
+      },
+      {
+        "recipientId": "K451",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남시은은 의무호송의 환자 기록을 전미리에게 인계한다. 전미리는 중증도와 이송 시각을 당직실에 붙이고, 환자의 활력이 안정되기 전에는 빈 배차 칸을 요구하는 쪽보다 들것 순서를 먼저 지켜 환자 인계가 배차에 밀리지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/231"
+          }
+        ]
+      },
+      {
+        "recipientId": "K499",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "우하진은 계절 배차표에서 일반 열차 칸으로 밀려난 의무호송 편을 따로 적어 전미리에게 전한다. 전미리는 환자 중증도와 이송 시각을 확인하고 의료조 당직실에 반영해, 배차표가 바뀌었다고 들것 순서가 지워지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/272"
+          }
+        ]
+      },
+      {
+        "recipientId": "K547",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "정다은은 두 배차표에서 엇갈린 의무호송 편을 실제 호송원 서명으로 가려 전미리에게 넘긴다. 전미리는 환자 중증도와 이송 시각을 확인해, 떠나지 않은 편이 도착할 환자를 인계한 것으로 처리되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/314"
+          }
+        ]
+      },
+      {
+        "recipientId": "K691",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남름은은 출발 직전 다시 센 의료열차 환자 명단을 전미리에게 넘긴다. 전미리는 중증도와 이송 시각을 확인해 일반 환승객과 실제 의료칸 환자를 구분하며 들것 순서를 잇는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/440"
+          }
+        ]
+      },
+      {
+        "recipientId": "K787",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장다원은 의무호송의 중복 지급 정정과 환자 인수 기록을 전미리에게 넘긴다. 전미리는 중증도·이송 시각을 확인해 같은 환자의 인계가 두 번 잡힌 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/524"
+          }
+        ]
+      },
+      {
+        "recipientId": "K931",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "진라린은 의무호송의 중복 지급 정정과 환자 인수 기록을 전미리에게 넘긴다. 전미리는 중증도·이송 시각을 확인해 같은 환자 인계가 두 번 잡힌 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/651"
+          }
+        ]
+      },
+      {
+        "recipientId": "K304",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "전미리의 지휘로 들것 순서를 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/268"
+          }
+        ]
+      },
+      {
+        "recipientId": "K306",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/272"
+          }
+        ]
+      },
+      {
+        "recipientId": "K309",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "전미리의 들것 순서를 승강장에서 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/278"
+          }
+        ]
+      },
+      {
+        "recipientId": "K313",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "전미리의 의료조 연장을 당직실에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/286"
+          }
+        ]
+      },
+      {
+        "recipientId": "K315",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "전미리의 환자 줄을 증인석에서 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/152"
+          }
+        ]
+      },
+      {
+        "recipientId": "K316",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "전미리의 중증도 표에 피해자 줄을 올리고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/154"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K298",
     "personId": "person-0299",
@@ -168,6 +657,42 @@
       }
     ],
     "incoming": [
+      {
+        "from": "남시은",
+        "type": "계약",
+        "to": "전미리",
+        "basis": "남시은은 의무호송의 환자 기록을 전미리에게 인계한다. 전미리는 중증도와 이송 시각을 당직실에 붙이고, 환자의 활력이 안정되기 전에는 빈 배차 칸을 요구하는 쪽보다 들것 순서를 먼저 지켜 환자 인계가 배차에 밀리지 않게 한다."
+      },
+      {
+        "from": "우하진",
+        "type": "계약",
+        "to": "전미리",
+        "basis": "우하진은 계절 배차표에서 일반 열차 칸으로 밀려난 의무호송 편을 따로 적어 전미리에게 전한다. 전미리는 환자 중증도와 이송 시각을 확인하고 의료조 당직실에 반영해, 배차표가 바뀌었다고 들것 순서가 지워지지 않게 한다."
+      },
+      {
+        "from": "정다은",
+        "type": "계약",
+        "to": "전미리",
+        "basis": "정다은은 두 배차표에서 엇갈린 의무호송 편을 실제 호송원 서명으로 가려 전미리에게 넘긴다. 전미리는 환자 중증도와 이송 시각을 확인해, 떠나지 않은 편이 도착할 환자를 인계한 것으로 처리되지 않게 한다."
+      },
+      {
+        "from": "남름은",
+        "type": "계약",
+        "to": "전미리",
+        "basis": "남름은은 출발 직전 다시 센 의료열차 환자 명단을 전미리에게 넘긴다. 전미리는 중증도와 이송 시각을 확인해 일반 환승객과 실제 의료칸 환자를 구분하며 들것 순서를 잇는다."
+      },
+      {
+        "from": "장다원",
+        "type": "계약",
+        "to": "전미리",
+        "basis": "장다원은 의무호송의 중복 지급 정정과 환자 인수 기록을 전미리에게 넘긴다. 전미리는 중증도·이송 시각을 확인해 같은 환자의 인계가 두 번 잡힌 곳을 찾는다."
+      },
+      {
+        "from": "진라린",
+        "type": "계약",
+        "to": "전미리",
+        "basis": "진라린은 의무호송의 중복 지급 정정과 환자 인수 기록을 전미리에게 넘긴다. 전미리는 중증도·이송 시각을 확인해 같은 환자 인계가 두 번 잡힌 곳을 찾는다."
+      },
       {
         "from": "국용",
         "type": "지휘",

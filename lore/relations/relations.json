@@ -20,7 +20,8 @@
     { "id": "court:K058", "ownerPersonId": "K058", "stateId": "S03" },
     { "id": "court:K060", "ownerPersonId": "K060", "stateId": "S03" },
     { "id": "court:K061", "ownerPersonId": "K061", "stateId": "S03" },
-    { "id": "court:K062", "ownerPersonId": "K062", "stateId": "S03" }
+    { "id": "court:K062", "ownerPersonId": "K062", "stateId": "S03" },
+    { "id": "court:K998", "ownerPersonId": "K998", "stateId": "S02" }
   ],
   "directRetainers": [
     { "personId": "K904", "liegePersonId": "K002", "courtId": "court:K002", "sourceRow": 380 },
@@ -68,7 +69,9 @@
     { "personId": "K071", "liegePersonId": "K060", "courtId": "court:K060", "sourceRow": 58 },
     { "personId": "K073", "liegePersonId": "K061", "courtId": "court:K061", "sourceRow": 62 },
     { "personId": "K074", "liegePersonId": "K062", "courtId": "court:K062", "sourceRow": 64 },
-    { "personId": "K075", "liegePersonId": "K061", "courtId": "court:K061", "sourceRow": 66 }
+    { "personId": "K075", "liegePersonId": "K061", "courtId": "court:K061", "sourceRow": 66 },
+    { "personId": "K425", "liegePersonId": "K998", "courtId": "court:K998", "sourceRow": 417 },
+    { "personId": "K441", "liegePersonId": "K998", "courtId": "court:K998", "sourceRow": 418 }
   ],
   "organizations": [
     {

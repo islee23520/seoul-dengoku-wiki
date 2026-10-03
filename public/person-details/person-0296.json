@@ -12,6 +12,340 @@
   "stateName": "성하그룹",
   "sourceRoute": "/world/Cast-State-11#인물-순하준",
   "detailRoute": "/people/person-0296",
+  "birthDate": "2064-03-06",
+  "birthday": "03-06",
+  "age": 62,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-11.json#/content/259"
+  ],
+  "familyTree": {
+    "personId": "K295",
+    "nodes": [
+      {
+        "id": "K295",
+        "personId": "K295",
+        "kind": "person",
+        "name": "순하준",
+        "birthDate": "2064-03-06",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K295"
+          },
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "** 2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-순하준-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0296"
+      },
+      {
+        "id": "FH-K295-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "순승윤",
+        "birthDate": "2034-03-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "순승윤은 영등포 정수 당직에서 차륜 입고 중량·출고 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-순하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K295-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "순승우",
+        "birthDate": "2004-03-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "순승우는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-순하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K295-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임준석",
+        "birthDate": "2034-03-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "임준석은 영등포 정수 당직에서 차륜 입고 중량·출고 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-순하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K295-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현솔",
+        "birthDate": "2004-03-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오현솔은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-순하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K295-P-01:K295:biological",
+        "from": "FH-K295-P-01",
+        "to": "K295",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K295-P-02:FH-K295-P-01:biological",
+        "from": "FH-K295-P-02",
+        "to": "FH-K295-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K295-M-01:K295:biological",
+        "from": "FH-K295-M-01",
+        "to": "K295",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K295-M-02:FH-K295-M-01:biological",
+        "from": "FH-K295-M-02",
+        "to": "FH-K295-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-순하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K295",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K295-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1432"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K295-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1434"
+          }
+        ]
+      },
+      {
+        "recipientId": "K276",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "황노을의 회수 저울에 협약 중량을 겹치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/148"
+          }
+        ]
+      },
+      {
+        "recipientId": "K190",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "필리프 뮐러의 용산 환적 증언과 같은 상자를 가리키며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/149"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K295",
     "personId": "person-0296",
@@ -144,12 +478,12 @@
     "무공": "한류공.",
     "관직": "품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.",
     "일화": "급수 계약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 성하전자 저울에 올리고 규격 도장을 확인했다.",
-    "관계": "황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
+    "관계": "황노을의 회수 저울에 협약 중량을 겹치고, 필리프 뮐러의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
     "야망": "급수 계약의 열차 부품 교환을 성하전자 표준 재고 원장에 남겨 바깥 작업장이 부품을 볼모로 후계를 흔들지 못하게 한다.",
     "공포": "보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.",
     "개입": "철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다."
   },
-  "biography": "무게를 속이는 출고를 선로를 깎는 일과 같다고 보고, 이씨 가문 전용 칸으로 빠지는 짐을 가혹하게 세운다. 시세보다 공개 저울을 믿는다.\n\n- 생업: 차륜 입고 중량·출고 증언\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 교환 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.\n\n**일화.** 급수 계약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 성하전자 저울에 올리고 규격 도장을 확인했다.\n\n**관계.** 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.\n\n**야망.** 급수 계약의 열차 부품 교환을 성하전자 표준 재고 원장에 남겨 바깥 작업장이 부품을 볼모로 후계를 흔들지 못하게 한다.\n\n**공포.** 보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.\n\n**개입.** 철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 −10 | 물질 35 | 공동 10 | 원칙 10 | 공개 −5 | 자격 55 | 분산 10 | 변혁 −20\n- 욕망: 갈망 −10 | 독점 10 | 위험 30 | 과시 20 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "무게를 속이는 출고를 선로를 깎는 일과 같다고 보고, 이씨 가문 전용 칸으로 빠지는 짐을 가혹하게 세운다. 시세보다 공개 저울을 믿는다.\n\n- 생업: 차륜 입고 중량·출고 증언\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 교환 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.\n\n**일화.** 급수 계약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 성하전자 저울에 올리고 규격 도장을 확인했다.\n\n**관계.** 황노을의 회수 저울에 협약 중량을 겹치고, 필리프 뮐러의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.\n\n**야망.** 급수 계약의 열차 부품 교환을 성하전자 표준 재고 원장에 남겨 바깥 작업장이 부품을 볼모로 후계를 흔들지 못하게 한다.\n\n**공포.** 보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.\n\n**개입.** 철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 −10 | 물질 35 | 공동 10 | 원칙 10 | 공개 −5 | 자격 55 | 분산 10 | 변혁 −20\n- 욕망: 갈망 −10 | 독점 10 | 위험 30 | 과시 20 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-11"
   ],
@@ -164,8 +498,8 @@
       {
         "from": "순하준",
         "type": "맹세",
-        "to": "추한결",
-        "basis": "추한결의 용산 환적 증언과 같은 상자를 가리키며"
+        "to": "필리프 뮐러",
+        "basis": "필리프 뮐러의 용산 환적 증언과 같은 상자를 가리키며"
       }
     ],
     "incoming": []

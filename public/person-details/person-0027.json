@@ -12,6 +12,369 @@
   "stateName": "수문국",
   "sourceRoute": "/world/Cast-State-01#인물-기바름",
   "detailRoute": "/people/person-0027",
+  "birthDate": "2071-11-28",
+  "birthday": "11-28",
+  "age": 55,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-01.json#/content/280",
+    "lore/characters/Cast-State-01.json#/content/282"
+  ],
+  "familyTree": {
+    "personId": "K027",
+    "nodes": [
+      {
+        "id": "K027",
+        "personId": "K027",
+        "kind": "person",
+        "name": "기바름",
+        "birthDate": "2071-11-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K027"
+          },
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 서부 비상 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-기바름-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0027"
+      },
+      {
+        "id": "FH-K027-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "기승석",
+        "birthDate": "2041-11-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "기승석은 신내 환승 당직에서 호송 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-기바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K027-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "기승준",
+        "birthDate": "2011-11-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "기승준은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-기바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K027-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승우",
+        "birthDate": "2041-11-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "정승우는 신내 환승 당직에서 호송 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-기바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K027-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승진",
+        "birthDate": "2011-11-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤승진은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-기바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K027-P-01:K027:biological",
+        "from": "FH-K027-P-01",
+        "to": "K027",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K027-P-02:FH-K027-P-01:biological",
+        "from": "FH-K027-P-02",
+        "to": "FH-K027-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K027-M-01:K027:biological",
+        "from": "FH-K027-M-01",
+        "to": "K027",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K027-M-02:FH-K027-M-01:biological",
+        "from": "FH-K027-M-02",
+        "to": "FH-K027-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-기바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K027",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K027-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/144"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K027-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/146"
+          }
+        ]
+      },
+      {
+        "recipientId": "K014",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "대니얼 브룩스의 헌장 전령로를 비상 호송에 빌리고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/10"
+          }
+        ]
+      },
+      {
+        "recipientId": "K005",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "최한결의 장갑 보수열차에 부품 칸을 붙이며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/11"
+          }
+        ]
+      },
+      {
+        "recipientId": "K056",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "서부 호송의 기바름과 부품 칸을 교환한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/27"
+          }
+        ]
+      },
+      {
+        "recipientId": "K139",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "서부 기바름의 비상 호송 봉인함과 무게를 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/63"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K027",
     "personId": "person-0027",
@@ -144,12 +507,12 @@
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 서부 비상 호송 전령. 호송 순번은 배급구역과 보수열차장이 함께 추첨하고, 암호패 없는 야간 추가는 수문에서 되돌린다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 서부 비상 호송 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "표시완의 헌장 전령로를 비상 호송에 빌리고, 최한결의 장갑 보수열차에 부품 칸을 붙이며, 둘째 협약 때 임하준의 보증 서명을 직접 날랐다.",
+    "관계": "대니얼 브룩스의 헌장 전령로를 비상 호송에 빌리고, 최한결의 장갑 보수열차에 부품 칸을 붙이며, 둘째 협약 때 임하준의 보증 서명을 직접 날랐다.",
     "야망": "물 공급 최저선이 깨질 때 부품과 급수통을 하루 안에 오가는 공개 호송망을 만들어, 비상 경로가 비밀 장교망에 넘어가지 않게 한다.",
     "공포": "호송 열차가 교량에서 멈추고, 그 공백을 동부 보호군이 구원으로 위장해 서부 수문을 통과하는 것.",
     "개입": "끊긴 교량 우회 경로를 열어 그의 호송을 끝내거나, 봉인함 바꿔치기를 적발해 전령 자격을 박탈할 수 있다."
   },
-  "biography": "야간 교량 바람보다 호송 봉인 끈의 풀림을 먼저 느끼고, 약속한 도착 시각을 정치 일정에 맞추라는 압박을 모욕으로 여긴다. 말은 짧고 경로 쪽지는 길다.\n\n- 소속: 수문국\n- 생업: 호송 전갈 전달\n- 품계: 주사\n- 직함: 서부 비상 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 서부 비상 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 서부 비상 호송 전령. 호송 순번은 배급구역과 보수열차장이 함께 추첨하고, 암호패 없는 야간 추가는 수문에서 되돌린다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 서부 비상 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 표시완의 헌장 전령로를 비상 호송에 빌리고, 최한결의 장갑 보수열차에 부품 칸을 붙이며, 둘째 협약 때 임하준의 보증 서명을 직접 날랐다.\n\n**야망.** 물 공급 최저선이 깨질 때 부품과 급수통을 하루 안에 오가는 공개 호송망을 만들어, 비상 경로가 비밀 장교망에 넘어가지 않게 한다.\n\n**공포.** 호송 열차가 교량에서 멈추고, 그 공백을 동부 보호군이 구원으로 위장해 서부 수문을 통과하는 것.\n\n**개입.** 끊긴 교량 우회 경로를 열어 그의 호송을 끝내거나, 봉인함 바꿔치기를 적발해 전령 자격을 박탈할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 5 | 무력 10 | 물질 35 | 공동 20 | 원칙 15 | 공개 30 | 자격 −5 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 0 | 독점 10 | 위험 10 | 과시 −30 | 지속 15 | 지향 양성 | 결합 다자\n:::",
+  "biography": "야간 교량 바람보다 호송 봉인 끈의 풀림을 먼저 느끼고, 약속한 도착 시각을 정치 일정에 맞추라는 압박을 모욕으로 여긴다. 말은 짧고 경로 쪽지는 길다.\n\n- 소속: 수문국\n- 생업: 호송 전갈 전달\n- 품계: 주사\n- 직함: 서부 비상 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 서부 비상 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 서부 비상 호송 전령. 호송 순번은 배급구역과 보수열차장이 함께 추첨하고, 암호패 없는 야간 추가는 수문에서 되돌린다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 서부 비상 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 대니얼 브룩스의 헌장 전령로를 비상 호송에 빌리고, 최한결의 장갑 보수열차에 부품 칸을 붙이며, 둘째 협약 때 임하준의 보증 서명을 직접 날랐다.\n\n**야망.** 물 공급 최저선이 깨질 때 부품과 급수통을 하루 안에 오가는 공개 호송망을 만들어, 비상 경로가 비밀 장교망에 넘어가지 않게 한다.\n\n**공포.** 호송 열차가 교량에서 멈추고, 그 공백을 동부 보호군이 구원으로 위장해 서부 수문을 통과하는 것.\n\n**개입.** 끊긴 교량 우회 경로를 열어 그의 호송을 끝내거나, 봉인함 바꿔치기를 적발해 전령 자격을 박탈할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 5 | 무력 10 | 물질 35 | 공동 20 | 원칙 15 | 공개 30 | 자격 −5 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 0 | 독점 10 | 위험 10 | 과시 −30 | 지속 15 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-01"
   ],
@@ -158,8 +521,8 @@
       {
         "from": "기바름",
         "type": "계약",
-        "to": "표시완",
-        "basis": "표시완의 헌장 전령로를 비상 호송에 빌리고"
+        "to": "대니얼 브룩스",
+        "basis": "대니얼 브룩스의 헌장 전령로를 비상 호송에 빌리고"
       },
       {
         "from": "기바름",

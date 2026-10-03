@@ -12,6 +12,328 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-박라윤",
   "detailRoute": "/people/person-0897",
+  "birthDate": "2070-10-26",
+  "birthday": "10-26",
+  "age": 56,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/589",
+    "lore/characters/Cast-State-10.json#/content/591",
+    "lore/characters/Cast-State-10.json#/content/592"
+  ],
+  "familyTree": {
+    "personId": "K897",
+    "nodes": [
+      {
+        "id": "K897",
+        "personId": "K897",
+        "kind": "person",
+        "name": "박라윤",
+        "birthDate": "2070-10-26",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K897"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박라윤-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0897"
+      },
+      {
+        "id": "FH-K897-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박민은",
+        "birthDate": "2040-10-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "박민은은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박라윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K897-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박민연",
+        "birthDate": "2010-10-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박민연은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박라윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K897-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송도솔",
+        "birthDate": "2040-10-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "송도솔은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박라윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K897-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조민민",
+        "birthDate": "2010-10-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조민민은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박라윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K897-P-01:K897:biological",
+        "from": "FH-K897-P-01",
+        "to": "K897",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K897-P-02:FH-K897-P-01:biological",
+        "from": "FH-K897-P-02",
+        "to": "FH-K897-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K897-M-01:K897:biological",
+        "from": "FH-K897-M-01",
+        "to": "K897",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K897-M-02:FH-K897-M-01:biological",
+        "from": "FH-K897-M-02",
+        "to": "FH-K897-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박라윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K897",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K897-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4323"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K897-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4325"
+          }
+        ]
+      },
+      {
+        "recipientId": "K252",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "박라윤은 짐의 출처·인수 기록을 모봉에게 넘긴다. 모봉은 가족 명부와 통행 표를 확인해 접수된 물자가 확인 안 된 운송 짐으로 섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/620"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K897",
     "personId": "person-0897",
@@ -132,17 +454,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 짐 장부 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.",
     "일화": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 짐 장부 행자 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 박라윤은 짐의 출처·인수 기록을 모봉에게 넘긴다. 모봉은 가족 명부와 통행 표를 확인해 접수된 물자가 확인 안 된 운송 짐으로 섞이지 않게 한다.",
     "야망": "짐 장부 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.",
     "공포": "짐 장부 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 짐 장부·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 짐 장부 행자\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 짐 장부 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 짐 장부 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 짐 장부 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 짐 장부 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 55 | 무력 −30 | 물질 −10 | 공동 60 | 원칙 15 | 공개 35 | 자격 40 | 분산 45 | 변혁 0\n- 욕망: 갈망 0 | 독점 35 | 위험 20 | 과시 −10 | 지속 −15 | 지향 이성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 짐 장부·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 짐 장부 행자\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 짐 장부 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 짐 장부 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 박라윤은 짐의 출처·인수 기록을 모봉에게 넘긴다. 모봉은 가족 명부와 통행 표를 확인해 접수된 물자가 확인 안 된 운송 짐으로 섞이지 않게 한다.\n\n**야망.** 짐 장부 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 짐 장부 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 55 | 무력 −30 | 물질 −10 | 공동 60 | 원칙 15 | 공개 35 | 자격 40 | 분산 45 | 변혁 0\n- 욕망: 갈망 0 | 독점 35 | 위험 20 | 과시 −10 | 지속 −15 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-10"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "박라윤",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "박라윤은 짐의 출처·인수 기록을 모봉에게 넘긴다. 모봉은 가족 명부와 통행 표를 확인해 접수된 물자가 확인 안 된 운송 짐으로 섞이지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

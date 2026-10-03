@@ -12,6 +12,573 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-남윤경",
   "detailRoute": "/people/person-0374",
+  "birthDate": "2091-05-02",
+  "birthday": "05-02",
+  "age": 35,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/1",
+    "lore/characters/Cast-State-15.json#/content/3",
+    "lore/characters/Core-Characters.json#/content/139",
+    "lore/characters/Core-Characters.json#/content/140",
+    "lore/chronology/Century-Annals.json#/content/416",
+    "lore/chronology/Century-Annals.json#/content/572",
+    "lore/chronology/Scenario-Timeline.json#/content/10"
+  ],
+  "familyTree": {
+    "personId": "K373",
+    "nodes": [
+      {
+        "id": "K373",
+        "personId": "K373",
+        "kind": "person",
+        "name": "남윤경",
+        "birthDate": "2091-05-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K373"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 명동성당 중구 명동길 74 제대의 손. 무공은 없다. 생업만 있다. 명동 제대와 교구 명부가 종이로 옮겨졌고, 명동대교구는 명동역에서 혼인과 위령을 인준한다. 서울역재고가의 경매 저울을 끊기지 않게 지킨 경력이 있다. 명동역 사제단의 비밀 선거에서 남윤경이 대주교로 선출되었으나 교황 없이 치른 선거의 정당성은 계속 다투어진다. 교구의 관할은 명동역과 명동성당 제대·교구 명부에 머문다. 주교회의 청사 광진 면목로는 바깥 창고로만 남긴다. 혼인·양자·위령 인준은 선거 뒤에도 이어지지만, 교황 인준이 없다는 이의가 봉인마다 따른다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남윤경-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0374"
+      },
+      {
+        "id": "FH-K373-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "남승진",
+        "birthDate": "2061-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "남승진은 생활권의 공동 거처에서 경매조정인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남윤경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K373-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "남승현",
+        "birthDate": "2031-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "남승현은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남윤경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K373-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "남승영",
+        "birthDate": "2001-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "남승영은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남윤경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K373-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준재",
+        "birthDate": "2061-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "이준재는 생활권의 공동 거처에서 경매조정인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남윤경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K373-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준란",
+        "birthDate": "2031-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "최준란은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남윤경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K373-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준연",
+        "birthDate": "2001-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정준연은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남윤경-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K373-P-01:K373:biological",
+        "from": "FH-K373-P-01",
+        "to": "K373",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K373-P-02:FH-K373-P-01:biological",
+        "from": "FH-K373-P-02",
+        "to": "FH-K373-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K373-P-03:FH-K373-P-02:biological",
+        "from": "FH-K373-P-03",
+        "to": "FH-K373-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K373-M-01:K373:biological",
+        "from": "FH-K373-M-01",
+        "to": "K373",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K373-M-02:FH-K373-M-01:biological",
+        "from": "FH-K373-M-02",
+        "to": "FH-K373-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K373-M-03:FH-K373-M-02:biological",
+        "from": "FH-K373-M-03",
+        "to": "FH-K373-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남윤경-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K397",
+      "recipientName": "함도겸",
+      "basis": "남윤경의 경매조정과 맞물리되, 보조 서명란은 조정인 도장과 겹치지 않게 둔다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-15.json",
+        "anchor": "인물-함도겸-p5"
+      }
+    }
+  ],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K373",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "christian",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "남윤경-p3"
+          }
+        ]
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "excluded",
+      "genderPreference": "not-applicable",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K373-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1816"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K373-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1819"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1005",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/8"
+          }
+        ]
+      },
+      {
+        "recipientId": "K374",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/99"
+          }
+        ]
+      },
+      {
+        "recipientId": "K375",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "비공개 비상배급 창고를 지킴",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/100"
+          }
+        ]
+      },
+      {
+        "recipientId": "K377",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "청과 품목 회의를 공유",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/102"
+          }
+        ]
+      },
+      {
+        "recipientId": "K063",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "종자 시세를 가격 원장에 매기는 원한",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/129"
+          }
+        ]
+      },
+      {
+        "recipientId": "K195",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "시세 발표 시각을 가락과 다툼",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/160"
+          }
+        ]
+      },
+      {
+        "recipientId": "K196",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/161"
+          }
+        ]
+      },
+      {
+        "recipientId": "K363",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "남윤경의 비상 시세 제의를 원한으로 돌려보낸다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/330"
+          }
+        ]
+      },
+      {
+        "recipientId": "K389",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남윤경의 공개 경매에는 복종하되 은폐 배전은 거부한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/356"
+          }
+        ]
+      },
+      {
+        "recipientId": "K390",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남윤경의 공개 경매에 유찰 종을 맞추고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/192"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K373",
     "personId": "person-0374",

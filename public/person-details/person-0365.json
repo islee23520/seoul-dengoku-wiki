@@ -12,6 +12,480 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-영한뫼",
   "detailRoute": "/people/person-0365",
+  "birthDate": "2079-07-19",
+  "birthday": "07-19",
+  "age": 47,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/39"
+  ],
+  "familyTree": {
+    "personId": "K364",
+    "nodes": [
+      {
+        "id": "K364",
+        "personId": "K364",
+        "kind": "person",
+        "name": "영한뫼",
+        "birthDate": "2079-07-19",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K364"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 구의수비대 교량 의무소 거점장 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-영한뫼-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0365"
+      },
+      {
+        "id": "FH-K364-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "영승원",
+        "birthDate": "2049-07-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2087,
+            "summary": "영승원은 암사 경비 초소에서 중증도 표·급수 시간 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-영한뫼-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K364-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "영승진",
+        "birthDate": "2019-07-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "영승진은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-영한뫼-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K364-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준희",
+        "birthDate": "2049-07-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2087,
+            "summary": "윤준희는 암사 경비 초소에서 중증도 표·급수 시간 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-영한뫼-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K364-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준경",
+        "birthDate": "2019-07-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한준경은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-영한뫼-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K364-P-01:K364:biological",
+        "from": "FH-K364-P-01",
+        "to": "K364",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K364-P-02:FH-K364-P-01:biological",
+        "from": "FH-K364-P-02",
+        "to": "FH-K364-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K364-M-01:K364:biological",
+        "from": "FH-K364-M-01",
+        "to": "K364",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K364-M-02:FH-K364-M-01:biological",
+        "from": "FH-K364-M-02",
+        "to": "FH-K364-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-영한뫼-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K364",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K364-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1768"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K364-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1770"
+          }
+        ]
+      },
+      {
+        "recipientId": "K453",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노윤호는 검역 당직에서 넘겨받은 인명 장부를 영한뫼의 교량 의무소로 전달한다. 영한뫼는 도착한 환자의 명부를 받아 중증도에 따라 들것 순서를 정하고, 검역 대기 인원과 실제 병상에 들어온 환자가 뒤섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/233"
+          }
+        ]
+      },
+      {
+        "recipientId": "K501",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "민파현은 검역 교대가 끊기지 않도록 작업반과 나눈 조건을 영한뫼에게 전한다. 영한뫼는 교량 의무소의 당직과 대기 줄을 확인하고 환자 도착을 기록해, 교대가 다시 열릴 때 검역 대기와 병상 인수가 함께 빠지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/274"
+          }
+        ]
+      },
+      {
+        "recipientId": "K549",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "조자준은 검역 순서를 바꾸라는 사적 청탁을 공개 창구로 돌리고 영한뫼에게 접수 내용을 전한다. 영한뫼는 의무소 대기 줄과 중증도 표를 확인해 청탁이 들것과 병상 순서를 앞지르지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/316"
+          }
+        ]
+      },
+      {
+        "recipientId": "K693",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노돌호는 다시 열린 검역 교대의 인수 기록을 영한뫼에게 전한다. 영한뫼는 의무소의 대기 줄과 환자 도착을 확인해 교대가 빈 사이 놓친 환자 인계를 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/442"
+          }
+        ]
+      },
+      {
+        "recipientId": "K741",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "김람호는 검역 순서를 바꾸라는 사적 청탁을 공개 창구로 돌리고 영한뫼에게 알린다. 영한뫼는 대기 줄과 중증도를 확인해 청탁이 환자의 들것 순서를 앞지르지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/484"
+          }
+        ]
+      },
+      {
+        "recipientId": "K885",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노마호는 다시 열린 검역 교대의 인수 기록을 영한뫼에게 넘긴다. 영한뫼는 의무소 대기와 도착을 확인해 교대 공백에 놓친 환자를 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/610"
+          }
+        ]
+      },
+      {
+        "recipientId": "K356",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "영한뫼의 교량 의무소와 병상을 나누고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/317"
+          }
+        ]
+      },
+      {
+        "recipientId": "K358",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "영한뫼의 통과 원장과 순번을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/321"
+          }
+        ]
+      },
+      {
+        "recipientId": "K361",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "영한뫼의 의무 대기와 줄을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/327"
+          }
+        ]
+      },
+      {
+        "recipientId": "K326",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "남호성의 의무호송을 도착 확인에 쓴다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/332"
+          }
+        ]
+      },
+      {
+        "recipientId": "K356",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "영석온의 당직 침상과 병상을 나누고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/333"
+          }
+        ]
+      },
+      {
+        "recipientId": "K367",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "영한뫼의 의무소 들것과 사고 줄을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/181"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K364",
     "personId": "person-0365",
@@ -169,6 +643,42 @@
       }
     ],
     "incoming": [
+      {
+        "from": "노윤호",
+        "type": "계약",
+        "to": "영한뫼",
+        "basis": "노윤호는 검역 당직에서 넘겨받은 인명 장부를 영한뫼의 교량 의무소로 전달한다. 영한뫼는 도착한 환자의 명부를 받아 중증도에 따라 들것 순서를 정하고, 검역 대기 인원과 실제 병상에 들어온 환자가 뒤섞이지 않게 한다."
+      },
+      {
+        "from": "민파현",
+        "type": "계약",
+        "to": "영한뫼",
+        "basis": "민파현은 검역 교대가 끊기지 않도록 작업반과 나눈 조건을 영한뫼에게 전한다. 영한뫼는 교량 의무소의 당직과 대기 줄을 확인하고 환자 도착을 기록해, 교대가 다시 열릴 때 검역 대기와 병상 인수가 함께 빠지지 않게 한다."
+      },
+      {
+        "from": "조자준",
+        "type": "계약",
+        "to": "영한뫼",
+        "basis": "조자준은 검역 순서를 바꾸라는 사적 청탁을 공개 창구로 돌리고 영한뫼에게 접수 내용을 전한다. 영한뫼는 의무소 대기 줄과 중증도 표를 확인해 청탁이 들것과 병상 순서를 앞지르지 않게 한다."
+      },
+      {
+        "from": "노돌호",
+        "type": "계약",
+        "to": "영한뫼",
+        "basis": "노돌호는 다시 열린 검역 교대의 인수 기록을 영한뫼에게 전한다. 영한뫼는 의무소의 대기 줄과 환자 도착을 확인해 교대가 빈 사이 놓친 환자 인계를 찾는다."
+      },
+      {
+        "from": "김람호",
+        "type": "계약",
+        "to": "영한뫼",
+        "basis": "김람호는 검역 순서를 바꾸라는 사적 청탁을 공개 창구로 돌리고 영한뫼에게 알린다. 영한뫼는 대기 줄과 중증도를 확인해 청탁이 환자의 들것 순서를 앞지르지 않게 한다."
+      },
+      {
+        "from": "노마호",
+        "type": "계약",
+        "to": "영한뫼",
+        "basis": "노마호는 다시 열린 검역 교대의 인수 기록을 영한뫼에게 넘긴다. 영한뫼는 의무소 대기와 도착을 확인해 교대 공백에 놓친 환자를 찾는다."
+      },
       {
         "from": "영석온",
         "type": "계약",

@@ -12,6 +12,328 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-최달아",
   "detailRoute": "/people/person-0973",
+  "birthDate": "2067-03-31",
+  "birthday": "03-31",
+  "age": 59,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/633",
+    "lore/characters/Cast-State-06.json#/content/635",
+    "lore/characters/Cast-State-06.json#/content/636"
+  ],
+  "familyTree": {
+    "personId": "K973",
+    "nodes": [
+      {
+        "id": "K973",
+        "personId": "K973",
+        "kind": "person",
+        "name": "최달아",
+        "birthDate": "2067-03-31",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K973"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 침수 구간 붕괴 보고·폐쇄",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-최달아-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0973"
+      },
+      {
+        "id": "FH-K973-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최서현",
+        "birthDate": "2037-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "최서현은 신내 환승 당직에서 침수 구간 붕괴 보고·폐쇄 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-최달아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K973-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최서영",
+        "birthDate": "2007-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최서영은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-최달아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K973-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서석",
+        "birthDate": "2037-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "이서석은 신내 환승 당직에서 침수 구간 붕괴 보고·폐쇄 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-최달아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K973-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최서윤",
+        "birthDate": "2007-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최서윤은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-최달아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K973-P-01:K973:biological",
+        "from": "FH-K973-P-01",
+        "to": "K973",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K973-P-02:FH-K973-P-01:biological",
+        "from": "FH-K973-P-02",
+        "to": "FH-K973-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K973-M-01:K973:biological",
+        "from": "FH-K973-M-01",
+        "to": "K973",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K973-M-02:FH-K973-M-01:biological",
+        "from": "FH-K973-M-02",
+        "to": "FH-K973-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-최달아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K973",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K973-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4695"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K973-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4697"
+          }
+        ]
+      },
+      {
+        "recipientId": "K149",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "최달아는 침수 구간 폐쇄 소식을 서라온에게 전한다. 서라온은 현장 측량·속보를 확인해 지도를 갱신하고 미확인 우회 길은 점선으로 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/688"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K973",
     "personId": "person-0973",
@@ -132,17 +454,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 최달아는 침수 구간 폐쇄 소식을 서라온에게 전한다. 서라온은 현장 측량·속보를 확인해 지도를 갱신하고 미확인 우회 길은 점선으로 남긴다.",
     "야망": "사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.",
     "공포": "사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 침수 구간 붕괴 보고·폐쇄\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 사본 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −20 | 물질 −35 | 공동 5 | 원칙 45 | 공개 −10 | 자격 0 | 분산 −30 | 변혁 −40\n- 욕망: 갈망 15 | 독점 −30 | 위험 −35 | 과시 −20 | 지속 5 | 지향 동성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 침수 구간 붕괴 보고·폐쇄\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 사본 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 최달아는 침수 구간 폐쇄 소식을 서라온에게 전한다. 서라온은 현장 측량·속보를 확인해 지도를 갱신하고 미확인 우회 길은 점선으로 남긴다.\n\n**야망.** 사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −20 | 물질 −35 | 공동 5 | 원칙 45 | 공개 −10 | 자격 0 | 분산 −30 | 변혁 −40\n- 욕망: 갈망 15 | 독점 −30 | 위험 −35 | 과시 −20 | 지속 5 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-06"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "최달아",
+        "type": "계약",
+        "to": "서라온",
+        "basis": "최달아는 침수 구간 폐쇄 소식을 서라온에게 전한다. 서라온은 현장 측량·속보를 확인해 지도를 갱신하고 미확인 우회 길은 점선으로 남긴다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -12,6 +12,610 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-오해린",
   "detailRoute": "/people/person-0195",
+  "birthDate": "2088-11-27",
+  "birthday": "11-27",
+  "age": 38,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/75",
+    "lore/chronology/Century-Annals.json#/content/457"
+  ],
+  "familyTree": {
+    "personId": "K194",
+    "nodes": [
+      {
+        "id": "K194",
+        "personId": "K194",
+        "kind": "person",
+        "name": "오해린",
+        "birthDate": "2088-11-27",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K194"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 동작구 흑석동 보존원 문서고의 손. 무공은 없다. 생업만 있다. 보존원 원장은 장부 판독 시험으로 선발되고, 흑석 문서고의 당직이 잃어버린 기술 문서를 점검해 보관했다. 오해린이 원장이 된 것은 그 시험의 수석과 노량진배달가의 창고 열쇠를 끊기지 않게 지킨 뒤였다. 냉동상단의 냉고 열쇠는 구하온의 것이다. 얼음 신용은 이웃 빚으로 남는다. 한재목이 가격을 열면 창고가 드러나고, 닫으면 양천의 수도꼭지가 먼저 마른다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-오해린-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0195"
+      },
+      {
+        "id": "FH-K194-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현민",
+        "birthDate": "2058-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2096,
+            "summary": "오현민은 생활권의 공동 거처에서 냉동상인 대표 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-오해린-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K194-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현원",
+        "birthDate": "2028-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2066,
+            "summary": "오현원은 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-오해린-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K194-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현진",
+        "birthDate": "1998-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오현진은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-오해린-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K194-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현재",
+        "birthDate": "2058-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2096,
+            "summary": "최현재는 생활권의 공동 거처에서 냉동상인 대표 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-오해린-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K194-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현정",
+        "birthDate": "2028-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2066,
+            "summary": "정현정은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-오해린-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K194-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현현",
+        "birthDate": "1998-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤현현은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-오해린-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K194-P-01:K194:biological",
+        "from": "FH-K194-P-01",
+        "to": "K194",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K194-P-02:FH-K194-P-01:biological",
+        "from": "FH-K194-P-02",
+        "to": "FH-K194-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K194-P-03:FH-K194-P-02:biological",
+        "from": "FH-K194-P-03",
+        "to": "FH-K194-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K194-M-01:K194:biological",
+        "from": "FH-K194-M-01",
+        "to": "K194",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K194-M-02:FH-K194-M-01:biological",
+        "from": "FH-K194-M-02",
+        "to": "FH-K194-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K194-M-03:FH-K194-M-02:biological",
+        "from": "FH-K194-M-03",
+        "to": "FH-K194-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-오해린-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K194",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K194-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/936"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K194-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/939"
+          }
+        ]
+      },
+      {
+        "recipientId": "K006",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "수상 운임과 냉동 호송 주도권 경쟁",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/18"
+          }
+        ]
+      },
+      {
+        "recipientId": "K195",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "전력·물 계약을 냉동 실무로 돌림",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/64"
+          }
+        ]
+      },
+      {
+        "recipientId": "K196",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "호송권 비공개 경매를 위임받음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/65"
+          }
+        ]
+      },
+      {
+        "recipientId": "K197",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "상회 호송 계약을 현장에서 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/66"
+          }
+        ]
+      },
+      {
+        "recipientId": "K198",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "담보 창고를 얼음으로 채움",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/67"
+          }
+        ]
+      },
+      {
+        "recipientId": "K199",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "상회정 표를 운송선주 평의와 거래",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/68"
+          }
+        ]
+      },
+      {
+        "recipientId": "K223",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "시세 방송을 길드 시간에 넣음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/172"
+          }
+        ]
+      },
+      {
+        "recipientId": "K206",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/180"
+          }
+        ]
+      },
+      {
+        "recipientId": "K211",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "오해린의 재고 공개에는 복종하되 은폐 배전은 거부한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/190"
+          }
+        ]
+      },
+      {
+        "recipientId": "K226",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "오해린의 시세 방송을 길드 시간에 참고한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/194"
+          }
+        ]
+      },
+      {
+        "recipientId": "K311",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "오해린의 시세 방송을 시장 시간에만 참고한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/282"
+          }
+        ]
+      },
+      {
+        "recipientId": "K212",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "오해린의 재고 공개에 증언을 보태고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/94"
+          }
+        ]
+      },
+      {
+        "recipientId": "K216",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/103"
+          }
+        ]
+      },
+      {
+        "recipientId": "K218",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "오해린의 중립시장 정통성에 첫해 증언을 보태고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/106"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K194",
     "personId": "person-0195",
@@ -184,7 +788,7 @@
         "basis": "담보 창고를 얼음으로 채움"
       },
       {
-        "from": "오도윤",
+        "from": "피터 얀센",
         "type": "계약",
         "to": "오해린",
         "basis": "상회정 표를 운송선주 평의와 거래"

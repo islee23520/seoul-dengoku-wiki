@@ -1,6 +1,6 @@
 {
   "id": "person-0192",
-  "name": "어지율",
+  "name": "엘레나 모로조바",
   "title": "약소국 회의 열차 안내인",
   "position": "환적국 회의 열차 안내인",
   "rank": "주사",
@@ -10,8 +10,457 @@
   "stage": "S3",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-어지율",
+  "sourceRoute": "/world/Cast-State-07#인물-엘레나 모로조바",
   "detailRoute": "/people/person-0192",
+  "birthDate": "2090-03-05",
+  "birthday": "03-05",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/237",
+    "lore/characters/Cast-State-07.json#/content/239",
+    "lore/characters/Cast-State-07.json#/content/242"
+  ],
+  "familyTree": {
+    "personId": "K191",
+    "nodes": [
+      {
+        "id": "K191",
+        "personId": "K191",
+        "kind": "person",
+        "name": "엘레나 모로조바",
+        "birthDate": "2090-03-05",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K191"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 환적국 회의 열차 안내인 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-엘레나-모로조바-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Elena Morozova",
+        "detailRoute": "/people/person-0192"
+      },
+      {
+        "id": "FH-K191-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "세르게이 모로조프",
+        "birthDate": "2060-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "세르게이 모로조프는 2060년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2078년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-엘레나-모로조바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Sergei Morozov was born in 2060 and grew up reading family and work records. From 2078, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Sergei Morozov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K191-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "알렉세이 모로조프",
+        "birthDate": "2030-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "알렉세이 모로조프는 2030년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2048년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-엘레나-모로조바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Alexei Morozov was born in 2030 and grew up reading family and work records. From 2048, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Alexei Morozov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K191-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이반 모로조프",
+        "birthDate": "2000-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이반 모로조프는 2026년 대정전 당시 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-엘레나-모로조바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Ivan Morozov was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Ivan Morozov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K191-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "타티야나 스미르노바",
+        "birthDate": "2060-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "타티야나 스미르노바는 2060년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2078년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-엘레나-모로조바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Tatyana Smirnova was born in 2060 and grew up reading family and work records. From 2078, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Tatyana Smirnova",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K191-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "류드밀라 스미르노바",
+        "birthDate": "2030-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "류드밀라 스미르노바는 2030년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2048년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-엘레나-모로조바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Lyudmila Smirnova was born in 2030 and grew up reading family and work records. From 2048, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Lyudmila Smirnova",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K191-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "나탈리야 스미르노바",
+        "birthDate": "2000-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "나탈리야 스미르노바는 2026년 대정전 당시 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-엘레나-모로조바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Natalya Smirnova was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Natalya Smirnova",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K191-P-01:K191:biological",
+        "from": "FH-K191-P-01",
+        "to": "K191",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K191-P-02:FH-K191-P-01:biological",
+        "from": "FH-K191-P-02",
+        "to": "FH-K191-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K191-P-03:FH-K191-P-02:biological",
+        "from": "FH-K191-P-03",
+        "to": "FH-K191-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K191-M-01:K191:biological",
+        "from": "FH-K191-M-01",
+        "to": "K191",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K191-M-02:FH-K191-M-01:biological",
+        "from": "FH-K191-M-02",
+        "to": "FH-K191-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K191-M-03:FH-K191-M-02:biological",
+        "from": "FH-K191-M-03",
+        "to": "FH-K191-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-엘레나-모로조바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K191",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K191-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/922"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K191-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/925"
+          }
+        ]
+      },
+      {
+        "recipientId": "K182",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "마테우시 코발스키의 대합실 창구를 안내로 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/90"
+          }
+        ]
+      },
+      {
+        "recipientId": "K398",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "정유라의 공동교섭 사절을 먼저 태우며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/91"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K191",
     "personId": "person-0192",
@@ -109,9 +558,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "c5b4-d568-c885",
-    "name": "함종 어씨",
-    "crest": "clan-crests/c5b4-d568-c885.svg"
+    "id": "DIV-K191",
+    "name": "용산·이태원 모로조바씨",
+    "crest": "clan-crests/DIV-K191.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -146,29 +595,29 @@
     "욕망": "갈망 10 | 독점 −25 | 위험 −20 | 과시 5 | 지속 20 | 지향 이성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 환적국 회의 열차 안내인 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 환적국 회의 열차 안내인 자리는 가짜 약 봉인으로 열렸다. 엘레나 모로조바는 2090년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 환적국 회의 열차 안내인 업무를 맡는다. 이반 모로조프는 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 엘레나 모로조바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 환적국 회의 열차 안내인. 사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다.",
     "일화": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 환적국 회의 열차 안내인 자리의 서명이 장부에 올랐다.",
-    "관계": "나길호의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.",
+    "관계": "마테우시 코발스키의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.",
     "야망": "회의 사절 열차를 공동호송 시각표로만 붙여 용산이 분할 복속의 승강장이 되지 않게 한다.",
     "공포": "안내 칠판이 매수 쪽지로 덮여 회의 열차가 암살 경로로 바뀌는 것.",
     "개입": "매수 쪽지를 칠판에서 떼거나, 사절 호송을 맡아 안내 시각표를 지킬 수 있다."
   },
-  "biography": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 안내 방송을 남에게 넘기지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 회의 열차 사절 대기표·호송 칸 안내\n- 직함: 환적국 회의 열차 안내인\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 환적국 회의 열차 안내인 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적국 회의 열차 안내인. 사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 환적국 회의 열차 안내인 자리의 서명이 장부에 올랐다.\n\n**관계.** 나길호의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.\n\n**야망.** 회의 사절 열차를 공동호송 시각표로만 붙여 용산이 분할 복속의 승강장이 되지 않게 한다.\n\n**공포.** 안내 칠판이 매수 쪽지로 덮여 회의 열차가 암살 경로로 바뀌는 것.\n\n**개입.** 매수 쪽지를 칠판에서 떼거나, 사절 호송을 맡아 안내 시각표를 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 30 | 무력 −20 | 물질 15 | 공동 −5 | 원칙 10 | 공개 −15 | 자격 25 | 분산 0 | 변혁 10\n- 욕망: 갈망 10 | 독점 −25 | 위험 −20 | 과시 5 | 지속 20 | 지향 이성 | 결합 없음\n:::",
+  "biography": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 안내 방송을 남에게 넘기지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 회의 열차 사절 대기표·호송 칸 안내\n- 직함: 환적국 회의 열차 안내인\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 환적국 회의 열차 안내인 자리는 가짜 약 봉인으로 열렸다. 엘레나 모로조바는 2090년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 환적국 회의 열차 안내인 업무를 맡는다. 이반 모로조프는 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 엘레나 모로조바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적국 회의 열차 안내인. 사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 환적국 회의 열차 안내인 자리의 서명이 장부에 올랐다.\n\n**관계.** 마테우시 코발스키의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.\n\n**야망.** 회의 사절 열차를 공동호송 시각표로만 붙여 용산이 분할 복속의 승강장이 되지 않게 한다.\n\n**공포.** 안내 칠판이 매수 쪽지로 덮여 회의 열차가 암살 경로로 바뀌는 것.\n\n**개입.** 매수 쪽지를 칠판에서 떼거나, 사절 호송을 맡아 안내 시각표를 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 30 | 무력 −20 | 물질 15 | 공동 −5 | 원칙 10 | 공개 −15 | 자격 25 | 분산 0 | 변혁 10\n- 욕망: 갈망 10 | 독점 −25 | 위험 −20 | 과시 5 | 지속 20 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "어지율",
+        "from": "엘레나 모로조바",
         "type": "계약",
-        "to": "나길호",
-        "basis": "나길호의 대합실 창구를 안내로 받치고"
+        "to": "마테우시 코발스키",
+        "basis": "마테우시 코발스키의 대합실 창구를 안내로 받치고"
       },
       {
-        "from": "어지율",
+        "from": "엘레나 모로조바",
         "type": "계약",
         "to": "정유라",
         "basis": "정유라의 공동교섭 사절을 먼저 태우며"

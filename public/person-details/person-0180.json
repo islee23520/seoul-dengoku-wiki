@@ -1,6 +1,6 @@
 {
   "id": "person-0180",
-  "name": "지온유",
+  "name": "소피아 로시",
   "title": "후국회의 전령",
   "position": "후국회의 전령",
   "rank": "주사",
@@ -10,8 +10,556 @@
   "stage": "S2",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-지온유",
+  "sourceRoute": "/world/Cast-State-07#인물-소피아 로시",
   "detailRoute": "/people/person-0180",
+  "birthDate": "2093-03-31",
+  "birthday": "03-31",
+  "age": 33,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/127",
+    "lore/characters/Cast-State-07.json#/content/129",
+    "lore/characters/Cast-State-07.json#/content/131",
+    "lore/characters/Cast-State-07.json#/content/132"
+  ],
+  "familyTree": {
+    "personId": "K179",
+    "nodes": [
+      {
+        "id": "K179",
+        "personId": "K179",
+        "kind": "person",
+        "name": "소피아 로시",
+        "birthDate": "2093-03-31",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K179"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 후국회의 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-소피아-로시-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Sofia Rossi",
+        "detailRoute": "/people/person-0180"
+      },
+      {
+        "id": "FH-K179-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "마르코 로시",
+        "birthDate": "2063-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2101,
+            "summary": "마르코 로시는 2063년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2081년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-소피아-로시-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Marco Rossi was born in 2063 and grew up reading family and work records. From 2081, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Marco Rossi",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K179-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조반니 로시",
+        "birthDate": "2033-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2071,
+            "summary": "조반니 로시는 2033년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2051년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-소피아-로시-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Giovanni Rossi was born in 2033 and grew up reading family and work records. From 2051, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Giovanni Rossi",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K179-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "안토니오 로시",
+        "birthDate": "2003-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "안토니오 로시는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 민간 식당·숙박과 용산 공급 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-소피아-로시-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Antonio Rossi was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Antonio Rossi",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K179-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "안나 페라리",
+        "birthDate": "2063-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2101,
+            "summary": "안나 페라리는 2063년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2081년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-소피아-로시-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Anna Ferrari was born in 2063 and grew up reading family and work records. From 2081, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Anna Ferrari",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K179-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "마리아 페라리",
+        "birthDate": "2033-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2071,
+            "summary": "마리아 페라리는 2033년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2051년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-소피아-로시-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Maria Ferrari was born in 2033 and grew up reading family and work records. From 2051, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Maria Ferrari",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K179-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "루치아 페라리",
+        "birthDate": "2003-03-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "루치아 페라리는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 민간 식당·숙박과 용산 공급 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-소피아-로시-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Lucia Ferrari was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Lucia Ferrari",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K179-P-01:K179:biological",
+        "from": "FH-K179-P-01",
+        "to": "K179",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K179-P-02:FH-K179-P-01:biological",
+        "from": "FH-K179-P-02",
+        "to": "FH-K179-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K179-P-03:FH-K179-P-02:biological",
+        "from": "FH-K179-P-03",
+        "to": "FH-K179-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K179-M-01:K179:biological",
+        "from": "FH-K179-M-01",
+        "to": "K179",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K179-M-02:FH-K179-M-01:biological",
+        "from": "FH-K179-M-02",
+        "to": "FH-K179-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K179-M-03:FH-K179-M-02:biological",
+        "from": "FH-K179-M-03",
+        "to": "FH-K179-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-소피아-로시-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K179",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K179-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/870"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K179-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/873"
+          }
+        ]
+      },
+      {
+        "recipientId": "K494",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "다비트 피셔는 송신 편집의 빈 시각을 두 당직이 확인한 기록으로 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 송신·인수 시각을 확인해 소식 누락과 실제 통지 부재를 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/719"
+          }
+        ]
+      },
+      {
+        "recipientId": "K542",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "안드레이 이바노프는 보존한 거짓 속보와 정정 방송 시각을 소피아 로시에게 전한다. 소피아 로시는 전달한 회의 전갈에서 잘못된 소식을 받은 상대를 확인해 정정이 같은 창구에 닿게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/722"
+          }
+        ]
+      },
+      {
+        "recipientId": "K638",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "조피아 도브로프스카는 거짓 속보의 보존본과 정정 내용을 소피아 로시에게 전한다. 소피아 로시는 인수한 전갈의 날짜를 확인해 정정 전 소식이 후국회의의 현재 통지로 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/728"
+          }
+        ]
+      },
+      {
+        "recipientId": "K686",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "테오도르 뒤랑은 이중 확인한 송신 편집 공백을 소피아 로시에게 전한다. 소피아 로시는 전갈 인수 시각을 확인해 보내지 않은 통지와 전달이 끊긴 소식을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/731"
+          }
+        ]
+      },
+      {
+        "recipientId": "K782",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "니키타 볼코프는 보존한 거짓 속보와 정정 방송을 소피아 로시에게 전한다. 소피아 로시는 이전 소식을 받은 창구를 확인해 정정이 다른 상대에게만 전해지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/737"
+          }
+        ]
+      },
+      {
+        "recipientId": "K878",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "카밀라 마주르는 이중 확인한 송신 편집 공백을 소피아 로시에게 전한다. 소피아 로시는 통지의 송신·인수 시각을 확인해 공백 뒤에도 누락된 소식의 상대를 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/743"
+          }
+        ]
+      },
+      {
+        "recipientId": "K974",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "미겔 토레스는 보존한 거짓 속보와 정정 시각을 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 날짜·인수 상대를 확인해 정정 전 소식이 현재 통지로 다시 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/749"
+          }
+        ]
+      },
+      {
+        "recipientId": "K169",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/152"
+          }
+        ]
+      },
+      {
+        "recipientId": "K154",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "양해온의 인준 전갈과 시점을 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/153"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K179",
     "personId": "person-0180",
@@ -89,7 +637,7 @@
     "size": 4,
     "current_location": "폐컨테이너 적치장",
     "camp": {
-      "name": "지온유 컨테이너 야영지",
+      "name": "소피아 로시 컨테이너 야영지",
       "type": "야영지",
       "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
       "facilities": [
@@ -102,9 +650,9 @@
     "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
   },
   "clan": {
-    "id": "c9c0-cda9-c8fc",
-    "name": "충주 지씨",
-    "crest": "clan-crests/c9c0-cda9-c8fc.svg"
+    "id": "DIV-K179",
+    "name": "용산·이태원 로시씨",
+    "crest": "clan-crests/DIV-K179.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -139,34 +687,77 @@
     "욕망": "갈망 45 | 독점 5 | 위험 25 | 과시 20 | 지속 5 | 지향 유동 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 후국회의 전령 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 후국회의 전령 자리는 무표 출발 열차 저지로 열렸다. 소피아 로시는 2093년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 후국회의 전령 업무를 맡는다. 안토니오 로시는 2026년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 소피아 로시의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
-    "관직": "품계 주사. 직함은 후국회의 전령. 전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 권시온의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다.",
+    "관직": "품계 주사. 직함은 후국회의 전령. 전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 후국회의 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 권시온의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.",
+    "관계": "박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 에바 노바코바의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.",
     "야망": "도제 승계와 선로 봉쇄 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.",
     "공포": "위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것.",
     "개입": "위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 가문회의에 펼칠 수 있다."
   },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 배차 거부를 원장에 올리지 않는 원로를 위반자로 부른다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 후국회의 전갈·억류 통지 전달\n- 직함: 후국회의 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 후국회의 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 후국회의 전령. 전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 권시온의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 후국회의 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 권시온의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.\n\n**야망.** 도제 승계와 선로 봉쇄 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 가문회의에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 30 | 무력 0 | 물질 10 | 공동 −15 | 원칙 10 | 공개 0 | 자격 20 | 분산 0 | 변혁 −10\n- 욕망: 갈망 45 | 독점 5 | 위험 25 | 과시 20 | 지속 5 | 지향 유동 | 결합 다자\n:::",
+  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 배차 거부를 원장에 올리지 않는 원로를 위반자로 부른다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 후국회의 전갈·억류 통지 전달\n- 직함: 후국회의 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 후국회의 전령 자리는 무표 출발 열차 저지로 열렸다. 소피아 로시는 2093년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 후국회의 전령 업무를 맡는다. 안토니오 로시는 2026년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 소피아 로시의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 후국회의 전령. 전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 후국회의 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 에바 노바코바의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.\n\n**야망.** 도제 승계와 선로 봉쇄 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 가문회의에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 30 | 무력 0 | 물질 10 | 공동 −15 | 원칙 10 | 공개 0 | 자격 20 | 분산 0 | 변혁 −10\n- 욕망: 갈망 45 | 독점 5 | 위험 25 | 과시 20 | 지속 5 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "지온유",
+        "from": "소피아 로시",
         "type": "지휘",
         "to": "박태겸",
         "basis": "박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고"
       },
       {
-        "from": "지온유",
+        "from": "소피아 로시",
         "type": "계약",
         "to": "양해온",
         "basis": "양해온의 인준 전갈과 시점을 맞춘다"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "다비트 피셔",
+        "type": "계약",
+        "to": "소피아 로시",
+        "basis": "다비트 피셔는 송신 편집의 빈 시각을 두 당직이 확인한 기록으로 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 송신·인수 시각을 확인해 소식 누락과 실제 통지 부재를 구분한다."
+      },
+      {
+        "from": "안드레이 이바노프",
+        "type": "계약",
+        "to": "소피아 로시",
+        "basis": "안드레이 이바노프는 보존한 거짓 속보와 정정 방송 시각을 소피아 로시에게 전한다. 소피아 로시는 전달한 회의 전갈에서 잘못된 소식을 받은 상대를 확인해 정정이 같은 창구에 닿게 한다."
+      },
+      {
+        "from": "조피아 도브로프스카",
+        "type": "계약",
+        "to": "소피아 로시",
+        "basis": "조피아 도브로프스카는 거짓 속보의 보존본과 정정 내용을 소피아 로시에게 전한다. 소피아 로시는 인수한 전갈의 날짜를 확인해 정정 전 소식이 후국회의의 현재 통지로 남지 않게 한다."
+      },
+      {
+        "from": "테오도르 뒤랑",
+        "type": "계약",
+        "to": "소피아 로시",
+        "basis": "테오도르 뒤랑은 이중 확인한 송신 편집 공백을 소피아 로시에게 전한다. 소피아 로시는 전갈 인수 시각을 확인해 보내지 않은 통지와 전달이 끊긴 소식을 구분한다."
+      },
+      {
+        "from": "니키타 볼코프",
+        "type": "계약",
+        "to": "소피아 로시",
+        "basis": "니키타 볼코프는 보존한 거짓 속보와 정정 방송을 소피아 로시에게 전한다. 소피아 로시는 이전 소식을 받은 창구를 확인해 정정이 다른 상대에게만 전해지지 않게 한다."
+      },
+      {
+        "from": "카밀라 마주르",
+        "type": "계약",
+        "to": "소피아 로시",
+        "basis": "카밀라 마주르는 이중 확인한 송신 편집 공백을 소피아 로시에게 전한다. 소피아 로시는 통지의 송신·인수 시각을 확인해 공백 뒤에도 누락된 소식의 상대를 찾는다."
+      },
+      {
+        "from": "미겔 토레스",
+        "type": "계약",
+        "to": "소피아 로시",
+        "basis": "미겔 토레스는 보존한 거짓 속보와 정정 시각을 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 날짜·인수 상대를 확인해 정정 전 소식이 현재 통지로 다시 쓰이지 않게 한다."
+      }
+    ]
   }
 }

@@ -12,6 +12,580 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-선한솜",
   "detailRoute": "/people/person-0413",
+  "birthDate": "2097-11-27",
+  "birthday": "11-27",
+  "age": 29,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/17"
+  ],
+  "familyTree": {
+    "personId": "K412",
+    "nodes": [
+      {
+        "id": "K412",
+        "personId": "K412",
+        "kind": "person",
+        "name": "선한솜",
+        "birthDate": "2097-11-27",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K412"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 지하시설 방어조 거점장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-선한솜-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0413"
+      },
+      {
+        "id": "FH-K412-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "선승은",
+        "birthDate": "2067-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2105,
+            "summary": "선승은은 대합실 당직에서 서고 열쇠·초안함 봉인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-선한솜-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K412-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "선승연",
+        "birthDate": "2037-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "선승연은 대합실 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-선한솜-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K412-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "선승정",
+        "birthDate": "2007-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "선승정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-선한솜-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K412-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준섭",
+        "birthDate": "2067-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2105,
+            "summary": "윤준섭은 대합실 당직에서 서고 열쇠·초안함 봉인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-선한솜-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K412-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준훈",
+        "birthDate": "2037-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "한준훈은 대합실 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-선한솜-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K412-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "강준훈",
+        "birthDate": "2007-11-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강준훈은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-선한솜-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K412-P-01:K412:biological",
+        "from": "FH-K412-P-01",
+        "to": "K412",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K412-P-02:FH-K412-P-01:biological",
+        "from": "FH-K412-P-02",
+        "to": "FH-K412-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K412-P-03:FH-K412-P-02:biological",
+        "from": "FH-K412-P-03",
+        "to": "FH-K412-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K412-M-01:K412:biological",
+        "from": "FH-K412-M-01",
+        "to": "K412",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K412-M-02:FH-K412-M-01:biological",
+        "from": "FH-K412-M-02",
+        "to": "FH-K412-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K412-M-03:FH-K412-M-02:biological",
+        "from": "FH-K412-M-03",
+        "to": "FH-K412-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-선한솜-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K412",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K412-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1998"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K412-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2001"
+          }
+        ]
+      },
+      {
+        "recipientId": "K487",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배지원은 공동구 당직 인수인계에서 증언이 갈린 곳을 확인해 선한솜에게 알린다. 선한솜은 빠진 지하 당직과 초안함 봉인 상태를 살피되 수색에는 계약 서기를 입회시켜, 교대 공백을 이유로 보관 절차를 건너뛰지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/262"
+          }
+        ]
+      },
+      {
+        "recipientId": "K535",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽지현은 공동구 인수인계에 관한 두 증인의 말을 대질로 확인해 선한솜에게 전한다. 선한솜은 지하 당직과 봉인 상태를 점검하고 계약 서기 입회 아래 필요한 수색을 진행해, 증언 충돌을 열쇠 분실로 단정하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/304"
+          }
+        ]
+      },
+      {
+        "recipientId": "K615",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽늘호는 무장 난입자를 문 밖에 붙들고 선한솜에게 명부 재점검과 호송 순찰 내용을 전한다. 선한솜은 지하 서고 접근과 당직을 확인하고 계약 서기 입회 아래 필요한 수색을 진행해, 난입 경위가 확인되기 전에 봉인 관리가 흔들리지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/374"
+          }
+        ]
+      },
+      {
+        "recipientId": "K631",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장숲린은 공동구 인수인계의 대질 내용을 선한솜에게 전한다. 선한솜은 당직과 봉인을 확인하되 계약 서기 입회 아래 수색해 증언 충돌이 보관 절차를 무너뜨리지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/388"
+          }
+        ]
+      },
+      {
+        "recipientId": "K679",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "안산늘은 공동구 교대에 관한 증언을 확인해 선한솜에게 전한다. 선한솜은 서고 열쇠와 초안함 봉인의 인수 경위를 따로 살펴 계약 서기 입회 아래 누락을 확인한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/430"
+          }
+        ]
+      },
+      {
+        "recipientId": "K727",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백름래는 공동구 인수인계에 관한 대질 내용을 선한솜에게 전한다. 선한솜은 서고 열쇠와 봉인을 따로 확인하고 계약 서기 입회 아래 누락을 조사한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/472"
+          }
+        ]
+      },
+      {
+        "recipientId": "K871",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황돌아는 공동구 출입 청탁을 공개 창구로 돌리고 선한솜에게 접수 내용을 전한다. 선한솜은 열쇠·봉인 인수와 출입 기록을 확인해 사적 요청이 열람 권한으로 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/598"
+          }
+        ]
+      },
+      {
+        "recipientId": "K919",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "유마영은 공동구 대질 증언을 선한솜에게 전한다. 선한솜은 열쇠와 봉인 인수를 따로 확인하고 계약 서기 입회 아래 기록 공백을 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/641"
+          }
+        ]
+      },
+      {
+        "recipientId": "K407",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "선한솜의 지하 방어와 교대를 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/365"
+          }
+        ]
+      },
+      {
+        "recipientId": "K399",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "하서진의 초안함을 지하에서 지키고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/374"
+          }
+        ]
+      },
+      {
+        "recipientId": "K407",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "영마온의 외곽 순찰과 교대를 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/375"
+          }
+        ]
+      },
+      {
+        "recipientId": "K414",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "선한솜의 지하 함 온도를 발전 쪽에서 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/379"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K412",
     "personId": "person-0413",
@@ -157,6 +731,54 @@
       }
     ],
     "incoming": [
+      {
+        "from": "배지원",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "배지원은 공동구 당직 인수인계에서 증언이 갈린 곳을 확인해 선한솜에게 알린다. 선한솜은 빠진 지하 당직과 초안함 봉인 상태를 살피되 수색에는 계약 서기를 입회시켜, 교대 공백을 이유로 보관 절차를 건너뛰지 않는다."
+      },
+      {
+        "from": "곽지현",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "곽지현은 공동구 인수인계에 관한 두 증인의 말을 대질로 확인해 선한솜에게 전한다. 선한솜은 지하 당직과 봉인 상태를 점검하고 계약 서기 입회 아래 필요한 수색을 진행해, 증언 충돌을 열쇠 분실로 단정하지 않는다."
+      },
+      {
+        "from": "곽늘호",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "곽늘호는 무장 난입자를 문 밖에 붙들고 선한솜에게 명부 재점검과 호송 순찰 내용을 전한다. 선한솜은 지하 서고 접근과 당직을 확인하고 계약 서기 입회 아래 필요한 수색을 진행해, 난입 경위가 확인되기 전에 봉인 관리가 흔들리지 않게 한다."
+      },
+      {
+        "from": "장숲린",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "장숲린은 공동구 인수인계의 대질 내용을 선한솜에게 전한다. 선한솜은 당직과 봉인을 확인하되 계약 서기 입회 아래 수색해 증언 충돌이 보관 절차를 무너뜨리지 않게 한다."
+      },
+      {
+        "from": "안산늘",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "안산늘은 공동구 교대에 관한 증언을 확인해 선한솜에게 전한다. 선한솜은 서고 열쇠와 초안함 봉인의 인수 경위를 따로 살펴 계약 서기 입회 아래 누락을 확인한다."
+      },
+      {
+        "from": "백름래",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "백름래는 공동구 인수인계에 관한 대질 내용을 선한솜에게 전한다. 선한솜은 서고 열쇠와 봉인을 따로 확인하고 계약 서기 입회 아래 누락을 조사한다."
+      },
+      {
+        "from": "황돌아",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "황돌아는 공동구 출입 청탁을 공개 창구로 돌리고 선한솜에게 접수 내용을 전한다. 선한솜은 열쇠·봉인 인수와 출입 기록을 확인해 사적 요청이 열람 권한으로 쓰이지 않게 한다."
+      },
+      {
+        "from": "유마영",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "유마영은 공동구 대질 증언을 선한솜에게 전한다. 선한솜은 열쇠와 봉인 인수를 따로 확인하고 계약 서기 입회 아래 기록 공백을 살핀다."
+      },
       {
         "from": "영마온",
         "type": "지휘",

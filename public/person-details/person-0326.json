@@ -12,6 +12,467 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-라세영",
   "detailRoute": "/people/person-0326",
+  "birthDate": "2083-09-06",
+  "birthday": "09-06",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/83",
+    "lore/characters/Cast-State-13.json#/content/85"
+  ],
+  "familyTree": {
+    "personId": "K325",
+    "nodes": [
+      {
+        "id": "K325",
+        "personId": "K325",
+        "kind": "person",
+        "name": "라세영",
+        "birthDate": "2083-09-06",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K325"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 방역 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-라세영-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0326"
+      },
+      {
+        "id": "FH-K325-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "라승석",
+        "birthDate": "2053-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "라승석은 대합실 당직에서 격리 출입 도장·해제 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-라세영-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K325-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "라승준",
+        "birthDate": "2023-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "라승준은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-라세영-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K325-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준우",
+        "birthDate": "2053-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "이준우는 대합실 당직에서 격리 출입 도장·해제 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-라세영-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K325-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준규",
+        "birthDate": "2023-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최준규는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-라세영-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K325-P-01:K325:biological",
+        "from": "FH-K325-P-01",
+        "to": "K325",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K325-P-02:FH-K325-P-01:biological",
+        "from": "FH-K325-P-02",
+        "to": "FH-K325-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K325-M-01:K325:biological",
+        "from": "FH-K325-M-01",
+        "to": "K325",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K325-M-02:FH-K325-M-01:biological",
+        "from": "FH-K325-M-02",
+        "to": "FH-K325-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-라세영-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K325",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K325-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1572"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K325-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1574"
+          }
+        ]
+      },
+      {
+        "recipientId": "K057",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/91"
+          }
+        ]
+      },
+      {
+        "recipientId": "K452",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "심다현은 방역 당직을 넘길 때 출입 기록과 젖은 문서에서 보존한 필사본을 라세영에게 가져간다. 라세영은 격리 출입 도장과 해제 기록을 확인하며 심다현과 함께 누락을 찾고, 수질·약효 기록이 도착한 뒤 해제를 판단한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/232"
+          }
+        ]
+      },
+      {
+        "recipientId": "K500",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "구소희는 방역 기록의 원본과 출입 도장을 라세영에게 가져가 의심스러운 사본을 확인한다. 라세영은 격리 출입과 해제 기록을 살펴 위조 날인이 통과했는지 확인하고, 수질·약효 기록이 도착하기 전에는 해제를 선언하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/273"
+          }
+        ]
+      },
+      {
+        "recipientId": "K548",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "강바유는 방역 기록 원본을 라세영에게 가져가 의심스러운 출입 날인을 확인한다. 라세영은 격리와 해제 기록을 살펴 위조 사본 때문에 격리 환자가 먼저 풀려나지 않게 하고 수질·약효 기록의 도착을 기다린다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/315"
+          }
+        ]
+      },
+      {
+        "recipientId": "K612",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "심파현은 격리 칸의 환자 진료를 이어가며 약재 관리와 출입 기록을 라세영에게 넘긴다. 라세영은 격리 도장과 해제 기록을 확인해 왕진이 계속된 사실을 격리 해제로 오인하지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/371"
+          }
+        ]
+      },
+      {
+        "recipientId": "K692",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "심바현은 방역 원본과 의심 날인을 라세영에게 가져간다. 라세영은 격리 출입·해제 기록을 확인해 위조 사본이 해제 근거로 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/441"
+          }
+        ]
+      },
+      {
+        "recipientId": "K788",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "임바나는 정정한 방역 장부와 인수 서명을 라세영에게 넘긴다. 라세영은 격리 출입과 해제 기록을 확인해 중복된 줄을 실제 환자 이동과 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/525"
+          }
+        ]
+      },
+      {
+        "recipientId": "K884",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "심나양은 보존한 방역 필사본을 라세영에게 전한다. 라세영은 격리 출입·해제 기록을 확인해 읽히지 않는 날인이 해제 근거로 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/609"
+          }
+        ]
+      },
+      {
+        "recipientId": "K980",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "오타호는 방역 중복 지급 정정과 서명을 라세영에게 전한다. 라세영은 실제 격리 출입·해제를 확인해 장부 중복과 환자 이동을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/694"
+          }
+        ]
+      },
+      {
+        "recipientId": "K331",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "라세영의 지휘로 동측 골목을 돌고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/294"
+          }
+        ]
+      },
+      {
+        "recipientId": "K333",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "라세영에게 오염 좌표를 넘기는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/298"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K325",
     "personId": "person-0326",
@@ -161,6 +622,54 @@
   "relations": {
     "outgoing": [],
     "incoming": [
+      {
+        "from": "심다현",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "심다현은 방역 당직을 넘길 때 출입 기록과 젖은 문서에서 보존한 필사본을 라세영에게 가져간다. 라세영은 격리 출입 도장과 해제 기록을 확인하며 심다현과 함께 누락을 찾고, 수질·약효 기록이 도착한 뒤 해제를 판단한다."
+      },
+      {
+        "from": "구소희",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "구소희는 방역 기록의 원본과 출입 도장을 라세영에게 가져가 의심스러운 사본을 확인한다. 라세영은 격리 출입과 해제 기록을 살펴 위조 날인이 통과했는지 확인하고, 수질·약효 기록이 도착하기 전에는 해제를 선언하지 않는다."
+      },
+      {
+        "from": "강바유",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "강바유는 방역 기록 원본을 라세영에게 가져가 의심스러운 출입 날인을 확인한다. 라세영은 격리와 해제 기록을 살펴 위조 사본 때문에 격리 환자가 먼저 풀려나지 않게 하고 수질·약효 기록의 도착을 기다린다."
+      },
+      {
+        "from": "심파현",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "심파현은 격리 칸의 환자 진료를 이어가며 약재 관리와 출입 기록을 라세영에게 넘긴다. 라세영은 격리 도장과 해제 기록을 확인해 왕진이 계속된 사실을 격리 해제로 오인하지 않게 한다."
+      },
+      {
+        "from": "심바현",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "심바현은 방역 원본과 의심 날인을 라세영에게 가져간다. 라세영은 격리 출입·해제 기록을 확인해 위조 사본이 해제 근거로 쓰이지 않게 한다."
+      },
+      {
+        "from": "임바나",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "임바나는 정정한 방역 장부와 인수 서명을 라세영에게 넘긴다. 라세영은 격리 출입과 해제 기록을 확인해 중복된 줄을 실제 환자 이동과 구분한다."
+      },
+      {
+        "from": "심나양",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "심나양은 보존한 방역 필사본을 라세영에게 전한다. 라세영은 격리 출입·해제 기록을 확인해 읽히지 않는 날인이 해제 근거로 쓰이지 않게 한다."
+      },
+      {
+        "from": "오타호",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "오타호는 방역 중복 지급 정정과 서명을 라세영에게 전한다. 라세영은 실제 격리 출입·해제를 확인해 장부 중복과 환자 이동을 구분한다."
+      },
       {
         "from": "수초롱",
         "type": "지휘",

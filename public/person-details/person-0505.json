@@ -12,6 +12,327 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-박하은",
   "detailRoute": "/people/person-0505",
+  "birthDate": "2084-06-01",
+  "birthday": "06-01",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/357",
+    "lore/characters/Cast-State-02.json#/content/360"
+  ],
+  "familyTree": {
+    "personId": "K505",
+    "nodes": [
+      {
+        "id": "K505",
+        "personId": "K505",
+        "kind": "person",
+        "name": "박하은",
+        "birthDate": "2084-06-01",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K505"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-박하은-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0505"
+      },
+      {
+        "id": "FH-K505-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박태훈",
+        "birthDate": "2054-06-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "박태훈은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-박하은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K505-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박태범",
+        "birthDate": "2024-06-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박태범은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-박하은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K505-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이태범",
+        "birthDate": "2054-06-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "이태범은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-박하은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K505-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최태혁",
+        "birthDate": "2024-06-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최태혁은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-박하은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K505-P-01:K505:biological",
+        "from": "FH-K505-P-01",
+        "to": "K505",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K505-P-02:FH-K505-P-01:biological",
+        "from": "FH-K505-P-02",
+        "to": "FH-K505-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K505-M-01:K505:biological",
+        "from": "FH-K505-M-01",
+        "to": "K505",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K505-M-02:FH-K505-M-01:biological",
+        "from": "FH-K505-M-02",
+        "to": "FH-K505-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-박하은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K505",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K505-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2453"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K505-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2455"
+          }
+        ]
+      },
+      {
+        "recipientId": "K031",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "박하은은 복구복무 명부 사본에 붙인 부품 상자의 봉인 기록을 김나율에게 보여 준다. 김나율은 작업반 교대와 시민권 등록 기록을 확인해, 부품 대가로 적힌 복무와 실제 조합 노동이 같은 줄로 취급된 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/277"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K505",
     "personId": "person-0505",
@@ -132,17 +453,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 박하은은 복구복무 명부 사본에 붙인 부품 상자의 봉인 기록을 김나율에게 보여 준다. 김나율은 작업반 교대와 시민권 등록 기록을 확인해, 부품 대가로 적힌 복무와 실제 조합 노동이 같은 줄로 취급된 곳을 찾는다.",
     "야망": "복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
     "공포": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 0 | 무력 −10 | 물질 35 | 공동 30 | 원칙 20 | 공개 25 | 자격 55 | 분산 30 | 변혁 30\n- 욕망: 갈망 −15 | 독점 −10 | 위험 20 | 과시 −20 | 지속 −15 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 박하은은 복구복무 명부 사본에 붙인 부품 상자의 봉인 기록을 김나율에게 보여 준다. 김나율은 작업반 교대와 시민권 등록 기록을 확인해, 부품 대가로 적힌 복무와 실제 조합 노동이 같은 줄로 취급된 곳을 찾는다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 0 | 무력 −10 | 물질 35 | 공동 30 | 원칙 20 | 공개 25 | 자격 55 | 분산 30 | 변혁 30\n- 욕망: 갈망 −15 | 독점 −10 | 위험 20 | 과시 −20 | 지속 −15 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "박하은",
+        "type": "계약",
+        "to": "김나율",
+        "basis": "박하은은 복구복무 명부 사본에 붙인 부품 상자의 봉인 기록을 김나율에게 보여 준다. 김나율은 작업반 교대와 시민권 등록 기록을 확인해, 부품 대가로 적힌 복무와 실제 조합 노동이 같은 줄로 취급된 곳을 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

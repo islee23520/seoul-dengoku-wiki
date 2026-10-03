@@ -12,6 +12,410 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-표누리",
   "detailRoute": "/people/person-0105",
+  "birthDate": "2080-03-04",
+  "birthday": "03-04",
+  "age": 46,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/60"
+  ],
+  "familyTree": {
+    "personId": "K104",
+    "nodes": [
+      {
+        "id": "K104",
+        "personId": "K104",
+        "kind": "person",
+        "name": "표누리",
+        "birthDate": "2080-03-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K104"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 군자기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-표누리-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0105"
+      },
+      {
+        "id": "FH-K104-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "표승연",
+        "birthDate": "2050-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2088,
+            "summary": "표승연은 신정 차량기지에서 유치선 칸 배정·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-표누리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K104-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "표승정",
+        "birthDate": "2020-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "표승정은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-표누리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K104-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오승완",
+        "birthDate": "2050-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2088,
+            "summary": "오승완은 신정 차량기지에서 유치선 칸 배정·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-표누리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K104-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송승혁",
+        "birthDate": "2020-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송승혁은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-표누리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K104-P-01:K104:biological",
+        "from": "FH-K104-P-01",
+        "to": "K104",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K104-P-02:FH-K104-P-01:biological",
+        "from": "FH-K104-P-02",
+        "to": "FH-K104-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K104-M-01:K104:biological",
+        "from": "FH-K104-M-01",
+        "to": "K104",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K104-M-02:FH-K104-M-01:biological",
+        "from": "FH-K104-M-02",
+        "to": "FH-K104-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-표누리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K104",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K104-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/518"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K104-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/520"
+          }
+        ]
+      },
+      {
+        "recipientId": "K571",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남가은은 유치선 야간 무단 출입 뒤 바꾼 암호패와 순찰 기록을 표누리에게 인계한다. 표누리는 칸별 공방·수비 분필과 출고 순서를 확인해, 출입 기록이 없는 개조칸이 정상 유치 칸으로 넘어가지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/335"
+          }
+        ]
+      },
+      {
+        "recipientId": "K619",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "우돌진은 유치선 무단 출입을 제지하면 표누리에게 해당 칸과 인원 기록을 알린다. 표누리는 공방·수비 분필을 확인해 출입이 확인되지 않은 칸을 정상 출고 순서와 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/377"
+          }
+        ]
+      },
+      {
+        "recipientId": "K667",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "정강은은 유치선 야간 출입 기록과 암호패 교체를 표누리에게 알린다. 표누리는 칸 배정과 공방·수비 표시를 확인해 다음 출고가 확인되지 않은 칸을 받지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/419"
+          }
+        ]
+      },
+      {
+        "recipientId": "K715",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신산빈은 교량 훈련에서 고친 참관 내용을 표누리에게 전달한다. 표누리는 실제 유치 칸과 출고 준비를 확인해 훈련 보고를 정상 운행의 출입 기록과 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/461"
+          }
+        ]
+      },
+      {
+        "recipientId": "K907",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신새민은 정정한 훈련 참관 내용을 표누리에게 전한다. 표누리는 실제 유치 칸과 출고 표식을 확인해 훈련 보고가 정상 운행 출입 기록으로 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/630"
+          }
+        ]
+      },
+      {
+        "recipientId": "K091",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "이준택의 정비 완료 도장을 유치 칸에서 호각으로 바꾸는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/88"
+          }
+        ]
+      },
+      {
+        "recipientId": "K030",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/89"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K104",
     "personId": "person-0105",
@@ -156,6 +560,37 @@
         "basis": "이준택의 정비 완료 도장을 유치 칸에서 호각으로 바꾸는 지휘를 받고"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "남가은",
+        "type": "계약",
+        "to": "표누리",
+        "basis": "남가은은 유치선 야간 무단 출입 뒤 바꾼 암호패와 순찰 기록을 표누리에게 인계한다. 표누리는 칸별 공방·수비 분필과 출고 순서를 확인해, 출입 기록이 없는 개조칸이 정상 유치 칸으로 넘어가지 않게 한다."
+      },
+      {
+        "from": "우돌진",
+        "type": "계약",
+        "to": "표누리",
+        "basis": "우돌진은 유치선 무단 출입을 제지하면 표누리에게 해당 칸과 인원 기록을 알린다. 표누리는 공방·수비 분필을 확인해 출입이 확인되지 않은 칸을 정상 출고 순서와 구분한다."
+      },
+      {
+        "from": "정강은",
+        "type": "계약",
+        "to": "표누리",
+        "basis": "정강은은 유치선 야간 출입 기록과 암호패 교체를 표누리에게 알린다. 표누리는 칸 배정과 공방·수비 표시를 확인해 다음 출고가 확인되지 않은 칸을 받지 않게 한다."
+      },
+      {
+        "from": "신산빈",
+        "type": "계약",
+        "to": "표누리",
+        "basis": "신산빈은 교량 훈련에서 고친 참관 내용을 표누리에게 전달한다. 표누리는 실제 유치 칸과 출고 준비를 확인해 훈련 보고를 정상 운행의 출입 기록과 구분한다."
+      },
+      {
+        "from": "신새민",
+        "type": "계약",
+        "to": "표누리",
+        "basis": "신새민은 정정한 훈련 참관 내용을 표누리에게 전한다. 표누리는 실제 유치 칸과 출고 표식을 확인해 훈련 보고가 정상 운행 출입 기록으로 쓰이지 않게 한다."
+      }
+    ]
   }
 }
