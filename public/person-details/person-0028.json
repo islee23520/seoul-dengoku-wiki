@@ -12,6 +12,355 @@
   "stateName": "수문국",
   "sourceRoute": "/world/Cast-State-01#인물-우오름",
   "detailRoute": "/people/person-0028",
+  "birthDate": "2081-07-31",
+  "birthday": "07-31",
+  "age": 45,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-01.json#/content/291",
+    "lore/characters/Cast-State-01.json#/content/293"
+  ],
+  "familyTree": {
+    "personId": "K028",
+    "nodes": [
+      {
+        "id": "K028",
+        "personId": "K028",
+        "kind": "person",
+        "name": "우오름",
+        "birthDate": "2081-07-31",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K028"
+          },
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 협의 급수병참 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-우오름-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0028"
+      },
+      {
+        "id": "FH-K028-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "우승석",
+        "birthDate": "2051-07-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "우승석은 영등포 정수 당직에서 급수 계량·배분 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-우오름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K028-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "우승준",
+        "birthDate": "2021-07-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "우승준은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-우오름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K028-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승현",
+        "birthDate": "2051-07-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "윤승현은 영등포 정수 당직에서 급수 계량·배분 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-우오름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K028-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승현",
+        "birthDate": "2021-07-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한승현은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-우오름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K028-P-01:K028:biological",
+        "from": "FH-K028-P-01",
+        "to": "K028",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K028-P-02:FH-K028-P-01:biological",
+        "from": "FH-K028-P-02",
+        "to": "FH-K028-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K028-M-01:K028:biological",
+        "from": "FH-K028-M-01",
+        "to": "K028",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K028-M-02:FH-K028-M-01:biological",
+        "from": "FH-K028-M-02",
+        "to": "FH-K028-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-우오름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K028",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K028-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/148"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K028-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/150"
+          }
+        ]
+      },
+      {
+        "recipientId": "K007",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "장필규의 종료 조건 문구를 회의 사본에 옮기고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/12"
+          }
+        ]
+      },
+      {
+        "recipientId": "K083",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/13"
+          }
+        ]
+      },
+      {
+        "recipientId": "K083",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "여의도의 우오름과 급수 최저선 사본을 교환한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/39"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K028",
     "personId": "person-0028",

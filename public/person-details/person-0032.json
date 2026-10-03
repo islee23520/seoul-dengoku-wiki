@@ -12,6 +12,420 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-이강묵",
   "detailRoute": "/people/person-0032",
+  "birthDate": "2084-12-02",
+  "birthday": "12-02",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/93",
+    "lore/characters/Cast-State-02.json#/content/95"
+  ],
+  "familyTree": {
+    "personId": "K032",
+    "nodes": [
+      {
+        "id": "K032",
+        "personId": "K032",
+        "kind": "person",
+        "name": "이강묵",
+        "birthDate": "2084-12-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K032"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 금천 경비대장 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이강묵-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0032"
+      },
+      {
+        "id": "FH-K032-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승영",
+        "birthDate": "2054-12-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "이승영은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이강묵-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K032-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승윤",
+        "birthDate": "2024-12-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이승윤은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이강묵-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K032-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오승진",
+        "birthDate": "2054-12-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "오승진은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이강묵-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K032-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송승현",
+        "birthDate": "2024-12-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송승현은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이강묵-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K032-P-01:K032:biological",
+        "from": "FH-K032-P-01",
+        "to": "K032",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K032-P-02:FH-K032-P-01:biological",
+        "from": "FH-K032-P-02",
+        "to": "FH-K032-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K032-M-01:K032:biological",
+        "from": "FH-K032-M-01",
+        "to": "K032",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K032-M-02:FH-K032-M-01:biological",
+        "from": "FH-K032-M-02",
+        "to": "FH-K032-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이강묵-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K032",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K032-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/166"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K032-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/168"
+          }
+        ]
+      },
+      {
+        "recipientId": "K029",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "outgoing",
+        "role": "군수 독점과 중재 권한을 겨룸",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/24"
+          }
+        ]
+      },
+      {
+        "recipientId": "K118",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "차단문 전술을 고덕 장교와 거래",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/119"
+          }
+        ]
+      },
+      {
+        "recipientId": "K118",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "차단문 전술을 서남 경비와 거래",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/136"
+          }
+        ]
+      },
+      {
+        "recipientId": "K489",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "허하우는 전력장치 순찰 중 무장 난입자를 문 밖에 붙들고 이강묵에게 현장을 알린다. 이강묵은 경비 명부와 출입 경위를 다시 확인해, 설비 점검을 가장한 접근이었는지 살피고 그 단속 내역을 치안 실적에 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/263"
+          }
+        ]
+      },
+      {
+        "recipientId": "K537",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "차차환은 전력장치 순찰에서 매복 흔적을 읽으면 이강묵에게 접근 위치를 알린다. 이강묵은 해당 길목의 경비와 출입을 확인해 설비 주변에서 실제 침투가 이어지는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/305"
+          }
+        ]
+      },
+      {
+        "recipientId": "K041",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "이강묵의 차단문 지휘를 받되 김나율의 시민권 명부를 지키는 이중 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/30"
+          }
+        ]
+      }
+    ],
+    "court": {
+      "id": "court:K032",
+      "ownerPersonId": "K032",
+      "stateId": "S02",
+      "retainers": [
+        {
+          "personId": "K041",
+          "liegePersonId": "K032",
+          "courtId": "court:K032",
+          "sourceRow": 30,
+          "role": "이강묵의 차단문 지휘를 받되 김나율의 시민권 명부를 지키는 이중 계약이고",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/37"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/30"
+            }
+          ]
+        }
+      ]
+    },
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K032",
     "personId": "person-0032",
@@ -189,6 +603,18 @@
         "type": "계약",
         "to": "이강묵",
         "basis": "차단문 전술을 서남 경비와 거래"
+      },
+      {
+        "from": "허하우",
+        "type": "계약",
+        "to": "이강묵",
+        "basis": "허하우는 전력장치 순찰 중 무장 난입자를 문 밖에 붙들고 이강묵에게 현장을 알린다. 이강묵은 경비 명부와 출입 경위를 다시 확인해, 설비 점검을 가장한 접근이었는지 살피고 그 단속 내역을 치안 실적에 남긴다."
+      },
+      {
+        "from": "차차환",
+        "type": "계약",
+        "to": "이강묵",
+        "basis": "차차환은 전력장치 순찰에서 매복 흔적을 읽으면 이강묵에게 접근 위치를 알린다. 이강묵은 해당 길목의 경비와 출입을 확인해 설비 주변에서 실제 침투가 이어지는지 살핀다."
       },
       {
         "from": "채리울",

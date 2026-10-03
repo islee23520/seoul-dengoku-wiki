@@ -12,6 +12,429 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-고다호",
   "detailRoute": "/people/person-0838",
+  "birthDate": "2089-06-18",
+  "birthday": "06-18",
+  "age": 37,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/534",
+    "lore/characters/Cast-State-15.json#/content/535",
+    "lore/characters/Cast-State-15.json#/content/536",
+    "lore/characters/Cast-State-15.json#/content/537"
+  ],
+  "familyTree": {
+    "personId": "K838",
+    "nodes": [
+      {
+        "id": "K838",
+        "personId": "K838",
+        "kind": "person",
+        "name": "고다호",
+        "birthDate": "2089-06-18",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K838"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-고다호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0838"
+      },
+      {
+        "id": "FH-K838-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "고현민",
+        "birthDate": "2059-06-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2097,
+            "summary": "고현민은 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-고다호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K838-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "고현원",
+        "birthDate": "2029-06-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2067,
+            "summary": "고현원은 노량진 선창에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-고다호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K838-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "고현진",
+        "birthDate": "1999-06-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "고현진은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-고다호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K838-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조도문",
+        "birthDate": "2059-06-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2097,
+            "summary": "조도문은 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-고다호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K838-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김도혁",
+        "birthDate": "2029-06-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2067,
+            "summary": "김도혁은 노량진 선창에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-고다호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K838-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "박도빈",
+        "birthDate": "1999-06-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박도빈은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-고다호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K838-P-01:K838:biological",
+        "from": "FH-K838-P-01",
+        "to": "K838",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K838-P-02:FH-K838-P-01:biological",
+        "from": "FH-K838-P-02",
+        "to": "FH-K838-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K838-P-03:FH-K838-P-02:biological",
+        "from": "FH-K838-P-03",
+        "to": "FH-K838-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K838-M-01:K838:biological",
+        "from": "FH-K838-M-01",
+        "to": "K838",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K838-M-02:FH-K838-M-01:biological",
+        "from": "FH-K838-M-02",
+        "to": "FH-K838-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K838-M-03:FH-K838-M-02:biological",
+        "from": "FH-K838-M-03",
+        "to": "FH-K838-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-고다호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K838",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K838-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4037"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K838-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4040"
+          }
+        ]
+      },
+      {
+        "recipientId": "K394",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "고다호는 선거 기록의 교대 서명과 누락을 창고운에게 넘긴다. 창고운은 서기 함의 선거 봉인을 확인해 다른 정서 문서와 선거 기록 인수를 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/569"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K838",
     "personId": "person-0838",
@@ -133,17 +556,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교우. 직함은 명동역 선거 기록 서기. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
     "일화": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 고다호는 선거 기록의 교대 서명과 누락을 창고운에게 넘긴다. 창고운은 서기 함의 선거 봉인을 확인해 다른 정서 문서와 선거 기록 인수를 구분한다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.",
     "개입": "명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "고다호는 명동역 선거 기록 서기 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 선거 기록·인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 선거 기록 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 선거 기록 서기. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −5 | 물질 80 | 공동 −25 | 원칙 −60 | 공개 −30 | 자격 10 | 분산 −10 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 0 | 과시 50 | 지속 20 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "고다호는 명동역 선거 기록 서기 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 선거 기록·인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 선거 기록 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 선거 기록 서기. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 고다호는 선거 기록의 교대 서명과 누락을 창고운에게 넘긴다. 창고운은 서기 함의 선거 봉인을 확인해 다른 정서 문서와 선거 기록 인수를 구분한다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 선거 기록 서기 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 선거 기록 서기의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −5 | 물질 80 | 공동 −25 | 원칙 −60 | 공개 −30 | 자격 10 | 분산 −10 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 0 | 과시 50 | 지속 20 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-15"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "고다호",
+        "type": "계약",
+        "to": "창고운",
+        "basis": "고다호는 선거 기록의 교대 서명과 누락을 창고운에게 넘긴다. 창고운은 서기 함의 선거 봉인을 확인해 다른 정서 문서와 선거 기록 인수를 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

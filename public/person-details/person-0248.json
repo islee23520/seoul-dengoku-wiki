@@ -12,6 +12,480 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-황세린",
   "detailRoute": "/people/person-0248",
+  "birthDate": "2076-02-07",
+  "birthday": "02-07",
+  "age": 50,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/61"
+  ],
+  "familyTree": {
+    "personId": "K247",
+    "nodes": [
+      {
+        "id": "K247",
+        "personId": "K247",
+        "kind": "person",
+        "name": "황세린",
+        "birthDate": "2076-02-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K247"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급 저울 주지 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-황세린-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0248"
+      },
+      {
+        "id": "FH-K247-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "황승현",
+        "birthDate": "2046-02-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "황승현은 영등포 정수 당직에서 배급 저울·잔량 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-황세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K247-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "황승영",
+        "birthDate": "2016-02-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "황승영은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-황세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K247-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현란",
+        "birthDate": "2046-02-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "임현란은 영등포 정수 당직에서 배급 저울·잔량 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-황세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K247-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현범",
+        "birthDate": "2016-02-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오현범은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-황세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K247-P-01:K247:biological",
+        "from": "FH-K247-P-01",
+        "to": "K247",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K247-P-02:FH-K247-P-01:biological",
+        "from": "FH-K247-P-02",
+        "to": "FH-K247-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K247-M-01:K247:biological",
+        "from": "FH-K247-M-01",
+        "to": "K247",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K247-M-02:FH-K247-M-01:biological",
+        "from": "FH-K247-M-02",
+        "to": "FH-K247-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-황세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K247",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K247-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1198"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K247-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1200"
+          }
+        ]
+      },
+      {
+        "recipientId": "K245",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "공개 배급표를 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/75"
+          }
+        ]
+      },
+      {
+        "recipientId": "K250",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "배급 감시를 민병으로 뒷받침",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/78"
+          }
+        ]
+      },
+      {
+        "recipientId": "K198",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "얼음·식량 호송을 검수",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/178"
+          }
+        ]
+      },
+      {
+        "recipientId": "K322",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "outgoing",
+        "role": "북한산보국문 약품 배급 감사를 빚짐",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/179"
+          }
+        ]
+      },
+      {
+        "recipientId": "K561",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "류아현은 공개한 비상배급표와 짐의 잔량을 황세린에게 넘긴다. 황세린은 두 감시인이 보는 저울로 배급량을 재고 남은 양을 벽에 적어, 창고에서 나온 짐이 배급 줄에서 줄어든 곳을 확인한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/326"
+          }
+        ]
+      },
+      {
+        "recipientId": "K705",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "최람훈은 짐에서 먼저 배분한 곡물과 남은 양을 황세린에게 넘긴다. 황세린은 두 감시인이 보는 저울로 배급량을 확인해 손실과 아직 나눌 몫을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/452"
+          }
+        ]
+      },
+      {
+        "recipientId": "K801",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "양새현은 공개 배급표와 짐의 잔량을 황세린에게 넘긴다. 황세린은 저울과 두 감시인의 확인으로 남은 몫을 재어 이미 배분한 물자가 다시 잡히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/536"
+          }
+        ]
+      },
+      {
+        "recipientId": "K251",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황세린의 배급 창고 옆 난로를 맡는다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/217"
+          }
+        ]
+      },
+      {
+        "recipientId": "K253",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황세린의 약품 배급 저울을 함께 본다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/220"
+          }
+        ]
+      },
+      {
+        "recipientId": "K260",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황세린의 배급 저울에 약초 몫을 올린다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/234"
+          }
+        ]
+      },
+      {
+        "recipientId": "K265",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황세린의 배급 줄에서 피해를 증언하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/126"
+          }
+        ]
+      },
+      {
+        "recipientId": "K269",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황세린의 공개 배급표를 숙영에서 집행하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/134"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K247",
     "personId": "person-0248",
@@ -180,6 +654,24 @@
         "type": "지휘",
         "to": "황세린",
         "basis": "배급 감시를 민병으로 뒷받침"
+      },
+      {
+        "from": "류아현",
+        "type": "계약",
+        "to": "황세린",
+        "basis": "류아현은 공개한 비상배급표와 짐의 잔량을 황세린에게 넘긴다. 황세린은 두 감시인이 보는 저울로 배급량을 재고 남은 양을 벽에 적어, 창고에서 나온 짐이 배급 줄에서 줄어든 곳을 확인한다."
+      },
+      {
+        "from": "최람훈",
+        "type": "계약",
+        "to": "황세린",
+        "basis": "최람훈은 짐에서 먼저 배분한 곡물과 남은 양을 황세린에게 넘긴다. 황세린은 두 감시인이 보는 저울로 배급량을 확인해 손실과 아직 나눌 몫을 구분한다."
+      },
+      {
+        "from": "양새현",
+        "type": "계약",
+        "to": "황세린",
+        "basis": "양새현은 공개 배급표와 짐의 잔량을 황세린에게 넘긴다. 황세린은 저울과 두 감시인의 확인으로 남은 몫을 재어 이미 배분한 물자가 다시 잡히지 않게 한다."
       },
       {
         "from": "두감",

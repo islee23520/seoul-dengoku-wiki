@@ -12,6 +12,539 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-이윤서",
   "detailRoute": "/people/person-0120",
+  "birthDate": "2089-07-17",
+  "birthday": "07-17",
+  "age": 37,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/82",
+    "lore/characters/Cast-State-05.json#/content/84"
+  ],
+  "familyTree": {
+    "personId": "K119",
+    "nodes": [
+      {
+        "id": "K119",
+        "personId": "K119",
+        "kind": "person",
+        "name": "이윤서",
+        "birthDate": "2089-07-17",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K119"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 교량봉쇄대장 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이윤서-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0120"
+      },
+      {
+        "id": "FH-K119-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승빈",
+        "birthDate": "2059-07-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2097,
+            "summary": "이승빈은 암사 경비 초소에서 교량 통행·야간 봉쇄 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이윤서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K119-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승솔",
+        "birthDate": "2029-07-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2067,
+            "summary": "이승솔은 암사 경비 초소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이윤서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K119-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승미",
+        "birthDate": "1999-07-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이승미는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이윤서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K119-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김현석",
+        "birthDate": "2059-07-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2097,
+            "summary": "김현석은 암사 경비 초소에서 교량 통행·야간 봉쇄 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이윤서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K119-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승도",
+        "birthDate": "2029-07-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2067,
+            "summary": "박승도는 암사 경비 초소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이윤서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K119-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승도",
+        "birthDate": "1999-07-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이승도는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이윤서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K119-P-01:K119:biological",
+        "from": "FH-K119-P-01",
+        "to": "K119",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K119-P-02:FH-K119-P-01:biological",
+        "from": "FH-K119-P-02",
+        "to": "FH-K119-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K119-P-03:FH-K119-P-02:biological",
+        "from": "FH-K119-P-03",
+        "to": "FH-K119-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K119-M-01:K119:biological",
+        "from": "FH-K119-M-01",
+        "to": "K119",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K119-M-02:FH-K119-M-01:biological",
+        "from": "FH-K119-M-02",
+        "to": "FH-K119-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K119-M-03:FH-K119-M-02:biological",
+        "from": "FH-K119-M-03",
+        "to": "FH-K119-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이윤서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K119",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K119-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/582"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K119-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/585"
+          }
+        ]
+      },
+      {
+        "recipientId": "K115",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "동부 교량 봉쇄 지휘를 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/49"
+          }
+        ]
+      },
+      {
+        "recipientId": "K348",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "outgoing",
+        "role": "능선 정찰과 교량 통행을 겨룸",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/138"
+          }
+        ]
+      },
+      {
+        "recipientId": "K296",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "outgoing",
+        "role": "의료열차 중립을 마지막 예외로 남긴 빚",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/139"
+          }
+        ]
+      },
+      {
+        "recipientId": "K460",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "구한결은 동부 야간 순찰에서 확인한 무단 출입과 암호패 교체 소식을 이윤서에게 전한다. 이윤서는 교량의 야간 출입에서 동방사 암호패를 확인하고 의료열차 예외를 따로 살펴, 바뀐 암호패 때문에 정상 호송과 침입자를 혼동하지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/238"
+          }
+        ]
+      },
+      {
+        "recipientId": "K508",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "강하준은 야간 무단 출입을 적발해 암호패를 바꾸면 이윤서에게 교체 사실을 전한다. 이윤서는 교량의 야간 출입에서 새 확인 내용을 살펴, 이전 암호패를 든 사람이 정상 순찰로 통과하지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/280"
+          }
+        ]
+      },
+      {
+        "recipientId": "K556",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신강민은 무장 난입자를 문 밖에 붙들고 명부 재점검 내용을 이윤서에게 전한다. 이윤서는 교량의 주간 전표와 야간 암호패를 확인해, 난입자가 다른 출입구에서 정상 통행으로 처리되는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/322"
+          }
+        ]
+      },
+      {
+        "recipientId": "K844",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "유솔훈은 야간 순찰 암호패 교체 내용을 이윤서에게 전한다. 이윤서는 교량 출입에서 최신 확인 내용을 받아 이전 암호패의 접근과 정상 순찰을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/574"
+          }
+        ]
+      },
+      {
+        "recipientId": "K125",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "이윤서의 교량 봉쇄 시계에 화물 순번을 맞추며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/99"
+          }
+        ]
+      },
+      {
+        "recipientId": "K129",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/106"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K119",
     "personId": "person-0120",
@@ -181,6 +714,30 @@
       }
     ],
     "incoming": [
+      {
+        "from": "구한결",
+        "type": "계약",
+        "to": "이윤서",
+        "basis": "구한결은 동부 야간 순찰에서 확인한 무단 출입과 암호패 교체 소식을 이윤서에게 전한다. 이윤서는 교량의 야간 출입에서 동방사 암호패를 확인하고 의료열차 예외를 따로 살펴, 바뀐 암호패 때문에 정상 호송과 침입자를 혼동하지 않게 한다."
+      },
+      {
+        "from": "강하준",
+        "type": "계약",
+        "to": "이윤서",
+        "basis": "강하준은 야간 무단 출입을 적발해 암호패를 바꾸면 이윤서에게 교체 사실을 전한다. 이윤서는 교량의 야간 출입에서 새 확인 내용을 살펴, 이전 암호패를 든 사람이 정상 순찰로 통과하지 않게 한다."
+      },
+      {
+        "from": "신강민",
+        "type": "계약",
+        "to": "이윤서",
+        "basis": "신강민은 무장 난입자를 문 밖에 붙들고 명부 재점검 내용을 이윤서에게 전한다. 이윤서는 교량의 주간 전표와 야간 암호패를 확인해, 난입자가 다른 출입구에서 정상 통행으로 처리되는지 살핀다."
+      },
+      {
+        "from": "유솔훈",
+        "type": "계약",
+        "to": "이윤서",
+        "basis": "유솔훈은 야간 순찰 암호패 교체 내용을 이윤서에게 전한다. 이윤서는 교량 출입에서 최신 확인 내용을 받아 이전 암호패의 접근과 정상 순찰을 구분한다."
+      },
       {
         "from": "주은솔",
         "type": "계약",

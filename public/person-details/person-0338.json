@@ -12,6 +12,552 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-동주하",
   "detailRoute": "/people/person-0338",
+  "birthDate": "2089-01-31",
+  "birthday": "01-31",
+  "age": 37,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/39"
+  ],
+  "familyTree": {
+    "personId": "K337",
+    "nodes": [
+      {
+        "id": "K337",
+        "personId": "K337",
+        "kind": "person",
+        "name": "동주하",
+        "birthDate": "2089-01-31",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K337"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 제기동 약재 검수 전문의 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-동주하-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0338"
+      },
+      {
+        "id": "FH-K337-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "동승호",
+        "birthDate": "2059-01-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2097,
+            "summary": "동승호는 노량진 선창에서 약재 원산지·건조 일자 검수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-동주하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K337-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "동승민",
+        "birthDate": "2029-01-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2067,
+            "summary": "동승민은 노량진 선창에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-동주하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K337-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "동승원",
+        "birthDate": "1999-01-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "동승원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-동주하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K337-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준은",
+        "birthDate": "2059-01-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2097,
+            "summary": "이준은은 노량진 선창에서 약재 원산지·건조 일자 검수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-동주하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K337-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준범",
+        "birthDate": "2029-01-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2067,
+            "summary": "최준범은 노량진 선창에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-동주하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K337-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준진",
+        "birthDate": "1999-01-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정준진은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-동주하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K337-P-01:K337:biological",
+        "from": "FH-K337-P-01",
+        "to": "K337",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K337-P-02:FH-K337-P-01:biological",
+        "from": "FH-K337-P-02",
+        "to": "FH-K337-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K337-P-03:FH-K337-P-02:biological",
+        "from": "FH-K337-P-03",
+        "to": "FH-K337-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K337-M-01:K337:biological",
+        "from": "FH-K337-M-01",
+        "to": "K337",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K337-M-02:FH-K337-M-01:biological",
+        "from": "FH-K337-M-02",
+        "to": "FH-K337-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K337-M-03:FH-K337-M-02:biological",
+        "from": "FH-K337-M-03",
+        "to": "FH-K337-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-동주하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K337",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K337-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1632"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K337-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1635"
+          }
+        ]
+      },
+      {
+        "recipientId": "K468",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "강달유는 관리하는 약재의 출처와 건조 일자를 동주하에게 가져가 검수받는다. 동주하는 말목의 날짜와 원산지를 살피고 진료 배정 날인을 확인해, 격리 환자에게 쓸 약재가 확인되지 않은 대량 출고에 섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/245"
+          }
+        ]
+      },
+      {
+        "recipientId": "K516",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신하빈은 수술에 쓴 약재의 관리 기록을 동주하에게 넘겨 다음 공급을 검수받는다. 동주하는 원산지와 건조 일자를 확인하고 진료 배정 날인에 맞춰 출하 순서를 잡아 정전 뒤의 진료가 약재 공백으로 다시 끊기지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/287"
+          }
+        ]
+      },
+      {
+        "recipientId": "K756",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "안차민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 부족한 물자를 다음 출하에서 확인된 공급으로 잇는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/497"
+          }
+        ]
+      },
+      {
+        "recipientId": "K804",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "허타우는 격리 환자에게 쓸 약재의 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 왕진에 필요한 공급을 검수한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/539"
+          }
+        ]
+      },
+      {
+        "recipientId": "K948",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "안서민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 다음 공급을 검수한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/666"
+          }
+        ]
+      },
+      {
+        "recipientId": "K329",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "동주하의 시장 저울에 무게를 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/291"
+          }
+        ]
+      },
+      {
+        "recipientId": "K335",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "동주하의 시장 하역과 줄을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/303"
+          }
+        ]
+      },
+      {
+        "recipientId": "K323",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "심달호의 경매 규칙을 저울에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/306"
+          }
+        ]
+      },
+      {
+        "recipientId": "K329",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "동늘솔의 운송 무게를 같은 눈금에 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/307"
+          }
+        ]
+      },
+      {
+        "recipientId": "K341",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "동주하의 저울 봉인과 증언을 겹치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/166"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K337",
     "personId": "person-0338",
@@ -181,6 +727,36 @@
       }
     ],
     "incoming": [
+      {
+        "from": "강달유",
+        "type": "계약",
+        "to": "동주하",
+        "basis": "강달유는 관리하는 약재의 출처와 건조 일자를 동주하에게 가져가 검수받는다. 동주하는 말목의 날짜와 원산지를 살피고 진료 배정 날인을 확인해, 격리 환자에게 쓸 약재가 확인되지 않은 대량 출고에 섞이지 않게 한다."
+      },
+      {
+        "from": "신하빈",
+        "type": "계약",
+        "to": "동주하",
+        "basis": "신하빈은 수술에 쓴 약재의 관리 기록을 동주하에게 넘겨 다음 공급을 검수받는다. 동주하는 원산지와 건조 일자를 확인하고 진료 배정 날인에 맞춰 출하 순서를 잡아 정전 뒤의 진료가 약재 공백으로 다시 끊기지 않게 한다."
+      },
+      {
+        "from": "안차민",
+        "type": "계약",
+        "to": "동주하",
+        "basis": "안차민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 부족한 물자를 다음 출하에서 확인된 공급으로 잇는다."
+      },
+      {
+        "from": "허타우",
+        "type": "계약",
+        "to": "동주하",
+        "basis": "허타우는 격리 환자에게 쓸 약재의 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 왕진에 필요한 공급을 검수한다."
+      },
+      {
+        "from": "안서민",
+        "type": "계약",
+        "to": "동주하",
+        "basis": "안서민은 약재 사용량과 남은 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 다음 공급을 검수한다."
+      },
       {
         "from": "동늘솔",
         "type": "계약",

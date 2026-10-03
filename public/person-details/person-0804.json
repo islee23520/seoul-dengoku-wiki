@@ -12,6 +12,428 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-허타우",
   "detailRoute": "/people/person-0804",
+  "birthDate": "2087-10-04",
+  "birthday": "10-04",
+  "age": 39,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/523",
+    "lore/characters/Cast-State-13.json#/content/525",
+    "lore/characters/Cast-State-13.json#/content/526"
+  ],
+  "familyTree": {
+    "personId": "K804",
+    "nodes": [
+      {
+        "id": "K804",
+        "personId": "K804",
+        "kind": "person",
+        "name": "허타우",
+        "birthDate": "2087-10-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K804"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-허타우-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0804"
+      },
+      {
+        "id": "FH-K804-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승미",
+        "birthDate": "2057-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2095,
+            "summary": "허승미는 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-허타우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K804-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승도",
+        "birthDate": "2027-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2065,
+            "summary": "허승도는 제기동 의무소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-허타우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K804-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "허현석",
+        "birthDate": "1997-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "허현석은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-허타우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K804-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박도찬",
+        "birthDate": "2057-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2095,
+            "summary": "박도찬은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-허타우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K804-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도혁",
+        "birthDate": "2027-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2065,
+            "summary": "이도혁은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-허타우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K804-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "최도리",
+        "birthDate": "1997-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최도리는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-허타우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K804-P-01:K804:biological",
+        "from": "FH-K804-P-01",
+        "to": "K804",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K804-P-02:FH-K804-P-01:biological",
+        "from": "FH-K804-P-02",
+        "to": "FH-K804-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K804-P-03:FH-K804-P-02:biological",
+        "from": "FH-K804-P-03",
+        "to": "FH-K804-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K804-M-01:K804:biological",
+        "from": "FH-K804-M-01",
+        "to": "K804",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K804-M-02:FH-K804-M-01:biological",
+        "from": "FH-K804-M-02",
+        "to": "FH-K804-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K804-M-03:FH-K804-M-02:biological",
+        "from": "FH-K804-M-03",
+        "to": "FH-K804-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-허타우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K804",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K804-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3877"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K804-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3880"
+          }
+        ]
+      },
+      {
+        "recipientId": "K337",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "허타우는 격리 환자에게 쓸 약재의 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 왕진에 필요한 공급을 검수한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/539"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K804",
     "personId": "person-0804",
@@ -145,17 +567,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 전염 의심 환자를 격리 칸에 두고 왕진을 멈추지 않았다. 이 일로 약재 관리 수련의 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 허타우는 격리 환자에게 쓸 약재의 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 왕진에 필요한 공급을 검수한다.",
     "야망": "약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.",
     "공포": "약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 관리 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 전염 의심 환자를 격리 칸에 두고 왕진을 멈추지 않았다. 이 일로 약재 관리 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −55 | 물질 −5 | 공동 20 | 원칙 25 | 공개 15 | 자격 20 | 분산 15 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −30 | 위험 25 | 과시 −20 | 지속 20 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 관리 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 전염 의심 환자를 격리 칸에 두고 왕진을 멈추지 않았다. 이 일로 약재 관리 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 허타우는 격리 환자에게 쓸 약재의 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 왕진에 필요한 공급을 검수한다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −55 | 물질 −5 | 공동 20 | 원칙 25 | 공개 15 | 자격 20 | 분산 15 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −30 | 위험 25 | 과시 −20 | 지속 20 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-13"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "허타우",
+        "type": "계약",
+        "to": "동주하",
+        "basis": "허타우는 격리 환자에게 쓸 약재의 관리 기록을 동주하에게 넘긴다. 동주하는 원산지·건조 일자와 진료 배정 날인을 확인해 왕진에 필요한 공급을 검수한다."
+      }
+    ],
     "incoming": []
   }
 }

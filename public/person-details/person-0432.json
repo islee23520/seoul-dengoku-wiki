@@ -12,6 +12,328 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-임유나",
   "detailRoute": "/people/person-0432",
+  "birthDate": "2082-02-06",
+  "birthday": "02-06",
+  "age": 44,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/270",
+    "lore/characters/Cast-State-09.json#/content/272",
+    "lore/characters/Cast-State-09.json#/content/273"
+  ],
+  "familyTree": {
+    "personId": "K432",
+    "nodes": [
+      {
+        "id": "K432",
+        "personId": "K432",
+        "kind": "person",
+        "name": "임유나",
+        "birthDate": "2082-02-06",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K432"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 환전 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-임유나-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0432"
+      },
+      {
+        "id": "FH-K432-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임준욱",
+        "birthDate": "2052-02-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "임준욱은 신내 환승 당직에서 환전 전령 인수·장부 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-임유나-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K432-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임준란",
+        "birthDate": "2022-02-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임준란은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-임유나-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K432-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박준솔",
+        "birthDate": "2052-02-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "박준솔은 신내 환승 당직에서 환전 전령 인수·장부 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-임유나-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K432-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준솔",
+        "birthDate": "2022-02-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이준솔은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-임유나-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K432-P-01:K432:biological",
+        "from": "FH-K432-P-01",
+        "to": "K432",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K432-P-02:FH-K432-P-01:biological",
+        "from": "FH-K432-P-02",
+        "to": "FH-K432-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K432-M-01:K432:biological",
+        "from": "FH-K432-M-01",
+        "to": "K432",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K432-M-02:FH-K432-M-01:biological",
+        "from": "FH-K432-M-02",
+        "to": "FH-K432-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-임유나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K432",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K432-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2098"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K432-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2100"
+          }
+        ]
+      },
+      {
+        "recipientId": "K230",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "임유나는 환전 장부를 전달하다 통로가 막히면 복두모의 실측·갱신 기록과 전달 경로를 맞춰 본다. 복두모는 실측하지 않은 구간을 점선으로 남기고 독립 목격이 부족한 좌표를 원판에 올리지 않아, 전령이 확인된 길과 아직 확인되지 않은 길을 구분하게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/214"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K432",
     "personId": "person-0432",
@@ -145,17 +467,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 환전 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 환전 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 임유나는 환전 장부를 전달하다 통로가 막히면 복두모의 실측·갱신 기록과 전달 경로를 맞춰 본다. 복두모는 실측하지 않은 구간을 점선으로 남기고 독립 목격이 부족한 좌표를 원판에 올리지 않아, 전령이 확인된 길과 아직 확인되지 않은 길을 구분하게 한다.",
     "야망": "환전 전령 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.",
     "공포": "환전 전령 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 환전 전령 인수·장부 전달\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 환전 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환전 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 환전 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 환전 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 환전 전령 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 환전 전령 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −40 | 물질 −20 | 공동 −10 | 원칙 25 | 공개 75 | 자격 5 | 분산 20 | 변혁 5\n- 욕망: 갈망 15 | 독점 40 | 위험 30 | 과시 −10 | 지속 5 | 지향 동성 | 결합 계약동거",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 환전 전령 인수·장부 전달\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 환전 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환전 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 환전 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 환전 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 임유나는 환전 장부를 전달하다 통로가 막히면 복두모의 실측·갱신 기록과 전달 경로를 맞춰 본다. 복두모는 실측하지 않은 구간을 점선으로 남기고 독립 목격이 부족한 좌표를 원판에 올리지 않아, 전령이 확인된 길과 아직 확인되지 않은 길을 구분하게 한다.\n\n**야망.** 환전 전령 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 환전 전령 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −40 | 물질 −20 | 공동 −10 | 원칙 25 | 공개 75 | 자격 5 | 분산 20 | 변혁 5\n- 욕망: 갈망 15 | 독점 40 | 위험 30 | 과시 −10 | 지속 5 | 지향 동성 | 결합 계약동거",
   "sources": [
     "Cast-State-09"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "임유나",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "임유나는 환전 장부를 전달하다 통로가 막히면 복두모의 실측·갱신 기록과 전달 경로를 맞춰 본다. 복두모는 실측하지 않은 구간을 점선으로 남기고 독립 목격이 부족한 좌표를 원판에 올리지 않아, 전령이 확인된 길과 아직 확인되지 않은 길을 구분하게 한다."
+      }
+    ],
     "incoming": []
   }
 }

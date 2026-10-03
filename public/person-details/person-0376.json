@@ -12,6 +12,399 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-라진우",
   "detailRoute": "/people/person-0376",
+  "birthDate": "2066-04-24",
+  "birthday": "04-24",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/71",
+    "lore/characters/Cast-State-15.json#/content/72",
+    "lore/characters/Cast-State-15.json#/content/73",
+    "lore/characters/Cast-State-15.json#/content/74"
+  ],
+  "familyTree": {
+    "personId": "K375",
+    "nodes": [
+      {
+        "id": "K375",
+        "personId": "K375",
+        "kind": "person",
+        "name": "라진우",
+        "birthDate": "2066-04-24",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K375"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 교구 명부 보관 부제 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-라진우-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0376"
+      },
+      {
+        "id": "FH-K375-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "라승호",
+        "birthDate": "2036-04-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "라승호는 대합실 당직에서 교구 명부 보관·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-라진우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K375-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "라승민",
+        "birthDate": "2006-04-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "라승민은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-라진우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K375-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준아",
+        "birthDate": "2036-04-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "정준아는 대합실 당직에서 교구 명부 보관·선거 보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-라진우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K375-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준규",
+        "birthDate": "2006-04-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤준규는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-라진우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K375-P-01:K375:biological",
+        "from": "FH-K375-P-01",
+        "to": "K375",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K375-P-02:FH-K375-P-01:biological",
+        "from": "FH-K375-P-02",
+        "to": "FH-K375-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K375-M-01:K375:biological",
+        "from": "FH-K375-M-01",
+        "to": "K375",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K375-M-02:FH-K375-M-01:biological",
+        "from": "FH-K375-M-02",
+        "to": "FH-K375-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-라진우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K375",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K375-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1826"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K375-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1828"
+          }
+        ]
+      },
+      {
+        "recipientId": "K373",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "비공개 비상배급 창고를 지킴",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/100"
+          }
+        ]
+      },
+      {
+        "recipientId": "K380",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "라진우의 재고 칸에 파렛트 번호를 맞추는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/338"
+          }
+        ]
+      },
+      {
+        "recipientId": "K382",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "라진우의 창고 순번을 막대로 돌리는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/342"
+          }
+        ]
+      },
+      {
+        "recipientId": "K384",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "라진우에게 우회 실측을 넘기고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/346"
+          }
+        ]
+      },
+      {
+        "recipientId": "K386",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "라진우의 재고 원장을 기지에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/350"
+          }
+        ]
+      },
+      {
+        "recipientId": "K393",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "라진우의 재고 원장과 인파 줄을 나누고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/198"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K375",
     "personId": "person-0376",

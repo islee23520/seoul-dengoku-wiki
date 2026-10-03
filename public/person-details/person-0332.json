@@ -12,6 +12,496 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-수초롱",
   "detailRoute": "/people/person-0332",
+  "birthDate": "2098-03-16",
+  "birthday": "03-16",
+  "age": 28,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/138"
+  ],
+  "familyTree": {
+    "personId": "K331",
+    "nodes": [
+      {
+        "id": "K331",
+        "personId": "K331",
+        "kind": "person",
+        "name": "수초롱",
+        "birthDate": "2098-03-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K331"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 제기동 방역 수련의 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수초롱-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0332"
+      },
+      {
+        "id": "FH-K331-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "수승석",
+        "birthDate": "2068-03-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "수승석은 암사 경비 초소에서 격리 확인·해제 순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수초롱-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K331-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "수승준",
+        "birthDate": "2038-03-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "수승준은 암사 경비 초소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수초롱-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K331-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "수승호",
+        "birthDate": "2008-03-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "수승호는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수초롱-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K331-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임준현",
+        "birthDate": "2068-03-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "임준현은 암사 경비 초소에서 격리 확인·해제 순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수초롱-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K331-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오준원",
+        "birthDate": "2038-03-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "오준원은 암사 경비 초소에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수초롱-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K331-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현미",
+        "birthDate": "2008-03-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송현미는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-수초롱-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K331-P-01:K331:biological",
+        "from": "FH-K331-P-01",
+        "to": "K331",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K331-P-02:FH-K331-P-01:biological",
+        "from": "FH-K331-P-02",
+        "to": "FH-K331-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K331-P-03:FH-K331-P-02:biological",
+        "from": "FH-K331-P-03",
+        "to": "FH-K331-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K331-M-01:K331:biological",
+        "from": "FH-K331-M-01",
+        "to": "K331",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K331-M-02:FH-K331-M-01:biological",
+        "from": "FH-K331-M-02",
+        "to": "FH-K331-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K331-M-03:FH-K331-M-02:biological",
+        "from": "FH-K331-M-03",
+        "to": "FH-K331-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-수초롱-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K331",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K331-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1602"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K331-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1605"
+          }
+        ]
+      },
+      {
+        "recipientId": "K596",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신나빈은 방역 장부의 이중 지급을 정정한 서명을 수초롱에게 전한다. 수초롱은 격리 출입 도장과 현장 확인을 살펴 같은 출입이나 해제가 중복 기록된 곳을 찾고, 수질·약효 기록 전에는 해제 순찰을 돌지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/357"
+          }
+        ]
+      },
+      {
+        "recipientId": "K644",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "문바은은 보존한 방역 필사본을 수초롱의 출입 확인에 넘긴다. 수초롱은 현장의 격리 막과 도장을 확인해 흐린 기록을 해제 근거로 받아들이지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/399"
+          }
+        ]
+      },
+      {
+        "recipientId": "K740",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "진숲혁은 방역 기록의 중복 지급 정정과 인수 서명을 수초롱에게 넘긴다. 수초롱은 현장 출입 도장과 격리 상태를 확인해 같은 출입이 두 번 기록된 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/483"
+          }
+        ]
+      },
+      {
+        "recipientId": "K836",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "류돌연은 방역 필사본을 수초롱에게 인계한다. 수초롱은 현장의 격리 막과 출입 도장을 확인해 흐린 기록이 해제 근거로 쓰이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/567"
+          }
+        ]
+      },
+      {
+        "recipientId": "K325",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "라세영의 지휘로 동측 골목을 돌고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/294"
+          }
+        ]
+      },
+      {
+        "recipientId": "K332",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "선나휘의 봉쇄 전갈이 오기 전에는 말목을 뽑지 않는다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/295"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K331",
     "personId": "person-0332",
@@ -181,6 +671,31 @@
         "basis": "선나휘의 봉쇄 전갈이 오기 전에는 말목을 뽑지 않는다"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "신나빈",
+        "type": "계약",
+        "to": "수초롱",
+        "basis": "신나빈은 방역 장부의 이중 지급을 정정한 서명을 수초롱에게 전한다. 수초롱은 격리 출입 도장과 현장 확인을 살펴 같은 출입이나 해제가 중복 기록된 곳을 찾고, 수질·약효 기록 전에는 해제 순찰을 돌지 않는다."
+      },
+      {
+        "from": "문바은",
+        "type": "계약",
+        "to": "수초롱",
+        "basis": "문바은은 보존한 방역 필사본을 수초롱의 출입 확인에 넘긴다. 수초롱은 현장의 격리 막과 도장을 확인해 흐린 기록을 해제 근거로 받아들이지 않는다."
+      },
+      {
+        "from": "진숲혁",
+        "type": "계약",
+        "to": "수초롱",
+        "basis": "진숲혁은 방역 기록의 중복 지급 정정과 인수 서명을 수초롱에게 넘긴다. 수초롱은 현장 출입 도장과 격리 상태를 확인해 같은 출입이 두 번 기록된 곳을 찾는다."
+      },
+      {
+        "from": "류돌연",
+        "type": "계약",
+        "to": "수초롱",
+        "basis": "류돌연은 방역 필사본을 수초롱에게 인계한다. 수초롱은 현장의 격리 막과 출입 도장을 확인해 흐린 기록이 해제 근거로 쓰이지 않게 한다."
+      }
+    ]
   }
 }

@@ -12,6 +12,328 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-서준서",
   "detailRoute": "/people/person-0435",
+  "birthDate": "2068-04-16",
+  "birthday": "04-16",
+  "age": 58,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/270",
+    "lore/characters/Cast-State-12.json#/content/272",
+    "lore/characters/Cast-State-12.json#/content/273"
+  ],
+  "familyTree": {
+    "personId": "K435",
+    "nodes": [
+      {
+        "id": "K435",
+        "personId": "K435",
+        "kind": "person",
+        "name": "서준서",
+        "birthDate": "2068-04-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K435"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-서준서-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0435"
+      },
+      {
+        "id": "FH-K435-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승경",
+        "birthDate": "2038-04-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "서승경은 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-서준서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K435-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승수",
+        "birthDate": "2008-04-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "서승수는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-서준서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K435-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준빈",
+        "birthDate": "2038-04-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "정준빈은 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-서준서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K435-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준온",
+        "birthDate": "2008-04-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤준온은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-서준서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K435-P-01:K435:biological",
+        "from": "FH-K435-P-01",
+        "to": "K435",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K435-P-02:FH-K435-P-01:biological",
+        "from": "FH-K435-P-02",
+        "to": "FH-K435-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K435-M-01:K435:biological",
+        "from": "FH-K435-M-01",
+        "to": "K435",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K435-M-02:FH-K435-M-01:biological",
+        "from": "FH-K435-M-02",
+        "to": "FH-K435-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-서준서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K435",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K435-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2112"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K435-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2114"
+          }
+        ]
+      },
+      {
+        "recipientId": "K309",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "서준서는 대기열 탐사 기록을 용봉의 승강장 대기열·중증도 표와 맞춰 본다. 환자 줄과 화물 줄이 뒤섞인 곳을 기록해 용봉에게 전하면, 용봉은 들것 순서와 하역 순서를 나누어 승강장의 혼선을 바로잡는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/218"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K435",
     "personId": "person-0435",
@@ -139,17 +461,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 대기열 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 대기열 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 서준서는 대기열 탐사 기록을 용봉의 승강장 대기열·중증도 표와 맞춰 본다. 환자 줄과 화물 줄이 뒤섞인 곳을 기록해 용봉에게 전하면, 용봉은 들것 순서와 하역 순서를 나누어 승강장의 혼선을 바로잡는다.",
     "야망": "대기열 탐사원 자리에서 신내운수의 장부를 끊기지 않게 잇는다.",
     "공포": "대기열 탐사원 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 대기열 탐사 기록·당직 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 대기열 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 대기열 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 대기열 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 대기열 탐사원 자리에서 신내운수의 장부를 끊기지 않게 잇는다.\n\n**공포.** 대기열 탐사원 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 50 | 무력 −30 | 물질 5 | 공동 25 | 원칙 15 | 공개 20 | 자격 15 | 분산 35 | 변혁 5\n- 욕망: 갈망 15 | 독점 −30 | 위험 −30 | 과시 −10 | 지속 10 | 지향 유동 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 대기열 탐사 기록·당직 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 대기열 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 대기열 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 대기열 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 서준서는 대기열 탐사 기록을 용봉의 승강장 대기열·중증도 표와 맞춰 본다. 환자 줄과 화물 줄이 뒤섞인 곳을 기록해 용봉에게 전하면, 용봉은 들것 순서와 하역 순서를 나누어 승강장의 혼선을 바로잡는다.\n\n**야망.** 대기열 탐사원 자리에서 신내운수의 장부를 끊기지 않게 잇는다.\n\n**공포.** 대기열 탐사원 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 50 | 무력 −30 | 물질 5 | 공동 25 | 원칙 15 | 공개 20 | 자격 15 | 분산 35 | 변혁 5\n- 욕망: 갈망 15 | 독점 −30 | 위험 −30 | 과시 −10 | 지속 10 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-12"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "서준서",
+        "type": "계약",
+        "to": "용봉",
+        "basis": "서준서는 대기열 탐사 기록을 용봉의 승강장 대기열·중증도 표와 맞춰 본다. 환자 줄과 화물 줄이 뒤섞인 곳을 기록해 용봉에게 전하면, 용봉은 들것 순서와 하역 순서를 나누어 승강장의 혼선을 바로잡는다."
+      }
+    ],
     "incoming": []
   }
 }

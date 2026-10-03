@@ -1,6 +1,6 @@
 {
   "id": "person-0187",
-  "name": "설우찬",
+  "name": "아데올라 아데예미",
   "title": "환적창고 비상발전 운전장",
   "position": "환적창고 비상발전 운전장",
   "rank": "주사",
@@ -10,8 +10,408 @@
   "stage": "S2",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-설우찬",
+  "sourceRoute": "/world/Cast-State-07#인물-아데올라 아데예미",
   "detailRoute": "/people/person-0187",
+  "birthDate": "2066-09-12",
+  "birthday": "09-12",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/182",
+    "lore/characters/Cast-State-07.json#/content/184"
+  ],
+  "familyTree": {
+    "personId": "K186",
+    "nodes": [
+      {
+        "id": "K186",
+        "personId": "K186",
+        "kind": "person",
+        "name": "아데올라 아데예미",
+        "birthDate": "2066-09-12",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K186"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 환적창고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아데올라-아데예미-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Adeola Adeyemi",
+        "detailRoute": "/people/person-0187"
+      },
+      {
+        "id": "FH-K186-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "바바툰데 아데예미",
+        "birthDate": "2036-09-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "바바툰데 아데예미는 2036년에 태어났다. 이태원·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2054년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아데올라-아데예미-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Babatunde Adeyemi was born in 2036 and grew up reading family and work records. From 2054, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Babatunde Adeyemi",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K186-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "올루세군 아데예미",
+        "birthDate": "2006-09-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "올루세군 아데예미는 2026년 대정전 당시 이태원·용산 생활권에서 이태원 민간 상점과 용산 전력 수선 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아데올라-아데예미-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Olusegun Adeyemi was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Olusegun Adeyemi",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K186-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "폴라케 올라디포",
+        "birthDate": "2036-09-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "폴라케 올라디포는 2036년에 태어났다. 이태원·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2054년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아데올라-아데예미-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Folake Oladipo was born in 2036 and grew up reading family and work records. From 2054, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Folake Oladipo",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K186-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "예툰데 올라디포",
+        "birthDate": "2006-09-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "예툰데 올라디포는 2026년 대정전 당시 이태원·용산 생활권에서 이태원 민간 상점과 용산 전력 수선 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아데올라-아데예미-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Yetunde Oladipo was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Yetunde Oladipo",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K186-P-01:K186:biological",
+        "from": "FH-K186-P-01",
+        "to": "K186",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K186-P-02:FH-K186-P-01:biological",
+        "from": "FH-K186-P-02",
+        "to": "FH-K186-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K186-M-01:K186:biological",
+        "from": "FH-K186-M-01",
+        "to": "K186",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K186-M-02:FH-K186-M-01:biological",
+        "from": "FH-K186-M-02",
+        "to": "FH-K186-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아데올라-아데예미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K186",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K186-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/902"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K186-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/904"
+          }
+        ]
+      },
+      {
+        "recipientId": "K446",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "앙투안 르페브르는 결빙을 제거한 송신탑의 상태와 안테나 정비 시각을 아데올라 아데예미에게 전한다. 아데올라 아데예미는 출력 일지를 확인해 정비 중단과 전력 공백을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/716"
+          }
+        ]
+      },
+      {
+        "recipientId": "K590",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "줄리아나 리드는 송신에 쓴 예비 전지와 교대 시각을 아데올라 아데예미에게 알린다. 아데올라 아데예미는 연료·출력 일지를 확인해 다음 송신 당직이 받을 전력 공백을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/725"
+          }
+        ]
+      },
+      {
+        "recipientId": "K830",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "아미나 은디아예는 송신탑 결빙 제거와 안테나 정비 상태를 아데올라 아데예미에게 알린다. 아데올라 아데예미는 출력 일지를 확인해 정비 중단과 공급 이상을 따로 다음 교대에 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/740"
+          }
+        ]
+      },
+      {
+        "recipientId": "K926",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "에티엔 모로는 송신에 쓴 예비 전지와 교대 시각을 아데올라 아데예미에게 전한다. 아데올라 아데예미는 연료·출력 기록을 확인해 남은 전력과 이미 사용한 공급을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/746"
+          }
+        ]
+      },
+      {
+        "recipientId": "K169",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "박태겸의 중계 유지에는 복종하되 은폐 배전은 거부한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/166"
+          }
+        ]
+      },
+      {
+        "recipientId": "K183",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "앙드레 뒤부아의 유치선 전력 배분을 발전 쪽에서 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/167"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K186",
     "personId": "person-0187",
@@ -92,9 +492,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "c124-c21c-cc3d",
-    "name": "순창 설씨",
-    "crest": "clan-crests/c124-c21c-cc3d.svg"
+    "id": "DIV-K186",
+    "name": "용산·이태원 아데예미씨",
+    "crest": "clan-crests/DIV-K186.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -129,34 +529,59 @@
     "욕망": "갈망 45 | 독점 −10 | 위험 10 | 과시 30 | 지속 0 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 환적창고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 환적창고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다. 아데올라 아데예미는 2066년에 태어났다. 나이지리아 요루바계 가계는 이태원·용산 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 환적창고 비상발전 운전장 업무를 맡는다. 올루세군 아데예미는 2026년 이태원·용산에서 이태원 민간 상점과 용산 전력 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아데올라 아데예미의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 요루바어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
-    "관직": "품계 주사. 직함은 환적창고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양채윤에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다.",
+    "관직": "품계 주사. 직함은 환적창고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 앙드레 뒤부아에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 환적창고 비상발전 운전장 자리의 서명이 장부에 올랐다.",
-    "관계": "양채윤의 유치선 전력 배분을 발전 쪽에서 받치고, 주서람의 칸 온도에 출력을 맞추며, 박태겸의 중계 유지에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+    "관계": "앙드레 뒤부아의 유치선 전력 배분을 발전 쪽에서 받치고, 나탈리야 소콜로바의 칸 온도에 출력을 맞추며, 박태겸의 중계 유지에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
     "야망": "용산 비상 발전과 창고 전력을 하나의 공개 배전망으로 묶어 환적 신용의 품질 주권을 지킨다.",
     "공포": "연료가 바닥난 밤에 냉동이 녹고, 그 공백을 노량진 결제권이 메우는 것.",
     "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
   },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 냉동 칸보다 가문 연회 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 비상발전 연료·출력 운전\n- 직함: 환적창고 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 환적창고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적창고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양채윤에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 환적창고 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 양채윤의 유치선 전력 배분을 발전 쪽에서 받치고, 주서람의 칸 온도에 출력을 맞추며, 박태겸의 중계 유지에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 용산 비상 발전과 창고 전력을 하나의 공개 배전망으로 묶어 환적 신용의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 노량진 결제권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 20 | 무력 −5 | 물질 30 | 공동 −10 | 원칙 0 | 공개 −15 | 자격 30 | 분산 10 | 변혁 5\n- 욕망: 갈망 45 | 독점 −10 | 위험 10 | 과시 30 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 냉동 칸보다 가문 연회 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 비상발전 연료·출력 운전\n- 직함: 환적창고 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 환적창고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다. 아데올라 아데예미는 2066년에 태어났다. 나이지리아 요루바계 가계는 이태원·용산 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 환적창고 비상발전 운전장 업무를 맡는다. 올루세군 아데예미는 2026년 이태원·용산에서 이태원 민간 상점과 용산 전력 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아데올라 아데예미의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 요루바어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적창고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 앙드레 뒤부아에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 환적창고 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 앙드레 뒤부아의 유치선 전력 배분을 발전 쪽에서 받치고, 나탈리야 소콜로바의 칸 온도에 출력을 맞추며, 박태겸의 중계 유지에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 용산 비상 발전과 창고 전력을 하나의 공개 배전망으로 묶어 환적 신용의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 노량진 결제권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 20 | 무력 −5 | 물질 30 | 공동 −10 | 원칙 0 | 공개 −15 | 자격 30 | 분산 10 | 변혁 5\n- 욕망: 갈망 45 | 독점 −10 | 위험 10 | 과시 30 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "설우찬",
+        "from": "아데올라 아데예미",
         "type": "계약",
         "to": "박태겸",
         "basis": "박태겸의 중계 유지에는 복종하되 은폐 배전은 거부한다"
       },
       {
-        "from": "설우찬",
+        "from": "아데올라 아데예미",
         "type": "계약",
-        "to": "양채윤",
-        "basis": "양채윤의 유치선 전력 배분을 발전 쪽에서 받치고"
+        "to": "앙드레 뒤부아",
+        "basis": "앙드레 뒤부아의 유치선 전력 배분을 발전 쪽에서 받치고"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "앙투안 르페브르",
+        "type": "계약",
+        "to": "아데올라 아데예미",
+        "basis": "앙투안 르페브르는 결빙을 제거한 송신탑의 상태와 안테나 정비 시각을 아데올라 아데예미에게 전한다. 아데올라 아데예미는 출력 일지를 확인해 정비 중단과 전력 공백을 구분한다."
+      },
+      {
+        "from": "줄리아나 리드",
+        "type": "계약",
+        "to": "아데올라 아데예미",
+        "basis": "줄리아나 리드는 송신에 쓴 예비 전지와 교대 시각을 아데올라 아데예미에게 알린다. 아데올라 아데예미는 연료·출력 일지를 확인해 다음 송신 당직이 받을 전력 공백을 찾는다."
+      },
+      {
+        "from": "아미나 은디아예",
+        "type": "계약",
+        "to": "아데올라 아데예미",
+        "basis": "아미나 은디아예는 송신탑 결빙 제거와 안테나 정비 상태를 아데올라 아데예미에게 알린다. 아데올라 아데예미는 출력 일지를 확인해 정비 중단과 공급 이상을 따로 다음 교대에 남긴다."
+      },
+      {
+        "from": "에티엔 모로",
+        "type": "계약",
+        "to": "아데올라 아데예미",
+        "basis": "에티엔 모로는 송신에 쓴 예비 전지와 교대 시각을 아데올라 아데예미에게 전한다. 아데올라 아데예미는 연료·출력 기록을 확인해 남은 전력과 이미 사용한 공급을 구분한다."
+      }
+    ]
   }
 }

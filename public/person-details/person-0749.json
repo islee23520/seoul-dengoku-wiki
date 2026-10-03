@@ -12,6 +12,327 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-임빛나",
   "detailRoute": "/people/person-0749",
+  "birthDate": "2084-02-07",
+  "birthday": "02-07",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/479",
+    "lore/characters/Cast-State-06.json#/content/482"
+  ],
+  "familyTree": {
+    "personId": "K749",
+    "nodes": [
+      {
+        "id": "K749",
+        "personId": "K749",
+        "kind": "person",
+        "name": "임빛나",
+        "birthDate": "2084-02-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K749"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-임빛나-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0749"
+      },
+      {
+        "id": "FH-K749-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임재미",
+        "birthDate": "2054-02-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "임재미는 서울역 등기소에서 인준 장부 인수인계·연속 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-임빛나-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K749-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임재도",
+        "birthDate": "2024-02-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임재도는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-임빛나-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K749-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한재도",
+        "birthDate": "2054-02-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "한재도는 서울역 등기소에서 인준 장부 인수인계·연속 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-임빛나-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K749-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강재솔",
+        "birthDate": "2024-02-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강재솔은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-임빛나-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K749-P-01:K749:biological",
+        "from": "FH-K749-P-01",
+        "to": "K749",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K749-P-02:FH-K749-P-01:biological",
+        "from": "FH-K749-P-02",
+        "to": "FH-K749-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K749-M-01:K749:biological",
+        "from": "FH-K749-M-01",
+        "to": "K749",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K749-M-02:FH-K749-M-01:biological",
+        "from": "FH-K749-M-02",
+        "to": "FH-K749-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-임빛나-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K749",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K749-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3599"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K749-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3601"
+          }
+        ]
+      },
+      {
+        "recipientId": "K154",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "임빛나는 인준 접수 시각과 보류 상태의 연속 기록을 양해온에게 넘긴다. 양해온은 심사관 날인과 문서고 보관 확인을 살펴 다음 교대에 보류가 누락되지 않은 전갈을 전한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/491"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K749",
     "personId": "person-0749",
@@ -133,17 +454,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 인준 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "한재목의 서부안이 윤서린의 도장을 기다리는 사이 인준 기록관 당직이 바뀐다. 임빛나는 서부안의 접수 시각과 보류 상태를 연속 기록에 옮기고, 멈춘 동안 쌓이는 빚과 찍는 순간 사라지는 양천의 거부권을 인수인계 메모의 두 칸에 나누어 적는다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 임빛나는 인준 접수 시각과 보류 상태의 연속 기록을 양해온에게 넘긴다. 양해온은 심사관 날인과 문서고 보관 확인을 살펴 다음 교대에 보류가 누락되지 않은 전갈을 전한다.",
     "야망": "인준 기록관 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.",
     "공포": "인준 기록관 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 인준 장부 인수인계·연속 기록\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 인준 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 인준 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 한재목의 서부안이 윤서린의 도장을 기다리는 사이 인준 기록관 당직이 바뀐다. 임빛나는 서부안의 접수 시각과 보류 상태를 연속 기록에 옮기고, 멈춘 동안 쌓이는 빚과 찍는 순간 사라지는 양천의 거부권을 인수인계 메모의 두 칸에 나누어 적는다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인준 기록관 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인준 기록관 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −15 | 자격 0 | 분산 −20 | 변혁 −30\n- 욕망: 갈망 5 | 독점 20 | 위험 40 | 과시 −10 | 지속 15 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 인준 장부 인수인계·연속 기록\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 인준 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 인준 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 한재목의 서부안이 윤서린의 도장을 기다리는 사이 인준 기록관 당직이 바뀐다. 임빛나는 서부안의 접수 시각과 보류 상태를 연속 기록에 옮기고, 멈춘 동안 쌓이는 빚과 찍는 순간 사라지는 양천의 거부권을 인수인계 메모의 두 칸에 나누어 적는다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 임빛나는 인준 접수 시각과 보류 상태의 연속 기록을 양해온에게 넘긴다. 양해온은 심사관 날인과 문서고 보관 확인을 살펴 다음 교대에 보류가 누락되지 않은 전갈을 전한다.\n\n**야망.** 인준 기록관 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인준 기록관 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −15 | 자격 0 | 분산 −20 | 변혁 −30\n- 욕망: 갈망 5 | 독점 20 | 위험 40 | 과시 −10 | 지속 15 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-06"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "임빛나",
+        "type": "계약",
+        "to": "양해온",
+        "basis": "임빛나는 인준 접수 시각과 보류 상태의 연속 기록을 양해온에게 넘긴다. 양해온은 심사관 날인과 문서고 보관 확인을 살펴 다음 교대에 보류가 누락되지 않은 전갈을 전한다."
+      }
+    ],
     "incoming": []
   }
 }

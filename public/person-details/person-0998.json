@@ -12,6 +12,655 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-이일섭",
   "detailRoute": "/people/person-0998",
+  "birthDate": "2092-04-14",
+  "birthday": "04-14",
+  "age": 34,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/710",
+    "lore/characters/Cast-State-02.json#/content/712",
+    "lore/chronology/Century-Annals.json#/content/378",
+    "lore/chronology/Century-Annals.json#/content/508",
+    "lore/chronology/Century-Annals.json#/content/553",
+    "lore/chronology/Century-Annals.json#/content/555",
+    "lore/chronology/Century-Annals.json#/content/580"
+  ],
+  "familyTree": {
+    "personId": "K998",
+    "nodes": [
+      {
+        "id": "K998",
+        "personId": "K998",
+        "kind": "person",
+        "name": "이일섭",
+        "birthDate": "2092-04-14",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K998"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생애. 천안·아산 제1분공방을 다스리는 이씨 가문의 후계다. 2121년 1호선 남단 차량기지 옆에 밭을 일구었다. 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이일섭-p3"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0998"
+      },
+      {
+        "id": "FH-EX-LEE-SANGGYE",
+        "personId": null,
+        "kind": "historical",
+        "name": "이상계",
+        "birthDate": "2062-04-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-hangnyeol.json"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "이상계는 자녀에게 생활 기록을 건네며 가계의 이름을 이어 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이일섭-p3"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-EX-LEE-HOGYE",
+        "personId": null,
+        "kind": "historical",
+        "name": "이호계",
+        "birthDate": "2032-04-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-hangnyeol.json"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2062,
+            "summary": "이호계는 자녀에게 생활 기록을 건네며 가계의 이름을 이어 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이일섭-p3"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K998-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최서연",
+        "birthDate": "2062-04-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "최서연은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이일섭-p3"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K998-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정서호",
+        "birthDate": "2032-04-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "정서호는 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이일섭-p3"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K998-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤민성",
+        "birthDate": "2002-04-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤민성은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이일섭-p3"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K998-X이호계-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서아",
+        "birthDate": "2002-04-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이서아는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-이일섭-p3"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-EX-LEE-SANGGYE:K998:biological",
+        "from": "FH-EX-LEE-SANGGYE",
+        "to": "K998",
+        "type": "biological",
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-hangnyeol.json",
+            "anchor": "/lineage/parents/이일섭"
+          }
+        ]
+      },
+      {
+        "id": "FH-EX-LEE-HOGYE:FH-EX-LEE-SANGGYE:biological",
+        "from": "FH-EX-LEE-HOGYE",
+        "to": "FH-EX-LEE-SANGGYE",
+        "type": "biological",
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-hangnyeol.json",
+            "anchor": "/lineage/parents/이상계"
+          }
+        ]
+      },
+      {
+        "id": "FH-K998-M-01:K998:biological",
+        "from": "FH-K998-M-01",
+        "to": "K998",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K998-M-02:FH-K998-M-01:biological",
+        "from": "FH-K998-M-02",
+        "to": "FH-K998-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K998-M-03:FH-K998-M-02:biological",
+        "from": "FH-K998-M-03",
+        "to": "FH-K998-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K998-X이호계-01:FH-EX-LEE-HOGYE:biological",
+        "from": "FH-K998-X이호계-01",
+        "to": "FH-EX-LEE-HOGYE",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K998",
+    "links": [
+      {
+        "id": "household:FH-EX-LEE-SANGGYE:K998:biological",
+        "recipientId": "FH-EX-LEE-SANGGYE",
+        "recipientKind": "family-node",
+        "type": "kin",
+        "role": "father",
+        "status": "preserved",
+        "basis": "Existing biological parent edge; reuse the family graph identity.",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3"
+          }
+        ],
+        "recipientName": "이상계"
+      },
+      {
+        "id": "household:FH-K998-M-01:K998:biological",
+        "recipientId": "FH-K998-M-01",
+        "recipientKind": "family-node",
+        "type": "kin",
+        "role": "mother",
+        "status": "owner-authored",
+        "basis": "Existing biological parent edge; reuse the family graph identity.",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4811"
+          }
+        ],
+        "recipientName": "최서연"
+      },
+      {
+        "id": "household:K998:K039:contract",
+        "recipientId": "K039",
+        "recipientKind": "person",
+        "type": "contract",
+        "role": "grain-and-parts-logistics",
+        "status": "owner-authored",
+        "basis": "곡물 손실 장부와 부품 운송의 대조 창구",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-p4"
+          }
+        ],
+        "recipientName": "구찬솔"
+      },
+      {
+        "id": "household:K998:K035:contract",
+        "recipientId": "K035",
+        "recipientKind": "person",
+        "type": "contract",
+        "role": "specification-audit-contact",
+        "status": "owner-authored",
+        "basis": "분공방 부품 규격 사본과 평의회 제출안의 감사 연락",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-장우석-p3"
+          }
+        ],
+        "recipientName": "장우석"
+      },
+      {
+        "id": "household:K998:K038:contract",
+        "recipientId": "K038",
+        "recipientKind": "person",
+        "type": "contract",
+        "role": "wheel-inspection-contact",
+        "status": "owner-authored",
+        "basis": "차륜 출고 계측 도장과 부품 검사 연락",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-이일섭-p3"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허다온-p3"
+          }
+        ],
+        "recipientName": "허다온"
+      }
+    ],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-EX-LEE-SANGGYE",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K998-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4811"
+          }
+        ]
+      },
+      {
+        "recipientId": "K039",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "제1분공방의 곡물 손실 장부를 부품 운송 기록과 대조한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/204"
+          }
+        ]
+      },
+      {
+        "recipientId": "K039",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "분공방의 곡물 손실 장부와 맞출 부품 운송 기록을 돌려준다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/205"
+          }
+        ]
+      },
+      {
+        "recipientId": "K035",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "평의회에 제출할 분공방 부품 규격 사본의 감사를 의뢰한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/206"
+          }
+        ]
+      },
+      {
+        "recipientId": "K035",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "부품 규격 사본의 감사와 재측정 결과를 돌려준다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/207"
+          }
+        ]
+      },
+      {
+        "recipientId": "K038",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "차륜 검사 기록으로 분공방 출고 부품의 계측값을 대조한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/208"
+          }
+        ]
+      },
+      {
+        "recipientId": "K038",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "출고 부품을 함께 확인하도록 차륜 검사 기록을 보낸다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/209"
+          }
+        ]
+      },
+      {
+        "recipientId": "K425",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/417"
+          }
+        ]
+      },
+      {
+        "recipientId": "K441",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/418"
+          }
+        ]
+      }
+    ],
+    "court": {
+      "id": "court:K998",
+      "ownerPersonId": "K998",
+      "stateId": "S02",
+      "retainers": [
+        {
+          "personId": "K425",
+          "liegePersonId": "K998",
+          "courtId": "court:K998",
+          "sourceRow": 417,
+          "role": "이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/46"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/417"
+            }
+          ]
+        },
+        {
+          "personId": "K441",
+          "liegePersonId": "K998",
+          "courtId": "court:K998",
+          "sourceRow": 418,
+          "role": "이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/47"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/418"
+            }
+          ]
+        }
+      ]
+    },
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "rightsPermissions": {
     "applicability": "real-person",
     "identityBasisRef": "owner-confirmed-identity-20260925",
@@ -218,19 +867,82 @@
     "생애": "천안·아산 제1분공방을 다스리는 이씨 가문의 후계다. 2121년 1호선 남단 차량기지 옆에 밭을 일구었다. 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다.",
     "무공": "없음. 생업만.",
     "일화": "2123년 이일섭은 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 같은 해 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다. 차량기지 밭과 창고를 맡던 후계가 평의회에 가문의 안을 올린 일이다.",
-    "가문": "천안·아산의 이씨 가문은 규격맹의 봉신으로 제1분공방을 다스린다.",
+    "가문": "천안·아산의 이씨 가문은 규격맹의 봉신으로 제1분공방을 다스린다. 아버지 이상계와 어머니 최서연은 이일섭에게 분공방의 생활 기록과 곡물 장부를 물려주었다. 이일섭은 부모가 남긴 수량을 차량기지 밭의 수확량과 창고 재고에 맞춰 다시 대조한다.",
     "신념": "농사를 지어 먹을 것이 남으면 세상이 좋아진다고 믿는다.",
-    "관계": "규격맹의 봉신인 천안·아산 이씨 가문의 후계로 제1분공방을 잇고, 분공방 부품 대금을 두고 규격맹 평의회에 제안을 올리는 자리에 선다.",
+    "관계": "규격맹의 봉신인 천안·아산 이씨 가문의 후계로 제1분공방을 잇는다. 직속 전령 박도윤에게 전갈 전달과 수령 확인을, 직속 경비 류동현에게 전력장치 순찰과 이상 보고를 맡긴다. 곡물 수량과 배급안은 이일섭이 직접 대조한다. 구찬솔과는 곡물 손실 장부를 부품 운송 기록과 맞추고, 장우석에게는 평의회에 올릴 부품 규격 사본의 감사 결과를 받는다. 허다온의 차륜 검사 기록은 분공방에서 출고할 부품을 대조하는 데 쓴다.",
     "야망": "제1분공방 차량기지 밭에서 거둔 곡물로 겨울 배급안을 채워, 먹을 것이 남는 분공방을 만든다.",
     "공포": "세 차례 다시 센 곡물 재고가 겨울 배급안에 모자라는 것.",
     "개입": "함께 곡물 재고를 세어 겨울 배급안을 앞당기거나, 종자 대금 제안을 평의회에서 받치거나 흔들 수 있다."
   },
-  "biography": "겁이 많고 결정이 느리다. 위험한 소식을 들으면 먼저 숨을 곳부터 생각하고, 밤새 장부를 다시 세어 다음 날에야 권안을 내놓는다. 그러나 믿는 일 앞에서는 물러서지 않는다.\n\n- 소속: 규격맹 봉신 제1분공방(천안·아산) 이씨 가문\n- 품계: 이사\n- 직함: 제1분공방 이씨 가문 후계\n- 생업: 제1분공방 차량기지 밭 경작·곡물 재고 관리\n- 성명: 이일섭. 공개 예명 iz.\n- 기여자: [islee23520](https://github.com/islee23520)\n- 출신 공동체: 천안·아산 제1분공방 이씨 가문. 본관 전의.\n\n**생애.** 천안·아산 제1분공방을 다스리는 이씨 가문의 후계다. 2121년 1호선 남단 차량기지 옆에 밭을 일구었다. 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다.\n\n**무공.** 없음. 생업만.\n\n**일화.** 2123년 이일섭은 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 같은 해 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다. 차량기지 밭과 창고를 맡던 후계가 평의회에 가문의 안을 올린 일이다.\n\n**가문.** 천안·아산의 이씨 가문은 규격맹의 봉신으로 제1분공방을 다스린다.\n\n**신념.** 농사를 지어 먹을 것이 남으면 세상이 좋아진다고 믿는다.\n\n**관계.** 규격맹의 봉신인 천안·아산 이씨 가문의 후계로 제1분공방을 잇고, 분공방 부품 대금을 두고 규격맹 평의회에 제안을 올리는 자리에 선다.\n\n**야망.** 제1분공방 차량기지 밭에서 거둔 곡물로 겨울 배급안을 채워, 먹을 것이 남는 분공방을 만든다.\n\n**공포.** 세 차례 다시 센 곡물 재고가 겨울 배급안에 모자라는 것.\n\n**개입.** 함께 곡물 재고를 세어 겨울 배급안을 앞당기거나, 종자 대금 제안을 평의회에서 받치거나 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 40 | 공동 30 | 원칙 50 | 공개 50 | 자격 45 | 분산 30 | 변혁 40\n- 욕망: 갈망 35 | 독점 −25 | 위험 −20 | 과시 −30 | 지속 70 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "겁이 많고 결정이 느리다. 위험한 소식을 들으면 먼저 숨을 곳부터 생각하고, 밤새 장부를 다시 세어 다음 날에야 권안을 내놓는다. 그러나 믿는 일 앞에서는 물러서지 않는다.\n\n- 소속: 규격맹 봉신 제1분공방(천안·아산) 이씨 가문\n- 품계: 이사\n- 직함: 제1분공방 이씨 가문 후계\n- 생업: 제1분공방 차량기지 밭 경작·곡물 재고 관리\n- 성명: 이일섭. 공개 예명 iz.\n- 기여자: [islee23520](https://github.com/islee23520)\n- 출신 공동체: 천안·아산 제1분공방 이씨 가문. 본관 전의.\n\n**생애.** 천안·아산 제1분공방을 다스리는 이씨 가문의 후계다. 2121년 1호선 남단 차량기지 옆에 밭을 일구었다. 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다.\n\n**무공.** 없음. 생업만.\n\n**일화.** 2123년 이일섭은 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 같은 해 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다. 차량기지 밭과 창고를 맡던 후계가 평의회에 가문의 안을 올린 일이다.\n\n**가문.** 천안·아산의 이씨 가문은 규격맹의 봉신으로 제1분공방을 다스린다. 아버지 이상계와 어머니 최서연은 이일섭에게 분공방의 생활 기록과 곡물 장부를 물려주었다. 이일섭은 부모가 남긴 수량을 차량기지 밭의 수확량과 창고 재고에 맞춰 다시 대조한다.\n\n**신념.** 농사를 지어 먹을 것이 남으면 세상이 좋아진다고 믿는다.\n\n**관계.** 규격맹의 봉신인 천안·아산 이씨 가문의 후계로 제1분공방을 잇는다. 직속 전령 박도윤에게 전갈 전달과 수령 확인을, 직속 경비 류동현에게 전력장치 순찰과 이상 보고를 맡긴다. 곡물 수량과 배급안은 이일섭이 직접 대조한다. 구찬솔과는 곡물 손실 장부를 부품 운송 기록과 맞추고, 장우석에게는 평의회에 올릴 부품 규격 사본의 감사 결과를 받는다. 허다온의 차륜 검사 기록은 분공방에서 출고할 부품을 대조하는 데 쓴다.\n\n**야망.** 제1분공방 차량기지 밭에서 거둔 곡물로 겨울 배급안을 채워, 먹을 것이 남는 분공방을 만든다.\n\n**공포.** 세 차례 다시 센 곡물 재고가 겨울 배급안에 모자라는 것.\n\n**개입.** 함께 곡물 재고를 세어 겨울 배급안을 앞당기거나, 종자 대금 제안을 평의회에서 받치거나 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 40 | 공동 30 | 원칙 50 | 공개 50 | 자격 45 | 분산 30 | 변혁 40\n- 욕망: 갈망 35 | 독점 −25 | 위험 −20 | 과시 −30 | 지속 70 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],
+  "court": {
+    "id": "court:K998",
+    "members": [
+      {
+        "personId": "K425",
+        "name": "박도윤"
+      },
+      {
+        "personId": "K441",
+        "name": "류동현"
+      }
+    ]
+  },
   "relations": {
-    "outgoing": [],
-    "incoming": []
+    "outgoing": [
+      {
+        "from": "이일섭",
+        "type": "계약",
+        "to": "구찬솔",
+        "basis": "제1분공방의 곡물 손실 장부를 부품 운송 기록과 대조한다"
+      },
+      {
+        "from": "이일섭",
+        "type": "계약",
+        "to": "장우석",
+        "basis": "평의회에 제출할 분공방 부품 규격 사본의 감사를 의뢰한다"
+      },
+      {
+        "from": "이일섭",
+        "type": "계약",
+        "to": "허다온",
+        "basis": "차륜 검사 기록으로 분공방 출고 부품의 계측값을 대조한다"
+      }
+    ],
+    "incoming": [
+      {
+        "from": "구찬솔",
+        "type": "계약",
+        "to": "이일섭",
+        "basis": "분공방의 곡물 손실 장부와 맞출 부품 운송 기록을 돌려준다"
+      },
+      {
+        "from": "장우석",
+        "type": "계약",
+        "to": "이일섭",
+        "basis": "부품 규격 사본의 감사와 재측정 결과를 돌려준다"
+      },
+      {
+        "from": "허다온",
+        "type": "계약",
+        "to": "이일섭",
+        "basis": "출고 부품을 함께 확인하도록 차륜 검사 기록을 보낸다"
+      },
+      {
+        "from": "박도윤",
+        "type": "지휘",
+        "to": "이일섭",
+        "basis": "이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음"
+      },
+      {
+        "from": "류동현",
+        "type": "지휘",
+        "to": "이일섭",
+        "basis": "이일섭의 직속 경비로 전력장치 순찰과 이상 보고를 맡음"
+      }
+    ]
   }
 }

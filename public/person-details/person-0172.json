@@ -1,6 +1,6 @@
 {
   "id": "person-0172",
-  "name": "권시온",
+  "name": "에바 노바코바",
   "title": "열차 배차원",
   "position": "열차 배차원",
   "rank": "주사",
@@ -10,8 +10,605 @@
   "stage": "S1",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-권시온",
+  "sourceRoute": "/world/Cast-State-07#인물-에바 노바코바",
   "detailRoute": "/people/person-0172",
+  "birthDate": "2076-07-30",
+  "birthday": "07-30",
+  "age": 50,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/39"
+  ],
+  "familyTree": {
+    "personId": "K171",
+    "nodes": [
+      {
+        "id": "K171",
+        "personId": "K171",
+        "kind": "person",
+        "name": "에바 노바코바",
+        "birthDate": "2076-07-30",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K171"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 열차 배차원 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-에바-노바코바-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Eva Nováková",
+        "detailRoute": "/people/person-0172"
+      },
+      {
+        "id": "FH-K171-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "페트르 노바크",
+        "birthDate": "2046-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "페트르 노바크는 2046년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2064년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-에바-노바코바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Petr Novák was born in 2046 and grew up reading family and work records. From 2064, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Petr Novák",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K171-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "얀 노바크",
+        "birthDate": "2016-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "얀 노바크는 2016년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2034년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-에바-노바코바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Jan Novák was born in 2016 and grew up reading family and work records. From 2034, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Jan Novák",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K171-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "안나 드보르자코바",
+        "birthDate": "2046-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "안나 드보르자코바는 2046년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2064년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-에바-노바코바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Anna Dvořáková was born in 2046 and grew up reading family and work records. From 2064, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Anna Dvořáková",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K171-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "마리 드보르자코바",
+        "birthDate": "2016-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마리 드보르자코바는 2016년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2034년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-에바-노바코바-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Marie Dvořáková was born in 2016 and grew up reading family and work records. From 2034, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Marie Dvořáková",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K171-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "카렐 노바크",
+        "nameEn": "Karel Novák",
+        "birthDate": "1986-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K171-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "카렐 노바크는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 숙박·민간 기술 용역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Karel Novák was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K171-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K171-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "루드밀라 드보르자코바",
+        "nameEn": "Ludmila Dvořáková",
+        "birthDate": "1986-07-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K171-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "루드밀라 드보르자코바는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 숙박·민간 기술 용역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Ludmila Dvořáková was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K171-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K171-P-01:K171:biological",
+        "from": "FH-K171-P-01",
+        "to": "K171",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K171-P-02:FH-K171-P-01:biological",
+        "from": "FH-K171-P-02",
+        "to": "FH-K171-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K171-M-01:K171:biological",
+        "from": "FH-K171-M-01",
+        "to": "K171",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K171-M-02:FH-K171-M-01:biological",
+        "from": "FH-K171-M-02",
+        "to": "FH-K171-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-에바-노바코바-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K171-P-03:FH-K171-P-02:biological",
+        "from": "FH-K171-P-03",
+        "to": "FH-K171-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K171-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K171-M-03:FH-K171-M-02:biological",
+        "from": "FH-K171-M-03",
+        "to": "FH-K171-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K171-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K171",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K171-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/830"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K171-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/832"
+          }
+        ]
+      },
+      {
+        "recipientId": "K169",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "서부 철도계약을 배차에서 운용",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/60"
+          }
+        ]
+      },
+      {
+        "recipientId": "K148",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "용산 철도계약 공증을 거래",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/150"
+          }
+        ]
+      },
+      {
+        "recipientId": "K148",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "철도계약 공증을 기록청에 맡김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/154"
+          }
+        ]
+      },
+      {
+        "recipientId": "K430",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "엘리스 해리스는 배차표와 출발 서명이 빠진 열차를 에바 노바코바에게 알린다. 에바 노바코바는 창 점유와 탑승 증명을 확인해 서명만 보충하고 출발하는 일을 막는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/715"
+          }
+        ]
+      },
+      {
+        "recipientId": "K574",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "콜린 머피는 제설로 늦어진 배차와 먼저 이동한 부상자 인원을 에바 노바코바에게 알린다. 에바 노바코바는 창 점유·탑승 증명을 고쳐 아직 못 온 인원과 이미 옮긴 환자를 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/724"
+          }
+        ]
+      },
+      {
+        "recipientId": "K670",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "한나 베버는 보호한 호송 인명 기록을 에바 노바코바에게 넘긴다. 에바 노바코바는 탑승 증명과 창 점유를 확인해 아직 도착하지 않은 사람이 출발 완료로 적히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/730"
+          }
+        ]
+      },
+      {
+        "recipientId": "K750",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "올레나 멜니크는 출발 서명이 빠진 호송을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 확인해 기록만 보충하고 미확인 열차가 나가지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/735"
+          }
+        ]
+      },
+      {
+        "recipientId": "K798",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "엠마 킹은 무표 열차의 출발 서명 누락을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 대조해 미확인 출발이 다음 배차 원장에 완료로 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/738"
+          }
+        ]
+      },
+      {
+        "recipientId": "K862",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "빅토르 스타네스쿠는 호송 인명 기록을 에바 노바코바에게 전달한다. 에바 노바코바는 탑승 증명과 점유 시각을 확인해 실제 인수되지 않은 사람이 승차 완료로 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/742"
+          }
+        ]
+      },
+      {
+        "recipientId": "K910",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "마리야 코발렌코는 보호한 호송 인명 장부를 에바 노바코바에게 넘긴다. 에바 노바코바는 점유·탑승 증명을 확인해 실제 도착한 인원과 다음 칸을 기다리는 인원을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/745"
+          }
+        ]
+      },
+      {
+        "recipientId": "K990",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "이사벨 가르시아는 서명 없는 열차 출발을 에바 노바코바에게 알린다. 에바 노바코바는 점유 창과 탑승 증명을 확인해 출발 인수가 없는 기록을 완료 운행으로 적지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/750"
+          }
+        ]
+      },
+      {
+        "recipientId": "K181",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "에바 노바코바의 배차 선언을 원장으로 옮기는 사제이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/156"
+          }
+        ]
+      },
+      {
+        "recipientId": "K182",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "에바 노바코바의 배차 순서를 승강장에서 집행하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/158"
+          }
+        ]
+      },
+      {
+        "recipientId": "K189",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "에바 노바코바의 배차판에 증언을 붙이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/86"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K171",
     "personId": "person-0172",
@@ -84,7 +681,7 @@
     "size": 4,
     "current_location": "폐건물 옥상",
     "camp": {
-      "name": "권시온 옥상 야영지",
+      "name": "에바 노바코바 옥상 야영지",
       "type": "야영지",
       "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
       "facilities": [
@@ -97,9 +694,9 @@
     "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
   },
   "clan": {
-    "id": "ad8c-c548-b3d9",
-    "name": "안동 권씨",
-    "crest": "clan-crests/ad8c-c548-b3d9.svg"
+    "id": "DIV-K171",
+    "name": "용산·이태원 노바코바씨",
+    "crest": "clan-crests/DIV-K171.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -134,29 +731,29 @@
     "욕망": "갈망 30 | 독점 −20 | 위험 25 | 과시 25 | 지속 0 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 열차 배차원 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 열차 배차원 자리는 무표 출발 열차 저지로 열렸다. 에바 노바코바는 2076년에 태어났다. 체코계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 열차 배차원 업무를 맡는다. 카렐 노바크는 2026년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 에바 노바코바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 체코어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 열차 배차원. 상호 인질 대신 도제 탑승을 증명으로 받고, 편도만 온 열차는 창에서 하루를 묶는다.",
     "일화": "뚝섬 급수계약 만료 소식이 용산 배차판에 붙자 서부 급수열차가 창 점유를 하루 더 요구했다.",
-    "관계": "박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 송이든과 창고 환적 순서를 나눈다.",
+    "관계": "박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 루카스 슈나이더와 창고 환적 순서를 나눈다.",
     "야망": "서부 급수열차와 동부 군수열차를 같은 배차표에 묶어 용산을 수문헌장 밖의 필수 중계로 남긴다.",
     "공포": "한재목의 철도계약이 독점 조항으로 바뀌어 배차권이 수문 아래로 빨려 들어가는 것.",
     "개입": "급수열차의 창 점유를 중재하거나, 독점 배차 밀약을 기록청에 넘길 수 있다."
   },
-  "biography": "실리적이나 시각표를 어기는 사람을 가혹하게 다룬다. 어느 진영 열차든 시간을 지키면 얼굴을 가리지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 열차 탑승 증명·창 점유 배차\n- 직함: 열차 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 열차 배차원 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 열차 배차원. 상호 인질 대신 도제 탑승을 증명으로 받고, 편도만 온 열차는 창에서 하루를 묶는다.\n\n**일화.** 뚝섬 급수계약 만료 소식이 용산 배차판에 붙자 서부 급수열차가 창 점유를 하루 더 요구했다.\n\n**관계.** 박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 송이든과 창고 환적 순서를 나눈다.\n\n**야망.** 서부 급수열차와 동부 군수열차를 같은 배차표에 묶어 용산을 수문헌장 밖의 필수 중계로 남긴다.\n\n**공포.** 한재목의 철도계약이 독점 조항으로 바뀌어 배차권이 수문 아래로 빨려 들어가는 것.\n\n**개입.** 급수열차의 창 점유를 중재하거나, 독점 배차 밀약을 기록청에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 10 | 무력 0 | 물질 25 | 공동 −5 | 원칙 −5 | 공개 −15 | 자격 40 | 분산 −5 | 변혁 0\n- 욕망: 갈망 30 | 독점 −20 | 위험 25 | 과시 25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "실리적이나 시각표를 어기는 사람을 가혹하게 다룬다. 어느 진영 열차든 시간을 지키면 얼굴을 가리지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 열차 탑승 증명·창 점유 배차\n- 직함: 열차 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 열차 배차원 자리는 무표 출발 열차 저지로 열렸다. 에바 노바코바는 2076년에 태어났다. 체코계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 열차 배차원 업무를 맡는다. 카렐 노바크는 2026년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 에바 노바코바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 체코어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 열차 배차원. 상호 인질 대신 도제 탑승을 증명으로 받고, 편도만 온 열차는 창에서 하루를 묶는다.\n\n**일화.** 뚝섬 급수계약 만료 소식이 용산 배차판에 붙자 서부 급수열차가 창 점유를 하루 더 요구했다.\n\n**관계.** 박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 루카스 슈나이더와 창고 환적 순서를 나눈다.\n\n**야망.** 서부 급수열차와 동부 군수열차를 같은 배차표에 묶어 용산을 수문헌장 밖의 필수 중계로 남긴다.\n\n**공포.** 한재목의 철도계약이 독점 조항으로 바뀌어 배차권이 수문 아래로 빨려 들어가는 것.\n\n**개입.** 급수열차의 창 점유를 중재하거나, 독점 배차 밀약을 기록청에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 10 | 무력 0 | 물질 25 | 공동 −5 | 원칙 −5 | 공개 −15 | 자격 40 | 분산 −5 | 변혁 0\n- 욕망: 갈망 30 | 독점 −20 | 위험 25 | 과시 25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "권시온",
+        "from": "에바 노바코바",
         "type": "지휘",
         "to": "박태겸",
         "basis": "서부 철도계약을 배차에서 운용"
       },
       {
-        "from": "권시온",
+        "from": "에바 노바코바",
         "type": "계약",
         "to": "오서율",
         "basis": "철도계약 공증을 기록청에 맡김"
@@ -166,26 +763,74 @@
       {
         "from": "오서율",
         "type": "계약",
-        "to": "권시온",
+        "to": "에바 노바코바",
         "basis": "용산 철도계약 공증을 거래"
       },
       {
-        "from": "연시완",
+        "from": "엘리스 해리스",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "엘리스 해리스는 배차표와 출발 서명이 빠진 열차를 에바 노바코바에게 알린다. 에바 노바코바는 창 점유와 탑승 증명을 확인해 서명만 보충하고 출발하는 일을 막는다."
+      },
+      {
+        "from": "콜린 머피",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "콜린 머피는 제설로 늦어진 배차와 먼저 이동한 부상자 인원을 에바 노바코바에게 알린다. 에바 노바코바는 창 점유·탑승 증명을 고쳐 아직 못 온 인원과 이미 옮긴 환자를 구분한다."
+      },
+      {
+        "from": "한나 베버",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "한나 베버는 보호한 호송 인명 기록을 에바 노바코바에게 넘긴다. 에바 노바코바는 탑승 증명과 창 점유를 확인해 아직 도착하지 않은 사람이 출발 완료로 적히지 않게 한다."
+      },
+      {
+        "from": "올레나 멜니크",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "올레나 멜니크는 출발 서명이 빠진 호송을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 확인해 기록만 보충하고 미확인 열차가 나가지 않게 한다."
+      },
+      {
+        "from": "엠마 킹",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "엠마 킹은 무표 열차의 출발 서명 누락을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 대조해 미확인 출발이 다음 배차 원장에 완료로 남지 않게 한다."
+      },
+      {
+        "from": "빅토르 스타네스쿠",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "빅토르 스타네스쿠는 호송 인명 기록을 에바 노바코바에게 전달한다. 에바 노바코바는 탑승 증명과 점유 시각을 확인해 실제 인수되지 않은 사람이 승차 완료로 남지 않게 한다."
+      },
+      {
+        "from": "마리야 코발렌코",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "마리야 코발렌코는 보호한 호송 인명 장부를 에바 노바코바에게 넘긴다. 에바 노바코바는 점유·탑승 증명을 확인해 실제 도착한 인원과 다음 칸을 기다리는 인원을 구분한다."
+      },
+      {
+        "from": "이사벨 가르시아",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "이사벨 가르시아는 서명 없는 열차 출발을 에바 노바코바에게 알린다. 에바 노바코바는 점유 창과 탑승 증명을 확인해 출발 인수가 없는 기록을 완료 운행으로 적지 않는다."
+      },
+      {
+        "from": "레아 마르탱",
         "type": "사제",
-        "to": "권시온",
-        "basis": "권시온의 배차 선언을 원장으로 옮기는 사제이고"
+        "to": "에바 노바코바",
+        "basis": "에바 노바코바의 배차 선언을 원장으로 옮기는 사제이고"
       },
       {
-        "from": "나길호",
+        "from": "마테우시 코발스키",
         "type": "지휘",
-        "to": "권시온",
-        "basis": "권시온의 배차 순서를 승강장에서 집행하며"
+        "to": "에바 노바코바",
+        "basis": "에바 노바코바의 배차 순서를 승강장에서 집행하며"
       },
       {
-        "from": "홍재민",
+        "from": "아나 포페스쿠",
         "type": "맹세",
-        "to": "권시온",
-        "basis": "권시온의 배차판에 증언을 붙이고"
+        "to": "에바 노바코바",
+        "basis": "에바 노바코바의 배차판에 증언을 붙이고"
       }
     ]
   }

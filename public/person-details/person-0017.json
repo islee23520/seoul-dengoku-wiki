@@ -12,6 +12,819 @@
   "stateName": "수문국",
   "sourceRoute": "/world/Cast-State-01#인물-변고운",
   "detailRoute": "/people/person-0017",
+  "birthDate": "2090-09-06",
+  "birthday": "09-06",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-01.json#/content/49",
+    "lore/characters/Cast-State-01.json#/content/51"
+  ],
+  "familyTree": {
+    "personId": "K017",
+    "nodes": [
+      {
+        "id": "K017",
+        "personId": "K017",
+        "kind": "person",
+        "name": "변고운",
+        "birthDate": "2090-09-06",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K017"
+          },
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 영등포 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-변고운-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0017"
+      },
+      {
+        "id": "FH-K017-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "변승석",
+        "birthDate": "2060-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "변승석은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-변고운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K017-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "변승준",
+        "birthDate": "2030-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "변승준은 대합실 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-변고운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K017-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "변승호",
+        "birthDate": "2000-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "변승호는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-변고운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K017-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승진",
+        "birthDate": "2060-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "한승진은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-변고운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K017-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강승원",
+        "birthDate": "2030-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "강승원은 대합실 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-변고운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K017-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "임승현",
+        "birthDate": "2000-09-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임승현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-변고운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K017-P-01:K017:biological",
+        "from": "FH-K017-P-01",
+        "to": "K017",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K017-P-02:FH-K017-P-01:biological",
+        "from": "FH-K017-P-02",
+        "to": "FH-K017-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K017-P-03:FH-K017-P-02:biological",
+        "from": "FH-K017-P-03",
+        "to": "FH-K017-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K017-M-01:K017:biological",
+        "from": "FH-K017-M-01",
+        "to": "K017",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K017-M-02:FH-K017-M-01:biological",
+        "from": "FH-K017-M-02",
+        "to": "FH-K017-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K017-M-03:FH-K017-M-02:biological",
+        "from": "FH-K017-M-03",
+        "to": "FH-K017-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-변고운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K017",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K017-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/92"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K017-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/95"
+          }
+        ]
+      },
+      {
+        "recipientId": "K009",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "유세진의 배차 순서를 승강장에서 집행하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/14"
+          }
+        ]
+      },
+      {
+        "recipientId": "K012",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "진하겸의 의무소 봉쇄를 대합실 방송으로 알리는 동맹이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/15"
+          }
+        ]
+      },
+      {
+        "recipientId": "K504",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/393"
+          }
+        ]
+      },
+      {
+        "recipientId": "K744",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/394"
+          }
+        ]
+      },
+      {
+        "recipientId": "K600",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/395"
+          }
+        ]
+      },
+      {
+        "recipientId": "K552",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/396"
+          }
+        ]
+      },
+      {
+        "recipientId": "K456",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/397"
+          }
+        ]
+      },
+      {
+        "recipientId": "K840",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/398"
+          }
+        ]
+      },
+      {
+        "recipientId": "K888",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/399"
+          }
+        ]
+      },
+      {
+        "recipientId": "K648",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/400"
+          }
+        ]
+      },
+      {
+        "recipientId": "K936",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/401"
+          }
+        ]
+      },
+      {
+        "recipientId": "K984",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/402"
+          }
+        ]
+      },
+      {
+        "recipientId": "K792",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/403"
+          }
+        ]
+      },
+      {
+        "recipientId": "K696",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/404"
+          }
+        ]
+      }
+    ],
+    "court": {
+      "id": "court:K017",
+      "ownerPersonId": "K017",
+      "stateId": "S01",
+      "retainers": [
+        {
+          "personId": "K504",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 393,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/13"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/393"
+            }
+          ]
+        },
+        {
+          "personId": "K744",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 394,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/14"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/394"
+            }
+          ]
+        },
+        {
+          "personId": "K600",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 395,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/15"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/395"
+            }
+          ]
+        },
+        {
+          "personId": "K552",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 396,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/16"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/396"
+            }
+          ]
+        },
+        {
+          "personId": "K456",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 397,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/17"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/397"
+            }
+          ]
+        },
+        {
+          "personId": "K840",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 398,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/18"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/398"
+            }
+          ]
+        },
+        {
+          "personId": "K888",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 399,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/19"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/399"
+            }
+          ]
+        },
+        {
+          "personId": "K648",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 400,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/20"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/400"
+            }
+          ]
+        },
+        {
+          "personId": "K936",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 401,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/21"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/401"
+            }
+          ]
+        },
+        {
+          "personId": "K984",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 402,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/22"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/402"
+            }
+          ]
+        },
+        {
+          "personId": "K792",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 403,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/23"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/403"
+            }
+          ]
+        },
+        {
+          "personId": "K696",
+          "liegePersonId": "K017",
+          "courtId": "court:K017",
+          "sourceRow": 404,
+          "role": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/24"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/404"
+            }
+          ]
+        }
+      ]
+    },
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K017",
     "personId": "person-0017",

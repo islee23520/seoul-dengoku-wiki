@@ -1,6 +1,6 @@
 {
   "id": "person-0189",
-  "name": "순가온",
+  "name": "스테판 페트로프",
   "title": "의료열차 무기 목격자",
   "position": "의료열차 무기 목격자",
   "rank": "주사",
@@ -10,8 +10,381 @@
   "stage": "S3",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-순가온",
+  "sourceRoute": "/world/Cast-State-07#인물-스테판 페트로프",
   "detailRoute": "/people/person-0189",
+  "birthDate": "2065-02-16",
+  "birthday": "02-16",
+  "age": 61,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/204",
+    "lore/characters/Cast-State-07.json#/content/206",
+    "lore/characters/Cast-State-07.json#/content/208"
+  ],
+  "familyTree": {
+    "personId": "K188",
+    "nodes": [
+      {
+        "id": "K188",
+        "personId": "K188",
+        "kind": "person",
+        "name": "스테판 페트로프",
+        "birthDate": "2065-02-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K188"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 의료열차 무기 목격자 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-스테판-페트로프-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Stefan Petrov",
+        "detailRoute": "/people/person-0189"
+      },
+      {
+        "id": "FH-K188-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이반 페트로프",
+        "birthDate": "2035-02-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "이반 페트로프는 2035년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2053년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-스테판-페트로프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Ivan Petrov was born in 2035 and grew up reading family and work records. From 2053, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Ivan Petrov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K188-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "게오르기 페트로프",
+        "birthDate": "2005-02-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "게오르기 페트로프는 2026년 대정전 당시 동대문·용산 생활권에서 동대문 야간 공임과 용산 공급 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-스테판-페트로프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Georgi Petrov was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Georgi Petrov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K188-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "마리아 디미트로바",
+        "birthDate": "2035-02-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "마리아 디미트로바는 2035년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2053년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-스테판-페트로프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Maria Dimitrova was born in 2035 and grew up reading family and work records. From 2053, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Maria Dimitrova",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K188-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "엘레나 디미트로바",
+        "birthDate": "2005-02-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "엘레나 디미트로바는 2026년 대정전 당시 동대문·용산 생활권에서 동대문 야간 공임과 용산 공급 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-스테판-페트로프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Elena Dimitrova was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Elena Dimitrova",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K188-P-01:K188:biological",
+        "from": "FH-K188-P-01",
+        "to": "K188",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K188-P-02:FH-K188-P-01:biological",
+        "from": "FH-K188-P-02",
+        "to": "FH-K188-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K188-M-01:K188:biological",
+        "from": "FH-K188-M-01",
+        "to": "K188",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K188-M-02:FH-K188-M-01:biological",
+        "from": "FH-K188-M-02",
+        "to": "FH-K188-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-스테판-페트로프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K188",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K188-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/910"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K188-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/912"
+          }
+        ]
+      },
+      {
+        "recipientId": "K296",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "장세화의 의료호송 중립을 증언으로 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/84"
+          }
+        ]
+      },
+      {
+        "recipientId": "K177",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/85"
+          }
+        ]
+      },
+      {
+        "recipientId": "K242",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "스테판 페트로프의 의료칸 발견 시각을 파형과 겹친다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/119"
+          }
+        ]
+      },
+      {
+        "recipientId": "K291",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "스테판 페트로프의 의료칸 발견 시각에 정차 일지를 겹치며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/141"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K188",
     "personId": "person-0189",
@@ -92,9 +465,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "c21c-d64d-c0b0",
-    "name": "홍산 순씨",
-    "crest": "clan-crests/c21c-d64d-c0b0.svg"
+    "id": "DIV-K188",
+    "name": "용산·이태원 페트로프씨",
+    "crest": "clan-crests/DIV-K188.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -129,46 +502,46 @@
     "욕망": "갈망 15 | 독점 −15 | 위험 −35 | 과시 −25 | 지속 20 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의료열차 무기 목격자 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의료열차 무기 목격자 자리는 가짜 약 봉인으로 열렸다. 스테판 페트로프는 2065년에 태어났다. 불가리아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 의료열차 무기 목격자 업무를 맡는다. 게오르기 페트로프는 2026년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 스테판 페트로프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 불가리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 의료열차 무기 목격자. 발견 시각과 칸 번호를 의무 일지에 먼저 적고, 무장을 환자 명부와 같은 칠판에 올리지 않는다.",
-    "일화": "겨울의 검은 배차표 동안 의료열차에서 암사제 무기가 발견되자 순가온은 칸 문을 잠그고 후국회가 열릴 때까지 나가지 않았다.",
-    "관계": "장세화의 의료호송 중립을 증언으로 받치고, 차호민의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.",
+    "일화": "겨울의 검은 배차표 동안 의료열차에서 암사제 무기가 발견되자 스테판 페트로프는 칸 문을 잠그고 후국회가 열릴 때까지 나가지 않았다.",
+    "관계": "장세화의 의료호송 중립을 증언으로 받치고, 가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.",
     "야망": "의료칸에서 나온 암사제 봉인을 공동호송의 공개 증거로 남겨 용산이 보호전쟁의 입구가 되지 않게 한다.",
     "공포": "목격 진술이 사후 승인 문장으로 잘려 자신이 쿠데타의 침묵 증인이 되는 것.",
     "개입": "목격자를 기록청까지 호송하거나, 진술을 사후 승인 문장으로 바꾸려는 쪽지를 폭로할 수 있다."
   },
-  "biography": "붕대 냄새 사이에서 기름종이를 알아채고, 본 것을 줄이라는 장교의 눈짓을 모욕으로 듣는다. 온화하나 증언 한 줄은 깎지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 의료열차 무기 발견 시각·칸 기록\n- 직함: 의료열차 무기 목격자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료열차 무기 목격자 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 의료열차 무기 목격자. 발견 시각과 칸 번호를 의무 일지에 먼저 적고, 무장을 환자 명부와 같은 칠판에 올리지 않는다.\n\n**일화.** 겨울의 검은 배차표 동안 의료열차에서 암사제 무기가 발견되자 순가온은 칸 문을 잠그고 후국회가 열릴 때까지 나가지 않았다.\n\n**관계.** 장세화의 의료호송 중립을 증언으로 받치고, 차호민의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.\n\n**야망.** 의료칸에서 나온 암사제 봉인을 공동호송의 공개 증거로 남겨 용산이 보호전쟁의 입구가 되지 않게 한다.\n\n**공포.** 목격 진술이 사후 승인 문장으로 잘려 자신이 쿠데타의 침묵 증인이 되는 것.\n\n**개입.** 목격자를 기록청까지 호송하거나, 진술을 사후 승인 문장으로 바꾸려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 15 | 무력 −15 | 물질 20 | 공동 0 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 15 | 독점 −15 | 위험 −35 | 과시 −25 | 지속 20 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "붕대 냄새 사이에서 기름종이를 알아채고, 본 것을 줄이라는 장교의 눈짓을 모욕으로 듣는다. 온화하나 증언 한 줄은 깎지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 의료열차 무기 발견 시각·칸 기록\n- 직함: 의료열차 무기 목격자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료열차 무기 목격자 자리는 가짜 약 봉인으로 열렸다. 스테판 페트로프는 2065년에 태어났다. 불가리아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 의료열차 무기 목격자 업무를 맡는다. 게오르기 페트로프는 2026년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 스테판 페트로프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 불가리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 의료열차 무기 목격자. 발견 시각과 칸 번호를 의무 일지에 먼저 적고, 무장을 환자 명부와 같은 칠판에 올리지 않는다.\n\n**일화.** 겨울의 검은 배차표 동안 의료열차에서 암사제 무기가 발견되자 스테판 페트로프는 칸 문을 잠그고 후국회가 열릴 때까지 나가지 않았다.\n\n**관계.** 장세화의 의료호송 중립을 증언으로 받치고, 가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.\n\n**야망.** 의료칸에서 나온 암사제 봉인을 공동호송의 공개 증거로 남겨 용산이 보호전쟁의 입구가 되지 않게 한다.\n\n**공포.** 목격 진술이 사후 승인 문장으로 잘려 자신이 쿠데타의 침묵 증인이 되는 것.\n\n**개입.** 목격자를 기록청까지 호송하거나, 진술을 사후 승인 문장으로 바꾸려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 15 | 무력 −15 | 물질 20 | 공동 0 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 15 | 독점 −15 | 위험 −35 | 과시 −25 | 지속 20 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "순가온",
+        "from": "스테판 페트로프",
         "type": "맹세",
         "to": "장세화",
         "basis": "장세화의 의료호송 중립을 증언으로 받치고"
       },
       {
-        "from": "순가온",
+        "from": "스테판 페트로프",
         "type": "맹세",
-        "to": "차호민",
-        "basis": "차호민의 창 진료 봉쇄 시각과 발견을 맞추며"
+        "to": "가브리엘 존슨",
+        "basis": "가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며"
       }
     ],
     "incoming": [
       {
         "from": "홍우찬",
         "type": "맹세",
-        "to": "순가온",
-        "basis": "순가온의 의료칸 발견 시각을 파형과 겹친다"
+        "to": "스테판 페트로프",
+        "basis": "스테판 페트로프의 의료칸 발견 시각을 파형과 겹친다"
       },
       {
         "from": "란진아",
         "type": "계약",
-        "to": "순가온",
-        "basis": "순가온의 의료칸 발견 시각에 정차 일지를 겹치며"
+        "to": "스테판 페트로프",
+        "basis": "스테판 페트로프의 의료칸 발견 시각에 정차 일지를 겹치며"
       }
     ]
   }
