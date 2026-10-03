@@ -12,6 +12,7 @@
     "id": "doc.Home",
     "blockIds": [
       "source.b1",
+      "sp1.20261003.entry",
       "source.b2",
       "source.b3",
       "source.b4",
@@ -52,6 +53,16 @@
         {
           "kind": "text",
           "text": "《서울:전국》"
+        }
+      ]
+    },
+    {
+      "id": "sp1.20261003.entry",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 기획 판본은 SP-1.0.0 싱글플레이다. 행동·작위·전쟁·수여·계승·자산/지식 전수·관계와 영구 영향은 [싱글플레이 상세 기획](system-design/Singleplayer-Design-SP-1-0-0.md)을 따른다. 이전 공유 세계·호스트·접속자 기획은 현재 실행 전제가 아니며 구현 완료를 뜻하지 않는다."
         }
       ]
     },
