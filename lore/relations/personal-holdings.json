@@ -3,6 +3,27 @@
   "openingYear": 2126,
   "holdings": [
     {
+      "id": "holding:yeongdeungpo-concourse",
+      "name": { "ko": "영등포 대합실" },
+      "holderPersonId": "K017",
+      "directLiegePersonId": "K001",
+      "stateId": "S01",
+      "facilityRef": {
+        "sourcePath": "lore/regions/station-interiors.json",
+        "stationName": "영등포",
+        "stationId": "Yeongdeungpo",
+        "stationIdentity": { "district": "영등포구", "lat": 37.51536, "lon": 126.90693 },
+        "siteSourcePath": "lore/regions/content/11560.json",
+        "siteAnchor": "osm:node:5835544502",
+        "layerId": "concourse",
+        "layerName": "역사 대합실"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
       "id": "holding:yangcheon",
       "name": {
         "ko": "양천구 영지",

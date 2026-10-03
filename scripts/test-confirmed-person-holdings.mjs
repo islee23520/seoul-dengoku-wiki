@@ -4,10 +4,32 @@ import { test } from 'vitest'
 
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 
+test('Byeon Goun holds only the sourced Yeongdeungpo concourse under the existing direct liege', () => {
+  const holding = read('../lore/relations/personal-holdings.json').holdings.find(row => row.holderPersonId === 'K017')
+  assert.equal(holding.id, 'holding:yeongdeungpo-concourse')
+  assert.equal(holding.directLiegePersonId, 'K001')
+  assert.equal(holding.stateId, 'S01')
+  const station = read('../lore/regions/station-interiors.json').stations.find(row => row.name === '영등포')
+  assert.deepEqual(holding.facilityRef.stationIdentity, { district: station.district, lat: station.lat, lon: station.lon })
+  assert.equal(holding.facilityRef.layerId, 'concourse')
+  assert.equal(holding.facilityRef.stationId, 'Yeongdeungpo')
+  const mapStation = read('../public/opening-territories.json').stations.find(row => row.id === holding.facilityRef.stationId)
+  assert.equal(mapStation.name, holding.facilityRef.stationName)
+  assert.equal(holding.facilityRef.layerName, station.layers.find(row => row.id === 'concourse').wiki_layer)
+  assert.deepEqual(holding.adminRefs, [])
+  assert.equal(holding.geometrySource, null)
+  assert.equal(holding.territorialScale, null)
+  assert.equal(holding.formalTitleRank, null)
+  const detail = read('../public/person-details/person-0017.json')
+  assert.equal(detail.gurps.id, 'K017')
+  assert.equal(detail.directLiege.personId, 'K001')
+  assert.deepEqual(detail.confirmedHoldings, [holding])
+})
+
 test('Saetgang concourse holding preserves the exact facility and direct liege without geographic grants', () => {
   const ledger = read('../lore/relations/personal-holdings.json')
   const holding = ledger.holdings.find(row => row.holderPersonId === 'K233')
-  assert.equal(ledger.holdings.length, 2)
+  assert.equal(ledger.holdings.length, 3)
   assert.deepEqual(holding, {
     id: 'holding:saetgang-concourse', name: { ko: '샛강 대합실' },
     holderPersonId: 'K233', directLiegePersonId: 'K222', stateId: 'S09',
