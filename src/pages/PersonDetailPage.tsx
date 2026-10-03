@@ -7,6 +7,7 @@ import portraitCatalog from '../../portrait-catalog.json'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
+import type { PersonRightsPermissions, PermissionStatus } from '../personRightsPermissions'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type ConfirmedHolding = {
@@ -17,6 +18,7 @@ type ConfirmedHolding = {
   readonly facilityRef?: { readonly stationName: string; readonly layerId: string; readonly layerName: string }
 }
 type PersonDetail = (typeof peopleCatalog)[number] & {
+  rightsPermissions?: PersonRightsPermissions
   confirmedHoldings?: readonly ConfirmedHolding[]
   gurps: GurpsSheetData & { id: string; personId: string }
   unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
@@ -55,6 +57,36 @@ function DataTable({ title, rows }: { title: string; rows: Array<Array<string | 
       <div className="wiki-table-wrap"><table className="person-data-table"><tbody>{rows.map((row, i) => <tr key={i}><th>{row[0]}</th><td>{row[1] === null || row[1] === undefined ? '—' : String(row[1])}</td></tr>)}</tbody></table></div>
     </section>
   )
+}
+
+const permissionLabels: Record<PermissionStatus, string> = {
+  'not-recorded': '허가 기록 없음', granted: '프로젝트 사용 허가됨', revoked: '허가 철회', declined: '허가 거절',
+}
+const useLabels = { 'wiki-display': '위키 표시', 'game-use': '게임 사용', 'commercial-use': '상업 사용' } as const
+
+export function PersonPermissions({ permissions }: { readonly permissions?: PersonRightsPermissions }): JSX.Element | null {
+  if (!permissions) return null
+  return <section className="person-data-section" data-person-permissions>
+    <h2>이름·초상 사용 허가</h2>
+    <div className="wiki-table-wrap"><table className="person-data-table"><tbody>
+      {(['nameUse', 'likenessUse'] as const).map(scope => {
+        const permission = permissions[scope]
+        return <tr key={scope} data-permission-scope={scope} data-permission-status={permission.status}>
+          <th>{scope === 'nameUse' ? '이름 사용' : '초상 사용'}</th>
+          <td>{permissionLabels[permission.status]}
+            {permission.uses.length > 0 && <div>{permission.uses.map(use => useLabels[use]).join(' · ')}</div>}
+            {permission.date && <div><time dateTime={permission.date}>{permission.date}</time></div>}
+            {permission.recordedOn && <div>확인 기록일: <time dateTime={permission.recordedOn}>{permission.recordedOn}</time></div>}
+            {permission.evidenceRef && <div>기록 번호: {permission.evidenceRef}</div>}
+            {permission.priorLicenses?.map(license => <div key={license.sourceRef} data-prior-license-source={license.sourceRef}>
+              <a href={license.sourceRef}>적용 자료</a> · <a href={license.licenseRef}>기존 이용 허락</a> · <a href={license.conditionsRef}>적용 조건</a>
+            </div>)}
+          </td>
+        </tr>
+      })}
+    </tbody></table></div>
+    <p data-external-reuse-permission="required">외부 2차 창작에서 이 인물의 이름이나 초상을 사용하려면 실제 인물에게 별도 허가를 받아야 합니다. 프로젝트의 사용 허가와 콘텐츠 라이선스에는 외부 창작자의 이름·초상 사용 허가가 포함되지 않습니다.</p>
+  </section>
 }
 
 type SheetAttr = { value?: number; cp?: number }
@@ -405,6 +437,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             <figcaption>초상 아트 제안 · <a href={`${import.meta.env.BASE_URL}portrait-tokens/${detail.id}.json?v=${portraitCatalog.entries.find((entry) => entry.personId === detail.id && entry.name === detail.name)?.imageSha256}`}>디자인 토큰</a></figcaption>
           </figure>}
           <DataTable title="기본 정보" rows={basicRows} />
+          <PersonPermissions permissions={detail.rightsPermissions} />
           <DataTable title="관계" rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />
         </aside>
         <div className="wiki-prose person-canon-prose">

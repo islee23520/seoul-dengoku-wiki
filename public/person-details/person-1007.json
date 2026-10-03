@@ -12,6 +12,23 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Core-Characters#김연규",
   "detailRoute": "/people/person-1007",
+  "rightsPermissions": {
+    "applicability": "real-person",
+    "identityBasisRef": "owner-confirmed-identity-20260925",
+    "externalReuseRequiresSeparateSubjectPermission": true,
+    "nameUse": {
+      "status": "granted",
+      "uses": [],
+      "recordedOn": "2026-10-03",
+      "evidenceRef": "owner-current-subject-permissions-20261003"
+    },
+    "likenessUse": {
+      "status": "granted",
+      "uses": [],
+      "recordedOn": "2026-10-03",
+      "evidenceRef": "owner-current-subject-permissions-20261003"
+    }
+  },
   "gurps": {
     "id": "K1007",
     "personId": "person-1007",
