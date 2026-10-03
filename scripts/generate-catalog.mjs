@@ -19,6 +19,7 @@ import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
+import { validateHoldingFacility } from './holding-facility.mjs'
 import { regularLineGraph } from './regular-line-graph.mjs'
 import { regionalLineGraph } from './regional-line-graph.mjs'
 
@@ -848,10 +849,26 @@ const courtDataset = loadDataset()
 const courtErrors = validateRelations(courtDataset)
 if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
 const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
+const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
+const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
+await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
+const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
+for (const holding of personalHoldings.holdings) {
+  if (!issuedById.has(holding.holderPersonId) || !issuedById.has(holding.directLiegePersonId) || (!holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
+  if (holding.facilityRef) {
+    await validateHoldingFacility(holding, stationInteriors, repoRoot)
+  }
+  for (const ref of holding.adminRefs) {
+    const region = openingTerritories.regions.find(region => region.id === ref.id)
+    if (!region || region.name !== ref.name) throw new Error('E_HOLDING_ADMIN_REF:' + holding.id + ':' + ref.id)
+  }
+}
+await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
 const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
 const retainersById = new Map(courtDataset.config.directRetainers.map((row) => [row.personId, row]))
 const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
   courtDataset.config.directRetainers.filter((row) => row.courtId === court.id)]))
+const ownerLiegeByPerson = new Map(courtDataset.config.ownerLieges?.edges?.map((row) => [row.personId, row]) ?? [])
 const parseCardSections = (body) => {
   const sections = {}
   const matches = [...body.matchAll(/\*\*([^*]+?)\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*#{2,3}\s|\n\s*:::|$)/g)]
@@ -912,15 +929,24 @@ const graphPerson = (id) => {
 }
 const graphCourts = courtDataset.config.courts
 const graphRetainers = courtDataset.config.directRetainers
+const graphOwnerLieges = courtDataset.config.ownerLieges?.edges ?? []
 const graphIds = new Set(graphCourts.map((court) => court.ownerPersonId))
 for (const row of graphRetainers) {
   graphIds.add(row.personId)
   graphIds.add(row.liegePersonId)
 }
+for (const row of graphOwnerLieges) {
+  graphIds.add(row.personId)
+  graphIds.add(row.liegePersonId)
+}
 const retainerGraph = {
   nodes: [...graphIds].map(graphPerson),
-  edges: graphRetainers.map(({ personId, liegePersonId, courtId }) =>
-    ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
+  edges: [
+    ...graphRetainers.map(({ personId, liegePersonId, courtId }) =>
+      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
+    ...graphOwnerLieges.map(({ personId, liegePersonId, relationKind, ownerTerm }) =>
+      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: null, relationKind, ownerTerm })),
+  ],
   courts: graphCourts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
 }
 await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
@@ -951,6 +977,7 @@ for (const person of peopleCatalog) {
       cp: sheet.cp,
       secondary: sheet.secondary,
     },
+    confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
     unit: sheet.unit,
     territory: sheet.territory,
     wandering_force: sheet.wandering_force,
@@ -969,6 +996,11 @@ for (const person of peopleCatalog) {
       const row = retainersById.get(issuedId)
       return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
         courtId: row.courtId, effectiveYear: courtDataset.config.courtContract.effectiveYear } }
+    })() : ownerLiegeByPerson.has(issuedId) ? (() => {
+      const row = ownerLiegeByPerson.get(issuedId)
+      return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
+        relationKind: row.relationKind, ownerTerm: row.ownerTerm,
+        effectiveYear: courtDataset.config.ownerLieges.effectiveYear } }
     })() : {}),
     ...(courtMembersByOwner.has(issuedId) ? {
       court: { id: `court:${issuedId}`,

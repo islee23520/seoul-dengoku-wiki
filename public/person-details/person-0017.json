@@ -69,6 +69,7 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -147,6 +148,13 @@
   "sources": [
     "Cast-State-01"
   ],
+  "directLiege": {
+    "personId": "K001",
+    "name": "한재목",
+    "relationKind": "direct-liege",
+    "ownerTerm": "직속 주군",
+    "effectiveYear": 2126
+  },
   "court": {
     "id": "court:K017",
     "members": [
