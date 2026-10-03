@@ -20,18 +20,210 @@
     "hair": "짧고 구불거리는 검은 머리",
     "upper": "접힌 옷깃의 무광 철회색 작업 재킷",
     "lower": null,
-    "footwear": null
+    "footwear": null,
+    "accessories": null
   },
   "style": {
-    "styleId": "wingzero-119-medium-close-up-b-study-1",
-    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "portraitShotId": "medium-close-up-119",
-    "crop": "head, both shoulders and upper chest"
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
   },
   "image": {
     "path": "/portraits/person-0029.png",
-    "sha256": "dc95bf52af852e910819bd0d46533da17a351beb630508a1dd3e6032b113caba",
-    "width": 1214,
-    "height": 1295
+    "sha256": "baa1fe624e47004893c3e42242472b09f483a340402880ceee4ab9a525f45ee2",
+    "width": 1160,
+    "height": 1355
+  },
+  "identity": {
+    "characterId": "K029",
+    "name": "강민서",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "남성",
+    "ageCategory": "adult"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "각진 턱, 생각에 잠긴 표정",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "faceShape": {
+        "value": "angular, with a broad jaw and squared chin",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "eyeShape": {
+        "value": "narrow, almond-shaped",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "eyebrowShape": {
+        "value": "thick, dark, slightly angled",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "lipColor": {
+        "value": "muted brown-pink",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "mouthShape": {
+        "value": "closed, with a nearly straight line and a subtle downward turn",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "noseShape": {
+        "value": "straight bridge with a rounded tip and broad nostrils",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "beardShape": {
+        "value": "clean-shaven",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "짧고 구불거리는 검은 머리",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "shape": {
+        "value": "thick, tousled waves swept back and to the side",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "color": {
+        "value": "black",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "length": {
+        "value": "medium-short",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "broad-shouldered, sturdy",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "weight": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "flat chest",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "skin": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "upper": {
+        "value": "접힌 옷깃의 무광 철회색 작업 재킷",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0029.json"
+      },
+      "lower": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "footwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "marks": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "neckline": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "shape": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "color": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "material": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "mounting": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "imageReview": {
+    "record": "/portrait-reviews/person-0029.json",
+    "imageSha256": "baa1fe624e47004893c3e42242472b09f483a340402880ceee4ab9a525f45ee2",
+    "verdict": "pass",
+    "scope": "exact approved transparent PNG only"
   }
 }

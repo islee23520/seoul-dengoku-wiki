@@ -11,8 +11,8 @@
     "role": "First Branch Workshop Lee-house heir who tends the depot field and checks grain stocks"
   },
   "artProposal": {
-    "face": "Use the latest owner photograph for facial likeness: softly rounded jaw, natural cheek volume, straight dark eyebrows, slightly narrow eyes, rounded nose tip and softly shaped lips; no glasses or facial hair. Preserve the photographed facial proportions rather than the previous generated face.",
-    "hair": "Use the latest owner photograph: short dense black hair with a rounded natural crown, side volume and a curved slightly separated fringe above the eyebrows; not a uniform heavy straight fringe.",
+    "face": "Adult Korean facial identity preserved, with noticeably fuller cheeks and a rounder, softer lower face than the identity reference. More facial fullness, no narrow angular jaw or pointed chin.",
+    "hair": "Short dense black hair swept back and lightly side-parted, forehead clearly exposed; no fringe covering the forehead or eyebrows.",
     "outfit": "Muted clay-brown plain work jacket over cream shirt",
     "palette": [
       "clay brown",
@@ -22,22 +22,24 @@
     "carriedWeapons": "none depicted; no ownership inferred",
     "upper": "Muted clay-brown plain work jacket over cream shirt",
     "lower": null,
-    "footwear": null
+    "footwear": null,
+    "accessories": "Large perfectly round clear eyeglass lenses in thin copper metal frames; mandatory"
   },
   "style": {
-    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
-    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "portraitShotId": "medium-close-up-119",
-    "crop": "head, both shoulders and upper chest"
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
   },
   "image": {
     "path": "/portraits/person-0998.png",
-    "sha256": "8b96b28031b8ee205fc0417bd79ffe3e21a50f8e248454a3bb2c4dc8ea535cf5",
-    "width": 1215,
-    "height": 1295
+    "sha256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
+    "width": 1160,
+    "height": 1355
   },
   "references": {
-    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "identitySha256": "1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f",
     "identityRole": "owner-face-and-hair-only",
     "excludePhoto": [
@@ -45,13 +47,198 @@
       "pose",
       "background"
     ],
-    "reviewStatus": "unreviewed"
+    "reviewStatus": "unreviewed",
+    "reviewScope": "identity reference only; selected portrait verdict is imageReview"
   },
   "variantId": "ilseob-owner-photo-correction-v1",
   "imageReview": {
     "record": "/portrait-reviews/person-0998.json",
-    "imageSha256": "8b96b28031b8ee205fc0417bd79ffe3e21a50f8e248454a3bb2c4dc8ea535cf5",
+    "imageSha256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
     "verdict": "pass",
-    "scope": "exact image only; no appearance or equipment canon promotion"
+    "scope": "exact approved transparent PNG only"
+  },
+  "identity": {
+    "characterId": "K998",
+    "name": "이일섭",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "남성",
+    "ageCategory": "adult"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Adult Korean facial identity preserved, with noticeably fuller cheeks and a rounder, softer lower face than the identity reference. More facial fullness, no narrow angular jaw or pointed chin.",
+        "status": "art-proposal",
+        "source": "owner-directive-20261002-forehead-and-fuller-body"
+      },
+      "faceShape": {
+        "value": "Full rounded oval face, plump cheeks, soft broad rounded jaw and chin; visibly fuller than the reference person.",
+        "status": "art-proposal",
+        "source": "owner-directive-20261002-forehead-and-fuller-body"
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0998.json"
+      },
+      "eyeShape": {
+        "value": "Narrow almond shapes, gently curved upper lids and flatter lower lids, natural asymmetry",
+        "status": "art-proposal",
+        "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+      },
+      "eyebrowShape": {
+        "value": "Mostly straight, low arches, soft outer tapers",
+        "status": "art-proposal",
+        "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+      },
+      "lipColor": {
+        "value": "muted pink",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0998.json"
+      },
+      "mouthShape": {
+        "value": "Closed gently curved mouth, subtle cupid bow, fuller lower lip",
+        "status": "art-proposal",
+        "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+      },
+      "noseShape": {
+        "value": "Straight narrow bridge, softly rounded tip, small curved nostrils",
+        "status": "art-proposal",
+        "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+      },
+      "beardShape": {
+        "value": "clean shaven",
+        "status": "art-proposal",
+        "source": "owner-photo-sha256:1583cb73f8d962bafcce56adcc190f79012f33845dc7256d59a1d0985de99a8f"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "Short dense black hair swept back and lightly side-parted, forehead clearly exposed; no fringe covering the forehead or eyebrows.",
+        "status": "art-proposal",
+        "source": "owner-directive-20261002-forehead-and-fuller-body"
+      },
+      "shape": {
+        "value": "Natural rounded crown and side volume with swept-back front exposing the forehead.",
+        "status": "art-proposal",
+        "source": "owner-directive-20261002-forehead-and-fuller-body"
+      },
+      "color": {
+        "value": "black",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0998.json"
+      },
+      "length": {
+        "value": "short",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0998.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "Fuller, heavier-set build than the reference image, with a thicker neck and softer rounded shoulder and upper torso silhouette; preserve natural adult proportions.",
+        "status": "art-proposal",
+        "source": "owner-directive-20261002-forehead-and-fuller-body"
+      },
+      "weight": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "flat chest",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0998.json"
+      },
+      "skin": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "upper": {
+        "value": "Muted clay-brown plain work jacket over cream shirt",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0998.json"
+      },
+      "lower": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "footwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "marks": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "neckline": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "Large perfectly round clear eyeglass lenses in thin copper metal frames; mandatory",
+        "status": "art-proposal",
+        "source": "owner-directive-20261002"
+      },
+      "shape": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "color": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "material": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "mounting": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
   }
 }

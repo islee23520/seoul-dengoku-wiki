@@ -20,24 +20,210 @@
     "hair": "은빛이 엷게 도는 머리",
     "upper": "성직 복장·상징 없는 따뜻한 갈색 민간 외투",
     "lower": null,
-    "footwear": null
+    "footwear": null,
+    "accessories": null
   },
   "style": {
-    "styleId": "wingzero-119-medium-close-up-b-study-1",
-    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "portraitShotId": "medium-close-up-119",
-    "crop": "head, both shoulders and upper chest"
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
   },
   "image": {
     "path": "/portraits/person-0374.png",
-    "sha256": "7c5e5b7a30e57f796cbb68c3140fd80c2c155f7a6b4b9baa0775edf262f7865b",
-    "width": 1145,
-    "height": 1374
+    "sha256": "1698d5afb3e3bb883024a2b03e3af27b67c4ff6eed1522e13804ff3317b8be70",
+    "width": 1160,
+    "height": 1355
   },
   "imageReview": {
     "record": "/portrait-reviews/person-0374.json",
-    "imageSha256": "7c5e5b7a30e57f796cbb68c3140fd80c2c155f7a6b4b9baa0775edf262f7865b",
+    "imageSha256": "1698d5afb3e3bb883024a2b03e3af27b67c4ff6eed1522e13804ff3317b8be70",
     "verdict": "pass",
-    "scope": "exact image only; no appearance or equipment canon promotion"
+    "scope": "exact approved transparent PNG only"
+  },
+  "identity": {
+    "characterId": "K373",
+    "name": "남윤경",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "남성",
+    "ageCategory": "adult"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "온화하지만 진지한 얼굴",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "faceShape": {
+        "value": "oval with an angular jaw",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "eyeShape": {
+        "value": "almond-shaped, slightly hooded",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "eyebrowShape": {
+        "value": "thick, gently arched",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "lipColor": {
+        "value": "muted brown-pink",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "mouthShape": {
+        "value": "closed, nearly straight with slightly downturned corners",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "noseShape": {
+        "value": "prominent bridge with a rounded tip",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "beardShape": {
+        "value": "clean-shaven",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "은빛이 엷게 도는 머리",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "shape": {
+        "value": "side-parted and swept back, with a loose curved strand at the front",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "color": {
+        "value": "dark brown with gray streaks",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "length": {
+        "value": "medium",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "broad-shouldered",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "weight": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "bustSize": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "skin": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "upper": {
+        "value": "성직 복장·상징 없는 따뜻한 갈색 민간 외투",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-0374.json"
+      },
+      "lower": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "footwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "marks": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "neckline": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "shape": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "color": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "material": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "mounting": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
   }
 }
