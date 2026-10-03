@@ -12,6 +12,384 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-마솔",
   "detailRoute": "/people/person-0202",
+  "birthDate": "2073-03-24",
+  "birthday": "03-24",
+  "age": 53,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/105",
+    "lore/characters/Cast-State-08.json#/content/107",
+    "lore/characters/Cast-State-08.json#/content/111"
+  ],
+  "familyTree": {
+    "personId": "K201",
+    "nodes": [
+      {
+        "id": "K201",
+        "personId": "K201",
+        "kind": "person",
+        "name": "마솔",
+        "birthDate": "2073-03-24",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K201"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 냉동창고 물류상 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마솔-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0202"
+      },
+      {
+        "id": "FH-K201-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "마승우",
+        "birthDate": "2043-03-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "마승우는 노량진 선창에서 냉동창고 재고 온도·중량 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K201-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "마승경",
+        "birthDate": "2013-03-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마승경은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K201-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현영",
+        "birthDate": "2043-03-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "송현영은 노량진 선창에서 냉동창고 재고 온도·중량 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K201-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현경",
+        "birthDate": "2013-03-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조현경은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K201-P-01:K201:biological",
+        "from": "FH-K201-P-01",
+        "to": "K201",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K201-P-02:FH-K201-P-01:biological",
+        "from": "FH-K201-P-02",
+        "to": "FH-K201-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K201-M-01:K201:biological",
+        "from": "FH-K201-M-01",
+        "to": "K201",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K201-M-02:FH-K201-M-01:biological",
+        "from": "FH-K201-M-02",
+        "to": "FH-K201-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K201",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K201-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/972"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K201-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/974"
+          }
+        ]
+      },
+      {
+        "recipientId": "K195",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "조민재의 삼호 창고 온도 기록을 현장에서 집행하는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/170"
+          }
+        ]
+      },
+      {
+        "recipientId": "K176",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "나탈리야 소콜로바의 용산 칸 봉인과 인계 시각을 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/171"
+          }
+        ]
+      },
+      {
+        "recipientId": "K204",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "마솔의 칸 자격 박탈을 배달하는 계약이며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/177"
+          }
+        ]
+      },
+      {
+        "recipientId": "K209",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "마솔의 칸 자격과 순번을 나누며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/187"
+          }
+        ]
+      },
+      {
+        "recipientId": "K214",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "마솔의 칸 봉쇄를 목격으로 받치며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/99"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K201",
     "personId": "person-0202",
@@ -144,12 +522,12 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 냉동창고 물류상. 재고 온도와 중량을 정오에 공개하고, 허위 재고가 나오면 해당 칸의 경매 자격을 박탈한다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 냉동창고 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "조민재의 삼호 창고 온도 기록을 현장에서 집행하는 계약이고, 송이든에게 냉동 화물을 맡기며, 주서람의 용산 칸 봉인과 인계 시각을 맞춘다.",
+    "관계": "조민재의 삼호 창고 온도 기록을 현장에서 집행하는 계약이고, 루카스 슈나이더에게 냉동 화물을 맡기며, 나탈리야 소콜로바의 용산 칸 봉인과 인계 시각을 맞춘다.",
     "야망": "얼음 벽돌과 단기 식량 재고를 허가 원장으로 묶어 가락의 가격 주도권을 노량진 현장에서 가져온다.",
     "공포": "전력이 하루만 끊겨도 냉동 신용이 녹아내리는 것.",
     "개입": "발전 부품을 구해 냉동을 살리거나, 녹은 재고를 가득 찬 것처럼 적은 장부를 폭로할 수 있다."
   },
-  "biography": "손실을 숨기는 동료를 참지 못하고, 숫자보다 냄새로 창고 상태를 먼저 읽는다. 흥정에서는 웃지만 온도계가 흔들리면 표정이 굳는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 냉동창고 재고 온도·중량 공개\n- 직함: 냉동창고 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 냉동창고 물류상 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 냉동창고 물류상. 재고 온도와 중량을 정오에 공개하고, 허위 재고가 나오면 해당 칸의 경매 자격을 박탈한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 냉동창고 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 조민재의 삼호 창고 온도 기록을 현장에서 집행하는 계약이고, 송이든에게 냉동 화물을 맡기며, 주서람의 용산 칸 봉인과 인계 시각을 맞춘다.\n\n**야망.** 얼음 벽돌과 단기 식량 재고를 허가 원장으로 묶어 가락의 가격 주도권을 노량진 현장에서 가져온다.\n\n**공포.** 전력이 하루만 끊겨도 냉동 신용이 녹아내리는 것.\n\n**개입.** 발전 부품을 구해 냉동을 살리거나, 녹은 재고를 가득 찬 것처럼 적은 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 30 | 무력 −30 | 물질 75 | 공동 −30 | 원칙 −40 | 공개 25 | 자격 5 | 분산 30 | 변혁 5\n- 욕망: 갈망 15 | 독점 −40 | 위험 15 | 과시 −30 | 지속 30 | 지향 양성 | 결합 없음\n:::",
+  "biography": "손실을 숨기는 동료를 참지 못하고, 숫자보다 냄새로 창고 상태를 먼저 읽는다. 흥정에서는 웃지만 온도계가 흔들리면 표정이 굳는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 냉동창고 재고 온도·중량 공개\n- 직함: 냉동창고 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 냉동창고 물류상 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 냉동창고 물류상. 재고 온도와 중량을 정오에 공개하고, 허위 재고가 나오면 해당 칸의 경매 자격을 박탈한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 냉동창고 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 조민재의 삼호 창고 온도 기록을 현장에서 집행하는 계약이고, 루카스 슈나이더에게 냉동 화물을 맡기며, 나탈리야 소콜로바의 용산 칸 봉인과 인계 시각을 맞춘다.\n\n**야망.** 얼음 벽돌과 단기 식량 재고를 허가 원장으로 묶어 가락의 가격 주도권을 노량진 현장에서 가져온다.\n\n**공포.** 전력이 하루만 끊겨도 냉동 신용이 녹아내리는 것.\n\n**개입.** 발전 부품을 구해 냉동을 살리거나, 녹은 재고를 가득 찬 것처럼 적은 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 30 | 무력 −30 | 물질 75 | 공동 −30 | 원칙 −40 | 공개 25 | 자격 5 | 분산 30 | 변혁 5\n- 욕망: 갈망 15 | 독점 −40 | 위험 15 | 과시 −30 | 지속 30 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-08"
   ],
@@ -164,8 +542,8 @@
       {
         "from": "마솔",
         "type": "계약",
-        "to": "주서람",
-        "basis": "주서람의 용산 칸 봉인과 인계 시각을 맞춘다"
+        "to": "나탈리야 소콜로바",
+        "basis": "나탈리야 소콜로바의 용산 칸 봉인과 인계 시각을 맞춘다"
       }
     ],
     "incoming": [

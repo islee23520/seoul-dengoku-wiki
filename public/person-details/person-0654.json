@@ -1,6 +1,6 @@
 {
   "id": "person-0654",
-  "name": "하름은",
+  "name": "디미터르 게오르기에프",
   "title": "호송 전령",
   "position": "호송 전령",
   "rank": "주사",
@@ -10,8 +10,425 @@
   "stage": "S4",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-하름은",
+  "sourceRoute": "/world/Cast-State-07#인물-디미터르 게오르기에프",
   "detailRoute": "/people/person-0654",
+  "birthDate": "2077-11-19",
+  "birthday": "11-19",
+  "age": 49,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/413",
+    "lore/characters/Cast-State-07.json#/content/415",
+    "lore/characters/Cast-State-07.json#/content/416"
+  ],
+  "familyTree": {
+    "personId": "K654",
+    "nodes": [
+      {
+        "id": "K654",
+        "personId": "K654",
+        "kind": "person",
+        "name": "디미터르 게오르기에프",
+        "birthDate": "2077-11-19",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K654"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-디미터르-게오르기에프-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Dimitar Georgiev",
+        "detailRoute": "/people/person-0654"
+      },
+      {
+        "id": "FH-K654-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이반 게오르기에프",
+        "birthDate": "2047-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "이반 게오르기에프는 2047년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2065년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-디미터르-게오르기에프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Ivan Georgiev was born in 2047 and grew up reading family and work records. From 2065, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Ivan Georgiev",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K654-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "게오르기 게오르기에프",
+        "birthDate": "2017-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "게오르기 게오르기에프는 2017년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2035년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-디미터르-게오르기에프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Georgi Georgiev was born in 2017 and grew up reading family and work records. From 2035, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Georgi Georgiev",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K654-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "데시슬라바 디미트로바",
+        "birthDate": "2047-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "데시슬라바 디미트로바는 2047년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2065년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-디미터르-게오르기에프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Desislava Dimitrova was born in 2047 and grew up reading family and work records. From 2065, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Desislava Dimitrova",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K654-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "츠베타나 디미트로바",
+        "birthDate": "2017-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "츠베타나 디미트로바는 2017년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2035년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-디미터르-게오르기에프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Tsvetana Dimitrova was born in 2017 and grew up reading family and work records. From 2035, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Tsvetana Dimitrova",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K654-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "페타르 게오르기에프",
+        "nameEn": "Petar Georgiev",
+        "birthDate": "1987-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K654-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "페타르 게오르기에프는 2026년 대정전 당시 동대문·용산 생활권에서 동대문 야간 공임과 용산 공급 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Petar Georgiev was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K654-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K654-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "베셀라 디미트로바",
+        "nameEn": "Vesela Dimitrova",
+        "birthDate": "1987-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K654-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "베셀라 디미트로바는 2026년 대정전 당시 동대문·용산 생활권에서 동대문 야간 공임과 용산 공급 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Vesela Dimitrova was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K654-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K654-P-01:K654:biological",
+        "from": "FH-K654-P-01",
+        "to": "K654",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K654-P-02:FH-K654-P-01:biological",
+        "from": "FH-K654-P-02",
+        "to": "FH-K654-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K654-M-01:K654:biological",
+        "from": "FH-K654-M-01",
+        "to": "K654",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K654-M-02:FH-K654-M-01:biological",
+        "from": "FH-K654-M-02",
+        "to": "FH-K654-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-디미터르-게오르기에프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K654-P-03:FH-K654-P-02:biological",
+        "from": "FH-K654-P-03",
+        "to": "FH-K654-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K654-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K654-M-03:FH-K654-M-02:biological",
+        "from": "FH-K654-M-03",
+        "to": "FH-K654-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K654-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K654",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K654-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3141"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K654-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3143"
+          }
+        ]
+      },
+      {
+        "recipientId": "K180",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "디미터르 게오르기에프는 호송로 폐쇄와 붕괴 위치를 패트릭 오코너에게 알린다. 패트릭 오코너는 레일 상태를 조사해 실제 파손과 통행 소문을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/729"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K654",
     "personId": "person-0654",
@@ -92,9 +509,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "d558-c9c4-c8fc",
-    "name": "진주 하씨",
-    "crest": "clan-crests/d558-c9c4-c8fc.svg"
+    "id": "DIV-K654",
+    "name": "용산·이태원 게오르기에프씨",
+    "crest": "clan-crests/DIV-K654.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -129,21 +546,28 @@
     "욕망": "갈망 45 | 독점 0 | 위험 0 | 과시 0 | 지속 −20 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 디미터르 게오르기에프는 2077년에 태어났다. 불가리아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 페타르 게오르기에프는 2026년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 디미터르 게오르기에프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 불가리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 디미터르 게오르기에프는 호송로 폐쇄와 붕괴 위치를 패트릭 오코너에게 알린다. 패트릭 오코너는 레일 상태를 조사해 실제 파손과 통행 소문을 구분한다.",
     "야망": "호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
     "공포": "호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 침수 구간 붕괴 보고·폐쇄\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 35 | 무력 −20 | 물질 30 | 공동 −5 | 원칙 −5 | 공개 −5 | 자격 30 | 분산 0 | 변혁 0\n- 욕망: 갈망 45 | 독점 0 | 위험 0 | 과시 0 | 지속 −20 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 침수 구간 붕괴 보고·폐쇄\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 디미터르 게오르기에프는 2077년에 태어났다. 불가리아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 페타르 게오르기에프는 2026년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 디미터르 게오르기에프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 불가리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 디미터르 게오르기에프는 호송로 폐쇄와 붕괴 위치를 패트릭 오코너에게 알린다. 패트릭 오코너는 레일 상태를 조사해 실제 파손과 통행 소문을 구분한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 35 | 무력 −20 | 물질 30 | 공동 −5 | 원칙 −5 | 공개 −5 | 자격 30 | 분산 0 | 변혁 0\n- 욕망: 갈망 45 | 독점 0 | 위험 0 | 과시 0 | 지속 −20 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "디미터르 게오르기에프",
+        "type": "계약",
+        "to": "패트릭 오코너",
+        "basis": "디미터르 게오르기에프는 호송로 폐쇄와 붕괴 위치를 패트릭 오코너에게 알린다. 패트릭 오코너는 레일 상태를 조사해 실제 파손과 통행 소문을 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

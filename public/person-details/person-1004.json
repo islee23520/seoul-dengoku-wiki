@@ -12,6 +12,264 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-이연",
   "detailRoute": "/people/person-1004",
+  "birthDate": "2101-02-09",
+  "birthday": "02-09",
+  "age": 25,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-Unaffiliated.json#/content/6",
+    "lore/chronology/Century-Annals.json#/content/558",
+    "lore/chronology/Scenario-Timeline.json#/content/12"
+  ],
+  "familyTree": {
+    "personId": "K1004",
+    "nodes": [
+      {
+        "id": "K1004",
+        "personId": "K1004",
+        "kind": "synthetic",
+        "name": "이연",
+        "birthDate": "2101-02-09",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1004"
+          },
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-이연-list1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "성명: 이연 (Iyen). 별칭 없음",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-이연-list1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-1004"
+      },
+      {
+        "id": "FH-K1004-C-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서현",
+        "birthDate": "2071-02-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-이연-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "이서현은 돌봄 기록이 사람의 이름을 지우지 않도록 요청과 판단을 구분해 다음 담당자에게 넘긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-이연-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1004-C-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서영",
+        "birthDate": "2041-02-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-이연-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "이서영은 돌봄 기록이 사람의 이름을 지우지 않도록 요청과 판단을 구분해 다음 담당자에게 넘긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-이연-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1004-C-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서윤",
+        "birthDate": "2011-02-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-이연-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이서윤은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-이연-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1004-C-01:K1004:custodial",
+        "from": "FH-K1004-C-01",
+        "to": "K1004",
+        "type": "custodial",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-이연-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1004-C-02:FH-K1004-C-01:custodial",
+        "from": "FH-K1004-C-02",
+        "to": "FH-K1004-C-01",
+        "type": "custodial",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-이연-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1004-C-03:FH-K1004-C-02:custodial",
+        "from": "FH-K1004-C-03",
+        "to": "FH-K1004-C-02",
+        "type": "custodial",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-이연-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K1004",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K1004-C-01",
+        "recipientKind": "family-node",
+        "type": "custodial",
+        "direction": "incoming",
+        "role": "custodial",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4840"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1003",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "조재표의 이동·호위 명령을 현장에서 수행하되 민간인 희생과 귀환로 폐쇄 명령은 거부한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/220"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K1004",
     "personId": "person-1004",

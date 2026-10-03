@@ -12,6 +12,495 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-나태경",
   "detailRoute": "/people/person-0204",
+  "birthDate": "2067-03-27",
+  "birthday": "03-27",
+  "age": 59,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/127",
+    "lore/characters/Cast-State-08.json#/content/129"
+  ],
+  "familyTree": {
+    "personId": "K203",
+    "nodes": [
+      {
+        "id": "K203",
+        "personId": "K203",
+        "kind": "person",
+        "name": "나태경",
+        "birthDate": "2067-03-27",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K203"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 시장 자경 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-나태경-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0204"
+      },
+      {
+        "id": "FH-K203-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "나승수",
+        "birthDate": "2037-03-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "나승수는 암사 경비 초소에서 시장 순찰·화물 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-나태경-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K203-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "나승은",
+        "birthDate": "2007-03-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "나승은은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-나태경-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K203-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김현훈",
+        "birthDate": "2037-03-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "김현훈은 암사 경비 초소에서 시장 순찰·화물 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-나태경-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K203-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박현훈",
+        "birthDate": "2007-03-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박현훈은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-나태경-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K203-P-01:K203:biological",
+        "from": "FH-K203-P-01",
+        "to": "K203",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K203-P-02:FH-K203-P-01:biological",
+        "from": "FH-K203-P-02",
+        "to": "FH-K203-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K203-M-01:K203:biological",
+        "from": "FH-K203-M-01",
+        "to": "K203",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K203-M-02:FH-K203-M-01:biological",
+        "from": "FH-K203-M-02",
+        "to": "FH-K203-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-나태경-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K203",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K203-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/980"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K203-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/982"
+          }
+        ]
+      },
+      {
+        "recipientId": "K447",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배태민은 시장 야간 순찰에서 무단 출입을 적발하면 나태경에게 현장 경위를 알리고 자신의 경비 암호패를 교체한다. 나태경은 해당 길목의 화물을 검사해, 침입 흔적이 무단 하역이나 화물 훼손과 이어지는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/227"
+          }
+        ]
+      },
+      {
+        "recipientId": "K495",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "곽다호는 야간 도꾼을 적발한 길목과 암호패 교체 사실을 나태경에게 알린다. 나태경은 해당 길목의 화물과 도착 중량을 검사해, 무단 출입 뒤에 하역이나 화물 개봉이 있었는지 추적한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/268"
+          }
+        ]
+      },
+      {
+        "recipientId": "K527",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배동민은 접수한 밀수 호스와 관로에 단 내역을 나태경에게 보여 준다. 나태경은 시장 화물 검사에서 같은 호스가 어느 짐에 들어왔는지 살펴 접수 기록과 무단 하역의 연결을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/296"
+          }
+        ]
+      },
+      {
+        "recipientId": "K543",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "김름호는 시장 호송로의 능선에서 매복 흔적을 발견하면 나태경에게 현장을 알린다. 나태경은 출발 전에 화물과 경로의 위험을 살펴 순찰의 관찰이 다음 호송 검사로 이어지게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/310"
+          }
+        ]
+      },
+      {
+        "recipientId": "K687",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배은민은 시장 난입을 제지한 길목과 명부 재검 내용을 나태경에게 전한다. 나태경은 화물을 검사해 무단 접근 뒤에 하역이나 상자 개봉이 이어졌는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/436"
+          }
+        ]
+      },
+      {
+        "recipientId": "K783",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "정북은은 시장 난입의 명부 재점검과 길목을 나태경에게 알린다. 나태경은 화물을 검사해 그 접근 뒤에 무단 하역이나 상자 개봉이 있었는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/520"
+          }
+        ]
+      },
+      {
+        "recipientId": "K831",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신남빈은 야간 도꾼을 적발한 위치와 암호패 교체를 나태경에게 전한다. 나태경은 그 길목의 화물을 검사해 무단 하역이나 상자 개봉이 이어졌는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/562"
+          }
+        ]
+      },
+      {
+        "recipientId": "K863",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "윤차율은 접수한 호스와 관로 사용 기록을 나태경에게 보여 준다. 나태경은 시장 화물을 검사해 호스가 어느 짐에서 들어왔는지 추적한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/590"
+          }
+        ]
+      },
+      {
+        "recipientId": "K879",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배솔민은 시장 난입의 명부 재검과 위치를 나태경에게 전한다. 나태경은 화물을 검사해 무단 접근 뒤에 하역이나 개봉이 있었는지 확인한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/604"
+          }
+        ]
+      },
+      {
+        "recipientId": "K975",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "강바준은 시장 호송로의 매복 흔적을 나태경에게 알린다. 나태경은 출발 전 화물과 경로를 확인해 현장 관찰이 다음 검사에 이어지게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/689"
+          }
+        ]
+      },
+      {
+        "recipientId": "K197",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "신태산의 호송 계약을 부두에서 집행하는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/174"
+          }
+        ]
+      },
+      {
+        "recipientId": "K207",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "설초아의 역 방송을 출항 시각과 맞추며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/175"
+          }
+        ]
+      },
+      {
+        "recipientId": "K215",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "나태경의 출항 저지를 현장에서 받치며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/101"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K203",
     "personId": "person-0204",
@@ -175,6 +664,66 @@
       }
     ],
     "incoming": [
+      {
+        "from": "배태민",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "배태민은 시장 야간 순찰에서 무단 출입을 적발하면 나태경에게 현장 경위를 알리고 자신의 경비 암호패를 교체한다. 나태경은 해당 길목의 화물을 검사해, 침입 흔적이 무단 하역이나 화물 훼손과 이어지는지 살핀다."
+      },
+      {
+        "from": "곽다호",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "곽다호는 야간 도꾼을 적발한 길목과 암호패 교체 사실을 나태경에게 알린다. 나태경은 해당 길목의 화물과 도착 중량을 검사해, 무단 출입 뒤에 하역이나 화물 개봉이 있었는지 추적한다."
+      },
+      {
+        "from": "배동민",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "배동민은 접수한 밀수 호스와 관로에 단 내역을 나태경에게 보여 준다. 나태경은 시장 화물 검사에서 같은 호스가 어느 짐에 들어왔는지 살펴 접수 기록과 무단 하역의 연결을 찾는다."
+      },
+      {
+        "from": "김름호",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "김름호는 시장 호송로의 능선에서 매복 흔적을 발견하면 나태경에게 현장을 알린다. 나태경은 출발 전에 화물과 경로의 위험을 살펴 순찰의 관찰이 다음 호송 검사로 이어지게 한다."
+      },
+      {
+        "from": "배은민",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "배은민은 시장 난입을 제지한 길목과 명부 재검 내용을 나태경에게 전한다. 나태경은 화물을 검사해 무단 접근 뒤에 하역이나 상자 개봉이 이어졌는지 살핀다."
+      },
+      {
+        "from": "정북은",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "정북은은 시장 난입의 명부 재점검과 길목을 나태경에게 알린다. 나태경은 화물을 검사해 그 접근 뒤에 무단 하역이나 상자 개봉이 있었는지 살핀다."
+      },
+      {
+        "from": "신남빈",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "신남빈은 야간 도꾼을 적발한 위치와 암호패 교체를 나태경에게 전한다. 나태경은 그 길목의 화물을 검사해 무단 하역이나 상자 개봉이 이어졌는지 살핀다."
+      },
+      {
+        "from": "윤차율",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "윤차율은 접수한 호스와 관로 사용 기록을 나태경에게 보여 준다. 나태경은 시장 화물을 검사해 호스가 어느 짐에서 들어왔는지 추적한다."
+      },
+      {
+        "from": "배솔민",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "배솔민은 시장 난입의 명부 재검과 위치를 나태경에게 전한다. 나태경은 화물을 검사해 무단 접근 뒤에 하역이나 개봉이 있었는지 확인한다."
+      },
+      {
+        "from": "강바준",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "강바준은 시장 호송로의 매복 흔적을 나태경에게 알린다. 나태경은 출발 전 화물과 경로를 확인해 현장 관찰이 다음 검사에 이어지게 한다."
+      },
       {
         "from": "순재민",
         "type": "맹세",

@@ -12,6 +12,482 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-소두",
   "detailRoute": "/people/person-0256",
+  "birthDate": "2090-09-16",
+  "birthday": "09-16",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/149"
+  ],
+  "familyTree": {
+    "personId": "K255",
+    "nodes": [
+      {
+        "id": "K255",
+        "personId": "K255",
+        "kind": "person",
+        "name": "소두",
+        "birthDate": "2090-09-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K255"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 주지 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-소두-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0256"
+      },
+      {
+        "id": "FH-K255-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "소승호",
+        "birthDate": "2060-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "소승호는 신내 환승 당직에서 총회 전령·명부 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-소두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K255-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "소승민",
+        "birthDate": "2030-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "소승민은 신내 환승 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-소두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K255-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "소승원",
+        "birthDate": "2000-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "소승원은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-소두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K255-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현성",
+        "birthDate": "2060-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "정현성은 신내 환승 당직에서 총회 전령·명부 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-소두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K255-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현문",
+        "birthDate": "2030-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "윤현문은 신내 환승 당직에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-소두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K255-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현찬",
+        "birthDate": "2000-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한현찬은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-소두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K255-P-01:K255:biological",
+        "from": "FH-K255-P-01",
+        "to": "K255",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K255-P-02:FH-K255-P-01:biological",
+        "from": "FH-K255-P-02",
+        "to": "FH-K255-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K255-P-03:FH-K255-P-02:biological",
+        "from": "FH-K255-P-03",
+        "to": "FH-K255-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K255-M-01:K255:biological",
+        "from": "FH-K255-M-01",
+        "to": "K255",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K255-M-02:FH-K255-M-01:biological",
+        "from": "FH-K255-M-02",
+        "to": "FH-K255-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K255-M-03:FH-K255-M-02:biological",
+        "from": "FH-K255-M-03",
+        "to": "FH-K255-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-소두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K255",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K255-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1234"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K255-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1237"
+          }
+        ]
+      },
+      {
+        "recipientId": "K833",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "황달진은 총회 필사본의 출발·인수 기록을 소두에게 전달한다. 소두는 명부를 읽어 빠진 이름을 확인한 뒤 숙영지 전령로에 같은 내용을 남긴다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/564"
+          }
+        ]
+      },
+      {
+        "recipientId": "K977",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "윤새율은 총회 필사본의 출발·인수 기록을 소두에게 전달한다. 소두는 명부를 읽어 누락 이름을 확인한 뒤 숙영 게시판의 통지를 잇는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/691"
+          }
+        ]
+      },
+      {
+        "recipientId": "K246",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "신보람의 가족 회의 통지를 나르고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/224"
+          }
+        ]
+      },
+      {
+        "recipientId": "K249",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "윤초아의 원장 필사를 숙영 게시판에 붙인다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/225"
+          }
+        ]
+      },
+      {
+        "recipientId": "K257",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "소두의 전령 게시와 줄을 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/229"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K255",
     "personId": "person-0256",
@@ -169,6 +645,18 @@
       }
     ],
     "incoming": [
+      {
+        "from": "황달진",
+        "type": "계약",
+        "to": "소두",
+        "basis": "황달진은 총회 필사본의 출발·인수 기록을 소두에게 전달한다. 소두는 명부를 읽어 빠진 이름을 확인한 뒤 숙영지 전령로에 같은 내용을 남긴다."
+      },
+      {
+        "from": "윤새율",
+        "type": "계약",
+        "to": "소두",
+        "basis": "윤새율은 총회 필사본의 출발·인수 기록을 소두에게 전달한다. 소두는 명부를 읽어 누락 이름을 확인한 뒤 숙영 게시판의 통지를 잇는다."
+      },
       {
         "from": "국봉",
         "type": "계약",

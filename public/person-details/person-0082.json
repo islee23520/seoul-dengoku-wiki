@@ -12,6 +12,344 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-엄도한",
   "detailRoute": "/people/person-0082",
+  "birthDate": "2077-03-11",
+  "birthday": "03-11",
+  "age": 49,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-03.json#/content/269",
+    "lore/characters/Cast-State-03.json#/content/270",
+    "lore/characters/Cast-State-03.json#/content/271",
+    "lore/characters/Cast-State-03.json#/content/274",
+    "lore/characters/Cast-State-03.json#/content/275"
+  ],
+  "familyTree": {
+    "personId": "K082",
+    "nodes": [
+      {
+        "id": "K082",
+        "personId": "K082",
+        "kind": "person",
+        "name": "엄도한",
+        "birthDate": "2077-03-11",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K082"
+          },
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 연구자 파견 호송책 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-엄도한-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0082"
+      },
+      {
+        "id": "FH-K082-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "엄승현",
+        "birthDate": "2047-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "엄승현은 신내 환승 당직에서 연구자 호송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-엄도한-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K082-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "엄승영",
+        "birthDate": "2017-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "엄승영은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-엄도한-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K082-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조승규",
+        "birthDate": "2047-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "조승규는 신내 환승 당직에서 연구자 호송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-엄도한-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K082-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김승섭",
+        "birthDate": "2017-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김승섭은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-엄도한-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K082-P-01:K082:biological",
+        "from": "FH-K082-P-01",
+        "to": "K082",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K082-P-02:FH-K082-P-01:biological",
+        "from": "FH-K082-P-02",
+        "to": "FH-K082-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K082-M-01:K082:biological",
+        "from": "FH-K082-M-01",
+        "to": "K082",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K082-M-02:FH-K082-M-01:biological",
+        "from": "FH-K082-M-02",
+        "to": "FH-K082-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-엄도한-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K082",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K082-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/416"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K082-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/418"
+          }
+        ]
+      },
+      {
+        "recipientId": "K087",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "임초원을 기술 후계가 아니라 파견 연구자로 호송하려 하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/36"
+          }
+        ]
+      },
+      {
+        "recipientId": "K057",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "정호준의 후견을 경로의 조건으로 받으며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/37"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K082",
     "personId": "person-0082",

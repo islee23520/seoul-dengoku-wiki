@@ -38,6 +38,12 @@ test('경계는 잘못된 traits와 다른 인물 응답을 명시적으로 거�
   assert.ok(parseGurpsSheet({ ...issuedBy('K088'), personId: 'person-0089' }, 'person-0089').ok)
 })
 
+test('numeric proposal status survives the parser without implying approval', () => {
+  const payload = { ...issuedBy('K1019'), numericStatus: 'proposal' }
+  assert.equal(parseOrThrow(payload, routeId(payload)).numericStatus, 'proposal')
+  assert.equal(parseGurpsSheet({ ...payload, numericStatus: 'approved' }, routeId(payload)).ok, false)
+})
+
 test('실제 API가 발급한 전체 레코드가 경계 계약을 통과한다', () => {
   for (const record of issued) {
     const result = parseGurpsSheet(record, routeId(record))

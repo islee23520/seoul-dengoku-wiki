@@ -1,6 +1,6 @@
 {
   "id": "person-0200",
-  "name": "오도윤",
+  "name": "피터 얀센",
   "title": "운송선주 평의",
   "position": "운송선주 평의",
   "rank": "수석기사",
@@ -10,8 +10,465 @@
   "stage": "S1",
   "state": "S08",
   "stateName": "중앙기술보존원",
-  "sourceRoute": "/world/Cast-State-08#인물-오도윤",
+  "sourceRoute": "/world/Cast-State-08#인물-피터 얀센",
   "detailRoute": "/people/person-0200",
+  "birthDate": "2072-05-24",
+  "birthday": "05-24",
+  "age": 54,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/6"
+  ],
+  "familyTree": {
+    "personId": "K199",
+    "nodes": [
+      {
+        "id": "K199",
+        "personId": "K199",
+        "kind": "person",
+        "name": "피터 얀센",
+        "birthDate": "2072-05-24",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K199"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-피터-얀센-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Pieter Jansen",
+        "detailRoute": "/people/person-0200"
+      },
+      {
+        "id": "FH-K199-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "얀 얀센",
+        "birthDate": "2042-05-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "얀 얀센은 2042년에 태어났다. 용산 북안의 가족 기록과 작업 사본을 읽으며 자랐고, 2060년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-피터-얀센-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Jan Jansen was born in 2042 and grew up reading family and work records. From 2060, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Jan Jansen",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K199-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "빌럼 얀센",
+        "birthDate": "2012-05-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "빌럼 얀센은 2012년에 태어났다. 용산 북안의 가족 기록과 작업 사본을 읽으며 자랐고, 2030년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-피터-얀센-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Willem Jansen was born in 2012 and grew up reading family and work records. From 2030, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Willem Jansen",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K199-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "안나 더 프리스",
+        "birthDate": "2042-05-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "안나 더 프리스는 2042년에 태어났다. 용산 북안의 가족 기록과 작업 사본을 읽으며 자랐고, 2060년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-피터-얀센-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Anna de Vries was born in 2042 and grew up reading family and work records. From 2060, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Anna de Vries",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K199-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "요하나 더 프리스",
+        "birthDate": "2012-05-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "요하나 더 프리스는 2012년에 태어났다. 용산 북안의 가족 기록과 작업 사본을 읽으며 자랐고, 2030년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-피터-얀센-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Johanna de Vries was born in 2012 and grew up reading family and work records. From 2030, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Johanna de Vries",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K199-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "헨드릭 얀센",
+        "nameEn": "Hendrik Jansen",
+        "birthDate": "1982-05-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K199-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "헨드릭 얀센은 2026년 대정전 당시 용산 북안 생활권에서 용산 강변의 민간 하역·창고 업무 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Hendrik Jansen was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K199-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K199-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "마리아 더 프리스",
+        "nameEn": "Maria de Vries",
+        "birthDate": "1982-05-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K199-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마리아 더 프리스는 2026년 대정전 당시 용산 북안 생활권에서 용산 강변의 민간 하역·창고 업무 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Maria de Vries was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K199-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K199-P-01:K199:biological",
+        "from": "FH-K199-P-01",
+        "to": "K199",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K199-P-02:FH-K199-P-01:biological",
+        "from": "FH-K199-P-02",
+        "to": "FH-K199-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K199-M-01:K199:biological",
+        "from": "FH-K199-M-01",
+        "to": "K199",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K199-M-02:FH-K199-M-01:biological",
+        "from": "FH-K199-M-02",
+        "to": "FH-K199-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-피터-얀센-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K199-P-03:FH-K199-P-02:biological",
+        "from": "FH-K199-P-03",
+        "to": "FH-K199-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K199-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K199-M-03:FH-K199-M-02:biological",
+        "from": "FH-K199-M-03",
+        "to": "FH-K199-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K199-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K199",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K199-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/962"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K199-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/964"
+          }
+        ]
+      },
+      {
+        "recipientId": "K194",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "상회정 표를 운송선주 평의와 거래",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/68"
+          }
+        ]
+      },
+      {
+        "recipientId": "K001",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "outgoing",
+        "role": "수상 운송 통행세를 꺼리는 원한",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/165"
+          }
+        ]
+      },
+      {
+        "recipientId": "K206",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "피터 얀센의 선주 표를 검증하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/181"
+          }
+        ]
+      },
+      {
+        "recipientId": "K217",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "피터 얀센의 상회정 표를 회의 호송에서 거르고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/104"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K199",
     "personId": "person-0200",
@@ -84,7 +541,7 @@
     "size": 4,
     "current_location": "폐컨테이너 적치장",
     "camp": {
-      "name": "오도윤 컨테이너 야영지",
+      "name": "피터 얀센 컨테이너 야영지",
       "type": "야영지",
       "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
       "facilities": [
@@ -97,9 +554,9 @@
     "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
   },
   "clan": {
-    "id": "c624-d574-c8fc",
-    "name": "해주 오씨",
-    "crest": "clan-crests/c624-d574-c8fc.svg"
+    "id": "DIV-K199",
+    "name": "용산·이태원 얀센씨",
+    "crest": "clan-crests/DIV-K199.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -134,7 +591,7 @@
     "욕망": "갈망 15 | 독점 10 | 위험 −30 | 과시 10 | 지속 40 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다. 피터 얀센은 2072년에 태어났다. 네덜란드계 가계는 용산 북안 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 운송선주 평의 업무를 맡는다. 헨드릭 얀센은 2026년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 피터 얀센의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 네덜란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.",
     "일화": "전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.",
@@ -143,20 +600,20 @@
     "공포": "외부 어획이 끊긴 뒤에도 허위 재고로 표를 산 선주들이 한꺼번에 파산하는 것.",
     "개입": "선주 표를 모아 발행을 통과시키거나, 허위 재고로 산 표를 무효로 만들 수 있다."
   },
-  "biography": "표정을 잘 숨기고 표를 물건처럼 옮긴다. 손실을 나중으로 미루는 사람을 가장 경멸한다.\n\n- 소속: 중앙기술보존원\n- 품계: 수석기사\n- 생업: 출항 연료·얼음 잔량 공개\n- 직함: 운송선주 평의\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.\n\n**일화.** 전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.\n\n**관계.** 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.\n\n**야망.** 상회정의 표를 선주 쪽으로 모아 오해린의 결제권 발행을 선박·호송 지분으로 묶는다.\n\n**공포.** 외부 어획이 끊긴 뒤에도 허위 재고로 표를 산 선주들이 한꺼번에 파산하는 것.\n\n**개입.** 선주 표를 모아 발행을 통과시키거나, 허위 재고로 산 표를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −30 | 물질 70 | 공동 −20 | 원칙 −40 | 공개 15 | 자격 5 | 분산 30 | 변혁 0\n- 욕망: 갈망 15 | 독점 10 | 위험 −30 | 과시 10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "표정을 잘 숨기고 표를 물건처럼 옮긴다. 손실을 나중으로 미루는 사람을 가장 경멸한다.\n\n- 소속: 중앙기술보존원\n- 품계: 수석기사\n- 생업: 출항 연료·얼음 잔량 공개\n- 직함: 운송선주 평의\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다. 피터 얀센은 2072년에 태어났다. 네덜란드계 가계는 용산 북안 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 운송선주 평의 업무를 맡는다. 헨드릭 얀센은 2026년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 피터 얀센의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 네덜란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.\n\n**일화.** 전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.\n\n**관계.** 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.\n\n**야망.** 상회정의 표를 선주 쪽으로 모아 오해린의 결제권 발행을 선박·호송 지분으로 묶는다.\n\n**공포.** 외부 어획이 끊긴 뒤에도 허위 재고로 표를 산 선주들이 한꺼번에 파산하는 것.\n\n**개입.** 선주 표를 모아 발행을 통과시키거나, 허위 재고로 산 표를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −30 | 물질 70 | 공동 −20 | 원칙 −40 | 공개 15 | 자격 5 | 분산 30 | 변혁 0\n- 욕망: 갈망 15 | 독점 10 | 위험 −30 | 과시 10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-08"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "오도윤",
+        "from": "피터 얀센",
         "type": "계약",
         "to": "오해린",
         "basis": "상회정 표를 운송선주 평의와 거래"
       },
       {
-        "from": "오도윤",
+        "from": "피터 얀센",
         "type": "원한",
         "to": "한재목",
         "basis": "수상 운송 통행세를 꺼리는 원한"
@@ -166,14 +623,14 @@
       {
         "from": "차진아",
         "type": "사제",
-        "to": "오도윤",
-        "basis": "오도윤의 선주 표를 검증하며"
+        "to": "피터 얀센",
+        "basis": "피터 얀센의 선주 표를 검증하며"
       },
       {
         "from": "추보람",
         "type": "계약",
-        "to": "오도윤",
-        "basis": "오도윤의 상회정 표를 회의 호송에서 거르고"
+        "to": "피터 얀센",
+        "basis": "피터 얀센의 상회정 표를 회의 호송에서 거르고"
       }
     ]
   }

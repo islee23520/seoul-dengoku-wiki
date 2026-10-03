@@ -12,6 +12,622 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-윤서하",
   "detailRoute": "/people/person-0197",
+  "birthDate": "2088-05-10",
+  "birthday": "05-10",
+  "age": 38,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/61"
+  ],
+  "familyTree": {
+    "personId": "K196",
+    "nodes": [
+      {
+        "id": "K196",
+        "personId": "K196",
+        "kind": "person",
+        "name": "윤서하",
+        "birthDate": "2088-05-10",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K196"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 경매사 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-윤서하-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0197"
+      },
+      {
+        "id": "FH-K196-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현윤",
+        "birthDate": "2058-05-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2096,
+            "summary": "윤현윤은 노량진 선창에서 경매 시작가·낙찰가 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-윤서하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K196-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현우",
+        "birthDate": "2028-05-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2066,
+            "summary": "윤현우는 노량진 선창에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-윤서하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K196-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현경",
+        "birthDate": "1998-05-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤현경은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-윤서하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K196-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현수",
+        "birthDate": "2058-05-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2096,
+            "summary": "윤현수는 노량진 선창에서 경매 시작가·낙찰가 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-윤서하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K196-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현경",
+        "birthDate": "2028-05-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2066,
+            "summary": "한현경은 노량진 선창에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-윤서하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K196-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현수",
+        "birthDate": "1998-05-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강현수는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-윤서하-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K196-P-01:K196:biological",
+        "from": "FH-K196-P-01",
+        "to": "K196",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K196-P-02:FH-K196-P-01:biological",
+        "from": "FH-K196-P-02",
+        "to": "FH-K196-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K196-P-03:FH-K196-P-02:biological",
+        "from": "FH-K196-P-03",
+        "to": "FH-K196-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K196-M-01:K196:biological",
+        "from": "FH-K196-M-01",
+        "to": "K196",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K196-M-02:FH-K196-M-01:biological",
+        "from": "FH-K196-M-02",
+        "to": "FH-K196-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K196-M-03:FH-K196-M-02:biological",
+        "from": "FH-K196-M-03",
+        "to": "FH-K196-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-윤서하-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K196",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K196-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/948"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K196-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/951"
+          }
+        ]
+      },
+      {
+        "recipientId": "K194",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "호송권 비공개 경매를 위임받음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/65"
+          }
+        ]
+      },
+      {
+        "recipientId": "K373",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/161"
+          }
+        ]
+      },
+      {
+        "recipientId": "K223",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "경매 속보 시각을 맞춤",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/173"
+          }
+        ]
+      },
+      {
+        "recipientId": "K431",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장주원은 공개한 비상배급표를 윤서하의 경매 시작가·낙찰가 기록과 맞춰 본다. 흉작 소문에 빈 상자까지 고가로 팔리면 배급표와 경매 기록의 차이를 짚어, 실제 공급과 소문이 만든 가격을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/215"
+          }
+        ]
+      },
+      {
+        "recipientId": "K479",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "안성민은 경매장의 저울을 공동 저울로 바꾼 뒤 물품을 다시 재어 윤서하에게 중량을 알린다. 윤서하는 시작가와 낙찰가를 게시할 때 그 중량을 확인해, 잘못된 저울로 매긴 값이 다음 경매에도 이어지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/254"
+          }
+        ]
+      },
+      {
+        "recipientId": "K559",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "안나늘은 얼음 물류와 경매 물품을 공동 저울로 다시 재고 윤서하에게 중량을 알린다. 윤서하는 그 중량으로 시작가와 낙찰가 기록을 확인해, 잘못된 눈금으로 생긴 값이 다음 거래에 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/324"
+          }
+        ]
+      },
+      {
+        "recipientId": "K623",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "김자호는 경매 물품을 공동 저울로 재어 윤서하에게 중량을 전한다. 윤서하는 시작가와 낙찰가 기록을 확인해 잘못된 눈금에서 나온 가격을 다음 거래에 남기지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/380"
+          }
+        ]
+      },
+      {
+        "recipientId": "K751",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "오다호는 얼음과 경매 물품을 공동 저울로 재어 윤서하에게 중량을 전한다. 윤서하는 시작가·낙찰가를 확인해 잘못된 저울 값이 다음 거래에 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/492"
+          }
+        ]
+      },
+      {
+        "recipientId": "K767",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남자원은 공개한 비상배급표를 윤서하에게 전한다. 윤서하는 경매의 실제 물량을 확인해 배급으로 이미 나간 재고가 경매 가격의 근거로 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/506"
+          }
+        ]
+      },
+      {
+        "recipientId": "K847",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노숲아는 공동 저울로 잰 얼음·경매 물품 중량을 윤서하에게 전한다. 윤서하는 시작가와 낙찰가를 확인해 잘못된 눈금의 값이 다음 거래에 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/576"
+          }
+        ]
+      },
+      {
+        "recipientId": "K943",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "오다서는 얼음·경매 물품을 공동 저울로 재어 윤서하에게 전한다. 윤서하는 중량과 시작가·낙찰가를 확인해 잘못된 눈금의 값이 다음 거래에 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/661"
+          }
+        ]
+      },
+      {
+        "recipientId": "K204",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "윤서하의 호송권 비공개 경매를 봉인 상태로만 나르는 지휘이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/176"
+          }
+        ]
+      },
+      {
+        "recipientId": "K207",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "윤서하의 경매 순서를 승강장에서 집행하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/182"
+          }
+        ]
+      },
+      {
+        "recipientId": "K209",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "윤서하의 시작가를 수산에서 집행하는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/186"
+          }
+        ]
+      },
+      {
+        "recipientId": "K216",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "윤서하의 경매 규칙을 물가 품목에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/102"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K196",
     "personId": "person-0197",
@@ -168,6 +784,54 @@
         "type": "계약",
         "to": "윤서하",
         "basis": "경매 속보 시각을 맞춤"
+      },
+      {
+        "from": "장주원",
+        "type": "계약",
+        "to": "윤서하",
+        "basis": "장주원은 공개한 비상배급표를 윤서하의 경매 시작가·낙찰가 기록과 맞춰 본다. 흉작 소문에 빈 상자까지 고가로 팔리면 배급표와 경매 기록의 차이를 짚어, 실제 공급과 소문이 만든 가격을 구분한다."
+      },
+      {
+        "from": "안성민",
+        "type": "계약",
+        "to": "윤서하",
+        "basis": "안성민은 경매장의 저울을 공동 저울로 바꾼 뒤 물품을 다시 재어 윤서하에게 중량을 알린다. 윤서하는 시작가와 낙찰가를 게시할 때 그 중량을 확인해, 잘못된 저울로 매긴 값이 다음 경매에도 이어지지 않게 한다."
+      },
+      {
+        "from": "안나늘",
+        "type": "계약",
+        "to": "윤서하",
+        "basis": "안나늘은 얼음 물류와 경매 물품을 공동 저울로 다시 재고 윤서하에게 중량을 알린다. 윤서하는 그 중량으로 시작가와 낙찰가 기록을 확인해, 잘못된 눈금으로 생긴 값이 다음 거래에 남지 않게 한다."
+      },
+      {
+        "from": "김자호",
+        "type": "계약",
+        "to": "윤서하",
+        "basis": "김자호는 경매 물품을 공동 저울로 재어 윤서하에게 중량을 전한다. 윤서하는 시작가와 낙찰가 기록을 확인해 잘못된 눈금에서 나온 가격을 다음 거래에 남기지 않는다."
+      },
+      {
+        "from": "오다호",
+        "type": "계약",
+        "to": "윤서하",
+        "basis": "오다호는 얼음과 경매 물품을 공동 저울로 재어 윤서하에게 중량을 전한다. 윤서하는 시작가·낙찰가를 확인해 잘못된 저울 값이 다음 거래에 남지 않게 한다."
+      },
+      {
+        "from": "남자원",
+        "type": "계약",
+        "to": "윤서하",
+        "basis": "남자원은 공개한 비상배급표를 윤서하에게 전한다. 윤서하는 경매의 실제 물량을 확인해 배급으로 이미 나간 재고가 경매 가격의 근거로 남지 않게 한다."
+      },
+      {
+        "from": "노숲아",
+        "type": "계약",
+        "to": "윤서하",
+        "basis": "노숲아는 공동 저울로 잰 얼음·경매 물품 중량을 윤서하에게 전한다. 윤서하는 시작가와 낙찰가를 확인해 잘못된 눈금의 값이 다음 거래에 남지 않게 한다."
+      },
+      {
+        "from": "오다서",
+        "type": "계약",
+        "to": "윤서하",
+        "basis": "오다서는 얼음·경매 물품을 공동 저울로 재어 윤서하에게 전한다. 윤서하는 중량과 시작가·낙찰가를 확인해 잘못된 눈금의 값이 다음 거래에 남지 않게 한다."
       },
       {
         "from": "양이든",

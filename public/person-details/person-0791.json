@@ -12,6 +12,427 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-서사서",
   "detailRoute": "/people/person-0791",
+  "birthDate": "2092-08-31",
+  "birthday": "08-31",
+  "age": 34,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/501",
+    "lore/characters/Cast-State-16.json#/content/504"
+  ],
+  "familyTree": {
+    "personId": "K791",
+    "nodes": [
+      {
+        "id": "K791",
+        "personId": "K791",
+        "kind": "person",
+        "name": "서사서",
+        "birthDate": "2092-08-31",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K791"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-서사서-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0791"
+      },
+      {
+        "id": "FH-K791-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승리",
+        "birthDate": "2062-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "서승리는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-서사서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K791-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승나",
+        "birthDate": "2032-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "서승나는 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-서사서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K791-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승온",
+        "birthDate": "2002-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "서승온은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-서사서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K791-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김도경",
+        "birthDate": "2062-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "김도경은 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-서사서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K791-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박도훈",
+        "birthDate": "2032-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "박도훈은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-서사서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K791-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도범",
+        "birthDate": "2002-08-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이도범은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-서사서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K791-P-01:K791:biological",
+        "from": "FH-K791-P-01",
+        "to": "K791",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K791-P-02:FH-K791-P-01:biological",
+        "from": "FH-K791-P-02",
+        "to": "FH-K791-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K791-P-03:FH-K791-P-02:biological",
+        "from": "FH-K791-P-03",
+        "to": "FH-K791-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K791-M-01:K791:biological",
+        "from": "FH-K791-M-01",
+        "to": "K791",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K791-M-02:FH-K791-M-01:biological",
+        "from": "FH-K791-M-02",
+        "to": "FH-K791-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K791-M-03:FH-K791-M-02:biological",
+        "from": "FH-K791-M-03",
+        "to": "FH-K791-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-서사서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K791",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K791-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3807"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K791-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3810"
+          }
+        ]
+      },
+      {
+        "recipientId": "K400",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "서사서는 공개 열람을 기다리는 감사표의 보관 상태와 표시한 단수 시간 칸을 곽은재에게 알린다. 곽은재는 열람 사본을 확인해 공개 확인 전 종결 도장이 찍히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/528"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K791",
     "personId": "person-0791",
@@ -139,17 +560,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 감사 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "곽은재가 급수 중단 시간과 호송 지연을 한 장에 적은 감사표가 종결 도장을 기다린다. 서사서는 조합원 선거관리회의 공개 열람이 잡힐 때까지 감사표 원본을 기록함에 잠가 두고, 열람 때 펼칠 사본에는 단수 시간 칸을 따로 표시한다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 서사서는 공개 열람을 기다리는 감사표의 보관 상태와 표시한 단수 시간 칸을 곽은재에게 알린다. 곽은재는 열람 사본을 확인해 공개 확인 전 종결 도장이 찍히지 않게 한다.",
     "야망": "감사 기록관 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.",
     "공포": "감사 기록관 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 감사 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 감사 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 감사 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 곽은재가 급수 중단 시간과 호송 지연을 한 장에 적은 감사표가 종결 도장을 기다린다. 서사서는 조합원 선거관리회의 공개 열람이 잡힐 때까지 감사표 원본을 기록함에 잠가 두고, 열람 때 펼칠 사본에는 단수 시간 칸을 따로 표시한다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 감사 기록관 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.\n\n**공포.** 감사 기록관 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −20 | 물질 −5 | 공동 15 | 원칙 40 | 공개 25 | 자격 25 | 분산 45 | 변혁 0\n- 욕망: 갈망 30 | 독점 40 | 위험 20 | 과시 −40 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 감사 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 감사 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 감사 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 곽은재가 급수 중단 시간과 호송 지연을 한 장에 적은 감사표가 종결 도장을 기다린다. 서사서는 조합원 선거관리회의 공개 열람이 잡힐 때까지 감사표 원본을 기록함에 잠가 두고, 열람 때 펼칠 사본에는 단수 시간 칸을 따로 표시한다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 서사서는 공개 열람을 기다리는 감사표의 보관 상태와 표시한 단수 시간 칸을 곽은재에게 알린다. 곽은재는 열람 사본을 확인해 공개 확인 전 종결 도장이 찍히지 않게 한다.\n\n**야망.** 감사 기록관 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.\n\n**공포.** 감사 기록관 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −20 | 물질 −5 | 공동 15 | 원칙 40 | 공개 25 | 자격 25 | 분산 45 | 변혁 0\n- 욕망: 갈망 30 | 독점 40 | 위험 20 | 과시 −40 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-16"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "서사서",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "서사서는 공개 열람을 기다리는 감사표의 보관 상태와 표시한 단수 시간 칸을 곽은재에게 알린다. 곽은재는 열람 사본을 확인해 공개 확인 전 종결 도장이 찍히지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

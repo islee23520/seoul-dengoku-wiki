@@ -1,6 +1,6 @@
 {
   "id": "person-0734",
-  "name": "성금현",
+  "name": "크리스토퍼 스콧",
   "title": "중계 당직",
   "position": "중계 당직",
   "rank": "주사",
@@ -10,8 +10,443 @@
   "stage": "S4",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-성금현",
+  "sourceRoute": "/world/Cast-State-07#인물-크리스토퍼 스콧",
   "detailRoute": "/people/person-0734",
+  "birthDate": "2091-01-09",
+  "birthday": "01-09",
+  "age": 35,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/468",
+    "lore/characters/Cast-State-07.json#/content/470",
+    "lore/characters/Cast-State-07.json#/content/471"
+  ],
+  "familyTree": {
+    "personId": "K734",
+    "nodes": [
+      {
+        "id": "K734",
+        "personId": "K734",
+        "kind": "person",
+        "name": "크리스토퍼 스콧",
+        "birthDate": "2091-01-09",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K734"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-크리스토퍼-스콧-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Christopher Scott",
+        "detailRoute": "/people/person-0734"
+      },
+      {
+        "id": "FH-K734-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "로버트 스콧",
+        "birthDate": "2061-01-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "로버트 스콧은 2061년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2079년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-크리스토퍼-스콧-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Robert Scott was born in 2061 and grew up reading family and work records. From 2079, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Robert Scott",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K734-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "제임스 스콧",
+        "birthDate": "2031-01-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "제임스 스콧은 2031년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2049년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-크리스토퍼-스콧-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "James Scott was born in 2031 and grew up reading family and work records. From 2049, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "James Scott",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K734-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "에드워드 스콧",
+        "birthDate": "2001-01-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "에드워드 스콧은 2026년 대정전 당시 용산·이태원 생활권에서 미 육군 보급 업무를 맡고 있었다. 연락이 끊긴 뒤 남은 물자와 인계받은 사람을 종이에 적었다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-크리스토퍼-스콧-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Edward Scott was in the family's local community when communications failed in 2026. Serving in US Army logistics, he recorded remaining supplies and their recipients."
+          }
+        ],
+        "nameEn": "Edward Scott",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K734-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "아이린 테일러",
+        "birthDate": "2061-01-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "아이린 테일러는 2061년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2079년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-크리스토퍼-스콧-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Irene Taylor was born in 2061 and grew up reading family and work records. From 2079, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Irene Taylor",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K734-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "플로렌스 테일러",
+        "birthDate": "2031-01-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "플로렌스 테일러는 2031년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2049년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-크리스토퍼-스콧-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Florence Taylor was born in 2031 and grew up reading family and work records. From 2049, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Florence Taylor",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K734-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "헤이즐 테일러",
+        "birthDate": "2001-01-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "헤이즐 테일러는 2026년 대정전 당시 용산·이태원 생활권에서 용산의 민간 창고 관리와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-크리스토퍼-스콧-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Hazel Taylor was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Hazel Taylor",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K734-P-01:K734:biological",
+        "from": "FH-K734-P-01",
+        "to": "K734",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K734-P-02:FH-K734-P-01:biological",
+        "from": "FH-K734-P-02",
+        "to": "FH-K734-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K734-P-03:FH-K734-P-02:biological",
+        "from": "FH-K734-P-03",
+        "to": "FH-K734-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K734-M-01:K734:biological",
+        "from": "FH-K734-M-01",
+        "to": "K734",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K734-M-02:FH-K734-M-01:biological",
+        "from": "FH-K734-M-02",
+        "to": "FH-K734-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K734-M-03:FH-K734-M-02:biological",
+        "from": "FH-K734-M-03",
+        "to": "FH-K734-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-크리스토퍼-스콧-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K734",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K734-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3523"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K734-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3526"
+          }
+        ]
+      },
+      {
+        "recipientId": "K181",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/734"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K734",
     "personId": "person-0734",
@@ -104,9 +539,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "cangnyeong-seong-yeolcha",
-    "name": "창녕 성씨",
-    "crest": "clan-crests/cangnyeong-seong-yeolcha.svg"
+    "id": "DIV-K734",
+    "name": "용산·이태원 스콧씨",
+    "crest": "clan-crests/DIV-K734.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -141,21 +576,28 @@
     "욕망": "갈망 −10 | 독점 −20 | 위험 −35 | 과시 0 | 지속 40 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다.",
+    "생애": "2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 크리스토퍼 스콧은 2091년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 에드워드 스콧은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 크리스토퍼 스콧의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.",
     "야망": "중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
     "공포": "중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 송신 편집 공백 이중 확인\n- 직함: 중계 당직\n**생애.** 2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 15 | 무력 −20 | 물질 15 | 공동 −10 | 원칙 5 | 공개 −15 | 자격 40 | 분산 5 | 변혁 0\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −35 | 과시 0 | 지속 40 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 송신 편집 공백 이중 확인\n- 직함: 중계 당직\n**생애.** 2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 크리스토퍼 스콧은 2091년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 에드워드 스콧은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 크리스토퍼 스콧의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.\n\n**야망.** 중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 15 | 무력 −20 | 물질 15 | 공동 −10 | 원칙 5 | 공개 −15 | 자격 40 | 분산 5 | 변혁 0\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −35 | 과시 0 | 지속 40 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "크리스토퍼 스콧",
+        "type": "계약",
+        "to": "레아 마르탱",
+        "basis": "크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다."
+      }
+    ],
     "incoming": []
   }
 }

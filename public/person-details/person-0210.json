@@ -12,6 +12,469 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-마하율",
   "detailRoute": "/people/person-0210",
+  "birthDate": "2099-01-24",
+  "birthday": "01-24",
+  "age": 27,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/171",
+    "lore/characters/Cast-State-08.json#/content/173"
+  ],
+  "familyTree": {
+    "personId": "K209",
+    "nodes": [
+      {
+        "id": "K209",
+        "personId": "K209",
+        "kind": "person",
+        "name": "마하율",
+        "birthDate": "2099-01-24",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K209"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 수산도매 시장 경매사 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마하율-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0210"
+      },
+      {
+        "id": "FH-K209-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "마승수",
+        "birthDate": "2069-01-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "마승수는 노량진 선창에서 경매 재고 온도 표본 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K209-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "마승은",
+        "birthDate": "2039-01-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "마승은은 노량진 선창에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K209-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "마승연",
+        "birthDate": "2009-01-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마승연은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K209-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현연",
+        "birthDate": "2069-01-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "한현연은 노량진 선창에서 경매 재고 온도 표본 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K209-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현아",
+        "birthDate": "2039-01-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "강현아는 노량진 선창에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K209-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현규",
+        "birthDate": "2009-01-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임현규는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-마하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K209-P-01:K209:biological",
+        "from": "FH-K209-P-01",
+        "to": "K209",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K209-P-02:FH-K209-P-01:biological",
+        "from": "FH-K209-P-02",
+        "to": "FH-K209-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K209-P-03:FH-K209-P-02:biological",
+        "from": "FH-K209-P-03",
+        "to": "FH-K209-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K209-M-01:K209:biological",
+        "from": "FH-K209-M-01",
+        "to": "K209",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K209-M-02:FH-K209-M-01:biological",
+        "from": "FH-K209-M-02",
+        "to": "FH-K209-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K209-M-03:FH-K209-M-02:biological",
+        "from": "FH-K209-M-03",
+        "to": "FH-K209-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-마하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K209",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K209-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1008"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K209-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1011"
+          }
+        ]
+      },
+      {
+        "recipientId": "K671",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장마원은 경매 물품을 공동 저울로 재어 마하율에게 중량을 전한다. 마하율은 온도 표본과 실제 재고를 확인해 무게가 맞아도 녹은 물품을 정상 출항 재고로 받지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/422"
+          }
+        ]
+      },
+      {
+        "recipientId": "K815",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "구아결은 공동 저울로 잰 경매 물품 중량을 마하율에게 전한다. 마하율은 온도 표본과 재고 상태를 확인해 무게가 맞아도 녹은 물품을 출항시키지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/548"
+          }
+        ]
+      },
+      {
+        "recipientId": "K196",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "윤서하의 시작가를 수산에서 집행하는 계약이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/186"
+          }
+        ]
+      },
+      {
+        "recipientId": "K201",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "마솔의 칸 자격과 순번을 나누며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/187"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K209",
     "personId": "person-0210",
@@ -163,6 +626,19 @@
         "basis": "마솔의 칸 자격과 순번을 나누며"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "장마원",
+        "type": "계약",
+        "to": "마하율",
+        "basis": "장마원은 경매 물품을 공동 저울로 재어 마하율에게 중량을 전한다. 마하율은 온도 표본과 실제 재고를 확인해 무게가 맞아도 녹은 물품을 정상 출항 재고로 받지 않는다."
+      },
+      {
+        "from": "구아결",
+        "type": "계약",
+        "to": "마하율",
+        "basis": "구아결은 공동 저울로 잰 경매 물품 중량을 마하율에게 전한다. 마하율은 온도 표본과 재고 상태를 확인해 무게가 맞아도 녹은 물품을 출항시키지 않는다."
+      }
+    ]
   }
 }

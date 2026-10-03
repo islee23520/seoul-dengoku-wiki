@@ -1,0 +1,38 @@
+{
+  "schema": "seoul-dengoku.household-humanoid-policy.v1",
+  "approvalRef": "owner household decisions 2026-10-02",
+  "sourceRefs": [
+    { "path": "lore/culture/Faith-Culture-Schism.json", "anchor": "가문과-휴머노이드-가신-p1" },
+    { "path": "lore/culture/Faith-Culture-Schism.json", "anchor": "가문과-휴머노이드-가신-p2" },
+    { "path": "lore/culture/Faith-Culture-Schism.json", "anchor": "가문과-휴머노이드-가신-p3" }
+  ],
+  "counts": "existing-courts-and-direct-retainers-only",
+  "tierQuotas": null,
+  "faithStates": [
+    "christian",
+    "non-christian",
+    "unknown"
+  ],
+  "faithEvidence": "Exact person or house sourceRefs; state residence and institutional sponsorship alone do not establish personal faith.",
+  "priority": [
+    "christian-household-exclusion",
+    "faith-evidence",
+    "preserve-existing-identity-and-assignment",
+    "orientation-preference"
+  ],
+  "christianHousehold": "excluded",
+  "unknownFaith": "unresolved",
+  "unknownOrientation": "explicit-unknown",
+  "knownOrientations": [
+    "이성",
+    "동성",
+    "양성",
+    "유동",
+    "무성향"
+  ],
+  "otherKnownOrientationGender": "seeded-random",
+  "existingGender": "preserve",
+  "facilityCustody": "not-household; preserve without authorizing new household service",
+  "seedKey": "household-humanoid-gender:v1 + supplied seed + permanent owner K ID + stable role key",
+  "sexualRelationship": "not implied by household labor or gender preference"
+}

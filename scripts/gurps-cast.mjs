@@ -18,10 +18,12 @@ export const SCHEMA = 'wiki-gurps-cast.v1'
 const CONTRACT = 'lore/characters/Cast-Profile-Contract.md'
 const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
-// 입력 해시(person-id-registry approvalRef, 2026-09-28 K1019 발급 소유자 승인). 두 파일은 이 작업에서 바뀌면 안 된다.
+export const OWNER_SHEETS = 'lore/name-pools/gurps-owner-sheets.json'
+// ID 발급 승인 입력과 현재 승인된 값 원장은 별개다. 2026-10-02 소유자가 K1019 단계만 주요로 변경했다.
+const REGISTRY_INPUT_HASH = '1d5702c905da6e046fe742dea30ee55a0abe1167d8370a302265d518ab723c7a'
 export const APPROVED_HASHES = {
-  [VALUES]: '1d5702c905da6e046fe742dea30ee55a0abe1167d8370a302265d518ab723c7a',
-  [REGISTRY]: 'c0aedfa82ef9a29c6dece15ee867efa0b12849ec561b44cb386e508a6f875c32',
+  [VALUES]: '0fa4362293fd84359bd07cc7f2f1d4a5b21aedc59beabc4363688ab106527e95',
+  [REGISTRY]: '2fe5a3451efabd6da9fbbec2a6abaa0af910e4f7a629232dd68421ed1e646d19',
 }
 const CARD_FILES = [
   ...Array.from({ length: 16 }, (_, i) => `lore/characters/Cast-State-${String(i + 1).padStart(2, '0')}.json`),
@@ -77,6 +79,8 @@ export const SKILLS = {
   accounting: { name: 'Accounting', ko: '회계·감사', attr: 'IQ', diff: 'H' },
   forgery: { name: 'Forgery/TL?', ko: '위조 감별', attr: 'IQ', diff: 'H' },
   diplomacy: { name: 'Diplomacy', ko: '교섭·조정', attr: 'IQ', diff: 'H' },
+  strategy: { name: 'Strategy (Land)', ko: '전략(지상)', attr: 'IQ', diff: 'H' },
+  tactics: { name: 'Tactics', ko: '전술', attr: 'IQ', diff: 'H' },
   leadership: { name: 'Leadership', ko: '지휘', attr: 'IQ', diff: 'A' },
   politics: { name: 'Politics', ko: '정치(선거·표 모으기)', attr: 'IQ', diff: 'A' },
   interrogation: { name: 'Interrogation', ko: '증인 대질', attr: 'IQ', diff: 'A' },
@@ -579,7 +583,7 @@ function traitCp(t) {
 function finish(record) {
   const cr = record.traits.some((t) => t.rule === 'combat-reflexes')
   record.secondary = secondary(record.attributes, cr)
-  for (const s of record.skills) { s.cp = TIERS[s.tier]; s.level = skillLevel(record.attributes, record.secondary, s.attr, s.diff, s.cp) }
+  for (const s of record.skills) { if (record.method !== 'owner-authored') s.cp = TIERS[s.tier]; s.level = skillLevel(record.attributes, record.secondary, s.attr, s.diff, s.cp) }
   const attrCp = Object.values(record.attributes).reduce((n, a) => n + a.cp, 0)
   const adv = record.traits.filter((t) => t.kind === 'advantage').reduce((n, t) => n + t.cp, 0)
   const dis = record.traits.filter((t) => t.kind === 'disadvantage').reduce((n, t) => n + t.cp, 0)
@@ -593,6 +597,33 @@ function finish(record) {
   return record
 }
 const SKILL_ORDER = Object.keys(SKILLS)
+export function ownerSheet(root, entry) {
+  const document = readSource(root, OWNER_SHEETS).json
+  if (document.schema !== 'wiki-gurps-owner-sheets.v1') throw new Error('Invalid owner-sheet schema')
+  const index = document.people.findIndex((person) => person.id === entry.id)
+  if (index < 0) return null
+  const authored = document.people[index]
+  if (authored.name !== entry.name) throw new Error(`Owner-sheet identity mismatch: ${entry.id}`)
+  if (authored.source.kind !== 'owner-authored' || authored.source.owner !== 'project-owner' || authored.source.numericStatus !== 'proposal' || authored.source.contract !== CONTRACT) throw new Error(`Invalid owner-sheet provenance: ${entry.id}`)
+  if (Object.keys(authored.attributes).join() !== Object.keys(ATTR_COST).join() || Object.values(authored.attributes).some((value) => !Number.isInteger(value) || value < ABILITY_BASE || value > ABILITY_BASE + ABILITY_CAP)) throw new Error(`Invalid owner-sheet attributes: ${entry.id}`)
+  if (authored.traits.length) throw new Error(`Owner-sheet traits require a supported trait contract: ${entry.id}`)
+  if (new Set(authored.skills.map(({ key }) => key)).size !== authored.skills.length || authored.skills.some(({ key, cp, narrative }) => !SKILLS[key] || stepFor(cp) === null || !authored.narratives[narrative])) throw new Error(`Invalid owner-sheet skills: ${entry.id}`)
+  const sourceEvidence = [{ path: OWNER_SHEETS, pointer: `/people/${index}/source/directive`, quote: authored.source.directive }]
+  const narratives = Object.values(authored.narratives)
+  if (![...sourceEvidence, ...narratives].every((ev) => quoteHolds(root, ev))) throw new Error(`Invalid owner-sheet evidence: ${entry.id}`)
+  const role = cardBlocks(root, entry.name).flatMap((card) => cardSentences(card, false).fields.map((field) => ({ ...field, path: card.path }))).find((field) => field.key === '생업')
+  const record = finish({
+    method: 'owner-authored',
+    source: { ...authored.source, path: OWNER_SHEETS, pointer: `/people/${index}`, sha256: sha256(root, OWNER_SHEETS), evidence: sourceEvidence, narratives },
+    role: { display: role.value.replace(CAST_SUFFIX, ''), evidence: [evidence(role.path, role.pointer, role.quote)] },
+    attributes: Object.fromEntries(Object.entries(authored.attributes).map(([key, value]) => [key, { value, cp: (value - ABILITY_BASE) * ATTR_COST[key], rule: 'owner-authored', evidence: [...sourceEvidence, ...narratives] }])),
+    traits: authored.traits,
+    skills: authored.skills.map(({ key, cp, narrative, rationale }) => ({ ...SKILLS[key], cp, tier: 'owner-authored', rationale, evidence: [...sourceEvidence, authored.narratives[narrative]] })),
+    languages: languagesOf(root, entry.name),
+  })
+  if (record.cp.total !== authored.budget || bandFor(authored.budget)[0] !== '주역·강자') throw new Error(`Owner-sheet budget mismatch: ${entry.id}`)
+  return record
+}
 export function build(root = ROOT) {
   const registry = JSON.parse(readSource(root, REGISTRY).raw)
   const values = JSON.parse(readSource(root, VALUES).raw).people
@@ -608,6 +639,8 @@ export function build(root = ROOT) {
       url: `/people/person-${String(index + 1).padStart(4, '0')}`,
       state: values[index].state,
     }
+    const authored = ownerSheet(root, entry)
+    if (authored) { people.push({ ...base, ...authored }); continue }
     const pilot = PILOT[entry.id]
     if (pilot) {
       const attributes = Object.fromEntries(Object.entries(pilot.attributes).map(([a, [value, ids]]) => [a, { value, cp: (value - ABILITY_BASE) * ATTR_COST[a], rule: 'pilot-approved', evidence: src(...ids) }]))
@@ -669,9 +702,9 @@ export function build(root = ROOT) {
 export const serialize = (doc) => `${JSON.stringify(doc, null, 1)}\n`
 
 // ---- 독립 검사: 파일에 적힌 수치를 믿지 않고 규칙표로 다시 계산한다. ----
-export function verify(doc, root = ROOT) {
+export function verify(doc, root = ROOT, selectedIds = null, diagnostic = false) {
   const errors = []
-  const fail = (m) => { if (errors.length < 200) errors.push(m) }
+  const fail = (m) => { if (diagnostic || errors.length < 200) errors.push(m) }
   if (doc.schema !== SCHEMA) fail(`schema: ${doc.schema}`)
   for (const [path, hash] of Object.entries(APPROVED_HASHES)) {
     const got = sha256(root, path)
@@ -679,11 +712,11 @@ export function verify(doc, root = ROOT) {
     if (doc.invariants?.[path] !== hash) fail(`invariants 불일치: ${path}`)
   }
   const registry = JSON.parse(readSource(root, REGISTRY).raw)
-  if (registry.approvalRef?.inputSha256 !== APPROVED_HASHES[VALUES]) fail('registry approvalRef.inputSha256 ≠ values-cast 승인 해시')
+  if (registry.approvalRef?.inputSha256 !== REGISTRY_INPUT_HASH) fail('registry approvalRef.inputSha256 ≠ ID 발급 승인 입력 해시')
   const values = JSON.parse(readSource(root, VALUES).raw).people
   const indexByName = new Map(values.map((p, i) => [p.name, i]))
   if (!Array.isArray(doc.people) || doc.people.length !== registry.persons.length || doc.count !== registry.persons.length) fail(`인원: ${doc.people?.length} ≠ ${registry.persons.length}`)
-  if (registry.persons.length !== 1022) fail(`registry 인원 ${registry.persons.length} ≠ 1022`)
+  if (registry.persons.length !== values.length || registry.totalPeople !== values.length) fail('registry 인원과 values 원장이 다름')
   registry.persons.forEach((entry, i) => {
     const want = `K${String(i + 1).padStart(3, '0')}`
     if (entry.id !== want) fail(`registry 순서: ${i} ${entry.id} ≠ ${want}`)
@@ -692,6 +725,7 @@ export function verify(doc, root = ROOT) {
   if (JSON.stringify(rules.tiers) !== JSON.stringify(TIERS)) fail('rules.tiers가 A12/B8/C4/D2가 아님')
   if (rules.ability?.cap !== ABILITY_CAP || rules.ability?.base !== ABILITY_BASE) fail('rules.ability가 기본 10·상한 +3이 아님')
   ;(doc.people ?? []).forEach((p, i) => {
+    if (selectedIds && !selectedIds.includes(p.id)) return
     const entry = registry.persons[i]
     const tag = `${p.id} ${p.name}`
     if (!entry || p.id !== entry.id || p.name !== entry.name) { fail(`${i}: ${tag} ≠ registry ${entry?.id} ${entry?.name}`); return }
@@ -700,8 +734,14 @@ export function verify(doc, root = ROOT) {
     if (vi === undefined || p.url !== url) fail(`${tag} URL ${p.url} ≠ ${url}`)
     if (values[vi]?.state !== p.state) fail(`${tag} state ${p.state}`)
     const pilot = p.method === 'pilot-approved'
+    const authored = p.method === 'owner-authored'
+    if (authored) {
+      const expected = ownerSheet(root, entry)
+      if (!expected) fail(`${tag}: 소유자 시트 원천 없음`)
+      else for (const key of Object.keys(expected)) if (JSON.stringify(p[key]) !== JSON.stringify(expected[key])) fail(`${tag}: 소유자 시트 ${key} 불일치`)
+    }
     if (pilot && !PILOT[p.id]) fail(`${tag}: 견본이 아닌데 pilot-approved`)
-    if (!pilot && p.method !== 'card-lexicon') fail(`${tag}: method ${p.method}`)
+    if (!pilot && !authored && p.method !== 'card-lexicon') fail(`${tag}: method ${p.method}`)
     // 역할 표시 = 출처 있는 생업
     if (p.role?.display !== '미등록' && !(p.role?.evidence?.length && p.role.evidence.every((e) => quoteHolds(root, e)))) fail(`${tag}: 역할 표시 인용 불일치`)
     if (p.role?.display === '미등록' && p.role.evidence?.length) fail(`${tag}: 미등록 역할에 증거`)
@@ -726,7 +766,7 @@ export function verify(doc, root = ROOT) {
       } else if (at.rule === 'pilot-approved') {
         if (!pilot) fail(`${tag} ${a}: 견본값 규칙은 견본 두 사람에게만`)
         if (!at.evidence.some((e) => e.quote === PILOT_SOURCES['contract-pilot'][2])) fail(`${tag} ${a}: 견본 승인 인용 없음`)
-      } else fail(`${tag} ${a}: rule ${at.rule}`)
+      } else if (at.rule !== 'owner-authored' || !authored) fail(`${tag} ${a}: rule ${at.rule}`)
     }
     const cr = (p.traits ?? []).some((t) => t.rule === 'combat-reflexes')
     const sec = secondary(p.attributes, cr)
@@ -747,12 +787,12 @@ export function verify(doc, root = ROOT) {
     for (const s of p.skills ?? []) {
       if (names.has(s.name)) fail(`${tag} ${s.name}: 기술 중복`)
       names.add(s.name)
-      if (!(s.tier in TIERS)) { fail(`${tag} ${s.name}: 등급 ${s.tier} 무효`); continue }
+      if (!authored && !(s.tier in TIERS)) { fail(`${tag} ${s.name}: 등급 ${s.tier} 무효`); continue }
       if (s.tier === 'A' && !pilot) {
         if (OWNER_TIER_A[p.id] !== s.name) fail(`${tag} ${s.name}: A 등급은 견본과 소유자가 정한 사용자 확정 직위 기술에만`)
         if (!(s.evidence ?? []).some((e) => OFFICE_LINE.test(e.quote) && quoteHolds(root, e))) fail(`${tag} ${s.name}: A 등급에 사용자 확정 직위 인용이 없음`)
       }
-      if (s.cp !== TIERS[s.tier]) fail(`${tag} ${s.name}: 등급 ${s.tier}=${TIERS[s.tier]} CP인데 ${s.cp} CP`)
+      if (!authored && s.cp !== TIERS[s.tier]) fail(`${tag} ${s.name}: 등급 ${s.tier}=${TIERS[s.tier]} CP인데 ${s.cp} CP`)
       const known = Object.values(SKILLS).find((k) => k.name === s.name)
       if (!pilot && (!known || known.attr !== s.attr || known.diff !== s.diff)) fail(`${tag} ${s.name}: 기술표(${known ? `${known.attr}/${known.diff}` : '없음'})와 기준·난이도 불일치 ${s.attr}/${s.diff}`)
       const level = skillLevel(p.attributes, sec, s.attr, s.diff, s.cp)
@@ -764,7 +804,7 @@ export function verify(doc, root = ROOT) {
           !(s.name === SKILLS.pistol.name && s.evidence?.every((e) => /방호 교육과 반복 사격으로 권총을 익혔으며/u.test(e.quote) && quoteHolds(root, e)))) {
         fail(`${tag} ${s.name}: 총기·복무 기술에 승인된 수련 근거가 없다`)
       }
-      skillCp += TIERS[s.tier]
+      skillCp += authored ? s.cp : TIERS[s.tier]
     }
     const lead = LEADER_REVIEW[p.id]
     if (lead && !pilot) {

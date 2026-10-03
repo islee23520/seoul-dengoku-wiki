@@ -12,6 +12,328 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-신강민",
   "detailRoute": "/people/person-0556",
+  "birthDate": "2081-07-15",
+  "birthday": "07-15",
+  "age": 45,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/390",
+    "lore/characters/Cast-State-05.json#/content/392",
+    "lore/characters/Cast-State-05.json#/content/393"
+  ],
+  "familyTree": {
+    "personId": "K556",
+    "nodes": [
+      {
+        "id": "K556",
+        "personId": "K556",
+        "kind": "person",
+        "name": "신강민",
+        "birthDate": "2081-07-15",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K556"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-신강민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0556"
+      },
+      {
+        "id": "FH-K556-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "신승아",
+        "birthDate": "2051-07-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "신승아는 암사 경비 초소에서 출입 경비·명부 재점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-신강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K556-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "신승희",
+        "birthDate": "2021-07-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "신승희는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-신강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K556-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤태문",
+        "birthDate": "2051-07-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "윤태문은 암사 경비 초소에서 출입 경비·명부 재점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-신강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K556-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한태문",
+        "birthDate": "2021-07-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한태문은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-신강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K556-P-01:K556:biological",
+        "from": "FH-K556-P-01",
+        "to": "K556",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K556-P-02:FH-K556-P-01:biological",
+        "from": "FH-K556-P-02",
+        "to": "FH-K556-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K556-M-01:K556:biological",
+        "from": "FH-K556-M-01",
+        "to": "K556",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K556-M-02:FH-K556-M-01:biological",
+        "from": "FH-K556-M-02",
+        "to": "FH-K556-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-신강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K556",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K556-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2689"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K556-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2691"
+          }
+        ]
+      },
+      {
+        "recipientId": "K119",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "신강민은 무장 난입자를 문 밖에 붙들고 명부 재점검 내용을 이윤서에게 전한다. 이윤서는 교량의 주간 전표와 야간 암호패를 확인해, 난입자가 다른 출입구에서 정상 통행으로 처리되는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/322"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K556",
     "personId": "person-0556",
@@ -151,17 +473,24 @@
     "무공": "수벽술.",
     "관직": "품계 병장. 직함은 동부 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 동부 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 신강민은 무장 난입자를 문 밖에 붙들고 명부 재점검 내용을 이윤서에게 전한다. 이윤서는 교량의 주간 전표와 야간 암호패를 확인해, 난입자가 다른 출입구에서 정상 통행으로 처리되는지 살핀다.",
     "야망": "동부 순찰대 자리에서 동방사의 장부를 끊기지 않게 잇는다.",
     "공포": "동부 순찰대 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 출입 경비·명부 재점검\n- 품계: 병장\n- 직함: 동부 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 병장. 직함은 동부 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 동부 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 동부 순찰대 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 동부 순찰대 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −50 | 무력 85 | 물질 30 | 공동 30 | 원칙 −25 | 공개 −35 | 자격 −25 | 분산 −40 | 변혁 −35\n- 욕망: 갈망 −10 | 독점 35 | 위험 45 | 과시 −10 | 지속 −20 | 지향 이성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 출입 경비·명부 재점검\n- 품계: 병장\n- 직함: 동부 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 병장. 직함은 동부 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 동부 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 신강민은 무장 난입자를 문 밖에 붙들고 명부 재점검 내용을 이윤서에게 전한다. 이윤서는 교량의 주간 전표와 야간 암호패를 확인해, 난입자가 다른 출입구에서 정상 통행으로 처리되는지 살핀다.\n\n**야망.** 동부 순찰대 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 동부 순찰대 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −50 | 무력 85 | 물질 30 | 공동 30 | 원칙 −25 | 공개 −35 | 자격 −25 | 분산 −40 | 변혁 −35\n- 욕망: 갈망 −10 | 독점 35 | 위험 45 | 과시 −10 | 지속 −20 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-05"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "신강민",
+        "type": "계약",
+        "to": "이윤서",
+        "basis": "신강민은 무장 난입자를 문 밖에 붙들고 명부 재점검 내용을 이윤서에게 전한다. 이윤서는 교량의 주간 전표와 야간 암호패를 확인해, 난입자가 다른 출입구에서 정상 통행으로 처리되는지 살핀다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -12,6 +12,438 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-서나연",
   "detailRoute": "/people/person-0199",
+  "birthDate": "2064-03-14",
+  "birthday": "03-14",
+  "age": 62,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/83"
+  ],
+  "familyTree": {
+    "personId": "K198",
+    "nodes": [
+      {
+        "id": "K198",
+        "personId": "K198",
+        "kind": "person",
+        "name": "서나연",
+        "birthDate": "2064-03-14",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K198"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 얼음 상인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-서나연-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0199"
+      },
+      {
+        "id": "FH-K198-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승호",
+        "birthDate": "2034-03-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "서승호는 대합실 당직에서 얼음 벽돌 무게·제작 시각 각인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-서나연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K198-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승민",
+        "birthDate": "2004-03-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "서승민은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-서나연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K198-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현연",
+        "birthDate": "2034-03-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "강현연은 대합실 당직에서 얼음 벽돌 무게·제작 시각 각인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-서나연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K198-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현아",
+        "birthDate": "2004-03-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임현아는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-서나연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K198-P-01:K198:biological",
+        "from": "FH-K198-P-01",
+        "to": "K198",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K198-P-02:FH-K198-P-01:biological",
+        "from": "FH-K198-P-02",
+        "to": "FH-K198-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K198-M-01:K198:biological",
+        "from": "FH-K198-M-01",
+        "to": "K198",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K198-M-02:FH-K198-M-01:biological",
+        "from": "FH-K198-M-02",
+        "to": "FH-K198-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-서나연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K198",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K198-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/958"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K198-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/960"
+          }
+        ]
+      },
+      {
+        "recipientId": "K194",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "담보 창고를 얼음으로 채움",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/67"
+          }
+        ]
+      },
+      {
+        "recipientId": "K173",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "얼음 벽돌을 환적 창에서 받음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/157"
+          }
+        ]
+      },
+      {
+        "recipientId": "K147",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "의무실 얼음을 우선 배정",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/164"
+          }
+        ]
+      },
+      {
+        "recipientId": "K247",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "얼음·식량 호송을 검수",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/178"
+          }
+        ]
+      },
+      {
+        "recipientId": "K176",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "서나연의 얼음 벽돌을 인계하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/147"
+          }
+        ]
+      },
+      {
+        "recipientId": "K200",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "서나연의 벽돌 각인을 현장에서 받치는 사제이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/168"
+          }
+        ]
+      },
+      {
+        "recipientId": "K202",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "서나연의 의무실 얼음 우선 배정을 침상에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/172"
+          }
+        ]
+      },
+      {
+        "recipientId": "K205",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "서나연의 제빙 원수를 현장에서 측량하는 사제이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/178"
+          }
+        ]
+      },
+      {
+        "recipientId": "K214",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "서나연의 벽돌 각인이 밤에 바뀐 칸을 가리키고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/98"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K198",
     "personId": "person-0199",
@@ -164,7 +596,7 @@
     ],
     "incoming": [
       {
-        "from": "송이든",
+        "from": "루카스 슈나이더",
         "type": "계약",
         "to": "서나연",
         "basis": "얼음 벽돌을 환적 창에서 받음"
@@ -176,7 +608,7 @@
         "basis": "얼음·식량 호송을 검수"
       },
       {
-        "from": "주서람",
+        "from": "나탈리야 소콜로바",
         "type": "계약",
         "to": "서나연",
         "basis": "서나연의 얼음 벽돌을 인계하며"

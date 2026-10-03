@@ -12,6 +12,657 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-백온",
   "detailRoute": "/people/person-0246",
+  "birthDate": "2102-10-04",
+  "birthday": "10-04",
+  "age": 24,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/91",
+    "lore/chronology/Century-Annals.json#/content/518"
+  ],
+  "familyTree": {
+    "personId": "K245",
+    "nodes": [
+      {
+        "id": "K245",
+        "personId": "K245",
+        "kind": "person",
+        "name": "백온",
+        "birthDate": "2102-10-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K245"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 피난 명부의 손. 무공은 없다. 안국총림은 장경종(이하 '장경종'이라 한다)의 본산이고 수도는 안국역이다. 조계사·총무원 종로구 우정국로 55가 대정전 뒤에 위패와 사원 대장을 지켰다. 백온이 방장이 된 것은 산중총회가 그를 추대한 뒤였다. 추대의 근거는 북한산보국문귀환회의 명부함을 끊기지 않게 지킨 일이었다. 문중은 스승 계보별 파벌이고, 문중들의 표 대결이 산중총회의 정치다. 안국총림은 속국이 없고 독자 병력이 없다. 북한산 피난은 호가 아니라 공백이다. 한재목의 집단 단수는 명부의 줄을 거래 카드로 만든다. 강민서가 시민권을 규격과 같이 올리려는 까닭과 만난다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-백온-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0246"
+      },
+      {
+        "id": "FH-K245-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "백승석",
+        "birthDate": "2072-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "백승석은 생활권의 공동 거처에서 명부 필사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-백온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K245-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "백승준",
+        "birthDate": "2042-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "백승준은 생활권의 공동 거처에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-백온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K245-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "백승호",
+        "birthDate": "2012-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "백승호는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-백온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K245-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현재",
+        "birthDate": "2072-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "한현재는 생활권의 공동 거처에서 명부 필사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-백온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K245-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현찬",
+        "birthDate": "2042-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "강현찬은 생활권의 공동 거처에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-백온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K245-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현성",
+        "birthDate": "2012-10-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임현성은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-백온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K245-P-01:K245:biological",
+        "from": "FH-K245-P-01",
+        "to": "K245",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K245-P-02:FH-K245-P-01:biological",
+        "from": "FH-K245-P-02",
+        "to": "FH-K245-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K245-P-03:FH-K245-P-02:biological",
+        "from": "FH-K245-P-03",
+        "to": "FH-K245-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K245-M-01:K245:biological",
+        "from": "FH-K245-M-01",
+        "to": "K245",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K245-M-02:FH-K245-M-01:biological",
+        "from": "FH-K245-M-02",
+        "to": "FH-K245-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K245-M-03:FH-K245-M-02:biological",
+        "from": "FH-K245-M-03",
+        "to": "FH-K245-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-백온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K270",
+      "recipientName": "윤산호",
+      "basis": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-10.json",
+        "anchor": "인물-윤산호-p5"
+      }
+    },
+    {
+      "recipientId": "K1015",
+      "recipientName": "나르기즈 유수포바",
+      "basis": "주요 관계: 안국총림 방장 백온과 협력. 뚝섬 기동 정비조와 숙소 계약",
+      "sourceRef": {
+        "path": "lore/factions/Diaspora-Corridors.json",
+        "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1"
+      }
+    }
+  ],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K245",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K245-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1188"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K245-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1191"
+          }
+        ]
+      },
+      {
+        "recipientId": "K008",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "이동 급수권 동맹",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/20"
+          }
+        ]
+      },
+      {
+        "recipientId": "K246",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "가족 회의에서 방장 맹세를 대변",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/74"
+          }
+        ]
+      },
+      {
+        "recipientId": "K247",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "공개 배급표를 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/75"
+          }
+        ]
+      },
+      {
+        "recipientId": "K248",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "회랑 정찰을 방장 지휘로 지킴",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/76"
+          }
+        ]
+      },
+      {
+        "recipientId": "K249",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "가족과 피난 명부를 한 원장으로 합침",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/77"
+          }
+        ]
+      },
+      {
+        "recipientId": "K031",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "난민 시민권을 조합 표로 지지",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/118"
+          }
+        ]
+      },
+      {
+        "recipientId": "K037",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "남하 행렬을 원수 수용으로 맞음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/122"
+          }
+        ]
+      },
+      {
+        "recipientId": "K118",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "가족 명부를 강제복무와 묶어 산 원한",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/137"
+          }
+        ]
+      },
+      {
+        "recipientId": "K121",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "독립 시민권 요구에 동맹",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/141"
+          }
+        ]
+      },
+      {
+        "recipientId": "K261",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "백온의 피난처 맹세를 고지 칠판에 적는다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/236"
+          }
+        ]
+      },
+      {
+        "recipientId": "K051",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백온의 가족 투표를 지지하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/17"
+          }
+        ]
+      },
+      {
+        "recipientId": "K053",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백온의 남하를 금천 쪽에서 맞으며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/21"
+          }
+        ]
+      },
+      {
+        "recipientId": "K264",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백온의 강제복무 반대를 가족 회의에서 대변하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/124"
+          }
+        ]
+      },
+      {
+        "recipientId": "K267",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백온의 회의 발언을 수행으로 뒷받침하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/130"
+          }
+        ]
+      },
+      {
+        "recipientId": "K315",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "백온의 남하 가족 명부를 대조한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/153"
+          }
+        ]
+      },
+      {
+        "recipientId": "K392",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "백온의 남하 가족에게 임시표를 건넨다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/197"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K245",
     "personId": "person-0246",

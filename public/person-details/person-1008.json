@@ -12,6 +12,473 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-민웅기",
   "detailRoute": "/people/person-1008",
+  "birthDate": "2094-10-08",
+  "birthday": "10-08",
+  "age": 32,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-Unaffiliated.json#/content/9",
+    "lore/chronology/Scenario-Timeline.json#/content/18",
+    "lore/chronology/Scenario-Timeline.json#/content/20",
+    "lore/chronology/Scenario-Timeline.json#/content/23",
+    "lore/chronology/Scenario-Timeline.json#/content/27",
+    "lore/chronology/Scenario-Timeline.json#/content/28"
+  ],
+  "familyTree": {
+    "personId": "K1008",
+    "nodes": [
+      {
+        "id": "K1008",
+        "personId": "K1008",
+        "kind": "person",
+        "name": "민웅기",
+        "birthDate": "2094-10-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1008"
+          },
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "성명: 민웅기",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-민웅기-list1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-1008"
+      },
+      {
+        "id": "FH-K1008-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "민승온",
+        "birthDate": "2064-10-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2102,
+            "summary": "민승온은 이전 활동지 강남구청 생활권 / 개막 체류지 대전에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-민웅기-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1008-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "민승빈",
+        "birthDate": "2034-10-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "민승빈은 이전 활동지 강남구청 생활권 / 개막 체류지 대전에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-민웅기-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1008-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "민승솔",
+        "birthDate": "2004-10-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "민승솔은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-민웅기-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1008-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서영",
+        "birthDate": "2064-10-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2102,
+            "summary": "박서영은 이전 활동지 강남구청 생활권 / 개막 체류지 대전에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-민웅기-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1008-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서경",
+        "birthDate": "2034-10-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "이서경은 이전 활동지 강남구청 생활권 / 개막 체류지 대전에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-민웅기-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1008-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "최서정",
+        "birthDate": "2004-10-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최서정은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-민웅기-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1008-P-01:K1008:biological",
+        "from": "FH-K1008-P-01",
+        "to": "K1008",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1008-P-02:FH-K1008-P-01:biological",
+        "from": "FH-K1008-P-02",
+        "to": "FH-K1008-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1008-P-03:FH-K1008-P-02:biological",
+        "from": "FH-K1008-P-03",
+        "to": "FH-K1008-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1008-M-01:K1008:biological",
+        "from": "FH-K1008-M-01",
+        "to": "K1008",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1008-M-02:FH-K1008-M-01:biological",
+        "from": "FH-K1008-M-02",
+        "to": "FH-K1008-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1008-M-03:FH-K1008-M-02:biological",
+        "from": "FH-K1008-M-03",
+        "to": "FH-K1008-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-민웅기-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K1008",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K1008-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4858"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K1008-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4861"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1009",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "대전으로 옮기기 전 귀환합성국의 정비와 대체 경로를 기록함",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/194"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1009",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "민웅기가 떠난 뒤 귀환합성국의 현장 회수와 주민 동의를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/195"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1019",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "민웅기의 이전 중계기·대체 경로 기록을 정비에 쓰고 현장 수정 사항과 질문을 대전으로 보냄",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/198"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1019",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "대전에서 이전 귀환망 통신 지식을 보태고 현장 점검과 운반 협의는 박성수에게 맡김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/199"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "rightsPermissions": {
     "applicability": "real-person",
     "identityBasisRef": "owner-confirmed-identity-20260925",
@@ -189,6 +656,12 @@
         "type": "계약",
         "to": "신종목",
         "basis": "대전으로 옮기기 전 귀환합성국의 정비와 대체 경로를 기록함"
+      },
+      {
+        "from": "민웅기",
+        "type": "계약",
+        "to": "박성수",
+        "basis": "대전에서 이전 귀환망 통신 지식을 보태고 현장 점검과 운반 협의는 박성수에게 맡김"
       }
     ],
     "incoming": [
@@ -197,6 +670,12 @@
         "type": "계약",
         "to": "민웅기",
         "basis": "민웅기가 떠난 뒤 귀환합성국의 현장 회수와 주민 동의를 맡음"
+      },
+      {
+        "from": "박성수",
+        "type": "계약",
+        "to": "민웅기",
+        "basis": "민웅기의 이전 중계기·대체 경로 기록을 정비에 쓰고 현장 수정 사항과 질문을 대전으로 보냄"
       }
     ]
   }
