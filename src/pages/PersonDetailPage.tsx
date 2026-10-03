@@ -13,6 +13,7 @@ type ConfirmedHolding = {
   readonly id: string
   readonly name: { readonly ko: string }
   readonly adminRefs: readonly { readonly id: string; readonly name: string }[]
+  readonly stationRef?: { readonly stationId: string; readonly stationName: string }
   readonly facilityRef?: { readonly stationName: string; readonly layerId: string; readonly layerName: string }
 }
 type PersonDetail = (typeof peopleCatalog)[number] & {
@@ -421,6 +422,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             <h2>보유 영지와 시설</h2>
             {detail.confirmedHoldings.map((holding) => <section key={holding.id} data-holding-id={holding.id}>
               <h3>{holding.name.ko}</h3>
+              {holding.stationRef && <p data-owned-station={holding.stationRef.stationId}>{holding.stationRef.stationName}역</p>}
               {holding.adminRefs.length > 0 && <ul>{holding.adminRefs.map((region) => <li key={region.id} data-admin-ref={region.id}>{region.name}</li>)}</ul>}
               {holding.facilityRef && <p data-facility-layer={holding.facilityRef.layerId}>{holding.facilityRef.stationName} · {holding.facilityRef.layerName}</p>}
             </section>)}

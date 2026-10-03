@@ -29,7 +29,7 @@ test('Byeon Goun holds only the sourced Yeongdeungpo concourse under the existin
 test('Saetgang concourse holding preserves the exact facility and direct liege without geographic grants', () => {
   const ledger = read('../lore/relations/personal-holdings.json')
   const holding = ledger.holdings.find(row => row.holderPersonId === 'K233')
-  assert.equal(ledger.holdings.length, 3)
+  assert.equal(ledger.holdings.length, 20)
   assert.deepEqual(holding, {
     id: 'holding:saetgang-concourse', name: { ko: '샛강 대합실' },
     holderPersonId: 'K233', directLiegePersonId: 'K222', stateId: 'S09',

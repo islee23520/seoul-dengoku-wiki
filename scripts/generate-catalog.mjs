@@ -854,7 +854,12 @@ const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Of
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
 const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
 for (const holding of personalHoldings.holdings) {
-  if (!issuedById.has(holding.holderPersonId) || !issuedById.has(holding.directLiegePersonId) || (!holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
+  const rulerState = territoryStates.find(state => state.id === holding.stateId && state.ruler === issuedById.get(holding.holderPersonId)?.name)
+  if (!issuedById.has(holding.holderPersonId) || (holding.directLiegePersonId === null ? !rulerState : !issuedById.has(holding.directLiegePersonId)) || (!holding.stationRef && !holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
+  if (holding.stationRef) {
+    const station = openingTerritories.stations.find(station => station.id === holding.stationRef.stationId)
+    if (!rulerState || holding.directLiegePersonId !== null || rulerState.capitalStationId !== holding.stationRef.stationId || station?.name !== holding.stationRef.stationName || !station.control.polityIds.includes(holding.stateId) || holding.adminRefs.length || holding.facilityRef || holding.geometrySource !== null || holding.territorialScale !== null || holding.formalTitleRank !== null) throw new Error('E_CAPITAL_HOLDING:' + holding.id)
+  }
   if (holding.facilityRef) {
     await validateHoldingFacility(holding, stationInteriors, repoRoot)
     const ref = holding.facilityRef
@@ -934,6 +939,7 @@ const graphCourts = courtDataset.config.courts
 const graphRetainers = courtDataset.config.directRetainers
 const graphOwnerLieges = courtDataset.config.ownerLieges?.edges ?? []
 const graphIds = new Set(graphCourts.map((court) => court.ownerPersonId))
+for (const holding of personalHoldings.holdings) graphIds.add(holding.holderPersonId)
 for (const row of graphRetainers) {
   graphIds.add(row.personId)
   graphIds.add(row.liegePersonId)

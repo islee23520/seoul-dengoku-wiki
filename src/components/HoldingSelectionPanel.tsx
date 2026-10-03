@@ -6,7 +6,8 @@ export type ConfirmedHolding = {
   id: string
   name: { ko: string; en?: string }
   holderPersonId: string
-  directLiegePersonId: string
+  directLiegePersonId: string | null
+  stationRef?: { stationId: string; stationName: string }
   stateId: string
   designation?: { ko: string; en?: string }
   territorialScale: string | null
@@ -16,7 +17,7 @@ export type ConfirmedHolding = {
 }
 export type ConfirmedHoldings = { schema: 'confirmed-person-holdings.v1'; openingYear: number; holdings: ConfirmedHolding[] }
 
-function personById(id: string) {
+function personById(id: string): { name: string; detailRoute: string; stateName: string; position: string; rank: string; commonTier: string } | undefined {
   const node = retainerGraph.nodes.find(person => person.id === id)
   return node && peopleCatalog.find(person => person.detailRoute === node.detailRoute)
 }
@@ -32,13 +33,13 @@ export default function HoldingSelectionPanel({ holding, openingYear, selectedRe
   onSelectRegion: (id: string) => void
 }) {
   const holder = personById(holding.holderPersonId)
-  const liege = personById(holding.directLiegePersonId)
+  const liege = holding.directLiegePersonId === null ? null : personById(holding.directLiegePersonId)
   const ownerLiege = retainerGraph.edges.find(edge => edge.fromPersonId === holding.holderPersonId && edge.toPersonId === holding.directLiegePersonId && edge.courtId === null)
   const members = retainerGraph.edges.filter(edge => edge.toPersonId === holding.holderPersonId).flatMap(edge => {
     const person = personById(edge.fromPersonId)
     return person ? [{ person, edge }] : []
   })
-  if (!holder || !liege) return <section className="campaign-holding" aria-label="선택한 개인 영지" data-selected-holding={holding.id}><h3>{holding.name.ko}</h3><p role="alert">영지의 보유자·직속 주군 인물 정보를 불러오지 못했습니다.</p></section>
+  if (!holder || (holding.directLiegePersonId !== null && !liege)) return <section className="campaign-holding" aria-label="선택한 개인 영지" data-selected-holding={holding.id}><h3>{holding.name.ko}</h3><p role="alert">영지의 보유자·직속 주군 인물 정보를 불러오지 못했습니다.</p></section>
   return <section className="campaign-holding" aria-label="선택한 개인 영지" data-selected-holding={holding.id}>
     <header><p className="wiki-domain-label">{openingYear}년 개인 영지 · {holding.id}</p><h3>{holding.name.ko}</h3></header>
     <dl>
@@ -46,9 +47,9 @@ export default function HoldingSelectionPanel({ holding, openingYear, selectedRe
       {holding.designation && <div><dt>영주 명칭</dt><dd>{holding.designation.ko}</dd></div>}
       {holding.formalTitleRank && <div><dt>작위 등급</dt><dd>{holding.formalTitleRank}</dd></div>}
       <div><dt>국가</dt><dd>{holder?.stateName ?? holding.stateId}</dd></div>
-      <div><dt>{ownerLiege ? relationLabel(ownerLiege) : '직속 주군'}</dt><dd>{liege && <Link to={liege.detailRoute}>{liege.name} · {holding.directLiegePersonId}</Link>}</dd></div>
-      {holding.territorialScale && <div><dt>영토 규모</dt><dd>{holding.territorialScale === 'duchy' ? '공국 규모' : holding.territorialScale}</dd></div>}
-      <div><dt>보유 범위</dt><dd>{holding.facilityRef ? `${holding.facilityRef.stationName} · ${holding.facilityRef.layerName ?? holding.facilityRef.layerId}` : `${holding.adminRefs.length}개 동`}</dd></div>
+      <div><dt>{ownerLiege ? relationLabel(ownerLiege) : '직속 주군'}</dt><dd>{liege ? <Link to={liege.detailRoute}>{liege.name} · {holding.directLiegePersonId}</Link> : '없음'}</dd></div>
+      {holding.territorialScale && <div><dt>영토 규모</dt><dd>{holding.territorialScale === 'duchy' ? '공작령 규모' : holding.territorialScale === 'barony' ? '남작령 규모' : holding.territorialScale}</dd></div>}
+      <div><dt>보유 범위</dt><dd>{holding.stationRef ? `${holding.stationRef.stationName}역` : holding.facilityRef ? `${holding.facilityRef.stationName} · ${holding.facilityRef.layerName ?? holding.facilityRef.layerId}` : `${holding.adminRefs.length}개 동`}</dd></div>
     </dl>
     {holder && <details><summary>공직 정보</summary><p>{holder.position} · {holder.rank} · {holder.commonTier}</p></details>}
     {holding.facilityRef && <p>보유 범위는 {holding.facilityRef.stationName}의 실제 대합실입니다. 지도는 위치를 도식으로 표시하며 대합실의 실제 경계와 면적은 표시하지 않습니다.</p>}

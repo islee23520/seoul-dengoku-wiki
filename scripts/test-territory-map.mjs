@@ -232,12 +232,7 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
     assert.equal(regions[0].status, 'held', `${state.id}:${capital.name}:status`)
     if (['종로구', '중구'].includes(regions[0].district)) assert.deepEqual(regions[0].polities, ['S06'], `${state.id}:${capital.name}:government-block`)
     else assert.deepEqual(regions[0].polities, [state.id], `${state.id}:${capital.name}:owner`)
-    if (state.id === 'S16') {
-      // 소유자 결정(2026-09-28): 개막 시청역은 대한민국정부 점유, 분쟁 없음.
-      assert.deepEqual(capital.control.polityIds, ['S06'], 'City Hall opening occupant')
-      assert.equal(capital.control.status, 'held')
-      assert.equal(capital.control.primary, 'S06')
-    } else if (capital.id === '삼성') {
+    if (capital.id === '삼성') {
       assert.deepEqual(capital.control.memberSurfaces.map((entry) => entry.polityIds), [['S04'], ['S16']])
       // 소유자 결정(2026-09-28): 두 표기는 같은 역이고 개막 점유는 명부교회다.
       assert.equal(capital.control.source, 'control-delta')
@@ -260,7 +255,7 @@ test('the City Hall control ledger separates Government guard priority from the 
   assert.equal(cityHall.control.primary, delta.primary)
   assert.equal(cityHall.control.source, 'control-delta')
   assert.equal(cityHall.control.status, 'held')
-  assert.equal(data.states.find((state) => state.id === 'S16').capitalStationId, '시청')
+  assert.equal(data.states.find((state) => state.id === 'S16').capitalStationId, '수서')
   assert.equal(data.regions.find((region) => region.id === cityHall.control.surfaceRegionId).polities[0], 'S06')
   for (const stationId of ['광화문', '종로3가', '을지로입구']) {
     const station = data.stations.find((entry) => entry.id === stationId)
@@ -274,7 +269,7 @@ test('sixteen states carry the chronicle capitals and tier grades', async () => 
   const expectedCapitals = {
     S01: '양평', S02: '구로', S03: '양재', S04: '삼성', S05: '암사', S06: '광화문',
     S07: '용산', S08: '흑석', S09: '여의도', S10: '안국', S11: '강남', S12: '신내',
-    S13: '제기동', S14: '구의', S15: '명동', S16: '시청',
+    S13: '제기동', S14: '구의', S15: '명동', S16: '수서',
   }
   const stationById = new Map(data.stations.map((station) => [station.id, station]))
   assert.deepEqual(Object.fromEntries(data.states.map((state) => [state.id, stationById.get(state.capitalStationId)?.name])), expectedCapitals)

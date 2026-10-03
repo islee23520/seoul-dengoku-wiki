@@ -27,6 +27,8 @@ test('generated court graph resolves approved direct retainers to actual detail 
   const values = new Map(dataset.sources.values.people.map((person) => [person.name, person]))
   assertGraphCountries(retainerGraph.nodes, catalog, dataset.sources.registry, dataset.sources.values)
   const expectedIds = new Set(dataset.config.courts.map((court) => court.ownerPersonId))
+  const holdings = JSON.parse(await readFile(new URL('../lore/relations/personal-holdings.json', import.meta.url), 'utf8'))
+  for (const holding of holdings.holdings) expectedIds.add(holding.holderPersonId)
   for (const edge of dataset.config.directRetainers) {
     expectedIds.add(edge.personId)
     expectedIds.add(edge.liegePersonId)
