@@ -15,7 +15,7 @@ from rasterio.warp import transform
 
 ROOT = Path(__file__).resolve().parents[1]
 LINE_IDS = {str(n): f"{n + 1}-{n}" for n in range(1, 9)}
-LINE_IDS.update({'9': '10-9', '공항철도': 'A', '수인·분당': 'B', '경의·중앙': 'K', '신분당': 'S'})
+LINE_IDS.update({'9': '10-9', '공항철도': 'A', '수인·분당': 'B', '수인분당선': 'B', '경의·중앙': 'K', '경의중앙선': 'K', '신분당': 'S'})
 NAME_EXCEPTIONS = {'디지털미디어시티': 'DMC', '서울역': '서울', '불암산': '당고개', '자양': '뚝섬유원지', '암사역사공원': '암사역사공원'}
 DEPTH_URL = 'https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?useCache=false&infId=OA-13305&seq=8&infSeq=1'
 OPERATIONS_URL = 'https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000007658194&fileDetailSn=1&insertDataPrcus=N'
@@ -49,7 +49,7 @@ def main():
         for station_id in [entry['id'], *entry['aliases']]
         for source, observed in entry['observed_lines'].items()
         if source != '총신대입구 (이수)'
-        for line in observed
+        for line in observed if line in LINE_IDS
     }
     official = json.loads((ROOT / 'scripts/official-seoul-lines.json').read_text())
     import re

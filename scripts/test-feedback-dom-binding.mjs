@@ -36,6 +36,20 @@ test('ambiguous extra identical occurrence fails closed with no bindings', () =>
   assert.equal(root.querySelectorAll('[data-feedback-leaf]').length, 0)
 })
 
+test('empty anchor paragraphs and table cells do not shift selectable occurrence identities', () => {
+  const root = document.createElement('div')
+  root.innerHTML = '<p><span id="anchor"></span>\n<span id="alias"></span></p><p>same</p><table><tbody><tr><td></td><td>same</td></tr></tbody></table>'
+  const bindings = bindFeedbackLeaves(root, 'p, td', documentInfo.leaves)
+  assert.ok(bindings)
+  assert.deepEqual(bindings.map(([element, id]) => [element.tagName, id]), [['P', 'item:0'], ['TD', 'item:1']])
+  assert.equal(root.querySelector('#anchor').id, 'anchor')
+  root.querySelector('td').textContent = 'unexpected'
+  assert.equal(bindFeedbackLeaves(root, 'p, td', documentInfo.leaves), null)
+  root.querySelector('td').textContent = ''
+  root.querySelector('p:nth-of-type(2)').textContent = ' same'
+  assert.equal(bindFeedbackLeaves(root, 'p, td', documentInfo.leaves), null)
+})
+
 test('actual person contributor list item keeps inline link text and canonical identity', () => {
   const root = document.createElement('div')
   root.innerHTML = '<details><ul><li>기여자: <a href="https://github.com/islee23520">islee23520</a></li></ul></details>'

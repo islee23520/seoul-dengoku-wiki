@@ -280,7 +280,23 @@ def network(cache):
             for (_, a), (_, b) in zip(entries, entries[1:]):
                 if math.dist(a, b) < 18000:
                     paths.append({"lineId": lid, "points": [a, b]})
-    return {"paths": paths, "stations": station_list}
+    corrections = json.loads((Path(__file__).resolve().parents[1] / "lore/places/rail-station-corrections.json").read_text())["corrections"]
+    for station in station_list:
+        for correction in corrections:
+            if all(station[field] == correction[field] for field in ("name", "east", "north")):
+                station["lineIds"] = correction["lineIds"]
+    identities = json.loads((Path(__file__).resolve().parents[1] / "lore/places/rail-station-identities.json").read_text())["groups"]
+    unique_stations = []
+    seen_uids = set()
+    for station in station_list:
+        identity = next((group for group in identities if group["name"] == station["name"] and any(member["east"] == station["east"] and member["north"] == station["north"] for member in group["members"])), None)
+        if identity is not None:
+            if identity["uid"] in seen_uids:
+                continue
+            seen_uids.add(identity["uid"])
+            station["lineIds"] = identity["lineIds"]
+        unique_stations.append(station)
+    return {"paths": paths, "stations": unique_stations}
 
 
 def bake_detail(cache, out, province, rail, download):

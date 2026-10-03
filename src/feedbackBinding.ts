@@ -16,7 +16,7 @@ export function bindFeedbackLeaves(root: HTMLElement, selector: string, leaves: 
   const set = new Set(all)
   // Shared Markdown rendering may expose both a loose-list LI and its child P.
   // Keep the structural occurrence node; nested candidates are not separate leaves.
-  const elements = all.filter((element) => !parentCandidate(element, set))
+  const elements = all.filter((element) => !parentCandidate(element, set) && (element.textContent ?? '').trim().length > 0)
   if (elements.length !== leaves.length) return null
   const bindings: Array<[HTMLElement, string]> = []
   for (let index = 0; index < leaves.length; index += 1) {

@@ -5,14 +5,21 @@ import { presentationStations, stationAliases } from '../src/components/stationP
 import { validatedDensities } from './region-density.mjs'
 import { segmentPointerChoices } from '../src/components/segmentPointerSelection.ts'
 
-test('overlapping actual ShinCHON segment strokes retain both exact IDs independent of paint order', async () => {
+test('Seoul Station control delta preserves each original surface holder independently', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
-  const stations = new Map(data.stations.map((station) => [station.id, station]))
-  const ids = ['segment:신촌~이대', 'segment:신촌(지하)~이대']
-  const segments = ids.map((id) => {
-    const edge = data.edges.find((item) => item.id === id)
-    return { id, a: stations.get(edge.a), b: stations.get(edge.b), strokeWidth: 4 }
-  })
+  const station = data.stations.find((entry) => entry.id === '서울역')
+  assert.deepEqual(station.control.polityIds, ['S06'])
+  const members = new Map(station.control.memberSurfaces.map((entry) => [entry.id, entry]))
+  assert.deepEqual(members.get('서울역').surfacePolityIds, ['S07'])
+  assert.deepEqual(members.get('서울').surfacePolityIds, ['S06'])
+  for (const member of members.values()) {
+    assert.deepEqual(member.surfacePolityIds, data.regions.find((region) => region.id === member.surfaceRegionId).polities)
+  }
+})
+
+test('overlapping distinct segment strokes retain both exact IDs independent of paint order', () => {
+  const ids = ['segment:first', 'segment:second']
+  const segments = ids.map((id) => ({ id, a: { x: 0, y: 0 }, b: { x: 10, y: 0 }, strokeWidth: 4 }))
   const { a, b } = segments[0]
   const point = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 }
   assert.deepEqual(new Set(segmentPointerChoices(point, segments)), new Set(ids))
@@ -91,10 +98,10 @@ test('outside administrative units keep observed boundaries distinct from 2126 c
 test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const displayed = presentationStations(data.stations)
-  assert.equal(data.stations.length, 315)
-  assert.equal(data.edges.length, 410)
+  assert.equal(data.stations.length, 313)
+  assert.equal(data.edges.length, 383)
   assert.equal(Object.keys(stationAliases).length, 19)
-  assert.equal(displayed.length, 315)
+  assert.equal(displayed.length, 313)
   for (const [aliasId, primaryId] of Object.entries(stationAliases)) {
     const station = displayed.find((candidate) => candidate.id === primaryId)
     assert.deepEqual(new Set(station.memberIds), new Set(primaryId === '총신대입구(이수)' ? [primaryId, '이수', '총신대입구 (이수)'] : [primaryId, aliasId]), aliasId)
@@ -124,8 +131,10 @@ test('alternate labels share one displayed station while graph nodes and edges r
   assert.equal(data.stations.filter((station) => [suyu.id, ...suyu.aliases].includes(station.id)).length, 1)
   assert.deepEqual(data.edges.filter((edge) => edge.a === suyu.id || edge.b === suyu.id).map((edge) => edge.a === suyu.id ? edge.b : edge.a).sort(), ['미아', '쌍문'])
   assert.equal(underground.stations[suyu.id]['5-4'].floors, 'B2')
-  assert.deepEqual(displayed.filter((station) => station.name.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
-  assert.ok(data.edges.some((edge) => edge.a === '신촌(지하)' || edge.b === '신촌(지하)'))
+  assert.deepEqual(displayed.filter((station) => station.name.startsWith('신촌')).map((station) => station.id), ['신촌'])
+  assert.deepEqual(data.stations.find((station) => station.id === '신촌').memberIds, ['신촌', '신촌(지하)'])
+  assert.deepEqual(data.stations.find((station) => station.id === '신촌').lineIds, ['3-2'])
+  assert.ok(data.edges.every((edge) => edge.a !== '신촌(지하)' && edge.b !== '신촌(지하)'))
 })
 
 test('approved landmark roles project to surveyed facilities without changing surrounding dong ownership', async () => {
@@ -187,11 +196,11 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   }
   assert.ok(data.states.every((state) => Number.isFinite(state.labelX) && Number.isFinite(state.labelY)))
   assert.equal(new Set(data.states.map((state) => `${state.labelX}:${state.labelY}`)).size, 16)
-  assert.equal(data.stations.length, 315)
-  assert.equal(data.edges.length, 410)
+  assert.equal(data.stations.length, 313)
+  assert.equal(data.edges.length, 383)
   assert.ok(Object.keys(data.lines).length >= 20)
   assert.ok(data.stations.every((station) => Array.isArray(station.lineIds)))
-  assert.equal(data.stations.filter((station) => station.lineIds.length > 0).length, 311)
+  assert.equal(data.stations.filter((station) => station.lineIds.length > 0).length, 309)
   assert.ok(data.edges.every((edge) => Array.isArray(edge.lineIds)))
   assert.ok(data.stations.every((station) => ['derived-from-surface', 'outside-surface-atlas', 'control-delta'].includes(station.control?.source)))
   assert.ok(data.stations.every((station) => Object.hasOwn(station.control, 'deltaId')))
@@ -492,7 +501,7 @@ test('offline underground asset preserves observed depths, unknowns and graph me
     assert.match(source.sha256, /^[a-f0-9]{64}$/)
   }
   const samples = [
-    ['서울', '2-1', 11.85], ['시청', '2-1', 10.05], ['시청', '3-2', 19.89],
+    ['서울역', '2-1', 11.85], ['시청', '2-1', 10.05], ['시청', '3-2', 19.89],
     ['종로3가', '2-1', 11.24], ['종로3가', '4-3', 20.25], ['공덕', '6-5', 20.29],
     ['공덕', '7-6', 13.38], ['여의도', '6-5', 27.78], ['Sindorim', '3-2', 10.84],
     ['을지로4가', '6-5', 26.51], ['종각', '2-1', 11.43],
@@ -533,8 +542,8 @@ test('between-station segments are underground units with a rule-derived control
   const ledger = JSON.parse(await readFile(new URL('../lore/places/station-control-overrides.json', import.meta.url), 'utf8'))
   const stationById = new Map(data.stations.map((station) => [station.id, station]))
   const segmentDeltas = new Map((ledger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
-  assert.equal(data.edges.length, 410)
-  assert.equal(new Set(data.edges.map((edge) => edge.id)).size, 410)
+  assert.equal(data.edges.length, 383)
+  assert.equal(new Set(data.edges.map((edge) => edge.id)).size, 383)
   for (const edge of data.edges) {
     assert.equal(edge.id, `segment:${edge.a}~${edge.b}`)
     assert.ok(['open', 'checkpoint', 'unknown'].includes(edge.passage2126), edge.id)
@@ -566,7 +575,9 @@ test('between-station segments are underground units with a rule-derived control
   // 소유자 결정(2026-09-28): 개막 시점 모든 역이 점유되어 있으므로 미확인 구간도 없다.
   assert.equal(data.edges.filter((edge) => edge.control.status === 'unknown').length, 0)
   // 소유자 결정(2026-09-28): 한강 횡단 12구간은 구간별 결정을 따른다.
-  assert.equal(ledger.passageDecisions.length, 12)
+  assert.equal(ledger.passageDecisions.length, 10)
+  assert.equal(ledger.retiredPassageDecisions.length, 3)
+  for (const decision of ledger.retiredPassageDecisions) assert.equal(data.edges.find((edge) => edge.id === decision.segmentId), undefined)
   for (const decision of ledger.passageDecisions) assert.equal(data.edges.find((edge) => edge.id === decision.segmentId).passage2126, decision.passage2126, decision.segmentId)
   assert.equal(data.edges.find((edge) => edge.id === 'segment:압구정~옥수').passage2126, 'open')
   assert.equal(data.edges.filter((edge) => edge.passage2126 === 'unknown').length, 0)
