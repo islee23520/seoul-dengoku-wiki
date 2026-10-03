@@ -33,6 +33,9 @@ test('portrait properties and immutable images follow the registered portrait ca
       assert.equal(token.imageReview.imageSha256, token.image.sha256)
       assert.equal(review.generationReceipt.imageSha256, token.image.sha256)
       assert.deepEqual(review.generationRequest, review.generationReceipt.request)
+      if (token.style.generationReferenceSha256) {
+        assert.equal(token.style.generationReferenceSha256, review.generationRequest.references[0].sha256)
+      }
       assert.equal(review.canonPromotion, false)
       assert.equal(review.final3dPortraitContractSatisfied, false)
       assert.doesNotMatch(JSON.stringify(review), /(?:\/Users\/|\/Volumes\/|CLIPROXY_API_KEY|OPENAI_API_KEY|Authorization|apiKey)/)
