@@ -12,6 +12,23 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-민웅기",
   "detailRoute": "/people/person-1008",
+  "rightsPermissions": {
+    "applicability": "real-person",
+    "identityBasisRef": "owner-confirmed-identity-20260925",
+    "externalReuseRequiresSeparateSubjectPermission": true,
+    "nameUse": {
+      "status": "granted",
+      "uses": [],
+      "recordedOn": "2026-10-03",
+      "evidenceRef": "owner-current-subject-permissions-20261003"
+    },
+    "likenessUse": {
+      "status": "granted",
+      "uses": [],
+      "recordedOn": "2026-10-03",
+      "evidenceRef": "owner-current-subject-permissions-20261003"
+    }
+  },
   "gurps": {
     "id": "K1008",
     "personId": "person-1008",

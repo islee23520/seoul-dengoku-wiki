@@ -22,6 +22,7 @@ import { loadDataset, validate as validateRelations } from '../lore/relations/va
 import { validateHoldingFacility } from './holding-facility.mjs'
 import { regularLineGraph } from './regular-line-graph.mjs'
 import { regionalLineGraph } from './regional-line-graph.mjs'
+import { parsePersonRightsPermissions } from './person-rights-permissions.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -873,6 +874,9 @@ for (const holding of personalHoldings.holdings) {
 }
 await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
 const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
+const personRightsPermissions = parsePersonRightsPermissions(
+  JSON.parse(await readFile(resolve(repoRoot, 'person-rights-permissions.json'), 'utf8')), courtDataset.people,
+)
 const retainersById = new Map(courtDataset.config.directRetainers.map((row) => [row.personId, row]))
 const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
   courtDataset.config.directRetainers.filter((row) => row.courtId === court.id)]))
@@ -976,6 +980,7 @@ for (const person of peopleCatalog) {
   if (!sheet || sheet.name !== person.name || sheet.url !== person.detailRoute) throw new Error(`E_PERSON_SHEET_IDENTITY:${issuedId}:${person.id}`)
   const detail = {
     ...person,
+    ...(personRightsPermissions.has(issuedId) ? { rightsPermissions: personRightsPermissions.get(issuedId) } : {}),
     gurps: {
       id: issuedId,
       personId: person.id,

@@ -12,6 +12,23 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-이일섭",
   "detailRoute": "/people/person-0998",
+  "rightsPermissions": {
+    "applicability": "real-person",
+    "identityBasisRef": "owner-confirmed-identity-20260925",
+    "externalReuseRequiresSeparateSubjectPermission": true,
+    "nameUse": {
+      "status": "granted",
+      "uses": [],
+      "recordedOn": "2026-10-03",
+      "evidenceRef": "owner-current-subject-permissions-20261003"
+    },
+    "likenessUse": {
+      "status": "granted",
+      "uses": [],
+      "recordedOn": "2026-10-03",
+      "evidenceRef": "owner-current-subject-permissions-20261003"
+    }
+  },
   "gurps": {
     "id": "K998",
     "personId": "person-0998",
