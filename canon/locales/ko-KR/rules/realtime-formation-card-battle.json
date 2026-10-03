@@ -12,6 +12,7 @@
     "id": "doc.Realtime-Formation-Card-Battle",
     "blockIds": [
       "source.b1",
+      "sp1.20261003.override",
       "source.b3",
       "r3.resolution",
       "r3.resolution.p1",
@@ -42,7 +43,8 @@
       "combat-formula.20261003.heading",
       "combat-formula.20261003.pipeline",
       "combat-formula.20261003.status",
-      "combat-formula.20261003.tests"
+      "combat-formula.20261003.tests",
+      "sp1.20261003.commander"
     ]
   },
   "blocks": [
@@ -54,6 +56,16 @@
         {
           "kind": "text",
           "text": "개인 판정 전투"
+        }
+      ]
+    },
+    {
+      "id": "sp1.20261003.override",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 제품 기획은 SP-1.0.0 싱글플레이 상세 계약을 우선한다. 한 플레이어·한 본체·NPC·단일 캠페인 저장을 사용하며 이 문서의 공유 세계·최대 참가자·호스트·접속 종료·점유·온라인 대행 조항은 역사로 보존하고 현재 실행 전제로 사용하지 않는다. 실제 이동·현장 참가·권한·단일 정산·저장 오류 계약은 유지한다. 충돌 시 [싱글플레이 상세 기획 SP-1.0.0](../system-design/Singleplayer-Design-SP-1-0-0.md)의 대체 범위를 따른다. 구현 완료나 기존 저장 자동 변환을 뜻하지 않는다."
         }
       ]
     },
@@ -531,6 +543,16 @@
             "text": "피로·보급 결핍·지형·지휘관 상실의 보정 경로와 개인 부상→집계 능력 재평가를 추적한다. 한 원인의 상이한 효과는 허용하되 동일 손실의 이중 적용은 금지한다."
           }
         ]
+      ]
+    },
+    {
+      "id": "sp1.20261003.commander",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SP-1.0.0: 본체가 전투 지휘관이면 지휘에 배속된 모든 전투맵 분대를 직접 조정·명령한다. 별도 분대장이 있어도 상위 지휘권을 막지 않는다. 본체 분대장은 상위 지휘관 하달을 물리 전달이 아닌 즉시 시스템 신호로 받으며 따름·독자 행동을 선택한다. 수신/실행/성과/준수/불가능 조건을 지휘관의 해당 인물 평가로 기록하고 중복 평가를 막는다. 이는 전투 하달에만 적용하며 전략 연락·본체 이동·명령 큐를 변경하지 않는다."
+        }
       ]
     }
   ]
