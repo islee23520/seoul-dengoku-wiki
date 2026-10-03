@@ -12,6 +12,23 @@
   "stateName": "무소속",
   "sourceRoute": "/world/Core-Characters#신종목",
   "detailRoute": "/people/person-1009",
+  "rightsPermissions": {
+    "applicability": "real-person",
+    "identityBasisRef": "owner-confirmed-named-identity-20261003",
+    "externalReuseRequiresSeparateSubjectPermission": true,
+    "nameUse": {
+      "status": "granted",
+      "uses": [],
+      "recordedOn": "2026-10-03",
+      "evidenceRef": "owner-current-subject-permissions-20261003"
+    },
+    "likenessUse": {
+      "status": "granted",
+      "uses": [],
+      "recordedOn": "2026-10-03",
+      "evidenceRef": "owner-current-subject-permissions-20261003"
+    }
+  },
   "gurps": {
     "id": "K1009",
     "personId": "person-1009",

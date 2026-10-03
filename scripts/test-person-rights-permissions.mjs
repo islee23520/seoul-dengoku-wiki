@@ -120,7 +120,7 @@ test('actual canonical registry publishes current confirmed grants without futur
   const issued = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
   const parsed = parsePersonRightsPermissions(actual, issued)
   const published = []
-  for (const id of ['person-0998', 'person-1007', 'person-1008', 'person-0001']) {
+  for (const id of ['person-0998', 'person-1007', 'person-1008', 'person-1003', 'person-1009', 'person-1019', 'person-0001']) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))
     const expected = parsed.get(detail.gurps.id)
     assert.deepEqual(detail.rightsPermissions, expected)
