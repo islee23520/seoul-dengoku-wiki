@@ -12,6 +12,593 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-최지우",
   "detailRoute": "/people/person-0220",
+  "birthDate": "2099-01-28",
+  "birthday": "01-28",
+  "age": 27,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/83",
+    "lore/chronology/Century-Annals.json#/content/480",
+    "lore/chronology/Century-Annals.json#/content/543"
+  ],
+  "familyTree": {
+    "personId": "K219",
+    "nodes": [
+      {
+        "id": "K219",
+        "personId": "K219",
+        "kind": "person",
+        "name": "최지우",
+        "birthDate": "2099-01-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K219"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 여의대로 24 여의도 회관 송신 당직의 손. 회관의 비상위원회가 계열 출자 장부를 냉각·키 당직으로 바꿨다. 최지우가 의장이 된 것은 마곡종자가의 송신 당직과 그 출자 장부를 끊기지 않게 지킨 뒤였다. 디지털미디어시티신탁가의 당직은 최은재의 것이다. 거짓 속보는 형조가 아니라 채널 길드가 먼저 자른다. 여의도출자연합회는 약국이다. 공용 화폐와 여의도 금고는 이 회가 쥐고, 속국은 영종지점 하나다. 윤서린의 도장보다 목소리가 빠르면, 인준은 사본이 된다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-최지우-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0220"
+      },
+      {
+        "id": "FH-K219-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현욱",
+        "birthDate": "2069-01-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "최현욱은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-최지우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K219-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현란",
+        "birthDate": "2039-01-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "최현란은 생활권의 공동 거처에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-최지우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K219-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현리",
+        "birthDate": "2009-01-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최현리는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-최지우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K219-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현범",
+        "birthDate": "2069-01-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "정현범은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-최지우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K219-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현아",
+        "birthDate": "2039-01-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "윤현아는 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-최지우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K219-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현정",
+        "birthDate": "2009-01-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한현정은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-최지우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K219-P-01:K219:biological",
+        "from": "FH-K219-P-01",
+        "to": "K219",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K219-P-02:FH-K219-P-01:biological",
+        "from": "FH-K219-P-02",
+        "to": "FH-K219-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K219-P-03:FH-K219-P-02:biological",
+        "from": "FH-K219-P-03",
+        "to": "FH-K219-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K219-M-01:K219:biological",
+        "from": "FH-K219-M-01",
+        "to": "K219",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K219-M-02:FH-K219-M-01:biological",
+        "from": "FH-K219-M-02",
+        "to": "FH-K219-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K219-M-03:FH-K219-M-02:biological",
+        "from": "FH-K219-M-03",
+        "to": "FH-K219-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-최지우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K244",
+      "recipientName": "류해담",
+      "basis": "최지우의 공개 성향과 맞물리지만, 필진의 서명란은 따로 지킨다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-09.json",
+        "anchor": "인물-류해담-p5"
+      }
+    }
+  ],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K219",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K219-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1060"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K219-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1063"
+          }
+        ]
+      },
+      {
+        "recipientId": "K149",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "지도 갱신 시각을 송신과 맞춤",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/58"
+          }
+        ]
+      },
+      {
+        "recipientId": "K220",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "송신 기사를 의장 지휘 아래 운용",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/69"
+          }
+        ]
+      },
+      {
+        "recipientId": "K221",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "음성과 문서를 기록청 사이에서 맞춤",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/70"
+          }
+        ]
+      },
+      {
+        "recipientId": "K222",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "암호 서비스를 의장 지휘로 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/71"
+          }
+        ]
+      },
+      {
+        "recipientId": "K223",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "채널 편성 거부권을 나눔",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/72"
+          }
+        ]
+      },
+      {
+        "recipientId": "K065",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "원본 보존 동맹, 공개 시점만 다름",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/131"
+          }
+        ]
+      },
+      {
+        "recipientId": "K232",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "최지우의 다중 송신 시험 날을 지킨다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/206"
+          }
+        ]
+      },
+      {
+        "recipientId": "K078",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "최지우의 편집 흔적 검증에 원본을 넘기고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/28"
+          }
+        ]
+      },
+      {
+        "recipientId": "K112",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "최지우의 원본 검증 시각에 맞추며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/51"
+          }
+        ]
+      },
+      {
+        "recipientId": "K237",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "최지우의 공개 방송망을 내부에서 시험하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/108"
+          }
+        ]
+      },
+      {
+        "recipientId": "K239",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "최지우의 원본 탐색에 공백 칸을 넘기며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/113"
+          }
+        ]
+      },
+      {
+        "recipientId": "K240",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "최지우의 폭로 시점을 길드 시간과 맞추며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/115"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K219",
     "personId": "person-0220",

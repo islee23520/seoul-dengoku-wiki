@@ -12,6 +12,463 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-정하린",
   "detailRoute": "/people/person-0058",
+  "birthDate": "2072-11-16",
+  "birthday": "11-16",
+  "age": 54,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-03.json#/content/49",
+    "lore/characters/Cast-State-03.json#/content/51",
+    "lore/characters/Cast-State-03.json#/content/54"
+  ],
+  "familyTree": {
+    "personId": "K058",
+    "nodes": [
+      {
+        "id": "K058",
+        "personId": "K058",
+        "kind": "person",
+        "name": "정하린",
+        "birthDate": "2072-11-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K058"
+          },
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 생명안전 심사관 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정하린-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0058"
+      },
+      {
+        "id": "FH-K058-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승재",
+        "birthDate": "2042-11-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "정승재는 대합실 당직에서 안전 표본 심사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K058-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승찬",
+        "birthDate": "2012-11-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정승찬은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K058-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조승연",
+        "birthDate": "2042-11-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "조승연은 대합실 당직에서 안전 표본 심사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K058-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김승규",
+        "birthDate": "2012-11-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김승규는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K058-P-01:K058:biological",
+        "from": "FH-K058-P-01",
+        "to": "K058",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K058-P-02:FH-K058-P-01:biological",
+        "from": "FH-K058-P-02",
+        "to": "FH-K058-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K058-M-01:K058:biological",
+        "from": "FH-K058-M-01",
+        "to": "K058",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K058-M-02:FH-K058-M-01:biological",
+        "from": "FH-K058-M-02",
+        "to": "FH-K058-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K058",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K058-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/298"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K058-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/300"
+          }
+        ]
+      },
+      {
+        "recipientId": "K057",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "생명안전 거부권을 현장에서 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/30"
+          }
+        ]
+      },
+      {
+        "recipientId": "K060",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "심사관 거부권을 무력으로 받침",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/32"
+          }
+        ]
+      },
+      {
+        "recipientId": "K004",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/111"
+          }
+        ]
+      },
+      {
+        "recipientId": "K004",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "수질 표본을 영등포와 교환",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/123"
+          }
+        ]
+      },
+      {
+        "recipientId": "K115",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "outgoing",
+        "role": "군사감독 요구에 대한 원한",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/124"
+          }
+        ]
+      },
+      {
+        "recipientId": "K570",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "유바영은 종자 출고 요청서의 빈 안전심사 날인 칸을 정하린에게 알리고 해당 기록을 넘긴다. 정하린은 재현 가능한 심사 근거를 확인해, 주민대표 날인만 있는 요청이 반출 근거로 처리되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/334"
+          }
+        ]
+      },
+      {
+        "recipientId": "K666",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "최구아는 종자 기록 원본과 의심 날인을 정하린에게 넘긴다. 정하린은 안전심사 근거를 확인해 사본의 날인만으로 기준 미달 물자가 반출되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/418"
+          }
+        ]
+      },
+      {
+        "recipientId": "K068",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "정하린의 거부권을 진료 쪽에서 집행하는 동맹이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/52"
+          }
+        ]
+      },
+      {
+        "recipientId": "K077",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "정하린의 잠금이 내려가면 스위치를 뽑는다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/71"
+          }
+        ]
+      }
+    ],
+    "court": {
+      "id": "court:K058",
+      "ownerPersonId": "K058",
+      "stateId": "S03",
+      "retainers": [
+        {
+          "personId": "K068",
+          "liegePersonId": "K058",
+          "courtId": "court:K058",
+          "sourceRow": 52,
+          "role": "정하린의 거부권을 진료 쪽에서 집행하는 동맹이고",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/40"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/52"
+            }
+          ]
+        }
+      ]
+    },
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K058",
     "personId": "person-0058",
@@ -196,6 +653,18 @@
         "type": "지휘",
         "to": "정하린",
         "basis": "심사관 거부권을 무력으로 받침"
+      },
+      {
+        "from": "유바영",
+        "type": "계약",
+        "to": "정하린",
+        "basis": "유바영은 종자 출고 요청서의 빈 안전심사 날인 칸을 정하린에게 알리고 해당 기록을 넘긴다. 정하린은 재현 가능한 심사 근거를 확인해, 주민대표 날인만 있는 요청이 반출 근거로 처리되지 않게 한다."
+      },
+      {
+        "from": "최구아",
+        "type": "계약",
+        "to": "정하린",
+        "basis": "최구아는 종자 기록 원본과 의심 날인을 정하린에게 넘긴다. 정하린은 안전심사 근거를 확인해 사본의 날인만으로 기준 미달 물자가 반출되지 않게 한다."
       },
       {
         "from": "진채온",

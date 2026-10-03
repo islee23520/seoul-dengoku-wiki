@@ -12,6 +12,329 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-정산준",
   "detailRoute": "/people/person-0822",
+  "birthDate": "2085-02-12",
+  "birthday": "02-12",
+  "age": 41,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/523",
+    "lore/characters/Cast-State-15.json#/content/524",
+    "lore/characters/Cast-State-15.json#/content/525",
+    "lore/characters/Cast-State-15.json#/content/526"
+  ],
+  "familyTree": {
+    "personId": "K822",
+    "nodes": [
+      {
+        "id": "K822",
+        "personId": "K822",
+        "kind": "person",
+        "name": "정산준",
+        "birthDate": "2085-02-12",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K822"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-정산준-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0822"
+      },
+      {
+        "id": "FH-K822-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정도성",
+        "birthDate": "2055-02-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2093,
+            "summary": "정도성은 대합실 당직에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-정산준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K822-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정도욱",
+        "birthDate": "2025-02-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정도욱은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-정산준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K822-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강도규",
+        "birthDate": "2055-02-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2093,
+            "summary": "강도규는 대합실 당직에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-정산준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K822-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임도규",
+        "birthDate": "2025-02-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임도규는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-정산준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K822-P-01:K822:biological",
+        "from": "FH-K822-P-01",
+        "to": "K822",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K822-P-02:FH-K822-P-01:biological",
+        "from": "FH-K822-P-02",
+        "to": "FH-K822-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K822-M-01:K822:biological",
+        "from": "FH-K822-M-01",
+        "to": "K822",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K822-M-02:FH-K822-M-01:biological",
+        "from": "FH-K822-M-02",
+        "to": "FH-K822-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-정산준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K822",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K822-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3963"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K822-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3965"
+          }
+        ]
+      },
+      {
+        "recipientId": "K386",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "정산준은 다시 열린 교대의 인준 명부 서명을 판효담에게 넘긴다. 판효담은 보관함 봉인과 당직 기록을 확인해 중단 사이 빠진 인수를 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/555"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K822",
     "personId": "person-0822",
@@ -139,17 +462,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 정산준은 다시 열린 교대의 인준 명부 서명을 판효담에게 넘긴다. 판효담은 보관함 봉인과 당직 기록을 확인해 중단 사이 빠진 인수를 찾는다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.",
     "개입": "명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "정산준은 명동역 인준 명부 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −10 | 물질 45 | 공동 −10 | 원칙 −30 | 공개 −10 | 자격 10 | 분산 −5 | 변혁 10\n- 욕망: 갈망 −5 | 독점 −25 | 위험 30 | 과시 −30 | 지속 20 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "정산준은 명동역 인준 명부 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 정산준은 다시 열린 교대의 인준 명부 서명을 판효담에게 넘긴다. 판효담은 보관함 봉인과 당직 기록을 확인해 중단 사이 빠진 인수를 찾는다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −10 | 물질 45 | 공동 −10 | 원칙 −30 | 공개 −10 | 자격 10 | 분산 −5 | 변혁 10\n- 욕망: 갈망 −5 | 독점 −25 | 위험 30 | 과시 −30 | 지속 20 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-15"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "정산준",
+        "type": "계약",
+        "to": "판효담",
+        "basis": "정산준은 다시 열린 교대의 인준 명부 서명을 판효담에게 넘긴다. 판효담은 보관함 봉인과 당직 기록을 확인해 중단 사이 빠진 인수를 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

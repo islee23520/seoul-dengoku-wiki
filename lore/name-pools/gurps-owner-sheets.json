@@ -1,0 +1,36 @@
+{
+  "schema": "wiki-gurps-owner-sheets.v1",
+  "people": [
+    {
+      "id": "K1019",
+      "name": "박성수",
+      "source": {
+        "kind": "owner-authored",
+        "owner": "project-owner",
+        "date": "2026-10-02",
+        "directive": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person",
+        "numericStatus": "proposal",
+        "contract": "lore/characters/Cast-Profile-Contract.md",
+        "rationale": "승인된 주역·강자 구간의 하한 200 CP를 사용한다. 지적 판단과 전략·교섭에 집중하고 통신 정비와 기록 관리 생업을 보존한다. 역할 승인은 수치별 승인과 구분한다."
+      },
+      "budget": 200,
+      "attributes": { "ST": 10, "DX": 11, "IQ": 13, "HT": 12 },
+      "traits": [],
+      "skills": [
+        { "key": "strategy", "cp": 24, "narrative": "planning", "rationale": "권역 간 사본 전달·중계 복구의 우선순위와 대체 경로를 묶는 전략 역할을 평가한다." },
+        { "key": "diplomacy", "cp": 24, "narrative": "opening", "rationale": "두 세력에 확인 가능한 사실을 제시하고 정비 통행 조건을 교섭한다." },
+        { "key": "tactics", "cp": 12, "narrative": "opening", "rationale": "소유자가 지정한 참모 역할의 현장 판단 능력이다. 대체 경로와 작업 순서를 정하는 서사를 근거로 삼되 전투 경험·승전 이력으로 바꾸지 않는다." },
+        { "key": "leadership", "cp": 12, "narrative": "opening", "rationale": "전령과 정비 작업자를 모아 일의 순서를 정한다." },
+        { "key": "administration", "cp": 12, "narrative": "copies", "rationale": "문구 차이와 개정 요청을 번호로 관리하고 승인된 개정의 수령 여부를 확인한다." },
+        { "key": "electronicsRepair", "cp": 8, "narrative": "repair", "rationale": "역 사이 유선과 중계기를 정비하는 주 생업을 유지한다." },
+        { "key": "research", "cp": 8, "narrative": "copies", "rationale": "여러 권역의 사본과 전달 기록을 대조해 판단 근거를 모은다." }
+      ],
+      "narratives": {
+        "repair": { "path": "lore/characters/Cast-Unaffiliated.json", "pointer": "/content/30/text/ko", "quote": "박성수는 역과 역 사이의 유선과 중계기를 고친다." },
+        "copies": { "path": "lore/characters/Cast-Unaffiliated.json", "pointer": "/content/31/text/ko", "quote": "박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다." },
+        "planning": { "path": "lore/characters/Cast-Unaffiliated.json", "pointer": "/content/32/text/ko", "quote": "박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다." },
+        "opening": { "path": "lore/characters/Cast-Unaffiliated.json", "pointer": "/content/33/text/ko", "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다." }
+      }
+    }
+  ]
+}

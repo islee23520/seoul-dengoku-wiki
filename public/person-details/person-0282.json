@@ -12,6 +12,368 @@
   "stateName": "성하그룹",
   "sourceRoute": "/world/Cast-State-11#인물-소봉",
   "detailRoute": "/people/person-0282",
+  "birthDate": "2078-03-25",
+  "birthday": "03-25",
+  "age": 48,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-11.json#/content/127"
+  ],
+  "familyTree": {
+    "personId": "K281",
+    "nodes": [
+      {
+        "id": "K281",
+        "personId": "K281",
+        "kind": "person",
+        "name": "소봉",
+        "birthDate": "2078-03-25",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K281"
+          },
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "** 2126년 세대. 신내 환승 당직에서 자랐다. 회장실 전령, 조우찬의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-소봉-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0282"
+      },
+      {
+        "id": "FH-K281-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "소승진",
+        "birthDate": "2048-03-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "소승진은 신내 환승 당직에서 작업 조·사고 원장 기록·전령 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-소봉-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K281-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "소승현",
+        "birthDate": "2018-03-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "소승현은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-소봉-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K281-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현나",
+        "birthDate": "2048-03-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "한현나는 신내 환승 당직에서 작업 조·사고 원장 기록·전령 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-소봉-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K281-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현온",
+        "birthDate": "2018-03-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강현온은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-소봉-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K281-P-01:K281:biological",
+        "from": "FH-K281-P-01",
+        "to": "K281",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K281-P-02:FH-K281-P-01:biological",
+        "from": "FH-K281-P-02",
+        "to": "FH-K281-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K281-M-01:K281:biological",
+        "from": "FH-K281-M-01",
+        "to": "K281",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K281-M-02:FH-K281-M-01:biological",
+        "from": "FH-K281-M-02",
+        "to": "FH-K281-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-소봉-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K281",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K281-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1364"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K281-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1366"
+          }
+        ]
+      },
+      {
+        "recipientId": "K273",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "조우찬의 가동 통지를 나르고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/248"
+          }
+        ]
+      },
+      {
+        "recipientId": "K274",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "서진아의 급수 잔량 공지를 같은 벽에 나란히 붙인다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/249"
+          }
+        ]
+      },
+      {
+        "recipientId": "K284",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "소봉의 가동 통지를 칠판 맨 위에 둔다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/255"
+          }
+        ]
+      },
+      {
+        "recipientId": "K286",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/259"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K281",
     "personId": "person-0282",

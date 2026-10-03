@@ -12,6 +12,428 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-류사연",
   "detailRoute": "/people/person-0720",
+  "birthDate": "2095-05-18",
+  "birthday": "05-18",
+  "age": 31,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/468",
+    "lore/characters/Cast-State-09.json#/content/470",
+    "lore/characters/Cast-State-09.json#/content/471"
+  ],
+  "familyTree": {
+    "personId": "K720",
+    "nodes": [
+      {
+        "id": "K720",
+        "personId": "K720",
+        "kind": "person",
+        "name": "류사연",
+        "birthDate": "2095-05-18",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K720"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 환전 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류사연-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0720"
+      },
+      {
+        "id": "FH-K720-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "류승도",
+        "birthDate": "2065-05-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "류승도는 신내 환승 당직에서 환전 전령 인수·장부 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류사연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K720-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "류현석",
+        "birthDate": "2035-05-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "류현석은 신내 환승 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류사연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K720-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "류현준",
+        "birthDate": "2005-05-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "류현준은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류사연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K720-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박도호",
+        "birthDate": "2065-05-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "박도호는 신내 환승 당직에서 환전 전령 인수·장부 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류사연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K720-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도석",
+        "birthDate": "2035-05-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "이도석은 신내 환승 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류사연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K720-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "최도진",
+        "birthDate": "2005-05-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최도진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류사연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K720-P-01:K720:biological",
+        "from": "FH-K720-P-01",
+        "to": "K720",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K720-P-02:FH-K720-P-01:biological",
+        "from": "FH-K720-P-02",
+        "to": "FH-K720-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K720-P-03:FH-K720-P-02:biological",
+        "from": "FH-K720-P-03",
+        "to": "FH-K720-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K720-M-01:K720:biological",
+        "from": "FH-K720-M-01",
+        "to": "K720",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K720-M-02:FH-K720-M-01:biological",
+        "from": "FH-K720-M-02",
+        "to": "FH-K720-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K720-M-03:FH-K720-M-02:biological",
+        "from": "FH-K720-M-03",
+        "to": "FH-K720-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류사연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K720",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K720-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3453"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K720-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3456"
+          }
+        ]
+      },
+      {
+        "recipientId": "K234",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "류사연은 환전 장부와 호송 인명 기록을 모국에게 전달한다. 모국은 통행 명부와 환전 로그를 확인해 실제 거래 누락과 전달 중단을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/465"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K720",
     "personId": "person-0720",
@@ -145,17 +567,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 환전 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 환전 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 류사연은 환전 장부와 호송 인명 기록을 모국에게 전달한다. 모국은 통행 명부와 환전 로그를 확인해 실제 거래 누락과 전달 중단을 구분한다.",
     "야망": "환전 전령 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.",
     "공포": "환전 전령 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 환전 전령 인수·장부 전달\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 환전 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환전 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 환전 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 환전 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 환전 전령 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 환전 전령 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 10 | 무력 −25 | 물질 −15 | 공동 −5 | 원칙 10 | 공개 60 | 자격 15 | 분산 20 | 변혁 −5\n- 욕망: 갈망 25 | 독점 30 | 위험 5 | 과시 5 | 지속 35 | 지향 이성 | 결합 없음",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 환전 전령 인수·장부 전달\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 환전 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환전 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 환전 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 환전 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 류사연은 환전 장부와 호송 인명 기록을 모국에게 전달한다. 모국은 통행 명부와 환전 로그를 확인해 실제 거래 누락과 전달 중단을 구분한다.\n\n**야망.** 환전 전령 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 환전 전령 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 10 | 무력 −25 | 물질 −15 | 공동 −5 | 원칙 10 | 공개 60 | 자격 15 | 분산 20 | 변혁 −5\n- 욕망: 갈망 25 | 독점 30 | 위험 5 | 과시 5 | 지속 35 | 지향 이성 | 결합 없음",
   "sources": [
     "Cast-State-09"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "류사연",
+        "type": "계약",
+        "to": "모국",
+        "basis": "류사연은 환전 장부와 호송 인명 기록을 모국에게 전달한다. 모국은 통행 명부와 환전 로그를 확인해 실제 거래 누락과 전달 중단을 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

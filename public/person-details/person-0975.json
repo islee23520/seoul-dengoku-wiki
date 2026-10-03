@@ -12,6 +12,428 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-강바준",
   "detailRoute": "/people/person-0975",
+  "birthDate": "2091-01-27",
+  "birthday": "01-27",
+  "age": 35,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/644",
+    "lore/characters/Cast-State-08.json#/content/646",
+    "lore/characters/Cast-State-08.json#/content/647"
+  ],
+  "familyTree": {
+    "personId": "K975",
+    "nodes": [
+      {
+        "id": "K975",
+        "personId": "K975",
+        "kind": "person",
+        "name": "강바준",
+        "birthDate": "2091-01-27",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K975"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "소속: 중앙기술보존원",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-강바준-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0975"
+      },
+      {
+        "id": "FH-K975-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강민재",
+        "birthDate": "2061-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "강민재는 암사 경비 초소에서 능선 초계·매복 흔적 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-강바준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K975-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강민찬",
+        "birthDate": "2031-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "강민찬은 암사 경비 초소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-강바준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K975-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "강민혁",
+        "birthDate": "2001-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강민혁은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-강바준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K975-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정민솔",
+        "birthDate": "2061-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "정민솔은 암사 경비 초소에서 능선 초계·매복 흔적 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-강바준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K975-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤민훈",
+        "birthDate": "2031-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "윤민훈은 암사 경비 초소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-강바준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K975-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한민재",
+        "birthDate": "2001-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한민재는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-강바준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K975-P-01:K975:biological",
+        "from": "FH-K975-P-01",
+        "to": "K975",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K975-P-02:FH-K975-P-01:biological",
+        "from": "FH-K975-P-02",
+        "to": "FH-K975-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K975-P-03:FH-K975-P-02:biological",
+        "from": "FH-K975-P-03",
+        "to": "FH-K975-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K975-M-01:K975:biological",
+        "from": "FH-K975-M-01",
+        "to": "K975",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K975-M-02:FH-K975-M-01:biological",
+        "from": "FH-K975-M-02",
+        "to": "FH-K975-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K975-M-03:FH-K975-M-02:biological",
+        "from": "FH-K975-M-03",
+        "to": "FH-K975-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-강바준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K975",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K975-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4703"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K975-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4706"
+          }
+        ]
+      },
+      {
+        "recipientId": "K203",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "강바준은 시장 호송로의 매복 흔적을 나태경에게 알린다. 나태경은 출발 전 화물과 경로를 확인해 현장 관찰이 다음 검사에 이어지게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/689"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K975",
     "personId": "person-0975",
@@ -145,17 +567,24 @@
     "무공": "수벽술.",
     "관직": "품계 교도. 직함은 시장 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 강바준은 시장 호송로의 매복 흔적을 나태경에게 알린다. 나태경은 출발 전 화물과 경로를 확인해 현장 관찰이 다음 검사에 이어지게 한다.",
     "야망": "시장 순찰대 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.",
     "공포": "시장 순찰대 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 능선 초계·매복 흔적 확인\n- 직함: 시장 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 시장 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교도. 직함은 시장 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 시장 순찰대 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.\n\n**공포.** 시장 순찰대 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 35 | 무력 5 | 물질 60 | 공동 −25 | 원칙 −20 | 공개 25 | 자격 −5 | 분산 30 | 변혁 10\n- 욕망: 갈망 0 | 독점 −30 | 위험 30 | 과시 25 | 지속 −5 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 능선 초계·매복 흔적 확인\n- 직함: 시장 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 시장 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교도. 직함은 시장 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 강바준은 시장 호송로의 매복 흔적을 나태경에게 알린다. 나태경은 출발 전 화물과 경로를 확인해 현장 관찰이 다음 검사에 이어지게 한다.\n\n**야망.** 시장 순찰대 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.\n\n**공포.** 시장 순찰대 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 35 | 무력 5 | 물질 60 | 공동 −25 | 원칙 −20 | 공개 25 | 자격 −5 | 분산 30 | 변혁 10\n- 욕망: 갈망 0 | 독점 −30 | 위험 30 | 과시 25 | 지속 −5 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "강바준",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "강바준은 시장 호송로의 매복 흔적을 나태경에게 알린다. 나태경은 출발 전 화물과 경로를 확인해 현장 관찰이 다음 검사에 이어지게 한다."
+      }
+    ],
     "incoming": []
   }
 }

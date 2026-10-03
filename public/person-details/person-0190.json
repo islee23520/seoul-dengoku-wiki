@@ -1,6 +1,6 @@
 {
   "id": "person-0190",
-  "name": "홍재민",
+  "name": "아나 포페스쿠",
   "title": "개막 급수열차 창 점유 증인",
   "position": "급수열차 창 점유 증인",
   "rank": "주사",
@@ -10,8 +10,437 @@
   "stage": "S3",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-홍재민",
+  "sourceRoute": "/world/Cast-State-07#인물-아나 포페스쿠",
   "detailRoute": "/people/person-0190",
+  "birthDate": "2084-03-07",
+  "birthday": "03-07",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/215"
+  ],
+  "familyTree": {
+    "personId": "K189",
+    "nodes": [
+      {
+        "id": "K189",
+        "personId": "K189",
+        "kind": "person",
+        "name": "아나 포페스쿠",
+        "birthDate": "2084-03-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K189"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아나-포페스쿠-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Ana Popescu",
+        "detailRoute": "/people/person-0190"
+      },
+      {
+        "id": "FH-K189-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이온 포페스쿠",
+        "birthDate": "2054-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "이온 포페스쿠는 2054년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2072년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아나-포페스쿠-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Ion Popescu was born in 2054 and grew up reading family and work records. From 2072, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Ion Popescu",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K189-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "안드레이 포페스쿠",
+        "birthDate": "2024-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "안드레이 포페스쿠는 2024년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2042년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아나-포페스쿠-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Andrei Popescu was born in 2024 and grew up reading family and work records. From 2042, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Andrei Popescu",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K189-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "마리아 두미트레스쿠",
+        "birthDate": "2054-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "마리아 두미트레스쿠는 2054년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2072년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아나-포페스쿠-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Maria Dumitrescu was born in 2054 and grew up reading family and work records. From 2072, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Maria Dumitrescu",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K189-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "엘레나 두미트레스쿠",
+        "birthDate": "2024-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "엘레나 두미트레스쿠는 2024년에 태어났다. 동대문·용산의 가족 기록과 작업 사본을 읽으며 자랐고, 2042년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-아나-포페스쿠-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Elena Dumitrescu was born in 2024 and grew up reading family and work records. From 2042, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Elena Dumitrescu",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K189-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "니콜라에 포페스쿠",
+        "nameEn": "Nicolae Popescu",
+        "birthDate": "1994-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K189-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "니콜라에 포페스쿠는 2026년 대정전 당시 동대문·용산 생활권에서 동대문 민간 봉제·화물 중개 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Nicolae Popescu was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K189-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K189-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "카멜리아 두미트레스쿠",
+        "nameEn": "Camelia Dumitrescu",
+        "birthDate": "1994-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K189-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "카멜리아 두미트레스쿠는 2026년 대정전 당시 동대문·용산 생활권에서 동대문 민간 봉제·화물 중개 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Camelia Dumitrescu was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K189-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K189-P-01:K189:biological",
+        "from": "FH-K189-P-01",
+        "to": "K189",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K189-P-02:FH-K189-P-01:biological",
+        "from": "FH-K189-P-02",
+        "to": "FH-K189-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K189-M-01:K189:biological",
+        "from": "FH-K189-M-01",
+        "to": "K189",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K189-M-02:FH-K189-M-01:biological",
+        "from": "FH-K189-M-02",
+        "to": "FH-K189-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-아나-포페스쿠-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K189-P-03:FH-K189-P-02:biological",
+        "from": "FH-K189-P-03",
+        "to": "FH-K189-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K189-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K189-M-03:FH-K189-M-02:biological",
+        "from": "FH-K189-M-03",
+        "to": "FH-K189-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K189-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K189",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K189-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/914"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K189-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/916"
+          }
+        ]
+      },
+      {
+        "recipientId": "K171",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "에바 노바코바의 배차판에 증언을 붙이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/86"
+          }
+        ]
+      },
+      {
+        "recipientId": "K169",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "박태겸의 중계 유지를 창 점유로 시험하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/87"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K189",
     "personId": "person-0190",
@@ -98,9 +527,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "d64d-b0a8-c591",
-    "name": "남양 홍씨",
-    "crest": "clan-crests/d64d-b0a8-c591.svg"
+    "id": "DIV-K189",
+    "name": "용산·이태원 포페스쿠씨",
+    "crest": "clan-crests/DIV-K189.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -135,29 +564,29 @@
     "욕망": "갈망 25 | 독점 −25 | 위험 −35 | 과시 15 | 지속 25 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 자리는 탁수 밤의 밸브 서명으로 열렸다. 아나 포페스쿠는 2084년에 태어났다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 영등포 정수 당직에서 자랐다. 2126년에는 급수열차 창 점유 증인 업무를 맡는다. 니콜라에 포페스쿠는 2026년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아나 포페스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "한류공.",
     "관직": "품계 주사. 직함은 급수열차 창 점유 증인. 점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다.",
-    "일화": "창 점유를 하루 더 달라는 쪽지를 단 채 편도로만 온 급수열차가 권시온의 배차판에 오른다. 홍재민은 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다.",
-    "관계": "권시온의 배차판에 증언을 붙이고, 박태겸의 중계 유지를 창 점유로 시험하며, 임초원을 태운 열차가 같은 창에 묶인 시각을 기억한다.",
+    "일화": "창 점유를 하루 더 달라는 쪽지를 단 채 편도로만 온 급수열차가 에바 노바코바의 배차판에 오른다. 아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다.",
+    "관계": "에바 노바코바의 배차판에 증언을 붙이고, 박태겸의 중계 유지를 창 점유로 시험하며, 임초원을 태운 열차가 같은 창에 묶인 시각을 기억한다.",
     "야망": "급수열차의 창 점유를 공개 증언으로 묶어 수문헌장 밖의 중계가 독점 조항으로 빨려 들어가지 않게 한다.",
     "공포": "자신의 증언이 서부 철도계약의 독점 밀약 도장이 되는 것.",
     "개입": "창 점유를 중재하거나, 독점 배차 밀약을 증인 진술과 함께 기록청에 넘길 수 있다."
   },
-  "biography": "창 점유를 하루 더 달라는 쪽지를 사고처럼 받아 적고, 얼굴을 가린 급수차를 중계의 적으로 본다. 말은 짧고 시각표는 길다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 급수열차 점유 청구·정차 시간 대조\n- 직함: 급수열차 창 점유 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 급수열차 창 점유 증인. 점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다.\n\n**일화.** 창 점유를 하루 더 달라는 쪽지를 단 채 편도로만 온 급수열차가 권시온의 배차판에 오른다. 홍재민은 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다.\n\n**관계.** 권시온의 배차판에 증언을 붙이고, 박태겸의 중계 유지를 창 점유로 시험하며, 임초원을 태운 열차가 같은 창에 묶인 시각을 기억한다.\n\n**야망.** 급수열차의 창 점유를 공개 증언으로 묶어 수문헌장 밖의 중계가 독점 조항으로 빨려 들어가지 않게 한다.\n\n**공포.** 자신의 증언이 서부 철도계약의 독점 밀약 도장이 되는 것.\n\n**개입.** 창 점유를 중재하거나, 독점 배차 밀약을 증인 진술과 함께 기록청에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 15 | 무력 −20 | 물질 25 | 공동 −15 | 원칙 −5 | 공개 −20 | 자격 30 | 분산 −10 | 변혁 5\n- 욕망: 갈망 25 | 독점 −25 | 위험 −35 | 과시 15 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "창 점유를 하루 더 달라는 쪽지를 사고처럼 받아 적고, 얼굴을 가린 급수차를 중계의 적으로 본다. 말은 짧고 시각표는 길다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 급수열차 점유 청구·정차 시간 대조\n- 직함: 급수열차 창 점유 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수열차 창 점유 증인 자리는 탁수 밤의 밸브 서명으로 열렸다. 아나 포페스쿠는 2084년에 태어났다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 영등포 정수 당직에서 자랐다. 2126년에는 급수열차 창 점유 증인 업무를 맡는다. 니콜라에 포페스쿠는 2026년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아나 포페스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 급수열차 창 점유 증인. 점유 연장 청구와 실제 정차 시간을 같은 벽에 쓰고, 편도만 온 열차는 증언에서 하루를 묶는다.\n\n**일화.** 창 점유를 하루 더 달라는 쪽지를 단 채 편도로만 온 급수열차가 에바 노바코바의 배차판에 오른다. 아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다.\n\n**관계.** 에바 노바코바의 배차판에 증언을 붙이고, 박태겸의 중계 유지를 창 점유로 시험하며, 임초원을 태운 열차가 같은 창에 묶인 시각을 기억한다.\n\n**야망.** 급수열차의 창 점유를 공개 증언으로 묶어 수문헌장 밖의 중계가 독점 조항으로 빨려 들어가지 않게 한다.\n\n**공포.** 자신의 증언이 서부 철도계약의 독점 밀약 도장이 되는 것.\n\n**개입.** 창 점유를 중재하거나, 독점 배차 밀약을 증인 진술과 함께 기록청에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 15 | 무력 −20 | 물질 25 | 공동 −15 | 원칙 −5 | 공개 −20 | 자격 30 | 분산 −10 | 변혁 5\n- 욕망: 갈망 25 | 독점 −25 | 위험 −35 | 과시 15 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "홍재민",
+        "from": "아나 포페스쿠",
         "type": "맹세",
-        "to": "권시온",
-        "basis": "권시온의 배차판에 증언을 붙이고"
+        "to": "에바 노바코바",
+        "basis": "에바 노바코바의 배차판에 증언을 붙이고"
       },
       {
-        "from": "홍재민",
+        "from": "아나 포페스쿠",
         "type": "맹세",
         "to": "박태겸",
         "basis": "박태겸의 중계 유지를 창 점유로 시험하며"

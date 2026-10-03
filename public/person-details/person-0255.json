@@ -12,6 +12,368 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-용국",
   "detailRoute": "/people/person-0255",
+  "birthDate": "2064-04-27",
+  "birthday": "04-27",
+  "age": 62,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/138"
+  ],
+  "familyTree": {
+    "personId": "K254",
+    "nodes": [
+      {
+        "id": "K254",
+        "personId": "K254",
+        "kind": "person",
+        "name": "용국",
+        "birthDate": "2064-04-27",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K254"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 회랑 순찰 주지 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-용국-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0255"
+      },
+      {
+        "id": "FH-K254-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "용승원",
+        "birthDate": "2034-04-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "용승원은 암사 경비 초소에서 회랑 순찰 보고·신도 표 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-용국-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K254-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "용승진",
+        "birthDate": "2004-04-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "용승진은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-용국-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K254-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준석",
+        "birthDate": "2034-04-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "최준석은 암사 경비 초소에서 회랑 순찰 보고·신도 표 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-용국-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K254-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현섭",
+        "birthDate": "2004-04-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정현섭은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-용국-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K254-P-01:K254:biological",
+        "from": "FH-K254-P-01",
+        "to": "K254",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K254-P-02:FH-K254-P-01:biological",
+        "from": "FH-K254-P-02",
+        "to": "FH-K254-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K254-M-01:K254:biological",
+        "from": "FH-K254-M-01",
+        "to": "K254",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K254-M-02:FH-K254-M-01:biological",
+        "from": "FH-K254-M-02",
+        "to": "FH-K254-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-용국-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K254",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K254-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1230"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K254-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1232"
+          }
+        ]
+      },
+      {
+        "recipientId": "K248",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "강태산의 지휘로 회랑을 돌고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/222"
+          }
+        ]
+      },
+      {
+        "recipientId": "K261",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "봉두의 고지 신호와 횃불을 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/223"
+          }
+        ]
+      },
+      {
+        "recipientId": "K261",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "용국의 회랑 순찰과 횃불을 맞추고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/237"
+          }
+        ]
+      },
+      {
+        "recipientId": "K266",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "용국의 회랑 순찰과 횃불을 맞추며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/129"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K254",
     "personId": "person-0255",

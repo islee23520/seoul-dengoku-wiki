@@ -12,6 +12,341 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-순재민",
   "detailRoute": "/people/person-0216",
+  "birthDate": "2069-06-03",
+  "birthday": "06-03",
+  "age": 57,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/226",
+    "lore/characters/Cast-State-08.json#/content/228"
+  ],
+  "familyTree": {
+    "personId": "K215",
+    "nodes": [
+      {
+        "id": "K215",
+        "personId": "K215",
+        "kind": "person",
+        "name": "순재민",
+        "birthDate": "2069-06-03",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K215"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 호송칸 봉인 상자 증인 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-순재민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0216"
+      },
+      {
+        "id": "FH-K215-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "순승호",
+        "birthDate": "2039-06-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "순승호는 신내 환승 당직에서 호송칸 봉인·중량 재검색 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-순재민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K215-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "순승민",
+        "birthDate": "2009-06-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "순승민은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-순재민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K215-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김현찬",
+        "birthDate": "2039-06-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "김현찬은 신내 환승 당직에서 호송칸 봉인·중량 재검색 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-순재민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K215-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박현재",
+        "birthDate": "2009-06-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박현재는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-순재민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K215-P-01:K215:biological",
+        "from": "FH-K215-P-01",
+        "to": "K215",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K215-P-02:FH-K215-P-01:biological",
+        "from": "FH-K215-P-02",
+        "to": "FH-K215-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K215-M-01:K215:biological",
+        "from": "FH-K215-M-01",
+        "to": "K215",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K215-M-02:FH-K215-M-01:biological",
+        "from": "FH-K215-M-02",
+        "to": "FH-K215-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-순재민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K215",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K215-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1040"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K215-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1042"
+          }
+        ]
+      },
+      {
+        "recipientId": "K197",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "신태산의 호송 반에서 상자를 증언하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/100"
+          }
+        ]
+      },
+      {
+        "recipientId": "K203",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "나태경의 출항 저지를 현장에서 받치며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/101"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K215",
     "personId": "person-0216",

@@ -12,6 +12,355 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-영늘빛",
   "detailRoute": "/people/person-0335",
+  "birthDate": "2078-09-23",
+  "birthday": "09-23",
+  "age": 48,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/171",
+    "lore/characters/Cast-State-13.json#/content/174"
+  ],
+  "familyTree": {
+    "personId": "K334",
+    "nodes": [
+      {
+        "id": "K334",
+        "personId": "K334",
+        "kind": "person",
+        "name": "영늘빛",
+        "birthDate": "2078-09-23",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K334"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 병상 기록 수련의 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-영늘빛-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0335"
+      },
+      {
+        "id": "FH-K334-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "영승석",
+        "birthDate": "2048-09-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "영승석은 서울역 등기소에서 병상 대기 명부·계약 난외 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-영늘빛-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K334-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "영승준",
+        "birthDate": "2018-09-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "영승준은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-영늘빛-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K334-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조준원",
+        "birthDate": "2048-09-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "조준원은 서울역 등기소에서 병상 대기 명부·계약 난외 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-영늘빛-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K334-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김준윤",
+        "birthDate": "2018-09-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김준윤은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-영늘빛-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K334-P-01:K334:biological",
+        "from": "FH-K334-P-01",
+        "to": "K334",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K334-P-02:FH-K334-P-01:biological",
+        "from": "FH-K334-P-02",
+        "to": "FH-K334-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K334-M-01:K334:biological",
+        "from": "FH-K334-M-01",
+        "to": "K334",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K334-M-02:FH-K334-M-01:biological",
+        "from": "FH-K334-M-02",
+        "to": "FH-K334-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-영늘빛-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K334",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K334-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1616"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K334-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1618"
+          }
+        ]
+      },
+      {
+        "recipientId": "K332",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "영늘빛의 의정 원장과 순번을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/297"
+          }
+        ]
+      },
+      {
+        "recipientId": "K327",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "outgoing",
+        "role": "전솔의 거부권을 원장으로 옮기는 사제이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/300"
+          }
+        ]
+      },
+      {
+        "recipientId": "K332",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "outgoing",
+        "role": "선나휘의 전갈 사본을 같은 줄에 남긴다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/301"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K334",
     "personId": "person-0335",

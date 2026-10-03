@@ -12,6 +12,428 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-성별현",
   "detailRoute": "/people/person-0925",
+  "birthDate": "2099-04-18",
+  "birthday": "04-18",
+  "age": 27,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/600",
+    "lore/characters/Cast-State-06.json#/content/602",
+    "lore/characters/Cast-State-06.json#/content/603"
+  ],
+  "familyTree": {
+    "personId": "K925",
+    "nodes": [
+      {
+        "id": "K925",
+        "personId": "K925",
+        "kind": "person",
+        "name": "성별현",
+        "birthDate": "2099-04-18",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K925"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 열차 배차표·출발 서명 확인",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-성별현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0925"
+      },
+      {
+        "id": "FH-K925-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "성승섭",
+        "birthDate": "2069-04-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "성승섭은 신내 환승 당직에서 열차 배차표·출발 서명 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-성별현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K925-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "성승성",
+        "birthDate": "2039-04-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "성승성은 신내 환승 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-성별현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K925-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "성승욱",
+        "birthDate": "2009-04-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "성승욱은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-성별현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K925-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이민훈",
+        "birthDate": "2069-04-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2107,
+            "summary": "이민훈은 신내 환승 당직에서 열차 배차표·출발 서명 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-성별현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K925-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최민란",
+        "birthDate": "2039-04-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "최민란은 신내 환승 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-성별현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K925-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "정민규",
+        "birthDate": "2009-04-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정민규는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-성별현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K925-P-01:K925:biological",
+        "from": "FH-K925-P-01",
+        "to": "K925",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K925-P-02:FH-K925-P-01:biological",
+        "from": "FH-K925-P-02",
+        "to": "FH-K925-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K925-P-03:FH-K925-P-02:biological",
+        "from": "FH-K925-P-03",
+        "to": "FH-K925-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K925-M-01:K925:biological",
+        "from": "FH-K925-M-01",
+        "to": "K925",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K925-M-02:FH-K925-M-01:biological",
+        "from": "FH-K925-M-02",
+        "to": "FH-K925-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K925-M-03:FH-K925-M-02:biological",
+        "from": "FH-K925-M-03",
+        "to": "FH-K925-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-성별현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K925",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K925-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4459"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K925-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4462"
+          }
+        ]
+      },
+      {
+        "recipientId": "K166",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "성별현은 출발 서명과 배차표의 누락을 섭도윤에게 전한다. 섭도윤은 기록청·회의장에 같은 내용을 보내 서명 없는 이동이 구두 전갈로 승인된 것처럼 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/646"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K925",
     "personId": "person-0925",
@@ -133,17 +555,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 성별현은 출발 서명과 배차표의 누락을 섭도윤에게 전한다. 섭도윤은 기록청·회의장에 같은 내용을 보내 서명 없는 이동이 구두 전갈로 승인된 것처럼 남지 않게 한다.",
     "야망": "사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.",
     "공포": "사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 열차 배차표·출발 서명 확인\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 사본 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 10 | 무력 −40 | 물질 −25 | 공동 15 | 원칙 55 | 공개 −5 | 자격 20 | 분산 −35 | 변혁 −35\n- 욕망: 갈망 20 | 독점 −30 | 위험 5 | 과시 5 | 지속 15 | 지향 양성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 열차 배차표·출발 서명 확인\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 사본 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 성별현은 출발 서명과 배차표의 누락을 섭도윤에게 전한다. 섭도윤은 기록청·회의장에 같은 내용을 보내 서명 없는 이동이 구두 전갈로 승인된 것처럼 남지 않게 한다.\n\n**야망.** 사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 10 | 무력 −40 | 물질 −25 | 공동 15 | 원칙 55 | 공개 −5 | 자격 20 | 분산 −35 | 변혁 −35\n- 욕망: 갈망 20 | 독점 −30 | 위험 5 | 과시 5 | 지속 15 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "성별현",
+        "type": "계약",
+        "to": "섭도윤",
+        "basis": "성별현은 출발 서명과 배차표의 누락을 섭도윤에게 전한다. 섭도윤은 기록청·회의장에 같은 내용을 보내 서명 없는 이동이 구두 전갈로 승인된 것처럼 남지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

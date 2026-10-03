@@ -12,6 +12,662 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-장세화",
   "detailRoute": "/people/person-0297",
+  "birthDate": "2098-08-11",
+  "birthday": "08-11",
+  "age": 28,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/107",
+    "lore/chronology/Century-Annals.json#/content/451",
+    "lore/chronology/Century-Annals.json#/content/605"
+  ],
+  "familyTree": {
+    "personId": "K296",
+    "nodes": [
+      {
+        "id": "K296",
+        "personId": "K296",
+        "kind": "person",
+        "name": "장세화",
+        "birthDate": "2098-08-11",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K296"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내차량기지 환승 당직의 손. 장세화가 사장이 된 것은 장씨 가문의 노선 면허와 용산선로문의 유치선 당직을 끊기지 않게 지킨 뒤였다. 말단 배차와 의료열차가 가훈의 중립 호송이 됐고, 신내역이 누구든 환승시키는 시장으로 남는다. 용산호송가의 배차표는 박태겸의 것이다. 겸전은 호송원만 한다는 금기와 싸운다. 호송 때만 수벽술을 빌린다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장세화-p1"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Jang Sehwa",
+        "detailRoute": "/people/person-0297"
+      },
+      {
+        "id": "FH-K296-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "장현민",
+        "birthDate": "2068-08-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "장현민은 2068년에 태어났다. 신내·용산선로문의 가족 기록과 작업 사본을 읽으며 자랐고, 2086년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장세화-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Jang Hyeonmin was born in 2068 and grew up reading family and work records. From 2086, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Jang Hyeonmin",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K296-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "장현준",
+        "birthDate": "2038-08-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "장현준은 2038년에 태어났다. 신내·용산선로문의 가족 기록과 작업 사본을 읽으며 자랐고, 2056년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장세화-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Jang Hyeonjun was born in 2038 and grew up reading family and work records. From 2056, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Jang Hyeonjun",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K296-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "장현석",
+        "birthDate": "2008-08-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "장현석은 2026년 대정전 당시 신내·용산선로문 생활권에서 신내 철도 민간 당직과 용산 화물창 수선 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장세화-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Jang Hyeonseok was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Jang Hyeonseok",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K296-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "바르바라 노비츠카",
+        "birthDate": "2068-08-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "바르바라 노비츠카는 2068년에 태어났다. 신내·용산선로문의 가족 기록과 작업 사본을 읽으며 자랐고, 2086년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장세화-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Barbara Nowicka was born in 2068 and grew up reading family and work records. From 2086, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Barbara Nowicka",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K296-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "요안나 노비츠카",
+        "birthDate": "2038-08-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "요안나 노비츠카는 2038년에 태어났다. 신내·용산선로문의 가족 기록과 작업 사본을 읽으며 자랐고, 2056년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장세화-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Joanna Nowicka was born in 2038 and grew up reading family and work records. From 2056, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Joanna Nowicka",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K296-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "크리스티나 노비츠카",
+        "birthDate": "2008-08-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "크리스티나 노비츠카는 2026년 대정전 당시 신내·용산선로문 생활권에서 신내 철도 민간 당직과 용산 화물창 수선 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장세화-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Krystyna Nowicka was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Krystyna Nowicka",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K296-P-01:K296:biological",
+        "from": "FH-K296-P-01",
+        "to": "K296",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K296-P-02:FH-K296-P-01:biological",
+        "from": "FH-K296-P-02",
+        "to": "FH-K296-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K296-P-03:FH-K296-P-02:biological",
+        "from": "FH-K296-P-03",
+        "to": "FH-K296-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K296-M-01:K296:biological",
+        "from": "FH-K296-M-01",
+        "to": "K296",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K296-M-02:FH-K296-M-01:biological",
+        "from": "FH-K296-M-02",
+        "to": "FH-K296-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K296-M-03:FH-K296-M-02:biological",
+        "from": "FH-K296-M-03",
+        "to": "FH-K296-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장세화-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K321",
+      "recipientName": "서온결",
+      "basis": "장세화의 배차 의무와 맞물리되, 들것 열쇠는 당직함에서만 꺼낸다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-12.json",
+        "anchor": "인물-서온결-p5"
+      }
+    }
+  ],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K296",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K296-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1436"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K296-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1439"
+          }
+        ]
+      },
+      {
+        "recipientId": "K297",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "환승 배차 실무를 사장 지휘로 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/84"
+          }
+        ]
+      },
+      {
+        "recipientId": "K298",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "의료동맹을 현장에서 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/85"
+          }
+        ]
+      },
+      {
+        "recipientId": "K299",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "중립을 심사대로 지키려 함",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/86"
+          }
+        ]
+      },
+      {
+        "recipientId": "K300",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "경량 호송 명령을 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/87"
+          }
+        ]
+      },
+      {
+        "recipientId": "K326",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "의료호송을 신내운수와 나눔",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/92"
+          }
+        ]
+      },
+      {
+        "recipientId": "K378",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "공동호송안을 입찰 조건에 심음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/103"
+          }
+        ]
+      },
+      {
+        "recipientId": "K119",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "incoming",
+        "role": "의료열차 중립을 마지막 예외로 남긴 빚",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/139"
+          }
+        ]
+      },
+      {
+        "recipientId": "K123",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "incoming",
+        "role": "의료호송을 선로에서 피하려는 빚",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/142"
+          }
+        ]
+      },
+      {
+        "recipientId": "K197",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "공동호송 초안을 현장 기준으로 검토",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/163"
+          }
+        ]
+      },
+      {
+        "recipientId": "K275",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "북부 호송 시각을 맞춤",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/190"
+          }
+        ]
+      },
+      {
+        "recipientId": "K134",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "incoming",
+        "role": "장세화의 중립 칸을 피하지 않으려 빚을 지고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/116"
+          }
+        ]
+      },
+      {
+        "recipientId": "K185",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "incoming",
+        "role": "장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/164"
+          }
+        ]
+      },
+      {
+        "recipientId": "K210",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "incoming",
+        "role": "장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/188"
+          }
+        ]
+      },
+      {
+        "recipientId": "K234",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장세화의 의료속보 협약을 중계 우선으로 남긴다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/210"
+          }
+        ]
+      },
+      {
+        "recipientId": "K188",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "장세화의 의료호송 중립을 증언으로 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/84"
+          }
+        ]
+      },
+      {
+        "recipientId": "K317",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장세화의 공동호송 초안을 정서하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/156"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K296",
     "personId": "person-0297",
@@ -157,14 +813,14 @@
     "직함": "신내운수 사장"
   },
   "sections": {
-    "생애": "2126년 세대. 신내차량기지 환승 당직의 손. 장세화가 사장이 된 것은 장씨 가문의 노선 면허와 용산선로문의 유치선 당직을 끊기지 않게 지킨 뒤였다. 말단 배차와 의료열차가 가훈의 중립 호송이 됐고, 신내역이 누구든 환승시키는 시장으로 남는다. 용산호송가의 배차표는 박태겸의 것이다. 겸전은 호송원만 한다는 금기와 싸운다. 호송 때만 수벽술을 빌린다.",
+    "생애": "2126년 세대. 신내차량기지 환승 당직의 손. 장세화가 사장이 된 것은 장씨 가문의 노선 면허와 용산선로문의 유치선 당직을 끊기지 않게 지킨 뒤였다. 말단 배차와 의료열차가 가훈의 중립 호송이 됐고, 신내역이 누구든 환승시키는 시장으로 남는다. 용산호송가의 배차표는 박태겸의 것이다. 겸전은 호송원만 한다는 금기와 싸운다. 호송 때만 수벽술을 빌린다. 장세화는 2098년에 태어났다. 한국계 아버지와 폴란드계 어머니를 둔 가계는 신내·용산선로문 생활권에 뿌리를 두고 있다. 2126년에는 신내운수 사장 업무를 맡는다. 장현석은 2026년 신내·용산선로문에서 신내 철도 민간 당직과 용산 화물창 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 장세화의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.",
     "관직": "품계 사장. 직함은 신내운수 사장. 생업 별명은 배차의무관.",
     "무공": "단철공. 호송 때만 수벽술을 빌린다.",
     "일화": "정유라의 회의 호송이 열리기 전, 장세화는 일반 열차와 의료열차의 운행 시간을 계절별로 나눠 배차표에 적었다.",
     "가문": "용산선로문(HP02). 관리인. 용산호송가(HC11) 관리인은 박태겸이다.",
     "관계": "정유라와 회의 호송. 박태겸과 배차.\n\n- 생업: 배차의무관\n- 소속: 신내운수\n- 품계: 사장\n- 직함: 신내운수 사장\n\n신내 기지와 망우 환승을 배차·이송·심사로 움직이는 실세다."
   },
-  "biography": "**생애.** 2126년 세대. 신내차량기지 환승 당직의 손. 장세화가 사장이 된 것은 장씨 가문의 노선 면허와 용산선로문의 유치선 당직을 끊기지 않게 지킨 뒤였다. 말단 배차와 의료열차가 가훈의 중립 호송이 됐고, 신내역이 누구든 환승시키는 시장으로 남는다. 용산호송가의 배차표는 박태겸의 것이다. 겸전은 호송원만 한다는 금기와 싸운다. 호송 때만 수벽술을 빌린다.\n**관직.** 품계 사장. 직함은 신내운수 사장. 생업 별명은 배차의무관.\n**무공.** 단철공. 호송 때만 수벽술을 빌린다.\n**일화.** 정유라의 회의 호송이 열리기 전, 장세화는 일반 열차와 의료열차의 운행 시간을 계절별로 나눠 배차표에 적었다.\n**가문.** 용산선로문(HP02). 관리인. 용산호송가(HC11) 관리인은 박태겸이다.\n**관계.** 정유라와 회의 호송. 박태겸과 배차.\n\n- 생업: 배차의무관\n- 소속: 신내운수\n- 품계: 사장\n- 직함: 신내운수 사장\n\n신내 기지와 망우 환승을 배차·이송·심사로 움직이는 실세다.",
+  "biography": "**생애.** 2126년 세대. 신내차량기지 환승 당직의 손. 장세화가 사장이 된 것은 장씨 가문의 노선 면허와 용산선로문의 유치선 당직을 끊기지 않게 지킨 뒤였다. 말단 배차와 의료열차가 가훈의 중립 호송이 됐고, 신내역이 누구든 환승시키는 시장으로 남는다. 용산호송가의 배차표는 박태겸의 것이다. 겸전은 호송원만 한다는 금기와 싸운다. 호송 때만 수벽술을 빌린다. 장세화는 2098년에 태어났다. 한국계 아버지와 폴란드계 어머니를 둔 가계는 신내·용산선로문 생활권에 뿌리를 두고 있다. 2126년에는 신내운수 사장 업무를 맡는다. 장현석은 2026년 신내·용산선로문에서 신내 철도 민간 당직과 용산 화물창 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 장세화의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n**관직.** 품계 사장. 직함은 신내운수 사장. 생업 별명은 배차의무관.\n**무공.** 단철공. 호송 때만 수벽술을 빌린다.\n**일화.** 정유라의 회의 호송이 열리기 전, 장세화는 일반 열차와 의료열차의 운행 시간을 계절별로 나눠 배차표에 적었다.\n**가문.** 용산선로문(HP02). 관리인. 용산호송가(HC11) 관리인은 박태겸이다.\n**관계.** 정유라와 회의 호송. 박태겸과 배차.\n\n- 생업: 배차의무관\n- 소속: 신내운수\n- 품계: 사장\n- 직함: 신내운수 사장\n\n신내 기지와 망우 환승을 배차·이송·심사로 움직이는 실세다.",
   "sources": [
     "Cast-State-12",
     "Core-Characters"
@@ -239,7 +895,7 @@
         "basis": "장세화의 중립 칸을 피하지 않으려 빚을 지고"
       },
       {
-        "from": "차라온",
+        "from": "노아 데이비스",
         "type": "빚",
         "to": "장세화",
         "basis": "장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며"
@@ -257,7 +913,7 @@
         "basis": "장세화의 의료속보 협약을 중계 우선으로 남긴다"
       },
       {
-        "from": "순가온",
+        "from": "스테판 페트로프",
         "type": "맹세",
         "to": "장세화",
         "basis": "장세화의 의료호송 중립을 증언으로 받치고"

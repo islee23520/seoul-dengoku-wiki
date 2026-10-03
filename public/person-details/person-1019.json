@@ -7,101 +7,563 @@
   "commonTier": "T5",
   "occupation": "주 통신선 정비 / 부 기록 보관",
   "gender": "남성",
-  "stage": "S1",
+  "stage": "주요",
   "state": "S00",
   "stateName": "무소속",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-박성수",
   "detailRoute": "/people/person-1019",
+  "birthDate": "2095-03-04",
+  "birthday": "03-04",
+  "age": 31,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-Unaffiliated.json#/content/28",
+    "lore/characters/Cast-Unaffiliated.json#/content/29"
+  ],
+  "familyTree": {
+    "personId": "K1019",
+    "nodes": [
+      {
+        "id": "K1019",
+        "personId": "K1019",
+        "kind": "person",
+        "name": "박성수",
+        "birthDate": "2095-03-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1019"
+          },
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "성명: 박성수 (Park Seongsu)",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-박성수-list1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-1019"
+      },
+      {
+        "id": "FH-K1019-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서경",
+        "birthDate": "2065-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "박서경은 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-박성수-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1019-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서수",
+        "birthDate": "2035-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "박서수는 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-박성수-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1019-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서은",
+        "birthDate": "2005-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박서은은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-박성수-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1019-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김서원",
+        "birthDate": "2065-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "김서원은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-박성수-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1019-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서연",
+        "birthDate": "2035-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "박서연은 생활권의 공동 거처에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-박성수-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1019-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서은",
+        "birthDate": "2005-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이서은은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-박성수-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1019-P-01:K1019:biological",
+        "from": "FH-K1019-P-01",
+        "to": "K1019",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1019-P-02:FH-K1019-P-01:biological",
+        "from": "FH-K1019-P-02",
+        "to": "FH-K1019-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1019-P-03:FH-K1019-P-02:biological",
+        "from": "FH-K1019-P-03",
+        "to": "FH-K1019-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1019-M-01:K1019:biological",
+        "from": "FH-K1019-M-01",
+        "to": "K1019",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1019-M-02:FH-K1019-M-01:biological",
+        "from": "FH-K1019-M-02",
+        "to": "FH-K1019-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1019-M-03:FH-K1019-M-02:biological",
+        "from": "FH-K1019-M-03",
+        "to": "FH-K1019-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-박성수-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K1019",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K1019-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4896"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K1019-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4899"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1007",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "온민의 사본과 개정 요청을 대조해 전달 기록을 보내고 김연규가 승인한 개정을 배포함",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/196"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1007",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "사본 관리와 개정 요청 취합을 맡기고 배포할 개정 판단을 돌려줌",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/197"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1008",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "민웅기의 이전 중계기·대체 경로 기록을 정비에 쓰고 현장 수정 사항과 질문을 대전으로 보냄",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/198"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1008",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "대전에서 이전 귀환망 통신 지식을 보태고 현장 점검과 운반 협의는 박성수에게 맡김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/199"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K1019",
     "personId": "person-1019",
-    "band": "일반 인물",
+    "band": "주역·강자",
+    "numericStatus": "proposal",
     "attributes": {
       "ST": {
         "value": 10,
         "cp": 0
       },
       "DX": {
-        "value": 10,
-        "cp": 0
+        "value": 11,
+        "cp": 20
       },
       "IQ": {
-        "value": 12,
-        "cp": 40
+        "value": 13,
+        "cp": 60
       },
       "HT": {
-        "value": 10,
-        "cp": 0
+        "value": 12,
+        "cp": 20
       }
     },
     "traits": [],
     "skills": [
       {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 14,
-        "cp": 8
+        "name": "Strategy (Land)",
+        "ko": "전략(지상)",
+        "level": 18,
+        "cp": 24
+      },
+      {
+        "name": "Diplomacy",
+        "ko": "교섭·조정",
+        "level": 18,
+        "cp": 24
+      },
+      {
+        "name": "Tactics",
+        "ko": "전술",
+        "level": 15,
+        "cp": 12
+      },
+      {
+        "name": "Leadership",
+        "ko": "지휘",
+        "level": 16,
+        "cp": 12
       },
       {
         "name": "Administration",
         "ko": "행정·기록",
-        "level": 13,
-        "cp": 4
+        "level": 16,
+        "cp": 12
+      },
+      {
+        "name": "Electronics Repair/TL? (Communications)",
+        "ko": "통신 장비 정비",
+        "level": 15,
+        "cp": 8
+      },
+      {
+        "name": "Research/TL?",
+        "ko": "연구 기록",
+        "level": 15,
+        "cp": 8
       }
     ],
     "cp": {
-      "attributes": 40,
+      "attributes": 100,
       "advantages": 0,
       "disadvantages": 0,
-      "skills": 12,
-      "spent": 52,
-      "unspent": 23,
-      "total": 75
+      "skills": 100,
+      "spent": 200,
+      "unspent": 0,
+      "total": 200
     },
     "secondary": {
       "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
+      "Will": 13,
+      "Per": 13,
+      "FP": 12,
+      "BasicSpeed": 5.75,
       "BasicMove": 5,
       "BasicLift": 20,
       "Dodge": 8
     }
   },
   "confirmedHoldings": [],
-  "unit": {
-    "type": "수행원",
-    "size": 2,
-    "quality": "일반",
-    "composition": [
-      "수행원"
-    ],
-    "note": "개인 수행 요원 — 소세력 S00 규모",
-    "faction_scale": {
-      "state": "S00",
-      "tier": "소세력",
-      "factor": 0.7
-    }
-  },
-  "territory": null,
-  "wandering_force": {
-    "type": "무소속 유랑 부대",
-    "size": 2,
-    "current_location": "외곽 순회 야영지",
-    "camp": {
-      "name": "박성수 야영지",
-      "type": "야영지",
-      "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-      "facilities": [
-        "야전 숙소",
-        "취사 시설",
-        "무기 보관소"
-      ],
-      "pack_up_time": "반나절"
-    },
-    "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-  },
   "clan": {
     "id": "bc15-bc00-c591",
     "name": "밀양 박씨",
@@ -143,13 +605,13 @@
     "성격": "꼼꼼하고 과묵하다. 사본의 한 글자 차이도 번호를 매겨 적어 둔다.",
     "개인 야망": "십육국 모두에 같은 판의 사본을 두려 한다.",
     "공포": "사본이 서로 다른 문서로 갈라지는 것을 두려워한다.",
-    "통치 방식": "요청마다 번호와 대조표를 붙이고, 김연규의 승인을 받아 사본에 반영한다.",
-    "관계": "김연규가 온민의 문서 사본의 관리와 개정 요청 취합을 박성수에게 맡겼다.",
-    "촉발 사건": "두 권역의 사본 문구가 서로 달라 두 세력이 다투고, 박성수에게 대조를 의뢰한다.",
-    "플레이어 개입": "사본을 다른 권역으로 나르는 호송을 맡거나, 대조 자리에 증인으로 선다."
+    "통치 방식": "사본과 전달 기록을 대조한 뒤 분쟁을 판단하고, 정비와 운반의 순서를 작업자들과 협의한다. 문구 개정은 김연규의 승인을 받아 사본에 반영한다.",
+    "관계": "김연규에게 사본 관리와 개정 요청 취합을 맡아 승인 결과를 각 권역에 전한다. 민웅기가 대전으로 옮기기 전에 남긴 중계기·대체 경로 기록을 정비에 쓰고, 이후 현장에서 확인한 내용을 민웅기에게 돌려보낸다.",
+    "촉발 사건": "개막에 두 세력이 서로 다른 사본 문구를 두고 다투는데 개정 회신을 전하는 중계기까지 끊긴다. 두 세력은 박성수에게 대조를 의뢰하지만, 회신이 닿기 전에는 김연규가 승인한 개정을 가릴 수 없다.",
+    "플레이어 개입": "박성수가 제안한 대체 경로로 사본과 개정 회신을 호송하거나, 대조 자리에 증인으로 서서 두 세력의 정비 통행 합의를 돕는다. 그 결과에 따라 분쟁을 김연규의 승인 판단으로 되돌릴 수 있을지가 갈린다."
   },
   "sections": {},
-  "biography": "- 성명: 박성수 (Park Seongsu)\n- 캐릭터 ID: K1019\n- 세대와 출생: 개막 세대\n- 언어: 한국어\n- 생업: 주 통신선 정비 / 부 기록 보관\n- 소속: 무소속 독립 기록인이다. 온민의의 문서 '서울 1통과 온전한 대한민국'의 사본을 여러 권역에 두고 관리한다.\n- 직위: 사본 관리인 — 여러 권역의 사본을 맞추고 개정 요청을 모아 김연규에게 전한다.\n- 성격: 꼼꼼하고 과묵하다. 사본의 한 글자 차이도 번호를 매겨 적어 둔다.\n- 개인 야망: 십육국 모두에 같은 판의 사본을 두려 한다.\n- 공포: 사본이 서로 다른 문서로 갈라지는 것을 두려워한다.\n- 통치 방식: 요청마다 번호와 대조표를 붙이고, 김연규의 승인을 받아 사본에 반영한다.\n- 관계: 김연규가 온민의 문서 사본의 관리와 개정 요청 취합을 박성수에게 맡겼다.\n- 촉발 사건: 두 권역의 사본 문구가 서로 달라 두 세력이 다투고, 박성수에게 대조를 의뢰한다.\n- 플레이어 개입: 사본을 다른 권역으로 나르는 호송을 맡거나, 대조 자리에 증인으로 선다.\n\n온민의는 2122년 6월 '서울 1통과 온전한 대한민국'이라는 문서를 청사 게시판에 붙였다. 김연규는 이 문서의 사본 관리와 개정 요청 취합을 박성수에게 맡겼다. 박성수는 무소속 독립 기록인으로서 여러 권역에 사본을 두고 관리한다.\n\n박성수는 역과 역 사이의 유선과 중계기를 고친다. 정비하러 다니는 그 길로 사본을 나른다.\n\n박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다. 개정 요청에도 같은 방식으로 번호를 붙여 모은 뒤 김연규에게 전한다. 김연규가 승인한 개정은 모든 사본에 똑같이 옮겨 적는다.",
+  "biography": "- 성명: 박성수 (Park Seongsu)\n- 캐릭터 ID: K1019\n- 세대와 출생: 개막 세대\n- 언어: 한국어\n- 생업: 주 통신선 정비 / 부 기록 보관\n- 소속: 무소속 독립 기록인이다. 온민의의 문서 '서울 1통과 온전한 대한민국'의 사본을 여러 권역에 두고 관리한다.\n- 직위: 사본 관리인 — 여러 권역의 사본을 맞추고 개정 요청을 모아 김연규에게 전한다.\n- 성격: 꼼꼼하고 과묵하다. 사본의 한 글자 차이도 번호를 매겨 적어 둔다.\n- 개인 야망: 십육국 모두에 같은 판의 사본을 두려 한다.\n- 공포: 사본이 서로 다른 문서로 갈라지는 것을 두려워한다.\n- 통치 방식: 사본과 전달 기록을 대조한 뒤 분쟁을 판단하고, 정비와 운반의 순서를 작업자들과 협의한다. 문구 개정은 김연규의 승인을 받아 사본에 반영한다.\n- 관계: 김연규에게 사본 관리와 개정 요청 취합을 맡아 승인 결과를 각 권역에 전한다. 민웅기가 대전으로 옮기기 전에 남긴 중계기·대체 경로 기록을 정비에 쓰고, 이후 현장에서 확인한 내용을 민웅기에게 돌려보낸다.\n- 촉발 사건: 개막에 두 세력이 서로 다른 사본 문구를 두고 다투는데 개정 회신을 전하는 중계기까지 끊긴다. 두 세력은 박성수에게 대조를 의뢰하지만, 회신이 닿기 전에는 김연규가 승인한 개정을 가릴 수 없다.\n- 플레이어 개입: 박성수가 제안한 대체 경로로 사본과 개정 회신을 호송하거나, 대조 자리에 증인으로 서서 두 세력의 정비 통행 합의를 돕는다. 그 결과에 따라 분쟁을 김연규의 승인 판단으로 되돌릴 수 있을지가 갈린다.\n\n온민의는 2122년 6월 '서울 1통과 온전한 대한민국'이라는 문서를 청사 게시판에 붙였다. 김연규는 이 문서의 사본 관리와 개정 요청 취합을 박성수에게 맡겼다. 박성수는 무소속 독립 기록인으로서 여러 권역에 사본을 두고 관리한다.\n\n박성수는 역과 역 사이의 유선과 중계기를 고친다. 정비하러 다니는 그 길로 사본을 나른다.\n\n김연규가 온민의의 기록과 정부를 보좌하는 나라들의 조약을 모으려면 각 권역에 어떤 문구가 전해졌는지부터 알아야 한다. 박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다. 김연규가 판단을 돌려주면 승인된 개정을 각 사본에 옮기고 수령 여부를 확인한다. 이 대조로 문서 등재와 승인된 개정을 구별하며, 윤서린의 등재 허락을 인준으로 바꾸어 적지 않는다.\n\n박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다. 기록에 있는 길도 다시 확인해야 하므로 현장에서 필요한 부품과 실제 응답을 대조하고, 달라진 내용과 질문을 전령 편으로 민웅기에게 보낸다. 민웅기는 대전에서 이전 통신 작업의 지식을 보태고 박성수는 현장 점검과 운반 협의를 맡는다. 이 협력으로 연락 두절을 생존자 부재로 서둘러 판단하지 않는다.\n\n개막에 사본 두 벌의 분쟁과 중계기 고장이 겹치자 박성수는 믿을 만한 개정 회신을 전달하지 못한다. 그는 두 세력 앞에 문구 차이와 전달 시각을 펼쳐 확인할 수 있는 사실과 김연규의 판단을 기다릴 부분을 가르고, 정비 기록을 바탕으로 대체 경로를 제안한다. 전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다. 플레이어가 회신을 호송하거나 대조의 증인이 되면 협상의 근거를 되살릴 수 있다. 통행과 회신을 확보하지 못하면 박성수는 받지 못한 승인을 내세우지 않고 다투는 문구를 미결로 남긴다.",
   "sources": [
     "Cast-Unaffiliated"
   ],
@@ -159,9 +621,28 @@
         "from": "박성수",
         "type": "계약",
         "to": "김연규",
-        "basis": "김연규가 온민의 문서 사본 관리와 개정 요청 취합을 맡김"
+        "basis": "온민의 사본과 개정 요청을 대조해 전달 기록을 보내고 김연규가 승인한 개정을 배포함"
+      },
+      {
+        "from": "박성수",
+        "type": "계약",
+        "to": "민웅기",
+        "basis": "민웅기의 이전 중계기·대체 경로 기록을 정비에 쓰고 현장 수정 사항과 질문을 대전으로 보냄"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "김연규",
+        "type": "계약",
+        "to": "박성수",
+        "basis": "사본 관리와 개정 요청 취합을 맡기고 배포할 개정 판단을 돌려줌"
+      },
+      {
+        "from": "민웅기",
+        "type": "계약",
+        "to": "박성수",
+        "basis": "대전에서 이전 귀환망 통신 지식을 보태고 현장 점검과 운반 협의는 박성수에게 맡김"
+      }
+    ]
   }
 }

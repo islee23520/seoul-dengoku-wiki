@@ -424,8 +424,8 @@
           "ko": "통치 방식: 직접 싸우기보다 정보와 교섭으로 다른 사람을 움직여 목적을 이룬다."
         },
         {
-          "en": "Key relationships: When she had nowhere to go, the Gilmok Office gave her shelter and a living. The debt and contract that came with it keep her from leaving.",
-          "ko": "관계: 갈 곳이 없던 지연희에게 길목사무소가 은신처와 생계를 주었다. 그 대가로 진 빚과 계약 때문에 지연희는 조직을 떠나지 못한다."
+          "en": "Key relationships: When she had nowhere to go, the Gilmok Office gave her shelter and a living. The debt and contract that came with it keep her from leaving. Ji Yeonhee carries receipt and handover notices to Mun Dohyeon and connects contact with the next carrier. Mun checks cargo comparison and classification records against the notices to locate the transport section where a handover was missed.",
+          "ko": "관계: 갈 곳이 없던 지연희에게 길목사무소가 은신처와 생계를 주었다. 그 대가로 진 빚과 계약 때문에 지연희는 조직을 떠나지 못한다. 지연희는 전달물의 인수·인계 소식을 문도현에게 전하고 다음 운송 상대의 연락을 잇는다. 문도현은 화물의 대조·분류 기록과 전달 내용을 확인해 빠진 인계가 어느 구간에서 생겼는지 찾는다."
         },
         {
           "en": "Trigger event: She asks the player to recover a missing delivery.",
@@ -666,20 +666,20 @@
           "ko": "공포: 사본이 서로 다른 문서로 갈라지는 것을 두려워한다."
         },
         {
-          "en": "Governing style: He attaches a number and a collation sheet to each request and enters it into the copies once Kim Yeongyu approves it.",
-          "ko": "통치 방식: 요청마다 번호와 대조표를 붙이고, 김연규의 승인을 받아 사본에 반영한다."
+          "en": "Governing style: He compares copies and delivery records before judging a dispute, agrees the order of repairs and transport with those doing the work, and enters revisions into the copies only after Kim Yeongyu approves them.",
+          "ko": "통치 방식: 사본과 전달 기록을 대조한 뒤 분쟁을 판단하고, 정비와 운반의 순서를 작업자들과 협의한다. 문구 개정은 김연규의 승인을 받아 사본에 반영한다."
         },
         {
-          "en": "Key relationships: Kim Yeongyu entrusted him with keeping the copies of the Onmin Council document and gathering revision requests.",
-          "ko": "관계: 김연규가 온민의 문서 사본의 관리와 개정 요청 취합을 박성수에게 맡겼다."
+          "en": "Key relationships: Kim Yeongyu entrusts him with copies and revision requests and returns decisions for distribution. He works with Min Woonggi through the relay and alternate-route records Min left before moving to Daejeon, sending back findings from subsequent repairs.",
+          "ko": "관계: 김연규에게 사본 관리와 개정 요청 취합을 맡아 승인 결과를 각 권역에 전한다. 민웅기가 대전으로 옮기기 전에 남긴 중계기·대체 경로 기록을 정비에 쓰고, 이후 현장에서 확인한 내용을 민웅기에게 돌려보낸다."
         },
         {
-          "en": "Trigger event: The wording of the copies in two spheres differs, the two powers quarrel over it, and they ask Park Seongsu to collate them.",
-          "ko": "촉발 사건: 두 권역의 사본 문구가 서로 달라 두 세력이 다투고, 박성수에게 대조를 의뢰한다."
+          "en": "Trigger event: At the opening, two powers dispute different wording in their copies while the relay carrying revision replies is out of service. They ask Park Seongsu to collate the copies; without the reply he cannot settle which revision Kim Yeongyu approved.",
+          "ko": "촉발 사건: 개막에 두 세력이 서로 다른 사본 문구를 두고 다투는데 개정 회신을 전하는 중계기까지 끊긴다. 두 세력은 박성수에게 대조를 의뢰하지만, 회신이 닿기 전에는 김연규가 승인한 개정을 가릴 수 없다."
         },
         {
-          "en": "Player involvement: Escort a copy to another sphere, or stand as a witness at the collation.",
-          "ko": "플레이어 개입: 사본을 다른 권역으로 나르는 호송을 맡거나, 대조 자리에 증인으로 선다."
+          "en": "Player involvement: Escort the copy and revision reply along the alternate route Park proposes, or witness the collation and help the two powers agree repair access. The outcome determines whether the dispute can be brought back to Kim Yeongyu for a decision.",
+          "ko": "플레이어 개입: 박성수가 제안한 대체 경로로 사본과 개정 회신을 호송하거나, 대조 자리에 증인으로 서서 두 세력의 정비 통행 합의를 돕는다. 그 결과에 따라 분쟁을 김연규의 승인 판단으로 되돌릴 수 있을지가 갈린다."
         }
       ]
     },
@@ -703,8 +703,24 @@
       "kind": "paragraph",
       "anchor": "인물-박성수-p3",
       "text": {
-        "en": "Park Seongsu compares the wording of the copies sphere by sphere and writes every differing character on a collation sheet with its own number. He numbers and gathers revision requests the same way and passes them to Kim Yeongyu. He copies each revision Kim Yeongyu approves into every copy alike.",
-        "ko": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다. 개정 요청에도 같은 방식으로 번호를 붙여 모은 뒤 김연규에게 전한다. 김연규가 승인한 개정은 모든 사본에 똑같이 옮겨 적는다."
+        "en": "Kim Yeongyu needs to know which wording each sphere has received before he can gather the Onmin Council's records and the treaties of the states assisting the government. Park Seongsu therefore numbers every differing character and revision request and sends him the collation sheets with delivery records. Kim returns his decisions, and Park enters the approved revisions into each copy and checks their receipt. Park's collation distinguishes the Council's registered papers from revisions Kim has approved; it does not turn Yun Seorin's permission to register them into recognition.",
+        "ko": "김연규가 온민의의 기록과 정부를 보좌하는 나라들의 조약을 모으려면 각 권역에 어떤 문구가 전해졌는지부터 알아야 한다. 박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다. 김연규가 판단을 돌려주면 승인된 개정을 각 사본에 옮기고 수령 여부를 확인한다. 이 대조로 문서 등재와 승인된 개정을 구별하며, 윤서린의 등재 허락을 인준으로 바꾸어 적지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "인물-박성수-p4",
+      "text": {
+        "en": "When Park plans repairs between stations, he consults the relay and alternate-route records Min Woonggi left through his work on the return net before moving to Daejeon. A recorded route still needs checking: Park compares the parts required and the replies received on site, then sends Min corrections and questions by courier. Min contributes his earlier communications knowledge from Daejeon, while Park handles the local inspection and transport arrangements. Their cooperation keeps a loss of contact from being mistaken for proof that nobody remains.",
+        "ko": "박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다. 기록에 있는 길도 다시 확인해야 하므로 현장에서 필요한 부품과 실제 응답을 대조하고, 달라진 내용과 질문을 전령 편으로 민웅기에게 보낸다. 민웅기는 대전에서 이전 통신 작업의 지식을 보태고 박성수는 현장 점검과 운반 협의를 맡는다. 이 협력으로 연락 두절을 생존자 부재로 서둘러 판단하지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "인물-박성수-p5",
+      "text": {
+        "en": "At the opening, the dispute between two copies and the failed relay leave Park unable to deliver a reliable revision reply. He lays out the wording differences and delivery times before both powers, separates the points he can establish from those awaiting Kim's decision, and proposes an alternate route using the repair records. He brings the couriers and repair workers together to agree their order of work and negotiates passage with the powers. Escorting the reply or witnessing the comparison lets the player help restore the basis of the talks; if neither passage nor a reply is secured, Park keeps the disputed wording unresolved rather than claiming an approval he has not received.",
+        "ko": "개막에 사본 두 벌의 분쟁과 중계기 고장이 겹치자 박성수는 믿을 만한 개정 회신을 전달하지 못한다. 그는 두 세력 앞에 문구 차이와 전달 시각을 펼쳐 확인할 수 있는 사실과 김연규의 판단을 기다릴 부분을 가르고, 정비 기록을 바탕으로 대체 경로를 제안한다. 전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다. 플레이어가 회신을 호송하거나 대조의 증인이 되면 협상의 근거를 되살릴 수 있다. 통행과 회신을 확보하지 못하면 박성수는 받지 못한 승인을 내세우지 않고 다투는 문구를 미결로 남긴다."
       }
     },
     {
@@ -840,7 +856,7 @@
         { "en": "Personal ambition: build trade under his control and provide stable work while fulfilling transport promises.", "ko": "개인 야망: 자기 통제 아래의 거래 기반을 마련하고 인력에게 안정적인 일을 제공하며 약속한 운송을 이행하려 한다." },
         { "en": "Fear: undecided.", "ko": "공포: 미정" },
         { "en": "Management: compares incoming cargo, sorts it, temporarily stores it and hands it to the next carrier. Space is rented or contractually used.", "ko": "통치 방식: 입고 화물을 대조·분류하고 임시 보관한 뒤 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용한다." },
-        { "en": "Relationships: works with cargo owners and carriers of subsequent sections.", "ko": "관계: 화주들과 다음 운송 구간의 거래 상대를 연결한다." },
+        {"en":"Relationships: works with cargo owners and carriers of subsequent sections. Mun Dohyeon gives Ji Yeonhee the next recipient and notice for classified cargo in temporary storage. Working as an independent courier, Ji carries receipt and delivery news so Mun can check communication gaps in the promised transport.","ko":"관계: 화주들과 다음 운송 구간의 거래 상대를 연결한다. 문도현은 분류해 임시 보관한 화물의 다음 인계 상대와 전달 내용을 지연희에게 맡긴다. 지연희는 독립 전령으로 인수·전달 소식을 이어 문도현이 약속한 운송의 연락 공백을 확인하게 한다."},
         { "en": "Trigger event: lost a March 2125 Yongsan contract and seeks later work through an inquiry.", "ko": "촉발 사건: 2125년 3월 용산 계약을 놓친 뒤 후속 운송 기회를 찾으며 조사를 의뢰한다." },
         { "en": "Player involvement: bring together cargo from other merchants for new transport work.", "ko": "플레이어 개입: 다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다." }
       ]

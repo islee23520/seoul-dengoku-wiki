@@ -12,6 +12,539 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-문하율",
   "detailRoute": "/people/person-0350",
+  "birthDate": "2091-11-19",
+  "birthday": "11-19",
+  "age": 35,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/61",
+    "lore/characters/Cast-State-14.json#/content/63"
+  ],
+  "familyTree": {
+    "personId": "K349",
+    "nodes": [
+      {
+        "id": "K349",
+        "personId": "K349",
+        "kind": "person",
+        "name": "문하율",
+        "birthDate": "2091-11-19",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K349"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 아차산관문사령부 능선 초병 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-문하율-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0350"
+      },
+      {
+        "id": "FH-K349-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "문승호",
+        "birthDate": "2061-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "문승호는 대합실 당직에서 봉화·호각 차단·경위 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-문하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K349-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "문승민",
+        "birthDate": "2031-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "문승민은 대합실 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-문하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K349-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "문승원",
+        "birthDate": "2001-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "문승원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-문하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K349-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준아",
+        "birthDate": "2061-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "이준아는 대합실 당직에서 봉화·호각 차단·경위 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-문하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K349-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준혁",
+        "birthDate": "2031-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "최준혁은 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-문하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K349-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준윤",
+        "birthDate": "2001-11-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정준윤은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-문하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K349-P-01:K349:biological",
+        "from": "FH-K349-P-01",
+        "to": "K349",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K349-P-02:FH-K349-P-01:biological",
+        "from": "FH-K349-P-02",
+        "to": "FH-K349-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K349-P-03:FH-K349-P-02:biological",
+        "from": "FH-K349-P-03",
+        "to": "FH-K349-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K349-M-01:K349:biological",
+        "from": "FH-K349-M-01",
+        "to": "K349",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K349-M-02:FH-K349-M-01:biological",
+        "from": "FH-K349-M-02",
+        "to": "FH-K349-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K349-M-03:FH-K349-M-02:biological",
+        "from": "FH-K349-M-03",
+        "to": "FH-K349-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-문하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K349",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K349-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1694"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K349-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1697"
+          }
+        ]
+      },
+      {
+        "recipientId": "K348",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "능선 초병으로 수비 명령을 수행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/94"
+          }
+        ]
+      },
+      {
+        "recipientId": "K437",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "권태윤은 야간 순찰 기록과 교체한 경비 암호패의 인계 내역을 문하율의 봉화·호각 차단 경위와 맞춰 본다. 신호와 순찰 기록이 어긋나면 해당 시각을 짚어 양군에 보고할 근거를 남기고, 전쟁·급수 공동승인 문서를 초소 원장과 대조한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/220"
+          }
+        ]
+      },
+      {
+        "recipientId": "K469",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "조채원은 문하율이 남긴 초소 차단 경위와 공동승인 문서를 양군에 전한다. 배차표나 출발 서명이 빠진 전갈은 그 누락을 함께 알려, 차단 보고가 서명 없는 이동의 근거로 바뀌지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/246"
+          }
+        ]
+      },
+      {
+        "recipientId": "K533",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노바호는 능선 초계에서 읽은 매복 흔적을 문하율에게 직접 알린다. 문하율은 봉화·호각으로 차단한 경위에 현장 관찰을 붙여 양군에 보고해, 소문만으로 적대행위를 단정하지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/302"
+          }
+        ]
+      },
+      {
+        "recipientId": "K725",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "손늘연은 능선에서 읽은 매복 흔적을 문하율에게 보고한다. 문하율은 차단 경위에 실제 목격을 붙여 양군에 전해 소문과 관찰을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/470"
+          }
+        ]
+      },
+      {
+        "recipientId": "K354",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/313"
+          }
+        ]
+      },
+      {
+        "recipientId": "K357",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "문하율의 지휘로 능선을 돌고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/318"
+          }
+        ]
+      },
+      {
+        "recipientId": "K362",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "문하율의 초병 명령을 기지에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/328"
+          }
+        ]
+      },
+      {
+        "recipientId": "K369",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "문하율의 초소 당직과 인파 줄을 나누고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/184"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K349",
     "personId": "person-0350",
@@ -169,6 +702,30 @@
       }
     ],
     "incoming": [
+      {
+        "from": "권태윤",
+        "type": "계약",
+        "to": "문하율",
+        "basis": "권태윤은 야간 순찰 기록과 교체한 경비 암호패의 인계 내역을 문하율의 봉화·호각 차단 경위와 맞춰 본다. 신호와 순찰 기록이 어긋나면 해당 시각을 짚어 양군에 보고할 근거를 남기고, 전쟁·급수 공동승인 문서를 초소 원장과 대조한다."
+      },
+      {
+        "from": "조채원",
+        "type": "계약",
+        "to": "문하율",
+        "basis": "조채원은 문하율이 남긴 초소 차단 경위와 공동승인 문서를 양군에 전한다. 배차표나 출발 서명이 빠진 전갈은 그 누락을 함께 알려, 차단 보고가 서명 없는 이동의 근거로 바뀌지 않게 한다."
+      },
+      {
+        "from": "노바호",
+        "type": "계약",
+        "to": "문하율",
+        "basis": "노바호는 능선 초계에서 읽은 매복 흔적을 문하율에게 직접 알린다. 문하율은 봉화·호각으로 차단한 경위에 현장 관찰을 붙여 양군에 보고해, 소문만으로 적대행위를 단정하지 않게 한다."
+      },
+      {
+        "from": "손늘연",
+        "type": "계약",
+        "to": "문하율",
+        "basis": "손늘연은 능선에서 읽은 매복 흔적을 문하율에게 보고한다. 문하율은 차단 경위에 실제 목격을 붙여 양군에 전해 소문과 관찰을 구분한다."
+      },
       {
         "from": "선솔우",
         "type": "계약",

@@ -12,6 +12,452 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-신보람",
   "detailRoute": "/people/person-0247",
+  "birthDate": "2078-08-14",
+  "birthday": "08-14",
+  "age": 48,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/50"
+  ],
+  "familyTree": {
+    "personId": "K246",
+    "nodes": [
+      {
+        "id": "K246",
+        "personId": "K246",
+        "kind": "person",
+        "name": "신보람",
+        "birthDate": "2078-08-14",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K246"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 신도 명부 주지 자리는 고아 명부 줄로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신보람-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0247"
+      },
+      {
+        "id": "FH-K246-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "신승진",
+        "birthDate": "2048-08-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "신승진은 보국문 피난 막사에서 신도 명부 대조·배급 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신보람-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K246-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "신승현",
+        "birthDate": "2018-08-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "신승현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신보람-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K246-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현혁",
+        "birthDate": "2048-08-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "강현혁은 보국문 피난 막사에서 신도 명부 대조·배급 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신보람-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K246-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현욱",
+        "birthDate": "2018-08-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임현욱은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신보람-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K246-P-01:K246:biological",
+        "from": "FH-K246-P-01",
+        "to": "K246",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K246-P-02:FH-K246-P-01:biological",
+        "from": "FH-K246-P-02",
+        "to": "FH-K246-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K246-M-01:K246:biological",
+        "from": "FH-K246-M-01",
+        "to": "K246",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K246-M-02:FH-K246-M-01:biological",
+        "from": "FH-K246-M-02",
+        "to": "FH-K246-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K246",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K246-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1194"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K246-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1196"
+          }
+        ]
+      },
+      {
+        "recipientId": "K245",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "가족 회의에서 방장 맹세를 대변",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/74"
+          }
+        ]
+      },
+      {
+        "recipientId": "K147",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "북한산보국문 가족 이송을 우선 기록으로 남김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/148"
+          }
+        ]
+      },
+      {
+        "recipientId": "K029",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "시민권 연대를 가족 회의에서 지지",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/176"
+          }
+        ]
+      },
+      {
+        "recipientId": "K147",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "이송 우선 기록을 부탁",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/177"
+          }
+        ]
+      },
+      {
+        "recipientId": "K449",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "허진우는 호송에서 지킨 인명 장부와 총회 필사본을 신보람에게 전달한다. 신보람은 저녁 배급 전에 명부를 읽다가 빠진 이름을 발견하면 허진우가 가져온 장부로 해당 이름을 찾아, 운송 중 끊긴 기록 때문에 배급에서 사람이 빠지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/229"
+          }
+        ]
+      },
+      {
+        "recipientId": "K785",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "조빛준은 총회 필사본과 호송 인명 장부를 신보람에게 전달한다. 신보람은 배급 전에 명부를 읽으며 빠진 이름을 확인해 전달 공백으로 사람이 배급에서 사라지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/522"
+          }
+        ]
+      },
+      {
+        "recipientId": "K881",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "허강서는 총회 필사본과 인명 장부를 신보람에게 전달한다. 신보람은 배급 전 명부에서 빠진 이름을 찾아 전달 공백 때문에 가족 몫이 사라지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/606"
+          }
+        ]
+      },
+      {
+        "recipientId": "K255",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신보람의 가족 회의 통지를 나르고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/224"
+          }
+        ]
+      },
+      {
+        "recipientId": "K258",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신보람의 가족 회의를 숙영 중앙에서 열고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/230"
+          }
+        ]
+      },
+      {
+        "recipientId": "K263",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "신보람의 가족 회의에서 사고 당사자로 서고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/122"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K246",
     "personId": "person-0247",
@@ -174,6 +620,24 @@
         "type": "계약",
         "to": "신보람",
         "basis": "북한산보국문 가족 이송을 우선 기록으로 남김"
+      },
+      {
+        "from": "허진우",
+        "type": "계약",
+        "to": "신보람",
+        "basis": "허진우는 호송에서 지킨 인명 장부와 총회 필사본을 신보람에게 전달한다. 신보람은 저녁 배급 전에 명부를 읽다가 빠진 이름을 발견하면 허진우가 가져온 장부로 해당 이름을 찾아, 운송 중 끊긴 기록 때문에 배급에서 사람이 빠지지 않게 한다."
+      },
+      {
+        "from": "조빛준",
+        "type": "계약",
+        "to": "신보람",
+        "basis": "조빛준은 총회 필사본과 호송 인명 장부를 신보람에게 전달한다. 신보람은 배급 전에 명부를 읽으며 빠진 이름을 확인해 전달 공백으로 사람이 배급에서 사라지지 않게 한다."
+      },
+      {
+        "from": "허강서",
+        "type": "계약",
+        "to": "신보람",
+        "basis": "허강서는 총회 필사본과 인명 장부를 신보람에게 전달한다. 신보람은 배급 전 명부에서 빠진 이름을 찾아 전달 공백 때문에 가족 몫이 사라지지 않게 한다."
       },
       {
         "from": "소두",

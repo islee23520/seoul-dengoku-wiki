@@ -12,6 +12,427 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-손타연",
   "detailRoute": "/people/person-0841",
+  "birthDate": "2094-08-09",
+  "birthday": "08-09",
+  "age": 32,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/588",
+    "lore/characters/Cast-State-02.json#/content/591"
+  ],
+  "familyTree": {
+    "personId": "K841",
+    "nodes": [
+      {
+        "id": "K841",
+        "personId": "K841",
+        "kind": "person",
+        "name": "손타연",
+        "birthDate": "2094-08-09",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K841"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-손타연-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0841"
+      },
+      {
+        "id": "FH-K841-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승문",
+        "birthDate": "2064-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2102,
+            "summary": "손승문은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-손타연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K841-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승섭",
+        "birthDate": "2034-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "손승섭은 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-손타연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K841-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "손승성",
+        "birthDate": "2004-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "손승성은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-손타연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K841-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도미",
+        "birthDate": "2064-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2102,
+            "summary": "이도미는 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-손타연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K841-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최민민",
+        "birthDate": "2034-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "최민민은 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-손타연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K841-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "정도나",
+        "birthDate": "2004-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정도나는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-손타연-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K841-P-01:K841:biological",
+        "from": "FH-K841-P-01",
+        "to": "K841",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K841-P-02:FH-K841-P-01:biological",
+        "from": "FH-K841-P-02",
+        "to": "FH-K841-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K841-P-03:FH-K841-P-02:biological",
+        "from": "FH-K841-P-03",
+        "to": "FH-K841-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K841-M-01:K841:biological",
+        "from": "FH-K841-M-01",
+        "to": "K841",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K841-M-02:FH-K841-M-01:biological",
+        "from": "FH-K841-M-02",
+        "to": "FH-K841-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K841-M-03:FH-K841-M-02:biological",
+        "from": "FH-K841-M-03",
+        "to": "FH-K841-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-손타연-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K841",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K841-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4055"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K841-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4058"
+          }
+        ]
+      },
+      {
+        "recipientId": "K031",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "손타연은 난민 명단과 복구복무 등록에 겹친 이름을 김나율에게 넘긴다. 김나율은 실제 교대와 등록을 확인해 같은 사람이 두 명의 노동 인원으로 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/571"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K841",
     "personId": "person-0841",
@@ -133,17 +554,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "강민서가 지지하는 백온의 난민 시민권 명단이 복구복무 기록과 한 책상에 놓인다. 손타연은 난민 명단의 이름이 복구복무 등록에도 올랐는지 한 줄씩 대조하고, 두 곳에 겹친 이름을 등기 순서대로 모아 당직 인수인계 메모에 남긴다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 손타연은 난민 명단과 복구복무 등록에 겹친 이름을 김나율에게 넘긴다. 김나율은 실제 교대와 등록을 확인해 같은 사람이 두 명의 노동 인원으로 남지 않게 한다.",
     "야망": "복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
     "공포": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 강민서가 지지하는 백온의 난민 시민권 명단이 복구복무 기록과 한 책상에 놓인다. 손타연은 난민 명단의 이름이 복구복무 등록에도 올랐는지 한 줄씩 대조하고, 두 곳에 겹친 이름을 등기 순서대로 모아 당직 인수인계 메모에 남긴다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 20 | 무력 −20 | 물질 40 | 공동 50 | 원칙 15 | 공개 25 | 자격 45 | 분산 20 | 변혁 15\n- 욕망: 갈망 0 | 독점 −25 | 위험 30 | 과시 −25 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 강민서가 지지하는 백온의 난민 시민권 명단이 복구복무 기록과 한 책상에 놓인다. 손타연은 난민 명단의 이름이 복구복무 등록에도 올랐는지 한 줄씩 대조하고, 두 곳에 겹친 이름을 등기 순서대로 모아 당직 인수인계 메모에 남긴다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 손타연은 난민 명단과 복구복무 등록에 겹친 이름을 김나율에게 넘긴다. 김나율은 실제 교대와 등록을 확인해 같은 사람이 두 명의 노동 인원으로 남지 않게 한다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 20 | 무력 −20 | 물질 40 | 공동 50 | 원칙 15 | 공개 25 | 자격 45 | 분산 20 | 변혁 15\n- 욕망: 갈망 0 | 독점 −25 | 위험 30 | 과시 −25 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "손타연",
+        "type": "계약",
+        "to": "김나율",
+        "basis": "손타연은 난민 명단과 복구복무 등록에 겹친 이름을 김나율에게 넘긴다. 김나율은 실제 교대와 등록을 확인해 같은 사람이 두 명의 노동 인원으로 남지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -12,6 +12,328 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-배동민",
   "detailRoute": "/people/person-0527",
+  "birthDate": "2086-09-07",
+  "birthday": "09-07",
+  "age": 40,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/336",
+    "lore/characters/Cast-State-08.json#/content/338",
+    "lore/characters/Cast-State-08.json#/content/339"
+  ],
+  "familyTree": {
+    "personId": "K527",
+    "nodes": [
+      {
+        "id": "K527",
+        "personId": "K527",
+        "kind": "person",
+        "name": "배동민",
+        "birthDate": "2086-09-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K527"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배동민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0527"
+      },
+      {
+        "id": "FH-K527-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "배승규",
+        "birthDate": "2056-09-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "배승규는 노량진 선창에서 밀수 호스 접수·관로 대장 작성 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배동민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K527-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "배승완",
+        "birthDate": "2026-09-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "배승완은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배동민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K527-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김태아",
+        "birthDate": "2056-09-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "김태아는 노량진 선창에서 밀수 호스 접수·관로 대장 작성 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배동민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K527-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박태문",
+        "birthDate": "2026-09-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박태문은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배동민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K527-P-01:K527:biological",
+        "from": "FH-K527-P-01",
+        "to": "K527",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K527-P-02:FH-K527-P-01:biological",
+        "from": "FH-K527-P-02",
+        "to": "FH-K527-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K527-M-01:K527:biological",
+        "from": "FH-K527-M-01",
+        "to": "K527",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K527-M-02:FH-K527-M-01:biological",
+        "from": "FH-K527-M-02",
+        "to": "FH-K527-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배동민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K527",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K527-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2553"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K527-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2555"
+          }
+        ]
+      },
+      {
+        "recipientId": "K203",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "배동민은 접수한 밀수 호스와 관로에 단 내역을 나태경에게 보여 준다. 나태경은 시장 화물 검사에서 같은 호스가 어느 짐에 들어왔는지 살펴 접수 기록과 무단 하역의 연결을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/296"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K527",
     "personId": "person-0527",
@@ -133,17 +455,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 경매 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 배동민은 접수한 밀수 호스와 관로에 단 내역을 나태경에게 보여 준다. 나태경은 시장 화물 검사에서 같은 호스가 어느 짐에 들어왔는지 살펴 접수 기록과 무단 하역의 연결을 찾는다.",
     "야망": "경매 서기 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.",
     "공포": "경매 서기 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 밀수 호스 접수·관로 대장 작성\n- 직함: 경매 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 경매 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 경매 서기 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.\n\n**공포.** 경매 서기 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 45 | 무력 −30 | 물질 70 | 공동 −30 | 원칙 −35 | 공개 15 | 자격 5 | 분산 20 | 변혁 5\n- 욕망: 갈망 −10 | 독점 30 | 위험 5 | 과시 20 | 지속 −20 | 지향 이성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 밀수 호스 접수·관로 대장 작성\n- 직함: 경매 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 경매 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 배동민은 접수한 밀수 호스와 관로에 단 내역을 나태경에게 보여 준다. 나태경은 시장 화물 검사에서 같은 호스가 어느 짐에 들어왔는지 살펴 접수 기록과 무단 하역의 연결을 찾는다.\n\n**야망.** 경매 서기 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.\n\n**공포.** 경매 서기 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 45 | 무력 −30 | 물질 70 | 공동 −30 | 원칙 −35 | 공개 15 | 자격 5 | 분산 20 | 변혁 5\n- 욕망: 갈망 −10 | 독점 30 | 위험 5 | 과시 20 | 지속 −20 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "배동민",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "배동민은 접수한 밀수 호스와 관로에 단 내역을 나태경에게 보여 준다. 나태경은 시장 화물 검사에서 같은 호스가 어느 짐에 들어왔는지 살펴 접수 기록과 무단 하역의 연결을 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

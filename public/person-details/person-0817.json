@@ -12,6 +12,428 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-진하린",
   "detailRoute": "/people/person-0817",
+  "birthDate": "2102-08-07",
+  "birthday": "08-07",
+  "age": 24,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/534",
+    "lore/characters/Cast-State-10.json#/content/536",
+    "lore/characters/Cast-State-10.json#/content/537"
+  ],
+  "familyTree": {
+    "personId": "K817",
+    "nodes": [
+      {
+        "id": "K817",
+        "personId": "K817",
+        "kind": "person",
+        "name": "진하린",
+        "birthDate": "2102-08-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K817"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-진하린-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0817"
+      },
+      {
+        "id": "FH-K817-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "진현준",
+        "birthDate": "2072-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "진현준은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-진하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K817-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "진현호",
+        "birthDate": "2042-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "진현호는 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-진하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K817-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "진현민",
+        "birthDate": "2012-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "진현민은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-진하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K817-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도성",
+        "birthDate": "2072-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "이도성은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-진하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K817-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최도빈",
+        "birthDate": "2042-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "최도빈은 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-진하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K817-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "정도혁",
+        "birthDate": "2012-08-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정도혁은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-진하린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K817-P-01:K817:biological",
+        "from": "FH-K817-P-01",
+        "to": "K817",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K817-P-02:FH-K817-P-01:biological",
+        "from": "FH-K817-P-02",
+        "to": "FH-K817-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K817-P-03:FH-K817-P-02:biological",
+        "from": "FH-K817-P-03",
+        "to": "FH-K817-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K817-M-01:K817:biological",
+        "from": "FH-K817-M-01",
+        "to": "K817",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K817-M-02:FH-K817-M-01:biological",
+        "from": "FH-K817-M-02",
+        "to": "FH-K817-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K817-M-03:FH-K817-M-02:biological",
+        "from": "FH-K817-M-03",
+        "to": "FH-K817-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-진하린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K817",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K817-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3937"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K817-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3940"
+          }
+        ]
+      },
+      {
+        "recipientId": "K249",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "진하린은 필사 당직의 정정 기록을 윤초아에게 넘긴다. 윤초아는 구호 출처와 문중 표 기록을 확인해 지운 줄의 이유가 다음 필사본에서 빠지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/550"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K817",
     "personId": "person-0817",
@@ -133,17 +555,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.",
     "일화": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 장경 필사 행자 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 진하린은 필사 당직의 정정 기록을 윤초아에게 넘긴다. 윤초아는 구호 출처와 문중 표 기록을 확인해 지운 줄의 이유가 다음 필사본에서 빠지지 않게 한다.",
     "야망": "장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.",
     "공포": "장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 장경 필사본·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 장경 필사 행자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 장경 필사 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −60 | 개방 65 | 무력 −45 | 물질 −10 | 공동 80 | 원칙 45 | 공개 30 | 자격 35 | 분산 50 | 변혁 −5\n- 욕망: 갈망 5 | 독점 15 | 위험 −20 | 과시 −15 | 지속 60 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 장경 필사본·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 장경 필사 행자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 장경 필사 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 진하린은 필사 당직의 정정 기록을 윤초아에게 넘긴다. 윤초아는 구호 출처와 문중 표 기록을 확인해 지운 줄의 이유가 다음 필사본에서 빠지지 않게 한다.\n\n**야망.** 장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −60 | 개방 65 | 무력 −45 | 물질 −10 | 공동 80 | 원칙 45 | 공개 30 | 자격 35 | 분산 50 | 변혁 −5\n- 욕망: 갈망 5 | 독점 15 | 위험 −20 | 과시 −15 | 지속 60 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-10"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "진하린",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "진하린은 필사 당직의 정정 기록을 윤초아에게 넘긴다. 윤초아는 구호 출처와 문중 표 기록을 확인해 지운 줄의 이유가 다음 필사본에서 빠지지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

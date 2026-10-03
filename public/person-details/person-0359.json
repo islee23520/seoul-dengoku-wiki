@@ -12,6 +12,538 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-천초윤",
   "detailRoute": "/people/person-0359",
+  "birthDate": "2092-09-15",
+  "birthday": "09-15",
+  "age": 34,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/149"
+  ],
+  "familyTree": {
+    "personId": "K358",
+    "nodes": [
+      {
+        "id": "K358",
+        "personId": "K358",
+        "kind": "person",
+        "name": "천초윤",
+        "birthDate": "2092-09-15",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K358"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 양군 승인 전령, 하윤목의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-천초윤-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0359"
+      },
+      {
+        "id": "FH-K358-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "천승진",
+        "birthDate": "2062-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "천승진은 신내 환승 당직에서 통과 전갈·면제 통행증 배달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-천초윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K358-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "천승현",
+        "birthDate": "2032-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "천승현은 신내 환승 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-천초윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K358-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "천승영",
+        "birthDate": "2002-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "천승영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-천초윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K358-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조준우",
+        "birthDate": "2062-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "조준우는 신내 환승 당직에서 통과 전갈·면제 통행증 배달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-천초윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K358-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김준은",
+        "birthDate": "2032-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "김준은은 신내 환승 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-천초윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K358-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "박준정",
+        "birthDate": "2002-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박준정은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-천초윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K358-P-01:K358:biological",
+        "from": "FH-K358-P-01",
+        "to": "K358",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K358-P-02:FH-K358-P-01:biological",
+        "from": "FH-K358-P-02",
+        "to": "FH-K358-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K358-P-03:FH-K358-P-02:biological",
+        "from": "FH-K358-P-03",
+        "to": "FH-K358-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K358-M-01:K358:biological",
+        "from": "FH-K358-M-01",
+        "to": "K358",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K358-M-02:FH-K358-M-01:biological",
+        "from": "FH-K358-M-02",
+        "to": "FH-K358-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K358-M-03:FH-K358-M-02:biological",
+        "from": "FH-K358-M-03",
+        "to": "FH-K358-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-천초윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K358",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K358-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1736"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K358-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1739"
+          }
+        ]
+      },
+      {
+        "recipientId": "K613",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "노은아는 눈에 막힌 통로를 열어 부상자를 먼저 옮긴 뒤 천초윤에게 통과 지연을 알린다. 천초윤은 급수 시간과 면제 통행증을 확인해 초소 전갈이 늦은 이유를 남기고, 확인 안 된 면제 문서를 대신 배달하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/372"
+          }
+        ]
+      },
+      {
+        "recipientId": "K661",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "민타우는 초소 전갈의 출발 서명과 통과 내용을 천초윤에게 인계한다. 천초윤은 봉인과 양군 결재를 확인해 서명 없는 이동 통지가 면제 전갈로 바뀌지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/414"
+          }
+        ]
+      },
+      {
+        "recipientId": "K805",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "유금영은 폐쇄된 침수 구간과 늦어진 초소 전갈을 천초윤에게 알린다. 천초윤은 통과 품목과 급수 시간을 확인해 전갈 지연을 확인되지 않은 면제로 대신하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/540"
+          }
+        ]
+      },
+      {
+        "recipientId": "K853",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "구동희는 초소 전갈이 막힌 통로와 도착 지연을 천초윤에게 알린다. 천초윤은 급수 시간과 통행증을 확인해 지연 사유를 남기고 확인 안 된 면제 문서는 배달하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/582"
+          }
+        ]
+      },
+      {
+        "recipientId": "K949",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "류솔연은 폐쇄 구간 때문에 늦어진 초소 전갈을 천초윤에게 알린다. 천초윤은 통과 품목·급수 시간을 확인해 지연 전갈을 미확인 면제로 대신하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/667"
+          }
+        ]
+      },
+      {
+        "recipientId": "K997",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "심산양은 폐쇄 구간 때문에 늦어진 초소 전갈을 천초윤에게 전한다. 천초윤은 통행증·급수 시간을 확인해 지연 사유를 남기고 미확인 면제 문서는 대신 배달하지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/709"
+          }
+        ]
+      },
+      {
+        "recipientId": "K351",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/320"
+          }
+        ]
+      },
+      {
+        "recipientId": "K364",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "영한뫼의 통과 원장과 순번을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/321"
+          }
+        ]
+      },
+      {
+        "recipientId": "K360",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "천초윤의 전갈 사본을 같은 줄에 남긴다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/325"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K358",
     "personId": "person-0359",
@@ -169,6 +701,42 @@
       }
     ],
     "incoming": [
+      {
+        "from": "노은아",
+        "type": "계약",
+        "to": "천초윤",
+        "basis": "노은아는 눈에 막힌 통로를 열어 부상자를 먼저 옮긴 뒤 천초윤에게 통과 지연을 알린다. 천초윤은 급수 시간과 면제 통행증을 확인해 초소 전갈이 늦은 이유를 남기고, 확인 안 된 면제 문서를 대신 배달하지 않는다."
+      },
+      {
+        "from": "민타우",
+        "type": "계약",
+        "to": "천초윤",
+        "basis": "민타우는 초소 전갈의 출발 서명과 통과 내용을 천초윤에게 인계한다. 천초윤은 봉인과 양군 결재를 확인해 서명 없는 이동 통지가 면제 전갈로 바뀌지 않게 한다."
+      },
+      {
+        "from": "유금영",
+        "type": "계약",
+        "to": "천초윤",
+        "basis": "유금영은 폐쇄된 침수 구간과 늦어진 초소 전갈을 천초윤에게 알린다. 천초윤은 통과 품목과 급수 시간을 확인해 전갈 지연을 확인되지 않은 면제로 대신하지 않는다."
+      },
+      {
+        "from": "구동희",
+        "type": "계약",
+        "to": "천초윤",
+        "basis": "구동희는 초소 전갈이 막힌 통로와 도착 지연을 천초윤에게 알린다. 천초윤은 급수 시간과 통행증을 확인해 지연 사유를 남기고 확인 안 된 면제 문서는 배달하지 않는다."
+      },
+      {
+        "from": "류솔연",
+        "type": "계약",
+        "to": "천초윤",
+        "basis": "류솔연은 폐쇄 구간 때문에 늦어진 초소 전갈을 천초윤에게 알린다. 천초윤은 통과 품목·급수 시간을 확인해 지연 전갈을 미확인 면제로 대신하지 않는다."
+      },
+      {
+        "from": "심산양",
+        "type": "계약",
+        "to": "천초윤",
+        "basis": "심산양은 폐쇄 구간 때문에 늦어진 초소 전갈을 천초윤에게 전한다. 천초윤은 통행증·급수 시간을 확인해 지연 사유를 남기고 미확인 면제 문서는 대신 배달하지 않는다."
+      },
       {
         "from": "방마름",
         "type": "사제",

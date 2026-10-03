@@ -12,6 +12,329 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-장하원",
   "detailRoute": "/people/person-0710",
+  "birthDate": "2086-12-28",
+  "birthday": "12-28",
+  "age": 40,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/446",
+    "lore/characters/Cast-State-15.json#/content/447",
+    "lore/characters/Cast-State-15.json#/content/448",
+    "lore/characters/Cast-State-15.json#/content/449"
+  ],
+  "familyTree": {
+    "personId": "K710",
+    "nodes": [
+      {
+        "id": "K710",
+        "personId": "K710",
+        "kind": "person",
+        "name": "장하원",
+        "birthDate": "2086-12-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K710"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-장하원-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0710"
+      },
+      {
+        "id": "FH-K710-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "장승미",
+        "birthDate": "2056-12-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "장승미는 노량진 선창에서 구휼 물자 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-장하원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K710-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "장승도",
+        "birthDate": "2026-12-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "장승도는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-장하원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K710-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최도원",
+        "birthDate": "2056-12-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "최도원은 노량진 선창에서 구휼 물자 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-장하원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K710-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재나",
+        "birthDate": "2026-12-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정재나는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-장하원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K710-P-01:K710:biological",
+        "from": "FH-K710-P-01",
+        "to": "K710",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K710-P-02:FH-K710-P-01:biological",
+        "from": "FH-K710-P-02",
+        "to": "FH-K710-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K710-M-01:K710:biological",
+        "from": "FH-K710-M-01",
+        "to": "K710",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K710-M-02:FH-K710-M-01:biological",
+        "from": "FH-K710-M-02",
+        "to": "FH-K710-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-장하원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K710",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K710-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3405"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K710-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3407"
+          }
+        ]
+      },
+      {
+        "recipientId": "K376",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "장하원은 먼저 배분한 구휼 곡물과 손실을 전나경에게 인계한다. 전나경은 가족에게 전달된 몫과 남은 재고를 확인해 같은 물자가 다시 배분 약속에 잡히지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/457"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K710",
     "personId": "person-0710",
@@ -133,17 +456,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 장하원은 먼저 배분한 구휼 곡물과 손실을 전나경에게 인계한다. 전나경은 가족에게 전달된 몫과 남은 재고를 확인해 같은 물자가 다시 배분 약속에 잡히지 않게 한다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.",
     "개입": "명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "장하원은 명동역 구휼 물자 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 구휼 물자 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 구휼 물자 당직\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 75 | 공동 −30 | 원칙 −60 | 공개 −25 | 자격 0 | 분산 0 | 변혁 5\n- 욕망: 갈망 40 | 독점 0 | 위험 −35 | 과시 −20 | 지속 0 | 지향 동성 | 결합 다자\n:::",
+  "biography": "장하원은 명동역 구휼 물자 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 구휼 물자 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 구휼 물자 당직\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 장하원은 먼저 배분한 구휼 곡물과 손실을 전나경에게 인계한다. 전나경은 가족에게 전달된 몫과 남은 재고를 확인해 같은 물자가 다시 배분 약속에 잡히지 않게 한다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 75 | 공동 −30 | 원칙 −60 | 공개 −25 | 자격 0 | 분산 0 | 변혁 5\n- 욕망: 갈망 40 | 독점 0 | 위험 −35 | 과시 −20 | 지속 0 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-15"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "장하원",
+        "type": "계약",
+        "to": "전나경",
+        "basis": "장하원은 먼저 배분한 구휼 곡물과 손실을 전나경에게 인계한다. 전나경은 가족에게 전달된 몫과 남은 재고를 확인해 같은 물자가 다시 배분 약속에 잡히지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "person-0990",
-  "name": "양아태",
+  "name": "이사벨 가르시아",
   "title": "호송 전령",
   "position": "호송 전령",
   "rank": "주사",
@@ -10,8 +10,443 @@
   "stage": "S4",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-양아태",
+  "sourceRoute": "/world/Cast-State-07#인물-이사벨 가르시아",
   "detailRoute": "/people/person-0990",
+  "birthDate": "2098-05-12",
+  "birthday": "05-12",
+  "age": 28,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/644",
+    "lore/characters/Cast-State-07.json#/content/646",
+    "lore/characters/Cast-State-07.json#/content/647"
+  ],
+  "familyTree": {
+    "personId": "K990",
+    "nodes": [
+      {
+        "id": "K990",
+        "personId": "K990",
+        "kind": "person",
+        "name": "이사벨 가르시아",
+        "birthDate": "2098-05-12",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K990"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "소속: 환적국",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-이사벨-가르시아-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Isabel García",
+        "detailRoute": "/people/person-0990"
+      },
+      {
+        "id": "FH-K990-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "호세 가르시아",
+        "birthDate": "2068-05-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "호세 가르시아는 2068년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2086년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-이사벨-가르시아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "José García was born in 2068 and grew up reading family and work records. From 2086, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "José García",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K990-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "안토니오 가르시아",
+        "birthDate": "2038-05-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "안토니오 가르시아는 2038년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2056년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-이사벨-가르시아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Antonio García was born in 2038 and grew up reading family and work records. From 2056, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Antonio García",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K990-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "마누엘 가르시아",
+        "birthDate": "2008-05-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "마누엘 가르시아는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 민간 식품 공급과 용산 운송 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-이사벨-가르시아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Manuel García was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Manuel García",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K990-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "루시아 로메로",
+        "birthDate": "2068-05-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "루시아 로메로는 2068년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2086년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-이사벨-가르시아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Lucía Romero was born in 2068 and grew up reading family and work records. From 2086, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Lucía Romero",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K990-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "엘레나 로메로",
+        "birthDate": "2038-05-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "엘레나 로메로는 2038년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2056년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-이사벨-가르시아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Elena Romero was born in 2038 and grew up reading family and work records. From 2056, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Elena Romero",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K990-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이사벨 로메로",
+        "birthDate": "2008-05-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이사벨 로메로는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 민간 식품 공급과 용산 운송 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-이사벨-가르시아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Isabel Romero was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Isabel Romero",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K990-P-01:K990:biological",
+        "from": "FH-K990-P-01",
+        "to": "K990",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K990-P-02:FH-K990-P-01:biological",
+        "from": "FH-K990-P-02",
+        "to": "FH-K990-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K990-P-03:FH-K990-P-02:biological",
+        "from": "FH-K990-P-03",
+        "to": "FH-K990-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K990-M-01:K990:biological",
+        "from": "FH-K990-M-01",
+        "to": "K990",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K990-M-02:FH-K990-M-01:biological",
+        "from": "FH-K990-M-02",
+        "to": "FH-K990-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K990-M-03:FH-K990-M-02:biological",
+        "from": "FH-K990-M-03",
+        "to": "FH-K990-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-이사벨-가르시아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K990",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K990-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4777"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K990-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4780"
+          }
+        ]
+      },
+      {
+        "recipientId": "K171",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "이사벨 가르시아는 서명 없는 열차 출발을 에바 노바코바에게 알린다. 에바 노바코바는 점유 창과 탑승 증명을 확인해 출발 인수가 없는 기록을 완료 운행으로 적지 않는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/750"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K990",
     "personId": "person-0990",
@@ -92,9 +527,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "c591-b0a8-c6d0-694a",
-    "name": "남원 양씨",
-    "crest": "clan-crests/c591-b0a8-c6d0-694a.svg"
+    "id": "DIV-K990",
+    "name": "용산·이태원 가르시아씨",
+    "crest": "clan-crests/DIV-K990.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -129,21 +564,28 @@
     "욕망": "갈망 10 | 독점 −25 | 위험 35 | 과시 −15 | 지속 −10 | 지향 무성향 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 이사벨 가르시아는 2098년에 태어났다. 스페인계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 마누엘 가르시아는 2026년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 이사벨 가르시아의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 스페인어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 이사벨 가르시아는 서명 없는 열차 출발을 에바 노바코바에게 알린다. 에바 노바코바는 점유 창과 탑승 증명을 확인해 출발 인수가 없는 기록을 완료 운행으로 적지 않는다.",
     "야망": "호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
     "공포": "호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 0 | 물질 10 | 공동 −10 | 원칙 10 | 공개 −15 | 자격 20 | 분산 10 | 변혁 5\n- 욕망: 갈망 10 | 독점 −25 | 위험 35 | 과시 −15 | 지속 −10 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 이사벨 가르시아는 2098년에 태어났다. 스페인계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 마누엘 가르시아는 2026년 용산·이태원에서 이태원 민간 식품 공급과 용산 운송 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 이사벨 가르시아의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 스페인어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 이사벨 가르시아는 서명 없는 열차 출발을 에바 노바코바에게 알린다. 에바 노바코바는 점유 창과 탑승 증명을 확인해 출발 인수가 없는 기록을 완료 운행으로 적지 않는다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 0 | 물질 10 | 공동 −10 | 원칙 10 | 공개 −15 | 자격 20 | 분산 10 | 변혁 5\n- 욕망: 갈망 10 | 독점 −25 | 위험 35 | 과시 −15 | 지속 −10 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "이사벨 가르시아",
+        "type": "계약",
+        "to": "에바 노바코바",
+        "basis": "이사벨 가르시아는 서명 없는 열차 출발을 에바 노바코바에게 알린다. 에바 노바코바는 점유 창과 탑승 증명을 확인해 출발 인수가 없는 기록을 완료 운행으로 적지 않는다."
+      }
+    ],
     "incoming": []
   }
 }

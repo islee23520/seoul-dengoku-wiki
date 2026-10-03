@@ -12,6 +12,484 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-제바름",
   "detailRoute": "/people/person-0107",
+  "birthDate": "2101-05-31",
+  "birthday": "05-31",
+  "age": 25,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/214",
+    "lore/characters/Cast-State-04.json#/content/216",
+    "lore/characters/Cast-State-04.json#/content/219"
+  ],
+  "familyTree": {
+    "personId": "K106",
+    "nodes": [
+      {
+        "id": "K106",
+        "personId": "K106",
+        "kind": "person",
+        "name": "제바름",
+        "birthDate": "2101-05-31",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K106"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 성동 골목의무소 원장 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-제바름-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0107"
+      },
+      {
+        "id": "FH-K106-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "제승정",
+        "birthDate": "2071-05-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "제승정은 제기동 의무소에서 골목 진료·처방 배분 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-제바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K106-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "제승아",
+        "birthDate": "2041-05-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "제승아는 제기동 의무소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-제바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K106-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "제승희",
+        "birthDate": "2011-05-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "제승희는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-제바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K106-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조승재",
+        "birthDate": "2071-05-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "조승재는 제기동 의무소에서 골목 진료·처방 배분 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-제바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K106-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김승온",
+        "birthDate": "2041-05-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "김승온은 제기동 의무소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-제바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K106-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승온",
+        "birthDate": "2011-05-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박승온은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-제바름-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K106-P-01:K106:biological",
+        "from": "FH-K106-P-01",
+        "to": "K106",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K106-P-02:FH-K106-P-01:biological",
+        "from": "FH-K106-P-02",
+        "to": "FH-K106-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K106-P-03:FH-K106-P-02:biological",
+        "from": "FH-K106-P-03",
+        "to": "FH-K106-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K106-M-01:K106:biological",
+        "from": "FH-K106-M-01",
+        "to": "K106",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K106-M-02:FH-K106-M-01:biological",
+        "from": "FH-K106-M-02",
+        "to": "FH-K106-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K106-M-03:FH-K106-M-02:biological",
+        "from": "FH-K106-M-03",
+        "to": "FH-K106-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-제바름-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K106",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K106-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/526"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K106-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/529"
+          }
+        ]
+      },
+      {
+        "recipientId": "K683",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "고라호는 환승 통로에서 먼저 옮긴 부상자를 제바름에게 인계한다. 제바름은 골목 진료에서 상태와 탈수를 확인해 이송된 환자가 전령 기록만 남기고 치료에서 빠지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/433"
+          }
+        ]
+      },
+      {
+        "recipientId": "K875",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "고타진은 통로에서 먼저 옮긴 부상자를 제바름에게 인계한다. 제바름은 골목 진료에서 상태와 탈수를 확인해 전령의 이송이 실제 치료로 이어지게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/601"
+          }
+        ]
+      },
+      {
+        "recipientId": "K923",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "하동재는 통로에서 옮긴 부상자를 제바름에게 인계한다. 제바름은 골목 진료에서 상태와 탈수를 확인해 이송된 환자가 전령 기록만 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/644"
+          }
+        ]
+      },
+      {
+        "recipientId": "K094",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "장민재의 급수 시민권을 진료에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/92"
+          }
+        ]
+      },
+      {
+        "recipientId": "K098",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "진모래의 펌프실 부상을 골목으로 받으며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/93"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K106",
     "personId": "person-0107",
@@ -169,6 +647,25 @@
         "basis": "진모래의 펌프실 부상을 골목으로 받으며"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "고라호",
+        "type": "계약",
+        "to": "제바름",
+        "basis": "고라호는 환승 통로에서 먼저 옮긴 부상자를 제바름에게 인계한다. 제바름은 골목 진료에서 상태와 탈수를 확인해 이송된 환자가 전령 기록만 남기고 치료에서 빠지지 않게 한다."
+      },
+      {
+        "from": "고타진",
+        "type": "계약",
+        "to": "제바름",
+        "basis": "고타진은 통로에서 먼저 옮긴 부상자를 제바름에게 인계한다. 제바름은 골목 진료에서 상태와 탈수를 확인해 전령의 이송이 실제 치료로 이어지게 한다."
+      },
+      {
+        "from": "하동재",
+        "type": "계약",
+        "to": "제바름",
+        "basis": "하동재는 통로에서 옮긴 부상자를 제바름에게 인계한다. 제바름은 골목 진료에서 상태와 탈수를 확인해 이송된 환자가 전령 기록만 남지 않게 한다."
+      }
+    ]
   }
 }

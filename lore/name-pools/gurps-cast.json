@@ -3,8 +3,8 @@
   "status": "proposal",
   "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다(G2 Q9 L0 B). 16국 수장에는 수장별 검토의 선택지를 적용한다(G2 Q9 L01–L16). 최지우(K219)는 Core-Characters 판본을 따른다(L09 C). 모두 소유자 결정 2026-09-28이다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
   "invariants": {
-    "lore/name-pools/values-cast.json": "1d5702c905da6e046fe742dea30ee55a0abe1167d8370a302265d518ab723c7a",
-    "lore/name-pools/person-id-registry.json": "c0aedfa82ef9a29c6dece15ee867efa0b12849ec561b44cb386e508a6f875c32"
+    "lore/name-pools/values-cast.json": "0fa4362293fd84359bd07cc7f2f1d4a5b21aedc59beabc4363688ab106527e95",
+    "lore/name-pools/person-id-registry.json": "2fe5a3451efabd6da9fbbec2a6abaa0af910e4f7a629232dd68421ed1e646d19"
   },
   "rules": {
     "edition": "GURPS Basic Set: Characters, 4th ed. (SJG 2004)",
@@ -368,7 +368,7 @@
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/7/text/ko",
+              "pointer": "/content/8/text/ko",
               "quote": "이서담은 그날로 배급표와 교량 통행세를 함께 봉인하고, 장필규의 배급 원장 누락을 덮어 준 빚이 도로 불려 나올 줄 알면서도 골목 저수조 수위를 계약 회의에 올린다."
             }
           ]
@@ -401,7 +401,7 @@
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/7/text/ko",
+              "pointer": "/content/8/text/ko",
               "quote": "이서담은 그날로 배급표와 교량 통행세를 함께 봉인하고, 장필규의 배급 원장 누락을 덮어 준 빚이 도로 불려 나올 줄 알면서도 골목 저수조 수위를 계약 회의에 올린다."
             }
           ],
@@ -507,7 +507,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/82/items/1/ko",
+            "pointer": "/content/83/items/1/ko",
             "quote": "생업: 수문 경비"
           }
         ]
@@ -532,12 +532,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/83/text/ko",
+              "pointer": "/content/84/text/ko",
               "quote": "개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/84/text/ko",
+              "pointer": "/content/85/text/ko",
               "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
             }
           ]
@@ -560,7 +560,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/83/text/ko",
+              "pointer": "/content/84/text/ko",
               "quote": "개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다."
             }
           ],
@@ -576,7 +576,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/82/items/1/ko",
+              "pointer": "/content/83/items/1/ko",
               "quote": "생업: 수문 경비"
             }
           ],
@@ -592,7 +592,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/84/text/ko",
+              "pointer": "/content/85/text/ko",
               "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
             }
           ],
@@ -608,7 +608,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/82/items/3/ko",
+              "pointer": "/content/83/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -682,7 +682,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/38/items/1/ko",
+            "pointer": "/content/39/items/1/ko",
             "quote": "생업: 수질 검사"
           }
         ]
@@ -707,12 +707,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/39/text/ko",
+              "pointer": "/content/40/text/ko",
               "quote": "매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/40/text/ko",
+              "pointer": "/content/41/text/ko",
               "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
             }
           ]
@@ -735,12 +735,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/38/items/1/ko",
+              "pointer": "/content/39/items/1/ko",
               "quote": "생업: 수질 검사"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/39/text/ko",
+              "pointer": "/content/40/text/ko",
               "quote": "매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다."
             }
           ],
@@ -756,7 +756,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/40/text/ko",
+              "pointer": "/content/41/text/ko",
               "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
             }
           ],
@@ -772,7 +772,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/38/items/3/ko",
+              "pointer": "/content/39/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -846,7 +846,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/93/items/1/ko",
+            "pointer": "/content/94/items/1/ko",
             "quote": "생업: 차량·펌프 정비"
           }
         ]
@@ -871,12 +871,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/92/text/ko",
+              "pointer": "/content/93/text/ko",
               "quote": "공구 소리를 대화처럼 읽고, 약속한 출고 시각을 어기는 조합을 오래 기억한다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/95/text/ko",
+              "pointer": "/content/96/text/ko",
               "quote": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다."
             }
           ]
@@ -899,7 +899,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/92/text/ko",
+              "pointer": "/content/93/text/ko",
               "quote": "공구 소리를 대화처럼 읽고, 약속한 출고 시각을 어기는 조합을 오래 기억한다."
             }
           ],
@@ -915,12 +915,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/93/items/1/ko",
+              "pointer": "/content/94/items/1/ko",
               "quote": "생업: 차량·펌프 정비"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/95/text/ko",
+              "pointer": "/content/96/text/ko",
               "quote": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다."
             }
           ],
@@ -936,7 +936,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/93/items/3/ko",
+              "pointer": "/content/94/items/3/ko",
               "quote": "단철공."
             }
           ],
@@ -1010,7 +1010,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/104/items/1/ko",
+            "pointer": "/content/105/items/1/ko",
             "quote": "생업: 수상 운송"
           }
         ]
@@ -1035,12 +1035,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/105/text/ko",
+              "pointer": "/content/106/text/ko",
               "quote": "선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/106/text/ko",
+              "pointer": "/content/107/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ]
@@ -1063,7 +1063,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/105/text/ko",
+              "pointer": "/content/106/text/ko",
               "quote": "선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다."
             }
           ],
@@ -1079,7 +1079,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/104/items/1/ko",
+              "pointer": "/content/105/items/1/ko",
               "quote": "생업: 수상 운송"
             }
           ],
@@ -1095,7 +1095,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/106/text/ko",
+              "pointer": "/content/107/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ],
@@ -1169,7 +1169,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/115/items/1/ko",
+            "pointer": "/content/116/items/1/ko",
             "quote": "생업: 계약 기록·감수"
           }
         ]
@@ -1194,17 +1194,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/114/text/ko",
+              "pointer": "/content/115/text/ko",
               "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/116/text/ko",
+              "pointer": "/content/117/text/ko",
               "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/117/text/ko",
+              "pointer": "/content/118/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -1227,17 +1227,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/115/items/1/ko",
+              "pointer": "/content/116/items/1/ko",
               "quote": "생업: 계약 기록·감수"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/114/text/ko",
+              "pointer": "/content/115/text/ko",
               "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/116/text/ko",
+              "pointer": "/content/117/text/ko",
               "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
             }
           ],
@@ -1253,7 +1253,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/117/text/ko",
+              "pointer": "/content/118/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -1269,7 +1269,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/115/items/3/ko",
+              "pointer": "/content/116/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -1338,7 +1338,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/16/items/1/ko",
+            "pointer": "/content/17/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -1363,12 +1363,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/17/text/ko",
+              "pointer": "/content/18/text/ko",
               "quote": "골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/18/text/ko",
+              "pointer": "/content/19/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -1391,12 +1391,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/16/items/1/ko",
+              "pointer": "/content/17/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/17/text/ko",
+              "pointer": "/content/18/text/ko",
               "quote": "골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다."
             }
           ],
@@ -1412,7 +1412,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/16/items/1/ko",
+              "pointer": "/content/17/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -1428,7 +1428,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/18/text/ko",
+              "pointer": "/content/19/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -1444,7 +1444,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/16/items/3/ko",
+              "pointer": "/content/17/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -1518,7 +1518,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/126/items/1/ko",
+            "pointer": "/content/127/items/1/ko",
             "quote": "생업: 철도 배차"
           }
         ]
@@ -1543,12 +1543,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/127/text/ko",
+              "pointer": "/content/128/text/ko",
               "quote": "통행세 원장을 공개하되 급수·보수·군수 순서를 배차관이 매일 재선언하고, 뇌물 배차는 선로 차단으로 응징한다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/128/text/ko",
+              "pointer": "/content/129/text/ko",
               "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
             }
           ]
@@ -1560,7 +1560,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/128/text/ko",
+              "pointer": "/content/129/text/ko",
               "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
             }
           ]
@@ -1577,12 +1577,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/126/items/1/ko",
+              "pointer": "/content/127/items/1/ko",
               "quote": "생업: 철도 배차"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/127/text/ko",
+              "pointer": "/content/128/text/ko",
               "quote": "통행세 원장을 공개하되 급수·보수·군수 순서를 배차관이 매일 재선언하고, 뇌물 배차는 선로 차단으로 응징한다."
             }
           ],
@@ -1598,7 +1598,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/128/text/ko",
+              "pointer": "/content/129/text/ko",
               "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
             }
           ],
@@ -1614,7 +1614,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/126/items/3/ko",
+              "pointer": "/content/127/items/3/ko",
               "quote": "단철공."
             }
           ],
@@ -1688,7 +1688,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/137/items/1/ko",
+            "pointer": "/content/138/items/1/ko",
             "quote": "생업: 펌프 정비"
           }
         ]
@@ -1713,7 +1713,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/138/text/ko",
+              "pointer": "/content/139/text/ko",
               "quote": "교대마다 밀봉 두께를 칠판에 쓰고, 계측 도장 없는 개조 펌프는 유치선에 올리지 않는다."
             }
           ]
@@ -1736,7 +1736,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/138/text/ko",
+              "pointer": "/content/139/text/ko",
               "quote": "교대마다 밀봉 두께를 칠판에 쓰고, 계측 도장 없는 개조 펌프는 유치선에 올리지 않는다."
             }
           ],
@@ -1752,7 +1752,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/137/items/1/ko",
+              "pointer": "/content/138/items/1/ko",
               "quote": "생업: 펌프 정비"
             }
           ],
@@ -1768,7 +1768,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/137/items/3/ko",
+              "pointer": "/content/138/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -1842,7 +1842,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/148/items/1/ko",
+            "pointer": "/content/149/items/1/ko",
             "quote": "생업: 급수 물자 거래"
           }
         ]
@@ -1867,12 +1867,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/149/text/ko",
+              "pointer": "/content/150/text/ko",
               "quote": "아침 저울을 공개하고, 이서담의 구역 봉인 없는 수통은 선석에 들이지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/150/text/ko",
+              "pointer": "/content/151/text/ko",
               "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
             }
           ]
@@ -1895,12 +1895,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/148/items/1/ko",
+              "pointer": "/content/149/items/1/ko",
               "quote": "생업: 급수 물자 거래"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/149/text/ko",
+              "pointer": "/content/150/text/ko",
               "quote": "아침 저울을 공개하고, 이서담의 구역 봉인 없는 수통은 선석에 들이지 않는다."
             }
           ],
@@ -1916,7 +1916,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/150/text/ko",
+              "pointer": "/content/151/text/ko",
               "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
             }
           ],
@@ -1932,7 +1932,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/148/items/3/ko",
+              "pointer": "/content/149/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -2006,7 +2006,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/159/items/1/ko",
+            "pointer": "/content/160/items/1/ko",
             "quote": "생업: 진료"
           }
         ]
@@ -2031,12 +2031,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/160/text/ko",
+              "pointer": "/content/161/text/ko",
               "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 기준 미달 원수가 들어온 날에는 선출 군주의 독촉이 있어도 선창 진료를 닫는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/161/text/ko",
+              "pointer": "/content/162/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -2059,12 +2059,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/159/items/1/ko",
+              "pointer": "/content/160/items/1/ko",
               "quote": "생업: 진료"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/160/text/ko",
+              "pointer": "/content/161/text/ko",
               "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 기준 미달 원수가 들어온 날에는 선출 군주의 독촉이 있어도 선창 진료를 닫는다."
             }
           ],
@@ -2080,7 +2080,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/161/text/ko",
+              "pointer": "/content/162/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -2096,7 +2096,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/159/items/3/ko",
+              "pointer": "/content/160/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -2170,7 +2170,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/170/items/1/ko",
+            "pointer": "/content/171/items/1/ko",
             "quote": "생업: 관로 순찰"
           }
         ]
@@ -2195,17 +2195,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/169/text/ko",
+              "pointer": "/content/170/text/ko",
               "quote": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/171/text/ko",
+              "pointer": "/content/172/text/ko",
               "quote": "순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/172/text/ko",
+              "pointer": "/content/173/text/ko",
               "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
             }
           ]
@@ -2228,7 +2228,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/171/text/ko",
+              "pointer": "/content/172/text/ko",
               "quote": "순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다."
             }
           ],
@@ -2244,17 +2244,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/170/items/1/ko",
+              "pointer": "/content/171/items/1/ko",
               "quote": "생업: 관로 순찰"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/169/text/ko",
+              "pointer": "/content/170/text/ko",
               "quote": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/172/text/ko",
+              "pointer": "/content/173/text/ko",
               "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
             }
           ],
@@ -2270,7 +2270,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/170/items/3/ko",
+              "pointer": "/content/171/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -2330,7 +2330,7 @@
     },
     {
       "id": "K014",
-      "name": "표시완",
+      "name": "대니얼 브룩스",
       "url": "/people/person-0014",
       "state": "S01",
       "method": "card-lexicon",
@@ -2339,7 +2339,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/181/items/1/ko",
+            "pointer": "/content/182/items/1/ko",
             "quote": "생업: 계약 전갈 전달"
           }
         ]
@@ -2364,7 +2364,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/182/text/ko",
+              "pointer": "/content/183/text/ko",
               "quote": "전갈을 배급구역과 감사실에 동시에 보내고, 단수 예고는 장필규의 날인과 이서담의 연서가 둘 다 있어야 달린다."
             }
           ]
@@ -2387,7 +2387,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/182/text/ko",
+              "pointer": "/content/183/text/ko",
               "quote": "전갈을 배급구역과 감사실에 동시에 보내고, 단수 예고는 장필규의 날인과 이서담의 연서가 둘 다 있어야 달린다."
             }
           ],
@@ -2403,7 +2403,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/181/items/1/ko",
+              "pointer": "/content/182/items/1/ko",
               "quote": "생업: 계약 전갈 전달"
             }
           ],
@@ -2419,7 +2419,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/181/items/3/ko",
+              "pointer": "/content/182/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -2468,7 +2468,7 @@
         "size": 4,
         "current_location": "지하 보도",
         "camp": {
-          "name": "표시완 지하도 야영지",
+          "name": "대니얼 브룩스 지하도 야영지",
           "type": "야영지",
           "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -2493,7 +2493,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/192/items/1/ko",
+            "pointer": "/content/193/items/1/ko",
             "quote": "생업: 침수관로 실측"
           }
         ]
@@ -2518,12 +2518,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/193/text/ko",
+              "pointer": "/content/194/text/ko",
               "quote": "채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/194/text/ko",
+              "pointer": "/content/195/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ]
@@ -2546,7 +2546,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/193/text/ko",
+              "pointer": "/content/194/text/ko",
               "quote": "채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다."
             }
           ],
@@ -2562,7 +2562,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/192/items/1/ko",
+              "pointer": "/content/193/items/1/ko",
               "quote": "생업: 침수관로 실측"
             }
           ],
@@ -2578,7 +2578,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/194/text/ko",
+              "pointer": "/content/195/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ],
@@ -2652,7 +2652,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/203/items/1/ko",
+            "pointer": "/content/204/items/1/ko",
             "quote": "생업: 통행세 기록"
           }
         ]
@@ -2677,17 +2677,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/202/text/ko",
+              "pointer": "/content/203/text/ko",
               "quote": "숫자는 공개하되 해석은 난외에 남긴다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/204/text/ko",
+              "pointer": "/content/205/text/ko",
               "quote": "통행세 사본을 배차판과 감사실에 동시에 붙이고, 비상 요율도 사흘 안의 재계산 없이는 무효라고 못 박는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/205/text/ko",
+              "pointer": "/content/206/text/ko",
               "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
             }
           ]
@@ -2710,17 +2710,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/203/items/1/ko",
+              "pointer": "/content/204/items/1/ko",
               "quote": "생업: 통행세 기록"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/202/text/ko",
+              "pointer": "/content/203/text/ko",
               "quote": "숫자는 공개하되 해석은 난외에 남긴다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/204/text/ko",
+              "pointer": "/content/205/text/ko",
               "quote": "통행세 사본을 배차판과 감사실에 동시에 붙이고, 비상 요율도 사흘 안의 재계산 없이는 무효라고 못 박는다."
             }
           ],
@@ -2736,7 +2736,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/205/text/ko",
+              "pointer": "/content/206/text/ko",
               "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
             }
           ],
@@ -2752,7 +2752,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/203/items/3/ko",
+              "pointer": "/content/204/items/3/ko",
               "quote": "단철공."
             }
           ],
@@ -2821,7 +2821,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/49/items/1/ko",
+            "pointer": "/content/50/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -2846,7 +2846,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/50/text/ko",
+              "pointer": "/content/51/text/ko",
               "quote": "대합실 배급 창구와 의무 대기표를 매일 공개하고, 군수 화차는 급수열차가 떠난 뒤에만 승강장에 붙인다."
             }
           ]
@@ -2869,7 +2869,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/50/text/ko",
+              "pointer": "/content/51/text/ko",
               "quote": "대합실 배급 창구와 의무 대기표를 매일 공개하고, 군수 화차는 급수열차가 떠난 뒤에만 승강장에 붙인다."
             }
           ],
@@ -2885,7 +2885,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/49/items/1/ko",
+              "pointer": "/content/50/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -2954,7 +2954,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/60/items/1/ko",
+            "pointer": "/content/61/items/1/ko",
             "quote": "생업: 전력 설비 운전"
           }
         ]
@@ -2979,12 +2979,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/61/text/ko",
+              "pointer": "/content/62/text/ko",
               "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/62/text/ko",
+              "pointer": "/content/63/text/ko",
               "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
             }
           ]
@@ -3007,12 +3007,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/60/items/1/ko",
+              "pointer": "/content/61/items/1/ko",
               "quote": "생업: 전력 설비 운전"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/61/text/ko",
+              "pointer": "/content/62/text/ko",
               "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
             }
           ],
@@ -3028,7 +3028,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/62/text/ko",
+              "pointer": "/content/63/text/ko",
               "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
             }
           ],
@@ -3044,7 +3044,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/60/items/3/ko",
+              "pointer": "/content/61/items/3/ko",
               "quote": "단철공."
             }
           ],
@@ -3113,7 +3113,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/214/items/1/ko",
+            "pointer": "/content/215/items/1/ko",
             "quote": "생업: 선창 경매"
           }
         ]
@@ -3138,12 +3138,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/215/text/ko",
+              "pointer": "/content/216/text/ko",
               "quote": "경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/216/text/ko",
+              "pointer": "/content/217/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ]
@@ -3166,7 +3166,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/215/text/ko",
+              "pointer": "/content/216/text/ko",
               "quote": "경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다."
             }
           ],
@@ -3182,7 +3182,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/214/items/1/ko",
+              "pointer": "/content/215/items/1/ko",
               "quote": "생업: 선창 경매"
             }
           ],
@@ -3198,7 +3198,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/216/text/ko",
+              "pointer": "/content/217/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ],
@@ -3267,7 +3267,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/225/items/1/ko",
+            "pointer": "/content/226/items/1/ko",
             "quote": "생업: 이동 진료"
           }
         ]
@@ -3292,12 +3292,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/226/text/ko",
+              "pointer": "/content/227/text/ko",
               "quote": "골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/227/text/ko",
+              "pointer": "/content/228/text/ko",
               "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
             }
           ]
@@ -3320,17 +3320,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/225/items/1/ko",
+              "pointer": "/content/226/items/1/ko",
               "quote": "생업: 이동 진료"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/226/text/ko",
+              "pointer": "/content/227/text/ko",
               "quote": "골목별 설사·탈수 게시판을 운영하고, 단수 예고가 뜨면 임바다의 대표 연서로 저수조 옆 진료를 연다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/227/text/ko",
+              "pointer": "/content/228/text/ko",
               "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
             }
           ],
@@ -3399,7 +3399,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/71/items/1/ko",
+            "pointer": "/content/72/items/1/ko",
             "quote": "생업: 비상 발전 운전"
           }
         ]
@@ -3424,12 +3424,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/72/text/ko",
+              "pointer": "/content/73/text/ko",
               "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 허은찬에게 보내고, 최저 출력 이하면 선출 군주의 독촉이 있어도 군수 배전을 끊는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/73/text/ko",
+              "pointer": "/content/74/text/ko",
               "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
             }
           ]
@@ -3441,7 +3441,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/73/text/ko",
+              "pointer": "/content/74/text/ko",
               "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
             }
           ]
@@ -3458,12 +3458,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/71/items/1/ko",
+              "pointer": "/content/72/items/1/ko",
               "quote": "생업: 비상 발전 운전"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/72/text/ko",
+              "pointer": "/content/73/text/ko",
               "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 허은찬에게 보내고, 최저 출력 이하면 선출 군주의 독촉이 있어도 군수 배전을 끊는다."
             }
           ],
@@ -3479,7 +3479,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/73/text/ko",
+              "pointer": "/content/74/text/ko",
               "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
             }
           ],
@@ -3495,7 +3495,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/71/items/3/ko",
+              "pointer": "/content/72/items/3/ko",
               "quote": "단철공."
             }
           ],
@@ -3564,7 +3564,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/236/items/1/ko",
+            "pointer": "/content/237/items/1/ko",
             "quote": "생업: 급수열차 승무"
           }
         ]
@@ -3589,12 +3589,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/235/text/ko",
+              "pointer": "/content/236/text/ko",
               "quote": "차창 밖 관로 소리를 사람 말보다 먼저 듣고, 승차 명부가 비면 기관실 문을 잠근다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/237/text/ko",
+              "pointer": "/content/238/text/ko",
               "quote": "출입 명부와 급수통 봉인을 이중으로 남기고, 구두 하차는 선출 군주 전령의 날인이 있어도 거부한다."
             }
           ]
@@ -3617,7 +3617,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/237/text/ko",
+              "pointer": "/content/238/text/ko",
               "quote": "출입 명부와 급수통 봉인을 이중으로 남기고, 구두 하차는 선출 군주 전령의 날인이 있어도 거부한다."
             }
           ],
@@ -3633,7 +3633,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/235/text/ko",
+              "pointer": "/content/236/text/ko",
               "quote": "차창 밖 관로 소리를 사람 말보다 먼저 듣고, 승차 명부가 비면 기관실 문을 잠근다."
             }
           ],
@@ -3649,7 +3649,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/236/items/3/ko",
+              "pointer": "/content/237/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -3718,7 +3718,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/247/items/1/ko",
+            "pointer": "/content/248/items/1/ko",
             "quote": "생업: 계약 기록"
           }
         ]
@@ -3743,12 +3743,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/248/text/ko",
+              "pointer": "/content/249/text/ko",
               "quote": "협상 좌석마다 잉크 색을 나누고, 날인 없는 구두 합의는 배급표 하단에도 적지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/249/text/ko",
+              "pointer": "/content/250/text/ko",
               "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
             }
           ]
@@ -3771,12 +3771,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/247/items/1/ko",
+              "pointer": "/content/248/items/1/ko",
               "quote": "생업: 계약 기록"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/248/text/ko",
+              "pointer": "/content/249/text/ko",
               "quote": "협상 좌석마다 잉크 색을 나누고, 날인 없는 구두 합의는 배급표 하단에도 적지 않는다."
             }
           ],
@@ -3792,7 +3792,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/249/text/ko",
+              "pointer": "/content/250/text/ko",
               "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
             }
           ],
@@ -3808,7 +3808,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/247/items/3/ko",
+              "pointer": "/content/248/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -3877,7 +3877,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/258/items/1/ko",
+            "pointer": "/content/259/items/1/ko",
             "quote": "생업: 문서 입회·대조"
           }
         ]
@@ -3902,12 +3902,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/259/text/ko",
+              "pointer": "/content/260/text/ko",
               "quote": "사본은 배급구역 대표와 감사관이 동시에 볼 때만 펼치고, 한쪽만 온 열람은 빈 봉투로 돌려보낸다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/260/text/ko",
+              "pointer": "/content/261/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ]
@@ -3930,12 +3930,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/258/items/1/ko",
+              "pointer": "/content/259/items/1/ko",
               "quote": "생업: 문서 입회·대조"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/259/text/ko",
+              "pointer": "/content/260/text/ko",
               "quote": "사본은 배급구역 대표와 감사관이 동시에 볼 때만 펼치고, 한쪽만 온 열람은 빈 봉투로 돌려보낸다."
             }
           ],
@@ -3951,7 +3951,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/260/text/ko",
+              "pointer": "/content/261/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ],
@@ -4020,7 +4020,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/27/items/1/ko",
+            "pointer": "/content/28/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -4045,7 +4045,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/28/text/ko",
+              "pointer": "/content/29/text/ko",
               "quote": "골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다."
             }
           ]
@@ -4068,7 +4068,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/27/items/1/ko",
+              "pointer": "/content/28/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -4084,7 +4084,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/28/text/ko",
+              "pointer": "/content/29/text/ko",
               "quote": "골목 수질 쪽지를 매일 봉인해 정수공정에 보내고, 기준 미달이면 배급표 날인을 일제히 거둔다."
             }
           ],
@@ -4153,7 +4153,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/269/items/1/ko",
+            "pointer": "/content/270/items/1/ko",
             "quote": "생업: 협약 원본 보관"
           }
         ]
@@ -4195,7 +4195,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/269/items/1/ko",
+              "pointer": "/content/270/items/1/ko",
               "quote": "생업: 협약 원본 보관"
             }
           ],
@@ -4264,7 +4264,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/280/items/1/ko",
+            "pointer": "/content/281/items/1/ko",
             "quote": "생업: 호송 전갈 전달"
           }
         ]
@@ -4289,7 +4289,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/281/text/ko",
+              "pointer": "/content/282/text/ko",
               "quote": "호송 순번은 배급구역과 보수열차장이 함께 추첨하고, 암호패 없는 야간 추가는 수문에서 되돌린다."
             }
           ]
@@ -4312,7 +4312,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/281/text/ko",
+              "pointer": "/content/282/text/ko",
               "quote": "호송 순번은 배급구역과 보수열차장이 함께 추첨하고, 암호패 없는 야간 추가는 수문에서 되돌린다."
             }
           ],
@@ -4328,7 +4328,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/280/items/1/ko",
+              "pointer": "/content/281/items/1/ko",
               "quote": "생업: 호송 전갈 전달"
             }
           ],
@@ -4344,7 +4344,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/280/items/1/ko",
+              "pointer": "/content/281/items/1/ko",
               "quote": "생업: 호송 전갈 전달"
             }
           ],
@@ -4413,7 +4413,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/291/items/1/ko",
+            "pointer": "/content/292/items/1/ko",
             "quote": "생업: 급수 계량·배분"
           }
         ]
@@ -4438,12 +4438,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/290/text/ko",
+              "pointer": "/content/291/text/ko",
               "quote": "숫자는 큰 소리로 읽고 해석은 난외에만 남긴다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/293/text/ko",
+              "pointer": "/content/294/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -4466,7 +4466,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/291/items/1/ko",
+              "pointer": "/content/292/items/1/ko",
               "quote": "생업: 급수 계량·배분"
             }
           ],
@@ -4482,7 +4482,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/290/text/ko",
+              "pointer": "/content/291/text/ko",
               "quote": "숫자는 큰 소리로 읽고 해석은 난외에만 남긴다."
             }
           ],
@@ -4498,7 +4498,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/293/text/ko",
+              "pointer": "/content/294/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -4514,7 +4514,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/291/items/3/ko",
+              "pointer": "/content/292/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -25436,7 +25436,7 @@
     },
     {
       "id": "K170",
-      "name": "신가온",
+      "name": "알렉산더 밀러",
       "url": "/people/person-0171",
       "state": "S07",
       "method": "card-lexicon",
@@ -25558,7 +25558,7 @@
         "size": 4,
         "current_location": "폐컨테이너 적치장",
         "camp": {
-          "name": "신가온 컨테이너 야영지",
+          "name": "알렉산더 밀러 컨테이너 야영지",
           "type": "야영지",
           "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25574,7 +25574,7 @@
     },
     {
       "id": "K171",
-      "name": "권시온",
+      "name": "에바 노바코바",
       "url": "/people/person-0172",
       "state": "S07",
       "method": "card-lexicon",
@@ -25674,7 +25674,7 @@
         "size": 4,
         "current_location": "폐건물 옥상",
         "camp": {
-          "name": "권시온 옥상 야영지",
+          "name": "에바 노바코바 옥상 야영지",
           "type": "야영지",
           "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25690,7 +25690,7 @@
     },
     {
       "id": "K172",
-      "name": "황지호",
+      "name": "아이작 워커",
       "url": "/people/person-0173",
       "state": "S07",
       "method": "card-lexicon",
@@ -25817,7 +25817,7 @@
         "size": 4,
         "current_location": "한강 둔치",
         "camp": {
-          "name": "황지호 한강변 야영지",
+          "name": "아이작 워커 한강변 야영지",
           "type": "야영지",
           "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25833,7 +25833,7 @@
     },
     {
       "id": "K173",
-      "name": "송이든",
+      "name": "루카스 슈나이더",
       "url": "/people/person-0174",
       "state": "S07",
       "method": "card-lexicon",
@@ -25944,7 +25944,7 @@
         "size": 4,
         "current_location": "운행 중단 역사",
         "camp": {
-          "name": "송이든 폐역 야영지",
+          "name": "루카스 슈나이더 폐역 야영지",
           "type": "야영지",
           "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25960,7 +25960,7 @@
     },
     {
       "id": "K174",
-      "name": "강다은",
+      "name": "클라라 베넷",
       "url": "/people/person-0175",
       "state": "S07",
       "method": "card-lexicon",
@@ -26060,7 +26060,7 @@
         "size": 4,
         "current_location": "고가도로 밑",
         "camp": {
-          "name": "강다은 고가도로 하부 야영지",
+          "name": "클라라 베넷 고가도로 하부 야영지",
           "type": "야영지",
           "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26076,7 +26076,7 @@
     },
     {
       "id": "K175",
-      "name": "양건우",
+      "name": "미콜라 본다렌코",
       "url": "/people/person-0176",
       "state": "S07",
       "method": "card-lexicon",
@@ -26223,7 +26223,7 @@
         "size": 4,
         "current_location": "지하 보도",
         "camp": {
-          "name": "양건우 지하도 야영지",
+          "name": "미콜라 본다렌코 지하도 야영지",
           "type": "야영지",
           "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26239,7 +26239,7 @@
     },
     {
       "id": "K176",
-      "name": "주서람",
+      "name": "나탈리야 소콜로바",
       "url": "/people/person-0177",
       "state": "S07",
       "method": "card-lexicon",
@@ -26360,7 +26360,7 @@
         "size": 4,
         "current_location": "외곽 산지",
         "camp": {
-          "name": "주서람 산림 야영지",
+          "name": "나탈리야 소콜로바 산림 야영지",
           "type": "야영지",
           "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26376,7 +26376,7 @@
     },
     {
       "id": "K177",
-      "name": "차호민",
+      "name": "가브리엘 존슨",
       "url": "/people/person-0178",
       "state": "S07",
       "method": "card-lexicon",
@@ -26529,7 +26529,7 @@
         "size": 4,
         "current_location": "중단된 공사장",
         "camp": {
-          "name": "차호민 공사장 야영지",
+          "name": "가브리엘 존슨 공사장 야영지",
           "type": "야영지",
           "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26545,7 +26545,7 @@
     },
     {
       "id": "K178",
-      "name": "설민우",
+      "name": "마커스 윌슨",
       "url": "/people/person-0179",
       "state": "S07",
       "method": "card-lexicon",
@@ -26585,7 +26585,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/117/text/ko",
-              "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 신가온의 키가 동시에 있어야 연다."
+              "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다."
             },
             {
               "path": "lore/characters/Cast-State-07.json",
@@ -26618,7 +26618,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/117/text/ko",
-              "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 신가온의 키가 동시에 있어야 연다."
+              "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다."
             }
           ],
           "cp": 8,
@@ -26719,7 +26719,7 @@
     },
     {
       "id": "K179",
-      "name": "지온유",
+      "name": "소피아 로시",
       "url": "/people/person-0180",
       "state": "S07",
       "method": "card-lexicon",
@@ -26754,7 +26754,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/128/text/ko",
-              "quote": "전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 권시온의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다."
+              "quote": "전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다."
             }
           ]
         },
@@ -26782,7 +26782,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/128/text/ko",
-              "quote": "전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 권시온의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다."
+              "quote": "전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다."
             }
           ],
           "cp": 8,
@@ -26846,7 +26846,7 @@
         "size": 4,
         "current_location": "폐컨테이너 적치장",
         "camp": {
-          "name": "지온유 컨테이너 야영지",
+          "name": "소피아 로시 컨테이너 야영지",
           "type": "야영지",
           "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26862,7 +26862,7 @@
     },
     {
       "id": "K180",
-      "name": "마하린",
+      "name": "패트릭 오코너",
       "url": "/people/person-0181",
       "state": "S07",
       "method": "card-lexicon",
@@ -26989,7 +26989,7 @@
         "size": 4,
         "current_location": "폐건물 옥상",
         "camp": {
-          "name": "마하린 옥상 야영지",
+          "name": "패트릭 오코너 옥상 야영지",
           "type": "야영지",
           "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -27005,7 +27005,7 @@
     },
     {
       "id": "K181",
-      "name": "연시완",
+      "name": "레아 마르탱",
       "url": "/people/person-0182",
       "state": "S07",
       "method": "card-lexicon",
@@ -27126,7 +27126,7 @@
         "size": 4,
         "current_location": "한강 둔치",
         "camp": {
-          "name": "연시완 한강변 야영지",
+          "name": "레아 마르탱 한강변 야영지",
           "type": "야영지",
           "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -27142,7 +27142,7 @@
     },
     {
       "id": "K182",
-      "name": "나길호",
+      "name": "마테우시 코발스키",
       "url": "/people/person-0183",
       "state": "S07",
       "method": "card-lexicon",
@@ -27264,7 +27264,7 @@
     },
     {
       "id": "K183",
-      "name": "양채윤",
+      "name": "앙드레 뒤부아",
       "url": "/people/person-0184",
       "state": "S07",
       "method": "card-lexicon",
@@ -27402,7 +27402,7 @@
     },
     {
       "id": "K184",
-      "name": "주하음",
+      "name": "헬레나 비슈니에프스카",
       "url": "/people/person-0185",
       "state": "S07",
       "method": "card-lexicon",
@@ -27560,7 +27560,7 @@
     },
     {
       "id": "K185",
-      "name": "차라온",
+      "name": "노아 데이비스",
       "url": "/people/person-0186",
       "state": "S07",
       "method": "card-lexicon",
@@ -27595,7 +27595,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/172/text/ko",
-              "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 황지호의 정비 일지 연서로 숙소 옆 진료를 연다."
+              "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다."
             },
             {
               "path": "lore/characters/Cast-State-07.json",
@@ -27628,7 +27628,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/172/text/ko",
-              "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 황지호의 정비 일지 연서로 숙소 옆 진료를 연다."
+              "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다."
             },
             {
               "path": "lore/characters/Cast-State-07.json",
@@ -27692,7 +27692,7 @@
     },
     {
       "id": "K186",
-      "name": "설우찬",
+      "name": "아데올라 아데예미",
       "url": "/people/person-0187",
       "state": "S07",
       "method": "card-lexicon",
@@ -27727,7 +27727,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/183/text/ko",
-              "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 양채윤에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다."
+              "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 앙드레 뒤부아에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다."
             }
           ]
         },
@@ -27755,7 +27755,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/183/text/ko",
-              "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 양채윤에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다."
+              "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 앙드레 뒤부아에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다."
             }
           ],
           "cp": 8,
@@ -27814,7 +27814,7 @@
     },
     {
       "id": "K187",
-      "name": "단시온",
+      "name": "마르틴 호라크",
       "url": "/people/person-0188",
       "state": "S07",
       "method": "card-lexicon",
@@ -27854,7 +27854,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/195/text/ko",
-              "quote": "겨울의 검은 배차표가 의료열차 무기와 북부 후계시험 부품 조작을 동시에 드러내자 단시온은 창 전 편성의 열람을 청구했다."
+              "quote": "겨울의 검은 배차표가 의료열차 무기와 북부 후계시험 부품 조작을 동시에 드러내자 마르틴 호라크는 창 전 편성의 열람을 청구했다."
             }
           ]
         },
@@ -27887,7 +27887,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/195/text/ko",
-              "quote": "겨울의 검은 배차표가 의료열차 무기와 북부 후계시험 부품 조작을 동시에 드러내자 단시온은 창 전 편성의 열람을 청구했다."
+              "quote": "겨울의 검은 배차표가 의료열차 무기와 북부 후계시험 부품 조작을 동시에 드러내자 마르틴 호라크는 창 전 편성의 열람을 청구했다."
             }
           ],
           "cp": 8,
@@ -27946,7 +27946,7 @@
     },
     {
       "id": "K188",
-      "name": "순가온",
+      "name": "스테판 페트로프",
       "url": "/people/person-0189",
       "state": "S07",
       "method": "card-lexicon",
@@ -28068,7 +28068,7 @@
     },
     {
       "id": "K189",
-      "name": "홍재민",
+      "name": "아나 포페스쿠",
       "url": "/people/person-0190",
       "state": "S07",
       "method": "card-lexicon",
@@ -28113,7 +28113,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/217/text/ko",
-              "quote": "홍재민은 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
+              "quote": "아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
             }
           ]
         },
@@ -28151,7 +28151,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/217/text/ko",
-              "quote": "홍재민은 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
+              "quote": "아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
             }
           ],
           "cp": 8,
@@ -28226,7 +28226,7 @@
     },
     {
       "id": "K190",
-      "name": "추한결",
+      "name": "필리프 뮐러",
       "url": "/people/person-0191",
       "state": "S07",
       "method": "card-lexicon",
@@ -28380,7 +28380,7 @@
     },
     {
       "id": "K191",
-      "name": "어지율",
+      "name": "엘레나 모로조바",
       "url": "/people/person-0192",
       "state": "S07",
       "method": "card-lexicon",
@@ -28565,7 +28565,7 @@
     },
     {
       "id": "K192",
-      "name": "란하율",
+      "name": "올렉산드르 셰우첸코",
       "url": "/people/person-0193",
       "state": "S07",
       "method": "card-lexicon",
@@ -28610,7 +28610,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/250/text/ko",
-              "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 란하율은 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
+              "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
             }
           ]
         },
@@ -28638,7 +28638,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/250/text/ko",
-              "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 란하율은 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
+              "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
             }
           ],
           "cp": 8,
@@ -28734,7 +28734,7 @@
     },
     {
       "id": "K193",
-      "name": "권해진",
+      "name": "케빈 화이트",
       "url": "/people/person-0194",
       "state": "S07",
       "method": "card-lexicon",
@@ -29559,7 +29559,7 @@
     },
     {
       "id": "K199",
-      "name": "오도윤",
+      "name": "피터 얀센",
       "url": "/people/person-0200",
       "state": "S08",
       "method": "card-lexicon",
@@ -29670,7 +29670,7 @@
         "size": 4,
         "current_location": "폐컨테이너 적치장",
         "camp": {
-          "name": "오도윤 컨테이너 야영지",
+          "name": "피터 얀센 컨테이너 야영지",
           "type": "야영지",
           "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -63018,7 +63018,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/302/items/1/ko",
+            "pointer": "/content/303/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -63043,12 +63043,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/303/text/ko",
+              "pointer": "/content/304/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/304/text/ko",
+              "pointer": "/content/305/text/ko",
               "quote": "양천 골목 저수조의 수위가 내려간 날, 이민석은 급수 배분 당직 기록에 수위를 교대 시각마다 옮겨 적는다."
             }
           ]
@@ -63071,17 +63071,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/302/items/1/ko",
+              "pointer": "/content/303/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/303/text/ko",
+              "pointer": "/content/304/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/304/text/ko",
+              "pointer": "/content/305/text/ko",
               "quote": "양천 골목 저수조의 수위가 내려간 날, 이민석은 급수 배분 당직 기록에 수위를 교대 시각마다 옮겨 적는다."
             }
           ],
@@ -63097,7 +63097,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/302/items/1/ko",
+              "pointer": "/content/303/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -63113,7 +63113,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/302/items/3/ko",
+              "pointer": "/content/303/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -63867,7 +63867,7 @@
     },
     {
       "id": "K430",
-      "name": "윤시우",
+      "name": "엘리스 해리스",
       "url": "/people/person-0430",
       "state": "S07",
       "method": "card-lexicon",
@@ -65290,7 +65290,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/313/items/1/ko",
+            "pointer": "/content/314/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -65315,12 +65315,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/314/text/ko",
+              "pointer": "/content/315/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/315/text/ko",
+              "pointer": "/content/316/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ]
@@ -65343,12 +65343,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/314/text/ko",
+              "pointer": "/content/315/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/315/text/ko",
+              "pointer": "/content/316/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ],
@@ -65364,7 +65364,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/313/items/1/ko",
+              "pointer": "/content/314/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             }
           ],
@@ -65380,7 +65380,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/313/items/3/ko",
+              "pointer": "/content/314/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -66172,7 +66172,7 @@
     },
     {
       "id": "K446",
-      "name": "손나연",
+      "name": "앙투안 르페브르",
       "url": "/people/person-0446",
       "state": "S07",
       "method": "card-lexicon",
@@ -67685,7 +67685,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/324/items/1/ko",
+            "pointer": "/content/325/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -67710,12 +67710,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/325/text/ko",
+              "pointer": "/content/326/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/326/text/ko",
+              "pointer": "/content/327/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ]
@@ -67738,7 +67738,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/325/text/ko",
+              "pointer": "/content/326/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -67754,7 +67754,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/324/items/1/ko",
+              "pointer": "/content/325/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -67770,7 +67770,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/326/text/ko",
+              "pointer": "/content/327/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ],
@@ -68556,7 +68556,7 @@
     },
     {
       "id": "K462",
-      "name": "진채린",
+      "name": "아그니에슈카 지엘린스카",
       "url": "/people/person-0462",
       "state": "S07",
       "method": "card-lexicon",
@@ -70074,7 +70074,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/335/items/1/ko",
+            "pointer": "/content/336/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -70099,12 +70099,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/336/text/ko",
+              "pointer": "/content/337/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/337/text/ko",
+              "pointer": "/content/338/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -70127,12 +70127,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/335/items/1/ko",
+              "pointer": "/content/336/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/336/text/ko",
+              "pointer": "/content/337/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -70148,7 +70148,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/335/items/1/ko",
+              "pointer": "/content/336/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -70164,7 +70164,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/337/text/ko",
+              "pointer": "/content/338/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -70180,7 +70180,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/335/items/3/ko",
+              "pointer": "/content/336/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -70898,7 +70898,7 @@
     },
     {
       "id": "K478",
-      "name": "황우진",
+      "name": "벤저민 클라크",
       "url": "/people/person-0478",
       "state": "S07",
       "method": "card-lexicon",
@@ -72369,7 +72369,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/346/items/1/ko",
+            "pointer": "/content/347/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -72394,12 +72394,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/347/text/ko",
+              "pointer": "/content/348/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/348/text/ko",
+              "pointer": "/content/349/text/ko",
               "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
             }
           ]
@@ -72422,7 +72422,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/347/text/ko",
+              "pointer": "/content/348/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -72438,12 +72438,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/346/items/1/ko",
+              "pointer": "/content/347/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/348/text/ko",
+              "pointer": "/content/349/text/ko",
               "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
             }
           ],
@@ -72459,7 +72459,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/346/items/3/ko",
+              "pointer": "/content/347/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -73220,7 +73220,7 @@
     },
     {
       "id": "K494",
-      "name": "하세은",
+      "name": "다비트 피셔",
       "url": "/people/person-0494",
       "state": "S07",
       "method": "card-lexicon",
@@ -74748,7 +74748,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/357/items/1/ko",
+            "pointer": "/content/358/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -74773,12 +74773,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/358/text/ko",
+              "pointer": "/content/359/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/359/text/ko",
+              "pointer": "/content/360/text/ko",
               "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
             }
           ]
@@ -74801,7 +74801,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/358/text/ko",
+              "pointer": "/content/359/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -74817,7 +74817,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/357/items/1/ko",
+              "pointer": "/content/358/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -74833,7 +74833,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/359/text/ko",
+              "pointer": "/content/360/text/ko",
               "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
             }
           ],
@@ -75587,7 +75587,7 @@
     },
     {
       "id": "K510",
-      "name": "윤다율",
+      "name": "키아라 리치",
       "url": "/people/person-0510",
       "state": "S07",
       "method": "card-lexicon",
@@ -77105,7 +77105,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/368/items/1/ko",
+            "pointer": "/content/369/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -77130,12 +77130,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/369/text/ko",
+              "pointer": "/content/370/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/370/text/ko",
+              "pointer": "/content/371/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -77158,12 +77158,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/368/items/1/ko",
+              "pointer": "/content/369/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/369/text/ko",
+              "pointer": "/content/370/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -77179,7 +77179,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/368/items/1/ko",
+              "pointer": "/content/369/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -77195,7 +77195,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/370/text/ko",
+              "pointer": "/content/371/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -77211,7 +77211,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/368/items/3/ko",
+              "pointer": "/content/369/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -77950,7 +77950,7 @@
     },
     {
       "id": "K526",
-      "name": "손수호",
+      "name": "파벨 네메츠",
       "url": "/people/person-0526",
       "state": "S07",
       "method": "card-lexicon",
@@ -79364,7 +79364,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/379/items/1/ko",
+            "pointer": "/content/380/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -79389,12 +79389,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/380/text/ko",
+              "pointer": "/content/381/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/381/text/ko",
+              "pointer": "/content/382/text/ko",
               "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
             }
           ]
@@ -79417,7 +79417,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/380/text/ko",
+              "pointer": "/content/381/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -79433,12 +79433,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/379/items/1/ko",
+              "pointer": "/content/380/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/381/text/ko",
+              "pointer": "/content/382/text/ko",
               "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
             }
           ],
@@ -79454,7 +79454,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/379/items/3/ko",
+              "pointer": "/content/380/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -80214,7 +80214,7 @@
     },
     {
       "id": "K542",
-      "name": "진달린",
+      "name": "안드레이 이바노프",
       "url": "/people/person-0542",
       "state": "S07",
       "method": "card-lexicon",
@@ -81689,7 +81689,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/390/items/1/ko",
+            "pointer": "/content/391/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -81714,7 +81714,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/391/text/ko",
+              "pointer": "/content/392/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ]
@@ -81737,7 +81737,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/391/text/ko",
+              "pointer": "/content/392/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -81753,7 +81753,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/390/items/1/ko",
+              "pointer": "/content/391/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -82566,7 +82566,7 @@
     },
     {
       "id": "K558",
-      "name": "황람아",
+      "name": "밀리선트 멘사",
       "url": "/people/person-0558",
       "state": "S07",
       "method": "card-lexicon",
@@ -84090,7 +84090,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/401/items/1/ko",
+            "pointer": "/content/402/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -84115,12 +84115,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/402/text/ko",
+              "pointer": "/content/403/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/403/text/ko",
+              "pointer": "/content/404/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -84143,12 +84143,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/401/items/1/ko",
+              "pointer": "/content/402/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/402/text/ko",
+              "pointer": "/content/403/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -84164,7 +84164,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/401/items/1/ko",
+              "pointer": "/content/402/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -84180,7 +84180,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/403/text/ko",
+              "pointer": "/content/404/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -84196,7 +84196,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/401/items/3/ko",
+              "pointer": "/content/402/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -84914,7 +84914,7 @@
     },
     {
       "id": "K574",
-      "name": "하차재",
+      "name": "콜린 머피",
       "url": "/people/person-0574",
       "state": "S07",
       "method": "card-lexicon",
@@ -86401,7 +86401,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/412/items/1/ko",
+            "pointer": "/content/413/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -86426,12 +86426,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/413/text/ko",
+              "pointer": "/content/414/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/414/text/ko",
+              "pointer": "/content/415/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ]
@@ -86454,12 +86454,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/413/text/ko",
+              "pointer": "/content/414/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/414/text/ko",
+              "pointer": "/content/415/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ],
@@ -86475,7 +86475,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/412/items/1/ko",
+              "pointer": "/content/413/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             }
           ],
@@ -86491,7 +86491,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/412/items/3/ko",
+              "pointer": "/content/413/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -87235,7 +87235,7 @@
     },
     {
       "id": "K590",
-      "name": "윤하율",
+      "name": "줄리아나 리드",
       "url": "/people/person-0590",
       "state": "S07",
       "method": "card-lexicon",
@@ -88779,7 +88779,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/423/items/1/ko",
+            "pointer": "/content/424/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -88804,7 +88804,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/424/text/ko",
+              "pointer": "/content/425/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ]
@@ -88827,7 +88827,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/424/text/ko",
+              "pointer": "/content/425/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -88843,7 +88843,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/423/items/1/ko",
+              "pointer": "/content/424/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -89613,7 +89613,7 @@
     },
     {
       "id": "K606",
-      "name": "손다연",
+      "name": "시몬 카민스키",
       "url": "/people/person-0606",
       "state": "S07",
       "method": "card-lexicon",
@@ -91137,7 +91137,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/434/items/1/ko",
+            "pointer": "/content/435/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -91162,7 +91162,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/435/text/ko",
+              "pointer": "/content/436/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ]
@@ -91185,12 +91185,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/434/items/1/ko",
+              "pointer": "/content/435/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/435/text/ko",
+              "pointer": "/content/436/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -91206,7 +91206,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/434/items/1/ko",
+              "pointer": "/content/435/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -91222,7 +91222,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/434/items/3/ko",
+              "pointer": "/content/435/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -92008,7 +92008,7 @@
     },
     {
       "id": "K622",
-      "name": "진바혁",
+      "name": "미하이 이오네스쿠",
       "url": "/people/person-0622",
       "state": "S07",
       "method": "card-lexicon",
@@ -93486,7 +93486,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/445/items/1/ko",
+            "pointer": "/content/446/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -93511,12 +93511,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/446/text/ko",
+              "pointer": "/content/447/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/447/text/ko",
+              "pointer": "/content/448/text/ko",
               "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
             }
           ]
@@ -93539,7 +93539,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/446/text/ko",
+              "pointer": "/content/447/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -93555,12 +93555,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/445/items/1/ko",
+              "pointer": "/content/446/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/447/text/ko",
+              "pointer": "/content/448/text/ko",
               "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
             }
           ],
@@ -93576,7 +93576,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/445/items/3/ko",
+              "pointer": "/content/446/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -94369,7 +94369,7 @@
     },
     {
       "id": "K638",
-      "name": "황동아",
+      "name": "조피아 도브로프스카",
       "url": "/people/person-0638",
       "state": "S07",
       "method": "card-lexicon",
@@ -95886,7 +95886,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/456/items/1/ko",
+            "pointer": "/content/457/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -95911,12 +95911,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/457/text/ko",
+              "pointer": "/content/458/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/458/text/ko",
+              "pointer": "/content/459/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ]
@@ -95939,7 +95939,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/457/text/ko",
+              "pointer": "/content/458/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -95955,7 +95955,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/456/items/1/ko",
+              "pointer": "/content/457/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -95971,7 +95971,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/458/text/ko",
+              "pointer": "/content/459/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ],
@@ -96730,7 +96730,7 @@
     },
     {
       "id": "K654",
-      "name": "하름은",
+      "name": "디미터르 게오르기에프",
       "url": "/people/person-0654",
       "state": "S07",
       "method": "card-lexicon",
@@ -98221,7 +98221,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/467/items/1/ko",
+            "pointer": "/content/468/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -98246,12 +98246,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/468/text/ko",
+              "pointer": "/content/469/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/469/text/ko",
+              "pointer": "/content/470/text/ko",
               "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
             }
           ]
@@ -98274,12 +98274,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/467/items/1/ko",
+              "pointer": "/content/468/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/468/text/ko",
+              "pointer": "/content/469/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -98295,7 +98295,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/467/items/1/ko",
+              "pointer": "/content/468/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -98311,7 +98311,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/469/text/ko",
+              "pointer": "/content/470/text/ko",
               "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
             }
           ],
@@ -98327,7 +98327,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/467/items/3/ko",
+              "pointer": "/content/468/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -99072,7 +99072,7 @@
     },
     {
       "id": "K670",
-      "name": "윤나우",
+      "name": "한나 베버",
       "url": "/people/person-0670",
       "state": "S07",
       "method": "card-lexicon",
@@ -100553,7 +100553,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/478/items/1/ko",
+            "pointer": "/content/479/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -100578,12 +100578,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/479/text/ko",
+              "pointer": "/content/480/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/480/text/ko",
+              "pointer": "/content/481/text/ko",
               "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
             }
           ]
@@ -100606,7 +100606,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/479/text/ko",
+              "pointer": "/content/480/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -100622,12 +100622,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/478/items/1/ko",
+              "pointer": "/content/479/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/480/text/ko",
+              "pointer": "/content/481/text/ko",
               "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
             }
           ],
@@ -100643,7 +100643,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/478/items/3/ko",
+              "pointer": "/content/479/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -101442,7 +101442,7 @@
     },
     {
       "id": "K686",
-      "name": "손파연",
+      "name": "테오도르 뒤랑",
       "url": "/people/person-0686",
       "state": "S07",
       "method": "card-lexicon",
@@ -102986,7 +102986,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/489/items/1/ko",
+            "pointer": "/content/490/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -103011,12 +103011,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/490/text/ko",
+              "pointer": "/content/491/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/491/text/ko",
+              "pointer": "/content/492/text/ko",
               "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
             }
           ]
@@ -103039,7 +103039,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/490/text/ko",
+              "pointer": "/content/491/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -103055,7 +103055,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/489/items/1/ko",
+              "pointer": "/content/490/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -103071,7 +103071,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/491/text/ko",
+              "pointer": "/content/492/text/ko",
               "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
             }
           ],
@@ -103856,7 +103856,7 @@
     },
     {
       "id": "K702",
-      "name": "김구연",
+      "name": "오언 켈리",
       "url": "/people/person-0702",
       "state": "S07",
       "method": "card-lexicon",
@@ -105392,7 +105392,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/500/items/1/ko",
+            "pointer": "/content/501/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -105417,12 +105417,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/501/text/ko",
+              "pointer": "/content/502/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/502/text/ko",
+              "pointer": "/content/503/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -105445,12 +105445,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/500/items/1/ko",
+              "pointer": "/content/501/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/501/text/ko",
+              "pointer": "/content/502/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -105466,7 +105466,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/500/items/1/ko",
+              "pointer": "/content/501/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -105482,7 +105482,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/502/text/ko",
+              "pointer": "/content/503/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -105498,7 +105498,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/500/items/3/ko",
+              "pointer": "/content/501/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -106247,7 +106247,7 @@
     },
     {
       "id": "K718",
-      "name": "안가민",
+      "name": "아비게일 로빈슨",
       "url": "/people/person-0718",
       "state": "S07",
       "method": "card-lexicon",
@@ -107665,7 +107665,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/511/items/1/ko",
+            "pointer": "/content/512/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -107690,12 +107690,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/512/text/ko",
+              "pointer": "/content/513/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/513/text/ko",
+              "pointer": "/content/514/text/ko",
               "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
             }
           ]
@@ -107718,7 +107718,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/512/text/ko",
+              "pointer": "/content/513/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -107734,12 +107734,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/511/items/1/ko",
+              "pointer": "/content/512/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/513/text/ko",
+              "pointer": "/content/514/text/ko",
               "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
             }
           ],
@@ -107755,7 +107755,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/511/items/3/ko",
+              "pointer": "/content/512/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -108520,7 +108520,7 @@
     },
     {
       "id": "K734",
-      "name": "성금현",
+      "name": "크리스토퍼 스콧",
       "url": "/people/person-0734",
       "state": "S07",
       "method": "card-lexicon",
@@ -110038,7 +110038,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/522/items/1/ko",
+            "pointer": "/content/523/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -110063,7 +110063,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/523/text/ko",
+              "pointer": "/content/524/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ]
@@ -110086,7 +110086,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/523/text/ko",
+              "pointer": "/content/524/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -110102,7 +110102,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/522/items/1/ko",
+              "pointer": "/content/523/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -110887,7 +110887,7 @@
     },
     {
       "id": "K750",
-      "name": "한산우",
+      "name": "올레나 멜니크",
       "url": "/people/person-0750",
       "state": "S07",
       "method": "card-lexicon",
@@ -112400,7 +112400,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/533/items/1/ko",
+            "pointer": "/content/534/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -112425,12 +112425,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/534/text/ko",
+              "pointer": "/content/535/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/535/text/ko",
+              "pointer": "/content/536/text/ko",
               "quote": "고늘진은 봉인된 배급표의 목록을 당직 인수인계 기록에 옮겨, 봉인 전과 봉인 뒤의 배분량을 다음 당직이 한 쪽에서 맞춰 보게 한다."
             }
           ]
@@ -112453,17 +112453,17 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/533/items/1/ko",
+              "pointer": "/content/534/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/534/text/ko",
+              "pointer": "/content/535/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/535/text/ko",
+              "pointer": "/content/536/text/ko",
               "quote": "고늘진은 봉인된 배급표의 목록을 당직 인수인계 기록에 옮겨, 봉인 전과 봉인 뒤의 배분량을 다음 당직이 한 쪽에서 맞춰 보게 한다."
             }
           ],
@@ -112479,7 +112479,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/533/items/1/ko",
+              "pointer": "/content/534/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -112495,7 +112495,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/533/items/3/ko",
+              "pointer": "/content/534/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -113244,7 +113244,7 @@
     },
     {
       "id": "K766",
-      "name": "허다서",
+      "name": "로렌초 콘티",
       "url": "/people/person-0766",
       "state": "S07",
       "method": "card-lexicon",
@@ -114715,7 +114715,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/544/items/1/ko",
+            "pointer": "/content/545/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -114740,12 +114740,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/545/text/ko",
+              "pointer": "/content/546/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/546/text/ko",
+              "pointer": "/content/547/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ]
@@ -114768,12 +114768,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/545/text/ko",
+              "pointer": "/content/546/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/546/text/ko",
+              "pointer": "/content/547/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ],
@@ -114789,7 +114789,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/544/items/1/ko",
+              "pointer": "/content/545/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             }
           ],
@@ -114805,7 +114805,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/544/items/3/ko",
+              "pointer": "/content/545/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -115581,7 +115581,7 @@
     },
     {
       "id": "K782",
-      "name": "최동아",
+      "name": "니키타 볼코프",
       "url": "/people/person-0782",
       "state": "S07",
       "method": "card-lexicon",
@@ -117098,7 +117098,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/555/items/1/ko",
+            "pointer": "/content/556/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -117123,12 +117123,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/556/text/ko",
+              "pointer": "/content/557/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/557/text/ko",
+              "pointer": "/content/558/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ]
@@ -117151,7 +117151,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/556/text/ko",
+              "pointer": "/content/557/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -117167,7 +117167,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/555/items/1/ko",
+              "pointer": "/content/556/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -117183,7 +117183,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/557/text/ko",
+              "pointer": "/content/558/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ],
@@ -117959,7 +117959,7 @@
     },
     {
       "id": "K798",
-      "name": "홍름훈",
+      "name": "엠마 킹",
       "url": "/people/person-0798",
       "state": "S07",
       "method": "card-lexicon",
@@ -119444,7 +119444,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/566/items/1/ko",
+            "pointer": "/content/567/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -119469,12 +119469,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/567/text/ko",
+              "pointer": "/content/568/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/568/text/ko",
+              "pointer": "/content/569/text/ko",
               "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
             }
           ]
@@ -119497,12 +119497,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/566/items/1/ko",
+              "pointer": "/content/567/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/567/text/ko",
+              "pointer": "/content/568/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -119518,7 +119518,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/566/items/1/ko",
+              "pointer": "/content/567/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -119534,7 +119534,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/568/text/ko",
+              "pointer": "/content/569/text/ko",
               "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
             }
           ],
@@ -119550,7 +119550,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/566/items/3/ko",
+              "pointer": "/content/567/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -120326,7 +120326,7 @@
     },
     {
       "id": "K814",
-      "name": "우마민",
+      "name": "토마시 스보보다",
       "url": "/people/person-0814",
       "state": "S07",
       "method": "card-lexicon",
@@ -121797,7 +121797,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/577/items/1/ko",
+            "pointer": "/content/578/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -121822,12 +121822,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/578/text/ko",
+              "pointer": "/content/579/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/579/text/ko",
+              "pointer": "/content/580/text/ko",
               "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
             }
           ]
@@ -121850,7 +121850,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/578/text/ko",
+              "pointer": "/content/579/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -121866,12 +121866,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/577/items/1/ko",
+              "pointer": "/content/578/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/579/text/ko",
+              "pointer": "/content/580/text/ko",
               "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
             }
           ],
@@ -121887,7 +121887,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/577/items/3/ko",
+              "pointer": "/content/578/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -122659,7 +122659,7 @@
     },
     {
       "id": "K830",
-      "name": "서은은",
+      "name": "아미나 은디아예",
       "url": "/people/person-0830",
       "state": "S07",
       "method": "card-lexicon",
@@ -124213,7 +124213,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/588/items/1/ko",
+            "pointer": "/content/589/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -124238,12 +124238,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/589/text/ko",
+              "pointer": "/content/590/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/590/text/ko",
+              "pointer": "/content/591/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ]
@@ -124266,7 +124266,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/589/text/ko",
+              "pointer": "/content/590/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -124282,7 +124282,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/588/items/1/ko",
+              "pointer": "/content/589/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -124298,7 +124298,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/590/text/ko",
+              "pointer": "/content/591/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ],
@@ -125094,7 +125094,7 @@
     },
     {
       "id": "K846",
-      "name": "심강현",
+      "name": "제이컵 토머스",
       "url": "/people/person-0846",
       "state": "S07",
       "method": "card-lexicon",
@@ -126629,7 +126629,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/599/items/1/ko",
+            "pointer": "/content/600/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -126654,12 +126654,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/600/text/ko",
+              "pointer": "/content/601/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/601/text/ko",
+              "pointer": "/content/602/text/ko",
               "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
             }
           ]
@@ -126682,12 +126682,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/599/items/1/ko",
+              "pointer": "/content/600/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/600/text/ko",
+              "pointer": "/content/601/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -126703,7 +126703,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/599/items/1/ko",
+              "pointer": "/content/600/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -126719,7 +126719,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/601/text/ko",
+              "pointer": "/content/602/text/ko",
               "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
             }
           ],
@@ -126735,7 +126735,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/599/items/3/ko",
+              "pointer": "/content/600/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -127515,7 +127515,7 @@
     },
     {
       "id": "K862",
-      "name": "조사준",
+      "name": "빅토르 스타네스쿠",
       "url": "/people/person-0862",
       "state": "S07",
       "method": "card-lexicon",
@@ -128970,7 +128970,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/610/items/1/ko",
+            "pointer": "/content/611/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -128995,12 +128995,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/611/text/ko",
+              "pointer": "/content/612/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/612/text/ko",
+              "pointer": "/content/613/text/ko",
               "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
             }
           ]
@@ -129023,7 +129023,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/611/text/ko",
+              "pointer": "/content/612/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -129039,12 +129039,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/610/items/1/ko",
+              "pointer": "/content/611/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/612/text/ko",
+              "pointer": "/content/613/text/ko",
               "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
             }
           ],
@@ -129060,7 +129060,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/610/items/3/ko",
+              "pointer": "/content/611/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -129859,7 +129859,7 @@
     },
     {
       "id": "K878",
-      "name": "손하호",
+      "name": "카밀라 마주르",
       "url": "/people/person-0878",
       "state": "S07",
       "method": "card-lexicon",
@@ -131413,7 +131413,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/621/items/1/ko",
+            "pointer": "/content/622/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -131438,7 +131438,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/622/text/ko",
+              "pointer": "/content/623/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ]
@@ -131461,7 +131461,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/622/text/ko",
+              "pointer": "/content/623/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -131477,7 +131477,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/621/items/1/ko",
+              "pointer": "/content/622/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -132247,7 +132247,7 @@
     },
     {
       "id": "K894",
-      "name": "진다린",
+      "name": "세바스티안 브라운",
       "url": "/people/person-0894",
       "state": "S07",
       "method": "card-lexicon",
@@ -133755,7 +133755,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/632/items/1/ko",
+            "pointer": "/content/633/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -133780,12 +133780,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/633/text/ko",
+              "pointer": "/content/634/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/634/text/ko",
+              "pointer": "/content/635/text/ko",
               "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
             }
           ]
@@ -133808,12 +133808,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/632/items/1/ko",
+              "pointer": "/content/633/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/633/text/ko",
+              "pointer": "/content/634/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -133829,7 +133829,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/632/items/1/ko",
+              "pointer": "/content/633/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -133845,7 +133845,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/634/text/ko",
+              "pointer": "/content/635/text/ko",
               "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
             }
           ],
@@ -133861,7 +133861,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/632/items/3/ko",
+              "pointer": "/content/633/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -134610,7 +134610,7 @@
     },
     {
       "id": "K910",
-      "name": "송타지",
+      "name": "마리야 코발렌코",
       "url": "/people/person-0910",
       "state": "S07",
       "method": "card-lexicon",
@@ -136086,7 +136086,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/643/items/1/ko",
+            "pointer": "/content/644/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -136111,12 +136111,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/644/text/ko",
+              "pointer": "/content/645/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/645/text/ko",
+              "pointer": "/content/646/text/ko",
               "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
             }
           ]
@@ -136139,7 +136139,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/644/text/ko",
+              "pointer": "/content/645/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -136155,12 +136155,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/643/items/1/ko",
+              "pointer": "/content/644/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/645/text/ko",
+              "pointer": "/content/646/text/ko",
               "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
             }
           ],
@@ -136176,7 +136176,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/643/items/3/ko",
+              "pointer": "/content/644/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -136969,7 +136969,7 @@
     },
     {
       "id": "K926",
-      "name": "차빛원",
+      "name": "에티엔 모로",
       "url": "/people/person-0926",
       "state": "S07",
       "method": "card-lexicon",
@@ -138493,7 +138493,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/654/items/1/ko",
+            "pointer": "/content/655/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -138518,12 +138518,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/655/text/ko",
+              "pointer": "/content/656/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/656/text/ko",
+              "pointer": "/content/657/text/ko",
               "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
             }
           ]
@@ -138546,7 +138546,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/655/text/ko",
+              "pointer": "/content/656/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -138562,7 +138562,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/654/items/1/ko",
+              "pointer": "/content/655/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -138578,7 +138578,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/656/text/ko",
+              "pointer": "/content/657/text/ko",
               "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
             }
           ],
@@ -139381,7 +139381,7 @@
     },
     {
       "id": "K942",
-      "name": "한새우",
+      "name": "조지 앤더슨",
       "url": "/people/person-0942",
       "state": "S07",
       "method": "card-lexicon",
@@ -140883,7 +140883,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/665/items/1/ko",
+            "pointer": "/content/666/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -140908,12 +140908,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/666/text/ko",
+              "pointer": "/content/667/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/667/text/ko",
+              "pointer": "/content/668/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ]
@@ -140936,12 +140936,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/665/items/1/ko",
+              "pointer": "/content/666/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/666/text/ko",
+              "pointer": "/content/667/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -140957,7 +140957,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/665/items/1/ko",
+              "pointer": "/content/666/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -140973,7 +140973,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/667/text/ko",
+              "pointer": "/content/668/text/ko",
               "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
             }
           ],
@@ -140989,7 +140989,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/665/items/3/ko",
+              "pointer": "/content/666/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -141717,7 +141717,7 @@
     },
     {
       "id": "K958",
-      "name": "남동원",
+      "name": "바르보라 프로하스코바",
       "url": "/people/person-0958",
       "state": "S07",
       "method": "card-lexicon",
@@ -143172,7 +143172,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/676/items/1/ko",
+            "pointer": "/content/677/items/1/ko",
             "quote": "생업: 교량 경비 당직"
           }
         ]
@@ -143197,12 +143197,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/677/text/ko",
+              "pointer": "/content/678/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/678/text/ko",
+              "pointer": "/content/679/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ]
@@ -143225,12 +143225,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/677/text/ko",
+              "pointer": "/content/678/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/678/text/ko",
+              "pointer": "/content/679/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ],
@@ -143246,7 +143246,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/676/items/1/ko",
+              "pointer": "/content/677/items/1/ko",
               "quote": "생업: 교량 경비 당직"
             }
           ],
@@ -143262,7 +143262,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/676/items/3/ko",
+              "pointer": "/content/677/items/3/ko",
               "quote": "수벽술."
             }
           ],
@@ -144022,7 +144022,7 @@
     },
     {
       "id": "K974",
-      "name": "정름준",
+      "name": "미겔 토레스",
       "url": "/people/person-0974",
       "state": "S07",
       "method": "card-lexicon",
@@ -145539,7 +145539,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/687/items/1/ko",
+            "pointer": "/content/688/items/1/ko",
             "quote": "생업: 대합실 당직"
           }
         ]
@@ -145564,12 +145564,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/688/text/ko",
+              "pointer": "/content/689/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/689/text/ko",
+              "pointer": "/content/690/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ]
@@ -145592,7 +145592,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/688/text/ko",
+              "pointer": "/content/689/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -145608,7 +145608,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/687/items/1/ko",
+              "pointer": "/content/688/items/1/ko",
               "quote": "생업: 대합실 당직"
             }
           ],
@@ -145624,7 +145624,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/689/text/ko",
+              "pointer": "/content/690/text/ko",
               "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
             }
           ],
@@ -146373,7 +146373,7 @@
     },
     {
       "id": "K990",
-      "name": "양아태",
+      "name": "이사벨 가르시아",
       "url": "/people/person-0990",
       "state": "S07",
       "method": "card-lexicon",
@@ -148131,7 +148131,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/698/items/1/ko",
+            "pointer": "/content/699/items/1/ko",
             "quote": "생업: 급수 배분 당직"
           }
         ]
@@ -148156,7 +148156,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/699/text/ko",
+              "pointer": "/content/700/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ]
@@ -148179,12 +148179,12 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/698/items/1/ko",
+              "pointer": "/content/699/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             },
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/699/text/ko",
+              "pointer": "/content/700/text/ko",
               "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
@@ -148200,7 +148200,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/698/items/1/ko",
+              "pointer": "/content/699/items/1/ko",
               "quote": "생업: 급수 배분 당직"
             }
           ],
@@ -148216,7 +148216,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/698/items/3/ko",
+              "pointer": "/content/699/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -150330,7 +150330,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/8/items/9/ko",
+            "pointer": "/content/8/items/10/ko",
             "quote": "생업: 정비사"
           }
         ]
@@ -150372,7 +150372,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/8/items/9/ko",
+              "pointer": "/content/8/items/10/ko",
               "quote": "생업: 정비사"
             }
           ],
@@ -150388,7 +150388,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/8/items/8/ko",
+              "pointer": "/content/8/items/9/ko",
               "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
             }
           ]
@@ -150400,7 +150400,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/8/items/8/ko",
+              "pointer": "/content/8/items/9/ko",
               "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
             }
           ]
@@ -150412,7 +150412,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/8/items/8/ko",
+              "pointer": "/content/8/items/9/ko",
               "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
             }
           ]
@@ -150483,7 +150483,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/10/items/9/ko",
+            "pointer": "/content/12/items/9/ko",
             "quote": "생업: 전령 (주), 물류상 (부)"
           }
         ]
@@ -150525,7 +150525,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/9/ko",
+              "pointer": "/content/12/items/9/ko",
               "quote": "생업: 전령 (주), 물류상 (부)"
             }
           ],
@@ -150541,7 +150541,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/9/ko",
+              "pointer": "/content/12/items/9/ko",
               "quote": "생업: 전령 (주), 물류상 (부)"
             }
           ],
@@ -150557,7 +150557,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/8/ko",
+              "pointer": "/content/12/items/8/ko",
               "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
             }
           ]
@@ -150569,7 +150569,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/8/ko",
+              "pointer": "/content/12/items/8/ko",
               "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
             }
           ]
@@ -150581,7 +150581,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/8/ko",
+              "pointer": "/content/12/items/8/ko",
               "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
             }
           ]
@@ -150652,7 +150652,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/12/items/9/ko",
+            "pointer": "/content/14/items/9/ko",
             "quote": "생업: 기록관 (주), 전령 (부)"
           }
         ]
@@ -150694,7 +150694,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/12/items/9/ko",
+              "pointer": "/content/14/items/9/ko",
               "quote": "생업: 기록관 (주), 전령 (부)"
             }
           ],
@@ -150710,7 +150710,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/12/items/9/ko",
+              "pointer": "/content/14/items/9/ko",
               "quote": "생업: 기록관 (주), 전령 (부)"
             }
           ],
@@ -150726,7 +150726,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/12/items/8/ko",
+              "pointer": "/content/14/items/8/ko",
               "quote": "언어: 영어·한국어. 군 용어 잔존"
             }
           ]
@@ -150738,7 +150738,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/12/items/8/ko",
+              "pointer": "/content/14/items/8/ko",
               "quote": "언어: 영어·한국어. 군 용어 잔존"
             }
           ]
@@ -150809,7 +150809,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/14/items/9/ko",
+            "pointer": "/content/16/items/9/ko",
             "quote": "생업: 전령"
           }
         ]
@@ -150851,7 +150851,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/14/items/9/ko",
+              "pointer": "/content/16/items/9/ko",
               "quote": "생업: 전령"
             }
           ],
@@ -150867,7 +150867,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/14/items/8/ko",
+              "pointer": "/content/16/items/8/ko",
               "quote": "언어: 러시아어 일상, 한국어 시장, 고려말 잔존"
             }
           ]
@@ -150879,7 +150879,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/14/items/8/ko",
+              "pointer": "/content/16/items/8/ko",
               "quote": "언어: 러시아어 일상, 한국어 시장, 고려말 잔존"
             }
           ]
@@ -150891,7 +150891,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/14/items/8/ko",
+              "pointer": "/content/16/items/8/ko",
               "quote": "언어: 러시아어 일상, 한국어 시장, 고려말 잔존"
             }
           ]
@@ -150962,7 +150962,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/16/items/9/ko",
+            "pointer": "/content/18/items/10/ko",
             "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
           }
         ]
@@ -151004,7 +151004,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/16/items/9/ko",
+              "pointer": "/content/18/items/10/ko",
               "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
             }
           ],
@@ -151020,7 +151020,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/16/items/9/ko",
+              "pointer": "/content/18/items/10/ko",
               "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
             }
           ],
@@ -151036,7 +151036,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/16/items/8/ko",
+              "pointer": "/content/18/items/9/ko",
               "quote": "언어: 한국어"
             }
           ]
@@ -151365,7 +151365,48 @@
       "name": "박성수",
       "url": "/people/person-1019",
       "state": "S00",
-      "method": "card-lexicon",
+      "method": "owner-authored",
+      "source": {
+        "kind": "owner-authored",
+        "owner": "project-owner",
+        "date": "2026-10-02",
+        "directive": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person",
+        "numericStatus": "proposal",
+        "contract": "lore/characters/Cast-Profile-Contract.md",
+        "rationale": "승인된 주역·강자 구간의 하한 200 CP를 사용한다. 지적 판단과 전략·교섭에 집중하고 통신 정비와 기록 관리 생업을 보존한다. 역할 승인은 수치별 승인과 구분한다.",
+        "path": "lore/name-pools/gurps-owner-sheets.json",
+        "pointer": "/people/0",
+        "sha256": "465b0169c73d8875fab256a2e40c2ee4cd19cdc13911c110e9ec805501aa6758",
+        "evidence": [
+          {
+            "path": "lore/name-pools/gurps-owner-sheets.json",
+            "pointer": "/people/0/source/directive",
+            "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+          }
+        ],
+        "narratives": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "pointer": "/content/30/text/ko",
+            "quote": "박성수는 역과 역 사이의 유선과 중계기를 고친다."
+          },
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "pointer": "/content/31/text/ko",
+            "quote": "박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다."
+          },
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "pointer": "/content/32/text/ko",
+            "quote": "박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다."
+          },
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "pointer": "/content/33/text/ko",
+            "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다."
+          }
+        ]
+      },
       "role": {
         "display": "주 통신선 정비 / 부 기록 보관",
         "evidence": [
@@ -151380,82 +151421,287 @@
         "ST": {
           "value": 10,
           "cp": 0,
-          "rule": "card-actions",
-          "evidence": []
-        },
-        "DX": {
-          "value": 10,
-          "cp": 0,
-          "rule": "card-actions",
-          "evidence": []
-        },
-        "IQ": {
-          "value": 12,
-          "cp": 40,
-          "rule": "card-actions",
+          "rule": "owner-authored",
           "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
               "pointer": "/content/30/text/ko",
-              "quote": "정비하러 다니는 그 길로 사본을 나른다."
+              "quote": "박성수는 역과 역 사이의 유선과 중계기를 고친다."
             },
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
               "pointer": "/content/31/text/ko",
-              "quote": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다."
+              "quote": "박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/32/text/ko",
+              "quote": "박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/33/text/ko",
+              "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다."
+            }
+          ]
+        },
+        "DX": {
+          "value": 11,
+          "cp": 20,
+          "rule": "owner-authored",
+          "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/30/text/ko",
+              "quote": "박성수는 역과 역 사이의 유선과 중계기를 고친다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/31/text/ko",
+              "quote": "박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/32/text/ko",
+              "quote": "박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/33/text/ko",
+              "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다."
+            }
+          ]
+        },
+        "IQ": {
+          "value": 13,
+          "cp": 60,
+          "rule": "owner-authored",
+          "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/30/text/ko",
+              "quote": "박성수는 역과 역 사이의 유선과 중계기를 고친다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/31/text/ko",
+              "quote": "박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/32/text/ko",
+              "quote": "박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/33/text/ko",
+              "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다."
             }
           ]
         },
         "HT": {
-          "value": 10,
-          "cp": 0,
-          "rule": "card-actions",
-          "evidence": []
+          "value": 12,
+          "cp": 20,
+          "rule": "owner-authored",
+          "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/30/text/ko",
+              "quote": "박성수는 역과 역 사이의 유선과 중계기를 고친다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/31/text/ko",
+              "quote": "박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/32/text/ko",
+              "quote": "박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다."
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/33/text/ko",
+              "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다."
+            }
+          ]
         }
       },
       "traits": [],
       "skills": [
         {
-          "name": "Mechanic/TL?",
-          "ko": "기계 정비",
+          "name": "Strategy (Land)",
+          "ko": "전략(지상)",
           "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
+          "diff": "H",
+          "cp": 24,
+          "tier": "owner-authored",
+          "rationale": "권역 간 사본 전달·중계 복구의 우선순위와 대체 경로를 묶는 전략 역할을 평가한다.",
           "evidence": [
             {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/28/items/4/ko",
-              "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
             },
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/30/text/ko",
-              "quote": "정비하러 다니는 그 길로 사본을 나른다."
+              "pointer": "/content/32/text/ko",
+              "quote": "박성수는 역 사이 정비 경로를 짤 때 민웅기가 대전으로 옮기기 전 귀환망 작업에서 남긴 중계기와 대체 경로 기록을 참고한다."
             }
           ],
-          "cp": 8,
-          "level": 14
+          "level": 18
+        },
+        {
+          "name": "Diplomacy",
+          "ko": "교섭·조정",
+          "attr": "IQ",
+          "diff": "H",
+          "cp": 24,
+          "tier": "owner-authored",
+          "rationale": "두 세력에 확인 가능한 사실을 제시하고 정비 통행 조건을 교섭한다.",
+          "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/33/text/ko",
+              "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다."
+            }
+          ],
+          "level": 18
+        },
+        {
+          "name": "Tactics",
+          "ko": "전술",
+          "attr": "IQ",
+          "diff": "H",
+          "cp": 12,
+          "tier": "owner-authored",
+          "rationale": "소유자가 지정한 참모 역할의 현장 판단 능력이다. 대체 경로와 작업 순서를 정하는 서사를 근거로 삼되 전투 경험·승전 이력으로 바꾸지 않는다.",
+          "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/33/text/ko",
+              "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다."
+            }
+          ],
+          "level": 15
+        },
+        {
+          "name": "Leadership",
+          "ko": "지휘",
+          "attr": "IQ",
+          "diff": "A",
+          "cp": 12,
+          "tier": "owner-authored",
+          "rationale": "전령과 정비 작업자를 모아 일의 순서를 정한다.",
+          "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/33/text/ko",
+              "quote": "전령과 정비 작업자를 모아 일의 순서를 정하고 두 세력과 통행 조건을 교섭한다."
+            }
+          ],
+          "level": 16
         },
         {
           "name": "Administration",
           "ko": "행정·기록",
           "attr": "IQ",
           "diff": "A",
-          "tier": "C",
+          "cp": 12,
+          "tier": "owner-authored",
+          "rationale": "문구 차이와 개정 요청을 번호로 관리하고 승인된 개정의 수령 여부를 확인한다.",
           "evidence": [
             {
-              "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/28/items/4/ko",
-              "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
             },
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
               "pointer": "/content/31/text/ko",
-              "quote": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다."
+              "quote": "박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다."
             }
           ],
-          "cp": 4,
-          "level": 13
+          "level": 16
+        },
+        {
+          "name": "Electronics Repair/TL? (Communications)",
+          "ko": "통신 장비 정비",
+          "attr": "IQ",
+          "diff": "A",
+          "cp": 8,
+          "tier": "owner-authored",
+          "rationale": "역 사이 유선과 중계기를 정비하는 주 생업을 유지한다.",
+          "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/30/text/ko",
+              "quote": "박성수는 역과 역 사이의 유선과 중계기를 고친다."
+            }
+          ],
+          "level": 15
+        },
+        {
+          "name": "Research/TL?",
+          "ko": "연구 기록",
+          "attr": "IQ",
+          "diff": "A",
+          "cp": 8,
+          "tier": "owner-authored",
+          "rationale": "여러 권역의 사본과 전달 기록을 대조해 판단 근거를 모은다.",
+          "evidence": [
+            {
+              "path": "lore/name-pools/gurps-owner-sheets.json",
+              "pointer": "/people/0/source/directive",
+              "quote": "Ownerconfirmed Kanbei-inspired strategy/diplomacy roles NOT existingexactcopy, majoropening person"
+            },
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/31/text/ko",
+              "quote": "박성수는 다른 글자와 개정 요청마다 번호를 붙여 전달 기록과 대조표를 김연규에게 보낸다."
+            }
+          ],
+          "level": 15
         }
       ],
       "languages": [
@@ -151474,57 +151720,25 @@
       ],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
-        "FP": 10,
-        "BasicSpeed": 5,
+        "Will": 13,
+        "Per": 13,
+        "FP": 12,
+        "BasicSpeed": 5.75,
         "BasicMove": 5,
         "BasicLift": 20,
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 100,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 12,
-        "spent": 52,
-        "unspent": 23,
-        "total": 75
+        "skills": 100,
+        "spent": 200,
+        "unspent": 0,
+        "total": 200
       },
-      "band": "일반 인물",
-      "baseline": false,
-      "unit": {
-        "type": "수행원",
-        "size": 2,
-        "quality": "일반",
-        "composition": [
-          "수행원"
-        ],
-        "note": "개인 수행 요원 — 소세력 S00 규모",
-        "faction_scale": {
-          "state": "S00",
-          "tier": "소세력",
-          "factor": 0.7
-        }
-      },
-      "wandering_force": {
-        "type": "무소속 유랑 부대",
-        "size": 2,
-        "current_location": "외곽 순회 야영지",
-        "camp": {
-          "name": "박성수 야영지",
-          "type": "야영지",
-          "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-          "facilities": [
-            "야전 숙소",
-            "취사 시설",
-            "무기 보관소"
-          ],
-          "pack_up_time": "반나절"
-        },
-        "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-      },
-      "territory": null
+      "band": "주역·강자",
+      "baseline": false
     },
     {
       "id": "K1020",
@@ -151537,7 +151751,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-Unaffiliated.json",
-            "pointer": "/content/36/items/5/ko",
+            "pointer": "/content/38/items/5/ko",
             "quote": "생업: 주 기록관 / 부 물류상"
           }
         ]
@@ -151579,7 +151793,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/36/items/5/ko",
+              "pointer": "/content/38/items/5/ko",
               "quote": "생업: 주 기록관 / 부 물류상"
             }
           ],
@@ -151595,7 +151809,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/36/items/5/ko",
+              "pointer": "/content/38/items/5/ko",
               "quote": "생업: 주 기록관 / 부 물류상"
             }
           ],
@@ -151737,7 +151951,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-Unaffiliated.json",
-            "pointer": "/content/40/items/5/ko",
+            "pointer": "/content/42/items/5/ko",
             "quote": "생업: 주 물류상 / 부 기록관"
           }
         ]
@@ -151779,7 +151993,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/40/items/5/ko",
+              "pointer": "/content/42/items/5/ko",
               "quote": "생업: 주 물류상 / 부 기록관"
             }
           ],
@@ -151795,7 +152009,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-Unaffiliated.json",
-              "pointer": "/content/40/items/5/ko",
+              "pointer": "/content/42/items/5/ko",
               "quote": "생업: 주 물류상 / 부 기록관"
             }
           ],

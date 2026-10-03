@@ -12,6 +12,453 @@
   "stateName": "성하그룹",
   "sourceRoute": "/world/Cast-State-11#인물-송하율",
   "detailRoute": "/people/person-0273",
+  "birthDate": "2068-01-01",
+  "birthday": "01-01",
+  "age": 58,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-11.json#/content/28",
+    "lore/characters/Cast-State-11.json#/content/32"
+  ],
+  "familyTree": {
+    "personId": "K272",
+    "nodes": [
+      {
+        "id": "K272",
+        "personId": "K272",
+        "kind": "person",
+        "name": "송하율",
+        "birthDate": "2068-01-01",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K272"
+          },
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "** 2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차량 정비 도제 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0273"
+      },
+      {
+        "id": "FH-K272-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현찬",
+        "birthDate": "2038-01-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "송현찬은 강남역 차량기지에서 차량 정비 일지·불량 부품 표본 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K272-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현혁",
+        "birthDate": "2008-01-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송현혁은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K272-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현리",
+        "birthDate": "2038-01-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "오현리는 강남역 차량기지에서 차량 정비 일지·불량 부품 표본 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K272-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현문",
+        "birthDate": "2008-01-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송현문은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K272-P-01:K272:biological",
+        "from": "FH-K272-P-01",
+        "to": "K272",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K272-P-02:FH-K272-P-01:biological",
+        "from": "FH-K272-P-02",
+        "to": "FH-K272-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K272-M-01:K272:biological",
+        "from": "FH-K272-M-01",
+        "to": "K272",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K272-M-02:FH-K272-M-01:biological",
+        "from": "FH-K272-M-02",
+        "to": "FH-K272-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K272",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K272-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1318"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K272-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1320"
+          }
+        ]
+      },
+      {
+        "recipientId": "K271",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "outgoing",
+        "role": "차량 정비 도제로 회장 밑에서 수련",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/79"
+          }
+        ]
+      },
+      {
+        "recipientId": "K172",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/156"
+          }
+        ]
+      },
+      {
+        "recipientId": "K248",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/181"
+          }
+        ]
+      },
+      {
+        "recipientId": "K172",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "제동 부품을 용산 도제와 나눔",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/184"
+          }
+        ]
+      },
+      {
+        "recipientId": "K248",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "outgoing",
+        "role": "",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/185"
+          }
+        ]
+      },
+      {
+        "recipientId": "K562",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "홍카훈은 탈선 전에 발견한 차륜 결함을 송하율에게 보여 주고 교체한 부품을 넘긴다. 송하율은 불량 표본과 정비 일지를 남겨 시험 차륜의 결함이 일반 운행 차량에도 나타나는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/327"
+          }
+        ]
+      },
+      {
+        "recipientId": "K706",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "정나준은 고친 차량 제동의 부품과 정비 기록을 송하율에게 넘긴다. 송하율은 불량 표본을 남겨 같은 결함이 다른 차륜에도 나타나는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/453"
+          }
+        ]
+      },
+      {
+        "recipientId": "K850",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "성마현은 되돌린 불량 차륜 부품을 송하율에게 넘긴다. 송하율은 표본과 정비 일지를 남겨 같은 결함이 시험·운행 차륜 중 어디에 나타나는지 살핀다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/579"
+          }
+        ]
+      },
+      {
+        "recipientId": "K277",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "incoming",
+        "role": "송하율의 도제 일과를 현장에서 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/240"
+          }
+        ]
+      },
+      {
+        "recipientId": "K289",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "송하율의 도제 일과를 폭로 근거로 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/136"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K272",
     "personId": "person-0273",
@@ -150,12 +597,12 @@
     "무공": "단철공.",
     "관직": "품계 사원. 직함은 성하전자 차량 정비 도제. 정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
     "일화": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나왔다.",
-    "관계": "이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다.",
+    "관계": "이홍원의 도제이며 박태겸과의 도제 교환으로 아이작 워커와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다.",
     "야망": "공개 승계 시험으로 다음 원로 후보에 올라 이씨 가문 승계를 끊는 이홍원의 길을 자기 손으로 증명한다.",
     "공포": "시험 차륜에 숨은 결함이 자기 서명으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.",
     "개입": "시험 감독을 맡거나, 결함 부품의 출처 공구를 추적할 수 있다."
   },
-  "biography": "손이 빠르고 말이 적다. 시험 점수를 자랑하지 않지만 남의 공구를 빼돌리는 일은 참지 못한다.\n\n- 생업: 차량 정비 일지·불량 부품 표본 관리\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차량 정비 도제\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차량 정비 도제 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 사원. 직함은 성하전자 차량 정비 도제. 정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.\n\n**일화.** 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나왔다.\n\n**관계.** 이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다.\n\n**야망.** 공개 승계 시험으로 다음 원로 후보에 올라 이씨 가문 승계를 끊는 이홍원의 길을 자기 손으로 증명한다.\n\n**공포.** 시험 차륜에 숨은 결함이 자기 서명으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.\n\n**개입.** 시험 감독을 맡거나, 결함 부품의 출처 공구를 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 −20 | 무력 −15 | 물질 30 | 공동 25 | 원칙 5 | 공개 5 | 자격 90 | 분산 5 | 변혁 −30\n- 욕망: 갈망 0 | 독점 −25 | 위험 10 | 과시 20 | 지속 30 | 지향 이성 | 결합 다자\n:::",
+  "biography": "손이 빠르고 말이 적다. 시험 점수를 자랑하지 않지만 남의 공구를 빼돌리는 일은 참지 못한다.\n\n- 생업: 차량 정비 일지·불량 부품 표본 관리\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차량 정비 도제\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차량 정비 도제 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 사원. 직함은 성하전자 차량 정비 도제. 정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.\n\n**일화.** 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나왔다.\n\n**관계.** 이홍원의 도제이며 박태겸과의 도제 교환으로 아이작 워커와 제동 부품을 나눈다. 강태산과 북문 횃불 신호를 맞춘다.\n\n**야망.** 공개 승계 시험으로 다음 원로 후보에 올라 이씨 가문 승계를 끊는 이홍원의 길을 자기 손으로 증명한다.\n\n**공포.** 시험 차륜에 숨은 결함이 자기 서명으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.\n\n**개입.** 시험 감독을 맡거나, 결함 부품의 출처 공구를 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 −20 | 무력 −15 | 물질 30 | 공동 25 | 원칙 5 | 공개 5 | 자격 90 | 분산 5 | 변혁 −30\n- 욕망: 갈망 0 | 독점 −25 | 위험 10 | 과시 20 | 지속 30 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-11"
   ],
@@ -170,11 +617,29 @@
       {
         "from": "송하율",
         "type": "계약",
-        "to": "황지호",
+        "to": "아이작 워커",
         "basis": "제동 부품을 용산 도제와 나눔"
       }
     ],
     "incoming": [
+      {
+        "from": "홍카훈",
+        "type": "계약",
+        "to": "송하율",
+        "basis": "홍카훈은 탈선 전에 발견한 차륜 결함을 송하율에게 보여 주고 교체한 부품을 넘긴다. 송하율은 불량 표본과 정비 일지를 남겨 시험 차륜의 결함이 일반 운행 차량에도 나타나는지 살핀다."
+      },
+      {
+        "from": "정나준",
+        "type": "계약",
+        "to": "송하율",
+        "basis": "정나준은 고친 차량 제동의 부품과 정비 기록을 송하율에게 넘긴다. 송하율은 불량 표본을 남겨 같은 결함이 다른 차륜에도 나타나는지 살핀다."
+      },
+      {
+        "from": "성마현",
+        "type": "계약",
+        "to": "송하율",
+        "basis": "성마현은 되돌린 불량 차륜 부품을 송하율에게 넘긴다. 송하율은 표본과 정비 일지를 남겨 같은 결함이 시험·운행 차륜 중 어디에 나타나는지 살핀다."
+      },
       {
         "from": "두모",
         "type": "사제",

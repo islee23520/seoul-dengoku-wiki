@@ -1,6 +1,6 @@
 {
   "id": "person-0478",
-  "name": "황우진",
+  "name": "벤저민 클라크",
   "title": "배차 서기",
   "position": "배차 서기",
   "rank": "주사",
@@ -10,8 +10,443 @@
   "stage": "S4",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-황우진",
+  "sourceRoute": "/world/Cast-State-07#인물-벤저민 클라크",
   "detailRoute": "/people/person-0478",
+  "birthDate": "2095-11-26",
+  "birthday": "11-26",
+  "age": 31,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/292",
+    "lore/characters/Cast-State-07.json#/content/294",
+    "lore/characters/Cast-State-07.json#/content/295"
+  ],
+  "familyTree": {
+    "personId": "K478",
+    "nodes": [
+      {
+        "id": "K478",
+        "personId": "K478",
+        "kind": "person",
+        "name": "벤저민 클라크",
+        "birthDate": "2095-11-26",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K478"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-벤저민-클라크-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Benjamin Clark",
+        "detailRoute": "/people/person-0478"
+      },
+      {
+        "id": "FH-K478-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "로버트 클라크",
+        "birthDate": "2065-11-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "로버트 클라크는 2065년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2083년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-벤저민-클라크-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Robert Clark was born in 2065 and grew up reading family and work records. From 2083, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Robert Clark",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K478-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "제임스 클라크",
+        "birthDate": "2035-11-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "제임스 클라크는 2035년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2053년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-벤저민-클라크-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "James Clark was born in 2035 and grew up reading family and work records. From 2053, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "James Clark",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K478-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "에드워드 클라크",
+        "birthDate": "2005-11-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "에드워드 클라크는 2026년 대정전 당시 용산·이태원 생활권에서 미 육군 보급 업무를 맡고 있었다. 연락이 끊긴 뒤 남은 물자와 인계받은 사람을 종이에 적었다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-벤저민-클라크-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Edward Clark was in the family's local community when communications failed in 2026. Serving in US Army logistics, he recorded remaining supplies and their recipients."
+          }
+        ],
+        "nameEn": "Edward Clark",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K478-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "도로시 테일러",
+        "birthDate": "2065-11-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "도로시 테일러는 2065년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2083년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-벤저민-클라크-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Dorothy Taylor was born in 2065 and grew up reading family and work records. From 2083, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Dorothy Taylor",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K478-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "루이즈 테일러",
+        "birthDate": "2035-11-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "루이즈 테일러는 2035년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2053년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-벤저민-클라크-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Louise Taylor was born in 2035 and grew up reading family and work records. From 2053, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Louise Taylor",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K478-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "콘스턴스 테일러",
+        "birthDate": "2005-11-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "콘스턴스 테일러는 2026년 대정전 당시 용산·이태원 생활권에서 용산의 민간 창고 관리와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-벤저민-클라크-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Constance Taylor was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Constance Taylor",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K478-P-01:K478:biological",
+        "from": "FH-K478-P-01",
+        "to": "K478",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K478-P-02:FH-K478-P-01:biological",
+        "from": "FH-K478-P-02",
+        "to": "FH-K478-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K478-P-03:FH-K478-P-02:biological",
+        "from": "FH-K478-P-03",
+        "to": "FH-K478-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K478-M-01:K478:biological",
+        "from": "FH-K478-M-01",
+        "to": "K478",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K478-M-02:FH-K478-M-01:biological",
+        "from": "FH-K478-M-02",
+        "to": "FH-K478-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K478-M-03:FH-K478-M-02:biological",
+        "from": "FH-K478-M-03",
+        "to": "FH-K478-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-벤저민-클라크-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K478",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K478-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2323"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K478-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2326"
+          }
+        ]
+      },
+      {
+        "recipientId": "K181",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/718"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K478",
     "personId": "person-0478",
@@ -92,9 +527,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "d669-d68c-b355-9ec3",
-    "name": "회덕 황씨",
-    "crest": "clan-crests/d669-d68c-b355-9ec3.svg"
+    "id": "DIV-K478",
+    "name": "용산·이태원 클라크씨",
+    "crest": "clan-crests/DIV-K478.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -129,21 +564,28 @@
     "욕망": "갈망 35 | 독점 35 | 위험 5 | 과시 10 | 지속 40 | 지향 무성향 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 벤저민 클라크는 2095년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 에드워드 클라크는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 벤저민 클라크의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.",
     "야망": "배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
     "공포": "배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 25 | 무력 −5 | 물질 20 | 공동 −15 | 원칙 5 | 공개 −10 | 자격 30 | 분산 5 | 변혁 10\n- 욕망: 갈망 35 | 독점 35 | 위험 5 | 과시 10 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 벤저민 클라크는 2095년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 에드워드 클라크는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 벤저민 클라크의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 25 | 무력 −5 | 물질 20 | 공동 −15 | 원칙 5 | 공개 −10 | 자격 30 | 분산 5 | 변혁 10\n- 욕망: 갈망 35 | 독점 35 | 위험 5 | 과시 10 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "벤저민 클라크",
+        "type": "계약",
+        "to": "레아 마르탱",
+        "basis": "벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

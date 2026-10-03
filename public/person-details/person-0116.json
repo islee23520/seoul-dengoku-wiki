@@ -12,6 +12,465 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-배우진",
   "detailRoute": "/people/person-0116",
+  "birthDate": "2083-03-04",
+  "birthday": "03-04",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/43",
+    "lore/chronology/Century-Annals.json#/content/444",
+    "lore/chronology/Century-Annals.json#/content/540"
+  ],
+  "familyTree": {
+    "personId": "K115",
+    "nodes": [
+      {
+        "id": "K115",
+        "personId": "K115",
+        "kind": "person",
+        "name": "배우진",
+        "birthDate": "2083-03-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K115"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 동방사 군벌 가문의 손. 수벽술의 금기는 민간 명부를 방패 뒤에 숨기는 일이다. 동부 정수와 고덕 기지를 군사 감독으로 묶은 것은 배우진의 선대가 아니라, 암사아리수정수센터가 서울 안에 남은 사실이다. 사령관 자리는 군벌 가문이 세습하고, 선대 사령관이 죽은 뒤 참모장이 비상감독 1년을 거친 뒤에 열렸다. 창동방호가의 차단문은 이홍원의 것이다. 배우진이 복구복무자 등록을 부품 대가로 요구한 것은 병조의 손이며, 가문의 서명이 따라붙지는 않는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-배우진-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0116"
+      },
+      {
+        "id": "FH-K115-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "배승윤",
+        "birthDate": "2053-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "배승윤은 생활권의 공동 거처에서 상수호위사령 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-배우진-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K115-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "배승우",
+        "birthDate": "2023-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "배승우는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-배우진-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K115-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임승미",
+        "birthDate": "2053-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "임승미는 생활권의 공동 거처에서 상수호위사령 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-배우진-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K115-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오승훈",
+        "birthDate": "2023-03-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오승훈은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-배우진-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K115-P-01:K115:biological",
+        "from": "FH-K115-P-01",
+        "to": "K115",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K115-P-02:FH-K115-P-01:biological",
+        "from": "FH-K115-P-02",
+        "to": "FH-K115-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K115-M-01:K115:biological",
+        "from": "FH-K115-M-01",
+        "to": "K115",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K115-M-02:FH-K115-M-01:biological",
+        "from": "FH-K115-M-02",
+        "to": "FH-K115-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-배우진-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K143",
+      "recipientName": "남휘강",
+      "basis": "배우진의 호위망과 겹치지만, 교량 레버는 나누어 쥔다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-05.json",
+        "anchor": "인물-남휘강-p5"
+      }
+    }
+  ],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K115",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K115-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/564"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K115-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/566"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1009",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "동방사 특수회수반 선임 공작원 출신",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/4"
+          }
+        ]
+      },
+      {
+        "recipientId": "K116",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "동방사 참모로서 사령 지휘를 받음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/46"
+          }
+        ]
+      },
+      {
+        "recipientId": "K117",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "비상감독을 행정 원장에 받아 안는 원한",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/47"
+          }
+        ]
+      },
+      {
+        "recipientId": "K119",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "동부 교량 봉쇄 지휘를 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/49"
+          }
+        ]
+      },
+      {
+        "recipientId": "K058",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "군사감독 요구에 대한 원한",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/124"
+          }
+        ]
+      },
+      {
+        "recipientId": "K220",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "검열 요구를 기술 장애로 지연",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/167"
+          }
+        ]
+      },
+      {
+        "recipientId": "K224",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "재밍 의혹을 추적",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/174"
+          }
+        ]
+      },
+      {
+        "recipientId": "K248",
+        "recipientKind": "person",
+        "type": "원한",
+        "direction": "incoming",
+        "role": "암사 순찰대와 회랑을 둘러싼 원한",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/180"
+          }
+        ]
+      },
+      {
+        "recipientId": "K135",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배우진의 복구 실적 공개에는 복종하되 은폐 배전은 거부한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/118"
+          }
+        ]
+      },
+      {
+        "recipientId": "K345",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "배우진의 가족 복무 요구를 침상 앞에서 거부한다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/175"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K115",
     "personId": "person-0116",
