@@ -857,6 +857,9 @@ for (const holding of personalHoldings.holdings) {
   if (!issuedById.has(holding.holderPersonId) || !issuedById.has(holding.directLiegePersonId) || (!holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
   if (holding.facilityRef) {
     await validateHoldingFacility(holding, stationInteriors, repoRoot)
+    const ref = holding.facilityRef
+    const station = seoulGraph.stations.find(station => station.id === (ref.stationId ?? ref.stationName))
+    if (!station || station.nameKo !== ref.stationName || station.district !== ref.stationIdentity.district || Number(station.lat.toFixed(5)) !== ref.stationIdentity.lat || Number(station.lon.toFixed(5)) !== ref.stationIdentity.lon) throw new Error('E_HOLDING_STATION_ID:' + holding.id)
   }
   for (const ref of holding.adminRefs) {
     const region = openingTerritories.regions.find(region => region.id === ref.id)

@@ -332,7 +332,7 @@ export default function OpeningTerritoryMap() {
     return () => controller.abort()
   }, [])
   const selectedHolding = useMemo(() => holdings?.holdings.find(holding => holding.facilityRef
-    ? selectedStation?.memberIds.includes(holding.facilityRef.stationName)
+    ? selectedStation?.memberIds.includes(holding.facilityRef.stationId ?? holding.facilityRef.stationName)
     : holding.adminRefs.some(ref => ref.id === selectedId)), [holdings, selectedId, selectedStation])
   const selectedHoldingRegions = useMemo(() => new Set(selectedHolding?.adminRefs.map(ref => ref.id) ?? []), [selectedHolding])
   const stations = useMemo(() => presentationStations(data?.stations ?? []), [data])
@@ -534,7 +534,8 @@ export default function OpeningTerritoryMap() {
       <label className="territory-filter"><span>개인 영지</span><select value={selectedHolding?.id ?? ''} disabled={!holdings} onChange={event => {
         const holding = holdings?.holdings.find(item => item.id === event.target.value)
         if (holding?.facilityRef) {
-          const station = stations.find(item => item.memberIds.includes(holding.facilityRef!.stationName))
+          const stationId = holding.facilityRef.stationId ?? holding.facilityRef.stationName
+          const station = stations.find(item => item.memberIds.includes(stationId))
           if (station) selectStation(station)
         } else {
           const region = holding && data.regions.find(item => item.id === holding.adminRefs[0]?.id)

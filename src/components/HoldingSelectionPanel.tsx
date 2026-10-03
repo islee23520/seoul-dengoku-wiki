@@ -12,7 +12,7 @@ export type ConfirmedHolding = {
   territorialScale: string | null
   formalTitleRank: string | null
   adminRefs: Array<{ id: string; name: string }>
-  facilityRef?: { sourcePath: string; stationName: string; layerId: string; layerName?: string; siteAnchor?: string; stationIdentity?: { district: string; lat: number; lon: number } }
+  facilityRef?: { sourcePath: string; stationName: string; stationId?: string; layerId: string; layerName?: string; siteAnchor?: string; stationIdentity?: { district: string; lat: number; lon: number } }
 }
 export type ConfirmedHoldings = { schema: 'confirmed-person-holdings.v1'; openingYear: number; holdings: ConfirmedHolding[] }
 
