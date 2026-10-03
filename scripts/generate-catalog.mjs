@@ -22,6 +22,9 @@ import { loadDataset, validate as validateRelations } from '../lore/relations/va
 import { loadCastBirthdays } from './cast-birthdays.mjs'
 import { loadCastFamilyTrees, projectFamilyTree } from './cast-family-trees.mjs'
 import { loadHouseholdSourceDocuments, validateCastHouseholdRelations, projectCastHouseholdRelations } from './cast-household-relations.mjs'
+import { validateHoldingFacility } from './holding-facility.mjs'
+import { regularLineGraph } from './regular-line-graph.mjs'
+import { regionalLineGraph } from './regional-line-graph.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -358,6 +361,7 @@ const populationSource = JSON.parse(await readFile(resolve(loreRoot, 'regions/so
 const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
 const seoulGraph = JSON.parse(await readFile(await resolveOutside('GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
+const regularLineSource = JSON.parse(await readFile(resolve(loreRoot, 'places/regular-line-adjacency.json'), 'utf8'))
 const sixteenStatesLore = JSON.parse(await readFile(resolve(loreRoot, 'factions/Sixteen-States.json'), 'utf8'))
 const stateTable = sixteenStatesLore.content.find((block) => block.anchor === 'table')
 if (!stateTable || stateTable.kind !== 'table' || stateTable.rows.length !== 16) throw new Error('E_STATE_DETAIL_TABLE')
@@ -439,14 +443,27 @@ const stationById = new Map(seoulGraph.stations.map((station) => [station.id, st
 const stationCatalog = JSON.parse(await readFile(resolve(loreRoot, 'places/Seoul-Station-Catalog.json'), 'utf8'))
 const approvedStationAliases = stationCatalog.data.station_aliases
 const canonicalBySourceId = new Map(approvedStationAliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
-if (approvedStationAliases.length !== 18 || canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
+if (canonicalBySourceId.size !== approvedStationAliases.reduce((count, entry) => count + 1 + entry.aliases.length, 0) || [...canonicalBySourceId.keys()].some((id) => !stationById.has(id))) throw new Error('E_STATION_ALIAS_SOURCE')
 const canonicalStationId = (id) => canonicalBySourceId.get(id) ?? id
+const regularGraph = regularLineGraph(regularLineSource, seoulGraph.stations.map((station) => canonicalStationId(station.id)))
+await mkdir(resolve(projectRoot, '.omo/evidence/station-line-facts'), { recursive: true })
+await writeFile(resolve(projectRoot, '.omo/evidence/station-line-facts/adjacency-coverage.json'), JSON.stringify({
+  sourceUrl: regularLineSource.source.url,
+  sourceSha256: regularLineSource.source.sha256,
+  generatedEdges: regularGraph.edges.length,
+  omittedAdjacentPairs: regularGraph.omitted,
+  scope: '서울 graph의 명시적 공식 역 코드 대응만 포함한다. 제외된 외부 인접 구간을 건너뛰어 서울 역끼리 연결하지 않는다.',
+}, null, 2))
+const regularNeighbors = new Map()
+for (const edge of regularGraph.edges) {
+  for (const [id, neighbor] of [[edge.a, edge.b], [edge.b, edge.a]]) {
+    if (!regularNeighbors.has(id)) regularNeighbors.set(id, new Set())
+    regularNeighbors.get(id).add(neighbor)
+  }
+}
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
-const stationDegree = new Map(seoulGraph.stations.map((station) => [station.id, 0]))
 for (const edge of seoulGraph.edges) {
   if (!stationById.has(edge.a) || !stationById.has(edge.b)) throw new Error(`E_SUBWAY_EDGE_STATION:${edge.a}:${edge.b}`)
-  stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
-  stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
 }
 for (const entry of approvedStationAliases) for (const alias of entry.aliases) stationIdByName.set(alias, entry.id)
 const capitalStateByStationId = new Map([...capitalNameByState.entries()].map(([stateId, name]) => {
@@ -460,7 +477,7 @@ const sourceMapStations = seoulGraph.stations.map((station) => {
   const [x, y] = mapPoint([east, north])
   if (x < 0 || x > mapWidth || y < 0 || y > mapHeight) throw new Error(`E_STATION_MAP_BOUNDS:${station.id}:${x}:${y}`)
   const region = regionAtlas.regions.find((candidate) => pointInPolygon([x, y], simplifyRing(geometryRings(candidate.map_geometry)[0]).map(mapPoint)))
-  const lineIds = officialLineData.stations[station.id] ?? []
+  const lineIds = [...(regularGraph.linesByStation.get(canonicalStationId(station.id)) ?? [])]
   const content = region ? regionContentById.get(region.id) : null
   const baselinePolityIds = surfaceHolders(content)
   const delta = stationControlOverrides.get(station.id) ?? null
@@ -472,8 +489,9 @@ const sourceMapStations = seoulGraph.stations.map((station) => {
     district: station.district,
     x,
     y,
-    degree: stationDegree.get(station.id) ?? 0,
+    degree: regularNeighbors.get(canonicalStationId(station.id))?.size ?? 0,
     lineIds,
+    surfacePolityIds: baselinePolityIds,
     control: {
       source: delta ? 'control-delta' : region ? 'derived-from-surface' : 'outside-surface-atlas',
       deltaId: delta?.id ?? null,
@@ -498,7 +516,7 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
   const memberSurfaces = memberIds.map((id) => {
     const source = sourceMapStations.find((entry) => entry.id === id)
     const { source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds } = source.control
-    return { id, source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds }
+    return { id, source: controlSource, deltaId, status, primary, surfaceRegionId, surfaceRegionName, polityIds, surfacePolityIds: source.surfacePolityIds }
   })
   const holders = new Set(memberSurfaces.map((entry) => `${entry.status}:${entry.primary}:${[...entry.polityIds].sort().join(',')}`))
   const regions = new Set(memberSurfaces.map((entry) => entry.surfaceRegionId))
@@ -506,7 +524,7 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
     ...station,
     memberIds,
     lineIds: [...new Set(sourceMapStations.filter((member) => memberIds.includes(member.id)).flatMap((member) => member.lineIds))],
-    degree: new Set(seoulGraph.edges.filter((edge) => memberIds.includes(edge.a) || memberIds.includes(edge.b)).map((edge) => canonicalStationId(memberIds.includes(edge.a) ? edge.b : edge.a))).size,
+    degree: regularNeighbors.get(station.id)?.size ?? 0,
     control: {
       ...station.control,
       memberSurfaces,
@@ -516,8 +534,14 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
     },
   }
 })
+const regionalBindings = JSON.parse(await readFile(resolve(loreRoot, 'places/regional-station-bindings.json'), 'utf8'))
+const officialRegionalGraph = regionalLineGraph(regularLineSource, regionalBindings, mapStations)
+await writeFile(resolve(publicRoot, 'regular-regional-connections.json'), JSON.stringify({
+  schema: 'regular-regional-connections.v1',
+  source: regularLineSource.source,
+  ...officialRegionalGraph,
+}, null, 2))
 const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
-const stationLines = new Map(sourceMapStations.map((station) => [station.id, station.lineIds]))
 const stationControlById = new Map(mapStations.map((station) => [station.id, station.control]))
 const segmentControlOverrides = new Map((stationControlLedger.segmentOverrides ?? []).map((entry) => [entry.segmentId, entry]))
 if (segmentControlOverrides.size !== (stationControlLedger.segmentOverrides ?? []).length) throw new Error('E_SEGMENT_CONTROL_DUPLICATE')
@@ -548,7 +572,7 @@ const passage2126 = (edge, control) => {
   if (crossesHan(edge.a, edge.b)) return passageDecisions.get(id) ?? 'unknown'
   return control.status === 'held' ? 'open' : control.status === 'contested' ? 'checkpoint' : 'unknown'
 }
-const projectedEdges = seoulGraph.edges.map((edge) => ({ a: canonicalStationId(edge.a), b: canonicalStationId(edge.b), lineIds: stationLines.get(edge.a).filter((id) => stationLines.get(edge.b).includes(id)) }))
+const projectedEdges = regularGraph.edges.map((edge) => ({ a: edge.a, b: edge.b, lineIds: edge.lineIds, sourceCodes: edge.sourceCodes }))
 const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
   const id = `segment:${edge.a}~${edge.b}`
   const control = segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b))
@@ -828,6 +852,29 @@ const courtDataset = loadDataset()
 const courtErrors = validateRelations(courtDataset)
 if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
 const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
+const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
+const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
+await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
+const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
+for (const holding of personalHoldings.holdings) {
+  const rulerState = territoryStates.find(state => state.id === holding.stateId && state.ruler === issuedById.get(holding.holderPersonId)?.name)
+  if (!issuedById.has(holding.holderPersonId) || (holding.directLiegePersonId === null ? !rulerState : !issuedById.has(holding.directLiegePersonId)) || (!holding.stationRef && !holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
+  if (holding.stationRef) {
+    const station = openingTerritories.stations.find(station => station.id === holding.stationRef.stationId)
+    if (!rulerState || holding.directLiegePersonId !== null || rulerState.capitalStationId !== holding.stationRef.stationId || station?.name !== holding.stationRef.stationName || !station.control.polityIds.includes(holding.stateId) || holding.adminRefs.length || holding.facilityRef || holding.geometrySource !== null || holding.territorialScale !== null || holding.formalTitleRank !== null) throw new Error('E_CAPITAL_HOLDING:' + holding.id)
+  }
+  if (holding.facilityRef) {
+    await validateHoldingFacility(holding, stationInteriors, repoRoot)
+    const ref = holding.facilityRef
+    const station = seoulGraph.stations.find(station => station.id === (ref.stationId ?? ref.stationName))
+    if (!station || station.nameKo !== ref.stationName || station.district !== ref.stationIdentity.district || Number(station.lat.toFixed(5)) !== ref.stationIdentity.lat || Number(station.lon.toFixed(5)) !== ref.stationIdentity.lon) throw new Error('E_HOLDING_STATION_ID:' + holding.id)
+  }
+  for (const ref of holding.adminRefs) {
+    const region = openingTerritories.regions.find(region => region.id === ref.id)
+    if (!region || region.name !== ref.name) throw new Error('E_HOLDING_ADMIN_REF:' + holding.id + ':' + ref.id)
+  }
+}
+await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
 const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
 const birthdayRoster = courtDataset.sources.registry.persons
 const birthdayNames = new Set(peopleSource.map((person) => person.name))
@@ -867,6 +914,7 @@ for (const contact of proseContacts.records) {
 const retainersById = new Map(courtDataset.config.directRetainers.map((row) => [row.personId, row]))
 const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
   courtDataset.config.directRetainers.filter((row) => row.courtId === court.id)]))
+const ownerLiegeByPerson = new Map(courtDataset.config.ownerLieges?.edges?.map((row) => [row.personId, row]) ?? [])
 const parseCardSections = (body) => {
   const sections = {}
   const matches = [...body.matchAll(/\*\*([^*]+?)\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*#{2,3}\s|\n\s*:::|$)/g)]
@@ -928,15 +976,25 @@ const graphPerson = (id) => {
 }
 const graphCourts = courtDataset.config.courts
 const graphRetainers = courtDataset.config.directRetainers
+const graphOwnerLieges = courtDataset.config.ownerLieges?.edges ?? []
 const graphIds = new Set(graphCourts.map((court) => court.ownerPersonId))
+for (const holding of personalHoldings.holdings) graphIds.add(holding.holderPersonId)
 for (const row of graphRetainers) {
+  graphIds.add(row.personId)
+  graphIds.add(row.liegePersonId)
+}
+for (const row of graphOwnerLieges) {
   graphIds.add(row.personId)
   graphIds.add(row.liegePersonId)
 }
 const retainerGraph = {
   nodes: [...graphIds].map(graphPerson),
-  edges: graphRetainers.map(({ personId, liegePersonId, courtId }) =>
-    ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
+  edges: [
+    ...graphRetainers.map(({ personId, liegePersonId, courtId }) =>
+      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
+    ...graphOwnerLieges.map(({ personId, liegePersonId, relationKind, ownerTerm }) =>
+      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: null, relationKind, ownerTerm })),
+  ],
   courts: graphCourts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
 }
 await writeFile(resolve(generatedRoot, 'retainerGraph.ts'), `export const retainerGraph = ${JSON.stringify(retainerGraph, null, 2)} as const\n`)
@@ -975,6 +1033,7 @@ for (const person of peopleCatalog) {
       cp: sheet.cp,
       secondary: sheet.secondary,
     },
+    confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
     unit: sheet.unit,
     territory: sheet.territory,
     wandering_force: sheet.wandering_force,
@@ -993,6 +1052,11 @@ for (const person of peopleCatalog) {
       const row = retainersById.get(issuedId)
       return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
         courtId: row.courtId, effectiveYear: courtDataset.config.courtContract.effectiveYear } }
+    })() : ownerLiegeByPerson.has(issuedId) ? (() => {
+      const row = ownerLiegeByPerson.get(issuedId)
+      return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
+        relationKind: row.relationKind, ownerTerm: row.ownerTerm,
+        effectiveYear: courtDataset.config.ownerLieges.effectiveYear } }
     })() : {}),
     ...(courtMembersByOwner.has(issuedId) ? {
       court: { id: `court:${issuedId}`,

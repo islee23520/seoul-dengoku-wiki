@@ -526,6 +526,34 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [
+    {
+      "id": "holding:saetgang-concourse",
+      "name": {
+        "ko": "샛강 대합실"
+      },
+      "holderPersonId": "K233",
+      "directLiegePersonId": "K222",
+      "stateId": "S09",
+      "facilityRef": {
+        "sourcePath": "lore/regions/station-interiors.json",
+        "stationName": "샛강",
+        "stationIdentity": {
+          "district": "영등포구",
+          "lat": 37.51736,
+          "lon": 126.92828
+        },
+        "siteSourcePath": "lore/regions/content/11560.json",
+        "siteAnchor": "osm:node:8401534578",
+        "layerId": "concourse",
+        "layerName": "역사 대합실"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -604,6 +632,13 @@
   "sources": [
     "Cast-State-09"
   ],
+  "directLiege": {
+    "personId": "K222",
+    "name": "송재민",
+    "relationKind": "direct-vassal",
+    "ownerTerm": "직속 가신",
+    "effectiveYear": 2126
+  },
   "relations": {
     "outgoing": [
       {

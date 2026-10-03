@@ -1,5 +1,9 @@
 # 서울:전국 공식 위키 디자인 시스템
 
+## GTX 사업 연결 표시
+
+세계 지도는 2026년 사업 자료의 GTX 연결을 기존 영토·일반 전철 구간과 구분해 표시한다. 사업별 펼침 목록에서 경로, 사업 단계, 자료 연도와 공식 출처를 읽는다. 발표 구상과 도시 단위 연장 종점은 실제 역 좌표로 바꾸지 않는다. 기존 역과의 지도 연결은 확정된 identity와 위치가 있는 경우에만 표현한다. 이 표시로 2126 점유·통행권을 부여하지 않는다. 기존 본문·표·details 및 링크 스타일과 wiki 토큰을 재사용한다.
+
 ## 1. 분위기와 정체성
 
 공식 설정집을 오래 읽는 화면이다. 붕괴 이후 서울의 행정 장부와 지하철 노선도를 한 권의 디지털 백과사전처럼 보여 준다. 서명은 짙은 남청색 문서 선반과 적갈색 정본 표식이며, 장식보다 긴 한국어 산문과 표의 가독성을 우선한다.
@@ -120,3 +124,7 @@
 ### 경계
 
 이 절은 계약 매핑만 기록한다. 정본 JSON·공개 자격·경로·앵커는 바뀌지 않는다.
+
+## 10. Confirmed personal holding map increment (2026-10-02)
+
+Reference: authenticated campaign.html Region interaction. Retain its lower-left selection-card anatomy using existing wiki tokens, existing terrain/layers/pan/zoom and region hit handlers. The detail panel owns bounded scrolling. Personal holdings come exclusively from `confirmed-person-holdings.json` (`confirmed-person-holdings.v1`), published by the canon generator. Exact `adminRefs.id` values join existing region polygons; selecting any member selects its one parent holding and highlights all its member outlines without intercepting hits. The initial approved holding is Yangcheon’s eighteen dong, K002 holder and K001 direct liege. Display designation and territorial scale separately from optional formalTitleRank and collapsed public office information. Stable IDs resolve through current retainerGraph nodes/detailRoute and the issued registry/catalog, never numeric route derivation or state colors. PR406 emits owner-confirmed edges with `courtId: null`, `relationKind` and exact `ownerTerm`: K002/K017/K003 → K001 use direct-liege and 직속 주군; K058/K060/K061/K062 → K1005 use direct-vassal and 직속 가신. The map adapter preserves ownerTerm for those edges. The existing 46 non-null-court edges display 직속 봉사·궁정 관계 unless the producer explicitly supplies a separate qualified relation. No state-based feudal label, universal lack-of-land claim, private qualification status or null court link is inferred. Proposal GURPS territory assignments are excluded. This UI increment requires 845’s confirmed ledger/generator and PR406 producer integration before local generation; it creates no canon allocation itself. Applied desktop interaction and pixel verification remain pending.

@@ -1547,6 +1547,47 @@
     },
     {
       "kind": "heading",
+      "anchor": "영토의-규모와-행정단위",
+      "depth": 3,
+      "text": {
+        "ko": "영토의 규모와 행정단위",
+        "en": "Territorial Scale and Administrative Units"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "영토의-규모와-행정단위-p1",
+      "text": {
+        "ko": "충청북도와 충청남도는 각각 별도의 왕국 크기 영역이다. 경기도와 강원도의 도 단위도 왕국 크기로 비교한다. 이들 도의 시와 군은 같은 층위의 공국 크기 영역이며, 구는 남작령 크기이다. 구가 없는 시와 군에 직접 속한 읍·면·동은 남작령 크기이고, 구 안의 읍·면·동은 그 구를 이루는 부분이다. 서울특별시와 대전광역시는 도시 전체가 왕국 크기이며, 그 안의 구는 공국 크기, 동은 남작령 크기이다.",
+        "en": "Chungcheongbuk-do and Chungcheongnam-do are separate kingdom-sized areas. Gyeonggi and Gangwon provinces are also compared in size to kingdoms. Cities and counties within these provinces are peer duchy-sized areas, while gu are barony-sized. Eup, myeon, and dong directly under a city without gu or under a county are barony-sized; those within a gu are components of that gu. Seoul Special City and Daejeon Metropolitan City are each kingdom-sized; their gu are duchy-sized and their dong are barony-sized."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "영토의-규모와-행정단위-p2",
+      "text": {
+        "ko": "영토는 행정단위의 크기로 분류하고, 개인 영지는 인물별로 기록된 보유 토지로 구분한다. 역 이름에 선·후를 붙이는 작위 이름과 고려식 작위 등급, 관직의 품계는 각각의 체계로 이어진다.",
+        "en": "Territory is classified by the size of administrative units, while personal holdings are the lands recorded for each individual. Station-based title names with senior or junior suffixes, Goryeo-style noble grades, and civil-office grades each follow their own system."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "영토의-규모와-행정단위-p3",
+      "text": {
+        "ko": "서울특별시는 왕국 크기의 영역이며, 개막에는 열여섯 주요 국가가 나누어 지배한다. 각 국가의 지배 범위와 개인의 보유 토지는 해당 구·동 안에서 구분된다.",
+        "en": "Seoul Special City is a kingdom-sized area whose control is divided among the sixteen major polities at the opening. Each polity’s controlled area and each person’s held land are distinguished within the relevant districts and dong."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "영토의-규모와-행정단위-세종",
+      "text": {
+        "ko": "세종특별자치시는 하나의 왕국 크기 영역이며, 직접 속한 읍·면·동은 남작령 크기이다.",
+        "en": "Sejong Special Self-Governing City is one kingdom-sized area, and its directly subordinate eup, myeon, and dong are barony-sized."
+      }
+    },
+    {
+      "kind": "heading",
       "anchor": "계승",
       "depth": 2,
       "text": {
@@ -1616,5 +1657,67 @@
       ]
     }
   ],
-  "data": {}
+  "data": {
+    "territorialScale": {
+      "schema": "territorial-scale.v1",
+      "regularRegions": {
+        "provinceCodes": [
+          "41",
+          "43",
+          "44",
+          "51"
+        ],
+        "province": "kingdom",
+        "city": "duchy",
+        "county": "duchy",
+        "district": "barony",
+        "directMunicipalEupMyeonDong": "barony",
+        "eupMyeonDongWithinGu": "component",
+        "componentImpliesLowerTitle": false
+      },
+      "specialCities": [
+        {
+          "name": "서울특별시",
+          "englishName": "Seoul Special City",
+          "city": "kingdom",
+          "district": "duchy",
+          "dong": "barony"
+        },
+        {
+          "name": "대전광역시",
+          "englishName": "Daejeon Metropolitan City",
+          "city": "kingdom",
+          "district": "duchy",
+          "dong": "barony"
+        }
+      ],
+      "scaleImpliesPersonalOwnership": false,
+      "scaleImpliesTitleRank": false,
+      "seoulControl": {
+        "majorPolities": 16,
+        "wholeKingdomControlledByOnePolity": false
+      },
+      "separateKingdomContainers": [
+        {
+          "provinceCode": "43",
+          "name": "충청북도"
+        },
+        {
+          "provinceCode": "44",
+          "name": "충청남도"
+        }
+      ],
+      "sejong": {
+        "provinceCode": "36",
+        "name": "세종특별자치시",
+        "englishName": "Sejong Special Self-Governing City",
+        "geographicContainerId": "admin:36",
+        "city": "kingdom",
+        "directEupMyeonDong": "barony",
+        "sourceAliases": [
+          "admin-city:36:세종시"
+        ]
+      }
+    }
+  }
 }

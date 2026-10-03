@@ -555,6 +555,25 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [
+    {
+      "id": "holding:capital-s04",
+      "name": {
+        "ko": "삼성역 직영지"
+      },
+      "holderPersonId": "K423",
+      "directLiegePersonId": null,
+      "stateId": "S04",
+      "stationRef": {
+        "stationId": "삼성",
+        "stationName": "삼성"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

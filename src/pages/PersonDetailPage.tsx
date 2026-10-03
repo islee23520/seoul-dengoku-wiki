@@ -11,6 +11,13 @@ import { FamilyTree } from '../components/FamilyTree'
 import type { FamilyTreeData } from '../components/FamilyTree'
 
 type Relation = { from: string; type: string; to: string; basis: string }
+type ConfirmedHolding = {
+  readonly id: string
+  readonly name: { readonly ko: string }
+  readonly adminRefs: readonly { readonly id: string; readonly name: string }[]
+  readonly stationRef?: { readonly stationId: string; readonly stationName: string }
+  readonly facilityRef?: { readonly stationName: string; readonly layerId: string; readonly layerName: string }
+}
 type PersonDetail = (typeof peopleCatalog)[number] & {
   readonly familyTree: FamilyTreeData
   readonly birthDate: string
@@ -25,6 +32,7 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
     readonly links: readonly { readonly recipientId: string; readonly recipientName: string; readonly recipientKind: 'person' | 'family-node'; readonly type: 'kin' | 'contract'; readonly role: string; readonly basis: string }[]
     readonly household: { readonly humanoidAdmission: string; readonly genderPreference: string }
   } | null
+  confirmedHoldings?: readonly ConfirmedHolding[]
   gurps: GurpsSheetData & { id: string; personId: string }
   unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
   territory?: { fief_name: string; type: string; station: string; state: string; settlement: { name: string; type: string; description: string }; note: string } | null
@@ -40,7 +48,9 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   sections: Record<string, string>
   biography: string
   sources: string[]
-  directLiege?: { personId: string; name: string; courtId: string; effectiveYear: number }
+  directLiege?:
+    | { personId: string; name: string; courtId: string; effectiveYear: number }
+    | { personId: string; name: string; relationKind: 'direct-liege' | 'direct-vassal'; ownerTerm: string; effectiveYear: number }
   court?: { id: string; members: Array<{ personId: string; name: string }> }
   relations: { outgoing: Relation[]; incoming: Relation[] }
 }
@@ -372,9 +382,15 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
     ['직위', person.position], ['직급(공통 티어)', person.commonTier], ['국가 품계', person.rank], ['직업', person.occupation], ['성별', person.gender], ['단계', person.stage], ['세대', person.generation],
     ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속', '생년월일', '생일', '나이', '나이 기준일'].includes(label)),
   ]
-  const relationRows = [
+  const liegeRow: Array<Array<string>> | null = (() => {
+    const liege = detail.directLiege
+    if (!liege) return null
+    if ('courtId' in liege) return [[`직속 주군 · ${liege.name}`, `2126년 · ${liege.courtId} 소속 가신`]]
+    return [[`직속 주군 · ${liege.name}`, `2126년 · ${liege.ownerTerm}`]]
+  })()
+  const relationRows: Array<Array<string | number | null>> = [
     ...(detail.proseContacts ?? []).map(contact => [`업무 접점 · ${contact.recipientName}`, contact.basis]),
-    ...(detail.directLiege ? [[`직속 주군 · ${detail.directLiege.name}`, `2126년 · ${detail.directLiege.courtId} 소속 가신`]] : []),
+    ...(liegeRow ?? []),
     ...(detail.court ? detail.court.members.map((member) => [`궁정 가신 · ${member.name}`, `2126년 · ${detail.court?.id}`]) : []),
     ...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as Array<string>),
     ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as Array<string>),
@@ -433,7 +449,16 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             <p>편성: {detail.unit.composition.join(', ')}</p>
             <p>{detail.unit.note}</p>
           </section>}
-          {detail.territory && <section className="gurps-territory">
+          {!!detail.confirmedHoldings?.length && <section className="gurps-territory-confirmed" data-confirmed-holdings>
+            <h2>보유 영지와 시설</h2>
+            {detail.confirmedHoldings.map((holding) => <section key={holding.id} data-holding-id={holding.id}>
+              <h3>{holding.name.ko}</h3>
+              {holding.stationRef && <p data-owned-station={holding.stationRef.stationId}>{holding.stationRef.stationName}역</p>}
+              {holding.adminRefs.length > 0 && <ul>{holding.adminRefs.map((region) => <li key={region.id} data-admin-ref={region.id}>{region.name}</li>)}</ul>}
+              {holding.facilityRef && <p data-facility-layer={holding.facilityRef.layerId}>{holding.facilityRef.stationName} · {holding.facilityRef.layerName}</p>}
+            </section>)}
+          </section>}
+          {!detail.confirmedHoldings?.length && detail.territory && <section className="gurps-territory">
             <h2>영지</h2>
             <p>{detail.territory.fief_name} · {detail.territory.type}</p>
             <p>위치: {detail.territory.station} · {detail.territory.state}</p>

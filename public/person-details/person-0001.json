@@ -591,6 +591,43 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [
+    {
+      "id": "holding:capital-s01",
+      "name": {
+        "ko": "양평역 직영지"
+      },
+      "holderPersonId": "K001",
+      "directLiegePersonId": null,
+      "stateId": "S01",
+      "stationRef": {
+        "stationId": "양평",
+        "stationName": "양평"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:yangpyeong2",
+      "name": {
+        "ko": "양평2동 영지"
+      },
+      "holderPersonId": "K001",
+      "directLiegePersonId": null,
+      "stateId": "S01",
+      "adminRefs": [
+        {
+          "id": "region:1156062000",
+          "name": "양평2동"
+        }
+      ],
+      "geometrySource": "opening-territories.regions",
+      "territorialScale": "barony",
+      "formalTitleRank": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

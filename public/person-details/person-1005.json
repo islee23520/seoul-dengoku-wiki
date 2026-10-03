@@ -576,6 +576,25 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [
+    {
+      "id": "holding:capital-s03",
+      "name": {
+        "ko": "양재역 직영지"
+      },
+      "holderPersonId": "K1005",
+      "directLiegePersonId": null,
+      "stateId": "S03",
+      "stationRef": {
+        "stationId": "양재",
+        "stationName": "양재"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

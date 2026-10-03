@@ -21,8 +21,17 @@ test('graph page renders generated directed court edges and all approved people'
     expectedIds.add(edge.personId)
     expectedIds.add(edge.liegePersonId)
   }
+  for (const edge of dataset.config.ownerLieges.edges) {
+    expectedIds.add(edge.personId)
+    expectedIds.add(edge.liegePersonId)
+  }
+  assert.match(html, /data-person-id="K001"/)
+  assert.match(html, /data-person-id="K1005"/)
+  assert.match(html, /data-from="K002" data-to="K001"/)
+  assert.match(html, /data-from="K062" data-to="K1005"/)
   assert.equal((html.match(/data-person-id="K\d+"/g) ?? []).length, expectedIds.size)
-  assert.equal((html.match(/data-from="K\d+" data-to="K\d+"/g) ?? []).length, dataset.config.directRetainers.length)
+  assert.equal((html.match(/data-from="K\d+" data-to="K\d+"/g) ?? []).length,
+    dataset.config.directRetainers.length + dataset.config.ownerLieges.edges.length)
 })
 
 test('page rejects a missing approved relationship from the actual source set', () => {
@@ -52,30 +61,49 @@ test('member selection resolves its outgoing liege and canonical court', () => {
   assert.equal(selected.members.length, 0)
 })
 
-test('court owner selection exposes incoming members without an upstream liege', () => {
+test('court owner selection exposes incoming members and the approved owner liege where decided', () => {
   for (const [id, expectedCount] of [['K002', 13], ['K017', 12], ['K003', 12]]) {
     const selected = selectRetainerRelationships(id)
     assert.equal(selected.court?.ownerPersonId, id)
-    assert.equal(selected.liege, undefined, id)
-    assert.equal(selected.members.length, expectedCount, id)
+    assert.equal(selected.liege?.id, 'K001', id)
+    assert.equal(selected.relationKind, 'direct-liege', id)
+    assert.equal(selected.ownerTerm, '직속 주군', id)
+    assert.equal(selected.members.filter((edge) => edge.courtId !== null).length, expectedCount, id)
     assert.ok(selected.members.every((edge) => edge.toPersonId === id), id)
   }
   assert.ok(selectRetainerRelationships('K002').members.some((edge) => edge.fromPersonId === 'K904'))
+  for (const [id] of [['K032'], ['K033'], ['K037']]) {
+    const selected = selectRetainerRelationships(id)
+    assert.equal(selected.court?.ownerPersonId, id)
+    assert.equal(selected.liege, undefined, id)
+  }
+  for (const [id] of [['K058'], ['K060'], ['K061'], ['K062']]) {
+    const selected = selectRetainerRelationships(id)
+    assert.equal(selected.liege?.id, 'K1005', id)
+    assert.equal(selected.ownerTerm, '직속 가신', id)
+  }
+  const ruler = selectRetainerRelationships('K001')
+  assert.equal(ruler.court, undefined)
+  assert.equal(ruler.liege, undefined)
+  assert.equal(ruler.members.length, 3)
+  assert.ok(ruler.members.every((edge) => edge.courtId === null))
+  const chairman = selectRetainerRelationships('K1005')
+  assert.equal(chairman.liege, undefined)
+  assert.equal(chairman.members.length, 4)
   for (const [memberId, ownerId] of [['K041', 'K032'], ['K068', 'K058']]) {
     const member = selectRetainerRelationships(memberId)
-    const owner = selectRetainerRelationships(ownerId)
     assert.equal(member.liege?.id, ownerId)
     assert.equal(member.court?.ownerPersonId, ownerId)
-    assert.equal(owner.liege, undefined)
-    assert.ok(owner.members.some((edge) => edge.fromPersonId === memberId))
+    assert.equal(member.relationKind, undefined)
   }
 })
 
-test('source-valid court owner with an explicit upstream liege has one graph identity', () => {
+test('graph layout keeps one identity per person when a court edge and an owner-liege edge coexist', () => {
   const dataset = loadDataset()
-  dataset.config.courts.push({ id: 'court:K009', ownerPersonId: 'K009', stateId: 'S01' })
-  dataset.config.directRetainers.push({ personId: 'K017', liegePersonId: 'K009', courtId: 'court:K009', sourceRow: 14 })
-  assert.deepEqual(validate(dataset), [])
+  const duplicate = loadDataset()
+  duplicate.config.courts.push({ id: 'court:K009', ownerPersonId: 'K009', stateId: 'S01' })
+  duplicate.config.directRetainers.push({ personId: 'K017', liegePersonId: 'K009', courtId: 'court:K009', sourceRow: 14 })
+  assert.match(validate(duplicate).join('\n'), /K017: duplicate immediate liege/, 'a second immediate liege must stay structurally invalid')
   const issued = dataset.sources.registry.persons.find((person) => person.id === 'K009')
   const value = dataset.sources.values.people.find((person) => person.name === issued.name)
   const detailRoute = peopleCatalog.find((person) => person.name === issued.name)?.detailRoute

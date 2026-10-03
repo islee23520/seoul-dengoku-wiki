@@ -714,6 +714,25 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [
+    {
+      "id": "holding:capital-s10",
+      "name": {
+        "ko": "안국역 직영지"
+      },
+      "holderPersonId": "K245",
+      "directLiegePersonId": null,
+      "stateId": "S10",
+      "stationRef": {
+        "stationId": "안국",
+        "stationName": "안국"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

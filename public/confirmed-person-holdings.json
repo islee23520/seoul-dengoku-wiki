@@ -1,0 +1,442 @@
+{
+  "schema": "confirmed-person-holdings.v1",
+  "openingYear": 2126,
+  "holdings": [
+    {
+      "id": "holding:capital-s01",
+      "name": {
+        "ko": "양평역 직영지"
+      },
+      "holderPersonId": "K001",
+      "directLiegePersonId": null,
+      "stateId": "S01",
+      "stationRef": {
+        "stationId": "양평",
+        "stationName": "양평"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s02",
+      "name": {
+        "ko": "구로역 직영지"
+      },
+      "holderPersonId": "K029",
+      "directLiegePersonId": null,
+      "stateId": "S02",
+      "stationRef": {
+        "stationId": "Guro",
+        "stationName": "구로"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s03",
+      "name": {
+        "ko": "양재역 직영지"
+      },
+      "holderPersonId": "K1005",
+      "directLiegePersonId": null,
+      "stateId": "S03",
+      "stationRef": {
+        "stationId": "양재",
+        "stationName": "양재"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s04",
+      "name": {
+        "ko": "삼성역 직영지"
+      },
+      "holderPersonId": "K423",
+      "directLiegePersonId": null,
+      "stateId": "S04",
+      "stationRef": {
+        "stationId": "삼성",
+        "stationName": "삼성"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s05",
+      "name": {
+        "ko": "암사역 직영지"
+      },
+      "holderPersonId": "K115",
+      "directLiegePersonId": null,
+      "stateId": "S05",
+      "stationRef": {
+        "stationId": "암사",
+        "stationName": "암사"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s06",
+      "name": {
+        "ko": "광화문역 직영지"
+      },
+      "holderPersonId": "K144",
+      "directLiegePersonId": null,
+      "stateId": "S06",
+      "stationRef": {
+        "stationId": "광화문",
+        "stationName": "광화문"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s07",
+      "name": {
+        "ko": "용산역 직영지"
+      },
+      "holderPersonId": "K169",
+      "directLiegePersonId": null,
+      "stateId": "S07",
+      "stationRef": {
+        "stationId": "용산",
+        "stationName": "용산"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s08",
+      "name": {
+        "ko": "흑석역 직영지"
+      },
+      "holderPersonId": "K194",
+      "directLiegePersonId": null,
+      "stateId": "S08",
+      "stationRef": {
+        "stationId": "흑석",
+        "stationName": "흑석"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s09",
+      "name": {
+        "ko": "여의도역 직영지"
+      },
+      "holderPersonId": "K219",
+      "directLiegePersonId": null,
+      "stateId": "S09",
+      "stationRef": {
+        "stationId": "여의도",
+        "stationName": "여의도"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s10",
+      "name": {
+        "ko": "안국역 직영지"
+      },
+      "holderPersonId": "K245",
+      "directLiegePersonId": null,
+      "stateId": "S10",
+      "stationRef": {
+        "stationId": "안국",
+        "stationName": "안국"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s11",
+      "name": {
+        "ko": "강남역 직영지"
+      },
+      "holderPersonId": "K271",
+      "directLiegePersonId": null,
+      "stateId": "S11",
+      "stationRef": {
+        "stationId": "강남",
+        "stationName": "강남"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s12",
+      "name": {
+        "ko": "신내역 직영지"
+      },
+      "holderPersonId": "K296",
+      "directLiegePersonId": null,
+      "stateId": "S12",
+      "stationRef": {
+        "stationId": "신내",
+        "stationName": "신내"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s13",
+      "name": {
+        "ko": "제기동역 직영지"
+      },
+      "holderPersonId": "K322",
+      "directLiegePersonId": null,
+      "stateId": "S13",
+      "stationRef": {
+        "stationId": "제기동",
+        "stationName": "제기동"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s14",
+      "name": {
+        "ko": "구의역 직영지"
+      },
+      "holderPersonId": "K348",
+      "directLiegePersonId": null,
+      "stateId": "S14",
+      "stationRef": {
+        "stationId": "구의",
+        "stationName": "구의"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s15",
+      "name": {
+        "ko": "명동역 직영지"
+      },
+      "holderPersonId": "K373",
+      "directLiegePersonId": null,
+      "stateId": "S15",
+      "stationRef": {
+        "stationId": "명동",
+        "stationName": "명동"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:capital-s16",
+      "name": {
+        "ko": "수서역 직영지"
+      },
+      "holderPersonId": "K398",
+      "directLiegePersonId": null,
+      "stateId": "S16",
+      "stationRef": {
+        "stationId": "수서",
+        "stationName": "수서"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:yangpyeong2",
+      "name": {
+        "ko": "양평2동 영지"
+      },
+      "holderPersonId": "K001",
+      "directLiegePersonId": null,
+      "stateId": "S01",
+      "adminRefs": [
+        {
+          "id": "region:1156062000",
+          "name": "양평2동"
+        }
+      ],
+      "geometrySource": "opening-territories.regions",
+      "territorialScale": "barony",
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:yeongdeungpo-concourse",
+      "name": {
+        "ko": "영등포 대합실"
+      },
+      "holderPersonId": "K017",
+      "directLiegePersonId": "K001",
+      "stateId": "S01",
+      "facilityRef": {
+        "sourcePath": "lore/regions/station-interiors.json",
+        "stationName": "영등포",
+        "stationId": "Yeongdeungpo",
+        "stationIdentity": {
+          "district": "영등포구",
+          "lat": 37.51536,
+          "lon": 126.90693
+        },
+        "siteSourcePath": "lore/regions/content/11560.json",
+        "siteAnchor": "osm:node:5835544502",
+        "layerId": "concourse",
+        "layerName": "역사 대합실"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:yangcheon",
+      "name": {
+        "ko": "양천구 영지",
+        "en": "Yangcheon District Holding"
+      },
+      "holderPersonId": "K002",
+      "directLiegePersonId": "K001",
+      "stateId": "S01",
+      "designation": {
+        "ko": "양천구 영주",
+        "en": "Lord of Yangcheon District"
+      },
+      "territorialScale": "duchy",
+      "formalTitleRank": null,
+      "adminRefs": [
+        {
+          "id": "region:1147051000",
+          "name": "목1동"
+        },
+        {
+          "id": "region:1147052000",
+          "name": "목2동"
+        },
+        {
+          "id": "region:1147053000",
+          "name": "목3동"
+        },
+        {
+          "id": "region:1147054000",
+          "name": "목4동"
+        },
+        {
+          "id": "region:1147055000",
+          "name": "목5동"
+        },
+        {
+          "id": "region:1147056000",
+          "name": "신월1동"
+        },
+        {
+          "id": "region:1147057000",
+          "name": "신월2동"
+        },
+        {
+          "id": "region:1147058000",
+          "name": "신월3동"
+        },
+        {
+          "id": "region:1147059000",
+          "name": "신월4동"
+        },
+        {
+          "id": "region:1147060000",
+          "name": "신월5동"
+        },
+        {
+          "id": "region:1147061000",
+          "name": "신월6동"
+        },
+        {
+          "id": "region:1147061100",
+          "name": "신월7동"
+        },
+        {
+          "id": "region:1147062000",
+          "name": "신정1동"
+        },
+        {
+          "id": "region:1147063000",
+          "name": "신정2동"
+        },
+        {
+          "id": "region:1147064000",
+          "name": "신정3동"
+        },
+        {
+          "id": "region:1147065000",
+          "name": "신정4동"
+        },
+        {
+          "id": "region:1147067000",
+          "name": "신정6동"
+        },
+        {
+          "id": "region:1147068000",
+          "name": "신정7동"
+        }
+      ],
+      "geometrySource": "opening-territories.regions",
+      "parentGeography": "서울특별시",
+      "wholeSeoulControl": false
+    },
+    {
+      "id": "holding:saetgang-concourse",
+      "name": {
+        "ko": "샛강 대합실"
+      },
+      "holderPersonId": "K233",
+      "directLiegePersonId": "K222",
+      "stateId": "S09",
+      "facilityRef": {
+        "sourcePath": "lore/regions/station-interiors.json",
+        "stationName": "샛강",
+        "stationIdentity": {
+          "district": "영등포구",
+          "lat": 37.51736,
+          "lon": 126.92828
+        },
+        "siteSourcePath": "lore/regions/content/11560.json",
+        "siteAnchor": "osm:node:8401534578",
+        "layerId": "concourse",
+        "layerName": "역사 대합실"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    }
+  ]
+}

@@ -756,6 +756,25 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [
+    {
+      "id": "holding:capital-s06",
+      "name": {
+        "ko": "광화문역 직영지"
+      },
+      "holderPersonId": "K144",
+      "directLiegePersonId": null,
+      "stateId": "S06",
+      "stationRef": {
+        "stationId": "광화문",
+        "stationName": "광화문"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

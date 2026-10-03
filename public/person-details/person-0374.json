@@ -636,6 +636,25 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [
+    {
+      "id": "holding:capital-s15",
+      "name": {
+        "ko": "명동역 직영지"
+      },
+      "holderPersonId": "K373",
+      "directLiegePersonId": null,
+      "stateId": "S15",
+      "stationRef": {
+        "stationId": "명동",
+        "stationName": "명동"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

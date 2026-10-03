@@ -577,6 +577,25 @@
       "Dodge": 8
     }
   },
+  "confirmedHoldings": [
+    {
+      "id": "holding:capital-s13",
+      "name": {
+        "ko": "제기동역 직영지"
+      },
+      "holderPersonId": "K322",
+      "directLiegePersonId": null,
+      "stateId": "S13",
+      "stationRef": {
+        "stationId": "제기동",
+        "stationName": "제기동"
+      },
+      "adminRefs": [],
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": null
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,
