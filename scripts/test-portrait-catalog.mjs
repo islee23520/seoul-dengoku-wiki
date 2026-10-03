@@ -3,6 +3,24 @@ import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 
+test('approved selection binds registered identities and prior image hashes', async () => {
+  const selection = JSON.parse(await readFile(new URL('../portrait-approved-selection.json', import.meta.url), 'utf8'))
+  const catalog = JSON.parse(await readFile(new URL('../portrait-catalog.json', import.meta.url), 'utf8'))
+  assert.equal(new Set(selection.records.map(row => row.personId)).size, selection.records.length)
+  for (const row of selection.records) {
+    const entry = catalog.entries.find(entry => entry.personId === row.personId)
+    assert.ok(entry)
+    assert.equal(row.characterId, entry.characterId)
+    assert.equal(row.name, entry.name)
+    assert.equal(selection.status === 'approved-selection-applied-to-worktree' ? row.imageSha256 : row.previousImageSha256, entry.imageSha256)
+    assert.match(row.imageSha256, /^[a-f0-9]{64}$/)
+    assert.equal(row.verdict, 'pass')
+    assert.equal(row.operation === 'preserve-existing', row.imageSha256 === row.previousImageSha256)
+  }
+  assert.equal(selection.canonPromotion, false)
+  assert.equal(selection.final3dPortraitContractSatisfied, false)
+})
+
 test('portrait properties and immutable images follow the registered portrait catalog', async () => {
   const catalog = JSON.parse(await readFile(new URL('../portrait-catalog.json', import.meta.url), 'utf8'))
   const properties = JSON.parse(await readFile(new URL('../portrait-properties.json', import.meta.url), 'utf8'))
@@ -31,10 +49,18 @@ test('portrait properties and immutable images follow the registered portrait ca
       assert.equal(review.characterId, token.characterId)
       assert.equal(review.imageSha256, token.image.sha256)
       assert.equal(token.imageReview.imageSha256, token.image.sha256)
-      assert.equal(review.generationReceipt.imageSha256, token.image.sha256)
-      assert.deepEqual(review.generationRequest, review.generationReceipt.request)
-      if (token.style.generationReferenceSha256) {
-        assert.equal(token.style.generationReferenceSha256, review.generationRequest.references[0].sha256)
+      if (review.imageModification) {
+        assert.equal(review.imageModification.outputSha256, token.image.sha256)
+        assert.equal(review.imageModification.inputSha256, review.previousImageReview.imageSha256)
+        assert.ok(['localized-alpha-edit', 'body-improvement'].includes(review.imageModification.operation))
+        assert.equal(review.ownerVerdict.verdict, 'pass')
+        assert.equal(review.generationReceipt, undefined)
+      } else {
+        assert.equal(review.generationReceipt.imageSha256, token.image.sha256)
+        assert.deepEqual(review.generationRequest, review.generationReceipt.request)
+        if (token.style.generationReferenceSha256) {
+          assert.equal(token.style.generationReferenceSha256, review.generationRequest.references[0].sha256)
+        }
       }
       assert.equal(review.canonPromotion, false)
       assert.equal(review.final3dPortraitContractSatisfied, false)
