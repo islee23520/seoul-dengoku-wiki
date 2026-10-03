@@ -36,7 +36,9 @@
       "source.b23",
       "source.b24",
       "source.b25",
-      "source.b26"
+      "source.b26",
+      "gameplay-unknown.entry.20261003.heading",
+      "gameplay-unknown.entry.20261003.body"
     ]
   },
   "blocks": [
@@ -466,6 +468,27 @@
         {
           "kind": "text",
           "text": "새 전투 수치·Unity 이름은 이 순서의 밖이다."
+        }
+      ]
+    },
+    {
+      "id": "gameplay-unknown.entry.20261003.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임플레이 미정 결정 원장"
+        }
+      ]
+    },
+    {
+      "id": "gameplay-unknown.entry.20261003.body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "게임플레이 미정은 [캠페인 진행과 위기](rules/Campaign-Progression.md)의 GP-01~14에서 질문·제안·입출력·실패/검증 사례·정본 소유로 관리한다. 시제품의 인물 배치·시간·가격·정원·피해 수치는 확정 근거가 아니다. 작위령은 위키 확정 뒤 입력하며 현재 미배정이다. 선택 본체·NPC 권한·현장 참여·네 지도 모드·실제 인접역·배타 씬은 직접 결정으로 유지한다."
         }
       ]
     }
