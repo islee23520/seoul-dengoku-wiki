@@ -21,6 +21,28 @@ const projection = (row) => ({
 const render = (detail) => new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
   createElement(PersonDetailContent, { detail, personId: detail.id }))))
 
+test.each(['K002', 'K233'])('confirmed holding scope takes precedence over legacy sheet territory: %s', (id) => {
+  const row = issued.find((entry) => entry.id === id)
+  const detail = detailFor(row)
+  const holdings = read('../lore/relations/personal-holdings.json').holdings.filter((holding) => holding.holderPersonId === id)
+  const dom = render({ ...detail, confirmedHoldings: holdings, territory: { fief_name: 'LEGACY_SCOPE', type: 'legacy', station: 'legacy', state: row.state, settlement: { name: 'legacy', type: 'legacy', description: 'legacy' }, note: 'legacy' } })
+  try {
+    const document = dom.window.document
+    assert.equal(document.querySelector('.gurps-territory'), null)
+    const panel = document.querySelector('[data-confirmed-holdings]')
+    assert.ok(panel)
+    assert.equal(panel.querySelectorAll('[data-holding-id]').length, holdings.length)
+    for (const holding of holdings) {
+      const item = panel.querySelector(`[data-holding-id="${holding.id}"]`)
+      assert.ok(item.textContent.includes(holding.name.ko))
+      assert.equal(item.querySelectorAll('[data-admin-ref]').length, holding.adminRefs.length)
+      assert.deepEqual([...item.querySelectorAll('[data-admin-ref]')].map((element) => element.getAttribute('data-admin-ref')), holding.adminRefs.map((region) => region.id))
+      if (holding.facilityRef) assert.equal(item.querySelector('[data-facility-layer]').getAttribute('data-facility-layer'), holding.facilityRef.layerId)
+    }
+    assert.equal(panel.textContent.includes('LEGACY_SCOPE'), false)
+  } finally { dom.window.close() }
+})
+
 test('generated person sheets preserve every issued identity and numeric field without API access', () => {
   for (const row of issued) {
     const detail = detailFor(row)
