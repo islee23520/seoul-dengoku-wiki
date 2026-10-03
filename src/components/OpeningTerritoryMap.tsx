@@ -331,9 +331,10 @@ export default function OpeningTerritoryMap() {
       .catch(() => { if (!controller.signal.aborted) setHoldingLoadFailed(true) })
     return () => controller.abort()
   }, [])
-  const selectedHolding = useMemo(() => holdings?.holdings.find(holding => holding.facilityRef
-    ? selectedStation?.memberIds.includes(holding.facilityRef.stationId ?? holding.facilityRef.stationName)
-    : holding.adminRefs.some(ref => ref.id === selectedId)), [holdings, selectedId, selectedStation])
+  const selectedHolding = useMemo(() => holdings?.holdings.find(holding => {
+    const stationId = holding.stationRef?.stationId ?? (holding.facilityRef ? holding.facilityRef.stationId ?? holding.facilityRef.stationName : null)
+    return stationId ? selectedStation?.memberIds.includes(stationId) : holding.adminRefs.some(ref => ref.id === selectedId)
+  }), [holdings, selectedId, selectedStation])
   const selectedHoldingRegions = useMemo(() => new Set(selectedHolding?.adminRefs.map(ref => ref.id) ?? []), [selectedHolding])
   const stations = useMemo(() => presentationStations(data?.stations ?? []), [data])
   const seoulStationNames = useMemo(() => new Set(stations.flatMap((station) => station.memberIds.concat(station.names))), [stations])
@@ -533,8 +534,9 @@ export default function OpeningTerritoryMap() {
       {layer === 'surface' && <label className="territory-rail-toggle"><input type="checkbox" checked={showRail} onChange={(event) => setShowRail(event.target.checked)} />지하철 노선 표시</label>}
       <label className="territory-filter"><span>개인 영지</span><select value={selectedHolding?.id ?? ''} disabled={!holdings} onChange={event => {
         const holding = holdings?.holdings.find(item => item.id === event.target.value)
-        if (holding?.facilityRef) {
-          const stationId = holding.facilityRef.stationId ?? holding.facilityRef.stationName
+        if (holding?.stationRef || holding?.facilityRef) {
+          const stationId = holding.stationRef?.stationId ?? (holding.facilityRef ? holding.facilityRef.stationId ?? holding.facilityRef.stationName : null)
+          if (stationId === null) return
           const station = stations.find(item => item.memberIds.includes(stationId))
           if (station) selectStation(station)
         } else {
