@@ -205,7 +205,7 @@
         [
           {
             "kind": "text",
-            "text": "**Rollback and review.** Revert with `git revert` on a new branch and a new pull request. PR review evidence follows ADR-007: new tracked evidence lives under `evidence/pr-<number>/` during review, then a separate cleanup PR removes it after merge. Durable evidence is promoted to its owning canon rather than retained as PR evidence. Reviewer locks from the approved plan (art, marketing, critic, Momus) still apply to their original scope."
+            "text": "**Rollback and review.** Revert with `git revert` on a new branch and a new pull request. Captures, receipts, screenshots, and QA evidence are private local files under ignored `.omo/evidence/`; they are never tracked, attached to a repository PR, or published. Durable product assets belong only in their approved owning canon. Reviewer locks from the approved plan (art, marketing, critic, Momus) still apply to their original scope."
           }
         ]
       ],
