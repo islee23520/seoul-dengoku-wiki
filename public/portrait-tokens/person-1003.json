@@ -22,31 +22,220 @@
     "carriedWeapons": "none depicted; no ownership inferred",
     "upper": "Weathered charcoal field jacket, warm-gray shirt",
     "lower": null,
-    "footwear": null
+    "footwear": null,
+    "accessories": null
   },
   "style": {
-    "styleId": "wingzero-119-b-ink-flat-medium-close-up",
-    "referenceSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
+    "styleId": "owner-gender-reference-20261002",
+    "referenceSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
     "portraitShotId": "medium-close-up-119",
-    "crop": "head, both shoulders and upper chest"
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
   },
   "image": {
     "path": "/portraits/person-1003.png",
-    "sha256": "852642d1feb34cb7f3981df580448e05141ed1aa1a00d50f676d04dfc8066ea4",
-    "width": 1215,
-    "height": 1295
+    "sha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8",
+    "width": 1160,
+    "height": 1355
   },
   "references": {
-    "styleSha256": "d928237c6dc0a5c9a64bc22d1fe38b71366fbdae5faa7eddaa9a747fde0d1526",
-    "identitySha256": "1dff3a86cd3f342ad0cd01bba195b56321d8e37d6ccac55793192b7e1c5075e5",
-    "identityRole": "owner-reference",
+    "styleSha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28",
+    "identitySha256": "852642d1feb34cb7f3981df580448e05141ed1aa1a00d50f676d04dfc8066ea4",
+    "identityRole": "existing-portrait-identity",
     "imageText": "none",
-    "reviewStatus": "candidate-reviewed"
+    "reviewStatus": "candidate-reviewed",
+    "originalIdentitySha256": "1dff3a86cd3f342ad0cd01bba195b56321d8e37d6ccac55793192b7e1c5075e5",
+    "originalIdentityRole": "owner-reference",
+    "identitySelectionNote": "Existing preserved portrait used for identity; original owner reference hash retained separately, original source file not recovered"
   },
   "imageReview": {
     "record": "/portrait-reviews/person-1003.json",
-    "imageSha256": "852642d1feb34cb7f3981df580448e05141ed1aa1a00d50f676d04dfc8066ea4",
+    "imageSha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8",
     "verdict": "pass",
-    "scope": "exact image only; no appearance or equipment canon promotion"
+    "scope": "exact approved transparent PNG only"
+  },
+  "identity": {
+    "characterId": "K1003",
+    "name": "조재표",
+    "ethnicity": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "origin": {
+      "value": "Korean",
+      "status": "art-proposal",
+      "source": "owner-directive-20261002"
+    },
+    "gender": "남성",
+    "ageCategory": "adult"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "faceShape": {
+        "value": "long oval with an angular jaw",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "eyeShape": {
+        "value": "narrow almond-shaped",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "eyebrowShape": {
+        "value": "thick, mostly straight with slight arches",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "lipColor": {
+        "value": "muted tan-pink",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "mouthShape": {
+        "value": "closed, nearly straight with slightly downturned corners",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "noseShape": {
+        "value": "straight bridge with a rounded tip",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "beardShape": {
+        "value": "none; completely clean-shaven cheeks, jaw, chin and upper lip",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json#artProposal.face"
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "Long wavy black hair reaching the shoulders",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "shape": {
+        "value": "thick, tousled waves with a loose center part and wispy strands",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "color": {
+        "value": "black",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "length": {
+        "value": "past the neck, near shoulder length",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      }
+    },
+    "body": {
+      "build": {
+        "value": "broad-shouldered",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "weight": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "unit": null
+      },
+      "bustSize": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "skin": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "upper": {
+        "value": "Weathered charcoal field jacket, warm-gray shirt",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1003.json"
+      },
+      "lower": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "footwear": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "marks": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "neckline": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "shape": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "color": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "material": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      },
+      "mounting": {
+        "value": null,
+        "status": "unknown",
+        "source": null
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
   }
 }
