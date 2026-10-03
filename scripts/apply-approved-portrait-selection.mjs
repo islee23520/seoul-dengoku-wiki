@@ -42,6 +42,14 @@ export async function applyApprovedPortraitSelection(sourceManifestPath, wikiRoo
     const review = await json('public/portrait-reviews/' + row.personId + '.json')
     assert.equal(token.image.sha256, row.previousImageSha256)
     assert.equal(review.imageSha256, row.previousImageSha256)
+    if (row.operation === 'body-improvement') {
+      assert.ok(row.generationReceipt)
+      assert.equal(row.generationReceipt.imageSha256, row.imageSha256)
+      assert.equal(row.generationReceipt.request.references[0].sha256, row.previousImageSha256)
+      assert.equal(row.generationReceipt.status, 'candidate-unreviewed')
+    } else {
+      assert.equal(row.generationReceipt, undefined)
+    }
     const nextToken = structuredClone(token)
     nextToken.image.sha256 = row.imageSha256
     nextToken.image.width = bytes.readUInt32BE(16)
@@ -50,7 +58,8 @@ export async function applyApprovedPortraitSelection(sourceManifestPath, wikiRoo
     const nextReview = {
       schemaVersion: 1, personId: row.personId, characterId: row.characterId, imageSha256: row.imageSha256,
       ownerVerdict: { verdict: 'pass', source: row.approvalSource, gallery: row.gallery },
-      imageModification: { operation: row.operation, inputSha256: row.previousImageSha256, outputSha256: row.imageSha256, generationReceiptAvailable: false, ...(row.operation === 'localized-alpha-edit' ? { originalRgbPreserved: true } : { exactReductionMeasured: false }) },
+      imageModification: { operation: row.operation, inputSha256: row.previousImageSha256, outputSha256: row.imageSha256, generationReceiptAvailable: row.operation === 'body-improvement', ...(row.operation === 'localized-alpha-edit' ? { originalRgbPreserved: true } : { exactReductionMeasured: false }) },
+      ...(row.operation === 'body-improvement' ? { generationRequest: row.generationReceipt.request, generationReceipt: row.generationReceipt } : {}),
       previousImageReview: review, canonPromotion: false, final3dPortraitContractSatisfied: false,
     }
     updates.push({ row, entry, sourcePath, imagePath, token: nextToken, review: nextReview })

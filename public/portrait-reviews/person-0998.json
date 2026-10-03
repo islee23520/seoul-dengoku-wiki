@@ -12,8 +12,40 @@
     "operation": "body-improvement",
     "inputSha256": "516a10f10caa588e96e39fd395078199acbb08d8918e70844db05e89071a3d4b",
     "outputSha256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
-    "generationReceiptAvailable": false,
+    "generationReceiptAvailable": true,
     "exactReductionMeasured": false
+  },
+  "generationRequest": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "prompt": "Edit ONLY the visible fullness of this SAME adult Korean individual, reducing excess facial and body soft-tissue fullness by approximately 20 percent relative to the current illustration. This is a modest change, not a new skinny face: retain recognizable face proportions, round soft jaw/chin, natural cheeks, eye/nose/mouth shapes, and adult identity. Slightly reduce cheek fullness, under-chin fullness, neck thickness and upper-torso bulk. Do not change overall body/head height, head scale, camera angle/distance/crop, right-facing head and torso posture, eye line, shoulders, swept-back black hair exposing the forehead, large round copper glasses, brown jacket, cream shirt, painting technique or palette. No sharp V-shaped chin, no new muscles, no makeover. Preserve transparent RGBA background and clean alpha edges; no backdrop or checkerboard. One portrait, no text.",
+    "size": "1024x1536",
+    "n": 1,
+    "references": [
+      {
+        "index": 1,
+        "role": "style-only",
+        "sha256": "516a10f10caa588e96e39fd395078199acbb08d8918e70844db05e89071a3d4b"
+      }
+    ]
+  },
+  "generationReceipt": {
+    "request": {
+      "schemaVersion": 1,
+      "model": "gpt-image-2.5",
+      "prompt": "Edit ONLY the visible fullness of this SAME adult Korean individual, reducing excess facial and body soft-tissue fullness by approximately 20 percent relative to the current illustration. This is a modest change, not a new skinny face: retain recognizable face proportions, round soft jaw/chin, natural cheeks, eye/nose/mouth shapes, and adult identity. Slightly reduce cheek fullness, under-chin fullness, neck thickness and upper-torso bulk. Do not change overall body/head height, head scale, camera angle/distance/crop, right-facing head and torso posture, eye line, shoulders, swept-back black hair exposing the forehead, large round copper glasses, brown jacket, cream shirt, painting technique or palette. No sharp V-shaped chin, no new muscles, no makeover. Preserve transparent RGBA background and clean alpha edges; no backdrop or checkerboard. One portrait, no text.",
+      "size": "1024x1536",
+      "n": 1,
+      "references": [
+        {
+          "index": 1,
+          "role": "style-only",
+          "sha256": "516a10f10caa588e96e39fd395078199acbb08d8918e70844db05e89071a3d4b"
+        }
+      ]
+    },
+    "imageSha256": "93e45d8525c4616ef1a174b171403ddd95eebf048fba818a0a80f0c24295b306",
+    "status": "candidate-unreviewed"
   },
   "previousImageReview": {
     "schemaVersion": 1,
