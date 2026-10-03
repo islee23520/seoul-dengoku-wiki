@@ -3,7 +3,9 @@ import assert from 'node:assert/strict'
 import { createElement, act } from 'react'
 import { createRoot } from 'react-dom/client'
 import { MemoryRouter, Routes, Route, useNavigate } from 'react-router-dom'
-import { test, vi } from 'vitest'
+import { test, vi, beforeEach, afterEach } from 'vitest'
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 import PeoplePage from '../src/pages/PeoplePage.tsx'
 import { peopleCatalog } from '../src/generated/peopleCatalog.ts'
 import { portraitIdentities } from '../src/generated/portraitIdentities.ts'
@@ -11,6 +13,9 @@ import { portraitIdentities } from '../src/generated/portraitIdentities.ts'
 const key = 'wiki.people.filters.v1'
 const selected = { query: '감국', state: '신내운수', commonTier: 'T5', occupation: '외곽 호송 인원·발포 권한 확인', gender: '여성' }
 const defaults = { query: '', state: 'all', commonTier: 'all', occupation: 'all', gender: 'all' }
+const heraldry = JSON.parse(readFileSync(resolve('public/heraldry-assets.json'), 'utf8'))
+beforeEach(() => { vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, json: async () => structuredClone(heraldry) }))) })
+afterEach(() => { vi.unstubAllGlobals() })
 
 async function mount() {
   globalThis.IS_REACT_ACT_ENVIRONMENT = true
@@ -172,15 +177,52 @@ test('ordinary-row portraits bind stable IDs and ordered existing metadata witho
       assert.ok(figure)
       assert.equal(figure.querySelector('a').getAttribute('href'), '/people/' + portrait.personId)
       assert.ok(figure.querySelector('img').getAttribute('src').includes(portrait.personId + '.png?v=' + portrait.imageSha256))
-      const expected = ['stateFlag', 'stateName', 'clanCrest', 'bongwan', 'nobleTitle'].filter(key => portrait[key] !== null)
+      const expected = ['bongwan', 'nobleTitle'].filter(key => portrait[key] !== null)
       assert.deepEqual([...figure.querySelectorAll('[data-identity-field]')].map(node => node.dataset.identityField), expected)
       assert.equal(figure.querySelector('[data-identity-field="nobleTitle"]'), null)
     }
-    const iyen = page.host.querySelector('[data-person-id="person-1004"] .people-row-portrait')
+    for (const person of peopleCatalog) {
+      const bar = page.host.querySelector(`[data-person-id="${person.id}"] [data-portrait-heraldry]`)
+      assert.ok(bar)
+      const identity = heraldry.people[person.id]
+      assert.equal(Boolean(bar.querySelector('[data-identity-field="stateFlag"]')), Boolean(heraldry.states[identity.state]))
+      assert.equal(Boolean(bar.querySelector('[data-identity-field="clanCrest"]')), Boolean(identity.clan))
+      if (identity.clan && !heraldry.clans[identity.clan.id]) {
+        assert.ok(bar.querySelector('[data-heraldry-unset="clan"]'), person.id)
+        assert.equal(bar.querySelector('[data-identity-field="clanCrest"] img'), null)
+      }
+    }
+    const iyen = page.host.querySelector('[data-person-id="person-1004"] [data-portrait-heraldry]')
     assert.equal(iyen.querySelector('[data-identity-field="stateFlag"]'), null)
     assert.equal(iyen.querySelector('[data-identity-field="clanCrest"]'), null)
     assert.equal(iyen.querySelector('[data-identity-field="bongwan"]'), null)
     const yura = portraitIdentities.find(row => row.personId === 'person-0399')
     assert.equal(yura.characterId, 'K398')
+  } finally { await page.close(); sessionStorage.clear() }
+})
+
+test('wiki affiliation and asset revision refresh every mounted heraldry without replacing portrait', async () => {
+  sessionStorage.clear()
+  const page = await mount()
+  try {
+    const identity = structuredClone(heraldry)
+    const personId = 'person-0001'
+    const row = () => page.host.querySelector(`[data-person-id="${personId}"]`)
+    const portrait = row().querySelector('.people-row-portrait > a > img').getAttribute('src')
+    const crestId = identity.people[personId].clan.id
+    identity.people[personId].state = 'S02'
+    identity.people[personId].stateName = '규격맹'
+    identity.states.S02.sha256 = 'a'.repeat(64)
+    identity.clans[crestId].sha256 = 'b'.repeat(64)
+    vi.mocked(fetch).mockImplementation(async () => ({ ok: true, json: async () => identity }))
+    await act(async () => { window.dispatchEvent(new Event('focus')) })
+    assert.ok(row().querySelector('[data-identity-field="stateFlag"] img').src.endsWith('S02.webp?v=' + 'a'.repeat(64)))
+    assert.ok(row().querySelector('[data-identity-field="clanCrest"] img').src.endsWith('?v=' + 'b'.repeat(64)))
+    assert.equal(row().querySelector('[data-label="국가"]').textContent, '규격맹')
+    assert.equal(row().querySelector('.people-row-portrait > a > img').getAttribute('src'), portrait)
+    vi.mocked(fetch).mockImplementation(async () => ({ ok: false, status: 503 }))
+    await act(async () => { window.dispatchEvent(new Event('focus')) })
+    assert.ok(page.host.textContent.includes('소속·가문 정보 갱신 실패'))
+    assert.equal(row().querySelector('.people-row-portrait > a > img').getAttribute('src'), portrait)
   } finally { await page.close(); sessionStorage.clear() }
 })

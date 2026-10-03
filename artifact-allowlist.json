@@ -1,5 +1,6 @@
 {
   "rootFiles": [
+    "heraldry-assets.json",
     "confirmed-person-holdings.json",
     "portrait-style-original-c3a7e481.json",
     "local-art-bridge.mjs",
@@ -34,6 +35,10 @@
     "pattern": "^(.+)-[A-Za-z0-9_-]{8}\\.(?:js|css)$",
     "libraryDirectory": "lib",
     "appChunks": [
+      "ClanCrest",
+      "PortraitHeraldry",
+      "StateFlag",
+      "useHeraldryAssets",
       "CategoriesPage",
       "CharacterDraftPage",
       "CharacterArtToolPage",

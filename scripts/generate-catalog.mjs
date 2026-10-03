@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { createHash } from 'node:crypto'
 import proj4 from 'proj4'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
@@ -1102,6 +1103,29 @@ const clanTablesText = await readFile(resolve(repoRoot, 'lore/name-pools/clan-ha
 const clanTables = JSON.parse(clanTablesText)
 const crestIndexText = await readFile(resolve(publicRoot, 'clan-crests/index.json'), 'utf8')
 const crestIndex = JSON.parse(crestIndexText)
+const heraldryCatalog = JSON.parse(await readFile(resolve(repoRoot, 'heraldry-catalog.json'), 'utf8'))
+if (heraldryCatalog.schemaVersion !== 1 || Object.keys(heraldryCatalog.states).length !== 16 || Object.keys(heraldryCatalog.clans).length !== crestIndex.crests.length || crestIndex.crests.some(entry => !heraldryCatalog.clans[entry.id])) throw new Error('E_HERALDRY_CATALOG_COVERAGE')
+const heraldryAsset = async (path) => {
+  if (typeof path !== 'string' || !/^(?:state-flags|clan-crests)\/[a-zA-Z0-9-]+\.(?:webp|svg)$/.test(path)) throw new Error('E_HERALDRY_ASSET_PATH')
+  return { path, sha256: createHash('sha256').update(await readFile(resolve(publicRoot, path))).digest('hex') }
+}
+const heraldryRegistry = {
+  schemaVersion: 1,
+  people: Object.fromEntries(peopleCatalog.map(person => {
+    const lineage = lineageByName.get(person.name)
+    return [person.id, { characterId: issuedIdByName.get(person.name), name: person.name,
+      state: person.state, stateName: person.stateName || '무소속',
+      clan: lineage?.clan ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨` } : null }]
+  })),
+  states: Object.fromEntries(await Promise.all(Object.entries(heraldryCatalog.states).map(async ([id, asset]) => {
+    if (!/^S(?:0[1-9]|1[0-6])$/.test(id)) throw new Error('E_HERALDRY_STATE_ID')
+    return [id, await heraldryAsset(asset.path)]
+  }))),
+  clans: Object.fromEntries(await Promise.all(Object.entries(heraldryCatalog.clans).map(async ([id, asset]) => [id, await heraldryAsset(asset.path)]))),
+}
+await writeFile(resolve(publicRoot, 'heraldry-assets.json'), `${JSON.stringify(heraldryRegistry, null, 2)}\n`)
+await mkdir(resolve(repoRoot, '.omo/evidence/heraldry'), { recursive: true })
+await writeFile(resolve(repoRoot, '.omo/evidence/heraldry/unset-clan-assets.json'), `${JSON.stringify(Object.entries(heraldryRegistry.people).filter(([, person]) => person.clan && !heraldryRegistry.clans[person.clan.id]).map(([personId, person]) => ({ personId, characterId: person.characterId, name: person.name, clanId: person.clan.id, status: 'registered-family-without-existing-crest' })), null, 2)}\n`)
 const branchesByBase = new Map()
 for (const branch of clanTables.clans.filter((entry) => entry.id.includes('-agreed-'))) {
   const base = branch.id.split('-agreed-')[0]

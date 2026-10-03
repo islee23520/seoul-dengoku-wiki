@@ -10,6 +10,10 @@ import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 import type { PersonRightsPermissions, PermissionStatus } from '../personRightsPermissions'
 import { FamilyTree } from '../components/FamilyTree'
 import type { FamilyTreeData } from '../components/FamilyTree'
+import { PortraitHeraldry } from '../components/PortraitHeraldry'
+import { ClanCrest } from '../components/ClanCrest'
+import { useHeraldryAssets } from '../hooks/useHeraldryAssets'
+import type { PortraitHeraldryData } from '../components/PortraitHeraldry'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type ConfirmedHolding = {
@@ -381,16 +385,22 @@ export default function PersonDetailPage() {
   useEffect(() => {
     if (!summary) return
     let active = true
+    let requestVersion = 0
     setDetail(null)
     setFailed(false)
-    void fetch(`${import.meta.env.BASE_URL}person-details/${summary.id}.json`)
+    const refresh = () => {
+      const version = ++requestVersion
+      void fetch(`${import.meta.env.BASE_URL}person-details/${summary.id}.json`, { cache: 'no-store' })
       .then((response) => {
         if (!response.ok) throw new Error(`${response.status}`)
         return response.json() as Promise<PersonDetail>
       })
-      .then((person) => { if (active) setDetail(person) })
-      .catch(() => { if (active) setFailed(true) })
-    return () => { active = false }
+      .then((person) => { if (active && version === requestVersion) { setDetail(person); setFailed(false) } })
+      .catch(() => { if (active && version === requestVersion) setFailed(true) })
+    }
+    refresh()
+    window.addEventListener('focus', refresh)
+    return () => { active = false; window.removeEventListener('focus', refresh) }
   }, [summary])
 
   useEffect(() => {
@@ -399,17 +409,20 @@ export default function PersonDetailPage() {
     return () => { document.title = '서울:전국 — 공식 위키' }
   }, [summary])
 
-  if (!summary || failed) return <Navigate to="/people" replace />
+  if (!summary || (failed && !detail)) return <Navigate to="/people" replace />
   if (!detail) return <div className="wiki-loading" role="status">인물 상세를 불러오고 있습니다.</div>
 
-  return <PersonDetailContent detail={detail} personId={personId || ''} feedback={feedback} feedbackBound={feedbackBound} proseRef={proseRef} setFeedbackBound={setFeedbackBound} />
+  return <>{failed && <p role="status">인물 정보 갱신 실패 · 마지막 조회 정보를 표시합니다.</p>}<PersonDetailContent detail={detail} personId={personId || ''} feedback={feedback} feedbackBound={feedbackBound} proseRef={proseRef} setFeedbackBound={setFeedbackBound} /></>
 }
 
 export function PersonDetailContent({ detail, personId, feedback = null, feedbackBound = false, proseRef = { current: null }, setFeedbackBound = () => {} }: { detail: PersonDetail; personId: string; feedback?: import('../feedbackSelection').FeedbackDocument | null; feedbackBound?: boolean; proseRef?: React.RefObject<HTMLDivElement>; setFeedbackBound?: (bound: boolean) => void }): JSX.Element {
+  const { assets, failed: heraldryFailed } = useHeraldryAssets()
+  const fallbackIdentity: PortraitHeraldryData & { readonly name: string } = { id: detail.id, name: detail.name, state: detail.state, stateName: detail.stateName, clan: detail.clan }
+  const identity = assets?.people[detail.id] ?? fallbackIdentity
   const person: any = detail
   const sheet = parseGurpsSheet(detail.gurps, personId)
   const basicRows: Array<Array<string | number | null>> = [
-    ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
+    ['이름', identity.name], ['국가', identity.stateName || '무소속'], ['국가 ID', identity.state],
     ['생년월일', detail.birthDate], ['생일', detail.birthday], ['나이', `만 ${detail.age}세`], ['나이 기준일', detail.ageAsOf],
     ['직위', person.position], ['직급(공통 티어)', person.commonTier], ['국가 품계', person.rank], ['직업', person.occupation], ['성별', person.gender], ['단계', person.stage], ['세대', person.generation],
     ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속', '생년월일', '생일', '나이', '나이 기준일'].includes(label)),
@@ -434,21 +447,22 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
 
   return (
     <article className="wiki-article" data-wiki-shell="react-official" data-person-id={detail.id}>
-      <nav aria-label="현재 위치" className="wiki-breadcrumbs"><Link to="/">대문</Link><span aria-hidden="true">›</span><Link to="/people">등장인물 전체</Link><span aria-hidden="true">›</span><strong>{detail.name}</strong></nav>
+      <nav aria-label="현재 위치" className="wiki-breadcrumbs"><Link to="/">대문</Link><span aria-hidden="true">›</span><Link to="/people">등장인물 전체</Link><span aria-hidden="true">›</span><strong>{identity.name}</strong></nav>
       <header className="wiki-article-header">
         <div>
           <p className="wiki-domain-label">서울:전국 공식 위키 · 인물</p>
-          <h1>{detail.name}</h1>
-          <p>{detail.stateName || '무소속'} · {detail.title}</p>
-          {detail.clan && (
+          <h1>{identity.name}</h1>
+          <p>{identity.stateName || '무소속'} · {detail.title}</p>
+          {identity.clan && (
             <p className="person-clan-line">
-              <img src={`${import.meta.env.BASE_URL}${detail.clan.crest.startsWith('/') ? '' : '/'}${detail.clan.crest}`} alt={`${detail.clan.name} 문장`} width="64" height="64" loading="lazy" />
-              <Link to={`/families/${detail.clan.id}`} className="wiki-link">{detail.clan.name}</Link>
+              <ClanCrest clanId={identity.clan.id} title={`${identity.clan.name} 문장`} />
+              <Link to={`/families/${identity.clan.id}`} className="wiki-link">{identity.clan.name}</Link>
             </p>
           )}
         </div>
         <span className="wiki-canon-badge">정본</span>
       </header>
+      {heraldryFailed && <p role="status">소속·가문 정보 갱신 실패 · 마지막 조회 정보를 표시합니다.</p>}
       <p><Link to={`/tools/character-art?person=${encodeURIComponent(detail.id)}`}>이 인물의 아트 작업 도구 열기</Link></p>
       <div className="person-detail-layout">
         <aside className="person-data-panel" aria-label="인물 구조화 데이터">
@@ -456,6 +470,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             <img className="people-portrait" src={`${import.meta.env.BASE_URL}portraits/${detail.id}.png?v=${portraitCatalog.entries.find((entry) => entry.personId === detail.id && entry.name === detail.name)?.imageSha256}`} alt={`${detail.name} 초상 아트 제안`} />
             <figcaption>초상 아트 제안 · <a href={`${import.meta.env.BASE_URL}portrait-tokens/${detail.id}.json?v=${portraitCatalog.entries.find((entry) => entry.personId === detail.id && entry.name === detail.name)?.imageSha256}`}>디자인 토큰</a></figcaption>
           </figure>}
+          <PortraitHeraldry person={detail} />
           <DataTable title="기본 정보" rows={basicRows} />
           <PersonPermissions permissions={detail.rightsPermissions} />
           <DataTable title="관계" rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />

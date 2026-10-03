@@ -301,6 +301,9 @@ summary:focus-visible {
 .people-portrait-identity { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; margin-block-start: 0.35rem; font-size: 0.8rem; }
 .people-portrait-identity img { inline-size: 1.7rem; block-size: 1.7rem; object-fit: contain; }
 .people-portrait-identity [data-identity-field="stateFlag"] { inline-size: 2rem; }
+.people-portrait-identity [data-identity-field="stateFlag"] img { inline-size: 2rem; }
+.person-clan-line > img { inline-size: 4rem; block-size: 4rem; object-fit: contain; }
+.wiki-header .flex-shrink-0 > img { inline-size: 8rem; block-size: 8rem; object-fit: contain; }
 .person-detail-layout { display: grid; grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 .person-data-panel { display: grid; gap: 1rem; position: sticky; inset-block-start: 1rem; }
 .person-data-section h2 { margin-block: 0 0.35rem; font-size: 1rem; }

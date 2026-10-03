@@ -1,0 +1,586 @@
+{
+  "schemaVersion": 1,
+  "states": {
+    "S01": {
+      "path": "state-flags/S01.webp"
+    },
+    "S02": {
+      "path": "state-flags/S02.webp"
+    },
+    "S03": {
+      "path": "state-flags/S03.webp"
+    },
+    "S04": {
+      "path": "state-flags/S04.webp"
+    },
+    "S05": {
+      "path": "state-flags/S05.webp"
+    },
+    "S06": {
+      "path": "state-flags/S06.webp"
+    },
+    "S07": {
+      "path": "state-flags/S07.webp"
+    },
+    "S08": {
+      "path": "state-flags/S08.webp"
+    },
+    "S09": {
+      "path": "state-flags/S09.webp"
+    },
+    "S10": {
+      "path": "state-flags/S10.webp"
+    },
+    "S11": {
+      "path": "state-flags/S11.webp"
+    },
+    "S12": {
+      "path": "state-flags/S12.webp"
+    },
+    "S13": {
+      "path": "state-flags/S13.webp"
+    },
+    "S14": {
+      "path": "state-flags/S14.webp"
+    },
+    "S15": {
+      "path": "state-flags/S15.webp"
+    },
+    "S16": {
+      "path": "state-flags/S16.webp"
+    }
+  },
+  "clans": {
+    "ac10-cc3d-c6d0": {
+      "path": "clan-crests/ac10-cc3d-c6d0.svg"
+    },
+    "ac15-c9c4-c8fc": {
+      "path": "clan-crests/ac15-c9c4-c8fc.svg"
+    },
+    "ace0-d55c-c591": {
+      "path": "clan-crests/ace0-d55c-c591.svg"
+    },
+    "acfd-d604-d48d": {
+      "path": "clan-crests/acfd-d604-d48d.svg"
+    },
+    "ad6c-b2a5-c131": {
+      "path": "clan-crests/ad6c-b2a5-c131.svg"
+    },
+    "ad6d-b2f4-c591": {
+      "path": "clan-crests/ad6d-b2f4-c591.svg"
+    },
+    "ad8c-c548-b3d9": {
+      "path": "clan-crests/ad8c-c548-b3d9.svg"
+    },
+    "adfc-ccad-c8fc": {
+      "path": "clan-crests/adfc-ccad-c8fc.svg"
+    },
+    "ae30-d589-c8fc": {
+      "path": "clan-crests/ae30-d589-c8fc.svg"
+    },
+    "ae40-ae40-d574": {
+      "path": "clan-crests/ae40-ae40-d574.svg"
+    },
+    "b0a8-c758-b839": {
+      "path": "clan-crests/b0a8-c758-b839.svg"
+    },
+    "b178-ad11-c8fc": {
+      "path": "clan-crests/b178-ad11-c8fc.svg"
+    },
+    "b2e8-ac15-c74c": {
+      "path": "clan-crests/b2e8-ac15-c74c.svg"
+    },
+    "b3d9-ad11-cc9c": {
+      "path": "clan-crests/b3d9-ad11-cc9c.svg"
+    },
+    "b450-b450-b989": {
+      "path": "clan-crests/b450-b450-b989.svg"
+    },
+    "b9c8-c7a5-d765": {
+      "path": "clan-crests/b9c8-c7a5-d765.svg"
+    },
+    "b9e4-cda9-c8fc": {
+      "path": "clan-crests/b9e4-cda9-c8fc.svg"
+    },
+    "ba85-c5f0-c548": {
+      "path": "clan-crests/ba85-c5f0-c548.svg"
+    },
+    "baa8-d568-d3c9": {
+      "path": "clan-crests/baa8-d568-d3c9.svg"
+    },
+    "bc15-bc00-c591": {
+      "path": "clan-crests/bc15-bc00-c591.svg"
+    },
+    "bc29-c628-c591": {
+      "path": "clan-crests/bc29-c628-c591.svg"
+    },
+    "bc30-c131-c8fc": {
+      "path": "clan-crests/bc30-c131-c8fc.svg"
+    },
+    "bc31-c218-c6d0": {
+      "path": "clan-crests/bc31-c218-c6d0.svg"
+    },
+    "bc94-ae08-c131": {
+      "path": "clan-crests/bc94-ae08-c131.svg"
+    },
+    "bcc0-cd08-acc4": {
+      "path": "clan-crests/bcc0-cd08-acc4.svg"
+    },
+    "bcf5-ba74-cc9c": {
+      "path": "clan-crests/bcf5-ba74-cc9c.svg"
+    },
+    "bd09-d558-c74c": {
+      "path": "clan-crests/bd09-d558-c74c.svg"
+    },
+    "c11c-b2ec-c131": {
+      "path": "clan-crests/c11c-b2ec-c131.svg"
+    },
+    "c11d-cda9-c8fc": {
+      "path": "clan-crests/c11d-cda9-c8fc.svg"
+    },
+    "c120-bcf4-c131": {
+      "path": "clan-crests/c120-bcf4-c131.svg"
+    },
+    "c124-c21c-cc3d": {
+      "path": "clan-crests/c124-c21c-cc3d.svg"
+    },
+    "c12d-acbd-c8fc": {
+      "path": "clan-crests/c12d-acbd-c8fc.svg"
+    },
+    "c131-cc3d-b155": {
+      "path": "clan-crests/c131-cc3d-b155.svg"
+    },
+    "c18c-c9c4-c8fc": {
+      "path": "clan-crests/c18c-c9c4-c8fc.svg"
+    },
+    "c190-bc00-c591": {
+      "path": "clan-crests/c190-bc00-c591.svg"
+    },
+    "c1a1-c5ec-c0b0": {
+      "path": "clan-crests/c1a1-c5ec-c0b0.svg"
+    },
+    "c218-d55c-c591": {
+      "path": "clan-crests/c218-d55c-c591.svg"
+    },
+    "c21c-d64d-c0b0": {
+      "path": "clan-crests/c21c-d64d-c0b0.svg"
+    },
+    "c2e0-d3c9-c0b0": {
+      "path": "clan-crests/c2e0-d3c9-c0b0.svg"
+    },
+    "c2ec-ccad-c1a1": {
+      "path": "clan-crests/c2ec-ccad-c1a1.svg"
+    },
+    "c548-c21c-d765": {
+      "path": "clan-crests/c548-c21c-d765.svg"
+    },
+    "c591-ccad-c8fc": {
+      "path": "clan-crests/c591-ccad-c8fc.svg"
+    },
+    "c5b4-d568-c885": {
+      "path": "clan-crests/c5b4-d568-c885.svg"
+    },
+    "c5c4-c601-c6d4": {
+      "path": "clan-crests/c5c4-c601-c6d4.svg"
+    },
+    "c5ec-d568-c591": {
+      "path": "clan-crests/c5ec-d568-c591.svg"
+    },
+    "c5f0-ace1-c0b0": {
+      "path": "clan-crests/c5f0-ace1-c0b0.svg"
+    },
+    "c601-c601-cc9c": {
+      "path": "clan-crests/c601-c601-cc9c.svg"
+    },
+    "c624-d574-c8fc": {
+      "path": "clan-crests/c624-d574-c8fc.svg"
+    },
+    "c6a9-d64d-cc9c": {
+      "path": "clan-crests/c6a9-d64d-cc9c.svg"
+    },
+    "c6b0-b2e8-c591": {
+      "path": "clan-crests/c6b0-b2e8-c591.svg"
+    },
+    "c6d0-c6d0-c8fc": {
+      "path": "clan-crests/c6d0-c6d0-c8fc.svg"
+    },
+    "c720-ac15-b989": {
+      "path": "clan-crests/c720-ac15-b989.svg"
+    },
+    "c724-d30c-d3c9": {
+      "path": "clan-crests/c724-d30c-d3c9.svg"
+    },
+    "c740-d589-c8fc": {
+      "path": "clan-crests/c740-d589-c8fc.svg"
+    },
+    "c774-c804-c8fc": {
+      "path": "clan-crests/c774-c804-c8fc.svg"
+    },
+    "c784-b098-c8fc": {
+      "path": "clan-crests/c784-b098-c8fc.svg"
+    },
+    "c7a5-d765-b355": {
+      "path": "clan-crests/c7a5-d765-b355.svg"
+    },
+    "c804-cc9c-c548": {
+      "path": "clan-crests/c804-cc9c-c548.svg"
+    },
+    "c815-b3d9-b798": {
+      "path": "clan-crests/c815-b3d9-b798.svg"
+    },
+    "c81c-ce60-c6d0": {
+      "path": "clan-crests/c81c-ce60-c6d0.svg"
+    },
+    "c870-d55c-c591": {
+      "path": "clan-crests/c870-d55c-c591.svg"
+    },
+    "c885-c601-c554": {
+      "path": "clan-crests/c885-c601-c554.svg"
+    },
+    "c8fc-c2e0-c548": {
+      "path": "clan-crests/c8fc-c2e0-c548.svg"
+    },
+    "c9c0-cda9-c8fc": {
+      "path": "clan-crests/c9c0-cda9-c8fc.svg"
+    },
+    "c9c4-d48d-ae30": {
+      "path": "clan-crests/c9c4-d48d-ae30.svg"
+    },
+    "cc28-c5f0-c548": {
+      "path": "clan-crests/cc28-c5f0-c548.svg"
+    },
+    "cc3d-ac70-cc3d": {
+      "path": "clan-crests/cc3d-ac70-cc3d.svg"
+    },
+    "cc44-d3c9-ac15": {
+      "path": "clan-crests/cc44-d3c9-ac15.svg"
+    },
+    "cc9c-c601-c591": {
+      "path": "clan-crests/cc9c-c601-c591.svg"
+    },
+    "cd08-c131-c8fc": {
+      "path": "clan-crests/cd08-c131-c8fc.svg"
+    },
+    "cd5c-acbd-c8fc": {
+      "path": "clan-crests/cd5c-acbd-c8fc.svg"
+    },
+    "cd94-cd94-acc4": {
+      "path": "clan-crests/cd94-cd94-acc4.svg"
+    },
+    "d0c1-ad11-c0b0": {
+      "path": "clan-crests/d0c1-ad11-c0b0.svg"
+    },
+    "d310-d574-c8fc": {
+      "path": "clan-crests/d310-d574-c8fc.svg"
+    },
+    "d3c9-cda9-c8fc": {
+      "path": "clan-crests/d3c9-cda9-c8fc.svg"
+    },
+    "d45c-c2e0-cc3d": {
+      "path": "clan-crests/d45c-c2e0-cc3d.svg"
+    },
+    "d558-c9c4-c8fc": {
+      "path": "clan-crests/d558-c9c4-c8fc.svg"
+    },
+    "d55c-ccad-c8fc": {
+      "path": "clan-crests/d55c-ccad-c8fc.svg"
+    },
+    "d568-ac15-b989": {
+      "path": "clan-crests/d568-ac15-b989.svg"
+    },
+    "d5c8-c591-cc9c": {
+      "path": "clan-crests/d5c8-c591-cc9c.svg"
+    },
+    "d64d-b0a8-c591": {
+      "path": "clan-crests/d64d-b0a8-c591.svg"
+    },
+    "d669-cc3d-c6d0": {
+      "path": "clan-crests/d669-cc3d-c6d0.svg"
+    },
+    "cangnyeong-seong-yeolcha": {
+      "path": "clan-crests/cangnyeong-seong-yeolcha.svg"
+    },
+    "c774-d55c-c0b0-674e": {
+      "path": "clan-crests/c774-d55c-c0b0-674e.svg"
+    },
+    "ae40-ccad-d48d-91d1": {
+      "path": "clan-crests/ae40-ccad-d48d-91d1.svg"
+    },
+    "cd5c-ac15-b989-5d14": {
+      "path": "clan-crests/cd5c-ac15-b989-5d14.svg"
+    },
+    "c815-c9c4-c8fc-912d": {
+      "path": "clan-crests/c815-c9c4-c8fc-912d.svg"
+    },
+    "c7a5-b355-c218-5f35": {
+      "path": "clan-crests/c7a5-b355-c218-5f35.svg"
+    },
+    "d5c8-d558-c591-8a31": {
+      "path": "clan-crests/d5c8-d558-c591-8a31.svg"
+    },
+    "bcc0-c6d0-c8fc-908a": {
+      "path": "clan-crests/bcc0-c6d0-c8fc-908a.svg"
+    },
+    "d5c8-d0dc-c778-8a31": {
+      "path": "clan-crests/d5c8-d0dc-c778-8a31.svg"
+    },
+    "bc30-acbd-c8fc-88f5": {
+      "path": "clan-crests/bc30-acbd-c8fc-88f5.svg"
+    },
+    "c774-c5f0-c548-674e": {
+      "path": "clan-crests/c774-c5f0-c548-674e.svg"
+    },
+    "c1a1-c9c4-cc9c-5b8b": {
+      "path": "clan-crests/c1a1-c9c4-cc9c-5b8b.svg"
+    },
+    "c784-bd80-c548-6797": {
+      "path": "clan-crests/c784-bd80-c548-6797.svg"
+    },
+    "c774-c131-c8fc-674e": {
+      "path": "clan-crests/c774-c131-c8fc-674e.svg"
+    },
+    "c784-c870-c591-6797": {
+      "path": "clan-crests/c784-c870-c591-6797.svg"
+    },
+    "c774-ad11-c8fc-674e": {
+      "path": "clan-crests/c774-ad11-c8fc-674e.svg"
+    },
+    "c1a1-c740-c9c4-5b8b": {
+      "path": "clan-crests/c1a1-c740-c9c4-5b8b.svg"
+    },
+    "cd5c-c0ad-b155-5d14": {
+      "path": "clan-crests/cd5c-c0ad-b155-5d14.svg"
+    },
+    "c870-c625-cc9c-8d99": {
+      "path": "clan-crests/c870-c625-cc9c-8d99.svg"
+    },
+    "c591-b0a8-c6d0-694a": {
+      "path": "clan-crests/c591-b0a8-c6d0-694a.svg"
+    },
+    "ae40-c758-c131-91d1": {
+      "path": "clan-crests/ae40-c758-c131-91d1.svg"
+    },
+    "c815-c5f0-c77c-912d": {
+      "path": "clan-crests/c815-c5f0-c77c-912d.svg"
+    },
+    "c815-acbd-c8fc-912d": {
+      "path": "clan-crests/c815-acbd-c8fc-912d.svg"
+    },
+    "ae40-ad11-c0b0-91d1": {
+      "path": "clan-crests/ae40-ad11-c0b0-91d1.svg"
+    },
+    "c774-acbd-c8fc-674e": {
+      "path": "clan-crests/c774-acbd-c8fc-674e.svg"
+    },
+    "cd5c-c218-c131-5d14": {
+      "path": "clan-crests/cd5c-c218-c131-5d14.svg"
+    },
+    "bc30-bd84-c131-88f5": {
+      "path": "clan-crests/bc30-bd84-c131-88f5.svg"
+    },
+    "d5c8-ae40-d574-8a31": {
+      "path": "clan-crests/d5c8-ae40-d574-8a31.svg"
+    },
+    "c591-c911-d654-694a": {
+      "path": "clan-crests/c591-c911-d654-694a.svg"
+    },
+    "c9c4-b0a8-c6d0-664b": {
+      "path": "clan-crests/c9c4-b0a8-c6d0-664b.svg"
+    },
+    "c1a1-c2e0-d3c9-5b8b": {
+      "path": "clan-crests/c1a1-c2e0-d3c9-5b8b.svg"
+    },
+    "cd5c-d574-c8fc-5d14": {
+      "path": "clan-crests/cd5c-d574-c8fc-5d14.svg"
+    },
+    "ae40-ac15-b989-91d1": {
+      "path": "clan-crests/ae40-ac15-b989-91d1.svg"
+    },
+    "c7a5-b2e8-c591-5f35": {
+      "path": "clan-crests/c7a5-b2e8-c591-5f35.svg"
+    },
+    "c784-d3c9-d0dd-6797": {
+      "path": "clan-crests/c784-d3c9-d0dd-6797.svg"
+    },
+    "cd5c-c804-c8fc-5d14": {
+      "path": "clan-crests/cd5c-c804-c8fc-5d14.svg"
+    },
+    "c8fc-c0c1-c8fc-5468": {
+      "path": "clan-crests/c8fc-c0c1-c8fc-5468.svg"
+    },
+    "c870-d3c9-c591-8d99": {
+      "path": "clan-crests/c870-d3c9-c591-8d99.svg"
+    },
+    "d669-d3c9-d574-9ec3": {
+      "path": "clan-crests/d669-d3c9-d574-9ec3.svg"
+    },
+    "c7a5-c544-c0b0-8523": {
+      "path": "clan-crests/c7a5-c544-c0b0-8523.svg"
+    },
+    "bc30-d765-d574-88f5": {
+      "path": "clan-crests/bc30-d765-d574-88f5.svg"
+    },
+    "c774-c804-c758-674e": {
+      "path": "clan-crests/c774-c804-c758-674e.svg"
+    },
+    "c5ec-c758-b839-4f59": {
+      "path": "clan-crests/c5ec-c758-b839-4f59.svg"
+    },
+    "b178-c7a5-c5f0-76e7": {
+      "path": "clan-crests/b178-c7a5-c5f0-76e7.svg"
+    },
+    "ae40-acbd-c8fc-91d1": {
+      "path": "clan-crests/ae40-acbd-c8fc-91d1.svg"
+    },
+    "c815-d574-c8fc-912d": {
+      "path": "clan-crests/c815-d574-c8fc-912d.svg"
+    },
+    "c2e0-c601-c0b0-8f9b": {
+      "path": "clan-crests/c2e0-c601-c0b0-8f9b.svg"
+    },
+    "c7a5-baa9-cc9c-5f35": {
+      "path": "clan-crests/c7a5-baa9-cc9c-5f35.svg"
+    },
+    "c1a1-d64d-c8fc-5b8b": {
+      "path": "clan-crests/c1a1-d64d-c8fc-5b8b.svg"
+    },
+    "c815-d558-b3d9-912d": {
+      "path": "clan-crests/c815-d558-b3d9-912d.svg"
+    },
+    "c870-bc30-cc9c-8d99": {
+      "path": "clan-crests/c870-bc30-cc9c-8d99.svg"
+    },
+    "b178-d568-d3c9-9b6f": {
+      "path": "clan-crests/b178-d568-d3c9-9b6f.svg"
+    },
+    "b178-ad50-d558-76e7": {
+      "path": "clan-crests/b178-ad50-d558-76e7.svg"
+    },
+    "b178-d48d-cc9c-76e7": {
+      "path": "clan-crests/b178-d48d-cc9c-76e7.svg"
+    },
+    "c784-c608-cc9c-6797": {
+      "path": "clan-crests/c784-c608-cc9c-6797.svg"
+    },
+    "cd5c-d0d0-c9c4-5d14": {
+      "path": "clan-crests/cd5c-d0d0-c9c4-5d14.svg"
+    },
+    "c870-cc3d-b155-66fa": {
+      "path": "clan-crests/c870-cc3d-b155-66fa.svg"
+    },
+    "d669-c7a5-c218-9ec3": {
+      "path": "clan-crests/d669-c7a5-c218-9ec3.svg"
+    },
+    "d669-d68c-b355-9ec3": {
+      "path": "clan-crests/d669-d68c-b355-9ec3.svg"
+    },
+    "c870-d568-c548-8d99": {
+      "path": "clan-crests/c870-d568-c548-8d99.svg"
+    },
+    "b2e8-b300-d765-6bb5": {
+      "path": "clan-crests/b2e8-b300-d765-6bb5.svg"
+    },
+    "ad6c-d3c9-d574-4e18": {
+      "path": "clan-crests/ad6c-d3c9-d574-4e18.svg"
+    },
+    "bc30-b300-ad6c-88f5": {
+      "path": "clan-crests/bc30-b300-ad6c-88f5.svg"
+    },
+    "b2e8-c11c-cd09-6bb5": {
+      "path": "clan-crests/b2e8-c11c-cd09-6bb5.svg"
+    },
+    "c21c-ae08-ad6c-6df3": {
+      "path": "clan-crests/c21c-ae08-ad6c-6df3.svg"
+    },
+    "c1a1-c5f0-c548-5b8b": {
+      "path": "clan-crests/c1a1-c5f0-c548-5b8b.svg"
+    },
+    "c870-d48d-c591-8d99": {
+      "path": "clan-crests/c870-d48d-c591-8d99.svg"
+    },
+    "d669-c6b0-c8fc-9ec3": {
+      "path": "clan-crests/d669-c6b0-c8fc-9ec3.svg"
+    },
+    "b2e8-c5f0-c548-6bb5": {
+      "path": "clan-crests/b2e8-c5f0-c548-6bb5.svg"
+    },
+    "c784-d48d-cc9c-4efb": {
+      "path": "clan-crests/c784-d48d-cc9c-4efb.svg"
+    },
+    "c720-bb34-c1a1-5ebe": {
+      "path": "clan-crests/c720-bb34-c1a1-5ebe.svg"
+    },
+    "c804-c625-cc9c-5168": {
+      "path": "clan-crests/c804-c625-cc9c-5168.svg"
+    },
+    "bc29-b0a8-c591-623f": {
+      "path": "clan-crests/bc29-b0a8-c591-623f.svg"
+    },
+    "cc3d-cc3d-b155-660c": {
+      "path": "clan-crests/cc3d-cc3d-b155-660c.svg"
+    },
+    "ae40-c0c1-b77d-91d1": {
+      "path": "clan-crests/ae40-c0c1-b77d-91d1.svg"
+    },
+    "c601-c120-cc9c-5f71": {
+      "path": "clan-crests/c601-c120-cc9c-5f71.svg"
+    },
+    "cd08-b9c8-c0b0-521d": {
+      "path": "clan-crests/cd08-b9c8-c0b0-521d.svg"
+    },
+    "c804-c804-c8fc-5168": {
+      "path": "clan-crests/c804-c804-c8fc-5168.svg"
+    },
+    "cc3d-c544-c0b0-5009": {
+      "path": "clan-crests/cc3d-c544-c0b0-5009.svg"
+    },
+    "c9c4-c5ec-c591-9663": {
+      "path": "clan-crests/c9c4-c5ec-c591-9663.svg"
+    },
+    "b098-b098-c8fc-7f85": {
+      "path": "clan-crests/b098-b098-c8fc-7f85.svg"
+    },
+    "b77c-ae08-c131-7f85": {
+      "path": "clan-crests/b77c-ae08-c131-7f85.svg"
+    },
+    "b958-bb38-d654-67f3": {
+      "path": "clan-crests/b958-bb38-d654-67f3.svg"
+    },
+    "bb38-b0a8-d3c9-6587": {
+      "path": "clan-crests/bb38-b0a8-d3c9-6587.svg"
+    },
+    "bbfc-c5ec-d765-9594": {
+      "path": "clan-crests/bbfc-c5ec-d765-9594.svg"
+    },
+    "creative-b780-b3c4-bd09": {
+      "path": "clan-crests/creative-b780-b3c4-bd09.svg"
+    },
+    "creative-d765-c218-c0c9": {
+      "path": "clan-crests/creative-d765-c218-c0c9.svg"
+    },
+    "c2e0-ac70-cc3d-613c": {
+      "path": "clan-crests/c2e0-ac70-cc3d-613c.svg"
+    },
+    "c815-c9c4-c591-912d": {
+      "path": "clan-crests/c815-c9c4-c591-912d.svg"
+    },
+    "c784-b300-b9bc-6797": {
+      "path": "clan-crests/c784-b300-b9bc-6797.svg"
+    },
+    "bc94-ad6c-b85c-8303": {
+      "path": "clan-crests/bc94-ad6c-b85c-8303.svg"
+    },
+    "ce74-c2ec-c774-d0dc-c6d0": {
+      "path": "clan-crests/ce74-c2ec-c774-d0dc-c6d0.svg"
+    },
+    "c720-c218-d3ec-bc14-c790-c591": {
+      "path": "clan-crests/c720-c218-d3ec-bc14-c790-c591.svg"
+    },
+    "goryeong-shin": {
+      "path": "clan-crests/goryeong-shin.svg"
+    },
+    "yeonan-lee": {
+      "path": "clan-crests/yeonan-lee.svg"
+    }
+  }
+}
