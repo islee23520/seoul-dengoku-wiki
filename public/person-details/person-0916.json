@@ -12,6 +12,328 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-배숲민",
   "detailRoute": "/people/person-0916",
+  "birthDate": "2073-09-20",
+  "birthday": "09-20",
+  "age": 53,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/600",
+    "lore/characters/Cast-State-13.json#/content/602",
+    "lore/characters/Cast-State-13.json#/content/603"
+  ],
+  "familyTree": {
+    "personId": "K916",
+    "nodes": [
+      {
+        "id": "K916",
+        "personId": "K916",
+        "kind": "person",
+        "name": "배숲민",
+        "birthDate": "2073-09-20",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K916"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 처방 기록·당직 열쇠 인계",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-배숲민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0916"
+      },
+      {
+        "id": "FH-K916-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "배현민",
+        "birthDate": "2043-09-20",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "배현민은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-배숲민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K916-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "배현원",
+        "birthDate": "2013-09-20",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "배현원은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-배숲민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K916-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤민윤",
+        "birthDate": "2043-09-20",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "윤민윤은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-배숲민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K916-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한민윤",
+        "birthDate": "2013-09-20",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한민윤은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-배숲민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K916-P-01:K916:biological",
+        "from": "FH-K916-P-01",
+        "to": "K916",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K916-P-02:FH-K916-P-01:biological",
+        "from": "FH-K916-P-02",
+        "to": "FH-K916-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K916-M-01:K916:biological",
+        "from": "FH-K916-M-01",
+        "to": "K916",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K916-M-02:FH-K916-M-01:biological",
+        "from": "FH-K916-M-02",
+        "to": "FH-K916-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-배숲민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K916",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K916-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4419"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K916-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/4421"
+          }
+        ]
+      },
+      {
+        "recipientId": "K327",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "배숲민은 처방에 관한 갈린 증언을 대질로 확인해 전솔에게 전한다. 전솔은 병상 명부와 중증도를 확인해 잘못 전해진 말이 진료 순서를 바꾸지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/638"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K916",
     "personId": "person-0916",
@@ -145,17 +467,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 수련의. 직함은 처방 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 처방 수련의 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 배숲민은 처방에 관한 갈린 증언을 대질로 확인해 전솔에게 전한다. 전솔은 병상 명부와 중증도를 확인해 잘못 전해진 말이 진료 순서를 바꾸지 않게 한다.",
     "야망": "처방 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.",
     "공포": "처방 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 처방 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 처방 수련의\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 처방 수련의 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 처방 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 처방 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 처방 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 처방 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −50 | 물질 −30 | 공동 15 | 원칙 45 | 공개 25 | 자격 15 | 분산 20 | 변혁 −15\n- 욕망: 갈망 −5 | 독점 30 | 위험 30 | 과시 25 | 지속 30 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 처방 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 처방 수련의\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 처방 수련의 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 처방 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 처방 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 배숲민은 처방에 관한 갈린 증언을 대질로 확인해 전솔에게 전한다. 전솔은 병상 명부와 중증도를 확인해 잘못 전해진 말이 진료 순서를 바꾸지 않게 한다.\n\n**야망.** 처방 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 처방 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −50 | 물질 −30 | 공동 15 | 원칙 45 | 공개 25 | 자격 15 | 분산 20 | 변혁 −15\n- 욕망: 갈망 −5 | 독점 30 | 위험 30 | 과시 25 | 지속 30 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-13"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "배숲민",
+        "type": "계약",
+        "to": "전솔",
+        "basis": "배숲민은 처방에 관한 갈린 증언을 대질로 확인해 전솔에게 전한다. 전솔은 병상 명부와 중증도를 확인해 잘못 전해진 말이 진료 순서를 바꾸지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

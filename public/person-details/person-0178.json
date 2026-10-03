@@ -1,6 +1,6 @@
 {
   "id": "person-0178",
-  "name": "차호민",
+  "name": "가브리엘 존슨",
   "title": "용산창 의무원",
   "position": "용산창 의무원",
   "rank": "주사",
@@ -10,8 +10,526 @@
   "stage": "S2",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-차호민",
+  "sourceRoute": "/world/Cast-State-07#인물-가브리엘 존슨",
   "detailRoute": "/people/person-0178",
+  "birthDate": "2089-04-17",
+  "birthday": "04-17",
+  "age": 37,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/105",
+    "lore/characters/Cast-State-07.json#/content/107"
+  ],
+  "familyTree": {
+    "personId": "K177",
+    "nodes": [
+      {
+        "id": "K177",
+        "personId": "K177",
+        "kind": "person",
+        "name": "가브리엘 존슨",
+        "birthDate": "2089-04-17",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K177"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-가브리엘-존슨-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Gabriel Johnson",
+        "detailRoute": "/people/person-0178"
+      },
+      {
+        "id": "FH-K177-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "마이클 존슨",
+        "birthDate": "2059-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2097,
+            "summary": "마이클 존슨은 2059년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2077년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-가브리엘-존슨-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Michael Johnson was born in 2059 and grew up reading family and work records. From 2077, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Michael Johnson",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K177-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "토머스 존슨",
+        "birthDate": "2029-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2067,
+            "summary": "토머스 존슨은 2029년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-가브리엘-존슨-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Thomas Johnson was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Thomas Johnson",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K177-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "새뮤얼 존슨",
+        "birthDate": "1999-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "새뮤얼 존슨은 2026년 대정전 당시 용산·이태원 생활권에서 이태원 숙박업과 민간 통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-가브리엘-존슨-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Samuel Johnson was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Samuel Johnson",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K177-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "도로시 카터",
+        "birthDate": "2059-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2097,
+            "summary": "도로시 카터는 2059년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2077년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-가브리엘-존슨-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Dorothy Carter was born in 2059 and grew up reading family and work records. From 2077, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Dorothy Carter",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K177-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "셀리아 카터",
+        "birthDate": "2029-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2067,
+            "summary": "셀리아 카터는 2029년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2047년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-가브리엘-존슨-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Celia Carter was born in 2029 and grew up reading family and work records. From 2047, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Celia Carter",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K177-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "모린 카터",
+        "birthDate": "1999-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "모린 카터는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 숙박업과 민간 통역 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-가브리엘-존슨-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Maureen Carter was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Maureen Carter",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K177-P-01:K177:biological",
+        "from": "FH-K177-P-01",
+        "to": "K177",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K177-P-02:FH-K177-P-01:biological",
+        "from": "FH-K177-P-02",
+        "to": "FH-K177-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K177-P-03:FH-K177-P-02:biological",
+        "from": "FH-K177-P-03",
+        "to": "FH-K177-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K177-M-01:K177:biological",
+        "from": "FH-K177-M-01",
+        "to": "K177",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K177-M-02:FH-K177-M-01:biological",
+        "from": "FH-K177-M-02",
+        "to": "FH-K177-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K177-M-03:FH-K177-M-02:biological",
+        "from": "FH-K177-M-03",
+        "to": "FH-K177-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-가브리엘-존슨-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K177",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K177-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/860"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K177-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/863"
+          }
+        ]
+      },
+      {
+        "recipientId": "K558",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "밀리선트 멘사는 막힌 통로에서 먼저 옮긴 부상자를 가브리엘 존슨에게 인계한다. 가브리엘 존슨은 환자 명부와 시약을 확인해 호송의 도착 기록이 실제 진료로 이어지게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/723"
+          }
+        ]
+      },
+      {
+        "recipientId": "K766",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "로렌초 콘티는 막힌 통로에서 먼저 옮긴 부상자와 배차 지연을 가브리엘 존슨에게 전한다. 가브리엘 존슨은 환자 명부와 처방을 확인해 늦게 도착한 환자가 진료에서 빠지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/736"
+          }
+        ]
+      },
+      {
+        "recipientId": "K172",
+        "recipientKind": "person",
+        "type": "사제",
+        "direction": "outgoing",
+        "role": "아이작 워커의 도제 숙소를 진료로 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/148"
+          }
+        ]
+      },
+      {
+        "recipientId": "K322",
+        "recipientKind": "person",
+        "type": "빚",
+        "direction": "outgoing",
+        "role": "류은비에게 창 약재를 빚지며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/149"
+          }
+        ]
+      },
+      {
+        "recipientId": "K182",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/159"
+          }
+        ]
+      },
+      {
+        "recipientId": "K185",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/165"
+          }
+        ]
+      },
+      {
+        "recipientId": "K188",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/85"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K177",
     "personId": "person-0178",
@@ -96,7 +614,7 @@
     "size": 4,
     "current_location": "중단된 공사장",
     "camp": {
-      "name": "차호민 공사장 야영지",
+      "name": "가브리엘 존슨 공사장 야영지",
       "type": "야영지",
       "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
       "facilities": [
@@ -109,9 +627,9 @@
     "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
   },
   "clan": {
-    "id": "cc28-c5f0-c548",
-    "name": "연안 차씨",
-    "crest": "clan-crests/cc28-c5f0-c548.svg"
+    "id": "DIV-K177",
+    "name": "용산·이태원 존슨씨",
+    "crest": "clan-crests/DIV-K177.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -146,29 +664,29 @@
     "욕망": "갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다. 가브리엘 존슨은 2089년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 의무원 업무를 맡는다. 새뮤얼 존슨은 2026년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.",
-    "관계": "황지호의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
+    "관계": "아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
     "야망": "선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.",
     "공포": "억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.",
     "개입": "대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다."
   },
-  "biography": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환자 명부·시약 관리와 처방 배분\n- 직함: 용산창 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 황지호의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.\n\n**야망.** 선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.\n\n**공포.** 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 20 | 무력 −20 | 물질 15 | 공동 −20 | 원칙 10 | 공개 −20 | 자격 30 | 분산 5 | 변혁 0\n- 욕망: 갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환자 명부·시약 관리와 처방 배분\n- 직함: 용산창 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다. 가브리엘 존슨은 2089년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 의무원 업무를 맡는다. 새뮤얼 존슨은 2026년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.\n\n**야망.** 선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.\n\n**공포.** 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 20 | 무력 −20 | 물질 15 | 공동 −20 | 원칙 10 | 공개 −20 | 자격 30 | 분산 5 | 변혁 0\n- 욕망: 갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "차호민",
+        "from": "가브리엘 존슨",
         "type": "사제",
-        "to": "황지호",
-        "basis": "황지호의 도제 숙소를 진료로 받치고"
+        "to": "아이작 워커",
+        "basis": "아이작 워커의 도제 숙소를 진료로 받치고"
       },
       {
-        "from": "차호민",
+        "from": "가브리엘 존슨",
         "type": "빚",
         "to": "류은비",
         "basis": "류은비에게 창 약재를 빚지며"
@@ -176,22 +694,34 @@
     ],
     "incoming": [
       {
-        "from": "나길호",
+        "from": "밀리선트 멘사",
         "type": "계약",
-        "to": "차호민",
-        "basis": "차호민의 창 진료 봉쇄를 방송으로 알리는 동맹이고"
+        "to": "가브리엘 존슨",
+        "basis": "밀리선트 멘사는 막힌 통로에서 먼저 옮긴 부상자를 가브리엘 존슨에게 인계한다. 가브리엘 존슨은 환자 명부와 시약을 확인해 호송의 도착 기록이 실제 진료로 이어지게 한다."
       },
       {
-        "from": "차라온",
+        "from": "로렌초 콘티",
         "type": "계약",
-        "to": "차호민",
-        "basis": "차호민의 창 진료가 봉쇄되면 환자를 숙소로 받고"
+        "to": "가브리엘 존슨",
+        "basis": "로렌초 콘티는 막힌 통로에서 먼저 옮긴 부상자와 배차 지연을 가브리엘 존슨에게 전한다. 가브리엘 존슨은 환자 명부와 처방을 확인해 늦게 도착한 환자가 진료에서 빠지지 않게 한다."
       },
       {
-        "from": "순가온",
+        "from": "마테우시 코발스키",
+        "type": "계약",
+        "to": "가브리엘 존슨",
+        "basis": "가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고"
+      },
+      {
+        "from": "노아 데이비스",
+        "type": "계약",
+        "to": "가브리엘 존슨",
+        "basis": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고"
+      },
+      {
+        "from": "스테판 페트로프",
         "type": "맹세",
-        "to": "차호민",
-        "basis": "차호민의 창 진료 봉쇄 시각과 발견을 맞추며"
+        "to": "가브리엘 존슨",
+        "basis": "가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며"
       }
     ]
   }

@@ -12,6 +12,508 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-영마온",
   "detailRoute": "/people/person-0408",
+  "birthDate": "2086-09-13",
+  "birthday": "09-13",
+  "age": 40,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/127"
+  ],
+  "familyTree": {
+    "personId": "K407",
+    "nodes": [
+      {
+        "id": "K407",
+        "personId": "K407",
+        "kind": "person",
+        "name": "영마온",
+        "birthDate": "2086-09-13",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K407"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 남부 외곽 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-영마온-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0408"
+      },
+      {
+        "id": "FH-K407-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "영승윤",
+        "birthDate": "2056-09-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "영승윤은 암사 경비 초소에서 호송 인원 배치·발포 권한 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-영마온-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K407-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "영승우",
+        "birthDate": "2026-09-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "영승우는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-영마온-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K407-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김준문",
+        "birthDate": "2056-09-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "김준문은 암사 경비 초소에서 호송 인원 배치·발포 권한 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-영마온-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K407-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박준섭",
+        "birthDate": "2026-09-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박준섭은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-영마온-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K407-P-01:K407:biological",
+        "from": "FH-K407-P-01",
+        "to": "K407",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K407-P-02:FH-K407-P-01:biological",
+        "from": "FH-K407-P-02",
+        "to": "FH-K407-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K407-M-01:K407:biological",
+        "from": "FH-K407-M-01",
+        "to": "K407",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K407-M-02:FH-K407-M-01:biological",
+        "from": "FH-K407-M-02",
+        "to": "FH-K407-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-영마온-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K407",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K407-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1974"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K407-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/1976"
+          }
+        ]
+      },
+      {
+        "recipientId": "K567",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "배빛민은 호송 순찰에서 읽은 매복 흔적을 영마온에게 알린다. 영마온은 호송 인원 배치와 길목을 확인하되 봉인된 발포 명령을 먼저 살펴, 위험 보고가 곧바로 교전으로 번지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/332"
+          }
+        ]
+      },
+      {
+        "recipientId": "K663",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "김서호는 정정한 교량 훈련 보고를 영마온에게 전한다. 영마온은 호송 인원과 현장 위험을 확인하고 봉인된 명령을 살펴 훈련상의 오인이 발포 사유로 이어지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/416"
+          }
+        ]
+      },
+      {
+        "recipientId": "K711",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "임동우는 정정한 교량 훈련 보고를 영마온에게 전한다. 영마온은 실제 호송 위험과 훈련의 오인을 구분하고 봉인된 명령을 확인해 잘못된 보고가 발포 근거가 되지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/458"
+          }
+        ]
+      },
+      {
+        "recipientId": "K759",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "홍남원은 호송 순찰 암호패 교체와 출입 기록을 영마온에게 전한다. 영마온은 호송 인원과 명령을 확인해 이전 암호패를 든 접근이 정상 배치로 섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/500"
+          }
+        ]
+      },
+      {
+        "recipientId": "K807",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "심하현은 호송 순찰의 매복 흔적을 영마온에게 전한다. 영마온은 인원 배치와 봉인 명령을 확인해 위험 보고가 승인 없는 발포로 번지지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/542"
+          }
+        ]
+      },
+      {
+        "recipientId": "K855",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "진별혁은 호송로의 매복 흔적을 영마온에게 전한다. 영마온은 인원 배치와 봉인 명령을 확인해 위험 관찰과 교전 권한을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/584"
+          }
+        ]
+      },
+      {
+        "recipientId": "K903",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "장늘원은 정정한 교량 훈련 보고를 영마온에게 전한다. 영마온은 실제 호송 위험과 봉인 명령을 확인해 훈련의 오인이 발포 근거로 섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/627"
+          }
+        ]
+      },
+      {
+        "recipientId": "K951",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "고강호는 호송 순찰 암호패 교체와 출입 기록을 영마온에게 전한다. 영마온은 인원 배치·명령을 확인해 이전 암호패의 접근이 정상 호송으로 섞이지 않게 한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/669"
+          }
+        ]
+      },
+      {
+        "recipientId": "K1000",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "하바은은 호송 순찰의 매복 흔적을 영마온에게 알린다. 영마온은 인원 배치와 봉인 명령을 확인해 위험 관찰과 발포 권한을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/711"
+          }
+        ]
+      },
+      {
+        "recipientId": "K405",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "영마온의 비교표와 순번을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/361"
+          }
+        ]
+      },
+      {
+        "recipientId": "K399",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "하서진의 초안 호송을 길에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/364"
+          }
+        ]
+      },
+      {
+        "recipientId": "K412",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "선한솜의 지하 방어와 교대를 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/365"
+          }
+        ]
+      },
+      {
+        "recipientId": "K409",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "영마온에게 후문 실측을 넘기고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/369"
+          }
+        ]
+      },
+      {
+        "recipientId": "K412",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "영마온의 외곽 순찰과 교대를 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/375"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K407",
     "personId": "person-0408",
@@ -175,6 +677,60 @@
       }
     ],
     "incoming": [
+      {
+        "from": "배빛민",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "배빛민은 호송 순찰에서 읽은 매복 흔적을 영마온에게 알린다. 영마온은 호송 인원 배치와 길목을 확인하되 봉인된 발포 명령을 먼저 살펴, 위험 보고가 곧바로 교전으로 번지지 않게 한다."
+      },
+      {
+        "from": "김서호",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "김서호는 정정한 교량 훈련 보고를 영마온에게 전한다. 영마온은 호송 인원과 현장 위험을 확인하고 봉인된 명령을 살펴 훈련상의 오인이 발포 사유로 이어지지 않게 한다."
+      },
+      {
+        "from": "임동우",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "임동우는 정정한 교량 훈련 보고를 영마온에게 전한다. 영마온은 실제 호송 위험과 훈련의 오인을 구분하고 봉인된 명령을 확인해 잘못된 보고가 발포 근거가 되지 않게 한다."
+      },
+      {
+        "from": "홍남원",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "홍남원은 호송 순찰 암호패 교체와 출입 기록을 영마온에게 전한다. 영마온은 호송 인원과 명령을 확인해 이전 암호패를 든 접근이 정상 배치로 섞이지 않게 한다."
+      },
+      {
+        "from": "심하현",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "심하현은 호송 순찰의 매복 흔적을 영마온에게 전한다. 영마온은 인원 배치와 봉인 명령을 확인해 위험 보고가 승인 없는 발포로 번지지 않게 한다."
+      },
+      {
+        "from": "진별혁",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "진별혁은 호송로의 매복 흔적을 영마온에게 전한다. 영마온은 인원 배치와 봉인 명령을 확인해 위험 관찰과 교전 권한을 구분한다."
+      },
+      {
+        "from": "장늘원",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "장늘원은 정정한 교량 훈련 보고를 영마온에게 전한다. 영마온은 실제 호송 위험과 봉인 명령을 확인해 훈련의 오인이 발포 근거로 섞이지 않게 한다."
+      },
+      {
+        "from": "고강호",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "고강호는 호송 순찰 암호패 교체와 출입 기록을 영마온에게 전한다. 영마온은 인원 배치·명령을 확인해 이전 암호패의 접근이 정상 호송으로 섞이지 않게 한다."
+      },
+      {
+        "from": "하바은",
+        "type": "계약",
+        "to": "영마온",
+        "basis": "하바은은 호송 순찰의 매복 흔적을 영마온에게 알린다. 영마온은 인원 배치와 봉인 명령을 확인해 위험 관찰과 발포 권한을 구분한다."
+      },
       {
         "from": "선초별",
         "type": "계약",

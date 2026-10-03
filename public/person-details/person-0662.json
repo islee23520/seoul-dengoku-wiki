@@ -12,6 +12,429 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-진금린",
   "detailRoute": "/people/person-0662",
+  "birthDate": "2087-04-02",
+  "birthday": "04-02",
+  "age": 39,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/413",
+    "lore/characters/Cast-State-15.json#/content/414",
+    "lore/characters/Cast-State-15.json#/content/415",
+    "lore/characters/Cast-State-15.json#/content/416"
+  ],
+  "familyTree": {
+    "personId": "K662",
+    "nodes": [
+      {
+        "id": "K662",
+        "personId": "K662",
+        "kind": "person",
+        "name": "진금린",
+        "birthDate": "2087-04-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K662"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-진금린-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0662"
+      },
+      {
+        "id": "FH-K662-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "진승란",
+        "birthDate": "2057-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2095,
+            "summary": "진승란은 노량진 선창에서 구휼 물자 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-진금린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K662-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "진승리",
+        "birthDate": "2027-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2065,
+            "summary": "진승리는 노량진 선창에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-진금린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K662-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "진승나",
+        "birthDate": "1997-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "진승나는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-진금린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K662-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최재욱",
+        "birthDate": "2057-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2095,
+            "summary": "최재욱은 노량진 선창에서 구휼 물자 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-진금린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K662-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재정",
+        "birthDate": "2027-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2065,
+            "summary": "정재정은 노량진 선창에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-진금린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K662-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤재연",
+        "birthDate": "1997-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤재연은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-진금린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K662-P-01:K662:biological",
+        "from": "FH-K662-P-01",
+        "to": "K662",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K662-P-02:FH-K662-P-01:biological",
+        "from": "FH-K662-P-02",
+        "to": "FH-K662-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K662-P-03:FH-K662-P-02:biological",
+        "from": "FH-K662-P-03",
+        "to": "FH-K662-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K662-M-01:K662:biological",
+        "from": "FH-K662-M-01",
+        "to": "K662",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K662-M-02:FH-K662-M-01:biological",
+        "from": "FH-K662-M-02",
+        "to": "FH-K662-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K662-M-03:FH-K662-M-02:biological",
+        "from": "FH-K662-M-03",
+        "to": "FH-K662-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-진금린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K662",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K662-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3177"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K662-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/3180"
+          }
+        ]
+      },
+      {
+        "recipientId": "K376",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "진금린은 먼저 배분한 곡물과 손실 내역을 전나경에게 넘긴다. 전나경은 구휼 물자 배분을 확인해 남은 재고와 이미 가족에게 건넨 몫을 구분한다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/415"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K662",
     "personId": "person-0662",
@@ -133,17 +556,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 진금린은 먼저 배분한 곡물과 손실 내역을 전나경에게 넘긴다. 전나경은 구휼 물자 배분을 확인해 남은 재고와 이미 가족에게 건넨 몫을 구분한다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.",
     "개입": "명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "진금린은 명동역 구휼 물자 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 구휼 물자 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 구휼 물자 당직\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 30 | 무력 −15 | 물질 70 | 공동 −20 | 원칙 −40 | 공개 −20 | 자격 0 | 분산 0 | 변혁 5\n- 욕망: 갈망 15 | 독점 10 | 위험 −25 | 과시 5 | 지속 30 | 지향 이성 | 결합 다자\n:::",
+  "biography": "진금린은 명동역 구휼 물자 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 구휼 물자 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 구휼 물자 당직\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 구휼 물자 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 명동역 구휼 물자 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 진금린은 먼저 배분한 곡물과 손실 내역을 전나경에게 넘긴다. 전나경은 구휼 물자 배분을 확인해 남은 재고와 이미 가족에게 건넨 몫을 구분한다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 구휼 물자 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 구휼 물자 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 30 | 무력 −15 | 물질 70 | 공동 −20 | 원칙 −40 | 공개 −20 | 자격 0 | 분산 0 | 변혁 5\n- 욕망: 갈망 15 | 독점 10 | 위험 −25 | 과시 5 | 지속 30 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-15"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "진금린",
+        "type": "계약",
+        "to": "전나경",
+        "basis": "진금린은 먼저 배분한 곡물과 손실 내역을 전나경에게 넘긴다. 전나경은 구휼 물자 배분을 확인해 남은 재고와 이미 가족에게 건넨 몫을 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

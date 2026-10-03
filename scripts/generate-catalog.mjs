@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { createHash } from 'node:crypto'
 import proj4 from 'proj4'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
@@ -19,6 +20,9 @@ import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
 import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
+import { loadCastBirthdays } from './cast-birthdays.mjs'
+import { loadCastFamilyTrees, projectFamilyTree } from './cast-family-trees.mjs'
+import { loadHouseholdSourceDocuments, validateCastHouseholdRelations, projectCastHouseholdRelations } from './cast-household-relations.mjs'
 import { validateHoldingFacility } from './holding-facility.mjs'
 import { regularLineGraph } from './regular-line-graph.mjs'
 import { regionalLineGraph } from './regional-line-graph.mjs'
@@ -874,6 +878,41 @@ for (const holding of personalHoldings.holdings) {
 }
 await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
 const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
+const birthdayRoster = courtDataset.sources.registry.persons
+const birthdayNames = new Set(peopleSource.map((person) => person.name))
+if (birthdayNames.size !== peopleSource.length || birthdayRoster.length !== peopleSource.length || birthdayRoster.some((person) => !birthdayNames.has(person.name))) throw new Error('E_BIRTH_ROSTER_COVERAGE')
+const birthdaysById = await loadCastBirthdays(loreRoot, birthdayRoster)
+const familyGraph = await loadCastFamilyTrees(loreRoot, birthdayRoster, { birthdays: birthdaysById })
+const householdRelations = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-household-relations.json'), 'utf8'))
+const householdDocuments = await loadHouseholdSourceDocuments(repoRoot, householdRelations)
+validateCastHouseholdRelations(householdRelations, householdDocuments)
+const proseContacts = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-prose-contacts.json'), 'utf8'))
+const proseContactsById = new Map()
+const parentStatuses = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-family-parent-status.json'), 'utf8')).records
+const parentStatusById = new Map()
+for (const record of parentStatuses) {
+  if (parentStatusById.has(record.personId) || !issuedById.has(record.personId) || !['biological-parents-unrecorded', 'maternal-parent-unrecorded'].includes(record.status) || !familyGraph.edges.some(edge => edge.to === record.personId && edge.from === record.knownParentId && edge.type === record.knownRelationship)) throw new Error(`E_PARENT_STATUS:${record.personId}`)
+  const source = householdDocuments.get(record.sourceRef?.path)
+  if (!source?.content?.some(block => block.anchor === record.sourceRef.anchor)) throw new Error(`E_PARENT_STATUS_SOURCE:${record.personId}`)
+  parentStatusById.set(record.personId, record.status)
+}
+const seenProseContacts = new Set()
+for (const contact of proseContacts.records) {
+  const key = `${contact.personId}:${contact.recipientId}`
+  if (!issuedById.has(contact.personId) || !issuedById.has(contact.recipientId) || contact.personId === contact.recipientId || seenProseContacts.has(key) || contact.kind !== 'existing-prose-contact' || !/^lore\/(?:characters|factions)\/[^/]+\.json$/.test(contact.sourceRef.path)) throw new Error(`E_PROSE_CONTACT_ID:${key}`)
+  seenProseContacts.add(key)
+  const document = JSON.parse(await readFile(resolve(repoRoot, contact.sourceRef.path), 'utf8'))
+  const source = document.content.find(block => block.anchor === contact.sourceRef.anchor)
+  const text = source?.kind === 'list' ? source.items.find(item => typeof item.ko === 'string' && item.ko.startsWith('주요 관계:'))?.ko : source?.text?.ko
+  const basis = typeof text === 'string' ? text : Array.isArray(text) ? text.filter(part => !part.strong).map(part => part.text).join('') : ''
+  if (!contact.sourceRef.anchor.startsWith(`인물-${issuedById.get(contact.personId).name.replaceAll(' ', '-')}-`) || !basis.includes(issuedById.get(contact.recipientId).name)) throw new Error(`E_PROSE_CONTACT_SOURCE:${key}`)
+  const outgoing = proseContactsById.get(contact.personId) ?? []
+  outgoing.push({ recipientId: contact.recipientId, recipientName: issuedById.get(contact.recipientId).name, basis: basis.trim(), sourceRef: contact.sourceRef })
+  proseContactsById.set(contact.personId, outgoing)
+  const incoming = proseContactsById.get(contact.recipientId) ?? []
+  incoming.push({ recipientId: contact.personId, recipientName: issuedById.get(contact.personId).name, basis: basis.trim(), sourceRef: contact.sourceRef })
+  proseContactsById.set(contact.recipientId, incoming)
+}
 const personRightsPermissions = parsePersonRightsPermissions(
   JSON.parse(await readFile(resolve(repoRoot, 'person-rights-permissions.json'), 'utf8')), courtDataset.people,
 )
@@ -933,6 +972,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   }
 })
 const catalogByName = new Map(peopleCatalog.map((person) => [person.name, person]))
+const familyDetailRoutes = new Map(birthdayRoster.map((person) => [person.id, catalogByName.get(person.name).detailRoute]))
 const graphPerson = (id) => {
   const issued = issuedById.get(id)
   const person = issued && catalogByName.get(issued.name)
@@ -980,11 +1020,19 @@ for (const person of peopleCatalog) {
   if (!sheet || sheet.name !== person.name || sheet.url !== person.detailRoute) throw new Error(`E_PERSON_SHEET_IDENTITY:${issuedId}:${person.id}`)
   const detail = {
     ...person,
+    ...birthdaysById.get(issuedId),
+    familyTree: { ...projectFamilyTree(familyGraph, issuedId, familyDetailRoutes), parentStatus: parentStatusById.get(issuedId) ?? null },
+    proseContacts: proseContactsById.get(issuedId) ?? [],
+    householdProposal: (() => {
+      const proposal = projectCastHouseholdRelations(householdRelations, householdDocuments, issuedId)
+      return proposal ? { ...proposal, links: proposal.links.map(link => ({ ...link, recipientName: issuedById.get(link.recipientId)?.name ?? familyGraph.nodes.find(node => node.id === link.recipientId)?.name ?? link.recipientId })) } : null
+    })(),
     ...(personRightsPermissions.has(issuedId) ? { rightsPermissions: personRightsPermissions.get(issuedId) } : {}),
     gurps: {
       id: issuedId,
       personId: person.id,
       band: sheet.band,
+      ...(sheet.source?.numericStatus === 'proposal' ? { numericStatus: 'proposal' } : {}),
       attributes: Object.fromEntries(Object.entries(sheet.attributes).map(([key, { value, cp }]) => [key, { value, cp }])),
       traits: sheet.traits.map(({ name, kind, cp, rule }) => ({ name, kind, cp, rule })),
       skills: sheet.skills.map(({ name, ko, level, cp }) => ({ name, ko, level, cp })),
@@ -1055,6 +1103,29 @@ const clanTablesText = await readFile(resolve(repoRoot, 'lore/name-pools/clan-ha
 const clanTables = JSON.parse(clanTablesText)
 const crestIndexText = await readFile(resolve(publicRoot, 'clan-crests/index.json'), 'utf8')
 const crestIndex = JSON.parse(crestIndexText)
+const heraldryCatalog = JSON.parse(await readFile(resolve(repoRoot, 'heraldry-catalog.json'), 'utf8'))
+if (heraldryCatalog.schemaVersion !== 1 || Object.keys(heraldryCatalog.states).length !== 16 || Object.keys(heraldryCatalog.clans).length !== crestIndex.crests.length || crestIndex.crests.some(entry => !heraldryCatalog.clans[entry.id])) throw new Error('E_HERALDRY_CATALOG_COVERAGE')
+const heraldryAsset = async (path) => {
+  if (typeof path !== 'string' || !/^(?:state-flags|clan-crests)\/[a-zA-Z0-9-]+\.(?:webp|svg)$/.test(path)) throw new Error('E_HERALDRY_ASSET_PATH')
+  return { path, sha256: createHash('sha256').update(await readFile(resolve(publicRoot, path))).digest('hex') }
+}
+const heraldryRegistry = {
+  schemaVersion: 1,
+  people: Object.fromEntries(peopleCatalog.map(person => {
+    const lineage = lineageByName.get(person.name)
+    return [person.id, { characterId: issuedIdByName.get(person.name), name: person.name,
+      state: person.state, stateName: person.stateName || '무소속',
+      clan: lineage?.clan ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨` } : null }]
+  })),
+  states: Object.fromEntries(await Promise.all(Object.entries(heraldryCatalog.states).map(async ([id, asset]) => {
+    if (!/^S(?:0[1-9]|1[0-6])$/.test(id)) throw new Error('E_HERALDRY_STATE_ID')
+    return [id, await heraldryAsset(asset.path)]
+  }))),
+  clans: Object.fromEntries(await Promise.all(Object.entries(heraldryCatalog.clans).map(async ([id, asset]) => [id, await heraldryAsset(asset.path)]))),
+}
+await writeFile(resolve(publicRoot, 'heraldry-assets.json'), `${JSON.stringify(heraldryRegistry, null, 2)}\n`)
+await mkdir(resolve(repoRoot, '.omo/evidence/heraldry'), { recursive: true })
+await writeFile(resolve(repoRoot, '.omo/evidence/heraldry/unset-clan-assets.json'), `${JSON.stringify(Object.entries(heraldryRegistry.people).filter(([, person]) => person.clan && !heraldryRegistry.clans[person.clan.id]).map(([personId, person]) => ({ personId, characterId: person.characterId, name: person.name, clanId: person.clan.id, status: 'registered-family-without-existing-crest' })), null, 2)}\n`)
 const branchesByBase = new Map()
 for (const branch of clanTables.clans.filter((entry) => entry.id.includes('-agreed-'))) {
   const base = branch.id.split('-agreed-')[0]

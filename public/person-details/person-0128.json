@@ -12,6 +12,411 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-설강우",
   "detailRoute": "/people/person-0128",
+  "birthDate": "2078-11-10",
+  "birthday": "11-10",
+  "age": 48,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/159",
+    "lore/characters/Cast-State-05.json#/content/161"
+  ],
+  "familyTree": {
+    "personId": "K127",
+    "nodes": [
+      {
+        "id": "K127",
+        "personId": "K127",
+        "kind": "person",
+        "name": "설강우",
+        "birthDate": "2078-11-10",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K127"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 암사 급수구역 순찰대 조장 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-설강우-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0128"
+      },
+      {
+        "id": "FH-K127-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "설승석",
+        "birthDate": "2048-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "설승석은 영등포 정수 당직에서 급수구역 순찰·우회 급수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-설강우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K127-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "설승준",
+        "birthDate": "2018-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "설승준은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-설강우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K127-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현호",
+        "birthDate": "2048-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "임현호는 영등포 정수 당직에서 급수구역 순찰·우회 급수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-설강우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K127-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오승재",
+        "birthDate": "2018-11-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오승재는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-설강우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K127-P-01:K127:biological",
+        "from": "FH-K127-P-01",
+        "to": "K127",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K127-P-02:FH-K127-P-01:biological",
+        "from": "FH-K127-P-02",
+        "to": "FH-K127-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K127-M-01:K127:biological",
+        "from": "FH-K127-M-01",
+        "to": "K127",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K127-M-02:FH-K127-M-01:biological",
+        "from": "FH-K127-M-02",
+        "to": "FH-K127-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-설강우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K127",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K127-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/620"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K127-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/622"
+          }
+        ]
+      },
+      {
+        "recipientId": "K444",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "문가은은 동파된 관로 대신 우회 급수로를 열고, 개통 소식을 설강우에게 전한다. 설강우는 공개한 순찰 시각에 맞춰 골목을 돌며 우회 급수가 끊긴 곳을 확인하고 문가은에게 알린다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/225"
+          }
+        ]
+      },
+      {
+        "recipientId": "K492",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "심별현은 가뭄 때 배급 대표와 나눈 방류량·배급 조정 내용을 설강우에게 전한다. 설강우는 골목 순찰에서 실제 급수가 닿는 곳을 확인해 심별현에게 알리고, 방류를 늘려도 우회 관로가 막혀 물을 못 받는 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/266"
+          }
+        ]
+      },
+      {
+        "recipientId": "K540",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "구남희는 수압 시험에서 찾은 새는 이음매를 표시하고 설강우에게 위치를 전한다. 설강우는 골목 순찰에서 실제 급수 감소를 확인하고 필요한 우회 급수를 살펴, 누수가 어느 골목의 공급을 끊는지 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/308"
+          }
+        ]
+      },
+      {
+        "recipientId": "K780",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "이카석은 표시한 누수 위치를 설강우에게 전한다. 설강우는 골목 순찰에서 실제 공급 감소를 확인하고 우회 급수를 살펴 누수가 물을 끊은 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/518"
+          }
+        ]
+      },
+      {
+        "recipientId": "K972",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "박늘은은 표시한 누수 위치를 설강우에게 전한다. 설강우는 골목 공급 감소와 우회 급수를 확인해 누수가 실제로 물을 끊은 곳을 찾는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/687"
+          }
+        ]
+      },
+      {
+        "recipientId": "K123",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "한보라의 순찰열차 시각에 맞춰 골목을 열고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/102"
+          }
+        ]
+      },
+      {
+        "recipientId": "K116",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있으며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/103"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K127",
     "personId": "person-0128",
@@ -175,6 +580,37 @@
         "basis": "김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있으며"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "문가은",
+        "type": "계약",
+        "to": "설강우",
+        "basis": "문가은은 동파된 관로 대신 우회 급수로를 열고, 개통 소식을 설강우에게 전한다. 설강우는 공개한 순찰 시각에 맞춰 골목을 돌며 우회 급수가 끊긴 곳을 확인하고 문가은에게 알린다."
+      },
+      {
+        "from": "심별현",
+        "type": "계약",
+        "to": "설강우",
+        "basis": "심별현은 가뭄 때 배급 대표와 나눈 방류량·배급 조정 내용을 설강우에게 전한다. 설강우는 골목 순찰에서 실제 급수가 닿는 곳을 확인해 심별현에게 알리고, 방류를 늘려도 우회 관로가 막혀 물을 못 받는 곳을 찾는다."
+      },
+      {
+        "from": "구남희",
+        "type": "계약",
+        "to": "설강우",
+        "basis": "구남희는 수압 시험에서 찾은 새는 이음매를 표시하고 설강우에게 위치를 전한다. 설강우는 골목 순찰에서 실제 급수 감소를 확인하고 필요한 우회 급수를 살펴, 누수가 어느 골목의 공급을 끊는지 찾는다."
+      },
+      {
+        "from": "이카석",
+        "type": "계약",
+        "to": "설강우",
+        "basis": "이카석은 표시한 누수 위치를 설강우에게 전한다. 설강우는 골목 순찰에서 실제 공급 감소를 확인하고 우회 급수를 살펴 누수가 물을 끊은 곳을 찾는다."
+      },
+      {
+        "from": "박늘은",
+        "type": "계약",
+        "to": "설강우",
+        "basis": "박늘은은 표시한 누수 위치를 설강우에게 전한다. 설강우는 골목 공급 감소와 우회 급수를 확인해 누수가 실제로 물을 끊은 곳을 찾는다."
+      }
+    ]
   }
 }

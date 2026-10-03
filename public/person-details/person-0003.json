@@ -12,6 +12,747 @@
   "stateName": "수문국",
   "sourceRoute": "/world/Cast-State-01#인물-김태운",
   "detailRoute": "/people/person-0003",
+  "birthDate": "2064-10-31",
+  "birthday": "10-31",
+  "age": 62,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-01.json#/content/82",
+    "lore/characters/Cast-State-01.json#/content/84"
+  ],
+  "familyTree": {
+    "personId": "K003",
+    "nodes": [
+      {
+        "id": "K003",
+        "personId": "K003",
+        "kind": "person",
+        "name": "김태운",
+        "birthDate": "2064-10-31",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K003"
+          },
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-김태운-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0003"
+      },
+      {
+        "id": "FH-K003-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김승석",
+        "birthDate": "2034-10-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "김승석은 영등포 정수 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-김태운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K003-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김승준",
+        "birthDate": "2004-10-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김승준은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-김태운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K003-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승준",
+        "birthDate": "2034-10-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "정승준은 영등포 정수 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-김태운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K003-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승석",
+        "birthDate": "2004-10-31",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤승석은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-김태운-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K003-P-01:K003:biological",
+        "from": "FH-K003-P-01",
+        "to": "K003",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K003-P-02:FH-K003-P-01:biological",
+        "from": "FH-K003-P-02",
+        "to": "FH-K003-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K003-M-01:K003:biological",
+        "from": "FH-K003-M-01",
+        "to": "K003",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K003-M-02:FH-K003-M-01:biological",
+        "from": "FH-K003-M-02",
+        "to": "FH-K003-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-김태운-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K003",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K003-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/16"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K003-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/18"
+          }
+        ]
+      },
+      {
+        "recipientId": "K001",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "outgoing",
+        "role": "군주의 수문 지휘를 현장에서 집행",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/12"
+          }
+        ]
+      },
+      {
+        "recipientId": "K116",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "outgoing",
+        "role": "한강 수문 전술을 암사 참모와 겨룸",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/110"
+          }
+        ]
+      },
+      {
+        "recipientId": "K116",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "한강 수문 전술을 수문국 경비와 겨룸",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/134"
+          }
+        ]
+      },
+      {
+        "recipientId": "K013",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 수문 지휘를 현장에서 집행하고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/6"
+          }
+        ]
+      },
+      {
+        "recipientId": "K968",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/405"
+          }
+        ]
+      },
+      {
+        "recipientId": "K440",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/406"
+          }
+        ]
+      },
+      {
+        "recipientId": "K728",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/407"
+          }
+        ]
+      },
+      {
+        "recipientId": "K488",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/408"
+          }
+        ]
+      },
+      {
+        "recipientId": "K920",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/409"
+          }
+        ]
+      },
+      {
+        "recipientId": "K536",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/410"
+          }
+        ]
+      },
+      {
+        "recipientId": "K824",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/411"
+          }
+        ]
+      },
+      {
+        "recipientId": "K776",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/412"
+          }
+        ]
+      },
+      {
+        "recipientId": "K632",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/413"
+          }
+        ]
+      },
+      {
+        "recipientId": "K872",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/414"
+          }
+        ]
+      },
+      {
+        "recipientId": "K584",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/415"
+          }
+        ]
+      },
+      {
+        "recipientId": "K680",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/416"
+          }
+        ]
+      }
+    ],
+    "court": {
+      "id": "court:K003",
+      "ownerPersonId": "K003",
+      "stateId": "S01",
+      "retainers": [
+        {
+          "personId": "K968",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 405,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/25"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/405"
+            }
+          ]
+        },
+        {
+          "personId": "K440",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 406,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/26"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/406"
+            }
+          ]
+        },
+        {
+          "personId": "K728",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 407,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/27"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/407"
+            }
+          ]
+        },
+        {
+          "personId": "K488",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 408,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/28"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/408"
+            }
+          ]
+        },
+        {
+          "personId": "K920",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 409,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/29"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/409"
+            }
+          ]
+        },
+        {
+          "personId": "K536",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 410,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/30"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/410"
+            }
+          ]
+        },
+        {
+          "personId": "K824",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 411,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/31"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/411"
+            }
+          ]
+        },
+        {
+          "personId": "K776",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 412,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/32"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/412"
+            }
+          ]
+        },
+        {
+          "personId": "K632",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 413,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/33"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/413"
+            }
+          ]
+        },
+        {
+          "personId": "K872",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 414,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/34"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/414"
+            }
+          ]
+        },
+        {
+          "personId": "K584",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 415,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/35"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/415"
+            }
+          ]
+        },
+        {
+          "personId": "K680",
+          "liegePersonId": "K003",
+          "courtId": "court:K003",
+          "sourceRow": 416,
+          "role": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡음",
+          "sourceRefs": [
+            {
+              "path": "lore/relations/relations.json",
+              "anchor": "/directRetainers/36"
+            },
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "/content/3/rows/416"
+            }
+          ]
+        }
+      ]
+    },
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K003",
     "personId": "person-0003",

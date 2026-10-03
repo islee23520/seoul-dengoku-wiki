@@ -12,6 +12,328 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-양서현",
   "detailRoute": "/people/person-0445",
+  "birthDate": "2064-09-08",
+  "birthday": "09-08",
+  "age": 62,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/270",
+    "lore/characters/Cast-State-06.json#/content/272",
+    "lore/characters/Cast-State-06.json#/content/273"
+  ],
+  "familyTree": {
+    "personId": "K445",
+    "nodes": [
+      {
+        "id": "K445",
+        "personId": "K445",
+        "kind": "person",
+        "name": "양서현",
+        "birthDate": "2064-09-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K445"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0445"
+      },
+      {
+        "id": "FH-K445-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "양승아",
+        "birthDate": "2034-09-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "양승아는 신내 환승 당직에서 침수 구간 붕괴 보고·폐쇄 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K445-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "양승희",
+        "birthDate": "2004-09-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "양승희는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K445-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이태석",
+        "birthDate": "2034-09-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "이태석은 신내 환승 당직에서 침수 구간 붕괴 보고·폐쇄 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K445-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최태영",
+        "birthDate": "2004-09-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최태영은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K445-P-01:K445:biological",
+        "from": "FH-K445-P-01",
+        "to": "K445",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K445-P-02:FH-K445-P-01:biological",
+        "from": "FH-K445-P-02",
+        "to": "FH-K445-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K445-M-01:K445:biological",
+        "from": "FH-K445-M-01",
+        "to": "K445",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K445-M-02:FH-K445-M-01:biological",
+        "from": "FH-K445-M-02",
+        "to": "FH-K445-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K445",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K445-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2158"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K445-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/2160"
+          }
+        ]
+      },
+      {
+        "recipientId": "K166",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "양서현은 침수 구간의 붕괴와 폐쇄를 보고한 사본을 섭도윤에게 전달한다. 섭도윤은 그 사본을 기록청과 회의장에 함께 보내, 폐쇄 소식이 한쪽에만 남아 호송이 위험한 구간으로 들어가는 일을 막는다.",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/226"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K445",
     "personId": "person-0445",
@@ -133,17 +455,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 양서현은 침수 구간의 붕괴와 폐쇄를 보고한 사본을 섭도윤에게 전달한다. 섭도윤은 그 사본을 기록청과 회의장에 함께 보내, 폐쇄 소식이 한쪽에만 남아 호송이 위험한 구간으로 들어가는 일을 막는다.",
     "야망": "사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.",
     "공포": "사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 침수 구간 붕괴 보고·폐쇄\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 사본 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 −20 | 물질 −30 | 공동 10 | 원칙 50 | 공개 −5 | 자격 5 | 분산 −40 | 변혁 −35\n- 욕망: 갈망 50 | 독점 20 | 위험 −30 | 과시 30 | 지속 5 | 지향 양성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 침수 구간 붕괴 보고·폐쇄\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 사본 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 사본 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 사본 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 양서현은 침수 구간의 붕괴와 폐쇄를 보고한 사본을 섭도윤에게 전달한다. 섭도윤은 그 사본을 기록청과 회의장에 함께 보내, 폐쇄 소식이 한쪽에만 남아 호송이 위험한 구간으로 들어가는 일을 막는다.\n\n**야망.** 사본 전령 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 사본 전령 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 −20 | 물질 −30 | 공동 10 | 원칙 50 | 공개 −5 | 자격 5 | 분산 −40 | 변혁 −35\n- 욕망: 갈망 50 | 독점 20 | 위험 −30 | 과시 30 | 지속 5 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "양서현",
+        "type": "계약",
+        "to": "섭도윤",
+        "basis": "양서현은 침수 구간의 붕괴와 폐쇄를 보고한 사본을 섭도윤에게 전달한다. 섭도윤은 그 사본을 기록청과 회의장에 함께 보내, 폐쇄 소식이 한쪽에만 남아 호송이 위험한 구간으로 들어가는 일을 막는다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -2,9 +2,12 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import { portraitIdentities } from '../generated/portraitIdentities'
+import { PortraitHeraldry } from '../components/PortraitHeraldry'
+import { useHeraldryAssets } from '../hooks/useHeraldryAssets'
 
 const koreanNameOrder = new Intl.Collator('ko-KR', { usage: 'sort', sensitivity: 'variant' })
-const peopleByName = [...peopleCatalog].sort((left, right) => koreanNameOrder.compare(left.name, right.name) || left.id.localeCompare(right.id))
+type PersonRow = { readonly id: string; readonly name: string; readonly state: string; readonly stateName: string; readonly position: string; readonly rank: string; readonly occupation: string; readonly gender: string; readonly stage: string; readonly commonTier: string; readonly detailRoute: string }
+const peopleByName: readonly PersonRow[] = [...peopleCatalog].sort((left, right) => koreanNameOrder.compare(left.name, right.name) || left.id.localeCompare(right.id))
 
 const filterSessionKey = 'wiki.people.filters.v1'
 const commonTiers = ['T1', 'T2', 'T3', 'T4', 'T5']
@@ -34,6 +37,11 @@ function readSessionFilters() {
 }
 
 export default function PeoplePage() {
+  const { assets, failed } = useHeraldryAssets()
+  const currentPeople = useMemo(() => peopleByName.map(person => {
+    const identity = assets?.people[person.id]
+    return identity ? { ...person, ...identity } : { ...person, clan: null }
+  }), [assets])
   const [filters, setFilters] = useState(readSessionFilters)
   const { query, state, commonTier, occupation, gender } = filters
   const setFilter = (field: keyof typeof defaultFilters, value: string) => setFilters((current) => ({ ...current, [field]: value }))
@@ -49,19 +57,19 @@ export default function PeoplePage() {
     }
   }, [filters])
   const options = useMemo(() => {
-    const values = (key: 'stateName' | 'occupation' | 'gender') => [...new Set(peopleByName.map((person) => person[key] || '미등록'))].sort(koreanNameOrder.compare)
+    const values = (key: 'stateName' | 'occupation' | 'gender') => [...new Set(currentPeople.map((person) => person[key] || '미등록'))].sort(koreanNameOrder.compare)
     return { states: values('stateName'), tiers: commonTiers, occupations: values('occupation'), genders: values('gender') }
-  }, [])
+  }, [currentPeople])
   const filtered = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('ko')
-    return peopleByName.filter((person) => {
+    return currentPeople.filter((person) => {
       if (needle && !`${person.name} ${person.position} ${person.rank} ${person.occupation} ${person.gender} ${person.stateName} ${person.stage}`.toLocaleLowerCase('ko').includes(needle)) return false
       return (state === 'all' || person.stateName === state)
         && (commonTier === 'all' || person.commonTier === commonTier)
         && (occupation === 'all' || person.occupation === occupation)
         && (gender === 'all' || person.gender === gender)
     })
-  }, [query, state, commonTier, occupation, gender])
+  }, [currentPeople, query, state, commonTier, occupation, gender])
 
   const resetFilters = () => setFilters(defaultFilters)
 
@@ -86,6 +94,7 @@ export default function PeoplePage() {
         <button type="button" onClick={resetFilters}>필터 초기화</button>
       </div>
       <p className="wiki-domain-label" aria-live="polite">검색 결과 {filtered.length}명</p>
+      {failed && <p role="status">소속·가문 정보 갱신 실패 · 마지막 조회 정보를 표시합니다.</p>}
       <div className="wiki-table-wrap">
         <table className="people-table">
           <colgroup>
@@ -103,13 +112,10 @@ export default function PeoplePage() {
               <td data-label="이름"><Link to={person.detailRoute}>{person.name}</Link>{portraitIdentities.filter((portrait) => portrait.personId === person.id).map((portrait) => <figure key={portrait.personId} className="people-row-portrait">
                 <Link to={person.detailRoute}><img src={`${import.meta.env.BASE_URL}portraits/${person.id}.png?v=${portrait.imageSha256}`} alt={`${person.name} 초상 아트 제안`} loading="lazy" /></Link>
                 <figcaption className="people-portrait-identity">
-                  {portrait.stateFlag && <img data-identity-field="stateFlag" src={`${import.meta.env.BASE_URL}${portrait.stateFlag}`} alt="" />}
-                  <span data-identity-field="stateName">{portrait.stateName}</span>
-                  {portrait.clanCrest && <Link data-identity-field="clanCrest" to={`/families/${portrait.clanId}`}><img src={`${import.meta.env.BASE_URL}${portrait.clanCrest}`} alt="가문 문장" /></Link>}
                   {portrait.bongwan && <span data-identity-field="bongwan">{portrait.bongwan}</span>}
                   {portrait.nobleTitle && <span data-identity-field="nobleTitle">{portrait.nobleTitle}</span>}
                 </figcaption>
-              </figure>)}</td><td data-label="국가">{person.stateName || '무소속'}</td><td data-label="직위">{person.position}</td><td data-label="공통 티어">{person.commonTier}</td><td data-label="국가별 직급">{person.rank === '미등록' ? '—' : person.rank}</td><td data-label="직업">{person.occupation}</td><td data-label="성별">{person.gender}</td>
+              </figure>)}<PortraitHeraldry person={person} /></td><td data-label="국가">{person.stateName || '무소속'}</td><td data-label="직위">{person.position}</td><td data-label="공통 티어">{person.commonTier}</td><td data-label="국가별 직급">{person.rank === '미등록' ? '—' : person.rank}</td><td data-label="직업">{person.occupation}</td><td data-label="성별">{person.gender}</td>
             </tr>
           ))}</tbody>
         </table>

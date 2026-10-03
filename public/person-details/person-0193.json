@@ -1,6 +1,6 @@
 {
   "id": "person-0193",
-  "name": "란하율",
+  "name": "올렉산드르 셰우첸코",
   "title": "후계시험 부품 고발 보조",
   "position": "후계시험 부품 고발 보조",
   "rank": "주사",
@@ -10,8 +10,379 @@
   "stage": "S3",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-란하율",
+  "sourceRoute": "/world/Cast-State-07#인물-올렉산드르 셰우첸코",
   "detailRoute": "/people/person-0193",
+  "birthDate": "2064-06-08",
+  "birthday": "06-08",
+  "age": 62,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/248"
+  ],
+  "familyTree": {
+    "personId": "K192",
+    "nodes": [
+      {
+        "id": "K192",
+        "personId": "K192",
+        "kind": "person",
+        "name": "올렉산드르 셰우첸코",
+        "birthDate": "2064-06-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K192"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-올렉산드르-셰우첸코-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Oleksandr Shevchenko",
+        "detailRoute": "/people/person-0193"
+      },
+      {
+        "id": "FH-K192-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "페트로 셰우첸코",
+        "birthDate": "2034-06-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "페트로 셰우첸코는 2034년에 태어났다. 동대문·용산 민간 운송 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2052년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-올렉산드르-셰우첸코-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Petro Shevchenko was born in 2034 and grew up reading family and work records. From 2052, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Petro Shevchenko",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K192-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이반 셰우첸코",
+        "birthDate": "2004-06-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이반 셰우첸코는 2026년 대정전 당시 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-올렉산드르-셰우첸코-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Ivan Shevchenko was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Ivan Shevchenko",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K192-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "나디야 트카첸코",
+        "birthDate": "2034-06-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "나디야 트카첸코는 2034년에 태어났다. 동대문·용산 민간 운송 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2052년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-올렉산드르-셰우첸코-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Nadiya Tkachenko was born in 2034 and grew up reading family and work records. From 2052, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Nadiya Tkachenko",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K192-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "테티아나 트카첸코",
+        "birthDate": "2004-06-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "테티아나 트카첸코는 2026년 대정전 당시 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-올렉산드르-셰우첸코-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Tetiana Tkachenko was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies."
+          }
+        ],
+        "nameEn": "Tetiana Tkachenko",
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K192-P-01:K192:biological",
+        "from": "FH-K192-P-01",
+        "to": "K192",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K192-P-02:FH-K192-P-01:biological",
+        "from": "FH-K192-P-02",
+        "to": "FH-K192-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K192-M-01:K192:biological",
+        "from": "FH-K192-M-01",
+        "to": "K192",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K192-M-02:FH-K192-M-01:biological",
+        "from": "FH-K192-M-02",
+        "to": "FH-K192-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-올렉산드르-셰우첸코-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K192",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K192-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/928"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K192-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/930"
+          }
+        ]
+      },
+      {
+        "recipientId": "K187",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "올렉산드르 셰우첸코가 붙인 제동 불량 시각을 같은 줄에 겹친다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/83"
+          }
+        ]
+      },
+      {
+        "recipientId": "K172",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "아이작 워커의 정비 일지를 고발 근거로 받고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/92"
+          }
+        ]
+      },
+      {
+        "recipientId": "K187",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "outgoing",
+        "role": "마르틴 호라크의 열람 청구에 표본 번호를 붙인다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/93"
+          }
+        ]
+      },
+      {
+        "recipientId": "K289",
+        "recipientKind": "person",
+        "type": "맹세",
+        "direction": "incoming",
+        "role": "올렉산드르 셰우첸코의 용산 환적 로트와 번호를 맞춘다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/137"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K192",
     "personId": "person-0193",
@@ -104,9 +475,9 @@
   },
   "wandering_force": null,
   "clan": {
-    "id": "creative-b780-b3c4-bd09",
-    "name": "도봉 란씨",
-    "crest": "clan-crests/creative-b780-b3c4-bd09.svg"
+    "id": "DIV-K192",
+    "name": "용산·이태원 셰우첸코씨",
+    "crest": "clan-crests/DIV-K192.svg"
   },
   "generation": "opening",
   "minors": false,
@@ -141,46 +512,46 @@
     "욕망": "갈망 45 | 독점 −40 | 위험 −5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 자리는 탈선 직전 결함 보고로 열렸다. 올렉산드르 셰우첸코는 2064년에 태어났다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 신정 차량기지에서 자랐다. 2126년에는 후계시험 부품 고발 보조 업무를 맡는다. 이반 셰우첸코는 2026년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올렉산드르 셰우첸코의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "단철공.",
     "관직": "품계 주사. 직함은 후계시험 부품 고발 보조. 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.",
-    "일화": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 란하율은 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다.",
-    "관계": "황지호의 정비 일지를 고발 근거로 받고, 이홍원의 공개 기술시험 기록을 창 쪽에서 대조하며, 단시온의 열람 청구에 표본 번호를 붙인다.",
+    "일화": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다.",
+    "관계": "아이작 워커의 정비 일지를 고발 근거로 받고, 이홍원의 공개 기술시험 기록을 창 쪽에서 대조하며, 마르틴 호라크의 열람 청구에 표본 번호를 붙인다.",
     "야망": "북부 후계시험 부품 조작을 용산 환적 일지와 창동 시험 원장에 동시에 올려 제3의 전쟁 유도자를 이름 있는 줄로 남긴다.",
     "공포": "고발 보조의 서명이 조작된 증거의 공범란에 남는 것.",
     "개입": "봉인 표본을 창동까지 호송하거나, 공범란에 이름을 넣으려는 쪽지를 폭로할 수 있다."
   },
-  "biography": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다. 침착하나 표본을 숨기는 반장을 참지 못한다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 후계시험 부품 표본·환적 로트 봉인\n- 직함: 후계시험 부품 고발 보조\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 주사. 직함은 후계시험 부품 고발 보조. 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.\n\n**일화.** 겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 란하율은 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다.\n\n**관계.** 황지호의 정비 일지를 고발 근거로 받고, 이홍원의 공개 기술시험 기록을 창 쪽에서 대조하며, 단시온의 열람 청구에 표본 번호를 붙인다.\n\n**야망.** 북부 후계시험 부품 조작을 용산 환적 일지와 창동 시험 원장에 동시에 올려 제3의 전쟁 유도자를 이름 있는 줄로 남긴다.\n\n**공포.** 고발 보조의 서명이 조작된 증거의 공범란에 남는 것.\n\n**개입.** 봉인 표본을 창동까지 호송하거나, 공범란에 이름을 넣으려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −10 | 물질 15 | 공동 −5 | 원칙 0 | 공개 −30 | 자격 60 | 분산 10 | 변혁 −5\n- 욕망: 갈망 45 | 독점 −40 | 위험 −5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다. 침착하나 표본을 숨기는 반장을 참지 못한다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 후계시험 부품 표본·환적 로트 봉인\n- 직함: 후계시험 부품 고발 보조\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 자리는 탈선 직전 결함 보고로 열렸다. 올렉산드르 셰우첸코는 2064년에 태어났다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 신정 차량기지에서 자랐다. 2126년에는 후계시험 부품 고발 보조 업무를 맡는다. 이반 셰우첸코는 2026년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올렉산드르 셰우첸코의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 단철공.\n\n**관직.** 품계 주사. 직함은 후계시험 부품 고발 보조. 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.\n\n**일화.** 겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다.\n\n**관계.** 아이작 워커의 정비 일지를 고발 근거로 받고, 이홍원의 공개 기술시험 기록을 창 쪽에서 대조하며, 마르틴 호라크의 열람 청구에 표본 번호를 붙인다.\n\n**야망.** 북부 후계시험 부품 조작을 용산 환적 일지와 창동 시험 원장에 동시에 올려 제3의 전쟁 유도자를 이름 있는 줄로 남긴다.\n\n**공포.** 고발 보조의 서명이 조작된 증거의 공범란에 남는 것.\n\n**개입.** 봉인 표본을 창동까지 호송하거나, 공범란에 이름을 넣으려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −10 | 물질 15 | 공동 −5 | 원칙 0 | 공개 −30 | 자격 60 | 분산 10 | 변혁 −5\n- 욕망: 갈망 45 | 독점 −40 | 위험 −5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "란하율",
+        "from": "올렉산드르 셰우첸코",
         "type": "계약",
-        "to": "황지호",
-        "basis": "황지호의 정비 일지를 고발 근거로 받고"
+        "to": "아이작 워커",
+        "basis": "아이작 워커의 정비 일지를 고발 근거로 받고"
       },
       {
-        "from": "란하율",
+        "from": "올렉산드르 셰우첸코",
         "type": "계약",
-        "to": "단시온",
-        "basis": "단시온의 열람 청구에 표본 번호를 붙인다"
+        "to": "마르틴 호라크",
+        "basis": "마르틴 호라크의 열람 청구에 표본 번호를 붙인다"
       }
     ],
     "incoming": [
       {
-        "from": "단시온",
+        "from": "마르틴 호라크",
         "type": "계약",
-        "to": "란하율",
-        "basis": "란하율이 붙인 제동 불량 시각을 같은 줄에 겹친다"
+        "to": "올렉산드르 셰우첸코",
+        "basis": "올렉산드르 셰우첸코가 붙인 제동 불량 시각을 같은 줄에 겹친다"
       },
       {
         "from": "추지훈",
         "type": "맹세",
-        "to": "란하율",
-        "basis": "란하율의 용산 환적 로트와 번호를 맞춘다"
+        "to": "올렉산드르 셰우첸코",
+        "basis": "올렉산드르 셰우첸코의 용산 환적 로트와 번호를 맞춘다"
       }
     ]
   }

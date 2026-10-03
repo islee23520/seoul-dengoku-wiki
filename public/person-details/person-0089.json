@@ -12,6 +12,471 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-한소미",
   "detailRoute": "/people/person-0089",
+  "birthDate": "2065-02-03",
+  "birthday": "02-03",
+  "age": 61,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/5",
+    "lore/characters/Cast-State-04.json#/content/7",
+    "lore/characters/Cast-State-04.json#/content/8",
+    "lore/characters/Cast-State-04.json#/content/9",
+    "lore/characters/Cast-State-04.json#/content/10",
+    "lore/chronology/Scenario-Timeline.json#/content/39"
+  ],
+  "familyTree": {
+    "personId": "K088",
+    "nodes": [
+      {
+        "id": "K088",
+        "personId": "K088",
+        "kind": "person",
+        "name": "한소미",
+        "birthDate": "2065-02-03",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K088"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 성수 당회 장로 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-한소미-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0089"
+      },
+      {
+        "id": "FH-K088-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승범",
+        "birthDate": "2035-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "한승범은 대합실 당직에서 공방 조립 기록·교대 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-한소미-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K088-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승재",
+        "birthDate": "2005-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한승재는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-한소미-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K088-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승규",
+        "birthDate": "2035-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "윤승규는 대합실 당직에서 공방 조립 기록·교대 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-한소미-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K088-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승찬",
+        "birthDate": "2005-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한승찬은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-한소미-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K088-P-01:K088:biological",
+        "from": "FH-K088-P-01",
+        "to": "K088",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K088-P-02:FH-K088-P-01:biological",
+        "from": "FH-K088-P-02",
+        "to": "FH-K088-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K088-M-01:K088:biological",
+        "from": "FH-K088-M-01",
+        "to": "K088",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K088-M-02:FH-K088-M-01:biological",
+        "from": "FH-K088-M-02",
+        "to": "FH-K088-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-한소미-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "householdProposal": {
+    "status": "draft",
+    "personId": "K088",
+    "links": [],
+    "household": {
+      "personFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "houseFaith": {
+        "status": "unknown",
+        "sourceRefs": []
+      },
+      "humanoidAdmission": "deferred",
+      "genderPreference": "unknown-faith",
+      "newPrivateRetainers": []
+    },
+    "knownLinks": [
+      {
+        "recipientId": "FH-K088-P-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/440"
+          }
+        ]
+      },
+      {
+        "recipientId": "FH-K088-M-01",
+        "recipientKind": "family-node",
+        "type": "biological",
+        "direction": "incoming",
+        "role": "biological",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "/edges/442"
+          }
+        ]
+      },
+      {
+        "recipientId": "K087",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "outgoing",
+        "role": "총관 후계를 둘러싼 경쟁",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/38"
+          }
+        ]
+      },
+      {
+        "recipientId": "K090",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "주간 평의회 연서를 따름",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/40"
+          }
+        ]
+      },
+      {
+        "recipientId": "K094",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "생활 복구 공약을 급수 창구에서 감시",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/44"
+          }
+        ]
+      },
+      {
+        "recipientId": "K036",
+        "recipientKind": "person",
+        "type": "경쟁",
+        "direction": "incoming",
+        "role": "가죽 공방과 방호 원단 원자재를 겨룸",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/121"
+          }
+        ]
+      },
+      {
+        "recipientId": "K064",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "검사 센서 수리를 성수 공방에 맡김",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/1/rows/130"
+          }
+        ]
+      },
+      {
+        "recipientId": "K097",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "한소미의 공정 분할에서 패킹 끈 색을 나눈다",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/75"
+          }
+        ]
+      },
+      {
+        "recipientId": "K100",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "한소미의 공동통치안 문구를 다듬어 나르며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/81"
+          }
+        ]
+      },
+      {
+        "recipientId": "K102",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "한소미의 공동통치안을 현장 숫자로 받치며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/85"
+          }
+        ]
+      },
+      {
+        "recipientId": "K103",
+        "recipientKind": "person",
+        "type": "지휘",
+        "direction": "incoming",
+        "role": "한소미의 생활 복구 공약을 승강장 방송으로 감시하며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/3/rows/87"
+          }
+        ]
+      },
+      {
+        "recipientId": "K109",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "한소미의 평의회 거부권을 서기석에서 받치고",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/44"
+          }
+        ]
+      },
+      {
+        "recipientId": "K110",
+        "recipientKind": "person",
+        "type": "계약",
+        "direction": "incoming",
+        "role": "한소미의 공동통치안을 서명란에 올리며",
+        "status": "source-projection",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "/content/5/rows/46"
+          }
+        ]
+      }
+    ],
+    "court": null,
+    "directRetainer": null,
+    "deficits": {
+      "normalizedSocialContact": false,
+      "familyParent": false,
+      "faithUnresolved": true,
+      "privateRetainerStatus": "not-appointed; no new quantity authorized",
+      "backgroundContactAuthoring": "not-required-by-isolation"
+    }
+  },
   "gurps": {
     "id": "K088",
     "personId": "person-0089",
