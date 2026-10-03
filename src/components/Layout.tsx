@@ -18,6 +18,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       navLabel="주요 표면과 문서 분류"
       menuLabel="전체 메뉴"
       skipLabel="본문으로 건너뛰기"
+      footer={<a href="/wiki/license">라이선스와 권리 안내</a>}
     >
       {children}
     </SiteShell>

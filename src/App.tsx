@@ -14,12 +14,13 @@ const CharacterArtToolPage = lazy(() => import('./pages/CharacterArtToolPage'))
 const DocumentsPage = lazy(() => import('./pages/DocumentsPage'))
 const CategoriesPage = lazy(() => import('./pages/CategoriesPage'))
 const FeedbackPage = lazy(() => import('./pages/FeedbackPage'))
+const LicensePage = lazy(() => import('./pages/LicensePage'))
 import StatesPage from './pages/StatesPage'
 import UpdatesPage from './pages/UpdatesPage'
 import { resolveLegacyRegionRoute, worldRegionMapRoute } from './wikiRouting'
 import { wikiCatalog, wikiEnglishCatalog } from './generated/wikiCatalog'
 
-const appRoutes = new Set(['/', '/states', '/updates', '/feedback', '/people', '/families', '/people/draft', '/tools/character-art', '/people/art', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route), ...wikiEnglishCatalog.map(({ route }) => route)])
+const appRoutes = new Set(['/', '/states', '/updates', '/feedback', '/license', '/people', '/families', '/people/draft', '/tools/character-art', '/people/art', '/documents', '/categories', '/world/', ...wikiCatalog.map(({ route }) => route), ...wikiEnglishCatalog.map(({ route }) => route)])
 
 function useNativeWikiLinks() {
   const navigate = useNavigate()
@@ -67,6 +68,7 @@ export default function App() {
         <Route path="/states/:stateSlug" element={<StateDetailPage />} />
         <Route path="/updates" element={<UpdatesPage />} />
         <Route path="/feedback" element={<Suspense fallback={<div className="wiki-loading">내 제보를 불러오고 있습니다.</div>}><FeedbackPage /></Suspense>} />
+        <Route path="/license" element={<Suspense fallback={<div className="wiki-loading">라이선스를 불러오고 있습니다.</div>}><LicensePage /></Suspense>} />
         <Route path="/people" element={<Suspense fallback={<div className="wiki-loading">인물 원장을 불러오고 있습니다.</div>}><PeoplePage /></Suspense>} />
         <Route path="/tools/character-art" element={<Suspense fallback={<div className="wiki-loading">인물 아트 도구를 불러오고 있습니다.</div>}><CharacterArtToolPage /></Suspense>} />
         <Route path="/families" element={<Suspense fallback={<div className="wiki-loading">가문 원장을 불러오고 있습니다.</div>}><FamiliesPage /></Suspense>} />
