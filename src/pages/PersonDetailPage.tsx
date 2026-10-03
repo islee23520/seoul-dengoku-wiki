@@ -9,7 +9,14 @@ import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 
 type Relation = { from: string; type: string; to: string; basis: string }
+type ConfirmedHolding = {
+  readonly id: string
+  readonly name: { readonly ko: string }
+  readonly adminRefs: readonly { readonly id: string; readonly name: string }[]
+  readonly facilityRef?: { readonly stationName: string; readonly layerId: string; readonly layerName: string }
+}
 type PersonDetail = (typeof peopleCatalog)[number] & {
+  confirmedHoldings?: readonly ConfirmedHolding[]
   gurps: GurpsSheetData & { id: string; personId: string }
   unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
   territory?: { fief_name: string; type: string; station: string; state: string; settlement: { name: string; type: string; description: string }; note: string } | null
@@ -410,7 +417,15 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             <p>편성: {detail.unit.composition.join(', ')}</p>
             <p>{detail.unit.note}</p>
           </section>}
-          {detail.territory && <section className="gurps-territory">
+          {!!detail.confirmedHoldings?.length && <section className="gurps-territory-confirmed" data-confirmed-holdings>
+            <h2>보유 영지와 시설</h2>
+            {detail.confirmedHoldings.map((holding) => <section key={holding.id} data-holding-id={holding.id}>
+              <h3>{holding.name.ko}</h3>
+              {holding.adminRefs.length > 0 && <ul>{holding.adminRefs.map((region) => <li key={region.id} data-admin-ref={region.id}>{region.name}</li>)}</ul>}
+              {holding.facilityRef && <p data-facility-layer={holding.facilityRef.layerId}>{holding.facilityRef.stationName} · {holding.facilityRef.layerName}</p>}
+            </section>)}
+          </section>}
+          {!detail.confirmedHoldings?.length && detail.territory && <section className="gurps-territory">
             <h2>영지</h2>
             <p>{detail.territory.fief_name} · {detail.territory.type}</p>
             <p>위치: {detail.territory.station} · {detail.territory.state}</p>
