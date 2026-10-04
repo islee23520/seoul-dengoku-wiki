@@ -20,6 +20,7 @@ import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
 import { validateHoldingFacility } from './holding-facility.mjs'
+import { validateOpeningDispositions } from './personal-holdings.mjs'
 import { regularLineGraph } from './regular-line-graph.mjs'
 import { regionalLineGraph } from './regional-line-graph.mjs'
 import { parsePersonRightsPermissions } from './person-rights-permissions.mjs'
@@ -851,6 +852,7 @@ const courtErrors = validateRelations(courtDataset)
 if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
 const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
 const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
+const openingDispositions = validateOpeningDispositions(personalHoldings, courtDataset.people)
 const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
 const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
@@ -992,6 +994,7 @@ for (const person of peopleCatalog) {
       secondary: sheet.secondary,
     },
     confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
+    ...(openingDispositions.has(issuedId) ? { openingDisposition: openingDispositions.get(issuedId) } : {}),
     unit: sheet.unit,
     territory: sheet.territory,
     wandering_force: sheet.wandering_force,

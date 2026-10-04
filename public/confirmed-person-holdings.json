@@ -1,6 +1,23 @@
 {
   "schema": "confirmed-person-holdings.v1",
   "openingYear": 2126,
+  "openingDispositions": [
+    {
+      "personId": "K003",
+      "status": "personal-landless",
+      "approvalRef": "owner:call_woKhJUVDwBZTeAyXJI9RXhGc:s01_holding_k003"
+    },
+    {
+      "personId": "K004",
+      "status": "personal-landless",
+      "approvalRef": "owner:call_woKhJUVDwBZTeAyXJI9RXhGc:s01_holding_k004"
+    },
+    {
+      "personId": "K005",
+      "status": "personal-landless",
+      "approvalRef": "owner:call_woKhJUVDwBZTeAyXJI9RXhGc:s01_holding_k005"
+    }
+  ],
   "holdings": [
     {
       "id": "holding:capital-s01",
