@@ -34,8 +34,15 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
   const [state, setState] = useState<'draft' | 'pending' | 'error' | 'success' | 'reconfirm'>('draft')
   const [message, setMessage] = useState('')
   const [storageWarning, setStorageWarning] = useState('')
+  const [loginRequired, setLoginRequired] = useState(false)
   const actionRef = useRef<HTMLButtonElement>(null)
   const requestRef = useRef<{ id: symbol; controller: AbortController; key: string } | null>(null)
+
+  useEffect(() => () => {
+    const request = requestRef.current
+    requestRef.current = null
+    request?.controller.abort()
+  }, [])
 
   useEffect(() => {
     requestRef.current?.controller.abort()
@@ -43,6 +50,7 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
     const loaded = readDraft(pathname)
     const restored = loaded && (loaded.authorityVersion !== 'document-view.v1' || loaded.anchor.documentId !== documentInfo.documentId || loaded.anchor.sourceRevision !== documentInfo.sourceRevision || loaded.anchor.locale !== locale) ? { ...loaded, reconfirmationRequired: true, authorityVersion: 'historical' as const } : loaded
     setOwned({ route: pathname, draft: restored })
+    setLoginRequired(false)
     setState(restored?.reconfirmationRequired ? 'reconfirm' : 'draft')
     setMessage(restored?.reconfirmationRequired ? '원문이 변경되었습니다. 현재 문장을 다시 선택해 확인해 주세요.' : '')
   }, [pathname, documentInfo.sourceRevision])
@@ -77,11 +85,13 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
     replaceDraft(null); setState('draft'); setMessage('임시 제보를 지웠습니다.'); actionRef.current?.focus()
   }
   const submit = async () => {
+    if (draft?.reconfirmationRequired) return
     if (!draft?.body.trim()) { setState('error'); setMessage('제보 내용을 입력해 주세요.'); return }
     if (requestRef.current) return
     const submitted = { ...draft }
     const request = { id: Symbol('feedback-request'), controller: new AbortController(), key: submitted.idempotencyKey }
     requestRef.current = request
+    setLoginRequired(false)
     setState('pending'); setMessage('제출 중입니다.')
     try {
       await submitFeedback({ anchor: submitted.anchor, reason: submitted.reason, body: submitted.body.trim(), ...(submitted.alternative.trim() ? { alternative: submitted.alternative.trim() } : {}) }, { idempotencyKey: submitted.idempotencyKey, signal: request.controller.signal })
@@ -96,11 +106,14 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
       if (error instanceof FeedbackApiError && error.reconfirmationRequired) {
         setOwned((current) => current.route === pathname && current.draft?.idempotencyKey === submitted.idempotencyKey ? { route: pathname, draft: { ...current.draft, reconfirmationRequired: true } } : current)
         setState('reconfirm'); setMessage('원문이 변경되었습니다. 현재 문장을 다시 선택해 확인해 주세요.')
-      } else { setState('error'); setMessage(error instanceof Error ? error.message : '제보를 제출하지 못했습니다.') }
+      } else {
+        setLoginRequired(error instanceof FeedbackApiError && error.status === 401)
+        setState('error'); setMessage(error instanceof Error ? error.message : '제보를 제출하지 못했습니다.')
+      }
     }
   }
 
-  const update = (next: Partial<Draft>) => { if (draft && state !== 'pending') replaceDraft({ ...draft, ...next, editVersion: draft.editVersion + 1 }) }
+  const update = (next: Partial<Draft>) => { if (draft && state !== 'pending') replaceDraft({ ...draft, ...next, idempotencyKey: newKey(), editVersion: draft.editVersion + 1 }) }
   return <aside className="feedback-composer" aria-label="문장 제보">
     <div className="feedback-heading"><strong>문장 제보</strong><button ref={actionRef} type="button" disabled={state === 'pending'} onClick={capture}>선택 문장 제보</button></div>
     <p className="feedback-help">공개 본문에는 제보 표시나 밑줄이 생기지 않습니다. 로그인 전에는 이 브라우저에만 임시 저장됩니다.</p>
@@ -112,6 +125,7 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
       <div className="feedback-actions"><button type="button" onClick={cancel}>취소</button><button type="submit" disabled={state === 'pending' || draft.reconfirmationRequired}>{state === 'pending' ? '제출 중…' : draft.reconfirmationRequired ? '문장을 다시 선택하세요' : '로그인하고 제출'}</button></div>
     </form>}
     {message && <p className={`feedback-status feedback-${state}`} role="status">{message}</p>}
+    {draft && loginRequired && <p><a href="/api/feedback/auth/login">GitHub로 로그인</a></p>}
     {storageWarning && <p className="feedback-status feedback-storage-warning" role="status">{storageWarning}</p>}
   </aside>
 }
