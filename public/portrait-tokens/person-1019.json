@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-1019",
+  "characterId": "K1019",
+  "name": "박성수",
+  "stateId": "S06",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": true,
+    "role": "사본 관리인"
+  },
+  "artProposal": {
+    "face": "Preserve the supplied individual facial proportions in a complete 2D redraw. Broad rounded oval face, soft full cheeks and jaw, narrow almond eyes with gently lowered outer corners, straight low-set eyebrows, moderate nose bridge with a broad softly rounded tip, closed neutral mouth with a fuller lower lip. No glasses.",
+    "hair": "Short dense black hair, softly parted front fringe, rounded natural crown. Preserve individual hair design without copying photographic texture.",
+    "upper": "Plain charcoal-gray collarless cloth jacket over a muted cream round-neck shirt. Simple front opening, no uniform insignia, logos, armor, embroidery or dangling tools.",
+    "lower": null,
+    "footwear": null
+  },
+  "style": {
+    "referenceSha256": null,
+    "portraitShotId": "medium-close-up-119"
+  },
+  "image": {
+    "path": "/portraits/person-1019.png",
+    "sha256": "e88753139cd0ece54d89b5803e9a2b6b9cc9e25edf7e84aac6f6d5e4d0f3d436",
+    "width": 1160,
+    "height": 1355
+  },
+  "imageReview": {
+    "record": "/portrait-reviews/person-1019.json",
+    "imageSha256": "e88753139cd0ece54d89b5803e9a2b6b9cc9e25edf7e84aac6f6d5e4d0f3d436",
+    "verdict": "pass"
+  }
+}
