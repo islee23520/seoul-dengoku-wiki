@@ -915,7 +915,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const occupation = fields['생업'] ?? cards.map((card) => parseCardFields(card.body)['생업']).find(Boolean) ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const stateTiers = tiersByState.get(person.state)
   const tierIndex = stateTiers?.findIndex((ranks) => ranks.includes(rank)) ?? -1
-  const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
+  const commonTier = person.state === 'S00' || source === 'Cast-Unaffiliated' || source === 'Diaspora-Corridors' || /^품계 없음\./u.test(office) ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
   return {
     id: `person-${String(index + 1).padStart(4, '0')}`,
     name: person.name,

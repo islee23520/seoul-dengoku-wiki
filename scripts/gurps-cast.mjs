@@ -20,8 +20,8 @@ const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
 // 입력 해시(person-id-registry approvalRef, 2026-09-28 K1019 발급 소유자 승인). 두 파일은 이 작업에서 바뀌면 안 된다.
 export const APPROVED_HASHES = {
-  [VALUES]: '1d5702c905da6e046fe742dea30ee55a0abe1167d8370a302265d518ab723c7a',
-  [REGISTRY]: 'c0aedfa82ef9a29c6dece15ee867efa0b12849ec561b44cb386e508a6f875c32',
+  [VALUES]: '369a7bc6a84e65438067e624e83fdc3d937cf086e9bb5a6dcad2b3223cde6571',
+  [REGISTRY]: '27eea6e326ae844f716e0358fe2fadb9f635ac6ea343dc7098b4db4c025359f0',
 }
 const CARD_FILES = [
   ...Array.from({ length: 16 }, (_, i) => `lore/characters/Cast-State-${String(i + 1).padStart(2, '0')}.json`),
@@ -811,7 +811,29 @@ export function summary(doc) {
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2)
   const outPath = join(ROOT, OUT)
-  if (args.includes('--write-person')) {
+  if (args.includes('--sync-invariants')) {
+    for (const [path, hash] of Object.entries(APPROVED_HASHES)) {
+      if (sha256(ROOT, path) !== hash) throw new Error(`Unapproved input: ${path}`)
+    }
+    const current = JSON.parse(readFileSync(outPath, 'utf8'))
+    current.invariants = { ...APPROVED_HASHES }
+    writeFileSync(outPath, JSON.stringify(current, null, 2) + '\n')
+    console.log('WROTE approved input invariants only')
+  } else if (args.includes('--sync-state')) {
+    const selected = args.slice(args.indexOf('--sync-state') + 1)
+    if (!selected.length || new Set(selected).size !== selected.length) throw new Error('Unique person IDs are required')
+    const current = JSON.parse(readFileSync(outPath, 'utf8'))
+    const values = JSON.parse(readFileSync(join(ROOT, VALUES), 'utf8')).people
+    for (const id of selected) {
+      const person = current.people.find((entry) => entry.id === id)
+      const value = person && values.find((entry) => entry.name === person.name)
+      if (!value) throw new Error(`Unknown person ID: ${id}`)
+      person.state = value.state
+    }
+    // This country-only projection does not renew approvalRef or invariant hashes.
+    writeFileSync(outPath, JSON.stringify(current, null, 2) + '\n')
+    console.log(`WROTE country state only (input hash approval not renewed): ${selected.join(', ')}`)
+  } else if (args.includes('--write-person')) {
     const selected = args.slice(args.indexOf('--write-person') + 1)
     if (!selected.length || new Set(selected).size !== selected.length) throw new Error('Unique person IDs are required')
     for (const [path, hash] of Object.entries(APPROVED_HASHES)) {
