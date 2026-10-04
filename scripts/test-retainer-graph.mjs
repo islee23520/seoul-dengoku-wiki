@@ -81,6 +81,24 @@ test('generated court graph resolves approved direct retainers to actual detail 
   assert.ok(!retainerGraph.edges.some((edge) => edge.fromPersonId === 'K068' && edge.courtId === null))
 })
 
+test('approved S02 owner lieges project exact person fields and preserve lower court edges', async () => {
+  for (const [ownerId, memberId] of [['K032', 'K041'], ['K037', 'K047'], ['K033', 'K049']]) {
+    assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === ownerId),
+      { fromPersonId: ownerId, toPersonId: 'K029', courtId: null, relationKind: 'direct-liege', ownerTerm: '직속 주군' })
+    assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === memberId),
+      { fromPersonId: memberId, toPersonId: ownerId, courtId: `court:${ownerId}` })
+    const node = retainerGraph.nodes.find((person) => person.id === ownerId)
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${node.detailRoute.split('/').at(-1)}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.gurps.id, ownerId)
+    assert.deepEqual(detail.directLiege, { personId: 'K029', name: '강민서', relationKind: 'direct-liege', ownerTerm: '직속 주군', effectiveYear: 2126 })
+    assert.equal(detail.court.id, `court:${ownerId}`)
+    assert.deepEqual(detail.court.members.map((person) => person.personId), [memberId])
+    const memberNode = retainerGraph.nodes.find((person) => person.id === memberId)
+    const memberDetail = JSON.parse(await readFile(new URL(`../public/person-details/${memberNode.detailRoute.split('/').at(-1)}.json`, import.meta.url), 'utf8'))
+    assert.deepEqual(memberDetail.directLiege, { personId: ownerId, name: node.name, courtId: `court:${ownerId}`, effectiveYear: 2126 })
+  }
+})
+
 test('coordinated wrong graph and generated catalog countries fail against values canon', async () => {
   const dataset = loadDataset()
   const catalogSource = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')

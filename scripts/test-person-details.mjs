@@ -166,7 +166,7 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
   assert.equal(expectedMembers.size, 9)
   assert.equal(expectedOwners.size, 7)
   assert.equal(details.size, 1022)
-  const s03OwnerLieges = new Set(['K058', 'K060', 'K061', 'K062', 'K233'])
+  const s03OwnerLieges = new Set(['K058', 'K060', 'K061', 'K062', 'K233', 'K032', 'K037', 'K033'])
   for (const detail of details.values()) {
     if (detail.state !== 'S01' && !expectedMembers.has(detail.id) && !s03OwnerLieges.has(detail.gurps.id))
       assert.equal(detail.directLiege, undefined, detail.id)
@@ -200,7 +200,7 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
   assert.throws(() => check((id) => person(id, personCourt)), /K032/)
 })
 
-test('eight owner-liege edges project directLiege separately from court membership', async () => {
+test('eleven owner-liege edges project directLiege separately from court membership', async () => {
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const issuedById = new Map(registry.persons.map((entry) => [entry.id, entry]))
   const sheets = JSON.parse(await readFile(new URL('../lore/name-pools/gurps-cast.json', import.meta.url), 'utf8'))
@@ -212,6 +212,9 @@ test('eight owner-liege edges project directLiege separately from court membersh
     ['K058', 'K1005', 'direct-vassal', '직속 가신', true], ['K060', 'K1005', 'direct-vassal', '직속 가신', true],
     ['K061', 'K1005', 'direct-vassal', '직속 가신', true], ['K062', 'K1005', 'direct-vassal', '직속 가신', true],
     ['K233', 'K222', 'direct-vassal', '직속 가신', false],
+    ['K032', 'K029', 'direct-liege', '직속 주군', true],
+    ['K037', 'K029', 'direct-liege', '직속 주군', true],
+    ['K033', 'K029', 'direct-liege', '직속 주군', true],
   ]
   for (const [personId, liegeId, relationKind, ownerTerm, courtOwner] of expected) {
     const detail = await read(personId)
@@ -219,12 +222,7 @@ test('eight owner-liege edges project directLiege separately from court membersh
       relationKind, ownerTerm, effectiveYear: 2126 }, personId)
     assert.equal(detail.court?.id, courtOwner ? `court:${personId}` : undefined, personId)
   }
-  for (const ownerId of ['K032', 'K033', 'K037']) {
-    const detail = await read(ownerId)
-    assert.equal(detail.directLiege, undefined, ownerId)
-    assert.equal(detail.court?.id, `court:${ownerId}`, ownerId)
-  }
-  for (const liegeId of ['K001', 'K1005', 'K222']) {
+  for (const liegeId of ['K001', 'K1005', 'K222', 'K029']) {
     const detail = await read(liegeId)
     assert.equal(detail.directLiege, undefined, liegeId)
     assert.equal(detail.court, undefined, liegeId)

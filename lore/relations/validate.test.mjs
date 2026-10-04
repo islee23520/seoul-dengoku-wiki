@@ -59,7 +59,7 @@ test("direct-liege validator rejects source, actor, court, nation and hierarchy 
   assert.deepEqual(validate(social), []);
 });
 
-test("approved owner lieges are exactly eight person-to-person edges", () => {
+test("approved owner lieges are exactly eleven person-to-person edges", () => {
   const dataset = loadDataset();
   const { ownerLieges } = dataset.config;
   assert.equal(ownerLieges.schema, "owner-liege-edges.v1");
@@ -73,6 +73,9 @@ test("approved owner lieges are exactly eight person-to-person edges", () => {
     { personId: "K061", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
     { personId: "K062", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
     { personId: "K233", liegePersonId: "K222", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
+    { personId: "K032", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K037", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K033", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
   ]);
   const sourceQuotes = ownerLieges.sourceBasis.map((basis) => basis.quote);
   assert.ok(sourceQuotes.some((quote) => quote.includes("군주를 뽑고") && quote.includes("군주 자리에 앉았다")));
@@ -105,6 +108,20 @@ test("owner-liege validator rejects missing kind and term from the real dataset"
   const errors = validate(dataset).join("\n");
   assert.match(errors, /K002: unknown owner relation kind undefined/);
   assert.match(errors, /K002: owner term mismatch/);
+});
+
+test("S02 owner lieges preserve immediate descendants and reject a second liege or ancestor cycle", () => {
+  const dataset = loadDataset();
+  for (const [personId, liegePersonId, sourceRow] of [["K041", "K032", 30], ["K047", "K037", 42], ["K049", "K033", 46]]) {
+    assert.deepEqual(dataset.config.directRetainers.find((edge) => edge.personId === personId),
+      { personId, liegePersonId, courtId: `court:${liegePersonId}`, sourceRow });
+  }
+  const duplicate = loadDataset();
+  duplicate.config.ownerLieges.edges.push({ personId: "K032", liegePersonId: "K033", relationKind: "direct-liege", ownerTerm: "직속 주군" });
+  assert.match(validate(duplicate).join("\n"), /K032: duplicate immediate liege/);
+  const cyclic = loadDataset();
+  cyclic.config.ownerLieges.edges.push({ personId: "K029", liegePersonId: "K041", relationKind: "direct-liege", ownerTerm: "직속 주군" });
+  for (const id of ["K032", "K041", "K029"]) assert.ok(validate(cyclic).includes(`${id}: direct liege cycle`));
 });
 
 test("owner-liege validator rejects unknown kind with missing term from the real dataset", () => {

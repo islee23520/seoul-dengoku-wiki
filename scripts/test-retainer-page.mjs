@@ -75,7 +75,9 @@ test('court owner selection exposes incoming members and the approved owner lieg
   for (const [id] of [['K032'], ['K033'], ['K037']]) {
     const selected = selectRetainerRelationships(id)
     assert.equal(selected.court?.ownerPersonId, id)
-    assert.equal(selected.liege, undefined, id)
+    assert.equal(selected.liege?.id, 'K029', id)
+    assert.equal(selected.relationKind, 'direct-liege', id)
+    assert.equal(selected.ownerTerm, '직속 주군', id)
   }
   for (const [id] of [['K058'], ['K060'], ['K061'], ['K062']]) {
     const selected = selectRetainerRelationships(id)
@@ -95,6 +97,21 @@ test('court owner selection exposes incoming members and the approved owner lieg
     assert.equal(member.liege?.id, ownerId)
     assert.equal(member.court?.ownerPersonId, ownerId)
     assert.equal(member.relationKind, undefined)
+  }
+})
+
+test('S02 selection keeps the approved ancestor path and one direct member per owner', () => {
+  const root = selectRetainerRelationships('K029')
+  assert.equal(root.liege, undefined)
+  assert.deepEqual(root.members.map((edge) => edge.fromPersonId), ['K032', 'K037', 'K033'])
+  for (const [memberId, ownerId] of [['K041', 'K032'], ['K047', 'K037'], ['K049', 'K033']]) {
+    const member = selectRetainerRelationships(memberId)
+    assert.equal(member.liege?.id, ownerId)
+    assert.equal(member.court?.id, `court:${ownerId}`)
+    const owner = selectRetainerRelationships(member.liege.id)
+    assert.equal(owner.liege?.id, 'K029')
+    assert.deepEqual(owner.members.map((edge) => edge.fromPersonId), [memberId])
+    assert.equal(layoutRetainerGraph(retainerGraph).filter((node) => node.id === ownerId).length, 1)
   }
 })
 
