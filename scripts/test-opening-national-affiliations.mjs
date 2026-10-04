@@ -61,5 +61,3 @@ test('actual people state filter returns each approved identity and excludes pen
     for (const name of ['지연희', '차유선']) assert.equal(peopleCatalog.find(p => p.name === name).state, 'S00')
   } finally { await act(async () => root.unmount()); sessionStorage.clear() }
 })
-
-
