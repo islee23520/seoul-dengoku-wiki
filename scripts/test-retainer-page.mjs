@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict'
-import { createElement } from 'react'
+// @vitest-environment jsdom
+import { createElement, act } from 'react'
+import { createRoot } from 'react-dom/client'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { peopleCatalog } from '../src/generated/peopleCatalog.ts'
@@ -17,6 +19,7 @@ test('graph page renders generated directed court edges and all approved people'
   assert.match(html, /data-from="K068" data-to="K058"/)
   const dataset = loadDataset()
   const expectedIds = new Set(dataset.config.courts.map((court) => court.ownerPersonId))
+  for (const node of retainerGraph.nodes) expectedIds.add(node.id)
   for (const edge of dataset.config.directRetainers) {
     expectedIds.add(edge.personId)
     expectedIds.add(edge.liegePersonId)
@@ -34,12 +37,14 @@ test('graph page renders generated directed court edges and all approved people'
     dataset.config.directRetainers.length + dataset.config.ownerLieges.edges.length)
 })
 
-test('page rejects a missing approved relationship from the actual source set', () => {
+test('layout retains a person when its relationship is absent without inventing an edge', () => {
   const dataset = loadDataset()
   const missing = dataset.config.directRetainers.find((row) => row.personId === 'K041')
   assert.ok(missing)
   const graphWithoutApprovedEdge = { ...retainerGraph, edges: retainerGraph.edges.filter((edge) => edge.fromPersonId !== missing.personId) }
-  assert.throws(() => layoutRetainerGraph(graphWithoutApprovedEdge), /E_RETAINER_GRAPH_UNRESOLVED/)
+  const positioned = layoutRetainerGraph(graphWithoutApprovedEdge)
+  assert.equal(positioned.filter((node) => node.id === missing.personId).length, 1)
+  assert.deepEqual(graphWithoutApprovedEdge.edges, retainerGraph.edges.filter((edge) => edge.fromPersonId !== missing.personId))
 })
 
 test('page consumer rejects missing, wrong and orphaned graph endpoints', () => {
@@ -95,6 +100,72 @@ test('court owner selection exposes incoming members and the approved owner lieg
     assert.equal(member.liege?.id, ownerId)
     assert.equal(member.court?.ownerPersonId, ownerId)
     assert.equal(member.relationKind, undefined)
+  }
+})
+
+test('isolated fixture retains every identity at finite distinct deterministic coordinates', () => {
+  const graph = { nodes: retainerGraph.nodes.slice(0, 7), edges: [], courts: [] }
+  const before = structuredClone(graph)
+  const positioned = layoutRetainerGraph(graph)
+  assert.deepEqual(new Set(positioned.map((node) => node.id)), new Set(graph.nodes.map((node) => node.id)))
+  assert.equal(new Set(positioned.map((node) => `${node.x},${node.y}`)).size, graph.nodes.length)
+  assert.ok(positioned.every((node) => Number.isFinite(node.x) && Number.isFinite(node.y)))
+  assert.deepEqual(positioned, layoutRetainerGraph({ ...graph, nodes: [...graph.nodes].reverse() }))
+  assert.deepEqual(graph, before)
+})
+
+test('actual graph retains all nodes and edges and frames isolated holders', () => {
+  const before = structuredClone(retainerGraph)
+  const positioned = layoutRetainerGraph(retainerGraph)
+  assert.equal(positioned.length, retainerGraph.nodes.length)
+  assert.equal(new Set(positioned.map((node) => node.id)).size, retainerGraph.nodes.length)
+  assert.ok(positioned.every((node) => Number.isFinite(node.x) && Number.isFinite(node.y)))
+  assert.deepEqual(retainerGraph, before)
+  const connectedIds = new Set(retainerGraph.edges.flatMap((edge) => [edge.fromPersonId, edge.toPersonId]))
+  const connectedGraph = { ...retainerGraph, nodes: retainerGraph.nodes.filter((node) => connectedIds.has(node.id)) }
+  assert.deepEqual(positioned.filter((node) => connectedIds.has(node.id)), layoutRetainerGraph(connectedGraph))
+  const html = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(RelationsGraphPage)))
+  const doc = new DOMParser().parseFromString(html, 'text/html')
+  const [x, y, width, height] = doc.querySelector('svg').getAttribute('viewBox').split(' ').map(Number)
+  for (const node of positioned) {
+    assert.ok(node.x - 8 >= x && node.x + 10 + node.name.length * 11 <= x + width, node.id)
+    assert.ok(node.y - 8 >= y && node.y + 8 <= y + height, node.id)
+  }
+  assert.deepEqual([...doc.querySelectorAll('line')].map((line) => [line.dataset.from, line.dataset.to]),
+    retainerGraph.edges.map((edge) => [edge.fromPersonId, edge.toPersonId]))
+})
+
+test('invalid and duplicate IDs and missing owner-liege endpoints remain errors', () => {
+  const graph = { nodes: retainerGraph.nodes.slice(0, 1), edges: [], courts: [] }
+  assert.throws(() => layoutRetainerGraph({ ...graph, nodes: [...graph.nodes, ...graph.nodes] }), /E_RETAINER_GRAPH_UNRESOLVED/)
+  assert.throws(() => layoutRetainerGraph({ ...graph, nodes: [{ ...graph.nodes[0], id: '' }] }), /E_RETAINER_GRAPH_UNRESOLVED/)
+  assert.throws(() => layoutRetainerGraph({ ...graph, edges: [{ fromPersonId: graph.nodes[0].id, toPersonId: 'K9999', courtId: null }] }), /E_RETAINER_GRAPH_LIEGE:K9999/)
+})
+
+test('search and selection retain isolated holder detail navigation without inferred relationships', async () => {
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  const host = document.createElement('div')
+  const root = createRoot(host)
+  const holder = retainerGraph.nodes.find((node) => node.id === 'K144')
+  assert.ok(holder)
+  try {
+    await act(async () => root.render(createElement(MemoryRouter, null, createElement(RelationsGraphPage))))
+    const input = host.querySelector('input[type=search]')
+    await act(async () => {
+      Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set.call(input, holder.id)
+      input.dispatchEvent(new Event('input', { bubbles: true }))
+    })
+    assert.equal(host.querySelectorAll('[data-person-id]').length, 1)
+    await act(async () => host.querySelector('[data-person-id="K144"]').dispatchEvent(new MouseEvent('click', { bubbles: true })))
+    const section = host.querySelector('section')
+    assert.ok(section)
+    assert.equal(section.querySelector('a').getAttribute('href'), holder.detailRoute)
+    assert.equal(section.querySelectorAll('p').length, 0)
+    assert.equal(host.querySelector('[data-person-id="K144"] circle').getAttribute('r'), '8')
+    await act(async () => host.querySelector('[data-person-id="K144"]').dispatchEvent(new MouseEvent('click', { bubbles: true })))
+    assert.equal(host.querySelector('section'), null)
+  } finally {
+    await act(async () => root.unmount())
   }
 })
 
