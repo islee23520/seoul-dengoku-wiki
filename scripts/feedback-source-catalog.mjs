@@ -116,7 +116,7 @@ export function articleFeedbackRecord({ envelope, route, locale, blocks }) {
 }
 
 
-export const PERSON_SECTION_ORDER=['생애','관직','무공','일화','가문','관계','야망','공포','개입']
+export const PERSON_SECTION_ORDER=['생애','관직','무공','호위 대열','일화','가문','관계','야망','공포','개입']
 
 function personSegment(envelope, headingAnchor) {
   const start = envelope.content.findIndex((block) => block.kind === 'heading' && block.anchor === headingAnchor)
