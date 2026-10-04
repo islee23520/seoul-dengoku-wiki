@@ -35,7 +35,6 @@ test('portrait properties and immutable images follow the registered portrait ca
   const iyen = catalog.entries.find(entry => entry.characterId === 'K1004')
   assert.equal(iyen?.name, '이연')
   assert.equal(iyen?.personId, 'person-1004')
-  assert.equal(catalog.entries.filter(entry => entry.stateId).length, 16)
   assert.deepEqual(Object.keys(properties.entries).sort(), catalog.entries.map(entry => entry.personId).sort())
   for (const entry of catalog.entries) {
     const token = JSON.parse(await readFile(new URL('../public/portrait-tokens/' + entry.personId + '.json', import.meta.url), 'utf8'))
@@ -44,6 +43,12 @@ test('portrait properties and immutable images follow the registered portrait ca
     assert.equal(entry.name, detail.name)
     assert.equal(token.personId, detail.id)
     assert.equal(token.characterId, entry.characterId)
+    assert.equal(token.name, entry.name)
+    assert.equal(token.stateId, entry.stateId, entry.personId + ' catalog/token state')
+    if (selection.records.find(row => row.personId === entry.personId)?.operation === 'register-approved') {
+      assert.equal(entry.characterId, detail.fields['캐릭터 ID'])
+      assert.equal(entry.stateId, detail.state === 'S00' ? null : detail.state, entry.personId + ' registered state')
+    }
     assert.equal(token.approval, 'art-proposal')
     assert.equal(token.image.sha256, createHash('sha256').update(image).digest('hex'))
     assert.equal(token.image.sha256, entry.imageSha256)
