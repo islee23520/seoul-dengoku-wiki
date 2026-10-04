@@ -180,6 +180,22 @@ export function validate(dataset) {
       seen.add(current);
     }
   }
+  const { courtMemberships } = config;
+  if (courtMemberships?.schema !== "opening-court-memberships.v1" || courtMemberships.effectiveYear !== 2126 ||
+      !Array.isArray(courtMemberships.memberships))
+    errors.push("courtMemberships: missing structural metadata (schema/effectiveYear/memberships)");
+  const memberIds = new Set(directRetainers.map(row => row.personId));
+  for (const row of courtMemberships?.memberships || []) {
+    fk(row.personId, personIds, "court membership person");
+    fk(row.courtId, courtIds, `${row.personId}.membershipCourtId`);
+    if (memberIds.has(row.personId)) errors.push(`${row.personId}: duplicate court membership`);
+    memberIds.add(row.personId);
+    const court = courtById.get(row.courtId);
+    if (!liegeByPerson.has(row.personId) || liegeByPerson.get(row.personId) !== court?.ownerPersonId)
+      errors.push(`${row.personId}: membership court owner is not immediate liege`);
+    if (stateByPersonId.get(row.personId) !== court?.stateId)
+      errors.push(`${row.personId}: foreign nation court membership`);
+  }
   const orgSources = new Map([["O01", sources.chronicle], ["O02", sources.stateSource], ["O03", sources.stateSource], ["O04", sources.stateSource]]);
   for (const row of organizations) {
     if (row.stateId !== undefined) fk(row.stateId, stateIds, `${row.id}.stateId`);

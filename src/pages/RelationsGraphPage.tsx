@@ -10,6 +10,10 @@ const NODE_COLORS: Record<string, string> = {
 }
 
 export function layoutRetainerGraph(graph: typeof retainerGraph) {
+  const ids = new Set(graph.nodes.map((node) => node.id))
+  if (ids.size !== graph.nodes.length || graph.nodes.some((node) => !/^K\d{3,4}$/.test(node.id)) ||
+      graph.edges.some((edge) => edge.courtId !== null && !graph.courts.some((court) => court.id === edge.courtId)))
+    throw new Error('E_RETAINER_GRAPH_UNRESOLVED')
   const nodes = graph.courts.flatMap((court, courtIndex) => {
     const column = courtIndex % 3
     const row = Math.floor(courtIndex / 3)
@@ -43,6 +47,13 @@ export function layoutRetainerGraph(graph: typeof retainerGraph) {
       x: placed.reduce((sum, vassal) => sum + vassal.x, 0) / placed.length,
       y: Math.min(...placed.map((vassal) => vassal.y)) - 90 })
   }
+  const remaining = graph.nodes.filter((node) => !positioned.has(node.id))
+    .sort((a, b) => a.id.localeCompare(b.id))
+  const remainingBandY = Math.max(bottomBandY, ...[...positioned.values()].map((node) => node.y)) + 120
+  remaining.forEach((person, index) => {
+    positioned.set(person.id, { ...person,
+      x: 60 + (index % 5) * 160, y: remainingBandY + Math.floor(index / 5) * 60 })
+  })
   if (positioned.size !== graph.nodes.length ||
       graph.edges.some((edge) => !positioned.has(edge.fromPersonId) || !positioned.has(edge.toPersonId)))
     throw new Error('E_RETAINER_GRAPH_UNRESOLVED')
@@ -50,6 +61,10 @@ export function layoutRetainerGraph(graph: typeof retainerGraph) {
 }
 const nodes = layoutRetainerGraph(retainerGraph)
 const nodesById = new Map<string, (typeof nodes)[number]>(nodes.map((node) => [node.id, node]))
+const minX = Math.min(0, ...nodes.map((node) => node.x - 20))
+const minY = Math.min(-120, ...nodes.map((node) => node.y - 20))
+const maxX = Math.max(800, ...nodes.map((node) => node.x + 10 + node.name.length * 11 + 20))
+const maxY = Math.max(Math.ceil(retainerGraph.courts.length / 3) * 570 + 200, ...nodes.map((node) => node.y + 20))
 
 export function selectRetainerRelationships(personId: string, graph: typeof retainerGraph = retainerGraph) {
   const outgoing = graph.edges.find((edge) => edge.fromPersonId === personId && edge.courtId !== null)
@@ -92,7 +107,7 @@ export function RelationsGraphPage() {
       <svg
         role="img"
         aria-label="승인된 직속 가신 관계 그래프"
-        viewBox={`0 -120 800 ${Math.ceil(retainerGraph.courts.length / 3) * 570 + 320}`}
+        viewBox={`${minX} ${minY} ${maxX - minX} ${maxY - minY}`}
         style={{ width: '100%', height: 'auto', border: '1px solid var(--wiki-line)', borderRadius: '8px', background: 'var(--wiki-paper)' }}
       >
         {retainerGraph.edges.map((edge) => {

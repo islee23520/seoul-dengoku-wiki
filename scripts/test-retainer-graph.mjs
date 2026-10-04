@@ -41,12 +41,13 @@ test('generated court graph resolves approved direct retainers to actual detail 
   assert.equal(retainerGraph.nodes.length, expectedIds.size)
   assert.deepEqual(new Set(retainerGraph.nodes.map((node) => node.id)), expectedIds)
   assert.deepEqual(retainerGraph.courts, dataset.config.courts)
-  const courtEdges = retainerGraph.edges.filter((edge) => edge.courtId !== null)
-  const ownerLiegeEdges = retainerGraph.edges.filter((edge) => edge.courtId === null)
+  const courtEdges = retainerGraph.edges.filter((edge) => !('relationKind' in edge))
+  const ownerLiegeEdges = retainerGraph.edges.filter((edge) => 'relationKind' in edge)
+  const membershipById = new Map(dataset.config.courtMemberships.memberships.map(row => [row.personId, row.courtId]))
   assert.deepEqual(courtEdges, dataset.config.directRetainers.map(({ personId, liegePersonId, courtId }) =>
     ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })))
   assert.deepEqual(ownerLiegeEdges, dataset.config.ownerLieges.edges.map(({ personId, liegePersonId, relationKind, ownerTerm }) =>
-    ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: null, relationKind, ownerTerm })))
+    ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: membershipById.get(personId) ?? null, relationKind, ownerTerm })))
   for (const node of retainerGraph.nodes) {
     const registered = issued.get(node.id)
     assert.ok(registered, node.id)
@@ -79,6 +80,34 @@ test('generated court graph resolves approved direct retainers to actual detail 
   assert.ok(retainerGraph.nodes.some((node) => node.id === 'K222'))
   assert.ok(!retainerGraph.nodes.some((node) => node.id === 'K272'))
   assert.ok(!retainerGraph.edges.some((edge) => edge.fromPersonId === 'K068' && edge.courtId === null))
+  assert.equal(retainerGraph.edges.length, dataset.config.directRetainers.length + dataset.config.ownerLieges.edges.length)
+  assert.equal(new Set(retainerGraph.edges.map(edge => edge.fromPersonId)).size, retainerGraph.edges.length)
+  for (const [personId, ownerId] of [['K003', 'K001'], ['K004', 'K001'], ['K005', 'K009']]) {
+    assert.deepEqual(retainerGraph.edges.filter(edge => edge.fromPersonId === personId), [
+      { fromPersonId: personId, toPersonId: ownerId, courtId: `court:${ownerId}`, relationKind: 'direct-liege', ownerTerm: '직속 주군' },
+    ])
+  }
+  assert.deepEqual(retainerGraph.edges.filter(edge => edge.toPersonId === 'K003').map(edge => edge.fromPersonId),
+    ['K968', 'K440', 'K728', 'K488', 'K920', 'K536', 'K824', 'K776', 'K632', 'K872', 'K584', 'K680'])
+  assert.ok(!retainerGraph.edges.some(edge => edge.fromPersonId === 'K009'))
+})
+
+test('approved S02 owner lieges project exact person fields and preserve lower court edges', async () => {
+  for (const [ownerId, memberId] of [['K032', 'K041'], ['K037', 'K047'], ['K033', 'K049']]) {
+    assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === ownerId),
+      { fromPersonId: ownerId, toPersonId: 'K029', courtId: null, relationKind: 'direct-liege', ownerTerm: '직속 주군' })
+    assert.deepEqual(retainerGraph.edges.find((edge) => edge.fromPersonId === memberId),
+      { fromPersonId: memberId, toPersonId: ownerId, courtId: `court:${ownerId}` })
+    const node = retainerGraph.nodes.find((person) => person.id === ownerId)
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${node.detailRoute.split('/').at(-1)}.json`, import.meta.url), 'utf8'))
+    assert.equal(detail.gurps.id, ownerId)
+    assert.deepEqual(detail.directLiege, { personId: 'K029', name: '강민서', relationKind: 'direct-liege', ownerTerm: '직속 주군', effectiveYear: 2126 })
+    assert.equal(detail.court.id, `court:${ownerId}`)
+    assert.deepEqual(detail.court.members.map((person) => person.personId), [memberId])
+    const memberNode = retainerGraph.nodes.find((person) => person.id === memberId)
+    const memberDetail = JSON.parse(await readFile(new URL(`../public/person-details/${memberNode.detailRoute.split('/').at(-1)}.json`, import.meta.url), 'utf8'))
+    assert.deepEqual(memberDetail.directLiege, { personId: ownerId, name: node.name, courtId: `court:${ownerId}`, effectiveYear: 2126 })
+  }
 })
 
 test('coordinated wrong graph and generated catalog countries fail against values canon', async () => {

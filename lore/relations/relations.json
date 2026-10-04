@@ -13,7 +13,7 @@
   "ownerLieges": {
     "schema": "owner-liege-edges.v1",
     "effectiveYear": 2126,
-    "approvalRef": "소유자 답변 call_NVOyG7CkeMwdTvYlEprnTZe6, call_bu3kNUmfJ2AxASp8b2ZmsJOp (2026-10-02): 수문국 직속 주군: 한재목으로 확정 (Recommended); 태욱 가신 관계: 정서온 직속 가신 (Recommended); 두용의 직속 주군: 송재민 직속 가신 (Recommended)",
+    "approvalRef": "소유자 답변 call_NVOyG7CkeMwdTvYlEprnTZe6, call_bu3kNUmfJ2AxASp8b2ZmsJOp (2026-10-02): 수문국 직속 주군: 한재목으로 확정 (Recommended); 태욱 가신 관계: 정서온 직속 가신 (Recommended); 두용의 직속 주군: 송재민 직속 가신 (Recommended). call_Zi1qxjZ3zaaev00VD4Or0Q86 (2026-10-04): 박누리 주군: 한재목 K001 (Recommended); 최한결 주군: 유세진 K009 (Recommended)",
     "note": "소유자가 확정한 개인 간 주군 변이다. 다른 누구에게 토지 수여·지휘권·궁정·신분 변경을 만들지 않으며, 정보성 인간 결정 기록이므로 자동 승인 문턱을 두지 않는다. 한국어 정본 외 새 영어 번역은 작성하지 않는다.",
     "sourceBasis": [
       { "path": "lore/characters/Cast-State-01.json", "anchor": "인물-한재목-p1", "quote": "물 계약 가문들이 양평역 계약 회의에서 군주를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 군주 자리에 앉았다." },
@@ -27,7 +27,26 @@
       { "personId": "K060", "liegePersonId": "K1005", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" },
       { "personId": "K061", "liegePersonId": "K1005", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" },
       { "personId": "K062", "liegePersonId": "K1005", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" },
-      { "personId": "K233", "liegePersonId": "K222", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" }
+      { "personId": "K233", "liegePersonId": "K222", "relationKind": "direct-vassal", "ownerTerm": "직속 가신" },
+      { "personId": "K004", "liegePersonId": "K001", "relationKind": "direct-liege", "ownerTerm": "직속 주군" },
+      { "personId": "K005", "liegePersonId": "K009", "relationKind": "direct-liege", "ownerTerm": "직속 주군" },
+      { "personId": "K032", "liegePersonId": "K029", "relationKind": "direct-liege", "ownerTerm": "직속 주군" },
+      { "personId": "K037", "liegePersonId": "K029", "relationKind": "direct-liege", "ownerTerm": "직속 주군" },
+      { "personId": "K033", "liegePersonId": "K029", "relationKind": "direct-liege", "ownerTerm": "직속 주군" }
+    ]
+  },
+  "courtMemberships": {
+    "schema": "opening-court-memberships.v1",
+    "effectiveYear": 2126,
+    "note": "소유자가 확정한 궁정 소속만 기록한다. 직속 주군은 ownerLieges의 단일 간선을 참조하고, 기존 directRetainers의 지휘 표 행·소속은 그대로 유지한다.",
+    "courtApprovals": [
+      { "courtId": "court:K001", "approvalRef": "소유자 답변 call_Zi1qxjZ3zaaev00VD4Or0Q86 (2026-10-04): 김태운 court: court:K001 신설·김태운 소속 (Recommended)" },
+      { "courtId": "court:K009", "approvalRef": "소유자 답변 call_xT2PIiWmuvFB9tX6B8NIhFC3 (2026-10-04): 최한결 court: court:K009 신설·소속 승인 (Recommended)" }
+    ],
+    "memberships": [
+      { "personId": "K003", "courtId": "court:K001", "approvalRef": "call_Zi1qxjZ3zaaev00VD4Or0Q86" },
+      { "personId": "K004", "courtId": "court:K001", "approvalRef": "소유자 답변 call_xT2PIiWmuvFB9tX6B8NIhFC3 (2026-10-04): 박누리 court: court:K001 소속 승인 (Recommended)" },
+      { "personId": "K005", "courtId": "court:K009", "approvalRef": "call_xT2PIiWmuvFB9tX6B8NIhFC3" }
     ]
   },
   "courts": [
@@ -40,7 +59,9 @@
     { "id": "court:K058", "ownerPersonId": "K058", "stateId": "S03" },
     { "id": "court:K060", "ownerPersonId": "K060", "stateId": "S03" },
     { "id": "court:K061", "ownerPersonId": "K061", "stateId": "S03" },
-    { "id": "court:K062", "ownerPersonId": "K062", "stateId": "S03" }
+    { "id": "court:K062", "ownerPersonId": "K062", "stateId": "S03" },
+    { "id": "court:K001", "ownerPersonId": "K001", "stateId": "S01" },
+    { "id": "court:K009", "ownerPersonId": "K009", "stateId": "S01" }
   ],
   "directRetainers": [
     { "personId": "K904", "liegePersonId": "K002", "courtId": "court:K002", "sourceRow": 380 },

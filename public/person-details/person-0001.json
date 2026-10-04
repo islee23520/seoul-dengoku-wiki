@@ -194,6 +194,19 @@
     "Cast-State-01",
     "Core-Characters"
   ],
+  "court": {
+    "id": "court:K001",
+    "members": [
+      {
+        "personId": "K003",
+        "name": "김태운"
+      },
+      {
+        "personId": "K004",
+        "name": "박누리"
+      }
+    ]
+  },
   "relations": {
     "outgoing": [],
     "incoming": [

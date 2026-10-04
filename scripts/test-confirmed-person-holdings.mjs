@@ -1,8 +1,38 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
+import { validateOpeningDispositions } from './personal-holdings.mjs'
 
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
+
+test('only the three owner-approved opening dispositions distinguish personal landlessness from unknown', () => {
+  const ledger = read('../lore/relations/personal-holdings.json')
+  const people = read('../lore/name-pools/gurps-cast.json').people
+  assert.deepEqual(ledger.openingDispositions, ['K003', 'K004', 'K005'].map(personId => ({
+    personId, status: 'personal-landless',
+    approvalRef: 'owner:call_woKhJUVDwBZTeAyXJI9RXhGc:s01_holding_' + personId.toLowerCase(),
+  })))
+  const dispositions = validateOpeningDispositions(ledger, people)
+  for (const person of people) {
+    const detail = read('../public/person-details/' + person.url.split('/').at(-1) + '.json')
+    assert.deepEqual(detail.openingDisposition, dispositions.get(person.id))
+    assert.deepEqual(detail.territory, person.territory)
+    assert.deepEqual(detail.confirmedHoldings, ledger.holdings.filter(row => row.holderPersonId === person.id))
+  }
+  assert.equal(dispositions.has('K006'), false)
+  assert.deepEqual(read('../public/confirmed-person-holdings.json'), ledger)
+})
+
+test('opening disposition boundary rejects invalid people, duplicate decisions, and contradictory approved holdings', () => {
+  const ledger = read('../lore/relations/personal-holdings.json')
+  const people = read('../lore/name-pools/gurps-cast.json').people
+  const row = ledger.openingDispositions[0]
+  assert.throws(() => validateOpeningDispositions({ ...ledger, openingDispositions: [{ ...row, personId: 'K9999' }] }, people), /E_OPENING_DISPOSITION:K9999/)
+  assert.throws(() => validateOpeningDispositions({ ...ledger, openingDispositions: [row, row] }, people), /E_OPENING_DISPOSITION:K003/)
+  assert.throws(() => validateOpeningDispositions({ ...ledger, holdings: [...ledger.holdings, { holderPersonId: row.personId }] }, people), /E_OPENING_DISPOSITION_HOLDING:K003/)
+  assert.throws(() => validateOpeningDispositions({ ...ledger, openingDispositions: [{ ...row, approvalRef: '' }] }, people), /E_OPENING_DISPOSITION:K003/)
+  assert.throws(() => validateOpeningDispositions({ ...ledger, openingDispositions: [{ ...row, status: 'unknown' }] }, people), /E_OPENING_DISPOSITION:K003/)
+})
 
 test('Byeon Goun holds only the sourced Yeongdeungpo concourse under the existing direct liege', () => {
   const holding = read('../lore/relations/personal-holdings.json').holdings.find(row => row.holderPersonId === 'K017')
@@ -71,7 +101,7 @@ test('confirmed Yangcheon holding joins exact admin geometry and stays separate 
     assert.deepEqual(detail.confirmedHoldings, ledger.holdings.filter(row => row.holderPersonId === person.id))
   }
   const edges = read('../lore/relations/relations.json').ownerLieges.edges
-  assert.equal(edges.length, 8)
+  assert.equal(edges.length, 13)
   for (const edge of edges) {
     const person = source.find(row => row.id === edge.personId)
     const detail = read('../public/person-details/' + person.url.split('/').at(-1) + '.json')
