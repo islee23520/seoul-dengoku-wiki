@@ -13,6 +13,7 @@ import {
 } from './world-atlas-schema.mjs'
 import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { verifyAtlasPeople } from './world-atlas-verify.mjs'
+import { atlasPeopleContext } from './atlas-people-context.mjs'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
@@ -29,18 +30,14 @@ const source = parsed.value
 const atlas = source.data.atlas
 const projections = projectionsFromAtlas(source, sha256Text(sourceText))
 
-const context = {
-  registry: JSON.parse(await readFile(join(worktree, 'lore/name-pools/person-id-registry.json'), 'utf8')),
-  candidates: JSON.parse(await readFile(join(worktree, 'lore/name-pools/person-id-candidates.json'), 'utf8')),
-  people: JSON.parse(await readFile(join(worktree, 'lore/name-pools/values-cast.json'), 'utf8')).people,
-}
+const context = await atlasPeopleContext(join(worktree, 'lore'))
 
 test('JSON atlas parser owns WNA-001 data.atlas v2', () => {
   assert.equal(source.id, 'WNA-001')
   assert.equal(atlas.schema, ATLAS_SCHEMA)
   assert.equal(atlas.states.length, 16)
   assert.equal(atlas.humans.length, 422)
-  assert.deepEqual(Object.keys(atlas.unaffiliated), ['K1003', 'K1004', 'K1008', 'K1009', 'K1010', 'K1017', 'K1018', 'K1019', 'K1020', 'K1021', 'K1022'])
+  assert.equal(Object.keys(atlas.additional_people).length, 600)
 })
 
 for (const [name, mutate, code] of [
@@ -162,7 +159,7 @@ test('expansion projection links every unaffiliated ID to its actual person rout
   const table = projections['World-Expansion-Index.json'].content.find((node) => node.kind === 'table')
   for (const locale of ['en', 'ko']) {
     const links = table.rows.map((row) => row[1][locale].match(/\]\((\/people\/person-\d{4})\)$/u)?.[1])
-    assert.deepEqual(links, Object.keys(atlas.unaffiliated).map((id) => `/people/person-${id.slice(1).padStart(4, '0')}`), locale)
+    assert.deepEqual(links, Object.values(atlas.additional_people).map((person) => person.detail_route), locale)
   }
 })
 
@@ -202,17 +199,20 @@ test('canonical serialization sorts object keys recursively without reordering a
 
 test('people verifier preserves the frozen prefix and issued unaffiliated aliases', () => {
   assert.deepEqual(verifyAtlasPeople(atlas, context), {
-    failures: [], stateCount: 422, unaffiliatedCount: 11, total: 433,
+    failures: [], stateCount: 422, additionalCount: 600, total: 1022,
   })
   assert.deepEqual(atlas.humans.map(({ id, name }) => ({ id, name: name.ko })), context.candidates.existingK)
 })
 
 for (const [name, mutate, code] of [
-  ['missing collection', (value) => { delete value.unaffiliated }, 'E_UNAFFILIATED_COLLECTION'],
-  ['missing card', (value) => { delete value.unaffiliated.K1008 }, 'E_UNAFFILIATED_MISSING:'],
-  ['changed alias', (value) => { value.unaffiliated.K1003.character_id = 'K1003' }, 'E_UNAFFILIATED_CHARACTER_ID:'],
-  ['duplicate state ID', (value) => { value.unaffiliated.K001 = value.unaffiliated.K1008; delete value.unaffiliated.K1008 }, 'E_PERSON_DUPLICATE:'],
+  ['missing collection', (value) => { delete value.additional_people }, 'E_ADDITIONAL_COLLECTION'],
+  ['missing card', (value) => { delete value.additional_people.K1008 }, 'E_ADDITIONAL_MISSING:'],
+  ['changed alias', (value) => { value.additional_people.K1003.character_id = 'K1003' }, 'E_ADDITIONAL_CHARACTER_ID:'],
+  ['duplicate state ID', (value) => { value.additional_people.K001 = value.additional_people.K1008; delete value.additional_people.K1008 }, 'E_PERSON_DUPLICATE:'],
   ['seventeenth state', (value) => { value.states.push({ id: 'S00' }) }, 'E_ATLAS_STATES'],
+  ['wrong actual route', (value) => { value.additional_people.K423.detail_route = '/people/person-0001' }, 'E_ADDITIONAL_ROUTE:'],
+  ['wrong current country', (value) => { value.additional_people.K1018.national_state_id = 'S07' }, 'E_ADDITIONAL_COUNTRY:'],
+  ['missing ordinary state-ledger identity', (value) => { delete value.additional_people.K423 }, 'E_ADDITIONAL_MISSING:'],
   ['frozen prefix renamed', (value) => { value.humans[0].name.ko = 'changed' }, 'E_K_MAP:'],
 ]) {
   test(`people verifier rejects ${name}`, () => {

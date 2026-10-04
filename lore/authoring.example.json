@@ -61,7 +61,7 @@
       }
     ],
     "atlas": {
-      "schema": "world-narrative-atlas.v2",
+      "schema": "world-narrative-atlas.v3",
       "document": {
         "id": "__EXAMPLE__:document",
         "display_name": {"en": "Example atlas", "ko": "예시 아틀라스"},
@@ -97,7 +97,7 @@
       },
       "states": [],
       "humans": [],
-      "unaffiliated": {},
+      "additional_people": {},
       "houses": [],
       "theaters": [],
       "synthetics": [],

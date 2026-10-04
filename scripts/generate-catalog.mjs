@@ -6,6 +6,7 @@ import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
+import { atlasPeopleContext } from './atlas-people-context.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { publicHouseContent } from './public-house-content.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
@@ -185,10 +186,12 @@ await mkdir(publicRoot, { recursive: true })
 await rm(wikiAssetTarget, { recursive: true, force: true })
 
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
+const atlasPeople = await atlasPeopleContext(loreRoot)
 await materializeWorldAtlas({
   atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
   outDir: loreRoot,
   check: true,
+  peopleContext: atlasPeople,
 })
 const jsonPages = await walkLoreJson(loreRoot)
 const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot)).map(({ route }) => route))
@@ -915,7 +918,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const occupation = fields['생업'] ?? cards.map((card) => parseCardFields(card.body)['생업']).find(Boolean) ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const stateTiers = tiersByState.get(person.state)
   const tierIndex = stateTiers?.findIndex((ranks) => ranks.includes(rank)) ?? -1
-  const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
+  const commonTier = person.state === 'S00' || source === 'Cast-Unaffiliated' || source === 'Diaspora-Corridors' || /^품계 없음\./u.test(office) ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
   return {
     id: `person-${String(index + 1).padStart(4, '0')}`,
     name: person.name,
@@ -929,7 +932,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
     state: person.state,
     stateName: stateNameById.get(person.state) ?? person.state_name,
     sourceRoute: `/world/${source}#${anchor}`,
-    detailRoute: `/people/person-${String(index + 1).padStart(4, '0')}`,
+    detailRoute: [...atlasPeople.routes.values()].find((route) => route.name === person.name).detailRoute,
   }
 })
 const catalogByName = new Map(peopleCatalog.map((person) => [person.name, person]))

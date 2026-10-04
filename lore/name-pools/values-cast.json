@@ -31267,8 +31267,8 @@
       "name": "민웅기",
       "title": "통신 정비사",
       "stage": "S1",
-      "state": "S00",
-      "state_name": "무소속",
+      "state": "S02",
+      "state_name": "규격맹",
       "generation": "opening",
       "source": "proposal",
       "minors": false,
@@ -31299,8 +31299,8 @@
       "name": "신종목",
       "title": "귀환망 현장 계약자",
       "stage": "S1",
-      "state": "S00",
-      "state_name": "무소속",
+      "state": "S14",
+      "state_name": "아관사",
       "generation": "opening",
       "source": "proposal",
       "minors": false,
@@ -31331,8 +31331,8 @@
       "name": "신준",
       "title": "",
       "stage": "S1",
-      "state": "S00",
-      "state_name": "무소속",
+      "state": "S14",
+      "state_name": "아관사",
       "generation": "opening",
       "source": "proposal",
       "minors": true,
@@ -31360,32 +31360,32 @@
       "locked": false
     },
     {
-      "name": "린샤오메이", "title": "대림 이중장부 중개", "stage": "S4", "state": "S00", "state_name": "이주민 회랑", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "린샤오메이", "title": "대림 이중장부 중개", "stage": "S4", "state": "S02", "state_name": "규격맹", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -20, "개방": 40, "무력": -30, "물질": 30, "공동": 30, "원칙": 30, "공개": -20, "자격": 0, "분산": 50, "변혁": 30 },
       "desire": { "갈망": 30, "독점": -20, "위험": -20, "과시": -20, "지속": 40, "지향": "양성", "결합": null }, "locked": false
     },
     {
-      "name": "팜반득", "title": "야간 정비 조장", "stage": "S4", "state": "S00", "state_name": "이주민 회랑", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "팜반득", "title": "야간 정비 조장", "stage": "S4", "state": "S02", "state_name": "규격맹", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -10, "개방": 40, "무력": -20, "물질": 10, "공동": 50, "원칙": 40, "공개": 10, "자격": 30, "분산": 40, "변혁": 30 },
       "desire": { "갈망": 40, "독점": -20, "위험": -30, "과시": -20, "지속": 50, "지향": "이성", "결합": "계약동거" }, "locked": false
     },
     {
-      "name": "아미라 카심", "title": "다국어 통행증 판독", "stage": "S4", "state": "S00", "state_name": "이주민 회랑", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "아미라 카심", "title": "다국어 통행증 판독", "stage": "S4", "state": "S07", "state_name": "환적국", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": 0, "개방": 50, "무력": -30, "물질": 0, "공동": 20, "원칙": 40, "공개": 20, "자격": 0, "분산": 20, "변혁": 30 },
       "desire": { "갈망": 40, "독점": -20, "위험": -20, "과시": -10, "지속": 40, "지향": "양성", "결합": "단혼" }, "locked": false
     },
     {
-      "name": "조엘 박", "title": "창고 열람 통역", "stage": "S4", "state": "S00", "state_name": "이주민 회랑", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "조엘 박", "title": "창고 열람 통역", "stage": "S4", "state": "S07", "state_name": "환적국", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": 10, "개방": 10, "무력": -20, "물질": -10, "공동": 0, "원칙": 40, "공개": -40, "자격": 0, "분산": 0, "변혁": -20 },
       "desire": { "갈망": 50, "독점": 30, "위험": 0, "과시": -10, "지속": 20, "지향": "양성", "결합": "단혼" }, "locked": false
     },
     {
-      "name": "나르기즈 유수포바", "title": "두 말 피난 명부 전령", "stage": "S4", "state": "S00", "state_name": "이주민 회랑", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "나르기즈 유수포바", "title": "두 말 피난 명부 전령", "stage": "S4", "state": "S10", "state_name": "안국총림", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -20, "개방": 40, "무력": -30, "물질": -20, "공동": 40, "원칙": 40, "공개": 30, "자격": 0, "분산": 40, "변혁": 30 },
       "desire": { "갈망": 60, "독점": -10, "위험": 20, "과시": 20, "지속": 30, "지향": "이성", "결합": "단혼" }, "locked": false
     },
     {
-      "name": "최일석", "title": "동원 명부 서기", "stage": "S4", "state": "S00", "state_name": "동원잔존", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "최일석", "title": "동원 명부 서기", "stage": "S4", "state": "S06", "state_name": "대한민국정부", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": 30, "개방": -10, "무력": 10, "물질": -10, "공동": 20, "원칙": 50, "공개": -30, "자격": 20, "분산": 10, "변혁": -20 },
       "desire": { "갈망": 20, "독점": 10, "위험": -40, "과시": -30, "지속": 50, "지향": "이성", "결합": "계약동거" }, "locked": false
     },
@@ -31395,17 +31395,17 @@
       "desire": { "갈망": 40, "독점": 10, "위험": 30, "과시": -40, "지속": -20, "지향": null, "결합": null }, "locked": false
     },
     {
-      "name": "고예진", "title": "권역 간 계약 자문가", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "고예진", "title": "권역 간 계약 자문가", "stage": "S1", "state": "S16", "state_name": "정동노총", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -10, "개방": 40, "무력": -40, "물질": 60, "공동": -40, "원칙": 20, "공개": -60, "자격": 30, "분산": 50, "변혁": 20 },
       "desire": { "갈망": 50, "독점": 40, "위험": 60, "과시": -30, "지속": 20, "지향": "양성", "결합": "비독점" }, "locked": false
     },
     {
-      "name": "박성수", "title": "사본 관리인", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "박성수", "title": "사본 관리인", "stage": "S1", "state": "S06", "state_name": "대한민국정부", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": 10, "개방": 30, "무력": -40, "물질": -50, "공동": -10, "원칙": 60, "공개": 60, "자격": 10, "분산": -20, "변혁": 10 },
       "desire": { "갈망": 30, "독점": -30, "위험": -20, "과시": -50, "지속": 60, "지향": null, "결합": null }, "locked": false
     },
     {
-      "name": "한서경", "title": "계약 검토 담당", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "한서경", "title": "계약 검토 담당", "stage": "S1", "state": "S16", "state_name": "정동노총", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -10, "개방": 20, "무력": -40, "물질": 30, "공동": 10, "원칙": 50, "공개": 10, "자격": 40, "분산": 20, "변혁": 10 },
       "desire": { "갈망": 30, "독점": 10, "위험": -20, "과시": -30, "지속": 50, "지향": null, "결합": null }, "locked": false
     },
@@ -31415,7 +31415,7 @@
       "desire": { "갈망": 30, "독점": -20, "위험": -10, "과시": -20, "지속": 50, "지향": null, "결합": null }, "locked": false
     },
     {
-      "name": "문도현", "title": "환적·인계 상단주", "stage": "S1", "state": "S00", "state_name": "무소속", "generation": "opening", "source": "proposal", "minors": false,
+      "name": "문도현", "title": "환적·인계 상단주", "stage": "S1", "state": "S07", "state_name": "환적국", "generation": "opening", "source": "proposal", "minors": false,
       "values": { "권위": -20, "개방": 20, "무력": -30, "물질": 30, "공동": 30, "원칙": 40, "공개": 30, "자격": 30, "분산": 50, "변혁": 20 },
       "desire": { "갈망": 40, "독점": 10, "위험": -10, "과시": -20, "지속": 60, "지향": null, "결합": null }, "locked": false
     }

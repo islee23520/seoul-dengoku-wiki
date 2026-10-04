@@ -1,55 +1,35 @@
-import { ATLAS_SCHEMA, FROZEN_HUMAN_COUNT, STATES, UNAFFILIATED_FIELDS } from './world-atlas-schema.mjs'
-
-// The atlas covers a frozen state prefix plus all currently issued S00 people, not all cast cards.
-export function verifyAtlasPeople(atlas, { registry, candidates, people }) {
-  const failures = []
-  if (atlas.schema !== ATLAS_SCHEMA) failures.push('E_ATLAS_SCHEMA')
-  const stateIds = STATES.map((state) => state.id)
-  if (JSON.stringify(atlas.states?.map((state) => state.id)) !== JSON.stringify(stateIds)) failures.push('E_ATLAS_STATES')
-  if (!Array.isArray(atlas.humans) || atlas.humans.length !== FROZEN_HUMAN_COUNT) {
-    failures.push('E_K_MAP')
-    return { failures, stateCount: 0, unaffiliatedCount: 0, total: 0 }
-  }
-  for (const [index, human] of atlas.humans.entries()) {
-    const frozen = candidates.existingK[index]
-    if (!frozen || human.id !== frozen.id || human.name?.ko !== frozen.name || !stateIds.includes(human.state_id)) failures.push('E_K_MAP:' + human.id)
-  }
-  const collection = atlas.unaffiliated
-  if (!collection || typeof collection !== 'object' || Array.isArray(collection)) {
-    failures.push('E_UNAFFILIATED_COLLECTION')
-    return { failures, stateCount: atlas.humans.length, unaffiliatedCount: 0, total: atlas.humans.length }
-  }
-  const issued = new Map(registry.persons.map((person) => [person.id, person]))
-  // Corridor cards are issued S00 people but are not members of the atlas's unaffiliated registry.
-  const corridorNames = new Set(['린샤오메이', '팜반득', '아미라 카심', '조엘 박', '나르기즈 유수포바', '최일석'])
-  const expected = people.filter((person) => person.state === 'S00' && !corridorNames.has(person.name))
-  const ids = new Set(atlas.humans.map((human) => human.id))
-  const characterIds = new Set()
-  for (const [id, person] of Object.entries(collection)) {
-    if (!person || typeof person !== 'object' || Array.isArray(person) ||
-        Object.keys(person).some((field) => !UNAFFILIATED_FIELDS.includes(field)) ||
-        typeof person.name?.ko !== 'string' || !person.name.ko.trim() ||
-        typeof person.character_id !== 'string' || !person.character_id.trim()) {
-      failures.push('E_UNAFFILIATED_FIELDS:' + id)
-      continue
-    }
-    if (ids.has(id) || characterIds.has(person.character_id)) failures.push('E_PERSON_DUPLICATE:' + id)
-    ids.add(id)
-    characterIds.add(person.character_id)
-    const entry = issued.get(id)
-    if (!entry || entry.name !== person.name?.ko) failures.push('E_UNAFFILIATED_ISSUED_ID:' + id)
-    else if (person.character_id !== (entry.aliases?.[0] ?? entry.id)) failures.push('E_UNAFFILIATED_CHARACTER_ID:' + id)
-    const personIndex = Number(id.slice(1)) - 1
-    const castPerson = people[personIndex]
-    if (!castPerson || castPerson.state !== 'S00') failures.push('E_UNAFFILIATED_MEMBERSHIP:' + id)
-    if (!castPerson || castPerson.name !== person.name?.ko) failures.push('E_UNAFFILIATED_ROUTE:' + id)
-  }
-  for (const [index, person] of people.entries()) {
-    if (person.state === 'S00' && !corridorNames.has(person.name) && !collection[`K${String(index + 1).padStart(3, '0')}`]) failures.push('E_UNAFFILIATED_MISSING:' + person.name)
-  }
-  const stateCount = atlas.humans.length
-  const unaffiliatedCount = Object.keys(collection).length
-  const total = stateCount + unaffiliatedCount
-  if (total !== FROZEN_HUMAN_COUNT + expected.length || ids.size !== total) failures.push('E_HUMAN_TOTAL')
-  return { failures, stateCount, unaffiliatedCount, total }
+import { ATLAS_SCHEMA, FROZEN_HUMAN_COUNT, STATES, ADDITIONAL_PERSON_FIELDS } from './world-atlas-schema.mjs'
+export function verifyAtlasPeople(atlas, { registry, candidates, people, routes }) {
+ const failures = []
+ if (atlas.schema !== ATLAS_SCHEMA) failures.push('E_ATLAS_SCHEMA')
+ const stateIds = STATES.map(p => p.id)
+ if (JSON.stringify(atlas.states?.map(p => p.id)) !== JSON.stringify(stateIds)) failures.push('E_ATLAS_STATES')
+ if (!Array.isArray(atlas.humans) || atlas.humans.length !== FROZEN_HUMAN_COUNT) return { failures: [...failures, 'E_K_MAP'], stateCount: 0, additionalCount: 0, total: 0 }
+ for (const [index, human] of atlas.humans.entries()) {
+  const frozen = candidates.existingK[index]
+  if (!frozen || human.id !== frozen.id || human.name?.ko !== frozen.name || !stateIds.includes(human.state_id)) failures.push('E_K_MAP:' + human.id)
+ }
+ const frozenIds = new Set(atlas.humans.map(p => p.id))
+ const issued = new Map(registry.persons.map(p => [p.id, p]))
+ const values = new Map(people.map(p => [p.name, p]))
+ if (values.size !== people.length || issued.size !== registry.persons.length) failures.push('E_PERSON_DUPLICATE')
+ const expected = registry.persons.filter(p => !frozenIds.has(p.id))
+ const collection = atlas.additional_people
+ if (!collection || typeof collection !== 'object' || Array.isArray(collection)) return { failures: [...failures, 'E_ADDITIONAL_COLLECTION'], stateCount: atlas.humans.length, additionalCount: 0, total: atlas.humans.length }
+ const aliases = new Set(), paths = new Set()
+ for (const [id, person] of Object.entries(collection)) {
+  const entry = issued.get(id), value = entry && values.get(entry.name), route = routes?.get(id)
+  if (frozenIds.has(id) || aliases.has(person.character_id) || paths.has(person.detail_route)) failures.push('E_PERSON_DUPLICATE:' + id)
+  aliases.add(person.character_id); paths.add(person.detail_route)
+  if (Object.keys(person).some(k => !ADDITIONAL_PERSON_FIELDS.includes(k)) || !person.name?.ko || !person.character_id) failures.push('E_ADDITIONAL_FIELDS:' + id)
+  if (!entry || person.name.ko !== entry.name) failures.push('E_ADDITIONAL_IDENTITY:' + id)
+  if (person.character_id !== (entry?.aliases?.[0] ?? entry?.id)) failures.push('E_ADDITIONAL_CHARACTER_ID:' + id)
+  if (!route || route.name !== entry?.name || person.detail_route !== route.detailRoute) failures.push('E_ADDITIONAL_ROUTE:' + id)
+  const country = value?.state === 'S00' ? null : value?.state
+  if (!value || person.national_state_id !== country || (country !== null && !stateIds.includes(country))) failures.push('E_ADDITIONAL_COUNTRY:' + id)
+ }
+ for (const entry of expected) if (!collection[entry.id]) failures.push('E_ADDITIONAL_MISSING:' + entry.id)
+ const additionalCount = Object.keys(collection).length, total = atlas.humans.length + additionalCount
+ if (additionalCount !== expected.length || total !== registry.persons.length) failures.push('E_HUMAN_TOTAL')
+ return { failures, stateCount: atlas.humans.length, additionalCount, total }
 }

@@ -5,6 +5,8 @@ import { fileURLToPath } from 'node:url'
 import { parseWorldAtlas, sha256Text } from './world-atlas-parse.mjs'
 import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { PROJECTION_PATHS, PROJECTION_PATH_SET, canonicalJson } from './world-atlas-schema.mjs'
+import { atlasPeopleContext } from './atlas-people-context.mjs'
+import { verifyAtlasPeople } from './world-atlas-verify.mjs'
 
 const atlasGeneratedName = /^(?:Operating-Houses|Regional-Physical-AI-Arcs|Synthetic-Actors|World-Expansion-Index|World-Relation-Ledger|External-Theaters|Hostile-Ecology-Index|Hostile-Group-G\d{2}|Unexpected-Atlas|Monster-Batch-.+|Story-Batch-.+|(?:Monster|Story)-Batch-Manifest)\.(?:json|md)$/u
 
@@ -67,11 +69,14 @@ async function writeOutputs(outDir, expected, selected) {
   }
 }
 
-export async function materializeWorldAtlas({ atlasPath, outDir, projection, check = false }) {
+export async function materializeWorldAtlas({ atlasPath, outDir, projection, check = false, peopleContext }) {
   if (projection && !PROJECTION_PATH_SET.has(projection)) throw new Error(`E_PROJECTION_NAME:${projection}`)
   const text = await readFile(atlasPath, 'utf8')
   const parsed = parseWorldAtlas(text)
   if (!parsed.ok) throw new Error(parsed.error)
+  const context = peopleContext ?? await atlasPeopleContext(dirname(atlasPath))
+  const { failures } = verifyAtlasPeople(parsed.value.data.atlas, context)
+  if (failures.length) throw new Error(failures.join('\n'))
   const atlasHash = sha256Text(text)
   const expected = expectedOutputs(parsed.value, atlasHash)
   if (check) await checkOutputs(outDir, expected, projection)

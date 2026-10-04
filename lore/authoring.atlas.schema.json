@@ -375,21 +375,21 @@
       "type": "object", "required": ["id", "summary", "owner"],
       "properties": {"id": {"type": "string", "pattern": "^(?:CL-[0-9]{4}|__EXAMPLE__:change)$"}, "summary": {"$ref": "#/$defs/localized"}, "owner": {"type": "string", "minLength": 1}}, "additionalProperties": false
     },
-    "unaffiliated": {
-      "type": "object", "required": ["name", "character_id"],
-      "properties": {"name": {"$ref": "#/$defs/localized"}, "character_id": {"type": "string", "minLength": 1}}, "additionalProperties": false
+    "additional_people": {
+      "type": "object", "required": ["name", "character_id", "detail_route", "national_state_id"],
+      "properties": {"name": {"type": "object", "required": ["ko"], "properties": {"ko": {"type": "string", "minLength": 1}, "en": {"type": "string", "minLength": 1}}, "additionalProperties": false}, "character_id": {"type": "string", "minLength": 1}, "detail_route": {"type": "string", "pattern": "^/people/person-[0-9]{4}$"}, "national_state_id": {"oneOf": [{"$ref": "#/$defs/stateId"}, {"type": "null"}]}}, "additionalProperties": false
     },
     "atlas": {
       "type": "object",
-      "required": ["schema", "document", "writing_contract", "projection_pages", "states", "humans", "unaffiliated", "houses", "theaters", "synthetics", "hostile_groups", "monster_batches", "monster_contents", "arcs", "relations", "change_ledger"],
+      "required": ["schema", "document", "writing_contract", "projection_pages", "states", "humans", "additional_people", "houses", "theaters", "synthetics", "hostile_groups", "monster_batches", "monster_contents", "arcs", "relations", "change_ledger"],
       "properties": {
-        "schema": {"const": "world-narrative-atlas.v2"},
+        "schema": {"const": "world-narrative-atlas.v3"},
         "document": {"$ref": "#/$defs/document"},
         "writing_contract": {"$ref": "#/$defs/writingContract"},
         "projection_pages": {"type": "object", "patternProperties": {"^[A-Za-z0-9_][A-Za-z0-9_/-]*$": {"$ref": "#/$defs/projectionPage"}}, "additionalProperties": false},
         "states": {"type": "array", "items": {"$ref": "#/$defs/state"}},
         "humans": {"type": "array", "items": {"$ref": "#/$defs/human"}},
-        "unaffiliated": {"type": "object", "patternProperties": {"^(?:__EXAMPLE__:unaffiliated|K[0-9]{4})$": {"$ref": "#/$defs/unaffiliated"}}, "additionalProperties": false},
+        "additional_people": {"type": "object", "patternProperties": {"^(?:__EXAMPLE__:additional_people|K[0-9]{3,4})$": {"$ref": "#/$defs/additional_people"}}, "additionalProperties": false},
         "houses": {"type": "array", "items": {"$ref": "#/$defs/house"}},
         "theaters": {"type": "array", "items": {"$ref": "#/$defs/theater"}},
         "synthetics": {"type": "array", "items": {"$ref": "#/$defs/synthetic"}},

@@ -37,9 +37,9 @@ const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
-  approvedAt: "2026-10-01",
-  ownerRef: "사용자 최종 입력 승인: K1018 고예진 개명과 한서경·차유선·문도현 추가",
-  inputSha256: "1d5702c905da6e046fe742dea30ee55a0abe1167d8370a302265d518ab723c7a",
+  approvedAt: "2026-10-04",
+  ownerRef: "toolu_0146TKjuCMBgMQSEcvmBimD3: 열세 인물 국가 소속 전체 입력 해시 승인",
+  inputSha256: "369a7bc6a84e65438067e624e83fdc3d937cf086e9bb5a6dcad2b3223cde6571",
   candidatesSha256: "e99786ced7dcece5e6b7b050034511c1bdda47fbd08d323a07fef8e01a5f01cc",
 };
 export const FROZEN = { existingK: 422, issued: 600, total: 1022 };
