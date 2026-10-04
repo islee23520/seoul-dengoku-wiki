@@ -5,6 +5,8 @@ import { readdir, readFile } from 'node:fs/promises'
 import { dirname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { portraitReviewFailures, generationEvidencePaths, publicPortraitStringFailures } from './portrait-public-boundary.mjs'
+
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const dispositions = new Set(['page', 'article', 'legacy-redirect', 'fallback-home'])
 
@@ -33,6 +35,13 @@ export async function artifactFailures({ distRoot, allowlist, appSource }) {
 
   for (const file of files) {
     const [top, ...rest] = file.split('/')
+    if (file.endsWith('.json')) {
+      const value = JSON.parse(await readFile(resolve(distRoot, file), 'utf8'))
+      const leaks = generationEvidencePaths(value)
+      if (top === 'portrait-reviews') leaks.push(...portraitReviewFailures(value))
+      if (top === 'portrait-tokens') leaks.push(...publicPortraitStringFailures(value, 'token'))
+      if (leaks.length) failures.push(`E_ARTIFACT_PORTRAIT_EVIDENCE: ${file} ${[...new Set(leaks)].join(', ')}`)
+    }
     const name = rest.join('/')
     if (!rest.length) {
       if (!rootFiles.has(file)) failures.push(`E_ARTIFACT_UNLISTED: ${file}`)
