@@ -56,4 +56,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the CI details.
 
 ## License
 
-[소프트웨어 MIT 허락과 위키 소유 콘텐츠의 별도 이용 조건](LICENSE.md). 외부 자료와 기여자 권리는 해당 문서의 적용 범위를 확인하세요.
+[소프트웨어 MIT 허락과 위키 소유 콘텐츠의 별도 이용 조건](LICENSE). 외부 자료와 기여자 권리는 해당 문서의 적용 범위를 확인하세요.
