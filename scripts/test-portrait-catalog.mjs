@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
+import { portraitReviewFailures, generationEvidencePaths } from './portrait-public-boundary.mjs'
 
 test('approved selection binds registered identities and prior image hashes', async () => {
   const selection = JSON.parse(await readFile(new URL('../portrait-approved-selection.json', import.meta.url), 'utf8'))
@@ -17,7 +18,7 @@ test('approved selection binds registered identities and prior image hashes', as
     assert.equal(selection.status === 'approved-selection-applied-to-worktree' ? row.imageSha256 : row.previousImageSha256, entry.imageSha256)
     assert.match(row.imageSha256, /^[a-f0-9]{64}$/)
     assert.equal(row.verdict, 'pass')
-    assert.equal(row.operation === 'preserve-existing', row.imageSha256 === row.previousImageSha256)
+    if (row.operation !== 'register-approved') assert.equal(row.operation === 'preserve-existing', row.imageSha256 === row.previousImageSha256)
   }
   assert.equal(selection.canonPromotion, false)
   assert.equal(selection.final3dPortraitContractSatisfied, false)
@@ -53,28 +54,14 @@ test('portrait properties and immutable images follow the registered portrait ca
       assert.equal(review.characterId, token.characterId)
       assert.equal(review.imageSha256, token.image.sha256)
       assert.equal(token.imageReview.imageSha256, token.image.sha256)
+      assert.deepEqual(portraitReviewFailures(review), [])
+      assert.deepEqual(generationEvidencePaths(review), [])
       if (review.imageModification) {
         assert.equal(review.imageModification.outputSha256, token.image.sha256)
-        assert.equal(review.imageModification.inputSha256, review.previousImageReview.imageSha256)
+        assert.equal(review.imageModification.inputSha256, review.imageHashHistory[0])
         assert.ok(['localized-alpha-edit', 'body-improvement'].includes(review.imageModification.operation))
         assert.equal(review.ownerVerdict.verdict, 'pass')
-        if (review.imageModification.operation === 'body-improvement') {
-          assert.equal(review.imageModification.generationReceiptAvailable, true)
-          assert.equal(review.generationReceipt.imageSha256, token.image.sha256)
-          assert.equal(review.generationReceipt.request.references[0].sha256, review.imageModification.inputSha256)
-          assert.equal(review.generationReceipt.status, 'candidate-unreviewed')
-          assert.deepEqual(review.generationRequest, review.generationReceipt.request)
-        } else {
-          assert.equal(review.imageModification.generationReceiptAvailable, false)
-          assert.equal(review.generationReceipt, undefined)
-          assert.equal(review.generationRequest, undefined)
-        }
-      } else {
-        assert.equal(review.generationReceipt.imageSha256, token.image.sha256)
-        assert.deepEqual(review.generationRequest, review.generationReceipt.request)
-        if (token.style.generationReferenceSha256) {
-          assert.equal(token.style.generationReferenceSha256, review.generationRequest.references[0].sha256)
-        }
+        assert.equal(review.imageModification.generationReceiptAvailable, review.imageModification.operation === 'body-improvement')
       }
       assert.equal(review.canonPromotion, false)
       assert.equal(review.final3dPortraitContractSatisfied, false)
@@ -84,7 +71,7 @@ test('portrait properties and immutable images follow the registered portrait ca
     assert.equal(token.facts.gender, gender.gender)
     assert.equal(token.facts.genderUserLocked, gender.user_locked)
     assert.equal(token.style.portraitShotId, 'medium-close-up-119')
-    if (selectedIds.has(entry.personId)) {
+    if (selectedIds.has(entry.personId) && selection.records.find(row => row.personId === entry.personId).operation !== 'register-approved') {
       assert.equal(token.style.styleId, 'owner-gender-reference-20261002')
     }
     for (const key of ['face', 'hair', 'upper']) assert.equal(properties.entries[entry.personId][key], token.artProposal[key])

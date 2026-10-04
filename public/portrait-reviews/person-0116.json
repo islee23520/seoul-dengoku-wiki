@@ -3,116 +3,13 @@
   "personId": "person-0116",
   "characterId": "K115",
   "imageSha256": "8ba622a5e8b2a1ac3521168bfe142ee501ca67806e06dc5000b0edd046ea4e65",
-  "ownerVerdict": {
-    "verdict": "pass",
-    "note": "",
-    "updatedAt": "2026-10-02T13:23:58.412109+00:00"
-  },
-  "generationRequest": {
-    "schemaVersion": 1,
-    "model": "gpt-image-2.5",
-    "prompt": "Edit the supplied illustration into a different individual, preserving its exact painting technique AND shared camera setup. Keep its eye-line height, face-center position, head scale, camera perspective and right-facing head and torso rotation. Replace the face, hairstyle, body proportions, clothes and accessories ONLY with the authored recipient slots below. Do not copy the reference person identity, baldness, face or black shirt. Repaint changed parts with the same economical thin warm contours, smooth matte skin and understated shading; garments are broad matte fills, not textured realistic jackets. No added strand networks, stitching, decorative hardware or stubble. A no-beard slot means completely clean-shaven cheeks, jaw and upper lip. Maintain a visibly right-turned chest and asymmetric shoulders, never a frontal chest under a turned head. Full crown and both shoulders inside frame with plain background above all hair and accessories. Identity: Korean adult, male. Recipient slots: face.description: weathered face, resolute expression; face.faceShape: angular oval with a broad jaw; face.eyeColor: dark brown; face.eyeShape: almond-shaped, slightly hooded; face.eyebrowShape: thick, mostly straight with a slight arch; face.lipColor: muted tan-pink; face.mouthShape: closed, nearly straight with slightly downturned corners; face.noseShape: broad bridge, rounded tip, wide nostrils; face.beardShape: clean-shaven; hair.description: short-cropped black hair; hair.shape: thick, textured, slightly tousled, swept forward; hair.color: black; hair.length: short; body.build: broad-shouldered, sturdy; outfit.upper: dark blue-gray work jacket without rank insignia. Preserve every individual accessory and the authored body, including bust size. No text, labels, watermark or collage. Reference supplies method and shared camera, not recipient anatomy or garments. IMAGE1 is the sole DRAWING TECHNIQUE reference. IMAGE2 is CAMERA AND POSTURE ONLY: preserve its right-facing head/chest rotation, eye line, head scale and empty crown margin. Never copy IMAGE2 face, hair, clothes or its denser linework. Apply recipient slots and IMAGE1 painting method to IMAGE2 shared posture. Locked series camera: eye-level three-quarter medium close-up; identical camera elevation, azimuth, lens perspective, camera-to-subject distance, zoom and image-plane depth for every recipient. Full head, complete hair crown, both shoulders and upper chest visible. Keep the same face-center position, eye-line height, head-to-frame scale, crown background margin and chest-level bottom crop across the series. Do not move the camera, zoom or crop to suit a face, hairstyle, body, clothing or accessory; keep larger hair and ornaments inside the common framing without resizing the head. Locked series posture: upright neutral still pose, straight spine, level relaxed shoulders, no lean, head tilt, chin lift or chin tuck. Head, neck, shoulders and torso rotate together by the same fixed slight three-quarter turn toward viewer's right; the nose points toward the right image edge. Never combine a turned head with a frontal torso, turn only the neck, reverse direction, or vary the turn between recipients. Eyes look toward the camera with the same neutral gaze direction. Preserve individual facial and body geometry; no gesture or character-specific action.",
-    "size": "1024x1536",
-    "n": 1,
-    "references": [
-      {
-        "index": 1,
-        "role": "style-only",
-        "sha256": "fd0b1abddc5bd11d3436bfa758776fc060ef4036ab66a85f1e75e63431730d7c"
-      },
-      {
-        "index": 2,
-        "role": "identity-only",
-        "sha256": "b46753dc51963f81fd01083db0417a07106fa1111288548e9d7e5939c0e80bfc"
-      }
-    ]
-  },
-  "generationReceipt": {
-    "request": {
-      "schemaVersion": 1,
-      "model": "gpt-image-2.5",
-      "prompt": "Edit the supplied illustration into a different individual, preserving its exact painting technique AND shared camera setup. Keep its eye-line height, face-center position, head scale, camera perspective and right-facing head and torso rotation. Replace the face, hairstyle, body proportions, clothes and accessories ONLY with the authored recipient slots below. Do not copy the reference person identity, baldness, face or black shirt. Repaint changed parts with the same economical thin warm contours, smooth matte skin and understated shading; garments are broad matte fills, not textured realistic jackets. No added strand networks, stitching, decorative hardware or stubble. A no-beard slot means completely clean-shaven cheeks, jaw and upper lip. Maintain a visibly right-turned chest and asymmetric shoulders, never a frontal chest under a turned head. Full crown and both shoulders inside frame with plain background above all hair and accessories. Identity: Korean adult, male. Recipient slots: face.description: weathered face, resolute expression; face.faceShape: angular oval with a broad jaw; face.eyeColor: dark brown; face.eyeShape: almond-shaped, slightly hooded; face.eyebrowShape: thick, mostly straight with a slight arch; face.lipColor: muted tan-pink; face.mouthShape: closed, nearly straight with slightly downturned corners; face.noseShape: broad bridge, rounded tip, wide nostrils; face.beardShape: clean-shaven; hair.description: short-cropped black hair; hair.shape: thick, textured, slightly tousled, swept forward; hair.color: black; hair.length: short; body.build: broad-shouldered, sturdy; outfit.upper: dark blue-gray work jacket without rank insignia. Preserve every individual accessory and the authored body, including bust size. No text, labels, watermark or collage. Reference supplies method and shared camera, not recipient anatomy or garments. IMAGE1 is the sole DRAWING TECHNIQUE reference. IMAGE2 is CAMERA AND POSTURE ONLY: preserve its right-facing head/chest rotation, eye line, head scale and empty crown margin. Never copy IMAGE2 face, hair, clothes or its denser linework. Apply recipient slots and IMAGE1 painting method to IMAGE2 shared posture. Locked series camera: eye-level three-quarter medium close-up; identical camera elevation, azimuth, lens perspective, camera-to-subject distance, zoom and image-plane depth for every recipient. Full head, complete hair crown, both shoulders and upper chest visible. Keep the same face-center position, eye-line height, head-to-frame scale, crown background margin and chest-level bottom crop across the series. Do not move the camera, zoom or crop to suit a face, hairstyle, body, clothing or accessory; keep larger hair and ornaments inside the common framing without resizing the head. Locked series posture: upright neutral still pose, straight spine, level relaxed shoulders, no lean, head tilt, chin lift or chin tuck. Head, neck, shoulders and torso rotate together by the same fixed slight three-quarter turn toward viewer's right; the nose points toward the right image edge. Never combine a turned head with a frontal torso, turn only the neck, reverse direction, or vary the turn between recipients. Eyes look toward the camera with the same neutral gaze direction. Preserve individual facial and body geometry; no gesture or character-specific action.",
-      "size": "1024x1536",
-      "n": 1,
-      "references": [
-        {
-          "index": 1,
-          "role": "style-only",
-          "sha256": "fd0b1abddc5bd11d3436bfa758776fc060ef4036ab66a85f1e75e63431730d7c"
-        },
-        {
-          "index": 2,
-          "role": "identity-only",
-          "sha256": "b46753dc51963f81fd01083db0417a07106fa1111288548e9d7e5939c0e80bfc"
-        }
-      ]
-    },
-    "imageSha256": "8ba622a5e8b2a1ac3521168bfe142ee501ca67806e06dc5000b0edd046ea4e65",
-    "status": "owner-accepted-exact-image",
-    "generatedSourceSha256": "d48e5e80fa8c53cf7b80c50e000c8abc25d8cdea3cdcaeda73625a3d5c5a121f"
-  },
-  "transparency": {
-    "method": "foreground preserving local alpha mask",
-    "sourceImageSha256": "d48e5e80fa8c53cf7b80c50e000c8abc25d8cdea3cdcaeda73625a3d5c5a121f",
-    "outputImageSha256": "8ba622a5e8b2a1ac3521168bfe142ee501ca67806e06dc5000b0edd046ea4e65"
-  },
   "canonPromotion": false,
   "final3dPortraitContractSatisfied": false,
   "technology": "2d-image",
-  "previousImageReview": {
-    "schemaVersion": 1,
-    "personId": "person-0116",
-    "characterId": "K115",
-    "imageSha256": "f13e849a02c8a7bfc2e5648dcfc3a86d3750c68d787784f84d0365635cfd81d7",
-    "ownerVerdict": {
-      "verdict": "pending",
-      "scope": "exact candidate image only"
-    },
-    "generationRequest": {
-      "schemaVersion": 1,
-      "model": "gpt-image-2.5",
-      "prompt": "Image 1 is STYLE ONLY. Image 2 is ORIGINAL CHARACTER IDENTITY: preserve face, hair and costume as authored. Never copy image 1 identity. No writing or labels within image. Exactly one person, one portrait view only. No comparison sheet, duplicate figure, inset or multi-view layout. Preserve authored outfit details on their anatomically correct surfaces from the original identity image. Frame only full head, shoulders and upper chest. Original 2D character illustration. Exactly one person. Authored ethnicity and origin are independent of drawing technique. Dongbangsa commander identity.ethnicity: Korean; identity.origin: Korean; identity.gender: male; identity.ageCategory: adult face.description: weathered face, resolute expression; face.faceShape: angular oval with a broad jaw; face.eyeColor: dark brown; face.eyeShape: almond-shaped, slightly hooded; face.eyebrowShape: thick, mostly straight with a slight arch; face.lipColor: muted tan-pink; face.mouthShape: closed, nearly straight with slightly downturned corners; face.noseShape: broad bridge, rounded tip, wide nostrils; face.beardShape: clean-shaven; hair.description: short-cropped black hair; hair.shape: thick, textured, slightly tousled, swept forward; hair.color: black; hair.length: short; body.build: broad-shouldered, sturdy; outfit.upper: dark blue-gray work jacket without rank insignia eye-level three-quarter medium close-up; full head, both shoulders and upper chest visible; upright, fixed scale upright neutral still pose, level shoulders, head and torso turned toward viewer's right, no head tilt, no gestures Selected reference is drawing TECHNIQUE ONLY: linework, color treatment and shading. Never copy reference identity, face, body, hair, clothes, accessories, camera or pose. The explicit neutral slots and locked camera/pose ALWAYS override conflicting reference details, including direction. Never match reference direction. Fit clothing to the recipient body; clothing does not change body build, bust size, weight or height. Slot descriptions denote shapes, colors, materials and mounting, not donor identity or gender. Do not invent unspecified properties. No text, labels or watermark. Explicit slots and recipient body override every reference; reference technique ONLY never determines camera or pose direction.",
-      "size": "1024x1536",
-      "n": 1,
-      "references": [
-        {
-          "index": 1,
-          "role": "style-only",
-          "sha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28"
-        },
-        {
-          "index": 2,
-          "role": "identity-only",
-          "sha256": "783080be4b9b4d91457ff38045c4620aadbd94f66dbf6d87ceb701bc2fffcd42"
-        }
-      ]
-    },
-    "generationReceipt": {
-      "request": {
-        "schemaVersion": 1,
-        "model": "gpt-image-2.5",
-        "prompt": "Image 1 is STYLE ONLY. Image 2 is ORIGINAL CHARACTER IDENTITY: preserve face, hair and costume as authored. Never copy image 1 identity. No writing or labels within image. Exactly one person, one portrait view only. No comparison sheet, duplicate figure, inset or multi-view layout. Preserve authored outfit details on their anatomically correct surfaces from the original identity image. Frame only full head, shoulders and upper chest. Original 2D character illustration. Exactly one person. Authored ethnicity and origin are independent of drawing technique. Dongbangsa commander identity.ethnicity: Korean; identity.origin: Korean; identity.gender: male; identity.ageCategory: adult face.description: weathered face, resolute expression; face.faceShape: angular oval with a broad jaw; face.eyeColor: dark brown; face.eyeShape: almond-shaped, slightly hooded; face.eyebrowShape: thick, mostly straight with a slight arch; face.lipColor: muted tan-pink; face.mouthShape: closed, nearly straight with slightly downturned corners; face.noseShape: broad bridge, rounded tip, wide nostrils; face.beardShape: clean-shaven; hair.description: short-cropped black hair; hair.shape: thick, textured, slightly tousled, swept forward; hair.color: black; hair.length: short; body.build: broad-shouldered, sturdy; outfit.upper: dark blue-gray work jacket without rank insignia eye-level three-quarter medium close-up; full head, both shoulders and upper chest visible; upright, fixed scale upright neutral still pose, level shoulders, head and torso turned toward viewer's right, no head tilt, no gestures Selected reference is drawing TECHNIQUE ONLY: linework, color treatment and shading. Never copy reference identity, face, body, hair, clothes, accessories, camera or pose. The explicit neutral slots and locked camera/pose ALWAYS override conflicting reference details, including direction. Never match reference direction. Fit clothing to the recipient body; clothing does not change body build, bust size, weight or height. Slot descriptions denote shapes, colors, materials and mounting, not donor identity or gender. Do not invent unspecified properties. No text, labels or watermark. Explicit slots and recipient body override every reference; reference technique ONLY never determines camera or pose direction.",
-        "size": "1024x1536",
-        "n": 1,
-        "references": [
-          {
-            "index": 1,
-            "role": "style-only",
-            "sha256": "ee65e79ae227c628ac22f4b3b591015a5b21408f1464b8ff0a6f5a6d5b918e28"
-          },
-          {
-            "index": 2,
-            "role": "identity-only",
-            "sha256": "783080be4b9b4d91457ff38045c4620aadbd94f66dbf6d87ceb701bc2fffcd42"
-          }
-        ]
-      },
-      "imageSha256": "f13e849a02c8a7bfc2e5648dcfc3a86d3750c68d787784f84d0365635cfd81d7",
-      "status": "candidate-unreviewed"
-    },
-    "canonPromotion": false,
-    "final3dPortraitContractSatisfied": false,
-    "technology": "2d-image",
-    "findings": "오른쪽 얼굴 방향·머리 전체·양쪽 어깨와 가슴 위 프레임 확인. 인물별 외형과 화풍은 사용자 최종 판정 전."
-  }
+  "ownerVerdict": {
+    "verdict": "pass"
+  },
+  "imageHashHistory": [
+    "f13e849a02c8a7bfc2e5648dcfc3a86d3750c68d787784f84d0365635cfd81d7"
+  ]
 }

@@ -3,59 +3,9 @@
   "personId": "person-1017",
   "characterId": "K1017",
   "imageSha256": "2c3ffca99a0944e7b0af992110a32f4606fc9c82dfc91b25513b9045306a1685",
-  "ownerVerdict": {
-    "verdict": "pass",
-    "date": "2026-10-01",
-    "scope": "제시된 초상화로 등록 PR을 작성하도록 요청한 범위에 한한다. 병합·공개 배포·정본 승인을 뜻하지 않는다.",
-    "request": "초상화 등록 pr 만들어줘."
-  },
-  "generationRequest": {
-    "schemaVersion": 1,
-    "tool": "image_gen__imagegen",
-    "prompt": "Use case: stylized-concept.\nCreate one finished PNG character portrait of the fictional civilian courier Ji Yeonhui (지연희), an adult woman, for a post-collapse Seoul role-playing game. This is a visual study based on confirmed character descriptions; no reference image is supplied.\nStyle/medium: anime manga style: 橫山光輝 — Mitsuteru Yokoyama's classic twentieth-century manga illustration style. Elegant confident black ink contours with meaningful thick and thin variation, simple mature expressive facial features, clear large light facial planes, solid restrained shadow shapes, sparse purposeful hatching, subtle paper texture. Flat subdued color, mostly black and warm neutral gray with the red jewelry as the small focal accent. Avoid glossy modern anime rendering, photorealism, airbrush gradients, chibi proportions, or 3D rendering.\nSubject: a clearly adult woman with a tall, slender build and natural mature human proportions. Distinct, memorable facial features. Short black bob haircut. She has an approachable, quietly friendly expression, lips softly closed, an attentive gaze, and emotional reserve that suggests she keeps her thoughts private; not villainous or overtly seductive.\nClothing and accessory: plain practical civilian protective outer jacket suitable for a traveling courier, without any insignia or logos. A small faceted red crystal jewelry ear piercing is visible. Its concealed GPS function must not be visible: no electronics, lights, antenna, screen, interface, or technological ornamentation. The character wears shorts and military boots and carries a small concealed personal awl in a boot, but these are outside this upper-body portrait and must not appear as insets or exposed props.\nComposition: exactly one character, medium close-up centered on face, both shoulders and upper chest. Entire top of head and both shoulders are visible; crop at chest height. Neutral still pose, level shoulders, head and torso turned slightly toward the viewer's right, no head tilt or hand gestures. Eye-level three-quarter camera, face prominent and clearly readable. Square image, high resolution.\nBackground: plain warm light neutral gray, subtle paper grain, no scene, no scenery, no objects.\nConstraints: no words, lettering, name, code, signature, watermark, border, panels, labels, text, weapons, military rank or emblems. No extra accessories, scars, tattoos, or invented story elements. Show an original character identity. Output one complete polished illustration, not a contact sheet.",
-    "transparent_background": false,
-    "references": []
-  },
-  "generationReceipt": {
-    "request": {
-      "schemaVersion": 1,
-      "tool": "image_gen__imagegen",
-      "prompt": "Use case: stylized-concept.\nCreate one finished PNG character portrait of the fictional civilian courier Ji Yeonhui (지연희), an adult woman, for a post-collapse Seoul role-playing game. This is a visual study based on confirmed character descriptions; no reference image is supplied.\nStyle/medium: anime manga style: 橫山光輝 — Mitsuteru Yokoyama's classic twentieth-century manga illustration style. Elegant confident black ink contours with meaningful thick and thin variation, simple mature expressive facial features, clear large light facial planes, solid restrained shadow shapes, sparse purposeful hatching, subtle paper texture. Flat subdued color, mostly black and warm neutral gray with the red jewelry as the small focal accent. Avoid glossy modern anime rendering, photorealism, airbrush gradients, chibi proportions, or 3D rendering.\nSubject: a clearly adult woman with a tall, slender build and natural mature human proportions. Distinct, memorable facial features. Short black bob haircut. She has an approachable, quietly friendly expression, lips softly closed, an attentive gaze, and emotional reserve that suggests she keeps her thoughts private; not villainous or overtly seductive.\nClothing and accessory: plain practical civilian protective outer jacket suitable for a traveling courier, without any insignia or logos. A small faceted red crystal jewelry ear piercing is visible. Its concealed GPS function must not be visible: no electronics, lights, antenna, screen, interface, or technological ornamentation. The character wears shorts and military boots and carries a small concealed personal awl in a boot, but these are outside this upper-body portrait and must not appear as insets or exposed props.\nComposition: exactly one character, medium close-up centered on face, both shoulders and upper chest. Entire top of head and both shoulders are visible; crop at chest height. Neutral still pose, level shoulders, head and torso turned slightly toward the viewer's right, no head tilt or hand gestures. Eye-level three-quarter camera, face prominent and clearly readable. Square image, high resolution.\nBackground: plain warm light neutral gray, subtle paper grain, no scene, no scenery, no objects.\nConstraints: no words, lettering, name, code, signature, watermark, border, panels, labels, text, weapons, military rank or emblems. No extra accessories, scars, tattoos, or invented story elements. Show an original character identity. Output one complete polished illustration, not a contact sheet.",
-      "transparent_background": false,
-      "references": []
-    },
-    "imageSha256": "2c3ffca99a0944e7b0af992110a32f4606fc9c82dfc91b25513b9045306a1685",
-    "width": 1254,
-    "height": 1254,
-    "bytes": 2688298,
-    "recordedAt": "2026-10-01T11:32:50.052Z",
-    "status": "generated-study"
-  },
-  "referenceException": {
-    "date": "2026-10-01",
-    "approved": true,
-    "scope": "기준 레퍼런스 없이 확정된 지연희 외형과 요코야마 미츠테루 화풍으로 PNG 시안을 생성한다.",
-    "requiredReferenceObtained": false
-  },
-  "visualReview": {
-    "observed": [
-      "성인 여성의 상반신 초상",
-      "검은색 짧은 단발",
-      "빨간색 크리스탈 이어피어스",
-      "친절하고 절제된 표정",
-      "문자·표식·노출된 무기 없음"
-    ],
-    "limitations": [
-      "기준 B 이미지와의 일치 여부는 검증하지 않았다.",
-      "머리와 어깨 바깥 여백이 좁다.",
-      "그림에 표현된 미확정 색상과 세부 묘사는 시안이며 인물 정본 설정을 변경하지 않는다."
-    ]
-  },
-  "sourceRefs": [
-    "https://github.com/islee23520/seoul-dengoku-wiki/issues/329",
-    "https://github.com/islee23520/seoul-dengoku-wiki/pull/389",
-    "https://github.com/islee23520/seoul-dengoku-wiki/issues/391"
-  ],
   "canonPromotion": false,
-  "final3dPortraitContractSatisfied": false
+  "final3dPortraitContractSatisfied": false,
+  "ownerVerdict": {
+    "verdict": "pass"
+  }
 }

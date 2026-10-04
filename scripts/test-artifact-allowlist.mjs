@@ -23,7 +23,7 @@ async function fixture(extra = {}, omit = []) {
     'regional-terrain-tiles/0-0.bin': '',
     'regional-terrain-tiles/0-0-water.json': '{}',
     'state-flags/S01.webp': '',
-    'clan-crests/index.json': '',
+    'clan-crests/index.json': '{}',
     'assets/index-AbCd1234.js': '',
     'assets/index-AbCd1234.css': '',
     'assets/Ailments-Zz9_Yx-8.js': '',
@@ -80,4 +80,33 @@ test('a router path without a recorded disposition, or a stale disposition, fail
     const invalid = { ...allowlist, routes: allowlist.routes.map((route) => route.path === '/' ? { ...route, disposition: 'unknown' } : route) }
     assert.deepEqual(await artifactFailures({ distRoot: dist, allowlist: invalid, appSource }), ['E_ROUTE_DISPOSITION: / unknown'])
   } finally { await rm(dist, { recursive: true, force: true }) }
+})
+
+test('actual JSON content rejects nested evidence and unknown review fields but retains safe summaries', async () => {
+  const safe = { imageSha256: 'a'.repeat(64), ownerVerdict: { verdict: 'pass' }, imageModification: { generationReceiptAvailable: true, inputSha256: 'b'.repeat(64), outputSha256: 'a'.repeat(64) }, imageHashHistory: ['b'.repeat(64)] }
+  for (const [file, payload, fails] of [
+    ['portrait-reviews/person-0001.json', safe, false],
+    ['portrait-reviews/person-0001.json', { ...safe, ownerVerdict: { verdict: 'pass', nested: { generationReceipt: { request: { prompt: 'PRIVATE_SENTINEL' } } } } }, true],
+    ['portrait-reviews/person-0001.json', { ...safe, futureEvidence: { body: 'PRIVATE_SENTINEL' } }, true],
+    ['portrait-reviews/person-0001.json', { ...safe, ownerVerdict: { verdict: { prompt: 'PRIVATE_SENTINEL' } } }, true],
+    ['portrait-tokens/person-0001.json', { slots: { future: { generationRequest: { prompt: 'PRIVATE_SENTINEL' } } } }, true],
+    ['portrait-reviews/person-0001.json', { ...safe, technology: 'source=/Users/private/x' }, true],
+    ...['file:/Users/private/source.png', '//server/private/source.png'].flatMap(value => [
+      ['portrait-reviews/person-0001.json', { ...safe, technology: value }, true],
+      ['portrait-tokens/person-0001.json', { facts: { role: value } }, true],
+    ]),
+    ['portrait-tokens/person-0001.json', { facts: { role: 'file:///Volumes/private/x' } }, true],
+    ...['https://commons.wikimedia.org/wiki/File:Portrait.png', 'https://example.org/profile:portrait'].flatMap(value => [
+      ['portrait-reviews/person-0001.json', { ...safe, technology: value }, false],
+      ['portrait-tokens/person-0001.json', { facts: { role: value } }, false],
+    ]),
+    ['portrait-tokens/person-0001.json', { image: { path: '/portraits/person-0001.png' }, imageReview: { record: '/portrait-reviews/person-0001.json' }, facts: { role: '2D / 3D' } }, false],
+  ]) {
+    const dist = await fixture({ [file]: JSON.stringify(payload) })
+    try {
+      const failures = await artifactFailures({ distRoot: dist, allowlist, appSource })
+      assert.equal(failures.length, fails ? 1 : 0)
+      if (fails) assert.match(failures[0], /E_ARTIFACT_PORTRAIT_EVIDENCE/)
+    } finally { await rm(dist, { recursive: true, force: true }) }
+  }
 })
