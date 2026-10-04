@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Link } from 'react-router-dom'
-import license from '../../LICENSE.md?raw'
+import license from '../../LICENSE?raw'
 
 export default function LicensePage() {
   return (
