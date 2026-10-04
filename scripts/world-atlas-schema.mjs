@@ -1,6 +1,6 @@
 // Wiki-owned contract for lore/World-Narrative-Atlas.json and its generated JSON projections.
-export const ATLAS_SCHEMA = 'world-narrative-atlas.v2'
-export const UNAFFILIATED_FIELDS = Object.freeze(['name', 'character_id'])
+export const ATLAS_SCHEMA = 'world-narrative-atlas.v3'
+export const ADDITIONAL_PERSON_FIELDS = Object.freeze(['name', 'character_id', 'detail_route', 'national_state_id'])
 export const FROZEN_HUMAN_COUNT = 422
 
 export const STATES = Object.freeze([

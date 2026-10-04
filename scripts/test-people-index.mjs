@@ -53,12 +53,13 @@ test('the atlas projection links all eight unaffiliated people through the gener
     for (const child of node.children ?? []) visit(child)
   }
   page.blocks.forEach(visit)
-  assert.deepEqual(links.map((link) => link.url), [1003, 1004, 1008, 1009, 1010, 1017, 1018, 1019, 1020, 1021, 1022].map((id) => '/people/person-' + id))
+  const atlas = JSON.parse(await readFile(new URL('../lore/World-Narrative-Atlas.json', import.meta.url), 'utf8')).data.atlas
+  assert.deepEqual(links.map((link) => link.url), Object.values(atlas.additional_people).map(person => person.detail_route))
   for (const link of links) {
     assert.ok(catalog.includes('"detailRoute": "' + link.url + '"'), link.url)
     const id = link.url.split('/').at(-1)
     const detail = JSON.parse(await readFile(new URL('../public/person-details/' + id + '.json', import.meta.url), 'utf8'))
-    assert.equal(detail.state, 'S00')
+    assert.equal(detail.state === 'S00' ? null : detail.state, Object.values(atlas.additional_people).find(person => person.detail_route === link.url).national_state_id)
     assert.equal(detail.name, link.children.map((child) => child.value).join(''))
   }
 })

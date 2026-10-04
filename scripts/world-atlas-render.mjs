@@ -342,13 +342,13 @@ export function renderExpansionIndex(atlas) {
     text(L('가문 ', 'Houses '), count('houses'), L(' / 전구 ', ' / Theaters '), count('theaters'), L(' / 합성 ', ' / Synthetics '), count('synthetics')),
     text(L('사회배치 ', 'Social batches '), count('story_batches'), L(' / 생태 ', ' / Ecologies '), count('hostile_groups'), L(' / 몬스터배치 ', ' / Monster batches '), count('monster_batches')),
   ])
-  b.heading(2, text(L('무소속', 'Unaffiliated')), ['무소속'])
+  b.heading(2, text(L('추가 인물', 'Additional people')), ['무소속'])
   // Person pages are hub routes outside lore, so the cell keeps its route link as written.
   b.table(
     [text(L('캐릭터 ID', 'Character ID')), text(L('인물', 'Person'))],
-    Object.entries(atlas.unaffiliated ?? {}).map(([id, person]) => [
+    Object.values(atlas.additional_people ?? {}).map((person) => [
       cell(person.character_id),
-      cell('[', person.name, `](/people/person-${id.slice(1).padStart(4, '0')})`),
+      cell('[', { ko: person.name.ko, en: person.name.en ?? person.character_id }, `](${person.detail_route})`),
     ]),
   )
   return b.content

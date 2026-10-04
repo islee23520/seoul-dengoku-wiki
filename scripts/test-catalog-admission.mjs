@@ -30,7 +30,7 @@ const atlasDocument = () => ({
   source: { kind: 'original-fiction', refs: ['lore/World-Narrative-Atlas.json'] },
   provenance: { original_anchor: 'lore/World-Narrative-Atlas.md', original_hash: null, history: [] },
   content: content('Atlas'),
-  data: { atlas: { schema: 'world-narrative-atlas.v2', document: { id: 'WNA-001' } } },
+  data: { atlas: { schema: 'world-narrative-atlas.v3', document: { id: 'WNA-001' } } },
 })
 
 const projectionDocument = ({ id, slug, domain = 'root', categories }) => ({

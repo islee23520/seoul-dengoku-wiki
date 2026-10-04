@@ -28,7 +28,7 @@ const fixtureDocument = ({ id, slug, domain = 'root', categories, sourceKind = '
     text: { en: `${slug} EN`, ko: `${slug} KO` },
   }],
   data: slug === 'World-Narrative-Atlas'
-    ? { atlas: { schema: 'world-narrative-atlas.v2', document: { id: 'WNA-001' } } }
+    ? { atlas: { schema: 'world-narrative-atlas.v3', document: { id: 'WNA-001' } } }
     : {},
 })
 

@@ -34,7 +34,7 @@ test('the eighteen domain examples and a published page pass', () => {
   assert.equal(published.status, 0, published.stderr)
 })
 
-test('WNA-001 accepts the closed world-narrative-atlas.v2 contract', () => {
+test('WNA-001 accepts the closed world-narrative-atlas.v3 contract', () => {
   mkdirSync(evidence, { recursive: true })
   const dir = mkdtempSync(join(evidence, 'atlas-valid-'))
   try {

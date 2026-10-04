@@ -6,6 +6,7 @@ import { fromMarkdown } from 'mdast-util-from-markdown'
 import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs'
+import { atlasPeopleContext } from './atlas-people-context.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { publicHouseContent } from './public-house-content.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
@@ -185,10 +186,12 @@ await mkdir(publicRoot, { recursive: true })
 await rm(wikiAssetTarget, { recursive: true, force: true })
 
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(repoRoot, 'lore'))
+const atlasPeople = await atlasPeopleContext(loreRoot)
 await materializeWorldAtlas({
   atlasPath: resolve(loreRoot, 'World-Narrative-Atlas.json'),
   outDir: loreRoot,
   check: true,
+  peopleContext: atlasPeople,
 })
 const jsonPages = await walkLoreJson(loreRoot)
 const publishedRoutes = new Set(publishedDocuments(await approvedDocuments(loreRoot)).map(({ route }) => route))
@@ -929,7 +932,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
     state: person.state,
     stateName: stateNameById.get(person.state) ?? person.state_name,
     sourceRoute: `/world/${source}#${anchor}`,
-    detailRoute: `/people/person-${String(index + 1).padStart(4, '0')}`,
+    detailRoute: [...atlasPeople.routes.values()].find((route) => route.name === person.name).detailRoute,
   }
 })
 const catalogByName = new Map(peopleCatalog.map((person) => [person.name, person]))
