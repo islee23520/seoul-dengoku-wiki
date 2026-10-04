@@ -76,6 +76,10 @@
     }
   },
   "confirmedHoldings": [],
+  "openingDisposition": {
+    "status": "personal-landless",
+    "openingYear": 2126
+  },
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -159,6 +163,14 @@
   "sources": [
     "Cast-State-01"
   ],
+  "directLiege": {
+    "personId": "K009",
+    "name": "유세진",
+    "relationKind": "direct-liege",
+    "ownerTerm": "직속 주군",
+    "courtId": "court:K009",
+    "effectiveYear": 2126
+  },
   "relations": {
     "outgoing": [
       {

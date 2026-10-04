@@ -28,7 +28,7 @@ test("approved S02/S03 retainers resolve to seven owner courts from their comman
   ];
   assert.deepEqual(dataset.config.directRetainers.slice(37), expected.map(([personId, liegePersonId, sourceRow]) =>
     ({ personId, liegePersonId, courtId: `court:${liegePersonId}`, sourceRow })));
-  assert.deepEqual(dataset.config.courts.slice(3),
+  assert.deepEqual(dataset.config.courts.filter(court => ["S02", "S03"].includes(court.stateId)),
     [["K032", "S02"], ["K037", "S02"], ["K033", "S02"], ["K058", "S03"],
       ["K060", "S03"], ["K061", "S03"], ["K062", "S03"]]
       .map(([ownerPersonId, stateId]) => ({ id: `court:${ownerPersonId}`, ownerPersonId, stateId })));
@@ -59,7 +59,7 @@ test("direct-liege validator rejects source, actor, court, nation and hierarchy 
   assert.deepEqual(validate(social), []);
 });
 
-test("approved owner lieges are exactly eight person-to-person edges", () => {
+test("approved owner lieges preserve eight existing edges and add five approved S01/S02 choices", () => {
   const dataset = loadDataset();
   const { ownerLieges } = dataset.config;
   assert.equal(ownerLieges.schema, "owner-liege-edges.v1");
@@ -73,6 +73,11 @@ test("approved owner lieges are exactly eight person-to-person edges", () => {
     { personId: "K061", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
     { personId: "K062", liegePersonId: "K1005", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
     { personId: "K233", liegePersonId: "K222", relationKind: "direct-vassal", ownerTerm: "직속 가신" },
+    { personId: "K004", liegePersonId: "K001", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K005", liegePersonId: "K009", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K032", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K037", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    { personId: "K033", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
   ]);
   const sourceQuotes = ownerLieges.sourceBasis.map((basis) => basis.quote);
   assert.ok(sourceQuotes.some((quote) => quote.includes("군주를 뽑고") && quote.includes("군주 자리에 앉았다")));
@@ -98,6 +103,52 @@ test("owner-liege validator rejects stale approval, foreign nation, duplicate li
   }
 });
 
+test("explicit S01 memberships reuse one immediate liege and preserve K003's own court and twelve descendants", () => {
+  const dataset = loadDataset();
+  const { courts, directRetainers, ownerLieges, courtMemberships } = dataset.config;
+  assert.equal(courtMemberships.schema, "opening-court-memberships.v1");
+  assert.equal(courtMemberships.effectiveYear, 2126);
+  assert.deepEqual(courtMemberships.memberships.map(({ personId, courtId }) => ({ personId, courtId })), [
+    { personId: "K003", courtId: "court:K001" },
+    { personId: "K004", courtId: "court:K001" },
+    { personId: "K005", courtId: "court:K009" },
+  ]);
+  assert.deepEqual(courts.slice(10), [
+    { id: "court:K001", ownerPersonId: "K001", stateId: "S01" },
+    { id: "court:K009", ownerPersonId: "K009", stateId: "S01" },
+  ]);
+  for (const personId of ["K003", "K004", "K005"]) {
+    assert.equal(ownerLieges.edges.filter(row => row.personId === personId).length, 1);
+    assert.ok(!directRetainers.some(row => row.personId === personId));
+    assert.ok(!("sourceRow" in courtMemberships.memberships.find(row => row.personId === personId)));
+  }
+  assert.deepEqual(directRetainers.filter(row => row.courtId === "court:K003").map(row => row.personId),
+    ["K968", "K440", "K728", "K488", "K920", "K536", "K824", "K776", "K632", "K872", "K584", "K680"]);
+  assert.ok(!ownerLieges.edges.some(row => row.personId === "K009"));
+  assert.deepEqual(validate(dataset), []);
+});
+
+test("explicit membership rejects missing people/courts, owner/state mismatch, duplicate memberships and lieges, and cycles", () => {
+  const cases = [
+    ["missing person", d => { d.config.courtMemberships.memberships[0].personId = "K9999"; }, /missing foreign key K9999/],
+    ["missing court", d => { d.config.courtMemberships.memberships[0].courtId = "court:K9999"; }, /missing foreign key court:K9999/],
+    ["wrong owner", d => { d.config.courtMemberships.memberships[0].courtId = "court:K009"; }, /K003: membership court owner is not immediate liege/],
+    ["foreign state", d => { d.config.courts.find(row => row.id === "court:K001").stateId = "S02"; }, /K003: foreign nation court membership/],
+    ["missing liege", d => { d.config.ownerLieges.edges = d.config.ownerLieges.edges.filter(row => row.personId !== "K003"); }, /K003: membership court owner is not immediate liege/],
+    ["duplicate membership", d => { d.config.courtMemberships.memberships.push({ ...d.config.courtMemberships.memberships[0] }); }, /K003: duplicate court membership/],
+    ["existing retainer membership", d => { d.config.courtMemberships.memberships.push({ personId: "K904", courtId: "court:K002" }); }, /K904: duplicate court membership/],
+    ["duplicate owner liege", d => { d.config.ownerLieges.edges.push({ ...d.config.ownerLieges.edges.find(row => row.personId === "K003") }); }, /K003: duplicate immediate liege/],
+    ["duplicate command liege", d => { d.config.directRetainers.push({ personId: "K003", liegePersonId: "K001", courtId: "court:K001", sourceRow: 12 }); }, /K003: duplicate immediate liege/],
+    ["cycle", d => { d.config.ownerLieges.edges.push({ personId: "K001", liegePersonId: "K003", relationKind: "direct-liege", ownerTerm: "직속 주군" }); }, /direct liege cycle/],
+    ["missing structural metadata", d => { delete d.config.courtMemberships.effectiveYear; }, /courtMemberships: missing structural metadata/],
+  ];
+  for (const [label, mutate, expected] of cases) {
+    const dataset = loadDataset();
+    mutate(dataset);
+    assert.match(validate(dataset).join("\n"), expected, label);
+  }
+});
+
 test("owner-liege validator rejects missing kind and term from the real dataset", () => {
   const dataset = loadDataset();
   delete dataset.config.ownerLieges.edges[0].relationKind;
@@ -105,6 +156,20 @@ test("owner-liege validator rejects missing kind and term from the real dataset"
   const errors = validate(dataset).join("\n");
   assert.match(errors, /K002: unknown owner relation kind undefined/);
   assert.match(errors, /K002: owner term mismatch/);
+});
+
+test("S02 owner lieges preserve immediate descendants and reject a second liege or ancestor cycle", () => {
+  const dataset = loadDataset();
+  for (const [personId, liegePersonId, sourceRow] of [["K041", "K032", 30], ["K047", "K037", 42], ["K049", "K033", 46]]) {
+    assert.deepEqual(dataset.config.directRetainers.find((edge) => edge.personId === personId),
+      { personId, liegePersonId, courtId: `court:${liegePersonId}`, sourceRow });
+  }
+  const duplicate = loadDataset();
+  duplicate.config.ownerLieges.edges.push({ personId: "K032", liegePersonId: "K033", relationKind: "direct-liege", ownerTerm: "직속 주군" });
+  assert.match(validate(duplicate).join("\n"), /K032: duplicate immediate liege/);
+  const cyclic = loadDataset();
+  cyclic.config.ownerLieges.edges.push({ personId: "K029", liegePersonId: "K041", relationKind: "direct-liege", ownerTerm: "직속 주군" });
+  for (const id of ["K032", "K041", "K029"]) assert.ok(validate(cyclic).includes(`${id}: direct liege cycle`));
 });
 
 test("owner-liege validator rejects unknown kind with missing term from the real dataset", () => {

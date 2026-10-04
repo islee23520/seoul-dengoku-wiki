@@ -82,6 +82,10 @@
     }
   },
   "confirmedHoldings": [],
+  "openingDisposition": {
+    "status": "personal-landless",
+    "openingYear": 2126
+  },
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -170,6 +174,7 @@
     "name": "한재목",
     "relationKind": "direct-liege",
     "ownerTerm": "직속 주군",
+    "courtId": "court:K001",
     "effectiveYear": 2126
   },
   "court": {

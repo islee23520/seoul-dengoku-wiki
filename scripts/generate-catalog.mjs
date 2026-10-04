@@ -21,6 +21,7 @@ import { buildTimelineYears, koText } from './timeline-overview.mjs'
 import { articleFeedbackRecord, personFeedbackRecord, privateCatalog } from './feedback-source-catalog.mjs'
 import { loadDataset, validate as validateRelations } from '../lore/relations/validate.mjs'
 import { validateHoldingFacility } from './holding-facility.mjs'
+import { validateOpeningDispositions } from './personal-holdings.mjs'
 import { regularLineGraph } from './regular-line-graph.mjs'
 import { regionalLineGraph } from './regional-line-graph.mjs'
 import { parsePersonRightsPermissions } from './person-rights-permissions.mjs'
@@ -854,6 +855,7 @@ const courtErrors = validateRelations(courtDataset)
 if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
 const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
 const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
+const openingDispositions = validateOpeningDispositions(personalHoldings, courtDataset.people)
 const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
 const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
@@ -881,8 +883,9 @@ const personRightsPermissions = parsePersonRightsPermissions(
   JSON.parse(await readFile(resolve(repoRoot, 'person-rights-permissions.json'), 'utf8')), courtDataset.people,
 )
 const retainersById = new Map(courtDataset.config.directRetainers.map((row) => [row.personId, row]))
+const membershipsById = new Map(courtDataset.config.courtMemberships.memberships.map((row) => [row.personId, row]))
 const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
-  courtDataset.config.directRetainers.filter((row) => row.courtId === court.id)]))
+  [...courtDataset.config.directRetainers, ...courtDataset.config.courtMemberships.memberships].filter((row) => row.courtId === court.id)]))
 const ownerLiegeByPerson = new Map(courtDataset.config.ownerLieges?.edges?.map((row) => [row.personId, row]) ?? [])
 const parseCardSections = (body) => {
   const sections = {}
@@ -961,7 +964,7 @@ const retainerGraph = {
     ...graphRetainers.map(({ personId, liegePersonId, courtId }) =>
       ({ fromPersonId: personId, toPersonId: liegePersonId, courtId })),
     ...graphOwnerLieges.map(({ personId, liegePersonId, relationKind, ownerTerm }) =>
-      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: null, relationKind, ownerTerm })),
+      ({ fromPersonId: personId, toPersonId: liegePersonId, courtId: membershipsById.get(personId)?.courtId ?? null, relationKind, ownerTerm })),
   ],
   courts: graphCourts.map(({ id, ownerPersonId, stateId }) => ({ id, ownerPersonId, stateId })),
 }
@@ -995,6 +998,7 @@ for (const person of peopleCatalog) {
       secondary: sheet.secondary,
     },
     confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
+    ...(openingDispositions.has(issuedId) ? { openingDisposition: openingDispositions.get(issuedId) } : {}),
     unit: sheet.unit,
     territory: sheet.territory,
     wandering_force: sheet.wandering_force,
@@ -1017,6 +1021,7 @@ for (const person of peopleCatalog) {
       const row = ownerLiegeByPerson.get(issuedId)
       return { directLiege: { personId: row.liegePersonId, name: issuedById.get(row.liegePersonId).name,
         relationKind: row.relationKind, ownerTerm: row.ownerTerm,
+        ...(membershipsById.has(issuedId) ? { courtId: membershipsById.get(issuedId).courtId } : {}),
         effectiveYear: courtDataset.config.ownerLieges.effectiveYear } }
     })() : {}),
     ...(courtMembersByOwner.has(issuedId) ? {
