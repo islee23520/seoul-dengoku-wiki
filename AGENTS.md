@@ -1,7 +1,7 @@
 # GDD KNOWLEDGE BASE
 
 ## OVERVIEW
-Single game-design canon: product pages, rules, references, architecture, art direction, ADRs, proposals and system-design. All design and architecture text is normalized JSON under `canon/`; the only Markdown files are ones named `AGENTS.md`, `LICENSE.md` or `README.md`. GDD owns meaning and its own `/gdd/` viewer (`viewer/`); the wiki (WIKI) publishes only the world.
+Single game-design canon: product pages, rules, references, architecture, art direction, ADRs, proposals and system-design. All design and architecture text is normalized JSON under `canon/`; the only Markdown files are ones named `AGENTS.md` or `README.md`; the license is stored in `LICENSE`. GDD owns meaning and its own `/gdd/` viewer (`viewer/`); the wiki (WIKI) publishes only the world.
 
 ## WHERE TO LOOK
 | Task | Location | Notes |
