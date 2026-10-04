@@ -59,13 +59,79 @@ test('unavailable browser storage does not crash the composer or expose private 
 test('stored draft from another document revision requires reselection and sends no request', async () => {
   globalThis.IS_REACT_ACT_ENVIRONMENT = true
   localStorage.setItem(key, JSON.stringify(draft))
-  const fetcher = vi.spyOn(globalThis, 'fetch')
+  const fetcher = vi.spyOn(globalThis, 'fetch').mockImplementation(async (url) => new Response(JSON.stringify(url.endsWith('/auth/session') ? { csrfToken: 'fixture-csrf' } : { id: 72, status: 'received' }), { headers: { 'content-type': 'application/json' } }))
   const host = document.createElement('div'), root = createRoot(host)
   try {
     await act(async () => root.render(createElement(MemoryRouter, { initialEntries: [route] }, createElement(FeedbackComposer, { rootRef: { current: null }, documentInfo: { ...documentInfo, sourceRevision: 'b'.repeat(64) }, locale: 'ko' }))))
     assert.equal(host.querySelector('button[type=submit]').disabled, true)
     assert.equal(JSON.parse(localStorage.getItem(key)).reconfirmationRequired, true)
+    await act(async () => host.querySelector('form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })))
     assert.equal(fetcher.mock.calls.length, 0)
+    const retained = JSON.parse(localStorage.getItem(key))
+    assert.equal(retained.reconfirmationRequired, true)
+    assert.equal(retained.body, draft.body)
+    assert.deepEqual(retained.anchor, anchor)
+    assert.equal(host.querySelector('textarea').value, draft.body)
     assert.equal(host.querySelectorAll('mark, u').length, 0)
+  } finally { await act(async () => root.unmount()); fetcher.mockRestore(); localStorage.removeItem(key) }
+})
+
+test('editing after an uncertain submission uses a new key while unchanged retries keep their key', async () => {
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  localStorage.setItem(key, JSON.stringify(draft))
+  const keys = []
+  const fetcher = vi.spyOn(globalThis, 'fetch').mockImplementation(async (url, init) => {
+    if (url.endsWith('/auth/session')) return new Response(JSON.stringify({ csrfToken: 'fixture-csrf' }), { headers: { 'content-type': 'application/json' } })
+    keys.push(init.headers['idempotency-key'])
+    throw new TypeError('lost acknowledgement')
+  })
+  const host = document.createElement('div'), root = createRoot(host)
+  try {
+    await act(async () => root.render(createElement(MemoryRouter, { initialEntries: [route] }, createElement(FeedbackComposer, { rootRef: { current: null }, documentInfo, locale: 'ko' }))))
+    await act(async () => host.querySelector('form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })))
+    await act(async () => host.querySelector('form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })))
+    const textarea = host.querySelector('textarea')
+    await act(async () => {
+      Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value').set.call(textarea, 'changed unsent body')
+      textarea.dispatchEvent(new Event('input', { bubbles: true }))
+    })
+    await act(async () => host.querySelector('form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })))
+    assert.equal(keys[0], keys[1])
+    assert.notEqual(keys[1], keys[2])
+    assert.equal(JSON.parse(localStorage.getItem(key)).body, 'changed unsent body')
+  } finally { await act(async () => root.unmount()); fetcher.mockRestore(); localStorage.removeItem(key) }
+})
+
+test('unmount aborts an in-flight submission and retains its local draft', async () => {
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  localStorage.setItem(key, JSON.stringify(draft))
+  const started = Promise.withResolvers(), aborted = Promise.withResolvers()
+  const fetcher = vi.spyOn(globalThis, 'fetch').mockImplementation((url, init) => {
+    if (url.endsWith('/auth/session')) return Promise.resolve(new Response(JSON.stringify({ csrfToken: 'fixture-csrf' }), { headers: { 'content-type': 'application/json' } }))
+    return new Promise((_resolve, reject) => {
+      init.signal.addEventListener('abort', () => { aborted.resolve(); reject(new DOMException('aborted', 'AbortError')) }, { once: true })
+      started.resolve()
+    })
+  })
+  const host = document.createElement('div'), root = createRoot(host)
+  try {
+    await act(async () => root.render(createElement(MemoryRouter, { initialEntries: [route] }, createElement(FeedbackComposer, { rootRef: { current: null }, documentInfo, locale: 'ko' }))))
+    await act(async () => { host.querySelector('form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })); await started.promise })
+    await act(async () => { root.unmount(); await aborted.promise })
+    assert.equal(JSON.parse(localStorage.getItem(key)).body, draft.body)
+  } finally { await act(async () => root.unmount()); fetcher.mockRestore(); localStorage.removeItem(key) }
+})
+
+test('authentication failure exposes the implemented login route without losing the draft', async () => {
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  localStorage.setItem(key, JSON.stringify(draft))
+  const fetcher = vi.spyOn(globalThis, 'fetch').mockResolvedValue(new Response(JSON.stringify({ error: { code: 'authentication-required' } }), { status: 401, headers: { 'content-type': 'application/json' } }))
+  const host = document.createElement('div'), root = createRoot(host)
+  try {
+    await act(async () => root.render(createElement(MemoryRouter, { initialEntries: [route] }, createElement(FeedbackComposer, { rootRef: { current: null }, documentInfo, locale: 'ko' }))))
+    await act(async () => host.querySelector('form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })))
+    assert.equal(host.querySelector('a').getAttribute('href'), '/api/feedback/auth/login')
+    assert.equal(JSON.parse(localStorage.getItem(key)).body, draft.body)
+    assert.equal(host.querySelector('.feedback-success'), null)
   } finally { await act(async () => root.unmount()); fetcher.mockRestore(); localStorage.removeItem(key) }
 })
