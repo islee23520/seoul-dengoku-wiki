@@ -12,6 +12,7 @@ const approved = [
   ['person-1009', [13, 15, 15, 14], 270, 347],
   ['person-1019', [10, 13, 19, 13], 270, 305],
   ['person-1017', [10, 12, 18, 13], 230, 305],
+  ['person-1018', [10, 13, 25, 13], 390, 445],
 ]
 
 for (const [id, values, attributeCP, total] of approved) {
