@@ -148785,14 +148785,14 @@
           "evidence": []
         },
         "DX": {
-          "value": 10,
-          "cp": 0,
+          "value": 16,
+          "cp": 120,
           "rule": "card-actions",
           "evidence": []
         },
         "IQ": {
-          "value": 11,
-          "cp": 20,
+          "value": 14,
+          "cp": 80,
           "rule": "card-actions",
           "evidence": [
             {
@@ -148803,13 +148803,40 @@
           ]
         },
         "HT": {
-          "value": 10,
-          "cp": 0,
+          "value": 13,
+          "cp": 30,
           "rule": "card-actions",
           "evidence": []
         }
       },
-      "traits": [],
+      "traits": [
+        {
+          "name": "Appearance (Transcendent) — 탈클래스 외모 부스팅; 일반 반응 +2, 해당 성에 매력을 느끼는 상대 +8 (+2 대체, +10 아님). 외모를 인식할 수 있는 상대에게만 적용하며 성별만으로 매력 대상을 정하지 않는다. Very Beautiful과 중복 구매하지 않고 Charisma·Voice·Smooth Operator를 추가하지 않는다. IQ·Observation에 가산하지 않으며 자동 복종·교섭 성공·시민권·전투 효과가 아니다.",
+          "kind": "advantage",
+          "rule": "appearance-transcendent",
+          "cp": 24,
+          "page": "B21",
+          "reaction": {
+            "ordinaryObservers": 2,
+            "observersAttractedToHerSex": 8,
+            "application": "외모를 인식할 수 있는 해당 상대에게만. 성별만으로 매력을 느끼는 대상을 자동 확정하지 않는다."
+          },
+          "applicationBoundaries": [
+            "매력 대상에게 적용되는 +8은 +2에 더하는 +10이 아니라 대체값이다.",
+            "Appearance를 Very Beautiful [16]와 중복 구매하지 않는다. 종전 rest-options의 16 CP 제안은 발행 시트가 아니므로 차액 8이 아니라 현재 발행 시트 0에서 24 CP를 추가한다.",
+            "Charisma·Voice·Smooth Operator 등 새 장점은 넣지 않아 같은 행적을 이중 가산하지 않는다. IQ·Observation에는 외모 보너스를 더하지 않는다.",
+            "반응 보정은 자동 복종·교섭 성공·시민권·전투 효과가 아니다. 최고 Appearance 위에 새 등급을 만들지 않는다."
+          ],
+          "evidence": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "pointer": "/content/6/items/14/ko",
+              "line": 226,
+              "quote": "외형: 세계관에서 가장 아름다운 여성. 생물학적 특성을 지닌 합성 휴머노이드다. 성인 고딕 여성으로 와인색 장발, 창백한 안색, 루비색 눈, 검은·와인색 고딕 의상을 입는다. 왼쪽 머리의 두 원형이 이어진 무한대(∞) 형상 기계 머리장식이 한눈에 가르는 표지다."
+            }
+          ]
+        }
+      ],
       "skills": [
         {
           "name": "Observation",
@@ -148874,13 +148901,13 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 20,
-        "advantages": 0,
+        "attributes": 230,
+        "advantages": 24,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 40,
+        "spent": 274,
         "unspent": 35,
-        "total": 75
+        "total": 309
       },
       "band": "일반 인물",
       "baseline": false,

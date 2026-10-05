@@ -8,6 +8,7 @@ import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
 
 const approved = [
   ['person-1003', [17, 14, 13, 14], 250, 330],
+  ['person-1004', [10, 16, 14, 13], 230, 309],
 ]
 
 for (const [id, values, attributeCP, total] of approved) {
@@ -24,3 +25,15 @@ for (const [id, values, attributeCP, total] of approved) {
     for (const value of values) assert.ok(html.includes(String(value)))
   })
 }
+
+test('Lee Yeon has one Transcendent Appearance advantage and its 24 CP', async () => {
+  const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1004.json', import.meta.url), 'utf8'))
+  const appearances = detail.gurps.traits.filter(({ rule }) => rule === 'appearance-transcendent')
+  assert.equal(appearances.length, 1)
+  assert.equal(appearances[0].cp, 24)
+  assert.equal(detail.gurps.cp.advantages, 24)
+  assert.equal(detail.gurps.cp.unspent, 35)
+  assert.ok(!detail.gurps.traits.some(({ name }) => name === 'Very Beautiful'))
+  const html = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(PersonDetailContent, { detail, personId: 'person-1004' })))
+  assert.ok(html.includes('Appearance (Transcendent)'))
+})
