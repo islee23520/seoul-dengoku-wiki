@@ -35,20 +35,20 @@
     "band": "주역·강자",
     "attributes": {
       "ST": {
-        "value": 11,
-        "cp": 10
+        "value": 13,
+        "cp": 30
       },
       "DX": {
-        "value": 13,
-        "cp": 60
+        "value": 15,
+        "cp": 100
       },
       "IQ": {
-        "value": 12,
-        "cp": 40
+        "value": 15,
+        "cp": 100
       },
       "HT": {
-        "value": 12,
-        "cp": 20
+        "value": 14,
+        "cp": 40
       }
     },
     "traits": [
@@ -116,13 +116,13 @@
       }
     ],
     "cp": {
-      "attributes": 130,
+      "attributes": 270,
       "advantages": 15,
       "disadvantages": 0,
       "skills": 62,
-      "spent": 207,
+      "spent": 347,
       "unspent": 0,
-      "total": 207
+      "total": 347
     },
     "secondary": {
       "HP": 11,

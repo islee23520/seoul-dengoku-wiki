@@ -9,6 +9,7 @@ import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
 const approved = [
   ['person-1003', [17, 14, 13, 14], 250, 330],
   ['person-1004', [10, 16, 14, 13], 230, 309],
+  ['person-1009', [13, 15, 15, 14], 270, 347],
 ]
 
 for (const [id, values, attributeCP, total] of approved) {
