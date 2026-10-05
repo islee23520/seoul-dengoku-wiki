@@ -27,6 +27,16 @@ function countReferenceMarkdown(dir) {
   return readdirSync(dir).filter((name) => name.endsWith('.md') && statSync(join(dir, name)).isFile()).length
 }
 
+test('absent unit type is valid while present unit copy remains checked', () => {
+  for (const type of [undefined, null, '']) {
+    const fields = personVisibleFields({ name: '정상', unit: { type, quality: '정예', note: '사용자 확정', composition: ['경비병'] } }, 'person')
+    assert.ok(!fields.some(([path]) => path.endsWith('/unit/type')))
+    assert.ok(fields.every(([, value]) => typeof value === 'string'))
+    assert.ok(fields.flatMap(([path, value]) => visibleFieldFailures(value, path)).some((failure) => failure.includes('/unit/note')))
+    assert.ok(fields.some(([path, value]) => path.endsWith('/unit/composition/0') && value === '경비병'))
+  }
+})
+
 test('real canon-reference inventory is exactly 20 markdown files', () => {
   assert.equal(countReferenceMarkdown(referenceDir), 20)
 })
