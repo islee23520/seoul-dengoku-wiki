@@ -12,6 +12,261 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-란세온",
   "detailRoute": "/people/person-0238",
+  "birthDate": "2069-06-19",
+  "birthday": "06-19",
+  "age": 57,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/192",
+    "lore/characters/Cast-State-09.json#/content/193"
+  ],
+  "familyTree": {
+    "personId": "K237",
+    "nodes": [
+      {
+        "id": "K237",
+        "personId": "K237",
+        "kind": "person",
+        "name": "란세온",
+        "birthDate": "2069-06-19",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K237"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 내부 제보자 자리는 정전 사흘 금고 유지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-란세온-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0238"
+      },
+      {
+        "id": "FH-K237-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "란승진",
+        "birthDate": "2039-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "란승진은 여의도 금고 당직에서 위조 화폐 내부 기록·증언 교차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-란세온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K237-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "란승현",
+        "birthDate": "2009-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "란승현은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-란세온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K237-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현희",
+        "birthDate": "2039-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "송현희는 여의도 금고 당직에서 위조 화폐 내부 기록·증언 교차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-란세온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K237-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현완",
+        "birthDate": "2009-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조현완은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-란세온-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K237-P-01:K237:biological",
+        "from": "FH-K237-P-01",
+        "to": "K237",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K237-P-02:FH-K237-P-01:biological",
+        "from": "FH-K237-P-02",
+        "to": "FH-K237-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K237-M-01:K237:biological",
+        "from": "FH-K237-M-01",
+        "to": "K237",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K237-M-02:FH-K237-M-01:biological",
+        "from": "FH-K237-M-02",
+        "to": "FH-K237-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-란세온-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K237",
     "personId": "person-0238",

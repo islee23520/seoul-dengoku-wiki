@@ -12,6 +12,261 @@
   "stateName": "성하그룹",
   "sourceRoute": "/world/Cast-State-11#인물-송하율",
   "detailRoute": "/people/person-0273",
+  "birthDate": "2068-01-01",
+  "birthday": "01-01",
+  "age": 58,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-11.json#/content/28",
+    "lore/characters/Cast-State-11.json#/content/32"
+  ],
+  "familyTree": {
+    "personId": "K272",
+    "nodes": [
+      {
+        "id": "K272",
+        "personId": "K272",
+        "kind": "person",
+        "name": "송하율",
+        "birthDate": "2068-01-01",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K272"
+          },
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "** 2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차량 정비 도제 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0273"
+      },
+      {
+        "id": "FH-K272-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현찬",
+        "birthDate": "2038-01-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "송현찬은 강남역 차량기지에서 차량 정비 일지·불량 부품 표본 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K272-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현혁",
+        "birthDate": "2008-01-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송현혁은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K272-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현리",
+        "birthDate": "2038-01-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "오현리는 강남역 차량기지에서 차량 정비 일지·불량 부품 표본 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K272-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현문",
+        "birthDate": "2008-01-01",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송현문은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-송하율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K272-P-01:K272:biological",
+        "from": "FH-K272-P-01",
+        "to": "K272",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K272-P-02:FH-K272-P-01:biological",
+        "from": "FH-K272-P-02",
+        "to": "FH-K272-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K272-M-01:K272:biological",
+        "from": "FH-K272-M-01",
+        "to": "K272",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K272-M-02:FH-K272-M-01:biological",
+        "from": "FH-K272-M-02",
+        "to": "FH-K272-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-송하율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K272",
     "personId": "person-0273",
@@ -170,11 +425,29 @@
       {
         "from": "송하율",
         "type": "계약",
-        "to": "황지호",
+        "to": "아이작 워커",
         "basis": "제동 부품을 용산 도제와 나눔"
       }
     ],
     "incoming": [
+      {
+        "from": "홍카훈",
+        "type": "계약",
+        "to": "송하율",
+        "basis": "홍카훈은 탈선 전에 발견한 차륜 결함을 송하율에게 보여 주고 교체한 부품을 넘긴다. 송하율은 불량 표본과 정비 일지를 남겨 시험 차륜의 결함이 일반 운행 차량에도 나타나는지 살핀다."
+      },
+      {
+        "from": "정나준",
+        "type": "계약",
+        "to": "송하율",
+        "basis": "정나준은 고친 차량 제동의 부품과 정비 기록을 송하율에게 넘긴다. 송하율은 불량 표본을 남겨 같은 결함이 다른 차륜에도 나타나는지 살핀다."
+      },
+      {
+        "from": "성마현",
+        "type": "계약",
+        "to": "송하율",
+        "basis": "성마현은 되돌린 불량 차륜 부품을 송하율에게 넘긴다. 송하율은 표본과 정비 일지를 남겨 같은 결함이 시험·운행 차륜 중 어디에 나타나는지 살핀다."
+      },
       {
         "from": "두모",
         "type": "사제",

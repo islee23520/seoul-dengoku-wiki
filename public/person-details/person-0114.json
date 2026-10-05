@@ -12,6 +12,263 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-여민우",
   "detailRoute": "/people/person-0114",
+  "birthDate": "2071-01-17",
+  "birthday": "01-17",
+  "age": 55,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/279",
+    "lore/characters/Cast-State-04.json#/content/280",
+    "lore/characters/Cast-State-04.json#/content/281",
+    "lore/characters/Cast-State-04.json#/content/282"
+  ],
+  "familyTree": {
+    "personId": "K113",
+    "nodes": [
+      {
+        "id": "K113",
+        "personId": "K113",
+        "kind": "person",
+        "name": "여민우",
+        "birthDate": "2071-01-17",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K113"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 암호화 정비일지 발견 증인 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-여민우-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0114"
+      },
+      {
+        "id": "FH-K113-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "여승영",
+        "birthDate": "2041-01-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "여승영은 신정 차량기지에서 정비일지 봉인·발견 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-여민우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K113-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "여승윤",
+        "birthDate": "2011-01-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "여승윤은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-여민우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K113-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승욱",
+        "birthDate": "2041-01-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "한승욱은 신정 차량기지에서 정비일지 봉인·발견 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-여민우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K113-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강승섭",
+        "birthDate": "2011-01-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강승섭은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-여민우-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K113-P-01:K113:biological",
+        "from": "FH-K113-P-01",
+        "to": "K113",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K113-P-02:FH-K113-P-01:biological",
+        "from": "FH-K113-P-02",
+        "to": "FH-K113-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K113-M-01:K113:biological",
+        "from": "FH-K113-M-01",
+        "to": "K113",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K113-M-02:FH-K113-M-01:biological",
+        "from": "FH-K113-M-02",
+        "to": "FH-K113-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-여민우-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K113",
     "personId": "person-0114",

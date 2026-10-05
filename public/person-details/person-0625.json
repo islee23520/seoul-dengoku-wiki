@@ -12,6 +12,261 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-박금은",
   "detailRoute": "/people/person-0625",
+  "birthDate": "2084-05-08",
+  "birthday": "05-08",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/402",
+    "lore/characters/Cast-State-10.json#/content/405"
+  ],
+  "familyTree": {
+    "personId": "K625",
+    "nodes": [
+      {
+        "id": "K625",
+        "personId": "K625",
+        "kind": "person",
+        "name": "박금은",
+        "birthDate": "2084-05-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K625"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박금은-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0625"
+      },
+      {
+        "id": "FH-K625-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박재연",
+        "birthDate": "2054-05-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "박재연은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박금은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K625-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박재정",
+        "birthDate": "2024-05-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박재정은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박금은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K625-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이재은",
+        "birthDate": "2054-05-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "이재은은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박금은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K625-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최재희",
+        "birthDate": "2024-05-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최재희는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-박금은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K625-P-01:K625:biological",
+        "from": "FH-K625-P-01",
+        "to": "K625",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K625-P-02:FH-K625-P-01:biological",
+        "from": "FH-K625-P-02",
+        "to": "FH-K625-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K625-M-01:K625:biological",
+        "from": "FH-K625-M-01",
+        "to": "K625",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K625-M-02:FH-K625-M-01:biological",
+        "from": "FH-K625-M-02",
+        "to": "FH-K625-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-박금은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K625",
     "personId": "person-0625",
@@ -133,17 +388,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.",
     "일화": "출처가 비어 있는 구호 물자 상자가 숙영지로 들어온다. 박금은은 윤초아가 상자마다 적는 출처 칸을 필사본에 옮기면서, 말로만 전해진 구호 약속을 필사본 여백에 따로 모아 윤초아에게 올린다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 박금은은 구호 상자의 출처 칸과 말로만 전해진 약속을 따로 필사해 윤초아에게 올린다. 윤초아는 상자별 출처를 확인해 구두 약속이 입고 사실로 바뀌지 않게 한다.",
     "야망": "장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.",
     "공포": "장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 장경 필사본·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 장경 필사 행자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 출처가 비어 있는 구호 물자 상자가 숙영지로 들어온다. 박금은은 윤초아가 상자마다 적는 출처 칸을 필사본에 옮기면서, 말로만 전해진 구호 약속을 필사본 여백에 따로 모아 윤초아에게 올린다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 60 | 무력 −50 | 물질 −15 | 공동 90 | 원칙 40 | 공개 45 | 자격 40 | 분산 45 | 변혁 −10\n- 욕망: 갈망 35 | 독점 −5 | 위험 −20 | 과시 −10 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 장경 필사본·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 장경 필사 행자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 출처가 비어 있는 구호 물자 상자가 숙영지로 들어온다. 박금은은 윤초아가 상자마다 적는 출처 칸을 필사본에 옮기면서, 말로만 전해진 구호 약속을 필사본 여백에 따로 모아 윤초아에게 올린다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 박금은은 구호 상자의 출처 칸과 말로만 전해진 약속을 따로 필사해 윤초아에게 올린다. 윤초아는 상자별 출처를 확인해 구두 약속이 입고 사실로 바뀌지 않게 한다.\n\n**야망.** 장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 60 | 무력 −50 | 물질 −15 | 공동 90 | 원칙 40 | 공개 45 | 자격 40 | 분산 45 | 변혁 −10\n- 욕망: 갈망 35 | 독점 −5 | 위험 −20 | 과시 −10 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-10"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "박금은",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "박금은은 구호 상자의 출처 칸과 말로만 전해진 약속을 따로 필사해 윤초아에게 올린다. 윤초아는 상자별 출처를 확인해 구두 약속이 입고 사실로 바뀌지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

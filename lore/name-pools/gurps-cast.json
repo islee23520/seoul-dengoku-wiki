@@ -3,8 +3,8 @@
   "status": "proposal",
   "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다(G2 Q9 L0 B). 16국 수장에는 수장별 검토의 선택지를 적용한다(G2 Q9 L01–L16). 최지우(K219)는 Core-Characters 판본을 따른다(L09 C). 모두 소유자 결정 2026-09-28이다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
   "invariants": {
-    "lore/name-pools/values-cast.json": "369a7bc6a84e65438067e624e83fdc3d937cf086e9bb5a6dcad2b3223cde6571",
-    "lore/name-pools/person-id-registry.json": "27eea6e326ae844f716e0358fe2fadb9f635ac6ea343dc7098b4db4c025359f0"
+    "lore/name-pools/values-cast.json": "c9f8ccb8768c1423285cfbc0672256416456aec17e5dc782a20eb8a02e4f3446",
+    "lore/name-pools/person-id-registry.json": "50e8eddc6a68d06590c20aed0f6cf3be588e5bffef9f8890fa818a4fee644d3f"
   },
   "rules": {
     "edition": "GURPS Basic Set: Characters, 4th ed. (SJG 2004)",
@@ -2330,7 +2330,7 @@
     },
     {
       "id": "K014",
-      "name": "표시완",
+      "name": "대니얼 브룩스",
       "url": "/people/person-0014",
       "state": "S01",
       "method": "card-lexicon",
@@ -2339,7 +2339,7 @@
         "evidence": [
           {
             "path": "lore/characters/Cast-State-01.json",
-            "pointer": "/content/181/items/1/ko",
+            "pointer": "/content/182/items/1/ko",
             "quote": "생업: 계약 전갈 전달"
           }
         ]
@@ -2364,7 +2364,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/182/text/ko",
+              "pointer": "/content/183/text/ko",
               "quote": "전갈을 배급구역과 감사실에 동시에 보내고, 단수 예고는 장필규의 날인과 이서담의 연서가 둘 다 있어야 달린다."
             }
           ]
@@ -2387,7 +2387,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/182/text/ko",
+              "pointer": "/content/183/text/ko",
               "quote": "전갈을 배급구역과 감사실에 동시에 보내고, 단수 예고는 장필규의 날인과 이서담의 연서가 둘 다 있어야 달린다."
             }
           ],
@@ -2403,7 +2403,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/181/items/1/ko",
+              "pointer": "/content/182/items/1/ko",
               "quote": "생업: 계약 전갈 전달"
             }
           ],
@@ -2419,7 +2419,7 @@
           "evidence": [
             {
               "path": "lore/characters/Cast-State-01.json",
-              "pointer": "/content/181/items/3/ko",
+              "pointer": "/content/182/items/3/ko",
               "quote": "한류공."
             }
           ],
@@ -2468,7 +2468,7 @@
         "size": 4,
         "current_location": "지하 보도",
         "camp": {
-          "name": "표시완 지하도 야영지",
+          "name": "대니얼 브룩스 지하도 야영지",
           "type": "야영지",
           "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25436,7 +25436,7 @@
     },
     {
       "id": "K170",
-      "name": "신가온",
+      "name": "알렉산더 밀러",
       "url": "/people/person-0171",
       "state": "S07",
       "method": "card-lexicon",
@@ -25558,7 +25558,7 @@
         "size": 4,
         "current_location": "폐컨테이너 적치장",
         "camp": {
-          "name": "신가온 컨테이너 야영지",
+          "name": "알렉산더 밀러 컨테이너 야영지",
           "type": "야영지",
           "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25574,7 +25574,7 @@
     },
     {
       "id": "K171",
-      "name": "권시온",
+      "name": "에바 노바코바",
       "url": "/people/person-0172",
       "state": "S07",
       "method": "card-lexicon",
@@ -25674,7 +25674,7 @@
         "size": 4,
         "current_location": "폐건물 옥상",
         "camp": {
-          "name": "권시온 옥상 야영지",
+          "name": "에바 노바코바 옥상 야영지",
           "type": "야영지",
           "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25690,7 +25690,7 @@
     },
     {
       "id": "K172",
-      "name": "황지호",
+      "name": "아이작 워커",
       "url": "/people/person-0173",
       "state": "S07",
       "method": "card-lexicon",
@@ -25817,7 +25817,7 @@
         "size": 4,
         "current_location": "한강 둔치",
         "camp": {
-          "name": "황지호 한강변 야영지",
+          "name": "아이작 워커 한강변 야영지",
           "type": "야영지",
           "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25833,7 +25833,7 @@
     },
     {
       "id": "K173",
-      "name": "송이든",
+      "name": "루카스 슈나이더",
       "url": "/people/person-0174",
       "state": "S07",
       "method": "card-lexicon",
@@ -25944,7 +25944,7 @@
         "size": 4,
         "current_location": "운행 중단 역사",
         "camp": {
-          "name": "송이든 폐역 야영지",
+          "name": "루카스 슈나이더 폐역 야영지",
           "type": "야영지",
           "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -25960,7 +25960,7 @@
     },
     {
       "id": "K174",
-      "name": "강다은",
+      "name": "클라라 베넷",
       "url": "/people/person-0175",
       "state": "S07",
       "method": "card-lexicon",
@@ -26060,7 +26060,7 @@
         "size": 4,
         "current_location": "고가도로 밑",
         "camp": {
-          "name": "강다은 고가도로 하부 야영지",
+          "name": "클라라 베넷 고가도로 하부 야영지",
           "type": "야영지",
           "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26076,7 +26076,7 @@
     },
     {
       "id": "K175",
-      "name": "양건우",
+      "name": "미콜라 본다렌코",
       "url": "/people/person-0176",
       "state": "S07",
       "method": "card-lexicon",
@@ -26223,7 +26223,7 @@
         "size": 4,
         "current_location": "지하 보도",
         "camp": {
-          "name": "양건우 지하도 야영지",
+          "name": "미콜라 본다렌코 지하도 야영지",
           "type": "야영지",
           "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26239,7 +26239,7 @@
     },
     {
       "id": "K176",
-      "name": "주서람",
+      "name": "나탈리야 소콜로바",
       "url": "/people/person-0177",
       "state": "S07",
       "method": "card-lexicon",
@@ -26360,7 +26360,7 @@
         "size": 4,
         "current_location": "외곽 산지",
         "camp": {
-          "name": "주서람 산림 야영지",
+          "name": "나탈리야 소콜로바 산림 야영지",
           "type": "야영지",
           "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26376,7 +26376,7 @@
     },
     {
       "id": "K177",
-      "name": "차호민",
+      "name": "가브리엘 존슨",
       "url": "/people/person-0178",
       "state": "S07",
       "method": "card-lexicon",
@@ -26529,7 +26529,7 @@
         "size": 4,
         "current_location": "중단된 공사장",
         "camp": {
-          "name": "차호민 공사장 야영지",
+          "name": "가브리엘 존슨 공사장 야영지",
           "type": "야영지",
           "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26545,7 +26545,7 @@
     },
     {
       "id": "K178",
-      "name": "설민우",
+      "name": "마커스 윌슨",
       "url": "/people/person-0179",
       "state": "S07",
       "method": "card-lexicon",
@@ -26585,7 +26585,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/117/text/ko",
-              "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 신가온의 키가 동시에 있어야 연다."
+              "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다."
             },
             {
               "path": "lore/characters/Cast-State-07.json",
@@ -26618,7 +26618,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/117/text/ko",
-              "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 신가온의 키가 동시에 있어야 연다."
+              "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다."
             }
           ],
           "cp": 8,
@@ -26719,7 +26719,7 @@
     },
     {
       "id": "K179",
-      "name": "지온유",
+      "name": "소피아 로시",
       "url": "/people/person-0180",
       "state": "S07",
       "method": "card-lexicon",
@@ -26754,7 +26754,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/128/text/ko",
-              "quote": "전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 권시온의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다."
+              "quote": "전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다."
             }
           ]
         },
@@ -26782,7 +26782,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/128/text/ko",
-              "quote": "전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 권시온의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다."
+              "quote": "전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다."
             }
           ],
           "cp": 8,
@@ -26846,7 +26846,7 @@
         "size": 4,
         "current_location": "폐컨테이너 적치장",
         "camp": {
-          "name": "지온유 컨테이너 야영지",
+          "name": "소피아 로시 컨테이너 야영지",
           "type": "야영지",
           "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -26862,7 +26862,7 @@
     },
     {
       "id": "K180",
-      "name": "마하린",
+      "name": "패트릭 오코너",
       "url": "/people/person-0181",
       "state": "S07",
       "method": "card-lexicon",
@@ -26989,7 +26989,7 @@
         "size": 4,
         "current_location": "폐건물 옥상",
         "camp": {
-          "name": "마하린 옥상 야영지",
+          "name": "패트릭 오코너 옥상 야영지",
           "type": "야영지",
           "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -27005,7 +27005,7 @@
     },
     {
       "id": "K181",
-      "name": "연시완",
+      "name": "레아 마르탱",
       "url": "/people/person-0182",
       "state": "S07",
       "method": "card-lexicon",
@@ -27126,7 +27126,7 @@
         "size": 4,
         "current_location": "한강 둔치",
         "camp": {
-          "name": "연시완 한강변 야영지",
+          "name": "레아 마르탱 한강변 야영지",
           "type": "야영지",
           "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -27142,7 +27142,7 @@
     },
     {
       "id": "K182",
-      "name": "나길호",
+      "name": "마테우시 코발스키",
       "url": "/people/person-0183",
       "state": "S07",
       "method": "card-lexicon",
@@ -27264,7 +27264,7 @@
     },
     {
       "id": "K183",
-      "name": "양채윤",
+      "name": "앙드레 뒤부아",
       "url": "/people/person-0184",
       "state": "S07",
       "method": "card-lexicon",
@@ -27402,7 +27402,7 @@
     },
     {
       "id": "K184",
-      "name": "주하음",
+      "name": "헬레나 비슈니에프스카",
       "url": "/people/person-0185",
       "state": "S07",
       "method": "card-lexicon",
@@ -27560,7 +27560,7 @@
     },
     {
       "id": "K185",
-      "name": "차라온",
+      "name": "노아 데이비스",
       "url": "/people/person-0186",
       "state": "S07",
       "method": "card-lexicon",
@@ -27595,7 +27595,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/172/text/ko",
-              "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 황지호의 정비 일지 연서로 숙소 옆 진료를 연다."
+              "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다."
             },
             {
               "path": "lore/characters/Cast-State-07.json",
@@ -27628,7 +27628,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/172/text/ko",
-              "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 황지호의 정비 일지 연서로 숙소 옆 진료를 연다."
+              "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다."
             },
             {
               "path": "lore/characters/Cast-State-07.json",
@@ -27692,7 +27692,7 @@
     },
     {
       "id": "K186",
-      "name": "설우찬",
+      "name": "아데올라 아데예미",
       "url": "/people/person-0187",
       "state": "S07",
       "method": "card-lexicon",
@@ -27727,7 +27727,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/183/text/ko",
-              "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 양채윤에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다."
+              "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 앙드레 뒤부아에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다."
             }
           ]
         },
@@ -27755,7 +27755,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/183/text/ko",
-              "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 양채윤에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다."
+              "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 앙드레 뒤부아에게 보내고, 최저 출력 이하면 원로의 독촉이 있어도 가문 배전을 끊는다."
             }
           ],
           "cp": 8,
@@ -27814,7 +27814,7 @@
     },
     {
       "id": "K187",
-      "name": "단시온",
+      "name": "마르틴 호라크",
       "url": "/people/person-0188",
       "state": "S07",
       "method": "card-lexicon",
@@ -27854,7 +27854,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/195/text/ko",
-              "quote": "겨울의 검은 배차표가 의료열차 무기와 북부 후계시험 부품 조작을 동시에 드러내자 단시온은 창 전 편성의 열람을 청구했다."
+              "quote": "겨울의 검은 배차표가 의료열차 무기와 북부 후계시험 부품 조작을 동시에 드러내자 마르틴 호라크는 창 전 편성의 열람을 청구했다."
             }
           ]
         },
@@ -27887,7 +27887,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/195/text/ko",
-              "quote": "겨울의 검은 배차표가 의료열차 무기와 북부 후계시험 부품 조작을 동시에 드러내자 단시온은 창 전 편성의 열람을 청구했다."
+              "quote": "겨울의 검은 배차표가 의료열차 무기와 북부 후계시험 부품 조작을 동시에 드러내자 마르틴 호라크는 창 전 편성의 열람을 청구했다."
             }
           ],
           "cp": 8,
@@ -27946,7 +27946,7 @@
     },
     {
       "id": "K188",
-      "name": "순가온",
+      "name": "스테판 페트로프",
       "url": "/people/person-0189",
       "state": "S07",
       "method": "card-lexicon",
@@ -28068,7 +28068,7 @@
     },
     {
       "id": "K189",
-      "name": "홍재민",
+      "name": "아나 포페스쿠",
       "url": "/people/person-0190",
       "state": "S07",
       "method": "card-lexicon",
@@ -28113,7 +28113,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/217/text/ko",
-              "quote": "홍재민은 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
+              "quote": "아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
             }
           ]
         },
@@ -28151,7 +28151,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/217/text/ko",
-              "quote": "홍재민은 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
+              "quote": "아나 포페스쿠는 연장 청구와 실제 정차 시간을 나란히 벽에 쓰고, 그 열차를 증언에서 하루 묶어 박태겸의 중계 유지가 이 창에서 버티는지 본다."
             }
           ],
           "cp": 8,
@@ -28226,7 +28226,7 @@
     },
     {
       "id": "K190",
-      "name": "추한결",
+      "name": "필리프 뮐러",
       "url": "/people/person-0191",
       "state": "S07",
       "method": "card-lexicon",
@@ -28380,7 +28380,7 @@
     },
     {
       "id": "K191",
-      "name": "어지율",
+      "name": "엘레나 모로조바",
       "url": "/people/person-0192",
       "state": "S07",
       "method": "card-lexicon",
@@ -28565,7 +28565,7 @@
     },
     {
       "id": "K192",
-      "name": "란하율",
+      "name": "올렉산드르 셰우첸코",
       "url": "/people/person-0193",
       "state": "S07",
       "method": "card-lexicon",
@@ -28610,7 +28610,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/250/text/ko",
-              "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 란하율은 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
+              "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
             }
           ]
         },
@@ -28638,7 +28638,7 @@
             {
               "path": "lore/characters/Cast-State-07.json",
               "pointer": "/content/250/text/ko",
-              "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 란하율은 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
+              "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
             }
           ],
           "cp": 8,
@@ -28734,7 +28734,7 @@
     },
     {
       "id": "K193",
-      "name": "권해진",
+      "name": "케빈 화이트",
       "url": "/people/person-0194",
       "state": "S07",
       "method": "card-lexicon",
@@ -29559,7 +29559,7 @@
     },
     {
       "id": "K199",
-      "name": "오도윤",
+      "name": "피터 얀센",
       "url": "/people/person-0200",
       "state": "S08",
       "method": "card-lexicon",
@@ -29670,7 +29670,7 @@
         "size": 4,
         "current_location": "폐컨테이너 적치장",
         "camp": {
-          "name": "오도윤 컨테이너 야영지",
+          "name": "피터 얀센 컨테이너 야영지",
           "type": "야영지",
           "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
           "facilities": [
@@ -63867,7 +63867,7 @@
     },
     {
       "id": "K430",
-      "name": "윤시우",
+      "name": "엘리스 해리스",
       "url": "/people/person-0430",
       "state": "S07",
       "method": "card-lexicon",
@@ -66172,7 +66172,7 @@
     },
     {
       "id": "K446",
-      "name": "손나연",
+      "name": "앙투안 르페브르",
       "url": "/people/person-0446",
       "state": "S07",
       "method": "card-lexicon",
@@ -68556,7 +68556,7 @@
     },
     {
       "id": "K462",
-      "name": "진채린",
+      "name": "아그니에슈카 지엘린스카",
       "url": "/people/person-0462",
       "state": "S07",
       "method": "card-lexicon",
@@ -70898,7 +70898,7 @@
     },
     {
       "id": "K478",
-      "name": "황우진",
+      "name": "벤저민 클라크",
       "url": "/people/person-0478",
       "state": "S07",
       "method": "card-lexicon",
@@ -73220,7 +73220,7 @@
     },
     {
       "id": "K494",
-      "name": "하세은",
+      "name": "다비트 피셔",
       "url": "/people/person-0494",
       "state": "S07",
       "method": "card-lexicon",
@@ -75587,7 +75587,7 @@
     },
     {
       "id": "K510",
-      "name": "윤다율",
+      "name": "키아라 리치",
       "url": "/people/person-0510",
       "state": "S07",
       "method": "card-lexicon",
@@ -77950,7 +77950,7 @@
     },
     {
       "id": "K526",
-      "name": "손수호",
+      "name": "파벨 네메츠",
       "url": "/people/person-0526",
       "state": "S07",
       "method": "card-lexicon",
@@ -80214,7 +80214,7 @@
     },
     {
       "id": "K542",
-      "name": "진달린",
+      "name": "안드레이 이바노프",
       "url": "/people/person-0542",
       "state": "S07",
       "method": "card-lexicon",
@@ -82566,7 +82566,7 @@
     },
     {
       "id": "K558",
-      "name": "황람아",
+      "name": "밀리선트 멘사",
       "url": "/people/person-0558",
       "state": "S07",
       "method": "card-lexicon",
@@ -84914,7 +84914,7 @@
     },
     {
       "id": "K574",
-      "name": "하차재",
+      "name": "콜린 머피",
       "url": "/people/person-0574",
       "state": "S07",
       "method": "card-lexicon",
@@ -87235,7 +87235,7 @@
     },
     {
       "id": "K590",
-      "name": "윤하율",
+      "name": "줄리아나 리드",
       "url": "/people/person-0590",
       "state": "S07",
       "method": "card-lexicon",
@@ -89613,7 +89613,7 @@
     },
     {
       "id": "K606",
-      "name": "손다연",
+      "name": "시몬 카민스키",
       "url": "/people/person-0606",
       "state": "S07",
       "method": "card-lexicon",
@@ -92008,7 +92008,7 @@
     },
     {
       "id": "K622",
-      "name": "진바혁",
+      "name": "미하이 이오네스쿠",
       "url": "/people/person-0622",
       "state": "S07",
       "method": "card-lexicon",
@@ -94369,7 +94369,7 @@
     },
     {
       "id": "K638",
-      "name": "황동아",
+      "name": "조피아 도브로프스카",
       "url": "/people/person-0638",
       "state": "S07",
       "method": "card-lexicon",
@@ -96730,7 +96730,7 @@
     },
     {
       "id": "K654",
-      "name": "하름은",
+      "name": "디미터르 게오르기에프",
       "url": "/people/person-0654",
       "state": "S07",
       "method": "card-lexicon",
@@ -99072,7 +99072,7 @@
     },
     {
       "id": "K670",
-      "name": "윤나우",
+      "name": "한나 베버",
       "url": "/people/person-0670",
       "state": "S07",
       "method": "card-lexicon",
@@ -101442,7 +101442,7 @@
     },
     {
       "id": "K686",
-      "name": "손파연",
+      "name": "테오도르 뒤랑",
       "url": "/people/person-0686",
       "state": "S07",
       "method": "card-lexicon",
@@ -103856,7 +103856,7 @@
     },
     {
       "id": "K702",
-      "name": "김구연",
+      "name": "오언 켈리",
       "url": "/people/person-0702",
       "state": "S07",
       "method": "card-lexicon",
@@ -106247,7 +106247,7 @@
     },
     {
       "id": "K718",
-      "name": "안가민",
+      "name": "아비게일 로빈슨",
       "url": "/people/person-0718",
       "state": "S07",
       "method": "card-lexicon",
@@ -108520,7 +108520,7 @@
     },
     {
       "id": "K734",
-      "name": "성금현",
+      "name": "크리스토퍼 스콧",
       "url": "/people/person-0734",
       "state": "S07",
       "method": "card-lexicon",
@@ -110887,7 +110887,7 @@
     },
     {
       "id": "K750",
-      "name": "한산우",
+      "name": "올레나 멜니크",
       "url": "/people/person-0750",
       "state": "S07",
       "method": "card-lexicon",
@@ -113244,7 +113244,7 @@
     },
     {
       "id": "K766",
-      "name": "허다서",
+      "name": "로렌초 콘티",
       "url": "/people/person-0766",
       "state": "S07",
       "method": "card-lexicon",
@@ -115581,7 +115581,7 @@
     },
     {
       "id": "K782",
-      "name": "최동아",
+      "name": "니키타 볼코프",
       "url": "/people/person-0782",
       "state": "S07",
       "method": "card-lexicon",
@@ -117959,7 +117959,7 @@
     },
     {
       "id": "K798",
-      "name": "홍름훈",
+      "name": "엠마 킹",
       "url": "/people/person-0798",
       "state": "S07",
       "method": "card-lexicon",
@@ -120326,7 +120326,7 @@
     },
     {
       "id": "K814",
-      "name": "우마민",
+      "name": "토마시 스보보다",
       "url": "/people/person-0814",
       "state": "S07",
       "method": "card-lexicon",
@@ -122659,7 +122659,7 @@
     },
     {
       "id": "K830",
-      "name": "서은은",
+      "name": "아미나 은디아예",
       "url": "/people/person-0830",
       "state": "S07",
       "method": "card-lexicon",
@@ -125094,7 +125094,7 @@
     },
     {
       "id": "K846",
-      "name": "심강현",
+      "name": "제이컵 토머스",
       "url": "/people/person-0846",
       "state": "S07",
       "method": "card-lexicon",
@@ -127515,7 +127515,7 @@
     },
     {
       "id": "K862",
-      "name": "조사준",
+      "name": "빅토르 스타네스쿠",
       "url": "/people/person-0862",
       "state": "S07",
       "method": "card-lexicon",
@@ -129859,7 +129859,7 @@
     },
     {
       "id": "K878",
-      "name": "손하호",
+      "name": "카밀라 마주르",
       "url": "/people/person-0878",
       "state": "S07",
       "method": "card-lexicon",
@@ -132247,7 +132247,7 @@
     },
     {
       "id": "K894",
-      "name": "진다린",
+      "name": "세바스티안 브라운",
       "url": "/people/person-0894",
       "state": "S07",
       "method": "card-lexicon",
@@ -134610,7 +134610,7 @@
     },
     {
       "id": "K910",
-      "name": "송타지",
+      "name": "마리야 코발렌코",
       "url": "/people/person-0910",
       "state": "S07",
       "method": "card-lexicon",
@@ -136969,7 +136969,7 @@
     },
     {
       "id": "K926",
-      "name": "차빛원",
+      "name": "에티엔 모로",
       "url": "/people/person-0926",
       "state": "S07",
       "method": "card-lexicon",
@@ -139381,7 +139381,7 @@
     },
     {
       "id": "K942",
-      "name": "한새우",
+      "name": "조지 앤더슨",
       "url": "/people/person-0942",
       "state": "S07",
       "method": "card-lexicon",
@@ -141717,7 +141717,7 @@
     },
     {
       "id": "K958",
-      "name": "남동원",
+      "name": "바르보라 프로하스코바",
       "url": "/people/person-0958",
       "state": "S07",
       "method": "card-lexicon",
@@ -144022,7 +144022,7 @@
     },
     {
       "id": "K974",
-      "name": "정름준",
+      "name": "미겔 토레스",
       "url": "/people/person-0974",
       "state": "S07",
       "method": "card-lexicon",
@@ -146373,7 +146373,7 @@
     },
     {
       "id": "K990",
-      "name": "양아태",
+      "name": "이사벨 가르시아",
       "url": "/people/person-0990",
       "state": "S07",
       "method": "card-lexicon",
@@ -150330,7 +150330,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/8/items/9/ko",
+            "pointer": "/content/8/items/10/ko",
             "quote": "생업: 정비사"
           }
         ]
@@ -150372,7 +150372,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/8/items/9/ko",
+              "pointer": "/content/8/items/10/ko",
               "quote": "생업: 정비사"
             }
           ],
@@ -150388,7 +150388,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/8/items/8/ko",
+              "pointer": "/content/8/items/9/ko",
               "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
             }
           ]
@@ -150400,7 +150400,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/8/items/8/ko",
+              "pointer": "/content/8/items/9/ko",
               "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
             }
           ]
@@ -150412,7 +150412,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/8/items/8/ko",
+              "pointer": "/content/8/items/9/ko",
               "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
             }
           ]
@@ -150483,7 +150483,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/10/items/9/ko",
+            "pointer": "/content/12/items/9/ko",
             "quote": "생업: 전령 (주), 물류상 (부)"
           }
         ]
@@ -150525,7 +150525,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/9/ko",
+              "pointer": "/content/12/items/9/ko",
               "quote": "생업: 전령 (주), 물류상 (부)"
             }
           ],
@@ -150541,7 +150541,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/9/ko",
+              "pointer": "/content/12/items/9/ko",
               "quote": "생업: 전령 (주), 물류상 (부)"
             }
           ],
@@ -150557,7 +150557,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/8/ko",
+              "pointer": "/content/12/items/8/ko",
               "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
             }
           ]
@@ -150569,7 +150569,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/8/ko",
+              "pointer": "/content/12/items/8/ko",
               "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
             }
           ]
@@ -150581,7 +150581,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/10/items/8/ko",
+              "pointer": "/content/12/items/8/ko",
               "quote": "언어: 영어·아랍어 일상, 한국어 통행 용어"
             }
           ]
@@ -150652,7 +150652,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/12/items/9/ko",
+            "pointer": "/content/14/items/9/ko",
             "quote": "생업: 기록관 (주), 전령 (부)"
           }
         ]
@@ -150694,7 +150694,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/12/items/9/ko",
+              "pointer": "/content/14/items/9/ko",
               "quote": "생업: 기록관 (주), 전령 (부)"
             }
           ],
@@ -150710,7 +150710,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/12/items/9/ko",
+              "pointer": "/content/14/items/9/ko",
               "quote": "생업: 기록관 (주), 전령 (부)"
             }
           ],
@@ -150726,7 +150726,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/12/items/8/ko",
+              "pointer": "/content/14/items/8/ko",
               "quote": "언어: 영어·한국어. 군 용어 잔존"
             }
           ]
@@ -150738,7 +150738,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/12/items/8/ko",
+              "pointer": "/content/14/items/8/ko",
               "quote": "언어: 영어·한국어. 군 용어 잔존"
             }
           ]
@@ -150809,7 +150809,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/14/items/9/ko",
+            "pointer": "/content/16/items/9/ko",
             "quote": "생업: 전령"
           }
         ]
@@ -150851,7 +150851,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/14/items/9/ko",
+              "pointer": "/content/16/items/9/ko",
               "quote": "생업: 전령"
             }
           ],
@@ -150867,7 +150867,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/14/items/8/ko",
+              "pointer": "/content/16/items/8/ko",
               "quote": "언어: 러시아어 일상, 한국어 시장, 고려말 잔존"
             }
           ]
@@ -150879,7 +150879,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/14/items/8/ko",
+              "pointer": "/content/16/items/8/ko",
               "quote": "언어: 러시아어 일상, 한국어 시장, 고려말 잔존"
             }
           ]
@@ -150891,7 +150891,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/14/items/8/ko",
+              "pointer": "/content/16/items/8/ko",
               "quote": "언어: 러시아어 일상, 한국어 시장, 고려말 잔존"
             }
           ]
@@ -150962,7 +150962,7 @@
         "evidence": [
           {
             "path": "lore/factions/Diaspora-Corridors.json",
-            "pointer": "/content/16/items/9/ko",
+            "pointer": "/content/18/items/10/ko",
             "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
           }
         ]
@@ -151004,7 +151004,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/16/items/9/ko",
+              "pointer": "/content/18/items/10/ko",
               "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
             }
           ],
@@ -151020,7 +151020,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/16/items/9/ko",
+              "pointer": "/content/18/items/10/ko",
               "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
             }
           ],
@@ -151036,7 +151036,7 @@
           "evidence": [
             {
               "path": "lore/factions/Diaspora-Corridors.json",
-              "pointer": "/content/16/items/8/ko",
+              "pointer": "/content/18/items/9/ko",
               "quote": "언어: 한국어"
             }
           ]

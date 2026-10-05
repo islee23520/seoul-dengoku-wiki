@@ -12,6 +12,362 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-우별민",
   "detailRoute": "/people/person-0891",
+  "birthDate": "2087-03-05",
+  "birthday": "03-05",
+  "age": 39,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/621",
+    "lore/characters/Cast-State-04.json#/content/623",
+    "lore/characters/Cast-State-04.json#/content/624"
+  ],
+  "familyTree": {
+    "personId": "K891",
+    "nodes": [
+      {
+        "id": "K891",
+        "personId": "K891",
+        "kind": "person",
+        "name": "우별민",
+        "birthDate": "2087-03-05",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K891"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-우별민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0891"
+      },
+      {
+        "id": "FH-K891-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "우승리",
+        "birthDate": "2057-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2095,
+            "summary": "우승리는 신정 차량기지에서 부품 출고 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-우별민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K891-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "우승나",
+        "birthDate": "2027-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2065,
+            "summary": "우승나는 신정 차량기지에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-우별민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K891-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "우승온",
+        "birthDate": "1997-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "우승온은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-우별민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K891-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정민우",
+        "birthDate": "2057-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2095,
+            "summary": "정민우는 신정 차량기지에서 부품 출고 검사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-우별민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K891-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤민석",
+        "birthDate": "2027-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2065,
+            "summary": "윤민석은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-우별민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K891-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한도도",
+        "birthDate": "1997-03-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한도도는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-우별민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K891-P-01:K891:biological",
+        "from": "FH-K891-P-01",
+        "to": "K891",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K891-P-02:FH-K891-P-01:biological",
+        "from": "FH-K891-P-02",
+        "to": "FH-K891-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K891-P-03:FH-K891-P-02:biological",
+        "from": "FH-K891-P-03",
+        "to": "FH-K891-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K891-M-01:K891:biological",
+        "from": "FH-K891-M-01",
+        "to": "K891",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K891-M-02:FH-K891-M-01:biological",
+        "from": "FH-K891-M-02",
+        "to": "FH-K891-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K891-M-03:FH-K891-M-02:biological",
+        "from": "FH-K891-M-03",
+        "to": "FH-K891-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-우별민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K891",
     "personId": "person-0891",
@@ -145,17 +501,24 @@
     "무공": "단철공.",
     "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 우별민은 출고 검사에서 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 창고 부품과 원로 날인을 확인해 불량 상자가 정상 출고품으로 섞인 곳을 찾는다.",
     "야망": "부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.",
     "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 부품 출고 검사\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −25 | 물질 35 | 공동 20 | 원칙 −5 | 공개 −15 | 자격 35 | 분산 25 | 변혁 5\n- 욕망: 갈망 15 | 독점 −30 | 위험 25 | 과시 −25 | 지속 0 | 지향 양성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 부품 출고 검사\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 우별민은 출고 검사에서 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 창고 부품과 원로 날인을 확인해 불량 상자가 정상 출고품으로 섞인 곳을 찾는다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −25 | 물질 35 | 공동 20 | 원칙 −5 | 공개 −15 | 자격 35 | 분산 25 | 변혁 5\n- 욕망: 갈망 15 | 독점 −30 | 위험 25 | 과시 −25 | 지속 0 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "우별민",
+        "type": "계약",
+        "to": "박세린",
+        "basis": "우별민은 출고 검사에서 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 창고 부품과 원로 날인을 확인해 불량 상자가 정상 출고품으로 섞인 곳을 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

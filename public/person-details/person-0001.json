@@ -12,6 +12,268 @@
   "stateName": "수문국",
   "sourceRoute": "/world/Core-Characters#한재목",
   "detailRoute": "/people/person-0001",
+  "birthDate": "2069-06-17",
+  "birthday": "06-17",
+  "age": 57,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-01.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/3",
+    "lore/characters/Core-Characters.json#/content/6",
+    "lore/chronology/Century-Annals.json#/content/460",
+    "lore/chronology/Century-Annals.json#/content/462",
+    "lore/chronology/Century-Annals.json#/content/595",
+    "lore/chronology/Century-Annals.json#/content/629",
+    "lore/chronology/Scenario-Timeline.json#/content/7",
+    "lore/chronology/Scenario-Timeline.json#/content/11"
+  ],
+  "familyTree": {
+    "personId": "K001",
+    "nodes": [
+      {
+        "id": "K001",
+        "personId": "K001",
+        "kind": "person",
+        "name": "한재목",
+        "birthDate": "2069-06-17",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K001"
+          },
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울아리수본부 영등포아리수정수센터 당직의 손에서 자랐다. 할아버지가 남긴 것은 회사 상호가 아니라 갑문 열쇠와 당직표였다. 한재목은 그 열쇠로 배급구역 대표들의 연서를 받기 전에 수문을 열지 않는 버릇을 배웠다. 물 계약 가문들이 양평역 계약 회의에서 군주를 뽑고, 한재목은 그 선거에서 수문가의 표를 모아 군주 자리에 앉았다. 여의도 금융 회관은 옆나라로 갈라졌고, 이서담이 양천 구역장으로 앉은 것은 그 연서를 제도로 남기려는 거래였다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-한재목-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0001"
+      },
+      {
+        "id": "FH-K001-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승석",
+        "birthDate": "2039-06-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "한승석은 서울아리수본부 영등포아리수정수센터 당직의 손에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-한재목-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K001-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승준",
+        "birthDate": "2009-06-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한승준은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-한재목-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K001-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승석",
+        "birthDate": "2039-06-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "이승석은 서울아리수본부 영등포아리수정수센터 당직의 손에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-한재목-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K001-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최승석",
+        "birthDate": "2009-06-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최승석은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-한재목-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K001-P-01:K001:biological",
+        "from": "FH-K001-P-01",
+        "to": "K001",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K001-P-02:FH-K001-P-01:biological",
+        "from": "FH-K001-P-02",
+        "to": "FH-K001-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K001-M-01:K001:biological",
+        "from": "FH-K001-M-01",
+        "to": "K001",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K001-M-02:FH-K001-M-01:biological",
+        "from": "FH-K001-M-02",
+        "to": "FH-K001-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-한재목-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K001",
     "personId": "person-0001",
@@ -253,7 +515,7 @@
         "basis": "서부 급수문안 공증 심사"
       },
       {
-        "from": "오도윤",
+        "from": "피터 얀센",
         "type": "원한",
         "to": "한재목",
         "basis": "수상 운송 통행세를 꺼리는 원한"
@@ -265,7 +527,7 @@
         "basis": "물 공급 협상을 주거 쪽에서 감시"
       },
       {
-        "from": "표시완",
+        "from": "대니얼 브룩스",
         "type": "계약",
         "to": "한재목",
         "basis": "한재목의 보호권 확대안을 봉인 상태로만 나르며"
@@ -283,7 +545,7 @@
         "basis": "한재목의 서부 문안을 읽어 주며"
       },
       {
-        "from": "추한결",
+        "from": "필리프 뮐러",
         "type": "맹세",
         "to": "한재목",
         "basis": "한재목의 물 공급 최저선을 환적 순서로 받치며"

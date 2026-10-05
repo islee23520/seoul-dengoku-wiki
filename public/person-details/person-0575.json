@@ -12,6 +12,262 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-곽파호",
   "detailRoute": "/people/person-0575",
+  "birthDate": "2074-10-25",
+  "birthday": "10-25",
+  "age": 52,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/369",
+    "lore/characters/Cast-State-08.json#/content/371",
+    "lore/characters/Cast-State-08.json#/content/372"
+  ],
+  "familyTree": {
+    "personId": "K575",
+    "nodes": [
+      {
+        "id": "K575",
+        "personId": "K575",
+        "kind": "person",
+        "name": "곽파호",
+        "birthDate": "2074-10-25",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K575"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽파호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0575"
+      },
+      {
+        "id": "FH-K575-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승희",
+        "birthDate": "2044-10-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "곽승희는 노량진 선창에서 상한 곡물 배분·손실 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽파호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K575-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승규",
+        "birthDate": "2014-10-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "곽승규는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽파호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K575-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김태리",
+        "birthDate": "2044-10-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "김태리는 노량진 선창에서 상한 곡물 배분·손실 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽파호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K575-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박재석",
+        "birthDate": "2014-10-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박재석은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽파호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K575-P-01:K575:biological",
+        "from": "FH-K575-P-01",
+        "to": "K575",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K575-P-02:FH-K575-P-01:biological",
+        "from": "FH-K575-P-02",
+        "to": "FH-K575-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K575-M-01:K575:biological",
+        "from": "FH-K575-M-01",
+        "to": "K575",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K575-M-02:FH-K575-M-01:biological",
+        "from": "FH-K575-M-02",
+        "to": "FH-K575-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽파호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K575",
     "personId": "person-0575",
@@ -139,17 +395,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 경매 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 곽파호는 상하기 시작한 곡물을 먼저 배분하고 손실을 조민재에게 알린다. 조민재는 재고 온도와 중량을 확인해 남은 재고를 공개하고, 이미 배분한 곡물이 경매 물량에 다시 잡히는지 살핀다.",
     "야망": "경매 서기 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.",
     "공포": "경매 서기 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 상한 곡물 배분·손실 공개\n- 직함: 경매 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 경매 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 경매 서기 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.\n\n**공포.** 경매 서기 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −15 | 물질 85 | 공동 −30 | 원칙 −40 | 공개 15 | 자격 10 | 분산 15 | 변혁 5\n- 욕망: 갈망 −5 | 독점 30 | 위험 30 | 과시 25 | 지속 10 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙기술보존원\n- 품계: 교도\n- 생업: 상한 곡물 배분·손실 공개\n- 직함: 경매 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 경매 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 곽파호는 상하기 시작한 곡물을 먼저 배분하고 손실을 조민재에게 알린다. 조민재는 재고 온도와 중량을 확인해 남은 재고를 공개하고, 이미 배분한 곡물이 경매 물량에 다시 잡히는지 살핀다.\n\n**야망.** 경매 서기 자리에서 중앙기술보존원의 장부를 끊기지 않게 잇는다.\n\n**공포.** 경매 서기 당직이 비면 중앙기술보존원의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −15 | 물질 85 | 공동 −30 | 원칙 −40 | 공개 15 | 자격 10 | 분산 15 | 변혁 5\n- 욕망: 갈망 −5 | 독점 30 | 위험 30 | 과시 25 | 지속 10 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-08"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "곽파호",
+        "type": "계약",
+        "to": "조민재",
+        "basis": "곽파호는 상하기 시작한 곡물을 먼저 배분하고 손실을 조민재에게 알린다. 조민재는 재고 온도와 중량을 확인해 남은 재고를 공개하고, 이미 배분한 곡물이 경매 물량에 다시 잡히는지 살핀다."
+      }
+    ],
     "incoming": []
   }
 }

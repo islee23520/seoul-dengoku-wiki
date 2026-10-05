@@ -12,6 +12,262 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-남새원",
   "detailRoute": "/people/person-0730",
+  "birthDate": "2080-04-23",
+  "birthday": "04-23",
+  "age": 46,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-03.json#/content/511",
+    "lore/characters/Cast-State-03.json#/content/513",
+    "lore/characters/Cast-State-03.json#/content/514"
+  ],
+  "familyTree": {
+    "personId": "K730",
+    "nodes": [
+      {
+        "id": "K730",
+        "personId": "K730",
+        "kind": "person",
+        "name": "남새원",
+        "birthDate": "2080-04-23",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K730"
+          },
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-남새원-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0730"
+      },
+      {
+        "id": "FH-K730-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "남승섭",
+        "birthDate": "2050-04-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2088,
+            "summary": "남승섭은 대합실 당직에서 당직 기록 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-남새원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K730-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "남승성",
+        "birthDate": "2020-04-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "남승성은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-남새원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K730-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조재빈",
+        "birthDate": "2050-04-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2088,
+            "summary": "조재빈은 대합실 당직에서 당직 기록 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-남새원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K730-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김재욱",
+        "birthDate": "2020-04-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김재욱은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-남새원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K730-P-01:K730:biological",
+        "from": "FH-K730-P-01",
+        "to": "K730",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K730-P-02:FH-K730-P-01:biological",
+        "from": "FH-K730-P-02",
+        "to": "FH-K730-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K730-M-01:K730:biological",
+        "from": "FH-K730-M-01",
+        "to": "K730",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K730-M-02:FH-K730-M-01:biological",
+        "from": "FH-K730-M-02",
+        "to": "FH-K730-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-남새원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K730",
     "personId": "person-0730",
@@ -139,17 +395,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 남새원은 측정에 관한 대질 증언을 장예린에게 전한다. 장예린은 채수 시각과 시약 로트를 확인해 말이 달라진 부분을 실제 검사 조건과 구분한다.",
     "야망": "수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.",
     "공포": "수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −25 | 물질 10 | 공동 −5 | 원칙 40 | 공개 35 | 자격 40 | 분산 10 | 변혁 20\n- 욕망: 갈망 50 | 독점 25 | 위험 15 | 과시 −20 | 지속 10 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 남새원은 측정에 관한 대질 증언을 장예린에게 전한다. 장예린은 채수 시각과 시약 로트를 확인해 말이 달라진 부분을 실제 검사 조건과 구분한다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −25 | 물질 10 | 공동 −5 | 원칙 40 | 공개 35 | 자격 40 | 분산 10 | 변혁 20\n- 욕망: 갈망 50 | 독점 25 | 위험 15 | 과시 −20 | 지속 10 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "남새원",
+        "type": "계약",
+        "to": "장예린",
+        "basis": "남새원은 측정에 관한 대질 증언을 장예린에게 전한다. 장예린은 채수 시각과 시약 로트를 확인해 말이 달라진 부분을 실제 검사 조건과 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

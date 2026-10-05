@@ -12,6 +12,361 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-두감",
   "detailRoute": "/people/person-0252",
+  "birthDate": "2098-02-03",
+  "birthday": "02-03",
+  "age": 28,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/105",
+    "lore/characters/Cast-State-10.json#/content/108"
+  ],
+  "familyTree": {
+    "personId": "K251",
+    "nodes": [
+      {
+        "id": "K251",
+        "personId": "K251",
+        "kind": "person",
+        "name": "두감",
+        "birthDate": "2098-02-03",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K251"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 난로 정비 주지 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-두감-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0252"
+      },
+      {
+        "id": "FH-K251-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "두승진",
+        "birthDate": "2068-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "두승진은 신정 차량기지에서 난로·연통 점검표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K251-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "두승현",
+        "birthDate": "2038-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "두승현은 신정 차량기지에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K251-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "두승영",
+        "birthDate": "2008-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "두승영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K251-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김현란",
+        "birthDate": "2068-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "김현란은 신정 차량기지에서 난로·연통 점검표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K251-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박현나",
+        "birthDate": "2038-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "박현나는 신정 차량기지에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K251-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이현욱",
+        "birthDate": "2008-02-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이현욱은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-두감-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K251-P-01:K251:biological",
+        "from": "FH-K251-P-01",
+        "to": "K251",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K251-P-02:FH-K251-P-01:biological",
+        "from": "FH-K251-P-02",
+        "to": "FH-K251-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K251-P-03:FH-K251-P-02:biological",
+        "from": "FH-K251-P-03",
+        "to": "FH-K251-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K251-M-01:K251:biological",
+        "from": "FH-K251-M-01",
+        "to": "K251",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K251-M-02:FH-K251-M-01:biological",
+        "from": "FH-K251-M-02",
+        "to": "FH-K251-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K251-M-03:FH-K251-M-02:biological",
+        "from": "FH-K251-M-03",
+        "to": "FH-K251-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-두감-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K251",
     "personId": "person-0252",

@@ -12,6 +12,261 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-최도윤",
   "detailRoute": "/people/person-0122",
+  "birthDate": "2066-04-12",
+  "birthday": "04-12",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/16",
+    "lore/characters/Cast-State-05.json#/content/21"
+  ],
+  "familyTree": {
+    "personId": "K121",
+    "nodes": [
+      {
+        "id": "K121",
+        "personId": "K121",
+        "kind": "person",
+        "name": "최도윤",
+        "birthDate": "2066-04-12",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K121"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 동부 급수구역 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-최도윤-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0122"
+      },
+      {
+        "id": "FH-K121-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현민",
+        "birthDate": "2036-04-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "최현민은 영등포 정수 당직에서 골목 배급표·시민 명부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-최도윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K121-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현원",
+        "birthDate": "2006-04-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최현원은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-최도윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K121-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이현준",
+        "birthDate": "2036-04-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "이현준은 영등포 정수 당직에서 골목 배급표·시민 명부 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-최도윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K121-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현진",
+        "birthDate": "2006-04-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최현진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-최도윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K121-P-01:K121:biological",
+        "from": "FH-K121-P-01",
+        "to": "K121",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K121-P-02:FH-K121-P-01:biological",
+        "from": "FH-K121-P-02",
+        "to": "FH-K121-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K121-M-01:K121:biological",
+        "from": "FH-K121-M-01",
+        "to": "K121",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K121-M-02:FH-K121-M-01:biological",
+        "from": "FH-K121-M-02",
+        "to": "FH-K121-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-최도윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K121",
     "personId": "person-0122",
@@ -169,6 +424,36 @@
       }
     ],
     "incoming": [
+      {
+        "from": "신카빈",
+        "type": "계약",
+        "to": "최도윤",
+        "basis": "신카빈은 우회 급수로의 개통과 끊긴 지점을 최도윤에게 알린다. 최도윤은 골목 배급표를 확인해 우회 급수를 실제로 받지 못하는 가족을 찾고 급수 기록을 복무 명부와 구분한다."
+      },
+      {
+        "from": "문사은",
+        "type": "계약",
+        "to": "최도윤",
+        "basis": "문사은은 배급 대표와 조정한 방류량과 공급 상황을 최도윤에게 전한다. 최도윤은 골목 배급표를 확인해 실제 물을 받지 못한 가족을 찾고 공급 조정을 복무 등록과 구분한다."
+      },
+      {
+        "from": "한차우",
+        "type": "계약",
+        "to": "최도윤",
+        "basis": "한차우는 우회 급수로의 개통과 공급 상태를 최도윤에게 알린다. 최도윤은 골목 배급표로 실제 물을 못 받는 가족을 확인해 급수 조정이 복무 등록으로 묶이지 않게 한다."
+      },
+      {
+        "from": "문금은",
+        "type": "계약",
+        "to": "최도윤",
+        "basis": "문금은은 배급 대표와 조정한 방류량을 최도윤에게 전한다. 최도윤은 골목 공급과 가족 배급표를 확인해 조정량과 실제 받는 물이 어긋난 곳을 찾는다."
+      },
+      {
+        "from": "곽북호",
+        "type": "계약",
+        "to": "최도윤",
+        "basis": "곽북호는 우회 급수로의 개통과 공급 상태를 최도윤에게 알린다. 최도윤은 골목 배급표로 물을 못 받는 가족을 확인해 급수 조정을 복무 등록과 구분한다."
+      },
       {
         "from": "차나루",
         "type": "보호체류",

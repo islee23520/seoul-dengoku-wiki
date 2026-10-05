@@ -12,6 +12,262 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-강마유",
   "detailRoute": "/people/person-0707",
+  "birthDate": "2068-10-09",
+  "birthday": "10-09",
+  "age": 58,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/457",
+    "lore/characters/Cast-State-12.json#/content/459",
+    "lore/characters/Cast-State-12.json#/content/460"
+  ],
+  "familyTree": {
+    "personId": "K707",
+    "nodes": [
+      {
+        "id": "K707",
+        "personId": "K707",
+        "kind": "person",
+        "name": "강마유",
+        "birthDate": "2068-10-09",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K707"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-강마유-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0707"
+      },
+      {
+        "id": "FH-K707-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강재찬",
+        "birthDate": "2038-10-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "강재찬은 신내 환승 당직에서 배차 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-강마유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K707-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강재혁",
+        "birthDate": "2008-10-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강재혁은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-강마유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K707-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김재문",
+        "birthDate": "2038-10-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "김재문은 신내 환승 당직에서 배차 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-강마유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K707-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박재도",
+        "birthDate": "2008-10-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박재도는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-강마유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K707-P-01:K707:biological",
+        "from": "FH-K707-P-01",
+        "to": "K707",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K707-P-02:FH-K707-P-01:biological",
+        "from": "FH-K707-P-02",
+        "to": "FH-K707-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K707-M-01:K707:biological",
+        "from": "FH-K707-M-01",
+        "to": "K707",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K707-M-02:FH-K707-M-01:biological",
+        "from": "FH-K707-M-02",
+        "to": "FH-K707-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-강마유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K707",
     "personId": "person-0707",
@@ -139,17 +395,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 배차 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 강마유는 통로가 막혀 늦어진 배차 전갈을 안도한에게 전한다. 안도한은 호송 인원과 출발 시각을 고쳐 실제 도착하지 않은 인원이 출발한 것으로 남지 않게 한다.",
     "야망": "배차 전령 자리에서 신내운수의 장부를 끊기지 않게 잇는다.",
     "공포": "배차 전령 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 배차 전령 기록·당직 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 배차 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 배차 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 배차 전령 자리에서 신내운수의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 전령 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −40 | 물질 −5 | 공동 30 | 원칙 20 | 공개 30 | 자격 15 | 분산 30 | 변혁 −5\n- 욕망: 갈망 25 | 독점 30 | 위험 0 | 과시 −5 | 지속 −10 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 배차 전령 기록·당직 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 배차 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 배차 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 강마유는 통로가 막혀 늦어진 배차 전갈을 안도한에게 전한다. 안도한은 호송 인원과 출발 시각을 고쳐 실제 도착하지 않은 인원이 출발한 것으로 남지 않게 한다.\n\n**야망.** 배차 전령 자리에서 신내운수의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 전령 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −40 | 물질 −5 | 공동 30 | 원칙 20 | 공개 30 | 자격 15 | 분산 30 | 변혁 −5\n- 욕망: 갈망 25 | 독점 30 | 위험 0 | 과시 −5 | 지속 −10 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-12"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "강마유",
+        "type": "계약",
+        "to": "안도한",
+        "basis": "강마유는 통로가 막혀 늦어진 배차 전갈을 안도한에게 전한다. 안도한은 호송 인원과 출발 시각을 고쳐 실제 도착하지 않은 인원이 출발한 것으로 남지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "person-0782",
-  "name": "최동아",
+  "name": "니키타 볼코프",
   "title": "중계 당직",
   "position": "중계 당직",
   "rank": "주사",
@@ -10,8 +10,359 @@
   "stage": "S4",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-최동아",
+  "sourceRoute": "/world/Cast-State-07#인물-니키타 볼코프",
   "detailRoute": "/people/person-0782",
+  "birthDate": "2077-12-30",
+  "birthday": "12-30",
+  "age": 49,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/501",
+    "lore/characters/Cast-State-07.json#/content/503",
+    "lore/characters/Cast-State-07.json#/content/504"
+  ],
+  "familyTree": {
+    "personId": "K782",
+    "nodes": [
+      {
+        "id": "K782",
+        "personId": "K782",
+        "kind": "person",
+        "name": "니키타 볼코프",
+        "birthDate": "2077-12-30",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K782"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-니키타-볼코프-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Nikita Volkov",
+        "detailRoute": "/people/person-0782"
+      },
+      {
+        "id": "FH-K782-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "세르게이 볼코프",
+        "birthDate": "2047-12-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "세르게이 볼코프는 2047년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2065년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-니키타-볼코프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Sergei Volkov was born in 2047 and grew up reading family and work records. From 2065, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Sergei Volkov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K782-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "알렉세이 볼코프",
+        "birthDate": "2017-12-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2035,
+            "summary": "알렉세이 볼코프는 2017년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2035년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-니키타-볼코프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Alexei Volkov was born in 2017 and grew up reading family and work records. From 2035, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Alexei Volkov",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K782-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "스베틀라나 스미르노바",
+        "birthDate": "2047-12-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "스베틀라나 스미르노바는 2047년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2065년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-니키타-볼코프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Svetlana Smirnova was born in 2047 and grew up reading family and work records. From 2065, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Svetlana Smirnova",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K782-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "베라 스미르노바",
+        "birthDate": "2017-12-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2035,
+            "summary": "베라 스미르노바는 2017년에 태어났다. 동대문·용산 민간 화물 생활권의 가족 기록과 작업 사본을 읽으며 자랐고, 2035년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-니키타-볼코프-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Vera Smirnova was born in 2017 and grew up reading family and work records. From 2035, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Vera Smirnova",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K782-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이반 볼코프",
+        "nameEn": "Ivan Volkov",
+        "birthDate": "1987-12-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K782-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이반 볼코프는 2026년 대정전 당시 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Ivan Volkov was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K782-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K782-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "올가 스미르노바",
+        "nameEn": "Olga Smirnova",
+        "birthDate": "1987-12-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K782-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "올가 스미르노바는 2026년 대정전 당시 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Olga Smirnova was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K782-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K782-P-01:K782:biological",
+        "from": "FH-K782-P-01",
+        "to": "K782",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K782-P-02:FH-K782-P-01:biological",
+        "from": "FH-K782-P-02",
+        "to": "FH-K782-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K782-M-01:K782:biological",
+        "from": "FH-K782-M-01",
+        "to": "K782",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K782-M-02:FH-K782-M-01:biological",
+        "from": "FH-K782-M-02",
+        "to": "FH-K782-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-니키타-볼코프-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K782-P-03:FH-K782-P-02:biological",
+        "from": "FH-K782-P-03",
+        "to": "FH-K782-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K782-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K782-M-03:FH-K782-M-02:biological",
+        "from": "FH-K782-M-03",
+        "to": "FH-K782-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K782-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K782",
     "personId": "person-0782",
@@ -97,11 +448,7 @@
     "note": "S07 가산디지털단지 일대 관할 영지"
   },
   "wandering_force": null,
-  "clan": {
-    "id": "cd5c-c804-c8fc-5d14",
-    "name": "전주 최씨",
-    "crest": "clan-crests/cd5c-c804-c8fc-5d14.svg"
-  },
+  "clan": null,
   "generation": "opening",
   "minors": false,
   "sourceKind": "proposal",
@@ -135,21 +482,28 @@
     "욕망": "갈망 40 | 독점 0 | 위험 40 | 과시 −30 | 지속 −15 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다.",
+    "생애": "2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 니키타 볼코프는 2077년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 이반 볼코프는 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 니키타 볼코프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 거짓 속보를 살리고 진짜 칸에 정정 방송을 붙였다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 니키타 볼코프는 보존한 거짓 속보와 정정 방송을 소피아 로시에게 전한다. 소피아 로시는 이전 소식을 받은 창구를 확인해 정정이 다른 상대에게만 전해지지 않게 한다.",
     "야망": "중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
     "공포": "중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 거짓 속보 보존·정정 방송\n- 직함: 중계 당직\n**생애.** 2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 거짓 속보를 살리고 진짜 칸에 정정 방송을 붙였다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 25 | 무력 −15 | 물질 10 | 공동 −10 | 원칙 5 | 공개 −25 | 자격 25 | 분산 −10 | 변혁 0\n- 욕망: 갈망 40 | 독점 0 | 위험 40 | 과시 −30 | 지속 −15 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 거짓 속보 보존·정정 방송\n- 직함: 중계 당직\n**생애.** 2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 니키타 볼코프는 2077년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 이반 볼코프는 2026년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 니키타 볼코프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 거짓 속보를 살리고 진짜 칸에 정정 방송을 붙였다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 니키타 볼코프는 보존한 거짓 속보와 정정 방송을 소피아 로시에게 전한다. 소피아 로시는 이전 소식을 받은 창구를 확인해 정정이 다른 상대에게만 전해지지 않게 한다.\n\n**야망.** 중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 25 | 무력 −15 | 물질 10 | 공동 −10 | 원칙 5 | 공개 −25 | 자격 25 | 분산 −10 | 변혁 0\n- 욕망: 갈망 40 | 독점 0 | 위험 40 | 과시 −30 | 지속 −15 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "니키타 볼코프",
+        "type": "계약",
+        "to": "소피아 로시",
+        "basis": "니키타 볼코프는 보존한 거짓 속보와 정정 방송을 소피아 로시에게 전한다. 소피아 로시는 이전 소식을 받은 창구를 확인해 정정이 다른 상대에게만 전해지지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

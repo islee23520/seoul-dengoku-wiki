@@ -12,6 +12,260 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-임겨레",
   "detailRoute": "/people/person-0123",
+  "birthDate": "2081-05-28",
+  "birthday": "05-28",
+  "age": 45,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/104"
+  ],
+  "familyTree": {
+    "personId": "K122",
+    "nodes": [
+      {
+        "id": "K122",
+        "personId": "K122",
+        "kind": "person",
+        "name": "임겨레",
+        "birthDate": "2081-05-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K122"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 동부 관문세·보호계약 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-임겨레-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0123"
+      },
+      {
+        "id": "FH-K122-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임승도",
+        "birthDate": "2051-05-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "임승도는 서울역 등기소에서 관문세·보호계약 전표 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-임겨레-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K122-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현석",
+        "birthDate": "2021-05-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임현석은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-임겨레-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K122-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현현",
+        "birthDate": "2051-05-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "최현현은 서울역 등기소에서 관문세·보호계약 전표 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-임겨레-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K122-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현호",
+        "birthDate": "2021-05-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정현호는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-임겨레-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K122-P-01:K122:biological",
+        "from": "FH-K122-P-01",
+        "to": "K122",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K122-P-02:FH-K122-P-01:biological",
+        "from": "FH-K122-P-02",
+        "to": "FH-K122-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K122-M-01:K122:biological",
+        "from": "FH-K122-M-01",
+        "to": "K122",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K122-M-02:FH-K122-M-01:biological",
+        "from": "FH-K122-M-02",
+        "to": "FH-K122-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-임겨레-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K122",
     "personId": "person-0123",
@@ -163,6 +417,12 @@
       }
     ],
     "incoming": [
+      {
+        "from": "강지유",
+        "type": "계약",
+        "to": "임겨레",
+        "basis": "강지유는 사적 청탁을 공개 관문 창구로 돌려 접수하고, 그 기록을 임겨레에게 넘겨 관문세·보호계약 전표와 맞춰 보게 한다. 임겨레는 접수 내용과 전표의 기한이 어긋난 곳을 짚어, 청탁이 정식 통행 근거로 둔갑하는 일을 추적한다."
+      },
       {
         "from": "주은솔",
         "type": "지휘",

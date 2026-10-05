@@ -12,6 +12,362 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-안강민",
   "detailRoute": "/people/person-0519",
+  "birthDate": "2087-07-10",
+  "birthday": "07-10",
+  "age": 39,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/314",
+    "lore/characters/Cast-State-16.json#/content/316",
+    "lore/characters/Cast-State-16.json#/content/317"
+  ],
+  "familyTree": {
+    "personId": "K519",
+    "nodes": [
+      {
+        "id": "K519",
+        "personId": "K519",
+        "kind": "person",
+        "name": "안강민",
+        "birthDate": "2087-07-10",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K519"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 호송 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-안강민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0519"
+      },
+      {
+        "id": "FH-K519-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "안승연",
+        "birthDate": "2057-07-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2095,
+            "summary": "안승연은 암사 경비 초소에서 호송 순찰 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-안강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K519-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "안승정",
+        "birthDate": "2027-07-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2065,
+            "summary": "안승정은 암사 경비 초소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-안강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K519-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "안승아",
+        "birthDate": "1997-07-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "안승아는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-안강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K519-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정태완",
+        "birthDate": "2057-07-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2095,
+            "summary": "정태완은 암사 경비 초소에서 호송 순찰 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-안강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K519-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤태정",
+        "birthDate": "2027-07-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2065,
+            "summary": "윤태정은 암사 경비 초소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-안강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K519-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한태정",
+        "birthDate": "1997-07-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한태정은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-안강민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K519-P-01:K519:biological",
+        "from": "FH-K519-P-01",
+        "to": "K519",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K519-P-02:FH-K519-P-01:biological",
+        "from": "FH-K519-P-02",
+        "to": "FH-K519-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K519-P-03:FH-K519-P-02:biological",
+        "from": "FH-K519-P-03",
+        "to": "FH-K519-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K519-M-01:K519:biological",
+        "from": "FH-K519-M-01",
+        "to": "K519",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K519-M-02:FH-K519-M-01:biological",
+        "from": "FH-K519-M-02",
+        "to": "FH-K519-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K519-M-03:FH-K519-M-02:biological",
+        "from": "FH-K519-M-03",
+        "to": "FH-K519-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-안강민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K519",
     "personId": "person-0519",
@@ -145,17 +501,24 @@
     "무공": "수벽술.",
     "관직": "품계 조합원. 직함은 호송 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 호송 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 안강민은 교량 습격 훈련의 잘못된 최초 보고를 참관 기록으로 확인해 심유리에게 전한다. 심유리는 통행과 손실보상 논의에서 실제 발생한 지연과 훈련상의 오인 보고를 구분한다.",
     "야망": "호송 순찰대 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.",
     "공포": "호송 순찰대 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 호송 순찰 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 호송 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 호송 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 조합원. 직함은 호송 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 호송 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 호송 순찰대 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.\n\n**공포.** 호송 순찰대 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −15 | 물질 10 | 공동 15 | 원칙 30 | 공개 35 | 자격 10 | 분산 45 | 변혁 15\n- 욕망: 갈망 5 | 독점 −10 | 위험 −30 | 과시 10 | 지속 35 | 지향 동성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 호송 순찰 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 호송 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 호송 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 조합원. 직함은 호송 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 호송 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 안강민은 교량 습격 훈련의 잘못된 최초 보고를 참관 기록으로 확인해 심유리에게 전한다. 심유리는 통행과 손실보상 논의에서 실제 발생한 지연과 훈련상의 오인 보고를 구분한다.\n\n**야망.** 호송 순찰대 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.\n\n**공포.** 호송 순찰대 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −15 | 물질 10 | 공동 15 | 원칙 30 | 공개 35 | 자격 10 | 분산 45 | 변혁 15\n- 욕망: 갈망 5 | 독점 −10 | 위험 −30 | 과시 10 | 지속 35 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-16"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "안강민",
+        "type": "계약",
+        "to": "심유리",
+        "basis": "안강민은 교량 습격 훈련의 잘못된 최초 보고를 참관 기록으로 확인해 심유리에게 전한다. 심유리는 통행과 손실보상 논의에서 실제 발생한 지연과 훈련상의 오인 보고를 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

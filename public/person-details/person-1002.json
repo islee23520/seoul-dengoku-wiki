@@ -12,6 +12,362 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-성라현",
   "detailRoute": "/people/person-1002",
+  "birthDate": "2100-07-12",
+  "birthday": "07-12",
+  "age": 26,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/698",
+    "lore/characters/Cast-State-02.json#/content/700",
+    "lore/characters/Cast-State-02.json#/content/701"
+  ],
+  "familyTree": {
+    "personId": "K1002",
+    "nodes": [
+      {
+        "id": "K1002",
+        "personId": "K1002",
+        "kind": "person",
+        "name": "성라현",
+        "birthDate": "2100-07-12",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1002"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "소속: 규격맹",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-성라현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-1002"
+      },
+      {
+        "id": "FH-K1002-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "성승나",
+        "birthDate": "2070-07-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2108,
+            "summary": "성승나는 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-성라현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1002-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "성승온",
+        "birthDate": "2040-07-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "성승온은 신내 환승 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-성라현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1002-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "성승빈",
+        "birthDate": "2010-07-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "성승빈은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-성라현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1002-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강민온",
+        "birthDate": "2070-07-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2108,
+            "summary": "강민온은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-성라현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1002-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임민성",
+        "birthDate": "2040-07-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "임민성은 신내 환승 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-성라현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1002-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "오민리",
+        "birthDate": "2010-07-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오민리는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-성라현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1002-P-01:K1002:biological",
+        "from": "FH-K1002-P-01",
+        "to": "K1002",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1002-P-02:FH-K1002-P-01:biological",
+        "from": "FH-K1002-P-02",
+        "to": "FH-K1002-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1002-P-03:FH-K1002-P-02:biological",
+        "from": "FH-K1002-P-03",
+        "to": "FH-K1002-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1002-M-01:K1002:biological",
+        "from": "FH-K1002-M-01",
+        "to": "K1002",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1002-M-02:FH-K1002-M-01:biological",
+        "from": "FH-K1002-M-02",
+        "to": "FH-K1002-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1002-M-03:FH-K1002-M-02:biological",
+        "from": "FH-K1002-M-03",
+        "to": "FH-K1002-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-성라현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K1002",
     "personId": "person-1002",
@@ -139,17 +495,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 성라현은 침수 폐쇄로 전갈이 멈춘 위치를 명소이에게 알린다. 명소이는 선로·침목을 조사해 우회 가능 여부를 확인하고 작업반이 미확인 길로 가지 않게 한다.",
     "야망": "작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
     "공포": "작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 0 | 물질 30 | 공동 50 | 원칙 5 | 공개 45 | 자격 40 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 −40 | 위험 30 | 과시 −10 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 성라현은 침수 폐쇄로 전갈이 멈춘 위치를 명소이에게 알린다. 명소이는 선로·침목을 조사해 우회 가능 여부를 확인하고 작업반이 미확인 길로 가지 않게 한다.\n\n**야망.** 작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 0 | 물질 30 | 공동 50 | 원칙 5 | 공개 45 | 자격 40 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 −40 | 위험 30 | 과시 −10 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "성라현",
+        "type": "계약",
+        "to": "명소이",
+        "basis": "성라현은 침수 폐쇄로 전갈이 멈춘 위치를 명소이에게 알린다. 명소이는 선로·침목을 조사해 우회 가능 여부를 확인하고 작업반이 미확인 길로 가지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

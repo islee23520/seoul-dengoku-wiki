@@ -12,6 +12,361 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-은채윤",
   "detailRoute": "/people/person-0325",
+  "birthDate": "2094-02-23",
+  "birthday": "02-23",
+  "age": 32,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/72",
+    "lore/characters/Cast-State-13.json#/content/74"
+  ],
+  "familyTree": {
+    "personId": "K324",
+    "nodes": [
+      {
+        "id": "K324",
+        "personId": "K324",
+        "kind": "person",
+        "name": "은채윤",
+        "birthDate": "2094-02-23",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K324"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 중증도 진료 전문의 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-은채윤-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0325"
+      },
+      {
+        "id": "FH-K324-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "은승석",
+        "birthDate": "2064-02-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2102,
+            "summary": "은승석은 제기동 의무소에서 중증도 배정·우선 치료 요청 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-은채윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K324-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "은승준",
+        "birthDate": "2034-02-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "은승준은 제기동 의무소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-은채윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K324-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "은승호",
+        "birthDate": "2004-02-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "은승호는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-은채윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K324-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박준우",
+        "birthDate": "2064-02-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2102,
+            "summary": "박준우는 제기동 의무소에서 중증도 배정·우선 치료 요청 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-은채윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K324-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준윤",
+        "birthDate": "2034-02-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "이준윤은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-은채윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K324-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준희",
+        "birthDate": "2004-02-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최준희는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-은채윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K324-P-01:K324:biological",
+        "from": "FH-K324-P-01",
+        "to": "K324",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K324-P-02:FH-K324-P-01:biological",
+        "from": "FH-K324-P-02",
+        "to": "FH-K324-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K324-P-03:FH-K324-P-02:biological",
+        "from": "FH-K324-P-03",
+        "to": "FH-K324-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K324-M-01:K324:biological",
+        "from": "FH-K324-M-01",
+        "to": "K324",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K324-M-02:FH-K324-M-01:biological",
+        "from": "FH-K324-M-02",
+        "to": "FH-K324-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K324-M-03:FH-K324-M-02:biological",
+        "from": "FH-K324-M-03",
+        "to": "FH-K324-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-은채윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K324",
     "personId": "person-0325",
@@ -164,6 +519,36 @@
       }
     ],
     "incoming": [
+      {
+        "from": "구름결",
+        "type": "계약",
+        "to": "은채윤",
+        "basis": "구름결은 치료 순서를 바꿔 달라는 청탁을 공개 창구로 돌리고 은채윤에게 처방 기록과 요청 내용을 전한다. 은채윤은 진료 소견과 중증도 표로 배정해, 청탁이 더 위중한 환자의 순서를 밀어내지 않게 한다."
+      },
+      {
+        "from": "강솔준",
+        "type": "계약",
+        "to": "은채윤",
+        "basis": "강솔준은 치료 순서를 바꾸라는 청탁을 공개 창구로 돌리고 은채윤에게 처방 기록을 전한다. 은채윤은 중증도와 진료 소견으로 배정해 청탁이 위중한 환자를 밀어내지 않게 한다."
+      },
+      {
+        "from": "성솔현",
+        "type": "계약",
+        "to": "은채윤",
+        "basis": "성솔현은 다시 열린 처방 당직의 기록을 은채윤에게 넘긴다. 은채윤은 중증도와 진료 소견을 확인해 교대 공백 중 빠진 환자의 치료를 잇는다."
+      },
+      {
+        "from": "박별윤",
+        "type": "계약",
+        "to": "은채윤",
+        "basis": "박별윤은 치료 순서를 바꾸라는 청탁을 공개 창구로 돌리고 은채윤에게 처방 기록을 전한다. 은채윤은 중증도와 진료 소견에 따라 배정해 사적 요청이 환자 순서를 앞지르지 않게 한다."
+      },
+      {
+        "from": "차바환",
+        "type": "계약",
+        "to": "은채윤",
+        "basis": "차바환은 치료 순서 청탁을 공개 창구로 돌리고 은채윤에게 처방 기록을 전한다. 은채윤은 중증도·진료 소견으로 배정해 위중한 환자가 청탁에 밀리지 않게 한다."
+      },
       {
         "from": "방한울",
         "type": "사제",

@@ -12,6 +12,362 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-윤새율",
   "detailRoute": "/people/person-0977",
+  "birthDate": "2098-11-07",
+  "birthday": "11-07",
+  "age": 28,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/644",
+    "lore/characters/Cast-State-10.json#/content/646",
+    "lore/characters/Cast-State-10.json#/content/647"
+  ],
+  "familyTree": {
+    "personId": "K977",
+    "nodes": [
+      {
+        "id": "K977",
+        "personId": "K977",
+        "kind": "person",
+        "name": "윤새율",
+        "birthDate": "2098-11-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K977"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 총회 전령·필사본 인계",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤새율-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0977"
+      },
+      {
+        "id": "FH-K977-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤민재",
+        "birthDate": "2068-11-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "윤민재는 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤새율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K977-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤민찬",
+        "birthDate": "2038-11-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "윤민찬은 신내 환승 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤새율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K977-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤민혁",
+        "birthDate": "2008-11-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤민혁은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤새율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K977-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한민혁",
+        "birthDate": "2068-11-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2106,
+            "summary": "한민혁은 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤새율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K977-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강민문",
+        "birthDate": "2038-11-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "강민문은 신내 환승 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤새율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K977-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "임민범",
+        "birthDate": "2008-11-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임민범은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤새율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K977-P-01:K977:biological",
+        "from": "FH-K977-P-01",
+        "to": "K977",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K977-P-02:FH-K977-P-01:biological",
+        "from": "FH-K977-P-02",
+        "to": "FH-K977-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K977-P-03:FH-K977-P-02:biological",
+        "from": "FH-K977-P-03",
+        "to": "FH-K977-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K977-M-01:K977:biological",
+        "from": "FH-K977-M-01",
+        "to": "K977",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K977-M-02:FH-K977-M-01:biological",
+        "from": "FH-K977-M-02",
+        "to": "FH-K977-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K977-M-03:FH-K977-M-02:biological",
+        "from": "FH-K977-M-03",
+        "to": "FH-K977-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤새율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K977",
     "personId": "person-0977",
@@ -139,17 +495,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 총회 전령 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 총회 전령 행자 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 윤새율은 총회 필사본의 출발·인수 기록을 소두에게 전달한다. 소두는 명부를 읽어 누락 이름을 확인한 뒤 숙영 게시판의 통지를 잇는다.",
     "야망": "총회 전령 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.",
     "공포": "총회 전령 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 총회 전령·필사본 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 총회 전령 행자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 행자 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 총회 전령 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 총회 전령 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 총회 전령 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 총회 전령 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −45 | 물질 −15 | 공동 80 | 원칙 25 | 공개 50 | 자격 20 | 분산 45 | 변혁 0\n- 욕망: 갈망 20 | 독점 15 | 위험 10 | 과시 −15 | 지속 20 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 총회 전령·필사본 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 총회 전령 행자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 행자 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 총회 전령 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 총회 전령 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 윤새율은 총회 필사본의 출발·인수 기록을 소두에게 전달한다. 소두는 명부를 읽어 누락 이름을 확인한 뒤 숙영 게시판의 통지를 잇는다.\n\n**야망.** 총회 전령 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 총회 전령 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −45 | 물질 −15 | 공동 80 | 원칙 25 | 공개 50 | 자격 20 | 분산 45 | 변혁 0\n- 욕망: 갈망 20 | 독점 15 | 위험 10 | 과시 −15 | 지속 20 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-10"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "윤새율",
+        "type": "계약",
+        "to": "소두",
+        "basis": "윤새율은 총회 필사본의 출발·인수 기록을 소두에게 전달한다. 소두는 명부를 읽어 누락 이름을 확인한 뒤 숙영 게시판의 통지를 잇는다."
+      }
+    ],
     "incoming": []
   }
 }

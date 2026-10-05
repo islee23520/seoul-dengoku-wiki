@@ -12,6 +12,270 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-류해담",
   "detailRoute": "/people/person-0245",
+  "birthDate": "2065-09-15",
+  "birthday": "09-15",
+  "age": 61,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/666"
+  ],
+  "familyTree": {
+    "personId": "K244",
+    "nodes": [
+      {
+        "id": "K244",
+        "personId": "K244",
+        "kind": "person",
+        "name": "류해담",
+        "birthDate": "2065-09-15",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K244"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 시세 소문 검증 필진 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류해담-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0245"
+      },
+      {
+        "id": "FH-K244-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "류승은",
+        "birthDate": "2035-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "류승은은 대합실 당직에서 시세 소문 출처 확인·교차 검증 원고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류해담-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K244-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "류승연",
+        "birthDate": "2005-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "류승연은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류해담-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K244-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현재",
+        "birthDate": "2035-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "윤현재는 대합실 당직에서 시세 소문 출처 확인·교차 검증 원고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류해담-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K244-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현범",
+        "birthDate": "2005-09-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한현범은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-류해담-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K244-P-01:K244:biological",
+        "from": "FH-K244-P-01",
+        "to": "K244",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K244-P-02:FH-K244-P-01:biological",
+        "from": "FH-K244-P-02",
+        "to": "FH-K244-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K244-M-01:K244:biological",
+        "from": "FH-K244-M-01",
+        "to": "K244",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K244-M-02:FH-K244-M-01:biological",
+        "from": "FH-K244-M-02",
+        "to": "FH-K244-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-류해담-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K219",
+      "recipientName": "최지우",
+      "basis": "최지우의 공개 성향과 맞물리지만, 필진의 서명란은 따로 지킨다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-09.json",
+        "anchor": "인물-류해담-p5"
+      }
+    }
+  ],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K244",
     "personId": "person-0245",

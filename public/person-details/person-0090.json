@@ -12,6 +12,678 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-박세린",
   "detailRoute": "/people/person-0090",
+  "birthDate": "2093-07-25",
+  "birthday": "07-25",
+  "age": 33,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/82",
+    "lore/characters/Cast-State-04.json#/content/84",
+    "lore/characters/Cast-State-04.json#/content/85",
+    "lore/characters/Cast-State-04.json#/content/86",
+    "lore/characters/Cast-State-04.json#/content/87"
+  ],
+  "familyTree": {
+    "personId": "K089",
+    "nodes": [
+      {
+        "id": "K086",
+        "personId": "K086",
+        "kind": "person",
+        "name": "임하준",
+        "birthDate": "2072-12-03",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K086"
+          },
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "임하준-p2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0086"
+      },
+      {
+        "id": "K087",
+        "personId": "K087",
+        "kind": "person",
+        "name": "임초원",
+        "birthDate": "2100-06-11",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K087"
+          },
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임초원-p2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준이 망치의 반을 넘긴 것은 당회 후계가 아니라 기술 전수였다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "임초원-p2"
+              }
+            ]
+          }
+        ],
+        "generationException": {
+          "reason": "확정 생년월일과 기존 임하준→임초원 관계를 보존한다. 30년 간격을 맞추기 위해 관계나 날짜를 바꾸지 않는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-birthdays.json"
+            },
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "/content/40"
+            }
+          ]
+        },
+        "detailRoute": "/people/person-0087"
+      },
+      {
+        "id": "K089",
+        "personId": "K089",
+        "kind": "person",
+        "name": "박세린",
+        "birthDate": "2093-07-25",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K089"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-박세린-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0090"
+      },
+      {
+        "id": "FH-K086-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임승섭",
+        "birthDate": "2042-12-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "임승섭은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "임하준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K086-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임승성",
+        "birthDate": "2012-12-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임승성은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "임하준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K086-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최승온",
+        "birthDate": "2042-12-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "최승온은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "임하준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K086-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승리",
+        "birthDate": "2012-12-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정승리는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Core-Characters.json",
+                "anchor": "임하준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "generationException": {
+          "reason": "명시된 친족 관계의 두 가계를 연결하되 각 가계의 확정 생일에서 파생된 날짜를 보존한다. 공동 조상의 생일은 더 이른 자녀를 기준으로 30년 앞서 저작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Relations.json",
+              "anchor": "관계-원장-table3"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        },
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K089-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승성",
+        "birthDate": "2063-07-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2101,
+            "summary": "박승성은 신정 차량기지에서 펌프 부품 보관·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-박세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K089-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승욱",
+        "birthDate": "2033-07-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2071,
+            "summary": "박승욱은 신정 차량기지에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-박세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K089-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승란",
+        "birthDate": "2003-07-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박승란은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-박세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K089-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한승혁",
+        "birthDate": "2063-07-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2101,
+            "summary": "한승혁은 신정 차량기지에서 펌프 부품 보관·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-박세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K089-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강승범",
+        "birthDate": "2033-07-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2071,
+            "summary": "강승범은 신정 차량기지에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-박세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K089-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "임승욱",
+        "birthDate": "2003-07-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임승욱은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-박세린-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "K086:K087:adoptive",
+        "from": "K086",
+        "to": "K087",
+        "type": "adoptive",
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "/content/40"
+          }
+        ]
+      },
+      {
+        "id": "FH-K086-P-01:K086:biological",
+        "from": "FH-K086-P-01",
+        "to": "K086",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K086-P-02:FH-K086-P-01:biological",
+        "from": "FH-K086-P-02",
+        "to": "FH-K086-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K086-M-01:K086:biological",
+        "from": "FH-K086-M-01",
+        "to": "K086",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K086-M-02:FH-K086-M-01:biological",
+        "from": "FH-K086-M-02",
+        "to": "FH-K086-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "임하준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K089-P-01:K089:biological",
+        "from": "FH-K089-P-01",
+        "to": "K089",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K089-P-02:FH-K089-P-01:biological",
+        "from": "FH-K089-P-02",
+        "to": "FH-K089-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K089-P-03:FH-K089-P-02:biological",
+        "from": "FH-K089-P-03",
+        "to": "FH-K089-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K089-M-01:K089:biological",
+        "from": "FH-K089-M-01",
+        "to": "K089",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K089-M-02:FH-K089-M-01:biological",
+        "from": "FH-K089-M-02",
+        "to": "FH-K089-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K089-M-03:FH-K089-M-02:biological",
+        "from": "FH-K089-M-03",
+        "to": "FH-K089-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-박세린-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "K086:K089:household",
+        "from": "K086",
+        "to": "K089",
+        "type": "household",
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "관계-원장-table3"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K089",
     "personId": "person-0090",
@@ -168,6 +840,25 @@
         "basis": "펌프기술가문 친족 공정의 후견"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "구서결",
+        "type": "계약",
+        "to": "박세린",
+        "basis": "구서결은 출고 전에 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 별도 창고의 부품과 원로 날인을 확인해 불량 상자가 정상 출고품과 섞인 곳을 찾는다."
+      },
+      {
+        "from": "윤북율",
+        "type": "계약",
+        "to": "박세린",
+        "basis": "윤북율은 출고 검사에서 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 창고 부품과 원로 날인을 확인해 불량품이 정상 출고 목록에 섞인 지점을 찾는다."
+      },
+      {
+        "from": "우별민",
+        "type": "계약",
+        "to": "박세린",
+        "basis": "우별민은 출고 검사에서 가려낸 불량 펌프 부품을 박세린에게 돌려보낸다. 박세린은 창고 부품과 원로 날인을 확인해 불량 상자가 정상 출고품으로 섞인 곳을 찾는다."
+      }
+    ]
   }
 }

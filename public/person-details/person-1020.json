@@ -12,6 +12,260 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-한서경",
   "detailRoute": "/people/person-1020",
+  "birthDate": "2083-12-12",
+  "birthday": "12-12",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-Unaffiliated.json#/content/36"
+  ],
+  "familyTree": {
+    "personId": "K1020",
+    "nodes": [
+      {
+        "id": "K1020",
+        "personId": "K1020",
+        "kind": "person",
+        "name": "한서경",
+        "birthDate": "2083-12-12",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1020"
+          },
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "성명: 한서경 (Han Seogyeong)",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-한서경-fields"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-1020"
+      },
+      {
+        "id": "FH-K1020-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한민빈",
+        "birthDate": "2053-12-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "한민빈은 출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-한서경-fields"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1020-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한민솔",
+        "birthDate": "2023-12-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한민솔은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-한서경-fields"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1020-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서정",
+        "birthDate": "2053-12-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "박서정은 출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-한서경-fields"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1020-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서연",
+        "birthDate": "2023-12-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이서연은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-한서경-fields"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1020-P-01:K1020:biological",
+        "from": "FH-K1020-P-01",
+        "to": "K1020",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1020-P-02:FH-K1020-P-01:biological",
+        "from": "FH-K1020-P-02",
+        "to": "FH-K1020-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1020-M-01:K1020:biological",
+        "from": "FH-K1020-M-01",
+        "to": "K1020",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1020-M-02:FH-K1020-M-01:biological",
+        "from": "FH-K1020-M-02",
+        "to": "FH-K1020-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-한서경-fields"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K1020",
     "personId": "person-1020",

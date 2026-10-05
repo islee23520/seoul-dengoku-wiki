@@ -12,6 +12,361 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-지한솔",
   "detailRoute": "/people/person-0159",
+  "birthDate": "2095-02-05",
+  "birthday": "02-05",
+  "age": 31,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/17",
+    "lore/characters/Cast-State-06.json#/content/19"
+  ],
+  "familyTree": {
+    "personId": "K158",
+    "nodes": [
+      {
+        "id": "K158",
+        "personId": "K158",
+        "kind": "person",
+        "name": "지한솔",
+        "birthDate": "2095-02-05",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K158"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-지한솔-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0159"
+      },
+      {
+        "id": "FH-K158-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "지승진",
+        "birthDate": "2065-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "지승진은 신정 차량기지에서 서고 함 온도·열쇠 교대 감독 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-지한솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K158-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "지승현",
+        "birthDate": "2035-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "지승현은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-지한솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K158-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "지승영",
+        "birthDate": "2005-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "지승영은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-지한솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K158-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현정",
+        "birthDate": "2065-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2103,
+            "summary": "최현정은 신정 차량기지에서 서고 함 온도·열쇠 교대 감독 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-지한솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K158-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정현윤",
+        "birthDate": "2035-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "정현윤은 신정 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-지한솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K158-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승도",
+        "birthDate": "2005-02-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤승도는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-지한솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K158-P-01:K158:biological",
+        "from": "FH-K158-P-01",
+        "to": "K158",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K158-P-02:FH-K158-P-01:biological",
+        "from": "FH-K158-P-02",
+        "to": "FH-K158-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K158-P-03:FH-K158-P-02:biological",
+        "from": "FH-K158-P-03",
+        "to": "FH-K158-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K158-M-01:K158:biological",
+        "from": "FH-K158-M-01",
+        "to": "K158",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K158-M-02:FH-K158-M-01:biological",
+        "from": "FH-K158-M-02",
+        "to": "FH-K158-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K158-M-03:FH-K158-M-02:biological",
+        "from": "FH-K158-M-03",
+        "to": "FH-K158-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-지한솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K158",
     "personId": "person-0159",

@@ -12,6 +12,261 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-추보람",
   "detailRoute": "/people/person-0218",
+  "birthDate": "2076-03-15",
+  "birthday": "03-15",
+  "age": 50,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/248",
+    "lore/characters/Cast-State-08.json#/content/250"
+  ],
+  "familyTree": {
+    "personId": "K217",
+    "nodes": [
+      {
+        "id": "K217",
+        "personId": "K217",
+        "kind": "person",
+        "name": "추보람",
+        "birthDate": "2076-03-15",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K217"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 협의 식량 호송 선주 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-추보람-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0218"
+      },
+      {
+        "id": "FH-K217-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "추승원",
+        "birthDate": "2046-03-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "추승원은 제기동 의무소에서 식량 호송 출항 잔량 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-추보람-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K217-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "추승진",
+        "birthDate": "2016-03-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "추승진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-추보람-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K217-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이현범",
+        "birthDate": "2046-03-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "이현범은 제기동 의무소에서 식량 호송 출항 잔량 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-추보람-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K217-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최현섭",
+        "birthDate": "2016-03-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최현섭은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-추보람-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K217-P-01:K217:biological",
+        "from": "FH-K217-P-01",
+        "to": "K217",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K217-P-02:FH-K217-P-01:biological",
+        "from": "FH-K217-P-02",
+        "to": "FH-K217-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K217-M-01:K217:biological",
+        "from": "FH-K217-M-01",
+        "to": "K217",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K217-M-02:FH-K217-M-01:biological",
+        "from": "FH-K217-M-02",
+        "to": "FH-K217-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-추보람-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K217",
     "personId": "person-0218",
@@ -159,8 +414,8 @@
       {
         "from": "추보람",
         "type": "계약",
-        "to": "오도윤",
-        "basis": "오도윤의 상회정 표를 회의 호송에서 거르고"
+        "to": "피터 얀센",
+        "basis": "피터 얀센의 상회정 표를 회의 호송에서 거르고"
       },
       {
         "from": "추보람",

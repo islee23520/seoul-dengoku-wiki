@@ -12,6 +12,361 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-심유리",
   "detailRoute": "/people/person-0402",
+  "birthDate": "2102-05-16",
+  "birthday": "05-16",
+  "age": 24,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/61",
+    "lore/characters/Cast-State-16.json#/content/63"
+  ],
+  "familyTree": {
+    "personId": "K401",
+    "nodes": [
+      {
+        "id": "K401",
+        "personId": "K401",
+        "kind": "person",
+        "name": "심유리",
+        "birthDate": "2102-05-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K401"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 협약 중재인 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-심유리-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0402"
+      },
+      {
+        "id": "FH-K401-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "심승원",
+        "birthDate": "2072-05-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "심승원은 제기동 의무소에서 급수·통행·의료·손실보상 쟁점 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-심유리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K401-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "심승진",
+        "birthDate": "2042-05-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "심승진은 제기동 의무소에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-심유리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K401-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "심승현",
+        "birthDate": "2012-05-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "심승현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-심유리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K401-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준완",
+        "birthDate": "2072-05-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "한준완은 제기동 의무소에서 급수·통행·의료·손실보상 쟁점 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-심유리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K401-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강준규",
+        "birthDate": "2042-05-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "강준규는 제기동 의무소에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-심유리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K401-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "임준훈",
+        "birthDate": "2012-05-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임준훈은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-심유리-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K401-P-01:K401:biological",
+        "from": "FH-K401-P-01",
+        "to": "K401",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K401-P-02:FH-K401-P-01:biological",
+        "from": "FH-K401-P-02",
+        "to": "FH-K401-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K401-P-03:FH-K401-P-02:biological",
+        "from": "FH-K401-P-03",
+        "to": "FH-K401-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K401-M-01:K401:biological",
+        "from": "FH-K401-M-01",
+        "to": "K401",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K401-M-02:FH-K401-M-01:biological",
+        "from": "FH-K401-M-02",
+        "to": "FH-K401-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K401-M-03:FH-K401-M-02:biological",
+        "from": "FH-K401-M-03",
+        "to": "FH-K401-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-심유리-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K401",
     "personId": "person-0402",
@@ -163,6 +518,18 @@
       }
     ],
     "incoming": [
+      {
+        "from": "장돌원",
+        "type": "계약",
+        "to": "심유리",
+        "basis": "장돌원은 호송 순찰에서 발견한 매복 흔적과 통행 지연을 심유리에게 알린다. 심유리는 그 현장 사정을 통행과 손실보상 안건으로 나눠 다뤄, 위험 때문에 멈춘 호송이 단순한 계약 불이행으로만 처리되지 않게 한다."
+      },
+      {
+        "from": "안강민",
+        "type": "계약",
+        "to": "심유리",
+        "basis": "안강민은 교량 습격 훈련의 잘못된 최초 보고를 참관 기록으로 확인해 심유리에게 전한다. 심유리는 통행과 손실보상 논의에서 실제 발생한 지연과 훈련상의 오인 보고를 구분한다."
+      },
       {
         "from": "원새울",
         "type": "계약",

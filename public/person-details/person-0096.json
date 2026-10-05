@@ -12,6 +12,262 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-유하은",
   "detailRoute": "/people/person-0096",
+  "birthDate": "2083-08-09",
+  "birthday": "08-09",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/37",
+    "lore/characters/Cast-State-04.json#/content/38",
+    "lore/characters/Cast-State-04.json#/content/40"
+  ],
+  "familyTree": {
+    "personId": "K095",
+    "nodes": [
+      {
+        "id": "K095",
+        "personId": "K095",
+        "kind": "person",
+        "name": "유하은",
+        "birthDate": "2083-08-09",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K095"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 성수 가죽·소형기계 직능대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-유하은-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0096"
+      },
+      {
+        "id": "FH-K095-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "유승현",
+        "birthDate": "2053-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "유승현은 대합실 당직에서 가죽 공정·출고 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-유하은-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K095-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "유승영",
+        "birthDate": "2023-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "유승영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-유하은-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K095-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김승나",
+        "birthDate": "2053-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "김승나는 대합실 당직에서 가죽 공정·출고 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-유하은-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K095-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승리",
+        "birthDate": "2023-08-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박승리는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-유하은-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K095-P-01:K095:biological",
+        "from": "FH-K095-P-01",
+        "to": "K095",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K095-P-02:FH-K095-P-01:biological",
+        "from": "FH-K095-P-02",
+        "to": "FH-K095-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K095-M-01:K095:biological",
+        "from": "FH-K095-M-01",
+        "to": "K095",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K095-M-02:FH-K095-M-01:biological",
+        "from": "FH-K095-M-02",
+        "to": "FH-K095-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-유하은-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K095",
     "personId": "person-0096",

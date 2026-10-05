@@ -12,6 +12,262 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-고별호",
   "detailRoute": "/people/person-0603",
+  "birthDate": "2072-05-05",
+  "birthday": "05-05",
+  "age": 54,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/423",
+    "lore/characters/Cast-State-04.json#/content/425",
+    "lore/characters/Cast-State-04.json#/content/426"
+  ],
+  "familyTree": {
+    "personId": "K603",
+    "nodes": [
+      {
+        "id": "K603",
+        "personId": "K603",
+        "kind": "person",
+        "name": "고별호",
+        "birthDate": "2072-05-05",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K603"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-고별호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0603"
+      },
+      {
+        "id": "FH-K603-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "고승섭",
+        "birthDate": "2042-05-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "고승섭은 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-고별호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K603-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "고승성",
+        "birthDate": "2012-05-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "고승성은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-고별호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K603-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재민",
+        "birthDate": "2042-05-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "정재민은 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-고별호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K603-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤재석",
+        "birthDate": "2012-05-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤재석은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-고별호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K603-P-01:K603:biological",
+        "from": "FH-K603-P-01",
+        "to": "K603",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K603-P-02:FH-K603-P-01:biological",
+        "from": "FH-K603-P-02",
+        "to": "FH-K603-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K603-M-01:K603:biological",
+        "from": "FH-K603-M-01",
+        "to": "K603",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K603-M-02:FH-K603-M-01:biological",
+        "from": "FH-K603-M-02",
+        "to": "FH-K603-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-고별호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K603",
     "personId": "person-0603",
@@ -145,17 +401,24 @@
     "무공": "단철공.",
     "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 고별호는 펌프 정비에 쓸 패킹을 구도영의 수상 운송으로 받는다. 구도영은 선창에서 상자 끈과 나룻배 시각을 확인하고, 고별호는 받은 패킹을 펌프 정비용으로 구분해 인수 기록에 남긴다.",
     "야망": "부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.",
     "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 5 | 무력 −30 | 물질 35 | 공동 25 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 20 | 변혁 5\n- 욕망: 갈망 40 | 독점 −15 | 위험 0 | 과시 −20 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 고별호는 펌프 정비에 쓸 패킹을 구도영의 수상 운송으로 받는다. 구도영은 선창에서 상자 끈과 나룻배 시각을 확인하고, 고별호는 받은 패킹을 펌프 정비용으로 구분해 인수 기록에 남긴다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 5 | 무력 −30 | 물질 35 | 공동 25 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 20 | 변혁 5\n- 욕망: 갈망 40 | 독점 −15 | 위험 0 | 과시 −20 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "고별호",
+        "type": "계약",
+        "to": "구도영",
+        "basis": "고별호는 펌프 정비에 쓸 패킹을 구도영의 수상 운송으로 받는다. 구도영은 선창에서 상자 끈과 나룻배 시각을 확인하고, 고별호는 받은 패킹을 펌프 정비용으로 구분해 인수 기록에 남긴다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -12,6 +12,263 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-윤강율",
   "detailRoute": "/people/person-0630",
+  "birthDate": "2082-07-02",
+  "birthday": "07-02",
+  "age": 44,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/391",
+    "lore/characters/Cast-State-15.json#/content/392",
+    "lore/characters/Cast-State-15.json#/content/393",
+    "lore/characters/Cast-State-15.json#/content/394"
+  ],
+  "familyTree": {
+    "personId": "K630",
+    "nodes": [
+      {
+        "id": "K630",
+        "personId": "K630",
+        "kind": "person",
+        "name": "윤강율",
+        "birthDate": "2082-07-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K630"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-윤강율-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0630"
+      },
+      {
+        "id": "FH-K630-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤재현",
+        "birthDate": "2052-07-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "윤재현은 대합실 당직에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-윤강율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K630-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤재영",
+        "birthDate": "2022-07-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤재영은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-윤강율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K630-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강재민",
+        "birthDate": "2052-07-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "강재민은 대합실 당직에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-윤강율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K630-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임재현",
+        "birthDate": "2022-07-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임재현은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-윤강율-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K630-P-01:K630:biological",
+        "from": "FH-K630-P-01",
+        "to": "K630",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K630-P-02:FH-K630-P-01:biological",
+        "from": "FH-K630-P-02",
+        "to": "FH-K630-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K630-M-01:K630:biological",
+        "from": "FH-K630-M-01",
+        "to": "K630",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K630-M-02:FH-K630-M-01:biological",
+        "from": "FH-K630-M-02",
+        "to": "FH-K630-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-윤강율-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K630",
     "personId": "person-0630",
@@ -139,17 +396,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 윤강율은 다시 열린 교대의 인준 명부 서명을 판효담에게 인계한다. 판효담은 보관함 당직과 봉인을 확인해 교대 중단 사이의 기록 공백을 찾는다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.",
     "개입": "명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "윤강율은 명동역 인준 명부 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −10 | 물질 50 | 공동 −15 | 원칙 −45 | 공개 −25 | 자격 0 | 분산 −10 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −5 | 위험 −30 | 과시 −25 | 지속 5 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "윤강율은 명동역 인준 명부 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 윤강율은 다시 열린 교대의 인준 명부 서명을 판효담에게 인계한다. 판효담은 보관함 당직과 봉인을 확인해 교대 중단 사이의 기록 공백을 찾는다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −10 | 물질 50 | 공동 −15 | 원칙 −45 | 공개 −25 | 자격 0 | 분산 −10 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −5 | 위험 −30 | 과시 −25 | 지속 5 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-15"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "윤강율",
+        "type": "계약",
+        "to": "판효담",
+        "basis": "윤강율은 다시 열린 교대의 인준 명부 서명을 판효담에게 인계한다. 판효담은 보관함 당직과 봉인을 확인해 교대 중단 사이의 기록 공백을 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

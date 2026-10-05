@@ -12,6 +12,360 @@
   "stateName": "성하그룹",
   "sourceRoute": "/world/Cast-State-11#인물-복두",
   "detailRoute": "/people/person-0283",
+  "birthDate": "2090-05-22",
+  "birthday": "05-22",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-11.json#/content/138"
+  ],
+  "familyTree": {
+    "personId": "K282",
+    "nodes": [
+      {
+        "id": "K282",
+        "personId": "K282",
+        "kind": "person",
+        "name": "복두",
+        "birthDate": "2090-05-22",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K282"
+          },
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "** 2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-복두-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0283"
+      },
+      {
+        "id": "FH-K282-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승현",
+        "birthDate": "2060-05-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "복승현은 대합실 당직에서 바깥 선로 실측·목격 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-복두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K282-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승영",
+        "birthDate": "2030-05-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "복승영은 대합실 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-복두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K282-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승윤",
+        "birthDate": "2000-05-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "복승윤은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-복두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K282-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현빈",
+        "birthDate": "2060-05-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "강현빈은 대합실 당직에서 바깥 선로 실측·목격 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-복두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K282-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임현솔",
+        "birthDate": "2030-05-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "임현솔은 대합실 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-복두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K282-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "오현나",
+        "birthDate": "2000-05-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오현나는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-복두-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K282-P-01:K282:biological",
+        "from": "FH-K282-P-01",
+        "to": "K282",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K282-P-02:FH-K282-P-01:biological",
+        "from": "FH-K282-P-02",
+        "to": "FH-K282-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K282-P-03:FH-K282-P-02:biological",
+        "from": "FH-K282-P-03",
+        "to": "FH-K282-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K282-M-01:K282:biological",
+        "from": "FH-K282-M-01",
+        "to": "K282",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K282-M-02:FH-K282-M-01:biological",
+        "from": "FH-K282-M-02",
+        "to": "FH-K282-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K282-M-03:FH-K282-M-02:biological",
+        "from": "FH-K282-M-03",
+        "to": "FH-K282-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-복두-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K282",
     "personId": "person-0283",

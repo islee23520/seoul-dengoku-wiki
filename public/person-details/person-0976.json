@@ -12,6 +12,262 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-조돌준",
   "detailRoute": "/people/person-0976",
+  "birthDate": "2071-04-02",
+  "birthday": "04-02",
+  "age": 55,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/644",
+    "lore/characters/Cast-State-09.json#/content/646",
+    "lore/characters/Cast-State-09.json#/content/647"
+  ],
+  "familyTree": {
+    "personId": "K976",
+    "nodes": [
+      {
+        "id": "K976",
+        "personId": "K976",
+        "kind": "person",
+        "name": "조돌준",
+        "birthDate": "2071-04-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K976"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 금고 당직 교대·기록 인수",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조돌준-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0976"
+      },
+      {
+        "id": "FH-K976-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조민성",
+        "birthDate": "2041-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "조민성은 여의도 금고 당직에서 금고 당직 교대·기록 인수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조돌준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K976-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조민욱",
+        "birthDate": "2011-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조민욱은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조돌준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K976-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤민범",
+        "birthDate": "2041-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "윤민범은 여의도 금고 당직에서 금고 당직 교대·기록 인수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조돌준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K976-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한민찬",
+        "birthDate": "2011-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한민찬은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-조돌준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K976-P-01:K976:biological",
+        "from": "FH-K976-P-01",
+        "to": "K976",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K976-P-02:FH-K976-P-01:biological",
+        "from": "FH-K976-P-02",
+        "to": "FH-K976-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K976-M-01:K976:biological",
+        "from": "FH-K976-M-01",
+        "to": "K976",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K976-M-02:FH-K976-M-01:biological",
+        "from": "FH-K976-M-02",
+        "to": "FH-K976-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-조돌준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K976",
     "personId": "person-0976",
@@ -139,17 +395,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 금고 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 금고 당직 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 조돌준은 거둔 위조 화폐와 금고 인수 기록을 조은우에게 넘긴다. 조은우는 추적 로그·접근 기록을 확인해 어느 교대 사이에 위조 화폐가 들어왔는지 찾는다.",
     "야망": "금고 당직 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.",
     "공포": "금고 당직 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 금고 당직 교대·기록 인수\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 당직\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 금고 당직 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 금고 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 금고 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 금고 당직 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 금고 당직 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −35 | 물질 −15 | 공동 −5 | 원칙 25 | 공개 65 | 자격 5 | 분산 15 | 변혁 5\n- 욕망: 갈망 −10 | 독점 −30 | 위험 −10 | 과시 20 | 지속 30 | 지향 무성향 | 결합 비독점",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 금고 당직 교대·기록 인수\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 당직\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 금고 당직 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 금고 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 금고 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 조돌준은 거둔 위조 화폐와 금고 인수 기록을 조은우에게 넘긴다. 조은우는 추적 로그·접근 기록을 확인해 어느 교대 사이에 위조 화폐가 들어왔는지 찾는다.\n\n**야망.** 금고 당직 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 금고 당직 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −35 | 물질 −15 | 공동 −5 | 원칙 25 | 공개 65 | 자격 5 | 분산 15 | 변혁 5\n- 욕망: 갈망 −10 | 독점 −30 | 위험 −10 | 과시 20 | 지속 30 | 지향 무성향 | 결합 비독점",
   "sources": [
     "Cast-State-09"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "조돌준",
+        "type": "계약",
+        "to": "조은우",
+        "basis": "조돌준은 거둔 위조 화폐와 금고 인수 기록을 조은우에게 넘긴다. 조은우는 추적 로그·접근 기록을 확인해 어느 교대 사이에 위조 화폐가 들어왔는지 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

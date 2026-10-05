@@ -12,6 +12,264 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-남시윤",
   "detailRoute": "/people/person-0378",
+  "birthDate": "2080-02-16",
+  "birthday": "02-16",
+  "age": 46,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/5",
+    "lore/characters/Cast-State-15.json#/content/6",
+    "lore/characters/Cast-State-15.json#/content/7",
+    "lore/characters/Cast-State-15.json#/content/8",
+    "lore/characters/Cast-State-15.json#/content/10"
+  ],
+  "familyTree": {
+    "personId": "K377",
+    "nodes": [
+      {
+        "id": "K377",
+        "personId": "K377",
+        "kind": "person",
+        "name": "남시윤",
+        "birthDate": "2080-02-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K377"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 교구 사제단 선거 사무 신부 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남시윤-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0378"
+      },
+      {
+        "id": "FH-K377-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "남승윤",
+        "birthDate": "2050-02-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2088,
+            "summary": "남승윤은 대합실 당직에서 사제단 비밀 투표 개표 기록 보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남시윤-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K377-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "남승우",
+        "birthDate": "2020-02-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "남승우는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남시윤-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K377-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준연",
+        "birthDate": "2050-02-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2088,
+            "summary": "한준연은 대합실 당직에서 사제단 비밀 투표 개표 기록 보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남시윤-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K377-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강준은",
+        "birthDate": "2020-02-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강준은은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-남시윤-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K377-P-01:K377:biological",
+        "from": "FH-K377-P-01",
+        "to": "K377",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K377-P-02:FH-K377-P-01:biological",
+        "from": "FH-K377-P-02",
+        "to": "FH-K377-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K377-M-01:K377:biological",
+        "from": "FH-K377-M-01",
+        "to": "K377",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K377-M-02:FH-K377-M-01:biological",
+        "from": "FH-K377-M-02",
+        "to": "FH-K377-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-남시윤-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K377",
     "personId": "person-0378",

@@ -12,6 +12,362 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-이차민",
   "detailRoute": "/people/person-0933",
+  "birthDate": "2093-02-08",
+  "birthday": "02-08",
+  "age": 33,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/611",
+    "lore/characters/Cast-State-14.json#/content/613",
+    "lore/characters/Cast-State-14.json#/content/614"
+  ],
+  "familyTree": {
+    "personId": "K933",
+    "nodes": [
+      {
+        "id": "K933",
+        "personId": "K933",
+        "kind": "person",
+        "name": "이차민",
+        "birthDate": "2093-02-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K933"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 검역 기록·당직 열쇠 인계",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-이차민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0933"
+      },
+      {
+        "id": "FH-K933-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이민범",
+        "birthDate": "2063-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2101,
+            "summary": "이민범은 대합실 당직에서 검역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-이차민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K933-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이민재",
+        "birthDate": "2033-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2071,
+            "summary": "이민재는 대합실 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-이차민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K933-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이민찬",
+        "birthDate": "2003-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이민찬은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-이차민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K933-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송민진",
+        "birthDate": "2063-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2101,
+            "summary": "송민진은 대합실 당직에서 검역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-이차민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K933-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조민정",
+        "birthDate": "2033-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2071,
+            "summary": "조민정은 대합실 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-이차민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K933-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "김민정",
+        "birthDate": "2003-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김민정은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-이차민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K933-P-01:K933:biological",
+        "from": "FH-K933-P-01",
+        "to": "K933",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K933-P-02:FH-K933-P-01:biological",
+        "from": "FH-K933-P-02",
+        "to": "FH-K933-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K933-P-03:FH-K933-P-02:biological",
+        "from": "FH-K933-P-03",
+        "to": "FH-K933-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K933-M-01:K933:biological",
+        "from": "FH-K933-M-01",
+        "to": "K933",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K933-M-02:FH-K933-M-01:biological",
+        "from": "FH-K933-M-02",
+        "to": "FH-K933-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K933-M-03:FH-K933-M-02:biological",
+        "from": "FH-K933-M-03",
+        "to": "FH-K933-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-이차민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K933",
     "personId": "person-0933",
@@ -139,17 +495,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구의수비대 검역 서기 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 이차민은 검역 순서 청탁을 공개 창구로 돌리고 하윤목에게 접수 내용을 전한다. 하윤목은 면제 통행증과 양군 결재를 확인해 청탁의 접수가 면제 승인으로 쓰이지 않게 한다.",
     "야망": "검역 서기 자리에서 아관사의 장부를 끊기지 않게 잇는다.",
     "공포": "검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 검역 기록·당직 열쇠 인계\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 검역 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구의수비대 검역 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 검역 서기 자리에서 아관사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −10 | 무력 40 | 물질 0 | 공동 30 | 원칙 5 | 공개 −10 | 자격 −15 | 분산 −25 | 변혁 −15\n- 욕망: 갈망 30 | 독점 15 | 위험 −10 | 과시 −20 | 지속 0 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 검역 기록·당직 열쇠 인계\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 검역 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구의수비대 검역 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 이차민은 검역 순서 청탁을 공개 창구로 돌리고 하윤목에게 접수 내용을 전한다. 하윤목은 면제 통행증과 양군 결재를 확인해 청탁의 접수가 면제 승인으로 쓰이지 않게 한다.\n\n**야망.** 검역 서기 자리에서 아관사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −10 | 무력 40 | 물질 0 | 공동 30 | 원칙 5 | 공개 −10 | 자격 −15 | 분산 −25 | 변혁 −15\n- 욕망: 갈망 30 | 독점 15 | 위험 −10 | 과시 −20 | 지속 0 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-14"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "이차민",
+        "type": "계약",
+        "to": "하윤목",
+        "basis": "이차민은 검역 순서 청탁을 공개 창구로 돌리고 하윤목에게 접수 내용을 전한다. 하윤목은 면제 통행증과 양군 결재를 확인해 청탁의 접수가 면제 승인으로 쓰이지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

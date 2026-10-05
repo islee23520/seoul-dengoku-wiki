@@ -12,6 +12,262 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-심산양",
   "detailRoute": "/people/person-0997",
+  "birthDate": "2077-07-07",
+  "birthday": "07-07",
+  "age": 49,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/655",
+    "lore/characters/Cast-State-14.json#/content/657",
+    "lore/characters/Cast-State-14.json#/content/658"
+  ],
+  "familyTree": {
+    "personId": "K997",
+    "nodes": [
+      {
+        "id": "K997",
+        "personId": "K997",
+        "kind": "person",
+        "name": "심산양",
+        "birthDate": "2077-07-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K997"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 초소 전령 기록·당직 열쇠 인계",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심산양-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0997"
+      },
+      {
+        "id": "FH-K997-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "심현원",
+        "birthDate": "2047-07-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "심현원은 신내 환승 당직에서 초소 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심산양-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K997-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "심현진",
+        "birthDate": "2017-07-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "심현진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심산양-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K997-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서진",
+        "birthDate": "2047-07-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2085,
+            "summary": "이서진은 신내 환승 당직에서 초소 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심산양-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K997-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최서은",
+        "birthDate": "2017-07-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최서은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심산양-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K997-P-01:K997:biological",
+        "from": "FH-K997-P-01",
+        "to": "K997",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K997-P-02:FH-K997-P-01:biological",
+        "from": "FH-K997-P-02",
+        "to": "FH-K997-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K997-M-01:K997:biological",
+        "from": "FH-K997-M-01",
+        "to": "K997",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K997-M-02:FH-K997-M-01:biological",
+        "from": "FH-K997-M-02",
+        "to": "FH-K997-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심산양-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K997",
     "personId": "person-0997",
@@ -145,17 +401,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 병장. 직함은 아차산관문사령부 초소 전령. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 아차산관문사령부 초소 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 심산양은 폐쇄 구간 때문에 늦어진 초소 전갈을 천초윤에게 전한다. 천초윤은 통행증·급수 시간을 확인해 지연 사유를 남기고 미확인 면제 문서는 대신 배달하지 않는다.",
     "야망": "초소 전령 자리에서 아관사의 장부를 끊기지 않게 잇는다.",
     "공포": "초소 전령 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 초소 전령 기록·당직 열쇠 인계\n- 소속: 아차산관문사령부\n- 품계: 병장\n- 직함: 아차산관문사령부 초소 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 아차산관문사령부 초소 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 병장. 직함은 아차산관문사령부 초소 전령. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 아차산관문사령부 초소 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 초소 전령 자리에서 아관사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 초소 전령 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −20 | 무력 35 | 물질 15 | 공동 15 | 원칙 −5 | 공개 10 | 자격 −20 | 분산 −25 | 변혁 −5\n- 욕망: 갈망 −10 | 독점 −30 | 위험 −25 | 과시 −25 | 지속 −5 | 지향 이성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 초소 전령 기록·당직 열쇠 인계\n- 소속: 아차산관문사령부\n- 품계: 병장\n- 직함: 아차산관문사령부 초소 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 아차산관문사령부 초소 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 병장. 직함은 아차산관문사령부 초소 전령. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 아차산관문사령부 초소 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 심산양은 폐쇄 구간 때문에 늦어진 초소 전갈을 천초윤에게 전한다. 천초윤은 통행증·급수 시간을 확인해 지연 사유를 남기고 미확인 면제 문서는 대신 배달하지 않는다.\n\n**야망.** 초소 전령 자리에서 아관사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 초소 전령 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −20 | 무력 35 | 물질 15 | 공동 15 | 원칙 −5 | 공개 10 | 자격 −20 | 분산 −25 | 변혁 −5\n- 욕망: 갈망 −10 | 독점 −30 | 위험 −25 | 과시 −25 | 지속 −5 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-14"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "심산양",
+        "type": "계약",
+        "to": "천초윤",
+        "basis": "심산양은 폐쇄 구간 때문에 늦어진 초소 전갈을 천초윤에게 전한다. 천초윤은 통행증·급수 시간을 확인해 지연 사유를 남기고 미확인 면제 문서는 대신 배달하지 않는다."
+      }
+    ],
     "incoming": []
   }
 }

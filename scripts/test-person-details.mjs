@@ -7,7 +7,44 @@ import { MemoryRouter } from 'react-router-dom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
 
+test('existing prose contacts bind both generated identities to the same source record', async () => {
+  const ledger = JSON.parse(await readFile(new URL('../lore/name-pools/cast-prose-contacts.json', import.meta.url), 'utf8'))
+  const byId = new Map()
+  for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter(name => name.endsWith('.json'))) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
+    byId.set(detail.gurps.id, detail)
+  }
+  for (const record of ledger.records) {
+    const left = byId.get(record.personId), right = byId.get(record.recipientId)
+    assert.ok(left && right, record.personId)
+    for (const [detail, recipientId] of [[left, record.recipientId], [right, record.personId]]) {
+      const contacts = detail.proseContacts.filter(contact => contact.recipientId === recipientId && contact.sourceRef.path === record.sourceRef.path && contact.sourceRef.anchor === record.sourceRef.anchor)
+      assert.equal(contacts.length, 1, `${detail.gurps.id}:${recipientId}`)
+      assert.equal(contacts[0].recipientName, byId.get(recipientId).name)
+      assert.ok(contacts[0].basis.length > 0)
+    }
+  }
+})
+
 const sourcePages = new Map()
+test('generated household admission preserves source faith and Christian exclusions', async () => {
+  const ledger = JSON.parse(await readFile(new URL('../lore/name-pools/cast-household-relations.json', import.meta.url), 'utf8'))
+  const records = new Map()
+  for (const file of (await readdir(new URL('../public/person-details/', import.meta.url))).filter(name => name.endsWith('.json'))) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
+    records.set(detail.gurps.id, detail)
+  }
+  assert.equal(records.size, ledger.people.length)
+  for (const person of ledger.people) {
+    assert.deepEqual(records.get(person.personId).household, {
+      personFaith: person.household.personFaith.status,
+      houseFaith: person.household.houseFaith.status,
+      humanoidAdmission: person.household.humanoidAdmission,
+    }, person.personId)
+  }
+  for (const id of ['K086', 'K373', 'K423']) assert.equal(records.get(id).household.humanoidAdmission, 'excluded', id)
+  assert.equal(records.get('K998').household.humanoidAdmission, 'deferred')
+})
 const cardSources = ['Cast-State-01', 'Cast-State-02', 'Cast-State-03', 'Cast-State-04', 'Cast-State-05',
   'Cast-State-06', 'Cast-State-07', 'Cast-State-08', 'Cast-State-09', 'Cast-State-10', 'Cast-State-11',
   'Cast-State-12', 'Cast-State-13', 'Cast-State-14', 'Cast-State-15', 'Cast-State-16',
@@ -116,6 +153,7 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
   const approved = [
     ['K032', 'K041'], ['K037', 'K047'], ['K033', 'K049'], ['K058', 'K068'],
     ['K060', 'K069 K071'], ['K061', 'K073 K075'], ['K062', 'K074'],
+    ['K998', 'K425 K441'],
   ]
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8'))
@@ -163,8 +201,8 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
     }
   }
   check(person)
-  assert.equal(expectedMembers.size, 9)
-  assert.equal(expectedOwners.size, 7)
+  assert.equal(expectedMembers.size, 11)
+  assert.equal(expectedOwners.size, 8)
   assert.equal(details.size, 1022)
   const s03OwnerLieges = new Set(['K058', 'K060', 'K061', 'K062', 'K233', 'K032', 'K037', 'K033'])
   for (const detail of details.values()) {
@@ -274,7 +312,11 @@ test('all canonical people expose unique detail routes and structured data', asy
       const lineage = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
         .people.find((person) => person.name === detail.name)
       assert.ok(lineage, name)
-      if (lineage.status === 'no-bongwan') assert.equal(lineage.clan, undefined, name)
+      if (lineage.namingConvention === 'non-korean-lineage') {
+        assert.equal(lineage.namingConventionSource.characterId, detail.gurps.id, name)
+        assert.equal(lineage.namingConventionSource.path, 'lore/name-pools/person-id-registry.json', name)
+        assert.ok(typeof lineage.surname === 'string' && lineage.surname.length > 0, name)
+      } else if (lineage.status === 'no-bongwan') assert.equal(lineage.clan, undefined, name)
       else {
         assert.equal(lineage.clan, null, name)
         assert.ok(['unused', 'unconfirmed'].includes(lineage.status), name)
@@ -1044,6 +1086,13 @@ test('K998 keeps his detail route after relocation to the First Branch Workshop'
   assert.equal(detail.occupation, '제1분공방 차량기지 밭 경작·곡물 재고 관리')
   assert.equal(detail.sourceRoute, '/world/Cast-State-02#인물-이일섭')
   assert.equal(detail.fields.기여자, '[islee23520](https://github.com/islee23520)')
-  assert.deepEqual(detail.relations, { outgoing: [], incoming: [] })
+  assert.deepEqual(detail.relations.outgoing.map(row => [row.to, row.type]), [
+    ['구찬솔', '계약'], ['장우석', '계약'], ['허다온', '계약'],
+  ])
+  assert.deepEqual(detail.relations.incoming.filter(row => row.type === '지휘').map(row => [row.from, row.to, row.type]), [
+    ['박도윤', '이일섭', '지휘'], ['류동현', '이일섭', '지휘'],
+  ])
+  assert.deepEqual(detail.relations.incoming.filter(row => row.type === '계약').map(row => row.from), ['구찬솔', '장우석', '허다온'])
+  assert.deepEqual(detail.court.members.map(row => row.personId), ['K425', 'K441'])
   assert.doesNotMatch(detail.biography, /아관사|구의|고서준|곽민재|하윤목|원장 서기/)
 })

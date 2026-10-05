@@ -12,6 +12,260 @@
   "stateName": "성하그룹",
   "sourceRoute": "/world/Cast-State-11#인물-조우찬",
   "detailRoute": "/people/person-0274",
+  "birthDate": "2065-04-02",
+  "birthday": "04-02",
+  "age": 61,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-11.json#/content/39"
+  ],
+  "familyTree": {
+    "personId": "K273",
+    "nodes": [
+      {
+        "id": "K273",
+        "personId": "K273",
+        "kind": "person",
+        "name": "조우찬",
+        "birthDate": "2065-04-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K273"
+          },
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "** 2126년 세대. 대합실 당직에서 자랐다. 성하전자 작업 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-조우찬-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0274"
+      },
+      {
+        "id": "FH-K273-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현문",
+        "birthDate": "2035-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "조현문은 대합실 당직에서 작업 조 순환·사고 서명 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-조우찬-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K273-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현섭",
+        "birthDate": "2005-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조현섭은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-조우찬-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K273-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현섭",
+        "birthDate": "2035-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2073,
+            "summary": "송현섭은 대합실 당직에서 작업 조 순환·사고 서명 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-조우찬-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K273-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현성",
+        "birthDate": "2005-04-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조현성은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-11.json",
+                "anchor": "인물-조우찬-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K273-P-01:K273:biological",
+        "from": "FH-K273-P-01",
+        "to": "K273",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K273-P-02:FH-K273-P-01:biological",
+        "from": "FH-K273-P-02",
+        "to": "FH-K273-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K273-M-01:K273:biological",
+        "from": "FH-K273-M-01",
+        "to": "K273",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K273-M-02:FH-K273-M-01:biological",
+        "from": "FH-K273-M-02",
+        "to": "FH-K273-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-11.json",
+            "anchor": "인물-조우찬-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K273",
     "personId": "person-0274",
@@ -170,7 +424,7 @@
       {
         "from": "조우찬",
         "type": "원한",
-        "to": "강다은",
+        "to": "클라라 베넷",
         "basis": "시험 차륜 유출 의심의 원한"
       }
     ],

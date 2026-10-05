@@ -12,6 +12,262 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-홍차원",
   "detailRoute": "/people/person-0721",
+  "birthDate": "2067-04-17",
+  "birthday": "04-17",
+  "age": 59,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/468",
+    "lore/characters/Cast-State-10.json#/content/470",
+    "lore/characters/Cast-State-10.json#/content/471"
+  ],
+  "familyTree": {
+    "personId": "K721",
+    "nodes": [
+      {
+        "id": "K721",
+        "personId": "K721",
+        "kind": "person",
+        "name": "홍차원",
+        "birthDate": "2067-04-17",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K721"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-홍차원-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0721"
+      },
+      {
+        "id": "FH-K721-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "홍승온",
+        "birthDate": "2037-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "홍승온은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-홍차원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K721-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "홍승빈",
+        "birthDate": "2007-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "홍승빈은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-홍차원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K721-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도준",
+        "birthDate": "2037-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "이도준은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-홍차원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K721-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최도현",
+        "birthDate": "2007-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최도현은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-홍차원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K721-P-01:K721:biological",
+        "from": "FH-K721-P-01",
+        "to": "K721",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K721-P-02:FH-K721-P-01:biological",
+        "from": "FH-K721-P-02",
+        "to": "FH-K721-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K721-M-01:K721:biological",
+        "from": "FH-K721-M-01",
+        "to": "K721",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K721-M-02:FH-K721-M-01:biological",
+        "from": "FH-K721-M-02",
+        "to": "FH-K721-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-홍차원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K721",
     "personId": "person-0721",
@@ -133,17 +389,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.",
     "일화": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 장경 필사 행자 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 홍차원은 보존한 필사본을 윤초아에게 인계한다. 윤초아는 문중 표 결과와 구호 출처를 확인해 읽히지 않는 부분을 구두 약속만으로 채우지 않는다.",
     "야망": "장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.",
     "공포": "장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 장경 필사본·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 장경 필사 행자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 장경 필사 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −70 | 개방 75 | 무력 −50 | 물질 −20 | 공동 90 | 원칙 55 | 공개 40 | 자격 30 | 분산 50 | 변혁 −5\n- 욕망: 갈망 20 | 독점 −5 | 위험 15 | 과시 −30 | 지속 30 | 지향 동성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 장경 필사본·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 장경 필사 행자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 장경 필사 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 홍차원은 보존한 필사본을 윤초아에게 인계한다. 윤초아는 문중 표 결과와 구호 출처를 확인해 읽히지 않는 부분을 구두 약속만으로 채우지 않는다.\n\n**야망.** 장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −70 | 개방 75 | 무력 −50 | 물질 −20 | 공동 90 | 원칙 55 | 공개 40 | 자격 30 | 분산 50 | 변혁 −5\n- 욕망: 갈망 20 | 독점 −5 | 위험 15 | 과시 −30 | 지속 30 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-10"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "홍차원",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "홍차원은 보존한 필사본을 윤초아에게 인계한다. 윤초아는 문중 표 결과와 구호 출처를 확인해 읽히지 않는 부분을 구두 약속만으로 채우지 않는다."
+      }
+    ],
     "incoming": []
   }
 }

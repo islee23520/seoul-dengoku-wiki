@@ -12,6 +12,271 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-함도겸",
   "detailRoute": "/people/person-0398",
+  "birthDate": "2079-09-10",
+  "birthday": "09-10",
+  "age": 47,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/655",
+    "lore/characters/Cast-State-15.json#/content/656"
+  ],
+  "familyTree": {
+    "personId": "K397",
+    "nodes": [
+      {
+        "id": "K397",
+        "personId": "K397",
+        "kind": "person",
+        "name": "함도겸",
+        "birthDate": "2079-09-10",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K397"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-함도겸-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0398"
+      },
+      {
+        "id": "FH-K397-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "함승석",
+        "birthDate": "2049-09-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2087,
+            "summary": "함승석은 노량진 선창에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-함도겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K397-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "함승준",
+        "birthDate": "2019-09-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "함승준은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-함도겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K397-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준섭",
+        "birthDate": "2049-09-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2087,
+            "summary": "이준섭은 노량진 선창에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-함도겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K397-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최준빈",
+        "birthDate": "2019-09-10",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최준빈은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-함도겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K397-P-01:K397:biological",
+        "from": "FH-K397-P-01",
+        "to": "K397",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K397-P-02:FH-K397-P-01:biological",
+        "from": "FH-K397-P-02",
+        "to": "FH-K397-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K397-M-01:K397:biological",
+        "from": "FH-K397-M-01",
+        "to": "K397",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K397-M-02:FH-K397-M-01:biological",
+        "from": "FH-K397-M-02",
+        "to": "FH-K397-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-함도겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K373",
+      "recipientName": "남윤경",
+      "basis": "남윤경의 경매조정과 맞물리되, 보조 서명란은 조정인 도장과 겹치지 않게 둔다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-15.json",
+        "anchor": "인물-함도겸-p5"
+      }
+    }
+  ],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K397",
     "personId": "person-0398",

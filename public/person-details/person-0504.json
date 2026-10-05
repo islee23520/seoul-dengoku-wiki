@@ -12,6 +12,361 @@
   "stateName": "수문국",
   "sourceRoute": "/world/Cast-State-01#인물-이늘민",
   "detailRoute": "/people/person-0504",
+  "birthDate": "2092-07-14",
+  "birthday": "07-14",
+  "age": 34,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-01.json#/content/357",
+    "lore/characters/Cast-State-01.json#/content/359"
+  ],
+  "familyTree": {
+    "personId": "K504",
+    "nodes": [
+      {
+        "id": "K504",
+        "personId": "K504",
+        "kind": "person",
+        "name": "이늘민",
+        "birthDate": "2092-07-14",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K504"
+          },
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-이늘민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0504"
+      },
+      {
+        "id": "FH-K504-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이태희",
+        "birthDate": "2062-07-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "이태희는 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-이늘민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K504-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이태규",
+        "birthDate": "2032-07-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "이태규는 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-이늘민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K504-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이태완",
+        "birthDate": "2002-07-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이태완은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-이늘민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K504-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박태완",
+        "birthDate": "2062-07-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "박태완은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-이늘민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K504-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이태훈",
+        "birthDate": "2032-07-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "이태훈은 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-이늘민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K504-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "최태찬",
+        "birthDate": "2002-07-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최태찬은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-이늘민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K504-P-01:K504:biological",
+        "from": "FH-K504-P-01",
+        "to": "K504",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K504-P-02:FH-K504-P-01:biological",
+        "from": "FH-K504-P-02",
+        "to": "FH-K504-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K504-P-03:FH-K504-P-02:biological",
+        "from": "FH-K504-P-03",
+        "to": "FH-K504-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K504-M-01:K504:biological",
+        "from": "FH-K504-M-01",
+        "to": "K504",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K504-M-02:FH-K504-M-01:biological",
+        "from": "FH-K504-M-02",
+        "to": "FH-K504-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K504-M-03:FH-K504-M-02:biological",
+        "from": "FH-K504-M-03",
+        "to": "FH-K504-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-이늘민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K504",
     "personId": "person-0504",

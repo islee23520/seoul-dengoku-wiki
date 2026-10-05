@@ -12,6 +12,362 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-곽늘호",
   "detailRoute": "/people/person-0615",
+  "birthDate": "2102-05-02",
+  "birthday": "05-02",
+  "age": 24,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/380",
+    "lore/characters/Cast-State-16.json#/content/382",
+    "lore/characters/Cast-State-16.json#/content/383"
+  ],
+  "familyTree": {
+    "personId": "K615",
+    "nodes": [
+      {
+        "id": "K615",
+        "personId": "K615",
+        "kind": "person",
+        "name": "곽늘호",
+        "birthDate": "2102-05-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K615"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 호송 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽늘호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0615"
+      },
+      {
+        "id": "FH-K615-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승완",
+        "birthDate": "2072-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "곽승완은 암사 경비 초소에서 호송 순찰 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K615-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승훈",
+        "birthDate": "2042-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "곽승훈은 암사 경비 초소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K615-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승범",
+        "birthDate": "2012-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "곽승범은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K615-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재진",
+        "birthDate": "2072-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2110,
+            "summary": "정재진은 암사 경비 초소에서 호송 순찰 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K615-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤재호",
+        "birthDate": "2042-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2080,
+            "summary": "윤재호는 암사 경비 초소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K615-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한재준",
+        "birthDate": "2012-05-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한재준은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-곽늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K615-P-01:K615:biological",
+        "from": "FH-K615-P-01",
+        "to": "K615",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K615-P-02:FH-K615-P-01:biological",
+        "from": "FH-K615-P-02",
+        "to": "FH-K615-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K615-P-03:FH-K615-P-02:biological",
+        "from": "FH-K615-P-03",
+        "to": "FH-K615-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K615-M-01:K615:biological",
+        "from": "FH-K615-M-01",
+        "to": "K615",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K615-M-02:FH-K615-M-01:biological",
+        "from": "FH-K615-M-02",
+        "to": "FH-K615-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K615-M-03:FH-K615-M-02:biological",
+        "from": "FH-K615-M-03",
+        "to": "FH-K615-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-곽늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K615",
     "personId": "person-0615",
@@ -145,17 +501,24 @@
     "무공": "수벽술.",
     "관직": "품계 조합원. 직함은 호송 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 호송 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 곽늘호는 무장 난입자를 문 밖에 붙들고 선한솜에게 명부 재점검과 호송 순찰 내용을 전한다. 선한솜은 지하 서고 접근과 당직을 확인하고 계약 서기 입회 아래 필요한 수색을 진행해, 난입 경위가 확인되기 전에 봉인 관리가 흔들리지 않게 한다.",
     "야망": "호송 순찰대 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.",
     "공포": "호송 순찰대 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 호송 순찰 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 호송 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 호송 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 조합원. 직함은 호송 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 호송 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 호송 순찰대 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.\n\n**공포.** 호송 순찰대 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −5 | 물질 −5 | 공동 15 | 원칙 40 | 공개 25 | 자격 30 | 분산 40 | 변혁 0\n- 욕망: 갈망 35 | 독점 0 | 위험 −35 | 과시 0 | 지속 35 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 호송 순찰 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 호송 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 호송 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 조합원. 직함은 호송 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 호송 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 곽늘호는 무장 난입자를 문 밖에 붙들고 선한솜에게 명부 재점검과 호송 순찰 내용을 전한다. 선한솜은 지하 서고 접근과 당직을 확인하고 계약 서기 입회 아래 필요한 수색을 진행해, 난입 경위가 확인되기 전에 봉인 관리가 흔들리지 않게 한다.\n\n**야망.** 호송 순찰대 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.\n\n**공포.** 호송 순찰대 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −5 | 물질 −5 | 공동 15 | 원칙 40 | 공개 25 | 자격 30 | 분산 40 | 변혁 0\n- 욕망: 갈망 35 | 독점 0 | 위험 −35 | 과시 0 | 지속 35 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-16"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "곽늘호",
+        "type": "계약",
+        "to": "선한솜",
+        "basis": "곽늘호는 무장 난입자를 문 밖에 붙들고 선한솜에게 명부 재점검과 호송 순찰 내용을 전한다. 선한솜은 지하 서고 접근과 당직을 확인하고 계약 서기 입회 아래 필요한 수색을 진행해, 난입 경위가 확인되기 전에 봉인 관리가 흔들리지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

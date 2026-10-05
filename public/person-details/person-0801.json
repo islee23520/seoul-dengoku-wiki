@@ -12,6 +12,362 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-양새현",
   "detailRoute": "/people/person-0801",
+  "birthDate": "2093-05-26",
+  "birthday": "05-26",
+  "age": 33,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/523",
+    "lore/characters/Cast-State-10.json#/content/525",
+    "lore/characters/Cast-State-10.json#/content/526"
+  ],
+  "familyTree": {
+    "personId": "K801",
+    "nodes": [
+      {
+        "id": "K801",
+        "personId": "K801",
+        "kind": "person",
+        "name": "양새현",
+        "birthDate": "2093-05-26",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K801"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-양새현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0801"
+      },
+      {
+        "id": "FH-K801-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "양현석",
+        "birthDate": "2063-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2101,
+            "summary": "양현석은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-양새현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K801-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "양현준",
+        "birthDate": "2033-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2071,
+            "summary": "양현준은 노량진 선창에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-양새현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K801-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "양현호",
+        "birthDate": "2003-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "양현호는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-양새현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K801-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송도우",
+        "birthDate": "2063-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2101,
+            "summary": "송도우는 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-양새현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K801-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조도아",
+        "birthDate": "2033-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2071,
+            "summary": "조도아는 노량진 선창에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-양새현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K801-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "김도수",
+        "birthDate": "2003-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김도수는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-양새현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K801-P-01:K801:biological",
+        "from": "FH-K801-P-01",
+        "to": "K801",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K801-P-02:FH-K801-P-01:biological",
+        "from": "FH-K801-P-02",
+        "to": "FH-K801-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K801-P-03:FH-K801-P-02:biological",
+        "from": "FH-K801-P-03",
+        "to": "FH-K801-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K801-M-01:K801:biological",
+        "from": "FH-K801-M-01",
+        "to": "K801",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K801-M-02:FH-K801-M-01:biological",
+        "from": "FH-K801-M-02",
+        "to": "FH-K801-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K801-M-03:FH-K801-M-02:biological",
+        "from": "FH-K801-M-03",
+        "to": "FH-K801-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-양새현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K801",
     "personId": "person-0801",
@@ -133,17 +489,24 @@
     "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 짐 장부 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.",
     "일화": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 짐 장부 행자 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 양새현은 공개 배급표와 짐의 잔량을 황세린에게 넘긴다. 황세린은 저울과 두 감시인의 확인으로 남은 몫을 재어 이미 배분한 물자가 다시 잡히지 않게 한다.",
     "야망": "짐 장부 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.",
     "공포": "짐 장부 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 짐 장부·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 짐 장부 행자\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 짐 장부 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 짐 장부 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 짐 장부 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 짐 장부 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 45 | 무력 −40 | 물질 10 | 공동 50 | 원칙 15 | 공개 30 | 자격 40 | 분산 55 | 변혁 5\n- 욕망: 갈망 −5 | 독점 30 | 위험 10 | 과시 10 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 짐 장부·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 짐 장부 행자\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 짐 장부 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 짐 장부 행자 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 양새현은 공개 배급표와 짐의 잔량을 황세린에게 넘긴다. 황세린은 저울과 두 감시인의 확인으로 남은 몫을 재어 이미 배분한 물자가 다시 잡히지 않게 한다.\n\n**야망.** 짐 장부 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 짐 장부 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 45 | 무력 −40 | 물질 10 | 공동 50 | 원칙 15 | 공개 30 | 자격 40 | 분산 55 | 변혁 5\n- 욕망: 갈망 −5 | 독점 30 | 위험 10 | 과시 10 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-10"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "양새현",
+        "type": "계약",
+        "to": "황세린",
+        "basis": "양새현은 공개 배급표와 짐의 잔량을 황세린에게 넘긴다. 황세린은 저울과 두 감시인의 확인으로 남은 몫을 재어 이미 배분한 물자가 다시 잡히지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }
