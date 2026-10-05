@@ -35,20 +35,20 @@
     "band": "일반 인물",
     "attributes": {
       "ST": {
-        "value": 13,
-        "cp": 30
+        "value": 10,
+        "cp": 0
       },
       "DX": {
-        "value": 13,
-        "cp": 30
+        "value": 10,
+        "cp": 0
       },
       "IQ": {
-        "value": 15,
-        "cp": 60
+        "value": 20,
+        "cp": 200
       },
       "HT": {
-        "value": 12,
-        "cp": 20
+        "value": 11,
+        "cp": 10
       }
     },
     "traits": [],
@@ -95,11 +95,11 @@
       }
     ],
     "cp": {
-      "attributes": 140,
+      "attributes": 210,
       "advantages": 75,
       "disadvantages": -30,
       "skills": 115,
-      "total": 300,
+      "total": 370,
       "breakdown_visible": true
     },
     "secondary": {
