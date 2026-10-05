@@ -46,14 +46,17 @@
       "text": {
         "en": "Families and the Sixteen States",
         "ko": "가문과 십육국"
-      }
+      },
+      "publicAnchors": [
+        "가문과-십육국"
+      ]
     },
     {
       "kind": "paragraph",
       "anchor": "재벌-가문과-세기-파벌-p1",
       "text": {
         "en": "The sixteen states inherited different ways of filling their offices. Water-contract families elected the Sluice ruler; the Yongsan track family passed down the chief position of the Transshipment Station. Government, military, faith, and trade institutions kept their own titles.",
-        "ko": "십육국은 나라별로 관직을 채우는 방식이 달랐다. 물 계약 가문 대표들은 수문국 군주를 선출했고, 용산역 선로가는 환적국 역장 자리를 세습했다. 정부·군정·신정·상업 국가도 각자의 직함을 썼다."
+        "ko": "십육국은 나라별로 관직을 채우는 방식이 다르다. 수문국에서는 물 계약 가문 대표들이 군주를 선출하고, 용산역 선로가는 환적국 역장 자리를 세습한다. 정부·군정·신정·상업 국가도 각자의 직함을 쓴다."
       }
     },
     {
@@ -62,7 +65,7 @@
       "depth": 2,
       "text": {
         "en": "Houses and the Division of the Keys",
-        "ko": "가문과 키의 분할"
+        "ko": "선출되는 군주, 물려주는 열쇠"
       }
     },
     {
@@ -70,16 +73,11 @@
       "anchor": "가문과-키의-분할-p1",
       "text": {
         "en": "The Sluice held its capital at Yangpyeong Station. Han Jaemok of the Cheongju Han clan was elected ruler at a meeting of water-contract families.",
-        "ko": "수문국은 양평역을 수도로 삼는다. 청주 한씨 한재목은 물 계약 가문 대표들의 계약 회의에서 군주로 선출되었다."
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "가문과-키의-분할-p2",
-      "text": {
-        "en": "The Yongsan track family passed the key to the rail transshipment facility to its next generation. In the Sluice, representatives of water-contract families chose the ruler at their contract meeting.",
-        "ko": "용산역 선로가는 철도 환적 시설의 열쇠를 다음 세대에 넘겼다. 수문국에서는 물 계약 가문 대표들이 계약 회의에서 군주를 뽑았다."
-      }
+        "ko": "수문국의 수도는 양평역이다. 물 계약 가문 대표들은 계약 회의에서 청주 한씨 한재목을 군주로 선출했다. 수문국에서는 이 회의가 군주를 뽑지만, 용산역 선로가는 환적국 역장 자리를 세습하며 철도 환적 시설의 열쇠를 다음 세대에 넘겼다."
+      },
+      "publicAnchors": [
+        "가문과-키의-분할-p2"
+      ]
     },
     {
       "kind": "heading",
@@ -87,7 +85,7 @@
       "depth": 2,
       "text": {
         "en": "The Remnants of the Old Government",
-        "ko": "대한민국정부의 도심 지배와 분열"
+        "ko": "도심을 다스리는 대한민국정부"
       }
     },
     {
@@ -95,7 +93,7 @@
       "anchor": "구-정부의-잔존-p1",
       "text": {
         "en": "The \"Republic of Korea Government\" that kept its thread alive around Gwanghwamun Station was not the intact state order of 2026. On the night of the Great Blackout, with the lines cut and the networks dead, what remained were accreditation rights and seals transcribed on paper, and the conscription registers. Water, food, and large-scale repairs all had to be borrowed from the other great powers and the houses, and the government fell to the rank of a lesser state.",
-        "ko": "대한민국정부는 광화문을 중심으로 종로·중구를 직접 다스리는 십육국 제일의 강국이다. 기록청은 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단의 계승과 조약을 등록한다. 도심 주민 명부와 배급 창구, 통행·거래·계약의 도장과 인지세, 점호 명부를 갖춘 청사 경비대가 그 지배의 근거다. 명동대교구·안국총림·정동노총은 도심의 도장과 명부에 의지한다."
+        "ko": "광화문을 중심으로 종로·중구를 직접 다스리는 대한민국정부는 십육국 제일의 강국이다. 기록청은 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단의 계승과 조약을 등록한다. 도심의 주민 명부와 배급 창구도 정부가 맡는다. 도심에서 통행하거나 거래·계약을 하려면 정부의 도장을 받고 인지세를 내야 한다. 점호 명부를 갖춘 청사 경비대도 정부의 지배를 뒷받침한다. 명동대교구·안국총림·정동노총은 도심의 도장과 명부에 의지한다."
       }
     },
     {
@@ -103,7 +101,15 @@
       "anchor": "구-정부의-잔존-p2",
       "text": {
         "en": "The president of this place was not chosen by election; the one who had kept the original box of the Bukhansan Bogukmun Records House unbroken succeeded to the office. The Seoul Station Record-Law House was only the guild that managed this old government's records, not the state itself. The memory of the old army likewise splintered into living-sphere militias and scattered among the conscription remnants.",
-        "ko": "윤서린의 대통령직과 기록청, 청사 경비대, 인지세 수입을 두고 의무가문 파벌이 다툰다. 김연규 아래의 온민의도 그 파벌 가운데 하나다. 동방사와 아관사는 기록청 등록으로 정부에 복속하였고, 기록청에 승계와 조약을 등록하거나 청사 도장을 쓰는 나라들은 정부를 보좌한다. 태욱그룹·여의도출자연합회·명부교회·성하그룹·중앙기술보존원은 독립국으로 남았다."
+        "ko": "그 기반은 정부 안에서도 다툼의 대상이다. 의무가문 파벌들은 윤서린의 대통령직과 기록청, 청사 경비대, 인지세 수입을 두고 맞선다. 김연규가 이끄는 온민의도 그 파벌 가운데 하나다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "구-정부의-잔존-관계",
+      "text": {
+        "en": "The Yongsan track family passed the key to the rail transshipment facility to its next generation. In the Sluice, representatives of water-contract families chose the ruler at their contract meeting.",
+        "ko": "정부와의 관계 역시 나라마다 다르다. 동방사와 아관사는 기록청 등록으로 정부에 복속했다. 기록청에 승계와 조약을 등록하거나 청사 도장을 쓰는 나라들은 정부를 보좌한다. 태욱그룹·여의도출자연합회·명부교회·성하그룹·중앙정보부는 독립국으로 남았다."
       }
     },
     {
@@ -113,14 +119,17 @@
       "text": {
         "en": "External Powers and the Theaters",
         "ko": "서울 바깥 회랑"
-      }
+      },
+      "publicAnchors": [
+        "서울-바깥-회랑"
+      ]
     },
     {
       "kind": "paragraph",
       "anchor": "외부-세력과-전구-p1",
       "text": {
         "en": "In the seams between the sixteen states and beyond them stood five external theaters that pressed on Seoul's control. They took no formal state slot, but they squeezed the life of Seoul with quarantine, grain, the strait, the far east, and the ocean trust.",
-        "ko": "열여섯 국가의 틈새와 그 바깥에는 서울의 통제권을 압박하는 서울 바깥 회랑 다섯이 있다. 이 회랑은 정식 국가 슬롯을 차지하지 않으나, 검역, 곡물, 해협, 극동, 원양 신탁 등으로 서울의 생활에 제약을 준다."
+        "ko": "열여섯 국가의 틈새와 그 바깥에는 서울의 통제권을 압박하는 회랑 다섯이 있다. 이 회랑들은 열여섯 국가에 포함되지 않지만, 검역·곡물·해협·극동·원양 신탁을 통해 서울의 생활에 제약을 준다."
       }
     },
     {
@@ -128,7 +137,7 @@
       "anchor": "외부-세력과-전구-p2",
       "text": {
         "en": "The Imjin River Gate Theater held the North's quarantine and the return registers, and the West Sea Granary Theater gripped the grain queues at the river-mouth berths. The Korea Strait Theater, the Duman River Far East Theater, and the Incheon Trust Theater likewise throttled the breathing of the sixteen states each through logistics, smuggling, and the communications trust, knotting the power map of 2126 tighter still.",
-        "ko": "임진강관문전구는 북쪽의 검역과 귀환 명부를 통제하고, 서해곡창전구는 하구 부두의 곡물 순번을 쥐고 있다. 대한해협전구와 두만강극동전구, 인천신탁전구도 각각 물류와 밀수, 통신 신탁을 열고 막아 2126년 열여섯 국가의 권력 관계를 복잡하게 만든다."
+        "ko": "임진강관문전구는 북쪽의 검역과 귀환 명부를 통제한다. 서해곡창전구는 하구 부두에서 곡물을 받는 순번을 통제한다. 대한해협전구는 물류를, 두만강극동전구는 밀수를, 인천신탁전구는 통신 신탁을 각각 통제한다. 이들이 2126년 열여섯 국가의 권력 관계를 복잡하게 만든다."
       }
     }
   ],
