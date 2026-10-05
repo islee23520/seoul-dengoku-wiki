@@ -147682,14 +147682,6 @@
           "effect": "재고 장부·배급 계산"
         },
         {
-          "name": "장검",
-          "attr": "DX",
-          "level": 13,
-          "difficulty": "중",
-          "cp": 8,
-          "effect": "도검 베기·찌르기"
-        },
-        {
           "name": "지역지식",
           "attr": "IQ",
           "level": 15,
@@ -147729,8 +147721,8 @@
         "attributes": 190,
         "advantages": 80,
         "disadvantages": -20,
-        "skills": 110,
-        "total": 360,
+        "skills": 102,
+        "total": 352,
         "breakdown_visible": true
       },
       "band": "일반 인물",
@@ -149280,28 +149272,12 @@
           "effect": "부대 사기·통제"
         },
         {
-          "name": "장검",
-          "attr": "DX",
-          "level": 15,
-          "difficulty": "중",
-          "cp": 16,
-          "effect": "도검 베기·찌르기"
-        },
-        {
           "name": "창술",
           "attr": "DX",
           "level": 14,
           "difficulty": "중",
           "cp": 8,
           "effect": "장창 찌르기"
-        },
-        {
-          "name": "화기",
-          "attr": "DX",
-          "level": 15,
-          "difficulty": "중",
-          "cp": 16,
-          "effect": "화기 사격"
         },
         {
           "name": "역사",
@@ -149327,19 +149303,17 @@
         "attributes": 210,
         "advantages": 75,
         "disadvantages": -30,
-        "skills": 115,
-        "total": 370,
+        "skills": 83,
+        "total": 338,
         "breakdown_visible": true
       },
       "band": "일반 인물",
       "baseline": false,
       "unit": {
-        "type": "온민 친위대",
         "size": 45,
         "quality": "정예",
         "composition": [
           "친위병",
-          "총검병",
           "경비병"
         ],
         "note": "온민 수장 직속 친위부대",
