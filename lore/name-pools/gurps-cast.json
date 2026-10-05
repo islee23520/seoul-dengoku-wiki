@@ -148425,8 +148425,8 @@
       },
       "attributes": {
         "ST": {
-          "value": 11,
-          "cp": 10,
+          "value": 17,
+          "cp": 70,
           "rule": "pilot-approved",
           "evidence": [
             {
@@ -148436,8 +148436,8 @@
           ]
         },
         "DX": {
-          "value": 12,
-          "cp": 40,
+          "value": 14,
+          "cp": 80,
           "rule": "pilot-approved",
           "evidence": [
             {
@@ -148468,8 +148468,8 @@
           ]
         },
         "HT": {
-          "value": 12,
-          "cp": 20,
+          "value": 14,
+          "cp": 40,
           "rule": "pilot-approved",
           "evidence": [
             {
@@ -148718,13 +148718,13 @@
         "Dodge": 10
       },
       "cp": {
-        "attributes": 130,
+        "attributes": 250,
         "advantages": 20,
         "disadvantages": 0,
         "skills": 60,
-        "spent": 210,
+        "spent": 330,
         "unspent": 0,
-        "total": 210
+        "total": 330
       },
       "band": "주역·강자",
       "baseline": false,
