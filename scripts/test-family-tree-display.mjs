@@ -1,0 +1,107 @@
+import assert from 'node:assert/strict'
+import { readFile } from 'node:fs/promises'
+import { test } from 'vitest'
+import { createElement } from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
+import { MemoryRouter } from 'react-router-dom'
+import { JSDOM } from 'jsdom'
+import { FamilyTree } from '../src/components/FamilyTree.tsx'
+import FamiliesPage from '../src/pages/FamiliesPage.tsx'
+
+const detail = async (id) => JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))
+const render = (tree) => new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null, createElement(FamilyTree, { tree })))).window.document
+
+test('actual Brooks ancestry renders every canonical edge as a line and places four generations', async () => {
+  const tree = (await detail('person-0014')).familyTree
+  const doc = render(tree)
+  assert.equal(doc.querySelectorAll('[data-family-node]').length, tree.nodes.length)
+  assert.equal(doc.querySelectorAll('[data-family-edge-id]').length, tree.edges.length)
+  for (const edge of tree.edges) {
+    const line = [...doc.querySelectorAll('[data-family-edge-id]')].find((node) => node.dataset.familyEdgeId === edge.id)
+    assert.ok(line.querySelector('path').getAttribute('d').includes('V'))
+    assert.equal(line.dataset.familyFrom, edge.from)
+    assert.equal(line.dataset.familyTo, edge.to)
+    const parent = doc.querySelector(`[data-family-node="${edge.from}"]`)
+    const child = doc.querySelector(`[data-family-node="${edge.to}"]`)
+    assert.ok(Number(parent.dataset.familyGeneration) < Number(child.dataset.familyGeneration))
+  }
+  assert.equal(new Set([...doc.querySelectorAll('[data-family-generation]')].map((node) => node.dataset.familyGeneration)).size, 4)
+  assert.equal(doc.querySelector('[data-family-node="K014"] a').getAttribute('href'), '/people/person-0014')
+  assert.equal(doc.querySelectorAll('[data-family-edge="spouse"]').length, 0)
+})
+
+test('two recorded biological parents form adjacent pairs with one shared descent at every generation', async () => {
+  for (const id of ['person-0014', 'person-1010', 'person-0087']) {
+    const tree = (await detail(id)).familyTree
+    const doc = render(tree)
+    const expected = tree.nodes.filter((child) => tree.edges.filter((edge) => edge.to === child.id && edge.type === 'biological').length === 2)
+    assert.equal(doc.querySelectorAll('[data-family-parent-pair]').length, expected.length)
+    for (const child of expected) {
+      const parentIds = tree.edges.filter((edge) => edge.to === child.id && edge.type === 'biological').map((edge) => edge.from)
+      const pair = [...doc.querySelectorAll('[data-family-parent-pair]')].find((node) => node.dataset.familyParentPair === child.id)
+      assert.deepEqual(pair.dataset.familyPairParents.split(' '), parentIds)
+      assert.equal(pair.querySelectorAll('[data-family-shared-descent]').length, 1)
+      const nodes = parentIds.map((parent) => doc.querySelector(`[data-family-node="${parent}"]`))
+      assert.equal(nodes[0].style.top, nodes[1].style.top)
+      const left = nodes.map((node) => parseFloat(node.style.left)).sort((a, b) => a - b)
+      assert.ok(left[1] - left[0] >= 180 && left[1] - left[0] <= 300)
+      for (const parent of parentIds) assert.ok(doc.querySelector(`[data-family-from="${parent}"][data-family-to="${child.id}"] path`))
+    }
+    assert.equal(doc.querySelectorAll('[data-family-node]').length, tree.nodes.length)
+    assert.equal(doc.querySelectorAll('[data-family-edge-id]').length, tree.edges.length)
+    assert.equal(doc.querySelectorAll('[data-family-edge="spouse"]').length, 0)
+  }
+})
+
+test('source adoption and unknown-parent states stay distinct without invented nodes', async () => {
+  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
+  const statuses = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-parent-status.json', import.meta.url), 'utf8')).records
+  const files = JSON.parse((await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')).split(' as const')[0].replace('export const peopleCatalog = ', ''))
+  for (const record of statuses) {
+    const name = registry.find((person) => person.id === record.personId).name
+    const tree = (await detail(files.find((person) => person.name === name).id)).familyTree
+    const doc = render(tree)
+    assert.equal(doc.querySelectorAll('[data-family-node]').length, tree.nodes.length)
+    assert.ok(doc.querySelector('.person-family-tree').textContent.includes('미설정'))
+    for (const edge of tree.edges.filter((entry) => entry.type === 'adoptive')) {
+      const line = [...doc.querySelectorAll('[data-family-edge-id]')].find((node) => node.dataset.familyEdgeId === edge.id)
+      assert.equal(line.querySelector('path').getAttribute('stroke-dasharray'), '6 4')
+      assert.ok(line.textContent.includes('입양'))
+    }
+  }
+})
+
+test('missing canonical graph has an explicit empty state', () => {
+  const doc = render({ personId: 'K014', nodes: [], edges: [] })
+  assert.ok(doc.querySelector('[role="status"]'))
+  assert.equal(doc.querySelectorAll('path').length, 0)
+})
+
+test('unknown counterpart is visual only for one recorded biological parent, never adoption', async () => {
+  for (const id of ['person-0014', 'person-1010', 'person-0087']) {
+    const tree = (await detail(id)).familyTree
+    const doc = render(tree)
+    const single = tree.nodes.filter((node) => tree.edges.filter((edge) => edge.to === node.id && edge.type === 'biological').length === 1)
+    assert.deepEqual(new Set([...doc.querySelectorAll('[data-family-unknown-parent]')].map((node) => node.dataset.familyUnknownParent)), new Set(single.map((node) => node.id)))
+    for (const placeholder of doc.querySelectorAll('[data-family-unknown-parent]')) {
+      assert.equal(placeholder.querySelectorAll('[data-family-node], [data-family-edge-id], a').length, 0)
+      assert.ok(placeholder.textContent.includes('미상 부모'))
+      const box = placeholder.querySelector('rect')
+      const connector = placeholder.querySelector('[data-family-unknown-connector]')
+      const x = Number(box.getAttribute('x')) + Number(box.getAttribute('width')) / 2
+      const bottom = Number(box.getAttribute('y')) + Number(box.getAttribute('height'))
+      assert.equal(connector.getAttribute('d'), `M ${x} ${bottom} V ${bottom + 38}`)
+      assert.equal(connector.getAttribute('stroke-dasharray'), '6 4')
+      assert.ok(placeholder.querySelector('path:not([data-family-unknown-connector])').getAttribute('d').includes(`H ${x}`))
+    }
+    assert.equal(doc.querySelectorAll('[data-family-node]').length, tree.nodes.length)
+    assert.equal(doc.querySelectorAll('[data-family-edge-id]').length, tree.edges.length)
+    if (id === 'person-0087') assert.equal(doc.querySelector('[data-family-unknown-parent="K087"]'), null)
+  }
+})
+
+test('family selector uses stable public IDs from the actual catalog', () => {
+  const doc = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, { initialEntries: ['/families?person=person-0014'] }, createElement(FamiliesPage)))).window.document
+  assert.equal(doc.querySelector('option[selected]').value, 'person-0014')
+  assert.equal(doc.querySelector('option[selected]').textContent, '대니얼 브룩스')
+})

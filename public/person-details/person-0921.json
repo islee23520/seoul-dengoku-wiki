@@ -12,6 +12,262 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-심카현",
   "detailRoute": "/people/person-0921",
+  "birthDate": "2071-12-28",
+  "birthday": "12-28",
+  "age": 55,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/643",
+    "lore/characters/Cast-State-02.json#/content/645",
+    "lore/characters/Cast-State-02.json#/content/646"
+  ],
+  "familyTree": {
+    "personId": "K921",
+    "nodes": [
+      {
+        "id": "K921",
+        "personId": "K921",
+        "kind": "person",
+        "name": "심카현",
+        "birthDate": "2071-12-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K921"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "소속: 규격맹",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-심카현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0921"
+      },
+      {
+        "id": "FH-K921-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "심승도",
+        "birthDate": "2041-12-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "심승도는 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-심카현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K921-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "심현석",
+        "birthDate": "2011-12-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "심현석은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-심카현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K921-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송민민",
+        "birthDate": "2041-12-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "송민민은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-심카현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K921-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조민수",
+        "birthDate": "2011-12-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조민수는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-심카현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K921-P-01:K921:biological",
+        "from": "FH-K921-P-01",
+        "to": "K921",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K921-P-02:FH-K921-P-01:biological",
+        "from": "FH-K921-P-02",
+        "to": "FH-K921-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K921-M-01:K921:biological",
+        "from": "FH-K921-M-01",
+        "to": "K921",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K921-M-02:FH-K921-M-01:biological",
+        "from": "FH-K921-M-02",
+        "to": "FH-K921-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-심카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K921",
     "personId": "person-0921",
@@ -155,7 +411,14 @@
     "Cast-State-02"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "심카현",
+        "type": "계약",
+        "to": "변주아",
+        "basis": "심카현은 전력장치 초계의 매복 흔적을 변주아에게 알린다. 변주아는 운전 상태와 부하표를 확인해 위험 때문에 멈춘 공급과 설비 고장을 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -12,6 +12,362 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-조자준",
   "detailRoute": "/people/person-0549",
+  "birthDate": "2091-08-18",
+  "birthday": "08-18",
+  "age": 35,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/347",
+    "lore/characters/Cast-State-14.json#/content/349",
+    "lore/characters/Cast-State-14.json#/content/350"
+  ],
+  "familyTree": {
+    "personId": "K549",
+    "nodes": [
+      {
+        "id": "K549",
+        "personId": "K549",
+        "kind": "person",
+        "name": "조자준",
+        "birthDate": "2091-08-18",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K549"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-조자준-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0549"
+      },
+      {
+        "id": "FH-K549-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조태완",
+        "birthDate": "2061-08-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "조태완은 대합실 당직에서 검역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-조자준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K549-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조태훈",
+        "birthDate": "2031-08-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "조태훈은 대합실 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-조자준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K549-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "조태범",
+        "birthDate": "2001-08-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조태범은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-조자준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K549-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송태정",
+        "birthDate": "2061-08-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "송태정은 대합실 당직에서 검역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-조자준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K549-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조태재",
+        "birthDate": "2031-08-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "조태재는 대합실 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-조자준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K549-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "김태재",
+        "birthDate": "2001-08-18",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김태재는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-조자준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K549-P-01:K549:biological",
+        "from": "FH-K549-P-01",
+        "to": "K549",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K549-P-02:FH-K549-P-01:biological",
+        "from": "FH-K549-P-02",
+        "to": "FH-K549-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K549-P-03:FH-K549-P-02:biological",
+        "from": "FH-K549-P-03",
+        "to": "FH-K549-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K549-M-01:K549:biological",
+        "from": "FH-K549-M-01",
+        "to": "K549",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K549-M-02:FH-K549-M-01:biological",
+        "from": "FH-K549-M-02",
+        "to": "FH-K549-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K549-M-03:FH-K549-M-02:biological",
+        "from": "FH-K549-M-03",
+        "to": "FH-K549-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-조자준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K549",
     "personId": "person-0549",
@@ -149,7 +505,14 @@
     "Cast-State-14"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "조자준",
+        "type": "계약",
+        "to": "영한뫼",
+        "basis": "조자준은 검역 순서를 바꾸라는 사적 청탁을 공개 창구로 돌리고 영한뫼에게 접수 내용을 전한다. 영한뫼는 의무소 대기 줄과 중증도 표를 확인해 청탁이 들것과 병상 순서를 앞지르지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

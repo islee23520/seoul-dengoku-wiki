@@ -12,6 +12,262 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-허늘우",
   "detailRoute": "/people/person-0689",
+  "birthDate": "2073-02-26",
+  "birthday": "02-26",
+  "age": 53,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/446",
+    "lore/characters/Cast-State-10.json#/content/448",
+    "lore/characters/Cast-State-10.json#/content/449"
+  ],
+  "familyTree": {
+    "personId": "K689",
+    "nodes": [
+      {
+        "id": "K689",
+        "personId": "K689",
+        "kind": "person",
+        "name": "허늘우",
+        "birthDate": "2073-02-26",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K689"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 행자 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-허늘우-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0689"
+      },
+      {
+        "id": "FH-K689-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승욱",
+        "birthDate": "2043-02-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "허승욱은 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-허늘우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K689-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승란",
+        "birthDate": "2013-02-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "허승란은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-허늘우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K689-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한재재",
+        "birthDate": "2043-02-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2081,
+            "summary": "한재재는 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-허늘우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K689-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강재규",
+        "birthDate": "2013-02-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강재규는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-허늘우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K689-P-01:K689:biological",
+        "from": "FH-K689-P-01",
+        "to": "K689",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K689-P-02:FH-K689-P-01:biological",
+        "from": "FH-K689-P-02",
+        "to": "FH-K689-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K689-M-01:K689:biological",
+        "from": "FH-K689-M-01",
+        "to": "K689",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K689-M-02:FH-K689-M-01:biological",
+        "from": "FH-K689-M-02",
+        "to": "FH-K689-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-허늘우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K689",
     "personId": "person-0689",
@@ -149,7 +405,14 @@
     "Cast-State-10"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "허늘우",
+        "type": "계약",
+        "to": "복모",
+        "basis": "허늘우는 침수 구간에서 필사본 전달이 끊긴 위치를 복모에게 알린다. 복모는 우회로를 실측해 확인된 길을 내부 안내에 남기고 외부에 고지 좌표를 넘기는 일과 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

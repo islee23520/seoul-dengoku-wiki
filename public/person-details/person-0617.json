@@ -12,6 +12,262 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-차름환",
   "detailRoute": "/people/person-0617",
+  "birthDate": "2066-01-15",
+  "birthday": "01-15",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/434",
+    "lore/characters/Cast-State-02.json#/content/436",
+    "lore/characters/Cast-State-02.json#/content/437"
+  ],
+  "familyTree": {
+    "personId": "K617",
+    "nodes": [
+      {
+        "id": "K617",
+        "personId": "K617",
+        "kind": "person",
+        "name": "차름환",
+        "birthDate": "2066-01-15",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K617"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-차름환-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0617"
+      },
+      {
+        "id": "FH-K617-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "차승성",
+        "birthDate": "2036-01-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "차승성은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-차름환-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K617-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "차승욱",
+        "birthDate": "2006-01-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "차승욱은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-차름환-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K617-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한재민",
+        "birthDate": "2036-01-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "한재민은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-차름환-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K617-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강태미",
+        "birthDate": "2006-01-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강태미는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-차름환-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K617-P-01:K617:biological",
+        "from": "FH-K617-P-01",
+        "to": "K617",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K617-P-02:FH-K617-P-01:biological",
+        "from": "FH-K617-P-02",
+        "to": "FH-K617-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K617-M-01:K617:biological",
+        "from": "FH-K617-M-01",
+        "to": "K617",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K617-M-02:FH-K617-M-01:biological",
+        "from": "FH-K617-M-02",
+        "to": "FH-K617-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-차름환-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K617",
     "personId": "person-0617",
@@ -149,7 +405,14 @@
     "Cast-State-02"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "차름환",
+        "type": "계약",
+        "to": "진우람",
+        "basis": "차름환은 환승 전갈을 나르다 부상자를 옮기면 진우람에게 인원과 도착 상황을 알린다. 진우람은 공방 진료에서 환자를 확인하고 필요한 처방을 나눠 전달 지연이 진료 누락으로 이어지지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

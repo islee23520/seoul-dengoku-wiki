@@ -12,6 +12,361 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-범하겸",
   "detailRoute": "/people/person-0420",
+  "birthDate": "2091-03-11",
+  "birthday": "03-11",
+  "age": 35,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/225",
+    "lore/characters/Cast-State-16.json#/content/226"
+  ],
+  "familyTree": {
+    "personId": "K419",
+    "nodes": [
+      {
+        "id": "K419",
+        "personId": "K419",
+        "kind": "person",
+        "name": "범하겸",
+        "birthDate": "2091-03-11",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K419"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 각국 인준 감사 보조 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-범하겸-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0420"
+      },
+      {
+        "id": "FH-K419-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "범승우",
+        "birthDate": "2061-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "범승우는 서울역 등기소에서 인준 잉크 마름·직인 위치 보조 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-범하겸-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K419-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "범승경",
+        "birthDate": "2031-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "범승경은 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-범하겸-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K419-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "범승수",
+        "birthDate": "2001-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "범승수는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-범하겸-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K419-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김준욱",
+        "birthDate": "2061-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2099,
+            "summary": "김준욱은 서울역 등기소에서 인준 잉크 마름·직인 위치 보조 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-범하겸-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K419-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박준란",
+        "birthDate": "2031-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2069,
+            "summary": "박준란은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-범하겸-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K419-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "이준란",
+        "birthDate": "2001-03-11",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이준란은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-범하겸-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K419-P-01:K419:biological",
+        "from": "FH-K419-P-01",
+        "to": "K419",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K419-P-02:FH-K419-P-01:biological",
+        "from": "FH-K419-P-02",
+        "to": "FH-K419-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K419-P-03:FH-K419-P-02:biological",
+        "from": "FH-K419-P-03",
+        "to": "FH-K419-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K419-M-01:K419:biological",
+        "from": "FH-K419-M-01",
+        "to": "K419",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K419-M-02:FH-K419-M-01:biological",
+        "from": "FH-K419-M-02",
+        "to": "FH-K419-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K419-M-03:FH-K419-M-02:biological",
+        "from": "FH-K419-M-03",
+        "to": "FH-K419-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-범하겸-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K419",
     "personId": "person-0420",

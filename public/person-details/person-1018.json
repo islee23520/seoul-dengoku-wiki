@@ -12,6 +12,263 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-Unaffiliated#인물-고예진",
   "detailRoute": "/people/person-1018",
+  "birthDate": "2067-11-04",
+  "birthday": "11-04",
+  "age": 59,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-Unaffiliated.json#/content/18",
+    "lore/characters/Cast-Unaffiliated.json#/content/20",
+    "lore/characters/Cast-Unaffiliated.json#/content/26",
+    "lore/chronology/Century-Annals.json#/content/488"
+  ],
+  "familyTree": {
+    "personId": "K1018",
+    "nodes": [
+      {
+        "id": "K1018",
+        "personId": "K1018",
+        "kind": "person",
+        "name": "고예진",
+        "birthDate": "2067-11-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K1018"
+          },
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "성명: 고예진 (Goh Yejin)",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-서하진-list1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-1018"
+      },
+      {
+        "id": "FH-K1018-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "고현연",
+        "birthDate": "2037-11-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "고현연은 이수역 생활권에서 성장하였다에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-서하진-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1018-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "고현정",
+        "birthDate": "2007-11-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "고현정은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-서하진-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1018-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조서호",
+        "birthDate": "2037-11-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "조서호는 이수역 생활권에서 성장하였다에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-서하진-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K1018-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김서민",
+        "birthDate": "2007-11-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김서민은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-Unaffiliated.json",
+                "anchor": "인물-서하진-list1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K1018-P-01:K1018:biological",
+        "from": "FH-K1018-P-01",
+        "to": "K1018",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1018-P-02:FH-K1018-P-01:biological",
+        "from": "FH-K1018-P-02",
+        "to": "FH-K1018-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1018-M-01:K1018:biological",
+        "from": "FH-K1018-M-01",
+        "to": "K1018",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K1018-M-02:FH-K1018-M-01:biological",
+        "from": "FH-K1018-M-02",
+        "to": "FH-K1018-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Unaffiliated.json",
+            "anchor": "인물-서하진-list1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K1018",
     "personId": "person-1018",

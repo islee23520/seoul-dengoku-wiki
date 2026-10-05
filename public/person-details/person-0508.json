@@ -12,6 +12,262 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-강하준",
   "detailRoute": "/people/person-0508",
+  "birthDate": "2074-05-23",
+  "birthday": "05-23",
+  "age": 52,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/357",
+    "lore/characters/Cast-State-05.json#/content/359",
+    "lore/characters/Cast-State-05.json#/content/360"
+  ],
+  "familyTree": {
+    "personId": "K508",
+    "nodes": [
+      {
+        "id": "K508",
+        "personId": "K508",
+        "kind": "person",
+        "name": "강하준",
+        "birthDate": "2074-05-23",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K508"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강하준-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0508"
+      },
+      {
+        "id": "FH-K508-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강태현",
+        "birthDate": "2044-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "강태현은 암사 경비 초소에서 야간 순찰·경비 암호패 교체 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K508-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강태영",
+        "birthDate": "2014-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강태영은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K508-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤태수",
+        "birthDate": "2044-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "윤태수는 암사 경비 초소에서 야간 순찰·경비 암호패 교체 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K508-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한태경",
+        "birthDate": "2014-05-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한태경은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K508-P-01:K508:biological",
+        "from": "FH-K508-P-01",
+        "to": "K508",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K508-P-02:FH-K508-P-01:biological",
+        "from": "FH-K508-P-02",
+        "to": "FH-K508-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K508-M-01:K508:biological",
+        "from": "FH-K508-M-01",
+        "to": "K508",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K508-M-02:FH-K508-M-01:biological",
+        "from": "FH-K508-M-02",
+        "to": "FH-K508-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K508",
     "personId": "person-0508",
@@ -155,7 +411,14 @@
     "Cast-State-05"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "강하준",
+        "type": "계약",
+        "to": "이윤서",
+        "basis": "강하준은 야간 무단 출입을 적발해 암호패를 바꾸면 이윤서에게 교체 사실을 전한다. 이윤서는 교량의 야간 출입에서 새 확인 내용을 살펴, 이전 암호패를 든 사람이 정상 순찰로 통과하지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

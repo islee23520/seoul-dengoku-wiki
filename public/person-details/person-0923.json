@@ -12,6 +12,262 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-하동재",
   "detailRoute": "/people/person-0923",
+  "birthDate": "2075-07-19",
+  "birthday": "07-19",
+  "age": 51,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/643",
+    "lore/characters/Cast-State-04.json#/content/645",
+    "lore/characters/Cast-State-04.json#/content/646"
+  ],
+  "familyTree": {
+    "personId": "K923",
+    "nodes": [
+      {
+        "id": "K923",
+        "personId": "K923",
+        "kind": "person",
+        "name": "하동재",
+        "birthDate": "2075-07-19",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K923"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "소속: 명부교회",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-하동재-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0923"
+      },
+      {
+        "id": "FH-K923-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "하현석",
+        "birthDate": "2045-07-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2083,
+            "summary": "하현석은 신내 환승 당직에서 환승 통로 개통·부상자 이송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-하동재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K923-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "하현준",
+        "birthDate": "2015-07-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "하현준은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-하동재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K923-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김민경",
+        "birthDate": "2045-07-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2083,
+            "summary": "김민경은 신내 환승 당직에서 환승 통로 개통·부상자 이송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-하동재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K923-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박민범",
+        "birthDate": "2015-07-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박민범은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-하동재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K923-P-01:K923:biological",
+        "from": "FH-K923-P-01",
+        "to": "K923",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K923-P-02:FH-K923-P-01:biological",
+        "from": "FH-K923-P-02",
+        "to": "FH-K923-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K923-M-01:K923:biological",
+        "from": "FH-K923-M-01",
+        "to": "K923",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K923-M-02:FH-K923-M-01:biological",
+        "from": "FH-K923-M-02",
+        "to": "FH-K923-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-하동재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K923",
     "personId": "person-0923",
@@ -149,7 +405,14 @@
     "Cast-State-04"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "하동재",
+        "type": "계약",
+        "to": "제바름",
+        "basis": "하동재는 통로에서 옮긴 부상자를 제바름에게 인계한다. 제바름은 골목 진료에서 상태와 탈수를 확인해 이송된 환자가 전령 기록만 남지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

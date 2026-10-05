@@ -12,6 +12,274 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-류은비",
   "detailRoute": "/people/person-0323",
+  "birthDate": "2070-09-16",
+  "birthday": "09-16",
+  "age": 56,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/115",
+    "lore/chronology/Century-Annals.json#/content/437",
+    "lore/chronology/Century-Annals.json#/content/570",
+    "lore/chronology/Scenario-Timeline.json#/content/9"
+  ],
+  "familyTree": {
+    "personId": "K322",
+    "nodes": [
+      {
+        "id": "K322",
+        "personId": "K322",
+        "kind": "person",
+        "name": "류은비",
+        "birthDate": "2070-09-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K322"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 약재시장(경동) 쪽 치료. 무공은 없다. 손은 약이다. 제기동 약령 장부와 병원 당직이 적과 아군을 가리지 않는 치료 서약을 남겼다. 단장은 전문의의 임상 판단을 감독하고 전문의가 지정한 수련의의 승계를 확인한다. 류은비가 단장이 된 것은 청량리의료원가의 침상 명부를 끊기지 않게 지킨 뒤였다. 제기동치유문의 명부는 정하린의 것이다. 동대문 야간 공임은 이 나라 서쪽 호다. 가짜 약이 돌면 거래를 끊는다. 중증도와 진료 소견을 같이 본다. 남윤경의 시세가 약을 선매하면 침상이 빈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-류은비-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0323"
+      },
+      {
+        "id": "FH-K322-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "류승정",
+        "birthDate": "2040-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "류승정은 생활권의 공동 거처에서 의료단 단장 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-류은비-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K322-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "류승아",
+        "birthDate": "2010-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "류승아는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-류은비-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K322-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조준호",
+        "birthDate": "2040-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "조준호는 생활권의 공동 거처에서 의료단 단장 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-류은비-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K322-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김준현",
+        "birthDate": "2010-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김준현은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-류은비-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K322-P-01:K322:biological",
+        "from": "FH-K322-P-01",
+        "to": "K322",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K322-P-02:FH-K322-P-01:biological",
+        "from": "FH-K322-P-02",
+        "to": "FH-K322-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K322-M-01:K322:biological",
+        "from": "FH-K322-M-01",
+        "to": "K322",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K322-M-02:FH-K322-M-01:biological",
+        "from": "FH-K322-M-02",
+        "to": "FH-K322-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-류은비-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K347",
+      "recipientName": "백여울",
+      "basis": "류은비의 치료 길드와 협력하되, 중개 수수료 장부는 공개하지 않는다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-13.json",
+        "anchor": "인물-백여울-p5"
+      }
+    }
+  ],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K322",
     "personId": "person-0323",
@@ -209,13 +477,19 @@
         "basis": "북한산보국문 약품 배급 감사를 빚짐"
       },
       {
+        "from": "김사연",
+        "type": "계약",
+        "to": "류은비",
+        "basis": "김사연은 담당 전문의 곁에서 적은 중증도·진료 소견을 류은비에게 올린다. 류은비는 병상 배정 순서를 확인해 환자의 소속이나 재산 대신 임상 근거로 치료를 잇는다."
+      },
+      {
         "from": "연지우",
         "type": "빚",
         "to": "류은비",
         "basis": "류은비에게 약품 묶음을 빚지며"
       },
       {
-        "from": "차호민",
+        "from": "가브리엘 존슨",
         "type": "빚",
         "to": "류은비",
         "basis": "류은비에게 창 약재를 빚지며"

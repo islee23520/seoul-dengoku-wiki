@@ -12,6 +12,262 @@
   "stateName": "정동노총",
   "sourceRoute": "/world/Cast-State-16#인물-김준호",
   "detailRoute": "/people/person-0503",
+  "birthDate": "2070-02-12",
+  "birthday": "02-12",
+  "age": 56,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-16.json#/content/303",
+    "lore/characters/Cast-State-16.json#/content/305",
+    "lore/characters/Cast-State-16.json#/content/306"
+  ],
+  "familyTree": {
+    "personId": "K503",
+    "nodes": [
+      {
+        "id": "K503",
+        "personId": "K503",
+        "kind": "person",
+        "name": "김준호",
+        "birthDate": "2070-02-12",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K503"
+          },
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-김준호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0503"
+      },
+      {
+        "id": "FH-K503-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김태우",
+        "birthDate": "2040-02-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "김태우는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-김준호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K503-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "김태경",
+        "birthDate": "2010-02-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김태경은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-김준호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K503-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김태수",
+        "birthDate": "2040-02-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "김태수는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-김준호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K503-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박태규",
+        "birthDate": "2010-02-12",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박태규는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-16.json",
+                "anchor": "인물-김준호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K503-P-01:K503:biological",
+        "from": "FH-K503-P-01",
+        "to": "K503",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K503-P-02:FH-K503-P-01:biological",
+        "from": "FH-K503-P-02",
+        "to": "FH-K503-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K503-M-01:K503:biological",
+        "from": "FH-K503-M-01",
+        "to": "K503",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K503-M-02:FH-K503-M-01:biological",
+        "from": "FH-K503-M-02",
+        "to": "FH-K503-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-16.json",
+            "anchor": "인물-김준호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K503",
     "personId": "person-0503",
@@ -149,7 +405,14 @@
     "Cast-State-16"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "김준호",
+        "type": "계약",
+        "to": "곽은재",
+        "basis": "김준호는 젖은 인준 문서를 말려 보존한 필사본을 곽은재에게 넘긴다. 곽은재는 급수 중단과 호송 지연의 감사 근거로 삼되 읽히지 않는 부분을 빈칸으로 남겨 구두 약속으로 피해 기록을 채우지 않는다."
+      }
+    ],
     "incoming": []
   }
 }

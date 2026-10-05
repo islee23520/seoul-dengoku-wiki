@@ -12,6 +12,262 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-허하우",
   "detailRoute": "/people/person-0489",
+  "birthDate": "2082-02-21",
+  "birthday": "02-21",
+  "age": 44,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/346",
+    "lore/characters/Cast-State-02.json#/content/348",
+    "lore/characters/Cast-State-02.json#/content/349"
+  ],
+  "familyTree": {
+    "personId": "K489",
+    "nodes": [
+      {
+        "id": "K489",
+        "personId": "K489",
+        "kind": "person",
+        "name": "허하우",
+        "birthDate": "2082-02-21",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K489"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-허하우-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0489"
+      },
+      {
+        "id": "FH-K489-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승규",
+        "birthDate": "2052-02-21",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "허승규는 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-허하우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K489-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승완",
+        "birthDate": "2022-02-21",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "허승완은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-허하우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K489-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송태석",
+        "birthDate": "2052-02-21",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "송태석은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-허하우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K489-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조태원",
+        "birthDate": "2022-02-21",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조태원은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-허하우-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K489-P-01:K489:biological",
+        "from": "FH-K489-P-01",
+        "to": "K489",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K489-P-02:FH-K489-P-01:biological",
+        "from": "FH-K489-P-02",
+        "to": "FH-K489-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K489-M-01:K489:biological",
+        "from": "FH-K489-M-01",
+        "to": "K489",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K489-M-02:FH-K489-M-01:biological",
+        "from": "FH-K489-M-02",
+        "to": "FH-K489-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-허하우-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K489",
     "personId": "person-0489",
@@ -155,7 +411,14 @@
     "Cast-State-02"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "허하우",
+        "type": "계약",
+        "to": "이강묵",
+        "basis": "허하우는 전력장치 순찰 중 무장 난입자를 문 밖에 붙들고 이강묵에게 현장을 알린다. 이강묵은 경비 명부와 출입 경위를 다시 확인해, 설비 점검을 가장한 접근이었는지 살피고 그 단속 내역을 치안 실적에 남긴다."
+      }
+    ],
     "incoming": []
   }
 }

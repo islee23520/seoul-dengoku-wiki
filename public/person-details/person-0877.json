@@ -12,6 +12,262 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-양서태",
   "detailRoute": "/people/person-0877",
+  "birthDate": "2083-11-02",
+  "birthday": "11-02",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/567",
+    "lore/characters/Cast-State-06.json#/content/569",
+    "lore/characters/Cast-State-06.json#/content/570"
+  ],
+  "familyTree": {
+    "personId": "K877",
+    "nodes": [
+      {
+        "id": "K877",
+        "personId": "K877",
+        "kind": "person",
+        "name": "양서태",
+        "birthDate": "2083-11-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K877"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서태-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0877"
+      },
+      {
+        "id": "FH-K877-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "양현현",
+        "birthDate": "2053-11-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "양현현은 신내 환승 당직에서 환승 통로 제설·부상자 이송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서태-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K877-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "양현영",
+        "birthDate": "2023-11-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "양현영은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서태-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K877-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이민윤",
+        "birthDate": "2053-11-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "이민윤은 신내 환승 당직에서 환승 통로 제설·부상자 이송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서태-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K877-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최민정",
+        "birthDate": "2023-11-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최민정은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양서태-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K877-P-01:K877:biological",
+        "from": "FH-K877-P-01",
+        "to": "K877",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K877-P-02:FH-K877-P-01:biological",
+        "from": "FH-K877-P-02",
+        "to": "FH-K877-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K877-M-01:K877:biological",
+        "from": "FH-K877-M-01",
+        "to": "K877",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K877-M-02:FH-K877-M-01:biological",
+        "from": "FH-K877-M-02",
+        "to": "FH-K877-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양서태-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K877",
     "personId": "person-0877",
@@ -149,7 +405,14 @@
     "Cast-State-06"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "양서태",
+        "type": "계약",
+        "to": "윤지율",
+        "basis": "양서태는 제설한 통로에서 옮긴 부상자와 도착 시각을 윤지율에게 알린다. 윤지율은 중증도별 배차에 반영해 의료 이송 인원과 일반 이동 인원을 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

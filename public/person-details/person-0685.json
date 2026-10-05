@@ -12,6 +12,362 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-양차현",
   "detailRoute": "/people/person-0685",
+  "birthDate": "2090-07-13",
+  "birthday": "07-13",
+  "age": 36,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/435",
+    "lore/characters/Cast-State-06.json#/content/437",
+    "lore/characters/Cast-State-06.json#/content/438"
+  ],
+  "familyTree": {
+    "personId": "K685",
+    "nodes": [
+      {
+        "id": "K685",
+        "personId": "K685",
+        "kind": "person",
+        "name": "양차현",
+        "birthDate": "2090-07-13",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K685"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양차현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0685"
+      },
+      {
+        "id": "FH-K685-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "양승리",
+        "birthDate": "2060-07-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "양승리는 신내 환승 당직에서 환승 통로 제설·부상자 이송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양차현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K685-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "양승나",
+        "birthDate": "2030-07-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "양승나는 신내 환승 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양차현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K685-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "양승온",
+        "birthDate": "2000-07-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "양승온은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양차현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K685-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이재욱",
+        "birthDate": "2060-07-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2098,
+            "summary": "이재욱은 신내 환승 당직에서 환승 통로 제설·부상자 이송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양차현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K685-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최재솔",
+        "birthDate": "2030-07-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2068,
+            "summary": "최재솔은 신내 환승 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양차현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K685-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재재",
+        "birthDate": "2000-07-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정재재는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-양차현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K685-P-01:K685:biological",
+        "from": "FH-K685-P-01",
+        "to": "K685",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K685-P-02:FH-K685-P-01:biological",
+        "from": "FH-K685-P-02",
+        "to": "FH-K685-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K685-P-03:FH-K685-P-02:biological",
+        "from": "FH-K685-P-03",
+        "to": "FH-K685-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K685-M-01:K685:biological",
+        "from": "FH-K685-M-01",
+        "to": "K685",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K685-M-02:FH-K685-M-01:biological",
+        "from": "FH-K685-M-02",
+        "to": "FH-K685-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K685-M-03:FH-K685-M-02:biological",
+        "from": "FH-K685-M-03",
+        "to": "FH-K685-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-양차현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K685",
     "personId": "person-0685",
@@ -149,7 +505,14 @@
     "Cast-State-06"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "양차현",
+        "type": "계약",
+        "to": "윤지율",
+        "basis": "양차현은 제설한 통로에서 옮긴 부상자와 도착 시각을 윤지율에게 알린다. 윤지율은 중증도별 이송 배차에 반영해 통로 지연 때문에 환자가 일반 호송 인원으로만 남지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

@@ -12,6 +12,261 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-구연재",
   "detailRoute": "/people/person-0067",
+  "birthDate": "2068-10-07",
+  "birthday": "10-07",
+  "age": 58,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-03.json#/content/126",
+    "lore/characters/Cast-State-03.json#/content/128"
+  ],
+  "familyTree": {
+    "personId": "K067",
+    "nodes": [
+      {
+        "id": "K067",
+        "personId": "K067",
+        "kind": "person",
+        "name": "구연재",
+        "birthDate": "2068-10-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K067"
+          },
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 마곡 인증화물 물류상 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-구연재-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0067"
+      },
+      {
+        "id": "FH-K067-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "구승현",
+        "birthDate": "2038-10-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "구승현은 노량진 선창에서 인증화물 물류 거래 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-구연재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K067-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "구승영",
+        "birthDate": "2008-10-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "구승영은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-구연재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K067-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임승찬",
+        "birthDate": "2038-10-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2076,
+            "summary": "임승찬은 노량진 선창에서 인증화물 물류 거래 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-구연재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K067-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오승수",
+        "birthDate": "2008-10-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오승수는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-구연재-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K067-P-01:K067:biological",
+        "from": "FH-K067-P-01",
+        "to": "K067",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K067-P-02:FH-K067-P-01:biological",
+        "from": "FH-K067-P-02",
+        "to": "FH-K067-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K067-M-01:K067:biological",
+        "from": "FH-K067-M-01",
+        "to": "K067",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K067-M-02:FH-K067-M-01:biological",
+        "from": "FH-K067-M-02",
+        "to": "FH-K067-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-구연재-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K067",
     "personId": "person-0067",

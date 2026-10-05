@@ -12,6 +12,262 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-배은민",
   "detailRoute": "/people/person-0687",
+  "birthDate": "2066-02-08",
+  "birthday": "02-08",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/446",
+    "lore/characters/Cast-State-08.json#/content/448",
+    "lore/characters/Cast-State-08.json#/content/449"
+  ],
+  "familyTree": {
+    "personId": "K687",
+    "nodes": [
+      {
+        "id": "K687",
+        "personId": "K687",
+        "kind": "person",
+        "name": "배은민",
+        "birthDate": "2066-02-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K687"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 시장 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배은민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0687"
+      },
+      {
+        "id": "FH-K687-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "배승성",
+        "birthDate": "2036-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "배승성은 암사 경비 초소에서 무장 난입 제지·명부 재검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배은민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K687-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "배승욱",
+        "birthDate": "2006-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "배승욱은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배은민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K687-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재혁",
+        "birthDate": "2036-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "정재혁은 암사 경비 초소에서 무장 난입 제지·명부 재검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배은민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K687-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤재재",
+        "birthDate": "2006-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤재재는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-배은민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K687-P-01:K687:biological",
+        "from": "FH-K687-P-01",
+        "to": "K687",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K687-P-02:FH-K687-P-01:biological",
+        "from": "FH-K687-P-02",
+        "to": "FH-K687-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K687-M-01:K687:biological",
+        "from": "FH-K687-M-01",
+        "to": "K687",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K687-M-02:FH-K687-M-01:biological",
+        "from": "FH-K687-M-02",
+        "to": "FH-K687-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-배은민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K687",
     "personId": "person-0687",
@@ -155,7 +411,14 @@
     "Cast-State-08"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "배은민",
+        "type": "계약",
+        "to": "나태경",
+        "basis": "배은민은 시장 난입을 제지한 길목과 명부 재검 내용을 나태경에게 전한다. 나태경은 화물을 검사해 무단 접근 뒤에 하역이나 상자 개봉이 이어졌는지 살핀다."
+      }
+    ],
     "incoming": []
   }
 }

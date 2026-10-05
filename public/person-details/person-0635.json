@@ -12,6 +12,262 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-서아서",
   "detailRoute": "/people/person-0635",
+  "birthDate": "2064-07-07",
+  "birthday": "07-07",
+  "age": 62,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/445",
+    "lore/characters/Cast-State-04.json#/content/447",
+    "lore/characters/Cast-State-04.json#/content/448"
+  ],
+  "familyTree": {
+    "personId": "K635",
+    "nodes": [
+      {
+        "id": "K635",
+        "personId": "K635",
+        "kind": "person",
+        "name": "서아서",
+        "birthDate": "2064-07-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K635"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-서아서-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0635"
+      },
+      {
+        "id": "FH-K635-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승재",
+        "birthDate": "2034-07-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "서승재는 신내 환승 당직에서 침수 구간 보고·폐쇄 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-서아서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K635-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "서승찬",
+        "birthDate": "2004-07-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "서승찬은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-서아서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K635-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "김재영",
+        "birthDate": "2034-07-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "김재영은 신내 환승 당직에서 침수 구간 보고·폐쇄 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-서아서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K635-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박재아",
+        "birthDate": "2004-07-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박재아는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-서아서-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K635-P-01:K635:biological",
+        "from": "FH-K635-P-01",
+        "to": "K635",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K635-P-02:FH-K635-P-01:biological",
+        "from": "FH-K635-P-02",
+        "to": "FH-K635-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K635-M-01:K635:biological",
+        "from": "FH-K635-M-01",
+        "to": "K635",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K635-M-02:FH-K635-M-01:biological",
+        "from": "FH-K635-M-02",
+        "to": "FH-K635-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-서아서-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K635",
     "personId": "person-0635",
@@ -143,7 +399,14 @@
     "Cast-State-04"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "서아서",
+        "type": "계약",
+        "to": "명강산",
+        "basis": "서아서는 침수 구간 폐쇄 소식을 명강산에게 전달한다. 명강산은 수심과 펌프 진동을 조사해 공방·수비대의 서명으로 표시할 붕괴 구간을 확인한다."
+      }
+    ],
     "incoming": []
   }
 }

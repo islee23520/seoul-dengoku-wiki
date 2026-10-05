@@ -12,6 +12,262 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-이카석",
   "detailRoute": "/people/person-0780",
+  "birthDate": "2070-04-30",
+  "birthday": "04-30",
+  "age": 56,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/544",
+    "lore/characters/Cast-State-05.json#/content/546",
+    "lore/characters/Cast-State-05.json#/content/547"
+  ],
+  "familyTree": {
+    "personId": "K780",
+    "nodes": [
+      {
+        "id": "K780",
+        "personId": "K780",
+        "kind": "person",
+        "name": "이카석",
+        "birthDate": "2070-04-30",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K780"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이카석-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0780"
+      },
+      {
+        "id": "FH-K780-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도희",
+        "birthDate": "2040-04-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "이도희는 영등포 정수 당직에서 관로 누수 점검·표시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이카석-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K780-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도규",
+        "birthDate": "2010-04-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이도규는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이카석-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K780-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박도희",
+        "birthDate": "2040-04-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "박도희는 영등포 정수 당직에서 관로 누수 점검·표시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이카석-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K780-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도완",
+        "birthDate": "2010-04-30",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이도완은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-이카석-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K780-P-01:K780:biological",
+        "from": "FH-K780-P-01",
+        "to": "K780",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K780-P-02:FH-K780-P-01:biological",
+        "from": "FH-K780-P-02",
+        "to": "FH-K780-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K780-M-01:K780:biological",
+        "from": "FH-K780-M-01",
+        "to": "K780",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K780-M-02:FH-K780-M-01:biological",
+        "from": "FH-K780-M-02",
+        "to": "FH-K780-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-이카석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K780",
     "personId": "person-0780",
@@ -155,7 +411,14 @@
     "Cast-State-05"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "이카석",
+        "type": "계약",
+        "to": "설강우",
+        "basis": "이카석은 표시한 누수 위치를 설강우에게 전한다. 설강우는 골목 순찰에서 실제 공급 감소를 확인하고 우회 급수를 살펴 누수가 물을 끊은 곳을 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

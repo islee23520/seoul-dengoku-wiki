@@ -12,6 +12,262 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-구소희",
   "detailRoute": "/people/person-0500",
+  "birthDate": "2070-09-14",
+  "birthday": "09-14",
+  "age": 56,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/314",
+    "lore/characters/Cast-State-13.json#/content/316",
+    "lore/characters/Cast-State-13.json#/content/317"
+  ],
+  "familyTree": {
+    "personId": "K500",
+    "nodes": [
+      {
+        "id": "K500",
+        "personId": "K500",
+        "kind": "person",
+        "name": "구소희",
+        "birthDate": "2070-09-14",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K500"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 방역 수련의 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-구소희-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0500"
+      },
+      {
+        "id": "FH-K500-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "구승정",
+        "birthDate": "2040-09-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "구승정은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-구소희-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K500-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "구승아",
+        "birthDate": "2010-09-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "구승아는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-구소희-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K500-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오태은",
+        "birthDate": "2040-09-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "오태은은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-구소희-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K500-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송태준",
+        "birthDate": "2010-09-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송태준은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-구소희-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K500-P-01:K500:biological",
+        "from": "FH-K500-P-01",
+        "to": "K500",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K500-P-02:FH-K500-P-01:biological",
+        "from": "FH-K500-P-02",
+        "to": "FH-K500-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K500-M-01:K500:biological",
+        "from": "FH-K500-M-01",
+        "to": "K500",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K500-M-02:FH-K500-M-01:biological",
+        "from": "FH-K500-M-02",
+        "to": "FH-K500-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-구소희-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K500",
     "personId": "person-0500",
@@ -155,7 +411,14 @@
     "Cast-State-13"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "구소희",
+        "type": "계약",
+        "to": "라세영",
+        "basis": "구소희는 방역 기록의 원본과 출입 도장을 라세영에게 가져가 의심스러운 사본을 확인한다. 라세영은 격리 출입과 해제 기록을 살펴 위조 날인이 통과했는지 확인하고, 수질·약효 기록이 도착하기 전에는 해제를 선언하지 않는다."
+      }
+    ],
     "incoming": []
   }
 }

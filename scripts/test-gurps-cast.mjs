@@ -23,6 +23,16 @@ test('카드에서 다시 파생한 결과가 커밋된 파일과 바이트 단�
   assert.equal(serialize(build().doc), raw)
 })
 
+test('family history does not grant ancestor training to current diaspora people', () => {
+  const rebuilt = build().doc
+  for (const id of ['K1012', 'K1016']) {
+    const person = find(rebuilt, id)
+    assert.equal(person.attributes.IQ.value, find(doc, id).attributes.IQ.value)
+    const evidence = [...Object.values(person.attributes).flatMap((attribute) => attribute.evidence), ...person.skills.flatMap((skill) => skill.evidence)]
+    assert.ok(evidence.every((entry) => !['/content/9/text/ko', '/content/10/text/ko', '/content/19/text/ko', '/content/20/text/ko'].includes(entry.pointer)))
+  }
+})
+
 test('K001–K1022 1,022명이 발급 순서대로 있고 URL은 values-cast 순번을 따른다', () => {
   assert.equal(doc.people.length, 1022)
   doc.people.forEach((p, i) => assert.equal(p.id, `K${String(i + 1).padStart(3, '0')}`))

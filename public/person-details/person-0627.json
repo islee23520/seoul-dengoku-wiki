@@ -12,6 +12,262 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-정하준",
   "detailRoute": "/people/person-0627",
+  "birthDate": "2086-03-07",
+  "birthday": "03-07",
+  "age": 40,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/402",
+    "lore/characters/Cast-State-12.json#/content/404",
+    "lore/characters/Cast-State-12.json#/content/405"
+  ],
+  "familyTree": {
+    "personId": "K627",
+    "nodes": [
+      {
+        "id": "K627",
+        "personId": "K627",
+        "kind": "person",
+        "name": "정하준",
+        "birthDate": "2086-03-07",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K627"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-정하준-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0627"
+      },
+      {
+        "id": "FH-K627-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재영",
+        "birthDate": "2056-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "정재영은 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-정하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K627-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재윤",
+        "birthDate": "2026-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정재윤은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-정하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K627-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정재우",
+        "birthDate": "2056-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "정재우는 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-정하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K627-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤재원",
+        "birthDate": "2026-03-07",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤재원은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-정하준-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K627-P-01:K627:biological",
+        "from": "FH-K627-P-01",
+        "to": "K627",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K627-P-02:FH-K627-P-01:biological",
+        "from": "FH-K627-P-02",
+        "to": "FH-K627-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K627-M-01:K627:biological",
+        "from": "FH-K627-M-01",
+        "to": "K627",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K627-M-02:FH-K627-M-01:biological",
+        "from": "FH-K627-M-02",
+        "to": "FH-K627-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-정하준-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K627",
     "personId": "person-0627",
@@ -155,7 +411,14 @@
     "Cast-State-12"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "정하준",
+        "type": "계약",
+        "to": "봉모",
+        "basis": "정하준은 대기열 통과에 관한 대질 내용을 봉모에게 넘긴다. 봉모는 신분 조각과 화물 봉인을 확인해 누구의 대기였는지 확인되지 않은 말을 심사 사실로 적지 않는다."
+      }
+    ],
     "incoming": []
   }
 }

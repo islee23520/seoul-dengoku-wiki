@@ -1,10 +1,16 @@
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import { clanFamilyCatalog } from '../generated/clanFamilyCatalog'
+import { nonKoreanFamilyCatalog } from '../generated/nonKoreanFamilyCatalog'
 import SortableTable from '../components/SortableTable'
+import { peopleCatalog } from '../generated/peopleCatalog'
+import { FamilyTreeSelection } from '../components/FamilyTreeSelection'
 
 export default function FamiliesPage() {
   const [query, setQuery] = useState('')
+  const [params, setParams] = useSearchParams()
+  const selected = peopleCatalog.find((person) => person.id === params.get('person'))
+  const matches = peopleCatalog.filter((person) => person.name.toLocaleLowerCase('ko').includes(query.trim().toLocaleLowerCase('ko')))
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('ko')
@@ -25,6 +31,16 @@ export default function FamiliesPage() {
           본관별 인물과 문장을 살펴본다. 같은 본관에 이름이 올라 있어도 각 인물 사이의 친족 관계까지 뜻하지는 않는다.
         </p>
       </header>
+      <section className="wiki-content mt-8" aria-label="인물 족보 탐색">
+        <h2>인물 족보</h2>
+        <label htmlFor="family-person">인물 선택</label>{' '}
+        <select id="family-person" className="wiki-input" value={selected?.id ?? ''} onChange={(event) => setParams({ person: event.target.value })}>
+          <option value="">족보를 볼 인물을 선택하세요</option>
+          {matches.map((person) => <option key={person.id} value={person.id}>{person.name}</option>)}
+          {selected && !matches.some((person) => person.id === selected.id) && <option value={selected.id}>{selected.name}</option>}
+        </select>
+        {selected ? <FamilyTreeSelection key={selected.id} personId={selected.id} /> : <p>인물을 선택하면 기록된 부모와 자녀를 세대별 연결선으로 살펴봅니다.</p>}
+      </section>
 
       <section className="wiki-content mt-8">
         <div className="wiki-filters flex gap-4 mb-4">
@@ -44,6 +60,15 @@ export default function FamiliesPage() {
         <SortableTable
           headers={['가문', '인물 수', '문장']}
           rows={rows}
+        />
+      </section>
+      <section className="wiki-content mt-8">
+        <h2>본관을 적용하지 않는 가계</h2>
+        <p>기존 가계 이름과 식별자를 유지한다. 인물 링크에서 기록된 가족 관계를 살펴본다.</p>
+        <SortableTable
+          headers={['가계', '인물', '식별자']}
+          rows={nonKoreanFamilyCatalog.filter((family) => `${family.surname} ${family.id} ${family.members.map((person) => person.name).join(' ')}`.toLocaleLowerCase('ko').includes(query.trim().toLocaleLowerCase('ko')))
+            .flatMap((family) => family.members.map((person) => [family.surname, { text: person.name, link: person.detailRoute }, family.id]))}
         />
       </section>
     </article>

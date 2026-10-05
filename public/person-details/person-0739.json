@@ -12,6 +12,261 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-민강현",
   "detailRoute": "/people/person-0739",
+  "birthDate": "2067-02-08",
+  "birthday": "02-08",
+  "age": 59,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/479",
+    "lore/characters/Cast-State-12.json#/content/482"
+  ],
+  "familyTree": {
+    "personId": "K739",
+    "nodes": [
+      {
+        "id": "K739",
+        "personId": "K739",
+        "kind": "person",
+        "name": "민강현",
+        "birthDate": "2067-02-08",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K739"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 의무호송 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-민강현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0739"
+      },
+      {
+        "id": "FH-K739-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "민승희",
+        "birthDate": "2037-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "민승희는 서울역 등기소에서 의무호송 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-민강현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K739-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "민승규",
+        "birthDate": "2007-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "민승규는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-민강현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K739-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임재솔",
+        "birthDate": "2037-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "임재솔은 서울역 등기소에서 의무호송 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-민강현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K739-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오도석",
+        "birthDate": "2007-02-08",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오도석은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-민강현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K739-P-01:K739:biological",
+        "from": "FH-K739-P-01",
+        "to": "K739",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K739-P-02:FH-K739-P-01:biological",
+        "from": "FH-K739-P-02",
+        "to": "FH-K739-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K739-M-01:K739:biological",
+        "from": "FH-K739-M-01",
+        "to": "K739",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K739-M-02:FH-K739-M-01:biological",
+        "from": "FH-K739-M-02",
+        "to": "FH-K739-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-민강현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K739",
     "personId": "person-0739",
@@ -149,7 +404,14 @@
     "Cast-State-12"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "민강현",
+        "type": "계약",
+        "to": "소두감",
+        "basis": "민강현은 의무호송의 유치선 체류 시각을 소두감에게 전한다. 소두감은 배차표와 정비 일지를 확인해 정비로 머문 시간과 실제 출고 시간을 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

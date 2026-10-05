@@ -12,6 +12,262 @@
   "stateName": "중앙기술보존원",
   "sourceRoute": "/world/Cast-State-08#인물-곽바현",
   "detailRoute": "/people/person-0655",
+  "birthDate": "2078-01-27",
+  "birthday": "01-27",
+  "age": 48,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-08.json#/content/424",
+    "lore/characters/Cast-State-08.json#/content/426",
+    "lore/characters/Cast-State-08.json#/content/427"
+  ],
+  "familyTree": {
+    "personId": "K655",
+    "nodes": [
+      {
+        "id": "K655",
+        "personId": "K655",
+        "kind": "person",
+        "name": "곽바현",
+        "birthDate": "2078-01-27",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K655"
+          },
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 얼음 물류상 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽바현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0655"
+      },
+      {
+        "id": "FH-K655-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승재",
+        "birthDate": "2048-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "곽승재는 노량진 선창에서 밀수 호스 접수·관로 대장 작성 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K655-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "곽승찬",
+        "birthDate": "2018-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "곽승찬은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K655-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임재정",
+        "birthDate": "2048-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "임재정은 노량진 선창에서 밀수 호스 접수·관로 대장 작성 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K655-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오재아",
+        "birthDate": "2018-01-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오재아는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-08.json",
+                "anchor": "인물-곽바현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K655-P-01:K655:biological",
+        "from": "FH-K655-P-01",
+        "to": "K655",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K655-P-02:FH-K655-P-01:biological",
+        "from": "FH-K655-P-02",
+        "to": "FH-K655-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K655-M-01:K655:biological",
+        "from": "FH-K655-M-01",
+        "to": "K655",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K655-M-02:FH-K655-M-01:biological",
+        "from": "FH-K655-M-02",
+        "to": "FH-K655-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-08.json",
+            "anchor": "인물-곽바현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K655",
     "personId": "person-0655",
@@ -143,7 +399,14 @@
     "Cast-State-08"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "곽바현",
+        "type": "계약",
+        "to": "지윤재",
+        "basis": "곽바현은 접수한 호스의 관로 사용 내역을 지윤재에게 알린다. 지윤재는 제빙 설비 부품과 압축 온도를 점검해 그 호스가 실제 연결된 곳을 확인하고 도장 없는 부품은 달지 않는다."
+      }
+    ],
     "incoming": []
   }
 }

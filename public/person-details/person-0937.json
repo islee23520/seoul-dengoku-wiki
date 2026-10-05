@@ -12,6 +12,262 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-강늘유",
   "detailRoute": "/people/person-0937",
+  "birthDate": "2082-02-22",
+  "birthday": "02-22",
+  "age": 44,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/654",
+    "lore/characters/Cast-State-02.json#/content/656",
+    "lore/characters/Cast-State-02.json#/content/657"
+  ],
+  "familyTree": {
+    "personId": "K937",
+    "nodes": [
+      {
+        "id": "K937",
+        "personId": "K937",
+        "kind": "person",
+        "name": "강늘유",
+        "birthDate": "2082-02-22",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K937"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "소속: 규격맹",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-강늘유-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0937"
+      },
+      {
+        "id": "FH-K937-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강민수",
+        "birthDate": "2052-02-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "강민수는 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-강늘유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K937-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강민은",
+        "birthDate": "2022-02-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강민은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-강늘유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K937-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "이민문",
+        "birthDate": "2052-02-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2090,
+            "summary": "이민문은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-강늘유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K937-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "최민솔",
+        "birthDate": "2022-02-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최민솔은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-강늘유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K937-P-01:K937:biological",
+        "from": "FH-K937-P-01",
+        "to": "K937",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K937-P-02:FH-K937-P-01:biological",
+        "from": "FH-K937-P-02",
+        "to": "FH-K937-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K937-M-01:K937:biological",
+        "from": "FH-K937-M-01",
+        "to": "K937",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K937-M-02:FH-K937-M-01:biological",
+        "from": "FH-K937-M-02",
+        "to": "FH-K937-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-강늘유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K937",
     "personId": "person-0937",
@@ -143,7 +399,14 @@
     "Cast-State-02"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "강늘유",
+        "type": "계약",
+        "to": "김나율",
+        "basis": "강늘유는 복구복무 이중 지급 정정을 김나율에게 전한다. 김나율은 교대와 등록을 확인해 중복 지급과 실제 노동 인원을 구분한다."
+      }
+    ],
     "incoming": []
   }
 }

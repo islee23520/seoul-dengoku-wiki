@@ -20,8 +20,8 @@ const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
 // 입력 해시(person-id-registry approvalRef, 2026-09-28 K1019 발급 소유자 승인). 두 파일은 이 작업에서 바뀌면 안 된다.
 export const APPROVED_HASHES = {
-  [VALUES]: '369a7bc6a84e65438067e624e83fdc3d937cf086e9bb5a6dcad2b3223cde6571',
-  [REGISTRY]: '27eea6e326ae844f716e0358fe2fadb9f635ac6ea343dc7098b4db4c025359f0',
+  [VALUES]: 'c9f8ccb8768c1423285cfbc0672256416456aec17e5dc782a20eb8a02e4f3446',
+  [REGISTRY]: '50e8eddc6a68d06590c20aed0f6cf3be588e5bffef9f8890fa818a4fee644d3f',
 }
 const CARD_FILES = [
   ...Array.from({ length: 16 }, (_, i) => `lore/characters/Cast-State-${String(i + 1).padStart(2, '0')}.json`),
@@ -346,6 +346,8 @@ function cardSentences(card, core) {
   const fields = []
   let first = true
   for (const { block, index } of card.blocks) {
+    // Family-history paragraphs include ancestors' actions, not the current person's training.
+    if (block.anchor?.includes('-백년-가계-')) continue
     const leaves = block.kind === 'list'
       ? block.items.map((item, j) => ({ text: leafText(item?.ko), pointer: `/content/${index}/items/${j}/ko` }))
       : block.text ? [{ text: leafText(block.text.ko), pointer: `/content/${index}/text/ko` }] : []

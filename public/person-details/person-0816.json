@@ -12,6 +12,262 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-민카현",
   "detailRoute": "/people/person-0816",
+  "birthDate": "2069-11-04",
+  "birthday": "11-04",
+  "age": 57,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/534",
+    "lore/characters/Cast-State-09.json#/content/536",
+    "lore/characters/Cast-State-09.json#/content/537"
+  ],
+  "familyTree": {
+    "personId": "K816",
+    "nodes": [
+      {
+        "id": "K816",
+        "personId": "K816",
+        "kind": "person",
+        "name": "민카현",
+        "birthDate": "2069-11-04",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K816"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 환전 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-민카현-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0816"
+      },
+      {
+        "id": "FH-K816-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "민승범",
+        "birthDate": "2039-11-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "민승범은 신내 환승 당직에서 환전 전령 인수·장부 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-민카현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K816-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "민승재",
+        "birthDate": "2009-11-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "민승재는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-민카현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K816-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박도섭",
+        "birthDate": "2039-11-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2077,
+            "summary": "박도섭은 신내 환승 당직에서 환전 전령 인수·장부 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-민카현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K816-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이도섭",
+        "birthDate": "2009-11-04",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이도섭은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-민카현-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K816-P-01:K816:biological",
+        "from": "FH-K816-P-01",
+        "to": "K816",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K816-P-02:FH-K816-P-01:biological",
+        "from": "FH-K816-P-02",
+        "to": "FH-K816-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K816-M-01:K816:biological",
+        "from": "FH-K816-M-01",
+        "to": "K816",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K816-M-02:FH-K816-M-01:biological",
+        "from": "FH-K816-M-02",
+        "to": "FH-K816-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-민카현-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K816",
     "personId": "person-0816",
@@ -155,7 +411,14 @@
     "Cast-State-09"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "민카현",
+        "type": "계약",
+        "to": "복두모",
+        "basis": "민카현은 막힌 환전 전달로를 복두모에게 알린다. 복두모는 우회 구간을 실측해 확인된 경로와 미확인 길을 나눠 전령이 소문만 따라가지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

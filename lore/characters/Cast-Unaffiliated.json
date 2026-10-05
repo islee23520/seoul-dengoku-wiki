@@ -425,7 +425,7 @@
         },
         {
           "en": "Key relationships: When she had nowhere to go, the Gilmok Office gave her shelter and a living. The debt and contract that came with it keep her from leaving.",
-          "ko": "관계: 갈 곳이 없던 지연희에게 길목사무소가 은신처와 생계를 주었다. 그 대가로 진 빚과 계약 때문에 지연희는 조직을 떠나지 못한다."
+          "ko": "관계: 갈 곳이 없던 지연희에게 길목사무소가 은신처와 생계를 주었다. 그 대가로 진 빚과 계약 때문에 지연희는 조직을 떠나지 못한다. 지연희는 전달물의 인수·인계 소식을 문도현에게 전하고 다음 운송 상대의 연락을 잇는다. 문도현은 화물의 대조·분류 기록과 전달 내용을 확인해 빠진 인계가 어느 구간에서 생겼는지 찾는다."
         },
         {
           "en": "Trigger event: She asks the player to recover a missing delivery.",
@@ -759,90 +759,261 @@
       "kind": "heading",
       "anchor": "인물-한서경",
       "depth": 3,
-      "text": { "en": "Person Han Seogyeong", "ko": "인물 한서경" }
+      "text": {
+        "en": "Person Han Seogyeong",
+        "ko": "인물 한서경"
+      }
     },
     {
       "kind": "list",
       "anchor": "인물-한서경-fields",
       "items": [
-        { "en": "Name: Han Seogyeong", "ko": "성명: 한서경 (Han Seogyeong)" },
-        { "en": "Character ID: K1020", "ko": "캐릭터 ID: K1020" },
-        { "en": "Community of origin: birthplace and upbringing undecided; works with Goh Yejin's advisory office in Suseo.", "ko": "출신 공동체: 출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다." },
-        { "en": "Generation and birth: opening generation; birth year undecided.", "ko": "세대와 출생: 개막 세대. 출생연은 미정이다." },
-        { "en": "Language: undecided.", "ko": "언어: 미정" },
-        { "en": "Occupation: primary recordkeeper / secondary logistics merchant", "ko": "생업: 주 기록관 / 부 물류상" },
-        { "en": "Affiliation: unaffiliated contract worker.", "ko": "소속: 정동노총(S16). 계약 실무자" },
-        { "en": "Rank: not applicable; no state office.", "ko": "품계: 해당 없음 — 국가 관직을 맡지 않는다." },
-        { "en": "Position: contract reviewer", "ko": "직위: 계약 검토 담당" },
-        { "en": "Conscription history: undecided.", "ko": "징집 이력: 미정" },
-        { "en": "Access to arms: undecided.", "ko": "무장 접근: 미정" },
-        { "en": "Personality: calm and meticulous; checks responsibility when instructions are ambiguous.", "ko": "성격: 차분하고 꼼꼼하다. 모호한 지시는 그대로 넘기지 않고 책임 범위를 확인한다." },
-        { "en": "Personal ambition: to continue work with clear pay, responsibility and room for judgment.", "ko": "개인 야망: 보수와 책임이 분명하고 자기 판단이 존중되는 일을 계속하려 한다." },
-        { "en": "Fear: undecided.", "ko": "공포: 미정" },
-        { "en": "Negotiation: reviews contracts and guarantees within her mandate and records settlement and claims.", "ko": "통치 방식: 위임 범위 안에서 계약과 보증을 검토하고 정산·채권을 기록한다." },
-        { "en": "Relationships: began working with Goh Yejin during a ledger and debt acquisition.", "ko": "관계: 고예진이 장부와 채무를 인수하는 과정에서 함께 일하기 시작하였다." },
-        { "en": "Trigger event: a contract instruction requires clarification of responsibility.", "ko": "촉발 사건: 계약 지시의 책임 범위를 확인할 필요가 생긴다." },
-        { "en": "Player involvement: compare handover records and contract conditions.", "ko": "플레이어 개입: 인계 기록과 계약 조건을 대조할 수 있다." }
+        {
+          "en": "Name: Han Seogyeong",
+          "ko": "성명: 한서경 (Han Seogyeong)"
+        },
+        {
+          "en": "Character ID: K1020",
+          "ko": "캐릭터 ID: K1020"
+        },
+        {
+          "en": "Community of origin: birthplace and upbringing undecided; works with Goh Yejin's advisory office in Suseo.",
+          "ko": "출신 공동체: 출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다."
+        },
+        {
+          "en": "Generation and birth: opening generation; birth year undecided.",
+          "ko": "세대와 출생: 개막 세대. 출생연은 미정이다."
+        },
+        {
+          "en": "Language: undecided.",
+          "ko": "언어: 미정"
+        },
+        {
+          "en": "Occupation: primary recordkeeper / secondary logistics merchant",
+          "ko": "생업: 주 기록관 / 부 물류상"
+        },
+        {
+          "en": "Affiliation: unaffiliated contract worker.",
+          "ko": "소속: 정동노총(S16). 계약 실무자"
+        },
+        {
+          "en": "Rank: not applicable; no state office.",
+          "ko": "품계: 해당 없음 — 국가 관직을 맡지 않는다."
+        },
+        {
+          "en": "Position: contract reviewer",
+          "ko": "직위: 계약 검토 담당"
+        },
+        {
+          "en": "Conscription history: undecided.",
+          "ko": "징집 이력: 미정"
+        },
+        {
+          "en": "Access to arms: undecided.",
+          "ko": "무장 접근: 미정"
+        },
+        {
+          "en": "Personality: calm and meticulous; checks responsibility when instructions are ambiguous.",
+          "ko": "성격: 차분하고 꼼꼼하다. 모호한 지시는 그대로 넘기지 않고 책임 범위를 확인한다."
+        },
+        {
+          "en": "Personal ambition: to continue work with clear pay, responsibility and room for judgment.",
+          "ko": "개인 야망: 보수와 책임이 분명하고 자기 판단이 존중되는 일을 계속하려 한다."
+        },
+        {
+          "en": "Fear: undecided.",
+          "ko": "공포: 미정"
+        },
+        {
+          "en": "Negotiation: reviews contracts and guarantees within her mandate and records settlement and claims.",
+          "ko": "통치 방식: 위임 범위 안에서 계약과 보증을 검토하고 정산·채권을 기록한다."
+        },
+        {
+          "en": "Relationships: began working with Goh Yejin during a ledger and debt acquisition.",
+          "ko": "관계: 고예진이 장부와 채무를 인수하는 과정에서 함께 일하기 시작하였다."
+        },
+        {
+          "en": "Trigger event: a contract instruction requires clarification of responsibility.",
+          "ko": "촉발 사건: 계약 지시의 책임 범위를 확인할 필요가 생긴다."
+        },
+        {
+          "en": "Player involvement: compare handover records and contract conditions.",
+          "ko": "플레이어 개입: 인계 기록과 계약 조건을 대조할 수 있다."
+        }
       ]
     },
     {
       "kind": "heading",
       "anchor": "인물-차유선",
       "depth": 3,
-      "text": { "en": "Person Cha Yuseon", "ko": "인물 차유선" }
+      "text": {
+        "en": "Person Cha Yuseon",
+        "ko": "인물 차유선"
+      }
     },
     {
       "kind": "list",
       "anchor": "인물-차유선-fields",
       "items": [
-        { "en": "Name: Cha Yuseon", "ko": "성명: 차유선 (Cha Yuseon)" },
-        { "en": "Character ID: K1021", "ko": "캐릭터 ID: K1021" },
-        { "en": "Community of origin: birthplace, upbringing and residence undecided.", "ko": "출신 공동체: 출생지·성장지·거주지는 미정이다." },
-        { "en": "Generation and birth: opening generation; birth year undecided.", "ko": "세대와 출생: 개막 세대. 출생연은 미정이다." },
-        { "en": "Language: undecided.", "ko": "언어: 미정" },
-        { "en": "Occupation: primary recordkeeper / secondary logistics merchant", "ko": "생업: 주 기록관 / 부 물류상" },
-        { "en": "Affiliation: unaffiliated civilian negotiator.", "ko": "소속: 무소속 민간 교섭자" },
-        { "en": "Rank: not applicable; no state office.", "ko": "품계: 해당 없음 — 국가 관직을 맡지 않는다." },
-        { "en": "Position: jointly mandated negotiator", "ko": "직위: 공동 위임 교섭자" },
-        { "en": "Conscription history: undecided.", "ko": "징집 이력: 미정" },
-        { "en": "Access to arms: undecided.", "ko": "무장 접근: 미정" },
-        { "en": "Personality: calm and persistent, yet adjusts demands within an attainable agreement.", "ko": "성격: 차분하고 집요하다. 확인할 조건을 끝까지 묻되 합의 가능한 범위에서는 요구를 조정한다." },
-        { "en": "Personal ambition: represent the contract interests of merchants who mandate her.", "ko": "개인 야망: 자신에게 위임한 상인들의 계약상 이해를 대변하려 한다." },
-        { "en": "Fear: undecided.", "ko": "공포: 미정" },
-        { "en": "Negotiation: acts within the merchants' mandate; holds no public audit or adjudication power.", "ko": "통치 방식: 상인들의 위임 범위 안에서 교섭한다. 공적 감사권이나 판결권은 없다." },
-        { "en": "Relationships: respects Goh Yejin's ability but contests disclosure and responsibility terms.", "ko": "관계: 고예진의 능력을 인정하지만 정보 공개와 책임 조건을 두고 의견을 달리한다." },
-        { "en": "Trigger event: several merchants seek common contract terms.", "ko": "촉발 사건: 여러 상인이 공통 계약 조건을 교섭하려 한다." },
-        { "en": "Player involvement: convey mandated demands and compare draft terms.", "ko": "플레이어 개입: 위임된 요구를 전달하거나 초안의 조건을 대조할 수 있다." }
+        {
+          "en": "Name: Cha Yuseon",
+          "ko": "성명: 차유선 (Cha Yuseon)"
+        },
+        {
+          "en": "Character ID: K1021",
+          "ko": "캐릭터 ID: K1021"
+        },
+        {
+          "en": "Community of origin: birthplace, upbringing and residence undecided.",
+          "ko": "출신 공동체: 출생지·성장지·거주지는 미정이다."
+        },
+        {
+          "en": "Generation and birth: opening generation; birth year undecided.",
+          "ko": "세대와 출생: 개막 세대. 출생연은 미정이다."
+        },
+        {
+          "en": "Language: undecided.",
+          "ko": "언어: 미정"
+        },
+        {
+          "en": "Occupation: primary recordkeeper / secondary logistics merchant",
+          "ko": "생업: 주 기록관 / 부 물류상"
+        },
+        {
+          "en": "Affiliation: unaffiliated civilian negotiator.",
+          "ko": "소속: 무소속 민간 교섭자"
+        },
+        {
+          "en": "Rank: not applicable; no state office.",
+          "ko": "품계: 해당 없음 — 국가 관직을 맡지 않는다."
+        },
+        {
+          "en": "Position: jointly mandated negotiator",
+          "ko": "직위: 공동 위임 교섭자"
+        },
+        {
+          "en": "Conscription history: undecided.",
+          "ko": "징집 이력: 미정"
+        },
+        {
+          "en": "Access to arms: undecided.",
+          "ko": "무장 접근: 미정"
+        },
+        {
+          "en": "Personality: calm and persistent, yet adjusts demands within an attainable agreement.",
+          "ko": "성격: 차분하고 집요하다. 확인할 조건을 끝까지 묻되 합의 가능한 범위에서는 요구를 조정한다."
+        },
+        {
+          "en": "Personal ambition: represent the contract interests of merchants who mandate her.",
+          "ko": "개인 야망: 자신에게 위임한 상인들의 계약상 이해를 대변하려 한다."
+        },
+        {
+          "en": "Fear: undecided.",
+          "ko": "공포: 미정"
+        },
+        {
+          "en": "Negotiation: acts within the merchants' mandate; holds no public audit or adjudication power.",
+          "ko": "통치 방식: 상인들의 위임 범위 안에서 교섭한다. 공적 감사권이나 판결권은 없다."
+        },
+        {
+          "en": "Relationships: respects Goh Yejin's ability but contests disclosure and responsibility terms.",
+          "ko": "관계: 고예진의 능력을 인정하지만 정보 공개와 책임 조건을 두고 의견을 달리한다."
+        },
+        {
+          "en": "Trigger event: several merchants seek common contract terms.",
+          "ko": "촉발 사건: 여러 상인이 공통 계약 조건을 교섭하려 한다."
+        },
+        {
+          "en": "Player involvement: convey mandated demands and compare draft terms.",
+          "ko": "플레이어 개입: 위임된 요구를 전달하거나 초안의 조건을 대조할 수 있다."
+        }
       ]
     },
     {
       "kind": "heading",
       "anchor": "인물-문도현",
       "depth": 3,
-      "text": { "en": "Person Mun Dohyeon", "ko": "인물 문도현" }
+      "text": {
+        "en": "Person Mun Dohyeon",
+        "ko": "인물 문도현"
+      }
     },
     {
       "kind": "list",
       "anchor": "인물-문도현-fields",
       "items": [
-        { "en": "Name: Mun Dohyeon", "ko": "성명: 문도현 (Mun Dohyeon)" },
-        { "en": "Character ID: K1022", "ko": "캐릭터 ID: K1022" },
-        { "en": "Community of origin: works in Yongsan; birthplace and upbringing undecided.", "ko": "출신 공동체: 용산 생활권에 업무 거점을 둔다. 출생지·성장지는 미정이다." },
-        { "en": "Generation and birth: opening generation; birth year undecided.", "ko": "세대와 출생: 개막 세대. 출생연은 미정이다." },
-        { "en": "Language: undecided.", "ko": "언어: 미정" },
-        { "en": "Occupation: primary logistics merchant / secondary recordkeeper", "ko": "생업: 주 물류상 / 부 기록관" },
-        { "en": "Affiliation: unaffiliated independent merchant house.", "ko": "소속: 환적국(S07). 독립 상단" },
-        { "en": "Rank: not applicable; no state office.", "ko": "품계: 해당 없음 — 국가 관직을 맡지 않는다." },
-        { "en": "Position: transshipment and handover merchant-house owner", "ko": "직위: 환적·인계 상단주" },
-        { "en": "Conscription history: undecided.", "ko": "징집 이력: 미정" },
-        { "en": "Access to arms: undecided.", "ko": "무장 접근: 미정" },
-        { "en": "Personality: understands trade structure and values independence.", "ko": "성격: 거래 구조를 이해하는 실무형이며 독립성을 중시한다." },
-        { "en": "Personal ambition: build trade under his control and provide stable work while fulfilling transport promises.", "ko": "개인 야망: 자기 통제 아래의 거래 기반을 마련하고 인력에게 안정적인 일을 제공하며 약속한 운송을 이행하려 한다." },
-        { "en": "Fear: undecided.", "ko": "공포: 미정" },
-        { "en": "Management: compares incoming cargo, sorts it, temporarily stores it and hands it to the next carrier. Space is rented or contractually used.", "ko": "통치 방식: 입고 화물을 대조·분류하고 임시 보관한 뒤 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용한다." },
-        { "en": "Relationships: works with cargo owners and carriers of subsequent sections.", "ko": "관계: 화주들과 다음 운송 구간의 거래 상대를 연결한다." },
-        { "en": "Trigger event: lost a March 2125 Yongsan contract and seeks later work through an inquiry.", "ko": "촉발 사건: 2125년 3월 용산 계약을 놓친 뒤 후속 운송 기회를 찾으며 조사를 의뢰한다." },
-        { "en": "Player involvement: bring together cargo from other merchants for new transport work.", "ko": "플레이어 개입: 다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다." }
+        {
+          "en": "Name: Mun Dohyeon",
+          "ko": "성명: 문도현 (Mun Dohyeon)"
+        },
+        {
+          "en": "Character ID: K1022",
+          "ko": "캐릭터 ID: K1022"
+        },
+        {
+          "en": "Community of origin: works in Yongsan; birthplace and upbringing undecided.",
+          "ko": "출신 공동체: 용산 생활권에 업무 거점을 둔다. 출생지·성장지는 미정이다."
+        },
+        {
+          "en": "Generation and birth: opening generation; birth year undecided.",
+          "ko": "세대와 출생: 개막 세대. 출생연은 미정이다."
+        },
+        {
+          "en": "Language: undecided.",
+          "ko": "언어: 미정"
+        },
+        {
+          "en": "Occupation: primary logistics merchant / secondary recordkeeper",
+          "ko": "생업: 주 물류상 / 부 기록관"
+        },
+        {
+          "en": "Affiliation: unaffiliated independent merchant house.",
+          "ko": "소속: 환적국(S07). 독립 상단"
+        },
+        {
+          "en": "Rank: not applicable; no state office.",
+          "ko": "품계: 해당 없음 — 국가 관직을 맡지 않는다."
+        },
+        {
+          "en": "Position: transshipment and handover merchant-house owner",
+          "ko": "직위: 환적·인계 상단주"
+        },
+        {
+          "en": "Conscription history: undecided.",
+          "ko": "징집 이력: 미정"
+        },
+        {
+          "en": "Access to arms: undecided.",
+          "ko": "무장 접근: 미정"
+        },
+        {
+          "en": "Personality: understands trade structure and values independence.",
+          "ko": "성격: 거래 구조를 이해하는 실무형이며 독립성을 중시한다."
+        },
+        {
+          "en": "Personal ambition: build trade under his control and provide stable work while fulfilling transport promises.",
+          "ko": "개인 야망: 자기 통제 아래의 거래 기반을 마련하고 인력에게 안정적인 일을 제공하며 약속한 운송을 이행하려 한다."
+        },
+        {
+          "en": "Fear: undecided.",
+          "ko": "공포: 미정"
+        },
+        {
+          "en": "Management: compares incoming cargo, sorts it, temporarily stores it and hands it to the next carrier. Space is rented or contractually used.",
+          "ko": "통치 방식: 입고 화물을 대조·분류하고 임시 보관한 뒤 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용한다."
+        },
+        {
+          "en": "Relationships: works with cargo owners and carriers of subsequent sections.",
+          "ko": "관계: 화주들과 다음 운송 구간의 거래 상대를 연결한다. 문도현은 분류해 임시 보관한 화물의 다음 인계 상대와 전달 내용을 지연희에게 맡긴다. 지연희는 독립 전령으로 인수·전달 소식을 이어 문도현이 약속한 운송의 연락 공백을 확인하게 한다."
+        },
+        {
+          "en": "Trigger event: lost a March 2125 Yongsan contract and seeks later work through an inquiry.",
+          "ko": "촉발 사건: 2125년 3월 용산 계약을 놓친 뒤 후속 운송 기회를 찾으며 조사를 의뢰한다."
+        },
+        {
+          "en": "Player involvement: bring together cargo from other merchants for new transport work.",
+          "ko": "플레이어 개입: 다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다."
+        }
       ]
     },
     {

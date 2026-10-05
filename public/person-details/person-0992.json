@@ -12,6 +12,262 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-배하민",
   "detailRoute": "/people/person-0992",
+  "birthDate": "2066-06-13",
+  "birthday": "06-13",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/655",
+    "lore/characters/Cast-State-09.json#/content/657",
+    "lore/characters/Cast-State-09.json#/content/658"
+  ],
+  "familyTree": {
+    "personId": "K992",
+    "nodes": [
+      {
+        "id": "K992",
+        "personId": "K992",
+        "kind": "person",
+        "name": "배하민",
+        "birthDate": "2066-06-13",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K992"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 금고 설비 점검·정비",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-배하민-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0992"
+      },
+      {
+        "id": "FH-K992-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "배현영",
+        "birthDate": "2036-06-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "배현영은 신정 차량기지에서 금고 설비 점검·정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-배하민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K992-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "배현윤",
+        "birthDate": "2006-06-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "배현윤은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-배하민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K992-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오민란",
+        "birthDate": "2036-06-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "오민란은 신정 차량기지에서 금고 설비 점검·정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-배하민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K992-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송민완",
+        "birthDate": "2006-06-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송민완은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-배하민-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K992-P-01:K992:biological",
+        "from": "FH-K992-P-01",
+        "to": "K992",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K992-P-02:FH-K992-P-01:biological",
+        "from": "FH-K992-P-02",
+        "to": "FH-K992-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K992-M-01:K992:biological",
+        "from": "FH-K992-M-01",
+        "to": "K992",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K992-M-02:FH-K992-M-01:biological",
+        "from": "FH-K992-M-02",
+        "to": "FH-K992-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-배하민-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K992",
     "personId": "person-0992",
@@ -155,7 +411,14 @@
     "Cast-State-09"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "배하민",
+        "type": "계약",
+        "to": "두봉",
+        "basis": "배하민은 금고 설비 공급 이상을 두봉에게 알린다. 두봉은 예비 전원을 순환 시험하고 배하민은 설비를 다시 확인해 전력 문제와 기계 고장을 나눠 인계한다."
+      }
+    ],
     "incoming": []
   }
 }

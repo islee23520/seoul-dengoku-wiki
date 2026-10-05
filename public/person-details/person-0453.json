@@ -12,6 +12,262 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-노윤호",
   "detailRoute": "/people/person-0453",
+  "birthDate": "2066-05-27",
+  "birthday": "05-27",
+  "age": 60,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/281",
+    "lore/characters/Cast-State-14.json#/content/283",
+    "lore/characters/Cast-State-14.json#/content/284"
+  ],
+  "familyTree": {
+    "personId": "K453",
+    "nodes": [
+      {
+        "id": "K453",
+        "personId": "K453",
+        "kind": "person",
+        "name": "노윤호",
+        "birthDate": "2066-05-27",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K453"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-노윤호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0453"
+      },
+      {
+        "id": "FH-K453-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "노승호",
+        "birthDate": "2036-05-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "노승호는 대합실 당직에서 검역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-노윤호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K453-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "노승민",
+        "birthDate": "2006-05-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "노승민은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-노윤호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K453-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송준욱",
+        "birthDate": "2036-05-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "송준욱은 대합실 당직에서 검역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-노윤호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K453-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조준온",
+        "birthDate": "2006-05-27",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조준온은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-노윤호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K453-P-01:K453:biological",
+        "from": "FH-K453-P-01",
+        "to": "K453",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K453-P-02:FH-K453-P-01:biological",
+        "from": "FH-K453-P-02",
+        "to": "FH-K453-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K453-M-01:K453:biological",
+        "from": "FH-K453-M-01",
+        "to": "K453",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K453-M-02:FH-K453-M-01:biological",
+        "from": "FH-K453-M-02",
+        "to": "FH-K453-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-노윤호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K453",
     "personId": "person-0453",
@@ -149,7 +405,14 @@
     "Cast-State-14"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "노윤호",
+        "type": "계약",
+        "to": "영한뫼",
+        "basis": "노윤호는 검역 당직에서 넘겨받은 인명 장부를 영한뫼의 교량 의무소로 전달한다. 영한뫼는 도착한 환자의 명부를 받아 중증도에 따라 들것 순서를 정하고, 검역 대기 인원과 실제 병상에 들어온 환자가 뒤섞이지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

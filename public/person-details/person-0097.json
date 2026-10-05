@@ -12,6 +12,361 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-허겸",
   "detailRoute": "/people/person-0097",
+  "birthDate": "2092-11-15",
+  "birthday": "11-15",
+  "age": 34,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/126",
+    "lore/characters/Cast-State-04.json#/content/129"
+  ],
+  "familyTree": {
+    "personId": "K096",
+    "nodes": [
+      {
+        "id": "K096",
+        "personId": "K096",
+        "kind": "person",
+        "name": "허겸",
+        "birthDate": "2092-11-15",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K096"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 성수 골목펌프 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-허겸-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0097"
+      },
+      {
+        "id": "FH-K096-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승은",
+        "birthDate": "2062-11-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "허승은은 신정 차량기지에서 골목펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-허겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K096-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승연",
+        "birthDate": "2032-11-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "허승연은 신정 차량기지에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-허겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K096-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "허승정",
+        "birthDate": "2002-11-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "허승정은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-허겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K096-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승나",
+        "birthDate": "2062-11-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2100,
+            "summary": "박승나는 신정 차량기지에서 골목펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-허겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K096-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이승란",
+        "birthDate": "2032-11-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2070,
+            "summary": "이승란은 신정 차량기지에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-허겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K096-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "최승미",
+        "birthDate": "2002-11-15",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "최승미는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-허겸-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K096-P-01:K096:biological",
+        "from": "FH-K096-P-01",
+        "to": "K096",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K096-P-02:FH-K096-P-01:biological",
+        "from": "FH-K096-P-02",
+        "to": "FH-K096-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K096-P-03:FH-K096-P-02:biological",
+        "from": "FH-K096-P-03",
+        "to": "FH-K096-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K096-M-01:K096:biological",
+        "from": "FH-K096-M-01",
+        "to": "K096",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K096-M-02:FH-K096-M-01:biological",
+        "from": "FH-K096-M-02",
+        "to": "FH-K096-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K096-M-03:FH-K096-M-02:biological",
+        "from": "FH-K096-M-03",
+        "to": "FH-K096-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-허겸-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K096",
     "personId": "person-0097",
@@ -169,6 +524,18 @@
       }
     ],
     "incoming": [
+      {
+        "from": "남남원",
+        "type": "계약",
+        "to": "허겸",
+        "basis": "남남원은 펌프에서 교체한 마모 축과 정비 상태를 허겸에게 알린다. 허겸은 골목 펌프의 패킹과 막힌 구간을 살펴 같은 공급 중단이 다른 펌프에서도 이어지는지 확인한다."
+      },
+      {
+        "from": "백서래",
+        "type": "계약",
+        "to": "허겸",
+        "basis": "백서래는 현재 펌프 정비의 부품 상태를 허겸에게 알린다. 허겸은 골목 펌프의 패킹과 막힌 구간을 점검해 공급 중단이 다른 펌프에도 이어지는지 살핀다."
+      },
       {
         "from": "명강산",
         "type": "계약",

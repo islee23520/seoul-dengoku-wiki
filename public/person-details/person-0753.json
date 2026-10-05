@@ -12,6 +12,262 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-신가빈",
   "detailRoute": "/people/person-0753",
+  "birthDate": "2078-08-02",
+  "birthday": "08-02",
+  "age": 48,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/490",
+    "lore/characters/Cast-State-10.json#/content/492",
+    "lore/characters/Cast-State-10.json#/content/493"
+  ],
+  "familyTree": {
+    "personId": "K753",
+    "nodes": [
+      {
+        "id": "K753",
+        "personId": "K753",
+        "kind": "person",
+        "name": "신가빈",
+        "birthDate": "2078-08-02",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K753"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신가빈-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0753"
+      },
+      {
+        "id": "FH-K753-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "신승욱",
+        "birthDate": "2048-08-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "신승욱은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신가빈-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K753-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "신승란",
+        "birthDate": "2018-08-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "신승란은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신가빈-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K753-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송재나",
+        "birthDate": "2048-08-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2086,
+            "summary": "송재나는 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신가빈-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K753-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조도준",
+        "birthDate": "2018-08-02",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조도준은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-신가빈-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K753-P-01:K753:biological",
+        "from": "FH-K753-P-01",
+        "to": "K753",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K753-P-02:FH-K753-P-01:biological",
+        "from": "FH-K753-P-02",
+        "to": "FH-K753-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K753-M-01:K753:biological",
+        "from": "FH-K753-M-01",
+        "to": "K753",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K753-M-02:FH-K753-M-01:biological",
+        "from": "FH-K753-M-02",
+        "to": "FH-K753-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-신가빈-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K753",
     "personId": "person-0753",
@@ -143,7 +399,14 @@
     "Cast-State-10"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "신가빈",
+        "type": "계약",
+        "to": "모봉",
+        "basis": "신가빈은 공개 배급표와 짐의 인수 기록을 모봉에게 넘긴다. 모봉은 출처와 가족 명부를 확인해 배분한 물자가 운송할 잔량으로 다시 기록되지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

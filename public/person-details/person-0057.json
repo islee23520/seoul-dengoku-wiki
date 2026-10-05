@@ -12,6 +12,374 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-정호준",
   "detailRoute": "/people/person-0057",
+  "birthDate": "2101-05-14",
+  "birthday": "05-14",
+  "age": 25,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-03.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/19",
+    "lore/chronology/Century-Annals.json#/content/570",
+    "lore/chronology/Scenario-Timeline.json#/content/9",
+    "lore/chronology/Scenario-Timeline.json#/content/40"
+  ],
+  "familyTree": {
+    "personId": "K057",
+    "nodes": [
+      {
+        "id": "K057",
+        "personId": "K057",
+        "kind": "person",
+        "name": "정호준",
+        "birthDate": "2101-05-14",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K057"
+          },
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서초구 헌릉로 12 양재 본사 현장 시험 라인의 손. 2026년 그 마당은 이미 휴머노이드를 굴렸고, 구름 학습이 죽자 정비 가문이 상호를 남겼다. 기록 위조는 금지된다. 정씨 회장 가문은 회장직을 세습하며, 개막의 회장은 정서온이다. 보호를 명분으로 연구자를 세습 직능으로 묶으려는 안이 가문 회의에 올랐을 때, 정호준은 표본을 공동재산 칸에 옮기고 인질 조항을 지웠다. 회장 자리는 그 삭제가 아니라 가문 세습으로 열렸다. 정유라의 종료조건과 같은 버릇으로 읽힌다. 강민서가 규격을 잠그면 양재 원장이 따라가지 못한다. 마곡생명가의 검사 키는 마곡 무주지에 남긴 채로, 공개 범위를 두고 다툰다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정호준-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0057"
+      },
+      {
+        "id": "FH-K057-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승완",
+        "birthDate": "2071-05-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "정승완은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정호준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K057-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승훈",
+        "birthDate": "2041-05-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "정승훈은 생활권의 공동 거처에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정호준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K057-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승범",
+        "birthDate": "2011-05-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정승범은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정호준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K057-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송승은",
+        "birthDate": "2071-05-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "송승은은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정호준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K057-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조승은",
+        "birthDate": "2041-05-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "조승은은 생활권의 공동 거처에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정호준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K057-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "김승희",
+        "birthDate": "2011-05-14",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김승희는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-정호준-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K057-P-01:K057:biological",
+        "from": "FH-K057-P-01",
+        "to": "K057",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K057-P-02:FH-K057-P-01:biological",
+        "from": "FH-K057-P-02",
+        "to": "FH-K057-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K057-P-03:FH-K057-P-02:biological",
+        "from": "FH-K057-P-03",
+        "to": "FH-K057-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K057-M-01:K057:biological",
+        "from": "FH-K057-M-01",
+        "to": "K057",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K057-M-02:FH-K057-M-01:biological",
+        "from": "FH-K057-M-02",
+        "to": "FH-K057-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K057-M-03:FH-K057-M-02:biological",
+        "from": "FH-K057-M-03",
+        "to": "FH-K057-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-정호준-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [
+    {
+      "recipientId": "K085",
+      "recipientName": "송별하",
+      "basis": "정호준의 공개 원칙과 맞되, 측량 원본의 반출은 막는다.",
+      "sourceRef": {
+        "path": "lore/characters/Cast-State-03.json",
+        "anchor": "인물-송별하-p5"
+      }
+    }
+  ],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K057",
     "personId": "person-0057",

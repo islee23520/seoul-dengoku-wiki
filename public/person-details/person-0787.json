@@ -12,6 +12,263 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-장다원",
   "detailRoute": "/people/person-0787",
+  "birthDate": "2085-06-28",
+  "birthday": "06-28",
+  "age": 41,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/512",
+    "lore/characters/Cast-State-12.json#/content/514",
+    "lore/characters/Cast-State-12.json#/content/515"
+  ],
+  "familyTree": {
+    "personId": "K787",
+    "nodes": [
+      {
+        "id": "K787",
+        "personId": "K787",
+        "kind": "person",
+        "name": "장다원",
+        "birthDate": "2085-06-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K787"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 의무호송 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장다원-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0787"
+      },
+      {
+        "id": "FH-K787-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "장민석",
+        "birthDate": "2055-06-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2093,
+            "summary": "장민석은 서울역 등기소에서 의무호송 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장다원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Jang Minseok",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K787-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "장현원",
+        "birthDate": "2025-06-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "장현원은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장다원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K787-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "임도윤",
+        "birthDate": "2055-06-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2093,
+            "summary": "임도윤은 서울역 등기소에서 의무호송 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장다원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K787-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오도연",
+        "birthDate": "2025-06-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오도연은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-장다원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K787-P-01:K787:biological",
+        "from": "FH-K787-P-01",
+        "to": "K787",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K787-P-02:FH-K787-P-01:biological",
+        "from": "FH-K787-P-02",
+        "to": "FH-K787-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K787-M-01:K787:biological",
+        "from": "FH-K787-M-01",
+        "to": "K787",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K787-M-02:FH-K787-M-01:biological",
+        "from": "FH-K787-M-02",
+        "to": "FH-K787-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-장다원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K787",
     "personId": "person-0787",
@@ -149,7 +406,14 @@
     "Cast-State-12"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "장다원",
+        "type": "계약",
+        "to": "전미리",
+        "basis": "장다원은 의무호송의 중복 지급 정정과 환자 인수 기록을 전미리에게 넘긴다. 전미리는 중증도·이송 시각을 확인해 같은 환자의 인계가 두 번 잡힌 곳을 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

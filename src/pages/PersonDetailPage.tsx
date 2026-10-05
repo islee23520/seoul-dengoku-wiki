@@ -8,6 +8,7 @@ import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 import type { PersonRightsPermissions, PermissionStatus } from '../personRightsPermissions'
+import { FamilyTree, type FamilyTreeData } from '../components/FamilyTree'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type ConfirmedHolding = {
@@ -18,6 +19,13 @@ type ConfirmedHolding = {
   readonly facilityRef?: { readonly stationName: string; readonly layerId: string; readonly layerName: string }
 }
 type PersonDetail = (typeof peopleCatalog)[number] & {
+  birthDate?: string
+  birthday?: string
+  age?: number
+  ageAsOf?: string
+  familyTree?: FamilyTreeData
+  household?: { readonly personFaith: 'unknown' | 'christian' | 'non-christian'; readonly houseFaith: 'unknown' | 'christian' | 'non-christian'; readonly humanoidAdmission: 'excluded' | 'deferred' }
+  proseContacts?: readonly { readonly recipientId: string; readonly recipientName: string; readonly basis: string; readonly sourceRef: { readonly path: string; readonly anchor: string } }[]
   rightsPermissions?: PersonRightsPermissions
   confirmedHoldings?: readonly ConfirmedHolding[]
   gurps: GurpsSheetData & { id: string; personId: string }
@@ -392,6 +400,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
   const sheet = parseGurpsSheet(detail.gurps, personId)
   const basicRows: Array<Array<string | number | null>> = [
     ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
+    ...(detail.birthDate ? [['생년월일', detail.birthDate], ['만 나이', detail.age ?? null], ['나이 기준일', detail.ageAsOf ?? null]] : []),
     ['직위', person.position], ['직급(공통 티어)', person.commonTier], ['국가 품계', person.rank], ['직업', person.occupation], ['성별', person.gender], ['단계', person.stage], ['세대', person.generation],
     ...Object.entries(person.fields ?? {}).filter(([label]) => !['가치관', '욕망', '직위', '소속'].includes(label)),
   ]
@@ -402,6 +411,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
     return [[`직속 주군 · ${liege.name}`, `2126년 · ${liege.ownerTerm}`]]
   })()
   const relationRows: Array<Array<string | number | null>> = [
+    ...(detail.proseContacts ?? []).map(contact => [`업무 접점 · ${contact.recipientName}`, contact.basis]),
     ...(liegeRow ?? []),
     ...(detail.court ? detail.court.members.map((member) => [`궁정 가신 · ${member.name}`, `2126년 · ${detail.court?.id}`]) : []),
     ...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as Array<string>),
@@ -438,6 +448,11 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           </figure>}
           <DataTable title="기본 정보" rows={basicRows} />
           <PersonPermissions permissions={detail.rightsPermissions} />
+          {detail.household && <DataTable title="가정과 신앙" rows={[
+            ['개인 신앙', ({ unknown: '미확인', christian: '기독교', 'non-christian': '비기독교' })[detail.household.personFaith]],
+            ['가문 신앙', ({ unknown: '미확인', christian: '기독교', 'non-christian': '비기독교' })[detail.household.houseFaith]],
+            ['휴머노이드 가정 반입', detail.household.humanoidAdmission === 'excluded' ? '기독교계 집안 반입 제외' : '미정'],
+          ]} />}
           <DataTable title="관계" rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />
         </aside>
         <div className="wiki-prose person-canon-prose">
@@ -445,6 +460,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : <><PersonSections sections={detail.sections} /><details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details></>}
 
           {sheet.ok && <GurpsSheet gurps={sheet.sheet} />}
+          {detail.familyTree && <FamilyTree tree={detail.familyTree} />}
           {detail.unit && <section className="gurps-unit">
             <h2>부대</h2>
             <p>{detail.unit.type} · {detail.unit.size}명 · {detail.unit.quality}</p>

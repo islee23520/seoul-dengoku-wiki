@@ -12,6 +12,262 @@
   "stateName": "여의도출자연합회",
   "sourceRoute": "/world/Cast-State-09#인물-권늘윤",
   "detailRoute": "/people/person-0832",
+  "birthDate": "2083-05-13",
+  "birthday": "05-13",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-09.json#/content/545",
+    "lore/characters/Cast-State-09.json#/content/547",
+    "lore/characters/Cast-State-09.json#/content/548"
+  ],
+  "familyTree": {
+    "personId": "K832",
+    "nodes": [
+      {
+        "id": "K832",
+        "personId": "K832",
+        "kind": "person",
+        "name": "권늘윤",
+        "birthDate": "2083-05-13",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K832"
+          },
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 금고 당직 자리는 정전 사흘 금고 유지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-권늘윤-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0832"
+      },
+      {
+        "id": "FH-K832-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "권승나",
+        "birthDate": "2053-05-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "권승나는 여의도 금고 당직에서 금고 당직 교대·기록 인수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-권늘윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K832-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "권승온",
+        "birthDate": "2023-05-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "권승온은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-권늘윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K832-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤도섭",
+        "birthDate": "2053-05-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "윤도섭은 여의도 금고 당직에서 금고 당직 교대·기록 인수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-권늘윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K832-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한도혁",
+        "birthDate": "2023-05-13",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한도혁은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-09.json",
+                "anchor": "인물-권늘윤-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K832-P-01:K832:biological",
+        "from": "FH-K832-P-01",
+        "to": "K832",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K832-P-02:FH-K832-P-01:biological",
+        "from": "FH-K832-P-02",
+        "to": "FH-K832-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K832-M-01:K832:biological",
+        "from": "FH-K832-M-01",
+        "to": "K832",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K832-M-02:FH-K832-M-01:biological",
+        "from": "FH-K832-M-02",
+        "to": "FH-K832-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-09.json",
+            "anchor": "인물-권늘윤-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K832",
     "personId": "person-0832",
@@ -149,7 +405,14 @@
     "Cast-State-09"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "권늘윤",
+        "type": "계약",
+        "to": "권미래",
+        "basis": "권늘윤은 금고 당직에 쓴 예비 전지와 공급 상태를 권미래에게 알린다. 권미래는 분산된 예비 전원을 확인해 다음 교대가 쓸 공급을 점검한다."
+      }
+    ],
     "incoming": []
   }
 }

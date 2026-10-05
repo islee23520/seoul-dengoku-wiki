@@ -12,6 +12,368 @@
   "stateName": "명부교회",
   "sourceRoute": "/world/Cast-State-04#인물-오경재",
   "detailRoute": "/people/person-0088",
+  "birthDate": "2104-08-22",
+  "birthday": "08-22",
+  "age": 22,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-04.json#/content/1",
+    "lore/characters/Core-Characters.json#/content/155",
+    "lore/characters/Core-Characters.json#/content/156",
+    "lore/characters/Core-Characters.json#/content/157",
+    "lore/characters/Core-Characters.json#/content/159",
+    "lore/characters/Core-Characters.json#/content/160",
+    "lore/chronology/Century-Annals.json#/content/465",
+    "lore/chronology/Century-Annals.json#/content/629",
+    "lore/chronology/Scenario-Timeline.json#/content/7"
+  ],
+  "familyTree": {
+    "personId": "K423",
+    "nodes": [
+      {
+        "id": "K423",
+        "personId": "K423",
+        "kind": "person",
+        "name": "오경재",
+        "birthDate": "2104-08-22",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K423"
+          },
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 종로구 대학로3길 29 총회회관의 마지막 당직 수습생. 임하준이 2125년 겨울 실종된 뒤, 뚝섬 열원과 연지동 총회 사이의 펌프 망치 전수를 명부 위에서 완성했다. 임초원이 망치의 반을 쥐고 있다면, 오경재는 오씨 가문의 다른 반을 쥐고 2126년에 당회장으로 착좌했다. 명부교회의 당회장 목사직은 오씨 가문이 부자 세습하고, 장로의 인준 투표는 의례로 남는다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-오경재-p1"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0088"
+      },
+      {
+        "id": "FH-K423-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오준찬",
+        "birthDate": "2074-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2112,
+            "summary": "오준찬은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-오경재-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K423-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오준혁",
+        "birthDate": "2044-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "오준혁은 생활권의 공동 거처에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-오경재-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K423-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "오준문",
+        "birthDate": "2014-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오준문은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-오경재-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K423-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정준욱",
+        "birthDate": "2074-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2112,
+            "summary": "정준욱은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-오경재-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K423-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준성",
+        "birthDate": "2044-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "윤준성은 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-오경재-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K423-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준재",
+        "birthDate": "2014-08-22",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한준재는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-04.json",
+                "anchor": "인물-오경재-p1"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K423-P-01:K423:biological",
+        "from": "FH-K423-P-01",
+        "to": "K423",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K423-P-02:FH-K423-P-01:biological",
+        "from": "FH-K423-P-02",
+        "to": "FH-K423-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K423-P-03:FH-K423-P-02:biological",
+        "from": "FH-K423-P-03",
+        "to": "FH-K423-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K423-M-01:K423:biological",
+        "from": "FH-K423-M-01",
+        "to": "K423",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K423-M-02:FH-K423-M-01:biological",
+        "from": "FH-K423-M-02",
+        "to": "FH-K423-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K423-M-03:FH-K423-M-02:biological",
+        "from": "FH-K423-M-03",
+        "to": "FH-K423-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-04.json",
+            "anchor": "인물-오경재-p1"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "christian",
+    "houseFaith": "christian",
+    "humanoidAdmission": "excluded"
+  },
   "gurps": {
     "id": "K423",
     "personId": "person-0088",

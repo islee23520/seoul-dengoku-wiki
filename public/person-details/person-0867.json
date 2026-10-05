@@ -12,6 +12,262 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-오늘호",
   "detailRoute": "/people/person-0867",
+  "birthDate": "2076-01-25",
+  "birthday": "01-25",
+  "age": 50,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/567",
+    "lore/characters/Cast-State-12.json#/content/569",
+    "lore/characters/Cast-State-12.json#/content/570"
+  ],
+  "familyTree": {
+    "personId": "K867",
+    "nodes": [
+      {
+        "id": "K867",
+        "personId": "K867",
+        "kind": "person",
+        "name": "오늘호",
+        "birthDate": "2076-01-25",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K867"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-오늘호-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0867"
+      },
+      {
+        "id": "FH-K867-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오도솔",
+        "birthDate": "2046-01-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "오도솔은 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-오늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K867-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "오도미",
+        "birthDate": "2016-01-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "오도미는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-오늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K867-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정민원",
+        "birthDate": "2046-01-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2084,
+            "summary": "정민원은 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-오늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K867-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤도빈",
+        "birthDate": "2016-01-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤도빈은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-오늘호-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K867-P-01:K867:biological",
+        "from": "FH-K867-P-01",
+        "to": "K867",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K867-P-02:FH-K867-P-01:biological",
+        "from": "FH-K867-P-02",
+        "to": "FH-K867-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K867-M-01:K867:biological",
+        "from": "FH-K867-M-01",
+        "to": "K867",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K867-M-02:FH-K867-M-01:biological",
+        "from": "FH-K867-M-02",
+        "to": "FH-K867-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-오늘호-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K867",
     "personId": "person-0867",
@@ -155,7 +411,14 @@
     "Cast-State-12"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "오늘호",
+        "type": "계약",
+        "to": "용봉",
+        "basis": "오늘호는 다시 열린 대기열 당직의 인수 기록을 용봉에게 넘긴다. 용봉은 환자 줄·화물 줄과 중증도 표를 확인해 교대 공백 동안 서로 섞인 줄을 가린다."
+      }
+    ],
     "incoming": []
   }
 }
