@@ -51,6 +51,41 @@ export function stepFor(cp) {
   return null
 }
 export const UNSPENT_FLOOR = 75
+// Owner-approved 2026-10-05 exceptions; exact values are singleton allowed ranges.
+// Trio: call_5dcea0840c6c478d912e9fe7, call_8e40679a3bb241ab8f59a913.
+// Six: call_67f51ae3300c4f1ba7768fab, call_65868ca8609b4e02829ad705; all six may exceed 300 CP.
+// Numeric curated skills (including K1008 장검) and non-ability allocations are sheet canon.
+// Pin them independently of citation locations; updating quotations cannot approve numeric changes.
+export const APPROVED_EXCEPTIONS = {
+  K998: { attributes: {"ST":11,"DX":12,"IQ":15,"HT":14}, total: 352, ownerRef: 'call_5dcea0840c6c478d912e9fe7;call_8e40679a3bb241ab8f59a913', curatedSha256: '98ebf8bcc7c88f6d179a693f75021af738abd577c551072fdf97fbeb36237117' },
+  K1003: { attributes: {"ST":17,"DX":14,"IQ":13,"HT":14}, total: 330, ownerRef: 'call_67f51ae3300c4f1ba7768fab;call_65868ca8609b4e02829ad705', curatedSha256: '3650a7640014434fc87b371d6d03dedff0c1b5c8d7fe32cd3e92c72dcd23a14e' },
+  K1004: { attributes: {"ST":10,"DX":16,"IQ":14,"HT":13}, total: 309, ownerRef: 'call_67f51ae3300c4f1ba7768fab;call_65868ca8609b4e02829ad705', curatedSha256: 'f9307dea9d6890cac817d12114b20bd356df47d4117e45ca48e03f9132a74b2d' },
+  K1007: { attributes: {"ST":10,"DX":10,"IQ":20,"HT":11}, total: 338, ownerRef: 'call_5dcea0840c6c478d912e9fe7;call_8e40679a3bb241ab8f59a913', curatedSha256: '3e3df884b01d0ec57c4d4d2d1a453448b7a02adcaf6abeef39b28a90c431b455' },
+  K1008: { attributes: {"ST":10,"DX":14,"IQ":20,"HT":11}, total: 429, ownerRef: 'call_5dcea0840c6c478d912e9fe7;call_8e40679a3bb241ab8f59a913', curatedSha256: '2614a71ab2d9335724d109c7c87a2776885c0a52e5c64d97f9af1b4473f28dbe' },
+  K1009: { attributes: {"ST":13,"DX":15,"IQ":15,"HT":14}, total: 347, ownerRef: 'call_67f51ae3300c4f1ba7768fab;call_65868ca8609b4e02829ad705', curatedSha256: '928cc6effd3f573c3460f081b6902c5ee66d778c7bed6f1fdc0ce9605903c873' },
+  K1017: { attributes: {"ST":10,"DX":12,"IQ":18,"HT":13}, total: 305, ownerRef: 'call_67f51ae3300c4f1ba7768fab;call_65868ca8609b4e02829ad705', curatedSha256: 'e9717bd2bd54b26c52918b227a353d90a6f043deb797506e0033942f61ff8ed0' },
+  K1018: { attributes: {"ST":10,"DX":13,"IQ":25,"HT":13}, total: 445, ownerRef: 'call_67f51ae3300c4f1ba7768fab;call_65868ca8609b4e02829ad705', curatedSha256: '686543eb36ee7e09e8138df40b4e772ca24299145a71121bd9dec7b38515eec0' },
+  K1019: { attributes: {"ST":10,"DX":13,"IQ":19,"HT":13}, total: 305, ownerRef: 'call_67f51ae3300c4f1ba7768fab;call_65868ca8609b4e02829ad705', curatedSha256: '7bef207f1a2d11955f919ced9ba15030218fcc22d1b9fe2c2640a6dd96aea4f4' },
+}
+function curatedNumeric(p) {
+  return {
+    skills: p.skills.map(({ evidence, ...s }) => s),
+    traits: p.traits.map(({ evidence, ...t }) => t),
+    advantages: p.advantages, disadvantages: p.disadvantages,
+    nonAbility: { advantages: p.cp.advantages, disadvantages: p.cp.disadvantages, skills: p.cp.skills, unspent: p.cp.unspent ?? 0 },
+  }
+}
+const curatedHash = (p) => createHash('sha256').update(JSON.stringify(curatedNumeric(p))).digest('hex')
+function approvedRecord(p) {
+  const record = structuredClone(p)
+  record.secondary = secondary(record.attributes, record.traits.some((t) => t.rule === 'combat-reflexes') || record.advantages?.some((t) => t.name === 'Combat Reflexes'))
+  const attributes = Object.values(record.attributes).reduce((sum, a) => sum + a.cp, 0)
+  const { advantages, disadvantages, skills, unspent } = curatedNumeric(record).nonAbility
+  const spent = attributes + advantages + disadvantages + skills
+  record.cp = { attributes, advantages, disadvantages, skills, spent, unspent, total: spent + unspent }
+  record.band = '주역·강자'
+  return record
+}
 // 사용자 확정 직위 줄이 직접 가리키는 핵심 기술의 A 등급(소유자 결정 2026-09-28, G2 Q6 C). 견본 밖에서는 이 한 칸뿐이다.
 export const OWNER_TIER_A = { K1004: 'Observation' }
 // 확정 여부는 위 표가 기록한다. 공개 카드 문장에는 확정 표시를 두지 않는다.
@@ -594,6 +629,8 @@ function finish(record) {
 }
 const SKILL_ORDER = Object.keys(SKILLS)
 export function build(root = ROOT) {
+  const issued = JSON.parse(readFileSync(join(root, OUT), 'utf8'))
+  const issuedById = new Map(issued.people.map((p) => [p.id, p]))
   const registry = JSON.parse(readSource(root, REGISTRY).raw)
   const values = JSON.parse(readSource(root, VALUES).raw).people
   const indexByName = new Map(values.map((p, i) => [p.name, i]))
@@ -609,6 +646,10 @@ export function build(root = ROOT) {
       state: values[index].state,
     }
     const pilot = PILOT[entry.id]
+    if (APPROVED_EXCEPTIONS[entry.id]) {
+      people.push(approvedRecord({ ...issuedById.get(entry.id), ...base }))
+      continue
+    }
     if (pilot) {
       const attributes = Object.fromEntries(Object.entries(pilot.attributes).map(([a, [value, ids]]) => [a, { value, cp: (value - ABILITY_BASE) * ATTR_COST[a], rule: 'pilot-approved', evidence: src(...ids) }]))
       const [path, pointer, quote] = PILOT_SOURCES[pilot.role]
@@ -661,17 +702,17 @@ export function build(root = ROOT) {
       tl: '/TL? — 캠페인 기술 수준 미정(G1 Q14)',
     },
     count: people.length,
-    people,
+    people: people.map((p) => ({ ...issuedById.get(p.id), ...p })),
   }
   return { doc, review }
 }
 
-export const serialize = (doc) => `${JSON.stringify(doc, null, 1)}\n`
+export const serialize = (doc) => `${JSON.stringify(doc, null, 2)}\n`
 
 // ---- 독립 검사: 파일에 적힌 수치를 믿지 않고 규칙표로 다시 계산한다. ----
 export function verify(doc, root = ROOT) {
   const errors = []
-  const fail = (m) => { if (errors.length < 200) errors.push(m) }
+  const fail = (m) => { errors.push(m) }
   if (doc.schema !== SCHEMA) fail(`schema: ${doc.schema}`)
   for (const [path, hash] of Object.entries(APPROVED_HASHES)) {
     const got = sha256(root, path)
@@ -699,6 +740,26 @@ export function verify(doc, root = ROOT) {
     const url = `/people/person-${String(vi + 1).padStart(4, '0')}`
     if (vi === undefined || p.url !== url) fail(`${tag} URL ${p.url} ≠ ${url}`)
     if (values[vi]?.state !== p.state) fail(`${tag} state ${p.state}`)
+    const exception = APPROVED_EXCEPTIONS[p.id]
+    if (exception) {
+      for (const [a, value] of Object.entries(exception.attributes)) {
+        if (p.attributes?.[a]?.value !== value || p.attributes[a].cp !== (value - ABILITY_BASE) * ATTR_COST[a]) fail(`${tag} ${a}: approved value/cost mismatch`)
+      }
+      if (curatedHash(p) !== exception.curatedSha256) fail(`${tag}: approved curated allocation changed`)
+      const skills = p.skills.reduce((sum, s) => sum + s.cp, 0)
+      const advantages = p.advantages ? p.advantages.reduce((sum, t) => sum + t.cp, 0) : p.traits.filter((t) => t.kind === 'advantage').reduce((sum, t) => sum + t.cp, 0)
+      const disadvantages = (p.disadvantages ?? []).reduce((sum, t) => sum + t.cp, 0)
+      if (p.cp.skills !== skills || p.cp.advantages !== advantages || p.cp.disadvantages !== disadvantages) fail(`${tag}: curated CP component mismatch`)
+      const expected = approvedRecord(p)
+      if (JSON.stringify(p.secondary) !== JSON.stringify(expected.secondary)) fail(`${tag}: derived secondary mismatch`)
+      if (JSON.stringify(p.cp) !== JSON.stringify(expected.cp) || p.cp.total !== exception.total) fail(`${tag}: approved total/CP arithmetic mismatch`)
+      if (p.band !== '주역·강자') fail(`${tag}: approved band mismatch`)
+      const citations = [...(p.role?.evidence ?? []), ...Object.values(p.attributes).flatMap((a) => a.evidence ?? []), ...p.skills.flatMap((s) => s.evidence ?? []), ...p.traits.flatMap((t) => t.evidence ?? []), ...p.languages.flatMap((l) => l.evidence ?? [])]
+      for (const e of citations) if (e.path && !quoteHolds(root, e)) fail(`${tag}: 인용 불일치 ${e.path}#${e.pointer ?? ''} «${e.quote}»`)
+      const langs = languagesOf(root, p.name)
+      if (JSON.stringify(p.languages) !== JSON.stringify(langs)) fail(`${tag}: approved language projection mismatch`)
+      return
+    }
     const pilot = p.method === 'pilot-approved'
     if (pilot && !PILOT[p.id]) fail(`${tag}: 견본이 아닌데 pilot-approved`)
     if (!pilot && p.method !== 'card-lexicon') fail(`${tag}: method ${p.method}`)
@@ -793,8 +854,6 @@ export function verify(doc, root = ROOT) {
     })
     if (spent === 0 && (p.skills.length || Object.values(p.attributes).some((a) => a.value !== ABILITY_BASE || a.evidence.length))) fail(`${tag}: 기준값인데 근거·수치가 있음`)
   })
-  if (PILOT.K1003 && doc.people?.[1002]?.cp?.total !== 210) fail(`K1003 총점 ${doc.people?.[1002]?.cp?.total} ≠ 근거 수정값 210`)
-  if (PILOT.K1009 && doc.people?.[1008]?.cp?.total !== 207) fail(`K1009 총점 ${doc.people?.[1008]?.cp?.total} ≠ 승인 207`)
   return errors
 }
 

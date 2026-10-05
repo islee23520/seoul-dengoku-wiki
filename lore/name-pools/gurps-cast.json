@@ -147708,24 +147708,25 @@
       ],
       "languages": [],
       "secondary": {
-        "HP": 10,
-        "Will": 12,
-        "Per": 12,
-        "FP": 10,
-        "BasicSpeed": 5,
-        "BasicMove": 5,
-        "BasicLift": 20,
-        "Dodge": 8
+        "HP": 11,
+        "Will": 15,
+        "Per": 15,
+        "FP": 14,
+        "BasicSpeed": 6.5,
+        "BasicMove": 6,
+        "BasicLift": 24,
+        "Dodge": 9
       },
       "cp": {
         "attributes": 190,
         "advantages": 80,
         "disadvantages": -20,
         "skills": 102,
-        "total": 352,
-        "breakdown_visible": true
+        "spent": 352,
+        "unspent": 0,
+        "total": 352
       },
-      "band": "일반 인물",
+      "band": "주역·강자",
       "baseline": false,
       "unit": {
         "type": "규격맹 호위대",
@@ -148403,7 +148404,7 @@
       "id": "K1003",
       "name": "조재표",
       "url": "/people/person-1003",
-      "state": "R01",
+      "state": "S00",
       "method": "pilot-approved",
       "role": {
         "display": "주 탐사원 / 부 순찰대",
@@ -148700,14 +148701,14 @@
         }
       ],
       "secondary": {
-        "HP": 11,
+        "HP": 17,
         "Will": 13,
         "Per": 13,
-        "FP": 12,
-        "BasicSpeed": 6,
-        "BasicMove": 6,
-        "BasicLift": 24,
-        "Dodge": 10
+        "FP": 14,
+        "BasicSpeed": 7,
+        "BasicMove": 7,
+        "BasicLift": 58,
+        "Dodge": 11
       },
       "cp": {
         "attributes": 250,
@@ -148884,13 +148885,13 @@
       ],
       "secondary": {
         "HP": 10,
-        "Will": 11,
-        "Per": 11,
-        "FP": 10,
-        "BasicSpeed": 5,
-        "BasicMove": 5,
+        "Will": 14,
+        "Per": 14,
+        "FP": 13,
+        "BasicSpeed": 7.25,
+        "BasicMove": 7,
         "BasicLift": 20,
-        "Dodge": 8
+        "Dodge": 10
       },
       "cp": {
         "attributes": 230,
@@ -148901,7 +148902,7 @@
         "unspent": 35,
         "total": 309
       },
-      "band": "일반 인물",
+      "band": "주역·강자",
       "baseline": false,
       "unit": {
         "type": "수행원",
@@ -149318,23 +149319,24 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 10,
-        "Per": 10,
-        "FP": 10,
-        "BasicSpeed": 5,
+        "Will": 20,
+        "Per": 20,
+        "FP": 11,
+        "BasicSpeed": 5.25,
         "BasicMove": 5,
         "BasicLift": 20,
-        "Dodge": 8
+        "Dodge": 9
       },
       "cp": {
         "attributes": 210,
         "advantages": 75,
         "disadvantages": -30,
         "skills": 83,
-        "total": 338,
-        "breakdown_visible": true
+        "spent": 338,
+        "unspent": 0,
+        "total": 338
       },
-      "band": "일반 인물",
+      "band": "주역·강자",
       "baseline": false,
       "unit": {
         "size": 45,
@@ -149580,23 +149582,24 @@
       ],
       "secondary": {
         "HP": 10,
-        "Will": 13,
-        "Per": 13,
-        "FP": 10,
-        "BasicSpeed": 5,
-        "BasicMove": 5,
+        "Will": 20,
+        "Per": 20,
+        "FP": 11,
+        "BasicSpeed": 6.25,
+        "BasicMove": 6,
         "BasicLift": 20,
-        "Dodge": 8
+        "Dodge": 10
       },
       "cp": {
         "attributes": 290,
         "advantages": 69,
         "disadvantages": -25,
         "skills": 95,
-        "total": 429,
-        "breakdown_visible": true
+        "spent": 429,
+        "unspent": 0,
+        "total": 429
       },
-      "band": "일반 인물",
+      "band": "주역·강자",
       "baseline": false,
       "unit": null,
       "wandering_force": null,
@@ -150021,14 +150024,14 @@
       ],
       "languages": [],
       "secondary": {
-        "HP": 11,
-        "Will": 12,
-        "Per": 12,
-        "FP": 12,
-        "BasicSpeed": 6.25,
-        "BasicMove": 6,
-        "BasicLift": 24,
-        "Dodge": 10
+        "HP": 13,
+        "Will": 15,
+        "Per": 15,
+        "FP": 14,
+        "BasicSpeed": 7.25,
+        "BasicMove": 7,
+        "BasicLift": 34,
+        "Dodge": 11
       },
       "cp": {
         "attributes": 270,
@@ -151174,13 +151177,13 @@
       ],
       "secondary": {
         "HP": 10,
-        "Will": 10,
-        "Per": 10,
-        "FP": 10,
-        "BasicSpeed": 5,
-        "BasicMove": 5,
+        "Will": 18,
+        "Per": 18,
+        "FP": 13,
+        "BasicSpeed": 6.25,
+        "BasicMove": 6,
         "BasicLift": 20,
-        "Dodge": 8
+        "Dodge": 9
       },
       "cp": {
         "attributes": 230,
@@ -151191,7 +151194,7 @@
         "unspent": 67,
         "total": 305
       },
-      "band": "일반 인물",
+      "band": "주역·강자",
       "baseline": false,
       "unit": {
         "type": "수행원",
@@ -151341,13 +151344,13 @@
       ],
       "secondary": {
         "HP": 10,
-        "Will": 10,
-        "Per": 10,
-        "FP": 10,
-        "BasicSpeed": 5.25,
-        "BasicMove": 5,
+        "Will": 25,
+        "Per": 25,
+        "FP": 13,
+        "BasicSpeed": 6.5,
+        "BasicMove": 6,
         "BasicLift": 20,
-        "Dodge": 8
+        "Dodge": 9
       },
       "cp": {
         "attributes": 390,
@@ -151358,7 +151361,7 @@
         "unspent": 35,
         "total": 445
       },
-      "band": "일반 인물",
+      "band": "주역·강자",
       "baseline": false
     },
     {
@@ -151475,13 +151478,13 @@
       ],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
-        "FP": 10,
-        "BasicSpeed": 5,
-        "BasicMove": 5,
+        "Will": 19,
+        "Per": 19,
+        "FP": 13,
+        "BasicSpeed": 6.5,
+        "BasicMove": 6,
         "BasicLift": 20,
-        "Dodge": 8
+        "Dodge": 9
       },
       "cp": {
         "attributes": 270,
@@ -151492,7 +151495,7 @@
         "unspent": 23,
         "total": 305
       },
-      "band": "일반 인물",
+      "band": "주역·강자",
       "baseline": false,
       "unit": {
         "type": "수행원",
