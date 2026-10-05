@@ -74,19 +74,9 @@
         "cp": 16
       },
       {
-        "name": "장검",
-        "level": 15,
-        "cp": 16
-      },
-      {
         "name": "창술",
         "level": 14,
         "cp": 8
-      },
-      {
-        "name": "화기",
-        "level": 15,
-        "cp": 16
       },
       {
         "name": "역사",
@@ -98,8 +88,8 @@
       "attributes": 210,
       "advantages": 75,
       "disadvantages": -30,
-      "skills": 115,
-      "total": 370,
+      "skills": 83,
+      "total": 338,
       "breakdown_visible": true
     },
     "secondary": {
@@ -115,12 +105,10 @@
   },
   "confirmedHoldings": [],
   "unit": {
-    "type": "온민 친위대",
     "size": 45,
     "quality": "정예",
     "composition": [
       "친위병",
-      "총검병",
       "경비병"
     ],
     "note": "온민 수장 직속 친위부대",
