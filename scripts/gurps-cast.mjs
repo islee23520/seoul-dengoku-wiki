@@ -418,9 +418,9 @@ export function languagesOf(root, name) {
 }
 
 const MARTIAL = [
-  [/^수문호흡법\./u, ['breathControl']],
-  [/^차륜강체공\./u, ['breathControl']],
-  [/^호위철벽진\./u, ['shield']],
+  [/^한류공\./u, ['breathControl']],
+  [/^단철공\./u, ['breathControl']],
+  [/^수벽술\./u, ['shield']],
   [/^유도\./u, ['judo']],
 ]
 
@@ -746,6 +746,10 @@ export function verify(doc, root = ROOT) {
         if (p.attributes?.[a]?.value !== value || p.attributes[a].cp !== (value - ABILITY_BASE) * ATTR_COST[a]) fail(`${tag} ${a}: approved value/cost mismatch`)
       }
       if (curatedHash(p) !== exception.curatedSha256) fail(`${tag}: approved curated allocation changed`)
+      for (const s of p.skills) {
+        if (s.tier && !s.evidence?.length) fail(`${tag} ${s.name}: 출처 없음`)
+        if (p.id === 'K1004' && s.name === OWNER_TIER_A[p.id] && !s.evidence.some((e) => OFFICE_LINE.test(e.quote) && quoteHolds(root, e))) fail(`${tag}: approved office citation missing`)
+      }
       const skills = p.skills.reduce((sum, s) => sum + s.cp, 0)
       const advantages = p.advantages ? p.advantages.reduce((sum, t) => sum + t.cp, 0) : p.traits.filter((t) => t.kind === 'advantage').reduce((sum, t) => sum + t.cp, 0)
       const disadvantages = (p.disadvantages ?? []).reduce((sum, t) => sum + t.cp, 0)
