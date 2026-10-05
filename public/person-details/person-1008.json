@@ -32,7 +32,7 @@
   "gurps": {
     "id": "K1008",
     "personId": "person-1008",
-    "band": "일반 인물",
+    "band": "주역·강자",
     "attributes": {
       "ST": {
         "value": 10,
@@ -109,18 +109,19 @@
       "advantages": 69,
       "disadvantages": -25,
       "skills": 95,
-      "total": 429,
-      "breakdown_visible": true
+      "spent": 429,
+      "unspent": 0,
+      "total": 429
     },
     "secondary": {
       "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
+      "Will": 20,
+      "Per": 20,
+      "FP": 11,
+      "BasicSpeed": 6.25,
+      "BasicMove": 6,
       "BasicLift": 20,
-      "Dodge": 8
+      "Dodge": 10
     }
   },
   "confirmedHoldings": [],
