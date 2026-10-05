@@ -151411,14 +151411,14 @@
           "evidence": []
         },
         "DX": {
-          "value": 10,
-          "cp": 0,
+          "value": 13,
+          "cp": 60,
           "rule": "card-actions",
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 19,
+          "cp": 180,
           "rule": "card-actions",
           "evidence": [
             {
@@ -151434,8 +151434,8 @@
           ]
         },
         "HT": {
-          "value": 10,
-          "cp": 0,
+          "value": 13,
+          "cp": 30,
           "rule": "card-actions",
           "evidence": []
         }
@@ -151510,13 +151510,13 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 270,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 12,
-        "spent": 52,
+        "spent": 282,
         "unspent": 23,
-        "total": 75
+        "total": 305
       },
       "band": "일반 인물",
       "baseline": false,
