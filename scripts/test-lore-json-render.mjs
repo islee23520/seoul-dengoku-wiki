@@ -130,10 +130,12 @@ for (const { path, document } of documents) {
       // A heading's legacy event anchor and public aliases that its locale's heading IDs do not already
       // provide are published once, as an anchor-only paragraph directly before that heading.
       const published = new Set(document.content.filter((node) => node.kind === 'heading').map((node) => headingId(leafText(node.text[locale]))))
+      for (const node of document.content.filter((node) => node.kind === 'paragraph')) {
+        for (const match of leafText(node.text[locale]).matchAll(/<a id="([\p{L}\p{N}_-]+)"><\/a>/gu)) published.add(match[1])
+      }
       const aliasesOf = (node) => {
-        if (node.kind !== 'heading') return []
-        const legacy = /-xt0[1-5]-/u.test(node.anchor ?? '') ? [node.anchor] : []
-        return [...legacy, ...(node.publicAnchors ?? [])].filter((alias) => !published.has(alias) && published.add(alias))
+        if (node.kind !== 'heading' && !(node.publicAnchors?.length || node.kind === 'paragraph' && document.domain === 'technology' && !/(?:-p\d|-list\d|-table\d|paragraph|label)/u.test(node.anchor))) return []
+        return [node.anchor, ...(node.publicAnchors ?? [])].filter((alias) => !published.has(alias) && published.add(alias))
       }
       let cursor = 0
       document.content.forEach((node) => {
@@ -158,6 +160,60 @@ test('lore links render as paths relative to the page and keep their anchor', ()
     content: [{ kind: 'paragraph', anchor: 'p1', text: { en: [{ text: 'a', link: { domain: 'overview', slug: 'World-Unbinding', anchor: 'x' } }, { text: ' b', link: { domain: 'gdd', slug: 'rules/Warfare-and-Sieges' } }], ko: 'k' } }],
   }
   assert.equal(renderLoreMarkdown(document, 'en'), '[a](../overview/World-Unbinding.md#x)[ b](/gdd/rules/Warfare-and-Sieges)\n')
+})
+
+test('renamed headings expose their safe canonical and old public fragments once', () => {
+  const document = { domain: 'technology', content: [{ kind: 'heading', depth: 2, anchor: 'original-heading', publicAnchors: ['original-heading', 'previous-title'], text: { ko: '새 제목', en: 'New title' } }] }
+  for (const locale of ['ko', 'en']) {
+    const markdown = renderLoreMarkdown(document, locale)
+    assert.equal((markdown.match(/id="original-heading"/g) ?? []).length, 1)
+    assert.equal((markdown.match(/id="previous-title"/g) ?? []).length, 1)
+  }
+  document.content[0].anchor = 'unsafe" onclick="x'
+  assert.throws(() => renderLoreMarkdown(document, 'ko'), /unsafe public anchor/)
+})
+
+test('publication removes only the h1 title after leading canonical aliases', () => {
+  const source = renderLoreMarkdown({ domain: 'technology', content: [
+    { kind: 'heading', depth: 1, anchor: 'canonical-title', text: { ko: '새 표제' } },
+    { kind: 'paragraph', anchor: 'body', text: { ko: '본문' } },
+    { kind: 'heading', depth: 2, anchor: 'section', text: { ko: '절 제목' } },
+  ] }, 'ko')
+  const published = source.replace(/^#\s+.+\n+/m, '')
+  assert.ok(published.includes('<a id="canonical-title"></a>'))
+  assert.ok(!published.includes('# 새 표제'))
+  assert.ok(published.includes('## 절 제목'))
+  assert.deepEqual(parse(published).children.filter((block) => block.type === 'heading' || block.type === 'paragraph' && block.children.some((child) => child.type === 'text')).map(toString), ['본문', '절 제목'])
+})
+
+test('technology narrative retains a former heading canonical fragment without visible markup text', () => {
+  const source = { domain: 'technology', content: [{ kind: 'paragraph', anchor: 'original-section', text: { ko: '기체가 명령을 반복한다.', en: 'The chassis repeats its order.' } }] }
+  for (const locale of ['ko', 'en']) {
+    const markdown = renderLoreMarkdown(source, locale)
+    const blocks = parse(markdown).children
+    assert.equal(blocks[0].children[0].value, '<a id="original-section">')
+    assert.equal(toString(blocks[1]), source.content[0].text[locale])
+  }
+})
+
+test('paragraph public aliases retain semantic pointers once in both locales', () => {
+  const source = { domain: 'factions', content: [{ kind: 'paragraph', anchor: 'election-p1', publicAnchors: ['election-p1', 'election-p2'], text: { ko: '선출과 열쇠', en: 'Election and keys' } }] }
+  for (const locale of ['ko', 'en']) {
+    const markdown = renderLoreMarkdown(source, locale)
+    assert.equal((markdown.match(/id="election-p1"/g) ?? []).length, 1)
+    assert.equal((markdown.match(/id="election-p2"/g) ?? []).length, 1)
+    assert.equal(toString(parse(markdown).children[1]), source.content[0].text[locale])
+  }
+})
+
+test('merged bibliography lists expose explicitly authored old public anchors', () => {
+  const source = { domain: 'technology', content: [{ kind: 'list', anchor: '연결-list1', publicAnchors: ['출처-list1'], items: [{ ko: '관련 자료', en: 'Related source' }] }] }
+  for (const locale of ['ko', 'en']) {
+    const markdown = renderLoreMarkdown(source, locale)
+    assert.equal((markdown.match(/id="출처-list1"/g) ?? []).length, 1)
+    assert.equal(parse(markdown).children[1].type, 'list')
+    assert.equal(toString(parse(markdown).children[1]), source.content[0].items[0][locale])
+  }
 })
 
 test('an authored compatibility anchor remains separate from a renamed visible heading', () => {
@@ -190,7 +246,7 @@ test('public aliases render once in both locales without changing ordinary headi
     document.content[1].publicAnchors = ['g01e01']
   }
   const legacy = { domain: 'bestiary', content: [{ kind: 'heading', depth: 2, anchor: 'entry', text: { ko: '새 이름' } }] }
-  assert.equal(renderLoreMarkdown(legacy, 'ko'), '## 새 이름\n')
+  assert.equal(renderLoreMarkdown(legacy, 'ko'), '<a id="entry"></a>\n\n## 새 이름\n')
   document.content[1].publicAnchors = ['bad" onclick="x']
   assert.throws(() => renderLoreMarkdown(document, 'ko'), /unsafe public anchor/)
 })

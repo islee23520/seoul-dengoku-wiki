@@ -3,7 +3,7 @@
 // enter it through this renderer instead of hand-kept .md files.
 import { posix } from 'node:path'
 
-const headingId = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
+export const headingId = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
 
 const leafRuns = (leaf) => (typeof leaf === 'string' ? [{ text: leaf }] : leaf)
 
@@ -33,8 +33,7 @@ function renderNode(node, locale, context) {
   switch (node.kind) {
     case 'heading': {
       const heading = `${'#'.repeat(node.depth)} ${renderLeaf(node.text[locale], context)}`
-      const legacy = /-xt0[1-5]-/u.test(node.anchor ?? '') ? [node.anchor] : []
-      const aliases = [...legacy, ...(node.publicAnchors ?? [])]
+      const aliases = [...new Set([node.anchor, ...(node.publicAnchors ?? [])])]
       const natural = headingId(leafRuns(node.text[locale]).map((run) => run.text).join(''))
       const markup = aliases.filter((alias) => alias !== natural && !context.ids.has(alias)).map((alias) => {
         if (!/^[\p{L}\p{N}_-]+$/u.test(alias)) throw new Error(`${node.anchor}: unsafe public anchor ${alias}`)
@@ -74,6 +73,19 @@ export function renderLoreMarkdown(document, locale, targetFile = (domain, slug)
   }
   const ids = new Set(document.content.filter((node) => node.kind === 'heading')
     .map((node) => headingId(leafRuns(node.text[locale]).map((run) => run.text).join(''))))
+  for (const node of document.content.filter((node) => node.kind === 'paragraph')) {
+    const value = leafRuns(node.text[locale]).map((run) => run.text).join('')
+    for (const match of value.matchAll(/<a id="([\p{L}\p{N}_-]+)"><\/a>/gu)) ids.add(match[1])
+  }
   const context = { fromDir, targetFile, ids }
-  return `${document.content.map((node) => renderNode(node, locale, context)).join('\n\n')}\n`
+  return `${document.content.map((node) => {
+    const rendered = renderNode(node, locale, context)
+    if (!(node.publicAnchors?.length && node.kind !== 'heading' || node.kind === 'paragraph' && document.domain === 'technology' && !/(?:-p\d|-list\d|-table\d|paragraph|label)/u.test(node.anchor))) return rendered
+    const markup = [...new Set([node.anchor, ...(node.publicAnchors ?? [])])].filter((alias) => !context.ids.has(alias)).map((alias) => {
+      if (!/^[\p{L}\p{N}_-]+$/u.test(alias)) throw new Error(`${node.anchor}: unsafe public anchor ${alias}`)
+      context.ids.add(alias)
+      return `<a id="${alias}"></a>`
+    })
+    return markup.length ? `${markup.join('\n')}\n\n${rendered}` : rendered
+  }).join('\n\n')}\n`
 }

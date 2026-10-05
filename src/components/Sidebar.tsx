@@ -1,7 +1,17 @@
 import { Link, useLocation } from 'react-router-dom'
-import { CategoryTree } from '@seoul-dengoku/shared-web-ui'
 import { wikiLinks } from '../wikiLinks'
-import { sharedCategories, wikiAnchorHref } from '../sharedCategories'
+import { categoryHref } from '../sharedCategories'
+import { categoryIndex, type WikiCategory } from '../generated/categoryIndex'
+
+function CategoryBranch({ category, path, current }: { category: WikiCategory; path: string[]; current: string }) {
+  const href = categoryHref(path)
+  const contents = <>
+    {category.children.map((child) => <CategoryBranch key={child.id} category={child} path={[...path, child.id]} current={current} />)}
+    {category.entities.map((entity) => <Link key={entity.id} to={entity.route}>{entity.title}</Link>)}
+    {category.children.length === 0 && category.entities.length === 0 ? category.documents.map((document) => <Link key={document.route} to={document.route}>{document.title}</Link>) : null}
+  </>
+  return <details open={current.startsWith(href)}><summary>{category.label}</summary><Link to={href}>전체 보기</Link><div style={{ paddingInlineStart: '1rem' }}>{contents}</div></details>
+}
 
 type SidebarItem = { label: string; to: string; spa?: boolean; ext?: boolean }
 
@@ -40,7 +50,7 @@ export default function SidebarNavigation() {
       ))}
       <div className="wiki-nav-section wiki-nav-tree">
         <h5>문서 분류</h5>
-        <CategoryTree items={sharedCategories} currentHref={pathname} emptyLabel="문서 없음" resolveHref={wikiAnchorHref} />
+        {categoryIndex.categories.map((category) => <CategoryBranch key={category.id} category={category} path={[category.id]} current={pathname} />)}
       </div>
     </>
   )

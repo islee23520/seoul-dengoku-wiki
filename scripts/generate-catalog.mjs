@@ -10,7 +10,7 @@ import { atlasPeopleContext } from './atlas-people-context.mjs'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { publicHouseContent } from './public-house-content.mjs'
 import { buildWorldIndex } from './build-world-index.mjs'
-import { categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
+import { categoryEntities, categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { latestUpdates } from './update-history.mjs'
 import { wikiPublicationManifest } from './publication-manifest.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
@@ -137,7 +137,7 @@ const rewriteRelativeHref = (href, domain, routeBySlug) => {
 
 const normalizeMarkdown = (markdown, domain, routeBySlug) => stripProjectionHeader(markdown
   .replace(/^---\n[\s\S]*?\n---\n/, '')
-  .replace(/^#\s+.+\n+/, '')
+  .replace(/^#\s+.+\n+/m, '')
   .replace(/<InfoBox[\s\S]*?<\/InfoBox>/g, '')
   .replace(/<NavBox[\s\S]*?<\/NavBox>/g, ''))
   .replace(/\]\(([^)]+)\)/g, (_full, href) => `](${rewriteRelativeHref(href, domain, routeBySlug)})`)
@@ -311,9 +311,11 @@ const registeredIndex = categoryIndex(
   documents
     .map((document) => ({ slug: document.slug, route: document.route, title: document.title, categories: document.categories })),
   categoryRegistry,
+  categoryEntities(jsonPages.map((page) => ({ ...page, path: relative(repoRoot, page.path) })), documents),
 )
 await writeFile(resolve(generatedRoot, 'categoryIndex.ts'), `export type CategoryDocument = { readonly slug: string; readonly route: string; readonly title: string }
-export type WikiCategory = { readonly id: string; readonly label: string; readonly summary: string; readonly documents: readonly CategoryDocument[] }
+export type CategoryEntity = { readonly id: string; readonly title: string; readonly route: string; readonly source: string; readonly kind?: string; readonly description?: string; readonly descriptionRange?: { readonly start: number; readonly end: number; readonly unit: string }; readonly references?: readonly string[] }
+export type WikiCategory = { readonly id: string; readonly label: string; readonly summary: string; readonly documents: readonly CategoryDocument[]; readonly children: readonly WikiCategory[]; readonly entities: readonly CategoryEntity[] }
 
 export const categoryIndex = ${JSON.stringify(registeredIndex, null, 2)} as const satisfies { readonly categories: readonly WikiCategory[]; readonly uncategorized: readonly CategoryDocument[] }
 `)
