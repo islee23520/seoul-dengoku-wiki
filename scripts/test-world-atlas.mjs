@@ -15,6 +15,12 @@ import { projectionsFromAtlas } from './world-atlas-render.mjs'
 import { verifyAtlasPeople } from './world-atlas-verify.mjs'
 import { atlasPeopleContext } from './atlas-people-context.mjs'
 import { fromMarkdown } from 'mdast-util-from-markdown'
+import { gfmFromMarkdown } from 'mdast-util-gfm'
+import { gfm } from 'micromark-extension-gfm'
+import { createElement } from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
+import { DocumentContent, fromWikiBlocks } from '@seoul-dengoku/document-renderer'
+import { JSDOM } from 'jsdom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { localizedDocuments } from './localized-documents.mjs'
 import { publicHouseContent } from './public-house-content.mjs'
@@ -86,13 +92,22 @@ test('published house bodies omit private source classification in both locales'
     assert.equal(page.blocks.filter((node) => node.type === 'heading' && node.depth === 3).length, houses.length, folder)
     const expected = structuredClone(projection)
     for (const node of expected.content) if (node.kind === 'list' && node.items[2]?.en === 'Source layer: original-fiction' && node.items[2]?.ko === '출처층: original-fiction') node.items.splice(2, 1)
-    const expectedBlocks = fromMarkdown(renderLoreMarkdown(expected, locale)).children.slice(1)
+    // Publication removes the title line, not the first AST block: canonical aliases precede H1.
+    const expectedBlocks = fromMarkdown(renderLoreMarkdown(expected, locale).replace(/^#\s+.+\n+/m, ''), {
+      extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()],
+    }).children
     assert.equal(page.blocks.length, expectedBlocks.length, folder)
     const withoutPositions = (node) => {
       const { position: _position, ...rest } = node
       return { ...rest, ...(node.children ? { children: node.children.map(withoutPositions) } : {}) }
     }
     assert.deepEqual(page.blocks, expectedBlocks.map(withoutPositions), folder)
+    const html = renderToStaticMarkup(createElement(DocumentContent, { content: fromWikiBlocks(page.blocks), locale }))
+    const rendered = new JSDOM(html).window.document
+    assert.equal(page.route, locale === 'ko' ? '/world/Operating-Houses' : '/en/world/Operating-Houses')
+    for (const node of projection.content.filter((node) => node.kind === 'heading')) {
+      assert.equal(rendered.querySelectorAll(`[id="${node.anchor}"]`).length, 1, `${page.route}#${node.anchor}`)
+    }
     const prose = houses.flatMap((house) => house.prose.map((node) => node.text[locale]))
     const acts = houses.flatMap((house) => house.arcs.map((arc) => arc.summary[locale]))
     assert.equal(prose.length, 141)
@@ -109,6 +124,7 @@ test('authored code and quoted source-layer wording survives public catalog norm
   document.content.push({ kind: 'code', anchor: 'authored-code', language: 'text', text: { en: '- Source layer: original-fiction', ko: '- 출처층: original-fiction' } })
   document.content.push({ kind: 'quote', anchor: 'authored-quote', text: { en: 'Source layer: original-fiction', ko: '출처층: original-fiction' } })
   document.content.push({ kind: 'paragraph', anchor: 'authored-link', text: { en: [{ text: 'House detail', link: { domain: 'factions', slug: 'Sixteen-States' } }], ko: [{ text: '조직 상세', link: { domain: 'factions', slug: 'Sixteen-States' } }] } })
+  document.content.push({ kind: 'paragraph', anchor: 'authored-html', text: { en: '<a id="authored-html"></a>', ko: '<a id="authored-html"></a>' } })
   // When: the localized document renderer emits both authored nodes.
   const localized = localizedDocuments({ domain: 'world', slug: document.slug, json: document, renderJson: (value, locale) => renderLoreMarkdown(publicHouseContent(value), locale), titleFallback: () => document.slug })
   // Then: legitimate authored text remains visible to the Markdown consumer.
@@ -119,6 +135,16 @@ test('authored code and quoted source-layer wording survives public catalog norm
     assert.ok(item.markdown.includes('(factions/Sixteen-States.md)'), item.locale)
     assert.equal(fromMarkdown(item.markdown).children.filter((node) => node.type === 'code').length, 1, item.locale)
     assert.equal(fromMarkdown(item.markdown).children.filter((node) => node.type === 'blockquote').length, 1, item.locale)
+    const parse = (markdown) => fromMarkdown(markdown, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] }).children
+    const complete = parse(item.markdown)
+    const published = parse(item.markdown.replace(/^#\s+.+\n+/m, ''))
+    const withoutPositions = (node) => {
+      const { position: _position, ...rest } = node
+      return { ...rest, ...(node.children ? { children: node.children.map(withoutPositions) } : {}) }
+    }
+    assert.deepEqual(published.map(withoutPositions), complete.filter((node) => !(node.type === 'heading' && node.depth === 1)).map(withoutPositions), item.locale)
+    assert.ok(item.markdown.includes('<a id="authored-html"></a>'), item.locale)
+    assert.equal(publicHouseContent(document).content.flatMap((node) => node.items ?? []).filter((item) => item.en === 'Source layer: original-fiction').length, 0)
   }
 })
 
