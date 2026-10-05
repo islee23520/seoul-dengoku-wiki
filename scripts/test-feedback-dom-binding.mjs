@@ -1,14 +1,17 @@
 // @vitest-environment jsdom
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { test } from 'vitest'
-import { createElement } from 'react'
+import { test, vi } from 'vitest'
+import { createElement, act } from 'react'
+import { createRoot } from 'react-dom/client'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { PersonDetailContent, PersonSections } from '../src/pages/PersonDetailPage.tsx'
 import { personFeedbackRecord } from './feedback-source-catalog.mjs'
 import { bindFeedbackLeaves } from '../src/feedbackBinding.ts'
 import { captureFeedbackAnchor } from '../src/feedbackSelection.ts'
+import FeedbackComposer, { FeedbackObjections } from '../src/components/FeedbackComposer.tsx'
+import { FeedbackApiError, ownFeedbackObjections, submitFeedbackObjection, reviewFeedbackObjections, transitionFeedbackObjection } from '../src/feedbackApi.ts'
 
 const segment = (path) => [{ kind: 'literal', path, start: 0, end: 4, unit: 'unicode-code-point', textStart: 0, textEnd: 4 }]
 const documentInfo = {
@@ -18,6 +21,92 @@ const documentInfo = {
     { leafId: 'item:1', blockAnchor: 'list', blockKind: 'list', text: 'same', sourceSegments: segment('/content/0/items/1/ko') },
   ],
 }
+
+const objection = { id: 9, targetId: 71, reason: '선택 문장의 처리에 이의가 있습니다.', status: 'open', createdAt: '2026-10-05T00:00:00Z', updatedAt: '2026-10-05T00:00:00Z', reviewReason: null }
+const json = (value, status = 200) => new Response(JSON.stringify(value), { status, headers: { 'content-type': 'application/json' } })
+const click = (host, label) => {
+  const button = [...host.querySelectorAll('button')].find((element) => element.textContent === label)
+  assert.ok(button, label)
+  button.dispatchEvent(new MouseEvent('click', { bubbles: true }))
+}
+const input = (textarea, value) => {
+  Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value').set.call(textarea, value)
+  textarea.dispatchEvent(new Event('input', { bubbles: true }))
+}
+
+test('captured duplicate occurrence submits its anchor then objects to the server-confirmed target with fresh CSRF', async () => {
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  const article = document.createElement('div')
+  article.innerHTML = '<ul><li>same</li><li>same</li></ul>'
+  bindFeedbackLeaves(article, documentInfo.selector, documentInfo.leaves).forEach(([element, id]) => { element.dataset.feedbackLeaf = id })
+  const range = document.createRange(); range.selectNodeContents(article.querySelectorAll('li')[1])
+  const selection = vi.spyOn(window, 'getSelection').mockReturnValue({ rangeCount: 1, isCollapsed: false, getRangeAt: () => range })
+  localStorage.removeItem(`wiki-feedback-draft.v1:${documentInfo.route}`)
+  let sessionCount = 0
+  const fetcher = vi.spyOn(globalThis, 'fetch').mockImplementation(async (url) => {
+    if (url.endsWith('/session')) return json({ csrfToken: `csrf-${++sessionCount}` })
+    if (url.endsWith('/objections')) return json(objection, 201)
+    assert.equal(url, '/api/feedback/submissions')
+    return json({ id: 71, status: 'received' }, 201)
+  })
+  const host = document.createElement('div'), root = createRoot(host)
+  try {
+    await act(async () => root.render(createElement(MemoryRouter, { initialEntries: [documentInfo.route] }, createElement(FeedbackComposer, { rootRef: { current: article }, documentInfo, locale: 'ko' }))))
+    await act(async () => click(host, '선택 문장 제보'))
+    await act(async () => input(host.querySelector('textarea'), '검토 요청'))
+    await act(async () => host.querySelector('form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })))
+    const submitted = JSON.parse(fetcher.mock.calls[1][1].body)
+    assert.equal(submitted.anchor.selections[0].leafId, 'item:1')
+    assert.equal(submitted.anchor.selections[0].sourceSpans[0].path, '/content/0/items/1/ko')
+    assert.equal(host.querySelector('.feedback-preview').textContent, 'same')
+    await act(async () => click(host, '이의 제기하기'))
+    await act(async () => input(host.querySelector('textarea'), objection.reason))
+    await act(async () => host.querySelector('form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })))
+    assert.equal(fetcher.mock.calls[2][0], '/api/feedback/auth/session')
+    const [url, init] = fetcher.mock.calls[3]
+    assert.equal(url, '/api/feedback/submissions/71/objections')
+    assert.deepEqual(JSON.parse(init.body), { reason: objection.reason })
+    assert.equal(init.headers['x-csrf-token'], 'csrf-2')
+    assert.equal(init.credentials, 'include')
+    assert.equal(init.redirect, 'error')
+    assert.match(host.textContent, /#9 · 접수/)
+    assert.equal(article.querySelectorAll('mark, u').length, 0)
+  } finally { await act(async () => root.unmount()); fetcher.mockRestore(); selection.mockRestore(); localStorage.removeItem(`wiki-feedback-draft.v1:${documentInfo.route}`) }
+})
+
+test('persisted objection states and reviewer reasons reload from the owner endpoint', async () => {
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  const records = [objection, { ...objection, id: 10, status: 'resolved', reviewReason: '수정 완료' }, { ...objection, id: 11, status: 'rejected', reviewReason: '원문 유지' }]
+  const fetcher = vi.spyOn(globalThis, 'fetch').mockResolvedValue(json({ objections: records }))
+  const host = document.createElement('div'), root = createRoot(host)
+  try {
+    await act(async () => root.render(createElement(FeedbackObjections, { targetId: 71, loadHistory: true })))
+    assert.equal(fetcher.mock.calls[0][0], '/api/feedback/submissions/71/objections')
+    assert.match(host.textContent, /#9 · 접수/)
+    assert.match(host.textContent, /#10 · 해결/)
+    assert.match(host.textContent, /#11 · 반려/)
+    assert.match(host.textContent, /수정 완료/)
+    assert.match(host.textContent, /원문 유지/)
+  } finally { await act(async () => root.unmount()); fetcher.mockRestore() }
+})
+
+test('objection APIs reject invalid reasons, foreign targets and malformed records; reviewer transition uses fresh CSRF', async () => {
+  const unused = vi.fn()
+  for (const reason of ['', '   ', 'x'.repeat(10001)]) await assert.rejects(() => submitFeedbackObjection(71, reason, unused), FeedbackApiError)
+  await assert.rejects(() => transitionFeedbackObjection(9, 'resolved', '', unused), FeedbackApiError)
+  assert.equal(unused.mock.calls.length, 0)
+  await assert.rejects(() => ownFeedbackObjections(71, async () => json({ objections: [{ ...objection, targetId: 72 }] })), FeedbackApiError)
+  await assert.rejects(() => ownFeedbackObjections(71, async () => json({ objections: [{ ...objection, status: 'unknown' }] })), FeedbackApiError)
+  const redacted = { ...objection, reason: null, status: 'resolved', reviewReason: null }
+  assert.deepEqual(await ownFeedbackObjections(71, async () => json({ objections: [redacted] })), [redacted])
+  assert.deepEqual(await reviewFeedbackObjections(async () => json({ objections: [objection] })), [objection])
+  const fetcher = vi.fn(async (url) => url.endsWith('/session') ? json({ csrfToken: 'review-csrf' }) : json({ ...objection, status: 'resolved', reviewReason: '수정 완료' }))
+  const result = await transitionFeedbackObjection(9, 'resolved', '수정 완료', fetcher)
+  assert.equal(result.status, 'resolved')
+  assert.equal(fetcher.mock.calls[1][0], '/api/feedback/review/objections/9/transitions')
+  assert.equal(fetcher.mock.calls[1][1].headers['x-csrf-token'], 'review-csrf')
+  assert.deepEqual(JSON.parse(fetcher.mock.calls[1][1].body), { status: 'resolved', reason: '수정 완료' })
+})
 
 test('every nonempty renderer-selected person section has ordered source-bound targets', async () => {
   const catalog = JSON.parse(await readFile('src/generated-private/feedback-selectable-views.ko.json', 'utf8'))

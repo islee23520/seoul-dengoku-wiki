@@ -4,6 +4,8 @@ export const feedbackReasons = ['어색한 표현', '뜻이 불명확', '설정�
 export type FeedbackReason = typeof feedbackReasons[number]
 export type FeedbackSubmission = { anchor: FeedbackAnchor; body: string; reason: FeedbackReason; alternative?: string }
 export type FeedbackRecord = { id: number; status: string }
+export type FeedbackObjectionStatus = 'open' | 'resolved' | 'rejected'
+export type FeedbackObjection = { readonly id: number; readonly targetId: number; readonly reason: string | null; readonly status: FeedbackObjectionStatus; readonly createdAt: string; readonly updatedAt: string; readonly reviewReason: string | null }
 export type FeedbackStatus = 'received' | 'reviewing' | 'applied' | 'rejected' | 'needs-information' | 'redacted'
 export type FeedbackIdentity = { readonly githubId: string; readonly login: string }
 export type OwnFeedback = { readonly id: number; readonly documentId: string; readonly status: FeedbackStatus; readonly createdAt: string }
@@ -16,6 +18,10 @@ const isObject = (value: unknown): value is Record<string, unknown> => value !==
 const isStatus = (value: unknown): value is FeedbackStatus => typeof value === 'string' && statuses.some((status) => status === value)
 const isReason = (value: unknown): value is FeedbackReason => typeof value === 'string' && feedbackReasons.some((reason) => reason === value)
 const isId = (value: unknown): value is number => typeof value === 'number' && Number.isSafeInteger(value) && value > 0
+const isObjectionReason = (value: unknown): value is string => typeof value === 'string' && value.trim().length > 0 && value.length <= 10000
+const isObjection = (value: unknown): value is FeedbackObjection => isObject(value) && isId(value.id) && isId(value.targetId) && (value.reason === null || isObjectionReason(value.reason))
+  && (value.status === 'open' || value.status === 'resolved' || value.status === 'rejected') && typeof value.createdAt === 'string' && typeof value.updatedAt === 'string'
+  && (value.reviewReason === null || isObjectionReason(value.reviewReason))
 const isOwnFeedback = (value: unknown): value is OwnFeedback & Record<string, unknown> => isObject(value) && isId(value.id) && typeof value.documentId === 'string' && isStatus(value.status) && typeof value.createdAt === 'string'
 const isEvent = (value: unknown): value is FeedbackEvent => isObject(value) && (value.actorKind === 'submitter' || value.actorKind === 'reviewer') && (value.action === 'submitted' || value.action === 'transitioned' || value.action === 'redacted') && isStatus(value.status) && (value.reason === null || typeof value.reason === 'string') && typeof value.at === 'string'
 const isDetail = (value: unknown): value is FeedbackDetail => {
@@ -90,6 +96,46 @@ export async function feedbackSession(fetcher: typeof fetch = fetch, signal?: Ab
   if (!response.ok) throw responseError(response, value, response.status === 401 ? '제출하려면 GitHub 로그인이 필요합니다.' : '로그인 상태를 확인하지 못했습니다.')
   if (!isObject(value) || typeof value.csrfToken !== 'string' || !value.csrfToken) throw new FeedbackApiError(response.status, '로그인 상태를 확인하지 못했습니다.')
   return value.csrfToken
+}
+
+export async function ownFeedbackObjections(targetId: number, fetcher: typeof fetch = fetch, signal?: AbortSignal): Promise<readonly FeedbackObjection[]> {
+  if (!isId(targetId)) throw new FeedbackApiError(400, '제보 번호를 확인해 주세요.')
+  return objectionList(`/api/feedback/submissions/${targetId}/objections`, fetcher, signal, targetId)
+}
+
+export async function reviewFeedbackObjections(fetcher: typeof fetch = fetch, signal?: AbortSignal): Promise<readonly FeedbackObjection[]> {
+  return objectionList('/api/feedback/review/objections', fetcher, signal)
+}
+
+async function objectionList(url: string, fetcher: typeof fetch, signal?: AbortSignal, targetId?: number): Promise<readonly FeedbackObjection[]> {
+  const response = await fetcher(url, { method: 'GET', credentials: 'include', headers: { accept: 'application/json' }, signal })
+  const value = await jsonResponse(response)
+  if (!response.ok) throw responseError(response, value, '이의 제기 내역을 불러오지 못했습니다.')
+  if (!isObject(value) || !Array.isArray(value.objections) || !value.objections.every((row: unknown) => isObjection(row) && (targetId === undefined || row.targetId === targetId))) throw new FeedbackApiError(response.status, '이의 제기 응답을 확인할 수 없습니다.')
+  return value.objections
+}
+
+export async function submitFeedbackObjection(targetId: number, reason: string, fetcher: typeof fetch = fetch, signal?: AbortSignal): Promise<FeedbackObjection> {
+  if (!isId(targetId) || !isObjectionReason(reason)) throw new FeedbackApiError(400, '이의 제기 이유를 1~10000자로 입력해 주세요.')
+  const value = await objectionWrite(`/api/feedback/submissions/${targetId}/objections`, { reason }, fetcher, signal, 201)
+  if (value.targetId !== targetId || value.status !== 'open') throw new FeedbackApiError(201, '이의 제기 접수를 확인할 수 없습니다.')
+  return value
+}
+
+export async function transitionFeedbackObjection(id: number, status: 'resolved' | 'rejected', reason: string, fetcher: typeof fetch = fetch, signal?: AbortSignal): Promise<FeedbackObjection> {
+  if (!isId(id) || (status !== 'resolved' && status !== 'rejected') || !isObjectionReason(reason)) throw new FeedbackApiError(400, '처리 상태와 이유를 확인해 주세요.')
+  const value = await objectionWrite(`/api/feedback/review/objections/${id}/transitions`, { status, reason }, fetcher, signal, 200)
+  if (value.id !== id || value.status !== status) throw new FeedbackApiError(200, '이의 제기 처리 응답을 확인할 수 없습니다.')
+  return value
+}
+
+async function objectionWrite(url: string, payload: { reason: string; status?: 'resolved' | 'rejected' }, fetcher: typeof fetch, signal: AbortSignal | undefined, expectedStatus: number): Promise<FeedbackObjection> {
+  const csrfToken = await feedbackSession(fetcher, signal)
+  const response = await fetcher(url, { method: 'POST', credentials: 'include', redirect: 'error', headers: { accept: 'application/json', 'content-type': 'application/json', 'x-csrf-token': csrfToken }, body: JSON.stringify(payload), signal })
+  const value = await jsonResponse(response)
+  if (!response.ok) throw responseError(response, value, '이의 제기를 제출하지 못했습니다.')
+  if (response.status !== expectedStatus || !isObjection(value)) throw new FeedbackApiError(response.status, '이의 제기 응답을 확인할 수 없습니다.')
+  return value
 }
 
 export async function submitFeedback(payload: FeedbackSubmission, options: { idempotencyKey: string; fetcher?: typeof fetch; signal?: AbortSignal }): Promise<FeedbackRecord> {
