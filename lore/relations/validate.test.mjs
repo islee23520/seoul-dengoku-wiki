@@ -25,12 +25,13 @@ test("approved S02/S03 retainers resolve to seven owner courts from their comman
     ["K041", "K032", 30], ["K047", "K037", 42], ["K049", "K033", 46],
     ["K068", "K058", 52], ["K069", "K060", 54], ["K071", "K060", 58],
     ["K073", "K061", 62], ["K074", "K062", 64], ["K075", "K061", 66],
+    ["K425", "K998", 417], ["K441", "K998", 418],
   ];
   assert.deepEqual(dataset.config.directRetainers.slice(37), expected.map(([personId, liegePersonId, sourceRow]) =>
     ({ personId, liegePersonId, courtId: `court:${liegePersonId}`, sourceRow })));
   assert.deepEqual(dataset.config.courts.filter(court => ["S02", "S03"].includes(court.stateId)),
     [["K032", "S02"], ["K037", "S02"], ["K033", "S02"], ["K058", "S03"],
-      ["K060", "S03"], ["K061", "S03"], ["K062", "S03"]]
+      ["K060", "S03"], ["K061", "S03"], ["K062", "S03"], ["K998", "S02"]]
       .map(([ownerPersonId, stateId]) => ({ id: `court:${ownerPersonId}`, ownerPersonId, stateId })));
   assert.deepEqual(validate(dataset), []);
   const corrupt = loadDataset();
@@ -116,6 +117,7 @@ test("explicit S01 memberships reuse one immediate liege and preserve K003's own
   assert.deepEqual(courts.slice(10), [
     { id: "court:K001", ownerPersonId: "K001", stateId: "S01" },
     { id: "court:K009", ownerPersonId: "K009", stateId: "S01" },
+    { id: "court:K998", ownerPersonId: "K998", stateId: "S02" },
   ]);
   for (const personId of ["K003", "K004", "K005"]) {
     assert.equal(ownerLieges.edges.filter(row => row.personId === personId).length, 1);

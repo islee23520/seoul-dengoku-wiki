@@ -12,6 +12,262 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-조아원",
   "detailRoute": "/people/person-0708",
+  "birthDate": "2064-06-25",
+  "birthday": "06-25",
+  "age": 62,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/457",
+    "lore/characters/Cast-State-13.json#/content/459",
+    "lore/characters/Cast-State-13.json#/content/460"
+  ],
+  "familyTree": {
+    "personId": "K708",
+    "nodes": [
+      {
+        "id": "K708",
+        "personId": "K708",
+        "kind": "person",
+        "name": "조아원",
+        "birthDate": "2064-06-25",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K708"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-조아원-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0708"
+      },
+      {
+        "id": "FH-K708-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "조재섭",
+        "birthDate": "2034-06-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "조재섭은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-조아원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K708-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조재성",
+        "birthDate": "2004-06-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조재성은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-조아원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K708-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박도석",
+        "birthDate": "2034-06-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2072,
+            "summary": "박도석은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-조아원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K708-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이재솔",
+        "birthDate": "2004-06-25",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이재솔은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-조아원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K708-P-01:K708:biological",
+        "from": "FH-K708-P-01",
+        "to": "K708",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K708-P-02:FH-K708-P-01:biological",
+        "from": "FH-K708-P-02",
+        "to": "FH-K708-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K708-M-01:K708:biological",
+        "from": "FH-K708-M-01",
+        "to": "K708",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K708-M-02:FH-K708-M-01:biological",
+        "from": "FH-K708-M-02",
+        "to": "FH-K708-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-조아원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K708",
     "personId": "person-0708",
@@ -155,7 +411,14 @@
     "Cast-State-13"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "조아원",
+        "type": "계약",
+        "to": "수효은",
+        "basis": "조아원은 관리하는 약재의 상태와 진료 중 필요한 양을 수효은에게 알린다. 수효은은 건조실·진료소 출력 일지를 확인해 보관 전력 공백이 약재 손상으로 이어진 곳을 찾는다."
+      }
+    ],
     "incoming": []
   }
 }

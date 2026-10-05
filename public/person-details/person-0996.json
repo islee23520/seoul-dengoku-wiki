@@ -12,6 +12,262 @@
   "stateName": "흰십자단",
   "sourceRoute": "/world/Cast-State-13#인물-남빛원",
   "detailRoute": "/people/person-0996",
+  "birthDate": "2075-04-06",
+  "birthday": "04-06",
+  "age": 51,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-13.json#/content/655",
+    "lore/characters/Cast-State-13.json#/content/657",
+    "lore/characters/Cast-State-13.json#/content/658"
+  ],
+  "familyTree": {
+    "personId": "K996",
+    "nodes": [
+      {
+        "id": "K996",
+        "personId": "K996",
+        "kind": "person",
+        "name": "남빛원",
+        "birthDate": "2075-04-06",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K996"
+          },
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "생업: 약재 관리 기록·당직 열쇠 인계",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-남빛원-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0996"
+      },
+      {
+        "id": "FH-K996-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "남현현",
+        "birthDate": "2045-04-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2083,
+            "summary": "남현현은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-남빛원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K996-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "남현영",
+        "birthDate": "2015-04-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "남현영은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-남빛원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K996-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박서원",
+        "birthDate": "2045-04-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2083,
+            "summary": "박서원은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-남빛원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K996-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "이서원",
+        "birthDate": "2015-04-06",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "이서원은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-13.json",
+                "anchor": "인물-남빛원-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K996-P-01:K996:biological",
+        "from": "FH-K996-P-01",
+        "to": "K996",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K996-P-02:FH-K996-P-01:biological",
+        "from": "FH-K996-P-02",
+        "to": "FH-K996-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K996-M-01:K996:biological",
+        "from": "FH-K996-M-01",
+        "to": "K996",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K996-M-02:FH-K996-M-01:biological",
+        "from": "FH-K996-M-02",
+        "to": "FH-K996-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-13.json",
+            "anchor": "인물-남빛원-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K996",
     "personId": "person-0996",
@@ -155,7 +411,14 @@
     "Cast-State-13"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "남빛원",
+        "type": "계약",
+        "to": "원미루",
+        "basis": "남빛원은 봉인한 의심 약재를 원미루에게 관리 기록과 함께 넘긴다. 원미루는 캡슐 인장·표본을 살펴 경로를 조사하고 미확인 산지는 점선으로 남긴다."
+      }
+    ],
     "incoming": []
   }
 }

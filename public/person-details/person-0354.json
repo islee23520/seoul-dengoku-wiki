@@ -12,6 +12,261 @@
   "stateName": "아관사",
   "sourceRoute": "/world/Cast-State-14#인물-심가은",
   "detailRoute": "/people/person-0354",
+  "birthDate": "2081-09-16",
+  "birthday": "09-16",
+  "age": 45,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-14.json#/content/94",
+    "lore/characters/Cast-State-14.json#/content/96"
+  ],
+  "familyTree": {
+    "personId": "K353",
+    "nodes": [
+      {
+        "id": "K353",
+        "personId": "K353",
+        "kind": "person",
+        "name": "심가은",
+        "birthDate": "2081-09-16",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K353"
+          },
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 아차산관문사령부 교량 척후대장 자리는 야간 무단 도하 적발로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심가은-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0354"
+      },
+      {
+        "id": "FH-K353-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "심승호",
+        "birthDate": "2051-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "심승호는 암사 경비 초소에서 목격·추정 구분 기록·위시 목격 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심가은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K353-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "심승민",
+        "birthDate": "2021-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "심승민은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심가은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K353-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "한준우",
+        "birthDate": "2051-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2089,
+            "summary": "한준우는 암사 경비 초소에서 목격·추정 구분 기록·위시 목격 보고 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심가은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K353-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강준윤",
+        "birthDate": "2021-09-16",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강준윤은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-14.json",
+                "anchor": "인물-심가은-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K353-P-01:K353:biological",
+        "from": "FH-K353-P-01",
+        "to": "K353",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K353-P-02:FH-K353-P-01:biological",
+        "from": "FH-K353-P-02",
+        "to": "FH-K353-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K353-M-01:K353:biological",
+        "from": "FH-K353-M-01",
+        "to": "K353",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K353-M-02:FH-K353-M-01:biological",
+        "from": "FH-K353-M-02",
+        "to": "FH-K353-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-14.json",
+            "anchor": "인물-심가은-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K353",
     "personId": "person-0354",
@@ -169,6 +424,24 @@
       }
     ],
     "incoming": [
+      {
+        "from": "민바현",
+        "type": "계약",
+        "to": "심가은",
+        "basis": "민바현은 교량 습격 훈련에서 잘못된 최초 보고를 참관 기록으로 확인해 심가은에게 전한다. 심가은은 목격과 추정을 다른 칸에 나눠 기록해, 훈련의 추정이 실제 교량 위험으로 직보되지 않게 한다."
+      },
+      {
+        "from": "차구환",
+        "type": "계약",
+        "to": "심가은",
+        "basis": "차구환은 정정한 훈련 참관 내용을 심가은에게 전한다. 심가은은 실제 목격과 추정을 따로 기록해 잘못된 최초 보고가 현재 교량 위험으로 올라가지 않게 한다."
+      },
+      {
+        "from": "주가인",
+        "type": "계약",
+        "to": "심가은",
+        "basis": "주가인은 정정한 교량 훈련 보고를 심가은에게 전한다. 심가은은 실제 목격·추정을 따로 기록해 훈련의 추정이 현재 교량 위험으로 직보되지 않게 한다."
+      },
       {
         "from": "동새봄",
         "type": "사제",

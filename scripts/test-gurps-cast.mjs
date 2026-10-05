@@ -23,6 +23,16 @@ test('카드에서 다시 파생한 결과가 커밋된 파일과 바이트 단�
   assert.equal(serialize(build().doc), raw)
 })
 
+test('family history does not grant ancestor training to current diaspora people', () => {
+  const rebuilt = build().doc
+  for (const id of ['K1012', 'K1016']) {
+    const person = find(rebuilt, id)
+    assert.equal(person.attributes.IQ.value, find(doc, id).attributes.IQ.value)
+    const evidence = [...Object.values(person.attributes).flatMap((attribute) => attribute.evidence), ...person.skills.flatMap((skill) => skill.evidence)]
+    assert.ok(evidence.every((entry) => !['/content/9/text/ko', '/content/10/text/ko', '/content/19/text/ko', '/content/20/text/ko'].includes(entry.pointer)))
+  }
+})
+
 test('K001–K1022 1,022명이 발급 순서대로 있고 URL은 values-cast 순번을 따른다', () => {
   assert.equal(doc.people.length, 1022)
   doc.people.forEach((p, i) => assert.equal(p.id, `K${String(i + 1).padStart(3, '0')}`))
@@ -30,18 +40,18 @@ test('K001–K1022 1,022명이 발급 순서대로 있고 URL은 values-cast 순
   assert.equal(find(doc, 'K1009').url, '/people/person-1009')
 })
 
-test('근거 수정 견본: 조재표 210, 신종목 207, 두 사람 모두 주역·강자', () => {
+test('승인 예외: 조재표 330, 신종목 347, 두 사람 모두 주역·강자', () => {
   const jo = find(doc, 'K1003')
   const shin = find(doc, 'K1009')
-  assert.equal(jo.cp.total, 210)
+  assert.equal(jo.cp.total, 330)
   assert.ok(jo.skills.every((skill) => !['Staff', 'Hiking'].includes(skill.name)))
-  assert.equal(shin.cp.total, 207)
+  assert.equal(shin.cp.total, 347)
   assert.equal(jo.band, '주역·강자')
   assert.equal(shin.band, '주역·강자')
   assert.equal(shin.skills.find((s) => s.name.startsWith('Spear')).level, 16)
-  assert.equal(shin.secondary.BasicSpeed, 6.25)
-  assert.equal(jo.secondary.Dodge, 10)
-  assert.equal(shin.secondary.Dodge, 10)
+  assert.equal(shin.secondary.BasicSpeed, 7.25)
+  assert.equal(jo.secondary.Dodge, 11)
+  assert.equal(shin.secondary.Dodge, 11)
 })
 
 test('조재표의 호위 대열 근거 네 곳은 현재 무공 원천의 인용에 결속된다', () => {
@@ -79,7 +89,8 @@ test('Q2 B: 75 CP 미만인 사람이 없고, 모자란 만큼만 미사용 점�
   for (const p of doc.people) {
     assert.ok(p.cp.total >= 75, `${p.id} 총점 ${p.cp.total} < 75`)
     assert.equal(p.cp.spent, spentOf(p), `${p.id} spent`)
-    assert.equal(p.cp.unspent, Math.max(0, 75 - p.cp.spent), `${p.id} unspent`)
+    if (G.APPROVED_EXCEPTIONS[p.id]) assert.equal(p.cp.total, G.APPROVED_EXCEPTIONS[p.id].total)
+    else assert.equal(p.cp.unspent, Math.max(0, 75 - p.cp.spent), `${p.id} unspent`)
     assert.equal(p.cp.total, p.cp.spent + p.cp.unspent, `${p.id} total`)
     assert.notEqual(p.band, '근거 미달', `${p.id} 근거 미달`)
   }
@@ -91,7 +102,8 @@ test('Q2 B: 미사용 점수는 기술이 되지 않는다(기술 CP 합계는 �
     assert.equal(p.cp.skills, p.skills.reduce((n, s) => n + s.cp, 0), `${p.id} 기술 합계`)
     for (const s of p.skills) {
       assert.doesNotMatch(s.name, /unspent|미사용/iu, `${p.id} ${s.name}`)
-      assert.ok(s.evidence.length > 0, `${p.id} ${s.name} 근거 없음`)
+      if (G.APPROVED_EXCEPTIONS[p.id] && !s.tier) assert.ok(Number.isInteger(s.level), `${p.id} ${s.name} 보존 수준 없음`)
+      else assert.ok(s.evidence.length > 0, `${p.id} ${s.name} 근거 없음`)
     }
   }
 })
@@ -103,7 +115,7 @@ test('Q6 C: 이연 Observation은 A(12 CP)이고 소유자가 정한 직위 줄�
   assert.equal(obs.cp, 12)
   assert.ok(obs.evidence.some((e) => e.quote === '직위: 수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명'))
   const min = find(doc, 'K1008')
-  assert.equal(min.skills.find((s) => s.name.startsWith('Electronics Repair')).tier, 'B')
+  assert.equal(min.skills.find((s) => s.name === '정비').cp, 4)
   const aTier = doc.people.filter((p) => p.method !== 'pilot-approved' && p.skills.some((s) => s.tier === 'A')).map((p) => p.id)
   assert.deepEqual(aTier, ['K1004'])
 })
@@ -253,7 +265,7 @@ const MUTATIONS = [
   ['구간을 근거 미달로', (d) => { d.people[sampleIndex].band = '근거 미달' }],
   ['이연 Observation을 B로', (d) => { const s = find(d, 'K1004').skills.find((k) => k.name === 'Observation'); s.tier = 'B'; s.cp = 8; s.level -= 1 }],
   ['이연 A 등급의 직위 줄 인용 제거', (d) => { const s = find(d, 'K1004').skills.find((k) => k.name === 'Observation'); s.evidence = s.evidence.filter((e) => !e.quote.startsWith('직위: ')) }],
-  ['민웅기 Electronics Repair를 A로', (d) => { const s = find(d, 'K1008').skills.find((k) => k.name.startsWith('Electronics Repair')); s.tier = 'A'; s.cp = 12; s.level += 1 }],
+  ['민웅기 보존 정비 CP 변조', (d) => { const s = find(d, 'K1008').skills.find((k) => k.name === '정비'); s.cp = 12; s.level += 1 }],
   ['언어에 숙련도 CP', (d) => { find(d, 'K1012').languages[1].cp = 2 }],
   ['둘째 언어를 Native로', (d) => { find(d, 'K1012').languages[1].level = 'Native' }],
   ['카드에 없는 언어 추가', (d) => { const p = find(d, 'K1011'); p.languages.push({ ...p.languages[0], name: '영어', level: null }) }],

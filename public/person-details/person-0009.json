@@ -12,6 +12,361 @@
   "stateName": "수문국",
   "sourceRoute": "/world/Cast-State-01#인물-유세진",
   "detailRoute": "/people/person-0009",
+  "birthDate": "2096-06-24",
+  "birthday": "06-24",
+  "age": 30,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-01.json#/content/126",
+    "lore/characters/Cast-State-01.json#/content/128"
+  ],
+  "familyTree": {
+    "personId": "K009",
+    "nodes": [
+      {
+        "id": "K009",
+        "personId": "K009",
+        "kind": "person",
+        "name": "유세진",
+        "birthDate": "2096-06-24",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K009"
+          },
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신정 차량기지에서 자랐다. 신정기지 철도통행 배차관 자리는 탈선 직전 결함 보고로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-유세진-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0009"
+      },
+      {
+        "id": "FH-K009-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "유승석",
+        "birthDate": "2066-06-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2104,
+            "summary": "유승석은 신정 차량기지에서 철도 배차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-유세진-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K009-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "유승준",
+        "birthDate": "2036-06-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "유승준은 신정 차량기지에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-유세진-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K009-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "유승호",
+        "birthDate": "2006-06-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "유승호는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-유세진-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K009-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송승호",
+        "birthDate": "2066-06-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2104,
+            "summary": "송승호는 신정 차량기지에서 철도 배차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-유세진-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K009-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조승준",
+        "birthDate": "2036-06-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2074,
+            "summary": "조승준은 신정 차량기지에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-유세진-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K009-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "김승호",
+        "birthDate": "2006-06-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "김승호는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-01.json",
+                "anchor": "인물-유세진-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K009-P-01:K009:biological",
+        "from": "FH-K009-P-01",
+        "to": "K009",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K009-P-02:FH-K009-P-01:biological",
+        "from": "FH-K009-P-02",
+        "to": "FH-K009-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K009-P-03:FH-K009-P-02:biological",
+        "from": "FH-K009-P-03",
+        "to": "FH-K009-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K009-M-01:K009:biological",
+        "from": "FH-K009-M-01",
+        "to": "K009",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K009-M-02:FH-K009-M-01:biological",
+        "from": "FH-K009-M-02",
+        "to": "FH-K009-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K009-M-03:FH-K009-M-02:biological",
+        "from": "FH-K009-M-03",
+        "to": "FH-K009-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-01.json",
+            "anchor": "인물-유세진-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K009",
     "personId": "person-0009",

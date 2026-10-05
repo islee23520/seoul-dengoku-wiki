@@ -23,7 +23,7 @@ Korean-prose canon for every named character of post-collapse Seoul: roster inde
 - Card grammar: `### 인물 <name>` — contract-cell bullets first (성명, 캐릭터 ID, 출신 공동체, 세대와 출생, …), then the political cells (성격·야망·공포·통치·관계·촉발), then prose sections `**생애.** **관직.** **무공.** **일화.** **가문.** **관계.** **야망.** **공포.** **개입.**`
 - `::: details 부록 — 장부 숫자` stat blocks are metadata, explicitly "본문이 아니다"; their numbers must match `../name-pools/values-cast.json`.
 - Every cell carries a marker — (원문 사실) / (창작 제안) / (자동 파생값) / (미확인) — four distinct states, not synonyms. Never fill an unverified cell with an arbitrary value; never merge with cells still empty.
-- No age fields anywhere. Opening day is 2126; locking a birth year requires calendar-vs-biography evidence. Never use founding-era dates like 붕괴 1년/2027 in biographies.
+- Birthdates are authored in `../name-pools/cast-birthdays.json`; preserve confirmed dates and permanent IDs. Display completed age as of `2126-12-31`, without inventing an opening month/day. Cross-check biographies, family timelines and explicit biological/adoptive relationships. Events in 2026 belong to the recorded contemporaneous forebear, not a descendant born later.
 - Negative numbers use `−` (U+2212), matching neighbor cards; value/desire axes span −100..100.
 - New character flow: GitHub issue (label `인물`, usually `quality:medium`) → duplicate-name check against `Cast-Index.json`, `Cast-Index-S4.json`, `Cast-Corridors-Index.json`, `../name-pools/values-cast.json` → template → review (see `../CONTRIBUTING.md`).
 - `Cast-Unaffiliated.json` cards require a unique stable `캐릭터 ID` (also for external-source / same-name-risk newcomers); state-ledger cards never retrofit one.

@@ -1,6 +1,6 @@
 {
   "id": "person-0510",
-  "name": "윤다율",
+  "name": "키아라 리치",
   "title": "호송 전령",
   "position": "호송 전령",
   "rank": "주사",
@@ -10,8 +10,359 @@
   "stage": "S4",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-윤다율",
+  "sourceRoute": "/world/Cast-State-07#인물-키아라 리치",
   "detailRoute": "/people/person-0510",
+  "birthDate": "2083-09-28",
+  "birthday": "09-28",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/314",
+    "lore/characters/Cast-State-07.json#/content/316",
+    "lore/characters/Cast-State-07.json#/content/317"
+  ],
+  "familyTree": {
+    "personId": "K510",
+    "nodes": [
+      {
+        "id": "K510",
+        "personId": "K510",
+        "kind": "person",
+        "name": "키아라 리치",
+        "birthDate": "2083-09-28",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K510"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-키아라-리치-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "Chiara Ricci",
+        "detailRoute": "/people/person-0510"
+      },
+      {
+        "id": "FH-K510-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "마르코 리치",
+        "birthDate": "2053-09-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "마르코 리치는 2053년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2071년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-키아라-리치-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Marco Ricci was born in 2053 and grew up reading family and work records. From 2071, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Marco Ricci",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K510-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조반니 리치",
+        "birthDate": "2023-09-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2041,
+            "summary": "조반니 리치는 2023년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2041년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-키아라-리치-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Giovanni Ricci was born in 2023 and grew up reading family and work records. From 2041, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Giovanni Ricci",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K510-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "줄리아 페라리",
+        "birthDate": "2053-09-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "줄리아 페라리는 2053년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2071년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-키아라-리치-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Giulia Ferrari was born in 2053 and grew up reading family and work records. From 2071, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Giulia Ferrari",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K510-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "파올라 페라리",
+        "birthDate": "2023-09-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2041,
+            "summary": "파올라 페라리는 2023년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2041년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-키아라-리치-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Paola Ferrari was born in 2023 and grew up reading family and work records. From 2041, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Paola Ferrari",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K510-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "안토니오 리치",
+        "nameEn": "Antonio Ricci",
+        "birthDate": "1993-09-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K510-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "안토니오 리치는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 민간 식당·숙박과 용산 공급 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Antonio Ricci was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K510-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K510-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "프란체스카 페라리",
+        "nameEn": "Francesca Ferrari",
+        "birthDate": "1993-09-28",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K510-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "프란체스카 페라리는 2026년 대정전 당시 용산·이태원 생활권에서 이태원 민간 식당·숙박과 용산 공급 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Francesca Ferrari was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K510-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K510-P-01:K510:biological",
+        "from": "FH-K510-P-01",
+        "to": "K510",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K510-P-02:FH-K510-P-01:biological",
+        "from": "FH-K510-P-02",
+        "to": "FH-K510-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K510-M-01:K510:biological",
+        "from": "FH-K510-M-01",
+        "to": "K510",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K510-M-02:FH-K510-M-01:biological",
+        "from": "FH-K510-M-02",
+        "to": "FH-K510-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-키아라-리치-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K510-P-03:FH-K510-P-02:biological",
+        "from": "FH-K510-P-03",
+        "to": "FH-K510-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K510-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K510-M-03:FH-K510-M-02:biological",
+        "from": "FH-K510-M-03",
+        "to": "FH-K510-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K510-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K510",
     "personId": "person-0510",
@@ -97,11 +448,7 @@
     "note": "S07 금정 일대 관할 영지"
   },
   "wandering_force": null,
-  "clan": {
-    "id": "c724-d30c-d3c9",
-    "name": "파평 윤씨",
-    "crest": "clan-crests/c724-d30c-d3c9.svg"
-  },
+  "clan": null,
   "generation": "opening",
   "minors": false,
   "sourceKind": "proposal",
@@ -135,21 +482,28 @@
     "욕망": "갈망 35 | 독점 40 | 위험 −30 | 과시 20 | 지속 0 | 지향 양성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 키아라 리치는 2083년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 안토니오 리치는 2026년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 키아라 리치의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.",
     "야망": "호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
     "공포": "호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −20 | 물질 15 | 공동 −10 | 원칙 −5 | 공개 −5 | 자격 40 | 분산 −5 | 변혁 5\n- 욕망: 갈망 35 | 독점 40 | 위험 −30 | 과시 20 | 지속 0 | 지향 양성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 키아라 리치는 2083년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 안토니오 리치는 2026년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 키아라 리치의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −20 | 물질 15 | 공동 −10 | 원칙 −5 | 공개 −5 | 자격 40 | 분산 −5 | 변혁 5\n- 욕망: 갈망 35 | 독점 40 | 위험 −30 | 과시 20 | 지속 0 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "키아라 리치",
+        "type": "계약",
+        "to": "노아 데이비스",
+        "basis": "키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

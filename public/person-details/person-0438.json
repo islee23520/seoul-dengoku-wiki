@@ -12,6 +12,263 @@
   "stateName": "명동대교구",
   "sourceRoute": "/world/Cast-State-15#인물-황지아",
   "detailRoute": "/people/person-0438",
+  "birthDate": "2083-06-29",
+  "birthday": "06-29",
+  "age": 43,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-15.json#/content/259",
+    "lore/characters/Cast-State-15.json#/content/260",
+    "lore/characters/Cast-State-15.json#/content/261",
+    "lore/characters/Cast-State-15.json#/content/262"
+  ],
+  "familyTree": {
+    "personId": "K438",
+    "nodes": [
+      {
+        "id": "K438",
+        "personId": "K438",
+        "kind": "person",
+        "name": "황지아",
+        "birthDate": "2083-06-29",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K438"
+          },
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-황지아-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0438"
+      },
+      {
+        "id": "FH-K438-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "황승수",
+        "birthDate": "2053-06-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "황승수는 대합실 당직에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-황지아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K438-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "황승은",
+        "birthDate": "2023-06-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "황승은은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-황지아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K438-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강준란",
+        "birthDate": "2053-06-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2091,
+            "summary": "강준란은 대합실 당직에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-황지아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K438-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "임준리",
+        "birthDate": "2023-06-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "임준리는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-15.json",
+                "anchor": "인물-황지아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K438-P-01:K438:biological",
+        "from": "FH-K438-P-01",
+        "to": "K438",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K438-P-02:FH-K438-P-01:biological",
+        "from": "FH-K438-P-02",
+        "to": "FH-K438-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K438-M-01:K438:biological",
+        "from": "FH-K438-M-01",
+        "to": "K438",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K438-M-02:FH-K438-M-01:biological",
+        "from": "FH-K438-M-02",
+        "to": "FH-K438-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-15.json",
+            "anchor": "인물-황지아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K438",
     "personId": "person-0438",
@@ -149,7 +406,14 @@
     "Cast-State-15"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "황지아",
+        "type": "계약",
+        "to": "천솔빛",
+        "basis": "황지아는 교대마다 확인한 인준 명부 서명을 천솔빛의 사제단 소집 봉인 기록과 맞춰 본다. 누락된 서명이 나타나면 당시의 인수인계와 증언을 함께 짚어, 선거를 둘러싼 다툼 속에서도 어느 당직의 기록이 빠졌는지 확인한다."
+      }
+    ],
     "incoming": []
   }
 }

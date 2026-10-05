@@ -12,6 +12,262 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-박진솔",
   "detailRoute": "/people/person-0063",
+  "birthDate": "2067-11-09",
+  "birthday": "11-09",
+  "age": 59,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-03.json#/content/82",
+    "lore/characters/Cast-State-03.json#/content/84",
+    "lore/characters/Cast-State-03.json#/content/88"
+  ],
+  "familyTree": {
+    "personId": "K063",
+    "nodes": [
+      {
+        "id": "K063",
+        "personId": "K063",
+        "kind": "person",
+        "name": "박진솔",
+        "birthDate": "2067-11-09",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K063"
+          },
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 종자보존고 책임자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-박진솔-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0063"
+      },
+      {
+        "id": "FH-K063-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승훈",
+        "birthDate": "2037-11-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "박승훈은 대합실 당직에서 종자 보존·온습도 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-박진솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K063-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "박승범",
+        "birthDate": "2007-11-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "박승범은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-박진솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K063-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승섭",
+        "birthDate": "2037-11-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2075,
+            "summary": "정승섭은 대합실 당직에서 종자 보존·온습도 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-박진솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K063-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승은",
+        "birthDate": "2007-11-09",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤승은은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-박진솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K063-P-01:K063:biological",
+        "from": "FH-K063-P-01",
+        "to": "K063",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K063-P-02:FH-K063-P-01:biological",
+        "from": "FH-K063-P-02",
+        "to": "FH-K063-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K063-M-01:K063:biological",
+        "from": "FH-K063-M-01",
+        "to": "K063",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K063-M-02:FH-K063-M-01:biological",
+        "from": "FH-K063-M-02",
+        "to": "FH-K063-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-박진솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K063",
     "personId": "person-0063",
@@ -169,6 +425,66 @@
       }
     ],
     "incoming": [
+      {
+        "from": "최수아",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "최수아는 종자 기록과 열쇠를 인계할 때 박진솔의 보존고 온습도 기록과 출고 기록을 맞춰 본다. 빠진 인수인계 기록을 찾아 장부를 잇고, 박진솔은 주민대표와 안전심사의 이중 날인 및 온도 로그를 확인한 뒤 출고를 판단한다."
+      },
+      {
+        "from": "오바서",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "오바서는 종자 기록의 원본과 인수인계 서명을 박진솔에게 넘긴다. 박진솔은 온습도 기록과 출고의 이중 날인을 확인하다 사본이 원본과 어긋나면 오바서에게 해당 기록을 찾아 달라고 하여, 위조된 출고 근거를 가려낸다."
+      },
+      {
+        "from": "홍나원",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "홍나원은 종자 기록 원본을 박진솔에게 인계하며 의심스러운 사본의 날인을 알린다. 박진솔은 온습도 기록과 출고 이중 날인을 확인해, 위조된 사본 때문에 보존 종자가 반출되는 일을 경계한다."
+      },
+      {
+        "from": "주바인",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "주바인은 종자 기록과 인수인계 서명을 박진솔에게 넘긴다. 박진솔은 온습도 기록과 출고 날인을 확인해 젖거나 읽히지 않는 기록이 확인된 출고로 취급되지 않게 한다."
+      },
+      {
+        "from": "서빛은",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "서빛은은 종자 기록의 중복 지급 정정과 인수 서명을 박진솔에게 넘긴다. 박진솔은 출고 기록과 이중 날인을 확인해 같은 상자가 두 번 출고된 것으로 남지 않게 한다."
+      },
+      {
+        "from": "양름태",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "양름태는 끊긴 온습도 기록의 시각과 상자 번호를 박진솔에게 넘긴다. 박진솔은 해당 상자를 확인해 온도 로그가 없는 구간의 물자가 정상 출고로 넘어가지 않게 한다."
+      },
+      {
+        "from": "곽강호",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "곽강호는 종자 기록과 공동기술원장에 올릴 목록을 대조한 사본을 박진솔 앞에서 읽는다. 박진솔은 품목과 보존 기록을 확인해 가격 원장의 종자 시세와 실제 보관 목록이 뒤섞이지 않게 한다."
+      },
+      {
+        "from": "박다은",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "박다은은 보존한 종자 필사본과 인수 서명을 박진솔에게 넘긴다. 박진솔은 온습도 기록과 이중 출고 날인을 확인해 읽히지 않는 줄을 출고 완료로 받아들이지 않는다."
+      },
+      {
+        "from": "서돌서",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "서돌서는 온도 로그가 끊긴 상자와 반출 잠금 번호를 박진솔에게 올린다. 박진솔은 그 상자의 보존 기록을 확인해 전시 징발 문서가 있어도 미확인 상자를 출고하지 않는다."
+      },
+      {
+        "from": "배마원",
+        "type": "계약",
+        "to": "박진솔",
+        "basis": "배마원은 종자 기록의 중복 지급 정정과 서명을 박진솔에게 넘긴다. 박진솔은 출고 기록·이중 날인을 확인해 같은 상자가 두 번 출고된 것으로 남지 않게 한다."
+      },
       {
         "from": "구선율",
         "type": "지휘",

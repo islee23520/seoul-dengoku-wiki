@@ -12,6 +12,360 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-복모",
   "detailRoute": "/people/person-0257",
+  "birthDate": "2101-06-19",
+  "birthday": "06-19",
+  "age": 25,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/160"
+  ],
+  "familyTree": {
+    "personId": "K256",
+    "nodes": [
+      {
+        "id": "K256",
+        "personId": "K256",
+        "kind": "person",
+        "name": "복모",
+        "birthDate": "2101-06-19",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K256"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 우회로 실측 주지 자리는 고아 명부 줄로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-복모-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0257"
+      },
+      {
+        "id": "FH-K256-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승민",
+        "birthDate": "2071-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "복승민은 보국문 피난 막사에서 우회로 실측·고지 좌표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-복모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K256-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승원",
+        "birthDate": "2041-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "복승원은 보국문 피난 막사에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-복모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K256-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "복승진",
+        "birthDate": "2011-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "복승진은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-복모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K256-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현섭",
+        "birthDate": "2071-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2109,
+            "summary": "윤현섭은 보국문 피난 막사에서 우회로 실측·고지 좌표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-복모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K256-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현혁",
+        "birthDate": "2041-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "한현혁은 보국문 피난 막사에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-복모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K256-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "강현성",
+        "birthDate": "2011-06-19",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강현성은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-복모-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K256-P-01:K256:biological",
+        "from": "FH-K256-P-01",
+        "to": "K256",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K256-P-02:FH-K256-P-01:biological",
+        "from": "FH-K256-P-02",
+        "to": "FH-K256-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K256-P-03:FH-K256-P-02:biological",
+        "from": "FH-K256-P-03",
+        "to": "FH-K256-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K256-M-01:K256:biological",
+        "from": "FH-K256-M-01",
+        "to": "K256",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K256-M-02:FH-K256-M-01:biological",
+        "from": "FH-K256-M-02",
+        "to": "FH-K256-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K256-M-03:FH-K256-M-02:biological",
+        "from": "FH-K256-M-03",
+        "to": "FH-K256-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-복모-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K256",
     "personId": "person-0257",
@@ -169,6 +523,36 @@
       }
     ],
     "incoming": [
+      {
+        "from": "한강우",
+        "type": "계약",
+        "to": "복모",
+        "basis": "한강우는 눈에 막힌 환승 통로를 연 뒤 복모에게 실제 지나온 구간을 알린다. 복모는 우회로를 실측해 확인된 길만 실선으로 남겨, 부상자를 옮긴 길과 아직 확인되지 않은 산길을 구분한다."
+      },
+      {
+        "from": "류빛현",
+        "type": "계약",
+        "to": "복모",
+        "basis": "류빛현은 침수 구간 때문에 필사본 전달을 멈춘 지점을 복모에게 알린다. 복모는 우회로를 실측해 확인된 길만 표시하고 고지 좌표는 총림 내부의 보관 범위를 지킨다."
+      },
+      {
+        "from": "허늘우",
+        "type": "계약",
+        "to": "복모",
+        "basis": "허늘우는 침수 구간에서 필사본 전달이 끊긴 위치를 복모에게 알린다. 복모는 우회로를 실측해 확인된 길을 내부 안내에 남기고 외부에 고지 좌표를 넘기는 일과 구분한다."
+      },
+      {
+        "from": "우솔진",
+        "type": "계약",
+        "to": "복모",
+        "basis": "우솔진은 필사본 전달로의 막힌 통로를 복모에게 알린다. 복모는 우회로를 실측해 내부 안내를 고치고 확인되지 않은 산길은 실선으로 표시하지 않는다."
+      },
+      {
+        "from": "구바결",
+        "type": "계약",
+        "to": "복모",
+        "basis": "구바결은 막힌 필사본 전달로를 복모에게 알린다. 복모는 우회로를 실측해 내부 안내를 고치고 미확인 산길은 실선으로 표시하지 않는다."
+      },
       {
         "from": "두소",
         "type": "계약",

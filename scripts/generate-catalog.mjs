@@ -25,6 +25,10 @@ import { validateOpeningDispositions } from './personal-holdings.mjs'
 import { regularLineGraph } from './regular-line-graph.mjs'
 import { regionalLineGraph } from './regional-line-graph.mjs'
 import { parsePersonRightsPermissions } from './person-rights-permissions.mjs'
+import { loadCastBirthdays } from './cast-birthdays.mjs'
+import { loadHouseholdSourceDocuments, validateCastHouseholdRelations } from './cast-household-relations.mjs'
+import { loadCastFamilyTrees, projectFamilyTree } from './cast-family-trees.mjs'
+import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -881,6 +885,46 @@ for (const holding of personalHoldings.holdings) {
 }
 await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
 const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
+const birthdayRoster = courtDataset.sources.registry.persons
+const birthdayNames = new Set(peopleSource.map((person) => person.name))
+if (birthdayNames.size !== peopleSource.length || birthdayRoster.length !== peopleSource.length || birthdayRoster.some((person) => !birthdayNames.has(person.name))) throw new Error('E_BIRTH_ROSTER_COVERAGE')
+const birthdaysById = await loadCastBirthdays(loreRoot, birthdayRoster)
+const familyGraph = await loadCastFamilyTrees(loreRoot, birthdayRoster, { birthdays: birthdaysById, resolveRegisteredPeople: true })
+const householdLedger = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-household-relations.json'), 'utf8'))
+validateCastHouseholdRelations(householdLedger, await loadHouseholdSourceDocuments(repoRoot, householdLedger))
+const householdsById = new Map(householdLedger.people.map(person => [person.personId, {
+  personFaith: person.household.personFaith.status,
+  houseFaith: person.household.houseFaith.status,
+  humanoidAdmission: person.household.humanoidAdmission,
+}]))
+const proseContacts = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-prose-contacts.json'), 'utf8'))
+const proseContactsById = new Map()
+const seenProseContacts = new Set()
+for (const contact of proseContacts.records) {
+  const key = `${contact.personId}:${contact.recipientId}`
+  if (!issuedById.has(contact.personId) || !issuedById.has(contact.recipientId) || contact.personId === contact.recipientId || seenProseContacts.has(key) || contact.kind !== 'existing-prose-contact' || !/^lore\/(?:characters|factions)\/[^/]+\.json$/.test(contact.sourceRef.path)) throw new Error(`E_PROSE_CONTACT_ID:${key}`)
+  seenProseContacts.add(key)
+  const document = JSON.parse(await readFile(resolve(repoRoot, contact.sourceRef.path), 'utf8'))
+  const source = document.content.find(block => block.anchor === contact.sourceRef.anchor)
+  const value = source?.kind === 'list' ? source.items.find(item => typeof item.ko === 'string' && item.ko.startsWith('주요 관계:'))?.ko : source?.text?.ko
+  const basis = typeof value === 'string' ? value : Array.isArray(value) ? value.filter(part => !part.strong).map(part => part.text).join('') : ''
+  if (!contact.sourceRef.anchor.startsWith(`인물-${issuedById.get(contact.personId).name.replaceAll(' ', '-')}-`) || !basis.includes(issuedById.get(contact.recipientId).name)) throw new Error(`E_PROSE_CONTACT_SOURCE:${key}`)
+  const outgoing = proseContactsById.get(contact.personId) ?? []
+  outgoing.push({ recipientId: contact.recipientId, recipientName: issuedById.get(contact.recipientId).name, basis: basis.trim(), sourceRef: contact.sourceRef })
+  proseContactsById.set(contact.personId, outgoing)
+  const incoming = proseContactsById.get(contact.recipientId) ?? []
+  incoming.push({ recipientId: contact.personId, recipientName: issuedById.get(contact.personId).name, basis: basis.trim(), sourceRef: contact.sourceRef })
+  proseContactsById.set(contact.recipientId, incoming)
+}
+const parentStatuses = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-family-parent-status.json'), 'utf8')).records
+const parentStatusById = new Map()
+for (const record of parentStatuses) {
+  if (parentStatusById.has(record.personId) || !issuedById.has(record.personId) || !['biological-parents-unrecorded', 'maternal-parent-unrecorded'].includes(record.status) || !familyGraph.edges.some(edge => edge.to === record.personId && edge.from === record.knownParentId && edge.type === record.knownRelationship)) throw new Error(`E_PARENT_STATUS:${record.personId}`)
+  if (record.sourceRef?.path !== 'lore/characters/Core-Characters.json') throw new Error(`E_PARENT_STATUS_SOURCE:${record.personId}`)
+  const source = JSON.parse(await readFile(resolve(repoRoot, record.sourceRef.path), 'utf8'))
+  if (!source.content?.some(block => block.anchor === record.sourceRef.anchor)) throw new Error(`E_PARENT_STATUS_SOURCE:${record.personId}`)
+  parentStatusById.set(record.personId, record.status)
+}
 const personRightsPermissions = parsePersonRightsPermissions(
   JSON.parse(await readFile(resolve(repoRoot, 'person-rights-permissions.json'), 'utf8')), courtDataset.people,
 )
@@ -941,6 +985,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   }
 })
 const catalogByName = new Map(peopleCatalog.map((person) => [person.name, person]))
+const familyDetailRoutes = new Map(birthdayRoster.map((person) => [person.id, catalogByName.get(person.name).detailRoute]))
 const graphPerson = (id) => {
   const issued = issuedById.get(id)
   const person = issued && catalogByName.get(issued.name)
@@ -988,6 +1033,10 @@ for (const person of peopleCatalog) {
   if (!sheet || sheet.name !== person.name || sheet.url !== person.detailRoute) throw new Error(`E_PERSON_SHEET_IDENTITY:${issuedId}:${person.id}`)
   const detail = {
     ...person,
+    ...birthdaysById.get(issuedId),
+    familyTree: { ...projectFamilyTree(familyGraph, issuedId, familyDetailRoutes), parentStatus: parentStatusById.get(issuedId) ?? null },
+    proseContacts: proseContactsById.get(issuedId) ?? [],
+    household: householdsById.get(issuedId),
     ...(personRightsPermissions.has(issuedId) ? { rightsPermissions: personRightsPermissions.get(issuedId) } : {}),
     gurps: {
       id: issuedId,
@@ -1004,7 +1053,7 @@ for (const person of peopleCatalog) {
     unit: sheet.unit,
     territory: sheet.territory,
     wandering_force: sheet.wandering_force,
-    clan: lineage.clan ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨`, crest: `clan-crests/${lineage.base_clan ?? lineage.clan}.svg` } : null,
+    clan: lineage.clan && lineage.namingConvention !== 'non-korean-lineage' ? { id: lineage.base_clan ?? lineage.clan, name: `${lineage.bongwan} ${lineage.surname}씨`, crest: `clan-crests/${lineage.base_clan ?? lineage.clan}.svg` } : null,
     generation: ledger.generation,
     minors: ledger.minors,
     sourceKind: ledger.source,
@@ -1109,6 +1158,8 @@ const clanFamilyCatalogOut = clanFamilyCatalog.sort((a, b) =>
   a.bongwan.localeCompare(b.bongwan, 'ko') || a.surname.localeCompare(b.surname, 'ko')
 )
 await writeFile(resolve(generatedRoot, 'clanFamilyCatalog.ts'), `export const clanFamilyCatalog = ${JSON.stringify(clanFamilyCatalogOut, null, 2)} as const\n`)
+
+await writeFile(resolve(generatedRoot, 'nonKoreanFamilyCatalog.ts'), `export const nonKoreanFamilyCatalog = ${JSON.stringify(projectNonKoreanFamilies(peopleCatalog, lineageByName), null, 2)} as const\n`)
 
 console.log(`
 WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)

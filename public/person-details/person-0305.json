@@ -12,6 +12,260 @@
   "stateName": "신내운수",
   "sourceRoute": "/world/Cast-State-12#인물-국용",
   "detailRoute": "/people/person-0305",
+  "birthDate": "2071-08-05",
+  "birthday": "08-05",
+  "age": 55,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-12.json#/content/127"
+  ],
+  "familyTree": {
+    "personId": "K304",
+    "nodes": [
+      {
+        "id": "K304",
+        "personId": "K304",
+        "kind": "person",
+        "name": "국용",
+        "birthDate": "2071-08-05",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K304"
+          },
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 제기동 의무소에서 자랐다. 환승 당직 의무원, 전미리의 실무 담당자 자리는 가짜 약 봉인으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-국용-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0305"
+      },
+      {
+        "id": "FH-K304-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "국승영",
+        "birthDate": "2041-08-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "국승영은 제기동 의무소에서 환승 환자 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-국용-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K304-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "국승윤",
+        "birthDate": "2011-08-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "국승윤은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-국용-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K304-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤준민",
+        "birthDate": "2041-08-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2079,
+            "summary": "윤준민은 제기동 의무소에서 환승 환자 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-국용-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K304-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "한현솔",
+        "birthDate": "2011-08-05",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "한현솔은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-12.json",
+                "anchor": "인물-국용-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K304-P-01:K304:biological",
+        "from": "FH-K304-P-01",
+        "to": "K304",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K304-P-02:FH-K304-P-01:biological",
+        "from": "FH-K304-P-02",
+        "to": "FH-K304-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K304-M-01:K304:biological",
+        "from": "FH-K304-M-01",
+        "to": "K304",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K304-M-02:FH-K304-M-01:biological",
+        "from": "FH-K304-M-02",
+        "to": "FH-K304-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-12.json",
+            "anchor": "인물-국용-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K304",
     "personId": "person-0305",
@@ -169,6 +423,30 @@
       }
     ],
     "incoming": [
+      {
+        "from": "서람은",
+        "type": "계약",
+        "to": "국용",
+        "basis": "서람은은 젖은 문서에서 보존한 의무호송 기록을 국용에게 인계한다. 국용은 환자 중증도와 이송 시각을 확인해, 기록이 젖어 읽히지 않는 부분 때문에 환자의 들것 순서가 사라지지 않게 한다."
+      },
+      {
+        "from": "고다진",
+        "type": "계약",
+        "to": "국용",
+        "basis": "고다진은 의무호송 원본과 인수 기록을 국용에게 넘긴다. 국용은 중증도와 이송 시각을 확인해 의심스러운 사본 때문에 환자 인계가 이중으로 기록되지 않게 한다."
+      },
+      {
+        "from": "송바지",
+        "type": "계약",
+        "to": "국용",
+        "basis": "송바지는 보존한 의무호송 필사본을 국용에게 넘긴다. 국용은 중증도와 이송 시각을 확인해 읽히지 않는 부분 때문에 환자 인계가 사라지지 않게 한다."
+      },
+      {
+        "from": "한자우",
+        "type": "계약",
+        "to": "국용",
+        "basis": "한자우는 보존한 의무호송 필사본을 국용에게 넘긴다. 국용은 중증도·이송 시각을 확인해 읽히지 않는 기록 때문에 환자 인계가 사라지지 않게 한다."
+      },
       {
         "from": "감모",
         "type": "지휘",

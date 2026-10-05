@@ -1,6 +1,6 @@
 {
   "id": "person-0184",
-  "name": "양채윤",
+  "name": "앙드레 뒤부아",
   "title": "용산창 유치선 감독",
   "position": "용산창 유치선 감독",
   "rank": "당직장",
@@ -10,8 +10,358 @@
   "stage": "S2",
   "state": "S07",
   "stateName": "환적국",
-  "sourceRoute": "/world/Cast-State-07#인물-양채윤",
+  "sourceRoute": "/world/Cast-State-07#인물-앙드레 뒤부아",
   "detailRoute": "/people/person-0184",
+  "birthDate": "2074-05-26",
+  "birthday": "05-26",
+  "age": 52,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-07.json#/content/28",
+    "lore/characters/Cast-State-07.json#/content/30"
+  ],
+  "familyTree": {
+    "personId": "K183",
+    "nodes": [
+      {
+        "id": "K183",
+        "personId": "K183",
+        "kind": "person",
+        "name": "앙드레 뒤부아",
+        "birthDate": "2074-05-26",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K183"
+          },
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 용산창 유치선 감독 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-앙드레-뒤부아-list2"
+              }
+            ]
+          }
+        ],
+        "nameEn": "André Dubois",
+        "detailRoute": "/people/person-0184"
+      },
+      {
+        "id": "FH-K183-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "장 뒤부아",
+        "birthDate": "2044-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "장 뒤부아는 2044년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2062년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-앙드레-뒤부아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Jean Dubois was born in 2044 and grew up reading family and work records. From 2062, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Jean Dubois",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K183-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "피에르 뒤부아",
+        "birthDate": "2014-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2032,
+            "summary": "피에르 뒤부아는 2014년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2032년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-앙드레-뒤부아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Pierre Dubois was born in 2014 and grew up reading family and work records. From 2032, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Pierre Dubois",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K183-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "엘로디 베르나르",
+        "birthDate": "2044-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2082,
+            "summary": "엘로디 베르나르는 2044년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2062년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-앙드레-뒤부아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Élodie Bernard was born in 2044 and grew up reading family and work records. From 2062, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Élodie Bernard",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K183-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "루이즈 베르나르",
+        "birthDate": "2014-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2032,
+            "summary": "루이즈 베르나르는 2014년에 태어났다. 용산·이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2032년부터 이웃과 물품 인계 내역을 대조했다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-07.json",
+                "anchor": "인물-앙드레-뒤부아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ],
+            "summaryEn": "Louise Bernard was born in 2014 and grew up reading family and work records. From 2032, this ancestor compared goods-transfer records with neighbors."
+          }
+        ],
+        "nameEn": "Louise Bernard",
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K183-P-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "루이 뒤부아",
+        "nameEn": "Louis Dubois",
+        "birthDate": "1984-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K183-P-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "루이 뒤부아는 2026년 대정전 당시 용산·이태원 생활권에서 용산의 민간 창고·전기 수선 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Louis Dubois was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K183-P-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K183-M-03",
+        "personId": null,
+        "kind": "historical",
+        "name": "클레르 베르나르",
+        "nameEn": "Claire Bernard",
+        "birthDate": "1984-05-26",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K183-M-03"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "클레르 베르나르는 2026년 대정전 당시 용산·이태원 생활권에서 용산의 민간 창고·전기 수선 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+            "summaryEn": "Claire Bernard was in the family's local community when communications failed in 2026. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+            "sourceRefs": [
+              {
+                "path": "lore/name-pools/cast-family-trees.json",
+                "anchor": "FH-K183-M-03"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K183-P-01:K183:biological",
+        "from": "FH-K183-P-01",
+        "to": "K183",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K183-P-02:FH-K183-P-01:biological",
+        "from": "FH-K183-P-02",
+        "to": "FH-K183-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K183-M-01:K183:biological",
+        "from": "FH-K183-M-01",
+        "to": "K183",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K183-M-02:FH-K183-M-01:biological",
+        "from": "FH-K183-M-02",
+        "to": "FH-K183-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-07.json",
+            "anchor": "인물-앙드레-뒤부아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K183-P-03:FH-K183-P-02:biological",
+        "from": "FH-K183-P-03",
+        "to": "FH-K183-P-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K183-P-03"
+          }
+        ]
+      },
+      {
+        "id": "FH-K183-M-03:FH-K183-M-02:biological",
+        "from": "FH-K183-M-03",
+        "to": "FH-K183-M-02",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-family-trees.json",
+            "anchor": "FH-K183-M-03"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K183",
     "personId": "person-0184",
@@ -97,11 +447,7 @@
     "note": "S07 독산 일대 관할 영지"
   },
   "wandering_force": null,
-  "clan": {
-    "id": "c591-ccad-c8fc",
-    "name": "청주 양씨",
-    "crest": "clan-crests/c591-ccad-c8fc.svg"
-  },
+  "clan": null,
   "generation": "opening",
   "minors": false,
   "sourceKind": "proposal",
@@ -135,40 +481,40 @@
     "욕망": "갈망 45 | 독점 35 | 위험 −5 | 과시 −25 | 지속 5 | 지향 동성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 용산창 유치선 감독 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 용산창 유치선 감독 자리는 교대 무단 결근 대체 당직으로 열렸다. 앙드레 뒤부아는 2074년에 태어났다. 프랑스계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 용산창 유치선 감독 업무를 맡는다. 루이 뒤부아는 2026년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 앙드레 뒤부아의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 프랑스어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
     "무공": "없음. 생업만.",
     "관직": "품계 당직장. 직함은 용산창 유치선 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 창고 온도가 위험선 아래일 때만 허용한다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 용산창 유치선 감독 자리의 서명이 장부에 올랐다.",
-    "관계": "송이든의 창고 온도에 전력을 대는 지휘를 받고, 양건우의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.",
+    "관계": "루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고, 미콜라 본다렌코의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.",
     "야망": "용산 유치선의 비상 전력을 급수·환적 열차 전용으로 고정해 중계국의 심야 동맥이 된다.",
     "공포": "한 번의 과방전으로 냉동 칸이 죽고, 그 정전을 노량진 상회가 결제권 압박으로 쓰는 것.",
     "개입": "대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다."
   },
-  "biography": "변압기 진동으로 과부하를 읽고, 환적보다 군수 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 환적국\n- 품계: 당직장\n- 생업: 유치선 전력 배분·충전 통제\n- 직함: 용산창 유치선 감독\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 용산창 유치선 감독 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 당직장. 직함은 용산창 유치선 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 창고 온도가 위험선 아래일 때만 허용한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 용산창 유치선 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 송이든의 창고 온도에 전력을 대는 지휘를 받고, 양건우의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.\n\n**야망.** 용산 유치선의 비상 전력을 급수·환적 열차 전용으로 고정해 중계국의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 냉동 칸이 죽고, 그 정전을 노량진 상회가 결제권 압박으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −15 | 물질 20 | 공동 −10 | 원칙 −10 | 공개 −10 | 자격 25 | 분산 −10 | 변혁 0\n- 욕망: 갈망 45 | 독점 35 | 위험 −5 | 과시 −25 | 지속 5 | 지향 동성 | 결합 없음\n:::",
+  "biography": "변압기 진동으로 과부하를 읽고, 환적보다 군수 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 환적국\n- 품계: 당직장\n- 생업: 유치선 전력 배분·충전 통제\n- 직함: 용산창 유치선 감독\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 용산창 유치선 감독 자리는 교대 무단 결근 대체 당직으로 열렸다. 앙드레 뒤부아는 2074년에 태어났다. 프랑스계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 용산창 유치선 감독 업무를 맡는다. 루이 뒤부아는 2026년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 앙드레 뒤부아의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 프랑스어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 당직장. 직함은 용산창 유치선 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 창고 온도가 위험선 아래일 때만 허용한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 용산창 유치선 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고, 미콜라 본다렌코의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.\n\n**야망.** 용산 유치선의 비상 전력을 급수·환적 열차 전용으로 고정해 중계국의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 냉동 칸이 죽고, 그 정전을 노량진 상회가 결제권 압박으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −15 | 물질 20 | 공동 −10 | 원칙 −10 | 공개 −10 | 자격 25 | 분산 −10 | 변혁 0\n- 욕망: 갈망 45 | 독점 35 | 위험 −5 | 과시 −25 | 지속 5 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],
   "relations": {
     "outgoing": [
       {
-        "from": "양채윤",
+        "from": "앙드레 뒤부아",
         "type": "지휘",
-        "to": "송이든",
-        "basis": "송이든의 창고 온도에 전력을 대는 지휘를 받고"
+        "to": "루카스 슈나이더",
+        "basis": "루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고"
       },
       {
-        "from": "양채윤",
+        "from": "앙드레 뒤부아",
         "type": "지휘",
-        "to": "양건우",
-        "basis": "양건우의 제동 시운전에 출력을 맞추며"
+        "to": "미콜라 본다렌코",
+        "basis": "미콜라 본다렌코의 제동 시운전에 출력을 맞추며"
       }
     ],
     "incoming": [
       {
-        "from": "설우찬",
+        "from": "아데올라 아데예미",
         "type": "계약",
-        "to": "양채윤",
-        "basis": "양채윤의 유치선 전력 배분을 발전 쪽에서 받치고"
+        "to": "앙드레 뒤부아",
+        "basis": "앙드레 뒤부아의 유치선 전력 배분을 발전 쪽에서 받치고"
       }
     ]
   }

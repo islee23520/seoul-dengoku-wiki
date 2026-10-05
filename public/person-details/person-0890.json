@@ -12,6 +12,262 @@
   "stateName": "태욱그룹",
   "sourceRoute": "/world/Cast-State-03#인물-주북석",
   "detailRoute": "/people/person-0890",
+  "birthDate": "2070-06-23",
+  "birthday": "06-23",
+  "age": 56,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-03.json#/content/621",
+    "lore/characters/Cast-State-03.json#/content/623",
+    "lore/characters/Cast-State-03.json#/content/624"
+  ],
+  "familyTree": {
+    "personId": "K890",
+    "nodes": [
+      {
+        "id": "K890",
+        "personId": "K890",
+        "kind": "person",
+        "name": "주북석",
+        "birthDate": "2070-06-23",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K890"
+          },
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-주북석-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0890"
+      },
+      {
+        "id": "FH-K890-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "주현원",
+        "birthDate": "2040-06-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "주현원은 신내 환승 당직에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-주북석-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K890-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "주현진",
+        "birthDate": "2010-06-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "주현진은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-주북석-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K890-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "최민완",
+        "birthDate": "2040-06-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2078,
+            "summary": "최민완은 신내 환승 당직에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-주북석-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K890-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "정민윤",
+        "birthDate": "2010-06-23",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "정민윤은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-03.json",
+                "anchor": "인물-주북석-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K890-P-01:K890:biological",
+        "from": "FH-K890-P-01",
+        "to": "K890",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K890-P-02:FH-K890-P-01:biological",
+        "from": "FH-K890-P-02",
+        "to": "FH-K890-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K890-M-01:K890:biological",
+        "from": "FH-K890-M-01",
+        "to": "K890",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K890-M-02:FH-K890-M-01:biological",
+        "from": "FH-K890-M-02",
+        "to": "FH-K890-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-03.json",
+            "anchor": "인물-주북석-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K890",
     "personId": "person-0890",
@@ -143,7 +399,14 @@
     "Cast-State-03"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "주북석",
+        "type": "계약",
+        "to": "제라온",
+        "basis": "주북석은 인증 사본의 출발 서명과 인수 기록을 제라온에게 전달한다. 제라온은 신청국·마곡 서고의 수령을 확인해 서명 없는 출발이 완료 보관으로 남지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

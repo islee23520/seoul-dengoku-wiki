@@ -1,0 +1,188 @@
+{
+  "schema": "seoul-subway-states.diaspora-family-lineages.v1",
+  "sourceKind": "original-fiction",
+  "authorization": "Owner-authorized four-generation narrative revision, 2026-10-02; historical relatives are fictional lineage records, not permanent cast registrations.",
+  "collapseDate": "2026-10-14",
+  "openingYear": 2126,
+  "ageAsOf": "2126-12-31",
+  "generationIntervalYears": 30,
+  "generationIntervalExceptions": [],
+  "sourceDocument": "lore/factions/Diaspora-Corridors.json",
+  "lineages": [
+    {
+      "key": "guro-pham-family",
+      "currentPersonId": "K1012",
+      "members": [
+        {
+          "key": "DF-PHAM-01",
+          "generation": 1,
+          "name": { "ko": "팜반민", "en": "Phạm Văn Minh" },
+          "birthDate": "1999-04-17",
+          "parentKeys": [],
+          "timelineBio": { "ko": "2026년 구로 야간 라인에서 수동 정비와 기숙사 교대 명부를 지키고, 2046년부터 아들 팜반뚜언에게 정비를 가르친다.", "en": "In 2026 he maintains Guro's night-line equipment and dormitory shift lists, then teaches his son Phạm Văn Tuấn repairs from 2046." },
+          "narrative": {
+            "ko": "팜반민은 베트남에서 태어나 구로공단 야간 라인의 기능공으로 일한다. 2026년 10월 14일 대정전으로 설비가 멈추자 동료들과 수동 정비를 이어 가고, 기숙사 주민을 교대 명부에 적어 식량을 나눌 때 빠지는 사람이 없도록 한다. 이후 아들 팜반뚜언에게 공구 사용과 베트남어 작업 기록을 가르친다.",
+            "en": "Born in Vietnam, Phạm Văn Minh works as a machinist on Guro's night lines. When the Great Blackout stops the equipment on October 14, 2026, he joins his coworkers in manual maintenance and records dormitory residents on shift lists so nobody is missed during food distribution. He later teaches his son Phạm Văn Tuấn tool use and Vietnamese work records."
+          },
+          "events": [
+            { "year": 2026, "kind": "night-line-maintenance", "date": "2026-10-14" },
+            { "year": 2046, "kind": "son-apprenticeship" }
+          ]
+        },
+        {
+          "key": "DF-PHAM-02",
+          "generation": 2,
+          "name": { "ko": "팜반뚜언", "en": "Phạm Văn Tuấn" },
+          "birthDate": "2029-04-17",
+          "parentKeys": ["DF-PHAM-01"],
+          "timelineBio": { "ko": "2046년 정비를 배우기 시작하고, 2055년 베트남으로 거처를 옮기며 구로 동료들과 정비 기록 사본을 나누어 보관한다.", "en": "He begins learning repairs in 2046 and moves to Vietnam in 2055, dividing copies of the maintenance records between his family and Guro coworkers." },
+          "narrative": {
+            "ko": "구로에서 태어난 팜반뚜언은 2046년부터 아버지와 다른 정비사들 곁에서 수리를 배운다. 공구를 빌린 사람과 돌려준 사람을 함께 적어 두어 교대가 바뀌어도 빚을 확인할 수 있게 한다. 2055년 베트남의 친족 곁으로 거처를 옮길 때 작업 기록 사본을 가져가고, 구로에 남은 동료들에게도 한 벌을 맡긴다.",
+            "en": "Born in Guro, Phạm Văn Tuấn learns repairs beside his father and other mechanics from 2046. He records both borrowers and returns of tools so debts remain traceable across shift changes. When he moves to live near relatives in Vietnam in 2055, he takes copies of the work records and leaves another set with coworkers in Guro."
+          },
+          "events": [
+            { "year": 2046, "kind": "apprenticeship" },
+            { "year": 2055, "kind": "family-relocation-to-vietnam" }
+          ]
+        },
+        {
+          "key": "DF-PHAM-03",
+          "generation": 3,
+          "name": { "ko": "팜반록", "en": "Phạm Văn Lộc" },
+          "birthDate": "2059-04-17",
+          "parentKeys": ["DF-PHAM-02"],
+          "timelineBio": { "ko": "베트남에서 정비 기록과 작업 언어를 아들 팜반득에게 가르치고, 2109년 함께 구로에 들어와 현장 수리를 익힌다.", "en": "In Vietnam he teaches his son Phạm Văn Đức maintenance records and work languages; they reach Guro together in 2109 and learn local repairs." },
+          "narrative": {
+            "ko": "베트남에서 태어난 팜반록은 아버지가 가져온 정비 기록의 약어를 풀어 쓰며 수리를 배운다. 아들 팜반득에게는 베트남어로 작업을 설명하고 구로에서 쓰던 한국어 지시를 함께 읽힌다. 2109년 성인이 된 아들과 구로에 들어와 기숙사 정비사들의 작업에 참여하며, 낡은 기록을 현장 설비와 대조해 쓸 수 있는 내용부터 다시 익힌다.",
+            "en": "Born in Vietnam, Phạm Văn Lộc learns repairs while expanding the abbreviations in his father's maintenance records. He explains work to his son Phạm Văn Đức in Vietnamese and reads the Korean instructions once used in Guro with him. In 2109 he reaches Guro with his adult son and joins the dormitory mechanics' work, checking old records against the equipment and relearning what is still usable."
+          },
+          "events": [
+            { "year": 2109, "kind": "family-arrival-in-guro" }
+          ]
+        },
+        {
+          "key": "K1012",
+          "generation": 4,
+          "personId": "K1012",
+          "name": {
+            "ko": "팜반득",
+            "en": "Phạm Văn Đức"
+          },
+          "birthDate": "2089-04-17",
+          "parentKeys": [
+            "DF-PHAM-03",
+            "FH-K1012-M-01"
+          ],
+          "narrative": {
+            "ko": "베트남에서 태어난 팜반득은 2109년 구로에 들어온 뒤 기숙사 정비사들에게 차단문 수리를 배운다. 공구 반납과 교대 기록을 지키며 동료들의 신뢰를 얻어 야간 정비 조장을 맡는다. 2126년에는 린샤오메이와 식량 계약을 맺고 최일석과 탄약고 하청을 교섭한다. 증조부의 기록은 작업과 숙소를 설명하는 자료로 쓰며, 기숙사 세대 명부를 시민권과 같은 급으로 인정받으려 한다.",
+            "en": "Born in Vietnam, Phạm Văn Đức learns barrier-gate repairs from dormitory mechanics after reaching Guro in 2109. His care with tool returns and shift records earns his coworkers' trust and the night-maintenance foreman's job. In 2126 he holds a food contract with Lin Xiaomei and negotiates the armory subcontract with Choi Ilseok. He uses his great-grandfather's records as evidence of work and residence while seeking recognition of the dormitory's generational register on a par with citizenship."
+          },
+          "events": [
+            {
+              "year": 2109,
+              "kind": "guro-apprenticeship"
+            },
+            {
+              "year": 2126,
+              "kind": "opening-contracts"
+            }
+          ],
+          "timelineBio": {
+            "ko": "베트남에서 태어난 팜반득은 2109년 구로에 들어온 뒤 기숙사 정비사들에게 차단문 수리를 배운다. 공구 반납과 교대 기록을 지키며 동료들의 신뢰를 얻어 야간 정비 조장을 맡는다. 2126년에는 린샤오메이와 식량 계약을 맺고 최일석과 탄약고 하청을 교섭한다. 증조부의 기록은 작업과 숙소를 설명하는 자료로 쓰며, 기숙사 세대 명부를 시민권과 같은 급으로 인정받으려 한다. 팜반득은 2089년 베트남에서 태어나 2109년 아버지 팜반록과 함께 구로에 들어왔다. 기숙사 정비사들과 낡은 작업 기록을 설비에 대조하며 수리를 익혔고, 공구 반납과 교대 기록을 지켜 야간 정비 조장을 맡았다. 베트남어로 일상 대화를 나누며 작업에서는 한국어 지시를 쓴다. 1999년생 증조부 팜반민은 2026년 구로공단 설비가 멈추자 동료들과 수동 정비를 이어갔다. 아들 팜반뚜언은 공구와 반납 내역을 적었고, 손자 팜반록은 베트남에서 그 기록을 풀어 읽었다. 팜반록은 2109년 아들 팜반득과 구로에 들어와 기록을 현장 설비와 대조했다.",
+            "en": "Born in Vietnam, Phạm Văn Đức learns barrier-gate repairs from dormitory mechanics after reaching Guro in 2109. His care with tool returns and shift records earns his coworkers' trust and the night-maintenance foreman's job. In 2126 he holds a food contract with Lin Xiaomei and negotiates the armory subcontract with Choi Ilseok. He uses his great-grandfather's records as evidence of work and residence while seeking recognition of the dormitory's generational register on a par with citizenship. Phạm Văn Đức was born in Vietnam in 2089 and came to Guro with his father Phạm Văn Lộc in 2109. He learned repairs alongside dormitory mechanics by comparing old work records with equipment. Careful tool returns and shift records earned him the night maintenance foreman position. He speaks Vietnamese daily and uses Korean work instructions. Phạm Văn Minh continued manual repairs with coworkers when the Guro factory stopped in 2026. His son Phạm Văn Tuấn recorded tool loans and returns; his grandson Phạm Văn Lộc read those records in Vietnam. In 2109, Lộc and his son Đức returned to Guro and compared the records with the equipment."
+          }
+        }
+      ]
+    },
+    {
+      "key": "guro-choi-family",
+      "currentPersonId": "K1016",
+      "members": [
+        {
+          "key": "DF-CHOI-01",
+          "generation": 1,
+          "name": { "ko": "최경섭", "en": "Choi Gyeongseop" },
+          "birthDate": "1997-09-03",
+          "parentKeys": [],
+          "timelineBio": { "ko": "2026년 10월 14일 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.", "en": "He carries out a reserve company's registers on October 14, 2026, and teaches his son Choi Munjae to compare originals and copies from 2044." },
+          "narrative": {
+            "ko": "최경섭은 병역을 마친 뒤 예비군 중대에서 명부를 정리한다. 2026년 10월 14일 통신이 끊기자 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분해 적는다. 이후 아들 최문재에게 원본과 사본을 맞추는 일을 가르치며, 명부를 특정 무장 집단의 사유물로 넘기지 않으려 한다.",
+            "en": "After completing military service, Choi Gyeongseop keeps a reserve company's registers. When communications fail on October 14, 2026, he carries the registers out and distinguishes people still reachable from those who have evacuated. He later teaches his son Choi Munjae to compare originals with copies, seeking to keep the registers from becoming a particular armed group's private property."
+          },
+          "events": [
+            { "year": 2026, "kind": "reserve-register-rescue", "date": "2026-10-14" },
+            { "year": 2044, "kind": "son-record-training" }
+          ]
+        },
+        {
+          "key": "DF-CHOI-02",
+          "generation": 2,
+          "name": { "ko": "최문재", "en": "Choi Munjae" },
+          "birthDate": "2027-09-03",
+          "parentKeys": ["DF-CHOI-01"],
+          "timelineBio": { "ko": "2044년부터 옛 피난 명단과 현재 당번표를 나누어 기록하고, 2074년부터 아들 최태윤에게 대조 업무를 가르친다.", "en": "From 2044 he records historical evacuation lists separately from current duty rosters and teaches his son Choi Taeyun reconciliation work from 2074." },
+          "narrative": {
+            "ko": "최문재는 2044년부터 아버지와 명부 사본을 대조한다. 피난 당시의 명단을 그대로 부르면 사망하거나 떠난 사람이 현역으로 남는다는 것을 알게 되어, 옛 명단과 현재 당번표를 나누어 적는다. 아들 최태윤에게도 수정 날짜와 확인한 사람을 남기게 하여 옛 군적과 당대의 복무가 뒤섞이지 않도록 한다.",
+            "en": "From 2044 Choi Munjae compares register copies with his father. He learns that using evacuation lists unchanged leaves dead or departed people counted as active personnel, so he separates the old lists from current duty rosters. He teaches his son Choi Taeyun to record revision dates and witnesses, keeping historical military records distinct from contemporary service."
+          },
+          "events": [
+            { "year": 2044, "kind": "record-training" },
+            { "year": 2074, "kind": "son-record-training" }
+          ]
+        },
+        {
+          "key": "DF-CHOI-03",
+          "generation": 3,
+          "name": { "ko": "최태윤", "en": "Choi Taeyun" },
+          "birthDate": "2057-09-03",
+          "parentKeys": ["DF-CHOI-02"],
+          "timelineBio": { "ko": "2074년부터 공동체 교대 명부를 대조하고, 복무를 마친 아들 최일석과 2110년부터 실제 복무·반납 기록을 확인한다.", "en": "He reconciles community shift lists from 2074 and checks service and return records with his son Choi Ilseok from 2110, after Ilseok completes service." },
+          "narrative": {
+            "ko": "최태윤은 2074년부터 공동체 기록 담당자들과 교대마다 바뀐 명단을 대조한다. 사본만으로 당번을 확정하지 않고 실제 복무와 반납 기록을 확인하는 습관을 아들 최일석에게 가르친다. 최일석이 복무를 마치고 돌아오자 2110년부터 함께 명부를 확인하지만, 서기의 일은 다른 담당자들 앞에서 정확성을 인정받아 맡게 한다.",
+            "en": "From 2074 Choi Taeyun compares changing shift lists with the community's record keepers. He teaches his son Choi Ilseok to verify actual service and returns rather than establish duty from a copy alone. After Ilseok returns from completed service, they check registers together from 2110, while Ilseok earns the clerk's work by demonstrating accuracy before other keepers."
+          },
+          "events": [
+            { "year": 2074, "kind": "community-record-training" },
+            { "year": 2110, "kind": "son-record-work" }
+          ]
+        },
+        {
+          "key": "K1016",
+          "generation": 4,
+          "personId": "K1016",
+          "name": {
+            "ko": "최일석",
+            "en": "Choi Ilseok"
+          },
+          "birthDate": "2087-09-03",
+          "parentKeys": [
+            "DF-CHOI-03",
+            "FH-K1016-M-01"
+          ],
+          "narrative": {
+            "ko": "구로에서 태어난 최일석은 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온다. 이후 기록 담당자들과 명부를 대조하는 일을 거쳐 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하는 것은 자신이 맡은 일을 지키기 위한 선택이다.",
+            "en": "Born in Guro, Choi Ilseok serves as a soldier in the contemporary mobilization remnants and returns at the end of his term in 2109. He then works with record keepers to reconcile registers before taking the mobilization-register clerk's job on the Guro–Geumcheon axis. In 2126 he negotiates subcontracts with Phạm Văn Đức, inspects Lin Xiaomei's passage, and guards against a deserter squad using the register to establish a private army. Keeping keys and registers apart is his own choice for protecting the work entrusted to him."
+          },
+          "events": [
+            {
+              "year": 2109,
+              "kind": "present-person-service-completed"
+            },
+            {
+              "year": 2110,
+              "kind": "register-work"
+            },
+            {
+              "year": 2126,
+              "kind": "opening-register-custody"
+            }
+          ],
+          "timelineBio": {
+            "ko": "구로에서 태어난 최일석은 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온다. 이후 기록 담당자들과 명부를 대조하는 일을 거쳐 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하는 것은 자신이 맡은 일을 지키기 위한 선택이다. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2026년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.",
+            "en": "Born in Guro, Choi Ilseok serves as a soldier in the contemporary mobilization remnants and returns at the end of his term in 2109. He then works with record keepers to reconcile registers before taking the mobilization-register clerk's job on the Guro–Geumcheon axis. In 2126 he negotiates subcontracts with Phạm Văn Đức, inspects Lin Xiaomei's passage, and guards against a deserter squad using the register to establish a private army. Keeping keys and registers apart is his own choice for protecting the work entrusted to him. Choi Ilseok was born in Guro in 2087. After completing service in the contemporary mobilization remnants in 2109, he compared duty registers with his father Choi Taeyun. As the Guro–Geumcheon mobilization clerk, he checks service and equipment-return records and opposes using the register to form a private army. Choi Gyeongseop carried the reserve company register out in 2026 and distinguished reachable people from evacuees. His son Munjae separated the old evacuation list from current duty rosters, and his grandson Taeyun checked shift registers. After completing service in 2109, Ilseok compared service and return records with his father."
+          }
+        }
+      ]
+    }
+  ]
+}

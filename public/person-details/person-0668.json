@@ -12,6 +12,262 @@
   "stateName": "동방사",
   "sourceRoute": "/world/Cast-State-05#인물-강숲유",
   "detailRoute": "/people/person-0668",
+  "birthDate": "2086-05-03",
+  "birthday": "05-03",
+  "age": 40,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-05.json#/content/467",
+    "lore/characters/Cast-State-05.json#/content/469",
+    "lore/characters/Cast-State-05.json#/content/470"
+  ],
+  "familyTree": {
+    "personId": "K668",
+    "nodes": [
+      {
+        "id": "K668",
+        "personId": "K668",
+        "kind": "person",
+        "name": "강숲유",
+        "birthDate": "2086-05-03",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K668"
+          },
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강숲유-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0668"
+      },
+      {
+        "id": "FH-K668-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "강재은",
+        "birthDate": "2056-05-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "강재은은 대합실 당직에서 관문 교대 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강숲유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K668-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "강재연",
+        "birthDate": "2026-05-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "강재연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강숲유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K668-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오재완",
+        "birthDate": "2056-05-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "오재완은 대합실 당직에서 관문 교대 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강숲유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K668-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송재진",
+        "birthDate": "2026-05-03",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송재진은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-05.json",
+                "anchor": "인물-강숲유-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K668-P-01:K668:biological",
+        "from": "FH-K668-P-01",
+        "to": "K668",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K668-P-02:FH-K668-P-01:biological",
+        "from": "FH-K668-P-02",
+        "to": "FH-K668-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K668-M-01:K668:biological",
+        "from": "FH-K668-M-01",
+        "to": "K668",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K668-M-02:FH-K668-M-01:biological",
+        "from": "FH-K668-M-02",
+        "to": "FH-K668-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-05.json",
+            "anchor": "인물-강숲유-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K668",
     "personId": "person-0668",
@@ -149,7 +405,14 @@
     "Cast-State-05"
   ],
   "relations": {
-    "outgoing": [],
+    "outgoing": [
+      {
+        "from": "강숲유",
+        "type": "계약",
+        "to": "나효원",
+        "basis": "강숲유는 작업반과 나눈 교대 조건을 나효원에게 전한다. 나효원은 찍힌 대기표와 창구 순서를 확인해 교대가 다시 열릴 때 급수 줄과 통행 접수가 함께 끊기지 않게 한다."
+      }
+    ],
     "incoming": []
   }
 }

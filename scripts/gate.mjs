@@ -209,7 +209,10 @@ export function personVisibleFields(person, rel) {
     person.gurps.skills?.forEach((skill, index) => out.push([`${rel}#/gurps/skills/${index}/${skill.ko ? 'ko' : 'name'}`, skill.ko || skill.name]))
   }
   for (const [key, fields] of [['unit', ['type', 'quality', 'note']], ['territory', ['fief_name', 'type', 'station', 'state', 'note']], ['wandering_force', ['type', 'current_location', 'note']]]) {
-    if (person[key]) for (const field of fields) out.push([`${rel}#/${key}/${field}`, person[key][field]])
+    if (person[key]) for (const field of fields) {
+      const value = person[key][field]
+      if (value != null && value !== '') out.push([`${rel}#/${key}/${field}`, value])
+    }
   }
   person.unit?.composition?.forEach((value, index) => out.push([`${rel}#/unit/composition/${index}`, value]))
   if (person.territory?.settlement) for (const field of ['name', 'type', 'description']) out.push([`${rel}#/territory/settlement/${field}`, person.territory.settlement[field]])

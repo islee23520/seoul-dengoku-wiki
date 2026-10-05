@@ -12,6 +12,260 @@
   "stateName": "안국총림",
   "sourceRoute": "/world/Cast-State-10#인물-윤초아",
   "detailRoute": "/people/person-0250",
+  "birthDate": "2084-04-17",
+  "birthday": "04-17",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-10.json#/content/83"
+  ],
+  "familyTree": {
+    "personId": "K249",
+    "nodes": [
+      {
+        "id": "K249",
+        "personId": "K249",
+        "kind": "person",
+        "name": "윤초아",
+        "birthDate": "2084-04-17",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K249"
+          },
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 장경 필사 주지 자리는 고아 명부 줄로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤초아-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0250"
+      },
+      {
+        "id": "FH-K249-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현찬",
+        "birthDate": "2054-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "윤현찬은 보국문 피난 막사에서 문중 표 결과·구호 물자 출처 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤초아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K249-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤현혁",
+        "birthDate": "2024-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤현혁은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤초아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K249-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "송현완",
+        "birthDate": "2054-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "송현완은 보국문 피난 막사에서 문중 표 결과·구호 물자 출처 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤초아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K249-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "조현범",
+        "birthDate": "2024-04-17",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "조현범은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-10.json",
+                "anchor": "인물-윤초아-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K249-P-01:K249:biological",
+        "from": "FH-K249-P-01",
+        "to": "K249",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K249-P-02:FH-K249-P-01:biological",
+        "from": "FH-K249-P-02",
+        "to": "FH-K249-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K249-M-01:K249:biological",
+        "from": "FH-K249-M-01",
+        "to": "K249",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K249-M-02:FH-K249-M-01:biological",
+        "from": "FH-K249-M-02",
+        "to": "FH-K249-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-10.json",
+            "anchor": "인물-윤초아-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K249",
     "personId": "person-0250",
@@ -169,6 +423,78 @@
       }
     ],
     "incoming": [
+      {
+        "from": "한민서",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "한민서는 교대 때 넘기는 장경 필사본을 윤초아가 게시한 문중 표 결과와 대조한다. 이중 지급 장부를 고쳤을 때처럼 어긋난 줄에 서명을 남겨, 다음 당직이 표 결과와 장부의 차이를 다시 확인할 수 있게 한다."
+      },
+      {
+        "from": "류소연",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "류소연은 젖은 인준 문서를 말려 남긴 필사본을 윤초아에게 인계한다. 윤초아는 신도 원장을 잇는 데 그 사본을 살펴 읽히지 않는 곳을 다시 확인하고, 물에 지워진 내용이 구두 약속만으로 채워지지 않게 한다."
+      },
+      {
+        "from": "허은서",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "허은서는 필사본의 의심스러운 날인을 발견하면 보존한 원본을 윤초아에게 넘긴다. 윤초아는 문중 표 결과와 구호 출처를 기록할 때 그 원본을 확인해, 위조된 사본이 신도 원장으로 이어지지 않게 한다."
+      },
+      {
+        "from": "차남원",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "차남원은 산중총회 표결 뒤 게시본과 필사본을 대조한 기록을 윤초아에게 넘긴다. 윤초아는 문중별 결과를 당일 게시하며 그 차이를 확인해, 다음 필사 당직이 틀린 표 수를 이어 쓰지 않게 한다."
+      },
+      {
+        "from": "박금은",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "박금은은 구호 상자의 출처 칸과 말로만 전해진 약속을 따로 필사해 윤초아에게 올린다. 윤초아는 상자별 출처를 확인해 구두 약속이 입고 사실로 바뀌지 않게 한다."
+      },
+      {
+        "from": "한카서",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "한카서는 보존한 필사본을 윤초아에게 넘긴다. 윤초아는 문중 표 결과와 구호 물자 출처를 확인해 젖어 지워진 줄을 구두 약속으로 대신 채우지 않는다."
+      },
+      {
+        "from": "홍차원",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "홍차원은 보존한 필사본을 윤초아에게 인계한다. 윤초아는 문중 표 결과와 구호 출처를 확인해 읽히지 않는 부분을 구두 약속만으로 채우지 않는다."
+      },
+      {
+        "from": "노금호",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "노금호는 따로 필사한 급수권 문서와 복무계약서의 중복 이름을 윤초아에게 넘긴다. 윤초아는 신도·복구복무 명부를 확인해 두 권리가 같은 서명으로 묶인 곳을 찾는다."
+      },
+      {
+        "from": "진하린",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "진하린은 필사 당직의 정정 기록을 윤초아에게 넘긴다. 윤초아는 구호 출처와 문중 표 기록을 확인해 지운 줄의 이유가 다음 필사본에서 빠지지 않게 한다."
+      },
+      {
+        "from": "임은나",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "임은나는 보존한 필사본을 윤초아에게 넘긴다. 윤초아는 구호 출처·문중 표 기록을 확인해 젖어 지워진 줄을 말로만 채우지 않는다."
+      },
+      {
+        "from": "문솔은",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "문솔은은 보존한 필사 원본을 윤초아에게 넘긴다. 윤초아는 문중 표와 구호 출처 기록을 확인해 의심 사본의 날인이 신도 원장으로 이어지지 않게 한다."
+      },
+      {
+        "from": "하빛은",
+        "type": "계약",
+        "to": "윤초아",
+        "basis": "하빛은은 필사 당직의 정정 기록을 윤초아에게 넘긴다. 윤초아는 구호 출처·문중 표를 확인해 지운 줄의 이유가 다음 필사본에서 빠지지 않게 한다."
+      },
       {
         "from": "소두",
         "type": "계약",

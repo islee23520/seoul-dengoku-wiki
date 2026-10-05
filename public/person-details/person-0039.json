@@ -12,6 +12,261 @@
   "stateName": "규격맹",
   "sourceRoute": "/world/Cast-State-02#인물-구찬솔",
   "detailRoute": "/people/person-0039",
+  "birthDate": "2086-10-29",
+  "birthday": "10-29",
+  "age": 40,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-02.json#/content/137",
+    "lore/characters/Cast-State-02.json#/content/139"
+  ],
+  "familyTree": {
+    "personId": "K039",
+    "nodes": [
+      {
+        "id": "K039",
+        "personId": "K039",
+        "kind": "person",
+        "name": "구찬솔",
+        "birthDate": "2086-10-29",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K039"
+          },
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 노량진 선창에서 자랐다. 구로 공구시장 물류상 자리는 저울 재점검 공개로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-구찬솔-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0039"
+      },
+      {
+        "id": "FH-K039-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "구승원",
+        "birthDate": "2056-10-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "구승원은 노량진 선창에서 공구 물류 거래 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-구찬솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K039-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "구승진",
+        "birthDate": "2026-10-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "구승진은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-구찬솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K039-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "정승정",
+        "birthDate": "2056-10-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2094,
+            "summary": "정승정은 노량진 선창에서 공구 물류 거래 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-구찬솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K039-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "윤승영",
+        "birthDate": "2026-10-29",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "윤승영은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-02.json",
+                "anchor": "인물-구찬솔-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K039-P-01:K039:biological",
+        "from": "FH-K039-P-01",
+        "to": "K039",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K039-P-02:FH-K039-P-01:biological",
+        "from": "FH-K039-P-02",
+        "to": "FH-K039-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K039-M-01:K039:biological",
+        "from": "FH-K039-M-01",
+        "to": "K039",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K039-M-02:FH-K039-M-01:biological",
+        "from": "FH-K039-M-02",
+        "to": "FH-K039-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-02.json",
+            "anchor": "인물-구찬솔-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K039",
     "personId": "person-0039",
@@ -159,6 +414,12 @@
       {
         "from": "구찬솔",
         "type": "계약",
+        "to": "이일섭",
+        "basis": "분공방의 곡물 손실 장부와 맞출 부품 운송 기록을 돌려준다"
+      },
+      {
+        "from": "구찬솔",
+        "type": "계약",
         "to": "김나율",
         "basis": "김나율의 숙련 명부를 화물 허가에 묶는 계약이고"
       },
@@ -170,6 +431,12 @@
       }
     ],
     "incoming": [
+      {
+        "from": "이일섭",
+        "type": "계약",
+        "to": "구찬솔",
+        "basis": "제1분공방의 곡물 손실 장부를 부품 운송 기록과 대조한다"
+      },
       {
         "from": "채리울",
         "type": "계약",

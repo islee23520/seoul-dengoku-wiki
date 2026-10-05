@@ -12,6 +12,260 @@
   "stateName": "대한민국정부",
   "sourceRoute": "/world/Cast-State-06#인물-어태산",
   "detailRoute": "/people/person-0165",
+  "birthDate": "2084-08-24",
+  "birthday": "08-24",
+  "age": 42,
+  "ageAsOf": "2126-12-31",
+  "sourceStatus": "owner-authored",
+  "sourceRefs": [
+    "lore/characters/Cast-State-06.json#/content/215"
+  ],
+  "familyTree": {
+    "personId": "K164",
+    "nodes": [
+      {
+        "id": "K164",
+        "personId": "K164",
+        "kind": "person",
+        "name": "어태산",
+        "birthDate": "2084-08-24",
+        "deathDate": null,
+        "status": "preserved",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json",
+            "anchor": "K164"
+          },
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2126,
+            "summary": "2126년 세대. 서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-어태산-list2"
+              }
+            ]
+          }
+        ],
+        "detailRoute": "/people/person-0165"
+      },
+      {
+        "id": "FH-K164-P-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "어승석",
+        "birthDate": "2054-08-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "어승석은 서울역 등기소에서 각국 인준일·사후 추인 증인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-어태산-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K164-P-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "어승준",
+        "birthDate": "2024-08-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "어승준은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-어태산-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K164-M-01",
+        "personId": null,
+        "kind": "historical",
+        "name": "오승솔",
+        "birthDate": "2054-08-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2092,
+            "summary": "오승솔은 서울역 등기소에서 각국 인준일·사후 추인 증인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-어태산-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      },
+      {
+        "id": "FH-K164-M-02",
+        "personId": null,
+        "kind": "historical",
+        "name": "송승솔",
+        "birthDate": "2024-08-24",
+        "deathDate": null,
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ],
+        "timeline": [
+          {
+            "year": 2026,
+            "summary": "송승솔은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "sourceRefs": [
+              {
+                "path": "lore/characters/Cast-State-06.json",
+                "anchor": "인물-어태산-list2"
+              },
+              {
+                "path": "lore/name-pools/cast-family-trees.json"
+              }
+            ]
+          }
+        ],
+        "detailRoute": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "FH-K164-P-01:K164:biological",
+        "from": "FH-K164-P-01",
+        "to": "K164",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K164-P-02:FH-K164-P-01:biological",
+        "from": "FH-K164-P-02",
+        "to": "FH-K164-P-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K164-M-01:K164:biological",
+        "from": "FH-K164-M-01",
+        "to": "K164",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      {
+        "id": "FH-K164-M-02:FH-K164-M-01:biological",
+        "from": "FH-K164-M-02",
+        "to": "FH-K164-M-01",
+        "type": "biological",
+        "status": "authored",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-State-06.json",
+            "anchor": "인물-어태산-list2"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      }
+    ],
+    "parentStatus": null
+  },
+  "proseContacts": [],
+  "household": {
+    "personFaith": "unknown",
+    "houseFaith": "unknown",
+    "humanoidAdmission": "deferred"
+  },
   "gurps": {
     "id": "K164",
     "personId": "person-0165",
@@ -151,6 +405,37 @@
         "basis": "조하린의 철제 함 습도와 보관 주기를 맞추며"
       }
     ],
-    "incoming": []
+    "incoming": [
+      {
+        "from": "민시현",
+        "type": "계약",
+        "to": "어태산",
+        "basis": "민시현은 이중 지급을 고친 장부의 서명과 관련 인준 기록을 어태산에게 가져간다. 어태산은 벽에 적힌 인준일과 보관 원본을 찾아 날짜를 확인하고, 사후 추인이 필요하면 당시 증인 두 명을 다시 불러 소급 날인으로 빈칸을 덮지 않게 한다."
+      },
+      {
+        "from": "조새준",
+        "type": "계약",
+        "to": "어태산",
+        "basis": "조새준은 젖은 인준 문서의 필사본을 원본과 함께 어태산에게 가져간다. 어태산은 보관한 인준일을 찾아 지워진 날짜를 확인하되 늦게 온 사본의 날짜를 소급해 고치지 않는다."
+      },
+      {
+        "from": "권숲윤",
+        "type": "계약",
+        "to": "어태산",
+        "basis": "권숲윤은 이중 지급을 바로잡은 서명과 관련 인준 기록을 어태산에게 가져간다. 어태산은 보관 원본의 날짜와 증인을 확인해 같은 인준이 다른 날짜로 다시 지급 근거가 된 곳을 찾는다."
+      },
+      {
+        "from": "노달호",
+        "type": "계약",
+        "to": "어태산",
+        "basis": "노달호는 이중 지급 정정의 서명과 인준 기록을 어태산에게 가져간다. 어태산은 날짜와 보관 원본을 확인해 같은 인준이 다른 지급 근거로 다시 쓰인 곳을 찾는다."
+      },
+      {
+        "from": "남구원",
+        "type": "계약",
+        "to": "어태산",
+        "basis": "남구원은 이중 지급 정정과 인준 기록을 어태산에게 가져간다. 어태산은 원본 날짜와 증인을 확인해 같은 인준이 다른 지급 근거로 다시 쓰인 곳을 찾는다."
+      }
+    ]
   }
 }
