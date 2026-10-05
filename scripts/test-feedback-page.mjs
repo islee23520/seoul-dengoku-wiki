@@ -29,6 +29,7 @@ const successfulFetch = async (url) => {
   if (url.endsWith('/auth/session')) return json(session)
   if (url.endsWith('/submissions')) return json({ submissions: [row] })
   if (url.endsWith('/submissions/42')) return json(detail)
+  if (url.endsWith('/submissions/42/objections')) return json({ objections: [] })
   if (url.endsWith('/submissions/42/redact')) return json(redacted)
   throw new Error(`Unexpected endpoint ${url}`)
 }
@@ -68,22 +69,23 @@ test('redaction requires explicit confirmation and fresh session CSRF; failure k
   let fail = true
   await mount(async (url) => url.endsWith('/redact') && fail ? json({ error: { code: 'service-unavailable' } }, 503) : successfulFetch(url), async (host, fetcher) => {
     await act(async () => click(host, '보기'))
-    assert.equal(fetcher.mock.calls.length, 3)
+    assert.equal(fetcher.mock.calls.length, 4)
     await act(async () => click(host, '내 제보 내용 삭제'))
-    assert.equal(fetcher.mock.calls.length, 3)
+    assert.equal(fetcher.mock.calls.length, 4)
     assert.match(host.textContent, /복구할 수 없습니다/)
     await act(async () => click(host, '내용 삭제 확인'))
     assert.match(host.querySelector('[role="alert"]')?.textContent ?? '', /사용할 수 없습니다/)
     assert.match(host.textContent, /바꿔 주세요/)
     fail = false
     await act(async () => click(host, '내용 삭제 확인'))
-    assert.equal(fetcher.mock.calls[3][0], '/api/feedback/auth/session')
-    assert.equal(fetcher.mock.calls[4][1].headers['x-csrf-token'], 'server-csrf')
-    assert.equal(fetcher.mock.calls[4][1].method, 'POST')
-    assert.equal(fetcher.mock.calls[4][1].credentials, 'include')
-    assert.equal(fetcher.mock.calls[4][1].redirect, 'error')
+    assert.equal(fetcher.mock.calls[4][0], '/api/feedback/auth/session')
+    assert.equal(fetcher.mock.calls[5][1].headers['x-csrf-token'], 'server-csrf')
+    assert.equal(fetcher.mock.calls[5][1].method, 'POST')
+    assert.equal(fetcher.mock.calls[5][1].credentials, 'include')
+    assert.equal(fetcher.mock.calls[5][1].redirect, 'error')
     assert.match(host.textContent, /제보 내용이 삭제되었습니다/)
     assert.equal(host.textContent.includes('바꿔 주세요'), false)
+    assert.equal([...host.querySelectorAll('button')].some((button) => button.textContent === '이의 제기하기'), false)
     assert.equal(host.querySelector('button[aria-pressed="true"]') !== null, true)
   })
 })
@@ -103,6 +105,7 @@ test('reload discards old detail and does not leak it after a new request resolv
   await mount(async (url) => {
     if (url.endsWith('/auth/session')) return json(session)
     if (url.endsWith('/submissions')) return json({ submissions: [row] })
+    if (url.endsWith('/objections')) return json({ objections: [] })
     if (url.endsWith('/submissions/42')) return ++requested === 1 ? pending.promise : json({ ...detail, body: '최신 답변' })
     throw new Error('unexpected request')
   }, async (host, fetcher) => {

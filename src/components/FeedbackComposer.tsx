@@ -1,12 +1,79 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { FeedbackApiError, feedbackReasons, submitFeedback, type FeedbackReason } from '../feedbackApi'
+import { FeedbackApiError, feedbackReasons, submitFeedback, ownFeedbackObjections, submitFeedbackObjection, type FeedbackReason, type FeedbackObjection } from '../feedbackApi'
 import { captureFeedbackAnchor, type FeedbackAnchor, type FeedbackDocument } from '../feedbackSelection'
 
 type Draft = { anchor: FeedbackAnchor; reason: FeedbackReason; body: string; alternative: string; idempotencyKey: string; reconfirmationRequired: boolean; editVersion: number; authorityVersion: 'document-view.v1' | 'historical' }
 const draftKey = (route: string) => `wiki-feedback-draft.v1:${route}`
 const quote = (anchor: FeedbackAnchor) => anchor.selections.map((part) => part.exactQuote).join('\n')
 const newKey = () => crypto.randomUUID()
+const labels = { open: '접수', resolved: '해결', rejected: '반려' } as const
+
+export function FeedbackObjections({ targetId, loadHistory = false, readOnly = false }: { targetId: number; loadHistory?: boolean; readOnly?: boolean }) {
+  const [records, setRecords] = useState<readonly FeedbackObjection[]>([])
+  const [editing, setEditing] = useState(false)
+  const [reason, setReason] = useState('')
+  const [pending, setPending] = useState(false)
+  const [loading, setLoading] = useState(loadHistory)
+  const [message, setMessage] = useState('')
+  const [loginRequired, setLoginRequired] = useState(false)
+  const action = useRef<AbortController | null>(null)
+
+  useEffect(() => {
+    const controller = new AbortController()
+    if (loadHistory) {
+      void ownFeedbackObjections(targetId, fetch, controller.signal).then((value) => {
+        if (!controller.signal.aborted) setRecords(value)
+      }).catch((error: unknown) => {
+        if (!controller.signal.aborted) {
+          setLoginRequired(error instanceof FeedbackApiError && error.status === 401)
+          setMessage(error instanceof Error ? error.message : '이의 제기 내역을 불러오지 못했습니다.')
+        }
+      }).finally(() => { if (!controller.signal.aborted) setLoading(false) })
+    }
+    return () => { controller.abort(); action.current?.abort(); action.current = null }
+  }, [targetId, loadHistory])
+
+  const submit = async () => {
+    if (action.current || loading || readOnly) return
+    const controller = new AbortController()
+    action.current = controller
+    setPending(true)
+    setMessage('')
+    setLoginRequired(false)
+    try {
+      const record = await submitFeedbackObjection(targetId, reason.trim(), fetch, controller.signal)
+      if (controller.signal.aborted) return
+      setRecords((current) => [...current, record])
+      setEditing(false)
+      setReason('')
+      setMessage('이의 제기가 접수되었습니다.')
+    } catch (error) {
+      if (controller.signal.aborted) return
+      setLoginRequired(error instanceof FeedbackApiError && error.status === 401)
+      setMessage(error instanceof Error ? error.message : '이의 제기를 제출하지 못했습니다.')
+    } finally {
+      if (action.current === controller) { action.current = null; setPending(false) }
+    }
+  }
+
+  return <section aria-label={`제보 ${targetId} 이의 제기`}>
+    <h3>이의 제기</h3>
+    {loading && <p role="status">이의 제기 내역을 불러오고 있습니다.</p>}
+    {loadHistory && !loading && !message && records.length === 0 && <p>이의 제기 내역이 없습니다.</p>}
+    {records.length > 0 && <ol>{records.map((record) => <li key={record.id}>
+      <p>#{record.id} · {labels[record.status]} · {record.createdAt}</p><p>{record.reason ?? '이 제보의 이의 제기 내용이 삭제되었습니다.'}</p>
+      <p>최근 변경: {record.updatedAt}</p>{record.reviewReason && <p>처리 이유: {record.reviewReason}</p>}
+    </li>)}</ol>}
+    {!readOnly && (!editing ? <button type="button" disabled={loading} onClick={() => setEditing(true)}>이의 제기하기</button> : <form onSubmit={(event) => { event.preventDefault(); void submit() }}>
+      <label>이의 제기 이유<textarea required maxLength={10000} disabled={pending} value={reason} onChange={(event) => setReason(event.target.value)} /></label>
+      <div className="feedback-actions"><button type="button" disabled={pending} onClick={() => setEditing(false)}>취소</button><button type="submit" disabled={pending || !reason.trim()}>{pending ? '제출 중…' : '이의 제기 제출'}</button></div>
+    </form>)}
+    {message && <p role="status">{message}</p>}
+    {loginRequired && <p><a href="/api/feedback/auth/login">GitHub로 로그인</a></p>}
+  </section>
+}
+
 const isString = (value: unknown): value is string => typeof value === 'string'
 const validAnchor = (anchor: unknown, route: string): anchor is FeedbackAnchor => {
   if (!anchor || typeof anchor !== 'object') return false
@@ -35,6 +102,7 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
   const [message, setMessage] = useState('')
   const [storageWarning, setStorageWarning] = useState('')
   const [loginRequired, setLoginRequired] = useState(false)
+  const [accepted, setAccepted] = useState<{ id: number; anchor: FeedbackAnchor } | null>(null)
   const actionRef = useRef<HTMLButtonElement>(null)
   const requestRef = useRef<{ id: symbol; controller: AbortController; key: string } | null>(null)
 
@@ -51,6 +119,7 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
     const restored = loaded && (loaded.authorityVersion !== 'document-view.v1' || loaded.anchor.documentId !== documentInfo.documentId || loaded.anchor.sourceRevision !== documentInfo.sourceRevision || loaded.anchor.locale !== locale) ? { ...loaded, reconfirmationRequired: true, authorityVersion: 'historical' as const } : loaded
     setOwned({ route: pathname, draft: restored })
     setLoginRequired(false)
+    setAccepted(null)
     setState(restored?.reconfirmationRequired ? 'reconfirm' : 'draft')
     setMessage(restored?.reconfirmationRequired ? '원문이 변경되었습니다. 현재 문장을 다시 선택해 확인해 주세요.' : '')
   }, [pathname, documentInfo.sourceRevision])
@@ -75,6 +144,7 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
     if (!root) return
     const anchor = captureFeedbackAnchor(root, documentInfo, pathname, locale)
     if (!anchor) { setState('error'); setMessage('본문에서 제보할 문장을 먼저 선택해 주세요.'); return }
+    setAccepted(null)
     replaceDraft({ anchor, reason: draft?.reason ?? feedbackReasons[0], body: draft?.body ?? '', alternative: draft?.alternative ?? '', idempotencyKey: newKey(), reconfirmationRequired: false, authorityVersion: 'document-view.v1', editVersion: (draft?.editVersion ?? 0) + 1 })
     setState('draft'); setMessage('선택한 문장을 브라우저에 임시 저장했습니다.')
   }
@@ -94,9 +164,10 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
     setLoginRequired(false)
     setState('pending'); setMessage('제출 중입니다.')
     try {
-      await submitFeedback({ anchor: submitted.anchor, reason: submitted.reason, body: submitted.body.trim(), ...(submitted.alternative.trim() ? { alternative: submitted.alternative.trim() } : {}) }, { idempotencyKey: submitted.idempotencyKey, signal: request.controller.signal })
+      const record = await submitFeedback({ anchor: submitted.anchor, reason: submitted.reason, body: submitted.body.trim(), ...(submitted.alternative.trim() ? { alternative: submitted.alternative.trim() } : {}) }, { idempotencyKey: submitted.idempotencyKey, signal: request.controller.signal })
       if (requestRef.current?.id !== request.id) return
       requestRef.current = null
+      setAccepted({ id: record.id, anchor: submitted.anchor })
       setOwned((current) => current.route === pathname && current.draft?.idempotencyKey === submitted.idempotencyKey && current.draft.editVersion === submitted.editVersion ? { route: pathname, draft: null } : current)
       setState('success'); setMessage('제보가 접수되었습니다.')
     } catch (error) {
@@ -125,6 +196,7 @@ export default function FeedbackComposer({ rootRef, documentInfo, locale }: { ro
       <div className="feedback-actions"><button type="button" onClick={cancel}>취소</button><button type="submit" disabled={state === 'pending' || draft.reconfirmationRequired}>{state === 'pending' ? '제출 중…' : draft.reconfirmationRequired ? '문장을 다시 선택하세요' : '로그인하고 제출'}</button></div>
     </form>}
     {message && <p className={`feedback-status feedback-${state}`} role="status">{message}</p>}
+    {accepted && <div><blockquote className="feedback-preview">{quote(accepted.anchor)}</blockquote><FeedbackObjections key={accepted.id} targetId={accepted.id} /></div>}
     {draft && loginRequired && <p><a href="/api/feedback/auth/login">GitHub로 로그인</a></p>}
     {storageWarning && <p className="feedback-status feedback-storage-warning" role="status">{storageWarning}</p>}
   </aside>

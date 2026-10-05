@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FeedbackObjections } from '../components/FeedbackComposer'
 import { FeedbackApiError, ownFeedbackDetail, ownFeedbackList, redactOwnFeedback, verifiedFeedbackIdentity, type FeedbackDetail, type FeedbackIdentity, type OwnFeedback } from '../feedbackApi'
 
 type PageState =
@@ -130,6 +131,7 @@ export default function FeedbackPage() {
               {!confirm ? <div className="territory-toolbar"><button type="button" disabled={pending} onClick={() => setConfirm(true)}>내 제보 내용 삭제</button></div> : <div className="territory-toolbar" role="group" aria-label="제보 내용 삭제 확인"><p>선택한 제보의 원문과 내용을 삭제합니다. 삭제한 내용은 복구할 수 없습니다.</p><button type="button" disabled={pending} onClick={() => setConfirm(false)}>취소</button><button type="button" disabled={pending} onClick={() => void redact(active.id)}>{pending ? '삭제 중…' : '내용 삭제 확인'}</button></div>}
             </>}
             <h3>처리 이력</h3><ol>{active.value.events.map((event, index) => <li key={`${event.at}:${index}`}>{event.at} · {statusLabel[event.status]}{event.reason ? ` · ${event.reason}` : ''}</li>)}</ol>
+            <FeedbackObjections key={`${active.id}:${revision}:${active.value.status}`} targetId={active.id} loadHistory readOnly={active.value.status === 'redacted'} />
           </>}
           {message && <p role={message === '제보 내용이 삭제되었습니다.' ? 'status' : 'alert'}>{message}</p>}
         </section>}
