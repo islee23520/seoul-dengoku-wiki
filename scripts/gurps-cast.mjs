@@ -317,6 +317,18 @@ export function quoteHolds(root, ev) {
   return typeof leafText(node) === 'string' && leafText(node).includes(ev.quote)
 }
 
+// A valid quotation can still describe a historical actor rather than the sheet's person.
+function ancestorCitation(root, ev) {
+  if (!ev.pointer?.startsWith('/content/')) return false
+  const { json } = readSource(root, ev.path)
+  const block = json?.content?.[Number(ev.pointer.split('/')[2])]
+  const actor = leafText(block?.text?.ko).match(/선대 ([가-힣]+?)(?:은|는|이|가) /u)?.[1]
+  if (!actor) return false
+  return readSource(root, 'lore/name-pools/cast-family-trees.json').json.nodes.some((node) =>
+    node.kind === 'historical' && node.name === actor &&
+    [...node.sourceRefs, ...node.timeline.flatMap((event) => event.sourceRefs)].some((ref) => ref.path === ev.path && ref.anchor === block.anchor))
+}
+
 const SECTION = /^(?:\*\*)?(생애|관직|무공|일화|가문|관계|야망|공포|개입|신념)\.(?:\*\*)?\s*/u
 const TIER_BY_SECTION = { 관직: 'B', p1: 'B', 성격: 'B', 직위: 'B', '통치 방식': 'B', '통치·교섭 방식': 'B', '무장 접근': 'C', 일화: 'C', 생애: 'C', summary: 'C', narrative: 'C' }
 const ACTION_FIELDS = new Set(['직위', '무장 접근', '통치 방식', '통치·교섭 방식', '성격'])
@@ -455,6 +467,7 @@ export function derivePerson(root, person, castNames) {
       if (field.key === '생업') for (const { skill, tier } of occupationSkills(field.value)) addSkill(skill, tier, evidence(card.path, field.pointer, field.quote), '생업')
     }
     for (const s of sentences) {
+      if (ancestorCitation(root, evidence(card.path, s.pointer, s.text))) continue
       if (s.section === '생업' || ['관계', '야망', '공포', '개입', '가문', '신념'].includes(s.section)) continue
       if (lead?.exclude?.includes(s.text)) { review.push({ section: s.section, text: s.text, verdict: `leader-exclude ${lead.q}` }); continue }
       const pinned = lead?.add?.find((x) => x.quote === s.text)
@@ -742,6 +755,9 @@ export function verify(doc, root = ROOT) {
     const url = `/people/person-${String(vi + 1).padStart(4, '0')}`
     if (vi === undefined || p.url !== url) fail(`${tag} URL ${p.url} ≠ ${url}`)
     if (values[vi]?.state !== p.state) fail(`${tag} state ${p.state}`)
+    for (const e of [...Object.values(p.attributes ?? {}).flatMap((a) => a.evidence ?? []), ...(p.skills ?? []).flatMap((s) => s.evidence ?? [])]) {
+      if (ancestorCitation(root, e)) fail(`${tag}: 선대 행위는 후손 능력·기술의 근거가 아니다 ${e.path}#${e.pointer}`)
+    }
     const exception = APPROVED_EXCEPTIONS[p.id]
     if (exception) {
       for (const [a, value] of Object.entries(exception.attributes)) {
