@@ -17,16 +17,41 @@ const parseOrThrow = (payload, id) => {
   return result.sheet
 }
 
+const assertRenderedSecondary = (html, secondary) => {
+  for (const [label, key] of [['HP 체력', 'HP'], ['FP 피로', 'FP'], ['Will 의지', 'Will'], ['Per 지각', 'Per'], ['Speed', 'BasicSpeed'], ['Dodge 회피', 'Dodge']]) {
+    assert.ok(html.includes(`<span>${label}</span><span>${secondary[key]}</span>`))
+  }
+}
+
 test('발급된 Speed·Dodge·특성·미사용 CP를 값 그대로 그린다', () => {
+  for (const id of ['K1003', 'K1009']) {
+    const record = issuedBy(id)
+    const sheet = parseOrThrow(record, routeId(record))
+    assert.deepEqual(sheet.secondary, Object.fromEntries(['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'Dodge']
+      .filter((key) => typeof record.secondary[key] === 'number').map((key) => [key, record.secondary[key]])))
+    const html = markup(sheet)
+    assertRenderedSecondary(html, record.secondary)
+  }
   const jo = markup(parseOrThrow(issuedBy('K1003'), 'person-1003'))
-  const shin = markup(parseOrThrow(issuedBy('K1009'), 'person-1009'))
   const baselineRecord = produced.find((entry) => entry.baseline)
   const baseline = markup(parseOrThrow(baselineRecord, routeId(baselineRecord)))
-  assert.match(jo, /<span>Dodge 회피<\/span><span>10<\/span>/u)
-  assert.match(shin, /<span>Speed<\/span><span>6\.25<\/span>/u)
-  assert.match(shin, /<span>Dodge 회피<\/span><span>10<\/span>/u)
   assert.match(jo, /Combat Reflexes/u)
   assert.match(baseline, /<span>미사용<\/span><span>75 CP<\/span>/u)
+})
+
+test('Speed와 Dodge는 능력치 공식 대신 발급된 값을 보존한다', () => {
+  const record = { ...issuedBy('K1003'), secondary: { ...issuedBy('K1003').secondary, BasicSpeed: 4.25, Dodge: 8 } }
+  const sheet = parseOrThrow(record, routeId(record))
+  assert.equal(sheet.secondary.BasicSpeed, 4.25)
+  assert.equal(sheet.secondary.Dodge, 8)
+  const html = markup(sheet)
+  assert.match(html, /<span>Speed<\/span><span>4\.25<\/span>/u)
+  assert.match(html, /<span>Dodge 회피<\/span><span>8<\/span>/u)
+  assertRenderedSecondary(html, record.secondary)
+  for (const key of ['BasicSpeed', 'Dodge']) {
+    const wrong = { ...sheet, secondary: { ...sheet.secondary, [key]: issuedBy('K1003').secondary[key] } }
+    assert.throws(() => assertRenderedSecondary(markup(wrong), record.secondary), assert.AssertionError)
+  }
 })
 
 test('경계는 잘못된 traits와 다른 인물 응답을 명시적으로 거부한다', () => {
