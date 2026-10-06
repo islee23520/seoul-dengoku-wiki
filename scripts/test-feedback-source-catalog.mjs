@@ -21,7 +21,7 @@ test('public heading aliases preserve reader and feedback identity without hidin
   {kind:'paragraph',anchor:'acts',text:{ko:'선거와 갱신',en:'Election and renewal'}},
  ]}
  for(const locale of ['ko','en']){
-  const markdown=renderLoreMarkdown(envelope,locale).replace(/^#\s+.+\n+/,'')
+  const markdown=renderLoreMarkdown(envelope,locale).replace(/^#\s+.+\n+/m,'')
   const blocks=fromMarkdown(markdown,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]}).children
   const html=renderToStaticMarkup(createElement(DocumentContent,{content:wikiArticleContent(blocks),locale}))
   for(const id of ['신앙','faith'])assert.equal(html.split('id="'+id+'"').length-1,1)
