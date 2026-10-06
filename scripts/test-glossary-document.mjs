@@ -25,17 +25,22 @@ const entry = (overrides = {}) => ({
 })
 
 test('the Korean page renders the canonical terms, definitions, aliases and section order', () => {
-  const expected = ['# 용어 사전', '']
-  for (const section of glossarySections) {
-    const terms = entries.filter(({ category }) => section.categories.includes(category))
-    if (!terms.length) continue
-    expected.push(`## ${section.ko}`, '')
-    for (const { display_name_ko: name, reader_definition_ko: definition, aliases } of terms) {
-      expected.push(`- **${name}**: ${definition}${aliases.length ? ` (별칭: ${aliases.join(', ')})` : ''}`)
-    }
-    expected.push('')
-  }
-  assert.equal(render('ko'), `${expected.join('\n').trimEnd()}\n`)
+  const markdown = render('ko')
+  assert.match(markdown, /^<a id="glossary"><\/a>\n\n# 용어 사전\n/u)
+  const headingAnchors = [...markdown.matchAll(/^<a id="([^"]+)"><\/a>$/gmu)].map((match) => match[1])
+  assert.deepEqual(headingAnchors, ['glossary', ...glossarySections.map((_, index) => `glossary-s${index + 1}`)])
+  const headings = [...markdown.matchAll(/^## (.+)$/gmu)].map((match) => match[1])
+  assert.deepEqual(headings, glossarySections
+    .filter((section) => entries.some(({ category }) => section.categories.includes(category)))
+    .map(({ ko }) => ko))
+  const actualEntries = [...markdown.matchAll(/^- \*\*(.+?)\*\*: (.+)$/gmu)].map((match) => [match[1], match[2]])
+  const expectedEntries = glossarySections.flatMap((section) => entries
+    .filter(({ category }) => section.categories.includes(category))
+    .map(({ display_name_ko, reader_definition_ko, aliases }) => [
+    display_name_ko,
+    `${reader_definition_ko}${aliases.length ? ` (별칭: ${aliases.join(', ')})` : ''}`,
+  ]))
+  assert.deepEqual(actualEntries, expectedEntries)
 })
 
 test('the English page renders every entry under the English section labels in the same order', () => {
