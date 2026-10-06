@@ -31,7 +31,11 @@ test('seven owner-liege details render the known liege and exact owner term with
     assert.ok(html.includes(ownerTerm), `${file} owner term ${ownerTerm}`)
     assert.ok(!html.includes('undefined'), `${file} must not render undefined`)
     assert.ok(!html.includes('null 소속'), `${file} must not render a null court`)
-    assert.ok(!/court:(K001|K1005)/.test(html), `${file} must not invent a court for the ruler liege`)
+    if (file === 'person-0003.json') {
+      assert.ok(html.includes('court:K001'), `${file} approved court membership`)
+    } else {
+      assert.ok(!/court:(K001|K1005)/.test(html), `${file} must not invent a court for the ruler liege`)
+    }
   }
 })
 
