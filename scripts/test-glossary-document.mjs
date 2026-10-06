@@ -34,10 +34,13 @@ test('the Korean page renders the canonical terms, definitions, aliases and sect
     .filter((section) => entries.some(({ category }) => section.categories.includes(category)))
     .map(({ ko }) => ko))
   const actualEntries = [...markdown.matchAll(/^- \*\*(.+?)\*\*: (.+)$/gmu)].map((match) => [match[1], match[2]])
-  assert.deepEqual(actualEntries, entries.map(({ display_name_ko, reader_definition_ko, aliases }) => [
+  const expectedEntries = glossarySections.flatMap((section) => entries
+    .filter(({ category }) => section.categories.includes(category))
+    .map(({ display_name_ko, reader_definition_ko, aliases }) => [
     display_name_ko,
     `${reader_definition_ko}${aliases.length ? ` (별칭: ${aliases.join(', ')})` : ''}`,
   ]))
+  assert.deepEqual(actualEntries, expectedEntries)
 })
 
 test('the English page renders every entry under the English section labels in the same order', () => {
