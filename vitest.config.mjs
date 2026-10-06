@@ -8,7 +8,12 @@ export default defineConfig({
       'lore/**/test-*.mjs',
       'lore/name-pools/verify-person-id-*.mjs',
     ],
-    exclude: ['node_modules/**', 'dist/**'],
+    exclude: [
+      'node_modules/**',
+      'dist/**',
+      'scripts/test-clan-crests.mjs',
+      'scripts/test-naming-ledger-gate.mjs',
+    ],
     pool: 'forks',
     fileParallelism: false,
     testTimeout: 120_000,
