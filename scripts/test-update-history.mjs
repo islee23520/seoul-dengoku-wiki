@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 
 import { latestUpdates } from './update-history.mjs'
+import { publicHouseContent } from './public-house-content.mjs'
 
 test('latest updates sorts newest entries first and returns only five', () => {
   const entries = [
@@ -53,12 +54,23 @@ test('all contract history is routed through the official updates page', async (
 })
 
 test('reader catalog excludes authoring documents and strips only projection headers', async () => {
-  const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
   const contract = JSON.parse(await readFile(new URL('../public/wiki-contract.json', import.meta.url), 'utf8'))
   const names = new Set(contract.documents.map((document) => document.slug))
 
   for (const slug of ['Cast-Profile-Contract', 'Cast-Registration-Template', 'Random-Cast-Roster']) assert.equal(names.has(slug), false)
-  assert.match(generator, /authoring\./)
-  assert.match(generator, /stripProjectionHeader/)
-  assert.match(generator, /original-fiction/)
+
+  const sourceLayer = { en: 'Source layer: original-fiction', ko: '출처층: original-fiction' }
+  const sourceDocument = {
+    slug: 'Operating-Houses',
+    content: [
+      { kind: 'heading', depth: 2 },
+      { kind: 'list', items: [{ en: 'House', ko: '가옥' }, { en: 'Type: example', ko: '유형: 예시' }, sourceLayer] },
+      { kind: 'paragraph', text: sourceLayer.en },
+    ],
+  }
+  const projected = publicHouseContent(sourceDocument)
+  assert.equal(projected.content[1].items.includes(sourceLayer), false)
+  assert.equal(projected.content[2], sourceDocument.content[2])
+  const otherDocument = publicHouseContent({ ...sourceDocument, slug: 'Other-Document' })
+  assert.equal(otherDocument.content, sourceDocument.content)
 })
