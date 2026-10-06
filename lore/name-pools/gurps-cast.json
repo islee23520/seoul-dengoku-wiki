@@ -12154,19 +12154,14 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
             {
               "path": "lore/characters/Cast-State-03.json",
               "pointer": "/content/259/text/ko",
               "quote": "비상 일지는 생명안전 연구책임자·안전심사·주민대표가 각각 한 부씩 보관하고, 한 부가 비면 열람을 전면 중지한다."
-            },
-            {
-              "path": "lore/characters/Cast-State-03.json",
-              "pointer": "/content/260/text/ko",
-              "quote": "붕괴 0년 대정전 때 광역 전력과 통신이 멈추자, 류하늘은 마곡 비상위원회의 권한 행사와 반환 시각을 분 단위로 적었다."
             }
           ]
         },
@@ -12195,22 +12190,17 @@
               "path": "lore/characters/Cast-State-03.json",
               "pointer": "/content/259/text/ko",
               "quote": "비상 일지는 생명안전 연구책임자·안전심사·주민대표가 각각 한 부씩 보관하고, 한 부가 비면 열람을 전면 중지한다."
-            },
-            {
-              "path": "lore/characters/Cast-State-03.json",
-              "pointer": "/content/260/text/ko",
-              "quote": "붕괴 0년 대정전 때 광역 전력과 통신이 멈추자, 류하늘은 마곡 비상위원회의 권한 행사와 반환 시각을 분 단위로 적었다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -12218,12 +12208,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -47089,19 +47079,14 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
             {
               "path": "lore/characters/Cast-State-12.json",
               "pointer": "/content/260/text/ko",
               "quote": "피난 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-12.json",
-              "pointer": "/content/261/text/ko",
-              "quote": "붕괴 0년 대정전의 밤에 흥지완은 공동 지휘망이 끊긴 신내 승강장에서 피난 인파를 대표해 문을 열었다."
             }
           ]
         },
@@ -47133,30 +47118,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
-        },
-        {
-          "name": "Leadership",
-          "ko": "지휘",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "C",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-12.json",
-              "pointer": "/content/261/text/ko",
-              "quote": "붕괴 0년 대정전의 밤에 흥지완은 공동 지휘망이 끊긴 신내 승강장에서 피난 인파를 대표해 문을 열었다."
-            }
-          ],
-          "cp": 4,
           "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -47164,12 +47133,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 12,
-        "spent": 52,
-        "unspent": 23,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",

@@ -15,6 +15,77 @@ const find = (d, id) => d.people.find((p) => p.id === id)
 const sample = doc.people.find((p) => p.method === 'card-lexicon' && p.attributes.IQ.value === 11 && p.skills.length >= 2)
 const sampleIndex = doc.people.indexOf(sample)
 
+const family = JSON.parse(readFileSync(join(ROOT, 'lore/name-pools/cast-family-trees.json'), 'utf8'))
+const ancestors = [
+  ['K081', 'FH-K081-P-03', '류원택', '1988-03-15', 'lore/characters/Cast-State-03.json', '/content/260/text/ko'],
+  ['K320', 'FH-K320-P-03', '흥승호', '1999-03-20', 'lore/characters/Cast-State-12.json', '/content/261/text/ko'],
+]
+
+for (const [id, actorId, name, birthDate, path, pointer] of ancestors) {
+  test(`${id}: 2026 ancestor identity does not grant descendant training`, () => {
+    const actor = family.nodes.find((node) => node.id === actorId)
+    assert.equal(actor.name, name)
+    assert.equal(actor.birthDate, birthDate)
+    assert.equal(actor.kind, 'historical')
+    assert.equal(actor.personId, null)
+    assert.equal(actor.timeline[0].year, 2026)
+    assert.ok(actor.birthDate < '2026-01-01')
+    assert.ok(actor.deathDate === null || actor.deathDate >= '2026-12-31')
+    const source = JSON.parse(readFileSync(join(ROOT, path), 'utf8'))
+    const block = source.content[Number(pointer.split('/')[2])]
+    assert.ok(actor.timeline[0].sourceRefs.some((ref) => ref.path === path && ref.anchor === block.anchor))
+    assert.ok(block.text.ko[1].text.includes(name))
+    const derived = G.derivePerson(ROOT, find(doc, id), new Set(doc.people.map((p) => p.name)))
+    for (const person of [derived, find(doc, id)]) {
+      const evidence = [...Object.values(person.attributes).flatMap((at) => at.evidence), ...person.skills.flatMap((skill) => skill.evidence)]
+      assert.ok(!evidence.some((e) => e.path === path && e.pointer === pointer))
+      assert.equal(person.attributes.IQ.value, 11)
+      assert.ok(person.skills.some((skill) => skill.key === 'administration' || skill.name === 'Administration'))
+      if (id === 'K320') assert.ok(!person.skills.some((skill) => skill.key === 'leadership' || skill.name === 'Leadership'))
+    }
+  })
+
+  test(`${id}: generated detail renders the surviving descendant allocation`, async () => {
+    const { createElement } = await import('react')
+    const { renderToStaticMarkup } = await import('react-dom/server')
+    const { GurpsSheet } = await import('../src/pages/PersonDetailPage.tsx')
+    const sheet = find(doc, id)
+    const routeId = sheet.url.split('/').pop()
+    const detail = JSON.parse(readFileSync(join(ROOT, 'public/person-details', routeId + '.json'), 'utf8'))
+    assert.equal(detail.gurps.id, id)
+    assert.deepEqual(detail.gurps.attributes, Object.fromEntries(Object.entries(sheet.attributes).map(([key, { value, cp }]) => [key, { value, cp }])))
+    assert.deepEqual(detail.gurps.cp, sheet.cp)
+    assert.deepEqual(detail.gurps.skills, sheet.skills.map(({ name, ko, level, cp }) => ({ name, ko, level, cp })))
+    const html = renderToStaticMarkup(createElement(GurpsSheet, { gurps: detail.gurps }))
+    const administration = detail.gurps.skills.find((skill) => skill.name === G.SKILLS.administration.name)
+    assert.ok(administration)
+    const label = renderToStaticMarkup(createElement('span', { className: 'skill-name' }, administration.ko || administration.name))
+    assert.ok(html.includes(label))
+    if (id === 'K320') {
+      assert.ok(!detail.gurps.skills.some((skill) => skill.name === G.SKILLS.leadership.name))
+      const leadershipLabel = renderToStaticMarkup(createElement('span', { className: 'skill-name' }, G.SKILLS.leadership.ko || G.SKILLS.leadership.name))
+      assert.ok(!html.includes(leadershipLabel))
+    }
+  })
+
+  for (const receiver of [id, 'K082']) for (const field of ['ability', 'skill']) {
+    test(`${id} ancestor citation is rejected in ${receiver} ${field} by actor identity`, () => {
+      const source = JSON.parse(readFileSync(join(ROOT, path), 'utf8'))
+      const citation = { path, pointer, quote: G.pointerGet(source, pointer)[1].text.trim() }
+      assert.ok(G.quoteHolds(ROOT, citation))
+      const mutant = structuredClone(doc)
+      const person = find(mutant, receiver)
+      // Replacement keeps the evidence count and all CP arithmetic unchanged.
+      const target = field === 'ability' ? person.attributes.IQ : person.skills[0]
+      target.evidence[0] = citation
+      const errors = verify(mutant)
+      assert.equal(errors.length, 1)
+      assert.ok(errors[0].startsWith(receiver + ' ') && errors[0].includes('선대 행위'))
+      assert.ok(errors[0].includes(path + '#' + pointer))
+    })
+  }
+}
+
 test('커밋된 파일이 모든 검사를 통과한다', () => {
   assert.deepEqual(verify(doc), [])
 })
