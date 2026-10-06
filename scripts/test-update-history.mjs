@@ -3,6 +3,8 @@ import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 
 import { latestUpdates } from './update-history.mjs'
+import { publicHouseContent } from './public-house-content.mjs'
+import { approvedDocuments } from './catalog-admission.mjs'
 
 test('latest updates sorts newest entries first and returns only five', () => {
   const entries = [
@@ -56,9 +58,30 @@ test('reader catalog excludes authoring documents and strips only projection hea
   const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
   const contract = JSON.parse(await readFile(new URL('../public/wiki-contract.json', import.meta.url), 'utf8'))
   const names = new Set(contract.documents.map((document) => document.slug))
+  const loreRoot = new URL('../lore/', import.meta.url)
 
   for (const slug of ['Cast-Profile-Contract', 'Cast-Registration-Template', 'Random-Cast-Roster']) assert.equal(names.has(slug), false)
-  assert.match(generator, /authoring\./)
-  assert.match(generator, /stripProjectionHeader/)
-  assert.match(generator, /original-fiction/)
+  const admitted = await approvedDocuments(loreRoot.pathname, { checkAtlas: async () => {}, includeWorldIndex: false })
+  assert.ok(admitted.some(({ source }) => source === 'lore/Operating-Houses.json'))
+  assert.ok(!admitted.some(({ source }) => source === 'lore/authoring.example.json'))
+
+  const stripProjectionHeader = Function(`${generator.match(/const stripProjectionHeader = \(markdown\) => \{[\s\S]*?\n\}/u)[0]}; return stripProjectionHeader`)()
+  const projectionLines = ['title', 'alias', ...Array(7).fill(''),
+    '이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.',
+    '- 원본 앵커: `LORE/World-Narrative-Atlas.md`',
+    '- 원본 해시: `0123456789abcdef`', 'house body']
+  assert.equal(projectionLines.indexOf('이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.'), 9)
+  assert.deepEqual(stripProjectionHeader(projectionLines.join('\n')).split('\n'), [...projectionLines.slice(0, 9), 'house body'])
+  const outsideHeader = [...Array(12).fill(''), ...projectionLines.slice(9)].join('\n')
+  assert.ok(stripProjectionHeader(outsideHeader).includes('이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.'))
+
+  const sourceDocument = JSON.parse(await readFile(new URL('../lore/Operating-Houses.json', import.meta.url), 'utf8'))
+  const projected = publicHouseContent(sourceDocument)
+  const sourceLayerItems = (document) => document.content.flatMap((node) => node.items ?? [])
+    .filter((item) => item.en === 'Source layer: original-fiction' && item.ko === '출처층: original-fiction')
+  assert.ok(sourceLayerItems(sourceDocument).length > 0)
+  assert.equal(sourceLayerItems(projected).length, 0)
+  assert.equal(projected.content.find((node) => node.anchor === 'Operating-Houses-paragraph-0002'), sourceDocument.content.find((node) => node.anchor === 'Operating-Houses-paragraph-0002'))
+  const otherDocument = publicHouseContent({ ...sourceDocument, slug: 'Other-Document' })
+  assert.equal(otherDocument.content, sourceDocument.content)
 })
