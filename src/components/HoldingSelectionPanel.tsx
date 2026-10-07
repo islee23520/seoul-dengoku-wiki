@@ -49,7 +49,7 @@ export default function HoldingSelectionPanel({ holding, openingYear, selectedRe
       <div><dt>국가</dt><dd>{holder?.stateName ?? holding.stateId}</dd></div>
       <div><dt>{ownerLiege ? relationLabel(ownerLiege) : '직속 주군'}</dt><dd>{liege ? <Link to={liege.detailRoute}>{liege.name} · {holding.directLiegePersonId}</Link> : '없음'}</dd></div>
       {holding.territorialScale && <div><dt>영토 규모</dt><dd>{holding.territorialScale === 'duchy' ? '공작령 규모' : holding.territorialScale === 'barony' ? '남작령 규모' : holding.territorialScale}</dd></div>}
-      <div><dt>보유 범위</dt><dd>{holding.stationRef ? `${holding.stationRef.stationName}역` : holding.facilityRef ? `${holding.facilityRef.stationName} · ${holding.facilityRef.layerName ?? holding.facilityRef.layerId}` : `${holding.adminRefs.length}개 동`}</dd></div>
+      <div><dt>보유 범위</dt><dd>{holding.stationRef ? `${holding.stationRef.stationName}역` : holding.facilityRef ? `${holding.facilityRef.stationName} · ${holding.facilityRef.layerName ?? holding.facilityRef.layerId}` : holding.adminRefs.length ? `${holding.adminRefs.length}개 동` : '확인된 지리 경계 없음'}</dd></div>
     </dl>
     {holder && <details><summary>공직 정보</summary><p>{holder.position} · {holder.rank} · {holder.commonTier}</p></details>}
     {holding.facilityRef && <p>보유 범위는 {holding.facilityRef.stationName}의 실제 대합실입니다. 지도는 위치를 도식으로 표시하며 대합실의 실제 경계와 면적은 표시하지 않습니다.</p>}
