@@ -31,7 +31,6 @@
       "source.b17",
       "source.b18",
       "source.b19",
-      "source.b20",
       "source.b21",
       "source.b22",
       "source.b23",
@@ -57,21 +56,12 @@
       "source.b43",
       "source.b44",
       "source.b45",
-      "source.b46",
-      "source.b47",
       "source.b48",
-      "source.b49",
       "source.b50",
-      "source.b51",
       "source.b52",
       "source.b53",
-      "source.b54",
       "source.b55",
       "source.b56",
-      "source.b57",
-      "source.b58",
-      "source.b59",
-      "source.b60",
       "source.b61",
       "source.b62",
       "source.b63",
@@ -79,17 +69,14 @@
       "source.b65",
       "source.b66",
       "source.b67",
-      "source.b68",
       "source.b69",
       "source.b70",
-      "source.b71",
       "source.b72",
       "source.b73",
       "source.b74",
       "source.b75",
       "source.b76",
       "source.b77",
-      "source.b78",
       "source.b79",
       "source.b80",
       "source.b81",
@@ -140,7 +127,6 @@
       "source.b126",
       "source.b127",
       "source.b128",
-      "source.b129",
       "source.b130",
       "source.b131",
       "source.b132",
@@ -169,8 +155,6 @@
       "source.b155",
       "source.b156",
       "source.b157",
-      "source.b158",
-      "source.b159",
       "source.b160",
       "source.b161",
       "source.b162",
@@ -194,7 +178,6 @@
       "source.b180",
       "source.b181",
       "source.b182",
-      "source.b183",
       "r2.ref-15.break",
       "r2.ref-15",
       "r2.ref-15-1",
@@ -540,17 +523,6 @@
         ]
       ],
       "blankLinesBefore": 0
-    },
-    {
-      "id": "source.b20",
-      "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "2. 배틀 브라더즈 (Battle Brothers) — 용병회사 경제와 진화"
-        }
-      ]
     },
     {
       "id": "source.b21",
@@ -964,28 +936,6 @@
       "marker": "---"
     },
     {
-      "id": "source.b46",
-      "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "4. 파랜드 택틱스·창세기전 — 한국식 전술 SRPG"
-        }
-      ]
-    },
-    {
-      "id": "source.b47",
-      "kind": "heading",
-      "level": 3,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "4.1 스테이지 진행 (파랜드 1) [REF:FT-STAGE]"
-        }
-      ]
-    },
-    {
       "id": "source.b48",
       "kind": "list",
       "ordered": false,
@@ -1006,17 +956,6 @@
       "blankLinesBefore": 0
     },
     {
-      "id": "source.b49",
-      "kind": "heading",
-      "level": 3,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "4.2 마을 거점 (파랜드 2) [REF:FT-TOWN]"
-        }
-      ]
-    },
-    {
       "id": "source.b50",
       "kind": "list",
       "ordered": false,
@@ -1035,17 +974,6 @@
         ]
       ],
       "blankLinesBefore": 0
-    },
-    {
-      "id": "source.b51",
-      "kind": "heading",
-      "level": 3,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "4.3 인터미션 (창세기전) [REF:WOG-INTERMISSION]"
-        }
-      ]
     },
     {
       "id": "source.b52",
@@ -1079,17 +1007,6 @@
       "marker": "---"
     },
     {
-      "id": "source.b54",
-      "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "5. Fire Emblem·FFT — 전술 전투 문법"
-        }
-      ]
-    },
-    {
       "id": "source.b55",
       "kind": "heading",
       "level": 3,
@@ -1115,68 +1032,6 @@
           {
             "kind": "text",
             "text": "**취소 무소모**: 미리보기 중 상태 변화 없음."
-          }
-        ]
-      ],
-      "blankLinesBefore": 0
-    },
-    {
-      "id": "source.b57",
-      "kind": "heading",
-      "level": 3,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "5.2 페이즈 vs CT [REF:FFT-CT]"
-        }
-      ]
-    },
-    {
-      "id": "source.b58",
-      "kind": "list",
-      "ordered": false,
-      "items": [
-        [
-          {
-            "kind": "text",
-            "text": "**FE**: 아군 페이즈 → 적군 페이즈. 전체 순서가 예측 가능."
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "**FFT**: CT(차지 타임) 게이지 → 개인 순서. 속도가 빠르면 더 자주 행동."
-          }
-        ]
-      ],
-      "blankLinesBefore": 0
-    },
-    {
-      "id": "source.b59",
-      "kind": "heading",
-      "level": 3,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "5.3 높이와 지형 [REF:FFT-HEIGHT]"
-        }
-      ]
-    },
-    {
-      "id": "source.b60",
-      "kind": "list",
-      "ordered": false,
-      "items": [
-        [
-          {
-            "kind": "text",
-            "text": "**FFT**: 맵에 높이 존재. 높이 차이가 사거리·명중·이동에 영향."
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "**Triangle**: 위협 칸 표시, 지형 효과(불·얼음·물), 고지 이점."
           }
         ]
       ],
@@ -1262,62 +1117,6 @@
       ]
     },
     {
-      "id": "source.b68",
-      "kind": "table",
-      "header": [
-        "질문",
-        "레퍼런스 근거",
-        "우선순위"
-      ],
-      "dividers": [
-        "---",
-        "---",
-        "---"
-      ],
-      "rows": [
-        [
-          "~~떠돌이 시작 시나리오~~ → **해결**: `떠돌이→시설 이용권→선택적 역 운영자` 3단계. 시작은 남의 역에서 하룻밤을 허락받은 3인.",
-          "K-시스템 3상태 + BB 비정착 회사",
-          "해결"
-        ],
-        [
-          "~~정착 트리거~~ → **해결**: 준비(자재·인력)와 욕구(생산 필요성)가 충족될 때 선택. 3역 비웠다고 역장이 되는 것 아님.",
-          "K-시스템 \"날짜가 아니라 준비와 욕구\"",
-          "해결"
-        ],
-        [
-          "**출신 선택**: BB의 Origins처럼 시작 조건을 플레이어가 고르는가?",
-          "BB 출신",
-          "P1"
-        ],
-        [
-          "**일급 압박**: BB의 일급처럼 매일 소모되는 압박이 잔선의 보급 소모인가? 구체적 수치?",
-          "BB 경제",
-          "P1"
-        ],
-        [
-          "**세계 위기**: BB의 위기처럼 중반에 세계 이벤트가 발생하는가? 종류?",
-          "BB 위기",
-          "P1"
-        ],
-        [
-          "**역별 시설**: 각 역에 어떤 시설이 있는가? 도시/마을/요새 구분?",
-          "BB 정착지",
-          "P1"
-        ],
-        [
-          "**CT vs 페이즈**: 전투 순서 시스템의 최종 결정",
-          "FE vs FFT",
-          "P2"
-        ],
-        [
-          "**신념 시스템**: Triangle의 신념 누적을 채택하는가?",
-          "TS 신념",
-          "P2"
-        ]
-      ]
-    },
-    {
       "id": "source.b69",
       "kind": "thematicBreak",
       "marker": "---"
@@ -1327,17 +1126,6 @@
       "kind": "thematicBreak",
       "marker": "---",
       "blankLinesBefore": 2
-    },
-    {
-      "id": "source.b71",
-      "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "8. 유니콘 오버로드 (Unicorn Overlord) — 전투를 수행할 부대를 설계한다"
-        }
-      ]
     },
     {
       "id": "source.b72",
@@ -1435,44 +1223,6 @@
           "text": "8.3 6칸에 최대 5명: 역할·표적·순서 [REF:UO-FORMATION]"
         }
       ]
-    },
-    {
-      "id": "source.b78",
-      "kind": "list",
-      "ordered": false,
-      "items": [
-        [
-          {
-            "kind": "text",
-            "text": "[문서] 전열 3칸+후열 3칸, 정원은 확충되며 최대 5명이다. 초반 2인 부대도 있고 최대 5인×10부대를 편성한다. 리더는 이동 타입·스태미나·리더 효과를, 구성원 전체는 이동속도 산정에 영향을 준다. [S141 pp.21,23]"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "[문서] 전열은 후열에 대한 일반 직접 공격을 막지만 원거리·마법·관통 예외가 있다. 전후열 자체가 일괄 피해감소 보너스는 아니다. 관통을 피하려면 전후열 같은 선상 배치를 피한다. [S141 pp.39-40]"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "[문서] 장비도 스킬을 추가하며 작전 우선순위·조건과 AP/PP 잔량이 행동을 결정한다. 전멸하지 않고 양측 AP가 소진되면 잔여 HP의 **비율**로 승패를 정한다. 단순 HP 절대합이 아니다. [S140; S141 pp.24,37-38; S142 §8]"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "[추론] '탱커·딜러·힐러 한 명씩'보다 어느 적을 상대하고 어떤 반응 예산을 남길지 설계하는 게임이다. FE/FFT의 이번 행동 결정을 교전 이전의 편성·규칙으로 옮겼다. Ogre Battle/FFXII의 계보를 결합한 것이지 세계 최초 자동 부대 전투는 아니다. [S01-S02; S141-S143]"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "[적용 제안] 잔선은 수동 SRPG를 유지하면서 역할 상성·지원 관계·출격 전 비교를 차용한다. [S165]"
-          }
-        ]
-      ],
-      "blankLinesBefore": 0
     },
     {
       "id": "source.b79",
@@ -2358,87 +2108,6 @@
       ]
     },
     {
-      "id": "source.b129",
-      "kind": "table",
-      "header": [
-        "접두어",
-        "게임",
-        "주요 출처"
-      ],
-      "dividers": [
-        "---",
-        "---",
-        "---"
-      ],
-      "rows": [
-        [
-          "K-",
-          "켄시",
-          "내부 원문 덤프/ wiki 덤프, RPS·PCGamer 리뷰"
-        ],
-        [
-          "BB-",
-          "배틀 브라더즈",
-          "bb-raw/ wiki 덤프(15개 문서), dev blog"
-        ],
-        [
-          "CK3-",
-          "크루세이더 킹즈 3",
-          "ck3-ui-reference.md, Paradox 위키, 공식 개발일지"
-        ],
-        [
-          "FT-",
-          "파랜드 택틱스",
-          "REPORT.md S08"
-        ],
-        [
-          "WOG-",
-          "창세기전",
-          "REPORT.md S09"
-        ],
-        [
-          "FE-",
-          "파이어 엠블렘",
-          "REPORT.md S01 (Awakening 매뉴얼)"
-        ],
-        [
-          "FFT-",
-          "FFT",
-          "REPORT.md S02 (PS 매뉴얼)"
-        ],
-        [
-          "TS-",
-          "Triangle Strategy",
-          "REPORT.md S05-S07"
-        ],
-        [
-          "UO-",
-          "유니콘 오버로드",
-          "extended-refs-structure.md §8, S140-S144"
-        ],
-        [
-          "MB- / BL-",
-          "배너로드",
-          "extended-refs-structure.md §9, S145-S153"
-        ],
-        [
-          "NA-",
-          "신장의야망",
-          "extended-refs-structure.md §10, S154-S156"
-        ],
-        [
-          "TR- / TK-",
-          "태합입지전",
-          "extended-refs-structure.md §11, S157-S160"
-        ],
-        [
-          "RTK-",
-          "삼국지",
-          "extended-refs-structure.md §12, S161-S164"
-        ]
-      ]
-    },
-    {
       "id": "source.b130",
       "kind": "thematicBreak",
       "marker": "---"
@@ -3001,54 +2670,6 @@
       ]
     },
     {
-      "id": "source.b158",
-      "kind": "heading",
-      "level": 3,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "14.3 Battle for Wesnoth — 다단계 피해 파이프라인 [REF:OS-BFW-DAMAGE]"
-        }
-      ]
-    },
-    {
-      "id": "source.b159",
-      "kind": "list",
-      "ordered": false,
-      "items": [
-        [
-          {
-            "kind": "text",
-            "text": "**[문서: 코드]** 피해 = 기본 ×(100+시간대+지휘 가산)×저항, 반올림은 기저 쪽(0 금지). 명중률 = 100-지형방어%에서 특수 보정. src/utils/math.hpp·actions/attack.cpp"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "**[문서: 코드]** 시간대 ±25(아침/오후 +25, 야간 -25, 지하 -25)와 육각 단위 조명 재작성. data/core/macros/schedules.cfg"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "**[문서: 코드]** XP 격파 8×레벨, AMLA +3HP/+20%요구치. 충성은 사기가 아니라 유지비(레벨세) 면제. src/game_config.hpp·units/unit.hpp"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "**[문서: 코드]** 인접 지휘 `25×(지도자레벨-대상레벨)` 피해 가산 — 잔선 지휘 반경의 턴제 원형. data/core/macros/abilities.cfg"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "**[문서: 코드]** 리콜 로스터 이월: 좌표만 제거한 부대 WML, 리콜 20골드, 골드 이월 80%. 시나리오 시작 전원 회복은 비채택. src/carryover.cpp"
-          }
-        ]
-      ]
-    },
-    {
       "id": "source.b160",
       "kind": "heading",
       "level": 3,
@@ -3530,16 +3151,6 @@
         {
           "kind": "text",
           "text": "14.15 후보 스캔 [REF:OS-SCAN]"
-        }
-      ]
-    },
-    {
-      "id": "source.b183",
-      "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "심층 15종 외 참고 후보(공개 오픈소스 게임 카탈로그 전수 조인, 2026-09-17): Jagged Alliance 2 Stracciatella(용병 로스터·충성), OpenApoc(실시간+일시정지 X-COM — 실시간 계약 직결), KeeperFX(크리처 기분·급여·배신), Fallout CE(종말후 동료·AP), UFO: Alien Invasion(전략+전술 이층 오리지널 설계), Cortex Command(실시간 분대+자원층), Tanks of Freedom II·Commander Wars(간접 지휘 턴제 비교), GLSMAC(파벌 성격 4X), Stone Kingdoms(거점 경영·공성), Wyrmsun(RTS 속 영웅 성장), OpenTTD(노선·신호 — Route 보조)."
         }
       ]
     },
