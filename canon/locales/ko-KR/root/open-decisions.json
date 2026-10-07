@@ -172,7 +172,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "[홈](Home.md), [설계 요구](Design-Requirements.md), [이 게임이 뭔지](Game-Thesis.md), [개발 로드맵](Development-Roadmap.md)에 반복되던 기본안 문장도 이 결정에 맞춰 고쳤다. 상위 저장소 [ToDo.md](../ToDo.md)의 같은 문장은 따로 고쳐야 한다."
+          "text": "[홈](Home.md), [설계 요구](Design-Requirements.md), [이 게임이 뭔지](Game-Thesis.md), [개발 로드맵](Development-Roadmap.md)에 반복되던 기본안 문장도 이 결정에 맞춰 고쳤다. 상위 저장소 ToDo.md의 같은 문장은 따로 고쳐야 한다."
         }
       ]
     },
@@ -264,14 +264,14 @@
         [
           "OD-PRESET",
           "착생 시작 프리셋 재해석",
-          "인터뷰에서 정체성 유지, 결핍·압박만 재해석, 점유 동료 제외, 원정 재동의, 분쟁 자산 봉인 운송 등 17항을 확정했다. [시작 프리셋](../LORE/characters/Starting-Presets.md)은 아직 예전 설계 제안·수치 목표다",
+          "인터뷰에서 정체성 유지, 결핍·압박만 재해석, 점유 동료 제외, 원정 재동의, 분쟁 자산 봉인 운송 등 17항을 확정했다. 시작 프리셋은 아직 예전 설계 제안·수치 목표다",
           "정본 이관 PR. 이 페이지가 프리셋 숫자를 고치지 않는다"
         ],
         [
           "OD-POV",
           "캠페인 POV·권한 UX",
           "인터뷰 6항은 PR #213으로 청사진이 들어왔다. 남은 것은 영웅 분대 문서의 이동 속도 제안(OD-MOVE)이지 POV 자체 미결이 아니다",
-          "[캠페인 POV와 권한](system-design/campaign-pov-authority/README.md)"
+          "캠페인 POV와 권한"
         ]
       ]
     },
@@ -322,19 +322,19 @@
           "OD-FOV",
           "카메라 각도·시야각",
           "새로 잠그지 않는다",
-          "[Intent.md](../Intent.md), [Design.md](../Design.md)"
+          "Intent.md, Design.md"
         ],
         [
           "OD-CARDNUM",
           "사기 임계",
           "결정 3 미결 수치는 결정 11이 새 목표에서 만들지 말라고 주석했다",
-          "[Intent.md](../Intent.md) 결정 3 대체 주석"
+          "Intent.md 결정 3 대체 주석"
         ],
         [
           "OD-CAPTURE",
           "새 포획 확률·정원",
           "결정 11이 만들지 않는다",
-          "[Intent.md](../Intent.md) 결정 11"
+          "Intent.md 결정 11"
         ]
       ]
     },
