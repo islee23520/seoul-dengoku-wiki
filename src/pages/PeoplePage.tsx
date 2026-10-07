@@ -104,7 +104,7 @@ export default function PeoplePage() {
                 <Link to={person.detailRoute}><img src={`${import.meta.env.BASE_URL}portraits/${person.id}.png?v=${portrait.imageSha256}`} alt={`${person.name} 초상 아트 제안`} loading="lazy" /></Link>
                 <figcaption className="people-portrait-identity">
                   {portrait.stateFlag && <img data-identity-field="stateFlag" src={`${import.meta.env.BASE_URL}${portrait.stateFlag}`} alt="" />}
-                  <span data-identity-field="stateName">{portrait.stateName}</span>
+                  {portrait.stateName !== null && <span data-identity-field="stateName">{portrait.stateName}</span>}
                   {portrait.clanCrest && <Link data-identity-field="clanCrest" to={`/families/${portrait.clanId}`}><img src={`${import.meta.env.BASE_URL}${portrait.clanCrest}`} alt="가문 문장" /></Link>}
                   {portrait.bongwan && <span data-identity-field="bongwan">{portrait.bongwan}</span>}
                   {portrait.nobleTitle && <span data-identity-field="nobleTitle">{portrait.nobleTitle}</span>}
