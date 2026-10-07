@@ -22,6 +22,8 @@ async function fixture(extra = {}, omit = []) {
     'portraits/person-0001.png': '',
     'regional-terrain-tiles/0-0.bin': '',
     'regional-terrain-tiles/0-0-water.json': '{}',
+    'regional-terrain-tiles/0-1.bin': '',
+    'regional-terrain-tiles/0-1-water.json': '{}',
     'state-flags/S01.webp': '',
     'clan-crests/index.json': '{}',
     'assets/index-AbCd1234.js': '',

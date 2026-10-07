@@ -10,6 +10,8 @@ import csv
 import hashlib
 import json
 import math
+import subprocess
+import sys
 from pathlib import Path
 from urllib.parse import quote
 
@@ -510,6 +512,7 @@ def main():
     meta["detailHeightEncoding"] = meta["heightEncoding"]
     meta["attribution"] += " Rivers: © OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright). Coastline: Natural Earth 1:10m public domain."
     (args.out / "regional-terrain.json").write_text(json.dumps(meta, ensure_ascii=False, separators=(",", ":")))
+    subprocess.run([sys.executable, str(Path(__file__).with_name("filter-unconnected-islands.py")), "--public", str(args.out)], check=True)
     print(json.dumps({"layers": [(v["name"], v["width"], v["height"], v["zoom"]) for v in layers], "boundaries": len(province), "stations": len(rail["stations"]), "paths": len(rail["paths"])}, ensure_ascii=False))
 
 
