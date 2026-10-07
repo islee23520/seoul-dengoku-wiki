@@ -168,6 +168,7 @@ test('ordinary-row portraits bind stable IDs and ordered existing metadata witho
   try {
     for (const portrait of portraitIdentities) {
       const row = page.host.querySelector('[data-person-id="' + portrait.personId + '"]')
+      assert.ok(row, 'portrait must attach to its own roster ID: ' + portrait.personId)
       const figure = row.querySelector('.people-row-portrait')
       assert.ok(figure)
       assert.equal(figure.querySelector('a').getAttribute('href'), '/people/' + portrait.personId)
@@ -175,6 +176,7 @@ test('ordinary-row portraits bind stable IDs and ordered existing metadata witho
       const expected = ['stateFlag', 'stateName', 'clanCrest', 'bongwan', 'nobleTitle'].filter(key => portrait[key] !== null)
       assert.deepEqual([...figure.querySelectorAll('[data-identity-field]')].map(node => node.dataset.identityField), expected)
       assert.equal(figure.querySelector('[data-identity-field="nobleTitle"]'), null)
+      assert.equal(figure.querySelector('[data-identity-field="stateName"]')?.textContent ?? null, portrait.stateName)
     }
     const iyen = page.host.querySelector('[data-person-id="person-1004"] .people-row-portrait')
     assert.equal(iyen.querySelector('[data-identity-field="stateFlag"]'), null)
