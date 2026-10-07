@@ -4,30 +4,6 @@
   "locale": "ko-KR",
   "documents": [
     {
-      "id": "doc.Ref-Bannerlord",
-      "path": "locales/ko-KR/references/ref-bannerlord.json",
-      "locale": "ko-KR",
-      "status": "accepted",
-      "source": {
-        "path": "references/Ref-Bannerlord.md",
-        "lineStart": 1,
-        "lineEnd": 160,
-        "sha256": "4c47396fffc7274af46e6d5f85597fae1d7067f2c34a7006937a8f97474e3137"
-      }
-    },
-    {
-      "id": "doc.Ref-Cross-Synthesis",
-      "path": "locales/ko-KR/references/ref-cross-synthesis.json",
-      "locale": "ko-KR",
-      "status": "accepted",
-      "source": {
-        "path": "references/Ref-Cross-Synthesis.md",
-        "lineStart": 1,
-        "lineEnd": 150,
-        "sha256": "5153dd6367f7085112a59ec4e5d96a710b7c2feb4e8b8580b81026d6730dc5a7"
-      }
-    },
-    {
       "id": "doc.Ref-Crusader-Kings-3",
       "path": "locales/ko-KR/references/ref-crusader-kings-3.json",
       "locale": "ko-KR",
@@ -40,18 +16,6 @@
       }
     },
     {
-      "id": "doc.Ref-K-System",
-      "path": "locales/ko-KR/references/ref-k-system.json",
-      "locale": "ko-KR",
-      "status": "accepted",
-      "source": {
-        "path": "references/Ref-K-System.md",
-        "lineStart": 1,
-        "lineEnd": 648,
-        "sha256": "b6d268385b4ed36db3c4a253ea83967e1a59ec862f0e39d03ff37e41276b177a"
-      }
-    },
-    {
       "id": "doc.Ref-Mechanism-Index",
       "path": "locales/ko-KR/references/ref-mechanism-index.json",
       "locale": "ko-KR",
@@ -61,54 +25,6 @@
         "lineStart": 1,
         "lineEnd": 527,
         "sha256": "554b4ef10224c1929a2eb49c2fef5a055daeee099b95557ea07ed00835094544"
-      }
-    },
-    {
-      "id": "doc.Ref-Nobunagas-Ambition",
-      "path": "locales/ko-KR/references/ref-nobunagas-ambition.json",
-      "locale": "ko-KR",
-      "status": "accepted",
-      "source": {
-        "path": "references/Ref-Nobunagas-Ambition.md",
-        "lineStart": 1,
-        "lineEnd": 625,
-        "sha256": "bdaa0671f597a0512a13bc049a71101e585ae3d8787fcd15fd0630ac6aa9bd61"
-      }
-    },
-    {
-      "id": "doc.Ref-Taikou-Risshiden",
-      "path": "locales/ko-KR/references/ref-taikou-risshiden.json",
-      "locale": "ko-KR",
-      "status": "accepted",
-      "source": {
-        "path": "references/Ref-Taikou-Risshiden.md",
-        "lineStart": 1,
-        "lineEnd": 478,
-        "sha256": "a54f85d7983ef860f8c7db7ac3c814cd517c4ad9ac8f8b96b1f7f89f73704f36"
-      }
-    },
-    {
-      "id": "doc.Ref-Three-Kingdoms",
-      "path": "locales/ko-KR/references/ref-three-kingdoms.json",
-      "locale": "ko-KR",
-      "status": "accepted",
-      "source": {
-        "path": "references/Ref-Three-Kingdoms.md",
-        "lineStart": 1,
-        "lineEnd": 664,
-        "sha256": "7a2695e0f4c004d6f56ce531b5ef7297e6126404238c246376489dcc235f987e"
-      }
-    },
-    {
-      "id": "doc.Ref-Unicorn-Overlord",
-      "path": "locales/ko-KR/references/ref-unicorn-overlord.json",
-      "locale": "ko-KR",
-      "status": "accepted",
-      "source": {
-        "path": "references/Ref-Unicorn-Overlord.md",
-        "lineStart": 1,
-        "lineEnd": 170,
-        "sha256": "6aa5771d2eba8a58f90445d2baf27bb09b3956c79f72b8faa00aa34051e5fff2"
       }
     }
   ]
