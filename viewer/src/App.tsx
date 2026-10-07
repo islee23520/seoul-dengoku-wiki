@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Navigate, Route, Routes, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import ReactMarkdown, { type ExtraProps } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { remarkCjkStrong } from './remarkCjkStrong'
 import { DocumentContent, MermaidDiagram, type DocumentNode } from '@seoul-dengoku/document-renderer'
 import {
   Breadcrumbs, CategoryTree, DocumentList, PageHeader, QueryControl, SectionHeading,
@@ -169,8 +170,8 @@ interface TocEntry { depth: number; anchor: string; text: string }
 
 const jsonTextOf = (value: string | readonly { text: string }[]) => (typeof value === 'string' ? value : value.map((run) => run.text).join(''))
 
-function MarkdownBody({ markdown }: { markdown: string }) {
-  return <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>{markdown}</ReactMarkdown>
+export function MarkdownBody({ markdown }: { markdown: string }) {
+  return <ReactMarkdown remarkPlugins={[remarkGfm, remarkCjkStrong]} components={markdownComponents}>{markdown}</ReactMarkdown>
 }
 
 function DocumentPage() {
