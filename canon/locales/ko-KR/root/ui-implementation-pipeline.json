@@ -207,7 +207,7 @@
         [
           {
             "kind": "text",
-            "text": "신규 요소 이름의 목표 계약은 [Design §11](../Design.md)에 기록하고,"
+            "text": "신규 요소 이름의 목표 계약은 Design §11에 기록하고,"
           }
         ],
         [
@@ -219,13 +219,13 @@
         [
           {
             "kind": "text",
-            "text": "재정의는 [Intent 결정 6](../Intent.md), 안정 요소 이름은 [Design §11](../Design.md)이"
+            "text": "재정의는 Intent 결정 6, 안정 요소 이름은 Design §11이"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "정본입니다. 화면이 그리는 세계는 2026년 붕괴([프롤로그](https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/overview/World-Unbinding.json)) 뒤의 2126 서울입니다."
+            "text": "정본입니다. 화면이 그리는 세계는 2026년 붕괴(프롤로그) 뒤의 2126 서울입니다."
           }
         ]
       ]
@@ -236,7 +236,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "목표 12면의 10번은 `전투 배치`, 11번은 `부대 지휘`이며 문서 실물은 [부대 지휘 UI](system-design/total-war-ui/)에 둡니다. 정산 뒤에도 원정을 계속할 수 있으며 귀환은 다섯 결말 가운데 하나입니다."
+          "text": "목표 12면의 10번은 `전투 배치`, 11번은 `부대 지휘`이며 문서 실물은 부대 지휘 UI에 둡니다. 정산 뒤에도 원정을 계속할 수 있으며 귀환은 다섯 결말 가운데 하나입니다."
         }
       ]
     },
@@ -305,7 +305,7 @@
       "rows": [
         [
           "무드보드 11면",
-          "[ui-layout-moodboard](../GAME-REFERENCE/ui-layout-moodboard/index.html)"
+          "ui-layout-moodboard"
         ],
         [
           "동결 캡처",
@@ -321,7 +321,7 @@
         ],
         [
           "부대 지휘 목표 초안",
-          "[system-design/total-war-ui](system-design/total-war-ui/)"
+          "system-design/total-war-ui"
         ]
       ]
     },

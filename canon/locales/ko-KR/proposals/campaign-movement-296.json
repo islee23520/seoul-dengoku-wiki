@@ -90,7 +90,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "현재 기준은 소유자 Intent 결정 14와 2026-09-29 조회한 #296, 병합된 GDD #31·#35를 포함한 [main 09df8e64](https://github.com/islee23520/seoul-dengoku-gdd/blob/09df8e64d198f636b5c43ccdb2d965cacf87de20/canon/locales/ko-KR/rules/hero-squads-and-simultaneous-turns.json) source.b18–b24다. 시간 기반 이동·이동 중 목표 교체·다섯 태세·AI 동일 계약을 따른다. 동시 전략 턴·턴 이동력은 현재 설계가 아니다. 아래 MOV-01~07의 수치와 변환은 proposal이며 소유자 승인 전이다. 아직 열린 GDD #33을 main으로 인용하지 않는다."
+          "text": "현재 기준은 소유자 Intent 결정 14와 2026-09-29 조회한 #296, 병합된 GDD #31·#35를 포함한 영웅 분대와 동시 진행 source.b18–b24다. 시간 기반 이동·이동 중 목표 교체·다섯 태세·AI 동일 계약을 따른다. 동시 전략 턴·턴 이동력은 현재 설계가 아니다. 아래 MOV-01~07의 수치와 변환은 proposal이며 소유자 승인 전이다. 아직 열린 GDD #33을 main으로 인용하지 않는다."
         }
       ]
     },
@@ -570,7 +570,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "[요청 #296](https://github.com/islee23520/seoul-dengoku/issues/296)은 수치·단위·계수의 명시 승인을 요구한다. 승인 전 #297 Core 구현에 착수하지 않는다. [GDD 기준선 e4b14cac](https://github.com/islee23520/seoul-dengoku-gdd/blob/e4b14cac11314c47da23b8e04eb4c4e336ffc3e6/canon/locales/ko-KR/rules/hero-squads-and-simultaneous-turns.json)의 source.b18–b26을 보존한다. 고정 source.sha256은 3bd57c0dbaee7da56e8bdbdf43889033a292d4874bbd9a747a771174c7d2d988이다."
+          "text": "요청 #296은 수치·단위·계수의 명시 승인을 요구한다. 승인 전 #297 Core 구현에 착수하지 않는다. 영웅 분대와 동시 진행의 source.b18–b26을 보존한다. 고정 source.sha256은 3bd57c0dbaee7da56e8bdbdf43889033a292d4874bbd9a747a771174c7d2d988이다."
         }
       ]
     },
