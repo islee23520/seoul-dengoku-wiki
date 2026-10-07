@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
+import { resolve } from 'node:path'
 import { test } from 'vitest'
 import { createMapBridge, selectionAtUnityCoordinate, terrainStatus } from '../src/components/mapBridge.ts'
 import { stationAliases } from '../src/components/stationPresentation.ts'
@@ -21,12 +22,16 @@ test('terrain status rejects unknown tiles and missing or forged source hashes',
   assert.equal(terrainStatus({ ...event, type: 'tiles-changed', sourceSha256: 'wrong' }, hashes, 'm1'), null)
 })
 
-test('all 334 game station IDs select exactly the 315 displayed station IDs', async () => {
+test('all 334 source station IDs select exactly the 314 distinct displayed facilities', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
   const displayIds = new Set(data.stations.map(({ id }) => id))
-  const gameIds = new Set([...displayIds, ...Object.keys(stationAliases)])
-  assert.equal(displayIds.size, 315)
+  const source = JSON.parse(await readFile(resolve(process.env.SEOUL_KENSHI_ROOT ?? new URL('../../GAME/', import.meta.url).pathname, 'Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+  const members = new Map(data.stations.flatMap((station) => (station.memberIds ?? [station.id]).map((id) => [id, station.id])))
+  const gameIds = new Set(source.stations.map(({ id }) => id))
+  assert.deepEqual(new Set(members.keys()), gameIds)
+  assert.equal(data.stations.flatMap((station) => station.memberIds ?? [station.id]).length, 334)
+  assert.equal(displayIds.size, 314)
   assert.equal(gameIds.size, 334)
   const sent = []
   let receive = () => {}
@@ -37,11 +42,13 @@ test('all 334 game station IDs select exactly the 315 displayed station IDs', as
   }
   const bridge = createMapBridge({ ...data, outsideUnits: outside.units }, transport, (selection) => selected.push(selection))
   for (const id of gameIds) {
-    const expected = stationAliases[id] ?? id
+    const expected = members.get(id)
     receive({ type: 'selected', selection: { kind: 'station', id } })
     assert.deepEqual(selected[selected.length - 1], { kind: 'station', id: expected }, id)
   }
-  assert.equal(new Set(selected.map((selection) => selection?.id)).size, 315)
+  assert.equal(new Set(selected.map((selection) => selection?.id)).size, 314)
+  assert.equal(members.get('서울'), '서울역')
+  assert.equal(members.get('신촌(지하)'), '신촌(지하)')
   receive({ type: 'selected', selection: { kind: 'station', id: '이수' } })
   assert.deepEqual(selected[selected.length - 1], { kind: 'station', id: '총신대입구(이수)' })
   receive({ type: 'selected', selection: { kind: 'station', id: '신촌(지하)' } })

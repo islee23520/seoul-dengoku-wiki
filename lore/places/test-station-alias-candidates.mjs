@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { test } from 'vitest'
 import { readRendered } from '../../scripts/lore-read-rendered.mjs'
+import { regularLineGraph } from '../../scripts/regular-line-graph.mjs'
 
 const places = import.meta.dirname
 const candidate = JSON.parse(readFileSync(resolve(places, 'Station-Alias-Candidates.json'), 'utf8'))
@@ -29,7 +30,7 @@ test('Isu identity is approved while both observed platforms and four graph neig
   const canonical = catalogData.data.station_aliases.find((station) => station.id === '총신대입구(이수)')
   assert.deepEqual(canonical.aliases, ['이수', '총신대입구 (이수)'])
   assert.deepEqual(canonical.observed_lines, { '이수': ['7'], '총신대입구 (이수)': ['4'], '총신대입구(이수)': ['4'] })
-  assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['총신대입구(이수)', '삼성', '수유', '서울대입구', '강변', '구의', '아현', '대림', '충정로', '교대', '남부터미널', '방배', '왕십리', '한성대입구', '잠실', '경복궁', '혜화', '회현'])
+  assert.deepEqual(catalogData.data.station_aliases.map((station) => station.id), ['서울역', '총신대입구(이수)', '삼성', '수유', '서울대입구', '강변', '구의', '아현', '대림', '충정로', '교대', '남부터미널', '방배', '왕십리', '한성대입구', '잠실', '경복궁', '혜화', '회현'])
   assert.equal(isu.disposition, 'approved-alias')
   assert.equal(isu.displayName, '총신대입구(이수)')
   assert.deepEqual(isu.aliases, ['총신대입구 (이수)', '이수'])
@@ -47,6 +48,16 @@ test('Isu identity is approved while both observed platforms and four graph neig
   assert.deepEqual(projected.stations.filter((station) => station.id === canonical.id).map((station) => station.memberIds), [[canonical.id, ...canonical.aliases]])
   assert.deepEqual(new Set(projected.edges.filter((edge) => edge.a === canonical.id || edge.b === canonical.id).map((edge) => edge.a === canonical.id ? edge.b : edge.a)), new Set(['남성', '내방', '동작', '사당']))
   for (const name of [...isu.members, isu.relatedStation, '신촌', '신촌(지하)']) assert.ok(rows.includes(name), name)
+})
+
+test('Seoul observed platforms exclude its separately recorded airport and Gyeongui service', () => {
+  const seoul = catalogData.data.station_aliases.find((station) => station.id === '서울역')
+  const services = JSON.parse(readFileSync(resolve(places, '../../scripts/official-seoul-lines.json'), 'utf8')).stations
+  for (const id of [seoul.id, ...seoul.aliases]) {
+    assert.deepEqual(seoul.observed_lines[id], interiors.stations.find((station) => station.name === id).observed_levels.lines.map((line) => line.line))
+    assert.deepEqual(seoul.observed_lines[id], ['1', '4'])
+    assert.deepEqual(seoul.service_lines[id], services[id].filter((line) => ['A', 'K'].includes(line)))
+  }
 })
 
 test('Samsung subtitle shares one observed platform and the same graph neighbors', () => {
@@ -97,7 +108,8 @@ test('all approved subtitles project one node without losing observed lines or m
   const canonicalId = new Map(catalogData.data.station_aliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
   const gameRoot = process.env.SEOUL_KENSHI_ROOT ?? resolve(places, '../../../GAME')
   const original = JSON.parse(readFileSync(resolve(gameRoot, 'Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
-  const lines = JSON.parse(readFileSync(resolve(places, '../../scripts/official-seoul-lines.json'), 'utf8')).stations
+  const physicalSource = JSON.parse(readFileSync(resolve(places, 'regular-line-adjacency.json'), 'utf8'))
+  const physical = regularLineGraph(physicalSource, original.stations.map((station) => canonicalId.get(station.id) ?? station.id))
   const projectedEdges = new Set(projected.edges.flatMap((edge) => edge.lineIds.map((line) => `${[edge.a, edge.b].sort().join('|')}/${line}`)))
   for (const entry of catalogData.data.station_aliases) {
     assert.deepEqual(projected.stations.filter((station) => station.id === entry.id).map((station) => station.memberIds), [[entry.id, ...entry.aliases]])
@@ -108,13 +120,9 @@ test('all approved subtitles project one node without losing observed lines or m
       assert.deepEqual(observation.observed_levels.lines.map((line) => line.line), lines, source)
     }
   }
-  for (const edge of original.edges) {
-    const a = canonicalId.get(edge.a) ?? edge.a
-    const b = canonicalId.get(edge.b) ?? edge.b
-    if (a !== b) for (const line of (lines[edge.a] ?? []).filter((id) => lines[edge.b]?.includes(id))) {
-      assert.ok(projectedEdges.has(`${[a, b].sort().join('|')}/${line}`), `${edge.a}/${edge.b}/${line}`)
-    }
-  }
+  const sourceEdges = new Set(physical.edges.flatMap((edge) => edge.lineIds.map((line) => `${[edge.a, edge.b].sort().join('|')}/${line}`)))
+  assert.deepEqual(projectedEdges, sourceEdges)
+  assert.equal(physical.edges.length, 383)
   assert.deepEqual(projected.stations.filter((station) => station.id.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
 })
 

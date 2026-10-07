@@ -4,6 +4,18 @@ import { test } from 'vitest'
 import { presentationStations, stationAliases } from '../src/components/stationPresentation.ts'
 import { validatedDensities } from './region-density.mjs'
 import { segmentPointerChoices } from '../src/components/segmentPointerSelection.ts'
+import { regularLineGraph } from './regular-line-graph.mjs'
+
+test('movement edges equal official physical hops and never surface adjacency', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const source = JSON.parse(await readFile(new URL('../lore/places/regular-line-adjacency.json', import.meta.url), 'utf8'))
+  const key = (edge) => `${[edge.a, edge.b].sort().join('|')}/${[...edge.lineIds].sort().join(',')}`
+  const official = regularLineGraph(source, data.stations.map((station) => station.id))
+  assert.deepEqual(data.edges.map(key).sort(), official.edges.map(key).sort())
+  assert.equal(official.edges.length, 383)
+  const separated = regularLineGraph({ stationIdsByCode: { a: 'one', b: 'two' }, lines: [{ id: '2', paths: [[{ code: 'a' }, { code: 'outside' }, { code: 'b' }]] }], surfaceAdjacency: [['one', 'two']] }, ['one', 'two'])
+  assert.deepEqual(separated.edges, [])
+})
 
 test('Seoul Station control delta preserves each original surface holder independently', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
@@ -98,10 +110,10 @@ test('outside administrative units keep observed boundaries distinct from 2126 c
 test('alternate labels share one displayed station while graph nodes and edges remain independent', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const displayed = presentationStations(data.stations)
-  assert.equal(data.stations.length, 313)
+  assert.equal(data.stations.length, 314)
   assert.equal(data.edges.length, 383)
   assert.equal(Object.keys(stationAliases).length, 19)
-  assert.equal(displayed.length, 313)
+  assert.equal(displayed.length, 314)
   for (const [aliasId, primaryId] of Object.entries(stationAliases)) {
     const station = displayed.find((candidate) => candidate.id === primaryId)
     assert.deepEqual(new Set(station.memberIds), new Set(primaryId === '총신대입구(이수)' ? [primaryId, '이수', '총신대입구 (이수)'] : [primaryId, aliasId]), aliasId)
@@ -131,8 +143,9 @@ test('alternate labels share one displayed station while graph nodes and edges r
   assert.equal(data.stations.filter((station) => [suyu.id, ...suyu.aliases].includes(station.id)).length, 1)
   assert.deepEqual(data.edges.filter((edge) => edge.a === suyu.id || edge.b === suyu.id).map((edge) => edge.a === suyu.id ? edge.b : edge.a).sort(), ['미아', '쌍문'])
   assert.equal(underground.stations[suyu.id]['5-4'].floors, 'B2')
-  assert.deepEqual(displayed.filter((station) => station.name.startsWith('신촌')).map((station) => station.id), ['신촌'])
-  assert.deepEqual(data.stations.find((station) => station.id === '신촌').memberIds, ['신촌', '신촌(지하)'])
+  assert.deepEqual(displayed.filter((station) => station.name.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
+  assert.equal(data.stations.find((station) => station.id === '신촌').memberIds, undefined)
+  assert.equal(data.stations.find((station) => station.id === '신촌(지하)').memberIds, undefined)
   assert.deepEqual(data.stations.find((station) => station.id === '신촌').lineIds, ['3-2'])
   assert.ok(data.edges.every((edge) => edge.a !== '신촌(지하)' && edge.b !== '신촌(지하)'))
 })
@@ -196,7 +209,7 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   }
   assert.ok(data.states.every((state) => Number.isFinite(state.labelX) && Number.isFinite(state.labelY)))
   assert.equal(new Set(data.states.map((state) => `${state.labelX}:${state.labelY}`)).size, 16)
-  assert.equal(data.stations.length, 313)
+  assert.equal(data.stations.length, 314)
   assert.equal(data.edges.length, 383)
   assert.ok(Object.keys(data.lines).length >= 20)
   assert.ok(data.stations.every((station) => Array.isArray(station.lineIds)))

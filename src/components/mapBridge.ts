@@ -9,7 +9,7 @@ export type UnityMapMessage = { type: 'selected'; selection: MapSelection | null
 export type MapCatalog = {
   regions: Array<{ id: string }>
   states: Array<{ id: string }>
-  stations: Array<{ id: string }>
+  stations: Array<{ id: string; memberIds?: readonly string[] }>
   edges: Array<{ id: string }>
   landmarks: Array<{ id: string }>
   vassals: Array<{ name: string }>
@@ -72,6 +72,9 @@ export function selectionAtUnityCoordinate(message: unknown,
 export function createMapBridge(catalog: MapCatalog, transport: MapTransport, onSelected: (selection: MapSelection | null) => void) {
   const displayStations = new Set(catalog.stations.map(({ id }) => id))
   const gameToDisplay = new Map([...displayStations].map((id) => [id, id]))
+  for (const station of catalog.stations) {
+    for (const member of station.memberIds ?? [station.id]) gameToDisplay.set(member, station.id)
+  }
   for (const [alias, primary] of Object.entries(stationAliases)) {
     if (displayStations.has(primary)) gameToDisplay.set(alias, primary)
   }
