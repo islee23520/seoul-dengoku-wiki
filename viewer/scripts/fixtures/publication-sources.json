@@ -1,0 +1,546 @@
+[
+  {
+    "page": "Asset-Pipeline.md",
+    "source": "canon/locales/ko-KR/root/asset-pipeline.json",
+    "id": "doc.Asset-Pipeline",
+    "status": "accepted",
+    "route": "/design/Asset-Pipeline",
+    "latest21": false
+  },
+  {
+    "page": "Data-Catalog-and-Schema.md",
+    "source": "canon/locales/ko-KR/root/data-catalog-and-schema.json",
+    "id": "doc.Data-Catalog-and-Schema",
+    "status": "accepted",
+    "route": "/design/Data-Catalog-and-Schema",
+    "latest21": false
+  },
+  {
+    "page": "Design-Requirements.md",
+    "source": "canon/locales/ko-KR/root/design-requirements.json",
+    "id": "doc.Design-Requirements",
+    "status": "accepted",
+    "route": "/design/Design-Requirements",
+    "latest21": false
+  },
+  {
+    "page": "Development-Roadmap.md",
+    "source": "canon/locales/ko-KR/root/development-roadmap.json",
+    "id": "doc.Development-Roadmap",
+    "status": "accepted",
+    "route": "/design/Development-Roadmap",
+    "latest21": false
+  },
+  {
+    "page": "Game-References.md",
+    "source": "canon/locales/ko-KR/root/game-references.json",
+    "id": "doc.Game-References",
+    "status": "accepted",
+    "route": "/design/Game-References",
+    "latest21": false
+  },
+  {
+    "page": "Game-Thesis.md",
+    "source": "canon/locales/ko-KR/root/game-thesis.json",
+    "id": "doc.Game-Thesis",
+    "status": "accepted",
+    "route": "/design/Game-Thesis",
+    "latest21": false
+  },
+  {
+    "page": "Home.md",
+    "source": "canon/locales/ko-KR/root/home.json",
+    "id": "doc.Home",
+    "status": "accepted",
+    "route": "/design/Home",
+    "latest21": false
+  },
+  {
+    "page": "Issue-101-Ui-Ux-Decisions.md",
+    "source": "canon/locales/ko-KR/root/issue-101-ui-ux-decisions.json",
+    "id": "doc.Issue-101-Ui-Ux-Decisions",
+    "status": "accepted",
+    "route": "/design/Issue-101-Ui-Ux-Decisions",
+    "latest21": false
+  },
+  {
+    "page": "Korean-Terminology-and-Naming.md",
+    "source": "canon/locales/ko-KR/root/korean-terminology-and-naming.json",
+    "id": "doc.Korean-Terminology-and-Naming",
+    "status": "accepted",
+    "route": "/design/Korean-Terminology-and-Naming",
+    "latest21": false
+  },
+  {
+    "page": "Online-User-Journey.md",
+    "source": "canon/locales/ko-KR/root/online-user-journey.json",
+    "id": "doc.Online-User-Journey",
+    "status": "accepted",
+    "route": "/design/Online-User-Journey",
+    "latest21": false
+  },
+  {
+    "page": "Open-Decisions.md",
+    "source": "canon/locales/ko-KR/root/open-decisions.json",
+    "id": "doc.Open-Decisions",
+    "status": "accepted",
+    "route": "/design/Open-Decisions",
+    "latest21": false
+  },
+  {
+    "page": "Research-Sources.md",
+    "source": "canon/locales/ko-KR/root/research-sources.json",
+    "id": "doc.Research-Sources",
+    "status": "accepted",
+    "route": "/design/Research-Sources",
+    "latest21": false
+  },
+  {
+    "page": "Ui-Implementation-Pipeline.md",
+    "source": "canon/locales/ko-KR/root/ui-implementation-pipeline.json",
+    "id": "doc.Ui-Implementation-Pipeline",
+    "status": "accepted",
+    "route": "/design/Ui-Implementation-Pipeline",
+    "latest21": false
+  },
+  {
+    "page": "adr/ADR-001-repository-delivery-policy.md",
+    "source": "canon/locales/ko-KR/adr-001.json",
+    "id": "doc.ADR-001",
+    "status": "accepted",
+    "route": "/decisions/ADR-001-repository-delivery-policy",
+    "latest21": false
+  },
+  {
+    "page": "adr/ADR-002-character-candidate-retrospective.md",
+    "source": "canon/locales/ko-KR/adr-002.json",
+    "id": "doc.ADR-002",
+    "status": "accepted",
+    "route": "/decisions/ADR-002-character-candidate-retrospective",
+    "latest21": false
+  },
+  {
+    "page": "adr/ADR-003-real-place-and-station-naming.md",
+    "source": "canon/locales/ko-KR/adr-003.json",
+    "id": "doc.ADR-003",
+    "status": "accepted",
+    "route": "/decisions/ADR-003-real-place-and-station-naming",
+    "latest21": false
+  },
+  {
+    "page": "adr/ADR-004-root-domain-structure.md",
+    "source": "canon/locales/ko-KR/adr-004.json",
+    "id": "doc.ADR-004",
+    "status": "accepted",
+    "route": "/decisions/ADR-004-root-domain-structure",
+    "latest21": false
+  },
+  {
+    "page": "adr/ADR-005-backend-host-session-multiplayer.md",
+    "source": "canon/locales/ko-KR/adr-005.json",
+    "id": "doc.ADR-005",
+    "status": "accepted",
+    "route": "/decisions/ADR-005-backend-host-session-multiplayer",
+    "latest21": false
+  },
+  {
+    "page": "adr/ADR-006-backend-aspnet-core-coordinator.md",
+    "source": "canon/locales/ko-KR/adr-006.json",
+    "id": "doc.ADR-006",
+    "status": "accepted",
+    "route": "/decisions/ADR-006-backend-aspnet-core-coordinator",
+    "latest21": false
+  },
+  {
+    "page": "adr/ADR-007-pr-evidence-lifecycle.md",
+    "source": "canon/locales/ko-KR/adr-007.json",
+    "id": "doc.ADR-007",
+    "status": "accepted",
+    "route": "/decisions/ADR-007-pr-evidence-lifecycle",
+    "latest21": false
+  },
+  {
+    "page": "adr/ADR-008-local-first-steam-sessions.md",
+    "source": "canon/locales/ko-KR/adr-008.json",
+    "id": "doc.ADR-008",
+    "status": "accepted",
+    "route": "/decisions/ADR-008-local-first-steam-sessions",
+    "latest21": false
+  },
+  {
+    "page": "architecture/Unity-Architecture-Implementation-Plan.md",
+    "source": "canon/locales/ko-KR/architecture/unity-architecture-implementation-plan.json",
+    "id": "doc.Unity-Architecture-Implementation-Plan",
+    "status": "accepted",
+    "route": "/architecture/Unity-Architecture-Implementation-Plan",
+    "latest21": false
+  },
+  {
+    "page": "architecture/Unity-Architecture.md",
+    "source": "canon/locales/ko-KR/architecture/unity-architecture.json",
+    "id": "doc.Unity-Architecture",
+    "status": "accepted",
+    "route": "/architecture/Unity-Architecture",
+    "latest21": false
+  },
+  {
+    "page": "architecture/Unity-System-Design.md",
+    "source": "canon/locales/ko-KR/architecture/unity-system-design.json",
+    "id": "doc.Unity-System-Design",
+    "status": "accepted",
+    "route": "/architecture/Unity-System-Design",
+    "latest21": false
+  },
+  {
+    "page": "art/Character-Art-Direction.md",
+    "source": "canon/locales/ko-KR/art/character-art-direction.json",
+    "id": "doc.Character-Art-Direction",
+    "status": "accepted",
+    "route": "/art/Character-Art-Direction",
+    "latest21": false
+  },
+  {
+    "page": "proposals/Campaign-Movement-296.md",
+    "source": "canon/locales/ko-KR/proposals/campaign-movement-296.json",
+    "id": "doc.Campaign-Movement-296",
+    "status": "proposal",
+    "route": "/proposals/Campaign-Movement-296",
+    "latest21": false
+  },
+  {
+    "page": "proposals/Narrative-Direction.md",
+    "source": "canon/locales/ko-KR/proposals/narrative-direction.json",
+    "id": "doc.Narrative-Direction",
+    "status": "proposal",
+    "route": "/proposals/Narrative-Direction",
+    "latest21": false
+  },
+  {
+    "page": "proposals/Scenario-Hold-the-Gate.md",
+    "source": "canon/locales/ko-KR/proposals/scenario-hold-the-gate.json",
+    "id": "doc.Scenario-Hold-the-Gate",
+    "status": "proposal",
+    "route": "/proposals/Scenario-Hold-the-Gate",
+    "latest21": false
+  },
+  {
+    "page": "references/Ref-Crusader-Kings-3.md",
+    "source": "canon/locales/ko-KR/references/ref-crusader-kings-3.json",
+    "id": "doc.Ref-Crusader-Kings-3",
+    "status": "accepted",
+    "route": "/references/Ref-Crusader-Kings-3",
+    "latest21": false
+  },
+  {
+    "page": "references/Ref-Mechanism-Index.md",
+    "source": "canon/locales/ko-KR/references/ref-mechanism-index.json",
+    "id": "doc.Ref-Mechanism-Index",
+    "status": "accepted",
+    "route": "/references/Ref-Mechanism-Index",
+    "latest21": false
+  },
+  {
+    "page": "rules/Campaign-Loop.md",
+    "source": "canon/locales/ko-KR/rules/campaign-loop.json",
+    "id": "doc.Campaign-Loop",
+    "status": "accepted",
+    "route": "/rules/Campaign-Loop",
+    "latest21": false
+  },
+  {
+    "page": "rules/Campaign-Progression.md",
+    "source": "canon/locales/ko-KR/rules/campaign-progression.json",
+    "id": "doc.Campaign-Progression",
+    "status": "accepted",
+    "route": "/rules/Campaign-Progression",
+    "latest21": false
+  },
+  {
+    "page": "rules/Hero-Squads-and-Simultaneous-Turns.md",
+    "source": "canon/locales/ko-KR/rules/hero-squads-and-simultaneous-turns.json",
+    "id": "doc.Hero-Squads-and-Simultaneous-Turns",
+    "status": "accepted",
+    "route": "/rules/Hero-Squads-and-Simultaneous-Turns",
+    "latest21": false
+  },
+  {
+    "page": "rules/Realtime-Formation-Card-Battle.md",
+    "source": "canon/locales/ko-KR/rules/realtime-formation-card-battle.json",
+    "id": "doc.Realtime-Formation-Card-Battle",
+    "status": "accepted",
+    "route": "/rules/Realtime-Formation-Card-Battle",
+    "latest21": false
+  },
+  {
+    "page": "rules/Rules-Battle.md",
+    "source": "canon/locales/ko-KR/rules/rules-battle-clauses.json",
+    "id": "doc.Rules-Battle",
+    "status": "accepted",
+    "route": "/rules/Rules-Battle",
+    "latest21": false
+  },
+  {
+    "page": "rules/Rules-CampaignLoop.md",
+    "source": "canon/locales/ko-KR/rules/rules-campaign-loop-clauses.json",
+    "id": "doc.Rules-CampaignLoop",
+    "status": "accepted",
+    "route": "/rules/Rules-CampaignLoop",
+    "latest21": false
+  },
+  {
+    "page": "rules/Rules-EconomyLogistics.md",
+    "source": "canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json",
+    "id": "doc.Rules-EconomyLogistics",
+    "status": "accepted",
+    "route": "/rules/Rules-EconomyLogistics",
+    "latest21": false
+  },
+  {
+    "page": "rules/Rules-FactionsWarfare.md",
+    "source": "canon/locales/ko-KR/rules/rules-factions-warfare-clauses.json",
+    "id": "doc.Rules-FactionsWarfare",
+    "status": "accepted",
+    "route": "/rules/Rules-FactionsWarfare",
+    "latest21": false
+  },
+  {
+    "page": "rules/Rules-SaveDeterminism.md",
+    "source": "canon/locales/ko-KR/rules/rules-save-determinism-clauses.json",
+    "id": "doc.Rules-SaveDeterminism",
+    "status": "accepted",
+    "route": "/rules/Rules-SaveDeterminism",
+    "latest21": false
+  },
+  {
+    "page": "rules/Rules-Strongholds.md",
+    "source": "canon/locales/ko-KR/rules/rules-strongholds-clauses.json",
+    "id": "doc.Rules-Strongholds",
+    "status": "accepted",
+    "route": "/rules/Rules-Strongholds",
+    "latest21": false
+  },
+  {
+    "page": "rules/Rules-TravelEncounters.md",
+    "source": "canon/locales/ko-KR/rules/rules-travel-encounters-clauses.json",
+    "id": "doc.Rules-TravelEncounters",
+    "status": "accepted",
+    "route": "/rules/Rules-TravelEncounters",
+    "latest21": false
+  },
+  {
+    "page": "rules/Save-and-Determinism.md",
+    "source": "canon/locales/ko-KR/rules/save-and-determinism.json",
+    "id": "doc.Save-and-Determinism",
+    "status": "accepted",
+    "route": "/rules/Save-and-Determinism",
+    "latest21": false
+  },
+  {
+    "page": "rules/Strategy-Battle-Roundtrip.md",
+    "source": "canon/locales/ko-KR/rules/strategy-battle-roundtrip.json",
+    "id": "doc.Strategy-Battle-Roundtrip",
+    "status": "accepted",
+    "route": "/rules/Strategy-Battle-Roundtrip",
+    "latest21": false
+  },
+  {
+    "page": "rules/Travel-and-Encounters.md",
+    "source": "canon/locales/ko-KR/rules/travel-and-encounters.json",
+    "id": "doc.Travel-and-Encounters",
+    "status": "accepted",
+    "route": "/rules/Travel-and-Encounters",
+    "latest21": false
+  },
+  {
+    "page": "rules/Warfare-and-Sieges.md",
+    "source": "canon/locales/ko-KR/rules/warfare-and-sieges.json",
+    "id": "doc.Warfare-and-Sieges",
+    "status": "accepted",
+    "route": "/rules/Warfare-and-Sieges",
+    "latest21": false
+  },
+  {
+    "page": "system-design/Singleplayer-Design-SP-1-0-0.md",
+    "source": "canon/locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json",
+    "id": "doc.Singleplayer-Design-SP-1-0-0",
+    "status": "accepted",
+    "route": "/system-design/Singleplayer-Design-SP-1-0-0",
+    "latest21": false
+  },
+  {
+    "page": "system-design/character-sheet-formulas.md",
+    "source": "canon/locales/ko-KR/system-design/character-sheet-formulas.json",
+    "id": "doc.character-sheet-formulas",
+    "status": "proposal",
+    "route": "/system-design/character-sheet-formulas",
+    "latest21": true
+  },
+  {
+    "page": "system-design/domain-situations.md",
+    "source": "canon/locales/ko-KR/system-design/domain-situations.json",
+    "id": "doc.domain-situations",
+    "status": "proposal",
+    "route": "/system-design/domain-situations",
+    "latest21": true
+  },
+  {
+    "page": "system-design/gdd-lore-node-states.md",
+    "source": "canon/locales/ko-KR/system-design/gdd-lore-node-states.json",
+    "id": "doc.gdd-lore-node-states",
+    "status": "accepted",
+    "route": "/system-design/gdd-lore-node-states",
+    "latest21": false
+  },
+  {
+    "page": "system-design/mechanism-design-index-d01.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d01.json",
+    "id": "doc.mechanism-design-index-d01",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d01",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d02.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d02.json",
+    "id": "doc.mechanism-design-index-d02",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d02",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d03.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d03.json",
+    "id": "doc.mechanism-design-index-d03",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d03",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d04.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d04.json",
+    "id": "doc.mechanism-design-index-d04",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d04",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d05.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d05.json",
+    "id": "doc.mechanism-design-index-d05",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d05",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d06.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d06.json",
+    "id": "doc.mechanism-design-index-d06",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d06",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d07.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d07.json",
+    "id": "doc.mechanism-design-index-d07",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d07",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d08.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d08.json",
+    "id": "doc.mechanism-design-index-d08",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d08",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d09.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d09.json",
+    "id": "doc.mechanism-design-index-d09",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d09",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d10.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d10.json",
+    "id": "doc.mechanism-design-index-d10",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d10",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d11.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d11.json",
+    "id": "doc.mechanism-design-index-d11",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d11",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d12.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d12.json",
+    "id": "doc.mechanism-design-index-d12",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d12",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d13.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d13.json",
+    "id": "doc.mechanism-design-index-d13",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d13",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d14.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d14.json",
+    "id": "doc.mechanism-design-index-d14",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d14",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d15.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d15.json",
+    "id": "doc.mechanism-design-index-d15",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d15",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d16.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d16.json",
+    "id": "doc.mechanism-design-index-d16",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d16",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d17.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d17.json",
+    "id": "doc.mechanism-design-index-d17",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d17",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index-d18.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index-d18.json",
+    "id": "doc.mechanism-design-index-d18",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index-d18",
+    "latest21": true
+  },
+  {
+    "page": "system-design/mechanism-design-index.md",
+    "source": "canon/locales/ko-KR/system-design/mechanism-design-index.json",
+    "id": "doc.mechanism-design-index",
+    "status": "proposal",
+    "route": "/system-design/mechanism-design-index",
+    "latest21": true
+  }
+]
