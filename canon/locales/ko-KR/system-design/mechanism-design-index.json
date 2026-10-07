@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "system-design/mechanism-design-index.md",
+    "lineStart": 1,
+    "lineEnd": 48,
+    "sha256": "3416b7aed29e2e3c509604da7651f202c883e28042423ac8807cd9df5ec93d97"
+  },
+  "document": {
+    "id": "doc.mechanism-design-index",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "인물과 18개 영역 설계 길잡이"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안. 승인된 규칙, 선택된 정책, 미채택 대안과 미정 수치를 구분한다. 구현 완료를 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "읽는 순서"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "[인물의 독립 시트 필드](character-sheet-formulas.md#인물-기록의-독립-칸): 신원, 능력, 현재 건강, 언어·문화, 기능, 무기, 물품, 점수를 별도로 기록한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[계산과 사례](character-sheet-formulas.md#계산과-독립-사례): 원작 참조식, 서울 승인 경계, 선택 정책과 미정 입력을 구분한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[상태 사례](character-sheet-formulas.md#비수치-영역의-독립-상태-사례): 같은 신원·소유·권한·이미 완료된 효과를 보존한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[영역별 기록 칸](character-sheet-formulas.md#영역별-기록-칸): 정규화 자료형은 제안이며 도메인 승인 수치를 만들어 내지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[18개 배우·입력·결정·전후 상황](domain-situations.md): 실패에서 보존할 사실과 실제 원천을 읽는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "18개 영역 독자 규칙"
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "각 영역의 규칙과 미채택 대안은 아래 설계 페이지에서 읽을 수 있다."
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "[D01 인물·능력·특성·시트](mechanism-design-index-d01.md) · [상황](domain-situations.md#d01). 계산 연결: REF-BL, REF-INTRO-3D, REF-ROUND-COST."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D02 생활·욕구·건강·기분](mechanism-design-index-d02.md) · [상황](domain-situations.md#d02). 계산 연결: 상태 계약만 소비."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D03 행동·명령·권한·일정](mechanism-design-index-d03.md) · [상황](domain-situations.md#d03). 계산 연결: SEOUL-RESERVATION."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D04 노동·인구·고용·배급](mechanism-design-index-d04.md) · [상황](domain-situations.md#d04). 계산 연결: SEOUL-POPULATION, SEOUL-RESERVATION."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D05 경제·생산·건설·자원](mechanism-design-index-d05.md) · [상황](domain-situations.md#d05). 계산 연결: SEOUL-CUTOFF, SEOUL-RESERVATION."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D06 이동·화물·지도·관측](mechanism-design-index-d06.md) · [상황](domain-situations.md#d06). 계산 연결: REF-BL, REF-ENCUMBRANCE, SEOUL-CARGO-CONSERVATION, SEOUL-CUTOFF, SEOUL-CARGO-RECEIPT-GUARDS."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D07 관계·기억·충성·평가](mechanism-design-index-d07.md) · [상황](domain-situations.md#d07). 계산 연결: SEOUL-RELATION-CLASS, SEOUL-SINGLE-RESULT."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D08 가문·친족·혼인·양자](mechanism-design-index-d08.md) · [상황](domain-situations.md#d08). 계산 연결: 상태 계약만 소비."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D09 국가·정부·기관·정통성](mechanism-design-index-d09.md) · [상황](domain-situations.md#d09). 계산 연결: 상태 계약만 소비."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D10 작위·권리·명분·인준](mechanism-design-index-d10.md) · [상황](domain-situations.md#d10). 계산 연결: SEOUL-W-ENDPOINT."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D11 수여·위임·회수·봉신](mechanism-design-index-d11.md) · [상황](domain-situations.md#d11). 계산 연결: 상태 계약만 소비."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D12 후계·사망·본체 전환](mechanism-design-index-d12.md) · [상황](domain-situations.md#d12). 계산 연결: 상태 계약만 소비."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D13 자산·채무·상속·인도](mechanism-design-index-d13.md) · [상황](domain-situations.md#d13). 계산 연결: SEOUL-CARGO-CONSERVATION, SEOUL-SINGLE-RESULT."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D14 지식, 교육, 기술, 복구](mechanism-design-index-d14.md) · [상황](domain-situations.md#d14). 계산 연결: 상태 계약만 소비."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D15 전투, 지휘, 분대, 정원](mechanism-design-index-d15.md) · [상황](domain-situations.md#d15). 계산 연결: REF-INTRO-3D, REF-ENCUMBRANCE, REF-RANGE-SUBSET, REF-HIT-LOCATION-SUBSET, REF-ROUND-FEAT, SEOUL-POPULATION, SEOUL-RESERVATION."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D16 외교·전쟁·공성·포로](mechanism-design-index-d16.md) · [상황](domain-situations.md#d16). 계산 연결: SEOUL-W-ENDPOINT, SEOUL-SINGLE-RESULT."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D17 협상·거래·강화·계약](mechanism-design-index-d17.md) · [상황](domain-situations.md#d17). 계산 연결: SEOUL-NEGOTIATION-V, SEOUL-W-ENDPOINT, SEOUL-SINGLE-RESULT."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "[D18 시간·사건·캠페인·저장](mechanism-design-index-d18.md) · [상황](domain-situations.md#d18). 계산 연결: SEOUL-CUTOFF, SEOUL-SINGLE-RESULT."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "근거와 채택 경계"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "원작 참조는 직접 읽은 GURPS Fourth Edition 미리보기와 각 보존 문서의 판본 한정 비교뿐이다. 서울 승인 경계는 그 경계까지만 유지한다. 소유자 선택은 선택된 일부 정책이지 전체 계약이나 구현 인증이 아니다. 자료형과 추가 현재 보관 책임자 확인은 미채택 제안이다. 빠진 수치·제도·원본 규칙은 미정으로 남긴다."
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상황 보고서 산출물"
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[상황 보고서](https://evidence.linalab.io/evidence/seoul-gdd-sheets-situations-20261007-f2bbda37-c30b-4c23-8684-b51724045d48/situations.html) · [영역별 설계 제안 읽기본](https://evidence.linalab.io/evidence/seoul-gdd-sheets-situations-20261007-f2bbda37-c30b-4c23-8684-b51724045d48/index.html). 읽기본은 승인 범위와 미채택 제안을 구분하는 설계 자료다. 각 영역의 상황은 [도메인 상황과 사례](domain-situations.md)에서 읽을 수 있다."
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본 탐색과 공개 경로"
+        }
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[기획 홈](../Home.md) · [메커니즘 참조 색인](../references/Ref-Mechanism-Index.md). GDD 설계 문서의 지원 게시 표면은 /design-store/다. 각 문서와 영역은 설계 목차에서 탐색한다."
+        }
+      ]
+    }
+  ]
+}

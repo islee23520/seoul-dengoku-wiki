@@ -1,0 +1,2811 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "system-design/domain-situations.md",
+    "lineStart": 1,
+    "lineEnd": 498,
+    "sha256": "393077f09faabb04b40c1b91cc846021495387de321b189c67f0ae9f26ce04e9"
+  },
+  "document": {
+    "id": "doc.domain-situations",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39",
+      "source.b41",
+      "source.b42",
+      "source.b43",
+      "source.b44",
+      "source.b45",
+      "source.b46",
+      "source.b47",
+      "source.b48",
+      "source.b50",
+      "source.b51",
+      "source.b52",
+      "source.b53",
+      "source.b54",
+      "source.b55",
+      "source.b56",
+      "source.b57",
+      "source.b59",
+      "source.b60",
+      "source.b61",
+      "source.b62",
+      "source.b63",
+      "source.b64",
+      "source.b65",
+      "source.b66",
+      "source.b68",
+      "source.b69",
+      "source.b70",
+      "source.b71",
+      "source.b72",
+      "source.b73",
+      "source.b74",
+      "source.b75",
+      "source.b77",
+      "source.b78",
+      "source.b79",
+      "source.b80",
+      "source.b81",
+      "source.b82",
+      "source.b83",
+      "source.b84",
+      "source.b86",
+      "source.b87",
+      "source.b88",
+      "source.b89",
+      "source.b90",
+      "source.b91",
+      "source.b92",
+      "source.b93",
+      "source.b95",
+      "source.b96",
+      "source.b97",
+      "source.b98",
+      "source.b99",
+      "source.b100",
+      "source.b101",
+      "source.b102",
+      "source.b104",
+      "source.b105",
+      "source.b106",
+      "source.b107",
+      "source.b108",
+      "source.b109",
+      "source.b110",
+      "source.b111",
+      "source.b113",
+      "source.b114",
+      "source.b115",
+      "source.b116",
+      "source.b117",
+      "source.b118",
+      "source.b119",
+      "source.b120",
+      "source.b122",
+      "source.b123",
+      "source.b124",
+      "source.b125",
+      "source.b126",
+      "source.b127",
+      "source.b128",
+      "source.b129",
+      "source.b131",
+      "source.b132",
+      "source.b133",
+      "source.b134",
+      "source.b135",
+      "source.b136",
+      "source.b137",
+      "source.b138",
+      "source.b140",
+      "source.b141",
+      "source.b142",
+      "source.b143",
+      "source.b144",
+      "source.b145",
+      "source.b146",
+      "source.b147",
+      "source.b149",
+      "source.b150",
+      "source.b151",
+      "source.b152",
+      "source.b153",
+      "source.b154",
+      "source.b155",
+      "source.b156",
+      "source.b158",
+      "source.b159",
+      "source.b160",
+      "source.b161",
+      "source.b162",
+      "source.b163",
+      "source.b164",
+      "source.b165"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "도메인 상황과 독립 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안. 승인된 규칙, 선택된 정책, 미채택 대안과 미정 수치를 구분한다. 구현 완료를 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[설계 길잡이](mechanism-design-index.md) · [시트·계산·전체 사례](character-sheet-formulas.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "각 상황은 배우·입력·결정과 행동 전후의 상태를 설명한다. 상황 예시는 전체 규칙을 대체하지 않는다. [상황 보고서](https://evidence.linalab.io/evidence/seoul-gdd-sheets-situations-20261007-f2bbda37-c30b-4c23-8684-b51724045d48/situations.html) · [영역별 설계 제안 읽기본](https://evidence.linalab.io/evidence/seoul-gdd-sheets-situations-20261007-f2bbda37-c30b-4c23-8684-b51724045d48/index.html). 읽기본은 승인 범위와 미채택 제안을 구분하는 설계 자료다."
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D01"
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "동명이인 선택"
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D01 전체 독자 규칙](mechanism-design-index-d01.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 플레이어, 같은 이름의 두 인물"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 서로 다른 영구 ID, 표시 이름, 구분 정보"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 후보 목록에서 한 ID 선택"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 최종 동일성은 안정 ID"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 두 인물이 같은 이름을 쓴다"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 이름 검색 후 구분 정보로 선택"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 선택한 ID의 기록만 참조"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 이름 첫 일치를 동일인으로 취급하지 않는다"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 영구 신원과 다른 인물 기록"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: REF-BL, REF-INTRO-3D, REF-ROUND-COST. 상태 계약: STATE-D01. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Costs; derived bases; skill defaults and CP allocations. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D01: 입력 `{\"nameChanged\":true,\"id\":\"P-a\"}` → 결과 `{\"samePerson\":true}`. 독립 근거: Name change leaves stable ID unchanged. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D01-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D02"
+        }
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "치료 조건 부족"
+        }
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D02 전체 독자 규칙](mechanism-design-index-d02.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 다친 인물, 치료 제공자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 부상, 휴식 일정, 현재 장소, 치료자·자리·물 부재"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 치료 요청"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 안전·생리·장소·자원 검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 부상과 기존 일정이 있다"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 실제 치료 조건을 검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 치료로 성립하지 않으며 부상·일정 유지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 보류·거절·교섭 주체는 미정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 영구 ID와 기존 일정"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: 수치식 없음. 상태 계약: STATE-D02. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Injury/shock/recovery; needs and fatigue coefficients. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D02: 입력 `{\"identity\":\"P-a\",\"injured\":true}` → 결과 `{\"identity\":\"P-a\",\"automaticDeletion\":false}`. 독립 근거: Injury is state, not identity deletion. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D02-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D03"
+        }
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "원격 전달과 권한 소멸"
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D03 전체 독자 규칙](mechanism-design-index-d03.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 발신자, 수신자, 위임자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 원격 위치, 연락 경로, 위임 판본"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 위임 범위 이동 요청"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 실제 경로·수신·수락 및 실행 전 권한"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 발신 때 위임은 유효"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 경로 전달 후 수신 시 권한 재검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 수락한 명령만 예약·실행"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 경로 부재는 무수신; 도착 전 위임 소멸은 무실행"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 독립 생활, 완료 진척·소비"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: SEOUL-RESERVATION. 상태 계약: STATE-D03. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Delivery durations; acceptance; priority and cancellation rules. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b30",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D03: 입력 `{\"remote\":true,\"received\":false}` → 결과 `{\"execution\":false}`. 독립 근거: Unreceived command cannot execute. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D03-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b32",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D04"
+        }
+      ]
+    },
+    {
+      "id": "source.b33",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소집 후 치료 복귀"
+        }
+      ]
+    },
+    {
+      "id": "source.b34",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D04 전체 독자 규칙](mechanism-design-index-d04.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b35",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 집계 주민 500, 개인화 5, 부대 역할 3"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 기존 고유 ID, 집계·개인 수, 역할 예약"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 개인화 후 부대 배정, 치료 뒤 1명 복귀"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 겹치는 역할 예약 없음; 복귀 자격; 인구 사건 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 집계 500 / 개인 0"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 5명 개인화, 3명 소집, 1명 치료 복귀"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 집계 496 / 개인 4 / 총 500"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 겹치는 둘째 역할 거절; 사망은 별도 인구 사건"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 같은 ID, 노동·치료 이력, 소비"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b36",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: SEOUL-POPULATION, SEOUL-RESERVATION. 상태 계약: STATE-D04. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b37",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Wages/rations/shortage; return eligibility and capacity conversion. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b38",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b39",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D04: 입력 `{\"individualized\":true}` → 결과 `{\"aggregateAvailableLabor\":false}`. 독립 근거: Same person not counted twice. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D04-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b41",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D05"
+        }
+      ]
+    },
+    {
+      "id": "source.b42",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "수리 중단과 미사용 자재"
+        }
+      ]
+    },
+    {
+      "id": "source.b43",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D05 전체 독자 규칙](mechanism-design-index-d05.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b44",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 수행자, 중단 권한자, 소유자, 보관자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 사용 자재 4, 미사용 8, 완료 진척"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 권한 있는 단계 중단"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 현재 단계와 중단 권한; 소비분 분리"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 부분 완료된 수리와 현장 자재"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 단계를 멈추고 남은 계약 검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 완료 진척과 8개 보존; 4개 자동 환급 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 입력·자격 부족이면 새 소비·산출 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 자재 소유와 완료 진척"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b45",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: SEOUL-CUTOFF, SEOUL-RESERVATION. 상태 계약: STATE-D05. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b46",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Production yields; duration; power and storage timing. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b47",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b48",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D05: 입력 `{\"progressCompleted\":true,\"cancelled\":true}` → 결과 `{\"progressPreserved\":true,\"automaticRefund\":false}`. 독립 근거: Completed work and consumed inputs not rewound. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D05-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b50",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D06"
+        }
+      ]
+    },
+    {
+      "id": "source.b51",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "늦은 화물과 인수 조건"
+        }
+      ]
+    },
+    {
+      "id": "source.b52",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D06 전체 독자 규칙](mechanism-design-index-d06.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b53",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 운송인, 수령자, 현재 보관 책임자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 화물 ID, 실제 도착 481, 마감 480, 인수·권리 근거"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 도착 검증과 인수 요청"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 마감은 시간 포함만 판정; 선택된 수령자 서명과 별도 권리 조건"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 화물은 이동 중"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 실제 도착 기록을 확인하고 480과 비교"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 480 마감 제외; 실제 위치·정체성은 다음 판정에 유지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 인수 검증 실패는 현지 격리; 추가 보관 책임자 확인은 미채택 제안"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 물량·소유·보관·출처"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b54",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: selected-receiver-policy; additional-custodian-guard-unadopted-proposal. 참조 계산: REF-BL, REF-ENCUMBRANCE, SEOUL-CARGO-CONSERVATION, SEOUL-CUTOFF, SEOUL-CARGO-RECEIPT-GUARDS. 상태 계약: STATE-D06. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b55",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: World travel time; fatigue; paths; receipt protocol and map aging. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b56",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b57",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-false-false: 입력 `{\"currentCustodianConfirmed\":false,\"receiverConfirmed\":false,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 독립 근거: Conjunction requires both current-custodian and receiver confirmation and every separate guard. 예시이며 정책이 아니다. 추가 보관자 확인은 미채택 조건부 제안의 전제이며 선택된 인수 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-false-true: 입력 `{\"currentCustodianConfirmed\":false,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 독립 근거: Conjunction requires both current-custodian and receiver confirmation and every separate guard. 예시이며 정책이 아니다. 추가 보관자 확인은 미채택 조건부 제안의 전제이며 선택된 인수 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-true-false: 입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":false,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 독립 근거: Conjunction requires both current-custodian and receiver confirmation and every separate guard. 예시이며 정책이 아니다. 추가 보관자 확인은 미채택 조건부 제안의 전제이며 선택된 인수 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-true-true: 입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":true,\"finalAvailableStock\":true}`. 독립 근거: Conjunction requires both current-custodian and receiver confirmation and every separate guard. 예시이며 정책이 아니다. 추가 보관자 확인은 미채택 조건부 제안의 전제이며 선택된 인수 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-rights-missing: 입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":null,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":true,\"finalAvailableStock\":null,\"status\":\"unresolved\"}`. 독립 근거: Both confirmations do not supply missing custody/rights facts. 예시이며 정책이 아니다. 추가 보관자 확인은 미채택 조건부 제안의 전제이며 선택된 인수 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. state-D06-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown guards do not complete receipt or establish available stock. 예시이며 정책이 아니다. 추가 보관자 확인은 미채택 조건부 제안의 전제이며 선택된 인수 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b59",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D07"
+        }
+      ]
+    },
+    {
+      "id": "source.b60",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "숨은 배신의 늦은 발견"
+        }
+      ]
+    },
+    {
+      "id": "source.b61",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D07 전체 독자 규칙](mechanism-design-index-d07.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b62",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 배신자 을, 관측자 갑, 미인지 인물 정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: t0 사건, t2 출처 있는 보고, 방향성 신뢰"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 보고 기반 평가"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 평가 주체가 관측·보고로 실제 인지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: t0에 갑은 사건을 모른다"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: t2 보고 시 갑의 자기 신뢰·기억만 갱신"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: t0~t2 판단은 소급 변경 없음; 정의 신뢰 무갱신"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 같은 결과 ID 재수신은 재적용 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 세계 사실과 개인 지식의 구분"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b63",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: SEOUL-RELATION-CLASS, SEOUL-SINGLE-RESULT. 상태 계약: STATE-D07. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b64",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Change/decay/duration and evaluation coefficients. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b65",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b66",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D07: 입력 `{\"eventObserved\":false}` → 결과 `{\"trustUpdatedByEvent\":false}`. 독립 근거: Unknown event cannot update observer. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D07-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b68",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D08"
+        }
+      ]
+    },
+    {
+      "id": "source.b69",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "국경 혼인 동의와 제도 미정"
+        }
+      ]
+    },
+    {
+      "id": "source.b70",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D08 전체 독자 규칙](mechanism-design-index-d08.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b71",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 갑(α), 을(β), 인준 기록자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 동의 2건, 인준 1건, 적용 제도 미정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 혼인 성립 판정 요청"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 동의 기록이 제도 유효성·충분성을 대신하지 않음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 혼인 기록 없음; 각자의 주장·재산·직위"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 동의와 인준을 기록"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 기록 3건; 성립·효과는 미정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 제도 미정은 미성립·금지와 다르다"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 기록과 독립 권리·소속·직위"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b72",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: 수치식 없음. 상태 계약: STATE-D08. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b73",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Country marriage/adoption eligibility; consent effects and shares. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b74",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b75",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D08: 입력 `{\"validExistingMarriage\":true,\"newLawInputMissing\":true}` → 결과 `{\"existingMarriagePreserved\":true,\"newMarriageResult\":null}`. 독립 근거: Existing fact preserved, new formation unresolved. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D08-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b77",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D09"
+        }
+      ]
+    },
+    {
+      "id": "source.b78",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "살아 있는 사람의 직위 상실"
+        }
+      ]
+    },
+    {
+      "id": "source.b79",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D09 전체 독자 규칙](mechanism-design-index-d09.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b80",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 기록 직위 보유자, 기관, 호송 계약 상대"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 기록 직위와 별도 유효 호송 계약"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 직위 상실 적용"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 해당 직위 권한과 별도 계약을 분리"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 한 사람이 기록 직위와 호송 계약 보유"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 직위 상실 근거 확정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 인준 서명 정지; 호송은 자기 계약으로 판단"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 공석만으로 상속·대행·권한 흡수 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 개인 생활·이동, 기관 금고 소유"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b81",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: 수치식 없음. 상태 계약: STATE-D09. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b82",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Country office eligibility/election/regency and legitimacy coefficients. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b83",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b84",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D09: 입력 `{\"alive\":true,\"officeLost\":true}` → 결과 `{\"officeAuthority\":false,\"automaticPropertyTransfer\":false}`. 독립 근거: Only office power ceases. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D09-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b86",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D10"
+        }
+      ]
+    },
+    {
+      "id": "source.b87",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "타인 주장 지원 종결"
+        }
+      ]
+    },
+    {
+      "id": "source.b88",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D10 전체 독자 규칙](mechanism-design-index-d10.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b89",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 공격자 나래, 수혜자 다온"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 명분 판본, 고정 목표, 수혜자 자격, W=100"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 종결 요청"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 명분·수혜자 재검사 먼저"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 유효한 지원 전쟁; 목표 밖 점령도 존재"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 명분 계속 유효성과 수혜자 검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 유효하면 판본 대상만 다온 기준 이전"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 이미 무효이면 무효 규칙; 점령만으로 권리 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 목표 밖 권리, 기관 금고, 현장 인수 경계"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b90",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: SEOUL-W-ENDPOINT. 상태 계약: STATE-D10. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b91",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Claim lists; creation cost; recognized institution and persistence effects. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b92",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b93",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D10: 입력 `{\"claim\":true,\"validCause\":false}` → 결과 `{\"warCreated\":false}`. 독립 근거: Claim alone does not supply registered cause. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D10-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b95",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D11"
+        }
+      ]
+    },
+    {
+      "id": "source.b96",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "수여 성공과 열쇠 미인도"
+        }
+      ]
+    },
+    {
+      "id": "source.b97",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D11 전체 독자 규칙](mechanism-design-index-d11.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b98",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 수여자 갑, 수령자 을, 점령자 병"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 동의·인준 완료 작위 T-셋; 열쇠 갑 보관"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 권리 원장 변경과 인수"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 명시된 권리 범위와 인준 완료"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 갑 보유; 금고·부대 지휘는 초안 밖"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 같은 작위 ID를 갑 목록에서 을 목록으로 이전"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 을 권리 보유·인수 미완; 병 점령은 통제·분쟁"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 미인준이면 원 보유자 유지; 두 수여로 복제 불가"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 작위 ID, 초안 밖 금고·지휘, 소비·진척"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b99",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: 수치식 없음. 상태 계약: STATE-D11. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b100",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Country ratification/revocation and contract termination details. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b101",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b102",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D11: 입력 `{\"delegation\":true}` → 결과 `{\"holderChanged\":false}`. 독립 근거: Delegation preserves original holder. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D11-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b104",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D12"
+        }
+      ]
+    },
+    {
+      "id": "source.b105",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "살아 있는 영구 구금과 본체 전환"
+        }
+      ]
+    },
+    {
+      "id": "source.b106",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D12 전체 독자 규칙](mechanism-design-index-d12.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b107",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 구금 본체, 지정 후계, 직위·계약 상대"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 영구 구금, 생존, 지정 후계"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 본체 전환"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 구금 계약, 직위·별도 계약 조건, 복귀 권한 분리"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 본체는 살아 있고 자기 재산 보유"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 본체만 지정 후계로 전환"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 사망 상속 없음; 구금자 재산 유지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 석방 뒤 복귀는 별도 명시 권한; 구체 권한자 미정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 구금자 생존, 재산, 항목별 계약"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b108",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: 수치식 없음. 상태 계약: STATE-D12. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b109",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Successor eligibility; no-successor continuation and explicit return authority. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b110",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b111",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D12: 입력 `{\"alive\":true,\"permanentlyDetained\":true}` → 결과 `{\"deathInheritanceOpened\":false}`. 독립 근거: Living detention distinct from death. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D12-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b113",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D13"
+        }
+      ]
+    },
+    {
+      "id": "source.b114",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "등록 유언과 담보 유지"
+        }
+      ]
+    },
+    {
+      "id": "source.b115",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D13 전체 독자 규칙](mechanism-design-index-d13.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b116",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 사망 P, 수혜자 H·B, 운송인 C, 동료 R"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: E·S·M·K 각 1, 담보 L, 적격·전체 배정 승인 가정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 유언 지정 E·S 배정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 등록 유언·법적 자격·자산별 승인"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 개인 유산 4; R은 인물로 유산 밖"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: E를 H, S를 B에 배정; M·K 보류"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 배정 2 + 보류 2 = 4; 담보 L 유지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 소유 이전은 물리 인도 아님; 채무 자동 부과 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 네 ID·수량, C 보관·경로, R 인격"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b117",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: SEOUL-CARGO-CONSERVATION, SEOUL-SINGLE-RESULT. 상태 계약: STATE-D13. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b118",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Inheritance shares; family laws; debt priority and partial-delivery remedies. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b119",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b120",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D13: 입력 `{\"signed\":true,\"physicallyDelivered\":false}` → 결과 `{\"deliveryComplete\":false}`. 독립 근거: Signature is not transport. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D13-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b122",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D14"
+        }
+      ]
+    },
+    {
+      "id": "source.b123",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "교사 사망과 교육 취소"
+        }
+      ]
+    },
+    {
+      "id": "source.b124",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D14 전체 독자 규칙](mechanism-design-index-d14.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b125",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 학습자, 교사, 시설·재료 소유자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 완료 실습 2, 예약 재료 5, 소비 2, 미사용 3"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 다음 실습 재검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 해당 기술의 필수 교사; 사례 계약은 미사용 예약 해제"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 다음 실습 수락; 교사 생존"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 교사 사망 후 중단 사유 기록"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 완료 2 유지; 소비 2 유지; 미사용 3만 해제"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 새 교사 요청은 수락·진척 인정 별도"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 기존 숙련·열람 문서·완료 진척"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b126",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: 수치식 없음. 상태 계약: STATE-D14. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b127",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Study duration/cost; skill-cost progression and qualification conversion. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b128",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b129",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D14: 입력 `{\"documentInherited\":true,\"practiceKnown\":false}` → 결과 `{\"skillLevelDerived\":null}`. 독립 근거: No document-to-skill conversion supplied. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D14-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b131",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D15"
+        }
+      ]
+    },
+    {
+      "id": "source.b132",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "늦게 온 증원과 별도 지휘권"
+        }
+      ]
+    },
+    {
+      "id": "source.b133",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D15 전체 독자 규칙](mechanism-design-index-d15.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b134",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 다솔 부대, 본체 지휘관, 전투 세션"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 실제 도착 12, 종료 13; 등록 배속 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 진행 전투 참가"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 실제 도착·전투 진행; 직접 조작은 배속·지휘 범위 별도"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 초기 명단 밖 부대가 이동 중"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 도착과 종료의 확정 순서 검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 증원 참가 가능; 본체 지휘권 자동 생성 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 종료 11 뒤 도착 12면 무참가; 동시 미확정 순서는 미정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 부대 존재·도착 장소"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b135",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: REF-INTRO-3D, REF-ENCUMBRANCE, REF-RANGE-SUBSET, REF-HIT-LOCATION-SUBSET, REF-ROUND-FEAT, SEOUL-POPULATION, SEOUL-RESERVATION. 상태 계약: STATE-D15. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b136",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Base defenses; ST damage; DR injury; critical rules; squad losses; capacity and Spear15/16. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b137",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b138",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D15: 입력 `{\"battleActive\":true,\"actuallyArrived\":true,\"commandScope\":false}` → 결과 `{\"reinforcementEligible\":true,\"commandAuthority\":false}`. 독립 근거: Participation and authority separate. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D15-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b140",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D16"
+        }
+      ]
+    },
+    {
+      "id": "source.b141",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "무효가 먼저인 전쟁 경계"
+        }
+      ]
+    },
+    {
+      "id": "source.b142",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D16 전체 독자 규칙](mechanism-design-index-d16.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b143",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 공격측, 수혜자, 명분 보유자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: W=90, 수도 점령 +10 후보, 명분 근거 소멸"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 강제 종결 평가"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 명분·수혜자 유효성은 끝점 효과보다 먼저"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 점수 끝점 후보와 무효 사실이 같은 경계에 있음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 명분 무효 검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 무효 규칙 종결; +100 승리로 권리 생성 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 유효성·사건 순서 미정이면 근거 없는 종결 금지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 완료 점령 작업·소비; 목표 밖 권리"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b144",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: SEOUL-W-ENDPOINT, SEOUL-SINGLE-RESULT. 상태 계약: STATE-D16. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b145",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Occupation denominator/rate; diplomacy costs; treaty and captive rules. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b146",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b147",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D16: 입력 `{\"W\":100,\"causeValid\":false}` → 결과 `{\"forceVictoryApplied\":false}`. 독립 근거: Invalidity before endpoint. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D16-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b149",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D17"
+        }
+      ]
+    },
+    {
+      "id": "source.b150",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "관련 상태 변경과 재평가"
+        }
+      ]
+    },
+    {
+      "id": "source.b151",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D17 전체 독자 규칙](mechanism-design-index-d17.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b152",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 제안자, 수락자, 명시 권한 재평가자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 옛 수락, 변경 상태, 새 판본·스냅샷, 무효화 사건"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 기존 안의 명시 재평가"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 권한 있는 실제 수행·새 판본·무효화 기록"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 옛 스냅샷을 수락한 뒤 상태가 변함"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 요청 대기와 실제 수행을 분리"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 수행된 재평가만 옛 수락 무효화; 새 정산은 미정"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 변경·대기만으로 무효화되었다고 단정하지 않음; V≤W 자동 수락 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 제안 동일성과 판본 이력·대상 권리"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b153",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: selected-bounded-reevaluation; no-price-or-acceptance-function. 참조 계산: SEOUL-NEGOTIATION-V, SEOUL-W-ENDPOINT, SEOUL-SINGLE-RESULT. 상태 계약: STATE-D17. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b154",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Price and acceptance functions; reservation timing; remedies and simultaneous admission priority. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b155",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b156",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D17-performed: 입력 `{\"acceptedOldSnapshot\":true,\"relevantStateChanged\":true,\"explicitAuthorizedRepricingPerformed\":true,\"newSnapshotVersion\":true,\"explicitInvalidationEvent\":true}` → 결과 `{\"reevaluationState\":\"performed\",\"oldAcceptanceValid\":false,\"renewedSettlement\":null}`. 독립 근거: Authorized event, new snapshot/version and actual invalidation supplied; no automatic new settlement. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D17-pending: 입력 `{\"acceptedOldSnapshot\":true,\"relevantStateChanged\":true,\"explicitAuthorizedRepricingPerformed\":false,\"newSnapshotVersion\":false,\"explicitInvalidationEvent\":false}` → 결과 `{\"reevaluationState\":\"pending-request\",\"automaticInvalidation\":false,\"oldAcceptanceValidityForChangedState\":null,\"renewedSettlement\":null}`. 독립 근거: State change identifies reevaluation need only; no performed invalidation or current-state acceptance verdict. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D17-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown event/authority cannot supply invalidation. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b158",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D18"
+        }
+      ]
+    },
+    {
+      "id": "source.b159",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "손상 저장의 불러오기"
+        }
+      ]
+    },
+    {
+      "id": "source.b160",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[D18 전체 독자 규칙](mechanism-design-index-d18.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b161",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "배우: 플레이어, 캠페인 상태 보유자"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력: 손상 저장, 현재 상태, 호환 판본"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결정: 불러오기 요청"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격과 경계: 일관된 경계·판본·무결성"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전: 현재 캠페인 상태가 살아 있음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행동: 저장 손상·호환 검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후: 명시 오류; 현재 상태 무변경"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실패: 부분 불러오기·새 캠페인 대체 없음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 사실: 현재 세계 상태·사건/결과 기록"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b162",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "분류: bounded-Seoul-state-semantics; proposed-sheet-model. 참조 계산: SEOUL-CUTOFF, SEOUL-SINGLE-RESULT. 상태 계약: STATE-D18. 계산과 제약의 원문은 [전체 계산 사례](character-sheet-formulas.md#계산과-독립-사례)를 따른다."
+        }
+      ]
+    },
+    {
+      "id": "source.b163",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미정 입력: Tick/phase values; simultaneous final order; save-error limit and migration contract. 미정을 0·금지·성공으로 채우지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b164",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b165",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "state-D18: 입력 `{\"loadCorrupt\":true}` → 결과 `{\"liveStateMutated\":false,\"explicitError\":true}`. 독립 근거: No partial load or fallback campaign. 예시이며 정책이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "state-D18-unknown: 입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다."
+          }
+        ]
+      ]
+    }
+  ]
+}
