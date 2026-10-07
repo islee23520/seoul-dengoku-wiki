@@ -11,7 +11,7 @@ const expected = JSON.parse(await readFile(new URL('./fixtures/publication-sourc
 const manifest = JSON.parse(await readFile(resolve(projectRoot, 'src/generated/publication-manifest.json'), 'utf8'))
 const contract = JSON.parse(await readFile(resolve(projectRoot, 'src/generated/gdd-contract.json'), 'utf8'))
 
-test('manifest equals all eighty one exact source identities and routes', () => {
+test('manifest equals all current exact source identities and routes', () => {
   const identities = manifest.documents.filter(({ source }) => source.startsWith('canon/')).map(({ source, id, route }) => ({ source, id, route }))
   assert.deepEqual(identities.sort((a, b) => a.source.localeCompare(b.source)), expected.map(({ source, id, route }) => ({ source, id, route })).sort((a, b) => a.source.localeCompare(b.source)))
 })
